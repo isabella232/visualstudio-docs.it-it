@@ -9,11 +9,12 @@ description: Come aggiungere un'identità alternativa PER sottoscrizione di Visu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 9a83f78f35b9533c554c81cecd181c00eca05568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326306"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identità per i sottoscrittori di Visual Studio
 
@@ -34,42 +35,35 @@ Questa funzionalità non fornisce una copia della sottoscrizione all'altro accou
 
 Per tutte le sottoscrizioni è possibile aggiungere un "account aziendale o dell'istituto di istruzione" in modo da poter usare l'account con i vantaggi che richiedono un account di accesso (IDE di Visual Studio, Visual Studio Team Services e Azure).
 
-### <a name="prerequisites"></a>Prerequisiti
-
-* [Autorizzazioni di amministratore della raccolta del progetto o di proprietario dell'account Visual Studio Team Services](https://docs.microsoft.com/en-us/vsts/accounts/faq-add-delete-users#find-owner).
-
-* Per usare l'account alternativo, la sottoscrizione associata all'account deve includere Visual Studio Team Services o Microsoft Azure.
-
-> [!Note]
-> È possibile continuare a usare i vantaggi della sottoscrizione con l'ID alternativo, ma la sottoscrizione rimane comunque associata all'account originale.
 
 ### <a name="add-the-alternate-account"></a>Aggiungere l'account alternativo
 
-1. Accedere a Visual Studio con l'account Microsoft (https://{account}.visualstudio.com).
+
+1. Accedere al portale per i sottoscrittori di Visual Studio con il proprio account Microsoft (https://my.visualstudio.com).
 
 2. Passare a **Sottoscrizioni**.
 
-  ![Aggiungere l'account alternativo. Passare alle sottoscrizioni in Visual Studio](_img/vs-alternate-identity/my-vs-subscriptions.png)
+
+   ![Aggiungere l'account alternativo. Passare alle sottoscrizioni in Visual Studio](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Scegliere **Aggiungi un account alternativo**.
 
-  ![Scegliere Aggiungi un account alternativo ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+   ![Scegliere Aggiungi un account alternativo ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. Aggiungere l'account aziendale o dell'istituto di istruzione.
 
-  ![Aggiungere l'account aziendale o dell'istituto di istruzione](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+   ![Aggiungere l'account aziendale o dell'istituto di istruzione](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
-5. Usare l'account aziendale o dell'istituto di istruzione per accedere a Visual Studio (https://{account}.visualstudio.com).
+5. Usare l'account aziendale o dell'istituto di istruzione per accedere a Visual Studio Team Services (https://{account}.visualstudio.com).
 
-  ![Usare l'account aziendale o dell'istituto di istruzione](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+   ![Usare l'account aziendale o dell'istituto di istruzione](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-  L'account alternativo viene aggiunto alla sottoscrizione Visual Studio, consentendo a entrambe le identità di sfruttare i vantaggi della sottoscrizione che richiedono di accedere con l'account alternativo (IDE, Visual Studio Team Services e Azure).
-
-Per altre informazioni sull'aggiunta di un account alternativo, vedere la pagina [Domande frequenti su My Visual Studio](https://www.visualstudio.com/my/myvsfaq#alternate).
+L'account alternativo viene aggiunto alla sottoscrizione Visual Studio, consentendo a entrambe le identità di sfruttare i vantaggi della sottoscrizione che richiedono di accedere con l'account alternativo (IDE, Visual Studio Team Services e Azure).
 
 ## <a name="faq"></a>Domande frequenti
 
 ### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>D: perché VSTS non riconosce un utente come sottoscrittore di Visual Studio?
+
 R: VSTS dovrebbe riconoscere automaticamente la sottoscrizione quando si esegue l'accesso con l'identità primaria o alternativa. In caso contrario, è possibile:
 
 * Controllare di avere una sottoscrizione di Visual Studio attiva che [include VSTS come vantaggio](vs-vsts.md).
@@ -78,4 +72,4 @@ R: VSTS dovrebbe riconoscere automaticamente la sottoscrizione quando si esegue 
 
 * Visitare il [portale per i sottoscrittori di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) almeno una volta prima di accedere a VSTS.
 
-Se VSTS non riconosce ancora la sottoscrizione, [contattare il supporto tecnico](https://www.visualstudio.com/team-services/support/)
+Se VSTS non riconosce ancora la sottoscrizione, [contattare il supporto tecnico](https://visualstudio.microsoft.com/team-services/support/)

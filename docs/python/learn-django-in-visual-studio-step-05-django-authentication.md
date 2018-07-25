@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103138"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946975"
 ---
-# <a name="tutorial-step-5-authenticate-users-in-django"></a>Passaggio 5 dell'esercitazione: Autenticare gli utenti in Django
+# <a name="step-5-authenticate-users-in-django"></a>Passaggio 5: Autenticare gli utenti in Django
 
 **Passaggio precedente: [Usare il modello Progetto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
@@ -62,7 +62,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
     {% endif %}
     ```
 
-1. Poiché nessun utente ha eseguito l'autenticazione quando l'app è stata avviata per la prima volta, il codice di questo modello esegue il rendering solo del collegamento di accesso al percorso relativo "login". Come specificato in `urls.py` e mostrato nella sezione precedente, viene eseguito il mapping di questa route alla visualizzazione `django.contrib.auth.views.login`, cui vengono forniti i dati seguenti:
+1. Poiché nessun utente ha eseguito l'autenticazione quando l'app è stata avviata per la prima volta, il codice di questo modello esegue il rendering solo del collegamento di accesso al percorso relativo "login". Come specificato in `urls.py` e come illustrato nella sezione precedente, viene eseguito il mapping di questa route alla visualizzazione `django.contrib.auth.views.login`, cui vengono forniti i dati seguenti:
 
     ```python
     {
@@ -95,7 +95,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
                                        'placeholder':'Password'}))
     ```
 
-    Come si può notare, questa classe modulo deriva da `AuthenticationForm` ed esegue l'override in modo specifico dei campi relativi a nome utente e password per aggiungere testo segnaposto. Il modello di Visual Studio include questo codice esplicito in base al presupposto che si vorrà sicuramente personalizzare il modulo, ad esempio aggiungendo una convalida della complessità della password.
+    Come si può notare, questa classe modulo deriva da `AuthenticationForm` ed esegue l'override in modo specifico dei campi relativi a nome utente e password per aggiungere testo segnaposto. Il modello di Visual Studio include questo codice esplicito in base al presupposto che si voglia probabilmente personalizzare il modulo, ad esempio aggiungendo una convalida della complessità della password.
 
 1. Quando si passa alla pagina di accesso, quindi, l'app esegue il rendering del modello `login.html`. Le variabili `{{ form.username }}` e `{{ form.password }}` eseguono il rendering dei moduli `CharField` da `BootstrapAuthenticationForm`. Sono anche presenti una sezione predefinita per visualizzare gli errori di convalida e un elemento già pronto per gli account di accesso social se si sceglie di aggiungere questi servizi.
 
@@ -144,13 +144,13 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
     {% endblock %}
     ```
 
-1. Quando si invia il modulo, Django tenta di autenticare le credenziali specificate, ad esempio le credenziali dell'utente con privilegi avanzati. Se l'autenticazione non riesce, resta visualizzata la stessa pagina, ma `form.errors` è impostato su true. Se l'autenticazione riesce, Django passa all'URL relativo nel campo "next", `<input type="hidden" name="next" value="/" />`, che in questo caso è la home page (`/`).
+1. Quando si invia il modulo, Django tenta di autenticare le credenziali specificate dall'utente, ad esempio le credenziali dell'utente con privilegi avanzati. Se l'autenticazione non riesce, resta visualizzata la stessa pagina, ma `form.errors` viene impostato su true. Se l'autenticazione riesce, Django passa all'URL relativo nel campo "next", `<input type="hidden" name="next" value="/" />`, che in questo caso è la home page (`/`).
 
 1. A questo punto, quando viene eseguito di nuovo il rendering della home page, la proprietà `user.is_authenticated` è true quando viene eseguito il rendering del modello `loginpartial.html`. Di conseguenza, viene visualizzato un messaggio "Hello (nome utente)" e un pulsante di disconnessione. È possibile usare `user.is_authenticated` in altre parti dell'app per controllare l'autenticazione.
 
     ![Messaggio Hello e controllo di disconnessione nella pagina dell'app Progetto Web Django](media/django/step05-logoff-control.png)
 
-1. Per controllare se l'utente autenticato è autorizzato ad accedere a determinate risorse, è necessario recuperare le autorizzazioni specifiche dell'utente dal database per questo utente. Per altre informazioni, vedere [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Uso del sistema di autenticazione Django) nella documentazione di Django.
+1. Per controllare se l'utente autenticato è autorizzato ad accedere a determinate risorse, è necessario recuperare le autorizzazioni specifiche dell'utente dal database. Per altre informazioni, vedere [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Uso del sistema di autenticazione Django) nella documentazione di Django.
 
 1. L'utente con privilegi avanzati o amministratore, in particolare, è autorizzato ad accedere alle interfacce di amministrazione Django predefinite mediante gli URL relativi "/admin/" e "/ admin/doc /". Per abilitare queste interfacce, aprire il file `urls.py` del progetto Django e rimuovere i commenti dalle voci seguenti:
 
@@ -200,14 +200,14 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
 ### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Domanda: Qual è lo scopo del tag {% crsf_token %} visualizzato negli elementi \>form\<?
 
-Risposta: Il tag `{% crsf_token %}` include la [protezione da richieste intersito false (crsf, cross-site request forgery)](https://docs.djangoproject.com/en/2.0/ref/csrf/) predefinita di Django (documentazione di Django). Questo tag viene aggiunto in genere a qualsiasi elemento che include metodi di richiesta POST, PUT o DELETE, ad esempio un modulo, e la funzione di rendering del modello (`render`) inserisce la protezione necessaria.
+Risposta: Il tag `{% crsf_token %}` include la [protezione da richieste intersito false (crsf, cross-site request forgery)](https://docs.djangoproject.com/en/2.0/ref/csrf/) predefinita di Django (documentazione di Django). Questo tag viene aggiunto in genere a qualsiasi elemento che prevede metodi di richiesta POST, PUT o DELETE, ad esempio un modulo. La funzione di rendering del modello (`render`) inserisce quindi la protezione necessaria.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
 > [Usare il modello Progetto Web Django di sondaggi](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="going-deeper"></a>Approfondimenti
+## <a name="go-deeper"></a>Approfondimento
 
 - [User authentication in Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (Autenticazione utente in Django) (docs.djangoproject.com)
 - Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

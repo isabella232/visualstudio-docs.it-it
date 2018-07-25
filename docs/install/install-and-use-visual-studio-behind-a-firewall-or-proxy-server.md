@@ -2,7 +2,7 @@
 title: Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy | Microsoft Docs
 description: Verificare le URL di dominio, le porte e i protocolli da aggiungere in un elenco di elementi consentiti o aprire se l'organizzazione usa un firewall o un server proxy
 ms.custom: ''
-ms.date: 02/12/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 911bedf391a37f64ba1f71179e2a3060be152842
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765668"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978437"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -49,7 +49,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 | download.visualstudio.com | Percorso di download dei pacchetti di installazione |
 | dl.xamarin.com | Percorso di download dei pacchetti di installazione |
 | visualstudiogallery.msdn.microsoft.com | Percorso di download delle estensioni di Visual Studio |
-| www.visualstudio.com | Percorso della documentazione |
+| visualstudio.microsoft.com | Percorso della documentazione |
 | docs.microsoft.com | Percorso della documentazione |
 | msdn.microsoft.com | Percorso della documentazione |
 | www.microsoft.com | Percorso della documentazione |
@@ -118,7 +118,8 @@ Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quan
 | Snapshot <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dipendente dalla versione di Visual Studio) | 1. File di query con estensione json per le dimensioni dello SKU del servizio app <br>2. Varie chiamate di Azure RM <br>3. Chiamata di riscaldamento del sito tramite  <br>4. Endpoint Kudu del servizio app di destinazione del cliente <br>5. Versione dell'estensione del sito query pubblicata in nuget.org <br>6. Canale di debug remoto |
 |Analisi di flusso di Azure <br><br>HDInsight | Management.azure.com |https|443 |Usato per visualizzare, inviare, eseguire e gestire i processi ASA <br><br> Usato per esplorare i cluster HDI e inviare, diagnosticare ed eseguire il debug di processi HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Usato per compilare, inviare, visualizzare, diagnosticare ed eseguire il debug di processi; usato per visualizzare file ADLS; usato per caricare e scaricare file |
-|Servizio di creazione di pacchetti | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | I domini *.npmjs.org, *.nuget.org e *.nodejs.org sono necessari solo per determinati scenari di attività di compilazione, ad esempio il Programma di installazione strumento NuGet o il Programma di installazione strumento Node, o se si prevede di usare upstream pubblici con i feed. Gli altri tre domini sono necessari per la funzionalità core del servizio Creazione pacchetto. |
+| Servizio di creazione di pacchetti | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | I domini *.npmjs.org, *.nuget.org e *.nodejs.org sono necessari solo per determinati scenari di attività di compilazione, ad esempio il Programma di installazione strumento NuGet o il Programma di installazione strumento Node, o se si prevede di usare upstream pubblici con i feed. Gli altri tre domini sono necessari per la funzionalità core del servizio Creazione pacchetto. |
+| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Usato per la connessione con Visual Studio Team Services |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Risoluzione dei problemi correlati alla rete

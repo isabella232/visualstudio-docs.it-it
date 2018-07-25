@@ -9,23 +9,22 @@ description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73e8b5927d9d02fb8ebb1414a735c67604f750d9
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196427"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302831"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 
-È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://www.visualstudio.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette sottoscrizioni cloud.
+È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette sottoscrizioni cloud.
 
-[Confrontare vantaggi e prezzi delle sottoscrizioni cloud](https://www.visualstudio.com/vs/pricing/)
+[Confrontare vantaggi e prezzi delle sottoscrizioni cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-*   Per fatturare gli acquisti, è necessaria un [sottoscrizione di Azure](https://azure.microsoft.com/pricing/purchase-options/).
-È possibile [iscriversi](https://portal.azure.com) prima o durante il primo acquisto in Visual Studio Marketplace.
+*   Per fatturare gli acquisti, è necessaria una [sottoscrizione di Azure](https://azure.microsoft.com/pricing/purchase-options/). È possibile [iscriversi](https://portal.azure.com) prima o durante il primo acquisto in Visual Studio Marketplace.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Come acquistare sottoscrizioni cloud
 
@@ -57,16 +56,13 @@ ms.locfileid: "31196427"
 
     <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>Annullare il rinnovo delle sottoscrizioni cloud acquistate
-
+## <a name="manage-subscriptions"></a>Annullare il rinnovo delle sottoscrizioni cloud acquistate
 
 *   Per modificare il numero di sottoscrizioni acquistate:
 
     <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-*   Per annullare queste sottoscrizioni, ridurre il numero di sottoscrizioni a zero (0).
-Le sottoscrizioni non verranno rinnovate all'inizio del periodo di fatturazione successivo (il primo giorno del mese successivo per le sottoscrizioni cloud mensili, 12 mesi dopo per le sottoscrizioni cloud annuali).
+*   Per annullare queste sottoscrizioni, ridurre il numero di sottoscrizioni a zero (0). Le sottoscrizioni non verranno rinnovate all'inizio del periodo di fatturazione successivo (il primo giorno del mese successivo per le sottoscrizioni cloud mensili, 12 mesi dopo per le sottoscrizioni cloud annuali).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Acquistare subito sottoscrizioni cloud
 
@@ -78,6 +74,6 @@ Le sottoscrizioni non verranno rinnovate all'inizio del periodo di fatturazione 
 ## <a name="related-resources"></a>Risorse correlate
 
 * [Portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com/)
-* [Supporto per la sottoscrizione di Visual Studio](https://www.visualstudio.com/vs/support/)
+* [Supporto per la sottoscrizione di Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 * [Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio](vscloud-billing-faq.md)
 * [Acquisto di sottoscrizioni cloud di Visual Studio per i CSP](vscloud-csp.md)

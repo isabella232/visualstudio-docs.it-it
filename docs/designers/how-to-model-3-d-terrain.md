@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745578"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977746"
 ---
-# <a name="how-to-model-3d-terrain"></a>Procedura: Creare un modello di territorio 3D
+# <a name="how-to-model-3d-terrain"></a>Procedura: Creare un modello di terreno 3D
 
 Questo articolo illustra come usare l'editor dei modelli per creare un modello di terreno 3D.
 

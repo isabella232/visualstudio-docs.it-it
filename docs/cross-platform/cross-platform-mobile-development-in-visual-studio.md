@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 26edc3f48c72fb81bd60396ad8a3047dafa7f48e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fdb86d41096ddcd45cbef9bf9a3a6ffbffe188c0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572378"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281800"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -33,11 +33,11 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 |**Altre informazioni**|
 |--------------------|
-|[Installare Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Informazioni su Xamarin in Visual Studio](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Installare Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Informazioni su Xamarin in Visual Studio](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Documentazione di Xamarin sullo sviluppo di app per dispositivi mobili](/xamarin/) |
 |[Application Lifecycle Management (ALM) con app Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
-|[Informazioni sulle app di Windows universali in Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[Informazioni sulle app di Windows universali in Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Informazioni sulle analogie tra Swift e C#](http://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> Creare un'unica base di codice per Android, iOS e Windows
@@ -106,9 +106,9 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 |**Altre informazioni**|
 |--------------------|
-|[Installare Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Introduzione a Visual Studio Tools per Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
-|[Informazioni sull'emulatore di Visual Studio per Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Installare Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Introduzione a Strumenti di Visual Studio per Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
+|[Informazioni sull'emulatore di Visual Studio per Android](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 <a name="CPP"></a>
 
@@ -135,11 +135,11 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 |**Altre informazioni**|
 |--------------------|
-|[Scaricare Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Scaricare Visual Studio.](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Installare gli strumenti Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
-|[Altre informazioni sull'uso di C++ per interagire con più piattaforme.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Altre informazioni sull'uso di C++ per interagire con più piattaforme.](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Installare gli strumenti necessari, quindi creare un'applicazione NativeActivity per Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
-|[Informazioni sulla condivisione del codice C++ con le app Android e Windows](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Informazioni sulla condivisione del codice C++ con le app Android e Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Esempi di Sviluppo di app per dispositivi mobili multipiattaforma per C++](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
 |[Altri esempi di Sviluppo di app per dispositivi mobili multipiattaforma per C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -155,7 +155,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 |**Altre informazioni**|
 |--------------------|
-|[Altre informazioni sulla compilazione di giochi Unity con Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Altre informazioni sulla compilazione di giochi Unity con Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Altre informazioni su Visual Studio Tools per Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Iniziare a usare Visual Studio Tools per Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Informazioni sugli ultimi miglioramenti apportati a Visual Studio Tools per Unity 2.0 Preview](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (blog di Visual Studio)|

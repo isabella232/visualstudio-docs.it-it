@@ -1,7 +1,7 @@
 ---
 title: Esercitazione sull'uso di Python, passaggio 3, uso della finestra interattiva REPL
 description: Passaggio 3 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato alla finestra interattiva REPL di Python.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aface4f125ea8c5a4209e4f220330f15c8ed6d1c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5a93c7f717587e5485c1eb7f0066245844069b35
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425751"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057236"
 ---
-# <a name="step-3-using-the-interactive-repl-window"></a>Passaggio 3: Uso della finestra interattiva REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Passaggio 3: Usare la finestra interattiva REPL
 
 **Passaggio precedente: [Scrittura ed esecuzione del codice](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
@@ -95,7 +95,7 @@ La *finestra interattiva* di Visual Studio per Python offre un'esperienza comple
 > [!div class="nextstepaction"]
 > [Esecuzione del codice nel debugger](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-## <a name="going-deeper"></a>Approfondimenti
+## <a name="go-deeper"></a>Approfondimento
 
 - [Uso della finestra interattiva](python-interactive-repl-in-visual-studio.md)
 - [Uso di REPL IPython](interactive-repl-ipython.md)

@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cd3f7e6c5075ad024e227c847ff05f186f7b016
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0a261c6c692fe0a1bc08f185f0b37c73e8838375
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570164"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945923"
 ---
-# <a name="copy-task"></a>Attività Copy
+# <a name="copy-task"></a>Copy (attività)
 Copia i file in un nuovo percorso del file system.  
   
 ## <a name="parameters"></a>Parametri  
@@ -44,7 +44,7 @@ Copia i file in un nuovo percorso del file system.
 |`OverwriteReadOnlyFiles`|Parametro `Boolean` facoltativo.<br /><br /> Sovrascrivi file anche se sono contrassegnati come file di sola lettura|  
 |`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per la copia, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.<br /><br /> **Nota:** La ripetizione dei tentativi può nascondere un problema di sincronizzazione nel processo di compilazione.|  
 |`RetryDelayMilliseconds`|Parametro `Int32` facoltativo.<br /><br /> Specifica il ritardo tra eventuali nuovi tentativi necessari. Imposta come valore predefinito l'argomento RetryDelayMillisecondsDefault, che viene passato al costruttore CopyTask.|  
-|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se il parametro è impostato su `true`, i file rimasti invariati dall'origine alla destinazione non vengono copiati. L'attività `Copy` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica. **Nota:** Se questo parametro viene impostato su `true`, è consigliabile non usare l'analisi delle dipendenze nella destinazione contenitore, perché in questo caso l'attività viene eseguita soltanto se l'ora dell'ultima modifica dei file di origine è più recente rispetto a quella dei file di destinazione.|  
+|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se il parametro è impostato su `true`, i file rimasti invariati dall'origine alla destinazione non vengono copiati. L'attività `Copy` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica. <br /><br /> **Nota:** Se questo parametro viene impostato su `true`, è consigliabile non usare l'analisi delle dipendenze nella destinazione contenitore, perché in questo caso l'attività viene eseguita soltanto se l'ora dell'ultima modifica dei file di origine è più recente rispetto a quella dei file di destinazione.|  
 |`SourceFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da copiare.|  
 |`UseHardlinksIfPossible`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, vengono creati dei collegamenti reali per i file copiati invece di copiare i file.|  
   
@@ -73,7 +73,7 @@ Copia i file in un nuovo percorso del file system.
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella c:\MyProject\Destination.  
+ Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella *c:\MyProject\Destination*.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -93,7 +93,7 @@ Copia i file in un nuovo percorso del file system.
 ```  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsiva. Tutti i file del progetto vengono copiati in modo ricorsivo da c:\MySourceTree a c:\MyDestinationTree, mantenendo al tempo stesso la struttura di directory.  
+ Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsiva. Tutti i file del progetto vengono copiati in modo ricorsivo da *c:\MySourceTree* a *c:\MyDestinationTree*, mantenendo al tempo stesso la struttura di directory.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -114,4 +114,4 @@ Copia i file in un nuovo percorso del file system.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

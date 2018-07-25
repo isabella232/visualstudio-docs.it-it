@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 394c3c7e964b6c9862f75d69a6744d21ad1b8109
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f06a45dbdf88fad071afcbb96373930501c6ccb
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844599"
 ---
 # <a name="how-to-set-the-current-session"></a>Procedura: Impostare la sessione corrente
 
@@ -37,7 +38,7 @@ Dopo avere impostato una sessione come sessione corrente, fare clic su **Avvio**
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)  
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)  
 [Finestra Esplora prestazioni](../profiling/performance-explorer-window.md)  
 [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)  
 [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)

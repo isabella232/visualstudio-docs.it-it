@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967609"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977606"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedura: selezionare l'impostazione di esecuzione test attiva per un test di carico
 
@@ -30,7 +30,7 @@ Se il test di carico contiene solo un nodo di impostazioni di esecuzione nella c
 
 In Editor test di carico, l'impostazione di esecuzione attiva è identificata dal suffisso "[Active]".
 
-## <a name="selecting-the-active-run-setting"></a>Selezione dell'impostazione di esecuzione test attiva
+## <a name="select-the-active-run-setting"></a>Selezionare l'impostazione di esecuzione attiva
 
 ### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Per selezionare l'impostazione di esecuzione test attiva in un test di carico
 
@@ -47,15 +47,15 @@ In Editor test di carico, l'impostazione di esecuzione attiva è identificata da
 > [!NOTE]
 > È possibile eseguire l'override dell'impostazione di esecuzione attiva impostando una variabile di ambiente denominata `Test.UseRunSetting=<run setting name>`. Questa funzione è utile quando si esegue un test di carico dalla riga di comando o da un file batch. Consente infatti di scegliere impostazioni di esecuzione diverse senza aprire il test di carico.
 
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Specificare l'impostazione di esecuzione da usare dalla riga di comando
 
-## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Specifica dell'impostazione di esecuzione test da utilizzare dalla riga di comando
- È possibile eseguire l'override delle impostazioni di esecuzione test predefinite nel test di carico impostando una variabile di ambiente dalla riga di comando:
+È possibile eseguire l'override delle impostazioni di esecuzione test predefinite nel test di carico impostando una variabile di ambiente dalla riga di comando:
 
- **Set Test.UseRunSetting=PreProdEnvironment**
+**Set Test.UseRunSetting=PreProdEnvironment**
 
- Eseguire quindi il test:
+Eseguire quindi il test:
 
- **mstest /testcontainer:loadtest1.loadtest**
+**mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="see-also"></a>Vedere anche
 

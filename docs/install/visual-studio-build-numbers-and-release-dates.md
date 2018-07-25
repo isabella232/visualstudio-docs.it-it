@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/31/2018
+ms.date: 07/10/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: c349b31070b93945db84997b52d35bf73d44701a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 14c05d805c4424d5bd323c9713e5a83e178bee5c
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691199"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978450"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio 2017
 
@@ -25,116 +25,121 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.8.0 Preview 4 | Anteprima | 10 luglio 2018 | 15.8.27906.1 |
+| 15.7.5 | Rilascio | 10 luglio 2018 | 15.7.27703.2042 |
+| 15.0.15 | Rilascio | 10 luglio 2018 | 15.0.26228.43 |
+| 15.8.0 Preview 3 | Anteprima | 26 giugno 2018 | 15.8.27825.0 |
+| 15.7.4 | Rilascio | 18 giugno 2018 | 15.7.27703.2035 |
 | 15.7.3 | Rilascio | 31 maggio 2018 | 15.7.27703.2026 |
 | 15.0.14 | Rilascio | 31 maggio 2018 | 15.0.26228.37 |
-| 15.8.0 Preview 2.0 | Anteprima | 31 maggio 2018 | 15.8.27729.1 |
+| 15.8.0 Preview 2 | Anteprima | 31 maggio 2018 | 15.8.27729.1 |
 | 15.7.2 | Rilascio | 21 maggio 2018 | 15.7.27703.2018 |
-| 15.8.0 Preview 1.1 | Anteprima | 8 maggio 2018 | 15.8.27705.2000 |
+| 15.8.0 Preview 1 | Anteprima | 8 maggio 2018 | 15.8.27705.2000 |
 | 15.7.1 | Rilascio | 8 maggio 2018 | 15.7.27703.2000 |
-| 15.8.0 Preview 1.0 | Anteprima | 7 maggio 2018 | 15.8.27705.0 |
+| 15.8.0 Preview 1 | Anteprima | 7 maggio 2018 | 15.8.27705.0 |
 | 15.7.0 | Rilascio | 7 maggio 2018 | 15.7.27703.1 |
-| 15.7.0 Preview 6.0 | Anteprima | 3 maggio 2018 | 15.7.27701.1 |
-| 15.7.0 Preview 5.0 | Anteprima | 26 aprile 2018 | 15.7.27625.0 |
+| 15.7.0 Preview 6 | Anteprima | 3 maggio 2018 | 15.7.27701.1 |
+| 15.7.0 Preview 5 | Anteprima | 26 aprile 2018 | 15.7.27625.0 |
 | 15.6.7 | Rilascio | 26 aprile 2018 | 15.6.27428.2043 |
 | 15.0.13 | Rilascio | 26 aprile 2018 | 15.0.26228.31 |
-| 15.7.0 Preview 4.0 | Anteprima | 18 aprile 2018 | 15.7.27617.1 |
+| 15.7.0 Preview 4 | Anteprima | 18 aprile 2018 | 15.7.27617.1 |
 | 15.6.6 | Rilascio | 10 aprile 2018 | 15.6.27428.2037 |
 | 15.0.12 | Rilascio | 10 aprile 2018 | 15.0.26228.30 |
-| 15.7.0 Preview 3.0 | Anteprima | 9 aprile 2018 | 15.7.27604.0 |
+| 15.7.0 Preview 3 | Anteprima | 9 aprile 2018 | 15.7.27604.0 |
 | 15.6.5 | Rilascio | 4 aprile 2018 | 15.6.27428.2027 |
 | 15.6.4 | Rilascio | 22 marzo 2018 | 15.6.27428.2015 |
-| 15.7.0 Preview 2.0 | Anteprima | 21 marzo 2018 | 15.7.27520.0 |
+| 15.7.0 Preview 2 | Anteprima | 21 marzo 2018 | 15.7.27520.0 |
 | 15.6.3 | Rilascio | 19 marzo 2018 | 15.6.27428.2011 |
-| 15.7.0 Preview 1.0 | Anteprima | 13 marzo 2018 | 15.7.27512.0 |
+| 15.7.0 Preview 1 | Anteprima | 13 marzo 2018 | 15.7.27512.0 |
 | 15.6.2 | Rilascio | 13 marzo 2018 | 15.6.27428.2005 |
 | 15.0.11 | Rilascio | 13 marzo 2018 | 15.0.26228.29 |
 | 15.6.1 | Rilascio | 8 marzo 2018 | 15.6.27428.2002 |
-| 15.6.1 Preview 1.0 | Anteprima | 8 marzo 2018 | 15.6.27428.2002 |
+| 15.6.1 Preview 1 | Anteprima | 8 marzo 2018 | 15.6.27428.2002 |
 | 15.6.0 | Rilascio | 5 marzo 2018 | 15.6.27428.1 |
-| 15.6.0 Preview 7.0 | Anteprima | 2 marzo 2018 | 15.6.27428.1 |
-| 15.6.0 Preview 6.0 | Anteprima | 23 febbraio 2018 | 15.6.27421.1 |
+| 15.6.0 Preview 7 | Anteprima | 2 marzo 2018 | 15.6.27428.1 |
+| 15.6.0 Preview 6 | Anteprima | 23 febbraio 2018 | 15.6.27421.1 |
 | 15.0.10 | Rilascio | 21 febbraio 2018 | 15.0.26228.28 |
 | 15.5.7 | Rilascio | 20 febbraio 2018 | 15.5.27130.2036 |
-| 15.6.0 Preview 5.0 | Anteprima | 14 febbraio 2018 | 15.6.27413.0 |
-| 15.6.0 Preview 4.0 | Anteprima | 7 febbraio 2018 | 15.6.27406.0 |
+| 15.6.0 Preview 5 | Anteprima | 14 febbraio 2018 | 15.6.27413.0 |
+| 15.6.0 Preview 4 | Anteprima | 7 febbraio 2018 | 15.6.27406.0 |
 | 15.0.9 | Rilascio | 2 febbraio 2018 | 15.0.26228.23 |
 | 15.5.6 | Rilascio | 29 gennaio 2018 | 15.5.27130.2027 |
 | 15.5.5 | Rilascio | 25 gennaio 2018 | 15.5.27130.2026 |
-| 15.6.0 Preview 3.0 | Anteprima | 25 gennaio 2018 | 15.6.27323.2 |
+| 15.6.0 Preview 3 | Anteprima | 25 gennaio 2018 | 15.6.27323.2 |
 | 15.5.4 | Rilascio | 16 gennaio 2018 | 15.5.27130.2024 |
-| 15.6.0 Preview 2.0 | Anteprima | 10 gennaio 2018 | 15.6.27309.0 |
+| 15.6.0 Preview 2 | Anteprima | 10 gennaio 2018 | 15.6.27309.0 |
 | 15.5.3 | Rilascio |  9 gennaio 2018 | 15.5.27130.2020 |
 | 15.0.8 | Rilascio |  9 gennaio 2018 | 15.0.26228.21 |
 | 15.5.2 | Rilascio | 14 dicembre 2017 | 15.5.27130.2010 |
-| 15.6.0 Anteprima 1.1 | Anteprima | 14 dicembre 2017 | 15.6.27205.2004 |
+| 15.6.0 Preview 1 | Anteprima | 14 dicembre 2017 | 15.6.27205.2004 |
 | 15.5.1 | Rilascio | 7 dicembre 2017 | 15.5.27130.2003 |
-| 15.6.0 Anteprima 1.0 | Anteprima | 7 dicembre 2017 | 15.6.27205.0 |
+| 15.6.0 Preview 1 | Anteprima | 7 dicembre 2017 | 15.6.27205.0 |
 | 15.0.7 | Rilascio | 6 dicembre 2017 | 15.0.26228.18 |
 | 15.5 | Rilascio | 4 dicembre 2017 | 15.5.27130.0 |
-| 15.5.0 Anteprima 5.0 | Anteprima | 30 novembre 2017 | 15.5.27128.1 |
+| 15.5.0 Preview 5 | Anteprima | 30 novembre 2017 | 15.5.27128.1 |
 | 15.4.5 | Rilascio | 27 novembre 2017 | 15.4.27004.2010 |
-| 15.5.0 Anteprima 4.0 | Anteprima | 14 novembre 2017 | 15.5.27110.0 |
+| 15.5.0 Preview 4 | Anteprima | 14 novembre 2017 | 15.5.27110.0 |
 | 15.4.4 | Rilascio | 14 novembre 2017 | 15.4.27004.2009 |
 | 15.0.6 | Rilascio | 14 novembre 2017 | 15.0.26228.17 |
 | 15.4.3 | Rilascio | 8 novembre 2017 | 15.4.27004.2008 |
-| 15.5.0 Anteprima 3.0 | Anteprima | 6 novembre 2017 | 15.5.27102.0 |
+| 15.5.0 Preview 3 | Anteprima | 6 novembre 2017 | 15.5.27102.0 |
 | 15.4.2 | Rilascio | 31 ottobre 2017 | 15.4.27004.2006 |
-| 15.5.0 Anteprima 2.0 | Anteprima | 23 ottobre 2017 | 15.5.27019.1 |
+| 15.5.0 Preview 2 | Anteprima | 23 ottobre 2017 | 15.5.27019.1 |
 | 15.4.1 | Rilascio | 19 ottobre 2017 | 15.4.27004.2005 |
-| 15.5 Preview 1.0 | Anteprima | 11 ottobre 2017 | 15.0.27009.1 |
+| 15.5 Preview 1 | Anteprima | 11 ottobre 2017 | 15.0.27009.1 |
 | 15.4 | Rilascio | 9 ottobre 2017 | 15.0.27004.20002 |
-| 15.4 Preview 6.0 | Anteprima | 9 ottobre 2017| 15.0.27004.20002 |
-| 15.4 Preview 5.0 | Anteprima | 6 ottobre 2017 | 15.0.27004.2000 |
-| 15.4 Preview 4.0 | Anteprima | 2 ottobre 2017 | 15.0.26929.2 |
-| 15.4 Preview 3.0 | Anteprima | 21 settembre 2017 | 15.0.26923.00 |
+| 15.4 Preview 6 | Anteprima | 9 ottobre 2017| 15.0.27004.20002 |
+| 15.4 Preview 5 | Anteprima | 6 ottobre 2017 | 15.0.27004.2000 |
+| 15.4 Preview 4 | Anteprima | 2 ottobre 2017 | 15.0.26929.2 |
+| 15.4 Preview 3 | Anteprima | 21 settembre 2017 | 15.0.26923.00 |
 | 15.3.5 | Rilascio | 19 settembre 2017 | 15.0.26730.16 |
 | 15.0.5 | Rilascio | 18 settembre 2017 | 15.0.26228.16 |
 | 15.3.4 | Rilascio | 12 settembre 2017 | 15.0.26730.15 |
-| 15.4 Preview 2.0 | Anteprima | 11 settembre 2017 | 15.0.26906.1 |
+| 15.4 Preview 2 | Anteprima | 11 settembre 2017 | 15.0.26906.1 |
 | 15.3.3| Rilascio | 29 agosto 2017 | 15.0.26730.12 |
-| 15.4 Preview 1.0 | Anteprima | 24 agosto 2017 | 15.0.26823.01 |
+| 15.4 Preview 1 | Anteprima | 24 agosto 2017 | 15.0.26823.01 |
 | 15.3.2 | Rilascio | 22 agosto 2017 | 15.0.26730.10 |
 | 15.3.1 | Rilascio | 18 agosto 2017 | 15.0.26730.08 |
-| 15.3.1 Preview 1.0 | Anteprima | 18 agosto 2017 | 15.0.26730.08 |
+| 15.3.1 Preview 1 | Anteprima | 18 agosto 2017 | 15.0.26730.08 |
 | 15.3.1  | Rilascio | 18 agosto 2017 | 15.0.26730.08 |
-| 15.4 Preview 1.0 | Anteprima | 24 agosto 2017 | 15.4.26823.1 |
+| 15.4 Preview 1 | Anteprima | 24 agosto 2017 | 15.4.26823.1 |
 | 15.3 | Rilascio | 14 agosto 2017 | 15.0.26730.3 |
 | 15.3 Preview 7.1 | Anteprima | 11 agosto 2017 | 15.0.26730.3 |
-| 15.3 Preview 7.0 | Anteprima | 1 agosto 2017 | 15.0.26730.0 |
-| 15.3 Preview 6.0 | Anteprima | 26 luglio 2017 | 15.0.26724.1 |
-| 15.3 Preview 5.0 | Anteprima | 24 luglio 2017 | 15.0.26720.02 |
+| 15.3 Preview 7 | Anteprima | 1 agosto 2017 | 15.0.26730.0 |
+| 15.3 Preview 6 | Anteprima | 26 luglio 2017 | 15.0.26724.1 |
+| 15.3 Preview 5 | Anteprima | 24 luglio 2017 | 15.0.26720.02 |
 | 15.2.6  | Rilascio | 17 luglio 2017 | 15.0.26430.16 |
-| 15.3 Preview 4.0 | Anteprima | 12 luglio 2017 | 15.0.26711.1 |
+| 15.3 Preview 4 | Anteprima | 12 luglio 2017 | 15.0.26711.1 |
 | 15.2.5  | Rilascio | 6 luglio 2017 | 15.0.26430.15 |
-| 15.3 Preview 3.0 | Anteprima | 26 giugno 2017 | 15.0.26621.2 |
+| 15.3 Preview 3 | Anteprima | 26 giugno 2017 | 15.0.26621.2 |
 | 15.2.4  | Rilascio | 21 giugno 2017 | 15.0.26430.14 |
 | 15.3 Preview 2.1 | Anteprima | 20 giugno 2017 | 15.0.26608.5 |
 | 15.2.3  | Rilascio | 9 giugno 2017 | 15.0.26430.13 |
-| 15.3 Preview 2.0 | Anteprima | 8 giugno 2017 | 15.0.26606.0 |
+| 15.3 Preview 2 | Anteprima | 8 giugno 2017 | 15.0.26606.0 |
 | 15.2.2  | Rilascio | 30 maggio 2017 | 15.0.26430.12 |
 | 15.0.4  | Rilascio | 23 maggio 2017 | 15.0.26228.13 |
 | 15.2.1  | Rilascio | 12 maggio 2017 | 15.0.26430.6 |
 | 15.3 Preview 1.1 | Anteprima | 11 maggio 2017 | 15.0.26510.0 |
-| 15.3 Preview 1.0 | Anteprima | 10 maggio 2017 | 15.0.26507.0 |
+| 15.3 Preview 1 | Anteprima | 10 maggio 2017 | 15.0.26507.0 |
 | 15.2 | Rilascio | 10 maggio 2017 | 15.0.26430.4 |
-| 15.2 Preview 4.0 | Anteprima | 3 maggio 2017 | 15.0.26430.1 |
-| 15.2 Preview 3.0 | Anteprima | 26 aprile 2017 | 15.0.26424.2 |
-| 15.2 Preview 2.0 | Anteprima | 20 aprile 2017 | 15.0.26419.1 |
-| 15.2 Preview 1.0 | Anteprima | 17 aprile 2017 | 15.0.26412.1 |
+| 15.2 Preview 4 | Anteprima | 3 maggio 2017 | 15.0.26430.1 |
+| 15.2 Preview 3 | Anteprima | 26 aprile 2017 | 15.0.26424.2 |
+| 15.2 Preview 2 | Anteprima | 20 aprile 2017 | 15.0.26419.1 |
+| 15.2 Preview 1 | Anteprima | 17 aprile 2017 | 15.0.26412.1 |
 | 15.1.2  | Rilascio | 17 aprile 2017 | 15.0.26403.7 |
 | 15.1.1 | Rilascio | 10 aprile 2017 | 15.0.26403.3 |
 | 15.1 | Rilascio | 5 aprile 2017 | 15.0.26403.0 |
 | 15.0.3  | Rilascio | 31 marzo 2017 | 15.0.26228.12 |
 | 15.0.2 | Rilascio | 28 marzo 2017 | 15.0.26228.10 |
-| 15.1 Preview 3.0 | Anteprima | 27 marzo 2017 | 15.0.26323.1 |
-| 15.1 Preview 2.0 | Anteprima | 16 marzo 2017 | 15.0.26315.0 |
+| 15.1 Preview 3 | Anteprima | 27 marzo 2017 | 15.0.26323.1 |
+| 15.1 Preview 2 | Anteprima | 16 marzo 2017 | 15.0.26315.0 |
 | 15.0.1  | Rilascio | 14 marzo 2017 | 15.0.26228.9 |
-| 15.1 Preview 1.0 | Anteprima | 7 marzo 2017 | 15.0.26304.0 |
+| 15.1 Preview 1 | Anteprima | 7 marzo 2017 | 15.0.26304.0 |
 | 15.0.0 | Rilascio | 7 marzo 2017 | 15.0.26228.4 |
 
 ## <a name="get-support"></a>Supporto
 
-Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ecco alcune altre opzioni di supporto:
 

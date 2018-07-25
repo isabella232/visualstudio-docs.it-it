@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: ab605b3a8505ac189bc0f628b717c6863f9fd902
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454515"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889944"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Uso di Visual Studio per Mac Tools per Unity
 
@@ -71,7 +71,7 @@ Per aggiungere un nuovo script C# MonoBehaviour, **fare clic con il pulsante des
 
 ### <a name="add-a-new-unity-shader"></a>Aggiungere un nuovo shader Unity
 
-Per aggiungere un nuovo a shader Unity, **fare clic con il pulsante destro del mouse sulla cartella Assets** o su una sottodirectory nel riquadro soluzione e selezionare **Aggiungi -> Nuovo shader**.
+Per aggiungere un nuovo a shader Unity, **fare clic con il pulsante destro del mouse sulla cartella Asset** o su una sottodirectory nel riquadro Soluzione e selezionare **Aggiungi -> Nuovo shader**.
 
 ### <a name="add-a-new-folder"></a>Aggiungere una nuova cartella
 

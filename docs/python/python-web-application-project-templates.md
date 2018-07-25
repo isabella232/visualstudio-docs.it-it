@@ -1,7 +1,7 @@
 ---
 title: Modelli di applicazione Web per Python
 description: Panoramica dei modelli di Visual Studio per applicazioni Web scritte con Python mediante i framework Bottle, Flask e Django, incluse le configurazioni di debug e la pubblicazione in Servizio app di Azure.
-ms.date: 05/18/2018
+ms.date: 07/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,20 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ce402b0df6521ac55942ded9615b6962640193c1
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752040"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847765"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
 Python in Visual Studio supporta lo sviluppo di progetti Web nei framework Bottle, Flask e Django, usando modelli di progetto e un'utilità di avvio del debug che può essere configurata in modo da gestire diversi framework. Questi modelli includono un file `requirements.txt` per dichiarare le dipendenze necessarie. Quando si crea un progetto da uno di questi modelli, Visual Studio richiede di installare i pacchetti. Vedere [Installazione dei requisiti di progetto](#installing-project-requirements) più avanti in questo articolo.
 
 È anche possibile usare il modello generico "Progetto Web" per altri framework, ad esempio Pyramid. In questo caso, con il modello non vengono installati framework. In alternativa, installare i pacchetti necessari nell'ambiente in uso per il progetto (vedere [Gestione di ambienti Python](managing-python-environments-in-visual-studio.md)).
+
+Per informazioni sulla distribuzione di un'app Web Python in Azure, vedere [Pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ## <a name="using-a-project-template"></a>Uso di un modello di progetto
 

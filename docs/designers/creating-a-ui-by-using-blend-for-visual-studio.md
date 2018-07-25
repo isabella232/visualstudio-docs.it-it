@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9c6f5febdf6ee3aacce0510f315a2f2c7b24bd4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746884"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890143"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creazione di un'interfaccia utente usando Blend per Visual Studio
 
-Blend per Visual Studio consente di progettare applicazioni Windows e Web basate su XAML. Offre la stessa esperienza di progettazione XAML di base disponibile in Visual Studio e aggiunge finestre di progettazione visive per attività avanzate, quali animazioni e comportamenti. Per un confronto tra Blend e Visual Studio, vedere [Progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md).
+Blend per Visual Studio consente di progettare applicazioni Windows e Web basate su XAML. Offre la stessa esperienza di progettazione XAML di base disponibile in Visual Studio e aggiunge finestre di progettazione visive per attività avanzate, quali animazioni e comportamenti. Per un confronto tra Blend e Visual Studio, vedere [Progettare XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md).
 
 Blend per Visual Studio è un componente di Visual Studio. Per installare Blend, nel **programma di installazione di Visual Studio** scegliere il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** o **Sviluppo per desktop .NET**. Entrambi questi carichi di lavoro includono il componente Blend per Visual Studio.
 
@@ -29,7 +29,7 @@ Blend per Visual Studio è un componente di Visual Studio. Per installare Blend,
 Se non si ha familiarità con Blend per Visual Studio, dedicare alcuni minuti all'esame delle funzionalità specifiche dell'area di lavoro. In questo argomento è disponibile una breve panoramica.
 
 > [!NOTE]
-> Per una panoramica delle funzionalità di progettazione, ad esempio la tavola da disegno, la finestra Struttura documento e la finestra Dispositivo, vedere [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Per una panoramica delle funzionalità di progettazione, ad esempio la tavola da disegno, la finestra **Struttura documento** e la finestra **Dispositivo**, vedere [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
 ## <a name="tour-of-the-tools-panel"></a>Panoramica del pannello Strumenti
 
@@ -39,11 +39,11 @@ Se non si ha familiarità con Blend per Visual Studio, dedicare alcuni minuti al
 
 |||||
 |-|-|-|-|
-|![](../designers/media/b1_1.png)|**Strumenti di selezione** Selezionare oggetti e percorsi.<br /><br /> Usare lo strumento **Selezione diretta** per selezionare gli oggetti annidati e i segmenti di percorso.|![Callout A](../designers/media/b5_label_a.png)|**Strumenti Sfumatura e tratto**|
-|![](../designers/media/b1_2.png)|**Strumenti di visualizzazione** Consente di modificare la visualizzazione della tavola da disegno, ad esempio per la panoramica e lo zoom.|![Callout B](../designers/media/b5_label_b.png)|**Strumenti per i tracciati**|
-|![](../designers/media/b1_3.png)|**Strumenti per i pennelli** Consente di usare gli attributi visivi di un oggetto, ad esempio cambiare un pennello, disegnare un oggetto o selezionare gli attributi di un oggetto da applicare a un altro oggetto.|![Callout C](../designers/media/b5_label_c.png)|**Strumenti per le forme**|
-|![](../designers/media/b1_4.png)|**Strumenti per gli oggetti** Consente di disegnare gli oggetti più comuni sulla tavola da disegno, ad esempio tracciati, forme, pannelli di layout, testo e controlli.|![Callout D](../designers/media/b5_label_d.png)|**Pannelli di layout**|
-|![](../designers/media/b1_5.png)|**Strumenti per gli asset** Consente di accedere al pannello **Assets** e visualizzare l'ultimo asset usato nella libreria.|![Callout E](../designers/media/b5_label_e.png)|**Controlli testo**|
+|![Strumenti di selezione](../designers/media/b1_1.png)|**Strumenti di selezione** Selezionare oggetti e percorsi.<br /><br /> Usare lo strumento **Selezione diretta** per selezionare gli oggetti annidati e i segmenti di percorso.|![Callout A](../designers/media/b5_label_a.png)|**Strumenti Sfumatura e tratto**|
+|![Strumenti di visualizzazione](../designers/media/b1_2.png)|**Strumenti di visualizzazione** Consente di modificare la visualizzazione della tavola da disegno, ad esempio per la panoramica e lo zoom.|![Callout B](../designers/media/b5_label_b.png)|**Strumenti per i tracciati**|
+|![Strumento per i pennelli](../designers/media/b1_3.png)|**Strumenti per i pennelli** Consente di usare gli attributi visivi di un oggetto, ad esempio cambiare un pennello, disegnare un oggetto o selezionare gli attributi di un oggetto da applicare a un altro oggetto.|![Callout C](../designers/media/b5_label_c.png)|**Strumenti per le forme**|
+|![Strumenti per gli oggetti](../designers/media/b1_4.png)|**Strumenti per gli oggetti** Consente di disegnare gli oggetti più comuni sulla tavola da disegno, ad esempio tracciati, forme, pannelli di layout, testo e controlli.|![Callout D](../designers/media/b5_label_d.png)|**Pannelli di layout**|
+|![Strumenti per gli asset](../designers/media/b1_5.png)|**Strumenti per gli asset** Consente di accedere al pannello **Assets** e visualizzare l'ultimo asset usato nella libreria.|![Callout E](../designers/media/b5_label_e.png)|**Controlli testo**|
 |||![Callout F](../designers/media/b5_label_f.png)|**Controlli comuni**|
 
 **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.png) (Configurare le funzionalità installate) [The Toolbar](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4) (Barra degli strumenti).
@@ -57,10 +57,10 @@ Tutti i controlli sono disponibili nel pannello **Assets**, che è simile alla *
 |||
 |-|-|
 |![](../designers/media/b1_1.png)|**Casella di ricerca** Digitare testo nella casella **Cerca** per filtrare l'elenco di asset.|
-|![](../designers/media/b1_2.png)|**Modalità griglia e Modalità elenco** Consente di passare dalla visualizzazione **Modalità griglia** alla visualizzazione **Modalità elenco** e viceversa.|
-|![](../designers/media/b1_3.png)|**Categorie di asset** Fare clic su una categoria o sottocategoria per visualizzare l'elenco di asset corrispondente.|
-|![](../designers/media/b1_4.png)|**Stili** Consente di visualizzare tutti gli stili disponibili nel dizionario risorse.|
-|![](../designers/media/b1_5.png)|**Descrizione** Consente di visualizzare una descrizione della categoria o sottocategoria di asset selezionata.|
+|![Modalità griglia e modalità elenco](../designers/media/b1_2.png)|**Modalità griglia e Modalità elenco** Consente di passare dalla visualizzazione **Modalità griglia** alla visualizzazione **Modalità elenco** e viceversa.|
+|![Categorie di asset](../designers/media/b1_3.png)|**Categorie di asset** Fare clic su una categoria o sottocategoria per visualizzare l'elenco di asset corrispondente.|
+|![Stili](../designers/media/b1_4.png)|**Stili** Consente di visualizzare tutti gli stili disponibili nel dizionario risorse.|
+|![Descrizione](../designers/media/b1_5.png)|**Descrizione** Consente di visualizzare una descrizione della categoria o sottocategoria di asset selezionata.|
 
 ## <a name="tour-of-the-objects-and-timeline-panel"></a>Panoramica del pannello Oggetti e sequenza temporale
 
@@ -70,21 +70,21 @@ Usare questo pannello per organizzare gli oggetti nella tavola da disegno e, se 
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Visualizzazione Oggetti** Consente di visualizzare una struttura ad albero visuale di un documento. È possibile accedere a diversi livelli di dettaglio. È anche possibile aggiungere livelli per organizzare ulteriormente gli oggetti nella tavola da disegno. In questo modo è possibile bloccarli e nasconderli come gruppi.|
-|![](../designers/media/b1_2.png)|**Indicatore della modalità di registrazione** Consente di verificare se è in corso la registrazione delle modifiche delle proprietà in una sequenza temporale.|
-|![](../designers/media/b1_3.png)|**Selezione storyboard** Consente di visualizzare un elenco degli storyboard creati.|
-|![](../designers/media/b1_4.png)|**Chiudere lo storyboard** Consente di chiudere lo storyboard corrente.|
-|![](../designers/media/b1_5.png)|**Opzioni di storyboard** Consente di creare, duplicare, invertire, eliminare, rinominare o chiudere uno storyboard.|
-|![](../designers/media/b1_6.png)|**Controlli di riproduzione** Consente di esplorare la sequenza temporale. Per spostarsi nella sequenza temporale, o *eseguire lo scrubbing*, è anche possibile trascinare l'indicatore di riproduzione.|
-|![](../designers/media/b1_7.png)|**Reimposta l'ambito** Consente di reimpostare l'ambito della visualizzazione oggetti sull'oggetto radice o ambito precedente. È possibile solo quando si modifica uno stile o modello.|
-|![](../designers/media/b1_8.png)|**Registra fotogramma chiave** Consente di registrare uno snapshot delle proprietà dell'oggetto selezionato nell'istante corrente.|
-|![](../designers/media/b1_9.png)|**Opzioni snapping** Consente di impostare l'allineamento della sequenza temporale, la risoluzione di snap e disattivare l'allineamento della sequenza temporale.|
-|![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**Mostra/Nascondi**, **Blocca/Sblocca** Consente di visualizzare o nascondere le opzioni di visibilità e blocco della visualizzazione degli oggetti.|
-|![](../designers/media/b1_11.png)|**Posizione indicatore di riproduzione nella sequenza temporale** Consente di visualizzare il tempo corrente in millisecondi. In questo campo è possibile immettere direttamente un valore di tempo per passare a un istante specifico. La precisione dipende dalla risoluzione di snap impostata in **Opzioni snapping**.|
-|![](../designers/media/b1_12.png)|**Indicatore di riproduzione** Consente di determinare il punto temporizzato in cui si trova l'animazione. L'indicatore di riproduzione può essere trascinato lungo la sequenza temporale per visualizzare l'animazione in anteprima.|
-|![](../designers/media/b1_13.png)|**Fotogrammi chiave impostati su sequenze temporali** Consente di modificare un valore di proprietà in un istante specifico.|
-|![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Modifica dell'ordine degli oggetti** Consente di impostare l'ordine di visualizzazione degli oggetti. Fare clic su questo pulsante per disporre gli oggetti nella visualizzazione struttura secondo l'ordine Z (da primo a ultimo) o in base all'ordine di markup, ovvero l'ordine in cui compaiono nella visualizzazione **XAML**.|
-|![](../designers/media/b1_15.png)|**Zoom sequenza temporale** Consente di impostare la risoluzione di zoom della sequenza temporale. Lo zoom avanti permette di modificare un'animazione a un maggior livello di dettaglio, mentre lo zoom indietro permette di ottenere una panoramica del comportamento di un'animazione su periodi di tempo più lunghi. Se si applica lo zoom avanti, ma non è possibile impostare un fotogramma chiave nella posizione corrispondente all'istante desiderato, verificare che la risoluzione di snap sia sufficientemente elevata.|
+|![Visualizzazione oggetti](../designers/media/b1_1.png)|**Visualizzazione Oggetti** Consente di visualizzare una struttura ad albero visuale di un documento. È possibile accedere a diversi livelli di dettaglio. È anche possibile aggiungere livelli per organizzare ulteriormente gli oggetti nella tavola da disegno. In questo modo è possibile bloccarli e nasconderli come gruppi.|
+|![Indicatore della modalità di registrazione](../designers/media/b1_2.png)|**Indicatore della modalità di registrazione** Consente di verificare se è in corso la registrazione delle modifiche delle proprietà in una sequenza temporale.|
+|![Selezione storyboard](../designers/media/b1_3.png)|**Selezione storyboard** Consente di visualizzare un elenco degli storyboard creati.|
+|![Chiudi storyboard](../designers/media/b1_4.png)|**Chiudere lo storyboard** Consente di chiudere lo storyboard corrente.|
+|![Opzioni di storyboard](../designers/media/b1_5.png)|**Opzioni di storyboard** Consente di creare, duplicare, invertire, eliminare, rinominare o chiudere uno storyboard.|
+|![Controlli di riproduzione](../designers/media/b1_6.png)|**Controlli di riproduzione** Consente di esplorare la sequenza temporale. Per spostarsi nella sequenza temporale, o *eseguire lo scrubbing*, è anche possibile trascinare l'indicatore di riproduzione.|
+|![Reimposta l'ambito](../designers/media/b1_7.png)|**Reimposta l'ambito** Consente di reimpostare l'ambito della visualizzazione oggetti sull'oggetto radice o ambito precedente. È possibile solo quando si modifica uno stile o modello.|
+|![Registra fotogramma chiave](../designers/media/b1_8.png)|**Registra fotogramma chiave** Consente di registrare uno snapshot delle proprietà dell'oggetto selezionato nell'istante corrente.|
+|![Opzioni snapping](../designers/media/b1_9.png)|**Opzioni snapping** Consente di impostare l'allineamento della sequenza temporale, la risoluzione di snap e disattivare l'allineamento della sequenza temporale.|
+|![Mostra/Nascondi Blocca/Sblocca](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**Mostra/Nascondi**, **Blocca/Sblocca** Consente di visualizzare o nascondere le opzioni di visibilità e blocco della visualizzazione degli oggetti.|
+|![Posizione indicatore di riproduzione nella sequenza temporale](../designers/media/b1_11.png)|**Posizione indicatore di riproduzione nella sequenza temporale** Consente di visualizzare il tempo corrente in millisecondi. In questo campo è possibile immettere direttamente un valore di tempo per passare a un istante specifico. La precisione dipende dalla risoluzione di snap impostata in **Opzioni snapping**.|
+|![Indicatore di riproduzione](../designers/media/b1_12.png)|**Indicatore di riproduzione** Consente di determinare il punto temporizzato in cui si trova l'animazione. L'indicatore di riproduzione può essere trascinato lungo la sequenza temporale per visualizzare l'animazione in anteprima.|
+|![Fotogrammi chiave impostati su sequenze temporali](../designers/media/b1_13.png)|**Fotogrammi chiave impostati su sequenze temporali** Consente di modificare un valore di proprietà in un istante specifico.|
+|![Modifica dell'ordine degli oggetti](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Modifica dell'ordine degli oggetti** Consente di impostare l'ordine di visualizzazione degli oggetti. Fare clic su questo pulsante per disporre gli oggetti nella visualizzazione struttura secondo l'ordine Z (da primo a ultimo) o in base all'ordine di markup, ovvero l'ordine in cui compaiono nella visualizzazione **XAML**.|
+|![Zoom sequenza temporale](../designers/media/b1_15.png)|**Zoom sequenza temporale** Consente di impostare la risoluzione di zoom della sequenza temporale. Lo zoom avanti permette di modificare un'animazione a un maggior livello di dettaglio, mentre lo zoom indietro permette di ottenere una panoramica del comportamento di un'animazione su periodi di tempo più lunghi. Se si applica lo zoom avanti, ma non è possibile impostare un fotogramma chiave nella posizione corrispondente all'istante desiderato, verificare che la risoluzione di snap sia sufficientemente elevata.|
 |![Callout 16](../designers/media/b5_label_16.png)|**Area di composizione della sequenza temporale** Consente di visualizzare la sequenza temporale e spostare i fotogrammi chiave trascinandoli o usando i relativi menu di scelta rapida.|
 
 ## <a name="tour-of-the-properties-panel"></a>Panoramica del pannello Proprietà
@@ -93,27 +93,27 @@ Usare questo pannello per visualizzare e modificare le proprietà di un oggetto.
 
 ![Pannello Proprietà](../designers/media/blend5_properties_panel.png)
 
-**Categorie** Consente di espandere e comprimere le categorie delle proprietà. Fare clic su **Espandi** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) e su **Comprimi** ![Comprimi](../designers/media/b5_collapse_button.png) per visualizzare o nascondere i dettagli della categoria.
+**Categorie** Consente di espandere e comprimere le categorie delle proprietà. Fare clic su **Espandi** ![Espandi](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) e **Comprimi** ![Comprimi](../designers/media/b5_collapse_button.png) per visualizzare o nascondere i dettagli della categoria.
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Nome e tipo** Consente di visualizzare l'icona, il nome e il tipo dell'oggetto selezionato.|
-|![](../designers/media/b1_2.png)|**Disponi per** Consente di ordinare alfabeticamente le proprietà per nome, database di origine o categoria.|
-|![](../designers/media/b1_3.png)|**Proprietà dei pennelli** Consente di configurare le proprietà visive dei pennelli, ad esempio riempimento, tratto e primo piano.|
-|![](../designers/media/b1_4.png)|**Editor dei colori** Consente di usare pennelli a tinta unita e con sfumatura.|
-|![](../designers/media/b1_5.png)|**Selezione colori** Consente di selezionare un colore.|
-|![](../designers/media/b1_6.png)|**Caselle del colore** Consente di visualizzare il colore iniziale, il colore corrente e l'ultimo colore|
-|![](../designers/media/b1_7.png)|**Contagocce** Consente di usare il colore di qualsiasi elemento sullo schermo. Il **Contagocce colore** è disponibile quando è selezionato il **pennello tinta unita**. Il **Contagocce sfumatura** è disponibile quando è selezionato il **pennello sfumatura**.|
-|![](../designers/media/b1_8.png)|**Proprietà ed eventi** Consente di impostare le proprietà o scegliere gli eventi per un elemento selezionato.|
-|![](../designers/media/b1_9.png)|**Casella di ricerca** Consente di cercare le proprietà. Filtrare le proprietà visualizzate digitando nella casella **Cerca**.|
-|![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**Schede Editor del pennello**. Consente di selezionare un editor del pennello. È possibile scegliere **Nessun pennello**, **Pennello tinta unita**, **Pennello sfumato**, **Pennello tessera** o **Risorsa pennello**.|
-|![](../designers/media/b1_11.png)|**Risorse colore** Consente di applicare lo stesso colore a proprietà diverse. La scheda **Risorse colore** include **Risorse locali** e **Risorse di sistema**.|
-|![](../designers/media/b1_12.png)|**Spazio colori RGB** Consente di modificare il colore cambiando i valori per gli editor di numero **R**, **G** o **B** (rosso, verde, blu).|
-|![](../designers/media/b1_13.png)|**Canale alfa** Consente di modificare il valore alfa usando l'editor di numero accanto ad **A**.|
-|![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Converti colore in risorsa** Consente di convertire il colore selezionato in una risorsa di colore. Le risorse di colore sono disponibili quando si fa clic sulla scheda Risorse colore.|
+|![Nome e tipo](../designers/media/b1_1.png)|**Nome e tipo** Consente di visualizzare l'icona, il nome e il tipo dell'oggetto selezionato.|
+|![Disponi per](../designers/media/b1_2.png)|**Disponi per** Consente di ordinare alfabeticamente le proprietà per nome, database di origine o categoria.|
+|![Proprietà dei pennelli](../designers/media/b1_3.png)|**Proprietà dei pennelli** Consente di configurare le proprietà visive dei pennelli, ad esempio riempimento, tratto e primo piano.|
+|![Editor dei colori](../designers/media/b1_4.png)|**Editor dei colori** Consente di usare pennelli a tinta unita e con sfumatura.|
+|![Selezione colori](../designers/media/b1_5.png)|**Selezione colori** Consente di selezionare un colore.|
+|![Caselle del colore](../designers/media/b1_6.png)|**Caselle del colore** Consente di visualizzare il colore iniziale, il colore corrente e l'ultimo colore|
+|![Contagocce](../designers/media/b1_7.png)|**Contagocce** Consente di usare il colore di qualsiasi elemento sullo schermo. Il **Contagocce colore** è disponibile quando è selezionato il **pennello tinta unita**. Il **Contagocce sfumatura** è disponibile quando è selezionato il **pennello sfumatura**.|
+|![Proprietà ed eventi](../designers/media/b1_8.png)|**Proprietà ed eventi** Consente di impostare le proprietà o scegliere gli eventi per un elemento selezionato.|
+|![Casella di ricerca](../designers/media/b1_9.png)|**Casella di ricerca** Consente di cercare le proprietà. Filtrare le proprietà visualizzate digitando nella casella **Cerca**.|
+|![Schede Editor del pennello](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png)|**Schede Editor del pennello**. Consente di selezionare un editor del pennello. È possibile scegliere **Nessun pennello**, **Pennello tinta unita**, **Pennello sfumato**, **Pennello tessera** o **Risorsa pennello**.|
+|![Risorse colore](../designers/media/b1_11.png)|**Risorse colore** Consente di applicare lo stesso colore a proprietà diverse. La scheda **Risorse colore** include **Risorse locali** e **Risorse di sistema**.|
+|![Spazio colori RGB](../designers/media/b1_12.png)|**Spazio colori RGB** Consente di modificare il colore cambiando i valori per gli editor di numero **R**, **G** o **B** (rosso, verde, blu).|
+|![Canale alfa](../designers/media/b1_13.png)|**Canale alfa** Consente di modificare il valore alfa usando l'editor di numero accanto ad **A**.|
+|![Converti colore in risorsa](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Converti colore in risorsa** Consente di convertire il colore selezionato in una risorsa di colore. Le risorse di colore sono disponibili quando si fa clic sulla scheda Risorse colore.|
 |![](../designers/media/b1_15.png)|**Valore hex** Consente di visualizzare il valore esadecimale del colore visualizzato.|
 |![Callout 16](../designers/media/b5_label_16.png)|**Cursore sfumatura** Viene visualizzato solo se è selezionato un pennello sfumato.|
-|![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostra proprietà avanzate** Consente di visualizzare le categorie di proprietà che vengono usate meno.|
+|![Mostra proprietà avanzate](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostra proprietà avanzate** Consente di visualizzare le categorie di proprietà che vengono usate meno.|
 
 **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.png) (Configurare le funzionalità installate) [Properties panel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7) (Pannello Proprietà).
 

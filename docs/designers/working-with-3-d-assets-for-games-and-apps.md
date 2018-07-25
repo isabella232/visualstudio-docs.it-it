@@ -12,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5865597f9833ab04fbd5ca287ba0bc61217d7088
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924844"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079474"
 ---
-# <a name="work-with-3d-assets-for-games-and-apps"></a>Usare asset 3D per giochi e app
+# <a name="work-with-3d-assets-for-games-and-apps"></a>Usare risorse 3D per giochi e app
 
 Questo documento descrive gli strumenti di Visual Studio che è possibile usare per creare o modificare modelli 3D, trame e shader per app e giochi DirectX.
 
 ## <a name="directx-app-development-in-visual-studio"></a>Sviluppo di app DirectX in Visual Studio
- In genere un'app DirectX unisce logica di programmazione, API DirectX e i programmi HLSL (High Level Shading Language) ad audio e asset visivi 3D per offrire un'esperienza multimediale dettagliata e interattiva. Visual Studio include strumenti utili per lavorare con immagini, trame, modelli 3D e shader senza uscire dall'IDE per usare un altro strumento. Gli strumenti di Visual Studio sono particolarmente adatti per creare risorse *segnaposto* che è possibile usare per testare codice o creare prototipi prima di commissionare le risorse pronte per la produzione e per analizzare e modificare le risorse pronte per la produzione quando si esegue il debug dell'app.
+ In genere un'app DirectX unisce logica di programmazione, API DirectX e i programmi HLSL (High Level Shading Language) ad audio e risorse visive 3D per offrire un'esperienza multimediale dettagliata e interattiva. Visual Studio include strumenti utili per lavorare con immagini, trame, modelli 3D e shader senza uscire dall'IDE per usare un altro strumento. Gli strumenti di Visual Studio sono particolarmente adatti per creare risorse *segnaposto* che è possibile usare per testare codice o creare prototipi prima di commissionare le risorse pronte per la produzione e per analizzare e modificare le risorse pronte per la produzione quando si esegue il debug dell'app.
 
  Di seguito altre informazioni sui tipi di asset che è possibile usare in Visual Studio.
 

@@ -1,9 +1,10 @@
 ---
-title: Errore irreversibile del processo di Visual Studio
-ms.date: 02/23/2017
+title: Un processo ha rilevato un errore irreversibile
+ms.date: 06/22/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
-- editor
+- unrecoverable error
+- error, process
 author: gewarren
 ms.author: gewarren
 manager: douge
@@ -11,26 +12,26 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db7f2729ded01eedda6fff6d18ca1b2ee3607b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebd530b9db139cb232f735f7d6401199cab2f6fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942221"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325702"
 ---
 # Errore irreversibile del processo di Visual Studio
 
-Visual Studio 2017 usa diversi processi out-of-process per svolgere le attività necessarie in background, ad esempio testing unità in tempo reale, analizzatori di codice e altro ancora. Questi processi vengono eseguiti out-of-process per offrire vantaggi in termini di prestazioni di Visual Studio, consentendo ad esempio a Visual Studio per rispondere più rapidamente durante l'esecuzione di processi a lunga durata e con uso intensivo di risorse. E poiché Visual Studio è un processo a 32 bit, l'esecuzione di processi out-of-process rende disponibile uno spazio di memoria più grande dove svolgere le attività con uso intensivo della memoria.
+Visual Studio 2017 usa diversi processi out-of-process per svolgere le attività necessarie in background, ad esempio testing unità in tempo reale, analizzatori di codice e altro ancora. Questi processi vengono eseguiti out-of-process per offrire vantaggi in termini di prestazioni di Visual Studio, consentendo ad esempio a Visual Studio di rispondere più rapidamente durante l'esecuzione di processi lunghi e con uso intensivo di risorse. E poiché Visual Studio è un processo a 32 bit, l'esecuzione di processi out-of-process rende disponibile uno spazio di memoria più grande dove svolgere le attività con uso intensivo della memoria.
 
-Se uno dei processi richiesti termina per qualche motivo, viene visualizzata una barra informazioni popup in cui un messaggio indica che
+Se il processo *ServiceHub.RoslynCodeAnalysisService.exe* o *ServiceHub.RoslynCodeAnalysisService32.exe* termina per qualche motivo, viene visualizzata una barra informazioni popup con il messaggio seguente:
 
-in un processo usato da Visual Studio si è verificato un errore irreversibile e che è consigliabile salvare il lavoro e quindi chiudere e riavviare Visual Studio.
+**"Si è verificato un errore irreversibile in un processo usato da Visual Studio. È consigliabile salvare il lavoro e quindi chiudere e riavviare Visual Studio".**
 
-Se viene visualizzato questo messaggio, salvare immediatamente il lavoro, quindi chiudere e riavviare Visual Studio. Se non si esegue questa operazione, Visual Studio può arrestarsi in modo anomalo in qualsiasi momento.
+Se viene visualizzato questo messaggio, salvare il lavoro, quindi chiudere e riavviare Visual Studio.
 
 ## Elenco dei processi
 
-Di seguito è riportato un elenco di processi out-of-process usati da Visual Studio che devono essere in esecuzione perché Visual Studio funzioni correttamente.
+Di seguito è riportato un elenco di processi out-of-process usati da Visual Studio. L'elenco include i processi che vengono avviati in scenari o flussi di lavoro specifici e quindi, nella maggior parte dei casi, non sono tutti in esecuzione nello stesso momento.
 
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
@@ -45,3 +46,5 @@ Di seguito è riportato un elenco di processi out-of-process usati da Visual Stu
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe
+
+Se uno di questi processi termina in modo imprevisto, alcune funzionalità di Visual Studio smettono di funzionare. Per alcuni processi la perdita di funzionalità può essere irrilevante. Per altri la stabilità di Visual Studio è compromessa e viene visualizzato un messaggio di errore.

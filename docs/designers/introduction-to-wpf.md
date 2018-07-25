@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747281"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978349"
 ---
 # <a name="introduction-to-wpf"></a>Introduzione a WPF
 
@@ -48,7 +48,7 @@ WPF consente di sviluppare applicazioni usando sia *markup* sia *code-behind*, u
 
 ### <a name="markup"></a>markup
 
-XAML è un linguaggio di markup basato su XML usato per implementare l'aspetto di un'applicazione in modo dichiarativo. Viene in genere usato per creare finestre, finestre di dialogo, pagine e controlli utente e per inserire in questi elementi controlli, forme e grafica.
+XAML è un linguaggio di markup basato su XML che implementa l'aspetto di un'applicazione in modo dichiarativo. Viene in genere usato per creare finestre, finestre di dialogo, pagine e controlli utente e per inserire in questi elementi controlli, forme e grafica.
 
  L'esempio seguente descrive come usare XAML per implementare l'aspetto di una finestra che contiene un solo pulsante.
 
@@ -149,7 +149,7 @@ La figura seguente illustra il risultato della scelta del pulsante.
 
 ## <a name="controls"></a>Controlli
 
-Le esperienze utente fornite dal modello di applicazione sono controlli costruiti. In WPF, "controllo" è un termine generico che si applica a una categoria di classi WPF ospitate in una finestra o una pagina, che hanno un'interfaccia utente e che implementano un comportamento.
+Le esperienze utente fornite dal modello di applicazione sono controlli costruiti. In WPF, *controllo* è un termine generico che si applica a una categoria di classi WPF ospitate in una finestra o una pagina, che hanno un'interfaccia utente e che implementano un comportamento.
 
 Per altre informazioni, vedere [Controlli](/dotnet/framework/wpf/controls/index).
 
@@ -260,7 +260,7 @@ In questo esempio viene creata un'istanza della classe `Person` in code-behind e
 
 Il motore di data binding di WPF offre supporto aggiuntivo che include convalida, ordinamento, filtro e raggruppamento. Il data binding supporta anche l'uso di modelli di dati per creare un'interfaccia utente personalizzata per i dati associati quando l'interfaccia utente visualizzata dai controlli WPF standard non è adatta.
 
-Per altre informazioni, vedere la [panoramica del data binding](/dotnet/framework/wpf/data/data-binding-overview).
+Per altre informazioni, vedere [Panoramica sul data binding](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="graphics"></a>Grafica
 
@@ -291,7 +291,7 @@ La figura seguente illustra il risultato del codice precedente.
 
 ![Finestra con il testo "you clicked the ellipse&#33;"](../designers/media/wpfintrofigure12.png)
 
-Per altre informazioni, vedere [Panoramica degli oggetti Shape e sulle funzionalità di disegno di base di WPF](/dotnet/framework/wpf/data/data-binding-overview).
+Per altre informazioni, vedere [Cenni preliminari sugli oggetti Shape e sulle funzionalità di disegno di base di WPF](/dotnet/framework/wpf/data/data-binding-overview).
 
 ### <a name="2d-geometries"></a>Geometrie 2D
 
@@ -301,7 +301,7 @@ Gli oggetti<xref:System.Windows.Shapes.Path> possono essere usati per disegnare 
 
 Gli oggetti <xref:System.Windows.Media.Geometry> possono essere usati per ritagliare ed eseguire hit testing e rendering di dati grafici 2D.
 
-![Vari usi di Path](../designers/media/wpfintrofigure5.png)
+![Vari usi di un percorso](../designers/media/wpfintrofigure5.png)
 
 Per altre informazioni, vedere [Cenni preliminari sulle classi Geometry](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).
 
@@ -311,7 +311,7 @@ Un subset di funzionalità 2D di WPF include effetti visivi, ad esempio sfumatur
 
 ![Illustrazione di pennelli diversi](../designers/media/wpfintrofigure6.png)
 
-Per altre informazioni, vedere [Panoramica dei pennelli di WPF](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).
+Per altre informazioni, vedere [Cenni preliminari sui pennelli di WPF](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).
 
 ### <a name="3d-rendering"></a>Rendering 3D
 
@@ -319,7 +319,7 @@ WPF include anche funzionalità di rendering 3D che si integrano con la grafica 
 
 ![Schermata dell'esempio Visual3D](../designers/media/wpfintrofigure13.png)
 
-Per altre informazioni, vedere [Panoramica della grafica tridimensionale](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
+Per altre informazioni, vedere [Cenni preliminari sulla grafica tridimensionale](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
 ## <a name="animation"></a>Animazione
 
@@ -327,7 +327,7 @@ Il supporto di animazione di WPF consente di fare crescere, muovere, ruotare e d
 
 ![Immagini di un cubo animato](../designers/media/wpfintrofigure7.png)
 
-Per altre informazioni, vedere [Panoramica dell'animazione](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
+Per altre informazioni, vedere [Cenni preliminari sull'animazione](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
 
 ## <a name="media"></a>Supporti
 
@@ -339,7 +339,7 @@ Le immagini sono comuni alla maggior parte delle applicazioni e in WPF possono e
 
 ![Immagini di anteprima e con le dimensioni originali](../designers/media/wpfintrofigure8.png)
 
-Per altre informazioni, vedere [Panoramica della creazione dell'immagine](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).
+Per altre informazioni, vedere [Cenni preliminari sulla creazione dell'immagine](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).
 
 ### <a name="video-and-audio"></a>Video e audio
 
@@ -426,7 +426,7 @@ La figura seguente mostra il contenuto di questo pulsante.
 
 ![Pulsante con più tipi di contenuto](../designers/media/wpfintrofigure22.png)
 
-Per altre informazioni sui tipi di contenuto supportati da vari controlli, vedere [Modello di contenuto WPF](/dotnet/framework/wpf/controls/wpf-content-model).
+Per altre informazioni sui tipi di contenuto supportati dai vari controlli, vedere [Modello di contenuto WPF](/dotnet/framework/wpf/controls/wpf-content-model).
 
 ### <a name="triggers"></a>Trigger
 
@@ -512,7 +512,7 @@ La figura seguente mostra il risultato di questo codice.
 
 Si noti che <xref:System.Windows.Controls.ListBox> mantiene il proprio comportamento e l'aspetto complessivo. Solo l'aspetto del contenuto visualizzato dalla casella di riepilogo viene modificato.
 
-Per altre informazioni, vedere [Panoramica dei modelli di dati](/dotnet/framework/wpf/data/data-templating-overview).
+Per altre informazioni, vedere [Cenni preliminari sui modelli di dati](/dotnet/framework/wpf/data/data-templating-overview).
 
 ### <a name="styles"></a>Stili
 
@@ -652,7 +652,7 @@ L'esempio seguente mostra un controllo su/giù numerico personalizzato che deriv
 
  ![UserControl personalizzato](../designers/media/wpfintrofigure3.png)
 
-Per altre informazioni sui controlli personalizzati, vedere [Panoramica della modifica di controlli](/dotnet/framework/wpf/controls/control-authoring-overview).
+Per altre informazioni sui controlli personalizzati, vedere [Cenni preliminari sulla modifica di controlli](/dotnet/framework/wpf/controls/control-authoring-overview).
 
 ## <a name="wpf-best-practices"></a>Procedure consigliate di WPF
 

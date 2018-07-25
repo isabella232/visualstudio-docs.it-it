@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50b066020b04ce39dffa5c7267b89b889cf986e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976387"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282106"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
 
@@ -32,9 +32,9 @@ Questo articolo illustra problemi e opzioni di generazione e compilazione di cod
 
 ### <a name="configure-code-generation-of-stubs"></a>Configurare la generazione di codice degli stub
 
-La generazione dei tipi stub è configurata in un file XML con estensione fakes. Il framework Fakes si integra nel processo di compilazione tramite attività MSBuild personalizzate e rileva tali file in fase di compilazione. Il generatore di codice Fakes compila i tipi stub in un assembly e aggiunge il riferimento al progetto.
+La generazione dei tipi stub è configurata in un file XML con estensione *FAKES*. Il framework Fakes si integra nel processo di compilazione tramite attività MSBuild personalizzate e rileva tali file in fase di compilazione. Il generatore di codice Fakes compila i tipi stub in un assembly e aggiunge il riferimento al progetto.
 
-L'esempio seguente illustra i tipi stub definiti in FileSystem.dll:
+L'esempio seguente illustra i tipi stub definiti in *FileSystem.dll*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -44,9 +44,9 @@ L'esempio seguente illustra i tipi stub definiti in FileSystem.dll:
 
 ### <a name="type-filtering"></a>Filtro dei tipi
 
-Per limitare i tipi per i quali è necessario generare stub, è possibile impostare filtri nel file con estensione fakes. È possibile aggiungere un numero illimitato di elementi Clear, Add e Remove nell'elemento StubGeneration per creare l'elenco dei tipi selezionati.
+Per limitare i tipi per i quali è necessario generare stub, è possibile impostare filtri nel file *FAKES*. È possibile aggiungere un numero illimitato di elementi Clear, Add e Remove nell'elemento StubGeneration per creare l'elenco dei tipi selezionati.
 
-Il seguente file FAKES, ad esempio, genera stub per i tipi negli spazi dei nomi System e System.IO, ma esclude qualsiasi tipo in System che contiene "Handle":
+Il seguente file *FAKES*, ad esempio, genera stub per i tipi negli spazi dei nomi System e System.IO, ma esclude qualsiasi tipo in System che contiene "Handle":
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -86,7 +86,7 @@ Le stringhe di filtro usano una grammatica semplice per definire come eseguire l
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Generare stub per classi concrete e metodi virtuali
 
-Per impostazione predefinita, vengono generati tipi stub per tutte le classi non sealed. È possibile limitare i tipi stub alle classi astratte tramite il file di configurazione con estensione fakes:
+Per impostazione predefinita, vengono generati tipi stub per tutte le classi non sealed. È possibile limitare i tipi stub alle classi astratte usando il file di configurazione *FAKES*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -136,7 +136,7 @@ Il framework Fakes usa la stessa chiave per firmare tutti gli assembly generati.
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-È possibile specificare una chiave pubblica diversa per l'assembly Fakes, ad esempio una chiave creata per l'assembly sottoposto a shim, specificando il percorso completo del file **.snk** che contiene la chiave alternativa come valore dell'attributo `KeyFile` nell'elemento `Fakes`\\`Compilation` del file con estensione **fakes**. Ad esempio:
+È possibile specificare una chiave pubblica diversa per l'assembly Fakes, ad esempio una chiave creata per l'assembly sottoposto a shim, specificando il percorso completo del file *.snk* che contiene la chiave alternativa come valore dell'attributo `KeyFile` nell'elemento `Fakes`\\`Compilation` del file con estensione *fakes*. Ad esempio:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -145,7 +145,7 @@ Il framework Fakes usa la stessa chiave per firmare tutti gli assembly generati.
 </Fakes>
 ```
 
-È quindi necessario usare la chiave pubblica del file con estensione **snk** alternativo come secondo parametro dell'attributo InternalVisibleTo per l'assembly Fakes nel codice dell'assembly sottoposto a shim:
+È quindi necessario usare la chiave pubblica del file con estensione *snk* alternativo come secondo parametro dell'attributo InternalVisibleTo per l'assembly Fakes nel codice dell'assembly sottoposto a shim:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -163,11 +163,11 @@ La compilazione di assembly Fakes può comportare un aumento significativo del t
 
 Dai progetti di unit test aggiungere un riferimento agli assembly Fakes compilati che si trovano in FakesAssemblies nella cartella del progetto.
 
-1.  Creare una nuova libreria di classi con la versione del runtime .NET corrispondente ai progetti di test. Verrà usato il nome Fakes.Prebuild. Rimuovere il file class1.cs dal progetto, in quanto non è necessario.
+1.  Creare una nuova libreria di classi con la versione del runtime .NET corrispondente ai progetti di test. Verrà usato il nome Fakes.Prebuild. Rimuovere il file *class1.cs* dal progetto, in quanto non è necessario.
 
 2.  Aggiungere un riferimento a tutti gli assembly di sistema e di terze parti per i quali è necessario Fakes.
 
-3.  Aggiungere un file con estensione fakes per ognuno degli assembly ed eseguire la compilazione.
+3.  Aggiungere un file *FAKES* per ognuno degli assembly ed eseguire la compilazione.
 
 4.  Dal progetto di test
 
@@ -175,17 +175,17 @@ Dai progetti di unit test aggiungere un riferimento agli assembly Fakes compilat
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Per ogni assembly per cui è stato creato Fakes, aggiungere un riferimento al file DLL corrispondente nella cartella Fakes.Prebuild\FakesAssemblies del progetto.
+    -   Per ogni assembly per cui è stato creato Fakes, aggiungere un riferimento al file DLL corrispondente nella cartella *Fakes.Prebuild\FakesAssemblies* del progetto.
 
 ### <a name="avoid-assembly-name-clashing"></a>Evitare conflitti di nome tra gli assembly
 
-In un ambiente Team Build, tutti gli output di compilazione vengono uniti in una singola directory. Se più progetti usano Fakes, assembly Fakes di versioni diverse potrebbero eseguire l'override gli uni degli altri. Ad esempio, il file mscorlib.dll di TestProject1 Fakes di .NET Framework 2.0 e il file mscorlib.dll di TestProject2 Fakes per .NET Framework 4 restituirebbero entrambi un assembly Fakes Fakes.dll.
+In un ambiente Team Build, tutti gli output di compilazione vengono uniti in una singola directory. Se più progetti usano Fakes, assembly Fakes di versioni diverse potrebbero eseguire l'override gli uni degli altri. Ad esempio, il file Fakes *mscorlib.dll* di TestProject1 per .NET Framework 2.0 e il file Fakes *mscorlib.dll* di TestProject2 per .NET Framework 4 restituirebbero entrambi un assembly Fakes *mscorlib.Fakes.dll*.
 
- Per evitare questo problema, Fakes deve creare automaticamente nomi di assembly Fakes con l'indicazione della versione per i riferimenti non di progetto quando vengono aggiunti file con estensione fakes. Un nome di assembly Fakes con indicazione della versione include il numero di versione che viene incorporato quando si crea il nome:
+ Per evitare questo problema, Fakes deve creare automaticamente nomi di assembly Fakes con l'indicazione della versione per i riferimenti non di progetto quando vengono aggiunti i file *FAKES*. Un nome di assembly Fakes con indicazione della versione include il numero di versione che viene incorporato quando si crea il nome:
 
  Dato un assembly MyAssembly e una versione 1.2.3.4, il nome di assembly Fakes è MyAssembly.1.2.3.4.Fakes.
 
- È possibile modificare o rimuovere la versione modificando l'attributo Versione dell'elemento Assembly nel file con estensione fakes:
+ È possibile modificare o rimuovere la versione modificando l'attributo Version dell'elemento Assembly nel file *FAKES*:
 
 ```xml
 attribute of the Assembly element in the .fakes:

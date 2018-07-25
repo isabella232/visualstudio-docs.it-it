@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d77aa1d776352edd3a030507bc25086cad47d58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925817"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890565"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Eseguire il debug o disabilitare il codice del progetto nella finestra di progettazione XAML
 
-In molti casi, le eccezioni non gestite nella finestra di progettazione XAML possono essere causate dal codice del progetto che prova ad accedere a proprietà o metodi che restituiscono valori diversi o funzionano in modi diversi quando l'applicazione è in esecuzione nella finestra di progettazione. È possibile risolvere queste eccezioni eseguendo il debug del codice del progetto in un'altra istanza di Visual Studio oppure impedirle temporaneamente disabilitando il codice del progetto nella finestra di progettazione.
+In molti casi, le eccezioni non gestite nella finestra di progettazione **XAML** possono essere causate dal codice del progetto che prova ad accedere a proprietà o metodi che restituiscono valori diversi o funzionano in modi diversi quando l'applicazione è in esecuzione nella finestra di progettazione. È possibile risolvere queste eccezioni eseguendo il debug del codice del progetto in un'altra istanza di Visual Studio oppure impedirle temporaneamente disabilitando il codice del progetto nella finestra di progettazione.
 
 Il codice del progetto include:
 
@@ -65,7 +65,7 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 
      Questo è il processo per la finestra di progettazione XAML nella prima istanza di Visual Studio.
 
-8.  Sulla barra dei menu della prima istanza di Visual Studio fare clic su **Debug** > **Avvia debug**.
+8.  Nella barra dei menu della prima istanza di Visual Studio fare clic su **Debug** > **Avvia debug**.
 
      È ora possibile eseguire le istruzioni del codice in esecuzione nella finestra di progettazione.
 
@@ -73,7 +73,7 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 
 -   Nella finestra di dialogo dell'eccezione non gestita fare clic sul collegamento **Fare clic qui per consentire l'esecuzione del codice del progetto e ricaricare la finestra di progettazione** .
 
--   In alternativa, sulla barra degli strumenti nella finestra di progettazione XAML fare clic sul pulsante **Disabilita il codice del progetto** .
+-   In alternativa, nella barra degli strumenti della **finestra di progettazione XAML** fare clic sul pulsante **Disabilita il codice del progetto**.
 
      ![Pulsante Disabilita il codice del progetto](../designers/media/xaml_disablecode.png)
 
@@ -82,10 +82,10 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
     > [!NOTE]
     > Per i progetti destinati a processori ARM o X64, Visual Studio non può eseguire il codice del progetto nella finestra di progettazione, quindi il pulsante **Disabilita il codice del progetto** è disabilitato nella finestra di progettazione.
 
--   Entrambe le opzioni comporteranno il ricaricamento della finestra di progettazione e quindi la disabilitazione di tutto il codice per il progetto associato.
+-   Entrambe le opzioni comportano il ricaricamento della finestra di progettazione e quindi la disabilitazione di tutto il codice per il progetto associato.
 
     > [!NOTE]
-    > La disabilitazione del codice del progetto può provocare una perdita di dati della fase di progettazione. In alternativa, è possibile eseguire il debug del codice in esecuzione nella finestra di progettazione.
+    > La disabilitazione del codice del progetto può determinare la perdita dei dati della fase di progettazione. In alternativa, è possibile eseguire il debug del codice in esecuzione nella finestra di progettazione.
 
 ## <a name="see-also"></a>Vedere anche
 

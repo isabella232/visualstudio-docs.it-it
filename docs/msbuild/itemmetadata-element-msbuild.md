@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3251f3f4f9ee43584d427ada7c014a566dc4db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 78e9bfffc38ac54ec7aeb525665dc7e3a8927f74
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567980"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080489"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Elemento ItemMetadata (MSBuild)
 Contiene una chiave dei metadati di elemento definita dall'utente che contiene il valore dei metadati dell'elemento. Un elemento può avere un numero qualsiasi di coppie chiave-valore dei metadati.  
@@ -34,7 +34,7 @@ Contiene una chiave dei metadati di elemento definita dall'utente che contiene i
 
 ## <a name="syntax"></a>Sintassi  
 
-```  
+```xml  
 <ItemMetadataName> Item Metadata value</ItemMetadataName>  
 ```  
 
@@ -60,8 +60,6 @@ Contiene una chiave dei metadati di elemento definita dall'utente che contiene i
  Il valore di testo è facoltativo.  
 
  Questo testo specifica il valore dei metadati dell'elemento, che può essere testo o XML.  
-
-## <a name="remarks"></a>Note  
 
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente mostra come aggiungere metadati `Culture` con il valore `fr` all'elemento `CSFile`.  

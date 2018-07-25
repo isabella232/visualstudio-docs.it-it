@@ -1,7 +1,7 @@
 ---
 title: Esercitazione sull'uso di Python, passaggio 2, scrittura ed esecuzione del codice
 description: Passaggio 2 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato alla modifica del codice e all'esecuzione di un progetto.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031550"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174841"
 ---
-# <a name="step-2-writing-and-running-code"></a>Passaggio 2: Scrittura ed esecuzione del codice
+# <a name="step-2-write-and-run-code"></a>Passaggio 2: Scrittura ed esecuzione del codice
 
-**Passaggio precedente: [Creazione di un nuovo progetto Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Passaggio precedente: [Creare un nuovo progetto Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, la finestra *editor* si trova in genere dove si lavora con i *contenuti* dei file, come il codice sorgente. L'editor è sensibile al contesto del tipo di file che si sta modificando, anche per quanto riguarda il linguaggio di programmazione (in base all'estensione del file) e offre le funzionalità appropriate per tale linguaggio, come la colorazione della sintassi e il completamento automatico tramite IntelliSense.
 
@@ -91,9 +91,9 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
 > [!div class="nextstepaction"]
 > [Uso della finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>Approfondimenti
+## <a name="go-deeper"></a>Approfondimento
 
-- [Modifica di codice R in Visual Studio](editing-python-code-in-visual-studio.md)
-- [Formattazione del codice](formatting-python-code.md)
-- [Refactoring del codice](refactoring-python-code.md)
-- [Uso di PyLint](linting-python-code.md)
+- [Modifica codice](editing-python-code-in-visual-studio.md)
+- [Codice formato](formatting-python-code.md)
+- [Effettuare il refactoring del codice](refactoring-python-code.md)
+- [Usare PyLint](linting-python-code.md)

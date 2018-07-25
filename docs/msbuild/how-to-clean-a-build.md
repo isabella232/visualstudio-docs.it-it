@@ -15,32 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e9af303b91cc0cdabc184f7ced329289eb7bd8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578220"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079122"
 ---
-# <a name="how-to-clean-a-build"></a>Procedura: pulire una compilazione
-Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file intermedi e di output, lasciando solo i file di progetto e di componente. È quindi possibile compilare nuove istanze di file intermedi e di output dai file di progetto e di componente. La libreria di attività comuni fornita con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] include un'attività [Exec](../msbuild/exec-task.md) che è possibile usare per eseguire i comandi di sistema. Per altre informazioni sulla libreria di attività, vedere [Riferimenti delle attività](../msbuild/msbuild-task-reference.md).  
+# <a name="how-to-clean-a-build"></a>Procedura: Pulire una compilazione
+Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file intermedi e di output, lasciando solo i file di progetto e di componente. È quindi possibile compilare nuove istanze di file intermedi e di output dai file di progetto e di componente. La libreria di attività comuni fornita con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] include un'attività [Exec](../msbuild/exec-task.md) che è possibile usare per eseguire i comandi di sistema. Per altre informazioni sulla libreria di attività, vedere [Attività MSBuild](../msbuild/msbuild-task-reference.md).  
   
-## <a name="creating-a-directory-for-output-items"></a>Creazione di una directory per gli elementi di output  
- Per impostazione predefinita, il file con estensione exe creato quando si compila un progetto viene inserito nella stessa directory dei file di progetto e di origine. Gli elementi di output invece vengono in genere creati in una directory distinta.  
+## <a name="create-a-directory-for-output-items"></a>Creare una directory per gli elementi di output  
+ Per impostazione predefinita, il file con estensione *exe* creato quando si compila un progetto viene inserito nella stessa directory dei file di progetto e di origine. Gli elementi di output invece vengono in genere creati in una directory distinta.  
   
 #### <a name="to-create-a-directory-for-output-items"></a>Per creare una directory per gli elementi di output  
   
-1.  Usare l'elemento `Property` per definire il percorso e il nome della directory. Ad esempio, creare una directory denominata `BuiltApp` nella directory che contiene i file di progetto e di origine:  
+1.  Usare l'elemento `Property` per definire il percorso e il nome della directory. Ad esempio, creare una directory denominata *BuiltApp* nella directory che contiene i file di progetto e di origine:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
 2.  Usare l'attività [MakeDir](../msbuild/makedir-task.md) per creare la directory se la directory non esiste. Ad esempio:  
   
-     `<MakeDir Directories = "$(builtdir)"`  
+     ```xml
+     <MakeDir Directories = "$(builtdir)"  
+      Condition = "!Exists('$(builtdir)')" />
+     ```
   
-     `Condition = "!Exists('$(builtdir)')" />`  
-  
-## <a name="removing-the-output-items"></a>Rimozione degli elementi di output  
+## <a name="remove-the-output-items"></a>Rimuovere gli elementi di output  
  Prima di creare nuove istanze dei file intermedi e di output, è possibile cancellare tutte le istanze precedenti dei file intermedi e di output. Usare l'attività [RemoveDir](../msbuild/removedir-task.md) per eliminare una directory e tutti i file e le directory in essa contenuti da un disco.  
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Per rimuovere una directory e tutti i file contenuti nella directory  

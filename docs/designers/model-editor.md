@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5353be6e3c02895ce74ff4cf27493f803bb25b4e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927033"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978424"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 
@@ -32,9 +32,9 @@ L'editor modello supporta i formati di modello indicati di seguito.
 
 |Nome del formato|Estensione nome del file|Operazioni supportate (visualizzazione, modifica, creazione)|
 |-----------------|--------------------|-------------------------------------------------|
-|File di interscambio AutoDesk FBX|.fbx|Visualizzazione, modifica, creazione|
-|File Collada DAE|.dae|Visualizzazione, modifica (le modifiche ai file Collada DAE vengono salvate utilizzando il formato FBX).|
-|OBJ|.obj|Visualizzazione, modifica (le modifiche ai file OBJ vengono salvate utilizzando il formato FBX).|
+|File di interscambio AutoDesk FBX|*.fbx*|Visualizzazione, modifica, creazione|
+|File Collada DAE|*.dae*|Visualizzazione, modifica (le modifiche ai file Collada DAE vengono salvate utilizzando il formato FBX).|
+|OBJ|*.obj*|Visualizzazione, modifica (le modifiche ai file OBJ vengono salvate utilizzando il formato FBX).|
 
 ## <a name="get-started"></a>Introduzione
 
@@ -63,7 +63,7 @@ Visual Studio supporta qualsiasi orientamento dell'asse 3D e carica le informazi
 
 ### <a name="begin-your-3d-model"></a>Avviare il modello 3D
 
-Nell'editor modello ogni nuovo oggetto inizia sempre come una forma 3D di base, o *primitiva*, integrata al suo interno. Per creare oggetti nuovi e univoci, aggiungere una primitiva alla scena e quindi alterarne la forma modificandone i vertici. Per le forme complesse, aggiungere ulteriori vertici mediante estrusione o suddivisione e quindi modificandoli. Per informazioni su come aggiungere un oggetto primitivo alla scena, vedere [Creazione e importazione di oggetti 3D](#Adding3DObjects). Per informazioni su come aggiungere altri vertici a un oggetto, vedere [Modifica di oggetti](#ModifyingObjects).
+Nell'editor modello ogni nuovo oggetto inizia sempre come una forma 3D di base, o *primitiva*, integrata al suo interno. Per creare oggetti nuovi e univoci, aggiungere una primitiva alla scena e quindi alterarne la forma modificandone i vertici. Per le forme complesse, aggiungere ulteriori vertici mediante estrusione o suddivisione e quindi modificandoli. Per informazioni su come aggiungere un oggetto primitivo alla scena, vedere [Creare e importare oggetti 3D](#Adding3DObjects). Per informazioni su come aggiungere altri vertici a un oggetto, vedere [Modificare oggetti](#ModifyingObjects).
 
 ## <a name="work-with-the-model-editor"></a>Usare l'editor modello
 
@@ -84,8 +84,8 @@ In questa tabella vengono descritti gli elementi disponibili nella barra degli s
 |Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
 |**Seleziona**|Consente di selezionare i punti, i bordi, le facce oppure gli oggetti nella scena, a seconda della modalità di selezione attiva.|
-|**Panoramica**|Consente lo spostamento di una scena 3D relativa alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nella scena e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto CTRL per attivare temporaneamente la modalità **Panoramica**.|
-|**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli della scena a seconda della cornice della finestra. In modalità **Zoom** selezionare un punto nella scena, quindi spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile eseguire lo zoom avanti o indietro usando la rotellina del mouse mentre si tiene premuto CTRL.|
+|**Panoramica**|Consente lo spostamento di una scena 3D relativa alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nella scena e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
+|**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli della scena a seconda della cornice della finestra. In modalità **Zoom** selezionare un punto nella scena, quindi spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile eseguire lo zoom avanti o indietro usando la rotellina del mouse mentre si tiene premuto **CTRL**.|
 |**Orbita**|Posiziona la visualizzazione in un percorso circolare intorno all'oggetto selezionato. Se non è selezionato alcun oggetto, il percorso viene centrato nell'origine della scena. **Nota:** questa modalità non ha effetto se è abilitata la proiezione di tipo **Ortografico**.|
 |**WorldLocal**|Se questo elemento è abilitato, le trasformazioni sull'oggetto selezionato si verificano nello spazio globale. In caso contrario, le trasformazioni sull'oggetto selezionato si verificano nello spazio locale.|
 |**Modalità perno**|Se questo elemento è abilitato, le trasformazioni incidono sulla posizione e sull'orientamento del *punto di perno* dell'oggetto selezionato. Il punto di perno definisce il centro delle operazioni di traslazione, scala e rotazione. In caso contrario, le trasformazioni incidono sulla posizione e sull'orientamento della geometria dell'oggetto, rispetto al punto di perno.|
@@ -129,8 +129,8 @@ Nella tabella indicata di seguito vengono descritti i controlli di visualizzazio
 
 |Controllo di visualizzazione|Descrizione|
 |------------------|-----------------|
-|**Panoramica**|Consente lo spostamento di una scena 3D relativa alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nella scena e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto CTRL per attivare temporaneamente la modalità **Panoramica**.|
-|**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli della scena a seconda della cornice della finestra. In modalità **Zoom** selezionare un punto nella scena, quindi spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile eseguire lo zoom avanti o indietro usando la rotellina del mouse mentre si tiene premuto CTRL.|
+|**Panoramica**|Consente lo spostamento di una scena 3D relativa alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nella scena e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
+|**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli della scena a seconda della cornice della finestra. In modalità **Zoom** selezionare un punto nella scena, quindi spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile eseguire lo zoom avanti o indietro usando la rotellina del mouse mentre si tiene premuto **CTRL**.|
 |**Orbita**|Posiziona la visualizzazione in un percorso circolare intorno all'oggetto selezionato. Se non è selezionato alcun oggetto, il percorso viene centrato nell'origine della scena. **Nota:** questa modalità non ha effetto se è abilitata la proiezione di tipo **Ortografico**.|
 |**Oggetto frame**|All'oggetto selezionato viene aggiunto un frame in modo che sia posizionato al centro della visualizzazione.|
 
@@ -145,13 +145,13 @@ Può essere utile visualizzare una scena 3D da una posizione e un angolo noti, a
 
 ### <a name="view-additional-geometry-details"></a>Visualizzare dettagli aggiuntivi sulla geometria
 
-Per comprendere meglio un oggetto o una scena 3D, è possibile visualizzare dettagli aggiuntivi sulla geometria, quali normali per singolo vertice, normali per singola faccia, punti di perno della selezione attiva e così via. Per abilitarli o disabilitarli, nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Visualizza**, quindi selezionare l'opzione desiderata.
+Per comprendere meglio un oggetto o una scena 3D, è possibile visualizzare dettagli aggiuntivi sulla geometria, quali normali per singolo vertice, normali per singola faccia, punti di perno della selezione attiva e così via. Per abilitarli o disabilitarli, nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Visualizza**, quindi selezionare l'opzione desiderata.
 
-### <a name="create-and-import-3d-objects"></a>Creare e importare oggetti 3D
+### Creare e importare oggetti 3D <a name="Adding3DObjects"></a>
 
 Per aggiungere una forma 3D predefinita alla scena, nella **casella degli strumenti** selezionare la forma desiderata e spostarla nell'area di progettazione. All'origine della scena vengono posizionate nuove forme. Nell'editor dei modelli sono disponibili sette forme: **Cono**, **Cubo**, **Cilindro**, **Disco**, **Piano**, **Sfera** e **Teiera**.
 
-Per importare un oggetto 3D da un file, nella barra degli strumenti dell'**editor modello** scegliere **Avanzate**, **Scene Management** (Gestione scena), **Importa** e specificare il file da importare.
+Per importare un oggetto 3D da un file, nella barra degli strumenti dell'**editor modello** scegliere **Avanzate** > **Scene Management** (Gestione scena)  > **Importa** > e specificare il file da importare.
 
 ### <a name="transform-objects"></a>Transform (oggetti)
 
@@ -178,7 +178,7 @@ Per importare un oggetto 3D da un file, nella barra degli strumenti dell'**edito
 
 Mediante gli strumenti di modellazione è possibile creare trasformazioni in modo rapido, ma approssimativo. Impostando le proprietà dell'oggetto, è possibile specificare trasformazioni in modo preciso, ma non rapido. È consigliabile utilizzare gli strumenti di modellazione per ottenere trasformazioni più simili a quelle desiderate e successivamente regolare i valori delle proprietà.
 
-Se non si desidera utilizzare manipolatori, è possibile abilitare la modalità a mano libera. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Free-form Manipulation** (Manipolazione a mano libera) per abilitare o disabilitare la modalità a mano libera. Nella modalità a mano libera è possibile avviare una modifica in un punto qualsiasi dell'area di progettazione, anziché in un punto del manipolatore. Nella modalità a mano libera è possibile vincolare le modifiche a determinati assi bloccando quelli che non si desidera modificare. Nella barra degli strumenti della **modalità editor dei modelli** scegliere qualsiasi combinazione dei pulsanti **Blocca asse X**, **Blocca asse Y** e **Blocca asse Z**.
+Se non si desidera utilizzare manipolatori, è possibile abilitare la modalità a mano libera. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Strumenti** > **Free-form Manipulation** (Manipolazione a mano libera) per abilitare o disabilitare la modalità a mano libera. Nella modalità a mano libera è possibile avviare una modifica in un punto qualsiasi dell'area di progettazione, anziché in un punto del manipolatore. Nella modalità a mano libera è possibile vincolare le modifiche a determinati assi bloccando quelli che non si desidera modificare. Nella barra degli strumenti della **modalità editor dei modelli** scegliere qualsiasi combinazione dei pulsanti **Blocca asse X**, **Blocca asse Y** e **Blocca asse Z**.
 
 Potrebbe essere utile utilizzare oggetti mediante aggancio alla griglia. Nella barra degli strumenti della **modalità editor dei modelli** scegliere **Snapping** per abilitare o disabilitare l'allineamento sulla griglia. Se è abilitata la funzione di aggancio alla griglia, le trasformazioni di traslazione, rotazione e ridimensionamento sono vincolate a incrementi predefiniti.
 
@@ -192,7 +192,7 @@ Per una dimostrazione dell'uso del punto pivot, vedere [Procedura: Modificare il
 
 La traslazione e la rotazione possono verificarsi nel sistema di coordinate locale (o *frame di riferimento locale*) dell'oggetto o nel sistema di coordinate globale (o *frame di riferimento globale*). Il frame di riferimento globale è indipendente dalla rotazione dell'oggetto. La modalità locale è quella predefinita. Per abilitare o disabilitare la modalità globale, nella barra degli strumenti della **modalità editor dei modelli** scegliere il pulsante **WorldLocal**.
 
-### <a name="modify-objects"></a>Modificare oggetti
+### Modificare oggetti <a name="ModifyingObjects"></a>
 
 È possibile modificare la forma di un oggetto 3D spostandone o eliminandone vertici, bordi e facce. Per impostazione predefinita, l'editor dei modelli è in *modalità oggetto* ed è pertanto possibile selezionare e trasformare interi oggetti. Per selezionare punti, bordi o facce, scegliere la modalità di selezione appropriata. Nella barra degli strumenti della **modalità editor dei modelli** scegliere **Modalità di selezione** e la modalità desiderata.
 
@@ -202,13 +202,13 @@ La traslazione e la rotazione possono verificarsi nel sistema di coordinate loca
 
 1. In modalità di selezione delle facce, selezionare la faccia che si desidera estrudere.
 
-2. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Estrudi**.
+2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Strumenti** > **Estrudi**.
 
 #### <a name="to-subdivide-faces"></a>Per suddividere facce
 
 1. In modalità di selezione delle facce, selezionare le facce che si desidera suddividere. Poiché la suddivisione crea nuovi dati di bordo, la suddivisione immediata di tutte le facce fornisce risultati più coerenti se le facce sono adiacenti.
 
-2. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Suddividi**.
+2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Strumenti** > **Suddividi**.
 
  È inoltre possibile triangolare facce, eseguire il merge di oggetti e convertire selezioni di poligoni in nuovi oggetti. La triangolazione crea bordi aggiuntivi in modo che una faccia non triangolare venga convertita in un numero ottimale di triangoli. Questa funzionalità non fornisce tuttavia dettagli geometrici aggiuntivi. L'azione di merge combina gli oggetti selezionati in un oggetto. Nuovi oggetti possono essere creati da una selezione di poligoni.
 
@@ -216,19 +216,19 @@ La traslazione e la rotazione possono verificarsi nel sistema di coordinate loca
 
 1. In modalità di selezione delle facce, selezionare la faccia di cui si desidera eseguire la triangolazione.
 
-2. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Triangolazione**.
+2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Strumenti** > **Triangolazione**.
 
 #### <a name="to-merge-objects"></a>Per eseguire il merge di oggetti
 
 1. In modalità di selezione degli oggetti, selezionare gli oggetti di cui si desidera eseguire il merge.
 
-2. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Merge di oggetti**.
+2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Strumenti** > **Merge di oggetti**.
 
 #### <a name="to-create-an-object-from-a-polygon-selection"></a>Per creare un oggetto da una selezione di poligoni
 
 1. In modalità di selezione delle facce, selezionare le facce da cui si desidera creare un nuovo oggetto.
 
-2. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Crea oggetto da selezione poligono**.
+2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Strumenti** > **Crea oggetto da selezione poligono**.
 
 ### <a name="work-with-materials-and-shaders"></a>Usare materiali e shader
 
@@ -238,9 +238,9 @@ L'editor modello fornisce i materiali predefiniti indicati di seguito.
 
 |Materiale|Descrizione|
 |--------------|-----------------|
-|Non illuminato|Esegue il rendering di una superficie senza illuminazione simulata.|
-|Lambert|Esegue il rendering di un'area con luce di ambiente simulata e illuminazione diffusa.|
-|Phong|Esegue il rendering di un'area con luce di ambiente simulata, illuminazione diffusa ed evidenziazioni speculari.|
+|**Non illuminato**|Esegue il rendering di una superficie senza illuminazione simulata.|
+|**Lambert**|Esegue il rendering di un'area con luce di ambiente simulata e illuminazione diffusa.|
+|**Phong**|Esegue il rendering di un'area con luce di ambiente simulata, illuminazione diffusa ed evidenziazioni speculari.|
 
 A ognuno di questi materiali viene applicata una trama sulla superficie di un oggetto. È possibile impostare una trama diversa per ogni oggetto che utilizza il materiale.
 
@@ -248,15 +248,15 @@ Per modificare il modo in cui un determinato oggetto risponde alle differenti so
 
 |Proprietà di illuminazione|Descrizione|
 |-----------------------|-----------------|
-|Di ambiente|Descrive in che modo la superficie è interessata da luce ambientale.|
-|Diffusa|Descrive in che modo la superficie è interessata da luce direzionale e puntiforme.|
-|Emissiva|Descrive in che modo la superficie emette luce, indipendentemente da altre fonti di illuminazione.|
-|Speculare|Descrive in che modo la superficie riflette la luce direzionale e puntiforme.|
-|Potenza speculare|Descrive l'ampiezza e l'intensità delle evidenziazioni speculari.|
+|**Di ambiente**|Descrive in che modo la superficie è interessata da luce ambientale.|
+|**Diffusa**|Descrive in che modo la superficie è interessata da luce direzionale e puntiforme.|
+|**Emissiva**|Descrive in che modo la superficie emette luce, indipendentemente da altre fonti di illuminazione.|
+|**Speculare**|Descrive in che modo la superficie riflette la luce direzionale e puntiforme.|
+|**Potenza speculare**|Descrive l'ampiezza e l'intensità delle evidenziazioni speculari.|
 
 A seconda del materiale supportato, è possibile modificare le proprietà di illuminazione, le trame e altri dati. In modalità **Seleziona** selezionare l'oggetto di cui si desidera modificare il materiale, quindi nella finestra **Proprietà** modificare **MaterialAmbient**, **MaterialDiffuse**, **MaterialEmissive**, **MaterialSpecular**, **MaterialSpecularPower** o un'altra proprietà disponibile. Un materiale può esporre fino a otto trame, le cui proprietà vengono denominate in sequenza da **Texture1** a **Texture8**.
 
-Per rimuovere tutti i materiali da un oggetto, nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Materiali**, **Rimuovi materiali**.
+Per rimuovere tutti i materiali da un oggetto, nella barra degli strumenti dell'**editor dei modelli** scegliere **Script** > **Materiali** > **Rimuovi materiali**.
 
 È possibile usare la finestra di **progettazione shader** per creare materiali shader personalizzati da applicare agli oggetti nella scena 3D. Per informazioni sulla creazione di materiali shader personalizzati, vedere [Finestra di progettazione shader](../designers/shader-designer.md). Per informazioni su come applicare un materiale shader personalizzato a un oggetto, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
@@ -272,60 +272,60 @@ Per rimuovere tutti i materiali da un oggetto, nella barra degli strumenti dell'
 
 1. In modalità **Seleziona** selezionare due o più oggetti. Il primo oggetto selezionato sarà l'oggetto padre.
 
-2. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Attach to Parent** (Connetti a oggetto padre).
+2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Scene Management** (Gestione scena)  > **Attach to Parent** (Connetti a oggetto padre).
 
 #### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Per creare una gerarchia di oggetti di pari livello
 
 1. In modalità **Seleziona** selezionare due o più oggetti. Viene creato un oggetto segnaposto, che diviene oggetto padre.
 
-2. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Crea gruppo**.
+2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Scene Management** (Gestione scena)  > **Crea gruppo**.
 
-Nell'editor modello viene utilizzato un wireframe bianco per identificare il primo oggetto selezionato, che diviene il padre. Altri oggetti della selezione presentano un wireframe blu. Per impostazione predefinita, non vengono visualizzati i nodi segnaposto. Per visualizzare i nodi segnaposto, nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Show Placeholder Nodes** (Mostra nodi segnaposto). È possibile utilizzare nodi segnaposto in modo analogo a qualsiasi oggetto di diverso tipo.
+Nell'editor modello viene utilizzato un wireframe bianco per identificare il primo oggetto selezionato, che diviene il padre. Altri oggetti della selezione presentano un wireframe blu. Per impostazione predefinita, non vengono visualizzati i nodi segnaposto. Per visualizzare i nodi segnaposto, nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Scene Management** (Gestione scena)  > **Show Placeholder Nodes** (Mostra nodi segnaposto). È possibile utilizzare nodi segnaposto in modo analogo a qualsiasi oggetto di diverso tipo.
 
-Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto figlio, quindi nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Detach from Parent** (Disconnetti da oggetto padre). Quando si rimuove il padre da un oggetto figlio, quest'ultimo diventa un oggetto radice nella scena.
+Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto figlio, quindi nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Scene Management** (Gestione scena)  > **Detach from Parent** (Disconnetti da oggetto padre). Quando si rimuove il padre da un oggetto figlio, quest'ultimo diventa un oggetto radice nella scena.
 
 ## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
 
 |Comando|Scelte rapide da tastiera|
 |-------------|------------------------|
-|Passare alla modalità **Seleziona**|CTRL+G, CTRL+Q<br /><br /> S|
-|Passare alla modalità **Zoom**|CTRL+G, CTRL+Z<br /><br /> Z|
-|Passare alla modalità **Panoramica**|CTRL+G, CTRL+P<br /><br /> K|
-|Selezionare tutto|CTRL+A|
-|Eliminare la selezione corrente|Eliminare|
-|Annullare la selezione corrente|Escape|
-|Fare zoom avanti|Rotellina del mouse avanti<br /><br /> CTRL+rotellina del mouse avanti<br /><br /> MAIUSC+rotellina del mouse avanti<br /><br /> CTRL+PGSU<br /><br /> Segno più (+)|
-|Fare zoom indietro|Rotellina del mouse indietro<br /><br /> CTRL+rotellina del mouse indietro<br /><br /> MAIUSC+rotellina del mouse indietro<br /><br /> CTRL+PGGIÙ<br /><br /> Segno meno (-)|
-|Panoramica della fotocamera verso l'alto|PGGIÙ|
-|Panoramica della fotocamera verso il basso|PGSU|
-|Panoramica della fotocamera verso sinistra|Rotellina del mouse a sinistra<br /><br /> CTRL+PGGIÙ|
-|Panoramica della fotocamera verso destra|Rotellina del mouse verso destra<br /><br /> CTRL+PGGIÙ|
-|Visualizzare il lato superiore del modello|CTRL+L, CTRL+T<br /><br /> T|
-|Visualizzare il lato inferiore del modello|CTRL+L, CTRL+U|
-|Visualizzare il lato sinistro del modello|CTRL+L, CTRL+L|
-|Visualizzare il lato destro del modello|CTRL+L, CTRL+R|
-|Visualizzare il lato anteriore del modello|CTRL+L, CTRL+F|
-|Visualizzare il lato posteriore del modello|CTRL+L, CTRL+B|
-|Oggetto frame nella finestra|F|
-|Abilitare/Disabilitare la modalità wireframe|CTRL+L, CTRL+W|
-|Abilitare/Disabilitare l'aggancio alla griglia|CTRL+G, CTRL+N|
-|Abilitare/Disabilitare la modalità perno|CTRL+G, CTRL+V|
-|Abilitare/Disabilitare la limitazione per l'asse x|CTRL+L, CTRL+X|
-|Abilitare/Disabilitare la limitazione per l'asse y|CTRL+L, CTRL+Y|
-|Abilitare/Disabilitare la limitazione per l'asse z|CTRL+L, CTRL+Z|
-|Passare alla modalità traslazione|CTRL+G, CTRL+W<br /><br /> W|
-|Passare alla modalità scala.|CTRL+G, CTRL+E<br /><br /> E|
-|Passare alla modalità rotazione.|CTRL+G, CTRL+R<br /><br /> R|
-|Passare alla modalità di selezione punti|CTRL+L, CTRL+1|
-|Passare alla modalità di selezione dei bordi|CTRL+L, CTRL+2|
-|Passare alla modalità di selezione delle facce|CTRL+L, CTRL+3|
-|Passare alla modalità di selezione degli oggetti|CTRL+L, CTRL+4|
-|Passare alla modalità orbita (fotocamera)|CTRL+G, CTRL+O|
-|Selezionare l'oggetto successivo nella scena|Scheda|
-|Selezionare l'oggetto precedente nella scena|MAIUSC+TAB|
-|Modifica l'oggetto selezionato in base allo strumento corrente.|Tasti freccia|
-|Disattivare il manipolatore corrente|Q|
-|Ruotare la fotocamera|ALT+Trascinamento con il pulsante sinistro del mouse|
+|Passare alla modalità **Seleziona**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
+|Passare alla modalità **Zoom**|**CTRL**+**G**, **CTRL**+**Z**<br /><br /> **Z**|
+|Passare alla modalità **Panoramica**|**CTRL**+**G**, **CTRL**+**P**<br /><br /> **K**|
+|Selezionare tutto|**Ctrl**+**A**|
+|Eliminare la selezione corrente|**Eliminazione**|
+|Annullare la selezione corrente|**ESCAPE** (**ESC**)|
+|Fare zoom avanti|**Rotellina del mouse avanti**<br /><br /> **CTRL**+**Rotellina del mouse avanti**<br /><br /> **MAIUSC**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più (**+**)|
+|Fare zoom indietro|**Rotellina del mouse indietro**<br /><br /> **CTRL**+**Rotellina del mouse indietro**<br /><br /> **MAIUSC**+**Rotellina del mouse indietro**<br /><br /> **CTRL**+**PGGIÙ**<br /><br /> Segno meno (**-**)|
+|Panoramica della fotocamera verso l'alto|**PGGIÙ**|
+|Panoramica della fotocamera verso il basso|**PGSU**|
+|Panoramica della fotocamera verso sinistra|**Rotellina del mouse a sinistra**<br /><br /> **CTRL**+**PGGIÙ**|
+|Panoramica della fotocamera verso destra|**Rotellina del mouse a destra**<br /><br /> **CTRL**+**PGGIÙ**|
+|Visualizzare il lato superiore del modello|**CTRL**+**L**, **CTRL**+**T**<br /><br /> **T**|
+|Visualizzare il lato inferiore del modello|**CTRL**+**L**, **CTRL**+**U**|
+|Visualizzare il lato sinistro del modello|**CTRL**+**L**, **CTRL**+**L**|
+|Visualizzare il lato destro del modello|**CTRL**+**L**, **CTRL**+**R**|
+|Visualizzare il lato anteriore del modello|**CTRL**+**L**, **CTRL**+**F**|
+|Visualizzare il lato posteriore del modello|**CTRL**+**L**, **CTRL**+**B**|
+|Oggetto frame nella finestra|**F**|
+|Abilitare/Disabilitare la modalità wireframe|**CTRL**+**L**, **CTRL**+**W**|
+|Abilitare/Disabilitare l'aggancio alla griglia|**CTRL**+**G**, **CTRL**+**N**|
+|Abilitare/Disabilitare la modalità perno|**CTRL**+**G**, **CTRL**+**V**|
+|Abilitare/Disabilitare la limitazione per l'asse x|**CTRL**+**L**, **CTRL**+**X**|
+|Abilitare/Disabilitare la limitazione per l'asse y|**CTRL**+**L**, **CTRL**+**Y**|
+|Abilitare/Disabilitare la limitazione per l'asse z|**CTRL**+**L**, **CTRL**+**Z**|
+|Passare alla modalità traslazione|**CTRL**+**G**, **CTRL**+**W**<br /><br /> **W**|
+|Passare alla modalità scala.|**CTRL**+**G**, **CTRL**+**E**<br /><br /> **E**|
+|Passare alla modalità rotazione.|**CTRL**+**G**, **CTRL**+**R**<br /><br /> **R**|
+|Passare alla modalità di selezione punti|**CTRL**+**L**, **CTRL**+**1**|
+|Passare alla modalità di selezione dei bordi|**CTRL**+**L**, **CTRL**+**2**|
+|Passare alla modalità di selezione delle facce|**CTRL**+**L**, **CTRL**+**3**|
+|Passare alla modalità di selezione degli oggetti|**CTRL**+**L**, **CTRL**+**4**|
+|Passare alla modalità orbita (fotocamera)|**CTRL**+**G**, **CTRL**+**O**|
+|Selezionare l'oggetto successivo nella scena|**TAB**|
+|Selezionare l'oggetto precedente nella scena|**MAIUSC**+**TAB**|
+|Modifica l'oggetto selezionato in base allo strumento corrente.|Tasti **di direzione**|
+|Disattivare il manipolatore corrente|**Q**|
+|Ruotare la fotocamera|**ALT**+**Trascinamento** con il pulsante sinistro del mouse|
 
 ## <a name="related-topics"></a>Argomenti correlati
 

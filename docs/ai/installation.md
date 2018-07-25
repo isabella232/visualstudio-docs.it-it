@@ -12,24 +12,24 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e28558b1d09ded8de5bc6c4eb45230435cb807
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4785bc8362d7e50b5fb48bf88df29313ddfcc0c8
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31055923"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303109"
 ---
 # <a name="installation"></a>Installazione
 
 È possibile installare gli strumenti di Visual Studio per IA nei sistemi operativi Windows a 64 bit.
 
-## <a name="installing-visual-studio-tools-for-ai"></a>Installazione degli strumenti di Visual Studio per IA
+## <a name="install-visual-studio-tools-for-ai"></a>Installare Visual Studio Tools for AI
 
-L'estensione può essere usata con [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015, 2017, con l'edizione Community o versioni successive.
+Questa estensione può essere usata con Visual Studio 2015 e con Visual Studio 2017 Community Edition o versioni successive.
 
-Per eseguire l'installazione, scaricare il download da [Visual Studio Marketplace](http://aka.ms/vstoolsforai) o da Visual Studio
+Per eseguire l'installazione, eseguire il download da [Visual Studio Marketplace](http://aka.ms/vstoolsforai) o da Visual Studio
 
-1. **Strumenti**> **Estensioni e aggiornamenti**
+1. **Strumenti** > **Estensioni e aggiornamenti**
 
 ![Installare CUDA in Windows](media\installation\extensions.png)
 
@@ -37,13 +37,11 @@ Per eseguire l'installazione, scaricare il download da [Visual Studio Marketplac
 2. Selezionare **Visual Studio Tools for AI** (Strumenti di Visual Studio per IA)
 3. Fare clic su **Download**
 
-
-## <a name="preparing-your-local-machine"></a>Preparazione del computer locale
+## <a name="prepare-your-local-machine"></a>Preparare il computer locale
 
 Prima di eseguire modelli di apprendimento profondo nel computer locale, assicurarsi di aver installato la versione più recente dei prerequisiti appropriati. Ciò include la versione più recente dei driver e delle raccolte per la GPU NVIDIA, se presente. È necessario anche assicurarsi di aver installato Python e le raccolte Python, ad esempio NumPy, SciPy e i framework dell'apprendimento profondo, ad esempio Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch e/o Chainer, che si prevede di usare nel progetto.
 
 > [!NOTE]
->
 > Le introduzioni ai software nelle sottosezioni riportate di seguito sono state estratte dalle relative home page.
 
 ### <a name="nvidia-gpu-driver"></a>Driver della GPU NVIDIA
@@ -68,23 +66,21 @@ Per installare CUDA
 
 [cuDNN](https://developer.nvidia.com/cudnn) (CUDA Deep Neural Network library, libreria di reti neurali profonde CUDA) è una libreria con accelerazione GPU di primitive per reti neurali profonde ideata da NVIDIA. Per i framework di apprendimento profondo più recenti è necessaria la versione 6 di cuDNN.
 
-Per installare cuDNN
-- Visitare [questo sito](https://developer.nvidia.com/rdp/cudnn-download) per scaricare e installare il pacchetto più recente.
+Per installare cuDNN:
+
+- Visitare il sito Web [NVIDIA Developer](https://developer.nvidia.com/rdp/cudnn-download) per scaricare e installare il pacchetto più recente.
 - Assicurarsi di aggiungere la directory contenente il file binario cuDNN alla variabile di ambiente %$Path% o $Path.
 - In Windows è possibile copiare cudnn64_6.dll in "C:\Programmi\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin".
 
 > [!NOTE]
->
-> Per i framework di apprendimento profondo più recenti, come ad esempio CNTK 2.0 e TensorFlow 1.2.1, è richiesta la versione 5.1 di cuDNN.
-> Tuttavia, è possibile installare più versioni di cuDNN insieme.
-
+> Per i framework di apprendimento profondo più recenti, come ad esempio CNTK 2.0 e TensorFlow 1.2.1, è richiesta la versione 5.1 di cuDNN. Tuttavia, è possibile installare più versioni di cuDNN insieme.
 
 ### <a name="python"></a>Python
 
-Python è il linguaggio di programmazione principale per le applicazioni di apprendimento profondo.
-È richiesta la distribuzione di Python a **64 bit** ed è consigliabile installare [Python 3.5.4](https://www.python.org/downloads/release/python-354/) per una compatibilità ottimale.
+Python è il linguaggio di programmazione principale per le applicazioni di apprendimento profondo. È richiesta la distribuzione di Python a **64 bit** ed è consigliabile installare [Python 3.5.4](https://www.python.org/downloads/release/python-354/) per una compatibilità ottimale.
 
 ### <a name="to-install-python-on-windows"></a>Per installare Python in Windows
+
 - È consigliabile installare solo l'utilità di avvio e di aggiungere Python alla variabile di ambiente %PATH%.
 - Assicurarsi di installare pip, ovvero il sistema di gestione pacchetti per installare e gestire i pacchetti software scritti in Python.
 
@@ -125,16 +121,15 @@ Per altre informazioni sull'installazione, vedere [Installazione del supporto di
 
 - **NumPy** è un pacchetto di elaborazione di matrici generico progettato per modificare in modo efficiente matrici multidimensionali di record arbitrari di dimensioni elevate senza compromettere la velocità per le matrici multidimensionali di piccole dimensioni.
 
-- **SciPy** (pronunciato come l'inglese "Sigh Pie") è un software open source destinato all'ambito matematico, scientifico e tecnico, che dipende da NumPy.
-A partire dalla versione 1.0.0, SciPy ha un pacchetto precompilato per Windows.
+- **SciPy** (pronunciato come l'inglese "Sigh Pie") è un software open source destinato all'ambito matematico, scientifico e tecnico, che dipende da NumPy. A partire dalla versione 1.0.0, SciPy ha un pacchetto precompilato per Windows.
 
 Per installare NumPy e SciPy, eseguire il comando seguente in un terminale:
+
 ```bash
 pip3.5 install -U numpy scipy
 ```
 
 > [!NOTE]
->
 > Il comando precedente aggiorna le installazioni di NumPy e SciPy obsolete o non ufficiali, ad esempio, pacchetti di terze parti da http://www.lfd.uci.edu/~gohlke/pythonlibs/.
 
 ### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive Toolkit (CNTK)
@@ -142,24 +137,20 @@ pip3.5 install -U numpy scipy
 [Microsoft Cognitive Toolkit](https://cntk.ai) è un toolkit di apprendimento profondo unificato che descrive le reti neurali come una serie di passaggi di elaborazione tramite un digrafo. CNTK supporta sia il linguaggio di programmazione Python che BrainScript.
 
 > [!NOTE]
->
 > Al momento CNTK non supporta macOS.
 
 Per installare il pacchetto di Python CNTK, vedere [How to install CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine) (Come installare CNTK)
 
 ### <a name="tensorflow"></a>TensorFlow
 
-[TensorFlow](https://www.tensorflow.org/) è una libreria di software open source per calcoli numerici che usa rappresentazioni dei flussi di dati.
-Per la procedura dettagliata di installazione, fare clic [qui](https://www.tensorflow.org/install/).
+[TensorFlow](https://www.tensorflow.org/) è una libreria di software open source per calcoli numerici che usa rappresentazioni dei flussi di dati. Per la procedura dettagliata di installazione, fare clic [qui](https://www.tensorflow.org/install/).
 
 > [!NOTE]
->
 > A partire dalla versione 1.2, TensorFlow non supporta più la GPU per macOS.
 
 ### <a name="caffe2"></a>Caffe2
 
-[Caffe2](https://caffe2.ai/) è un framework di apprendimento profondo leggero, modulare e scalabile.
-Compilato sulla base di Caffe, Caffe2 è progettato per espressione, velocità e modularità.
+[Caffe2](https://caffe2.ai/) è un framework di apprendimento profondo leggero, modulare e scalabile. Compilato sulla base di Caffe, Caffe2 è progettato per espressione, velocità e modularità.
 
 Attualmente, non vi sono pacchetti di Caffe2 precompilati per Python.
 
@@ -167,10 +158,10 @@ Visitare [questo sito](https://caffe2.ai/docs/getting-started.html) per eseguire
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) è un framework di apprendimento profondo progettato per efficienza e flessibilità.
-Consente di **combinare** [programmazione simbolica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) per ottimizzare efficienza e produttività.
+[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) è un framework di apprendimento profondo progettato per efficienza e flessibilità. Consente di **combinare** [programmazione simbolica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) per ottimizzare efficienza e produttività.
 
 Per installare MXNet, eseguire il comando seguente in un terminale:
+
 - Con GPU
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
@@ -185,6 +176,7 @@ Per installare MXNet, eseguire il comando seguente in un terminale:
 [Keras](https://keras.io/) è un'API di alto livello per reti neurali, scritta in Python e che può essere eseguita con CNTK, TensorFlow o Theano. È stata sviluppata allo scopo di consentire la sperimentazione veloce. La possibilità di passare dall'idea al risultato senza perdere tempo è fondamentale per una ricerca di buon livello.
 
 Per installare Keras, eseguire il comando seguente in un terminale:
+
 ```bash
 pip3.5 install Keras==2.0.9
 ```
@@ -194,6 +186,7 @@ pip3.5 install Keras==2.0.9
 [Theano](http://deeplearning.net/software/theano/) è una libreria Python che consente di definire, ottimizzare e valutare in modo efficiente espressioni matematiche che coinvolgono matrici multidimensionali.
 
 Per installare Theano, eseguire il comando seguente in un terminale:
+
 ```bash
 pip3.5 install Theano==0.9.0
 ```
@@ -201,13 +194,14 @@ pip3.5 install Theano==0.9.0
 ### <a name="pytorch"></a>PyTorch
 
 [PyTorch](http://pytorch.org/) è un pacchetto Python che offre due funzionalità di alto livello:
+
 - Calcolo del tensore, come NumPy, con un'accelerazione della GPU notevole
 - Reti neurali profonde generate a partire da un sistema di differenziazione automatica basato su nastro
 
 Per installare PyTorch, eseguire il comando seguente in un terminale:
 
 - **Windows**
-    - Non è ancora disponibile un pacchetto ufficiale. È possibile scaricare un [pacchetto Anaconda PyTorch](https://anaconda.org/peterjc123/pytorch/0.2.1/download/win-64/pytorch-0.2.1-py35h24644ff_0.2.1cu80.tar.bz2) di terze parti.
+    - Non è ancora disponibile un pacchetto ufficiale. È possibile scaricare un [pacchetto Anaconda PyTorch](https://anaconda.org/pytorch/repo?type=all) di terze parti.
     - Decomprimerlo nella directory principale, ad esempio "C:\Utenti\test\pytorch".
     - Aggiungere "C:\Utenti\test\pytorch\Lib\site-packages" alla variabile di ambiente % PYTHONPATH%.
 
@@ -216,7 +210,6 @@ Per installare PyTorch, eseguire il comando seguente in un terminale:
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
     > [!NOTE]
-    >
     > I file binari macOS non supportano CUDA. Se necessario, eseguire l'installazione dai file di origine
 
 - **Linux**
@@ -224,31 +217,29 @@ Per installare PyTorch, eseguire il comando seguente in un terminale:
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
     > [!NOTE]
-    >
     > Il pacchetto singolo supporta sia GPU che CPU.
 
 Infine, installare il pacchetto torchvision per sistemi non-Windows:
+
 ```bash
 pip3.5 install torchvision
 ```
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) è un framework di apprendimento profondo basato su Python che ottimizza la flessibilità.
-Offre API di differenziazione automatica basate sull'**approccio define-by-run**, ovvero sui grafici di calcolo dinamico, nonché su API di alto livello orientate agli oggetti per sfruttare e addestrare le reti neurali.
+[Chainer](https://chainer.org/) è un framework di apprendimento profondo basato su Python che ottimizza la flessibilità. Offre API di differenziazione automatica basate sull'**approccio define-by-run**, ovvero sui grafici di calcolo dinamico, nonché su API di alto livello orientate agli oggetti per sfruttare e addestrare le reti neurali.
 
 Per abilitare il supporto CUDA, installare [CuPy](https://github.com/cupy/cupy):
+
 ```bash
 pip3.5 install cupy
 ```
 
 > [!NOTE]
->
-> In Windows è necessaria la versione **2015** di [Microsoft Visual Studio](https://www.visualstudio.com/) o [Microsoft Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools) per compilare CuPy con CUDA 8.0.
+> In Windows, per compilare CuPy con CUDA 8.0 è necessaria la versione 2015 di [Visual Studio](https://visualstudio.microsoft.com/) o [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
 
 Per installare Chainer, eseguire il comando seguente in un terminale:
+
 ```bash
 pip3.5 install chainer==3.0.0
 ```
-
-

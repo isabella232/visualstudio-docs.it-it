@@ -10,12 +10,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a263f361e28c515f1694238c4d60fdeffb95f03a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746624"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077812"
 ---
 # <a name="xaml-errors-and-warnings"></a>Errori e avvisi XAML
 
@@ -32,7 +32,7 @@ Vari strumenti analizzano il codice XAML in background. Gli errori XAML sono sud
 |Modifica e continuazione XAML|XECxxxx|
 
 > [!Note]
-> Non tutti gli errori/avvisi hanno un codice corrispondente. Gli errori senza codice sono in genere errori della finestra di progettazione XAML.
+> Non tutti gli errori o avvisi hanno un codice corrispondente. Gli errori senza codice sono in genere errori della finestra di progettazione XAML.
 
 
 ## <a name="suppress-xaml-designer-errors"></a>Eliminare gli errori della finestra di progettazione XAML

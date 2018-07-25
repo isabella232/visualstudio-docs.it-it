@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce6d809794903c0247218ce3a082112d04dd020e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: faff304831f8f2ffabed925d2ab3dfc5d64c18af
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237458"
 ---
 # <a name="markerserieswriteflag-method"></a>Metodo marker_series::write_flag
 Scrive un flag nel file di traccia del visualizzatore di concorrenza.  
@@ -59,7 +60,7 @@ void write_flag(
  Categoria.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** cvmarkersobj.h  
+ **Intestazione:** *cvmarkersobj.h*  
   
  **Spazio dei nomi:** Concurrency::diagnostic  
   

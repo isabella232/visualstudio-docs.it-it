@@ -9,12 +9,12 @@ description: Informazioni su come individuare il numero di cliente pubblico (PCN
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 224cb02d2ffdeceb4c2288175968324badd0911c
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863297"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325440"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Come individuare il numero di cliente pubblico (PCN) o il numero di autorizzazione
 
@@ -24,16 +24,13 @@ Per completare il processo di onboarding della propria organizzazione nel portal
 
 1.  Accedere a Volume Licensing Service Center (VLSC) in [https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter).
 
-    ![Accedere a VLSC](_img/vlsc/vlsc-login.png)
-
 2. Nella scheda Sottoscrizioni selezionare **Sottoscrizioni di Visual Studio**.
-
     ![Scegliere le sottoscrizioni in VLSC](_img/vlsc/vlsc-subscriptions.png)
 
 3. Il PCN o numero di cliente pubblico si trova a metà della pagina.
-    
     ![Individuare il PCN in VLSC](_img/vlsc/vlsc-pcn.png)
 
+    
 Se non viene visualizzata la pagina precedente e si viene reindirizzati alla pagina di accesso di Visual Studio, copiare e incollare il collegamento seguente nel browser: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Se si hanno più PCN, quale usare?

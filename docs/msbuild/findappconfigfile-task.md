@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf30e53f8d62f98b5e18b4e9a64e43d32aa498b0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 04a8209ca6856ba550a45c7f67480d1e89db49a3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567473"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946209"
 ---
-# <a name="findappconfigfile-task"></a>Attività FindAppConfigFile
-Trova il file app.config, se presente, negli elenchi forniti.  
+# <a name="findappconfigfile-task"></a>FindAppConfigFile (attività)
+Trova il file *app.config*, se presente, negli elenchi disponibili.  
   
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `FindAppConfigFile` .  
@@ -43,4 +43,4 @@ Trova il file app.config, se presente, negli elenchi forniti.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

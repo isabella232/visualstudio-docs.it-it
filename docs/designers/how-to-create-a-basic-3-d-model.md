@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745685"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924330"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Procedura: Creare un modello 3D di base
 
@@ -52,7 +52,7 @@ Questo articolo illustra come usare l'editor dei modelli per creare un modello 3
 
      ![La parte superiore del cubo è stata suddivisa](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  Estrudere due lati adiacenti del cubo, ad esempio i lati frontale e destro. In modalità di selezione icona, scegliere una volta il cubo per attivarlo per la selezione, quindi scegliere un lato del cubo. Tenendo premuto CTRL, scegliere un altro lato del cubo adiacente al lato selezionato per primo e nella barra degli strumenti dell'editor dei modelli scegliere **Estrudi faccia**.
+5.  Estrudere due lati adiacenti del cubo, ad esempio i lati frontale e destro. In modalità di selezione icona, scegliere una volta il cubo per attivarlo per la selezione, quindi scegliere un lato del cubo. Tenendo premuto **CTRL**, scegliere un altro lato del cubo adiacente al lato selezionato per primo e nella barra degli strumenti dell'editor dei modelli scegliere **Estrudi faccia**.
 
      ![I lati del cubo sono stati estrusi](../designers/media/gfx_model_demo_house_extrude.png)
 
@@ -60,9 +60,9 @@ Questo articolo illustra come usare l'editor dei modelli per creare un modello 3
 
      ![Una lato del cubo è stato ulteriormente estruso](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  Eseguire la triangolazione del modello. Nella barra degli strumenti dell'editor dei modelli scegliere **Avanzate**, **Strumenti**, **Triangolazione**.
+7.  Eseguire la triangolazione del modello. Nella barra degli strumenti dell'editor dei modelli scegliere **Avanzate** > **Strumenti** > **Triangolazione**.
 
-8.  Creare il tetto della casa. Passare alla modalità di selezione bordo scegliendo **Seleziona bordo** nella barra degli strumenti dell'editor dei modelli e quindi scegliere il cubo per attivarlo. Durante la selezione dei bordi visualizzati qui, tenere premuto il tasto CTRL.
+8.  Creare il tetto della casa. Passare alla modalità di selezione bordo scegliendo **Seleziona bordo** nella barra degli strumenti dell'editor dei modelli e quindi scegliere il cubo per attivarlo. Durante la selezione dei bordi visualizzati qui, tenere premuto **CTRL**:
 
      ![Bordi che formeranno il picco del tetto](../designers/media/gfx_model_demo_house_edges.png)
 

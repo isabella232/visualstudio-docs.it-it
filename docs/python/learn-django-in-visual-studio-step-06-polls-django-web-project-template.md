@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d88f1e258bf8aa9801555c256f825841fff9d476
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750493"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089503"
 ---
-# <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Passaggio 6 della procedura: Usare il modello Progetto Web Django di sondaggi
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Passaggio 6: Usare il modello Progetto Web Django di sondaggi
 
 **Passaggio precedente: [Autenticare gli utenti in Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
@@ -368,11 +368,11 @@ A questo punto, sono stati esaminati i modelli "Progetto Web Django vuoto", "Pro
 
 L'esecuzione di un'app Web nel computer di sviluppo è solo un passaggio per rendere disponibile l'app ai clienti. I passaggi successivi possono includere le attività seguenti:
 
+- Distribuire l'app Web in un server di produzione, ad esempio Servizio app di Azure. Vedere [Pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md), che include le modifiche specifiche necessarie per le app Django.
+
 - Personalizzare la pagina 404 creando un modello denominato `templates/404.html`. Quando questo modello è presente, Django lo usa al posto di quello predefinito. Per altre informazioni, vedere [Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) (Visualizzazioni di errore) nella documentazione di Django.
 
 - Scrivere unit test in `tests.py`. I modelli di progetto di Visual Studio forniscono il punto di partenza per questa attività. Per altre informazioni, vedere [Writing your first Django app, part 5 - testing](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) (Scrittura della prima app Django, parte 5 - test) e [Testing in Django](https://docs.djangoproject.com/en/2.0/topics/testing/) (Test in Django) nella documentazione di Django.
-
-- Distribuire l'app Web in un server di produzione, ad esempio Servizio app di Azure. Vedere [Pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md), che include le modifiche specifiche necessarie per le app Django.
 
 - Modificare l'app da SQLite a un archivio dati a livello di produzione, ad esempio PostgreSQL, MySQL e SQL Server (che possono tutti essere ospitati in Azure). Come descritto in [When to use SQLite](https://www.sqlite.org/whentouse.html) (Quando usare SQLite) (sqlite.org), SQLite è appropriato per i siti con traffico medio o basso, con meno di 100.000 accessi al giorno, ma non è consigliato per volumi più elevati. È anche limitato a un unico computer, quindi non può essere usato in scenari con più server, ad esempio con il bilanciamento del carico e la replica geografica. Per informazioni sul supporto di Django per altri database, vedere [Database setup](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup) (Configurazione del database). È anche possibile usare [Azure SDK per Python](azure-sdk-for-python.md) per usare servizi di archiviazione di Azure, ad esempio tabelle e BLOB.
 

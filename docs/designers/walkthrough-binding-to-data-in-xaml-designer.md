@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 557cdd14a37a52933df44c92b76fe608a1cc273c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745711"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079888"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 
@@ -27,13 +27,13 @@ Nella finestra di progettazione XAML è possibile impostare le proprietà di dat
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Per creare una classe da usare come origine dati
 
-1. Nel menu **File** scegliere **Nuovo**> **Progetto**.
+1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
 1. Nella finestra di dialogo **Nuovo progetto** scegliere il nodo **Visual C#** o **Visual Basic**, espandere il nodo **Desktop di Windows** e scegliere il modello **Applicazione WPF**.
 
 1. Assegnare al progetto il nome **BindingTest** e fare clic sul pulsante **OK**.
 
-1. Aprire il file MainWindow.xaml.cs (o MainWindow.xaml.vb) e aggiungere il codice seguente. In C# aggiungere il codice nello spazio dei nomi `BindingTest` (prima della parentesi chiusa finale nel file). In Visual Basic, è sufficiente aggiungere la nuova classe.
+1. Aprire il file **MainWindow.xaml.cs** (o **MainWindow.xaml.vb**) e aggiungere il codice seguente. In C# aggiungere il codice nello spazio dei nomi `BindingTest` (prima della parentesi chiusa finale nel file). In Visual Basic, è sufficiente aggiungere la nuova classe.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -73,7 +73,7 @@ Nella finestra di progettazione XAML è possibile impostare le proprietà di dat
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Per associare la proprietà ItemCount a un controllo TextBlock
 
-1. In Esplora soluzioni aprire il menu di scelta rapida per MainWindow.xaml e scegliere **Progettazione visualizzazioni**.
+1. In Esplora soluzioni aprire il menu di scelta rapida per **MainWindow.xaml** e scegliere **Progettazione visualizzazioni**.
 
 1. Nella casella degli strumenti scegliere un controllo [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) e aggiungerlo al modulo.
 

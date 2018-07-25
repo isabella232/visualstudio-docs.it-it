@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d128df04ef13ea6ee4b5b20368b5932842cc3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3ce43a9b2acae5589e4b746ce4bf2b2a47b0111
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578687"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946833"
 ---
-# <a name="getframeworksdkpath-task"></a>Attività GetFrameworkSdkPath
+# <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath (attività)
 Recupera il percorso di [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
- Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkSdkPath`.  
+ Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkSdkPath` .  
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  
@@ -61,4 +61,4 @@ Recupera il percorso di [!INCLUDE[winsdklong](../deployment/includes/winsdklong_
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

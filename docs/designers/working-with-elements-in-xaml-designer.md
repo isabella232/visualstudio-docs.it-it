@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269190"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078927"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Utilizzo di elementi in XAML Designer
 È possibile aggiungere elementi, come controlli, layout e forme, all'app in XAML, nel codice o usando la finestra di progettazione XAML. Questo argomento descrive come usare gli elementi nella finestra di progettazione XAML in Visual Studio o in Blend per Visual Studio.
@@ -29,7 +29,7 @@ ms.locfileid: "34269190"
 
 -   Nella finestra di progettazione XAML eseguire una delle operazioni seguenti:
 
-    -   Fare doppio clic su un elemento nella **casella degli strumenti** oppure selezionare un elemento nella casella degli strumenti e premere INVIO.
+    -   Fare doppio clic su un elemento nella **casella degli strumenti** oppure selezionare un elemento nella casella degli strumenti e premere **INVIO**.
 
     -   Trascinare un elemento dalla **casella degli strumenti** nella tavola da disegno.
 
@@ -63,7 +63,7 @@ ms.locfileid: "34269190"
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Per allineare due o più elementi tramite i comandi di menu
 
-1.  Selezionare gli elementi da allineare. È possibile selezionare uno o più elementi tenendo premuto CTRL mentre li si selezionano.
+1.  Selezionare gli elementi da allineare. È possibile selezionare uno o più elementi tenendo premuto **CTRL** mentre li si selezionano.
 
 2.  Selezionare una delle proprietà seguenti in **HorizontalAlignment** nella sezione **Layout** della finestra Proprietà: **A sinistra**, **Al centro**, **A destra** o **Stretch**.
 
@@ -100,7 +100,7 @@ ms.locfileid: "34269190"
 
 #### <a name="to-group-elements-into-a-new-layout-container"></a>Per raggruppare elementi in un nuovo contenitore di layout
 
-1.  Selezionare gli elementi da raggruppare. Per selezionare più elementi, fare clic su ognuno tenendo premuto CTRL.
+1.  Selezionare gli elementi da raggruppare. Per selezionare più elementi, fare clic su ognuno tenendo premuto **CTRL**.
 
 2.  Fare clic con il pulsante destro del mouse sugli elementi selezionati, scegliere **Raggruppa** e fare clic sul tipo di contenitore di layout in cui si vuole inserire il gruppo.
 
@@ -118,7 +118,7 @@ ms.locfileid: "34269190"
 
 #### <a name="to-reset-the-element-layout"></a>Per reimpostare il layout degli elementi
 
--   Nella finestra Struttura documento o nella tavola da disegno fare clic con il pulsante destro del mouse sull'elemento, scegliere **Layout** e **Reimposta** *NomeProprietà*, dove *NomeProprietà* è la proprietà che si vuole reimpostare oppure scegliere **Layout**, **Reimposta tutto** per reimpostare tutte le proprietà di layout per l'elemento.
+-   Nella finestra Struttura documento o nella tavola da disegno fare clic con il pulsante destro del mouse sull'elemento, scegliere **Layout** >  e **Reimposta** *NomeProprietà*, dove *NomeProprietà* è la proprietà che si vuole reimpostare oppure scegliere **Layout**,  > **Reimposta tutto** per reimpostare tutte le proprietà di layout per l'elemento.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -9,53 +9,45 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c9b51137c6b66fe2895bcc0e70e3ffab8ebd637e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303003"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizzare l'analisi code coverage
 
-Per impostazione predefinita, lo strumento per il code coverage di Visual Studio analizza tutti gli assembly della soluzione caricati durante gli unit test. È consigliabile mantenere questa impostazione predefinita in quanto funziona bene nella maggior parte dei casi. Per altre informazioni, vedere [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Per impostazione predefinita, il code coverage analizza tutti gli assembly della soluzione caricati durante gli unit test. È consigliabile usare questo comportamento predefinito poiché funziona bene nella maggior parte dei casi. Per altre informazioni, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-Prima di personalizzare il comportamento del code coverage, considerare alcune alternative:
+Per escludere il codice di test dai risultati del code coverage e includere solo il codice dell'applicazione, aggiungere l'attributo <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> alla classe di test.
 
-- *Si vuole escludere il codice di test dai risultati del code coverage e includere solo il codice dell'applicazione.*
+Per includere assembly che non fanno parte della soluzione, ottenere i file *PDB* per tali assembly e copiarli nella stessa cartella dei file *DLL* dell'assembly.
 
-     Aggiungere `ExcludeFromCodeCoverage Attribute` alla classe di test.
+## <a name="run-settings-file"></a>File di impostazioni esecuzione test
 
-- *Si vogliono includere assembly che non fanno parte della soluzione.*
+Il [file di impostazioni esecuzione test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md) è il file di configurazione usato dagli strumenti di testing unità. Le impostazioni avanzate di code coverage vengono specificate in un file con estensione *runsettings*.
 
-     Ottenere i file con estensione pdb per questi assembly e copiarli nella stessa cartella dei file con estensione dll dell'assembly.
+Per personalizzare il code coverage, seguire questa procedura:
 
-Per personalizzare il comportamento del code coverage, copiare l'[esempio alla fine di questo argomento](#sample) e aggiungerlo alla soluzione tramite il file con estensione *runsettings*. Modificarlo secondo le proprie esigenze e quindi nel menu **Test** scegliere **Impostazioni test** e **Seleziona file di impostazioni test**. Nella parte restante dell'articolo questa procedura viene descritta più nel dettaglio.
+1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo elemento** dal menu di scelta rapida della soluzione e selezionare **File XML**. Salvare il file con un nome come *CodeCoverage.runsettings*.
 
-## <a name="the-run-settings-file"></a>File di impostazioni esecuzione test
+1. Aggiungere il contenuto riportato nel file di esempio alla fine di questo articolo, quindi personalizzarlo secondo le proprie esigenze come descritto nelle sezioni seguenti.
 
-Le impostazioni avanzate di code coverage vengono specificate in un file con estensione *runsettings*. Si tratta del file di configurazione usato dagli strumenti di testing unità. Si consiglia di copiare l'[esempio alla fine di questo argomento](#sample) e di modificarlo in base alle proprie esigenze.
+1. Per selezionare il file di impostazioni esecuzione test, nel menu **Test** scegliere **Impostazioni test** > **Seleziona file di impostazioni test**. Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando o in un flusso di lavoro di compilazione, vedere [Configurare unit test usando un file *con estensione runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
 
-Per personalizzare il code coverage, aggiungere un file di impostazioni esecuzione test alla soluzione:
+   Quando si seleziona **Analizza code coverage** le informazioni di configurazione vengono lette dal file di impostazioni esecuzione test.
 
-1. Aggiungere un file XML come elemento della soluzione con l'estensione *runsettings*:
+   > [!TIP]
+   > I risultati del code coverage precedente e la colorazione del codice non vengono nascosti automaticamente quando si eseguono i test o si aggiorna il codice.
 
-     In Esplora soluzioni scegliere **Aggiungi** > **Nuovo elemento** dal menu di scelta rapida della soluzione e selezionare **File XML**. Salvare il file con un nome che termina come *CodeCoverage.runsettings*.
+Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test** > **Impostazioni test**.
 
-2. Aggiungere il contenuto specificato nell'esempio alla fine di questo articolo, quindi personalizzarlo secondo le proprie esigenze come descritto nelle sezioni seguenti.
+![Menu Impostazioni test con file di impostazioni personalizzato](../test/media/codecoverage-settingsfile.png)
 
-3. Nel menu **Test** scegliere **Impostazioni test** > **Seleziona file di impostazioni test** e selezionare il file.
+### <a name="specify-symbol-search-paths"></a>Specificare i percorsi di ricerca dei simboli
 
-4. A questo punto, quando si esegue **Analizza code coverage**, il file di impostazioni esecuzione test controllerà il comportamento. Ricordarsi che è necessario eseguire nuovamente il code coverage. I risultati e la colorazione del code coverage precedenti non vengono nascosti automaticamente quando si eseguono i test o si aggiorna il codice.
-
-5. Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test** > **Impostazioni test**.
-
- ![Menu Impostazioni test con file di impostazioni personalizzato](../test/media/codecoverage-settingsfile.png)
-
-Altri aspetti degli unit test possono essere configurati nello stesso file di impostazioni esecuzione test. Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md).
-
-### <a name="specifying-symbol-search-paths"></a>Specifica dei percorsi di ricerca dei simboli
-
-Il code coverage richiede che siano presenti i simboli (file con estensione pdb) per gli assembly. Per gli assembly compilati dalla soluzione, i file di simboli sono solitamente presenti accanto ai file binari e il code coverage viene eseguito automaticamente. In alcuni casi invece è consigliabile includere assembly a cui si fa riferimento nell'analisi del code coverage. In tali casi, i file con estensione pdb non possono essere adiacenti ai binari, ma è possibile specificare il percorso di ricerca dei simboli nel file con estensione runsettings.
+Il code coverage richiede file di simboli (file *PDB*) per gli assembly. Per gli assembly compilati dalla soluzione, i file di simboli sono solitamente presenti accanto ai file binari e il code coverage viene eseguito automaticamente. In alcuni casi invece è consigliabile includere assembly a cui si fa riferimento nell'analisi del code coverage. In questi casi i file *PDB* non possono essere adiacenti ai binari, ma è possibile specificare il percorso di ricerca dei simboli nel file *RUNSETTINGS*.
 
 ```xml
 <SymbolSearchPaths>
@@ -64,10 +56,10 @@ Il code coverage richiede che siano presenti i simboli (file con estensione pdb)
 </SymbolSearchPaths>
 ```
 
-> [!WARNING]
-> La risoluzione dei simboli può richiedere tempo, in particolare quando si usa un percorso file remoto con molti assembly. Di conseguenza, si consiglia di copiare i file remoti con estensione pdb nello stesso percorso locale dei file binari (.dll ed .exe).
+> [!NOTE]
+> La risoluzione dei simboli può richiedere tempo, in particolare quando si usa un percorso file remoto con molti assembly. Di conseguenza, si consiglia di copiare i file *PDB* nello stesso percorso locale dei file binari (*DLL* ed *EXE*).
 
-### <a name="excluding-and-including"></a>Esclusione ed inclusione
+### <a name="exclude-and-include"></a>Exclude e include
 
 È possibile escludere gli assembly specificati dall'analisi code coverage. Ad esempio:
 
@@ -91,9 +83,9 @@ In alternativa, è possibile specificare gli assembly che devono essere inclusi.
 </ModulePaths>
 ```
 
-Se `<Include>` è vuoto, l'elaborazione del code coverage include tutti gli assembly caricati, in cui è possibile trovare file con estensione pdb. Il code coverage non include gli elementi che corrispondono a una clausola in un elenco `<Exclude>`.
+Se l'elemento **Include** è vuoto, l'elaborazione del code coverage include tutti gli assembly caricati e per cui è possibile trovare file *PDB*. Il code coverage non include gli elementi che corrispondono a una clausola in un elenco **Exclude**.
 
-`Include` viene elaborato prima `Exclude`.
+**Include** viene elaborato prima di **Exclude**.
 
 ### <a name="regular-expressions"></a>Espressioni regolari
 
@@ -131,87 +123,48 @@ Ad esempio:
 ```
 
 > [!WARNING]
-> Se è presente un errore in un'espressione regolare, come un carattere senza codice di escape e parentesi non corrispondenti, l'analisi di code coverage non funzionerà.
+> Se è presente un errore in un'espressione regolare, ad esempio un carattere senza codice di escape o parentesi non corrispondenti, l'analisi di code coverage non funzionerà.
 
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Altri modi per includere o escludere elementi
 
-Per gli esempi, vedere l'[esempio alla fine di questo argomento](#sample).
+- **ModulePath**: corrisponde agli assembly specificati in base al percorso del file di assembly.
 
-- `ModulePath`: assembly specificati per percorso del file di assembly.
+- **CompanyName**: corrisponde agli assembly in base all'attributo **Company**.
 
-- `CompanyName`: assembly corrispondenti per attributo della società.
+- **PublicKeyToken**: corrisponde agli assembly firmati in base al token di chiave pubblica.
 
-- `PublicKeyToken`: assembly firmati corrispondenti per token di chiave pubblica. Ad esempio per soddisfare tutti i componenti e le estensioni di Visual Studio, usare `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.
+- **Source**: corrisponde agli elementi in base al nome del percorso del file di origine in cui sono definiti.
 
-- `Source`: elementi corrispondenti per nome del percorso del file di origine in cui sono definiti.
+- **Attribute**: corrisponde agli elementi ai quali è allegato un particolare attributo. Specificare il nome completo dell'attributo e includere "Attribute" alla fine del nome.
 
-- `Attribute`: elementi corrispondenti ai quali è connesso un particolare attributo. Specificare il nome completo dell'attributo, includendo "Attribute" alla fine del nome.
+- **Function**: corrisponde a procedure, funzioni o metodi in base al nome completo. Per corrispondere a un nome di funzione, l'espressione regolare deve corrispondere al nome completo della funzione, inclusi spazio dei nomi, nome della classe, nome del metodo ed elenco di parametri. Ad esempio:
 
-- `Function`: procedure, funzioni o metodi corrispondenti per nome completo.
+   ```csharp
+   Fabrikam.Math.LocalMath.SquareRoot(double);
+   ```
 
-**Corrispondenza di un nome di funzione**
+   ```cpp
+   Fabrikam::Math::LocalMath::SquareRoot(double)
+   ```
 
-L'espressione regolare deve corrispondere al nome completo della funzione, incluso lo spazio dei nomi, il nome della classe, il nome del metodo e l'elenco parametri. Ad esempio,
+   ```xml
+   <Functions>
+     <Include>
+       <!-- Include methods in the Fabrikam namespace: -->
+       <Function>^Fabrikam\..*</Function>
+       <!-- Include all methods named EqualTo: -->
+       <Function>.*\.EqualTo\(.*</Function>
+     </Include>
+     <Exclude>
+       <!-- Exclude methods in a class or namespace named UnitTest: -->
+       <Function>.*\.UnitTest\..*</Function>
+     </Exclude>
+   </Functions>
+   ```
 
-- C# o Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`
+## <a name="sample-runsettings-file"></a>File con estensione runsettings di esempio
 
-- C++: `Fabrikam::Math::LocalMath::SquareRoot(double)`
-
-```xml
-<Functions>
-  <Include>
-    <!-- Include methods in the Fabrikam namespace: -->
-    <Function>^Fabrikam\..*</Function>
-    <!-- Include all methods named EqualTo: -->
-    <Function>.*\.EqualTo\(.*</Function>
-  </Include>
-  <Exclude>
-    <!-- Exclude methods in a class or namespace named UnitTest: -->
-    <Function>.*\.UnitTest\..*</Function>
-  </Exclude>
-</Functions>
-```
-
-## <a name="how-to-specify-run-settings-files-while-running-tests"></a>Come specificare i file di impostazioni esecuzione test durante l'esecuzione dei test
-
-### <a name="to-customize-run-settings-in-visual-studio-tests"></a>Per personalizzare le impostazioni esecuzione test nei test di Visual Studio
-
-Scegliere **Test** > **Impostazioni test** > **Seleziona file di impostazioni test** e selezionare il file con estensione *runsettings*. Il file viene visualizzato nel menu Impostazioni test ed è possibile selezionarlo o annullare l'operazione. Se selezionato, il file di impostazioni esecuzione test viene applicato ogni volta che si usa **Analizza code coverage**.
-
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>Per personalizzare le impostazioni esecuzione test in un test dalla riga di comando
-
-Per eseguire un test dalla riga di comando, usare *vstest.console.exe*. Il file di impostazioni è un parametro di questa utilità.
-
-1. Avviare il prompt dei comandi di Visual Studio Developer:
-
-    Nel menu **Start** di Windows scegliere **Visual Studio 2017** > **Prompt dei comandi per gli sviluppatori per VS 2017**.
-
-2. Eseguire il comando seguente:
-
-    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
-
-### <a name="to-customize-run-settings-in-a-build-definition"></a>Per personalizzare le impostazioni esecuzione test in una definizione di compilazione
-
-È possibile ottenere dati di code coverage da Team Build.
-
-![Specifica delle impostazioni di esecuzione in una definizione di compilazione](../test/media/codecoverage-buildrunsettings.png)
-
-1. Assicurarsi che il file di impostazioni esecuzione test sia selezionato.
-
-2. In Team Explorer aprire **Compilazioni** e aggiungere o modificare una definizione di compilazione.
-
-3. Nella pagina **Processo** espandere **Test automatizzati** > **Origine test** > **Impostazioni esecuzione test**. Selezionare il file con estensione *runsettings*.
-
-   > [!TIP]
-   > Se viene visualizzato **Assembly di test** anziché **Origine test** ed è possibile selezionare solo file con estensione *testsettings*, impostare la proprietà **Test Runner** come indicato di seguito. In **Test automatizzati** selezionare **Assembly di test** e scegliere **[...]** alla fine della riga. Nella finestra di dialogo **Aggiungi/Modifica esecuzione dei test**, impostare **Test Runner** su **Visual Studio Test Runner**.
-
-I risultati vengono visualizzati nella sezione di riepilogo del report di compilazione.
-
-##  <a name="sample"></a> File con estensione runsettings di esempio
-
-Copiare questo codice e modificarlo secondo le proprie esigenze.
-
-Per altri usi del file di impostazioni esecuzione test, vedere [Configurare unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+Copiare questo codice e modificarlo in base alle esigenze.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -326,5 +279,6 @@ Included items must then not match any entries in the exclude list to remain inc
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+- [Configurare unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
+- [Usare la funzionalità code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)

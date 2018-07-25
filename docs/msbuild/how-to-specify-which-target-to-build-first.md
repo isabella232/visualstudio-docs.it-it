@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8339b475c3c93bac192f67de8234c5dab1b84abb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1e812be4927ee0232d1096fa272d8ff8e7358366
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571949"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078800"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Procedura: specificare quale destinazione compilare per prima
+# <a name="how-to-specify-which-target-to-build-first"></a>Procedura: Specificare quale destinazione compilare per prima
 Un file di progetto può contenere uno o più elementi `Target` che definiscono come viene compilato il progetto. Il motore [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compila il primo progetto che trova e le eventuali dipendenze, a meno che il file di progetto contenga un attributo `DefaultTargets` o `InitialTargets` oppure venga specificata una destinazione nella riga di comando usando l'opzione **/target**.  
   
-## <a name="using-the-initialtargets-attribute"></a>Uso dell'attributo InitialTargets  
+## <a name="use-the-initialtargets-attribute"></a>Usare l'attributo InitialTargets  
  L'attributo `InitialTargets` dell'elemento `Project` specifica una destinazione che verrà eseguita per prima, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.  
   
 #### <a name="to-specify-one-initial-target"></a>Per specificare una destinazione iniziale  
@@ -41,7 +41,7 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
   
      `<Project InitialTargets="Clean;Compile">`  
   
-## <a name="using-the-defaulttargets-attribute"></a>Uso dell'attributo DefaultTargets  
+## <a name="use-the-defaulttargets-attribute"></a>Usare l'attributo DefaultTargets  
  L'attributo `DefaultTargets` dell'elemento `Project` specifica la destinazione o le destinazioni che vengono compilate se non viene specificata una destinazione in modo esplicito nella riga di comando. Se vengono specificate destinazioni sia nell'attributo `InitialTargets` che nell'attributo `DefaultTargets` e nessuna destinazione viene specificata nella riga di comando, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] esegue le destinazioni specificate nell'attributo `InitialTargets` seguito dalle destinazioni specificate nell'attributo `DefaultTargets`.  
   
 #### <a name="to-specify-one-default-target"></a>Per specificare una destinazione predefinita  
@@ -58,7 +58,7 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
   
      `<Project DefaultTargets="Clean;Compile">`  
   
-## <a name="using-the-target-switch"></a>Uso dell'opzione /target  
+## <a name="use-the-target-switch"></a>Usare l'opzione /target  
  Se nel file di progetto non viene definita una destinazione predefinita o se non si vuole usare la destinazione predefinita, è possibile usare l'opzione della riga di comando **/target** per specificare un'altra destinazione. Viene eseguita la destinazione o le destinazioni specificate con l'opzione **/target** invece delle destinazioni specificate dall'attributo `DefaultTargets`. Le destinazioni specificate nell'attributo `InitialTargets` vengono eseguite sempre per prime.  
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Per usare per prima una destinazione diversa da quella predefinita  

@@ -1,7 +1,7 @@
 ---
 title: Debug del codice Python
 description: Presentazione dettagliata delle funzionalità di debug in Visual Studio specifiche per il codice Python, inclusa l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'individuazione delle eccezioni e il debug nella finestra interattiva.
-ms.date: 03/05/2018
+ms.date: 07/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 14716aa85245dcbd7c1ba0bc85824f5a53bece2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032255"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079823"
 ---
-# <a name="debugging-your-python-code"></a>Debug del codice Python
+# <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
 Visual Studio offre un'esperienza di debug completa per Python, che include il collegamento a processi in esecuzione, la valutazione di espressioni nelle finestre Espressioni di controllo e Controllo immediato, il controllo delle variabili locali, dei punti di interruzione, delle istruzioni per l'esecuzione di istruzioni, l'uscita da istruzioni/routine e l'esecuzione di istruzioni/routine, di Imposta istruzione successiva e altro ancora.
 
@@ -193,6 +193,49 @@ Si noti che le finestre standard del debugger, ad esempio Processi, Thread e Sta
 La finestra Debug interattivo ha un set di opzioni specifico, a cui è possibile accedere tramite **Strumenti > Opzioni > Strumenti Python > Finestra debug interattivo**. A differenza della finestra interattiva standard di Python, in cui è presente un'istanza separata per ogni ambiente Python, esiste una sola finestra Debug interattivo che usa sempre l'interprete Python per il processo sottoposto a debug. Vedere [Opzioni, Opzioni di debug](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Opzioni della finestra Debug interattivo](media/debugging-interactive-options.png)
+
+## <a name="use-the-experimental-debugger"></a>Usare il debugger sperimentale
+
+A partire da Visual Studio 2017 Preview 4.0 è possibile scegliere esplicitamente di usare il "debugger sperimentale" che si basa su ptvsd versione 4.1+. A tale scopo, selezionare il comando di menu **Strumenti** > **Opzioni**, quindi passare a **Python** > **Sperimentale** nella finestra di dialogo Opzioni e selezionare **Usa debugger sperimentale.**
+
+Il debugger sperimentale è compatibile solo con ambienti Python limitati, come descritto nella tabella seguente:
+
+| Versione di Python | Compatibile con il debugger sperimentale |
+| --- | --- |
+| 2.6 | No |
+| 2.7 | Sì |
+| Da 3.1 a 3.4 | No |
+| 3.5 e versioni successive | Sì |
+| IronPython | No |
+
+Se si prova a usare il debugger sperimentale con un ambiente non compatibile, Visual Studio visualizza l'errore "Debugger is incompatible with this environment" (Debugger non compatibile con questo ambiente):
+
+![Errore relativo al debugger non compatibile con l'ambiente quando si usa il debugger sperimentale](media/debugging-experimental-incompatible-error.png)
+
+Selezionare il comando **Disabilita il debugger sperimentale** che cancella l'opzione **Usa debugger sperimentale**.
+
+> [!Note]
+> L'avviso non viene attualmente visualizzato per Python 3.3 e 3.4.
+
+Se nell'ambiente corrente è stata installata una versione precedente di ptvsd, ad esempio una versione 4.0.x o una versione 3.x precedente necessaria per il debug remoto, Visual Studio visualizza l'errore "Non è stato possibile caricare il pacchetto del debugger" o l'avviso "Il pacchetto del debugger è obsoleto":
+
+![Errore "Non è stato possibile caricare il pacchetto del debugger" quando si usa il debugger sperimentale](media/debugging-experimental-version-error.png)
+
+![Avviso "Il pacchetto del debugger è obsoleto" quando si usa il debugger sperimentale](media/debugging-experimental-version-warning.png)
+
+Per gestire l'installazione di ptvsd usare la scheda **Pacchetti** nella finestra **Ambienti Python** oppure usare i comandi seguenti dalla riga di comando:
+
+```ps
+# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
+pip uninstall ptvsd
+
+# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
+# -pre is required to allow pre-release versions as currently required by the experimental debugger.
+pip install --upgrade ptvsd -pre
+```
+
+> [!Important]
+> Anche se è possibile scegliere di ignorare l'avviso per alcune versioni di ptvsd, Visual Studio potrebbe non funzionare correttamente.
 
 ## <a name="see-also"></a>Vedere anche
 

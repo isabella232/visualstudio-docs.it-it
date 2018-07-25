@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446501"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117563"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -58,7 +58,7 @@ Se il file EditorConfig viene rimosso dal progetto o dalla codebase sarà necess
 
 1. Aprire un progetto o una soluzione in Visual Studio. Selezionare il progetto o il nodo della soluzione, a seconda che le impostazioni del file con estensione *editorconfig* siano da applicare a tutti i progetti nella soluzione o soltanto a uno. È anche possibile selezionare una cartella del progetto o della soluzione alla quale aggiungere il file con estensione *editorconfig*.
 
-1. Dalla barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento...** , oppure premere **CTRL**+**MAIUSC**+**A**.
+1. Dalla barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento** oppure premere **CTRL**+**MAIUSC**+**A**.
 
    Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
 

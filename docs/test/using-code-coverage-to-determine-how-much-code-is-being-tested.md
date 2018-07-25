@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752092"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978249"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -266,9 +266,9 @@ Quando si controlla il codice, i test vengono eseguiti sul server di compilazion
 
 Dopo la compilazione, i risultati di code coverage sono associati all'esecuzione dei test e vengo visualizzati nel riepilogo compilazione.
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>Analizzare code coverage in un riga di comando
+## <a name="analyze-code-coverage-from-the-command-line"></a>Analizzare il code coverage dalla riga di comando
 
-Per eseguire un test dalla riga di comando usare vstest.console.exe. Il code coverage è un'opzione dell'utilità vstest.console.exe.
+Per eseguire un test dalla riga di comando, usare *vstest.console.exe*. Il code coverage è un'opzione dell'utilità *vstest.console.exe*.
 
 1.  Avviare il prompt dei comandi di Visual Studio Developer:
 
@@ -278,9 +278,11 @@ Per eseguire un test dalla riga di comando usare vstest.console.exe. Il code cov
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
+Per altre informazioni, vedere [Opzioni della riga di comando di VSTest.Console.exe](vstest-console-options.md).
+
 ## <a name="troubleshoot"></a>Risolvere i problemi
 
-Se non vengono visualizzati risultati di code coverage, vedere l'argomento [Risoluzione dei problemi di code coverage](../test/troubleshooting-code-coverage.md).
+Se non vengono visualizzati risultati del code coverage, vedere l'argomento [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md).
 
 ## <a name="see-also"></a>Vedere anche
 

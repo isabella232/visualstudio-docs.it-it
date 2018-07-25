@@ -1,11 +1,12 @@
 ---
-title: Comando Apri progetto
+title: Apri progetto (comando)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
+- file.opensolution
 helpviewer_keywords:
 - op command
 - File.OpenProject command
@@ -16,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6663ef73f87ea0fa80eb16a3deef6765265882db
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704132"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924148"
 ---
 # <a name="open-project-command"></a>Comando Apri progetto
-Apre un progetto esistente.
+
+Apre un progetto o una soluzione esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,19 +35,23 @@ File.OpenProject filename
 ```
 
 ## <a name="arguments"></a>Argomenti
- `filename`
 
- Obbligatorio. Percorso completo e nome del file di progetto da aprire.
+`filename`
 
- La sintassi per l'argomento `filename` richiede che i percorsi contenenti spazi usino le virgolette.
+Obbligatorio. Il percorso completo e il nome file del progetto o della soluzione da aprire.
+
+> [!NOTE]
+> La sintassi dell'argomento `filename` richiede che i percorsi contenenti spazi usino le virgolette.
 
 ## <a name="remarks"></a>Note
- Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 
- Questo comando non è disponibile durante il debug.
+Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
+
+Questo comando non è disponibile durante il debug.
 
 ## <a name="example"></a>Esempio
- In questo esempio viene aperto il progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Test1.
+
+L'esempio seguente apre il progetto Visual Basic **Test1**:
 
 ```cmd
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"

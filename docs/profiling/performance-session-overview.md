@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255158"
 ---
 # <a name="performance-session-overview"></a>Panoramica delle sessioni di prestazioni
 In questa panoramica vengono illustrate le nozioni di base della profilatura. Gli sviluppatori non esperti di prestazioni potranno notare come gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] possano contribuire ad accrescere rapidamente la produttività e a migliorare le prestazioni del codice. Gli sviluppatori con esperienza nella profilatura possono trovare informazioni su specifici processi e funzionalità degli strumenti di profilatura.  
@@ -71,9 +72,9 @@ In questa panoramica vengono illustrate le nozioni di base della profilatura. Gl
 ## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Raccogliere nuovamente i dati di profilatura e confrontare i dati tra le esecuzioni di profilatura  
  La visualizzazione Rapporto di confronto degli strumenti di profilatura consente di visualizzare la differenza delle prestazioni del modulo, della funzione o della riga tra due file di dati di profilatura selezionati. È possibile specificare i valori dei dati di profilatura da confrontare e passare dalla visualizzazione del confronto alle visualizzazioni dei singoli file e viceversa.  
   
-## <a name="generate-a-report-of-the-results"></a>Generare un rapporto dei risultati  
+## <a name="generate-a-report-of-the-results"></a>Generare un report dei risultati  
  È possibile incollare le righe di qualsiasi visualizzazione dei rapporti di prestazioni in messaggi e-mail e fogli di calcolo e generare rapporti contenenti i dati di una o più visualizzazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
- [Procedura dettagliata: Identificazione dei problemi di prestazioni](../profiling/walkthrough-identifying-performance-problems.md)
+ [Procedura dettagliata: Identificare i problemi di prestazioni](../profiling/walkthrough-identifying-performance-problems.md)

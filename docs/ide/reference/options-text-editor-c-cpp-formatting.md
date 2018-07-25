@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, C/C++, Formattazione
-ms.date: 11/04/2016
+ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,82 +11,47 @@ dev_langs:
 - CPP
 helpviewer_keywords:
 - Text Editor Options dialog box, formatting
+- ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 913413b4178a087c524ef26173fcbcc8c1d8b09b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946065"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235141"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opzioni, Editor di testo, C/C++, Formattazione
-Consente di modificare il comportamento predefinito dell'editor di codice in fase di programmazione in C o C++.
+
+Usare queste pagine delle proprietà per modificare il comportamento predefinito dell'editor di codice in fase di programmazione in C o C++.
+
+[Pagine delle proprietà di formattazione di C++](media/cpp-formatting.png)
 
  Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++**, quindi fare clic su **Formattazione**.
 
 > [!NOTE]
 > I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="general-page"></a>Pagina Generale
 
-## <a name="cc-options"></a>Opzioni C/C++
- **Attiva descrizione comandi per informazioni rapide automatiche**
+Questa pagina include opzioni di formattazione di istruzioni e blocchi durante la digitazione.
 
- Consente di abilitare o disabilitare la funzionalità Informazioni rapide di IntelliSense.
+**Visual Studio 2017 versione 15.7 e successive**: la pagina include anche opzioni per la configurazione del supporto di [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versione 5.0. ClangFormat è un'utilità che semplifica l'applicazione di stili e la formattazione del codice in base a un set di regole che è possibile configurare in un file con estensione clang-format o _clang-format.
 
-## <a name="inactive-code"></a>Codice inattivo
- **Mostra blocchi inattivi**
+### <a name="configuring-clangformat-options"></a>Configurazione delle opzioni di ClangFormat
 
- Per il codice reso inattivo da dichiarazioni `#ifdef` viene utilizzato un colore diverso in modo da agevolarne l'identificazione.
+In Visual Studio 2017 versione 15.7 e successive, il supporto per ClangFormat è abilitato per impostazione predefinita. È possibile scegliere quali di queste convenzioni di formattazione comuni applicare a tutti i progetti: LLVM, Google, Chromium, Mozilla o WebKit. È anche possibile creare un file con estensione clang-format o _clang-format con una definizione di formato personalizzata. Se questo file è presente nella cartella di un progetto, Visual Studio lo usa per formattare tutti i file di codice sorgente contenuti nella cartella e nelle relative sottocartelle. 
 
- **Disabilita opacità del codice inattivo**
+Per impostazione predefinita, Visual Studio esegue clangformat.exe in background e applica la formattazione durante la digitazione. È anche possibile specificare di eseguirlo solo per i comandi di formattazione richiamati manualmente **Formatta documento (CTRL+K, CTRL+D)** o **Formatta selezione (CTRL + K, CTRL + F)**.
 
- Codice inattivo che può essere identificato tramite colore, anziché tramite trasparenza.
 
- **Percentuale di opacità del codice inattivo**
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Pagine Rientro, Nuove righe, Spaziatura, Ritorno a capo
 
- È possibile personalizzare il grado di opacità per blocchi di codice inattivo.
-
-## <a name="indentation"></a>Rientro
- **Rientra parentesi graffe**
-
- È possibile configurare la modalità di allineamento delle parentesi graffe quando si preme INVIO dopo aver avviato un blocco di codice, ad esempio una funzione o un ciclo `for`. Le parentesi graffe possono essere allineate al primo carattere del blocco di codice oppure rientrate.
-
- **Rientra alla pressione del tasto TAB**
-
- È possibile configurare le operazioni eseguite nella riga di codice corrente quando si preme TAB. La riga viene rientrata oppure viene inserito un carattere di tabulazione.
-
-## <a name="miscellaneous"></a>Varie
- **Enumera attività di commento**
-
- L'editor può analizzare le parole preimpostate nei commenti all'interno dei file di origine aperti. Crea una voce nella finestra **Elenco attività** per qualsiasi parola chiave trovata.
-
- **Evidenzia token corrispondenti**
-
- Se il cursore si trova accanto a una parentesi graffa, l'editor può evidenziare la parentesi graffa corrispondente in modo che sia possibile visualizzare più agevolmente il codice contenuto.
-
-## <a name="outlining"></a>struttura
- **Attiva modalità struttura all'apertura del file**
-
- Aprendo un file nell'editor di testo, è possibile abilitare la funzionalità di struttura. Per altre informazioni, vedere [Struttura](../../ide/outlining.md). Se questa opzione è selezionata, la funzionalità di struttura verrà abilitata all'apertura di un file.
-
- **Struttura blocchi pragma region**
-
- Se questa opzione è selezionata, la struttura automatica per le [direttive pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword) è abilitata. In questo modo è possibile espandere o comprimere blocchi pragma region in modalità struttura.
-
- **Struttura blocchi di istruzioni**
-
- Se questa opzione è selezionata, la struttura automatica è abilitata per i costrutti delle istruzioni seguenti:
-
--   [if-else](/dotnet/csharp/language-reference/keywords/if-else)
-
--   [Istruzione switch (C++)](/cpp/cpp/switch-statement-cpp)
-
--   [Istruzione while (C++)](/cpp/cpp/while-statement-cpp)
+Queste pagine consentono di personalizzare la formattazione in vari modi, ma vengono ignorate se ClangFormat è abilitato.
 
 ## <a name="see-also"></a>Vedere anche
 

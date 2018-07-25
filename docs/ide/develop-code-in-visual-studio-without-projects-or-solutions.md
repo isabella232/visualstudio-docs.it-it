@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746027"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117121"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
 
@@ -89,7 +89,7 @@ Se la codebase usa strumenti di compilazione personalizzati, è necessario indic
 
 Se la codebase contiene codice Python o JavaScript, non è necessario configurare file *json*, ma occorre installare il carico di lavoro corrispondente. È anche necessario configurare lo script di avvio:
 
-1. Installare il carico di lavoro [Sviluppo Node.js](https://www.visualstudio.com/vs/node-js/) o [Sviluppo Python](https://www.visualstudio.com/vs/python/) scegliendo **Strumenti** > **Ottieni strumenti e funzionalità** oppure chiudere Visual Studio ed eseguire il programma di installazione Visual Studio.
+1. Installare il carico di lavoro [Sviluppo Node.js](https://visualstudio.microsoft.com/vs/node-js/) o [Sviluppo Python](https://visualstudio.microsoft.com/vs/python/) scegliendo **Strumenti** > **Ottieni strumenti e funzionalità** oppure chiudendo Visual Studio ed eseguendo il Programma di installazione di Visual Studio.
 
    ![Carichi di lavoro Sviluppo Node.js e Sviluppo Python](media/python_nodejs_workloads.png)
 

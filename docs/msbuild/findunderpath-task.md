@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84054917a47fc4d56c107965feebbc353e6de76f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c1f7ea93011878e9e47a5daa843a71d904318ce4
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571607"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946521"
 ---
-# <a name="findunderpath-task"></a>Attività FindUnderPath
+# <a name="findunderpath-task"></a>FindUnderPath (attività)
 Determina gli elementi di una raccolta specificata i cui percorsi sono presenti nella cartella indicata e nelle relative sottocartelle.  
   
 ## <a name="parameters"></a>Parametri  
@@ -45,7 +45,7 @@ Determina gli elementi di una raccolta specificata i cui percorsi sono presenti 
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Esempio  
- L'esempio seguente usa l'attività `FindUnderPath` per determinare se i file contenuti nell'elemento `MyFiles` hanno percorsi esistenti nel percorso specificato dalla proprietà `SearchPath`. Al termine dell'attività, l'elemento `FilesNotFoundInPath` contiene il file `File1.txt` e l'elemento `FilesFoundInPath` contiene il file `File2.txt`.  
+ L'esempio seguente usa l'attività `FindUnderPath` per determinare se i file contenuti nell'elemento `MyFiles` hanno percorsi esistenti nel percorso specificato dalla proprietà `SearchPath`. Al termine dell'attività, l'elemento `FilesNotFoundInPath` contiene il file *File1.txt* e l'elemento `FilesFoundInPath` contiene il file *File2.txt*.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -75,6 +75,6 @@ Determina gli elementi di una raccolta specificata i cui percorsi sono presenti 
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)   
  [Attività](../msbuild/msbuild-tasks.md)   
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

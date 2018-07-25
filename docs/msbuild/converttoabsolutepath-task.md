@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14fa9047a4c51cb9e89dd45ff4f319523a8f82ee
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 69b06ecb8f527602e5db6711ec7023881f7efc9e
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578809"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946628"
 ---
-# <a name="converttoabsolutepath-task"></a>Attività ConvertToAbsolutePath
+# <a name="converttoabsolutepath-task"></a>attività ConvertToAbsolutePath
 Converte un percorso relativo, o un riferimento, in un percorso assoluto.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
- Nella tabella che segue vengono descritti i parametri dell'attività `ConvertToAbsolutePath`.  
+ Nella tabella che segue vengono descritti i parametri dell'attività `ConvertToAbsolutePath` .  
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  
@@ -43,4 +43,4 @@ Converte un percorso relativo, o un riferimento, in un percorso assoluto.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

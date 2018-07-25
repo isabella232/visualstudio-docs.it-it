@@ -1,7 +1,7 @@
 ---
 title: Esercitazione sull'uso di Python, passaggio 5, installazione di pacchetti
 description: Passaggio 5 della procedura dettagliata di base sulle funzionalità di Visual Studio, che illustra le funzionalità di Visual Studio per la gestione dei pacchetti in un ambiente Python.
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d67ec84271534de84de588cd29376e2cdb437294
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33875318"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37055981"
 ---
-# <a name="step-5-installing-packages-in-your-python-environment"></a>Passaggio 5: Installazione dei pacchetti nell'ambiente Python
+# <a name="step-5-install-packages-in-your-python-environment"></a>Passaggio 5: Installare i pacchetti nell'ambiente Python
 
 **Passaggio precedente: [Esecuzione del codice nel debugger](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
@@ -72,6 +72,6 @@ La community degli sviluppatori di Python produce migliaia di pacchetti utili ch
 > [!div class="nextstepaction"]
 > [Uso di Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-### <a name="going-deeper"></a>Approfondimenti
+### <a name="go-deeper"></a>Approfondimento
 
 - [Ambienti Python](managing-python-environments-in-visual-studio.md)

@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9efb3a997eb0e6aa0d731f4fbf5d9d8ce0e9e978
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d2e380c6207b3f59b1717ebff6f17261acc7ee52
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567070"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946781"
 ---
-# <a name="combinepath-task"></a>Attività CombinePath
+# <a name="combinepath-task"></a>attività CombinePath
 Combina i percorsi specificati in un singolo percorso.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
@@ -42,4 +42,4 @@ Combina i percorsi specificati in un singolo percorso.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

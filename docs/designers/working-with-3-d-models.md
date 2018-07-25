@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc30f4c49e4c227df27f41a04cdb5dafce3c5f9b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d38eb26e40d78ccdca57110d5a7b7966393e7859
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918252"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077828"
 ---
 # <a name="work-with-3d-models"></a>Uso di modelli 3D
 
@@ -34,4 +34,4 @@ L'Editor dei modelli è l'unico strumento necessario per creare modelli 3D di ba
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'Editor dei modelli per lavorare con modelli 3D.|
-|[Esempi dell'editor di modello](../designers/model-editor-examples.md)|Contiene i collegamenti ad argomenti che descrivono come usare l'Editor dei modelli per eseguire attività comuni di modellazione 3D.|
+|[Esempi dell'editor di modelli](../designers/model-editor-examples.md)|Contiene i collegamenti ad argomenti che descrivono come usare l'Editor dei modelli per eseguire attività comuni di modellazione 3D.|

@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948207"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117160"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-È possibile installare e visualizzare il contenuto per vari prodotti e tecnologie nel computer locale usando Microsoft Help Viewer, tra cui Visual Studio, .NET Framework, riferimenti al linguaggio, SQL Server e lo sviluppo di Windows. Help Viewer consente di:
+È possibile installare e visualizzare il contenuto di vari prodotti e tecnologie nel computer locale usando Microsoft Help Viewer. Questi prodotti includono Visual Studio, .NET Framework, riferimenti al linguaggio, SQL Server e lo sviluppo Windows. Help Viewer consente di:
 
--   Cercare e scaricare set di contenuti, definiti anche libri.
+- Scaricare set di contenuti, definiti anche libri. Ciò può essere utile se è necessario lavorare "offline" e mantenere l'accesso alla documentazione.
 
--   Trovare gli argomenti in base al titolo visualizzando il sommario ed eseguendo ricerche nel sommario.
+- Trovare gli argomenti in base al titolo visualizzando il sommario ed eseguendo ricerche nel sommario.
 
--   Cercare gli argomenti nell'indice.
+- Cercare gli argomenti nell'indice.
 
--   Cercare informazioni tramite la ricerca full-text.
+- Cercare informazioni tramite la ricerca full-text.
 
--   Visualizzare e stampare gli argomenti, nonché contrassegnarli con un segnalibro.
+- Visualizzare e stampare gli argomenti, nonché contrassegnarli con un segnalibro.
 
 Per installare Help Viewer, vedere [Installazione di Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md). Per iniziare a leggere gli argomenti della Guida in Help Viewer anziché online, accedere al menu **?** di Visual Studio e quindi scegliere **Imposta preferenza Guida** > **Avvia in Help Viewer**.
+
+> [!TIP]
+> Per scaricare il contenuto in locale e visualizzarlo quando non è disponibile una connessione a Internet, è anche possibile scaricare una versione PDF del contenuto. Molte documentazioni in docs.microsoft.com includono un collegamento nella parte inferiore del sommario (TOC) per scaricare un file PDF contenente tutti gli articoli del sommario.
+>
+> ![Scaricare il file PDF per la documentazione di Visual Studio](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>Presentazione di Help Viewer
 
@@ -74,19 +79,19 @@ L'elenco del contenuto visualizza i libri che è possibile installare o quelli g
 
 La barra degli strumenti nella finestra **Help Viewer** contiene i pulsanti seguenti:
 
--   Il pulsante **Mostra argomento nel contenuto** mostra la posizione dell'argomento nella scheda **Sommario**.
+- Il pulsante **Mostra argomento nel contenuto** mostra la posizione dell'argomento nella scheda **Sommario**.
 
--   Il pulsante **Aggiungi a Preferiti** aggiunge l'argomento attivo alla scheda **Preferiti**.
+- Il pulsante **Aggiungi a Preferiti** aggiunge l'argomento attivo alla scheda **Preferiti**.
 
--   Il pulsante **Trova in argomento** evidenzia il testo di ricerca nell'argomento attivo.
+- Il pulsante **Trova in argomento** evidenzia il testo di ricerca nell'argomento attivo.
 
--   Il pulsante**Stampa** stampa o mostra un'anteprima dell'argomento attivo.
+- Il pulsante**Stampa** stampa o mostra un'anteprima dell'argomento attivo.
 
--   Il pulsante **Opzioni Visualizzatore** visualizza le impostazioni come la grandezza del testo visualizzato, il numero di risultati di ricerca da restituire, il numero di argomenti da mostrare nella cronologia e se verificare la disponibilità di aggiornamenti online.
+- Il pulsante **Opzioni Visualizzatore** visualizza le impostazioni come la grandezza del testo visualizzato, il numero di risultati di ricerca da restituire, il numero di argomenti da mostrare nella cronologia e se verificare la disponibilità di aggiornamenti online.
 
--   Il pulsante **Gestisci contenuto** rende attiva la scheda **Gestisci contenuto**.
+- Il pulsante **Gestisci contenuto** rende attiva la scheda **Gestisci contenuto**.
 
--   Il piccolo triangolo sul lato destro apre un elenco di schede, incluse le schede degli argomenti e la scheda **Gestisci contenuto**. È possibile scegliere un nome di scheda per renderla attiva.
+- Il piccolo triangolo sul lato destro apre un elenco di schede, incluse le schede degli argomenti e la scheda **Gestisci contenuto**. È possibile scegliere un nome di scheda per renderla attiva.
 
 ## <a name="see-also"></a>Vedere anche
 

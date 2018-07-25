@@ -10,24 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 84a9c2bddb74402711217427b3471713562cce0a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978310"
 ---
-# <a name="setting-up-remote-workspaces"></a>Impostazione di aree di lavoro remote
+# <a name="set-up-remote-workspaces"></a>Impostare aree di lavoro remote
 
 In questo articolo viene illustrato come configurare un server remoto con SSL e un servizio R appropriato. Ciò consente a R Tools per Visual Studio (RTVS) di connettersi a un'area di lavoro remota su tale server.
-
-- [Requisiti del computer remoto](#remote-computer-requirements)
-- [Installare un certificato SSL](#install-an-ssl-certificate)
-- [Installare un certificato SSL in Windows](#install-an-ssl-certificate-on-windows)
-- [Installare un certificato SSL in Ubuntu](#install-an-ssl-certificate-on-ubuntu)
-- [Installare i servizi R in Windows](#install-r-services-on-windows)
-- [Installare i servizi R in Linux](#install-r-services-on-Linux)
-- [Configurare i servizi R](#configure-r-services)
-- [Risoluzione dei problemi](#troubleshooting)
 
 ## <a name="remote-computer-requirements"></a>Requisiti del computer remoto
 
@@ -38,7 +30,7 @@ In questo articolo viene illustrato come configurare un server remoto con SSL e 
 
 RTVS richiede che tutte le comunicazioni con un server remoto si svolgano tramite HTTP, che richiede un certificato SSL nel server. È possibile usare un certificato firmato da un'autorità di certificazione attendibile (scelta consigliata) o un certificato autofirmato. Con un certificato autofirmato RTVS genera avvisi al momento della connessione. In entrambi i casi è necessario installare il certificato nel computer e consentire l'accesso alla relativa chiave privata.
 
-### <a name="obtaining-a-trusted-certificate"></a>Acquisizione di un certificato attendibile
+### <a name="obtain-a-trusted-certificate"></a>Ottenere un certificato attendibile
 
 Un certificato attendibile viene emesso da un'autorità di certificazione (per altre informazioni vedere [Certificate Authority su Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority)). L'emissione di un certificato attendibile è paragonabile alla richiesta di un documento di identità. Come tale richiede vari passaggi e può comportare dei costi, ma verifica l'autenticità della richiesta e del richiedente.
 
@@ -50,7 +42,7 @@ Per altre informazioni, vedere [public key certificates](https://en.wikipedia.or
 
 Il certificato SSL deve essere installato manualmente in Windows. Seguire le istruzioni riportate di seguito per installare un certificato SSL.
 
-### <a name="obtaining-a-self-signed-certificate-windows"></a>Acquisizione di un certificato autofirmato (Windows)
+### <a name="obtain-a-self-signed-certificate-windows"></a>Ottenere un certificato autofirmato (Windows)
 
 Ignorare questa sezione se è disponibile un certificato attendibile. Rispetto a un certificato emesso da un'autorità attendibile, un certificato autofirmato è paragonabile a un'autocertificazione. Questo processo è sicuramente molto più semplice di quello che richiede l'intervento di un'autorità attendibile, ma l'autenticazione che garantisce è vulnerabile: un utente malintenzionato può sostituire il proprio certificato a quello autofirmato e acquisire tutto il traffico tra il client e il server. *È consigliabile quindi limitare l'uso dei certificati autofirmati a scenari di test su una rete attendibile e non usarli mai in fase di produzione.*
 
@@ -75,19 +67,19 @@ Per emettere un certificato autofirmato:
 
 Per informazioni, vedere [self-signed certificates](https://en.wikipedia.org/wiki/Self-signed_certificate) (certificati autofirmati) su Wikipedia.
 
-### <a name="installing-the-certificate"></a>Installazione del certificato
+### <a name="install-the-certificate"></a>Installare il certificato
 
-Per installare il certificato nel computer remoto, eseguire `certlm.msc` (lo strumento di gestione certificati) da un prompt dei comandi. Fare clic con il pulsante destro del mouse sulla cartella **Personal** e selezionare il comando **All Tasks > Import** (Tutte le attività > Importa):
+Per installare il certificato nel computer remoto, eseguire *certlm.msc* (lo strumento di gestione certificati) da un prompt dei comandi. Fare clic con il pulsante destro del mouse sulla cartella **Personale** e selezionare il comando **Tutte le attività** > **Importa**:
 
 ![Comando Import (Importa) per il certificato](media/workspaces-remote-certificate-import.png)
 
-### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Concessione delle autorizzazioni per la lettura della chiave privata del certificato SSL
+### <a name="grant-permissions-to-read-the-ssl-certificates-private-key"></a>Concedere le autorizzazioni per la lettura della chiave privata del certificato SSL
 
 Dopo aver importato il certificato, concedere all'account `NETWORK SERVICE` le autorizzazioni per la lettura della chiave privata, come indicato nelle istruzioni che seguono. `NETWORK_SERVICE` è l'account usato per l'esecuzione del broker dei servizi R, il servizio che termina le connessioni SSL in ingresso nel computer server.
 
-1. Eseguire `certlm.msc` (lo strumento di gestione certificati) da un prompt dei comandi amministratore.
-1. Espandere **Personal > Certificates** (Personale > Certificati), fare clic con il pulsante destro del mouse sul proprio certificato e selezionare **All Tasks > Manage Private Keys** (Tutte le attività > Gestisci chiavi private).
-1. Fare clic con il pulsante destro del mouse sul certificato e selezionare il comando Manage Private Keys (Gestisci chiavi private) in All Tasks (Tutte le attività).
+1. Eseguire *certlm.msc* (lo strumento di gestione certificati) da un prompt dei comandi dell'amministratore.
+1. Espandere **Personale** > **Certificati**, fare clic con il pulsante destro del mouse sul certificato e selezionare **Tutte le attività** > **Gestisci chiavi private**.
+1. Fare clic con il pulsante destro del mouse sul certificato e selezionare il comando **Gestisci chiavi private** in **Tutte le attività**.
 1. Nella finestra di dialogo visualizzata selezionare **Add** (Aggiungi) e immettere `NETWORK SERVICE` come nome dell'account:
 
     ![Finestra di dialogo Manage Private Keys (Aggiungi chiavi private), aggiunta di NETWORK_SERVICE](media/workspaces-remote-manage-private-key-dialog.png)
@@ -98,7 +90,7 @@ Dopo aver importato il certificato, concedere all'account `NETWORK SERVICE` le a
 
 Il pacchetto `rtvs-daemon` installerà un certificato autofirmato per impostazione predefinita come parte dell'installazione.
 
-### <a name="obtaining-a-self-signed-certificate-ubuntu"></a>Acquisizione di un certificato autofirmato (Ubuntu)
+### <a name="obtain-a-self-signed-certificate-ubuntu"></a>Ottenere un certificato autofirmato (Ubuntu)
 
 Per informazioni sui vantaggi e i rischi dell'uso di un certificato autofirmato, vedere la descrizione per Windows. Il pacchetto `rtvs-daemon` genera e configura il certificato autofirmato durante l'installazione. È necessario eseguire questa operazione solo se si vuole sostituire il certificato autofirmato generato automaticamente.
 
@@ -118,9 +110,9 @@ Per emettere un certificato autofirmato:
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
 
-### <a name="configuring-rtvs-daemon"></a>Configurazione del daemon RTVS
+### <a name="configure-rtvs-daemon"></a>Configurare il daemon RTVS
 
-Il percorso del file di certificato SSL (percorso di PFX) deve essere impostato in `/etc/rtvs/rtvsd.config.json`. Aggiornare `X509CertificateFile` e `X509CertificatePassword` rispettivamente con il percorso del file e la password.
+Il percorso del file di certificato SSL (percorso di PFX) deve essere impostato in */etc/rtvs/rtvsd.config.json*. Aggiornare `X509CertificateFile` e `X509CertificatePassword` rispettivamente con il percorso del file e la password.
 
 ```json
 {
@@ -150,17 +142,17 @@ Per eseguire codice R, il computer remoto deve avere un interprete R installato 
 
 1. Eseguire il [programma di installazione di R Services](https://aka.ms/rtvs-services) e riavviare quando richiesto. Il programma di installazione esegue le operazioni seguenti:
 
-    - Crea una cartella in `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` e copia tutti i file binari necessari.
+    - Creare una cartella in *%PROGRAMFILES%\R Tools per Visual Studio\1.0\\* e copiare tutti i file binari necessari.
     - Installa `RHostBrokerService` e `RUserProfileService` e ne configura l'avvio automatico.
     - Configura l'avvio automatico del servizio `seclogon`.
-    - Aggiunge `Microsoft.R.Host.exe` e `Microsoft.R.Host.Broker.exe` alle regole in ingresso del firewall sulla porta predefinita 5444.
+    - Aggiungere *Microsoft.R.Host.exe* e *Microsoft.R.Host.Broker.exe* alle regole in ingresso del firewall nella porta predefinita 5444.
 
 I servizi R vengono avviati automaticamente al riavvio del computer:
 
 - Il **servizio R Host Broker** gestisce tutto il traffico HTTPS tra Visual Studio e il processo in cui il codice R viene eseguito nel computer.
 - Il **servizio profili utente di R** è un componente con privilegi che gestisce la creazione dei profili utente di Windows. Questo servizio viene chiamato quando un nuovo utente accede per la prima volta al computer server R.
 
-È possibile visualizzare questi servizi nella console di gestione servizi (`compmgmt.msc`).
+È possibile visualizzare questi servizi nella console di gestione servizi (*compmgmt.msc*).
 
 ## <a name="install-r-services-on-linux"></a>Installare i servizi R in Linux
 
@@ -189,7 +181,7 @@ Per l'esecuzione dei servizi R nel computer remoto è anche necessario creare ac
 
     Se tuttavia si installa il certificato in un server che interagisce con Internet, ad esempio una macchina virtuale di Azure, usare il nome di dominio completo (FQDN) del proprio server, perché il nome di dominio completo di un server che interagisce con Internet non corrisponde mai al proprio nome NETBIOS.
 
-    Per usare l'FQDN, passare alla cartella di installazione di R Services (per impostazione predefinita `%PROGRAM FILES%\R Remote Service for Visual Studio\1.0`), aprire il file `Microsoft.R.Host.Broker.Config.json` in un editor di testo e sostituirne il contenuto con quanto segue, assegnando CN al nome di dominio completo del server, ad esempio `foo.westus.cloudapp.azure.com`:
+    Per usare l'FQDN, passare alla cartella di installazione di R Services (per impostazione predefinita *%PROGRAM FILES%\R Remote Service for Visual Studio\1.0*), aprire il file *Microsoft.R.Host.Broker.Config.json* in un editor di testo e sostituirne il contenuto con quanto segue, assegnando CN al nome di dominio completo del server, ad esempio `foo.westus.cloudapp.azure.com`:
 
     ```json
     {
@@ -204,7 +196,7 @@ Per l'esecuzione dei servizi R nel computer remoto è anche necessario creare ac
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-**Il computer server R non risponde, come procedere?**
+**D. Il computer server R non risponde, come procedere?**
 
 Provare a eseguire il ping del computer remoto dalla riga di comando: `ping remote-machine-name`. Se il ping non riesce verificare che il computer sia in esecuzione.
 
@@ -216,14 +208,14 @@ Esistono tre possibili motivi:
 - Le regole del firewall per `Microsoft.R.Host.Broker` e `Microsoft.R.Host` non sono abilitate per le connessioni sia in ingresso che in uscita sulla porta 5444.
 - Non è stato installato un certificato SSL con `CN=<remote-machine-name>`.
 
-Riavviare il computer dopo aver modificato le condizioni precedenti. Quindi verificare che `RHostBrokerService` e `RUserProfileService` siano in esecuzione tramite Gestione attività (scheda Servizi) o tramite `services.msc`.
+Riavviare il computer dopo aver modificato le condizioni precedenti. Quindi verificare che `RHostBrokerService` e `RUserProfileService` siano in esecuzione tramite Gestione attività (scheda Servizi) o tramite *services.msc*.
 
 **D. Perché la finestra interattiva di R visualizza il messaggio "401 Accesso negato" durante la connessione al server R?**
 
 Le ragioni possibili sono due:
 
 - È molto probabile che l'account `NETWORK SERVICE` non disponga dell'accesso alla chiave privata del certificato SSL. Seguire le istruzioni specificate in precedenza per concedere a `NETWORK SERVICE` l'accesso alla chiave privata.
-- Verificare che il servizio `seclogon` sia in esecuzione. Usare `services.msc` per configurare l'avvio automatico di `seclogon`.
+- Verificare che il servizio `seclogon` sia in esecuzione. Usare *services.msc* per configurare l'avvio automatico di `seclogon`.
 
 **D. Perché la finestra interattiva di R visualizza il messaggio "404 Non trovato" durante la connessione al server R?**
 
@@ -235,4 +227,4 @@ Verificare che le regole firewall per `Microsoft.R.Host.Broker` e `Microsoft.R.H
 
 **D. Nessuna delle soluzioni sopra elencate sembra funzionare. Come procedere?**
 
-Verificare i file di log in `C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp`. Questa cartella contiene file di log separati per ogni istanza del servizio R Broker che è stata eseguita. Ogni volta che il servizio viene riavviato, viene creato un nuovo file di log. Verificare se il file di log più recente contiene indicazioni sulla possibile causa dell'errore.
+Cercare nei file log in *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Questa cartella contiene file di log separati per ogni istanza del servizio R Broker che è stata eseguita. Ogni volta che il servizio viene riavviato, viene creato un nuovo file di log. Verificare se il file di log più recente contiene indicazioni sulla possibile causa dell'errore.

@@ -1,6 +1,6 @@
 ---
 title: Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig in Visual Studio
-ms.date: 02/28/2018
+ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -18,16 +18,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: caedbf46ce3d56d57a22541f1ddc042d8e41eb48
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 046706cf5e36b9e32d6b102e167a55070fcc4a31
+ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572647"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993941"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
 
-In Visual Studio 2017 l'uso di un file [EditorConfig](../ide/create-portable-custom-editor-options.md) consente di definire e mantenere uno stile di codice coerente nella propria codebase. EditorConfig include diverse proprietà di formattazione di base, ad esempio `indent_style` e `indent_size`. In Visual Studio è possibile configurare le impostazioni delle convenzioni per la scrittura del codice .NET anche usando un file EditorConfig. I file EditorConfig consentono di abilitare o disabilitare singole convenzioni per la scrittura del codice .NET e di configurare il livello in base al quale applicare la convenzione tramite un livello di gravità. Per altre informazioni su come usare EditorConfig per garantire la coerenza nella propria codebase, vedere [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md). Per un esempio, è inoltre possibile esaminare il [file .editorconfig in .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig).
+In Visual Studio 2017 l'uso di un file [EditorConfig](../ide/create-portable-custom-editor-options.md) consente di definire e mantenere uno stile di codice coerente nella propria codebase. EditorConfig include diverse proprietà di formattazione di base, ad esempio `indent_style` e `indent_size`. In Visual Studio è possibile configurare le impostazioni delle convenzioni per la scrittura del codice .NET anche usando un file EditorConfig. I file EditorConfig consentono di abilitare o disabilitare singole convenzioni per la scrittura del codice .NET e di configurare il livello in base al quale applicare la convenzione tramite un livello di gravità. Per altre informazioni su come usare EditorConfig per garantire la coerenza nella propria codebase, vedere [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md).
+
+Vedere la fine di questo documento per un esempio di file con estensione editorconfig.
 
 Esistono tre categorie di convenzioni per la scrittura del codice .NET supportate:
 
@@ -47,7 +49,7 @@ Esistono tre categorie di convenzioni per la scrittura del codice .NET supportat
 
 Le regole per le convenzioni del linguaggio hanno il formato seguente:
 
-`options_name = false|true : none|suggestion|warning|error`
+`options_name = false|true : none|silent|suggestion|warning|error`
 
 Per ogni regola di convenzione del linguaggio è necessario specificare **true** (preferire questo stile) o **false** (non preferire questo stile) e un livello di **gravità**. La gravità specifica il livello di imposizione per lo stile.
 
@@ -55,10 +57,10 @@ Nella tabella seguente sono elencati i valori di gravità possibili e i relativi
 
 Gravità | Effetto
 :------- | ------
-none o silent | Quando questa regola viene violata non viene visualizzato alcun avviso all'utente. Le funzionalità di generazione del codice genereranno tuttavia il codice in questo stile.
-suggestion | Quando questa regola di stile viene violata, viene visualizzato un suggerimento all'utente. I suggerimenti vengono visualizzati come tre punti grigi sotto i primi due caratteri.
-avviso | Quando questa regola di stile viene violata, viene visualizzato un avviso del compilatore.
-errore | Quando questa regola di stile viene violata, viene visualizzato un errore del compilatore.
+`none` o `silent` | Quando questa regola viene violata non viene visualizzato alcun avviso all'utente. Le funzionalità di generazione del codice genereranno tuttavia il codice in questo stile. Le regole con gravità `none` non vengono mai visualizzate nel menu *Azioni rapide e refactoring*. Nella maggior parte dei casi sono considerate "disabilitate" o "ignorate".
+`suggestion` | Quando questa regola di stile viene violata, viene visualizzato un suggerimento all'utente. I suggerimenti sono indicati da tre punti grigi sotto i primi due caratteri.
+`warning` | Quando questa regola di stile viene violata, viene visualizzato un avviso del compilatore.
+`error` | Quando questa regola di stile viene violata, viene visualizzato un errore del compilatore.
 
 L'elenco seguente illustra le regole di convenzione del linguaggio consentite:
 
@@ -80,8 +82,10 @@ L'elenco seguente illustra le regole di convenzione del linguaggio consentite:
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
-        - dotnet\_prefer\_inferred\_tuple_names
-        - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
+        - dotnet\_style\_prefer\_inferred\_tuple_names
+        - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
+        - dotnet\_style\_prefer\_auto\_properties
+        - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
     - [Preferenze controllo "Null"](#null_checking)
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
@@ -418,7 +422,9 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 | dotnet_style_collection_initializer | IDE0028 | C# e Visual Basic | true:suggestion | Prima versione |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0+ e Visual Basic 15+ | true:suggestion | Prima versione |
 | dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1+ e Visual Basic 15+ | true:suggestion | 15.6 |
-| dotnet_style_prefer_inferred_anonymous_ type_member_names | IDE0037 | C# e Visual Basic | true:suggestion | 15.6 |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# e Visual Basic | true:suggestion | 15.6 |
+| dotnet_style_prefer_auto_properties | IDE0032 | C# e Visual Basic | true:none | 15.7 |
+| dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# e Visual Basic | true:suggestion | 15.7 |
 
 **dotnet\_style\_object_initializer**
 
@@ -516,6 +522,14 @@ var tuple = (age, name);
 var tuple = (age: age, name: name);
 ```
 
+```vb
+' dotnet_style_prefer_inferred_tuple_names = true
+Dim tuple = (name, age)
+
+' dotnet_style_prefer_inferred_tuple_names = false
+Dim tuple = (name:=name, age:=age)
+```
+
 **dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
 
 - Quando questa regola è impostata su **true** indica la preferenza per i nomi di membro di tipo anonimo dedotti.
@@ -532,6 +546,81 @@ var anon = new { age = age, name = name };
 
 ```
 
+```vb
+' dotnet_style_prefer_inferred_anonymous_type_member_names = true
+Dim anon = New With {name, age}
+
+' dotnet_style_prefer_inferred_anonymous_type_member_names = false
+Dim anon = New With {.name = name, .age = age}
+
+```
+
+**dotnet\_style\_prefer\_auto\_properties**
+
+- Quando questa regola è impostata su **true**, è consigliabile usare le proprietà automatiche anziché le proprietà con campi sottostanti privati.
+- Quando questa regola è impostata su **false**, è consigliabile usare le proprietà con campi sottostanti privati anziché le proprietà automatiche.
+
+Esempi di codice:
+
+```csharp
+// dotnet_style_prefer_auto_properties = true
+private int Age { get; }
+
+// dotnet_style_prefer_auto_properties = false
+private int age;
+
+public int Age
+{
+    get
+    {
+        return age;
+    }
+}
+```
+
+```vb
+' dotnet_style_prefer_auto_properties = true
+Public ReadOnly Property Age As Integer
+
+' dotnet_style_prefer_auto_properties = false
+Private _age As Integer
+
+Public ReadOnly Property Age As Integer
+    Get
+        return _age
+    End Get
+End Property
+```
+
+**dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method**
+
+- Quando questa regola è impostata su **true**, è consigliabile usare un controllo Null con criteri di ricerca in object.ReferenceEquals.
+- Quando questa regola è impostata su **false**, è consigliabile usare object.ReferenceEquals anziché un controllo Null con criteri di ricerca.
+
+Esempi di codice:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_auto_properties = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_auto_properties = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
+
 Queste regole possono essere visualizzate in un file *.editorconfig* come indicato di seguito:
 
 ```EditorConfig
@@ -542,6 +631,7 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:none
 ```
 
 #### <a name="null_checking"></a>Preferenze di controllo dei valori Null
@@ -1120,6 +1210,12 @@ Nell'elenco seguente sono illustrate le regole delle convenzioni di formattazion
         - csharp_space_between_method_declaration_parameter_list_parentheses
         - csharp_space_between_method_call_parameter_list_parentheses
         - csharp_space_between_parentheses
+        - csharp_space_before_colon_in_inheritance_clause
+        - csharp_space_after_colon_in_inheritance_clause
+        - csharp_space_around_binary_operators
+        - csharp_space_between_method_declaration_empty_parameter_list_parentheses
+        - csharp_space_between_method_call_name_and_opening_parenthesis
+        - csharp_space_between_method_call_empty_parameter_list_parentheses
     - [Opzioni di ritorno a capo](#wrapping)
         - csharp_preserve_single_line_statements
         - csharp_preserve_single_line_blocks
@@ -1526,6 +1622,12 @@ Nella tabella seguente sono riportati i nomi delle regole, i linguaggi applicabi
 | csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | False | 15.3  |
 | csharp_space_between_method_call_parameter_list_parentheses |  C# | False | 15.3  |
 | csharp_space_between_parentheses |  C# | False | 15.3  |
+| csharp_space_before_colon_in_inheritance_clause |  C# | true | 15.7  |
+| csharp_space_after_colon_in_inheritance_clause |  C# | true | 15.7  |
+| csharp_space_around_binary_operators |  C# | before_and_after | 15.7  |
+| csharp_space_between_method_declaration_empty_parameter_list_parentheses |  C# | False | 15.7  |
+| csharp_space_between_method_call_name_and_opening_parenthesis |  C# | False | 15.7  |
+| csharp_space_between_method_call_empty_parameter_list_parentheses |  C# | False | 15.7  |
 
 **csharp\_space\_after_cast**
 
@@ -1612,6 +1714,186 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
+**csharp\_space\_before\_colon\_in\_inheritance_clause**
+
+- Quando questa regola è impostata su **true**, è necessario immettere uno spazio prima dei due punti per le basi o le interfacce in una dichiarazione del tipo.
+- Quando questa regola è impostata su **false**, _non_ è necessario immettere uno spazio prima dei due punti per le basi o le interfacce in una dichiarazione del tipo.
+
+Esempi di codice:
+
+```csharp
+// csharp_space_before_colon_in_inheritance_clause = true
+interface I
+{
+
+}
+
+class C : I
+{
+
+}
+
+// csharp_space_before_colon_in_inheritance_clause = false
+interface I
+{
+
+}
+
+class C: I
+{
+
+}
+```
+
+**csharp\_space\_after\_colon\_in\_inheritance_clause**
+
+- Quando questa regola è impostata su **true**, è necessario immettere uno spazio dopo i due punti per le basi o le interfacce in una dichiarazione del tipo.
+- Quando questa regola è impostata su **false**, _non_ è necessario immettere uno spazio dopo i due punti per le basi o le interfacce in una dichiarazione del tipo.
+
+Esempi di codice:
+
+```csharp
+// csharp_space_after_colon_in_inheritance_clause = true
+interface I
+{
+
+}
+
+class C : I
+{
+
+}
+
+// csharp_space_after_colon_in_inheritance_clause = false
+interface I
+{
+
+}
+
+class C :I
+{
+
+}
+```
+
+**csharp\_space\_around\_binary_operators**
+
+La regola accetta un solo valore della tabella seguente:
+
+| Valore | Descrizione |
+| ----- |:------------|
+| before_and_after | Inserire uno spazio prima e dopo l'operatore binario |
+| none | Rimuovere gli spazi prima e dopo l'operatore binario |
+| ignorare | Ignorare gli spazi prima e dopo gli operatori binari |
+
+Se si omette questa regola, o si usa un valore diverso da `before_and_after`, `none` o `ignore`, l'impostazione non viene applicata.
+
+Esempi di codice:
+
+```csharp
+// csharp_space_around_binary_operators = before_and_after
+return x * (x - y);
+
+// csharp_space_around_binary_operators = none
+return x*(x-y);
+
+// csharp_space_around_binary_operators = ignore
+return x  *  (x-y);
+```
+
+**csharp_space_between_method_declaration_empty_parameter_list_parentheses**
+
+- Quando questa regola è impostata su **true**, inserire uno spazio tra le parentesi dell'elenco parametri vuoto per una dichiarazione di metodo.
+- Quando questa regola è impostata su **falso**, rimuovere lo spazio tra le parentesi dell'elenco parametri vuoto per una dichiarazione di metodo.
+
+Esempi di codice:
+
+```csharp
+// csharp_space_between_method_declaration_empty_parameter_list_parentheses = true
+void Goo( )
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+
+// csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+**csharp_space_between_method_call_name_and_opening_parenthesis**
+
+- Quando questa regola è impostata su **true**, inserire uno spazio tra il nome della chiamata al metodo e la parentesi di apertura.
+- Quando questa regola è impostata su **false**, rimuovere lo spazio tra il nome della chiamata al metodo e la parentesi di apertura.
+
+Esempi di codice:
+
+```csharp
+// csharp_space_between_method_call_name_and_opening_parenthesis = true
+void Goo()
+{
+    Goo (1);
+}
+
+void Goo(int x)
+{
+    Goo ();
+}
+
+// csharp_space_between_method_call_name_and_opening_parenthesis = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+**csharp_space_between_method_call_empty_parameter_list_parentheses**
+
+- Quando questa regola è impostata su **true**, inserire uno spazio tra le parentesi dell'elenco argomenti vuoto.
+- Quando questa regola è impostata su **false**, rimuovere lo spazio tra le parentesi dell'elenco argomenti vuoto.
+
+Esempi di codice:
+
+```csharp
+// csharp_space_between_method_call_empty_parameter_list_parentheses = true
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo( );
+}
+
+// csharp_space_between_method_call_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
 Esempio di file *.editorconfig*:
 
 ```EditorConfig
@@ -1622,6 +1904,12 @@ csharp_space_after_keywords_in_control_flow_statements = true
 csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
 ```
 
 #### <a name="wrapping"></a>Opzioni di ritorno a capo
@@ -1677,6 +1965,151 @@ Esempio di file *.editorconfig*:
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 ```
+
+## <a name="example-editorconfig-file"></a>Esempio di file EditorConfig
+Di seguito è riportato un esempio di file con estensione *editorconfig* con le opzioni predefinite:
+
+```EditorConfig
+###############################
+# Core EditorConfig Options   #
+###############################
+root = true
+
+# All files
+[*]
+indent_style = space
+
+# Code files
+[*.{cs,csx,vb,vbx}]
+indent_size = 4
+insert_final_newline = true
+charset = utf-8-bom
+
+###############################
+# .NET Coding Conventions     #
+###############################
+[*.{cs,vb}]
+# Organize usings
+dotnet_sort_system_directives_first = true
+
+# this. preferences
+dotnet_style_qualification_for_field = false:none
+dotnet_style_qualification_for_property = false:none
+dotnet_style_qualification_for_method = false:none
+dotnet_style_qualification_for_event = false:none
+
+# Language keywords vs BCL types preferences
+dotnet_style_predefined_type_for_locals_parameters_members = true:none
+dotnet_style_predefined_type_for_member_access = true:none
+
+# Modifier preferences
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
+dotnet_style_readonly_field = true:suggestion
+
+# Expression-level preferences
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:none
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:none
+
+###############################
+# Naming Conventions          #
+###############################
+
+# Style Definitions
+dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
+
+# Use PascalCase for constant fields
+dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
+dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
+dotnet_naming_symbols.constant_fields.applicable_kinds            = field
+dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
+dotnet_naming_symbols.constant_fields.required_modifiers          = const
+
+###############################
+# C# Coding Conventions       #
+###############################
+[*.cs]
+# var preferences
+csharp_style_var_for_built_in_types = true:none
+csharp_style_var_when_type_is_apparent = true:none
+csharp_style_var_elsewhere = true:none
+
+# Expression-bodied members
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:none
+csharp_style_expression_bodied_indexers = true:none
+csharp_style_expression_bodied_accessors = true:none
+
+# Pattern matching preferences
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+
+# Null-checking preferences
+csharp_style_throw_expression = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
+
+# Modifier preferences
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
+
+# Expression-level preferences
+csharp_prefer_braces = true:none
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_prefer_simple_default_expression = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+
+###############################
+# C# Formatting Rules         #
+###############################
+# New line preferences
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
+
+# Indentation preferences
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+csharp_indent_labels = flush_left
+
+# Space preferences
+csharp_space_after_cast = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+
+# Wrapping preferences
+csharp_preserve_single_line_statements = true
+csharp_preserve_single_line_blocks = true
+
+###############################
+# VB Coding Conventions       #
+###############################
+[*.vb]
+# Modifier preferences
+visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
+
+```
+
 
 ## <a name="see-also"></a>Vedere anche
 

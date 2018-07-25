@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7f3b6ddfd52863585e26a1972f00e55515996d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256136"
 ---
 # <a name="nameprofile"></a>NameProfile
 La funzione `NameProfile` assegna una stringa al processo o al thread specificato.  
@@ -60,7 +61,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Identificatore del livello di profilatura. Usare l'identificatore del processo o del thread generato dal sistema.  
   
-## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
+## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito  
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
 |Enumerator|Descrizione|  
@@ -85,14 +86,14 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 >  Le funzioni API CreateProcess () e CreateThread possono restituire il controllo prima dell'inizializzazione del thread o del processo.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informazioni sulla funzione  
   
 |||  
 |-|-|  
-|**Intestazione**|Includere VSPerf.h|  
-|**Libreria**|Usare VSPerf.lib|  
+|**Intestazione**|Includere *VSPerf.h*|  
+|**Libreria**|Usare *VSPerf.lib*|  
 |**Unicode**|Implementato come `NameProfileW` (Unicode) e `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Esempio  

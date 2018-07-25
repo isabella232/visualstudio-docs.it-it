@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 151f60d21914168ea62bdb2d978d93839c8b859b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975628"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303283"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 
@@ -72,7 +72,7 @@ ms.locfileid: "31975628"
   Le icone accanto ai raggruppamenti Progetto, Spazio dei nomi e Classe rispecchiano lo stato dei test all'interno di tale raggruppamento. Fare riferimento alla tabella riportata di seguito.
 
   ![Icone nella gerarchia in Esplora test](media/testex-hierarchyicons.png)
-  
+
 ### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Nella casella di ricerca Esplora test non è più disponibile un filtro per il percorso file.
 
 Il filtro per il percorso file nella casella di ricerca **Esplora test** è stato rimosso in Visual Studio 2017 versione 15.7 anteprima 3. Questa funzionalità era poco usata ed Esplora Test può recuperare i metodi di test più velocemente se la funzionalità viene esclusa. Se questa modifica interrompe il flusso di sviluppo di progetti in corso, comunicarlo aggiungendo un commento nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).

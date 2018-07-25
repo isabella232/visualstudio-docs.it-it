@@ -1,7 +1,7 @@
 ---
 title: Uso di C++ e Python
 description: Procedura dettagliata sulla creazione di un'estensione C++ per Python con Visual Studio, incluso il debug in modalità mista.
-ms.date: 04/03/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc885df4b85e89c85c366f033113678243fbfe0b
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979269"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847817"
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creazione di un'estensione C++ per Python
 
@@ -283,6 +283,8 @@ Dopo aver eseguito uno dei metodi precedenti, è ora possibile chiamare la funzi
 
     [fast_tanh(x) for x in d] took 0.158 seconds
     ```
+
+    Se il comando **Avvia senza eseguire debug** è disabilitato, fare clic con il pulsante destro del mouse sul progetto Python in Esplora soluzioni e selezionare **Imposta come progetto di avvio**.
 
 1. Provare a incrementare la variabile `COUNT` in modo che le differenze siano più evidenti. Una build di debug del modulo C++ viene anche eseguita più lentamente rispetto a una build di rilascio perché la build di debug è meno ottimizzata e contiene vari controlli degli errori. È possibile alternare liberamente queste configurazioni ai fini del confronto.
 

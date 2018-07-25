@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978918"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117797"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Introduzione a Live Unit Testing in Visual Studio
 
@@ -41,7 +41,7 @@ Iniziare creando una soluzione di Visual Studio denominata `UtilityLibraries` co
 
 La soluzione è semplicemente un contenitore per uno o più progetti. Per creare la soluzione, aprire Visual Studio 2017 ed eseguire le operazioni seguenti:
 
-1. Selezionare **File**, **Nuovo**, **Progetto** dal menu di primo livello di Visual Studio.
+1. Selezionare **File** > **Nuovo** > **Progetto** dal menu di primo livello di Visual Studio.
 
 1. Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Altri tipi di progetti** e selezionare **Soluzioni di Visual Studio**. Selezionare il modello **Soluzione vuota** nel riquadro di destra e immettere `UtilityLibraries` nella casella di testo **Nome**, come illustrato nella figura seguente:
 
@@ -52,7 +52,7 @@ La soluzione è semplicemente un contenitore per uno o più progetti. Per creare
 Dopo aver creato la soluzione, creare una libreria di classi denominata `StringLibrary` contenente metodi di estensione per l'uso di stringhe.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione `UtilityLibraries` e selezionare **Aggiungi**, **Nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione `UtilityLibraries` e selezionare **Aggiungi** > **Nuovo progetto**.
 
 1. Nella finestra di dialogo **Aggiungi nuovo progetto** selezionare il nodo C# e quindi **.NET Standard**.
 
@@ -80,7 +80,7 @@ Dopo aver creato la soluzione, creare una libreria di classi denominata `StringL
 1.  Selezionare **Compila**, **Compila soluzione** dal menu di primo livello di Visual Studio. La compilazione della libreria da parte di Visual Studio dovrebbe avvenire correttamente.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione `UtilityLibraries` e selezionare **Aggiungi**, **Nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione `UtilityLibraries` e selezionare **Aggiungi** > **Nuovo progetto**.
 
 1. Nella finestra di dialogo **Aggiungi nuovo progetto** selezionare il nodo Visual Basic e quindi **.NET Standard**.
 
@@ -118,7 +118,7 @@ Dopo aver creato la soluzione, creare una libreria di classi denominata `StringL
 Il passaggio successivo consiste nel creare il progetto di unit test per testare la libreria `StringLibrary`. Creare gli unit test eseguendo i passaggi seguenti:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione `UtilityLibraries` e selezionare **Aggiungi**, **Nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione `UtilityLibraries` e selezionare **Aggiungi** > **Nuovo progetto**.
 
 1. Nella finestra di dialogo **Aggiungi nuovo progetto** selezionare il nodo C# e quindi **.NET Core**.
 
@@ -156,7 +156,7 @@ Il passaggio successivo consiste nel creare il progetto di unit test per testare
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione `UtilityLibraries` e selezionare **Aggiungi**, **Nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione `UtilityLibraries` e selezionare **Aggiungi** > **Nuovo progetto**.
 
 1. Nella finestra di dialogo **Aggiungi nuovo progetto** selezionare il nodo Visual Basic e quindi **.NET Core**.
 

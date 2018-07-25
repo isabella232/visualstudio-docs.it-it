@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a09f2ec1af511cb789f2101e2df0a675dd065e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ceb9415648d4ad5bcfa4c16ca7f10b3a88a6db4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578413"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078114"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Procedura: Configurare destinazioni e attività
 Alcune attività MSBuild possono essere impostate in modo da essere eseguite nell'ambiente a cui sono destinate, indipendentemente dall'ambiente del computer di sviluppo. Se ad esempio si usa un computer a 64 bit per creare un'applicazione destinata a un'architettura a 32 bit, le attività selezionate vengono eseguite in un processo a 32 bit.  
@@ -30,7 +30,7 @@ Alcune attività MSBuild possono essere impostate in modo da essere eseguite nel
   
 -   L'attributo `Architecture`, se presente, imposta la piattaforma e il numero di bit e può assumere uno dei valori seguenti: `x86`, `x64`, `CurrentArchitecture` o `*` (qualsiasi architettura).  
   
--   L'attributo `TaskFactory`, se presente, imposta la factory delle attività che crea ed esegue l'istanza dell'attività e può assumere solo il valore `TaskHostFactory`. Per altre informazioni, vedere la sezione Factory delle attività più avanti in questo documento.  
+-   L'attributo `TaskFactory`, se presente, imposta la factory delle attività che crea ed esegue l'istanza dell'attività e può assumere solo il valore `TaskHostFactory`. Per altre informazioni, vedere la sezione [Factory di attività](#task-factories) più avanti in questo documento.  
   
 ```xml  
 <UsingTask TaskName="SimpleTask"   
@@ -75,7 +75,7 @@ Alcune attività MSBuild possono essere impostate in modo da essere eseguite nel
   
 ```  
   
-## <a name="task-factories"></a>Factory delle attività  
+## <a name="task-factories"></a>Factory di attività  
  Prima di eseguire un'attività, MSBuild verifica di essere stato designato per l'esecuzione nel contesto software corrente.  In questo caso, MSBuild passa l'attività a AssemblyTaskFactory, che la esegue nel processo corrente; in caso contrario, MSBuild passa l'attività a TaskHostFactory, che la esegue in un processo corrispondente al contesto di destinazione. Anche se il contesto corrente e il contesto di destinazione corrispondono, è possibile imporre l'esecuzione out-of-process di un'attività (per motivi di isolamento, sicurezza o di altri tipo) impostando `TaskFactory` su `TaskHostFactory`.  
   
 ```xml  
@@ -107,7 +107,7 @@ Alcune attività MSBuild possono essere impostate in modo da essere eseguite nel
  I parametri `MSBuildRuntime` e `MSBuildArchitecture` offrono il metodo più flessibile per impostare il contesto di destinazione ma anche il più limitato relativamente all'ambito.  Da un lato, poiché vengono impostati nell'istanza dell'attività e vengono valutati solo prima dell'esecuzione dell'attività, possono derivare il valore dall'ambito completo di proprietà disponibili in fase di valutazione e in fase di compilazione.  Dall'altro, questi parametri vengono applicati solo a una particolare istanza di un'attività in una determinata destinazione.  
   
 > [!NOTE]
->  I parametri dell'attività vengono valutati nel contesto del nodo padre, non nel contesto dell'host di attività. Le variabili di ambiente dipendenti dal runtime o dall'architettura (ad esempio, il percorso di Programmi) restituiranno il valore che corrisponde al nodo padre.  Tuttavia, se la stessa variabile di ambiente viene letta direttamente dall'attività, verrà valutata correttamente nel contesto dell'host di attività.  
+>  I parametri dell'attività vengono valutati nel contesto del nodo padre, non nel contesto dell'host dell'attività. Le variabili di ambiente dipendenti dal runtime o dall'architettura, come ad esempio, il percorso di *Programmi*, restituiranno il valore che corrisponde al nodo padre.  Tuttavia, se la stessa variabile di ambiente viene letta direttamente dall'attività, verrà valutata correttamente nel contesto dell'host di attività.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configurazione di destinazioni e attività](../msbuild/configuring-targets-and-tasks.md)
+ [Configure targets and tasks](../msbuild/configuring-targets-and-tasks.md) (Configurare destinazioni e attività)

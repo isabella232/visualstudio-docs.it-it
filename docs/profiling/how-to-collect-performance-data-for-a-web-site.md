@@ -19,15 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815925"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 
-Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibile usare la** Creazione guidata sessione di prestazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] . È possibile profilare un'applicazione Web aperta in Visual Studio oppure un sito Web di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente nel computer locale e non aperto nell'IDE di Visual Studio.
+Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], è possibile usare la **Creazione guidata sessione di prestazioni**. È possibile profilare un'applicazione Web aperta in Visual Studio oppure un sito Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente nel computer locale e non aperto nell'IDE di Visual Studio.
 
 > [!NOTE]
 > La **Creazione guidata sessione di prestazioni** consente di aggiungere dati di interazione tra livelli (TIP), dati relativi alle prestazioni di JScript o entrambi ai dati di profilatura raccolti. L'opzione TIP raccoglie dati dai processi sul lato server. L'opzione di profilatura JScript raccoglie dati da script in esecuzione in un sito Web locale o remoto. Nella maggior parte dei casi, è consigliabile scegliere solo una delle opzioni.
@@ -52,7 +53,7 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibil
 
 4. Nell'elenco a discesa **Specificare l'applicazione di destinazione per la profilatura** verificare che il progetto corrente sia selezionato e quindi fare clic su **Avanti**.
 
-5. Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli (TIP), dati da JavaScript in esecuzione nelle pagine Web o entrambi.
+5. Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli, dati da JavaScript in esecuzione nelle pagine Web o entrambi.
 
     - Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .
 
@@ -62,9 +63,9 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibil
 
 7. Nella quarta pagina della procedura guidata fare clic su **Fine**.
 
-8. Verrà creata una sessione di prestazioni per l'applicazione di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e il sito Web verrà avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.
+8. Viene creata una sessione di prestazioni per l'applicazione di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e il sito Web viene avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.
 
-     Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+     Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Per profilare un sito Web senza aprire un progetto in Visual Studio
 
@@ -86,23 +87,23 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibil
 
      Per altre informazioni, visualizzare le pagine delle proprietà per un file binario di destinazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 
-6. Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli (TIP), dati da JavaScript in esecuzione nelle pagine Web o entrambi.
+6. Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli, dati da JavaScript in esecuzione nelle pagine Web o entrambi.
 
     - Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .
 
-    - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profila JavaScript** .
+    - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Esegui profilatura JavaScript**.
 
 7. Scegliere **Avanti**.
 
 8. Nella quarta pagina della procedura guidata fare clic su **Fine**.
 
-9. Verrà creata una sessione di prestazioni per l'applicazione ASP.NET e il sito Web verrà avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.
+9. Viene creata una sessione di prestazioni per l'applicazione ASP.NET e il sito Web viene avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.
 
      Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="see-also"></a>Vedere anche
 
 [Panoramiche](../profiling/overviews-performance-tools.md)  
-[Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)  
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)  
 [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md)  
 [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)

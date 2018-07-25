@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751871"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117628"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Come testare una DLL di Visual C++
 
@@ -46,7 +46,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
     -   I metodi dei test vengono raggruppati in classi usando `TEST_CLASS(YourClassName){...}`.
 
-         Quando vengono eseguiti i test, viene creata un'istanza di ogni classe di test. I metodi di test vengono chiamati in un ordine non specificato. È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo. Per altre informazioni, vedere [Uso di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) in MSDN Library.
+         Quando vengono eseguiti i test, viene creata un'istanza di ogni classe di test. I metodi di test vengono chiamati in un ordine non specificato. È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo. Per altre informazioni, vedere [Uso di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) in MSDN Library.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Verificare che i test siano eseguiti in Esplora test
 
@@ -113,7 +113,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 5.  Aggiungere implementazioni minime delle funzioni dichiarate. Aprire **RooterLib.cpp** e aggiungere il codice seguente:
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -135,7 +135,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
     2.  Nella finestra di dialogo delle proprietà del progetto RooterLib espandere **Proprietà comuni** e scegliere **Framework e riferimenti**.
 
-    3.  Scegliere **Aggiungi nuovo riferimento**.
+    3.  Scegliere **Aggiungi nuovo riferimento**
 
     4.  Nella finestra di dialogo **Aggiungi riferimento** espandere **Soluzione** e quindi scegliere **Progetti**. Selezionare quindi l'elemento **RouterLib**.
 
@@ -151,7 +151,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 3.  Aggiungere un test che usa la funzione importata. Aggiungere il codice seguente a **unittest1.cpp**:
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 1.  Aggiungere un altro test a **unittest1.cpp**:
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
     3.  Aggiungere codice a **RooterLib.cpp** per intercettare l'eccezione:
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

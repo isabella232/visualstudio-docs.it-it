@@ -1,7 +1,7 @@
 ---
 title: Esercitazione sull'uso di Python, passaggio 1, creazione di un progetto
 description: Panoramica e passaggio 1 della procedura dettagliata di base delle funzionalità di Python in Visual Studio, inclusi i prerequisiti e la creazione di un nuovo progetto Python.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c1c9941c59fb02ecd1332250cb3ac3ca73a67144
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031709"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057011"
 ---
-# <a name="working-with-python-in-visual-studio"></a>Uso di Python in Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: Uso di Python in Visual Studio
 
 Python è un linguaggio di programmazione molto diffuso affidabile, flessibile, facile da imparare, il cui uso è gratuito in tutti i sistemi operativi e supportato sia da un'attiva community di sviluppatori che da numerose librerie gratuite. Il linguaggio supporta tutte le modalità di sviluppo, tra cui applicazioni Web, servizi Web, app desktop, script e calcolo scientifico. Viene usato in molte università, nonché da scienziati, sviluppatori professionisti e non professionisti.
 
@@ -73,7 +73,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene un singo
 > [!div class="nextstepaction"]
 > [Scrittura ed esecuzione del codice](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>Approfondimenti
+## <a name="go-deeper"></a>Approfondimento
 
 - [Progetti Python in Visual Studio](managing-python-projects-in-visual-studio.md)
 - [Informazioni sul linguaggio Python in python.org](https://www.python.org)

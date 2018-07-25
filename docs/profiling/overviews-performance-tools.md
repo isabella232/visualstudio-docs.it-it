@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 709f9b62844a209450daa427efdb3333796828b8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 904ebf55e7920bfd79fec3afb502d59e5dc82a33
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254618"
 ---
-# <a name="overviews-performance-tools"></a>Panoramiche (strumenti di prestazioni)
+# <a name="overviews-performance-tools"></a>Panoramiche (strumenti per le prestazioni)
 Questa sezione fornisce una panoramica dei concetti e della terminologia per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], utilizzabili per misurare le caratteristiche delle prestazioni di un'applicazione in fase di sviluppo.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)  
  Vengono fornite informazioni di base sulla profilatura delle prestazioni con gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   

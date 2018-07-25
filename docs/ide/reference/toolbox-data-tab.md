@@ -14,22 +14,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7deb9fef0ee50ecd202cc711566795932a9f51b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1af6ac0f9a382a91d2c87e5cb84053b8b51bf961
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949711"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089672"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
+
 Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La scheda **Dati** della **Casella degli strumenti** viene visualizzata quando si crea un progetto a cui è associata una finestra di progettazione. Per impostazione predefinita, la **Casella degli strumenti** viene visualizzata nell'ambiente di sviluppo integrato di Visual Studio; se è necessario visualizzare la **Casella degli strumenti**, selezionare **Casella degli strumenti** dal menu **Visualizza**.
 
 > [!TIP]
-> La Configurazione guidata origine dati consente di creare e configurare automaticamente la maggior parte degli elementi di dati. Per altre informazioni, vedere [Add new data sources](../../data-tools/add-new-data-sources.md) (Aggiungere nuove origini dati).
-
+> La Configurazione guidata origine dati crea e configura automaticamente la maggior parte degli elementi di dati. Per altre informazioni, vedere [Add new data sources](../../data-tools/add-new-data-sources.md) (Aggiungere nuove origini dati).
 
 ## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente
- Per passare direttamente alla pagina di riferimento di .NET Framework per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.
+
+Per passare direttamente alla pagina di riferimento di .NET Framework per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.
 
 |nome|Descrizione|
 |----------|-----------------|
@@ -40,11 +41,10 @@ Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Accesso ai dati in Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
+- [Accedere ai dati in Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Visual Studio Data Tools per .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Strumenti di set di dati in Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)
 - [Associare controlli ai dati in Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Associare controlli Windows Form ai dati in Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Modificare i dati nei set di dati](../../data-tools/edit-data-in-datasets.md)
 - [Convalida dei dati nei set di dati](../../data-tools/validate-data-in-datasets.md)
-- [Salvataggio di dati](../../data-tools/saving-data.md)

@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45bb5494f3cf3a4bd06103e05fb17d6f1d00b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 54562e26e0da5568ba74d40425cf377260d41000
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31579004"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945120"
 ---
-# <a name="findinlist-task"></a>Attività FindInList
+# <a name="findinlist-task"></a>FindInList (attività)
 Trova in un elenco specificato un elemento con un itemspec corrispondente.  
   
 ## <a name="parameters"></a>Parametri  
@@ -45,4 +45,4 @@ Trova in un elenco specificato un elemento con un itemspec corrispondente.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

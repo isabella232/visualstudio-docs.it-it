@@ -13,26 +13,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a285c95e3649cc7aaa53995070091f0abea509
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815613"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Procedura: installare il profiler autonomo
+# <a name="how-to-install-the-stand-alone-profiler"></a>Procedura: Installare il profiler autonomo
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre un profiler autonomo basato sulla riga di comando che può essere eseguito senza installare l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questa situazione si verifica quando un computer non ha o non può avere un ambiente di sviluppo installato. È consigliabile, ad esempio, non installare un ambiente di sviluppo in un server Web di produzione.  
   
 > [!NOTE]
->  Quando si usa il profiler autonomo per raccogliere dati sulle prestazioni per il sito Web ASP.NET, è consigliabile usare lo strumento da riga di comando [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) anziché lo strumento [VSPerfCmd](../profiling/vsperfcmd.md).  
+>  Quando si usa il profiler autonomo per raccogliere dati sulle prestazioni per un sito Web ASP.NET, è consigliabile usare lo strumento da riga di comando [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) anziché lo strumento [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Per installare il profiler autonomo  
   
-1.  Individuare il programma di installazione del profiler autonomo (vs_profiler.exe) nei supporti di installazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nella directory che include il percorso \Standalone Profiler ed eseguirlo.  
+1.  Individuare il programma di installazione del profiler autonomo (*vs_profiler.exe*) nei supporti di installazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nella directory che include il percorso *\Standalone Profiler* ed eseguirlo.  
   
-2.  Aggiungere i percorsi per vsintr.exe e msdis150.dll al percorso di sistema.  
+2.  Aggiungere i percorsi per *vsintr.exe* e *msdis150.dll* al percorso di sistema.  
   
     > [!NOTE]
-    >  Nell'installazione predefinita di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vsinstr.exe e msdis150.dll si trovano in \Programmi\Visual Studio 10\Team Tools\Performance Tools.  
+    >  Nell'installazione predefinita di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] *vsinstr.exe* e *msdis150.dll* si trovano in *\Programmi\Visual Studio 10\Team Tools\Performance Tools*.  
   
 3.  Al prompt dei comandi digitare **VSInstr**.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/19/2018
 6.  Usare lo strumento [VSPerfReport](../profiling/vsperfreport.md) per serializzare i simboli nel file dei dati di profilatura (con estensione vsp). Usare le opzioni **VSPerfReport /summary:all /packsymbols**. Se non sono presenti simboli inseriti nel file di dati, assicurarsi di aver impostato la variabile di ambiente _NT_SYMBOL_PATH.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [Procedura dettagliata: Profilatura dalla riga di comando tramite strumentazione](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
  [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)   

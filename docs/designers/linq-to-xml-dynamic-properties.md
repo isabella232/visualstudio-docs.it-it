@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab219b0babbb423c10a08f1f9c4888ad70aff12
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abad2e8966bfc9fc2926c1ca985e1cb5450f1d68
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917776"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978138"
 ---
-# <a name="linq-to-xml-dynamic-properties"></a>Proprietà dinamiche in LINQ to XML
+# <a name="linq-to-xml-dynamic-properties"></a>Proprietà dinamiche di LINQ to XML
 
 Contenuto della sezione vengono fornite informazioni di riferimento relative alle proprietà dinamiche di LINQ to XML. In particolare, queste proprietà vengono esposte dalle classi <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XElement>, incluse nello spazio dei nomi <xref:System.Xml.Linq>.
 
-Come illustrato nell'argomento [Panoramica del data binding di WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md), ogni proprietà dinamica è equivalente a una proprietà o a un metodo pubblico della stessa classe. Questi membri standard devono essere usati per la maggior parte degli scopi. Le proprietà dinamiche vengono fornite specificamente per gli scenari di data binding LINQ to XML. Per altre informazioni sui membri standard di queste classi, vedere gli argomenti di riferimento <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XElement>.
+Come illustrato nell'argomento [Panoramica del data binding di WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md), ogni proprietà dinamica è equivalente a una proprietà o a un metodo pubblico standard della stessa classe. Questi membri standard devono essere usati per la maggior parte degli scopi. Le proprietà dinamiche vengono fornite specificamente per gli scenari di data binding LINQ to XML. Per altre informazioni sui membri standard di queste classi, vedere gli argomenti di riferimento <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XElement>.
 
 Relativamente ai valori risolti, le proprietà dinamiche descritte in questa sezione rientrano in due categorie:
 
@@ -39,6 +39,6 @@ Tutte le proprietà dinamiche che restituiscono un valore indicizzato di tipo <x
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Data binding WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
-- [Panoramica dei data binding WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
+- [Associazione dati WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
+- [Panoramica del data binding WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
 - [Introduzione alle query LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)

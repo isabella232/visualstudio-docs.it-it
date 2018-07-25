@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 045059c1ab0c33026369b065649c4d4b82a480df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844429"
 ---
 # <a name="manage-channels"></a>Gestione dei canali
 Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile organizzare i canali per il processo in modo da poter esaminare modelli specifici. È possibile ordinare i canali, spostarli verso l'alto o verso il basso e nasconderli o visualizzarli.  
@@ -50,10 +51,10 @@ Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile 
 > [!NOTE]
 >  Se un thread viene nascosto, verrà rimosso anche dal tempo di calcolo visualizzato nella legenda attiva e nei rapporti del profilo.  
   
-## <a name="show-all-channels"></a>Mostra tutti i canali  
+## <a name="show-all-channels"></a>Visualizzare tutti i canali  
  Questo controllo è attivo quando uno o più canali vengono nascosti. Se si specifica questo controllo, tutti gli elementi nascosti vengono visualizzati e vengono inclusi nel calcolo del tempo.  
   
-## <a name="move-markers-to-top"></a>Sposta i marcatori all'inizio  
+## <a name="move-markers-to-top"></a>Spostare i marcatori all'inizio  
  Se una traccia contiene eventi marcatori, è possibile usare questo comando per spostare i canali dei marcatori all'inizio della sequenza temporale. Viene comunque mantenuto il loro ordine relativo.  
   
 ## <a name="group-markers-by-thread"></a>Raggruppare i marcatori in base ai thread  
@@ -61,5 +62,5 @@ Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile 
   
 ## <a name="see-also"></a>Vedere anche  
  [Controllo zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)   
- [Modalità misurazione attiva/non attiva](../profiling/measure-mode-on-off.md)   
+ [Modalità misurazione attiva-non attiva](../profiling/measure-mode-on-off.md)   
  [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

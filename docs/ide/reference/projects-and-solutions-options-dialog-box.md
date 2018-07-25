@@ -16,78 +16,85 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843991"
 ---
-# <a name="projects-and-solutions-options-dialog-box"></a>Progetti e soluzioni, Opzioni (finestra di dialogo)
-Consente di impostare il comportamento di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in relazione a progetti e soluzioni. Per accedere a queste opzioni selezionare **Strumenti > Opzioni**, espandere **Progetti e soluzioni** e fare clic su **Generale**.
+# <a name="projects-and-solutions-page-options-dialog-box"></a>Pagina Progetti e soluzioni, finestra di dialogo Opzioni
+
+Consente di impostare il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni selezionare **Strumenti** > **Opzioni**, espandere **Progetti e soluzioni** e selezionare **Generale**.
 
 I percorsi predefiniti per le cartelle di progetti e modelli vengono impostati nella scheda **Percorsi** della stessa finestra di dialogo.
 
 > [!NOTE]
-> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questo argomento della Guida è stato creato tenendo presente le **Impostazioni generali per lo sviluppo**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> A seconda dalle impostazioni attive o dell'edizione,è possibile che le opzioni disponibili nell'interfaccia utente siano diverse rispetto a quanto descritto in questo articolo, che è stato scritto tenendo in considerazione le **Impostazioni generali per lo sviluppo**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="general-page"></a>Pagina Generale
 
-## <a name="general-tab-options"></a>Opzioni della scheda Generale
+Le opzioni seguenti sono disponibili nella pagina **Generale**.
 
-**Mostra sempre Elenco errori se la compilazione finisce con errori**
+### <a name="always-show-error-list-if-build-finishes-with-errors"></a>Mostra sempre Elenco errori se la compilazione termina con errori
 
 Apre la finestra **Elenco errori** al completamento della compilazione, ma solo se la compilazione di un progetto non è riuscita. Vengono visualizzati gli errori che si sono verificati durante il processo di compilazione. Quando questa opzione è deselezionata, gli errori si verificano ugualmente, ma la finestra non verrà aperta una volta completata la compilazione. Questa opzione è attivata per impostazione predefinita.
 
-**Tieni traccia degli elementi attivi in Esplora soluzioni**
+### <a name="track-active-item-in-solution-explorer"></a>Tieni traccia degli elementi attivi in Esplora soluzioni
 
 Se selezionata, **Esplora soluzioni** viene aperto automaticamente e l'elemento attivo viene selezionato. L'elemento selezionato cambia quando si lavora con diversi file in un progetto o soluzione oppure componenti diversi in una finestra di progettazione. Quando questa opzione è deselezionata, la selezione in **Esplora soluzioni** non viene modificata automaticamente. Questa opzione è attivata per impostazione predefinita.
 
-**Mostra configurazioni della build avanzate**
+### <a name="show-advanced-build-configurations"></a>Mostra configurazioni di generazione avanzate
 
-Se selezionata, le opzioni di configurazione di compilazione vengono visualizzate nella finestra di dialogo **Pagine delle proprietà** del progetto e nella finestra di dialogo **Pagine delle proprietà** della soluzione. Se deselezionata, le opzioni di configurazione di compilazione non vengono visualizzate nella finestra di dialogo **Pagine delle proprietà** del progetto e nella finestra di dialogo **Pagine delle proprietà** della soluzione per i progetti [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] che contengono una sola configurazione oppure le due configurazioni debug e rilascio. Se un progetto ha una configurazione definita dall'utente, verranno visualizzate le opzioni di configurazione di compilazione.
+Se selezionata, le opzioni di configurazione di compilazione vengono visualizzate nella finestra di dialogo **Pagine delle proprietà** del progetto e nella finestra di dialogo **Pagine delle proprietà** della soluzione. Se deselezionata, le opzioni di configurazione di compilazione non vengono visualizzate nelle finestre di dialogo **Pagine delle proprietà del progetto** e **Pagine delle proprietà della soluzione** per i progetti Visual Basic e C# che contengono una configurazione oppure le due configurazioni delle versioni di debug e di rilascio. Se un progetto ha una configurazione definita dall'utente, verranno visualizzate le opzioni di configurazione di compilazione.
 
 Se è deselezionata, i comandi del menu **Compila**, ad esempio **Compila soluzione**, **Ricompila soluzione** e **Pulisci soluzione**, vengono eseguiti nella configurazione Rilascio e i comandi dal menu **Debug**, ad esempio **Avvia il debug** e **Avvia senza eseguire debug**, vengono eseguiti nella configurazione Debug.
 
-**Mostra sempre soluzione**
+### <a name="always-show-solution"></a>Mostra sempre soluzione
 
 Se selezionata, la soluzione e tutti i comandi che agiscono sulle soluzioni vengono sempre visualizzati nell'IDE. Se deselezionata, tutti i progetti vengono creati come progetti autonomi e la soluzione non viene visualizzata in Esplora soluzioni o i comandi che agiscono sulle soluzioni non vengono visualizzati nell'IDE se la soluzione contiene un solo progetto.
 
-**Salva nuovi progetti alla creazione**
+### <a name="save-new-projects-when-created"></a>Salva nuovi progetti alla creazione
 
 Se selezionata, è possibile specificare un percorso per il progetto nella finestra di dialogo **Nuovo progetto**. Se deselezionata, tutti i nuovi progetti vengono creati come progetti temporanei. Quando si lavora con i progetti temporanei, è possibile creare ed effettuare prove con un progetto senza dover specificare un percorso sul disco.
 
-**Avvisa utente quando il percorso del progetto non è attendibile**
+### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Avvisa utente quando il percorso del progetto non è attendibile
 
 Se si prova a creare un nuovo progetto o ad aprire un progetto esistente in una posizione non completamente attendibile (ad esempio, in un percorso UNC o un percorso HTTP), verrà visualizzato un messaggio. Usare questa opzione per specificare se il messaggio viene visualizzato ogni volta che si prova a creare o ad aprire un progetto in una posizione non completamente attendibile.
 
-**Mostra finestra di output a inizio compilazione**
+### <a name="show-output-window-when-build-starts"></a>Mostra finestra di output a inizio generazione
 
-Consente di visualizzare automaticamente la finestra di Output nell'IDE all'inizio delle compilazioni della soluzione. Per altre informazioni, vedere [Procedura: Controllare la finestra di output](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858).
+Consente di visualizzare automaticamente la [finestra Output](../../ide/reference/output-window.md) nell'IDE all'inizio delle compilazioni della soluzione.
 
-**Richiedi ridenominazione simbolica quando vengono rinominati i file**
+### <a name="prompt-for-symbolic-renaming-when-renaming-files"></a>Richiedi ridenominazione simbolica quando vengono rinominati i file
 
-Se selezionata, viene visualizzata una finestra di messaggio che richiede se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve rinominare anche tutti i riferimenti nel progetto all'elemento di codice.
+Se selezionata, Visual Studio visualizza una finestra di messaggio in cui chiede se rinominare o meno anche tutti i riferimenti all'elemento di codice contenuti nel progetto.
 
-**Chiedi conferma prima di spostare i file in un'altra posizione**
+### <a name="prompt-before-moving-files-to-a-new-location"></a>Chiedi conferma prima di spostare i file in un'altra posizione
 
-Se selezionata, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] visualizza una finestra di messaggio di conferma prima che i percorsi dei file vengano modificati dalle azioni di Esplora soluzioni.
+Se selezionata, Visual Studio visualizza una finestra di messaggio di conferma prima che i percorsi dei file vengano modificati dalle azioni in **Esplora soluzioni**.
 
-**Riapri documenti al caricamento della soluzione (Visual Studio 2017 versione 15.8 Preview 2 e versioni successive)**
- 
-Durante il caricamento della soluzione, riaprire automaticamente i documenti aperti nella sessione precedente. Se selezionata, i documenti aperti al momento della chiusura precedente della soluzione vengono aperti automaticamente quando viene caricata la soluzione.
+### <a name="reopen-documents-on-solution-load"></a>Riapri documenti al caricamento della soluzione
 
-La riapertura di determinati tipi di file o finestre di progettazione può ritardare il caricamento della soluzione. Deselezionare questa opzione per migliorare le prestazioni di caricamento della soluzione se non si vuole ripristinare il contesto precedente della soluzione.
+**Novità di Visual Studio 2017 versione 15.8 (Preview 2 e versioni successive)**
 
-## <a name="locations-tab-options"></a>Opzioni della scheda Percorsi
+Se selezionata, i documenti lasciati aperti alla chiusura precedente della soluzione vengono aperti automaticamente quando viene aperta la soluzione.
 
-**Percorso progetti**
+La riapertura di determinati tipi di file o finestre di progettazione può ritardare il caricamento della soluzione. Deselezionare questa opzione per [migliorare le prestazioni di caricamento della soluzione](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) se non si vuole ripristinare il contesto precedente della soluzione.
 
-Specifica il percorso predefinito in cui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] crea nuove cartelle di progetti e soluzioni. Anche diverse finestre di dialogo usano il percorso impostato in questa opzione come punto di partenza della cartella. Ad esempio, la finestra di dialogo Apri progetto usa questo percorso per il collegamento Progetti.
+## <a name="locations-page"></a>Pagina Percorsi
 
-**Percorso dei modelli di progetto utente**
+Le opzioni seguenti sono disponibili nella pagina **Percorsi**.
+
+### <a name="projects-location"></a>Percorso progetti
+
+Specifica il percorso predefinito in cui Visual Studio crea nuove cartelle di progetti e soluzioni. Anche diverse finestre di dialogo usano il percorso impostato in questa opzione come punto di partenza della cartella. Ad esempio, la finestra di dialogo **Apri progetto** usa questo percorso per il collegamento **Progetti**.
+
+### <a name="user-project-templates-location"></a>Percorso dei modelli di progetto utente
 
 Specifica il percorso predefinito usato dalla finestra di dialogo **Nuovo progetto** per creare l'elenco **Modelli personali**. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-**Percorso dei modelli di elemento utente**
+### <a name="user-item-templates-location"></a>Percorso dei modelli di elemento utente
 
 Specifica il percorso predefinito usato dalla finestra di dialogo **Aggiungi nuovo elemento** per creare l'elenco **Modelli personali**. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 

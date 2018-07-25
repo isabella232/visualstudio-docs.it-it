@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2948b33db198ddd8f7e002acbad155da66da58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4bdda75e5c8796ccd6e0b1d86b717dbd9bc48926
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925625"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924447"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Procedura: creare e modificare livelli MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Procedura: Creare e modificare livelli MIP
 Questo documento illustra come usare **Editor di immagini** per generare e modificare i *livelli MIP* per il livello di dettaglio dell'area della trama.
 
 ## <a name="generating-mip-levels"></a>Generazione dei livelli MIP
@@ -27,7 +27,7 @@ Questo documento illustra come usare **Editor di immagini** per generare e modif
 
 1.  Iniziare con una trama di base, come descritto in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md). Per risultati ottimali, specificare una trama con larghezza e altezza equivalenti a una potenza di due nella dimensione, ad esempio 256, 512, 1024 e così via.
 
-2.  Generare i livelli MIP. Sulla barra degli strumenti della **modalità dell'editor di immagini scegliere** **Avanzate** , **Strumenti** , **Genera MIP** .
+2.  Generare i livelli MIP. Sulla barra degli strumenti della **modalità dell'editor di immagini** scegliere **Avanzate** > **Strumenti** > **Genera MIP**.
 
      I pulsanti per **la visualizzazione del livello MIP precedente** o **successivo** sono ora visualizzati sulla barra degli strumenti della **modalità dell'editor di immagini** . Se è visualizzata la finestra **Proprietà**, si può anche notare che nelle proprietà dell'immagine sono ora incluse le proprietà di sola lettura **Livello MIP** e **Conteggio livelli MIP**.
 

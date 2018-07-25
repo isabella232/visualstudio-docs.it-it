@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d725becd8a047af9eec3e76e517f39e037fb2466
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844778"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedura: Limitare la strumentazione a specifiche funzioni
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedura: Limitare la strumentazione a funzioni specifiche
 È possibile limitare la strumentazione e la raccolta dei dati a una o più funzioni impostando le opzioni nella pagina **Avanzate** di **Sessione prestazioni** o nelle pagine delle proprietà del file binario di destinazione:  
   
 -   Se si specificano le funzioni nella pagina delle proprietà della sessione di prestazioni, solo tali funzioni vengono instrumentate in tutti i file binari instrumentati della sessione.  
@@ -67,6 +68,6 @@ ms.lasthandoff: 04/19/2018
     >  Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (in genere, la directory \Team Tools\Performance Tools nella directory di installazione di [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]) e quindi digitare **vsinstr /DumpFuncs**  
   
 ## <a name="see-also"></a>Vedere anche  
- [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   
- [Procedura: Limitare la strumentazione a specifiche DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [Controllare la raccolta dati](../profiling/controlling-data-collection.md)   
+ [Procedura: Limitare la strumentazione a DLL specifiche](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [Procedura: Specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)

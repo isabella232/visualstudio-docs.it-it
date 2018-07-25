@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40e74dd8e7b2b83f6d4239e6b66c9852c6de604
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9368e752a2b3064c8f4b70bde6005fa5996d4f78
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575319"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945962"
 ---
-# <a name="generateapplicationmanifest-task"></a>Attività GenerateApplicationManifest
+# <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (attività)
 Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifesto nativo. Un manifesto nativo descrive un componente definendo un'identità univoca per il componente e identificando tutti gli assembly e i file che costituiscono il componente. Un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estende un manifesto nativo indicando il punto di ingresso dell'applicazione e specificando il livello di sicurezza dell'applicazione.  
   
 ## <a name="parameters"></a>Parametri  
@@ -40,14 +40,14 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/inclu
 |`AssemblyVersion`|Parametro `String` facoltativo.<br /><br /> Specifica il campo `Version` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non è specificato, viene usato il valore predefinito "1.0.0.0".|  
 |`ClrVersion`|Parametro `String` facoltativo.<br /><br /> Specifica la versione minima di Common Language Runtime (CLR) richiesta dall'applicazione. Il valore predefinito è la versione di CLR usata dal sistema di compilazione. Se l'attività genera un manifesto nativo, questo parametro viene ignorato.|  
 |`ConfigFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica l'elemento che contiene il file di configurazione dell'applicazione. Se l'attività genera un manifesto nativo, questo parametro viene ignorato.|  
-|`Dependencies`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un elenco di elementi che definisce il set di assembly dipendenti per il manifesto generato. Ogni elemento può essere ulteriormente descritto dai metadati dell'elemento per indicare informazioni aggiuntive sullo stato della distribuzione e il tipo di dipendenza. Per altre informazioni, vedere la sezione relativa ai metadati degli elementi riportata di seguito.|  
+|`Dependencies`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un elenco di elementi che definisce il set di assembly dipendenti per il manifesto generato. Ogni elemento può essere ulteriormente descritto dai metadati dell'elemento per indicare informazioni aggiuntive sullo stato della distribuzione e il tipo di dipendenza. Per altre informazioni, vedere [Metadati degli elementi](#item-metadata).|  
 |`Description`|Parametro `String` facoltativo.<br /><br /> Specifica la descrizione per l'applicazione o il componente.|  
 |`EntryPoint`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un singolo elemento che indica il punto di ingresso per l'assembly del manifesto generato.<br /><br /> Per un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], questo parametro specifica l'assembly avviato quando si esegue l'applicazione.|  
 |`ErrorReportUrl`|Parametro <xref:System.String?displayProperty=fullName> facoltativo.<br /><br /> Specifica l'URL della pagina Web visualizzata nelle finestre di dialogo durante le segnalazioni di errori nelle installazioni ClickOnce.|  
 |`FileAssociations`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un elenco di uno o più tipi di file associati al manifesto della distribuzione ClickOnce.<br /><br /> Le associazioni di file sono valide solo quando la destinazione è .NET Framework 3.5 o versione successiva.|  
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> I file da includere nel manifesto. Specificare il percorso completo per ogni file.|  
 |`HostInBrowser`|Parametro <xref:System.Boolean> facoltativo.<br /><br /> Se `true`, l'applicazione è ospitata in un browser (come le applicazioni Web Browser WPF).|  
-|`IconFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Indica il file dell'icona dell'applicazione. L'icona dell'applicazione è espressa nel manifesto dell'applicazione generato e viene usata per il menu Start e la finestra di dialogo Installazione applicazioni. Se questo input non viene specificato, viene usata un'icona predefinita. Se l'attività genera un manifesto nativo, questo parametro viene ignorato.|  
+|`IconFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Indica il file dell'icona dell'applicazione. L'icona dell'applicazione è espressa nel manifesto dell'applicazione generato e viene usata per il menu **Start** e la finestra di dialogo **Installazione applicazioni**. Se questo input non viene specificato, viene usata un'icona predefinita. Se l'attività genera un manifesto nativo, questo parametro viene ignorato.|  
 |`InputManifest`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Indica un documento XML di input da usare come base per il generatore del manifesto. In questo modo è possibile applicare nel manifesto di output dati strutturati, ad esempio definizioni della protezione dell'applicazione o definizioni del manifesto personalizzate. L'elemento radice del documento XML deve essere un nodo assembly nello spazio dei nomi asmv1.|  
 |`IsolatedComReferences`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i componenti COM da isolare nel manifesto generato. Questo parametro supporta la possibilità di isolare i componenti COM per la distribuzione di "COM senza registrazione". Funziona generando automaticamente un manifesto con definizioni di registrazione COM standard. Tuttavia, i componenti COM devono essere registrati nel computer di compilazione per garantire il funzionamento corretto.|  
 |`ManifestType`|Parametro `String` facoltativo.<br /><br /> Specifica il tipo di manifesto da generare. Per il parametro è possibile specificare i valori seguenti:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Se questo parametro non è specificato, l'attività usa il valore predefinito `ClickOnce`.|  
@@ -55,8 +55,8 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/inclu
 |`OSVersion`|Parametro `String` facoltativo.<br /><br /> Specifica la versione minima del sistema operativo richiesta dall'applicazione. Ad esempio, il valore "5.1.2600.0" indica che il sistema operativo è Windows XP. Se questo parametro viene omesso, viene usato il valore "4.10.0.0", che indica Windows 98 Second Edition, la versione minima di sistema operativo supportata per .NET Framework. Se l'attività genera un manifesto nativo, questo input viene ignorato.|  
 |`OutputManifest`|Parametro di ouput facoltativo <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Specifica il nome del file del manifesto di output generato. Se questo parametro non è specificato, il nome del file di output viene dedotto dall'identità del manifesto generato.|  
 |`Platform`|Parametro `String` facoltativo.<br /><br /> Specifica la piattaforma di destinazione dell'applicazione. Per il parametro è possibile specificare i valori seguenti:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Se questo parametro non è specificato, l'attività usa il valore predefinito `AnyCPU`.|  
-|`Product`|Parametro `String` facoltativo.<br /><br /> Specifica il nome dell'applicazione. Se questo parametro non è specificato, il nome viene dedotto dall'identità del manifesto generato. Questo nome viene usato per il collegamento nel menu Start e fa parte del nome visualizzato nella finestra di dialogo Installazione applicazioni.|  
-|`Publisher`|Parametro `String` facoltativo.<br /><br /> Specifica l'editore dell'applicazione. Se questo parametro non è specificato, il nome viene dedotto dall'utente registrato o dall'identità del manifesto generato. Questo nome viene usato per la cartella nel menu Start e fa parte del nome visualizzato nella finestra di dialogo Installazione applicazioni.|  
+|`Product`|Parametro `String` facoltativo.<br /><br /> Specifica il nome dell'applicazione. Se questo parametro non è specificato, il nome viene dedotto dall'identità del manifesto generato. Questo nome viene usato per il collegamento nel menu **Start** e fa parte del nome visualizzato nella finestra di dialogo **Installazione applicazioni**.|  
+|`Publisher`|Parametro `String` facoltativo.<br /><br /> Specifica l'editore dell'applicazione. Se questo parametro non è specificato, il nome viene dedotto dall'utente registrato o dall'identità del manifesto generato. Questo nome viene usato per la cartella nel menu **Start** e fa parte del nome visualizzato nella finestra di dialogo **Installazione applicazioni**.|  
 |`RequiresMinimumFramework35SP1`|Parametro `Boolean` facoltativo.<br /><br /> Se true, l'applicazione richiede .NET Framework 3.5 SP1 o una versione più recente.|  
 |`TargetCulture`|Parametro `String` facoltativo.<br /><br /> Identifica le impostazioni cultura dell'applicazione e specifica il campo `Language` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non viene specificato, si presuppone che l'applicazione sia indipendente dalle impostazioni cultura.|  
 |`TargetFrameworkMoniker`|Parametro `String` facoltativo.<br /><br /> Specifica il moniker del framework di destinazione.|  
@@ -315,9 +315,9 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/inclu
 ```  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene usata l'attività `GenerateApplicationManifest` per generare un manifesto nativo per l'applicazione Test.exe, facendo riferimento al componente nativo Alpha.dll e al componente COM isolato Bravo.dll.  
+ In questo esempio viene usata l'attività `GenerateApplicationManifest` per generare un manifesto nativo per l'applicazione *Test.exe*, facendo riferimento al componente nativo *Alpha.dll* e al componente COM isolato *Bravo.dll*.  
   
- L'esempio produce il manifesto Test.exe, che rende l'applicazione XCOPY distribuibile sfruttando COM senza registrazione.  
+ L'esempio produce l'oggetto *Test.exe.manifest*, che rende l'applicazione XCOPY distribuibile sfruttando COM senza registrazione.  
   
 > [!NOTE]
 >  Nell'esempio seguente tutti i file binari dell'applicazione sono precompilati in modo che sia possibile concentrarsi sugli aspetti della generazione del manifesto. L'esempio produce una distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] completamente funzionante.  
@@ -355,4 +355,4 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/inclu
  [Attività](../msbuild/msbuild-tasks.md)   
  [Attività GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)   
  [Attività SignFile](../msbuild/signfile-task.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

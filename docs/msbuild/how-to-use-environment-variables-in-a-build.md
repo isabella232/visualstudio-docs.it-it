@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156719cab40490b63ec945bf9c9600b3a92bda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c2f5afe7f58e85b1ddfc5671b635d4df7fad3bd3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572540"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078241"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: utilizzare le variabili di ambiente in una compilazione
+# <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: Usare le variabili di ambiente in una compilazione
 Quando si compilano i progetti, spesso è necessario impostare le opzioni di compilazione usando informazioni non incluse nel file di progetto o nei file che costituiscono il progetto. Queste informazioni sono in genere archiviate nelle variabili di ambiente.  
   
-## <a name="referencing-environment-variables"></a>Riferimento alle variabili di ambiente  
+## <a name="reference-environment-variables"></a>Fare riferimento alle variabili di ambiente  
  Tutte le variabili di ambiente sono disponibili per il file di progetto [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) come proprietà.  
   
 > [!NOTE]
@@ -40,7 +40,7 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>Per fornire un valore predefinito per una proprietà  
   
--   Usare un attributo `Condition` in una proprietà per impostare il valore solo se la proprietà non ha un valore. Il codice seguente, ad esempio, imposta la proprietà `ToolsPath` su c:\tools solo se la variabile di ambiente `ToolsPath` non è impostata:  
+-   Usare un attributo `Condition` in una proprietà per impostare il valore solo se la proprietà non ha un valore. Il codice seguente, ad esempio, imposta la proprietà `ToolsPath` su *c:\tools* solo se la variabile di ambiente `ToolsPath` non è impostata:  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   

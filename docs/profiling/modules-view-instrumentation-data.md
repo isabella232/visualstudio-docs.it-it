@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c7db34fb4913e3576f286aa7c34fe3cf80296ed
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c849971da7681322b15365bc0d59ce8b3529f508
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256110"
 ---
 # <a name="modules-view---instrumentation-data"></a>Visualizzazione Moduli - dati di strumentazione
 Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli presenti nei dati di profilatura. Le funzioni del modulo sono elencate sotto il nodo del modulo.  

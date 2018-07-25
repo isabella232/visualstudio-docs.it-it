@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b860caf26e15673044ede1a7790a1826c49b1fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1f5e5e73f7e4e9f32c4fc929b86da3e629a1eb62
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572791"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946680"
 ---
-# <a name="generatetrustinfo-task"></a>Attività GenerateTrustInfo
+# <a name="generatetrustinfo-task"></a>GenerateTrustInfo (attività)
 Genera l'attendibilità dell'applicazione dal manifesto di base e dai parametri `TargetZone` e `ExcludedPermissions`.  
   
 ## <a name="parameters"></a>Parametri  
@@ -44,4 +44,4 @@ Genera l'attendibilità dell'applicazione dal manifesto di base e dai parametri 
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

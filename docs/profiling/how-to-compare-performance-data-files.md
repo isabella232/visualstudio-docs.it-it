@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8404deaeeadd65a4e032266422520721a50a51
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eeb9f26091deaf995ef1221d39aa7264553f5c70
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815379"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Procedura: Confrontare i file di dati delle prestazioni
-È possibile confrontare i risultati di due diversi file di dati del profiler (con estensione vsp o vsps) creando un rapporto o una visualizzazione di confronto ("Diff"). Il confronto indica le differenze, le regressioni relative alle prestazioni e i miglioramenti riscontrati da una sessione di profilatura all'altra.  
+È possibile confrontare i risultati di due diversi file di dati del profiler, con estensione *vsp* o *vsps*, creando un report o una visualizzazione di confronto "Diff". Il confronto indica le differenze, le regressioni relative alle prestazioni e i miglioramenti riscontrati da una sessione di profilatura all'altra.  
   
  Il rapporto Diff presenta una visualizzazione tabella dei dati. La tabella riporta il delta, o le modifiche dalla linea di base. Questo valore viene calcolato determinando la differenza tra il valore precedente, il valore di base e il valore dei risultati della nuova analisi.  
   
@@ -32,9 +33,9 @@ ms.lasthandoff: 04/19/2018
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Per creare una visualizzazione file di confronto per un progetto in Esplora prestazioni  
   
-1.  In **Esplora prestazioni**, in **Rapporto**, selezionare il file di rapporto con estensione vsp o vsps da usare come valore di base per il confronto.  
+1.  In **Esplora prestazioni** in **Report** selezionare il file di report con estensione *vsp* o *vsps* da usare come valore di base per il confronto.  
   
-2.  Selezionare i file di rapporto con estensione vsp o vsps da confrontare.  
+2.  Selezionare i file di report con estensione *vsp* o *vsps* da confrontare.  
   
 3.  Fare clic con il pulsante destro del mouse su uno dei file selezionati e quindi fare clic su **Confronta rapporti**.  
   
@@ -54,6 +55,6 @@ ms.lasthandoff: 04/19/2018
   
 1.  Nel menu **Analizza** selezionare **Confronta rapporto di prestazioni**.  
   
-2.  Nella finestra **Selezionare i file di analisi per il confronto** individuare e selezionare il file di analisi **File di base** (con estensione vsp o vsps) e il **File di confronto** (con estensione vsp o vsps).  
+2.  Nella finestra **Selezionare i file di analisi per il confronto** individuare e selezionare il file di analisi **File baseline** con estensione *vsp* o *vsps* e il **File di confronto** con estensione *vsp* o *vsps*.  
   
 3.  Fare clic su **OK**.

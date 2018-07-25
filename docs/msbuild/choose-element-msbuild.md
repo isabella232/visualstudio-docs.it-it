@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc467b859e3a02282c6d6165dc263931900c5bc2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569521"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945769"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di elementi `PropertyGroup` da valutare.  
@@ -42,7 +42,7 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 
 ## <a name="syntax"></a>Sintassi  
 
-```  
+```xml  
 <Choose>  
     <When Condition="'StringA'=='StringB'">... </When>  
     <Otherwise>... </Otherwise>  
@@ -71,7 +71,7 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 |[When](../msbuild/when-element-msbuild.md)|Specifica un blocco di codice selezionabile dall'elemento `Choose`.|  
 
 ## <a name="remarks"></a>Note  
- Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Conditional Constructs](../msbuild/msbuild-conditional-constructs.md) (Costrutti condizionali).  
+ Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md).  
 
 ## <a name="example"></a>Esempio  
  Nel progetto riportato di seguito l'elemento `Choose` viene usato per selezionare il set di valori delle proprietà da impostare negli elementi `When`. Se gli attributi `Condition` di entrambi gli elementi `When` restituiscono `false`, vengono impostati i valori delle proprietà dell'elemento `Otherwise`.  
@@ -122,5 +122,5 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 ```  
 
 ## <a name="see-also"></a>Vedere anche  
- [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)   
+ [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md)   
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

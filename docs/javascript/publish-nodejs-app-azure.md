@@ -1,0 +1,157 @@
+---
+title: Pubblicare un'app Node.js nel Servizio app Linux
+description: È possibile pubblicare applicazioni Node.js create in Visual Studio nel Servizio app Linux in Azure
+ms.custom: ''
+ms.date: 06/10/2018
+ms.technology: vs-nodejs
+ms.topic: tutorial
+ms.devlang: javascript
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924771"
+---
+# <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Pubblicare un'applicazione Node.js in Azure (Servizio app Linux)
+
+Questa esercitazione illustra l'attività di creazione di una semplice applicazione Node.js e della pubblicazione in Azure.
+
+Nella pubblicazione di un'applicazione Node.js in Azure, sono disponibili diverse opzioni, tra cui il Servizio app di Azure, una macchina virtuale con un sistema operativo scelto dall'utente, il servizio contenitore di Azure (AKS) per la gestione con Kubernetes, un'istanza di contenitore con Docker e altro ancora. Per altre informazioni su ognuna di queste opzioni, vedere [Calcolo](https://azure.microsoft.com/product-categories/compute/).
+
+Per questa esercitazione, l'app viene distribuita nel [Servizio app Linux](/azure/app-service/containers/app-service-linux-intro).
+Il Servizio app Linux consente di distribuire un contenitore Docker di Linux per eseguire l'applicazione Node.js (anziché il Servizio app di Windows, che esegue le app Node.js su IIS in Windows).
+
+Questa esercitazione mostra come creare un'applicazione Node.js partendo da un template installato con gli strumenti Node.js per Visual Studio, eseguire il push del codice in un repository su GitHub, quindi effettuare il provisioning di un Servizio App Azure tramite il portale web di Azure in modo da poterlo distribuire a partire dal repository GitHub. Per usare la riga di comando per effettuare il provisioning del Servizio app di Azure ed eseguire il push del codice da un repository Git locale, vedere [Creare un'app Node.js](/azure/app-service/containers/quickstart-nodejs).
+
+In questa esercitazione si imparerà a:
+> [!div class="checklist"]
+> * Creare un progetto Node.js
+> * Creare un repository GitHub per il codice
+> * Creare un Servizio app Linux in Azure
+> * Distribuire in Azure
+
+## <a name="create-a-nodejs-project-to-run-in-azure"></a>Creare un progetto Node.js da eseguire in Azure
+
+1. Creare una nuova app rapida TypeScript tramite la finestra di dialogo **File** > **Nuovo progetto**.
+
+    ![Creare una nuova app rapida TypeScript](../javascript/media/azure-ts-express-app.png)
+
+2. Premere **F5** per compilare ed eseguire l'app e assicurarsi che tutto funzioni come previsto.
+
+3. Selezionare **File** > **Aggiungi al controllo del codice sorgente** per creare un repository Git locale per il progetto.
+
+    A questo punto, è in esecuzione e viene archiviata nel controllo del codice sorgente locale un'app Node.js che usa il framework Express ed è scritta in TypeScript.
+
+4. Modificare il progetto nel modo desiderato prima di procedere con i passaggi successivi.
+
+## <a name="push-code-from-visual-studio-to-github"></a>Eseguire il push del codice da Visual Studio a GitHub
+
+Per configurare GitHub per Visual Studio:
+
+1. Assicurarsi che sia installata l'[Estensione GitHub per Visual Studio](https://visualstudio.github.com/) e abilitata tramite la voce di menu **Strumenti** > **Estensioni e aggiornamenti**.
+
+2. Dal menu selezionare **Visualizza** > **Altre finestre** > **GitHub**.
+
+    Viene visualizzata la finestra di GitHub.
+
+3. Se non viene visualizzato il pulsante **Inizia** nella finestra di GitHub, fare clic su **File** > **Aggiungi al controllo del codice sorgente** e attendere che l'interfaccia utente si aggiorni.
+
+    ![Aprire la finestra di GitHub](../javascript/media/azure-github-get-started.png)
+
+4. Fare clic su **Inizia**.
+
+    Se si è già connessi a GitHub, viene visualizzata la casella degli strumenti simile alla figura seguente.
+
+    ![Impostazioni del repository GitHub](../javascript/media/azure-github-publish.png)
+
+5. Completare i campi del nuovo repository da pubblicare e quindi fare clic su **Pubblica**.
+
+    Dopo alcuni istanti, viene visualizzato un banner indicante "Il repository è stato creato".
+
+    La sezione successiva descrive come pubblicare da questo repository a un Servizio app di Azure in Linux.
+
+## <a name="create-a-linux-app-service-in-azure"></a>Creare un Servizio app Linux in Azure
+
+1. Accedere al [portale di Azure](https://portal.azure.com).
+
+2. Selezionare **Servizi app** dall'elenco dei servizi a sinistra, quindi fare clic su **Aggiungi**.
+
+3. Se necessario, creare un nuovo gruppo di risorse e piano del servizio app in cui includere la nuova app.
+
+4. Assicurarsi di impostare il **sistema operativo** su **Linux**e impostare lo **Stack di runtime** nella versione di Node.js necessaria, come illustrato nella figura.
+
+    ![Creare un Servizio app Linux](../javascript/media/azure-create-appservice-annotated.png)
+
+5. Fare clic su **Crea** per creare il servizio app.
+
+    La distribuzione potrebbe richiedere alcuni minuti.
+
+6. Dopo la distribuzione, passare alla sezione **Impostazioni applicazione** e aggiungere un'impostazione con un nome per `SCM_SCRIPT_GENERATOR_ARGS` e un valore per `--node`.
+
+    ![Impostazioni dell'applicazione](../javascript/media/azure-script-generator-args.png)
+
+    > [!WARNING]
+    > Il processo di distribuzione del Servizio app usa una serie di regole euristiche per determinare il tipo di applicazione da provare ed eseguire. Se viene rilevato un file .*sln* nel contenuto distribuito, processo presuppone che venga distribuito un progetto basato su MSBuild. L'impostazione aggiunta in precedenza sostituisce questa logica e specifica esplicitamente che si tratta di un'applicazione Node.js. Senza questa impostazione, l'applicazione Node.js non verrà distribuita se il file .*sln* fa parte del repository distribuito al Servizio app.
+
+7. Dopo la distribuzione, aprire il Servizio app e selezionare **Opzioni di distribuzione**.
+
+    ![Opzioni di distribuzione](../javascript/media/azure-deployment-options.png)
+
+8. Fare clic su **Scegli origine**, quindi scegliere **GitHub** e quindi configurare le autorizzazioni necessarie.
+
+    ![Autorizzazioni di GitHub](../javascript/media/azure-choose-source.png)
+
+9. Selezionare il repository e il ramo da cui eseguire la pubblicazione, quindi selezionare **OK**.
+
+    ![Pubblicare nel servizio app di Linux](../javascript/media/azure-repo-and-branch.png)
+
+    Durante la sincronizzazione viene visualizzata la pagina **Opzioni di distribuzione**.
+
+    ![Distribuzione e sincronizzazione con GitHub](../javascript/media/azure-deployment-options-sync.png)
+
+    Una volta che la sincronizzazione è stata completata, verrà visualizzato un segno di spunta.
+
+    Il sito esegue ora l'applicazione Node.js dal repository GitHub ed è accessibile all'URL creato per il Servizio app di Azure (per impostazione predefinita, il nome assegnato al Servizio app di Azure seguito da ".azurewebsites.net").
+
+## <a name="modify-your-app-and-push-changes"></a>Modificare le app ed eseguire il push delle modifiche
+
+1. Aggiungere il codice visualizzato di seguito in *app.ts* dopo la riga `app.use('/users', users);`. Verrà aggiunta un'API REST nell'URL */api*.
+
+    ```typescript
+    app.use('/api', (req, res, next) => {
+        res.json({"result": "success"});
+    });
+    ```
+
+2. Compilare il codice e provarlo in locale, quindi archiviarlo ed eseguirne il push in GitHub.
+
+    Nel portale di Azure, sono necessari alcuni minuti per rilevare le modifiche nel repository GitHub, quindi viene avviata una nuova sincronizzazione della distribuzione. Sarà simile alla figura riportata di seguito.
+
+    ![Modifica e sincronizzazione](../javascript/media/azure-changes-detected.png)
+
+3. Al termine della distribuzione, passare al sito pubblico e accodare */api* all'URL. Viene restituita la risposta JSON.
+
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+
+* Se il processo node.exe smette di funzionare (ovvero si verifica un'eccezione non gestita), il contenitore viene riavviato.
+* Durante l'avvio del contenitore, viene eseguito tramite varie regole euristiche che determinano come avviare il processo Node.js. È possibile visualizzare i dettagli dell'implementazione in [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
+* È possibile connettersi al contenitore in esecuzione tramite SSH per le indagini. Questa operazione viene eseguita agevolmente tramite il portale di Azure. Selezionare il Servizio app e scorrere verso il basso nell'elenco di strumenti fino a raggiungere **SSH** nella sezione **Strumenti di sviluppo**.
+* Per facilitare la risoluzione dei problemi, passare alle impostazioni dei **log di diagnostica** per il Servizio app e modificare l'impostazione **Registrazione del contenitore Docker** da **Off** a **File system**. I log vengono creati nel contenitore in */home/LogFiles/*_docker.log* e sono accessibili nella scheda tramite SSH o FTP (S).
+* È possibile assegnare un nome di dominio personalizzato al sito, anziché l'URL *.azurewebsites.net URL assegnato per impostazione predefinita. Per altre informazioni, vedere l'argomento [Eseguire il mapping di un dominio personalizzato](/azure/app-service/app-service-web-tutorial-custom-domain).
+* È consigliabile eseguire la distribuzione in un sito di gestione temporanea per altri test prima di passare in produzione. Per informazioni dettagliate su come configurare questa opzione, vedere l'argomento [Creare ambienti di staging](/azure/app-service/web-sites-staged-publishing).
+* Vedere le [Domande frequenti sul Servizio app in Linux ](/azure/app-service/containers/app-service-linux-faq) per le domande più comuni.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+In questa esercitazione si è appreso come creare un Servizio app di Linux e distribuire un'applicazione Node.js al servizio. Sono disponibili anche altre informazioni sul Servizio app di Linux.
+
+> [!div class="nextstepaction"]
+> [Servizio app di Linux](/azure/app-service/containers/app-service-linux-intro)

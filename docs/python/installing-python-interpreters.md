@@ -1,7 +1,7 @@
 ---
 title: Selezione e installazione di interpreti Python
 description: Elenco completo degli interpreti Python supportati in Visual Studio con brevi istruzioni su dove trovare i relativi programmi di installazione.
-ms.date: 02/20/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851851"
 ---
 # <a name="installing-python-interpreters"></a>Installazione degli interpreti Python
 
@@ -25,7 +26,7 @@ Per impostazione predefinita, l'installazione del carico di lavoro di sviluppo P
 
 Per **Visual Studio 2015 e versioni precedenti** è necessario installare manualmente uno degli interpreti.
 
-Visual Studio, in tutte le versioni, rileva automaticamente ogni interprete Python installato e il relativo ambiente controllando il Registro di sistema, come descritto in [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514 - Registrazione di Python nel Registro di sistema di Windows).
+Visual Studio, in tutte le versioni, rileva automaticamente ogni interprete Python installato e il relativo ambiente controllando il Registro di sistema secondo quanto descritto in [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514 - Registrazione di Python nel Registro di sistema di Windows). Le installazioni di Python in genere si trovano in `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32 bit) o in `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64 bit) e quindi all'interno di nodi per la distribuzione, ad esempio "PythonCore" (CPython) e "ContinuumAnalytics" (Anaconda).
 
 Se Visual Studio non rileva un ambiente installato, vedere [Identificare manualmente un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 

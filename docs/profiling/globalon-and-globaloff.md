@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fa7c836ba27202cff04b846c1e5d744ff0493f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238004"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
-Le opzioni **GlobalOff** e **GlobalOn** di VSPerfCmd.exe consentono di sospendere e riprendere la profilatura per tutti i processi e i thread in una sessione di profilatura da riga di comando.  
+Le opzioni *GlobalOff* e **GlobalOn** di **VSPerfCmd.exe** consentono di sospendere e riprendere la profilatura per tutti i processi e i thread in una sessione di profilatura da riga di comando.  
   
- È possibile specificare **GlobalOn** e **GlobalOff** come le uniche opzioni in una riga di comando di VSPerfCmd.exe oppure includerle in righe di comando che contengono anche le opzioni **Start**, **Launch** o **Attach**.  
+ È possibile specificare **GlobalOn** e **GlobalOff** come le uniche opzioni in una riga di comando di *VSPerfCmd.exe* oppure includerle in righe di comando che contengono anche le opzioni **Start**, **Launch** o **Attach**.  
   
  **GlobalOn** e **GlobalOff** possono anche essere combinate con le opzioni **ProcessOn**, **ProcessOff**, **ThreadOn** e  **ThreadOff**.  
   
@@ -84,6 +85,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>Vedere anche  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
+ [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0dd74f25ed5dc7f76b9d35ae3d2d9833f8e4ab8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255525"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Visualizzazione Moduli: dati di strumentazione di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di strumentazione raggruppa i dati temporali e di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. I dati di profilatura per le funzioni del modulo sono elencati sotto il nodo del modulo.  

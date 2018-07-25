@@ -14,20 +14,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7362f0a7495a75bc1d34d7f839bf0397787b6173
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1481d5a6f22606875b0173bf0d3060bb455f022
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257628"
 ---
 # <a name="multiple-categories-are-present"></a>Più categorie presenti
 La sezione selezionata contiene più di un tipo di attività per un intervallo di tempo specificato. Si noti che vengono visualizzati due colori, uno impilato verticalmente sull'altro. Questi colori rappresentano solo le prime due attività più frequenti nell'intervallo di tempo specificato. Le frequenze di queste due attività sono rappresentate in relazione l'una all'altra come terzi o metà della barra verticale. Per visualizzare ulteriori dettagli, provare fare zoom avanti in questa sezione della visualizzazione dei thread.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Tempo di esecuzione (visualizzazione Thread)](../profiling/execution-time-threads-view.md)   
+ [Tempo di esecuzione (Visualizzazione Thread)](../profiling/execution-time-threads-view.md)   
  [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md)   
  [Tempo di gestione della memoria](../profiling/memory-management-time.md)   
- [Tempo di precedenza](../profiling/preemption-time.md)   
- [Tempo di sospensione](../profiling/sleep-time.md)   
- [Tempo di sincronizzazione](../profiling/synchronization-time.md)   
- [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)
+ [Periodo di precedenza](../profiling/preemption-time.md)   
+ [Periodo di sospensione](../profiling/sleep-time.md)   
+ [Periodo di sincronizzazione](../profiling/synchronization-time.md)   
+ [Periodo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)

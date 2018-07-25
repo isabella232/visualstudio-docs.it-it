@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76024adcc36a0925345025ac628e79c6e8b1b7bc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f924089ef31e2b452419b107788357060a4c6bb6
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237991"
 ---
-# <a name="flag-markers"></a>Marcatori di flag
+# <a name="flag-markers"></a>Marcatori flag
 Un marcatore flag rappresenta un evento che si è verificato in un determinato istante di tempo all'interno di un'app. Un flag può rappresentare molti tipi di eventi dell'applicazione. Ad esempio, un flag può indicare quando è stato pianificato un particolare elemento di lavoro o quando è stata generata un'eccezione. Anche i runtime come Task Parallel Library possono generare flag.  
   
 ## <a name="flag-importance"></a>Importanza dei flag  

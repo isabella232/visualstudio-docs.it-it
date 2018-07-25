@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 88a5b14d98dc9459aa0d0f87a4ddba52de18ac06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747118"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924356"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procedura: Creare uno shader con colore di base
 
@@ -29,7 +29,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
 1.  Creare uno shader DGSL da utilizzare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
 
-2.  Eliminare il nodo **Colore punto**. Usare lo strumento **Seleziona** per selezionare il nodo **Colore punto** e scegliere **Modifica**, **Elimina** nella barra dei menu.
+2.  Eliminare il nodo **Colore punto**. Usare lo strumento **Seleziona** per selezionare il nodo **Colore punto** e scegliere **Modifica** > **Elimina** nella barra dei menu.
 
 3.  Aggiungere un nodo **Costante colore** al grafico. Nella **casella degli strumenti**, in **Costanti**, selezionare **Costante colore** e spostarlo nell'area di progettazione.
 

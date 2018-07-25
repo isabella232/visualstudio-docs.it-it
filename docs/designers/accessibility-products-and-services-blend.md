@@ -10,26 +10,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd65344520d003c138b7250bec7cd6f1cc9da79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923905"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890048"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Servizi e prodotti per l'accessibilità (Blend)
 Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i servizi offerti, in modo che tutti gli utenti siano in grado di usarli. Le sezioni seguenti forniscono informazioni sulle funzionalità, i prodotti e i servizi che rendono più accessibile Microsoft Windows per utenti con disabilità:
 
--   "Funzionalità di accessibilità di Windows"
+-   Funzionalità di accessibilità di Windows
 
--   "Documentazione in formati alternativi"
+-   Documentazione in formati alternativi
 
--   "Servizio clienti per persone con problemi di udito"
+-   Servizio clienti per persone con problemi di udito
 
--   "Per altre informazioni"
+-   Per altre informazioni
 
 > [!NOTE]
->  Le informazioni contenute in questa sezione sono valide solo per gli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, usare la scheda informativa fornita con il pacchetto software o visitare il [sito Web di accessibilità Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa sezione sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue, tra cui giapponese e francese.
+>  Le informazioni contenute in questa sezione sono valide solo per gli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, usare la scheda informativa acclusa al pacchetto software o visitare il [sito Web di accessibilità Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa sezione sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue, tra cui giapponese e francese.
 
 ## <a name="accessibility-features-of-windows"></a>Funzionalità di accessibilità di Windows
  Il sistema operativo Windows ha molte funzionalità di accessibilità integrate, che sono utili per gli utenti con difficoltà di digitazione o uso del mouse, affetti da cecità o ipovisione o affetti da sordità o problemi di udito. Le funzionalità vengono installate durante l'installazione. Per altre informazioni su queste funzionalità, vedere la Guida di Windows e il [sito di accessibilità Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).
@@ -65,7 +65,7 @@ Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i
 
  Poiché gli indirizzi Web possono cambiare, è possibile che il sito menzionato in questo documento non risulti disponibile.
 
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Servizio clienti per persone con problemi uditivi
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Servizio clienti per persone con problemi di udito
  Gli utenti con problemi di udito possono effettuare l'accesso ai servizi di supporto tecnico e clienti Microsoft tramite un servizio DTS (TTY/TDD):
 
  Per il servizio clienti, contattare Microsoft Sales Information Center al numero (800) 892-5234 dalle 6:30 alle 17:30 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi.

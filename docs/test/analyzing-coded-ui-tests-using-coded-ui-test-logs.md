@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e2301e1c0cf2a90f701e74445d22810e67785999
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750727"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233912"
 ---
-# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente utilizzando i log dei test codificati dell'interfaccia utente
+# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente
 
 I log dei test codificati dell'interfaccia utente filtrano e registrano informazioni importanti sulle esecuzioni dei test codificati dell'interfaccia utente. I log sono presentati in un formato che consente il debug rapido degli errori.
 
@@ -26,7 +26,7 @@ A seconda dello scenario in uso, abilitare la registrazione usando uno dei metod
 
 - La destinazione è .NET Framework versione 4 senza file *App.config* nel progetto di test:
 
-   1. Aprire il file **QTAgent32_40.exe.config**. Per impostazione predefinita, questo file si trova in *%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Aprire il file *QTAgent32_40.exe.config*. Per impostazione predefinita, questo file si trova in *%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
    2. Modificare il valore per EqtTraceLevel e impostarlo sul livello di log desiderato.
 
@@ -34,7 +34,7 @@ A seconda dello scenario in uso, abilitare la registrazione usando uno dei metod
 
 - La destinazione è .NET Framework versione 4.5 senza file *App.config* nel progetto di test:
 
-   1. Aprire il file **QTAgent32.exe.config**. Per impostazione predefinita, questo file si trova in *%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Aprire il file *QTAgent32.exe.config*. Per impostazione predefinita, questo file si trova in *%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
    2. Modificare il valore di EqtTraceLevel e impostarlo sul livello di log desiderato.
 
@@ -58,20 +58,20 @@ A seconda dello scenario in uso, abilitare la registrazione usando uno dei metod
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Passaggio 2: eseguire il test codificato dell'interfaccia utente e visualizzare il log
 
-Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato le modifiche appropriate al file **QTAgent32.exe.config**, viene visualizzato un collegamento di output nei risultati di Esplora test. I file di log vengono generati sia per i test con esito negativo, sia per quelli con esito positivo quando il livello di traccia è impostato su "dettagliato".
+Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato le modifiche appropriate al file *QTAgent32.exe.config*, viene visualizzato un collegamento di output nei risultati di **Esplora test**. I file di log vengono generati sia per i test con esito negativo, sia per quelli con esito positivo quando il livello di traccia è impostato su "dettagliato".
 
 1.  Dal menu **Test** scegliere **Finestre** e selezionare **Esplora test**.
 
 2.  Scegliere **Compila soluzione** dal menu **Compila**.
 
-3.  In Esplora test selezionare il test codificato dell'interfaccia utente che si vuole eseguire, aprire il relativo menu di scelta rapida e quindi scegliere **Esegui test selezionati**.
+3.  In **Esplora test** selezionare il test codificato dell'interfaccia utente che si vuole eseguire, aprire il relativo menu di scelta rapida e quindi scegliere **Esegui test selezionati**.
 
      I test automatizzati vengono eseguiti e segnalano se sono stati superati o se hanno avuto esito negativo.
 
     > [!TIP]
-    > Per visualizzare Esplora test, scegliere **Test** > **Finestre** e selezionare **Esplora test**.
+    > Per visualizzare **Esplora test**, scegliere **Test** > **Finestre** e selezionare **Esplora test**.
 
-4.  Scegliere il collegamento **Output** nei risultati di Esplora test.
+4.  Scegliere il collegamento **Output** nei risultati di **Esplora test**.
 
      ![Collegamento di output in Esplora test](../test/media/cuit_htmlactionlog1.png)
 

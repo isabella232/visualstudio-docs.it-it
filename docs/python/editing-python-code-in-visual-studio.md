@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 454d8b0294181329c8b1c4414d8f7c70127e661c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449140"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37175060"
 ---
 # <a name="editing-python-code"></a>Modifica del codice Python
 
@@ -224,4 +224,4 @@ Per passare alla definizione dell'identificatore, fare doppio clic su qualsiasi 
 
 - [Formattazione](formatting-python-code.md)
 - [Refactoring](refactoring-python-code.md)
-- [Rilevamento di errori con Lint](linting-python-code.md)
+- [Usare un linter](linting-python-code.md)

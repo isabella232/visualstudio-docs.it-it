@@ -12,17 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d17894025800acd9c8ab0736ebe92d7f790fc7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 394b40a304d2aba3b79c5878befe33a8a1aaf8b8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567447"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945559"
 ---
-# <a name="file-tracking"></a>Rilevamento di file
+# <a name="file-tracking"></a>Rilevamento file
 Il rilevamento di file registra le chiamate al file system di Windows per un processo e i relativi processi figlio. Chiamando le funzioni elencate di seguito, i programmi stabiliscono quando attivare e disattivare la registrazione e quale file di log usare.  
   
-## <a name="in-this-section"></a>In questa sezione  
  [EndTrackingContext](../msbuild/endtrackingcontext.md)  
  Interrompe il rilevamento nel contesto corrente.  
   

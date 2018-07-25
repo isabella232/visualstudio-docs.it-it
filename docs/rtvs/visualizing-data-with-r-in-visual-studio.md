@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235325"
 ---
-# <a name="creating-visual-data-plots-with-r"></a>Creazione di tracciati visivi dei dati con R
+# <a name="create-visual-data-plots-with-r"></a>Creare tracciati visivi dei dati con R
 
 Il tracciato è una parte fondamentale del flusso di lavoro di un data scientist. In R Tools per Visual Studio (RTVS), tutte le attività di tracciato coinvolgono una o più finestre dei tracciati, che sono progettate per migliorare la produttività con questa attività chiave.
 
@@ -44,7 +45,7 @@ In tutti i casi il ridimensionamento di una finestra dei tracciati esegue nuovam
 
 ## <a name="plot-window-commands"></a>Comandi della finestra dei tracciati
 
-La barra degli strumenti della finestra dei tracciati contiene i comandi applicabili, la maggior parte dei quali sono disponibili anche tramite il menu **R Tools > Tracciati**.
+La barra degli strumenti della finestra dei tracciati contiene i comandi applicabili, la maggior parte dei quali sono disponibili anche tramite il menu **R Tools** > **Tracciati**.
 
 | Button | Comando | Descrizione | 
 | --- | --- | --- |
@@ -63,17 +64,17 @@ La barra degli strumenti della finestra dei tracciati contiene i comandi applica
 
 Poiché gli esperti di dati spesso lavorano con molti tracciati provenienti da set di dati diversi, RTVS consente di creare il numero necessario di finestre dei tracciati indipendenti. Le finestre possono essere disposte come si preferisce all'interno del frame di Visual Studio o anche all'esterno del frame. (Vedere [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) per informazioni generali su ancoraggio e ridimensionamento delle finestre.)
 
-Creare una nuova finestra dei tracciati con il pulsante della barra degli strumenti o **R Tools > Tracciati > Nuova finestra dei tracciati**. La nuova finestra dei tracciati diventa la finestra *attiva*, in cui viene eseguito il rendering dei nuovi tracciati. Per modificare la finestra attiva, accedere a essa e selezionare il pulsante della barra degli strumenti Attiva finestra dei tracciati o **R Tools > Tracciati > Attiva finestra dei tracciati**.
+Creare una nuova finestra dei tracciati con il pulsante della barra degli strumenti o **R Tools** > **Tracciati** > **Nuova finestra dei tracciati**. La nuova finestra dei tracciati diventa la finestra *attiva*, in cui viene eseguito il rendering dei nuovi tracciati. Per modificare la finestra attiva, accedere a essa e selezionare il pulsante della barra degli strumenti **Attiva finestra dei tracciati** o **R Tools** > **Tracciati** > **Attiva finestra dei tracciati**.
 
 I tracciati sono anch'essi oggetti indipendenti, quindi è possibile copiarli o spostarli tra le finestre dei tracciati usando il mouse per trascinare la selezione oppure i comandi **Copia**, **Taglia** e **Incolla** disponibili nel menu **Modifica** e nel menu di scelta rapida visualizzato facendo clic con il pulsante destro del mouse.
 
-Il comportamento predefinito per il trascinamento della selezione è copia; per spostare, trascinare tenendo premuto MAIUSC.
+Il comportamento predefinito per il trascinamento della selezione è copia; per spostare, trascinare tenendo premuto **MAIUSC**.
 
 ## <a name="plot-history"></a>Cronologia dei tracciati
 
-I comandi dei tracciati vengono mantenuti nella cronologia dei tracciati per ogni finestra, assicurando il mantenimento di tutti i tracciati all'interno di una sessione. Per esplorare la cronologia, usare i pulsanti freccia sulla barra degli strumenti della finestra dei tracciati o CTRL+ALT+F11 e CTRL+ALT+F12. È anche possibile rimuovere singoli tracciati o cancellare tutti i tracciati dalla finestra usando i pulsanti della barra degli strumenti o i comandi del menu **R Tools > Tracciati**.
+I comandi dei tracciati vengono mantenuti nella cronologia dei tracciati per ogni finestra, assicurando il mantenimento di tutti i tracciati all'interno di una sessione. Per esplorare la cronologia, usare i pulsanti freccia nella barra degli strumenti della finestra dei tracciati o **CTRL**+**ALT**+**F11** e **CTRL**+**ALT**+**F12**. È anche possibile rimuovere singoli tracciati o cancellare tutti i tracciati dalla finestra usando i pulsanti della barra degli strumenti o i comandi di menu **R Tools** > **Tracciati**.
 
-Per visualizzare l'intera raccolta di tracciati, aprire la finestra cronologia dei tracciati usando il pulsante della barra degli strumenti o **R Tools > Tracciati > Finestra cronologia dei tracciati**.
+Per visualizzare l'intera raccolta di tracciati, aprire la finestra cronologia dei tracciati usando il pulsante della barra degli strumenti o **R Tools** > **Tracciati** > **Finestra cronologia dei tracciati**.
 Nella cronologia è disponibile un elenco di miniature per i tracciati che sono stati visualizzati in tale finestra, raggruppate in base alle diverse finestre dei tracciati (o ai dispositivi). Con i pulsanti dello zoom presenti sulla barra degli strumenti è possibile modificare la dimensione delle miniature.
 
 ![Finestra cronologia dei tracciati](media/plotting-plot-history-window.png)
@@ -82,7 +83,7 @@ Per aprire un tracciato nella finestra associata, fare doppio clic sul tracciato
 
 La durata della cronologia dei tracciati in tutte le finestre è associata alla durata della sessione di R interattiva. Se si reimposta la sessione di R o si esce e si riavvia Visual Studio, la cronologia dei tracciati viene reimpostata.
 
-## <a name="programmatically-manipulating-plot-windows"></a>Modifica a livello di programmazione delle finestre dei tracciati
+## <a name="programmatically-manipulate-plot-windows"></a>Modificare a livello di programmazione le finestre dei tracciati
 
 È possibile modificare a livello di programmazione le finestre dei tracciati dal codice R, usando i numeri dei dispositivi per identificare specifiche finestre dei tracciati. 
 

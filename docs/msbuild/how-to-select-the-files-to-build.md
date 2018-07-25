@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 651570ef83f5f87d96ed27538cc4f6ffd569d41f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570678"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079699"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Procedura: selezionare i file da compilare
+# <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
 Quando si compila un progetto che contiene molti file, è possibile elencare separatamente ogni file nel file di progetto oppure è possibile usare caratteri jolly per includere tutti i file contenuti in una directory o in un set nidificato di directory.  
   
-## <a name="specifying-inputs"></a>Specifica di input  
+## <a name="specify-inputs"></a>Specificare gli input  
  Gli elementi rappresentano gli input di una compilazione. Per altre informazioni sugli elementi, vedere [Elementi](../msbuild/msbuild-items.md).  
   
  I file di una compilazione devono essere inclusi in un elenco di elementi nel file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.  
@@ -35,7 +35,7 @@ Quando si compila un progetto che contiene molti file, è possibile elencare sep
   
      `<CSFile Include="form1.cs"/>`  
   
-     - oppure -  
+     oppure 
   
      `<VBFile Include="form1.vb"/>`  
   
@@ -48,44 +48,44 @@ Quando si compila un progetto che contiene molti file, è possibile elencare sep
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
-     - oppure -  
+     oppure 
   
      `<VBFile Include="form1.vb;form2.vb"/>`  
   
-## <a name="specifying-inputs-with-wildcards"></a>Specifica di input con caratteri jolly  
+## <a name="specify-inputs-with-wildcards"></a>Specificare gli input con caratteri jolly  
  È anche possibile usare caratteri jolly per includere in modo ricorsivo tutti i file o solo file specifici dalle sottodirectory come input per una compilazione. Per altre informazioni sui caratteri jolly, vedere [Elementi](../msbuild/msbuild-items.md)  
   
- Gli esempi seguenti si basano su un progetto che contiene file grafici nelle directory e sottodirectory seguenti. Il file di progetto si trova nella directory Project:  
+ Gli esempi seguenti si basano su un progetto che contiene file grafici nelle directory e sottodirectory seguenti. Il file di progetto si trova nella directory *Project*:  
   
- Project\Images\BestJpgs  
+ *Project\Images\BestJpgs*  
   
- Project\Images\ImgJpgs  
+ *Project\Images\ImgJpgs*  
   
- Project\Images\ImgJpgs\Img1  
+ *Project\Images\ImgJpgs\Img1*  
   
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Per includere tutti i file JPG della directory Images e delle relative sottodirectory  
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Per includere tutti i file con estensione *jpg* della directory *Images* e delle relative sottodirectory  
   
 -   Usare l'attributo `Include` seguente:  
   
      `Include="Images\**\*.jpg"`  
   
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>Per includere tutti i file JPG che iniziano con "img"  
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>Per includere tutti i file *jpg* che iniziano con *img*  
   
 -   Usare l'attributo `Include` seguente:  
   
      `Include="Images\**\img*.jpg"`  
   
-#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Per includere tutti i file delle directory, i cui nomi terminano con "jpgs"  
+#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Per includere tutti i file delle directory i cui nomi terminano con *jpgs*  
   
 -   Usare uno degli attributi `Include` seguenti:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
-     - oppure -  
+     oppure
   
      `Include="Images\**\*jpgs\*"`  
   
-## <a name="passing-items-to-a-task"></a>Passaggio di elementi a un'attività  
+## <a name="pass-items-to-a-task"></a>Passare elementi a un'attività  
  In un file di progetto, è possibile usare la notazione @() nelle attività per specificare un intero elenco di elementi come input per una compilazione. È possibile usare questa notazione se si elencano tutti i file separatamente, altrimenti usare i caratteri jolly.  
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Per usare tutti i file Visual C# o Visual Basic come input  
@@ -94,7 +94,7 @@ Quando si compila un progetto che contiene molti file, è possibile elencare sep
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
-     - oppure -  
+     oppure 
   
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
@@ -138,7 +138,7 @@ Quando si compila un progetto che contiene molti file, è possibile elencare sep
 ```  
   
 ## <a name="example"></a>Esempio  
- L'esempio di codice seguente usa un carattere jolly per includere tutti i file con estensione CS.  
+ L'esempio di codice seguente usa un carattere jolly per includere tutti i file con estensione *cs*.  
   
 ```xml  
 <Project DefaultTargets="Compile"  

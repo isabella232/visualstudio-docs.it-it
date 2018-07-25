@@ -9,12 +9,12 @@ description: Informazioni su come gli amministratori possono eliminare le assegn
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e759733738d35ea71cd8133179ccca1ee1037d22
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e345b5e46317f039cdb01afa50e158e7122ded21
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476456"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325414"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Eliminazione di assegnazioni nelle sottoscrizioni di Visual Studio
 
@@ -22,5 +22,4 @@ Quando un sottoscrittore non ha più necessità di usare una sottoscrizione di V
 1.  Fare clic sul nome del sottoscrittore che si desidera rimuovere. Per selezionare più sottoscrittori per la rimozione, tenere premuto il tasto **CTRL** e fare clic su ogni sottoscrittore che si desidera rimuovere, oppure premere **CTRL + A** per selezionare e rimuovere tutti i sottoscrittori. L'immagine seguente mostra tre sottoscrittori selezionati.
 2.  Per eliminare i sottoscrittori selezionati, fare clic su **Elimina**. 
 3.  Quando viene visualizzato il messaggio che chiede di confermare l'eliminazione, fare clic su **OK**. 
-
-    <img alt="Delete subscribers" src="_img\delete-license\delete-subscribers.png" style="border: 1px solid #CCCCCC" />
+    ![Eliminare i sottoscrittori](_img\delete-license\delete-subscribers.png)

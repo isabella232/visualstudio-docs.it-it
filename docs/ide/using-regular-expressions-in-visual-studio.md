@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425348"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945546"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -43,9 +43,9 @@ Ecco alcuni esempi:
 |-------------|----------------|-------------|
 |Trovare la corrispondenza con qualsiasi carattere singolo (tranne un'interruzione di riga)|.|`a.o` trova "aro" in "around" e "abo" in "about", ma non "acro" in "across".|
 |Trovare la corrispondenza con zero o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile)|*|`a*r` trova "r" in "rack", "ar" in "ark" e "aar" in "aardvark"|
-|Trovare la corrispondenza con qualsiasi carattere zero o più volte (carattere jolly *)|.*|c.*e trova "cke" in "racket", "comme" in "comment" e "code" in "code"|
-|Trovare la corrispondenza con una o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile)|+|`e.+e` trova "eede" in "feeder" ma non "ee".|
-|Trovare la corrispondenza con qualsiasi carattere una o più volte (carattere jolly ?)|.+|e.+e trova "eede" in "feeder" ma non "ee".|
+|Trovare la corrispondenza con qualsiasi carattere zero o più volte (carattere jolly *)|.*|`c.*e` trova "cke" in "racket", "comme" in "comment" e "code" in "code"|
+|Trovare la corrispondenza con una o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile)|+|`e.+d` trova "eed" in "feeder" ma non "ed".|
+|Trovare la corrispondenza con qualsiasi carattere una o più volte (carattere jolly ?)|.+|`e.+e` trova "eede" in "feeder" ma non "ee".|
 |Trovare la corrispondenza a zero o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile)|*?|`e.*?e` trova "ee" in "feeder" ma non "eede".|
 |Trovare la corrispondenza a una o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile)|+?|`e.+?e` trova "ente" e "erprise" in "enterprise", ma non l'intera parola "enterprise".|
 |Ancorare la stringa di corrispondenza all'inizio di una riga o stringa|^|`^car` trova la parola "car" solo quando viene visualizzata all'inizio di una riga.|
@@ -53,9 +53,9 @@ Ecco alcuni esempi:
 |Trovare la corrispondenza con qualsiasi carattere singolo in un set|[abc]|`b[abc]` trova "ba", "bb" e "bc".|
 |Trovare la corrispondenza con qualsiasi carattere in un intervallo di caratteri|[a-f]|`be[n-t]` trova "bet" in "between", "ben" in "beneath" e "bes" in "beside", ma non "below".|
 |Acquisire e numerare in modo implicito l'espressione racchiusa tra parentesi|()|`([a-z])X\1` trova "aXa" e "bXb", ma non "aXb". "\1" fa riferimento al primo gruppo di espressioni "[a-z]".|
-|Invalidare una corrispondenza|(?!abc)|`real (?!ity)` trova "real" in "realty" e "really", ma non in "reality". Trova anche il secondo "real" (ma non il primo "real") in "realityreal".|
+|Invalidare una corrispondenza|(?!abc)|`real(?!ity)` trova "real" in "realty" e "really", ma non in "reality". Trova anche il secondo "real" (ma non il primo "real") in "realityreal".|
 |Trovare la corrispondenza con qualsiasi carattere non presente in un determinato set di caratteri|[^abc]|`be[^n-t]` trova "bef" in "before", "beh" in "behind" e "bel" in "below", ma non "beneath".|
-|Trovare la corrispondenza dell'espressione prima o dopo il simbolo.|&#124;|`(sponge&#124;mud) bath` trova "sponge bath" e "mud bath".|
+|Trovare la corrispondenza dell'espressione prima o dopo il simbolo.|&#124;|`(sponge\|mud) bath` trova "sponge bath" e "mud bath".|
 |Includere il carattere che segue la barra rovesciata usando una sequenza di escape| \\ |`\^` trova il carattere ^.|
 |Specificare il numero di occorrenze del gruppo o del carattere precedente|{x}, dove x è il numero di occorrenze|`x(ab){2}x` trova "xababx" e `x(ab){2,3}x` trova "xababx" e "xabababx" ma non "xababababx".|
 |Trovare la corrispondenza con un testo in una classe di caratteri Unicode, dove "X" è il numero Unicode. Per altre informazioni sulle classi di caratteri Unicode, vedere<br /><br /> [Proprietà dei caratteri Unicode standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` trova "T" e "D" in "Thomas Doe".|
@@ -65,7 +65,7 @@ Ecco alcuni esempi:
 |Trovare la corrispondenza con qualsiasi spazio vuoto.|(?([^\r\n])\s)|`Public\sInterface` trova la frase "Public Interface".|
 |Trovare la corrispondenza con qualsiasi carattere numerico|\d|`\d` trova "3" in "3456", "2" in 23" e "1" in "1".|
 |Trovare la corrispondenza con un carattere Unicode|\uXXXX dove XXXX specifica il valore del carattere Unicode.|`\u0065` trova il carattere "e".|
-|Trovare la corrispondenza con un identificatore|\b(_\w+&#124;[\w-[0-9\_]]\w*)\b|Trova "type1" ma non &type1" o "#define".|
+|Trovare la corrispondenza con un identificatore|\b[\_\w-[0-9]][\_\w]*\b|Trova "type1" ma non "&type1" o "#define".|
 |Trovare la corrispondenza con una stringa tra virgolette|((\\".+?\\")&#124;('.+?'))|Trova qualsiasi stringa racchiusa tra virgolette singole o doppie.|
 |Trovare la corrispondenza con un numero esadecimale|\b0[xX]([0-9a-fA-F]\)\b|Trova "0xc67f", ma non "0xc67fc67f".|
 |Trovare la corrispondenza con numeri interi e decimali|\b[0-9]*\\.\*[0-9]+\b|Trova "1.333".|

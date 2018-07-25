@@ -9,16 +9,16 @@ description: Si possono verificare errori di accesso se si usano alias o nomi de
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477652"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327063"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Possibili errori di accesso alle sottoscrizioni di Visual Studio con alias
 
-A seconda del tipo di account usato per l'accesso, le sottoscrizioni disponibili potrebbero non essere visualizzate correttamente quando si accede a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una delle possibili cause è l'uso di "alias" o "nomi descrittivi" al posto dell'identità di accesso a cui è assegnata la sottoscrizione. Questa situazione viene chiamata "aliasing". 
+A seconda del tipo di account usato per l'accesso, le sottoscrizioni disponibili potrebbero non essere visualizzate correttamente quando si accede a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una delle possibili cause è l'uso di "alias" o "nomi descrittivi" al posto dell'identità di accesso a cui è assegnata la sottoscrizione. Questa situazione viene chiamata "aliasing".
 
 ## <a name="what-is-aliasing"></a>Il termine "aliasing"
 
@@ -28,7 +28,7 @@ L'aliasing può esistere quando un'azienda usa un servizio Microsoft Online per 
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Opzioni per l'amministratore
 
-Come amministratore esistono due opzioni per assicurarsi che l'esperienza di accesso dei sottoscrittori a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) sia positiva. 
+Come amministratore esistono due opzioni per assicurarsi che l'esperienza di accesso dei sottoscrittori a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) sia positiva.
 - La prima opzione (scelta consigliata) consiste nell'usare l'account della directory come indirizzo assegnato in Volume Licensing Service Center (VLSC). Fare riferimento alla sezione [Assegnazione dei sottoscrittori a un account della directory](#assigning-subscribers-to-a-directory-account) in questo articolo per altri dettagli.
 - La seconda opzione (meno sicura) prevede di consentire ai sottoscrittori di associare l'indirizzo di posta elettronica dell'account aziendale o dell'istituto di istruzione a un account personale (ovvero un account Microsoft o MSA). Fare riferimento alla sezione [Definizione di un account aziendale o dell'istituto di istruzione come account personale](#defining-a-work-or-school-account-as-a-personal-account ) in questo articolo per altri dettagli.
 
@@ -37,73 +37,57 @@ Come amministratore esistono due opzioni per assicurarsi che l'esperienza di acc
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Opzioni per i sottoscrittori
 
-Dal punto di vista dei sottoscrittori, è prima di tutto importante collaborare con l'amministratore per comprendere la configurazione delle identità della società.  Se necessario, l'amministratore potrebbe dover aggiornare le impostazioni dell'account dal portale di amministrazione o potrebbe essere necessario creare un account Microsoft (MSA) usando l'indirizzo di posta elettronica aziendale.  Prima di eseguire i passaggi per creare un account Microsoft, contattare l'amministratore per verificare se esistono criteri o problemi per questa azione.  Fare riferimento alla sezione [Definizione di un account aziendale o dell'istituto di istruzione come account personale](#defining-a-work-or-school-account-as-a-personal-account ) in questo articolo per altri dettagli.  
+Dal punto di vista dei sottoscrittori, è prima di tutto importante collaborare con l'amministratore per comprendere la configurazione delle identità della società.  Se necessario, l'amministratore potrebbe dover aggiornare le impostazioni dell'account dal portale di amministrazione o potrebbe essere necessario creare un account Microsoft (MSA) usando l'indirizzo di posta elettronica aziendale.  Prima di eseguire i passaggi per creare un account Microsoft, contattare l'amministratore per verificare se esistono criteri o problemi per questa azione.  Fare riferimento alla sezione [Definizione di un account aziendale o dell'istituto di istruzione come account personale](#defining-a-work-or-school-account-as-a-personal-account ) in questo articolo per altri dettagli.
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>Assegnazione dei sottoscrittori a un account della directory 
+## <a name="assigning-subscribers-to-a-directory-account"></a>Assegnazione dei sottoscrittori a un account della directory
 
 In tutti i casi, il gestore delle sottoscrizioni all'interno di Volume Licensing Service Center (VLSC) dovrà usare l'indirizzo della directory per i nuovi sottoscrittori oppure aggiornare l'indirizzo di posta elettronica per i sottoscrittori esistenti.  È importante sottolineare che l'uso dell'indirizzo della directory comporta che i nuovi sottoscrittori non riceveranno un messaggio di posta elettronica di benvenuto e l'amministratore dovrà notificare il sottoscrittore dell'assegnazione di una sottoscrizione.  Dopo avere eseguito la procedura di seguito, è possibile usare il [modello](#notifying-your-subscribers-with-directory-addresses) di messaggio di posta elettronica per informare i sottoscrittori e facilitare il processo di accesso.
 
 ### <a name="adding-new-subscribers"></a>Aggiunta di nuovi sottoscrittori
+
 Seguire questa procedura per aggiungere un nuovo sottoscrittore con un account della directory.
 
 1. Visitare [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e accedere.
 2. Dalla pagina di amministrazione di VLSC fare clic su **Sottoscrizioni** e quindi su **Sottoscrizioni di Visual Studio**.
 
-    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
+    ![Menu Sottoscrizioni](_img//vlsc/vlsc-subscriptions.png)
 
 3. Fare clic sul **numero di contratto** associato alla sottoscrizione di Visual Studio.
 
-    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
+    ![Selezionare il contratto](_img/vlsc/vlsc-agreement.png)
 
 4. Fare clic su **Assegna sottoscrizione**.
-
-    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
-
-
 5. Selezionare il **livello di sottoscrizione** desiderato.
-
-    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
-
 6. Verificare che siano disponibili sottoscrizioni da assegnare e fare clic su **Avanti**.
-7.  Immettere i dettagli del sottoscrittore e l'indirizzo della directory nel campo dell'indirizzo di posta elettronica, quindi fare clic su **Avanti**.
-
-    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
-        
+7. Immettere i dettagli del sottoscrittore e l'indirizzo della directory nel campo dell'indirizzo di posta elettronica, quindi fare clic su **Avanti**.
 8. Verificare le informazioni del sottoscrizione e fare clic su **Fine**.
-
 9. Inviare notifica al sottoscrittore del provisioning della sottoscrizione usando il [modello](#notifying-your-subscribers-with-directory-addresses) di seguito.
 
 ### <a name="updating-an-existing-subscriber"></a>Aggiornamento di un sottoscrittore esistente
+
 Seguire questa procedura per aggiornare un sottoscrittore esistente con un account della directory.
 
 1. Visitare [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e accedere.
-
 2. Dalle pagine di amministrazione di VLSC fare clic su **Sottoscrizioni** e quindi su **Sottoscrizioni di Visual Studio**.
-
 3. Fare clic sul **numero di contratto** associato alla sottoscrizione di Visual Studio.
-
 4. Fare clic sulla **freccia in giù** nella barra di ricerca.
-
 5. Cercare il sottoscrittore usando il campo dell'indirizzo di posta elettronica.
-
 6. Nell'elenco dei risultati fare clic sul **cognome** del sottoscrittore.
-
 7. Fare clic su **Modifica**.
-
 8. Modificare il campo Indirizzo di posta elettronica specificando l'indirizzo della directory desiderato e fare clic su **Salva**.
-
 9. Inviare notifica al sottoscrittore del provisioning della sottoscrizione usando il modello di messaggio di posta elettronica riportato di seguito.
 
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>Informare i sottoscrittori degli indirizzi della directory
+
 Dato che il messaggio di posta elettronica di benvenuto non raggiungerà correttamente il sottoscrittore, copiare e incollare il testo seguente in un messaggio di posta elettronica e inviarlo al sottoscrittore. Sostituire %PAROLA% con le informazioni appropriate per ogni sottoscrittore.
 
 ----------- Copiare il testo seguente (CTRL+C) -----------
 
 Salve %NOME SOTTOSCRITTORE%
 
-È stata assegnata una sottoscrizione di Visual Studio.  Visitare https://my.visualstudio.com e accedere con l'indirizzo %INDIRIZZO DIRECTORY% per attivare la sottoscrizione e accedervi. 
+È stata assegnata una sottoscrizione di Visual Studio.  Visitare https://my.visualstudio.com e accedere con l'indirizzo %INDIRIZZO DIRECTORY% per attivare la sottoscrizione e accedervi.
 
-Se si verificano problemi, contattare il team di supporto (https://www.visualstudio.com/subscriptions/support/).
+Se si verificano problemi, contattare il team di supporto (https://visualstudio.microsoft.com/subscriptions/support/).
 
 Nella parte inferiore della pagina selezionare gli elementi seguenti:
    - Account, sottoscrizioni e supporto di fatturazione
@@ -115,14 +99,16 @@ Nella parte inferiore della pagina selezionare gli elementi seguenti:
 
 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definizione di un account aziendale o dell'istituto di istruzione come account personale 
+## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definizione di un account aziendale o dell'istituto di istruzione come account personale
+
 Riutilizzare le istruzioni riportate nella sezione [Assegnazione dei sottoscrittori a un account della directory](#assigning-subscribers-to-a-directory-account) per aggiungere un nuovo utente o aggiornare l'indirizzo di posta elettronica di un utente in Volume Licensing Service Center (VLSC).  Nei casi in cui l'indirizzo di posta elettronica non è riconosciuto dalla directory, l'utente dovrà eseguire la procedura per creare un nuovo account per definire l'indirizzo di posta elettronica come account personale.  Per un breve periodo, il team delle sottoscrizioni di Visual Studio ha garantito un'esenzione per i criteri di identità definiti di seguito, ma sono in corso attività per sviluppare le funzionalità necessarie per rimuovere il criterio.
 
 > [!WARNING]
 > Microsoft non consiglia la combinazione di identità aziendale o dell'istituto di istruzione con identità personale.  Con questa azione, l'organizzazione perde la proprietà e il controllo dell'account e il dipendente può continuare ad accedere a prodotti o servizi specifici anche dopo aver lasciato la società.  Per altre informazioni, fare riferimento a questo [post di blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/) dal team di Microsoft Identity.
 
 ### <a name="defining-an-email-address-as-a-personal-account"></a>Definizione di un indirizzo di posta elettronica come account personale
-Dopo l'assegnazione di una sottoscrizione al sottoscrittore, quest'ultimo riceverà un messaggio di posta elettronica che richiede di visitare https://my.visualstudio.com per sfruttare i vantaggi della sottoscrizione.  Durante il tentativo di accesso, l'accesso alla sottoscrizione di Visual Studio avrà esito negativo con un errore indicante che l'account non è stato riconosciuto.  Prima di accedere all'esperienza https://my.visualstudio.com, chiedere al sottoscrittore di seguire queste istruzioni.  Se necessario, è possibile usare questo [modello](#notifying-your-subscribers-using-personal-accounts) per inviare notifica al sottoscrittore dopo aver assegnato una sottoscrizione.
+
+Dopo l'assegnazione di una sottoscrizione al sottoscrittore, quest'ultimo riceve un messaggio di posta elettronica che richiede di visitare [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per sfruttare i vantaggi della sottoscrizione.  Durante il tentativo di accesso, l'accesso alla sottoscrizione di Visual Studio avrà esito negativo con un errore indicante che l'account non è stato riconosciuto.  Prima di accedere all'esperienza [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), chiedere al sottoscrittore di seguire queste istruzioni.  Se necessario, è possibile usare questo [modello](#notifying-your-subscribers-using-personal-accounts) per inviare notifica al sottoscrittore dopo aver assegnato una sottoscrizione.
 
 1. Passare a https://my.visualstudio.com e fare clic su **Crea un account Microsoft**.
 
@@ -151,7 +137,7 @@ Ti è stata assegnata una sottoscrizione di Visual Studio ed è possibile che tu
 
 2. Fare clic su Crea un account Microsoft sul lato destro
 
-3. Compilare il modulo: 
+3. Compilare il modulo:
     - Usare l'indirizzo di posta elettronica aziendale nella casella someone@example.com
     - Immettere una password
     - Selezionare la preferenza per le promozioni
@@ -165,7 +151,7 @@ Ti è stata assegnata una sottoscrizione di Visual Studio ed è possibile che tu
 
 Nota: in occasione delle visite future di https://my.visualstudio.com, potrebbe essere richiesto di selezionare l'account che si vuole usare (ad esempio "Account aziendale o dell'istituto di istruzione" o "Account personale").  Dopo aver completato i passaggi precedenti, sarà necessario usare l'opzione "Account personale".
 
-Se si verificano problemi, contattare il team di supporto (https://www.visualstudio.com/subscriptions/support/).
+Se si verificano problemi, contattare il team di supporto (https://visualstudio.microsoft.com/subscriptions/support/).
 
 Nella parte inferiore della pagina selezionare gli elementi seguenti:
    - Account, sottoscrizioni e supporto di fatturazione

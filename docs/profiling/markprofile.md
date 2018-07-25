@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b26b89232b0a0c1c01c6e3c5fe5cbca8cdb3eb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238160"
 ---
 # <a name="markprofile"></a>MarkProfile
-Il metodo `MarkProfile` inserisce un contrassegno del profilo nel file con estensione vsp. La profilatura per il thread che contiene la funzione `MarkProfile` deve essere impostata su ON affinché il contrassegno possa essere inserito.  
+Il metodo `MarkProfile` inserisce un contrassegno del profilo nel file con estensione *vsp*. La profilatura per il thread che contiene la funzione `MarkProfile` deve essere impostata su ON affinché il contrassegno possa essere inserito.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
   
  Marcatore da inserire. Il marcatore deve essere maggiore o uguale a 0 (zero).  
   
-## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
+## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito  
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
 |Enumerator|Descrizione|  
@@ -46,22 +47,22 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|MARK_OK viene restituito per indicare l'esito positivo.|  
   
 ## <a name="remarks"></a>Note  
- Il valore del contrassegno viene inserito nel file con estensione vsp ogni volta che il codice viene eseguito se il thread che contiene la funzione MarkProfile è in corso di profilatura. È possibile chiamare MarkProfile più volte.  
+ Il valore del contrassegno viene inserito nel file con estensione *vsp* ogni volta che il codice viene eseguito se il thread che contiene la funzione MarkProfile è in corso di profilatura. È possibile chiamare MarkProfile più volte.  
   
- I contrassegni di profilatura hanno ambito globale. Ad esempio, un contrassegno di profilatura inserito in un thread può essere usato per contrassegnare l'inizio o alla fine di un segmento di dati in qualsiasi thread nel file vsp.  
+ I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno del profilo inserito in un solo thread può essere usato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread del file con estensione *vsp*.  
   
- Lo stato di profilatura per il thread che contiene la funzione del contrassegno di profilatura deve essere attivo quando vengono inseriti contrassegni e commenti con il comando Contrassegno o con le funzioni API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).  
+ Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno o con le funzioni API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).  
   
 > [!IMPORTANT]
 >  Il metodo MarkProfile deve essere usato solo con la profilatura con il metodo di strumentazione.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informazioni sulla funzione  
- Intestazione: dichiarata in VSPerf.h  
+ *Intestazione: dichiarata in VSPerf.h*  
   
- Libreria di importazione: VSPerf.lib  
+ Libreria di importazione: *VSPerf.lib*  
   
 ## <a name="example"></a>Esempio  
  Il codice seguente illustra la funzione MarkProfile.  

@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336032"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844765"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: Modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
 È possibile usare il metodo di strumentazione degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per raccogliere dati di intervallo dettagliati, dati relativi all'allocazione di memoria .NET e dati di durata degli oggetti .NET da applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico.  
   
- Questo argomento descrive come modificare il file di configurazione web.config per abilitare la strumentazione e la profilatura delle applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+ Questo argomento descrive come modificare il file di configurazione *web.config* per abilitare la strumentazione e la profilatura delle applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 > [!NOTE]
->  Non è necessario modificare il file web.config quando si usa il metodo di profilatura del campionamento o quando si vuole instrumentare un modulo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilato.  
+>  Non è necessario modificare il file *web.config* quando si usa il metodo di profilatura del campionamento o quando si vuole instrumentare un modulo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilato.  
   
- La radice di un file web.config è l'elemento **configuration**. Per instrumentare e profilare un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata in modo dinamico, è necessario aggiungere o modificare gli elementi seguenti:  
+ La radice di un file *web.config* è l'elemento **configuration**. Per instrumentare ed eseguire la profilatura di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata in modo dinamico, è necessario aggiungere o modificare gli elementi seguenti:  
   
 -   Elemento **configuration/runtime/assemblyBinding/dependentAssembly** che identifica l'assembly Microsoft.VisualStudio.Enterprise.ASPNetHelper che controlla il profilo. L'elemento **dependentAssembly** contiene due elementi figlio: **assemblyIdentity** e **codeBase**.  
   
@@ -33,7 +33,7 @@ ms.locfileid: "34336032"
   
 -   Due elementi **add** che identificano il percorso degli strumenti di profilatura aggiunti alla sezione **configuration/appSettings**.  
   
- Si consiglia di creare una copia del file web.config originale da usare per ripristinare la configurazione dell'applicazione.  
+ È consigliabile creare una copia del file *web.config* originale da usare per ripristinare la configurazione dell'applicazione.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Per aggiungere l'assembly ASPNetHelper come elemento configuration/runtime/assemblyBinding/dependentAssembly  
   
@@ -176,7 +176,7 @@ ms.locfileid: "34336032"
 ```  
   
 ## <a name="example"></a>Esempio  
- Di seguito è riportato un file web.config completo che consente la strumentazione e la profilatura di applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico. In questo esempio si presuppone che non vi siano state altre impostazioni nel file prima della modifica.  
+ Di seguito è riportato un file *web.config* completo che consente la strumentazione e la profilatura di applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico. In questo esempio si presuppone che non vi siano state altre impostazioni nel file prima della modifica.  
   
 ```xml  
 <?xml version="1.0"?>  

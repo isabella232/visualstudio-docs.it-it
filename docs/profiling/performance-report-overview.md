@@ -14,21 +14,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255993"
 ---
-# <a name="performance-report-overview"></a>Informazioni generali sul rapporto di prestazioni
+# <a name="performance-report-overview"></a>Panoramica del rapporto di prestazioni
 È possibile visualizzare i dati di profilatura di una sessione di prestazioni nella finestra **Rapporto di prestazioni** dell'ambiente di sviluppo integrato (IDE) di Visual Studio Team System Development Edition. I dati di profilatura vengono salvati in file con estensione vsp e vsps. Le finestre delle visualizzazioni dei rapporti consentono di visualizzare e analizzare i problemi relativi alle prestazioni delle applicazioni.  
   
 > [!CAUTION]
->  Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È necessario un controllo rigoroso della distribuzione dei dati, sia nel formato nativo con estensione vsp che nel formato di esportazione in un file con estensione csv o xml.  
+>  Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È necessario un controllo rigoroso della distribuzione dei dati, sia nel formato nativo con estensione *vsp* che nel formato di esportazione in un file con estensione *csv* o *xml*.  
 >   
->  Se durante la sessione di prestazioni vengono raccolti dati di traccia eventi, è possibile che nel file di log di traccia eventi (con estensione etl) siano visualizzate informazioni aggiuntive, come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.  
+>  Se durante la sessione di prestazioni vengono raccolti dati di traccia eventi, è possibile che nel file di log di traccia eventi (con estensione *etl*) siano visualizzate informazioni aggiuntive, come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.  
   
-## <a name="performance-report-window"></a>Finestra Rapporto di prestazioni  
+## <a name="performance-report-window"></a>Finestra Report prestazioni  
  La finestra Rapporto di prestazioni fornisce gli strumenti per visualizzare, gestire e filtrare i dati sulle prestazioni e include un controllo query personalizzabile.  
   
  Nella barra degli strumenti principale della finestra Rapporto di prestazioni è possibile accedere a ognuna delle visualizzazioni. Fare clic sulla freccia accanto all'elenco **Visualizzazione corrente** per visualizzare e selezionare le singole visualizzazioni disponibili.  
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/19/2018
  La visualizzazione Puntatore all'istruzione consente di visualizzare istruzioni specifiche eseguite durante la profilatura del campionamento. Per altre informazioni, vedere [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Visualizzazione Allocazione  
- La visualizzazione Allocazione è disponibile se è stata selezionata l'opzione **Raccogliere le informazioni sull'allocazione dell'oggetto .NET** nella pagina **Generale** della finestra di dialogo delle proprietà **Sessione prestazioni**. Vedere [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md). La visualizzazione Allocazione elenca gli oggetti .NET che sono stati allocati dall'applicazione o dal componente. Quando si espande una riga dell'oggetto, viene visualizzato un albero delle chiamate, che indica i percorsi di esecuzione usati per la creazione dell'oggetto. Nell'albero delle chiamate vengono anche visualizzate le informazioni sul numero delle allocazioni inclusive ed esclusive per ogni funzione. Nella visualizzazione Allocazione è anche possibile espandere ed evidenziare il percorso di esecuzione di una funzione che ha allocato il maggior numero di oggetti. Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sulla funzione e quindi scegliere **Espandi percorso critico**. Per altre informazioni, vedere [Raccolta di dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).  
+ La visualizzazione Allocazione è disponibile se è stata selezionata l'opzione **Raccogliere le informazioni sull'allocazione dell'oggetto .NET** nella pagina **Generale** della finestra di dialogo delle proprietà **Sessione prestazioni**. Vedere [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md). La visualizzazione Allocazione elenca gli oggetti .NET che sono stati allocati dall'applicazione o dal componente. Quando si espande una riga dell'oggetto, viene visualizzato un albero delle chiamate, che indica i percorsi di esecuzione usati per la creazione dell'oggetto. Nell'albero delle chiamate vengono anche visualizzate le informazioni sul numero delle allocazioni inclusive ed esclusive per ogni funzione. Nella visualizzazione Allocazione è anche possibile espandere ed evidenziare il percorso di esecuzione di una funzione che ha allocato il maggior numero di oggetti. Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sulla funzione e quindi scegliere **Espandi percorso critico**. Per altre informazioni, vedere [Raccogliere dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Visualizzazione Durata oggetti  
  La visualizzazione Durata oggetti è disponibile se sono state selezionate le opzioni **Raccogliere le informazioni sull'allocazione dell'oggetto .NET** e **Raccogliere anche le informazioni sulla durata dell'oggetto .NET** nella pagina **Generale** della finestra di dialogo delle proprietà **Sessione prestazioni**.  
@@ -95,5 +96,5 @@ ms.lasthandoff: 04/19/2018
 -   **Esporta**: salva il rapporto corrente come file in formato cvs o xml, con opzioni per salvare le diverse visualizzazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)   
- [Visualizzazioni dei rapporti di prestazioni](../profiling/performance-report-views.md)
+ [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)   
+ [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)

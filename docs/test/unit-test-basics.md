@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751517"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978372"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -28,11 +28,11 @@ Gli unit test offrono i risultati migliori in relazione alla qualità del codice
 
 Esplora test può eseguire anche framework per unit test di terze parti e open source che hanno implementato le interfacce dei componenti aggiuntivi di Esplora test. È possibile aggiungere molti di questi framework tramite Gestione estensioni di Visual Studio e la Visual Studio Gallery. Vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="getting-started"></a>Per iniziare
+## <a name="get-started"></a>Introduzione
 
 Per un'introduzione agli unit test che mostra direttamente la creazione di codice, vedere uno degli argomenti seguenti:
 
-- [Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Procedura dettagliata: Creare ed eseguire unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
 - [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
 
@@ -54,13 +54,13 @@ In questo argomento si usa lo sviluppo di un'applicazione fittizia denominata `M
 
  Il primo tentativo di progettazione del progetto `Accounts` include una classe per le informazioni di base su un conto, un'interfaccia che specifica la funzionalità comune di un tipo di conto, ad esempio il deposito e il prelievo di beni dal conto, e una classe derivata dall'interfaccia che rappresenta un conto corrente. Il progetto Accounts inizia con la creazione dei file di origine seguenti:
 
--   `AccountInfo.cs` definisce le informazioni di base per un conto.
+-   *AccountInfo.cs* definisce le informazioni di base per un conto.
 
--   `IAccount.cs` definisce un'interfaccia `IAccount` standard per un conto, inclusi metodi per il deposito e il prelievo di beni da un conto e per il recupero del saldo del conto.
+-   *IAccount.cs* definisce un'interfaccia `IAccount` standard per un conto, inclusi metodi per il deposito e il prelievo di beni da un conto e per il recupero del saldo del conto.
 
--   `CheckingAccount.cs` contiene la classe `CheckingAccount` che implementa l'interfaccia `IAccounts` per un conto corrente.
+-   *CheckingAccount.cs* contiene la classe `CheckingAccount` che implementa l'interfaccia `IAccounts` per un conto corrente.
 
-L'esperienza mostra che per un prelievo da un conto corrente è necessario essere sicuri che l'importo prelevato sia inferiore al saldo del conto. Viene quindi eseguito l'override del metodo `IAccount.Withdaw` in `CheckingAccount` con un metodo che verifica questa condizione. Il metodo può avere un aspetto analogo al seguente:
+L'esperienza mostra che per un prelievo da un conto corrente è necessario essere sicuri che l'importo prelevato sia inferiore al saldo del conto. Viene quindi eseguito l'override del metodo `IAccount.Withdraw` in `CheckingAccount` con un metodo che verifica questa condizione. Il metodo può avere un aspetto analogo al seguente:
 
 ```csharp
 public void Withdraw(double amount)
@@ -88,7 +88,7 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
 
      ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/createunittestsrightclick.png)
 
-2.  Fare clic su OK per accettare le impostazioni predefinite per creare gli unit test oppure modificare i valori usati per creare e denominare il progetto di unit test e gli unit test. È possibile selezionare il codice aggiunto per impostazione predefinita ai metodi di unit test.
+2.  Fare clic su **OK** per accettare le impostazioni predefinite per creare gli unit test oppure modificare i valori usati per creare e denominare il progetto di unit test e gli unit test. È possibile selezionare il codice aggiunto per impostazione predefinita ai metodi di unit test.
 
      ![Fare clic con il pulsante destro del mouse nell'editor e scegliere Crea unit test](../test/media/createunittestsdialog.png)
 
@@ -96,7 +96,7 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
 
      ![Vengono creati gli unit test](../test/media/createunittestsstubs.png)
 
-4.  Passare quindi alle informazioni seguenti per apprendere come [aggiungere codice ai metodi di unit test](#BKMK_Writing_your_tests) per rendere significativo lo unit test ed eventuali unit test aggiuntivi che è possibile aggiungere per testare accuratamente il codice.
+4.  Passare quindi alle informazioni seguenti per apprendere come [aggiungere codice ai metodi di unit test](#write-your-tests) per rendere significativo lo unit test ed eventuali unit test aggiuntivi che è possibile aggiungere per testare accuratamente il codice.
 
  **Creare il progetto di unit test e gli unit test manualmente**
 
@@ -104,9 +104,9 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
 
  **Per aggiungere un progetto unit test a una soluzione:**
 
-1.  Scegliere **Nuovo** dal menu **File** , quindi scegliere **Progetto** oppure premere CTRL+MAIUSC+N.
+1.  Nel menu **File** scegliere **Nuovo** e quindi **Progetto** oppure premere **CTRL**+**MAIUSC**+**N**.
 
-2.  Nella finestra di dialogo Nuovo progetto espandere il nodo **Installato** , scegliere il linguaggio da usare per il progetto di test, quindi scegliere **Test**.
+2.  Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Installato**, scegliere il linguaggio da usare per il progetto di test, quindi scegliere **Test**.
 
 3.  Per usare uno dei framework per unit test Microsoft, scegliere **Progetto unit test** dall'elenco di modelli di progetto. In alternativa, scegliere il modello di progetto del framework per unit test che si vuole usare. Per testare il progetto `Accounts` dell'esempio, assegnare al progetto il nome `AccountsTests`.
 
@@ -117,21 +117,21 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
 
      Per creare il riferimento al progetto di codice:
 
-    1.  Selezionare il progetto in Esplora soluzioni.
+    1.  Selezionare il progetto in **Esplora soluzioni**.
 
     2.  Scegliere **Aggiungi riferimento** dal menu **Progetto**.
 
-    3.  Nella finestra di dialogo Gestione riferimenti aprire il nodo **Soluzione** e scegliere **Progetti**. Selezionare il nome del progetto di codice e chiudere la finestra di dialogo.
+    3.  Nella finestra di dialogo **Gestione riferimenti** aprire il nodo **Soluzione** e scegliere **Progetti**. Selezionare il nome del progetto di codice e chiudere la finestra di dialogo.
 
  Ogni progetto unit test contiene classi che rispecchiano i nomi delle classe del progetto di codice. Nell'esempio il progetto `AccountsTests` contiene le classi seguenti:
 
--   La classe`AccountInfoTests` contiene i metodi di unit test per la classe `AccountInfo` nel progetto `BankAccount` .
+-   La classe `AccountInfoTests` contiene i metodi di unit test per la classe `AccountInfo` nel progetto `Accounts`.
 
 -   La classe`CheckingAccountTests` contiene i metodi di unit test per la classe `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Scrivere i test
 
-Il framework di unit test usato e Visual Studio IntelliSense forniranno indicazioni per la scrittura del codice per gli unit test per un progetto di codice. Per l'esecuzione in Esplora test, la maggior parte dei framework richiede l'aggiunta di attributi specifici per identificare i metodi di unit test. I framework offrono anche un modo, in genere tramite istruzioni Assert o attributi di metodo, per indicare se un metodo di test ha avuto esito positivo o negativo. Altri attributi identificano metodi di configurazione facoltativi che si trovano in corrispondenza dell'inizializzazione delle classi e prima di ogni metodo di test e dei metodi di disinstallazione eseguiti dopo ogni metodo di test e prima dell'eliminazione della classe.
+Il framework di unit test usato e Visual Studio IntelliSense forniranno indicazioni per la scrittura del codice per gli unit test per un progetto di codice. Per l'esecuzione in **Esplora test**, la maggior parte dei framework richiede l'aggiunta di attributi specifici per identificare i metodi di unit test. I framework offrono anche un modo, in genere tramite istruzioni Assert o attributi di metodo, per indicare se un metodo di test ha avuto esito positivo o negativo. Altri attributi identificano metodi di configurazione facoltativi che si trovano in corrispondenza dell'inizializzazione delle classi e prima di ogni metodo di test e dei metodi di disinstallazione eseguiti dopo ogni metodo di test e prima dell'eliminazione della classe.
 
 Lo schema AAA (Arrange, Act, Assert) è un modo comune per scrivere unit test per un metodo da testare.
 
@@ -175,9 +175,11 @@ Si noti che `Withdraw_ValidAmount_ChangesBalance` usa un'istruzione `Assert` esp
 
 Per altre informazioni sui framework per unit test Microsoft, vedere uno degli argomenti seguenti:
 
--   [Scrittura di unit test per .NET Framework con il framework unit test di Microsoft per codice gestito](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+-   [Eseguire unit test del codice](unit-test-your-code.md)
 
 -   [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)
+
+-   [Usare il framework MSTest negli unit test](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Impostare i timeout per gli unit test
 
@@ -203,21 +205,21 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
-Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
+Quando si compila il progetto di test, i test vengono visualizzati in **Esplora test**. Se **Esplora test** non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
 
  ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
 
- Durante l'esecuzione, la scrittura e la nuova esecuzione di test, la visualizzazione predefinita di Esplora test mostra i risultati in gruppi di **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile scegliere un'intestazione di gruppo per aprire la visualizzazione che mostra tutti i test disponibili nel gruppo.
+ Durante l'esecuzione, la scrittura e la nuova esecuzione di test, la visualizzazione predefinita di **Esplora test** mostra i risultati in gruppi di **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile scegliere un'intestazione di gruppo per aprire la visualizzazione che mostra tutti i test disponibili nel gruppo.
 
  È anche possibile filtrare i test in qualsiasi visualizzazione in base alla corrispondenza con il testo nella casella di ricerca a livello globale oppure tramite la selezione di uno dei filtri predefiniti. È possibile eseguire qualsiasi selezione di test in qualsiasi momento. I risultati di un'esecuzione dei test sono visualizzati immediatamente nella barra relativa alle operazioni riuscite/non riuscite nella parte superiore della finestra di Esplora test. I dettagli relativi al risultato di un metodo di test vengono visualizzati quando si seleziona il test.
 
 ### <a name="run-and-view-tests"></a>Eseguire e visualizzare i test
 
-La barra degli strumenti di Esplora test permette di individuare, organizzare ed eseguire i test a cui si è interessati.
+La barra degli strumenti di **Esplora test** consente di individuare, organizzare ed eseguire i test a cui si è interessati.
 
  ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute_toolbar.png)
 
- È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Dopo l'esecuzione di un insieme di test, un riepilogo dei test verrà visualizzato nella parte inferiore della finestra Esplora test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore. Scegliere **Apri Test** dal menu di scelta rapida (tastiera: F12) per visualizzare il codice sorgente per il test selezionato.
+ È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Dopo l'esecuzione di un set di test, nella parte inferiore della finestra **Esplora test** viene visualizzato il riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore. Scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
 
  Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
@@ -226,17 +228,17 @@ La barra degli strumenti di Esplora test permette di individuare, organizzare ed
 > [!WARNING]
 > L'esecuzione di unit test dopo ogni compilazione è supportata solo in Visual Studio Enterprise.
 
-|||
+|Button|Descrizione|
 |-|-|
-|![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di Esplora test.|
+|![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** nella barra degli strumenti di **Esplora test**.|
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrare e raggruppare l'elenco dei test
 
-Quando è disponibile un numero elevato di test, è possibile digitare nella casella di testo di Esplora test per filtrare l'elenco in base alla stringa specificata. È possibile limitare ulteriormente i risultati scegliendo uno dei filtri disponibili nell'elenco.
+In presenza di un numero elevato di test, è possibile digitare nella casella di testo di **Esplora test** per filtrare l'elenco in base alla stringa specificata. È possibile limitare ulteriormente i risultati scegliendo uno dei filtri disponibili nell'elenco.
 
  ![Categorie di filtri di ricerca](../test/media/ute_searchfilter.png)
 
-|||
+|Button|Descrizione|
 |-|-|
 |![Pulsante di raggruppamento di Team Explorer](../test/media/ute_groupby_btn.png)|Per raggruppare i test in base alla categoria, scegliere il pulsante **Raggruppa per**.|
 
@@ -246,14 +248,14 @@ Quando è disponibile un numero elevato di test, è possibile digitare nella cas
 
 **D: Come si esegue il debug degli unit test?**
 
-**R:** Usare Esplora test per avviare una sessione di debug per i test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
+**R:** Usare **Esplora test** per avviare una sessione di debug per i test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
 
 1.  Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.
 
     > [!NOTE]
     > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.
 
-2.  In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
+2.  In **Esplora test** selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 
 Altre informazioni dettagliate sul [debug di unit test](../debugger/debugging-in-visual-studio.md).
 
@@ -272,7 +274,7 @@ Altre informazioni dettagliate sul [debug di unit test](../debugger/debugging-in
 
  Ad esempio, si presupponga di aggiungere un metodo non necessario alla classe `CheckingAccount` con nome `AddIntegerHelper`. `AddIntegerHelper` aggiunge due numeri interi.
 
- Per creare un test basato sui dati per il metodo `AddIntegerHelper` , è necessario creare prima di tutto un database di Access con nome `AccountsTest.accdb` e una tabella con nome `AddIntegerHelperData`. La tabella `AddIntegerHelperData` definisce colonne per specificare il primo e il secondo operando dell'addizione e una colonna per specificare il risultato previsto. I valori appropriati vengono inseriti in alcune righe.
+ Per creare un test basato sui dati per il metodo `AddIntegerHelper` è necessario creare prima di tutto un database di Access denominato *AccountsTest.accdb* e una tabella denominata `AddIntegerHelperData`. La tabella `AddIntegerHelperData` definisce colonne per specificare il primo e il secondo operando dell'addizione e una colonna per specificare il risultato previsto. I valori appropriati vengono inseriti in alcune righe.
 
 ```csharp
 [DataSource(
@@ -291,7 +293,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 }
 ```
 
-Il metodo con attributi viene eseguito una volta per ogni riga della tabella. In caso di esito negativo di una delle iterazioni, Esplora test segnala un errore di test per il metodo. Nel riquadro dei dettagli dei risultati del test per il metodo è mostrato il metodo di stato relativo all'esito positivo/negativo per ogni riga di dati.
+Il metodo con attributi viene eseguito una volta per ogni riga della tabella. In caso di esito negativo di una delle iterazioni, **Esplora test** segnala un errore di test per il metodo. Nel riquadro dei dettagli dei risultati del test per il metodo è mostrato il metodo di stato relativo all'esito positivo/negativo per ogni riga di dati.
 
  Altre informazioni sugli [unit test basati sui dati](../test/how-to-create-a-data-driven-unit-test.md).
 
@@ -299,11 +301,11 @@ Il metodo con attributi viene eseguito una volta per ogni riga della tabella. In
 
  **R:** Sì. È possibile determinare la quantità di codice sottoposta effettivamente a test dagli unit test usando lo strumento per il code coverage di Visual Studio. Sono supportati i linguaggi nativi e gestiti e tutti i framework di unit test che possono essere eseguiti dal framework di unit test.
 
- È possibile eseguire il code coverage su test selezionati oppure su tutti i test in una soluzione. La finestra Risultati code coverage mostra la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
+ È possibile eseguire il code coverage su test selezionati oppure su tutti i test in una soluzione. La finestra **Risultati code coverage** visualizza la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
 
  Per eseguire il code coverage per i metodi di test in una soluzione, scegliere **Test** dal menu di Visual Studio e quindi scegliere **Analizza code coverage**.
 
- I risultati del code coverage sono visualizzati nella finestra Risultati code coverage.
+ I risultati del code coverage vengono visualizzati nella finestra **Risultati code coverage**.
 
  ![Risultati code coverage](../test/media/ute_codecoverageresults.png)
 

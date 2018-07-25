@@ -14,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31622887"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057996"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Creare un'installazione di rete di Visual Studio 2017
 
-Un amministratore aziendale crea solitamente un punto di installazione di rete per distribuire il software nelle workstation client. Visual Studio 2017 è stato progettato in modo da consentire di memorizzare nella cache i file per l'installazione iniziale insieme a tutti gli aggiornamenti di prodotto in una singola cartella. Questo processo è anche definito _creazione di un layout_. Tale operazione è stata effettuata per consentire alle workstation client di poter utilizzare il medesimo percorso di rete per gestire l'installazione anche se non è stato ancora eseguito l'aggiornamento alla versione più recente per la manutenzione.
+Un amministratore aziendale crea solitamente un punto di installazione di rete per distribuire il software nelle workstation client. Visual Studio 2017 è stato progettato in modo da consentire di memorizzare nella cache i file per l'installazione iniziale insieme a tutti gli aggiornamenti di prodotto in una singola cartella. Questo processo è anche definito _creazione di un layout_. Tale operazione è stata effettuata per consentire alle workstation client di poter utilizzare il medesimo percorso di rete per gestire l'installazione anche se non è stato ancora eseguito l’aggiornamento alla versione più recente per la manutenzione.
 
  > [!NOTE]
  > Se nell'azienda sono in uso più versioni di Visual Studio (ad esempio, Visual Studio Professional e Visual Studio Enterprise), è necessario creare una condivisione di installazione di rete separata per ogni edizione.
@@ -107,7 +107,7 @@ Ecco un esempio di come eseguire questa operazione quando si desidera aggiungere
 
 ```vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE```
 
-Se si desidera aggiornare un layout esistente a un layout completo, utilizzare l'opzione --all, come illustrato nell'esempio seguente.
+Se si desidera aggiornare un layout esistente a un layout completo, utilizzare l’opzione --all, come illustrato nell'esempio seguente.
 
 ```vs_enterprise.exe --layout c:\VS2017Layout --all```
 
@@ -119,9 +119,9 @@ Gli amministratori possono distribuire Visual Studio nelle workstation client ne
 - Gli amministratori possono installare il programma in modalità automatica eseguendo: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
 > [!TIP]
-> Se Visual Studio viene eseguito nell'ambito di un file batch, l'opzione `--wait` garantisce che il processo `vs_enterprise.exe` attenda il completamento dell'installazione prima di restituire un codice di uscita. Questa opzione è particolarmente utile se l'amministratore aziendale vuole eseguire altre azioni sull'installazione completa (ad esempio, [applicare un codice Product Key a un'installazione eseguita correttamente](automatically-apply-product-keys-when-deploying-visual-studio.md)) tuttavia occorre attendere il termine dell'installazione per gestire il corice di ritorno da tale installazione.  Se non si usa `--wait`, il processo `vs_enterprise.exe` verrà terminato prima del completamento dell'installazione e non verrà restituito un codice di uscita esatto che rappresenti lo stato dell'operazione di installazione.
+> Se Visual Studio viene eseguito nell'ambito di un file batch, l'opzione `--wait` garantisce che il processo `vs_enterprise.exe` attenda il completamento dell'installazione prima di restituire un codice di uscita. Questa opzione è particolarmente utile se l'amministratore aziendale vuole eseguire altre azioni sull'installazione completa (ad esempio, [applicare un codice Product Key a un'installazione eseguita correttamente](automatically-apply-product-keys-when-deploying-visual-studio.md)) tuttavia occorre attendere il termine dell’installazione per gestire il corice di ritorno da tale installazione.  Se non si usa `--wait`, il processo `vs_enterprise.exe` verrà terminato prima del completamento dell'installazione e non verrà restituito un codice di uscita esatto che rappresenti lo stato dell'operazione di installazione.
 
-Quando si installa da un layout, viene acquisito il contenuto che viene installato dal layout. Se tuttavia si seleziona un componente non presente nel layout, il componente viene acquisito da internet.  Se si desidera impedire che l'installazione di Visual Studio scarichi i contenuti mancanti nel layout, utilizzare l'opzione `--noWeb`.  Se viene usato `--noWeb` ma nel layout non è presente almeno uno dei contenuti selezionati per l'installazione, il programma di installazione ha esito negativo.  
+Quando si installa da un layout, viene acquisito il contenuto che viene installato dal layout. Se tuttavia si seleziona un componente non presente nel layout, il componente viene acquisito da internet.  Se si desidera impedire che l’installazione di Visual Studio scarichi i contenuti mancanti nel layout, utilizzare l’opzione `--noWeb`.  Se viene usato `--noWeb` ma nel layout non è presente almeno uno dei contenuti selezionati per l'installazione, il programma di installazione ha esito negativo.
 
 ### <a name="error-codes"></a>Codici di errore
 
@@ -140,7 +140,7 @@ Man mano che diventano disponibili nuovi aggiornamenti di prodotto, è possibile
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Come creare un layout per una versione precedente di Visual Studio 2017
 
 > [!NOTE]
-> I programmi di bootstrap di Visual Studio 2017 disponibili in[VisualStudio.com](http://www.visualstudio.com) scaricano e installano la versione più recente di Visual Studio 2017 ogni volta che vengono eseguiti. Se si scarica un programma di bootstrap di Visual Studio oggi e lo si esegue tra sei mesi, viene installata la versione di Visual Studio 2017 disponibile in quel momento. Se invece si crea un layout, l'installazione di Visual Studio dal layout installa la versione specifica di Visual Studio presente nel layout. Anche nel caso in cui sia disponibile online una versione più recente.
+> I programmi di bootstrap di Visual Studio 2017 disponibili in [visualstudio.microsoft.com](http://visualstudio.microsoft.com) scaricano e installano la versione più recente di Visual Studio 2017 ogni volta che vengono eseguiti. Se si scarica un programma di bootstrap di Visual Studio oggi e lo si esegue tra sei mesi, viene installata la versione di Visual Studio 2017 disponibile in quel momento. Se invece si crea un layout, l'installazione di Visual Studio dal layout installa la versione specifica di Visual Studio presente nel layout. Anche nel caso in cui sia disponibile online una versione più recente.
 
 Se è necessario creare un layout per una versione precedente di Visual Studio 2017, accedere all'indirizzo https://my.visualstudio.com e scaricare le versioni "corrette" dei programmi di bootstrap di Visual Studio 2017.
 
@@ -152,7 +152,7 @@ Sono disponibili anche altre opzioni per il supporto. Per un elenco, vedere la p
 
 ## <a name="get-support"></a>Supporto
 
-Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ecco alcune altre opzioni di supporto:
 

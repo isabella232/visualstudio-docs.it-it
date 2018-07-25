@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28eb8a61163ad731629e4d5e71d75d8c7b24ccf3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ba779446e3cfd450d50d71f21fd2e2434db158f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916855"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077049"
 ---
 # <a name="value-xelement-dynamic-property"></a>Valore (proprietà dinamica XElement)
 
@@ -23,11 +23,11 @@ Ottiene o imposta il contenuto dell'elemento.
 
 ## <a name="syntax"></a>Sintassi
 
-```
+```xaml
 elem.Value
 ```
 
-## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito
+## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito
 
 Oggetto <xref:System.String> che rappresenta il contenuto concatenato dell'elemento.
 

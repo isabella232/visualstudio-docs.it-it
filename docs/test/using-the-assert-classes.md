@@ -1,65 +1,54 @@
 ---
-title: Uso delle classi Assert per il testing unità in Visual Studio
-ms.date: 11/04/2016
+title: Classi e metodi Assert MSTest
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - Assert classes
-- Assert statements
-- unit tests, Assert statements
+- Assert methods
 - unit tests, Assert classes
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2d56477822fa2d965902d9442d47e2c3ab24d656
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91198e9b7048b384bf2095840abbd012042025ed
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844260"
 ---
-# <a name="use-the-assert-classes"></a>Usare le classi Assert
+# <a name="use-assert-classes-for-unit-testing"></a>Usare classi Assert per il testing unità
 
-Usare le classi Assert dello spazio dei nomi UnitTestingFramework per verificare funzionalità specifiche. Un metodo di unit test verifica il codice di un metodo nel codice di sviluppo, ma segnala la correttezza del comportamento del codice soltanto se sono state incluse istruzioni Assert.
+Usare le classi Assert dello spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.UnitTesting> per verificare funzionalità specifiche. Un metodo di unit test verifica il codice di un metodo nel codice dell'applicazione, ma segnala la correttezza del comportamento del codice soltanto se sono incluse istruzioni Assert.
 
-## <a name="kinds-of-asserts"></a>Tipi di asserzioni
+## <a name="kinds-of-asserts"></a>Tipi di classi Assert
 
- Lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.UnitTesting> rende disponibili diversi tipi di classi Assert:
+Lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.UnitTesting> rende disponibili diversi tipi di classi Assert.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
+Nel metodo di test è possibile chiamare tutti i metodi della classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>, ad esempio <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType>. La classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> offre numerosi metodi tra cui scegliere e molti dei metodi presentano vari overload.
 
- Nel metodo di test è possibile chiamare qualsiasi numero di metodi della classe Assert, ad esempio Assert.AreEqual(). La classe Assert offre numerosi metodi tra cui scegliere e molti di questi metodi presentano vari overload.
+### <a name="compare-strings-and-collections"></a>Confrontare stringhe e raccolte
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert>
+Usare la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert> per confrontare raccolte di oggetti o verificare lo stato di una raccolta.
 
- Usare la classe CollectionAssert per confrontare raccolte di oggetti e per verificare lo stato di una o più raccolte.
+Usare la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> per confrontare ed esaminare le stringhe. Questa classe contiene numerosi metodi utili, ad esempio <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=nameWithType>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Matches%2A?displayProperty=nameWithType> e <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.StartsWith%2A?displayProperty=nameWithType>.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert>
+### <a name="exceptions"></a>Eccezioni
 
- Usare la classe StringAssert per confrontare stringhe. Questa classe contiene numerosi metodi utili, ad esempio StringAssert.Contains, StringAssert.Matches e StringAssert.StartsWith.
+L'eccezione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> viene generata ogni volta che un test ha esito negativo. Un test ha esito negativo se raggiunge il timeout, genera un'eccezione imprevista o contiene un'istruzione Assert che produce un risultato **Non superato**.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException>
-
- L'eccezione AssertFailedException è generata ogni volta che un test non viene superato. Un test non viene superato se scade a causa di un timeout, genera un'eccezione imprevista o contiene un'istruzione Assert che produce un risultato Non superato.
-
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>
-
- L'eccezione AssertInconclusiveException è generata ogni volta che un test produce un risultato Senza risultati. In genere, un'istruzione Assert.Inconclusive viene aggiunta a un test su cui si sta lavorando per indicare che non è ancora pronto per l'esecuzione.
+L'eccezione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException> viene generata ogni volta che un test produce un risultato **Senza risultati**. In genere, un'istruzione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> viene aggiunta a un test su cui si sta lavorando per indicare che non è ancora pronto per l'esecuzione.
 
 > [!NOTE]
-> Una strategia alternativa è contrassegnare un test che non è pronto per l'esecuzione con l'attributo Ignore. Tuttavia, ciò comporta lo svantaggio che non è possibile generare facilmente un report sul numero di test rimasti da implementare.
+> Una strategia alternativa è contrassegnare un test che non è pronto per l'esecuzione usando l'attributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute>. Questa strategia ha però lo svantaggio di non poter consentire la semplice generazione di un report sul numero di test rimasti da implementare.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
+Se si scrive una nuova classe di eccezione Assert, ereditare la classe di base <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> in modo da semplificare l'identificazione dell'eccezione come errore di asserzione, anziché come eccezione imprevista generata dal codice di test o di produzione.
 
- Se si scrive una nuova classe di eccezione Assert, impostare tale classe in modo che erediti dalla classe di base UnitTestAssertException rende più semplice identificare l'eccezione come un errore di asserzione, anziché un'eccezione imprevista generata dal codice di test o di produzione.
-
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
-
- Decorare un metodo di test con l'attributo ExpectedExceptionAttribute quando si vuole che il metodo di test verifichi che un'eccezione di cui è prevista la generazione da parte di un metodo nel codice di sviluppo sia effettivamente generata nel metodo.
+Decorare un metodo di test con l'attributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> quando si vuole che il metodo di test verifichi che un'eccezione di cui è prevista la generazione da parte di un metodo nel codice dell'applicazione sia effettivamente generata.
 
 ## <a name="see-also"></a>Vedere anche
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)

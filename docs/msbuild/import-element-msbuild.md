@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ebe16f03c185437bc0ab79fe7c038748c5eb50
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570967"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077490"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa il contenuto di un file di progetto in un altro file di progetto.  
@@ -35,7 +35,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 
 ## <a name="syntax"></a>Sintassi  
 
-```  
+```xml  
 <Import Project="ProjectPath"  
     Condition="'String A'=='String B'" />  
 ```  
@@ -63,7 +63,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 ## <a name="remarks"></a>Note  
  Tramite l'elemento `Import` , è possibile riutilizzare codice comune a più file di progetto. Ciò semplifica la gestione del codice, poiché tutti gli aggiornamenti apportati al codice condiviso vengono propagati a tutti i progetti che lo importano.  
 
- Per convenzione i file di progetto condivisi importati vengono salvati come file con estensione .targets ma sono file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] standard. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] non impedisce di importare un progetto con una diversa estensione del nome del file, ma è consigliabile usare l'estensione .targets per coerenza.  
+ Per convenzione i file di progetto condivisi importati vengono salvati come file con estensione *targets* ma sono file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] standard. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] non impedisce di importare un progetto con una diversa estensione del nome del file, ma è consigliabile usare l'estensione *targets* per coerenza.  
 
  I percorsi relativi dei progetti importati vengono interpretati rispetto alla directory del progetto in cui sono importati. Pertanto, se uno stesso file di progetto viene importato in vari file di progetto che si trovano in posizioni diverse, i percorsi relativi nel file di progetto importato vengano interpretati in modo diverso per ogni progetto importato.  
 
@@ -76,12 +76,12 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 > [!NOTE]
 >  Mentre le istruzioni di importazione condizionale funzionano in MSBuilds per la riga di comando, non funzionano in MSBuild nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Le importazioni condizionali vengono valutate usando i valori di configurazione e piattaforma impostati quando viene caricato il progetto. Se vengono apportate modifiche successive che richiedono una rivalutazione delle istruzioni condizionali nel file di progetto, ad esempio la modifica della piattaforma, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rivaluta le condizioni sulle proprietà e gli elementi ma non sulle importazioni. Poiché non viene rivalutata la condizione di importazione, l'importazione viene ignorata.  
 >   
->  Per risolvere il problema, inserire le importazioni condizionali nei file .targets o inserire il codice in un blocco condizionale, ad esempio un blocco [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) .  
+>  Per risolvere il problema, inserire le importazioni condizionali nei file con estensione *targets* o inserire il codice in un blocco condizionale, ad esempio un blocco [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md).  
 
 ## <a name="wildcards"></a>Caratteri jolly  
  In .NET Framework 4, MSBuild consente l'uso di caratteri jolly nell'attributo Project. Quando sono presenti caratteri jolly, tutte le corrispondenze trovate vengono ordinate (per riproducibilità) e quindi vengono importate nell'ordine specificato come se l'ordine fosse stato impostato in modo esplicito.  
 
- Ciò è utile se si desidera offrire un punto di estensibilità in modo che un altro utente possa importare un file senza che sia necessario aggiungere esplicitamente il nome del file al file di importazione. A questo scopo, Microsoft.Common.Targets contiene la riga seguente all'inizio del file.  
+ Ciò è utile se si desidera offrire un punto di estensibilità in modo che un altro utente possa importare un file senza che sia necessario aggiungere esplicitamente il nome del file al file di importazione. A questo scopo, *Microsoft.Common.Targets* contiene la riga seguente all'inizio del file.  
 
 ```xml  
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>  

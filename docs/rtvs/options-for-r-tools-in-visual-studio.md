@@ -5,8 +5,6 @@ ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: reference
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
 - vs.toolsoptionspages.r_tools
@@ -17,26 +15,27 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5d284355af0d5ec406a5d355bf670a520d1a83e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a40ed2fd72862bde3494edd0c74aebcca6b55711
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37342751"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opzioni di R Tools per Visual Studio
 
-Le impostazioni sono accessibili dal menu **R Tools > Opzioni** o da **Strumenti > Opzioni** scorrendo fino a **R Tools**:
+Le impostazioni sono accessibili dal menu **R Tools** > **Opzioni** o da **Strumenti** > **Opzioni** scorrendo fino a **R Tools**:
 
   ![Finestra di dialogo Opzioni per R Tools](media/options-dialog.png)
 
 Le opzioni e le impostazioni specifiche di R sono accessibili tramite i metodi indicati di seguito. È necessario selezionare la casella **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo **Opzioni** per visualizzare tutte queste sezioni.
 
-- Opzioni di formattazione di codice (vedere [Opzioni editor](editing-r-code-in-visual-studio.md#editor-options): menu **Strumenti > Opzioni**, quindi selezionare **Editor di testo > R > Formattazione**
-- Opzioni di lint (vedere [Lint](linting-r-code.md)): menu **Strumenti > Opzioni**, quindi selezionare **Editor di testo > R > Lint**
-- Opzioni dell'editor avanzate ([descritte in questo articolo](#text-editor--r--advanced-options)): menu **Strumenti > Opzioni**, quindi selezionare **Editor di testo > R > Avanzate**
-- Opzioni di comportamento ([descritte in questo articolo](#r-tools--advanced-options)): menu **R Tools > Opzioni** oppure **Strumenti > Opzioni** e quindi scorrere fino a **R Tools**.
+- Opzioni di formattazione del codice (vedere [Opzioni editor](editing-r-code-in-visual-studio.md#editor-options): menu **Strumenti** > **Opzioni**, quindi selezionare **Editor di testo** > **R** > **Formattazione**
+- Opzioni linter (vedere [Lint](linting-r-code.md)): menu **Strumenti** > **Opzioni**, quindi selezionare **Editor di testo** > **R** > **Lint**
+- Opzioni dell'editor avanzate ([descritte in questo articolo](#text-editor--r--advanced-options)): menu **Strumenti** > **Opzioni**, quindi selezionare **Editor di testo** > **R** > **Avanzate**
+- Opzioni di comportamento ([descritte in questo articolo](#r-tools--advanced-options)): menu **R Tools** > **Opzioni** oppure **Strumenti** > **Opzioni** e quindi scorrere fino a **R Tools**.
 
-Il comando **R Tools > Impostazioni di Data Science** influisce anche su varie impostazioni diverse in Visual Studio in generale. Questo comando viene descritto nella sezione successiva.
+Il comando **R Tools** > **Impostazioni di Data Science** influisce in generale anche su diverse impostazioni in Visual Studio. Questo comando viene descritto nella sezione successiva.
 
 <a name="data-scientist-layout"></a>
 
@@ -46,7 +45,7 @@ La voce di menu **R Tools > Impostazioni di Data Science** configura l'IDE di Vi
 
 ![Layout delle finestre per data scientist in Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Per ripristinare le altre impostazioni di Visual Studio in un secondo momento, prima usare il comando **Strumenti > Importa/Esporta impostazioni**, selezionare **Esporta le impostazioni di ambiente selezionate** e specificare un nome di file. Per ripristinare tali impostazioni, usare lo stesso comando e selezionare **Importa le impostazioni di ambiente selezionate**. È possibile usare gli stessi comandi anche se si modifica il layout per i data scientist e si vuole tornarvi in un secondo momento, anziché usare direttamente il comando **Impostazioni di Data Science**.
+Per ripristinare le altre impostazioni di Visual Studio in un secondo momento, usare prima il comando **Strumenti** > **Importa/Esporta impostazioni**, quindi selezionare **Esporta le impostazioni di ambiente selezionate** e specificare un nome file. Per ripristinare tali impostazioni, usare lo stesso comando e selezionare **Importa le impostazioni di ambiente selezionate**. È possibile usare gli stessi comandi anche se si modifica il layout per i data scientist e si vuole tornarvi in un secondo momento, anziché usare direttamente il comando **Impostazioni di Data Science**.
 
 ## <a name="text-editor--r--advanced-options"></a>Editor di testo > R > Opzioni avanzate
 
@@ -60,7 +59,7 @@ Ogni opzione può essere impostata su On o Off per controllare il comportamento 
 
 ## <a name="r-tools--advanced-options"></a>R Tools > Opzioni avanzate
 
-Il comando di menu **R Tools > Opzioni** apre la sezione dedicata alle opzioni R della finestra di dialogo **Opzioni**:
+Il comando di menu **R Tools** > **Opzioni** apre la sezione dedicata alle opzioni R della finestra di dialogo **Opzioni**:
 
   ![Finestra di dialogo Opzioni per R Tools](media/options-dialog.png)
 
@@ -68,7 +67,7 @@ Le sezioni seguenti descrivono le diverse opzioni disponibili in questa pagina.
 
 ### <a name="debugging"></a>Debug
 
-Queste opzioni controllano la gestione dei valori in [Esplora variabili](variable-explorer.md) e all'interno di finestre del debugger quali Espressione di controllo e Variabili locali. Vedere [Debug](debugging-r-in-visual-studio.md).
+Queste opzioni controllano la gestione dei valori in [Esplora variabili](variable-explorer.md) e all'interno di finestre del debugger quali Espressioni di controllo e Variabili locali. Vedere [Debug di codice R](debugging-r-in-visual-studio.md).
 
 | Opzione | Valore predefinito | Descrizione |
 | --- | --- | --- |
@@ -85,16 +84,16 @@ Queste opzioni controllano la gestione dei valori in [Esplora variabili](variabl
 
 | Opzione | Valore predefinito | Descrizione |
 | --- | --- | --- |
-| Web browser F1 | `Internal` | Controlla la modalità di visualizzazione della Guida quando si sta cercando un termine tramite CTRL + F1. Se l'opzione è impostata su `Internal`, il rendering della Guida viene eseguito all'interno di una finestra degli strumenti in Visual Studio. Se l'opzione è impostata su `External`, la Guida viene visualizzata nel Web browser predefinito. |
-| Stringa di ricerca sul Web F1 | `R site:stackoverflow.com` | Controlla il modo in cui i termini di ricerca vengono passati al motore di ricerca quando si preme CTRL + F1 per un termine nell'editor. Per impostazione predefinita la stringa è `R site:stackoverflow.com`, che aggiunge `R` al termine di ricerca. `site:stackoverflow.com` è una direttiva che indica al motore di ricerca di definire come ambito della ricerca le pagine all'interno del dominio `stackoverflow.com`. |
-| Browser della Guida di R | `Automatic` | Controlla la modalità di visualizzazione della Guida quando si sta eseguendo una ricerca all'interno della documentazione di R tramite F1, `?` o `??`. Se l'opzione è impostata su `Automatic`, il rendering della Guida viene eseguito nella finestra appropriata. Ad esempio, la Guida di HTML viene visualizzata all'interno di una finestra degli strumenti di Visual Studio, mentre i PDF vengono visualizzati nel programma per PDF predefinito. Se l'opzione è impostata su `External`, il rendering della Guida viene effettuato nel Web browser predefinito. |
+| Web browser F1 | `Internal` | Controlla la modalità di visualizzazione della Guida quando si sta cercando un termine tramite **CTRL**+**F1**. Se l'opzione è impostata su `Internal`, il rendering della Guida viene eseguito all'interno di una finestra degli strumenti in Visual Studio. Se l'opzione è impostata su `External`, la Guida viene visualizzata nel Web browser predefinito. |
+| Stringa di ricerca sul Web F1 | `R site:stackoverflow.com` | Controlla il modo in cui i termini di ricerca vengono passati al motore di ricerca quando si preme **CTRL**+**F1** su un termine nell'editor. Per impostazione predefinita la stringa è `R site:stackoverflow.com`, che aggiunge `R` al termine di ricerca. `site:stackoverflow.com` è una direttiva che indica al motore di ricerca di definire come ambito della ricerca le pagine all'interno del dominio `stackoverflow.com`. |
+| Browser della Guida di R | `Automatic` | Controlla la modalità di visualizzazione della Guida quando si sta effettuando una ricerca all'interno della documentazione di R tramite **F1**, **?** o **??**. Se l'opzione è impostata su `Automatic`, il rendering della Guida viene eseguito nella finestra appropriata. Ad esempio, la Guida di HTML viene visualizzata all'interno di una finestra degli strumenti di Visual Studio, mentre i PDF vengono visualizzati nel programma per PDF predefinito. Se l'opzione è impostata su `External`, il rendering della Guida viene effettuato nel Web browser predefinito. |
 
 ### <a name="history"></a>Cronologia
 
 | Opzione | Valore predefinito | Descrizione |
 | --- | --- | --- |
-| Salva sempre cronologia | `True` | Controlla se RTVS deve scrivere la cronologia dei comandi in un file `.RHistory` nella directory di lavoro ogni volta che il progetto viene chiuso. Il salvataggio della cronologia avviene anche se non si salva il progetto prima di uscire. |
-| Ripristina filtro di ricerca | `True` | Determina se la finestra Cronologia può filtrare la cronologia dei comandi per visualizzare solo i comandi con sottostringhe corrispondenti al termine di filtro nella finestra di dialogo Cronologia di R. Questa impostazione determina se il filtro di ricerca della cronologia deve essere reimpostato ogni volta che si esegue un nuovo comando o se è necessario passare a un nuovo progetto, che attiva il caricamento di un file `.RHistory` diverso. L'impostazione predefinita, `True`, riduce al minimo i casi in cui si esegue un comando con un set di filtri e questo non compare nella cronologia. |
+| Salva sempre cronologia | `True` | Controlla se RTVS deve scrivere la cronologia dei comandi in un file con estensione *RHistory* nella directory di lavoro ogni volta che il progetto viene chiuso. Il salvataggio della cronologia avviene anche se non si salva il progetto prima di uscire. |
+| Ripristina filtro di ricerca | `True` | Determina se la finestra Cronologia può filtrare la cronologia dei comandi per visualizzare solo i comandi con sottostringhe corrispondenti al termine di filtro nella finestra di dialogo Cronologia di R. Questa impostazione determina se il filtro di ricerca della cronologia deve essere reimpostato ogni volta che si esegue un nuovo comando o si passa a un nuovo progetto, attivando il caricamento di un file con estensione *RHistory* diverso. L'impostazione predefinita, `True`, riduce al minimo i casi in cui si esegue un comando con un set di filtri e questo non compare nella cronologia. |
 | Usa selezione multilinea | `True` | Specifica se nella cronologia è possibile selezionare un'istruzione multilinea con un solo clic. Consente anche di spostarsi con le frecce su/giù nella finestra interattiva da un'istruzione all'altra anziché da una riga all'altra. |
 
 ### <a name="html"></a>HTML
@@ -119,15 +118,15 @@ Queste opzioni controllano la gestione dei valori in [Esplora variabili](variabl
 
 | Opzione | Valore predefinito | Descrizione |
 | --- | --- | --- |
-| Tabella codici | `(OS Default)` | Imposta la tabella codici (impostazioni locali) per R. Per impostazione predefinita vengono usate le impostazioni locali sottostanti del sistema operativo. | 
-| Mirror CRAN | `(Use .Rprofile)` | Imposta il mirror CRAN predefinito per l'installazione di pacchetti. L'impostazione predefinita, `Use .Rprofile`, rispetta le impostazioni mirror CRAN del file `.RProfile`. |
+| Tabella codici | `(OS Default)` | Imposta la tabella codici (impostazioni locali) per R. Per impostazione predefinita vengono usate le impostazioni locali sottostanti del sistema operativo. |
+| Mirror CRAN | `(Use .Rprofile)` | Imposta il mirror CRAN predefinito per l'installazione di pacchetti. L'impostazione predefinita, `Use .Rprofile`, rispetta le impostazioni mirror CRAN del file con estensione *RProfile*. |
 
 ### <a name="workspace"></a>Area di lavoro
 
 | Opzione | Valore predefinito | Descrizione |
 | --- | --- | --- |
-| Carica area di lavoro all'apertura di un progetto | `No` | L'impostazione `Yes` consente il caricamento dei dati della sessione dal file `.RData` nell'ambiente globale quando il progetto è aperto. |
+| Carica area di lavoro all'apertura di un progetto | `No` | L'impostazione `Yes` abilita il caricamento dei dati della sessione dal file con estensione *RData* nell'ambiente globale all'apertura del progetto. |
 | Richiedi salvataggio area di lavoro al ripristino | `Yes` | L'impostazione `No` disabilita la richiesta di salvataggio dell'area di lavoro quando si fa clic sul pulsante Reimposta nella finestra interattiva. |
-| Salva area di lavoro alla chiusura di un progetto | `No` | L'impostazione `Yes` consente il salvataggio dell'ambiente globale nel file `.RData` quando il progetto viene chiuso. |
-| Mostra finestra di conferma prima di passare da un'area di lavoro all'altra | `Yes` | L'impostazione `No` disabilita la richiesta di conferma all'utente prima del passaggio da un'area di lavoro all'altra. Vedere [Passaggio da un'area di lavoro all'altra](r-workspaces-in-visual-studio.md#switching-between-workspaces) |
+| Salva area di lavoro alla chiusura di un progetto | `No` | L'impostazione `Yes` abilita il salvataggio dell'ambiente globale nel file con estensione *RData* alla chiusura del progetto. |
+| Mostra finestra di conferma prima di passare da un'area di lavoro all'altra | `Yes` | L'impostazione `No` disabilita la richiesta di conferma all'utente prima del passaggio da un'area di lavoro all'altra. Vedere [Passare da un'area di lavoro all'altra](r-workspaces-in-visual-studio.md#switch-between-workspaces) |
 | Mostra indicatore del carico del computer | `False` | Controlla la visibilità dell'indicatore di carico di CPU/memoria/rete nella barra di stato. Dato che questo indicatore genera traffico di rete, può essere utile mantenerlo impostato su `False` negli scenari remoti a consumo. La modifica di questa opzione rende necessario il riavvio di Visual Studio. |

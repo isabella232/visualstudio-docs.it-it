@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1008f09e7511a26613b6cb5984513c1d049f61ba
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0e3da19339a73f1fcedc22a0121dc716e581ad39
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237627"
 ---
 # <a name="marks-view"></a>Visualizzazione Contrassegni
 Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campionamento inseriti nell'applicazione.  
@@ -45,6 +46,6 @@ Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campiona
  Quando vengono raccolti dati del contatore delle prestazioni di Windows, i valori vengono visualizzati in una colonna che ha il nome del contatore.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Panoramica del report sulle prestazioni](../profiling/performance-report-overview.md)   
+ [Panoramica del rapporto di prestazioni](../profiling/performance-report-overview.md)   
  [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; Finestra Controllo raccolta dati](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)

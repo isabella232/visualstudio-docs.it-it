@@ -1,7 +1,7 @@
 ---
 title: Portabilità, migrazione e aggiornamento dei progetti
 description: Un riferimento per il supporto in Visual Studio 2017 per i progetti creati nelle versioni precedenti di Visual Studio e modalità con cui Visual Studio determina la necessità di eseguire la migrazione di un progetto.
-ms.date: 03/14/2018
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,24 +19,23 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032203"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058750"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Riferimento alla migrazione e all'aggiornamento di un progetto per Visual Studio 2017
 
-Ogni nuova versione di Visual Studio in genere supporta la maggior parte dei tipi di progetti, file e altre risorse supportati in precedenza. Per lavorare con questi elementi [come si è sempre fatto](../ide/solutions-and-projects-in-visual-studio.md), purché non si dipenda da funzionalità più recenti, Visual Studio generalmente tenta di mantenere la compatibilità con le versioni precedenti ad esempio, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012. Vedere le [note sulla versione](https://www.visualstudio.com/vs/release-notes/) per le funzionalità specifiche di ogni versione.
+Ogni nuova versione di Visual Studio in genere supporta la maggior parte dei tipi di progetti, file e altre risorse supportati in precedenza. Per lavorare con questi elementi [come si è sempre fatto](../ide/solutions-and-projects-in-visual-studio.md), purché non si dipenda da funzionalità più recenti, Visual Studio generalmente tenta di mantenere la compatibilità con le versioni precedenti ad esempio, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012. Vedere le [note sulla versione](https://visualstudio.microsoft.com/vs/release-notes/) per le funzionalità specifiche di ogni versione.
 
-Varia periodicamente anche il supporto per alcuni tipi di progetto. Una versione più recente di Visual Studio può non supportare più alcuni progetti o richiedere che venga aggiornato un progetto in un modo che non lo rende più compatibile con le versioni precedenti. Per visualizzare lo stato corrente sui problemi di migrazione, consultare il [sito Visual Studio Developer Community](https://developercommunity.visualstudio.com).
+Varia periodicamente anche il supporto per alcuni tipi di progetto. È possibile che una versione più recente di Visual Studio non supporti più alcuni progetti o richieda l'aggiornamento di un progetto e di conseguenza non sia più compatibile con le versioni precedenti. Per visualizzare lo stato corrente sui problemi di migrazione, consultare il [sito Visual Studio Developer Community](https://developercommunity.visualstudio.com).
+
+Questo articolo offre informazioni dettagliate relative solo ai tipi di progetto di cui Visual Studio 2017 può eseguire la migrazione. L'articolo esclude i tipi di progetto che non sono più supportati in Visual Studio 2017 e di cui non è possibile eseguire la migrazione. L'articolo esclude anche i tipi di progetto supportati che non evidenziano problemi di migrazione. L'elenco è disponibile in [Selezione della piattaforma e compatibilità](/visualstudio/productinfo/vs2017-compatibility-vs).
 
 > [!Important]
-> L'articolo corrente contiene informazioni dettagliate relative solo ai tipi di progetto in Visual Studio 2017 che comportano la migrazione. Non include i tipi di progetto supportati che non evidenziano problemi di migrazione. Tale elenco è disponibile in [Selezione della piattaforma e compatibilità](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs). Si noti anche che alcuni tipi di progetto non sono più supportati in Visual Studio 2017. Non è quindi possibile eseguirne la migrazione.
-
-> [!Important]
-> Determinati tipi di progetto richiedono l'installazione dei carichi di lavoro appropriati usando il programma di installazione di Visual Studio. Se non è installato il carico di lavoro, Visual Studio non segnala un tipo di progetto sconosciuto o incompatibile. In tal caso, controllare le opzioni di installazione e riprovare. Anche in questo caso, vedere l'articolo [Selezione della piattaforma e compatibilità](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) per informazioni dettagliate sul supporto del progetto in Visual Studio 2017.
+> Determinati tipi di progetto richiedono l'installazione dei carichi di lavoro appropriati usando il programma di installazione di Visual Studio. Se non è installato il carico di lavoro, Visual Studio non segnala un tipo di progetto sconosciuto o incompatibile. In tal caso, controllare le opzioni di installazione e riprovare. Anche in questo caso, vedere l'articolo [Selezione della piattaforma e compatibilità](/visualstudio/productinfo/vs2017-compatibility-vs) per informazioni dettagliate sul supporto del progetto in Visual Studio 2017.
 
 ## <a name="project-types"></a>Tipi di progetto
 
@@ -76,7 +75,7 @@ Se non viene visualizzato un progetto o non viene elencato un tipo di file come 
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>In che modo Visual Studio decide di eseguire la migrazione di un progetto
 
-In ogni nuova versione di Visual Studio, in genere, si cerca di mantenere la compatibilità con le versioni precedenti, in modo che lo stesso progetto possa essere aperto, modificato e compilato in diverse versioni. Tuttavia, nel corso del tempo, esistono modifiche inevitabili che rendono alcuni tipi di progetto non più supportati. Vedere [Selezione della piattaforma e compatibilità](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) per i tipi di progetto supportati in Visual Studio 2017. In questi casi, una versione più recente di Visual Studio non caricherà il progetto e non offrirà un percorso di migrazione. Sarà infatti necessario mantenere il progetto in una versione precedente di Visual Studio che lo supporta.
+In ogni nuova versione di Visual Studio, in genere, si cerca di mantenere la compatibilità con le versioni precedenti, in modo che lo stesso progetto possa essere aperto, modificato e compilato in diverse versioni. Tuttavia, nel corso del tempo, esistono modifiche inevitabili che rendono alcuni tipi di progetto non più supportati. Vedere [Selezione della piattaforma e compatibilità](/visualstudio/productinfo/vs2017-compatibility-vs) per i tipi di progetto supportati in Visual Studio 2017. In questi casi, una versione più recente di Visual Studio non caricherà il progetto e non offrirà un percorso di migrazione. Sarà infatti necessario mantenere il progetto in una versione precedente di Visual Studio che lo supporta.
 
 In altri casi, si riuscirà ad aprire il progetto con la versione più recente di Visual Studio, ma sarà necessario aggiornare o migrare il progetto in un modo che potrebbe renderlo incompatibile con le versioni precedenti. In Visual Studio viene usata una serie di criteri per determinare se tale migrazione è necessaria:
 
@@ -92,7 +91,7 @@ Tuttavia, se tale compatibilità non può essere ottenuta, come accade con alcun
 
 Tali modifiche unidirezionali possono comportare la modifica della proprietà `ToolsVersion` nel file di progetto, che indica esattamente la versione di MSBuild che può trasformare il codice sorgente del progetto negli elementi eseguibili e distribuibili desiderati. Vale a dire, ciò che rende un progetto incompatibile con le versioni precedenti di Visual Studio non è la versione di *Visual Studio* in sé, bensì la versione di *MSBuild* come determinato dal valore `ToolsVersion`. Fintanto che la propria versione di Visual Studio contiene la toolchain di MSBuild che corrisponde al valore `ToolsVersion` di un progetto, Visual Studio può richiamare tale toolchain per compilare il progetto.
 
-Per mantenere la massima compatibilità con i progetti creati in versioni precedenti, Visual Studio 2017 include le toolchain di MSBuild necessarie per supportare `ToolsVersion` 15, 14, 12 e 4. I progetti che usano uno di questi valori `ToolsVersion` generalmente vengono compilati correttamente. Ancora una volta, l'esito dipende dal supporto o meno del tipo di progetto da parte di Visual Studio 2017, come descritto in [Selezione della piattaforma e compatibilità](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).
+Per mantenere la massima compatibilità con i progetti creati in versioni precedenti, Visual Studio 2017 include le toolchain di MSBuild necessarie per supportare `ToolsVersion` 15, 14, 12 e 4. I progetti che usano uno di questi valori `ToolsVersion` generalmente vengono compilati correttamente. Ancora una volta, l'esito dipende dal supporto o meno del tipo di progetto da parte di Visual Studio 2017, come descritto in [Selezione della piattaforma e compatibilità](/visualstudio/productinfo/vs2017-compatibility-vs).
 
 In questo contesto, si presenta naturalmente la questione se l'utente debba aggiornare manualmente il progetto o eseguire la migrazione a un valore `ToolsVersion` più recente. Tale cambiamento non è necessario e rischia di generare molti errori e avvisi che sarà necessario correggere per poter compilare di nuovo il progetto. Inoltre, se in Visual Studio il supporto per un valore `ToolsVersion` specifico viene eliminato in futuro, l'apertura del progetto attiverà il processo di migrazione del progetto precisamente perché il valore `ToolsVersion` deve essere modificato. In tal caso, il sottosistema per quel tipo di progetto specifico sa esattamente ciò che deve essere modificato e può apportare tali modifiche automaticamente come descritto in precedenza in questo articolo.
 

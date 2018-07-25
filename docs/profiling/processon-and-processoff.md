@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e33d17e5f54066b038da36611329bb7169de4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b94001c13f5925107cecb49936ecdc5fb1e73514
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254358"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
 I sottocomandi **ProcessOff** e **ProcessOn** di VSPerfCmd.exe sospendono e riprendono la profilatura per il processo specificato in una sessione di profilatura da riga di comando. **ProcessOff** arresta la profilatura del processo e **ProcessOn** avvia la profilatura del processo.  
@@ -40,7 +41,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
   
 #### <a name="parameters"></a>Parametri  
  `PID`  
- Identificatore integer del processo da avviare o arrestare. Gli ID di processo sono elencati nella scheda Processi di Gestione attività di Windows.  
+ Identificatore integer del processo da avviare o arrestare. Gli ID di processo sono elencati nella scheda **Processi** di Gestione attività Windows.  
   
 ## <a name="required-subcommands"></a>Sottocomandi obbligatori  
  nessuno  
@@ -80,6 +81,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>Vedere anche  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
+ [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

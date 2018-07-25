@@ -9,12 +9,12 @@ description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548723"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326998"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -102,8 +102,8 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo per faci
 3.  Nella scheda **Informazioni** è possibile modificare nome, indirizzo e-mail, paese/area geografica, immagine del profilo e preferenze di contatto.  Nella scheda **Preferenze** è possibile selezionare le impostazioni preferite per lingua, criteri di data e ora, fuso orario e tema dell'interfaccia utente.  
 4.  Dopo aver completato le modifiche, fare clic su **Salva**. 
 5.  Fare clic sul pulsante **Indietro** del browser per tornare alla pagina Vantaggi. 
+    ![Modifica delle informazioni sul profilo](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![Modifica delle informazioni sul profilo](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Collegamento della propria sottoscrizione alle sottoscrizioni Visual Studio Team Services o Azure esistenti
 Se si accede alla propria sottoscrizione tramite un account Microsoft personale (MSA) e si possiede una sottoscrizione che include Visual Studio Team Services o Microsoft Azure tramite un account aziendale o dell'istituto di istruzione gestito da Azure, è possibile collegare le due sottoscrizioni. Si tratta di un "account alternativo" che consente di continuare a usare l'account Microsoft per accedere alla sottoscrizione e avere contemporaneamente accesso alle risorse esistenti di Azure, VSTS o IDE associate agli account aziendali o dell'istituto di istruzione. 
@@ -111,12 +111,11 @@ Se si accede alla propria sottoscrizione tramite un account Microsoft personale 
 Anche se gli account usano lo stesso indirizzo e-mail, è necessario aggiungere il proprio account aziendale o dell'istituto di istruzione per usare i vantaggi in entrambi gli account. 
 
 Per aggiungere un account alternativo:
-1. Accedere al [Portale sottoscrittore](https://my.visualstudio.com) con il proprio account Microsoft (MSA).
+1. Accedere al [Portale sottoscrittore](https://my.visualstudio.com?wt.mc_id=o~msft~docs) con il proprio account Microsoft (MSA).
 2. Fare clic sulla scheda **Sottoscrizioni**.
 3. In **Collegamenti correlati** scegliere **Add alternate account** (Aggiungi account alternativo).
 4. Immettere l'indirizzo e-mail dell'account aziendale o dell'istituto di istruzione e fare clic su **Aggiungi**. 
-
-![Account alternativo](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![Account alternativo](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Dopo aver aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo in qualsiasi momento facendo clic sulla scheda **Sottoscrizioni** e scegliendo l'opzione appropriata nella sezione **Collegamenti correlati**.  
 

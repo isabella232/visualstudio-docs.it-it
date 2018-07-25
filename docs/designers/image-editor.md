@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9e57139c4b24ffc3b615a0794a26b8569339c003
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747310"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978463"
 ---
-# <a name="image-editor"></a>Editor di immagini
+# <a name="image-editor"></a>Editor immagini
 
 Questo documento descrive come usare l'editor di immagini di Visual Studio per visualizzare e modificare le risorse di trama e di immagine.
 
@@ -32,13 +32,13 @@ L'editor di immagini supporta questi formati di immagine:
 
 |Nome del formato|Estensione del file|
 |-----------------|-------------------------|
-|Portable Network Graphics|.png|
-|JPEG|.jpg, .jpeg, .jpe, .jfif|
-|Direct Draw Surface|.dds|
-|Graphics Interchange Format|.gif|
-|Bitmap|.bmp, .dib|
-|TIFF (Tagged Image File Format)|.tif, .tiff|
-|TGA (Targa)|.tga|
+|Portable Network Graphics|*.png*|
+|JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
+|Direct Draw Surface|*.dds*|
+|Graphics Interchange Format|*.gif*|
+|Bitmap|*.bmp*, *.dib*|
+|TIFF (Tagged Image File Format)|*.tif*, *.tiff*|
+|TGA (Targa)|*.tga*|
 
 ## <a name="get-started"></a>Introduzione
 
@@ -46,7 +46,7 @@ Questa sezione descrive come aggiungere un'immagine al progetto Visual Studio e 
 
 ### <a name="to-add-an-image-to-your-project"></a>Per aggiungere un'immagine al progetto
 
-1.  In **Esplora soluzioni** aprire il menu di scelta rapida del progetto a cui si vuole aggiungere l'immagine e quindi scegliere **Aggiungi**, **Nuovo elemento**.
+1.  In **Esplora soluzioni** aprire il menu di scelta rapida del progetto a cui si vuole aggiungere l'immagine e scegliere **Aggiungi** > **Nuovo elemento**.
 
 2.  Nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato**, selezionare **Grafica** e quindi selezionare un formato di file appropriato per l'immagine. Per informazioni su come scegliere un formato di file in base ai requisiti, vedere la sezione seguente.
 
@@ -103,8 +103,8 @@ Le barre degli strumenti dell'editor di immagini contengono i comandi che consen
 |**Selezione**|Consente di selezionare un'area rettangolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Selezione irregolare**|Consente di selezionare un'area non regolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Selezione con bacchetta magica**|Consente di selezionare un'area con colori simili all'interno di un'immagine. È possibile configurare la *tolleranza*, ovvero la differenza massima tra colori adiacenti entro la quale sono considerati simili, per includere una gamma più ampia o più ristretta di colori simili. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
-|**Panoramica**|Consente di spostare l'immagine in relazione alla cornice della finestra. In modalità **Panoramica** selezionare un punto nell'immagine e quindi spostarlo in qualsiasi direzione.<br /><br /> È possibile attivare temporaneamente la modalità **Panoramica** tenendo premuto CTRL.|
-|**Zoom**|Consente di visualizzare una quantità maggiore o minore di dettagli dell'immagine in relazione alla cornice della finestra. In modalità **Zoom** selezionare un punto nell'immagine e quindi spostarlo a destra o in basso per fare zoom avanti oppure a sinistra o in alto per fare zoom indietro.<br /><br /> È possibile ingrandire o ridurre tenendo premuto CTRL mentre si usa la rotellina del mouse oppure si preme il segno più (+) o il segno meno (-).|
+|**Panoramica**|Consente di spostare l'immagine in relazione alla cornice della finestra. In modalità **Panoramica** selezionare un punto nell'immagine e quindi spostarlo in qualsiasi direzione.<br /><br /> È possibile attivare temporaneamente la modalità **Panoramica** tenendo premuto **CTRL**.|
+|**Zoom**|Consente di visualizzare una quantità maggiore o minore di dettagli dell'immagine in relazione alla cornice della finestra. In modalità **Zoom** selezionare un punto nell'immagine e quindi spostarlo a destra o in basso per fare zoom avanti oppure a sinistra o in alto per fare zoom indietro.<br /><br /> È possibile ingrandire o ridurre tenendo premuto **CTRL** mentre si usa la rotellina del mouse oppure si preme il segno più (**+**) o il segno meno (**-**).|
 |**Zoom a dimensioni effettive**|Visualizza l'immagine usando una relazione 1:1 tra i pixel dell'immagine e quelli dello schermo.|
 |**Adatta alla finestra**|Visualizza l'immagine completa nella cornice della finestra.|
 |**Adatta larghezza**|Visualizza l'ampiezza completa dell'immagine nella cornice della finestra.|
@@ -114,7 +114,7 @@ Le barre degli strumenti dell'editor di immagini contengono i comandi che consen
 |**Canale rosso**<br /><br /> **Canale verde**<br /><br /> **Canale blu**<br /><br /> **Canale alfa**|Abilita o disabilita il canale di colore specifico. **Nota:** abilitando o disabilitando in modo sistematico i canali dei colori, è possibile isolare i problemi correlati a uno o più canali. Ad esempio, è possibile identificare la trasparenza alpha non corretta.|
 |**Sfondo**|Abilita o disabilita la visualizzazione dello sfondo attraverso parti trasparenti dell'immagine. È possibile configurare la modalità di visualizzazione dello sfondo scegliendo tra le opzioni seguenti:<br /><br /> **Scacchi**<br /> Usa il colore verde insieme al colore di sfondo specificato per visualizzare lo sfondo con un motivo a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.<br /><br /> Sfondo bianco<br /> Usa il bianco per visualizzare lo sfondo.<br /><br /> Sfondo nero<br /> Usa il nero per visualizzare lo sfondo.<br /><br /> Anima sfondo<br /> Esegue lentamente una panoramica del modello a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.|
 |**Proprietà**|Apre o chiude alternativamente la finestra **Proprietà**.|
-|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP (Windows Advanced Rasterization Platform) di Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato DDS per salvare l'immagine.<br /><br /> **Visualizzazione**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:** è possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|
+|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP (Windows Advanced Rasterization Platform) di Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato *DDS* per salvare l'immagine.<br /><br /> **Visualizza**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:** è possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|
 
  Di seguito è illustrata la barra degli strumenti **Editor di immagini**.
 
@@ -128,27 +128,27 @@ Le barre degli strumenti dell'editor di immagini contengono i comandi che consen
 |**Pennello**|Usa la selezione di colore attiva per disegnare un tratto con anti-aliasing. È possibile impostare il colore e lo spessore del tratto nella finestra **Proprietà**.|
 |**Aerografo**|Usa la selezione di colore attiva per disegnare un tratto con anti-aliasing che si fonde insieme all'immagine e diventa più saturo in funzione del tempo. È possibile impostare il colore e lo spessore del tratto nella finestra **Proprietà**.|
 |**Contagocce**|Imposta la selezione di colore attiva in base al colore del pixel selezionato.|
-|**Riempimento**|Usa la selezione di colore attiva per riempire un'area dell'immagine. L'area interessata include il pixel a cui viene applicato il riempimento e ogni pixel dello stesso colore che sia connesso al primo tramite pixel dello stesso colore. Se il riempimento viene applicato all'interno di una selezione attiva, l'area interessata sarà vincolata dalla selezione.<br /><br /> Per impostazione predefinita, la selezione di colore attiva viene fusa insieme all'area interessata dell'immagine in base alla componente alfa. Per usare la selezione di colore attiva per sovrascrivere l'area interessata, tenere premuto MAIUSC quando si usa lo strumento di riempimento.|
+|**Riempimento**|Usa la selezione di colore attiva per riempire un'area dell'immagine. L'area interessata include il pixel a cui viene applicato il riempimento e ogni pixel dello stesso colore che sia connesso al primo tramite pixel dello stesso colore. Se il riempimento viene applicato all'interno di una selezione attiva, l'area interessata sarà vincolata dalla selezione.<br /><br /> Per impostazione predefinita, la selezione di colore attiva viene fusa insieme all'area interessata dell'immagine in base alla componente alfa. Per usare la selezione di colore attiva per sovrascrivere l'area interessata, tenere premuto **MAIUSC** quando si usa lo strumento di riempimento.|
 |**Gomma**|Imposta i pixel sul colore completamente trasparente se l'immagine supporta un canale alfa. In caso contrario, imposta i pixel sul colore di sfondo attivo.|
-|**Linea**, **Rettangolo**, **Rettangolo arrotondato**, **Ellisse**|Disegna una forma in un'immagine. È possibile impostare il colore e lo spessore del contorno nella finestra **Proprietà**.<br /><br /> Per disegnare una primitiva con larghezza e altezza uguali, tenere premuto MAIUSC mentre si esegue il disegno.|
+|**Linea**, **Rettangolo**, **Rettangolo arrotondato**, **Ellisse**|Disegna una forma in un'immagine. È possibile impostare il colore e lo spessore del contorno nella finestra **Proprietà**.<br /><br /> Per disegnare una primitiva con larghezza e altezza uguali, tenere premuto **MAIUSC** mentre si esegue il disegno.|
 |**per**|Usa la selezione del colore di primo piano per tracciare del testo. Il colore di sfondo è determinato dalla selezione del colore di sfondo. Per uno sfondo trasparente, il valore alfa della selezione del colore di sfondo deve essere 0. Mentre l'area di testo è attiva, è possibile specificare se il testo viene tracciato usando un tratto con anti-aliasing ed è possibile impostare per il testo le opzioni **Valore**, **Tipo di carattere** e **Dimensione** e lo stile **Grassetto**, **Corsivo** o **Sottolineato** nella finestra **Proprietà**. Il contenuto e l'aspetto del testo viene completato quando l'area di testo non è più attiva.|
 |**Ruota**|Ruota l'immagine di 90 gradi in senso orario.|
 |**Taglia**|Taglia l'immagine in base alla selezione attiva.|
 
 ### <a name="work-with-mip-levels"></a>Uso dei livelli MIP
 
-Alcuni formati di immagine, ad esempio DDS (DirectDraw Surface), supportano i livelli MIP per il livello di dettaglio dell'area della trama. Per informazioni su come generare e usare i livelli MIP, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Alcuni formati di immagine, ad esempio *DDS* (DirectDraw Surface), supportano i livelli MIP per il livello di dettaglio dell'area della trama. Per informazioni su come generare e usare i livelli MIP, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Uso della trasparenza
 
-Alcuni formati di immagine, ad esempio DDS (DirectDraw Surface), supportano la trasparenza. Esistono diversi modi di usare la trasparenza, a seconda dello strumento in uso. Per specificare il livello di trasparenza per una selezione di colore, nella finestra **Proprietà** impostare la componente **A** (alpha) di tale selezione di colore. Ecco come i diversi tipi di strumenti controllano la modalità di applicazione della trasparenza:
+Alcuni formati di immagine, ad esempio *DDS* (DirectDraw Surface), supportano la trasparenza. Esistono diversi modi di usare la trasparenza, a seconda dello strumento in uso. Per specificare il livello di trasparenza per una selezione di colore, nella finestra **Proprietà** impostare la componente **A** (alpha) di tale selezione di colore. Ecco come i diversi tipi di strumenti controllano la modalità di applicazione della trasparenza:
 
 |Strumento|Descrizione|
 |----------|-----------------|
 |**Matita**, **Pennello**, **Aerografo**, **Linea**, **Rettangolo**, **Rettangolo arrotondato**, **Ellisse**, **Testo**|Per fondere la selezione di colore attiva insieme all'immagine, nella finestra **Proprietà** espandere il gruppo di proprietà **Canali** e impostare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.<br /><br /> Per disegnare usando la selezione di colore attiva e lasciare invariato il valore alfa dell'immagine, deselezionare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.|
-|**Riempimento**|Per fondere la selezione di colore attiva insieme all'immagine, basta scegliere l'area da riempire.<br /><br /> Per usare la selezione di colore attiva, incluso il valore del canale alfa, per sovrascrivere l'immagine, tenere premuto MAIUSC e scegliere l'area da riempire.|
+|**Riempimento**|Per fondere la selezione di colore attiva insieme all'immagine, basta scegliere l'area da riempire.<br /><br /> Per usare la selezione di colore attiva, incluso il valore del canale alfa, per sovrascrivere l'immagine, tenere premuto **MAIUSC** e scegliere l'area da riempire.|
 
-### <a name="image-properties"></a>Proprietà immagine
+### Proprietà dell'immagine<a name="ImageProperties"></a>
 
 È possibile usare la finestra **Proprietà** per specificare varie proprietà dell'immagine, ad esempio impostare le proprietà Larghezza e Altezza per ridimensionare l'immagine.
 
@@ -160,7 +160,7 @@ La tabella seguente descrive le proprietà dell'immagine.
 |Altezza|Altezza dell'immagine.|
 |Bit per pixel|Numero di bit che rappresentano ogni pixel. Il valore di questa proprietà dipende dal valore di **Formato colore** dell'immagine.|
 |Selezione trasparente|**True** per fondere il livello di selezione insieme all'immagine principale, in base al valore alfa del livello di selezione; in caso contrario, **False**. Questo elemento è disponibile solo per le immagini che supportano la componente alfa.|
-|Formato|Formato di colore dell'immagine. È possibile specificare un'ampia gamma di formati di colore, a seconda del formato dell'immagine. Il formato di colore definisce il numero e il tipo di canali di colore inclusi nell'immagine e anche la dimensione e la codifica di vari canali.|
+|Formato|Formato di colore dell'immagine. È possibile specificare diversi formati di colore, a seconda del formato dell'immagine. Il formato di colore definisce il numero e il tipo di canali di colore inclusi nell'immagine e anche la dimensione e la codifica di vari canali.|
 |Livello MIP|Livello MIP attivo. Questo elemento è disponibile solo per le trame con livelli MIP.|
 |Conteggio livelli MIP|Numero totale di livelli MIP nell'immagine. Questo elemento è disponibile solo per le trame con livelli MIP.|
 |Conteggio frame|Numero totale di frame nell'immagine. Questo elemento è disponibile solo per le immagini che supportano le matrici di trame.|
@@ -187,7 +187,7 @@ Le selezioni nell'editor di immagini definiscono le aree dell'immagine attive, o
 
 La maggior parte degli strumenti, come **Matita**, **Pennello**, **Aerografo**, **Riempimento**, **Gomma** e primitive 2D, e delle trasformazioni, come **Ruota**, **Taglia**, **Inverti colori**, **Capovolgi orizzontalmente** e **Capovolgi verticalmente**, è vincolata o definita dalla selezione attiva. Tuttavia, alcuni strumenti, come **Contagocce** e **Testo**, e trasformazioni, come **Genera MIP**, non sono interessati dalla selezione attiva e si comportano sempre come se l'intera immagine corrisponda alla selezione attiva.
 
-Mentre si seleziona un'area, è possibile tenere premuto MAIUSC per eseguire una selezione (quadrata) proporzionale. In caso contrario, la selezione non è vincolata.
+Mentre si seleziona un'area, è possibile tenere premuto **MAIUSC** per eseguire una selezione (quadrata) proporzionale. In caso contrario, la selezione non è vincolata.
 
 ##### <a name="resize-selections"></a>Ridimensionamento delle selezioni
 
@@ -204,13 +204,13 @@ Di seguito sono elencate le combinazioni di tasti di modifica valide:
 |CTRL|Shift|ALT|Descrizione|
 |----------|-----------|---------|-----------------|
 ||||Ridimensiona il contenuto dell'area selezionata.|
-||Shift||Ridimensiona in modo proporzionale il contenuto dell'area selezionata.|
-|||ALT|Ridimensiona l'area selezionata. In questo modo viene definita una nuova area di selezione.|
-||Shift|ALT|Ridimensiona in modo proporzionale l'area selezionata. In questo modo viene definita una nuova area di selezione.|
-|CTRL|||Copia e quindi ridimensiona il contenuto dell'area selezionata.|
-|CTRL|Shift||Copia e quindi ridimensiona in modo proporzionale il contenuto dell'area selezionata.|
+||**MAIUSC**||Ridimensiona in modo proporzionale il contenuto dell'area selezionata.|
+|||**ALT**|Ridimensiona l'area selezionata. In questo modo viene definita una nuova area di selezione.|
+||**MAIUSC**|**ALT**|Ridimensiona in modo proporzionale l'area selezionata. In questo modo viene definita una nuova area di selezione.|
+|**CTRL**|||Copia e quindi ridimensiona il contenuto dell'area selezionata.|
+|**CTRL**|**MAIUSC**||Copia e quindi ridimensiona in modo proporzionale il contenuto dell'area selezionata.|
 
-#### <a name="tool-properties"></a>Proprietà degli strumenti
+#### Proprietà degli strumenti <a name="ToolProperties"></a> 
 
 Quando è selezionato uno strumento, è possibile usare la finestra **Proprietà** per specificare i dettagli su come questo deve agire sull'immagine. Ad esempio, è possibile impostare lo spessore dello strumento **Matita** o il colore dello strumento **Pennello**.
 
@@ -231,45 +231,45 @@ La tabella seguente descrive le proprietà degli strumenti.
 
 |Comando|Scelte rapide da tastiera|
 |-------------|------------------------|
-|Passare alla modalità **Selezione**|S|
-|Passare alla modalità **Zoom**|Z|
-|Passare alla modalità **Panoramica**|K|
-|Selezionare tutto|CTRL+A|
-|Eliminare la selezione corrente|Eliminare|
-|Annullare la selezione corrente|Escape|
-|Fare zoom avanti|CTRL+rotellina del mouse avanti<br /><br /> CTRL+PGSU<br /><br /> Segno più (+)|
-|Fare zoom indietro|CTRL+rotellina del mouse indietro<br /><br /> CTRL+PGGIÙ<br /><br /> Segno meno (-)|
-|Fare una panoramica dell'immagine verso l'alto|Rotellina del mouse indietro<br /><br /> PGGIÙ|
-|Fare una panoramica dell'immagine verso il basso|Rotellina del mouse avanti<br /><br /> PGSU|
-|Fare una panoramica dell'immagine verso sinistra|MAIUSC+rotellina del mouse indietro<br /><br /> Rotellina del mouse a sinistra<br /><br /> MAIUSC+PGGIÙ|
-|Fare una panoramica dell'immagine verso destra|MAIUSC+rotellina del mouse avanti<br /><br /> Rotellina del mouse verso destra<br /><br /> MAIUSC+PGSU|
-|Fare zoom in base alla dimensione effettiva|CTRL+0 (zero)|
-|Adattare l'immagine alla finestra|CTRL+G, CTRL+F|
-|Adattare l'immagine alla larghezza della finestra|CTRL+G, CTRL+I|
-|Attivare o disattivare la griglia|CTRL+G, CTRL+G|
-|Ritagliare l'immagine in base alla selezione corrente|CTRL+G, CTRL+C|
-|Visualizzare il livello MIP successivo (maggiore dettaglio)|CTRL+G, CTRL+6|
-|Visualizzare il livello MIP precedente (minore dettaglio)|CTRL+G, CTRL+7|
-|Attivare o disattivare il canale del colore rosso|CTRL+G, CTRL+1|
-|Attivare o disattivare il canale del colore verde|CTRL+G, CTRL+2|
-|Attivare o disattivare il canale del colore blu|CTRL+G, CTRL+3|
-|Attivare o disattivare il canale alfa (trasparenza)|CTRL+G, CTRL+4|
-|Attivare o disattivare il motivo a scacchi alfa|CTRL+G, CTRL+B|
-|Attivare lo strumento per la selezione irregolare|L|
-|Attivare lo strumento per la selezione con bacchetta magica|M|
-|Attivare lo strumento Matita|P|
-|Attivare lo strumento Pennello|B|
-|Attivare lo strumento Riempimento|F|
-|Attivare lo strumento Gomma|E|
-|Attivare lo strumento Testo|T|
-|Attivare lo strumento di selezione del colore (contagocce)|I|
-|Spostare la selezione attiva e il relativo contenuto|Tasti di direzione|
-|Ridimensionare la selezione attiva e il relativo contenuto|CTRL+tasti di direzione|
-|Spostare la selezione attiva, ma non il relativo contenuto|MAIUSC+tasti di direzione|
-|Ridimensionare la selezione attiva, ma non il relativo contenuto|MAIUSC+CTRL+tasti di direzione|
-|Eseguire il commit del livello corrente|INVIO|
-|Ridurre lo spessore dello strumento|[|
-|Aumentare lo spessore dello strumento|]|
+|Passare alla modalità **Seleziona**|**S**|
+|Passare alla modalità **Zoom**|**Z**|
+|Passare alla modalità **Panoramica**|**K**|
+|Selezionare tutto|**CTRL**+**A**|
+|Eliminare la selezione corrente|**Eliminazione**|
+|Annullare la selezione corrente|**ESC** (Escape)|
+|Fare zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più (**+**)|
+|Fare zoom indietro|**CTRL**-**Rotellina del mouse indietro**<br /><br /> **CTRL**-**PGGIÙ**<br /><br /> Segno meno (**-**)|
+|Fare una panoramica dell'immagine verso l'alto|**Rotellina del mouse indietro**<br /><br /> **PGGIÙ**|
+|Fare una panoramica dell'immagine verso il basso|**Rotellina del mouse avanti**<br /><br /> **PGSU**|
+|Fare una panoramica dell'immagine verso sinistra|**MAIUSC**+**Rotellina del mouse indietro**<br /><br /> **Rotellina del mouse a sinistra**<br /><br /> **MAIUSC**+**PGGIÙ**|
+|Fare una panoramica dell'immagine verso destra|**MAIUSC**+**Rotellina del mouse avanti**<br /><br /> **Rotellina del mouse a destra**<br /><br /> **MAIUSC**+**PGSU**|
+|Fare zoom in base alla dimensione effettiva|**CTRL**+**0** (zero)|
+|Adattare l'immagine alla finestra|**CTRL**+**G**, **CTRL**+**F**|
+|Adattare l'immagine alla larghezza della finestra|**CTRL**+**G**, **CTRL**+**I**|
+|Attivare o disattivare la griglia|**CTRL**+**G**, **CTRL**+**G**|
+|Ritagliare l'immagine in base alla selezione corrente|**CTRL**+**G**, **CTRL**+**C**|
+|Visualizzare il livello MIP successivo (maggiore dettaglio)|**CTRL**+**G**, **CTRL**+**6**|
+|Visualizzare il livello MIP precedente (minore dettaglio)|**CTRL**+**G**, **CTRL**+**7**|
+|Attivare o disattivare il canale del colore rosso|**CTRL**+**G**, **CTRL**+**1**|
+|Attivare o disattivare il canale del colore verde|**CTRL**+**G**, **CTRL**+**2**|
+|Attivare o disattivare il canale del colore blu|**CTRL**+**G**, **CTRL**+**3**|
+|Attivare o disattivare il canale alfa (trasparenza)|**CTRL**+**G**, **CTRL**+**4**|
+|Attivare o disattivare il motivo a scacchi alfa|**CTRL**+**G**, **CTRL**+**B**|
+|Attivare lo strumento per la selezione irregolare|**L**|
+|Attivare lo strumento per la selezione con bacchetta magica|**M**|
+|Attivare lo strumento Matita|**P**|
+|Attivare lo strumento Pennello|**B**|
+|Attivare lo strumento Riempimento|**F**|
+|Attivare lo strumento Gomma|**E**|
+|Attivare lo strumento Testo|**T**|
+|Attivare lo strumento di selezione del colore (contagocce)|**I**|
+|Spostare la selezione attiva e il relativo contenuto|**Tasti di direzione**.|
+|Ridimensionare la selezione attiva e il relativo contenuto|**CTRL**+**Tasti di direzione**|
+|Spostare la selezione attiva, ma non il relativo contenuto|**MAIUSC**+**Tasti di direzione**|
+|Ridimensionare la selezione attiva, ma non il relativo contenuto|**MAIUSC**+**CTRL**+**Tasti di direzione**|
+|Eseguire il commit del livello corrente|**Return**|
+|Ridurre lo spessore dello strumento|**[**|
+|Aumentare lo spessore dello strumento|**]**|
 
 ## <a name="related-topics"></a>Argomenti correlati
 

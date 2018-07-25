@@ -1,7 +1,7 @@
 ---
 title: Esercitazione sull'uso di Python, passaggio 4, debug
 description: Passaggio 4 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato a come eseguire il codice Python nel debugger.
-ms.date: 03/08/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a164c68a8a6f4392d91c522c9cb4f9d225e8820a
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031982"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057817"
 ---
-# <a name="step-4-running-code-in-the-debugger"></a>Passaggio 4: Esecuzione del codice nel debugger
+# <a name="step-4-run-code-in-the-debugger"></a>Passaggio 4: Eseguire il codice nel debugger
 
 **Passaggio precedente: [Uso della finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
@@ -106,7 +106,7 @@ Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di 
 > [!div class="nextstepaction"]
 > [Installazione dei pacchetti nell'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-### <a name="going-deeper"></a>Approfondimenti
+### <a name="go-deeper"></a>Approfondimento
 
 - [Debug](debugging-python-in-visual-studio.md)
 - Vedere [Debug in Visual Studio](../debugger/debugger-feature-tour.md) per la documentazione completa sulle funzionalità di debug di Visual Studio.

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f03c5d6a7afec1010653c6e4a66a3770573ea5e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3953d889b6cd5c6c9b5abbfdb4aea9acbd940e27
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254644"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilatura e sicurezza in Windows Vista
 A seconda delle impostazioni delle autorizzazioni di accesso utente di [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] rese disponibili dall'amministratore di un computer, un singolo utente potrebbe disporre dell'autorizzazione di sicurezza necessaria per profilare un processo in quel computer. Gli esempi seguenti illustrano le possibili differenze tra i diversi tipi di utenti:  
@@ -44,6 +45,6 @@ A seconda delle impostazioni delle autorizzazioni di accesso utente di [!INCLUDE
      Quando questa opzione non è selezionata, nell'elenco vengono visualizzati i processi nella sessione corrente. Quando questa opzione è selezionata, nell'elenco vengono visualizzati i processi in tutte le sessioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Panoramiche](../profiling/overviews-performance-tools.md)   
+ [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Procedura: eseguire la connessione a un processo in esecuzione](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

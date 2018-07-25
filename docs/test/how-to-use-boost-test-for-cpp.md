@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751624"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945484"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Come usare Boost.Test per C++ in Visual Studio
 
@@ -48,7 +48,7 @@ Per usare Boost.Test è necessario installare [Boost](http://www.boost.org/). Se
 
 1. Il nuovo file contiene un metodo di test di esempio. Compilare il progetto per consentire a **Esplora test** di individuare il metodo.
 
-Il modello di elemento usa la variante con singola intestazione di Boost.Test, ma è possibile modificare il percorso #include per usare la variante con libreria autonoma. Per altre informazioni vedere [Aggiungere direttive include](#add_include_directives).
+Il modello di elemento usa la variante con singola intestazione di Boost.Test, ma è possibile modificare il percorso #include per usare la variante con libreria autonoma. Per altre informazioni vedere [Aggiungere direttive include](#add-include-directives).
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Creare un progetto di test (Visual Studio 2017 versione 15.5)
 
@@ -61,7 +61,7 @@ In Visual Studio 2017 versione 15.5 non sono disponibili progetti di test precon
 1. Specificare un nome per il progetto e scegliere **OK**.
 1. Eliminare la funzione `main` nel file con estensione cpp.
 
-1. Se si usa la versione della libreria con singola intestazione o dinamica di Boost.Test, passare ad [Aggiungere direttive include](#add_include_directives). Se si usa la versione della libreria statica, è necessario eseguire un'ulteriore configurazione:
+1. Se si usa la versione della libreria con singola intestazione o dinamica di Boost.Test, passare ad [Aggiungere direttive include](#add-include-directives). Se si usa la versione della libreria statica, è necessario eseguire un'ulteriore configurazione:
 
    a. Per modificare il file di progetto, per prima cosa scaricarlo. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Scarica progetto**. Quindi, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Modifica <nome\>.vcxproj**.
 
@@ -112,7 +112,7 @@ L'esempio seguente è sufficiente per rendere individuabile il test in **Esplora
 #include "../MyProgram/MyClass.h" // project being tested
 #include <string>
 
-BOOST_AUTO_TEST_CASE(my\_boost_test)
+BOOST_AUTO_TEST_CASE(my_boost_test)
 {
     std::string expected_value = "Bill";
 

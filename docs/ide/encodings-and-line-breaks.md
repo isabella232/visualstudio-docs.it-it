@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446693"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117095"
 ---
 # <a name="encodings-and-line-endings"></a>Codifiche e interruzioni di riga
 
@@ -51,7 +51,7 @@ Quando si apre un file con caratteri di interruzione di riga diversi, è possibi
 ![Finestra di dialogo Opzioni di salvataggio avanzate](media/line_endings.png)
 
 > [!NOTE]
-> Se il comando **Opzioni di salvataggio avanzate** non è disponibile nel menu **File**, è possibile aggiungerlo. Scegliere **Strumenti**, **Personalizza** e quindi scegliere la scheda **Comandi**. Nell'elenco a discesa **Barra dei menu** scegliere **File** e quindi scegliere il pulsante **Aggiungi comando**. Nella finestra di dialogo **Aggiungi comando**, in **Categorie**, scegliere **File** e quindi nell'elenco **Comandi** scegliere  **Opzioni di salvataggio avanzate**. Scegliere **OK** e quindi scegliere il pulsante **Sposta giù** per spostare il comando in qualsiasi posizione nel menu. Scegliere **Chiudi** per chiudere la finestra di dialogo **Personalizza**. Per altre informazioni, vedere [Personalizzazione di un menu o di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Se il comando **Opzioni di salvataggio avanzate** non è disponibile nel menu **File**, è possibile aggiungerlo. Scegliere **Strumenti**, **Personalizza** e quindi scegliere la scheda **Comandi**. Nell'elenco a discesa **Barra dei menu** scegliere **File** e quindi scegliere il pulsante **Aggiungi comando**. Nella finestra di dialogo **Aggiungi comando**, in **Categorie** scegliere **File** e quindi nell'elenco **Comandi** scegliere  **Opzioni di salvataggio avanzate**. Scegliere **OK** e quindi scegliere il pulsante **Sposta giù** per spostare il comando in qualsiasi posizione nel menu. Scegliere **Chiudi** per chiudere la finestra di dialogo **Personalizza**. Per altre informazioni, vedere [Personalizzazione di un menu o di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
 > In alternativa, è possibile accedere alla finestra di dialogo **Opzioni di salvataggio avanzate** scegliendo **File** > **Salva \<file\> con nome**. Nella finestra di dialogo **Salva file con nome** scegliere la freccia a discesa accanto al pulsante **Salva** e scegliere **Salva con codifica**.
 

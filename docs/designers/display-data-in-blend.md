@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7418334e5621076a10b6887371cf7da76a7488
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918141"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890357"
 ---
 # <a name="display-data-in-blend"></a>Visualizzare dati in Blend
 
-È possibile visualizzare dati di esempio nella finestra di progettazione durante la personalizzazione del layout delle pagine. È possibile generare dati di esempio da zero o usando una classe esistente. È inoltre possibile connettersi a *dati dinamici* che verranno visualizzati nell'app durante l'esecuzione.
+È possibile visualizzare dati di esempio nella finestra di progettazione durante la personalizzazione del layout delle pagine. È possibile generare dati di esempio da zero o usando una classe esistente. È inoltre possibile connettersi a *dati dinamici* che vengono visualizzati nell'app durante l'esecuzione.
 
 ## <a name="generate-sample-data"></a>Generare dati di esempio
 
@@ -57,4 +57,4 @@ Vedere [Uso di dati e file (XAML)](http://msdn.microsoft.com/library/windows/app
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di un'interfaccia utente usando Blend per Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Creare un'interfaccia utente usando Blend per Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

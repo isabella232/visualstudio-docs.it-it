@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745776"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923907"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con sfumatura basata sulla geometria
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con un gradiente basato sulla geometria
 
 Questo articolo illustra come usare la finestra di progettazione shader e il linguaggio DGSL (Directed Graph Shader Language) per creare uno shader con sfumatura basata sulla geometria. Questo shader ridimensiona un valore di colore RGB costante in base all'altezza di ogni punto di un oggetto nello spazio globale.
 
@@ -27,7 +27,7 @@ Questo articolo illustra come usare la finestra di progettazione shader e il lin
 
 Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
-1.  Creare uno shader DGSL da utilizzare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
+1.  Creare uno shader DGSL da usare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
 
 2.  Scollegare il nodo **Colore punto** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
 
@@ -54,7 +54,7 @@ La figura seguente illustra il grafico shader completato e un'anteprima dello sh
 
  Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione **Anteprima degli shader** in [Finestra di progettazione shader](../designers/shader-designer.md).
 
- La figura seguente illustra lo shader descritto in questo documento applicato alla scena 3D illustrata in [Procedura: Creare un modello di territorio 3D](../designers/how-to-model-3-d-terrain.md). L'intensità del colore aumenta con l'altezza del punto nello spazio globale.
+ La figura seguente illustra lo shader descritto in questo documento applicato alla scena 3D illustrata in [Procedura: Creare un modello di terreno 3D](../designers/how-to-model-3-d-terrain.md). L'intensità del colore aumenta con l'altezza del punto nello spazio globale.
 
  ![Effetto sfumatura applicato a un modello di terreno 3D](../designers/media/digit-gradient-effect-result.png)
 

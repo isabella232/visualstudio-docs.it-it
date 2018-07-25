@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745630"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924460"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
 Questo documento illustra come usare l'editor di immagini per creare una trama di base.
@@ -35,7 +35,7 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 ## <a name="creating-a-basic-texture"></a>Creazione di una trama di base
  È possibile usare l'editor di immagini per creare e modificare immagini e trame per un gioco o un'app.
 
- La procedura seguente illustra come creare una trama che rappresenta una destinazione di tipo "bullseye". Al termine, la trama dovrebbe essere simile all'immagine seguente. Per illustrare meglio la trasparenza nella trama, l'editor di immagini è stato configurato per l'utilizzo di un modello verde a scacchi.
+ La procedura seguente illustra come creare una trama che rappresenta una destinazione "bullseye". Al termine dell'operazione, la trama dovrebbe essere simile all'immagine seguente. Per illustrare meglio la trasparenza nella trama, l'editor di immagini è stato configurato per l'utilizzo di un modello verde a scacchi.
 
  ![Destinazione "Bullseye" con trasparenza visualizzata in verde](../designers/media/digit-bullseye-texture-in-editor.png)
 
@@ -51,7 +51,7 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 
 4.  Impostare il colore di primo piano su un nero completamente trasparente. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Primo piano**. Impostare i valori delle proprietà **R**, **G**, **B**e **A** accanto alla selezione colori su `0`.
 
-5.  Nella barra degli strumenti dell'editor di immagini scegliere lo strumento **Riempimento** e, tenendo premuto MAIUSC, scegliere un punto qualsiasi nell'immagine. L'utilizzo di MAIUSC fa sì che il valore alfa del colore di riempimento sostituisca il colore dell'immagine; in caso contrario, il valore alfa consente di sfumare il colore di riempimento con il colore dell'immagine.
+5.  Nella barra degli strumenti dell'editor di immagini scegliere lo strumento **Riempimento** e, tenendo premuto **MAIUSC**, scegliere un punto qualsiasi nell'immagine. L'utilizzo di **MAIUSC** fa sì che il valore alfa del colore di riempimento sostituisca il colore dell'immagine; in caso contrario, il valore alfa consente di sfumare il colore di riempimento con il colore dell'immagine.
 
     > [!IMPORTANT]
     >  Questo passaggio, insieme alla selezione del colore nel passaggio precedente, assicura che l'immagine di base sia preparata per la trama di destinazione "bullseye" che si intende disegnare. Poiché l'immagine viene riempita con un nero trasparente e il bordo della destinazione è nero, non saranno presenti artefatti di aliasing intorno alla destinazione.
@@ -66,7 +66,7 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 
 10. Assicurarsi che l'antialiasing sia abilitato. Nella finestra **Proprietà**, nel gruppo di proprietà **Aspetto**, assicurarsi che la proprietà **Anti-alias** sia impostata.
 
-11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per disegnare più facilmente il cerchio, tenere premuto MAIUSC mentre si disegna.
+11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per disegnare più facilmente il cerchio, tenere premuto **MAIUSC** mentre si disegna.
 
     > [!NOTE]
     >  Le coordinate in pixel della posizione corrente del puntatore sono visualizzate sulla barra di stato di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

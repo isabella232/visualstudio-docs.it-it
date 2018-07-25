@@ -15,63 +15,64 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c06ffe38b0d269562c7315d54da8c4d0a99218f
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: bef64670c3c2631e779fda0f48810ce502db72b1
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844430"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gestione delle firme di assembly e manifesti
 
 La firma con nome sicuro offre un'identità univoca globale per un componente software. I nomi sicuri sono usati per garantire che l'assembly non possa essere sottoposto a spoofing da parte di altri utenti e per verificare che le dipendenze dei componenti e le istruzioni di configurazione siano mappate al componente e alla versione del componente corretti.
 
- Un nome sicuro è costituito dall'identità dell'assembly, corrispondente al nome semplice in formato testo, al numero di versione e alle informazioni sulle impostazioni cultura, più un token di chiave pubblica e una firma digitale.
+Un nome sicuro è costituito dall'identità dell'assembly, corrispondente al nome semplice in formato testo, al numero di versione e alle informazioni sulle impostazioni cultura, più un token di chiave pubblica e una firma digitale.
 
- Per informazioni sulla firma degli assembly nei progetti Visual Basic e C#, vedere [Creare e usare gli assembly con nome sicuro](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).
+Per informazioni sulla firma degli assembly nei progetti Visual Basic e C#, vedere [Creare e usare gli assembly con nome sicuro](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
- Per informazioni sulla firma degli assembly nei progetti Visual C++, vedere [Assembly con nome sicuro (firma degli assembly) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Per informazioni sulla firma degli assembly nei progetti Visual C++, vedere [Assembly con nome sicuro (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
-> La firma con nome sicuro non offre protezione da attacchi di reverse engineering dell'assembly.  Per proteggere da attacchi di reverse engineering, vedere [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
+> La firma con nome sicuro non offre protezione da attacchi di reverse engineering dell'assembly. Per proteggere da attacchi di reverse engineering, vedere [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
 
 ## <a name="asset-types-and-signing"></a>Tipi di asset e firma
 
-È possibile firmare gli assembly .NET e i manifesti dell'applicazione, tra cui:
+È possibile firmare gli assembly .NET e i manifesti dell'applicazione:
 
--   File eseguibili (*.exe*)
+- File eseguibili (*.exe*)
 
--   Manifesti dell'applicazione (*.exe.manifest*)
+- Manifesti dell'applicazione (*.exe.manifest*)
 
--   Manifesti della distribuzione (*.application*)
+- Manifesti della distribuzione (*.application*)
 
--   Assembly di componenti condivisi (*.dll*)
+- Assembly di componenti condivisi (*.dll*)
 
-È necessario firmare i seguenti tipi di asset:
+Firmare i seguenti tipi di asset:
 
-1.  Assembly, se si vuole distribuirli alla Global Assembly Cache (GAC).
+1. Assembly, se si vuole distribuirli alla Global Assembly Cache (GAC).
 
-2.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti di applicazione e distribuzione. Visual Studio abilita la firma per impostazione predefinita per queste applicazioni.
+2. Manifesti della distribuzione e dell'applicazione ClickOnce. Visual Studio abilita la firma per impostazione predefinita per queste applicazioni.
 
-3.  Assembly di interoperabilità primari, usati per l'interoperabilità COM. L'utilità TLBIMP attiva l'assegnazione di nomi sicuri quando crea un assembly di interoperabilità primario da una libreria di tipi COM.
+3. Assembly di interoperabilità primari, usati per l'interoperabilità COM. L'utilità TLBIMP attiva l'assegnazione di nomi sicuri quando crea un assembly di interoperabilità primario da una libreria di tipi COM.
 
-In generale è consigliabile non firmare i file eseguibili. Un componente con nome sicuro non può fare riferimento a un componente senza nome sicuro distribuito con l'applicazione. Visual Studio non firma gli eseguibili dell'applicazione, consente invece di firmare il manifesto dell'applicazione, che fa riferimento al file eseguibile con nome debole. Non è in genere consigliabile firmare i componenti privati dell'applicazione, perché la firma può rendere più difficile la gestione delle dipendenze.
+In generale è consigliabile non firmare i file eseguibili. Un componente con nome sicuro non può fare riferimento a un componente senza nome sicuro distribuito con l'applicazione. Visual Studio non firma gli eseguibili dell'applicazione, consente invece di firmare il manifesto dell'applicazione, che fa riferimento al file eseguibile con nome debole. Evitare di firmare i componenti privati dell'applicazione, perché la firma può rendere più difficile la gestione delle dipendenze.
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Come firmare un assembly in Visual Studio
 
 Per firmare un'applicazione o un componente, usare la scheda **Firma** della finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** o digitare **proprietà del progetto** nella finestra **Avvio veloce** oppure premere **Alt**+**Invio** nella finestra **Esplora soluzioni**). Selezionare la scheda **Firma**, quindi la casella di controllo **Firma assembly**.
 
-Specificare un file di chiave. Se si sceglie di creare un nuovo file di chiave, tenere presente che i nuovi file di chiave vengono sempre creati in formato *.pfx*. Sono necessari un nome e una password per il nuovo file.
+Specificare un file di chiave. Se si sceglie di creare un nuovo file di chiave, i nuovi file di chiave vengono sempre creati in formato *.pfx*. Sono necessari un nome e una password per il nuovo file.
 
 > [!WARNING]
 > Proteggere sempre il file di chiave con una password per impedire ad altri di usarlo. È possibile proteggere le chiavi usando provider o archivi certificati.
 
- È anche possibile fare riferimento a una chiave già creata. Per altre informazioni sulla creazione delle chiavi, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+È anche possibile fare riferimento a una chiave già creata. Per altre informazioni sulla creazione delle chiavi, vedere [Creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
- Se si ha accesso solo a una chiave pubblica, è possibile usare il ritardo della firma per rinviare l'assegnazione della chiave. Per abilitare il ritardo della firma selezionare la casella di controllo **Ritarda firma**. Un progetto con firma ritardata non verrà eseguito e non sarà possibile eseguirne il debug. Tuttavia, è possibile ignorare la verifica durante lo sviluppo usando [Sn.exe (strumento nome sicuro)](/dotnet/framework/tools/sn-exe-strong-name-tool) con l'opzione `-Vr`.
+Se si ha accesso solo a una chiave pubblica, è possibile usare il ritardo della firma per rinviare l'assegnazione della chiave. Per abilitare il ritardo della firma selezionare la casella di controllo **Ritarda firma**. Un progetto con firma ritardata non viene eseguito e non è possibile eseguirne il debug. Tuttavia, è possibile ignorare la verifica durante lo sviluppo usando lo [strumento nome sicuro Sn.exe](/dotnet/framework/tools/sn-exe-strong-name-tool) con l'opzione `-Vr`.
 
- Per informazioni sulla firma dei manifesti, vedere [Procedura: Firmare manifesti dell'applicazione e di distribuzione](../ide/how-to-sign-application-and-deployment-manifests.md).
+Per informazioni sulla firma dei manifesti, vedere [Procedura: Firmare manifesti dell'applicazione e di distribuzione](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Assembly con nomi sicuri](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Assembly con nome sicuro (firma degli assembly) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+- [Assembly con nomi sicuri (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

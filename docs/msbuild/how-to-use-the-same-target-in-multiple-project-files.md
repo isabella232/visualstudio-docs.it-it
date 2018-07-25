@@ -13,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c1ed02a32136d6c80e24f0644e0fab660e8ed0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8fe68d4d6d970ee0c1e5db566caf7c812436589c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571812"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077520"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: utilizzare la stessa destinazione in più file di progetto
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: Usare la stessa destinazione in più file di progetto
 Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], è possibile che sia stato necessario usare le stesse attività e destinazioni in file di progetto diversi. Anziché includere in ogni file di progetto la descrizione completa di tali attività o destinazioni, è possibile salvare una destinazione in un file di progetto separato e importarlo in qualsiasi altro progetto in cui si intende usare la destinazione.  
   
-## <a name="using-the-import-element"></a>Uso dell'elemento Import  
+## <a name="use-the-import-element"></a>Usare l'elemento Import  
  L'elemento `Import` consente di inserire un file di progetto in un altro file di progetto. Il file di progetto importato deve essere un file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] valido e deve contenere codice XML in formato corretto. L'attributo `Project` specifica il percorso del file di progetto importato. Per altre informazioni sull'elemento `Import`, vedere [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).  
   
 #### <a name="to-import-a-project"></a>Per importare un progetto  
@@ -39,7 +39,7 @@ Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../extensi
 ## <a name="order-of-evaluation"></a>Ordine di valutazione  
  Quando [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] raggiunge un elemento `Import`, il progetto importato viene correttamente inserito nel progetto di importazione nella stessa posizione dell'elemento `Import`. La posizione dell'elemento `Import` può quindi influire sui valori delle proprietà e degli elementi ed è importante conoscere sia le proprietà e gli elementi impostati dal progetto importato, sia le proprietà e gli elementi usati dal progetto.  
   
- Quando si compila il progetto, vengono valutate prima tutte le proprietà e dopo gli elementi. Il codice XML seguente, ad esempio, definisce il file di progetto importato MyCommon.targets:  
+ Quando si compila il progetto, vengono valutate prima tutte le proprietà e dopo gli elementi. Il codice XML seguente, ad esempio, definisce il file di progetto importato *MyCommon.targets*:  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -53,7 +53,7 @@ Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../extensi
 </Project>  
 ```  
   
- Il codice XML seguente definisce MyApp.proj, che esegue l'importazione di MyCommon.targets:  
+ Il codice XML seguente definisce *MyApp.proj*, che esegue l'importazione di *MyCommon.targets*:  
   
 ```xml  
 <Project  
@@ -70,7 +70,7 @@ Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../extensi
   
  `Name="MyCommon"`  
   
- Poiché il progetto viene importato dopo che è stata definita la proprietà `Name` in MyApp.proj, la definizione di `Name` in MyCommon.targets esegue l'override della definizione presente in MyApp.proj. Se il progetto venisse importato prima di definire la proprietà Name, durante la compilazione verrebbe visualizzato il messaggio seguente:  
+ Poiché il progetto viene importato dopo che è stata definita la proprietà `Name` in *MyApp.proj*, la definizione di `Name` in *MyCommon.targets* esegue l'override della definizione presente in *MyApp.proj*. Se il progetto venisse importato prima di definire la proprietà Name, durante la compilazione verrebbe visualizzato il messaggio seguente:  
   
  `Name="MyApp"`  
   
@@ -83,7 +83,7 @@ Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../extensi
 3.  Nel file di progetto definire tutte le proprietà e gli elementi che devono eseguire l'override delle definizioni predefinite delle proprietà e degli elementi presenti nel progetto importato.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio di codice seguente viene illustrato il file MyCommon.targets importato dal secondo esempio di codice. Il file con estensione targets valuta le proprietà ottenute dal progetto di importazione per configurare la compilazione.  
+ Nell'esempio di codice seguente viene illustrato il file *MyCommon.targets* importato dal secondo esempio di codice. Il file con estensione *targets* valuta le proprietà ottenute dal progetto di importazione per configurare la compilazione.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -101,7 +101,7 @@ Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../extensi
 ```  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio di codice seguente viene importato il file MyCommon.targets.  
+ Nell'esempio di codice seguente viene importato il file *MyCommon.targets*.  
   
 ```xml  
 <Project DefaultTargets="Build"  

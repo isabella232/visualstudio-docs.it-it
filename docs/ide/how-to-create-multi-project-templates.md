@@ -11,24 +11,24 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948405"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978385"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 
 I modelli multiprogetto fungono da contenitori per due o più progetti. Quando si crea un progetto basato su un modello per più progetti nella finestra di dialogo **Nuovo progetto**, ogni progetto del modello viene aggiunto alla soluzione.
 
-Un modello per più progetti contiene due o più modelli di progetto e un modello di radice di tipo `ProjectGroup`.
+Un modello per più progetti contiene due o più modelli di progetto e un modello radice di tipo **ProjectGroup**.
 
 I modelli per più progetti funzionano in modo diverso rispetto ai modelli per progetto singolo. Presentano le caratteristiche specifiche seguenti:
 
-- Non è possibile assegnare nomi ai singoli progetti di un modello per più progetti nella finestra di dialogo **Nuovo progetto**. Usare invece l'attributo `ProjectName` nell'elemento `ProjectTemplateLink` del file con estensione *vstemplate* per specificare il nome di ogni progetto.
+- Non è possibile assegnare nomi ai singoli progetti di un modello per più progetti nella finestra di dialogo **Nuovo progetto**. Usare invece l'attributo **ProjectName** nell'elemento **ProjectTemplateLink** del file con estensione *vstemplate* per specificare il nome di ogni progetto.
 
-- I modelli per più progetti possono contenere progetti per linguaggi diversi, ma l'intero modello può essere inserito in una sola categoria. Specificare la categoria del modello nell'elemento `ProjectType` del file con estensione *vstemplate*.
+- I modelli per più progetti possono contenere progetti per linguaggi diversi, ma l'intero modello può essere inserito in una sola categoria. Specificare la categoria del modello nell'elemento **ProjectType** del file con estensione *vstemplate*.
 
 Un modello per più progetti deve includere gli elementi seguenti, compressi in un file con estensione *zip*:
 
@@ -39,32 +39,32 @@ Un modello per più progetti deve includere gli elementi seguenti, compressi in 
 Ad esempio, il file con estensione *zip* di un modello per più progetti con due progetti può includere i file e le directory seguenti:
 
 - *MultiProjectTemplate.vstemplate*
-- *\Project1\Project1.vstemplate*
+- *\Project1\MyTemplate.vstemplate*
 - *\Project1\Project1.vbproj*
 - *\Project1\Class.vb*
-- *\Project2\Project2.vstemplate*
+- *\Project2\MyTemplate.vstemplate*
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
 Il file radice con estensione *vstemplate* per un modello per più progetti differisce da un modello per progetto singolo nei modi seguenti:
 
-- L'attributo `Type` dell'elemento `VSTemplate` contiene il valore `ProjectGroup` anziché il valore `Project`. Ad esempio:
+- L'attributo **Tipo** dell'elemento**VSTemplate** ha il valore **ProjectGroup** anziché **Project**. Ad esempio:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- L'elemento `TemplateContent` contiene un elemento `ProjectCollection` che ha uno o più elementi `ProjectTemplateLink` che definiscono i percorsi dei file con estensione *vstemplate* dei progetti inclusi. Ad esempio:
+- L'elemento **TemplateContent** contiene un elemento **ProjectCollection** che ha uno o più elementi **ProjectTemplateLink** che definiscono i percorsi dei file con estensione *vstemplate* dei progetti inclusi. Ad esempio:
 
     ```xml
     <TemplateContent>
         <ProjectCollection>
             <ProjectTemplateLink>
-                Project1\Project1.vstemplate
+                Project1\MyTemplate.vstemplate
             </ProjectTemplateLink>
             <ProjectTemplateLink>
-                Project2\Project2.vstemplate
+                Project2\MyTemplate.vstemplate
             </ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
@@ -95,7 +95,7 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
 
 1. Nella directory di base creare un file XML con estensione *vstemplate*. Questo file contiene i metadati del modello per più progetti. Vedere l'esempio che segue per la struttura del file. Assicurarsi di specificare il percorso relativo di ogni file con estensione *vstemplate*.
 
-1. Selezionare la directory base, quindi dal menu di scelta rapida (clic destro) o dal menu a comparsa scegliere **Invia a** > **Cartella compressa**.
+1. Selezionare tutti i file nella directory base, quindi facendo clic con il pulsante destro del mouse o dal menu di scelta rapida scegliere **Invia a** > **Cartella compressa**.
 
    I file e le cartelle vengono compressi in un file con estensione *zip*.
 
@@ -105,10 +105,10 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
 
 ## <a name="two-project-example"></a>Esempio con due progetti
 
-Questo esempio illustra un file radice semplice con estensione *vstemplate* per più progetti. In questo esempio, il modello contiene due progetti `My Windows Application` e `My Class Library`. L'attributo `ProjectName` dell'elemento `ProjectTemplateLink` specifica il nome assegnato al progetto.
+Questo esempio illustra un file radice semplice con estensione *vstemplate* per più progetti. In questo esempio il modello contiene due progetti, **My Windows Application** e **My Class Library**. L'attributo **ProjectName** dell'elemento **ProjectTemplateLink** specifica il nome assegnato al progetto.
 
 > [!TIP]
-> Se l'attributo `ProjectName` non è specificato, viene usato come nome del progetto il nome del file con estensione *vstemplate*.
+> Se l'attributo **ProjectName** non è specificato, viene usato come nome del progetto il nome del file con estensione *vstemplate*.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -134,7 +134,7 @@ Questo esempio illustra un file radice semplice con estensione *vstemplate* per 
 
 ## <a name="example-with-solution-folders"></a>Esempio con cartelle della soluzione
 
-Questo esempio usa l'elemento `SolutionFolder` per dividere i progetti in due gruppi, `Math Classes` e `Graphics Classes`. Il modello contiene quattro progetti, due dei quali vengono inseriti in ogni cartella della soluzione.
+Questo esempio usa l'elemento **SolutionFolder** per suddividere i progetti in due gruppi, **Math Classes** e **Graphics Classes**. Il modello contiene quattro progetti, due dei quali vengono inseriti in ogni cartella della soluzione.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"

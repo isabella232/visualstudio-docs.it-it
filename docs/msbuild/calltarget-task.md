@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83240cfa9deec2585aaa23db4aa79fbfe6929b09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f01ca83f4aee641f6bdcb8e1c7e1323aee374bc8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571672"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946794"
 ---
-# <a name="calltarget-task"></a>Attività CallTarget
+# <a name="calltarget-task"></a>attività CallTarget
 Richiama le destinazioni specificate nel file di progetto.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
- Nella tabella che segue vengono descritti i parametri dell'attività `CallTarget`.  
+ Nella tabella che segue vengono descritti i parametri dell'attività `CallTarget` .  
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  
@@ -64,5 +64,5 @@ Richiama le destinazioni specificate nel file di progetto.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)   
  [Destinazioni](../msbuild/msbuild-targets.md)

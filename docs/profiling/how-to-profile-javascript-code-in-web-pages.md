@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da608523430724e279efc3d5c7c5d5b27564845
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843923"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedura: Profilare codice JavaScript nelle pagine Web
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedura: Eseguire la profilatura di codice JavaScript nelle pagine Web
 
 Gli strumenti di profilatura di Visual Studio possono raccogliere dati sulle prestazioni per il codice JavaScript eseguito in un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], in una pagina Web arbitraria o in un'applicazione JavaScript usando il metodo di profilatura della strumentazione. Richiede Internet Explorer 8 o versioni successive.
 
@@ -30,7 +31,7 @@ Gli strumenti di profilatura di Visual Studio possono raccogliere dati sulle pre
 
 Quando si specifica la profilatura JavaScript, questa viene applicata sia al codice JavaScript eseguito nel browser che al codice [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] eseguito nel server.
 
-- Per un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , la profilatura viene applicata sia al codice JavaScript eseguito nel browser che al codice [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] eseguito nel server.
+- Per un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], la profilatura viene applicata sia al codice JavaScript eseguito nel browser che al codice [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] eseguito nel server.
 
 - Per una pagina Web arbitraria, la profilatura viene applicata al codice JavaScript eseguito nel browser.
 
@@ -46,7 +47,7 @@ Quando si specifica la profilatura JavaScript, questa viene applicata sia al cod
 
 5. Nella terza pagina della procedura guidata, selezionare la casella di controllo **Profilo JavaScript** , quindi fare clic su **Avanti**.
 
-6. Nella quarta pagina della procedura guidata, fare clic su **Fine** per avviare l'applicazione Web nel browser.
+6. Nella quarta pagina della procedura guidata fare clic su **Fine** per avviare l'applicazione Web nel browser.
 
 7. Verificare la funzionalità di cui eseguire la profilatura.
 
@@ -68,7 +69,7 @@ Quando si specifica la profilatura JavaScript, questa viene applicata sia al cod
 
     2. Selezionare la casella di controllo **Profilo JavaScript** , quindi fare clic su **Avanti**.
 
-6. Nella quarta pagina della procedura guidata, fare clic su **Fine** per avviare la pagina Web nel browser.
+6. Nella quarta pagina della procedura guidata fare clic su **Fine** per avviare la pagina Web nel browser.
 
 7. Verificare la funzionalità di cui eseguire la profilatura.
 

@@ -1,7 +1,7 @@
 ---
 title: Debug in modalità mista per Python
 description: Come eseguire il debug contemporaneamente di C++ e Python in Visual Studio inclusi il passaggio tra gli ambienti, la visualizzazione dei valori e la valutazione delle espressioni.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 56f342904e4ae2e1c11ccd7a148b8a896692d5a2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583151"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057438"
 ---
 # <a name="debugging-python-and-c-together"></a>Debug di codice Python e C++ in contemporanea
 
@@ -64,7 +64,7 @@ Le funzionalità di debug in modalità mista includono le seguenti, come illustr
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Abilitare il debug in modalità mista in un progetto C/C++
 
-Visual Studio 2017 (versione 15.5 e versioni successive) supporta il debug in modalità mista da un progetto C/C++, ad esempio quando si [incorpora codice Python in un'altra applicazione, come descritto in python.org](https://docs.python.org/3/extending/embedding.html). Per abilitare il debug in modalità mista, configurare il progetto C/C++ per avviare il "Debug Python/nativo":
+Visual Studio 2017 (versione 15.5 e successive) supporta il debug in modalità mista da un progetto C/C++, ad esempio quando si [incorpora codice Python in un'altra applicazione, come descritto in python.org](https://docs.python.org/3/extending/embedding.html). Per abilitare il debug in modalità mista, configurare il progetto C/C++ per avviare il "Debug Python/nativo":
 
 1. Fare clic con il pulsante destro del mouse sul progetto C/C++ in Esplora soluzioni e scegliere **Proprietà**.
 1. Selezionare la scheda **Debug**, selezionare "Debug Python/nativo" in **Debugger da avviare** e selezionare **OK**.

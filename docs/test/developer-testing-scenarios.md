@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691859"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302931"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Strumenti di test, scenari e funzionalità per sviluppatori
 
@@ -33,7 +33,7 @@ IntelliTest consente di ottimizzare il code coverage ed evitare le regressioni. 
 * [Introduzione a IntelliTest con Visual Studio](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)
 * [Post di blog su IntelliTest](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)
 * [Video su IntelliTest](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
-* [Generare unit test per il codice con IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
+* [Introduzione a IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Manuale di riferimento per IntelliTest](intellitest-manual/index.md)
 
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Test dell'interfaccia utente con interfaccia utente codificata e Selenium
@@ -49,7 +49,7 @@ Sia che si scelgano i test codificati dell'interfaccia utente più evoluti, sia 
 * [Usare l'automazione dell'interfaccia utente per testare il codice](use-ui-automation-to-test-your-code.md)
 * [Creazione, modifica e gestione di un test codificato dell'interfaccia utente](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Testare app UWP con test codificati dell'interfaccia utente](test-uwp-app-with-coded-ui-test.md)
-* [Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
+* [Testare applicazioni SharePoint con test codificati dell'interfaccia utente](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Lab sull'esecuzione di test codificati dell'interfaccia utente con Visual Studio Enterprise](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Unit test efficaci con il code coverage di Visual Studio
@@ -72,7 +72,7 @@ Esplora test consente agli sviluppatori di creare, gestire e ottenere il massimo
 
 ![Esplora test di Visual Studio](media/devtest-testexplorer.png)
 
-* [Eseguire unit test del codice](unit-test-your-code.md)
+* [Introduzione agli unit test](unit-test-your-code.md)
 * [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md)
 * [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)
 * [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md)

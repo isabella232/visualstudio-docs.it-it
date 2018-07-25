@@ -1,7 +1,7 @@
 ---
 title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 3
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, come rendere disponibili file statici, aggiungere pagine all'app e usare l'ereditarietà dei modelli
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750334"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089587"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3 dell'esercitazione: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
 
 **Passaggio precedente: [Creare un'app Django con visualizzazioni e modelli di pagina](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -277,8 +277,9 @@ I passaggi seguenti illustrano l'ereditarietà:
 > [!div class="nextstepaction"]
 > [Usare il modello di progetto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="going-deeper"></a>Approfondimenti
+## <a name="go-deeper"></a>Approfondimento
 
+- [Distribuire l'app Web nel Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 3 (views)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (Scrittura della prima app Django, parte 3 - visualizzazioni) (docs.djangoproject.com)
 - Per altre funzionalità dei modelli Django, ad esempio il flusso di controllo, vedere [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (Linguaggio dei modelli Django) (docs.djangoproject.com)
 - Per informazioni dettagliate sull'uso del tag `{% url %}`, vedere la sezione [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) in [Built-in template tags and filters for Django templates reference](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (Filtri e tag dei modelli predefiniti per i riferimenti dei modelli Django) (docs.djangoproject.com)

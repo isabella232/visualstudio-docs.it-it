@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe1ef9e06c7e14ecb28fff9ceb48b2243a129e68
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 184c7ee5fc5155b532243c51f85d8b5420892925
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569241"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079241"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
 Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa. Per altre informazioni, vedere [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).  
@@ -33,7 +33,7 @@ Contiene una raccolta di elementi `Import` raggruppati in una condizione facolta
 
 ## <a name="syntax"></a>Sintassi  
 
-```  
+```xml  
 <ImportGroup Condition="'String A' == 'String B'">  
     <Import ... />  
     <Import ... />  
@@ -60,8 +60,6 @@ Contiene una raccolta di elementi `Import` raggruppati in una condizione facolta
 |Elemento|Descrizione|  
 |-------------|-----------------|  
 |[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
-
-## <a name="remarks"></a>Note  
 
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente mostra l'elemento `ImportGroup`.  

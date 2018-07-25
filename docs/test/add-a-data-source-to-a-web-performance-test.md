@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750825"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283289"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Aggiungere un'origine dati a un test delle prestazioni Web
 
@@ -24,7 +24,7 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
  ![Associazione di dati a un test prestazioni Web](../test/media/web_test_databinding_conceptual.png)
 
- Verrà usata un'applicazione ASP.NET di esempio, contenente tre pagine ASPX: la pagina predefinita, una pagina Red e una pagina Blue. La pagina predefinita contiene un pulsante di opzione per la scelta tra rosso e blu e un pulsante Submit. Le altre due pagine ASPX sono molto semplici. Una include un'etichetta denominata Red e l'altra un'etichetta denominata Blue. Quando si sceglie Submit nella pagina predefinita, viene visualizzata una delle altre pagine. È possibile scaricare l'esempio di [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) o usare la propria applicazione Web.
+ Verrà usata un'applicazione ASP.NET di esempio, contenente tre pagine *ASPX*: la pagina predefinita, una pagina Red e una pagina Blue. La pagina predefinita contiene un pulsante di opzione per la scelta tra rosso e blu e un pulsante Submit. Le altre due pagine *ASPX* sono molto semplici. Una include un'etichetta denominata Red e l'altra un'etichetta denominata Blue. Quando si sceglie Submit nella pagina predefinita, viene visualizzata una delle altre pagine. È possibile scaricare l'esempio di [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) o usare la propria applicazione Web.
 
  ![Esecuzione dell'applicazione Web da testare](../test/media/web_test_databinding_runwebapp.png)
 
@@ -34,7 +34,7 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
 ## <a name="create-a-sql-database"></a>Creare un database SQL
 
-1. Se Visual Studio Enterprise non è disponibile, scaricarlo dalla pagina dei [download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
+1. Se Visual Studio Enterprise non è disponibile, scaricarlo dalla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 2. Creare un database SQL.
 
@@ -90,11 +90,11 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
 ## <a name="bind-the-data"></a>Associare i dati
 
-1. Associare il campo ColorName.
+1. Associare il campo **ColorName**.
 
      ![Associare il campo ColorName al valore RadioButtonList1](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. Aprire il file Local.testsettings in Esplora soluzione e selezionare l'opzione Una esecuzione per riga origine dati.
+2. Aprire il file *Local.testsettings* in **Esplora soluzione** e selezionare l'opzione **Una esecuzione per riga origine dati**.
 
      ![Modificare il file di impostazioni test](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -106,13 +106,13 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
      ![Eseguire il test prestazioni Web per verificare l'associazione](../test/media/web_test_databinding_sql_runtest.png)
 
-     Le due esecuzioni vengono visualizzate per ogni riga di dati. L'esecuzione 1 invia una richiesta per la pagina Red.aspx e l'esecuzione 2 invia una richiesta per la pagina Blue.aspx.
+     Le due esecuzioni vengono visualizzate per ogni riga di dati. L'esecuzione 1 invia una richiesta per la pagina *Red.aspx* e l'esecuzione 2 invia una richiesta per la pagina *Blue.aspx*.
 
      ![Risultati delle esecuzioni dei test](../test/media/web_test_databinding_sql_runresults.png)
 
-     Quando si esegue l'associazione a un'origine dati, è possibile violare la regola dell'URL di risposta predefinito. In questo caso, l'errore nell'esecuzione 2 è causato dalla regola che prevede la pagina Red.aspx dalla registrazione originale del test, ma il data binding ora la indirizza alla pagina Blue.aspx.
+     Quando si esegue l'associazione a un'origine dati, è possibile violare la regola dell'URL di risposta predefinito. In questo caso l'errore nell'esecuzione 2 è causato dalla regola che prevede la pagina *Red.aspx* dalla registrazione originale del test, ma il data binding ora la indirizza alla pagina *Blue.aspx*.
 
-2. Correggere l'errore di convalida eliminando la regola di convalida dell'URL di risposta ed eseguendo nuovamente il test.
+2. Correggere l'errore di convalida eliminando la regola di convalida dell'**URL di risposta** ed eseguendo nuovamente il test.
 
      ![Eliminare la regola di convalida dell'URL di risposta](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
@@ -152,13 +152,13 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
 3. Modificare il file di testo e aggiungere quanto segue:
 
-    ```
+    ```text
     ColorId, ColorName
     0,Red
     1,Blue
     ```
 
-4. Usare i passaggi descritti in [Associazione dei dati SQL](#AddingDataBindingWebTest_BindSQLData), ma scegliere File CSV come origine dati.
+4. Usare i passaggi descritti in [Aggiungere l'origine dati](#add-the-data-source), ma scegliere File CSV come origine dati.
 
      ![Immettere un nome e scegliere un file CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
@@ -166,13 +166,13 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
 **R.** Se non è possibile aggiungere intestazioni di colonna, usare un file di descrizione dello schema per gestire il file CSV come database.
 
-1. Aggiungere un nuovo file di testo denominato schema.ini.
+1. Aggiungere un nuovo file di testo denominato *schema.ini*.
 
      ![Aggiungere un file schema.ini](../test/media/web_test_databinding_schemafile.png)
 
-2. Modificare il file schema.ini per aggiungere le informazioni in cui è descritta la struttura dei dati. Ad esempio, un file di schema in cui è descritto il file CSV potrebbe essere simile al seguente:
+2. Modificare il file *schema.ini* per aggiungere le informazioni che descrivono la struttura dei dati. Ad esempio, un file di schema in cui è descritto il file CSV potrebbe essere simile al seguente:
 
-    ```
+    ```text
     [testdata.csv]
     ColNameHeader=False
     ```
@@ -181,7 +181,7 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
      ![Aggiungere un'origine dati al test prestazioni Web](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. Se si utilizza un file schema.ini, scegliere Database (non File CSV) come origine dati e denominarlo.
+4. Se si usa un file *schema.ini*, scegliere **Database** (non File CSV) come origine dati e denominarlo.
 
      ![Aggiungere l'origine dati di un database](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -193,11 +193,11 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
      ![Selezionare il provider di dati OLE DB di .NET Framework](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. Scegliere Avanzate.
+7. Scegliere **Avanzate**.
 
      ![Scegliere Avanzate](../test/media/web_test_databinding_advanced.png)
 
-8. Per la proprietà Provider, selezionare Microsoft.Jet.OLEDB.4.0, quindi impostare Proprietà estese su Testo;HDR=NO.
+8. Per la proprietà Provider, selezionare Microsoft.Jet.OLEDB.4.0, quindi impostare **Proprietà estese** su Text;HDR=NO.
 
      ![Applicare le proprietà avanzate](../test/media/web_test_databinding_advancedproperties.png)
 
@@ -241,7 +241,7 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
     </ColorData>
     ```
 
-4. Usare i passaggi descritti in [Associazione dei dati SQL](#AddingDataBindingWebTest_BindSQLData), ma scegliere File XML come origine dati.
+4. Usare i passaggi descritti in [Aggiungere l'origine dati](#add-the-data-source), ma scegliere File XML come origine dati.
 
      ![Immettere un nome e scegliere un file XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
@@ -255,7 +255,7 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
 2. Sostituire i valori nel corpo SOAP con i valori associati ai dati usando la sintassi seguente:
 
-    ```
+    ```xml
     {{DataSourceName.TableName.ColumnName}}
     ```
 

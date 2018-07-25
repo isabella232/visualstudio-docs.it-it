@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 523140a4ffdc8e1eae07e3ae7dcffee5709067a2
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6c86ce1c828ff3f090ce675aeed03a4911a55544
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258970"
 ---
 # <a name="pf"></a>PF
-L'opzione **PF** di VSPerfCmd.exe imposta l'evento di profilatura campionato per gli errori di pagina e modifica facoltativamente il numero di cicli in un intervallo di campionamento dal valore predefinito di 10.  
+L'opzione *PF* di **VSPerfCmd.exe** imposta l'evento di profilatura campionato sugli errori di pagina e modifica facoltativamente il numero di errori di pagina in un intervallo di campionamento dal valore predefinito di 10.  
   
 > [!NOTE]
 >  L'opzione **PF** non può essere usata in sistemi a 64 bit.  
@@ -72,6 +73,6 @@ VSPerfCmd.exe /Launch:TestApp.exe /PF:20
   
 ## <a name="see-also"></a>Vedere anche  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
+ [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

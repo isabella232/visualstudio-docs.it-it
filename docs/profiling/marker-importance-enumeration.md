@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4c87cfa1504c997cefdc68416dac9923fa10b4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844118"
 ---
 # <a name="markerimportance-enumeration"></a>Enumerazione marker_importance
 Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.  
@@ -41,7 +42,7 @@ enum marker_importance;
 |`normal_importance`|Specifica che il marcatore è di normale importanza.|  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** cvmarkersobj.h  
+ **Intestazione:** *cvmarkersobj.h*  
   
  **Spazio dei nomi:** Concurrency::diagnostic  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632cd61d3844dc6f405090081ef76e5a2d6967b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1eb69a4662521c08fc8d2df34bbbfa41a5d1d7ea
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924995"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924079"
 ---
 # <a name="how-to-export-a-shader"></a>Procedura: Esportare uno shader
 Questo documento illustra come usare la finestra di progettazione shader per esportare uno shader DGSL (Directed Graph Shader Language) da usare nell'app.
@@ -27,13 +27,13 @@ Questo documento illustra come usare la finestra di progettazione shader per esp
 ## <a name="exporting-a-shader"></a>Esportazione di uno shader
  Dopo aver creato uno shader tramite la finestra di progettazione shader, prima di poterlo usare nell'app è necessario esportarlo in un formato supportato dall'API di grafica in uso. È possibile esportare uno shader in modi diversi, in base alle proprie esigenze.
 
-#### <a name="to-export-a-shader"></a>Per esportare uno shader
+### <a name="to-export-a-shader"></a>Per esportare uno shader
 
 1.  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aprire un file **Visual Shader Graph (.dgsl)**.
 
-     Se non ha un file **Visual Shader Graph (.dgsl)** da aprire, crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md).
+     Se non si ha un file **Visual Shader Graph (.dgsl)** da aprire, crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md).
 
-2.  Nella barra degli strumenti **Progettazione shader** scegliere **Avanzate**, **Esporta**, **Esporta come**. Viene visualizzata la finestra di dialogo **Esporta shader**.
+2.  Nella barra degli strumenti **Progettazione shader** scegliere **Avanzate** > **Esporta** > **Esporta come**. Viene visualizzata la finestra di dialogo **Esporta shader**.
 
 3.  Nell'elenco a discesa **Salva come** scegliere il formato in cui si vuole esportare il file.
 

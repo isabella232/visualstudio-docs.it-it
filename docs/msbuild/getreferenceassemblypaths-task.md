@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b21b6bf720a4604d2f7aec2ca717c825c5476db9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1041a298b7b195180e312e54aeadd666b478cb29
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577626"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946820"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Attività GetReferenceAssemblyPaths
 Restituisce i percorsi degli assembly di riferimento dei vari framework.  
@@ -42,4 +42,4 @@ Restituisce i percorsi degli assembly di riferimento dei vari framework.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

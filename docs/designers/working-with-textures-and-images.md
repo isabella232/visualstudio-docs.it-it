@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c93b77cde590209b9217666dd1ac8382dbdd4475
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb7cc97a797d02bd8353cbcfb19af6b8f9edf674
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925511"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079660"
 ---
 # <a name="work-with-textures-and-images"></a>Usare trame e immagini
 
 È possibile usare l'editor di immagini in Visual Studio per creare e modificare trame e immagini. L'editor di immagini supporta formati avanzati per trame e immagini, come quelli usati nello sviluppo di app DirectX.
 
 > [!NOTE]
-> L'editor di immagini non supporta immagini con livello di colore minimo, come icone e cursori. Per creare o modificare questi tipi di immagini, usare l' [Image Editor for Icons (C++)](/cpp/windows/image-editor-for-icons).
+> L'editor di immagini non supporta immagini con livello di colore minimo, come icone e cursori. Per creare o modificare questi tipi di immagini, usare l'[Image Editor for Icons (C++)](/cpp/windows/image-editor-for-icons).
 
 ## <a name="textures-and-images"></a>Trame e immagini
 
@@ -55,4 +55,4 @@ Le mappe di cubo possono contenere tipi diversi di dati, ad esempio colori o nor
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Editor immagini](../designers/image-editor.md)|Descrive come usare l'editor di immagini con trame e immagini.|
-|[Esempi dell'editor immagini](../designers/image-editor-examples.md)|Contiene i collegamenti ad alcuni argomenti che descrivono come usare l'editor di immagini per eseguire attività comuni di elaborazione delle immagini.|
+|[Esempi dell'editor di immagini](../designers/image-editor-examples.md)|Contiene i collegamenti ad alcuni argomenti che descrivono come usare l'editor di immagini per eseguire attività comuni di elaborazione delle immagini.|

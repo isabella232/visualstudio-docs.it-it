@@ -10,25 +10,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e25d5052cbc70e4a45040f8ebadb8cb36daa053
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1afb0b00a7e121c611dedbc235684a67cc9cec53
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814495"
 ---
-# <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Specifica del percorso degli strumenti da riga di comando degli strumenti di profilatura
+# <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Specificare il percorso degli strumenti da riga di comando degli strumenti di profilatura
 Il percorso degli strumenti da riga di comando di Strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non è aggiunto alla variabile di ambiente PATH. Nei computer a 32 bit gli strumenti si trovano in un'unica directory. Nei computer a 64 bit sono disponibili versioni a 32 bit e a 64 bit degli strumenti di profilatura.  
   
 ## <a name="32-bit-computers"></a>Computer a 32 bit  
- Nei computer a 32 bit la directory predefinita per gli strumenti di profilatura è *Unità*\Programmi\Microsoft Visual Studio 11.0\Team Tools\Performance Tools.  
+ Nei computer a 32 bit la directory predefinita per gli strumenti di profilatura è *unità\Programmi\Microsoft Visual Studio 11.0\Team Tools\Performance Tools*.  
   
 ## <a name="64-bit-computers"></a>Computer a 64 bit  
  Nei computer a 64 bit specificare il percorso in base alla piattaforma di destinazione dell'applicazione da sottoporre a profilatura.  
   
 -   La directory predefinita per gli strumenti di profilatura per applicazioni a 32 bit è la seguente:  
   
-     *Unità*\Programmi (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools  
+     *unità\Programmi (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools*  
   
 -   La directory predefinita per gli strumenti di profilatura per applicazioni a 64 bit è la seguente:  
   
-     *Unità*\Programmi (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64
+     *unità\Programmi (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64*

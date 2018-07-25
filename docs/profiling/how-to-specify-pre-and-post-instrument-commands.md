@@ -16,13 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6bd02ae2a89f8ea8e66cb6d7b943344450375
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844638"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre- e post-strumentazione
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre e post-strumentazione
 
 È possibile specificare i comandi da eseguire prima o dopo che vengano instrumentati i file binari in una sessione di prestazioni. Tutti i comandi eseguibili dalla riga di comando possono essere specificati come eventi pre-strumentazione o post-strumentazione. Ad esempio, è possibile specificare comandi che automatizzano la riapposizione della firma di un assembly con una chiave con nome sicuro in un file batch eseguito dopo la strumentazione dei file binari.
 
@@ -32,7 +33,7 @@ La directory di lavoro nella quale vengono eseguiti i comandi dipende dal sistem
 
  **Computer a 32 bit**
 
-Nei computer a 32 bit la directory predefinita per gli strumenti di profilatura è Unità\Programmi\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.
+Nei computer a 32 bit la directory predefinita per gli strumenti di profilatura è *Unità\Programmi\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
 
 **Computer a 64 bit**
 
@@ -40,11 +41,11 @@ Nei computer a 64 bit specificare il percorso in base alla piattaforma di destin
 
 - La directory predefinita per gli strumenti di profilatura per applicazioni a 32 bit è la seguente:
 
-     *Unità*\Programmi (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *Unità\Programmi (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 - La directory predefinita per gli strumenti di profilatura per applicazioni a 64 bit è la seguente:
 
-     *Unità*\Programmi (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     *Unità\Programmi (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
 
 ## <a name="to-specify-pre-instrument-commands"></a>Per specificare comandi pre-strumentazione
 
@@ -86,4 +87,4 @@ Nei computer a 64 bit specificare il percorso in base alla piattaforma di destin
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)

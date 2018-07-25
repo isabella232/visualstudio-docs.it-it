@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b670b8ff3028dc0c9a029d7d00f9fee6f34447c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8762bb1207d7715a14effab7aee2d5d3ba5199b1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568825"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946589"
 ---
-# <a name="getassemblyidentity-task"></a>Attività GetAssemblyIdentity
+# <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (attività)
 Recupera le identità degli assembly dai file specificati ed estrae le informazioni sulle identità.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
- Nella tabella che segue vengono descritti i parametri dell'attività `GetAssemblyIdentity`.  
+ Nella tabella che segue vengono descritti i parametri dell'attività `GetAssemblyIdentity` .  
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  
@@ -61,4 +61,4 @@ Recupera le identità degli assembly dai file specificati ed estrae le informazi
 
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

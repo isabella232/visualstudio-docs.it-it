@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39c59d76d10c2028214b2a1ea15ff139000e3080
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 652a9595601c614d18daf175a72404f9570d4162
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970400"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078329"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Creare stub di metodo di unit test con il comando Crea unit test
 
@@ -32,9 +32,11 @@ Il comando **Crea unit test**:
 
 * È estendibile e supporta l'emissione di test in formato MSTest, MSTest V2, NUnit, xUnit.
 
+* Non è ancora disponibile nei progetti .NET Core.
+
 ## <a name="get-started"></a>Introduzione
 
-Per iniziare, selezionare un metodo, un tipo o uno spazio dei nomi nell'editor di codice nel progetto da testare, aprire il menu di scelta rapida e scegliere **Crea unit test**. Viene visualizzata la finestra di dialogo **Crea unit test** in cui è possibile selezionare le opzioni di creazione per i nuovi unit test.
+Per iniziare, selezionare un metodo, un tipo o uno spazio dei nomi nell'editor di codice nel progetto da testare, aprire il menu di scelta rapida e scegliere **Crea unit test**. Verrà aperta la finestra di dialogo **Crea unit test** in cui è possibile selezionare le opzioni di creazione per i nuovi unit test.
 
 ![Uso del comando Crea unit test](media/createunittestcommand.png)
 
@@ -55,12 +57,12 @@ Con Visual Studio è possibile creare facilmente unit test usando qualsiasi fram
 
 Le estensioni del framework di test sono disponibili in Visual Studio Marketplace:
 
-* [NUnit Extension for the Test Generators](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension) (Estensione NUnit per Test Generators)
-* [xUnit Extension for the Test Generators](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions) (Estensione xUnit per Test Generators)
+* [NUnit extension for the test generators](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension) (Estensione NUnit per generatori di test)
+* [xUnit.net extension for the test generators](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions) (Estensione xUnit.net per generatori di test)
 
 ## <a name="when-should-i-use-this-feature"></a>Quando si deve usare questa funzionalità?
 
-Usare questa funzionalità ogni volta che è necessario creare unit test, ma in particolare quando si testa un codice esistente con pochissimo o nessun code coverage del test e senza documentazione. In altre parole, dove la specifica del codice è limitata o inesistente. Implementa in modo efficace un approccio simile agli [unit test intelligenti](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) che caratterizzano il comportamento osservato del codice.
+Usare questa funzionalità ogni volta che è necessario creare unit test, ma in particolare quando si testa un codice esistente con poco o nessun code coverage del test e senza documentazione. In altre parole, dove la specifica del codice è limitata o inesistente. Implementa in modo efficace un approccio simile agli [unit test intelligenti](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) che caratterizzano il comportamento osservato del codice.
 
 Tuttavia, questa funzionalità può essere applicata anche alla situazione in cui lo sviluppatore inizia a scrivere e lo usa per l'avvio automatico della disciplina di unit test. All'interno del flusso di scrittura del codice, lo sviluppatore potrebbe voler creare rapidamente uno stub del metodo di unit test, con una classe di test e un progetto di test appropriati, per una parte specifica di codice.
 

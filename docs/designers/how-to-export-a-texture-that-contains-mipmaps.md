@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2126f38053cc8f83be92aeb5d3939df07e58c2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae3b12ffa91b419717e91125b658f29e7d74deb6
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923327"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923894"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Procedura: esportare una trama che contiene mipmap
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Procedura: Esportare una trama che contiene mipmap
 
 La pipeline di contenuti immagine può generare mipmap da un'immagine di origine come parte della fase di compilazione del progetto. Per ottenere alcuni effetti, a volte è necessario specificare manualmente il contenuto dell'immagine di ogni livello MIP. Se non è necessario specificare manualmente il contenuto dell'immagine di ogni livello MIP, la creazione di mipmap in fase di compilazione garantisce che il contenuto mipmap sia sempre sincronizzato e consente inoltre di eliminare i costi di prestazione per generare mipmap in fase di esecuzione.
 
@@ -27,7 +27,7 @@ Questo articolo illustra le attività seguenti:
 
 - Configurazione di pipeline di contenuti immagine per generare mipmap.
 
-## <a name="export-mipmaps"></a>Esportazione di mipmap
+## <a name="export-mipmaps"></a>Esportare mipmap
 
 La creazione di mipmap offre un livello di dettaglio automatico sullo spazio della schermata per aree con trame in giochi 3D o in app. Migliora le prestazioni di rendering di un gioco o di un'app pre-elaborando versioni a campionamento ridotto di una trama, in modo che l'intera trama non debba essere elaborata ogni volta che viene campionata.
 

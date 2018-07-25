@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703821"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924000"
 ---
 # <a name="open-file-command"></a>Comando Apri file
+
 Apre un file esistente e consente di specificare un editor.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,28 +34,32 @@ File.OpenFile filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Argomenti
- `filename`
 
- Obbligatorio. Percorso completo o parziale e nome file del file da aprire. I percorsi contenenti spazi devo devono essere racchiusi tra virgolette.
+`filename`
+
+Obbligatorio. Percorso completo o parziale e nome file del file da aprire. I percorsi contenenti spazi devo devono essere racchiusi tra virgolette.
 
 ## <a name="switches"></a>Opzioni
- /e:`editorname`
 
- Facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
+/e:`editorname`
 
- La sintassi dell'argomento /e:`editorname` usa i nomi degli editor così come visualizzati nella finestra di dialogo Apri con, racchiusi tra virgolette.
+Facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
 
- Ad esempio, per aprire un file nell'editor del codice sorgente, per l'argomento /e:`editorname` è necessario immettere quanto segue.
+La sintassi dell'argomento /e:`editorname` usa i nomi degli editor così come visualizzati nella finestra di dialogo Apri con, racchiusi tra virgolette.
+
+Ad esempio, per aprire un file nell'editor del codice sorgente, per l'argomento /e:`editorname` è necessario immettere quanto segue.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>Note
- Quando si immette un percorso, il completamento automatico tenta di individuare il percorso e il nome file corretti.
+
+Quando si immette un percorso, il completamento automatico tenta di individuare il percorso e il nome file corretti.
 
 ## <a name="example"></a>Esempio
- In questo esempio viene aperto il file di stile "Test1.css" nell'editor del codice sorgente.
+
+In questo esempio viene aperto il file di stile "Test1.css" nell'editor del codice sorgente.
 
 ```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"

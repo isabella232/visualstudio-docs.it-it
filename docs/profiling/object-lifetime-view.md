@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a160e3298d14d406b756493a97b31f0f12cdad1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255619"
 ---
 # <a name="object-lifetime-view"></a>Visualizzazione Durata oggetti
-La visualizzazione Durata oggetti è disponibile quando viene selezionata la casella di controllo **Raccogliere anche le informazioni sulla durata dell'oggetto .NET** nelle pagine delle proprietà della sessione di prestazioni.  
+La visualizzazione Durata oggetti è disponibile quando viene selezionata la casella di controllo **Raccogliere anche le informazioni sulla durata dell'oggetto .NET** nelle pagine della proprietà **Sessione prestazioni**.  
   
  Il Garbage Collector di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] gestisce l'allocazione e il rilascio di memoria per l'applicazione. Per ottimizzare le prestazioni del Garbage Collector, l'heap gestito è diviso in tre generazioni: 0, 1 e 2. Il Garbage Collector del runtime archivia i nuovi oggetti nella generazione 0. Gli oggetti non raccolti vengono promossi e archiviati nelle generazioni 1 e 2.  
   

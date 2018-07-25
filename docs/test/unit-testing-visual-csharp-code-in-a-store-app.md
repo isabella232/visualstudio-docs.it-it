@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b409e3faa44b19cf0018e770915c8a3868f9ead4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979412"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117401"
 ---
 # <a name="unit-testing-visual-c-code"></a>Testing unità di codice Visual C#
 
@@ -116,7 +116,7 @@ In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti
 
 1. Aggiungi un riferimento all'app Maths al progetto RooterTests.
 
-    1. In Esplora soluzioni scegliere il progetto **RooterTests** e quindi **Aggiungi** dal menu di scelta rapida.
+    1. In Esplora soluzioni scegliere il progetto **RooterTests** e quindi **Aggiungi riferimento** dal menu di scelta rapida.
 
     2. Nella finestra di dialogo **Aggiungi riferimento - RooterTests** espandere **Soluzione** e scegliere **Progetti**. Selezionare quindi l'elemento **Maths**.
 

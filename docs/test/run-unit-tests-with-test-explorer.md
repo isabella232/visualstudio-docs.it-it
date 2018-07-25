@@ -1,5 +1,6 @@
 ---
-title: Eseguire unit test con Esplora test
+title: Eseguire, compilare ed eseguire il debug di unit test con Esplora test
+description: Informazioni sull'esecuzione di test con Esplora test in Visual Studio. Questo argomento illustra come abilitare l'esecuzione automatica dei test dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco dei test, creare playlist, eseguire il debug dei test e usare tasti di scelta rapida per i test.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752066"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977791"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -44,7 +45,7 @@ Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i ri
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
 
-- Per eseguire tutti i test in un gruppo predefinito, scegliere **Esegui...** e quindi scegliere il gruppo dal menu.
+- Per eseguire tutti i test in un gruppo predefinito, scegliere **Esegui** e quindi scegliere il gruppo dal menu.
 
 - Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati**.
 
@@ -54,7 +55,7 @@ Mentre il test viene eseguito, la barra Superato/Non superato nella parte superi
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 
-|||
+|Button|Descrizione|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di Esplora test.|
 
@@ -126,7 +127,7 @@ Esplora test consente di raggruppare i test in categorie predefinite. La maggior
 
 È possibile usare i filtri di Esplora Test per limitare i metodi di test nei progetti che vengono visualizzati ed eseguiti.
 
-Quando si digita una stringa nella casella di ricerca di Esplora Test e si preme INVIO, l'elenco dei test viene filtrato per visualizzare solo i test i cui nomi completi contengono la stringa.
+Quando si digita una stringa nella casella di ricerca di Esplora test e si preme INVIO, l'elenco dei test viene filtrato per visualizzare solo i test i cui nomi completi contengono la stringa.
 
 Per filtrare in base a un criterio diverso:
 
@@ -153,7 +154,7 @@ Per filtrare in base a un criterio diverso:
 
 Per escludere un subset dei risultati di un filtro, usare la sintassi seguente:
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

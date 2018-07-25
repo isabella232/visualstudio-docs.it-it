@@ -14,21 +14,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ac6fe1bc08ce4bed17b2f42c568769ad4314023
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ba1bc49cc9b2a16f32c854805fdd31b095af1629
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255402"
 ---
 # <a name="per-thread-summary-report"></a>Report di riepilogo per thread
 Questo grafico a barre mostra la percentuale di tempo usata da ogni thread non nascosto per ciascuna categoria di attività durante l'intervallo di tempo attualmente visibile. "Esecuzione" indica che il thread è in esecuzione; tutte le altre categorie indicano che il thread è in attesa.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Tempo di esecuzione (visualizzazione Thread)](../profiling/execution-time-threads-view.md)   
+ [Tempo di esecuzione (Visualizzazione Thread)](../profiling/execution-time-threads-view.md)   
  [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md)   
  [Tempo di gestione della memoria](../profiling/memory-management-time.md)   
- [Tempo di precedenza](../profiling/preemption-time.md)   
- [Tempo di sospensione](../profiling/sleep-time.md)   
- [Tempo di sincronizzazione](../profiling/synchronization-time.md)   
- [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)   
+ [Periodo di precedenza](../profiling/preemption-time.md)   
+ [Periodo di sospensione](../profiling/sleep-time.md)   
+ [Periodo di sincronizzazione](../profiling/synchronization-time.md)   
+ [Periodo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)   
  [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

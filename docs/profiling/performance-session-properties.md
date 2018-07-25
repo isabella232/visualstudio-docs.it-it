@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e2daf2b92073db6b2c9eca9b1ea482142eb3ba4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254693"
 ---
 # <a name="performance-session-properties"></a>Proprietà della sessione di prestazioni
 
@@ -37,15 +38,15 @@ Per altre informazioni, vedere:
 
 [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)
 
-[Raccolta di dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
+[Raccogliere dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Procedura: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni](../profiling/how-to-set-performance-data-file-name-options.md)
+ [Procedura: Impostare le opzioni relative ai nomi file dei dati di profilatura](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
 Queste impostazioni consentono di effettuare una selezione da un elenco di file binari e specificare il relativo ordine di avvio.
 
-Per altre informazioni, vedere [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md).
+Per altre informazioni, vedere[Procedura: Specificare l'inizio del file binario](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="sampling"></a>Campionamento
 
@@ -57,12 +58,12 @@ Queste impostazioni consentono di selezionare l'evento e l'intervallo di campion
 - Contatori di prestazioni per i problemi di prestazioni ridotte
 - È possibile specificare eventi di campionamento aggiuntivi in base ai contatori delle prestazioni disponibili.
 
-Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).
+Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>Binario
-Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si esegue la profilatura di My.DLL e si sceglie di non rilocare il file binario instrumentato, viene creata una copia di backup di My.DLL denominata My.Orig.DLL. Successivamente, My.DLL viene modificato con l'inserimento di probe per la raccolta dei dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.
+Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si esegue la profilatura di *My.DLL* e si sceglie di non rilocare il file binario instrumentato, viene creata una copia di backup di *My.DLL* denominata *My.Orig.DLL*. *My.DLL* viene quindi modificato con l'inserimento di probe per la raccolta dei dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.
 
-Per altre informazioni, vedere [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md).
+Per altre informazioni, vedere[Procedura: Specificare l'inizio del file binario](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Interazioni tra livelli
 
@@ -82,11 +83,11 @@ Per altre informazioni, vedere:
 
 Queste impostazioni consentono di raccogliere i dati sui contatori delle prestazioni della CPU quando si usa il metodo di profilatura della strumentazione. I contatori delle prestazioni portatili sono disponibili indipendentemente dal modello o dal produttore della CPU. Gli eventi piattaforma invece sono specifici del modello e del produttore della CPU. Per altre informazioni sui contatori di prestazioni relative al processore, vedere la documentazione relativa al processore specifico.
 
-Per altre informazioni, vedere [Procedura: Raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md).
+Per altre informazioni, vedere [Procedura: Raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md)
 
-## <a name="windows-events"></a>Eventi Windows
+## <a name="windows-events"></a>Eventi di Windows
 
-Durante la profilatura, è possibile raccogliere i dati dai provider di traccia eventi. I dati possono essere visualizzati usando l'opzione `/calltrace` dello strumento da riga di comando VSPerfReport.exe. Per altre informazioni su Event Tracing for Windows (ETW), vedere [About Event Tracing](http://go.microsoft.com/fwlink/?linkid=90752) (Informazioni su Event Tracing).
+Durante la profilatura, è possibile raccogliere i dati dai provider di traccia eventi. I dati possono essere visualizzati usando l'opzione`/calltrace` dello strumento da riga di comando *VSPerfReport.exe*. Per altre informazioni su Event Tracing for Windows (ETW), vedere [About Event Tracing](http://go.microsoft.com/fwlink/?linkid=90752) (Informazioni su Event Tracing).
 
 Per altre informazioni, vedere:
 
@@ -113,5 +114,5 @@ Per altre informazioni, vedere:
 ## <a name="see-also"></a>Vedere anche
 
 [Panoramiche](../profiling/overviews-performance-tools.md)  
-[Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)  
-[Controllo della raccolta di dati](../profiling/controlling-data-collection.md)
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)  
+[Controllare la raccolta dati](../profiling/controlling-data-collection.md)

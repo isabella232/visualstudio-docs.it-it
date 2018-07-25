@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4d73404f8794c2a5e4e64aef36198d78a0878
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 827da75bb9faadf7506002780273979f628f20cb
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926444"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078573"
 ---
 # <a name="shader-designer-nodes"></a>Nodi della finestra di progettazione shader
 Gli articoli di questa sezione della documentazione contengono informazioni sui diversi nodi di progettazione shader che possono essere usati per creare vari effetti grafici.
 
 ## <a name="nodes-and-node-types"></a>Nodi e tipi di nodo
- La finestra di progettazione shader rappresenta gli effetti visivi sotto forma di grafo. Questi grafi sono costituiti da nodi scelti specificamente e connessi in modo preciso per ottenere l'effetto voluto. Ogni nodo rappresenta un'informazione o una funzione matematica, mentre le connessioni tra di essi rappresentano il modo in cui le informazioni attraversano il grafico per produrre il risultato. La finestra di progettazione shader offre sei diversi tipi di nodi (filtri, nodi di trama, parametri, costanti, nodi di utilità e nodi di matematica) e ogni tipo di nodo include numerosi nodi singoli. Negli altri articoli in questa sezione vengono descritti questi nodi e tipi di nodi. Vedere i collegamenti alla fine di questo documento.
+ La finestra di progettazione shader rappresenta gli effetti visivi sotto forma di grafo. Questi grafi sono costituiti da nodi scelti specificamente e connessi in modo preciso per ottenere l'effetto voluto. Ogni nodo rappresenta un'informazione o una funzione matematica, mentre le connessioni tra di essi rappresentano il modo in cui le informazioni attraversano il grafico per produrre il risultato. La finestra di progettazione shader offre sei diversi tipi di nodi (filtri, nodi di trama, parametri, costanti, nodi di utilità e nodi di matematica) e ogni tipo di nodo include numerosi nodi singoli. Negli altri articoli di questa sezione vengono descritti questi nodi e tipi di nodi. Per altre informazioni, vedere i collegamenti alla fine di questo documento.
 
 ## <a name="node-structure"></a>Struttura del nodo
  Tutti i nodi sono costituiti da una combinazione di elementi comuni. Ogni nodo possiede almeno un terminale di output sul lato destro (ad eccezione del nodo di colore finale, che rappresenta l'output dello shader). I nodi che rappresentano calcoli o campionatori di trame possiedono terminali di input sul lato sinistro ma i nodi che rappresentano informazioni non hanno terminali di input. I terminali di output sono connessi ai terminali di input per trasmettere le informazioni da un nodo a un altro.
@@ -49,5 +49,5 @@ Gli articoli di questa sezione della documentazione contengono informazioni sui 
 |[Nodi Parameter](../designers/parameter-nodes.md)|Descrive i nodi che è possibile usare per rappresentare posizione della fotocamera, proprietà del materiale, parametri di illuminazione, ora e altre informazioni sullo stato dell'app nei calcoli dello shader.|
 |[Nodi di trama](../designers/texture-nodes.md)|Descrive i nodi che è possibile usare per effettuare il campionamento di più geometrie e tipi di trama e i modi comuni per produrre o trasformare le coordinate di trama.|
 |[Nodi di matematica](../designers/math-nodes.md)|Descrive i nodi che è possibile usare per eseguire operazioni algebriche, logiche, trigonometriche e altre operazioni matematiche che eseguono il mapping direttamente alle istruzioni di HLSL.|
-|[Nodi utilità](../designers/utility-nodes.md)|Descrive i nodi che è possibile usare per eseguire calcoli di illuminazione comuni e altre operazioni comuni che non eseguono il mapping direttamente alle istruzioni di HLSL.|
+|[Nodi di utilità](../designers/utility-nodes.md)|Descrive i nodi che è possibile usare per eseguire calcoli di illuminazione comuni e altre operazioni comuni che non eseguono il mapping direttamente alle istruzioni di HLSL.|
 |[Nodi del filtro](../designers/filter-nodes.md)|Descrivei i nodi che è possibile usare per eseguire il filtraggio della trama e del colore.|

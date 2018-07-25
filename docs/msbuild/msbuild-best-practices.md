@@ -13,25 +13,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2572e300c666462c5f514452a40f810a349040f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f32626f02e0381ab285d1d6ae1b3127022da438
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571123"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078199"
 ---
-# <a name="msbuild-best-practices"></a>Procedure consigliate di MSBuild
+# <a name="msbuild-best-practices"></a>Procedure consigliate per MSBuild
 Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni riportate di seguito:  
   
 -   I valori di proprietà predefiniti vengono gestiti meglio con l'attributo `Condition` e non dichiarando una proprietà il cui valore predefinito può essere sottoposto a override nella riga di comando. Ad esempio, usare  
   
-     `<MyProperty Condition="'$(MyProperty)' == ''">`  
-  
-     `MyDefaultValue`  
-  
-     `</MyProperty>`  
+```xml
+<MyProperty Condition="'$(MyProperty)' == ''">
+   MyDefaultValue
+</MyProperty>
+```
   
 -   Evitare i caratteri jolly quando si selezionano elementi. Al contrario, specificare i file in modo esplicito. Ciò semplifica l'individuazione degli errori che possono verificarsi quando si aggiungono o si eliminano file.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Advanced Concepts](../msbuild/msbuild-advanced-concepts.md) (Concetti avanzati)
+ [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

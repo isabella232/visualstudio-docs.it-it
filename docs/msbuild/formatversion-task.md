@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5215f054f8da0e1118d4c7e66bc9c3c99d84c7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29f9cae12a66e2b442d6c42032d3f4bf65942127
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568215"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946248"
 ---
 # <a name="formatversion-task"></a>Attività FormatVersion
 Aggiunge il numero di revisione al numero di versione.  
@@ -46,4 +46,4 @@ Aggiunge il numero di revisione al numero di versione.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

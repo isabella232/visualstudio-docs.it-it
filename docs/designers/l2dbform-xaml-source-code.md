@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9f7601a7e2a24ec41a12d194aac65445c6d159
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924327"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978190"
 ---
 # <a name="l2dbformxaml-source-code"></a>Codice sorgente di L2DBForm.xaml
 
-Questo argomento contiene e descrive il file di origine XAML per [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.
+Questo argomento contiene e descrive il file di origine XAML per [Esempio di data binding WPF tramite LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), *L2DBForm.xaml*.
 
 ## <a name="overall-ui-structure"></a>Struttura complessiva dell'interfaccia utente
 
@@ -37,7 +37,7 @@ Il tag `<ObjectDataProvider>` , che si estende dalla riga 11 alla riga 25, dichi
 
 Infine, viene definito un oggetto <xref:System.Windows.DataTemplate> denominato `BookTemplate` dalla riga 28 alla riga 34. Questo modello viene usato per visualizzare le voci nella sezione dell'interfaccia utente **Book List**. Vengono usate l'associazione dati e le proprietà dinamiche di LINQ to XML per recuperare l'ID e il nome libro tramite le seguenti assegnazioni:
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
@@ -47,25 +47,25 @@ Oltre che nell'elemento <xref:System.Windows.DataTemplate> , l'associazione dati
 
 Nel tag di apertura di `<StackPanel>` , alla riga 38, la proprietà <xref:System.Windows.FrameworkElement.DataContext%2A> di questo pannello è impostata sul provider di dati `LoadedBooks` .
 
-```
+```xaml
 DataContext="{Binding Source={StaticResource LoadedBooks}}
 ```
 
 L'impostazione del contesto di dati consente (alla riga 46) all'oggetto <xref:System.Windows.Controls.TextBlock> denominato `tbRawXml` di visualizzare l'XML non elaborato tramite l'associazione alla proprietà `Xml` di questo provider di dati:
 
-```
+```xaml
 Text="{Binding Path=Xml}"
 ```
 
 L'oggetto <xref:System.Windows.Controls.ListBox> nella sezione dell'interfaccia utente **Book List** , dalla riga 58 alla riga 62, imposta il modello per i relativi elementi visualizzati sull'oggetto `BookTemplate` definito nella sezione delle risorse della finestra:
 
-```
+```xaml
 ItemTemplate ="{StaticResource BookTemplate}"
 ```
 
 Quindi, dalla riga 59 alla riga 62, i valori effettivi dei libri vengono associati a questa casella di riepilogo:
 
-```
+```xaml
 <ListBox.ItemsSource>
     <Binding Path="Elements[{http://www.mybooks.com}book]"/>
 </ListBox.ItemsSource>
@@ -73,13 +73,13 @@ Quindi, dalla riga 59 alla riga 62, i valori effettivi dei libri vengono associa
 
 La terza sezione dell'interfaccia utente, **Edit Selected Book**, associa l'oggetto <xref:System.Windows.FrameworkElement.DataContext%2A> dell'oggetto <xref:System.Windows.Controls.StackPanel> padre all'elemento attualmente selezionato della sezione dell'interfaccia utente **Book List** (riga 82):
 
-```
+```xaml
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
 Usa quindi l'associazione dati bidirezionale, in modo che i valori correnti degli elementi libro vengano visualizzati e aggiornati dalle due caselle di testo di questo pannello. L'associazione dati a proprietà dinamiche è simile a quella usata nel modello di dati `BookTemplate`:
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
@@ -247,5 +247,5 @@ Per il codice sorgente C# relativo ai gestori eventi associati agli elementi del
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: esempio LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Procedura dettagliata: Esempio LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Codice sorgente di L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)

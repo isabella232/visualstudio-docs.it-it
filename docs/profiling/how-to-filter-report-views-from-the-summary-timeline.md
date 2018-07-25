@@ -10,18 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e2eb675b63d0c0e270e1a38bc005ae29b0595d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fb2c9bc8d0bcec6bc4a07c03dc18f07286cd77c1
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815496"
 ---
-# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo
+# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Procedura: Filtrare le visualizzazioni dei report dalla sequenza temporale di riepilogo
 È possibile filtrare i dati visualizzati nei report sulle prestazioni specificando un intervallo di tempo nel grafico della sequenza temporale della visualizzazione Riepilogo. Quando si filtrano i report, il file dei dati di profilatura viene nuovamente analizzato in modo da includere solo l'intervallo di tempo specificato.  
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Per filtrare un report di profilatura dal grafico della sequenza temporale di riepilogo  
   
-1.  Nel grafico della sequenza temporale della visualizzazione Riepilogo fare clic su un punto della sequenza temporale e quindi trascinare il puntatore del mouse in un altro punto della sequenza.  
+1.  Nel grafico della sequenza temporale della visualizzazione Riepilogo fare clic su un punto della sequenza temporale e trascinare il puntatore del mouse su un altro punto della sequenza.  
   
      L'area specificata è ombreggiata.  
   

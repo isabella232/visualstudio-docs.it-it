@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ced0f3e882025e4a6e1bdd940f5aa0d189beb58
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d0eaaac47470378730c526b01b2ce2b637af5cd6
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690975"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233698"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Il metodo `CommentMarkAtProfile` inserisce un valore di timestamp, un indicatore numerico e una stringa di commento nel file con estensione *vsp*. Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.  
@@ -65,14 +65,14 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 >  I metodi CommentMarkAtProfile devono essere usati con solo con la strumentazione.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informazioni sulla funzione  
   
 |||  
 |-|-|  
-|**Intestazione**|Includere VSPerf.h|  
-|**Libreria**|Usare VSPerf.lib|  
+|**Intestazione**|Includere *VSPerf.h*|  
+|**Libreria**|Usare *VSPerf.lib*|  
 |**Unicode**|Implementato come CommentMarkAtProfileW (Unicode) e CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Esempio  
