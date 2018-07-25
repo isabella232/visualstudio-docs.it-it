@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a79e8c0f21a63bd5b64af69c2bf9778c07822d83
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574935"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081810"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedura: visualizzare un elenco di elementi separati da virgole
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedura: Visualizzare un elenco di elementi separati da virgole
 Quando si usano gli elementi elencati in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), è talvolta utile visualizzare il contenuto di tali elenchi di elementi in un modo facilmente leggibile. In alternativa, si potrebbe usare un attività che accetta un elenco di elementi separati da una stringa di separazione speciale. In entrambi i casi, è possibile specificare una stringa di separazione per un elenco di elementi.  
   
-## <a name="separating-items-in-a-list-with-commas"></a>Separazione di elementi in un elenco con virgole  
+## <a name="separate-items-in-a-list-with-commas"></a>Separare gli elementi in un elenco con virgole  
  Per impostazione predefinita, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa i punti e virgola per separare gli elementi in un elenco. Si consideri ad esempio un elemento `Message` con il valore seguente:  
   
  `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
   
- Quando l'elenco di elementi `@(TXTFile)` contiene gli elementi App1.txt, App2.txt e App3.txt, il messaggio è:  
+ Quando l'elenco di elementi `@(TXTFile)` contiene gli elementi *App1.txt*, *App2.txt* e *App3.txt*, il messaggio è:  
   
  `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
   
@@ -45,7 +45,7 @@ Quando si usano gli elementi elencati in [!INCLUDE[vstecmsbuildengine](../msbuil
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Esempio  
- In questo esempio, l'attività [Exec](../msbuild/exec-task.md) esegue lo strumento findstr per trovare le stringhe di testo specificate nel file Phrases.txt. Nel comando findstr le stringhe di ricerca letterali sono indicate dall'opzione **/c:**, pertanto il separatore di elementi `/c:` viene inserito tra gli elementi nell'elenco di elementi `@(Phrase)`.  
+ In questo esempio l'attività [Exec](../msbuild/exec-task.md) esegue lo strumento findstr per trovare le stringhe di testo specificate nel file *Phrases.txt*. Nel comando findstr le stringhe di ricerca letterali sono indicate dall'opzione **/c:**, pertanto il separatore di elementi `/c:` viene inserito tra gli elementi nell'elenco di elementi `@(Phrase)`.  
   
  Per questo esempio, la riga di comando equivalente è:  
   
@@ -69,5 +69,5 @@ Quando si usano gli elementi elencati in [!INCLUDE[vstecmsbuildengine](../msbuil
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
  [Elementi](../msbuild/msbuild-items.md)

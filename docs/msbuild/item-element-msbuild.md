@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b55cadc738fb54b1a7fe07a2d891103c0daa755d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6e33f057f3184a9a9bb19311f7206c6ab273dab8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576950"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081020"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere specificato come elemento figlio di un elemento `ItemGroup`.  
@@ -34,7 +34,7 @@ Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento u
 
 ## <a name="syntax"></a>Sintassi  
 
-```  
+```xml  
 <Item Include="*.cs"  
         Exclude="MyFile.cs"  
         Remove="RemoveFile.cs"  
@@ -96,9 +96,9 @@ Ora è tuttavia possibile passare il metadato `Version` come un attributo, come 
 ## <a name="remarks"></a>Note  
  Gli elementi `Item` definiscono gli input nel sistema di compilazione e vengono raggruppati in raccolte di elementi in base ai relativi nomi definiti dall'utente. Queste raccolte di elementi possono essere usate come parametri per le [attività](../msbuild/msbuild-tasks.md), che a loro volta usano i singoli elementi nelle raccolte per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).  
 
- L'uso della notazione `@(`*myType*`)` consente di espandere una raccolta di elementi di tipo *myType* in un elenco di stringhe delimitato da punto e virgola e di passarla a un parametro. Se il parametro è di tipo `string`, il valore del parametro è l'elenco di elementi, separati da punti e virgola. Se il parametro è una matrice di stringhe (`string[]`), ogni elemento viene inserito nella matrice in base alla posizione dei punti e virgola. Se il parametro dell'attività è di tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, il valore è il contenuto della raccolta di elementi con eventuali metadati associati. Per delimitare ciascun elemento usando un carattere diverso da un punto e virgola, usare la sintassi `@(`*myType*`, '`*separatore*`')`.  
+ L'uso della notazione @(\<myType>) consente di espandere una raccolta di elementi di tipo \<myType> in un elenco di stringhe delimitato da punto e virgola e di passarla a un parametro. Se il parametro è di tipo `string`, il valore del parametro è l'elenco di elementi, separati da punti e virgola. Se il parametro è una matrice di stringhe (`string[]`), ogni elemento viene inserito nella matrice in base alla posizione dei punti e virgola. Se il parametro dell'attività è di tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, il valore è il contenuto della raccolta di elementi con eventuali metadati associati. Per delimitare ciascun elemento usando un carattere diverso da un punto e virgola, usare la sintassi @(<myType>, '<separator>').  
 
- Il motore [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può valutare caratteri jolly come `*` e `?`, oltre ai caratteri jolly ricorsivi come `/**/*.cs`. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).  
+ Il motore [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può valutare caratteri jolly come `*` e `?` e i caratteri jolly ricorsivi come */\*\*/\*.cs*. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).  
 
 ## <a name="examples"></a>Esempi  
  Nell'esempio di codice seguente viene illustrato come dichiarare due elementi di tipo `CSFile`. Il secondo elemento dichiarato contiene i metadati con `MyMetadata` impostato su `HelloWorld`.  
@@ -111,7 +111,7 @@ Ora è tuttavia possibile passare il metadato `Version` come un attributo, come 
     </CSFile>  
 </ItemGroup>  
 ```  
-L'esempio di codice seguente mostra come usare l'attributo `Update` per modificare i metadati in un file denominato somefile.cs che è stato incluso tramite un criterio GLOB. È disponibile solo per i progetti .NET Core in Visual Studio 2017 o versioni successive.
+L'esempio di codice seguente illustra come usare l'attributo `Update` per modificare i metadati in un file denominato *somefile.cs*, incluso tramite un criterio GLOB. È disponibile solo per i progetti .NET Core in Visual Studio 2017 o versioni successive.
 
 ```xml  
 <ItemGroup>

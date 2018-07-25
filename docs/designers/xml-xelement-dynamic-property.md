@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b895865485ca3ac110670cd9d123d9a8c18ee8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69245a875d0c1df1942af12afaacc5a9ffc34b
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925612"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080837"
 ---
-# <a name="xml-xelement-dynamic-property"></a>Xml (proprietà dinamica XElement)
+# <a name="xml-xelement-dynamic-property"></a>XML (proprietà dinamica XElement)
 
 Ottiene il contenuto XML non formattato dell'elemento.
 
 ## <a name="syntax"></a>Sintassi
 
-```
+```xaml
 elem.Xml
 ```
 
-## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito
+## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito
 
 Oggetto <xref:System.String> che rappresenta il contenuto XML non formattato dell'elemento.
 

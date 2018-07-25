@@ -23,18 +23,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396253865e01ddfe5566e6cd97424af644bd9246
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578055"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152617"
 ---
-# <a name="cl-task"></a>Attività CL
-Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compilatore genera file eseguibili (EXE), librerie a collegamento dinamico (DLL) o moduli di codice (NETMODULE). Per altre informazioni, vedere [Opzioni del compilatore](/cpp/build/reference/compiler-options).  
+# <a name="cl-task"></a>attività CL
+Esegue il wrapping dello strumento del compilatore Visual C++, *cl.exe*. Il compilatore genera file eseguibili (*EXE*), librerie a collegamento dinamico (*DLL*) o moduli di codice (*NETMODULE*). Per altre informazioni, vedere [Opzioni del compilatore](/cpp/build/reference/compiler-options).  
   
 ## <a name="parameters"></a>Parametri  
- Nella tabella che segue vengono descritti i parametri dell'attività **CL**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  
+ Nell'elenco che segue vengono descritti i parametri dell'attività **CL**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  
   
 -   **AdditionalIncludeDirectories**  
   
@@ -48,7 +48,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
      Parametro String facoltativo.  
   
-     Elenco di opzioni della riga di comando. Ad esempio, "/*option1* /*option2* /*option#*". Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività.  
+     Elenco di opzioni della riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività.  
   
      Per altre informazioni, vedere [Opzioni del compilatore](/cpp/build/reference/compiler-options).  
   
@@ -202,7 +202,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
      Parametro String facoltativo.  
   
-     Seleziona il tipo delle informazioni di debug create per il programma e indica se tali informazioni vengono mantenute in file oggetto (OBJ) o in un database di programma (PDB).  
+     Seleziona il tipo delle informazioni di debug create per il programma e indica se tali informazioni vengono mantenute in file oggetto (*OBJ*) o in un database di programma (PDB).  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
@@ -380,7 +380,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
      Parametro `Boolean` facoltativo.  
   
-     Se `true`, indica al compilatore di elaborare i commenti per la documentazione nei file del codice sorgente e di creare un file XDC per ogni file del codice sorgente che contiene commenti per la documentazione.  
+     Se `true`, indica al compilatore di elaborare i commenti per la documentazione nei file del codice sorgente e di creare un file *XDC* per ogni file del codice sorgente che contiene commenti per la documentazione.  
   
      Per altre informazioni, vedere [/doc (Elabora i commenti per la documentazione) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Vedere anche il parametro **XMLDocumentationFileName** in questa tabella.  
   
@@ -452,7 +452,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
      Parametro `Boolean` facoltativo.  
   
-     Se `true`, omette il nome della libreria di runtime C predefinita nel file oggetto (OBJ). Per impostazione predefinita, il compilatore inserisce il nome della libreria nel file OBJ per indirizzare il linker alla libreria corretta.  
+     Se `true`, omette il nome della libreria di runtime C predefinita nel file oggetto (*OBJ*). Per impostazione predefinita, il compilatore inserisce il nome della libreria nel file *OBJ* per indirizzare il linker alla libreria corretta.  
   
      Per altre informazioni, vedere [/Zl (Omette il nome della libreria predefinita)](/cpp/build/reference/zl-omit-default-library-name).  
   
@@ -494,7 +494,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
      Parametro **String** facoltativo.  
   
-     Creare o usare un file di intestazione precompilata (PCH) durante la compilazione.  
+     Creare o usare un file di intestazione precompilata (*PCH*) durante la compilazione.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
@@ -782,7 +782,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
      Specifica una matrice di elementi che rappresentano i *log di rilevamento dei file di lettura*.  
   
-     Un log di rilevamento dei file di lettura (TLOG) contiene i nomi dei file di input letti da un'attività e viene usato dal sistema di compilazione del progetto per supportare le compilazioni incrementali. Per altre informazioni, vedere i parametri **TrackerLogDirectory** e **TrackFileAccess** in questa tabella.  
+     Un log di rilevamento dei file di lettura (*TLOG*) contiene i nomi dei file di input letti da un'attività e viene usato dal sistema di compilazione del progetto per supportare le compilazioni incrementali. Per altre informazioni, vedere i parametri **TrackerLogDirectory** e **TrackFileAccess** in questa tabella.  
   
 -   **TLogWriteFiles**  
   
@@ -790,7 +790,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
      Specifica una matrice di elementi che rappresentano i *log di rilevamento dei file di scrittura*.  
   
-     Un log di rilevamento dei file di scrittura (TLOG) contiene i nomi dei file di output scritti da un'attività e viene usato dal sistema di compilazione del progetto per supportare le compilazioni incrementali. Per altre informazioni, vedere i parametri **TrackerLogDirectory** e **TrackFileAccess** in questa tabella.  
+     Un log di rilevamento dei file di scrittura (*TLOG*) contiene i nomi dei file di output scritti da un'attività e viene usato dal sistema di compilazione del progetto per supportare le compilazioni incrementali. Per altre informazioni, vedere i parametri **TrackerLogDirectory** e **TrackFileAccess** in questa tabella.  
   
 -   **TrackFileAccess**  
   
@@ -800,7 +800,5 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
      Per altre informazioni, vedere i parametri **TLogReadFiles** e **TLogWriteFiles** in questa tabella.  
   
-## <a name="remarks"></a>Note  
-  
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

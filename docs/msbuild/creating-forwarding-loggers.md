@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b95b0725e0cbb3a7568e51298fb83f05b74f18fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568640"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179203"
 ---
-# <a name="creating-forwarding-loggers"></a>Creazione di logger di inoltro
+# <a name="create-forwarding-loggers"></a>Creare logger di inoltro
 I logger di inoltro migliorano l'efficienza della registrazione, perché consentono di scegliere gli eventi da monitorare quando si compilano progetti in un sistema multiprocessore. L'abilitazione dei logger di inoltro impedisce che gli eventi indesiderati sovraccarichino il logger centrale, rallentando le compilazioni e occupando spazio nel log.  
   
  Per creare un logger di inoltro è possibile implementare l'interfaccia <xref:Microsoft.Build.Framework.IForwardingLogger>, quindi implementare manualmente i metodi corrispondenti oppure usare la classe <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> e i metodi preconfigurati corrispondenti. La seconda soluzione è in genere sufficiente per la maggior parte delle applicazioni.  
@@ -35,12 +35,12 @@ I logger di inoltro migliorano l'efficienza della registrazione, perché consent
  In un ambiente multiprocessore, è probabile che i messaggi di evento non vengano ricevuti in ordine. Pertanto è necessario valutare gli eventi usando il gestore eventi nel logger di inoltro e programmarlo per determinare gli eventi da passare al redirector per l'inoltro al logger centrale. A tale scopo è possibile usare la classe <xref:Microsoft.Build.Framework.BuildEventContext> collegata a ogni messaggio per identificare gli eventi da inoltrare, quindi passare i nomi degli eventi alla classe <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> (o a una sottoclasse). Se si usa questo metodo, non è necessario altro codice specifico per inoltrare gli eventi.  
   
 ## <a name="specify-a-forwarding-logger"></a>Specificare un logger di inoltro  
- Dopo avere compilato il logger di inoltro in un assembly, è necessario richiedere a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] di usarlo durante le compilazioni. A tale scopo usare le opzioni `/FileLogger`, `/FileLoggerParameters`, e `/DistributedFileLogger` insieme a MSBuild.exe. L'opzione `/FileLogger` comunica a MSBuild.exe che il logger è collegato direttamente. L'opzione `/DistributedFileLogger` indica che è presente un file di log per ogni nodo. L'opzione `/FileLoggerParameters` consente di impostare parametri per il logger di inoltro. Per informazioni sul queste e altre opzioni disponibili per MSBuild.exe, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).  
+ Dopo avere compilato il logger di inoltro in un assembly, è necessario richiedere a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] di usarlo durante le compilazioni. A tale scopo, usare le opzioni `/FileLogger`, `/FileLoggerParameters`, e `/DistributedFileLogger` insieme a *MSBuild.exe*. L'opzione `/FileLogger` comunica a *MSBuild.exe* che il logger è collegato direttamente. L'opzione `/DistributedFileLogger` indica che è presente un file di log per ogni nodo. L'opzione `/FileLoggerParameters` consente di impostare parametri per il logger di inoltro. Per informazioni sul queste e altre opzioni di *MSBuild.exe*, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="multi-processor-aware-loggers"></a>Logger compatibili con più processori  
  Quando si compila un progetto in un sistema multiprocessore, i messaggi di compilazione di ogni processore non vengono disposti automaticamente in una sequenza unificata. È necessario stabilire una priorità di raggruppamento dei messaggi usando la classe <xref:Microsoft.Build.Framework.BuildEventContext> associata a ogni messaggio. Per altre informazioni sulla compilazione in ambienti a più processori, vedere [Registrazione in un ambiente a più processori](../msbuild/logging-in-a-multi-processor-environment.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md)  (Recupero di log di compilazione)  
+ [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Logger di compilazione](../msbuild/build-loggers.md)   
  [Registrazione in un ambiente a più processori](../msbuild/logging-in-a-multi-processor-environment.md)

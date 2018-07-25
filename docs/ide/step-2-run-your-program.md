@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0430b398fa13d565de075d1f74e856587a2762
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749284"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179060"
 ---
 # <a name="step-2-run-your-program"></a>Passaggio 2: Eseguire il programma
 Quando è stata creata una nuova soluzione, si è effettivamente compilato un programma che è possibile eseguire. Il programma non fa ancora molto: visualizza semplicemente una finestra vuota con **Form1** nella barra del titolo. È tuttavia possibile eseguirlo, come illustrato di seguito.
@@ -55,7 +55,7 @@ Barra degli strumenti **Debug**
     -   Fare clic su **X** nell'angolo in alto a destra della finestra **Form1**.
 
     > [!NOTE]
-    >  Quando si esegue il programma dall'interno dell'IDE, questa operazione viene denominata debug perché in genere la si esegue per rilevare e correggere bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Nozioni di base sul debugger](../debugger/debugger-basics.md).
+    >  Quando si esegue il programma dall'interno dell'IDE, questa operazione viene denominata debug perché in genere la si esegue per rilevare e correggere bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 

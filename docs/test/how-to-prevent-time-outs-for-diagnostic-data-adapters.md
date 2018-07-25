@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844238"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178319"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Procedura: impedire i timeout per gli adattatori dati di diagnostica
 
@@ -23,17 +23,17 @@ Se si utilizzano adattatori dati di diagnostica nelle impostazioni test, è poss
 
 -   Il servizio controller di test non è in esecuzione nel computer del controller di test. Potrebbe essere necessario riavviare il servizio. Per altre informazioni su come determinare il test controller e gestire i test controller, vedere [Gestione di test controller e agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
--   Se si raccolgono dati in un computer remoto, Microsoft Test Manager potrebbe essere bloccato dal firewall. È necessario che nel computer che esegue Microsoft Test Manager vengano accettate connessioni in ingresso dal test controller. Si verifica un timeout quando in Microsoft Test Manager non viene ricevuto un messaggio dal controller bloccato dal firewall. È necessario controllare le impostazioni del firewall nel computer in cui è in esecuzione Microsoft Test Manager. Per altre informazioni sulle impostazioni del firewall, vedere il [sito Web Microsoft](http://go.microsoft.com/fwlink/?LinkId=184980) seguente.
+-   Se si raccolgono dati in un computer remoto, Microsoft Test Manager potrebbe essere bloccato dal firewall. È necessario che nel computer che esegue Microsoft Test Manager vengano accettate connessioni in ingresso dal test controller. Si verifica un timeout quando in Microsoft Test Manager non viene ricevuto un messaggio dal controller bloccato dal firewall. È necessario controllare le impostazioni del firewall nel computer in cui è in esecuzione Microsoft Test Manager.
 
 -   Il test controller non può risolvere il nome del computer che esegue Microsoft Test Manager. Ciò potrebbe verificarsi se dal DNS viene fornito l'indirizzo errato per questo computer. Per risolvere questo problema potrebbe essere necessario contattare l'amministratore di rete.
 
- Quando si esegue un test lungo durante il quale devono essere raccolti molti dati, è possibile che si verifichi un timeout. Per risolvere il problema, è possibile attenersi alla procedura riportata di seguito.
+Quando si esegue un test lungo durante il quale devono essere raccolti molti dati, è possibile che si verifichi un timeout. Per risolvere il problema, è possibile attenersi alla procedura riportata di seguito.
 
- È possibile aumentare il timeout aggiornando il file di configurazione per Microsoft Test Manager o il file di configurazione per l'agente di test per il quale si verifica il timeout.
+È possibile aumentare il timeout aggiornando il file di configurazione per Microsoft Test Manager o il file di configurazione per l'agente di test per il quale si verifica il timeout.
 
- Il file di configurazione per Microsoft Test Manager è denominato **mtm.exe.config**. Il file è disponibile nella directory seguente: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Il file di configurazione per Microsoft Test Manager è denominato **mtm.exe.config**. Il file è disponibile nella directory seguente: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
- Per aggiornare un agente di test, è necessario aggiornare i file di configurazione seguenti nel computer dell'agente di test. Tutti questi file sono memorizzati nel computer dell'agente di test nella stessa directory: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Per aggiornare un agente di test, è necessario aggiornare i file di configurazione seguenti nel computer dell'agente di test. Tutti questi file sono memorizzati nel computer dell'agente di test nella stessa directory: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 -   QTAgent.exe.config
 
@@ -43,9 +43,9 @@ Se si utilizzano adattatori dati di diagnostica nelle impostazioni test, è poss
 
 -   QTDCAgent32.exe.config
 
- Se si eseguono test manuali e si raccolgono dati da un ambiente, quando viene creato un bug o il test case viene completato, tutti i dati raccolti dagli adattatori dati di diagnostica vengono trasferiti al computer in cui vengono eseguiti i test manuali. Se sono stati raccolti molti dati o si dispone di una connessione di rete lenta, potrebbe essere necessario più tempo del valore predefinito di 60 secondi. Se ad esempio è stato configurato l'adattatore IntelliTrace per raccogliere eventi IntelliTrace e informazioni sulle chiamate per molti processi, il trasferimento di tali dati potrebbe superare il timeout predefinito. Per aumentare questo valore, è possibile attenersi alla procedura riportata di seguito per aggiornare **mtm.exe.config**.
+Se si eseguono test manuali e si raccolgono dati da un ambiente, quando viene creato un bug o il test case viene completato, tutti i dati raccolti dagli adattatori dati di diagnostica vengono trasferiti al computer in cui vengono eseguiti i test manuali. Se sono stati raccolti molti dati o si dispone di una connessione di rete lenta, potrebbe essere necessario più tempo del valore predefinito di 60 secondi. Se ad esempio è stato configurato l'adattatore IntelliTrace per raccogliere eventi IntelliTrace e informazioni sulle chiamate per molti processi, il trasferimento di tali dati potrebbe superare il timeout predefinito. Per aumentare questo valore, è possibile attenersi alla procedura riportata di seguito per aggiornare **mtm.exe.config**.
 
- Un messaggio di errore viene visualizzato se si verifica il timeout dell'attività Test Runner o di un agente di test. Nel messaggio di errore per l'agente di test saranno presenti le informazioni sulle quali si è verificato il timeout nel computer dell'agente di test. Utilizzare la procedura riportata di seguito per aggiornare i file di configurazione, a seconda del messaggio di errore ricevuto.
+Un messaggio di errore viene visualizzato se si verifica il timeout dell'attività Test Runner o di un agente di test. Nel messaggio di errore per l'agente di test saranno presenti le informazioni sulle quali si è verificato il timeout nel computer dell'agente di test. Utilizzare la procedura riportata di seguito per aggiornare i file di configurazione, a seconda del messaggio di errore ricevuto.
 
 ## <a name="to-increase-the-time-outs-for-your-diagnostic-data-adapters"></a>Per aumentare i timeout per gli adattatori dati di diagnostica
 

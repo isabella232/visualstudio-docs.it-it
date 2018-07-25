@@ -11,17 +11,17 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578601"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081475"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Procedura: Ignorare gli errori nelle attività
 A volte è necessario che una compilazione sia a tolleranza di errore in determinate attività. Se tali attività non critiche hanno esito negativo, si vuole che la compilazione prosegua perché può ugualmente produrre l'output necessario. Se, ad esempio, un progetto usa un'attività `SendMail` per inviare un messaggio di posta elettronica dopo che ogni componente è stato compilato, si può considerare accettabile che la compilazione continui fino al completamento anche quando i server di posta non sono disponibili e i messaggi di stato non possono essere inviati. O anche, ad esempio, se di solito i file intermedi vengono eliminati durante la compilazione, si può considerare accettabile che la compilazione continui fino al completamento anche quando tali file non possono essere eliminati.  
   
-## <a name="using-the-continueonerror-attribute"></a>Uso dell'attributo ContinueOnError  
+## <a name="use-the-continueonerror-attribute"></a>Usare l'attributo ContinueOnError  
  L'attributo `ContinueOnError` dell'elemento `Task` controlla se una compilazione si arresta o continua quando si verifica un errore dell'attività. Questo attributo controlla anche se gli errori vengono considerati errori o avvisi quando la compilazione continua.  
   
  L'attributo `ContinueOnError` può contenere uno dei valori seguenti:  
@@ -63,5 +63,5 @@ A volte è necessario che una compilazione sia a tolleranza di errore in determi
   
 ## <a name="see-also"></a>Vedere anche
 [MSBuild](../msbuild/msbuild.md)  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
- [Attività](../msbuild/msbuild-tasks.md)
+[Attività MSBuild](../msbuild/msbuild-task-reference.md)   
+[Attività](../msbuild/msbuild-tasks.md)

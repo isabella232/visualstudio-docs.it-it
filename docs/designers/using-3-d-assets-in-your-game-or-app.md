@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ed78375438dd699959ce40a3427692ae1649af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917107"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081309"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>Usare gli asset 3D nel gioco o nell'app
+# <a name="use-3d-assets-in-your-game-or-app"></a>Usare asset 3D nel gioco o nell'app
 
 Questo articolo spiega come usare Visual Studio per elaborare gli asset 3D e includerli nelle build.
 
-Dopo aver creato gli asset 3D mediante gli strumenti disponibili in Visual Studio, è possibile usarli nell'app. Perché gli asset siano utilizzabili, tuttavia, è necessario convertirli in un formato supportato da DirectX. Per agevolare la conversione degli asset, Visual Studio fornisce personalizzazioni di compilazione per ogni tipo di asset che può produrre. Per includere gli asset nella build, è sufficiente configurare il progetto per l'uso delle personalizzazioni di compilazione, aggiungere gli asset al progetto e configurarli per l'uso della personalizzazione di compilazione appropriata. In seguito è possibile caricare gli asset nell'app e usarli mediante la creazione e compilazione di risorse DirectX, come per qualsiasi altra app DirectX.
+Dopo aver creato gli asset 3D mediante gli strumenti disponibili in Visual Studio, è possibile usarli nell'app. Perché sia possibile usare gli asset, è tuttavia necessario convertirli in un formato supportato da DirectX. Per agevolare la conversione degli asset, Visual Studio fornisce personalizzazioni di compilazione per ogni tipo di asset che può produrre. Per includere gli asset nella build, è sufficiente configurare il progetto per l'uso delle personalizzazioni di compilazione, aggiungere gli asset al progetto e configurarli per l'uso della personalizzazione di compilazione appropriata. In seguito è possibile caricare gli asset nell'app e usarli mediante la creazione e compilazione di risorse DirectX, come per qualsiasi altra app DirectX.
 
 ## <a name="configure-your-project"></a>Configurazione del progetto
 
@@ -36,7 +36,7 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Per aggiungere personalizzazioni di compilazione al progetto
 
-1.  In **Esplora soluzioni** aprire il menu di scelta rapida del progetto, quindi scegliere **Dipendenze di compilazione**, **Personalizzazioni compilazioni**. Verrà visualizzata la finestra di dialogo **File di personalizzazione compilazioni di Visual C++**.
+1.  In **Esplora soluzioni** aprire il menu di scelta rapida del progetto, quindi scegliere **Dipendenze di compilazione** > **Personalizzazioni compilazioni**. Verrà visualizzata la finestra di dialogo **File di personalizzazione compilazioni di Visual C++**.
 
 2.  In **File di personalizzazione compilazioni disponibili** selezionare le caselle di controllo corrispondenti ai tipi di asset da includere nel progetto, come indicato nella tabella seguente:
 
@@ -64,13 +64,13 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
 
 4.  Fare clic sul pulsante **OK** .
 
-Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i corrispondenti tipi di file di origine e output.
+Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i relativi tipi di file di origine e output.
 
 |Tipo di elemento|Tipi di file di origine|Tipi di file di output|
 |---------------|-----------------------|------------------------|
-|**Pipeline di contenuti immagine**|Portable Network Graphics (.png)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface (.dds)<br /><br /> Graphics Interchange Format (.gif)<br /><br /> Bitmap (.bmp, .dib)<br /><br /> Tagged Image File Format (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
-|**Pipeline di contenuti mesh**|AutoDesk FBX Interchange File (.fbx)<br /><br /> File Collada DAE (.dae)<br /><br /> File Wavefront OBJ (.obj)|File mesh 3D (.cmo)|
-|**Pipeline di contenuti shader**|Visual Shader Graph (.dgsl)|Compiled Shader Output (.cso)|
+|**Pipeline di contenuti immagine**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
+|**Pipeline di contenuti mesh**|AutoDesk FBX Interchange File (*.fbx*)<br /><br /> Collada DAE File (*.dae*)<br /><br /> Wavefront OBJ File (*.obj*)|3D mesh file (*.cmo*)|
+|**Pipeline di contenuti shader**|Visual Shader Graph (*.dgsl*)|Compiled Shader Output (*.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Configurazione delle proprietà della pipeline di contenuti degli asset
 
@@ -117,7 +117,7 @@ Quando si usa lo strumento della pipeline di contenuti shader per generare un as
 
 ### <a name="use-textures-and-images"></a>Uso di trame e immagini
 
-Direct3D dispone di funzioni per la creazione di risorse di trama. In Direct3D 11 la libreria di utilità D3DX11 fornisce funzioni aggiuntive per la creazione di risorse trama e visualizzazioni di risorse direttamente dai file di immagine. Per altre informazioni su come creare una risorsa trama in Direct3D 11, vedere l'argomento relativo alle [trame](http://go.microsoft.com/fwlink/p/?LinkID=246267). Per altre informazioni su come usare la libreria D3DX11 per creare una risorsa trama o una visualizzazione risorsa da un file di immagine, vedere la [procedura relativa all'inizializzazione di una trama da un file](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+Direct3D dispone di funzioni per la creazione di risorse di trama. In Direct3D 11 la libreria di utilità D3DX11 fornisce funzioni aggiuntive per la creazione di risorse trama e visualizzazioni di risorse direttamente dai file di immagine. Per altre informazioni su come creare una risorsa trama in Direct3D 11, vedere l'argomento relativo alle [trame](http://go.microsoft.com/fwlink/p/?LinkID=246267). Per altre informazioni su come usare la libreria D3DX11 per creare una risorsa trama o una visualizzazione risorse da un file di immagine, vedere [How to: Initialize a texture from a file](http://go.microsoft.com/fwlink/p/?LinkId=246268) (Procedura: Inizializzare una trama da un file).
 
 ### <a name="use-3d-models"></a>Uso di modelli 3D
 
@@ -125,7 +125,7 @@ Direct3D 11 non fornisce funzioni per la creazione di risorse da modelli 3D. È 
 
 ### <a name="use-shaders"></a>Uso degli shader
 
-Direct3D fornisce funzioni per la creazione di risorse shader e per la relativa associazione alla pipeline di grafica programmabile. Per altre informazioni su come creare una risorsa shader in Direct3D e associarla alla pipeline, vedere la [guida alla programmazione per HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521).
+Direct3D fornisce funzioni per la creazione di risorse shader e per la relativa associazione alla pipeline di grafica programmabile. Per altre informazioni su come creare una risorsa shader in Direct3D e associarla alla pipeline, vedere [Programming guide for HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521) (Guida alla programmazione per HLSL).
 
 Nella pipeline di grafica programmabile, ogni fase della pipeline deve fornire alla fase successiva un risultato che sia formattato in modo tale da essere comprensibile. Dato che la finestra di progettazione shader può solo creare i pixel shader, spetta all'app verificare che i dati che riceve siano nel formato previsto. Il pixel shader è preceduto da molte fasi di shader programmabili che eseguono trasformazioni geometriche, ovvero vertex shader, hull shader, domain shader e geometry shader. Il pixel shader è preceduto anche dalla fase del mosaico non programmabile. Indipendentemente da quale sia la fase che precede immediatamente il pixel shader, deve fornire il risultato in questo formato:
 
@@ -145,7 +145,7 @@ struct PixelShaderInput
 
 A seconda dei nodi della finestra di progettazione shader usati nello shader, può essere necessario fornire anche dati supplementari nel formato appropriato in base alle seguenti definizioni:
 
-```
+```hlsl
 Texture2D Texture1 : register( t0 );
 Texture2D Texture2 : register( t1 );
 Texture2D Texture3 : register( t2 );
@@ -208,8 +208,8 @@ cbuffer MiscVars : register(b3)
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Procedura: esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
+|[Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
 |[Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
-|[Procedura: Esportare una trama da usare con Direct2D o app Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|
+|[Procedura: Esportare una trama da usare con app Direct2D o Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Descrive gli strumenti di modifica forniti da Visual Studio per la creazione e la manipolazione di asset 3D, tra cui trame e immagini, modelli 3D e shader.|
 |[Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)|Descrive come esportare uno shader dalla finestra di progettazione shader.|

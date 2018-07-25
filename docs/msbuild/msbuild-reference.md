@@ -17,21 +17,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 494ee58730ff8ebb427f0a42c8bdb3c3e079ed43
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570476"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081784"
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è il sistema di compilazione per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I seguenti sono collegamenti ad argomenti che contengono informazioni di riferimento su [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)  
  Descrive gli elementi XML che costituiscono il formato di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
- [Task Reference](../msbuild/msbuild-task-reference.md) (Riferimento alle attività)  
+ [Riferimento alle attività](../msbuild/msbuild-task-reference.md)  
  Descrive alcune attività tipiche incluse in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Condizioni](../msbuild/msbuild-conditions.md)  
@@ -53,16 +53,16 @@ ms.locfileid: "31570476"
  Descrive gli argomenti e le opzioni che possono essere usati con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.  
   
  [File con estensione targets](../msbuild/msbuild-dot-targets-files.md)  
- Descrive il file con estensione targets incluso in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ Descrive il file con estensione *targets* incluso in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md)  
  Elenca i metadati creati con ogni elemento.  
   
  [File di risposta](../msbuild/msbuild-response-files.md)  
- Illustra i file RSP contenenti opzioni della riga di comando.  
+ Illustra i file con estensione *rsp* contenenti opzioni della riga di comando.  
   
  [Risorse aggiuntive](../msbuild/additional-resources-for-msbuild.md)  
- Contiene collegamenti ai siti Web e ai newsgroup su [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ Contiene i collegamenti ai siti Web e ai newsgroup [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  
  Contiene un riferimento alle destinazioni e alle attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per Windows Presentation Foundation (WPF).  
@@ -70,26 +70,26 @@ ms.locfileid: "31570476"
  [Caratteri speciali di escape](../msbuild/special-characters-to-escape.md)  
  Elenca i caratteri che possono essere preceduti da un carattere di escape per essere interpretati correttamente. Una sequenza di escape è una serie di caratteri indicante che ciò che segue è un'interpretazione alternativa.  
   
-## <a name="related-sections"></a>Sezioni correlate  
- [Panoramica di MSBuild ](../msbuild/msbuild.md) Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e indica collegamenti ad argomenti che illustrano come usarlo per compilare i progetti.  
+## <a name="see-also"></a>Vedere anche  
+ [MSBuild ](../msbuild/msbuild.md): offre una panoramica di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e i collegamenti ad argomenti che illustrano come usarlo per compilare i progetti.  
   
  <xref:Microsoft.Build.Conversion>  
- Contiene informazioni di riferimento sullo spazio dei nomi Conversion  
+ Contiene informazioni di riferimento sullo spazio dei nomi Conversion.  
   
  <xref:Microsoft.Build.Evaluation>  
- Contiene informazioni di riferimento sullo spazio dei nomi Evaluation  
+ Contiene informazioni di riferimento sullo spazio dei nomi Evaluation.  
   
  <xref:Microsoft.Build.Execution>  
- Contiene informazioni di riferimento sullo spazio dei nomi Execution  
+ Contiene informazioni di riferimento sullo spazio dei nomi Execution.  
   
  <xref:Microsoft.Build.Framework>  
- Contiene informazioni di riferimento sullo spazio dei nomi Framework  
+ Contiene informazioni di riferimento sullo spazio dei nomi Framework.  
   
  <xref:Microsoft.Build.Logging>  
- Contiene informazioni di riferimento sullo spazio dei nomi Logging  
+ Contiene informazioni di riferimento sullo spazio dei nomi Logging.  
   
  <xref:Microsoft.Build.Tasks>  
- Contiene informazioni di riferimento sullo spazio dei nomi Tasks  
+ Contiene informazioni di riferimento sullo spazio dei nomi Tasks.  
   
  <xref:Microsoft.Build.Utilities>  
- Contiene informazioni di riferimento sullo spazio dei nomi Utilities
+ Contiene informazioni di riferimento sullo spazio dei nomi Utilities.

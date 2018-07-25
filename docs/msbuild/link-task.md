@@ -32,18 +32,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25cea2311043f50ec08937f72d883e9334df2f81
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575897"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081709"
 ---
-# <a name="link-task"></a>Attività Link
-Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione exe) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni linker](/cpp/build/reference/linker-options).  
+# <a name="link-task"></a>Link (attività)
+Esegue il wrapping dello strumento linker di Visual C++, *link.exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).  
   
 ## <a name="parameters"></a>Parametri  
- Nella tabella che segue vengono descritti i parametri dell'attività  **Link**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  
+ Di seguito vengono descritti i parametri dell'attività **Link**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  
   
 -   **AdditionalDependencies**  
   
@@ -67,15 +67,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica gli attributi che verranno inseriti nella sezione `dependency` del file manifesto.  
   
-     Per altre informazioni, vedere [/MANIFESTDEPENDENCY (Specifica le dipendenze tra manifesti)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vedere anche "Publisher Configuration Files" (File di configurazione del server di pubblicazione) sul sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Per altre informazioni, vedere [/MANIFESTDEPENDENCY (Specifica le dipendenze tra manifesti)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vedere anche [Publisher Configuration Files](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files) (File di configurazione del server di pubblicazione).  
   
 -   **AdditionalOptions**  
   
      Parametro **String** facoltativo.  
   
-     Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio, **"***/opzione1 /opzione2 /opzione#*". Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link**.  
+     Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link**.  
   
-     Per altre informazioni, vedere [Opzioni linker](/cpp/build/reference/linker-options).  
+     Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).  
   
 -   **AddModuleNamesToAssembly**  
   
@@ -83,7 +83,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Aggiunge un riferimento del modulo a un assembly.  
   
-     Per altre informazioni, vedere [/ASSEMBLYMODULE (Aggiunge un modulo MSIL all'assembly)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).  
+     Per altre informazioni, vedere [/ASSEMBLYMODULE (aggiunge un modulo MSIL all'assembly)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).  
   
 -   **AllowIsolation**  
   
@@ -91,7 +91,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, fa eseguire al sistema operativo ricerche e caricamenti del manifesto. Se `false`, indica che le DLL vengono caricate come se il manifesto non esistesse.  
   
-     Per altre informazioni, vedere [/ALLOWISOLATION (Ricerca di manifesti)](/cpp/build/reference/allowisolation-manifest-lookup).  
+     Per altre informazioni, vedere [/ALLOWISOLATION (ricerca di manifesti)](/cpp/build/reference/allowisolation-manifest-lookup).  
   
 -   **AssemblyDebug**  
   
@@ -107,7 +107,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Crea un collegamento a una risorsa .NET Framework nel file di output. Il file di risorse non viene inserito nel file di output. Specificare il nome della risorsa.  
   
-     Per altre informazioni, vedere [/ASSEMBLYLINKRESOURCE (Collegamento a risorse .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).  
+     Per altre informazioni, vedere [/ASSEMBLYLINKRESOURCE (collegamento a risorse .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).  
   
 -   **AttributeFileTracking**  
   
@@ -147,7 +147,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
-     Per altre informazioni, vedere [/CLRIMAGETYPE (Specifica il tipo di immagine CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).  
+    Per altre informazioni, vedere [/CLRIMAGETYPE (specifica il tipo di immagine CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).  
   
 -   **CLRSupportLastError**  
   
@@ -163,7 +163,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
   
-     Per altre informazioni, vedere [/CLRSUPPORTLASTERROR (Mantiene l'ultimo codice di errore per le chiamate PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).  
+    Per altre informazioni, vedere [/CLRSUPPORTLASTERROR (mantiene l'ultimo codice di errore per le chiamate PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).  
   
 -   **CLRThreadAttribute**  
   
@@ -179,7 +179,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
   
-     Per altre informazioni, vedere [/CLRTHREADATTRIBUTE (Imposta l'attributo thread CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).  
+    Per altre informazioni, vedere [/CLRTHREADATTRIBUTE (imposta l'attributo thread CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).  
   
 -   **CLRUnmanagedCodeCheck**  
   
@@ -187,7 +187,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica se verrà applicato **SuppressUnmanagedCodeSecurityAttribute** alle chiamate P/Invoke generate dal linker effettuate dal codice gestito in DLL native.  
   
-     Per altre informazioni, vedere [/CLRUNMANAGEDCODECHECK (Aggiunge SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
+    Per altre informazioni, vedere [/CLRUNMANAGEDCODECHECK (Aggiunge SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
   
 -   **CreateHotPatchableImage**  
   
@@ -205,7 +205,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **ItaniumImage** - **/FUNCTIONPADMIN:16**  
   
-     Per altre informazioni, vedere [/FUNCTIONPADMIN (Crea immagine con funzionalità di patch a caldo)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).  
+    Per altre informazioni, vedere [/FUNCTIONPADMIN (crea immagine con funzionalità di patch a caldo)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).  
   
 -   **DataExecutionPrevention**  
   
@@ -221,7 +221,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Questo parametro fa in modo che le DLL vengano *caricate in ritardo*. Specificare il nome di una DLL di cui ritardare il caricamento.  
   
-     Per altre informazioni, vedere [/DELAYLOAD (Importazione a caricamento ritardato)](/cpp/build/reference/delayload-delay-load-import).  
+     Per altre informazioni, vedere [/DELAYLOAD (importazione a caricamento ritardato)](/cpp/build/reference/delayload-delay-load-import).  
   
 -   **DelaySign**  
   
@@ -229,7 +229,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, firma parzialmente un assembly. Per impostazione predefinita, il valore è `false`.  
   
-     Per altre informazioni, vedere [/DELAYSIGN (Firma parzialmente un assembly)](/cpp/build/reference/delaysign-partially-sign-an-assembly).  
+     Per altre informazioni, vedere [/DELAYSIGN (firma parzialmente un assembly)](/cpp/build/reference/delaysign-partially-sign-an-assembly).  
   
 -   **Driver**  
   
@@ -247,7 +247,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **WDM** - **/DRIVER:WDM**  
   
-     Per altre informazioni, vedere [/DRIVER (Driver in modalità kernel di Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).  
+    Per altre informazioni, vedere [/DRIVER (driver in modalità kernel di Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).  
   
 -   **EmbedManagedResourceFile**  
   
@@ -255,7 +255,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Incorpora un file di risorse in un assembly. Specificare il nome file di risorse necessario. Facoltativamente, specificare il nome logico, che viene usato per caricare la risorsa, e l'opzione **PRIVATE**, che indica nel manifesto dell'assembly che il file di risorse è privato.  
   
-     Per altre informazioni, vedere [/ASSEMBLYRESOURCE (Incorpora una risorsa gestita)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).  
+     Per altre informazioni, vedere [/ASSEMBLYRESOURCE (incorpora una risorsa gestita)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).  
   
 -   **EnableCOMDATFolding**  
   
@@ -277,9 +277,9 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Parametro **String** facoltativo.  
   
-     Specifica una funzione del punto di ingresso come indirizzo iniziale per un file EXE o una DLL. Specificare un nome di funzione come valore del parametro.  
+     Specifica una funzione del punto di ingresso come indirizzo iniziale per un file *EXE* o una DLL. Specificare un nome di funzione come valore del parametro.  
   
-     Per altre informazioni, vedere [/ENTRY (Simbolo del punto di ingresso)](/cpp/build/reference/entry-entry-point-symbol).  
+     Per altre informazioni, vedere [/ENTRY (simbolo del punto di ingresso)](/cpp/build/reference/entry-entry-point-symbol).  
   
 -   **FixedBaseAddress**  
   
@@ -287,13 +287,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, crea un programma o una DLL caricabile solo nel relativo indirizzo di base preferito.  
   
-     Per altre informazioni, vedere [/FIXED (Indirizzo di base fisso)](/cpp/build/reference/fixed-fixed-base-address).  
+     Per altre informazioni, vedere [/FIXED (indirizzo di base fisso)](/cpp/build/reference/fixed-fixed-base-address).  
   
 -   **ForceFileOutput**  
   
      Parametro **String** facoltativo.  
   
-     Indica al linker di creare un file EXE o una DLL valida anche se viene fatto riferimento a un simbolo che non è definito oppure è definito più volte.  
+     Indica al linker di creare un file *EXE* o una DLL valida anche se viene fatto riferimento a un simbolo che non è definito oppure è definito più volte.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
@@ -303,7 +303,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
   
-     Per altre informazioni, vedere [/FORCE (Forza l'output del file)](/cpp/build/reference/force-force-file-output).  
+    Per altre informazioni, vedere [/FORCE (forza l'output del file)](/cpp/build/reference/force-force-file-output).  
   
 -   **ForceSymbolReferences**  
   
@@ -311,7 +311,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Questo parametro indica al linker di aggiungere un simbolo specificato alla tabella dei simboli.  
   
-     Per altre informazioni, vedere [/INCLUDE (Forza riferimenti al simbolo)](/cpp/build/reference/include-force-symbol-references).  
+     Per altre informazioni, vedere [/INCLUDE (forza riferimenti al simbolo)](/cpp/build/reference/include-force-symbol-references).  
   
 -   **FunctionOrder**  
   
@@ -319,15 +319,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Questo parametro ottimizza il programma inserendo le funzioni incluse nel pacchetto specificate (COMDATs) nell'immagine secondo un ordine predeterminato.  
   
-     Per altre informazioni, vedere [/ORDER (Inserisce le funzioni in ordine)](/cpp/build/reference/order-put-functions-in-order).  
+     Per altre informazioni, vedere [/ORDER (inserisce le funzioni in ordine)](/cpp/build/reference/order-put-functions-in-order).  
   
 -   **GenerateDebugInformation**  
   
      Parametro **Boolean** facoltativo.  
   
-     Se `true`, crea informazioni di debug per il file EXE o per la DLL.  
+     Se `true`, crea informazioni di debug per il file *EXE* o per la DLL.  
   
-     Per altre informazioni, vedere [/DEBUG (Genera informazioni di debug)](/cpp/build/reference/debug-generate-debug-info).  
+     Per altre informazioni, vedere [/DEBUG (genera informazioni di debug)](/cpp/build/reference/debug-generate-debug-info).  
   
 -   **GenerateManifest**  
   
@@ -335,15 +335,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, crea un file manifesto side-by-side.  
   
-     Per altre informazioni, vedere [/MANIFEST (Crea manifesto dell'assembly syde-by-side)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).  
+     Per altre informazioni, vedere [/MANIFEST (crea manifesto dell'assembly syde-by-side)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).  
   
 -   **GenerateMapFile**  
   
      Parametro **Boolean** facoltativo.  
   
-     Se `true`, crea un *file di mappa*. L'estensione di file di mappa è map.  
+     Se `true`, crea un *file di mappa*. L'estensione di file di mappa è *map*.  
   
-     Per altre informazioni, vedere [/MAP (Genera file Map)](/cpp/build/reference/map-generate-mapfile).  
+     Per altre informazioni, vedere [/MAP (genera file Map)](/cpp/build/reference/map-generate-mapfile).  
   
 -   **HeapCommitSize**  
   
@@ -351,7 +351,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica la quantità di memoria fisica nellheap da allocare alla volta.  
   
-     Per altre informazioni, vedere l'argomento `commit` in [/HEAP (Imposta la dimensione dell'heap)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapReserveSize**.  
+     Per altre informazioni, vedere l'argomento `commit` in [/HEAP (imposta la dimensione dell'heap)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapReserveSize**.  
   
 -   **HeapReserveSize**  
   
@@ -359,7 +359,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica il totale di allocazione dell'heap nella memoria virtuale.  
   
-     Per altre informazioni, vedere l'argomento `reserve` in [/HEAP (Imposta la dimensione dell'heap)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapCommitSize** in questa tabella.  
+     Per altre informazioni, vedere l'argomento `reserve` in [/HEAP (imposta la dimensione dell'heap)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapCommitSize** in questa tabella.  
   
 -   **IgnoreAllDefaultLibraries**  
   
@@ -367,15 +367,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, indica al linker di rimuovere una o più librerie predefinite dall'elenco di librerie in cui effettua la ricerca quando risolve i riferimenti esterni.  
   
-     Per altre informazioni, vedere [/NODEFAULTLIB (ignorare le librerie)](/cpp/build/reference/nodefaultlib-ignore-libraries).  
+     Per altre informazioni, vedere [/NODEFAULTLIB (ignora librerie)](/cpp/build/reference/nodefaultlib-ignore-libraries).  
   
 -   **IgnoreEmbeddedIDL**  
   
      Parametro **Boolean** facoltativo.  
   
-     Se `true`, specifica che gli eventuali attributi IDL presenti nel codice sorgente non devono essere elaborati in un file con estensione idl.  
+     Se `true`, specifica che gli eventuali attributi IDL presenti nel codice sorgente non devono essere elaborati in un file con estensione *idl*.  
   
-     Per altre informazioni, vedere [/IGNOREIDL (Non elabora gli attributi in MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).  
+     Per altre informazioni, vedere [/IGNOREIDL (non elabora gli attributi in MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).  
   
 -   **IgnoreImportLibrary**  
   
@@ -391,7 +391,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica il nome di una o più librerie predefinite da ignorare. Separare più librerie usando il punto e virgola.  
   
-     Per altre informazioni, vedere [/NODEFAULTLIB (ignorare le librerie)](/cpp/build/reference/nodefaultlib-ignore-libraries).  
+     Per altre informazioni, vedere [/NODEFAULTLIB (ignora librerie)](/cpp/build/reference/nodefaultlib-ignore-libraries).  
   
 -   **ImageHasSafeExceptionHandlers**  
   
@@ -399,13 +399,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, il linker produce un'immagine solo se può produrre anche una tabella dei gestori di eccezioni sicuri dell'immagine.  
   
-     Per altre informazioni, vedere [/SAFESEH (L'immagine ha gestori delle eccezioni sicuri)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).  
+     Per altre informazioni, vedere [/SAFESEH (l'immagine ha gestori delle eccezioni sicuri)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).  
   
 -   **ImportLibrary**  
   
      Nome della libreria di importazione specificato dall'utente che sostituisce il nome predefinito della libreria.  
   
-     Per altre informazioni, vedere [/IMPLIB (Assegna un nome alla libreria di importazione)](/cpp/build/reference/implib-name-import-library).  
+     Per altre informazioni, vedere [/IMPLIB (assegna un nome alla libreria di importazione)](/cpp/build/reference/implib-name-import-library).  
   
 -   **KeyContainer**  
   
@@ -413,7 +413,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Contenitore che contiene la chiave per un assembly firmato.  
   
-     Per altre informazioni, vedere [/KEYCONTAINER (Specifica un contenitore di chiavi per firmare un assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Vedere anche il parametro **KeyFile** in questa tabella.  
+     Per altre informazioni, vedere [/KEYCONTAINER (specifica un contenitore di chiavi per firmare un assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Vedere anche il parametro **KeyFile** in questa tabella.  
   
 -   **KeyFile**  
   
@@ -421,7 +421,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica un file che contiene la chiave per un assembly firmato.  
   
-     Per altre informazioni, vedere [/KEYFILE (Specifica una chiave o una coppia di chiavi per firmare un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Vedere anche il parametro **KeyContainer**.  
+     Per altre informazioni, vedere [/KEYFILE (specifica una chiave o una coppia di chiavi per firmare un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Vedere anche il parametro **KeyContainer**.  
   
 -   **LargeAddressAware**  
   
@@ -429,7 +429,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, l'applicazione può gestire indirizzi superiori a 2 gigabyte.  
   
-     Per altre informazioni, vedere [/LARGEADDRESSAWARE (Gestione di indirizzi di grandi dimensioni)](/cpp/build/reference/largeaddressaware-handle-large-addresses).  
+     Per altre informazioni, vedere [/LARGEADDRESSAWARE (gestione di indirizzi di grandi dimensioni)](/cpp/build/reference/largeaddressaware-handle-large-addresses).  
   
 -   **LinkDLL**  
   
@@ -455,7 +455,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **SendErrorReport** - **/ERRORREPORT:SEND**  
   
-     Per altre informazioni, vedere [/ERRORREPORT (Segnala gli errori interni del linker)](/cpp/build/reference/errorreport-report-internal-linker-errors).  
+    Per altre informazioni, vedere [/ERRORREPORT (segnala gli errori interni del linker)](/cpp/build/reference/errorreport-report-internal-linker-errors).  
   
 -   **LinkIncremental**  
   
@@ -479,7 +479,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, specifica che il linker deve visualizzare un indicatore di stato che mostra la percentuale di completamento del collegamento.  
   
-     Per altre informazioni, vedere l'argomento `STATUS` di [/LTCG (Generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).  
+     Per altre informazioni, vedere l'argomento `STATUS` di [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).  
   
 -   **LinkTimeCodeGeneration**  
   
@@ -501,7 +501,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
          \- **/LTCG:PGUpdate**  
   
-     Per altre informazioni, vedere [/LTCG (Generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).  
+    Per altre informazioni, vedere [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).  
   
 -   **ManifestFile**  
   
@@ -509,7 +509,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Sostituisce il nome file manifesto predefinito con il nome file specificato.  
   
-     Per altre informazioni, vedere [/MANIFESTFILE (Assegna un nome al file manifesto)](/cpp/build/reference/manifestfile-name-manifest-file).  
+     Per altre informazioni, vedere [/MANIFESTFILE (assegna un nome al file manifesto)](/cpp/build/reference/manifestfile-name-manifest-file).  
   
 -   **MapExports**  
   
@@ -517,7 +517,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, indica al linker di includere le funzioni esportate in un file di mappa.  
   
-     Per altre informazioni, vedere l'argomento `EXPORTS` di [/MAPINFO (Include informazioni in file MAP)](/cpp/build/reference/mapinfo-include-information-in-mapfile).  
+     Per altre informazioni, vedere l'argomento `EXPORTS` di [/MAPINFO (include informazioni in file MAP)](/cpp/build/reference/mapinfo-include-information-in-mapfile).  
   
 -   **MapFileName**  
   
@@ -529,9 +529,9 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Parametro **String** facoltativo.  
   
-     Specifica il nome file e l'estensione di file del file IDL.  
+     Specifica il nome file e l'estensione di file del file *IDL*.  
   
-     Per altre informazioni, vedere [/IDLOUT (Assegna un nome ai file di output MIDL)](/cpp/build/reference/idlout-name-midl-output-files).  
+     Per altre informazioni, vedere [/IDLOUT (assegna un nome ai file di output MIDL)](/cpp/build/reference/idlout-name-midl-output-files).  
   
 -   **MergeSections**  
   
@@ -539,7 +539,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Combina le sezioni in un'immagine. Specificare `from-section=to-section`.  
   
-     Per altre informazioni, vedere [/MERGE (Combina sezioni)](/cpp/build/reference/merge-combine-sections).  
+     Per altre informazioni, vedere [/MERGE (combina sezioni)](/cpp/build/reference/merge-combine-sections).  
   
 -   **MidlCommandFile**  
   
@@ -547,7 +547,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specificare il nome di un file che contiene opzioni della riga di comando MIDL.  
   
-     Per altre informazioni, vedere [/MIDL (Specifica opzioni della riga di comando MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).  
+     Per altre informazioni, vedere [/MIDL (specifica opzioni della riga di comando MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).  
   
 -   **MinimumRequiredVersion**  
   
@@ -561,7 +561,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica il nome di un [file di definizione moduli](/cpp/build/reference/module-definition-dot-def-files).  
   
-     Per altre informazioni, vedere [/DEF (Specifica il file di definizione moduli)](/cpp/build/reference/def-specify-module-definition-file).  
+     Per altre informazioni, vedere [/DEF (specifica il file di definizione moduli)](/cpp/build/reference/def-specify-module-definition-file).  
   
 -   **MSDOSStubFileName**  
   
@@ -617,7 +617,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Parametro **Boolean** facoltativo.  
   
-     Se `true`, indica a Bind.exe che l'immagine collegata non deve essere associata.  
+     Se `true`, indica a *Bind.exe* che l'immagine collegata non deve essere associata.  
   
      Per altre informazioni, vedere [/ALLOWBIND (prevenzione dell'associazione di DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).  
   
@@ -627,15 +627,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, produce un file di output che può essere usato con il profiler di **strumenti per le prestazioni**.  
   
-     Per altre informazioni, vedere [/PROFILE (Profiler strumenti per le prestazioni)](/cpp/build/reference/profile-performance-tools-profiler).  
+     Per altre informazioni, vedere [/PROFILE (profiler strumenti di prestazioni)](/cpp/build/reference/profile-performance-tools-profiler).  
   
 -   **ProfileGuidedDatabase**  
   
      Parametro **String** facoltativo.  
   
-     Specifica il nome del file PGD che verrà usato per salvare le informazioni sul programma in esecuzione.  
+     Specifica il nome del file *PGD* che verrà usato per salvare le informazioni sul programma in esecuzione  
   
-     Per altre informazioni, vedere [/PGD (Specifica il database per le ottimizzazioni PGO)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).  
+     Per altre informazioni, vedere [/PGD (specifica il database per le ottimizzazioni PGO)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).  
   
 -   **ProgramDatabaseFile**  
   
@@ -643,7 +643,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica un nome per il database di programma (PDB) creato dal linker.  
   
-     Per altre informazioni, vedere [/PDB (Usa database di programma)](/cpp/build/reference/pdb-use-program-database).  
+     Per altre informazioni, vedere [/PDB (usa database di programma)](/cpp/build/reference/pdb-use-program-database).  
   
 -   **RandomizedBaseAddress**  
   
@@ -665,15 +665,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica l'allineamento di ogni sezione nello spazio degli indirizzi lineare del programma. Il valore del parametro è un numero di unità di byte e una potenza di due.  
   
-     Per altre informazioni, vedere [/ALIGN (Allineamento sezione)](/cpp/build/reference/align-section-alignment).  
+     Per altre informazioni, vedere [/ALIGN (allineamento sezione)](/cpp/build/reference/align-section-alignment).  
   
 -   **SetChecksum**  
   
      Parametro **Boolean** facoltativo.  
   
-     Se `true`, imposta il checksum nell'intestazione di un file EXE.  
+     Se `true`, imposta il checksum nell'intestazione di un file *EXE*.  
   
-     Per altre informazioni, vedere [/RELEASE (Imposta checksum)](/cpp/build/reference/release-set-the-checksum).  
+     Per altre informazioni, vedere [/RELEASE (imposta checksum)](/cpp/build/reference/release-set-the-checksum).  
   
 -   **ShowProgress**  
   
@@ -697,7 +697,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **LinkVerboseCLR** - **/VERBOSE:CLR**  
   
-     Per altre informazioni, vedere [/VERBOSE (stampa di messaggi sullo stato)](/cpp/build/reference/verbose-print-progress-messages).  
+    Per altre informazioni, vedere [/VERBOSE (stampa i messaggi sullo stato)](/cpp/build/reference/verbose-print-progress-messages).  
   
 -   **Sources**  
   
@@ -709,9 +709,9 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Parametro **String** facoltativo.  
   
-     Specifica gli attributi di una sezione. Esegue l'override degli attributi impostati quando è stato compilato il file OBJ per la sezione.  
+     Specifica gli attributi di una sezione. Esegue l'override degli attributi impostati quando è stato compilato il file *OBJ* per la sezione.  
   
-     Per altre informazioni, vedere [/SECTION (Specifica attributi di sezione)](/cpp/build/reference/section-specify-section-attributes).  
+     Per altre informazioni, vedere [/SECTION (specifica attributi di sezione)](/cpp/build/reference/section-specify-section-attributes).  
   
 -   **StackCommitSize**  
   
@@ -719,7 +719,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica la quantità di memoria fisica in ogni allocazione quando viene allocata altra memoria.  
   
-     Per altre informazioni, vedere l'argomento `commit` di [/STACK (Allocazioni stack)](/cpp/build/reference/stack-stack-allocations).  
+     Per altre informazioni, vedere l'argomento `commit` di [/STACK (allocazioni stack)](/cpp/build/reference/stack-stack-allocations).  
   
 -   **StackReserveSize**  
   
@@ -727,7 +727,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Specifica la dimensione totale di allocazione dello stack nella memoria virtuale.  
   
-     Per altre informazioni, vedere l'argomento `reserve` di [/STACK (Allocazioni stack)](/cpp/build/reference/stack-stack-allocations).  
+     Per altre informazioni, vedere l'argomento `reserve` di [/STACK (allocazioni stack)](/cpp/build/reference/stack-stack-allocations).  
   
 -   **StripPrivateSymbols**  
   
@@ -735,7 +735,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Crea un secondo file database di programma (PDB) che omette i simboli che non si vuole distribuire ai clienti. Specificare il nome del secondo file PDB.  
   
-     Per altre informazioni, vedere [/PDBSTRIPPED (Rimuove simboli privati)](/cpp/build/reference/pdbstripped-strip-private-symbols).  
+     Per altre informazioni, vedere [/PDBSTRIPPED (rimuove simboli privati)](/cpp/build/reference/pdbstripped-strip-private-symbols).  
   
 -   **SubSystem**  
   
@@ -765,7 +765,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **POSIX** - **/SUBSYSTEM:POSIX**  
   
-     Per altre informazioni, vedere [/SUBSYSTEM (Specifica il sottosistema)](/cpp/build/reference/subsystem-specify-subsystem).  
+    Per altre informazioni, vedere [/SUBSYSTEM (specifica il sottosistema)](/cpp/build/reference/subsystem-specify-subsystem).  
   
 -   **SupportNobindOfDelayLoadedDLL**  
   
@@ -773,7 +773,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, indica al linker di non includere una tabella di indirizzi di importazione nell'immagine finale.  
   
-     Per altre informazioni, vedere l'argomento `NOBIND` di [/DELAY (Impostazioni dell'importazione a caricamento ritardato)](/cpp/build/reference/delay-delay-load-import-settings).  
+     Per altre informazioni, vedere l'argomento `NOBIND` di [/DELAY (impostazioni dell'importazione a caricamento ritardato)](/cpp/build/reference/delay-delay-load-import-settings).  
   
 -   **SupportUnloadOfDelayLoadedDLL**  
   
@@ -781,7 +781,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, indica alla funzione dell'helper di caricamento ritardato di supportare lo scaricamento esplicito della DLL.  
   
-     Per altre informazioni, vedere l'argomento `UNLOAD` di [/DELAY (Impostazioni dell'importazione a caricamento ritardato)](/cpp/build/reference/delay-delay-load-import-settings).  
+     Per altre informazioni, vedere l'argomento `UNLOAD` di [/DELAY (impostazioni dell'importazione a caricamento ritardato)](/cpp/build/reference/delay-delay-load-import-settings).  
   
 -   **SuppressStartupBanner**  
   
@@ -789,7 +789,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.  
   
-     Per altre informazioni, vedere [/NOLOGO (Non visualizza il messaggio di avvio) (Linker)](/cpp/build/reference/nologo-suppress-startup-banner-linker).  
+     Per altre informazioni, vedere [/NOLOGO (non visualizza il messaggio di avvio) (Linker)](/cpp/build/reference/nologo-suppress-startup-banner-linker).  
   
 -   **SwapRunFromCD**  
   
@@ -839,7 +839,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **MachineX86** - **/MACHINE:X86**  
   
-     Per altre informazioni, vedere [/MACHINE (Specifica la piattaforma di destinazione)](/cpp/build/reference/machine-specify-target-platform).  
+    Per altre informazioni, vedere [/MACHINE (specifica la piattaforma di destinazione)](/cpp/build/reference/machine-specify-target-platform).  
   
 -   **TerminalServerAware**  
   
@@ -847,7 +847,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, imposta un flag nel campo IMAGE_OPTIONAL_HEADER DllCharacteristics nell'intestazione facoltativa dell'immagine del programma. Quando questo flag viene impostato, Terminal Server non apporta determinate modifiche all'applicazione.  
   
-     Per altre informazioni, vedere [/TSAWARE (Crea un'applicazione con supporto Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).  
+     Per altre informazioni, vedere [/TSAWARE (crea un'applicazione con supporto Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).  
   
 -   **TrackerLogDirectory**  
   
@@ -861,7 +861,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, fa in modo che non venga generato alcun file di output se il linker genera un avviso.  
   
-     Per altre informazioni, vedere [/WX (Considera gli avvisi del linker come errori)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).  
+     Per altre informazioni, vedere [/WX (considera gli avvisi del linker come errori)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).  
   
 -   **TurnOffAssemblyGeneration**  
   
@@ -869,15 +869,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Se `true`, crea un'immagine per il file di output corrente senza un assembly .NET Framework.  
   
-     Per altre informazioni, vedere [/NOASSEMBLY (Crea un modulo MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).  
+     Per altre informazioni, vedere [/NOASSEMBLY (crea un modulo MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).  
   
 -   **TypeLibraryFile**  
   
      Parametro **String** facoltativo.  
   
-     Specifica il nome file e l'estensione di file del file TLB. Specificare un nome file o un percorso e un nome file.  
+     Specifica il nome file e l'estensione di file del file *TLB*. Specificare un nome file o un percorso e un nome file.  
   
-     Per altre informazioni, vedere [/TLBOUT (Assegna un nome al file TLB)](/cpp/build/reference/tlbout-name-dot-tlb-file).  
+     Per altre informazioni, vedere [/TLBOUT (assegna un nome al file TLB)](/cpp/build/reference/tlbout-name-dot-tlb-file).  
   
 -   **TypeLibraryResourceID**  
   
@@ -885,7 +885,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Designa un valore specificato dall'utente per una libreria dei tipi creata dal linker. Specificare un valore compreso tra 1 e 65535.  
   
-     Per altre informazioni, vedere [/TLBID (Specifica l'ID di risorsa per una libreria dei tipi)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).  
+     Per altre informazioni, vedere [/TLBID (specifica l'ID di risorsa per una libreria dei tipi)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).  
   
 -   **UACExecutionLevel**  
   
@@ -901,7 +901,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
     -   **RequireAdministrator** - `level='requireAdministrator'`  
   
-     Per altre informazioni, vedere l'argomento `level` di [/MANIFESTUAC (incorporazione delle informazioni di Controllo dell'account utente nel manifesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
+    Per altre informazioni, vedere l'argomento `level` di [/MANIFESTUAC (incorporazione delle informazioni di Controllo dell'account utente nel manifesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
   
 -   **UACUIAccess**  
   
@@ -921,9 +921,9 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
      Parametro **String** facoltativo.  
   
-     Inserire un numero di versione nell'intestazione del file DLL o EXE. Specificare "`major[.minor]`". Gli argomenti `major` e `minor` sono numeri decimali compresi tra 0 e 65535.  
+     Inserire un numero di versione nell'intestazione del file *DLL* o *EXE*. Specificare "`major[.minor]`". Gli argomenti `major` e `minor` sono numeri decimali compresi tra 0 e 65535.  
   
-     Per altre informazioni, vedere [/VERSION (Informazioni sulla versione)](/cpp/build/reference/version-version-information).  
+     Per altre informazioni, vedere [/VERSION (informazioni sulla versione)](/cpp/build/reference/version-version-information).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

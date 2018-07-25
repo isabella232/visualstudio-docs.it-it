@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575608"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081657"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: compilare gli stessi file di origine con opzioni diverse
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: Compilare gli stessi file di origine con opzioni diverse
 Quando si compilano progetti, spesso si compilano gli stessi componenti con opzioni di compilazione diverse. È possibile, ad esempio, creare una build di debug con informazioni sui simboli o una build di versione senza informazioni sui simboli, ma con le ottimizzazioni abilitate oppure è possibile compilare un progetto da eseguire su una piattaforma specifica, ad esempio x86 o [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. In tutti questi casi, la maggior parte delle opzioni di compilazione è la stessa. Vengono modificate solo alcune opzioni per controllare la configurazione della build. Con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], è possibile usare le proprietà e le condizioni per creare le diverse configurazioni della build.  
   
-## <a name="using-properties-to-modify-projects"></a>Uso delle proprietà per modificare i progetti  
+## <a name="use-properties-to-modify-projects"></a>Usare le proprietà per modificare i progetti  
  L'elemento `Property` definisce una variabile a cui si fa riferimento più volte in un file di progetto, ad esempio per indicare la posizione di una directory temporanea o per impostare i valori delle proprietà usate in più configurazioni, ad esempio in una build di debug e in una build di rilascio. Per altre informazioni sulle proprietà, vedere [Proprietà di MSBuild](../msbuild/msbuild-properties.md).  
   
  È possibile usare le proprietà per modificare la configurazione della build senza dover modificare il file di progetto. L'attributo `Condition` dell'elemento `Property` e dell'elemento `PropertyGroup` consente di modificare il valore delle proprietà. Per altre informazioni sulle condizioni di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vedere [Condizioni](../msbuild/msbuild-conditions.md).  
@@ -49,20 +49,20 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
     ```  
   
-## <a name="specifying-properties-on-the-command-line"></a>Specifica delle proprietà nella riga di comando  
+## <a name="specify-properties-on-the-command-line"></a>Specificare le proprietà nella riga di comando  
  Dopo avere scritto il file di progetto in modo che accetti più configurazioni, è necessario poter modificare tali configurazioni ogni volta che si compila il progetto. A questo scopo, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consente di specificare le proprietà nella riga di comando usando l'opzione **/property** o **/p**.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Per impostare una proprietà del progetto nella riga di comando  
   
 -   Usare l'opzione **/property** con la proprietà e il valore della proprietà. Ad esempio:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - oppure -  
+    oppure  
   
-    ```  
+    ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
@@ -70,13 +70,13 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
   
 -   Usare l'opzione **/property** o **/p** più volte con la proprietà e i valori della proprietà oppure usare una sola opzione **/property** o **/p** e separare più proprietà con il punto e virgola (;). Ad esempio:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
-     - oppure  
+    oppure
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
@@ -91,13 +91,13 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
   
  Per compilare la versione di debug di questo progetto, digitare:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
  Per compilare la versione finale di questo progetto, digitare:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=retail  
 ```  
   
@@ -158,7 +158,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
   
  Per compilare il progetto, immettere il comando seguente:  
   
-```  
+```cmd  
 msbuild colortest.proj /t:go /property:Color=Green  
 ```  
   
@@ -187,5 +187,5 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ## <a name="see-also"></a>Vedere anche  
 [MSBuild](../msbuild/msbuild.md)  
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
  [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md)

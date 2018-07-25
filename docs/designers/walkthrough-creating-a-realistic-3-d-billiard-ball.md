@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 718400212d29d6bc2d45855eadbe9d1089468744
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748036"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081046"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo tridimensionale realistica
 
@@ -67,7 +67,7 @@ Una sfera è la forma di anteprima predefinita nella finestra di Progettazione s
 
 ### <a name="to-create-a-basic-texture-shader"></a>Per creare uno shader con trama di base
 
-1.  Creare uno shader DGSL da utilizzare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
+1.  Creare uno shader DGSL da usare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
 
      Per impostazione predefinita, un grafico shader è simile al seguente:
 
@@ -101,7 +101,7 @@ Per ora, è stata creata una palla da biliardo facilmente riconoscibile. Tuttavi
 
 -   Facoltativamente, è possibile regolare la modalità di comportamento dell'illuminazione configurando la proprietà **MaterialDiffuse** del grafico di shader. Per accedere alle proprietà del grafico di shader, scegliere un'area vuota dell'area di progettazione, quindi nella finestra **Proprietà** individuare la proprietà a cui si desidera accedere.
 
- Per ulteriori informazioni su come applicare una illuminazione di Lambert allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-lambert-shader.md).
+ Per altre informazioni su come applicare una illuminazione di Lambert allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-lambert-shader.md).
 
  Con l'illuminazione di Lambert applicata, la palla da biliardo dovrebbe risultare simile alla seguente:
 
@@ -123,7 +123,7 @@ Il modello di illuminazione di Lambert genera il senso di forma e dimensione che
 
 2.  Facoltativamente, è possibile regolare la modalità di comportamento dell'evidenziazione speculare configurando le proprietà speculari (**MaterialSpecular** e **MaterialSpecularPower**) del grafico di shader. Per accedere alle proprietà del grafico di shader, scegliere un'area vuota dell'area di progettazione, quindi nella finestra **Proprietà** individuare la proprietà a cui si desidera accedere.
 
- Per ulteriori informazioni su come applicare evidenziazioni speculari allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-phong-shader.md).
+ Per altre informazioni su come applicare evidenziazioni speculari allo shader, vedere [Procedura: Creare uno shader con phong di base](../designers/how-to-create-a-basic-phong-shader.md).
 
  Con l'illuminazione speculare applicata, la palla da biliardo dovrebbe risultare simile alla seguente:
 
@@ -159,19 +159,19 @@ Con le evidenziazioni speculari applicate, l'aspetto della palla da biliardo sar
 
      ![Trama per la parte superiore della mappa cubi](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
- Dopo aver creato le singole trame per i lati della mappa cubo, è possibile utilizzare uno strumento per assemblarli in una mappa cubo che può essere memorizzata in una singola trama di .dds. È possibile utilizzare qualsiasi programma per creare la mappa cubo, a condizione che si possa salvare la mappa nel formato di trama .dds. In questa procedura dettagliata viene illustrato come creare una trama utilizzando lo strumento Trama di DirectX, incluso in DirectX SDK del giugno 2010.
+ Dopo aver creato le singole trame per i lati della mappa cubo, è possibile usare uno strumento per assemblarli in una mappa cubo che può essere memorizzata in una singola trama di *.dds*. È possibile utilizzare qualsiasi programma per creare la mappa cubo, a condizione che si possa salvare la mappa nel formato di trama .dds. In questa procedura dettagliata viene illustrato come creare una trama utilizzando lo strumento Trama di DirectX, incluso in DirectX SDK del giugno 2010.
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Per assemblare una mappa cubo utilizzando lo strumento Trama di DirectX
 
-1.  Nello strumento Trama di DirectX, scegliere **File**, **New Texture** (Nuova trama) dal menu principale. Verrà visualizzata la finestra di dialogo **New Texture** (Nuova trama).
+1.  Nello strumento Trama di DirectX, scegliere **File**,  > **New Texture** (Nuova trama) dal menu principale. Verrà visualizzata la finestra di dialogo **New Texture** (Nuova trama).
 
 2.  Nello gruppo **Texture Type** (Tipo trama), scegliere **Cubemap Texture** (Trama mappa cubo).
 
 3.  Nel gruppo **Dimensioni**, immettere il valore corretto per **Larghezza** e **Altezza**, quindi scegliere **OK**. Verrà visualizzato un nuovo documento a trama. Per impostazione predefinita, la trama mostrata per prima nel documento di trama corrisponde alla faccia del cubo **Positive X** (X positivo).
 
-4.  Caricare la trama creata per il lato del cubo di trama sulla faccia del cubo. Nel menu principale, scegliere **File**, **Open Onto This Cubemap Face** (Apri in questa faccia cubo), selezionare la trama creata per il lato del cubo, quindi scegliere **Apri**.
+4.  Caricare la trama creata per il lato del cubo di trama sulla faccia del cubo. Nel menu principale, scegliere **File**,  > **Open Onto This Cubemap Face** (Apri in questa faccia cubo), selezionare la trama creata per il lato del cubo, quindi scegliere **Apri**.
 
-5.  Ripetere il passaggio 4 per le facce del cubo **Negative X** (X negativo), **Positive Z** (Z positivo) e **Negative Z** (Z negativo). A tal fine, è necessario visualizzare la faccia che si desidera caricare. Per visualizzare un'altra faccia della mappa cubo, dal menu principale scegliere **Visualizza**, **Cube Map Face** (Faccia mappa cubo), quindi selezionare la faccia che si desidera visualizzare.
+5.  Ripetere il passaggio 4 per le facce del cubo **Negative X** (X negativo), **Positive Z** (Z positivo) e **Negative Z** (Z negativo). A tal fine, è necessario visualizzare la faccia che si desidera caricare. Per visualizzare un'altra faccia della mappa cubo, dal menu principale scegliere **Visualizza**,  > **Cube Map Face** (Faccia mappa cubo), quindi selezionare la faccia che si desidera visualizzare.
 
 6.  Per la faccia del cubo **Positive Y** (Y positivo), caricare la trama creata per la parte superiore del cubo di trama.
 
