@@ -48,6 +48,7 @@
 #### [Per i contratti multilicenza](volume-license-admins.md)
 ##### [Domande frequenti sulla migrazione dell'amministrazione di VLSC](vlsc-admin-faq.md)
 ##### Onboarding dell'organizzazione
+###### [Onboarding dopo la migrazione](post-migration-onboarding.md)
 ###### [Comunicazioni di posta elettronica per l'onboarding](volume-license-onboarding-email.md)
 ###### [Trovare il PCN](find-pcn.md)
 ###### [Trovare il contatto principale](find-primary-contact.md)
