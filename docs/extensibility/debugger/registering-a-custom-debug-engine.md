@@ -1,5 +1,5 @@
 ---
-title: Motore di Debug di registrazione personalizzato | Documenti Microsoft
+title: La registrazione di un oggetto personalizzato di motore di Debug | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99ff41f116e569baaae312acd17408928a6c79f4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c3203382b33184edf5618daecd9d3dc9102e2ca6
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126288"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251650"
 ---
-# <a name="registering-a-custom-debug-engine"></a>Registrazione di un motore di Debug personalizzati
-Il motore di debug deve registrarsi come una class factory segue le convenzioni COM, nonché registrare con Visual Studio tramite la sottochiave del Registro di sistema di Visual Studio.  
+# <a name="register-a-custom-debug-engine"></a>Registrare un motore di debug personalizzato
+Il motore di debug deve registrarsi come una class factory e le convenzioni COM seguenti, nonché registrare con Visual Studio tramite la sottochiave del Registro di sistema di Visual Studio.  
   
 > [!NOTE]
->  Un esempio di come registrare un motore di debug, vedere l'esempio TextInterpreter, che viene compilato come parte di [esercitazione: creazione di un Debug motore utilizzando ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+>  È possibile trovare un esempio di come registrare un motore di debug nell'esempio TextInterpreter, che viene compilato come parte di [esercitazione: creazione di un motore di debug tramite ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
-## <a name="dll-server-process"></a>Processo del Server di DLL  
- In genere, un motore di debug viene implementato nella propria DLL come server COM. Ciò significa che il motore di debug deve registrarsi il CLSID della relativa class factory COM prima di Visual Studio è possibile accedervi. Quindi il motore di debug deve registrarsi con Visual Studio per poter valutare tutte le proprietà, in caso contrario denominata anche metriche, il debug supporta del motore. La scelta delle metriche vengono scritti nella sottochiave del Registro di sistema di Visual Studio per il motore di debug dipende dalle funzionalità che supporta il motore di debug.  
+## <a name="dll-server-process"></a>Processo server DLL  
+ Un motore di debug è in genere configurato in un proprio DLL come un server COM. Di conseguenza, il motore di debug prima necessario registrare il CLSID della relativa class factory con COM Visual Studio possono accedervi. Quindi, il motore di debug deve eseguire la registrazione con Visual Studio per stabilire le proprietà, in caso contrario, noti come le metriche, il debug supporta del motore. La scelta delle metriche scritte nella sottochiave del Registro di sistema di Visual Studio dipende dalle funzionalità che supporta il motore di debug.  
   
- [Gli helper di SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) descrive non solo le posizioni del Registro di sistema necessarie per registrare un motore di debug; vengono inoltre descritte la libreria dbgmetric.lib, che contiene un numero di funzioni utili e le dichiarazioni per gli sviluppatori di C++ che rendono la modifica del Registro di sistema più semplice.  
+ [Helper SDK per eseguire il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) descrive non solo le posizioni del Registro di sistema necessarie per registrare un motore di debug; vengono inoltre descritte le *dbgmetric.lib* libreria, che contiene un numero di funzioni utili e dichiarazioni per gli sviluppatori C++ che rendono la modifica del Registro di sistema più semplice.  
   
 ### <a name="example"></a>Esempio  
- Ecco un esempio tipico (tratto dall'esempio TextInterpreter) in cui viene illustrato come utilizzare il `SetMetric` funzione (dbgmetric.lib), per registrare un motore di debug con Visual Studio. Le metriche passate sono definite anche nel dbgmetric.lib.  
+ Nell'esempio seguente (dall'esempio TextInterpreter) illustra come usare il `SetMetric` funzione (da *dbgmetric.lib*) per registrare un motore di debug con Visual Studio. Le metriche vengono passate sono definite anche nel *dbgmetric.lib*.  
   
 > [!NOTE]
->  TextInterpreter è un motore di debug di base; non implementa e pertanto non consente di registrare, tutte le altre caratteristiche. Un motore di debug più completato avrebbe un intero elenco dei `SetMetric` supporta chiamate o i rispettivi equivalenti, uno per ogni funzionalità, il motore di debug.  
+>  TextInterpreter è un motore di debug di base; non configurato e pertanto non registra, ovvero qualsiasi altra funzionalità. Un motore di debug più completato potrebbe avere un elenco di `SetMetric` supporta le chiamate o i rispettivi equivalenti, uno per ogni funzionalità motore di debug.  
   
 ```  
 // Define base registry subkey to Visual Studio.  
@@ -52,6 +52,6 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di un motore di Debug personalizzati](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
- [Helper SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Esercitazione: Creazione di un motore di Debug tramite COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
+ [Helper SDK per eseguire il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Esercitazione: Creazione di un motore di debug tramite COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)

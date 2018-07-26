@@ -1,5 +1,5 @@
 ---
-title: Guida di orientamento per l'estensione del Debugger | Documenti Microsoft
+title: Guida di orientamento per l'estensione del Debugger | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,41 +14,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46c5a8a995644d6876457836674152eb3b3ccad7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d07c50d383539082ea841ace38e1fce28bcac3c2
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128104"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252479"
 ---
-# <a name="roadmap-for-extending-the-debugger"></a>Guida di orientamento per l'estensione del Debugger
-Questa documentazione fornisce guide e informazioni di riferimento per l'estensione di [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] del debugger con la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+# <a name="roadmap-for-extending-the-debugger"></a>Guida di orientamento per l'estensione del debugger
+Questa documentazione vengono fornite informazioni di riferimento e Guida per l'estensione di [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] del debugger con la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug documentazione include esempi, un riferimento completo e rappresentativi scenari che illustrano le modalità di standard per personalizzare il debugger.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug documentazione include esempi, un riferimento completo e numerosi scenari rappresentativi che illustrano i modi tipici per personalizzare il debugger.  
   
- Il compilatore e il relativo output determinare cosa è necessario eseguire per implementare il debug del prodotto. Se il compilatore:  
+ Il compilatore e il relativo output determinare i requisiti per l'impostazione del debug nel prodotto. Se il compilatore:  
   
--   Destinazione di Windows nativo del sistema operativo e scrive un. Il file PDB, eseguire il debug di programmi con il motore di debug di codice nativo (DE), integrata in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Non è necessario implementare un analizzatore DE o un'espressione. L'analizzatore di espressioni viene scritta per la sintassi del linguaggio di programmazione C++.  
+-   Ha come destinazione di Windows nativo del sistema operativo e scrive un *. PDB* file, eseguire il debug di programmi con il motore di debug di codice nativo (DE), integrata in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Non è necessario implementare un analizzatore DE o un'espressione. L'analizzatore di espressioni viene scritto per la sintassi del linguaggio di programmazione C++.  
   
--   Produce Microsoft intermediate language (MSIL) di output, è possibile eseguire il debug di programmi con il motore di debug di codice gestito, DE, inoltre è integrato in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Di conseguenza, è necessario implementare solo un analizzatore di espressioni. Un analizzatore di espressioni di esempio viene fornito automaticamente. Per altre informazioni, vedere i seguenti argomenti:  
+-   Produce Microsoft intermediate language (MSIL) di output, è possibile eseguire il debug di programmi con il motore di debug di codice gestito, DE, che è anche integrato in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Di conseguenza, è necessario implementare solo un analizzatore di espressioni. Un analizzatore di espressioni di esempio viene fornito automaticamente. Per altre informazioni, vedere i seguenti argomenti:  
   
-     [Valutazione dell'espressione](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
+     [Valutazione delle espressioni](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
-     [Valutazione di espressioni](../../extensibility/debugger/evaluating-expressions.md)  
+     [La valutazione delle espressioni](../../extensibility/debugger/evaluating-expressions.md)  
   
-     [Contesto di valutazione delle espressioni](../../extensibility/debugger/expression-evaluation-context.md)  
+     [Contesto di valutazione dell'espressione](../../extensibility/debugger/expression-evaluation-context.md)  
   
-     [Valutazione delle espressioni in modalità di interruzione](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
+     [Valutazione dell'espressione in modalità di interruzione](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
   
-     [Scrittura di un analizzatore di espressioni di Common Language Runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
+     [Scrivere un analizzatore di espressioni di common language runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
--   È destinato a un proprietario di un ambiente di runtime o del sistema operativo, è necessario scrivere la propria DE. Viene fornita un'esercitazione che consente di creare un semplice DE uso di ATL COM. Per altre informazioni, vedere i seguenti argomenti:  
+-   Destinato a un proprietario o un altro ambiente di runtime del sistema operativo, è necessario scrivere il proprio DE. Viene fornita un'esercitazione che crea un semplice DE utilizzando ATL COM. Per altre informazioni, vedere i seguenti argomenti:  
   
-     [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+     [Creare un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [Esercitazione: Creazione di un motore di Debug tramite COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [Esercitazione: Creare un motore di debug tramite COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
-     [Implementazione di un fornitore di porte](../../extensibility/debugger/implementing-a-port-supplier.md)  
+     [Implementare un fornitore di porte](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
      [Esempi](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   

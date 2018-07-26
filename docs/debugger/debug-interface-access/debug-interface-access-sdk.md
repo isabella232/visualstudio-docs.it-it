@@ -1,7 +1,7 @@
 ---
-title: Debug Interface Access SDK | Documenti Microsoft
+title: Eseguire il debug Interface Access SDK | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/24/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -16,31 +16,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 644827f58172b86e774330fddd207ce9ea0ed99b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 279f5b883ca359c38ad8d357d153d02ea022b9da
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457446"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251666"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
-Il Microsoft Debug interfaccia Access Software Development Kit (DIA SDK) fornisce l'accesso alle informazioni archiviate nei file di programma del database (con estensione pdb) generati dagli strumenti di post-compilazione Microsoft di debug. Poiché il formato del file PDB generato dagli strumenti di post-compilazione sottoposto a revisione costante, esponendo il formato risulta poco pratico. Tramite l'API di DIA, è possibile sviluppare applicazioni in cui cercare e visualizzare le informazioni di debug archiviate in un file con estensione pdb. Tali applicazioni, ad esempio, potrebbero segnalare informazioni sullo stack di traccia-back e analizzare i dati sulle prestazioni.  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Introduzione](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
- Offre una panoramica di DIA SDK e specifica in cui è installato il DIA SDK nonché l'intestazione obbligatoria e i file di libreria.  
-  
- [Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- Vengono fornite istruzioni su come utilizzare l'API di DIA per eseguire query sul file con estensione pdb.  
-  
- [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
- Vengono illustrate le modalità di utilizzo di simboli e relativi tag nell'API di DIA.  
-  
- [Riferimento](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
- Contiene le interfacce, metodi, enumerazioni e strutture dell'API di DIA.  
-  
- [Esempio Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)  
- Viene illustrato come utilizzare l'API di DIA per cercare e visualizzare le informazioni di debug.  
-  
- [File di origine Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)  
- Utilizzato dal codice sorgente [esempio Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md) per illustrare l'API di DIA.
+
+Il Microsoft eseguire il Debug dell'interfaccia Access Software Development Kit (DIA SDK) fornisce l'accesso alle informazioni archiviate nei file di programma del database (con estensione pdb) generati dagli strumenti di post-compilazione di Microsoft di debug. Poiché il formato del file PDB generato dagli strumenti di post-compilazione sottoposto a revisione costante, che espone il formato è poco pratico. Usando l'API di DIA, è possibile sviluppare applicazioni che cercano ed esplorare le informazioni di debug archiviate in un file con estensione pdb. Tali applicazioni potrebbe, ad esempio, segnalare informazioni sullo stack di traccia-back e analizzare i dati sulle prestazioni.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+
+[Introduzione](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+Fornisce una panoramica di DIA SDK le funzionalità e specifica in cui è installato il DIA SDK, nonché i file di libreria e intestazione obbligatoria.
+
+[Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+Vengono fornite istruzioni su come usare l'API di DIA per eseguire query sul file con estensione pdb.
+
+[Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+Viene descritto come vengono usati i simboli e relativi tag nell'API di DIA.
+
+[Riferimento](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+Contiene le interfacce, metodi, le enumerazioni e strutture dell'API di DIA.
+
+[Esempio Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)  
+Viene illustrato come usare l'API di DIA per cercare ed esplorare le informazioni di debug.

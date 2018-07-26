@@ -1,5 +1,5 @@
 ---
-title: Processi | Documenti Microsoft
+title: Processi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,34 +13,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75230740e84bb6660629b38e84df56fa8e5c1856
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3c07a9cb6c16f09f2f55b543087e25d85bc300c0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102759"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251777"
 ---
 # <a name="processes"></a>Processi
-In termini di architettura del debugger, un **processo**:  
+Nell'architettura di debugger, un *processo*:  
   
--   È un contenitore per un gruppo di programmi. È strettamente analoga a un processo di Windows, che è un contenitore per un set di thread.  
+-   È un contenitore per un set di programmi. È strettamente analoga a un processo di Windows, che è un contenitore per un set di thread.  
   
 -   Grado di identificarsi per nome, identificatore o identificatore fisico.  
   
 -   Possibile enumerare tutti i programmi in esecuzione (e i thread).  
   
--   Può descrivere se stesso, la porta in che è in esecuzione e il computer che lo contiene.  
+-   Possono descrivere se stesso, la porta in che è in esecuzione e i computer che lo contiene.  
   
--   Può creare uno o più programmi, terminare tutti i programmi viene creato o provocare un programma.  
+-   Può creare uno o più programmi, terminare tutti i programmi vengono creati o provocare un programma.  
   
--   È rappresentato da un [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) interfaccia, viene creato quando viene avviato il processo. Un processo viene avviato per la gestione a debug sessione (SDM) o [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+-   È rappresentato da un [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) interfaccia, che viene creato quando viene avviato il processo. Viene avviato un processo per la gestione a debug sessione (SDM) o [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
- Il pacchetto di debug può connettersi un motore di debug (DE) a un processo chiamando [collegamento](../../extensibility/debugger/reference/idebugprocess2-attach.md). Ciò significa che la Germania associa tutti i programmi possibili in esecuzione nel processo in grado di gestire. Ad esempio, se common language runtime DE si connette a un processo, allega solo per i programmi che eseguono codice gestito.  
+ Il pacchetto di debug può connettersi un motore di debug (DE) a un processo chiamando [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md), il che significa che la Germania collega tutti i programmi possibili in esecuzione nel processo che può gestire. Ad esempio, se common language runtime DE si collega a un processo, lo collega solo per i programmi che eseguono il codice gestito.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Programmi](../../extensibility/debugger/programs.md)   
  [Thread](../../extensibility/debugger/threads.md)   
- [Concetti di debugger](../../extensibility/debugger/debugger-concepts.md)   
+ [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)   
  [Eseguire il debug del pacchetto](../../extensibility/debugger/debug-package.md)   
  [Motore di debug](../../extensibility/debugger/debug-engine.md)   
  [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)   

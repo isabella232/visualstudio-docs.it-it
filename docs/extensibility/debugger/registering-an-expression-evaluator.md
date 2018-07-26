@@ -14,28 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3e764220fe5fe01e20b66af403dfd8b423e34e7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234026"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251205"
 ---
-# <a name="registering-an-expression-evaluator"></a>Registrazione di un analizzatore di espressioni
+# <a name="register-an-expression-evaluator"></a>Registrare un analizzatore di espressioni
 > [!IMPORTANT]
->  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni CLR, vedere [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [esempio analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- L'analizzatore di espressioni (EE) deve registrarsi come una class factory con l'ambiente Windows COM e Visual Studio. Un EE viene implementato come una DLL in modo che si possono essere inserito nello spazio degli indirizzi (DE) del motore di debug o lo spazio degli indirizzi di Visual Studio, a seconda di quale entità crea un'istanza di motore di esecuzione.  
+ L'analizzatore di espressioni (EE) deve registrarsi come una class factory con l'ambiente Windows COM e Visual Studio. Un EE è configurare sotto forma di DLL in modo che viene inserito nello spazio degli indirizzi (DE) del motore di debug o lo spazio degli indirizzi di Visual Studio, a seconda di quale entità crea un'istanza di motore di esecuzione.  
   
 ## <a name="managed-code-expression-evaluator"></a>Analizzatore di espressioni di codice gestito  
- Un codice gestito EE viene implementato come una libreria di classi, che è una DLL che si registra con l'ambiente COM, in genere avviato da una chiamata al programma VSIP **regpkg.exe**. Il processo effettivo di scrivere le chiavi del Registro di sistema per l'ambiente COM viene gestito automaticamente.  
+ Un codice gestito EE viene implementato come una libreria di classi, che è una DLL che si registra con l'ambiente COM, in genere avviato da una chiamata al programma VSIP *regpkg.exe*. Il processo effettivo di scrivere le chiavi del Registro di sistema per l'ambiente COM viene gestito automaticamente.  
   
  Un metodo della classe principale è contrassegnato con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, che indica che il metodo da chiamare quando la DLL da registrare con COM. Questo metodo di registrazione, spesso denominato `RegisterClass`, esegue l'attività di registrazione della DLL con Visual Studio. Un oggetto corrispondente `UnregisterClass` (contrassegnato con il <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), Annulla gli effetti di `RegisterClass` quando viene disinstallata la DLL.  
-  
- Le stesse voci del Registro di sistema vengono effettuate per un EE scritti in codice non gestito. l'unica differenza è che non vi sia alcuna funzione di supporto, ad esempio `SetEEMetric` per svolgere il lavoro per l'utente. Un esempio di questo processo di registrazione/annullamento della registrazione è simile alla seguente:  
+ Le stesse voci del Registro di sistema vengono effettuate per un EE scritti in codice non gestito. l'unica differenza è che non vi sia alcuna funzione di supporto, ad esempio `SetEEMetric` per svolgere il lavoro per l'utente. Ecco un esempio del processo di registrazione e annullamento della registrazione.  
   
 ### <a name="example"></a>Esempio  
- Questa funzione viene illustrato un codice gestito EE registra e Annulla la registrazione di se stesso con Visual Studio.  
+ La funzione seguente viene illustrato un codice gestito EE registra e Annulla la registrazione di se stesso con Visual Studio.  
   
 ```csharp  
 namespace EEMC  
@@ -105,14 +104,14 @@ namespace EEMC
  La DLL EE implementa il `DllRegisterServer` funzione per registrarsi con l'ambiente COM, oltre a Visual Studio.  
   
 > [!NOTE]
->  Codice del Registro di sistema di esempio di codice MyCEE è reperibile in dllentry.cpp il file, che si trova nell'installazione VSIP sotto EnVSDK\MyCPkgs\MyCEE.  
+>  Yoou possibile trovare il codice di MyCEE codice esempio del Registro di sistema nel file *dllentry.cpp*, che si trova nell'installazione VSIP sotto EnVSDK\MyCPkgs\MyCEE.  
   
-### <a name="dll-server-process"></a>Processo Server DLL  
+### <a name="dll-server-process"></a>Processo server DLL  
  Quando si registra l'analizzatore di Espressioni, il server DLL:  
   
 1.  Registra la class factory `CLSID` in base alle convenzioni COM normale.  
   
-2.  Chiama la funzione helper `SetEEMetric` da registrare con Visual Studio le metriche EE illustrate nella tabella seguente. La funzione `SetEEMetric` e le metriche specificate di seguito fanno parte della libreria dbgmetric.lib. Visualizzare [helper SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) per informazioni dettagliate.  
+2.  Chiama la funzione helper `SetEEMetric` da registrare con Visual Studio le metriche EE illustrate nella tabella seguente. La funzione `SetEEMetric` e la metrica specificata come indicato di seguito fanno parte del *dbgmetric.lib* libreria. Visualizzare [helper SDK per eseguire il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) per informazioni dettagliate.  
   
     |Metrica|Descrizione|  
     |------------|-----------------|  
@@ -127,7 +126,7 @@ namespace EEMC
 3.  Registra con Visual Studio tramite la creazione di chiavi in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*x. y*, dove *x. y* è la versione di Visual Studio per registrarsi.  
   
 ### <a name="example"></a>Esempio  
- Questa funzione viene illustrato un codice non gestito (C++) EE registra e Annulla la registrazione di se stesso con Visual Studio.  
+ La funzione seguente viene illustrato un codice non gestito (C++) EE registra e Annulla la registrazione di se stesso con Visual Studio.  
   
 ```cpp  
 /*---------------------------------------------------------  
@@ -215,4 +214,4 @@ static HRESULT RegisterMetric( bool registerIt )
   
 ## <a name="see-also"></a>Vedere anche  
  [La scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
- [Helper SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+ [Helper SDK per eseguire il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

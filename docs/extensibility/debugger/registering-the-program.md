@@ -1,5 +1,5 @@
 ---
-title: Il programma di registrazione | Documenti Microsoft
+title: Il programma di registrazione | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,34 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0cb8a2237bf8689244f53fe4763be7f78c16892
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126302"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251153"
 ---
-# <a name="registering-the-program"></a>Il programma di registrazione
-Dopo che il motore di debug ha acquisito una porta, rappresentato da un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaccia, abilitare il programma da sottoporre a debug il passaggio successivo consiste nel registrarlo con la porta. Una volta registrato, il programma è disponibile per il debug di uno dei seguenti modi:  
+# <a name="register-the-program"></a>Registrare il programma
+Dopo che il motore di debug ha acquisito una porta, rappresentato da un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaccia, il passaggio successivo di abilitare il programma da sottoporre a debug è registrarlo con la porta. Una volta registrato, il programma è disponibile per il debug di uno dei seguenti modi:  
   
--   Il processo di connessione, che consente al debugger di ottenere il completo controllo debug di un'applicazione in esecuzione.  
+-   Il processo di collegamento, che consente al debugger di ottenere il completo controllo debug di un'applicazione in esecuzione.  
   
--   Just-in-time (JIT) esegue il debug, che consente il debug dopo aver fatto di un programma che esegue in modo indipendente da un debugger. Quando l'architettura runtime rileva un errore, il debugger viene informato prima che il sistema operativo o ambiente di runtime rilascia delle risorse di memoria e del programma di errore.  
+-   Just-in-time (JIT) esegue il debug, che consente il debug dopo i fatti di un programma che viene eseguito indipendentemente da un debugger. Quando l'architettura runtime rileva un errore, il debugger riceve una notifica prima del sistema operativo o ambiente di runtime Rilascia risorse di memoria e del programma di errore.  
   
 ## <a name="registering-procedure"></a>La procedura di registrazione  
   
-#### <a name="to-register-your-program"></a>Per registrare il programma  
+### <a name="to-register-your-program"></a>Per registrare il programma  
   
 1.  Chiamare il [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metodo implementato dalla porta.  
   
      `IDebugPortNotify2::AddProgramNode` richiede un puntatore a un [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia.  
   
-     In genere, quando il sistema operativo o un ambiente di runtime carica un programma, viene creato il nodo del programma. Se il motore di debug (DE) viene richiesto di caricare il programma la Germania crea e registra il nodo del programma.  
+     In genere, quando il sistema operativo o un ambiente di runtime carica un programma, viene creato il nodo di programma. Se il motore di debug (DE) viene richiesto di caricare il programma, la Germania crea e registra il nodo di programma.  
   
-     Nell'esempio seguente viene illustrato il motore di debug del programma di avvio e registrandola con una porta.  
+     L'esempio seguente illustra il motore di debug, l'avvio del programma e registrandolo con una porta.  
   
     > [!NOTE]
-    >  Questo non è l'unico modo per avviare e riprendere un processo. Questo è principalmente un esempio di registrazione di un programma con una porta.  
+    >  Questo esempio di codice non è l'unico modo per avviare e riprendere un processo. Questo codice è principalmente un esempio di registrazione di un programma con una porta.  
   
     ```cpp  
     // This is an IDebugEngineLaunch2 method.  

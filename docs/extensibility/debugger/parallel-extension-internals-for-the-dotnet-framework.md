@@ -1,5 +1,5 @@
 ---
-title: Parallela elementi interni di estensione per .NET Framework | Documenti Microsoft
+title: Elementi interni delle estensioni in parallelo per .NET Framework | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4936efe50023ed1e193d0c2ec0d9c3423ac5cc64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 84b4106509f62f1929f20283bc86c7930c22d39b
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100611"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251085"
 ---
-# <a name="parallel-extension-internals-for-the-net-framework"></a>Elementi interni di estensione parallela per .NET Framework
-In questa sezione vengono descritti i tipi interni, metodi e campi delle classi che consentono di implementano un debugger personalizzato per le estensioni parallele di .NET Framework.  
+# <a name="parallel-extension-internals-for-the-net-framework"></a>Elementi interni delle estensioni parallele per .NET Framework
+In questa sezione vengono descritti i tipi interni, metodi e campi delle classi che consentono di implementano un debugger personalizzato per le estensioni parallele a .NET Framework.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Classe dell'attività](../../extensibility/debugger/task-class-internal-members.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Classe Task](../../extensibility/debugger/task-class-internal-members.md)  
  Vengono descritti i membri dati interni del <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe.  
   
  [Classe TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)  
@@ -45,5 +45,5 @@ In questa sezione vengono descritti i tipi interni, metodi e campi delle classi 
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [Estendibilità del Debugger di Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)   
+ [Estendibilità del debugger Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)   
  [Programmazione parallela](/dotnet/standard/parallel-programming/index)
