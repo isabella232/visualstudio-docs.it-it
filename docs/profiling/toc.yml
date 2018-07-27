@@ -399,36 +399,36 @@
                   href: collecting-application-statistics-for-stand-alone-applications.md
                   items:
                     - name: Avviare un'applicazione autonoma con il profiler e raccogliere statistiche dell'applicazione tramite la riga di comando
-                      href: how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md
+                      href: how-to-launch-a-stand-alone-app-and-collect-application-statistics.md
                     - name: Connettere il profiler a un'applicazione .NET Framework autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
                     - name: Connettere il profiler a un'applicazione nativa autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md
+                      href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
                 - name: Raccolta di dati di intervallo dettagliati per un'applicazione autonoma tramite la riga di comando del profiler
                   href: collecting-detailed-timing-data-for-a-stand-alone-application.md
                   items:
                     - name: Instrumentare un componente autonomo .NET Framework e raccogliere dati di intervallo con il profiler tramite la riga di comando
-                      href: how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md
+                      href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
                     - name: Instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il profiler tramite la riga di comando
-                      href: how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md
+                      href: how-to-instrument-a-native-component-and-collect-timing-data.md
                 - name: Raccolta di dati di concorrenza per applicazioni autonome tramite la riga di comando del profiler
                   href: collecting-concurrency-data-for-stand-alone-applications.md
                   items:
                     - name: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
                       href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md
                     - name: Avviare un'applicazione nativa autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
-                      href: how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md
+                      href: how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md
                     - name: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati su conflitti tramite la riga di comando
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
                     - name: Connettere il profiler a un'applicazione autonoma nativa e raccogliere dati di concorrenza tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md
+                      href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
                 - name: Raccolta di dati di memoria di .NET Framework per applicazioni autonome tramite la riga di comando del profiler
                   href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
                   items:
                     - name: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di memoria tramite la riga di comando
-                      href: how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md
+                      href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md
                     - name: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati di memoria tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md
+                      href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: Instrumentare un componente autonomo .NET Framework e raccogliere dati di memoria con il profiler tramite la riga di comando
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
                 - name: 'Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento'
@@ -461,7 +461,7 @@
                     - name: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di memoria tramite la riga di comando
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md
                     - name: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di memoria tramite la riga di comando del profiler
-                      href: how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md
+                      href: how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md
                     - name: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di memoria tramite la riga di comando del profiler
                       href: how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md
                 - name: Modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
