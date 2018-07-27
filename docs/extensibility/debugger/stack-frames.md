@@ -1,5 +1,5 @@
 ---
-title: Stack frame | Documenti Microsoft
+title: Stack frame | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,26 +15,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: feb2bc9d87486b6f83cf4b19ecec24c8c03edee5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21ef19e1eaf9e98da3e774f1d0038f03c131ec45
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127999"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276715"
 ---
 # <a name="stack-frames"></a>Stack frame
-In termini di architettura del debugger, un **frame dello stack**:  
+Nell'architettura di debugger, un *frame dello stack*:  
   
--   È un'astrazione di un oggetto stack che fornisce il contesto di esecuzione di un thread. Un thread viene sempre eseguito all'interno di una funzione. Uno stack frame contiene le variabili locali della funzione e gli argomenti a esso. Per eseguire il debug con Visual Studio, la lingua o l'ambiente in fase di debug deve supportare frame dello stack.  
+-   È un'astrazione di un oggetto stack che fornisce il contesto di esecuzione di un thread. Un thread viene sempre eseguito all'interno di una funzione. Uno stack frame contiene le variabili locali della funzione e gli argomenti ad esso. Per eseguire il debug con Visual Studio, la lingua o l'ambiente in fase di debug deve supportare gli stack frame.  
   
--   Può identificare e descrivere se stesso sia può restituire il thread associato. Il contesto del codice che rappresenta il puntatore all'istruzione corrente, nonché la relativa documentazione e contesti di valutazione di espressione, può restituire anche uno stack frame.  
+-   Possono entrambi identificare e descrivere se stesso e può restituire il thread associato. Uno stack frame può restituire anche il contesto del codice che rappresenta il puntatore all'istruzione corrente e la documentazione associata e contesti di valutazione di espressione.  
   
--   Proprietà che descrivono il nome, tipo e valore delle variabili locali e gli argomenti e che vengono visualizzati nelle varie finestre di debug IDE.  
+-   Dispone di proprietà che descrivono il nome, tipo e valore di argomenti e variabili locali e che vengono visualizzati nelle varie finestre di debug dell'IDE.  
   
--   È rappresentato da un [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interfaccia, in genere creata da un motore di debug (DE) o di una macchina virtuale come conseguenza un thread in esecuzione.  
+-   È rappresentato da un [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interfaccia, in genere creato da un motore di debug (DE) o una macchina virtuale come conseguenza l'esecuzione di un thread.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Contesti di debugger](../../extensibility/debugger/debugger-contexts.md)   
- [Concetti di debugger](../../extensibility/debugger/debugger-concepts.md)   
+ [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md)   
+ [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)   
  [Motore di debug](../../extensibility/debugger/debug-engine.md)   
  [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)

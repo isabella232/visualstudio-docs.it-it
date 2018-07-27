@@ -1,5 +1,5 @@
 ---
-title: Metodo SetNotificationForWaitCompletion | Documenti Microsoft
+title: Metodo SetNotificationForWaitCompletion | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a005ee7d624604dd716042bd839b48b7a367dd48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 42c5bca56bc46c0b8124fbfaf7ca046c2c1e59ec
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127018"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276338"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Metodo SetNotificationForWaitCompletion
 Imposta o Cancella il bit di stato TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in *mscorlib. dll*)  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -33,17 +33,17 @@ Imposta o Cancella il bit di stato TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
 internal void SetNotificationForWaitCompletion(bool enabled)  
 ```  
   
-#### <a name="parameters"></a>Parametri  
+### <a name="parameters"></a>Parametri  
  `enabled`  
   
- `true` Per impostare il bit; `false` a non impostato il bit.  
+ `true` Per impostare il bit; `false` per annullare il bit.  
   
 ## <a name="exceptions"></a>Eccezioni  
   
 ## <a name="remarks"></a>Note  
- Il debugger imposta questo bit per uscire il corpo di un metodo asincrono. Se `enabled` è `true`, questo metodo deve essere chiamato solo su un'attività che non è ancora stata completata. Se `enabled` è `false`, questo metodo può essere chiamato per le attività completate. In entrambi i casi deve essere utilizzato solo per le attività di tipo pianificato.  
+ Il debugger imposta questo bit consentono di uscire il corpo di un metodo async. Se `enabled` è `true`, questo metodo deve essere chiamato solo su un'attività che non è ancora stata completata. Quando `enabled` è `false`, questo metodo può essere chiamato in attività completate. In entrambi i casi deve solo essere utilizzato per le attività basato su promise.  
   
 ## <a name="requirements"></a>Requisiti  
   
 ## <a name="see-also"></a>Vedere anche  
- [Classe dell'attività](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,5 +1,5 @@
 ---
-title: Classe TaskScheduler - membri interni | Documenti Microsoft
+title: Classe TaskScheduler - membri interni | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18cd3ec809df921d6baefbf8018fefc77db238d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97b7531a60f72405d41a5a72c391ba8da91958dc
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126764"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276312"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - membri interni
-In questo argomento vengono descritti i membri interni del <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere il <xref:System.Threading.Tasks.TaskScheduler> argomento di riferimento.  
+Questo articolo descrive i membri interni del <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classi che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere il <xref:System.Threading.Tasks.TaskScheduler> articolo di riferimento.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in *mscorlib. dll*)  
   
- Poiché è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché non è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```csharp  
 .class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler  
        extends System.Object  
 ```  

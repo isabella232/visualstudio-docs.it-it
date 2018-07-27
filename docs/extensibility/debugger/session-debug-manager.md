@@ -1,5 +1,5 @@
 ---
-title: Sessione di Debug Manager | Documenti Microsoft
+title: Sessione di Debug Manager | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,26 +18,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 001c0b954cd47b9825a6982f2474d6fd6d415e23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 109dce19f85e0742217c1c478b1b1687fd5a33e8
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126231"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276325"
 ---
-# <a name="session-debug-manager"></a>Gestione di Debug delle sessioni
-Gestore di sessione di debug (SDM) gestisce un numero qualsiasi di motori di debug (DE) il debug di un numero qualsiasi di applicazioni in più processi su qualsiasi numero di macchine. Oltre a essere un motore di debug multiplexer, di SDM fornisce una visualizzazione unificata della sessione di debug all'IDE.  
+# <a name="session-debug-manager"></a>Gestione del debug della sessione
+Gestore di sessione di debug (SDM) gestisce un numero qualsiasi di motori di debug (DE) che esegue il debug di un numero qualsiasi di programmi in più processi in un numero qualsiasi di macchine. Oltre a essere un motore di debug multiplexer, il modello SDM fornisce una visualizzazione unificata della sessione di debug all'IDE.  
   
-## <a name="session-debug-manager-operation"></a>Operazione sessione di Debug Manager  
- Gestore di sessione di debug (SDM) gestisce la Germania. Potrebbero essere presenti più di un motore di debug in esecuzione in un computer nello stesso momento. Per la crittografia DEs a multiplex avanzato, la SDM esegue il wrapping di un numero di interfacce dalla crittografia DEs e li espone all'IDE come una singola interfaccia.  
+## <a name="session-debug-manager-operation"></a>Operazione sessione di debug manager  
+ Gestore di sessione di debug (SDM) gestisce il DE. Può essere presente più di un motore di debug in esecuzione in un computer nello stesso momento. Per moltiplicare la crittografia DEs, il modello SDM esegue il wrapping di un numero di interfacce dalla crittografia DEs e li espone all'IDE come un'unica interfaccia.  
   
- Per migliorare le prestazioni, non sono in multiplexing alcune interfacce. Al contrario, vengono utilizzati direttamente dalla Germania e le chiamate a queste interfacce non passano attraverso il SDM. Ad esempio, le interfacce utilizzate con memoria, il codice e i contesti di documento non sono multiplex, perché fanno riferimento a un documento in un programma specifico di debug da un DE specifico, la memoria o l'istruzione specifica. Nessun altro Germania deve essere coinvolti in tale livello di comunicazione.  
+ Per migliorare le prestazioni, non sono multiplex alcune interfacce. Al contrario, vengono utilizzati direttamente dal DE e le chiamate a queste interfacce non passano attraverso il modello SDM. Ad esempio, non sono multiplex interfacce usate con memoria, il codice e contesti di documento, perché fanno riferimento a un'istruzione specifica, memoria o documento in un programma specifico di debug da un CRI specifico. Nessun altro Germania dovrà essere coinvolti in tale livello di comunicazione.  
   
- Ciò non vale per tutti i contesti. Le chiamate all'interfaccia del contesto di valutazione espressione passano attraverso il SDM. Durante la valutazione dell'espressione, esegue il wrapping di SDM il [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaccia che fornisce all'IDE perché quando tale espressione viene valutata, potrebbero comportare più DEs che sta eseguendo il debug di programmi nello stesso processo che potrebbero essere in esecuzione sullo stesso thread.  
+ Ciò non vale per tutti i contesti. Le chiamate all'interfaccia di contesto di valutazione di espressione passano attraverso il modello SDM. Durante la valutazione dell'espressione, il modello SDM esegue il wrapping di [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaccia che consente a IDE perché quando tale espressione viene valutata e può comportare più DEs che sta eseguendo il debug di programmi nello stesso processo che potrebbero essere in esecuzione sullo stesso thread.  
   
- Il SDM funge in genere da un meccanismo di delega, ma può fungere da un meccanismo di trasmissione. Ad esempio, durante la valutazione dell'espressione, il SDM agisce come un meccanismo di trasmissione per notificare tutti DEs che è possibile eseguire il codice in un thread specificato. Analogamente, quando il SDM riceve un evento di arresto, trasmette tutti i programmi che possono più in esecuzione. Quando viene chiamato un passaggio di SDM trasmette a tutti i programmi che è possibile continuare l'esecuzione. I punti di interruzione vengono inoltre trasmessi a ogni DE.  
+ Il modello SDM funge in genere da un meccanismo di delega, ma può fungere da un meccanismo di trasmissione. Ad esempio, durante la valutazione dell'espressione, il modello SDM agisce come un meccanismo di trasmissione per notificare tutti DEs che possono eseguire codice su un thread specificato. Analogamente, quando il modello SDM riceve un evento di arresto, trasmette i programmi che non possono più in esecuzione. Quando viene chiamato un passaggio, il modello SDM trasmette ai programmi che è possibile continuare l'esecuzione. I punti di interruzione vengono anche trasmessi a ogni DE.  
   
- Il SDM non rileva il programma corrente, un thread o un frame dello stack. Il processo, un programma e un thread informazioni vengono inviate a SDM in combinazione con eventi di debug specifici.  
+ Il modello SDM non rileva il programma corrente, thread o dello stack frame. Il processo, programma e informazioni sul thread vengono inviati per il modello SDM in combinazione con eventi di debug specifici.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Motore di debug](../../extensibility/debugger/debug-engine.md)   

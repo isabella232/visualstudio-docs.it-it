@@ -1,5 +1,5 @@
 ---
-title: Campo TASK_STATE_WAITING_ON_CHILDREN | Documenti Microsoft
+title: Campo TASK_STATE_WAITING_ON_CHILDREN | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a21278ec93e066fcf818c04214a78437c66b21db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ccfee9939df0f525d147b46f304c69214c22aa7f
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125505"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276686"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>Campo TASK_STATE_WAITING_ON_CHILDREN
-L'attività ha terminato l'esecuzione del delegato ed è in attesa implicita del completamento delle attività figlio collegate.  
+L'attività ha terminato l'esecuzione del delegato ed è in modo implicito in attesa di completamento delle attività figlio collegate.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in *mscorlib. dll*)  
   
- Poiché è possibile accedere a questo membro interno di .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```csharp  
 .field static assembly literal int32 TASK_STATE_WAITING_ON_CHILDREN = int32(0x01000000)  
 ```  
   
@@ -39,4 +39,4 @@ L'attività ha terminato l'esecuzione del delegato ed è in attesa implicita del
  Se il [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene questo valore, il <xref:System.Threading.Tasks.Task.Status%2A> restituisce proprietà <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Classe dell'attività](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

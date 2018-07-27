@@ -1,5 +1,5 @@
 ---
-title: Digitare visualizzatore e il visualizzatore personalizzato | Documenti Microsoft
+title: Digitare visualizzatore e il visualizzatore personalizzato | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,23 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d419130cd93c6cc2f7dcff132fdafc8986bfd30a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f5cf2cc9c8f89ed0ecc7935f9afa8e096f05a840
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126910"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276494"
 ---
-# <a name="type-visualizer-and-custom-viewer"></a>Visualizzatore di tipo e il visualizzatore personalizzato
-Un visualizzatore di tipo è un componente che consente di visualizzare i dati in un formato molto specifico. Questo formato è interamente dipende dall'implementatore del visualizzatore, ovvero l'utente finale o un fornitore di terze parti di visualizzatori.  
+# <a name="type-visualizer-and-custom-viewer"></a>Visualizzatore di tipi e Visualizzatore personalizzato
+Un visualizzatore di tipo è un componente che consente di visualizzare una porzione di dati in un formato specifico. Il formato è completamente fino a che implementa il visualizzatore, sia esso un utente finale o un fornitore di terze parti di visualizzatori.  
   
- Un visualizzatore personalizzato è la parte di un analizzatore di espressioni personalizzato che consente di visualizzare i dati in un formato molto specifico. Questo formato è interamente dipende dall'implementatore del visualizzatore personalizzato, il che significa che il formato è dipende dall'implementatore dell'analizzatore di espressioni (Java EE).  
+ Un visualizzatore personalizzato è la parte di un analizzatore di espressioni personalizzato che consente di visualizzare una porzione di dati in un formato specifico. Questo formato è interamente l'implementatore del visualizzatore personalizzato, il che significa che il formato è lasciata all'implementatore dell'analizzatore di espressioni (EE).  
   
 ## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>Supporto per i visualizzatori di tipo in un analizzatore di espressioni  
- Un EE possibilità di supportare i visualizzatori di tipo che supporta un set di interfacce accessibile ai visualizzatori: interfacce, ad esempio [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) e [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). Si noti tuttavia che l'analizzatore di Espressioni non è responsabile dell'implementazione del Visualizzatore di tipo stesso: l'analizzatore di Espressioni semplicemente consente i visualizzatori esterni di accedere a informazioni relative al tipo. Questi visualizzatori potrebbero essere forniti con l'analizzatore di Espressioni e installati nella posizione appropriata in Visual Studio, forniti da un altro fornitore di terze parti o anche dall'utente finale.  
+ Un'Express Edition supporta i visualizzatori di tipo grazie al supporto di un set di interfacce accessibile per i visualizzatori: ad esempio le interfacce [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) e [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). Tuttavia, l'analizzatore di Espressioni non è responsabile dell'implementazione del Visualizzatore di tipo stesso: l'analizzatore di Espressioni consente semplicemente visualizzatori esterni accedere a informazioni relative al tipo. Questi visualizzatori potrebbero essere forniti con l'analizzatore di Espressioni e installati nella posizione appropriata in Visual Studio, fornito da un altro fornitore di terze parti o anche da all'utente finale.  
   
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Supporto per i visualizzatori personalizzati disponibili in un analizzatore di espressioni  
- Un EE supporta anche i visualizzatori personalizzati in cui l'analizzatore di Espressioni fornisce il codice per la visualizzazione del tipo di dati. Un visualizzatore personalizzato implementa il [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) è richiesta l'interfaccia che gestisce tutti i compiti di mostrare i dati nel formato desiderato; il visualizzatore ha il pieno controllo sulla visualizzazione e può anche consentire il modifica dei dati. Qualsiasi visualizzatori personalizzati forniti dal motore di esecuzione forniti con l'analizzatore di Espressioni quando la distribuzione del prodotto.  
+ Un EE può anche supportare visualizzatori personalizzati in cui l'analizzatore di Espressioni fornisce il codice per la visualizzazione del tipo di dati. Un visualizzatore personalizzato implementa il [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) si desidera ottenere l'interfaccia che gestisce tutti i compiti di mostrare i dati nel formato desiderato; il Visualizzatore abbia il pieno controllo sulla visualizzazione e può anche consentire i dati di essere modificato. Eventuali visualizzatori personalizzati forniti dal motore di esecuzione includono l'analizzatore di Espressioni durante la distribuzione del prodotto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Componenti del debugger](../../extensibility/debugger/debugger-components.md)   

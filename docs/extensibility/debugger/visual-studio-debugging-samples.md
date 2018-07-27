@@ -1,5 +1,5 @@
 ---
-title: Esempi di debug di Visual Studio | Documenti Microsoft
+title: Esempi di debug di Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,16 +15,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbc561f393b9d5f596f2def3898b447d561e74f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58f0930a98051d1674cf1828ed738def2949ca30
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125437"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276881"
 ---
 # <a name="visual-studio-debugging-samples"></a>Esempi di debug di Visual Studio
-Due esempi viene illustrato come estendere il debugger di Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+Due esempi mostrano come estendere il debugger di Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   
--   Nell'esempio di analizzatore di espressioni Debugger, per i linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] finestra, fare clic su di **esempi** scheda, fare clic su **tutti** o **c#** nell'elenco di lingue e quindi fare clic su **Debugger**.  
+-   L'esempio dell'analizzatore di espressioni Debugger, per linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] finestra, fare clic sui **esempi** scheda, fare clic su **tutti** o **c#** nell'elenco delle lingue e quindi fare clic su **Debugger**.  
   
--   Visual Studio il Debug di motore di esempio, per la lingua desiderata, è disponibile in MSDN Code Gallery. Per ulteriori informazioni, vedere questa pagina nel sito Web Microsoft: [esempio motore di Debug di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).
+-   Visual Studio il Debug di motore di esempio, per linguaggi nativi, è disponibile in MSDN Code Gallery. Per altre informazioni, vedere [esempio di motore di debug Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) nel sito Web Microsoft.

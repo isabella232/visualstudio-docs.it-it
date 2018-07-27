@@ -1,5 +1,5 @@
 ---
-title: Quando un punto di interruzione consente di associare o diventa non associato | Documenti Microsoft
+title: Quando esegue l'associazione o disassociazione di un punto di interruzione | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96cd1a069535e6b03f9f2cfa541a9f2899bb77fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5bcefe50752a605a0806dc09125f1cca042dfe88
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134408"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276400"
 ---
-# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Quando un punto di interruzione consente di associare o diventa non associato
-Quando un punto di interruzione non può essere associato al momento in cui viene eseguita una chiamata di [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) metodo, l'associazione di tempo e creare ora del punto di interruzione sono diversi.  
+# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Quando esegue l'associazione o disassociazione di un punto di interruzione
+Quando un punto di interruzione non è possibile associare al momento viene eseguita una chiamata per il [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) metodo, l'associazione tempo e l'ora del punto di interruzione di creazione sono diversi.  
   
 ## <a name="methods-called"></a>Metodi chiamati  
  Gestore di sessione di debug (SDM) chiama i metodi seguenti:  
   
-1.  [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). Restituisce il DE un [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md).  
+1.  [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). Restituisce il DE un' [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md).  
   
 2.  [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md).  
   
 3.  [IDebugPendingBreakpoint2::Virtualize](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).  
   
-4.  Il [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) (metodo) e restituisce S_OK. Invia il DE un [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) o [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).  
+4.  Il [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) metodo e restituisce S_OK. L'invio di DE un' [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) oppure [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).  
   
 5.  [IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) e [IDebugBreakpointBoundEvent2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) metodi per verificare e ottenere i punti di interruzione associati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Chiamata degli eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)
+ [La chiamata a eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)
