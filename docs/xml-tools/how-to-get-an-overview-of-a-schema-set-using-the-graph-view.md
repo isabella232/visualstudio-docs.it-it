@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05f690d76d61ffd52abbc7b73cf162d7f6609708
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 004d40992e24f0df651d93b43761add1d2efa673
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751897"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381420"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procedura: ottenere una panoramica di uno schema impostato tramite la visualizzazione grafico
 
@@ -25,18 +25,18 @@ In questo argomento viene descritto come utilizzare il [visualizzazione grafico]
 
 1.  Creare un nuovo file di XML Schema e salvare il file come *Relationships*.
 
-2.  Fare clic su di **usare l'Editor XML per visualizzare e modificare il file XML Schema sottostante** collegamento nella visualizzazione iniziale.
+2.  Scegliere il **usare l'Editor XML per visualizzare e modificare il file di XML Schema sottostante** collegamento nella visualizzazione iniziale.
 
 3.  Copiare il codice di esempio di XML Schema da [dello schema XML di esempio: relazioni](../xml-tools/sample-xsd-file-relationships.md) e incollarlo per sostituire il codice che è stato aggiunto il nuovo file XSD per impostazione predefinita.
 
-4.  Fare clic nell'Editor XML e selezionare **Visualizza finestra di progettazione**.
+4.  Fare doppio clic in un punto qualsiasi dell'Editor XML e selezionare **Progettazione viste**.
 
 5.  Selezionare la visualizzazione grafico dal **sulla barra degli strumenti XSD**.
 
-6.  Selezionare **Set di schemi** nodo il **XML Schema Explorer** e trascinare il nodo per progettare nell'area della visualizzazione grafico. Dovrebbero essere visualizzati i nodi globali e le frecce che collegano i nodi tra cui intercorrono relazioni.
+6.  Selezionare **del Set di schemi** nodo il **XML Schema Explorer** e trascinare il nodo nell'area di progettazione della visualizzazione grafico. Dovrebbero essere visualizzati i nodi globali e le frecce che collegano i nodi tra cui intercorrono relazioni.
 
      ![Visualizzazione grafico](../xml-tools/media/relationshipingraphview.gif)
 
 7.  Fare clic su qualsiasi nodo nell'area di progettazione e analizzare la barra di navigazione per vedere dove si trova il nodo selezionato nel set di schemi.
 
-8.  Fare clic su qualsiasi nodo di elemento nell'area di progettazione e seleziona Rick **genera XML di esempio** per visualizzare il documento di istanza XML.
+8.  Rick, fare clic su qualsiasi nodo dell'elemento nell'area di progettazione e seleziona **genera XML di esempio** per visualizzare il documento di istanza XML.

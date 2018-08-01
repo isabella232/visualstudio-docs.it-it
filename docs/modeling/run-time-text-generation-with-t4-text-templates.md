@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117654"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380743"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 
@@ -152,7 +152,7 @@ Si noti che le istruzioni vengono inserite tra `<# ... #>` e le espressioni veng
 
 ### <a name="the-code-built-from-the-template"></a>Il codice generato dal modello
 
-Quando si salva il **tt** del file, una filiale **cs** o **vb** file viene generato. Per visualizzare questo file in Esplora soluzioni, espandere la **tt** nodo del file. In un progetto di Visual Basic, scegli **Mostra tutti i file** sulla barra degli strumenti Esplora soluzioni.
+Quando si salva il **tt** del file, una filiale **cs** o **vb** file viene generato. Per visualizzare questo file nei **Esplora soluzioni**, espandere il **tt** nodo del file. In un progetto di Visual Basic, scegli **Mostra tutti i file** nel **Esplora soluzioni** sulla barra degli strumenti.
 
 Si noti che il file secondario contiene una classe parziale che contiene un metodo denominato `TransformText()`. È possibile chiamare questo metodo dall'applicazione.
 

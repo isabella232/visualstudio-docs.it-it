@@ -12,14 +12,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 589bfa54a0ba1a7efb2964cf5b74446ca9ffe10d
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 6dd0f709e53a3595437bc432a1d1db9a4d6d5c79
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548208"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379514"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: utilizzare Progettazione XML Schema con i valori letterali XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: usare Progettazione XML Schema con i valori letterali XML
 
 In questo argomento viene descritto come visualizzare uno schema associato a un valore letterale XML in un progetto di Visual Basic.
 
@@ -27,7 +27,7 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 
 1.  Avviare Visual Studio.
 
-2.  Dal **File** dal menu **New**, quindi selezionare **progetto**. Verrà visualizzata la finestra di dialogo **Nuovo progetto** . Per **tipi di progetto**selezionare **altri linguaggi,** e quindi selezionare **Visual Basic**. Per **modelli**, selezionare applicazione Console. Quindi digitare `XMLLiterals` nel **nome** campo e un percorso di progetto nel **percorso** campo. Fare clic su **OK**.
+2.  Dal **File** dal menu **New**, quindi selezionare **progetto**. Verrà visualizzata la finestra di dialogo **Nuovo progetto** . Per la **tipi di progetto**, selezionare **altri linguaggi** e quindi selezionare **Visual Basic**. Per la **modelli**, selezionare applicazione Console. Quindi digitare `XMLLiterals` nella **Name** campo e un percorso di progetto nel **percorso** campo. Fare clic su **OK**.
 
      Il nuovo progetto è creato. Il progetto XMLLiterals contiene un file di origine Visual Basic, *Module1.vb*.
 
@@ -37,7 +37,7 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 
 2.  Salvare il file in un percorso con il nome *Purchaseorderschema*.
 
-3.  In Esplora soluzioni, fare clic sul nome del progetto, selezionare **Add**, quindi selezionare **elemento esistente**. Il **AddExisting elemento** verrà visualizzata la finestra di dialogo. Individuare il *Purchaseorderschema* del file, selezionarlo e quindi fare clic su **Add**.
+3.  Nelle **Esplora soluzioni**, fare clic sul nome del progetto, selezionare **Add**, quindi selezionare **elemento esistente**. Il **Aggiungi elemento esistente** verrà visualizzata la finestra di dialogo. Selezionare il *Purchaseorderschema* del file, selezionarlo e quindi fare clic su **Add**.
 
      Il progetto XMLLiterals contiene ora due file: *Module1.vb* e *Purchaseorderschema*.
 
@@ -72,6 +72,6 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
    End Module
    ```
 
-2.  Fare doppio clic su qualsiasi nodo XML in un valore letterale XML o un'importazione dello spazio dei nomi XML e selezionare **Mostra in Schema Explorer**.
+2.  Fare doppio clic su qualsiasi nodo XML in un valore letterale XML o un'importazione di spazi dei nomi XML e selezionare **Mostra in Schema Explorer**.
 
-     Il **XML Schema Explorer** viene visualizzato in modo affiancato con un file di Visual Basic che ha il valore letterale XML associato al set XML schema.
+     Il **XML Schema Explorer** viene visualizzato accanto a un file di Visual Basic che contiene il valore letterale XML associato al set XML schema.

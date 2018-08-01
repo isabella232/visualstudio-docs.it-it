@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177279"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382048"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus fornisce un metodo per la creazione di collegamenti tra modelli e da altri strumenti in modelli. È ad esempio, è stato possibile collegare modelli di linguaggio specifico di dominio (DSL) e i modelli UML. È anche possibile creare un set integrato di DSL.
@@ -127,10 +127,10 @@ ms.locfileid: "39177279"
 
 4.  Se si sceglie di fare riferimento a un elemento in un modello, è possibile aggiungere un elenco di tipi che possono essere selezionati dall'utente, ad esempio Company.FamilyTree.Person.
 
-5.  Fare clic su **OK**, quindi fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.
+5.  Fare clic su **OK**, quindi fare clic su **Trasforma tutti i modelli** nel **Esplora soluzioni** sulla barra degli strumenti.
 
     > [!WARNING]
-    >  Se non è stato selezionata un'entità o un modello valido, il pulsante OK non avrà alcun effetto sebbene possa sembrare abilitato.
+    > Se non è stato selezionata un'entità o un modello valido, il pulsante OK non avrà alcun effetto sebbene possa sembrare abilitato.
 
 6.  Se è stato specificato un elenco di tipi di destinazione, come Company.FamilyTree.Person, sarà necessario aggiungere un riferimento di assembly al progetto DSL, facendo riferimento alla DLL del DSL di destinazione, ad esempio Company.FamilyTree.Dsl.dll.
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177279"
 3.  Nel progetto di debug nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aggiungere i file che sono istanze di ogni DSL.
 
     > [!NOTE]
-    >  ModelBus di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] può risolvere solo riferimenti a modelli appartenenti alla stessa soluzione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ad esempio, non è possibile creare un riferimento a un file di modello in un'altra parte del file system.
+    > ModelBus di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] può risolvere solo riferimenti a modelli appartenenti alla stessa soluzione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ad esempio, non è possibile creare un riferimento a un file di modello in un'altra parte del file system.
 
 4.  Creare alcuni elementi e collegamenti nell'istanza del DSL esposto e salvarlo.
 
