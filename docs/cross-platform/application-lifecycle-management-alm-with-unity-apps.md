@@ -10,13 +10,15 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232332"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con app Unity
+
 Lo sviluppo di app per piattaforme moderne comporta molte più attività rispetto alla semplice scrittura di codice. Queste attività definite DevOps (Development + Operations) si estendono per il ciclo di vita completo di un'app e includono pianificazione e tracciatura del lavoro, progettazione e implementazione di codice, gestione di un repository di codice sorgente, esecuzione di compilazioni, gestione di integrazioni e distribuzioni continue, test (tra cui unit test e test dell'interfaccia utente), esecuzione di varie forme di diagnostica in ambienti di sviluppo e produzione e monitoraggio delle prestazioni delle app e comportamenti dell'utente in tempo reale tramite telemetria e analisi dei dati.
 
  Visual Studio insieme a Visual Studio Team Services e Team Foundation Server offrono un'ampia gamma di funzionalità DevOps, definita anche Application Lifecycle Management o ALM. Molte di queste sono applicabili a progetti multipiattaforma, inclusi i giochi e le applicazioni grafiche creati con Unity, soprattutto quando si usa C# come linguaggio di script. Tuttavia, poiché Unity ha un ambiente di sviluppo e un motore di runtime propri, diverse funzionalità di ALM non sono applicabili come avviene per altri tipi di progetti compilati in Visual Studio.
@@ -24,9 +26,10 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
  La tabella seguente identifica le funzionalità ALM di Visual Studio che sono o meno applicabili quando si lavora con Unity. Per informazioni dettagliate sulle funzionalità fare riferimento alla documentazione collegata.
 
 ## <a name="agile-tools"></a>Strumenti Agile:
- Collegamento di riferimento: **[Lavoro](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (usando Visual Studio Team Services o TFS, incluso Team Explorer Everywhere)
 
- Commento generale: tutte le funzionalità di pianificazione e traccia sono indipendenti dal tipo di progetto e dai linguaggi di codifica.
+Collegamento di riferimento: [About Agile tools and Agile project management](/vsts/work/backlogs/overview?view=vsts) (Informazioni sugli strumenti e la gestione di progetti Agile) (usando Visual Studio Team Services o TFS, incluso Team Explorer Everywhere)
+
+Commento generale: tutte le funzionalità di pianificazione e traccia sono indipendenti dal tipo di progetto e dai linguaggi di codifica.
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
@@ -37,9 +40,10 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 |Segnalare e visualizzare lo stato di avanzamento|Yes||
 
 ## <a name="modeling"></a>Modellazione
- Collegamento di riferimento: **[Analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)**
 
- Commento generale: anche se le funzionalità di progettazione sono indipendenti dal linguaggio di codifica o funzionano con i linguaggi .NET come C#, operano in base a un paradigma di applicazione tradizionale con gerarchie di oggetti e relazioni tra classi. La progettazione di un gioco in Unity prevede un paradigma completamente diverso, ossia relazioni di oggetti grafici, suoni, shader, script e così via. Per questo motivo, gli strumenti diagramma di modellazione di Visual Studio non sono particolarmente rilevanti per un intero progetto Unity. Possono eventualmente essere usati per gestire le relazioni negli script C#, che però costituiscono solo una parte dell'intero progetto.
+Collegamento di riferimento: **[Analizzare e modellare l'architettura](../modeling/analyze-and-model-your-architecture.md)**
+
+Commento generale: anche se le funzionalità di progettazione sono indipendenti dal linguaggio di codifica o funzionano con i linguaggi .NET come C#, operano in base a un paradigma di applicazione tradizionale con gerarchie di oggetti e relazioni tra classi. La progettazione di un gioco in Unity prevede un paradigma completamente diverso, ossia relazioni di oggetti grafici, suoni, shader, script e così via. Per questo motivo, gli strumenti diagramma di modellazione di Visual Studio non sono particolarmente rilevanti per un intero progetto Unity. Possono eventualmente essere usati per gestire le relazioni negli script C#, che però costituiscono solo una parte dell'intero progetto.
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
@@ -56,9 +60,9 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
-|[Usare il controllo della versione di Team Foundation](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o di Visual Studio Team Services|Yes|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|
-|[Introduzione a Git in Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Yes|Vedere le note dopo la tabella.|
-|[Migliorare la qualità del codice](/visualstudio/test/improve-code-quality)|Yes||
+|[Usare il controllo della versione di Team Foundation](/vsts/tfvc/overview?view=vsts) o di Visual Studio Team Services|Yes|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|
+|[Introduzione a Git in Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Yes|Vedere le note dopo la tabella.|
+|[Migliorare la qualità del codice](../test/improve-code-quality.md)|Yes||
 |[Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md)|Yes||
 |[Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)|Yes||
 
@@ -94,18 +98,19 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 
 ## <a name="improve-code-quality"></a>Migliorare la qualità del codice
 
-Collegamento di riferimento: **[Migliorare la qualità del codice](/visualstudio/test/improve-code-quality)**
+Collegamento di riferimento: **[Migliorare la qualità del codice](../test/improve-code-quality.md)**
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
-|[Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|
+|[Analizzare la qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|
 |[Ricerca del codice duplicato mediante il rilevamento del clone di codice](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|
 |[Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|
 |[Esplora prestazioni](../profiling/performance-explorer.md)|No|Usare il [profiler di Unity](http://docs.unity3d.com/Manual/Profiler.html) (sito Web di Unity).|
 |[Analizzare i problemi relativi alla memoria .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|No|Gli Strumenti di Visual Studio non includono per il framework Mono, usato da Unity, per la profilatura. Usare il [profiler di Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentazione di Unity).|
 
 ## <a name="release-management"></a>Gestione versioni
- Collegamento di riferimento: **[Automatizzare le distribuzioni con Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**
+
+Collegamento di riferimento: [Build and Release overview](/vsts/pipelines/overview?view=vsts)(Panoramica della compilazione e del rilascio)
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
@@ -114,7 +119,8 @@ Collegamento di riferimento: **[Migliorare la qualità del codice](/visualstudio
 |Caricare nell'app store|Partial|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni.  Vedere le [estensioni per Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorare con HockeyApp
- Collegamento di riferimento: **[Monitorare con HockeyApp](https://www.hockeyapp.net/features/)**
+
+Collegamento di riferimento: **[Monitorare con HockeyApp](https://www.hockeyapp.net/features/)**
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|

@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 02fd481455c5198a1d8ae0828072f8085d1d027a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966160"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179242"
 ---
-# <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>Codifica di una regola di estrazione personalizzata per un test delle prestazioni Web
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificare una regola di estrazione personalizzata per un test delle prestazioni Web
 
 È possibile creare proprie regole di estrazione. A tale scopo, derivare le proprie regole da una classe di regole di estrazione. Le regole di estrazione derivano dalla classe di base <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>.
 
@@ -31,7 +31,7 @@ ms.locfileid: "31966160"
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Per creare una regola di estrazione personalizzata
 
-1.  Aprire un progetto di test contenente un test Web.
+1.  Aprire un progetto di test contenente un test delle prestazioni Web.
 
 2.  (Facoltativo) Creare un progetto Libreria di classi distinto in cui archiviare la regola di estrazione.
 
@@ -52,7 +52,7 @@ ms.locfileid: "31966160"
 
      Verrà visualizzata la finestra di dialogo **Aggiungi regola di estrazione**. La regola di convalida personalizzata sarà disponibile nell'elenco **Selezionare una regola**, insieme alle regole di convalida predefinite. Selezionare la regola di estrazione personalizzata e scegliere **OK**.
 
-9. Eseguire il test Web.
+9. Eseguire il test delle prestazioni Web.
 
 ## <a name="example"></a>Esempio
 

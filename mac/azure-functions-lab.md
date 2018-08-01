@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877332"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232289"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
 
@@ -46,8 +46,10 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 1. Espandere i nodi nel **riquadro della soluzione**. Il modello di progetto predefinito include riferimenti NuGet a vari pacchetti di Processi Web di Azure e al pacchetto Newtonsoft.Json. 
 
-     Sono anche disponibili tre file: **host.json** per la descrizione delle opzioni di configurazione globale per l'host, **local.settings.json** per la configurazione delle impostazioni del servizio. 
-        Il modello di progetto crea anche un HttpTrigger predefinito. Ai fini di questa esercitazione, eliminare il file **HttpTrigger.cs** dal progetto.
+     Sono presenti anche tre file:  
+        - **host.json** per la descrizione delle opzioni di configurazione globali dell'host  
+        - **local.settings.json** per la configurazione delle impostazioni del servizio.  
+        Il modello di progetto crea anche un HttpTrigger predefinito. Ai fini di questa esercitazione, eliminare il file **HttpTrigger.cs** dal progetto.  
 
     Aprire **local.settings.json**. Per impostazione predefinita il file include due impostazioni stringa di connessione vuote.
 

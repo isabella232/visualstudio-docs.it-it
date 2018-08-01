@@ -12,26 +12,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad5961d3af1e729d33d216c55e7386885a970e0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965494"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175982"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modificare i tempi di interazione utente per simulare i ritardi di interazione umana con i siti Web in scenari di test di carico
 
-Il tempo interazione utente consente di simulare il comportamento umano rispetto alle attese tra le interazioni con un sito Web. I tempi interazione utente intercorrono tra le richieste in un test Web e tra le interazioni test in uno scenario di test di carico. L'uso dei tempi interazione utente in un test di carico può essere utile per creare simulazioni di carico più accurate. È possibile scegliere se i tempi interazione utente devono essere usati o ignorati nei test di carico. Scegliere se usare i tempi interazione utente nei test di carico nell'Editor test di carico.
+Il tempo interazione utente consente di simulare il comportamento umano rispetto alle attese tra le interazioni con un sito Web. I tempi interazione utente intercorrono tra le richieste in un test Web e tra le interazioni test in uno scenario di test di carico. L'uso dei tempi interazione utente in un test di carico può essere utile per creare simulazioni di carico più accurate. È possibile scegliere se i tempi interazione utente devono essere usati o ignorati nei test di carico. Scegliere se usare i tempi interazione utente nei test di carico nell'**Editor test di carico**.
 
- Il *profilo interazione utente* è un'impostazione che si applica a uno scenario in un test di carico. L'impostazione determina se i tempi interazione utente salvati nei singoli test Web vengono usati durante il test di carico. Se si desidera usare i tempi interazione utente in alcuni test Web ma non in altri, è necessario inserirli in scenari diversi. Per altre informazioni sugli scenari, vedere [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md).
+ Il *profilo interazione utente* è un'impostazione che si applica a uno scenario in un test di carico. L'impostazione determina se i tempi interazione utente salvati nei singoli test Web vengono usati durante il test di carico. Se si vuole usare i tempi interazione utente in alcuni test Web ma non in altri, è necessario inserirli in scenari diversi. Per altre informazioni sugli scenari, vedere [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md).
 
- Inizialmente, è necessario scegliere se usare i tempi di interazione utente nei test di carico quando si crea il test di carico con la Creazione guidata test di carico. Per altre informazioni, vedere [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md).
+ Inizialmente, è necessario scegliere se usare i tempi di interazione utente nei test di carico quando si crea il test di carico con la **Creazione guidata test di carico**. Per altre informazioni, vedere [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md).
 
- Le opzioni del profilo interazione utente sono descritte nell'elenco seguente:
+ Le opzioni del profilo **interazione utente** sono descritte nell'elenco seguente:
 
 **Off**
 
-I tempi interazione utente vengono ignorati. Usare questa impostazione quando si desidera generare il carico massimo sul server Web. Non utilizzarla quando si tenta di creare interazioni utente più realistiche con un server Web.
+I tempi interazione utente vengono ignorati. Usare questa impostazione quando si vuole generare il carico massimo sul server Web. Non usarla quando si tenta di creare interazioni utente più realistiche con un server Web.
 
 **On**
 
@@ -42,20 +42,20 @@ I tempi interazione utente vengono usati esattamente così come sono stati regis
 Il tempo interazione utente viene usato, ma variato in una curva normale. Fornisce una simulazione più realistica di utenti virtuali variando lievemente il tempo interazione utente tra le richieste.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà relative agli scenari dei test di carico e delle relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà relative agli scenari di test di carico e delle relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
-## <a name="changing-the-think-profile"></a>Modifica del profilo interazione utente
+## <a name="change-the-think-profile"></a>Modificare il profilo interazione utente
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Per modificare il profilo interazione utente in uno scenario di test di carico
 
 1.  Dal progetto di test di carico e prestazioni Web, aprire un test di carico.
 
-2.  Nell'**Editor test di carico** scegliere il nodo dello scenario in cui modificare il **profilo interazione utente**. Il **profilo interazione utente** verrà visualizzato nella finestra Proprietà. Premere F4 per visualizzare la finestra Proprietà.
+2.  Nell'**Editor test di carico** scegliere il nodo dello scenario in cui modificare il **profilo interazione utente**. Il **profilo interazione utente** verrà visualizzato nella finestra **Proprietà**. Premere **F4** per visualizzare la finestra **Proprietà**.
 
-3.  Modificare la proprietà **Profilo interazione utente** nella finestra Proprietà.
+3.  Modificare la proprietà **Profilo interazione utente** nella finestra **Proprietà**.
 
 4.  Dopo avere apportato le modifiche alle proprietà, scegliere **Salva** nel menu **File**. È quindi possibile eseguire il test di carico con il nuovo profilo interazione utente.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
+- [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)

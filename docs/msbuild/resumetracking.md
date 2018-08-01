@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e241af310821463f60f323b9fd20099fad44a3ba
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 2ec83d60046a74484035df9d7a7831d16b48d899
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326280"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151181"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Riprende la verifica nel contesto corrente.  
@@ -37,7 +37,7 @@ HRESULT WINAPI ResumeTracking();
  **HRESULT** con il bit **SUCCEEDED** impostato se la verifica è ripresa. Se non è possibile riprendere la verifica perché il contesto non è disponibile viene restituito **E_FAIL**.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** FileTracker.h  
+ **Intestazione:** *FileTracker.h*  
   
 ## <a name="see-also"></a>Vedere anche  
  [SuspendTracking](../msbuild/suspendtracking.md)

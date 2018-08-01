@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757253"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232390"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Creare app con interfaccia utente nativa con Xamarin in Visual Studio
 
@@ -110,9 +110,9 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
 
 1.  Prima registrarsi presso il sito Web [ http://openweathermap.org/appid ](http://openweathermap.org/appid) per una chiave API gratuita. Questa chiave API consentirà all'applicazione di ricevere informazioni meteo relative a qualsiasi codice postale degli Stati Uniti. Non funziona per i codici postali al di fuori degli Stati Uniti.
 
-2.  Fare clic con il pulsante destro del mouse sul progetto **WeatherApp** e selezionare **Aggiungi > Classe**. Nella finestra di dialogo **Aggiungi nuovo elemento** denominare il file **Weather.cs**. Questa classe verrà usata per archiviare i dati dal servizio di dati meteo.
+2.  Fare clic con il pulsante destro del mouse sul progetto **WeatherApp** e selezionare **Aggiungi > Classe**. Nella finestra di dialogo **Aggiungi nuovo elemento** denominare il file *Weather.cs*. Questa classe verrà usata per archiviare i dati dal servizio di dati meteo.
 
-3.  Sostituire tutto il contenuto di **Weather.cs** con il codice seguente:
+3.  Sostituire tutto il contenuto di *Weather.cs* con il codice seguente:
 
     ```csharp
     namespace WeatherApp
@@ -132,9 +132,9 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
     }
     ```
 
-4.  Aggiungere un'altra classe al progetto .NET Standard denominato **DataService.cs**. Questa classe verrà usata per elaborare dati JSON provenienti dal servizio dati meteo.
+4.  Aggiungere un'altra classe al progetto .NET Standard denominato `DataService.cs`. Questa classe verrà usata per elaborare dati JSON provenienti dal servizio dati meteo.
 
-5.  Sostituire tutto il contenuto di **DataService.cs** con il codice seguente:
+5.  Sostituire tutto il contenuto di *DataService.cs* con il codice seguente:
 
     ```csharp
     using System.Net.Http;
@@ -163,9 +163,9 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
     }
     ```
 
-6.  Aggiungere una terza classe alla libreria .NET Standard denominata **Core.cs**. Questa classe verrà usata per formare una stringa di query con un codice postale, per chiamare il servizio dati meteo e per popolare un'istanza della classe **Weather**.
+6.  Aggiungere una terza classe alla libreria .NET Standard denominata *Core.cs*. Questa classe verrà usata per formare una stringa di query con un codice postale, per chiamare il servizio dati meteo e per popolare un'istanza della classe **Weather**.
 
-7.  Sostituire il contenuto di **Core.cs** con il codice seguente:
+7.  Sostituire il contenuto di *Core.cs* con il codice seguente:
 
     ```csharp
     using System;
@@ -217,7 +217,7 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
 
 8. Sostituire la prima occorrenza di *YOUR API KEY HERE* con la chiave API ottenuta nel passaggio 1, che deve comunque essere racchiusa tra virgolette.
 
-9. Eliminare il file **MyClass.cs** nella libreria .NET Standard perché non verrà usato.
+9. Eliminare il file *MyClass.cs* nella libreria .NET Standard perché non verrà usato.
 
 10. Compilare il progetto **WeatherApp** per verificare che il codice sia corretto.
 
@@ -229,7 +229,7 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Progettare l'aspetto dell'app
 
-1.  In **Esplora soluzioni** espandere la cartella **WeatherApp.Droid > Resources > layout** e aprire **Main.axml**. Questo comando apre il file nella finestra di progettazione visiva. Se viene visualizzato un errore relativo a Java, vedere questo [post di blog](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).
+1.  In **Esplora soluzioni** espandere la cartella **WeatherApp.Droid > Resources > layout** e aprire *Main.axml*. Questo comando apre il file nella finestra di progettazione visiva. Se viene visualizzato un errore relativo a Java, vedere questo [post di blog](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).
 
     > [!TIP]
     >  Il progetto include molti altri file che però non verranno esaminati in questo articolo. Per informazioni più dettagliate sulla struttura di un progetto Android, vedere la [parte 2 di approfondimento](/xamarin/android/get-started/hello-android/hello-android-deepdive/) dell'articolo Hello Android in xamarin.com.
@@ -256,7 +256,7 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  Si noti che molte proprietà non includono un elenco a discesa di valori selezionabili.  Può quindi risultare difficile individuare il valore di stringa da usare per una data proprietà. Per suggerimenti provare a cercare il nome di una proprietà nella pagina della classe [R.attr](http://developer.android.com/reference/android/R.attr.html) .
+    >  Si noti che molte proprietà non includono un elenco a discesa di valori selezionabili.  Può quindi risultare difficile individuare il valore di stringa da usare per una data proprietà. Per suggerimenti, provare a cercare il nome di una proprietà nella pagina della classe [`R.attr`](http://developer.android.com/reference/android/R.attr.html).
     >
     >  Cercando in Internet viene spesso visualizzata una pagina del sito Web [http://stackoverflow.com/](http://stackoverflow.com/) in cui altri utenti hanno usato la stessa proprietà.
 
@@ -347,7 +347,7 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
         android:width="165dp" />
     ```
 
-11. Si hanno ora nozioni sufficienti per creare un'interfaccia utente di base usando la finestra di progettazione di Android. È anche possibile creare un'interfaccia utente aggiungendo markup direttamente nel file Main.axml della pagina. Per creare la parte restante dell'interfaccia utente in questo modo, passare alla visualizzazione Origine nella finestra di progettazione e quindi incollare il markup seguente *sotto* il tag di fine `</RelativeLayout>`. Questi elementi devono trovarsi sotto il tag perché *non* sono contenuti in `RelativeLayout`.
+11. Si hanno ora nozioni sufficienti per creare un'interfaccia utente di base usando la finestra di progettazione di Android. È anche possibile creare un'interfaccia utente aggiungendo markup direttamente nel file *Main.axml* della pagina. Per creare la parte restante dell'interfaccia utente in questo modo, passare alla visualizzazione Origine nella finestra di progettazione e quindi incollare il markup seguente *sotto* il tag di fine `</RelativeLayout>`. Questi elementi devono trovarsi sotto il tag perché *non* sono contenuti in `RelativeLayout`.
 
     ```xml
     <TextView
@@ -457,7 +457,7 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
 
 13. Aprire **MainActivity.cs**. Di seguito è illustrato l'aspetto del codice:
 
-    ```
+    ```csharp
     protected override void OnCreate (Bundle bundle)
     {
         base.OnCreate (bundle);
@@ -467,11 +467,11 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
     }
     ```
 
-14. Compilare il progetto Android per verificare il lavoro. Il processo di compilazione aggiunge gli ID dei controlli al file **Resource.Designer.cs**, in modo che sia possibile fare riferimento ai controlli nel codice in base al nome.
+14. Compilare il progetto Android per verificare il lavoro. Il processo di compilazione aggiunge gli ID dei controlli al file *Resource.Designer.cs*, in modo che sia possibile fare riferimento ai controlli nel codice in base al nome.
 
 ### <a name="consume-your-shared-code"></a>Usare il codice condiviso
 
-1.  Aprire il file **MainActivity.cs** del progetto **WeatherApp** nell'editor di codice e sostituire il contenuto con il codice riportato di seguito. Questo codice chiama il metodo `GetWeather` definito nel codice condiviso, quindi visualizza nell'interfaccia utente dell'app i dati recuperati da tale metodo.
+1.  Aprire il file *MainActivity.cs* del progetto **WeatherApp** nell'editor di codice e sostituire il contenuto con il codice riportato di seguito. Questo codice chiama il metodo `GetWeather` definito nel codice condiviso, quindi visualizza nell'interfaccia utente dell'app i dati recuperati da tale metodo.
 
     ```csharp
     using System;
@@ -545,7 +545,7 @@ Il passaggio successivo è la progettazione dell'interfaccia utente per Windows,
 
  Il processo di progettazione di un'interfaccia utente nativa per la piattaforma UWP nativa in un'app Xamarin non è diverso rispetto a qualsiasi altra app nativa per la piattaforma UWP. Per questo motivo, in questa sede non verrà descritto l'uso della finestra di progettazione. Per una trattazione dettagliata, vedere [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
- Aprire invece **MainPage.xaml** e sostituire tutto il contenuto XAML con il markup seguente:
+ Aprire invece *MainPage.xaml* e sostituire tutto il contenuto XAML con il markup seguente:
 
 ```xaml
 <Page
@@ -634,7 +634,7 @@ Il passaggio successivo è la progettazione dell'interfaccia utente per Windows,
 
 ### <a name="consume-your-shared-code"></a>Usare il codice condiviso
 
-Nel file code-behind **MainPage.xaml.cs** aggiungere il gestore eventi seguente per il pulsante:
+Nel file code-behind *MainPage.xaml.cs* aggiungere il gestore eventi seguente per il pulsante:
 
 ```csharp
 private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
@@ -663,7 +663,7 @@ Questo codice chiama il metodo `GetWeather` definito nel codice condiviso, `GetW
 
 2.  Nella casella di riepilogo a discesa **Piattaforme soluzione** selezionare **x86** e **Computer locale** per distribuire l'applicazione al desktop di Windows 10.
 
-3.  Premere F5 per avviare l'app.
+3.  Premere **F5** per avviare l'app.
 
 4.  Digitare un codice postale di cinque cifre degli Stati Uniti valido nella casella di modifica e premere **Get Weather** (Ottieni meteo). Nella pagina verranno visualizzati i dati relativi al meteo nell'area corrispondente.
 

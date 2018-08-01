@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751342"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180640"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Specificare insiemi di contatori e regole di soglia per i computer in un test di carico
 
@@ -29,7 +29,7 @@ I test di carico rendono disponibili insiemi di contatori denominati, utili per 
 > [!NOTE]
 > Se i test di carico vengono distribuiti in computer remoti, viene eseguito il mapping dei contatori di controller e agenti ai relativi set. Per altre informazioni sull'uso dei computer remoti nel test di carico, vedere [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
 
-Gli insiemi di contatori vengono raggruppati sui computer specificati dall'utente. L'associazione tra un insieme di contatori e un computer usata durante un test di carico viene definita *mapping dell'insieme di contatori*. Il server Web che si sta testando potrebbe, ad esempio, disporre di mapping di insiemi di contatori per applicazioni ASP.NET, IIS e .NET.
+Gli insiemi di contatori vengono raggruppati sui computer specificati dall'utente. L'associazione tra un insieme di contatori e un computer usata durante un test di carico viene definita *mapping dell'insieme di contatori*. Il server Web che si sta testando potrebbe, ad esempio, avere mapping di insiemi di contatori per applicazioni ASP.NET, IIS e .NET.
 
 Per impostazione predefinita i contatori di prestazioni sono raccolti sul controller e sugli agenti. Per altre informazioni, vedere [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -58,7 +58,7 @@ I dati delle prestazioni per le singole richieste HTTP vengono segnalati dal com
 
 Per semplificare la raccolta dei dati delle prestazioni in un server Web, in Visual Studio Enterprise sono disponibili anche insiemi di contatori predefiniti e denominati, basati sulla tecnologia per l'uso nei test di carico. Questi insiemi si rivelano utili quando occorre analizzare un server che esegue IIS, ASP.NET o SQL Server. Tramite l'Editor test di carico è possibile aggiungere ulteriori contatori all'insieme di contatori predefinito. È importante aggiungere al test di carico i computer o i server sottoposti a test per assicurarsi che sia possibile eseguire il monitoraggio dell'utilizzo delle risorse in tali computer. Per altre informazioni, vedere [Procedura: Gestire insiemi di contatori](../test/how-to-manage-counter-sets-using-the-load-test-editor.md).
 
-L'analisi dei risultati delle esecuzioni di test di carico necessita spesso di conoscenze specifiche del dominio di una particolare area, per sapere esattamente quali dati raccogliere, dove impostare le regole di soglia e come segnalare quando una misurazione rivela un problema specifico nell'applicazione. Per altre informazioni, vedere [Informazioni sulle regole di soglia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md#SpecifyingCounterSetsThresholdRulesAboutThresholdRules).
+L'analisi dei risultati delle esecuzioni di test di carico necessita spesso di conoscenze specifiche del dominio di una particolare area, per sapere esattamente quali dati raccogliere, dove impostare le regole di soglia e come segnalare quando una misurazione rivela un problema specifico nell'applicazione. Per altre informazioni, vedere [Informazioni sulle regole di soglia](#about-threshold-rules).
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>Considerazioni sull'intervallo di campionamento dei contatori delle prestazioni
 

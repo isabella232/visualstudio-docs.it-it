@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335814"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276351"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Raccogliere dati di intervallo dettagliati per un'applicazione autonoma tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per i componenti client autonomi tramite il metodo di strumentazione dalla riga di comando.  
@@ -27,8 +27,8 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettag
   
 |Attività|Contenuti correlati|  
 |----------|---------------------|  
-|**Sottoporre a profilatura un'applicazione .NET Framework tramite la strumentazione**|-   [Procedura: Instrumentare un componente .NET e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Sottoporre a profilatura un'applicazione C/C++ tramite la strumentazione**|-   [Procedura: Instrumentare un componente nativo e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Sottoporre a profilatura un'applicazione .NET Framework tramite la strumentazione**|-   [Procedura: Instrumentare un componente .NET e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**Sottoporre a profilatura un'applicazione C/C++ tramite la strumentazione**|-   [Procedura: Instrumentare un componente nativo e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**Aggiungere dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Attività correlate

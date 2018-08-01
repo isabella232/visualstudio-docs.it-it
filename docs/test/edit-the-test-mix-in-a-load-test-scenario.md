@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750935"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179515"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali test delle prestazioni Web, unit test e test codificati dell'interfaccia utente includere in uno scenario di test di carico
 
@@ -33,9 +33,9 @@ La *combinazione di test* di uno scenario è una combinazione della selezione di
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Aggiungere nuovi test a una combinazione di test in uno scenario esistente
 
-Quando si crea un nuovo scenario utilizzando la Creazione guidata test di carico, è possibile specificare i test delle prestazioni Web e gli unit test da aggiungere alla combinazione di test del nuovo scenario.
+Quando si crea un nuovo scenario usando la **Creazione guidata test di carico** è possibile specificare i test delle prestazioni Web e gli unit test da aggiungere alla combinazione di test del nuovo scenario.
 
-È possibile aggiungere più test delle prestazioni Web e unit test alla combinazione di test dello scenario utilizzando l'Editor test di carico.
+È possibile aggiungere altri test delle prestazioni Web e unit test alla combinazione di test dello scenario usando l'**Editor test di carico**.
 
 ![Aggiunta di un test a un test di carico esistente](../test/media/ltest_addingtests.png)
 
@@ -43,7 +43,7 @@ Quando si crea un nuovo scenario utilizzando la Creazione guidata test di carico
 
 1.  Aprire un test di carico.
 
-2.  Nell'Editor test di carico fare clic con il pulsante destro del mouse su uno scenario esistente e quindi scegliere **Aggiungi test**.
+2.  Nell'**Editor test di carico** fare clic con il pulsante destro del mouse su uno scenario esistente e quindi scegliere **Aggiungi test**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi test**. È possibile aggiungere allo scenario tutti i test delle prestazioni Web, gli unit test e i test codificati dell'interfaccia utente della soluzione non ancora aggiunti.
 
@@ -55,14 +55,14 @@ Quando si crea un nuovo scenario utilizzando la Creazione guidata test di carico
 
 5.  (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="EditingTestMixRemoveTest"></a> Rimozione dei test da uno scenario
+##  <a name="remove-tests-from-a-scenario"></a>Rimuovere test da uno scenario
  ![Rimozione di un test da un test di carico esistente](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Per rimuovere test da uno scenario
 
 1.  Aprire un test di carico.
 
-2.  Nell'albero del test di carico dell'Editor test di carico fare clic con il pulsante destro del mouse sullo scenario dal quale si vuole rimuovere un test e selezionare **Modifica combinazione di test**. Verrà visualizzata la finestra di dialogo **Modifica combinazione di test**.
+2.  Nell'albero del test di carico dell'**Editor test di carico** fare clic con il pulsante destro del mouse sullo scenario dal quale si vuole rimuovere un test e selezionare **Modifica combinazione di test**. Verrà visualizzata la finestra di dialogo **Modifica combinazione di test**.
 
 3.  Selezionare il test delle prestazioni Web, lo unit test o il test codificato dell'interfaccia utente nella griglia e scegliere **Rimuovi**.
 
@@ -92,4 +92,4 @@ Quando si crea un nuovo scenario utilizzando la Creazione guidata test di carico
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
+- [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)

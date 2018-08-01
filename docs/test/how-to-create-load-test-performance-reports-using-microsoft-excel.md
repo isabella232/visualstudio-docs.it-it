@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751533"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179008"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: creare rapporti di prestazioni dei test di carico utilizzando Microsoft Excel
 
@@ -56,7 +56,7 @@ ms.locfileid: "34751533"
     1.  Dopo avere completato un test di carico, nella pagina **Risultati test di carico** scegliere il pulsante **Crea rapporto Excel** sulla barra degli strumenti.
 
         > [!NOTE]
-        > Se il pulsante **Crea rapporto Excel** è disabilitato sulla barra degli strumenti del Visualizzatore risultati test prestazioni Web, potrebbe essere necessario eseguire Microsoft Excel una volta per poterlo abilitare. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
+        > Se il pulsante **Crea rapporto Excel** è disabilitato sulla barra degli strumenti del **Visualizzatore risultati test prestazioni Web**, potrebbe essere necessario eseguire Microsoft Excel una volta per poterlo abilitare. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
 
      Viene aperto Microsoft Excel con la procedura guidata **Genera un rapporto test di carico**.
 
@@ -100,7 +100,7 @@ ms.locfileid: "34751533"
     -   **Confronto errore**: confronta i tipi di errore incontrati tra le due esecuzioni e il numero di occorrenze.
 
     > [!TIP]
-    > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni Web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
+    > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Per generare report sulla tendenza del test di carico con Excel
 
@@ -111,7 +111,7 @@ ms.locfileid: "34751533"
     1.  Dopo avere completato un test di carico, nella pagina **Risultati test di carico** scegliere il pulsante **Crea rapporto Excel** sulla barra degli strumenti.
 
         > [!NOTE]
-        > Se il pulsante **Crea rapporto Excel** è disabilitato sulla barra degli strumenti del Visualizzatore risultati test prestazioni Web, potrebbe essere necessario eseguire Microsoft Excel una volta per poterlo abilitare. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
+        > Se il pulsante **Crea rapporto Excel** è disabilitato sulla barra degli strumenti del **Visualizzatore risultati test prestazioni Web**, potrebbe essere necessario eseguire Microsoft Excel una volta per poterlo abilitare. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
 
      Viene aperto Microsoft Excel con la procedura guidata **Genera un rapporto test di carico**.
 
@@ -140,7 +140,7 @@ ms.locfileid: "34751533"
 10. Il report viene generato con un sommario contenente collegamenti alle varie schede della cartella di lavoro di Excel generate nel report. I collegamenti sono basati sui contatori selezionati per il report della tendenza. Ad esempio, se sono stati lasciati i contatori predefiniti selezionati nel passaggio 7, il report genererà dati presentati in schede separate in Excel per ogni contatore elencato nel passaggio 7. I dati generati per ogni contatore vengono presentati in grafici dello stile tendenza.
 
     > [!TIP]
-    > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni Web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
+    > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
 
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework
 

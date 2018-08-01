@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd654cfd05b06646346b8629b646e8450ccf081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967684"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176469"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurare agenti di test e test controller per i test di carico
 
@@ -61,7 +61,7 @@ Anche se un controller di test gestisce in genere diversi agenti di test, un age
 
 Il controller di test gestisce un set di agenti di test per eseguire i test. Il controller di test comunica con gli agenti di test per avviare e interrompere i test, per registrare lo stato dell'agente e per raccogliere i risultati dei test.
 
-### <a name="test-controller"></a>Test Controller
+### <a name="test-controller"></a>Controller di test
 
 Il controller di test fornisce un'architettura generale per l'esecuzione di test e include funzionalità speciali per l'esecuzione di test di carico. Il controller di test invia il test di carico a tutti gli agenti di test e attende fino a quando tutti gli agenti di test non hanno inizializzato il test. Quando tutti gli agenti di test sono pronti, il controller di test invia un messaggio agli agenti di test per avviare il test.
 
@@ -69,23 +69,23 @@ Il controller di test fornisce un'architettura generale per l'esecuzione di test
 
 L'agente di test viene eseguito come servizio in attesa delle richieste del controller di test per avviare un nuovo test. Quando l'agente di test riceve una richiesta, il relativo servizio avvia un processo su cui eseguire i test. Ogni agente di test esegue lo stesso test di carico.
 
- Agli agenti di test viene assegnato un peso dall'amministratore e il carico viene distribuito in base al peso di un agente di test. Ad esempio, se l'agente di test 1 ha un peso pari a 30 e l'agente di test 2 ha un peso di 70 e il carico è impostato su 1000 utenti, l'agente di test 1 simula 300 utenti virtuali mentre l'agente di test 2 ne simula 700. Vedere [Gestione dei test controller e degli agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+ Agli agenti di test viene assegnato un peso dall'amministratore e il carico viene distribuito in base al peso di un agente di test. Ad esempio, se l'agente di test 1 ha un peso pari a 30 e l'agente di test 2 ha un peso di 70 e il carico è impostato su 1000 utenti, l'agente di test 1 simula 300 utenti virtuali mentre l'agente di test 2 ne simula 700. Vedere [Gestire i test controller e gli agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
  L'agente di test accetta come input un set di test e un set di parametri di simulazione. Un concetto essenziale riguarda l'indipendenza dei test dal computer in cui vengono eseguiti.
 
-## <a name="test-controller-and-test-agent-connection-points"></a>Punti di connessione tra controller di test e agenti di test
+## <a name="test-controller-and-test-agent-connection-points"></a>Punti di connessione tra test controller e agenti di test
 
 La figura seguente mostra i punti di connessione tra il controller di test, l'agente di test e il client. Sono inoltre illustrate le porte che vengono usate per le connessioni in ingresso e in uscita e le restrizioni di sicurezza applicate a tali porte.
 
  ![Porte e sicurezza del controller e dell'agente di test](./media/test-controller-agent-firewall.png)
 
- Per altre informazioni, vedere [Configuring Ports for Test Controllers and Test Agents](../test/configure-ports-for-test-controllers-and-test-agents.md) (Configurazione delle porte per test controller e agenti di test).
+ Per altre informazioni, vedere [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
-## <a name="test-controller-and-agent-installation-information"></a>Informazioni sull'installazione del controller di test e degli agenti
+## <a name="test-controller-and-agent-installation-information"></a>Informazioni sull'installazione di test controller e agenti di test
 
 Per informazioni importanti sui requisiti hardware e software per i test controller e gli agenti di test, sulle procedure per l'installazione e sulla configurazione dell'ambiente per ottenere prestazioni ottimali, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="using-the-test-controller-and-test-agent-with-unit-tests"></a>Uso del controller di test e dell'agente di test con unit test
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Uso del test controller e dell'agente di test con unit test
 
 Dopo aver installato un controller di test e uno o più agenti, è possibile specificare se usare un'esecuzione remota con il controller di test nell'impostazione di test per i test di carico. Inoltre, è possibile specificare i dati e gli adattatori diagnostici da usare con il ruolo associato agli agenti nell'impostazione di test.
 

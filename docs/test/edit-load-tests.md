@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6ed3212affbcc7cee3587780116d435b19a4706f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968632"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178413"
 ---
 # <a name="edit-load-tests"></a>Modificare i test di carico
 
@@ -31,21 +31,21 @@ Un test di carico è definito da *scenari*, *insiemi di contatori* e *impostazio
 
 ## <a name="edit-load-test-scenario-settings"></a>Modificare le impostazioni dello scenario di test di carico
 
-Si usa uno scenario per definire le modalità di interazione di un gruppo di utenti con un'applicazione server. Uno scenario è composto da un modello di carico, un modello di combinazione di test, una combinazione di browser e una combinazione di reti. Un test di carico può includere più di uno scenario e un singolo scenario può contenere test Web e unit test. Uno scenario raggruppa impostazioni simili e permette quindi di raggruppare ed eseguire test simili.
+Si usa uno scenario per definire le modalità di interazione di un gruppo di utenti con un'applicazione server. Uno scenario è composto da un modello di carico, un modello di combinazione di test, una combinazione di browser e una combinazione di reti. Un test di carico può includere più di uno scenario e un singolo scenario può contenere test delle prestazioni Web e unit test. Uno scenario raggruppa impostazioni simili e permette quindi di raggruppare ed eseguire test simili.
 
-Per altre informazioni, vedere [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md) e [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+Per altre informazioni, vedere [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md) e [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>Configurare e gestire gli insiemi di contatori delle prestazioni
 
-I test di carico rendono disponibili insiemi di contatori denominati, organizzati in base alla tecnologia, che risultano utili per analizzare i dati dei contatori delle prestazioni. Gli insiemi di contatori includono Test di carico, IIS, ASP.NET e SQL. Quando si crea un test di carico con la Creazione guidata test di carico, viene configurato un insieme iniziale di contatori importanti e predefiniti per i computer che devono essere specificati per il test di carico. I contatori vengono gestiti nell'Editor test di carico.
+I test di carico rendono disponibili insiemi di contatori denominati, organizzati in base alla tecnologia, che risultano utili per analizzare i dati dei contatori delle prestazioni. Gli insiemi di contatori includono Test di carico, IIS, ASP.NET e SQL. Quando si crea un test di carico con la **Creazione guidata test di carico**, viene configurato un insieme iniziale di contatori importanti e predefiniti per i computer che devono essere specificati per il test di carico. I contatori vengono gestiti nell'**Editor test di carico**.
 
-Per altre informazioni, vedere [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Per altre informazioni, vedere [Specificare insiemi di contatori e regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="configure-and-manage-load-test-run-settings"></a>Configurare e gestire le impostazioni di esecuzione del test di carico
 
-Le impostazioni di esecuzione sono proprietà che determinano la modalità di esecuzione di un test di carico. Sono organizzate in categorie nella finestra Proprietà.
+Le impostazioni di esecuzione sono proprietà che determinano la modalità di esecuzione di un test di carico. Sono organizzate in categorie nella finestra **Proprietà**.
 
-Per altre informazioni, vedere [Configurazione delle impostazioni esecuzione test di carico](../test/configure-load-test-run-settings.md) e [Proprietà delle impostazioni di esecuzione del test di carico](../test/load-test-run-settings-properties.md).
+Per altre informazioni, vedere [Configurare le impostazioni esecuzione test di carico](../test/configure-load-test-run-settings.md) e [Proprietà delle impostazioni di esecuzione del test di carico](../test/load-test-run-settings-properties.md).
 
 ## <a name="see-also"></a>Vedere anche
 

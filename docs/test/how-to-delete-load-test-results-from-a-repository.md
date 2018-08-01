@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: da6f56175cc1292762107566ab1ebba81c140581
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff025118d0908fe35e8f3fd54a8e467c6340d419
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972019"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178865"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedura: eliminare i risultati di un test di carico da un repository
 
@@ -30,7 +30,7 @@ Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzion
 
 ## <a name="to-delete-results-from-a-repository"></a>Per eliminare i risultati da un repository
 
-1.  Da un progetto di test di carico e prestazioni Web aprire un test di carico.
+1.  Da un progetto di test di carico e prestazioni web aprire un test di carico.
 
 2.  Scegliere **Apri e gestisci risultati** nella barra degli strumenti incorporata.
 

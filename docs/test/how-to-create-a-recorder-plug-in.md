@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 008275d4e0ff094c7933b4e0bae89055acd4bf8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978177"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176213"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedura: creare un plug-in di registrazione
 
 Il plug-in <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> consente di modificare un test delle prestazioni Web registrato. La modifica avviene dopo avere scelto **Interrompi** nella barra degli strumenti di Registrazione test prestazioni Web ma prima che il test sia stato salvato e presentato nell'Editor test prestazioni Web.
 
-Un plug-in di registrazione consente di eseguire una correlazione personalizzata nei parametri dinamici. Grazie alla funzionalità di correlazione incorporata, i test prestazioni Web sono in grado di rilevare i parametri dinamici presenti nella registrazione Web dopo il completamento oppure quando si usa l'opzione **Promuovi parametri dinamici a parametri di test Web** disponibile nella barra degli strumenti dell'Editor test prestazioni Web. La funzionalità di rilevamento incorporata non è tuttavia sempre in grado di trovare tutti i parametri dinamici. Non troverebbe ad esempio un ID sessione, il cui valore viene in genere modificato ogni 5 - 30 minuti. Il processo di correlazione andrà pertanto eseguito manualmente.
+Un plug-in di registrazione consente di eseguire una correlazione personalizzata nei parametri dinamici. Grazie alla funzionalità di correlazione incorporata, i test delle prestazioni Web sono in grado di rilevare i parametri dinamici presenti nella registrazione Web dopo il completamento oppure quando si usa l'opzione **Promuovi parametri dinamici a parametri di test Web** disponibile nella barra degli strumenti dell'Editor test prestazioni Web. La funzionalità di rilevamento incorporata non è tuttavia sempre in grado di trovare tutti i parametri dinamici. Non troverebbe ad esempio un ID sessione, il cui valore viene in genere modificato ogni 5 - 30 minuti. Il processo di correlazione andrà pertanto eseguito manualmente.
 
 Il plug-in <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> consente di scrivere il codice per realizzare un plug-in personalizzato, che potrà eseguire la correlazione o modificare il test delle prestazioni Web in vari modi prima del salvataggio e della presentazione nell'Editor test prestazioni Web. Se pertanto si determina che una variabile dinamica specifica deve essere correlata per molte registrazioni, il processo potrà essere automatizzato.
 
-Alcuni altri scopi per i quali è possibile utilizzare un plug-in di registrazione sono l'aggiunta di regole di estrazione e convalida, l'aggiunta di parametri di contesto o la conversione di commenti in transazioni in un test delle prestazioni Web.
+Alcuni altri scopi per i quali è possibile usare un plug-in di registrazione sono l'aggiunta di regole di estrazione e convalida, l'aggiunta di parametri di contesto o la conversione di commenti in transazioni in un test delle prestazioni Web.
 
 Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per la realizzazione, la distribuzione e l'esecuzione di un plug-in di registrazione. Nel codice di esempio che segue le procedure viene dimostrato l'utilizzo di Visual C# per creare un plug-in di registrazione personalizzato per la correlazione di parametri dinamici.
 
@@ -33,7 +33,7 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 ### <a name="to-create-a-recorder-plug-in"></a>Per creare un plug-in di registrazione
 
-1.  Aprire una soluzione che contenga il progetto di test di carico e prestazioni Web con il test delle prestazioni Web per il quale si desidera creare un plug-in di registrazione.
+1.  Aprire una soluzione che contenga il progetto di test di carico e prestazioni Web con il test delle prestazioni Web per il quale si vuole creare un plug-in di registrazione.
 
 2.  In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, selezionare **Aggiungi**, quindi **Nuovo progetto**.
 
@@ -74,12 +74,12 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
         }
     ```
 
-     Gli argomenti dell'evento forniranno due oggetti da utilizzare: il risultato registrato e il test delle prestazioni Web registrato. Questo consentirà di scorrere il risultato in cerca valori determinati e passare quindi alla stessa richiesta nel test delle prestazioni Web per apportare le modifiche. È inoltre possibile modificare solo il test delle prestazioni Web per aggiungere un parametro di contesto o per applicare parametri a delle parti dell'URL.
+     Gli argomenti dell'evento forniranno due oggetti da usare: il risultato registrato e il test delle prestazioni Web registrato. Questo consentirà di scorrere il risultato in cerca valori determinati e passare quindi alla stessa richiesta nel test delle prestazioni Web per apportare le modifiche. È anche possibile modificare solo il test delle prestazioni Web per aggiungere un parametro di contesto o per applicare parametri a delle parti dell'URL.
 
     > [!NOTE]
     > Se si modifica il test delle prestazioni Web, sarà anche necessario impostare la proprietà <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> su true: `e.RecordedWebTestModified = true;`
 
-11. Aggiungere codice in base a ciò che si desidera che il plug-in di registrazione esegua dopo la registrazione Web. È ad esempio possibile aggiungere codice per gestire la correlazione personalizzata, come mostrato nell'esempio sotto. È inoltre possibile creare un plug-in di registrazione, ad esempio, per la conversione di commenti in transazioni o per l'aggiunta di regole di convalida al test delle prestazioni Web.
+11. Aggiungere codice in base a ciò che si vuole che il plug-in di registrazione esegua dopo la registrazione Web. È ad esempio possibile aggiungere codice per gestire la correlazione personalizzata, come mostrato nell'esempio sotto. È anche possibile creare un plug-in di registrazione, ad esempio, per la conversione di commenti in transazioni o per l'aggiunta di regole di convalida al test delle prestazioni Web.
 
 12. Dal menu **Compila** scegliere Compila \<nome progetto libreria di classi>.
 
@@ -98,7 +98,7 @@ Dopo avere compilato il plug-in di registrazione, sarà necessario posizionare i
 
 ### <a name="to-execute-the-recorder-plug-in"></a>Per eseguire il plug-in di registrazione
 
-1.  Creare un nuovo test Web.
+1.  Creare un nuovo test delle prestazioni Web.
 
      Viene visualizzata la finestra di dialogo **Attiva WebTestRecordPlugins**.
 
@@ -107,7 +107,7 @@ Dopo avere compilato il plug-in di registrazione, sarà necessario posizionare i
      Una volta che il test delle prestazioni Web ha completato la registrazione, verrà eseguito il nuovo plug-in di registrazione.
 
     > [!WARNING]
-    > Quando si esegue un test delle prestazioni Web o un test di carico in cui viene utilizzato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
+    > Quando si esegue un test delle prestazioni Web o un test di carico in cui viene usato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
     > **Richiesta non riuscita: Eccezione in \<plug-in> event: Impossibile caricare il file o l'assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una delle relative dipendenze. Il sistema non riesce a trovare il file specificato.**
     >
@@ -144,7 +144,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
 
 ## <a name="add-an-extraction-rule"></a>Aggiungere una regola di estrazione
 
-Una volta che la risposta è stata trovata, è necessario aggiungere una regola di estrazione. In questa parte dell'esempio di codice viene creata la regola di estrazione utilizzando la classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>, quindi, nel test delle prestazioni Web, viene trovata la corretta richiesta cui aggiungere la regola di estrazione. Ciascun oggetto risultato dispone di una nuova proprietà aggiunta denominata DeclarativeWebTestItemId, che è quella utilizzata nel codice per ottenere la corretta richiesta dal test delle prestazioni Web.
+Una volta che la risposta è stata trovata, è necessario aggiungere una regola di estrazione. In questa parte dell'esempio di codice viene creata la regola di estrazione usando la classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>, quindi, nel test delle prestazioni Web, viene trovata la corretta richiesta cui aggiungere la regola di estrazione. Ciascun oggetto risultato dispone di una nuova proprietà aggiunta denominata DeclarativeWebTestItemId, che è quella usata nel codice per ottenere la corretta richiesta dal test delle prestazioni Web.
 
 ```csharp
 ExtractionRuleReference ruleReference = new ExtractionRuleReference();

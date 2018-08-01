@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7d53a668014ba8f08b0715a0f0a02c351756435e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924473"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233087"
 ---
 # <a name="verify-your-xamarin-environment"></a>Verificare l'ambiente Xamarin
 
@@ -30,9 +30,9 @@ Al termine dei programmi di installazione (vedere [Setup and install](../cross-p
 
 ## <a name="all-platforms"></a>Tutte le piattaforme
 
-In Visual Studio selezionare prima **Strumenti > Estensioni e aggiornamenti** e controllare se sia necessario aggiornare uno o più componenti di Xamarin.
+In Visual Studio selezionare prima **Strumenti** > **Estensioni e aggiornamenti** e controllare se è necessario aggiornare uno o più componenti di Xamarin.
 
-Creare quindi una nuova soluzione Xamarin.Forms in Visual Studio usando **File > Nuovo progetto**. Nella finestra di dialogo espandere **Visual C# > Multipiattaforma**, selezionare **App per dispositivi mobili (Xamarin.Forms)** e fare clic su OK. Nella finestra di dialogo che segue, selezionare **App vuota**. In **Strategia di condivisione codice** selezionare **.NET Standard**. Fare clic su OK.
+Creare quindi una nuova soluzione Xamarin.Forms in Visual Studio usando **File** > **Nuovo progetto**. Nella finestra di dialogo espandere **Visual C#** > **Multipiattaforma**, selezionare **App per dispositivi mobili (Xamarin.Forms)** e fare clic su **OK**. Nella finestra di dialogo che segue, selezionare **App vuota**. In **Strategia di condivisione codice** selezionare **.NET Standard**. Fare clic su **OK**.
 
 Queste azioni creano una soluzione con quattro progetti: un progetto di libreria .NET Standard 2.0 condiviso e progetti di applicazioni per Android e iOS, nonché per la piattaforma UWP (Universal Windows Platform):
 
@@ -52,11 +52,11 @@ Queste azioni creano una soluzione con quattro progetti: un progetto di libreria
 
     Sono elencati anche gli emulatori. Selezionare uno dei dispositivi o degli emulatori di Visual Studio:
 
-  ![Selezione di Visual Studio Emulator for Android come destinazione di debug](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
+  ![Selezionare Visual Studio Emulator for Android come destinazione di debug](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  Per informazioni più dettagliate, vedere [Introducing Visual Studio's Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Introduzione a Visual Studio Emulator for Android) (blog di Visual Studio ALM). In caso di problemi di funzionamento dell'emulatore, vedere [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). È anche possibile creare nuovi profili di dispositivo per l'emulatore selezionando **Strumenti > Android > Gestione emulatori Android**.
+  Per informazioni più dettagliate, vedere [Introducing Visual Studio's Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Introduzione a Visual Studio Emulator for Android) (blog di Visual Studio ALM). In caso di problemi di funzionamento dell'emulatore, vedere [Risolvere i problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). È anche possibile creare nuovi profili di dispositivo per l'emulatore selezionando **Strumenti > Android > Gestione emulatori Android**.
 
-3. Premere F5 per compilare e distribuire il programma al dispositivo o all'emulatore Android.
+3. Premere **F5** per compilare e distribuire il programma al dispositivo o all'emulatore Android.
 
 ## <a name="windows"></a>WINDOWS
 
@@ -64,7 +64,7 @@ Queste azioni creano una soluzione con quattro progetti: un progetto di libreria
 
 2.  Nell'elenco a discesa **Piattaforme soluzione** selezionare **x86** o **x64**. Selezionare **Computer locale**.
 
-3.  Premere F5 per distribuire il programma al desktop.
+3.  Premere **F5** per distribuire il programma al desktop.
 
 ## <a name="ios"></a>iOS
 
@@ -76,19 +76,19 @@ Queste azioni creano una soluzione con quattro progetti: un progetto di libreria
 
  ![Selezione della destinazione di compilazione di iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
 
- Se non è elencato alcun simulatore, avviare Xcode nel Mac, selezionare **Xcode > Preferences** (Preferenze) e fare clic su **Download** (Scarica). Sotto l'intestazione **Components** (Componenti) dovrebbero essere visualizzate le versioni del simulatore disponibili per il download. Altre istruzioni per il debug sono disponibili nella pagina [Debug in iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator).
+ Se non è elencato alcun simulatore avviare Xcode nel Mac, selezionare **Xcode** > **Preferences** (Preferenze) e fare clic su **Download** (Scarica). Sotto l'intestazione **Components** (Componenti) dovrebbero essere visualizzate le versioni del simulatore disponibili per il download. Altre istruzioni per il debug sono disponibili nella pagina [Debug in iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios).
 
 4.  Selezionare la destinazione del dispositivo emulatore dall'elenco a discesa di Visual Studio:
 
  ![Selezione di una destinazione di debug iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
 
-5. Avviare il debugger premendo F5. Il simulatore viene avviato nel Mac, dove è possibile interagire con l'app mentre viene eseguito il debug in Visual Studio. Se al Mac è connesso un iPhone o un iPad fisico, il dispositivo viene visualizzato nell'elenco ed è possibile selezionarlo. Se nell'elenco non è visualizzato alcun dispositivo o simulatore, controllare la connessione al Mac. Vedere l'articolo collegato nel passaggio 1 sopra descritto o passare a **Strumenti > iOS > Associa a Mac**
+5. Avviare il debugger premendo **F5**. Il simulatore viene avviato nel Mac, dove è possibile interagire con l'app mentre viene eseguito il debug in Visual Studio. Se al Mac è connesso un iPhone o un iPad fisico, il dispositivo viene visualizzato nell'elenco ed è possibile selezionarlo. Se nell'elenco non è visualizzato alcun dispositivo o simulatore, controllare la connessione al Mac. Vedere l'articolo collegato nel passaggio 1 precedente o passare a **Strumenti**  > **iOS** > **Associa a Mac**
 
 6.  Se si verificano problemi di connessione al Mac, leggere [Risoluzione dei problemi di connessione](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).
 
 7.  Se viene visualizzato l'errore "Non esistono profili di provisioning installati corrispondenti alle chiavi di firma del codice Mac OS X installate", provare i suggerimenti seguenti:
 
-  - Verificare che l'account Id Apple sia aggiunto in Xcode nel Mac come descritto nell'articolo relativo all' [aggiunta dell'account personale a Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Dopo aver aggiunto l'account, assicurarsi di riavviare sia Visual Studio che Xcode.
+  - Verificare che l'account Id Apple sia aggiunto in Xcode nel Mac, come descritto nell'articolo [Add your account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Aggiungere l'account personale a Xcode) in apple.com.  Dopo aver aggiunto l'account, assicurarsi di riavviare sia Visual Studio che Xcode.
 
   - Nella scheda relativa alla firma del bundle iOS nelle proprietà del progetto iOS verificare che il campo Custom Entitlement sia vuoto per la configurazione di debug attiva.  Nota: è consigliabile provare a rimuovere questa impostazione solo se viene segnalato l'errore precedente.
 

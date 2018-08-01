@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750695"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177048"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedura: creare un editor del corpo HTTP personalizzato per l'Editor test prestazioni Web
 
@@ -301,7 +301,7 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 1.  Creare un progetto di test.
 
-2.  Creare un test prestazioni Web e immettere un URL di servizio Web nel browser, ad esempio http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl.
+2.  Creare un test delle prestazioni Web e immettere un URL di servizio Web nel browser.
 
 3.  Quando si termina la registrazione, nell'Editor test prestazioni Web espandere la richiesta per il servizio Web e selezionare un **Corpo stringa** o un **Corpo binario**.
 

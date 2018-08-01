@@ -12,19 +12,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aeaeea5ee4d1d8e65cdc13ca11192a70e0459be1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942409"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178943"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Procedura: Creare manualmente modelli Web
 
 La creazione di un modello Web è diversa dalla creazione di altri tipi di modelli. Poiché i modelli di progetto Web vengono visualizzati nella finestra di dialogo **Aggiungi nuovo sito Web** e gli elementi di progetto Web vengono classificati in base al linguaggio di programmazione, il file con estensione *vstemplate* deve specificare il modello come modello Web e identificare il linguaggio di programmazione.
 
 > [!NOTE]
-> I modelli Web devono contenere un file con estensione *webproj* vuoto a cui si deve fare riferimento nel file con estensione *vstemplate* nell'attributo `File` dell'elemento `Project`. Benché i progetti Web non richiedano un file di progetto *proj*, è necessario creare questo file stub perché il modello Web funzioni correttamente.
+> I modelli Web devono contenere un file con estensione *webproj* vuoto a cui si deve fare riferimento nel file con estensione *vstemplate* nell'attributo `File` dell'elemento `Project`. Benché i progetti web non richiedano un file di progetto *proj*, è necessario creare questo file stub perché il modello web funzioni correttamente.
 
 ## <a name="to-manually-create-a-web-template"></a>Per creare manualmente un modello Web
 
@@ -67,7 +67,7 @@ L'esempio seguente illustra un file con estensione *vstemplate* di base per un m
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
     <TemplateData>
         <Name>MyWebProjecStarterKit</Name>
-        <Description>A simple Web template</Description>
+        <Description>A simple web template</Description>
         <Icon>icon.ico</Icon>
         <ProjectType>Web</ProjectType>
         <ProjectSubType>CSharp</ProjectSubType>

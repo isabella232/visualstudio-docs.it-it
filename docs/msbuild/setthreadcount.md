@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b36da837ae1f4c327969b398c3964bfd6dd2aea3
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 9cc9a1ae5f7fb51981f3cebc4d6fa658f614de6d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302750"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151840"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Imposta il conteggio dei thread globale e assegna tale conteggio al thread corrente.  
@@ -41,4 +41,4 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  **HRESULT** con il bit **SUCCEEDED** impostato se il conteggio thread è stato aggiornato.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** FileTracker.h
+ **Intestazione:**  *FileTracker.h*

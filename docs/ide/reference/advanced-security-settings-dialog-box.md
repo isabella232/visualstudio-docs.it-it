@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Impostazioni di sicurezza avanzate
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,28 +14,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fec353f6ede2a9d2f99a8dfc19611577bbc6160
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dce482f53f9f3e6dd0b57d6cb905f97cdfaa601a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943036"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180516"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Finestra di dialogo Impostazioni di sicurezza avanzate
+
 Questa finestra di dialogo consente di specificare le impostazioni di sicurezza correlate al debug nell'area di sicurezza.
 
- Per accedere a questa finestra di dialogo, selezionare un nodo di progetto in **Esplora soluzioni**, quindi scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Sicurezza**. Nella pagina **Sicurezza** selezionare **Abilita impostazioni di sicurezza ClickOnce**, fare clic su **È un'applicazione con attendibilità parziale**, quindi fare clic su **Avanzate**.
+![Finestra di dialogo Impostazioni di sicurezza avanzate in Visual Studio](../media/advanced-security-settings.png)
+
+Per accedere a questa finestra di dialogo, selezionare un nodo di progetto in **Esplora soluzioni**, quindi scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Sicurezza**. Nella pagina **Sicurezza** selezionare **Abilita impostazioni di sicurezza ClickOnce**, fare clic su **È un'applicazione con attendibilità parziale**, quindi fare clic su **Avanzate**.
 
 ## <a name="uielement-list"></a>Elenco UIElement
- **Esegui il debug dell'applicazione con il set di autorizzazioni selezionato** Se si seleziona questa casella di controllo, durante il debug verrà usato il set di autorizzazioni selezionato nella pagina **Sicurezza**. Questa opzione è selezionata per impostazione predefinita.
 
- Per il corretto funzionamento del debug in un'area di sicurezza è necessario abilitare questa opzione e l'opzione **Abilita processo di hosting di Visual Studio**, disponibile nella pagina **Debug** di **Creazione progetti**.
+**Concedi all'applicazione accesso al proprio sito di origine**
 
- Per i progetti Applicazione Web browser WPF, l'opzione **Esegui debug dell'applicazione con il set di autorizzazioni selezionato** è selezionata e disabilitata.
+Se si seleziona questa casella di controllo, l'applicazione può accedere al sito Web o alla condivisione server in cui è pubblicata. Questa opzione è selezionata per impostazione predefinita.
 
- **Concedi all'applicazione accesso al proprio sito di origine** Se si seleziona questa casella di controllo, l'applicazione può accedere al sito Web o alla condivisione di server in cui è stato pubblicato. Questa opzione è selezionata per impostazione predefinita.
+**Esegui debug dell'applicazione come se fosse stata scaricata dal seguente URL**
 
- **Esegui il debug dell'applicazione come se fosse stata scaricata dal seguente URL** Se è necessario consentire all'applicazione di accedere al sito Web o alla condivisione server corrispondente all'**URL di installazione** specificato nella pagina **Pubblica**, digitare qui l'URL. Questa opzione è disponibile solo se la casella di controllo **Concedi all'applicazione accesso al proprio sito di origine** è selezionata.
+Se è necessario consentire all'applicazione di accedere al sito Web o alla condivisione server corrispondente all'**URL di installazione** specificato nella pagina **Pubblica**, immettere qui l'URL. Questa opzione è disponibile solo se la casella di controllo **Concedi all'applicazione accesso al proprio sito di origine** è selezionata.
 
 ## <a name="see-also"></a>Vedere anche
 

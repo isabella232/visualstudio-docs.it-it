@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051b7c7375c6b13a6f3805e358645eccdc0e33c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970949"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203963"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
 
@@ -31,7 +31,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 >
 > Questo errore può essere causato dall'installazione del controller di test in un computer con più di una scheda di rete. È anche possibile installare correttamente gli agenti e non riscontrare il problema finché non si tenta di eseguire un test.
 
-## <a name="binding-a-test-controller-to-a-specific-network-adapter"></a>Associazione di un controller di test a una scheda di rete specifica
+## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Associare un controller di test a una scheda di rete specifica
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Per ottenere gli indirizzi IP delle schede di rete
 
@@ -131,7 +131,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 ## <a name="see-also"></a>Vedere anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
-- [Modifica delle impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)
-- [Configurazione delle porte per controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)
+- [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Procedura: Impostare la dimensione massima per il file di log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Procedura: Specificare i periodi di timeout per controller e agenti di test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

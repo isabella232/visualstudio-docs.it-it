@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edbe53458eafa833287cf48fec4870987a8ba81b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749171"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179697"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -53,7 +53,7 @@ Alla successiva apertura di **Esplora server** verranno visualizzate le risorse 
 
 ### <a name="access_azure"></a> Accedere ad Azure Active Directory in un progetto Web
 
-Con Azure AD viene abilitato il supporto per end-user Single Sign-On in applicazioni Web ASP.NET o per Autenticazione di AD in servizi API Web. L'autenticazione di dominio è diverso da autenticazione degli account utente singoli; gli utenti che dispongono dell'accesso al dominio Active Directory è possono utilizzare gli account di Windows Azure esistenti per connettersi alle applicazioni web. Le applicazioni di Office 365 inoltre possono utilizzare l'autenticazione di dominio. Per un esempio pratico, creare un'applicazione Web (**File** > **Nuovo progetto** > **C#** > **Cloud** > **Applicazione Web ASP.NET**). Nella finestra di dialogo **Nuovo progetto ASP.NET** scegliere **Modifica autenticazione**. Autenticazione guidata viene visualizzata e consente di scegliere il tipo di autenticazione da utilizzare nell'applicazione.
+Con Azure AD viene abilitato il supporto di Single Sign-On per utenti finali in applicazioni Web ASP.NET MVC o per Autenticazione di AD in servizi API Web. L'autenticazione di dominio è diverso da autenticazione degli account utente singoli; gli utenti che dispongono dell'accesso al dominio Active Directory è possono utilizzare gli account di Windows Azure esistenti per connettersi alle applicazioni web. Le applicazioni di Office 365 inoltre possono utilizzare l'autenticazione di dominio. Per un esempio pratico, creare un'applicazione Web (**File** > **Nuovo progetto** > **C#** > **Cloud** > **Applicazione Web ASP.NET**). Nella finestra di dialogo **Nuovo progetto ASP.NET** scegliere **Modifica autenticazione**. Autenticazione guidata viene visualizzata e consente di scegliere il tipo di autenticazione da utilizzare nell'applicazione.
 
 ![Finestra di dialogo Modifica autenticazione per ASP.NET](../ide/media/vs2015_change_authentication.png)
 

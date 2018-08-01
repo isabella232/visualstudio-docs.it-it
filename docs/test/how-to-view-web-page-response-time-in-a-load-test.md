@@ -12,28 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35668605"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178293"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: visualizzare il tempo di risposta delle pagine Web in un test di carico utilizzando l'Analizzatore test di carico
 
-Il tempo richiesto per il caricamento di ogni pagina Web è definito *tempo di risposta*. Quando si crea un test Web, è possibile impostare un tempo di risposta obiettivo per ogni richiesta di pagina Web nel test Web.
+Il tempo richiesto per il caricamento di ogni pagina web è definito *tempo di risposta*. Quando si crea un test web, è possibile impostare un tempo di risposta obiettivo per ogni richiesta di pagina web nel test web.
 
-Se il test Web viene eseguito sotto stress in un test di carico, sarà possibile analizzare le seguenti informazioni per ogni pagina:
+Se il test web viene eseguito sotto stress in un test di carico, sarà possibile analizzare le seguenti informazioni per ogni pagina:
 
 -   Il tempo di risposta medio per la pagina.
 
 -   La percentuale di iterazioni test che soddisfano il tempo di risposta obiettivo per la pagina.
 
--   È possibile analizzare i tempi di risposta della pagina Web mediante la visualizzazione Tabelle o la visualizzazione Grafici nell'analizzatore test di carico:
+-   È possibile analizzare i tempi di risposta della pagina web mediante la visualizzazione Tabelle o la visualizzazione Grafici nell'analizzatore test di carico:
 
--   Analisi dei tempi di risposta della pagina Web nella visualizzazione Tabelle
+-   Analisi dei tempi di risposta della pagina web nella visualizzazione Tabelle
 
--   Analisi dei tempi di risposta della pagina Web nella visualizzazione Grafici
+-   Analisi dei tempi di risposta della pagina web nella visualizzazione Grafici
 
 ## <a name="view-response-time-data-in-a-table"></a>Visualizzare i dati sul tempo di risposta in una tabella
 
@@ -49,7 +49,7 @@ Se il test Web viene eseguito sotto stress in un test di carico, sarà possibile
     |-|-|
     |**Page**|Nome della pagina Web.|
     |**Scenario**|Nome dello scenario. Importante se il test Web include più di uno scenario.|
-    |**Test**|Nome del test Web. Importante se il test di carico include più di un test Web.|
+    |**Test**|Nome del test delle prestazioni web. Importante se il test di carico include più di un test delle prestazioni web.|
     |**Network**|Tipo di rete.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
     |**Totale**|Numero complessivo di richieste effettuate per la pagina Web. Corrisponde al totale di tutte le iterazioni nel test di carico.|
     |**Media**|Tempo di risposta medio della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
@@ -61,8 +61,8 @@ Se il test Web viene eseguito sotto stress in un test di carico, sarà possibile
     |**Max**|Tempo di risposta massimo della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
     |**Deviazione standard**|Per impostazione predefinita, i dati della deviazione standard non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
     |**Tempo di risposta pagina**|Tempo di risposta medio per tutte le richieste effettuate per la pagina Web.|
-    |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:** il tempo pagina obiettivo viene visualizzato solo quando nel test prestazioni Web è stato definito l'obiettivo per la richiesta.|
-    |**% corrispondenza a obiettivo**|Percentuale delle richieste effettuate per la pagina Web che soddisfano il tempo di risposta obiettivo.|
+    |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:** il tempo pagina obiettivo viene visualizzato solo quando nel test delle prestazioni web è stato definito l'obiettivo per la richiesta.|
+    |**% corrispondenza a obiettivo**|Percentuale delle richieste effettuate per la pagina web che soddisfano il tempo di risposta obiettivo.|
 
  Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
@@ -76,7 +76,7 @@ Se il test Web viene eseguito sotto stress in un test di carico, sarà possibile
 
 2.  Nella finestra **Contatori** espandere il nodo dello scenario desiderato, ad esempio `Scenario1`.
 
-3.  Espandere il nodo del test delle prestazioni Web desiderato.
+3.  Espandere il nodo del test delle prestazioni web desiderato.
 
 4.  Espandere il nodo **Pagine**.
 

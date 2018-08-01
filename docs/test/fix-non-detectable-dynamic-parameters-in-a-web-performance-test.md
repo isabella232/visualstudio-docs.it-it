@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751046"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177825"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
 
@@ -35,11 +35,11 @@ Alcuni tipi di parametri dinamici non vengono rilevati. Un parametro dinamico no
 
 Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creerà un'applicazione Web ASP.NET semplice con tre Web Form, alcuni controlli e codice personalizzato. Quindi verrà illustrato come isolare i parametri dinamici e come gestirli.
 
-1.  Creare un nuovo progetto ASP.NET denominato DynamicParamaterSample.
+1.  Creare un nuovo progetto ASP.NET denominato **DynamicParameterSample**.
 
      ![Creare un progetto di applicazione Web ASP.NET vuoto](../test/media/web_test_dynamicparameter_aspproject.png)
 
-2.  Aggiungere un Web Form denominato Querystring.aspx.
+2.  Aggiungere un Web Form denominato *Querystring.aspx*.
 
 3.  Nella visualizzazione Progettazione trascinare un controllo HiddenField nella pagina, quindi modificare il valore della proprietà (ID) in HiddenFieldSessionID.
 
@@ -62,7 +62,7 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
     </html>
     ```
 
-5.  Aprire il file Querystring.aspx.cs e aggiungere il codice evidenziato di seguito al metodo Page_Load:
+5.  Aprire il file *Querystring.aspx.cs* e aggiungere il codice evidenziato di seguito al metodo Page_Load:
 
     ```csharp
     public partial class Querystring : System.Web.UI.Page
@@ -74,25 +74,25 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
     }
     ```
 
-6.  Aggiungere un secondo Web Form denominato ASPQuery.aspx.
+6.  Aggiungere un secondo Web Form denominato *ASPQuery.aspx*.
 
-7.  Nella visualizzazione Progettazione trascinare un'etichetta nella pagina, quindi modificare il valore della relativa proprietà (ID) in IndexLabel.
+7.  Nella visualizzazione Progettazione trascinare un controllo **Label** nella pagina e modificare il valore della relativa proprietà **(ID)** in **IndexLabel**.
 
      ![Aggiungere un'etichetta al Web Form](../test/media/web_test_dynamicparameter_label.png)
 
-8.  Trascinare un controllo HyperLink nella pagina e modificare il valore della proprietà Text in Back.
+8.  Trascinare un controllo **HyperLink** nella pagina e modificare il valore della relativa proprietà **Text** in **Back**.
 
      ![Aggiungere un collegamento ipertestuale al Web Form](../test/media/web_test_dynamicparameter_hyperlink.png)
 
-9. Scegliere (...) per la proprietà NavigationURL.
+9. Scegliere **(...)** per la proprietà **NavigateUrl**.
 
      ![Modificare la proprietà NavigateURL](../test/media/web_test_dynamicparameter_hyperlink_navurl.png)
 
-     Selezionare Querystring.aspx.
+     Selezionare *Querystring.aspx*.
 
      ![Scegliere l'URL Querystring.aspx](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png)
 
-10. Aprire il file ASPQuery.aspx.cs e aggiungere il codice evidenziato di seguito al metodo Page_Load:
+10. Aprire il file *ASPQuery.aspx.cs* e aggiungere il codice evidenziato di seguito al metodo Page_Load:
 
     ```csharp
     protected void Page_Load(object sender, EventArgs e)
@@ -101,13 +101,13 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
             }
     ```
 
-11. Aggiungere un terzo Web Form denominato JScriptQuery.aspx.
+11. Aggiungere un terzo Web Form denominato *JScriptQuery.aspx*.
 
-     Come è stato fatto per la seconda pagina, trascinare un'etichetta nel form, impostare la proprietà (ID) su IndexLabel e trascinare un controllo Hyperlink nel form, impostando la proprietà Text su Back e la proprietà NavigationURL su Querystring.aspx.
+     Come è stato fatto per la seconda pagina, trascinare un controllo **Label** nel form, impostandone la proprietà **(ID)** su **IndexLabel** e trascinare un controllo **Hyperlink** nel form, impostandone la proprietà **Text** su **Back** e la proprietà **NavigateUrl** su **Querystring.aspx**.
 
      ![Aggiungere e configurare il terzo Web Form](../test/media/web_test_dynamicparameter_addwebform3.png)
 
-12. Aprire il file JScriptQuery.aspx.cs e aggiungere il codice evidenziato di seguito al metodo Page_Load:
+12. Aprire il file *JScriptQuery.aspx.cs* e aggiungere il codice evidenziato di seguito al metodo Page_Load:
 
     ```csharp
     protected void Page_Load(object sender, EventArgs e)
@@ -118,11 +118,11 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
 13. Salvare il progetto.
 
-14. In Esplora soluzioni impostare Querystring.aspx come pagina iniziale.
+14. In **Esplora soluzioni** impostare *Querystring.aspx* come pagina iniziale.
 
      ![Impostare la pagina iniziale su Querystring.aspx](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. Premere CTRL+F5 per eseguire l'applicazione Web nel browser. Copiare l'URL. Sarà necessario quando si registra il test.
+15. Premere **CTRL**+**F5** per eseguire l'applicazione Web nel browser. Copiare l'URL. Sarà necessario quando si registra il test.
 
 16. Provare entrambi i collegamenti. Per ciascuno di essi dovrebbe venire visualizzato il messaggio "Success. Dynamic querystring parameter found".
 
@@ -152,21 +152,21 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
      La registrazione test Web visualizza gli URL di richiesta e risposta HTTP durante l'esplorazione nell'applicazione Web.
 
-6.  Scegliere il pulsante di arresto in Registrazione test.
+6.  Scegliere il pulsante **Interrompi** in Registrazione test.
 
      Nella finestra di dialogo relativa al rilevamento dei parametri dinamici è presente una barra di stato che mostra lo stato del rilevamento dei parametri nelle risposte HTTP ricevute.
 
 7.  Il parametro dinamico per CustomQueryString nella pagina ASPQuery viene rilevato automaticamente. Tuttavia, il parametro dinamico per CustomQueryString nella pagina JScriptQuery non viene rilevato.
 
-     Scegliere OK per aggiungere una regola di estrazione a Querystring.aspx, associandola alla pagina ASPQuery.
+     Scegliere **OK** per aggiungere una regola di estrazione a *Querystring.aspx*, associandola alla pagina ASPQuery.
 
      ![Promuovere il parametro dinamico rilevato](../test/media/web_test_dynamicparameter_promotedialog.png)
 
-     La regola di estrazione viene aggiunta alla prima richiesta di Querystring.aspx.
+     La regola di estrazione viene aggiunta alla prima richiesta per *Querystring.aspx*.
 
      ![Regola di estrazione aggiunta alla richiesta](../test/media/web_test_dynamicparameter_autoextractionrule.png)
 
-     Espandere la seconda richiesta nell'albero delle richieste per ASPQuery.aspx e notare che il valore di CustomQueryString è stato associato alla regola di estrazione.
+     Espandere la seconda richiesta nell'albero delle richieste per *ASPQuery.aspx*. Si noti che il valore di CustomQueryString è stato associato alla regola di estrazione.
 
      ![CustomQueryString associato alla regola di estrazione](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
@@ -178,27 +178,27 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
      ![Eseguire il test prestazioni Web](../test/media/web_test_dynamicparameter_runtest.png)
 
-2.  La quarta richiesta per la pagina JScriptQuery.aspx non riesce. Andare al test Web.
+2.  La quarta richiesta per la pagina *JScriptQuery.aspx* non riesce. Andare al test Web.
 
      ![Errore di parametro dinamico nei risultati dei test](../test/media/web_test_dynamicparameter_runresults.png)
 
-     Il nodo della richiesta JScriptQuery.aspx appare evidenziato nell'editor. Espandere il nodo e notare che la parte "1v0yhyiyr0raa2w4j4pwf5zl" di CustomQueryString risulta dinamica.
+     Il nodo della richiesta *JScriptQuery.aspx* appare evidenziato nell'editor. Espandere il nodo e notare che la parte "1v0yhyiyr0raa2w4j4pwf5zl" di CustomQueryString risulta dinamica.
 
      ![Parametro dinamico sospetto in CustomQueryString](../test/media/web_test_dynamicparameter_runresults2.png)
 
-3.  Tornare al Visualizzatore risultati test prestazioni Web e selezionare la pagina JScriptQuery.aspx che ha restituito errore. Quindi, scegliere la scheda Richiesta, verificare che la casella di controllo Mostra dati non elaborati sia deselezionata, scorrere verso il basso e scegliere Ricerca veloce in CustomQueryString.
+3.  Tornare al Visualizzatore risultati test prestazioni Web e selezionare la pagina *JScriptQuery.aspx* che ha generato l'errore. Quindi, scegliere la scheda Richiesta, verificare che la casella di controllo Mostra dati non elaborati sia deselezionata, scorrere verso il basso e scegliere Ricerca veloce in CustomQueryString.
 
      ![Usare la ricerca veloce per isolare il parametro dinamico](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4.  È noto dall'esame dell'editor test che all'oggetto CustomQueryString della richiesta di JScriptQuery.aspx è stato assegnato un valore di: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` e che la parte dinamica sospetta è "1v0yhyiyr0raa2w4j4pwf5zl". Nell'elenco a discesa Trova rimuovere la parte sospetta della stringa di ricerca. La stringa deve essere "CustomQueryString=jScriptQueryString___".
+4.  Dall'editor test risulta che all'oggetto CustomQueryString della richiesta *JScriptQuery.aspx* è stato assegnato il valore `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`. La parte dinamica sospetta è "1v0yhyiyr0raa2w4j4pwf5zl". Nell'elenco a discesa Trova rimuovere la parte sospetta della stringa di ricerca. La stringa deve essere "CustomQueryString=jScriptQueryString___".
 
-     Ai parametri dinamici sono assegnati i valori in una delle richieste che precede la richiesta che contiene l'errore. Selezionare pertanto la casella di controllo Cerca in alto e scegliere Trova successivo fino a visualizzare la richiesta di Querystring.aspx precedente evidenziata nel pannello Richiesta. Questo dovrebbe avvenire dopo avere fatto clic su Trova successivo tre volte.
+     Ai parametri dinamici sono assegnati i valori in una delle richieste che precede la richiesta che contiene l'errore. Selezionare pertanto la casella di controllo Cerca in alto e scegliere Trova successivo fino a visualizzare la richiesta *Querystring.aspx* precedente evidenziata nel pannello Richiesta. Questo dovrebbe avvenire dopo avere fatto clic su Trova successivo tre volte.
 
      ![Usare la ricerca veloce per isolare il parametro dinamico](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      Come mostrato nella scheda Risposta e nel codice JavaScript implementato in precedenza e mostrato sotto, al parametro della stringa di query CustomQueryString è assegnato un valore "jScriptQueryString___" e vi viene concatenato anche il valore restituito dalla variabile sessionId.
 
-    ```
+    ```javascript
     function jScriptQueryString()          {             var Hidden = document.getElementById("HiddenFieldSessionID");             var sessionId = Hidden.value;             window.location = 'JScriptQuery.aspx?CustomQueryString=jScriptQueryString___' + sessionId;          }
 
     ```
@@ -215,7 +215,7 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
      ![Scegliere il risultato registrato](../test/media/web_test_dynamicparameter_recordedresult.png)
 
-7.  Nei risultati registrati selezionare la terza richiesta, che è la stessa richiesta di Querystringrequest.aspx isolata nei risultati dell'esecuzione del test.
+7.  Nei risultati registrati selezionare la terza richiesta, che è la stessa richiesta *Querystringrequest.aspx* isolata nei risultati dell'esecuzione del test.
 
      ![Scegliere la stessa richiesta nei risultati registrati](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
@@ -223,25 +223,25 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
      ![Aggiungere una regola di estrazione per il parametro dinamico](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png)
 
-     La nuova regola di estrazione viene aggiunta alla richiesta Querystring.aspx e le viene assegnato un valore di "Param0".
+     La nuova regola di estrazione viene aggiunta alla richiesta *Querystring.aspx* con il valore "Param0".
 
-     Se nella finestra di dialogo è indicato che sono state trovate corrispondenze per il testo estratto a cui associare il parametro, scegliere Sì.
+     Se nella finestra di dialogo è indicato che sono state trovate corrispondenze per il testo estratto a cui associare il parametro, scegliere **Sì**.
 
      ![Regola di estrazione creata](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
-8.  Scegliere Trova successivo. La prima corrispondenza è quella da modificare, ovvero il parametro per CustomQueryString nella pagina JScriptQuery.
+8.  Scegliere **Trova successivo**. La prima corrispondenza è quella da modificare, ovvero il parametro per CustomQueryString nella pagina JScriptQuery.
 
      ![Trovare e sostituire il testo per il parametro](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
-9. Scegliere Sostituisci.
+9. Scegliere **Sostituisci**.
 
      ![Sostituire il testo con il parametro](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Il parametro QueryString nella richiesta di JScriptQuery.aspx viene aggiornato utilizzando il nuovo parametro di contesto: CustomQueryString=jScriptQueryString___ {{Param0}}.
+     Il parametro QueryString nella richiesta *JScriptQuery.aspx* viene aggiornato con il nuovo parametro di contesto: CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Parametro applicato a querystring](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
-10. Chiudere la finestra di dialogo Trova e sostituisci nella richiesta. Nell'albero delle richieste si noti la similitudine tra le strutture del parametro dinamico rilevato e del parametro dinamico non rilevato di cui si è effettuata la correlazione.
+10. Chiudere la finestra di dialogo **Trova e sostituisci**. Nell'albero delle richieste si noti la similitudine tra le strutture del parametro dinamico rilevato e del parametro dinamico non rilevato di cui si è effettuata la correlazione.
 
      ![Parametri dinamici rilevati e correlati](../test/media/web_test_dynamicparameter_conclusion.png)
 
@@ -253,16 +253,16 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
  **R.** Sì, usare la procedura seguente:
 
-1.  Sulla barra degli strumenti, scegliere il pulsante Promuovi parametri dinamici a parametri di test Web.
+1.  Sulla barra degli strumenti scegliere il pulsante **Promuovi parametri dinamici a parametri di test Web**.
 
-     Al termine del processo di rilevamento, se vengono rilevati parametri dinamici, viene visualizzata la finestra di dialogo Promuovi parametri dinamici a parametri di test Web.
+     Al termine del processo di rilevamento, se vengono rilevati parametri dinamici, viene visualizzata la finestra di dialogo **Promuovi parametri dinamici a parametri di test Web**.
 
      I parametri dinamici sono elencati nella colonna Parametri dinamici. Le richieste da cui verrà estratto e a cui sarà associato il parametro dinamico sono elencate nelle colonne Estrai parametro da risposta e Associa a richiesta.
 
-     Se si sceglie un parametro dinamico nella finestra di dialogo Promuovi parametri dinamici a parametri di test Web, nell'albero delle richieste dell'Editor test prestazioni Web vengono evidenziate due richieste. La prima richiesta è quella a cui verrà aggiunta la regola di estrazione. La seconda richiesta è quella a cui verrà associato il valore estratto.
+     Se si sceglie un parametro dinamico nella finestra di dialogo **Promuovi parametri dinamici a parametri di test Web**, nell'albero delle richieste dell'Editor test prestazioni Web vengono evidenziate due richieste. La prima richiesta è quella a cui verrà aggiunta la regola di estrazione. La seconda richiesta è quella a cui verrà associato il valore estratto.
 
 2.  Selezionare o deselezionare la casella di controllo accanto ai parametri dinamici che si desidera correlare automaticamente. Per impostazione predefinita, vengono selezionati tutti i parametri dinamici.
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>D. È necessario configurare Visual Studio per rilevare i parametri dinamici?
 
- **R.** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Tuttavia, se le opzioni di Visual Studio sono configurate per non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile [eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web](#FindingNonDetectableDynamicParamters_QA_ReRunDetection).
+ **R.** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Se tuttavia le opzioni di Visual Studio sono configurate in modo da non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web.

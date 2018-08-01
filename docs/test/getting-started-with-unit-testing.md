@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425215"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177867"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -56,7 +56,7 @@ Creare unit test ed eseguirli frequentemente per assicurarsi che il codice funzi
 
 ## <a name="run-unit-tests"></a>Eseguire unit test
 
-1. Aprire Esplora test.
+1. Aprire **Esplora test**.
 
    ![Aprire Esplora Test nel menu Test](media/rununittest1.png)
 
@@ -64,7 +64,7 @@ Creare unit test ed eseguirli frequentemente per assicurarsi che il codice funzi
 
    ![Eseguire unit test in Esplora test](media/rununittest2.png)
 
-   In Esplora test è possibile visualizzare gli unit test superati e non superati.
+   In **Esplora test** è possibile visualizzare gli unit test superati e non superati.
 
    ![Esaminare i risultati degli unit test in Esplora test](media/rununittest3.png)
 
@@ -97,13 +97,13 @@ Quando si esegue IntelliTest, è possibile visualizzare facilmente i test non su
 
 ## <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
-Esplora Test consente di eseguire unit test da Visual Studio o progetti unit test di terze parti, raggruppare i test in categorie, filtrare l'elenco dei test, nonché creare, salvare ed eseguire playlist di test. È anche possibile eseguire il debug dei test e analizzare code coverage e prestazioni dei test. Per informazioni, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md).
+**Esplora test** consente di eseguire unit test da Visual Studio o progetti unit test di terze parti, raggruppare i test in categorie, filtrare l'elenco dei test, nonché creare, salvare ed eseguire playlist di test. È anche possibile eseguire il debug dei test e analizzare code coverage e prestazioni dei test. Per informazioni, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md).
 
 ![Esecuzione di unit test con Esplora test](media/testexplorer.png)
 
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
-Per determinare quale percentuale del codice del progetto viene effettivamente testata dai test codificati come unit test, è possibile utilizzare la funzionalità code coverage di Visual Studio. Per una protezione efficace dai bug, i test devono analizzare o "coprire" gran parte del codice. Per le procedure, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Per determinare quale percentuale del codice del progetto viene effettivamente testata dai test codificati come unit test, è possibile utilizzare la funzionalità code coverage di Visual Studio. Per una protezione efficace dai bug, i test devono analizzare o "coprire" gran parte del codice. Per la procedura, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ![Uso di code coverage per determinare la quantità di codice testato](media/codecoverage.png)
 

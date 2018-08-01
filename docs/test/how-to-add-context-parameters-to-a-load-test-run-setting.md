@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969106"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203754"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedura: aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedura: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
 
 Dopo aver creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test specifici.
 
@@ -27,7 +27,7 @@ Dopo aver creato il test di carico mediante la **Creazione guidata test di caric
 
 È possibile creare parametri di contesto da utilizzare in un'impostazione di esecuzione del test di carico utilizzando l'Editor test di carico. I parametri di contesto consentono di parametrizzare una stringa.
 
-Si supponga che il test di carico contenga un test delle prestazioni Web che già utilizza un URL di server Web con parametri tramite un parametro di contesto. È possibile aggiungere un parametro di contesto a un'impostazione di esecuzione del test di carico che utilizza lo stesso valore di nome utilizzato nel test delle prestazioni Web. In questo modo il test delle prestazioni Web verrà mappato a un server diverso quando si esegue il test di carico. Ad esempio, se il test di carico include un test delle prestazioni Web che utilizza un parametro di contesto denominato WebServer1 per il nome del server Web nell'URL, se si specifica quindi un parametro di contesto nell'impostazione di esecuzione del test di carico che sia anche denominato WebServer1, il test di carico utilizzerà il parametro di contesto assegnato nell'impostazione di esecuzione del test di carico. In altre parole, se il test delle prestazioni Web incluso nel test di carico utilizza un parametro di contesto con lo stesso nome di un parametro di contesto nel test di carico, il parametro di contesto nel test di carico eseguirà l'override del parametro di contesto utilizzato nel test delle prestazioni Web.
+Si supponga che il test di carico contenga un test delle prestazioni Web che già usa un URL di server Web con parametri tramite un parametro di contesto. È possibile aggiungere un parametro di contesto a un'impostazione di esecuzione del test di carico che usa lo stesso valore di nome usato nel test delle prestazioni Web. In questo modo il test delle prestazioni Web verrà mappato a un server diverso quando si esegue il test di carico. Ad esempio, se il test di carico include un test delle prestazioni Web che usa un parametro di contesto denominato WebServer1 per il nome del server Web nell'URL, se si specifica quindi un parametro di contesto nell'impostazione di esecuzione del test di carico che sia anche denominato WebServer1, il test di carico utilizzerà il parametro di contesto assegnato nell'impostazione di esecuzione del test di carico. In altre parole, se il test delle prestazioni Web incluso nel test di carico usa un parametro di contesto con lo stesso nome di un parametro di contesto nel test di carico, il parametro di contesto nel test di carico eseguirà l'override del parametro di contesto usato nel test delle prestazioni Web.
 
 > [!WARNING]
 > Prestare attenzione a non eseguire l'override accidentale del parametro di contesto di un test delle prestazioni Web quando si usano parametri di contesto in un'impostazione di esecuzione test. Evitare di utilizzare gli stessi nomi per i parametri di contesto a meno che lo si faccia intenzionalmente.
@@ -36,9 +36,9 @@ Se si assegna il valore del parametro di contesto Webserver1 a `http://Corporate
 
 Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo stesso nome nelle diverse impostazioni di esecuzione del test di carico, è possibile eseguire il test di carico in ambienti diversi:
 
--   Impostazione di esecuzione test Server Web aziendale di gestione temporanea: il parametro di contesto denominato WebServer1=http://CorporateStagingWebServer
+-   Impostazione di esecuzione server Web aziendale di gestione temporanea: il parametro di contesto denominato `WebServer1=http://CorporateStagingWebServer`
 
--   Impostazione di esecuzione test Server Web di produzione aziendale: il parametro di contesto denominato WebServer1=http://CorporateProductionWebServer
+-   Impostazione di esecuzione server Web aziendale di produzione: il parametro di contesto denominato `WebServer1=http://CorporateProductionWebServer`
 
  **Modifica dell'impostazione di esecuzione test dalla riga di comando**
 
@@ -64,12 +64,12 @@ Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo ste
 
      Se le impostazioni esecuzione test già contengono una cartella **Parametri di contesto**, è possibile fare clic con il pulsante destro del mouse sulla cartella e scegliere **Aggiungi parametro di contesto**.
 
-4.  Nella finestra Proprietà modificare il valore di **Nome** nel modo appropriato (ad esempio, WebServer1). Nella finestra Proprietà modificare **Valore** nel parametro che si vuole usare, ad esempio http://CorporateStagingWebServer).
+4.  Nella finestra **Proprietà** modificare il valore di **Nome** nel modo appropriato (ad esempio, WebServer1). Nella finestra **Proprietà** modificare **Valore** nel parametro che si vuole usare, ad esempio `http://CorporateStagingWebServer`.
 
-5.  (Facoltativo) Ripetere i passaggi da 3 a 5 e usare una stringa diversa per la proprietà **Valore**, ad esempio, http://CorporateProductionWebServer).
+5.  (Facoltativo) Ripetere i passaggi da 3 a 5 e usare una stringa diversa per la proprietà **Valore**, ad esempio, `http://CorporateProductionWebServer`.
 
 6.  Scegliere quali impostazioni esecuzione test devono essere attive. Aprire il menu di scelta rapida nelle impostazioni esecuzione test e scegliere **Imposta come attivo**.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Configurazione delle impostazioni esecuzione test di carico](../test/configure-load-test-run-settings.md)
+- [Configurare le impostazioni esecuzione test di carico](../test/configure-load-test-run-settings.md)

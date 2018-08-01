@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cb64626034c8c9bf03875385a80ebc417bf05dcb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751806"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204063"
 ---
-# <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Procedura: analizzare le violazioni di soglia utilizzando il pannello dei contatori nell'Analizzatore test di carico
+# <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Procedura: Analizzare le violazioni di soglia usando il pannello dei contatori nell'Analizzatore test di carico
 
-Il riquadro Contatori è visibile nella visualizzazione Grafici e nella visualizzazione Tabelle nell'analizzatore test di carico mentre è in esecuzione un test di carico o quando si analizza un risultato del test di carico. Vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md), [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) e [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
+Il riquadro **Contatori** è visibile nella visualizzazione Grafici e nella visualizzazione Tabelle nell'**Analizzatore test di carico** mentre è in esecuzione un test di carico o quando si analizza un risultato del test di carico. Vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md), [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) e [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
 
- Le violazioni di soglia sono associate a specifici contatori delle prestazioni e indicano che il contatore delle prestazioni ha superato o non ha raggiunto un valore soglia impostato. Tali violazioni di soglia vengono comunicate tramite icone nel riquadro Contatori.
+ Le violazioni di soglia sono associate a specifici contatori delle prestazioni e indicano che il contatore delle prestazioni ha superato o non ha raggiunto un valore soglia impostato. Tali violazioni di soglia vengono comunicate tramite icone nel pannello dei **contatori**.
 
  ![Nodo del computer del riquadro dei contatori](../test/media/ltest_compnode.png)
 
- L'icona relativa a una violazione di soglia viene propagata dal nodo dell'albero dove risiede il contatore in errore fino al nodo radice. In questo modo si segnala all'utente una violazione in un contatore che potrebbe non essere visibile in un albero che non è stato espanso. Un esempio dell'icona può essere visualizzato nel nodo **Computer** nel pannello Contatori nella figura precedente.
+ L'icona relativa a una violazione di soglia viene propagata dal nodo dell'albero dove risiede il contatore in errore fino al nodo radice. In questo modo si segnala all'utente una violazione in un contatore che potrebbe non essere visibile in un albero che non è stato espanso. Un esempio dell'icona può essere visualizzato nel **nodo Computer** nel pannello **Contatori** nella figura precedente.
 
  e possono essere una delle seguenti:
 
@@ -43,9 +43,9 @@ Il riquadro Contatori è visibile nella visualizzazione Grafici e nella visualiz
 
 1.  Dopo il completamento di un test di carico o dopo il caricamento di un risultato di un test, scegliere **Grafici** o **Tabelle** nella barra degli strumenti dell'Analizzatore test di carico.
 
-     Il pannello Contatori viene mostrato nella visualizzazione Grafici o nella visualizzazione Tabelle.
+     Il pannello **Contatori** viene visualizzato nella visualizzazione Grafici o nella visualizzazione Tabelle.
 
-2.  Se il pannello Contatori non è visibile, fare clic su **Mostra pannello dei contatori** nella barra degli strumenti.
+2.  Se il pannello **Contatori** non è visibile, fare clic su **Mostra pannello dei contatori** nella barra degli strumenti.
 
      In tutti i nodi contenenti violazioni di soglia sarà inclusa una delle icone elencate in precedenza.
 
@@ -58,7 +58,7 @@ Il riquadro Contatori è visibile nella visualizzazione Grafici e nella visualiz
         > [!NOTE]
         > Le icone relative alla violazione di soglia possono essere mostrate anche sul grafico nella visualizzazione Grafici. L'icona di soglia viene visualizzata nel grafico accanto al punto dati in cui si è verificata la violazione di soglia. Per eseguire questa operazione, scegliere l'elenco a discesa **Mostra legenda** nella barra degli strumenti e selezionare **Mostra violazioni di soglia su grafico**.
 
-    -   **Mostra contatore su legenda**: nella legenda, il contatore delle prestazioni è aggiunto e selezionato. Per altre informazioni, vedere [Uso della legenda della visualizzazione Grafici per analizzare i test di carico](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
+    -   **Mostra contatore su legenda**: nella legenda, il contatore delle prestazioni è aggiunto e selezionato. Per altre informazioni, vedere [Utilizzo della legenda della visualizzazione Grafici per analizzare i test di carico](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
     -   **Aggiungi grafico**:
 
@@ -73,7 +73,7 @@ Il riquadro Contatori è visibile nella visualizzazione Grafici e nella visualiz
 5.  (Facoltativo) Se si analizza la violazione di soglia in un risultato del test di carico completato, provare a utilizzare le funzionalità dello zoom nella visualizzazione Grafici. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
     > [!TIP]
-    > Se sono state rilevate violazioni di soglia durante l'esecuzione dei test di carico, si visualizzerà un collegamento denominato "violazioni di soglia", incluso il numero di violazioni, nella barra di stato dell'analizzatore test di carico. È possibile scegliere il collegamento per visualizzare tutte le violazioni di soglia nella tabella **Soglie** della visualizzazione Tabelle.
+    > Se sono state rilevate violazioni di soglia durante l'esecuzione dei test di carico, si visualizzerà un collegamento denominato "violazioni di soglia", incluso il numero di violazioni, nella barra di stato dell'**Analizzatore test di carico**. È possibile scegliere il collegamento per visualizzare tutte le violazioni di soglia nella tabella **Soglie** della visualizzazione Tabelle.
 
 ## <a name="see-also"></a>Vedere anche
 

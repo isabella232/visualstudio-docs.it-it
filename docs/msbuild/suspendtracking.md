@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b484ce1bd47d01092ff28d60b457012805cb16e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b0d52fb5d50a75207a0aad49f7b29cfc66b8e889
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568624"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154196"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 Sospende la verifica nel contesto corrente.  
@@ -37,7 +37,7 @@ HRESULT WINAPI SuspendTracking(void);
  **HRESULT** con il bit **SUCCEEDED** impostato se la verifica è stata sospesa.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** FileTracker.h  
+ **Intestazione:** *FileTracker.h*  
   
 ## <a name="see-also"></a>Vedere anche  
  [ResumeTracking](../msbuild/resumetracking.md)

@@ -9,12 +9,12 @@ description: Informazioni su come attivare il vantaggio Azure incluso nella sott
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280657"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379736"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 
@@ -22,7 +22,7 @@ ms.locfileid: "36280657"
 
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il [credito Azure mensile](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure costituisce la sandbox personale per lo sviluppo e il test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
 
-## <a name="eligibililty"></a>Idoneità
+## <a name="eligibility"></a>Idoneità
 
 | Livello di sottoscrizione/Programma                                 | Vantaggio                     | Rinnovabile?                                                   |
 |--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|

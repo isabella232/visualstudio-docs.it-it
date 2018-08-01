@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32066534"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178634"
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -64,7 +64,7 @@ Nella tabella seguente sono elencati i parametri di modello riservati che posson
 |SpecificSolutionName|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `SpecificSolutionName` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `SpecificSolutionName` è vuoto.|
 |userdomain|Dominio dell'utente corrente.|
 |nomeutente|Nome dell'utente corrente.|
-|webnamespace|Nome del sito Web corrente. Questo parametro viene usato nel modello di modulo Web per garantire che i nomi delle classi siano univoci. Se il sito Web si trova nella directory radice del server Web, questo parametro di modello si risolve nella directory radice del server Web.|
+|webnamespace|Nome del sito Web corrente. Questo parametro viene usato nel modello di modulo Web per garantire che i nomi delle classi siano univoci. Se il sito Web si trova nella directory radice del server Web, questo parametro di modello viene risolto nella directory radice del server Web.|
 |anno|L'anno corrente nel formato AAAA.|
 
 > [!NOTE]
@@ -121,3 +121,4 @@ Nel file *.vstemplate* del modello di progetto includere l'attributo `ReplacePar
 
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
 - [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Riferimento allo schema di modello](../extensibility/visual-studio-template-schema-reference.md)

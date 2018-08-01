@@ -12,50 +12,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f870842427549c81f161b3f18b3ff846f974d3
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326907"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179190"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: creazione di un nuovo file di progetto MSBuild
+# <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creare un nuovo file di progetto MSBuild
 I linguaggi di programmazione destinati a .NET Framework usano i file di progetto MSBuild per descrivere e controllare il processo di compilazione dell'applicazione. Quando si usa Visual Studio per creare un file di progetto MSBuild, il codice XML appropriato viene aggiunto automaticamente al file. Può tuttavia risultare utile comprendere l'organizzazione del codice XML e come è possibile modificarlo per controllare una compilazione.  
   
  Per informazioni sulla creazione di un file di progetto per un progetto C++, vedere [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
   
  Questa procedura dettagliata mostra come creare in modo incrementale un file di progetto di base usando solo un editor di testo. I passaggi della procedura dettagliata sono i seguenti:  
   
--   Creazione di un file di origine di applicazione minimo.  
+1.   Creazione di un file di origine di applicazione minimo.  
   
--   Creazione di un file di progetto MSBuild minimo.  
+2.   Creazione di un file di progetto MSBuild minimo.  
   
--   Estensione della variabile di ambiente PATH per includere MSBuild.  
+3.   Estensione della variabile di ambiente PATH per includere MSBuild.  
   
--   Compilazione dell'applicazione tramite il file di progetto.  
+4.   Compilazione dell'applicazione tramite il file di progetto.  
   
--   Aggiunta delle proprietà per controllare la compilazione.  
+5.   Aggiunta delle proprietà per controllare la compilazione.  
   
--   Controllo della compilazione mediante la modifica dei valori delle proprietà.  
+6.   Controllo della compilazione mediante la modifica dei valori delle proprietà.  
   
--   Aggiunta delle destinazioni nella compilazione.  
+7.   Aggiunta delle destinazioni nella compilazione.  
   
--   Controllo della compilazione specificando le destinazioni.  
+8.   Controllo della compilazione specificando le destinazioni.  
   
--   Compilazione incrementale.  
+9.   Compilazione incrementale.  
+
+Questa procedura dettagliata mostra come compilare il progetto tramite il prompt dei comandi ed esaminarne i risultati. Per altre informazioni su MSBuild e sulla sua esecuzione al prompt dei comandi, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+
+Per completare la procedura dettagliata sono necessari MSBuild e il compilatore di Visual C#, entrambi disponibili in .NET Framework (versione 2.0, 3.5, 4.0 o 4.5), che deve essere installato nel sistema in uso.  
   
- Questa procedura dettagliata mostra come compilare il progetto tramite il prompt dei comandi ed esaminarne i risultati. Per altre informazioni su MSBuild e su come eseguirlo al prompt dei comandi, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
-  
- Per completare la procedura dettagliata sono necessari MSBuild e il compilatore di Visual C#, entrambi disponibili in .NET Framework (versione 2.0, 3.5, 4.0 o 4.5), che deve essere installato nel sistema in uso.  
-  
-## <a name="creating-a-minimal-application"></a>Creazione di un'applicazione minima  
+## <a name="create-a-minimal-application"></a>Creare un'applicazione minima  
  Questa sezione illustra come creare un file di origine di applicazione di Visual C# minimo tramite un editor di testo.  
   
 #### <a name="to-create-the-minimal-application"></a>Per creare l'applicazione minima  
   
-1.  Al prompt dei comandi, passare alla cartella in cui si vuole creare l'applicazione, ad esempio \Documenti\ o \Desktop\\.  
+1.  Al prompt dei comandi, passare alla cartella in cui si vuole creare l'applicazione, ad esempio *\Documenti\\* o *\Desktop\\*.  
   
-2.  Digitare **md HelloWorld** per creare una sottocartella denominata \HelloWorld\\.  
+2.  Digitare **md HelloWorld** per creare una sottocartella denominata *\HelloWorld\\*.  
   
 3.  Digitare **cd HelloWorld** per passare alla nuova cartella.  
   
@@ -77,7 +77,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
     }  
     ```  
   
-5.  Salvare questo file di codice sorgente e denominarlo Helloworld.cs.  
+5.  Salvare questo file di codice sorgente con il nome *Helloworld.cs*.  
   
 6.  Compilare l'applicazione digitando **csc helloworld.cs** al prompt dei comandi.  
   
@@ -87,7 +87,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 8.  Eliminare l'applicazione digitando **del helloworld.exe** al prompt dei comandi.  
   
-## <a name="creating-a-minimal-msbuild-project-file"></a>Creazione di un file di progetto MSBuild minimo  
+## <a name="create-a-minimal-msbuild-project-file"></a>Creare un file di progetto MSBuild minimo  
  Ora che si dispone di un file di origine di applicazione minimo, è possibile creare un file di progetto minimo per compilare l'applicazione. Questo file di progetto contiene gli elementi seguenti:  
   
 -   Il nodo radice `Project` obbligatorio.  
@@ -132,10 +132,10 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
     <Csc Sources="@(Compile)"/>  
     ```  
   
-5.  Salvare questo file di progetto e denominarlo Helloworld.csproj.  
-  
- Il file di progetto minimo sarà simile al codice seguente:  
-  
+5.  Salvare questo file di progetto con il nome *Helloworld.csproj*.  
+
+Il file di progetto minimo sarà simile al codice seguente:  
+
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
@@ -146,28 +146,28 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   </Target>  
 </Project>  
 ```  
-  
- Le attività nella destinazione Build vengono eseguite in sequenza. In questo caso, l'attività `Csc` del compilatore di Visual C# è l'unica attività. Questa attività deve ricevere un elenco di file di origine da compilare e tale elenco viene fornito dal valore dell'elemento `Compile`. L'elemento `Compile` fa riferimento a un solo file di origine, Helloworld.cs.  
+
+Le attività nella destinazione Build vengono eseguite in sequenza. In questo caso, l'attività `Csc` del compilatore di Visual C# è l'unica attività. Questa attività deve ricevere un elenco di file di origine da compilare e tale elenco viene fornito dal valore dell'elemento `Compile`. L'elemento `Compile` fa riferimento a un solo file sorgente, *Helloworld.cs*.  
   
 > [!NOTE]
->  Nell'elemento Item è possibile usare il carattere jolly asterisco (*) per fare riferimento a tutti i file che presentano l'estensione di file cs, come segue:  
+>  Nell'elemento Item è possibile usare il carattere jolly asterisco (\*) per fare riferimento a tutti i file con estensione *cs*, come segue:  
 >   
 >  `<Compile Include="*.cs" />`  
 >   
 >  È però consigliabile evitare l'uso di caratteri jolly, perché, in caso di aggiunta o eliminazione di file di origine, rende più difficile il debug e l'indirizzamento selettivo.  
   
-## <a name="extending-the-path-to-include-msbuild"></a>Estensione di Path per includere MSBuild  
+## <a name="extend-the-path-to-include-msbuild"></a>Estendere il percorso per includere MSBuild  
  Prima di poter accedere a MSBuild è necessario estendere la variabile di ambiente PATH in modo che includa la cartella di .NET Framework.  
   
 #### <a name="to-add-msbuild-to-your-path"></a>Per aggiungere MSBuild al percorso  
   
--   Aprire Visual Studio 2013 e individuare MSBuild.exe nella cartella MSBuild (`%ProgramFiles%\MSBuild` in un sistema operativo a 32 bit o `%ProgramFiles(x86)%\MSBuild` in un sistema operativo a 64 bit).  
+-   A partire da Visual Studio 2013, è possibile trovare *MSBuild.exe* nella cartella MSBuild (*%ProgramFiles%\MSBuild* nei sistemi operativi a 32 bit o *%ProgramFiles(x86)%\MSBuild* nei sistemi operativi a 64 bit).  
   
      Al prompt dei comandi digitare **set PATH=%PATH%;%ProgramFiles%\MSBuild** o **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**.  
   
-     In alternativa, se è installato Visual Studio, è possibile usare il **prompt dei comandi di Visual Studio**, perché presenta una variabile PATH che include la cartella MSBuild.  
+     In alternativa, se è installato Visual Studio, è possibile usare il **prompt dei comandi di Visual Studio**, il cui percorso include la cartella *MSBuild*.  
   
-## <a name="using-the-project-file-to-build-the-application"></a>Uso del file di progetto per compilare l'applicazione  
+## <a name="use-the-project-file-to-build-the-application"></a>Compilare l'applicazione tramite il file di progetto  
  A questo punto, usare il file di progetto appena creato per compilare l'applicazione.  
   
 #### <a name="to-build-the-application"></a>Per compilare l'applicazione  
@@ -181,11 +181,11 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
      Dovrebbe essere visualizzato il messaggio **Hello, world!** .  
   
 > [!NOTE]
->  Per visualizzare più dettagli sulla build, è possibile aumentare il livello di dettaglio. Per impostare il livello di dettaglio su "detailed", digitare uno di questi comandi al prompt dei comandi:  
+>  Per visualizzare più dettagli sulla build, è possibile aumentare il livello di dettaglio. Per impostare il livello di dettaglio su "detailed", al prompt dei comandi digitare questo comando:  
 >   
 >  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
-## <a name="adding-build-properties"></a>Aggiunta di proprietà di compilazione  
+## <a name="add-build-properties"></a>Aggiungere proprietà di compilazione  
  Per aumentare il controllo della compilazione è possibile aggiungere proprietà di compilazione al file di progetto. Aggiungere le proprietà seguenti:  
   
 -   Una proprietà `AssemblyName` per specificare il nome dell'applicazione.  
@@ -222,9 +222,9 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
      In questo modo il compilatore di Visual C# genera un assembly denominato dalla proprietà `AssemblyName` e lo inserisce nella cartella denominata dalla proprietà `OutputPath`.  
   
 5.  Salvare le modifiche.  
-  
- Il file di progetto sarà ora simile al codice seguente:  
-  
+
+Il file di progetto sarà ora simile al codice seguente:  
+
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
@@ -240,7 +240,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   </Target>  
 </Project>  
 ```  
-  
+
 > [!NOTE]
 >  Invece di aggiungere il delimitatore di percorso di barra rovesciata (\\) nell'attributo `OutputAssembly` dell'attività `Csc` è consigliabile aggiungerlo alla fine del nome della cartella quando la si specifica nell'elemento `OutputPath`. Quindi,  
 >   
@@ -254,29 +254,29 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 >   
 >  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
-## <a name="testing-the-build-properties"></a>Test delle proprietà di compilazione  
+## <a name="test-the-build-properties"></a>Testare le proprietà di compilazione  
  Ora è possibile compilare l'applicazione tramite il file di progetto in cui sono state usate le proprietà di compilazione per specificare la cartella di output e il nome dell'applicazione.  
   
 #### <a name="to-test-the-build-properties"></a>Per testare le proprietà di compilazione  
   
 1.  Al prompt dei comandi digitare **msbuild helloworld.csproj /t:Build**.  
   
-     Questo comando crea la cartella \Bin\, quindi richiama il compilatore di Visual C# per creare l'applicazione MSBuildSample e la inserisce nella cartella \Bin\.  
+     Questo comando crea la cartella *\Bin\\* e quindi richiama il compilatore di Visual C# per creare l'applicazione *MSBuildSample* e inserirla nella cartella *\Bin\\*.  
   
-2.  Per verificare che la cartella \Bin\ sia stata creata e che contenga l'applicazione MSBuildSample, digitare  **dir Bin**.  
+2.  Per verificare che la cartella *\Bin\\* sia stata creata e che contenga l'applicazione *MSBuildSample*, digitare **dir Bin**.  
   
 3.  Testare l'applicazione digitando **Bin\MSBuildSample**.  
   
      Dovrebbe essere visualizzato il messaggio **Hello, world!** .  
   
-## <a name="adding-build-targets"></a>Aggiunta di destinazioni di compilazione  
+## <a name="add-build-targets"></a>Aggiungere destinazioni di compilazione  
  A questo punto, aggiungere altre due destinazioni al file di progetto, come segue:  
   
 -   Una destinazione Clean che elimina i file meno recenti.  
   
 -   Una destinazione Rebuild che usa l'attributo `DependsOnTargets` per forzare l'esecuzione dell'attività Clean prima dell'attività Build.  
-  
- Ora che sono presenti più destinazioni è possibile impostare la destinazione Build come destinazione predefinita.  
+
+Ora che sono presenti più destinazioni è possibile impostare la destinazione Build come destinazione predefinita.  
   
 #### <a name="to-add-build-targets"></a>Per aggiungere destinazioni di compilazione  
   
@@ -298,9 +298,9 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
     ```  
   
      La destinazione Build viene impostata come destinazione predefinita.  
-  
- Il file di progetto sarà ora simile al codice seguente:  
-  
+
+Il file di progetto sarà ora simile al codice seguente:  
+
 ```xml  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
@@ -320,8 +320,8 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
 </Project>  
 ```  
-  
-## <a name="testing-the-build-targets"></a>Test delle destinazioni di compilazione  
+
+## <a name="test-the-build-targets"></a>Testare le destinazioni di compilazione  
  È possibile usare le nuove destinazioni di compilazione per testare le funzionalità seguenti del file di progetto:  
   
 -   Compilazione della build predefinita.  
@@ -336,9 +336,9 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 1.  Al prompt dei comandi digitare **msbuild helloworld.csproj /p:AssemblyName=Greetings**.  
   
-     Poiché non è stata usata l'opzione **/t** per impostare in modo esplicito la destinazione, MSBuild esegue la destinazione predefinita Build. L'opzione **/p** esegue l'override della proprietà `AssemblyName` e le assegna il nuovo valore `Greetings`. In questo modo si crea una nuova applicazione denominata Greetings.exe nella cartella \Bin\.  
+     Poiché non è stata usata l'opzione **/t** per impostare in modo esplicito la destinazione, MSBuild esegue la destinazione predefinita Build. L'opzione **/p** esegue l'override della proprietà `AssemblyName` e le assegna il nuovo valore `Greetings`. In questo modo viene creata una nuova applicazione, *Greetings.exe* nella cartella *\Bin\\*.  
   
-2.  Per verificare che la cartella \Bin\ contenga sia l'applicazione MSBuildSample che la nuova applicazione Greetings, digitare **dir Bin**.  
+2.  Per verificare che la cartella *\Bin\\* contenga sia l'applicazione *MSBuildSample* che la nuova applicazione *Greetings*, digitare **dir Bin**.  
   
 3.  Testare l'applicazione Greetings digitando **Bin\Greetings**.  
   
@@ -352,15 +352,15 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
      Viene eseguita l'attività Clean per rimuovere l'applicazione avente il valore specificato della proprietà **AssemblyName**, `Greetings`.  
   
-6.  Per verificare che la cartella \Bin\ sia vuota, digitare **dir Bin**.  
+6.  Per verificare che la cartella *\Bin\\* sia vuota, digitare **dir Bin**.  
   
 7.  Digitare **msbuild**.  
   
-     Anche se non è stato specificato alcun file di progetto, MSBuild compila il file helloworld.csproj poiché nella cartella corrente esiste un solo file di progetto. Viene creata l'applicazione MSBuildSample nella cartella \Bin\.  
+     Anche se non è stato specificato alcun file di progetto, MSBuild compila il file *helloworld.csproj*, poiché nella cartella corrente è presente un solo file di progetto. In questo modo viene creata l'applicazione *MSBuildSample* nella cartella *\Bin\\*.  
   
-     Per verificare che la cartella \Bin\ contenga l'applicazione MSBuildSample, digitare **dir Bin**.  
+     Per verificare che la cartella *\Bin\\* contenga l'applicazione *MSBuildSample*, digitare **dir Bin**.  
   
-## <a name="building-incrementally"></a>Compilazione incrementale  
+## <a name="build-incrementally"></a>Compilazione incrementale  
  È possibile configurare MSBuild affinché compili una destinazione solo in caso di modifica dei file di origine o dei file di destinazione da cui la destinazione dipende. MSBuild usa il timestamp di un file per determinare se è stato modificato.  
   
 #### <a name="to-build-incrementally"></a>Per eseguire la compilazione incrementale  
@@ -384,7 +384,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 2.  Testare la destinazione Build digitando **msbuild /v:d** al prompt dei comandi.  
   
-     Tenere presente che helloworld.csproj è il file di progetto predefinito e che Build è la destinazione predefinita.  
+     Tenere presente che *helloworld.csproj* è il file di progetto predefinito e che Build è la destinazione predefinita.  
   
      L'opzione **/v:d** specifica che verrà fornita una descrizione dettagliata del processo di compilazione.  
   
@@ -436,8 +436,6 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 </Project>  
 ```  
   
-### <a name="comments"></a>Commenti  
-  
 ## <a name="example"></a>Esempio  
   
 ### <a name="description"></a>Descrizione  
@@ -477,7 +475,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 ```  
   
 ## <a name="whats-next"></a>Argomenti successivi  
- Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per imparare a usare Visual Studio per creare, modificare, compilare e verificare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per informazioni su come usare Visual Studio per creare, modificare, compilare e testare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Vedere anche  
 [Panoramica di MSBuild](../msbuild/msbuild.md)  

@@ -1,7 +1,7 @@
 ---
 title: Introduzione a C# e ad ASP.NET Core in Visual Studio
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9df1cbae3b0233a8711ab6a287513d89670df4d4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765515"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177370"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Introduzione a C# e ad ASP.NET Core in Visual Studio
 
 In questa esercitazione per lo sviluppo in C# con ASP.NET Core tramite Visual Studio si creerà un'app Web ASP.NET Core C# e si aggiungerà codice all'app. Si esploreranno poi alcune funzionalità dell'ambiente IDE e si eseguirà l'app.
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -41,7 +41,7 @@ ASP.NET Core è un framework open source e multipiattaforma per la compilazione 
 
 ### <a name="what-is-visual-studio"></a>Che cos'è Visual Studio?
 
-Visual Studio è una suite integrata per lo sviluppo di strumenti di produttività per gli sviluppatori. Si può immaginare Visual Studio come un programma utilizzabile per creare programmi e applicazioni.  
+Visual Studio è una suite integrata per lo sviluppo di strumenti di produttività per gli sviluppatori. Si può immaginare Visual Studio come un programma utilizzabile per creare programmi e applicazioni.
 
 ## <a name="start-developing"></a>Iniziare a sviluppare
 
@@ -65,9 +65,9 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Opzione 1: usare la finestra di dialogo Nuovo progetto
 
-1. Fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**.
+1. Selezionare il collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**.
 
-   ![Fare clic sul collegamento Apri il programma di installazione di Visual Studio nella finestra di dialogo Nuovo progetto](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![Selezionare il collegamento Apri il programma di installazione di Visual Studio dalla finestra di dialogo Nuovo progetto](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web** e quindi scegliere **Modifica**.
 
@@ -81,7 +81,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
 #### <a name="add-a-project-template"></a>Aggiungere un modello di progetto
 
-1. Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** scegliere il modello di progetto **Applicazione Web (MVC)**.  
+1. Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** scegliere il modello di progetto **Applicazione Web (MVC)**.
 
 2. Selezionare **ASP.NET Core 2.0** dal menu a discesa superiore. (Se non viene visualizzato **ASP.NET Core 2.0** nell'elenco, installarlo seguendo il collegamento **Download** visualizzato in una barra gialla nella parte superiore della finestra di dialogo.) Scegliere **OK**.
 
@@ -122,7 +122,7 @@ Il criterio MVC consente di creare app più facili da testare e da aggiornare ri
    >[!NOTE]
    > Per altre informazioni, vedere la pagina [Introduzione a C# e Web ASP.NET usando la sintassi Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
- 6. La soluzione contiene anche una cartella *wwwroot* per il sito Web. È possibile inserire contenuto statico del sito, ad esempio fogli di stile CSS, immagini e librerie JavaScript, direttamente nei percorsi ad essi destinati al momento della distribuzione del sito stesso.
+ 6. La soluzione contiene anche una cartella *wwwroot* che rappresenta la root del sito Web. È possibile inserire contenuto statico del sito, ad esempio fogli di stile CSS, immagini e librerie JavaScript, direttamente nei percorsi ad essi destinati al momento della distribuzione del sito stesso.
 
      ![Cartella wwwroot in Esplora soluzioni in Visual Studio](../ide/media/csharp-aspnet-solution-wwwroot.png)
 
@@ -134,7 +134,7 @@ Il criterio MVC consente di creare app più facili da testare e da aggiornare ri
 
 1. Scegliere il pulsante **IIS Express** nell'IDE per compilare ed eseguire l'app in modalità di debug. In alternativa, premere **F5**, oppure scegliere **Debug > Avvia debug** dalla barra dei menu.
 
-   ![Fare clic sul pulsante IIS Express in Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
+   ![Selezionare il pulsante IIS Express in Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
 
   > [!NOTE]
   > Se viene visualizzato il messaggio di errore **Non è possibile connettersi al server Web 'IIS Express'**, chiudere Visual Studio e quindi aprirlo usando l'opzione **Esegui come amministratore** dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
@@ -179,11 +179,13 @@ Il criterio MVC consente di creare app più facili da testare e da aggiornare ri
 
 11. Scegliere il pulsante **Termina debug** dalla barra degli strumenti per interrompere il debug. In alternativa, premere **Maiusc**+**F5**, o scegliere **Debug** > **Termina debug** dalla barra dei menu.
 
-   ![Fare clic sul pulsante Termina debug sulla barra degli strumenti](../ide/media/csharp-aspnet-stop-debugging.png)
+   ![Selezionare il pulsante Termina debug sulla barra degli strumenti](../ide/media/csharp-aspnet-stop-debugging.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-L'esercitazione è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di C#, ASP.NET Core e dell'IDE di Visual Studio. Per altre informazioni, continuare con l'esercitazione seguente.
+L'esercitazione è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di C#, ASP.NET Core e dell'IDE di Visual Studio. Per vedere l'app in esecuzione in un server pubblico, selezionare il pulsante seguente.
 
- > [!div class="nextstepaction"]
- > [Introduzione ad ASP.NET Core MVC e Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [Distribuire l'app nel Servizio app di Azure](..//deployment/quickstart-deploy-to-azure.md)
+
+È inoltre possibile apprendere a usare il framework Model-View-Controller (MVC) in ASP.NET Core seguendo l'esercitazione [Introduzione ad ASP.NET Core MVC e Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

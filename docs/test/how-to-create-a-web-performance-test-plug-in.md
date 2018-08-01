@@ -13,27 +13,27 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57fab4ee4205e9b1aaf7aaa44218134649257598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974975"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178361"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedura: creare un plug-in test Web
 
-I plug-in test Web consentono di isolare e riutilizzare codice al di fuori delle istruzioni dichiarative principali nel test Web. Un plug-in test Web personalizzato consente di chiamare parte del codice durante l'esecuzione del test Web. Il plug-in test Web viene eseguito una sola volta per ogni iterazione di test. Inoltre, se si esegue l'override del metodo PreRequest o PostRequest nel plug-in test, i plug-in di tali richieste verranno eseguiti rispettivamente prima e dopo ciascuna richiesta.
+I plug-in test delle prestazioni web consentono di isolare e riutilizzare codice al di fuori delle istruzioni dichiarative principali nel test delle prestazioni web. Un plug-in test delle prestazioni web personalizzato consente di chiamare parte del codice durante l'esecuzione del test delle prestazioni web. Il plug-in test delle prestazioni web viene eseguito una sola volta per ogni iterazione di test. Inoltre, se si esegue l'override del metodo PreRequest o PostRequest nel plug-in test, i plug-in di tali richieste verranno eseguiti rispettivamente prima e dopo ciascuna richiesta.
 
-È possibile creare un plug-in test Web personalizzato derivando la classe personalizzata dalla classe di base <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+È possibile creare un plug-in test delle prestazioni web personalizzato derivando la classe personalizzata dalla classe di base <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-I plug-in per test delle prestazioni Web personalizzati possono essere utilizzati con i test delle prestazioni Web registrati, scrivendo una quantità minima di codice che consente di ottenere un elevato livello di controllo sui test. È tuttavia possibile utilizzarli anche con i test Web codificati. Per altre informazioni, vedere [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md).
+I plug-in per test delle prestazioni web personalizzati possono essere utilizzati con i test delle prestazioni web registrati, scrivendo una quantità minima di codice che consente di ottenere un elevato livello di controllo sui test. È tuttavia possibile utilizzarli anche con i test delle prestazioni web codificati. Per altre informazioni, vedere [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
 > È possibile creare anche plug-in test di carico. Vedere [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Per creare un plug-in test Web personalizzato
 
-1.  Aprire un progetto di test di carico e prestazioni Web che contenga un test delle prestazioni Web.
+1.  Aprire un progetto di test di carico e prestazioni web che contenga un test delle prestazioni web.
 
 2.  In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, selezionare **Aggiungi**, quindi scegliere **Nuovo progetto**.
 
@@ -59,7 +59,7 @@ I plug-in per test delle prestazioni Web personalizzati possono essere utilizzat
 
      Il riferimento a **Microsoft.VisualStudio.QualityTools.WebTestFramework** viene aggiunto alla cartella **Riferimenti** in Esplora soluzioni.
 
-12. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni Web in cui è contenuto il test di carico al quale si vuole aggiungere il plug-in del test prestazioni Web e selezionare **Aggiungi riferimento**.
+12. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni web in cui è contenuto il test di carico al quale si vuole aggiungere il plug-in del test delle prestazioni web e selezionare **Aggiungi riferimento**.
 
 13. Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
@@ -89,38 +89,38 @@ I plug-in per test delle prestazioni Web personalizzati possono essere utilizzat
 
 18. Una volta scritto il codice, compilare il nuovo progetto.
 
-19. Aprire un test Web.
+19. Aprire un test delle prestazioni web.
 
-20. Per aggiungere il plug-in del test prestazioni Web, scegliere **Aggiungi plug-in test Web** nella barra degli strumenti.
+20. Per aggiungere il plug-in del test delle prestazioni web, scegliere **Aggiungi plug-in test Web** nella barra degli strumenti.
 
      Viene visualizzata la finestra di dialogo **Aggiungi plug-in test Web**.
 
-21. In **Seleziona un plug-in** selezionare la classe del plug-in del test prestazioni Web.
+21. In **Seleziona un plug-in** selezionare la classe del plug-in del test delle prestazioni web.
 
 22. Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 
     > [!NOTE]
-    > È possibile esporre il numero di proprietà desiderato dai plug-in; è sufficiente renderle pubbliche, impostabili e di un tipo di base quale Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in di test delle prestazioni Web in un secondo momento utilizzando la finestra Proprietà.
+    > È possibile esporre il numero di proprietà desiderato dai plug-in; è sufficiente renderle pubbliche, impostabili e di un tipo di base quale Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in di test delle prestazioni web in un secondo momento utilizzando la finestra Proprietà.
 
 23. Scegliere **OK**.
 
      Il plug-in viene aggiunto alla cartella **Plug-in test Web**.
 
     > [!WARNING]
-    > Quando si esegue un test delle prestazioni Web o un test di carico in cui viene utilizzato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
+    > Quando si esegue un test delle prestazioni web o un test di carico in cui viene utilizzato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
     > **Richiesta non riuscita: Eccezione in \<plug-in> event: Impossibile caricare il file o l'assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una delle relative dipendenze. Il sistema non riesce a trovare il file specificato.**
     >
     > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)**, ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >
-    > 1.  Nei riferimenti del progetto di test di carico e prestazioni Web sarà presente un avviso. Rimuovere e aggiungere nuovamente il riferimento alla DLL del plug-in.
+    > 1.  Nei riferimenti del progetto di test di carico e prestazioni web sarà presente un avviso. Rimuovere e aggiungere nuovamente il riferimento alla DLL del plug-in.
     > 2.  Rimuovere il plug-in dal test o dal percorso appropriato, quindi aggiungerlo di nuovo.
 
 ## <a name="example"></a>Esempio
 
-Il codice seguente consente di creare un plug-in test Web personalizzato per l'aggiunta di un elemento a <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext> che rappresenta l'iterazione test.
+Il codice seguente consente di creare un plug-in test delle prestazioni web personalizzato per l'aggiunta di un elemento a <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext> che rappresenta l'iterazione test.
 
-Dopo aver eseguito il test prestazioni Web, tramite questo plug-in è possibile visualizzare l'elemento aggiunto denominato **TestIteratnionNumber** nella scheda **Contesto** del Visualizzatore risultati test prestazioni Web.
+Dopo aver eseguito il test delle prestazioni web, tramite questo plug-in è possibile visualizzare l'elemento aggiunto denominato **TestIteratnionNumber** nella scheda **Contesto** del **Visualizzatore risultati test prestazioni Web**.
 
 ```csharp
 using System;

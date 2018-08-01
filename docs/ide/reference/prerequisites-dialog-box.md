@@ -1,6 +1,6 @@
 ---
 title: Prerequisiti (finestra di dialogo)
-ms.date: 01/18/2018
+ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,37 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37400624d81c533e6ecddb9d6278b5b372410525
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5faf8e34a9aca77cd6762b5409919fac0978caf7
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950985"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176928"
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisiti (finestra di dialogo)
 
-In questa finestra di dialogo vengono indicati i componenti dei prerequisiti installati, la modalità di installazione e l'ordine di installazione dei pacchetti.
+La finestra di dialogo **Prerequisiti** specifica i componenti dei prerequisiti installati, la modalità di installazione e l'ordine di installazione dei pacchetti.
 
-Per accedere a questa finestra di dialogo, selezionare un nodo di progetto in **Esplora soluzioni**, quindi scegliere **Proprietà** dal menu **Progetto**. In **Progettazione progetti** fare clic sulla scheda **Pubblica** . Nella pagina **Pubblica** fare clic su **Prerequisiti**. Per i progetti di installazione, scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra di dialogo **Pagine delle proprietà** fare clic su **Prerequisiti**.
+![Finestra di dialogo Prerequisiti in Visual Studio 2017](media/prerequisites-dialog-box.png)
+
+Per accedere a questa finestra di dialogo, selezionare un nodo di progetto in **Esplora soluzioni**, quindi scegliere **Progetto** > **Proprietà**. Quando viene visualizzata **Creazione progetti**, selezionare la scheda **Pubblica** e quindi selezionare **Prerequisiti**. Per i progetti di installazione, scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra di dialogo **Pagine delle proprietà** fare clic su **Prerequisiti**.
 
 ## <a name="uielement-list"></a>Elenco UIElement
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|**Crea programma di installazione per installare componenti dei prerequisiti**|Nel programma di installazione dell'applicazione (Setup.exe) include i componenti dei prerequisiti che verranno installati prima dell'applicazione, in ordine di dipendenza. Questa opzione è selezionata per impostazione predefinita. Se l'opzione non è selezionata, non viene creato alcun programma Setup.exe.|
-|**Scegliere i prerequisiti da installare**|Specifica se installare i componenti come [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)], Crystal Reports e così via.<br /><br /> Ad esempio, selezionando la casella di controllo accanto a **SQL Server 2005 Express Edition SP2**, si specifica che il programma di installazione deve verificare se tale componente è già installato nel computer di destinazione e, in caso contrario, installarlo.<br /><br /> Per informazioni dettagliate su ciascun pacchetto di prerequisiti, vedere la tabella Informazioni sui prerequisiti più avanti in questo argomento.|
-|**Controlla il sito Microsoft Update per altri componenti ridistribuibili**|Se si fa clic su questo collegamento, si viene indirizzati al sito Web [Pacchetti del programma di avvio automatico per ridistribuire i componenti](http://go.microsoft.com/fwlink/?LinkId=208835) per controllare la disponibilità di aggiornamenti.|
+|**Crea programma di installazione per installare componenti dei prerequisiti**|Include i componenti dei prerequisiti nel programma di installazione dell'applicazione (*Setup.exe*) in modo che vengano installati prima dell'applicazione in ordine di dipendenza. Questa opzione è selezionata per impostazione predefinita. Se l'opzione non è selezionata, non viene creato alcun programma *Setup.exe*.|
+|**Scegliere i prerequisiti da installare**|Specifica se installare i componenti, ad esempio librerie di runtime di .NET Framework e C++.<br /><br />Ad esempio, selezionando la casella di controllo accanto a **SQL Server 2012 Express**, si specifica che il programma di installazione deve verificare se il componente è già installato nel computer di destinazione e, in caso contrario, installarlo.<br /><br />Per informazioni dettagliate su ogni pacchetto di prerequisiti, vedere [Informazioni sui prerequisiti](#prerequisites-information).|
 |**Scarica prerequisiti dal sito Web del fornitore del componente**|Specifica che i componenti dei prerequisiti devono essere installati dal sito Web del fornitore. Questa è l'opzione predefinita.|
 |**Scarica prerequisiti dallo stesso percorso dell'applicazione**|Specifica che i componenti dei prerequisiti devono essere installati dallo stesso percorso dell'applicazione. In questo modo vengono copiati tutti i pacchetti di prerequisiti nel percorso di pubblicazione. Per il corretto funzionamento di questa opzione, i pacchetti di prerequisiti devono essere presenti nel computer di sviluppo.|
-|**Scarica prerequisiti dal seguente percorso**|Specifica che i componenti dei prerequisiti devono essere installati dal percorso selezionato. Per selezionare un percorso usare il pulsante **Sfoglia**.|
+|**Scarica prerequisiti dal seguente percorso**|Specifica che i componenti dei prerequisiti devono essere installati dal percorso specificato. Per selezionare un percorso usare il pulsante **Sfoglia**.|
 
 ## <a name="prerequisites-information"></a>Informazioni sui prerequisiti
 
-I componenti dei prerequisiti che sono visualizzati nella finestra di dialogo **Prerequisiti** potrebbero differire da quelli presenti nell'elenco seguente. I pacchetti dei prerequisiti elencati nella **finestra di dialogo Prerequisiti** vengono impostati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario selezionare manualmente i prerequisiti in modo che vi sia corrispondenza.
+I componenti dei prerequisiti che sono visualizzati nella finestra di dialogo **Prerequisiti** potrebbero differire da quelli presenti nell'elenco seguente. I pacchetti dei prerequisiti elencati nella **finestra di dialogo Prerequisiti** vengono impostati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, è necessario selezionare manualmente i prerequisiti in modo che vi sia corrispondenza.
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Con questo pacchetto vengono installati gli elementi seguenti:<br /><br /> -   .NET Framework versioni 2.0, 3.0 e 3.5.<br />-   Supporto per tutte le versioni di .NET Framework nei sistemi operativi a 32 bit (x86) e a 64 bit (x64).<br />-   Language Pack per ciascuna versione di .NET Framework installata con il pacchetto.<br />-   Service Pack per .NET Framework 2.0 e 3.0.<br /><br /> .NET Framework 3.0 viene fornito con Windows Vista e .NET Framework 3.5 viene fornito con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. .NET Framework 3.5 è necessario per tutti i progetti Visual Basic e C# che vengono compilati per i sistemi operativi a 32 bit e per i quali il framework di destinazione è impostato su **.NET Framework 3.5**, oltre che per i progetti Visual Basic e C# compilati per i sistemi operativi a 64 bit. IA64 non è supportato. Si noti che i progetti Visual Basic e C# vengono compilati per qualsiasi architettura della CPU per impostazione predefinita. Per altre informazioni, vedere [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) e [Prerequisiti per la distribuzione di applicazioni a 64 bit](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Questo elemento è selezionato per impostazione predefinita.|
+|**.NET Framework 3.5 SP1**|Con questo pacchetto vengono installati gli elementi seguenti:<br /><br /> -   .NET Framework versioni 2.0, 3.0 e 3.5.<br />-   Supporto per tutte le versioni di .NET Framework nei sistemi operativi a 32 bit (x86) e a 64 bit (x64).<br />-   Language Pack per ciascuna versione di .NET Framework installata con il pacchetto.<br />-   Service Pack per .NET Framework 2.0 e 3.0.<br /><br /> .NET Framework 3.0 è incluso in Windows Vista e .NET Framework 3.5 è incluso in Visual Studio. .NET Framework 3.5 è necessario per tutti i progetti Visual Basic e C# che vengono compilati per i sistemi operativi a 32 bit e per i quali il framework di destinazione è impostato su **.NET Framework 3.5**, oltre che per i progetti Visual Basic e C# compilati per i sistemi operativi a 64 bit. IA64 non è supportato. Si noti che i progetti Visual Basic e C# vengono compilati per qualsiasi architettura della CPU per impostazione predefinita. Per altre informazioni, vedere [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) e [Distribuire i prerequisiti per le applicazioni a 64 bit](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Con questo pacchetto viene installato .NET Framework 4.x per le piattaforme x86 e x64.|
 |**Microsoft System CLR Types per SQL Server 2014 (x64 e x86)**|Questo pacchetto installa Microsoft System CLR Types per SQL Server 2014 per la piattaforma x64 o x86.|
 |**SQL Server 2008 R2 Express**|Con questo pacchetto viene installato Microsoft SQL Server 2008 R2 Express, un'edizione gratuita di Microsoft SQL Server 2008 R2, un database ideale per piccole applicazioni Web, server o desktop. Può essere utilizzato gratuitamente per lo sviluppo e la produzione.|

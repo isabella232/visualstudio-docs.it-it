@@ -13,21 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6b34993e011a8bf539b6ec2dd70beddf9c96caf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976897"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203852"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
 
 È possibile configurare l'adattatore dati di diagnostica per IntelliTrace per raccogliere informazioni di traccia diagnostica specifiche in Visual Studio. Questo adattatore può essere utilizzato nei test per raccogliere eventi di diagnostica significativi per l'applicazione, che uno sviluppatore può utilizzare successivamente per la traccia del codice allo scopo di individuare la causa di un bug. L'adattatore dati di diagnostica per IntelliTrace può essere utilizzato per i test manuali o per quelli automatizzati.
 
 > [!NOTE]
 > IntelliTrace funziona solo in un'applicazione scritta utilizzando codice gestito. Se si esegue il test di un'applicazione Web in cui viene utilizzato un browser come client, non è necessario abilitare IntelliTrace per il client nelle impostazioni di test in quanto non è disponibile codice gestito da tracciare. In questo caso, è possibile configurare un ambiente e raccogliere dati IntelliTrace in modalità remota nel server Web.
 
-I dati di IntelliTrace vengono archiviati in un file con estensione .iTrace. Quando si esegue il test e un passo del test non riesce, è possibile creare un bug. Il file di IntelliTrace contenente le informazioni di diagnostica verrà associato automaticamente al bug.
+I dati di IntelliTrace vengono archiviati in un file con estensione *.iTrace*. Quando si esegue il test e un passo del test non riesce, è possibile creare un bug. Il file di IntelliTrace contenente le informazioni di diagnostica verrà associato automaticamente al bug.
 
 > [!NOTE]
 > L'adattatore dati di diagnostica per IntelliTrace non crea un file di IntelliTrace per passi del test con esito positivo. Il file viene salvato solo in caso di errore del test case o quando si invia un bug.
@@ -73,7 +73,7 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
 
 5.  Scegliere la scheda **Generale**. Selezionare **Solo eventi IntelliTrace** per registrare eventi di diagnostica significativi che hanno un impatto minimo sulle prestazioni durante i test.
 
-     **-** oppure
+     oppure
 
      Selezionare **Eventi IntelliTrace e informazioni sulle chiamate** per registrare eventi di diagnostica e traccia a livello di metodo in cui vengono mostrate le informazioni sulle chiamate. Questo livello di traccia potrebbe avere un impatto sulle prestazioni quando si eseguono i test.
 
@@ -112,5 +112,5 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
 
 - [Raccogliere dati di diagnostica durante i test (VSTS)](/vsts/manual-test/collect-diagnostic-data)
 - [Raccogliere dati di diagnostica nei test manuali (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Raccogliere dati IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

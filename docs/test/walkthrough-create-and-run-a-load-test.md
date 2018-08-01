@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22014010ea0ef7d101a446b6e89591797f5f2550
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977385"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178449"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procedura dettagliata: Creare ed eseguire un test di carico contenente unit test
 
 In questa procedura dettagliata viene creato un test di carico contenente unit test.
 
-Questa procedura descrive i passaggi necessari per la creazione e l'esecuzione di un test di carico tramite Visual Studio Enterprise. Un test di carico è un contenitore di test Web e unit test. È possibile creare test di carico con la Creazione guidata test di carico.
+Questa procedura descrive i passaggi necessari per la creazione e l'esecuzione di un test di carico tramite Visual Studio Enterprise. Un test di carico è un contenitore di test delle prestazioni Web e di unit test. È possibile creare test di carico con la Creazione guidata test di carico.
 
 In un test di carico sono presenti anche molte proprietà di runtime che possono essere modificate per generare la simulazione di carico desiderata. In questa procedura dettagliata viene utilizzata la Creazione guidata test di carico per aggiungere unit test a un test di carico.
 
@@ -35,7 +35,7 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 -   Esecuzione di un test di carico.
 
--   Eseguire i passaggi descritti in [Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) per creare una libreria di classi C# semplice contenente un progetto di test di carico e prestazioni Web con alcuni unit test.
+-   Eseguire i passaggi descritti in [Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) per creare una libreria di classi C# semplice contenente un progetto di test di carico e di test delle prestazioni Web con alcuni unit test.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Creare un test di carico contenente unit test utilizzando la Creazione guidata test di carico
 
@@ -98,7 +98,7 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 2.  Scegliere **Aggiungi** per selezionare i test.
 
-3.  Scegliere lo unit test CreditTest elencato nel riquadro **Test disponibili**, in cui sono visualizzati tutti i test di prestazioni Web e gli unit test nel progetto di test di carico e prestazioni Web.
+3.  Scegliere lo unit test CreditTest elencato nel riquadro **Test disponibili**, in cui sono visualizzati tutti i test delle prestazioni Web e gli unit test nel progetto di test di carico e delle prestazioni Web.
 
 4.  Scegliere la freccia per aggiungere lo unit test CreditTest al riquadro **Test selezionati**.
 

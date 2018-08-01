@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7caabbe6875f6c51b0c84d0bb8f4b5e4e18a10d2
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5cac2a21e15223d720089768db2f92892ec5cd43
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750870"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178534"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generare unit test per il codice con IntelliTest
 IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni branch condizionale nel codice. Vengono ad esempio analizzate le istruzioni `if`, le asserzioni e tutte le operazioni che possono generare eccezioni. Questa analisi viene usata per generare dati di test per uno unit test con parametri per ognuno dei metodi, creando unit test con un elevato code coverage.
@@ -48,7 +48,7 @@ I comandi di menu **Crea IntelliTest** ed **Esegui IntelliTest**:
 
      ![Viene visualizzata la finestra Risultati dell'esplorazione contenente i test](../test/media/pexexplorationresults.png)
 
-     Per generare unit test per tutti i metodi pubblici di una classe, è sufficiente fare clic con il pulsante destro del mouse nella classe invece che in un metodo specifico. Quindi, scegliere **Esegui IntelliTest**. Usare l'elenco a discesa nella finestra Risultati esplorazione per visualizzare gli unit test e i dati di input per ogni metodo della classe.
+     Per generare unit test per tutti i metodi pubblici di una classe, è sufficiente fare clic con il pulsante destro del mouse nella classe invece che in un metodo specifico. Quindi, scegliere **Esegui IntelliTest**. Usare l'elenco a discesa nella finestra **Risultati esplorazione** per visualizzare gli unit test e i dati di input per ogni metodo della classe.
 
      ![Selezionare i risultati del test per visualizzarli nell'elenco](../test/media/selectpextest.png)
 
@@ -60,7 +60,7 @@ I comandi di menu **Crea IntelliTest** ed **Esegui IntelliTest**:
 
      ![Selezionare i test, fare clic con il pulsante destro del mouse e scegliere Salva](../test/media/savepextests.png)
 
-     È possibile visualizzare il progetto di test e lo unit test con parametri creato. I singoli unit test, corrispondenti alle singole righe, vengono salvati nel file con estensione g.cs nel progetto di test e uno unit test con parametri viene salvato nel file con estensione cs corrispondente. È possibile eseguire gli unit test e visualizzare i risultati da Esplora test come se si trattasse di unit test creati manualmente.
+     È possibile visualizzare il progetto di test e lo unit test con parametri creato. I singoli unit test, corrispondenti alle singole righe, vengono salvati nel file con estensione *g.cs* nel progetto di test e uno unit test con parametri viene salvato nel file con estensione *cs* corrispondente. È possibile eseguire gli unit test e visualizzare i risultati da Esplora test come se si trattasse di unit test creati manualmente.
 
      ![Aprire il file di classe nel metodo di test per visualizzare unit test](../test/media/testmethodpex.png)
 
@@ -80,7 +80,7 @@ I comandi di menu **Crea IntelliTest** ed **Esegui IntelliTest**:
 
      ![Fare clic con il pulsante destro del mouse sull'avviso e scegliere Correzione](../test/media/pexfixwarning.png)
 
-     La scelta viene quindi aggiunta nel file PexAssemblyInfo.cs.
+     La scelta viene quindi aggiunta nel file *PexAssemblyInfo.cs*.
 
      `[assembly: PexUseType(typeof(Camera))]`
 
@@ -92,7 +92,7 @@ I comandi di menu **Crea IntelliTest** ed **Esegui IntelliTest**:
 
 Specificare la relazione generale tra input e output da verificare con gli unit test generati. Questa specifica viene incapsulata in un metodo simile a un metodo di test, ma universalmente quantificato. Si tratta del metodo di unit test con parametri e tutte le asserzioni effettuate devono essere mantenute per tutti i possibili valori di input che IntelliTest può generare.
 
-##  <a name="QandALink"></a> Domande e risposte
+##  <a name="q--a"></a>Domande e risposte
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>D: È possibile usare IntelliTest per il codice non gestito?
 
@@ -144,15 +144,15 @@ Specificare la relazione generale tra input e output da verificare con gli unit 
 **R:** Sì, seguire questa procedura per [trovare e installare altri framework](../test/install-third-party-unit-test-frameworks.md).
 Le estensioni del framework di test sono disponibili anche in Visual Studio Marketplace:
 
-* [NUnit Extension for the Test Generators](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) (Estensione NUnit per Test Generators)
-* [xUnit Extension for the Test Generators](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions) (Estensione xUnit per Test Generators)
+* [NUnit extension for the test generators](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) (Estensione NUnit per generatori di test)
+* [xUnit.net extension for the test generators](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions) (Estensione xUnit.net per generatori di test)
 
 
 Dopo aver riavviato Visual Studio e riaperto la soluzione, fare doppio clic nella classe o nel metodo, quindi scegliere **Crea IntelliTest**. Selezionare qui il framework installato:
 
 ![Selezionare altri framework unit test per IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
-Eseguire quindi IntelliTest per generare i singoli unit test nei relativi file con estensione g.cs.
+Eseguire quindi IntelliTest per generare i singoli unit test nei relativi file con estensione *g.cs*.
 
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>D: È possibile reperire maggiori informazioni sulla modalità di generazione dei test?

@@ -12,16 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2464acb75d8ea8a309d788aa95dc86b44d47e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177114"
 ---
-# <a name="comparing-properties-and-items"></a>Confronto di proprietà ed elementi
+# <a name="compare-properties-and-items"></a>Confrontare proprietà ed elementi
 Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.  
   
--   Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [MSBuild Properties](../msbuild/msbuild-properties.md) (Proprietà MSBuild).  
+-   Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [Proprietà di MSBuild](../msbuild/msbuild-properties.md).  
   
 -   Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).  
   
@@ -54,7 +55,7 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
   
  La destinazione CustomBuild viene aggiunta all'elenco di destinazione, attribuendo `BuildDependsOn` al valore `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- A partire da MSBuild 4.0, l'inserimento delle dipendenze di destinazione è deprecato. Al suo posto usare gli attributi `AfterTargets` e `BeforeTargets`. Per altre informazioni, vedere [Target Build Order](../msbuild/target-build-order.md) (Ordine di compilazione delle destinazioni).  
+ A partire da MSBuild 4.0, l'inserimento delle dipendenze di destinazione è deprecato. Al suo posto usare gli attributi `AfterTargets` e `BeforeTargets`. Per altre informazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversioni fra stringhe ed elenchi di elementi  
  Se necessario MSBuild esegue la conversione da e in tipi di elemento e valori stringa. Per vedere come un elenco di elementi può diventare un valore stringa, considerare cosa succede quando un tipo di elemento viene usato come valore di una proprietà MSBuild:  
@@ -79,7 +80,7 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
   
  È possibile passare l'elenco di elementi di un tipo di elemento sotto forma di matrice di oggetti `ITaskItem`. A partire da .NET Framework 3.5, gli elementi possono essere rimossi da un elenco di elementi in una destinazione usando l'attributo `Remove`. Poiché gli elementi possono essere rimossi da un elenco di elementi, è possibile che un tipo di elemento non contenta elementi. Se un elenco di elementi viene passato a un'attività, il codice dell'attività deve verificare questa possibilità.  
   
-## <a name="property-and-item-evaluation-order"></a>Proprietà e ordine di valutazione degli elementi  
+## <a name="property-and-item-evaluation-order"></a>Ordine di valutazione di proprietà ed elementi  
  Durante la fase di valutazione di una build, i file importati vengono incorporati nella build nell'ordine in cui vengono visualizzati. Le proprietà e gli elementi sono definiti in tre passaggi nell'ordine seguente:  
   
 -   Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate.  
@@ -87,9 +88,10 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
 -   Le definizioni dell'elemento vengono definite e modificate nell'ordine in cui vengono visualizzate.  
   
 -   Gli elementi vengono definiti e modificati nell'ordine in cui vengono visualizzati.  
-  
+ 
+ 
  Durante la fase di esecuzione di una build, le proprietà e gli elementi definiti all'interno di destinazioni vengono valutati insieme in un'unica fase nell'ordine in cui vengono visualizzati.  
-  
+ 
  Non è tuttavia l'unico approccio. Quando si definisce una proprietà, una definizione dell'elemento o un elemento, viene valutato il relativo valore. L'analizzatore di espressioni espande la stringa che specifica il valore. L'espansione della stringa dipende dalla fase di compilazione. Di seguito viene riportato un ordine di valutazione di proprietà ed elementi più dettagliato:  
   
 -   Durante la fase di valutazione di una build:  
@@ -127,9 +129,9 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
 KeyFileVersion: 1.0.0.3  
 ```  
   
- Infatti il valore di `KeyFileVersion` è la stringa "@(KeyFile->'%(Version)')". L'elemento e le trasformazioni dell'elemento non sono stati espansi quando la proprietà è stata definita. Alla proprietà `KeyFileVersion` è stato quindi assegnato il valore della stringa non espansa.  
+ Infatti il valore di `KeyFileVersion` è la stringa "\@(KeyFile->'%(Version)')". L'elemento e le trasformazioni dell'elemento non sono stati espansi quando la proprietà è stata definita. Alla proprietà `KeyFileVersion` è stato quindi assegnato il valore della stringa non espansa.  
   
- Durante la fase di esecuzione della build, nel corso dell'elaborazione dell'attività Message, MSBuild espande la stringa "@(KeyFile->'%(Version)')" per ottenere "1.0.0.3".  
+ Durante la fase di esecuzione della build, nel corso dell'elaborazione dell'attività Message, MSBuild espande la stringa "\@(KeyFile->'%(Version)')" per ottenere "1.0.0.3".  
   
  Si noti che lo stesso messaggio viene visualizzato anche se l'ordine dei gruppi di proprietà ed elementi è stato invertito.  
   
@@ -173,11 +175,11 @@ KeyFileVersion:
 </Target>  
 ```  
   
- Il valore di `KeyFileVersion` è impostato su "1.0.0.3" e non su "@(KeyFile->'%(Version)')". L'attività Message visualizza il messaggio seguente:  
+ Il valore di `KeyFileVersion` è impostato su "1.0.0.3" e non su "\@(KeyFile->'%(Version)')". L'attività Message visualizza il messaggio seguente:  
   
 ```  
 KeyFileVersion: 1.0.0.3  
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Advanced Concepts](../msbuild/msbuild-advanced-concepts.md) (Concetti avanzati)
+ [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

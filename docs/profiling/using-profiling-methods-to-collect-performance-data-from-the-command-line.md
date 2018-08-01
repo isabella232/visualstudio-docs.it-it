@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 141341c09d9028e90900a29c702667304cfea7f7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5e8dbaf62043897292afbb2805879e0447f3048a
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477710"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276702"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usare i metodi di profilatura per raccogliere dati sulle prestazioni dalla riga di comando
 La scelta degli strumenti e delle opzioni della riga di comando per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dipende da fattori come il tipo di applicazione sottoposta a profilatura, il metodo di profilatura da usare e il fatto che l'applicazione di destinazione sia scritta in codice nativo o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
@@ -29,8 +29,8 @@ La scelta degli strumenti e delle opzioni della riga di comando per gli strument
   
 |Attività|Tipo di applicazione di destinazione|  
 |----------|-----------------------------|  
-|**Avviare un'applicazione**|-   [Applicazioni autonome](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Connettersi a un processo in esecuzione**|-   [Applicazioni .NET Framework autonome](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [Applicazioni autonome native](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [Applicazioni Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Servizi .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Servizi nativi](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Avviare un'applicazione**|-   [Applicazioni autonome](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
+|**Connettersi a un processo in esecuzione**|-   [Applicazioni .NET Framework autonome](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [Applicazioni autonome native](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)<br />-   [Applicazioni Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Servizi .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Servizi nativi](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="use-the-instrumentation-method-to-collect-detailed-timing-data"></a>Usare il metodo di strumentazione per raccogliere dati di intervallo dettagliati  
  Il metodo di strumentazione degli strumenti di profilatura raccoglie dati sulle prestazioni da copie dei file binari dell'applicazione che contengono probe software per registrare le informazioni sulle prestazioni. I dati di strumentazione vengono raccolti all'inizio e alla fine di ogni funzione instrumentata e a ogni chiamata ad altre funzioni dalla funzione instrumentata. Il metodo di strumentazione è utile per l'individuazione dei problemi di prestazioni relativi alle attività di I/O, ad esempio l'uso del disco.  
@@ -39,9 +39,9 @@ La scelta degli strumenti e delle opzioni della riga di comando per gli strument
   
  **Tipo di applicazione di destinazione**  
   
--   [Componenti .NET Framework autonomi](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)  
+-   [Componenti .NET Framework autonomi](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)  
   
--   [Componenti autonomi nativi](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)  
+-   [Componenti autonomi nativi](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)  
   
 -   [Applicazioni Web ASP.NET compilate in modo statico](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)  
   
@@ -58,9 +58,9 @@ La scelta degli strumenti e delle opzioni della riga di comando per gli strument
   
 |Attività|Tipo di applicazione di destinazione|  
 |----------|-----------------------------|  
-|**Avviare un'applicazione**|-   [Applicazioni .NET Framework autonome](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Connettersi a un processo in esecuzione**|-   [Applicazioni .NET Framework autonome](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Applicazioni Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Servizi .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrumentare moduli**|-   [Componenti .NET Framework autonomi](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)<br />-   [Applicazioni Web ASP.NET compilate in modo statico](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Applicazioni Web ASP.NET compilate in modo dinamico](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)<br />-   [Servizi .NET](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Avviare un'applicazione**|-   [Applicazioni .NET Framework autonome](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
+|**Connettersi a un processo in esecuzione**|-   [Applicazioni .NET Framework autonome](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)<br />-   [Applicazioni Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Servizi .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Instrumentare moduli**|-   [Componenti .NET Framework autonomi](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)<br />-   [Applicazioni Web ASP.NET compilate in modo statico](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)<br />-   [Applicazioni Web ASP.NET compilate in modo dinamico](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)<br />-   [Servizi .NET](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="use-the-concurrency-method-to-collect-resource-contention-and-thread-activity-data"></a>Usare il metodo di concorrenza per raccogliere dati su attività dei thread e conflitti delle risorse  
  Il metodo di concorrenza degli strumenti di profilatura consente di raccogliere informazioni sui conflitti di risorse e dati sull'attività di thread e processi da applicazioni multithread.  
@@ -69,8 +69,8 @@ La scelta degli strumenti e delle opzioni della riga di comando per gli strument
   
 |Attività|Tipo di applicazione di destinazione|  
 |----------|-----------------------------|  
-|**Avviare un'applicazione**|-   [Applicazione .NET Framework autonoma](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)<br />-   [Applicazione autonoma nativa](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Connettersi a un processo in esecuzione**|-   [Applicazione .NET Framework autonoma](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)<br />-   [Applicazione autonoma nativa](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Applicazione Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Servizio .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Servizio nativo](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Avviare un'applicazione**|-   [Applicazione .NET Framework autonoma](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)<br />-   [Applicazione autonoma nativa](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
+|**Connettersi a un processo in esecuzione**|-   [Applicazione .NET Framework autonoma](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)<br />-   [Applicazione autonoma nativa](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)<br />-   [Applicazione Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Servizio .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Servizio nativo](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="add-tier-interaction-data-to-a-profiling-run"></a>Aggiungere dati di interazione tra livelli a un'esecuzione di profilatura  
  L'aggiunta di dati di interazione tra livelli a un'esecuzione di profilatura richiede procedure specifiche con gli strumenti di profilatura da riga di comando. Vedere [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)  

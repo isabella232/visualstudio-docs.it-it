@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d20754bc61a003b1b7f6d1eb84ce419c2c6e442b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966687"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175673"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Procedura: accedere ai risultati dei test di carico per l'analisi
+# <a name="how-to-access-load-test-results-for-analysis"></a>Procedura: Accedere ai risultati dei test di carico per l'analisi
 
-Quando si esegue un test di carico dall'Editor test di carico, i risultati del test vengono aperti automaticamente e il test di carico in esecuzione viene visualizzato nell'Analizzatore test di carico. Quando si esegue un test di carico dalla riga di comando, è necessario accedere manualmente ai risultati del test di carico.
+Quando si esegue un test di carico dall'Editor test di carico, i risultati del test vengono aperti automaticamente e il test di carico in esecuzione viene visualizzato nell'**Analizzatore test di carico**. Quando si esegue un test di carico dalla riga di comando, è necessario accedere manualmente ai risultati del test di carico.
 
 I risultati relativi al test di carico completato contengono gli esempi di contatori delle prestazioni e le informazioni sugli errori raccolti periodicamente dai computer sottoposti a test. Nel corso dell'esecuzione di un test di carico può essere raccolto un numero elevato di esempi di contatori delle prestazioni. La quantità di dati sulle prestazioni raccolti durante un test di carico dipende dalla durata dell'esecuzione del test, dall'intervallo di campionamento, dal numero di computer sottoposti a test, dal numero di contatori raccolti, dagli agenti di raccolta dati configurati e dai livelli di registrazione. Per un test di carico di grandi dimensioni, la quantità di dati sulle prestazioni raccolti può facilmente raggiungere diversi gigabyte. Per altre informazioni, vedere [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -48,9 +48,9 @@ I risultati relativi al test di carico completato contengono gli esempi di conta
 
 5.  Nell'elenco **Risultati test di carico** selezionare i risultati da analizzare e scegliere **Apri**.
 
-6.  Verrà visualizzato l'analizzatore test di carico. I risultati del test di carico selezionati appaiono nella visualizzazione Riepilogo. Per altre informazioni, vedere [Panoramica del riepilogo dei risultati dei test di carico](../test/load-test-results-summary-overview.md).
+6.  Verrà visualizzato l'**Analizzatore test di carico**. I risultati del test di carico selezionati appaiono nella visualizzazione Riepilogo. Per altre informazioni, vedere [Panoramica del riepilogo dei risultati dei test di carico](../test/load-test-results-summary-overview.md).
 
-     È possibile gestire altri aspetti dei risultati del test di carico nella finestra di dialogo Apri e gestisci risultati, incluse le operazioni di importazione, esportazione e rimozione dei risultati del test di carico. Per altre informazioni, vedere [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+     È possibile gestire altri aspetti dei risultati del test di carico nella finestra di dialogo **Apri e gestisci risultati**, incluse le operazioni di importazione, esportazione e rimozione dei risultati del test di carico. Per altre informazioni, vedere [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 ## <a name="see-also"></a>Vedere anche
 

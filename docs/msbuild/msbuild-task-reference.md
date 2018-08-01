@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939a1220d1106330ffbec7fa1af705567ff66dd6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5fd171f01a44a38d9256576780c3a15a322d0a43
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576040"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155301"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
-Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività riportate nell'elenco seguente sono incluse in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] è installato, sono disponibili attività aggiuntive usate per compilare progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Per altre informazioni, vedere [Visual C++ Tasks](../msbuild/msbuild-tasks-specific-to-visual-cpp.md) (Attività Visual C++).  
+Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività riportate nell'elenco seguente sono incluse in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] è installato, sono disponibili attività aggiuntive usate per compilare progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Per altre informazioni, vedere [Attività di Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
  Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività dispone anche dei parametri seguenti:  
   
@@ -34,7 +34,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
 |`Condition`|Parametro `String` facoltativo.<br /><br /> Espressione `Boolean` usata dal motore di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per determinare se l'attività verrà eseguita. Per altre informazioni sulle condizioni supportate da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
 |`ContinueOnError`|Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori delle attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [Procedura: Ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md).|  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Classe di base Task](../msbuild/task-base-class.md)  
  Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Utilities.Task>.  
   
@@ -48,7 +48,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  Crea un assembly con un manifesto da uno o più file che costituiscono moduli o file di risorse.  
   
  [Attività AspNetCompiler](../msbuild/aspnetcompiler-task.md)  
- Esegue il wrapping di aspnet_compiler.exe, un'utilità per la precompilazione di applicazioni ASP.NET.  
+ Esegue il wrapping di *aspnet_compiler.exe*, un'utilità per la precompilazione di applicazioni ASP.NET.  
   
  [Attività AssignCulture](../msbuild/assignculture-task.md)  
  Assegna gli identificatori delle impostazioni cultura agli elementi.  
@@ -72,7 +72,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  Copia i file in una nuova posizione.  
   
  [Attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)  
- Crea un nome di manifesto di tipo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dal nome di un determinato file con estensione resx o da un'altra risorsa.  
+ Crea un nome di manifesto nello stile di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] da un nome file con estensione *resx* specifico o da un'altra risorsa.  
   
  [Attività CreateItem](../msbuild/createitem-task.md)  
  Popola le raccolte di elementi dagli elementi di input, consentendo la copia degli elementi da un elenco a un altro.  
@@ -81,13 +81,16 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  Popola le proprietà dai valori di input, consentendo la copia di tali valori da una proprietà o una stringa a un'altra.  
   
  [Attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)  
- Crea un nome di manifesto di tipo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] dal nome di un determinato file con estensione resx o da un'altra risorsa.  
+ Crea un nome di manifesto nello stile di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] da un nome file con estensione *resx* specifico o da un'altra risorsa.  
   
  [Attività Csc](../msbuild/csc-task.md)  
  Richiama il compilatore Visual C# per creare librerie eseguibili a collegamento dinamico o moduli di codice.  
   
  [Attività Delete](../msbuild/delete-task.md)  
  Elimina i file specificati.  
+
+ [Attività DownloadFile](../msbuild/downloadfile-task.md)  
+ Scarica un file nella posizione specificata.  
   
  [Attività Error](../msbuild/error-task.md)  
  Interrompe una compilazione e registra un errore in base a un'istruzione condizionale valutata.  
@@ -96,7 +99,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  Esegue il programma o il comando specificato con gli argomenti specificati.  
   
  [Attività FindAppConfigFile](../msbuild/findappconfigfile-task.md)  
- Trova il file app.config, se presente, negli elenchi forniti.  
+ Trova il file *app.config*, se presente, negli elenchi disponibili.  
   
  [Attività FindInList](../msbuild/findinlist-task.md)  
  Trova un elemento in un elenco specificato con un itemspec corrispondente.  
@@ -120,7 +123,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  Genera un manifesto di distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
  [Attività GenerateResource](../msbuild/generateresource-task.md)  
- Converte i file con estensione txt e resx in file binari di Common Language Runtime con estensione resources.  
+ Converte i file con estensione *txt* e *resx* in file binari di Common Language Runtime con estensione *resources*.  
   
  [Attività GenerateTrustInfo](../msbuild/generatetrustinfo-task.md)  
  Genera l'attendibilità dell'applicazione dal manifesto di base e dai parametri `TargetZone` e `ExcludedPermissions`.  
@@ -138,7 +141,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  Restituisce i percorsi degli assembly di riferimento dei vari framework.  
   
  [Attività LC](../msbuild/lc-task.md)  
- Genera un file con estensione license da un file con estensione licx.  
+ Genera un file con estensione *license* da un file con estensione *licx*.  
   
  [Attività MakeDir](../msbuild/makedir-task.md)  
  Crea directory e, se necessario, eventuali directory padre.  
@@ -168,13 +171,13 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  Determina se l'applicazione richiede .NET Framework 3.5 SP1.  
   
  Attività ResGen  
- Obsoleta. Usare l'[attività GenerateResource](../msbuild/generateresource-task.md) per convertire i file con estensione txt e resx in file binari di Common Language Runtime con estensione resources e viceversa.  
+ Obsoleta. Usare l'[attività GenerateResource](../msbuild/generateresource-task.md) per convertire i file con estensione *txt* e *resx* in file binari di Common Language Runtime con estensione *resources* e viceversa.  
   
  [Attività ResolveAssemblyReference](../msbuild/resolveassemblyreference-task.md)  
  Determina tutti gli assembly che dipendono dall'assembly specificato.  
   
  [Attività ResolveComReference](../msbuild/resolvecomreference-task.md)  
- Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con estensione tlb e risolve tali librerie in percorsi sul disco.  
+ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con estensione *tlb* e risolve tali librerie in percorsi sul disco.  
   
  [Attività ResolveKeySource](../msbuild/resolvekeysource-task.md)  
  Determina l'origine delle chiavi con nome sicuro.  
@@ -200,6 +203,9 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  [Attività UnregisterAssembly](../msbuild/unregisterassembly-task.md)  
  Annulla la registrazione degli assembly specificati ai fini dell'interoperabilità COM.  
   
+ [Attività Unzip](../msbuild/unzip-task.md)  
+ Decomprime un archivio con estensione *zip* nella posizione specificata.
+  
  [Attività UpdateManifest](../msbuild/updatemanifest-task.md)  
  Aggiorna le proprietà selezionate in un manifesto e ripete la firma.  
   
@@ -224,7 +230,10 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  [Attività XslTransformation](../msbuild/xsltransformation-task.md)  
  Trasforma un input XML tramite *Extensible Stylesheet Language Transformation* (XSLT) o un XSLT compilato e gli output in un dispositivo o file di output.  
   
+  [Attività ZipDirectory](../msbuild/zipdirectory-task.md)  
+ Crea un archivio con estensione *zip* dal contenuto di una directory.
+  
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
  [Scrittura di attività](../msbuild/task-writing.md)   
  [Attività](../msbuild/msbuild-tasks.md)

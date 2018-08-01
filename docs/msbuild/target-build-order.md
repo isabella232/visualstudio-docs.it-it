@@ -1,7 +1,7 @@
 ---
 title: Ordine di compilazione delle destinazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/06/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178956"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 Le destinazioni devono venire ordinate se l'input per una destinazione dipende dall'output di un'altra destinazione. È possibile usare questi attributi per specificare l'ordine in cui vengono eseguite le destinazioni:  
@@ -77,7 +78,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
   
  Il codice precedente indica a MSBuild che la destinazione `Serve` dipende dalla destinazione `Chop` e dalla destinazione `Cook`. MSBuild esegue la destinazione `Chop` e quindi esegue la destinazione `Cook` prima di eseguire la destinazione `Serve`.  
   
-## <a name="beforetargets-and-after-targets"></a>BeforeTargets e After Targets  
+## <a name="beforetargets-and-aftertargets"></a>BeforeTargets e AfterTargets  
  In MSBuild 4.0 è possibile specificare l'ordine delle destinazioni usando gli attributi `BeforeTargets` e `AfterTargets`.  
   
  Considerare lo script seguente.  
@@ -102,7 +103,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 </Target>  
 ```  
   
-## <a name="determining-the-target-build-order"></a>Determinazione dell'ordine di compilazione delle destinazioni  
+## <a name="determine-the-target-build-order"></a>Determinare l'ordine di compilazione delle destinazioni  
  MSBuild determina l'ordine di compilazione delle destinazioni, come segue:  
   
 1.  Vengono eseguite le destinazioni `InitialTargets`.  
@@ -115,7 +116,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
   
 4.  Prima che venga eseguita una destinazione, ne vengono eseguite le destinazioni `DependsOnTargets`.  
   
-5.  Prima che venga eseguita una destinazione, vengono eseguite le destinazioni che la elencano in un attributo `BeforeTargets`.  
+5.  Prima che una destinazione venga eseguita o ignorata, vengono eseguite le destinazioni che la elencano in un attributo `BeforeTargets`.  
   
 6.  Prima che venga eseguita una destinazione, ne vengono confrontati gli attributi `Inputs` e `Outputs`. Se MSBuild determina che sono presenti file di output scaduti rispetto al file o ai file di input corrispondenti, MSBuild esegue la destinazione. In caso contrario, MSBuild ignora la destinazione.  
   

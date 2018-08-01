@@ -11,14 +11,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b595f08883023d1150612415fcdb6c50411db7e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569888"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151015"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Procedura: Usare SDK di progetto MSBuild
+
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 è stato introdotto il concetto di "SDK di progetto" che semplifica l'uso di Software Development Kit che richiedono l'importazione di proprietà e destinazioni.
 
 ```xml
@@ -27,8 +28,8 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
         <TargetFramework>net46</TargetFramework>
     </PropertyGroup>
 </Project>
-```  
-  
+```
+
 Durante la valutazione del progetto, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aggiunge importazioni implicite nella parte superiore e inferiore del progetto:
 
 ```xml
@@ -42,30 +43,39 @@ Durante la valutazione del progetto, [!INCLUDE[vstecmsbuild](../extensibility/in
 
     <!-- Implicit bottom import -->
     <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
-</Project>  
-```  
+</Project>
+```
 
-## <a name="referencing-a-project-sdk"></a>Riferimento a un SDK di progetto
- Esistono tre modi per fare riferimento a un SDK di progetto
+## <a name="reference-a-project-sdk"></a>Fare riferimento a un SDK di progetto
+
+ Esistono tre modi per fare riferimento a un SDK di progetto:
 
 1. Usare l'attributo `Sdk` per l'elemento `<Project/>`:
+
     ```xml
     <Project Sdk="My.Custom.Sdk">
         ...
     </Project>
     ```
+
     Un'importazione implicita viene aggiunta nella parte superiore e inferiore del progetto, come illustrato in precedenza.  Il formato dell'attributo `Sdk` è `Name[/Version]` dove Version è facoltativo.  Ad esempio, è possibile specificare `My.Custom.Sdk/1.2.3`.
 
+    > [!NOTE]
+    > Questo è al momento l'unico metodo supportato per fare riferimento a un progetto SDK in Visual Studio per Mac.
+
 2. Usare l'elemento di primo livello `<Sdk/>`:
+
     ```xml
     <Project>
         <Sdk Name="My.Custom.Sdk" Version="1.2.3" />
         ...
     </Project>
    ```
+
    Un'importazione implicita viene aggiunta nella parte superiore e inferiore del progetto, come illustrato in precedenza.  L'attributo `Version` non è obbligatorio.
 
 3. Usare l'elemento `<Import/>` in un punto qualsiasi nel progetto:
+
     ```xml
     <Project>
         <PropertyGroup>
@@ -76,11 +86,13 @@ Durante la valutazione del progetto, [!INCLUDE[vstecmsbuild](../extensibility/in
         <Import Project="Sdk.targets" Sdk="My.Custom.Sdk" />
     </Project>
    ```
+
    L'inclusione esplicita delle importazioni nel progetto consente il controllo completo sull'ordine.
 
    Quando si usa l'elemento `<Import/>` è possibile specificare anche un attributo `Version` facoltativo.  Ad esempio, è possibile specificare `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
 ## <a name="how-project-sdks-are-resolved"></a>Come vengono risolti gli SDK di progetto
+
 Durante la valutazione dell'importazione, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] risolve in modo dinamico il percorso dell'SDK di progetto in base al nome e alla versione specificati.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] include ANCHE un elenco di resolver di SDK registrati, ovvero plug-in che individuano gli SDK di progetto nel computer in uso.  Questi plug-in includono:
 
 1. Un resolver basato su NuGet che recupera i feed di pacchetto configurati per i pacchetti NuGet corrispondenti all'ID e alla versione dell'SDK specificati.<br/>
@@ -99,8 +111,12 @@ Il resolver di SDK basato su NuGet supporta la specifica di una versione nel fil
     }
 }
 ```
-Durante una compilazione, è possibile usare una sola versione di ogni SDK di progetto.  Se si fa riferimento a due versioni diverse dello stesso SDK di progetto, MSBuild genererà un avviso.  È consigliabile **non** specificare una versione nei progetti se viene specificata una versione nel file `global.json`.  
 
-## <a name="see-also"></a>Vedere anche  
+Durante una compilazione, è possibile usare una sola versione di ogni SDK di progetto.  Se si fa riferimento a due versioni diverse dello stesso SDK di progetto, MSBuild genererà un avviso.  È consigliabile **non** specificare una versione nei progetti se viene specificata una versione nel file *global.json*.  
+
+## <a name="see-also"></a>Vedere anche
+
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
  [Personalizzare la compilazione](../msbuild/customize-your-build.md)   
+ [Pacchetti, metapacchetti e framework](/dotnet/core/packages)   
+ [Aggiunte al formato csproj per .NET Core](/dotnet/core/tools/csproj)

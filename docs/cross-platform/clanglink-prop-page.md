@@ -32,12 +32,12 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 3611268c17d26328d131eacafb92b1ce55c7d07f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b491257c561af337afdfd0d066c9ed8cd550c15
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065881"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230948"
 ---
 # <a name="clang-linker-properties-android-c"></a>Proprietà dei linker Clang (Android C++)
 
@@ -63,4 +63,4 @@ Richiedi stack eseguibili | Questa opzione contrassegna l'output in modo da non 
 Intero archivio | Con Intero archivio viene usato tutto il codice disponibile in origini e dipendenze aggiuntive.
 Opzioni aggiuntive | Opzioni aggiuntive.
 Dipendenze aggiuntive | Specifica altri elementi da aggiungere alla riga di comando del collegamento.
-Dipendenze libreria | Questa opzione consente di specificare librerie aggiuntive da aggiungere alla riga di comando del linker. La libreria aggiuntiva verrà aggiunta alla fine della riga di comando del linker e sarà contraddistinta dal prefisso "lib" e dall'estensione "a".  (-lFILE)
+Dipendenze libreria | Questa opzione consente di specificare librerie aggiuntive da aggiungere alla riga di comando del linker. La libreria aggiuntiva viene aggiunta alla fine della riga di comando del linker ed è contraddistinta dal prefisso *lib* e dall'estensione *a* o *so*.  (-lFILE)

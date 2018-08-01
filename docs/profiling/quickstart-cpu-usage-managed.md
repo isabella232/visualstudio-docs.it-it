@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750285"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206850"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (codice gestito)
 
@@ -26,12 +26,9 @@ Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi
 
 L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. L'hub diagnostica offre molte altre opzioni per la registrazione e l'analisi di questo tipo di dati.
 
-> [!NOTE]
-> Per .NET Core e ASP.NET Core, lo strumento Utilizzo CPU non offre attualmente risultati accurati con i file PBD portabili. Usare invece file PDB completi.
-
 ## <a name="create-a-project"></a>Creare un progetto
 
-1. In Visual Studio scegliere **File > Nuovo progetto**.
+1. In Visual Studio scegliere **File** > **Nuovo progetto**.
 
 2. In **Visual C#** o **Visual Basic** scegliere **Desktop di Windows** e quindi nel riquadro al centro scegliere **App console (.NET Framework)**.
 
@@ -39,7 +36,7 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
 
     Visual Studio crea il progetto.
 
-2. Aprire Program.cs e sostituire tutto il codice con il codice seguente:
+2. Aprire *Program.cs* e sostituire tutto il codice con il codice seguente:
 
     ```csharp
     using System;
@@ -158,9 +155,9 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
     ```
 
     > [!NOTE]
-    > In Visual Basic verificare che l'oggetto di avvio sia impostato su `Sub Main` (**Proprietà > Applicazione > Oggetto di avvio**).
+    > In Visual Basic verificare che l'oggetto di avvio sia impostato su `Sub Main` (**Proprietà** > **Applicazione** > **Oggetto di avvio**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Passaggio 1: Raccogliere i dati di profilatura
+##  <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura
 
 1.  In primo luogo impostare un punto di interruzione dell'app su questa riga di codice nella funzione `Main`:
 
@@ -179,9 +176,9 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
     > [!TIP]
     > Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-3.  La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug/Windows/Mostra strumenti di diagnostica**.
+3.  La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
 
-4.  Fare clic su **Debug / Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
+4.  Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
 
      Al termine del caricamento dell'applicazione viene visualizzata la vista **Riepilogo** degli strumenti di diagnostica.
 
@@ -193,7 +190,7 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
 
      Quando si sceglie **Registra profilo CPU** Visual Studio inizia a registrare le funzioni e il tempo necessario per l'esecuzione e crea un grafico della sequenza temporale, utile per concentrarsi su segmenti specifici della sessione di campionamento. È possibile visualizzare i dati raccolti solo quando l'esecuzione dell'applicazione si interrompe in corrispondenza di un punto di interruzione.
 
-6.  Premere F5 per eseguire l'applicazione fino al secondo punto di interruzione.
+6.  Premere **F5** per eseguire l'applicazione fino al secondo punto di interruzione.
 
      Ora si hanno a disposizione i dati relativi alle prestazioni per l'applicazione, precisamente per l'area di codice compresa tra i due punti di interruzione.
 
@@ -203,7 +200,7 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
 
      A questo punto, è possibile iniziare ad analizzare i dati.
 
-## <a name="Step2"></a> Passaggio 2: Analizzare i dati di utilizzo della CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati di utilizzo della CPU
 
 È consigliabile iniziare ad analizzare i dati esaminando l'elenco di funzioni in Utilizzo CPU, identificando le funzioni che svolgono la maggior parte del lavoro e quindi concentrandosi su ognuna di esse.
 
@@ -238,4 +235,4 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
 ## <a name="see-also"></a>Vedere anche
 
 - [Profilatura in Visual Studio](../profiling/index.md)
-- [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
+- [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

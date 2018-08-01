@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477288"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206841"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (ASP.NET)
 
@@ -26,12 +26,9 @@ Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi
 
 L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/Profiling-Tools.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete.
 
-> [!NOTE]
-> Per .NET Core e ASP.NET Core, lo strumento Utilizzo CPU non offre attualmente risultati accurati con i file PBD portabili. Usare invece file PDB completi.
-
 ## <a name="create-a-project"></a>Creare un progetto
 
-1. In Visual Studio scegliere **File > Nuovo progetto**.
+1. In Visual Studio scegliere **File** > **Nuovo progetto**.
 
 1. In **Visual C#** scegliere **Web**, quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET (.NET Framework)**.
 
@@ -132,7 +129,7 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
     }
     ```
 
-1. In Esplora soluzioni aprire Controller/HomeControllers.cs e sostituire il codice seguente:
+1. In Esplora soluzioni aprire *Controller/HomeControllers.cs* e sostituire il codice seguente:
 
     ```csharp
     public ActionResult About()
@@ -156,7 +153,7 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
     }
     ```
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Passaggio 1: Raccogliere i dati di profilatura 
+##  <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura 
   
 1.  In primo luogo impostare un punto di interruzione dell'app su questa riga di codice nel costruttore `Simple`:
 
@@ -171,9 +168,9 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
     > [!TIP]
     > Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
   
-1.  La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug/Windows/Mostra strumenti di diagnostica**.
+1.  La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
 
-1.  Fare clic su **Debug / Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
+1.  Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
 
 1.  Al termine del caricamento dell'app fare clic sul collegamento **Informazioni** nella parte superiore della pagina web per avviare l'esecuzione del nuovo codice.
 
@@ -197,7 +194,7 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
 
      A questo punto, è possibile iniziare ad analizzare i dati.
 
-## <a name="Step2"></a> Passaggio 2: Analizzare i dati di utilizzo della CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati di utilizzo della CPU
 
 È consigliabile iniziare ad analizzare i dati esaminando l'elenco di funzioni in Utilizzo CPU, identificando le funzioni che svolgono la maggior parte del lavoro e quindi concentrandosi su ognuna di esse.
 
@@ -232,4 +229,4 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
 ## <a name="see-also"></a>Vedere anche  
 
  [Profilatura in Visual Studio](../profiling/index.md)  
- [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
+ [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

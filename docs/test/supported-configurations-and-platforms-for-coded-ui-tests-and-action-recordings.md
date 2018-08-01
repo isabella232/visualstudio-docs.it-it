@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0192a38e5bd84cfd17d3f7e2a0ec59e3225f4e84
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693887"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178819"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni
 
@@ -61,11 +61,11 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 |Windows Form 2.0 e versioni successive|Completamente supportato. **Nota:** i controlli NetFx sono completamente supportati, ma non tutti i controlli di terze parti sono supportati.|
 |WPF 3.5 e versioni successive|Completamente supportato.<br /><br /> **Nota** I controlli NetFx sono completamente supportati, ma non tutti i controlli di terze parti sono supportati.|
 |Windows Win32|Può essere usato ma presenta alcuni problemi noti. Non è ufficialmente supportato.|
-|MFC|Parzialmente supportato. Per informazioni dettagliate sulle funzionalità supportate, vedere il [sito Web Microsoft](http://go.microsoft.com/fwlink/?LinkId=206511) .|
+|MFC|Parzialmente supportato. Per informazioni dettagliate sulle funzionalità supportate, vedere il [framework UITest](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/).|
 |SharePoint|Completamente supportato.|
 |Applicazioni client di Office|Non supportato.|
 |Client Web di Dynamics CRM|Completamente supportato.|
-|Client di Dynamics (Ax) 2012|La registrazione e la riproduzione delle azioni sono parzialmente supportate. Per altre informazioni, vedere il [sito Web Microsoft](http://go.microsoft.com/fwlink/?LinkId=232677) seguente.|
+|Client di Dynamics (Ax) 2012|La registrazione e la riproduzione delle azioni sono parzialmente supportate. Per informazioni dettagliate, vedere il post relativo al [supporto dei test codificati dell'interfaccia utente e delle registrazioni delle azioni in Visual Studio 10 per Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/).|
 |SAP|Non supportato.|
 |Servizi Citrix/terminal|La registrazione delle azioni in un server terminal non è consigliabile. Il registratore non supporta l'esecuzione di più istanze nello stesso momento.|
 |PowerBuilder|Parzialmente supportato.<br /><br /> Il supporto di accessibilità di ambito è abilitato per i controlli di PowerBuilder.|

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da93697f273257d166bf377e9c84b03d59d06f78
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: df0fc520d1d3f37800f08198e6dc08deac5c6a6f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571321"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155555"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 Avvia un contesto di verifica usando un file di risposta che specifica un marcatore radice.  
@@ -47,7 +47,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  **HRESULT** con il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato creato.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** FileTracker.h  
+ **Intestazione:** *FileTracker.h*  
   
 ## <a name="see-also"></a>Vedere anche  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

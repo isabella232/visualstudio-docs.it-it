@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2d57aa718216b796cf5e7f008186abedc709d108
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752696"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177006"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, scheda HTML
 

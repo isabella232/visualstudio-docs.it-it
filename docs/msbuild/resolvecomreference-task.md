@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8bf991ca4bec8befde5a11673dcb056f5e50f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578172"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152399"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
-Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con estensione tlb e risolve tali librerie in percorsi sul disco.  
+Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con estensione *tlb* e risolve tali librerie in percorsi sul disco.  
   
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `ResolveCOMReference` .  
@@ -36,11 +36,11 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 |Parametro|Descrizione|  
 |---------------|-----------------|  
 |`DelaySign`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, la chiave pubblica viene inserita nell'assembly. Se `false`, l'assembly viene firmato completamente.|  
-|`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Matrice di coppie di variabili di ambiente, separate da segni di uguale. Tali variabili vengono passate ai file tlbimp.exe e aximp.exe compilati in aggiunta al blocco di ambiente regolare, oppure eseguendo l'override selettivo di tale blocco.|  
-|`ExecuteAsTool`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, esegue i file tlbimp.exe e aximp.exe dal framework di destinazione appropriato in modalità out-of-process per generare gli assembly wrapper necessari. Questo parametro abilita il multitargeting.|  
+|`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Matrice di coppie di variabili di ambiente, separate da segni di uguale. Tali variabili vengono passate ai file *tlbimp.exe* e *aximp.exe* compilati in aggiunta al blocco di ambiente regolare, oppure eseguendo l'override selettivo di tale blocco.|  
+|`ExecuteAsTool`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, esegue i file *tlbimp.exe* e *aximp.exe* dal framework di destinazione appropriato in modalità out-of-process per generare gli assembly wrapper necessari. Questo parametro abilita il multitargeting.|  
 |`IncludeVersionInInteropName`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, la versione typelib sarà inclusa nel nome del wrapper. Il valore predefinito è `false`.|  
-|`KeyContainer`|Parametro `String` facoltativo.<br /><br /> Specifica un contenitore che include una coppia di chiavi<br /><br /> pubblica/privata.|  
-|`KeyFile`|Parametro `String` facoltativo.<br /><br /> Specifica un elemento che contiene una coppia di chiavi<br /><br /> pubblica/privata.|  
+|`KeyContainer`|Parametro `String` facoltativo.<br /><br /> Specifica un contenitore che include una coppia di chiavi pubblica/privata.|  
+|`KeyFile`|Parametro `String` facoltativo.<br /><br /> Specifica un elemento che contiene una coppia di chiavi pubblica/privata.|  
 |`NoClassMembers`|Parametro `Boolean` facoltativo.|  
 |`ResolvedAssemblyReferences`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i riferimenti all'assembly risolti.|  
 |`ResolvedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i file con nomi completi su disco che corrispondono alle posizioni fisiche delle librerie dei tipi fornite come input per questa attività.|  
@@ -48,12 +48,10 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 |`SdkToolsPath`|Parametro <xref:System.String?displayProperty=fullName> facoltativo.<br /><br /> Se `ExecuteAsTool` è `true`, questo parametro deve essere impostato sul percorso degli strumenti SDK per la versione di framework di destinazione.|  
 |`StateFile`|Parametro `String` facoltativo.<br /><br /> Specifica il file di cache per i timestamp dei componenti COM. Se non presente, ogni esecuzione genererà nuovamente tutti i wrapper.|  
 |`TargetFrameworkVersion`|Parametro `String` facoltativo.<br /><br /> Specifica la versione del framework di destinazione del progetto.<br /><br /> Il valore predefinito è `String.Empty`. Tale valore indica che non viene applicato alcun filtro a un riferimento in base al framework di destinazione.|  
-|`TargetProcessorArchitecture`|Parametro `String` facoltativo.<br /><br /> Specifica l'architettura preferita del processore di destinazione. Viene passato al flag tlbimp.exe /machine dopo la conversione.<br /><br /> Il valore del parametro deve essere un membro di <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
-|`TypeLibFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica il percorso del file della libreria dei tipi per i riferimenti COM. Gli elementi inclusi in questo parametro possono contenere metadati dell'elemento. Per altre informazioni, vedere la sezione "Metadati dell'elemento TypeLibFiles" riportata di seguito.|  
-|`TypeLibNames`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i nomi delle librerie dei tipi da risolvere. Gli elementi inclusi in questo parametro devono contenere alcuni metadati dell'elemento. Per altre informazioni, vedere la sezione "Metadati dell'elemento TypeLibNames" riportata di seguito.|  
+|`TargetProcessorArchitecture`|Parametro `String` facoltativo.<br /><br /> Specifica l'architettura preferita del processore di destinazione. Viene passato al flag *tlbimp.exe*/machine dopo la conversione.<br /><br /> Il valore del parametro deve essere un membro di <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`TypeLibFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica il percorso del file della libreria dei tipi per i riferimenti COM. Gli elementi inclusi in questo parametro possono contenere metadati dell'elemento. Per altre informazioni, vedere la sezione [Metadati dell'elemento TypeLibFiles](#typelibfiles-item-metadata) riportata di seguito.|  
+|`TypeLibNames`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i nomi delle librerie dei tipi da risolvere. Gli elementi inclusi in questo parametro devono contenere alcuni metadati dell'elemento. Per altre informazioni, vedere la sezione [Metadati dell'elemento TypeLibNames](#typelibnames-item-metadata) riportata di seguito.|  
 |`WrapperOutputDirectory`|Parametro `String` facoltativo.<br /><br /> Percorso su disco in cui viene inserito l'assembly di interoperabilità generato. Se questi metadati di elemento non vengono specificati, l'attività userà il percorso assoluto della directory in cui si trova il file di progetto.|  
-  
-## <a name="remarks"></a>Note  
   
 ## <a name="typelibnames-item-metadata"></a>Metadati dell'elemento TypeLibNames  
  Nella tabella seguente vengono descritti i metadati disponibili per gli elementi passati al parametro `TypeLibNames`.  
@@ -81,4 +79,4 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

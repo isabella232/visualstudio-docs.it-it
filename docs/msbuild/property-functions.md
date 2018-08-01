@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1665b0b5a12f8e1719116e61f13ac915083c0d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f86bc73800a8532f1fb2e2c82005439a5579162b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978219"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155516"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 
@@ -43,7 +43,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>Funzioni di proprietà statiche
 
-Nello script di compilazione è possibile accedere alle proprietà e ai metodi statici di molte classi di sistema. Per ottenere il valore di una proprietà statica, usare la sintassi seguente, dove *Class* è il nome della classe di sistema e *Property* è il nome della proprietà.
+Nello script di compilazione è possibile accedere alle proprietà e ai metodi statici di molte classi di sistema. Per ottenere il valore di una proprietà statica, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema e \<Property> è il nome della proprietà.
 
 ```fundamental
 $([Class]::Property)
@@ -55,7 +55,7 @@ Ad esempio, è possibile usare il codice seguente per impostare una proprietà d
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Per chiamare un metodo statico, usare la sintassi seguente, dove *Class* è il nome della classe di sistema, *Method* è il nome del metodo e *(Parameters)* è l'elenco di parametri del metodo:
+Per chiamare un metodo statico, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Method> è il nome del metodo e (\<Parameters>) è l'elenco di parametri del metodo:
 
 ```fundamental
 $([Class]::Method(Parameters))
@@ -119,7 +119,7 @@ Inoltre, è possibile usare le proprietà e i metodi statici seguenti:
 
 ### <a name="calling-instance-methods-on-static-properties"></a>Chiamata di metodi di istanza su proprietà statiche
 
-Se si accede a una proprietà statica che restituisce un'istanza di un oggetto, è possibile richiamare i metodi di istanza di tale oggetto. Per richiamare un metodo di istanza usare la sintassi seguente, dove *Class* è il nome della classe di sistema, *Property* è il nome della proprietà, *Method* è il nome del metodo e *(Parameters)* è l'elenco di parametri del metodo:
+Se si accede a una proprietà statica che restituisce un'istanza di un oggetto, è possibile richiamare i metodi di istanza di tale oggetto. Per richiamare un metodo di istanza usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Property> è il nome della proprietà, \<Method> è il nome del metodo e (\<Parameters>) è l'elenco di parametri del metodo:
 
 ```fundamental
 $([Class]::Property.Method(Parameters))
@@ -135,7 +135,7 @@ Ad esempio, è possibile usare il codice seguente per impostare una proprietà d
 
 ### <a name="msbuild-property-functions"></a>Funzioni di proprietà MSBuild
 
-È possibile accedere a diversi metodi statici nella compilazione per supportare funzionalità aritmetiche, operazioni logiche bit per bit nonché la gestione dei caratteri di escape. Per accedere a questi metodi usare la sintassi seguente, dove *Method* è il nome del metodo e *Parameters* è l'elenco di parametri del metodo.
+È possibile accedere a diversi metodi statici nella compilazione per supportare funzionalità aritmetiche, operazioni logiche bit per bit nonché la gestione dei caratteri di escape. Per accedere a questi metodi usare la sintassi seguente, dove \<Method> è il nome del metodo e (\<Parameters>) è l'elenco di parametri del metodo.
 
 ```fundamental
 $([MSBuild]::Method(Parameters))
@@ -261,7 +261,7 @@ Di seguito è indicata la sintassi per la funzione della proprietà:
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Il sistema operativo Windows a 64 bit gestisce una chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node che presenta una visualizzazione del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE per le applicazioni a 32 bit.
+Il sistema operativo Windows a 64 bit gestisce una chiave del Registro di sistema **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** che presenta una visualizzazione del Registro di sistema **HKEY_LOCAL_MACHINE\SOFTWARE** per le applicazioni a 32 bit.
 
 Per impostazione predefinita, un'applicazione a 32 bit in esecuzione su WOW64 accede alla visualizzazione del Registro di sistema a 32 bit e un'applicazione a 64 bit accede alla visualizzazione del Registro di sistema a 64 bit.
 
@@ -279,7 +279,7 @@ Di seguito è riportato un esempio.
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-Ottiene i dati SLRuntimeInstallPath della chiave ReferenceAssemblies, cercandoli in primo luogo nella visualizzazione del Registro di sistema a 64 bit, quindi in quella a 32 bit.
+Ottiene i dati **SLRuntimeInstallPath** della chiave **ReferenceAssemblies**, cercandoli in primo luogo nella visualizzazione del Registro di sistema a 64 bit, quindi in quella a 32 bit.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 
@@ -341,4 +341,5 @@ Output:
 ## <a name="see-also"></a>Vedere anche
 
 [Proprietà di MSBuild](../msbuild/msbuild-properties.md)
-[MSBuild](../msbuild/msbuild.md)
+
+[Panoramica di MSBuild](../msbuild/msbuild.md)

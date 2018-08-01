@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3da70b7c8c476125478fef2497f084ba4a638a03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 080bdfd79ee1fce4015fc2db9a695cb55c417165
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969629"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178770"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Procedura: esportare i risultati di un test di carico da un repository
 
@@ -28,7 +28,7 @@ Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzion
 
 ## <a name="to-export-results-from-a-repository"></a>Per esportare i risultati da un repository
 
-1.  Da un progetto di test di carico e prestazioni Web aprire un test di carico.
+1.  Da un progetto di test di carico e prestazioni web aprire un test di carico.
 
 2.  Scegliere **Apri e gestisci risultati** nella barra degli strumenti incorporata.
 

@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd27aa3e589957d75d504421d170735d1add6f9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573798"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177737"
 ---
-# <a name="generatebootstrapper-task"></a>Attività GenerateBootstrapper
+# <a name="generatebootstrapper-task"></a>GenerateBootstrapper (attività)
 Consente di rilevare, scaricare e installare automaticamente un'applicazione e i relativi prerequisiti. Funge da programma di installazione singolo che integra i programmi di installazione separati per tutti i componenti che costituiscono un'applicazione.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
- Nella tabella che segue vengono descritti i parametri dell'attività `GenerateBootstrapper` .  
+ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.  
   
 -   `ApplicationFile`  
   
@@ -78,7 +78,7 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
     </BootstrapperItem>  
     ```  
   
-     L'attributo `Include` viene usato per rappresentare il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono parametri di input [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obbligatori a meno che non sia stato specificato alcun `ApplicationFile`. È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.  
+     L'attributo `Include` rappresenta il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono parametri di input [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obbligatori a meno che non sia stato specificato alcun `ApplicationFile`. È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.  
   
      Se non si specifica il parametro `BootstrapperItems` o `ApplicationFile`, si verificherà un errore di compilazione.  
   
@@ -86,13 +86,13 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
   
      Parametro di ouput facoltativo `String`.  
   
-     Specifica il percorso di compilazione del file setup.exe.  
+     Specifica il percorso di compilazione del file *setup.exe*  
   
 -   `ComponentsLocation`  
   
      Parametro `String` facoltativo.  
   
-     Specifica il percorso in cui il programma di avvio automatico esegue la ricerca dei prerequisiti di installazione. Per il parametro è possibile specificare i valori riportati di seguito:  
+     Specifica il percorso in cui il programma di avvio automatico esegue la ricerca dei prerequisiti di installazione. Per il parametro è possibile specificare i valori seguenti:  
   
     -   `HomeSite`: indica che il prerequisito è ospitato dal fornitore del componente.  
   
@@ -130,7 +130,7 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
   
      Parametro `String` facoltativo.  
   
-     Specifica il percorso in cui copiare setup.exe e tutti i file di pacchetto.  
+     Specifica il percorso in cui copiare *setup.exe* e tutti i file di pacchetto.  
   
 -   `Path`  
   
@@ -151,7 +151,7 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
      Se `true`, il programma di avvio automatico esegue la convalida XSD sugli elementi del programma di avvio automatico di input specificati. Il valore predefinito di questo parametro è `false`.  
   
 ## <a name="remarks"></a>Note  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente usa l'attività `GenerateBootstrapper` per installare un'applicazione che deve avere [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] installato come prerequisito.  
@@ -179,4 +179,4 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

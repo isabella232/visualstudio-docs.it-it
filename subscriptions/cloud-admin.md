@@ -9,12 +9,12 @@ description: Configurazione degli amministratori per le sottoscrizioni cloud
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a3a275ae81915ddf9eb89a59c4f90108df1f33da
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335684"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231278"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configurazione degli amministratori per le sottoscrizioni cloud di Visual Studio
 
@@ -46,6 +46,8 @@ Il sottoscrittore designato viene visualizzato al centro della pagina con il ruo
 
 Il nuovo amministratore potrà ora accedere al [portale di gestione](https://manage.visualstudio.com), selezionare la stessa sottoscrizione di Azure usata per l'acquisto delle sottoscrizioni cloud dall'elenco nell'angolo superiore sinistro della pagina e iniziare a gestire le sottoscrizioni. 
 
+> [!NOTE]
+> Se si visualizzano utenti con autorizzazioni per la modifica delle sottoscrizioni cloud dell'utente che l'utente stesso non ha impostato come amministratori, è possibile che tali utenti abbiano ruoli nella sottoscrizione di Azure sottostante che consentono loro la gestione delle sottoscrizioni.  Tali ruoli includono: proprietario, collaboratore, amministratore dei servizi o coamministratore.  Per altre informazioni, visitare https://docs.microsoft.com/vsts/billing/add-backup-billing-managers?view=vsts
 
 Per informazioni sulle sottoscrizioni cloud di Visual Studio, vedere [Panoramica](vscloud-overview.md) in Acquisto di sottoscrizioni cloud. Per acquistare sottoscrizioni cloud di Visual Studio, visitare Visual Studio Marketplace all'indirizzo [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
 

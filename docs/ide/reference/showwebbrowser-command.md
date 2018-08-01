@@ -15,14 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704876"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176385"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
+
 Visualizza l'URL specificato in una finestra del Web browser all'interno o all'esterno dell'ambiente di sviluppo integrato (IDE).
 
 ## <a name="syntax"></a>Sintassi
@@ -39,11 +40,11 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="switches"></a>Opzioni
  /new
 
- Facoltativo. Specifica che la pagina venga visualizzata in una nuova istanza del Web browser.
+ Facoltativo. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
 
  /ext
 
- Facoltativo. Specifica che la pagina venga visualizzata nel Web browser predefinito all'esterno dell'IDE.
+ Facoltativo. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
 
 ## <a name="remarks"></a>Note
  L'alias per il comando **ShowWebBrowser** è **navigate** o **nav**.

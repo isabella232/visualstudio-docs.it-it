@@ -17,20 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5540eb31d764e82cb0c6cd46eb63cb893559a70f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973154"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175748"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
 I risultati di un test di carico vengono visualizzati come dati in diversi pannelli.
 
-Per visualizzare i risultati del test in forma grafica, fare clic su **Grafici** sulla barra degli strumenti del test di carico. Ogni singolo grafico viene visualizzato in un pannello con il nome del grafico riportato all'inizio di un elenco a discesa. Per visualizzare un grafico diverso nel pannello, scegliere dall'elenco il nome di un altro grafico.
+Per visualizzare i risultati del test in forma grafica, fare clic su **Grafici** sulla barra degli strumenti del **test di carico**. Ogni singolo grafico viene visualizzato in un pannello con il nome del grafico riportato all'inizio di un elenco a discesa. Per visualizzare un grafico diverso nel pannello, scegliere dall'elenco il nome di un altro grafico.
 
-È possibile visualizzare fino a quattro pannelli di grafici alla volta. È possibile passare da un layout del pannello all'altro mediante il pulsante della barra degli strumenti per il layout dei pannelli.
+È possibile visualizzare fino a quattro pannelli di grafici alla volta. È possibile passare da un layout del pannello all'altro mediante il pulsante della barra degli strumenti per il **layout dei pannelli**.
 
 Vengono forniti molti grafici incorporati. È possibile usare i grafici incorporati così come sono o è possibile personalizzarli. Inoltre, è possibile creare grafici personalizzati. Per altre informazioni, vedere [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) e [Procedura: Creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
@@ -84,7 +84,7 @@ Nella tabella seguente sono riportati i grafici incorporati disponibili per l'an
 |**Affiancare i grafici:** è possibile disporre i grafici dei risultati dei test di carico secondo diversi modelli. È possibile affiancare fino a quattro grafici.||
 |**Modificare l'aspetto dei tracciati del contatore delle prestazioni nei grafici:** è possibile modificare le opzioni delle righe del tracciato per i contatori delle prestazioni nei grafici. Sono inclusi il colore e lo stile di linea. È inoltre possibile specificare se si desidera indicare automaticamente o manualmente l'intervallo da utilizzare per il tracciato del contatore delle prestazioni.|-   [Procedura: Specificare le opzioni del tracciato per i contatori grafici](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**Creare grafici personalizzati:** è possibile progettare grafici in cui vengono visualizzate informazioni specifiche sui risultati dei test di carico. Per progettare un grafico personalizzato, specificare i contatori del test di carico che verranno visualizzati sul grafico.|-   [Procedura: Creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Esportare i dati dei contatori delle prestazioni nel grafico:** è possibile esportare dati del grafico in Microsoft Excel tramite il pulsante Esporta dati del grafico in Excel disponibile sulla barra degli strumenti dell'Analizzatore test di carico in visualizzazione Grafici.||
+|**Esportare i dati dei contatori delle prestazioni nel grafico:** è possibile esportare dati del grafico in Microsoft Excel tramite il pulsante **Esporta dati del grafico in Excel** disponibile sulla barra degli strumenti dell'**Analizzatore test di carico** in visualizzazione **Grafici**.||
 
 ## <a name="related-tasks"></a>Attività correlate
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf8720efab88556092e6552a8ffa47cb1151fef
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f3506e87c1468ff66143b672dca95cd70b0b3dff
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946381"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177409"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 Consente di terminare il contesto di verifica corrente.  
@@ -37,7 +37,7 @@ HRESULT WINAPI EndTrackingContext();
  **HRESULT** con il bit **SUCCEEDED** impostato se il contesto di verifica è terminato.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** FileTracker.h  
+ **Intestazione:** *FileTracker.h*  
   
 ## <a name="see-also"></a>Vedere anche  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

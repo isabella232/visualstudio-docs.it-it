@@ -12,20 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39bc1acd059c9a915f330c74140c89d5f4fa40ff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8cdb171d16b6612562ea21608cdeb622f4ef8bb5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574640"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179047"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 Le attività di MSBuild in genere vengono create compilando una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).  
   
  A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. In questo modo è più semplice tenere traccia del codice sorgente e distribuire l'attività. Il codice sorgente è integrato nello script.  
   
+
+ In MSBuild 15.8 è stata aggiunta l'attività [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) che consente di creare attività inline multipiattaforma per .NET Standard.  Per usare attività inline in .NET Core, è necessaria un'attività RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>Struttura di un'attività inline  
- Un'attività inline è contenuta in un elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). L'attività inline e l'elemento `UsingTask` che la contiene in genere sono inclusi in un file TARGETS e vengono importati in altri file di progetto in base alle esigenze. Di seguito è riportata un'attività inline di base. Si noti che non esegue alcuna operazione.  
+ Un'attività inline è contenuta in un elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). L'attività inline e l'elemento `UsingTask` che la contiene sono generalmente inclusi in un file con estensione *targets* e all'occorrenza vengono importati in altri file di progetto. Di seguito è riportata un'attività inline di base. Si noti che non esegue alcuna operazione.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -52,23 +54,23 @@ Le attività di MSBuild in genere vengono create compilando una classe che imple
 -   L'attributo `TaskFactory` assegna un nome alla classe che implementa la factory dell'attività inline.  
   
 -   L'attributo `AssemblyFile` assegna la posizione della factory dell'attività inline. In alternativa, è possibile usare l'attributo `AssemblyName` per specificare il nome completo della classe factory dell'attività inline, che in genere si trova nella Global Assembly Cache (GAC).  
+
+Gli elementi rimanenti dell'attività `DoNothing` sono vuoti e vengono specificati per illustrare l'ordine e la struttura di un'attività inline. Un esempio più concreto è riportato più avanti in questo argomento.  
   
- Gli elementi rimanenti dell'attività `DoNothing` sono vuoti e vengono specificati per illustrare l'ordine e la struttura di un'attività inline. Un esempio più concreto è riportato più avanti in questo argomento.  
-  
--   L'elemento `ParameterGroup` è facoltativo. Se specificato, consente di dichiarare i parametri per l'attività. Per altre informazioni sui parametri di input e output, vedere "Parametri di input e output" più avanti in questo argomento.  
+-   L'elemento `ParameterGroup` è facoltativo. Se specificato, consente di dichiarare i parametri per l'attività. Per altre informazioni sui parametri di input e output, vedere [Parametri di input e output](#input-and-output-parameters) più avanti in questo argomento.  
   
 -   L'elemento `Task` descrive e contiene il codice sorgente dell'attività.  
   
 -   L'elemento `Reference` specifica i riferimenti agli assembly .NET usati nel codice. Equivale all'aggiunta di un riferimento a un progetto in Visual Studio. L'attributo `Include` specifica il percorso dell'assembly di riferimento.  
   
 -   L'elemento `Using` indica gli spazi dei nomi a cui si vuole accedere. Ricorda l'istruzione `Using` in Visual C#. L'attributo `Namespace` specifica lo spazio dei nomi da includere.  
-  
- Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programmazione. Le attività inline possono essere scritte in uno dei linguaggi .NET CodeDOM supportati, ad esempio Visual Basic, Visual C#.  
+
+Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programmazione. Le attività inline possono essere scritte in uno dei linguaggi .NET CodeDOM supportati, ad esempio Visual Basic, Visual C#.  
   
 > [!NOTE]
 >  Gli elementi contenuti in `Task` sono specifici della factory dell'attività, in questo caso la factory dell'attività del codice.  
   
-### <a name="code-element"></a>Elemento Code  
+### <a name="code-element"></a>Elemento del codice  
  L'ultimo elemento figlio visualizzato all'interno dell'elemento `Task` è l'elemento `Code`. L'elemento `Code` contiene o individua il codice che deve essere compilato in un'attività. Ciò che si inserisce nell'elemento `Code` dipende da come si vuole scrivere l'attività.  
   
  L'attributo `Language` specifica il linguaggio di programmazione in cui è scritto il codice. I valori accettabili sono `cs` per C#, `vb` per Visual Basic.  
@@ -80,15 +82,15 @@ Le attività di MSBuild in genere vengono create compilando una classe che imple
 -   Se il valore di `Type` è `Method`, il codice definisce un override del metodo `Execute` dell'interfaccia <xref:Microsoft.Build.Framework.ITask>.  
   
 -   Se il valore di `Type` è `Fragment`, il codice definisce il contenuto del metodo `Execute` ma non la firma o l'istruzione `return`.  
+
+Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice è in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape di caratteri riservati, ad esempio "\<" o ">".  
   
- Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice è in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape di caratteri riservati, ad esempio "\<" o ">".  
-  
- In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per specificare il percorso di un file che contiene il codice per l'attività. Il codice nel file di origine deve essere del tipo specificato dall'attributo `Type`. Se l'attributo `Source` è presente, il valore predefinito di `Type` è `Class`. Se `Source` non è presente, il valore predefinito è `Fragment`.  
+In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per specificare il percorso di un file che contiene il codice per l'attività. Il codice nel file di origine deve essere del tipo specificato dall'attributo `Type`. Se l'attributo `Source` è presente, il valore predefinito di `Type` è `Class`. Se `Source` non è presente, il valore predefinito è `Fragment`.  
   
 > [!NOTE]
 >  Quando si definisce la classe dell'attività nel file di origine il nome della classe deve concordare con l'attributo `TaskName` dell'elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) corrispondente.  
   
-## <a name="hello-world"></a>Hello World  
+## <a name="helloworld"></a>HelloWorld  
  Di seguito è riportata un'attività inline più concreta. L'attività HelloWorld visualizza "Hello, world!" nel dispositivo di registrazione degli errori predefinito, in genere la console del sistema o la finestra **Output** di Visual Studio. L'elemento `Reference` dell'esempio è incluso solo ai fini della spiegazione.  
   
 ```xml  
@@ -114,7 +116,7 @@ Log.LogError("Hello, world!");
 </Project>  
 ```  
   
- È possibile salvare l'attività HelloWorld in un file denominato HelloWorld.targets e quindi richiamarla da un progetto come indicato di seguito.  
+ È possibile salvare l'attività HelloWorld in un file denominato *HelloWorld.targets* e richiamarla da un progetto come indicato di seguito.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -142,7 +144,7 @@ Log.LogError("Hello, world!");
   
 -   `Output` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro deve avere un valore assegnato prima della restituzione da parte del metodo Execute.  
   
- Ad esempio,  
+Ad esempio,  
   
 ```xml  
 <ParameterGroup>  
@@ -152,15 +154,15 @@ Log.LogError("Hello, world!");
 </ParameterGroup>  
 ```  
   
- definisce questi tre parametri:  
+definisce questi tre parametri:  
   
 -   `Expression` è un parametro di input obbligatorio del tipo System.String.  
   
 -   `Files` è un parametro di input obbligatorio dell'elenco di elementi.  
   
 -   `Tally` è un parametro di output del tipo System.Int32.  
-  
- Se l'elemento `Code` ha come attributo `Type` `Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.  
+
+Se l'elemento `Code` ha come attributo `Type` `Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.  
   
 ## <a name="example"></a>Esempio  
  L'attività inline seguente sostituisce ogni occorrenza di un token nel file specificato con il valore specificato.  
@@ -192,4 +194,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Procedura dettagliata: creazione di un'attività inline](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Procedura dettagliata: Creare un'attività inline](../msbuild/walkthrough-creating-an-inline-task.md)

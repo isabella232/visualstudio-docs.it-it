@@ -1,7 +1,7 @@
 ---
 title: Attività XSD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -22,15 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7505f3d18e0b32ebdbc8b82d447e49b26fe4182e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3eb81e05a16eb504b14e94de2c1270057311b85a
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571195"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231597"
 ---
-# <a name="xsd-task"></a>Attività XSD
-Esegue il wrapping dello strumento XML Schema Definition (xsd.exe), che genera file di schema o di classe da un'origine.  
+# <a name="xsd-task"></a>XSD (attività)
+Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera file di schema o di classe da un'origine.  
+
+> [!NOTE]
+> In Visual Studio 2017 il supporto dei progetti C++ per *xsd.exe* è deprecato. È comunque possibile usare le API **Microsoft.VisualC.CppCodeProvider** aggiungendo manualmente *CppCodeProvider.dll* alla Global Assembly Cache. 
   
 ## <a name="parameters"></a>Parametri  
  La tabella seguente descrive i parametri dell'attività **XSD**.  
@@ -39,7 +42,7 @@ Esegue il wrapping dello strumento XML Schema Definition (xsd.exe), che genera f
   
      Parametro **String** facoltativo.  
   
-     Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, "*/opzione1 /opzione2 /opzione#*". Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XSD**.  
+     Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XSD**.  
   
 -   **GenerateFromSchema**  
   
@@ -86,4 +89,4 @@ Esegue il wrapping dello strumento XML Schema Definition (xsd.exe), che genera f
      Specifica la directory per il log di Tracker.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

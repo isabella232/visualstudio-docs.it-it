@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 121be2e1eb608bde001422282c4387bb5a7290e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967957"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176762"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali tipi di Web browser includere in uno scenario di test di carico
 
-La *combinazione di browser* consente di simulare il carico in maniera più realistica in uno scenario di test di carico. Il carico viene generato utilizzando una combinazione eterogenea di Web browser anziché un singolo Web browser. Viene quindi creata una migliore approssimazione dei Web browser che saranno utilizzati nelle applicazioni.
+La *combinazione di browser* consente di simulare il carico in maniera più realistica in uno scenario di test di carico. Il carico viene generato usando una combinazione eterogenea di Web browser anziché un singolo Web browser. Viene quindi creata una migliore approssimazione dei Web browser che saranno usati nelle applicazioni.
 
  Una combinazione di browser consente di specificare la probabilità che un utente virtuale esegua un determinato tipo di Web browser in uno scenario di test di carico. Quando si crea un test di carico, è possibile simulare che il carico venga generato da uno o più Web browser. Quando si aggiunge un tipo di Web browser alla combinazione dal set di Web browser forniti, a ciascuna richiesta HTTP inoltrata da un test delle prestazioni Web viene aggiunto un set di intestazioni associate relative ai Web browser selezionati.
 
@@ -30,7 +30,7 @@ La *combinazione di browser* consente di simulare il carico in maniera più real
 
  Una volta specificata una combinazione di browser, sarà possibile in seguito aggiungere e rimuovere tipi di Web browser dalla combinazione. È inoltre possibile cambiare la distribuzione della combinazione di browser utilizzando il controllo combinazione. Il controllo combinazione consente di regolare facilmente la distribuzione dei browser in uno scenario.
 
-## <a name="adding-new-browsers-to-a-scenario"></a>Aggiunta di nuovi browser a uno scenario
+## <a name="add-new-browsers-to-a-scenario"></a>Aggiungere nuovi browser a uno scenario
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Per aggiungere nuovi browser a uno scenario
 
@@ -47,7 +47,7 @@ La *combinazione di browser* consente di simulare il carico in maniera più real
 
 4.  Al termine dell'aggiunta dei browser, scegliere **OK**.
 
-##  <a name="EditingTestMixSpecifyBrowserRemovingBrowserTypes"></a> Rimozione di browser da uno scenario
+##  <a name="remove-browsers-from-a-scenario"></a>Rimuovere browser da uno scenario
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Per rimuovere browser da uno scenario
 
@@ -83,4 +83,4 @@ La *combinazione di browser* consente di simulare il carico in maniera più real
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
+- [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)

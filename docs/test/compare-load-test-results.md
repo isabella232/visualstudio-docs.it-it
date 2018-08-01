@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66893198028fcd23e3d42e1e595764e723ed82da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966367"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176330"
 ---
-# <a name="reporting-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Creazione di rapporti sui risultati dei test di carico per confronti tra test o analisi delle tendenze
+# <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze
 
 È possibile generare report del test di carico di Microsoft Excel basati su due o più risultati del test. Sono disponibili due tipi di report del test di carico:
 
-- Esegui confronto: questo report è in realtà costituito da due report in cui sono visualizzati dati di confronto affiancati tramite l'uso di tabelle e grafici a barre.
+- Esegui confronto&mdash;questo report è in realtà costituito da due report in cui sono visualizzati dati di confronto affiancati usando tabelle e grafici a barre.
 
 - Tendenza: è possibile generare analisi delle tendenze in due o più report. I risultati vengono visualizzati utilizzando grafici a linee.
 

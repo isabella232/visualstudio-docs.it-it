@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751676"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177253"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
 
-È possibile estendere l'interfaccia utente per il Visualizzatore risultati test prestazioni Web utilizzando gli spazi dei nomi seguenti:
+È possibile estendere l'interfaccia utente per il **Visualizzatore risultati test prestazioni Web** usando gli spazi dei nomi seguenti:
 
 -   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
@@ -28,7 +28,7 @@ ms.locfileid: "34751676"
 
 Inoltre, è necessario aggiungere un riferimento alla DLL LoadTestPackage disponibile nella cartella *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
--   Per estendere l'interfaccia utente del Visualizzatore risultati test prestazioni Web, è necessario creare un controllo utente e un componente aggiuntivo per Visual Studio. Nelle procedure seguenti viene illustrato come creare il componente aggiuntivo e il controllo utente nonché come implementare le classi necessarie per estendere l'interfaccia utente del Visualizzatore risultati test prestazioni Web.
+-   Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**, è necessario creare un controllo utente e un componente aggiuntivo per Visual Studio. Nelle procedure seguenti viene illustrato come creare il componente aggiuntivo e il controllo utente nonché come implementare le classi necessarie per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**.
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Creare o aprire una soluzione contenente un'applicazione Web ASP.NET ed un progetto di test di carico e prestazioni Web
 
@@ -216,7 +216,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
     using WebPerfTestResultsViewerControl;
     ```
 
-14. Scorrere fino alla fine del file Connect.cs. È necessario aggiungere un elenco di GUID per l'oggetto <xref:System.Windows.Forms.UserControl> nel caso siano aperte più istanze del Visualizzatore risultati test prestazioni Web. Il codice utilizzato da questo elenco verrà aggiunto in un secondo momento.
+14. Scorrere fino alla fine del file Connect.cs. È necessario aggiungere un elenco di GUID per l'oggetto <xref:System.Windows.Forms.UserControl> nel caso siano aperte più istanze del **Visualizzatore risultati test prestazioni Web**. Il codice utilizzato da questo elenco verrà aggiunto in un secondo momento.
 
      Un secondo elenco di stringhe viene utilizzato nel metodo OnDiscconection che verrà codificato in un secondo momento.
 
@@ -227,7 +227,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. Il file Connect.cs consente di creare un'istanza di una classe denominata Connect dalla classe <xref:Extensibility.IDTExtensibility2> e di includere anche alcuni metodi per l'implementazione del componente aggiuntivo per Visual Studio. Uno dei metodi è OnConnection a cui viene notificato il caricamento del componente aggiuntivo. Nel metodo OnConnection verrà utilizzata la classe LoadTestPackageExt per creare il pacchetto di estendibilità per il Visualizzatore risultati test prestazioni Web. Aggiungere al metodo OnConnection il codice seguente:
+15. Il file Connect.cs consente di creare un'istanza di una classe denominata Connect dalla classe <xref:Extensibility.IDTExtensibility2> e di includere anche alcuni metodi per l'implementazione del componente aggiuntivo per Visual Studio. Uno dei metodi è OnConnection a cui viene notificato il caricamento del componente aggiuntivo. Nel metodo OnConnection verrà usata la classe LoadTestPackageExt per creare il pacchetto di estendibilità per il **Visualizzatore risultati test prestazioni Web**. Aggiungere al metodo OnConnection il codice seguente:
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -283,7 +283,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 2.  Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione**, selezionare **.NET Framework 4** e chiudere Proprietà.
 
-     Questa operazione è necessaria per supportare i riferimenti DLL necessari per l'estensione del Visualizzatore risultati test prestazioni Web.
+     Questa operazione è necessaria per supportare i riferimenti DLL necessari per l'estensione del **Visualizzatore risultati test prestazioni Web**.
 
 3.  In Esplora soluzioni, nel progetto WebPerfTestResultsViewerControl fare clic con il pulsante destro del mouse sul nodo **Riferimenti** e selezionare **Aggiungi riferimento**.
 
@@ -347,7 +347,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Per eseguire il nuovo componente aggiuntivo per Visual Studio per il Visualizzatore risultati test prestazioni Web
 
-1.  Eseguire il test delle prestazioni Web. Nel Visualizzatore risultati test prestazioni Web verrà visualizzata la nuova scheda del componente aggiuntivo WebPerfTestResultsViewerAddin, denominata Esempio.
+1.  Eseguire il test delle prestazioni Web. Nel **Visualizzatore risultati test prestazioni Web** verrà visualizzata la nuova scheda del componente aggiuntivo WebPerfTestResultsViewerAddin, denominata Esempio.
 
 2.  Scegliere la scheda per visualizzare le proprietà presentate nell'oggetto DataGridView.
 

@@ -5,7 +5,7 @@ ms.topic: conceptual
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
-- Web performance tests, creating custom validation rules
+- web performance tests, creating custom validation rules
 - rules, validation
 - validation rules
 ms.assetid: 989124bc-1a86-41f7-b37d-8f9e54dd4f0b
@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 99ed1a6db16b8e1fb765898c976b962bfe43f041
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971397"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178202"
 ---
-# <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Codifica di una regola di convalida personalizzata per un test delle prestazioni Web
+# <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificare una regola di convalida personalizzata per un test delle prestazioni Web
 
 È possibile creare proprie regole di convalida. A tale scopo, è necessario derivare una classe di regola da una classe di regola di convalida. Le regole di convalida derivano dalla classe di base <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>.
 
@@ -33,7 +33,7 @@ ms.locfileid: "31971397"
 
 ## <a name="to-create-custom-validation-rules"></a>Per creare regole di convalida personalizzate
 
-1.  Aprire un progetto di test contenente un test Web.
+1.  Aprire un progetto di test contenente un test delle prestazioni Web.
 
 2.  (Facoltativo) Creare un progetto Libreria di classi distinto in cui archiviare la regola di convalida.
 
@@ -54,7 +54,7 @@ ms.locfileid: "31971397"
 
      Verrà visualizzata la finestra di dialogo **Aggiungi regola di convalida**. La regola di convalida personalizzata sarà disponibile nell'elenco **Selezionare una regola**, insieme alle regole di convalida predefinite. Selezionare la regola di convalida personalizzata, quindi scegliere **OK**.
 
-9. Eseguire il test Web.
+9. Eseguire il test delle prestazioni Web.
 
 ## <a name="example"></a>Esempio
 

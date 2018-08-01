@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751605"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176141"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurare le iterazioni di test in uno scenario di test di carico
 
-Per configurare le impostazioni delle iterazioni del test, modificare uno scenario di test di carico usando l'Editor test di carico e la finestra Proprietà. Per impostazione predefinita, un scenario di test di carico viene configurato senza specificare il numero massimo di iterazioni. Si ha l'opzione di configurare il numero massimo di iterazioni nello scenario e l'intervallo tra un'iterazione e l'altra.
+Per configurare le impostazioni delle iterazioni di test, modificare uno scenario di test di carico usando l'Editor test di carico e la finestra **Proprietà**. Per impostazione predefinita, un scenario di test di carico viene configurato senza specificare il numero massimo di iterazioni. Si ha l'opzione di configurare il numero massimo di iterazioni nello scenario e l'intervallo tra un'iterazione e l'altra.
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Specificare il numero massimo di iterazioni di test per uno scenario
 
-È possibile specificare il numero massimo di volte che si vuole eseguire i test per uno scenario usando l'Editor test di carico per modificare la proprietà **Numero massimo di iterazioni test** nella finestra Proprietà.
+È possibile specificare il numero massimo di volte che si vuole eseguire i test per uno scenario usando l'Editor test di carico per modificare la proprietà **Numero massimo di iterazioni test** nella finestra **Proprietà**.
 
 La proprietà **Numero massimo di iterazioni test** controlla il numero massimo di iterazioni di test da eseguire per lo scenario. Analogamente alla proprietà **Iterazioni test** nelle impostazioni di esecuzione del test di carico, si tratta del numero massimo per tutti gli utenti in tutti gli agenti, non di un'impostazione per utente.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà di scenari dei test di carico e delle relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà degli scenari di test di carico e le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
  Per una combinazione di test sequenziale, un'iterazione è un passaggio in tutti i test nella combinazione. Per tutte le altre combinazioni di test, ogni esecuzione del test rappresenta un'iterazione. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Se il test di carico è basato sulla durata e tale durata scade prima del completamento del conteggio delle iterazioni, il test si arresterà. Se il test è basato sull'iterazione e le iterazioni di test vengono soddisfatte prima di quelle dello scenario, il test si arresterà. La durata viene configurata tramite la proprietà **Durata esecuzione** nella finestra Proprietà associata a un'impostazione di esecuzione in un test di carico.
+ Se il test di carico è basato sulla durata e tale durata scade prima del completamento del conteggio delle iterazioni, il test si arresterà. Se il test è basato sull'iterazione e le iterazioni di test vengono soddisfatte prima di quelle dello scenario, il test si arresterà. La durata viene configurata usando la proprietà **Durata esecuzione** nella finestra **Proprietà** associata a un'impostazione di esecuzione in un test di carico.
 
  Quando viene soddisfatto il conteggio delle iterazioni dello scenario, l'esecuzione dello scenario verrà arrestata ma qualsiasi altro scenario attivo continuerà a essere eseguito.
 
@@ -55,7 +55,7 @@ La proprietà **Numero massimo di iterazioni test** controlla il numero massimo 
 
 4. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-     Le categorie e le proprietà dello scenario verranno visualizzate nella finestra Proprietà.
+     Le categorie e le proprietà dello scenario vengono visualizzate nella finestra **Proprietà**.
 
 5. Nella casella di testo per la proprietà **Numero massimo di iterazioni test** digitare un valore che indica il numero massimo di test da eseguire per lo scenario quando viene eseguito il test di carico.
 
@@ -64,14 +64,14 @@ La proprietà **Numero massimo di iterazioni test** controlla il numero massimo 
 
 6. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Numero massimo di iterazioni test**.
 
-## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Specificare il tempo di interazione utente tra iterazioni di test in uno scenario
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Specificare il tempo di interazione utente tra iterazioni di test per uno scenario
 
-La proprietà **Tempo interazione utente tra due iterazioni test** viene impostata usando la finestra Proprietà durante la modifica delle proprietà dello scenario del test di carico nell'Editor test di carico.
+La proprietà **Tempo interazione utente tra due iterazioni test** viene impostata usando la finestra **Proprietà** durante la modifica delle proprietà dello scenario di test di carico nell'Editor test di carico.
 
 La proprietà **Tempo interazione utente tra due iterazioni test** viene usata per specificare il numero di secondi di attesa prima di avviare un'iterazione test.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà relative agli scenari dei test di carico e delle relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà relative agli scenari di test di carico e delle relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
 ### <a name="to-specify-the-think-time-between-test-iterations"></a>Per specificare il tempo di interazione utente tra iterazioni di test
 
@@ -83,7 +83,7 @@ La proprietà **Tempo interazione utente tra due iterazioni test** viene usata p
 
 3. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-     Le categorie e le proprietà dello scenario verranno visualizzate nella finestra Proprietà.
+     Le categorie e le proprietà dello scenario vengono visualizzate nella finestra **Proprietà**.
 
 4. Per il valore della proprietà **Tempo interazione utente tra due iterazioni test**, immettere un numero che rappresenta il numero di secondi di attesa prima di avviare l'iterazione test successiva.
 
@@ -91,7 +91,7 @@ La proprietà **Tempo interazione utente tra due iterazioni test** viene usata p
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
+- [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Configurare agenti di test e test controller per i test di carico](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)
-- [Modifica dei tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md)
+- [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md)
