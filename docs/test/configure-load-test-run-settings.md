@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a3ff542ebb40ecd10a92db81b985a9ded461fa7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179034"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382422"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurare le impostazioni esecuzione test di carico
 
@@ -33,7 +33,7 @@ L'impostazione esecuzione test iniziale viene creata quando si crea un test di c
 |-----------|-----------------------|
 |**Aggiungere altre impostazioni esecuzione test al test di carico:** oltre all'impostazione esecuzione test creata al momento dell'esecuzione della **Creazione guidata test di carico**, è possibile aggiungere altre impostazioni esecuzione al test di carico per poter eseguire il test in condizioni diverse.|-   [Procedura: Aggiungere altre impostazioni esecuzione test a un test di carico](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Specificare l'impostazione esecuzione test attiva da usare con il test di carico:** è possibile selezionare l'impostazione esecuzione test che si vuole usare con il test di carico tramite l'Editor test di carico. L'impostazione esecuzione test attiva è identificata dal suffisso "[Active]".|-   [Procedura: Selezionare l'impostazione esecuzione test attiva per un test di carico](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**Modificare le proprietà delle impostazioni esecuzione test:** è possibile modificare le proprietà delle impostazioni esecuzione test, quali le opzioni di registrazione (vedere più avanti), la determinazione della durata del test, la durata del riscaldamento, il numero massimo di dettagli degli errori riportati, la frequenza di campionamento, il modello di connessione (solo test delle prestazioni Web), il tipo di archiviazione dei risultati, il livello di convalida e la traccia SQL. Le impostazioni di esecuzione devono riflettere gli obiettivi del test di carico.|-   [Proprietà delle impostazioni di esecuzione del test di carico](../test/load-test-run-settings-properties.md)<br />-   [Modifica delle proprietà delle impostazioni di esecuzione](../test/load-test-run-settings-properties.md#LoadTestRunSettingsHowToChange)|
+|**Modificare le proprietà delle impostazioni esecuzione test:** è possibile modificare le proprietà delle impostazioni esecuzione test, quali le opzioni di registrazione (vedere più avanti), la determinazione della durata del test, la durata del riscaldamento, il numero massimo di dettagli degli errori riportati, la frequenza di campionamento, il modello di connessione (solo test delle prestazioni Web), il tipo di archiviazione dei risultati, il livello di convalida e la traccia SQL. Le impostazioni di esecuzione devono riflettere gli obiettivi del test di carico.|-   [Proprietà delle impostazioni di esecuzione del test di carico](../test/load-test-run-settings-properties.md)<br />-   [Modifica delle proprietà delle impostazioni di esecuzione](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**Specificare il conteggio di iterazioni test nelle impostazioni esecuzione test di carico:** è possibile specificare il numero di esecuzioni di tutti i test delle prestazioni Web e degli unit test in tutti gli scenari dei test di carico configurando la proprietà **Iterazioni test**.|-   [Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Specificare la frequenza di campionamento per un'impostazione esecuzione test di carico:** è possibile specificare la frequenza con cui tramite il test di carico vengono raccolti i dati del contatore delle prestazioni configurando la proprietà **Frequenza campionamento**.|-   [Procedura: Specificare la frequenza di campionamento](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Specificare l'opzione relativa all'intervallo archiviazione dettagli:** è possibile specificare la modalità con cui salvare i dettagli del test di carico configurando la proprietà **Intervallo archiviazione dettagli**.|-   [Procedura: Specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
