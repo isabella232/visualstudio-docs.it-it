@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056802"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468530"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: debug di un Windows Form
 Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di Windows consente di creare un'applicazione di Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, c# o C++.  
@@ -51,27 +51,25 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
   
 2.  Nel riquadro di tipi di progetto, aprire il **Visual Basic**, **Visual c#**, o **Visual C++** nodo, quindi  
   
-    1.  Per Visual Basic o Visual c#, selezionare la **Windows** nodo, quindi selezionare **applicazione di Windows Form** nel **modelli** riquadro.  
+    1.  Per Visual Basic o Visual c#, selezionare **Desktop di Windows** > **App di Windows Form**.  
   
-    2.  Per Visual C++, selezionare la **CLR** nodo, quindi selezionare **applicazione di Windows Form** nel **modelli** riquadro...  
+    2.  Per Visual C++, selezionare **alle applicazioni Desktop Windows**.  
   
-3.  Nel **modelli** riquadro, selezionare **applicazioni Windows**.  
+3.  Nel **nome** casella, assegnare al progetto un nome univoco, ad esempio, Procedura_DebugSemplice.  
   
-4.  Nel **nome** casella, assegnare al progetto un nome univoco, ad esempio, Procedura_DebugSemplice.  
-  
-5.  Fare clic su **OK**.  
+4.  Fare clic su **OK**.  
   
      Visual Studio crea un nuovo progetto e visualizza un nuovo form nella finestra di progettazione Windows Form. Per altre informazioni, vedere [finestra di progettazione Windows Form](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
-6.  Nel **View** dal menu **della casella degli strumenti**.  
+5.  Nel **View** dal menu **della casella degli strumenti**.  
   
      Verrà visualizzata la casella degli strumenti. Per altre informazioni, vedere [Casella degli strumenti](../ide/reference/toolbox.md).  
   
-7.  Nella casella degli strumenti, fare clic sui **pulsante** controllo e trascinare il controllo all'area di progettazione Form. Rilasciare il pulsante sul form.  
+6.  Nella casella degli strumenti, fare clic sui **pulsante** controllo e trascinare il controllo all'area di progettazione Form. Rilasciare il pulsante sul form.  
   
-8.  Nella casella degli strumenti, fare clic sui **casella di testo** controllo e trascinare il controllo all'area di progettazione Form. Eliminare il **casella di testo** nel form.  
+7.  Nella casella degli strumenti, fare clic sui **casella di testo** controllo e trascinare il controllo all'area di progettazione Form. Eliminare il **casella di testo** nel form.  
   
-9. Nell'area di progettazione di form, fare doppio clic sul pulsante.  
+8. Nell'area di progettazione di form, fare doppio clic sul pulsante.  
   
      Verrà visualizzata la tabella codici. Il cursore deve trovarsi in `button1_Click`.  
   

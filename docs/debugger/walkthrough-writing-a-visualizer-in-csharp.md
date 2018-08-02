@@ -1,7 +1,7 @@
 ---
-title: 'Procedura dettagliata: Scrittura di un visualizzatore in c# | Documenti Microsoft'
+title: 'Procedura dettagliata: Scrittura di un visualizzatore in c# | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 490c2c2b15eff701cee751b57bbf55024910beab
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 12a2f16fcf96861df5f3c86f8fe44cb475b9ff23
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479838"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468494"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C# #
-Questa procedura dettagliata viene illustrato come scrivere un visualizzatore semplice usando c#. Il visualizzatore che si creerà in questa procedura dettagliata consente di visualizzare il contenuto di una stringa utilizzando una finestra di messaggio Windows Form. Questo visualizzatore semplice di stringhe non è particolarmente utile in sé, ma mostra i passaggi di base che è necessario seguire per creare più utili visualizzatori per altri tipi di dati.  
+Questa procedura dettagliata illustra come scrivere un visualizzatore semplice usando c#. Il visualizzatore che verrà creato in questa procedura dettagliata consente di visualizzare il contenuto di una stringa usando una finestra di messaggio Windows Form. Questo visualizzatore semplice di stringhe non è particolarmente utile di per sé, ma mostra i passaggi di base che è necessario seguire per creare più utili visualizzatori per altri tipi di dati.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, utilizzare il **strumenti** menu e scegliere **Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, vedere il **strumenti** menu e scegliere **Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- Il codice del visualizzatore deve trovarsi in una DLL, che verrà letti dal debugger. Di conseguenza, il primo passaggio consiste nel creare un progetto libreria di classi per la DLL.  
+ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta dal debugger. Pertanto, il primo passaggio consiste nel creare un progetto libreria di classi per la DLL.  
 
 ## <a name="create-a-visualizer-manually"></a>Creare manualmente un visualizzatore
 
@@ -38,7 +38,7 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 1.  Nel **File** menu, scegliere **nuovo > progetto**.  
   
-2.  Nel **nuovo progetto** nella finestra di dialogo **Visual c#** selezionare **.NET Standard**.  
+2.  Nel **nuovo progetto** nella finestra di dialogo **Visual c#**, quindi selezionare **.NET Standard**.  
   
 3.  Nel riquadro centrale, scegliere **libreria di classi**.  
   
@@ -46,20 +46,20 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 5.  Fare clic su **OK**.  
   
- Dopo aver creato la libreria di classi, è necessario aggiungere un riferimento a Microsoft.VisualStudio.DebuggerVisualizers.DLL in modo da poter utilizzare le classi definite in. Prima di aggiungere il riferimento, tuttavia, è necessario rinominare alcune classi in modo che abbiano nomi significativi.  
+ Dopo aver creato la libreria di classi, è necessario aggiungere un riferimento a DebuggerVisualizers in modo che è possibile usare le classi definite non esiste. Prima di aggiungere il riferimento, tuttavia, è necessario rinominare alcune classi in modo che abbiano nomi significativi.  
   
-#### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>Per rinominare Class1. cs e aggiungere DebuggerVisualizers  
+#### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>Per rinominare Class1.cs e aggiungere DebuggerVisualizers  
   
-1.  In **Esplora**, fare doppio clic su Class1. cs e scegliere **rinominare** nel menu di scelta rapida.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su Class1.cs e scegliere **rinominare** menu di scelta rapida.  
   
-2.  Modificare il nome Class1. cs in un nome significativo, ad esempio DebuggerSide.cs.  
+2.  Modificare il nome da Class1.cs in modo significativo, ad esempio DebuggerSide.cs.  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la dichiarazione di classe in base al nome del nuovo file DebuggerSide.cs modificata automaticamente.  
   
-3.  In **Esplora**, fare doppio clic su **riferimenti** e scegliere **Aggiungi riferimento** nel menu di scelta rapida.  
+3.  Nelle **Esplora soluzioni**, fare doppio clic su **riferimenti** e scegliere **Aggiungi riferimento** menu di scelta rapida.  
   
-4.  Nel **Aggiungi riferimento** della finestra di dialogo di **.NET** scegliere Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
+4.  Nel **Aggiungi riferimento** finestra di dialogo il **.NET** scheda DebuggerVisualizers.  
   
 5.  Fare clic su **OK**.  
   
@@ -69,11 +69,11 @@ Eseguire le attività seguenti per creare un visualizzatore.
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
- A questo punto si è pronti per creare il codice del lato debugger. Questo codice verrà eseguito all'interno del debugger per visualizzare le informazioni desiderate. Innanzitutto, è necessario modificare la dichiarazione del `DebuggerSide` in modo che eredita dalla classe di base dell'oggetto `DialogDebuggerVisualizer`.  
+ A questo punto si è pronti per creare il codice del lato debugger. Questo codice verrà eseguito all'interno del debugger per visualizzare le informazioni desiderate. In primo luogo, è necessario modificare la dichiarazione del `DebuggerSide` in modo che eredita dalla classe di base dell'oggetto `DialogDebuggerVisualizer`.  
   
 #### <a name="to-inherit-from-dialogdebuggervisualizer"></a>Per ereditare da DialogDebuggerVisualizer  
   
-1.  In DebuggerSide.cs, passare alla riga di codice seguente:  
+1.  In DebuggerSide.cs Vai alla riga di codice seguente:  
   
     ```csharp  
     public class DebuggerSide  
@@ -85,11 +85,11 @@ Eseguire le attività seguenti per creare un visualizzatore.
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
- `DialogDebuggerVisualizer` ha un metodo astratto (`Show`) che è necessario eseguire l'override.  
+ `DialogDebuggerVisualizer` dispone di un metodo astratto (`Show`) che è necessario eseguire l'override.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Per eseguire l'override del metodo DialogDebuggerVisualizer.Show  
   
--   In `public class DebuggerSide`, aggiungere il seguente **metodo:**  
+-   Nelle `public class DebuggerSide`, aggiungere il codice seguente **metodo:**  
   
     ```csharp  
     protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
@@ -97,13 +97,13 @@ Eseguire le attività seguenti per creare un visualizzatore.
     }  
     ```  
   
- Il `Show` metodo contiene il codice per la creazione della finestra di dialogo o un'altra interfaccia utente e visualizza le informazioni che sono state passate al visualizzatore dal debugger. Questo codice deve essere aggiunto dallo sviluppatore. In questa procedura dettagliata, si eseguirà questo utilizzando una finestra di messaggio Windows Form. In primo luogo, è necessario aggiungere un riferimento e `using` istruzione per Forms.  
+ Il `Show` metodo contiene il codice che effettivamente crea la finestra di dialogo Visualizzatore o un'altra interfaccia utente e visualizza le informazioni che sono state passate al visualizzatore dal debugger. Questo codice deve essere aggiunto dallo sviluppatore. In questa procedura dettagliata, si eseguirà questo usando una finestra di messaggio Windows Form. In primo luogo, è necessario aggiungere un riferimento e `using` informativa per System.  
   
 #### <a name="to-add-systemwindowsforms"></a>Per aggiungere System.Windows.Forms  
   
-1.  In **Esplora**, fare doppio clic su **riferimenti** e scegliere **Aggiungi riferimento** nel menu di scelta rapida.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su **riferimenti** e scegliere **Aggiungi riferimento** menu di scelta rapida.  
   
-2.  Nel **Aggiungi riferimento** della finestra di dialogo di **.NET** scheda, scegliere System.  
+2.  Nel **Aggiungi riferimento** finestra di dialogo il **.NET** scheda, scegliere Forms.  
   
 3.  Fare clic su **OK**.  
   
@@ -113,7 +113,7 @@ Eseguire le attività seguenti per creare un visualizzatore.
     using System.Windows.Forms;  
     ```  
   
- A questo punto, si aggiungerà codice per creare e visualizzare l'interfaccia utente del visualizzatore. Poiché si tratta del primo visualizzatore creato, si manterrà l'interfaccia utente semplice e utilizzare una finestra di messaggio.  
+ A questo punto, si aggiungerà codice per creare e visualizzare l'interfaccia utente del visualizzatore. Poiché si tratta del primo visualizzatore creato, verranno mantenere semplice l'interfaccia utente e usare una finestra di messaggio.  
   
 #### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Per visualizzare l'Output del visualizzatore in una finestra di dialogo  
   
@@ -125,13 +125,13 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
      Questo codice di esempio non include la gestione degli errori. È necessario includere in un vero visualizzatore o qualsiasi altro tipo di applicazione di gestione degli errori.  
   
-2.  Nel **compilare** menu, scegliere **Compila MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
+2.  Nel **compilare** menu, scegliere **compilare MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
   
- Che corrisponde alla fine del codice sul lato debugger. È un altro passaggio, tuttavia; l'attributo che indica il lato oggetto del debug la raccolta di classi che comprende il visualizzatore.  
+ Che rappresenta la fine del codice sul lato debugger. C'è un altro passaggio, tuttavia; l'attributo che indica il lato oggetto del debug la raccolta di classi che comprende il visualizzatore.  
   
 #### <a name="to-add-the-debuggee-side-code"></a>Per aggiungere il codice del lato oggetto del debug  
   
-1.  Aggiungere il seguente codice di attributo a DebuggerSide.cs, dopo il `using` istruzioni ma prima che `namespace MyFirstVisualizer`:  
+1.  Aggiungere il seguente codice di attributo per DebuggerSide.cs dopo il `using` istruzioni ma prima `namespace MyFirstVisualizer`:  
   
     ```csharp  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
@@ -141,11 +141,11 @@ Eseguire le attività seguenti per creare un visualizzatore.
     Description = "My First Visualizer")]  
     ```  
   
-2.  Nel **compilare** menu, scegliere **Compila MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
+2.  Nel **compilare** menu, scegliere **compilare MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
   
  A questo punto il visualizzatore è pronto. Se la procedura è stata completata in modo corretto, è possibile compilare il visualizzatore e installarlo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Prima di installare un visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è tuttavia consigliabile testarlo per assicurarsi che funzioni in modo corretto. Di seguito viene descritto come creare un test harness per eseguire il visualizzatore senza installarlo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-#### <a name="to-add-a-test-method-to-show-the-visualizer"></a>Per aggiungere un metodo di Test per mostrare il Visualizzatore  
+#### <a name="to-add-a-test-method-to-show-the-visualizer"></a>Per aggiungere un metodo di Test per visualizzare il Visualizzatore  
   
 1.  Aggiungere il metodo seguente alla classe `public DebuggerSide`:  
   
@@ -157,17 +157,17 @@ Eseguire le attività seguenti per creare un visualizzatore.
     }  
     ```  
   
-2.  Nel **compilare** menu, scegliere **Compila MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
+2.  Nel **compilare** menu, scegliere **compilare MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
   
- Creare quindi un progetto eseguibile per chiamare la DLL del visualizzatore. Per semplicità, si utilizzerà un progetto applicazione Console.  
+ Creare quindi un progetto eseguibile per chiamare la DLL del visualizzatore. Per semplicità, si userà un progetto applicazione Console.  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>Per aggiungere un progetto applicazione console alla soluzione  
   
-1.  Nel **File** menu, scegliere **Aggiungi** e quindi fare clic su **nuovo progetto**.  
+1.  Nel **File** menu, scegliere **Add** e quindi fare clic su **nuovo progetto**.  
   
-2.  Nel **Aggiungi nuovo progetto** della finestra di dialogo di **modelli** scegliere **applicazione Console**.  
+2.  Nel **Aggiungi nuovo progetto** finestra di dialogo scegliere **Visual c#** > **Desktop di Windows**, quindi scegliere **applicazione Console**.  
   
-3.  Nel **nome** , digitare un nome significativo per l'applicazione console, ad esempio `MyTestConsole`.  
+3.  Nel **Name** , digitare un nome significativo per l'applicazione console, ad esempio `MyTestConsole`.  
   
 4.  Fare clic su **OK**.  
   
@@ -175,15 +175,15 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Per aggiungere riferimenti necessari a MyTestConsole  
   
-1.  In **Esplora**, fare doppio clic su **MyTestConsole** e scegliere **Aggiungi riferimento** nel menu di scelta rapida.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su **MyTestConsole** e scegliere **Aggiungi riferimento** menu di scelta rapida.  
   
-2.  Nel **Aggiungi riferimento** nella finestra di dialogo **.NET** scegliere Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
+2.  Nel **Aggiungi riferimento** della finestra di dialogo **.NET** scheda DebuggerVisualizers.  
   
 3.  Fare clic su **OK**.  
   
 4.  Fare doppio clic su **MyTestConsole** e scegliere **Aggiungi riferimento** nuovamente.  
   
-5.  Nel **Aggiungi riferimento** la finestra di dialogo, fare clic su di **progetti** scheda e quindi selezionare MyFirstVisualizer.  
+5.  Nel **Aggiungi riferimento** della finestra di dialogo fare clic sui **progetti** scheda e quindi fare clic su MyFirstVisualizer.  
   
 6.  Fare clic su **OK**.  
   
@@ -191,13 +191,13 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 #### <a name="to-add-code-to-mytestconsole"></a>Per aggiungere codice a MyTestConsole  
   
-1.  In **Esplora**, Program.cs e **rinominare** nel menu di scelta rapida.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su Program.cs e scegliere **rinominare** menu di scelta rapida.  
   
-2.  Modificare il nome di Program.cs con nomi più significativi, ad esempio TestConsole.cs.  
+2.  Modificare il nome di Program.cs in modo più significativo, ad esempio TestConsole.cs.  
   
      **Nota** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la dichiarazione di classe in base al nome del nuovo file TestConsole.cs modificata automaticamente.  
   
-3.  In TestConsole.cs aggiungere il codice seguente per il `using` istruzioni:  
+3.  In base TestConsole.cs, aggiungere il codice seguente per il `using` istruzioni:  
   
     ```csharp  
     using MyFirstVisualizer;  
@@ -210,30 +210,30 @@ Eseguire le attività seguenti per creare un visualizzatore.
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
- A questo punto, si è pronti per il test del visualizzatore.  
+ A questo punto, si è pronti per eseguire il test del visualizzatore.  
   
 #### <a name="to-test-the-visualizer"></a>Per eseguire il test del visualizzatore  
   
-1.  In **Esplora**, fare doppio clic su **MyTestConsole** e scegliere **imposta come progetto di avvio** nel menu di scelta rapida.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su **MyTestConsole** e scegliere **imposta come progetto di avvio** menu di scelta rapida.  
   
 2.  Nel **Debug** menu, scegliere **avviare**.  
   
-     Avvio dell'applicazione console e il visualizzatore viene visualizzata e consente di visualizzare la stringa "Hello, World".  
+     Avvio dell'applicazione console e viene visualizzato il visualizzatore con la stringa "Hello, World".  
   
  Il visualizzatore è stato compilato e sottoposto a test.  
   
- Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per ulteriori informazioni, vedere [procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).  
+ Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per altre informazioni, vedere [procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).  
   
-## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Creare un visualizzatore utilizzando il modello di elemento di Visualizzatore  
- Finora, questa procedura dettagliata è stato illustrato come creare manualmente un visualizzatore. A scopo di apprendimento. Ora che si conosce il funzionamento di un visualizzatore semplice, è un modo più semplice per creare uno: utilizzando il modello di elemento.  
+## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Creare un visualizzatore usando il modello di elemento  
+ Finora, questa procedura dettagliata è stato illustrato come creare manualmente un visualizzatore. Questa operazione è stata eseguita come un esercizio di apprendimento. Dopo avere appreso come funziona un visualizzatore semplice, vi è un modo più semplice per crearne uno: usando il modello di elemento.  
   
- In primo luogo, è necessario creare un nuovo progetto libreria di classi.  
+ In primo luogo, è necessario creare un nuovo progetto di libreria di classi.  
   
 #### <a name="to-create-a-new-class-library"></a>Per creare una nuova libreria di classi  
   
 1.  Nel **File** menu, scegliere **nuovo > progetto**.  
   
-2.  Nel **nuovo progetto** nella finestra di dialogo **Visual c#** selezionare **.NET Standard**.  
+2.  Nel **nuovo progetto** nella finestra di dialogo **Visual c#**, selezionare **.NET Standard**.  
   
 3.  Nel riquadro centrale, scegliere **libreria di classi**.   
   
@@ -241,21 +241,21 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 5.  Fare clic su **OK**.  
   
- A questo punto, è possibile aggiungere un elemento visualizzatore a esso:  
+ A questo punto, è possibile aggiungere un elemento del visualizzatore a esso:  
   
-#### <a name="to-add-a-visualizer-item"></a>Per aggiungere una voce del Visualizzatore  
+#### <a name="to-add-a-visualizer-item"></a>Per aggiungere un elemento del Visualizzatore  
   
-1.  In **Esplora**, fare doppio clic su MySecondVisualizer.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su MySecondVisualizer.  
   
-2.  Nel menu di scelta rapida scegliere **Aggiungi** e quindi fare clic su **nuovo elemento**.  
+2.  Nel menu di scelta rapida, scegliere **Add** e quindi fare clic su **nuovo elemento**.  
   
-3.  Nel **Aggiungi nuovo elemento** nella finestra di dialogo **elementi di Visual c#** selezionare **visualizzatore del Debugger**.  
+3.  Nel **Aggiungi nuovo elemento** nella finestra di dialogo **elementi di Visual c#**, selezionare **visualizzatore del Debugger**.  
   
 4.  Nel **nome** , digitare un nome appropriato, ad esempio SecondVisualizer.cs.  
   
 5.  Fare clic su **Aggiungi**.  
   
- Che è tutto a esso. Esaminare il file SecondVisualizer.cs e visualizzare il codice che il modello aggiunto automaticamente. Proseguo e provare con il codice. Ora che si conoscono i concetti di base, si utilizza la modalità di creazione di visualizzatori personalizzati più complessi e utili.  
+ Che è tutto qui. Esaminare il file SecondVisualizer.cs e visualizzare il codice che il modello aggiunto automaticamente. Proseguo e provare a usare il codice. Dopo avere appreso le nozioni di base, è pronti per la creazione di visualizzatori personalizzati più complessi e utili.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)   
