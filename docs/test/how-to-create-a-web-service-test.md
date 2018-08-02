@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180074"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380668"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Procedura: creare un test di servizio Web
+# <a name="how-to-create-a-web-service-test"></a>Procedura: Creare un test di servizio Web
 
 I test web consentono di testare i servizi web. Tramite le opzioni **Inserisci richiesta** e **Inserisci richiesta servizio Web** è possibile personalizzare le singole richieste nell'**Editor test prestazioni Web** in modo da individuare le pagine di servizi Web. Solitamente queste pagine non vengono visualizzate nell'applicazione Web. Pertanto, per poter accedere alle pagine è necessario personalizzare la richiesta.
 
-Nelle procedure seguenti si usa un servizio Web contenuto nel Commerce Starter Kit. È possibile scaricarlo da [CASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
+Nelle procedure seguenti si usa un servizio Web contenuto nel Commerce Starter Kit. È possibile scaricarlo da [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
  **Requisiti**
 
@@ -37,7 +37,7 @@ Nelle procedure seguenti si usa un servizio Web contenuto nel Commerce Starter K
 
 3.  Nella proprietà **Url** della nuova richiesta immettere il nome del servizio Web, ad esempio **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Aprire una sessione separata del browser, quindi digitare l'URL della pagina asmx nella barra degli strumenti **Indirizzi**. Selezionare il metodo da testare, quindi esaminare il messaggio SOAP. Esso contiene una `SOAPAction`.
+4.  Aprire una sessione separata del browser e digitare l'URL della pagina con estensione *asmx* sulla barra degli strumenti **Indirizzo**. Selezionare il metodo da testare, quindi esaminare il messaggio SOAP. Esso contiene una `SOAPAction`.
 
 5.  Nell'**Editor test prestazioni Web** fare clic con il pulsante destro del mouse sulla richiesta, quindi scegliere **Aggiungi intestazione** per aggiungere una nuova intestazione. Nella proprietà **Nome** digitare `SOAPAction`. Nella proprietà **Valore** digitare il valore contenuto in `SOAPAction`, ad esempio `"http://tempuri.org/CheckStatus"`.
 
@@ -60,7 +60,7 @@ Nelle procedure seguenti si usa un servizio Web contenuto nel Commerce Starter K
      </soap:Envelope>
      ```
 
-9. Tornare all'**Editor test prestazioni Web**, quindi scegliere i puntini di sospensione (…) nella proprietà **Corpo stringa**. Incollare il contenuto degli Appunti nella proprietà.
+9. Tornare all'**Editor test prestazioni Web** e quindi scegliere i puntini di sospensione **(…)** nella proprietà **Corpo stringa**. Incollare il contenuto degli Appunti nella proprietà.
 
 10. Sostituire i valori segnaposto con valori XML validi che consentiranno di superare il test. Nell'esempio precedente si devono sostituire le due istanze di `string` e la singola istanza di `int`. L'operazione del servizio Web potrà essere terminata solamente se un utente registrato ha effettuato un ordine.
 
