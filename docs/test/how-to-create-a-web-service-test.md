@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970704"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180074"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procedura: creare un test di servizio Web
 
-I test Web consentono di testare i servizi Web. Tramite le opzioni **Inserisci richiesta** e **Inserisci richiesta servizio Web** è possibile personalizzare le singole richieste nell'**Editor test prestazioni Web** in modo da individuare le pagine di servizi Web. Solitamente queste pagine non vengono visualizzate nell'applicazione Web. Pertanto, per poter accedere alle pagine è necessario personalizzare la richiesta.
+I test web consentono di testare i servizi web. Tramite le opzioni **Inserisci richiesta** e **Inserisci richiesta servizio Web** è possibile personalizzare le singole richieste nell'**Editor test prestazioni Web** in modo da individuare le pagine di servizi Web. Solitamente queste pagine non vengono visualizzate nell'applicazione Web. Pertanto, per poter accedere alle pagine è necessario personalizzare la richiesta.
 
 Nelle procedure seguenti si usa un servizio Web contenuto nel Commerce Starter Kit. È possibile scaricarlo da [CASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
@@ -71,7 +71,7 @@ Nelle procedure seguenti si usa un servizio Web contenuto nel Commerce Starter K
     > [!NOTE]
     > È possibile usare l'associazione dati nel corpo SOAP per sostituire i valori segnaposto con valori associati a dati mediante la sintassi `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Eseguire il test. Nel riquadro superiore del Visualizzatore risultati test prestazioni Web selezionare la richiesta di servizio Web. Nel riquadro inferiore selezionare la scheda Browser. Verranno visualizzati l'XML restituito dal servizio Web e i risultati di tutte le operazioni.
+13. Eseguire il test. Nel riquadro superiore del **Visualizzatore risultati test prestazioni web** selezionare la richiesta di servizio Web. Nel riquadro inferiore selezionare la scheda Web browser. Verranno visualizzati l'XML restituito dal servizio Web e i risultati di tutte le operazioni.
 
 ## <a name="see-also"></a>Vedere anche
 

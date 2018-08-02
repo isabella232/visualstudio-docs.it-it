@@ -21,6 +21,7 @@
 ## [Gestione dei riferimenti in un progetto](managing-references-in-a-project.md)
 ### [Procedura dettagliata per includere un pacchetto NuGet nel progetto](nuget-walkthrough.md)
 ## [Gestione delle risorse dell'app](managing-app-resources.md)
+## [Procedura: Aprire più soluzioni o istanze](open-multiple-solutions.md)
 
 # [Editor standard](source-editor.md)
 ## [Refactoring](refactoring.md)

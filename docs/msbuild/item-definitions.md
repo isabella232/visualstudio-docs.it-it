@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a6bd0c570fb34fc5e1db139ccfa8d0d5d02ea4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572504"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178562"
 ---
 # <a name="item-definitions"></a>Definizioni degli elementi
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 consente la dichiarazione statica di elementi nei file di progetto mediante l'elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). I metadati possono essere tuttavia aggiunti solo al livello dell'elemento, anche se sono identici per tutti gli elementi. A partire da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, è stato introdotto un elemento di progetto denominato [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) che consente di superare questa limitazione. *ItemDefinitionGroup* consente di definire un set di definizioni degli elementi che aggiungono i valori dei metadati predefiniti a tutti gli elementi del tipo di elemento denominato.  
@@ -60,7 +60,7 @@ ms.locfileid: "31572504"
  In questo esempio il metadato predefinito "m" viene applicato all'elemento "i" perché non è definito in modo esplicito dall'elemento "i". Al contrario, il metadato predefinito "n" non viene applicato all'elemento "i" perché è già definito dall'elemento "i".  
   
 > [!NOTE]
->  I nomi di parametri ed elementi XML prevedono la distinzione tra maiuscole e minuscole. I metadati degli elementi e i \/nomi di proprietà o elementi non prevedono tale distinzione. Di conseguenza, gli elementi ItemDefinitionGroup i cui nomi differiscono solo per l'uso di maiuscole o minuscole devono essere considerati come lo stesso ItemGroup.  
+>  I nomi di parametri ed elementi XML prevedono la distinzione tra maiuscole e minuscole. I metadati degli elementi e i nomi di proprietà o elementi non prevedono tale distinzione. Di conseguenza, gli elementi ItemDefinitionGroup i cui nomi differiscono solo per l'uso di maiuscole o minuscole devono essere considerati come lo stesso ItemGroup.  
   
 ## <a name="value-sources"></a>Origini dei valori  
  I valori per i metadati definiti in un ItemDefinitionGroup possono provenire da molte origini diverse, come indicato di seguito:  
@@ -73,7 +73,7 @@ ms.locfileid: "31572504"
   
 -   Variabile di ambiente  
   
--   Proprietà globale \(dalla riga di comando di MSBuild.exe\)  
+-   Proprietà globale (dalla riga di comando di *MSBuild.exe*)  
   
 -   Proprietà riservata  
   
@@ -91,7 +91,7 @@ ms.locfileid: "31572504"
   
 -   L'ultima specifica ha la precedenza.  
   
- In presenza di più ItemDefinitionGroup, ogni specifica successiva aggiunge i metadati alla definizione precedente. Ad esempio:  
+In presenza di più ItemDefinitionGroup, ogni specifica successiva aggiunge i metadati alla definizione precedente. Ad esempio:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -107,9 +107,9 @@ ms.locfileid: "31572504"
 </ItemDefinitionGroup>  
 ```  
   
- In questo esempio il metadato "o" viene aggiunto a "m" e "n".  
+In questo esempio il metadato "o" viene aggiunto a "m" e "n".  
   
- È anche possibile aggiungere i valori dei metadati definiti in precedenza. Ad esempio:  
+È anche possibile aggiungere i valori dei metadati definiti in precedenza. Ad esempio:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -124,12 +124,12 @@ ms.locfileid: "31572504"
 </ItemDefinitionGroup>    
 ```  
   
- In questo esempio il valore definito in precedenza per il metadato "m" \(m1\) viene aggiunto al nuovo valore \(m2\), in modo che il valore finale sia "m1;m2".  
+In questo esempio il valore definito in precedenza per il metadato "m" \(m1\) viene aggiunto al nuovo valore \(m2\), in modo che il valore finale sia "m1;m2".  
   
 > [!NOTE]
 >  Questo può verificarsi anche nello stesso ItemDefinitionGroup.  
   
- Quando si esegue l'override dei metadati definiti in precedenza, l'ultima specifica ha la precedenza. Nell'esempio seguente il valore finale del metadato "m" è compreso tra "m1" e "m1a".  
+Quando si esegue l'override dei metadati definiti in precedenza, l'ultima specifica ha la precedenza. Nell'esempio seguente il valore finale del metadato "m" è compreso tra "m1" e "m1a".  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -144,7 +144,7 @@ ms.locfileid: "31572504"
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Uso delle condizioni in un ItemDefinitionGroup  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Usare condizioni in un ItemDefinitionGroup  
  È possibile usare condizioni in un ItemDefinitionGroup per controllare l'inclusione dei metadati. Ad esempio:  
   
 ```xml  
@@ -155,12 +155,12 @@ ms.locfileid: "31572504"
 </ItemDefinitionGroup>  
 ```  
   
- In questo caso, il metadato predefinito "m1" dell'elemento "i" viene incluso solo se il valore della proprietà "Configuration" è "Debug".  
+In questo caso, il metadato predefinito "m1" dell'elemento "i" viene incluso solo se il valore della proprietà "Configuration" è "Debug".  
   
 > [!NOTE]
 >  Nelle condizioni sono supportati solo i riferimenti ai metadati locali.  
   
- I riferimenti ai metadati definiti in un ItemDefinitionGroup precedente sono locali per l'elemento, non per il gruppo di definizione. In altre parole, l'ambito dei riferimenti è specifico dell'elemento. Ad esempio:  
+I riferimenti ai metadati definiti in un ItemDefinitionGroup precedente sono locali per l'elemento, non per il gruppo di definizione. In altre parole, l'ambito dei riferimenti è specifico dell'elemento. Ad esempio:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -190,7 +190,7 @@ Nell'esempio precedente l'elemento "i" fa riferimento all'elemento "test" nella 
 
 Nell'esempio precedente "m" verrebbe impostato sul valore "m1" perché la condizione fa riferimento al valore del metadato dell'elemento "i" per l'elemento "yes". 
   
-## <a name="overriding-and-deleting-metadata"></a>Override ed eliminazione di metadati  
+## <a name="override-and-delete-metadata"></a>Eseguire l'override dei metadati ed eliminarli  
  È possibile eseguire l'override dei metadati definiti in un elemento ItemDefinitionGroup in un elemento ItemDefinitionGroup successivo lasciando vuoto il valore dei metadati. È anche possibile eliminare un elemento dei metadati impostandolo su un valore vuoto. Ad esempio:  
   
 ```xml  
@@ -206,7 +206,7 @@ Nell'esempio precedente "m" verrebbe impostato sul valore "m1" perché la condiz
 </ItemDefinitionGroup>  
 ```  
   
- L'elemento "i" contiene ancora il metadato "m", ma ora il valore è vuoto.  
+L'elemento "i" contiene ancora il metadato "m", ma ora il valore è vuoto.  
   
 ## <a name="scope-of-metadata"></a>Ambito dei metadati  
  Gli ItemDefinitionGroup hanno un ambito globale su proprietà definite e globali, ovunque siano definite. Le definizioni dei metadati predefiniti in un ItemDefinitionGroup possono essere autoreferenziali. Ad esempio, di seguito viene usato un riferimento ai metadati semplice:  
@@ -220,7 +220,7 @@ Nell'esempio precedente "m" verrebbe impostato sul valore "m1" perché la condiz
 </ItemDefinitionGroup>  
 ```  
   
- È possibile usare anche un riferimento ai metadati qualificato:  
+È possibile usare anche un riferimento ai metadati qualificato:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -231,7 +231,7 @@ Nell'esempio precedente "m" verrebbe impostato sul valore "m1" perché la condiz
 </ItemDefinitionGroup>  
 ```  
   
- Quanto segue, tuttavia, non è valido:  
+Quanto segue, tuttavia, non è valido:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -242,7 +242,7 @@ Nell'esempio precedente "m" verrebbe impostato sul valore "m1" perché la condiz
 </ItemDefinitionGroup>  
 ```  
   
- A partire da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, anche gli ItemGroup possono essere autoreferenziali. Ad esempio:  
+A partire da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, anche gli ItemGroup possono essere autoreferenziali. Ad esempio:  
   
 ```xml  
 <ItemGroup>  
