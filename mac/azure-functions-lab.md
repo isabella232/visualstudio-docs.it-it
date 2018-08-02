@@ -49,7 +49,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
      Sono presenti anche tre file:  
         - **host.json** per la descrizione delle opzioni di configurazione globali dell'host  
         - **local.settings.json** per la configurazione delle impostazioni del servizio.  
-        Il modello di progetto crea anche un HttpTrigger predefinito. Ai fini di questa esercitazione, eliminare il file **HttpTrigger.cs** dal progetto.  
+        - Il modello di progetto crea anche un HttpTrigger predefinito. Ai fini di questa esercitazione, eliminare il file **HttpTrigger.cs** dal progetto.  
 
     Aprire **local.settings.json**. Per impostazione predefinita il file include due impostazioni stringa di connessione vuote.
 
