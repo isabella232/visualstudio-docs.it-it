@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058698"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468764"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: scrittura di un visualizzatore in Visual Basic
 In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] per scrivere un visualizzatore semplice che consente di visualizzare il contenuto di una stringa in una finestra di messaggio di Windows Form. Questo visualizzatore semplice di stringhe è un esempio base per illustrare la creazione di visualizzatori per altri tipi di dati più applicabili ai progetti.  
@@ -39,9 +39,9 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 1.  Nel **File** menu, scegliere **New** e fare clic su **nuovo progetto**.  
   
-2.  Nel **nuovo progetto** nella finestra di dialogo **tipo di progetto**s, fare clic su **Visual Basic**.  
+2.  Nel **nuovo progetto** finestra di dialogo **Visual Basic**.  
   
-3.  Nel **modelli** fare clic su **libreria di classi**.  
+3.  Sotto **.NET Standard**, fare clic su **libreria di classi**.  
   
 4.  Nel **Name** , digitare un nome appropriato per la libreria di classi, ad esempio **MyFirstVisualizer**.  
   
@@ -166,7 +166,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 1.  Nel **File** menu, fare clic su **Add**e quindi fare clic su **nuovo progetto**.  
   
-2.  Nel **Aggiungi nuovo progetto** nella finestra di dialogo il **modelli** fare clic su **applicazione Console**.  
+2.  Nel **Aggiungi nuovo progetto** finestra di dialogo **Visual Basic**, quindi fare clic su **applicazione Console**.  
   
 3.  Nel **Name** , digitare un nome significativo per l'applicazione console, ad esempio **MyTestConsole**.  
   

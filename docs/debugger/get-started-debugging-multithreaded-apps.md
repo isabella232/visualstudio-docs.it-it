@@ -2,7 +2,7 @@
 title: Informazioni su come eseguire il debug di applicazioni multithreading
 description: Eseguire il debug usando le finestre Espressioni di controllo parallelo e stack in parallelo in Visual Studio
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204219"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468683"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Iniziare il debug di applicazioni multithreading in Visual Studio
 Visual Studio offre diversi strumenti e gli elementi dell'interfaccia utente per il debug di applicazioni multithreading. Questa esercitazione illustra come usare i marcatori dei thread, il **stack in parallelo** finestra, il **espressioni di controllo parallela** finestra punti di interruzione condizionali e i punti di interruzione di filtro. Questa esercitazione richiede solo pochi minuti, ma il suo completamento consentirà di familiarizzare con le funzionalità per il debug di applicazioni multithreading.
@@ -47,9 +47,9 @@ Prima di iniziare questa esercitazione, è necessario un progetto di applicazion
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  Nel **tipo di progetto**s, scegliere il linguaggio di propria scelta: **Visual c#**, **Visual C++**, oppure **Visual Basic**.  
+2.  Fare clic sul linguaggio di propria scelta: **Visual c#**, **Visual C++**, o **Visual Basic**.  
   
-3.  Nel **modelli** , scegliere **App Console**.  
+3.  Sotto **Desktop di Windows**, scegliere **App Console**.  
   
 4.  Nel **nome** casella, digitare il nome MyThreadWalkthroughApp.  
   
