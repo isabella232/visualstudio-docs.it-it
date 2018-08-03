@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704396"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468196"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -43,7 +43,7 @@ Dotfuscator può [offuscare][obfuscation] gli assembly .NET per ostacolare la de
 
 È inoltre importante **proteggere l'integrità dell'applicazione**.
 Oltre alla decompilazione, l'applicazione può essere soggetta ad attacchi di pirateria o comunque ad azioni che ne alterano il comportamento in fase di esecuzione o ne modificano i dati.
-Dotfuscator può consentire all'applicazione di [rilevare, segnalare e gestire usi non autorizzati][checks], incluse eventuali manomissioni, operazioni di debug di terze parti e dispositivi rooted.
+Dotfuscator può consentire all'applicazione di [rilevare e gestire usi non autorizzati][checks], incluse eventuali manomissioni, operazioni di debug di terze parti e dispositivi rooted.
 
 Per altre informazioni su come Dotfuscator è integrabile in un ciclo di sviluppo software sicuro, vedere la [pagina SDL App Protection][sdl-protection] (Protezione delle app nel ciclo di sviluppo software) di PreEmptive Solutions.
 
@@ -56,12 +56,10 @@ Dotfuscator CE offre un'ampia gamma di servizi di [protezione avanzata del softw
 Esempi delle funzionalità di [offuscamento .NET][obfuscation] e di altre funzionalità di [protezione delle applicazioni][app-protection] incluse in Dotfuscator CE comprendono:
 
 * *[Ridenominazione][renaming]* degli identificatori per rendere più difficile la decompilazione degli assembly compilati.
-* *[Anti-manomissione][tamper]* per rilevare l'esecuzione di applicazioni manomesse, trasmettere avvisi di eventi imprevisti e terminare sessioni che hanno subito manomissioni.
-* *[Anti-debug][debug]* per rilevare il collegamento di un debugger a un'applicazione in esecuzione, trasmettere avvisi di eventi imprevisti e terminare le sessioni sottoposte a debug.
-* *[Anti-dispositivi rooted][root]* per rilevare se l'applicazione è in uso in un dispositivo Android rooted e terminare le sessioni in tali dispositivi.
-* *[Comportamenti collegati alla scadenza delle applicazioni][shelflife]* che codificano una data del "ciclo di vita", trasmettono avvisi in caso di esecuzione delle applicazioni dopo la data di scadenza e terminano le sessioni delle applicazioni scadute.
-* *[Rilevamento delle eccezioni][exceptions]* per monitorare le eccezioni non gestite che si verificano all'interno dell'applicazione.
-* *Rilevamento dell'uso di [sessioni][sessions] e [funzionalità][features]* per determinare quali applicazioni, e relative versioni, vengono eseguite e quali funzionalità vengono usate in tali applicazioni.
+* *[Anti-manomissione][tamper]* per rilevare l'esecuzione di applicazioni manomesse e terminare o gestire sessioni che hanno subito manomissioni.
+* *[Anti-debug][debug]* per rilevare il collegamento di un debugger a un'applicazione in esecuzione e terminare o gestire le sessioni sottoposte a debug.
+* *[Anti-dispositivi rooted][root]* per rilevare se l'applicazione è in uso in un dispositivo Android rooted e terminare o gestire le sessioni in tali dispositivi.
+* *[Comportamenti di scadenza delle applicazioni][shelflife]* che codificano una data di "fine vita" e terminano le sessioni delle applicazioni scadute.
 
 Per informazioni dettagliate su queste funzionalità, incluso il modo in cui possono essere integrate nella strategia di protezione della propria applicazione, vedere la [pagina Capabilities][capabilities] (Funzionalità).
 
@@ -107,9 +105,5 @@ Vedere la [Guida dell'utente completa di Dotfuscator CE sul sito preemptive.com]
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
