@@ -1,5 +1,5 @@
 ---
-title: Estensione delle proprietà | Documenti Microsoft
+title: Estensione delle proprietà | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,57 +13,57 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1a34edfbc6cede24f3238068549412d630827cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131662"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512109"
 ---
-# <a name="extending-properties"></a>Estensione delle proprietà
-Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **proprietà** finestra è un visualizzatore di proprietà universale per i componenti COM e COM+ e supporta tutte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prodotti. Il **proprietà** finestra funziona con `ITypeInfo` digitare le informazioni e i metadati di COM+ per elencare le proprietà in fase di progettazione per l'oggetto attualmente selezionato in un'altra finestra nell'ambiente di sviluppo integrato (IDE).  
+# <a name="extend-properties"></a>Estendere le proprietà
+Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **delle proprietà** finestra è un visualizzatore proprietà universale per i componenti COM e COM+ e supporta tutte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prodotti. Il **delle proprietà** finestra funziona con `ITypeInfo` digitare le informazioni e i metadati di COM+ per elencare le proprietà in fase di progettazione per l'oggetto attualmente selezionato in un'altra finestra nell'ambiente di sviluppo integrato (IDE).  
   
- Il **proprietà** finestra, che può essere aperta, premere F4 sulla tastiera, oppure selezionando **finestra proprietà** sul **vista** menu, viene utilizzato per visualizzare e modificare proprietà in fase di progettazione indipendenti dalla configurazione e gli eventi degli oggetti selezionati. Proprietà dipendenti dalla configurazione, associata a soluzioni e progetti, vengono visualizzate in [pagine delle proprietà](../../extensibility/internals/property-pages.md). Per ulteriori informazioni, [la gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md).  
+ Il **proprietà** finestra, che può essere aperto premendo **F4** sulla tastiera, o si seleziona **finestra proprietà** nel **visualizzazione** dal menu Consente di visualizzare e modificare proprietà indipendenti dalla configurazione, in fase di progettazione e gli eventi degli oggetti selezionati. Proprietà dipendenti dalla configurazione, associate a soluzioni e progetti, vengono visualizzate nella [pagine delle proprietà](../../extensibility/internals/property-pages.md). Per altre informazioni, [gestire le opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md).  
   
  ![Panoramica della finestra proprietà](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Finestra Proprietà  
   
- In questa sezione vengono fornite informazioni dettagliate relative alle singole aree del **proprietà** finestra e le interfacce che è necessario implementare e chiamare per popolare la finestra.  
+ In questa sezione vengono fornite informazioni dettagliate correlate a singole aree del **proprietà** finestra e le interfacce da implementare e chiamare per popolare la finestra.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Panoramica della finestra Proprietà](../../extensibility/internals/properties-window-overview.md)  
- Viene illustrato lo scopo del **proprietà** finestra rispetto alla finestra degli strumenti e finestra del documento.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Panoramica della finestra proprietà](../../extensibility/internals/properties-window-overview.md)  
+ Viene illustrato lo scopo del **proprietà** finestra rispetto alla finestra degli strumenti e la finestra del documento.  
   
- [Criteri dei modelli e finestra Proprietà](../../extensibility/internals/template-policy-and-the-properties-window.md)  
- Viene illustrato come un progetto è contenuto in un progetto di modello dell'organizzazione e come tale progetto di modello dell'organizzazione possa applicare i criteri.  
+ [Criteri dei modelli e la finestra proprietà](../../extensibility/internals/template-policy-and-the-properties-window.md)  
+ Illustra come un progetto è contenuto in un progetto di modello dell'organizzazione e come tale progetto di modello aziendale può applicare i criteri.  
   
- [Campi e interfacce della finestra Proprietà](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
+ [Interfacce e i campi di proprietà finestra](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
  Illustra la base per la selezione che determina quali informazioni vengono visualizzate nel **proprietà** finestra.  
   
- [Elenco di oggetti della finestra Proprietà](../../extensibility/internals/properties-window-object-list.md)  
- Viene descritto lo scopo del **proprietà** elenco di oggetti finestra, che descrive la modalità, quando un oggetto diverso da questo elenco è attiva una chiamata, l'ambiente viene informato che è stato selezionato un nuovo oggetto.  
+ [Elenco di oggetti finestra proprietà](../../extensibility/internals/properties-window-object-list.md)  
+ Viene descritto lo scopo del **proprietà** elenco di oggetti finestra, che descrivono come, quando un oggetto diverso da questo elenco viene attivata una chiamata, l'ambiente è stato informato che sia stato selezionato un nuovo oggetto.  
   
- [Pulsanti della finestra Proprietà](../../extensibility/internals/properties-window-buttons.md)  
- Viene illustrato lo scopo dei pulsanti quattro predefinito visualizzati nella **proprietà** degli strumenti della finestra.  
+ [Pulsanti della finestra proprietà](../../extensibility/internals/properties-window-buttons.md)  
+ Viene illustrato lo scopo dei pulsanti quattro predefiniti visualizzati nei **proprietà** degli strumenti della finestra.  
   
  [Griglia di visualizzazione delle proprietà](../../extensibility/internals/properties-display-grid.md)  
- Viene illustrato dove i campi di valori di proprietà e i nomi delle proprietà presenti nella griglia.  
+ Viene spiegato in cui vengono trovati i nomi di proprietà e campi di valori di proprietà nella griglia.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Tipi di progetto](../../extensibility/internals/project-types.md)  
  Vengono illustrati i progetti come i blocchi predefiniti del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Compiling and Building](../../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)  
- Descrive come è possibile utilizzare il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] piattaforma per il test e debug di applicazioni durante la compilazione.  
+ [Compilare](../../ide/compiling-and-building-in-visual-studio.md)  
+ Descrive come è possibile usare il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] piattaforma per il test e debug delle applicazioni durante la compilazione.  
   
- [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)  
- Viene descritto il `IDispatch` interfaccia, che è stato progettato inizialmente per supportare l'automazione, fornendo un meccanismo di associazione tardiva per recuperare le informazioni sui metodi e proprietà di un oggetto.  
+ [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)  
+ Viene descritto il `IDispatch` interfaccia, prima di tutto è stato progettato per supportare l'automazione, che fornisce un meccanismo di associazione tardiva per accedere e recuperare informazioni sui metodi e proprietà di un oggetto.  
   
- [Gestione delle impostazioni dell'applicazione (.NET)](../../ide/managing-application-settings-dotnet.md)  
- Viene fornita una panoramica delle impostazioni dell'applicazione che consentono di configurare l'applicazione in modo che i valori delle proprietà vengono archiviati in un file di configurazione esterno anziché il codice dell'applicazione compilata.  
+ [Gestire le impostazioni dell'applicazione (.NET)](../../ide/managing-application-settings-dotnet.md)  
+ Viene fornita una panoramica delle impostazioni dell'applicazione che consentono di configurare l'applicazione in modo che i valori delle proprietà sono archiviati in un file di configurazione esterno anziché il codice dell'applicazione compilata.  
   
- [Solutions and Projects](../../ide/solutions-and-projects-in-visual-studio.md) (Soluzioni e progetti)  
- Viene illustrato come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce in modo efficiente gli elementi, ad esempio i riferimenti, le connessioni dati, cartelle e file necessari allo sviluppo tramite soluzioni e progetti.  
+ [Soluzioni e progetti](../../ide/solutions-and-projects-in-visual-studio.md)  
+ Viene spiegato come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce in modo efficiente gli elementi, ad esempio i riferimenti, le connessioni dati, cartelle e file necessari per l'attività di sviluppo tramite soluzioni e progetti.  
   
- [Estensione di altre parti di Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Viene illustrato come utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] services per creare elementi dell'interfaccia utente che corrispondano al resto del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ [Estendere altre parti di Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
+ Viene illustrato come utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per creare elementi dell'interfaccia utente che corrispondono al resto dei servizi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

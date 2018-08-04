@@ -1,6 +1,6 @@
 ---
-title: Non visualizzare gli avvisi dell'analisi codice in Visual Studio
-ms.date: 01/29/2018
+title: Non visualizzare gli avvisi dell'analisi codice
+ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -16,18 +16,18 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117784"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513046"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Non visualizzare gli avvisi dell'analisi codice
 
 Spesso è utile indicare che un messaggio di avviso non è applicabile. Ciò indica ai membri del team che è stato esaminato il codice e che l'avviso può essere eliminato. Eliminazione (ISS) viene utilizzato in origine la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo per eliminare un avviso. L'attributo può essere posizionato vicino al segmento di codice che ha generato l'avviso. È possibile aggiungere il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> dell'attributo del file di origine digitando, oppure è possibile usare il menu di scelta rapida in un avviso nel **elenco errori** per aggiungerlo automaticamente.
 
-Il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo è un attributo conditional incluso nei metadati dell'assembly del codice gestito, solo se il simbolo di compilazione CODE_ANALYSIS è definito in fase di compilazione.
+Il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo è un attributo di tipo condizionale, che è incluso nei metadati dell'assembly del codice gestito, solo se il simbolo di compilazione CODE_ANALYSIS è definito in fase di compilazione.
 
 In C + + c++ /CLI CLI, utilizzare le macro autorità di certificazione\_SUPPRESS\_messaggio o autorità di certificazione\_GLOBAL\_SUPPRESS_MESSAGE nel file di intestazione per aggiungere l'attributo.
 
@@ -35,7 +35,9 @@ In C + + c++ /CLI CLI, utilizzare le macro autorità di certificazione\_SUPPRESS
 > Non utilizzare le eliminazioni nell'origine nelle build di rilascio, per evitare che i metadati di eliminazione nell'origine di spedizione accidentalmente. Inoltre, a causa del costo di elaborazione di eliminazione nell'origine, è possono peggiorare le prestazioni dell'applicazione.
 
 > [!NOTE]
-> Se si esegue la migrazione di un progetto di Visual Studio 2017, possono incontrare improvvisamente con un numero eccessivo di avvisi dell'analisi codice. Se non si è pronti per risolvere gli avvisi e si desidera disattivare temporaneamente l'analisi del codice, aprire le pagine delle proprietà del progetto (**Project** > **\<progetto > proprietà**) e passare a il **analisi del codice** scheda. Deseleziona **Abilita analisi codice su compilazione**e quindi ricompilare il progetto. In alternativa, è possibile selezionare un diversa, più piccole set di regole per eseguire il codice. Ricordare di abilitare analisi del codice riaccenderle quando si è pronti per risolvere gli avvisi.
+> Se si esegue la migrazione di un progetto di Visual Studio 2017, possono incontrare improvvisamente con un numero elevato di avvisi dell'analisi codice. Questi avvisi provengono [analizzatori di Roslyn](roslyn-analyzers-overview.md). Se non si è pronti per risolvere gli avvisi, è possibile eliminare tutti gli elementi scegliendo **Analyze** > **Esegui analisi del codice ed Elimina problemi attivi**.
+>
+> ![Esegui analisi del codice ed eliminare i problemi in Visual Studio](media/suppress-active-issues.png)
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attributo)
 
@@ -57,13 +59,13 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 Le proprietà dell'attributo includono:
 
-- **Categoria della regola** -la categoria in cui è definita la regola. Per altre informazioni sulle categorie di regole di analisi del codice, vedere [gli avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md).
+- **Categoria** -la categoria in cui è definita la regola. Per altre informazioni sulle categorie di regole di analisi del codice, vedere [gli avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md).
 
-- **Id regola** -l'identificatore della regola. Il supporto include sia un nome breve e a lungo per l'identificatore della regola. Il nome breve è CAXXXX; il nome lungo è CAXXXX:FriendlyTypeName.
+- **CheckId** -l'identificatore della regola. Il supporto include sia un nome breve e a lungo per l'identificatore della regola. Il nome breve è CAXXXX; il nome lungo è CAXXXX:FriendlyTypeName.
 
 - **Giustificazione** -il testo che consente di documentare il motivo dell'eliminazione del messaggio.
 
-- **Id messaggio** -identificatore univoco di un problema per ogni messaggio.
+- **MessageId** -identificatore univoco di un problema per ogni messaggio.
 
 - **Ambito** -la destinazione in cui è stato eliminato l'avviso. Se la destinazione non è specificato, cui è impostata la destinazione dell'attributo. Gli ambiti supportati includono quanto segue:
 

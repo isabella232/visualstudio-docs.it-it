@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078442"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512184"
 ---
 # <a name="create-bootstrapper-packages"></a>Creare pacchetti del programma di avvio automatico personalizzati
 Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili, ad esempio Windows Installer (*file con estensione msi*) i file e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  Ogni componente ridistribuibile o prerequisito, che viene visualizzato nei **prerequisiti** finestra di dialogo di ClickOnce è un pacchetto di programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file che contengono i file manifesto in cui è descritto come deve essere installato il prerequisito. 
@@ -86,10 +86,10 @@ La tabella seguente illustra le proprietà popolate automaticamente dal programm
 |--------------|-----------------|  
 |ApplicationName|Nome dell'applicazione.|  
 |ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Numero di versione per i sistemi operativi Microsoft Windows 95, Windows 98 o Windows ME. La sintassi della versione è Principale.Secondario.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Numero di versione per i sistemi operativi Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintassi della versione è Principale.Secondario.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|La versione dell'assembly di Windows Installer (MSI) per l'esecuzione durante l'installazione.|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Questa proprietà viene impostata se l'utente ha i privilegi di amministratore. I valori sono true o false.|  
+|[Version9x](/windows/desktop/Msi/version9x)|Numero di versione per i sistemi operativi Microsoft Windows 95, Windows 98 o Windows ME. La sintassi della versione è Principale.Secondario.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Numero di versione per i sistemi operativi Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintassi della versione è Principale.Secondario.ServicePack.|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|La versione dell'assembly di Windows Installer (MSI) per l'esecuzione durante l'installazione.|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|Questa proprietà viene impostata se l'utente ha i privilegi di amministratore. I valori sono true o false.|  
 |InstallMode|La modalità di installazione indica il percorso dal quale deve essere installato il componente. Sono inclusi i valori seguenti:<br /><br /> -HomeSite: i prerequisiti vengono installati dal sito Web del fornitore.<br />-SpecificSite: i prerequisiti vengono installati dal percorso selezionato.<br />-SameSite: i prerequisiti vengono installati dallo stesso percorso dell'applicazione.|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>Componenti ridistribuibili separati dalle installazioni delle applicazioni  

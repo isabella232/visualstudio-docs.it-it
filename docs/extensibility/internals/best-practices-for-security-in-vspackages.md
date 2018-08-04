@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per la sicurezza in VSPackage | Documenti Microsoft
+title: Procedure consigliate per la sicurezza nei pacchetti VSPackage | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,23 +15,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689c85e090e44612a87474e8c77dc0e146706e84
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5b3b86736a5425640c1a87df6a3e2c6e6cec0c5
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127301"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513348"
 ---
-# <a name="best-practices-for-security-in-vspackages"></a>Procedure consigliate per la sicurezza in VSPackage
-Per installare il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] nel computer in uso, è necessario essere in esecuzione in un contesto con credenziali amministrative. L'unità di base della sicurezza e la distribuzione di un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] applicazione è il [VSPackage](../../extensibility/internals/vspackages.md). Un pacchetto VSPackage deve essere registrato tramite [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], che richiede credenziali amministrative.  
+# <a name="best-practices-for-security-in-vspackages"></a>Le procedure consigliate per la sicurezza nei pacchetti VSPackage
+Per installare il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] nel computer, è necessario essere in esecuzione in un contesto con credenziali amministrative. Unità di base di sicurezza e la distribuzione di un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] applicazione è il [VSPackage](../../extensibility/internals/vspackages.md). Un pacchetto VSPackage deve essere registrato utilizzando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], che richiede credenziali amministrative.  
   
- Gli amministratori dispongono delle autorizzazioni complete per scrivere il Registro di sistema e file system e per eseguire qualsiasi codice. È necessario sviluppare, distribuire o installare un pacchetto VSPackage di tali autorizzazioni.  
+ Gli amministratori hanno autorizzazioni complete per scrivere il Registro di sistema e file system e per eseguire qualsiasi codice. È necessario disporre delle autorizzazioni sviluppare, distribuire o installare un pacchetto VSPackage.  
   
- Non appena viene installato, un VSPackage è completamente attendibile. A causa di questo livello elevato di autorizzazione associata a un pacchetto VSPackage, è possibile installare inavvertitamente un VSPackage che malintenzionati.  
+ Non appena è installato, un pacchetto VSPackage è completamente attendibile. A causa di questo livello elevato di autorizzazione associata a un pacchetto VSPackage, è possibile installare inavvertitamente un VSPackage contenente dannosi.  
   
- Gli utenti devono assicurarsi che installano i pacchetti VSPackage solo da origini attendibili. Società di sviluppo di VSPackages fortemente deve assegnare un nome e le firmerà, per garantire l'utente che manomissioni non è consentita. Sviluppo di VSPackages società deve esaminare le dipendenze esterne, ad esempio servizi web e l'installazione remota, valutare e correggere eventuali problemi di sicurezza.  
+ Gli utenti devono assicurarsi che installano i pacchetti VSPackage solo da fonti attendibili. Società di sviluppo di VSPackages fortemente consigliabile assegnare un nome e firmarli, per assicurare che l'utente che manomissioni non è consentita. Società di sviluppo di VSPackages deve esaminare le dipendenze esterne, ad esempio servizi web e l'installazione remota, valutare e correggere eventuali problemi di sicurezza.  
   
- Per altre informazioni, vedere linee guida per la generazione di codice sicuro per .NET Framework ([http://msdn.microsoft.com/library/d55zzx87.aspx](http://msdn.microsoft.com/library/d55zzx87.aspx)).  
+ Per altre informazioni, vedere [linee guida di codifica per .NET Framework protette](http://msdn.microsoft.com/library/d55zzx87.aspx).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Componente aggiuntivo di sicurezza](http://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   

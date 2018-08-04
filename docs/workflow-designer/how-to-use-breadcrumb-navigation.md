@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757619"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512278"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procedura: utilizzare l'esplorazione tramite la barra di navigazione
 
@@ -29,7 +29,7 @@ Esistono tre modi principali per modificare il set di attività che vengono visu
 
 ## <a name="using-breadcrumb-navigation"></a>Usando l'esplorazione tramite la barra di navigazione
 
-1.  Fare doppio clic su un'attività di progettazione del flusso di lavoro per modificare l'attività radice per l'attività selezionata. L'attività selezionata viene quindi espansa completamente alla radice e i relativi predecessori vengono mostrati nella barra di navigazione. Questa operazione viene talvolta definita analisi o annullamento dell'analisi di un'attività.
+1.  Fare doppio clic su un'attività di progettazione del flusso di lavoro per modificare l'attività radice per l'attività selezionata. L'attività selezionata viene quindi espansa completamente alla radice e relativi predecessori vengono mostrati nella barra di navigazione. Questa operazione viene talvolta definita analisi o annullamento dell'analisi di un'attività.
 
 2.  Per passare a un predecessore dell'attività radice corrente, fare clic sull'attività nella barra di navigazione.
 

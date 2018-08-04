@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50b9b61f34ba9e78efd8bc40c7d97583ee0c25f7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 686969c233f50dd1df743590206966183be48da9
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117017"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513198"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Finestra di dialogo Cerca e seleziona un tipo .NET
 
 Nel **delle proprietà** finestra, le finestre di dialogo o le finestre di progettazione, ad esempio la finestra di progettazione variabile, quando si seleziona **Cerca tipi** da un elenco dei tipi di dati, è il **Cerca e seleziona un tipo .NET** finestra di dialogo (definito in una forma abbreviata come "browser tipi"). In questa finestra di dialogo è possibile scegliere un tipo dalla visualizzazione albero di assembly e progetti.
 
- È possibile usare questa finestra di dialogo in numerosi scenari utente, ad esempio:
+È possibile usare questa finestra di dialogo in numerosi scenari utente, ad esempio:
 
 -   Quando si imposta un tipo di variabile o argomento.
 
@@ -56,21 +56,24 @@ Nel **delle proprietà** finestra, le finestre di dialogo o le finestre di proge
      Selezionare il tipo che si desidera utilizzare per chiudere il tipo generico dalle caselle a discesa e quindi fare clic su **OK**.
 
 ## <a name="types-displayed-in-the-type-browser"></a>Tipi visualizzati nel browser dei tipi
- I tipi visualizzati nel browser dei tipi possono variare in base alla modalità di avvio di tale browser. Se il browser dei tipi è stato avviato da un progetto di flusso di lavoro all'interno di **vs2010**, per impostazione predefinita, tutti i tipi negli assembly di riferimento e vengono visualizzati i progetti di riferimento. Se il browser dei tipi è stato avviato all'esterno di un **vs2010** progetto sistema (ad esempio in un'applicazione flusso di lavoro riallocata o in un file di flusso di lavoro autonomo), quindi per impostazione predefinita vengono visualizzati i tipi di tutti gli assembly caricati nel dominio applicazione .
 
- I tipi del browser dei tipi possono essere filtrati in base agli sviluppatori di ActivityDesigner. Per qualsiasi attività specificata, è possibile visualizzare solo un subset dei tipi. Per l'attività <xref:System.Activities.Statements.TryCatch>, ad esempio, nel browser dei tipi sono visualizzati solo i tipi derivati da <xref:System.Exception>.
+I tipi visualizzati nel browser dei tipi possono variare in base alla modalità di avvio di tale browser. Se il browser dei tipi è stato avviato da un progetto di flusso di lavoro all'interno di **vs2010**, per impostazione predefinita, tutti i tipi negli assembly di riferimento e vengono visualizzati i progetti di riferimento. Se il browser dei tipi è stato avviato all'esterno di un **vs2010** progetto sistema (ad esempio in un'applicazione flusso di lavoro riallocata o in un file di flusso di lavoro autonomo), quindi per impostazione predefinita vengono visualizzati i tipi di tutti gli assembly caricati nel dominio applicazione .
+
+I tipi del browser dei tipi possono essere filtrati in base agli sviluppatori di ActivityDesigner. Per qualsiasi attività specificata, è possibile visualizzare solo un subset dei tipi. Per l'attività <xref:System.Activities.Statements.TryCatch>, ad esempio, nel browser dei tipi sono visualizzati solo i tipi derivati da <xref:System.Exception>.
 
 ## <a name="filtering-search-results-in-the-type-browser"></a>Filtraggio dei risultati della ricerca nel browser dei tipi
- L'elenco dei tipi nel **nome del tipo** casella ottiene più breve durante la digitazione più caratteri per trovare una corrispondenza. Nell'elenco filtrato vengono visualizzati solo i tipi il cui nome completo inizia con la stringa digitata oppure i tipi il cui nome breve inizia con la stringa digitata.
 
- Ad esempio:
+L'elenco dei tipi nel **nome del tipo** casella ottiene più breve durante la digitazione più caratteri per trovare una corrispondenza. Nell'elenco filtrato vengono visualizzati solo i tipi il cui nome fullyqualified inizia con la stringa digitata oppure i tipi il cui nome breve inizia con la stringa digitata.
+
+Ad esempio:
 
 1.  Tipizzazione **operazione** corrisponda <xref:System.OperationCanceledException> ma non <xref:System.InvalidOperationException>. Per trovare la corrispondenza con <xref:System.InvalidOperationException>, cominciare a digitare System.I o Invalid.
 
-2.  Tipizzazione **generico** corrisponde a <xref:System.GenericUriParser> ma non con i tipi di <xref:System.Collections.Generic> dello spazio dei nomi. Per cercare i tipi nello spazio dei nomi <xref:System.Collections.Generic>, digitare il nome completo dello spazio dei nomi.
+2.  Tipizzazione **generico** corrisponde a <xref:System.GenericUriParser> ma non con i tipi di <xref:System.Collections.Generic> dello spazio dei nomi. Per cercare i tipi nel <xref:System.Collections.Generic> dello spazio dei nomi, digitare il nome completo dello spazio dei nomi.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Selezionare un contratto di servizio tramite la finestra di dialogo del browser dei tipi
- Quando si seleziona un tipo di contratto di servizio, il browser del tipo visualizza solo i tipi che dispongono di un attributo di <xref:System.ServiceModel.ServiceContractAttribute>.
+
+Quando si seleziona un tipo di contratto di servizio, il browser del tipo visualizza solo i tipi che dispongono di un attributo di <xref:System.ServiceModel.ServiceContractAttribute>.
 
 ## <a name="see-also"></a>Vedere anche
 

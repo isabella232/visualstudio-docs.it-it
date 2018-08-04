@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2620a008a90b988aa80df8d3c8563163ff92d997
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078378"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512958"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: pubblicare un'applicazione WPF con gli stili visuali abilitati
 Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema scelto dall'utente. Per impostazione predefinita, gli stili di visualizzazione non abilitati per le applicazioni Windows Presentation Foundation (WPF), pertanto è necessario attivarli manualmente. Abilitazione degli stili per un'applicazione WPF e quindi pubblicare la soluzione, tuttavia, provoca un errore. Questo argomento descrive come risolvere questo errore e il processo per la pubblicazione di un'applicazione WPF con gli stili visuali abilitati. Per altre informazioni sugli stili di visualizzazione, vedere [panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview). Per altre informazioni sul messaggio di errore, vedere [risolvere i problemi di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -161,8 +161,9 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
  Dopo aver eseguito questi passaggi, è possibile spostare i file pubblicati il posizione da cui si desidera che gli utenti finali a installare l'applicazione. Se si intende aggiornare spesso la soluzione, è possibile spostare questi comandi in uno script ed eseguire lo script ogni volta che si pubblica una nuova versione.  
   
-## <a name="see-also"></a>Vedere anche  
- [Risolvere errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview)   
- [Abilitare gli stili visivi](https://msdn.microsoft.com/library/bb773175.aspx)   
- [Prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs)
+## <a name="see-also"></a>Vedere anche
+
+-[Risoluzione dei problemi relativi a errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview)
+- [Abilitazione degli stili](/windows/desktop/Controls/cookbook-overview)
+- [Prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs)

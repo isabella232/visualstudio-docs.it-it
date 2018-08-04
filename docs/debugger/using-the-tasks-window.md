@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179996"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512291"
 ---
 # <a name="using-the-tasks-window"></a>Utilizzo della finestra Attività
 
@@ -52,7 +52,7 @@ Le colonne di **attività** finestra Mostra le informazioni seguenti.
 |**flag**|Mostra quali attività sono contrassegnate e consente di impostare o rimuovere un flag per un'attività.|
 |**Icone**|Una freccia gialla indica l'attività corrente. L'attività corrente è l'attività in primo piano nel thread corrente.<br /><br /> Una freccia bianca indica l'attività di interruzione, vale a dire l'attività corrente al momento della chiamata del debugger.<br /><br /> L'icona di sospensione indica un'attività bloccata dall'utente. È possibile bloccare e sbloccare un'attività facendovi clic sopra con il pulsante destro del mouse nell'elenco.|
 |**ID**|Numero fornito dal sistema per l'attività. Nel codice nativo, è l'indirizzo dell'attività.|
-|**Status**|Stato corrente (pianificato, attivo, bloccato, deadlock, in attesa o completato) dell'attività. Un'attività pianificata è un'attività che non è stata ancora eseguita, pertanto non dispone ancora di uno stack di chiamate, un thread assegnato o informazioni correlate.<br /><br /> Un'attività attiva è un'attività che stava eseguendo codice prima dell'accesso al debugger.<br /><br /> Un'attività in attesa o bloccata è quello che viene bloccata perché è in attesa di un evento venga segnalato, un blocco deve essere rilasciato o fine di un'altra attività.<br /><br /> Un'attività in deadlock è un'attività in attesa il cui thread è in deadlock con un altro thread.<br /><br /> Passare il mouse sul **stato** cella di un'attività in deadlock o in attesa visualizzare altre informazioni sul blocco. **Avviso:** il **attività** finestra segnala un deadlock solo per un'attività bloccata che utilizza una primitiva di sincronizzazione è supportata da Wait Chain Traversal (WCT). Ad esempio, per un deadlock <xref:System.Threading.Tasks.Task> oggetto, che utilizza WCT, il debugger viene segnalato **-in deadlock Awaiting**. Per un'attività in deadlock gestita dal Runtime di concorrenza, che non utilizza WCT, il debugger viene segnalato **attesa**. Per altre informazioni su WCT, vedere [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|
+|**Status**|Stato corrente (pianificato, attivo, bloccato, deadlock, in attesa o completato) dell'attività. Un'attività pianificata è un'attività che non è stata ancora eseguita, pertanto non dispone ancora di uno stack di chiamate, un thread assegnato o informazioni correlate.<br /><br /> Un'attività attiva è un'attività che stava eseguendo codice prima dell'accesso al debugger.<br /><br /> Un'attività in attesa o bloccata è quello che viene bloccata perché è in attesa di un evento venga segnalato, un blocco deve essere rilasciato o fine di un'altra attività.<br /><br /> Un'attività in deadlock è un'attività in attesa il cui thread è in deadlock con un altro thread.<br /><br /> Passare il mouse sul **stato** cella di un'attività in deadlock o in attesa visualizzare altre informazioni sul blocco. **Avviso:** il **attività** finestra segnala un deadlock solo per un'attività bloccata che utilizza una primitiva di sincronizzazione è supportata da Wait Chain Traversal (WCT). Ad esempio, per un deadlock <xref:System.Threading.Tasks.Task> oggetto, che utilizza WCT, il debugger viene segnalato **-in deadlock Awaiting**. Per un'attività in deadlock gestita dal Runtime di concorrenza, che non utilizza WCT, il debugger viene segnalato **attesa**. Per altre informazioni su WCT, vedere [Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal).|
 |**Ora di inizio**|Ora in cui l'attività è diventata attiva.|
 |**Durata**|Numero di secondi durante i quali l'attività è rimasta attiva.|
 |**Tempo di completamento**|Ora in cui l'attività è stata completata.|

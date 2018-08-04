@@ -1,5 +1,5 @@
 ---
-title: Frame di grafica convalida | Documenti Microsoft
+title: Convalida dei Frame di grafica | Microsoft Docs
 ms.custom: ''
 ms.date: 03/02/2017
 ms.technology: vs-ide-debug
@@ -12,28 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9732cd3f3440448e5096e71f838d8ebcf20fb13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fee7e1db2716c2c7fedba41970ccfb0471e3d230
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473959"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511295"
 ---
-# <a name="graphics-frame-validation"></a>Convalida di Frame di grafica
-<!-- VERSIONLESS -->
-Visual Studio 2017 e maggiore supporto di **convalida Frame** strumento.  Nella finestra cornice convalida gli errori e avvisi associati all'elenco di eventi.  Per visualizzare questa finestra, selezionare il **Vista > convalida Frame** menu.
+# <a name="graphics-frame-validation"></a>Convalida Frame di grafica
+<!-- VERSIONLESS --> Visual Studio 2017 e il supporto maggiore di **convalida Frame** dello strumento.  Consente di visualizzare la finestra di convalida Frame errori e avvisi associati con l'elenco di eventi.  Per visualizzare questa finestra, selezionare la **Visualizza > convalida Frame** menu.
 
-![Convalida di frame](media/gfx_diag_frame_validation.png)
+![Convalida frame](media/gfx_diag_frame_validation.png)
 
-Fare clic su di **Esegui convalida** pulsante nell'angolo superiore sinistro per avviare l'analisi.  Potrebbe richiedere alcuni minuti a seconda della complessità del frame.  I dati che viene visualizzato di seguito è una combinazione di due origini: i messaggi che D3D stesso genera quando [livelli SDK](https://msdn.microsoft.com/library/windows/desktop/ff476881(v=vs.85).aspx) è abilitata e i dati raccolti dallo stato interno dello strumento di rilevamento. Al termine dell'operazione, si noterà diverse colonne di dati:
+Scegliere il **Esegui convalida** pulsante nell'angolo superiore sinistro per avviare l'analisi.  Potrebbero occorrere alcuni minuti a seconda della complessità del frame.  I dati che viene visualizzata di seguito è una combinazione di due origini: i messaggi di tale D3D se stessa quando emette [livelli SDK](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) è abilitata e i dati raccolti dallo stato interno dello strumento di rilevamento. Al termine dell'operazione, si noterà diverse colonne di dati:
 
 **Colonna**|**Descrizione**
 ---|---
-ID evento | ID che viene eseguito il mapping a una voce di [elenco eventi](graphics-event-list.md) finestra.
+ID evento | ID che viene eseguito il mapping a una voce nella [elenco eventi](graphics-event-list.md) finestra.
 Gravità | Danneggiamento, errore, avviso, informazioni o messaggio.
-Category | Applicazione definito, varie, l'inizializzazione, pulizia, compilazione, creazione dello stato, impostazione dello stato, recupero dello stato, esecuzione, la modifica di risorse, Shader, ridondanti e inutilizzate.
+Category | Applicazione esterni, definita, l'inizializzazione, pulizia, compilazione, creazione stato, impostazione dello stato, recupero dello stato, l'esecuzione, modifica delle risorse, Shader, ridondanti e inutilizzate.
 Messaggio | Il messaggio associato all'evento.
-event | L'evento associato a errore o dell'avviso.
+event | L'evento associato all'errore o avviso.
 
 ## <a name="see-also"></a>Vedere anche  
 [Diagnostica della grafica (debug grafica DirectX)](visual-studio-graphics-diagnostics.md)   

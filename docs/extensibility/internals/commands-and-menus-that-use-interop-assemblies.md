@@ -1,5 +1,5 @@
 ---
-title: I comandi e menu che utilizzano gli assembly di interoperabilità | Documenti Microsoft
+title: I comandi e menu che usano assembly di interoperabilità | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,43 +16,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48ee7eb25fa95789076454c849485f4ac1dc384
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f67419240b8632c3032bd3877894d871245e55e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135007"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513442"
 ---
-# <a name="commands-and-menus-that-use-interop-assemblies"></a>I comandi e menu che utilizzano gli assembly di interoperabilità
-Un VSPackage che implementa i comandi di menu e barra degli strumenti tramite assembly di interoperabilità deve:  
+# <a name="commands-and-menus-that-use-interop-assemblies"></a>I comandi e menu che usano assembly di interoperabilità
+Un pacchetto VSPackage che implementa i comandi di menu e barra degli strumenti usando assembly di interoperabilità deve:  
   
--   Informare il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) sui comandi supportati e se sono attualmente abilitate.  
+-   Informare il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) sui comandi supportati e se sono attualmente abilitati.  
   
 -   Rispettare le regole (contratto) per la gestione dei comandi.  
   
--   Implementare in modo esplicito la gestione dei comandi utilizzando il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia.  
+-   Implementare in modo esplicito la gestione dei comandi usando il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia.  
   
- Di seguito viene descritto come eseguire queste attività.  
+ La sezione seguente descrive come eseguire queste attività.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Determinazione dello stato dei comandi in base agli assembly di interoperabilità](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
- Viene descritto come un pacchetto VSPackage notifica all'IDE relative ai comandi supporta e che sono attualmente abilitate.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Determinare lo stato del comando con gli assembly di interoperabilità](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
+ Viene descritto come un pacchetto VSPackage notifica all'IDE sulle quali comandi supportati e se sono attualmente abilitati.  
   
  [Contratti dei comandi negli assembly di interoperabilità](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
- Fornisce una definizione del contratto di comando di base utilizzato da tutti i pacchetti VSPackage che implementa i comandi tramite assembly di interoperabilità  
+ Fornisce una definizione del contratto di comando di base usato da tutti i pacchetti VSPackage che implementa i comandi tramite assembly di interoperabilità.
   
- [Implementazione](../../extensibility/internals/command-implementation.md)  
- Viene fornita una panoramica di come un pacchetto VSPackage implementa un comando.  
+ [Implementazione del comando](../../extensibility/internals/command-implementation.md)  
+ Fornisce una panoramica del modo in cui un pacchetto VSPackage implementa un comando.  
   
- [Registrazione dei gestori dei comandi negli assembly di interoperabilità](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
- Descrive le voci del Registro di sistema necessarie per inviare una notifica dell'IDE che un pacchetto VSPackage fornisce un gestore del comando.  
+ [Registrare i gestori di comando di assembly di interoperabilità](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
+ Descrive le voci del Registro di sistema necessarie per inviare una notifica dell'IDE che un pacchetto VSPackage fornisce un gestore comando.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Disponibilità](../../extensibility/internals/command-availability.md)  
- Descrive i criteri utilizzati per determinare quali comandi VSPackage sono disponibili e l'oggetto che gestisce tali dall'IDE.  
+ [Disponibilità dei comandi](../../extensibility/internals/command-availability.md)  
+ Descrive i criteri usati dall'IDE per determinare quali comandi VSPackage sono disponibili e l'oggetto che li gestisce.  
   
  [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- Vengono fornite informazioni dettagliate su come creare un'interfaccia utente che utilizza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando supporto.  
+ Vengono fornite informazioni dettagliate su come creare un'interfaccia utente che usa [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando supporto.  
   
  [Routing dei comandi nei pacchetti VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
- Panoramica del processo utilizzato per correlare un oggetto con la richiesta di comando corretto.
+ Panoramica del processo utilizzato per correlare un oggetto con la richiesta corretta del comando.

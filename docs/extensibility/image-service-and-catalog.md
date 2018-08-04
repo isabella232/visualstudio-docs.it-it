@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079080"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512044"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigliate per adottare il catalogo di immagini introdotto in Visual Studio 2015 e Visual Studio Image Service.  
@@ -165,8 +165,9 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) utilizzando l'applicazione: / / / autorità<br />-Riferimento a una risorsa un componente assoluto<br />-Un percorso di un file contenente una risorsa nativa|  
+|URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) utilizzando l'applicazione: / / / autorità<br />-Riferimento a una risorsa un componente assoluto<br />-Un percorso di un file contenente una risorsa nativa|  
 |Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> *Illuminazione:* l'origine può essere usata su uno sfondo chiaro.<br /><br /> *Scuro:* l'origine può essere usata su uno sfondo scuro.<br /><br /> *Contrasto elevato:* l'origine può essere usata su qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> *HighContrastLight:* l'origine può essere usata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> *HighContrastDark:* l'origine può essere usata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se si omette l'attributo in Background, l'origine sono utilizzabili in qualsiasi dello sfondo.<br /><br /> Se è in Background *Light*, *scuro*, *HighContrastLight*, oppure *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se viene omesso o impostato su sfondo *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
+
 |||  
   
  Oggetto \<origine > elemento può includere esattamente uno dei sottoelementi facoltativi seguenti:  
@@ -651,7 +652,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Aggiornare il codice per usare il servizio immagini per richiedere i moniker tramite il mapping aggiornato. (Ciò potrebbe significare aggiornare a **CrispImages** per codice gestito, o richiedere gli HBITMAP o gli oggetti HICON al servizio di immagine e passarli intorno a per il codice nativo.)  
   
 ## <a name="testing-your-images"></a>Le immagini di test  
- È possibile utilizzare lo strumento Visualizzatore di libreria di immagini per testare i manifesti di immagine per assicurarsi che tutto ciò che è stato creato correttamente. È possibile trovare lo strumento nel [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Documentazione relativa a questo e altri strumenti sono reperibili [qui](http://aka.ms/VSImageThemeTools).  
+ È possibile utilizzare lo strumento Visualizzatore di libreria di immagini per testare i manifesti di immagine per assicurarsi che tutto ciò che è stato creato correttamente. È possibile trovare lo strumento nel [Visual Studio 2015 SDK](visual-studio-sdk.md). Documentazione relativa a questo e altri strumenti sono reperibili [qui](http://aka.ms/VSImageThemeTools).  
   
 ## <a name="additional-resources"></a>Risorse aggiuntive  
   

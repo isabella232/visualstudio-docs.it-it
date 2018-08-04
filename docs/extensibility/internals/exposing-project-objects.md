@@ -14,19 +14,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23cc1db46870d77e6c137ab621c970e730b9cd0e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
-ms.translationtype: HT
+ms.openlocfilehash: ae7b34df55593f07adeaffe8d654b59629baaae5
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497141"
+ms.locfileid: "39510910"
 ---
 # <a name="expose-project-objects"></a>Esporre oggetti del progetto
-I tipi di progetto personalizzati possono fornire oggetti di automazione per consentire l'accesso al progetto usando le interfacce di automazione. Ogni tipo di progetto deve fornire lo standard <xref:EnvDTE.Project> oggetto di automazione a cui si accede da <xref:EnvDTE.Solution>, che contiene una raccolta di tutti i progetti aperti nell'IDE. È previsto che ogni elemento nel progetto devono essere esposte da un <xref:EnvDTE.ProjectItem> oggetto cui si accede con `Project.ProjectItems`. Oltre a questi oggetti di automazione standard, è possono scegliere i progetti offrire agli oggetti di automazione specifico del progetto.  
-  
- È possibile creare oggetti di automazione a livello di radice personalizzata che è possibile accedere con associazione tardiva dall'oggetto DTE radice usando `DTE.<customeObjectName>` o `DTE.GetObject("<customObjectName>")`. Ad esempio, Visual C++ consente di creare raccolte di progetti specifici del progetto C++ denominate *VCProjects* che è possibile accedere usando `DTE.VCProjects` o `DTE.GetObject("VCProjects")`. È anche possibile creare un `Project.Object`, che è univoco per il tipo di progetto, un `Project.CodeModel`, che è possibile eseguire query per l'oggetto più derivato e una `ProjectItem`, che espone `ProjectItem.Object` e un `ProjectItem.FileCodeModel`.  
-  
- È una convenzione comune per i progetti per esporre una raccolta di progetti personalizzati, specifici del progetto. Ad esempio, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] crea una raccolta di progetti specifici di C++ che è quindi possibile accedere tramite `DTE.VCProjects` o `DTE.GetObject("VCProjects")`. È anche possibile creare un `Project.Object`, che è univoco per il tipo di progetto, un `Project.CodeModel`, che è possibile eseguire query per l'oggetto più derivato, un `ProjectItem`, che espone `ProjectItem.Object`e un `ProjectItem.FileCodeModel`.  
+
+I tipi di progetto personalizzati possono fornire oggetti di automazione per consentire l'accesso al progetto usando le interfacce di automazione. Ogni tipo di progetto deve fornire lo standard <xref:EnvDTE.Project> oggetto di automazione a cui si accede da <xref:EnvDTE.Solution>, che contiene una raccolta di tutti i progetti aperti nell'IDE. È previsto che ogni elemento nel progetto devono essere esposte da un <xref:EnvDTE.ProjectItem> oggetto cui si accede con `Project.ProjectItems`. Oltre a questi oggetti di automazione standard, è possono scegliere i progetti offrire agli oggetti di automazione specifico del progetto.
+
+È possibile creare oggetti di automazione a livello di radice personalizzata che è possibile accedere con associazione tardiva dall'oggetto DTE radice usando `DTE.<customObjectName>` o `DTE.GetObject("<customObjectName>")`. Ad esempio, Visual C++ crea una raccolta di progetti specifici del progetto C++ denominata *VCProjects* che è possibile accedere usando `DTE.VCProjects` o `DTE.GetObject("VCProjects")`. È anche possibile creare un `Project.Object`, che è univoco per il tipo di progetto, un `Project.CodeModel`, che è possibile eseguire query per l'oggetto più derivato e una `ProjectItem`, che espone `ProjectItem.Object` e un `ProjectItem.FileCodeModel`.
+
+È una convenzione comune per i progetti per esporre una raccolta di progetti personalizzati, specifici del progetto. Ad esempio, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] crea una raccolta di progetti specifici di C++ che è quindi possibile accedere tramite `DTE.VCProjects` o `DTE.GetObject("VCProjects")`. È anche possibile creare un `Project.Object`, che è univoco per il tipo di progetto, un `Project.CodeModel`, che è possibile eseguire query per l'oggetto più derivato, un `ProjectItem`, che espone `ProjectItem.Object`e un `ProjectItem.FileCodeModel`.  
   
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Per contribuire a un oggetto specifico del VSPackage per un progetto  
   
@@ -93,5 +94,6 @@ I tipi di progetto personalizzati possono fornire oggetti di automazione per con
   
      L'oggetto personalizzato `Projects` oggetto della raccolta è un punto di ingresso praticità per la parte rimanente del modello di automazione progetto. L'oggetto del progetto è accessibile dalle <xref:EnvDTE.Solution> nella raccolta di progetti. Dopo aver creato le voci appropriate di codice e del Registro di sistema che forniscono i consumer con `Projects` raccolta di oggetti, l'implementazione deve fornire rimanenti oggetti standard per il modello di progetto. Per altre informazioni, vedere [modellazione progetto](../../extensibility/internals/project-modeling.md).  
   
-## <a name="see-also"></a>Vedere anche  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>
+## <a name="see-also"></a>Vedere anche
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

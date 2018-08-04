@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081426"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512148"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Creazione di applicazioni ClickOnce per altri utenti per la distribuzione
 Non tutti gli sviluppatori che creano le distribuzioni di ClickOnce prevede di distribuire le applicazioni stesse. Molti di essi sufficiente includere la loro applicazione con ClickOnce e quindi passare i file a un cliente, ad esempio un'azienda di grandi dimensioni. Il cliente si assume la responsabilità per ospitare l'applicazione nella propria rete. Questo argomento illustra alcuni dei problemi relativi a tali distribuzioni nelle versioni di .NET Framework precedenti alla versione 3.5. Viene quindi illustrata una nuova soluzione fornita utilizzando la nuova funzionalità "Usa manifesto per l'attendibilità" in .NET Framework 3.5. Infine, si conclude con strategie consigliate per la creazione di distribuzioni di ClickOnce per i clienti che ancora usano versioni precedenti di .NET Framework.  
@@ -54,7 +54,7 @@ Non tutti gli sviluppatori che creano le distribuzioni di ClickOnce prevede di d
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Creare distribuzioni dei clienti con manifesto dell'applicazione per la relazione di trust  
  ClickOnce di .NET Framework 3.5 contiene una nuova funzionalità che offre agli sviluppatori e ai clienti una nuova soluzione per lo scenario del modo in cui devono essere firmati i manifesti. Il manifesto dell'applicazione ClickOnce supporta un nuovo elemento denominato `<useManifestForTrust>` che consente a uno sviluppatore sta a indicare che la firma digitale del manifesto dell'applicazione è ciò che deve essere utilizzato per prendere decisioni di attendibilità. Lo sviluppatore Usa gli strumenti di creazione di pacchetti di ClickOnce, ad esempio *Mage.exe*, *MageUI.exe*e Visual Studio, includere l'elemento nel manifesto dell'applicazione, nonché di incorporare sia il nome di server di pubblicazione e il nome dell'applicazione nel manifesto.  
   
- Quando si usa `<useManifestForTrust>`, il manifesto di distribuzione non deve essere firmato con un certificato Authenticode emesso da un'autorità di certificazione. In alternativa, possono essere firmato con ciò che è noto come un certificato autofirmato. Un certificato autofirmato generato dal cliente o lo sviluppatore tramite gli strumenti standard di .NET Framework SDK e quindi applicato al manifesto di distribuzione usando gli strumenti di distribuzione standard di ClickOnce. Per altre informazioni, vedere [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Quando si usa `<useManifestForTrust>`, il manifesto di distribuzione non deve essere firmato con un certificato Authenticode emesso da un'autorità di certificazione. In alternativa, possono essere firmato con ciò che è noto come un certificato autofirmato. Un certificato autofirmato generato dal cliente o lo sviluppatore tramite gli strumenti standard di .NET Framework SDK e quindi applicato al manifesto di distribuzione usando gli strumenti di distribuzione standard di ClickOnce. Per altre informazioni, vedere [MakeCert](/windows/desktop/SecCrypto/makecert).  
   
  Usando un certificato autofirmato per il manifesto di distribuzione presenta diversi vantaggi. Eliminando la necessità del cliente di ottenere o creare il proprio certificato Authenticode, `<useManifestForTrust>` semplifica la distribuzione per il cliente, consentendo agli sviluppatori di gestire la propria identità personalizzazione nell'applicazione. Il risultato è un set di distribuzioni con segno che sono più sicure e dispongono di identità di applicazione univoco. Ciò consente di eliminare il conflitto potenziale può essere generata dalla distribuzione della stessa applicazione a più clienti.  
   

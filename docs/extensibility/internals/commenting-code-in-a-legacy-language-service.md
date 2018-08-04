@@ -1,5 +1,5 @@
 ---
-title: Commento di codice in un servizio di linguaggio Legacy | Documenti Microsoft
+title: Commenti di codice in un servizio di linguaggio Legacy | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,36 +14,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b573b464c26c3864cece697191cf03545ada779
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a4215d3ea841f8e7c7c9f057535d9585682dcfa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128720"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510462"
 ---
-# <a name="commenting-code-in-a-legacy-language-service"></a>Commento di codice in un servizio di linguaggio Legacy
-Linguaggi di programmazione in genere forniscono un mezzo per inserire annotazioni o commenti nel codice. Un commento è una sezione di testo che fornisce informazioni aggiuntive sul codice, ma viene ignorato durante la compilazione o interpretazione.  
+# <a name="comment-code-in-a-legacy-language-service"></a>Commentare il codice in un servizio di linguaggio legacy
+I linguaggi di programmazione in genere forniscono un mezzo per inserire annotazioni o commenti nel codice. Un commento è una sezione di testo che fornisce informazioni aggiuntive sul codice, ma viene ignorato durante la compilazione o interpretazione.  
   
- Le classi di pacchetto gestito (MPF) framework forniscono supporto per commenti e rimozione dei commenti sul testo selezionato.  
+ Le classi di framework (MPF) di pacchetto gestito forniscono supporto per l'inserimento e rimozione dei commenti sul testo selezionato.  
   
 ## <a name="comment-styles"></a>Stili di commento  
- Esistono due stili generale di commento:  
+Esistono due stili generali di commento:  
+   
+1.  Commenti di riga, in cui il commento è su una singola riga.  
   
-1.  Commenti a riga, in cui il commento è una singola riga.  
+2.  Commenti di blocco, dove il commento può includere più righe.  
   
-2.  Commenti del blocco, dove il commento può includere più righe.  
+
+I commenti a riga sono in genere un carattere iniziale (o caratteri), mentre i commenti di blocco sono caratteri di inizio e fine. Ad esempio, nel linguaggio c#, un commento a riga inizia con `//`, e un commento del blocco inizia con `/*` e termina con `*/`.  
   
- I commenti a riga in genere dispongono di un carattere iniziale (o caratteri), mentre i commenti del blocco di caratteri di inizio e di fine. Ad esempio, in c#, un commento a riga inizia con / /, e inizia un blocco di commento con / * e finisce con \*/.  
+Quando l'utente seleziona il comando **Commenta selezione** dal **modificare** > **avanzate** dal menu il comando viene indirizzato al <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> metodo sul <xref:Microsoft.VisualStudio.Package.Source> classe. Quando l'utente seleziona il comando **rimuovere il commento dalla selezione**, il comando viene instradato al <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> (metodo).  
   
- Quando l'utente seleziona il comando **Commenta selezione** dal **modifica** -> **avanzate** menu, il comando viene indirizzato al <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> metodo il <xref:Microsoft.VisualStudio.Package.Source> classe. Quando l'utente seleziona il comando **rimuovere il commento selezione**, il comando viene indirizzato al <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> metodo.  
+## <a name="support-code-comments"></a>Supporta i commenti di codice  
+ È possibile avere commenti del codice supporto servizio di linguaggio per mezzo del `EnableCommenting` del parametro denominato il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Consente di impostare il <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> proprietà del <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Per altre informazioni sull'impostazione della lingua le funzionalità del servizio, vedere [registrare un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service1.md).  
   
-## <a name="supporting-code-comments"></a>Commenti del codice di supporto  
- È possibile disporre i commenti di codice lingua supporto servizio mediante il `EnableCommenting` denominato parametro del <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Consente di impostare il <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> proprietà la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Per ulteriori informazioni sull'impostazione language servicce funzionalità, vedere [la registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
-  
- È inoltre necessario eseguire l'override di <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> per restituire un <xref:Microsoft.VisualStudio.Package.CommentInfo> struttura con i caratteri di commento per la propria lingua. C#-caratteri di commento stile linea sono l'impostazione predefinita.  
+ È anche necessario eseguire l'override di <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> per restituire un <xref:Microsoft.VisualStudio.Package.CommentInfo> struttura con i caratteri di commento per la propria lingua. C#-caratteri del commento riga stile sono quelli predefiniti.  
   
 ### <a name="example"></a>Esempio  
- Ecco un esempio di implementazione del <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> metodo.  
+ Ecco un esempio di implementazione del <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> (metodo).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -65,5 +66,5 @@ namespace MyLanguagePackage
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzionalità del linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)   
- [Registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)
+ [Funzionalità del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Registrare un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)

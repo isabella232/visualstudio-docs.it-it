@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433168"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510149"
 ---
 # <a name="mip-map-generation-variant"></a>Variante di generazione di mappe MIP
 Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di rendering.  
@@ -28,7 +28,7 @@ Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di renderi
  Se questa variante mostra un aumento delle prestazioni significativo, indica che si stanno usando trame senza abilitare le mappe MIP e pertanto senza sfruttare al massimo la cache delle trame.  
   
 ## <a name="remarks"></a>Note  
- La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, la generazione di mappe MIP viene forzata quando l'oggetto D3D11_TEXTUR2D_DESC passato in `pDesc` descrive una risorsa shader che non cambia, ovvero:  
+ La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, generazione di mappe mip viene forzata quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una risorsa shader che è:  
   
 -   Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.  
   
