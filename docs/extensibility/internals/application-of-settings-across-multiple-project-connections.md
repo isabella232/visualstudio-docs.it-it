@@ -1,5 +1,5 @@
 ---
-title: Applicazione delle impostazioni tra più connessioni di progetto | Documenti Microsoft
+title: Applicazione delle impostazioni tra più connessioni di progetto | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dff30ea80fb2de9bf4d90ffa48cd2f9b3d40756
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d8b8d7d6dc1e596686a2fad7b53363b2387a47b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129206"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500043"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Applicazione delle impostazioni tra più connessioni di progetto
-Per eseguire la stessa operazione di controllo di origine in più contesti di connessione o di più progetti compilati utilizzando la 1.2 di API plug-in controllo di origine, è possibile utilizzare un'operazione batch un plug-in controllo del codice sorgente. Batch possono essere utilizzati per eliminare ridondanti, finestre di dialogo dall'esperienza utente per ogni progetto.  
+Un plug-in del controllo del codice sorgente compilati usando l'origine controllo plug-in API versione 1.2, può usare un'operazione batch per eseguire la stessa operazione di controllo di origine in più progetti o più contesti di connessione. Batch sono utilizzabile per eliminare le applicazioni ridondanti, finestre di dialogo dall'esperienza utente per ogni progetto.  
   
- Se un utente seleziona più elementi che appartengono a più di una connessione di un plug-in controllo del codice sorgente compilata utilizzando l'API plug-in origine controllo 1.1, (ad esempio, due progetti Web nei computer di condivisione di file diverso) e ne viene verificata l'uscita, l'utente visualizzerà la stessa finestra di dialogo più volte. Ciò si verifica anche se l'utente fa clic il **applica a tutte** casella di controllo nella finestra di dialogo, perché l'IDE Reimposta lo stato per ogni contesto di connessione.  
+ Se un utente seleziona più elementi che appartengono a più di una connessione in un plug-in del controllo del codice sorgente creata mediante origine controllo plug-in API versione 1.1 (ad esempio, due progetti web nei computer diversi con la condivisione file) e ne viene verificata l'uscita, l'utente vede lo stesso finestra di dialogo ripetutamente. Questo scenario si verifica anche se l'utente fa clic il **applica a tutti** casella di controllo nella finestra di dialogo, perché l'IDE Reimposta lo stato per ogni contesto di connessione.  
   
-## <a name="new-capability-flag"></a>Flag di nuove funzionalità  
- `SccBeginBatch` Viene impostata dalla funzione di `SCC_CAP_BATCH` flag per indicare che un'operazione batch è in corso  
+## <a name="new-capability-flag"></a>Nuovo flag funzionalità  
+ Il `SccBeginBatch` viene impostata dalla funzione di `SCC_CAP_BATCH` flag per indicare che un'operazione batch è in corso.  
   
 ## <a name="new-functions"></a>Nuove funzioni  
- Le nuove funzioni seguenti supportano l'operazione batch:  
+Le nuove funzioni seguenti supportano l'operazione batch:  
   
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
   
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
+
   
- Il `SCCBeginBatch` inizia un gruppo di operazioni di controllo codice sorgente con una funzione. `SccEndBatch` Chiude il gruppo. I gruppi non possono essere annidati.  
+Il `SCCBeginBatch` funzione inizia un gruppo di operazioni di controllo di origine. Il `SccEndBatch` funzione chiude il gruppo. I gruppi non possono essere annidati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Novità della versione 1.2 dell'API del plug-in del controllo del codice sorgente](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Novità di plug-in origine controllo API versione 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

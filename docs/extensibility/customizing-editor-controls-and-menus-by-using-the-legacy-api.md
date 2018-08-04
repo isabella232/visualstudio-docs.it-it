@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione di menu e controlli di Editor utilizzando l'API Legacy | Documenti Microsoft
+title: Personalizzazione di menu e controlli di Editor utilizzando l'API Legacy | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7e6b90319d6c0e84649f52da97b2678553254b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fb11419e6fccf4ec3ca510e91bf79702a5a4348
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102382"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498529"
 ---
-# <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Personalizzazione di menu e controlli di Editor utilizzando l'API Legacy
-Un servizio di linguaggio o una visualizzazione di testo è possibile controllare il menu di scelta rapida e i controlli nell'editor. Le pagine di questa sezione viene illustrato come utilizzare queste funzionalità.  
+# <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Personalizzare i controlli editor e Mmenus usando l'API legacy
+Un servizio di linguaggio o una visualizzazione di testo può controllare il menu di scelta rapida e i controlli nell'editor. Le pagine in questa sezione illustrano come usare queste funzionalità.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Barra dei menu a discesa](../extensibility/drop-down-bar.md)  
- Descrive la barra dei menu a discesa e vengono fornite istruzioni per implementarlo.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Barra di riepilogo a discesa](../extensibility/drop-down-bar.md)  
+ Descrive la barra di riepilogo a discesa e vengono fornite istruzioni per implementarlo.  
   
  [Gestione dei comandi](../extensibility/command-handling.md)  
- Comando Details gestione negli editor.  
+ Comando Details gestisce negli editor.  
   
  [Menu di scelta rapida](../extensibility/context-menus.md)  
- Viene descritto il menu di scelta rapida dell'editor.  
+ Vengono descritti i menu di scelta rapida dell'editor.  
   
  [Procedura: aggiornare la barra di stato](../extensibility/how-to-update-the-status-bar.md)  
- Vengono fornite istruzioni per l'aggiornamento di **barra di stato**.  
+ Fornisce istruzioni su come aggiornare il **sulla barra di stato**.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Estensioni dell'editor e dei servizi di linguaggio](../extensibility/editor-and-language-service-extensions.md)  
+ [Estensioni del servizio di editor e linguaggio](../extensibility/editor-and-language-service-extensions.md)  
  Introduce i diversi tipi di editor che è possibile usare in Visual Studio.

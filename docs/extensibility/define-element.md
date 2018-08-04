@@ -1,5 +1,5 @@
 ---
-title: Definire l'elemento | Documenti Microsoft
+title: Definire l'elemento | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c0b52e50731ff63fb790a1a1b201b0646caea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126962"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497161"
 ---
 # <a name="define-element"></a>Definire l'elemento
-Definisce una coppia di nome e il valore di simbolo. Questo simbolo può essere valutato da attributi condizionali. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md). Vedere anche il [simboli elemento](../extensibility/symbols-element.md).  
+Definisce una coppia nome / valore di simbolo. Questo simbolo può essere valutato da attributi condizionali. Per altre informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md). Vedere anche il [elemento Symbols](../extensibility/symbols-element.md).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,7 +39,7 @@ Definisce una coppia di nome e il valore di simbolo. Questo simbolo può essere 
 |---------------|-----------------|  
 |name|Obbligatorio. Il nome del simbolo:<br /><br /> nome = "Modalità"|  
 |predefinito|Obbligatorio. Il valore del simbolo:<br /><br /> valore = "Standard"|  
-|Condizione|Facoltativo. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|Facoltativo. Per altre informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  
@@ -58,4 +58,4 @@ Definisce una coppia di nome e il valore di simbolo. Questo simbolo può essere 
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

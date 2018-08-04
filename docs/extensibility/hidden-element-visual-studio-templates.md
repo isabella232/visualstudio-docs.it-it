@@ -1,5 +1,5 @@
 ---
-title: Nascosto elemento (modelli di Visual Studio) | Documenti Microsoft
+title: Nascosto elemento (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,19 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41005dc789cf464973b225c76b2845db5565772
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18c5783eb6e9572e030e4ea764ad0393f61f6049
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127304"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498262"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (modelli di Visual Studio)
-Specifica se il modello viene visualizzato in entrambi i **nuovo progetto** o **Aggiungi nuovo elemento** la finestra di dialogo.  
+Specifica se il modello viene visualizzato in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
- \<Nascosta >  
+ \<Nascosto >  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -53,7 +53,7 @@ Specifica se il modello viene visualizzato in entrambi i **nuovo progetto** o **
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere `true` o `false`, a indicare o meno il modello verrà visualizzato il **nuovo progetto** o **Aggiungi nuovo elemento** finestre di dialogo.  
+ Il testo deve essere `true` o `false`, che indica se il modello verrà visualizzato nel **nuovo progetto** o **Aggiungi nuovo elemento** finestre di dialogo.  
   
 ## <a name="remarks"></a>Note  
  `Hidden` è un elemento facoltativo.  
@@ -89,5 +89,5 @@ Specifica se il modello viene visualizzato in entrambi i **nuovo progetto** o **
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+ [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Estensione delle impostazioni utente e le opzioni | Documenti Microsoft
+title: Extending User Settings and Options | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,27 +16,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d71328c84f69b2a6adbd682be3a2b326d9f542e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60e5f70e471c3385ccae5ee39e9e68db1e93b20c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135540"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498633"
 ---
-# <a name="extending-user-settings-and-options"></a>Opzioni e impostazioni utente estensione
-In Visual Studio sono disponibili due modi per mantenere le preferenze dell'utente. Il **Strumenti / opzioni** pagine consentono agli utenti di impostare i propri valori per diversi tipi di impostazioni, generali e specifici della lingua. Impostazioni utente consentono agli utenti di specificare le proprietà di configurazione generali di Visual Studio. Per ulteriori informazioni sulle pagine di opzioni, vedere [opzioni e le pagine di opzioni](../extensibility/internals/options-and-options-pages.md). Per ulteriori informazioni sulle impostazioni utente, vedere [il supporto per le impostazioni utente](../extensibility/internals/support-for-user-settings.md).  
+# <a name="extend-user-settings-and-options"></a>Estendere le opzioni e impostazioni utente
+In Visual Studio, esistono due modi principali per mantenere le preferenze dell'utente. Il **degli strumenti** > **opzioni** pagine consentono agli utenti di impostare i propri valori per molti tipi diversi di impostazioni, generali e specifici del linguaggio. Le impostazioni utente consentono agli utenti di specificare le proprietà di configurazione generali di Visual Studio. Per altre informazioni sulle pagine di opzioni, vedere [opzioni e le pagine di opzioni](../extensibility/internals/options-and-options-pages.md). Per altre informazioni sulle impostazioni utente, vedere [supporto per le impostazioni utente](../extensibility/internals/support-for-user-settings.md).  
   
- [Creazione di una pagina di opzioni](../extensibility/creating-an-options-page.md)  
+ [Creare una pagina di opzioni](../extensibility/creating-an-options-page.md)  
  Viene illustrato come creare una pagina di opzioni.  
   
- [Creazione di una categoria di impostazioni](../extensibility/creating-a-settings-category.md)  
+ [Creare una categoria di impostazioni](../extensibility/creating-a-settings-category.md)  
  Viene illustrato come creare una categoria di impostazioni.  
   
- [Uso dell'archivio delle impostazioni](../extensibility/using-the-settings-store.md)  
- Viene illustrato come utilizzare l'archivio di impostazioni.  
+ [Usare l'archivio delle impostazioni](../extensibility/using-the-settings-store.md)  
+ Illustra come usare l'archivio delle impostazioni.  
   
- [Recupero delle informazioni sui servizi dall'archivio delle impostazioni](../extensibility/getting-service-information-from-the-settings-store.md)  
- Viene illustrato come ottenere i servizi disponibili dall'archivio di impostazioni.  
+ [Ottenere informazioni sul servizio dall'archivio delle impostazioni](../extensibility/getting-service-information-from-the-settings-store.md)  
+ Viene illustrato come ottenere i servizi disponibili dall'archivio delle impostazioni.  
   
- [Scrittura nell'archivio delle impostazioni utente](../extensibility/writing-to-the-user-settings-store.md)  
- Viene illustrato come scrivere nell'archivio impostazioni utente.
+ [Scrivere nell'archivio delle impostazioni utente](../extensibility/writing-to-the-user-settings-store.md)  
+ Viene illustrato come scrivere nell'archivio delle impostazioni utente.

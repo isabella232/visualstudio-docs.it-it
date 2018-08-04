@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152526"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498564"
 ---
 # <a name="add-search-to-a-tool-window"></a>Aggiungi ricerca di una finestra degli strumenti
 Quando si creano o aggiorna una finestra degli strumenti nella propria estensione, è possibile aggiungere la stessa funzionalità di ricerca che viene visualizzato in un' posizione in Visual Studio. Questa funzionalità include le funzionalità seguenti:  
@@ -33,7 +33,7 @@ Quando si creano o aggiorna una finestra degli strumenti nella propria estension
   
 -   La possibilità di filtrare le ricerche da campi specifici o gli aspetti delle destinazioni di ricerca.  
   
- Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività seguenti:  
+Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività seguenti:  
   
 1.  Creare un progetto di VSPackage.  
   

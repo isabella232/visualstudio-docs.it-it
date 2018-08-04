@@ -1,5 +1,5 @@
 ---
-title: GUID e ID di barre degli strumenti di Visual Studio | Documenti Microsoft
+title: GUID e ID delle barre degli strumenti di Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,27 +19,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 394e0991d734279879df89422ac23fdd26899eeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6982835b9d3b6259a47439dbe7b1b9252edc3dbe
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133988"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499006"
 ---
-# <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e ID di barre degli strumenti di Visual Studio
-In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi in ambiente di sviluppo integrato (IDE) di Visual Studio e dei gruppi che contengono. Questi valori sono definiti nel file con estensione vsct che vengono installati come parte di Visual Studio SDK. Per ulteriori informazioni, vedere [IDE-Defined comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
+# <a name="guids-and-ids-of-visual-studio-toolbars"></a>Barre degli strumenti GUID e ID di Visual Studio
+In questo argomento elenca i valori GUID e ID delle barre degli strumenti che sono inclusi nell'ambiente di sviluppo integrato (IDE) di Visual Studio e dei gruppi che contengono. Questi valori sono definiti nella *vsct* i file che vengono installati come parte di Visual Studio SDK. Per altre informazioni, vedere [definiti dall'IDE comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
 > [!NOTE]
->  Molte delle barre degli strumenti di Visual Studio non sono definiti da Visual Studio e il relativo GUID e i valori di ID non sono pubblici. Questo argomento elenca solo le barre degli strumenti che sono definiti nel file con estensione vsct Visual Studio SDK.  
+>  Molte delle barre degli strumenti disponibili per Visual Studio non sono definite da Visual Studio e i rispettivi GUID e valori di ID non sono pubblici. Questo argomento vengono elencate solo le barre degli strumenti che sono definiti in Visual Studio SDK *vsct* file.  
   
- Per ulteriori informazioni su come usare gli oggetti IDE che sono definiti nel file vsct, vedere [estensione menu e comandi](../../extensibility/extending-menus-and-commands.md).  
+ Per altre informazioni su come lavorare con gli oggetti definiti in IDE *vsct* i file, vedere [estendono i menu e comandi](../../extensibility/extending-menus-and-commands.md).  
   
- Le barre degli strumenti predefinita fornite dall'IDE di Visual Studio utilizza il GUID `guidSHLMainMenu`, salvo diversa indicazione, utilizzando la sintassi coppia GUID: ID.  
+ Le barre degli strumenti predefinita fornite dall'IDE di Visual Studio utilizzare il GUID `guidSHLMainMenu`, salvo diversa indicazione tramite `GUID:ID` sintassi.  
   
-## <a name="ide-toolbars"></a>Barre degli strumenti IDE  
- Le barre degli strumenti seguenti sono fornite tramite l'IDE di Visual Studio. Barre degli strumenti possono essere visualizzati selezionandole nel **barre degli strumenti** sottomenu del **strumenti** menu. Barre degli strumenti nelle finestre degli strumenti non sono inclusi in questa sezione.  
+## <a name="ide-toolbars"></a>Barre degli strumenti dell'IDE  
+ Le barre degli strumenti seguenti vengono forniti tramite l'IDE di Visual Studio. Le barre degli strumenti possono essere visualizzati selezionandole nel **barre degli strumenti** sottomenu delle **strumenti** menu. Le barre degli strumenti nelle finestre degli strumenti non sono inclusi in questa sezione.  
   
- Solo i gruppi possono accedere direttamente dalle barre degli strumenti. Per aggiungere un gruppo, impostare il relativo elemento padre per il GUID e l'ID della barra degli strumenti. Per aggiungere un pulsante a una barra degli strumenti, impostare il relativo elemento padre a un gruppo sulla barra degli strumenti.  
+ Solo i gruppi possono discendono direttamente dalle barre degli strumenti. Per aggiungere un gruppo, impostare il relativo elemento padre sul GUID e ID della barra degli strumenti. Per aggiungere un pulsante a una barra degli strumenti, impostare il relativo elemento padre a un gruppo sulla barra degli strumenti.  
   
 |ToolBar|Id|  
 |-------------|--------|  
@@ -50,16 +50,16 @@ In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi 
 |Posizione di debug|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
 ### <a name="special-toolbars"></a>Barre degli strumenti speciali  
- Queste barre degli strumenti sono definiti dall'IDE di Visual Studio, ma non contengono gruppi di comandi e funzioni specializzate.  
+ Queste barre degli strumenti sono definiti dall'IDE di Visual Studio, ma che svolgono funzioni specializzate e non ospitano gruppi di comandi.  
   
 |ToolBar|Id|  
 |-------------|--------|  
-|Aggiungi comando|IDM_VS_TOOL_ADDCOMMAND|  
+|Comando Add|IDM_VS_TOOL_ADDCOMMAND|  
 |Undefined|IDM_VS_TOOL_UNDEFINED|  
-|XML Schema|IDM_VS_TOOL_SCHEMA|  
-|Dati XML|IDM_VS_TOOL_DATA|  
+|Schema XML|IDM_VS_TOOL_SCHEMA|  
+|XML (dati)|IDM_VS_TOOL_DATA|  
   
-## <a name="groups-on-the-ide-toolbars"></a>Gruppi di barre degli strumenti IDE  
+## <a name="groups-on-the-ide-toolbars"></a>Gruppi in barre degli strumenti dell'IDE  
  Per aggiungere un pulsante a una barra degli strumenti standard, impostare uno dei seguenti gruppi come elemento padre. I gruppi vengono ordinati in base della barra degli strumenti padre.  
   
 ### <a name="standard-toolbar-groups"></a>Gruppi della barra degli strumenti standard  
@@ -67,23 +67,23 @@ In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi 
 |nome|Id|  
 |----------|--------|  
 |Salva/Apri|IDG_VS_TOOLSB_SAVEOPEN|  
-|Taglia o copia|IDG_VS_TOOLSB_CUTCOPY|  
+|Taglia/Copia|IDG_VS_TOOLSB_CUTCOPY|  
 |Annullamento/ripristino|IDG_VS_TOOLSB_UNDOREDO|  
-|Esegui/compilazione|IDG_VS_TOOLSB_RUNBUILD|  
+|Esecuzione/Build|IDG_VS_TOOLSB_RUNBUILD|  
 |Cerca|IDG_VS_TOOLSB_SEARCH|  
 |WINDOWS|IDG_VS_TOOLSB_WINDOWS|  
 |Nuove finestre|IDG_VS_TOOLSB_NEWWINDOWS|  
 |Caricamento/salvataggio|IDG_VS_WINDOWUI_LOADSAVE|  
-|misuratore|IDG_VS_TOOLSB_GAUGE|  
+|Misuratore|IDG_VS_TOOLSB_GAUGE|  
   
-### <a name="build-toolbar-groups"></a>Creazione di gruppi della barra degli strumenti  
+### <a name="build-toolbar-groups"></a>I gruppi della barra degli strumenti di compilazione  
   
 |nome|Id|  
 |----------|--------|  
 |Barra di compilazione|IDG_VS_BUILDBAR|  
 |Annulla|IDG_VS_BUILD_CANCEL|  
   
-### <a name="text-editor-toolbar-groups"></a>Gruppi della barra degli strumenti Editor di testo  
+### <a name="text-editor-toolbar-groups"></a>Gruppi della barra degli strumenti editor di testo  
   
 |nome|Id|  
 |----------|--------|  
@@ -92,7 +92,7 @@ In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi 
 |Commento|IDG_VS_EDITTOOLBAR_COMMENT|  
 |Segnalibri|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|  
   
-### <a name="debug-toolbar-groups"></a>Gruppi della barra degli strumenti di debug  
+### <a name="debug-toolbar-groups"></a>I gruppi della barra degli strumenti di debug  
   
 |nome|Id|  
 |----------|--------|  
@@ -101,17 +101,17 @@ In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi 
 |Espressioni di controllo|IDG_DEBUG_TOOLBAR_WATCH|  
 |WINDOWS|IDG_DEBUG_TOOLBAR_WINDOWS|  
   
-### <a name="debug-location-toolbar-groups"></a>Gruppi della barra degli strumenti posizione di debug  
+### <a name="debug-location-toolbar-groups"></a>I gruppi della barra degli strumenti posizione di debug  
   
 |nome|Id|  
 |----------|--------|  
 |Posizione di debug|IDG_DEBUG_CONTEXT_TOOLBAR|  
   
-## <a name="tool-window-toolbars"></a>Barre degli strumenti finestra dello strumento  
- Barre degli strumenti possono essere visualizzati direttamente nell'IDE o nelle finestre degli strumenti quali **Esplora**. Poiché le finestre degli strumenti non sono definite nel file vsct, barre degli strumenti finestra di strumento non è definito gli elementi padre. Al contrario, vengono inseriti nel codice. Nella tabella seguente mostra le barre degli strumenti visualizzati nelle finestre degli strumenti nell'IDE e contengono i gruppi di comando.  
+## <a name="tool-window-toolbars"></a>Barre degli strumenti della finestra degli strumenti  
+ Le barre degli strumenti possono essere visualizzati direttamente nell'IDE o nelle finestre degli strumenti, ad esempio **Esplora soluzioni**. Perché non sono definite finestre degli strumenti nel *vsct* file, barre degli strumenti finestra degli strumenti non è definito gli elementi padre. Al contrario, vengono inseriti nel codice. La tabella seguente illustra le barre degli strumenti visualizzati nelle finestre degli strumenti nell'IDE e dei gruppi di comandi che contengono.  
   
 > [!NOTE]
->  Barre degli strumenti e i gruppi di utilizzano il GUID `guidSHLMainMenu`, salvo diversa indicazione, utilizzando la sintassi coppia GUID: ID. Se viene specificato un GUID per una barra degli strumenti, si applica anche ai gruppi che derivano da tale barra degli strumenti.  
+>  Barre degli strumenti e i gruppi di utilizzano il GUID `guidSHLMainMenu`, salvo dove diversamente specificato usando la sintassi di coppia GUID: ID. Per una barra degli strumenti viene specificato un GUID, si applica anche ai gruppi che derivano da tale barra degli strumenti.  
   
 |Finestra degli strumenti|ToolBar|Gruppi|  
 |-----------------|-------------|------------|  
@@ -138,6 +138,6 @@ In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi 
 |Processi|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Aggiunta di un Controller di Menu per una barra degli strumenti](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
- [Aggiunta di una barra degli strumenti a una finestra degli strumenti](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [GUID e ID dei menu di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+ [Aggiungere un controller di menu per una barra degli strumenti](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
+ [Aggiungere una barra degli strumenti a una finestra degli strumenti](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
+ [Menu GUID e ID di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

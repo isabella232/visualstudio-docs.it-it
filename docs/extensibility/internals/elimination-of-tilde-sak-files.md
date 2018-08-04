@@ -1,5 +1,5 @@
 ---
-title: Eliminazione di ~ SAK file | Documenti Microsoft
+title: Eliminazione di ~ SAK file | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,26 +15,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61227652bf191280f69466f127c4a400ea43856e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129641"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497950"
 ---
-# <a name="elimination-of-sak-files"></a>Eliminazione di ~ SAK file
-1.2 API di plug-in controllo di origine, il ~ SAK file sono stati sostituiti da flag di capacità e nuove funzioni di rilevare se un plug-in controllo del codice sorgente supporta il file MSSCCPRJ estrazioni condivise.  
+# <a name="elimination-of-sak-files"></a>Eliminazione di ~ file SAK
+In origine controllo plug-in API 1.2, il *~ SAK* i file sono stati sostituiti dai flag funzionalità e nuove funzioni di rilevare la presenza di un'origine di controllo del plug-in supporta le *MSSCCPRJ* file ed estrazioni condivise.  
   
-## <a name="sak-files"></a>~ Il file SAK  
- Visual Studio .NET 2003 creati i file temporanei con preceduti ~ SAK. Questi file vengono usati per determinare se un plug-in controllo del codice sorgente supporta:  
+## <a name="sak-files"></a>~ File SAK  
+Visual Studio .NET 2003 creati i file temporanei con preceduti *~ SAK*. Questi file vengono usati per determinare se un controllo del codice sorgente del plug-in supporta:  
   
--   Il MSSCCPRJ. File SCC.  
+- Il *Mssccprj. scc* file.  
   
--   Estrazioni multiple (condivise).  
+- Estrazioni multiple (condivise).  
+    
+Per i plug-in che supportano funzioni avanzate disponibili nella versione 1.2 API dei plug-in controllo di origine, l'IDE può rilevare queste funzionalità senza creare file temporanei tramite l'uso di nuove funzionalità, flag e le funzioni, dettagliate nelle sezioni seguenti.  
   
- Per i plug-in che supportano le funzioni avanzate disponibili nella 1.2 di API plug-in controllo origine, l'IDE è possibile rilevare queste funzionalità senza creare file temporanei tramite l'utilizzo di nuove funzionalità, flag e funzioni, dettagliate nelle sezioni seguenti.  
-  
-## <a name="new-capability-flags"></a>Nuovo flag di capacità  
+## <a name="new-capability-flags"></a>Nuovi flag funzionalità  
  `SCC_CAP_SCCFILE`  
   
  `SCC_CAP_MULTICHECKOUT`  
@@ -44,14 +44,14 @@ ms.locfileid: "31129641"
   
  [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)  
   
- Se un plug-in controllo del codice sorgente supporta più estrazioni (condivise), quindi dichiara il `SCC_CAP_MULTICHECKOUT` funzionalità e implementa il `SccIsMultiCheckOutEnabled` (funzione). Questa funzione viene chiamata ogni volta che si verifica un'operazione di estrazione in uno dei progetti di controllo del codice sorgente.  
+ Se un controllo del codice sorgente del plug-in supporta estrazioni multiple (condivise), quindi dichiara il `SCC_CAP_MULTICHECKOUT` capacità e implementa la `SccIsMultiCheckOutEnabled` (funzione). Questa funzione viene chiamata ogni volta che viene eseguita un'operazione di estrazione in uno dei progetti di controllo del codice sorgente.  
   
- Se un plug-in controllo del codice sorgente supporta la creazione e utilizzo di un MSSCCPRJ. File SCC, quindi si dichiara il `SCC_CAP_SCCFILE` funzionalità e implementa il [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Questa funzione viene chiamata con un elenco di file. La funzione restituisce `TRUE/FALSE` per ogni file indicare se un MSSCCPRJ deve essere usata da Visual Studio. File SCC relativo. Se il plug-in controllo del codice sorgente sceglie di non supportare queste nuove funzionalità e funzioni, è possibile utilizzare la seguente chiave del Registro di sistema per disabilitare la creazione di questi file:  
+ Se un controllo del codice sorgente del plug-in supporta la creazione e uso di un' *Mssccprj. scc* del file, quindi dichiara il `SCC_CAP_SCCFILE` funzionalità e implementa la [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Questa funzione viene chiamata con un elenco di file. La funzione restituisce `TRUE' or 'FALSE` per ogni file indicare se Visual Studio deve utilizzare un *Mssccprj. scc* per tale file. Se il plug-in del controllo del codice sorgente viene scelto di non supportare queste nuove funzionalità e le funzioni, è possibile usare la chiave del Registro di sistema seguente per disabilitare la creazione di questi file:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateTemporaryFilesInSourceControl" = DWORD: 00000001  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*  
   
 > [!NOTE]
->  Se questa chiave del Registro di sistema è impostata su DWORD: 00000000, è equivalente alla chiave da inesistente e Visual Studio continua a tentare di creare file temporanei. Tuttavia, se la chiave del Registro di sistema è impostata su DWORD: 00000001, Visual Studio non tenta di creare i file temporanei. In alternativa, si presuppone che il plug-in controllo del codice sorgente non supporta il MSSCCPRJ. File di controllo del codice sorgente e non supporta estrazioni condivise.  
+>  Se questa chiave del Registro di sistema è impostata su *dword:00000000*è equivalente alla chiave in corso inesistenti e Visual Studio continua a tentare di creare i file temporanei. Tuttavia, se la chiave del Registro di sistema è impostata su *dword:00000001*, Visual Studio non tenta di creare i file temporanei. In alternativa, si presuppone che il plug-in del controllo del codice sorgente non supporta il *Mssccprj. scc* file e non supporta estrazioni condivise.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Novità della versione 1.2 dell'API del plug-in del controllo del codice sorgente](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Novità di plug-in origine controllo API versione 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

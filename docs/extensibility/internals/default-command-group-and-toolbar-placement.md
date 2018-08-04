@@ -1,5 +1,5 @@
 ---
-title: Comando, gruppo e il posizionamento della barra degli strumenti predefiniti | Documenti Microsoft
+title: Comando, gruppo e il posizionamento della barra degli strumenti predefiniti | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,31 +18,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0753a29e323f18ad40bcc62a70cf8e9b1123b728
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da5716460c428098b2b6cc3bb78a51c3831201b2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130531"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498230"
 ---
-# <a name="default-command-group-and-toolbar-placement"></a>Comando predefinito, gruppo e il posizionamento della barra degli strumenti
-Per l'uniformità di prodotto e stabilità, l'interfaccia utente visualizza determinati gruppi di comandi per impostazione predefinita, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce le definizioni per i comandi e i gruppi di comandi. I VSPackage è inoltre possono utilizzare i comandi standard e i gruppi di comandi.  
+# <a name="default-command-group-and-toolbar-placement"></a>Posizione di comando, il gruppo e sulla barra degli strumenti predefinita
+Per prodotto uniformità e stabilità, l'interfaccia utente visualizza determinati gruppi di comandi per impostazione predefinita, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] includono le definizioni dei comandi e i gruppi di comandi. I VSPackage possono anche usare i comandi standard e i gruppi di comandi.  
   
- I gruppi di comandi predefiniti rientrano in tre categorie: IDE comandi, i comandi di prodotto e i comandi dell'editor.  
+ I gruppi di comandi predefiniti possono essere suddivise in tre categorie: IDE comandi, i comandi di prodotto e i comandi dell'editor.  
   
-## <a name="default-ide-commands"></a>Comandi IDE predefiniti  
- La barra degli strumenti IDE predefinito include comandi condivisi da tutti i prodotti contenuti nella [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Sono inclusi i comandi relativi alle operazioni del progetto generico, ad esempio il **salvare** comando e **Aggiungi elemento** comando. Pacchetti VSPackage non devono aggiungere o sottrarre questa barra degli strumenti, con una sola eccezione: se il prodotto o un pacchetto VSPackage aggiunge una nuova finestra degli strumenti, quindi la finestra deve essere aggiunto all'elenco di finestre degli strumenti disponibili nel **vista** menu. Nuovi prodotti o i pacchetti VSPackage è possono aggiungere i propri sulla barra degli strumenti.  
+## <a name="default-ide-commands"></a>Comandi predefiniti dell'IDE  
+ La barra degli strumenti dell'IDE predefinito include i comandi condivisi da tutti i prodotti contenuti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Sono inclusi i comandi relativi alle operazioni del progetto generico, ad esempio la **salvare** comando e il **Aggiungi elemento** comando. I pacchetti VSPackage non devono aggiungere o sottrarre da questa barra degli strumenti, con una sola eccezione: se il prodotto o un pacchetto VSPackage aggiunge una nuova finestra degli strumenti, quindi la finestra deve essere aggiunto all'elenco di finestre degli strumenti disponibili nel **vista** menu. Nuovi prodotti o i pacchetti VSPackage possono aggiungere i propri sulla barra degli strumenti.  
   
-## <a name="default-product-commands"></a>Comandi di prodotto predefiniti  
- Ogni prodotto può fornire l'IDE con il proprio barra degli strumenti predefinita che contiene importanti e comandi utilizzati di frequente. È consigliabile, tuttavia, per utilizzare esistente menu e barre degli strumenti quando possibile e integrare con altre barre degli strumenti attività specifiche in base alle esigenze.  
+## <a name="default-product-commands"></a>Comandi predefinito del prodotto  
+ Ogni prodotto può fornire l'IDE con la propria barra degli strumenti predefinita che contiene importanti e comandi utilizzati di frequente. È consigliabile, tuttavia, per utilizzare i menu e barre degli strumenti ogni volta che è possibile esistenti e integrare con altre barre degli strumenti attività specifiche in base alle esigenze.  
   
- Il campo priorità per una barra degli strumenti determina la posizione di riga. Zero priorità posiziona la barra degli strumenti nella terza riga (riga 3), sotto la barra dei menu (riga 1) e **Standard** (riga 2) sulla barra degli strumenti. Pertanto, altre barre degli strumenti vengono visualizzati in una riga (priorità + 3). Barre degli strumenti successive vengono posizionate nella stessa riga, se c'è spazio; in caso contrario, vengono automaticamente spostati alla riga successiva.  
+ Il campo priorità per una barra degli strumenti determina la posizione di riga. Zero priorità posiziona la barra degli strumenti nella terza riga (riga 3), sotto la barra dei menu (1 riga) e il **Standard** (riga 2) sulla barra degli strumenti. Pertanto, altre barre degli strumenti vengono visualizzati in corrispondenza di riga (priorità + 3). Le barre degli strumenti successive vengono inseriti nella stessa riga, se c'è spazio; in caso contrario, queste vengono spostate automaticamente la riga successiva.  
   
-## <a name="default-editor-commands"></a>Comandi dell'Editor predefinito  
- Un VSPackage che fornisce un editor personalizzato deve fornire una barra degli strumenti predefinita che contiene più importanti e comandi utilizzati di frequente in tale editor. Editor barra degli strumenti dovrebbe essere visualizzato quando l'editor è attivo e deve essere nascosto quando l'editor non è attivo. È possibile controllare la visibilità nel `VisibilityConstraints Element` del file con estensione vsct.  
+## <a name="default-editor-commands"></a>Comandi dell'editor predefinito  
+ Un pacchetto VSPackage che fornisce un editor personalizzato deve fornire una barra degli strumenti predefinita che contiene i più importanti e comandi utilizzati di frequente in tale editor. Barra degli strumenti editor dovrebbe essere visualizzato quando l'editor è attivo e deve essere nascosto quando l'editor non è attivo. Tale visibilità viene controllata nel `VisibilityConstraints` elemento del *vsct* file.  
   
- Barre degli strumenti Editor deve essere posizionati di sotto di barre degli strumenti IDE e del prodotto.  
+ Barre degli strumenti Editor devono essere posizionati sotto le barre degli strumenti dell'IDE e il prodotto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Gruppi di menu e comandi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
+ [I gruppi, menu e comandi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

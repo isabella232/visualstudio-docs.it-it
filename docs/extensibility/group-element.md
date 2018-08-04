@@ -1,5 +1,5 @@
 ---
-title: Elemento Group | Documenti Microsoft
+title: Elemento Group | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 184bb709d25c55adcc34e73b6df1ac5f4a2448bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2dad2781a0d8231c40ad16dd2c5bd2a7a0905cd3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129157"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497108"
 ---
 # <a name="group-element"></a>Elemento Group
-Definisce un gruppo di comando di VSPackage.  
+Definisce un gruppo di comandi di VSPackage.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <Group guid="guidMyCommandSet" id="MyGroup" priority="0x101">  
   <Parent>... </Parent>  
 </Group>  
@@ -41,8 +41,8 @@ Definisce un gruppo di comando di VSPackage.
 |---------------|-----------------|  
 |guid|Obbligatorio. GUID dell'identificatore di comando/ID GUID.|  
 |ID|Obbligatorio. ID dell'identificatore di comando/ID GUID.|  
-|priority|Facoltativo. Un valore numerico che specifica la priorità.|  
-|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|priority|Facoltativo. Valore numerico che specifica la priorità.|  
+|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
@@ -55,15 +55,15 @@ Definisce un gruppo di comando di VSPackage.
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comando di un VSPackage.|  
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi di un pacchetto VSPackage.|  
   
 ## <a name="example"></a>Esempio  
   
-```  
+```xml  
 <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
   <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
 </Group>  
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di un Editor personalizzato | Documenti Microsoft'
+title: 'Procedura dettagliata: Creazione di un Editor personalizzato | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ecc70112dc89a1866a4688fd39d8a2aae129387b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9110e1c2ac6c39898f7dbbd6f9f4412ebcba278
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138772"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497437"
 ---
-# <a name="walkthrough-creating-a-custom-editor"></a>Procedura dettagliata: Creazione di un Editor personalizzato
-Il modello di progetto VSPackage è possibile creare un editor personalizzato semplice in C++.  Il modello di progetto VSPackage non supporta più progetti in c# o Visual Basic. Per ulteriori informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+# <a name="walkthrough-create-a-custom-editor"></a>Procedura dettagliata: Creare un editor personalizzato
+Il modello di progetto VSPackage può creare un semplice editor personalizzato in C++. Il modello di progetto VSPackage non supporta più progetti c# o Visual Basic. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [l'installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="the-visual-studio-package-project-template"></a>Il modello di progetto di pacchetto di Visual Studio  
- Il modello di progetto di pacchetto di Visual Studio, vedere il **nuovo progetto** finestra di dialogo nella cartella Extensibility C++  
+ È possibile trovare il modello di progetto di pacchetto di Visual Studio nel **nuovo progetto** nella finestra di dialogo il **C++ estendibilità** cartella.  
   
 ### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Per creare un pacchetto VSPackage usando il modello di pacchetto di Visual Studio  
   
 1.  Creare un progetto con il modello di pacchetto di Visual Studio.  
   
-2.  Selezionare il **Editor personalizzato** opzione e fare clic su **Avanti**. Il **opzioni dell'Editor** viene visualizzata la pagina.  
+2.  Selezionare il **Editor personalizzato** opzione e fare clic su **successivo**. Il **le opzioni dell'Editor** verrà visualizzata la pagina.  
   
-3.  Digitare il nome dell'editor nel **nome Editor** casella. Digitare l'estensione di file che si desidera essere associata con l'editor nel **estensione** casella. L'editor è disponibile per i file con questa estensione. L'estensione di file è registrata per Visual Studio solo, non per Windows. Digitare il nome di file predefinito per nuovi documenti creati con l'editor nel **nome File predefinito** casella.  
+3.  Digitare il nome dell'editor nel **Editor nome** casella. Digitare l'estensione di file che si desidera essere associata con l'editor nel **estensione di File** casella. L'editor è disponibile per i file con questa estensione. L'estensione di file è registrata per Visual Studio solo, non per Windows. Digitare il nome file predefinito per i nuovi documenti creati con l'editor nel **nome File predefinito** casella.  
   
 4.  Fare clic su **Fine** per creare il pacchetto VSPackage nella cartella specificata.  
   
-### <a name="to-test-your-custom-editor"></a>Per testare l'editor personalizzato  
+### <a name="to-test-your-custom-editor"></a>Per eseguire il test dell'editor personalizzato  
   
 1.  Nel **File** dal menu **New** e quindi fare clic su **File**.  
   
-2.  Nel **modelli installati** riquadro del **nuovo File** la finestra di dialogo, seleziona il modello di file, quindi il file di tipo appena registrato.  
+2.  Nel **modelli installati** riquadro della finestra di **nuovo File** finestra di dialogo, seleziona il modello di file, quindi il file di tipo è registrato.  
   
-3.  Fare clic su **aprire** per visualizzare e modificare il documento.  
+3.  Fare clic su **aperto** per visualizzare e modificare il documento.  
   
-     L'editor supporta operazioni di taglia e Incolla, ricerca e sostituzione e open-carico.  
+     L'editor supporta operazioni di taglia e Incolla, ricerca e sostituzione e open-and-load.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pacchetti VSPackage](../extensibility/internals/vspackages.md)

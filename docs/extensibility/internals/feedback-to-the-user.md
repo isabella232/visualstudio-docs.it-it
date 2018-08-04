@@ -1,5 +1,5 @@
 ---
-title: Commenti e suggerimenti all'utente | Documenti Microsoft
+title: Commenti e suggerimenti all'utente | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,51 +16,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 629d12974a52bca30c0db96e838c5c731ae1abf7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d87f44ad4a125f0aab0bafc2390cc1682082e5f
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129945"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499588"
 ---
-# <a name="feedback-to-the-user"></a>Commenti e suggerimenti per l'utente
-Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), la risposta visiva relative alle funzionalità disponibili si basa sulla selezione corrente dell'utente e il contesto di selezione globale. Nella tabella seguente sono elencate le funzionalità che sono disponibile in contesti diversi di selezione.  
+# <a name="feedback-to-the-user"></a>Commenti e suggerimenti all'utente
+Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), un feedback visivo relative alle funzionalità disponibili è basata sulla selezione corrente dell'utente e il contesto di selezione globale. La tabella seguente elenca le funzionalità disponibili in contesti differenti.  
   
-|Contesto della selezione|Funzionalità disponibili|  
+|Contesto di selezione|Funzionalità disponibili|  
 |-----------------------|-----------------------------|  
 |IDE|Global|  
-|Set di prodotto corrente|Prodotto specifico|  
-|Gerarchia attivo|Specifica tipo di gerarchia|  
-|Elemento della gerarchia Active|Specifiche del tipo di elemento gerarchia|  
+|Set di prodotti corrente|Prodotto specifico|  
+|Gerarchia attiva|Specifica tipo di gerarchia|  
+|Elemento della gerarchia attivo|Specifiche di tipo elemento di gerarchia|  
 |Documento attivo|Specifica tipo di documento|  
-|Finestra in primo piano interfaccia a documenti multipli (MDI)|Specifica tipo di finestra|  
-|Contesto della selezione corrente|Contesto della selezione specifico|  
+|Finestra di interfaccia a documenti multipli (MDI) in primo piano|Specifica tipo di finestra|  
+|Contesto della selezione corrente|Contesto di selezione specifico|  
   
- Se si mostrano solo le funzionalità necessarie agli utenti e forniscono continuamente selezione coerente e commenti e suggerimenti contesto di ambiente, si riduce la complessità nell'IDE. Le regole seguenti si applicano ogni volta che viene aperta una finestra nell'IDE:  
+ Se si della superficie di attacco solo le funzionalità necessarie agli utenti e offrono continuamente selezione coerente e commenti e suggerimenti contesto di ambiente, si riduce la complessità dell'IDE. Le regole seguenti si applicano ogni volta che viene aperta una finestra dell'IDE:  
   
--   Se la finestra viene modificata relativo contesto di selezione, commenti e suggerimenti di selezione sono chiaramente indicato nella finestra e finestra Guida dinamica, se visualizzata, viene aggiornata per riflettere il contesto corrente.  
+-   Se la finestra viene modificato il contesto di selezione, il feedback della selezione è indicata chiaramente nella finestra di e il **Guida dinamica** finestra, se visualizzata, viene aggiornato per riflettere il contesto corrente.  
   
--   Se la finestra viene modificata contesto globale della selezione, tutti i menu specifici del contesto, la finestra gerarchia attivo e barra del titolo dell'applicazione vengono aggiornati per riflettere il contesto corrente.  
+-   Se la finestra viene modificato il contesto di selezione globale, tutti i menu specifici del contesto, la finestra gerarchia attivo e la barra del titolo dell'applicazione vengono aggiornate per riflettere il contesto corrente.  
   
--   La finestra dovrebbe area le proprietà per la selezione corrente nella **proprietà** finestra e, facoltativamente, se visualizzata, la **pagine delle proprietà** la finestra di dialogo.  
+-   La finestra dovrebbe segnalare le proprietà per la selezione corrente nella **delle proprietà** finestra e, facoltativamente, se visualizzata, il **pagine delle proprietà** nella finestra di dialogo.  
   
--   Se la finestra non esporre una proprietà o modificare il contesto di selezione globale, commenti e suggerimenti di selezione non devono rimanere nella finestra quando non è più la finestra attiva nell'IDE.  
+-   Se la finestra non le proprietà della superficie di attacco o modificare il contesto di selezione globale, commenti e suggerimenti di selezione non devono rimanere nella finestra quando non è più la finestra attiva nell'IDE.  
   
--   Tutte le finestre di documento specifico strumento continuamente devono riflettere il documento attivo.  
+-   Tutte le finestre degli strumenti specifici del documento devono riflettere continuamente il documento attivo.  
   
--   Menu, barre degli strumenti e barra del titolo dell'applicazione deve riflettere finestra del client di livello più alto interfaccia a documenti multipli (MDI).  
+-   Menu, barre degli strumenti e la barra del titolo dell'applicazione deve riflettere la finestra client di livello più alto interfaccia a documenti multipli (MDI).  
   
- Ad esempio, quando viene aperta la visualizzazione HTML di un Web Form all'interno di un progetto di applicazione Web di Visual Basic e l'utente seleziona un `<td>` tag, viene fornito un feedback nel modo seguente:  
+ Ad esempio, quando il codice HTML Visualizza di un **Web Form** all'interno di un'applicazione Web di Visual Basic progetto è aperto e l'utente seleziona un `<td>` tag, viene fornito un feedback nel modo seguente:  
   
 -   La selezione è indicata nella finestra attiva e applicata le **proprietà** finestra.  
   
--   Specifica del documento **della casella degli strumenti** viene aggiornata per riflettere il documento attivo.  
+-   La specifica del documento **casella degli strumenti** viene aggiornato per riflettere il documento attivo.  
   
--   Il **Editor** barra degli strumenti e **tabella** vengono visualizzati i menu e barra del titolo aggiorna in modo da riflettere la finestra del Web Form.  
+-   Il **Editor** sulla barra degli strumenti e **tabella** vengono visualizzati menu e la barra del titolo aggiorna in modo da riflettere la finestra del Web Form.  
   
--   Finestra gerarchia attivo in cui è in genere **Esplora**e l'aggiornamento della barra del titolo in modo da riflettere il contesto corrente e il sensibile al contesto **progetto** applicano i comandi di menu per il Web attivo Progetto di applicazione.  
+-   La finestra gerarchia attiva in cui è in genere **Esplora soluzioni**e l'aggiornamento della barra del titolo in modo da riflettere il contesto corrente e il sensibile al contesto **progetto** i comandi di menu ora applicano al Web attivo Progetto di applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Selezione e la valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
- [Selezione oggetti di contesto](../../extensibility/internals/selection-context-objects.md)   
- [Gerarchie e selezione](../../extensibility/internals/hierarchies-and-selection.md)
+ [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
+ [Oggetti di contesto di selezione](../../extensibility/internals/selection-context-objects.md)   
+ [Le gerarchie e selezione](../../extensibility/internals/hierarchies-and-selection.md)

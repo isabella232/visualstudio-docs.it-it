@@ -1,5 +1,5 @@
 ---
-title: Elemento Icon | Documenti Microsoft
+title: Elemento Icon | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dcfec5c89c6bf2b2ae68ea29e18890dc9187e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126876"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497693"
 ---
-# <a name="icon-element"></a>Icona elemento
-L'attributo guid del tag icona è il guid di una bitmap definito.  L'attributo id consente di selezionare lo slot nella striscia di bitmap. Questo elemento è facoltativo.  Se questo elemento viene omesso il valore di **guidOfficeIcon:msotcidNoIcon** verrà implicita.  
+# <a name="icon-element"></a>Elemento Icon
+L'attributo guid del tag icona è il guid di una mappa di bit definita. Il `id` attributo consente di selezionare lo slot nella striscia di bitmap. Questo elemento è facoltativo. Se questo elemento non è incluso il valore di **guidOfficeIcon:msotcidNoIcon** verrà implicita.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <Icon guid="guidImages" id="bmpPic1" />  
 ```  
   
@@ -37,8 +37,8 @@ L'attributo guid del tag icona è il guid di una bitmap definito.  L'attributo i
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|guid|Obbligatorio. Il guid di una bitmap definito.|  
-|ID|Obbligatorio. Seleziona lo slot nella striscia di bitmap.|  
+|guid|Obbligatorio. Il guid di una mappa di bit definita.|  
+|ID|Obbligatorio. Consente di selezionare lo slot nella striscia di bitmap.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
@@ -53,4 +53,4 @@ L'attributo guid del tag icona è il guid di una bitmap definito.  L'attributo i
 |[Elemento Buttons](../extensibility/buttons-element.md)||  
   
 ## <a name="see-also"></a>Vedere anche  
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

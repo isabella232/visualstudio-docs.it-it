@@ -1,5 +1,5 @@
 ---
-title: Aggiunta di directory per il dialogo Aggiungi nuovo elemento | Documenti Microsoft
+title: Aggiunta di directory di dialogo Aggiungi nuovo elemento | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8d9989e8cf4ec8f0eb714a26e73d89fba339b71
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba535908b1c5ccb06f0f29490c0b87c377d6b2be
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127748"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498334"
 ---
-# <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Aggiunta di directory per il dialogo Aggiungi nuovo elemento
-Esempio di codice riportato di seguito viene illustrato come registrare un nuovo set di directory per il **Aggiungi nuovo elemento** la finestra di dialogo. Directory per il **Aggiungi nuovo elemento** la finestra di dialogo sono diverse per ogni progetto. Pertanto, le directory vengono registrate nella sottochiave progetti, vedere \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  
+# <a name="add-directories-to-the-add-new-item-dialog-box"></a>Aggiungere directory alla finestra di dialogo Aggiungi nuovo elemento
+Esempio di codice seguente viene illustrato come registrare un nuovo set di directory per il **Aggiungi nuovo elemento** nella finestra di dialogo. Directory per il **Aggiungi nuovo elemento** nella finestra di dialogo sono diverse per ogni progetto. Di conseguenza, le directory vengono registrate sotto il **progetti** sottochiave, trovato nella **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
   
-## <a name="the-registry-script"></a>Lo Script del Registro di sistema  
+## <a name="registry-script"></a>Script del Registro di sistema  
   
 ```  
 NoRemove Projects  
@@ -48,16 +48,16 @@ NoRemove Projects
 }  
 ```  
   
- Il valore Template_Path specifica il percorso completo della directory che contiene i modelli di progetto. Questi modelli possono essere VSZ (file) o file di modello prototipo da clonare.  
+ Il `%Template_Path%` valore specifica il percorso completo della directory che contiene i modelli di progetto. Questi modelli possono essere *vsz* file o i file di modello prototipo da clonare.  
   
- Il valore SortPriority specifica una priorità di ordinamento.  
+ Il `SortPriority` valore specifica una priorità di ordinamento.  
   
-## <a name="adding-items-to-an-existing-project"></a>Aggiunta di elementi a un progetto esistente  
- È anche possibile aggiungere elementi a un progetto esistente. Ad esempio, per un [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] progetto, è possibile aggiungere elementi per il \<radice > cartella \VC#\CSharpProjectItems\LocalProjectItems \Programmi\Microsoft Visual Studio. In questo caso il `%GUID_Project%` è il GUID per un progetto c# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
+## <a name="add-items-to-an-existing-project"></a>Aggiungere elementi a un progetto esistente  
+ È anche possibile aggiungere elementi a un progetto esistente. Ad esempio, per un [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] progetto, è possibile aggiungere elementi per il  *\<radice > \Programmi\Microsoft Visual Studio\VC & \CSharpProjectItems\LocalProjectItems* cartella. In questo caso, `%GUID_Project%` GUID di un progetto c# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
   
- È anche possibile estendere un progetto esistente da un sottotipo di progetto di programmazione. Con un sottotipo di progetto, è possibile estendere un progetto senza scrivere un nuovo tipo di progetto. Per ulteriori informazioni su sottotipi di progetto, vedere [sottotipi di progetto](../../extensibility/internals/project-subtypes.md).  
+ È anche possibile estendere un progetto esistente da un sottotipo di progetto di programmazione. Con un sottotipo di progetto, è possibile estendere un progetto senza dover scrivere un nuovo tipo di progetto. Per altre informazioni sulle sottotipi di progetto, vedere [sottotipi di progetto](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [La registrazione di progetto e modelli di elemento](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Aggiunta di elementi di Aggiungi nuovo elemento di finestre di dialogo](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Aggiunta di directory nella finestra di dialogo Nuovo progetto](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+ [Registrare i modelli di progetto ed elemento](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Aggiungere directory alla finestra di dialogo Nuovo progetto](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

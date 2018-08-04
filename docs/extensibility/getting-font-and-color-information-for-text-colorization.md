@@ -1,5 +1,5 @@
 ---
-title: Recupero di tipo di carattere e colore per testo colorazione | Documenti Microsoft
+title: Recuperare le informazioni di colore per la colorazione del testo e carattere | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,40 +14,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c86e37d6d7da9da0a6b0978770bf7d7564fa19c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129696"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499699"
 ---
-# <a name="getting-font-and-color-information-for-text-colorization"></a>Recupero di tipo di carattere e colore per testo colorazione
-Il processo che esegue il rendering o Visualizza colorato testo negli elementi dell'interfaccia utente dipende dal tipo di progetto, la tecnologia e developer di preferenze. Il **tipi di carattere e colori** pagina delle proprietà vengono archiviate le impostazioni.
+# <a name="get-font-and-color-information-for-text-colorization"></a>Ottenere le informazioni di carattere e colori per la colorazione del testo
+Il processo che esegue il rendering o Visualizza colorato testo negli elementi dell'interfaccia utente dipende dal tipo di progetto, la tecnologia e per gli sviluppatori preferenze. Il **Fonts and Colors** pagina delle proprietà vengono archiviate le impostazioni.
 
- La maggior parte delle implementazioni che visualizzano testo colorato necessario il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> e associate le interfacce per le impostazioni di visualizzazione di presentazione, il recupero e l'archiviazione di testo.
+ La maggior parte delle implementazioni che visualizzano testo colorato necessario il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> e associate le interfacce per la presentazione, recuperare e archiviare il testo delle impostazioni di visualizzazione.
 
 > [!NOTE]
->  Quando si personalizza l'editor dei componenti di base (che supporta il **EditorCategory testo**), è consigliabile utilizzare la tecnologia di colorazione della sintassi nel servizio di linguaggio. Per ulteriori informazioni, vedere [tipo di carattere e colore Panoramica](../extensibility/font-and-color-overview.md).
+>  Quando si personalizza l'editor principale (che supporta il **EditorCategory testo**), è consigliabile usare la tecnologia di colorazione del servizio di linguaggio. Per altre informazioni, vedere [Panoramica di carattere e colori](../extensibility/font-and-color-overview.md).
 
-## <a name="getting-default-font-and-color-information"></a>Recupero di informazioni di colore e tipo di carattere predefinito
- Tutti i **tipi di carattere e colori** le impostazioni di qualsiasi finestra di visualizzazione di testo devono essere specificate nel **elementi visualizzati** di uno **categoria**. Per ulteriori informazioni, vedere [tipi di carattere e colori, ambiente, finestra di dialogo Opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+## <a name="get-default-font-and-color-information"></a>Ottenere le informazioni di carattere e colori predefinite
+ Tutti i **i tipi di carattere e colori** le impostazioni di qualsiasi finestra di visualizzazione di testo devono essere specificate nel **elementi visualizzati** di uno **categoria**. Per altre informazioni, vedere [tipi di carattere e colori, ambiente, finestra di dialogo Opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
-Per colorare, un pacchetto VSPackage deve ottenere corrente **tipi di carattere e colori** impostazioni. Un pacchetto VSPackage può ottenere le impostazioni correnti nei modi seguenti, a seconda delle esigenze:
+Per colorare, un pacchetto VSPackage deve ottenere corrente **Fonts and Colors** impostazioni. Un pacchetto VSPackage può ottenere le impostazioni correnti nei modi seguenti, a seconda delle esigenze:
 
--   Utilizzare il meccanismo di persistenza di carattere e colori per recuperare lo stato corrente o archiviato. Per ulteriori informazioni, vedere [accesso archiviati tipo di carattere e le impostazioni dei colori](../extensibility/accessing-stored-font-and-color-settings.md).
+-   Usare il meccanismo di persistenza di carattere e colori per recuperare lo stato corrente o archiviato. Per altre informazioni, vedere [accesso archiviate le impostazioni del tipo di carattere e colore](../extensibility/accessing-stored-font-and-color-settings.md).
 
--   Usare la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfaccia di un servizio che fornisce i dati di carattere e colori per ottenere un'istanza di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se il pacchetto VSPackage non sia anche il provider di carattere e colori.
+-   Usare la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfaccia di un servizio che fornisce i dati di carattere e colori per ottenere un'istanza di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se il pacchetto VSPackage non sia anche il provider di tipi di carattere e colore.
 
 -   Implementare l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
 
-Per garantire che i risultati ottenuti tramite polling sono aggiornate, potrebbe essere utile utilizzare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfaccia per determinare se è necessario eseguire un aggiornamento prima di chiamare i metodi di recupero del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia.
+Per garantire che i risultati ottenuti eseguendo il polling vengono aggiornate, può essere utile usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfaccia per determinare se è necessario un aggiornamento prima di chiamare i metodi di recupero del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia.
 
-Dopo l'acquisizione di informazioni di carattere e colori, analizzare il testo da visualizzare per identificare gli elementi che richiedono colorazione. Visualizzare il testo della finestra utilizzando i tipi di carattere appropriati e i colori.
+Dopo aver ottenuto le informazioni di carattere e colori, analizzare il testo da visualizzare per identificare gli elementi che richiedono la colorazione. Visualizzare il testo della finestra utilizzando i tipi di carattere appropriati e i colori.
 
 ## <a name="see-also"></a>Vedere anche
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
-- [Uso di tipi di carattere e testo](/dotnet/framework/winforms/advanced/using-fonts-and-text)
-- [Utilizzo dei colori](/cpp/windows/working-with-color-image-editor-for-icons)
+- [Usare i tipi di carattere e testo](/dotnet/framework/winforms/advanced/using-fonts-and-text)
+- [Utilizzare i colori](/cpp/windows/working-with-color-image-editor-for-icons)
 - [GDI (interfaccia graphics device)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)

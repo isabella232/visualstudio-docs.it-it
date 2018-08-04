@@ -1,5 +1,5 @@
 ---
-title: Per determinare se implementare un controllo di origine pacchetto VSPackage | Documenti Microsoft
+title: Per determinare se implementare un VSPackage di controllo del codice sorgente | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 203144e5b262c093204fe9eafa3a2a5db85eccb3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3bef6030b6a21eeda708a5258c47c9dfdcfc0a3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128877"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497313"
 ---
-# <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Per determinare se implementare un controllo di origine pacchetto VSPackage
-In questa sezione vengono illustrate le scelte del plug-in del controllo origine e di controllo del codice sorgente VSPackage per l'estensione di controllo del codice sorgente soluzioni e fornisce linee guida generali sulla scelta di un percorso di integrazione adatto.  
+# <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Determinare se implementare un controllo del codice sorgente VSPackage
+In questa sezione vengono illustrate le scelte di plug-in controllo codice sorgente e controllo del codice sorgente pacchetti VSPackage per estendere le soluzioni e fornisce indicazioni generali sulla scelta di un percorso adatto integrazione controllo del codice sorgente.  
   
 ## <a name="small-source-control-solution-with-limited-resources"></a>Soluzione di controllo di origine di dimensioni ridotte con risorse limitate  
- Se si dispongano di risorse limitate e non può essere migliore con l'overhead della scrittura di un pacchetto di controllo di origine, è possibile creare plug-in basato su API plug-in controllo di origine. Ciò consente di lavorare in modo affiancato con pacchetti di controllo di origine e per passare da plug-in del controllo codice sorgente e i pacchetti su richiesta. Per ulteriori informazioni, vedere [registrazione e la selezione](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
+ Se si hanno risorse limitate e non può essere sovraccaricato con l'overhead della scrittura di un pacchetto controllo del codice sorgente, è possibile creare plug-in basato su API dei plug-in del controllo origine. In tal modo è possibile usare affiancato con i pacchetti del controllo origine e possono passare tra plug-in controllo codice sorgente e i pacchetti su richiesta. Per altre informazioni, vedere [registrazione e selezione](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
   
-## <a name="large-source-control-solution-with-a-rich-feature-set"></a>Soluzione di controllo di grandi dimensioni di origine con un Set di funzionalità avanzate  
- Se si desidera implementare una soluzione di controllo di origine che fornisce un modello di controllo completo di origine che non viene acquisito in modo adeguato tramite l'API plug-in controllo di origine, è possibile considerare un pacchetto di controllo di origine come percorso di integrazione. Questo vale in particolare se invece si sostituirà il pacchetto di scheda di controllo di origine (che comunica con plug-in del controllo codice sorgente e fornisce un controllo del codice sorgente di base dell'interfaccia utente) con valori personalizzati in modo che sia possibile gestire gli eventi di controllo di origine in modo personalizzato. Se si dispone già di un'origine soddisfacente controllo dell'interfaccia utente e per mantenere tale esperienza acquisita in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], l'opzione di pacchetto di origine controllo consente di farlo. Il package del controllo del codice sorgente non è generico e progettata esclusivamente per l'utilizzo con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
+## <a name="large-source-control-solution-with-a-rich-feature-set"></a>Soluzione di controllo sorgente di grandi dimensioni con un set di funzionalità avanzate  
+ Se si desidera implementare una soluzione di controllo di origine che fornisce un modello di controllo di origine completo che non verrà acquisito in modo adeguato utilizzando l'API dei plug-in del controllo origine, è possibile considerare un pacchetto del controllo sorgente come percorso di integrazione. Questo vale in particolare se invece si sostituirà il pacchetto di scheda di controllo codice sorgente, che comunica con i plug-in controllo codice sorgente e fornisce un controllo di origine di base dell'interfaccia utente, con i propri in modo che è possibile gestire gli eventi di controllo di origine in modo personalizzato. Se si ha già un'origine soddisfacente controllo dell'interfaccia utente e per mantenere tale esperienza acquisita in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], l'opzione del pacchetto controllo origine consente di farlo. Il pacchetto del controllo codice sorgente non è generico ed è progettato esclusivamente per l'uso con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- Se si desidera implementare una soluzione di controllo di origine che offre flessibilità e controllo più dettagliato per l'interfaccia utente e la logica del controllo origine, è preferibile instradamento controllo pacchetto integration. È possibile:  
+ Se si desidera implementare una soluzione di controllo di origine che fornisce la flessibilità e controllo più completo tramite l'interfaccia utente e la logica di controllo di origine, è preferibile la route di integrazione origine pacchetto controllo. È possibile:  
   
-1.  Registrare un controllo origine pacchetto VSPackage (vedere [registrazione e la selezione](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
+1.  Registrare il proprio controllo del codice sorgente VSPackage (vedere [registrazione e selezione](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
   
 2.  Sostituire il controllo del codice sorgente predefinite dell'interfaccia utente con l'interfaccia utente personalizzata (vedere [interfaccia utente personalizzata](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
   
-3.  Specificare i glifi da utilizzare e gestire gli eventi del glifo di Esplora soluzioni (vedere [controllo glifo](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
+3.  Specificare i glifi da utilizzare e gestire gli eventi del glifo di Esplora soluzioni (vedere [controllo Glyph](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
   
-4.  Gestire gli eventi di modifica di Query e salvare Query (vedere [salvare Query modifica Query](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
+4.  Gestire gli eventi di Query modificare e salvare Query (vedere [salvataggio delle Query Edit Query](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di un plug-in del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Creare un controllo del codice sorgente del plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)

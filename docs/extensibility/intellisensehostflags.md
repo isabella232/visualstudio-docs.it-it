@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags | Documenti Microsoft
+title: IntelliSenseHostFlags | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a096e79a64168f74150103a5f3ba3a8683fe184e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 582dc76bfd8b76ffa4d3664ab3e28f95fe2cef50
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126757"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500014"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-Specifica i flag di host di IntelliSense.  
+Specifica i flag host IntelliSense.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,15 +39,15 @@ enum IntellisenseHostFlags
 };  
 ```  
   
-#### <a name="parameters"></a>Parametri  
+### <a name="parameters"></a>Parametri  
   
 |Membri|Descrizione|  
 |-------------|-----------------|  
 |`IHF_READONLYCONTEXT`|Buffer del contesto è di sola lettura.|  
-|`IHF_NOSEPARATESUBJECT`|Nessun testo dell'oggetto. Buffer del contesto contiene la destinazione di IntelliSense (implica `!IHF_READONLYCONTEXT`).|  
+|`IHF_NOSEPARATESUBJECT`|Nessun testo dell'oggetto. Buffer del contesto contiene IntelliSense-target (implica `!IHF_READONLYCONTEXT`).|  
 |`IHF_SINGLELINESUBJECT`|Testo dell'oggetto non è più-riga in grado di supportare.|  
 |`IHF_FORCECOMMITTOCONTEXT`|Uguale a `CanCommitIntoReadOnlyBuffer`.|  
-|`IHF_OVERTYPE`|La modifica (in oggetto o il contesto) deve essere eseguita in modalità di sovrascrittura.|  
+|`IHF_OVERTYPE`|La modifica (nell'oggetto o al contesto) deve essere eseguita in modalità sovrascrittura.|  
   
 ## <a name="requirements"></a>Requisiti  
  SingleFileeditor.idl  

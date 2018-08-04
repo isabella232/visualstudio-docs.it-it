@@ -1,5 +1,5 @@
 ---
-title: Elemento FullClassName (estensione della creazione guidata modello di Visual Studio) | Documenti Microsoft
+title: Elemento FullClassName (estensione della creazione guidata modello di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc76c12570191e8b7b4635b8963f16aa4d21c13
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05b23039540ed520e2298222e92131248fef0e3b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127673"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498367"
 ---
-# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (estensione della Creazione guidata modelli di Visual Studio)
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (estensione della creazione guidata modello di Visual Studio)
 Il nome completo della classe che implementa il `IWizard` interfaccia.  
   
  \<VSTemplate >  
@@ -32,7 +32,7 @@ Il nome completo della classe che implementa il `IWizard` interfaccia.
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <FullClassName>ClassName</FullClassName>  
 ```  
   
@@ -54,7 +54,7 @@ Il nome completo della classe che implementa il `IWizard` interfaccia.
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Tale testo specifica la classe che implementa il `IWizard` interfaccia. La classe specificata deve essere presente nell'assembly specificato per il [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) elemento.  
+ Tale testo specifica la classe che implementa il `IWizard` interfaccia. La classe specificata deve esistere nell'assembly specificato per il [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) elemento.  
   
 ## <a name="remarks"></a>Note  
  `FullClassName` è un elemento figlio obbligatorio di `WizardExtension`.  
@@ -91,6 +91,6 @@ Il nome completo della classe che implementa il `IWizard` interfaccia.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Creare modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)   
+ [Procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
