@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: esclusione di notifiche di cambiamento File | Documenti Microsoft'
+title: 'Procedura: eliminare le notifiche di modifica di File | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95821baec7f2f46a65e2ab0f0b0b78b0e397f2ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28f4c2e2929fecb29da6ddeecdd6cede6b8fa4d7
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128772"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497963"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Procedura: eliminare le notifiche di modifica File
-Quando è stato modificato il file fisico che rappresenta il buffer di testo, una finestra di dialogo viene visualizzato con il messaggio **si desidera salvare le modifiche apportate ai seguenti elementi?** Questo è noto come notifica di modifica di file. Se prevede molte modifiche a file, tuttavia, questa finestra di dialogo visualizzazione più volte può risultare fastidiosa.  
+# <a name="how-to-suppress-file-change-notifications"></a>Procedura: eliminare le notifiche di modifica di file
+Quando è stato modificato il file fisico che rappresenta il buffer di testo, consente di visualizzare una finestra di dialogo con il messaggio **si desidera salvare le modifiche apportate ai seguenti elementi?** Questo è noto come notifica di modifica di file. Se sono condividono molte modifiche al file, tuttavia, questa finestra di dialogo ripetutamente la visualizzazione può diventare rapidamente fastidiosa.  
   
- A livello di codice, è possibile eliminare questa finestra di dialogo mediante la procedura seguente. In questo modo, sarà possibile ricaricare un file immediatamente senza dover richiedere all'utente di salvare le modifiche ogni volta.  
+ A livello di codice, è possibile eliminare questa finestra di dialogo mediante la procedura seguente. Eliminando la finestra di dialogo, è possibile ricaricare un file immediatamente senza dover richiedere all'utente di salvare le modifiche ogni volta.  
   
-### <a name="to-suppress-file-change-notification"></a>Esclusione di notifica di modifica file  
+## <a name="to-suppress-file-change-notification"></a>Per eliminare la notifica delle modifiche file  
   
 1.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> metodo per determinare quale oggetto buffer di testo è associato il file aperto.  
   
-2.  Diretto di <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto monitorato in memoria per ignorare le modifiche ai file ottenendo il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> interfaccia dal <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto (dati del documento) e quindi implementando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metodo con il `fIgnore` parametro Impostare su `true`.  
+2.  Diretto il <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto monitorato in memoria per ignorare le modifiche ai file ottenendo il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> dell'interfaccia dal <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto (dati del documento) e quindi implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metodo con il `fIgnore` parametro Impostare su `true`.  
   
-3.  Chiamare i metodi sul <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfacce per aggiornare la memoria in <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto con le modifiche al file (ad esempio, quando si aggiunge un campo per il componente).  
+3.  Chiamano i metodi per la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> e il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfacce per aggiornare la memoria in <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto con le modifiche ai file (ad esempio, quando si aggiunge un campo al componente).  
   
-4.  Aggiornare il file su disco con le modifiche senza considerare le modifiche, che l'utente potrebbe essere in corso in sospeso.  
+4.  Aggiornare il file su disco con le modifiche senza considerare eventuali modifiche, che l'utente potrebbe essere in corso in sospeso.  
   
-     In questo modo, quando si indirizzano il <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> notifiche di modifica oggetto per riprendere il monitoraggio per il file, il buffer di testo in memoria riflette le modifiche che è stato generato, nonché tutte le altre modifiche in sospeso. Il file su disco riflette il codice più recente generato dall'utente e salvare le modifiche apportate dall'utente in precedenza nel codice utente ha modificato.  
+     In questo modo, quando si indirizzano le <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> notifiche delle modifiche dell'oggetto per riprendere il monitoraggio per il file, il buffer di testo in memoria riflette le modifiche che è stato generato. Il buffer di testo in memoria riflette anche tutte le altre modifiche in sospeso. Il file su disco rifletta il codice più recente generato dall'utente e qualsiasi precedentemente salvato le modifiche apportate dall'utente nel codice utente ha modificato.  
   
-5.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metodo per notificare il <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto per riprendere il monitoraggio per le notifiche di modifica file impostando la `fIgnore` parametro `false`.  
+5.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> metodo per notificare il <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto per riprendere il monitoraggio per le notifiche di modifica di file, impostando il `fIgnore` parametro per `false`.  
   
-6.  Se si intende apportare alcune modifiche al file, come nel caso di controllo del codice sorgente (SCC), è necessario indicare al servizio di modifica file globale di sospendere temporaneamente le notifiche di modifica di file.  
+6.  Se si prevede di apportare diverse modifiche al file, come nel caso del controllo del codice sorgente (SCC), è necessario indicare al servizio di modifica globale file di sospendere temporaneamente le notifiche di modifica di file.  
   
-     Ad esempio, se si riscrittura il file e quindi modificarla il timestamp, è necessario sospendere le notifiche di modifica di file, come le operazioni di riscrittura e timestample ogni contare come evento di modifica di un file separato. Per abilitare la notifica di cambiamento file globale è necessario chiamare invece il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> metodo.  
+     Ad esempio, se si riscrive il file e quindi modifica il timestamp, è necessario sospendere le notifiche di cambiamento file perché le operazioni riscrittura e timestamp contano come un evento di modifica di file separato. Per abilitare la notifica della modifica file globale, è necessario chiamare invece il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> (metodo).  
   
 ## <a name="example"></a>Esempio  
- Di seguito viene illustrato come eliminare una notifica di modifica di file.  
+ Il codice seguente viene illustrato come eliminare una notifica di cambiamento file.  
   
 ```cpp  
 //Misc. helper classes  
@@ -116,4 +116,4 @@ void CSuspendFileChanges::Resume()
 ```  
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
- Se il case comporta più modifiche al file, come nel caso di controllo del codice sorgente, è importante riprendere le notifiche di modifica file globale prima i dati del documento per riprendere il monitoraggio delle modifiche al file di avvisi.
+ Se il caso riguarda più modifiche al file, come nel caso del controllo del codice sorgente, quindi è importante riprendere le notifiche di modifica file globale prima di inviare i dati del documento per riprendere il monitoraggio delle modifiche ai file di avviso.

@@ -1,5 +1,5 @@
 ---
-title: Attivazione sul posto | Documenti Microsoft
+title: Attivazione sul posto | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-sdk
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: douge
-ms.openlocfilehash: d20c88dbb93712c7ef2e6342cbb3d9cd0d38a086
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72e6829533b1b314853b8836b8576d0165a87d03
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131633"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500345"
 ---
 # <a name="in-place-activation"></a>Attivazione sul posto
 Se la visualizzazione dell'editor ospita controlli ActiveX o altri controlli attivi, è necessario implementare la visualizzazione come controllo ActiveX o come oggetto dati del documento attivo usando il modello di attivazione sul posto.  
@@ -26,18 +26,18 @@ Se la visualizzazione dell'editor ospita controlli ActiveX o altri controlli att
 > [!NOTE]
 >  Le interfacce <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> consentono una separazione di dati e visualizzazione. Tuttavia, Visual Studio non supporta questa funzionalità e queste interfacce vengono usate solo per rappresentare l'oggetto visualizzazione del documento.  
   
- Gli editor che usano il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> possono fornire l'integrazione di menu, barre degli strumenti e comandi chiamando i metodi dell'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> che il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> implementa. Gli editor possono anche offrire altre funzionalità di Visual Studio, come la traccia della selezione e la gestione dell'annullamento. Per ulteriori informazioni, vedere [creare editor personalizzati e finestre di progettazione](../extensibility/creating-custom-editors-and-designers.md).  
+ Gli editor che usano il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> possono fornire l'integrazione di menu, barre degli strumenti e comandi chiamando i metodi dell'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> che il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> implementa. Gli editor possono anche offrire altre funzionalità di Visual Studio, come la traccia della selezione e la gestione dell'annullamento. Per altre informazioni, vedere [creare editor personalizzati e finestre di progettazione](../extensibility/creating-custom-editors-and-designers.md).  
   
-## <a name="objects-and-interfaces-used"></a>Interfacce e oggetti usati  
+## <a name="objects-and-interfaces-used"></a>Gli oggetti e le interfacce utilizzate  
  Gli oggetti usati per creare l'attivazione sul posto sono illustrati nella figura seguente.  
   
  ![In&#45;Editor di attivazione di posizionare](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Editor di attivazione sul posto  
   
 > [!NOTE]
->  Tra gli oggetti di questa figura, solo l'oggetto `CYourEditorFactory` è necessario per creare un editor standard. Se si crea un editor personalizzato, non è necessario implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> perché l'editor avrà probabilmente un proprio meccanismo di salvataggio permanente privato. Per ulteriori informazioni, vedere [creare editor personalizzati e finestre di progettazione](../extensibility/creating-custom-editors-and-designers.md).  
+>  Tra gli oggetti di questa figura, solo l'oggetto `CYourEditorFactory` è necessario per creare un editor standard. Se si crea un editor personalizzato, non è necessario implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> perché l'editor avrà probabilmente un proprio meccanismo di salvataggio permanente privato. Per altre informazioni, vedere [creare editor personalizzati e finestre di progettazione](../extensibility/creating-custom-editors-and-designers.md).  
   
- Tutte le interfacce implementate per creare un editor di attivazione sul posto sono visualizzate nel singolo oggetto `CYourEditorDocument` , ma questa configurazione supporta solo una singola visualizzazione dei dati del documento. Per altre informazioni sul supporto di più visualizzazioni dei dati del documento, vedere [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
+ Tutte le interfacce implementate per creare un editor di attivazione sul posto sono visualizzate nel singolo oggetto `CYourEditorDocument` , ma questa configurazione supporta solo una singola visualizzazione dei dati del documento. Per altre informazioni sul supporto di più visualizzazioni dei dati del documento, vedere [supporta più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md).  
   
 |Interfaccia|Tipo di oggetto|Usa|  
 |---------------|--------------------|---------|  

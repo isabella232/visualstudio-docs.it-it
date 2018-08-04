@@ -1,5 +1,5 @@
 ---
-title: La creazione di gruppi riutilizzabili pulsanti | Documenti Microsoft
+title: Creazione di gruppi riutilizzabili di pulsanti | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,27 +15,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97ee7cc2ec63a94036472ccce07b1dc9fa736504
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3868838c72b2d9a50f2a1b3dc8eedaa3d36ac67c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102980"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498854"
 ---
-# <a name="creating-reusable-groups-of-buttons"></a>Creazione di gruppi riutilizzabili di pulsanti
-Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati insieme in un menu o una barra degli strumenti. Qualsiasi gruppo di comando nuovo utilizzabile tramite l'assegnazione ai menu padre diverso nella sezione CommandPlacements del file con estensione vsct.  
+# <a name="create-reusable-groups-of-buttons"></a>Creazione di gruppi riutilizzabili di pulsanti
+Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati insieme in un menu o sulla barra degli strumenti. Qualsiasi gruppo di comandi può essere riusato assegnandolo ai menu padre diverso nella sezione CommandPlacements del *vsct* file.  
   
- Gruppi di comandi in genere contengono pulsanti, ma possono essere contenuti anche altri menu o caselle combinate.  
+ Gruppi di comandi in genere contengono pulsanti, ma possono anche contenere altre caselle combinate o menu.  
   
-### <a name="to-create-a-reusable-group-of-buttons"></a>Per creare un gruppo di pulsanti riutilizzabile  
+## <a name="to-create-a-reusable-group-of-buttons"></a>Per creare un gruppo riutilizzabile di pulsanti  
   
-1.  Creare un progetto VSIX denominato `ReusableButtons`. Per ulteriori informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Creare un progetto VSIX denominato `ReusableButtons`. Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **ReusableCommand**. Nel **Esplora**del mouse sul nodo del progetto e scegliere **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo, passa a **Visual c# / Extensibility** e selezionare **comando personalizzato**. Nel **nome** campo nella parte inferiore della finestra, modificare il nome del file di comando in **ReusableCommand.cs**.  
+2.  Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **ReusableCommand**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c#** > **Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da *ReusableCommand.cs*.  
   
-3.  Nel file vsct, vedere la sezione di simboli e trovare l'elemento GuidSymbol che contiene i gruppi e i comandi per il progetto. Devono essere denominato guidReusableCommandPackageCmdSet.  
+3.  Nel *vsct* file, vedere la sezione di simboli e trovare l'elemento GuidSymbol che contiene gruppi e i comandi per il progetto. Devono essere denominato guidReusableCommandPackageCmdSet.  
   
-4.  Aggiungere un IDSymbol per ogni pulsante che verrà aggiunto al gruppo, come nell'esempio seguente.  
+4.  Aggiungere un IDSymbol per ciascun pulsante che verrà aggiunta al gruppo, come nell'esempio seguente.  
   
     ```xml  
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">  
@@ -45,9 +45,9 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
     </GuidSymbol>  
     ```  
   
-     Per impostazione predefinita, il modello di elemento di comando crea un gruppo denominato **MyMenuGroup** e un pulsante con il nome che è stato specificato, insieme a una voce IDSymbol per ognuno.  
+     Per impostazione predefinita, il modello di elemento di comando crea un gruppo denominato **MyMenuGroup** e un pulsante con il nome specificato, insieme a una voce IDSymbol per ognuno.  
   
-5.  Nella sezione gruppi, creare un elemento di gruppo che ha gli stessi attributi GUID e ID di quelli specificati nella sezione simboli. È anche possibile utilizzare un gruppo esistente o utilizzare la voce che viene fornita dal modello di comando, come nell'esempio seguente. Questo gruppo viene visualizzata sul **strumenti** menu  
+5.  Nella sezione Groups, creare un elemento di gruppo che ha gli stessi attributi GUID e ID di quelle contenute nella sezione dei simboli. È anche possibile usare un gruppo esistente o usare la voce che viene fornita dal modello di comando, come nell'esempio seguente. Questo gruppo sono presenti il **strumenti** menu  
   
     ```xml  
     <Groups>  
@@ -57,11 +57,11 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
     </Groups>  
     ```  
   
-### <a name="to-create-a-group-of-buttons-for-reuse"></a>Per creare un gruppo di pulsanti per il riutilizzo  
+## <a name="to-create-a-group-of-buttons-for-reuse"></a>Per creare un gruppo di pulsanti per il riutilizzo  
   
-1.  È possibile inserire un comando o un menu in un gruppo tramite il gruppo come elemento padre nella definizione del comando o menu o inserendo il comando o il menu del gruppo utilizzando la sezione CommandPlacements.  
+1.  È possibile inserire un comando o un menu in un gruppo usando il gruppo come elemento padre nella definizione di comando o menu, oppure inserendo il comando o il menu del gruppo usando la sezione CommandPlacements.  
   
-     Nella sezione pulsanti definire un pulsante con il gruppo come elemento padre oppure utilizzare il pulsante che viene fornito dal modello di pacchetto, come illustrato nell'esempio seguente.  
+     Nella sezione pulsanti definiscono un pulsante con il gruppo come elemento padre, o usare il pulsante che viene fornito dal modello di pacchetto, come illustrato nell'esempio seguente.  
   
     ```xml  
     <Button guid="guidReusableCommandPackageCmdSet" id="ReusableCommandId" priority="0x0100" type="Button">  
@@ -73,7 +73,7 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
     </Button>  
     ```  
   
-2.  Se un pulsante deve comparire in più di un gruppo, creare una voce per tale nella sezione CommandPlacements, che deve essere inserita dopo la sezione di comandi. Impostare gli attributi GUID e ID dell'elemento CommandPlacement affinché corrispondano a quelle del pulsante che si desidera posizionare e quindi impostare il GUID e l'ID dell'elemento padre a quelli del gruppo di destinazione, come illustrato nell'esempio seguente.  
+2.  Se un pulsante deve apparire in più di un gruppo, creare una voce per tale nella sezione CommandPlacements, che deve essere inserita dopo la sezione di comandi. Impostare gli attributi GUID e ID dell'elemento CommandPlacement affinché corrispondano a quelle del pulsante che si desidera posizionare e quindi impostare il GUID e ID dell'elemento padre a quelle del gruppo di destinazione, come illustrato nell'esempio seguente.  
   
     ```xml  
     <CommandPlacements>  
@@ -86,9 +86,9 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
     > [!NOTE]
     >  Il valore del campo priorità determina la posizione del comando nel nuovo gruppo di comando. Le priorità di impostare il CommandPlacement elemento sostituiscono quelli impostati nella definizione di elemento. I comandi che hanno valori di priorità inferiore vengono visualizzati prima i comandi che hanno valori di priorità superiore. Sono consentiti valori di priorità identici, ma la posizione relativa dei comandi con lo stesso valore di priorità non può essere garantita poiché l'ordine in cui il **devenv /setup** comando crea l'interfaccia finale dal Registro di sistema potrebbe non essere coerente.  
   
-### <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Per inserire un gruppo di pulsanti riutilizzabile in un menu  
+## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Inserire un gruppo riutilizzabile di pulsanti in un menu  
   
-1.  Creare una voce di `CommandPlacements` sezione. Impostare il GUID e ID del `CommandPlacement` elemento a quelli del gruppo e impostare l'elemento padre GUID e ID a quelle del percorso di destinazione.  
+1.  Creare una voce nel `CommandPlacements` sezione. Impostare il GUID e ID del `CommandPlacement` elemento a quelli del gruppo e impostare l'elemento padre GUID e ID a quelle del percorso di destinazione.  
   
      La sezione CommandPlacements deve essere posizionata immediatamente dopo la sezione di comandi:  
   
@@ -101,9 +101,9 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
     </CommandTable>  
     ```  
   
-     Un gruppo di comandi può essere inclusi più di un menu. Menu del padre può essere creato, che viene fornito da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (come descritto in ShellCmdDef.vsct o SharedCmdDef.vsct), o che viene definito in un altro VSPackage. Il numero di livelli padre è illimitato, purché menu del padre è connesso alla fine di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o a un menu di scelta rapida che viene visualizzato da un pacchetto VSPackage.  
+     Un gruppo di comandi può essere inclusi in più di un menu. Menu del padre può essere uno che è stato creato, che viene fornito da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (come descritto in *ShellCmdDef.vsct* oppure *SharedCmdDef.vsct*), o che viene definito in un altro VSPackage. Il numero di livelli padre è illimitato, purché il menu padre alla fine è connesso a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o a un menu di scelta rapida che viene visualizzato da un pacchetto VSPackage.  
   
-     Nell'esempio seguente inserisce il gruppo **Esplora** barra degli strumenti, a destra degli altri pulsanti.  
+     Nell'esempio seguente inserisce il gruppo di nel **Esplora soluzioni** sulla barra degli strumenti, a destra degli altri pulsanti.  
   
     ```xml  
     <CommandPlacements>  

@@ -1,5 +1,5 @@
 ---
-title: Utilità CreatePkgDef | Documenti Microsoft
+title: Utilità CreatePkgDef | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,45 +16,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8ae53766a42ac2ed218bc92f59088d27e4434e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135791"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500696"
 ---
 # <a name="createpkgdef-utility"></a>Utilità CreatePkgDef
-Accetta un file DLL per un'estensione di Visual Studio come un parametro e crea un file. pkgdef che accompagnano il file DLL. Il file. pkgdef contiene tutte le informazioni che verrebbero scritto nel Registro di sistema in caso contrario è installata l'estensione.  
+Accetta un file con estensione dll per un'estensione di Visual Studio come parametro e crea un *pkgdef* file di accompagnamento per il *DLL* file. Il *pkgdef* file contiene tutte le informazioni che verrebbe scritto nel Registro di sistema in caso contrario, quando è installata l'estensione.  
   
 > [!NOTE]
->  La maggior parte dei modelli di progetto che vengono automaticamente inclusi in Visual Studio SDK per creare file. pkgdef come parte del processo di compilazione. Questo documento è destinato a coloro che desiderano creare manualmente i pacchetti o convertire i pacchetti esistenti per l'utilizzo di distribuzione. pkgdef.  
+>  Creare la maggior parte dei modelli di progetto che sono inclusi automaticamente in Visual Studio SDK *pkgdef* file come parte del processo di compilazione. Questo documento è destinato a utenti che desiderano creare manualmente i pacchetti o convertire i pacchetti esistenti per usare *pkgdef* distribuzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath  
+CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>  
 ```  
   
 ## <a name="arguments"></a>Argomenti  
- /out =`FileName`  
- Obbligatorio. Imposta il nome del file di output. pkgdef per`FileName`.  
+ **/ out =&lt;nomefile&gt;**  
+ Obbligatorio. Imposta il nome del *pkgdef* del file di output &lt;FileName&gt;.  
   
- /codebase  
- Facoltativo. Registrazione forza con l'utilità della CodeBase.  
+ **/codebase**  
+ Facoltativo. Forza la registrazione con il **CodeBase** utilità.  
   
- /assembly  
- Registrazione forza con l'utilità di Assembly.  
+ **/assembly**  
+ Forza la registrazione con il **Assembly** utilità.  
   
- `AssemblyPath`  
- Il percorso del file DLL da cui si desidera generare il. pkgdef.  
+ **&lt;AssemblyPath&gt;**  
+ Il percorso dei *. dll* file da cui si desidera generare il *pkgdef*.  
   
 ## <a name="remarks"></a>Note  
- Distribuzione di un'estensione tramite i file. pkgdef sostituisce i requisiti del Registro di sistema delle versioni precedenti di Visual Studio.  
+ Distribuzione di un'estensione usando *pkgdef* file sostituisce i requisiti del Registro di sistema le versioni precedenti di Visual Studio.  
   
- I file. pkgdef devono essere installati in uno dei seguenti percorsi: %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ o %vsinstalldir%\Common7\IDE\Extensions\\. Se la cartella di installazione è %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\, l'estensione verrà riconosciuto da Visual Studio, ma verrà disabilitata per impostazione predefinita. L'utente può abilitare l'estensione tramite **estensioni e aggiornamenti**. Se la cartella di installazione è %vsinstalldir%\Common7\IDE\Extensions\\, l'estensione è abilitata per impostazione predefinita.  
+ Il *pkgdef* file devono essere installati in una delle seguenti posizioni: 
+
+ - *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\* 
+ 
+ - *%VSInstallDir%\Common7\IDE\Extensions\\*
+    
+ Se la cartella di installazione *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, l'estensione verrà riconosciuto da Visual Studio, ma verrà disabilitata per impostazione predefinita. L'utente può abilitare l'estensione usando **estensioni e aggiornamenti**. 
+   
+ Se la cartella di installazione *%vsinstalldir%\Common7\IDE\Extensions\\*, l'estensione sia abilitata per impostazione predefinita.  
   
 > [!NOTE]
->  Il **estensioni e aggiornamenti** strumento non può essere utilizzato per accedere a un'estensione a meno che non viene installato come parte di un pacchetto VSIX.  
+>  Il **estensioni e aggiornamenti** strumento non può essere usato per accedere a un'estensione a meno che non viene installato come parte di un pacchetto VSIX.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Utilità CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

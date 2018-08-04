@@ -1,5 +1,5 @@
 ---
-title: Linee guida di controllo di origine aggiuntivi per i progetti e gli editor | Documenti Microsoft
+title: Linee guida di controllo di origine aggiuntivi per i progetti ed editor | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,28 +13,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e39c8fcc78712f0f8d9b799789751c16f343ada6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 454984334cbd91833447829227787b0679b4ed54
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129281"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497719"
 ---
-# <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Linee guida di controllo di origine aggiuntivi per i progetti e gli editor
-Esistono alcune linee guida che progetti ed editor deve rispettare per supportare controllo del codice sorgente.  
+# <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Linee guida di controllo di origine aggiuntivi per i progetti ed editor
+Esistono una serie di linee guida che progetti ed editor deve rispettare per supportare il controllo del codice sorgente.  
   
 ## <a name="guidelines"></a>Indicazioni  
- Il progetto o un editor deve inoltre eseguire le operazioni seguenti per il supporto di controllo del codice sorgente:  
+ Il progetto o l'editor deve anche eseguire le operazioni seguenti per il supporto di controllo del codice sorgente:  
   
 |Area|Progetto|Editor|Dettagli|  
 |----------|-------------|------------|-------------|  
-|Privato copie dei file|x||L'ambiente supporta private copie dei file. Ovvero, ogni persona elencata nel progetto ha proprio propria copia privata dei file in tale progetto.|  
-|Persistenza ANSI o Unicode|x|x|Se si scrive il codice di persistenza, mantenere i file nel formato ANSI poiché la maggior parte dei programmi di controllo di origine non supportano Unicode.|  
-|Enumerare i file|x||Il progetto deve contenere un elenco specifico di tutti i file all'interno di esso e deve essere in grado di enumerare l'elenco di file utilizzando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (VSH_PROPID_First_Child/Next_Sibling). Il progetto deve esporre anche i nomi di elemento con il relativo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> implementazione e supporto di ricerca del nome (inclusi i file speciali) tramite il relativo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> implementazione.|  
-|Formato di testo|x|x|Se possibile, i file devono essere in formato testo per supportare l'unione di versioni diverse. Impossibile unire file che non sono in formato testo con altre versioni del file in un secondo momento. Il formato di testo preferito è XML.|  
-|Basato sul riferimento|x||Progetti basato sul riferimento facilmente sono supportati nel controllo del codice sorgente. Tuttavia, progetti basati su directory supportati anche dal controllo del codice sorgente, purché il progetto può produrre un elenco dei file su richiesta, indipendentemente dall'esistano di tali file sul disco. Quando si apre un progetto dal controllo del codice sorgente, il file di progetto diventa inattivo prima di qualsiasi file.|  
-|Rendere persistenti di oggetti e proprietà in ordine prestabilito|x|x|Mantenere i file in un ordine prestabilito, ad esempio ordine alfabetico, per facilitare l'unione.|  
-|Ricarica|x|x|Quando viene modificato un file su disco, l'editor deve essere in grado di ricaricare il file. Quando partecipa a controllo del codice sorgente, l'ambiente ricarica dati per l'utente chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementazione. La più difficile Ricarica si verifica quando si verifica un checkpoint quando è stato chiamato IVsQueryEditQuerySave::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e l'elaborazione di informazioni. Tuttavia, il codice di ricaricamento deve essere in grado di eseguire in questa situazione.<br /><br /> L'ambiente ricarica automaticamente i file di progetto. Tuttavia, è necessario implementare un progetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> se è nidificata gerarchie per supportare il ricaricamento annidati di file di progetto.|  
+|Copia privata dei file|x||L'ambiente supporta private copie dei file. Vale a dire, ogni persona integrata nel progetto ha il proprio copia privata dei file in tale progetto.|  
+|Persistenza di ANSI o Unicode|x|x|Se si scrive il codice di persistenza, rendere persistenti i file in formato ANSI poiché la maggior parte dei programmi di controllo di origine attualmente non supportano Unicode.|  
+|Enumerare i file|x||Il progetto deve contenere un elenco specifico di tutti i file in esso contenuti e deve essere in grado di enumerare l'elenco di file usando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (VSH_PROPID_First_Child/Next_Sibling). Il progetto deve anche esporre i nomi di elemento tramite relativi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> implementazione e supporto per la ricerca del nome (tra cui file speciali) tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> implementazione.|  
+|Formato di testo|x|x|Quando possibile, i file devono essere in formato testo per supportare l'unione di versioni diverse. File che non sono in formato testo non è possibile unire con altre versioni del file in un secondo momento. Il formato di testo preferito è XML.|  
+|In base al riferimento|x||I progetti in base al riferimento facilmente sono supportati nel controllo del codice sorgente. Tuttavia, i progetti basati su directory supportati anche dal controllo del codice sorgente, purché il progetto può produrre un elenco dei relativi file su richiesta, indipendentemente dall'esistono di tali file sul disco. Quando si apre un progetto dal controllo del codice sorgente, il file di progetto diventa inattivo prima di qualsiasi file.|  
+|Rendere persistenti gli oggetti e proprietà in ordine prevedibile|x|x|Rendi permanenti i file in un ordine prevedibile, ad esempio un ordine alfabetico, per facilitare l'unione.|  
+|Ricarica|x|x|Quando viene modificato un file su disco, l'editor deve essere in grado di ricaricarlo. Quando si partecipa controllo del codice sorgente, l'ambiente verrà ricaricare i dati per l'utente chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementazione. Il caso di ricaricamento più difficile è quando si verifica un checkpoint quando è stata chiamata IVsQueryEditQuerySave::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e l'elaborazione di informazioni. Tuttavia, il codice di ricaricamento deve essere in grado di eseguire in questa situazione.<br /><br /> L'ambiente ricarica automaticamente i file di progetto. Tuttavia, è necessario implementare un progetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> se l'area è nidificata gerarchie per supportare il ricaricamento di nidificare i file di progetto.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Supporto del controllo del codice sorgente](../../extensibility/internals/supporting-source-control.md)
+ [Supporto di controllo del codice sorgente](../../extensibility/internals/supporting-source-control.md)

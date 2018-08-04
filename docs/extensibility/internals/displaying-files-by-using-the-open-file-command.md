@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione di file utilizzando il comando Apri File | Documenti Microsoft
+title: Visualizzazione di file usando il comando Apri File | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,47 +15,47 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b84992dc1803f1eee4fc36d477db1708eb90904
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 425433c3d67e654398fde1609b3f9c4d54e63648
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130893"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498725"
 ---
-# <a name="displaying-files-by-using-the-open-file-command"></a>Visualizzazione di file utilizzando il comando Apri File
-I passaggi seguenti descrivono il modo in cui l'IDE gestisce il **Apri File** comando, è disponibile nel **File** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Viene descritta anche la modalità con cui i progetti devono risposta alle chiamate provenienti da questo comando.  
+# <a name="display-files-by-using-the-open-file-command"></a>Visualizzare i file usando il comando Apri File
+I passaggi seguenti descrivono come l'IDE gestisce i **Apri File** comando, che è disponibile nel **File** dal menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. I passaggi descrivono anche come i progetti devono rispondere alle chiamate provenienti da questo comando.  
   
- Quando un utente fa clic il **Apri File** comando il **File** dal menu e seleziona un file dal **Apri** si verifica il processo seguente nella finestra di dialogo.  
+ Quando un utente fa clic il **Apri File** comando le **File** dal menu e seleziona un file dal **Apri File** si verifica il processo seguente nella finestra di dialogo:  
   
-1.  Utilizzando la tabella documenti in esecuzione, l'IDE determina se il file è già aperto in un progetto.  
+1.  Usa la tabella documenti in esecuzione, l'IDE determina se il file è già aperto in un progetto.  
   
     -   Se il file è aperto, l'IDE riemerga la finestra.  
   
     -   Se il file non è aperto, l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> per ogni progetto per determinare quale progetto è possibile aprire il file di query.  
   
         > [!NOTE]
-        >  Nell'implementazione del progetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, fornire un valore che indica il livello in cui il progetto viene aperto il file di priorità. Vengono forniti valori di priorità nel <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione.  
+        >  Nell'implementazione del progetto di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, fornire un valore di priorità che indica il livello in corrispondenza del quale il progetto verrà aperto il file. Vengono forniti i valori di priorità nei <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione.  
   
-2.  Ogni progetto risponde con un livello di priorità che indica l'importanza viene inserito in corso il progetto per aprire il file.  
+2.  Ogni progetto risponde con un livello di priorità che indica l'importanza viene posizionato sul progetto aprire il file.  
   
-3.  L'IDE Usa i criteri seguenti per determinare quale progetto viene aperto il file:  
+3.  L'IDE Usa i criteri seguenti per determinare quale progetto apre il file:  
   
-    -   Il file verrà aperto il progetto che risponde con la priorità più alta (DP_Intrinsic). Se più di un progetto risponde con la priorità, il progetto prima di rispondere apre il file.  
+    -   Il progetto che risponde con la priorità più alta (`DP_Intrinsic`) consente di aprire il file. Se più di un progetto risponde con la priorità, il progetto prima di rispondere apre il file.  
   
-    -   Se non risponde del progetto con la priorità più alta (DP_Intrinsic), ma tutti i progetti risponde con la priorità più bassa, stesso, il progetto attivo apre il file. Se è attivo alcun progetto, il progetto prima di rispondere apre il file.  
+    -   Se nessun progetto risponde con la priorità più alta (`DP_Intrinsic`), ma tutti i progetti risponde con la priorità stesso, inferiore, il file verrà aperto il progetto attivo. Se nessun progetto è attivo, il progetto prima di rispondere apre il file.  
   
-    -   Se nessun progetto le attestazioni di proprietà del file (DP_Unsupported), il progetto file esterni apre il file.  
+    -   Se nessun progetto attesta la proprietà del file (`DP_Unsupported`), il file verrà aperto il progetto file esterni.  
   
-         Se viene creata un'istanza del progetto file esterni, il progetto risponde sempre con il valore DP_CanAddAsExternal. Questo valore indica che il progetto è possibile aprire il file. Questo progetto viene utilizzato per ospitare i file aperti che non sono presenti in qualsiasi altro progetto. L'elenco di elementi in questo progetto non è persistente; Questo progetto è visibile in **Esplora** solo quando viene utilizzato per aprire un file.  
+         Se viene creata un'istanza del progetto file esterni, il progetto è sempre risponde con il valore `DP_CanAddAsExternal`. Questo valore indica che il progetto può aprire il file. Questo progetto viene utilizzato per ospitare i file aperti che non sono in qualsiasi altro progetto. L'elenco di elementi in questo progetto non è persistente; Questo progetto è visibile nel **Esplora soluzioni** solo quando viene usato per aprire un file.  
   
-         Se il progetto file esterni non indica che è possibile aprire il file, un'istanza del progetto non è stata creata. In questo caso, l'IDE crea un'istanza del progetto file esterni e indica il progetto per aprire il file.  
+         Se il progetto file esterni non indica che è possibile aprire il file, un'istanza del progetto non è stata creata. In questo caso, l'IDE crea un'istanza del progetto file esterni e indica al progetto per aprire il file.  
   
-4.  Non appena l'IDE determina quale progetto viene aperto il file, chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metodo su tale progetto.  
+4.  Non appena l'IDE determina che il file viene aperto il progetto, chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metodo su tale progetto.  
   
-5.  Il progetto è quindi possibile aprire il file usando un editor specifico del progetto o un editor standard. Per ulteriori informazioni, vedere [come: gli editor aperti specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md) e [procedura: aprire gli editor Standard](../../extensibility/how-to-open-standard-editors.md)rispettivamente.  
+5.  Il progetto è quindi possibile aprire il file usando un editor specifico del progetto o un editor standard. Per altre informazioni, vedere [procedura: aprire gli editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md) e [procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md), rispettivamente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione di file tramite l'apertura con il comando](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
- [Apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md)   
- [Procedura: apertura degli editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)   
- [Procedura: Aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)
+ [Visualizzare i file usando il comando Apri con](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
+ [Aprire e salvare elementi del progetto](../../extensibility/internals/opening-and-saving-project-items.md)   
+ [Procedura: aprire gli editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)

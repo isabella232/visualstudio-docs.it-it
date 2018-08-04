@@ -1,5 +1,5 @@
 ---
-title: Elemento Description (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento Description (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 471633a4c786a879b333a09a4d7975739a56ccfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13a93ce9eb5bca506751e215fe74477839e961d9
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128917"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500800"
 ---
 # <a name="description-element-visual-studio-templates"></a>Elemento Description (modelli di Visual Studio)
-Specifica la descrizione del modello così come appare in entrambi i **nuovo progetto** o **Aggiungi nuovo elemento** la finestra di dialogo.  
+Specifica la descrizione del modello così come appare in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -61,7 +61,7 @@ Specifica la descrizione del modello così come appare in entrambi i **nuovo pro
 ## <a name="text-value"></a>Valore di testo  
  È necessario un valore di testo, a meno che il `Package` e `ID` vengono utilizzati gli attributi.  
   
- Il testo viene fornita una descrizione del modello.  
+ Il testo fornisce una descrizione del modello.  
   
 ## <a name="remarks"></a>Note  
  `Description` è un elemento figlio obbligatorio dell'elemento `TemplateData`.  
@@ -94,5 +94,5 @@ Specifica la descrizione del modello così come appare in entrambi i **nuovo pro
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

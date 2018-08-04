@@ -1,5 +1,5 @@
 ---
-title: Implementazione di categorie personalizzate e elementi visualizzati | Documenti Microsoft
+title: Implementazione di categorie personalizzate e elementi visualizzati | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,41 +14,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9593a7addcd9a3f100f45f69e7e692c396e33bfe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2dbb6744b925dac1bfa91a73024ef14ef9ad29ac
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134883"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499325"
 ---
-# <a name="implementing-custom-categories-and-display-items"></a>Implementazione di elementi visualizzati e categorie personalizzate
+# <a name="implement-custom-categories-and-display-items"></a>Implementare le categorie personalizzate e visualizzare gli elementi
 Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del testo per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) tramite le categorie personalizzate e di elementi visualizzati.
 
- Categorie personalizzate e gli elementi di visualizzazione si trovano i **tipi di carattere e colori** pagina delle proprietà. Per aprire il **tipi di carattere e colori** nella pagina proprietà di **strumenti** menu, fare clic su **opzioni**. Espandere **ambiente** e quindi fare clic su **tipi di carattere e colori**.
+ Categorie personalizzate e gli elementi di visualizzazione si trovano i **Fonts and Colors** pagina delle proprietà. Per aprire la **i tipi di carattere e colori** pagina delle proprietà, scegliere il **strumenti** dal menu fare clic su **opzioni**. Espandere **ambiente** e quindi fare clic su **Fonts and Colors**.
 
- Quando si utilizza questo meccanismo, i pacchetti VSPackage devono implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfaccia e le relative interfacce associate.
+ Quando si usa questo meccanismo, i pacchetti VSPackage devono implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfaccia e le interfacce associate.
 
- In sostanza, questo meccanismo può essere utilizzato per modificare tutte le **visualizzare gli elementi** e **categorie** che li contengono. Tuttavia, non essere usato per modificare il **testo EditorCategory** o dai relativi **visualizzare gli elementi**. Per ulteriori informazioni, vedere [tipo di carattere e colore Panoramica](../extensibility/font-and-color-overview.md).
+ In teoria, questo meccanismo è utilizzabile per modificare tutte esistenti **elementi visualizzati** e il **categorie** che li contengono. Tuttavia non essere utilizzata per modificare la **testo EditorCategory** o dai relativi **elementi visualizzati**. Per altre informazioni, vedere [Panoramica di carattere e colori](../extensibility/font-and-color-overview.md).
 
- Per implementare personalizzato **categorie** o **visualizzare gli elementi**, un pacchetto VSPackage deve:
+ Per implementare custom **categorie** oppure **elementi visualizzati**, un pacchetto VSPackage deve:
 
--   Creare o identificare categorie nel Registro di sistema.
+-   Creare o identificare le categorie nel Registro di sistema.
 
-     Implementazione dell'IDE del **tipi di carattere e colori** pagina delle proprietà utilizza queste informazioni per eseguire correttamente le query per il servizio supporta una determinata categoria.
+     Implementazione dell'IDE del **Fonts and Colors** pagina delle proprietà Usa queste informazioni per eseguire correttamente le query per il servizio che supporta una determinata categoria.
 
 -   Creare o identificare i gruppi (facoltativi) nel Registro di sistema.
 
-     Può essere utile definire un gruppo che rappresenta l'unione di due o più categorie. Se viene definito un gruppo, l'IDE automaticamente unisce le sottocategorie e distribuisce gli elementi di visualizzazione all'interno del gruppo.
+     Può essere utile definire un gruppo, che rappresenta l'unione di due o più categorie. Se viene definito un gruppo, l'IDE automaticamente unisce le sottocategorie e distribuisce elementi visualizzati all'interno del gruppo.
 
 -   Implementazione del supporto IDE.
 
 -   Gestire le modifiche di carattere e colori.
 
- Per informazioni, vedere [accesso archiviati tipo di carattere e le impostazioni dei colori](../extensibility/accessing-stored-font-and-color-settings.md).
+ Per informazioni, vedere [accesso archiviate le impostazioni del tipo di carattere e colore](../extensibility/accessing-stored-font-and-color-settings.md).
 
-## <a name="to-create-or-identify-categories"></a>Per creare o identificare categorie
+## <a name="to-create-or-identify-categories"></a>Per creare o identificare le categorie
 
--   Creare un tipo speciale di voce del Registro di sistema categoria [HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >* \FontAndColors\\`<Category>`]
+-   Costruire un tipo speciale di voce del Registro di sistema categoria sotto *[HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >*\FontAndColors\\ `<Category>`]*
 
      *\<Categoria >* è il nome non localizzato della categoria.
 
@@ -57,13 +57,13 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
     |nome|Tipo|Dati|Descrizione|
     |----------|----------|----------|-----------------|
     |Category|REG_SZ|GUID|Un GUID creato per identificare la categoria.|
-    |Pacchetto|REG_SZ|GUID|Il GUID del servizio VSPackage che supporta la categoria.|
+    |Pacchetto|REG_SZ|GUID|Il GUID del servizio di VSPackage che supporta la categoria.|
 
  Il servizio specificato nel Registro di sistema deve fornire un'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> per la categoria corrispondente.
 
 ## <a name="to-create-or-identify-groups"></a>Per creare o identificare i gruppi
 
--   Creare un tipo speciale di voce del Registro di sistema categoria [HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >* \FontAndColors\\  *\<gruppo >*]
+-   Costruire un tipo speciale di voce del Registro di sistema categoria sotto *[HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >*\FontAndColors\\*  \<gruppo >*]*
 
      *\<gruppo >* è il nome non localizzato del gruppo.
 
@@ -76,54 +76,54 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
 
  Il servizio specificato nel Registro di sistema deve fornire un'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> per il gruppo corrispondente.
 
-## <a name="to-implement-ide-support"></a>Per implementare il supporto IDE
+## <a name="to-implement-ide-support"></a>Per implementare il supporto dell'IDE
 
--   Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>, che restituisce un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfaccia o un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfaccia all'IDE per ciascuna **categoria** o gruppo GUID specificato.
+-   Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>, che restituisce un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfaccia o un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfaccia per l'IDE per ogni **categoria** o raggruppare i GUID fornito.
 
--   Per ogni **categoria** supporta, un VSPackage che implementa un'istanza separata del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfaccia.
+-   Per ogni **categoria** supportati, un pacchetto VSPackage che implementa un'istanza separata del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfaccia.
 
 -   I metodi implementati tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> deve fornire l'IDE con:
 
-    -   Elenchi delle **visualizzare gli elementi** nel **categoria.**
+    -   L'elenco delle **elementi visualizzati** nel **categoria.**
 
-    -   Nomi localizzabili per **visualizzare gli elementi**.
+    -   I nomi localizzabili per **elementi visualizzati**.
 
-    -   Visualizzare le informazioni per ogni membro di **categoria**.
+    -   Visualizzare le informazioni per ogni membro del **categoria**.
 
     > [!NOTE]
-    >  Ogni **categoria** deve contenere almeno un **elemento visualizzato**.
+    >  Ogni **categoria** deve contenere almeno uno **elemento visualizzato**.
 
--   L'IDE Usa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfaccia per definire un'unione di diverse categorie.
+-   L'IDE Usa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfaccia per definire un'unione delle categorie diverse.
 
      L'implementazione fornisce l'IDE con:
 
-    -   Un elenco di **categorie** che costituiscono un gruppo specificato.
+    -   Un elenco del **categorie** che costituiscono un gruppo specificato.
 
-    -   Accesso alle istanze del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> supporto ogni **categoria** all'interno del gruppo.
+    -   Accedere alle istanze del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> che supportano ciascuna **categoria** all'interno del gruppo.
 
-    -   Nomi di gruppo localizzabile.
+    -   Nomi dei gruppi localizzabile.
 
 -   Aggiornamento dell'IDE:
 
-     L'IDE memorizza nella cache di informazioni sulle **carattere e colori** impostazioni. Di conseguenza, dopo l'eventuale modifica dell'IDE **carattere e colori** configurazione, è consigliabile assicurarsi che la cache è aggiornata.
+     L'IDE memorizza nella cache le informazioni sulle **carattere e colori** impostazioni. Di conseguenza, dopo l'eventuale modifica dell'IDE **carattere e colori** configurazione, è consigliabile verificare che la cache sia aggiornata.
 
- Aggiornamento della cache viene eseguita tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> l'interfaccia e può essere eseguita a livello globale o solo in elementi.
+ Aggiornamento della cache viene eseguita tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfaccia e può essere eseguiti elementi a livello globale o solo sulla selezionati.
 
-## <a name="to-handle-font-and-color-changes"></a>Per gestire i tipi di carattere e colore le modifiche
- Per supportare correttamente la colorazione di testo che visualizza un VSPackage, il servizio di colorazione supporta il pacchetto VSPackage deve rispondere alle modifiche avviata dall'utente tramite il **tipi di carattere e colori** pagina delle proprietà. Un pacchetto VSPackage a tale scopo:
+## <a name="to-handle-font-and-color-changes"></a>Per gestire le modifiche di carattere e colori
+ Per supportare correttamente la colorazione del testo che consente di visualizzare un pacchetto VSPackage, il servizio di colorazione che supporta il pacchetto VSPackage deve rispondere alle modifiche avviata dall'utente tramite il **Fonts and Colors** pagina delle proprietà. Un pacchetto VSPackage a tale scopo:
 
--   Gestione degli eventi generati da IDE implementando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfaccia.
+-   La gestione degli eventi generati da IDE implementando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfaccia.
 
-     L'IDE chiama il metodo appropriato, le modifiche apportate dall'utente di seguenti il **tipi di carattere e colori** pagina. Ad esempio, chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> metodo se si seleziona un nuovo tipo di carattere.
+     L'IDE chiama il metodo appropriato dopo le modifiche apportate dall'utente del **Fonts and Colors** pagina. Ad esempio, chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> metodo se si seleziona un nuovo tipo di carattere.
 
      oppure
 
 -   L'IDE per le modifiche di polling.
 
-     Questo può avvenire tramite implementato dal sistema <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia. Sebbene principalmente per il supporto di persistenza, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> metodo può essere utilizzato per ottenere informazioni di carattere e colori per **visualizzare gli elementi**. Per ulteriori informazioni, vedere [accesso archiviati tipo di carattere e le impostazioni dei colori](../extensibility/accessing-stored-font-and-color-settings.md).
+     Questa operazione può essere eseguita tramite il sistema implementato <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia. Anche se principalmente per il supporto di persistenza, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> metodo può essere utilizzato per ottenere informazioni di carattere e colori per **elementi visualizzati**. Per altre informazioni, vedere [accesso archiviate le impostazioni del tipo di carattere e colore](../extensibility/accessing-stored-font-and-color-settings.md).
 
     > [!NOTE]
-    >  Per garantire che i risultati ottenuti tramite polling siano corretti, potrebbe essere utile utilizzare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfaccia per determinare se sono necessari un scaricamento della cache e l'aggiornamento prima di chiamare i metodi di recupero del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia.
+    >  Per garantire che i risultati ottenuti eseguendo il polling siano corretti, che può essere utile usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfaccia per determinare se una cache flush e aggiornamento sono necessari prima di chiamare i metodi di recupero del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia.
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -133,7 +133,7 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
-- [Recupero di tipo di carattere e colore per testo colorazione](../extensibility/getting-font-and-color-information-for-text-colorization.md)
-- [L'accesso a carattere archiviato e le impostazioni dei colori](../extensibility/accessing-stored-font-and-color-settings.md)
-- [Procedura: accedere ai tipi di carattere incorporati e una combinazione di colori](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
-- [Panoramica di colore e tipo di carattere](../extensibility/font-and-color-overview.md)
+- [Ottenere le informazioni di carattere e colori per la colorazione del testo](../extensibility/getting-font-and-color-information-for-text-colorization.md)
+- [Accesso archiviate le impostazioni di carattere e colori](../extensibility/accessing-stored-font-and-color-settings.md)
+- [Procedura: accedere ai tipi di carattere incorporati e combinazione di colori](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [Panoramica di carattere e colori](../extensibility/font-and-color-overview.md)

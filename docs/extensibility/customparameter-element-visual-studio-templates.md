@@ -1,5 +1,5 @@
 ---
-title: Elemento CustomParameter (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento CustomParameter (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154586701386f5f8f56c128920e12ca3147deb6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de6f5bf513d9d3582ba05bf7a34471d13743f8de
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100569"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500683"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>Elemento CustomParameter (modelli di Visual Studio)
-Contiene un nome del parametro personalizzato e il valore da utilizzare quando viene creato un progetto o un elemento del modello.  
+Contiene un nome del parametro personalizzato e un valore da utilizzare quando viene creato un progetto o un elemento dal modello.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,7 +38,7 @@ Contiene un nome del parametro personalizzato e il valore da utilizzare quando v
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Name`|Obbligatorio. Nome del parametro. Il formato dei parametri è $*nome*$.|  
+|`Name`|Obbligatorio. Nome del parametro. Il formato per i parametri è $*nome*$.|  
 |`Value`|Obbligatorio. Il valore di sostituzione per il parametro.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
@@ -48,13 +48,13 @@ Contiene un nome del parametro personalizzato e il valore da utilizzare quando v
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Raggruppa i parametri personalizzati che devono essere passati per la creazione guidata modello quando la procedura guidata effettua le sostituzioni di parametro.|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Consente di raggruppare i parametri personalizzati che devono essere passati per la creazione guidata modello durante la procedura guidata effettua le sostituzioni di parametro.|  
   
 ## <a name="remarks"></a>Note  
  Quando un modello contiene `CustomParameter` elementi, ogni istanza di `Name` attributo viene sostituito con il `Value` attributo nei file di progetto o un elemento creati.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come utilizzare diversi parametri personalizzati in un modello. Quando viene creato un progetto o un elemento da un modello con i seguenti parametri personalizzati, tutte le istanze di `$color1$` e `$color2$` nel modello di file verranno sostituiti con `Red` e `Blue`, rispettivamente.  
+ Nell'esempio seguente viene illustrato come usare diversi parametri personalizzati in un modello. Quando viene creato un progetto o un elemento da un modello con i seguenti parametri personalizzati, tutte le istanze del `$color1$` e `$color2$` nel modello di file verranno sostituiti con `Red` e `Blue`, rispettivamente.  
   
 ```  
 <CustomParameters>  
@@ -65,5 +65,5 @@ Contiene un nome del parametro personalizzato e il valore da utilizzare quando v
   
 ## <a name="see-also"></a>Vedere anche  
  [Elemento CustomParameters (modelli di Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)   
- [Parametri di modello](../ide/template-parameters.md)   
- [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Parametri del modello](../ide/template-parameters.md)   
+ [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
