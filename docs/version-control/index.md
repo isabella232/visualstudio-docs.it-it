@@ -12,19 +12,19 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4af331926cdcf1532f0672539b08426b433052bf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279914"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510822"
 ---
 # <a name="version-control-in-visual-studio"></a>Controllo della versione in Visual Studio
 
 I sistemi di controllo della versione consentono di tenere traccia delle modifiche al codice nel tempo. Quando si apportano modifiche, il sistema di controllo della versione crea uno snapshot dei file e lo salva in modo permanente in modo da poterlo richiamare in un secondo momento, se necessario. Visual Studio offre [Git](/vsts/git/index) e il [controllo della versione di Team Foundation](/vsts/tfvc/index). Per scegliere tra i due sistemi, vedere [Scelta del sistema di controllo della versione corretto](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json).
 
 ## <a name="git"></a>Git
-Ad oggi, Git è il sistema di controllo della versione più diffuso e si sta affermando rapidamente come standard per il controllo della versione. Git è un sistema di controllo della versione distribuito e ciò significa che la copia locale del codice è un repository del controllo della versione completo. Questi repository locali completamente funzionanti semplificano il lavoro offline o remoto. Il commit del lavoro viene eseguito localmente e quindi la copia del repository viene sincronizzata con la copia nel server. Questo approccio è diverso rispetto al controllo della versione centralizzato, in cui i client devono sincronizzare il codice con un server prima di creare nuove versioni del codice.
+Ad oggi, Git è il sistema di controllo della versione più diffuso e si sta affermando rapidamente come standard per il controllo della versione. Git è un sistema di controllo della versione distribuito e ciò significa che la copia locale del codice è un repository del controllo della versione completo. Questi repository locali completamente operativi semplificano il lavoro offline o remoto. Il commit del lavoro viene eseguito localmente e quindi la copia del repository viene sincronizzata con la copia nel server. Questo approccio è diverso rispetto al controllo della versione centralizzato, in cui i client devono sincronizzare il codice con un server prima di creare nuove versioni del codice.
 
 <ul class="panelContent cardsFTitle">
     <li>
