@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117693"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567233"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 I modelli di testo T4 in fase di progettazione permettono di generare codice programma e altri file nel progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In genere, i modelli sono scritti in modo da variare il codice in cui vengono generate in base ai dati da un *modello*. Un modello è un file o database che contiene informazioni chiave sui requisiti dell'applicazione.
@@ -185,7 +185,7 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
 
 3.  Salvare il file ed esaminare il file generato, che ora contiene il codice seguente:
 
-    ```
+    ```csharp
     class MyGeneratedClass {
       private int P1 = 0;
       private int P2 = 0;
@@ -303,7 +303,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!NOTE]
 > In Visual Studio 2017, il SDK di trasformazione di modello di testo e il SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano le funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-```
+```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
 <PropertyGroup>
    <TransformOnBuild>true</TransformOnBuild>

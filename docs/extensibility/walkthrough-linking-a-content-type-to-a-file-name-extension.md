@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File | Documenti Microsoft"
+title: "Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File | Microsoft Docs"
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,28 +13,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cca12f7c04b51bcf2b695e00d9305a7feb72ebc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144895"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566753"
 ---
-# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File
-È possibile definire il tipo di contenuto e collegare un'estensione di file utilizzando le estensioni di editor Managed Extensibility Framework (MEF). In alcuni casi, l'estensione del nome file è già stato definito da un servizio di linguaggio. Tuttavia, per utilizzarlo con MEF è ancora necessario collegarlo a un tipo di contenuto.  
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: Collegamento di un tipo di contenuto per un'estensione di file
+È possibile definire il proprio tipo di contenuto e un collegamento un'estensione di file tramite le estensioni di editor Managed Extensibility Framework (MEF). In alcuni casi, l'estensione è già definito da un servizio di linguaggio. Tuttavia, per usarlo con MEF, è necessario comunque collegarlo a un tipo di contenuto.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per ulteriori informazioni, vedere [l'installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ A partire da Visual Studio 2015, Visual Studio SDK è non installare dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-mef-project"></a>Creazione di un progetto MEF  
+## <a name="create-a-mef-project"></a>Creare un progetto MEF  
   
-1.  Creare un progetto VSIX in c#. (Nel **nuovo progetto** finestra di dialogo Seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `ContentTypeTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `ContentTypeTest`.  
   
-2.  Nel **vsixmanifest** file, passare al **asset** scheda e impostare il **tipo** campo **MEFComponent**, **origine** campo **un progetto nella soluzione corrente**e **progetto** campo il nome del progetto.  
+2.  Nel **vsixmanifest** file, andare alla **asset** e impostare il **tipo** campo **MEFComponent**, il **sorgente** campo **un progetto nella soluzione corrente**e la **progetto** campo per il nome del progetto.  
   
-## <a name="defining-the-content-type"></a>Definizione del tipo di contenuto  
+## <a name="define-the-content-type"></a>Definire il tipo di contenuto  
   
-1.  Aggiungere un file di classe e assegnargli il nome `FileAndContentTypes`.  
+1.  Aggiungere un file di classe e denominarla `FileAndContentTypes`.  
   
 2.  Aggiungere riferimenti agli assembly riportati di seguito:  
   
@@ -44,7 +44,7 @@ ms.locfileid: "31144895"
   
     3.  Microsoft.VisualStudio.CoreUtility  
   
-3.  Aggiungere il seguente `using` direttive.  
+3.  Aggiungere il codice seguente `using` direttive.  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -60,7 +60,7 @@ ms.locfileid: "31144895"
     {. . .}  
     ```  
   
-5.  Questa classe, è possibile esportare un <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> denominato "nascosta" e si dichiara la definizione di base per essere "text".  
+5.  In questa classe, esportare un <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> denominato "nascosta" e dichiarare la definizione di base sia "text".  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -72,9 +72,9 @@ ms.locfileid: "31144895"
     }  
     ```  
   
-## <a name="linking-a-file-name-extension-to-a-content-type"></a>Collegamento di un'estensione di File a un tipo di contenuto  
+## <a name="link-a-file-name-extension-to-a-content-type"></a>Collegare un'estensione di file a un tipo di contenuto  
   
--   Per eseguire il mapping di questo tipo di contenuto per un'estensione di file, è possibile esportare un <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> che ha l'estensione "HID" e il tipo di contenuto "nascosta".  
+-   Per eseguire il mapping di questo tipo di contenuto per un'estensione di file, esportare un <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> che ha l'estensione *HID* e il tipo di contenuto "nascosta".  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -91,13 +91,13 @@ ms.locfileid: "31144895"
     }  
     ```  
   
-## <a name="adding-the-content-type-to-an-editor-export"></a>Aggiungere il tipo di contenuto per un'esportazione di Editor  
+## <a name="add-the-content-type-to-an-editor-export"></a>Aggiungere il tipo di contenuto per un'esportazione dell'editor  
   
-1.  Creare un'estensione di editor. Ad esempio, è possibile utilizzare l'estensione del glifo margine descritto in [procedura dettagliata: creazione di un'icona di margine](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Creare un'estensione dell'editor. Ad esempio, è possibile usare l'estensione di glifo di margine descritto nella [procedura dettagliata: creazione di un glifo del margine](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
-2.  Aggiungere la classe definita in questa procedura.  
+2.  Aggiungere la classe che è definita in questa procedura.  
   
-3.  Quando si esporta la classe di estensione, aggiungere un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> di tipo "nascosta" a esso.  
+3.  Quando si esporta la classe di estensione, aggiungere un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> di tipo "nascosta" ad esso.  
   
     ```csharp  
     [Export]  
@@ -105,4 +105,4 @@ ms.locfileid: "31144895"
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Punti di estensione dei servizi di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)
+ [Punti di estensione del servizio e l'editor di linguaggio](../extensibility/language-service-and-editor-extension-points.md)

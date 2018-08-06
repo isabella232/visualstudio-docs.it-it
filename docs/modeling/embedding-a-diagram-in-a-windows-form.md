@@ -9,32 +9,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: db011f9842d00b6a39be3f1e9f4d4d7a090f2581
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7afd12aa6277983f8b50eb1d7adfdd8396f8f960
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950543"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567269"
 ---
-# <a name="embedding-a-diagram-in-a-windows-form"></a>Incorporamento di un diagramma in Windows Form
-È possibile incorporare un diagramma DSL in un controllo Windows, che viene visualizzata nella [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] finestra.
+# <a name="embed-a-diagram-in-a-windows-form"></a>Incorporare un diagramma in Windows Form
 
-## <a name="embedding-a-diagram"></a>Incorporamento di un diagramma
+È possibile incorporare un diagramma DSL in un controllo Windows, che viene visualizzata nella finestra di Visual Studio.
 
-#### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Per incorporare un diagramma DSL in un controllo di Windows
+## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Incorporare un diagramma DSL in un controllo di Windows
 
 1.  Aggiungere un nuovo **controllo utente** file al progetto DslPackage.
 
-2.  Aggiungere un controllo riquadro al controllo utente. Questo pannello conterrà il diagramma DSL.
+2.  Aggiungere un controllo Panel al controllo utente. Questo pannello conterrà il diagramma DSL.
 
      Aggiungere altri controlli necessari.
 
      Impostare le proprietà di ancoraggio dei controlli.
 
-3.  In Esplora soluzioni fare doppio clic su file di controllo utente e fare clic su **Visualizza codice**. Aggiungere il codice di questo costruttore e una variabile:
+3.  In Esplora soluzioni fare doppio clic su file del controllo utente e fare clic su **Visualizza codice**. Aggiungere questo costruttore e una variabile per il codice:
 
     ```csharp
-
     internal UserControl1(MyDSLDocView docView, Control content)
       : this()
     {
@@ -42,12 +40,11 @@ ms.locfileid: "31950543"
       this.docView = docView;
     }
     private MyDSLDocView docView;
-
     ```
 
-4.  Aggiungere un nuovo file al progetto DslPackage, con il seguente contenuto:
+4.  Aggiungere un nuovo file al progetto DslPackage, con il contenuto seguente:
 
-    ```
+    ```csharp
     using System.Windows.Forms;
     namespace Company.MyDSL
     {
@@ -66,19 +63,17 @@ ms.locfileid: "31950543"
             }
             return container;
     } } } }
-
     ```
 
-5.  Per eseguire il test del linguaggio DSL, premere F5 e aprire un file di modello di esempio. Il diagramma verrà visualizzato all'interno del controllo. Casella degli strumenti e altre funzionalità funzionano normalmente.
+5.  Per testare il linguaggio DSL, premere **F5** e aprire un file di modello di esempio. Il diagramma viene visualizzato all'interno del controllo. Casella degli strumenti e altre funzionalità funzionano normalmente.
 
-#### <a name="updating-the-form-using-store-events"></a>L'aggiornamento al Form utilizzando gli eventi di archiviazione
+## <a name="update-the-form-using-store-events"></a>Aggiornare il modulo usando gli eventi di archiviazione
 
-1.  Nella finestra di progettazione di form, aggiungere un **ListBox** denominato `listBox1`. Questo verrà visualizzato un elenco degli elementi nel modello. Rimarrà in synchronism con il modello utilizzando *archiviare eventi*. Per ulteriori informazioni, vedere [gestori propagare le modifiche di fuori di modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1.  In Progettazione Windows form, aggiungere un **ListBox** denominata `listBox1`. Verrà visualizzato un elenco degli elementi del modello. È sincronizzato con il modello usando *archiviare eventi*. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2.  Nel file di codice personalizzato, eseguire l'override ulteriori metodi alla classe DocView:
+2.  Nel file di codice personalizzato, eseguire l'override ulteriormente metodi alla classe DocView:
 
-    ```
-
+    ```csharp
     partial class MyDSLDocView
     {
      /// <summary>
@@ -115,14 +110,12 @@ ms.locfileid: "31950543"
      {
        container.Remove(e.ModelElement as ExampleElement);
      }
-
     ```
 
-3.  Nel code-behind del controllo utente, inserire i metodi per l'ascolto degli elementi aggiunti e rimossi:
+3.  Nel code-behind del controllo utente, inserire i metodi per l'ascolto per gli elementi aggiunti e rimossi:
 
-    ```
-
-          public partial class UserControl1 : UserControl { ...
+    ```csharp
+    public partial class UserControl1 : UserControl { ...
 
     private ExampleModel modelRoot;
 
@@ -144,12 +137,11 @@ ms.locfileid: "31950543"
         listBox1.Items.Add(c.Name);
       }
     }
-
     ```
 
-4.  Per eseguire il test del linguaggio DSL, premere F5 e nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aprire un file di modello di esempio.
+4.  Per testare il linguaggio DSL, premere **F5** e nell'istanza sperimentale di Visual Studio, aprire un file di modello di esempio.
 
-     Si noti che la casella di riepilogo Mostra un elenco degli elementi nel modello e che sia corretto dopo qualsiasi aggiunta o eliminazione e dopo l'annullamento e ripristino.
+     Si noti che la casella di riepilogo Mostra un elenco degli elementi del modello e che sia corretto dopo qualsiasi aggiunta o eliminazione e dopo l'annullamento e ripristino.
 
 ## <a name="see-also"></a>Vedere anche
 

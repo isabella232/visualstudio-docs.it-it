@@ -9,19 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 189e1020b3e96da4adf88793ba30cc78a25cd263
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381032"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567077"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
+
 È possibile estendere il linguaggio specifico di dominio (DSL) mediante Managed Extensibility Framework (MEF). Utente o altri sviluppatori sarà in grado di scrivere le estensioni per il DSL senza modificare il codice del programma e definizione DSL. Tali estensioni includono comandi di menu, gestori di trascinamento e rilascio e la convalida. Gli utenti saranno in grado di installare il linguaggio DSL e, facoltativamente, installare le estensioni per tale.
 
- Inoltre, quando si abilita MEF nel linguaggio DSL, potrebbe risultare più semplice per la scrittura di alcune delle funzionalità del linguaggio DSL, anche se sono tutti compilati con il linguaggio DSL.
+Inoltre, quando si abilita MEF nel linguaggio DSL, potrebbe risultare più semplice per la scrittura di alcune delle funzionalità del linguaggio DSL, anche se sono tutti compilati con il linguaggio DSL.
 
- Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Per abilitare il linguaggio DSL da parte MEF
 
@@ -30,7 +31,7 @@ ms.locfileid: "39381032"
      Nome file: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
-    >  Il GUID del set in questo file per essere quella di CommandSetId il GUID definito in DslPackage\GeneratedCode\Constants.tt
+    > Il GUID del set in questo file per essere quella di CommandSetId il GUID definito in DslPackage\GeneratedCode\Constants.tt
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -43,30 +44,30 @@ ms.locfileid: "39381032"
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-     Nome file: `CommandExtensionRegistrar.tt`
+    Nome file: `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-     Nome file: `ValidationExtensionEnablement.tt`
+    Nome file: `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-     Nome file: `ValidationExtensionRegistrar.tt`
+    Nome file: `ValidationExtensionRegistrar.tt`
 
-     Se si aggiunge questo file, è necessario abilitare la convalida nel linguaggio DSL con almeno una delle opzioni **EditorValidation** in DSL Explorer.
+    Se si aggiunge questo file, è necessario abilitare la convalida nel linguaggio DSL con almeno una delle opzioni **EditorValidation** in DSL Explorer.
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-     Nome file: `PackageExtensionEnablement.tt`
+    Nome file: `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -82,14 +83,14 @@ ms.locfileid: "39381032"
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-     Nome file: `GestureExtensionEnablement.tt`
+    Nome file: `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-     Nome file: `GestureExtensionController.tt`
+    Nome file: `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -98,17 +99,17 @@ ms.locfileid: "39381032"
 
 3.  Aggiungere la riga seguente al file esistente denominato **Dslpackage\commands.vsct.**:
 
-    ```
+    ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-     Inserire la riga alla fine dell'istruzione `<Include>` direttiva.
+    Inserire la riga alla fine dell'istruzione `<Include>` direttiva.
 
-4.  `Open DslDefinition.dsl.`
+4.  Aprire *Dsldefinition*.
 
 5.  In Esplora DSL, selezionare **editor\convalida**.
 
-6.  Nella finestra Proprietà, assicurarsi che almeno una delle proprietà denominato **Usa...**  è `true`.
+6.  Nella finestra Proprietà, assicurarsi che almeno una delle proprietà denominata **viene utilizzato** è `true`.
 
 7.  Nel **Esplora soluzioni** sulla barra degli strumenti, fare clic su **Trasforma tutti i modelli**.
 
@@ -116,10 +117,11 @@ ms.locfileid: "39381032"
 
 8.  Compilare ed eseguire la soluzione per verificare che sia ancora funzionante.
 
- Il linguaggio DSL è ora abilitata per il framework MEF. È possibile scrivere i comandi di menu, gestori di movimenti e vincoli di convalida come estensioni MEF. È possibile scrivere queste estensioni alla soluzione DSL insieme ad altro codice personalizzato. Inoltre, utente o altri sviluppatori possono scrivere separato [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensioni che estendono il linguaggio DSL.
+Il linguaggio DSL è ora abilitata per il framework MEF. È possibile scrivere i comandi di menu, gestori di movimenti e vincoli di convalida come estensioni MEF. È possibile scrivere queste estensioni alla soluzione DSL insieme ad altro codice personalizzato. Inoltre, utente o altri sviluppatori possono scrivere separate le estensioni di Visual Studio che estendono il linguaggio DSL.
 
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Creazione di un'estensione per un DSL MEF-abilitata
- Se si ha accesso a un DSL abilitati MEF creato dall'utente o un altro utente, è possibile scrivere le estensioni per tale. Le estensioni sono utilizzabile per aggiungere i comandi di menu e gestori movimenti o i vincoli di convalida. Per creare queste estensioni, si utilizza un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione Extension (VSIX). La soluzione è costituito da due parti: un progetto di libreria di classi che compila l'assembly di codice e un progetto VSIX per creare l'assembly.
+
+Se si ha accesso a un DSL abilitati MEF creato dall'utente o un altro utente, è possibile scrivere le estensioni per tale. Le estensioni sono utilizzabile per aggiungere i comandi di menu e gestori movimenti o i vincoli di convalida. Per creare queste estensioni, si usa una soluzione di Visual Studio extension (VSIX). La soluzione è costituito da due parti: un progetto di libreria di classi che compila l'assembly di codice e un progetto VSIX per creare l'assembly.
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>Per creare una DSL estensione VSIX
 
@@ -161,23 +163,25 @@ ms.locfileid: "39381032"
 
          Ciò consente agli utenti di installare il linguaggio DSL e l'estensione nello stesso momento. Se l'utente ha già installato il linguaggio DSL, solo l'estensione verrà installata.
 
-9. Rivedere e aggiornare gli altri campi d' **vsixmanifest**. Fare clic su **Seleziona versioni** e verificare che i valori corretti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edizioni sono impostate.
+9. Rivedere e aggiornare gli altri campi d' **vsixmanifest**. Fare clic su **Seleziona versioni** e verificare che siano impostate le edizioni di Visual Studio corrette.
 
 10. Aggiungere codice al progetto libreria di classi. Usare gli esempi nella sezione seguente come guida.
 
      È possibile aggiungere qualsiasi numero di comandi, movimenti e le classi di convalida.
 
-11. Per testare l'estensione, premere **F5**. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], creare o aprire un file di esempio del linguaggio DSL.
+11. Per testare l'estensione, premere **F5**. Nell'istanza sperimentale di Visual Studio, creare o aprire un file di esempio del linguaggio DSL.
 
 ## <a name="writing-mef-extensions-for-dsls"></a>Scrittura di estensioni MEF per linguaggi specifici di dominio
- È possibile scrivere le estensioni nel progetto di codice assembly di una soluzione di estensione DSL separata. È anche possibile usare MEF nel progetto DslPackage come un modo pratico per scrivere i comandi, movimenti e codice di convalida come parte del linguaggio DSL.
+
+È possibile scrivere le estensioni nel progetto di codice assembly di una soluzione di estensione DSL separata. È anche possibile usare MEF nel progetto DslPackage come un modo pratico per scrivere i comandi, movimenti e codice di convalida come parte del linguaggio DSL.
 
 ### <a name="menu-commands"></a>Comandi di menu
- Per scrivere un comando di menu, definire una classe che implementa <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> e la classe con l'attributo definito nel linguaggio DSL, denominato del prefisso *Dslutente*`CommandExtension`. È possibile scrivere più di una classe di comando di menu.
 
- `QueryStatus()` viene chiamato ogni volta che l'utente fa clic nel diagramma. Deve esaminare la selezione corrente e impostare `command.Enabled` per indicare quando il comando è applicabile.
+Per scrivere un comando di menu, definire una classe che implementa <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> e la classe con l'attributo definito nel linguaggio DSL, denominato del prefisso *Dslutente*`CommandExtension`. È possibile scrivere più di una classe di comando di menu.
 
-```
+`QueryStatus()` viene chiamato ogni volta che l'utente fa clic nel diagramma. Deve esaminare la selezione corrente e impostare `command.Enabled` per indicare quando il comando è applicabile.
+
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl; // My DSL
@@ -239,16 +243,15 @@ namespace MyMefExtension
     }
   }
 }
-
 ```
 
 ### <a name="gesture-handlers"></a>Gestori di movimento
- Un gestore movimenti possa gestire gli oggetti trascinati nel diagramma da qualsiasi luogo, interne o esterne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Nell'esempio seguente consente all'utente di trascinare i file da Esplora risorse di Windows nel diagramma. Crea gli elementi che contengono i nomi dei file.
 
- È possibile scrivere gestori eventi per gestire con il trascinamento da altri modelli di linguaggio specifico di dominio e i modelli UML. Per altre informazioni, vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Un gestore movimenti possa gestire gli oggetti trascinati nel diagramma da qualsiasi origine, all'interno o all'esterno di Visual Studio. Nell'esempio seguente consente all'utente di trascinare i file da Esplora risorse di Windows nel diagramma. Crea gli elementi che contengono i nomi dei file.
 
-```
+È possibile scrivere gestori eventi per gestire con il trascinamento da altri modelli di linguaggio specifico di dominio e i modelli UML. Per altre informazioni, vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
+```csharp
 using System.ComponentModel.Composition;
 using System.Linq;
 using Company.MyDsl;
@@ -316,15 +319,15 @@ namespace MefExtension
     }
   }
 }
-
 ```
 
 ### <a name="validation-constraints"></a>Vincoli di convalida
- Metodi di convalida sono contrassegnati con il `ValidationExtension` attributo generato dal linguaggio DSL e anche da <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Il metodo può apparire in qualsiasi classe che non è contrassegnato da un attributo.
 
- Per altre informazioni, vedere [convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md).
+Metodi di convalida sono contrassegnati con il `ValidationExtension` attributo generato dal linguaggio DSL e anche da <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. Il metodo può apparire in qualsiasi classe che non è contrassegnato da un attributo.
 
-```
+Per altre informazioni, vedere [convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md).
+
+```csharp
 using Company.MyDsl;
 using Company.MyDsl.ExtensionEnablement;
 using Microsoft.VisualStudio.Modeling.Validation;
@@ -369,7 +372,6 @@ namespace MefExtension
           // Element to highlight when user double-clicks error:
           , elementToValidate);
 } } } }
-
 ```
 
 ## <a name="see-also"></a>Vedere anche
