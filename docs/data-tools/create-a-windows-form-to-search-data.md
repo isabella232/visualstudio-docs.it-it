@@ -16,21 +16,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cdc82db1f701abb26b983fe0a1f2e4c7752c6c55
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7b2a72306a3636bb5bca601f600afdaa175b4dd1
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756399"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582421"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per la ricerca di dati
+
 Uno scenario applicativo comune prevede la visualizzazione dei dati selezionati in un form, ad esempio gli ordini per un determinato cliente o i dettagli di un ordine specifico. In questo scenario un utente immette informazioni in un form, quindi viene eseguita una query che usa come parametro l'input dell'utente. Questo significa che i dati vengono selezionati in base a una query con parametri. La query restituisce solo i dati che soddisfano i criteri immessi dall'utente. Questa procedura dettagliata illustra come creare una query che restituisca i clienti di una determinata città e come modificare l'interfaccia utente in modo che gli utenti possano immettere il nome di una città e fare clic su un pulsante per eseguire la query.
 
- L'uso di query con parametri rende più efficiente il funzionamento dell'applicazione, consentendo al database di eseguire in modo ottimale le operazioni di filtro rapido dei record. Al contrario, se richiesta un'intera tabella del database, trasferirlo in rete e quindi usare la logica dell'applicazione per trovare i record desiderati, l'applicazione può diventare lente e inefficiente.
+L'uso di query con parametri rende più efficiente il funzionamento dell'applicazione, consentendo al database di eseguire in modo ottimale le operazioni di filtro rapido dei record. Al contrario, se richiesta un'intera tabella del database, trasferirlo in rete e quindi usare la logica dell'applicazione per trovare i record desiderati, l'applicazione può diventare lente e inefficiente.
 
- È possibile aggiungere le query con parametri a qualsiasi oggetto TableAdapter e controlli per accettare i valori dei parametri ed eseguire la query, tramite il **generatore di criteri di ricerca** nella finestra di dialogo. Aprire la finestra di dialogo selezionando il **Aggiungi Query** comando le **dati** menu (o da qualsiasi oggetto TableAdapter smart tag).
+È possibile aggiungere le query con parametri a qualsiasi oggetto TableAdapter e controlli per accettare i valori dei parametri ed eseguire la query, tramite il **generatore di criteri di ricerca** nella finestra di dialogo. Aprire la finestra di dialogo selezionando il **Aggiungi Query** comando le **dati** menu (o da qualsiasi oggetto TableAdapter smart tag).
 
- Le attività illustrate nella procedura dettagliata sono le seguenti:
+Le attività illustrate nella procedura dettagliata sono le seguenti:
 
 -   Creazione di una nuova **Windows Forms Application** progetto.
 
@@ -65,9 +66,8 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
        Dopo un breve periodo di tempo, termina l'esecuzione di query e viene creato il database Northwind.
 
 ## <a name="create-the-windows-forms-application"></a>Creare l'applicazione Windows Form
- Il primo passaggio consiste nel creare un **Windows Forms Application**. L'assegnazione di un nome per il progetto è facoltativa in questo passaggio, ma è possibile assegnargli un nome qui perché è possibile salvare il progetto in un secondo momento.
 
-#### <a name="to-create-the-new-windows-forms-application-project"></a>Per creare il nuovo progetto applicazione Windows Form
+Il primo passaggio consiste nel creare un'app Windows Form. Assegnazione di un nome per il progetto è facoltativa in questo passaggio, ma è possibile assegnargli un nome qui perché è possibile salvare il progetto in un secondo momento:
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
@@ -80,9 +80,8 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
      Il **WindowsSearchForm** viene creato e aggiunto al progetto **Esplora soluzioni**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
-Questo passaggio consente di creare un'origine dati da un database utilizzando la **configurazione dell'origine dati** procedura guidata.
 
-#### <a name="to-create-the-data-source"></a>Per creare l'origine dati
+Questo passaggio consente di creare un'origine dati da un database utilizzando la **configurazione dell'origine dati** guidata:
 
 1.  Scegliere **Mostra origini dati** dal menu **Dati**.
 
@@ -107,9 +106,8 @@ Questo passaggio consente di creare un'origine dati da un database utilizzando l
      Il **NorthwindDataSet** viene aggiunto al progetto e il **clienti** inclusa nella tabella il **Zdroje dat** finestra.
 
 ## <a name="create-the-form"></a>Creazione di form
- È possibile creare i controlli con associazione a dati trascinando elementi dal **Zdroje dat** finestra nei form.
 
-#### <a name="to-create-data-bound-controls-on-the-form"></a>Per creare controlli associati a dati nel form
+È possibile creare i controlli con associazione a dati trascinando elementi dal **Zdroje dat** finestra nei form:
 
 1.  Espandere la **clienti** nodo il **Zdroje dat** finestra.
 
@@ -118,13 +116,12 @@ Questo passaggio consente di creare un'origine dati da un database utilizzando l
      Sul form vengono visualizzati un oggetto <xref:System.Windows.Forms.DataGridView> e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 
 ## <a name="add-parameterization-search-functionality-to-the-query"></a>Aggiungere la parametrizzazione (funzionalità di ricerca) per la query
- È possibile aggiungere una clausola WHERE alla query originale utilizzando il **generatore di criteri di ricerca** nella finestra di dialogo.
 
-#### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>Per creare una query con parametri e controlli per l'immissione dei parametri
+È possibile aggiungere una clausola WHERE alla query originale utilizzando il **generatore di criteri di ricerca** nella finestra di dialogo:
 
 1.  Selezionare il <xref:System.Windows.Forms.DataGridView> controllo e quindi scegliere **Aggiungi Query** sul **dati** menu.
 
-2.  Tipo `FillByCity` nella **nuovo nome query** area il **generatore di criteri di ricerca** nella finestra di dialogo.
+2.  Tipo **FillByCity** nel **nuovo nome query** area di **generatore di criteri di ricerca** nella finestra di dialogo.
 
 3.  Aggiungere `WHERE City = @City` alla query nella **testo della Query** area.
 
@@ -138,16 +135,15 @@ Questo passaggio consente di creare un'origine dati da un database utilizzando l
      ```
 
     > [!NOTE]
-    >  Origini dati Access e OLE DB usano il punto interrogativo ('? ') per indicare i parametri, pertanto la clausola WHERE risulterebbe simile al seguente: `WHERE City = ?`.
+    > Origini dati Access e OLE DB usano il punto interrogativo ('? ') per indicare i parametri, pertanto la clausola WHERE risulterebbe simile al seguente: `WHERE City = ?`.
 
 4.  Fare clic su **OK** per chiudere la **generatore di criteri di ricerca** nella finestra di dialogo.
 
      Oggetto **FillByCityToolStrip** viene aggiunto al form.
 
-## <a name="testing-the-application"></a>Test dell'applicazione
- Esecuzione dell'applicazione consente di aprire il modulo e lo rende pronto ad accettare il parametro come input.
+## <a name="test-the-application"></a>Testare l'applicazione
 
-#### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione
+Esecuzione dell'applicazione consente di aprire il modulo e lo rende pronto ad accettare il parametro come input:
 
 1.  Premere **F5** per eseguire l'applicazione.
 
@@ -156,7 +152,8 @@ Questo passaggio consente di creare un'origine dati da un database utilizzando l
      La griglia dei dati viene popolata con i clienti che soddisfano i criteri. In questo esempio, la griglia dati vengono visualizzati solo i clienti che hanno un valore di **Londra** nel loro **City** colonna.
 
 ## <a name="next-steps"></a>Passaggi successivi
- A seconda dei requisiti dell'applicazione, si potranno eseguire diverse operazioni una volta terminata la creazione di un form con parametri. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:
+
+A seconda dei requisiti dell'applicazione, si potranno eseguire diverse operazioni una volta terminata la creazione di un form con parametri. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:
 
 -   Aggiunta di controlli per la visualizzazione di dati correlati. Per altre informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Riferimenti dello Schema dei modelli di Visual Studio | Documenti Microsoft
+title: Riferimenti dello Schema dei modelli di Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18385c32cee40ae4a6bf902bf79623c3bc2854
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571520"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586339"
 ---
-# <a name="visual-studio-template-schema-reference"></a>Riferimenti allo schema dei modelli di Visual Studio
-In questa sezione vengono fornite informazioni sugli elementi XML nei file .vstemplate, ovvero i file nei quali sono archiviati i metadati per i modelli di progetto, i modelli di elemento e gli starter kit.
+# <a name="visual-studio-template-schema-reference"></a>Riferimenti dello schema di modelli di Visual Studio
+In questa sezione contiene informazioni sugli elementi XML nelle *vstemplate* file, che sono file che archiviano i metadati per i modelli di progetto, modelli di elementi e gli Starter Kit.
 
- È possibile utilizzare il file vstemplate.xsd per convalidare i file .vstemplate personalizzati. Questo file è disponibile in... \\ *Cartella di installazione di visual Studio*\Xml\Schemas\1033\vstemplate.xsd.
+ È possibile usare *vstemplate. xsd* convalidare custom *vstemplate* file. Questo file è disponibile all'indirizzo *... \\ \<Cartella di installazione di visual Studio > \Xml\Schemas\1033\vstemplate.xsd*.
 
 |Elemento|Elementi figlio|Attributi|
 |-------------|--------------------|----------------|
-|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|nessuno|nessuno|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|nessuno|nessuno|
 |[Assembly (modello)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly (estensione della creazione guidata)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
@@ -45,7 +45,7 @@ In questa sezione vengono fornite informazioni sugli elementi XML nei file .vste
 |[Cartella](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Cartella|nome|
 ||[deprecato]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
-|[Nascosto](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
+|[Nascosta](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
 |[Icona](../extensibility/icon-element-visual-studio-templates.md)|--|Pacchetto<br /><br /> Id|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
@@ -55,11 +55,11 @@ In questa sezione vengono fornite informazioni sugli elementi XML nei file .vste
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[Progetto](../extensibility/project-element-visual-studio-templates.md)|Cartella<br /><br /> ProjectItem|File<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|
-|[ProjectItem (modelli di elementi)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Sottotipo<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|
+|[ProjectItem (modelli di elemento)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Sottotipo<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|
 |[ProjectItem (modelli di progetto)](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|--|--|
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|--|ProjectName|
-|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
+|[Tipoprogetto](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
 |[Reference](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|

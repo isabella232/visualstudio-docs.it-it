@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a65c1960e1648dce3bb8ff40d1dd6c50534934ff
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756032"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582232"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Creare e configurare i set di dati in Visual Studio
 
@@ -72,7 +72,7 @@ Questa procedura viene illustrato come aggiungere una tabella dallo stesso datab
 
 1.  Fare clic sul nodo del set di dati in **Esplora soluzioni** per rendere attivo la finestra di progettazione set di dati.
 
-2.  Fare clic sui **Zdroje dat** scheda nel margine sinistro di Visual Studio, oppure immettere `Data Sources` nelle **avvio veloce**.
+2.  Fare clic sul **Zdroje dat** scheda nel margine sinistro di Visual Studio, o inserire **zdroje dat** nel **avvio veloce** casella.
 
 3.  Il nodo di set di dati e scegliere **Configura origine dati con Creazione guidata**.
 

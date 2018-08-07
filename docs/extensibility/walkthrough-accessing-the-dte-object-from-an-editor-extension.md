@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Accesso all'oggetto DTE di un'estensione di Editor | Documenti Microsoft"
+title: "Procedura dettagliata: Accesso all'oggetto DTE da un'estensione dell'Editor | Microsoft Docs"
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b888136f51e7893c6ad44ab888d8079ee92d8edf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ed4343139b3e59dfba7adc71b1c91cdf01c13db
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139640"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586248"
 ---
-# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Procedura dettagliata: Accesso all'oggetto DTE di un'estensione di Editor
-Nei pacchetti VSPackage, è possibile ottenere l'oggetto DTE chiamando il <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> (metodo) con il tipo dell'oggetto DTE. Nelle estensioni di Managed Extensibility Framework (MEF), è possibile importare <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> e quindi chiamare il <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metodo con un tipo di <xref:EnvDTE.DTE>.  
+# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Procedura dettagliata: Accesso all'oggetto DTE da un'estensione dell'editor
+Nei pacchetti VSPackage, è possibile ottenere l'oggetto DTE chiamando il <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metodo con il tipo di oggetto DTE. Nelle estensioni di Managed Extensibility Framework (MEF), è possibile importare <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> e quindi chiamare il <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metodo con un tipo di <xref:EnvDTE.DTE>.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="getting-the-dte-object"></a>Ottenere l'oggetto DTE  
   
-#### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>Per ottenere l'oggetto DTE da ServiceProvider  
+### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>Per ottenere l'oggetto DTE da ServiceProvider  
   
-1.  Creare un progetto VSIX c# denominato `DTETest`. Aggiungere un modello di elemento di classificatore Editor e denominarla `DTETest`. Per ulteriori informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+1.  Creare un progetto c# VSIX denominato `DTETest`. Aggiungere un modello di elemento di classificatore Editor e denominarlo `DTETest`. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-2.  Aggiungere i seguenti riferimenti all'assembly al progetto:  
+2.  Aggiungere i riferimenti assembly seguenti al progetto:  
   
     -   EnvDTE  
   
@@ -40,7 +40,7 @@ Nei pacchetti VSPackage, è possibile ottenere l'oggetto DTE chiamando il <xref:
   
     -   Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  Passare al file DTETest.cs e aggiungere le seguenti `using` direttive:  
+3.  Andare alla *DTETest.cs* del file e aggiungere il codice seguente `using` direttive:  
   
     ```csharp  
     using EnvDTE;  
@@ -67,4 +67,4 @@ Nei pacchetti VSPackage, è possibile ottenere l'oggetto DTE chiamando il <xref:
 6.  Se è necessario utilizzare il <xref:EnvDTE80.DTE2> interfaccia, è possibile eseguire il cast ad esso l'oggetto DTE.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Punti di estensione dei servizi di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)
+ [Punti di estensione del servizio e l'editor di linguaggio](../extensibility/language-service-and-editor-extension-points.md)

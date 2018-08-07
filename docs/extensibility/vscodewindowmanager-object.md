@@ -1,5 +1,5 @@
 ---
-title: Oggetto VSCodeWindowManager | Documenti Microsoft
+title: Oggetto VSCodeWindowManager | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc4f01240f5f969b91bb3f4cfe46f74a9abb643e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7617062caf233f0711ce2b97d6816af25023ad83
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137602"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586739"
 ---
 # <a name="vscodewindowmanager-object"></a>Oggetto VSCodeWindowManager
-Il servizio di linguaggio implementa la gestione di finestre del codice ed è responsabile per la gestione di aree di controllo (ad esempio, la barra di menu a discesa). Per ulteriori informazioni, vedere [la personalizzazione di codice Windows tramite l'API Legacy](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
+Il servizio di linguaggio implementa la gestione di finestre di codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra di riepilogo a discesa). Per altre informazioni, vedere [personalizzazione di Windows di codice usando l'API Legacy](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
   
- La tabella seguente illustra le interfacce di `VSCodeWindowManager` oggetto.  
+ Nella tabella seguente mostra le interfacce nel `VSCodeWindowManager` oggetto.  
   
 |Interfaccia|Descrizione|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Consente le aree di controllo (ad esempio, le barre dei menu a discesa) per essere aggiunto o rimosso da una finestra del codice.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Consente le aree di controllo (ad esempio barre a discesa) per essere aggiunto o rimosso da una finestra del codice.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Personalizzazione di codice Windows tramite l'API Legacy](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+ [Personalizzazione delle finestre del codice tramite l'API legacy](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

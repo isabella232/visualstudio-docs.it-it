@@ -14,23 +14,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d21ba3f239bb4c5e3fdd1ba717b1288956b8550
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 71d9be6ddc664d3b25c52d227e749421611f3512
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756155"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582372"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creare un database e aggiungere tabelle in Visual Studio
+
 È possibile usare Visual Studio per creare e aggiornare un file di database locale in LocalDB di SQL Server Express. È anche possibile creare un database tramite l'esecuzione di istruzioni Transact-SQL nel **Esplora oggetti di SQL Server** finestra degli strumenti in Visual Studio. In questo argomento, si creerà un' *mdf* file e aggiungere tabelle e le chiavi utilizzando Progettazione tabelle.
 
 ## <a name="prerequisites"></a>Prerequisiti
+
 Per completare questa procedura dettagliata, è necessario disporre di facoltativo **elaborazione ed archiviazione dati** carico di lavoro sia installato in Visual Studio. Per installarlo, aprire **programma di installazione di Visual Studio** e scegliere il **carichi di lavoro** scheda. Sotto **Web e Cloud**, scegliere **elaborazione ed archiviazione dati**. Scegliere il **Modify** pulsante per aggiungere il carico di lavoro per Visual Studio.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Creare un progetto e un file di database locale
 
-### <a name="to-create-a-project-and-a-database-file"></a>Per creare un progetto e un file di database
-1.  Creare un progetto Windows Form denominato `SampleDatabaseWalkthrough`.
+1.  Creare un progetto Windows Form denominato **SampleDatabaseWalkthrough**.
 
 2.  Nella barra dei menu, selezionare **Project** > **Aggiungi nuovo elemento**.
 
@@ -41,6 +42,7 @@ Per completare questa procedura dettagliata, è necessario disporre di facoltati
 4.  Assegnare un nome del database **SampleDatabase**, quindi selezionare il **Add** pulsante.
 
 ### <a name="to-add-a-data-source"></a>Per aggiungere un'origine dati
+
 5.  Se il **Zdroje dat** finestra non è aperta, aprirlo selezionando il **MAIUSC**+**Alt**+**1!d** chiavi o scegliere barra dei menu, selezionare **View** > **Other Windows** > **Zdroje dat**.
 
 6.  Nel **Zdroje dat** finestra, seleziona la **Aggiungi nuova origine dati** collegamento.
@@ -58,6 +60,7 @@ Per completare questa procedura dettagliata, è necessario disporre di facoltati
 11. Uno di **Scegli oggetti di Database** pagina, verrà visualizzato un messaggio che indica il database che non contiene alcun oggetto. Scegliere **Fine**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>Per visualizzare le proprietà della connessione dati
+
 È possibile visualizzare la stringa di connessione per il *SampleDatabase. mdf* file aprendo la finestra delle proprietà della connessione dati:
 
 -   In Visual Studio, selezionare **View** > **Esplora oggetti di SQL Server** se tale finestra non è già aperta. Aprire la finestra Proprietà espandere la **connessioni dati** nodo, aprire il menu di scelta rapida *SampleDatabase. mdf*e quindi selezionando **proprietà**.
@@ -65,9 +68,11 @@ Per completare questa procedura dettagliata, è necessario disporre di facoltati
 -   In alternativa, è possibile selezionare **View** > **Esplora Server**, se tale finestra non è già aperta. Aprire la finestra Proprietà espandere la **connessioni dati** nodo. Aprire il menu di scelta rapida *SampleDatabase. mdf*, quindi selezionare **proprietà**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Creare tabelle e le chiavi tramite Progettazione tabelle
+
 In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e alcune righe di dati di esempio. Si creerà inoltre una chiave esterna per specificare come i record in una tabella corrispondono ai record di altra tabella.
 
 ### <a name="to-create-the-customers-table"></a>Per creare la tabella Customers
+
 1.  Nella **Esplora Server** o **Esplora oggetti di SQL Server**, espandere il **connessioni dati** nodo, quindi espandere il **SampleDatabase. mdf**nodo.
 
 2.  Aprire il menu di scelta rapida **tabelle**, quindi selezionare **Aggiungi nuova tabella**.
@@ -104,6 +109,7 @@ In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e 
     Le modifiche vengono salvate nel file del database locale.
 
 ### <a name="to-create-the-orders-table"></a>Per creare la tabella Orders
+
 1.  Aggiungere un'altra tabella, quindi aggiungere una riga per ogni voce nella tabella seguente:
 
     |Nome colonna|Tipo di dati|Consente valori null|
@@ -128,11 +134,12 @@ In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e 
     Le modifiche vengono salvate nel file del database locale.
 
 ### <a name="to-create-a-foreign-key"></a>Per creare una chiave esterna
+
 1.  Nel riquadro contesto sul lato destro della griglia, aprire il menu di scelta rapida **chiavi esterne**, quindi selezionare **Aggiungi nuova chiave esterna**, come illustrato di seguito.
 
      ![Aggiunta di una chiave esterna in Progettazione tabelle](../data-tools/media/foreignkey.png)
 
-2.  Nella casella di testo che viene visualizzato, sostituire **ToTable** con `Customers`.
+2.  Nella casella di testo che viene visualizzato, sostituire **ToTable** con **clienti**.
 
 3.  Nel riquadro T-SQL, aggiornare l'ultima riga affinché corrisponda all'esempio seguente:
 
@@ -147,8 +154,6 @@ In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e 
     Le modifiche vengono salvate nel file del database locale.
 
 ## <a name="populate-the-tables-with-data"></a>Popolare le tabelle con dati
-
-### <a name="to-populate-the-tables-with-data"></a>Per inserire dati nelle tabelle
 
 1.  Nelle **Esplora Server** oppure **Esplora oggetti di SQL Server**, espandere il nodo per il database di esempio.
 
