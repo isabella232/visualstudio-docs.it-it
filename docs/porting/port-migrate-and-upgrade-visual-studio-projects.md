@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4bad722034657e3b58faaf665bfb0bc6ffcbe960
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058750"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513546"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Riferimento alla migrazione e all'aggiornamento di un progetto per Visual Studio 2017
 
@@ -41,7 +41,7 @@ Questo articolo offre informazioni dettagliate relative solo ai tipi di progetto
 
 L'elenco che segue descrive il supporto di Visual Studio 2017 per i progetti creati nelle versioni precedenti.
 
-Se non viene visualizzato un progetto o non viene elencato un tipo di file come invece dovrebbe, vedere la [versione di questo articolo per Visual Studio 2015](https://msdn.microsoft.com/library/hh266747.aspx) e usare l'opzione "Give documentation feedback" (Invia commenti e suggerimenti sulla documentazione) alla fine della pagina per inviare dettagli sul progetto. Se si desidera ottenere una risposta, utilizzare il feedback della documentazione anziché l'anonimo controllo "Questa pagina è stata utile?" .
+Se non viene visualizzato un progetto o non viene elencato un tipo di file come invece dovrebbe, vedere la [versione di questo articolo per Visual Studio 2015](port-migrate-and-upgrade-visual-studio-projects.md) e usare l'opzione "Give documentation feedback" (Invia commenti e suggerimenti sulla documentazione) alla fine della pagina per inviare dettagli sul progetto. Se si desidera ottenere una risposta, utilizzare il feedback della documentazione anziché l'anonimo controllo "Questa pagina è stata utile?" .
 
 | Tipo di progetto | Supporto |
 | --- | --- |

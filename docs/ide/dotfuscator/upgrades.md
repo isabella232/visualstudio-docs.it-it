@@ -25,12 +25,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcd5832b52c6cd9f72829c2bce8f7813b682cf4f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704574"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468543"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Aggiornare Dotfuscator Community Edition (CE)
 
@@ -60,14 +60,6 @@ Mentre Dotfuscator Community Edition offre un livello base di protezione, **_Pre
   * [Comportamenti di difesa delle applicazioni][check-actions] aggiuntivi.
   * La possibilità di specificare un periodo di avviso prima della scadenza finale di un'applicazione.
   * La possibilità di comunicare il codice dell'applicazione durante un periodo di avviso di scadenza o dopo la scadenza.
-  * Crittografia dei dati di telemetria.
-* *Monitoraggio delle applicazioni*
-  * La possibilità di raccogliere e salvare le informazioni raccolte durante le interruzioni temporanee della rete.
-  * La possibilità di raccogliere informazioni personali.
-  * Uso illimitato del [rilevamento delle funzioni][features].
-  * La possibilità di tenere traccia delle eccezioni rilevate e generate dal codice, oltre alle eccezioni non gestite.
-  * La possibilità di tenere traccia delle eccezioni negli assembly `.dll`.
-  * Crittografia dei dati di telemetria.
 
 Dotfuscator Professional è l'[obfuscator .NET] [net-obfuscator] di riferimento del settore ed è adatto per gli sviluppatori aziendali che richiedono supporto, manutenzione e aggiornamenti di prodotto continui.
 Dotfuscator Professional offre anche una migliore integrazione con Visual Studio e viene concesso in licenza per uso commerciale.
@@ -88,7 +80,6 @@ Per altre informazioni sulle funzionalità di protezione avanzata delle applicaz
 [pruning]:  https://www.preemptive.com/products/dotfuscator/features#pruning
 
 [check-actions]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
 [net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
 [eval]:  https://www.preemptive.com/eval-request

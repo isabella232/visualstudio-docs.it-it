@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dd6208c690190db3d50f35d661d6e2b53157aeee
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388267"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586404"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
@@ -136,13 +136,13 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
     ![Esclusione dell'ambiente virtuale dalle modifiche del controllo del codice sorgente](media/flask/step01-ignore-local-items.png)
 
-1. Dopo l'esclusione dell'ambiente virtuale, le sole modifiche rimanenti riguardano il file di progetto e *.gitignore*. Il file con estensione *gitignore* contiene una voce aggiunta per la cartella dell'ambiente virtuale. È possibile fare doppio clic sul file per visualizzare una differenza.
+1. Dopo l'esclusione dell'ambiente virtuale, le sole modifiche rimanenti riguardano il file di progetto e quello con estensione *gitignore*. Il file con estensione *gitignore* contiene una voce aggiunta per la cartella dell'ambiente virtuale. È possibile fare doppio clic sul file per visualizzare una differenza.
 
 1. Immettere un messaggio per il commit, selezionare **Esegui commit di tutto** e quindi eseguire il push dei commit nel repository remoto, se lo si desidera.
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Domanda: Perché è utile creare un ambiente virtuale?
 
-Risposta: Un ambiente virtuale è un ottimo strumento per isolare le dipendenze esatte dell'app. Questo isolamento evita i conflitti all'interno di un ambiente Python globale e semplifica i test e la collaborazione. Quando si sviluppa un'app, si finisce per introdurre nel tempo molti utili pacchetti Python. Inserendo questi pacchetti in un ambiente virtuale specifico del progetto, è possibile aggiornare facilmente il file *requirements.txt* del progetto che descrive l'ambiente e che è incluso nel controllo del codice sorgente. Quando il progetto viene copiato in altri computer, tra cui server di compilazione, server di distribuzione e altri computer di sviluppo, è facile ricreare l'ambiente usando solo *requirements.txt*, che è il motivo per cui non è necessario includere l'ambiente nel controllo del codice sorgente. Per altre informazioni, vedere [Usare ambienti virtuali](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Risposta: Un ambiente virtuale è un ottimo strumento per isolare le dipendenze esatte dell'app. Questo isolamento evita i conflitti all'interno di un ambiente Python globale e semplifica i test e la collaborazione. Quando si sviluppa un'app, si finisce per introdurre nel tempo molti utili pacchetti Python. Inserendo questi pacchetti in un ambiente virtuale specifico del progetto, è possibile aggiornare facilmente il file *requirements.txt* del progetto che descrive l'ambiente e che è incluso nel controllo del codice sorgente. Quando il progetto viene copiato in altri computer, tra cui server di compilazione, server di distribuzione e altri computer di sviluppo, è facile ricreare l'ambiente usando solo *requirements.txt*, che è il motivo per cui non è necessario includere l'ambiente nel controllo del codice sorgente. Per altre informazioni, vedere [Usare ambienti virtuali](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Domanda: Come si rimuove un ambiente virtuale di cui è già stato eseguito il commit nel controllo del codice sorgente?
 
@@ -192,11 +192,11 @@ In secondo luogo, aprire una finestra di comando, passare alla cartella, ad esem
 
 ### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Domanda: Qual è lo scopo dell'argomento __name__ per la classe Flask?
 
-Risposta: L'argomento è il nome del modulo o pacchetto dell'app e indica a Flask dove cercare modelli, file statici e altre risorse che appartengono all'app. Per le app contenute in un singolo modulo, `__name__` è sempre il valore appropriato. È anche importante per le estensioni che richiedono le informazioni di debug. Per altre informazioni e argomenti aggiuntivi, vedere la [documentazione relativa alla classe Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
+Risposta: l'argomento è il nome del modulo o pacchetto dell'app e indica a Flask dove cercare modelli, file statici e altre risorse che appartengono all'app. Per le app contenute in un singolo modulo, `__name__` è sempre il valore appropriato. È anche importante per le estensioni che richiedono le informazioni di debug. Per altre informazioni e argomenti aggiuntivi, vedere la [documentazione relativa alla classe Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
 
 ### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Domanda: Una funzione può avere più di un elemento Decorator di route?
 
-Risposta: Sì, è possibile usare qualsiasi numero di elementi Decorator se si usa la stessa funzione per più route. Ad esempio, per usare la funzione `hello` sia per "/" che per "/ hello", usare il codice seguente:
+Risposta: sì, è possibile usare qualsiasi numero di elementi Decorator se si usa la stessa funzione per più route. Ad esempio, per usare la funzione `hello` sia per "/" che per "/ hello", usare il codice seguente:
 
 ```python
 @app.route('/')
@@ -210,7 +210,7 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Domanda: Come funziona Flask con route di URL e parametri di query variabili?
 
-Risposta: In una route si contrassegna qualsiasi variabile con `<variable_name>` e Flask passa la variabile alla funzione usando un argomento denominato. La variabile può far parte del percorso dell'URL o di un parametro di query. Ad esempio, una route nel formato `'/hello/<name>` genera un argomento di stringa denominato `name` per la funzione e usando `?message=<msg>` nella route analizza il valore specificato per il parametro di query "message=" e lo passa alla funzione come `msg`:
+Risposta: in una route si contrassegna qualsiasi variabile con `<variable_name>` e Flask passa la variabile alla funzione usando un argomento denominato. La variabile può far parte del percorso dell'URL o di un parametro di query. Ad esempio, una route nel formato `'/hello/<name>` genera un argomento di stringa denominato `name` per la funzione e usando `?message=<msg>` nella route analizza il valore specificato per il parametro di query "message=" e lo passa alla funzione come `msg`:
 
 ```python
 @app.route('/hello/<name>?message=<msg>')

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180272"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512304"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Guida introduttiva: Progetti e soluzioni
 
@@ -178,11 +178,17 @@ Per verificare che l'unit test funzioni scegliere **Test** > **Esegui** > **Tutt
 
 La guida introduttiva è stata completata. Ora può risultare utile vedere altre guide introduttive di Visual Studio o apprendere altre informazioni sulla [creazione di progetti e soluzioni](../ide/creating-solutions-and-projects.md).
 
+> [!div class="nextstepaction"]
+> [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Guida introduttiva: Personalizzare Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)
+
 ## <a name="see-also"></a>Vedere anche
 
-- [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)
 - [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)
 - [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

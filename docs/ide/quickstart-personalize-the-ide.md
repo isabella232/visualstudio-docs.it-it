@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078225"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512561"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio
 
@@ -97,11 +97,19 @@ Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di
 
 Sono stati presentati solo un paio di modi per personalizzare i colori in Visual Studio. Per ottenere un ambiente di Visual Studio veramente su misura, è possibile esplorare tutte le altre opzioni di personalizzazione disponibili nella finestra di dialogo **Opzioni**.
 
+## <a name="next-steps"></a>Passaggi successivi
+
+> [!div class="nextstepaction"]
+> [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Guida introduttiva: Scrivere codice nell'editor](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
+
 ## <a name="see-also"></a>Vedere anche
 
-- [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)
-- [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
 - [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Personalizzare l'editor](../ide/customizing-the-editor.md)
 - [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)

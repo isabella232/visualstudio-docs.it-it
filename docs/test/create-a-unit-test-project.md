@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235050"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586860"
 ---
 # <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 
@@ -42,16 +42,17 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
 5.  Se il codice che si vuole testare è in un altro percorso, vedere [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md) per informazioni sull'aggiunta di riferimenti.
 
 ## <a name="next-steps"></a>Passaggi successivi
- **Scrittura di unit test**
 
  Vedere una delle sezioni seguenti:
 
--   [Eseguire unit test del codice](../test/unit-test-your-code.md)
+**Scrittura di unit test**
 
--   [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)
+- [Eseguire unit test del codice](../test/unit-test-your-code.md)
 
--   [Usare il framework MSTest negli unit test](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)
 
- **Esecuzione di unit test**
+- [Usare il framework MSTest negli unit test](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**Esecuzione di unit test**
 
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)

@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c422f906eba84d00d1d0e8bfa6420a627b410512
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4f3324d12d4bfc82e7980a690853b78321215205
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381579"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586497"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Novità di Live Unit Testing
 
@@ -65,6 +65,6 @@ Oltre a queste aggiunte principali, Live Unit Testing include anche i migliorame
    - Per MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Vedere anche
-[Introduzione a Live Unit Testing](live-unit-testing-intro.md)   
-[Live Unit Testing con Visual Studio 2017](live-unit-testing.md)
+- [Introduzione di Live Unit Testing](live-unit-testing-intro.md)   
+- [Live Unit Testing con Visual Studio 2017](live-unit-testing.md)
 
