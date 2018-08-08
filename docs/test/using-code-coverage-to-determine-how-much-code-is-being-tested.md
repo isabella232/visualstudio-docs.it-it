@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978249"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381716"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -51,7 +51,7 @@ Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando E
 > - Se si sta usando codice non gestito (nativo), usare una compilazione di debug
 > - Assicurarsi che vengano generati i file con estensione pdb (simbolo) per ogni assembly.
 
-Se non si ottengono i risultati previsti, vedere [Risoluzione dei problemi di code coverage](../test/troubleshooting-code-coverage.md). . Ricordarsi di eseguire nuovamente il code coverage dopo aver aggiornato il codice. I risultati di code coverage e la colorazione del codice non vengono aggiornati automaticamente dopo aver modificato il codice o quando si eseguono i test.
+Se non si ottengono i risultati previsti, vedere [Risoluzione dei problemi di code coverage](../test/troubleshooting-code-coverage.md). Ricordarsi di eseguire nuovamente il code coverage dopo aver aggiornato il codice. I risultati di code coverage e la colorazione del codice non vengono aggiornati automaticamente dopo aver modificato il codice o quando si eseguono i test.
 
 ## <a name="report-in-blocks-or-lines"></a>Report in blocchi o righe
 
@@ -63,7 +63,7 @@ Alcuni utenti preferiscono il conteggio delle righe in quanto le percentuali pi�
 
 ## <a name="manage-code-coverage-results"></a>Gestire i risultati di code coverage
 
-Nella finestra Risultati code coverage in genere viene visualizzato il risultato dell'esecuzione più recente. I risultati variano se si modificano i dati di test o se ogni volta vengono eseguiti solo alcuni testi.
+Nella finestra **Risultati code coverage** in genere viene visualizzato il risultato dell'esecuzione più recente. I risultati variano se si modificano i dati di test o se ogni volta vengono eseguiti solo alcuni testi.
 
 La finestra di code coverage può inoltre essere utilizzata per visualizzare i risultati precedenti o i risultati ottenuti in altri computer.
 
@@ -71,13 +71,13 @@ La finestra di code coverage può inoltre essere utilizzata per visualizzare i r
 
 -   **Per visualizzare un precedente set di risultati**, sceglierlo dal menu a discesa. Nel menu viene visualizzato un elenco temporaneo che viene cancellato quando si apre una nuova soluzione.
 
--   **Per visualizzare i risultati da una sessione precedente**, scegliere **Import Code Coverage Results** (Importa risultati di code coverage), passare alla cartella TestResults nella soluzione e importare un file con estensione coverage.
+-   **Per visualizzare i risultati da una sessione precedente**, scegliere **Import Code Coverage Results** (Importa risultati di code coverage), passare alla cartella **TestResults** nella soluzione e importare un file con estensione *coverage*.
 
-    La colorazione del code coverage potrebbe non essere corretta se il codice sorgente è stato modificato dopo la generazione del file con estensione coverage.
+    La colorazione del code coverage potrebbe non essere corretta se il codice sorgente è stato modificato dopo la generazione del file con estensione *coverage*.
 
--   **Per rendere i risultati leggibili come testo**, scegliere **Export Code Coverage Results** (Esporta risultati di code coverage). Viene generato un file leggibile con estensione coveragexml che può essere elaborato con altri strumenti o facilmente inviato per posta elettronica.
+-   **Per rendere i risultati leggibili come testo**, scegliere **Export Code Coverage Results** (Esporta risultati di code coverage). Viene generato un file leggibile con estensione *coveragexml* che può essere elaborato con altri strumenti o facilmente inviato per posta elettronica.
 
--   **Per inviare i risultati a un altro utente**, inviare un file con estensione coverage o un file esportato con estensione coveragexml. L'utente potrà quindi importare il file. Se l'utente dispone della stessa versione del codice sorgente, potrà vedere la colorazione del code coverage.
+-   **Per inviare i risultati a un altro utente**, inviare un file con estensione *coverage* o un file esportato con estensione *coveragexml*. L'utente potrà quindi importare il file. Se l'utente dispone della stessa versione del codice sorgente, potrà vedere la colorazione del code coverage.
 
 ## <a name="merge-results-from-different-runs"></a>Unire i risultati di esecuzioni diverse
 
@@ -245,15 +245,15 @@ Utilizzare le seguenti macro:
 
 ### <a name="include-or-exclude-additional-elements"></a>Includere o escludere elementi aggiuntivi
 
-L'analisi di code coverage viene eseguita solo su assembly caricati, per i quali è disponibile un file con estensione pdb nella stessa directory del file con estensione dll oppure del file con estensione exe. Pertanto in alcune circostanze, è possibile estendere il set di assembly che viene incluso per ottenere copie dei file con estensione pdb appropriati.
+L'analisi di code coverage viene eseguita solo su assembly caricati, per i quali è disponibile un file con estensione *pdb* nella stessa directory del file con estensione *dll* oppure del file con estensione *exe*. Pertanto in alcune circostanze, è possibile estendere il set di assembly che viene incluso per ottenere copie dei file con estensione *pdb* appropriati.
 
-Per l'analisi di code coverage è possibile esercitare un maggiore controllo sugli assembly e sugli elementi che sono selezionati scrivendo un file con estensione runsettings. Ad esempio, è possibile escludere particolari tipi di assembly senza dover aggiungere attributi alle classi. Per altre informazioni, vedere [Personalizzazione dell'analisi code coverage](../test/customizing-code-coverage-analysis.md).
+Per l'analisi di code coverage è possibile esercitare un maggiore controllo sugli assembly e sugli elementi che sono selezionati scrivendo un file con estensione *runsettings*. Ad esempio, è possibile escludere particolari tipi di assembly senza dover aggiungere attributi alle classi. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="analyze-code-coverage-in-the-build-service"></a>Analizzare code coverage nel servizio di compilazione
 
 Quando si controlla il codice, i test vengono eseguiti sul server di compilazione insieme a tutti gli altri test degli altri membri del team. Se questo aspetto non è ancora stato configurato, vedere [Eseguire test nel processo di compilazione](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38). È utile analizzare il code coverage nel servizio di compilazione perché viene offerta un'immagine aggiornata e completa del code coverage dell'intero progetto. Vengono anche inclusi i test di sistema automatizzati e altri test codificati che normalmente non vengono eseguiti nei computer di sviluppo.
 
-1. In Team Explorer aprire **Compilazioni** e aggiungere o modificare una definizione di compilazione.
+1. In **Team Explorer** aprire **Compilazioni** e aggiungere o modificare una definizione di compilazione.
 
 2. Nella pagina **Processo** espandere **Test automatizzati**, **Origine test**, **Impostazioni esecuzione test**. Impostare **Tipo di file di impostazioni esecuzione test** su **Code coverage abilitato**.
 
@@ -286,6 +286,6 @@ Se non vengono visualizzati risultati del code coverage, vedere l'argomento [Ris
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Personalizzazione dell'analisi code coverage](../test/customizing-code-coverage-analysis.md)
+- [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md)
 - [Risoluzione dei problemi di code coverage](../test/troubleshooting-code-coverage.md)
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)

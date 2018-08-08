@@ -1,7 +1,7 @@
 ---
 title: Configurazione di Python in Servizio app di Azure
 description: Come installare un interprete e librerie di Python in Servizio app di Azure e configurazione delle applicazioni Web per fare riferimento correttamente a tale interprete.
-ms.date: 09/13/2017
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,24 +12,24 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 406a35ff484b5a6759831b76c2417bf5fcb2d12c
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33876995"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310072"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Come configurare un ambiente Python in Servizio app di Azure
 
+> [!Important]
+> Microsoft intende deprecare le estensioni Python per il servizio App, come descritto in questo articolo, a favore di una distribuzione diretta al servizio app in Linux. Nel frattempo le estensioni continuano a funzionare. Per distribuire al servizio app in Linux, vedere [Distribuire un'app Web Python in app Web per contenitori](/azure/app-service/containers/quickstart-python).
+
 Il [servizio app di Azure](https://azure.microsoft.com/services/app-service/) è un'offerta di tipo piattaforma distribuita come servizio per le app Web, siano esse siti accessibili tramite un browser, API REST usate dai client o elaborazioni attivate da eventi. Il servizio app supporta pienamente l'uso di Python per implementare le app.
 
-Il supporto di Python personalizzabile nel servizio app di Azure viene offerto come un *set di estensioni del sito* del servizio app, ognuna contenente una versione specifica del runtime di Python. È quindi possibile installare tutti i pacchetti desiderati direttamente in tale ambiente, come descritto in questo articolo. Personalizzando l'ambiente nel servizio app stesso, non è necessario gestire i pacchetti nei progetti di app Web o caricarli con il codice dell'app.
+Il supporto di Python personalizzabile per il servizio app di Azure viene offerto come un *set di estensioni del sito* del servizio app, ognuna contenente una versione specifica del runtime di Python. È quindi possibile installare tutti i pacchetti desiderati direttamente in tale ambiente, come descritto in questo articolo. Personalizzando l'ambiente nel servizio app stesso, non è necessario gestire i pacchetti nei progetti di app Web o caricarli con il codice dell'app.
 
 > [!Tip]
 > Anche se il servizio app per impostazione predefinita include Python 2.7 e Python 3.4 installati nelle cartelle radice nel server, non è possibile personalizzare o installare i pacchetti in questi ambienti, né dipendere dalla loro presenza. È invece necessario affidarsi a un'estensione del sito sotto il proprio controllo, come descritto in questo articolo.
-
-> [!Important]
-> Le procedure descritte di seguito sono soggette a modifiche, in particolare per apportare miglioramenti. Le modifiche sono annunciate nel [blog Python Engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/) (Progettazione Python in Microsoft).
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>Scelta di una versione di Python tramite il portale di Azure
 

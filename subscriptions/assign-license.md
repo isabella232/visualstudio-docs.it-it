@@ -9,18 +9,18 @@ description: Informazioni su come gli amministratori possono assegnare licenze a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178400"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251705"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Assegnare licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 
 In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibile usare il portale di amministrazione per assegnare le sottoscrizioni a singoli utenti e gruppi di utenti.
 
-Per i gruppi di utenti, è possibile assegnare le sottoscrizioni una alla volta oppure usare la funzionalità **Aggiungi in blocco** per caricare elenchi di sottoscrittori con le relative informazioni di sottoscrizione in modo semplice e rapido. 
+Per i gruppi di utenti, è possibile assegnare le sottoscrizioni una alla volta oppure usare la funzionalità **Aggiungi in blocco** per caricare in modo semplice e rapido elenchi di sottoscrittori e le relative informazioni di sottoscrizione.
 
 ## <a name="individual-assignments"></a>Assegnazioni singole
 
@@ -32,7 +32,7 @@ Di seguito viene descritto come assegnare una licenza di sottoscrizione di Visua
 
    ![Aggiungere un singolo sottoscrittore](media\add-single-subscriber.png)
 
-3. Immettere le informazioni nei campi del modulo per il nuovo sottoscrittore. Se l'organizzazione usa Azure Active Directory, questo campo funge da funzione di ricerca per trovare i contatti nella directory corrente per poter selezionare l'utente corretto nei risultati della ricerca. Dopo aver selezionato la persona, vengono inseriti automaticamente il nome, l'indirizzo di posta elettronica di accesso e il messaggio di posta elettronica di notifica. 
+3. Immettere le informazioni nei campi del modulo per il nuovo sottoscrittore. Se l'organizzazione usa Azure Active Directory, questo campo funge da funzione di ricerca per trovare i contatti nella directory corrente per poter selezionare l'utente corretto nei risultati della ricerca. Dopo aver selezionato la persona, vengono inseriti automaticamente il nome, l'indirizzo di posta elettronica di accesso e il messaggio di posta elettronica di notifica.
 
    ![Aggiungere un nuovo indirizzo di posta elettronica di notifica](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ Di seguito viene descritto come assegnare una licenza di sottoscrizione di Visua
 
   ![Scaricare il modello di Excel per caricare più sottoscrittori](media\download-template-upload-subscribers.png)
 
-  >![NOTA] Scaricare sempre la versione più recente del modello. Se si usa una versione precedente, il caricamento in blocco potrebbe non riuscire.
+   > ![NOTA] Scaricare sempre la versione più recente del modello. Se si usa una versione precedente, il caricamento in blocco potrebbe non riuscire.
 
 1. Nel foglio di calcolo Excel compilare i campi con le informazioni per gli utenti a cui si desidera assegnare le sottoscrizioni. *Riferimento* è un campo facoltativo. Al termine, salvare il file in locale.
 

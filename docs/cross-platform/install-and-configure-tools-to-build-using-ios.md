@@ -12,14 +12,14 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d6acdd6433c090472e88d9973f6b28d80b8c2f8d
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454570"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251811"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
+# <a name="install-and-configure-tools-to-build-using-ios"></a>Installare e configurare strumenti per la compilazione con iOS
 
 È possibile usare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma per modificare, eseguire il debug e distribuire codice iOS al simulatore iOS o a un dispositivo iOS. Tuttavia, a causa di restrizioni di licenza, il codice deve essere compilato ed eseguito in modalità remota su Mac. Per compilare ed eseguire le app iOS usando Visual Studio, è necessario installare e configurare l'agente remoto [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), sul Mac. L'agente remoto gestisce le richieste di compilazione da parte di Visual Studio ed esegue l'app su un dispositivo iOS connesso a Mac o nel simulatore iOS su Mac.
 
@@ -125,7 +125,7 @@ Dopo aver avviato l'agente remoto, è possibile usarlo da Visual Studio fino a q
 
 #### <a name="to-stop-the-remote-agent"></a>Per arrestare l'agente remoto
 
-- Nella finestra Terminal in cui è in esecuzione vcremote, immettere `Control+C`.
+- Nella finestra Terminal in cui è in esecuzione l'agente vcremote, immettere **CTRL**+**C**.
 
 ##  <a name="ConfigureVS"></a> Configurare l'agente remoto in Visual Studio
 
@@ -158,7 +158,7 @@ Per connettere l'agente remoto da Visual Studio, è necessario specificare la co
 
    Se l'associazione non riesce, verificare che l'agente remoto sia in esecuzione eseguendo i passaggi in [Start the remote agent](#Start). Se è trascorsa un'eccessiva quantità di tempo dalla generazione del PIN dell'agente remoto, seguire i passaggi in [Generate a new security PIN](#GeneratePIN) sul Mac e riprovare. Se si usa il nome host del Mac, provare a usare l'indirizzo IP del campo **Nome host** .
 
-1. Aggiornare il nome della cartella nel campo **Radice remota** per specificare la cartella usata dall'agente remoto nella directory home (~) su Mac. Per impostazione predefinita, l'agente remoto usa /Users/`username`/vcremote come radice remota.
+1. Aggiornare il nome della cartella nel campo **Radice remota** per specificare la cartella usata dall'agente remoto nella directory home (*~*) su Mac. Per impostazione predefinita, l'agente remoto usa /Users/`username`/vcremote come radice remota.
 
 1. Scegliere **OK** per salvare le impostazioni di connessione di associazione remota.
 
@@ -220,7 +220,7 @@ Per motivi di sicurezza, i certificati del server che associano Visual Studio al
 
    `vcremote --serverDir directory_path`
 
-   dove *directory_path* è il percorso nel Mac in cui inserire file di log, build e certificati del server. Per impostazione predefinita, questo percorso è /Users/*nome utente*/vcremote. In questa posizione, le build vengono organizzate per numero.
+   dove *directory_path* è il percorso nel Mac in cui inserire file di log, build e certificati del server. Per impostazione predefinita, questo percorso è */Users/\<username>/vcremote*. In questa posizione, le build vengono organizzate per numero.
 
 - Per usare un processo in background per acquisire `stdout` e `stderr` in un file denominato server.log, immettere:
 
@@ -236,4 +236,4 @@ Per motivi di sicurezza, i certificati del server che associano Visual Studio al
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a0f9240cd729d26eecd3c098c28799369b48cea6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8bbb27ad3368b53fc3e333d3260f2f30551c4177
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924369"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251192"
 ---
 # <a name="setup-and-install"></a>Configurazione e installazione
 
@@ -84,7 +84,7 @@ Durante l'installazione, è possibile procedere con le istruzioni di installazio
 
 1.  Se non si ha ancora un ID Apple, è possibile crearne uno gratuitamente all'indirizzo [https://appleid.apple.com](https://appleid.apple.com/). L'ID Apple è necessario per l'installazione e l'accesso a Xcode.
 
-2.  Scaricare e installare Xcode da [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) e aggiungere l'ID Apple come descritto in [Adding Your Account to XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Aggiunta dell'account a XCode) nel sito apple.com.
+2.  Scaricare e installare Xcode da [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) e aggiungere l'ID Apple come descritto in [Add your account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Aggiungere l'account a XCode) nel sito apple.com.
 
 3.  Scaricare e installare Visual Studio per Mac seguendo le istruzioni riportate in [Configurare e installare Visual Studio per Mac](/visualstudio/mac/installation).
 

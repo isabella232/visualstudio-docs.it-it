@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: 92097e70b026a23062f7a67ff521d60312096d5c
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851851"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341846"
 ---
-# <a name="installing-python-interpreters"></a>Installazione degli interpreti Python
+# <a name="install-python-interpreters"></a>Installare interpreti Python
 
 Per impostazione predefinita, l'installazione del carico di lavoro di sviluppo Python in Visual Studio 2017 installa anche Python 3 (a 64 bit). È possibile scegliere facoltativamente di installare le versioni a 32 bit e a 64 bit di Python 2, Python 3, Anaconda 2 e Anaconda 3, come descritto in [Installazione](installing-python-support-in-visual-studio.md).
 
@@ -26,15 +26,15 @@ Per impostazione predefinita, l'installazione del carico di lavoro di sviluppo P
 
 Per **Visual Studio 2015 e versioni precedenti** è necessario installare manualmente uno degli interpreti.
 
-Visual Studio, in tutte le versioni, rileva automaticamente ogni interprete Python installato e il relativo ambiente controllando il Registro di sistema secondo quanto descritto in [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514 - Registrazione di Python nel Registro di sistema di Windows). Le installazioni di Python in genere si trovano in `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32 bit) o in `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64 bit) e quindi all'interno di nodi per la distribuzione, ad esempio "PythonCore" (CPython) e "ContinuumAnalytics" (Anaconda).
+Visual Studio, in tutte le versioni, rileva automaticamente ogni interprete Python installato e il relativo ambiente controllando il Registro di sistema secondo quanto descritto in [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514 - Registrazione di Python nel Registro di sistema di Windows). Le installazioni di Python in genere si trovano in **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32 bit) e **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64 bit) e quindi all'interno di nodi per la distribuzione, ad esempio **PythonCore** (CPython) e **ContinuumAnalytics** (Anaconda).
 
 Se Visual Studio non rileva un ambiente installato, vedere [Identificare manualmente un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-Visual Studio visualizza tutti gli ambienti noti nella [finestra Ambienti Python](managing-python-environments-in-visual-studio.md) e rileva automaticamente gli aggiornamenti per gli interpreti esistenti.
+Visual Studio visualizza tutti gli ambienti noti nella finestra[**Ambienti Python**](managing-python-environments-in-visual-studio.md) e rileva automaticamente gli aggiornamenti per gli interpreti esistenti.
 
 | Interprete | Descrizione |
 | --- | --- |
-| [CPython](https://www.python.org/) | Interprete "nativo" più comunemente usato, disponibile nelle versioni a 32 bit e a 64 bit (consigliata la versione a 32 bit). Include le funzionalità più recenti del linguaggio e offre la massima compatibilità con i pacchetti Python, nonché il supporto completo per il debug e l'interoperabilità con [IPython](http://ipython.org/). Vedere anche: [Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (Differenze tra Python 2 e Python 3). Si noti che Visual Studio 2015 e versioni precedenti non supportano Python 3.6 e possono segnalare l'errore "Versione 3.6 di Python non supportata". Usare Python 3.5 o versioni precedenti. |
+| [CPython](https://www.python.org/) | Interprete "nativo" più comunemente usato, disponibile nelle versioni a 32 bit e a 64 bit (consigliata la versione a 32 bit). Include le funzionalità più recenti del linguaggio e offre la massima compatibilità con i pacchetti Python, nonché il supporto completo per il debug e l'interoperabilità con [IPython](http://ipython.org/). Vedere anche: [Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (Differenze tra Python 2 e Python 3). Si noti che Visual Studio 2015 e versioni precedenti non supportano Python 3.6 e possono segnalare l'errore **Versione 3.6 di Python non supportata**. Usare Python 3.5 o versioni precedenti. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Implementazione .NET di Python, disponibile nelle versioni a 32 bit e a 64 bit, che offre interoperabilità con C#/F# e Visual Basic, accesso alle API .NET, debug Python standard (ma non debug C++ in modalità mista) e debug IronPython/C# in modalità mista. IronPython non supporta però gli ambienti virtuali. |
 | [Anaconda](https://www.continuum.io) | Piattaforma Open Data Science basata su Python che include la versione più recente di CPython e la maggior parte dei pacchetti difficili da installare. È la piattaforma consigliata se non è possibile sceglierne una diversa. |
 | [PyPy](http://www.pypy.org/) | Implementazione JIT di traccia ad alte prestazioni di Python, ideale per applicazioni a esecuzione prolungata e situazioni in cui si verificano problemi di prestazioni, ma non si riesce a trovare altre soluzioni. Funziona con Visual Studio, ma offre supporto limitato per le funzionalità avanzate di debug. |
@@ -42,7 +42,7 @@ Visual Studio visualizza tutti gli ambienti noti nella [finestra Ambienti Python
 
 Se si intende offrire nuove forme di rilevamento per gli ambienti Python, vedere [PTVS Environment Detection](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (Rilevamento degli ambienti PTVS) su github.com.
 
-## <a name="moving-an-interpreter"></a>Spostamento di un interprete
+## <a name="move-an-interpreter"></a>Spostare un interprete
 
 Se si sposta un interprete esistente in una nuova posizione nel file system, Visual Studio non rileva automaticamente la modifica.
 
@@ -59,8 +59,8 @@ Seguendo questa procedura si assicura il corretto aggiornamento delle voci del R
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Gestione degli ambienti Python](managing-python-environments-in-visual-studio.md)
+- [Gestire gli ambienti Python](managing-python-environments-in-visual-studio.md)
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)
-- [Uso di requirements.txt per le dipendenze](managing-required-packages-with-requirements-txt.md)
+- [Usare requirements.txt per le dipendenze](managing-required-packages-with-requirements-txt.md)
 - [Percorsi di ricerca](search-paths.md)
 - [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md)

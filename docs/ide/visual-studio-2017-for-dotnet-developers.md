@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37175304"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381094"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guida sulla produttività di Visual Studio 2017 in C#
 
@@ -140,7 +140,7 @@ Ecco un elenco di funzionalità editor e di produttività per rendere più effic
 
 | Funzionalità | Dettagli | Abilitazione |
 |-|-|-|
-| Individuare il file in Esplora soluzioni | Evidenzia il file attivo in Esplora soluzioni | **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Tieni traccia degli elementi attivi in Esplora soluzioni** |
+| Individuare il file in Esplora soluzioni | Evidenzia il file attivo in **Esplora soluzioni** | **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Tieni traccia degli elementi attivi in Esplora soluzioni** |
 | Aggiungere le direttive using per i tipi in assembly di riferimento e pacchetti NuGet | Visualizza un'icona a forma di lampadina con una correzione del codice per installare un pacchetto NuGet per un tipo senza riferimenti | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Suggerisci le direttive using per i tipi in assembly di riferimento** e **Suggerisci le direttive using per i tipi in pacchetti NuGet** |
 | Abilita analisi della soluzione completa | Visualizza tutti gli errori della soluzione in **Elenco errori** | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita analisi della soluzione completa** |
 | Abilita spostamento a origini decompilate | Consente l'uso di Vai a definizione per tipi o membri di origini esterne e del decompilatore ILSpy per visualizzare i corpi dei metodi | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita spostamento a origini decompilate** |

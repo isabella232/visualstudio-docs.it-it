@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-mescription: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
+description: Informazioni su come gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale dell'amministratore.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327392"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380818"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Uso del portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -25,7 +25,7 @@ Tenere a mente quanto segue durante l'uso del Portale di amministrazione delle s
 - **Sarà necessario aggiornare il livello di abbonamento di un individuo** nel momento in cui l'abbonamento viene aggiornato (successivamente all'acquisto di una licenza "step-up") o rinnovato a un livello inferiore. 
 - **Non condividere gli abbonamenti tra più abbonati.** Assegnare una sottoscrizione per chiunque usi uno o tutti i vantaggi dell'abbonamento (software per sviluppo e test, Microsoft Azure, e-learning e così via). 
 
-## <a name="adminstrator-roles"></a>Ruoli degli amministratori
+## <a name="administrator-roles"></a>Ruoli amministratore
 
 Esistono due diversi ruoli nel nuovo Portale di amministrazione delle sottoscrizioni di Visual Studio per i clienti con contratti multilicenza. Questi ruoli sono, ad esempio, il ruolo di contatto principale/per le comunicazioni e il ruolo di gestione di sottoscrizioni in VLSC. 
 

@@ -10,14 +10,14 @@ ms.author: mamcle
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4478b711581e332c8da980ddac9fd4d369d8e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2997f5f7daf04bbde467ff40c26103a0310720c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31070012"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251829"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Risoluzione dei problemi di Visual Studio Emulatore per Android
+# <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Risolvere i problemi di Visual Studio Emulator for Android
 Questo argomento contiene informazioni che consentono di risolvere i problemi che possono verificarsi quando si usa Visual Studio Emulator for Android.  
   
 > [!WARNING]
@@ -62,7 +62,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 ##  <a name="BeforeYouStart"></a> Prima di iniziare  
  Prima di iniziare la risoluzione dei problemi, potrebbe essere utile consultare gli argomenti seguenti:  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Requisiti di sistema per Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="NoInstall"></a> Non è possibile installare l'emulatore  
  Se Hyper-V non è installato, quando si prova a installare l'emulatore verrà visualizzato un messaggio analogo al seguente. È necessario avere un computer che supporta HyperV e che HyperV sia abilitato.  
@@ -72,7 +72,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 > [!NOTE]
 >  Questo messaggio è applicabile a Visual Studio Emulator for Android e all'emulatore Windows Phone. Windows 8.1 e Windows 10 supportano l'emulatore.  
   
- Se viene visualizzato questo messaggio, vedere i [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) per verificare se è possibile eseguire l'emulatore.  
+ Se viene visualizzato questo messaggio, vedere i [Requisiti di sistema per Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) per verificare se è possibile eseguire l'emulatore.  
   
 ##  <a name="DomainNetwork"></a> Impossibile connettersi alle destinazioni di rete in un dominio o di una rete aziendale  
  L'emulatore Visual Studio viene visualizzato sulla rete come un dispositivo distinto con il proprio indirizzo IP. Non è stato aggiunto a un dominio Windows e non condivide le credenziali di dominio o gruppo di lavoro con il computer host.  
@@ -179,7 +179,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
   
     6.  Assicurarsi che si esegue Windows 8 Professional o migliori (Windows Server 2008 non è supportato). Windows Server 2012 è supportato, ma è necessario abilitare esperienza Desktop.  
   
-     È possibile controllare il Visualizzatore eventi per vedere se sono presenti errori di Hypervisor. A tale scopo, aprire il Visualizzatore eventi (chiave di avvio + R, quindi digitare `eventvwr`) e quindi selezionare **registri di Windows**, **sistema**. Quindi filtrare il registro eventi dall'origine evento, impostando l'origine su **Hypervisor Hyper-V**. Controllare gli errori identificare la causa principale.  
+     È possibile controllare il Visualizzatore eventi per vedere se sono presenti errori di Hypervisor. A tale scopo, aprire il Visualizzatore eventi (**chiave di avvio**+**R**, quindi digitare `eventvwr`) e quindi selezionare **Registri di Windows**, **Sistema**. Quindi filtrare il registro eventi dall'origine evento, impostando l'origine su **Hypervisor Hyper-V**. Controllare gli errori identificare la causa principale.  
   
      Se il soddisfa processore i requisiti minimi ma hypervisor ancora esito negativo, provare a scoprire se è un aggiornamento del BIOS per il computer. Se è presente, e si sceglie di eseguire l'aggiornamento, accertarsi di rispettare tutte le precauzioni dal produttore durante l'aggiornamento del BIOS (ad esempio, per garantire l'aggiornamento del firmware BIOS non è stato interrotto da un'interruzione dell'alimentazione, che può essere danneggiata definitivamente il BIOS).  
   
@@ -193,7 +193,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
   
      I seguenti prodotti potrebbero richiedere l'aggiornamento per la conformità di Windows 8: VirtualBox, Virtual PC 7, VMWare, alcuni client VPN, i firewall software, alcune versioni di client VPN Cisco e altri sistemi di virtualizzazione. Collaborare con lo sviluppatore del software di virtualizzazione incerta incoraggiarli per aggiornare il software per renderlo compatibile con Windows 8 e Hyper-V.  
   
-     Come un **soluzione**, è possibile disabilitare tutti i driver di terze parti e applicazioni che potrebbero interferire con la rete virtuale utilizzata dall'emulatore di comunicare con Visual Studio. Queste applicazioni possono comprendere:  
+     Come *soluzione*, è possibile disabilitare tutti i driver di terze parti e le applicazioni che potrebbero interferire con la rete virtuale utilizzata dall'emulatore di comunicare con Visual Studio. Queste applicazioni possono comprendere:  
   
     -   Antivirus applicazioni (hook lo stack di rete)  
   
@@ -261,7 +261,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
   
 -   Aprire l'Editor del Registro di sistema selezionando **eseguire** dall'inizio pulsanti menu di scelta rapida, digitare `regedit` nella finestra di dialogo e scegliendo **OK**.  
   
--   Passare a strumenti SDK HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android nell'albero delle cartelle a sinistra.  
+-   Passare a *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* nell'albero delle cartelle a sinistra.  
   
 -   Modificare il **percorso** variabile del Registro di sistema in base al percorso per il Android SDK.  
   

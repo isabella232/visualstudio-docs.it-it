@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235063"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380717"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usare vari Web browser con test codificati dell'interfaccia utente
 
@@ -53,14 +53,14 @@ Testando l'applicazione Web con vari tipi di Web browser si emula meglio l'esper
 
 1.  Nel menu **Strumenti** scegliere **Estensioni e aggiornamenti**.
 
-2.  Nella finestra di dialogo dell'estensione e degli aggiornamenti cercare `Selenium components for Cross Browser Testing`.
+2.  Nella finestra di dialogo **Estensioni e aggiornamenti** cercare `Selenium components for Cross Browser Testing`.
 
 3.  Evidenziare l'estensione e scegliere **Scarica**.
 
     > [!TIP]
     > È anche possibile scaricare i componenti Selenium per il test codificato dell'interfaccia utente tra più browser facendo clic [qui](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-Per altre informazioni sulla creazione e l'uso di test codificati dell'interfaccia utente, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md).
+Per altre informazioni sulla creazione e l'uso di test codificati dell'interfaccia utente, vedere [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md).
 
 ### <a name="enable-debugging"></a>Abilita debug
 
@@ -122,4 +122,4 @@ Per altre informazioni, vedere [Analisi dei test codificati dell'interfaccia ute
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [Analizzare i test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

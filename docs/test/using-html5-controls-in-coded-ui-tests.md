@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 15298414788c112c4f6a1f761055efd38933dfde
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 63c33b98244268a086e9db63e2b56e507471c4c3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751442"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382758"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 
@@ -32,18 +32,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 > Un test codificato dell'interfaccia utente creato in Internet Explorer 10 potrebbe non funzionare in Internet Explorer 9 o Internet Explorer 8. Questo perché Internet Explorer 10 include controlli HTML5 come audio, video, ProgressBar e dispositivo di scorrimento. Questi controlli HTML5 non sono riconosciuti da Internet Explorer 9 o da Internet Explorer 8. Analogamente, il test codificato dell'interfaccia utente creato in Internet Explorer 9 potrebbe includere alcuni controlli HTML5 non riconosciuti in Internet Explorer 8.
 
 
-## <a name="supported-html5-controls"></a>Controlli HTML5 supportati
- I test codificati dell'interfaccia utente includono il supporto per registrazione, riproduzione e convalida dei controlli HTML5 seguenti:
-
--   [Controllo Audio](#UsingHTML5ControlsCodedUITestsAudio)
-
--   [Controllo Video](#UsingHTML5ControlsCodedUITestsVideo)
-
--   [Controllo Slider](#UsingHTML5ControlsCodedUITestsSlider)
-
--   [Controllo ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)
-
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Controllo Audio
+## <a name="audio-control"></a>Controllo audio
  **Controllo Audio**: le azioni nel controllo Audio HTML5 vengono registrate e riprodotte correttamente.
 
  ![Controllo audio HTML5](../test/media/codedui_html5_audio.png)
@@ -57,27 +46,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 |**Riattivare il volume dell'audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida dei controlli.|Riattivare il volume dell'audio \<nome>|HtmlAudio.Unmute()|
 |**Modificare il volume dell'audio**|Impostare il volume dell'audio \<nome> sul 79%|HtmlAudio.SetVolume(float)|
 
- Le seguenti proprietà sono disponibili per HtmlAudio ed è possibile aggiungere un'asserzione in tutte:
-
-```
-string AutoPlay
-string Controls
-string CurrentSrc
-string CurrentTime
-string CurrentTimeAsString
-string Duration
-string DurationAsString
-string Ended
-string Loop
-string Muted
-string Paused
-string PlaybackRate
-string ReadyState
-string Seeking
-string Src
-string Volume
-
-```
+Vedere [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) per un elenco delle proprietà in cui è possibile aggiungere un'asserzione.
 
  **Proprietà di ricerca:** le proprietà di ricerca per `HtmlAudio` sono `Id`, `Name` e `Title`.
 
@@ -87,7 +56,7 @@ string Volume
 > L'intervallo di tempo per la ricerca e la sospensione può essere significativo. Durante la riproduzione, il test codificato dell'interfaccia utente attenderà fino all'ora specificata in `(TimeSpan)` prima di sospendere l'audio. Se, in alcune circostanze speciali, l'ora specificata passa prima di fare clic sul comando Sospendi, verrà generata un'eccezione.
 
 
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Controllo Video
+## <a name="video-control"></a>Controllo video
  **Controllo Video**: le azioni nel controllo Video HTML5 vengono registrate e riprodotte correttamente.
 
  ![Controllo video HTML5](../test/media/codedui_html5_video.png)
@@ -101,14 +70,7 @@ string Volume
 |**Riattivare il volume del video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida dei controlli.|Riattivare il volume del video \<nome>|HtmlVideo.Unmute()|
 |**Modificare il volume del video**|Impostare il volume del video \<nome> sul 79%||
 
- Tutte le proprietà di HtmlAudio sono disponibili per HtmlVideo. Inoltre, sono disponibili le seguenti tre proprietà. È possibile aggiungere un'asserzione in tutte.
-
-```
-string Poster
-string VideoHeight
-string VideoWidth
-
-```
+Vedere [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) per un elenco delle proprietà in cui è possibile aggiungere un'asserzione.
 
  **Proprietà di ricerca:** le proprietà di ricerca per `HtmlVideo` sono `Id`, `Name` e `Title`.
 
@@ -117,35 +79,14 @@ string VideoWidth
 > [!NOTE]
 > Se si riavvolge o si fa avanzare rapidamente il video usando le etichette -30s o +30s, il video verrà aggregato in modo da passare all'ora appropriata.
 
-
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Controllo Slider
- **Controllo Slider**: le azioni nel controllo Slider HTML5 vengono registrate e riprodotte correttamente.
-
- ![Controllo dispositivo di scorrimento HTML5](../test/media/codedui_html5_slider.png)
-
-|Operazione|Registrazione|Codice generato|
-|------------|---------------|--------------------|
-|**Impostare una posizione nel dispositivo di scorrimento**|Impostare la posizione su \<x> nel dispositivo di scorrimento \<nome>|HtmlSlider.ValueAsNumber=\<x>|
-
- Le seguenti proprietà sono disponibili per HtmlSlider ed è possibile aggiungere un'asserzione in tutte:
-
-```
-string Disabled
-string Max
-string Min
-string Required
-string Step
-string ValueAsNumber
-```
-
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> Controllo ProgressBar
- **Controllo ProgressBar**:si tratta di un controllo con cui non si può interagire. È possibile aggiungere asserzioni nelle proprietà `Value` e `Max` di questo controllo.
+## <a name="progressbar"></a>ProgressBar
+ **Controllo ProgressBar**: si tratta di un controllo con cui non si può interagire. È possibile aggiungere asserzioni nelle proprietà `Value` e `Max` di questo controllo. Per altre informazioni, vedere [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![Controllo ProgressBar HTML5](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Elementi HTML](http://go.microsoft.com/fwlink/?LinkID=232441)
+- [Elementi HTML](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
-- [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md)
+- [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md)
 - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8831dd8af13d111db833fe46d685e9a6e3af767
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177318"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381159"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 
@@ -73,11 +73,11 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
      Se è stato appena creato un progetto di test codificato dell'interfaccia utente, il primo file di test codificato dell'interfaccia utente viene aggiunto automaticamente. Per aggiungere un altro file di test, aprire il menu di scelta rapida nel progetto di test codificato dell'interfaccia utente in **Esplora soluzioni** e quindi scegliere **Aggiungi** > **Test codificato dell'interfaccia utente**.
 
-     Nella finestra di dialogo **Genera codice per test codificato dell'interfaccia utente** scegliere **Registra azioni, modifica mappa dell'interfaccia utente o aggiungi asserzioni**.
+     Nella finestra di dialogo **Genera codice per Test codificato dell'interfaccia utente** scegliere **Registra le azioni** > **Modifica mappa dell'interfaccia utente o aggiungi asserzioni**.
 
      ![Finestra di dialogo Genera codice per test codificato dell'interfaccia utente](media/generate-code-for-coded-ui-test.png)
 
-     Verrà visualizzato Generatore di test codificati dell'interfaccia utente.
+     Viene visualizzato il **Generatore di test codificati dell'interfaccia utente**.
 
      ![Generatore di test codificati dell'interfaccia utente](../test/media/codedui_testbuilder.png)
 
@@ -96,7 +96,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
 4. Verificare i valori nei campi dell'interfaccia utente, ad esempio le caselle di testo.
 
-     Scegliere **Aggiungi asserzioni** nel Generatore di test codificati dell'interfaccia utente e quindi scegliere un controllo dell'interfaccia utente nell'applicazione in esecuzione. Nell'elenco delle proprietà visualizzato selezionare una proprietà, ad esempio **Testo**, in una casella di testo. Scegliere **Aggiungi asserzione** dal menu di scelta rapida. Nella finestra di dialogo selezionare l'operatore di confronto, il valore di confronto e il messaggio di errore.
+     Scegliere **Aggiungi asserzioni** nel **Generatore di test codificati dell'interfaccia utente** e quindi scegliere un controllo dell'interfaccia utente nell'applicazione in esecuzione. Nell'elenco delle proprietà visualizzato selezionare una proprietà, ad esempio **Testo**, in una casella di testo. Scegliere **Aggiungi asserzione** dal menu di scelta rapida. Nella finestra di dialogo selezionare l'operatore di confronto, il valore di confronto e il messaggio di errore.
 
      Chiudere la finestra delle asserzioni e scegliere **Genera codice**.
 
@@ -105,7 +105,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
     > [!TIP]
     > Passare alternativamente dalla registrazione delle azioni alla verifica dei valori. Generare il codice al termine di ogni sequenza di azioni o verifiche. Se necessario, sarà possibile inserire nuove azioni e verifiche in un secondo momento.
 
-     Per informazioni dettagliate, vedere [Convalida delle proprietà dei controlli](#validate-the-properties-of-ui-controls).
+     Per informazioni dettagliate, vedere [Convalidare le proprietà dei controlli dell'interfaccia utente](#validate-the-properties-of-ui-controls).
 
 5. Visualizzare il codice di test generato.
 
@@ -132,11 +132,11 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
 7. Modificare i dettagli delle azioni di test e delle asserzioni.
 
-     Aprire UIMap.uitest. Il file verrà aperto nell'Editor di test codificati dell'interfaccia utente, in cui è possibile modificare qualsiasi sequenza di azioni registrate e modificare le asserzioni.
+     Aprire *UIMap.uitest*. Il file verrà aperto nell'**Editor di test codificati dell'interfaccia utente** in cui è possibile modificare qualsiasi sequenza di azioni registrate e modificare le asserzioni.
 
      ![Editor di test codificati dell'interfaccia utente](../test/media/cuit_editor_edit.png)
 
-     Per altre informazioni, vedere [Modifica di test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+     Per altre informazioni, vedere [Modificare test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 8. Eseguire il test.
 
@@ -162,7 +162,7 @@ Se non si vuole avviare e arrestare separatamente l'applicazione, il browser o i
 
 Si può usare il **Generatore di test codificati dell'interfaccia utente** per aggiungere un controllo dell'interfaccia utente a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> per il test o per generare codice per un metodo di convalida che usa un'asserzione per un controllo dell'interfaccia utente.
 
-Per generare asserzioni per i controlli dell'interfaccia utente, scegliere lo strumento **Aggiungi asserzioni** nel Generatore di test codificati dell'interfaccia utente e trascinarlo sul controllo dell'applicazione sottoposta a test da verificare. Quando il controllo risulta delimitato da una casella, rilasciare il mouse. Il codice della classe di controllo viene creato immediatamente nel file `UIMap.Designer.cs`.
+Per generare asserzioni per i controlli dell'interfaccia utente, scegliere lo strumento **Aggiungi asserzioni** nel **Generatore di test codificati dell'interfaccia utente** e trascinarlo sul controllo dell'applicazione sottoposta a test da verificare. Quando il controllo risulta delimitato da una casella, rilasciare il mouse. Il codice della classe di controllo viene creato immediatamente nel file *UIMap.Designer.cs*.
 
 ![Elemento per il test codificato dell'interfaccia utente](../test/media/codedui_1.png)
 
@@ -196,13 +196,13 @@ Per generare codice per le asserzioni e aggiungere il controllo alla mappa dell'
 
      È possibile modificare questo file per modificare l'ordine dei passaggi e delle asserzioni o per creare nuovi metodi di test. Per aggiungere codice, posizionare il cursore sul metodo di test e scegliere **Genera codice per test codificato dell'interfaccia utente** dal menu di scelta rapida.
 
-- Aggiunge un metodo denominato `AssertForAddTwoNumbers` alla mappa dell'interfaccia utente (UIMap.uitest). Il file viene aperto nell'Editor di test codificati dell'interfaccia utente, in cui è possibile modificare le asserzioni.
+- Aggiunge un metodo denominato `AssertForAddTwoNumbers` alla mappa dell'interfaccia utente (*UIMap.uitest*). Il file viene aperto nell'**Editor di test codificati dell'interfaccia utente** dove è possibile modificare le asserzioni.
 
      ![Modificare l'asserzione usando l'Editor test codificati dell'interfaccia utente](../test/media/cuit_editor_assert.png)
 
-     Per altre informazioni, vedere [Modifica di test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+     Per altre informazioni, vedere [Modificare test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-     È anche possibile visualizzare il codice generato del metodo di asserzione nel file UIMap.Designer.cs. Tuttavia, è consigliabile non modificare questo file. Se si vuole creare una versione modificata del codice, copiare i metodi in un altro file, ad esempio UIMap.cs, rinominare i metodi e modificarli in quel file.
+     È anche possibile visualizzare il codice generato del metodo di asserzione nel file *UIMap.Designer.cs*. Tuttavia, è consigliabile non modificare questo file. Se si vuole creare una versione modificata del codice, copiare i metodi in un altro file, ad esempio *UIMap.cs*, rinominare i metodi e modificarli nel file.
 
     ```csharp
     public void AssertForAddTwoNumbers()
@@ -213,28 +213,25 @@ Per generare codice per le asserzioni e aggiungere il controllo alla mappa dell'
 
 ### <a name="select-a-hidden-control-using-the-keyboard"></a>Selezionare un controllo nascosto tramite tastiera
 
-Se il controllo da selezionare perde lo stato attivo e scompare quando si seleziona lo strumento di aggiunta delle asserzioni dal Generatore di test codificati dell'interfaccia utente:
+Se il controllo da selezionare perde lo stato attivo e scompare quando si seleziona lo strumento **Aggiungi asserzione** dal **Generatore di test codificati dell'interfaccia utente**:
 
-A volte, durante l'aggiunta di controlli e la verifica delle relative proprietà, può essere necessario usare la tastiera. Ad esempio, quando si tenta di registrare un test codificato dell'interfaccia utente che usa un controllo del menu di scelta rapida, l'elenco delle voci di menu nel controllo perderà lo stato attivo e sparirà quando si cerca di selezionare lo strumento Aggiungi asserzioni dal Generatore di test codificati dell'interfaccia utente. Questa situazione è illustrata nella figura seguente, in cui il menu di scelta rapida in Internet Explorer perde lo stato attivo e scompare quando si cerca di selezionarlo con lo strumento di aggiunta delle asserzioni.
+A volte, durante l'aggiunta di controlli e la verifica delle relative proprietà, può essere necessario usare la tastiera. Ad esempio, quando si tenta di registrare un test codificato dell'interfaccia utente che usa un controllo del menu di scelta rapida, l'elenco delle voci di menu nel controllo perderà lo stato attivo e sparirà quando si cerca di selezionare lo strumento **Aggiungi asserzione** dal **Generatore di test codificati dell'interfaccia utente**. Questa situazione è illustrata nella figura seguente in cui il menu di scelta rapida in Internet Explorer perde lo stato attivo e scompare quando si cerca di selezionarlo con lo strumento **Aggiungi asserzione**.
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
-Per usare la tastiera per selezionare un controllo dell'interfaccia utente, passare il puntatore del mouse sul controllo. Tenere premuti contemporaneamente **CTRL** e **I**. Rilasciare i tasti. Il controllo viene registrato dal Generatore di test codificati dell'interfaccia utente.
-
-> [!WARNING]
-> Se si usa Microsoft Lync, è necessario chiudere Lync prima di avviare il Generatore di test codificati dell'interfaccia utente. Microsoft Lync interferisce con la scelta rapida da tastiera **CTRL+I**.
+Per usare la tastiera per selezionare un controllo dell'interfaccia utente, passare il puntatore del mouse sul controllo. Tenere premuti contemporaneamente **CTRL** e **I**. Rilasciare i tasti. Il controllo viene registrato dal **Generatore di test codificati dell'interfaccia utente**.
 
 #### <a name="manually-record-mouse-hovers"></a>Registrare manualmente i passaggi del mouse
 
 Se non è possibile registrare un passaggio del mouse su un controllo:
 
-In alcuni casi un particolare controllo usato in un test codificato dell'interfaccia utente può richiedere l'uso della tastiera per registrare manualmente gli eventi di passaggio del mouse. Ad esempio, quando si testa un Windows Form o un'applicazione Windows Presentation Foundation (WPF) può essere presente codice personalizzato oppure può essere stato definito un comportamento speciale definito per il passaggio del puntatore su un controllo, ad esempio l'espansione di un nodo dell'albero. Per testare casi come questi, è necessario notificare manualmente al Generatore di test codificati dell'interfaccia utente che si sta passando il puntatore sul controllo premendo specifici tasti.
+In alcuni casi un particolare controllo usato in un test codificato dell'interfaccia utente può richiedere l'uso della tastiera per registrare manualmente gli eventi di passaggio del mouse. Ad esempio, quando si testa un Windows Form o un'applicazione Windows Presentation Foundation (WPF) può essere presente codice personalizzato oppure può essere stato definito un comportamento speciale definito per il passaggio del puntatore su un controllo, ad esempio l'espansione di un nodo dell'albero. Per testare casi come questi, è necessario notificare manualmente al **Generatore di test codificati dell'interfaccia utente** che si sta passando il puntatore sul controllo premendo specifici tasti.
 
-Quando si esegue il test codificato dell'interfaccia utente, passare il puntatore sul controllo. Quindi, tenere contemporaneamente premuti CTRL, MAIUSC e R. Rilasciare i tasti. Il Generatore di test codificati dell'interfaccia utente registrerà un evento di passaggio del mouse.
+Quando si esegue il test codificato dell'interfaccia utente, passare il puntatore sul controllo. Quindi, tenere contemporaneamente premuti **CTRL**, **MAIUSC** e **R**. Rilasciare i tasti. Il **Generatore di test codificati dell'interfaccia utente** registrerà un evento di passaggio del mouse.
 
 ![CodedUI&#95;Hover](../test/media/codedui_hover.png)
 
-Dopo aver generato il metodo di test, al file UIMap.Desinger.cs verrà aggiunto codice simile a quello riportato nell'esempio seguente:
+Dopo aver generato il metodo di test, al file *UIMap.Designer.cs* verrà aggiunto codice simile a quello riportato nell'esempio seguente:
 
 ```csharp
 // Mouse hover '1' label at (87, 9)
@@ -284,17 +281,17 @@ Verificare che nel file di configurazione il tasto `RecordImplicitiHovers` sia i
 
 Dopo aver creato il test codificato dell'interfaccia utente, è possibile modificarlo usando uno qualsiasi degli strumenti seguenti in Visual Studio:
 
-- Usare il **Generatore di test codificati dell'interfaccia utente** per aggiungere altri controlli e la convalida ai test. Vedere la sezione [Aggiunta di controlli e la convalida delle proprietà](#validate-the-properties-of-ui-controls) in questo argomento.
+- Usare il **Generatore di test codificati dell'interfaccia utente** per aggiungere altri controlli e la convalida ai test. Vedere la sezione [Convalidare le proprietà dei controlli dell'interfaccia utente](#validate-the-properties-of-ui-controls) in questo argomento.
 
-- L'**editor di test codificati dell'interfaccia utente** consente di modificare facilmente i test. Con l'**editor di test codificati dell'interfaccia utente** è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [Modifica di test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+- L'**editor di test codificati dell'interfaccia utente** consente di modificare facilmente i test. Con l'**editor di test codificati dell'interfaccia utente** è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [Modificare test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 - **Editor di codice:**
 
-    - Aggiungere manualmente il codice per i controlli nel test come descritto nella sezione [Codifica di azioni e proprietà del controllo dell'interfaccia utente](#coded-ui-control-actions-and-properties) in questo argomento.
+    - Aggiungere manualmente il codice per i controlli nel test come descritto nella sezione [Azioni e proprietà dei controlli codificati dell'interfaccia utente](#coded-ui-control-actions-and-properties) in questo argomento.
 
-    - Dopo aver creato un test codificato dell'interfaccia utente, è possibile modificarlo in modo che sia basato sui dati. Per altre informazioni, vedere [Creazione di un test codificato dell'interfaccia utente basato sui dati](../test/creating-a-data-driven-coded-ui-test.md).
+    - Dopo aver creato un test codificato dell'interfaccia utente, è possibile modificarlo in modo che sia basato sui dati. Per altre informazioni, vedere [Creare un test codificato dell'interfaccia utente basato sui dati](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata finestra, venga nascosto l'indicatore di stato e così via. A questo scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato. Per un elenco completo dei metodi disponibili, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Per un esempio di test codificato dell'interfaccia utente, in cui si attende che un controllo venga abilitato usando il metodo WaitForControlEnabled, vedere [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    - Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata finestra, venga nascosto l'indicatore di stato e così via. A questo scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato. Per un elenco completo dei metodi disponibili, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Per un esempio di test codificato dell'interfaccia utente in cui si attende che un controllo venga abilitato usando il metodo WaitForControlEnabled, vedere [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
     - I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10. Per altre informazioni, vedere [Uso dei controlli HTML5 nei test codificati dell'interfaccia utente](../test/using-html5-controls-in-coded-ui-tests.md).
 
@@ -304,7 +301,7 @@ Dopo aver creato il test codificato dell'interfaccia utente, è possibile modifi
 
        - [Procedure consigliate per i test codificati dell'interfaccia utente](../test/best-practices-for-coded-ui-tests.md)
 
-       - [Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md)
+       - [Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
        - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
@@ -333,9 +330,9 @@ Quando si sceglie **Genera codice**, vengono create diverse parti di codice:
 
 - Un metodo in *UIMap.uitest*.
 
-     Questo metodo include i dettagli delle azioni registrate o il valore verificato. Per modificare questo codice, aprire UIMap.uitest. Il file verrà aperto in un editor specializzato, in cui è possibile eliminare o effettuare il refactoring delle azioni registrate.
+     Questo metodo include i dettagli delle azioni registrate o il valore verificato. Per modificare questo codice, aprire *UIMap.uitest*. Il file verrà aperto in un editor specializzato, in cui è possibile eliminare o effettuare il refactoring delle azioni registrate.
 
-     È anche possibile visualizzare il metodo generato UIMap.Designer.cs. Questo metodo esegue le azioni registrate durante l'esecuzione del test.
+     È anche possibile visualizzare il metodo generato in *UIMap.Designer.cs*. Questo metodo esegue le azioni registrate durante l'esecuzione del test.
 
     ```csharp
     // File: UIMap.Designer.cs
@@ -450,7 +447,7 @@ Con i controlli derivanti da <xref:Microsoft.VisualStudio.TestTools.UITesting.UI
 
 **Aggiunta del supporto per controlli personalizzati:** il framework dei test codificati dell'interfaccia utente non supporta ogni possibile interfaccia utente e potrebbe non supportare l'interfaccia utente da testare. Ad esempio, non si può creare immediatamente un test codificato dell'interfaccia utente per Microsoft Excel. Tuttavia, è possibile creare un'estensione al framework dei test codificati dell'interfaccia utente che supporterà un controllo personalizzato.
 
-- [Abilitare il test codificato dell'interfaccia utente per i controlli](../test/enable-coded-ui-testing-of-your-controls.md)
+- [Abilitare test codificati dell'interfaccia utente per i controlli](../test/enable-coded-ui-testing-of-your-controls.md)
 
 - [Estendere test codificati dell'interfaccia utente e registrazioni delle azioni](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
