@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5be4a7f23259a2754ca8454371cc64d8fc5419ce
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251803"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586547"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -70,7 +70,7 @@ I modelli **Progetto Web \<framework> di sondaggi** creano un'app Web di base at
 
 ## <a name="install-project-requirements"></a>Installare i requisiti di progetto
 
-Quando si crea un progetto da un modello specifico del framework, viene visualizzata una finestra di dialogo che consente di installare i pacchetti necessari con pip. Per i progetti Web è inoltre consigliabile usare un [ambiente virtuale](selecting-a-python-environment-for-a-project.md#using-virtual-environments), in modo che durante la pubblicazione del sito Web vengano incluse le dipendenze corrette:
+Quando si crea un progetto da un modello specifico del framework, viene visualizzata una finestra di dialogo che consente di installare i pacchetti necessari con pip. Per i progetti Web è inoltre consigliabile usare un [ambiente virtuale](selecting-a-python-environment-for-a-project.md#use-virtual-environments), in modo che durante la pubblicazione del sito Web vengano incluse le dipendenze corrette:
 
 ![Finestra di dialogo in cui è possibile installare i pacchetti necessari per un modello di progetto](media/template-web-requirements-txt-wizard.png)
 

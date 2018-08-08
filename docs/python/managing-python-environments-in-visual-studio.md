@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341869"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586579"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -46,7 +46,7 @@ Gli ambienti globali sono disponibili per tutti i progetti nel computer. In Visu
 
 Dal momento che i pacchetti installati in un ambiente globale sono disponibili per tutti i progetti che usano tale ambiente, possono verificarsi conflitti quando due progetti richiedono pacchetti non compatibili o versioni diverse dello stesso pacchetto. Gli ambienti virtuali consentono di evitare questi conflitti usando l'interprete e la libreria standard da un ambiente globale, ma mantenendo gli archivi dei pacchetti in cartelle isolate.
 
-In Visual Studio è possibile creare un ambiente virtuale per un progetto specifico, che viene archiviato in una sottocartella del progetto. Visual Studio offre un comando che consente di generare un file *c:\program files* dall'ambiente virtuale, rendendo più semplice ricreare l'ambiente in altri computer. Per altre informazioni, vedere [Uso di ambienti virtuali](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+In Visual Studio è possibile creare un ambiente virtuale per un progetto specifico, che viene archiviato in una sottocartella del progetto. Visual Studio offre un comando che consente di generare un file *c:\program files* dall'ambiente virtuale, rendendo più semplice ricreare l'ambiente in altri computer. Per altre informazioni, vedere [Uso di ambienti virtuali](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="conda-environments"></a>Ambienti Conda
 
