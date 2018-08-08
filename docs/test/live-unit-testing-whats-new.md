@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e6e0a812839dac9ad8962e12a610a82cb56a1fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c422f906eba84d00d1d0e8bfa6420a627b410512
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974780"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381579"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Novità di Live Unit Testing
 
@@ -39,7 +39,7 @@ A partire da Visual Studio 2017 versione 15.4, Live Unit Testing include miglior
 
 - **Prestazioni e affidabilità**: Live Unit Testing ora assicura una migliore capacità di rilevamento da parte del sistema del caricamento completo dei progetti, evitando così che Live Unit Testing venga interrotto. I miglioramenti delle prestazioni di compilazione evitano anche che i progetti MSBuild vengano sottoposti a una nuova valutazione se il sistema rileva che non è stata apportata alcuna modifica al file di progetto.  
 
-- **Miglioramenti vari dell'interfaccia utente**: l'opzione **Live Test Set-Include/Exclude** (Set Live Test-Includi/Escludi) disponibile facendo clic con il pulsante destro del mouse, è stata rinominata **Live Unit Testing Include/Exclude** (Includi/Escludi Live Unit Testing) in quanto creava confusione. L'opzione **Reset clean** (Reimposta e pulisci) nel menu **Test**, **Live Unit Testing** è stata rimossa. Ora è accessibile da **Strumenti**, **Opzioni**, **Live Unit Testing** selezionando **Delete Persisted Data** (Elimina dati persistenti).
+- **Miglioramenti vari dell'interfaccia utente**: l'opzione **Live Test Set-Include/Exclude** (Set Live Test-Includi/Escludi) disponibile facendo clic con il pulsante destro del mouse, è stata rinominata **Live Unit Testing Include/Exclude** (Includi/Escludi Live Unit Testing) in quanto creava confusione. L'opzione **Reset clean** (Reimposta e pulisci) nel menu **Test** > **Live Unit Testing** è stata rimossa. Ora è accessibile da **Strumenti** > **Opzioni** > **Live Unit Testing** selezionando **Delete Persisted Data** (Elimina dati persistenti).
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Novità di Live Unit Testing per Visual Studio 2017 versione 15.3
 

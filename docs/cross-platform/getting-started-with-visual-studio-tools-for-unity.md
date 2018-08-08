@@ -10,14 +10,14 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c46b5fffb2cde0298c252c7317f82654ce6defdc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154222"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252466"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Introduzione a Visual Studio Tools per Unity
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Introduzione a Visual Studio Tools per Unity
 
 ## <a name="install-visual-studio"></a>Installare Visual Studio
 
@@ -41,7 +41,7 @@ Durante l'installazione, assicurarsi che Visual Studio sia selezionato nell'elen
 
 La versione di Visual Studio disponibile con l'installazione di Unity potrebbe non essere la più recente. È consigliabile verificare la disponibilità di aggiornamenti per assicurarsi di avere accesso agli strumenti e alle funzionalità più recenti.
 
-- [Aggiornamento di Visual Studio](../install/update-visual-studio.md)
+- [Aggiornare Visual Studio](../install/update-visual-studio.md)
 
 ### <a name="manual-installation"></a>Installazione manuale
 
@@ -77,7 +77,7 @@ A partire da Unity 2018.1, Visual Studio deve essere l'editor di script esterno 
 
 1. Dopo aver selezionato Visual Studio nell'elenco **External Script Editor**, verificare che la casella di controllo **Editor Attaching** sia selezionata.
 
-1. Chiudere la finestra di dialogo Preferences per completare il processo di configurazione.
+1. Chiudere la finestra di dialogo **Preferences** (Preferenze) per completare il processo di configurazione.
 
 ## <a name="support-for-older-versions"></a>Supporto per versioni precedenti
 
@@ -93,4 +93,4 @@ A partire da Unity 2018.1, Visual Studio deve essere l'editor di script esterno 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
- Per informazioni sull'uso e sul debug di un progetto Unity in Visual Studio, vedere [Using Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md).
+ Per informazioni sull'uso e sul debug di un progetto Unity in Visual Studio, vedere [Visual Studio Tools per Unity](../cross-platform/using-visual-studio-tools-for-unity.md).

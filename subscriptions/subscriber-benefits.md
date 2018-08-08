@@ -9,12 +9,12 @@ description: Informazioni sui vantaggi inclusi nella sottoscrizione di Visual St
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283263"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381546"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Vantaggi inclusi nella sottoscrizione di Visual Studio
 
@@ -37,7 +37,7 @@ Per consentire ai sottoscrittori di migliorare costantemente le loro competenze 
 ## <a name="support"></a>Supporto
 I sottoscrittori di Visual Studio hanno anche diritto ad accedere a vari tipi di supporto in caso di domande o se è necessaria assistenza tecnica.
 - Le sottoscrizioni a pagamento includono l'accesso a interventi di supporto tecnico professionale per risolvere i problemi con gli strumenti e le applicazioni in esecuzione in ambienti di sviluppo e test.
-- Sono necessarie informazioni sui prodotti o documentazione tecnica?  È possibile ottenere assistenza immediata dal servizio Conceirge Chat.
+- Sono necessarie informazioni sui prodotti o documentazione tecnica?  È possibile ottenere assistenza immediata dal servizio Concierge Chat.
 - I forum di supporto prioritario consentono di ottenere aiuto dai membri della community.  Se i membri della community non possono rispondere a una domanda, la risposta verrà fornita da esperti Microsoft.
 - In caso di domande su Azure,  vedere i servizi Community di Azure e Azure Advisory Chat.
 

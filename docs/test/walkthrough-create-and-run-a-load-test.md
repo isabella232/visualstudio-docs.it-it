@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178449"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381016"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procedura dettagliata: Creare ed eseguire un test di carico contenente unit test
 
 In questa procedura dettagliata viene creato un test di carico contenente unit test.
 
-Questa procedura descrive i passaggi necessari per la creazione e l'esecuzione di un test di carico tramite Visual Studio Enterprise. Un test di carico è un contenitore di test delle prestazioni Web e di unit test. È possibile creare test di carico con la Creazione guidata test di carico.
+Questa procedura descrive i passaggi necessari per la creazione e l'esecuzione di un test di carico tramite Visual Studio Enterprise. Un test di carico è un contenitore di test delle prestazioni Web e di unit test. È possibile creare test di carico con la **Creazione guidata test di carico**.
 
-In un test di carico sono presenti anche molte proprietà di runtime che possono essere modificate per generare la simulazione di carico desiderata. In questa procedura dettagliata viene utilizzata la Creazione guidata test di carico per aggiungere unit test a un test di carico.
+In un test di carico sono presenti anche molte proprietà di runtime che possono essere modificate per generare la simulazione di carico desiderata. In questa procedura dettagliata viene usata la **Creazione guidata test di carico** per aggiungere unit test a un test di carico.
 
 In questa procedura dettagliata, si completeranno le attività seguenti:
 
@@ -37,7 +37,7 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 -   Eseguire i passaggi descritti in [Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) per creare una libreria di classi C# semplice contenente un progetto di test di carico e di test delle prestazioni Web con alcuni unit test.
 
-## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Creare un test di carico contenente unit test utilizzando la Creazione guidata test di carico
+## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Creare un test di carico contenente unit test tramite la Creazione guidata test di carico
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Per avviare la Creazione guidata test di carico
 
@@ -45,9 +45,9 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 2.  In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione Bank, scegliere **Aggiungi** e quindi **Nuovo progetto**.
 
-     Viene visualizzata la finestra di dialogo Aggiungi nuovo progetto.
+     Viene visualizzata la finestra di dialogo **Aggiungi nuovo progetto**.
 
-3.  Nella finestra di dialogo Aggiungi nuovo progetto espandere **Visual C#** e scegliere **Test**. Nell'elenco di modelli scegliere **Progetto di test di carico e prestazioni Web** e, nel campo **Nome**, digitare `BankLoadTest`. Scegliere **OK**.
+3.  Nella finestra di dialogo **Aggiungi nuovo progetto** espandere **Visual C#** e scegliere **Test**. Nell'elenco di modelli scegliere **Progetto di test di carico e prestazioni Web** e, nel campo **Nome**, digitare `BankLoadTest`. Scegliere **OK**.
 
      Il progetto di test di carico e prestazioni Web di BankLoadTest viene aggiunto alla soluzione.
 
@@ -88,7 +88,7 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>Per selezionare un modello di combinazione di test per lo scenario
 
-1.  In Specificare il modello di combinazione di test selezionare **In base al numero totale di test**.
+1.  In **Specificare il modello di combinazione di test** selezionare **In base al numero totale di test**.
 
 2.  Scegliere **Avanti**.
 
@@ -98,17 +98,17 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 2.  Scegliere **Aggiungi** per selezionare i test.
 
-3.  Scegliere lo unit test CreditTest elencato nel riquadro **Test disponibili**, in cui sono visualizzati tutti i test delle prestazioni Web e gli unit test nel progetto di test di carico e delle prestazioni Web.
+3.  Scegliere lo unit test **CreditTest** elencato nel riquadro **Test disponibili**, in cui sono visualizzati tutti i test delle prestazioni Web e gli unit test nel progetto di test di carico e delle prestazioni Web.
 
-4.  Scegliere la freccia per aggiungere lo unit test CreditTest al riquadro **Test selezionati**.
+4.  Scegliere la freccia per aggiungere lo unit test **CreditTest** al riquadro **Test selezionati**.
 
-5.  Ripetere i passaggi 3 e 4 per gli unit test DebitTest e FreezeAccountTest.
+5.  Ripetere i passaggi 3 e 4 per gli unit test **DebitTest** e **FreezeAccountTest**.
 
 6.  Dopo avere aggiunto i tre unit test, scegliere **OK**.
 
      Viene visualizzata una combinazione di test.
 
-7.  Spostare leggermente il dispositivo di scorrimento sotto Distribuzione per CreditTest per regolare la distribuzione del test. Si noti che gli altri dispositivi di scorrimento si spostano automaticamente verso sinistra, in modo che la distribuzione rimanga uguale a 100%.
+7.  Spostare leggermente il dispositivo di scorrimento sotto **Distribuzione** per **CreditTest** per regolare la distribuzione del test. Si noti che gli altri dispositivi di scorrimento si spostano automaticamente verso sinistra, in modo che la distribuzione rimanga uguale a 100%.
 
 8.  Scegliere **Avanti**.
 
@@ -124,7 +124,7 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 1.  Scegliere **Avanti**.
 
-     Per altre informazioni sugli insiemi di contatori, vedere [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+     Per altre informazioni sugli insiemi di contatori, vedere [Specificare insiemi di contatori e regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ### <a name="to-edit-run-setting-for-load-test"></a>Per modificare l'impostazione di esecuzione per il test di carico
 
@@ -134,7 +134,7 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 2.  Scegliere **Fine**. Il testo di carico si apre nell'**Editor test di carico**.
 
-## <a name="running-the-load-test"></a>Esecuzione del test di carico
+## <a name="run-the-load-test"></a>Eseguire il test di carico
  Una volta creato il test di carico, eseguirlo per visualizzare il modo in cui l'applicazione bancaria risponde alla simulazione di carico. Mentre il test di carico è in esecuzione, viene visualizzata la finestra **Analizzatore test di carico**.
 
 ### <a name="to-run-the-load-test"></a>Per eseguire il test di carico
@@ -145,8 +145,8 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica della combinazione di test per specificare quali test includere in uno scenario di test di carico](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
-- [Specifica dei tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
-- [Modifica dei modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)
-- [Modifica di modelli di combinazione di testo per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [Modificare la combinazione di test per specificare quali test includere in uno scenario di test di carico](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
+- [Specificare i tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
+- [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
+- [Modificare i modelli di carico per definire le attività di utenti virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Modificare i modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

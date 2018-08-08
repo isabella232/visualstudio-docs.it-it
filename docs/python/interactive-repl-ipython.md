@@ -11,29 +11,29 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: adfd037cc7362a4aa088d57c3776379caf6de5e3
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057661"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341507"
 ---
-# <a name="using-ipython-in-the-interactive-window"></a>Uso di IPython nella finestra interattiva
+# <a name="use-ipython-in-the-interactive-window"></a>Usare IPython nella finestra interattiva
 
-La finestra interattiva di Visual Studio in modalità IPython costituisce un ambiente di sviluppo interattivo avanzato e al contempo intuitiva avanzato e semplice da usare che include funzionalità di elaborazione parallela interattiva. Questo articolo illustra l'uso di IPython nella finestra interattiva di Visual Studio, in cui sono anche disponibili tutte le funzionalità della [finestra interattiva](python-interactive-repl-in-visual-studio.md) normale.
+La finestra **interattiva** di Visual Studio in modalità IPython costituisce un ambiente di sviluppo interattivo avanzato e al contempo semplice da usare che include funzionalità di elaborazione parallela interattiva. Questo articolo illustra l'uso di IPython nella finestra **interattiva** di Visual Studio, in cui sono anche disponibili tutte le funzionalità della [finestra interattiva](python-interactive-repl-in-visual-studio.md) normale.
 
 Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaconda](https://www.continuum.io), che include IPython e le librerie necessarie.
 
 > [!Note]
-> IronPython non supporta IPython, anche se è possibile selezionarlo nel modulo delle opzioni interattive. Per altre informazioni, vedere la pagina relativa alla [richiesta di funzionalità](https://github.com/Microsoft/PTVS/issues/84).
+> IronPython non supporta IPython, anche se è possibile selezionarlo nel modulo delle **opzioni interattive**. Per altre informazioni, vedere la pagina relativa alla [richiesta di funzionalità](https://github.com/Microsoft/PTVS/issues/84).
 
-1. Aprire Visual Studio, passare alla finestra Ambienti Python (**Visualizza > Altre finestre > Ambienti Python**) e selezionare un ambiente Anaconda.
+1. Aprire Visual Studio, passare alla finestra **Ambienti Python** (**Visualizza** > **Altre finestre** > **Ambienti Python**) e selezionare un ambiente Anaconda.
 
-1. Esaminare la scheda **Pacchetti (Conda)** (che può essere visualizzata come **pip** o **Pacchetti**) relativa all'ambiente per verificare la presenza di `ipython` e `matplotlib`. In caso contrario, installarli qui. Vedere [Finestra Ambienti Python - Scheda Pacchetti](python-environments-window-tab-reference.md).
+1. Esaminare la scheda **Pacchetti (Conda)** (che può essere visualizzata come **pip** o **Pacchetti**) relativa all'ambiente per verificare la presenza di `ipython` e `matplotlib`. In caso contrario, installarli qui. Vedere la pagina relativa alla [finestra Ambienti Python - Scheda Pacchetti](python-environments-window-tab-reference.md).
 
-1. Selezionare la scheda **Panoramica** e quindi **Usa la modalità interattiva IPython.** In Visual Studio 2015 selezionare **Configure interactive options** (Configura opzioni interattive) per aprire la finestra di dialogo **Opzioni** e quindi impostare **Modalità interattiva** su IPython e selezionare **OK**.
+1. Selezionare la scheda **Panoramica** e quindi **Usa la modalità interattiva IPython.** In Visual Studio 2015 selezionare **Configure interactive options** (Configura opzioni interattive) per aprire la finestra di dialogo **Opzioni** e quindi impostare **Modalità interattiva** su **IPython** e selezionare **OK**.
 
-1. Selezionare **Apri finestra interattiva** per visualizzare la finestra interattiva in modalità IPython. Se la modalità interattiva è stata appena modificata può essere necessario reimpostare la finestra. Se viene visualizzato solo un prompt >>> potrebbe anche essere necessario premere INVIO in modo da visualizzare un prompt simile a "In [2]".
+1. Selezionare **Apri finestra interattiva** per visualizzare la finestra **interattiva** in modalità IPython. Se la modalità interattiva è stata appena modificata può essere necessario reimpostare la finestra. Se viene visualizzato solo un prompt >>> potrebbe anche essere necessario premere **INVIO** in modo da visualizzare un prompt simile a **In [2]**.
 
     ![Finestra interattiva in modalità IPython](media/ipython-repl-03.png)
 
@@ -48,11 +48,11 @@ Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaco
   plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
   ```
 
-1. Dopo aver immesso l'ultima riga, verrà visualizzato un grafico inline, che è possibile ridimensionare trascinando nell'angolo inferiore destro se si desidera.
+1. Dopo aver immesso l'ultima riga, verrà visualizzato un grafico inline, che è possibile eventualmente ridimensionare trascinando nell'angolo inferiore destro.
 
     ![Grafico inline nella finestra interattiva](media/ipython-repl-04.png)
 
-1. Invece di digitare in REPL, è possibile scrivere codice nell'editor, selezionarlo, fare clic con il pulsante destro del mouse e scegliere il comando **Invia a finestra interattiva** o premere CTRL+INVIO. Provare a incollare il codice seguente in un nuovo file nell'editor, selezionandolo con CTRL+A e quindi inviandolo alla finestra interattiva. Visual Studio invia il codice alla finestra in un unico blocco per evitare che vengano visualizzati grafici intermedi o parziali. Inoltre, se non è aperto un progetto Python con un altro ambiente selezionato, Visual Studio apre una finestra interattiva per qualsiasi ambiente sia selezionato come predefinito nella finestra **Ambienti Python**.
+1. Invece di digitare in REPL, è possibile scrivere codice nell'editor, selezionarlo, fare clic con il pulsante destro del mouse e scegliere il comando **Invia a finestra interattiva** o premere **CTRL**+**INVIO**. Provare a incollare il codice seguente in un nuovo file nell'editor, selezionandolo con **CTRL**+**A** e quindi inviandolo alla finestra **interattiva**. Visual Studio invia il codice alla finestra in un unico blocco per evitare che vengano visualizzati grafici intermedi o parziali. Se non è aperto un progetto Python con un altro ambiente selezionato, Visual Studio apre una finestra **interattiva** per qualsiasi ambiente sia selezionato come predefinito nella finestra **Ambienti Python**.
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -77,12 +77,12 @@ Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaco
 
     ![Invio di codice dall'editor alla finestra interattiva](media/ipython-repl-05.png)
 
-1. Per visualizzare i grafici all'esterno della finestra interattiva, eseguire il codice invece di usare il comando **Debug > Avvia senza eseguire debug**.
+1. Per visualizzare i grafici all'esterno della finestra **interattiva**, eseguire il codice invece di usare il comando **Debug** > **Avvia senza eseguire debug**.
 
 In IPython sono disponibili molte altre funzionalità utili, ad esempio l'escape alla shell di sistema, la sostituzione delle variabili, l'acquisizione di output e così via. Per altre informazioni, vedere la [documentazione di IPython](http://ipython.org/documentation.html).
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="see-also"></a>Vedere anche
 
 - Per usare Jupyter facilmente e senza installazione, provare la versione gratuita del [servizio ospitato Azure Notebooks](https://notebooks.azure.com/) che consente di mantenere e condividere i blocchi appunti con altri utenti.
 
-- È anche possibile eseguire Jupyter (precedentemente noto come IPython) nella propria macchina virtuale Windows o Linux in Azure. Per informazioni dettagliate, vedere [Creazione di una macchina virtuale di Azure, installazione di Jupyter ed esecuzione di Jupyter Notebook in Azure](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- Il servizio [Data Science Virtual Machine di Azure](/azure/machine-learning/data-science-virtual-machine/overview) viene pre-configurato anche per eseguire i notebook Jupyter con un'ampia gamma di altri strumenti di data science.

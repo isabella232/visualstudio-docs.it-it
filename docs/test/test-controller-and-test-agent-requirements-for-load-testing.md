@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178491"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380805"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisiti del controller di test e dell'agente di test per il test di carico
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisiti del controller e dell'agente di test per il test di carico
 
 In Visual Studio sono integrati diversi tipi di test, tra cui unit test, test prestazioni Web, test di carico e test manuali. Visual Studio consente agli utenti di Visual Studio Application Lifecycle Management di eseguire test sui computer remoti usando un test controller e uno o più agenti. Vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
@@ -39,7 +39,7 @@ Nella tabella seguente sono riportati i requisiti hardware consigliati per la di
 |N x 30 computer nell'ambiente di test. Include agenti e server sottoposti a test.|Test Controller|N processori a 2,6 GHz|||
 
 > [!NOTE]
-> Il numero di utenti virtuali varia notevolmente da test a test. Una delle cause principali di questa varianza è attribuibile ai *tempi interazione utente* o ritardi utente. Per altre informazioni, vedere [Modifica dei tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md). In un test di carico i test Web sono generalmente più efficienti e generano un carico maggiore rispetto agli unit test. I numeri nella tabella precedente sono validi per l'esecuzione di test Web con tempi interazione utente di 3-5 secondi in una tipica applicazione Web.
+> Il numero di utenti virtuali varia notevolmente da test a test. Una delle cause principali di questa varianza è attribuibile ai *tempi interazione utente* o ritardi utente. Per altre informazioni, vedere [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md). In un test di carico i test Web sono generalmente più efficienti e generano un carico maggiore rispetto agli unit test. I numeri nella tabella precedente sono validi per l'esecuzione di test Web con tempi interazione utente di 3-5 secondi in una tipica applicazione Web.
 
 Le linee guida riportate qui vengono fornite a titolo generale per la pianificazione hardware. Le prestazioni del test variano notevolmente a seconda della quantità di dati di test e del numero di agenti di test. Per gli agenti di test la velocità della CPU e la memoria disponibile limitano il carico di test. I controller di test necessitano di risorse maggiori a seconda del numero di agenti di test e della quantità di dati coinvolti nei test.
 
@@ -57,7 +57,7 @@ Per evitare confusione e semplificare le operazioni, è consigliabile configurar
 
 ## <a name="monitor-agent-resources"></a>Monitorare le risorse dell'agente
 
-È possibile monitorare i computer dell'agente per determinarne le esigenze in termini di risorse osservando i processi di **QTAgent\*.exe** che vengono eseguiti e scalati durante i test. Il più frequente collo di bottiglia nei processi QTAgent*.exe è l'utilizzo della CPU. Se l'utilizzo della CPU è costantemente superiore al 90%, è un'indicazione che l'agente è sovraccarico. Un altro collo di bottiglia frequente è l'utilizzo memoria. Per i test complessi, il monitoraggio di queste risorse può aiutare a determinare se è necessario aumentare le risorse dei computer o distribuire i test in modo diverso.
+È possibile monitorare i computer dell'agente per determinarne le esigenze in termini di risorse osservando i processi di *QTAgent\*.exe* che vengono eseguiti e scalati durante i test. Il più frequente collo di bottiglia nei processi *QTAgent\*.exe* è l'uso della CPU. Se l'utilizzo della CPU è costantemente superiore al 90%, è un'indicazione che l'agente è sovraccarico. Un altro collo di bottiglia frequente è l'utilizzo memoria. Per i test complessi, il monitoraggio di queste risorse può aiutare a determinare se è necessario aumentare le risorse dei computer o distribuire i test in modo diverso.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751650"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382396"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente
 
@@ -38,23 +38,23 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 7.  Scegliere **OK**.
 
-     Verrà aperto WPF Designer per Visual Studio e la finestra principale del progetto.
+     Verrà aperto **WPF Designer per Visual Studio** e la finestra principale del progetto.
 
 8.  Aprire la casella degli strumenti, se non è già aperta. Scegliere il menu **Visualizza** e quindi **Casella degli strumenti**.
 
 9. Nella sezione **Tutti i controlli di WPF** trascinare i controlli **Button**, **CheckBox** e **ProgressBar** su MainWindow nell'area di progettazione.
 
-10. Selezionare il controllo Button. Nella finestra Proprietà modificare il valore della proprietà **Name** da \<No Name> a button1. Modificare quindi il valore della proprietà **Content** da Button a Start.
+10. Selezionare il controllo **Button**. Nella finestra **Proprietà** modificare il valore della proprietà **Name** da \<No Name> a button1. Modificare quindi il valore della proprietà **Content** da Button a Start.
 
-11. Selezionare il controllo ProgressBar. Nella finestra Proprietà modificare il valore della proprietà **Name** da \<No Name> a progressBar1. Modificare quindi il valore della proprietà **Maximum** da **100** a **10000**.
+11. Selezionare il controllo **ProgressBar**. Nella finestra **Proprietà** modificare il valore della proprietà **Name** da \<No Name> a progressBar1. Modificare quindi il valore della proprietà **Maximum** da **100** a **10000**.
 
-12. Selezionare il controllo Checkbox. Nella finestra Proprietà modificare il valore della proprietà **Name** da \<No Name> a checkBox1 e quindi deselezionare la proprietà **IsEnabled**.
+12. Selezionare il controllo **Checkbox**. Nella finestra **Proprietà** modificare il valore della proprietà **Name** da \<No Name> a checkBox1 e quindi deselezionare la proprietà **IsEnabled**.
 
      ![Applicazione WPF semplice](../test/media/codedui_wpfapp.png)
 
 13. Fare doppio clic sul pulsante per aggiungere un gestore eventi Click.
 
-     MainWindow.xmal.cs viene visualizzato nell'editor del codice con il cursore nel nuovo metodo button1_Click.
+     *MainWindow.xmal.cs* viene visualizzato nell'editor del codice con il cursore nel nuovo metodo button1_Click.
 
 14. Nella parte superiore della classe MainWindow aggiungere un delegato, che verrà usato per l'indicatore di stato. Per aggiungere il delegato, aggiungere il codice seguente:
 
@@ -129,7 +129,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 1. Nel riquadro centrale selezionare il modello **Progetto di test codificato dell'interfaccia utente**.
 
    > [!NOTE]
-   > Se non viene visualizzato il modello **progetto di test codificato dell'interfaccia utente**, è necessario [installare il componente di test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Se non viene visualizzato il modello **Progetto di test codificato dell'interfaccia utente**, è necessario [installare il componente di test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. Scegliere **OK**.
 
@@ -141,7 +141,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
      Viene visualizzata la finestra di dialogo **UIMap – Generatore di test codificati dell'interfaccia utente** e Visual Studio è ridotto a icona.
 
-     Per altre informazioni sulle opzioni disponibili nella finestra di dialogo, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md).
+     Per altre informazioni sulle opzioni disponibili nella finestra di dialogo, vedere [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md).
 
 1. Scegliere **Avvia registrazione** nella finestra di dialogo **UIMap - Generatore di test codificati dell'interfaccia utente**.
 
@@ -314,7 +314,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 10. In **Esplora soluzioni** aprire il file *UIMap.Designer.cs*.
 
-11. Nel file UIMap.Designer.cs individuare la proprietà **UIStartButton1**. Si noti che `SearchProperties` è impostato su `"buttonA"`:
+11. Nel file *UIMap.Designer.cs* individuare la proprietà **UIStartButton1**. Si noti che `SearchProperties` è impostato su `"buttonA"`:
 
     ```csharp
     public WpfButton UIStartButton1
@@ -334,7 +334,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
             }
     ```
 
-     A questo punto è possibile modificare il test codificato dell'interfaccia utente in modo che venga usato il controllo appena mappato. Come evidenziato nella procedura precedente, se si desidera eseguire l'override di metodi o proprietà nel test codificato dell'interfaccia utente, è necessario effettuare questa operazione nel file UIMap.cs.
+     A questo punto è possibile modificare il test codificato dell'interfaccia utente in modo che venga usato il controllo appena mappato. Come evidenziato nella procedura precedente, se si intende eseguire l'override di metodi o proprietà nel test codificato dell'interfaccia utente, è necessario eseguire questa operazione nel file *UIMap.cs*.
 
 12. Nel file *UIMap.cs* aggiungere un costruttore e specificare la proprietà `SearchProperties` della proprietà `UIStartButton` per usare la proprietà `AutomationID` con un valore `"buttonA":`
 
@@ -353,9 +353,9 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 ## <a name="videos"></a>Video
 
-![collegamento a video](../data-tools/media/playvideo.gif) [Introduzione ai test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230573)
+![collegamento a video](../data-tools/media/playvideo.gif) [Get started with coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230573)(Introduzione ai test codificati dell'interfaccia utente)
 
-![collegamento a video](../data-tools/media/playvideo.gif) [Manutenzione e debug di test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230574)
+![collegamento a video](../data-tools/media/playvideo.gif) [Maintenance and debugging of coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230574)(Manutenzione e debug di test codificati dell'interfaccia utente)
 
 ![collegamento a video](../data-tools/media/playvideo.gif) [Codifica manuale dei test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230575)
 
@@ -367,4 +367,4 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Modifica di test codificati dell'interfaccia utente con l'editor di test codificato dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+- [Modificare test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

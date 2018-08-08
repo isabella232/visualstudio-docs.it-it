@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977791"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382334"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -25,7 +25,7 @@ Usare **Esplora test** per eseguire unit test da Visual Studio o da progetti di 
 
 Visual Studio include i framework di unit test Microsoft sia per il codice gestito sia per quello nativo. Tuttavia, **Esplora test** può eseguire anche qualsiasi framework di unit test in cui sia implementato un adattatore di Esplora test. Per altre informazioni sull'installazione di framework di unit test di terze parti, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
-**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET Framework, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET Framework, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++. Per altre informazioni, vedere [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md).
+**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET Framework, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET Framework, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++. Per altre informazioni, vedere [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
@@ -35,7 +35,7 @@ Quando si compila il progetto di test, i test vengono visualizzati in Esplora te
 
 Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi predefiniti **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile modificare la modalità con cui Esplora test raggruppa i test.
 
-È possibile eseguire molte delle operazioni di ricerca, organizzazione ed esecuzione dei test dalla barra degli strumenti di Esplora test.
+È possibile eseguire molte delle operazioni di ricerca, organizzazione ed esecuzione dei test dalla barra degli strumenti di **Esplora test**.
 
 ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute_toolbar.png)
 
@@ -51,13 +51,13 @@ Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i ri
 
 - Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
-Mentre il test viene eseguito, la barra Superato/Non superato nella parte superiore della finestra Esplora test mostra un'animazione. Al termine dell'esecuzione del test, la barra Superato/Non superato diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
+Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte superiore della finestra **Esplora test** visualizza un'animazione. Al termine dell'esecuzione del test, la barra **Superato/Non superato** diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 
 |Button|Descrizione|
 |-|-|
-|![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di Esplora test.|
+|![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
 ## <a name="view-test-results"></a>Visualizzare i risultati dei test
 
@@ -127,7 +127,7 @@ Esplora test consente di raggruppare i test in categorie predefinite. La maggior
 
 È possibile usare i filtri di Esplora Test per limitare i metodi di test nei progetti che vengono visualizzati ed eseguiti.
 
-Quando si digita una stringa nella casella di ricerca di Esplora test e si preme INVIO, l'elenco dei test viene filtrato per visualizzare solo i test i cui nomi completi contengono la stringa.
+Quando si digita una stringa nella casella di ricerca **Esplora test** e si preme **INVIO**, l'elenco dei test viene filtrato per visualizzare solo i test i cui nomi completi contengono la stringa.
 
 Per filtrare in base a un criterio diverso:
 
@@ -162,15 +162,15 @@ Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test 
 
 ## <a name="create-custom-playlists"></a>Creare playlist personalizzate
 
- È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco saranno visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test** .
+ È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco vengono visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test** .
 
  ![Scegliere una playlist](../test/media/ute_playlist.png)
 
- **Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist**, **Nuova playlist**dal menu di scelta rapida. Salvare il file con il nome e il percorso specificati nella finestra di dialogo **Crea nuova playlist** .
+ **Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** > **Nuova playlist** dal menu di scelta rapida. Salvare il file con il nome e il percorso specificati nella finestra di dialogo **Crea nuova playlist** .
 
  **Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist**dal menu di scelta rapida e quindi scegliere la playlist a cui aggiungere i test.
 
- **Per aprire una playlist**, scegliere Test, Playlist dal menu di Visual Studio e quindi scegliere nell'elenco delle playlist usate di recente oppure scegliere Apri playlist per specificare il nome e il percorso della playlist.
+ **Per aprire una playlist**, scegliere **Test** > **Playlist** dal menu di Visual Studio e quindi scegliere nell'elenco delle playlist usate di recente oppure scegliere **Apri playlist** per specificare il nome e il percorso della playlist.
 
  Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
@@ -187,11 +187,11 @@ Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test 
 
 2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 
- Per altre informazioni sul debugger, vedere [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).
+ Per altre informazioni sul debugger, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticare i problemi di prestazioni dei metodi di test
 
- Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora Test e quindi scegliere Profilo dal menu di scelta rapida. Vedere [Esplora prestazioni](../profiling/performance-explorer.md).
+ Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora Test e quindi scegliere **Profilo** dal menu di scelta rapida. Vedere [Esplora prestazioni](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizzare il code coverage di unit test
 
@@ -207,9 +207,9 @@ Per eseguire il code coverage per i metodi di test in una soluzione:
 
     - **Tutti i test** esegue tutti i metodi di test nella soluzione.
 
-La finestra Risultati code coverage mostra la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
+La finestra **Risultati code coverage** visualizza la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
 
-Per altre informazioni, vedere [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Per altre informazioni, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="test-shortcuts"></a>Tasti di scelta rapida per i test
 
@@ -217,8 +217,8 @@ I test possono essere eseguiti da **Esplora test** facendo clic nell'editor di c
 
 |Comandi frequenti| Tasti di scelta rapida|
 |--------------|------------------------|
-|TestExplorer.DebugAllTestsInContext|CTRL+R, CTRL+T|
-|TestExplorer.RunAllTestsInContext|CTRL+R, T|
+|TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **CTRL**+**T**|
+|TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
 
 > [!NOTE]
 > Non è possibile eseguire un test in una classe astratta, poiché i test vengono solo definiti nelle classi astratte ma non ne viene creata l'istanza. Per eseguire i test nelle classi astratte, creare una classe che deriva dalla classe astratta.

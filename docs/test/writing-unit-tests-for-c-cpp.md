@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235316"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341372"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Scrivere unit test per C/C++ in Visual Studio
 
@@ -34,7 +34,7 @@ Oltre ai framework installati, è possibile scrivere adattatori di test personal
 
 **Visual Studio 2017 versione 15.5**
 
-- L'**adattatore per Google Test** è incluso come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++**. Questo adattatore include un modello di progetto che è possibile aggiungere a una soluzione tramite il menu di scelta rapida **Aggiungi nuovo progetto** nel nodo della soluzione in **Esplora soluzioni** e le opzioni possono essere configurate tramite **Strumenti | Opzioni**. Per altre informazioni, vedere [How to use Google Test for C++ in Visual Studio](how-to-use-google-test-for-cpp.md) (Come usare Google Test per C++ in Visual Studio).
+- L'**adattatore per Google Test** è incluso come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++**. Questo adattatore include un modello di progetto che è possibile aggiungere a una soluzione tramite il menu di scelta rapida **Aggiungi nuovo progetto** nel nodo della soluzione in **Esplora soluzioni** e opzioni configurabili tramite **Strumenti** > **Opzioni**. Per altre informazioni, vedere [How to use Google Test for C++ in Visual Studio](how-to-use-google-test-for-cpp.md) (Come usare Google Test per C++ in Visual Studio).
 
 - **Boost.Test** è incluso come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++**. È integrato in **Esplora test** ma attualmente non include un modello di progetto, pertanto è necessario configurarlo manualmente. Per altre informazioni, vedere [How to use Boost.Test for C++ in Visual Studio](how-to-use-boost-test-for-cpp.md) (Come usare Boost.Test per C++ in Visual Studio).
 
@@ -50,28 +50,28 @@ Le sezioni seguenti illustrano i passaggi di base per iniziare con il testing un
 
 ### <a name="create-a-test-project"></a>Creare un progetto di test
 
-I test vengono definiti ed eseguiti all'interno di uno o più progetti di test inclusi nella stessa soluzione del codice da testare. Per aggiungere un nuovo progetto di test a una soluzione esistente, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** e scegliere **Aggiungi | Nuovo progetto**. Nel riquadro sinistro scegliere **Progetto di test Visual C++** e scegliere uno dei tipi di progetto nel riquadro centrale. La figura seguente mostra i progetti di test disponibili quando è installato il carico di lavoro **Sviluppo di applicazioni desktop con C++**:
+I test vengono definiti ed eseguiti all'interno di uno o più progetti di test inclusi nella stessa soluzione del codice da testare. Per aggiungere un nuovo progetto di test a una soluzione esistente, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**. Nel riquadro sinistro scegliere **Progetto di test Visual C++** e scegliere uno dei tipi di progetto nel riquadro centrale. La figura seguente mostra i progetti di test disponibili quando è installato il carico di lavoro **Sviluppo di applicazioni desktop con C++**:
 
 ![Progetti di test C++](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Creare riferimenti ad altri progetti nella soluzione
 
-Per abilitare il codice di test per l'accesso alle funzioni nel progetto da testare, aggiungere un riferimento al progetto nel progetto di test. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Aggiungi | Riferimento**. Nella finestra di dialogo scegliere quindi i progetti da testare.
+Per abilitare il codice di test per l'accesso alle funzioni nel progetto da testare, aggiungere un riferimento al progetto nel progetto di test. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **Riferimento**. Nella finestra di dialogo scegliere quindi i progetti da testare.
 
 ![Aggiungi riferimento](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Aggiungere direttive #include per il file di intestazione
 
-Nel file cpp dell'unit test aggiungere quindi una direttiva `#include` per tutti i file di intestazione che dichiarano i tipi e le funzioni da testare. Digitare `#include "`. Verrà attivato IntelliSense per facilitare la scelta. Ripetere per eventuali intestazioni aggiuntive.
+Nel file con estensione *cpp* dell'unit test aggiungere quindi una direttiva `#include` per tutti i file di intestazione che dichiarano i tipi e le funzioni da testare. Digitare `#include "`. Verrà attivato IntelliSense per facilitare la scelta. Ripetere per eventuali intestazioni aggiuntive.
 
 ![Aggiungere direttive include](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Scrivere i metodi di test
 
 > [!NOTE]
-> Questa sezione mostra la sintassi per il framework di testing unità Microsoft per C/C++. La documentazione è disponibile in [Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Per la documentazione di Google Test, vedere [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Introduzione a Google Test). Per Boost.Test, vedere [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Libreria di test Boost: il framework di unit test).
+> Questa sezione mostra la sintassi per il framework di testing unità Microsoft per C/C++. La documentazione è disponibile in [Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Per la documentazione di Google Test, vedere [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Introduzione a Google Test). Per Boost.Test, vedere [Boost Test library: The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Libreria di test Boost: framework di unit test).
 
-Il file con estensione cpp nel progetto di test include una classe stub e un metodo definiti come esempio per la scrittura del codice di test. Si noti che le firme usano le macro TEST_CLASS e TEST_METHOD, che rendono individuabili i metodi dalla finestra Esplora test.
+Il file con estensione *cpp* nel progetto di test include una classe stub e un metodo definiti come esempio per la scrittura del codice di test. Si noti che le firme usano le macro TEST_CLASS e TEST_METHOD, che rendono individuabili i metodi dalla finestra **Esplora test**.
 
 ![Aggiungere direttive include](media/cpp-write-test-methods.png)
 
@@ -102,7 +102,7 @@ Nell'esempio precedente, il risultato della chiamata `Assert::AreEqual` determin
 
 1. Se non è visibile alcun test nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul relativo nodo in **Esplora soluzioni** e scegliendo **Compila** o **Ricompila**.
 
-1. In Esplora test scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati. Dopo aver eseguito tutti i test, la finestra mostra i test superati e quelli non superati:
+1. In **Esplora test** scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati. Dopo aver eseguito tutti i test, la finestra mostra i test superati e quelli non superati:
 
 ![Esplora test dopo l'esecuzione dei test](media/cpp-test-explorer-passed.png)
 
@@ -110,7 +110,7 @@ Per i test non superati, il messaggio include dettagli utili per diagnosticare l
 
 Per altre informazioni sull'uso di **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md).
 
-Per le procedure consigliate correlate al testing unità, vedere [Nozioni fondamentali sugli unit test](unit-test-basics.md).
+Per le procedure consigliate associate agli unit test, vedere [Nozioni fondamentali sugli unit test](unit-test-basics.md).
 
 ## <a name="see-also"></a>Vedere anche
 

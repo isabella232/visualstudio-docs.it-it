@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089802"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388137"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
 
@@ -34,7 +34,7 @@ In questo passaggio viene descritto come:
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>Passaggio 3-1: Acquisire familiarità con i modelli di elementi
 
-Quando si sviluppa un'app Flask, si aggiungono in genere molti altri file Python, HTML, CSS e JavaScript. Per ogni tipo di file (come pure per altri file, come `web.config`, che potrebbero essere necessari per la distribuzione), Visual Studio offre comodi [modelli di elementi](python-item-templates.md) da cui iniziare.
+Quando si sviluppa un'app Flask, si aggiungono in genere molti altri file Python, HTML, CSS e JavaScript. Per ogni tipo di file (come pure per altri file, come *web.config*, che potrebbero essere necessari per la distribuzione), Visual Studio offre comodi [modelli di elementi](python-item-templates.md) da cui iniziare.
 
 Per visualizzare i modelli disponibili, passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla cartella in cui si vuole creare l'elemento e scegliere **Aggiungi** > **Nuovo elemento**:
 
@@ -42,27 +42,27 @@ Per visualizzare i modelli disponibili, passare a **Esplora soluzioni**, fare cl
 
 Per usare un modello, selezionare il modello desiderato, specificare un nome per il file e selezionare **OK**. Aggiungendo un elemento in questo modo il file viene aggiunto automaticamente al progetto di Visual Studio e vengono contrassegnate le modifiche per il controllo del codice sorgente.
 
-### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Domanda: In che modo Visual Studio può sapere quale modelli di elementi offrire?
+### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Domanda: In che modo Visual Studio individua i modelli di elementi da offrire?
 
-Risposta: Il file di progetto di Visual Studio (`.pyproj`) contiene un identificatore del tipo di progetto che contrassegna il progetto come progetto Python. Visual Studio usa questo identificatore di tipo per mostrare solo i modelli di elementi appropriati per il tipo di progetto. In questo modo, Visual Studio può fornire un set completo di modelli di elementi per numerosi tipi di progetti senza che sia necessario che l'utente li esamini tutti ogni volta.
+Risposta: Il file di progetto di Visual Studio (*.pyproj*) contiene un identificatore del tipo di progetto che lo contrassegna come progetto Python. Visual Studio usa questo identificatore di tipo per mostrare solo i modelli di elementi appropriati per il tipo di progetto. In questo modo, Visual Studio può fornire un set completo di modelli di elementi per numerosi tipi di progetti senza che sia necessario che l'utente li esamini tutti ogni volta.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Passaggio 3-2: Rendere disponibili file statici dall'app
 
 In un'app Web compilata con Python (usando qualsiasi framework), i file Python vengono sempre eseguiti nel server dell'host Web e non vengono mai trasmessi al computer dell'utente. Altri file, tuttavia, ad esempio CSS e JavaScript, vengono usati esclusivamente dal browser, quindi il server host si limita a fornirli così come sono ogni volta che vengono richiesti. Tali file sono detti file "statici" e Flask può renderli automaticamente disponibili senza che sia necessario scrivere codice. All'interno dei file HTML, ad esempio, è possibile fare riferimento ai file statici usando un percorso relativo nel progetto. Nella prima sezione di questo passaggio viene aggiunto un file CSS al modello di pagina esistente.
 
-Se è necessario creare un file statico dal codice, ad esempio usando un'implementazione di endpoint API, Flask offre un metodo pratico che consente di far riferimento ai file usando percorsi relativi in una cartella denominata `static` (nella radice del progetto). La seconda sezione di questo passaggio illustra tale metodo usando un file di dati statico semplice.
+Se è necessario rendere disponibile un file statico dal codice, ad esempio tramite l'implementazione di un endpoint API, Flask offre un metodo pratico che consente di far riferimento ai file usando percorsi relativi all'interno di una cartella denominata *static* (nella radice del progetto). La seconda sezione di questo passaggio illustra tale metodo usando un file di dati statico semplice.
 
-In ogni caso è possibile organizzare i file in `static` come si vuole.
+In ogni caso è possibile organizzare i file in *static* come si vuole.
 
 ### <a name="use-a-static-file-in-a-template"></a>Usare un file statico in un modello
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella "HelloFlask" nel progetto di Visual Studio, selezionare **Aggiungi** > **Nuova cartella** e assegnare alla cartella il nome `static`.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **HelloFlask** nel progetto di Visual Studio, selezionare **Aggiungi** > **Nuova cartella** e assegnare alla cartella il nome `static`.
 
-1. Fare clic con il pulsante destro del mouse sulla cartella `static` e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il modello "Foglio di stile", assegnare al file il nome `site.css` e selezionare **OK**. Il file `site.css` viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
+1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il modello **Foglio di stile**, assegnare al file il nome `site.css` e selezionare **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
 
     ![Struttura di file statici come visualizzato in Esplora soluzioni](media/flask/step03-static-file-structure.png)
 
-1. Sostituire i contenuti di `site.css` con il codice seguente e salvare il file:
+1. Sostituire il contenuto di *site.css* con il codice seguente e salvare il file:
 
     ```css
     .message {
@@ -71,7 +71,7 @@ In ogni caso è possibile organizzare i file in `static` come si vuole.
     }
     ```
 
-1. Sostituire i contenuti del file `templates/index.html` dell'app con il codice seguente, che sostituisce l'elemento `<strong>` usato nel passaggio 2 con un elemento `<span>` che fa riferimento alla classe di stile `message`. L'uso di una classe di stile in questo modo offre maggiore flessibilità nell'applicazione degli stili all'elemento.
+1. Sostituire il contenuto del file *templates/index.html* dell'app con il codice seguente che sostituisce l'elemento `<strong>` usato nel passaggio 2 con un elemento `<span>` che fa riferimento alla classe di stile `message`. L'uso di una classe di stile in questo modo offre maggiore flessibilità nell'applicazione degli stili all'elemento.
 
     ```html
     <html>
@@ -89,11 +89,11 @@ In ogni caso è possibile organizzare i file in `static` come si vuole.
 
 ### <a name="serve-a-static-file-from-code"></a>Usare un file statico dal codice
 
-Flask offre una funzione denominata `serve_static_file` che può essere chiamata dal codice per fare riferimento a qualsiasi file all'interno della cartella `static` del progetto. Il processo seguente crea un endpoint API semplice che restituisce un file di dati statico.
+Flask offre una funzione denominata `serve_static_file` che può essere chiamata dal codice per fare riferimento a qualsiasi file all'interno della cartella *static* del progetto. Il processo seguente crea un endpoint API semplice che restituisce un file di dati statico.
 
-1. Se non è già stato fatto, creare una cartella `static`: in **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella "HelloFlask" nel progetto di Visual Studio, selezionare **Aggiungi** > **Nuova cartella** e assegnare alla cartella il nome `static`.
+1. Se non è già stato fatto, creare una cartella *static*: in **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **HelloFlask** nel progetto di Visual Studio, selezionare **Aggiungi** > **Nuova cartella** e assegnare alla cartella il nome `static`.
 
-1. Nella cartella `static` creare un file di dati JSON statico denominato `data.json` con il contenuto seguente (sono dati di esempio senza significato):
+1. Nella cartella *static* creare un file di dati JSON statico denominato *data.json* con il contenuto seguente (sono dati di esempio senza significato):
 
     ```json
     {
@@ -103,7 +103,7 @@ Flask offre una funzione denominata `serve_static_file` che può essere chiamata
     }
     ```
 
-1. In `views.py` aggiungere una funzione con la route/api/dati che restituisce il file di dati statico usando il metodo `send_static_file`:
+1. In *views.py* aggiungere una funzione con la route /api/data che restituisce il file di dati statico usando il metodo `send_static_file`:
 
     ```python
     @app.route('/api/data')
@@ -115,11 +115,11 @@ Flask offre una funzione denominata `serve_static_file` che può essere chiamata
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Domanda: Ci sono convenzioni per organizzare i file statici?
 
-Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartella `static` come si vuole. Un modo tipico per organizzare i file statici consiste nel creare sottocartelle denominate `fonts`, `scripts` e `content` (per i fogli di stile e qualsiasi altro file).
+Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartella *static* come si vuole. Un modo tipico per organizzare i file statici consiste nel creare sottocartelle denominate *fonts*, *scripts* e *content* (per i fogli di stile e qualsiasi altro file).
 
-### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Domanda: come si gestiscono le variabili di URL e i parametri di query in un'API?
+### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Domanda: Come si gestiscono le variabili di URL e i parametri di query in un'API?
 
-Risposta: vedere la risposta nel passaggio 1-4 per [Domanda: come funziona Flask con route dell'URL e parametri di query variabili?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Risposta: Vedere la risposta al passaggio 1-4 per [Domanda: Come funziona Flask con route di URL e parametri di query variabili?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Passaggio 3-3: Aggiungere una pagina all'app
 
@@ -127,16 +127,16 @@ L'aggiunta di un'altra pagina all'app comporta quanto segue:
 
 - Aggiunta di una funzione Python che definisce la visualizzazione.
 - Aggiunta di un modello per il markup della pagina.
-- Aggiunta del routing necessario al file `urls.py` del progetto Django.
+- Aggiunta del routing necessario al file *urls.py* del progetto Flask.
 
 I passaggi seguenti aggiungono una pagina "About" al progetto "HelloFlask", nonché collegamenti a tale pagina dalla home page:
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella `templates`, scegliere **Aggiungi** > **Nuovo elemento**, selezionare il modello di elemento "Pagina HTML", assegnare al file il nome `about.html` e selezionare **OK**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **templates**, selezionare **Aggiungi** > **Nuovo elemento**, selezionare il modello di elemento **Pagina HTML**, assegnare al file il nome `about.html` e selezionare **OK**.
 
     > [!Tip]
     > Se il comando **Nuovo elemento** non è visualizzato nel menu **Aggiungi**, verificare di aver arrestato l'app in modo che Visual Studio esca dalla modalità di debug.
 
-1. Sostituire i contenuti di `about.html` con il markup seguente (si sostituisce il collegamento esplicito alla home page con una barra di spostamento semplice nel passaggio 3-4):
+1. Sostituire il contenuto di *about.html* con il markup seguente (il collegamento esplicito alla home page viene sostituito con una barra di spostamento semplice nel passaggio 3-4):
 
     ```html
     <html>
@@ -151,7 +151,7 @@ I passaggi seguenti aggiungono una pagina "About" al progetto "HelloFlask", nonc
     </html>
     ```
 
-1. Aprire il file `views.py` dell'app e aggiungere una funzione denominata `about` che usa il modello:
+1. Aprire il file *views.py* dell'app e aggiungere una funzione denominata `about` che usa il modello:
 
     ```python
     @app.route('/about')
@@ -162,13 +162,13 @@ I passaggi seguenti aggiungono una pagina "About" al progetto "HelloFlask", nonc
             content = "Example app page for Flask.")
     ```
 
-1. Aprire il file `templates/index.html` e aggiungere la riga seguente all'interno dell'elemento `<body>` per inserire un collegamento alla pagina About (anche in questo caso si sostituisce questo collegamento con una barra di spostamento nel passaggio 3-4):
+1. Aprire il file *templates/index.html* e aggiungere la riga seguente all'interno dell'elemento `<body>` per inserire un collegamento alla pagina About (anche in questo caso il collegamento viene sostituito con una barra di spostamento nel passaggio 3-4):
 
     ```html
     <div><a href="about">About</a></div>
     ```
 
-1. Salvare tutti i file con il comando di menu **File** > **Salva tutto** oppure premere CTRL+MAIUSC+S. Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
+1. Salvare tutti i file con il comando di menu **File** > **Salva tutto** oppure premere **CTRL**+**MAIUSC**+**S**. Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
 
 1. Eseguire il progetto per osservare i risultati e controllare lo spostamento tra le pagine. Al termine, arrestare l'app.
 
@@ -186,13 +186,13 @@ Il sistema di modelli di Flask (Jinja per impostazione predefinita) offre due mo
 
 - L'*ereditarietà* usa l'elemento `{% extends <template_path> %}` all'inizio di un modello di pagina per specificare un modello di base condiviso su cui è basato il modello di riferimento. L'ereditarietà viene comunemente usata per definire un layout condiviso, la barra di spostamento e altre strutture per le pagine dell'app, in modo che i modelli di riferimento debbano solo aggiungere o modificare aree specifiche del modello di base, dette *blocchi*.
 
-In entrambi i casi `<template_path>` è relativo alla cartella `templates` dell'app (è consentito anche l'uso di `../` o `./`).
+In entrambi i casi `<template_path>` è relativo alla cartella *templates* dell'app (è consentito anche l'uso di `../` o `./`).
 
 Un modello di base delinea i *blocchi* usando i tag `{% block <block_name> %}` e `{% endblock %}`. Se un modello di riferimento usa quindi tag con lo stesso nome di blocco, il contenuto del blocco esegue l'override di quello del modello di base.
 
 I passaggi seguenti illustrano l'ereditarietà:
 
-1. Nella cartella `templates` dell'app creare un nuovo file HTML (usando il menu di scelta rapida **Aggiungi** > **Nuovo elemento** o **Aggiungi** > **Pagina HTML**) denominato `layout.html` e sostituirne il contenuto con il markup riportato di seguito. È possibile notare che questo modello contiene un blocco denominato "content" che è quello che le pagine di riferimento devono sostituire:
+1. Nella cartella *templates* dell'app creare un nuovo file HTML (usando il menu di scelta rapida **Aggiungi** > **Nuovo elemento** o **Aggiungi** > **Pagina HTML**) denominato *layout.html* e sostituirne il contenuto con il markup riportato di seguito. È possibile notare che questo modello contiene un blocco denominato "content" che è quello che le pagine di riferimento devono sostituire:
 
     ```html
     <!DOCTYPE html>
@@ -222,7 +222,7 @@ I passaggi seguenti illustrano l'ereditarietà:
     </html>
     ```
 
-1. Aggiungere gli stili seguenti al file `static/site.css` dell'app (questa procedura dettagliata non mira a illustrare la progettazione reattiva e questi stili servono semplicemente per generare un risultato interessante):
+1. Aggiungere gli stili seguenti al file *static/site.css* dell'app (questa procedura dettagliata non mira a illustrare la progettazione reattiva e questi stili servono semplicemente per generare un risultato interessante):
 
     ```css
     .navbar {
@@ -254,7 +254,7 @@ I passaggi seguenti illustrano l'ereditarietà:
     }
     ```
 
-1. Modificare `templates/index.html` per fare riferimento al modello di base ed eseguire l'override del blocco di contenuto. È possibile notare che usando l'ereditarietà questo modello diventa semplice:
+1. Modificare *templates/index.html* per fare riferimento al modello di base ed eseguire l'override del blocco di contenuto. È possibile notare che usando l'ereditarietà questo modello diventa semplice:
 
     ```html
     {% extends "layout.html" %}
@@ -263,7 +263,7 @@ I passaggi seguenti illustrano l'ereditarietà:
     {% endblock %}
     ```
 
-1. Modificare anche `templates/about.html` per fare riferimento al modello di base ed eseguire l'override del blocco di contenuto:
+1. Modificare anche *templates/about.html* per fare riferimento al modello di base ed eseguire l'override del blocco di contenuto:
 
     ```html
     {% extends "layout.html" %}

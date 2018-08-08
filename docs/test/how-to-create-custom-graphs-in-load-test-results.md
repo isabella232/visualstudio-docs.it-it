@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 633c309193c23834b4848e189fdf677f0abc8ef0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7de5d684b0a4299c2f3d90e4a00338c55d2d6870
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965125"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381999"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedura: creare grafici personalizzati nei risultati del test di carico
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedura: Creare grafici personalizzati nei risultati del test di carico
 
 È possibile progettare grafici che visualizzano specifiche informazioni sui risultati dei test di carico. Per progettare un grafico personalizzato, specificare i contatori del test di carico che verranno visualizzati sul grafico.
 
@@ -26,17 +26,17 @@ ms.locfileid: "31965125"
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Per creare un grafico personalizzato dei risultati del test di carico
 
-1.  Fare clic su **Aggiungi nuovo grafico** sulla barra degli strumenti del test di carico.
+1.  Fare clic su **Aggiungi nuovo grafico** sulla barra degli strumenti del **test di carico**.
 
      \- oppure -
 
-     Nell'analizzatore test di carico fare clic con il pulsante destro del mouse nel riquadro Contatori o in un grafico, quindi selezionare **Aggiungi grafico**.
+     Nell'**Analizzatore test di carico** fare clic con il pulsante destro del mouse nel riquadro **Contatori** o in un grafico, quindi selezionare **Aggiungi grafico**.
 
      Viene visualizzata la finestra di dialogo **Nome grafico**.
 
 2.  In **Nome grafico** digitare un nome per il grafico e scegliere **OK**.
 
-     Il nuovo grafico verrà visualizzato nell'analizzatore test di carico. nel pannello del grafico attualmente selezionato, sostituendo il grafico presente precedentemente nel pannello.
+     Il nuovo grafico viene visualizzato nell'**Analizzatore test di carico**. nel pannello del grafico attualmente selezionato, sostituendo il grafico presente precedentemente nel pannello.
 
 3.  Personalizzare il nuovo grafico aggiungendo i contatori. Per altre informazioni, vedere [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 

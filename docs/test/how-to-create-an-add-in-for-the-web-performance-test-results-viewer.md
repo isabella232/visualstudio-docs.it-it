@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177253"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381107"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
 
 È possibile estendere l'interfaccia utente per il **Visualizzatore risultati test prestazioni Web** usando gli spazi dei nomi seguenti:
 
@@ -30,7 +30,7 @@ Inoltre, è necessario aggiungere un riferimento alla DLL LoadTestPackage dispon
 
 -   Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**, è necessario creare un controllo utente e un componente aggiuntivo per Visual Studio. Nelle procedure seguenti viene illustrato come creare il componente aggiuntivo e il controllo utente nonché come implementare le classi necessarie per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**.
 
-## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Creare o aprire una soluzione contenente un'applicazione Web ASP.NET ed un progetto di test di carico e prestazioni Web
+## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Creare o aprire una soluzione contenente un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web
 
 ### <a name="to-prepare-for-extending-the-web-performance-test-results-viewer"></a>Per preparare l'estensione del Visualizzatore risultati test prestazioni Web
 
@@ -41,27 +41,27 @@ Creare o aprire una soluzione non di produzione con la quale sperimentare che co
 
 ## <a name="create-a-visual-studio-add-in"></a>Creare un componente aggiuntivo per Visual Studio
 
-Un componente aggiuntivo è una DLL compilata che viene eseguita nell'ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio. La compilazione garantisce la protezione della proprietà intellettuale e consente il miglioramento delle prestazioni. Sebbene sia possibile creare manualmente componenti aggiuntivi, l'utilizzo della Creazione guidata componente aggiuntivo rende l'operazione molto più semplice. La Creazione guidata componente aggiuntivo consente di generare un componente aggiuntivo di base completamente funzionale che può essere eseguito immediatamente dopo la creazione. Al termine della generazione del programma di base tramite la Creazione guidata componente aggiuntivo, sarà possibile aggiungere codice a tale programma e personalizzarlo.
+Un componente aggiuntivo è una DLL compilata che viene eseguita nell'ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio. La compilazione garantisce la protezione della proprietà intellettuale e consente il miglioramento delle prestazioni. Sebbene sia possibile creare manualmente componenti aggiuntivi, l'uso della **Creazione guidata componente aggiuntivo** rende l'operazione molto più semplice. La Creazione guidata componente aggiuntivo consente di generare un componente aggiuntivo di base completamente funzionale che può essere eseguito immediatamente dopo la creazione. Al termine della generazione del programma di base con la **Creazione guidata componente aggiuntivo**, è possibile aggiungere codice a tale programma e personalizzarlo.
 
- La procedura guidata del componente aggiuntivo consente di fornire un nome visualizzato e una descrizione per il componente aggiuntivo. Entrambi saranno visualizzati nella finestra di dialogo **Gestione componenti aggiuntivi**. Facoltativamente, è possibile scegliere di generare automaticamente nella procedura guidata il codice che aggiunge al menu **Strumenti** un comando per l'apertura del componente aggiuntivo. È anche possibile scegliere di visualizzare una finestra **Informazioni su** personalizzata per il componente aggiuntivo. Al termine della procedura guidata, si disporrà di un nuovo progetto con una sola classe tramite la quale viene implementato il componente aggiuntivo. Tale classe viene denominata Connect.
+ La **Creazione guidata componente aggiuntivo** consente di specificare un nome visualizzato e una descrizione per il componente aggiuntivo. Entrambi saranno visualizzati nella finestra di dialogo **Gestione componenti aggiuntivi**. Facoltativamente, è possibile scegliere di generare automaticamente nella procedura guidata il codice che aggiunge al menu **Strumenti** un comando per l'apertura del componente aggiuntivo. È anche possibile scegliere di visualizzare una finestra **Informazioni su** personalizzata per il componente aggiuntivo. Al termine della procedura guidata, si disporrà di un nuovo progetto con una sola classe tramite la quale viene implementato il componente aggiuntivo. Tale classe viene denominata Connect.
 
- Si utilizzerà **Gestione componenti aggiuntivi** alla fine di questo argomento.
+ Si utilizzerà **Gestione componenti aggiuntivi** alla fine di questo articolo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Per creare un componente aggiuntivo utilizzando la Creazione guidata componente aggiuntivo.
 
-1.  In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
+1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
 
-     Verrà visualizzata la finestra di dialogo Nuovo progetto.
+     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
 
 2.  In **Modelli installati** espandere **Altri tipi di progetto** e selezionare **Extensibility**.
 
 3.  Nell'elenco dei modelli selezionare **Componente aggiuntivo Visual Studio**.
 
-4.  In Nome digitare un nome per il componente aggiuntivo. Ad esempio, **WebPerfTestResultsViewerAddin**.
+4.  In **Nome** digitare un nome per il componente aggiuntivo. Ad esempio, **WebPerfTestResultsViewerAddin**.
 
 5.  Scegliere **OK**.
 
-     Verrà avviata la Creazione guidata componente aggiuntivo di Visual Studio.
+     Viene avviata la **Creazione guidata componente aggiuntivo** di Visual Studio.
 
 6.  Scegliere **Avanti**.
 
@@ -92,32 +92,32 @@ Un componente aggiuntivo è una DLL compilata che viene eseguita nell'ambiente d
 
 16. Le opzioni selezionate vengono visualizzate nella pagina **Riepilogo** per consentirne la revisione. Se il risultato è soddisfacente, scegliere **Fine** per creare il componente aggiuntivo. Se si vuole apportare delle modifiche, scegliere il pulsante **Indietro**.
 
-     Vengono creati la nuova soluzione e il progetto e il file Connect.cs per il nuovo componente aggiuntivo viene visualizzato nell'editor di codice.
+     Vengono creati la nuova soluzione e il progetto mentre il file *Connect.cs* per il nuovo componente aggiuntivo viene visualizzato nell'**editor di codice**.
 
-     Verrà aggiunto codice al file Connect.cs dopo la procedura riportata di seguito mediante la quale viene creato un controllo utente a cui farà riferimento questo progetto WebPerfTestResultsViewerAddin.
+     Si aggiungerà codice al file *Connect.cs* dopo la procedura riportata di seguito, che crea un controllo utente a cui farà riferimento questo progetto WebPerfTestResultsViewerAddin.
 
- Dopo aver creato un componente aggiuntivo, è necessario registrarlo con Visual Studio affinché possa essere attivato in **Gestione componenti aggiuntivi**. Questa operazione viene eseguita tramite un file XML con estensione addin.
+ Dopo aver creato un componente aggiuntivo, è necessario registrarlo con Visual Studio affinché possa essere attivato in **Gestione componenti aggiuntivi**. Questa operazione viene eseguita usando un file XML con estensione *addin*.
 
- In questo file con estensione addin sono incluse le informazioni richieste da Visual Studio per visualizzare il componente aggiuntivo in **Gestione componenti aggiuntivi**. All'avvio, Visual Studio ricerca nel percorso dei file con estensione addin eventuali file con estensione addin disponibili. Se ne viene individuato uno, Visual Studio legge il file XML e fornisce a **Gestione componenti aggiuntivi** le informazioni necessarie per l'avvio del componente aggiuntivo quando viene fatto clic su quest'ultimo.
+ In questo file *ADDIN* sono incluse le informazioni richieste da Visual Studio per visualizzare il componente aggiuntivo in **Gestione componenti aggiuntivi**. All'avvio, Visual Studio ricerca nel percorso dei file *ADDIN* eventuali file *ADDIN* disponibili. Se ne viene individuato uno, Visual Studio legge il file XML e fornisce a **Gestione componenti aggiuntivi** le informazioni necessarie per l'avvio del componente aggiuntivo quando viene fatto clic su quest'ultimo.
 
- Il file con estensione addin viene creato automaticamente quando si crea un componente aggiuntivo utilizzando la Creazione guidata componente aggiuntivo.
+ Il file *ADDIN* viene creato automaticamente quando si crea un componente aggiuntivo usando la **Creazione guidata componente aggiuntivo**.
 
 ### <a name="add-in-file-locations"></a>Percorsi dei file del componente aggiuntivo
 
-Tramite Creazione guidata componente aggiuntivo vengono create automaticamente due copie del file con estensione addin, come segue:
+La *Creazione guidata componente aggiuntivo* crea automaticamente due copie dei file **ADDIN**, come segue:
 
 |**Percorso del file con estensione addin**|**Descrizione**|
 |------------------------------|----------------------------|---------------------|
 |Cartella radice del progetto|Utilizzato per la distribuzione del progetto del componente aggiuntivo. Incluso nel progetto per facilitare le modifiche e impostato sul percorso locale per la distribuzione di tipo XCopy.|
 |Cartella del componente aggiuntivo|Utilizzata per l'esecuzione del componente aggiuntivo nell'ambiente di debug. Deve sempre indicare il percorso di output della configurazione della build corrente.|
 
-## <a name="create-a-windows-form-control-library-project"></a>Creare un progetto Libreria di controlli Windows Form.
+## <a name="create-a-windows-form-control-library-project"></a>Creare un progetto Libreria di controlli Windows Form
 
 Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa riferimento a un progetto Libreria di controlli Windows Form per creare un'istanza di una classe <xref:System.Windows.Forms.UserControl>.
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Per creare un controllo da utilizzare nel Visualizzatore risultati test Web
 
-1.  In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
+1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
 
@@ -132,9 +132,9 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 5.  Scegliere **OK**.
 
-     WebPerfTestResultsViewerControl del progetto della libreria di controlli Windows Form viene aggiunto in Esplora soluzioni e il file UserControl1.cs viene visualizzato nella modalità progettazione.
+     WebPerfTestResultsViewerControl del progetto della libreria di controlli Windows Form viene aggiunto in **Esplora soluzioni** e il file *UserControl1.cs* viene visualizzato nella modalità progettazione.
 
-6.  Dalla casella degli strumenti trascinare un oggetto <xref:System.Windows.Forms.DataGridView> sulla superficie di userControl1.
+6.  Dalla **casella degli strumenti** trascinare un oggetto <xref:System.Windows.Forms.DataGridView> sulla superficie di userControl1.
 
 7.  Fare clic sul glifo del tag azioni (![Glifo smart tag](../test/media/vs_winformsmttagglyph.gif)) nell'angolo superiore destro di <xref:System.Windows.Forms.DataGridView> e attenersi alla procedura seguente:
 
@@ -154,11 +154,11 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
     7.  Scegliere **Chiudi**.
 
-8.  Nella finestra Proprietà impostare la proprietà **(Nome)** di <xref:System.Windows.Forms.DataGridView> su **resultControlDataGridView**.
+8.  Nella finestra **Proprietà** impostare la proprietà **(Nome)** di <xref:System.Windows.Forms.DataGridView> su **resultControlDataGridView**.
 
 9. Fare clic con il pulsante destro del mouse sull'area di progettazione e selezionare **Visualizza codice**.
 
-     Il file UserControl1.cs verrà visualizzato nell'editor di codice.
+     Il file *UserControl1.cs* viene visualizzato nell'**editor di codice**.
 
 10. Modificare il nome della classe istanziata <xref:System.Windows.Forms.UserControl> da UserContro1 a resultControl:
 
@@ -173,15 +173,15 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
             }
     ```
 
-     Nella procedura seguente si aggiungerà codice al file Connect.cs del progetto WebPerfTestResultsViewerAddin che farà riferimento alla classe resultControl.
+     Nella procedura seguente si aggiungerà codice al file *Connect.cs* del progetto WebPerfTestResultsViewerAddin che farà riferimento alla classe resultControl.
 
-     Si aggiungerà ulteriore codice aggiuntivo al file Connect.cs in un secondo momento.
+     Si aggiungerà ulteriore codice aggiuntivo al file *Connect.cs* in un secondo momento.
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Aggiungere codice a WebPerfTestResultsViewerAddin
 
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Per aggiungere codice al componente aggiuntivo per Visual Studio per estendere il Visualizzatore risultati test Web
+### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Per aggiungere codice al componente aggiuntivo di Visual Studio per estendere il Visualizzatore risultati test Web
 
-1.  In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo **Riferimenti** nel progetto WebPerfTestResultsViewerAddin e selezionare **Aggiungi riferimento**.
+1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Riferimenti** nel progetto WebPerfTestResultsViewerAddin e selezionare **Aggiungi riferimento**.
 
 2.  Nella finestra di dialogo **Aggiungi riferimento** scegliere la scheda **.NET**.
 
@@ -193,7 +193,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 6.  Nella finestra di dialogo **Aggiungi riferimento** scegliere la scheda **Sfoglia**.
 
-7.  Scegliere l'elenco a discesa per **Cerca in**, passare a %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies e selezionare il file Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll.
+7.  Scegliere l'elenco a discesa per **Cerca in**, passare a *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* e selezionare il file *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll*.
 
 8.  Scegliere **OK**.
 
@@ -203,9 +203,9 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 11. In **Nome progetto** selezionare il progetto **WebPerfTestResultsViewerControl** e fare clic su **OK**.
 
-12. Se il file Connect.cs non è ancora aperto, in Esplora soluzioni fare clic con il pulsante destro del mouse sul file **Connect.cs** nel progetto WebPerfTestResultsViewerAddin e selezionare **Visualizza codice**.
+12. Se il file *Connect.cs* non è ancora aperto, in **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file **Connect.cs** nel progetto WebPerfTestResultsViewerAddin e selezionare **Visualizza codice**.
 
-13. Nel file Connect.cs aggiungere le istruzioni Using seguenti:
+13. Nel file *Connect.cs* aggiungere le istruzioni Using seguenti:
 
     ```csharp
     using System.IO;
@@ -216,7 +216,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
     using WebPerfTestResultsViewerControl;
     ```
 
-14. Scorrere fino alla fine del file Connect.cs. È necessario aggiungere un elenco di GUID per l'oggetto <xref:System.Windows.Forms.UserControl> nel caso siano aperte più istanze del **Visualizzatore risultati test prestazioni Web**. Il codice utilizzato da questo elenco verrà aggiunto in un secondo momento.
+14. Scorrere fino alla fine del file *Connect.cs*. È necessario aggiungere un elenco di GUID per l'oggetto <xref:System.Windows.Forms.UserControl> nel caso siano aperte più istanze del **Visualizzatore risultati test prestazioni Web**. Il codice utilizzato da questo elenco verrà aggiunto in un secondo momento.
 
      Un secondo elenco di stringhe viene utilizzato nel metodo OnDiscconection che verrà codificato in un secondo momento.
 
@@ -227,7 +227,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. Il file Connect.cs consente di creare un'istanza di una classe denominata Connect dalla classe <xref:Extensibility.IDTExtensibility2> e di includere anche alcuni metodi per l'implementazione del componente aggiuntivo per Visual Studio. Uno dei metodi è OnConnection a cui viene notificato il caricamento del componente aggiuntivo. Nel metodo OnConnection verrà usata la classe LoadTestPackageExt per creare il pacchetto di estendibilità per il **Visualizzatore risultati test prestazioni Web**. Aggiungere al metodo OnConnection il codice seguente:
+15. Il file *Connect.cs* consente di creare un'istanza di una classe denominata Connect dalla classe <xref:Extensibility.IDTExtensibility2> e di includere anche alcuni metodi per l'implementazione del componente aggiuntivo per Visual Studio. Uno dei metodi è OnConnection a cui viene notificato il caricamento del componente aggiuntivo. Nel metodo OnConnection verrà usata la classe LoadTestPackageExt per creare il pacchetto di estendibilità per il **Visualizzatore risultati test prestazioni Web**. Aggiungere al metodo OnConnection il codice seguente:
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -279,13 +279,13 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ### <a name="to-add-code-to-the-user-control"></a>Per aggiungere codice al controllo utente
 
-1.  In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerControl e selezionare **Proprietà**.
+1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerControl e selezionare **Proprietà**.
 
-2.  Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione**, selezionare **.NET Framework 4** e chiudere Proprietà.
+2.  Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione**, selezionare **.NET Framework 4** e chiudere **Proprietà**.
 
      Questa operazione è necessaria per supportare i riferimenti DLL necessari per l'estensione del **Visualizzatore risultati test prestazioni Web**.
 
-3.  In Esplora soluzioni, nel progetto WebPerfTestResultsViewerControl fare clic con il pulsante destro del mouse sul nodo **Riferimenti** e selezionare **Aggiungi riferimento**.
+3.  In **Esplora soluzioni**, nel progetto WebPerfTestResultsViewerControl, fare clic con il pulsante destro del mouse sul nodo **Riferimenti** e selezionare **Aggiungi riferimento**.
 
 4.  Nella finestra di dialogo **Aggiungi riferimento** fare clic sulla scheda **.NET**.
 
@@ -293,14 +293,14 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 6.  Scegliere **OK**.
 
-7.  Nel file UserControl1.cs aggiungere le istruzioni Using seguenti:
+7.  Nel file *UserControl1.cs* aggiungere le istruzioni Using seguenti:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  Aggiungere il metodo Update che viene chiamato e passato a un oggetto WebTestRequestResult dal metodo WebTestResultViewer_SelectedChanged di WebPerfTestResultsViewerAddin nel file Connect.cs. Il metodo Update consente di popolare l'oggetto DataGridView con varie proprietà passate a quest'ultimo nell'oggetto WebTestRequestResult.
+8.  Aggiungere il metodo Update che viene chiamato e passato a un oggetto WebTestRequestResult dal metodo WebTestResultViewer_SelectedChanged di WebPerfTestResultsViewerAddin nel file *Connect.cs*. Il metodo Update consente di popolare l'oggetto DataGridView con varie proprietà passate a quest'ultimo nell'oggetto WebTestRequestResult.
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -343,9 +343,9 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 4.  Scegliere **OK**.
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Eseguire il test delle prestazioni Web utilizzando la compilazione del componente aggiuntivo WebPerfTestResultsViewerAddin
+## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Eseguire il test delle prestazioni Web usando la compilazione del componente aggiuntivo WebPerfTestResultsViewerAddin
 
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Per eseguire il nuovo componente aggiuntivo per Visual Studio per il Visualizzatore risultati test prestazioni Web
+### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Per eseguire il nuovo componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
 
 1.  Eseguire il test delle prestazioni Web. Nel **Visualizzatore risultati test prestazioni Web** verrà visualizzata la nuova scheda del componente aggiuntivo WebPerfTestResultsViewerAddin, denominata Esempio.
 
@@ -355,7 +355,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 Per migliorare la sicurezza e impedire l'attivazione automatica di componenti aggiuntivi dannosi, Visual Studio offre impostazioni in una pagina **Opzioni** del menu Strumenti denominata **Sicurezza macro/componenti aggiuntivi**.
 
-In questa pagina di opzioni è anche possibile specificare le cartelle in cui Visual Studio ricerca i file di registrazione con estensione AddIn. Limitando i percorsi in cui è possibile leggere i file di registrazione con estensione AddIn si migliora la sicurezza, evitando l'utilizzo non intenzionale di file con estensione AddIn dannosi.
+In questa pagina di opzioni è anche possibile specificare le cartelle in cui Visual Studio ricerca i file di registrazione con estensione *AddIn*. Limitando i percorsi in cui è possibile leggere i file di registrazione *ADDIN* si migliora la sicurezza, evitando l'uso non intenzionale di file *ADDIN* dannosi.
 
  **Impostazioni di sicurezza dei componenti aggiuntivi**
 
@@ -363,7 +363,7 @@ In questa pagina di opzioni è anche possibile specificare le cartelle in cui Vi
 
 -   **Consenti caricamento componenti aggiuntivi.** Selezionato per impostazione predefinita. Quando selezionata, questa opzione consente il caricamento di componenti aggiuntivi in Visual Studio. In caso contrario, non è possibile caricare componenti aggiuntivi in Visual Studio.
 
--   **Consenti caricamento componenti aggiuntivi da URL.** Non selezionato per impostazione predefinita. Quando selezionata, questa opzione consente il caricamento di componenti aggiuntivi da siti Web esterni. In caso contrario, non è possibile caricare componenti aggiuntivi remoti in Visual Studio. Se per qualche motivo non è possibile eseguire il caricamento di un componente aggiuntivo, non potrà essere caricato dal Web. Questa impostazione controlla solo il caricamento della DLL del componente aggiuntivo. I file di registrazione Addin devono trovarsi sempre nel sistema locale.
+-   **Consenti caricamento componenti aggiuntivi da URL.** Non selezionato per impostazione predefinita. Se selezionata, questa opzione consente il caricamento di componenti aggiuntivi da siti Web esterni. In caso contrario, non è possibile caricare componenti aggiuntivi remoti in Visual Studio. Se per qualche motivo non è possibile eseguire il caricamento di un componente aggiuntivo, non potrà essere caricato dal Web. Questa impostazione controlla solo il caricamento della DLL del componente aggiuntivo. I file di registrazione *ADDIN* devono trovarsi sempre nel sistema locale.
 
 ## <a name="see-also"></a>Vedere anche
 

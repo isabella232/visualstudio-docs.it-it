@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d1b6655dd493a2ac62ba333f3858b299ee398f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee961a3f6fa62d46feebdedd10fb62ea8a9ee2a4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974806"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381729"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedura: configurare l'agente di test per eseguire test che interagiscono con il desktop
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop
 
 Se si vuole eseguire test automatizzati che interagiscono con il desktop, è necessario configurare l'agente affinché venga eseguito come processo anziché come servizio. Se ad esempio si desidera eseguire un test codificato dell'interfaccia utente in remoto mediante un controller di test e un agente di test oppure eseguire un test e acquisire una registrazione video, è necessario configurare l'agente affinché venga eseguito come processo. Quando si assegnano agenti ai ruoli nelle impostazioni test tramite Visual Studio oppure si assegnano agenti ai ruoli nell'ambiente in uso mediante Microsoft Test Manager, è necessario modificare la configurazione per tutti gli agenti assegnati a ruoli che devono interagire con il desktop.
 
 > [!WARNING]
-> Se si usa Microsoft Test Manager per configurare un ambiente lab, viene installato l'agente di test. Nella procedura guidata di creazione dell'ambiente è possibile specificare che si desidera configurare uno dei ruoli per eseguire test codificati dell'interfaccia utente.
+> Se si usa Microsoft Test Manager per configurare un ambiente lab, viene installato l'agente di test. Nella **procedura guidata di creazione dell'ambiente** è possibile specificare che si desidera configurare uno dei ruoli per eseguire test codificati dell'interfaccia utente.
 
 > [!IMPORTANT]
 > Il computer che esegue l'agente su cui si desidera eseguire test codificati dell'interfaccia utente non può essere bloccato né avere uno screen saver attivo.
@@ -79,7 +79,7 @@ Se si eseguono test codificati dell'interfaccia utente che avviano un browser, p
 
      Viene visualizzata la finestra di dialogo **Riepilogo configurazione** indicante lo stato di ognuno dei passaggi necessari per configurare l'agente di test.
 
-9. Per chiudere la finestra di dialogo **Riepilogo configurazione**, fare clic su **Chiudi**. Quindi scegliere ancora **Chiudi** per chiudere Strumento di configurazione agente di test.
+9. Per chiudere la finestra di dialogo **Riepilogo configurazione**, fare clic su **Chiudi**. Quindi scegliere ancora **Chiudi** per chiudere **Test Agent Configuration Tool**.
 
     > [!NOTE]
     > Per gli agenti di test eseguiti come processo, nel computer è disponibile un'icona dell'area di notifica. Tale icona indica lo stato dell'agente di test. Se l'agente è in esecuzione come processo, con questo strumento è possibile avviarlo, arrestarlo o riavviarlo. Per avviare l'agente di test come processo se non è in esecuzione, scegliere **Start**, **Tutti i Programmi**, **Microsoft Visual Studio**, **Agente di test di Microsoft Visual Studio**.

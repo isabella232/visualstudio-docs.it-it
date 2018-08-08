@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233490"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380644"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: configurare unit test destinati a una versione precedente di .NET Framework
 
@@ -26,13 +26,13 @@ Quando si crea un progetto di test in Microsoft Visual Studio, per impostazione 
 
 - È possibile eseguire unit test destinati a una versione specifica di .NET Framework da Visual Studio nel computer locale.
 
-- È possibile eseguire unit test destinati a una versione specifica di .NET Framework usando MSTest.exe dal prompt dei comandi.
+- È possibile eseguire unit test destinati a una versione specifica di .NET Framework usando *MSTest.exe* dal prompt dei comandi.
 
 - È possibile eseguire unit test su un agente di compilazione come parte di una compilazione.
 
 **Test delle applicazioni di SharePoint**
 
-Le funzionalità elencate in precedenza consentono inoltre di scrivere unit test e test di integrazione per applicazioni di SharePoint tramite Visual Studio. Per informazioni su come sviluppare applicazioni di SharePoint tramite Visual Studio, vedere [Creare soluzioni di SharePoint](../sharepoint/create-sharepoint-solutions.md), [Compilazione e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) e [Verifica e debug del codice di SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
+Le funzionalità elencate in precedenza consentono inoltre di scrivere unit test e test di integrazione per applicazioni di SharePoint tramite Visual Studio. Per informazioni su come sviluppare applicazioni di SharePoint usando Visual Studio, vedere [Creare soluzioni di SharePoint](../sharepoint/create-sharepoint-solutions.md), [Compilazione e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) e [Verifica e debug del codice di SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Limitazioni**
 
@@ -48,7 +48,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 - Non è possibile destinare unit test a versioni client precedenti del framework.
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Reindirizzamento di una versione specifica di .NET Framework per progetti unit test Visual Basic
+## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Reindirizzamento a una versione specifica di .NET Framework per progetti unit test Visual Basic
 
 1.  Creare un nuovo progetto di unit test Visual Basic. Scegliere **Nuovo** dal menu **File** e quindi **Progetto**.
 
@@ -58,7 +58,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 3.  Nella casella di testo **Nome** digitare un nome per il progetto di test Visual Basic e scegliere **OK**.
 
-4.  In Esplora soluzioni scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test Visual Basic.
+4.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test Visual Basic.
 
      Verranno visualizzate le proprietà del progetto di test Visual Basic.
 
@@ -70,7 +70,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
      ![Elenco a discesa dei framework di destinazione](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Reindirizzamento di una versione specifica di .NET Framework per progetti unit test Visual C#
+## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Reindirizzamento a una versione specifica di .NET Framework per progetti unit test Visual C#
 
 1.  Creare un nuovo progetto di unit test Visual C#. Scegliere **Nuovo** dal menu **File** e quindi **Progetto**.
 
@@ -80,7 +80,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 3.  Nella casella di testo **Nome** digitare un nome per il progetto di test Visual C# e scegliere **OK**.
 
-4.  In Esplora soluzioni scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test Visual C#.
+4.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test Visual C#.
 
      Verranno visualizzate le proprietà del progetto di test Visual C#.
 
@@ -88,7 +88,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
      ![Elenco a discesa dei framework di destinazione](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Reindirizzamento di una versione specifica di .NET Framework per progetti unit test C++/CLI
+## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Reindirizzamento a una versione specifica di .NET Framework per progetti unit test C++/CLI
 
 1.  Creare un nuovo progetto di unit test Visual C++. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.
 
@@ -101,11 +101,11 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 3.  Nella casella di testo **Nome** digitare un nome per il progetto di test Visual C++ e scegliere **OK**.
 
-4.  In Esplora soluzioni scegliere **Scarica progetto** dal nuovo progetto di test Visual C++.
+4.  In **Esplora soluzioni** scegliere **Scarica progetto** dal nuovo progetto di test Visual C++.
 
-5.  In Esplora soluzioni scegliere il progetto di test di Visual C++ scaricato, quindi selezionare **Modifica \<nome progetto>.vcxproj**.
+5.  In **Esplora soluzioni** scegliere il progetto di test di Visual C++ scaricato, quindi scegliere **Modifica \<nome progetto>.vcxproj**.
 
-     Il file con estensione vcxproj verrà aperto nell'editor.
+     Il file *VCXPROJ* viene aperto nell'editor.
 
 6.  Impostare `TargetFrameworkVersion` sulla versione 3.5 o una versione successiva nel `PropertyGroup` con etichetta `"Globals"`. Non specificare una versione client:
 
@@ -120,12 +120,12 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
       </PropertyGroup>
     ```
 
-7.  Salvare e chiudere il file con estensione vcxproj.
+7.  Salvare e chiudere il file *VCPROJ*.
 
-8.  In Esplora soluzioni selezionare **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di test Visual C++.
+8.  In **Esplora soluzioni** selezionare **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di test Visual C++.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creare soluzioni di SharePoint](../sharepoint/create-sharepoint-solutions.md)
-- [Compilazione e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Creare soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

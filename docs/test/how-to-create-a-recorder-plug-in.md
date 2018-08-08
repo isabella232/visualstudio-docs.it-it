@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176213"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382065"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Procedura: creare un plug-in di registrazione
+# <a name="how-to-create-a-recorder-plug-in"></a>Procedura: Creare un plug-in di registrazione
 
-Il plug-in <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> consente di modificare un test delle prestazioni Web registrato. La modifica avviene dopo avere scelto **Interrompi** nella barra degli strumenti di Registrazione test prestazioni Web ma prima che il test sia stato salvato e presentato nell'Editor test prestazioni Web.
+Il plug-in <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> consente di modificare un test delle prestazioni Web registrato. La modifica avviene dopo avere scelto **Interrompi** nella barra degli strumenti di **Registrazione test prestazioni Web** ma prima che il test venga salvato e presentato nell'Editor test prestazioni Web.
 
-Un plug-in di registrazione consente di eseguire una correlazione personalizzata nei parametri dinamici. Grazie alla funzionalità di correlazione incorporata, i test delle prestazioni Web sono in grado di rilevare i parametri dinamici presenti nella registrazione Web dopo il completamento oppure quando si usa l'opzione **Promuovi parametri dinamici a parametri di test Web** disponibile nella barra degli strumenti dell'Editor test prestazioni Web. La funzionalità di rilevamento incorporata non è tuttavia sempre in grado di trovare tutti i parametri dinamici. Non troverebbe ad esempio un ID sessione, il cui valore viene in genere modificato ogni 5 - 30 minuti. Il processo di correlazione andrà pertanto eseguito manualmente.
+Un plug-in di registrazione consente di eseguire una correlazione personalizzata nei parametri dinamici. Grazie alla funzionalità di correlazione incorporata, i test delle prestazioni Web sono in grado di rilevare i parametri dinamici presenti nella registrazione Web dopo il completamento oppure quando si usa l'opzione **Promuovi parametri dinamici a parametri di test Web** disponibile nella barra degli strumenti dell'**Editor test prestazioni Web**. La funzionalità di rilevamento incorporata non è tuttavia sempre in grado di trovare tutti i parametri dinamici. Non troverebbe ad esempio un ID sessione, il cui valore viene in genere modificato ogni 5 - 30 minuti. Il processo di correlazione andrà pertanto eseguito manualmente.
 
 Il plug-in <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> consente di scrivere il codice per realizzare un plug-in personalizzato, che potrà eseguire la correlazione o modificare il test delle prestazioni Web in vari modi prima del salvataggio e della presentazione nell'Editor test prestazioni Web. Se pertanto si determina che una variabile dinamica specifica deve essere correlata per molte registrazioni, il processo potrà essere automatizzato.
 
@@ -29,13 +29,13 @@ Alcuni altri scopi per i quali è possibile usare un plug-in di registrazione so
 
 Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per la realizzazione, la distribuzione e l'esecuzione di un plug-in di registrazione. Nel codice di esempio che segue le procedure viene dimostrato l'utilizzo di Visual C# per creare un plug-in di registrazione personalizzato per la correlazione di parametri dinamici.
 
-## <a name="creating-a-recorder-plug-in"></a>Creazione di un plug-in di registrazione
+## <a name="create-a-recorder-plug-in"></a>Creare un plug-in di registrazione
 
 ### <a name="to-create-a-recorder-plug-in"></a>Per creare un plug-in di registrazione
 
 1.  Aprire una soluzione che contenga il progetto di test di carico e prestazioni Web con il test delle prestazioni Web per il quale si vuole creare un plug-in di registrazione.
 
-2.  In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, selezionare **Aggiungi**, quindi **Nuovo progetto**.
+2.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, selezionare **Aggiungi**, quindi **Nuovo progetto**.
 
      Viene visualizzata la finestra di dialogo **Aggiungi nuovo progetto**.
 
@@ -45,9 +45,9 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 5.  Nella casella di testo **Nome** digitare un nome per il plug-in di registrazione.
 
-     La libreria di classi viene aggiunta a Esplora soluzioni e la nuova classe viene aperta nell'Editor di codice.
+     La libreria di classi viene aggiunta a **Esplora soluzioni** e la nuova classe viene aperta nell'**Editor di codice**.
 
-6.  In Esplora soluzioni, nella nuova cartella di progetto libreria di classi, fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e selezionare **Aggiungi riferimento**.
+6.  In **Esplora soluzioni**, nella nuova cartella di progetto libreria di classi, fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e selezionare **Aggiungi riferimento**.
 
     > [!TIP]
     > Un esempio di una nuova cartella di progetto libreria di classi è **RecorderPlugins**.
@@ -58,7 +58,7 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 8.  Scorrere verso il basso e selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework**, quindi scegliere **OK**.
 
-     L'elemento **Microsoft.VisualStudio.QualityTools.WebTestFramework** viene aggiunto nella cartella **Riferimenti** in Esplora soluzioni.
+     L'elemento **Microsoft.VisualStudio.QualityTools.WebTestFramework** viene aggiunto nella cartella **Riferimenti** in **Esplora soluzioni**.
 
 9. Scrivere il codice per il plug-in di registrazione. Creare innanzitutto una nuova classe pubblica derivata dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
@@ -81,7 +81,7 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 11. Aggiungere codice in base a ciò che si vuole che il plug-in di registrazione esegua dopo la registrazione Web. È ad esempio possibile aggiungere codice per gestire la correlazione personalizzata, come mostrato nell'esempio sotto. È anche possibile creare un plug-in di registrazione, ad esempio, per la conversione di commenti in transazioni o per l'aggiunta di regole di convalida al test delle prestazioni Web.
 
-12. Dal menu **Compila** scegliere Compila \<nome progetto libreria di classi>.
+12. Dal menu **Compila** scegliere **Compila\<nome progetto libreria di classi>**.
 
 13. A questo punto è necessario distribuire il plug-in di registrazione per effettuarne la registrazione in Visual Studio.
 
@@ -89,31 +89,31 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 Dopo avere compilato il plug-in di registrazione, sarà necessario posizionare il file DLL risultante in uno dei due percorsi seguenti:
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+-   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \<*versione*>\WebTestPlugins
+-   *%USERPROFILE%\My Documents\Visual Studio \<* versione *>\WebTestPlugins*
 
 > [!WARNING]
 > Dopo avere copiato il plug-in di registrazione in uno dei due percorsi, è necessario riavviare Visual Studio per completare la registrazione del plug-in.
 
 ### <a name="to-execute-the-recorder-plug-in"></a>Per eseguire il plug-in di registrazione
 
-1.  Creare un nuovo test delle prestazioni Web.
+1.  Creare un nuovo test Web.
 
      Viene visualizzata la finestra di dialogo **Attiva WebTestRecordPlugins**.
 
-2.  Selezionare la casella di controllo per il plug-in di registrazione, quindi scegliere OK.
+2.  Selezionare la casella di controllo per il plug-in di registrazione, quindi scegliere **OK**.
 
      Una volta che il test delle prestazioni Web ha completato la registrazione, verrà eseguito il nuovo plug-in di registrazione.
 
     > [!WARNING]
-    > Quando si esegue un test delle prestazioni Web o un test di carico in cui viene usato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
+    > Quando si esegue un test delle prestazioni web o un test di carico in cui viene utilizzato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
     > **Richiesta non riuscita: Eccezione in \<plug-in> event: Impossibile caricare il file o l'assembly '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una delle relative dipendenze. Il sistema non riesce a trovare il file specificato.**
     >
     > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)**, ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >
-    > 1.  Nei riferimenti del progetto di test di carico e prestazioni Web sarà presente un avviso. Rimuovere e aggiungere nuovamente il riferimento alla DLL del plug-in.
+    > 1.  Nei riferimenti del progetto di test di carico e prestazioni web sarà presente un avviso. Rimuovere e aggiungere nuovamente il riferimento alla DLL del plug-in.
     > 2.  Rimuovere il plug-in dal test o dal percorso appropriato, quindi aggiungerlo di nuovo.
 
 ## <a name="example"></a>Esempio

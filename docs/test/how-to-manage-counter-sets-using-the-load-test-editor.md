@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 27a1cdd3390d6f068947bfcb0daef76eb93fd026
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 351d5bd6d46dbc247b125ae56d98c37028f34e35
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751988"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379384"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procedura: gestire insiemi di contatori utilizzando l'Editor test di carico
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procedura: Gestire insiemi di contatori usando l'Editor test di carico
 
 Quando si crea un test di carico usando la **Creazione guidata test di carico**, è necessario aggiungere un insieme di contatori iniziale. Ciò offre una serie di insiemi di contatori predefiniti per il test di carico.
 
@@ -56,7 +56,7 @@ La gestione degli insiemi di contatori implica la scelta del gruppo di computer 
 
      I tag computer consentono di identificare un computer con un nome facile da riconoscere
 
-     e vengono visualizzati nel nodo **Mapping insiemi di contatori** nell'albero nell'Editor test di carico. Inoltre, i tag vengono visualizzati nei rapporti di Excel che consentono agli stakeholder di identificare il ruolo del computer nel test di carico. Ad esempio, "Web Server1 in lab2" o "SQL Server2 in Phoenix office". Per altre informazioni, vedere [Creazione di report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md).
+     e vengono visualizzati nel nodo **Mapping insiemi di contatori** nell'albero nell'Editor test di carico. Inoltre, i tag vengono visualizzati nei rapporti di Excel che consentono agli stakeholder di identificare il ruolo del computer nel test di carico. Ad esempio, "Web Server1 in lab2" o "SQL Server2 in Phoenix office". Per altre informazioni, vedere [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md).
 
 6.  Scegliere **OK**.
 
@@ -64,4 +64,4 @@ La gestione degli insiemi di contatori implica la scelta del gruppo di computer 
 
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Configurazione delle impostazioni esecuzione test di carico](../test/configure-load-test-run-settings.md)
+- [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)

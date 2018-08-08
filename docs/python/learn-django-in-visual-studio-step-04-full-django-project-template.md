@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090049"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388176"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Passaggio 4: Usare il modello di progetto Web Django completo
 
@@ -35,19 +35,19 @@ Il modello fornisce anche l' autenticazione di base, come descritto nel passaggi
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Passaggio 4-1: Creare un progetto da un modello
 
-1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione "LearningDjango" creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **File** > **Nuovo** > **Progetto**.
+1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningDjango** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **File** > **Nuovo** > **Progetto**.
 
-1. Nella finestra di dialogo Nuovo progetto cercare e selezionare il modello "Progetto Web Django", assegnare al progetto il nome "DjangoWeb" e selezionare **OK**.
+1. Nella finestra di dialogo Nuovo progetto cercare e selezionare il modello **Progetto Web Django**, assegnare al progetto il nome "DjangoWeb" e selezionare **OK**.
 
-1. Poiché il modello include di nuovo un file `requirements.txt`, Visual Studio chiede dove installare queste dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite.
+1. Poiché il modello include di nuovo un file *requirements.txt*, Visual Studio chiede dove installare queste dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite.
 
-1. Al termine della configurazione dell'ambiente virtuale in Visual Studio, seguire le istruzioni nel file `readme.html` visualizzato per creare un utente Django con privilegi avanzati, ovvero un amministratore. È sufficiente fare clic con il pulsante destro del mouse sul progetto di Visual Studio e scegliere il comando **Python** > **Creazione Super User Django**, quindi seguire le indicazioni. Assicurarsi di registrare il nome utente e la password, perché verranno usati per provare le funzionalità di autenticazione dell'app.
+1. Al termine della configurazione dell'ambiente virtuale in Visual Studio, seguire le istruzioni nel file *readme.html* visualizzato per creare un utente Django con privilegi avanzati, ovvero un amministratore. È sufficiente fare clic con il pulsante destro del mouse sul progetto di Visual Studio e scegliere il comando **Python** > **Creazione Super User Django**, quindi seguire le indicazioni. Assicurarsi di registrare il nome utente e la password, perché verranno usati per provare le funzionalità di autenticazione dell'app.
 
-1. Impostare il progetto "DjangoWeb" come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliendo **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
+1. Impostare il progetto **DjangoWeb** come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse su tale progetto in **Esplora soluzioni** e selezionando **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 
     ![Progetto DjangoWeb mostrato in Esplora soluzioni come progetto di avvio](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Selezionare **Debug** > **Avvia debug** (F5) o usare il pulsante **Server Web** sulla barra degli strumenti per eseguire il server:
+1. Selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti per eseguire il server:
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -61,19 +61,19 @@ Il modello fornisce anche l' autenticazione di base, come descritto nel passaggi
 
 1. È possibile lasciare l'app in esecuzione per le sezioni seguenti.
 
-    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (generalmente `env`) e scegliere **Ignora questi elementi locali**.
+    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (in genere **env**) e scegliere **Ignora questi elementi locali**.
 
 ### <a name="examine-what-the-template-creates"></a>Esaminare gli elementi creati dal modello
 
 Al livello più ampio il modello "Progetto Web Django" crea la struttura seguente:
 
 - File nella radice del progetto:
-  - `manage.py`, l' utilità di amministrazione Django.
-  - `db.sqlite3`, un database SQLite predefinito.
-  - `requirements.txt`, che contiene una dipendenza da Django 1.x.
-  - `readme.html`, un file visualizzato in Visual Studio dopo la creazione del progetto. Come indicato nella sezione precedente, seguire le istruzioni riportate qui per creare un account utente con privilegi avanzati (amministratore) per l'app.
-- La cartella `app` contiene tutti i file dell'app, tra cui le visualizzazioni, i modelli, i test, i moduli, e i file statici (vedere il passaggio 4-2). È in genere opportuno rinominare questa cartella per usare un nome di app più distintivo.
-- La cartella `DjangoWeb` (progetto Django) contiene i normali file di progetto Django: `__init__.py`, `settings.py`, `urls.py` e `wsgi.py`. Tramite il modello di progetto, `settings.py` è già configurato per l'app e il file di database, mentre `urls.py` è già configurato con route a tutte le pagine dell'app, incluso il modulo di accesso.
+  - *manage.py*, l' utilità di amministrazione Django.
+  - *db.sqlite3*, un database SQLite predefinito.
+  - *requirements.txt*, che contiene una dipendenza da Django 1.x.
+  - *readme.html*, un file visualizzato in Visual Studio dopo la creazione del progetto. Come indicato nella sezione precedente, seguire le istruzioni riportate qui per creare un account utente con privilegi avanzati (amministratore) per l'app.
+- La cartella *app* contiene tutti i file dell'app, tra cui le visualizzazioni, i modelli, i test, i moduli, e i file statici (vedere il passaggio 4-2). È in genere opportuno rinominare questa cartella per usare un nome di app più distintivo.
+- La cartella *DjangoWeb* (progetto Django) contiene i normali file di progetto Django: *\_\_init\_\_.py*, *settings.py*, *urls.py* e *wsgi.py*. Tramite il modello di progetto, *settings.py* è già configurato per l'app e il file di database, mentre *urls.py* è già configurato con route a tutte le pagine dell'app, incluso il modulo di accesso.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Domanda: È possibile condividere un ambiente virtuale tra progetti di Visual Studio?
 
@@ -87,7 +87,7 @@ Ciononostante, per usare un ambiente virtuale esistente, eseguire le operazioni 
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Passaggio 4-2: Comprendere le visualizzazioni e i modelli di pagina creati dal modello di progetto
 
-Come si può osservare quando si esegue il progetto, l'app contiene tre visualizzazioni: Home, About e Contact. Il codice per queste visualizzazioni è disponibile nella cartella `app/views`. Ogni funzione di visualizzazione chiama semplicemente `django.shortcuts.render` con il percorso di un modello e un semplice oggetto dizionario. Ad esempio, la pagina About viene gestita dalla funzione `about`:
+Come si può osservare quando si esegue il progetto, l'app contiene tre visualizzazioni: Home, About e Contact. Il codice per queste visualizzazioni è disponibile nella cartella *app/views*. Ogni funzione di visualizzazione chiama semplicemente `django.shortcuts.render` con il percorso di un modello e un semplice oggetto dizionario. Ad esempio, la pagina About viene gestita dalla funzione `about`:
 
 ```python
 def about(request):
@@ -104,7 +104,7 @@ def about(request):
     )
 ```
 
-I modelli si trovano nella cartella `templates/app` dell'app e in genere è preferibile rinominare `app` in base al nome dell'app reale. Il modello di base, `layout.html`, è il più ampio. Fa riferimento a tutti i file statici necessari (JavaScript e CSS), definisce un blocco denominato "content" di cui altre pagine eseguono l'override e fornisce un altro blocco denominato "scripts". Gli estratti annotati di `layout.html` indicati di seguito mostrano queste aree specifiche:
+I modelli si trovano nella cartella *templates/app* dell'app e in genere è consigliabile rinominare *app* in base al nome effettivo dell'app. Il modello di base, *layout.html*, è il più completo. Fa riferimento a tutti i file statici necessari (JavaScript e CSS), definisce un blocco denominato "content" di cui altre pagine eseguono l'override e fornisce un altro blocco denominato "scripts". Gli estratti annotati di *layout.html* indicati di seguito illustrano queste aree specifiche:
 
 ```html
 <!DOCTYPE html>
@@ -144,7 +144,7 @@ I modelli si trovano nella cartella `templates/app` dell'app e in genere è pref
 </html>
 ```
 
-Singoli modelli di pagina `about.html`, `contact.html` e `index.html`, ciascuno dei quali estende il modello di base `layout.html`. `about.html` è il più semplice e mostra i tag `{% extends %}` e `{% block content %}`:
+I singoli modelli di pagina *about.html*, *contact.html* e *index.html* estendono il modello di base *layout.html*. *about.html* è il più semplice e contiene i tag `{% extends %}` e `{% block content %}`:
 
 ```html
 {% extends "app/layout.html" %}
@@ -159,9 +159,9 @@ Singoli modelli di pagina `about.html`, `contact.html` e `index.html`, ciascuno 
 {% endblock %}
 ```
 
-`index.html` e `contact.html` usano la stessa struttura e forniscono contenuto più lungo nel blocco "content".
+*index.html* e *contact.html* usano la stessa struttura e consentono un contenuto più lungo nel blocco "content".
 
-Nella cartella `templates/app` è presente anche una quarta pagina `login.html`, insieme a `loginpartial.html`, che viene inserita in `layout.html` usando `{% include %}`. Questi file di modello vengono descritti nel passaggio 5 sull'autenticazione.
+Nella cartella *templates/app* è presente anche una quarta pagina *login.html*, insieme a *loginpartial.html*, che viene inserita in *layout.html* usando `{% include %}`. Questi file di modello vengono descritti nel passaggio 5 sull'autenticazione.
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Domanda: È possibile applicare un rientro a {% block %} e a {% endblock %} nel modello di pagina Django?
 
@@ -169,7 +169,7 @@ Risposta: Sì, i modelli di pagina Django funzionano correttamente se si applica
 
 ## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Passaggio 4-3: Comprendere il routing degli URL creato dal modello
 
-Il file `urls.py` del progetto Django creato dal modello "Progetto Web Django" contiene il codice seguente:
+Il file *urls.py* del progetto Django creato dal modello "Progetto Web Django" contiene il codice seguente:
 
 ```python
 from datetime import datetime
@@ -204,9 +204,9 @@ urlpatterns = [
 ]
 ```
 
-I primi tre modelli di URL sono direttamente associati alle visualizzazioni `home`, `contact` e `about`nel file `views.py` dell'app. I modelli `^login/$` e `^logout$`, d'altro canto, usano visualizzazioni Django predefinite invece di visualizzazioni definite dall'applicazione. Le chiamate al metodo `url` includono anche dati aggiuntivi per personalizzare la visualizzazione. Il passaggio 5 esplora queste chiamate.
+I primi tre modelli di URL sono direttamente associati alle visualizzazioni `home`, `contact` e `about` nel file *views.py* dell'app. I modelli `^login/$` e `^logout$`, d'altro canto, usano visualizzazioni Django predefinite invece di visualizzazioni definite dall'applicazione. Le chiamate al metodo `url` includono anche dati aggiuntivi per personalizzare la visualizzazione. Il passaggio 5 esplora queste chiamate.
 
-### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Domanda: Perché nel progetto creato il modello di URL "about" usa '^about' anziché '^about$' come mostrato qui?
+### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Domanda: Perché nel progetto creato il modello di URL "about" usa '^about' anziché '^about$' come illustrato qui?
 
 Risposta: La mancanza del carattere '$' finale nell'espressione regolare è una semplice disattenzione in molte versioni del modello di progetto. Il modello di URL funziona perfettamente per una pagina denominata "about", ma senza il carattere '$' finale il modello di URL corrisponde anche a URL come "about=django", "about09876", "aboutoflaughter" e così via. Il carattere '$' finale è mostrato qui per creare un modello di URL che corrisponde *solo* ad "about".
 

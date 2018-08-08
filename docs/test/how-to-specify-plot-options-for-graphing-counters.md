@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750922"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382321"
 ---
-# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Procedura: specificare le opzioni del tracciato per i contatori grafici
+# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Procedura: Specificare le opzioni del tracciato per i contatori grafici
 
 La finestra di dialogo **Opzioni tracciato** consente di modificare il colore e lo stile della linea di un contatore tracciato in un grafico. È possibile correggere anche l'intervallo a un valore specifico o impostare l'intervallo affinché venga regolato automaticamente in base ai dati campionati.
 
@@ -25,9 +25,9 @@ La finestra di dialogo **Opzioni tracciato** consente di modificare il colore e 
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>Per specificare le opzioni relative ai tracciati per i grafici
 
-1.  Nell'Analizzatore test di carico scegliere **Grafici** sulla barra degli strumenti del test di carico.
+1.  Nell'**Analizzatore test di carico** scegliere **Grafici** sulla barra degli strumenti del test di carico.
 
-     I risultati del test di carico verranno visualizzati nella visualizzazione Grafici.
+     I risultati del test di carico appaiono in una visualizzazione Grafici.
 
 2.  Nella Legenda o nel grafico fare clic con il pulsante destro del mouse sulla riga o sulla linea del tracciato corrente del contatore delle prestazioni per il quale si vuole modificare l'opzione del tracciato, quindi selezionare **Opzioni tracciato**.
 
@@ -53,4 +53,3 @@ La finestra di dialogo **Opzioni tracciato** consente di modificare il colore e 
 
 - [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Procedura: Creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md)

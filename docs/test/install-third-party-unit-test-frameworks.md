@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0994b226a80385e381fa7b738c0194ec393d87a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844695"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379638"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Installare framework di unit test di terze parti
 
@@ -44,7 +44,7 @@ Se si conosce il framework che si vuole usare:
 
 2. Digitare il nome del framework nella casella **Trova**.
 
-3. Scegliere il framework dall'elenco di risultati per passare alla pagina di Visual Studio Marketplace per lo strumento.
+3. Scegliere il framework dall'elenco di risultati per passare alla pagina di **Visual Studio Marketplace** per lo strumento.
 
 Per sfogliare un elenco di framework e di altri strumenti di test:
 
@@ -54,7 +54,7 @@ Per sfogliare un elenco di framework e di altri strumenti di test:
 
 3. Nell'elenco **Categoria** con etichetta **Visualizzazione di**, espandere il nodo **Strumenti** e scegliere **Test**.
 
-4. Scegliere un framework dall'elenco di risultati per passare alla pagina di Visual Studio Marketplace per lo strumento.
+4. Scegliere un framework dall'elenco di risultati per passare alla pagina di **Visual Studio Marketplace** per lo strumento.
 
 ## <a name="update-to-the-latest-test-adapters"></a>Eseguire l'aggiornamento agli adattatori di test più recenti
 

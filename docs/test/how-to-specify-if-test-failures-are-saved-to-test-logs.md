@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e184fbab591698404bde4593f4ad7b61fa1815ae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969680"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381453"
 ---
-# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Procedura: specificare se i test non superati vengono salvati in log di test utilizzando l'Editor test di carico
+# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Procedura: Specificare se i test non superati vengono salvati in log di test usando l'Editor test di carico
 
 Dopo aver creato il test di carico usando la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà del test di carico in modo da soddisfare le necessità e gli obiettivi di test. Vedere [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md). È possibile specificare se si vuole salvare il log di test nel caso in cui un test non venga superato in un test di carico modificando la proprietà **Salva log su test non superati**.
 
@@ -30,15 +30,15 @@ Dopo aver creato il test di carico usando la **Creazione guidata test di carico*
 
 1.  Aprire un test di carico.
 
-     Verrà visualizzato l'Editor test di carico. Verrà visualizzato l'albero del test di carico.
+     Viene visualizzato l'**Editor test di carico**. Verrà visualizzato l'albero del test di carico.
 
 2.  Nella cartella **Impostazioni esecuzione test** dell'albero del test di carico scegliere il nodo delle impostazioni esecuzione test per le quali si vuole specificare il numero massimo di iterazioni di test.
 
 3.  Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-     Le categorie e le proprietà delle impostazioni di esecuzione verranno visualizzate nella finestra Proprietà.
+     Le categorie e le proprietà delle impostazioni di esecuzione verranno visualizzate nella finestra **Proprietà**.
 
-4.  Nella proprietà **Salva log su test non superati** selezionare True o False per specificare se si vuole salvare il log di test nel caso in cui un test non venga superato nello scenario.
+4.  Nella proprietà **Salva log su test non superati** selezionare **True** o **False** per specificare se si vuole salvare il log di test nel caso in cui un test non venga superato nello scenario.
 
      Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**.
 
@@ -46,8 +46,7 @@ Dopo aver creato il test di carico usando la **Creazione guidata test di carico*
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
+- [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md)
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura: Configurare la raccolta di dettagli completi per abilitare il grafico attività utente virtuale](../test/how-to-configure-load-tests-to-collect-full-details.md)
 - [Procedura: Specificare la frequenza di salvataggio dei log di test](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

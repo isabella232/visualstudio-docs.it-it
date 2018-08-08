@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176980"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380892"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: creare un adattatore dati di diagnostica
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: Creare un adattatore dati di diagnostica
 
 Per creare un *adattatore dati di diagnostica*, è necessario creare una libreria di classi mediante Visual Studio, quindi aggiungere le API dell'adattatore dati di diagnostica fornite da Visual Studio Enterprise alla libreria di classi. Inviare tutte le informazioni desiderate come flusso o come file a <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> fornito dal framework, durante la gestione degli eventi che vengono generati durante l'esecuzione dei test. I flussi o i file inviati a <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> vengono archiviati come allegati nei risultati del test al termine di quest'ultimo. Se si crea un bug da questi risultati o quando si usa [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], anche i file vengono collegati al bug.
 
@@ -48,9 +48,9 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 
  Per un progetto di adattatore dati di diagnostica di esempio completo, incluso un editor di configurazione personalizzato, vedere [Esempio di progetto per creare un adattatore dati di diagnostica](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
-##  <a name="CreateAdapter"></a> Creazione e installazione di un adattatore dati di diagnostica
+##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Creare e installare un adattatore dati di diagnostica
 
-#### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Per creare e installare un adattatore dati di diagnostica
+### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Per creare e installare un adattatore dati di diagnostica
 
 1.  Creare una nuova libreria di classi.
 
@@ -66,7 +66,7 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 
 2.  Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  In Esplora soluzioni fare clic con il pulsante destro del mouse su **Riferimenti**, quindi scegliere il comando **Aggiungi riferimento**.
+    1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti**, quindi scegliere il comando **Aggiungi riferimento**.
 
     2.  Scegliere **.NET** e individuare **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
@@ -74,7 +74,7 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 
 3.  Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e scegliere **Aggiungi riferimento**.
+    1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e scegliere **Aggiungi riferimento**.
 
     2.  Scegliere **/.NET** e individuare **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -224,7 +224,7 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 
      Per usare il proprio editor per raccogliere i dati da usare nelle impostazioni test, vedere [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
-11. Per raccogliere un file di log quando un test viene completato in base alla configurazione effettuata dall'utente nelle impostazioni di test, è necessario creare un file `App.config` e aggiungerlo alla soluzione. Questo file ha il formato seguente e deve contenere l'URI affinché l'adattatore dati di diagnostica lo identifichi. Sostituire i valori reali a "Company/ProductName/Version".
+11. Per raccogliere un file di log quando un test viene completato in base alla configurazione effettuata dall'utente nelle impostazioni di test, è necessario creare un file *App.config* e aggiungerlo alla soluzione. Questo file ha il formato seguente e deve contenere l'URI affinché l'adattatore dati di diagnostica lo identifichi. Sostituire i valori reali a "Company/ProductName/Version".
 
     > [!NOTE]
     > Se non è necessario configurare informazioni per l'adattatore dati di diagnostica, non è necessario creare un file di configurazione.
@@ -255,7 +255,7 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
     > [!NOTE]
     > L'elemento di configurazione predefinito può contenere qualsiasi dato necessario. Se l'utente non configura l'adattatore dati di diagnostica nelle impostazioni di test, a questo verranno passati i dati predefiniti al momento dell'esecuzione. Poiché il codice XML che si aggiunge alla sezione `<DefaultConfigurations>` non fa probabilmente parte dello schema dichiarato, è possibile ignorare gli eventuali errori XML generati.
     >
-    > Sono disponibili altri esempi di file di configurazione nel percorso seguente in base alla directory di installazione: **Programmi\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors**.
+    > Sono disponibili altri esempi di file di configurazione nel percorso seguente in base alla directory di installazione: *Programmi\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
      Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
@@ -284,7 +284,7 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
-- [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Raccogliere dati di diagnostica nei test manuali (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
 - [Raccogliere dati di diagnostica durante i test (VSTS)](/vsts/manual-test/collect-diagnostic-data)
 - [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

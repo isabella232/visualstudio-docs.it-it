@@ -13,27 +13,27 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750971"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380201"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: eseguire lo zoom avanti su un'area del grafico nei risultati del test di carico
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: Eseguire lo zoom avanti su un'area del grafico nei risultati del test di carico
 
 Al termine di un test di carico, è possibile utilizzare le barre dello zoom per eseguire lo zoom avanti e scorrere un'area del grafico. Lo zoom avanti consente di analizzare i dettagli anche minuti dei dati generati durante l'esecuzione di un test di carico.
 
 > [!NOTE]
 > Lo zoom avanti è disponibile solo quando si analizza il risultato di un test di carico completato e non mentre si osservano i risultati di un test in esecuzione.
 
- Il controllo zoom è visibile solo nell'analizzatore test di carico soltanto quando si visualizzano i risultati dei test di carico in modalità zoom. La modalità zoom viene attivata nella visualizzazione Grafici quando un test di carico è stato completato o al caricamento di un test eseguito in precedenza. È possibile visualizzare o nascondere i controlli zoom nei grafici tramite l'opzione Mostra controlli zoom presente nella barra degli strumenti.
+ Il controllo zoom è visibile nell'**Analizzatore test di carico** soltanto quando si visualizzano i risultati dei test di carico in modalità zoom. La modalità zoom viene attivata nella visualizzazione Grafici quando un test di carico è stato completato o al caricamento di un test eseguito in precedenza. È possibile visualizzare o nascondere i controlli zoom nei grafici usando l'opzione **Mostra controlli zoom** della barra degli strumenti.
 
- È possibile regolare lo zoom dell'asse x orizzontale per analizzare periodi specifici durante il test di carico. È possibile regolare lo zoom dell'asse y verticale per analizzare intervalli di valori specifici per i contatori inclusi nel grafico.
+ Lo **zoom dell'asse x orizzontale** può essere regolato in modo da analizzare periodi specifici durante il test di carico. Lo **zoom dell'asse y verticale** può essere regolato in modo da analizzare intervalli di valori specifici per i contatori inclusi nel grafico.
 
- È possibile regolare sia la sequenza temporale orizzontale sia i controlli zoom dell'intervallo di valori verticali usando il mouse. È inoltre possibile regolare il controllo della sequenza temporale orizzontale mediante i tasti freccia SINISTRA e freccia DESTRA. Utilizzando i tasti freccia per regolare il controllo zoom, è possibile regolare l'intervallo delle finestre di 1 intervallo di campionamento per volta. L'utilizzo combinato del tasto MAIUSC e dei tasti di direzione consente regolazioni in incrementi di 10 intervalli di campionamento.
+ È possibile regolare sia la **sequenza temporale orizzontale** sia i controlli zoom dell'**intervallo di valori verticali** usando il mouse. Il **controllo della sequenza temporale orizzontale** può essere regolato anche usando i tasti freccia SINISTRA e freccia DESTRA. Utilizzando i tasti freccia per regolare il controllo zoom, è possibile regolare l'intervallo delle finestre di 1 intervallo di campionamento per volta. L'uso combinato del tasto **MAIUSC** e dei tasti di direzione consente regolazioni in incrementi di 10 intervalli di campionamento.
 
- Per regolare il controllo zoom utilizzando un tasto di direzione, impostare prima lo stato attivo sul controllo zoom utilizzando il tasto TAB. Quando lo stato attivo si trova sul dispositivo di scorrimento sinistro, i tasti di direzione spostano il limite iniziale della finestra di zoom di 1 intervallo a sinistra o a destra. Quando lo stato attivo si trova sul dispositivo di scorrimento centrale, è possibile utilizzare i tasti di direzione per scorrere la finestra di zoom a sinistra o a destra di 1 intervallo di campionamento senza modificarne le dimensioni. Infine, il dispositivo di scorrimento destro viene spostato per estendere o ridurre l'intervallo della fine della finestra di zoom di 1 intervallo di campionamento.
+ Per regolare il controllo zoom tramite un tasto di direzione, impostare prima lo stato attivo sul controllo zoom usando il tasto **TAB**. Quando lo stato attivo si trova sul dispositivo di scorrimento sinistro, i tasti di direzione spostano il limite iniziale della finestra di zoom di 1 intervallo a sinistra o a destra. Quando lo stato attivo si trova sul dispositivo di scorrimento centrale, è possibile utilizzare i tasti di direzione per scorrere la finestra di zoom a sinistra o a destra di 1 intervallo di campionamento senza modificarne le dimensioni. Infine, il dispositivo di scorrimento destro viene spostato per estendere o ridurre l'intervallo della fine della finestra di zoom di 1 intervallo di campionamento.
 
  Per riportare i controlli zoom allo stato che consente di visualizzare la cronologia e gli intervalli di valori per intero, è possibile usare le opzioni **Zoom indietro orizzontale**, **Zoom indietro verticale** o **Zoom indietro orizzontale e verticale** del menu a comparsa del grafico.
 
@@ -42,11 +42,11 @@ Al termine di un test di carico, è possibile utilizzare le barre dello zoom per
 
  ![Controllo zoom della visualizzazione Grafici](../test/media/ltest_zoomcontrol.png) Controllo zoom della visualizzazione Grafici
 
- Nell'illustrazione precedente, il grafico Sistema sotto test è stato ingrandito al fine di esaminare problemi di soglia. Le violazioni di soglia sono state abilitate tramite l'opzione **Mostra violazioni di soglia su grafico** del menu a discesa **Opzioni grafico** presente nella barra degli strumenti.
+ Nell'illustrazione precedente, il grafico **Sistema sotto test** è stato ingrandito al fine di esaminare problemi di soglia. Le violazioni di soglia sono state abilitate tramite l'opzione **Mostra violazioni di soglia su grafico** del menu a discesa **Opzioni grafico** presente nella barra degli strumenti.
 
  Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="displaying-graphs"></a>Visualizzazione dei grafici
+## <a name="display-graphs"></a>Visualizzare i grafici
  Prima di modificare la visualizzazione di un grafico mediante lo zoom avanti o indietro o scorrendo un'area del grafico, seguire questa procedura per visualizzare i grafici.
 
 ### <a name="to-display-graphs"></a>Per visualizzare i grafici
@@ -67,18 +67,18 @@ Al termine di un test di carico, è possibile utilizzare le barre dello zoom per
 
      Ogni barra dello zoom dispone di due quadratini di ridimensionamento. Un quadratino di ridimensionamento è un'area rettangolare che si trova alle estremità della barra dello zoom.
 
-## <a name="zooming-and-scrolling"></a>Zoom e scorrimento
+## <a name="zoom-and-scroll"></a>Zoom e scorrimento
  Quando si visualizzano più grafici, è possibile mantenerli sincronizzati in modo da visualizzare la stessa parte dell'esecuzione del test di carico.
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Per sincronizzare lo zoom e lo scorrimento
 
-1.  Nell'Analizzatore test di carico scegliere **Sincronizza controlli zoom orizzontali**.
+1.  Nell'**Analizzatore test di carico** scegliere **Sincronizza controlli zoom orizzontali**.
 
-     Quando il pulsante Sincronizza controlli zoom orizzontali è selezionato, lo zoom e lo scorrimento della scala cronologica di un singolo grafico vengono applicati anche alla scala cronologica degli altri grafici.
+     Quando il pulsante **Sincronizza controlli zoom orizzontali** è selezionato, lo zoom e lo scorrimento della scala cronologica di un singolo grafico vengono applicati anche alla scala cronologica degli altri grafici.
 
-2.  Scegliere nuovamente Sincronizza controlli zoom orizzontali.
+2.  Scegliere nuovamente **Sincronizza controlli zoom orizzontali**.
 
-     Quando il pulsante Sincronizza controlli zoom orizzontali non è selezionato, lo zoom e lo scorrimento della scala cronologica di un singolo grafico hanno effetto solo su tale grafico.
+     Quando il pulsante **Sincronizza controlli zoom orizzontali non è selezionato**, lo zoom e lo scorrimento della scala cronologica di un singolo grafico hanno effetto solo su tale grafico.
 
 ### <a name="to-zoom-and-scroll-to-a-region-of-the-graph"></a>Per eseguire lo zoom e scorrere un'area del grafico
 

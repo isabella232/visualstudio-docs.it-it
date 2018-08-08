@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd45465d8eb20d802a20c1b04765afbe029a9993
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977283"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380121"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
 
@@ -30,9 +30,9 @@ Quando Visual Studio genera uno unit test per una classe generica, ad esempio `M
 ## <a name="examples"></a>Esempi
  Gli esempi seguenti illustrano unit test per i metodi generici.
 
--   [Modifica del codice di test generato](#EditingGeneratedTestCode). Questo esempio include due sezioni, relative a codice di test generato e codice di test modificato. Mostra come modificare il codice di test non elaborato generato da un metodo generico per creare un metodo di test utile.
+-   [Modificare il codice di test generato](#EditingGeneratedTestCode). Questo esempio include due sezioni, relative a codice di test generato e codice di test modificato. Mostra come modificare il codice di test non elaborato generato da un metodo generico per creare un metodo di test utile.
 
--   [Uso di un vincolo di tipo](#TypeConstraintNotSatisfied). Questo esempio mostra uno unit test per un metodo generico che usa un vincolo di tipo. In questo esempio il vincolo di tipo non viene soddisfatto.
+-   [Usare un vincolo di tipo](#TypeConstraintNotSatisfied). Questo esempio mostra uno unit test per un metodo generico che usa un vincolo di tipo. In questo esempio il vincolo di tipo non viene soddisfatto.
 
 ###  <a name="EditingGeneratedTestCode"></a> Esempio 1: Modifica del codice di test generato
  Il codice di test in questa sezione consente di testare un metodo di codice sottoposto a test denominato `SizeOfLinkedList()`. Questo metodo restituisce un numero intero che specifica il numero di nodi nell'elenco collegato.

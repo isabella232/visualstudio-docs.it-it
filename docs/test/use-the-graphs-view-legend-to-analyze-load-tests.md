@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751401"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380248"
 ---
-# <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>Utilizzo della legenda della visualizzazione Grafici per analizzare i test di carico
+# <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usare la legenda della visualizzazione Grafici per analizzare i test di carico
 
 Nella visualizzazione Grafici dell'analizzatore test di carico è incluso un riquadro legenda in cui vengono visualizzate le informazioni per ogni contatore delle prestazioni associato al grafico attualmente selezionato.
 
@@ -55,7 +55,7 @@ La selezione di un elemento nella legenda consente di effettuare le operazioni s
 -   Consente di accedere alla finestra di dialogo **Opzioni tracciato** per il contatore.
 
 > [!TIP]
-> È possibile usare il pulsante del menu a discesa **Opzioni grafico** sulla barra degli strumenti Analizzatore test di carico e selezionare **Mostra legenda** per visualizzare o nascondere il riquadro **Legenda** associato alla visualizzazione del grafico.
+> È possibile usare il pulsante del menu a discesa **Opzioni grafico** sulla barra degli strumenti dell'**Analizzatore test di carico** e selezionare **Mostra legenda** per visualizzare o nascondere il riquadro **Legenda** associato alla visualizzazione del grafico.
 
 ## <a name="see-also"></a>Vedere anche
 

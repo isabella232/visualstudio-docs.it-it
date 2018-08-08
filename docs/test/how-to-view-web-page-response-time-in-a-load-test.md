@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178293"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379482"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: visualizzare il tempo di risposta delle pagine Web in un test di carico utilizzando l'Analizzatore test di carico
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: Visualizzare il tempo di risposta delle pagine Web in un test di carico usando l'Analizzatore test di carico
 
 Il tempo richiesto per il caricamento di ogni pagina web è definito *tempo di risposta*. Quando si crea un test web, è possibile impostare un tempo di risposta obiettivo per ogni richiesta di pagina web nel test web.
 
@@ -29,7 +29,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 -   La percentuale di iterazioni test che soddisfano il tempo di risposta obiettivo per la pagina.
 
--   È possibile analizzare i tempi di risposta della pagina web mediante la visualizzazione Tabelle o la visualizzazione Grafici nell'analizzatore test di carico:
+-   È possibile analizzare i tempi di risposta della pagina Web usando la visualizzazione Tabelle o la visualizzazione Grafici nell'**Analizzatore test di carico**:
 
 -   Analisi dei tempi di risposta della pagina web nella visualizzazione Tabelle
 
@@ -39,7 +39,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 ### <a name="to-view-response-time-data-in-a-table"></a>Per visualizzare i dati sul tempo di risposta in una tabella
 
-1.  Nell'Analizzatore test di carico scegliere **Tabelle** nella barra degli strumenti per assicurarsi che venga visualizzata la griglia della tabella.
+1.  Nell'**Analizzatore test di carico** scegliere **Tabelle** nella barra degli strumenti per assicurarsi che venga visualizzata la griglia della tabella.
 
 2.  Nella casella di riepilogo **Tabella** selezionare **Pagine**.
 
@@ -68,11 +68,11 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 ## <a name="view-response-time-data-in-a-graph"></a>Visualizzare i dati sul tempo di risposta in un grafico
 
-È anche possibile visualizzare i dati sul tempo di risposta in un grafico, per rilevare le modifiche nel corso del tempo durante il test di carico. Questa opzione è particolarmente utile se il modello di carico aumenta durante l'esecuzione del test, ad esempio se si usa il modello di carico per passaggio. Per altre informazioni, vedere [Modifica dei modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+È anche possibile visualizzare i dati sul tempo di risposta in un grafico, per rilevare le modifiche nel corso del tempo durante il test di carico. Questa opzione è particolarmente utile se il modello di carico aumenta durante l'esecuzione del test, ad esempio se si usa il modello di carico per passaggio. Per altre informazioni, vedere [Modificare i modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>Per visualizzare i dati sul tempo di risposta in un grafico
 
-1.  Nell'Analizzatore test di carico scegliere **Grafici** nella barra degli strumenti per assicurarsi che venga visualizzato il grafico.
+1.  Nell'**Analizzatore test di carico** scegliere **Grafici** nella barra degli strumenti per assicurarsi che venga visualizzato il grafico.
 
 2.  Nella finestra **Contatori** espandere il nodo dello scenario desiderato, ad esempio `Scenario1`.
 
@@ -86,10 +86,10 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
      I dati vengono aggiunti al grafico.
 
-7.  (Facoltativo) Ripetere il passaggio precedente per Avg. Page Time, Page Response Time Goal e Total Pages.
+7.  (Facoltativo) Ripetere il passaggio precedente per **Avg. Page Time**, **Page Response Time Goal** e **Total Pages**.
 
     > [!NOTE]
-    > Il valore Page Response Time Goal è costante.
+    > Il valore **Page Response Time Goal** è costante.
 
  Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 

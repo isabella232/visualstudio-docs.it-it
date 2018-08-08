@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232319"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388293"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Passaggio 5: Usare il modello di progetto Web Flask di sondaggi
 
@@ -32,19 +32,19 @@ In questo passaggio viene descritto come:
 > - Comprendere gli archivi dati di backup (passaggio 5-3)
 > - Comprendere i dettagli dei sondaggi e le visualizzazioni risultati (passaggio 5-4)
 
-Visual Studio elabora anche il "Progetto Web Flask/Jade di sondaggi", che produce un'app identica ma usa l'estensione Jade per il motore per la creazione di modelli Jinja. Per informazioni dettagliate, vedere il [passaggio 4, relativo al modello di Progetto Web Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
+Visual Studio include anche il modello "Progetto Web Flask/Jade di sondaggi" che produce un'app identica ma usa l'estensione Jade per il motore per la creazione di modelli Jinja. Per informazioni dettagliate, vedere il [passaggio 4, relativo al modello di Progetto Web Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
 ## <a name="step-5-1-create-the-project"></a>Passaggio 5-1: Creare il progetto
 
-1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione "LearningFlask" creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **File** > **Nuovo** > **Progetto**.
+1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningFlask** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **File** > **Nuovo** > **Progetto**.
 
-1. Nella finestra di dialogo Nuovo progetto cercare e selezionare il modello "Progetto Web Flask di sondaggi", assegnare al progetto il nome "FlaskPolls" e selezionare **OK**.
+1. Nella finestra di dialogo Nuovo progetto cercare e selezionare il modello **Progetto Web Flask di sondaggi**, assegnare al progetto il nome "FlaskPolls" e selezionare **OK**.
 
-1. Come gli altri modelli di progetto in Visual Studio, il modello "Progetto Web Flask di sondaggi" include un file `requirements.txt` e Visual Studio chiede dove installare le dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite. Questo modello richiede l'uso di Flask nonché dei pacchetti azure-storage e pymongo; il "Progetto Web Flask/Jade di sondaggi" richiede anche pyjade.
+1. Come gli altri modelli di progetto in Visual Studio, il modello "Progetto Web Flask di sondaggi" include un file *requirements.txt* e Visual Studio chiede dove installare le dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite. Questo modello richiede l'uso di Flask nonché dei pacchetti azure-storage e pymongo; il "Progetto Web Flask/Jade di sondaggi" richiede anche pyjade.
 
-1. Impostare il progetto "FlaskPolls" come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse su tale progetto in **Esplora soluzioni** e scegliendo **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
+1. Impostare il progetto **FlaskPolls** come predefinito per la soluzione Visual Studio facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliendo **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 
-1. Selezionare **Debug > Avvia debug** (F5) o usare il pulsante **Server Web** sulla barra degli strumenti per eseguire il server:
+1. Selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti per eseguire il server:
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -52,7 +52,7 @@ Visual Studio elabora anche il "Progetto Web Flask/Jade di sondaggi", che produc
 
     ![Visualizzazione completa dell'app del progetto Web Flask di sondaggi](media/flask/step06-full-app-view.png)
 
-1. Nella home page il pulsante di **creazione di sondaggi di esempio** consente di inizializzare l'archivio dati dell'app con tre diversi sondaggi, descritti nella pagina `models/samples.json`. Per impostazione predefinita, l'app usa un database in memoria, come illustrato nella pagina di informazioni, che viene reimpostato ogni volta che l'app viene riavviata. L'app contiene anche codice per funzionare con Archiviazione di Azure e Mongo DB, come descritto più avanti in questo articolo.
+1. Nella home page il pulsante di **creazione di sondaggi di esempio** consente di inizializzare l'archivio dati dell'app con tre diversi sondaggi descritti nella pagina *models/samples.json*. Per impostazione predefinita, l'app usa un database in memoria, come illustrato nella pagina di informazioni, che viene reimpostato ogni volta che l'app viene riavviata. L'app contiene anche codice per funzionare con Archiviazione di Azure e Mongo DB, come descritto più avanti in questo articolo.
 
 1. Dopo avere inizializzato l'archivio dati, è possibile votare nei vari sondaggi come indicato nella home page (la barra di navigazione e il piè di pagina sono stati omessi per brevità):
 
@@ -68,7 +68,7 @@ Visual Studio elabora anche il "Progetto Web Flask/Jade di sondaggi", che produc
 
 1. È possibile lasciare l'app in esecuzione per le sezioni seguenti.
 
-    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (generalmente `env`) e scegliere **Ignora questi elementi locali**.
+    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (generalmente **env**) e scegliere **Ignora questi elementi locali**.
 
 ### <a name="examine-the-project-contents"></a>Esaminare i contenuti del progetto
 
@@ -76,7 +76,7 @@ Come accennato prima, molte parti di un progetto creato dal modello "Progetto We
 
 ## <a name="step-5-2-understand-the-data-models"></a>Passaggio 5-2: Comprendere i modelli di dati
 
-I modelli di dati per l'app sono classi Python denominate Poll e Choice definite in `models/__init__.py`. La classe Poll rappresenta una domanda, per la quale una raccolta di istanze di Choice rappresenta l'insieme delle risposte disponibili. Poll gestisce inoltre il numero totale di voti (per ogni scelta) e un metodo per calcolare le statistiche usate per la generazione di visualizzazioni:
+I modelli di dati per l'app sono classi Python denominate Poll e Choice definite in *models/\_\_init\_\_.py*. La classe Poll rappresenta una domanda, per la quale una raccolta di istanze di Choice rappresenta l'insieme delle risposte disponibili. Poll gestisce inoltre il numero totale di voti (per ogni scelta) e un metodo per calcolare le statistiche usate per la generazione di visualizzazioni:
 
 ```python
 class Poll(object):
@@ -116,14 +116,14 @@ L'app creata dal modello "Progetto Web Flask di sondaggi" può essere eseguita r
 
 Il meccanismo di archiviazione dei dati funziona nel modo seguente:
 
-1. Il tipo di repository viene specificato attraverso la variabile di ambiente `REPOSITORY_NAME`, che può essere impostata su "memory", "azuretablestore" o "mongodb". Un frammento di codice in `settings.py` recupera il nome, usando "memory" come valore predefinito. Se si vuole modificare l'archivio di backup, è necessario impostare la variabile di ambiente e riavviare l'app.
+1. Il tipo di repository viene specificato attraverso la variabile di ambiente `REPOSITORY_NAME`, che può essere impostata su "memory", "azuretablestore" o "mongodb". Un frammento di codice in *settings.py* recupera il nome, usando "memory" come valore predefinito. Se si vuole modificare l'archivio di backup, è necessario impostare la variabile di ambiente e riavviare l'app.
 
     ```python
     from os import environ
     REPOSITORY_NAME = environ.get('REPOSITORY_NAME', 'memory')
     ```
 
-1. Il codice `settings.py` inizializza quindi un oggetto `REPOSITORY_SETTINGS`. Per usare l'archiviazione tabelle di Azure o Mongo DB, per prima cosa è necessario inizializzare tali archivi dati in un'altra posizione, quindi impostare le variabili di ambiente necessarie che indicano all'app come connettersi all'archivio:
+1. Il codice *settings.py* inizializza quindi un oggetto `REPOSITORY_SETTINGS`. Per usare l'archiviazione tabelle di Azure o Mongo DB, per prima cosa è necessario inizializzare tali archivi dati in un'altra posizione, quindi impostare le variabili di ambiente necessarie che indicano all'app come connettersi all'archivio:
 
     ```python
     if REPOSITORY_NAME == 'azuretablestorage':
@@ -145,7 +145,7 @@ Il meccanismo di archiviazione dei dati funziona nel modo seguente:
         raise ValueError('Unknown repository.')
     ```
 
-1. In `views.py` l'app chiama un metodo factory per inizializzare un oggetto `Repository` con il nome e le impostazioni dell'archivio dati:
+1. In *views.py* l'app chiama un metodo factory per inizializzare un oggetto `Repository` con il nome e le impostazioni dell'archivio dati:
 
     ```python
     from FlaskPolls.models import PollNotFound
@@ -155,7 +155,7 @@ Il meccanismo di archiviazione dei dati funziona nel modo seguente:
     repository = create_repository(REPOSITORY_NAME, REPOSITORY_SETTINGS)
     ```
 
-1. Il metodo `factory.create_repository` viene rilevato in `models\factory.py`, che si limita a importare il modulo di repository appropriato, quindi crea un'istanza di `Repository`:
+1. Il metodo `factory.create_repository` viene rilevato in *models\factory.py*, che si limita a importare il modulo di repository appropriato, quindi crea un'istanza di `Repository`:
 
     ```python
     def create_repository(name, settings):
@@ -174,20 +174,20 @@ Il meccanismo di archiviazione dei dati funziona nel modo seguente:
         return Repository(settings)
     ```
 
-1. Le implementazioni della classe `Repository` specifiche per ogni archivio dati sono reperibili in `models\azuretablestorage.py`, `models\mongodb.py` e `models\memory.py`. L'implementazione di Archiviazione di Azure usa il pacchetto azure-storage, l'implementazione di Mongo DB usa il pacchetto pymongo. Come indicato nel passaggio 5-1, entrambi i pacchetti sono inclusi nel file `requirements.txt` del modello di progetto. L'esplorazione dei dettagli viene lasciata come esercizio per il lettore.
+1. Le implementazioni della classe `Repository` specifiche per ogni archivio dati sono reperibili in *models\azuretablestorage.py*, *models\mongodb.py* e *models\memory.py*. L'implementazione di Archiviazione di Azure usa il pacchetto azure-storage, l'implementazione di Mongo DB usa il pacchetto pymongo. Come indicato nel passaggio 5-1, entrambi i pacchetti sono inclusi nel file *requirements.txt* del modello di progetto. L'esplorazione dei dettagli viene lasciata come esercizio per il lettore.
 
 In breve, la classe `Repository` estrae le specifiche dell'archivio dati e l'app usa le variabili di ambiente in fase di esecuzione per selezionare e configurare una delle tre implementazioni da usare.
 
 I passaggi seguenti aggiungono il supporto per un archivio dati diverso dai tre specificati dal modello di progetto, se necessario:
 
-1. Copiare `memory.py` in un nuovo file in modo da avere l'interfaccia di base per la classe `Repository`.
+1. Copiare *memory.py* in un nuovo file in modo da avere l'interfaccia di base per la classe `Repository`.
 1. Modificare l'implementazione della classe in base all'archivio dati in uso.
-1. Modificare `factory.py` per aggiungere un altro caso `elif`, che riconosce il nome dell'archivio dati aggiunto e importa il modulo appropriato.
-1. Modificare `settings.py` per riconoscere un altro nome nella variabile di ambiente `REPOSITORY_NAME` e inizializzare `REPOSITORY_SETTINGS` di conseguenza.
+1. Modificare *factory.py* per aggiungere un altro caso `elif` che riconosce il nome dell'archivio dati aggiunto e importa il modulo appropriato.
+1. Modificare *settings.py* per riconoscere un altro nome nella variabile di ambiente `REPOSITORY_NAME` e inizializzare `REPOSITORY_SETTINGS` di conseguenza.
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>Assegnare valori di inizializzazione all'archivio dati da samples.json
 
-Inizialmente un archivio dati, indipendentemente dall'opzione scelta, non contiene sondaggi, quindi nella home page dell'app un messaggio indica che non sono disponibili sondaggi e appare un pulsante di **creazione di sondaggi di esempio**. Quando si seleziona il pulsante, tuttavia, la visualizzazione cambia e appaiono i sondaggi disponibili. Questo cambiamento è dovuto ai tag condizionali in `templates\index.html` (alcune righe vuote sono state omesse per brevità):
+Inizialmente un archivio dati, indipendentemente dall'opzione scelta, non contiene sondaggi, quindi nella home page dell'app un messaggio indica che **non sono disponibili sondaggi** e viene visualizzato un pulsante di **creazione di sondaggi di esempio**. Quando si seleziona il pulsante, tuttavia, la visualizzazione cambia e appaiono i sondaggi disponibili. Questo cambiamento è dovuto ai tag condizionali in *templates\index.html* (alcune righe vuote sono state omesse per brevità):
 
 ```html
 {% extends "layout.html" %}
@@ -218,7 +218,7 @@ Inizialmente un archivio dati, indipendentemente dall'opzione scelta, non contie
 
 La variabile `polls` nel modello proviene da una chiamata a `repository.get_polls`, che non restituisce nulla finché l'archivio dati non viene inizializzato.
 
-Selezionando il pulsante di **creazione di sondaggi di esempio** si passa all'URL /seed. Il gestore per tale route è definito in `views.py`:
+Selezionando il pulsante di **creazione di sondaggi di esempio** si passa all'URL /seed. Il gestore per la route è definito in *views.py*:
 
 ```python
 @app.route('/seed', methods=['POST'])
@@ -228,13 +228,13 @@ def seed():
     return redirect('/')
 ```
 
-La chiamata a `repository.add_sample_polls()` termina in una delle implementazioni specifiche di `Repository` per l'archivio dati scelto. Ogni implementazione chiama il metodo `_load_samples_json` rilevato in `models\__init__.py` per caricare il file `models\samples.json` in memoria, quindi esegue l'iterazione dei dati per creare gli oggetti `Poll` e `Choice` necessari nell'archivio dati.
+La chiamata a `repository.add_sample_polls()` termina in una delle implementazioni specifiche di `Repository` per l'archivio dati scelto. Ogni implementazione chiama il metodo `_load_samples_json` rilevato in *models\__init__.py* per caricare il file *models\samples.json* in memoria, quindi esegue l'iterazione dei dati per creare gli oggetti `Poll` e `Choice` necessari nell'archivio dati.
 
-Al termine del processo, l'istruzione `redirect('/')` nel metodo `seed` torna alla home page. Poiché `repository.get_polls` ora restituisce un oggetto dati, i tag condizionali in `templates\index.html` eseguono il rendering di una tabella che contiene i sondaggi.
+Al termine del processo, l'istruzione `redirect('/')` nel metodo `seed` torna alla home page. Poiché `repository.get_polls` ora restituisce un oggetto dati, i tag condizionali in *templates\index.html* eseguono il rendering di una tabella che contiene i sondaggi.
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Domanda: come si aggiungono nuovi sondaggi all'app?
 
-Risposta: l'app disponibile attraverso il modello di progetto non include una funzionalità per l'aggiunta o la modifica dei sondaggi. È possibile modificare `models\samples.json` per creare nuovi dati di inizializzazione, ma tale operazione comporterebbe la reimpostazione dell'archivio dati. Per implementare le funzionalità di modifica, è necessario estendere l'interfaccia della classe `Repository` con metodi per la creazione delle istanze `Choice` e `Poll` necessarie, quindi implementare un'interfaccia utente in altre pagine che usano quei metodi.
+Risposta: l'app disponibile attraverso il modello di progetto non include una funzionalità per l'aggiunta o la modifica dei sondaggi. È possibile modificare *models\samples.json* per creare nuovi dati di inizializzazione, ma tale operazione comporterebbe la reimpostazione dell'archivio dati. Per implementare le funzionalità di modifica, è necessario estendere l'interfaccia della classe `Repository` con metodi per la creazione delle istanze `Choice` e `Poll` necessarie, quindi implementare un'interfaccia utente in altre pagine che usano quei metodi.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Passaggio 5-4: Comprendere i dettagli dei sondaggi e le visualizzazioni risultati
 
@@ -242,7 +242,7 @@ La maggior parte delle visualizzazioni generate dal modello "Progetto Web Flask/
 
 A questo punto non resta che esaminare i voti (dettagli) e la visualizzazione dei risultati di un singolo sondaggio.
 
-Quando si seleziona un sondaggio dalla home page l'app passa all'URL /poll/\<key\> dove *key* è l'identificatore univoco per un sondaggio. In `views.py` è possibile vedere che la funzione `details` viene assegnata per gestire il routing di tale URL sia per GET che per le richieste. È anche possibile vedere che l'uso di `<key>` nel routing dell'URL consente di eseguire il mapping di tutte le route di quel modulo alla stessa funzione e genera un argomento alla funzione con lo stesso nome:
+Quando si seleziona un sondaggio dalla home page l'app passa all'URL /poll/\<key\> dove *key* è l'identificatore univoco per un sondaggio. In *views.py* si può vedere che la funzione `details` viene assegnata per gestire il routing di tale URL sia per GET che per le richieste. È anche possibile vedere che l'uso di `<key>` nel routing dell'URL consente di eseguire il mapping di tutte le route di quel modulo alla stessa funzione e genera un argomento alla funzione con lo stesso nome:
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])
@@ -266,7 +266,7 @@ def details(key):
     )
 ```
 
-Per visualizzare un sondaggio (richieste GET), questa funzione chiama semplicemente `templates\details.html`, che esegue l'iterazione nella matrice `choices` del sondaggio, creando un pulsante di opzione per ogni scelta.
+Per visualizzare un sondaggio (richieste GET), questa funzione chiama semplicemente *templates\details.html*, che esegue l'iterazione nella matrice `choices` del sondaggio, creando un pulsante di opzione per ogni scelta.
 
 ```html
 {% extends "layout.html" %}
@@ -298,7 +298,7 @@ Per visualizzare un sondaggio (richieste GET), questa funzione chiama sempliceme
 
 Poiché il pulsante di **voto** ha `type="submit"`, selezionandolo si genera una richiesta POST allo stesso URL, che viene di nuovo indirizzato alla funzione `details`. Questa volta, tuttavia, estrae la scelta dai dati del modulo e reindirizza a /results/\<choice\>.
 
-L'URL /results/\<key\> viene indirizzato alla funzione `results`in `views.py`, che quindi chiama il metodo `calculate_stats` del sondaggio e usa `templates\results.html` per il rendering:
+L'URL /results/\<key\> viene indirizzato alla funzione `results` in *views.py*, che quindi chiama il metodo `calculate_stats` del sondaggio e usa *templates\results.html* per il rendering:
 
 ```python
 @app.route('/results/<key>')
@@ -314,7 +314,7 @@ def results(key):
     )
 ```
 
-Il modello `results.html`, a sua volta, esegue semplicemente l'iterazione nelle scelte del sondaggio e genera un indicatore di stato per ogni scelta:
+Il modello *results.html*, a sua volta, esegue semplicemente l'iterazione nelle scelte del sondaggio e genera un indicatore di stato per ogni scelta:
 
 ```html
 {% extends "layout.html" %}
@@ -358,5 +358,5 @@ L'esecuzione di un'app Web nel computer di sviluppo è solo un passaggio per ren
 
 - Configurare una pipeline di integrazione continua/distribuzione continua in un servizio come Visual Studio Team Services (VSTS). Oltre a usare il controllo del codice sorgente (in VSTS, GitHub o altrove), è possibile fare in modo che VSTS esegua automaticamente gli unit test come prerequisito per il rilascio, oltre che configurare la pipeline per la distribuzione in un server di gestione temporanea per eseguire test aggiuntivi prima della distribuzione in produzione. VSTS, inoltre, si integra con soluzioni di monitoraggio, come App Insights, chiudendo così l'intero ciclo con strumenti di pianificazione Agile. Per altre informazioni, vedere:
 
-  - [Create a CI/CD pipeline for Python with the Azure DevOps project](/vsts/build-release/apps/cd/azure/azure-devops-project-python?view=vsts) (Creare una pipeline di integrazione continua/distribuzione continua per Python con il progetto Azure DevOps)
+  - [Create a CI/CD pipeline for Python with the Azure DevOps project](/azure/devops-project/azure-devops-project-python?view=vsts) (Creare una pipeline di integrazione continua/distribuzione continua per Python con il progetto Azure DevOps)
   - [Python development in Azure with Visual Studio Team Services (video, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/) (Sviluppo Python in Azure con Visual Studio Team Services - video, 11m 21s).

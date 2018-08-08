@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5dc8ccda83f700538ae84dd565fcdd299d7d1331
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889996"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381693"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Progettare XAML in Visual Studio
 
@@ -50,7 +50,7 @@ Per attività più semplici l'IDE per Visual Studio e Blend per Visual Studio co
 
 - **Impostazioni e layout sincronizzati:** layout personalizzati consentono di salvare e applicare le personalizzazioni di layout delle finestre degli strumenti. Quando si effettua l'accesso con lo stesso account Microsoft, Visual Studio sincronizza queste personalizzazioni e preferenze per Visual Studio e Blend per Visual Studio tra più computer. Vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-- **Un Esplora soluzioni comune:** Esplora soluzioni offre una visualizzazione organizzata dei progetti e dei relativi file, nonché l'accesso immediato ai comandi associati. Con Esplora soluzioni è più facile lavorare con progetti di grandi imprese. Vedere [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md).
+- **Un Esplora soluzioni comune:** **Esplora soluzioni** offre una visualizzazione organizzata dei progetti e dei relativi file, nonché l'accesso immediato ai comandi associati. Con Esplora soluzioni è più facile lavorare con progetti di grandi imprese. Vedere [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md).
 
 - **Team Explorer:** con Team Explorer è possibile gestire i progetti con repository GIT o TFS per agevolare la collaborazione tra team. Vedere [Lavorare in Team Explorer](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 

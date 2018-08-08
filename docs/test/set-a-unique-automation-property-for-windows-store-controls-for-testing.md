@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692356"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382738"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Impostare una proprietà di automazione univoca dei controlli UWP per il test
 
@@ -48,13 +48,13 @@ Impostare **AutomationProperties.AutomationId** su **ButtonX** in modo esplicito
 
 Impostare **AutomationProperties.Name** su **ButtonY** in modo esplicito nel file XAML per il controllo.
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
 ## <a name="assign-unique-names"></a>Assegnare nomi univoci
 
-In Blend per Visual Studio è possibile selezionare un'opzione per assegnare nomi univoci a elementi interattivi quali pulsanti, caselle di riepilogo, caselle combinate e caselle di testo. In questo modo al controllo viene assegnato un valore univoco per **AutomationProperties.Name**.
+In Blend per Visual Studio è possibile selezionare un'opzione per assegnare nomi univoci a elementi interattivi quali pulsanti, caselle di riepilogo, caselle combinate e caselle di testo. In questo modo, ai controlli vengono assegnati valori univoci di **AutomationProperties.Name**.
 
 Per assegnare nomi univoci ai controlli esistenti, selezionare **Strumenti** > **Denomina elementi interattivi**.
 

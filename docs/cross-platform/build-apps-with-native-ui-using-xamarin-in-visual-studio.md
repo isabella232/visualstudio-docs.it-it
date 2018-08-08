@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3475bfff07b64c171b506ff1cefaee6c8e55cdda
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232390"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381081"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Creare app con interfaccia utente nativa con Xamarin in Visual Studio
 
@@ -76,7 +76,7 @@ Visual Studio non ha un modello di soluzione per la creazione di applicazioni co
 
 4. Se si vuole usare la piattaforma UWP (Universal Windows Platform) come destinazione, sul lato sinistro della finestra di dialogo **Nuovo progetto** selezionare **Visual C#** e **Universale di Windows**. Nell'elenco dei modelli selezionare **App vuota (Windows universale)** e denominarla **WeatherApp.UWP**.
 
-5. Per ogni progetto dell'applicazione (iOS, Android e UWP),fare clic con il pulsante destro del mouse sulla sezione **Riferimenti** in **Esplora soluzioni** e selezionare **Aggiungi riferimento**. Sul lato sinistro della finestra di dialogo **Gestione riferimenti** selezionare **Progetto** e **Soluzione**. Verrà visualizzato un elenco di tutti i progetti nella soluzione, ad eccezione del progetto di cui si stanno gestendo i riferimenti:
+5. Per ogni progetto dell'applicazione (iOS, Android e UWP) fare clic con il pulsante destro del mouse sulla sezione **Riferimenti** in **Esplora soluzioni** e selezionare **Aggiungi riferimento**. Sul lato sinistro della finestra di dialogo **Gestione riferimenti** selezionare **Progetto** e **Soluzione**. Verrà visualizzato un elenco di tutti i progetti nella soluzione, ad eccezione del progetto di cui si stanno gestendo i riferimenti:
 
    ![Impostazione di un riferimento al progetto .NET Standard](../cross-platform/media/cross-plat-xamarin-build-3.png)
 

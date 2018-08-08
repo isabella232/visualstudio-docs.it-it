@@ -12,14 +12,14 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9fc4b9df68890caee9d8f79b8ecf2080c408db2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7208d3086450604678b1fce78d4f6784bd38d50f
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065595"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251621"
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Cross-Platform Mobile Development Examples
+# <a name="cross-platform-mobile-development-examples"></a>Esempi di sviluppo di app per dispositivi mobili multipiattaforma
 Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma generano esempi completi che è possibile usare per acquisire dimestichezza. Inoltre, in Windows Dev Center sono disponibili molte applicazioni di esempio che è possibile scaricare e provare in Visual Studio.  
   
 -   [Esempio di applicazione Android hello-jni](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
@@ -52,4 +52,4 @@ Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobi
   
  Per aprire uno degli esempi in Visual Studio, scaricare il file ZIP e aprire la pagina **Proprietà** del file scaricato in Esplora risorse. Scegliere il pulsante **Sblocca** , quindi **OK**. Estrarre il contenuto del file ZIP nel percorso desiderato, quindi aprire la cartella C++ nell'esempio estratto e aprire il file della soluzione.  
   
- Per compilare l'esempio, premere F7 oppure scegliere **Compila**, **Compila soluzione**sulla barra dei menu.
+ Per compilare l'esempio, premere **F7** oppure scegliere **Compila**, **Compila soluzione** sulla barra dei menu.

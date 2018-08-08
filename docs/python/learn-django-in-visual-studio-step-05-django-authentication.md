@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: e9c30e2cdf0f55db5b09225768b073bb030c841b
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946975"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388371"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Passaggio 5: Autenticare gli utenti in Django
 
 **Passaggio precedente: [Usare il modello Progetto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-Poiché l'autenticazione è un'esigenza comune per le app Web, il modello "Progetto Web Django" include un flusso di autenticazione di base. Il modello "Progetto Web Django di sondaggi", presentato nel passaggio 6 di questa esercitazione include lo stesso flusso. Quando si usa uno dei modelli di progetto Django, Visual Studio include tutti i moduli necessari per l'autenticazione nel file `settings.py` del progetto Django.
+Poiché l'autenticazione è un'esigenza comune per le app Web, il modello "Progetto Web Django" include un flusso di autenticazione di base. Il modello "Progetto Web Django di sondaggi", presentato nel passaggio 6 di questa esercitazione include lo stesso flusso. Quando si usa uno dei modelli di progetto Django, Visual Studio include tutti i moduli necessari per l'autenticazione nel file *settings.py* del progetto Django.
 
 In questo passaggio viene descritto come:
 
@@ -33,15 +33,15 @@ In questo passaggio viene descritto come:
 
 I passaggi seguenti permettono di provare il flusso di autenticazione e descrivono le parti del progetto interessate:
 
-1. Se non sono già state seguite le istruzioni contenute nel file `readme.html` all'interno della radice del progetto per creare un utente con privilegi avanzati (amministratore), farlo ora.
+1. Se non si sono ancora seguite le istruzioni contenute nel file *readme.html* all'interno della radice del progetto per creare un utente con privilegi avanzati (amministratore), farlo ora.
 
-1. Eseguire l'app da Visual Studio usando **Debug** > **Avvia debug** (F5). Quando l'app viene visualizzata nel browser, osservare che l'opzione di **accesso** viene visualizzata nell'angolo in alto a destra della barra di spostamento.
+1. Eseguire l'app da Visual Studio tramite **Debug** > **Avvia debug** (**F5**). Quando l'app viene visualizzata nel browser, osservare che l'opzione di **accesso** viene visualizzata nell'angolo in alto a destra della barra di spostamento.
 
     ![Controllo di accesso nella pagina dell'app Progetto Web Django](media/django/step05-login-control.png)
 
-1. Aprire `templates/app/layout.html` e osservare che l'elemento `<div class="navbar ...>` contiene il tag `{% include app/loginpartial.html %}`. Il tag `{% include %}` indica al sistema di modelli di Django di eseguire il pull del contenuto del file incluso a questo punto nel modello che lo contiene.
+1. Aprire *templates/app/layout.html*. Si noti che l'elemento `<div class="navbar ...>` contiene il tag `{% include app/loginpartial.html %}`. Il tag `{% include %}` indica al sistema di modelli di Django di eseguire il pull del contenuto del file incluso a questo punto nel modello che lo contiene.
 
-1. Aprire `templates/app/loginpartial.html` e osservare il modo in cui viene usato il tag condizionale `{% if user.is_authenticated %}` insieme a un tag `{% else %}` per il rendering di diversi elementi dell'interfaccia utente a seconda che l'utente abbia o meno eseguito l'autenticazione:
+1. Aprire *templates/app/loginpartial.html* e osservare il modo in cui viene usato il tag condizionale `{% if user.is_authenticated %}` insieme a un tag `{% else %}` per il rendering di diversi elementi dell'interfaccia utente a seconda che l'utente abbia o meno eseguito l'autenticazione:
 
     ```html
     {% if user.is_authenticated %}
@@ -62,7 +62,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
     {% endif %}
     ```
 
-1. Poiché nessun utente ha eseguito l'autenticazione quando l'app è stata avviata per la prima volta, il codice di questo modello esegue il rendering solo del collegamento di accesso al percorso relativo "login". Come specificato in `urls.py` e come illustrato nella sezione precedente, viene eseguito il mapping di questa route alla visualizzazione `django.contrib.auth.views.login`, cui vengono forniti i dati seguenti:
+1. Poiché nessun utente ha eseguito l'autenticazione quando l'app è stata avviata per la prima volta, il codice di questo modello esegue il rendering solo del collegamento di accesso al percorso relativo "login". Come specificato in *urls.py* e come illustrato nella sezione precedente, viene eseguito il mapping di questa route alla visualizzazione `django.contrib.auth.views.login`, cui vengono forniti i dati seguenti:
 
     ```python
     {
@@ -76,7 +76,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
     }
     ```
 
-    Qui `template_name` identifica il modello della pagina di accesso, in questo caso `templates/app/login.html`. La proprietà `extra_context` viene aggiunta ai dati del contesto predefinito specificati per il modello. Infine, `authentication_form` specifica una classe modulo da usare con la pagina di accesso nel modello che viene visualizzata come oggetto `form`. Il valore predefinito è `AuthenticationForm` (da `django.contrib.auth.views`). Il modello di progetto di Visual Studio usa invece il modulo definito nel file `forms.py` dell'app:
+    Qui `template_name` identifica il modello della pagina di accesso, in questo caso *templates/app/login.html*. La proprietà `extra_context` viene aggiunta ai dati del contesto predefinito specificati per il modello. `authentication_form`, infine, specifica una classe modulo da usare con la pagina di accesso. Nel modello viene visualizzata come oggetto `form`. Il valore predefinito è `AuthenticationForm` (da `django.contrib.auth.views`). Il modello di progetto di Visual Studio usa invece il modulo definito nel file *forms.py* dell'app:
 
     ```python
     from django import forms
@@ -97,7 +97,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
     Come si può notare, questa classe modulo deriva da `AuthenticationForm` ed esegue l'override in modo specifico dei campi relativi a nome utente e password per aggiungere testo segnaposto. Il modello di Visual Studio include questo codice esplicito in base al presupposto che si voglia probabilmente personalizzare il modulo, ad esempio aggiungendo una convalida della complessità della password.
 
-1. Quando si passa alla pagina di accesso, quindi, l'app esegue il rendering del modello `login.html`. Le variabili `{{ form.username }}` e `{{ form.password }}` eseguono il rendering dei moduli `CharField` da `BootstrapAuthenticationForm`. Sono anche presenti una sezione predefinita per visualizzare gli errori di convalida e un elemento già pronto per gli account di accesso social se si sceglie di aggiungere questi servizi.
+1. Quando si passa alla pagina di accesso, quindi, l'app esegue il rendering del modello *login.html*. Le variabili `{{ form.username }}` e `{{ form.password }}` eseguono il rendering dei moduli `CharField` da `BootstrapAuthenticationForm`. Sono anche presenti una sezione predefinita per visualizzare gli errori di convalida e un elemento già pronto per gli account di accesso social se si sceglie di aggiungere questi servizi.
 
     ```html
     {% extends "app/layout.html" %}
@@ -146,13 +146,13 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
 1. Quando si invia il modulo, Django tenta di autenticare le credenziali specificate dall'utente, ad esempio le credenziali dell'utente con privilegi avanzati. Se l'autenticazione non riesce, resta visualizzata la stessa pagina, ma `form.errors` viene impostato su true. Se l'autenticazione riesce, Django passa all'URL relativo nel campo "next", `<input type="hidden" name="next" value="/" />`, che in questo caso è la home page (`/`).
 
-1. A questo punto, quando viene eseguito di nuovo il rendering della home page, la proprietà `user.is_authenticated` è true quando viene eseguito il rendering del modello `loginpartial.html`. Di conseguenza, viene visualizzato un messaggio "Hello (nome utente)" e un pulsante di disconnessione. È possibile usare `user.is_authenticated` in altre parti dell'app per controllare l'autenticazione.
+1. A questo punto, quando viene eseguito di nuovo il rendering della home page, la proprietà `user.is_authenticated` è true quando viene eseguito il rendering del modello *loginpartial.html*. Di conseguenza, vengono visualizzati il messaggio **Hello (nome utente)** e **Log off** (Disconnetti). È possibile usare `user.is_authenticated` in altre parti dell'app per controllare l'autenticazione.
 
     ![Messaggio Hello e controllo di disconnessione nella pagina dell'app Progetto Web Django](media/django/step05-logoff-control.png)
 
 1. Per controllare se l'utente autenticato è autorizzato ad accedere a determinate risorse, è necessario recuperare le autorizzazioni specifiche dell'utente dal database. Per altre informazioni, vedere [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Uso del sistema di autenticazione Django) nella documentazione di Django.
 
-1. L'utente con privilegi avanzati o amministratore, in particolare, è autorizzato ad accedere alle interfacce di amministrazione Django predefinite mediante gli URL relativi "/admin/" e "/ admin/doc /". Per abilitare queste interfacce, aprire il file `urls.py` del progetto Django e rimuovere i commenti dalle voci seguenti:
+1. L'utente con privilegi avanzati o amministratore, in particolare, è autorizzato ad accedere alle interfacce di amministrazione Django predefinite mediante gli URL relativi "/admin/" e "/ admin/doc /". Per abilitare queste interfacce, aprire il file *urls.py* del progetto Django e rimuovere i commenti dalle voci seguenti:
 
     ```python
     from django.conf.urls import include
@@ -171,7 +171,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
     ![Interfaccia di amministrazione Django](media/django/step05-administrator-interface.png)
 
-1. La parte finale per il flusso di autenticazione è la disconnessione. Come si può notare in `loginpartial.html`, il collegamento per la **disconnessione** invia semplicemente una richiesta POST all'URL relativo "/login", gestito dalla visualizzazione predefinita `django.contrib.auth.views.logout`. Questa visualizzazione non mostra alcuna interfaccia utente e si limita a passare alla home page, come mostrato in `urls.py` per il modello "^ logout$". Se si vuole visualizzare una pagina di disconnessione, modificare prima di tutto il modello di URL nel modo seguente per aggiungere una proprietà "template_name" e rimuovere la proprietà "next_page":
+1. La parte finale per il flusso di autenticazione è la disconnessione. Come si può notare in *loginpartial.html*, il collegamento **Log off** (Disconnetti) invia semplicemente una richiesta POST all'URL relativo "/login", gestito dalla visualizzazione predefinita `django.contrib.auth.views.logout`. Questa visualizzazione non è dotata di un'interfaccia utente e si limita a passare alla home page, come illustrato in *urls.py* per il modello "^ logout$". Se si vuole visualizzare una pagina di disconnessione, modificare prima di tutto il modello di URL nel modo seguente per aggiungere una proprietà "template_name" e rimuovere la proprietà "next_page":
 
     ```python
     url(r'^logout$',
@@ -183,7 +183,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
         name='logout')
     ```
 
-    Creare quindi `templates/app/loggedoff.html` con il contenuto (minimo) seguente:
+    Creare quindi *templates/app/loggedoff.html* con il contenuto (minimo) seguente:
 
     ```html
     {% extends "app/layout.html" %}

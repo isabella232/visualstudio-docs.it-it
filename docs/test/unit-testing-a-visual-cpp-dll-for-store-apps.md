@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117628"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380512"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Come testare una DLL di Visual C++
 
@@ -63,19 +63,19 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 2.  Scegliere **Esegui** dal menu **Test**, quindi **Esegui tutto**.
 
-     Il progetto di test viene compilato ed eseguito. Verrà visualizzata la finestra di Esplora test con il test elencato in **Test superati**. Nel riquadro di riepilogo nella parte inferiore della finestra sono disponibili ulteriori dettagli sul test selezionato.
+     Il progetto di test viene compilato ed eseguito. Viene visualizzata la finestra di **Esplora test** con il test elencato in **Test superati**. Nel **riquadro di riepilogo** nella parte inferiore della finestra sono disponibili altri dettagli sul test selezionato.
 
      ![Esplora test](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Aggiungere il progetto di DLL alla soluzione
 
-1.  In Esplora soluzioni scegliere il nome della soluzione. Dal menu di scelta rapida scegliere **Aggiungi** e quindi **Aggiungi nuovo progetto**.
+1.  In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta rapida scegliere **Aggiungi** e quindi **Aggiungi nuovo progetto**.
 
      ![Creare il progetto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  Nella finestra di dialogo **Aggiungi nuovo progetto** scegliere **DLL (app UWP)**.
 
-3.  Aggiungere il seguente codice al file **RooterLib.h**:
+3.  Aggiungere il seguente codice al file *RooterLib.h*:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -103,15 +103,15 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 4.  Aggiungere il simbolo di ROOTERLIB_EXPORTS alla riga di comando.
 
-    1.  In Esplora soluzioni selezionare il progetto **RooterLib** e quindi scegliere **Proprietà** dal menu di scelta rapida.
+    1.  In **Esplora soluzioni** selezionare il progetto **RooterLib** e quindi scegliere **Proprietà** dal menu di scelta rapida.
 
          ![Aggiungere una definizione di un simbolo del preprocessore](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2.  Nella finestra di dialogo Pagina delle proprietà di RooterLib Property espandere **Proprietà di configurazione**, espandere **C++** e scegliere **Preprocessore**.
+    2.  Nella finestra di dialogo **Pagina delle proprietà di RooterLib** espandere **Proprietà di configurazione**, espandere **C++** e scegliere **Preprocessore**.
 
-    3.  Scegliere **\<Modifica>** nell'elenco **Definizioni preprocessore** e quindi aggiungere `ROOTERLIB_EXPORTS` nella finestra di dialogo Definizioni preprocessore.
+    3.  Scegliere **\<Modifica>** nell'elenco **Definizioni preprocessore** e quindi aggiungere `ROOTERLIB_EXPORTS` nella finestra di dialogo **Definizioni preprocessore**.
 
-5.  Aggiungere implementazioni minime delle funzioni dichiarate. Aprire **RooterLib.cpp** e aggiungere il codice seguente:
+5.  Aggiungere implementazioni minime delle funzioni dichiarate. Aprire *RooterLib.cpp* e aggiungere il codice seguente:
 
     ```cpp
     // constructor
@@ -131,17 +131,17 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 1.  Aggiungere RooterLib al progetto RooterLibTests.
 
-    1.  In Esplora soluzioni selezionare il progetto **RooterLibTests** e quindi scegliere **Riferimenti** dal menu di scelta rapida.
+    1.  In **Esplora soluzioni** selezionare il progetto **RooterLibTests** e quindi scegliere **Riferimenti** dal menu di scelta rapida.
 
-    2.  Nella finestra di dialogo delle proprietà del progetto RooterLib espandere **Proprietà comuni** e scegliere **Framework e riferimenti**.
+    2.  Nella finestra di dialogo **Proprietà del progetto** RooterLib espandere **Proprietà comuni** e scegliere **Framework e riferimenti**.
 
     3.  Scegliere **Aggiungi nuovo riferimento**
 
     4.  Nella finestra di dialogo **Aggiungi riferimento** espandere **Soluzione** e quindi scegliere **Progetti**. Selezionare quindi l'elemento **RouterLib**.
 
-2.  Includere il file di intestazione RooterLib in **unittest1.cpp**.
+2.  Includere il file di intestazione RooterLib in *unittest1.cpp*.
 
-    1.  Aprire **unittest1.cpp**.
+    1.  Aprire *unittest1.cpp*.
 
     2.  Aggiungere il codice seguente sotto la riga `#include "CppUnitTest.h"`:
 
@@ -149,7 +149,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
         #include "..\RooterLib\RooterLib.h"
         ```
 
-3.  Aggiungere un test che usa la funzione importata. Aggiungere il codice seguente a **unittest1.cpp**:
+3.  Aggiungere un test che usa la funzione importata. Aggiungere il codice seguente a *unittest1.cpp*:
 
     ```cpp
     TEST_METHOD(BasicTest)
@@ -172,9 +172,9 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 4.  Compilare la soluzione.
 
-     Il nuovo test viene visualizzato in Esplora test nel nodo **Test non eseguiti**.
+     Il nuovo test viene visualizzato in **Esplora test** nel nodo **Test non eseguiti**.
 
-5.  In Esplora test scegliere **Esegui tutto**.
+5.  In **Esplora test** scegliere **Esegui tutto**.
 
      ![Test di base superato](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -203,7 +203,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
     >
     > Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.
 
-2.  In Esplora test scegliere **Esegui tutto**.
+2.  In **Esplora test** scegliere **Esegui tutto**.
 
 3.  Il test ha esito negativo.
 
@@ -212,7 +212,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
     > [!TIP]
     > Verificare che ogni test non venga superato subito dopo averlo scritto. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.
 
-4.  Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Aggiungere quanto segue a **RooterLib.cpp**:
+4.  Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Aggiungere quanto segue a *RooterLib.cpp*:
 
     ```cpp
     #include <math.h>
@@ -233,7 +233,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
     ```
 
-5.  Compilare la soluzione e quindi in Esplora test, scegliere **Esegui tutto**.
+5.  Compilare la soluzione e quindi scegliere **Esegui tutto** in **Esplora test**.
 
      Entrambi i test vengono superati.
 
@@ -243,7 +243,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 ##  <a name="Debug_a_failing_test"></a> Debug di un test non superato
 
-1.  Aggiungere un altro test a **unittest1.cpp**:
+1.  Aggiungere un altro test a *unittest1.cpp*:
 
     ```cpp
     // Verify that negative inputs throw an exception.
@@ -275,9 +275,9 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
     ```
 
-2.  In Esplora test scegliere **Esegui tutto**.
+2.  In **Esplora test** scegliere **Esegui tutto**.
 
-     Il test ha esito negativo. Scegli il nome del test in Esplora test. L'asserzione fallita viene evidenziata. Il messaggio di errore è visibile nel riquadro dei dettagli di Esplora test.
+     Il test ha esito negativo. Scegliere il nome del test in **Esplora test**. L'asserzione fallita viene evidenziata. Il messaggio di errore è visibile nel riquadro dei dettagli di **Esplora test**.
 
      ![NegativeRangeTests non riuscito](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -289,7 +289,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
          Quando l'esecuzione si arresta in corrispondenza del punto di interruzione, eseguire il codice un'istruzione alla volta.
 
-    3.  Aggiungere codice a **RooterLib.cpp** per intercettare l'eccezione:
+    3.  Aggiungere codice a *RooterLib.cpp* per intercettare l'eccezione:
 
         ```cpp
         #include <stdexcept>
@@ -305,7 +305,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
         ```
 
-    1.  In Esplora test scegliere **Esegui tutto** per testare il metodo corretto e assicurarsi di non aver introdotto una regressione.
+    1.  In **Esplora test** scegliere **Esegui tutto** per testare il metodo corretto e assicurarsi di non aver introdotto una regressione.
 
  Tutti i test vengono ora superati.
 

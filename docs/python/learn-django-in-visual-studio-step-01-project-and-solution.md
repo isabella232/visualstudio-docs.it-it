@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8ff4d56673f4de12189111b47e6a38f4b6a60dab
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: de64cd62ecffef2897e5be65b348eddbc9a52e46
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947128"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388163"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Django in Visual Studio
 
@@ -35,7 +35,7 @@ In questa esercitazione si imparerà a:
 ## <a name="prerequisites"></a>Prerequisiti
 
 - Visual Studio 2017 in Windows con le opzioni seguenti:
-  - Carico di lavoro **Sviluppo Python** (scheda **Carico di lavoro** nel programma di installazione). Per istruzioni, vedere [Installazione del supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md).
+  - Carico di lavoro **Sviluppo Python** (scheda **Carico di lavoro** nel programma di installazione). Per istruzioni, vedere [Installare il supporto Python in Visual Studio](installing-python-support-in-visual-studio.md).
   - **GIT per Windows** e **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** sotto a **Strumenti per il codice**.
 
 I modelli di progetto Django sono inclusi anche in tutte le versioni precedenti di Python Tools for Visual Studio, anche se alcuni dettagli possono differire rispetto a quanto presentato in questa esercitazione, in particolare con le versioni precedenti del framework Django.
@@ -60,18 +60,18 @@ Quando si usa Django dalla riga di comando, generalmente si avvia un progetto es
 
 1. Nei campi nella parte inferiore della finestra di dialogo immettere le informazioni seguenti, come mostrato nella figura precedente, e quindi selezionare **OK**:
 
-    - **Nome**: impostare il nome del progetto di Visual Studio su "BasicProject". Questo nome verrà usato anche per il progetto Django.
+    - **Nome**: impostare il nome del progetto di Visual Studio su **BasicProject**. Questo nome verrà usato anche per il progetto Django.
     - **Percorso**: specificare un percorso in cui creare la soluzione e il progetto di Visual Studio.
-    - **Soluzione**: per questa impostazione lasciare il valore predefinito "Crea nuova soluzione".
-    - **Nome della soluzione**: impostare su "LearningDjango", un nome appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
+    - **Soluzione**: per questa impostazione lasciare il valore predefinito **Crea nuova soluzione**.
+    - **Nome della soluzione**: impostare su **LearningDjango**, un nome appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
     - **Crea directory per soluzione**: lasciare impostato il valore predefinito.
-    - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio 2017 e aggiungere GIT per Windows ed Estensione GitHub per Visual Studio nella scheda **Singoli componenti** sotto **Strumenti per il codice**.
+    - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio 2017 e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
 
-1. Dopo un istante, Visual Studio visualizza una finestra di dialogo con il messaggio "Questo progetto richiede pacchetti esterni", mostrato di seguito. Questa finestra di dialogo viene visualizzata perché il modello include un file `requirements.txt` che fa riferimento al pacchetto Django 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
+1. Dopo un istante, Visual Studio visualizza una finestra di dialogo con il messaggio **Questo progetto richiede pacchetti esterni**, riportata di seguito. Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Django 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 
     ![Messaggio che indica che il progetto richiede pacchetti esterni](media/django/step01-requirements-prompt-install-myself.png)
 
-1. Selezionare l'opzione **Installazione manuale**. A breve si creerà l'ambiente virtuale per assicurarsi che venga escluso dal controllo del codice sorgente. L'ambiente può sempre essere creato da `requirements.txt`.
+1. Selezionare l'opzione **Installazione manuale**. A breve si creerà l'ambiente virtuale per assicurarsi che venga escluso dal controllo del codice sorgente. L'ambiente può sempre essere creato da *requirements.txt*.
 
 ## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Passaggio 1-2: Esaminare i controlli Git e pubblicare il progetto in un repository remoto
 
@@ -90,7 +90,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
     ![Finestra di Team Explorer, pagina Modifiche](media/django/step01-team-explorer-changes.png)
 
-1. Sulla barra di stato di Visual Studio selezionare il pulsante dei commit di cui è stato annullato il push (freccia in su con "2") per aprire la pagina **Sincronizzazione** in **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
+1. Nella barra di stato di Visual Studio selezionare il pulsante dei commit di cui è stato annullato il push (freccia in su con **2**) per aprire la pagina **Sincronizzazione** in **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
 
     ![Finestra di Team Explorer che mostra le opzioni relative ai repository Git per il controllo del codice sorgente](media/django/step01-team-explorer.png)
 
@@ -105,7 +105,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 1. Durante lo svolgimento di questa esercitazione, abituarsi a usare periodicamente i controlli in Visual Studio per il commit e il push delle modifiche. Questa esercitazione ricorda di eseguire queste operazioni nei momenti appropriati.
 
 > [!Tip]
-> Per spostarsi rapidamente all'interno di **Team Explorer**, selezionare l'intestazione (che indica "Modifiche" o "Push" nell'immagine sopra) per visualizzare un menu popup delle pagine disponibili.
+> Per spostarsi rapidamente all'interno di **Team Explorer**, selezionare l'intestazione (che indica **Modifiche** o **Push** nelle immagini precedenti) per visualizzare un menu di scelta rapida delle pagine disponibili.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Domanda: Quali sono alcuni dei vantaggi dell'uso del controllo del codice sorgente sin dall'inizio di un progetto?
 
@@ -125,7 +125,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
     ![Comando Aggiungi ambiente virtuale in Esplora soluzioni](media/django/step01-add-virtual-environment-command.png)
 
-1. Viene visualizzata la finestra di dialogo **Aggiungi ambiente virtuale**, con il messaggio "È stato trovato il file requirements.txt". Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
+1. Verrà visualizzata la finestra di dialogo **Aggiungi ambiente virtuale** con il messaggio **È stato trovato il file requirements.txt.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
 
     ![Finestra di dialogo Aggiungi ambiente virtuale con il messaggio sul file requirements.txt](media/django/step01-add-virtual-environment-found-requirements.png)
 
@@ -133,58 +133,58 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
 1. Accettare i privilegi di amministratore se richiesto, quindi attendere alcuni minuti mentre Visual Studio scarica e installa i pacchetti. Questo per Django significa l'espansione di diverse migliaia di file in circa altrettante sottocartelle. È possibile visualizzare lo stato di avanzamento nella finestra **Output** di Visual Studio. Durante l'attesa, leggere le sezioni delle domande seguenti.
 
-1. Nei controlli Git di Visual Studio (sulla barra di stato), selezionare l'indicatore delle modifiche (che indica "99*"), che apre la pagina **Modifiche** in **Team Explorer**.
+1. Nei controlli Git di Visual Studio nella barra di stato selezionare l'indicatore delle modifiche (indica **99&#42;**) che apre la pagina **Modifiche** in **Team Explorer**.
 
-    La creazione dell'ambiente virtuale ha comportato migliaia di modifiche, ma non è necessario includerne alcuna nel controllo del codice sorgente, perché sarà sempre possibile (per l'utente o per chiunque altro cloni il progetto) ricreare l'ambiente da `requirements.txt`.
+    La creazione dell'ambiente virtuale ha comportato migliaia di modifiche, ma non è necessario includerle nel controllo del codice sorgente, perché sarà sempre possibile, per l'utente o per chiunque altro cloni il progetto, ricreare l'ambiente da *requirements.txt*.
 
-    Per escludere l'ambiente virtuale, fare doppio clic sulla cartella `env` e selezionare **Ignora questi elementi locali**.
+    Per escludere l'ambiente virtuale, fare clic con il pulsante destro del mouse sulla cartella **env** e selezionare **Ignora questi elementi locali**.
 
     ![Esclusione dell'ambiente virtuale dalle modifiche del controllo del codice sorgente](media/django/step01-ignore-local-items.png)
 
-1. Dopo l'esclusione dell'ambiente virtuale, le uniche modifiche rimanenti riguardano il file di progetto e `.gitignore`. Il file `.gitignore` contiene una voce aggiunta per la cartella dell'ambiente virtuale. È possibile fare doppio clic sul file per visualizzare una differenza.
+1. Dopo l'esclusione dell'ambiente virtuale, le sole modifiche rimanenti riguardano il file di progetto e quello con estensione *gitignore*. Il file con estensione *gitignore* contiene una voce aggiunta per la cartella dell'ambiente virtuale. È possibile fare doppio clic sul file per visualizzare una differenza.
 
 1. Immettere un messaggio per il commit, selezionare **Esegui commit di tutto** e quindi eseguire il push dei commit nel repository remoto, se lo si desidera.
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Domanda: Perché è utile creare un ambiente virtuale?
 
-Risposta: Un ambiente virtuale è un ottimo strumento per isolare le dipendenze esatte dell'app. Questo isolamento evita i conflitti all'interno di un ambiente Python globale e semplifica i test e la collaborazione. Durante lo sviluppo di un'app, si finisce per introdurre molti utili pacchetti Python nel tempo. Inserendo questi pacchetti in un ambiente virtuale specifico del progetto, è possibile aggiornare facilmente il file `requirements.txt` del progetto che descrive l'ambiente e che è incluso nel controllo del codice sorgente. Quando il progetto viene copiato in altri computer, tra cui server di compilazione, server di distribuzione e altri computer di sviluppo, è facile ricreare l'ambiente usando solo `requirements.txt`, che è il motivo per cui l'ambiente non deve essere incluso nel controllo del codice sorgente. Per altre informazioni, vedere [Uso di ambienti virtuali](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Risposta: Un ambiente virtuale è un ottimo strumento per isolare le dipendenze esatte dell'app. Questo isolamento evita i conflitti all'interno di un ambiente Python globale e semplifica i test e la collaborazione. Quando si sviluppa un'app, si finisce per introdurre nel tempo molti utili pacchetti Python. Inserendo questi pacchetti in un ambiente virtuale specifico del progetto, è possibile aggiornare facilmente il file *requirements.txt* del progetto che descrive l'ambiente e che è incluso nel controllo del codice sorgente. Quando il progetto viene copiato in altri computer, tra cui server di compilazione, server di distribuzione e altri computer di sviluppo, è facile ricreare l'ambiente usando solo *requirements.txt*, che è il motivo per cui non è necessario includere l'ambiente nel controllo del codice sorgente. Per altre informazioni, vedere [Usare ambienti virtuali](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Domanda: Come si rimuove un ambiente virtuale di cui è già stato eseguito il commit nel controllo del codice sorgente?
 
-Risposta: Prima di tutto, modificare il file `.gitignore` per escludere la cartella: individuare la sezione alla fine con il commento `# Python Tools for Visual Studio (PTVS)` e aggiungere una nuova riga per la cartella dell'ambiente virtuale, ad esempio `/BasicProject/env`. Poiché Visual Studio non mostra il file in **Esplora soluzioni**, aprirlo direttamente usando il comando di menu **File** > **Apri** > **File**. È anche possibile aprire il file da **Team Explorer**: nella pagina **Impostazioni** selezionare **Impostazioni repository**, passare alla sezione **Ignora file e file attributi** e quindi selezionare il collegamento **Modifica** accanto a `.gitignore`.
+Risposta: Modificare prima di tutto il file con estensione *gitignore* per escludere la cartella: individuare la sezione alla fine del file con il commento `# Python Tools for Visual Studio (PTVS)` e aggiungere una nuova riga per la cartella dell'ambiente virtuale, ad esempio `/BasicProject/env`. Poiché Visual Studio non mostra il file in **Esplora soluzioni**, aprirlo direttamente usando il comando di menu **File** > **Apri** > **File**. È anche possibile aprire il file da **Team Explorer**: nella pagina **Impostazioni** selezionare **Impostazioni repository**, passare alla sezione **Ignora file e file attributi** e quindi selezionare il collegamento **Modifica** accanto a **.gitignore**.
 
-In secondo luogo, aprire una finestra di comando, passare alla cartella, ad esempio `BasicProject`, che contiene la cartella dell'ambiente virtuale, come `env`, ed eseguire `git rm -r env`. Eseguire quindi il commit delle modifiche dalla riga di comando (`git commit -m 'Remove venv'`) o dalla pagina **Modifiche** di **Team Explorer**.
+In secondo luogo, aprire una finestra di comando, passare alla cartella, ad esempio *BasicProject* che contiene la cartella dell'ambiente virtuale, ad esempio *env*, ed eseguire `git rm -r env`. Eseguire quindi il commit delle modifiche dalla riga di comando (`git commit -m 'Remove venv'`) o dalla pagina **Modifiche** di **Team Explorer**.
 
 ## <a name="step-1-4-examine-the-boilerplate-code"></a>Passaggio 1-4: Esaminare il codice boilerplate
 
 Al termine della creazione del progetto, esaminare il codice boilerplate del progetto Django, che è lo stesso generato dal comando `django-admin startproject <project_name>` dell'interfaccia della riga di comando.
 
-1. Nella radice del progetto si trova `manage.py`, l'utilità di amministrazione della riga di comando Django che Visual Studio imposta automaticamente come file di avvio del progetto. Eseguire l'utilità nella riga di comando usando `python manage.py <command> [options]`. Per attività Django comuni, Visual Studio offre pratici comandi di menu. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Python** per visualizzare l'elenco. Alcuni di questi comandi verranno presentati nel corso di questa esercitazione.
+1. Nella radice del progetto si trova *manage.py*, l'utilità di amministrazione della riga di comando Django che Visual Studio imposta automaticamente come file di avvio del progetto. Eseguire l'utilità nella riga di comando usando `python manage.py <command> [options]`. Per attività Django comuni, Visual Studio offre pratici comandi di menu. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Python** per visualizzare l'elenco. Alcuni di questi comandi verranno presentati nel corso di questa esercitazione.
 
     ![Comandi Django in un menu di scelta rapida del progetto Python](media/django/step01-django-commands-menu.png)
 
 1. Nel progetto è presente una cartella con lo stesso nome del progetto. La cartella contiene i file di progetto Django di base:
 
-    - `__init.py`: file vuoto che indica a Python che questa cartella è un pacchetto Python.
-    - `wsgi.py`: punto di ingresso per server Web compatibili con WSGI per gestire il progetto. In genere, questo file viene lasciato così com'è, in quanto fornisce gli hook per i server Web di produzione.
-    - `settings.py`: contiene le impostazioni per il progetto Django, che vengono modificate durante lo sviluppo di un'app Web.
-    - `urls.py`: contiene una tabella di contenuti per il progetto Django, che verrà anch'essa modificata durante lo sviluppo.
+    - *__init.py*: file vuoto che indica a Python che questa cartella è un pacchetto Python.
+    - *wsgi.py*: punto di ingresso per server Web compatibili con WSGI per gestire il progetto. In genere, questo file viene lasciato così com'è, in quanto fornisce gli hook per i server Web di produzione.
+    - *settings.py*: contiene le impostazioni per il progetto Django, che vengono modificate durante lo sviluppo di un'app Web.
+    - *urls.py*: contiene una tabella di contenuti per il progetto Django, che verrà anch'essa modificata durante lo sviluppo.
 
     ![File del progetto Django in Esplora soluzioni](media/django/step01-django-project-in-solution-explorer.png)
 
-1. Come indicato sopra, il modello di Visual Studio aggiunge anche un file `requirements.txt` al progetto specificando la dipendenza dei pacchetti Django. La presenza di questo file è il motivo per cui creare un ambiente virtuale quando si crea il progetto per la prima volta.
+1. Come indicato sopra, il modello di Visual Studio aggiunge anche un file *requirements.txt* al progetto specificando la dipendenza dei pacchetti Django. La presenza di questo file è il motivo per cui creare un ambiente virtuale quando si crea il progetto per la prima volta.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Domanda: Visual Studio può generare un file requirements.txt da un ambiente virtuale dopo che si installano altri pacchetti?
 
-Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante destro del mouse sull'ambiente virtuale e scegliere il comando **Genera requirements.txt**. È utile usare questo comando periodicamente man mano che si modifica l'ambiente e si esegue il commit delle modifiche apportate a `requirements.txt` nel controllo del codice sorgente, insieme a tutte le altre modifiche del codice che dipendono dall'ambiente. Se si configura l'integrazione continua in un server di compilazione, è necessario generare il file ed eseguire il commit delle modifiche ogni volta che si modifica l'ambiente.
+Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante destro del mouse sull'ambiente virtuale e scegliere il comando **Genera requirements.txt**. È utile usare questo comando periodicamente man mano che si modifica l'ambiente e si esegue il commit delle modifiche apportate a *requirements.txt* nel controllo del codice sorgente, insieme a tutte le altre modifiche del codice che dipendono dall'ambiente. Se si configura l'integrazione continua in un server di compilazione, è necessario generare il file ed eseguire il commit delle modifiche ogni volta che si modifica l'ambiente.
 
 ## <a name="step-1-5-run-the-empty-django-project"></a>Passaggio 1-5: Eseguire il progetto Django vuoto
 
-1. In Visual Studio selezionare **Debug** > **Avvia debug** (F5) o usare il pulsante **Server Web** sulla barra degli strumenti (il browser visualizzato può variare):
+1. In Visual Studio selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti (il browser visualizzato può variare):
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
-1. Eseguire il server significa eseguire il comando `manage.py runserver <port>`, che avvia il server di sviluppo integrato di Django. Se Visual Studio visualizza il messaggio "Impossibile avviare il debugger" perché manca il file di avvio, fare clic con il pulsante destro del mouse su `manage.py` in **Esplora soluzioni** e scegliere **imposta come file di avvio**.
+1. Eseguire il server significa eseguire il comando `manage.py runserver <port>`, che avvia il server di sviluppo integrato di Django. Se Visual Studio visualizza il messaggio **Impossibile avviare il debugger** perché manca il file di avvio, fare clic con il pulsante destro del mouse su **manage.py** in **Esplora soluzioni** e selezionare **Imposta come file di avvio**.
 
 1. Quando si avvia il server, viene visualizzata una finestra della console che mostra il log del server. Visual Studio apre automaticamente un browser all'indirizzo `http://localhost:<port>`. Poiché il progetto Django non include alcuna app, tuttavia, Django mostra solo una pagina predefinita per indicare che quello che è stato fatto fino a questo punto funziona:
 
@@ -194,7 +194,7 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
 ### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Domanda: Django è un server Web e anche un framework?
 
-Risposta: Sì e no. Django ha un server Web integrato, usato per scopi di sviluppo. Il server Web viene usato quando si esegue l'app Web in locale, ad esempio quando si esegue il debug in Visual Studio. Quando si esegue la distribuzione in un host Web, tuttavia, Django usa invece il server Web dell'host. Il modulo `wsgi.py` nel progetto Django si occupa dell'hook nei server di produzione.
+Risposta: Sì e no. Django ha un server Web integrato, usato per scopi di sviluppo. Il server Web viene usato quando si esegue l'app Web in locale, ad esempio quando si esegue il debug in Visual Studio. Quando si esegue la distribuzione in un host Web, tuttavia, Django usa invece il server Web dell'host. Il modulo *wsgi.py* nel progetto Django si occupa dell'hook nei server di produzione.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Domanda: Qual è la differenza tra l'uso dei comandi del menu Debug e dei comandi del server nel sottomenu Python del progetto?
 

@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1c9122ec3f6eaed156c48f6fd31b4cbbed32292b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a94a5681c0348e6e08f9d777ecebaa3e69886cfe
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179648"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379496"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Procedura: specificare il numero di iterazioni test in un'impostazione di esecuzione test di carico
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione test di carico
 
 Dopo avere creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test. Per altre informazioni, vedere [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md).
 
-Usando l'**Editor test di carico** è possibile modificare la proprietà **Iterazioni test** di un valore delle impostazioni esecuzione test nella finestra Proprietà. La proprietà **Iterazioni test** consente di specificare il numero di iterazioni da eseguire in tutti i test prestazioni Web e degli unit test in tutti gli scenari di un test di carico tramite l'**Editor test di carico**.
+Usando l'**Editor test di carico** è possibile modificare la proprietà **Iterazioni test** di un valore delle impostazioni esecuzione test nella finestra **Proprietà**. La proprietà **Iterazioni test** consente di specificare il numero di iterazioni da eseguire in tutti i test prestazioni Web e degli unit test in tutti gli scenari di un test di carico tramite l'**Editor test di carico**.
 
 > [!NOTE]
 > Per un elenco completo delle proprietà delle impostazioni di esecuzione test e delle relative descrizioni, vedere [Proprietà delle impostazioni di esecuzione test di carico](../test/load-test-run-settings-properties.md).
@@ -46,5 +46,5 @@ Usando l'**Editor test di carico** è possibile modificare la proprietà **Itera
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Configurazione delle impostazioni esecuzione test di carico](../test/configure-load-test-run-settings.md)
+- [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)

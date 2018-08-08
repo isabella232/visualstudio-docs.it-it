@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178361"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380166"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedura: creare un plug-in test Web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedura: Creare un plug-in di test prestazioni Web
 
 I plug-in test delle prestazioni web consentono di isolare e riutilizzare codice al di fuori delle istruzioni dichiarative principali nel test delle prestazioni web. Un plug-in test delle prestazioni web personalizzato consente di chiamare parte del codice durante l'esecuzione del test delle prestazioni web. Il plug-in test delle prestazioni web viene eseguito una sola volta per ogni iterazione di test. Inoltre, se si esegue l'override del metodo PreRequest o PostRequest nel plug-in test, i plug-in di tali richieste verranno eseguiti rispettivamente prima e dopo ciascuna richiesta.
 
@@ -31,11 +31,11 @@ I plug-in per test delle prestazioni web personalizzati possono essere utilizzat
 > [!NOTE]
 > È possibile creare anche plug-in test di carico. Vedere [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
 
-## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Per creare un plug-in test Web personalizzato
+## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Per creare un plug-in di test prestazioni Web personalizzato
 
 1.  Aprire un progetto di test di carico e prestazioni web che contenga un test delle prestazioni web.
 
-2.  In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, selezionare **Aggiungi**, quindi scegliere **Nuovo progetto**.
+2.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, selezionare **Aggiungi**, quindi scegliere **Nuovo progetto**.
 
      Viene visualizzata la finestra di dialogo **Aggiungi nuovo progetto**.
 
@@ -47,9 +47,9 @@ I plug-in per test delle prestazioni web personalizzati possono essere utilizzat
 
 6.  Scegliere **OK**.
 
-7.  Il nuovo progetto di libreria di classi viene aggiunto a Esplora soluzioni e la nuova classe viene visualizzata nell'Editor del codice.
+7.  Il nuovo progetto di libreria di classi viene aggiunto a **Esplora soluzioni** e la nuova classe viene visualizzata nell'**Editor di codice**.
 
-8.  In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
+8.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
 
 9. Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
@@ -57,17 +57,17 @@ I plug-in per test delle prestazioni web personalizzati possono essere utilizzat
 
 11. Scegliere **OK**.
 
-     Il riferimento a **Microsoft.VisualStudio.QualityTools.WebTestFramework** viene aggiunto alla cartella **Riferimenti** in Esplora soluzioni.
+     Il riferimento a **Microsoft.VisualStudio.QualityTools.WebTestFramework** viene aggiunto alla cartella **Riferimenti** in **Esplora soluzioni**.
 
-12. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni web in cui è contenuto il test di carico al quale si vuole aggiungere il plug-in del test delle prestazioni web e selezionare **Aggiungi riferimento**.
+12. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni Web in cui è contenuto il test di carico al quale si vuole aggiungere il plug-in di test delle prestazioni Web e selezionare **Aggiungi riferimento**.
 
 13. Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
-14. Scegliere la scheda **Progetti** e selezionare il progetto di libreria di classi.
+14. Scegliere la scheda **Progetti** e selezionare il **progetto di libreria di classi**.
 
 15. Scegliere **OK**.
 
-16. Nell'editor di codice scrivere il codice del plug-in. Creare innanzitutto una nuova classe pubblica derivata dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+16. Nell'**editor di codice** scrivere il codice del plug-in. Creare innanzitutto una nuova classe pubblica derivata dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
 17. Implementare il codice in uno o più gestori eventi. Per un'implementazione di esempio, vedere la sezione seguente relativa all'esempio.
 
@@ -176,7 +176,7 @@ namespace SampleRules
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md)
-- [Codifica di una regola di estrazione personalizzata per un test delle prestazioni Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Codifica di una regola di convalida personalizzata per un test delle prestazioni Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Codificare una regola di estrazione personalizzata per un test delle prestazioni Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Codificare una regola di convalida personalizzata per un test delle prestazioni Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md)
 - [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md)

@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7fee836c8259aac267bd1b3da39bf254c8cdcc63
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117401"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380730"
 ---
 # <a name="unit-testing-visual-c-code"></a>Testing unità di codice Visual C#
 
-Questo argomento descrive come creare unit test per una classe Visual C# in un'app UWP. La classe Rooter rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. Nell'app Maths questa funzione può quindi essere utilizzata per illustrare all'utente le varie operazioni che si possono eseguire con questa funzione matematica.
+Questo articolo descrive un metodo per la creazione di unit test per una classe Visual C# in un'app UWP. La classe Rooter rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. Nell'app Maths questa funzione può quindi essere utilizzata per illustrare all'utente le varie operazioni che si possono eseguire con questa funzione matematica.
 
-In questo argomento viene illustrato come utilizzare unit test come primo passaggio dell'attività di sviluppo. Secondo questo approccio devi innanzitutto scrivere un metodo di test che verifica il comportamento specifico del sistema che stai testando, quindi scriverai il codice che supera il test. Apportando modifiche nell'ordine in cui sono presentate le procedure riportate di seguito, è possibile invertire questa strategia scrivendo prima il codice da testare e quindi gli unit test.
+Questo articolo illustra come usare gli unit test come primo passaggio dell'attività di sviluppo. Secondo questo approccio devi innanzitutto scrivere un metodo di test che verifica il comportamento specifico del sistema che stai testando, quindi scriverai il codice che supera il test. Apportando modifiche nell'ordine in cui sono presentate le procedure riportate di seguito, è possibile invertire questa strategia scrivendo prima il codice da testare e quindi gli unit test.
 
-In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti distinti per gli unit test e la DLL da testare. È anche possibile includere gli unit test direttamente nel progetto DLL oppure creare soluzioni separate per gli unit test e la DLL.
+In questo articolo si creano anche una soluzione di Visual Studio e progetti distinti per gli unit test e la DLL da testare. È anche possibile includere gli unit test direttamente nel progetto DLL oppure creare soluzioni separate per gli unit test e la DLL.
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Creare la soluzione e il progetto unit test
 
@@ -32,7 +32,7 @@ In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti
 
 3. Assegnare al progetto il nome `Maths` e verificare che l'opzione **Crea directory per soluzione** sia selezionata.
 
-4. In Esplora soluzioni selezionare il nome della soluzione, scegliere **Aggiungi** dal menu di scelta rapida e quindi **Nuovo progetto**.
+4. In **Esplora soluzioni** selezionare il nome della soluzione, scegliere **Aggiungi** dal menu di scelta rapida e quindi scegliere **Nuovo progetto**.
 
 5. Nella finestra di dialogo **Nuovo progetto** espandere **Installati**, **Visual C#** e quindi scegliere **Universale di Windows**. Scegli quindi **App unit test (Windows universale)** nell'elenco di modelli di progetto.
 
@@ -66,11 +66,11 @@ In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti
 
         Quando si eseguono i test, viene creata un'istanza di ogni classe di test. I metodi di test vengono chiamati in un ordine non specificato.
 
-   - È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo. Per altre informazioni, vedere [Uso del framework MSTest negli unit test](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md).
+   - È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo. Per altre informazioni, vedere [Usare il framework MSTest negli unit test](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md).
 
 ## <a name="verify-that-the-tests-run-in-test-explorer"></a>Verificare che i test siano eseguiti in Esplora test
 
-1. Inserire codice di test in TestMethod1 nel file **UnitTest1.cs**:
+1. Inserire codice di test in TestMethod1 nel file *UnitTest1.cs*:
 
    ```csharp
    [TestMethod]
@@ -84,13 +84,13 @@ In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti
 
 2. Scegliere **Esegui** dal menu **Test**, quindi **Esegui tutto**.
 
-   Il progetto di test viene compilato ed eseguito. Verrà visualizzata la finestra di Esplora test con il test elencato in **Test superati**. Nel riquadro di riepilogo nella parte inferiore della finestra sono disponibili ulteriori dettagli sul test selezionato.
+   Il progetto di test viene compilato ed eseguito. Viene visualizzata la finestra di **Esplora test** con il test elencato in **Test superati**. Nel **riquadro di riepilogo** nella parte inferiore della finestra sono disponibili altri dettagli sul test selezionato.
 
    ![Esplora test](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Aggiungere la classe Rooter al progetto Maths
 
-1. In Esplora soluzioni selezionare il nome del progetto **Maths**. Scegliere **Aggiungi** dal menu di scelta rapida e quindi **Classe**.
+1. In **Esplora soluzioni** selezionare il nome del progetto **Maths**. Scegliere **Aggiungi** dal menu di scelta rapida e quindi **Classe**.
 
 2. Assegnare il nome *Rooter.cs* al file di classe.
 
@@ -116,7 +116,7 @@ In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti
 
 1. Aggiungi un riferimento all'app Maths al progetto RooterTests.
 
-    1. In Esplora soluzioni scegliere il progetto **RooterTests** e quindi **Aggiungi riferimento** dal menu di scelta rapida.
+    1. In **Esplora soluzioni** scegliere il progetto **RooterTests** e quindi **Aggiungi riferimento** dal menu di scelta rapida.
 
     2. Nella finestra di dialogo **Aggiungi riferimento - RooterTests** espandere **Soluzione** e scegliere **Progetti**. Selezionare quindi l'elemento **Maths**.
 
@@ -148,9 +148,9 @@ In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti
 
 4. Compilare la soluzione.
 
-   Il nuovo test viene visualizzato in Esplora test nel nodo **Test non eseguiti**.
+   Il nuovo test viene visualizzato in **Esplora test** nel nodo **Test non eseguiti**.
 
-5. In Esplora test scegliere **Esegui tutto**.
+5. In **Esplora test** scegliere **Esegui tutto**.
 
    ![Test di base superato](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -180,7 +180,7 @@ In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti
    >
    > Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.
 
-2. In Esplora test scegliere **Esegui tutto**.
+2. In **Esplora test** scegliere **Esegui tutto**.
 
 3. Il test ha esito negativo.
 
@@ -272,7 +272,7 @@ In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti
         }
         ```
 
-4. In Esplora test scegliere **Esegui tutto** per testare il metodo corretto e assicurarsi di non aver introdotto una regressione.
+4. In **Esplora test** scegliere **Esegui tutto** per testare il metodo corretto e assicurarsi di non aver introdotto una regressione.
 
 Tutti i test vengono ora superati.
 

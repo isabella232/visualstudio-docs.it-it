@@ -12,21 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9533083410af061ed8b2958349009cb5234ff251
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7454b75054f06bb35237b344552a268eed3798e1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176245"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379276"
 ---
-# <a name="how-to-use-the-load-test-api"></a>Procedura: utilizzare l'API del test di carico
+# <a name="how-to-use-the-load-test-api"></a>Procedura: Usare l'API del test di carico
 
 Visual Studio supporta plug-in di test di carico che consentono di controllare o migliorare un test di carico. I plug-in dei test di carico sono classi definite dall'utente che implementano l'interfaccia <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> presente nello spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. I plug-in dei test di carico consentono il controllo dei test di carico personalizzati, ad esempio per interrompere un test di carico quando viene raggiunta la soglia di un contatore o di un errore. Per ottenere o impostare i parametri del test di carico dal codice definito dall'utente, usare le proprietà nella classe <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest>. Per associare i delegati per le notifiche quando il test di carico è in fase di esecuzione, usare gli eventi nella classe <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest>.
 
 > [!TIP]
 > Il visualizzatore oggetti consente di esaminare lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Gli editor Visual C# e Visual Basic forniscono il supporto IntelliSense per la codifica delle classi nello spazio dei nomi.
 
-È anche possibile creare plug-in per i test delle prestazioni Web. Per altre informazioni, vedere [Procedura: Creare un plug-in di test prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md) e [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md).
+È anche possibile creare plug-in per i test web. Per altre informazioni, vedere [Procedura: Creare un plug-in di test prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md) e [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md).
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Per usare lo spazio dei nomi LoadTesting
 
@@ -50,10 +50,10 @@ Visual Studio supporta plug-in di test di carico che consentono di controllare o
 
     2.  Viene visualizzata la finestra di dialogo **Aggiungi plug-in test di carico**.
 
-    3.  Nel riquadro Proprietà per il plug-in selezionato impostare i valori iniziali che il plug-in userà in fase di esecuzione.
+    3.  Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 
         > [!NOTE]
-        > È possibile esporre il numero di proprietà desiderato dai plug-in. È sufficiente renderle pubbliche, impostabili e di un tipo di base, ad esempio Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in di test di carico in un secondo momento usando la finestra Proprietà.
+        > È possibile esporre il numero di proprietà desiderato dai plug-in. È sufficiente renderle pubbliche, impostabili e di un tipo di base, ad esempio Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in di test di carico in un secondo tempo usando la finestra **Proprietà**.
 
 9. Eseguire il test di carico.
 

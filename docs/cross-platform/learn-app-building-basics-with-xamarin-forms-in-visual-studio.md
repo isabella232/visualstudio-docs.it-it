@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f9f233b5f43555f86f0a49c5e5853cad6d7456b1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 2a8851a48d1629b5324d0eb7615c2f2c9f2719e0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924424"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251855"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Nozioni di base sulla compilazione di app con Xamarin.Forms in Visual Studio
 
@@ -55,11 +55,11 @@ Questi passaggi consentono di creare una soluzione Xamarin.Forms che contiene un
 
     Se il modello non è presente, può essere necessario installare Xamarin o abilitare la funzionalità di Visual Studio 2017. Vedere [Configurazione e installazione](../cross-platform/setup-and-install.md).
 
-2.  Dopo aver fatto clic su OK sarà possibile selezionare alcune opzioni. Scegliere **App vuota** e **.NET Standard**:
+2.  Fare clic su **OK**. È ora possibile selezionare alcune opzioni. Scegliere **App vuota** e **.NET Standard**:
 
     ![Creazione di un nuovo progetto App multipiattaforma](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
 
-3.  Fare clic su OK per creare la soluzione. Verrà visualizzata una soluzione con quattro progetti:
+3.  Fare clic su **OK** per creare la soluzione. Verrà visualizzata una soluzione con quattro progetti:
 
     -   **WeatherApp**: la libreria .NET Standard in cui verrà scritto il codice condiviso tra le piattaforme, inclusa la logica di business comune e il codice dell'interfaccia utente con Xamarin.Forms.
 
@@ -118,7 +118,7 @@ Nei passaggi seguenti viene aggiunto codice alla libreria .NET Standard per acce
 
 1.  Fare clic con il pulsante destro del mouse sul progetto **WeatherApp** e selezionare **Aggiungi > Classe**. Nella finestra di dialogo **Aggiungi nuovo elemento** denominare il file **Weather.cs**. Questa classe verrà usata per archiviare i dati dal servizio di dati meteo.
 
-2.  Sostituire tutto il contenuto di **Weather.cs** con il codice seguente:
+2.  Sostituire tutto il contenuto di *Weather.cs* con il codice seguente:
 
     ```csharp
     namespace WeatherApp
@@ -274,7 +274,7 @@ Xamarin.Forms consente di implementare codice dell'interfaccia utente condiviso 
     }
     ```
 
-4.  Per aprire **WeatherPage** come prima schermata all'avvio dell'app, sostituire il costruttore predefinito in **App.xaml.cs** con il codice seguente:
+4.  Per aprire **WeatherPage** come prima schermata all'avvio dell'app, sostituire il costruttore predefinito in *App.xaml.cs* con il codice seguente:
 
     ```csharp
     public App()
@@ -406,7 +406,7 @@ Xamarin.Forms esegue il rendering dei controlli dell'interfaccia utente nativi p
 
      Anche se non è incluso in questo esempio, è possibile usare il tag `OnPlatform` all'interno di file XAML per selezionare un valore della proprietà specifico per la piattaforma corrente in cui l'app è in esecuzione. Vedere [Sintassi XAML essenziale](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax/). Nel file code-behind è possibile determinare in quale piattaforma l'applicazione è in esecuzione confrontando la proprietà [`Device.RuntimePlatform`](https://developer.xamarin.com/api/property/Xamarin.Forms.Device.RuntimePlatform/) con le costanti definite nella classe [`Device`](https://developer.xamarin.com/api/type/Xamarin.Forms.Device/) denominate [`Device.iOS`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.iOS/), [`Device.Android`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.Android/) e [`Device.UWP`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.UWP/).
 
-2.  In **WeatherPage.xaml.cs**sostituire il gestore eventi `GetWeatherBtn_Clicked` con il codice qui sotto. Questo codice verifica che sia presente un codice postale nel campo di immissione e recupera i dati relativi a tale codice. Imposta quindi il contesto di associazione dell'intera pagina sull'istanza di `Weather` risultante. Il codice termina impostando il testo del pulsante su "Search Again" (Cerca di nuovo). Ogni etichetta nell'interfaccia utente è associata a una proprietà della classe `Weather`. Quando si imposta il contesto di associazione della schermata su un'istanza di `Weather`, le etichette vengono aggiornate automaticamente.
+2.  In *WeatherPage.xaml.cs*sostituire il gestore eventi `GetWeatherBtn_Clicked` con il codice qui sotto. Questo codice verifica che sia presente un codice postale nel campo di immissione e recupera i dati relativi a tale codice. Imposta quindi il contesto di associazione dell'intera pagina sull'istanza di `Weather` risultante. Il codice termina impostando il testo del pulsante su "Search Again" (Cerca di nuovo). Ogni etichetta nell'interfaccia utente è associata a una proprietà della classe `Weather`. Quando si imposta il contesto di associazione della schermata su un'istanza di `Weather`, le etichette vengono aggiornate automaticamente.
 
     ```csharp
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)

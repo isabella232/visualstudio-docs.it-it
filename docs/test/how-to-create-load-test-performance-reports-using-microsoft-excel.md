@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ecd4e81389e50614b19095fcff1d0ada8b4d1c60
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179008"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380756"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: creare rapporti di prestazioni dei test di carico utilizzando Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel
 
 È possibile generare report del test di carico di Microsoft Excel basati su due o più risultati del test. Sono disponibili due tipi di report del test di carico:
 
@@ -36,13 +36,13 @@ ms.locfileid: "39179008"
  Inoltre, la cartella di lavoro di Excel può essere condivisa con gli stakeholder in modo che questi non debbano connettersi al database per vedere il report.
 
 > [!NOTE]
-> È possibile condividere la cartella di lavoro di Excel; tuttavia, solo gli utenti con computer in cui è installato Visual Studio saranno in grado di modificare i fogli di calcolo. Gli altri utenti non vedranno l'opzione **Rapporto test di carico** nella barra multifunzione di Office, ma saranno in grado di visualizzare la cartella di lavoro.
+> È possibile condividere la cartella di lavoro di Excel; tuttavia, solo gli utenti con computer in cui è installato Visual Studio saranno in grado di modificare i fogli di calcolo. Gli altri utenti non vedranno l'opzione **Rapporto test di carico** nella barra multifunzione di **Office**, ma saranno in grado di visualizzare la cartella di lavoro.
 
  Nella figura seguente è illustrato un esempio di report in cui viene mostrata una correlazione tra una riduzione della velocità della transazione di aggiornamento del carrello e l'alterazione del contatore di percentuale processore. Ciò indica un potenziale problema nel codice dell'applicazione, anziché nel database o nella rete, ed è una situazione adatta alla diagnosi tramite il profiler ASP.NET.
 
  ![Possibile problema nel codice dell'applicazione](../test/media/lt_excel.png)
 
- È possibile generare report di Excel nell'Analizzatore test di carico usando il pulsante **Crea rapporto Excel** nella barra degli strumenti oppure da Excel usando l'opzione **Rapporto test di carico** nella scheda **Test di carico** della barra multifunzione di Office.
+ È possibile generare report di Excel nell'**Analizzatore test di carico** usando il pulsante **Crea rapporto Excel** nella barra degli strumenti oppure da Excel usando l'opzione **Rapporto test di carico** nella scheda **Test di carico** della barra multifunzione di **Office**.
 
 > [!NOTE]
 > Se si aggiungono commenti a un test di carico, verranno visualizzati nel report di Excel. Per altre informazioni, vedere [Procedura: Aggiungere commenti mentre si analizza un test di carico completato](../test/how-to-add-comments-on-a-completed-load-test.md).
@@ -62,7 +62,7 @@ ms.locfileid: "39179008"
 
      oppure
 
-    1.  Aprire Microsoft Excel, selezionare la scheda **Test di carico** sulla barra multifunzione di Office, quindi scegliere **Rapporto test di carico**.
+    1.  Aprire Microsoft Excel, selezionare la scheda **Test di carico** nella barra multifunzione di **Office**, quindi scegliere **Rapporto test di carico**.
 
          Viene visualizzata la procedura guidata **Genera un rapporto test di carico**.
 
@@ -83,7 +83,7 @@ ms.locfileid: "39179008"
     > [!NOTE]
     > È possibile generare un report di confronto solo per due risultati del test di carico. Se si selezionano un solo risultato o più di due risultati del test di carico, verrà visualizzato un messaggio di avviso.
 
-8.  Nella pagina **Selezionare i contatori per il rapporto**, in **Selezionare uno o più contatori da aggiungere al rapporto** è disponibile un elenco espandibile di contatori per personalizzare il report. Selezionare i contatori che si vuole confrontare dalle due esecuzioni di test selezionate nel report e scegliere **Fine**.
+8.  Nella pagina **Selezionare i contatori per il rapporto**, in **Selezionare uno o più contatori da aggiungere al rapporto**, è disponibile un elenco espandibile di contatori per personalizzare il report. Selezionare i contatori che si vuole confrontare dalle due esecuzioni di test selezionate nel report e scegliere **Fine**.
 
 9. Viene generato il report della cartella di lavoro di Excel che include i seguenti fogli di lavoro:
 
@@ -117,7 +117,7 @@ ms.locfileid: "39179008"
 
      oppure
 
-    1.  Aprire Microsoft Excel, selezionare la scheda **Test di carico** sulla barra multifunzione di Office, quindi scegliere **Rapporto test di carico**.
+    1.  Aprire Microsoft Excel, selezionare la scheda **Test di carico** nella barra multifunzione di **Office**, quindi scegliere **Rapporto test di carico**.
 
          Viene visualizzata la procedura guidata **Genera un rapporto test di carico**.
 
@@ -135,17 +135,17 @@ ms.locfileid: "39179008"
 
 7.  Nella pagina **Selezionare le esecuzioni per il rapporto**, in **Selezionare una o più esecuzioni da aggiungere al rapporto** selezionare i risultati del test di carico da confrontare nel report e scegliere **Avanti**.
 
-8.  Nella pagina **Selezionare i contatori per il rapporto**, in **Selezionare uno o più contatori da aggiungere al rapporto** è disponibile un elenco espandibile di contatori per personalizzare il report. Dalle esecuzioni dei test selezionate nel report, selezionare i contatori da confrontare per l'analisi delle tendenze e scegliere **Fine**.
+8.  Nella pagina **Selezionare i contatori per il rapporto**, in **Selezionare uno o più contatori da aggiungere al rapporto**, è disponibile un elenco espandibile di contatori per personalizzare il report. Dalle esecuzioni dei test selezionate nel report, selezionare i contatori da confrontare per l'analisi delle tendenze e scegliere **Fine**.
 
 10. Il report viene generato con un sommario contenente collegamenti alle varie schede della cartella di lavoro di Excel generate nel report. I collegamenti sono basati sui contatori selezionati per il report della tendenza. Ad esempio, se sono stati lasciati i contatori predefiniti selezionati nel passaggio 7, il report genererà dati presentati in schede separate in Excel per ogni contatore elencato nel passaggio 7. I dati generati per ogni contatore vengono presentati in grafici dello stile tendenza.
 
     > [!TIP]
     > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
 
-## <a name="net-framework-security"></a>Sicurezza di .NET Framework
+## <a name="net-framework-security"></a>.NET Framework (sicurezza)
 
 I risultati e i report del test di carico contengono informazioni potenzialmente riservate che potrebbero essere utilizzate per realizzare un attacco al computer o alla rete. I risultati e i report del test di carico contengono nomi di computer e stringhe di connessione. Quando si condividono i report del test di carico con altre persone, è necessario tenere in considerazione tali rischi.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md)
+- [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md)

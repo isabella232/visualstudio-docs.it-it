@@ -11,33 +11,33 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4114a938f643cee629311a72aec72f94cfcd2fc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3464ffc1db1a757ac20e3f77d0d901ec731a7cab
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966654"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381934"
 ---
-# <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>Procedura: specificare la frequenza di salvataggio dei log di test tramite l'Editor test di carico
+# <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>Procedura: Specificare la frequenza di salvataggio dei log di test usando l'Editor test di carico
 
 Dopo aver creato il test di carico usando la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà del test di carico in modo da soddisfare le necessità e gli obiettivi di test. Per altre informazioni, vedere [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md).
 
 > [!NOTE]
 > Per un elenco completo delle proprietà delle impostazioni di esecuzione test e delle relative descrizioni, vedere [Proprietà delle impostazioni di esecuzione test di carico](../test/load-test-run-settings-properties.md).
 
-È possibile specificare la frequenza di salvataggio del log di test in un test di carico usando l'Editor test di carico per modificare la proprietà **Frequenza di salvataggio del log per i test completati** nella finestra Proprietà.
+È possibile specificare la frequenza di salvataggio del log di test in un test di carico usando l'**Editor test di carico** per modificare la proprietà **Frequenza di salvataggio del log per i test completati** nella finestra **Proprietà**.
 
 ## <a name="to-specify-the-frequency-for-saving-the-test-log-in-a-load-test"></a>Per specificare la frequenza di salvataggio del log di test in un test di carico
 
 1.  Aprire un test di carico.
 
-     Verrà visualizzato l'Editor test di carico. Nell'editor viene visualizzato l'albero del test di carico.
+     Viene visualizzato l'**Editor test di carico**. Nell'editor viene visualizzato l'albero del test di carico.
 
-2.  Nella cartella **Impostazioni esecuzione test** dell'albero del test di carico scegliere il nodo delle impostazioni di esecuzione dei test per le quali si vuole specificare la frequenza di salvataggio del log di test.
+2.  Nella cartella **Impostazioni esecuzione test** dell'albero del test di carico scegliere il nodo delle impostazioni di esecuzione dei test per cui si vuole specificare la frequenza di salvataggio del log di test.
 
 3.  Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-     Le categorie e le proprietà dello scenario verranno visualizzate nella finestra Proprietà.
+     Le categorie e le proprietà dello scenario vengono visualizzate nella finestra **Proprietà**.
 
 4.  Nella casella di testo relativa alla proprietà **Frequenza di salvataggio del log per i test completati** digitare un numero per indicare la frequenza di scrittura del log di test. Il numero indica che nel log di test verrà salvato un test ogni numero di test corrispondente al numero immesso. Immettendo, ad esempio, il valore dieci, nel test di log vengono salvati il decimo, il ventesimo, il trentesimo test e così via.
 
@@ -50,8 +50,7 @@ Dopo aver creato il test di carico usando la **Creazione guidata test di carico*
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
+- [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md)
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura: Specificare se i test non superati vengono salvati in log di test](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)
 - [Procedura: Configurare la raccolta di dettagli completi per abilitare il grafico attività utente virtuale](../test/how-to-configure-load-tests-to-collect-full-details.md)

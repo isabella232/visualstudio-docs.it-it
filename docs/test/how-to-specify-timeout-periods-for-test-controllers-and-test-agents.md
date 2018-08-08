@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 444c4e7214d55aad270a88325ee9e694e84987c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979048"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379260"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedura: specificare i periodi di timeout per controller e agenti di test
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedura: Specificare i periodi di timeout per controller e agenti di test
 
 Sia il controller di test che l'agente di test dispongono di diverse impostazioni di timeout che consentono di specificare il tempo che ognuno di essi deve attendere per le risposte dell'altro, o per quelle provenienti da un'origine dati, prima di generare un errore. In determinate circostanze potrebbe essere necessario modificare i valori di timeout per far fronte alle necessità della topologia o ad altre problematiche legate all'ambiente. Per cambiare i valori di timeout, modificare il file di configurazione XML associato al controller di test o all'agente di test, come illustrato nelle procedure riportate di seguito.
 
  Per modificare le varie impostazioni del timeout di un agente di test o controller di test, modificare i seguenti file di configurazione utilizzando i nomi di chiavi e i valori riportati di seguito nelle tabelle:
 
--   Controller di test: QTController.exe.config
+-   Controller di test: *QTController.exe.config*
 
     |Nome della chiave|Descrizione|Valore|
     |--------------|-----------------|-----------|
@@ -35,7 +35,7 @@ Sia il controller di test che l'agente di test dispongono di diverse impostazion
     |AgentInitializeTimeout|Numero di secondi di attesa per l'inizializzazione di tutti gli agenti e dei relativi agenti di raccolta dati all'inizio dell'esecuzione di un test prima di interrompere l'esecuzione. Questo valore deve essere sufficientemente alto in caso di utilizzo di agenti di raccolta dati.|"n" secondi. Predefinito: "120" (due minuti).|
     |AgentCleanupTimeout|Numero di secondi di attesa per la pulizia di tutti gli agenti e dei relativi agenti di raccolta dati prima del completamento dell'esecuzione di un test. Questo valore deve essere sufficientemente alto in caso di utilizzo di agenti di raccolta dati.|"n" secondi. Predefinito: "120" (due minuti).|
 
--   Agente di test: QTAgentService.exe.config
+-   Agente di test: *QTAgentService.exe.config*
 
     |Nome della chiave|Descrizione|Valore|
     |--------------|-----------------|-----------|
@@ -46,7 +46,7 @@ Sia il controller di test che l'agente di test dispongono di diverse impostazion
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Per specificare le opzioni di timeout agente per un controller di test
 
-1. Aprire il file di configurazione XML QTCcontroller.exe.config che si trova in %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+1. Aprire il file di configurazione XML *QTCcontroller.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Individuare il tag `<appSettings>`.
 
@@ -80,7 +80,7 @@ Sia il controller di test che l'agente di test dispongono di diverse impostazion
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Per specificare le opzioni di timeout agente per un agente di test
 
-1. Aprire il file di configurazione XML QTAgentService.exe.config che si trova in %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+1. Aprire il file di configurazione XML *QTAgentService.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Individuare il tag `<appSettings>`.
 
@@ -115,7 +115,7 @@ Sia il controller di test che l'agente di test dispongono di diverse impostazion
 ## <a name="see-also"></a>Vedere anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
-- [Modifica delle impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)
-- [Configurazione delle porte per controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)
+- [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Procedura: Impostare la dimensione massima per il file di log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Procedura: Associare un controller di test o un agente di test a una scheda di rete](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Procedura: Associare un test controller o un agente di test a una scheda di rete](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

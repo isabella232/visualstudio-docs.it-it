@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e1eb6a5218f9d9ea7c853733690922846443ed4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976741"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380358"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gestire i risultati dei test di carico nel repository dei risultati del test di carico
 
 Quando si eseguono i test di carico, le informazioni raccolte durante l'esecuzione possono essere memorizzate nel *repository dei risultati del test di carico*, che è un database SQL. Il repository dei risultati del test di carico contiene i dati del contatore delle prestazioni e tutte le informazioni sugli errori registrati. Il database che funge da repository dei risultati viene creato durante l'installazione dei controller o automaticamente alla prima esecuzione locale di un test di carico. Per un'esecuzione locale, il database verrà creato automaticamente se lo schema del test di carico non è presente.
 
- Se si modifica la stringa di connessione del database dei risultati del controller per utilizzare un altro server, sarà necessario che sul nuovo server venga eseguito lo script loadtestresultsrepository.sql per creare lo schema.
+ Se si modifica la stringa di connessione del database dei risultati del controller per utilizzare un altro server, sarà necessario che sul nuovo server venga eseguito lo *script loadtestresultsrepository.sql* per creare lo schema.
 
  Visual Studio Enterprise fornisce insiemi di contatori denominati che raccolgono contatori delle prestazioni comuni basati su una tecnologia. Tali insiemi sono utili quando si analizza un server IIS, un server ASP.NET o un server SQL. Tutti i dati raccolti con gli insiemi di contatori vengono memorizzati nel repository dei risultati del test di carico.
 
@@ -54,7 +54,7 @@ Quando si eseguono i test di carico, le informazioni raccolte durante l'esecuzio
 
  [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- È possibile visualizzare i risultati di un test di carico in esecuzione e di un test di carico completato tramite l'analizzatore test di carico.
+ È possibile visualizzare i risultati di un test di carico in esecuzione e di un test di carico completato tramite l'**analizzatore test di carico**.
 
 ## <a name="see-also"></a>Vedere anche
 

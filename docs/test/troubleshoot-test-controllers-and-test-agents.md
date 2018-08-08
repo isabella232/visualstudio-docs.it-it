@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c1ddfedc1a88300bb01b5113304f2b8893e2857
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: f0dc115feb15ef8b698aea0f311404b2b3f2e4ec
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35668707"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382103"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie di risoluzione dei problemi dei controller e degli agenti di test nei test di carico
 
@@ -26,22 +26,22 @@ Questo articolo descrive alcuni problemi comuni che possono verificarsi quando s
 
 ##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Impossibile raccogliere i contatori delle prestazioni nel computer agente di test
 
- Quando si esegue un test di carico, è possibile ricevere errori se si tenta di connettersi a un computer agente di test e raccogliere i contatori delle prestazioni. Il Registro di sistema remoto è il servizio responsabile di fornire i dati dei contatori delle prestazioni a un computer remoto. In alcuni sistemi operativi il servizio Registro di sistema remoto non viene avviato automaticamente. Per correggere questo problema, avviare manualmente il servizio Registro di sistema remoto.
+Quando si esegue un test di carico, è possibile ricevere errori se si tenta di connettersi a un computer agente di test e raccogliere i contatori delle prestazioni. Il Registro di sistema remoto è il servizio responsabile di fornire i dati dei contatori delle prestazioni a un computer remoto. In alcuni sistemi operativi il servizio Registro di sistema remoto non viene avviato automaticamente. Per correggere questo problema, avviare manualmente il servizio Registro di sistema remoto.
 
 > [!NOTE]
 > È possibile accedere al servizio Registro di sistema remoto nel **Pannello di controllo.** Scegliere **Strumenti di amministrazione** e quindi **Servizi**.
 
+Il problema potrebbe anche essere causato dalla mancata disponibilità di autorizzazioni sufficienti per leggere i contatori delle prestazioni. Per le esecuzioni di test locali, l'account dell'utente che esegue il test deve essere un membro del gruppo Power Users o superiore oppure del gruppo Performance Monitor Users. Per le esecuzioni di test remote, l'account per cui è configurata l'esecuzione del controller deve essere un membro del gruppo Power Users o superiore oppure del gruppo Performance Monitor Users.
 
- Il problema potrebbe anche essere causato dalla mancata disponibilità di autorizzazioni sufficienti per leggere i contatori delle prestazioni. Per le esecuzioni di test locali, l'account dell'utente che esegue il test deve essere un membro del gruppo Power Users o superiore oppure del gruppo Performance Monitor Users. Per le esecuzioni di test remote, l'account per cui è configurata l'esecuzione del controller deve essere un membro del gruppo Power Users o superiore oppure del gruppo Performance Monitor Users.
+## <a name="set-the-logging-level-on-a-test-controller-computer"></a>Impostare il livello di registrazione in un computer controller di test
 
-## <a name="setting-the-logging-level-on-a-test-controller-computer"></a>Impostazione del livello di registrazione in un computer controller di test
- È possibile controllare il livello di registrazione in un computer controller di test. Questa funzione è utile quando si tenta di diagnosticare un problema durante l'esecuzione di un test di carico in un ambiente.
+È possibile controllare il livello di registrazione in un computer controller di test. Questa funzione è utile quando si tenta di diagnosticare un problema durante l'esecuzione di un test di carico in un ambiente.
 
 ### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>Per impostare il livello di registrazione in un computer controller di test
 
 1.  Arrestare il servizio controller di test. Al prompt dei comandi digitare `net stop vsttcontroller`.
 
-2.  Aprire file QTController.exe.config. Questo file si trova nella directory di installazione del controller.
+2.  Aprire il file *QTController.exe.config*. Questo file si trova nella directory di installazione del controller.
 
 3.  Modificare la voce per l'opzione `EqtTraceLevel` nella sezione del file relativa alla diagnostica di sistema. Il codice sarà simile a quello riportato di seguito:
 
@@ -68,32 +68,32 @@ Questo articolo descrive alcuni problemi comuni che possono verificarsi quando s
 
 5.  Avviare il servizio controller. Al prompt dei comandi digitare `net start vsttcontroller`.
 
- Questa procedura si applica al controller di test, al servizio agente di test e al processo agente di test. Quando si diagnosticano problemi, risulta utile attivare la registrazione su tutti e tre i processi. La procedura per impostare il livello di registrazione è identica per i tre processi, come specificato in precedenza per il controller di test. Per impostare i livelli di registrazione per il servizio agente di test e per il processo agente, utilizzare i file di configurazione seguenti:
+Questa procedura si applica al controller di test, al servizio agente di test e al processo agente di test. Quando si diagnosticano problemi, risulta utile attivare la registrazione su tutti e tre i processi. La procedura per impostare il livello di registrazione è identica per i tre processi, come specificato in precedenza per il controller di test. Per impostare i livelli di registrazione per il servizio agente di test e per il processo agente, utilizzare i file di configurazione seguenti:
 
--   **QTController.exe.config** Servizio controller
+-   *QTController.exe.config* Servizio controller
 
--   **QTAgentService.exe.config** Servizio agente
+-   *QTAgentService.exe.config* Servizio agente
 
--   **QTDCAgent(32).exe.config** Processo dell'adattatore dati dell'agente per l'architettura a 32 bit.
+-   *QTDCAgent(32).exe.config* Processo dell'adattatore dati dell'agente per l'architettura a 32 bit.
 
--   **QTDCAgent(64).exe.config** Processo dell'adattatore dati dell'agente per l'architettura a 64 bit.
+-   *QTDCAgent(64).exe.config* Processo dell'adattatore dati dell'agente per l'architettura a 64 bit.
 
--   **QTAgent(32).exe.config** Processo di test dell'agente per l'architettura a 32 bit.
+-   *QTAgent(32).exe.config* Processo di test dell'agente per l'architettura a 32 bit.
 
--   **QTAgent(64).exe.config** Processo di test dell'agente per l'architettura a 64 bit.
+-   *QTAgent(64).exe.config* Processo di test dell'agente per l'architettura a 64 bit.
 
-## <a name="binding-a-test-controller-to-a-network-adapter"></a>Associazione di un controller di test a una scheda di rete
- Quando si tenta di configurare un agente di test, potrebbe verificarsi l'errore seguente:
+## <a name="bind-a-test-controller-to-a-network-adapter"></a>Associare un controller di test a una scheda di rete
 
- **Errore 8110. Impossibile connettersi al controller specificato o accedere all'oggetto controller.**
+Quando si tenta di configurare un agente di test, potrebbe verificarsi l'errore seguente:
 
- Questo errore può essere causato dall'installazione del controller di test in un computer con più di una scheda di rete.
+**Errore 8110. Impossibile connettersi al controller specificato o accedere all'oggetto controller.**
+
+Questo errore può essere causato dall'installazione del controller di test in un computer con più di una scheda di rete.
 
 > [!NOTE]
 > È anche possibile installare correttamente gli agenti di test e non riscontrare il problema finché non si tenta di eseguire un test.
 
-
- Per correggere questo errore, è necessario associare il controller di test a una delle schede di rete. Impostare la proprietà `BindTo` nel controller di test e quindi modificare l'agente di test in modo che faccia riferimento al controller di test in base all'indirizzo IP anziché al nome. I passaggi vengono illustrati nelle procedure seguenti.
+Per correggere questo errore, è necessario associare il controller di test a una delle schede di rete. Impostare la proprietà `BindTo` nel controller di test e quindi modificare l'agente di test in modo che faccia riferimento al controller di test in base all'indirizzo IP anziché al nome. I passaggi vengono illustrati nelle procedure seguenti.
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Per ottenere l'indirizzo IP della scheda di rete
 
@@ -113,7 +113,7 @@ Questo articolo descrive alcuni problemi comuni che possono verificarsi quando s
 
 1.  Arrestare il servizio controller di test. Al prompt dei comandi digitare `net stop vsttcontroller`.
 
-2.  Aprire file QTController.exe.config. Questo file si trova in %Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+2.  Aprire il file *QTController.exe.config*. Questo file si trova in *%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 3.  Aggiungere una voce per la proprietà `BindTo` alle impostazioni dell'applicazione. Specificare l'indirizzo IP della scheda di rete da associare al controller. Il codice sarà simile a quello riportato di seguito:
 
@@ -137,7 +137,7 @@ Questo articolo descrive alcuni problemi comuni che possono verificarsi quando s
 
 -   Eseguire nuovamente l'installazione dell'agente di test. Questa volta, specificare l'indirizzo IP anziché il nome del controller di test.
 
- Questa procedura si applica al controller di test, al servizio agente di test e al processo agente di test. La proprietà `BindTo` deve essere impostata per ogni processo in esecuzione in un computer che dispone di più schede di rete. La procedura per impostare la proprietà `BindTo` è identica per i tre processi, come specificato in precedenza per il controller di test. Per impostare i livelli di registrazione per il servizio agente di test e il processo agente di test, usare i file di configurazione elencati in [Impostazione del livello di registrazione in un computer controller di test](#setting-the-logging-level-on-a-test-controller-computer).
+Questa procedura si applica al controller di test, al servizio agente di test e al processo agente di test. La proprietà `BindTo` deve essere impostata per ogni processo in esecuzione in un computer che dispone di più schede di rete. La procedura per impostare la proprietà `BindTo` è identica per i tre processi, come specificato in precedenza per il controller di test. Per impostare i livelli di registrazione per il servizio agente di test e il processo agente di test, usare i file di configurazione elencati in [Impostare il livello di registrazione in un computer controller di test](#set-the-logging-level-on-a-test-controller-computer).
 
 ## <a name="see-also"></a>Vedere anche
 

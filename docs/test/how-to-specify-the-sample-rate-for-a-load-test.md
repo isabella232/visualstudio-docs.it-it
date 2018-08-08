@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 18fa71396caa0c164ef7f37183cda28c701cf4f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970050"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382503"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procedura: specificare la frequenza di campionamento per un'impostazione di esecuzione test di carico
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procedura: Specificare la frequenza di campionamento per un'impostazione di esecuzione dei test di carico
 
 Dopo aver creato il test di carico usando la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà in modo da soddisfare le necessità e gli obiettivi di test.
 
 Usando l'**Editor test di carico** è possibile modificare il valore della proprietà **Frequenza di campionamento** dell'impostazione di esecuzione test nella finestra **Proprietà**. Per un elenco completo delle proprietà delle impostazioni di esecuzione test e delle relative descrizioni, vedere [Proprietà delle impostazioni di esecuzione test di carico](../test/load-test-run-settings-properties.md).
 
-Scegliere un valore appropriato per la proprietà **Frequenza di campionamento** per l'impostazione di esecuzione test di carico in base alla lunghezza del test di carico. Una frequenza di campionamento inferiore, ad esempio il valore predefinito di cinque secondi, richiede più spazio nel database dei risultati del test di carico. Per i test di carico più lunghi, l'aumento della frequenza di campionamento riduce la quantità di dati raccolti. Per altre informazioni, vedere [Procedura: Specificare la frequenza di campionamento per un'impostazione esecuzione test di carico](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Scegliere un valore appropriato per la proprietà **Frequenza di campionamento** per l'impostazione di esecuzione test di carico in base alla lunghezza del test di carico. Una frequenza di campionamento inferiore, ad esempio il valore predefinito di cinque secondi, richiede più spazio nel database dei risultati del test di carico. Per i test di carico più lunghi, l'aumento della frequenza di campionamento riduce la quantità di dati raccolti. Per altre informazioni, vedere [Procedura: Specificare la frequenza di campionamento per un'impostazione di esecuzione dei test di carico](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
@@ -44,7 +44,7 @@ Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
 3.  Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-     Le categorie e le proprietà delle impostazioni esecuzione test di carico verranno visualizzate nella finestra Proprietà.
+     Le categorie e le proprietà delle impostazioni di esecuzione test di carico sono visualizzate nella finestra **Proprietà**.
 
 4.  Nella proprietà **Frequenza di campionamento** immettere un valore che indica la frequenza alla quale il test di carico raccoglierà dati del contatore delle prestazioni.
 
@@ -52,5 +52,5 @@ Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Configurazione delle impostazioni esecuzione test di carico](../test/configure-load-test-run-settings.md)
+- [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)

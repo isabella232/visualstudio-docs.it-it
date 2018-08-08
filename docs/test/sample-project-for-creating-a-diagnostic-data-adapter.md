@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977115"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380770"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Esempio di progetto per creare un adattatore dati di diagnostica
 
@@ -324,7 +324,7 @@ Di seguito è riportato un file di configurazione di esempio per l'editor di con
 
 ```
 
-## <a name="compiling-the-code"></a>Compilazione del codice
+## <a name="compile-the-code"></a>Compilare il codice
 
 ### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Per creare il progetto di codice per questo adattatore diagnostico
 
@@ -354,7 +354,7 @@ Di seguito è riportato un file di configurazione di esempio per l'editor di con
 
 7.  Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  In Esplora soluzioni fare clic con il pulsante destro del mouse su **Riferimenti** e selezionare **Aggiungi riferimento**.
+    1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e selezionare **Aggiungi riferimento**.
 
     2.  Scegliere **Sfoglia** e individuare **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -364,7 +364,7 @@ Di seguito è riportato un file di configurazione di esempio per l'editor di con
 
 8.  Copiare la classe dell'adattatore dati di diagnostica elencata in precedenza in questo documento nella classe per la libreria di classi. Salvare questa classe.
 
-9. Per aggiungere un controllo utente al progetto, fare clic con il pulsante destro del mouse sul progetto MyDataCollector in Esplora soluzioni, scegliere **Aggiungi** e quindi **Controllo utente**. Scegliere **Aggiungi**.
+9. Per aggiungere un controllo utente al progetto, fare clic con il pulsante destro del mouse sul progetto **MyDataCollector** in **Esplora soluzioni**, scegliere **Aggiungi** e quindi **Controllo utente**. Scegliere **Aggiungi**.
 
 10. Usando la casella degli strumenti, aggiungere un'etichetta al controllo utente e modificare la proprietà Text in **Nome file:**.
 
@@ -375,11 +375,11 @@ Di seguito è riportato un file di configurazione di esempio per l'editor di con
     > [!NOTE]
     > Per impostazione predefinita, il controllo utente viene denominato UserControl1. Assicurarsi che nel codice della classe del controllo utente sia utilizzato il nome del controllo utente.
 
-13. Per creare il file di configurazione, in **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi scegliere **Nuovo elemento**. Fare clic per selezionare **File di configurazione dell'applicazione**, quindi scegliere **Aggiungi**. Alla soluzione verrà aggiunto un file denominato **App.config**.
+13. Per creare il file di configurazione, in **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi scegliere **Nuovo elemento**. Fare clic per selezionare **File di configurazione dell'applicazione**, quindi scegliere **Aggiungi**. Alla soluzione verrà aggiunto un file denominato *App.config*.
 
 14. Copiare il codice XML dell'esempio precedente nel file XML. Salvare il file.
 
-15. Compilare la soluzione, quindi copiare l'assembly compilato e il file `App.config` nella directory *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
+15. Compilare la soluzione, quindi copiare l'assembly compilato e il file *App.config* nella directory *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
 16. Creare le impostazioni di test che utilizzano questo adattatore diagnostico di dati personalizzati. Configurare le impostazioni di test per raccogliere un file esistente.
 
@@ -394,4 +394,4 @@ Di seguito è riportato un file di configurazione di esempio per l'editor di con
 - [Procedura: Creare un adattatore dati di diagnostica](../test/how-to-create-a-diagnostic-data-adapter.md)
 - [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Procedura: Installare un adattatore dati di diagnostica personalizzato](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
-- [Creazione di un adattatore dati di diagnostica per raccogliere dati personalizzati o per influire su un computer di test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Creare un adattatore dati di diagnostica per raccogliere dati personalizzati o influire su un computer di test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)

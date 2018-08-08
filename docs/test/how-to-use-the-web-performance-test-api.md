@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175795"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382305"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Procedura: utilizzare l'API del test delle prestazioni Web
+# <a name="how-to-use-the-web-performance-test-api"></a>Procedura: Usare l'API del test delle prestazioni Web
 
 È possibile scrivere codice per i test Web. L'API del test delle prestazioni Web viene usata per creare test Web codificati, plug-in test Web, plug-in richiesta, richieste, regole di estrazione e regole di convalida. Le classi che compongono queste tipologie sono le classi di base in questa API. Gli altri tipi in questa API vengono utilizzati per supportare la creazione degli oggetti <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.WebTesting> consente di creare test delle prestazioni Web personalizzati.
 
@@ -32,7 +32,7 @@ ms.locfileid: "39175795"
 
 ## <a name="to-use-the-webtesting-namespace"></a>Per utilizzare lo spazio dei nomi WebTesting
 
-1.  Aprire un progetto di test di carico e prestazioni Web che contenga un test delle prestazioni Web.
+1.  Aprire un progetto di test di carico e prestazioni web che contenga un test delle prestazioni web.
 
 2.  Aggiungere un progetto Libreria di classi Visual C# o Visual Basic alla soluzione di test.
 
@@ -52,7 +52,7 @@ ms.locfileid: "39175795"
 
          Viene visualizzata la finestra di dialogo **Aggiungi plug-in test Web**.
 
-    2.  In **Seleziona un plug-in** selezionare la classe del plug-in del test delle prestazioni Web.
+    2.  In **Seleziona un plug-in** selezionare la classe del plug-in del test delle prestazioni web.
 
     3.  Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 

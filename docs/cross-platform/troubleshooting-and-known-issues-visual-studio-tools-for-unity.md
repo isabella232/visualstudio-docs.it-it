@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153904"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251575"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Risoluzione dei problemi e problemi noti (Visual Studio Tools per Unity)
 
@@ -54,7 +54,7 @@ Questo dovrebbe risolvere il problema. Nel caso in cui il problema si verifichi 
 
 Alcuni plug-in Unity come Parse, FMOD, UMP (Universal Media Player), ZFBrowser o Embedded Browser usano thread nativi. Il problema si verifica quando un plug-in tenta di collegare un thread nativo al runtime, causando il blocco delle chiamate al sistema operativo. Ciò significa che Unity non può interrompere il thread per il debugger, o per ricaricare il dominio, e si blocca.
 
-Per FMOD, è disponibile una soluzione alternativa che consiste nel passare il [flag](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) di inizializzazione FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE per disabilitare l'elaborazione asincrona ed eseguire tutte le elaborazioni nel thread principale.
+Per FMOD, è disponibile una soluzione alternativa che consiste nel passare il [flag](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) di inizializzazione `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` per disabilitare l'elaborazione asincrona ed eseguire tutte le elaborazioni nel thread principale.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Progetto incompatibile in Visual Studio
 
@@ -114,7 +114,7 @@ Provare ad aggiornare Visual Studio 2015 all'Update 3.
 
 - Durante l'esecuzione o l'uscita da istruzioni o metodi vengono riscontrati comportamenti errati, in particolare negli iteratori o all'interno di istruzioni switch.
 
-## <a name="reporting-errors"></a>Segnalazione di errori
+## <a name="report-errors"></a>Segnalare errori
 
  È possibile contribuire a migliorare la qualità di Visual Studio Tools per Unity inviando apposite segnalazioni quando si riscontrano arresti anomali, blocchi o errori di altro tipo. In questo modo Microsoft potrà esaminare e correggere i problemi relativi a Visual Studio Tools per Unity. Microsoft ringrazia per il contributo.
 

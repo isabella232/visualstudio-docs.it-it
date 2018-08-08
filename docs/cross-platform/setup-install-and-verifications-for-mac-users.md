@@ -11,12 +11,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7add505f7a90290daab1170c190987767ba05d15
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: f0c4193d68eabd5a5427629cb9a4c7a3be18db3c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924281"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251920"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Configurazione, installazione e verifiche per gli utenti Mac
 
@@ -40,9 +40,9 @@ In questo argomento vengono fornite istruzioni per tali requisiti.  Mentre il pr
 
 2.  Scaricare e installare Xcode da [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/).
 
-3.  Scaricare e installare Xamarin seguendo le istruzioni nella pagina relativa a [installazione e configurazione di Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
+3.  Scaricare e installare Xamarin seguendo le istruzioni nella pagina [Installare e configurare Xamarin.iOS in un Mac](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
 
-4.  Dopo aver completato l'installazione di Xamarin sia nei computer Windows che nei computer Mac, seguire le istruzioni in [Connecting to the Mac using XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA)(Connessione al Mac tramite XMA) (xamarin.com) in modo da poter usare iOS e il Mac da Visual Studio nel computer Windows.
+4.  Dopo aver completato l'installazione di Xamarin sia nei computer Windows che nei computer Mac, seguire le istruzioni in [Connect to the Mac using XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (Connettere al Mac tramite XMA) (xamarin.com) in modo da poter usare iOS e il Mac da Visual Studio nel computer Windows.
 
 ##  <a name="windows"></a> Installazione di Windows in Parallels (Visual Studio e Xamarin)
 
@@ -74,7 +74,7 @@ Al termine dei programmi di installazione, dedicare alcuni minuti per verificare
 
 In primo luogo, verificare che, quando si visitano i collegamenti disponibili, sia selezionato **Xamarin Studio** nell'angolo superiore destro, in modo da visualizzare la versione corretta della documentazione di Xamarin:
 
-![Selezione di Xamarin Studio per visualizzare la documentazione corretta in Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
+![Selezionare Xamarin Studio per vedere la documentazione corretta in Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
 
 **Android**
 

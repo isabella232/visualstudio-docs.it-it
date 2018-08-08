@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 721b8241a3278ddbf1be3b5477e8829b7aa4447b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aebb4603d32f61c2d4b50355a550a1a932336962
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942247"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379689"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedura: modificare la directory dell'output compilato
 

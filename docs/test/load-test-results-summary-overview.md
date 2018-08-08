@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5e86b889f63dd46507de52505eec7f5a2125b04f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175933"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380564"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
@@ -84,7 +84,7 @@ Il valore percentile per il rapporto **Tempo test 95% (sec)** indica che il 95% 
 
 Se la traccia SQL è attivata nel test di carico, questa sezione contiene informazioni sulle 5 query più lente del test di carico. Per ogni operazione sono visualizzati il nome e la durata espressa in microsecondi (SQL Server 2005) o in millisecondi (SQL Server 2000 e versioni precedenti). I test sono elencati in ordine decrescente in base alla durata. È possibile scegliere il nome di un'operazione per aprire la tabella **Traccia SQL** ed esaminare altri dettagli sull'operazione. Per altre informazioni, vedere la [tabella dei dati di Traccia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
-## <a name="test-results"></a>Risultati del test
+## <a name="test-results"></a>Risultati test
 
 La sezione relativa ai risultati del test contiene un elenco di tutti i test e degli scenari del test di carico. Per ogni test sono visualizzati il nome, lo scenario, il numero di esecuzioni, il numero di volte che non è stato superato e il tempo medio. È possibile scegliere il nome di un test per aprire la tabella **Test** ed esaminare altri dettagli sul test. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
@@ -132,7 +132,7 @@ La sezione contiene un elenco di tutti gli errori che si sono verificati durante
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.
 
-## <a name="printing-a-summary"></a>Stampa di un riepilogo
+## <a name="print-a-summary"></a>Stampare un riepilogo
 
 È possibile stampare il riepilogo del test di carico scegliendo **Stampa** dal menu di scelta rapida del riepilogo. Per visualizzare un'anteprima della stampa, scegliere **Anteprima di stampa** dal menu di scelta rapida del riepilogo. È anche possibile stampare direttamente dalla schermata di anteprima.
 

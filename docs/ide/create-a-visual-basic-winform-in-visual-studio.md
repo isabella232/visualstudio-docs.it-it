@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c815652ae37fb04373cbf39279d54099a2d808a5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0468a3ee546659d8079d98f49b196819c44afbd1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117771"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381660"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creare un'app Windows Forms in Visual Studio con Visual Basic
 
@@ -82,7 +82,7 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
 
 1. Nella finestra**Form1.vb &#91;Design&#93;** fare doppio clic sul pulsante **Click this** per aprire la finestra **Form1.vb**.
 
-      In alternativa è possibile espandere **Form1.vb** nella finestra **Esplora soluzioni** e quindi fare clic su **Form1**.
+      In alternativa è possibile espandere **Form1.vb** in **Esplora soluzioni** e quindi fare clic su **Form1**.
 
 2. Nella finestra **Form1.vb** tra la riga **Private Sub** e la riga **End Sub** digitare o incollare `lblHelloWorld.Text = "Hello World!"`.
 

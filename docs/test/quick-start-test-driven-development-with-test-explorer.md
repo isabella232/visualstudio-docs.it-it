@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845756"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382090"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Guida introduttiva allo sviluppo basato su test con Esplora test
 
@@ -26,12 +26,12 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
 -   Possibilità di usare il framework di unit test preferito, ad esempio NUnit o MSTest.
 
--   Possibilità di visualizzare in un'unica finestra tutte le informazioni necessarie.
+-   Vedere in una sola finestra tutte le informazioni di cui si ha bisogno.
 
-## <a name="using-test-explorer"></a>Utilizzo di Esplora test
+## <a name="use-test-explorer"></a>Usare Esplora test
  ![Esplora unit test con il pulsante Esegui tutto](../test/media/unittestexplorer-beta-.png)
 
-### <a name="to-run-unit-tests-by-using-test-explorer"></a>Per eseguire lo unit test utilizzando Esplora test
+### <a name="to-run-unit-tests-by-using-test-explorer"></a>Per eseguire lo unit test usando Esplora test
 
 1.  Creare gli unit test che utilizzano i framework di test scelti.
 
@@ -39,7 +39,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
     1.  Creare un progetto di test.
 
-         Nella finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, **Visual C#** o **Visual C++** e quindi scegliere **Test**.
+         Nella finestra di dialogo **Nuovo progetto** espandere **Visual Basic** > **Visual C#** o **Visual C++** e quindi scegliere **Test**.
 
          Selezionare **Progetto unit test**.
 
@@ -47,7 +47,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
 2.  Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
-3.  Sulla barra dei menu scegliere **Test**, **Esegui unit test**, **Tutti i test**.
+3.  Sulla barra dei menu scegliere **Test** > **Esegui unit test** > **Tutti i test**.
 
      La soluzione verrà compilata e i test verranno eseguiti.
 
@@ -69,16 +69,16 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 > Se nessun test viene visualizzato, verificare di aver installato un adattatore per connettere Esplora test al framework di test in uso. Per altre informazioni, vedere [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough"></a> Procedura dettagliate: Utilizzare unit test per sviluppare un metodo
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Procedura dettagliata: Uso di unit test per sviluppare un metodo
  In questa procedura dettagliata viene illustrato come sviluppare un metodo testato in C# utilizzando il framework per unit test di Microsoft. È possibile adattarlo in modo semplice per altri linguaggi e per utilizzare altri framework di test come NUnit. Per altre informazioni, vedere [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md).
 
-#### <a name="creating-the-test-and-method"></a>Creare il test e il metodo
+### <a name="create-the-test-and-method"></a>Creare il test e il metodo
 
 1.  Creare un progetto di libreria di classi di Visual C#. Questo progetto conterrà il codice da produrre. In questo esempio è denominata `MyMath`.
 
 2.  Creare un progetto di test.
 
-    -   Nella finestra di dialogo **Nuovo progetto** , scegliere **Visual C#**, **Test** e quindi scegliere **Progetto unit test**.
+    -   Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#** > **Test** e quindi scegliere **Progetto unit test**.
 
          ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png)
 
@@ -104,15 +104,15 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
 4.  Generare il metodo dal test.
 
-    1.  Posizionare il cursore su `Rooter`, quindi dal menu di scelta rapida scegliere **Genera**, **Nuovo tipo**.
+    1.  Posizionare il cursore su `Rooter` e dal menu di scelta rapida scegliere **Genera** > **Nuovo tipo**.
 
     2.  Nella finestra di dialogo **Genera nuovo tipo** , impostare **Progetto** con il progetto di libreria di classi. In questo esempio si tratta di `MyMath`.
 
-    3.  Posizionare il cursore su `SquareRoot`, quindi dal menu di scelta rapida scegliere **Genera**, **Stub metodo**.
+    3.  Posizionare il cursore su `SquareRoot` e dal menu di scelta rapida scegliere **Genera** > **Stub metodo**.
 
 5.  Eseguire lo unit test.
 
-    1.  Dal menu **Test** , scegliere **Esegui unit test**, **Tutti i test**.
+    1.  Dal menu **Test** scegliere **Esegui unit test** > **Tutti i test**.
 
          La soluzione verrà compilata ed eseguita.
 
@@ -132,7 +132,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Dopo ogni modifica, tutti i test hanno esito positivo
 
-1.  In `MyMath\Rooter.cs`migliorare il codice di `SquareRoot`:
+1.  In *MyMath\Rooter.cs* migliorare il codice di `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)

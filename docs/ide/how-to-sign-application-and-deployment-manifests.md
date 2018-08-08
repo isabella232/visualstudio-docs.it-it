@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cee4f7ff8438c1e20f39a24e9e439e7507d655b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951726"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381947"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: firmare manifesti dell'applicazione e di distribuzione
 
@@ -41,7 +41,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 
 ## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Per firmare manifesti dell'applicazione e di distribuzione usando un certificato
 
-1.  Aprire la finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** o digitare **proprietà del progetto** nella finestra **Avvio veloce** oppure premere **ALT**+**INVIO** nella finestra **Esplora soluzioni**). Nella scheda **Firma**, selezionare la casella di controllo **Firma i manifesti ClickOnce**.
+1.  Aprire la finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Proprietà** o digitare **proprietà del progetto** nella finestra **Avvio veloce** oppure premere **ALT**+**INVIO** in **Esplora soluzioni**). Nella scheda **Firma**, selezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
 2.  Fare clic sul pulsante **Seleziona da archivio**.
 

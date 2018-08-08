@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3bbb013c16c84ba1b19d262e89ea6ad63718f0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179736"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381120"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -28,7 +28,7 @@ Per configurare e monitorare il controller di test e gli eventuali agenti regist
 
 Per un progetto di test di carico è anche possibile scegliere **Gestisci controller di test** dal menu **Test di carico**.
 
-## <a name="add-a-test-agent-to-a-test-controller"></a>Aggiungere un agente di test a un test controller
+## <a name="add-a-test-agent-to-a-test-controller"></a>Aggiunta di un agente di test a un controller di test
 
 È possibile che si desideri aggiungere un agente di test a un diverso controller di test oppure che risulti necessario aggiungere un agente di test a un controller di test appena installato.
 
@@ -45,7 +45,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
 
      Verranno visualizzate due opzioni relative alla modalità di esecuzione dell'agente di test:
 
-     **Servizio** Se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Servizio** in **Esegui agente di test come**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
+     **Servizio**: se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Servizio** in **Esegui agente di test come**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
 
      A questo punto è possibile immettere i dettagli sull'utente quando l'agente di test viene avviato come servizio.
 
@@ -60,7 +60,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
         |-   Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul test controller.|
         |-   È necessario che l'utente che sta tentando di usare il test controller  disponga di un account utente per tale test controller, diversamente non sarà in grado di eseguite i test.|
 
-     **Processo interattivo** Se si desidera eseguire test automatizzati che devono interagire con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Processo interattivo**. L'agente di test verrà avviato come processo interattivo anziché come servizio.
+     **Processo interattivo**: se si desidera eseguire test automatizzati che devono interagire con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Processo interattivo**. L'agente di test verrà avviato come processo interattivo anziché come servizio.
 
      Nella pagina successiva immettere i dettagli relativi all'utente quando l'agente di test viene avviato come processo e specificare le altre opzioni.
 
@@ -90,12 +90,12 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
     > [!NOTE]
     > Il numero di porta predefinito è 6901.
 
-4. Per salvare le modifiche, scegliere **Applica impostazioni**. Chiudere la finestra di dialogo **Riepilogo configurazione**, quindi chiudere Test Agent Configuration Tool.
+4. Per salvare le modifiche, scegliere **Applica impostazioni**. Chiudere la finestra di dialogo **Riepilogo configurazione**, quindi chiudere **Test Agent Configuration Tool**.
 
 > [!WARNING]
 > Se l'agente è attualmente configurato per essere eseguito in un altro controller di test, è necessario rimuoverlo da quest'ultimo.
 
-## <a name="remove-a-test-agent-from-a-test-controller"></a>Rimuovere un agente di test da un test controller
+## <a name="remove-a-test-agent-from-a-test-controller"></a>Rimozione di un agente di test da un controller di test
 
 Per poter rimuovere un agente di test, è necessario che sia impostato sullo stato offline.
 
@@ -119,7 +119,7 @@ Per poter rimuovere un agente di test, è necessario che sia impostato sullo sta
 
 2. Se il test controller è registrato con un progetto team, rimuovere l'agente mediante Microsoft Test Manager.
 
-## <a name="change-the-settings-for-a-test-agent"></a>Modificare le impostazioni di un agente di test
+## <a name="change-the-settings-for-a-test-agent"></a>Modifica delle impostazioni di un agente di test
 
 Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valori seguenti:
 
@@ -160,9 +160,9 @@ Le modifiche apportate al peso e agli attributi di un agente di test vengono app
 (Facoltativo) Per modificare lo stato di un agente di test, selezionare l'agente nell'elenco, quindi selezionare l'azione tra le opzioni disponibili in base allo stato corrente dell'agente stesso.
 
 > [!NOTE]
-> Se l'agente di test è in esecuzione come processo, il relativo stato può essere gestito dall'icona dell'area di notifica disponibile nel computer in cui l'agente è installato. Indica lo stato dell'agente di test. Se l'agente è in esecuzione come processo, con questo strumento è possibile avviarlo, arrestarlo o riavviarlo. Per avviare l'agente di test come processo se non è in esecuzione, scegliere **Start**, **Tutti i Programmi**, **Microsoft Visual Studio**, **Agente di test di Microsoft Visual Studio**. In questo modo verrà aggiunta l'icona dell'area di notifica.
+> Se l'agente di test è in esecuzione come processo, il relativo stato può essere gestito dall'icona dell'area di notifica disponibile nel computer in cui l'agente è installato. Indica lo stato dell'agente di test. Se l'agente è in esecuzione come processo, con questo strumento è possibile avviarlo, arrestarlo o riavviarlo. Per avviare l'agente di test come processo se non è in esecuzione, scegliere **Start** > **Tutti i Programmi** > **Microsoft Visual Studio** > **Agente di test di Microsoft Visual Studio**. In questo modo verrà aggiunta l'icona dell'area di notifica.
 
-## <a name="configure-a-test-controller"></a>Configurare un test controller
+## <a name="configure-a-test-controller"></a>Configurazione di un controller di test
 
 Per configurare un test controller, è necessario usare **lo strumento di configurazione controller Team Test**. Quando si configura il controller di test, è possibile effettuarne la registrazione con una diversa raccolta di progetti team oppure annullarne la registrazione in una raccolta di progetti team.
 
@@ -217,15 +217,15 @@ Quando si aggiungono ruoli per l'applicazione alle impostazioni test per Visual 
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Caricare test da assembly di test con firma ritardata
 
-I controller di test e gli agenti di test possono caricare solo assembly di test di carico con firma con nome sicuro o assembly non firmati. Per alcuni assembly di test viene usata la firma ritardata in quanto tali assembly devono accedere agli assembly di produzione per l'applicazione. Questi assembly, tuttavia, non dispongono di firma con nome sicuro in quanto si tratta solo di assembly di test, che non vengono distribuiti. Questi assembly non possono essere caricati poiché dispongono di firma ritardata, pertanto è necessario disabilitare la verifica del nome sicuro per tali assembly in tutti i computer in cui l'assembly verrà caricato, incluso il computer del controller di test. Per disabilitare la verifica con firma ritardata, usare sn.exe. Potrebbe essere necessario includere anche il token di chiave pubblica dell'assembly con firma ritardata per il quale viene richiesto di ignorare la verifica del nome sicuro.
+I controller di test e gli agenti di test possono caricare solo assembly di test di carico con firma con nome sicuro o assembly non firmati. Per alcuni assembly di test viene usata la firma ritardata in quanto tali assembly devono accedere agli assembly di produzione per l'applicazione. Questi assembly, tuttavia, non dispongono di firma con nome sicuro in quanto si tratta solo di assembly di test, che non vengono distribuiti. Questi assembly non possono essere caricati poiché dispongono di firma ritardata, pertanto è necessario disabilitare la verifica del nome sicuro per tali assembly in tutti i computer in cui l'assembly verrà caricato, incluso il computer del controller di test. Per disabilitare la verifica con firma ritardata, usare *sn.exe*. Potrebbe essere necessario includere anche il token di chiave pubblica dell'assembly con firma ritardata per il quale viene richiesto di ignorare la verifica del nome sicuro.
 
-Usare lo strumento Nome sicuro (Sn.exe) per disabilitare la verifica con firma ritardata.
+Usare lo strumento Nome sicuro (*Sn.exe*) per disabilitare la verifica con firma ritardata.
 
 La verifica dei nomi sicuri viene disabilitata, solo per l'assembly specificato, nel computer in cui viene eseguito il comando. È possibile eseguire questa operazione solo se si dispone di autorizzazioni sufficienti.
 
-Dopo aver completato l'esecuzione dei test, abilitare nuovamente la verifica con firma ritardata tramite il comando SN.exe.
+Dopo aver completato l'esecuzione dei test, abilitare nuovamente la verifica con firma ritardata tramite il comando *SN.exe*.
 
-Per disabilitare e riabilitare la verifica della firma, si consiglia di usare i comandi SN.exe negli script. È possibile disabilitare la verifica in uno script di installazione e riattivarla in uno script di pulitura.
+Per disabilitare e riabilitare la verifica della firma, si consiglia di usare i comandi *SN.exe* negli script. È possibile disabilitare la verifica in uno script di installazione e riattivarla in uno script di pulitura.
 
 ## <a name="see-also"></a>Vedere anche
 

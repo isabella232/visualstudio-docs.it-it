@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978158"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380863"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. Nel menu **File** selezionare **Aggiungi** > **Nuovo progetto**.
 
-2. Nella finestra di dialogo Nuovo progetto espandere **Installato**, **Visual C#**, quindi scegliere **Test**.
+2. Nella finestra di dialogo **Nuovo progetto** espandere **Installato**, **Visual C#** e quindi scegliere **Test**.
 
 3. Nell'elenco dei modelli selezionare **Progetto unit test**.
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. Nel progetto **BankTests** aggiungere un riferimento al progetto **Bank**.
 
-   In Esplora soluzioni selezionare **Riferimenti** nel progetto **BankTests**, quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.
+   In **Esplora soluzioni** selezionare **Riferimenti** nel progetto **BankTests** e quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-6. Nella finestra di dialogo Gestione riferimenti espandere **Soluzione** , quindi selezionare l'elemento **Bank** .
+6. Nella finestra di dialogo **Gestione riferimenti** espandere **Soluzione** e quindi selezionare l'elemento **Bank**.
 
 ## <a name="create-the-test-class"></a>Creare la classe di test
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Eseguire nuovamente il test
 
-In Esplora test scegliere **Esegui tutto** per rieseguire il test. La barra verde/rossa diventa verde per indicare che il test è stato superato, quindi il test viene spostato nel gruppo **Test superati**.
+In **Esplora test** scegliere **Esegui tutto** per rieseguire il test. La barra verde/rossa diventa verde per indicare che il test è stato superato, quindi il test viene spostato nel gruppo **Test superati**.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Usare gli unit test per migliorare il codice
 

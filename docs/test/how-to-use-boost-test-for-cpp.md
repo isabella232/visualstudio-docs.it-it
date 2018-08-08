@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: eebefa7b4033de5acec313e241d13cddab7120fa
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945484"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380450"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Come usare Boost.Test per C++ in Visual Studio
 
@@ -42,7 +42,7 @@ Per usare Boost.Test è necessario installare [Boost](http://www.boost.org/). Se
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Aggiungere il modello di elemento (Visual Studio 2017 versione 15.6 e versioni successive)
 
-1. Per creare un file con estensione cpp per i test, fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi nuovo elemento**.
+1. Per creare un file *CPP* per i test, fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi nuovo elemento**.
 
    ![Modello di elemento Boost.Test](media/boost_test_item_template.png)
 
@@ -59,7 +59,8 @@ In Visual Studio 2017 versione 15.5 non sono disponibili progetti di test precon
 1. Nel riquadro sinistro scegliere **Visual C++** > **Desktop di Windows** e quindi scegliere il modello **Applicazione console di Windows**.
 
 1. Specificare un nome per il progetto e scegliere **OK**.
-1. Eliminare la funzione `main` nel file con estensione cpp.
+
+1. Eliminare la funzione `main` nel file *CPP*.
 
 1. Se si usa la versione della libreria con singola intestazione o dinamica di Boost.Test, passare ad [Aggiungere direttive include](#add-include-directives). Se si usa la versione della libreria statica, è necessario eseguire un'ulteriore configurazione:
 
@@ -74,19 +75,19 @@ In Visual Studio 2017 versione 15.5 non sono disponibili progetti di test precon
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-   c. Salvare e chiudere il file \*.vcxproj e quindi ricaricare il progetto.
+   c. Salvare e chiudere il file *\*VCPROJ* e quindi ricaricare il progetto.
 
    d. Per aprire le **pagine delle proprietà**, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**.
 
    d. Espandere **C/C++** > **Generazione di codice**, quindi selezionare **Libreria di Runtime**. Selezionare **/MTd** per la libreria di runtime statica di debug o **/MT** per la libreria di runtime statica di versione.
 
-   f. Espandere **Linker > Sistema**. Verificare che **SubSystem** sia impostato su **Console**.
+   f. Espandere **Linker** > **System**. Verificare che **SubSystem** sia impostato su **Console**.
 
    g. Scegliere **OK** per chiudere le pagine delle proprietà.
 
 ## <a name="add-include-directives"></a>Aggiungere direttive include
 
-1. Nel file con estensione cpp del test aggiungere le direttive `#include` necessarie per rendere visibili al codice di test i tipi e le funzioni del programma. Il programma si trova in genere al livello superiore della gerarchia di cartelle. Se si digita `#include "../"`, viene visualizzata una finestra di IntelliSense che consente di selezionare il percorso completo del file di intestazione.
+1. Nel file *CPP* del test aggiungere le direttive `#include` necessarie per rendere visibili al codice di test i tipi e le funzioni del programma. Il programma si trova in genere al livello superiore della gerarchia di cartelle. Se si digita `#include "../"`, viene visualizzata una finestra di IntelliSense che consente di selezionare il percorso completo del file di intestazione.
 
    ![Aggiungere direttive #include](media/cpp-gtest-includes.png)
 
@@ -124,7 +125,9 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>Scrivere ed eseguire i test
+
 È ora possibile scrivere ed eseguire i Boost Test. Per informazioni sulle macro dei test, vedere la [documentazione della libreria Boost Test](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html). Per informazioni sull'individuazione, l'esecuzione e il raggruppamento dei test usando **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>Vedere anche
-[Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)
+
+- [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)

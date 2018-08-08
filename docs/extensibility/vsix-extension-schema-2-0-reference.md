@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089370"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586352"
 ---
-# <a name="vsix-extension-schema-20-reference"></a>Informazioni di riferimento su schema estensione VSIX 2.0
+# <a name="vsix-extension-schema-20-reference"></a>Riferimenti su VSIX extension schema 2.0
 Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato del file è disciplinato da uno schema. La versione 2.0 di questo schema supporta l'aggiunta di attributi e i tipi personalizzati.  Lo schema del manifesto è estendibile. Il caricatore di manifesto ignora gli elementi XML e gli attributi che non comprende.  
   
 > [!IMPORTANT]
 >  Visual Studio 2015 è possibile caricare i file VSIX nei formati Visual Studio 2010, Visual Studio 2012 o Visual Studio 2013.  
   
 ## <a name="package-manifest-schema"></a>Schema del manifesto del pacchetto  
- È l'elemento radice del file XML manifesto `<PackageManifest>`, con un singolo attributo `Version`, ovvero la versione del formato del manifesto. Se vengono apportate modifiche significative al formato, verrà modificato il formato della versione. In questo argomento descrive versione del formato manifesto 2.0, che viene specificato nel manifesto impostando il `Version` versione il valore dell'attributo = "2.0".  
+ L'elemento radice del file manifesto XML è `<PackageManifest>`. Dispone di un singolo attributo `Version`, ovvero la versione del formato del manifesto. Se vengono apportate modifiche significative al formato, viene modificato il formato della versione. Questo articolo descrive una versione del formato manifesto 2.0, che viene specificato nel manifesto impostando il `Version` attributo il valore della versione = "2.0".  
   
 ### <a name="packagemanifest-element"></a>Elemento PackageManifest  
  All'interno di `<PackageManifest>` elemento radice, è possibile usare gli elementi seguenti:  
@@ -46,7 +46,7 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
 ### <a name="metadata-element"></a>Elemento dei metadati  
  In questa sezione è i metadati sul pacchetto, la propria identità e pubblicità informazioni. `<Metadata>` contiene gli elementi seguenti:  
   
--   `<Identity>` -Questo definisce le informazioni di identificazione del pacchetto e include gli attributi seguenti:  
+-   `<Identity>` -Definisce le informazioni di identificazione del pacchetto e include gli attributi seguenti:  
   
     -   `Id` -Questo attributo deve essere un ID univoco per il pacchetto scelto dall'autore. Il nome deve essere qualificato esattamente i tipi CLR sono con spazio dei nomi: Company.Product.Feature.Name. Il `Id` attributo è limitato a 100 caratteri.  
   
@@ -95,7 +95,7 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
   
 -   `AnyAttribute*` -La `Installation` elemento accetta un set aperto di attributi che verranno esposte in fase di esecuzione come un dizionario di coppie nome-valore.  
   
--   `<InstallationTarget>` : Questo elemento controlla il percorso in cui il programma di installazione VSIX installa il pacchetto. Se il valore della `Scope` attributo è "ProductExtension" il pacchetto deve avere come destinazione uno SKU che ha installato un file manifesto come parte del relativo contenuto per annunciare la disponibilità per le estensioni. Il `<InstallationTarget>` elemento prevede i seguenti attributi quando la `Scope` attributo è l'impostazione esplicita o il valore predefinito "ProductExtension":  
+-   `<InstallationTarget>` : Questo elemento controlla il percorso in cui il programma di installazione VSIX installa il pacchetto. Se il valore della `Scope` attributo è "ProductExtension" il pacchetto deve avere come destinazione uno SKU, che ha installato un file manifesto come parte del relativo contenuto per annunciare la disponibilità per le estensioni. Il `<InstallationTarget>` elemento prevede i seguenti attributi quando la `Scope` attributo è l'impostazione esplicita o il valore predefinito "ProductExtension":  
   
     -   `Id` -Questo attributo identifica il pacchetto.  L'attributo segue la convenzione di spazio dei nomi: Company.Product.Feature.Name. Il `Id` attributo può contenere solo caratteri alfanumerici ed è limitato a 100 caratteri. Valori previsti:  
   
@@ -132,10 +132,10 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
         > [!IMPORTANT]
         >  Versione 2.0 dello Schema VSIX è stata introdotta in Visual Studio 2012. Usare questo schema è necessario che Visual Studio 2012 o in un secondo momento è installato nel computer e usare VSIXInstaller.exe che fa parte di tale prodotto. È possibile destinate alle versioni precedenti di Visual Studio con un Visual Studio 2012 o versioni successive VSIX Installer, ma solo usando le versioni più recenti del programma di installazione.  
   
-    -   `AnyAttribute*` -La `<InstallationTarget>` elemento consente un set aperto di attributi che verrà esposto in fase di esecuzione come un dizionario di coppie nome-valore.  
+    -   `AnyAttribute*` -La `<InstallationTarget>` elemento consente un set aperto di attributi esposti in fase di esecuzione come un dizionario di coppie nome-valore.  
   
 ### <a name="dependencies-element"></a>Elemento di dipendenze  
- Questo elemento contiene un elenco di dipendenze che dichiara questo pacchetto. Se vengono specificate le eventuali dipendenze, tali pacchetti (identificato dal loro `Id`) devono essere installati prima.  
+ Questo elemento contiene un elenco di dipendenze che dichiara questo pacchetto. Se vengono specificate le eventuali dipendenze, tali pacchetti (identificato dal loro `Id`) sia stato installato prima.  
   
 -   `<Dependency>` elemento - l'elemento figlio ha gli attributi seguenti:  
   
@@ -153,7 +153,7 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
   
         -   Versione unica & - solo la versione specificata.  
   
-    -   `DisplayName` -Questo attributo è il nome visualizzato del pacchetto dipendente che viene usato negli elementi dell'interfaccia utente, ad esempio le finestre di dialogo e messaggi di errore. L'attributo è facoltativo, a meno che non è installato il pacchetto dipendente dall'identità del servizio gestito.  
+    -   `DisplayName` -Questo attributo è il nome visualizzato del pacchetto dipendente, che viene usato negli elementi dell'interfaccia utente, ad esempio le finestre di dialogo e messaggi di errore. L'attributo è facoltativo, a meno che non è installato il pacchetto dipendente dall'identità del servizio gestito.  
   
     -   `Location` -Questo attributo facoltativo specifica il percorso relativo all'interno di questa estensione VSIX a un pacchetto VSIX annidato o un URL al percorso di download per la dipendenza. Questo attributo viene usato per consentire all'utente di individuare il pacchetto dei prerequisiti.  
   
@@ -164,7 +164,7 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
   
 -   `<Asset>` -Questo elemento contiene elementi e gli attributi seguenti:  
   
-    -   `Type` -Questo è il tipo di estensione o contenuto rappresentato da questo elemento. Ciascuna `<Asset>` elemento deve avere un unico `Type`, ma più `<Asset>` elementi possono avere lo stesso `Type`. Questo attributo deve essere rappresentato come un nome completo, in base alle convenzioni dello spazio dei nomi. I tipi noti sono:  
+    -   `Type` -Tipo di estensione o contenuto rappresentato da questo elemento. Ciascuna `<Asset>` elemento deve avere un unico `Type`, ma più `<Asset>` elementi possono avere lo stesso `Type`. Questo attributo deve essere rappresentato come un nome completo, in base alle convenzioni dello spazio dei nomi. I tipi noti sono:  
   
         1.  Microsoft.VisualStudio.VsPackage  
   
@@ -184,9 +184,9 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
   
     -   `Path` -il percorso relativo del file o cartella all'interno del pacchetto che contiene l'asset.  
     
-    -   `TargetVersion` -in cui si applica l'asset specificato per l'intervallo di versioni. Usare per la spedizione di più versioni degli asset a versioni diverse di Visual Studio. Richiede Visual Studio ha effetto 2017.3 o versione successiva.
+    -   `TargetVersion` -l'intervallo di versioni a cui si applica l'asset specificato. Usare per la spedizione di più versioni degli asset a versioni diverse di Visual Studio. Richiede Visual Studio ha effetto 2017.3 o versione successiva.
   
-    -   `AnyAttribute*` -Un set aperto di attributi che verrà esposto in fase di esecuzione come un dizionario di coppia nome-valore.  
+    -   `AnyAttribute*` -Un set aperto di attributi esposti in fase di esecuzione come un dizionario di coppia nome-valore.  
   
          `<AnyElement>*` -Qualsiasi contenuto strutturato è consentita tra un `<Asset>` begin ed end tag. Tutti gli elementi sono esposti come un elenco di oggetti XmlElement. Le estensioni VSIX è possono definire i metadati specifici del tipo strutturato nel file manifesto ed enumerarle in fase di esecuzione.  
   
@@ -219,4 +219,4 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Distribuzione delle estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+ [Estensioni di Visual Studio di spedizione](../extensibility/shipping-visual-studio-extensions.md)

@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ff025118d0908fe35e8f3fd54a8e467c6340d419
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 77c44b3fda689b8b2710f959decf362f06c66424
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178865"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381817"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedura: eliminare i risultati di un test di carico da un repository
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedura: Eliminare i risultati di un test di carico da un repository
 
 Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzione vengono archiviate nel repository dei risultati test di carico. Il repository dei risultati del test di carico contiene i dati del contatore delle prestazioni e le informazioni sugli errori. Per altre informazioni, vedere [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -42,7 +42,7 @@ Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzion
 
      Se i risultati test di carico sono disponibili, saranno visualizzati nell'elenco **Risultati test di carico**. L'elenco contiene le colonne **Ora**, **Durata**, **Utente**, **Risultato**, **Test** e **Descrizione**. In **Test** è indicato il nome del test, mentre in **Descrizione** è riportata la descrizione facoltativa aggiunta prima dell'esecuzione del test. Nella colonna **Descrizione** sono visualizzate le descrizioni brevi immesse in **Commenti analisi** per i risultati del test.
 
-5.  Nell'elenco **Risultati test di carico** scegliere un risultato. È possibile utilizzare MAIUSC, CTRL o entrambi i tasti per selezionare più risultati.
+5.  Nell'elenco **Risultati test di carico** scegliere un risultato. È possibile usare **MAIUSC**, **CTRL** o entrambi i tasti per selezionare più risultati.
 
 6.  Scegliere **Rimuovi**.
 
@@ -54,6 +54,6 @@ Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzion
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Esportare i risultati di un test di carico da un repository](../test/how-to-export-load-test-results-from-a-repository.md)
-- [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gestire i risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Procedura: Importare i risultati del test di carico in un repository](../test/how-to-import-load-test-results-into-a-repository.md)

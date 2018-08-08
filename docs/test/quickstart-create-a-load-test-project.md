@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7838b9b04aa8d95fa9476cf9720815ccb5bed122
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176697"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380497"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Guida introduttiva: Creare un progetto di test di carico
 
@@ -27,9 +27,9 @@ In questa Guida introduttiva di 10 minuti si apprenderà come creare ed eseguire
 
 Se il componente degli strumenti per test di carico e delle prestazioni Web non è già installato, è necessario installarlo tramite il programma di installazione di Visual Studio.
 
-1. Aprire il programma di installazione di Visual Studio dal menu Start di Windows. È anche possibile accedervi in Visual Studio dalla finestra di dialogo **Nuovo progetto** oppure scegliendo **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu.
+1. Aprire **Programma di installazione di Visual Studio** dal menu **Start** di Windows. È anche possibile accedervi in Visual Studio dalla finestra di dialogo **Nuovo progetto** oppure scegliendo **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu.
 
-1. Nel programma di installazione di Visual Studio scegliere la scheda **Singoli componenti** e scorrere verso il basso fino alla sezione **Debug e test**. Selezionare **Strumenti per test di carico e delle prestazioni Web**.
+1. In **Programma di installazione di Visual Studio** scegliere la scheda **Singoli componenti** e scorrere verso il basso fino alla sezione **Debug e test**. Selezionare **Strumenti per test di carico e delle prestazioni Web**.
 
    ![Componente Strumenti per test di carico e delle prestazioni Web](media/web-perf-load-testing-tools-component.png)
 

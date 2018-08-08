@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 01/12/2018
 ms.topic: Get-Started-Article
-description: Informazioni sul vantaggio Training Opsgility con la sottoscrizione di Visual Studio selezionata.
+description: Informazioni sul vantaggio training Opsgility con la sottoscrizione di Visual Studio selezionata.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b8f2a7457500ccde75fb0ac8ce698eb27c760459
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280423"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380310"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Vantaggio Opsgility nelle sottoscrizioni di Visual Studio
 

@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382678"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 
-Questa procedura dettagliata illustra come usare un'origine dati definita in un file *app.config* per gli unit test. Viene mostrato come creare un file app.config che definisce un'origine dati che può essere usata dalla classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Le attività incluse nella procedura dettagliata sono le seguenti:
+Questa procedura dettagliata illustra come usare un'origine dati definita in un file *app.config* per gli unit test. Viene spiegato come creare un file *app.config* che definisce un'origine dati che può essere usata dalla classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Le attività incluse nella procedura dettagliata sono le seguenti:
 
-- Creazione di un file app.config.
+- Creazione di un file *app.config*.
 
 - Definizione di una sezione di configurazione personalizzata.
 
@@ -45,21 +46,21 @@ Per completare questa procedura dettagliata, è necessario:
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>Aggiungere un file app.config al progetto
 
-1. Se per il progetto di test esiste già un file app.config, passare a [Definire una sezione di configurazione personalizzata](#DefineCustomConfigurationSection).
+1. Se per il progetto di test esiste già un file *app.config*, passare a [Definire una sezione di configurazione personalizzata](#define-a-custom-configuration-section).
 
-2. Fare clic con il pulsante destro del mouse sul progetto di test in **Esplora soluzioni**, quindi selezionare **Aggiungi** > **Nuovo elemento**.
+2. Fare clic con il pulsante destro del mouse sul progetto di test in **Esplora soluzioni** e quindi selezionare **Aggiungi** > **Nuovo elemento**.
 
      Verrà visualizzata la finestra **Aggiungi nuovo elemento**.
 
 3. Selezionare il modello **File di configurazione dell'applicazione** e fare clic su **Aggiungi**.
 
-##  <a name="DefineCustomConfigurationSection"></a> Definire una sezione di configurazione personalizzata
+##  <a name="define-a-custom-configuration-section"></a>Definire una sezione di configurazione personalizzata
 
 Esaminare il file *app.config*. Il file contiene almeno la dichiarazione XML e un elemento radice.
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Per aggiungere la sezione di configurazione personalizzata nel file app. config
 
-1. L'elemento radice di app.config deve essere l'elemento **configuration**. Creare un elemento **configSections** all'interno dell'elemento **configuration**. **configSections** deve essere il primo elemento nel file *app.config*.
+1. L'elemento radice di *app.config* deve essere l'elemento **configuration**. Creare un elemento **configSections** all'interno dell'elemento **configuration**. **configSections** deve essere il primo elemento nel file *app.config*.
 
 2. All'interno dell'elemento **configSections** creare un elemento **section**.
 
@@ -67,7 +68,7 @@ Esaminare il file *app.config*. Il file contiene almeno la dichiarazione XML e u
 
 L'elemento **section** dovrebbe essere simile al seguente:
 
-```
+```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 ```
 
@@ -94,7 +95,7 @@ Le stringhe di connessione definiscono informazioni specifiche del provider per 
 
 Nel secondo elemento **add** creare i seguenti attributi e valori per una connessione a un foglio di calcolo di Microsoft Excel:
 
-|||
+|Attributo|Valori|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +103,7 @@ Nel secondo elemento **add** creare i seguenti attributi e valori per una connes
 
 L'elemento **connectionStrings** dovrebbe essere simile al seguente:
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -142,7 +143,7 @@ In questa sezione vengono definite due origini dati da usare in uno unit test.
 
 Nel secondo elemento **add** creare i seguenti attributi e valori per un'origine dati di Microsoft Excel:
 
-|||
+|Attributo|Valori|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -183,9 +184,9 @@ Il file *app.config* finale dovrebbe essere simile al seguente:
 
 ## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Creare uno unit test che usa le origini dati definite in app.config
 
-Ora che è stato definito un file app.config, si creerà uno unit test che usa i dati che si trovano nelle origini dati definite nel file app. config. In questa sezione verranno eseguite le operazioni seguenti:
+Ora che è stato definito un file *app.config*, si creerà uno unit test che usa i dati che si trovano nelle origini dati definite nel file *app. config*. In questa sezione verranno eseguite le operazioni seguenti:
 
-- Creare le origini dati presenti nel file app.config.
+- Creare le origini dati presenti nel file *app.config*.
 
 - Usare le origini dati in due metodi di test che confrontano i valori in ciascuna origine dati.
 
@@ -261,7 +262,7 @@ Ora che è stato definito un file app.config, si creerà uno unit test che usa i
     }
     ```
 
-3. Esaminare gli attributi DataSource. Notare i nomi delle impostazioni nel file app.config.
+3. Esaminare gli attributi DataSource. Si notino i nomi delle impostazioni nel file *app.config*.
 
 4. Compilare la soluzione ed eseguire i test MyTestMethod e MyTestMethod2.
 

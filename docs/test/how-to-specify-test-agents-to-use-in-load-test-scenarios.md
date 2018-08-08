@@ -14,26 +14,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4aacbd31516e6a3e55f1b543a3cc8f49ea6ce4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968495"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381469"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procedura: specificare agenti di test da utilizzare negli scenari di test di carico
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procedura: Specificare agenti di test da usare negli scenari di test di carico
 
 Dopo aver creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test specifici.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà di scenari dei test di carico e delle relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà degli scenari di test di carico e le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
-Gli agenti vengono specificati utilizzando l'Editor test di carico per modificare la proprietà **Agenti da utilizzare** nella finestra Proprietà.
+Gli agenti vengono specificati usando l'**Editor test di carico** per modificare la proprietà **Agenti da utilizzare** nella finestra **Proprietà**.
 
 È possibile specificare gli agenti che si desidera vengano utilizzati nello scenario se si utilizzano controller e agenti per eseguire il test di carico in modalità remota. È, ad esempio, possibile specificare un determinato set di agenti, in modo da garantire la coerenza quando si analizzano le tendenze delle prestazioni. Gli agenti possono inoltre essere distribuiti geograficamente, in modo che vi sia affinità tra gli script eseguiti e la posizione dell'agente.
 
 > [!TIP]
-> Anziché inserire fisicamente un agente nel sito remoto, è possibile utilizzare l'emulazione di rete per emulare una rete lenta. Per ulteriori informazioni, vedere [Specificare tipi di reti virtuali](../test/specify-virtual-network-types-in-a-load-test-scenario.md) e [Specificare tipi di reti virtuali](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+> Anziché inserire fisicamente un agente nel sito remoto, è possibile utilizzare l'emulazione di rete per emulare una rete lenta. Per altre informazioni, vedere [Specificare i tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 Per altre informazioni, vedere [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -47,13 +47,13 @@ Se nel computer di un agente di test l'utilizzo della CPU è oltre il 75% o se l
 
 1.  Aprire un test di carico.
 
-     Verrà visualizzato l'Editor test di carico. Verrà visualizzato l'albero del test di carico.
+     Viene visualizzato l'**Editor test di carico**. Verrà visualizzato l'albero del test di carico.
 
 2.  Nella cartella **Scenari** dell'albero del test di carico scegliere il nodo dello scenario per il quale specificare gli agenti da usare.
 
 3.  Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-     Le categorie e le proprietà dello scenario verranno visualizzate nella finestra Proprietà.
+     Le categorie e le proprietà dello scenario vengono visualizzate nella finestra **Proprietà**.
 
 4.  Nella casella di testo per la proprietà **Agenti da utilizzare** digitare l'elenco di agenti da usare per lo scenario.
 
@@ -66,7 +66,7 @@ Se nel computer di un agente di test l'utilizzo della CPU è oltre il 75% o se l
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
+- [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)

@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752001"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379579"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Procedura: selezionare un repository dei risultati del test di carico
+# <a name="how-to-select-a-load-test-results-repository"></a>Procedura: Selezionare un repository dei risultati del test di carico
 
 La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. Gli agenti, insieme ai controller, consentono di generare un carico simulato maggiore rispetto a un singolo computer. Per altre informazioni, vedere [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
 
-I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui si desidera archiviare i risultati del test di carico utilizzando la finestra Gestisci controller test.
+I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui si vuole archiviare i risultati del test di carico usando la finestra di **amministrazione dei controller di test**.
 
 Per altre informazioni sugli agenti, vedere [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -36,11 +36,11 @@ Per altre informazioni sugli agenti, vedere [Test controller e agenti di test](c
 
 1.  In **Esplora soluzioni** aprire il file del test di carico.
 
-2.  Dalla barra degli strumenti **Test di carico** scegliere **Gestisci Test Controller**. Verrà visualizzata la finestra di dialogo Gestisci controller di test. Se si utilizza un agente in remoto, è necessario selezionare un controller.
+2.  Dalla barra degli strumenti **Test di carico** scegliere **Gestisci Test Controller**. Verrà visualizzata la finestra di dialogo **Gestisci controller di test**. Se si utilizza un agente in remoto, è necessario selezionare un controller.
 
      ![Proprietà di connessione dell'archivio dei risultati del test di carico](../test/media/loadtestconnectionproperties.png) Proprietà di connessione dell'archivio dei risultati del test di carico
 
-3.  In **Archivio risultati test di carico** fare clic su (…) per visualizzare la finestra di dialogo **Proprietà connessione**.
+3.  In **Archivio risultati test di carico** fare clic su **(…)** per visualizzare la finestra di dialogo **Proprietà connessione**.
 
 4.  In **Nome server** digitare il nome del server in cui sono stati eseguiti gli script `LoadTest`.
 
@@ -57,5 +57,5 @@ Per altre informazioni sugli agenti, vedere [Test controller e agenti di test](c
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gestire i risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)

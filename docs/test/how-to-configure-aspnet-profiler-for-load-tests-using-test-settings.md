@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175552"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379806"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Procedura: configurare il profiler ASP.NET per i test di carico tramite impostazioni test in Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Procedura: Configurare il profiler ASP.NET per i test di carico usando le impostazioni test in Visual Studio
 
 È possibile usare l'adattatore dati di diagnostica del profiler ASP.NET per raccogliere le informazioni sul profiler ASP.NET. Questo adattatore dati di diagnostica consente di raccogliere dati relativi alle prestazioni per le applicazioni ASP.NET.
 
@@ -33,7 +33,7 @@ Per altre informazioni, vedere [Procedura: Creare un'impostazione test per un te
 
 Nella procedura seguente viene illustrato come configurare l'adattatore dati di diagnostica per il profiler ASP.NET.
 
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Per configurare il profiler ASP.NET per le impostazioni test
+## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Per configurare il profiler ASP.NET per le impostazioni di test
 
 Prima di eseguire i passaggi di questa procedura, è necessario aprire le impostazioni test da Visual Studio e selezionare la pagina **Dati e diagnostica**.
 
@@ -52,7 +52,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
 
 4.  Per abilitare la profilatura delle interazioni tra livelli, selezionare **Abilita profilatura interazione tra livelli**.
 
-     La profilatura interazione tra livelli consente di contare il numero di richieste inviate al server Web per ciascun artefatto, ad esempio, MyPage.aspx o CompanyLogo.gif, e il tempo richiesto per soddisfare ciascuna richiesta. La profilatura interazione tra livelli consente di raccogliere inoltre le connessioni ADO.NET utilizzate come parte della richiesta di pagina e il numero di chiamate a query e stored procedure eseguite come parte della risposta a tale richiesta.
+     La profilatura interazione tra livelli consente di contare il numero di richieste inviate al server Web per ciascun artefatto, ad esempio, *MyPage.aspx* o *CompanyLogo.gif*, e il tempo richiesto per soddisfare ogni richiesta. La profilatura interazione tra livelli consente di raccogliere inoltre le connessioni ADO.NET utilizzate come parte della richiesta di pagina e il numero di chiamate a query e stored procedure eseguite come parte della risposta a tale richiesta.
 
      Vengono raccolti due set diversi di informazioni di intervallo:
 
@@ -64,6 +64,6 @@ Con l'adattatore dati di diagnostica del profiler ASP.NET configurato nell'impos
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Procedura: Creare un'impostazione test per un test di carico distribuito](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)

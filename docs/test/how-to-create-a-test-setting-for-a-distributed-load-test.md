@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: daf775b843cd2b966fd3c1647151e58b78ef7996
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180308"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381068"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedura: creare un'impostazione test per un test di carico distribuito
+# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedura: Creare un'impostazione test per un test di carico distribuito
 
 Configurare le *impostazioni test* per i test di carico per consentirne la distribuzione tra più computer con agenti di test e test controller. È anche possibile configurare le impostazioni test per l'uso degli *adattatori dati di diagnostica* che specificano i tipi di dati da raccogliere o il funzionamento dei computer di test quando si eseguono i test di carico da Visual Studio.
 
@@ -35,7 +35,7 @@ Quando si eseguono i test, si selezionano le impostazioni di test da utilizzare 
 
 Quando si aggiunge un progetto di test di carico e prestazioni Web a una soluzione, viene creato un file denominato *Default.testsettings*. Il file viene aggiunto automaticamente alla soluzione nella cartella **Elementi di soluzione**. Questo file esegue i test in locale senza adattatori dati di diagnostica. È possibile aggiungere un altro file con estensione *testsettings* o modificare un file con estensione *testsettings* per specificare gli adattatori dati di diagnostica e i test controller.
 
-Il controller di test disporrà di agenti che possono essere usati per ogni ruolo nelle impostazioni di test. Per altre informazioni sui test controller e gli agenti di test, vedere [Gestione dei test controller e degli agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+Il controller di test disporrà di agenti che possono essere usati per ogni ruolo nelle impostazioni di test. Per altre informazioni sui test controller e gli agenti di test, vedere [Gestire test controller e agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
 Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella soluzione per i test di carico che si intende eseguire da Visual Studio.
 
@@ -43,7 +43,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Per aggiungere impostazioni test per un test di carico distribuito
 
-1.  In Esplora soluzioni fare clic con il pulsante destro del mouse su **Elementi di soluzione**, scegliere **Aggiungi**, quindi **Nuovo elemento**.
+1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Elementi di soluzione**, scegliere **Aggiungi** e quindi **Nuovo elemento**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
@@ -53,10 +53,10 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 4.  Scegliere **Aggiungi**.
 
-     Il nuovo file delle impostazioni test viene visualizzato in Esplora soluzioni nella cartella **Elementi di soluzione**.
+     Il nuovo file delle impostazioni test viene visualizzato in **Esplora soluzioni** nella cartella **Elementi di soluzione**.
 
     > [!NOTE]
-    > L'elenco di impostazioni test visualizzato in Visual Studio Enterprise deriva dall'elenco dei file di impostazioni test nella cartella **Elementi di soluzione**. I file delle impostazioni test nella cartella Elementi di soluzione vengono ad esempio visualizzati quando si sceglie l'opzione **Seleziona impostazioni test attive** dal menu **Test**. Questo significa che se un file di impostazioni test viene spostato in un'altra posizione nella gerarchia della soluzione, non sarà più possibile utilizzarlo come un'impostazione di test nell'IDE (Integrated Development Environment) di Visual Studio.
+    > L'elenco di impostazioni test visualizzato in Visual Studio Enterprise deriva dall'elenco dei file di impostazioni test nella cartella **Elementi di soluzione**. I file delle impostazioni test nella cartella **Elementi di soluzione** vengono ad esempio visualizzati quando si sceglie l'opzione **Seleziona impostazioni test attive** dal menu **Test**. Questo significa che se un file di impostazioni test viene spostato in un'altra posizione nella gerarchia della soluzione, non sarà più possibile utilizzarlo come un'impostazione di test nell'IDE (Integrated Development Environment) di Visual Studio.
 
 5.  Viene visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
 
@@ -103,7 +103,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Digitare il nome in **Nome attributo** e il valore in **Valore attributo**, quindi scegliere **OK**. Aggiungere tutti gli attributi necessari.
 
-     Ad esempio, è possibile aggiungere un attributo denominato "RAM > 16 GB" con un valore "True" o "False" per filtrare i computer di agenti di test con più di 16 GB di memoria. Per applicare lo stesso attributo a uno o più agenti di test, viene utilizzata la finestra di dialogo Gestisci controller di test. Per altre informazioni, vedere [Gestione dei test controller e degli agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+     Ad esempio, è possibile aggiungere un attributo denominato "RAM > 16 GB" con un valore "True" o "False" per filtrare i computer di agenti di test con più di 16 GB di memoria. Per applicare lo stesso attributo a uno o più agenti di test, viene utilizzata la finestra di dialogo **Gestisci controller di test**. Per altre informazioni, vedere [Gestire test controller e agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
 17. Scegliere **Dati e diagnostica**.
 
@@ -119,20 +119,20 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Per informazioni dettagliate su ogni adattatore dati di diagnostica e su come configurarlo, è possibile visualizzare l'argomento associato nella tabella seguente.
 
-     Per altre informazioni sugli adattatori dati di diagnostica, vedere [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+     Per altre informazioni sugli adattatori dati di diagnostica, vedere [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
 
      **Adattatori dati di diagnostica per test di carico**
 
     |Adattatore dati di diagnostica|Utilizzo nei test di carico|Argomento associato|
     |-----------------------------|-------------------------|----------------------|
     |**Proxy client ASP.NET per IntelliTrace e impatto test:** questo proxy consente di raccogliere informazioni sulle chiamate http da un client a un server Web per gli adattatori dati di diagnostica di IntelliTrace e impatto test.|![Icona Informazioni](../test/media/vc364f4.gif)<br /><br /> A meno che ci sia una specifica esigenza di raccogliere informazioni sul sistema per i computer degli agenti di test, non includere questo adattatore. **Attenzione:** non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti. <br /><br /> I dati dell'impatto sui test non vengono raccolti tramite test di carico.||
-    |**IntelliTrace:** è possibile configurare informazioni specifiche sulla traccia diagnostica archiviate in un file di log. Un file di log ha estensione tdlog. Quando si esegue il test e un passo del test non riesce, è possibile creare un bug. Il file di log che contiene la traccia diagnostica viene associato automaticamente al bug. I dati raccolti nel file di log aumentano la produttività di debug riducendo il tempo necessario per riprodurre e diagnosticare un errore nel codice. Da questo file di log è possibile ricreare la sessione locale in un altro computer. In questo modo si riduce il rischio che non sia possibile riprodurre un bug.<br /><br /> Per altre informazioni, vedere [Raccogliere dati IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Icona Importante](../test/media/vc364f3.gif)<br /><br /> Non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti e registrati. È opportuno tentare di utilizzare l'adattatore IntelliTrace solo in test di carico che non hanno lunga esecuzione e non utilizzano molti agenti di test.|[Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
-    |**Profiler ASP.NET:** è possibile creare un'impostazione test che includa la profilatura ASP.NET per la raccolta di dati sulle prestazioni nelle applicazioni Web ASP.NET.|L'adattatore dati di diagnostica del profiler ASP.NET profila il processo di Internet Information Services (IIS), pertanto non funzionerà con un server web di sviluppo. Per profilare il sito web nel test di carico, è necessario installare un agente di test nel computer sul quale IIS è in esecuzione. L'agente di test non genererà carico, ma sarà un agente di sola raccolta. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|[Procedura: Configurare il profiler ASP.NET per i test di carico tramite impostazioni test](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Log eventi:** è possibile configurare un'impostazione test per includere la raccolta del log eventi, che sarà compresa nei risultati dei test.||[Procedura: Configurare le raccolte dei log eventi tramite le impostazioni test](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
-    |**Emulazione di rete:** è possibile specificare che si vuole aggiungere un carico di rete artificiale al test usando un'impostazione test. L'emulazione di rete influisce sulla comunicazione da e verso il computer emulando una determinata velocità della connessione di rete, ad esempio di una connessione remota. **Nota:** non è possibile usare l'emulazione di rete per aumentare la velocità della connessione di rete.|L'adattatore di emulazione di rete viene ignorato dai test di carico. Al contrario, i test di carico usano le impostazioni specificate nella combinazione di reti dello scenario dei test di carico.<br /><br /> Per altre informazioni, vedere [Specifica dei tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
+    |**IntelliTrace:** è possibile configurare informazioni specifiche sulla traccia diagnostica archiviate in un file di log. Un file di log ha estensione *tdlog*. Quando si esegue il test e un passo del test non riesce, è possibile creare un bug. Il file di log che contiene la traccia diagnostica viene associato automaticamente al bug. I dati raccolti nel file di log aumentano la produttività di debug riducendo il tempo necessario per riprodurre e diagnosticare un errore nel codice. Da questo file di log è possibile ricreare la sessione locale in un altro computer. In questo modo si riduce il rischio che non sia possibile riprodurre un bug.<br /><br /> Per altre informazioni, vedere [Raccogliere dati IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Icona Importante](../test/media/vc364f3.gif)<br /><br /> Non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti e registrati. È opportuno tentare di utilizzare l'adattatore IntelliTrace solo in test di carico che non hanno lunga esecuzione e non utilizzano molti agenti di test.|[Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
+    |**Profiler ASP.NET:** è possibile creare un'impostazione test che includa la profilatura ASP.NET per la raccolta di dati sulle prestazioni nelle applicazioni Web ASP.NET.|L'adattatore dati di diagnostica del profiler ASP.NET profila il processo di Internet Information Services (IIS), pertanto non funzionerà con un server web di sviluppo. Per profilare il sito web nel test di carico, è necessario installare un agente di test nel computer sul quale IIS è in esecuzione. L'agente di test non genererà carico, ma sarà un agente di sola raccolta. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|[Procedura: Configurare il profiler ASP.NET per i test di carico usando le impostazioni test](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
+    |**Log eventi:** è possibile configurare un'impostazione test per includere la raccolta del log eventi, che sarà compresa nei risultati dei test.||[Procedura: Configurare le raccolte dei log eventi usando le impostazioni test](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**Emulazione di rete:** è possibile specificare che si vuole aggiungere un carico di rete artificiale al test usando un'impostazione test. L'emulazione di rete influisce sulla comunicazione da e verso il computer emulando una determinata velocità della connessione di rete, ad esempio di una connessione remota. **Nota:** non è possibile usare l'emulazione di rete per aumentare la velocità della connessione di rete.|L'adattatore di emulazione di rete viene ignorato dai test di carico. Al contrario, i test di carico usano le impostazioni specificate nella combinazione di reti dello scenario dei test di carico.<br /><br /> Per altre informazioni, vedere [Specificare i tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Informazioni di sistema:** è possibile configurare un'impostazione test per includere le informazioni di sistema dei computer su cui viene eseguito l'agente di raccolta di dati e diagnostica delle informazioni di sistema. Le informazioni di sistema sono specificate nei risultati del test tramite un'impostazione di test.|![Icona di informazioni](../test/media/vc364f4.gif)<br /><br /> È possibile raccogliere informazioni di sistema sia dagli agenti di carico che dal sistema sottoposto a test.|Per raccogliere queste informazioni, non è necessaria alcuna configurazione.|
     |**Impatto test:** è possibile raccogliere informazioni sui metodi del codice dell'applicazione usati durante l'esecuzione di un test case. Queste informazioni possono essere utilizzate insieme a quelle relative alle modifiche apportate al codice dell'applicazione dagli sviluppatori per individuare i test interessati da tali modifiche di sviluppo.|I dati dell'impatto sui test non vengono raccolti con i test di carico.||
-    |**Videoregistratore:** è possibile creare una registrazione video della sessione desktop durante l'esecuzione di un test automatizzato. La registrazione può essere utile per visualizzare le azioni dell'utente per un test codificato dell'interfaccia utente. Il video può consentire ad altri membri del team di isolare i problemi dell'applicazione difficili da riprodurre. **Nota:** durante l'esecuzione di test in modalità remota, il videoregistratore non funzionerà a meno che l'agente non venga eseguito in modalità processo interattivo.|![Important icon](../test/media/vc364f3.gif) **Avviso:** non si consiglia l'utilizzo dell'adattatore Videoregistratore per i test di carico.|[Procedura: Includere le registrazioni dello schermo e della voce durante i test tramite le impostazioni test](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Videoregistratore:** è possibile creare una registrazione video della sessione desktop durante l'esecuzione di un test automatizzato. La registrazione può essere utile per visualizzare le azioni dell'utente per un test codificato dell'interfaccia utente. Il video può consentire ad altri membri del team di isolare i problemi dell'applicazione difficili da riprodurre. **Nota:** durante l'esecuzione di test in modalità remota, il videoregistratore non funzionerà a meno che l'agente non venga eseguito in modalità processo interattivo.|![Important icon](../test/media/vc364f3.gif) **Avviso:** non si consiglia l'utilizzo dell'adattatore Videoregistratore per i test di carico.|[Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Scegliere **Distribuzione**.
 
@@ -165,7 +165,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
         > [!NOTE]
         > Il **Tipo host** **ASP.NET** non è supportato nei test di carico.
 
-    2.  Usare l'elenco a discesa Esegui test in un processo a 32 bit o a 64 bit a per scegliere se i test delle prestazioni web e gli unit test nel test di carico devono essere eseguiti come processi a 32 bit o a 64 bit.
+    2.  Usare l'elenco a discesa **Esegui test in un processo a 32 bit o a 64 bit** per scegliere se i test delle prestazioni Web e gli unit test nel test di carico devono essere eseguiti come processi a 32 bit o a 64 bit.
 
         > [!NOTE]
         > Per la massima flessibilità, è necessario compilare i progetti di test di carico e prestazioni web usando la configurazione **Qualsiasi CPU**. È quindi possibile effettuare l'esecuzione sia su agenti a 32 bit che a 64 bit. La compilazione di progetti di test di carico e prestazioni web con la configurazione a **64 bit** non offre particolari vantaggi.
@@ -187,11 +187,11 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 ### <a name="to-remove-a-test-settings-from-your-solution"></a>Per rimuovere impostazioni di test dalla soluzione
 
-Nella cartella Elementi di soluzione in Esplora soluzioni fare clic con il pulsante destro del mouse sulle impostazioni test che si vuole rimuovere, quindi scegliere **Rimuovi**.
+Nella cartella **Elementi di soluzione** in **Esplora soluzioni** fare clic con il pulsante destro del mouse sulle impostazioni test da rimuovere, quindi scegliere **Rimuovi**.
 
 Il file delle impostazioni di test verrà rimosso dalla soluzione. Questa modifica si riflette nell'elenco delle opzioni per **Seleziona impostazioni test attive** e **Modifica impostazioni test** nel menu **Test**.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
-- [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)

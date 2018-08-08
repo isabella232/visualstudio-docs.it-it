@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968536"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379289"
 ---
-# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Procedura: installare un adattatore dati di diagnostica personalizzato
+# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Procedura: Installare un adattatore dati di diagnostica personalizzato
 
 Se si è creato un adattatore dati di diagnostica personalizzato o si è ricevuto un adattatore dati di diagnostica personalizzato da utilizzare, è possibile installare l'assembly dell'adattatore dati di diagnostica copiando il relativo file di assembly nella directory corretta sul computer locale.
 
@@ -25,7 +25,7 @@ Se si è creato un adattatore dati di diagnostica personalizzato o si è ricevut
 
  Utilizzare la procedura riportata di seguito per installare l'adattatore diagnostico personalizzato nei percorsi appropriati. Saranno necessarie le autorizzazioni amministrative in tutti i computer in cui si installa l'adattatore dati di diagnostica.
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>Installazione di un adattatore dati di diagnostica personalizzato
+## <a name="install-a-custom-diagnostic-data-adapter"></a>Installare un adattatore dati di diagnostica personalizzato
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>Per installare un adattatore dati di diagnostica personalizzato
 
@@ -35,9 +35,9 @@ Se si è creato un adattatore dati di diagnostica personalizzato o si è ricevut
 
      I file da copiare sono i seguenti:
 
-    -   Assembly dell'adattatore dati di diagnostica (con estensione dll) (obbligatorio).
+    -   Assembly dell'adattatore dati di diagnostica (*DLL*) (obbligatorio).
 
-    -   File di dati di debug (con estensione pdb) per l'adattatore (facoltativo).
+    -   File di dati di debug (*PDB*) per l'adattatore (facoltativo).
 
     -   File di configurazione per l'adattatore (`<diagnostic data adapter name>.dll.config`), se sono presenti impostazioni di configurazione predefinite (facoltativo).
 
@@ -63,5 +63,5 @@ Se si è creato un adattatore dati di diagnostica personalizzato o si è ricevut
 - [Procedura: Creare un adattatore dati di diagnostica](../test/how-to-create-a-diagnostic-data-adapter.md)
 - [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Esempio di progetto per creare un adattatore dati di diagnostica](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
-- [Creazione di un adattatore dati di diagnostica per raccogliere dati personalizzati o per influire su un computer di test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
-- [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Creare un adattatore dati di diagnostica per raccogliere dati personalizzati o influire su un computer di test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)

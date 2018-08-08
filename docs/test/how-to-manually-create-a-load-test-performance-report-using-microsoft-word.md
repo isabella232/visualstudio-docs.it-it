@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750883"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380694"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedura: creare manualmente un rapporto di prestazioni di un test di carico utilizzando Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word
 
 È possibile creare manualmente report di test di carico di Microsoft Word copiando e incollando dati dalla visualizzazione Riepilogo dei risultati test di carico e dalla visualizzazione Grafici. I dati presenti nelle visualizzazioni Riepilogo e Grafici vengono applicati in formato HTML quando vengono copiati.
 
@@ -30,7 +30,7 @@ ms.locfileid: "34750883"
 
 ## <a name="copy-summary-view-data"></a>Copiare i dati della visualizzazione Riepilogo
 
-1.  Se in Risultati test di carico la visualizzazione Riepilogo non è attualmente visibile, fare clic su **Riepilogo** nella barra degli strumenti.
+1.  Se in **Risultati test di carico** la visualizzazione Riepilogo non è attualmente visibile, fare clic su **Riepilogo** nella barra degli strumenti.
 
 2.  Nella visualizzazione Riepilogo fare clic con il pulsante destro del mouse e scegliere **Seleziona tutto**.
 
@@ -42,7 +42,7 @@ ms.locfileid: "34750883"
 
 ## <a name="copy-graph-view-data"></a>Copiare i dati della visualizzazione Grafici
 
-1.  Se in Risultati test di carico la visualizzazione Grafici non è attualmente visibile, scegliere **Grafici** nella barra degli strumenti.
+1.  Se in **Risultati test di carico** la visualizzazione Grafici non è attualmente visibile, scegliere **Grafici** nella barra degli strumenti.
 
 2.  (Facoltativo) Ingrandire il grafico specifico che si vuole copiare nel documento di Microsoft Word, come illustrato nella figura seguente. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
@@ -57,5 +57,5 @@ ms.locfileid: "34750883"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md)
+- [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md)
 - [Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

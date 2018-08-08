@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio Account per sviluppatore di Windows incl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da1f893813341f27efbbdb6e80b9243c43de9625
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297556"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382451"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 

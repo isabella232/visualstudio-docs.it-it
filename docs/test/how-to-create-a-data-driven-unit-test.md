@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 435e4d852464a74a1dc4f418ffa9906c1e22791a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117595"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382581"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare uno unit test basato sui dati
 
@@ -65,7 +65,7 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-##  <a name="BKMK_Creating_a_data_source"></a> Creazione di un'origine dati
+##  <a name="create-a-data-source"></a>Creare un'origine dati
  Per testare il metodo `AddIntegers`, creiamo un'origine dati che specifica un intervallo di valori per i parametri e la somma restituita prevista. Nell'esempio verrà creato un database Sql Compact denominato `MathsData` e una tabella denominata `AddIntegersData` che contiene i nomi di colonna e i valori seguenti
 
 |FirstNumber|SecondNumber|Sum|
@@ -74,7 +74,7 @@ public int AddIntegers(int first, int second)
 |1|1|2|
 |2|-3|-1|
 
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Aggiunta di un oggetto TestContext alla classe di test
+##  <a name="add-a-testcontext-to-the-test-class"></a>Aggiungere un oggetto TestContext alla classe di test
  Il framework unit test crea un oggetto `TestContext` per archiviare le informazioni sull'origine dati per un test basato sui dati. Il framework imposta quindi l'oggetto come valore della proprietà `TestContext` creata.
 
 ```csharp
@@ -88,7 +88,7 @@ public TestContext TestContext
 
  Nel metodo di test si accede ai dati tramite la proprietà dell'indicizzatore `DataRow` di `TestContext`.
 
-##  <a name="BKMK_Writing_the_test_method"></a> Scrittura del metodo di test
+##  <a name="write-the-test-method"></a>Scrivere il metodo di test
  Il metodo di test per `AddIntegers` è piuttosto semplice. Per ogni riga nell'origine dati, chiamare `AddIntegers` con i valori della colonna **FirstNumber** e **SecondNumber** come parametri e verificare il valore restituito rispetto al valore della colonna **Sum**:
 
 ```csharp
@@ -111,7 +111,7 @@ public void AddIntegers_FromDataSourceTest()
 
 Il metodo `Assert` include un messaggio che visualizza i valori `x` e `y` di un'iterazione non riuscita. Per impostazione predefinita, i valori dichiarati `expected` e `actual` sono già inclusi nei dettagli di un test non riuscito.
 
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Specificazione di DataSourceAttribute
+###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Specificare DataSourceAttribute
  L'attributo `DataSource` specifica la stringa di connessione per l'origine dati e il nome della tabella usata nel metodo di test. Le informazioni esatte nella stringa di connessione variano a seconda del tipo di origine dati in uso. In questo esempio è stato usato un database SqlServerCe.
 
 ```csharp
@@ -124,9 +124,9 @@ L'attributo DataSource dispone di tre costruttori.
 [DataSource(dataSourceSettingName)]
 ```
 
- Un costruttore con un solo parametro usa le informazioni di connessione archiviate nel file app.config per la soluzione. Il nome dell'elemento XML nel file di configurazione che specifica le informazioni di connessione è *dataSourceSettingsName*.
+ Un costruttore con un solo parametro usa le informazioni di connessione archiviate nel file *app.config* per la soluzione. Il nome dell'elemento XML nel file di configurazione che specifica le informazioni di connessione è *dataSourceSettingsName*.
 
- L'uso di un file app.config consente di modificare il percorso dell'origine dati senza apportare modifiche allo unit test. Per informazioni su come creare e usare un file app.config, vedere [Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+ L'uso di un *file app.config* consente di modificare il percorso dell'origine dati senza apportare modifiche allo unit test. Per informazioni su come creare e usare un file *app.config*, vedere [Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
@@ -145,19 +145,19 @@ L'attributo DataSource dispone di tre costruttori.
     )]
 ```
 
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Uso di TestContext. DataRow per l'accesso ai dati
+###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Usare TestContext.DataRow per l'accesso ai dati
  Per accedere ai dati nella tabella `AddIntegersData`, usare l'indicizzatore `TestContext.DataRow`. `DataRow` è un oggetto <xref:System.Data.DataRow>, pertanto i valori delle colonne vengono recuperati in base all'indice o ai nomi delle colonne. Poiché i valori vengono restituiti come oggetti, convertirli nel tipo appropriato:
 
 ```csharp
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Esecuzione del test e visualizzazione dei risultati
- Al termine della scrittura di un metodo di test, compilare il progetto di test. Il metodo di test viene visualizzato nella finestra Esplora test, nel gruppo **Test non eseguiti**. Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi **Test non superati**, **Test superati** e **Test non eseguiti**. È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire.
+##  <a name="run-the-test-and-view-results"></a>Eseguire il test e visualizzare i risultati
+ Al termine della scrittura di un metodo di test, compilare il progetto di test. Il metodo di test viene visualizzato nella finestra **Esplora test**, nel gruppo **Test non eseguiti**. Quando si eseguono, si scrivono e si rieseguono i test, **Esplora test** visualizza i risultati nei gruppi **Test non superati**, **Test superati** e **Test non eseguiti**. È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire.
 
- La barra dei risultati dei test nella parte superiore della finestra di esplorazione viene animata durante l'esecuzione dei test. Al termine del test, la barra diventa verde se tutti i test sono stati superati oppure rossa se almeno uno dei test ha avuto esito negativo. Il riquadro dei dettagli nella parte inferiore della finestra Esplora test mostra un riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore.
+ La barra dei risultati dei test nella parte superiore della finestra di esplorazione viene animata durante l'esecuzione dei test. Al termine del test, la barra diventa verde se tutti i test sono stati superati oppure rossa se almeno uno dei test ha avuto esito negativo. Nel riquadro dei dettagli nella parte inferiore della finestra **Esplora test** appare un riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore.
 
- Se è stato eseguito il metodo `AddIntegers_FromDataSourceTest` nell'esempio, la barra dei risultati diventa rossa e il metodo di test viene spostato in **Test non superati**. Un test basato sui dati non viene superato se uno dei metodi iterati dall'origine dati ha esito negativo. Quando si sceglie un test basato sui dati non riuscito nella finestra Esplora test, il riquadro dei dettagli visualizza i risultati di ogni iterazione identificata dall'indice delle righe di dati. Nel nostro esempio, risulta che l'algoritmo `AddIntegers` non gestisce correttamente i valori negativi.
+ Se è stato eseguito il metodo `AddIntegers_FromDataSourceTest` dell'esempio, la barra dei risultati diventa rossa e il metodo di test viene spostato nei **test non superati**. Un test basato sui dati non riesce se uno dei metodi di cui si esegue l'iterazione dall'origine dati ha esito negativo. Quando si sceglie un test basato sui dati non riuscito nella finestra **Esplora test**, il riquadro dei dettagli visualizza i risultati di ogni iterazione identificata dall'indice delle righe di dati. Nel nostro esempio, risulta che l'algoritmo `AddIntegers` non gestisce correttamente i valori negativi.
 
  Dopo avere corretto il metodo sottoposto a test ed eseguito nuovamente il test, la barra dei risultati diventa verde e il metodo di test viene spostato nel gruppo **Test superati**.
 
@@ -169,4 +169,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
-- [Scrittura di unit test per .NET Framework con il framework unit test di Microsoft per codice gestito](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+- [Scrivere unit test per .NET Framework con il framework unit test di Microsoft per codice gestito](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cac171d6f0e1bcd91a89be799497b84dc15fc5a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70930a09f01450d59b44678ebd26d7e742af7294
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967096"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379625"
 ---
-# <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>Procedura: configurare i test di carico per raccogliere i dettagli completi per abilitare l'attività utente virtuale nei risultati del test
+# <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>Procedura: Configurare i test di carico per raccogliere i dettagli completi per abilitare l'attività utente virtuale nei risultati del test
 
-Per usare il Grafico attività utente virtuale per il test di carico, è necessario configurare il test di carico per raccogliere dettagli completi. Per configurare il test di carico in questo modo, selezionare l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** associata al test di carico. In questa modalità, nel test di carico verranno raccolte informazioni dettagliate su ogni test, pagina e transazione.
+Per usare il **Grafico attività utente virtuale** per il test di carico, è necessario configurare il test di carico per raccogliere dettagli completi. Per configurare il test di carico in questo modo, selezionare l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** associata al test di carico. In questa modalità, nel test di carico verranno raccolte informazioni dettagliate su ogni test, pagina e transazione.
 
  Se si aggiorna un progetto da una versione precedente di un test di carico di Visual Studio, usare i passaggi nella procedura seguente per abilitare la raccolta di dettagli completi.
 
@@ -37,19 +37,19 @@ Per usare il Grafico attività utente virtuale per il test di carico, è necessa
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Per configurare la proprietà di archiviazione dei dettagli di intervallo in un test di carico
 
-1.  Aprire un test di carico nell'Editor test di carico.
+1.  Aprire un test di carico nell'**Editor test di carico**.
 
 2.  Espandere il nodo **Impostazioni di esecuzione** nel test di carico.
 
 3.  Scegliere le impostazioni di esecuzione test che si vuole configurare, ad esempio **Run Settings1[Active]**.
 
-4.  Aprire la finestra Proprietà. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
+4.  Aprire la finestra **Proprietà**. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
 5.  Nella categoria **Risultati** scegliere la proprietà **Intervallo archiviazione dettagli** e selezionare **Tutti i singoli dettagli**.
 
-     Dopo aver configurato l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** è possibile eseguire il test di carico e visualizzare il Grafico attività utente virtuale. Per altre informazioni, vedere [Procedura: Analizzare le attività degli utenti virtuali durante un test di carico](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
+     Dopo aver configurato l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** è possibile eseguire il test di carico e visualizzare il **Grafico attività utente virtuale**. Per altre informazioni, vedere [Procedura: Analizzare le attività degli utenti virtuali durante un test di carico](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Analisi dell'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Procedura dettagliata: uso del grafico attività utente virtuale per isolare i problemi](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Procedura dettagliata: Uso del grafico attività utente virtuale per isolare i problemi](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

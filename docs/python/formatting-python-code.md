@@ -11,27 +11,27 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91a3651dcc7fd16bec2e094fd152242e67fa2d70
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056911"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341597"
 ---
-# <a name="formatting-python-code"></a>Formattazione del codice Python
+# <a name="format-python-code"></a>Formattare il codice Python
 
 Visual Studio consente di riformattare rapidamente il codice in base a opzioni di formattazione preconfigurate.
 
-- Per formattare una selezione, selezionare **Modifica > Avanzate > Formatta selezione** o premere CTRL+E,F.
-- Per formattare l'intero file, selezionare **Modifica > Avanzate > Formatta documento** o premere CTRL+E,D.
+- Per formattare una selezione, selezionare **Modifica** > **Avanzate** > **Formatta selezione** o premere **CTRL**+**E** > **F**.
+- Per formattare l'intero file, selezionare **Modifica** > **Avanzate** > **Formatta documento** o premere **CTRL**+**E** > **D**.
 
-Le opzioni vengono impostate tramite **Strumenti > Opzioni > Editor di testo > Python > Formattazione** e le relative schede annidate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
+Le opzioni vengono impostate tramite **Strumenti** > **Opzioni** > **Editor di testo** > **Python** >  **Formattazione** e le relative schede annidate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
 
 ![Opzioni di formattazione di Python in Visual Studio](media/options-editor-formatting.png)
 
 Per impostazione predefinita, le opzioni di formattazione sono impostate in modo corrispondente a un superset della [guida di stile PEP 8](http://www.python.org/dev/peps/pep-0008/). La scheda **Generale** determina quando viene applicata la formattazione. Le impostazioni per le altre tre schede sono descritte in questo articolo.
 
-Il [supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md) aggiunge anche l'utile comando [Riempi paragrafo di commento](#fill-comment-paragraph-command) al menu **Modifica > Avanzate** come descritto in una sezione successiva.
+Il [supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md) aggiunge anche l'utile comando [**Riempi paragrafo di commento**](#fill-comment-paragraph-command) al menu **Modifica** > **Avanzate** come descritto in una sezione successiva.
 
 ## <a name="spacing"></a>Spacing (Spaziatura)
 
@@ -43,7 +43,7 @@ La scheda **Spacing** (Spaziatura) consente di controllare la posizione in cui i
 
 Le tabelle seguenti includono esempi per le varie opzioni:
 
-| Opzione Class Definitions (Definizioni di classe) | Selezionato con segno di spunta | Deselezionato |
+| Opzione Definizioni di classe | Selezionato con segno di spunta | Deselezionato |
 | --- | --- | --- | 
 | Insert space between a class declaration's name and bases list (Inserisci spazio tra il nome della dichiarazione di classe e l'elenco di basi) | `class X (object): pass` | `class X(object): pass` | 
 | Insert space within bases list parentheses (Inserisci spazio tra le parentesi dell'elenco di basi) | `class X( object ): pass` | `class X(object): pass` |
@@ -51,7 +51,7 @@ Le tabelle seguenti includono esempi per le varie opzioni:
 
 <br/>
 
-| Opzione Function Definitions (Definizioni di funzioni) | Selezionato con segno di spunta | Deselezionato |
+| Opzione Definizioni di funzioni | Selezionato con segno di spunta | Deselezionato |
 | --- | --- | --- |
 | Insert space between a function declaration's name and parameter list (Inserisci spazio tra il nome della dichiarazione di funzione e l'elenco di parametri) | `def X (): pass` | `def X(): pass` | 
 | Insert space within parameter list parentheses (Inserisci spazio tra le parentesi dell'elenco di parametri) | `def X( a, b ): pass` | `def X(a, b): pass` |
@@ -110,7 +110,7 @@ Le opzioni relative alle **istruzioni** consentono di controllare la riscrittura
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Fill Comment Paragraph (Riempi paragrafo commenti)
 
-Il comando **Modifica > Avanzate > Riempi paragrafo di commento** (CTRL+E, P) ridefinisce il flusso e la formattazione del testo dei commenti, riunendo le righe brevi e suddividendo quelle lunghe.
+Il comando **Modifica** > **Avanzate** > **Riempi paragrafo di commento** (**CTRL**+**E** > **P**) ridefinisce il flusso e la formattazione del testo dei commenti, riunendo le righe brevi e suddividendo quelle lunghe.
 
 Ad esempio:
 

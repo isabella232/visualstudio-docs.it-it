@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750994"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381970"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedura: includere le registrazioni dello schermo e della voce durante i test mediante le impostazioni test
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test
 
 Dall'editor di configurazione in Visual Studio è possibile configurare l'adattatore dati di diagnostica che registra lo schermo e la voce dell'utente che esegue il test. Con l'adattatore dati di diagnostica è possibile salvare una registrazione dello schermo e della voce della sessione desktop durante il test. La registrazione viene salvata con il risultato del test oppure può essere allegata a un bug. Gli altri membri del team possono utilizzare la registrazione per isolare i difetti dell'applicazione difficili da riprodurre.
 
@@ -37,7 +37,7 @@ La funzionalità di registrazione dello schermo e della voce può essere utilizz
 
 3.  Selezionare **Registrazione dello schermo e della voce**, quindi **Configura**.
 
-     Verrà visualizzata la finestra di dialogo Configura adattatore dati di diagnostica - Registrazione dello schermo e della voce.
+     Viene visualizzata la finestra di dialogo **Configura adattatore dati di diagnostica - Registrazione dello schermo e della voce**.
 
      ![Configurazione video](../test/media/testsettingvideoconfiggdr.png)
 
@@ -46,7 +46,7 @@ La funzionalità di registrazione dello schermo e della voce può essere utilizz
 5.  (Facoltativo) Selezionare la casella di controllo accanto a **Salva registrazione in caso di superamento del test case** per specificare il salvataggio delle registrazioni dello schermo e della voce per i test superati e non superati.
 
     > [!WARNING]
-    > Se si seleziona **Salva registrazione in caso di superamento del test case**, la registrazione viene archiviata con i risultati del test, usando spazio di archiviazione sul server. È possibile utilizzare lo strumento di pulizia allegati di test per pulire questi allegati.
+    > Se si seleziona **Salva registrazione in caso di superamento del test case**, la registrazione viene archiviata con i risultati del test, usando spazio di archiviazione sul server. È possibile usare lo strumento di **pulizia allegati di test** per pulire questi allegati.
 
 6.  In **Qualità registrazione dello schermo** configurare le opzioni seguenti:
 
@@ -65,5 +65,5 @@ La funzionalità di registrazione dello schermo e della voce può essere utilizz
 
 - [Raccogliere dati di diagnostica durante i test (VSTS)](/vsts/manual-test/collect-diagnostic-data)
 - [Raccogliere dati di diagnostica nei test manuali (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
+- [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Eseguire test manuali (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)

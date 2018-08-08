@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbabbe7eed62506bc80cbf112c85cda002e409dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977777"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341883"
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>Generazione di input con l'esecuzione simbolica dinamica
 
@@ -72,7 +72,7 @@ Il [risolutore di vincoli](#constraint-solver) di IntelliTest determina i valori
 IntelliTest può [creare istanze di classi .NET esistenti](#existing-classes) oppure può essere usato per [creare automaticamente oggetti fittizi](#parameterized-mocks) che implementano un'interfaccia specifica e presentano comportamenti diversi a seconda dell'uso.
 
 <a name="existing-classes"></a>
-## <a name="instantiating-existing-classes"></a>Creazione di istanze di classi esistenti
+## <a name="instantiate-existing-classes"></a>Creare istanze di classi esistenti
 
 **Definizione del problema**
 
@@ -113,7 +113,7 @@ La risposta convenzionale è l'uso di *oggetti fittizi* con comportamento esplic
 
 Un oggetto fittizio implementa un'interfaccia (o estende una classe non sealed). Non rappresenta un'implementazione reale, ma solo un collegamento che consente l'esecuzione di test usando l'oggetto fittizio. Il suo comportamento è definito manualmente in ogni test case nel quale viene usato. Esistono numerosi strumenti che semplificano la definizione degli oggetti fittizi e del comportamento previsto, ma questo comportamento va comunque definito manualmente.
 
-Anziché usare valori hard-coded negli oggetti fittizi, IntelliTest può generare i valori. Così come supporta gli [unit test con parametri](test-generation.md#parameterized-unit-testing), IntelliTest supporta anche gli oggetti fittizi con parametri.
+Anziché usare valori hard-coded negli oggetti fittizi, IntelliTest può generare i valori. Così come supporta il [testing unità con parametri](test-generation.md#parameterized-unit-testing), IntelliTest supporta anche gli oggetti fittizi con parametri.
 
 Per gli oggetti fittizi con parametri sono disponibili due modalità di esecuzione diverse:
 
@@ -135,7 +135,7 @@ IntelliTest consente di monitorare le istruzioni completate mentre esegue un tes
 IntelliTest prova a ridurre al minimo le dimensioni delle matrici e delle stringhe necessarie per attivare i comportamenti di programma interessanti.
 
 <a name="additional-inputs"></a>
-## <a name="obtaining-additional-inputs"></a>Recupero di input aggiuntivi
+## <a name="obtain-additional-inputs"></a>Ottenere input aggiuntivi
 
 La classe statica [PexChoose](static-helper-classes.md#pexchoose) può essere usata per ottenere input aggiuntivi per un test e per implementare [oggetti fittizi con parametri](#parameterized-mocks).
 
