@@ -1,5 +1,5 @@
 ---
-title: Funzione SccCheckin | Documenti Microsoft
+title: Funzione SccCheckin | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8c8d23a89e55b272657dde0c2374c78e63bfaf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc60657eae830fa02d87f52225de780d8a688c11
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138854"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636714"
 ---
-# <a name="scccheckin-function"></a>SccCheckin (funzione)
-Questa funzione controlla in precedenza i file estratti al sistema di controllo di origine, le modifiche e la creazione di una nuova versione. Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da archiviare.  
+# <a name="scccheckin-function"></a>Funzione SccCheckin
+Questa funzione controlla nei file precedentemente estratti al sistema di controllo di origine, le modifiche e la creazione di una nuova versione. Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da archiviare.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,50 +39,50 @@ SCCRTN SccCheckin (
 );  
 ```  
   
-#### <a name="parameters"></a>Parametri  
+### <a name="parameters"></a>Parametri  
  pvContext  
- [in] La struttura di contesto plug-in controllo di origine.  
+ [in] La struttura del contesto plug-in del controllo origine.  
   
  hWnd  
- [in] Un handle di finestra dell'IDE che il plug-in controllo del codice sorgente è possibile utilizzare come un elemento padre per eventuali finestre di dialogo che fornisce.  
+ [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFiles  
+ nFile  
  [in] Numero di file selezionati da archiviare.  
   
  lpFileNames  
- [in] Matrice di nomi di percorso locale completo dei file da archiviare.  
+ [in] Matrice di nomi di percorso locale completo di file da archiviare.  
   
  lpComment  
- [in] Commento da applicare a ognuno dei file selezionati da archiviare. Si tratta di `NULL` se il plug-in controllo del codice sorgente è una richiesta di un commento.  
+ [in] Commento da applicare a ogni file selezionati da archiviare. Questo parametro è `NULL` se il controllo del codice sorgente del plug-in una richiesta per un commento.  
   
- fOptions  
+ Opzioni  
  [in] Flag di comando, i valori validi sono 0 o `SCC_KEEP_CHECKEDOUT`.  
   
  pvOptions  
  [in] Opzioni specifiche plug-in controllo del codice sorgente.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|I file è stato correttamente archiviato.|  
+|SCC_OK|File è stato correttamente archiviato.|  
 |SCC_E_FILENOTCONTROLLED|Il file selezionato non è incluso nel controllo del codice sorgente.|  
 |SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete. È consigliabile un nuovo tentativo.|  
 |SCC_E_NONSPECIFICERROR|Errore non specifico. File non è stato archiviato.|  
-|SCC_E_NOTCHECKEDOUT|L'utente non ha estratto il file, in modo non è possibile verificare.|  
-|SCC_E_CHECKINCONFLICT|Archiviazione non può essere eseguita perché:<br /><br /> -Un altro utente ha archiviato anticipo e `bAutoReconcile` è false.<br /><br /> oppure<br /><br /> -Il merge automatico non può essere eseguito (ad esempio, quando i file sono binari).|  
-|SCC_E_VERIFYMERGE|File è stato unito automaticamente, ma non è stato archiviato attesa di verifica dell'utente.|  
-|SCC_E_FIXMERGE|File è stato unito automaticamente, ma non è stato archiviato a causa di un conflitto di tipo merge che deve essere risolti manualmente.|  
-|SCC_E_NOTAUTHORIZED|L'utente non è possibile eseguire questa operazione.|  
+|SCC_E_NOTCHECKEDOUT|L'utente non è estratto il file, in modo che non è possibile eseguirne l'archiviazione.|  
+|SCC_E_CHECKINCONFLICT|Check-in non può essere eseguita perché:<br /><br /> -Un altro utente è stata archiviata direttamente e `bAutoReconcile` fosse falsa.<br /><br /> oppure<br /><br /> -Il merge automatico non può essere eseguito (ad esempio, quando i file sono: binari).|  
+|SCC_E_VERIFYMERGE|File è stata unita automatico ma non è stato archiviato attesa di verifica dell'utente.|  
+|SCC_E_FIXMERGE|File è stata unita automatico ma non è stato archiviato a causa di un conflitto di merge che deve essere risolti manualmente.|  
+|SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|  
 |SCC_I_OPERATIONCANCELED|Operazione annullata prima del completamento.|  
 |SCC_I_RELOADFILE|Un progetto o il file deve essere ricaricato.|  
 |SCC_E_FILENOTEXIST|File locale non è stato trovato.|  
   
 ## <a name="remarks"></a>Note  
- Il commento si applica a tutti i file da archiviare. L'argomento commento può essere un `null` stringa, nel qual caso il plug-in controllo del codice sorgente può richiedere all'utente una stringa di commento per ogni file.  
+ Il commento viene applicata a tutti i file da archiviare. L'argomento commento può essere un `null` stringa, nel qual caso il plug-in del controllo del codice sorgente può richiedere all'utente una stringa di commento per ogni file.  
   
  Il `fOptions` argomento può essere assegnato il valore di `SCC_KEEP_CHECKEDOUT` flag che indica l'intenzione dell'utente per archiviare il file ed estrarlo di nuovo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+ [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)

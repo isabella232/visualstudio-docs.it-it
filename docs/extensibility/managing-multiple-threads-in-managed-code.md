@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: gestione di più thread in codice gestito | Documenti Microsoft'
+title: 'Procedura: gestione di più thread in codice gestito | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,24 +11,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0888a0f65f36d624deffac60ceee032d3f3d13a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e597f46160221b19fe678bbf665782d3f3f5a249
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139666"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636425"
 ---
-# <a name="how-to-managing-multiple-threads-in-managed-code"></a>Procedura: gestione di più thread in codice gestito
-Se si dispone di un'estensione di VSPackage gestita che chiama i metodi asincroni o operazioni eseguite su thread diverso dal thread dell'interfaccia utente di Visual Studio, è necessario seguire le linee guida seguenti. Consente di mantenere il thread dell'interfaccia utente reattiva perché non deve essere in attesa di lavoro su un altro thread di completamento. È possibile rendere il codice più efficiente, perché non si dispone di un thread aggiuntivo che occupano spazio dello stack e renderlo più affidabile e facile eseguire il debug per evitare i deadlock e blocchi.  
+# <a name="how-to-manage-multiple-threads-in-managed-code"></a>Procedura: gestire più thread in codice gestito
+Se si dispone di un'estensione VSPackage gestita che chiama i metodi asincroni che abbia le operazioni eseguite su thread diversi dal thread dell'interfaccia utente di Visual Studio, è necessario seguire le linee guida indicate di seguito. È possibile mantenere reattivo il thread dell'interfaccia utente perché non è necessario attendere per il lavoro in un altro thread per il completamento. È possibile rendere il codice più efficiente, perché non si dispone di un thread aggiuntivo che occupano lo spazio dello stack e si può rendere più affidabili e facili da eseguire il debug perché è evitare blocchi e deadlock.  
   
- In generale, è possibile passare dal thread dell'interfaccia utente a un altro thread, o viceversa. Quando il metodo restituisce, il thread corrente è il thread da cui è stata chiamata.  
+ In generale, è possibile passare dal thread dell'interfaccia utente a un altro thread, o viceversa. Quando il metodo termina, il thread corrente è il thread da cui è stato originariamente denominato.  
   
 > [!IMPORTANT]
->  Le linee guida seguenti usano le API nel <xref:Microsoft.VisualStudio.Threading> spazio dei nomi, in particolare, la <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> classe. Le API in questo spazio dei nomi sono nuove in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. È possibile ottenere un'istanza di un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> dal <xref:Microsoft.VisualStudio.Shell.ThreadHelper> proprietà `ThreadHelper.JoinableTaskFactory`.  
+>  Le linee guida seguenti usano le API nel <xref:Microsoft.VisualStudio.Threading> spazio dei nomi, in particolare, il <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> classe. Le API in questo spazio dei nomi sono una novità [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. È possibile ottenere un'istanza di un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> dal <xref:Microsoft.VisualStudio.Shell.ThreadHelper> proprietà `ThreadHelper.JoinableTaskFactory`.  
   
-## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Passaggio dal Thread dell'interfaccia utente a un Thread in Background  
+## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Passare dal thread dell'interfaccia utente a un thread in background  
   
-1.  Se si utilizza il thread dell'interfaccia utente e si desidera eseguire il lavoro asincrono in un thread in background, usare Task.Run():  
+1.  Se si è sul thread UI e si desidera eseguire le attività asincrone in un thread in background, usare `Task.Run()`:  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -38,7 +38,7 @@ Se si dispone di un'estensione di VSPackage gestita che chiama i metodi asincron
   
     ```  
   
-2.  Se si è nel thread UI e si desidera bloccare in modo sincrono durante l'esecuzione di lavoro in un thread in background, usare il <xref:System.Threading.Tasks.TaskScheduler> proprietà `TaskScheduler.Default` all'interno di <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2.  Se si è sul thread UI e si vuole bloccare in modo sincrono durante le operazioni di lavoro in un thread in background, usare il <xref:System.Threading.Tasks.TaskScheduler> proprietà `TaskScheduler.Default` all'interno di <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -50,18 +50,18 @@ Se si dispone di un'estensione di VSPackage gestita che chiama i metodi asincron
     });  
     ```  
   
-## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>Il passaggio da un Thread in Background nel thread UI  
+## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>Passare da un thread in background al thread dell'interfaccia utente  
   
-1.  Se si è in un thread in background e si desidera eseguire un'operazione sul thread dell'interfaccia utente, utilizzare <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1.  Se si usa un thread in background e si desidera eseguire un'operazione sul thread dell'interfaccia utente, usare <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
     ```csharp  
     // Switch to main thread  
     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
     ```  
   
-     È possibile utilizzare il <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> per passare al thread dell'interfaccia utente. Questo metodo invia un messaggio al thread dell'interfaccia utente con la continuazione del metodo asincrono corrente e anche comunica con il resto del framework threading per impostare la priorità corretta ed evitare i deadlock.  
+     È possibile usare il <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> metodo da passare al thread dell'interfaccia utente. Questo metodo invia un messaggio al thread UI con la continuazione del metodo asincrono corrente e comunica anche con il resto del framework threading per impostare la priorità corretta ed evitare i deadlock.  
   
-     Se il metodo di thread in background non è asincrono e non è possibile apportare asincrona, è comunque possibile utilizzare il `await` sintassi per passare al thread dell'interfaccia utente eseguendo il wrapping del lavoro con <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>, come nel seguente esempio:  
+     Se il metodo di thread in background non è asincrono e non riesci ad asincrona, è comunque possibile usare la `await` sintassi per passare al thread dell'interfaccia utente eseguendo il wrapping il lavoro con <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>, come in questo esempio:  
   
     ```csharp  
     ThreadHelper.JoinableTaskFactory.Run(async delegate {  

@@ -1,5 +1,5 @@
 ---
-title: Elemento PromptForSaveOnCreation (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento PromptForSaveOnCreation (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92be0bc15542010cfeea8a9ee70e69ff52e14163
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c5b04bfa04b1b6fd6599e5fdd06d6c58210f635
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137547"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638443"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelli di Visual Studio)
-Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il **nuovo progetto** la finestra di dialogo quando si crea un progetto. Se questo elemento è impostato su `true`, quindi all'utente viene richiesto per il salvataggio percorso; se `false`, quindi non vengono visualizzate. (Ovvero, un progetto temporaneo viene creato.)  
+Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il **nuovo progetto** finestra di dialogo durante la creazione di un progetto. Se questo elemento è impostato su `true`, quindi l'utente viene richiesto un salvataggio posizione; se `false`, quindi non vengono visualizzate. (Vale a dire, un progetto temporaneo viene creato.)  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -31,7 +31,7 @@ Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il 
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <PromptForSaveOnCreation> true/false </PromptForSaveOnCreation>  
 ```  
   
@@ -53,15 +53,15 @@ Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il 
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere `true` o `false`, `true` che indica che l'utente verrà richiesto per il salvataggio percorso quando si crea un nuovo progetto.  
+ Il testo deve essere `true` oppure `false`, `true` che indica che l'utente verrà chiesta una Salva percorso quando si crea un nuovo progetto.  
   
 ## <a name="remarks"></a>Note  
  `PromptForSaveOnCreation` è un elemento facoltativo. Il valore predefinito è `false`.  
   
- Progetti temporanei sono progetti che è possibile creare e modificare senza salvare il contenuto del progetto su disco.  
+ I progetti temporanei sono progetti che è possibile creare e modificare senza salvarne i contenuti del progetto su disco.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente imposta il valore di `PromptForSaveOnCreation` uguale a `false`, che specifica il progetto da creare un progetto temporaneo.  
+ Nell'esempio seguente imposta il valore della `PromptForSaveOnCreation` uguale a `false`, che specifica il progetto deve essere creato come progetto temporaneo.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,5 +89,5 @@ Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il 
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+ [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

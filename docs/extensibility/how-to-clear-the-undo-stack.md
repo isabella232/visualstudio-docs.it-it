@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: cancellare lo Stack di annullamento | Documenti Microsoft'
+title: 'Procedura: cancellare lo Stack di annullamento | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2519d529da13366c706e940b78f57a6ad903de7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 59f8d57c0ba0e84107cd0d0290b950b335e5f2b0
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126503"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639471"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Procedura: cancellare lo Stack di annullamento
-La procedura riportata di seguito viene illustrato come cancellare lo stack di annullamento.  
+# <a name="how-to-clear-the-undo-stack"></a>Procedura: cancellare lo stack di annullamento
+La procedura seguente illustra come cancellare lo stack di annullamento.  
   
-### <a name="to-clear-the-undo-stack"></a>Per cancellare lo stack di annullamento  
+## <a name="to-clear-the-undo-stack"></a>Per cancellare lo stack di annullamento  
   
-1.  Per cancellare l'utilizzo dello stack di annullamento di [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) metodo. Di seguito è riportato un esempio di questo oggetto:  
+1.  Per cancellare l'utilizzo dello stack di annullamento il [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) (metodo). Di seguito è riportato un esempio:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -46,4 +46,4 @@ La procedura riportata di seguito viene illustrato come cancellare lo stack di a
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: implementare la gestione di annullamento](../extensibility/how-to-implement-undo-management.md)
+ [Procedura: gestione dell'annullamento implementare](../extensibility/how-to-implement-undo-management.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: fornire contesto per gli editor | Documenti Microsoft'
+title: 'Procedura: fornire il contesto per gli editor | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,27 +13,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac6880d50f7e56b63f54c627726c3339028d519e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36ec73ef7b414519f0939c47c167f0e89c1e0941
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135601"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638951"
 ---
-# <a name="how-to-provide-context-for-editors"></a>Procedura: fornire contesto per gli editor
-Per un editor, il contesto è attivo solo quando l'editor ha lo stato attivo o lo stato attivo immediatamente prima che lo stato attivo è stato spostato in una finestra degli strumenti. È possibile fornire contesto per un editor effettuando le seguenti operazioni:  
+# <a name="how-to-provide-context-for-editors"></a>Procedura: fornire il contesto per gli editor
+Per un editor, il contesto è attivo solo quando l'editor ha lo stato attivo o lo stato attivo immediatamente prima che lo stato attivo è stato spostato in una finestra degli strumenti. È possibile fornire contesto per un editor in questo modo le attività seguenti:  
   
-1.  Creare un elenco di contesti.  
+1.  Creare un contenitore di contesto.  
   
-2.  Pubblicare l'elenco di contesti all'identificatore di elemento di selezione (SEID).  
+2.  Pubblicare il contenitore di contesto per l'identificatore di elemento di selezione (SEID).  
   
 3.  Mantenere il contesto nel contenitore.  
   
- Queste attività rientrano nelle procedure riportate di seguito. Per ulteriori informazioni su come fornire contesto, vedere **programmazione efficiente** più avanti in questo argomento.  
+ Queste attività sono coperte da procedure riportate di seguito. Per altre informazioni su come fornire contesto, vedere **programmazione efficiente** più avanti in questo articolo.  
   
-### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Per creare un contenitore di contesto per un editor o una finestra di progettazione  
+## <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Per creare un contenitore di contesto per un editor o una finestra di progettazione  
   
-1.  Chiamare `QueryService` sul <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfaccia per il <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> servizio.  
+1.  Chiamare `QueryService` sul <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfaccia di amministrazione del <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> servizio.  
   
      Un puntatore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> interfaccia viene restituita.  
   
@@ -41,48 +41,48 @@ Per un editor, il contesto è attivo solo quando l'editor ha lo stato attivo o l
   
      Un puntatore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> interfaccia viene restituita.  
   
-3.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> per aggiungere gli attributi, le parole chiave di ricerca o le parole chiave F1 all'elenco di contesto o sottocontesto.  
+3.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> metodo per aggiungere gli attributi, parole chiave di ricerca, o **F1** parole chiave per il contenitore di contesto o sottocontesto.  
   
-4.  Se si sta creando un contenitore sottocontesto, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> metodo a cui collegarsi contenitore sottocontesto contesti padre.  
+4.  Se si sta creando un elenco di sottocontesti, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> metodo per collegare l'elenco di sottocontesti a di contesti padre.  
   
-5.  Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> per ricevere notifiche quando il **Guida dinamica** finestra sta per aggiornare.  
+5.  Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> per ricevere una notifica quando il **Guida dinamica** finestra sta per aggiornare.  
   
-     Con il **Guida dinamica** finestra chiamare editor quando è pronto per l'aggiornamento consente di ritardare la modifica del contesto fino a quando non si verifica l'aggiornamento. In questo modo è possibile migliorare le prestazioni poiché consente di ritardare l'esecuzione richiede molto tempo algoritmi fino a quando non è disponibile tempo di inattività del sistema.  
+     Con il **Guida dinamica** finestra chiamare l'editor quando è pronto per l'aggiornamento ti offre la possibilità di ritardare la modifica del contesto fino a quando non si verifica l'aggiornamento. Questa operazione può migliorare le prestazioni poiché consente di ritardare l'esecuzione di algoritmi che richiedono molto tempo fino a quando non è disponibile tempo di inattività del sistema.  
   
-### <a name="to-publish-the-context-bag-to-the-seid"></a>Per pubblicare l'elenco di contesti di SEID  
+## <a name="to-publish-the-context-bag-to-the-seid"></a>Per pubblicare l'elenco di contesti di SEID  
   
-1.  Chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> servizio di restituire un puntatore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interfaccia.  
+1.  Chiamare `QueryService` nella <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> servizio di restituire un puntatore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interfaccia.  
   
 2.  Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, specificando un identificatore di elemento (`elementid` parametro) valore di SEID_UserContext per indicare che si sta passando contesto a livello globale.  
   
-3.  Quando l'editor o la finestra di progettazione diventa attivo, i valori dei relativi <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> oggetto vengono propagati alla selezione globale. È sufficiente completare questo processo una volta per sessione e quindi archiviare il puntatore al contesto globale creato durante la chiamata a <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
+3.  Quando l'editor o finestra di progettazione diventa attivo, i valori nel relativo <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> oggetto vengono propagate alla selezione globale. È sufficiente completare il processo una volta per sessione e quindi archiviare il puntatore al contesto globale creato durante la chiamata <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
   
-### <a name="to-maintain-the-context-bag"></a>Per mantenere i contesti  
+## <a name="to-maintain-the-context-bag"></a>Per mantenere il contenitore di contesto  
   
-1.  Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> per garantire che il **Guida dinamica** chiamate nella finestra editor o nella finestra di progettazione prima l'aggiornamento.  
+1.  Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> per assicurarsi che il **Guida dinamica** chiamate nella finestra di editor o finestra di progettazione prima viene aggiornata.  
   
-     Per ogni contenitore di contesto che ha chiamato <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> dopo contesti, viene creato e ha implementato <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate>, le chiamate IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> per notificare al provider di contesto che saranno aggiornati contesti. È possibile utilizzare questa chiamata per modificare gli attributi e le parole chiave in contesti e in qualsiasi bagagli sottocontesto, prima di **Guida dinamica** si verifica di Windows update.  
+     Per ogni contenitore di contesto che ha chiamato <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> dopo che il contenitore di contesto viene creato e ha implementato <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate>, le chiamate IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> per notificare il provider di contesto che il contenitore di contesto verrà aggiornato. È possibile usare questa chiamata per modificare gli attributi e parole chiave nel contenitore di contesto e in qualsiasi elenchi di sottocontesti, prima che il **Guida dinamica** finestra aggiornamento viene eseguito.  
   
-2.  Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> in contesti per indicare che l'editor o la finestra di progettazione ha nuovo contesto.  
+2.  Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> nel contenitore di contesto per indicare che l'editor o finestra di progettazione ha nuovo contesto.  
   
-     Quando il **Guida dinamica** chiamate finestra <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> per indicare che effettua l'aggiornamento, l'editor o la finestra di progettazione può aggiornare il contesto in modo appropriato per contesti padre e qualsiasi sacchetti sottocontesto in quel momento.  
+     Quando la **Guida dinamica** chiamate finestra <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> per indicare che l'aggiornamento, l'editor o finestra di progettazione può aggiornare il contesto in modo appropriato per il contenitore di contesti padre e qualsiasi elenchi di sottocontesti in quel momento.  
   
     > [!NOTE]
-    >  Il `SetDirty` flag viene impostato automaticamente su `true` ogni volta che cui contesto viene aggiunto o rimosso dall'elenco di contesto. Il **Guida dinamica** finestra chiama solo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> in contesti se il `SetDirty` flag è impostato su `true`. Viene reimpostato su `false` dopo l'aggiornamento.  
+    >  Il `SetDirty` flag è impostato automaticamente su `true` ogni volta che contesto viene aggiunto o rimosso dall'elenco di contesti. Il **Guida dinamica** solo chiamate nella finestra <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> nel contenitore del contesto se il `SetDirty` flag è impostato su `true`. Viene reimpostato su `false` dopo l'aggiornamento.  
   
-3.  Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> per aggiungere contesto per la raccolta di contesto attivo o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> rimuovere contesto.  
+3.  Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> per aggiungere contesto alla raccolta di contesto attivo o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> rimuovere contesto.  
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
- Se si sta scrivendo un editor personalizzato, è necessario completare tutte e tre le procedure descritte in questo argomento per fornire il contesto per l'editor.  
+ Se si sta scrivendo un editor personalizzato, è necessario completare tutti e tre le procedure descritte in questo articolo per fornire il contesto per l'editor.  
   
 > [!NOTE]
->  Per attivare correttamente una finestra dell'editor o finestra di progettazione e verificare che il routing di comandi è stato aggiornato correttamente, è necessario chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> sul componente per rendere tale finestra lo stato attivo.  
+>  Per attivare correttamente una finestra dell'editor o finestra di progettazione e per garantire che il routing di comandi è stato aggiornato correttamente, è necessario chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> sul componente per renderlo la finestra di stato attivo.  
   
- Il SEID è una raccolta di proprietà che cambiano in base alla selezione. SEID informazioni sono disponibili tramite la selezione globale. Gli eventi attivati dai è connessa alla selezione globale di <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interfaccia, e ha un elenco di tutti gli elementi che è selezionato (editor corrente, finestra degli strumenti corrente, la gerarchia corrente e così via).  
+ Il SEID è una raccolta di proprietà che cambiano in base alla selezione. SEID informazioni sono disponibili tramite la selezione globale. La selezione globale è stata evidenziata in eventi attivati dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interfaccia, e ha un elenco di tutti gli elementi che è selezionato (editor corrente, finestra degli strumenti corrente, gerarchia corrente e così via).  
   
- Per gli editor e finestre di progettazione, nel cui contesto può essere modificato ogni volta che il cursore si sposta all'interno di una parola, non è opportuno aggiornare costantemente i contesti. Per facilitare l'aggiornamento più efficiente ogni volta che si rileva il cursore all'interno di editor o nella finestra di progettazione, è possibile chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A>. Questa operazione consente di mantenere le modifiche di contesto, fino a quando non è il tempo di inattività e il servizio di contesto dell'IDE invia notifica a editor o nella finestra di progettazione che di **Guida dinamica** finestra sta aggiornando. Questo approccio viene utilizzato nella procedura "per mantenere i contesti" in questo argomento.  
+ Per gli editor e finestre di progettazione, nel cui contesto può cambiare ogni volta che il cursore si sposta all'interno di una parola, non è efficiente per aggiornare continuamente il contenitore di contesto. Per rendere l'aggiornamento di ogni volta che viene rilevato il cursore di spostamento all'interno dell'editor o finestra di progettazione più efficiente, è possibile chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A>. Questa operazione consente di mantenere il contesto viene modificato fino a quando non vi è tempo di inattività e il servizio di contesto dell'IDE invia notifica per l'editor o finestra di progettazione che il **Guida dinamica** finestra sta aggiornando. Questo approccio viene usato nel **per mantenere il contenitore di contesto** procedura descritta in questo articolo.  
   
- Dopo l'inserimento di contesto per le attività all'interno dell'editor o finestra di progettazione, è necessario fornire una parola chiave F1 specifica per consentire agli utenti di visualizzare la Guida di editor o nella finestra di progettazione stessa.  
+ Dopo aver fornito contesto per le attività all'interno dell'editor o finestra di progettazione, è necessario fornire uno specifico **F1** (parola chiave) per consentire agli utenti di visualizzare la Guida per l'editor o finestra di progettazione se stesso.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>   

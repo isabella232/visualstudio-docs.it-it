@@ -1,5 +1,5 @@
 ---
-title: Funzione SccAdd | Documenti Microsoft
+title: Funzione SccAdd | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2933d00b7450f946a5fd5409bcaeecc2527a9f64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d7d65d40fe3205ea3f83ecd43b72fe8bafebb3f
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139546"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639614"
 ---
-# <a name="sccadd-function"></a>SccAdd (funzione)
-Questa funzione consente di aggiungere nuovi file per il controllo del codice sorgente.  
+# <a name="sccadd-function"></a>Funzione SccAdd
+Questa funzione consente di aggiungere nuovi file al sistema di controllo di origine.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,62 +39,62 @@ SCCRTN SccAdd(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametri  
+### <a name="parameters"></a>Parametri  
  pvContext  
- [in] La struttura di contesto plug-in controllo di origine.  
+ [in] La struttura del contesto plug-in del controllo origine.  
   
  hWnd  
- [in] Un handle di finestra dell'IDE che il plug-in controllo del codice sorgente è possibile utilizzare come un elemento padre per eventuali finestre di dialogo che fornisce.  
+ [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFiles  
+ nFile  
  [in] Numero di file selezionati da aggiungere al progetto corrente come specificato nella `lpFileNames` matrice.  
   
  lpFileNames  
- [in] Matrice di nomi completi di locali dei file da aggiungere.  
+ [in] Matrice dei nomi locali completi del file da aggiungere.  
   
  lpComment  
  [in] Il commento da applicare a tutti i file da aggiungere.  
   
  pfOptions  
- [in] Matrice di flag dei comandi, fornite in un singolo file.  
+ [in] Matrice di flag dei comandi, disponibile su base file per file.  
   
  pvOptions  
- [in] Opzioni specifiche plug-in controllo di origine.  
+ [in] Opzioni specifiche plug-in controllo sorgente.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|L'operazione di aggiunta è riuscita.|  
-|SCC_E_FILEALREADYEXISTS|Il file selezionato è già in controllo del codice sorgente.|  
+|SCC_E_FILEALREADYEXISTS|Il file selezionato è già incluso nel controllo sorgente.|  
 |SCC_E_TYPENOTSUPPORTED|Il tipo del file (ad esempio, binario) non è supportato dal sistema di controllo di origine.|  
 |SCC_E_OPNOTSUPPORTED|Il controllo del codice sorgente non supporta questa operazione.|  
 |SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete. È consigliabile un nuovo tentativo.|  
-|SCC_E_NOTAUTHORIZED|L'utente non è possibile eseguire questa operazione.|  
+|SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|  
 |SCC_E_NONSPECIFICERROR|Errore non specifico. aggiungere non eseguita.|  
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata prima del completamento.|  
 |SCC_I_RELOADFILE|Un progetto o il file deve essere ricaricato.|  
 |SCC_E_FILENOTEXIST|File locale non è stato trovato.|  
   
 ## <a name="remarks"></a>Note  
- Le normali attività `fOptions` vengono sostituiti seguito da una matrice, `pfOptions`, con uno `LONG` opzione specifica per ogni file. Questo avviene perché il tipo di file può variare da un file a un file.  
+ Le consuete `fOptions` vengono sostituiti seguito da una matrice `pfOptions`, con uno `LONG` opzione specifica per ogni file. Questo avviene perché il tipo di file può variare da un file in un file.  
   
 > [!NOTE]
->  Non è possibile specificare sia `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` opzioni per lo stesso file, ma è possibile specificare nessuno. L'impostazione non corrisponde all'impostazione `SCC_FILETYPE_AUTO`, nel qual caso il controllo origine plug-in rileva automaticamente il tipo di file.  
+>  Non è consentito specificare entrambe `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` opzioni per lo stesso file, ma è consentito specificare nessuno. L'impostazione Nessuna delle due è la stessa impostazione `SCC_FILETYPE_AUTO`, nel qual caso il controllo origine plug-in rileva automaticamente il tipo di file.  
   
- Di seguito è riportato l'elenco di flag utilizzati nel `pfOptions` matrice:  
+ Ecco l'elenco di flag utilizzati nel `pfOptions` matrice:  
   
 |Opzione|Valore|Significato|  
 |------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0x00|Il plug-in controllo del codice sorgente deve rilevare il tipo di file.|  
+|SCC_FILETYPE_AUTO|0x00|Il plug-in del controllo del codice sorgente deve rilevare il tipo di file.|  
 |SCC_FILETYPE_TEXT|0x01|Indica un file di testo ASCII.|  
 |SCC_FILETYPE_BINARY|0x02|Indica un tipo di file diversi dal testo ASCII.|  
-|SCC_ADD_STORELATEST|0x04|Archivia solo la copia più recente del file, non delta.|  
-|SCC_FILETYPE_TEXT_ANSI|0x08|Considera il file come testo ANSI.|  
-|SCC_FILETYPE_UTF8|0x10|Considera il file come testo Unicode in formato UTF8.|  
-|SCC_FILETYPE_UTF16LE|0x20|Considera il file come testo Unicode in formato UTF16 Little Endian formato.|  
-|SCC_FILETYPE_UTF16BE|0x40|Considera formattare il file come testo Unicode in formato UTF16 Big Endian.|  
+|SCC_ADD_STORELATEST|0x04|Archivia solo l'ultima copia del file, non i delta.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Gestisce il file come testo ANSI.|  
+|SCC_FILETYPE_UTF8|0x10|Gestisce il file come testo Unicode in formato UTF8.|  
+|SCC_FILETYPE_UTF16LE|0x20|Gestisce il file come testo Unicode in formato UTF16 Little Endian formato.|  
+|SCC_FILETYPE_UTF16BE|0x40|Considera formattare il file come testo Unicode in UTF16 Big Endian.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+ [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)

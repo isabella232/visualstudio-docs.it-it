@@ -1,5 +1,5 @@
 ---
-title: Enumeratore di codice di stato directory | Documenti Microsoft
+title: Enumeratore di codice di stato directory | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539dc4c2ea7b33ce88465f1d8f6651dc890c8e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea8abd11f3af8be510e88579651fb0a7f92e075b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126084"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638466"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumeratore di codice di stato directory
-Il `SccDirStatus` enumeratore contiene denominati valori costanti che specificano lo stato di una directory nel sistema di controllo di origine. Questa enumerazione viene utilizzata per la [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Questo è stato introdotto nella versione 1.2 dell'API plug-in controllo di origine.  
+Il `SccDirStatus` enumeratore contiene denominati valori costanti che specificano lo stato di una directory nel sistema di controllo di origine. Questa enumerazione viene utilizzata per la [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Questa è stata introdotta nella versione 1.2 dell'API dei plug-in controllo di origine.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,11 +43,11 @@ enum SccDirStatus {
  Directory non è incluso nel controllo del codice sorgente.  
   
  SCC_DIRSTATUS_CONTROLLED  
- Directory è in controllo del codice sorgente.  
+ Directory è incluso nel controllo sorgente.  
   
  SCC_DIRSTATUS_EMPTYPROJ  
- Progetto corrispondente a questa directory è vuoto.  
+ Progetto corrispondente a questa directory è vuota.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Plug-in del controllo codice sorgente](../extensibility/source-control-plug-ins.md)   
+ [Plug-in controllo codice sorgente](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

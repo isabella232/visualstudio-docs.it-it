@@ -1,5 +1,5 @@
 ---
-title: Restrizioni sulle lunghezze di stringa | Documenti Microsoft
+title: Limitazioni sulle lunghezze di stringa | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56a76e84c27684d422b6554b22c75d945df4e928
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b3552a88f5a78b627e72e877758cf6b7d12de95
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136462"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638534"
 ---
-# <a name="restrictions-on-string-lengths"></a>Restrizioni sulle lunghezze di stringa
-L'API di plug-in controllo origine limita la lunghezza delle stringhe usate nelle varie funzioni.  
+# <a name="restrictions-on-string-lengths"></a>Limitazioni sulle lunghezze di stringa
+L'API dei plug-in del controllo origine limita la lunghezza delle stringhe usate nelle varie funzioni.  
   
 ## <a name="string-length-values"></a>Valori di lunghezza stringa  
   
@@ -33,7 +33,7 @@ L'API di plug-in controllo origine limita la lunghezza delle stringhe usate nell
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
->  La lunghezza non include l'interruzione del `null`. Altre costanti con un suffisso "_SIZE" anziché "_LEN" include lo spazio per l'interruzione del `null`.  
+>  La lunghezza non include la terminazione `null`. Altre costanti con suffisso "dimen_sione" anziché "_LEN" include lo spazio per la terminazione `null`.  
   
 |Costante|Valore|  
 |--------------|-----------|  
@@ -43,4 +43,4 @@ L'API di plug-in controllo origine limita la lunghezza delle stringhe usate nell
 |SCC_PRJPATH_SIZE|301|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
+ [Plug-in controllo codice sorgente](../extensibility/source-control-plug-ins.md)

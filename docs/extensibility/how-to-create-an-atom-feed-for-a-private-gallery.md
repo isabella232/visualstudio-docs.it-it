@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare un Atom Feed per una raccolta privata | Documenti Microsoft'
+title: 'Procedura: creare un Atom per una raccolta privata di Feed | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,32 +14,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc39e4d11d826741239f11f62955fa4d2fb167cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127477"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638492"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: creare un Atom Feed per una raccolta privata
-È possibile creare un Atom feed RSS in un percorso intranet che contiene le estensioni e aggiunta il feed a **estensioni e aggiornamenti** come una raccolta privata. Per altre informazioni, vedere [Private Galleries](../extensibility/private-galleries.md) (Raccolte private).  
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: creare un feed Atom per una raccolta privata
+È possibile creare un Atom (RSS) feed da un percorso intranet che contiene le estensioni e aggiunta il feed a **estensioni e aggiornamenti** come una raccolta privata. Per altre informazioni, vedere [raccolte Private](../extensibility/private-galleries.md).  
   
-## <a name="creating-an-atom-feed"></a>Creazione di un Atom Feed  
- Per creare un feed come una raccolta privata Atom, è innanzitutto raccogliere le estensioni (file con estensione VSIX) in una cartella. Se si desidera, è possibile organizzare le nelle sottocartelle. È necessario anche le risorse seguenti:  
+## <a name="create-an-atom-feed"></a>Creare un feed Atom  
+ Per creare un feed come una raccolta privata Atom, è prima di tutto raccogliere le estensioni (*VSIX* file) in una cartella. È possibile organizzarle in sottocartelle, se si desidera. È necessario anche le risorse seguenti:  
   
--   Un file atom.xml che rende disponibili le estensioni come una raccolta privata. Per informazioni su come connettere il file atom.xml **estensioni e aggiornamenti**, vedere [gallerie Private](../extensibility/private-galleries.md).  
+-   Un' *atom.xml* file che rende disponibili le estensioni come una raccolta privata. Per informazioni su come connettere il *atom.xml* del file ai **estensioni e aggiornamenti**, vedere [raccolte Private](../extensibility/private-galleries.md).  
   
--   Una cartella che contiene i file di immagine che sono stati estratti dalle estensioni (ad esempio, catture di schermata). Il file atom.xml contiene i collegamenti relativi a queste immagini in modo che siano disponibili in **estensioni e aggiornamenti**.  
+-   Una cartella che contiene tutti i file di immagine che sono stati estratti dalle estensioni (ad esempio, schermate). Il *atom.xml* file contiene i collegamenti relativi a queste immagini in modo che siano disponibili nei **estensioni e aggiornamenti**.  
   
- Si supponga, ad esempio, che sono state raccolte le seguenti estensioni in una cartella:  
+ Si supponga, ad esempio, che sono state raccolte le due estensioni seguenti in una cartella:  
   
--   Template_Wizard_239.VSIX, ovvero un modello di progetto VSIX vuoto.  
+-   *Template_Wizard_239.VSIX*, ovvero un modello di progetto VSIX vuoto.  
   
--   SelectionHighlight.vsix è uno strumento per evidenziare tutte le istanze di una parola selezionata.  
+-   *SelectionHighlight.vsix*, ovvero uno strumento per evidenziare tutte le istanze di una parola selezionata.  
   
- Il contenuto del file atom.xml sarebbe simile all'esempio seguente:  
+ Il contenuto del *atom.xml* file sarà simile al seguente:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>   
 <feed xmlns="http://www.w3.org/2005/Atom">  
 <title type="text" />   
@@ -73,7 +73,7 @@ ms.locfileid: "31127477"
 </feed>
 ```  
   
- Si noti che il tag di due collegamento fanno riferimento alle schermate nella cartella delle immagini generata.  
+ Si noti che i due tag di collegamento vedere catture di schermata nella cartella delle immagini generata.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Raccolte private](../extensibility/private-galleries.md)

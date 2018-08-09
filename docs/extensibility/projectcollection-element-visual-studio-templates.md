@@ -1,5 +1,5 @@
 ---
-title: Elemento ProjectCollection (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento ProjectCollection (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0336859833762d80cc702e844600ded84dbc5d8b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c91c470a9478c7015972be66afe5f41174073047
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136549"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637000"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>Elemento ProjectCollection (modelli di Visual Studio)
 Specifica l'organizzazione e i contenuti dei modelli multiprogetto.  
@@ -32,7 +32,7 @@ Specifica l'organizzazione e i contenuti dei modelli multiprogetto.
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <ProjectCollection>  
     <ProjectTemplateLink> ... </ProjectTemplateLink>  
     <SolutionFolder> ... </SolutionFolder>  
@@ -59,10 +59,10 @@ Specifica l'organizzazione e i contenuti dei modelli multiprogetto.
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica il contenuto del modello.|  
   
 ## <a name="remarks"></a>Note  
- I modelli multiprogetto fungono da contenitori per due o più progetti. Il `ProjectCollection` elemento viene usato per specificare i progetti contenuti nel modello. Per ulteriori informazioni sui modelli multiprogetto, vedere [procedura: creare modelli multiprogetto](../ide/how-to-create-multi-project-templates.md).  
+ I modelli multiprogetto fungono da contenitori per due o più progetti. Il `ProjectCollection` elemento viene usato per specificare i progetti da includere nel modello. Per altre informazioni sui modelli multiprogetto, vedere [procedura: creare modelli multiprogetto](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio riportato di seguito viene mostrato un file .vstemplate radice multiprogetto semplice. In questo esempio, il modello contiene due progetti `My Windows Application` e `My Class Library`. L'attributo `ProjectName` nell'elemento `ProjectTemplateLink` imposta il nome per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] da assegnare a questo progetto. Se l'attributo `ProjectName` non esiste, per il nome del progetto verrà usato il nome del file .vstemplate.  
+ Questo esempio mostra una radice multiprogetto semplice *vstemplate* file. In questo esempio, il modello contiene due progetti `My Windows Application` e `My Class Library`. L'attributo `ProjectName` nell'elemento `ProjectTemplateLink` imposta il nome per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] da assegnare a questo progetto. Se il `ProjectName` attributo non esiste, il nome del *vstemplate* file viene usato come nome del progetto.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -87,6 +87,6 @@ Specifica l'organizzazione e i contenuti dei modelli multiprogetto.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Procedura: Creare modelli basati su più progetti](../ide/how-to-create-multi-project-templates.md)
+ [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Creare modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)   
+ [Procedura: creare modelli multiprogetto](../ide/how-to-create-multi-project-templates.md)

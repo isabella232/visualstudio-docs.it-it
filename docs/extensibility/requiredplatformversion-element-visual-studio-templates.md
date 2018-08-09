@@ -1,5 +1,5 @@
 ---
-title: Elemento RequiredPlatformVersion (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento RequiredPlatformVersion (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a8dc6fa57dbe88ce1e30e9be58105f28fe5641
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e040faf4d66d42b107777fd4d57f26c80d040a48
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136172"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635953"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Elemento RequiredPlatformVersion (modelli di Visual Studio)
-Specifica la versione minima del sistema operativo che richiede il modello di progetto per funzionare correttamente. Questo elemento viene usato per i modelli di progetto che crea [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app.  
+Specifica la versione minima del sistema operativo il modello di progetto necessaria per funzionare correttamente. Questo elemento viene usato per modelli di progetto che creano [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app.  
   
- Il `RequiredPlatformVersion` valore viene confrontato direttamente con la versione del sistema operativo. Se il `RequiredPlatformVersion` è superiore alla versione del sistema operativo, il modello non viene visualizzato nel **nuovo progetto** la finestra di dialogo. Per specificare un modello per [!INCLUDE[win8](../debugger/includes/win8_md.md)] o versione successiva, impostare `RequiredPlatformVersion` a 6.2.0. Per specificare un modello per [!INCLUDE[win81](../debugger/includes/win81_md.md)] o versione successiva, impostare RequiredPlatformVersion a 6.3.0.  
+ Il `RequiredPlatformVersion` valore viene confrontato direttamente con la versione del sistema operativo. Se il `RequiredPlatformVersion` è superiore alla versione del sistema operativo, il modello non viene visualizzato nei **nuovo progetto** nella finestra di dialogo. Per specificare un modello per [!INCLUDE[win8](../debugger/includes/win8_md.md)] o versione successiva, impostare `RequiredPlatformVersion` a 6.2.0. Per specificare un modello per [!INCLUDE[win81](../debugger/includes/win81_md.md)] o versione successiva, impostare `RequiredPlatformVersion` alla versione 6.3.0.  
   
- Modelli che specificano `RequiredPlatformVersion`= 8 sono compatibili con il cliente precedente [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] modelli.  
+ I modelli che specificano `RequiredPlatformVersion`= 8 compatibili con il cliente precedente [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] modelli.  
   
  VSTemplate  
 TemplateData  
@@ -55,7 +55,7 @@ RequiredPlatformVersion
  È necessario specificare un valore di testo.  
   
 ## <a name="remarks"></a>Note  
- Tale testo specifica la versione minima del sistema operativo richiesta dal modello.  
+ Questo testo specifica la versione minima del sistema operativo richiesta dal modello.  
   
 ## <a name="example"></a>Esempio  
  Questo esempio specifica che il modello di progetto è destinato a [!INCLUDE[win8](../debugger/includes/win8_md.md)] o versioni successive.  
@@ -75,5 +75,5 @@ RequiredPlatformVersion
   
 ## <a name="see-also"></a>Vedere anche  
  [Elemento TargetPlatformName (modelli di Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Creare modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)   
+ [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

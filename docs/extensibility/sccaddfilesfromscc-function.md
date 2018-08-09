@@ -1,5 +1,5 @@
 ---
-title: Funzione SccAddFilesFromSCC | Documenti Microsoft
+title: Funzione SccAddFilesFromSCC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc42a7be878ce52f4d951171c6b5cb08e195d564
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 69262fea4b2d4cc186d6e7137ec505427586778d
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137859"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639991"
 ---
-# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC (funzione)
+# <a name="sccaddfilesfromscc-function"></a>Funzione SccAddFilesFromSCC
 Questa funzione consente di aggiungere un elenco di file dal controllo del codice sorgente al progetto attualmente aperto.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -41,18 +41,18 @@ SCCRTN SccAddFilesFromSCC(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametri  
+### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto plug-in controllo di origine.  
+ [in] Il puntatore di contesto del plug-in controllo di origine.  
   
  hWnd  
- [in] Un handle di finestra dell'IDE che il plug-in controllo del codice sorgente è possibile utilizzare come un elemento padre per eventuali finestre di dialogo che fornisce.  
+ [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
  lpUser  
  [in, out] Il nome utente (fino a SCC_USER_SIZE, incluso il carattere di terminazione null).  
   
  lpAuxProjPath  
- [in, out] Ausiliario stringa di identificazione del progetto (fino a `SCC_PRJPATH_`dimensioni, incluso il carattere di terminazione null).  
+ [in, out] Stringa ausiliario che identifica il progetto (fino a `SCC_PRJPATH_`dimensione, incluso il carattere di terminazione null).  
   
  cFiles  
  [in] Numero di file specificato da `lpFilePaths`.  
@@ -61,7 +61,7 @@ SCCRTN SccAddFilesFromSCC(
  [in, out] Matrice di nomi di file da aggiungere al progetto corrente.  
   
  lpDestination  
- [in] Il percorso di destinazione in cui i file devono essere scritti.  
+ [in] Il percorso di destinazione in cui devono essere scritti i file.  
   
  lpComment  
  [in] Il commento da applicare a ogni file da aggiungere.  
@@ -70,15 +70,15 @@ SCCRTN SccAddFilesFromSCC(
  [in, out] Matrice di flag di set per indicare l'esito positivo (diverso da zero o TRUE) o negativo (zero o FALSE) per ogni file (dimensione della matrice deve essere almeno `cFiles` long).  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_E_PROJNOTOPEN|Progetto non è aperto.|  
-|SCC_E_OPNOTPERFORMED|Connessione non è presente nello stesso progetto come specificato da `lpAuxProjPath.`|  
+|SCC_E_OPNOTPERFORMED|La connessione non è presente nello stesso progetto come specificato da `lpAuxProjPath.`|  
 |SCC_E_NOTAUTHORIZED|Utente non è autorizzato ad aggiornare il database.|  
 |SCC_E_NONSPECIFICERROR|Errore sconosciuto.|  
 |SCC_I_RELOADFILE|Un progetto o il file deve essere ricaricato.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+ [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)

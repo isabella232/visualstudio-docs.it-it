@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere una dipendenza a un pacchetto VSIX | Documenti Microsoft'
+title: 'Procedura: aggiungere una dipendenza a un pacchetto VSIX | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,30 +16,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0704a72ba70e2a00baab99d327702ec6c08f1775
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 54b4bf86df74a60dbeabef5c6f375354c5a945aa
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133222"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636688"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Procedura: aggiungere una dipendenza a un pacchetto VSIX
 
-È possibile configurare una distribuzione di pacchetto VSIX che installa tutte le dipendenze che non sono già presenti nel computer di destinazione. A tale scopo, includere le dipendenze del progetto VSIX per il file vsixmanifest.
+È possibile configurare una distribuzione di pacchetto VSIX che installa le dipendenze che non sono già presenti nel computer di destinazione. A tale scopo, includere le dipendenze di progetto VSIX per la *vsixmanifest* file.
 
 ## <a name="to-add-a-dependency"></a>Per aggiungere una dipendenza
 
-1. Aprire il file vsixmanifest nel **progettazione** visualizzazione. Passare al **dipendenze** scheda e fare clic su **New**.
+1. Aprire il *vsixmanifest* del file nei **progettazione** visualizzazione. Andare alla **dipendenze** scheda e fare clic su **New**.
 
-2. Per aggiungere un'estensione installata: nel **aggiungere nuove dipendenze** nella finestra di dialogo **estensione installata** e quindi, per il **nome**, selezionare un'estensione nell'elenco.
+2. Per aggiungere un'estensione installata: nel **aggiungere nuove dipendenze** finestra di dialogo **estensione installata** e quindi, per il **nome**, selezionare un'estensione nell'elenco.
 
-3. Per aggiungere un altro progetto VSIX che non è installato:: nel **aggiungere nuove dipendenze** nella finestra di dialogo **File nel file system** e quindi usare il **Sfoglia** per selezionare il progetto VSIX.
+3. Per aggiungere un altro progetto VSIX che non è installato: nel **aggiungere nuove dipendenze** finestra di dialogo **File nel file system** e quindi usare il **Sfoglia** pulsante per selezionare il progetto VSIX.
 
-## <a name="require-a-specific-visual-studio-release"></a>Richiede una versione specifica di Visual Studio
+## <a name="require-a-specific-visual-studio-release"></a>Richiedi una versione specifica di Visual Studio
 
-Se l'estensione richiede una versione specifica di Visual Studio 2017, ad esempio, una funzionalità rilasciata in 15.3 dipende, è possibile specificare il numero di build in un progetto VSIX del **la destinazione di installazione**. Ad esempio, versione 15.3 presenta un numero di build di '15.0.26730.3'. È possibile visualizzare il mapping delle versioni per i numeri di build [qui](../install/visual-studio-build-numbers-and-release-dates.md). Si noti che tramite il numero di versione '15.3' non funzionerà correttamente.
+Se l'estensione richiede una versione specifica di Visual Studio 2017, ad esempio, dipende da una funzionalità disponibile nella versione 15.3, è possibile specificare il numero di build in VSIX **la destinazione di installazione**. Ad esempio, versione 15.3 presenta un numero di build del '15.0.26730.3'. È possibile visualizzare il mapping delle versioni per i numeri di build [qui](../install/visual-studio-build-numbers-and-release-dates.md). Si noti che usando il numero di versione '15.3' non funzionerà correttamente.
 
-Se l'estensione richiede 15.3 o versioni successive, è necessario dichiarare il **la destinazione di installazione versione** come [15.0.26730.3, 16.0):
+Se l'estensione richiede la versione 15.3 o versioni successive, è necessario dichiarare la **versione la destinazione di installazione** come [15.0.26730.3, 16.0):
 
 ```xml
 <Installation>
@@ -47,9 +47,11 @@ Se l'estensione richiede 15.3 o versioni successive, è necessario dichiarare il
 </Installation>
 ```
 
-Il VSIXInstaller rileverà le versioni precedenti di Visual Studio e informare l'utente che è necessario un aggiornamento successivo.
+Il VSIX Installer rileverà le versioni precedenti di Visual Studio e informare l'utente che è necessario un aggiornamento successivo.
 
 
 ## <a name="see-also"></a>Vedere anche
 
- [Riferimento dello Schema 1.0 estensione VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b) [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md) [preparazione estensioni per la distribuzione di Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+ [Riferimenti su VSIX extension schema 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
+ [Preparare le estensioni per la distribuzione di Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

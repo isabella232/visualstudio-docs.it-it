@@ -1,5 +1,5 @@
 ---
-title: Funzione SccEndBatch | Documenti Microsoft
+title: Funzione SccEndBatch | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec549b5bb0a6c48946edf59f0ab1423cea0ac704
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6d7b30bca6c0cb69a761b356786f40501e5af43
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138223"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638378"
 ---
-# <a name="sccendbatch-function"></a>SccEndBatch (funzione)
-Questa funzione termina un batch di operazioni di controllo codice sorgente. Questi batch non possono essere annidati.  
+# <a name="sccendbatch-function"></a>Funzione SccEndBatch
+Questa funzione si conclude un batch di operazioni di controllo codice sorgente. Questi batch non possono essere annidati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -31,20 +31,20 @@ Questa funzione termina un batch di operazioni di controllo codice sorgente. Que
 SCCRTN SccEndBatch(void);  
 ```  
   
-#### <a name="parameters"></a>Parametri  
+## <a name="parameters"></a>Parametri  
  Nessuno.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|Batch di operazioni conclusi correttamente.|  
+|SCC_OK|Batch di operazioni conclude correttamente.|  
 |SCC_E_UNKNOWNERROR|Errore non specifico.|  
   
 ## <a name="remarks"></a>Note  
- Batch di controllo di origine utilizzati per eseguire le stesse operazioni di controllo di origine in più progetti o più contesti. Batch consente di eliminare le finestre di dialogo ridondanti dall'esperienza utente durante un'operazione batch. Il [SccBeginBatch](../extensibility/sccbeginbatch-function.md) e `SccEndBatch` funzione vengono utilizzate in coppia per indicare l'inizio e fine di un'operazione. Non possono essere annidate.  
+ Batch di controllo di origine utilizzati per eseguire le stesse operazioni di controllo di origine in più progetti o più contesti. Batch sono utilizzabile per eliminare le finestre di dialogo ridondanti rispetto all'esperienza utente durante un'operazione batch. Il [SccBeginBatch](../extensibility/sccbeginbatch-function.md) e il `SccEndBatch` funzione vengono utilizzati come coppia per indicare l'inizio e alla fine di un'operazione. Non possono essere annidate.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)   
  [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

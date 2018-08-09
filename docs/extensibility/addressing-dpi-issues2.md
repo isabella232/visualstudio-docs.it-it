@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97012b0d8b4214cdeafcaf12403948997436a212
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154330"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638665"
 ---
 # <a name="address-dpi-issues"></a>Problemi DPI
 Un numero crescente di dispositivi è distribuiti con "schermi". Queste schermate hanno in genere più di 200 pixel per pollice (PPID). Per lavorare con un'applicazione in tali computer sarà necessario il contenuto per la scalabilità verticale per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire dal 2014, la destinazione principale per schermi ad alta densità è mobile computing dispositivi (Tablet, computer portatili conchiglia e telefoni).  
@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  Consultare il <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> documentazione su MSDN.  
   
- Nella tabella seguente vengono illustrati esempi di modalità di ridimensionamento immagini DPI corrispondente fattori di scala. Le immagini in verde indicano la procedura consigliata a partire da Visual Studio 2013 (ridimensionamento DPI del 100%, 200%):  
+ Nella tabella seguente vengono illustrati esempi di modalità di ridimensionamento immagini DPI corrispondente fattori di scala. Le immagini delineate in arancione indicano la procedura consigliata a partire da Visual Studio 2013 (ridimensionamento DPI del 100%, 200%):  
   
  ![Problemi DPI-ridimensionamento](../extensibility/media/dpi-issues-scaling.png "problemi DPI-ridimensionamento")  
   

@@ -1,5 +1,5 @@
 ---
-title: Nome di elemento (modelli di Visual Studio) | Documenti Microsoft
+title: Nome elemento (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202542388fc04b07c0792a550029b0d509327c74
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 743c732410c97aa795264dd6fe2495d2d14f2481
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136523"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638870"
 ---
 # <a name="name-element-visual-studio-templates"></a>Elemento Name (modelli di Visual Studio)
-Specifica il nome del modello così come appare nel **nuovo progetto** o **Aggiungi nuovo elemento** la finestra di dialogo.  
+Specifica il nome del modello così come appare nel **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -31,11 +31,11 @@ Specifica il nome del modello così come appare nel **nuovo progetto** o **Aggiu
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <Name> Template Name </Name>  
 ```  
   
-```  
+```xml  
 <Name Package="{PackageID}" ID="ResourceID" />  
 ```  
   
@@ -69,7 +69,7 @@ Specifica il nome del modello così come appare nel **nuovo progetto** o **Aggiu
 ## <a name="example"></a>Esempio  
  L'esempio seguente mostra i metadati per un modello di progetto per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dell'applicazione.  
   
-```  
+```xml  
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -94,5 +94,5 @@ Specifica il nome del modello così come appare nel **nuovo progetto** o **Aggiu
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

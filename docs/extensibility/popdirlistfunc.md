@@ -1,5 +1,5 @@
 ---
-title: POPDIRLISTFUNC | Documenti Microsoft
+title: POPDIRLISTFUNC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a11e6edc9666fcd7614d467a2c9ffaa86b4365
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e59c509bee1e9d9e84b4499bf3419bc129aadfa
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142186"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636915"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Si tratta di una funzione di callback specificata per il [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) funzione per aggiornare un insieme di directory e, facoltativamente, i nomi di file per scoprire che si trovano sotto controllo del codice sorgente.  
   
- Il `POPDIRLISTFUNC` callback deve essere chiamato solo per le directory e i nomi di file (nell'elenco specificato per il `SccPopulateDirList` funzione) che vengono effettivamente nel controllo del codice sorgente.  
+ Il `POPDIRLISTFUNC` callback deve essere chiamato solo per le directory e i nomi di file (nell'elenco specificato per il `SccPopulateDirList` (funzione)) inclusi effettivamente nel controllo del codice sorgente.  
   
 ## <a name="signature"></a>Signature  
   
@@ -39,13 +39,13 @@ typedef BOOL (*POPDIRLISTFUNC)(
   
 ## <a name="parameters"></a>Parametri  
  pvCallerData  
- [in] Il valore di utente fornito [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
+ [in] Valore di utente passato [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
   
  bOpzioni cartella  
- [in] `TRUE` se il nome in `lpDirectoryOrFileName` è una directory; in caso contrario il nome è un nome file.  
+ [in] `TRUE` se il nome in `lpDirectoryOrFileName` è una directory; in caso contrario, il nome è un nome di file.  
   
  lpDirectoryOrFileName  
- [in] Percorso locale completo per un nome di directory o un file incluso nel controllo del codice sorgente.  
+ [in] Percorso locale completo a un nome di file o directory che si trova sotto controllo del codice sorgente.  
   
 ## <a name="return-value"></a>Valore restituito  
  Nell'IDE viene restituito un codice di errore appropriato:  

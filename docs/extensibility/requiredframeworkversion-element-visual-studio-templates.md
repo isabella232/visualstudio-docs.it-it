@@ -1,5 +1,5 @@
 ---
-title: Elemento RequiredFrameworkVersion (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento RequiredFrameworkVersion (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc1a138c50c0fe13962f6601449eb3498d90398
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23538e8e00553322f4f04e50414a8b3ddbd73b91
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137836"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635920"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Elemento RequiredFrameworkVersion (modelli di Visual Studio)
 
-Specifica la versione minima di .NET Framework richiesta dal modello. Provoca la **versione Framework di destinazione** elenco a discesa per essere visualizzato nel **nuovo progetto** finestra di dialogo. Il `RequiredFrameworkVersion` elemento determina anche il valore più basso disponibile nell'elenco a discesa.
+Specifica la versione minima di .NET Framework richiesto dal modello. Si verifica il **versione Framework di destinazione** elenco a discesa da visualizzare nella **nuovo progetto** finestra di dialogo. Il `RequiredFrameworkVersion` elemento determina anche il valore più basso disponibile nell'elenco a discesa.
 
 > [!IMPORTANT]
-> A partire da Visual Studio 2017 versione 15,6, il **versione Framework di destinazione** elenco a discesa non è più un filtro per i modelli visualizzati nel **modelli** sezione del **nuovo progetto** finestra di dialogo. Al contrario, l'elenco a discesa funziona come un selettore di framework per il modello selezionato.
+> A partire da Visual Studio 2017 versione 15.6, il **versione Framework di destinazione** elenco a discesa non è più un filtro per i modelli visualizzati nel **modelli** sezione del **nuovo progetto** finestra di dialogo. Al contrario, l'elenco a discesa funziona come un selettore di framework per il modello selezionato.
 
  \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
 
@@ -49,7 +49,7 @@ Specifica la versione minima di .NET Framework richiesta dal modello. Provoca la
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce come vengono visualizzati in entrambi i **nuovo progetto** o **Aggiungi nuovo elemento** la finestra di dialogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce come viene visualizzato in entrambi i **nuovo progetto** o il **Aggiungi nuovo elemento** nella finestra di dialogo.|
 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
@@ -58,7 +58,7 @@ Specifica la versione minima di .NET Framework richiesta dal modello. Provoca la
 
 ## <a name="remarks"></a>Note
 
-`RequiredFrameworkVersion` è un elemento facoltativo. Utilizzare questo elemento solo se il modello supporta una versione minima specifica (e versioni successive, se presente) di .NET Framework. Se si specifica il `RequiredFrameworkVersion` elemento e il modello non supporta una specifica versione minima di .NET Framework, il **versione Framework di destinazione** elenco a discesa vengono visualizzati quando non è applicabile.
+`RequiredFrameworkVersion` è un elemento facoltativo. Usare questo elemento solo se il modello supporta una versione minima specifica (e versioni successive, se presente) di .NET Framework. Se si specifica la `RequiredFrameworkVersion` elemento e il modello non supporta una versione minima specifica di .NET Framework, il **versione Framework di destinazione** elenco a discesa viene visualizzato quando non è applicabile.
 
 ## <a name="example"></a>Esempio
 
@@ -82,10 +82,10 @@ Nell'esempio seguente vengono illustrati i metadati di un controllo standard [!I
 </VSTemplate>
 ```
 
-In questo esempio, la versione minima di .NET Framework richiesto dal modello, rappresentato da `RequiredFrameworkVersion`, 3.0. Un progetto creato con questo modello può destinate alle versioni di .NET Framework a partire da 3.0.
+In questo esempio, la versione minima di .NET Framework che viene richiesto dal modello, rappresentato da `RequiredFrameworkVersion`, sia 3.0. Un progetto creato con questo modello può avere come destinazione versioni di .NET Framework a partire da 3.0.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-- [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+- [Una versione specifica di .NET Framework di destinazione](../ide/targeting-a-specific-dotnet-framework-version.md)

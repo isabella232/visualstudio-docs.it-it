@@ -1,5 +1,5 @@
 ---
-title: Gestione dei pacchetti VSPackage | Documenti Microsoft
+title: Gestione dei pacchetti VSPackage | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,36 +16,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e3241bae84b89b53e30c3d0949e4f8551110e7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14aa17f4692857d650cb3bc9fe1a3498fc4f147a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140134"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639562"
 ---
-# <a name="managing-vspackages"></a>Gestione dei pacchetti VSPackage
-Nella maggior parte dei casi non è necessario preoccuparsi di gestione dei pacchetti VSPackage, poiché i modelli di progetto e di elemento di registrare e caricare automaticamente il pacchetto. Tuttavia, in alcuni casi potrebbe essere necessario apprendere un po' più per gestire il pacchetto.  
+# <a name="manage-vspackages"></a>Gestire i pacchetti VSPackage
+Nella maggior parte dei casi non è necessario preoccuparsi della gestione dei pacchetti VSPackage, poiché i modelli di progetto ed elemento registrare e caricare automaticamente il pacchetto. Tuttavia, in alcuni casi potrebbe essere necessario apprendere un po' più allo scopo di gestire il pacchetto.  
   
-## <a name="using-the-experimental-instance"></a>Utilizzando l'istanza sperimentale  
+## <a name="use-the-experimental-instance"></a>Usare l'istanza sperimentale  
  Per altre informazioni sull'istanza sperimentale, vedere [l'istanza sperimentale](../extensibility/the-experimental-instance.md).  
   
-## <a name="registering-and-unregistering-vspackages"></a>Registrazione e annullamento della registrazione VSPackage  
- Per sapere come registrare e annullare la registrazione di pacchetti VSPackage e altri tipi di estensione, vedere [registrazione e annullamento della registrazione VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
+## <a name="register-and-unregister-vspackages"></a>Registrare e annullare la registrazione di pacchetti VSPackage  
+ Per sapere come registrare e annullare la registrazione di pacchetti VSPackage e altri tipi di estensione, vedere [registrare e annullare la registrazione di pacchetti VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
   
-## <a name="loading-a-vspackage"></a>Il caricamento di un pacchetto VSPackage  
- VSPackage possono essere impostati su autoload quando una particolare che CMDUICONTEXT GUID è attivata. Per ulteriori informazioni, vedere [VSPackage durante il caricamento](../extensibility/loading-vspackages.md).  
+## <a name="load-a-vspackage"></a>Caricare un pacchetto VSPackage  
+ Per caricare automaticamente quando un determinato che GUID CMDUICONTEXT è attivata, è possono impostare i pacchetti VSPackage. Per altre informazioni, vedere [VSPackage carico](../extensibility/loading-vspackages.md).  
   
-## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>Utilizzo di AsyncPackage per caricare pacchetti VSPackage in Background  
- La classe AsyncPackage consente pacchetto durante il caricamento in un thread in background per una migliore velocità di risposta dell'interfaccia utente in Visual Studio. Per ulteriori informazioni, vedere [procedura: utilizzare AsyncPackage ai pacchetti VSPackage di caricamento in Background](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
+## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>Usare AsyncPackage per caricare pacchetti VSPackage in background  
+ Il `AsyncPackage` classe consente il caricamento del pacchetto in un thread in background per una migliore velocità di risposta dell'interfaccia utente in Visual Studio. Per altre informazioni, vedere [procedura: usare AsyncPackage per caricare pacchetti VSPackage in background](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
   
-## <a name="rule-based-ui-context-for-extensions"></a>Contesto dell'interfaccia utente basata su regole per le estensioni  
- Contesti di interfaccia utente basata su regole consente agli autori di estensione definire le condizioni esatte in cui viene attivato un contesto dell'interfaccia utente e caricato VSPackage associati. Per ulteriori informazioni, vedere [come: basato su regole di utilizzo di contesto dell'interfaccia utente per le estensioni di Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
+## <a name="rule-based-ui-context-for-extensions"></a>Regola in base al contesto dell'interfaccia utente per le estensioni  
+ Contesti dell'interfaccia utente basata su regole consente agli autori di estensioni definire le condizioni precise in cui viene attivato un contesto dell'interfaccia utente e associati i pacchetti VSPackage caricato. Per altre informazioni, vedere [procedura: usare contesto dell'interfaccia utente basata su regole per le estensioni di Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
   
-## <a name="diagnosing-extension-performance"></a>La diagnosi delle prestazioni di estensione  
-Le estensioni possono influire soluzione e avvio del caricamento. Informazioni su modalità di calcolo impatto di estensione di Visual Studio e come è possibile analizzare in locale per verificare se un'estensione può essere visualizzata come estensione conseguenze sulle prestazioni. Per ulteriori informazioni, vedere [procedura: diagnosticare le prestazioni di estensione](how-to-diagnose-extension-performance.md). 
+## <a name="diagnose-extension-performance"></a>Diagnosticare le prestazioni delle estensioni  
+Le estensioni possono influire sulle prestazioni di caricamento di avvio e di soluzione. Informazioni su come viene calcolato impatto di estensione di Visual Studio e come possono essere analizzati in locale per verificare se un'estensione può essere visualizzata come alcun impatto sull'estensione delle prestazioni. Per altre informazioni, vedere [procedura: diagnosticare le prestazioni delle estensioni](how-to-diagnose-extension-performance.md). 
   
-## <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi di VSPackage  
- Scoprire le tecniche per la risoluzione dei problemi relativi a pacchetti VSPackage che non vengono caricati o segnalano errori: [VSPackage di risoluzione dei problemi](../extensibility/troubleshooting-vspackages.md)  
+## <a name="troubleshoot-vspackages"></a>Risolvere i problemi di pacchetti VSPackage  
+ Scopri le tecniche per la risoluzione dei problemi relativi a pacchetti VSPackage che non vengono caricati o si verificano errori: [risolvere i problemi di pacchetti VSPackage](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pacchetti VSPackage](../extensibility/internals/vspackages.md)

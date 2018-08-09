@@ -1,5 +1,5 @@
 ---
-title: Funzione SccEnumChangedFiles | Documenti Microsoft
+title: Funzione SccEnumChangedFiles | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 762bda21f8480224347bd0c8c202c282298e07cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b8fb9c83d8948ca3edc0650e85af6ea8c011abc
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137131"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639828"
 ---
-# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles (funzione)
+# <a name="sccenumchangedfiles-function"></a>Funzione SccEnumChangedFiles
 Dato un elenco di file locali, questa funzione determina quali file sono diversi rispetto alle versioni corrispondenti nel database del controllo del codice sorgente.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -37,24 +37,24 @@ SCCRTN SccEnumChangedFiles(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametri  
+### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto plug-in controllo di origine.  
+ [in] Il puntatore di contesto del plug-in controllo di origine.  
   
  hWnd  
- [in] Un handle di finestra dell'IDE che il plug-in controllo del codice sorgente è possibile utilizzare come un elemento padre per eventuali finestre di dialogo che fornisce.  
+ [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
  cFiles  
- [in] Numero di nomi di file specificato nella `lpFileNames` matrice. Specifica inoltre dimensioni di `plIsFileDifferent` matrice.  
+ [in] Numero di nomi di file specificato nella `lpFileNames` matrice. Specifica anche dimensioni di `plIsFileDifferent` matrice.  
   
  lpFileNames  
- [in] Matrice di nomi di file locale da verificare.  
+ [in] Matrice di nomi di file locali da controllare.  
   
  plIsFileDifferent  
- [in, out] Matrice di valori che indica lo stato di differenza di ogni file (matrice deve avere almeno `cFiles` voci). Diverso da zero indica che il file è diverso.  
+ [in, out] Matrice di valori che indicano lo stato di differenza di ogni file (matrice deve avere almeno `cFiles` voci). Diverso da zero indica che il file è diverso.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
@@ -62,4 +62,4 @@ SCCRTN SccEnumChangedFiles(
 |SCC_UNSPECIFIEDERROR|Errore generico.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+ [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)

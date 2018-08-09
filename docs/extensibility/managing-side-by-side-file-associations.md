@@ -1,5 +1,5 @@
 ---
-title: La gestione delle associazioni di File Side-by-Side | Documenti Microsoft
+title: Gestire le associazioni di File Side-by-Side | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,44 +13,44 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9144125786e7aa5f2a70823a033d49ac3fa2990
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05fe4ee4394efd0d6784b9ff0dd87eab6f8ecbf1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31146806"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638775"
 ---
-# <a name="managing-side-by-side-file-associations"></a>La gestione delle associazioni di File Side-by-Side
-Se il pacchetto VSPackage fornisce associazioni di file, è necessario decidere come gestire le installazioni side-by-side in cui una particolare versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deve essere richiamato per aprire un file. Formati di file compatibile composta il problema.  
+# <a name="manage-side-by-side-file-associations"></a>Gestisci associazioni file side-by-side
+Se il pacchetto VSPackage fornisce associazioni di file, è necessario decidere come gestire le installazioni side-by-side in cui una determinata versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deve essere richiamato per aprire un file. Formati di file incompatibili composta il problema.  
   
- Gli utenti si aspettano una nuova versione di un prodotto per essere compatibile con le versioni precedenti, in modo che i file esistenti possono essere caricati in una nuova versione senza perdita di dati. In teoria, il pacchetto VSPackage sia caricare e salvare i formati di file con le versioni precedenti. Se non è true, è necessario offrire aggiornare il formato di file per la nuova versione di un VSPackage. Lo svantaggio di questo approccio è che il file aggiornato non può essere aperto in una versione precedente.  
+ Gli utenti si aspettano una nuova versione di un prodotto sia compatibile con le versioni precedenti, in modo che i file esistenti possono essere caricati in una nuova versione senza perdita di dati. In teoria, il pacchetto VSPackage possa entrambi caricare e salvare i formati di file di versioni precedenti. Se non è true, si deve offrire aggiornare il formato di file per la nuova versione del pacchetto VSPackage. Lo svantaggio di questo approccio è che il file aggiornato non può essere aperto in una versione precedente.  
   
- Per evitare questo problema, è possibile modificare le estensioni quando i formati di file è diventato incompatibili. Ad esempio, è possibile utilizzare la versione 1 di un VSPackage l'estensione, .mypkg10 e la versione 2 è possibile utilizzare l'estensione, .mypkg20. Questa differenza identifica il pacchetto VSPackage che apre un file specifico. Se si aggiunge un VSPackage più recente per l'elenco dei programmi che sono associati a un'estensione precedente, gli utenti possono fare doppio clic su file e scegliere di aprirlo in un VSPackage più recente. A questo punto, il pacchetto VSPackage può offrire aggiornare il file al nuovo formato o aprire il file e mantenere la compatibilità con le versioni precedenti del pacchetto VSPackage.  
+ Per evitare questo problema, è possibile modificare le estensioni quando i formati di file diventano non compatibili. Ad esempio, la versione 1 del pacchetto VSPackage può usare l'estensione, *.mypkg10*e la versione 2 è stato possibile usare l'estensione *.mypkg20*. Questa differenza identifica il pacchetto VSPackage che apre un file specifico. Se si aggiungono pacchetti VSPackage più recente per l'elenco dei programmi che sono associati a un'estensione precedente, gli utenti possono fare doppio clic su file e scegliere di aprirla in un VSPackage più recente. A questo punto, il pacchetto VSPackage può offrire aggiornare il file nel nuovo formato o aprire il file e mantenere la compatibilità con le versioni precedenti del pacchetto VSPackage.  
   
 > [!NOTE]
->  È possibile combinare questi approcci. Ad esempio, è possibile offrire compatibilità con le versioni precedenti caricando un file precedenti e consentono di aggiornare il formato di file quando l'utente Salva.  
+>  È possibile combinare questi approcci. Ad esempio, è possibile offrire compatibilità con le versioni precedenti, caricando un file meno recente e offrono aggiornare il formato di file quando l'utente lo salva.  
   
-## <a name="facing-the-problem"></a>Il problema riscontrato  
- Se si desidera più side-by-side VSPackage per usare la stessa estensione, è necessario scegliere la versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] associato con l'estensione. Di seguito sono disponibili due alternative:  
+## <a name="face-the-problem"></a>Affrontare il problema  
+ Se si desidera più pacchetti VSPackage side-by-side per usare la stessa estensione, è necessario scegliere la versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] associato con l'estensione. Ecco due alternative:  
   
 -   Aprire il file nella versione più recente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] installato nel computer dell'utente.  
   
-     In questo approccio, il programma di installazione è responsabile della determinazione della versione più recente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e inclusi nella voce del Registro di sistema per l'associazione del file. In un pacchetto Windows Installer, è possibile includere azioni personalizzate per impostare una proprietà che indica la versione più recente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+     In questo approccio, il programma di installazione è responsabile di determinare la versione più recente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che inclusa nella voce del Registro di sistema scritta per l'associazione del file. In un pacchetto Windows Installer, è possibile includere azioni personalizzate per impostare una proprietà che indica la versione più recente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
     > [!NOTE]
-    >  In questo contesto, "più recente" significa "più recente versione supportata." Queste voci del programma di installazione non rileva automaticamente una versione successiva [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le voci in [requisiti di sistema di rilevamento](../extensibility/internals/detecting-system-requirements.md) e [comandi che devono essere eseguiti dopo l'installazione](../extensibility/internals/commands-that-must-be-run-after-installation.md) sono simili a quelle fornite in questa sezione e sono necessarie per supportare versioni aggiuntive di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+    >  In questo contesto, "latest" significa "versione supportata più recente." Queste voci di programma di installazione non rileva automaticamente una versione successiva di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le voci [requisiti di sistema di rilevamento](../extensibility/internals/detecting-system-requirements.md) e nella [comandi che devono essere eseguiti dopo l'installazione](../extensibility/internals/commands-that-must-be-run-after-installation.md) sono simili a quelli presentati in questo articolo e sono necessarie per supportare versioni aggiuntive di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     Le righe seguenti nella tabella CustomAction impostare la proprietà DEVENV_EXE_LATEST sia una proprietà di impostazione di AppSearch e tabelle RegLocator illustrate in [comandi che devono essere eseguiti dopo l'installazione](../extensibility/internals/commands-that-must-be-run-after-installation.md). Le righe della tabella InstallExecuteSequence pianificare le azioni personalizzate nelle prime fasi della sequenza di esecuzione. I valori nel rendere colonna condizione la logica di lavoro:  
+     Le righe seguenti nella tabella CustomAction impostare la proprietà DEVENV_EXE_LATEST sia una proprietà impostata dal AppSearch e tabelle RegLocator illustrate in [comandi che devono essere eseguiti dopo l'installazione](../extensibility/internals/commands-that-must-be-run-after-installation.md). Le righe della tabella InstallExecuteSequence pianificare le azioni personalizzate nelle prime fasi della sequenza di esecuzione. Valori nel rendere colonna condizione il lavoro per la logica:  
   
-    -   Visual Studio .NET 2002 è la versione più recente, se si tratta della versione solo presente.  
+    -   Visual Studio .NET 2002 è la versione più recente, se si tratta della versione presente solo.  
   
-    -   Visual Studio .NET 2003 è la versione più recente solo se è presente e [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non è presente.  
+    -   Visual Studio .NET 2003 è l'ultima versione solo se è presente e [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non è presente.  
   
-    -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Se si tratta della versione solo presente, è la versione più recente.  
+    -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Se si tratta della versione presente soltanto, è la versione più recente.  
   
-     Il risultato è che DEVENV_EXE_LATEST contiene il percorso della versione più recente di devenv.exe.  
+     Il risultato finale è che DEVENV_EXE_LATEST contiene il percorso della versione più recente di devenv.exe.  
   
-    ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Righe della tabella CustomAction determinano la versione più recente di Visual Studio  
+    ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Righe della tabella CustomAction che determinano la versione più recente di Visual Studio  
   
     |Operazione|Tipo|Origine|destinazione|  
     |------------|----------|------------|------------|  
@@ -66,25 +66,25 @@ Se il pacchetto VSPackage fornisce associazioni di file, è necessario decidere 
     |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 E NON DEVENV_EXE_2005|420|  
     |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
   
-     È possibile utilizzare la proprietà DEVENV_EXE_LATEST nella tabella del Registro di sistema del pacchetto Windows Installer per scrivere il HKEY_CLASSES_ROOT*ProgId*valore predefinito della chiave ShellOpenCommand [DEVENV_EXE_LATEST] "%1"  
+     È possibile utilizzare la proprietà DEVENV_EXE_LATEST nella tabella del Registro di sistema del pacchetto Windows Installer per scrivere le **HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand** valore predefinito della chiave, [DEVENV_EXE_LATEST] "%1"  
   
--   Eseguire un programma di avvio condiviso che può adottare la scelta migliore rispetto alle versioni VSPackage disponibili.  
+-   Eseguire un programma di avvio condivisa che può effettuare la scelta migliore rispetto alle versioni di VSPackage disponibili.  
   
-     Gli sviluppatori di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] scelto questo approccio per gestire i requisiti dei formati di soluzioni e progetti risultanti da molte versioni di più complessi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In questo approccio, si registra un programma di avvio come il gestore dell'estensione. L'utilità di avvio esamina il file e decide quale versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e il pacchetto VSPackage può gestire il file in questione. Ad esempio, se un utente apre un file che è stato salvato per una particolare versione di un VSPackage, l'utilità di avvio può avviare tale pacchetto VSPackage nella versione corrispondente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Inoltre, un utente è stato possibile configurare l'utilità di avvio per avviare sempre la versione più recente. Un'utilità di avvio, inoltre, potrebbe richiedere un utente di aggiornare il formato del file. Se il formato del file include un numero di versione, l'utilità di avvio potrebbe informare un utente se il formato di file da una versione successiva di uno o più dei VSPackage installati.  
+     Gli sviluppatori di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] scelto questo approccio per gestire i requisiti complessi dei formati più delle soluzioni e progetti risultanti da molte versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In questo approccio, si registra un programma di avvio come il gestore dell'estensione. L'utilità di avvio esamina il file e decide quale versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e il pacchetto VSPackage può gestire il file in questione. Ad esempio, se un utente apre un file che è stato salvato da una determinata versione del pacchetto VSPackage, l'utilità di avvio può avviare tale pacchetto VSPackage nella versione corrisponda di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Inoltre, un utente è stato possibile configurare l'utilità di avvio per avviare sempre la versione più recente. Un'utilità di avvio potrebbe anche richiedere all'utente di aggiornare il formato del file. Se il formato del file include un numero di versione, l'utilità di avvio è stato possibile comunicare un utente se il formato di file da una versione successiva a quella di una o più dei VSPackage installati.  
   
-     L'utilità di avvio deve essere in un componente di Windows Installer è condiviso con tutte le versioni di un VSPackage. Questo processo consente di verificare che la versione più recente viene sempre installata e non viene rimosso fino a quando non vengono disinstallate tutte le versioni di un VSPackage. In questo modo, le associazioni di file e le altre voci del Registro di sistema del componente dell'utilità di avvio vengono mantenuti, anche se si disinstalla una versione del pacchetto VSPackage.  
+     L'utilità di avvio deve essere un componente di Windows Installer che è condiviso con tutte le versioni del pacchetto VSPackage. Questo processo consente di verificare che la versione più recente viene sempre installata e non viene rimosso fino a quando non vengono disinstallate tutte le versioni del pacchetto VSPackage. In questo modo, le associazioni di file e le altre voci del Registro di sistema del componente dell'utilità di avvio vengono conservati anche se si disinstalla una versione del pacchetto VSPackage.  
   
-## <a name="uninstall-and-file-associations"></a>Disinstallare e le associazioni di File  
- La disinstallazione di un VSPackage che scrive le voci del Registro di sistema per le associazioni di file consente di rimuovere le associazioni di file. Pertanto, l'estensione non ha programmi associati. Windows Installer non "Ripristina" le voci del Registro di sistema che sono stati aggiunti durante l'installazione di VSPackage. Di seguito sono riportati alcuni modi per risolvere le associazioni di file dell'utente:  
+## <a name="uninstall-and-file-associations"></a>Disinstallare e le associazioni di file  
+ Disinstallazione di un pacchetto VSPackage che scrive le voci del Registro di sistema per le associazioni di file consente di rimuovere le associazioni di file. Pertanto, l'estensione non dispone di alcun programmi associati. Programma di installazione di Windows non viene "ripristinato" le voci del Registro di sistema che sono stati aggiunti durante l'installazione di VSPackage. Ecco alcuni modi per risolvere le associazioni di file dell'utente:  
   
--   Utilizzare un componente condiviso dell'utilità di avvio come descritto in precedenza.  
+-   Usare un componente condiviso dell'utilità di avvio come descritto in precedenza.  
   
--   Chiedere all'utente di eseguire un ripristino della versione del pacchetto VSPackage che l'utente desidera proprietari l'associazione del file.  
+-   Chiedere all'utente di eseguire un ripristino della versione del pacchetto VSPackage che l'utente desidera l'associazione al file il proprietario.  
   
--   Specificare un programma eseguibile distinto che riscrive le voci del Registro di sistema appropriati.  
+-   Fornire un programma eseguibile separato che riscrive le voci del Registro di sistema appropriate.  
   
 -   Fornire una configurazione opzioni pagina o finestra di dialogo che consente agli utenti di scegliere le associazioni di file e recuperare le associazioni perse. Indicare agli utenti di eseguirlo dopo la disinstallazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Registrazione di estensioni di File per le distribuzioni Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
- [Registrazione di verbi per le estensioni di file](../extensibility/registering-verbs-for-file-name-extensions.md)
+ [Registrare le estensioni di file per le distribuzioni side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
+ [Registrare i verbi per estensioni di file](../extensibility/registering-verbs-for-file-name-extensions.md)

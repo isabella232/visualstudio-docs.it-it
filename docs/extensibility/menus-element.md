@@ -1,5 +1,5 @@
 ---
-title: Elemento menu | Documenti Microsoft
+title: Elemento Menus | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 801bdf945f7f963168a83f8291d78e4751354269
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0bfb702b9465ee4d00547f5d965bfbaae18742b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136432"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637630"
 ---
-# <a name="menus-element"></a>Elemento di menu
+# <a name="menus-element"></a>Elemento Menus
 Definisce tutti i menu e barre degli strumenti che implementa un pacchetto VSPackage.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <Menus>  
   <Menu>... </Menu>  
   <Menu>... </Menu>  
@@ -40,14 +40,14 @@ Definisce tutti i menu e barre degli strumenti che implementa un pacchetto VSPac
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
 |[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu e barre degli strumenti che implementa un pacchetto VSPackage.|  
-|[Elemento Menu](../extensibility/menu-element.md)|Rappresenta un singolo menu o una barra degli strumenti.|  
+|[Elemento menu](../extensibility/menu-element.md)|Rappresenta un singolo menu o sulla barra degli strumenti.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
@@ -57,7 +57,7 @@ Definisce tutti i menu e barre degli strumenti che implementa un pacchetto VSPac
   
 ## <a name="example"></a>Esempio  
   
-```  
+```xml  
 <Commands package="guidMyPackage">  
     <Menus>  
       <Menu Condition="'%(DEBUG)' != 'true'"   
@@ -81,5 +81,5 @@ Definisce tutti i menu e barre degli strumenti che implementa un pacchetto VSPac
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Come VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

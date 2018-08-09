@@ -1,5 +1,5 @@
 ---
-title: Funzione SccDirQueryInfo | Documenti Microsoft
+title: Funzione SccDirQueryInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1de32b8502e40c953bd7080d64e56047e6bb5ce9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2c7c00f2023d7debd684b442b3901547ac8d1d2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140368"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639419"
 ---
-# <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo (funzione)
+# <a name="sccdirqueryinfo-function"></a>Funzione SccDirQueryInfo
 Questa funzione esamina un elenco di directory completo per il relativo stato corrente.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -36,21 +36,21 @@ LPLONG  lpStatus
 );  
 ```  
   
-#### <a name="parameters"></a>Parametri  
+### <a name="parameters"></a>Parametri  
  pContext  
- [in] La struttura di contesto plug-in controllo di origine.  
+ [in] La struttura del contesto plug-in del controllo origine.  
   
  nDirs  
- [in] Il numero di directory selezionato deve essere sottoposto a query.  
+ [in] Il numero di directory selezionati per essere eseguita una query.  
   
  lpDirNames  
- [in] Matrice di percorsi completi delle directory in cui eseguire la query.  
+ [in] Matrice di percorsi completi delle directory in cui eseguire una query.  
   
  lpStatus  
- [in, out] Una struttura di matrice per il plug-in per restituire i flag di stato del controllo del codice sorgente (vedere [codice di stato Directory](../extensibility/directory-status-code-enumerator.md) per informazioni dettagliate).  
+ [in, out] Una struttura di matrice per il controllo del codice sorgente del plug-in per restituire i flag di stato (vedere [il codice di stato Directory](../extensibility/directory-status-code-enumerator.md) per informazioni dettagliate).  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
@@ -60,13 +60,13 @@ LPLONG  lpStatus
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Errore non specifico.|  
   
 ## <a name="remarks"></a>Note  
- La funzione riempie la matrice restituita con maschera di bit di bit dal `SCC_DIRSTATUS` famiglia (vedere [codice di stato Directory](../extensibility/directory-status-code-enumerator.md)), una voce per ogni directory specificata. Matrice di stato viene allocata dal chiamante.  
+ La funzione riempie la matrice restituita con una maschera di bit di bit dal `SCC_DIRSTATUS` famiglia (vedere [codice di stato Directory](../extensibility/directory-status-code-enumerator.md)), una voce per ogni directory di base. La matrice di stato viene allocata dal chiamante.  
   
- Prima di una directory viene rinominata per verificare la directory di controllo del codice sorgente eseguendo una query se dispone di un progetto corrispondente, l'IDE Usa questa funzione. Se la directory non è incluso nel controllo del codice sorgente, l'IDE è possibile fornire l'avviso corretto all'utente.  
+ L'IDE Usa questa funzione prima della ridenominazione di una directory per controllare se la directory è incluso nel controllo sorgente eseguendo una query se dispone di un progetto corrispondente. Se la directory non è incluso nel controllo del codice sorgente, l'IDE può fornire l'avviso appropriato all'utente.  
   
 > [!NOTE]
->  Se un plug-in controllo del codice sorgente sceglie di non implementare una o più dei valori di stato, bit non implementata devono essere impostati su zero.  
+>  Se un plug-in del controllo del codice sorgente sceglie di non implementare uno o più dei valori di stato, non è implementata bits deve essere impostato su zero.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
- [Codice di stato di directory](../extensibility/directory-status-code-enumerator.md)
+ [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)   
+ [Codice di stato directory](../extensibility/directory-status-code-enumerator.md)

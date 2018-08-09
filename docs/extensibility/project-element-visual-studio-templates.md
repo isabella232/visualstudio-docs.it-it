@@ -1,5 +1,5 @@
 ---
-title: Progetto elemento (modelli di Visual Studio) | Documenti Microsoft
+title: Progetto elemento (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 464f6498ccf06f5087c0fa6b12a456082a36c2bd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139263"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639139"
 ---
 # <a name="project-element-visual-studio-templates"></a>Elemento Project (modelli di Visual Studio)
 Specifica il file o directory da aggiungere al progetto.  
@@ -49,10 +49,10 @@ Specifica il file o directory da aggiungere al progetto.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`File`|Attributo obbligatorio.<br /><br /> Specifica il nome del file di progetto nel file zip del modello.|  
+|`File`|Attributo obbligatorio.<br /><br /> Specifica il nome del file di progetto nel modello *zip* file.|  
 |`ReplaceParameters`|Attributo facoltativo.<br /><br /> Valore booleano che specifica se il file di progetto contiene i valori dei parametri devono essere sostituiti quando viene creato un progetto dal modello. Il valore predefinito è `false`.|  
 |`TargetFileName`|Attributo facoltativo.<br /><br /> Specifica il nome del file di progetto quando viene creato un progetto dal modello.|  
-|`IgnoreProjectParameter`|Attributo facoltativo.<br /><br /> Specifica se il progetto deve essere aggiunto alla soluzione corrente. Se il valore del parametro personalizzato, "$*myCustomParameter*$" è presente nel file di sostituzione di parametri, il progetto viene creato ma non è stato aggiunto come parte della soluzione attualmente aperta.|  
+|`IgnoreProjectParameter`|Attributo facoltativo.<br /><br /> Specifica se il progetto deve essere aggiunto alla soluzione corrente. Se il valore del parametro personalizzato, "$*myCustomParameter*$" è presente nel file di sostituzione dei parametri, il progetto viene creato ma non aggiunta come parte della soluzione attualmente aperta.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
@@ -72,9 +72,9 @@ Specifica il file o directory da aggiungere al progetto.
   
  Il `Project` elemento è utilizzato per specificare un progetto e di conseguenza, è valido solo nei modelli di progetto.  
   
- `Project` gli elementi possono presentare [cartella](../extensibility/folder-element-visual-studio-project-templates.md) elementi figlio o [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) elementi figlio, ma non una combinazione di entrambi `Folder` e `ProjectItem` elementi figlio.  
+ `Project` gli elementi possono presentare [cartella](../extensibility/folder-element-visual-studio-project-templates.md) gli elementi figlio oppure [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) gli elementi figlio, ma non una combinazione di entrambi `Folder` e `ProjectItem` gli elementi figlio.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene automaticamente rinominata in nome file del progetto in base al nome immesso dall'utente nel **nuovo progetto** finestra di dialogo. Utilizzare il `TargetFileName` attributo se si desidera fornire un nome di file alternativo per i file di progetto creati con il modello.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Rinomina automaticamente il nome del file di progetto in base al nome immesso dall'utente nel **nuovo progetto** nella finestra di dialogo. Usare il `TargetFileName` attributo se si desidera fornire un nome file alternativo per i file di progetto creati con il modello.  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente mostra i metadati per un modello di progetto per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dell'applicazione.  
@@ -104,7 +104,7 @@ Specifica il file o directory da aggiungere al progetto.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
+ [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)   
  [Elemento ProjectItem (modelli di progetto di Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)   
  [Elemento Folder (modelli di progetto di Visual Studio)](../extensibility/folder-element-visual-studio-project-templates.md)

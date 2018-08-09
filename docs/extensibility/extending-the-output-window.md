@@ -1,5 +1,5 @@
 ---
-title: Estendere la finestra di Output | Documenti Microsoft
+title: Estensione della finestra di Output | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,22 +13,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9a8b260c1a3cab126d19f0cedc0c1e5362cf81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ceb739cc8ad2dc65b1aca6c38d6c4f49ec792215
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131036"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635869"
 ---
-# <a name="extending-the-output-window"></a>Estendere la finestra di Output
-Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visual Studio include questi riquadri predefiniti: **compilare**, nella quale i progetti comunicare i messaggi relativi alle compilazioni, e **generale**, in cui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica i messaggi relativi a IDE. Progetti di ottengono un riferimento al **compilare** riquadro automaticamente tramita il <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metodi di interfaccia e Visual Studio offre accesso diretto al **generale** riquadro tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servizio. Oltre ai riquadri predefiniti, è possibile creare e gestire il propria riquadri personalizzati.  
+# <a name="extend-the-output-window"></a>Estendere la finestra di Output
+Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visual Studio include questi riquadri predefiniti: **compilare**, nella quale i progetti comunicare i messaggi relativi alle compilazioni, e **generali**, in cui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica i messaggi relativi a IDE. Progetti di ottenere un riferimento al **compilare** riquadro automaticamente tramita il <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metodi di interfaccia e Visual Studio offre accesso diretto al **generali** riquadro tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servizio. Oltre ai riquadri predefiniti, è possibile creare e gestire i proprio riquadri personalizzati.  
   
- È possibile controllare il **Output** finestra direttamente tramita il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfacce. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfaccia, che viene offerto il <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> service e definisce i metodi per la creazione, recupero e l'eliminazione definitiva **Output** riquadri della finestra. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfaccia definisce i metodi per la visualizzazione di riquadri, nascondere riquadri e la modifica del testo. Un modo alternativo per il controllo di **Output** finestra viene eseguita tramite il <xref:EnvDTE.OutputWindow> e <xref:EnvDTE.OutputWindowPane> oggetti nel modello a oggetti di automazione di Visual Studio. Questi oggetti includono quasi tutte le funzionalità del <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfacce. Inoltre, il <xref:EnvDTE.OutputWindow> e <xref:EnvDTE.OutputWindowPane> oggetti aggiungono alcune funzionalità di livello superiore per rendere più semplice enumerare i **Output** riquadri della finestra e per recuperare il testo dai riquadri.  
+ È possibile controllare la **Output** finestra direttamente tramita il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfacce. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfaccia, che viene offerto dal <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> del servizio, definisce i metodi per la creazione, recupero ed eliminazione **Output** riquadri della finestra. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfaccia definisce i metodi per la visualizzazione dei riquadri, nascondere riquadri e la modifica del testo. Un modo alternativo di controllare il **Output** finestra è tramite il <xref:EnvDTE.OutputWindow> e <xref:EnvDTE.OutputWindowPane> oggetti nel modello a oggetti di automazione di Visual Studio. Questi oggetti includono quasi tutte le funzionalità dei <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfacce. Inoltre, il <xref:EnvDTE.OutputWindow> e <xref:EnvDTE.OutputWindowPane> oggetti aggiungono alcune funzionalità di livello superiore per renderne più semplice enumerare le **Output** riquadri della finestra e per recuperare il testo dai riquadri.  
   
-## <a name="creating-an-extension-that-uses-the-output-pane"></a>Creazione di un'estensione che utilizza il riquadro di Output  
- È possibile creare un'estensione che utilizza diversi aspetti del riquadro di Output.  
+## <a name="create-an-extension-that-uses-the-output-pane"></a>Creare un'estensione che usa il riquadro di Output  
+ È possibile creare un'estensione che esercita diversi aspetti del riquadro di Output.  
   
-1.  Creare un progetto VSIX denominato `TestOutput` con un comando di menu denominato **TestOutput**. Per ulteriori informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Creare un progetto VSIX denominato `TestOutput` con un comando di menu denominato **TestOutput**. Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 2.  Aggiungere i riferimenti seguenti:  
   
@@ -36,14 +36,14 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
   
     2.  EnvDTE80  
   
-3.  In TestOutput.cs, aggiungere la seguente istruzione using:  
+3.  Nelle *TestOutput.cs*, aggiungere la seguente istruzione using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  In TestOutput.cs, eliminare il metodo ShowMessageBox. Aggiungere lo stub di metodo seguenti:  
+4.  Nelle *TestOutput.cs*, eliminare il `ShowMessageBox` (metodo). Aggiungere lo stub del metodo seguente:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -51,7 +51,7 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
     }  
     ```  
   
-5.  Nel costruttore TestOutput, modificare il gestore del comando per OutputCommandHandler. Di seguito è la parte che aggiunge il comando:  
+5.  Nel costruttore TestOutput, modificare il gestore del comando a OutputCommandHandler. Questa è la parte che aggiunge i comandi:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -64,7 +64,7 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
     }  
     ```  
   
-6.  Nelle sezioni seguenti sono diversi metodi che mostrano i diversi modi per gestire con il riquadro di Output. È possibile chiamare questi metodi al corpo del metodo OutputCommandHandler(). Ad esempio, il codice seguente aggiunge il metodo CreatePane() descritto nella sezione successiva.  
+6.  Le sezioni seguenti includono diversi metodi che mostrano diverse modalità di gestione con il riquadro di Output. È possibile chiamare questi metodi al corpo del `OutputCommandHandler()` (metodo). Ad esempio, il codice seguente aggiunge il `CreatePane()` metodo specificato nella sezione successiva.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -73,8 +73,8 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
     }  
     ```  
   
-## <a name="creating-an-output-window-with-ivsoutputwindow"></a>Creazione di una finestra di Output con IVsOutputWindow  
- In questo esempio viene illustrato come creare un nuovo **Output** riquadro della finestra utilizzando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfaccia.  
+## <a name="create-an-output-window-with-ivsoutputwindow"></a>Creare una finestra di Output con IVsOutputWindow  
+ Questo esempio viene illustrato come creare una nuova **Output** riquadro della finestra usando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfaccia.  
   
 ```csharp  
 void CreatePane(Guid paneGuid, string title,   
@@ -98,10 +98,10 @@ void CreatePane(Guid paneGuid, string title,
 }  
 ```  
   
- Se si aggiunge questo metodo per l'estensione fornita nella sezione precedente, quando si fa clic il **richiamare TestOutput** comando verrà visualizzato il **Output** finestra con un'intestazione che indica che **Mostra output da: CreatedPane** e le parole **questo è il riquadro creato** nel riquadro stesso.  
+ Se si aggiunge questo metodo per l'estensione fornita nella sezione precedente, quando si fa clic il **richiamare TestOutput** comando dovrebbe essere il **Output** finestra con un'intestazione con la dicitura **Mostra output da: CreatedPane** e le parole **questo è il riquadro creazione** nel riquadro stesso.  
   
-## <a name="creating-an-output-window-with-outputwindow"></a>Creazione di una finestra di Output con OutputWindow  
- In questo esempio viene illustrato come creare un **Output** riquadro della finestra utilizzando il <xref:EnvDTE.OutputWindow> oggetto.  
+## <a name="create-an-output-window-with-outputwindow"></a>Creare una finestra di Output con OutputWindow  
+ In questo esempio viene illustrato come creare un **Output** riquadro della finestra usando il <xref:EnvDTE.OutputWindow> oggetto.  
   
 ```csharp  
 void CreatePane(string title)  
@@ -123,12 +123,12 @@ void CreatePane(string title)
 }  
 ```  
   
- Sebbene il <xref:EnvDTE.OutputWindowPanes> raccolta consente di recuperare un **Output** riquadro mediante il titolo, i titoli di riquadro non sono necessariamente essere univoco. Quando si dubbi l'univocità di un titolo, utilizzare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> metodo per recuperare il riquadro corretto con il relativo GUID.  
+ Anche se il <xref:EnvDTE.OutputWindowPanes> raccolta consente di recuperare un' **Output** riquadro della finestra dal relativo titolo, i titoli di riquadro non sono necessariamente essere univoci. Quando si dubito l'univocità di un titolo, usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> metodo per recuperare il riquadro corretto con il relativo GUID.  
   
- Se si aggiunge questo metodo per l'estensione fornita nella sezione precedente, quando si fa clic il **richiamare TestOutput** comando si dovrebbe visualizzare la finestra di Output con un'intestazione che indica che **Mostra output di: DTEPane** e le parole **aggiunto riquadro DTE** nel riquadro stesso.  
+ Se si aggiunge questo metodo per l'estensione fornita nella sezione precedente, quando si fa clic il **richiamare TestOutput** comando è verrà visualizzata la finestra di Output con un'intestazione con la dicitura **Mostra output di: DTEPane** e le parole **aggiunto riquadro DTE** nel riquadro stesso.  
   
-## <a name="deleting-an-output-window"></a>L'eliminazione di una finestra di Output  
- In questo esempio viene illustrato come eliminare un **Output** riquadro della finestra.  
+## <a name="delete-an-output-window"></a>Eliminare una finestra di Output  
+ In questo esempio mostra come eliminare un' **Output** riquadro della finestra.  
   
 ```csharp  
 void DeletePane(Guid paneGuid)  
@@ -150,10 +150,10 @@ void DeletePane(Guid paneGuid)
 }  
 ```  
   
- Se si aggiunge questo metodo per l'estensione fornita nella sezione precedente, quando si fa clic il **richiamare TestOutput** comando si dovrebbe visualizzare la finestra di Output con un'intestazione che indica che **Mostra output di: nuovo riquadro** e le parole **aggiunto riquadro creato** nel riquadro stesso. Se si sceglie il **TestOutput richiamare** nuovo il comando, il riquadro viene eliminato.  
+ Se si aggiunge questo metodo per l'estensione fornita nella sezione precedente, quando si fa clic il **richiamare TestOutput** comando è verrà visualizzata la finestra di Output con un'intestazione con la dicitura **Mostra output di: nuovo riquadro** e le parole **aggiunto riquadro create** nel riquadro stesso. Se si fa clic il **richiamare TestOutput** nuovo il comando, il riquadro viene eliminato.  
   
-## <a name="getting-the-general-pane-of-the-output-window"></a>Recupero di riquadro Generale della finestra di Output  
- In questo esempio viene illustrato come ottenere l'oggetto incorporato **generale** riquadro della finestra di **Output** finestra.  
+## <a name="get-the-general-pane-of-the-output-window"></a>Ottenere il riquadro Generale della finestra di Output  
+ In questo esempio viene illustrato come ottenere l'oggetto incorporato **generali** riquadro della finestra di **Output** finestra.  
   
 ```csharp  
 void GetGeneralPane()  
@@ -165,8 +165,8 @@ void GetGeneralPane()
   
  Se si aggiunge questo metodo per l'estensione fornita nella sezione precedente, quando si fa clic il **richiamare TestOutput** comando si noterà che il **Output** finestra vengono visualizzate le parole **trovato generale riquadro** nel riquadro.  
   
-## <a name="getting-the-build-pane-of-the-output-window"></a>Recupero di riquadro compilazione della finestra di Output  
- In questo esempio viene illustrato come trovare il riquadro di compilazione e in scrittura. Poiché il riquadro di compilazione non è attivato per impostazione predefinita, attiva anche.  
+## <a name="get-the-build-pane-of-the-output-window"></a>Ottenere il riquadro di compilazione della finestra di Output  
+ In questo esempio viene illustrato come trovare i **compilazione** riquadro e scrittura a esso. Poiché il **compilazione** riquadro non è attivato per impostazione predefinita, viene attivato anche.  
   
 ```csharp  
 void OutputTaskItemStringExExample(string buildMessage)  

@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a199a805493b0b9ac9ae6e75cec322c74a99987e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3b5e35738f04dd4a05a753a58e91ca385ecd56bd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511574"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639324"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.  
   
- I comandi possono avere una o due tasti di scelta rapida associati. È di un esempio di un unico tasto di scelta rapida CTRL + S per il **salvare** comando. Tasti di scelta doppia richiedono due combinazioni di tasti successive per attivare un comando. Un esempio di un tasto di scelta rapida doppia è CTRL + K, CTRL + K per impostare un segnalibro.  
+ I comandi possono avere una o due tasti di scelta rapida associati. È un esempio di un unico tasto di scelta rapida **Ctrl**+**S** per i **Salva** comando. Tasti di scelta doppia richiedono due combinazioni di tasti successive per attivare un comando. È un esempio di un tasto di scelta rapida duale **Ctrl * +** K **,** Ctrl**+** K * * per impostare un segnalibro.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,10 +42,10 @@ L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
 |guid|Obbligatorio.|  
 |ID|Obbligatorio.|  
 |editor|Obbligatorio. Il GUID dell'editor indica il contesto di modifica per il quale sarà attiva questo tasto di scelta rapida. Il valore dell'ambito dell'associazione globale è "guidVSStd97".|  
-|key1|Obbligatorio. I valori validi includono possibile digitare tutti i caratteri alfanumerici, nonché i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|MOD1|Facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
-|key2|Facoltativo. I valori validi includono possibile digitare tutti i caratteri alfanumerici, nonché i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|MOD2|Facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
+|key1|Obbligatorio. I valori validi includono possibile digitare tutti i caratteri alfanumerici, nonché i valori esadecimali a due cifre preceduti da 0x e [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx).|  
+|MOD1|Facoltativo. Qualsiasi combinazione delle **Ctrl**, **Alt**, e **MAIUSC** separati da spazio.|  
+|key2|Facoltativo. I valori validi includono possibile digitare tutti i caratteri alfanumerici, nonché i valori esadecimali a due cifre preceduti da 0x e [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx).|  
+|MOD2|Facoltativo. Qualsiasi combinazione delle **Ctrl**, **Alt**, e **MAIUSC** separati da spazio.|  
 |Emulatore|Facoltativo.|  
 |Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
@@ -75,4 +75,4 @@ L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
   
 ## <a name="see-also"></a>Vedere anche  
  [Elemento KeyBindings](../extensibility/keybindings-element.md)   
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

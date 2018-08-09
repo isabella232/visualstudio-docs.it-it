@@ -1,5 +1,5 @@
 ---
-title: Estensione soluzioni | Documenti Microsoft
+title: Estensione di soluzioni | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24a6758acc3b78399d48a311bd146e037daad500
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9671899b5e5574599bcd9125b74b06675be4b4b3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134281"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636866"
 ---
-# <a name="extending-solutions"></a>Estensione delle soluzioni
+# <a name="extend-solutions"></a>Estendi le soluzioni
 Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme per creare un'applicazione.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  Le procedure dettagliate seguenti illustrano alcuni modi in cui è possibile estendere le soluzioni.  
   
-1.  [Estendere il filtro di Esplora soluzioni](../extensibility/extending-the-solution-explorer-filter.md) viene illustrato come filtrare la visualizzazione Esplora soluzioni.  
+1.  [Estendere il filtro di Esplora soluzioni](../extensibility/extending-the-solution-explorer-filter.md) viene illustrato come filtrare gli elementi visualizzati da Esplora soluzioni.  
   
-2.  [Gestione progetto durante il caricamento in una soluzione](../extensibility/managing-project-loading-in-a-solution.md) viene illustrato come gestire il caricamento di progetto per migliorare le prestazioni quando un utente carica una soluzione.
+2.  [Gestire il caricamento di progetti in una soluzione](../extensibility/managing-project-loading-in-a-solution.md) viene illustrato come gestire il caricamento di progetti per migliorare le prestazioni quando un utente carica una soluzione.

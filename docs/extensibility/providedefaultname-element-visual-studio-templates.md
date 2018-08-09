@@ -1,5 +1,5 @@
 ---
-title: Elemento ProvideDefaultName (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento ProvideDefaultName (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: a187df0e50a2948ab6f1ef3a0fffea651dca23b9
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454376"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636012"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelli di Visual Studio)
-Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema del progetto verrà generato un nome predefinito per il modello di **Aggiungi nuovo elemento** o **nuovo progetto** la finestra di dialogo.  
+Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema di progetto verrà generato un nome predefinito per il modello nella **Aggiungi nuovo elemento** o **nuovo progetto** nella finestra di dialogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -31,7 +31,7 @@ Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <ProvideDefaultName> true/false </ProvideDefaultName>  
 ```  
   
@@ -53,17 +53,17 @@ Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere `true` o `false`, che indica se generare un nome predefinito per il modello nella **Aggiungi nuovo elemento** o **nuovo progetto** la finestra di dialogo.  
+ Il testo deve essere `true` o `false`, che indica se generare un nome predefinito per il modello nella o meno la **Aggiungi nuovo elemento** o **nuovo progetto** nella finestra di dialogo.  
   
 ## <a name="remarks"></a>Note  
  `ProvideDefaultName` è un elemento facoltativo. Il valore predefinito è `true`.  
   
- Se il `ProvideDefaultName` elemento `false`, **nome** caselle del **Aggiungi nuovo elemento** e **nuovo progetto** finestre di dialogo contengono il valore `<Enter_name>`.  
+ Se il `ProvideDefaultName` elemento viene `false`, il **nome** caselle del **Aggiungi nuovo elemento** e **nuovo progetto** finestre di dialogo contengono il valore `<Enter_name>`.  
   
- Utilizzare il [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento per specificare il nome predefinito del progetto o elemento di **Aggiungi nuovo elemento** e **nuovo progetto** finestre di dialogo. Quando il valore della `ProvideDefaultName` elemento `true`, omissione del `DefaultName` elemento per i progetti popola la finestra di dialogo con il nome del modello, vale a dire, il valore dal [nome](../extensibility/name-element-visual-studio-templates.md) elemento.
+ Usare il [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento per specificare il nome predefinito del progetto o elemento il **Aggiungi nuovo elemento** e **nuovo progetto** finestre di dialogo. Quando il valore del `ProvideDefaultName` elemento viene `true`, omissione del `DefaultName` (elemento) per i progetti popola la finestra di dialogo con il nome del modello, vale a dire, il valore dal [nome](../extensibility/name-element-visual-studio-templates.md) elemento.
   
 ## <a name="example"></a>Esempio  
- Nell'esempio di codice viene impostata la `ProvideDefaultName` elemento `false`.  
+ I seguente esempio di codice impostare il `ProvideDefaultName` elemento `false`.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -82,5 +82,5 @@ Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+ [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

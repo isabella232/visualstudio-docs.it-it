@@ -1,5 +1,5 @@
 ---
-title: Funzione SccGetExtendedCapabilities | Documenti Microsoft
+title: Funzione SccGetExtendedCapabilities | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46ae3e051028e8239be5949500ebb710d67eee17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7fd4a42b9c94cb2470f6e7dc7b4904aa890e8a6
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137216"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637786"
 ---
-# <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities (funzione)
-Questa funzione restituisce le funzionalità aggiuntive supportate dal plug-in controllo del codice sorgente.  
+# <a name="sccgetextendedcapabilities-function"></a>Funzione SccGetExtendedCapabilities
+Questa funzione restituisce funzionalità aggiuntive supportate dal controllo del codice sorgente del plug-in.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,28 +35,28 @@ SCCRTN SccGetExtendedCapabilities(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametri  
+### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto plug-in controllo di origine.  
+ [in] Il puntatore di contesto del plug-in controllo di origine.  
   
  lSccExCaps  
- [in] Flag che specifica una funzionalità estesa per cui eseguire il test (vedere la tabella codice funzionalità estese in [flag di capacità](../extensibility/capability-flags.md) per i possibili flag).  
+ [in] Un flag che specifica una funzionalità estesa per cui eseguire il test (vedere la tabella codice esteso di funzionalità nella [flag di funzionalità](../extensibility/capability-flags.md) per i possibili flag).  
   
  pbSupported  
  [out] Restituisce diverso da zero (`TRUE`) se la funzionalità specificata è supportata; in caso contrario, restituisce zero (`FALSE`).  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|L'operazione get funzionalità è stata completata.|  
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Errore sconosciuto o non specificato.|  
+|SCC_OK|L'operazione get funzionalità completata correttamente.|  
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Si è verificato un errore sconosciuto o non specificato.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene chiamato su richiesta. ovvero, quando una funzionalità deve essere testata, questo metodo viene chiamato per determinare se che funzionalità è supportata. Viene specificato un solo flag alla volta.  
+ Questo metodo viene chiamato su richiesta. ovvero quando una funzionalità deve essere testata, questo metodo viene chiamato per determinare se la funzionalità è supportata. Viene specificato il flag solo una alla volta.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)   
  [Codici di errore](../extensibility/error-codes.md)   
- [Flag di funzionalità](../extensibility/capability-flags.md)
+ [Flag funzionalità](../extensibility/capability-flags.md)

@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8004176fb64244aecde276226683a53c013d3b31
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513133"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639730"
 ---
-# <a name="registering-verbs-for-file-name-extensions"></a>Registrazione di verbi per le estensioni
+# <a name="register-verbs-for-file-name-extensions"></a>Registrare i verbi per estensioni di file
 L'associazione di un'estensione di file a un'applicazione ha in genere un'azione da preferire che si verifica quando un utente fa doppio clic su un file. Preferibile utilizzare l'azione è collegata a un verbo, ad esempio open, che corrisponde all'azione.  
   
- È possibile registrare i verbi associati con un identificatore a livello di codice (ProgID) per un'estensione usando la chiave di Shell che si trova in HKEY_CLASSES_ROOT\\*progid*\shell. Per altre informazioni, vedere [tipi di File](/windows/desktop/shell/fa-file-types).  
+ È possibile registrare i verbi associati un ProgID (programmatic identifier) per un'estensione usando la chiave Shell nel percorso **HKEY_CLASSES_ROOT\{progid} \shell**. Per altre informazioni, vedere [tipi di File](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
-## <a name="registering-standard-verbs"></a>Registrazione di verbi Standard  
+## <a name="register-standard-verbs"></a>Registrare i verbi standard  
  Il sistema operativo riconosce i verbi standard seguenti:  
   
 -   Apri  
@@ -38,7 +38,7 @@ L'associazione di un'estensione di file a un'applicazione ha in genere un'azione
   
 -   Anteprima  
   
- Quando possibile, registrare un verbo standard. La scelta più comune è il verbo Open. Usare il verbo di modifica solo se è presente una netta differenza tra l'apertura del file e la modifica del file. Ad esempio, aprire un file con estensione htm lo visualizza nel browser, mentre la modifica di un file con estensione htm avvia un editor HTML. Verbi standard vengono localizzati con impostazioni locali del sistema operativo.  
+ Quando possibile, registrare un verbo standard. La scelta più comune è il verbo Open. Usare il verbo di modifica solo se è presente una netta differenza tra l'apertura del file e la modifica del file. Ad esempio, aprire un *htm* file visualizzarlo nel browser, mentre la modifica un *htm* file avvia un editor HTML. Verbi standard vengono localizzati con impostazioni locali del sistema operativo.  
   
 > [!NOTE]
 >  Quando si registrano i verbi standard, non impostare il valore predefinito per il codice Open. Il valore predefinito contiene la stringa di visualizzazione del menu. Il sistema operativo fornisce questa stringa per i verbi standard.  
@@ -74,7 +74,7 @@ L'associazione di un'estensione di file a un'applicazione ha in genere un'azione
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""  
 ```  
   
- Per aprire un file in un'istanza esistente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], registrare una chiave DDEEXEC. L'esempio seguente illustra una registrazione di un verbo standard per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] file con estensione cs.  
+ Per aprire un file in un'istanza esistente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], registrare una chiave DDEEXEC. L'esempio seguente illustra una registrazione di un verbo standard per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *cs* file.  
   
 ```  
 [HKEY_CLASSES_ROOT\.cs]  
@@ -108,11 +108,11 @@ L'associazione di un'estensione di file a un'applicazione ha in genere un'azione
 @="system"  
 ```  
   
-## <a name="setting-the-default-verb"></a>Impostare il verbo predefinito  
- Il verbo predefinito è l'azione che viene eseguito quando un utente fa doppio clic su un file in Windows Explorer. Il verbo predefinito è il verbo specificato come valore predefinito per il HKEY_CLASSES_ROOT\\*progid*\Shell chiave. Se viene specificato alcun valore, il verbo predefinito è il primo verbo specificato nella chiave HKEY_CLASSES_ROOT\\*progid*\Shell elenco di chiavi.  
+## <a name="set-the-default-verb"></a>Impostare il verbo predefinito  
+ Il verbo predefinito è l'azione che viene eseguito quando un utente fa doppio clic su un file in Windows Explorer. Il verbo predefinito è il verbo specificato come valore predefinito per il **HKEY_CLASSES_ROOT\\*progid*\Shell** chiave. Se viene specificato alcun valore, il verbo predefinito è il primo verbo specificato nella **HKEY_CLASSES_ROOT\\*progid*\Shell** elenco di chiavi.  
   
 > [!NOTE]
 >  Se si prevede di modificare il verbo predefinito per un'estensione in una distribuzione side-by-side, prendere in considerazione l'impatto sull'installazione e rimozione. Durante l'installazione il valore predefinito originale viene sovrascritto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Gestione delle associazioni di file side-by-side](../extensibility/managing-side-by-side-file-associations.md)
+ [Gestisci associazioni file side-by-side](../extensibility/managing-side-by-side-file-associations.md)

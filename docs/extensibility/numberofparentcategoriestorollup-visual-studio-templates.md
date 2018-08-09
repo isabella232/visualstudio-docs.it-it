@@ -1,5 +1,5 @@
 ---
-title: NumberOfParentCategoriesToRollUp (modelli di Visual Studio) | Documenti Microsoft
+title: NumberOfParentCategoriesToRollUp (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e94e4b67727308657becac829bcdd30e571a2be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137460"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639513"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (modelli di Visual Studio)
-Specifica il numero di categorie padre che consente di visualizzare il modello di **nuovo progetto** la finestra di dialogo.  
+Specifica il numero di categorie principali che verrà visualizzato il modello nel **nuovo progetto** nella finestra di dialogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -54,15 +54,15 @@ Specifica il numero di categorie padre che consente di visualizzare il modello d
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .|  
   
 ## <a name="text-value"></a>Valore di testo  
- Un `integer` è richiesto un valore.  
+ Un `integer` il valore è obbligatorio.  
   
- Questo valore specifica il numero di categorie padre che consente di visualizzare il modello di **nuovo progetto** la finestra di dialogo.  
+ Questo valore specifica il numero di categorie principali che verrà visualizzato il modello nel **nuovo progetto** nella finestra di dialogo.  
   
 ## <a name="remarks"></a>Note  
  `NumberOfParentCategoriesToRollUp` è un elemento facoltativo.  
   
 ## <a name="example"></a>Esempio  
- In questo esempio vengono illustrati i metadati per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows. Se un modello i metadati viene inserito in una cartella due livelli sotto il livello principale [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] il modello di nodo, verrà visualizzato nel nodo di livello superiore di **nuovo progetto** la finestra di dialogo. Se il `NumberOfParentCategoriesToRollUp` non è impostata, il modello viene visualizzato solo nel nodo in cui si trova fisicamente.  
+ In questo esempio vengono illustrati i metadati per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows. Se un modello con i metadati si trova due livelli di cartelle sotto il livello principale [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nodo, il modello verrà visualizzato nel nodo di livello superiore il **nuovo progetto** nella finestra di dialogo. Se il `NumberOfParentCategoriesToRollUp` non è impostato, il modello viene visualizzato solo nel nodo in cui si trova fisicamente.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -90,5 +90,5 @@ Specifica il numero di categorie padre che consente di visualizzare il modello d
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
