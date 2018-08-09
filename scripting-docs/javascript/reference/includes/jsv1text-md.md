@@ -1,1 +1,0 @@
-Versioni di Internet Explorer precedenti rispetto a Internet Explorer 6

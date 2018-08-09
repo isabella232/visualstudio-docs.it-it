@@ -1,8 +1,0 @@
-# [Uso di Windows Runtime in JavaScript](using-the-windows-runtime-in-javascript.md)
-# [Considerazioni sull'uso dell'API di Windows Runtime](considerations-when-using-the-windows-runtime-api.md)
-# [Uso di metodi asincroni di Windows Runtime](using-windows-runtime-asynchronous-methods.md)
-## [Proprietà speciali degli errori restituiti da metodi asincroni di Windows Runtime](special-error-properties-from-asynchronous-windows-runtime-methods.md)
-# [Gestione degli eventi di Windows Runtime in JavaScript](handling-windows-runtime-events-in-javascript.md)
-# [Rappresentazione JavaScript dei tipi di Windows Runtime](javascript-representation-of-windows-runtime-types.md)
-# [Rappresentazioni DateTime e TimeSpan di Windows Runtime](windows-runtime-datetime-and-timespan-representations.md)
-# [Codici di errore per le app di Windows Runtime tramite JavaScript](error-codes-for-windows-runtime-apps-using-javascript.md)
