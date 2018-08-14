@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8bd6bf071b66f3736ab5dc64920aad892fe1186b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781617"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511601"
 ---
-# <a name="quickstart-create-a-python-project-from-existing-code"></a>Guida rapida: creare un progetto Python a partire da un codice esistente
+# <a name="quickstart-create-a-python-project-from-existing-code"></a>Guida introduttiva: Creare un progetto Python a partire da un codice esistente
 
 Dopo aver [installato il supporto Python in Visual Studio 2017](installing-python-support-in-visual-studio.md), è facile aggiungere un codice Python esistente in un progetto di Visual Studio.
 
@@ -27,15 +27,15 @@ Dopo aver [installato il supporto Python in Visual Studio 2017](installing-pytho
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. Se necessario, eseguire il programma premendo CTRL+F5 o selezionando **Debug > Avvia senza eseguire debug**.
+Se necessario, eseguire il programma premendo **CTRL**+**F5** o selezionando **Debug** > **Avvia senza eseguire debug**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Esercitazione: Uso di Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Esercitazione: Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Identificazione manuale di un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Installazione del supporto di Python in Visual Studio 2015 e precedenti](installing-python-support-in-visual-studio.md).
-- [Percorsi di installazione](installing-python-support-in-visual-studio.md#install-locations).
+- [Identificare manualmente un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Installare il supporto di Python in Visual Studio 2015 e versioni precedenti](installing-python-support-in-visual-studio.md)
+- [Percorsi di installazione](installing-python-support-in-visual-studio.md#install-locations)

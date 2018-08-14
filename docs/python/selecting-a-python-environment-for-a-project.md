@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c38436c5cf3d89b4224fbdbe9bd072f2a6c10d0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 63fa8e83fd94be5307541ca7e070d47c8fa04488
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117108"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586378"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Come assegnare l'ambiente Python usato per un progetto
 
 Tutto il codice in un progetto Python viene eseguito nel contesto di un ambiente specifico. Visual Studio usa anche tale ambiente per il debug, i completamenti per importazioni e membri, il controllo della sintassi e altre attività che richiedono un ambiente.
 
-Tutti i nuovi progetti Python in Visual Studio sono configurati inizialmente per l'uso dell'ambiente globale predefinito, visualizzato nel nodo **Ambienti Python** in Esplora soluzioni:
+Tutti i nuovi progetti Python in Visual Studio sono configurati inizialmente per l'uso dell'ambiente globale predefinito, visualizzato nel nodo **Ambienti Python** in **Esplora soluzioni**:
 
 ![Ambiente di Python globale predefinito visualizzato in Esplora soluzioni](media/environments-project.png)
 
@@ -40,19 +40,19 @@ Il menu di scelta rapida del nodo **Ambienti Python** contiene anche altri coman
 
 | Comando | Descrizione |
 | --- | --- |
-| Aggiungi ambiente virtuale... | Avvia il processo di creazione di un nuovo ambiente virtuale nel progetto. Vedere [Creare un ambiente virtuale](#create-a-virtual-environment). |
-| Aggiungi ambiente virtuale esistente... | Richiede la selezione di una cartella contenente un ambiente virtuale e aggiunge l'ambiente all'elenco sotto **Ambienti Python** senza attivarlo. Vedere [Attivare un ambiente virtuale esistente](#activate-an-existing-virtual-environment). |
-| Crea ambiente Conda... | Consente di passare alla *finestra* **Ambienti Python**in cui si può immettere un nome per l'ambiente e specificare il relativo interprete di base. |
+| **Aggiungi ambiente virtuale** | Avvia il processo di creazione di un nuovo ambiente virtuale nel progetto. Vedere [Creare un ambiente virtuale](#create-a-virtual-environment). |
+| **Aggiungi ambiente virtuale esistente** | Richiede la selezione di una cartella contenente un ambiente virtuale e aggiunge l'ambiente all'elenco sotto **Ambienti Python** senza attivarlo. Vedere [Attivare un ambiente virtuale esistente](#activate-an-existing-virtual-environment). |
+| **Crea ambiente Conda** | Consente di passare alla *finestra* **Ambienti Python**in cui si può immettere un nome per l'ambiente e specificare il relativo interprete di base. |
 
-## <a name="using-virtual-environments"></a>Uso di ambienti virtuali
+## <a name="use-virtual-environments"></a>Usare gli ambienti virtuali
 
-Un ambiente virtuale è una combinazione univoca di un interprete Python specifico e un set specifico di librerie, diversa da altri ambienti globali e Conda. Un ambiente virtuale è specifico di un progetto e viene gestito in una cartella del progetto. Tale cartella contiene le librerie installate dell'ambiente oltre a un file `pyvenv.cfg` che specifica il percorso all'*interprete di base* dell'ambiente in un'altra posizione nel file system. Ovvero, un ambiente virtuale non contiene una copia dell'interprete, solo un collegamento ad esso. 
+Un ambiente virtuale è una combinazione univoca di un interprete Python specifico e un set specifico di librerie, diversa da altri ambienti globali e Conda. Un ambiente virtuale è specifico di un progetto e viene gestito in una cartella del progetto. Tale cartella contiene le librerie installate dell'ambiente oltre a un file *pyvenv.cfg* che specifica il percorso per l'*interprete di base* dell'ambiente in un'altra posizione nel file system. Ovvero, un ambiente virtuale non contiene una copia dell'interprete, solo un collegamento ad esso. 
 
-Un vantaggio offerto dall'uso di un ambiente virtuale è che nel corso dello sviluppo del progetto l'ambiente virtuale riflette sempre le dipendenze esatte del progetto. Un ambiente globale condiviso contiene invece qualsiasi numero di librerie, indipendentemente dal fatto che vengano usate o meno nel progetto. È quindi possibile creare facilmente un file `requirements.txt` dall'ambiente virtuale e successivamente usarlo per reinstallare tali dipendenze in un altro computer di sviluppo o di produzione. Per altre informazioni, vedere [Gestione dei pacchetti necessari con requirements.txt](managing-required-packages-with-requirements-txt.md).
+Un vantaggio offerto dall'uso di un ambiente virtuale è che nel corso dello sviluppo del progetto l'ambiente virtuale riflette sempre le dipendenze esatte del progetto. Un ambiente globale condiviso contiene invece qualsiasi numero di librerie, indipendentemente dal fatto che vengano usate o meno nel progetto. È quindi possibile creare facilmente un file *requirements.txt* dall'ambiente virtuale e successivamente usarlo per reinstallare tali dipendenze in un altro computer di sviluppo o di produzione. Per altre informazioni, vedere [Gestire i pacchetti necessari con requirements.txt](managing-required-packages-with-requirements-txt.md).
 
-Quando si apre in Visual Studio un progetto che contiene un file `requirements.txt` Visual Studio offre automaticamente la possibilità di ricreare l'ambiente virtuale. Nei computer in cui non è installato Visual Studio, ad esempio il servizio App di Azure, è possibile usare `pip install -r requirements.txt` per ripristinare i pacchetti. Questo processo è descritto in [Gestione di Python nel servizio app di Azure](managing-python-on-azure-app-service.md).
+Quando si apre in Visual Studio un progetto che contiene un file *requirements.txt*, Visual Studio offre automaticamente la possibilità di ricreare l'ambiente virtuale. Nei computer in cui non è installato Visual Studio, ad esempio il Servizio app di Azure, è possibile usare `pip install -r requirements.txt` per ripristinare i pacchetti. Questo processo è descritto in [Gestire Python nel Servizio app di Azure](managing-python-on-azure-app-service.md).
 
-Poiché un ambiente virtuale contiene un percorso hardcoded all'interprete di base ed è possibile ricreare l'ambiente usando `requirements.txt`, in genere si omette l'intera cartella dell'ambiente virtuale dal controllo del codice sorgente.
+Poiché un ambiente virtuale contiene un percorso hardcoded all'interprete di base ed è possibile ricreare l'ambiente usando *requirements.txt*, in genere si omette l'intera cartella dell'ambiente virtuale dal controllo del codice sorgente.
 
 Le sezioni seguenti illustrano come attivare in un progetto un ambiente virtuale già esistente e come creare un nuovo ambiente virtuale.
 
@@ -64,7 +64,7 @@ Dopo essere stato aggiunto al progetto, l'ambiente virtuale viene visualizzato n
 
 È possibile creare un nuovo ambiente virtuale direttamente da Visual Studio, come indicato di seguito:
 
-1. Fare clic con il pulsante destro del mouse su **Ambienti Python** in Esplora soluzioni e scegliere **Aggiungi ambiente virtuale** per visualizzare la finestra di dialogo seguente:
+1. Fare clic con il pulsante destro del mouse su **Ambienti Python** in **Esplora soluzioni** e scegliere **Aggiungi ambiente virtuale** per visualizzare la finestra di dialogo seguente:
 
     ![Creazione di un ambiente virtuale](media/environments-add-virtual-1.png)
 
@@ -75,27 +75,27 @@ Dopo essere stato aggiunto al progetto, l'ambiente virtuale viene visualizzato n
 1. L'ambiente virtuale non viene attivato per impostazione predefinita. Per attivarlo per il progetto, fare clic con il pulsante destro del mouse su di esso e scegliere **Attiva ambiente**.
 
 > [!Note]
-> Se il percorso identifica un ambiente virtuale esistente, Visual Studio rileva l'interprete di base automaticamente (mediante il file `orig-prefix.txt` nella directory `lib` dell'ambiente) e modifica il pulsante Crea in **Aggiungi**.
+> Se il percorso identifica un ambiente virtuale esistente, Visual Studio rileva l'interprete di base automaticamente, usando il file *orig-prefix.txt* nella directory *lib* dell'ambiente, e modifica il pulsante **Crea** in **Aggiungi**.
 >
-> Se, quando si aggiunge un ambiente virtuale, esiste un file `requirements.txt`, nella finestra di dialogo **Aggiungi ambiente virtuale** viene visualizzata un'opzione per installare automaticamente i pacchetti, in modo da ricreare facilmente un ambiente in un altro computer:
+> Se quando si aggiunge un ambiente virtuale esiste un file *requirements.txt*, nella finestra di dialogo **Aggiungi ambiente virtuale** viene visualizzata un'opzione per installare automaticamente i pacchetti, in modo da ricreare facilmente un ambiente in un altro computer:
 >
 > ![Creazione di un ambiente virtuale con requirements.txt](media/environments-requirements-txt.png)
 >
-> In entrambi i casi, il risultato è lo stesso di quello ottenuto con il comando **Aggiungi ambiente virtuale esistente**.
+> In entrambi i casi il risultato è lo stesso di quello ottenuto con il comando **Aggiungi ambiente virtuale esistente**.
 
 ### <a name="activate-an-existing-virtual-environment"></a>Attivare un ambiente virtuale esistente
 
 Se è già stato creato un ambiente virtuale in un'altra posizione, è possibile attivarlo per un progetto come indicato di seguito:
 
-1. Fare clic con il pulsante destro del mouse su **Ambienti Python** in Esplora soluzioni e scegliere **Aggiungi ambiente virtuale esistente**.
+1. Fare clic con il pulsante destro del mouse su **Ambienti Python** in **Esplora soluzioni** e scegliere **Aggiungi ambiente virtuale esistente**.
 
-1. Nella finestra di dialogo **Sfoglia** visualizzata individuare e selezionare la cartella che contiene l'ambiente virtuale, quindi selezionare **OK**. Se Visual Studio rileva un file `requirements.txt` in tale ambiente, richiede se installare tali pacchetti.
+1. Nella finestra di dialogo **Sfoglia** visualizzata individuare e selezionare la cartella che contiene l'ambiente virtuale, quindi selezionare **OK**. Se Visual Studio rileva un file *requirements.txt* in tale ambiente, richiede se installare tali pacchetti.
 
-1. Dopo alcuni istanti, l'ambiente virtuale viene visualizzato nel nodo **Ambienti Python** in Esplora soluzioni. L'ambiente virtuale non è attivato per impostazione predefinita, quindi fare clic con pulsante destro del mouse su di esso e scegliere **Attiva ambiente**.
+1. Dopo alcuni istanti, l'ambiente virtuale viene visualizzato nel nodo **Ambienti Python** in **Esplora soluzioni**. L'ambiente virtuale non è attivato per impostazione predefinita, quindi fare clic con pulsante destro del mouse su di esso e scegliere **Attiva ambiente**.
 
 ### <a name="remove-a-virtual-environment"></a>Rimuovere un ambiente virtuale
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sull'ambiente virtuale e scegliere **Rimuovi**.
+1. In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sull'ambiente virtuale e scegliere **Rimuove**.
 
 1. Visual Studio chiede se rimuovere o eliminare l'ambiente virtuale. Se si seleziona **Rimuovi**, l'ambiente non sarà più disponibile per il progetto, ma rimane nel file system. Se si seleziona **Elimina**, l'ambiente viene rimosso sia dal progetto che dal file system. Non ci sono effetti per l'interprete di base.
 
@@ -114,11 +114,11 @@ Tenere presente che è possibile che le voci visualizzate non siano sempre accur
 Si noti inoltre che Visual Studio non supporta attualmente l'uso di `conda` per installare i pacchetti in un ambiente Conda. Usare invece `conda` dalla riga di comando.
 
 > [!Tip]
-> Può capitare spesso che pip non riesca a installare un pacchetto quando questo include il codice sorgente per i componenti nativi in file `*.pyd`. Se non è installata la versione richiesta di Visual Studio, pip non può compilare questi componenti. Il messaggio di errore visualizzato in questa situazione è `error: Unable to find vcvarsall.bat`. `easy_install` è spesso in grado di scaricare file binari precompilati ed è possibile scaricare un compilatore appropriato per le versioni precedenti di Python da [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Per altre informazioni, vedere [How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) (Come gestire l'errore "vcvarsallbat non trovato") nel blog del team degli strumenti Python.
+> Può capitare spesso che pip non riesca a installare un pacchetto quando questo include il codice sorgente per i componenti nativi in file con estensione *\*pyd*. Se non è installata la versione richiesta di Visual Studio, pip non può compilare questi componenti. Il messaggio di errore visualizzato in questa situazione è **errore: Impossibile trovare vcvarsall.bat**. `easy_install` è spesso in grado di scaricare file binari precompilati ed è possibile scaricare un compilatore appropriato per le versioni precedenti di Python da [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Per altre informazioni, vedere [How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) (Come gestire l'errore "vcvarsallbat non trovato") nel blog del team degli strumenti Python.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Gestione di ambienti Python in Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Uso di requirements.txt per le dipendenze](managing-required-packages-with-requirements-txt.md)
+- [Gestire ambienti Python in Visual Studio](managing-python-environments-in-visual-studio.md)
+- [Usare requirements.txt per le dipendenze](managing-required-packages-with-requirements-txt.md)
 - [Percorsi di ricerca](search-paths.md)
 - [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md)

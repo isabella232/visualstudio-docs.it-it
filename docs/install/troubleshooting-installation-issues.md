@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi di installazione con Visual Studio 2017
 description: Non sempre tutto funziona correttamente. Se l'installazione o l'aggiornamento di Visual Studio ha esito negativo, questa pagina può risultare utile.
-ms.date: 11/21/2017
+ms.date: 08/01/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
@@ -14,22 +14,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b6a7ae2bff6d35c77dc54ce07207af375b76ee77
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282954"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511691"
 ---
-# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Risoluzione dei problemi di installazione e aggiornamento di Visual Studio 2017
+# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio 2017
 
-## <a name="symptoms"></a>Sintomi
+> [!IMPORTANT]
+> Se si è verificato un problema di installazione, è possibile chiedere assistenza. È disponibile un'opzione di supporto che offre una [**chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese).
 
-Quando si prova a installare o aggiornare Visual Studio 2017, l'operazione ha esito negativo.
+Questa Guida alla risoluzione dei problemi include istruzioni dettagliate per risolvere la maggior parte dei problemi di installazione.
 
-## <a name="workaround"></a>Soluzione alternativa
+## <a name="how-to-troubleshoot-an-online-installation"></a>Come risolvere i problemi di un'installazione online
 
-Per risolvere il problema, seguire questa procedura.
+La procedura seguente è ottimizzata per un'installazione online tipica. Per un problema relativo a un'installazione offline, vedere [Come risolvere i problemi di un'installazione offline](#how-to-troubleshoot-an-offline-installation).
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Passaggio 1: Verificare se il problema è noto
 
@@ -43,8 +44,8 @@ Cercare il messaggio di errore nella [community degli sviluppatori di Visual Stu
 
 Il programma di bootstrap dell'installazione di Visual Studio è un file eseguibile di piccole dimensioni che consente di installare gli elementi restanti del programma di installazione di Visual Studio. Eliminando i file del programma di installazione di Visual Studio ed eseguendo nuovamente il programma di bootstrap, è possibile risolvere alcuni problemi di aggiornamento.
 
->[!NOTE]
-Eseguendo le azioni seguenti vengono reinstallati i file del programma di installazione di Visual Studio e vengono reimpostati i metadati di installazione.
+> [!NOTE]
+> Eseguendo le azioni seguenti vengono reinstallati i file del programma di installazione di Visual Studio e vengono reimpostati i metadati di installazione.
 
 1. Chiudere il programma di installazione di Visual Studio.
 2. Eliminare la directory del programma di installazione di Visual Studio. In genere, la directory è `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
@@ -53,7 +54,7 @@ Eseguendo le azioni seguenti vengono reinstallati i file del programma di instal
 
 ### <a name="step-4---report-a-problem"></a>Passaggio 4: Segnalare un problema
 
-In alcune situazioni, ad esempio quando sono presenti file danneggiati, può essere necessario esaminare i problemi singolarmente:
+In alcune situazioni, ad esempio quando sono presenti file danneggiati, può essere necessario esaminare i problemi singolarmente. Per consentirci di fornire il supporto ottimale, procedere come indicato di seguito:
 
 1. Raccogliere i log di installazione. Per altre informazioni, vedere [Come ottenere i log di installazione di Visual Studio](#how-to-get-the-visual-studio-installation-logs).
 2. Aprire il programma di installazione di Visual Studio e quindi fare clic su **Segnala un problema** per aprire Visual Studio Feedback Tool.
@@ -71,22 +72,22 @@ Come ultima risorsa, è possibile [rimuovere Visual Studio](remove-visual-studio
 
 ### <a name="step-6---contact-us-optional"></a>Passaggio 6: Contattare Microsoft (facoltativo)
 
-Se nessuno dei passaggi illustrati in precedenza consente di eseguire l'installazione correttamente, contattare Microsoft tramite chat attiva per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
+Se le procedure indicate sopra non consentono di installare o aggiornare correttamente Visual Studio, è possibile contattare il supporto tecnico tramite l'opzione di supporto [**Chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese) per ottenere ulteriore assistenza.
 
-## <a name="how-to-troubleshoot-an-offline-installer"></a>Come risolvere i problemi di un programma di installazione offline
+## <a name="how-to-troubleshoot-an-offline-installation"></a>Come risolvere i problemi di un'installazione offline
 
-Ecco una tabella dei problemi noti e di alcune soluzioni che possono essere utili quando si esegue l'installazione da un layout locale.
+Ecco una tabella dei problemi noti e di alcune soluzioni alternative che possono essere utili quando si esegue l'installazione da un layout locale.
 
 | Problema       | Elemento                   | Soluzione |
 | ----------- | ---------------------- | -------- |
 | Gli utenti non anno accesso ai file. | Autorizzazioni (ACL) | Assicurarsi di modificare le autorizzazioni (ACL) in modo da consentire l'accesso in lettura ad altri utenti *prima* di condividere l'installazione offline. |
 | Non è possibile installare nuovi carichi di lavoro, componenti o lingue.  | `--layout`  | Assicurarsi che sia disponibile l'accesso a Internet se si esegue l'installazione da un layout parziale e si selezionano carichi di lavoro, componenti o lingue non scaricati precedentemente nel layout parziale. |
 
-## <a name="how-to-get-the-visual-studio-installation-logs"></a>Come ottenere i log di installazione di Visual Studio
+## <a name="how-to-get-visual-studio-installation-logs"></a>Come ottenere i log di installazione di Visual Studio
 
 I log di installazione sono necessari per risolvere la maggior parte dei problemi di installazione. Quando si invia un problema mediante l'opzione [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) del programma di installazione di Visual Studio, questi log vengono automaticamente inclusi nel report.
 
-Se si contatta il supporto tecnico Microsoft, è possibile che sia necessario fornire questi log di installazione usando [Microsoft Visual Studio e lo strumento di raccolta dei log di .NET Framework](https://aka.ms/vscollect). Lo strumento di raccolta dei log raccoglie i log di installazione da tutti i componenti installati da Visual Studio 2017, tra cui .NET Framework, Windows SDK e SQL Server. Raccoglie anche informazioni sul computer, oltre a un inventario di Windows Installer e a informazioni sul registro eventi di Windows per il programma di installazione di Visual Studio, Windows Installer e Ripristino configurazione di sistema.
+Se si contatta il supporto tecnico Microsoft, è possibile che sia necessario fornire questi log di installazione usando lo [strumento di raccolta dei log di Microsoft Visual Studio e .NET Framework](https://aka.ms/vscollect). Lo strumento di raccolta dei log raccoglie i log di installazione da tutti i componenti installati da Visual Studio 2017, tra cui .NET Framework, Windows SDK e SQL Server. Raccoglie anche informazioni sul computer, oltre a un inventario di Windows Installer e a informazioni sul registro eventi di Windows per il programma di installazione di Visual Studio, Windows Installer e Ripristino configurazione di sistema.
 
 Per raccogliere i log:
 
@@ -98,20 +99,13 @@ Per raccogliere i log:
 > [!NOTE]
 > Lo strumento deve essere eseguito usando lo stesso account utente con cui è stata eseguita l'installazione che ha avuto esito negativo. Se si esegue lo strumento da un account utente diverso, impostare l'opzione `–user:<name>` in modo da specificare l'account utente con cui è stata eseguita l'installazione che ha avuto esito negativo. Per altre informazioni sull'utilizzo e sulle opzioni disponibili, eseguire `Collect.exe -?` da un prompt dei comandi amministrativo.
 
-## <a name="more-support-options"></a>Altre opzioni di supporto
+## <a name="get-live-help"></a>Ottenere supporto in tempo reale
 
-Se nessuno dei passaggi illustrati in precedenza consente di eseguire l'installazione correttamente, contattare Microsoft tramite chat attiva per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Ecco alcune altre opzioni:
-
-* È possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
-* È possibile condividere un suggerimento per il prodotto con Microsoft in [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* È possibile visualizzare lo stato dei problemi del prodotto e trovare una risposta nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
-* È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio). Per questa opzione è necessario un account [GitHub](https://github.com/).
+Se le soluzioni fornite in questa Guida alla risoluzione dei problemi non consentono di installare o aggiornare correttamente Visual Studio, è possibile usare l'opzione di supporto [**Chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese) per ottenere ulteriore assistenza.
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
-* [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
-* [Installazione di Visual Studio protetto da un firewall o un server proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Remove Visual Studio 2017](remove-visual-studio.md) (Rimuovere Visual Studio 2017)
+* [Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+* [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)

@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89008dbedfced5210211ed48b15b4bf85ac35ebb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927126"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567212"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
-I frammenti di codice IntelliSense sono parti di codice già create e pronte per essere inserite nell'applicazione con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questi frammenti di codice consentono di incrementare la produttività riducendo la quantità di tempo dedicata alla digitazione di codice ripetitivo o alla ricerca di esempi. È possibile usare l'XML Schema dei frammenti di codice IntelliSense per creare frammenti di codice personali e aggiungerli ai frammenti di codice già inclusi in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+I frammenti di codice IntelliSense sono parti di codice già create e pronte per essere inserite nell'applicazione con Visual Studio. Questi frammenti di codice consentono di incrementare la produttività riducendo la quantità di tempo dedicata alla digitazione di codice ripetitivo o alla ricerca di esempi. È possibile usare l'XML Schema dei frammenti di codice IntelliSense per creare frammenti di codice personali e aggiungerli ai frammenti di codice già inclusi in Visual Studio.
 
-##  <a name="assembly"></a> Elemento Assembly
+## <a name="assembly-element"></a>Elemento Assembly
 
 Specifica il nome dell'assembly a cui fa riferimento il frammento di codice.
 
@@ -40,11 +40,11 @@ Il valore di testo dell'elemento **Assembly** è il nome descrittivo dell'assemb
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Reference](../ide/code-snippets-schema-reference.md#reference)|Contiene informazioni sui riferimenti di assembly richiesti dal frammento di codice.|
+|[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Contiene informazioni sui riferimenti di assembly richiesti dal frammento di codice.|
 
  È necessario specificare un valore di testo. Tale testo specifica l'assembly a cui fa riferimento il frammento di codice.
 
-##  <a name="author"></a> Elemento Author
+## <a name="author-element"></a>Elemento Author
 
 Specifica il nome dell'autore del frammento di codice. In **Gestione frammenti di codice** viene visualizzato il nome archiviato nell'elemento `Author` del frammento di codice.
 
@@ -56,11 +56,11 @@ Specifica il nome dell'autore del frammento di codice. In **Gestione frammenti d
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Contiene informazioni generali sul frammento di codice.|
+|[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene informazioni generali sul frammento di codice.|
 
  È necessario specificare un valore di testo. Questo testo specifica l'autore del frammento di codice.
 
-## <a name="a-namecode--code-element"></a><a name="code" /> Elemento Code
+## <a name="code-element"></a>Elemento del codice
 
 Fornisce un contenitore per i blocchi di codice.
 
@@ -138,9 +138,9 @@ Sono disponibili tre attributi per l'elemento Code:
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
+|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
 
-##  <a name="codesnippet"></a>Elemento CodeSnippet
+## <a name="codesnippet-element"></a>Elemento CodeSnippet
 
 Consente di specificare un'intestazione e più frammenti di codice IntelliSense, che è possibile inserire in file di codice di Visual Studio.
 
@@ -157,16 +157,16 @@ Consente di specificare un'intestazione e più frammenti di codice IntelliSense,
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Elemento obbligatorio. Contiene informazioni generali sul frammento di codice. In un frammento di codice deve essere presente esattamente un elemento `Header`.|
-|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Elemento obbligatorio. Contiene il codice che verrà inserito da Visual Studio. In un frammento di codice deve essere presente esattamente un elemento `Snippet`.|
+|[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Elemento obbligatorio. Contiene informazioni generali sul frammento di codice. In un frammento di codice deve essere presente esattamente un elemento `Header`.|
+|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Elemento obbligatorio. Contiene il codice che verrà inserito da Visual Studio. In un frammento di codice deve essere presente esattamente un elemento `Snippet`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento CodeSnippets](../ide/code-snippets-schema-reference.md#codesnippets)|Elemento radice dell'XML Schema dei frammenti di codice.|
+|[Elemento CodeSnippets](../ide/code-snippets-schema-reference.md#codesnippets-element)|Elemento radice dell'XML Schema dei frammenti di codice.|
 
-##  <a name="codesnippets"></a>Elemento CodeSnippets
+## <a name="codesnippets-element"></a>Elemento CodeSnippets
 
-Raggruppa gli elementi [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet). L'elemento `CodeSnippets` è l'elemento radice dell'XML Schema dei frammenti di codice.
+Raggruppa gli elementi [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element). L'elemento `CodeSnippets` è l'elemento radice dell'XML Schema dei frammenti di codice.
 
 ```xml
 <CodeSnippets>
@@ -178,7 +178,7 @@ Raggruppa gli elementi [CodeSnippet](../ide/code-snippets-schema-reference.md#co
 |-------------------|-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento facoltativo. Elemento padre di tutti i dati del frammento di codice. Possono esistere zero o più elementi `CodeSnippet` in un elemento `CodeSnippets`.|
 
-##  <a name="declarations"></a>Elemento Declarations
+## <a name="declarations-element"></a>Elemento Declarations
 
 Specifica i valori letterali e gli oggetti che costituiscono le parti modificabili di un frammento di codice.
 
@@ -191,14 +191,14 @@ Specifica i valori letterali e gli oggetti che costituiscono le parti modificabi
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal)|Elemento facoltativo. Definisce i valori letterali modificabili del frammento di codice. Possono esistere zero o più elementi `Literal` in un elemento `Declarations`.|
-|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|Elemento facoltativo. Definisce gli oggetti modificabili del frammento di codice. Possono esistere zero o più elementi `Object` in un elemento `Declarations`.|
+|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Elemento facoltativo. Definisce i valori letterali modificabili del frammento di codice. Possono esistere zero o più elementi `Literal` in un elemento `Declarations`.|
+|[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Elemento facoltativo. Definisce gli oggetti modificabili del frammento di codice. Possono esistere zero o più elementi `Object` in un elemento `Declarations`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
 
-##  <a name="default"></a>Elemento Default
+## <a name="default-element"></a>Elemento Default
 
 Specifica il valore predefinito del valore letterale o dell'oggetto di un frammento di codice IntelliSense.
 
@@ -210,12 +210,12 @@ Specifica il valore predefinito del valore letterale o dell'oggetto di un framme
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal)|Definisce i campi con valore letterale del frammento di codice che è possibile modificare.|
-|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
+|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Definisce i campi con valore letterale del frammento di codice che è possibile modificare.|
+|[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
 
  È necessario specificare un valore di testo. Il testo specifica l'impostazione predefinita del valore letterale o dell'oggetto che popola i campi modificabili del frammento di codice.
 
-##  <a name="description"></a>Elemento Description
+## <a name="description-element"></a>Elemento Description
 
 Specifica informazioni descrittive sul contenuto di un frammento di codice IntelliSense.
 
@@ -227,11 +227,11 @@ Specifica informazioni descrittive sul contenuto di un frammento di codice Intel
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Contiene informazioni generali sul frammento di codice.|
+|[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene informazioni generali sul frammento di codice.|
 
  È necessario specificare un valore di testo. Questo testo descrive il frammento di codice.
 
-##  <a name="function"></a>Elemento Function
+## <a name="function-element"></a>elemento Function
 
 Specifica una funzione da eseguire quando il valore letterale o l'oggetto ricevono lo stato attivo in Visual Studio.
 
@@ -246,12 +246,12 @@ Specifica una funzione da eseguire quando il valore letterale o l'oggetto ricevo
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal)|Definisce i campi con valore letterale del frammento di codice che è possibile modificare.|
-|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
+|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Definisce i campi con valore letterale del frammento di codice che è possibile modificare.|
+|[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
 
  È necessario specificare un valore di testo. Questo testo specifica una funzione da eseguire quando il campo con valore letterale o con oggetto riceve lo stato attivo in Visual Studio.
 
-##  <a name="header"></a> Elemento Header
+## <a name="header-element"></a>Elemento Header
 
 Specifica informazioni generali sul frammento di codice IntelliSense.
 
@@ -269,19 +269,19 @@ Specifica informazioni generali sul frammento di codice IntelliSense.
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Author](../ide/code-snippets-schema-reference.md#author)|Elemento facoltativo. Nome della persona o della società che ha creato il frammento di codice. In un elemento `Author` possono essere presenti zero elementi `Header` oppure uno.|
-|[Elemento Description](../ide/code-snippets-schema-reference.md#description)|Elemento facoltativo. Descrizione del frammento di codice. In un elemento `Description` possono essere presenti zero elementi `Header` oppure uno.|
-|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl)|Elemento facoltativo. URL contenente altre informazioni sul frammento di codice. In un elemento Header possono essere presenti zero elementi `HelpURL` o uno. **Nota:** in Visual Studio l'elemento `HelpUrl` non viene usato. L'elemento fa parte dell'XML Schema dei frammenti di codice IntelliSense e ogni frammento di codice che contiene l'elemento verrà convalidato, anche se il valore dell'elemento non verrà mai usato.|
-|[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords)|Elemento facoltativo. Raggruppa gli elementi `Keyword`. In un elemento `Keywords` possono essere presenti zero elementi `Header` oppure uno.|
-|[Elemento Shortcut](../ide/code-snippets-schema-reference.md#shortcut)|Elemento facoltativo. Specifica il testo di collegamento che può essere usato per inserire il frammento. In un elemento `Shortcut` possono essere presenti zero elementi `Header` oppure uno.|
-|[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes)|Elemento facoltativo. Raggruppa gli elementi `SnippetType`. In un elemento `SnippetTypes` possono essere presenti zero elementi `Header` oppure uno. In assenza di elementi `SnippetTypes`, il frammento di codice è sempre valido.|
-|[Elemento Title](../ide/code-snippets-schema-reference.md#title)|Elemento obbligatorio. Nome descrittivo del frammento di codice. In un elemento `Title` deve essere presente esattamente un elemento `Header`.|
+|[Elemento Author](../ide/code-snippets-schema-reference.md#author-element)|Elemento facoltativo. Nome della persona o della società che ha creato il frammento di codice. In un elemento `Author` possono essere presenti zero elementi `Header` oppure uno.|
+|[Elemento Description](../ide/code-snippets-schema-reference.md#description-element)|Elemento facoltativo. Descrizione del frammento di codice. In un elemento `Description` possono essere presenti zero elementi `Header` oppure uno.|
+|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl-element)|Elemento facoltativo. URL contenente altre informazioni sul frammento di codice. In un elemento Header possono essere presenti zero elementi `HelpURL` o uno. **Nota:** in Visual Studio l'elemento `HelpUrl` non viene usato. L'elemento fa parte dell'XML Schema dei frammenti di codice IntelliSense e ogni frammento di codice che contiene l'elemento verrà convalidato, anche se il valore dell'elemento non verrà mai usato.|
+|[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords-element)|Elemento facoltativo. Raggruppa gli elementi `Keyword`. In un elemento `Keywords` possono essere presenti zero elementi `Header` oppure uno.|
+|[Elemento Shortcut](../ide/code-snippets-schema-reference.md#shortcut-element)|Elemento facoltativo. Specifica il testo di collegamento che può essere usato per inserire il frammento. In un elemento `Shortcut` possono essere presenti zero elementi `Header` oppure uno.|
+|[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes-element)|Elemento facoltativo. Raggruppa gli elementi `SnippetType`. In un elemento `SnippetTypes` possono essere presenti zero elementi `Header` oppure uno. In assenza di elementi `SnippetTypes`, il frammento di codice è sempre valido.|
+|[Elemento Title](../ide/code-snippets-schema-reference.md#title-element)|Elemento obbligatorio. Nome descrittivo del frammento di codice. In un elemento `Title` deve essere presente esattamente un elemento `Header`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento padre di tutti i dati del frammento di codice.|
 
-##  <a name="helpurl"></a>Elemento HelpUrl
+## <a name="helpurl-element"></a>Elemento HelpUrl
 
 Specifica un URL nel quale sono presenti altre informazioni su un frammento di codice.
 
@@ -296,11 +296,11 @@ Specifica un URL nel quale sono presenti altre informazioni su un frammento di c
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Contiene informazioni generali sul frammento di codice.|
+|[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene informazioni generali sul frammento di codice.|
 
 Il valore di testo è facoltativo. Tale testo specifica l'URL da visitare per ottenere altre informazioni su un frammento di codice.
 
-##  <a name="id"></a>Elemento ID
+## <a name="id-element"></a>Elemento ID
 
 Specifica un identificatore univoco per un elemento `Literal` o `Object`. Due oggetti o due valori letterali nello stesso frammento non possono avere lo stesso valore di testo nei loro elementi `ID`. I valori letterali e gli oggetti non possono contenere un elemento `ID` con un valore end. `$end$` è un valore riservato e viene usato per contrassegnare il punto in cui posizionare il cursore dopo l'inserimento del frammento di codice.
 
@@ -312,12 +312,12 @@ Specifica un identificatore univoco per un elemento `Literal` o `Object`. Due og
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal)|Definisce i campi con valore letterale del frammento di codice che è possibile modificare.|
-|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
+|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Definisce i campi con valore letterale del frammento di codice che è possibile modificare.|
+|[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
 
 È necessario specificare un valore di testo. Tale testo specifica l'identificatore univoco per l'oggetto o il valore letterale.
 
-##  <a name="import"></a>Elemento Import
+## <a name="import-element"></a>Elemento Import
 
 Specifica gli spazi dei nomi importati usati da un frammento di codice IntelliSense.
 
@@ -332,13 +332,13 @@ Specifica gli spazi dei nomi importati usati da un frammento di codice IntelliSe
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Namespace](../ide/code-snippets-schema-reference.md#namespace)|Elemento obbligatorio. Specifica lo spazio dei nomi usato dal frammento di codice. In un elemento `Namespace` deve essere presente esattamente un elemento `Import`.|
+|[Elemento Namespace](../ide/code-snippets-schema-reference.md#namespace-element)|Elemento obbligatorio. Specifica lo spazio dei nomi usato dal frammento di codice. In un elemento `Namespace` deve essere presente esattamente un elemento `Import`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Imports](../ide/code-snippets-schema-reference.md#imports)|Elemento di raggruppamento per elementi **Import**.|
+|[Elemento Imports](../ide/code-snippets-schema-reference.md#imports-element)|Elemento di raggruppamento per elementi **Import**.|
 
-##  <a name="imports"></a>Elemento Imports
+## <a name="imports-element"></a>Elemento Imports
 
 Raggruppa singoli elementi `Import`.
 
@@ -348,18 +348,18 @@ Raggruppa singoli elementi `Import`.
 ```xml
 <Imports>
     <Import>... </Import>
-<Imports>
+</Imports>
 ```
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Import](../ide/code-snippets-schema-reference.md#import)|Elemento facoltativo. Contiene gli spazi dei nomi importati per il frammento di codice. Possono esistere zero o più elementi **Import** in un elemento `Imports`.|
+|[Elemento Import](../ide/code-snippets-schema-reference.md#import-element)|Elemento facoltativo. Contiene gli spazi dei nomi importati per il frammento di codice. Possono esistere zero o più elementi **Import** in un elemento `Imports`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
+|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
 
-##  <a name="keyword"></a> Elemento Keyword
+## <a name="keyword-element"></a>Elemento Keyword
 
 Specifica una parola chiave personalizzata per il frammento di codice. Le parole chiave del frammento di codice sono usate da Visual Studio e costituiscono un modo standard dei provider di contenuti online di aggiungere parole chiave personalizzate per la ricerca o la classificazione in categorie.
 
@@ -371,11 +371,11 @@ Specifica una parola chiave personalizzata per il frammento di codice. Le parole
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords)|Raggruppa singoli elementi `Keyword`.|
+|[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords-element)|Raggruppa singoli elementi `Keyword`.|
 
 È necessario specificare un valore di testo. Parola chiave per il frammento di codice.
 
-##  <a name="keywords"></a> Elemento Keywords
+## <a name="keywords-element"></a>Elemento Keywords
 
 Raggruppa singoli elementi `Keyword`. Le parole chiave del frammento di codice sono usate da Visual Studio e costituiscono un modo standard dei provider di contenuti online di aggiungere parole chiave personalizzate per la ricerca o la classificazione in categorie
 
@@ -383,18 +383,18 @@ Raggruppa singoli elementi `Keyword`. Le parole chiave del frammento di codice s
 <Keywords>
     <Keyword>... </Keyword>
     <Keyword>... </Keyword>
-<Keywords>
+</Keywords>
 ```
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Keyword](../ide/code-snippets-schema-reference.md#keyword)|Elemento facoltativo. Contiene singole parole chiave per il frammento di codice. Possono esistere zero o più elementi `Keyword` in un elemento `Keywords`.|
+|[Elemento Keyword](../ide/code-snippets-schema-reference.md#keyword-element)|Elemento facoltativo. Contiene singole parole chiave per il frammento di codice. Possono esistere zero o più elementi `Keyword` in un elemento `Keywords`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Contiene informazioni generali sul frammento di codice.|
+|[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene informazioni generali sul frammento di codice.|
 
-##  <a name="literal"></a>Elemento Literal
+## <a name="literal-element"></a>Literal, elemento
 
 Definisce i valori letterali modificabili del frammento di codice. L'elemento `Literal` viene usato per identificare una sostituzione per una parte di codice che è interamente contenuta nel frammento, ma verrà probabilmente personalizzata dopo l'inserimento nel codice. Ad esempio, i valori letterali stringa, i valori numerici e alcuni nomi di variabili dovrebbero essere dichiarati come valori letterali.
 
@@ -415,16 +415,16 @@ I valori letterali e gli oggetti non possono contenere un elemento **ID** con va
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Default](../ide/code-snippets-schema-reference.md#default)|Elemento obbligatorio. Specifica il valore predefinito del valore letterale al momento dell'inserimento del frammento di codice. In un elemento `Default` deve essere presente esattamente un elemento `Literal`.|
-|[Elemento Function](../ide/code-snippets-schema-reference.md#function)|Elemento facoltativo. Specifica una funzione da eseguire quando il valore letterale riceve lo stato attivo in Visual Studio. In un elemento `Function` possono essere presenti zero elementi `Literal` oppure uno.|
-|[Elemento ID](../ide/code-snippets-schema-reference.md#id)|Elemento obbligatorio. Specifica un identificatore univoco per il valore letterale. In un elemento `ID` deve essere presente esattamente un elemento `Literal`.|
-|[Elemento ToolTip](../ide/code-snippets-schema-reference.md#tooltip)|Elemento facoltativo. Descrive l'utilizzo e il valore previsti del valore letterale. Possono essere presenti zero o un elemento **Tooltip** in un elemento `Literal`.|
+|[Elemento Default](../ide/code-snippets-schema-reference.md#default-element)|Elemento obbligatorio. Specifica il valore predefinito del valore letterale al momento dell'inserimento del frammento di codice. In un elemento `Default` deve essere presente esattamente un elemento `Literal`.|
+|[Elemento Function](../ide/code-snippets-schema-reference.md#function-element)|Elemento facoltativo. Specifica una funzione da eseguire quando il valore letterale riceve lo stato attivo in Visual Studio. In un elemento `Function` possono essere presenti zero elementi `Literal` oppure uno.|
+|[Elemento ID](../ide/code-snippets-schema-reference.md#id-element)|Elemento obbligatorio. Specifica un identificatore univoco per il valore letterale. In un elemento `ID` deve essere presente esattamente un elemento `Literal`.|
+|[Elemento ToolTip](../ide/code-snippets-schema-reference.md#tooltip-element)|Elemento facoltativo. Descrive l'utilizzo e il valore previsti del valore letterale. Possono essere presenti zero o un elemento **Tooltip** in un elemento `Literal`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations)|Contiene i valori letterali e gli oggetti di un frammento di codice che è possibile modificare.|
 
-##  <a name="namespace"></a> Elemento Namespace
+## <a name="namespace-element"></a>Elemento Namespace
 
 Specifica lo spazio dei nomi che deve essere importato per la compilazione e l'esecuzione del frammento di codice. Lo spazio dei nomi specificato nell'elemento `Namespace` viene aggiunto automaticamente a un'istruzione `Imports` all'inizio del codice, se non esiste già.
 
@@ -439,11 +439,11 @@ Specifica lo spazio dei nomi che deve essere importato per la compilazione e l'e
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Import](../ide/code-snippets-schema-reference.md#import)|Importa lo spazio dei nomi specificato.|
+|[Elemento Import](../ide/code-snippets-schema-reference.md#import-element)|Importa lo spazio dei nomi specificato.|
 
- È necessario specificare un valore di testo. Questo testo specifica uno spazio dei nomi di cui il frammento di codice presuppone l'importazione.
+È necessario specificare un valore di testo. Questo testo specifica uno spazio dei nomi di cui il frammento di codice presuppone l'importazione.
 
-##  <a name="object"></a> Elemento Object
+## <a name="object-element"></a>Elemento Object
 
 Definisce gli oggetti modificabili del frammento di codice. L'elemento `Object` viene usato per identificare un elemento richiesto dal frammento di codice ma che viene probabilmente definito al di fuori del frammento stesso. È ad esempio opportuno dichiarare come oggetti i controlli Windows Form, i controlli ASP.NET, le istanze di oggetti e le istanze di tipi. Per le dichiarazioni di oggetti è necessario specificare un tipo, usando l'elemento `Type`.
 
@@ -463,17 +463,17 @@ Definisce gli oggetti modificabili del frammento di codice. L'elemento `Object` 
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Default](../ide/code-snippets-schema-reference.md#default)|Elemento obbligatorio. Specifica il valore predefinito del valore letterale al momento dell'inserimento del frammento di codice. In un elemento `Default` deve essere presente esattamente un elemento `Literal`.|
-|[Elemento Function](../ide/code-snippets-schema-reference.md#function)|Elemento facoltativo. Specifica una funzione da eseguire quando il valore letterale riceve lo stato attivo in Visual Studio. In un elemento `Function` possono essere presenti zero elementi `Literal` oppure uno.|
-|[Elemento ID](../ide/code-snippets-schema-reference.md#id)|Elemento obbligatorio. Specifica un identificatore univoco per il valore letterale. In un elemento `ID` deve essere presente esattamente un elemento `Literal`.|
-|[Elemento ToolTip](../ide/code-snippets-schema-reference.md#tooltip)|Elemento facoltativo. Descrive l'utilizzo e il valore previsti del valore letterale. Possono essere presenti zero o un elemento **Tooltip** in un elemento `Literal`.|
-|[Elemento Type](../ide/code-snippets-schema-reference.md#type)|Elemento obbligatorio. Specifica il tipo di oggetto. In un elemento `Type` deve essere presente esattamente un elemento `Object`.|
+|[Elemento Default](../ide/code-snippets-schema-reference.md#default-element)|Elemento obbligatorio. Specifica il valore predefinito del valore letterale al momento dell'inserimento del frammento di codice. In un elemento `Default` deve essere presente esattamente un elemento `Literal`.|
+|[Elemento Function](../ide/code-snippets-schema-reference.md#function-element)|Elemento facoltativo. Specifica una funzione da eseguire quando il valore letterale riceve lo stato attivo in Visual Studio. In un elemento `Function` possono essere presenti zero elementi `Literal` oppure uno.|
+|[Elemento ID](../ide/code-snippets-schema-reference.md#id-element)|Elemento obbligatorio. Specifica un identificatore univoco per il valore letterale. In un elemento `ID` deve essere presente esattamente un elemento `Literal`.|
+|[Elemento ToolTip](../ide/code-snippets-schema-reference.md#tooltip-element)|Elemento facoltativo. Descrive l'utilizzo e il valore previsti del valore letterale. Possono essere presenti zero o un elemento **Tooltip** in un elemento `Literal`.|
+|[Elemento Type](../ide/code-snippets-schema-reference.md#type-element)|Elemento obbligatorio. Specifica il tipo di oggetto. In un elemento `Type` deve essere presente esattamente un elemento `Object`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations)|Contiene i valori letterali e gli oggetti di un frammento di codice che è possibile modificare.|
+|[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Contiene i valori letterali e gli oggetti di un frammento di codice che è possibile modificare.|
 
-##  <a name="reference"></a> Elemento Reference
+## <a name="reference-element"></a>Elemento Reference
 
 Specifica informazioni sui riferimenti ad assembly richiesti dal frammento di codice.
 
@@ -486,14 +486,14 @@ Specifica informazioni sui riferimenti ad assembly richiesti dal frammento di co
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Assembly](../ide/code-snippets-schema-reference.md#assembly)|Elemento obbligatorio. Contiene il nome dell'assembly a cui viene fatto riferimento nel frammento di codice. In un elemento `Assembly` deve essere presente esattamente un elemento `Reference`.|
-|[Elemento Url](../ide/code-snippets-schema-reference.md#url)|Elemento facoltativo. Contiene un URL che fornisce altre informazioni sull'assembly a cui si fa riferimento. In un elemento `Url` possono essere presenti zero elementi `Reference` oppure uno.|
+|[Elemento Assembly](../ide/code-snippets-schema-reference.md#assembly-element)|Elemento obbligatorio. Contiene il nome dell'assembly a cui viene fatto riferimento nel frammento di codice. In un elemento `Assembly` deve essere presente esattamente un elemento `Reference`.|
+|[Elemento Url](../ide/code-snippets-schema-reference.md#url-element)|Elemento facoltativo. Contiene un URL che fornisce altre informazioni sull'assembly a cui si fa riferimento. In un elemento `Url` possono essere presenti zero elementi `Reference` oppure uno.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
 |[Elemento References](../ide/code-snippets-schema-reference.md#references)|Elemento di raggruppamento per elementi `Reference`.|
 
-##  <a name="references"></a>Elemento References
+## <a name="references-element"></a>Elemento References
 
 Raggruppa singoli elementi `Reference`.
 
@@ -505,13 +505,13 @@ Raggruppa singoli elementi `Reference`.
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Reference](../ide/code-snippets-schema-reference.md#reference)|Elemento facoltativo. Contiene informazioni sui riferimenti ad assembly per il frammento di codice. Possono esistere zero o più elementi `Reference` in un elemento `References`.|
+|[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Elemento facoltativo. Contiene informazioni sui riferimenti ad assembly per il frammento di codice. Possono esistere zero o più elementi `Reference` in un elemento `References`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
+|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
 
-##  <a name="shortcut"></a> Elemento Shortcut
+## <a name="shortcut-element"></a>Elemento Shortcut
 
 Specifica il testo del collegamento usato per inserire il frammento di codice. Il valore di testo di un elemento `Shortcut` può contenere solo caratteri alfanumerici, trattini (-) e caratteri di sottolineatura (_).
 
@@ -526,11 +526,11 @@ Specifica il testo del collegamento usato per inserire il frammento di codice. I
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Contiene informazioni generali sul frammento di codice.|
+|[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene informazioni generali sul frammento di codice.|
 
  Il valore di testo è facoltativo. Tale testo viene usato come collegamento per l'inserimento del frammento di codice.
 
-##  <a name="snippet"></a> Elemento Snippet
+## <a name="snippet-element"></a>Elemento Snippet
 
 Specifica i riferimenti, le importazioni, le dichiarazione e il codice del frammento di codice.
 
@@ -545,30 +545,30 @@ Specifica i riferimenti, le importazioni, le dichiarazione e il codice del framm
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Code](../ide/code-snippets-schema-reference.md#code)|Elemento obbligatorio. Specifica il codice che si desidera inserire in un file di documentazione. In un elemento `Code` deve essere presente esattamente un elemento `Snippet`.|
-|[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations)|Elemento facoltativo. Specifica i valori letterali e gli oggetti che costituiscono le parti modificabili di un frammento di codice. In un elemento `Declarations` possono essere presenti zero elementi `Snippet` oppure uno.|
-|[Elemento Imports](../ide/code-snippets-schema-reference.md#imports)|Elemento facoltativo. Raggruppa singoli elementi `Import`. In un elemento `Imports` possono essere presenti zero elementi `Snippet` oppure uno.|
+|[Elemento Code](../ide/code-snippets-schema-reference.md#code-element)|Elemento obbligatorio. Specifica il codice che si desidera inserire in un file di documentazione. In un elemento `Code` deve essere presente esattamente un elemento `Snippet`.|
+|[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Elemento facoltativo. Specifica i valori letterali e gli oggetti che costituiscono le parti modificabili di un frammento di codice. In un elemento `Declarations` possono essere presenti zero elementi `Snippet` oppure uno.|
+|[Elemento Imports](../ide/code-snippets-schema-reference.md#imports-element)|Elemento facoltativo. Raggruppa singoli elementi `Import`. In un elemento `Imports` possono essere presenti zero elementi `Snippet` oppure uno.|
 ||Elemento facoltativo. Raggruppa singoli elementi `Reference`. In un elemento `References` possono essere presenti zero elementi `Snippet` oppure uno.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Consente di specificare un'intestazione e più frammenti di codice IntelliSense, che è possibile inserire in file di codice di Visual Studio.|
+|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Consente di specificare un'intestazione e più frammenti di codice IntelliSense, che è possibile inserire in file di codice di Visual Studio.|
 
-##  <a name="snippettype"></a> Elemento SnippetType
+## <a name="snippettype-element"></a>SnippetType, elemento
 
 Specifica la modalità di inserimento del frammento di codice.
 
 ```xml
 <SnippetType>
     SurroundsWith/Expansion
-<SnippetType>
+</SnippetType>
 ```
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes)|Raggruppa gli elementi `SnippetType`.|
+|[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes-element)|Raggruppa gli elementi `SnippetType`.|
 
- Il valore di testo deve essere uno dei seguenti valori:
+Il valore di testo deve essere uno dei seguenti valori:
 
 -   `SurroundsWith`: consente di inserire il frammento di codice intorno a un segmento di codice selezionato.
 
@@ -576,7 +576,7 @@ Specifica la modalità di inserimento del frammento di codice.
 
 -   `Refactoring`: specifica che il frammento di codice viene usato durante il refactoring di C#. Non è possibile usare il `Refactoring` nei frammenti di codice personalizzati.
 
-##  <a name="snippettypes"></a>Elemento SnippetTypes
+## <a name="snippettypes-element"></a>Elemento SnippetTypes
 
 Raggruppa singoli elementi `SnippetType`. Se l'elemento `SnippetTypes` non è presente, il frammento di codice può essere inserito ovunque nel codice.
 
@@ -584,34 +584,34 @@ Raggruppa singoli elementi `SnippetType`. Se l'elemento `SnippetTypes` non è pr
 <SnippetTypes>
     <SnippetType>... </SnippetType>
     <SnippetType>... </SnippetType>
-<SnippetTypes>
+</SnippetTypes>
 ```
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento SnippetType](../ide/code-snippets-schema-reference.md#snippettype)|Elemento facoltativo. Specifica la modalità di inserimento del frammento di codice in Visual Studio. Possono esistere zero o più elementi `SnippetType` in un elemento `SnippetTypes`.|
+|[Elemento SnippetType](../ide/code-snippets-schema-reference.md#snippettype-element)|Elemento facoltativo. Specifica la modalità di inserimento del frammento di codice in Visual Studio. Possono esistere zero o più elementi `SnippetType` in un elemento `SnippetTypes`.|
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Specifica informazioni generali sul frammento di codice.|
+|[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Specifica informazioni generali sul frammento di codice.|
 
-##  <a name="title"></a> Elemento Title
+## <a name="title-element"></a>Elemento Title
 
 Specifica il titolo del frammento di codice. Il titolo archiviato nell'elemento `Title` del frammento di codice viene visualizzato in **Selezione frammento di codice** e nella descrizione del frammento in **Gestione frammenti di codice**.
 
 ```xml
 <Title>
     Code Snippet Title
-<Title>
+</Title>
 ```
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Specifica informazioni generali sul frammento di codice.|
+|[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Specifica informazioni generali sul frammento di codice.|
 
  È necessario specificare un valore di testo. Tale testo specifica il titolo del frammento di codice.
 
-##  <a name="tooltip"></a> Elemento ToolTip
+## <a name="tooltip-element"></a>Elemento ToolTip
 
 Descrive la sintassi e il valore previsto di un oggetto o di un valore letterale in un frammento di codice, visualizzati in una descrizione comando durante l'inserimento del frammento di codice in un progetto. Il testo della descrizione comandi viene visualizzato quando il puntatore del mouse viene soffermato sul valore letterale o sull'oggetto dopo l'inserimento del frammento di codice.
 
@@ -623,12 +623,12 @@ Descrive la sintassi e il valore previsto di un oggetto o di un valore letterale
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal)|Definisce i campi con valore letterale del frammento di codice che è possibile modificare.|
-|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
+|[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Definisce i campi con valore letterale del frammento di codice che è possibile modificare.|
+|[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
 
  È necessario specificare un valore di testo. Tale testo specifica la descrizione della Descrizione comando da associare all'oggetto o al valore letterale nel frammento di codice.
 
-##  <a name="type"></a> Elemento Type
+## <a name="type-element"></a>Elemento Type
 
 Specifica il tipo di oggetto. L'elemento `Object` viene usato per identificare un elemento richiesto dal frammento di codice ma che viene probabilmente definito al di fuori del frammento stesso. È ad esempio opportuno dichiarare come oggetti i controlli Windows Form, i controlli ASP.NET, le istanze di oggetti e le istanze di tipi. Per le dichiarazioni di oggetti è necessario specificare un tipo, usando l'elemento `Type`.
 
@@ -640,11 +640,11 @@ Specifica il tipo di oggetto. L'elemento `Object` viene usato per identificare u
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
+|[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
 
  È necessario specificare un valore di testo. Tale testo specifica il tipo dell'oggetto.
 
-##  <a name="url"></a> Elemento Url
+## <a name="url-element"></a>Elemento Url
 
 Specifica un URL che fornisce altre informazioni sull'assembly a cui viene fatto riferimento.
 
@@ -659,11 +659,11 @@ Specifica un URL che fornisce altre informazioni sull'assembly a cui viene fatto
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Reference](../ide/code-snippets-schema-reference.md#reference)|Specifica i riferimenti ad assembly richiesti dal frammento di codice.|
+|[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Specifica i riferimenti ad assembly richiesti dal frammento di codice.|
 
- È necessario specificare un valore di testo. Tale testo specifica un URL contenente altre informazioni sull'assembly a cui viene fatto riferimento. L'URL viene visualizzato quando il riferimento non può essere aggiunto al progetto.
+È necessario specificare un valore di testo. Tale testo specifica un URL contenente altre informazioni sull'assembly a cui viene fatto riferimento. L'URL viene visualizzato quando il riferimento non può essere aggiunto al progetto.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Frammenti di codice](../ide/code-snippets.md)
-- [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)

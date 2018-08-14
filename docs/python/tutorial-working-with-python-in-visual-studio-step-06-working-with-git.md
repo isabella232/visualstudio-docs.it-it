@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc9128a28ea0fd007a97b20331f15227b86d46f7
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056495"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511327"
 ---
 # <a name="step-6-work-with-git"></a>Passaggio 6: Utilizzo di Git
 
-**Passaggio precedente: [ Installazione dei pacchetti e gestione degli ambienti Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+**Passaggio precedente: [ Installare i pacchetti e gestire l'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
 Visual Studio offre l'integrazione diretta con repository Git locali e repository remoti di servizi come GitHub e Visual Studio Team Services. L'integrazione include la clonazione di un repository, le modifiche di esecuzione del commit e la gestione dei rami.
 
@@ -32,7 +32,7 @@ Questo articolo offre una panoramica di base sulla creazione di un repository Gi
 
     ![Le informazioni aggiuntive vengono visualizzate quando si posiziona un controllo Git nella finestra di Visual Studio](media/working-with-git-01.png)
 
-1. Quando si crea un nuovo repository o si seleziona uno dei controlli Git, Visual Studio apre la finestra **Team Explorer**. È possibile aprire la finestra in qualsiasi momento con il comando di menu **Visualizza > Team Explorer**. La finestra ha tre riquadri principali ed è possibile passare dall'uno all'altro tramite l'elenco a discesa nell'intestazione **Team Explorer**. Quando si seleziona il controllo Push (l'icona con la freccia verso l'alto), viene visualizzato anche il riquadro **Sincronizza**, che rende disponibili le operazioni di pubblicazione:
+1. Quando si crea un nuovo repository o si seleziona uno dei controlli Git, Visual Studio apre la finestra **Team Explorer**. È possibile aprire la finestra in qualsiasi momento con il comando di menu **Visualizza** > **Team Explorer**. La finestra ha tre riquadri principali ed è possibile passare dall'uno all'altro tramite l'elenco a discesa nell'intestazione **Team Explorer**. Quando si seleziona il controllo **Push** (l'icona con la freccia verso l'alto), viene visualizzato anche il riquadro **Sincronizza**, che rende disponibili le operazioni di pubblicazione:
 
     ![Team Explorer in Visual Studio dopo la creazione di un repository locale](media/working-with-git-02.png)
 
@@ -48,15 +48,15 @@ Questo articolo offre una panoramica di base sulla creazione di un repository Gi
 
     ![Team Explorer in Visual Studio per la visualizzazione dei rami](media/working-with-git-04.png)
 
-1. Selezionando il controllo Git con il nome del repository ("CosineWave" nell'immagine precedente), **Team Explorer** visualizza l'interfaccia **Connetti**, con cui è possibile passare rapidamente a un altro repository.
+1. Selezionando il controllo Git con il nome del repository (**CosineWave** nell'immagine precedente), **Team Explorer** visualizza l'interfaccia **Connetti**, con cui è possibile passare rapidamente a un altro repository.
 
-1. Quando si usa un repository locale, le modifiche sottoposte a commit passano direttamente al repository. In caso di connessione a un repository remoto, selezionare l'intestazione a discesa in **Team Explorer**, scegliere **Sincronizza** per passare alla sezione **Sincronizzazione** e utilizzare i comandi pull e fetch presentati in tale sezione.
+1. Quando si usa un repository locale, le modifiche sottoposte a commit passano direttamente al repository. In caso di connessione a un repository remoto, fare clic sull'intestazione dell'elenco a discesa in **Team Explorer**, scegliere **Sincronizza** per passare alla sezione **Sincronizzazione** e usare i comandi **pull** e **fetch** presentati in tale sezione.
 
 ## <a name="go-deeper"></a>Approfondimento
 
-Per una breve panoramica sulla creazione di un progetto da un repository Git remoto, vedere [Guida introduttiva: clonare un repository di codice Python in Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+Per una breve panoramica sulla creazione di un progetto da un repository Git remoto, vedere [Guida introduttiva: Clonare un repository di codice Python in Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Per un'esercitazione molto più completa, comprendente la gestione dei conflitti di unione, la revisione di codice con richieste pull, la riassegnazione e il cherry-pick delle modifiche tra rami, vedere [Getting Started with Git and VSTS](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio) (Introduzione a Git e a VSTS).
+Per un'esercitazione molto più completa, con argomenti quali la gestione dei conflitti di unione, la revisione di codice con richieste pull, la riassegnazione e il cherry-pick delle modifiche tra rami, vedere [Getting Started with Git and VSTS](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio) (Introduzione a Git e a VSTS).
 
 ## <a name="tutorial-review"></a>Revisione dell'esercitazione
 
@@ -64,14 +64,14 @@ Per un'esercitazione molto più completa, comprendente la gestione dei conflitti
 
 - Creare progetti e visualizzare il contenuto di un progetto.
 - Usare l'editor di codice ed eseguire un progetto.
-- Usare la finestra interattiva per sviluppare il nuovo codice e copiare facilmente il codice nell'editor.
+- Usare la finestra **interattiva** per sviluppare il nuovo codice e copiare facilmente il codice nell'editor.
 - Eseguire un programma nel debugger di Visual Studio.
-- Installare pacchetti e gestire gli ambienti Python
-- Usare il codice in un repository Git
+- Installare pacchetti e gestire gli ambienti Python.
+- Usare il codice in un repository Git.
 
-Da qui è possibile esaminare i concetti e le guide sulle procedure, inclusi gli articoli seguenti:
+Da qui è possibile esaminare i concetti e le procedure dettagliate, inclusi gli articoli seguenti:
 
-- [Creazione di un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md)
-- [Pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Creare un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md)
+- [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Profilatura](profiling-python-code-in-visual-studio.md)
 - [Testing unità](unit-testing-python-in-visual-studio.md)

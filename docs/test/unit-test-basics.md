@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: d9c49816fb412a7c52e3d9e63fd0e4ec5675e7c3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978372"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511451"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -24,7 +24,7 @@ Per controllare che il codice funzioni come previsto, creare ed eseguire unit te
 
 Gli unit test offrono i risultati migliori in relazione alla qualità del codice quando sono parte integrante del flusso di lavoro di sviluppo di software. Non appena si scrive una funzione o un altro blocco di codice dell'applicazione, creare unit test per verificare il comportamento del codice in risposta a casi standard, limite e non corretti di dati di input e quindi controllare eventuali presupposti espliciti o impliciti presenti nel codice. Con lo *sviluppo basato su test*, gli unit test vengono creati prima di scrivere il codice e quindi vengono usati sia come documentazione di progettazione sia come specifiche funzionali.
 
-È possibile generare rapidamente progetti di test e metodi di test dal codice oppure creare manualmente i test necessari. Quando si usa IntelliTest per esplorare il codice .NET, è possibile generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Informazioni su come [generare unit test per il codice](http://msdn.microsoft.com/library/dn823749.aspx).
+È possibile generare rapidamente progetti di test e metodi di test dal codice oppure creare manualmente i test necessari. Quando si usa IntelliTest per esplorare il codice .NET, è possibile generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Informazioni su come [generare unit test per il codice](generate-unit-tests-for-your-code-with-intellitest.md).
 
 Esplora test può eseguire anche framework per unit test di terze parti e open source che hanno implementato le interfacce dei componenti aggiuntivi di Esplora test. È possibile aggiungere molti di questi framework tramite Gestione estensioni di Visual Studio e la Visual Studio Gallery. Vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
@@ -40,7 +40,7 @@ Per un'introduzione agli unit test che mostra direttamente la creazione di codic
 
 ## <a name="the-mybank-solution-example"></a>Esempio della soluzione MyBank
 
-In questo argomento si usa lo sviluppo di un'applicazione fittizia denominata `MyBank` come esempio. Per seguire le spiegazioni disponibili in questo argomento non è necessario il codice effettivo. I metodi di test sono scritti in C# e sono presentati tramite il framework per unit test Microsoft per codice gestito. I concetti possono essere tuttavia trasferiti facilmente ad altri linguaggi e altri framework.
+In questo argomento si usa lo sviluppo di un'applicazione fittizia denominata `MyBank` come esempio. Per seguire le spiegazioni disponibili in questo argomento non è necessario il codice effettivo. I metodi di test vengono scritti in C# e vengono presentati tramite il framework di testing unità Microsoft per codice gestito. I concetti sono tuttavia facilmente trasferibili in altri linguaggi e framework.
 
  ![Soluzione MyBank](../test/media/ute_mybanksolution.png)
 
@@ -52,13 +52,13 @@ In questo argomento si usa lo sviluppo di un'applicazione fittizia denominata `M
 
 -   `BankDb`
 
- Il primo tentativo di progettazione del progetto `Accounts` include una classe per le informazioni di base su un conto, un'interfaccia che specifica la funzionalità comune di un tipo di conto, ad esempio il deposito e il prelievo di beni dal conto, e una classe derivata dall'interfaccia che rappresenta un conto corrente. Il progetto Accounts inizia con la creazione dei file di origine seguenti:
+ Il primo tentativo di progettazione del progetto `Accounts` include una classe per le informazioni di base su un account, un'interfaccia che specifica la funzionalità comune di un tipo di conto, ad esempio il deposito e il prelievo di beni dal conto, e una classe derivata dall'interfaccia che rappresenta un conto corrente. Il progetto Accounts inizia con la creazione dei file di origine seguenti:
 
 -   *AccountInfo.cs* definisce le informazioni di base per un conto.
 
 -   *IAccount.cs* definisce un'interfaccia `IAccount` standard per un conto, inclusi metodi per il deposito e il prelievo di beni da un conto e per il recupero del saldo del conto.
 
--   *CheckingAccount.cs* contiene la classe `CheckingAccount` che implementa l'interfaccia `IAccounts` per un conto corrente.
+-   *CheckingAccount.cs* contiene la classe `CheckingAccount` che implementa l'interfaccia `IAccount` per un conto corrente.
 
 L'esperienza mostra che per un prelievo da un conto corrente è necessario essere sicuri che l'importo prelevato sia inferiore al saldo del conto. Viene quindi eseguito l'override del metodo `IAccount.Withdraw` in `CheckingAccount` con un metodo che verifica questa condizione. Il metodo può avere un aspetto analogo al seguente:
 
@@ -311,7 +311,7 @@ Il metodo con attributi viene eseguito una volta per ogni riga della tabella. In
 
  Altre informazioni sul [code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
- **D: Come è possibile testare metodi nel codice con dipendenze esterne?**
+ **D: È possibile testare metodi nel codice con dipendenze esterne?**
 
  **R:** Sì. Se si dispone di Visual Studio Enterprise, è possibile usare Microsoft Fakes con i metodi di test scritti usando framework di unit test per il codice gestito.
 

@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c8541fd3a6f48ca6c2a1276265b7908e3ae50634
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382012"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586477"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing con Visual Studio 2017
 
@@ -102,9 +102,9 @@ Per abilitare Live Unit Testing, selezionare **Test** > **Live Unit Testing** > 
 
 - **Opzioni**, che visualizza la finestra di dialogo **Opzioni** illustrata nella sezione[Configurare Live Unit Testing](#configure-live-unit-testing).
 
-##  <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Accedere alla visualizzazione del code coverage nell'editor durante la digitazione
+## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Accedere alla visualizzazione del code coverage nell'editor durante la digitazione
 
-Dopo l'abilitazione, Live Unit Testing aggiorna le singole righe di codice nell'editor di Visual Studio in modo da indicare se il codice scritto è coperto da unit test e se i test coperti vengono superati.  La figura seguente mostra le righe di codice con test superati e non superati, nonché le righe di codice non coperte dai test. Le righe contraddistinte da un segno di spunta "✓" verde sono coperte solo da test superati, quelle contraddistinte da una "x" rossa sono coperte da uno o più test non superati, mentre quelle contraddistinte da un simbolo "➖" blu non sono coperte da alcun test.
+Dopo l'abilitazione, Live Unit Testing aggiorna le singole righe di codice nell'editor di Visual Studio in modo da indicare se il codice scritto è coperto da unit test e se i test coperti vengono superati.  La figura seguente mostra le righe di codice con test superati e non superati, nonché le righe di codice non coperte dai test. Le righe contraddistinte da un segno di spunta "✓" verde sono coperte solo da test superati, quelle contraddistinte da una "x" rossa sono coperte da uno o più test non superati, mentre quelle contraddistinte da un simbolo "" blu non sono coperte da alcun test.
 
   ![Image](./media/lut-codewindow.png)
 
@@ -124,7 +124,7 @@ Quando si passa il puntatore su un test non superato nella descrizione comando, 
 
   ![Image](./media/lut-failedmsg.png)
 
-Quando si passa al test non riuscito, Live Unit Testing indica anche visivamente nella firma del metodo i test con esito positivo (indicati da un becher mezzo pieno con un simbolo "✓" verde), i test con esito negativo (indicati da un becher mezzo pieno con un simbolo "🞩" rosso) o i test non interessati da Live Unit Testing (indicati da un becher mezzo pieno con un simbolo "➖" blu). I metodi non di test non sono decorati con simboli. La figura seguente illustra tutti e quattro i tipi di metodi.
+Quando si passa al test non riuscito, Live Unit Testing indica anche visivamente nella firma del metodo i test con esito positivo (indicati da un becher mezzo pieno con un simbolo "✓" verde), i test con esito negativo (indicati da un becher mezzo pieno con un simbolo "🞩" rosso) o i test non interessati da Live Unit Testing (indicati da un becher mezzo pieno con un simbolo "" blu). I metodi non di test non sono decorati con simboli. La figura seguente illustra tutti e quattro i tipi di metodi.
 
   ![Image](media/lut-testsource.png)
 
@@ -186,8 +186,8 @@ Puoi anche usare gli attributi seguenti per escludere singoli metodi da Live Uni
 
 ## <a name="see-also"></a>Vedere anche
 
-[Strumenti di test del codice](https://visualstudio.microsoft.com/vs/testing-tools/)
-[Blog di Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
-[Domande frequenti su Live Unit Testing](live-unit-testing-faq.md)
-[Video di Channel 9: Live Unit Testing in Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Strumenti di test del codice](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [Blog di Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Domande frequenti su Live Unit Testing](live-unit-testing-faq.md)
+- [Channel 9 video: Live Unit Testing in Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105) (Video di Channel 9: Live Unit Testing in Visual Studio 2017)
 

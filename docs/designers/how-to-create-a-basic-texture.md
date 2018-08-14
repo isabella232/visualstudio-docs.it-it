@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924460"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512629"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
 Questo documento illustra come usare l'editor di immagini per creare una trama di base.
@@ -54,7 +54,7 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 5.  Nella barra degli strumenti dell'editor di immagini scegliere lo strumento **Riempimento** e, tenendo premuto **MAIUSC**, scegliere un punto qualsiasi nell'immagine. L'utilizzo di **MAIUSC** fa sì che il valore alfa del colore di riempimento sostituisca il colore dell'immagine; in caso contrario, il valore alfa consente di sfumare il colore di riempimento con il colore dell'immagine.
 
     > [!IMPORTANT]
-    >  Questo passaggio, insieme alla selezione del colore nel passaggio precedente, assicura che l'immagine di base sia preparata per la trama di destinazione "bullseye" che si intende disegnare. Poiché l'immagine viene riempita con un nero trasparente e il bordo della destinazione è nero, non saranno presenti artefatti di aliasing intorno alla destinazione.
+    > Questo passaggio, insieme alla selezione del colore nel passaggio precedente, assicura che l'immagine di base sia preparata per la trama di destinazione "bullseye" che si intende disegnare. Poiché l'immagine viene riempita con un nero trasparente e il bordo della destinazione è nero, non saranno presenti artefatti di aliasing intorno alla destinazione.
 
 6.  Nella barra degli strumenti scegliere lo strumento **Ellissi**.
 
@@ -69,13 +69,13 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per disegnare più facilmente il cerchio, tenere premuto **MAIUSC** mentre si disegna.
 
     > [!NOTE]
-    >  Le coordinate in pixel della posizione corrente del puntatore sono visualizzate sulla barra di stato di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    > Le coordinate in pixel della posizione corrente del puntatore sono visualizzate sulla barra di stato di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 12. Modificare il colore di sfondo. Impostare **R** su `44`, **G** su `165`, **B** su `211` e **A** su `255`.
 
 13. Disegnare un altro cerchio dalla coordinata in pixel `(64, 64)` alla coordinata in pixel `(448, 448)`.
 
-14. Modificare il colore di sfondo su un bianco completamente opaco. Impostare **R**, **G**, **B** e **A** su `255`.
+14. Impostare di nuovo il colore di sfondo su un bianco completamente opaco. Impostare **R**, **G**, **B** e **A** su `255`.
 
 15. Disegnare un altro cerchio dalla coordinata in pixel `(128, 128)` alla coordinata in pixel `(384, 384)`.
 

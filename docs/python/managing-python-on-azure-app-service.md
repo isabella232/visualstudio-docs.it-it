@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 406a35ff484b5a6759831b76c2417bf5fcb2d12c
-ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
+ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39310072"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468715"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Come configurare un ambiente Python in Servizio app di Azure
 
@@ -31,7 +31,7 @@ Il supporto di Python personalizzabile per il servizio app di Azure viene offert
 > [!Tip]
 > Anche se il servizio app per impostazione predefinita include Python 2.7 e Python 3.4 installati nelle cartelle radice nel server, non è possibile personalizzare o installare i pacchetti in questi ambienti, né dipendere dalla loro presenza. È invece necessario affidarsi a un'estensione del sito sotto il proprio controllo, come descritto in questo articolo.
 
-## <a name="choosing-a-python-version-through-the-azure-portal"></a>Scelta di una versione di Python tramite il portale di Azure
+## <a name="choose-a-python-version-through-the-azure-portal"></a>Scegliere una versione di Python tramite il portale di Azure
 
 1. Creare un servizio app per l'app Web nel portale di Azure.
 1. Nella pagina del servizio app scorrere fino alla sezione **Strumenti di sviluppo**, selezionare **Estensioni** e quindi selezionare **Aggiungi**.
@@ -45,7 +45,7 @@ Il supporto di Python personalizzabile per il servizio app di Azure viene offert
 1. Selezionare l'estensione, accettare le condizioni legali e quindi selezionare **OK**.
 1. Nel portale viene visualizzata una notifica al termine dell'installazione.
 
-## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Scelta di una versione di Python tramite Azure Resource Manager
+## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Scegliere una versione di Python tramite Azure Resource Manager
 
 Se si distribuisce un servizio app con un modello di Azure Resource Manager, aggiungere l'estensione del sito come risorsa. In particolare, l'estensione viene visualizzata come risorsa annidata (oggetto `resources` in `resources`) con il tipo `siteextensions` e il nome da [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
@@ -75,15 +75,15 @@ Ad esempio, dopo l'aggiunta di un riferimento a `python361x64` (Python 3.6.1 x64
   }
 ```
 
-## <a name="setting-webconfig-to-point-to-the-python-interpreter"></a>Impostazione di web.config per fare riferimento all'interprete di Python
+## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Configurare web.config per fare riferimento all'interprete di Python
 
-Dopo aver installato l'estensione del sito (tramite il portale o un modello di Azure Resource Manager), è necessario configurare il file `web.config` dell'app in modo che faccia riferimento all'interprete di Python. Il file `web.config` indica al server Web IIS (7+) in esecuzione nel servizio app come gestire le richieste di Python tramite FastCGI o HttpPlatform.
+Dopo aver installato l'estensione del sito, tramite il portale o un modello di Azure Resource Manager, è necessario configurare il file *web.config* dell'app in modo che faccia riferimento all'interprete di Python. Il file *web.config* indica al server Web IIS (7+) in esecuzione nel servizio app come gestire le richieste di Python tramite FastCGI o HttpPlatform.
 
-Per iniziare, trovare il percorso completo del file `python.exe` dell'estensione del sito, quindi creare e modificare il file `web.config` appropriato.
+Per iniziare, trovare il percorso completo del file *python.exe* dell'estensione del sito, quindi creare e modificare il file *web.config* appropriato.
 
-### <a name="finding-the-path-to-pythonexe"></a>Ricerca del percorso di python.exe
+### <a name="find-the-path-to-pythonexe"></a>Trovare il percorso di python.exe
 
-Un'estensione del sito di Python viene installata nel server in `d:\home` in una cartella appropriata per la versione e l'architettura di Python, tranne che in alcune versioni precedenti. Ad esempio, Python 3.6.1 x64 viene installato in `d:\home\python361x64`. Il percorso completo dell'interprete Python è quindi `d:\home\python361x64\python.exe`.
+Un'estensione del sito di Python viene installata nel server in *d:\home* in una cartella appropriata per la versione e l'architettura di Python, tranne che in alcune versioni precedenti. Ad esempio, Python 3.6.1 x64 viene installato in *d:\home\python361x64*. Il percorso completo dell'interprete Python è quindi *d:\home\python361x64\python.exe*.
 
 Per visualizzare il percorso specifico nel servizio app, selezionare **Estensioni** nella pagina del servizio app e quindi selezionare l'estensione nell'elenco.
 
@@ -95,13 +95,13 @@ Questa azione apre la pagina di descrizione dell'estensione contenente il percor
 
 In caso di difficoltà a visualizzare il percorso per l'estensione, è possibile trovarlo manualmente tramite la console:
 
-1. Nella pagina del servizio App selezionare **Strumenti di sviluppo > Console**.
-1. Immettere il comando `ls ../home` o `dir ..\home` per visualizzare le cartelle delle estensioni di primo livello, ad esempio `Python361x64`.
-1. Immettere un comando come `ls ../home/python361x64` o `dir ..\home\python361x64` per verificare che contenga `python.exe` e altri file di interprete.
+1. Nella pagina del Servizio app selezionare **Strumenti di sviluppo** > **Console**.
+1. Immettere il comando `ls ../home` o `dir ..\home` per visualizzare le cartelle delle estensioni di primo livello, ad esempio *Python361x64*.
+1. Immettere un comando come `ls ../home/python361x64` o `dir ..\home\python361x64` per verificare che contenga *python.exe* e altri file di interprete.
 
-### <a name="configuring-the-fastcgi-handler"></a>Configurazione del gestore FastCGI
+### <a name="configure-the-fastcgi-handler"></a>Configurare il gestore FastCGI
 
-FastCGI è un'interfaccia che funziona a livello di richiesta. IIS riceve le connessioni in ingresso e inoltra ogni richiesta a un'app WSGI in esecuzione in uno o più processi Python persistenti. Il [pacchetto wfastcgi](https://pypi.io/project/wfastcgi) viene pre-installato e configurato con ogni estensione del sito Python, pertanto è possibile abilitarlo facilmente includendo il codice seguente in `web.config`, come illustrato di seguito per un'app Web basata sul framework Bottle. Si noti che i percorsi completi di `python.exe` e `wfastcgi.py` vengono inseriti nella chiave `PythonHandler`:
+FastCGI è un'interfaccia che funziona a livello di richiesta. IIS riceve le connessioni in ingresso e inoltra ogni richiesta a un'app WSGI in esecuzione in uno o più processi Python persistenti. Il [pacchetto wfastcgi](https://pypi.io/project/wfastcgi) viene pre-installato e configurato con ogni estensione del sito Python, pertanto è possibile abilitarlo facilmente includendo il codice seguente in *web.config*, come illustrato di seguito per un'app Web basata sul framework Bottle. Si noti che i percorsi completi per *python.exe* e *wfastcgi.py* vengono inseriti nella chiave `PythonHandler`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -128,11 +128,11 @@ Le `<appSettings>` definite di seguito sono disponibili come variabili di ambien
 - `WSGI_HANDLER` deve puntare a un'app WSGI importabile dall'app.
 - `WSGI_LOG` è facoltativo ma consigliato per il debug dell'app. 
 
-Vedere [Pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) per altri dettagli sul contenuto di `web.config` per app Web Bottle, Flask e Django.
+Vedere [Pubblicare in Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) per dettagli aggiuntivi sui contenuti di *web.config* per app Web Bottle, Flask e Django.
 
-### <a name="configuring-the-httpplatform-handler"></a>Configurazione del gestore HttpPlatform
+### <a name="configure-the-httpplatform-handler"></a>Configurare il gestore HttpPlatform
 
-Il modulo HttpPlatform passa le connessioni socket direttamente a un processo di Python autonomo. Questo pass-through consente di eseguire qualsiasi server Web, ma richiede uno script di avvio che esegue un server Web locale. Specificare lo script nell'elemento `<httpPlatform>` di `web.config`, dove l'attributo `processPath` punta all'interprete Python dell'estensione del sito e l'attributo `arguments` punta allo script e a eventuali argomenti che si vogliono specificare:
+Il modulo HttpPlatform passa le connessioni socket direttamente a un processo di Python autonomo. Questo pass-through consente di eseguire qualsiasi server Web, ma richiede uno script di avvio che esegue un server Web locale. Specificare lo script nell'elemento `<httpPlatform>` di *web.config*, dove l'attributo `processPath` punta all'interprete Python dell'estensione del sito e l'attributo `arguments` punta allo script e a eventuali argomenti che si vogliono specificare:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -157,7 +157,7 @@ Il modulo HttpPlatform passa le connessioni socket direttamente a un processo di
 
 La variabile di ambiente `HTTP_PLATFORM_PORT` qui illustrata contiene la porta sulla quale il server locale deve essere in ascolto per le connessioni da localhost. In questo esempio viene anche illustrato come creare un'altra eventuale variabile di ambiente, in questo caso `SERVER_PORT`.
 
-## <a name="installing-packages"></a>Installazione di pacchetti
+## <a name="install-packages"></a>Installazione di pacchetti
 
 L'interprete Python installato tramite un'estensione del sito è solo una parte dell'ambiente Python. È probabilmente necessario installare anche pacchetti diversi in tale ambiente.
 
@@ -174,30 +174,30 @@ Per installare i pacchetti direttamente nell'ambiente server, usare uno dei meto
 
 La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) offre l'accesso diretto da riga di comando con privilegi elevati al server del servizio app e al relativo file system. Oltre a essere un utile strumento di debug, supporta operazioni CLI, come l'installazione dei pacchetti.
 
-1. Aprire Kudu dalla pagina del servizio app nel portale di Azure: selezionare **Strumenti di sviluppo > Strumenti avanzati** e quindi selezionare **Vai**. Questa azione consente di passare a un URL uguale all'URL del servizio app di base, con l'aggiunta di `.scm`. Ad esempio, se l'URL di base è `https://vspython-test.azurewebsites.net/` Kudu è su `https://vspython-test.scm.azurewebsites.net/` ed è possibile aggiungere un segnalibro:
+1. Aprire Kudu dalla pagina del servizio app nel portale di Azure selezionando **Strumenti di sviluppo** > **Strumenti avanzati** e quindi selezionando **Vai**. Questa azione consente di passare a un URL uguale all'URL del servizio app di base, con l'aggiunta di `.scm`. Ad esempio, se l'URL di base è `https://vspython-test.azurewebsites.net/` Kudu è su `https://vspython-test.scm.azurewebsites.net/` ed è possibile aggiungere un segnalibro:
 
     ![Console Kudu per il servizio app di Azure](media/python-on-azure-console01.png)
 
-1. Selezionare **Console di debug > CMD** per aprire la console, in cui è possibile esplorare l'installazione di Python e vedere quali librerie sono già presenti.
+1. Selezionare **Console di debug** > **CMD** per aprire la console, in cui è possibile esplorare l'installazione di Python e vedere quali librerie sono già presenti.
 
 1. Per installare un singolo pacchetto:
 
-    a. Passare alla cartella di installazione di Python in cui si vuole installare il pacchetto, ad esempio `d:\home\python361x64`.
+    a. Passare alla cartella di installazione di Python in cui si vuole installare il pacchetto, ad esempio *d:\home\python361x64*.
 
     b. Usare `python.exe -m pip install <package_name>` per installare un pacchetto.
 
     ![Esempio di installazione di Bottle tramite la console Kudu per il Servizio app di Azure](media/python-on-azure-console02.png)
 
-1. Se è già stato distribuito un file `requirements.txt` per l'app nel server, installare tutti questi requisiti come indicato di seguito:
+1. Se è già stato distribuito un file *requirements.txt* per l'app nel server, installare tutti questi requisiti come indicato di seguito:
 
-    a. Passare alla cartella di installazione di Python in cui si vuole installare il pacchetto, ad esempio `d:\home\python361x64`.
+    a. Passare alla cartella di installazione di Python in cui si vuole installare il pacchetto, ad esempio *d:\home\python361x64*.
 
     b. Eseguire il comando `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
 
-    È consigliabile usare `requirements.txt` perché è facile riprodurre l'esatto set di pacchetti sia in locale che nel server. Ricordarsi di visitare la console dopo la distribuzione di qualsiasi modifica apportata a `requirements.txt` e di eseguire nuovamente il comando.
+    È consigliabile usare *requirements.txt* perché è facile riprodurre l'esatto set di pacchetti sia in locale che nel server. Ricordarsi di visitare la console dopo la distribuzione di qualsiasi modifica apportata a *requirements.txt* e di eseguire nuovamente il comando.
 
 > [!Note]
-> Non è presente alcun compilatore C nel servizio app, pertanto è necessario installare il file wheel per tutti i pacchetti con moduli di estensione nativa. Molti pacchetti diffusi offrono i propri file wheel. Per i pacchetti che non li offrono, usare `pip wheel <package_name>` nel computer di sviluppo locale e quindi caricare il file wheel nel proprio sito. Per un esempio, vedere [Gestione dei pacchetti necessari con requirements.txt](managing-required-packages-with-requirements-txt.md).
+> Non è presente alcun compilatore C nel servizio app, pertanto è necessario installare il file wheel per tutti i pacchetti con moduli di estensione nativa. Molti pacchetti diffusi offrono i propri file wheel. Per i pacchetti che non li offrono, usare `pip wheel <package_name>` nel computer di sviluppo locale e quindi caricare il file wheel nel proprio sito. Per un esempio, vedere [Gestire i pacchetti necessari con requirements.txt](managing-required-packages-with-requirements-txt.md).
 
 ### <a name="kudu-rest-api"></a>API REST Kudu
 

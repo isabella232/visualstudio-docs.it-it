@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e20090eec7891de4c199f1f92ec0d0668e0f86e6
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251140"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499543"
 ---
 # <a name="django-web-project-template"></a>Modello di progetto Web Django
 
@@ -52,7 +52,7 @@ Visual Studio offre anche [supporto completo per il debug](debugging-python-in-v
 
     ![Console](media/template-django-console-shell.png)
 
-- **DB sincronizzazione Django**: esegue `manage.py syncdb` in una finestra interattiva.
+- **DB sincronizzazione Django**: esegue `manage.py syncdb` in una finestra **Interattiva**:
 
     ![Console](media/template-django-console-sync-db.png)
 

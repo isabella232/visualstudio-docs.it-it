@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251933"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498967"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -155,9 +155,7 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 | **Percorso dell'interprete** | Esegue l'override del percorso associato all'ambiente corrente. Il valore può essere utile per avviare lo script con un interprete non standard. |
 | **Variabili di ambiente** | In questa casella di testo su più righe è possibile aggiungere voci in formato \<NAME>=\<VALUE>. Poiché questa impostazione viene applicata per ultima, dopo tutte le variabili di ambiente globali esistenti e dopo aver impostato `PYTHONPATH` in base all'impostazione Percorsi di ricerca, può essere usata per eseguire l'override manuale di una di queste altre variabili. |
 
-<a name="the-debug-interactive-window"></a>
-
-## <a name="immediate-and-interactive-windows"></a>Finestra Interattiva e finestra Controllo immediato
+## <a name="immediate-and-interactive-windows"></a>Finestra interattiva e finestra di controllo immediato
 
 Durante una sessione di debug è possibile usare due finestre interattive: la finestra **Controllo immediato** standard di Visual Studio e la finestra **Debug interattivo Python**.
 

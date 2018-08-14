@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce7a388a9cc26ba84796710ff6f94395890a3df
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: c0b28ab5310f1be97ecf7b7acbcaa3360b29c480
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057648"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513520"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installare il supporto Python in Visual Studio
 
@@ -26,16 +26,16 @@ ms.locfileid: "37057648"
 1. Scaricare ed eseguire la versione più recente del programma di installazione di Visual Studio 2017 per Windows (il supporto Python è presente a partire dalla versione 15.2). Se Visual Studio è già installato, eseguire il programma di installazione di Visual Studio e andare al passaggio 2.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Installare Visual Studio 2017 Community</a>
+    > [Installare Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > L'edizione Community è per singoli sviluppatori, per la formazione in classe, la ricerca accademica e per lo sviluppo open source. Per altri usi, installare <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Professional</a> oppure <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Enterprise</a>.
+    > L'edizione Community è per singoli sviluppatori, per la formazione in classe, la ricerca accademica e per lo sviluppo open source. Per altri usi, installare [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) oppure [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
 1. Il programma di installazione offre un elenco di carichi di lavoro, che sono gruppi di opzioni correlate per aree di sviluppo specifico. Per Python, selezionare il carico di lavoro **Sviluppo Python** e selezionare **Installa**:
 
     ![Carico di lavoro Sviluppo Python nel programma di installazione di Visual Studio](media/installation-python-workload.png)
 
-1. Per verificare rapidamente il supporto Python, avviare Visual Studio, premere Alt+I per aprire la finestra interattiva di Python e immettere `2+2`. Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
+1. Per verificare rapidamente il supporto Python, avviare Visual Studio, premere **ALT**+**I** per aprire la **finestra interattiva di Python** e immettere `2+2`. Se non viene visualizzato l'output **4**, eseguire nuovamente la procedura.
 
     ![Testare Python nella finestra interattiva](media/installation-interactive-test.png)
 
@@ -46,8 +46,6 @@ ms.locfileid: "37057648"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Identificazione manuale di un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Installazione del supporto di Python in Visual Studio 2015 e precedenti](installing-python-support-in-visual-studio.md).
-- [Percorsi di installazione](installing-python-support-in-visual-studio.md#install-locations).
-
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />
+- [Identificare manualmente un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Installare il supporto di Python in Visual Studio 2015 e versioni precedenti](installing-python-support-in-visual-studio.md)
+- [Percorsi di installazione](installing-python-support-in-visual-studio.md#install-locations)

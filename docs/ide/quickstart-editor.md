@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079148"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511235"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Guida introduttiva: Usare l'editor del codice
 
@@ -157,14 +157,21 @@ Quando si inizia a creare codice è facile commettere errori e quindi dover modi
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Questa guida introduttiva per l'editor di Visual Studio è stata completata. Ora è possibile vedere altre guide introduttive per l'ambiente di sviluppo di Visual Studio, quali [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md) o [Guida introduttiva: Personalizzare Visual Studio](../ide/quickstart-personalize-the-ide.md), esaminare altri metodi per [Navigare nel codice](../ide/navigating-code.md) o vedere i collegamenti ad altre informazioni sulle funzionalità appena esaminate. Buon lavoro.
+Questa guida introduttiva per l'editor di Visual Studio è stata completata. È successivamente possibile provare altre guide introduttive per l'ambiente di sviluppo di Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Guida introduttiva: Personalizzare Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Guida introduttiva: Personalizzare Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
 - [Frammenti di codice](../ide/code-snippets.md)
+- [Spostarsi all'interno del codice](../ide/navigating-code.md)
 - [Struttura](../ide/outlining.md)
 - [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)
 - [Refactoring](../ide/refactoring-in-visual-studio.md)

@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380863"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469113"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -210,7 +210,7 @@ Un metodo di test deve soddisfare i seguenti requisiti:
 
 ### <a name="analyze-the-test-results"></a>Analizzare i risultati dei test
 
-Il risultato del test contiene un messaggio che descrive l'errore. Per il metodo `AreEquals` il messaggio visualizza il contenuto previsto (parametro **Previsto\<*valore*>**) e il contenuto ricevuto (parametro **Effettivo\<*valore*>**). Si prevedeva una diminuzione del saldo, ma questo di fatto è aumentato di un valore pari alla somma prelevata.
+Il risultato del test contiene un messaggio che descrive l'errore. Per il metodo `AreEqual` il messaggio visualizza il contenuto previsto (parametro **Previsto\<*valore*>**) e il contenuto ricevuto (parametro **Effettivo\<*valore*>**). Si prevedeva una diminuzione del saldo, ma questo è aumentato di un valore pari alla somma prelevata.
 
 Lo unit test ha rivelato un bug: la quantità da ritirare viene *aggiunta* al saldo del conto anziché essere *sottratta*.
 

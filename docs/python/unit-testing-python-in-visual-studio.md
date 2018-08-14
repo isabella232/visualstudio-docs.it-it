@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 37d545adf33a6350f3d2484e4f820ebca8f7353d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ef5a936de8013f2ea0426d95def96a0871839e6a
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056423"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586430"
 ---
-# <a name="setting-up-unit-testing-for-python-code"></a>Configurazione degli unit test per il codice Python
+# <a name="set-up-unit-testing-for-python-code"></a>Configurare gli unit test per il codice Python
 
 Gli unit test sono parti di codice che testano altre unità di codice in un'applicazione, in genere funzioni isolate, classi e così via. Se un'applicazione supera tutti gli unit test, si può ritenere con una certa fiducia che almeno la funzionalità di basso livello sia corretta.
 
@@ -30,13 +30,13 @@ Questo articolo illustra brevemente le funzionalità di testing unità in Visual
 |---|---|
 | ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) sul testing unità in Python (2m 31s). |
 
-## <a name="discovering-and-viewing-tests"></a>Individuazione e visualizzazione di test
+## <a name="discover-and-view-tests"></a>Individuare e visualizzare i test
 
 Per convenzione, Visual Studio identifica i test come metodi il cui nome inizia con `test`. Per vedere questo comportamento, attenersi alla procedura seguente:
 
-1. Aprire un [progetto Python](managing-python-projects-in-visual-studio.md) caricato in Visual Studio, fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi > Nuovo elemento** e quindi selezionare **Unit test Python** seguito da **Aggiungi**.
+1. Aprire un [progetto Python](managing-python-projects-in-visual-studio.md) caricato in Visual Studio, fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** > **Nuovo elemento**, quindi selezionare **Unit test Python** seguito da **Aggiungi**.
 
-1. Verrà creato un file `test1.py` contenente il codice che importa il modulo standard `unittest`, deriva una classe di test da `unittest.TestCase` e richiama `unittest.main()` se si esegue lo script direttamente:
+1. Verrà creato un file *test1.py* contenente il codice che importa il modulo standard `unittest`, deriva una classe di test da `unittest.TestCase` e richiama `unittest.main()` se si esegue lo script direttamente:
 
     ```python
     import unittest
@@ -49,29 +49,29 @@ Per convenzione, Visual Studio identifica i test come metodi il cui nome inizia 
         unittest.main()
     ```
 
-1. Se necessario, salvare il file e aprire Esplora test con il comando di menu **Test > Windows > Esplora test**.
+1. Se necessario, salvare il file e aprire **Esplora test** con il comando di menu **Test** > **Windows** > **Esplora test**.
 
-1. Esplora test cerca i test nel progetto e li visualizza come illustrato di seguito. Fare doppio clic su un test per aprirne il file di origine.
+1. **Esplora test** cerca i test nel progetto e li visualizza come illustrato di seguito. Fare doppio clic su un test per aprirne il file di origine.
 
     ![Esplora test con test_A predefinito](media/unit-test-A.png)
 
-1. Via via che si aggiungono altri test al progetto, è possibile organizzare la visualizzazione in Esplora test tramite il menu Raggruppa per della barra degli strumenti:
+1. Via via che si aggiungono altri test al progetto, è possibile organizzare la visualizzazione in **Esplora test** tramite il menu **Raggruppa per** della barra degli strumenti:
 
     ![Menu Raggruppa per della barra degli strumenti in Esplora test](media/unit-test-group-menu.png)
 
-1. È anche possibile immettere testo nel campo di ricerca per filtrare i test in base al nome.
+1. È anche possibile immettere testo nel campo di **Cerca** per filtrare i test in base al nome.
 
 Per altre informazioni sul modulo `unittest` e sulla scrittura dei test, vedere la [documentazione di Python 2.7](https://docs.python.org/2/library/unittest.html) oppure la [documentazione di Python 3.4](https://docs.python.org/3/library/unittest.html) (python.org).
 
-## <a name="running-tests"></a>Esecuzione di test
+## <a name="run-tests"></a>Esegui test
 
-In Esplora test è possibile eseguire test in diversi modi:
+In **Esplora test** è possibile eseguire test in diversi modi:
 
 - L'opzione **Esegui tutto** esegue chiaramente tutti i test visualizzati, tenendo conto degli eventuali filtri applicati.
 - Il menu **Esegui** include i comandi per eseguire in gruppo test non superati, superati o non eseguiti.
 - È possibile selezionare uno o più test, fare clic con il pulsante destro del mouse e scegliere **Esegui test selezionati**.
 
-I test vengono eseguiti in background ed Esplora test aggiorna lo stato di ogni test non appena viene completato:
+I test vengono eseguiti in background ed **Esplora test** aggiorna lo stato di ogni test non appena viene completato:
 
 - I test superati sono contraddistinti da un segno di spunta verde, nonché dall'indicazione del tempo necessario per eseguirli:
 
@@ -83,11 +83,11 @@ I test vengono eseguiti in background ed Esplora test aggiorna lo stato di ogni 
 
     ![test_A non superato con motivo](media/unit-test-A-fail-reason.png)
 
-## <a name="debugging-tests"></a>Debug di test
+## <a name="debug-tests"></a>Eseguire il debug dei test
 
 Dal momento che gli unit test sono parti di codice, sono soggetti a bug esattamente come qualsiasi altro tipo di codice e a volte può essere necessario eseguirli in un debugger, in cui è possibile impostare punti di interruzione, esaminare le variabili ed eseguire il codice istruzione per istruzione. Visual Studio include anche strumenti di diagnostica per gli unit test.
 
-Per avviare il debug, impostare un punto di interruzione iniziale nel codice, fare clic con il pulsante destro del mouse sul test (o su una selezione) in Esplora test e quindi scegliere **Esegui debug test selezionati**. Visual Studio avvia il debugger di Python come farebbe per il codice dell'applicazione.
+Per avviare il debug, impostare un punto di interruzione iniziale nel codice, fare clic con il pulsante destro del mouse sul test (o su una selezione) in **Esplora test** e quindi scegliere **Esegui debug test selezionati**. Visual Studio avvia il debugger di Python come farebbe per il codice dell'applicazione.
 
 ![Debug di un test](media/unit-test-debugging.png)
 

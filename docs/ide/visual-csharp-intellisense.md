@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748231"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513400"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
@@ -37,26 +37,26 @@ Gli elenchi di completamento di IntelliSense in C# contengono token di Elenca me
 
 - Metodi di estensione
 
-L’Elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati](#filtered-completion-lists).
+L'elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati](#filtered-completion-lists).
 
-## <a name="code-snippets-in-completion-lists"></a>Frammenti di codice negli elenchi di completamento
+### <a name="code-snippets-in-completion-lists"></a>Frammenti di codice negli elenchi di completamento
 
-In C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [testo del collegamento](../ide/code-snippets-schema-reference.md#shortcut) del frammento di codice. Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in C#, vedere [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md).
+In C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [testo del collegamento](../ide/code-snippets-schema-reference.md#shortcut-element) del frammento di codice. Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in C#, vedere [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md).
 
-## <a name="language-keywords-in-completion-lists"></a>Parole chiave del linguaggio negli elenchi di completamento
+### <a name="language-keywords-in-completion-lists"></a>Parole chiave del linguaggio negli elenchi di completamento
 
 In C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#](/dotnet/csharp/language-reference/keywords/index).
 
-## <a name="extension-methods-in-completion-lists"></a>Metodi di estensione negli elenchi di completamento
+### <a name="extension-methods-in-completion-lists"></a>Metodi di estensione negli elenchi di completamento
 
 In C# l'elenco di completamento include i metodi estensione che rientrano nell'ambito.
 
 > [!NOTE]
 > Nell'elenco di completamento non vengono visualizzati tutti i metodi di estensione degli oggetti <xref:System.String>.
 
-I metodi di estensione usano un'icona diversa rispetto ai metodi di istanza. Per un elenco di icone dell’elenco, vedere [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md). Se un metodo di istanza e un metodo di estensione con lo stesso nome sono entrambi inclusi in un ambito, nell'elenco di completamento viene visualizzata l'icona del metodo di estensione.
+I metodi di estensione usano un'icona diversa rispetto ai metodi di istanza. Per una guida di riferimento all'elenco di icone, vedere [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md). Se un metodo di istanza e un metodo di estensione con lo stesso nome sono entrambi inclusi in un ambito, nell'elenco di completamento viene visualizzata l'icona del metodo di estensione.
 
-## <a name="filtered-completion-lists"></a>Elenchi di completamento filtrati
+### <a name="filtered-completion-lists"></a>Elenchi di completamento filtrati
 
 I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense usando dei filtri. In C# vengono filtrati gli elenchi di completamento disponibili per le voci riportate di seguito:
 
@@ -78,13 +78,17 @@ I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense
 
 - Il **parametro help** consente di ordinare automaticamente il primo overload di metodo corrispondente ai parametri immessi. Se sono disponibili più overload di metodi, è possibile usare le frecce verso l'alto e verso il basso per selezionare il successivo overload possibile in elenco.
 
-## <a name="most-recently-used-members"></a>Membri utilizzati più di recente
+### <a name="most-recently-used-members"></a>Membri utilizzati più di recente
 
-IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. La volta successiva che si utilizza l'elenco dei membri, i membri utilizzati di recente vengono visualizzati nella parte superiore. La cronologia dei membri utilizzati più di recente viene cancellata tra ogni sessione nell'ambiente di sviluppo integrato.
+IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. Al successivo utilizzo di **Elenco membri**, i membri usati di recente vengono visualizzati nella parte superiore. La cronologia dei membri usati più di recente viene cancellata tra ogni sessione di Visual Studio.
 
-## <a name="override"></a>override
+### <a name="override"></a>override
 
-Quando si digita [override](/dotnet/csharp/language-reference/keywords/override) e si preme la **BARRA SPAZIATRICE**, IntelliSense visualizza in una casella dell'elenco popup tutti i membri validi della classe di base di cui è possibile eseguire l'override. Digitando il tipo restituito del metodo dopo `override`, IntelliSense visualizzerà soltanto i metodi che restituiscono lo stesso tipo. Se non vengono trovate corrispondenze, IntelliSense visualizzerà tutti i membri della classe base.
+Quando si digita [override](/dotnet/csharp/language-reference/keywords/override) e si preme la **BARRA SPAZIATRICE**, IntelliSense visualizza in una casella dell'elenco popup tutti i membri validi della classe di base di cui è possibile eseguire l'override. Se si digita il tipo restituito del metodo dopo `override`, IntelliSense mostra solo i metodi che restituiscono lo stesso tipo. Se non vengono trovate corrispondenze, IntelliSense visualizza tutti i membri della classe di base.
+
+### <a name="ai-enhanced-intellisense"></a>IntelliSense migliorato per intelligenza artificiale
+
+È possibile installare un'[estensione IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) sperimentale per Visual Studio che fornisce elenchi di completamento di IntelliSense migliorati per intelligenza artificiale. Questa estensione prevede l'API più idonea da usare, invece di presentare semplicemente un elenco alfabetico di membri. Usa il contesto e i criteri del codice correnti per fornire l'elenco dinamico.
 
 ## <a name="automatic-code-generation"></a>Generazione automatica di codice
 
@@ -104,9 +108,9 @@ L'opzione **Rimuovi e ordina using** consente di ordinare e rimuovere le dichiar
 
 ### <a name="implement-interface"></a>Implementare l'interfaccia
 
-IntelliSense offre un'opzione che consente di implementare un'[interfaccia](/dotnet/csharp/language-reference/keywords/interface) mentre si usa l'editor del codice. Per implementare correttamente un'interfaccia è in genere necessario creare una dichiarazione di metodo per ogni membro dell'interfaccia della classe. Usando IntelliSense, dopo aver digitato il nome di un'interfaccia in una dichiarazione di classe, viene visualizzata la lampadina delle **Azioni rapide**. La lampadina offre la possibilità di implementare automaticamente l'interfaccia, usando la denominazione esplicita o implicita. Con la denominazione esplicita, le dichiarazioni di metodo contengono il nome dell'interfaccia. Con la denominazione implicita, le dichiarazioni di metodo non indicano l'interfaccia a cui appartengono. Un metodo di interfaccia con denominazione esplicita è accessibile solo tramite un'istanza di interfaccia e non tramite un'istanza di classe. Per altre informazioni, vedere [Implementazione esplicita dell'interfaccia](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+IntelliSense offre un'opzione che consente di implementare un'[interfaccia](/dotnet/csharp/language-reference/keywords/interface) mentre si usa l'editor del codice. Per implementare correttamente un'interfaccia è in genere necessario creare una dichiarazione di metodo per ogni membro dell'interfaccia della classe. Usando IntelliSense, dopo aver digitato il nome di un'interfaccia in una dichiarazione di classe, viene visualizzata la lampadina delle **Azioni rapide**. La lampadina offre la possibilità di implementare automaticamente l'interfaccia, usando la denominazione esplicita o implicita. Se si usa la denominazione esplicita, le dichiarazioni dei metodi includono il nome dell'interfaccia. Se si usa la denominazione implicita, le dichiarazioni dei metodi non indicano l'interfaccia a cui appartengono. Un metodo di interfaccia con denominazione esplicita è accessibile solo tramite un'istanza di interfaccia e non tramite un'istanza di classe. Per altre informazioni, vedere [Implementazione esplicita dell'interfaccia](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
-Con Implementa interfaccia verrà generato il numero minimo di stub di metodo necessario per soddisfare l'interfaccia. Se una classe base implementa parti dell'interfaccia, tali stub non verranno rigenerati.
+Il comando Implementa interfaccia genera il numero minimo di stub di metodo necessario per soddisfare l'interfaccia. Se una classe di base implementa parti dell'interfaccia, tali stub non verranno rigenerati.
 
 ### <a name="implement-abstract-base-class"></a>Implementare una classe di base astratta
 

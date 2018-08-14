@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177867"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469067"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -109,7 +109,7 @@ Per determinare quale percentuale del codice del progetto viene effettivamente t
 
 ## <a name="use-a-different-unit-test-framework"></a>Usare un framework di unit test diverso
 
-È possibile eseguire unit test in Visual Studio usando framework di test di terze parti come Boost, nUnit e Google. Usare il plug-in relativo al framework in modo che Visual Studio Test Runner possa usare il framework in questione.
+È possibile eseguire unit test in Visual Studio usando framework di test di terze parti come Boost, NUnit e Google. Usare il plug-in relativo al framework in modo che Visual Studio Test Runner possa usare il framework in questione.
 
 Di seguito sono illustrati i passaggi per abilitare i framework di test di terze parti:
 

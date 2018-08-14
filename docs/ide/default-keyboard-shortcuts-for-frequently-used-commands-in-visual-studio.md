@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917999"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512548"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi usati di frequente in Visual Studio
 
@@ -57,7 +57,7 @@ ms.locfileid: "31917999"
 |Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|**INVIO** [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br /> o **MAIUSC+INVIO** [Editor di testo]|
-|Edit.CollapsetoDefinitions|**CTRL+M**, **CTRL+O** [Editor di testo]|
+|Edit.CollapseToDefinitions|**CTRL+M**, **CTRL+O** [Editor di testo]|
 |Edit.CommentSelection|**CTRL+K**, **CTRL+C** [Editor di testo]|
 |Edit.CompleteWord|**ALT+Freccia DESTRA** [Editor di testo, Progettazione flussi di lavoro]<br /><br /> o **CTRL+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br /> o **CTRL+K**, **W** [Progettazione flussi di lavoro]<br /><br /> o **CTRL+K, CTRL+W** [Progettazione flussi di lavoro]|
 |Edit.Copy|**CTRL+C** [Globale]<br /><br /> o **CTRL+INS** [Globale]|

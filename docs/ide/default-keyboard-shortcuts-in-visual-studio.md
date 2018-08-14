@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efd55fbe297e46fb448bbd2087f36df54a1d56c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927347"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513174"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -791,7 +791,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.CollapseAllOutlining|**CTRL+M, CTRL+A**|
 |Edit.CollapseCurrentRegion|**CTRL+M, CTRL+S**|
 |Edit.CollapseTag|**CTRL+M, CTRL+T**|
-|Edit.CollapsetoDefinitions|**CTRL+M, CTRL+O**|
+|Edit.CollapseToDefinitions|**CTRL+M, CTRL+O**|
 |Edit.CommentSelection|**CTRL+K, CTRL+C**|
 |Edit.CompleteWord|**CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+Freccia DESTRA**|
 |Edit.CopyParameterTip|**CTRL+MAIUSC+ALT+C**|

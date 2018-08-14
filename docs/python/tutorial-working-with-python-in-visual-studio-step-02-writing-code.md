@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2fbd9729c02eedbcacd0955a6766b5627156090e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174841"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513120"
 ---
 # <a name="step-2-write-and-run-code"></a>Passaggio 2: Scrittura ed esecuzione del codice
 
 **Passaggio precedente: [Creare un nuovo progetto Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, la finestra *editor* si trova in genere dove si lavora con i *contenuti* dei file, come il codice sorgente. L'editor è sensibile al contesto del tipo di file che si sta modificando, anche per quanto riguarda il linguaggio di programmazione (in base all'estensione del file) e offre le funzionalità appropriate per tale linguaggio, come la colorazione della sintassi e il completamento automatico tramite IntelliSense.
+Anche se **Esplora soluzioni** si trova nell'area di gestione dei file di progetto, la finestra *Editor* si trova in genere dove si lavora con i *contenuti* dei file, come il codice sorgente. L'editor è sensibile al contesto del tipo di file che si sta modificando, anche per quanto riguarda il linguaggio di programmazione (in base all'estensione del file) e offre le funzionalità appropriate per tale linguaggio, come la colorazione della sintassi e il completamento automatico tramite IntelliSense.
 
-1. Dopo aver creato un nuovo progetto "Python Application" (Applicazione Python), nell'editor di Visual Studio viene aperto un file vuoto predefinito denominato `PythonApplication1.py`.
+1. Dopo aver creato un nuovo progetto "Python Application" (Applicazione Python), nell'editor di Visual Studio viene aperto un file vuoto predefinito denominato *PythonApplication1.py*.
 
-1. Nell'editor iniziare a digitare `print("Hello, Visual Studio")`. Si noti che IntelliSense di Visual Studio visualizza le opzioni di completamento automatico durante la digitazione. L'opzione con contorno nell'elenco a discesa è il completamento predefinito usato quando si preme TAB. Il completamento è utile soprattutto in presenza di istruzioni o identificatori più lunghi.
+1. Nell'editor iniziare a digitare `print("Hello, Visual Studio")`. Si noti che IntelliSense di Visual Studio visualizza le opzioni di completamento automatico durante la digitazione. L'opzione con contorno nell'elenco a discesa è il completamento predefinito usato quando si preme **TAB**. Il completamento è utile soprattutto in presenza di istruzioni o identificatori più lunghi.
 
     ![Popup di completamento automatico IntelliSense](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -45,11 +45,11 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
     ![Colorazione della sintassi ed evidenziazione degli errori di IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Poiché l'ambiente di sviluppo è molto personale, Visual Studio offre un controllo completo sull'aspetto e sul comportamento di Visual Studio. Selezionare il comando del menu **Strumenti > Opzioni** ed esplorare le impostazioni nelle schede **Ambiente** e **Editor di testo**. Per impostazione predefinita viene visualizzato solo un numero limitato di opzioni. Per visualizzare tutte le opzioni per ogni linguaggio di programmazione, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo. 
+    > Poiché l'ambiente di sviluppo è molto personale, Visual Studio offre un controllo completo sull'aspetto e sul comportamento di Visual Studio. Selezionare il comando del menu **Strumenti** > **Opzioni** ed esplorare le impostazioni nelle schede **Ambiente** ed **Editor di testo**. Per impostazione predefinita viene visualizzato solo un numero limitato di opzioni. Per visualizzare tutte le opzioni per ogni linguaggio di programmazione, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo. 
 
-1. Successivamente a questo punto eseguire il codice già scritto premendo Ctrl+F5 o selezionando la voce del menu **Debug > Avvia senza eseguire debug**. Se sono ancora presenti errori nel codice Visual Studio genera degli avvisi.
+1. Eseguire il codice scritto fino a questo punto premendo **CTRL**+**F5** o selezionando la voce di menu **Debug** > **Avvia senza eseguire debug**. Se sono ancora presenti errori nel codice Visual Studio genera degli avvisi.
 
-1. Quando si esegue il programma, viene visualizzata una finestra di console con i risultati, come se fosse stato eseguito un interprete Python con `PythonApplication1.py` dalla riga di comando. Premere un tasto per chiudere la finestra e tornare all'editor di Visual Studio.
+1. Quando si esegue il programma, viene visualizzata una finestra di console con i risultati, come se fosse stato eseguito un interprete Python con *PythonApplication1.py* dalla riga di comando. Premere un tasto per chiudere la finestra e tornare all'editor di Visual Studio.
 
     ![Output per la prima esecuzione del programma](media/vs-getting-started-python-07-output.png)
 
@@ -75,7 +75,7 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
     ```
 
     > [!Tip]
-    > I completamenti si basano su sottostringhe durante la digitazione, cercando corrispondenze per parti di parole, lettere all'inizio delle parole e anche caratteri saltati. Per altri dettagli, vedere [Modifica del codice - Completamenti](editing-python-code-in-visual-studio.md#completions).
+    > I completamenti si basano su sottostringhe durante la digitazione, cercando corrispondenze per parti di parole, lettere all'inizio delle parole e anche caratteri saltati. Per altri dettagli, vedere [Modificare il codice - Completamenti](editing-python-code-in-visual-studio.md#completions).
 
 1. Aggiungere altro codice per visualizzare i valori di coseno per 360 gradi:
 
@@ -84,12 +84,12 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
         print(cos(radians(i)))
     ```
 
-1. Eseguire ancora il programma premendo Ctrl+F5 o scegliendo **Debug > Avvia senza eseguire debug**. Al termine, chiudere la finestra di output.
+1. Eseguire ancora il programma premendo **CTRL**+**F5** o scegliendo **Debug** > **Avvia senza eseguire debug**. Al termine, chiudere la finestra di output.
 
 ## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
-> [Uso della finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [Usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
 ## <a name="go-deeper"></a>Approfondimento
 
