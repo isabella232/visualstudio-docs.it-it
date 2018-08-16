@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3efb5315b3adb02f74b41d193a6b9173f38ec992
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749557"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008447"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Procedura dettagliata: Creare un'applicazione semplice con C# o Visual Basic
 
@@ -48,7 +48,7 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 1. Scegliere **OK**.
 
-Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. Per altre informazioni, vedere [WPF Designer per gli sviluppatori di Windows Form](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca). In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
+Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
 
 ![Esplora soluzioni con i file HelloWPFApp caricati](../ide/media/exploreide-hellowpfappfiles.png)
 

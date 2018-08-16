@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341507"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008216"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usare IPython nella finestra interattiva
 
@@ -81,7 +81,7 @@ Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaco
 
 In IPython sono disponibili molte altre funzionalità utili, ad esempio l'escape alla shell di sistema, la sostituzione delle variabili, l'acquisizione di output e così via. Per altre informazioni, vedere la [documentazione di IPython](http://ipython.org/documentation.html).
 
-## <a name="see-also"></a>Vedere anche
+### <a name="see-also"></a>Vedere anche
 
 - Per usare Jupyter facilmente e senza installazione, provare la versione gratuita del [servizio ospitato Azure Notebooks](https://notebooks.azure.com/) che consente di mantenere e condividere i blocchi appunti con altri utenti.
 

@@ -9,12 +9,12 @@ description: Informazioni su come esportare un elenco di sottoscrittori e i dett
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4e1a20307eea40a1ed9ba9662bd9d25086489374
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9b2e03235391826c7a8cc486089a5a3e6384b09a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379469"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635882"
 ---
 # <a name="exporting-subscription-information"></a>Esportazione delle informazioni sulle sottoscrizioni
 
@@ -23,4 +23,5 @@ Nel [portale di amministrazione](https://manage.visualstudio.com) delle sottoscr
 Questa funzionalità è utile per alcuni scenari, ad esempio la verifica delle assegnazioni e delle date di scadenza. Se, ad esempio, si vuole tenere traccia delle assegnazioni delle sottoscrizioni usando gli identificatori GUID anziché i BAN, è possibile usare questo report con la formula CERCA.VERT in Microsoft Excel per associare correttamente i sottoscrittori.  
 
 Per eseguire l'esportazione, è sufficiente selezionare la scheda **Esporta** per scaricare il file nel computer locale. Il file include il nome del contratto che contiene le sottoscrizioni utente e la data dell'esportazione.  
-![Esportare sottoscrittori](_img\exporting-subscriptions\exporting-subscriptions.png)
+> [!div class="mx-imgBorder"]
+> ![Esportare sottoscrittori](_img\exporting-subscriptions\exporting-subscriptions.png)

@@ -18,16 +18,19 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753297"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008408"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
 JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggior parte o tutti gli strumenti di modifica standard (frammenti di codice, IntelliSense e così via) quando si scrive codice JavaScript nell'IDE di Visual Studio. È possibile scrivere codice JavaScript per molti tipi di applicazioni e servizi.
+
+> [!NOTE]
+> Microsoft ha contribuito al lavoro svolto dall'intera community per fare della [documentazione Web MDN](https://developer.mozilla.org/en-US/) il punto di riferimento e la principale risorsa di sviluppo sul Web reindirizzando tutte le informazioni di riferimento sulle API JavaScript di Microsoft (oltre 500 pagine) da docs.microsoft.com alle rispettive controparti MDN. Per i dettagli, vedere questo [annuncio](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
 ## <a name="ES6"></a>Supporto per ECMAScript 2015 (ES6) e versioni successive
 
@@ -183,7 +186,7 @@ Alcune di esse sono elencate di seguito, ma per un set completo di tutte le opzi
 Dato un progetto con la seguente configurazione:
 
 - i file di origine del progetto si trovano in`wwwroot/js`
-- i file lib del progetto si trovano in`wwwrrot/lib`
+- i file lib del progetto si trovano in`wwwroot/lib`
 - `bootstrap`, `jquery`, `jquery-validation`, e `jquery-validation-unobtrusive` sono elencati in `bower.json`
 - `kendo-ui` è stato aggiunto manualmente alla cartella lib
 

@@ -9,12 +9,12 @@ description: Informazioni sulle responsabilità degli amministratori delle sotto
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1eb8dc3cf47241632085e86f589ba377343aa4f1
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9fdefa652a368c344f11fdaf70dbf5db9b172fbf
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862998"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638098"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Panoramica delle responsabilità degli amministratori
 Un amministratore ha la possibilità di gestire le sottoscrizioni per l'organizzazione.  Il ruolo di amministratore è anche responsabile di verificare che le sottoscrizioni siano gestite in conformità alle condizioni di licenza. In questo articolo vengono illustrati responsabilità, vantaggi e limitazioni del ruolo di amministratore.
@@ -64,6 +64,7 @@ I collaboratori esterni possono disporre di licenze per interagire con l'ambient
 
 ## <a name="track-user-assignment-and-process-orders"></a>Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini
 Gli amministratori delle sottoscrizioni di Visual Studio devono tenere traccia dell'utilizzo di Visual Studio ed elaborare gli ordini per ogni aumento nell'utilizzo in base alla pianificazione stabilita nel contratto multilicenza o nel Contratto per i Prodotti e i Servizi Microsoft. Il nuovo portale di amministrazione delle sottoscrizioni di Visual Studio semplifica questa attività grazie a uno strumento di monitoraggio utile che mostra le licenze disponibili e quelle usate.
+
 ### <a name="high-water-mark-of-usage"></a>Limite massimo di utilizzo
 **L'obbligo da parte della società all'acquisto di sottoscrizioni di Visual Studio diventa effettivo immediatamente quando:**
 - Viene assegnata una licenza a un utente.
