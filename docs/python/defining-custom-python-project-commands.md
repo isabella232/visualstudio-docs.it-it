@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341264"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008323"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definire comandi personalizzati per i progetti Python
 
-Mentre si lavora ai progetti Python è possibile che risulti necessario passare a una finestra di comando per eseguire script o moduli specifici, comandi pip o altri strumenti arbitrari. Per migliorare il flusso di lavoro, è possibile aggiungere comandi personalizzati al sottomenu **Python** nel menu di scelta rapida per i progetti Python. Tali comandi possono essere eseguiti in una finestra della console o nella finestra di output di Visual Studio. È anche possibile usare espressioni regolari per indicare a Visual Studio come analizzare gli errori e gli avvisi dall'output del comando.
+Mentre si lavora ai progetti Python è possibile che risulti necessario passare a una finestra di comando per eseguire script o moduli specifici, comandi pip o altri strumenti arbitrari. Per migliorare il flusso di lavoro, è possibile aggiungere comandi personalizzati al sottomenu **Python** nel menu di scelta rapida per i progetti Python. Tali comandi possono essere eseguiti in una finestra della console o nella finestra **Output** di Visual Studio. È anche possibile usare espressioni regolari per indicare a Visual Studio come analizzare gli errori e gli avvisi dall'output del comando.
 
 Per impostazione predefinita, il menu contiene solo il comando **Esegui PyLint**:
 

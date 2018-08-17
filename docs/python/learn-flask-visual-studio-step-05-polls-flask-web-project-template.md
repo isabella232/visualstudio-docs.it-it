@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388293"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637617"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Passaggio 5: Usare il modello di progetto Web Flask di sondaggi
 
@@ -40,7 +40,7 @@ Visual Studio include anche il modello "Progetto Web Flask/Jade di sondaggi" che
 
 1. Nella finestra di dialogo Nuovo progetto cercare e selezionare il modello **Progetto Web Flask di sondaggi**, assegnare al progetto il nome "FlaskPolls" e selezionare **OK**.
 
-1. Come gli altri modelli di progetto in Visual Studio, il modello "Progetto Web Flask di sondaggi" include un file *requirements.txt* e Visual Studio chiede dove installare le dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite. Questo modello richiede l'uso di Flask nonché dei pacchetti azure-storage e pymongo; il "Progetto Web Flask/Jade di sondaggi" richiede anche pyjade.
+1. Come gli altri modelli di progetto in Visual Studio, il modello "Progetto Web Flask di sondaggi" include un file *requirements.txt* e Visual Studio chiede dove installare le dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite. Questo modello richiede l'uso di Flask nonché dei pacchetti azure-storage e pymongo. Il "Progetto Web Flask/Jade di sondaggi" richiede anche pyjade.
 
 1. Impostare il progetto **FlaskPolls** come predefinito per la soluzione Visual Studio facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliendo **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 
@@ -68,7 +68,7 @@ Visual Studio include anche il modello "Progetto Web Flask/Jade di sondaggi" che
 
 1. È possibile lasciare l'app in esecuzione per le sezioni seguenti.
 
-    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (generalmente **env**) e scegliere **Ignora questi elementi locali**.
+    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (in genere **env**) e scegliere **Ignora questi elementi locali**.
 
 ### <a name="examine-the-project-contents"></a>Esaminare i contenuti del progetto
 

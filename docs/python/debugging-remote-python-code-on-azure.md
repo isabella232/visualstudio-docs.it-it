@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 1e3e70675901128ed6b8d118e54dc10ddee152a5
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341787"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008619"
 ---
 # <a name="remotely-debug-python-code-on-azure"></a>Eseguire il debug remoto di codice Python in Azure
 

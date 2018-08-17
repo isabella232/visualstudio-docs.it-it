@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586547"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638713"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -88,7 +88,7 @@ Quando si avvia un progetto Web per il debug, Visual Studio avvia un server Web 
 
 Nel gruppo **Debug** specificare le proprietà seguenti:
 
-- **Percorsi di ricerca**, **Argomenti dello script**, **Argomenti dell'interprete** e **Percorso dell'interprete**: queste opzioni sono uguali a quelle per il [debug normale](debugging-python-in-visual-studio.md)
+- **Percorsi di ricerca**, **Argomenti dello script**, **Argomenti dell'interprete** e **Percorso dell'interprete**: queste opzioni sono uguali a quelle per il [debug normale](debugging-python-in-visual-studio.md).
 - **URL di avvio**: specifica l'URL che viene aperto nel browser. Il valore predefinito è `localhost`.
 - **Numero di porta**: porta da usare se non ne viene specificata nessuna nell'URL (Visual Studio ne seleziona una automaticamente per impostazione predefinita). Questa impostazione consente di eseguire l'override del valore predefinito della variabile di ambiente `SERVER_PORT`, usata dai modelli per configurare la porta su cui è in ascolto il server di debug locale.
 

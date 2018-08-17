@@ -9,12 +9,12 @@ description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 40fa40ed6606fb9e1cae35c0acccfe7dd46bf920
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380681"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637342"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -59,14 +59,14 @@ Il portale sottoscrizioni di Visual Studio riunisce tutti i programmi e le sotto
 
 ### <a name="which-subscription-am-i-using"></a>Quale sottoscrizione sto usando?
 La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di colore blu della pagina Vantaggi.  Viene anche visualizzata in alto a destra della pagina.
-
-   ![Sottoscrizione attiva](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> [!div class="mx-imgBorder"]
+> ![Sottoscrizione attiva](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Per passare da una sottoscrizione all'altra è possibile:
 - Fare clic sul menu a discesa in alto a destra e scegliere la sottoscrizione dall'elenco
 - Fare clic sulla scheda Sottoscrizioni e quindi fare clic sulla sottoscrizione necessaria
-
-   ![Passaggio da una sottoscrizione all'altra](_img\manage-vs-subscriptions\change-subscription-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Passaggio da una sottoscrizione all'altra](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Se la sottoscrizione non è visibile...
 - Potrebbe essere scaduta.  Solo le sottoscrizioni attive vengono visualizzate nel Portale sottoscrittore.
@@ -102,7 +102,8 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo per faci
 3.  Nella scheda **Informazioni** è possibile modificare nome, indirizzo e-mail, paese/area geografica, immagine del profilo e preferenze di contatto.  Nella scheda **Preferenze** è possibile selezionare le impostazioni preferite per lingua, criteri di data e ora, fuso orario e tema dell'interfaccia utente.  
 4.  Dopo aver completato le modifiche, fare clic su **Salva**. 
 5.  Fare clic sul pulsante **Indietro** del browser per tornare alla pagina Vantaggi. 
-    ![Modifica delle informazioni sul profilo](_img\manage-vs-subscriptions\edit-profile-resized.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Modifica delle informazioni sul profilo](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Collegamento della propria sottoscrizione alle sottoscrizioni Visual Studio Team Services o Azure esistenti
@@ -115,7 +116,8 @@ Per aggiungere un account alternativo:
 2. Fare clic sulla scheda **Sottoscrizioni**.
 3. In **Collegamenti correlati** scegliere **Add alternate account** (Aggiungi account alternativo).
 4. Immettere l'indirizzo e-mail dell'account aziendale o dell'istituto di istruzione e fare clic su **Aggiungi**. 
-    ![Account alternativo](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![Account alternativo](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Dopo aver aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo in qualsiasi momento facendo clic sulla scheda **Sottoscrizioni** e scegliendo l'opzione appropriata nella sezione **Collegamenti correlati**.  
 

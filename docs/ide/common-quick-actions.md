@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2b3c0ddc63dcf9b094b3ca6fb8b66f32a82cca59
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063726"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638355"
 ---
 # <a name="common-quick-actions"></a>Azioni rapide comuni
 
@@ -102,7 +102,7 @@ private void MyMethod()
 
 ### <a name="make-method-asynchronous"></a>Rendere asincrono un metodo
 
-Quando si usa la parola chiave `await` o `Await` all'interno di un metodo, si prevede che il metodo stesso sia contrassegnato dalla parola chiave `async` o `Async`.  Se tuttavia ciò non avviene, viene visualizzata un'azione rapida che consente di impostare il metodo come asincrono. Usare l'opzione **Rendi asincrono il metodo/Rendi asincrona la funzione** dal menu Azioni rapide.
+Quando si usa la parola chiave `await` o `Await` all'interno di un metodo, si prevede che il metodo stesso sia contrassegnato dalla parola chiave `async` o `Async`.  Se non è questo il caso, verrà comunque visualizzata un'azione rapida che consente di impostare il metodo come asincrono. Usare l'opzione **Rendi asincrono il metodo/Rendi asincrona la funzione** dal menu Azioni rapide.
 
 ```csharp
 // Before
@@ -142,7 +142,7 @@ End Function
 
 ### <a name="remove-unnecessary-usingsimports"></a>Rimuovere istruzioni using/Imports non necessarie
 
-L'azione rapida **Rimuovi istruzioni using non necessarie/Rimuovi istruzioni Imports non necessarie** consente di rimuovere eventuali istruzioni `using` e `Import` dal file corrente.  Quando si seleziona questo elemento, le istruzioni Imports di spazi dei nomi non usate vengono rimosse immediatamente.
+L'azione rapida **Rimuovi istruzioni using non necessarie/Rimuovi istruzioni Imports non necessarie** consente di rimuovere eventuali istruzioni `using` e `Import` inutilizzate dal file corrente.  Quando si seleziona questo elemento, le istruzioni Imports di spazi dei nomi inutilizzate vengono rimosse.
 
 |  Linguaggi applicabili |  Versione supportata |
 |  -------------------- | ----------------  |
@@ -150,7 +150,7 @@ L'azione rapida **Rimuovi istruzioni using non necessarie/Rimuovi istruzioni Imp
 
 ### <a name="remove-unnecessary-cast"></a>Rimuovere un cast non necessario
 
-Se si esegue il cast di un tipo a un altro tipo che non richiede un cast, l'azione rapida **Rimuovi cast non necessario** consente di rimuovere il cast dal codice.
+Se si esegue il cast di un tipo a un altro tipo che non richiede un cast, l'azione rapida **Rimuovi cast non necessario** consente di rimuovere il cast non necessario.
 
 ```csharp
 // before
@@ -868,7 +868,7 @@ Dim name = customer.name
 
 ### <a name="use-inferred-names"></a>Usare nomi dedotti
 
-Queste azioni rapide segnalano quando gli utenti possono usare nomi di membri dedotti nei tipi anonimi o usare i nomi di elementi di tuple dedotti di C# 7.1.
+Questa azione rapida segnala quando il codice può essere semplificato tramite l'uso di nomi dei membri dedotti nei tipi anonimi o di nomi di elemento dedotti nelle tuple.
 
 ```csharp
 // Before
@@ -923,7 +923,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>Rendere sincrono un metodo
 
-Quando si usa la parola chiave `async` o `Async` su un metodo, si prevede che venga usata anche la parola chiave `await` o `Await` in un punto all'interno del metodo stesso.  Se tuttavia ciò non avviene, viene visualizzata un'azione rapida che consente di impostare il metodo come sincrono rimuovendo la parola chiave `async` o `Async` e modificando il tipo restituito. Usare l'opzione **Imposta il metodo come sincrono** dal menu Azioni rapide.
+Quando si usa la parola chiave `async` o `Async` per un metodo, si prevede che venga usata anche la parola chiave `await` o `Await` all'interno del metodo stesso.  Se tuttavia ciò non avviene, viene visualizzata un'azione rapida che consente di impostare il metodo come sincrono rimuovendo la parola chiave `async` o `Async` e modificando il tipo restituito. Usare l'opzione **Imposta il metodo come sincrono** dal menu Azioni rapide.
 
 ```csharp
 // Before

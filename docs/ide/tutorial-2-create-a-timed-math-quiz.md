@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c2a0d239cca67eda9454f522e5041af29c7fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747880"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008395"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: Creare un quiz matematico a tempo
+
 In questa esercitazione si compila un quiz dove l'esecutore deve rispondere a quattro problemi aritmetici casuali entro il tempo specificato. Vengono illustrate le seguenti procedure:
 
 -   Generare numeri casuali utilizzando la classe <xref:System.Random>.
@@ -29,16 +30,16 @@ In questa esercitazione si compila un quiz dove l'esecutore deve rispondere a qu
 
 -   Eseguire operazioni aritmetiche di base nel codice.
 
- Al termine, il quiz sarà simile all'immagine riportata di seguito, ma con numeri diversi.
+Al termine, il quiz sarà simile all'immagine riportata di seguito, ma con numeri diversi:
 
- ![Quiz matematico con quattro problemi](../ide/media/express_finishedquiz.png) Quiz creato in questa esercitazione
+![Quiz matematico con quattro problemi](../ide/media/express_finishedquiz.png)
 
 ## <a name="tutorial-links"></a>Collegamenti dell'esercitazione
 
- Per scaricare una versione completa del quiz, vedere [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Esercitazione di esempio completa per un quiz matematico).
+Per scaricare una versione completa del quiz, vedere [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Esercitazione di esempio completa per un quiz matematico).
 
 > [!NOTE]
->  In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.
+> In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

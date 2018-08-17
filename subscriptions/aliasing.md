@@ -9,12 +9,12 @@ description: Si possono verificare errori di accesso se si usano alias o nomi de
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327063"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637682"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Possibili errori di accesso alle sottoscrizioni di Visual Studio con alias
 
@@ -50,11 +50,14 @@ Seguire questa procedura per aggiungere un nuovo sottoscrittore con un account d
 1. Visitare [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e accedere.
 2. Dalla pagina di amministrazione di VLSC fare clic su **Sottoscrizioni** e quindi su **Sottoscrizioni di Visual Studio**.
 
-    ![Menu Sottoscrizioni](_img//vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Menu Sottoscrizioni](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. Fare clic sul **numero di contratto** associato alla sottoscrizione di Visual Studio.
 
-    ![Selezionare il contratto](_img/vlsc/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![Selezionare il contratto](_img/vlsc/vlsc-agreement.png)
 
 4. Fare clic su **Assegna sottoscrizione**.
 5. Selezionare il **livello di sottoscrizione** desiderato.

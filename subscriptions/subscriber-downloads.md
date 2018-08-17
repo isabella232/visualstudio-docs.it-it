@@ -9,12 +9,12 @@ description: Informazioni su come individuare e scaricare i prodotti Microsoft i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8029af659fb45cf7a1ef028855a350935e41670f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326345"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637737"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.
@@ -41,26 +41,26 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 Solo i download inclusi con la sottoscrizione vengono visualizzati automaticamente nella pagina [Download](https://my.visualstudio.com/downloads/featured).  Se si possiede più di una sottoscrizione o appartenenza al programma, i download visualizzati saranno riferiti alla **sottoscrizione più elevata** di cui si è titolari, anche se si sta visualizzando una sottoscrizione diversa.  Se ad esempio si possiede una sottoscrizione di Visual Studio Professional e un'appartenenza di Visual Studio Dev Essentials associate allo stesso ID di accesso, i download visualizzati saranno quelli inclusi nella sottoscrizione di livello professionale, anche se si stanno visualizzando i vantaggi di Dev Essentials.
 
 Quando si visita la pagina [Download](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) è possibile osservare i download popolari organizzati in gruppi per tipo di prodotto.  È possibile selezionare uno dei download popolari visualizzati o cercare qualsiasi prodotto tramite la barra di ricerca nella parte superiore della pagina.
-
-![Pagina dei download per i sottoscrittori](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Pagina dei download per i sottoscrittori](_img\subscriber-downloads\subscriber-downloads-resized.png)
 
 Se ad esempio si sceglie **Visual Studio 2017** dall'elenco Strumenti di sviluppo, verrà visualizzato un elenco dei download di Visual Studio 2017 disponibili.
-
-![Download di Visual Studio 2017](_img\subscriber-downloads\vs2017-new-UI.png)
+> [!div class="mx-imgBorder"]
+> ![Download di Visual Studio 2017](_img\subscriber-downloads\vs2017-new-UI.png)
 
 È possibile selezionare con facilità architettura, lingua e tipo di file tramite i menu a discesa disponibili. Scegliere le opzioni preferite e fare clic su **Scarica** per iniziare il download del prodotto.
 
 ### <a name="displaying-download-details"></a>Visualizzazione dei dettagli del download
 
 Facendo clic sul nome del prodotto o sul collegamento **Informazioni** verranno visualizzati i dettagli per il download ed è possibile accedere alle note sulla versione per il prodotto.
-
-![Dettagli del download di Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-details.png)
+> [!div class="mx-imgBorder"]
+> ![Dettagli del download di Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-details.png)
 
 Nel riquadro dei dettagli è anche possibile fare clic sula scheda **Chiavi** per verificare lo stato dei codici Product Key.
-
-![Codici Product Key di Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Codici Product Key di Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Ottenimento dei codici Product Key
 Per ottenere un codice Product Key per il download, è possibile selezionare la chiave di colore blu etichettata **Ottieni chiave** oppure, se il riquadro dei dettagli è già visualizzato, fare clic su **Ottieni chiave** nella scheda **Chiavi**.
-
-![Richiesta di codici Product Key di Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Richiesta di codici Product Key di Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-claim-keys.png)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341597"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008668"
 ---
 # <a name="format-python-code"></a>Formattare il codice Python
 
@@ -45,41 +45,41 @@ Le tabelle seguenti includono esempi per le varie opzioni:
 
 | Opzione Definizioni di classe | Selezionato con segno di spunta | Deselezionato |
 | --- | --- | --- | 
-| Insert space between a class declaration's name and bases list (Inserisci spazio tra il nome della dichiarazione di classe e l'elenco di basi) | `class X (object): pass` | `class X(object): pass` | 
-| Insert space within bases list parentheses (Inserisci spazio tra le parentesi dell'elenco di basi) | `class X( object ): pass` | `class X(object): pass` |
-| Insert space within empty bases list parentheses (Inserisci spazio tra le parentesi dell'elenco di basi vuoto) | `class X( ): pass` | `class X(): pass` |
+| **Inserisci spazio tra il nome della classe e l'elenco basi** | `class X (object): pass` | `class X(object): pass` | 
+| **Inserisci spazio tra le parentesi dell'elenco basi** | `class X( object ): pass` | `class X(object): pass` |
+| **Inserisci spazio tra le parentesi dell'elenco basi vuoto** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | Opzione Definizioni di funzioni | Selezionato con segno di spunta | Deselezionato |
 | --- | --- | --- |
-| Insert space between a function declaration's name and parameter list (Inserisci spazio tra il nome della dichiarazione di funzione e l'elenco di parametri) | `def X (): pass` | `def X(): pass` | 
-| Insert space within parameter list parentheses (Inserisci spazio tra le parentesi dell'elenco di parametri) | `def X( a, b ): pass` | `def X(a, b): pass` |
-| Insert space within empty parameter list parentheses (Inserisci spazio tra le parentesi dell'elenco di parametri vuoto) | `def X( ): pass` | `def X(): pass` |
-| Insert spaces around '=' in default parameter values (Inserisci spazi intorno a '=' nei valori di parametri predefiniti) | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| Insert space before and after return annotation operators (Inserisci spazio prima e dopo gli operatori di annotazione di restituzione) | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Inserisci spazio tra il nome della funzione e l'elenco parametri nelle dichiarazioni** | `def X (): pass` | `def X(): pass` | 
+| **Inserisci spazio tra le parentesi dell'elenco parametri** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **Inserisci spazio tra le parentesi dell'elenco parametri vuoto** | `def X( ): pass` | `def X(): pass` |
+| **Inserisci spazio prima e dopo '=' nei valori dei parametri predefiniti** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Inserisci spazio prima e dopo gli operatori di restituzione annotazione** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | Opzione Operators (Operatori) | Selezionato con segno di spunta | Deselezionato |
 | --- | --- | --- |
-| Insert spaces around binary operators (Inserisci spazi intorno agli operatori binari) | `a + b` | `a+b` |
-| Insert spaces around assignments (Inserisci spazi intorno alle assegnazioni) | `a = b` | `a=b` |
+| **Inserisci spazio tra gli operatori binari** | `a + b` | `a+b` |
+| **Inserisci gli spazi intorno agli operatori di assegnazione** | `a = b` | `a=b` |
 
 <br/>
 
 | Opzione Expression spacing (Spaziatura espressioni) | Selezionato con segno di spunta | Deselezionato |
 | --- | --- | --- |
-| Insert space between a function call's name and argument list (Inserisci spazio tra il nome della chiamata di funzione e l'elenco di argomenti) | `X ()` | `X()` |
-| Inserisci spazio tra le parentesi dell'elenco di argomenti vuoto | `X( )` | `X()` |
-| Inserisci spazio tra le parentesi dell'elenco di argomenti | `X( a, b )` | `X(a, b)` |
-| Insert space within parentheses of expression (Inserisci spazio tra le parentesi delle espressioni) | `( a )` | `(a)` |
-| Insert space within empty tuple parentheses (Inserisci spazio tra parentesi tuple vuote) | `( )` | `()` |
-| Insert space within tuple parentheses (Inserisci spazio tra parentesi tuple) | `( a, b )` | `(a, b)` |
-| Inserisci spazio tra parentesi quadre vuote | `[ ]` | `[]` |
-| Insert spaces within square brackets of lists (Inserisci spazi tra parentesi quadre di elenchi) | `[ a, b ]` | `[a, b]` |
-| Inserisci spazio prima della parentesi quadra di apertura | `x [i]` | `x[i]` |
-| Inserisci uno spazio tra parentesi quadre | `x[ i ]` | `x[i]` |
+| **Inserisci spazio tra il nome della funzione e l'elenco argomenti nelle chiamate** | `X ()` | `X()` |
+| **Inserisci spazio tra le parentesi dell'elenco di argomenti vuoto** | `X( )` | `X()` |
+| **Inserisci spazio tra le parentesi dell'elenco di argomenti** | `X( a, b )` | `X(a, b)` |
+| **Inserisci spazio tra le parentesi delle espressioni** | `( a )` | `(a)` |
+| **Inserisci spazio tra le parentesi della tupla vuota** | `( )` | `()` |
+| **Inserisci spazio tra le parentesi della tupla** | `( a, b )` | `(a, b)` |
+| **Inserisci uno spazio tra parentesi quadre vuote** | `[ ]` | `[]` |
+| **Inserisci spazio tra le parentesi quadre degli elenchi** | `[ a, b ]` | `[a, b]` |
+| **Inserisci spazio prima della parentesi quadra di apertura** | `x [i]` | `x[i]` |
+| **Inserisci spazio tra parentesi quadre** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ Le opzioni relative alle **istruzioni** consentono di controllare la riscrittura
 
 | Opzione | Prima della formattazione | Dopo la formattazione |
 | --- | --- | --- |
-| Place imported modules on new line (Inserisci moduli importati in una nuova riga) | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| Remove unnecessary semicolons (Rimuovi punti e virgola non necessari) | `x = 42;` | `x = 42` |
-| Place multiple statements on new lines (Inserisci più istruzioni in nuove righe) | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **Inserisci i moduli importati in una nuova riga** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **Rimuovi i punti e virgola non necessari** | `x = 42;` | `x = 42` |
+| **Place multiple statements on new lines** (Inserisci più istruzioni in nuove righe) | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>Wrapping (Ritorno a capo)
 

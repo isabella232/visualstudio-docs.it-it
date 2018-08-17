@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b3347deb612b6fab248b287ed22fe39a7798796
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512083"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639432"
 ---
-# <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: Usare Python in Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: Uso di Python in Visual Studio
 
 Python è un linguaggio di programmazione molto diffuso affidabile, flessibile, facile da imparare, il cui uso è gratuito in tutti i sistemi operativi e supportato sia da un'attiva community di sviluppatori che da numerose librerie gratuite. Il linguaggio supporta tutte le modalità di sviluppo, tra cui applicazioni Web, servizi Web, app desktop, script e calcolo scientifico. Viene usato in molte università, nonché da scienziati, sviluppatori professionisti e non professionisti.
 
@@ -36,7 +36,7 @@ Visual Studio offre un supporto dei linguaggi di prima classe per Python. Comple
 
 ## <a name="step-1-create-a-new-python-project"></a>Passaggio 1: Creare un nuovo progetto Python
 
-Per *progetto* si intende la modalità con cui Visual Studio gestisce tutti i file inclusi nella creazione di una singola applicazione, come codice sorgente, risorse, configurazioni e così via. Un progetto formalizza e gestisce la relazione tra i file del progetto, nonché le risorse esterne che vengono condivise tra più progetti. Di conseguenza, il progetto consente all'applicazione di espandersi e crescere facilmente rispetto alla semplice gestione delle relazioni di un progetto in cartelle ad hoc, script, file di testo e a livello di idee.
+Per *progetto* si intende la modalità con cui Visual Studio gestisce tutti i file inclusi nella creazione di una singola applicazione, come codice sorgente, risorse, configurazioni e così via. Un progetto formalizza e gestisce la relazione tra i file del progetto, nonché le risorse esterne che vengono condivise tra più progetti. Di conseguenza, il progetto consente all'applicazione di espandersi e crescere molto più facilmente rispetto alla semplice gestione delle relazioni di un progetto in cartelle ad hoc, script, file di testo e persino nel processo mentale dello sviluppatore.
 
 In questa esercitazione si inizia con un semplice progetto che contiene un singolo file di codice vuoto.
 
