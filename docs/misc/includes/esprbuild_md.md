@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: f13d060b089537109d021a166c29075e43d35ec8
-ms.sourcegitcommit: 4400926d00b5f5d52f03cb5d6f8a582d6049ecd9
+ms.sourcegitcommit: 4c7911439054022260efae95169acf70a94d1486
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40183739"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40209824"
 ---
 Team Foundation Build
