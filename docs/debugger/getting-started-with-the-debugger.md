@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1629e98c6d0afa4d259b7b983d1efe0633321c13
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468728"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623599"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>: Esercitazione eseguire il debug usando Visual Studio
 
@@ -31,7 +31,7 @@ Questo articolo presenta le funzionalità del debugger di Visual Studio in una p
 |---------|---------|
 |  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sull'esecuzione del debug che illustra una procedura simile. |
 
-Anche se l'app demo è c# e C++, le funzionalità sono applicabili a Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in c#.
+Anche se l'app demo è c# e C++, le funzionalità sono applicabili a Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in c#. Per passare tra il codice di esempio C++ e c#, usare il filtro della lingua in alto a destra della pagina.
 
 In questa esercitazione si eseguono le attività seguenti:
 
@@ -324,7 +324,7 @@ In genere, usiamo i tasti di scelta rapida in questo caso, perché è un buon me
 
 ## <a name="navigate-code-using-run-to-click"></a>Esplorare il codice con Esegui fino al clic
 
-5. Nell'editor del codice, scorrere verso il basso e passare il mouse sul `Console.WriteLine` metodo (`std::cout` in C++) nel `Triangle` classe fino al verde **eseguire fa clic su** pulsante ![eseguire fa clic su] (../debugger/media/dbg-tour-run-to-click.png " RunToClick") viene visualizzata a sinistra.
+5. Nell'editor del codice, scorrere verso il basso e passare il mouse sul `Console.WriteLine` metodo (`std::cout` in C++) nel `Triangle` classe fino al verde **eseguire fa clic su** pulsante ![eseguire fa clic su](../debugger/media/dbg-tour-run-to-click.png " RunToClick") viene visualizzata a sinistra.
 
      ![Usare l'esecuzione a fare clic su funzionalità](../debugger/media/get-started-run-to-click.png "eseguire fa clic su")
 

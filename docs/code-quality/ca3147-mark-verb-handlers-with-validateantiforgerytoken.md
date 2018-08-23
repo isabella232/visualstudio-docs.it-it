@@ -1,5 +1,5 @@
 ---
-title: 'CA3147: Contrassegnare i gestori di verbo con ValidateAntiForgeryToken'
+title: 'CA3147: Contrassegnare i gestori di verbi con ValidateAntiForgeryToken'
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4369cfd310be9322d17b8bdbfe79880f2aa579
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: da15a441a10f3ad3f3f84ee0cc76eeed8e4127e4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008703"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623766"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Contrassegnare i gestori di verbo con ValidateAntiForgeryToken
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Contrassegnare i gestori di verbi con ValidateAntiForgeryToken
 
 |||
 |-|-|
@@ -29,7 +29,7 @@ ms.locfileid: "40008703"
 
 ## <a name="cause"></a>Causa
 
-Un metodo di azione del controller ASP.NET MVC non è contrassegnato con <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute?displayProperty=fullName>, o un attributo che specifica il verbo HTTP, ad esempio <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute?displayProperty=fullName> o <xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute?displayProperty=fullName>.
+Un metodo di azione del controller ASP.NET MVC non è contrassegnato con [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)), o un attributo che specifica il verbo HTTP, ad esempio [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118)) o [ AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -37,17 +37,17 @@ Quando si progetta un controller MVC ASP.NET, tenere conto di attacchi di richie
 
 Questa regola consente di controllare tale controller ASP.NET MVC i metodi di azione entrambi:
 
-- Dispone il <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> e specificare i verbi HTTP consentiti, senza includere HTTP GET.
+- Disporre le [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108%28v%3dvs.118%29) e specificare i verbi HTTP consentiti, senza includere HTTP GET.
 
 - Specificare HTTP GET come un verbo consentito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Per azioni del controller ASP.NET MVC che gestiscono le richieste HTTP GET e non hanno conseguenze potenzialmente dannose, aggiungere un <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute> al metodo.
+- Per azioni del controller ASP.NET MVC che gestiscono le richieste HTTP GET e non hanno conseguenze potenzialmente dannose, aggiungere un' [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993%28v%3dvs.118%29) al metodo.
 
    Se si dispone di MVC ASP.NET le richieste di azione del controller che gestisce HTTP GET e ha effetti collaterali potenzialmente dannosi, ad esempio la modifica dei dati sensibili, l'applicazione è vulnerabile agli attacchi di richiesta intersito falsa intersito.  È necessario riprogettare l'applicazione in modo che solo le richieste HTTP POST, PUT o DELETE effettuare operazioni sensibili.
 
-- Per azioni del controller ASP.NET MVC che gestiscono HTTP POST, PUT o DELETE richiede, aggiungere <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> e gli attributi che specificano i verbi HTTP consentiti (<xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute>, <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute>, <xref:Microsoft.AspNetCore.Mvc.HttpPutAttribute>, o <xref:Microsoft.AspNetCore.Mvc.HttpDeleteAttribute>). Inoltre, è necessario chiamare <xref:Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.AntiForgeryToken%2A?displayProperty=nameWithType> dalla visualizzazione MVC o pagina web di Razor. Per un esempio, vedere [esaminando i metodi di modifica e visualizzazione di modifica](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
+- Per azioni del controller ASP.NET MVC che gestiscono HTTP POST, PUT o DELETE richiede, aggiungere [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)) e gli attributi che specificano i verbi HTTP consentiti ([AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/web-frameworks/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/web-frameworks/ee470909%28v%3dvs.118%29), o [HttpDeleteAttribute](/previous-versions/aspnet/web-frameworks/ee470917%28v%3dvs.118%29)). Inoltre, è necessario chiamare il [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) metodo dalla visualizzazione MVC o pagina web di Razor. Per un esempio, vedere [esaminando i metodi di modifica e visualizzazione di modifica](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 

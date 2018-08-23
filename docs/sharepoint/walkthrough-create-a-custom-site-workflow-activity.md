@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 614a2e04cd1a7cba054ca209784619021b128e5e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118946"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627357"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procedura dettagliata: Creare un'attività flusso di lavoro del sito personalizzata
   Questa procedura dettagliata viene illustrato come creare un'attività personalizzata per un flusso di lavoro a livello di sito utilizzando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (I flussi di lavoro a livello di sito si applicano all'intero sito, non solo un elenco nel sito). L'attività personalizzata consente di creare un elenco di annunci di backup e quindi copia il contenuto dell'elenco di annunci al suo interno.  
@@ -48,7 +48,7 @@ ms.locfileid: "37118946"
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
   
--   Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint. Per altre informazioni, vedere [i requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
   
 -   Visual Studio.  
   
@@ -129,5 +129,5 @@ ms.locfileid: "37118946"
   
 ## <a name="see-also"></a>Vedere anche
  [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)   
- [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+ [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

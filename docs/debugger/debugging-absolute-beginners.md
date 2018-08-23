@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131869"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42623667"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Come eseguire il debug per principianti
 
@@ -25,7 +25,7 @@ Senza ha esito negativo, il codice che scritto dagli sviluppatori di software no
 
 Un debugger, purtroppo, non qualcosa che può rivelare magicamente nel nostro codice di tutti i problemi o "bug". *Debug* mezzo per eseguire il codice passo a passo in uno strumento di debug, ad esempio Visual Studio, per trovare il punto esatto in cui è stato commesso una programmazione. È quindi conoscere quali le correzioni da apportare al codice e strumenti di debug spesso consentono di apportare modifiche temporanee, pertanto è possibile continuare l'esecuzione del programma.
 
-Uso di un debugger in modo efficace è anche una competenza che richiede tempo e procedure consigliate per informazioni su, ma è un'attività fondamentale in ultima analisi per ogni sviluppatore di software. In questo articolo, quindi, si introducono principi fondamentali di debug e forniscono suggerimenti per iniziare a usare.
+Uso di un debugger in modo efficace è inoltre una competenza che richiede tempo e procedure consigliate per informazioni su ma in definitiva è un'attività fondamentale tutti gli sviluppatori di software. In questo articolo, quindi, si introducono principi fondamentali di debug e forniscono suggerimenti per iniziare a usare.
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Chiarire il problema da se stessi porre le domande corrette
 
@@ -45,7 +45,7 @@ Prima si esamina un bug o un errore, considerare l'ipotesi che ha effettuato si 
 
 * Si sta usando l'API a destra (vale a dire, l'oggetto a destra, funzione, metodo o proprietà)? Un'API che sta usando non cosa tu pensi. (Dopo aver esaminato la chiamata all'API nel debugger, correggere la situazione potrebbe essere necessario un viaggio la documentazione per aiutare a identificare l'API corretta.)
 
-* Si sta usando un'API in modo corretto? Forse è utilizzata l'API a destra, ma non è stato utilizzato nel modo corretto.
+* Si sta usando un'API in modo corretto? Forse è utilizzata l'API a destra ma non è stato utilizzato nel modo corretto.
 
 * Il codice contiene eventuali errori di digitazione? Alcuni errori di digitazione, ad esempio un semplice errore di ortografia di un nome di variabile, possono essere difficili da vedere, in particolare quando si lavora con lingue che non richiedono le variabili per essere dichiarata prima che sono abituati.
 
@@ -92,7 +92,7 @@ Successivamente, si creerà un'applicazione che presentano alcuni bug.
 
     Per .NET Core, nelle **nuovo progetto** finestra di dialogo, scegliere **Visual c#**, **.NET Core** dalla sezione dei modelli installati, quindi nel riquadro centrale selezionare  **Console App (.NET Core)**.
 
-    Se questi modelli non è visibile, è necessario installare il carico di lavoro appropriato (vedere i passaggi precedenti).
+    Se non vengono visualizzati questi modelli, è necessario installare il carico di lavoro appropriato (vedere i passaggi precedenti).
 
 1. Nel **Name** , digitare **ConsoleApp FirstApp** e fare clic su **OK**.
 
@@ -228,7 +228,7 @@ Successivamente, si creerà un'applicazione che presentano alcuni bug.
 
 1. Fare clic sui **riavviare** ![riavviare App](../debugger/media/dbg-tour-restart.png "RestartApp") pulsante sulla barra degli strumenti Debug (**Ctrl** + **MAIUSC**   +  **F5**).
 
-    L'app viene sospesa nel punto di interruzione impostato. Indica il hightlighting giallo in cui il debugger viene sospeso (la linea gialla di codice non è ancora eseguito).
+    L'app viene sospesa nel punto di interruzione impostato. L'evidenziazione di colore giallo indica in cui il debugger viene sospeso (la linea gialla di codice non è ancora eseguito).
 
 1. Passare il mouse sul `GalaxyType` variabile sulla destra e quindi a sinistra dell'icona della chiave inglese, espandere `theGalaxy.GalaxyType`. Si può osservare che `GalaxyType` contiene una proprietà `MyGType`, e il valore della proprietà è impostato su `Spiral`.
 
@@ -303,7 +303,7 @@ Successivamente, si creerà un'applicazione che presentano alcuni bug.
 
     Esaminando il codice, viene visualizzato un errore di digitazione nel `case 'l'` istruzione. Deve essere `case 'I'`.
 
-1. Fare clic su nel codice per `case 'l'`e sostituirlo con ' case 'I'.
+1. Fare clic su nel codice `case 'l'` e sostituirla con `case 'I'`.
 
 1. Rimuovere il punto di interruzione e quindi scegliere il **riavviare** per riavviare l'app.
 

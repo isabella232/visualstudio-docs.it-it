@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851825"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627341"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Consente di specificare se il debug del solo codice utente tramite Just My Code in Visual Studio
 È possibile configurare Visual Studio per effettuare automaticamente Esegui istruzione/routine di sistema, framework e altre chiamate non dell'utente e comprime tali chiamate nella finestra stack di chiamate. La funzionalità che abilita o disabilita questo comportamento viene chiamata *Just My Code*. Questo argomento descrive come usare Just My Code in progetti c#, Visual Basic, C++ e JavaScript.
@@ -67,7 +67,9 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è abilitato 
 ##  <a name="BKMK_C___Just_My_Code"></a> Just My Code in C++  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> Codice utente e non utente  
- Just My Code in C++ è diverso da Just My Code in .NET Framework e in JavaScript perché il comportamento dell'esecuzione di istruzioni è indipendente da quello dello stack di chiamate.  
+Just My Code in C++ è diverso da Just My Code in .NET Framework e in JavaScript perché il comportamento dell'esecuzione di istruzioni è indipendente da quello dello stack di chiamate.  
+
+A partire da Visual Studio 2017 15.8, è possibile specificare se abilitare Just My Code per l'uso di C++ **degli strumenti** > **opzioni** > **debug**  >  **Generali** > **Abilita Just My Code** (è abilitata per impostazione predefinita). Ciò equivale all'uso di [/JMC (solo il debug del codice)](/cpp/build/reference/jmc) opzione del compilatore.
   
  **Stack di chiamate**  
   
@@ -88,7 +90,7 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è abilitato 
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportamento dell'esecuzione  
  Quando si **Esegui istruzione** (tasto di scelta rapida: F11) codice non utente dal codice utente, il debugger passa il codice alla riga successiva del codice utente. Quando si **Esci da istruzione /** (tastiera: MAIUSC+F11), il debugger viene eseguito alla riga successiva del codice utente. Se non viene rilevato codice utente, l'esecuzione continua fino a quando l'app viene chiusa, viene raggiunto un punto di interruzione o viene generata un'eccezione.  
   
- Se il debugger si interrompe nel codice non utente, ad esempio se un comando Interrompi tutto si arresta nel codice non utente, l'esecuzione continua nel codice non utente.  
+ Se il debugger si interrompe nel codice non utente, ad esempio se un comando Interrompi tutto si arresta nel codice non utente, l'esecuzione continua nel codice non utente.
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> Comportamento delle eccezioni  
  Quando il debugger raggiunge un'eccezione, viene interrotta sull'eccezione indipendentemente dal tipo di utente o il codice non utente. Il **User-unhandled** le opzioni presenti nella **eccezioni** vengono ignorati nella finestra di dialogo.  
