@@ -164,7 +164,7 @@ ms.locfileid: "39155288"
   
 |Impostazione|Descrizione|  
 |-------------|-----------------|  
-|**Optimization**|Specifica se il codice generato dal compilatore deve essere ottimizzato. Per effetto dell'ottimizzazione, il codice eseguito viene modificato. Poiché il codice ottimizzato non corrisponde più al codice sorgente, il debug risulterà più complesso.<br /><br /> L'opzione predefinita (**disabilitato (/ lt;0d&gt**) viene disattivata l'ottimizzazione. È possibile disattivare l'ottimizzazione durante la fase di sviluppo e attivarla quando si crea la versione di produzione del codice.|  
+|**Optimization**|Specifica se il codice generato dal compilatore deve essere ottimizzato. Per effetto dell'ottimizzazione, il codice eseguito viene modificato. Poiché il codice ottimizzato non corrisponde più al codice sorgente, il debug risulterà più complesso.<br /><br /> In base all'opzione predefinita (Disabilitato (/0d **), l'ottimizzazione non viene eseguita. È possibile disattivare l'ottimizzazione durante la fase di sviluppo e attivarla quando si crea la versione di produzione del codice.|  
   
 ## <a name="linker-folder-debugging-category"></a>Cartella Linker (categoria Debug)  
   
