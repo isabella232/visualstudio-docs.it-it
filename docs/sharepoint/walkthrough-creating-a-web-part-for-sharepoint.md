@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7430b6fc2afc5af872c9f03174451a223e05b3e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1a03d94b09464fd2daeeea265d5c4e8b64fac2fd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118940"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635408"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procedura dettagliata: Creare una web part per SharePoint
 
@@ -49,7 +49,7 @@ Questa procedura dettagliata illustra le attività seguenti:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Edizioni supportate di Microsoft Windows e SharePoint. Per altre informazioni, vedere [i requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Edizioni supportate di Microsoft Windows e SharePoint.
 
 - Visual Studio 2017 o un'edizione di Visual Studio Application Lifecycle Management (ALM).
 

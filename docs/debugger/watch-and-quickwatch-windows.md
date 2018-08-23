@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a29a5d8961688f710181dce553d0895a4bb475
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aaba3f16ccf08fa56e6f529192ae9ad9cab6d496
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057161"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635437"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Impostare un'espressione di controllo per le variabili utilizzando espressioni di controllo e controllo immediato Windows in Visual Studio
 Durante il debug, è possibile usare la **Watch** e **controllo immediato** windows per controllare variabili ed espressioni.  La differenza è che la finestra **Espressioni di controllo** può visualizzare più variabili, mentre la finestra **Controllo immediato** visualizza una singola variabile alla volta. 
@@ -231,7 +231,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Visualizzazione dinamica e la finestra Espressioni di controllo  
  Alcuni linguaggi di script (ad esempio, JavaScript o Python) usano dinamico oppure [Duck Typing digitando](https://en.wikipedia.org/wiki/Duck_typing), e i linguaggi .NET (nella versione 4.0 e versioni successive) supportano gli oggetti che sono difficili da osservare con le normali finestre di debug, poiché sono possono contenere proprietà runtime e i metodi che non possono essere visualizzati.  
   
- Quando la finestra Espressioni di controllo viene visualizzato un oggetto creato da un tipo che implementa il [IDynamicMetaObjectProvider Interface](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), il debugger aggiunge una speciale **visualizzazione dinamica** nodo per il **Auto**  visualizzare. Questo nodo mostra i membri dinamici dell'oggetto dinamico, ma non consente la modifica dei valori dei membri.  
+ Quando la finestra Espressioni di controllo viene visualizzato un oggetto creato da un tipo che implementa il <xref:System.Dynamic.IDynamicMetaObjectProvider>, il debugger aggiunge una speciale **visualizzazione dinamica** nodo per il **Auto** visualizzare. Questo nodo mostra i membri dinamici dell'oggetto dinamico, ma non consente la modifica dei valori dei membri.  
   
  Se si fa clic con il pulsante destro del mouse su un oggetto figlio di una **Visualizzazione dinamica** e si sceglie **Aggiungi espressione di controllo**, il debugger inserisce una nuova variabile di controllo che esegue il cast di un oggetto in un oggetto dinamico. In altre parole, **object Name** diventa (**(dynamic)object).Name**.  
   
