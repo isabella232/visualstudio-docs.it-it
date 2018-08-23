@@ -1,0 +1,7 @@
+# [Python](getting-started-with-python.md)
+## [Introduzione a PTVS: Installazione di Visual Studio](getting-started-with-ptvs-setting-up-visual-studio.md)
+## [Introduzione a PTVS: Iniziare a scrivere il codice (progetti)](getting-started-with-ptvs-start-coding-projects.md)
+## [Introduzione a PTVS: Modifica del codice](getting-started-with-ptvs-editing-code.md)
+## [Introduzione a PTVS: Debug](getting-started-with-ptvs-debugging.md)
+## [Introduzione a PTVS: Python interattivo](getting-started-with-ptvs-interactive-python.md)
+## [Introduzione a PTVS: Creazione di un sito Web in Azure](getting-started-with-ptvs-building-a-website-in-azure.md)
