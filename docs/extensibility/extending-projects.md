@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639126"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902819"
 ---
 # <a name="extend-projects"></a>Estendere i progetti
 Progetti e soluzioni sono i modi in cui che Visual Studio consente di organizzare i file di codice e risorse in unità di compilazione e distribuzione. È possibile trovare altre informazioni sui progetti in [progetti (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- È possibile creare i tipi di progetto con Visual Studio SDK e il Framework di pacchetto gestito per progetti, che è possibile scaricare all'indirizzo [Framework di pacchetto gestito per progetti](http://mpfproj12.codeplex.com/). Per comprendere come vengono implementati i progetti personalizzati, vedere [nuova generazione progetto: dietro le quinte, parte uno](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nuova generazione progetto: dietro le quinte, parte 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ È possibile creare i tipi di progetto con Visual Studio SDK e il Framework di pacchetto gestito per progetti, che è possibile scaricare all'indirizzo [Framework di pacchetto gestito per progetti](https://github.com/tunnelvisionlabs/MPFProj10). Per comprendere come vengono implementati i progetti personalizzati, vedere [nuova generazione progetto: dietro le quinte, parte uno](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nuova generazione progetto: dietro le quinte, parte 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Negli argomenti di questa sezione viene descritto come creare progetti personalizzati e come gestire diversi tipi di soluzione di Visual Studio.  
   

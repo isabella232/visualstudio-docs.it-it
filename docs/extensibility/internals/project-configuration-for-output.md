@@ -1,5 +1,5 @@
 ---
-title: Configurazione per l'Output del progetto | Documenti Microsoft
+title: Configurazione per l'Output del progetto | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,42 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9bb68812ed9988c9ed18174231ead24f91fcf9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a02e331484abf2ef1450493d2ea1bdddaabe82bd
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132195"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901184"
 ---
-# <a name="project-configuration-for-output"></a>Configurazione per l'Output del progetto
-Ogni configurazione è in grado di supportare un set di processi di compilazione che generano elementi di output, ad esempio il file eseguibile o una risorsa. Questi elementi di output sono privati per l'utente e possono essere inseriti in gruppi che si collegano i tipi correlati di output, ad esempio i file eseguibili (.exe, DLL,. lib) e file di origine (con estensione idl, file con estensione h).  
+# <a name="project-configuration-for-output"></a>Configurazione del progetto per l'output
+Ogni configurazione può supportare un set di processi di compilazione che generano gli elementi di output, ad esempio file eseguibile o una risorsa. Questi elementi di output sono privati per l'utente e possono essere inseriti in gruppi che si collegano i tipi correlati dell'output, ad esempio file eseguibili (.exe,. dll, con estensione LIB) e i file di origine (. idl, file con estensione h).  
   
- Gli elementi di output possono essere resi disponibili tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> metodi ed enumerato con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> metodi. Quando si desidera raggruppare gli elementi di output, il progetto deve inoltre implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> interfaccia.  
+ Gli elementi di output possono essere rese disponibili tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> metodi ed enumerate con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> metodi. Quando si desidera raggruppare gli elementi di output, il progetto deve inoltre implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> interfaccia.  
   
- Il costrutto sviluppato implementando `IVsOutputGroup` consente ai progetti di gruppo di output in base all'utilizzo. Ad esempio, una DLL potrebbe essere raggruppata con il database di programma (PDB).  
+ Il costrutto sviluppato implementando `IVsOutputGroup` consente ai progetti di raggruppare gli output in base all'utilizzo. Ad esempio, una DLL può essere raggruppata con il database di programma (PDB).  
   
 > [!NOTE]
->  Un file PDB contiene informazioni di debug e viene creato quando l'opzione 'Genera informazioni di Debug' è specificato quando si compila il file DLL o .exe. Il file con estensione PDB viene in genere generato Debug progetto solo per la configurazione.  
+>  Un file PDB contiene le informazioni di debug e viene creata quando l'opzione 'Genera informazioni di Debug' è specificata quando si compila il file DLL o .exe. Il file con estensione PDB viene in genere generato per la configurazione di progetto di Debug solo.  
   
- Il progetto deve restituire lo stesso numero di gruppi per ogni configurazione supportata, anche se il numero di output contenuti all'interno di un gruppo può variare da una configurazione alla configurazione. Ad esempio, Matt del progetto DLL potrebbe includere mattd.dll e mattd.pdb nella configurazione Debug, ma solo matt.dll nella configurazione delle vendite al dettaglio.  
+ Il progetto deve restituire lo stesso numero di gruppi per ogni configurazione supportata, anche se il numero degli output contenute all'interno di un gruppo può variare da una configurazione alla configurazione. Ad esempio, Matt del progetto DLL potrebbe includere mattd.dll e mattd.pdb nella configurazione di Debug, ma solo includere matt.dll nella configurazione delle vendite al dettaglio.  
   
- I gruppi dispongono anche le informazioni sull'identificatore stesso, ad esempio il nome canonico, nome visualizzato e informazioni di gruppo, dalla configurazione alla configurazione all'interno di un progetto. La coerenza consente e distribuzione dei pacchetti per continuare a funzionare anche se modificare le configurazioni.  
+ I gruppi dispongono inoltre le stesse informazioni di identificatore, ad esempio il nome canonico, nome visualizzato e informazioni di gruppo, dalla configurazione alla configurazione all'interno di un progetto. Questa coerenza consente la distribuzione e creazione di pacchetti per continuare a funzionare anche se le configurazioni di modifica.  
   
- I gruppi possono anche presentare un output chiave che consente di scelta rapida creazione di pacchetti in modo che punti a un nome significativo. Qualsiasi gruppo potrebbe essere vuoto in una determinata configurazione, pertanto non devono essere rese presupposti sulle dimensioni di un gruppo. Le dimensioni (numero di output) di ogni gruppo in una configurazione possono essere diversa dalla dimensione di un altro gruppo nella stessa configurazione. Può anche essere diversa dalla dimensione dello stesso gruppo in un'altra configurazione.  
+ Gruppi possono anche avere un output delle chiavi che consenta di tasti di scelta rapida creazione di pacchetti in modo da puntare in modo significativo. Qualsiasi gruppo potrebbe essere vuoto in una determinata configurazione, devono essere reso alcuna ipotesi sulla dimensione di un gruppo. La dimensione (numero di output) di ogni gruppo in qualsiasi configurazione può essere diversa dalla dimensione di un altro gruppo nella stessa configurazione. Può anche essere diversa dalla dimensione dello stesso gruppo in un'altra configurazione.  
   
  ![Rappresentazione grafica dei gruppi di output](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
 Gruppi di output  
   
- L'utilizzo principale del <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> interfaccia è quello di fornire l'accesso per la compilazione, distribuzione e il debug di oggetti di gestione e consentire la libertà di output gruppo di progetti. Per ulteriori informazioni sull'utilizzo di questa interfaccia, vedere [oggetto di configurazione di progetto](../../extensibility/internals/project-configuration-object.md).  
+ L'uso primario del <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> interfaccia consiste nel fornire l'accesso per la compilazione, distribuzione e il debug di oggetti di gestione e consentire la libertà necessaria per raggruppare gli output di progetti. Per altre informazioni sull'uso di questa interfaccia, vedere [oggetto di configurazione progetto](../../extensibility/internals/project-configuration-object.md).  
   
- Nel diagramma precedente, gruppo incorporato dispone di una chiave di output in configurazioni (bD.exe o b.exe), pertanto l'utente può creare un collegamento a predefiniti e sapere che il collegamento funzionerà indipendentemente dalla configurazione distribuita. Origine del gruppo non dispone di una chiave di output, pertanto l'utente non è possibile creare un collegamento ad esso. Se il gruppo di eseguire il Debug compilata include un output chiave, ma il gruppo delle vendite al dettaglio compilato non, sarebbe un'implementazione non corretta. Di conseguenza, quindi, se qualsiasi configurazione dispone di un gruppo che non contiene nessun output, e, di conseguenza, nessun file di chiave, altre configurazioni che contengono l'output con tale gruppo non possono avere file di chiave. Gli editor di programma di installazione si presuppongono che nomi canonici e nomi visualizzati dei gruppi, nonché l'esistenza di un file di chiave, non verrà modificato in configurazioni di base.  
+ Nel diagramma precedente, compilato gruppo dispone di una chiave output tra le configurazioni (bD.exe o b.exe), pertanto l'utente può creare un collegamento a predefiniti e sapere che il collegamento funzionerà indipendentemente dalla configurazione distribuita. Origine del gruppo non è una chiave di output, in modo che l'utente non è possibile creare un collegamento ad esso. Se il gruppo di Debug compilata ha un output delle chiavi, ma il gruppo delle vendite al dettaglio compilato non, sarebbe un'implementazione non corretta. Di conseguenza, quindi, se qualsiasi configurazione dispone di un gruppo che non contiene alcun output, e, di conseguenza, nessun file di chiave e quindi altre configurazioni con il gruppo che contiene gli output non possono contenere i file di chiave. Gli editor di programma di installazione presuppongono che i nomi canonici e nomi visualizzati dei gruppi, nonché l'esistenza di un file di chiave, non modificare in base nelle configurazioni.  
   
- Si noti che se un progetto ha un `IVsOutputGroup` che non desidera pacchetti o la distribuzione, è sufficiente per non inserire l'output in un gruppo. L'output può comunque essere enumerato in genere mediante l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> metodo che restituisce tutti gli output di una configurazione indipendentemente dal raggruppamento.  
+ Si noti che se un progetto ha un `IVsOutputGroup` che non desidera creare un pacchetto o la distribuzione, è sufficiente non inserire tale output in un gruppo. L'output può comunque essere enumerato in genere implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> metodo che restituisce tutti gli output di una configurazione indipendentemente dal raggruppamento.  
   
- Per ulteriori informazioni, vedere l'implementazione di `IVsOutputGroup` nell'esempio di progetto personalizzato in [MPF per i progetti](http://mpfproj12.codeplex.com).  
+ Per altre informazioni, vedere l'implementazione di `IVsOutputGroup` nell'esempio di un progetto personalizzato alla [MPF per i progetti](https://github.com/tunnelvisionlabs/MPFProj10).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)   
- [Configurazione di progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md)   
- [Oggetto di configurazione di progetto](../../extensibility/internals/project-configuration-object.md)   
+ [Configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md)   
+ [Oggetto di configurazione progetto](../../extensibility/internals/project-configuration-object.md)   
  [Configurazione di soluzioni](../../extensibility/internals/solution-configuration.md)
