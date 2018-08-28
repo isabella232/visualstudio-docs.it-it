@@ -45,7 +45,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
 >  Quando un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] viene disinstallata, viene rimossa anche la directory dei dati. Non utilizzare mai la Directory dei dati per archiviare dati end-user-gestiti, ad esempio i documenti.  
   
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>Contrassegnare i file di dati in una distribuzione ClickOnce  
- Per inserire un file esistente nella directory dei dati, è necessario contrassegnarlo come file di dati nel file manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Per altre informazioni, vedere [procedura: includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Per inserire un file esistente nella directory dei dati, è necessario contrassegnarlo come file di dati nel file manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . file nella distribuzione come file di dati, vederePer altre informazioni, vedere [procedura: includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="read-from-and-write-to-the-data-directory"></a>Leggere e scrivere nella directory dati  
  Per la lettura dalla directory dei dati, l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deve richiedere le autorizzazioni di lettura. Analogamente, per la scrittura nella directory sono necessarie le autorizzazioni di scrittura. L'applicazione ottiene automaticamente queste autorizzazioni se è configurata per l'esecuzione con attendibilità totale. Per altre informazioni sull'elevazione delle autorizzazioni per l'applicazione utilizzando l'elevazione delle autorizzazioni o distribuzione di applicazioni attendibili, vedere [applicazioni ClickOnce Secure](../deployment/securing-clickonce-applications.md).  
@@ -58,7 +58,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- Per altre informazioni su come contrassegnare i file nella distribuzione come file di dati, vedere [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Per altre informazioni su come contrassegnare i file nella distribuzione come file di dati, vedere [procedura: includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  È anche possibile ottenere il percorso della directory dei dati usando le variabili rilevanti nella classe <xref:System.Windows.Forms.Application> , ad esempio <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
