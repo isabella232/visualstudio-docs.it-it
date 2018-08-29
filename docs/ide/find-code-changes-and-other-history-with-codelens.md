@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36235345"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054478"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -206,7 +206,7 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
 1. Accedere all'applicazione contenente il [codice di unit test](../test/unit-test-your-code.md) associato.
 
-2. Se non se ne ha già uno, compilare l'applicazione per caricare gli indicatori test di CodeLens. Assicurarsi che l'[individuazione basata sugli assembly compilati](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) sia abilitata.
+2. Se non se ne ha già uno, compilare l'applicazione per caricare gli indicatori test di CodeLens. Assicurarsi che l'[individuazione basata sugli assembly compilati](../test/test-explorer-faq.md#assembly-based-discovery) sia abilitata.
 
 3. Esaminare i test per il codice premendo **ALT**+**3**.
 
@@ -327,7 +327,8 @@ Per usare la tastiera:
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>D: Gli indicatori test di CodeLens non vengono più visualizzati nel file quando si apre la soluzione per la prima volta. Come possono essere caricati?
 
-**R:** Ricompilare il progetto per ottenere gli indicatori test di CodeLens da caricare nel file. Assicurarsi che l'[individuazione basata sugli assembly compilati](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) sia abilitata. Per migliorare le prestazioni, Visual Studio non recupera più le informazioni sull'origine per gli indicatori test quando vengono caricati file di codice. Gli indicatori test vengono caricati dopo una compilazione o quando si seleziona un test facendo doppio clic in **Esplora Test**.
+**R:** Ricompilare il progetto per ottenere gli indicatori test di CodeLens da caricare nel file. Assicurarsi che l'[individuazione basata sugli assembly compilati](../test/test-explorer-faq.md#assembly-based-discovery
+) sia abilitata. Per migliorare le prestazioni, Visual Studio non recupera più le informazioni sull'origine per gli indicatori test quando vengono caricati file di codice. Gli indicatori test vengono caricati dopo una compilazione o quando si seleziona un test facendo doppio clic in **Esplora Test**.
 
 ## <a name="see-also"></a>Vedere anche
 

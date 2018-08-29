@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: fe83e09316493ba68b67e3ccc0c785b7093032dd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 469444051956a766bd44d517dd59ec6d945039b0
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281771"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139288"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Elenco dei componenti di Visual Studio 2017 Desktop Express
 
@@ -49,7 +49,7 @@ Per altre informazioni su come usare questi ID, vedere la pagina [Usare i parame
 
 ID componente | nome | Versione | Tipo di dipendenza
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | Pubblicazione ClickOnce | 15.7.27520.0 | Obbligatorio
+Microsoft.Component.ClickOnce | Pubblicazione ClickOnce | 15.8.27825.0 | Obbligatorio
 Microsoft.Component.HelpViewer | Help Viewer | 15.6.27323.2 | Obbligatorio
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obbligatorio
 Microsoft.Component.VC.Runtime.OSSupport | Runtime di Visual C++ per la piattaforma UWP | 15.6.27406.0 | Obbligatorio
@@ -60,14 +60,14 @@ Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Ob
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 15.6.27406.0 | Obbligatorio
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 15.6.27406.0 | Obbligatorio
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Strumenti di sviluppo per .NET Framework 4.6.1 | 15.7.27520.0 | Obbligatorio
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Strumenti di sviluppo per .NET Framework 4.6.1 | 15.8.27825.0 | Obbligatorio
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Strumenti di sviluppo per .NET Framework 4 - 4.6 | 15.6.27406.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Strumenti di connettività e pubblicazione | 1.10.50912.1 | Obbligatorio
-Microsoft.VisualStudio.Component.CoreEditor | Editor principale di Visual Studio | 15.6.27309.0 | Obbligatorio
+Microsoft.VisualStudio.Component.CoreEditor | Editor principale di Visual Studio | 15.8.27729.1 | Obbligatorio
 Microsoft.VisualStudio.Component.EntityFramework | Strumenti di Entity Framework 6 | 15.6.27406.0 | Obbligatorio
-Microsoft.VisualStudio.Component.NuGet | Gestione pacchetti NuGet | 15.6.27309.0 | Obbligatorio
+Microsoft.VisualStudio.Component.NuGet | Gestione pacchetti NuGet | 15.8.27825.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilatori Roslyn per C# e Visual Basic | 15.6.27309.0 | Obbligatorio
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 15.0.27205.0 | Obbligatorio
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 15.8.27729.1 | Obbligatorio
 Microsoft.VisualStudio.Component.SQL.ADAL | Runtime di SQL ADAL | 15.6.27406.0 | Obbligatorio
 Microsoft.VisualStudio.Component.SQL.CLR | Tipi di dati CLR per SQL Server | 15.0.26208.0 | Obbligatorio
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server Command Line Utilities | 15.0.26208.0 | Obbligatorio
@@ -78,11 +78,11 @@ Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.7.27625.0
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Strumenti per analisi statica | 15.0.26208.0 | Obbligatorio
 Microsoft.VisualStudio.Component.TextTemplating | Trasformazione modelli di testo | 15.0.26208.0 | Obbligatorio
 Microsoft.VisualStudio.Component.VC.CLI.Support | Supporto C++/CLI | 15.6.27309.0 | Obbligatorio
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Compilatori e librerie di Visual C++ per ARM | 15.6.27406.0 | Obbligatorio
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Compilatori e librerie di Visual C++ per ARM | 15.8.27825.0 | Obbligatorio
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Compilatori e librerie di Visual C++ per ARM64 | 15.6.27309.0 | Obbligatorio
 Microsoft.VisualStudio.Component.VisualStudioData | Origini dati e riferimenti al servizio | 15.6.27406.0 | Obbligatorio
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Obbligatorio
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.7.27703.1 | Obbligatorio
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Obbligatorio
 
 ## <a name="unaffiliated-components"></a>Componenti non affiliati
 
@@ -92,16 +92,7 @@ ID componente | nome | Versione
 --- | --- | ---
 N/D | N/D | N/D
 
-## <a name="get-support"></a>Supporto
-
-Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Ecco alcune altre opzioni di supporto:
-
-* È possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
-* È possibile condividere un suggerimento per il prodotto con Microsoft in [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* È possibile visualizzare lo stato dei problemi del prodotto e trovare una risposta nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
-* È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio). Per questa opzione è necessario un account [GitHub](https://github.com/).
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
