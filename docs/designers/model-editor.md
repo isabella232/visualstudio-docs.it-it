@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978424"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626941"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 
@@ -48,14 +48,14 @@ Questa sezione descrive come aggiungere un modello 3D al progetto Visual Studio 
 
    ![Finestra di dialogo Aggiungi nuovo elemento con scena 3D selezionata](media/add-new-3d-scene.png)
 
-3. Immettere il **nome** del file del modello e selezionare **Aggiungi**.
+   > [!NOTE]
+   > Se non viene visualizzata la categoria **Grafica** nella finestra di dialogo **Aggiungi nuovo elemento**, potrebbe essere necessario installare il componente **Editor di immagini e modelli 3D**. Chiudere la finestra di dialogo e selezionare **Strumenti** > **Get Tools and Features** (Ottieni strumenti e funzionalità) dalla barra dei menu per aprire il **programma di installazione di Visual Studio**. Selezionare la scheda **Singoli componenti** e il componente **Editor di immagini e modelli 3D** nella categoria **Giochi e grafica**. Selezionare **Modifica**.
+   >
+   > ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
+   >
+   > Se è installato il componente **Editor di immagini e modelli 3D** e non viene comunque visualizzata la categoria di modello **Grafica**, questa categoria viene visualizzata solo per determinati tipi di progetto, ad esempio applicazioni console.
 
-> [!NOTE]
-> Se non viene visualizzata la categoria **Grafica** nella finestra di dialogo **Aggiungi nuovo elemento**, potrebbe essere necessario installare il componente **Editor di immagini e modelli 3D**. Chiudere la finestra di dialogo e selezionare **Strumenti** > **Get Tools and Features** (Ottieni strumenti e funzionalità) dalla barra dei menu per aprire il **programma di installazione di Visual Studio**. Selezionare la scheda **Singoli componenti** e il componente **Editor di immagini e modelli 3D** nella categoria **Giochi e grafica**. Selezionare **Modifica**.
->
-> ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
->
-> Se è installato il componente **Editor di immagini e modelli 3D** e non viene comunque visualizzata la categoria di modello **Grafica**, questa categoria viene visualizzata solo per determinati tipi di progetto, ad esempio applicazioni console.
+3. Immettere il **nome** del file del modello e selezionare **Aggiungi**.
 
 ### <a name="axis-orientation"></a>Orientamento asse
 
@@ -291,7 +291,7 @@ Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto
 |Passare alla modalità **Seleziona**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
 |Passare alla modalità **Zoom**|**CTRL**+**G**, **CTRL**+**Z**<br /><br /> **Z**|
 |Passare alla modalità **Panoramica**|**CTRL**+**G**, **CTRL**+**P**<br /><br /> **K**|
-|Selezionare tutto|**Ctrl**+**A**|
+|Selezionare tutto|**CTRL**+**A**|
 |Eliminare la selezione corrente|**Eliminazione**|
 |Annullare la selezione corrente|**ESCAPE** (**ESC**)|
 |Fare zoom avanti|**Rotellina del mouse avanti**<br /><br /> **CTRL**+**Rotellina del mouse avanti**<br /><br /> **MAIUSC**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più (**+**)|
@@ -323,7 +323,7 @@ Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto
 |Passare alla modalità orbita (fotocamera)|**CTRL**+**G**, **CTRL**+**O**|
 |Selezionare l'oggetto successivo nella scena|**TAB**|
 |Selezionare l'oggetto precedente nella scena|**MAIUSC**+**TAB**|
-|Modifica l'oggetto selezionato in base allo strumento corrente.|Tasti **di direzione**|
+|Modifica l'oggetto selezionato in base allo strumento corrente.|Tasti **freccia**|
 |Disattivare il manipolatore corrente|**Q**|
 |Ruotare la fotocamera|**ALT**+**Trascinamento** con il pulsante sinistro del mouse|
 
