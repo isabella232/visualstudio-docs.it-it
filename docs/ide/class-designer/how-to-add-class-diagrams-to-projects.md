@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e13d4c1dbda200c2e2660e4b3b44e62ed99496
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33998189"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901298"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Procedura: Aggiungere diagrammi classi ai progetti
 
@@ -59,11 +59,14 @@ Per aggiungere più diagrammi classi, ripetere questa procedura.
 
 ## <a name="add-a-class-diagram-based-on-existing-types"></a>Aggiungere un diagramma classi basato su tipi esistenti
 
-In **Esplora soluzioni** aprire il menu di scelta rapida del file di classe e quindi scegliere **Visualizza diagramma classi**.
+In **Esplora soluzioni** aprire il menu di scelta rapida di un file di classe (clic con il pulsante destro del mouse) e quindi scegliere **Visualizza diagramma classi**.
 
 oppure
 
 In **Visualizzazione classi** aprire il menu di scelta rapida del tipo o dello spazio dei nomi e quindi scegliere **Visualizza diagramma classi**.
+
+> [!TIP]
+> Se **Visualizzazione classi** non è già visualizzata, aprire **Visualizzazione classi** dal menu **Visualizza**.
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Per visualizzare il contenuto di un progetto completo in un diagramma classi
 
