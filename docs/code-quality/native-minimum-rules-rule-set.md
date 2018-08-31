@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4f4417651ca574bc7de3014cc96d7089df23085
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945806"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225048"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Set di regole minime native
 Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali delle applicazioni. È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.
@@ -81,6 +81,12 @@ Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici
 |[C6704](../code-quality/c6704.md)|Errore imprevisto dell'espressione dell'annotazione|
 |[C6705](../code-quality/c6705.md)|Numero previsto di argomenti per l'annotazione non corrispondente al numero effettivo di argomenti per l'annotazione|
 |[C6706](../code-quality/c6706.md)|Errore di annotazione imprevisto per l'annotazione|
+|[C26450](../code-quality/c26450.md)|RESULT_OF_ARITHMETIC_OPERATION_PROVABLY_LOSSY|
+|[C26451](../code-quality/c26451.md)|RESULT_OF_ARITHMETIC_OPERATION_CAST_TO_LARGER_SIZE|
+|[C26452](../code-quality/c26452.md)|SHIFT_COUNT_NEGATIVE_OR_TOO_BIG|
+|[C26453](../code-quality/c26453.md)|LEFTSHIFT_NEGATIVE_SIGNED_NUMBER|
+|[C26454](../code-quality/c26454.md)|RESULT_OF_ARITHMETIC_OPERATION_NEGATIVE_UNSIGNED|
+|[C26495](../code-quality/c26495.md)|MEMBER_UNINIT|
 |[C28021](../code-quality/c28021.md)|Il parametro annotato deve essere un puntatore|
 |[C28182](../code-quality/c28182.md)|Deferenziazione del puntatore NULL. Il puntatore contiene lo stesso valore NULL contenuto in un altro puntatore.|
 |[C28202](../code-quality/c28202.md)|Riferimento non valido a membro non statico|
