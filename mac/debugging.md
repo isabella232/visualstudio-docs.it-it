@@ -1,17 +1,17 @@
 ---
 title: Debug con Xamarin
 description: Il debug è una parte comune e necessaria della programmazione. In quanto IDE completo, Visual Studio per Mac contiene un intero gruppo di funzionalità per semplificare il debug. Dal debug sicuro alla visualizzazione dei dati, questo articolo descrive come sfruttare tutte le potenzialità del debug in Visual Studio per Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: dc1ac1636b27133297e5d616de0a0449517a7c06
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 66f7b33c944ced6ab662cf8e89341be6d7a2fb8b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33877138"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223978"
 ---
 # <a name="debugging-with-xamarin"></a>Debug con Xamarin
 

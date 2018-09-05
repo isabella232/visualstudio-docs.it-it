@@ -1,17 +1,17 @@
 ---
 title: Estensione di Visual Studio per Mac
 description: Le funzioni e funzionalità di Visual Studio per Mac possono essere estese con moduli chiamati pacchetti di estensione. La prima parte di questa guida permette di creare un semplice pacchetto di estensione per Visual Studio per Mac per inserire la data e l'ora in un documento. La seconda parte della guida presenta le nozioni di base relative al sistema dei pacchetti di estensione e alcune delle principali API che costituiscono la base di Visual Studio per Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178260"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224962"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estensione di Visual Studio per Mac
 
@@ -56,7 +56,7 @@ Vengono anche aggiunti gli attributi `assembly:AddinDependency ` corrispondenti 
 
 ## <a name="extensions-and-extension-points"></a>Estensioni e punti di estensione
 
-Un punto di estensione è un segnaposto che definisce una struttura dei dati (tipo), mentre un'estensione definisce i dati conformi a una struttura specificata da un determinato punto di estensione. I punti di estensione specificano il tipo di estensione che accettano nella rispettiva dichiarazione. Le estensioni vengono dichiarate tramite nomi di tipo o percorsi di estensione. Per una spiegazione più approfondita di come creare il punto di estensione necessario, vedere le [informazioni di riferimento sui punti di estensione](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots).
+Un punto di estensione è un segnaposto che definisce una struttura dei dati (tipo), mentre un'estensione definisce i dati conformi a una struttura specificata da un determinato punto di estensione. I punti di estensione specificano il tipo di estensione che accettano nella rispettiva dichiarazione. Le estensioni vengono dichiarate tramite nomi di tipo o percorsi di estensione. Per una spiegazione più approfondita di come creare il punto di estensione necessario, vedere le [informazioni di riferimento sui punti di estensione](https://github.com/mono/mono-addins/wiki/Extension-Points).
 
 L'architettura delle estensioni e dei punti di estensione mantiene rapido e modulare lo sviluppo di Visual Studio per Mac. 
 

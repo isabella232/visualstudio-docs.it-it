@@ -9,12 +9,12 @@ description: Informazioni su come gestire le sottoscrizioni di Visual Studio del
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380818"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289445"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Uso del portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -68,9 +68,11 @@ Dopo aver assegnato le sottoscrizioni, la scheda Subscribers (Sottoscrittori) of
 - Un campo facoltativo per un altro indirizzo e-mail usato per le comunicazioni di accesso. 
 
 Sul lato sinistro della pagina è possibile visualizzare informazioni aggiuntive sul numero di licenze acquistate, assegnate e ancora disponibili nella propria organizzazione per ogni contratto.
-    ![Pagina relativa ai sottoscrittori del portale di amministrazione sottoscrizioni di Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Pagina relativa ai sottoscrittori del portale di amministrazione sottoscrizioni di Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Informazioni sulla pagina relativa ai dettagli
 Per altre informazioni sul contratto visualizzato, selezionare la scheda dettagli. Visualizza lo stato del contratto, dell'account di acquisto, i dettagli dell'organizzazione, i contatti principali (VLSC), gli amministratori con privilegi elevati (se disponibile) e altre informazioni di acquisto.
-    ![Pagina relativa ai dettagli del portale di amministrazione delle sottoscrizioni di Visual Studio](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Pagina relativa ai dettagli del portale di amministrazione delle sottoscrizioni di Visual Studio](_img/using-admin-portal/details-page.png)
 

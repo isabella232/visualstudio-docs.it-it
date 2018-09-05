@@ -1,16 +1,16 @@
 ---
 title: Abilitare la sottoscrizione per Visual Studio per Mac
 description: Questo articolo descrive come usare l'account Microsoft per abilitare la sottoscrizione e sbloccare le funzionalità di Visual Studio per Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 6117d4e32e20972130eb733fb70bc6c0145bc2ea
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 738e2bf3596ea517808be829b6f893c101b957d5
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283302"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224172"
 ---
 # <a name="enable-subscription"></a>Abilitare la sottoscrizione
 
