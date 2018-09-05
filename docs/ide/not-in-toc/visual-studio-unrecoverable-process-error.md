@@ -13,13 +13,13 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: ebd530b9db139cb232f735f7d6401199cab2f6fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "36325702"
 ---
-# Errore irreversibile del processo di Visual Studio
+# <a name="visual-studio-unrecoverable-process-error"></a>Errore irreversibile del processo di Visual Studio
 
 Visual Studio 2017 usa diversi processi out-of-process per svolgere le attività necessarie in background, ad esempio testing unità in tempo reale, analizzatori di codice e altro ancora. Questi processi vengono eseguiti out-of-process per offrire vantaggi in termini di prestazioni di Visual Studio, consentendo ad esempio a Visual Studio di rispondere più rapidamente durante l'esecuzione di processi lunghi e con uso intensivo di risorse. E poiché Visual Studio è un processo a 32 bit, l'esecuzione di processi out-of-process rende disponibile uno spazio di memoria più grande dove svolgere le attività con uso intensivo della memoria.
 
@@ -29,7 +29,7 @@ Se il processo *ServiceHub.RoslynCodeAnalysisService.exe* o *ServiceHub.RoslynCo
 
 Se viene visualizzato questo messaggio, salvare il lavoro, quindi chiudere e riavviare Visual Studio.
 
-## Elenco dei processi
+## <a name="list-of-processes"></a>Elenco dei processi
 
 Di seguito è riportato un elenco di processi out-of-process usati da Visual Studio. L'elenco include i processi che vengono avviati in scenari o flussi di lavoro specifici e quindi, nella maggior parte dei casi, non sono tutti in esecuzione nello stesso momento.
 
