@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9640d98522c74fb33f8845e255511a807e03961e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118964"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774794"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procedura: modificare una configurazione di distribuzione di SharePoint
   È possibile creare una configurazione di distribuzione o modificare una configurazione di distribuzione esistente. Ad esempio, si potrebbe eseguire un singolo passaggio o modificare l'ordine dei passaggi del processo di distribuzione. È possibile creare o modificare le configurazioni di distribuzione poiché non è possibile modificare le configurazioni predefinite e a livello di codice aggiunte.  
@@ -33,7 +33,7 @@ ms.locfileid: "37118964"
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>Per creare una configurazione di distribuzione di SharePoint  
   
-1.  Nelle **Esplora soluzioni**, scegliere un progetto SharePoint e quindi nella barra dei menu, scegliere **Project**, * NomeProgetto ***proprietà**.  
+1.  Nelle **Esplora soluzioni**, scegliere un progetto SharePoint e quindi nella barra dei menu, scegliere **Project**, _ProjectName_**proprietà**.  
   
 2.  Nel **SharePoint** scheda, scegliere il **New** pulsante.  
   

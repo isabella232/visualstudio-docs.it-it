@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7e3e0fda420682e4f33c0d22a3e9c8caa920895b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672890"
 ---
 # <a name="getautoinsertextensions-method"></a>Metodo GetAutoInsertExtensions
   Ottiene informazioni sulle App per Office che devono essere inseriti automaticamente durante il debug.  
@@ -26,7 +27,7 @@ ms.lasthandoff: 05/22/2018
   
 ## <a name="syntax"></a>Sintassi  
   
-```c  
+```csharp
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
@@ -42,6 +43,6 @@ HRESULT GetAutoInsertExtensions(
  Valore HRESULT che indica se il metodo è stato completato correttamente.  
   
 ## <a name="remarks"></a>Note  
- Ogni app per Office deve essere inserito viene restituito come un'estensione di applicazione di Office, che corrisponde a un valore in **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. L'host deve cercare questi valori nel Registro di sistema e quindi inserire automaticamente le estensioni.  
+ Ogni app per Office deve essere inserito viene restituito come un'estensione di applicazioni di Office, che corrisponde a un valore inferiore **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. L'host deve cercare questi valori nel Registro di sistema e quindi inserire automaticamente le estensioni.  
   
   

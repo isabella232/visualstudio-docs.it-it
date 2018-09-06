@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: leggere e scrivere nelle proprietà dei documenti | Documenti Microsoft'
+title: 'Procedura: di lettura / scrittura per le proprietà del documento'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f420968461b8f4d11416abe85521ed002cf11ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673610"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Procedura: Leggere e scrivere nelle proprietà dei documenti
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Procedura: di lettura / scrittura per le proprietà del documento
   È possibile archiviare le proprietà del documento insieme a un documento. Le applicazioni di Office offrono svariate proprietà predefinite, ad esempio autore, titolo e oggetto. Questo argomento illustra come impostare le proprietà dei documenti in Microsoft Office Excel e Microsoft Office Word.  
   
- ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [procedura: accedere e modificare le proprietà di documento personalizzato in Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come: accedere e modificare le proprietà personalizzate dei documenti in Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
-## <a name="setting-document-properties-in-excel"></a>Impostazione delle proprietà dei documenti in Excel  
+## <a name="set-document-properties-in-excel"></a>Impostare le proprietà di documento di Excel  
  Per usare le proprietà predefinite in Excel, configurare le proprietà seguenti:  
   
 -   In un progetto a livello di documento usare la proprietà <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> della classe `ThisWorkbook` .  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
  L'esempio di codice seguente illustra come modificare la proprietà predefinita **Revision Number** in un progetto a livello di documento.  
   
-#### <a name="to-change-the-revision-number-property-in-excel"></a>Per modificare la proprietà Numero revisione in Excel  
+### <a name="to-change-the-revision-number-property-in-excel"></a>Per modificare la proprietà Numero revisione in Excel  
   
 1.  Assegnare le proprietà predefinite del documento a una variabile.  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
   
-## <a name="setting-document-properties-in-word"></a>Impostazione delle proprietà dei documenti in Word  
+## <a name="set-document-properties-in-word"></a>Impostare le proprietà di documento di Word  
  Per usare le proprietà predefinite in Word, configurare le proprietà seguenti:  
   
 -   In un progetto a livello di documento usare la proprietà <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> della classe `ThisDocument` .  
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
  L'esempio di codice seguente illustra come modificare la proprietà predefinita **Subject** in un progetto a livello di documento.  
   
-#### <a name="to-change-the-subject-property"></a>Per modificare la proprietà Oggetto  
+### <a name="to-change-the-subject-property"></a>Per modificare la proprietà Oggetto  
   
 1.  Assegnare le proprietà predefinite del documento a una variabile.  
   
@@ -83,8 +84,8 @@ ms.lasthandoff: 04/16/2018
  Anche se si usano Word ed Excel e i rispettivi oggetti, Microsoft Office fornisce l'elenco di proprietà predefinite disponibili per i documenti. Il tentativo di accesso a una proprietà non definita provocherà un'eccezione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)   
- [Procedura: Creare e modificare proprietà personalizzate di un documento](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+ [Procedura: creare e modificare le proprietà personalizzate dei documenti](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

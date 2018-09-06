@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: proteggere i documenti e parti di documenti a livello di codice | Documenti Microsoft'
+title: 'Procedura: a livello di programmazione per proteggere documenti e parti di documenti'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25dd6af67307ebf28a63893411bb2dfaa7bf61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671836"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Procedura: Proteggere documenti e parti di documenti a livello di codice
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Procedura: a livello di programmazione per proteggere documenti e parti di documenti
   È possibile aggiungere protezione ai documenti di Microsoft Office Word per impedire agli utenti di apportare modifiche al documento.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -31,20 +32,20 @@ ms.lasthandoff: 04/16/2018
  È anche possibile contrassegnare determinate aree del documento come eccezioni in modo che gli utenti possano modificare solo quelle aree del documento. Ad esempio, si potrebbe voler proteggere un intero documento ad eccezione di un segnalibro particolare. È possibile aggiungere facoltativamente una password in modo che gli utenti non possano rimuovere la protezione del documento a meno che non si conosca la password.  
   
 > [!NOTE]  
->  Nell'esempio seguente non viene usata la protezione con password; tuttavia, si consiglia di usare una password quando si aggiunge la protezione di documenti. Per altre informazioni, vedere Esempio di strumento di protezione dei documenti [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+>  Nell'esempio seguente non viene usata la protezione con password; tuttavia, si consiglia di usare una password quando si aggiunge la protezione di documenti. Per altre informazioni, vedere l'esempio di protezione di documenti all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
   
- È possibile anche usare i controlli contenuto per proteggere parti di un documento. Per altre informazioni, vedere [Procedura: proteggere parti di documenti mediante i controlli del contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ È possibile anche usare i controlli contenuto per proteggere parti di un documento. Per altre informazioni, vedere [procedura: proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-## <a name="protecting-a-document-that-is-part-of-a-document-level-customization"></a>Protezione di un documento che fa parte di una personalizzazione a livello di documento  
+## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Proteggere un documento che fa parte di una personalizzazione a livello di documento  
   
-#### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>Per proteggere un documento che fa parte di una personalizzazione a livello di documento  
+### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>Per proteggere un documento che fa parte di una personalizzazione a livello di documento  
   
 1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> della classe `ThisDocument` nel progetto.  
   
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]  
   
-#### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>Per escludere un controllo Bookmark dalla protezione di documenti  
+### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>Per escludere un controllo Bookmark dalla protezione di documenti  
   
 1.  Proteggere l'intero documento usando il metodo <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> .  
   
@@ -56,12 +57,12 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
      [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]  
   
-### <a name="compiling-the-code"></a>Compilazione del codice  
+### <a name="compile-the-code"></a>Compilare il codice  
  Per usare questi esempi di codice, eseguirli dalla classe `ThisDocument` nel progetto. Questi esempi di codice presuppongono che nel documento in cui appare questo codice sia disponibile il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> esistente denominato `Bookmark1` .  
   
-## <a name="protecting-a-document-by-using-an-vsto-add-in"></a>Protezione di un documento usando un componente aggiuntivo VSTO  
+## <a name="protect-a-document-by-using-a-vsto-add-in"></a>Proteggere un documento usando un componente aggiuntivo VSTO  
   
-#### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>Per proteggere un documento usando un componente aggiuntivo VSTO a livello di applicazione  
+### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>Per proteggere un documento usando un componente aggiuntivo VSTO a livello di applicazione  
   
 1.  Chiamare il metodo <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Document> che si vuole proteggere.  
   
@@ -71,10 +72,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)   
- [Protezione con password nei documenti di Office](../vsto/password-protection-on-office-documents.md)   
- [Procedura: consentire codice per l'esecuzione sottostante i documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)   
+ [Password di protezione nei documenti di Office](../vsto/password-protection-on-office-documents.md)   
+ [Procedura: consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Procedura: aggiungere controlli segnalibro ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

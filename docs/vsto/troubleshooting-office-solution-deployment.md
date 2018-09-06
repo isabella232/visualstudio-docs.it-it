@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008708"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774661"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Risolvere i problemi di distribuzione di soluzioni Office
   Questo argomento contiene informazioni su come risolvere i problemi comuni che possono verificarsi durante la distribuzione di soluzioni Office.  
@@ -72,7 +72,7 @@ ms.locfileid: "40008708"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Per scaricare gli assembly anziché caricare le copie memorizzate nella cache  
   
-1.  Nella barra dei menu, scegliere **Project**, * NomeProgetto ***proprietà**.  
+1.  Nella barra dei menu, scegliere **Project**, _NomeProgetto_**proprietà**.  
   
 2.  Nella pagina **Applicazione** scegliere **Informazioni assembly**.  
   

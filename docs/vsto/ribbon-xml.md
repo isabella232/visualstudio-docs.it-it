@@ -26,15 +26,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c93553535ca85f63db64be773afa76711a38359b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e19e93423dc1437a41d4e15dd67fa669fb1cee5e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693130"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672847"
 ---
 # <a name="ribbon-xml"></a>Elemento XML della barra multifunzione
-  L'elemento della barra multifunzione (XML) consente di personalizzare una barra multifunzione tramite XML. Usare l'elemento della barra multifunzione (XML) se si desidera personalizzare la barra multifunzione in modo che non è supportato dall'elemento barra multifunzione (finestra di progettazione visiva). Per un confronto tra operazioni eseguibili con ogni elemento, vedere [Panoramica della barra multifunzione](../vsto/Ribbon-overview.md).  
+  L'elemento della barra multifunzione (XML) consente di personalizzare una barra multifunzione utilizzando XML. Se si desidera personalizzare la barra multifunzione in modo che non è supportato dall'elemento barra multifunzione (finestra di progettazione visiva), usare l'elemento della barra multifunzione (XML). Per un confronto delle operazioni eseguibili con ogni elemento, vedere [Panoramica della barra multifunzione](../vsto/Ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
@@ -43,12 +43,12 @@ ms.locfileid: "34693130"
   
 -   Un file XML della barra multifunzione. Questo file definisce l'interfaccia utente della barra multifunzione. Usare questo file per aggiungere elementi dell'interfaccia utente, ad esempio schede, gruppi e controlli. Per informazioni dettagliate, vedere [riferimento al file XML della barra multifunzione](#RibbonDescriptorFile) più avanti in questo argomento.  
   
--   Un file di codice della barra multifunzione. Questo file contiene la *classe Ribbon*. Il nome della classe corrisponde a quello specificato per l'elemento **Barra multifunzione (XML)** nella finestra di dialogo **Aggiungi nuovo elemento** . Applicazioni di Microsoft Office di usare un'istanza di questa classe per caricare la barra multifunzione personalizzata. Per informazioni dettagliate, vedere [sulla barra multifunzione riferimento alla classe](#RibbonExtensionClass) più avanti in questo argomento.  
+-   Un file di codice della barra multifunzione. Questo file contiene la *classe Ribbon*. Il nome della classe corrisponde a quello specificato per l'elemento **Barra multifunzione (XML)** nella finestra di dialogo **Aggiungi nuovo elemento** . Applicazioni di Microsoft Office usano un'istanza di questa classe per caricare la barra multifunzione personalizzata. Per informazioni dettagliate, vedere [sulla barra multifunzione riferimento alla classe](#RibbonExtensionClass) più avanti in questo argomento.  
   
- Per impostazione predefinita, questi file aggiungono un gruppo personalizzato per il **Add-Ins** scheda della barra multifunzione.  
+ Per impostazione predefinita, questi file aggiungono un gruppo personalizzato per il **Add-Ins** della barra multifunzione.  
   
-## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Visualizzare la barra multifunzione personalizzata in un'applicazione di Microsoft Office  
- Dopo aver aggiunto un **della barra multifunzione (XML)** elemento al progetto, è necessario aggiungere codice per il **ThisAddin**, **ThisWorkbook**, oppure **ThisDocument** (classe) che esegue l'override di `CreateRibbonExtensibilityObject` (metodo) e restituisce il codice XML della barra multifunzione classe all'applicazione di Office.  
+## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Visualizzare la barra multifunzione personalizzata in un'applicazione Microsoft Office  
+ Dopo aver aggiunto un **della barra multifunzione (XML)** elemento al progetto, è necessario aggiungere codice per il **ThisAddin**, **ThisWorkbook**, oppure **ThisDocument** classe che esegue l'override di `CreateRibbonExtensibilityObject` metodo e restituisce il codice XML della barra multifunzione classe all'applicazione di Office.  
   
  L'esempio di codice seguente esegue l'override del metodo `CreateRibbonExtensibilityObject` e restituisce una classe Ribbon XML denominata MyRibbon.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "34693130"
   
  Il metodo specificato nell'attributo può avere qualsiasi nome. Tuttavia, deve corrispondere al nome del metodo definito nel file di codice della barra multifunzione.  
   
- Ci sono molti tipi diversi di metodi di callback che è possibile assegnare ai controlli della barra multifunzione. Per un elenco completo dei metodi di callback disponibili per ogni controllo, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 3 di 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
+ Ci sono molti tipi diversi di metodi di callback che è possibile assegnare ai controlli della barra multifunzione. Per un elenco completo dei metodi di callback disponibili per ogni controllo, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 3 di 3)](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15).  
   
 ###  <a name="CallBackMethods"></a> Definire i metodi di callback  
  Definire i metodi di callback nella classe Ribbon nel file di codice della barra multifunzione. Un metodo di callback presenta diversi requisiti:  
@@ -89,7 +89,7 @@ ms.locfileid: "34693130"
   
 -   La firma deve corrispondere alla firma di un tipo di metodo di callback disponibile per il controllo barra multifunzione associato.  
   
- Per un elenco completo delle firme dei metodi di callback per i controlli della barra multifunzione, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 3 di 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio non fornisce supporto IntelliSense per i metodi di callback creati nel file di codice della barra multifunzione. Se si crea un metodo di callback che non corrisponde a una firma valida, il codice verrà compilato, ma non succederà niente quando l'utente fa clic sul controllo.  
+ Per un elenco completo delle firme dei metodi di callback per i controlli della barra multifunzione, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 3 di 3)](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio non fornisce supporto IntelliSense per i metodi di callback creati nel file di codice della barra multifunzione. Se si crea un metodo di callback che non corrisponde a una firma valida, il codice verrà compilato, ma non succederà niente quando l'utente fa clic sul controllo.  
   
  Tutti i metodi di callback hanno un parametro <xref:Microsoft.Office.Core.IRibbonControl> che rappresenta il controllo che ha chiamato il metodo. È possibile usare questo parametro per riutilizzare lo stesso metodo di callback per più controlli. L'esempio di codice seguente illustra un metodo di callback **onAction** che esegue attività diverse a seconda del controllo su cui l'utente fa clic.  
   
@@ -121,29 +121,29 @@ ms.locfileid: "34693130"
 |**customUI**|Rappresenta la barra multifunzione personalizzata nel progetto di componente aggiuntivo VSTO.|  
 |**ribbon**|Rappresenta la barra multifunzione.|  
 |**Schede**|Rappresenta un set di schede della barra multifunzione.|  
-|**scheda**|Rappresenta una singola scheda della barra multifunzione.|  
+|**Scheda**|Rappresenta una singola scheda della barra multifunzione.|  
 |**group**|Rappresenta un gruppo di controlli nella scheda della barra multifunzione.|  
   
- Questi elementi hanno attributi che specificano l'aspetto e il comportamento della barra multifunzione personalizzata. La tabella seguente descrive gli attributi predefiniti del file XML della barra multifunzione:  
+ Questi elementi hanno gli attributi che specificano l'aspetto e il comportamento della barra multifunzione personalizzata. La tabella seguente descrive gli attributi predefiniti del file XML della barra multifunzione:  
   
 |Attributo|Elemento padre|Descrizione|  
 |---------------|--------------------|-----------------|  
 |**onLoad**|**customUI**|Identifica un metodo che viene chiamato quando l'applicazione carica la barra multifunzione.|  
-|**idMso**|**scheda**|Identifica una scheda predefinita da visualizzare nella barra multifunzione.|  
+|**idMso**|**Scheda**|Identifica una scheda incorporata da visualizzare nella barra multifunzione.|  
 |**ID**|**group**|Identifica il gruppo.|  
 |**label**|**group**|Specifica il testo visualizzato nel gruppo.|  
   
- Gli elementi e gli attributi predefiniti nel file XML della barra multifunzione sono un piccolo subset degli elementi e degli attributi disponibili. Per un elenco completo degli elementi disponibili e gli attributi, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 2 di 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
+ Gli elementi e gli attributi predefiniti nel file XML della barra multifunzione sono un piccolo subset degli elementi e degli attributi disponibili. Per un elenco completo degli attributi ed elementi disponibili, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 2 di 3)](http://msdn.microsoft.com/6b904f55-525f-4520-9b81-a017db65657b).  
   
 ##  <a name="RibbonExtensionClass"></a> Riferimento alla classe Ribbon  
- Visual Studio genera la classe Ribbon nel file di codice della barra multifunzione. Aggiungere i metodi di callback per i controlli della barra multifunzione per questa classe. Questa classe implementa l'interfaccia <xref:Microsoft.Office.Core.IRibbonExtensibility> .  
+ Visual Studio genera la classe Ribbon nel file di codice della barra multifunzione. Aggiungere i metodi di callback per i controlli della barra multifunzione a questa classe. Questa classe implementa l'interfaccia <xref:Microsoft.Office.Core.IRibbonExtensibility> .  
   
  La tabella seguente descrive i metodi predefiniti della classe.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|`GetCustomUI`|Restituisce il contenuto del file XML della barra multifunzione. Le applicazioni Microsoft Office chiamano questo metodo per ottenere una stringa XML che definisce l'interfaccia utente per la barra multifunzione personalizzata. Questo metodo implementa il metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Nota:** `GetCustomUI` deve essere implementato solo per restituire il contenuto del file XML della barra multifunzione e non deve essere utilizzato per inizializzare il componente aggiuntivo VSTO. In particolare, non tentare di visualizzare finestre di dialogo o altre finestre nell'implementazione di `GetCustomUI` . In caso contrario, la barra multifunzione personalizzata potrebbe non funzionare correttamente. Se è necessario eseguire codice per l'inizializzazione del componente aggiuntivo VSTO, aggiungere il codice al gestore eventi `ThisAddIn_Startup` .|  
-|`OnLoad`|Assegna il parametro <xref:Microsoft.Office.Core.IRibbonControl> al campo `Ribbon`. Applicazioni di Microsoft Office chiamano questo metodo quando si carica la barra multifunzione personalizzata. È possibile utilizzare questo campo per aggiornare dinamicamente la barra multifunzione personalizzata. Per altre informazioni, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 1 di 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
+|`GetCustomUI`|Restituisce il contenuto del file XML della barra multifunzione. Le applicazioni Microsoft Office chiamano questo metodo per ottenere una stringa XML che definisce l'interfaccia utente per la barra multifunzione personalizzata. Questo metodo implementa il metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Nota:** `GetCustomUI` deve essere implementato solo per restituire il contenuto del file XML della barra multifunzione; e non deve essere usato per inizializzare il componente aggiuntivo VSTO.   In particolare, non tentare di visualizzare finestre di dialogo o altre finestre nell'implementazione di `GetCustomUI` . In caso contrario, la barra multifunzione personalizzata potrebbe non funzionare correttamente. Se è necessario eseguire codice per l'inizializzazione del componente aggiuntivo VSTO, aggiungere il codice al gestore eventi `ThisAddIn_Startup` .|  
+|`OnLoad`|Assegna il parametro <xref:Microsoft.Office.Core.IRibbonControl> al campo `Ribbon`. Applicazioni di Microsoft Office chiamano questo metodo quando si carica la barra multifunzione personalizzata. È possibile usare questo campo per aggiornare dinamicamente la barra multifunzione personalizzata. Per altre informazioni, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 1 di 3)](http://msdn.microsoft.com/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Chiamato dal metodo `GetCustomUI` per ottenere il contenuto del file XML della barra multifunzione.|  
   
 ## <a name="see-also"></a>Vedere anche  

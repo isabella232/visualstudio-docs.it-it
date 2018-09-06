@@ -1,5 +1,5 @@
 ---
-title: "Procedura: visualizzare gli errori dell'interfaccia utente del componente aggiuntivo | Documenti Microsoft"
+title: "Procedura: il componente aggiuntivo Mostra errori dell'interfaccia utente"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 795578d6a168dff5fee259a90abac83fa7788121
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd6da0c83d0dee835169a0a8068af8d75facbbd4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672735"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Procedura: Visualizzare gli errori dell'interfaccia utente del componente aggiuntivo
-  Per impostazione predefinita, se un componente aggiuntivo VSTO tenta di modificare l'interfaccia utente di Microsoft Office e non riesce, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. Questi messaggi possono essere usati per stabilire perché non viene visualizzata una barra multifunzione personalizzata o perché viene visualizzata una barra multifunzione ma senza controlli.  
+# <a name="how-to-show-add-in-user-interface-errors"></a>Procedura: il componente aggiuntivo Mostra errori dell'interfaccia utente
+  Per impostazione predefinita, se un componente aggiuntivo VSTO tenta di modificare l'interfaccia utente Microsoft Office (UI) e ha esito negativo, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. È possibile usare questi messaggi per determinare perché non viene visualizzata una barra multifunzione personalizzata, oppure perché viene visualizzata una barra multifunzione ma senza controlli.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### <a name="to-show-vsto-add-in-user-interface-errors"></a>Per visualizzare gli errori dell'interfaccia utente dei componenti aggiuntivi VSTO  
+## <a name="to-show-vsto-add-in-user-interface-errors"></a>Per visualizzare gli errori dell'interfaccia utente dei componenti aggiuntivi VSTO  
   
 1.  Avviare l'applicazione.  
   
@@ -46,8 +47,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)   
- [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)   
+ [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)   
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
- [Panoramica del riquadro Azioni](../vsto/actions-pane-overview.md)  
+ [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)  
   
   

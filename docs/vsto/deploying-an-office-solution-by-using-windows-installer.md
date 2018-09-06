@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2549f8646d5289925a45737d8d5b2e7707ea301f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 58d41395a7abd05b5bce353655f9149b7a2fbd44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382616"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775714"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Distribuire una soluzione Office tramite Windows Installer
 Informazioni su come creare un file di Windows Installer per la soluzione Office mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -141,7 +141,7 @@ Configurare il progetto **OfficeAddInSetup** per includere l'output del progetto
   
 3. Nella parte inferiore della pagina **Project Assistant** , scegliere il pulsante **File applicazione** mostrato nell'immagine seguente.  
   
-   ![Il pulsante con i file dell'applicazione. ] (../vsto/media/installshield-applicationfiles.png "Pulsante il file dell'applicazione.")  
+   ![Il pulsante con i file dell'applicazione. ](../vsto/media/installshield-applicationfiles.png "Pulsante il file dell'applicazione.")  
   
 4. Nella pagina **File applicazione** selezionare il pulsante **Aggiungi output progetto** .  
   
@@ -161,7 +161,7 @@ Configurare il progetto **OfficeAddInSetup** per includere l'output del progetto
   
    La pagina **File applicazione** ora contiene il file di output del progetto, il manifesto di distribuzione e il manifesto dell'applicazione, come mostrato nella figura seguente.  
   
-   ![I file di output del progetto di installazione. ] (../vsto/media/installshield-outputfiles.png "i file di output del progetto di installazione.")  
+   ![I file di output del progetto di installazione. ](../vsto/media/installshield-outputfiles.png "i file di output del progetto di installazione.")  
   
   
 ## <a name="Configure"></a>Configurare i componenti dipendenti come prerequisiti  
@@ -252,7 +252,7 @@ La pagina **Ridistribuibili** contiene un elemento denominato **Runtime di Micro
   
 11. Nella pagina **Ridistribuibile** del progetto InstallShield, scegliere il pulsante **Aggiorna** per aggiornare l'elenco dei componenti ridistribuibili, come mostrato nella figura seguente.  
   
-   ![Pulsante di aggiornamento. ] (../vsto/media/installshield-refreshbutton.png "Pulsante Aggiorna.")  
+   ![Pulsante di aggiornamento. ](../vsto/media/installshield-refreshbutton.png "Pulsante Aggiorna.")  
   
 12. Nell'elenco di componenti ridistribuibili, selezionare la casella di controllo **Visual Studio 2010 Tools per Office Runtime** .  
   
@@ -309,7 +309,7 @@ Le installazioni per utente richiedono un solo programma di installazione indipe
   
 2. Nella parte inferiore della pagina **Project Assistant** , scegliere il pulsante **Registro di sistema dell'applicazione** mostrato nell'immagine seguente.  
   
-   ![Il pulsante di applicazione del Registro di sistema. ] (../vsto/media/installshield-applicationregistry.gif "Pulsante dell'applicazione del Registro di sistema.")  
+   ![Il pulsante di applicazione del Registro di sistema. ](../vsto/media/installshield-applicationregistry.gif "Pulsante dell'applicazione del Registro di sistema.")  
   
    Viene visualizzata la pagina **Registro di sistema dell'applicazione** .  
   
@@ -447,7 +447,7 @@ Per modificare le proprietà personalizzate, si crea un programma che rimuove la
   
 3. Nella parte inferiore della pagina **Project Assistant** , scegliere il pulsante **File applicazione** mostrato nell'immagine seguente.  
   
-   ![Il pulsante con i file dell'applicazione. ] (../vsto/media/installshield-applicationfiles.png "Pulsante il file dell'applicazione.")  
+   ![Il pulsante con i file dell'applicazione. ](../vsto/media/installshield-applicationfiles.png "Pulsante il file dell'applicazione.")  
   
 4. Nella pagina **File applicazione** selezionare il pulsante **Aggiungi output progetto** .  
   
@@ -526,7 +526,7 @@ Per modificare le proprietà personalizzate, si crea un programma che rimuove la
   
 9. Nella barra dei menu, scegliere **compilare** > **compila OfficeAddInSetup**.  
   
-   Dopo il completamento della compilazione, è possibile individuare il *setup.exe* file del **OfficeAddInSetup** progetto nel percorso seguente: *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\ Express\SingleImage\DiskImages\DISK1\**  
+   Dopo il completamento della compilazione, è possibile individuare il *setup.exe* file del **OfficeAddInSetup** progetto nel percorso seguente: _OfficeAddInSetupProjectRoot_ * *\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>Vedere anche  

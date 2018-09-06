@@ -1,5 +1,5 @@
 ---
-title: Attività comuni nella programmazione con Office
+title: Attività comuni nella programmazione Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c095b6792b2cde9596e1d955a1ddffbc568c801
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671938"
 ---
-# <a name="common-tasks-in-office-programming"></a>Attività comuni nella programmazione con Office
+# <a name="common-tasks-in-office-programming"></a>Attività comuni nella programmazione Office
   Questo argomento descrive come usare Visual Studio per trovare le risposte alle seguenti categorie di domande frequenti relative alla programmazione delle soluzioni Office.  
   
 -   [Installazione e attività generali](#projects).  
@@ -46,19 +47,19 @@ ms.lasthandoff: 05/17/2018
   
 -   [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Procedura: soluzioni Office aggiornamento](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
+-   [Procedura: aggiornamento di Office solutions](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).  
   
--   [Procedura: assembly di interoperabilità primari di Office installazione](../vsto/how-to-install-office-primary-interop-assemblies.md).  
+-   [Procedura: assembly di interoperabilità primari di Office Install](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
--   [Procedura: le applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+-   [Procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 -   [Procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
--   [Procedura: soluzioni di Office aperte senza eseguire il codice](../vsto/how-to-open-office-solutions-without-running-code.md).  
+-   [Procedura: soluzioni Open Office senza eseguire codice](../vsto/how-to-open-office-solutions-without-running-code.md).  
   
 -   [Procedura: impostare le informazioni di configurazione per una soluzione Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md).  
   
--   [Procedura: visualizzare la scheda sviluppatore nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+-   [Procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 -   [Procedura: il componente aggiuntivo Mostra errori dell'interfaccia utente](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Procedura: aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).  
   
--   [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+-   [Procedura: Esportare una barra multifunzione dalla finestra di progettazione in un XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="outlook-form-regions"></a>Aree del modulo di Outlook  
   
@@ -118,19 +119,19 @@ ms.lasthandoff: 05/17/2018
   
 -   [Procedura: a livello di programmazione salvare cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md).  
   
--   [Procedura: chiudere a livello di programmazione le cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md).  
+-   [Procedura: chiudere a livello di codice le cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md).  
   
--   [Procedura: aggiungere nuovi fogli di lavoro alle cartelle di lavoro](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
+-   [Procedura: a livello di codice aggiungere nuovi fogli di lavoro alle cartelle di lavoro](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
   
 -   [Procedura: nascondere i fogli di lavoro a livello di programmazione](../vsto/how-to-programmatically-hide-worksheets.md).  
   
 -   [Procedura: spostare fogli di lavoro all'interno di cartelle di lavoro](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md).  
   
--   [Procedura: proteggere a livello di programmazione le cartelle di lavoro](../vsto/how-to-programmatically-protect-workbooks.md).  
+-   [Procedura: proteggere a livello di codice le cartelle di lavoro](../vsto/how-to-programmatically-protect-workbooks.md).  
   
 -   [Procedura: fare riferimento a livello di programmazione agli intervalli di foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md).  
   
--   [Procedura: a livello di programmazione applicare stili agli intervalli nelle cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md).  
+-   [Procedura: a livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md).  
   
 -   [Procedura: modificare a livello di codice la formattazione nelle righe del foglio di lavoro contenenti celle selezionate](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md).  
   
@@ -150,57 +151,57 @@ ms.lasthandoff: 05/17/2018
   
 -   [Procedura: salvare i documenti a livello di programmazione](../vsto/how-to-programmatically-save-documents.md).  
   
--   [Procedura: chiudere a livello di programmazione documenti](../vsto/how-to-programmatically-close-documents.md).  
+-   [Procedura: chiudere i documenti a livello di programmazione](../vsto/how-to-programmatically-close-documents.md).  
   
--   [Procedura: inserire il testo nei documenti di Word a livello di programmazione](../vsto/how-to-programmatically-insert-text-into-word-documents.md).  
+-   [Procedura: a livello di programmazione inserire testo nei documenti di Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md).  
   
 -   [Procedura: definire e selezionare intervalli nei documenti a livello di programmazione](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
--   [Procedura: a livello di programmazione reimpostare gli intervalli nei documenti di Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
+-   [Procedura: reimpostare a livello di programmazione gli intervalli nei documenti di Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
   
--   [Procedura: formattare il testo nei documenti a livello di programmazione](../vsto/how-to-programmatically-format-text-in-documents.md).  
+-   [Procedura: formattazione del testo nei documenti a livello di programmazione](../vsto/how-to-programmatically-format-text-in-documents.md).  
   
--   [Procedura: aggiungere controlli XMLNode ai documenti di Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
+-   [Procedura: aggiungere controlli XMLNode ai documenti Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
--   [Procedura: aggiornamento a livello di codice del testo di segnalibro](../vsto/how-to-programmatically-update-bookmark-text.md).  
+-   [Procedura: aggiornamento a livello di programmazione del testo di segnalibro](../vsto/how-to-programmatically-update-bookmark-text.md).  
   
 -   [Procedura: cercare e sostituire testo nei documenti a livello di programmazione](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
   
--   [Procedura: stampa di documenti](../vsto/how-to-programmatically-print-documents.md).  
+-   [Procedura: stampare i documenti a livello di programmazione](../vsto/how-to-programmatically-print-documents.md).  
   
--   [Procedura: creare tabelle di Word](../vsto/how-to-programmatically-create-word-tables.md).  
+-   [Procedura: creazione di tabelle di Word a livello di programmazione](../vsto/how-to-programmatically-create-word-tables.md).  
   
--   [Procedura: aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md).  
+-   [Procedura: a livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md).  
   
 -   [Procedura: contare i caratteri nei documenti a livello di programmazione](../vsto/how-to-programmatically-count-characters-in-documents.md).  
   
-##  <a name="data"></a> Attività dei dati  
+##  <a name="data"></a> Attività di dati  
   
 ### <a name="data-bound-controls"></a>Controlli con associazione a dati  
   
--   [Procedura: popolare fogli di lavoro con dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md).  
+-   [Procedura: popolare fogli di lavoro con i dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md).  
   
 -   [Procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
--   [Procedura: popolare documenti con dati da servizi](../vsto/how-to-populate-documents-with-data-from-services.md).  
+-   [Procedura: popolare documenti con dati provenienti dai servizi](../vsto/how-to-populate-documents-with-data-from-services.md).  
   
 -   [Procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
 -   [Procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
--   [Procedura: popolare documenti con dati da servizi](../vsto/how-to-populate-documents-with-data-from-services.md).  
+-   [Procedura: popolare documenti con dati provenienti dai servizi](../vsto/how-to-populate-documents-with-data-from-services.md).  
   
--   [Procedura: aggiornare un'origine dati con i dati da un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+-   [Procedura: aggiornare un'origine dati con dati provenienti da un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 ### <a name="cached-data-in-document-level-solutions"></a>Dati memorizzati nella cache nelle soluzioni a livello di documento  
   
--   [Procedura: memorizzare nella Cache di dati per l'utilizzo offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   [Procedura: memorizzare nella Cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   [Procedura: memorizzare nella cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
 -   [Procedura: memorizzare nella Cache i dati in un documento protetto da password](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
-### <a name="custom-xml-data"></a>Dati XML personalizzati  
+### <a name="custom-xml-data"></a>Dati XML personalizzate  
   
 -   [Procedura: aggiungere parti XML personalizzate a personalizzazioni a livello di documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md).  
   
@@ -218,22 +219,22 @@ ms.lasthandoff: 05/17/2018
   
 ##  <a name="deployment"></a> Attività di distribuzione  
   
--   [Procedura: pubblicare una soluzione Office tramite ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+-   [Procedura: pubblicare una soluzione Office usando ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
--   [Procedura: pubblicare una soluzione Office a livello di documento in un server di SharePoint tramite ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   [Procedura: pubblicare una soluzione Office a livello di documento in un server SharePoint tramite ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
--   [Procedura: installare una soluzione ClickOnce Office](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065).  
+-   [Procedura: installare una soluzione ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).  
   
--   [Procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+-   [Procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
--   [Procedura: preparare IIS per la distribuzione di soluzioni Office](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
+-   [Procedura: preparare IIS per la distribuzione di soluzioni Office](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Procedura: aggiornamento di soluzioni Office distribuite](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [Procedura: aggiornare soluzioni Office distribuite](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
--   [Procedura: modificare il percorso di installazione di una soluzione Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+-   [Procedura: modificare il percorso di installazione di una soluzione Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Iniziare a &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md)   
  [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)  
   

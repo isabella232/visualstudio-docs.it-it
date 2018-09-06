@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: eseguire calcoli in Excel | Documenti Microsoft'
+title: 'Procedura: eseguire calcoli in Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,21 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b814a1e00520394ffaf569812548a371e9cae0a2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dabde287d71736ab49f35acf968300bccee0d12
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671851"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>Procedura: eseguire calcoli in Excel  
   Un processo simile viene utilizzato per eseguire calcoli in un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo di Excel nativo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="running-calculations-in-a-namedrange-control"></a>Esecuzione di calcoli in un controllo NamedRange  
- Nell'esempio seguente viene creato un <xref:Microsoft.Office.Tools.Excel.NamedRange> nella cella A1 e quindi calcola la cella. Questo codice deve essere inserito in una classe foglio, non nella classe `ThisWorkbook` .  
+## <a name="run-calculations-in-a-namedrange-control"></a>Eseguire i calcoli in un controllo NamedRange  
+ L'esempio seguente crea un <xref:Microsoft.Office.Tools.Excel.NamedRange> dalla cella A1 e quindi calcola la cella. Questo codice deve essere inserito in una classe foglio, non nella classe `ThisWorkbook` .  
   
-#### <a name="to-run-calculations-in-a-namedrange-control"></a>Per eseguire calcoli in un controllo NamedRange  
+### <a name="to-run-calculations-in-a-namedrange-control"></a>Per eseguire calcoli in un controllo NamedRange  
   
 1.  Creare l'intervallo denominato.  
   
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#76)]
      [!code-vb[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#76)]  
   
-## <a name="running-calculations-in-a-native-excel-range"></a>Esecuzione di calcoli in un intervallo di Excel nativo  
+## <a name="run-calculations-in-a-native-excel-range"></a>Eseguire i calcoli in un intervallo di Excel nativo  
   
-#### <a name="to-run-calculations-in-a-native-excel-range"></a>Per eseguire calcoli in un intervallo di Excel nativo  
+### <a name="to-run-calculations-in-a-native-excel-range"></a>Per eseguire calcoli in un intervallo di Excel nativo  
   
 1.  Creare l'intervallo denominato.  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzo degli intervalli](../vsto/working-with-ranges.md)   
+ [Lavorare con intervalli](../vsto/working-with-ranges.md)   
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
   

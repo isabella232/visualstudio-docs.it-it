@@ -14,56 +14,57 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 020faeb330348049dcf12431fadfa6ab099d1584
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671863"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure guidate di sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
-  Se si sta sviluppando COM, componenti aggiuntivi VSTO o VBA per Office, seguire le procedure consigliate di sviluppo descritte in questo articolo.   In modo da garantire:
+  Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure guidate di sviluppo descritte in questo articolo.   Questo contribuisce a garantire:
 
--  Compatibilità tra diverse versioni e le distribuzioni di Office i componenti aggiuntivi.
--  Ridotta complessità della distribuzione di componenti aggiuntivi a utenti e gli amministratori IT.
--  Non si verificano errori di runtime o l'installazione non intenzionali del componente aggiuntivo.
+-  Compatibilità dei componenti aggiuntivi in diverse versioni e distribuzioni di Office.
+-  Minore complessità di distribuzione componente aggiuntivo per gli utenti e amministratori IT.
+-  Non si verificano errori di installazione che di esecuzione imprevisti del componente aggiuntivo.
 
->Nota: L'utilizzo di [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) per preparare il computer, VSTO o VBA aggiuntivo per Windows Store non è supportato. Componenti aggiuntivi COM, VSTO e VBA non possono essere distribuiti in Office Store o di Windows Store. 
+>Nota: Tramite il [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) per preparare COM, VSTO o VBA componente aggiuntivo per il Windows Store non è supportato. Componenti aggiuntivi COM, VSTO e VBA non possono essere distribuiti il Windows Store o di Office Store. 
   
-## <a name="do-not-check-for-office-during-installation"></a>Non verificare durante l'installazione di Office  
- Non è consigliabile che il componente aggiuntivo di rilevare se è installato Office durante il processo di installazione. Se non è installato Office, è possibile installare il componente aggiuntivo e l'utente sarà in grado di accedervi dopo l'installazione di Office. 
+## <a name="do-not-check-for-office-during-installation"></a>Non selezionare durante l'installazione per Office  
+ Non è consigliabile che il componente aggiuntivo rileva se Office viene installato durante il processo di installazione del componente aggiuntivo. Se non è installato Office, è possibile installare il componente aggiuntivo e l'utente sarà in grado di accedere, dopo l'installazione di Office. 
   
-## <a name="use-embedded-interop-types-nopia"></a>Utilizzare i tipi di interoperabilità incorporati (NoPIA)  
-Se la soluzione viene utilizzato .NET 4.0 o versioni successive, utilizzare tipi di interoperabilità incorporati (NoPIA) invece che a seconda di Office primario interoperabilità assembly (PIA) redistributable. Riduce le dimensioni di installazione della soluzione mediante l'incorporamento dei tipi e assicura la compatibilità futura. Office 2010 è stata l'ultima versione di Office inclusi assembly di interoperabilità primario ridistribuibile. Per altre informazioni, vedere [procedura dettagliata: incorporamento informazioni sui tipi da assembly di Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) e [equivalenza del tipo e tipi di interoperabilità incorporati](/windows/uwp/porting/desktop-to-uwp-root).
+## <a name="use-embedded-interop-types-nopia"></a>Usare tipi di interoperabilità incorporati (NoPIA)  
+Se la soluzione viene utilizzato .NET 4.0 o versione successiva, usare tipi di interoperabilità incorporati (NoPIA) invece che a seconda di Office primario Interop Assembly (PIA) redistributable. Tramite l'incorporamento dei tipi riduce le dimensioni dell'installazione della soluzione e assicura la compatibilità futura. Office 2010 è stata l'ultima versione di Office forniti assembly di interoperabilità primario ridistribuibile. Per altre informazioni, vedere [procedura dettagliata: incorporamento delle informazioni da assembly di Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) e [equivalenza del tipo e tipi di interoperabilità incorporati](/windows/uwp/porting/desktop-to-uwp-root).
 
-Se la soluzione Usa una versione precedente di .NET, è consigliabile aggiornare la soluzione per l'utilizzo di .NET 4.0 o versione successiva. L'utilizzo di .NET 4.0 o versione successiva riduce i prerequisiti di runtime nelle versioni più recenti di Windows.
+Se la soluzione Usa una versione precedente di .NET, è consigliabile aggiornare la soluzione per l'uso di .NET 4.0 o versione successiva. Uso di .NET 4.0 o versione successiva riduce i prerequisiti di runtime nelle versioni più recenti di Windows.
   
-## <a name="avoid-depending-on-specific-office-versions"></a>Evitare a seconda di specifiche versioni di Office  
-Se la soluzione utilizza una funzionalità disponibile solo nelle versioni più recenti di Office, verificare che la funzionalità esista (se possibile, a livello di funzionalità) in fase di esecuzione (ad esempio, utilizza la gestione o controllando la versione delle eccezioni). Convalidare le versioni minime, piuttosto che specifiche versioni, utilizzando le API supportate nel modello a oggetti, ad esempio il [Application.Version proprietà](https://msdn.microsoft.com/en-us/library/office/microsoft.office.interop.excel._application.version.aspx). Non è consigliabile basarsi su Office binaria dei metadati, percorsi di installazione o le chiavi del Registro di sistema perché questi possono variare tra le installazioni, ambienti e versioni.
+## <a name="avoid-depending-on-specific-office-versions"></a>Evitare a seconda delle specifiche versioni di Office  
+Se la soluzione Usa la funzionalità disponibile solo nelle versioni più recenti di Office, verificare che la funzionalità sia (se possibile, a livello di funzionalità) in fase di esecuzione (ad esempio, utilizzando l'eccezione gestione o dal controllo della versione). Convalidare le versioni minime, anziché a versioni specifiche, usando le API supportate nel modello a oggetti, ad esempio la [Application.Version proprietà](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx). Non è consigliabile si basano su Office binaria dei metadati, i percorsi di installazione o le chiavi del Registro di sistema poiché questi può cambiare tra versioni, ambienti e le installazioni.
 
-## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Consentire l'uso di Office sia a 32 bit e a 64 bit   
-La destinazione predefinita build deve supportare sia (x86) 32 bit e 64 bit (x64), a meno che la soluzione dipende dalle librerie che sono disponibili solo per un numero specifico di bit. La versione a 64 bit di Office è crescente adozione, soprattutto in ambienti di dati. Supportano sia a 32 bit e a 64 bit rende più semplice per gli utenti per la transizione tra le versioni a 32 bit e 64 bit di Office.
+## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Abilitazione dell'utilizzo di Office a 32 bit sia 64 bit   
+La destinazione predefinita build deve supportare sia (x86) 32 bit e a 64 bit (x64), a meno che la soluzione dipende dalle librerie che sono disponibili solo per un determinato numero di bit. La versione a 64 bit di Office è in aumento nell'adozione, soprattutto in ambienti big data. Supporting sia a 32 e 64 bit rende più semplice per gli utenti per la transizione tra le versioni a 32 e 64 bit di Office.
 
-Quando si scrive codice VBA, safe a 64 bit di utilizzare le istruzioni declare per convertire variabili come appropriato. Inoltre, assicurarsi che i documenti possono essere condivisi tra gli utenti che eseguono versioni a 32 o 64 bit di Office fornisce codice per ogni numero di bit. Per altre informazioni, vedere [a 64 bit di Visual Basic panoramica delle applicazioni](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
+Quando si scrive codice VBA, safe a 64 bit usare istruzioni declare e convertire le variabili come appropriato. Inoltre, assicurarsi che i documenti possono essere condivisi tra gli utenti che eseguono versioni a 32 o 64 bit di Office fornisce il codice per ogni numero di bit. Per altre informazioni, vedere [a 64 bit di Visual Basic per la panoramica delle applicazioni](https://msdn.microsoft.com/library/office/gg264421.aspx).
 
-## <a name="support-restricted-environments"></a>Supportare ambienti con restrizioni   
-La soluzione non dovrebbe richiedere i privilegi più elevati di Account utente o di amministratore. Inoltre, la soluzione non deve dipendere l'impostazione o modifica:
+## <a name="support-restricted-environments"></a>Supporto degli ambienti con restrizioni   
+La soluzione non dovrebbe richiedere privilegi di amministratore o l'elevazione dei privilegi di Account utente. Inoltre, la soluzione non deve dipendere l'impostazione o modifica:
 
 - Directory di lavoro corrente.
 - Directory di caricamento DLL.
-- La variabile PATH.
+- La variabile di percorso.
 
-## <a name="change-the-save-location-of-shared-data-and-settings"></a>Modificare l'indirizzo dei dati condivisi e impostazioni
-Se la soluzione è costituita da un componente aggiuntivo e un processo esterno a Office, non utilizzare cartella dati applicazioni dell'utente o il Registro di sistema per lo scambio di dati o le impostazioni tra il componente aggiuntivo e il processo esterno. Utilizzare invece la cartella temporanea dell'utente, la cartella documenti o la directory di installazione della soluzione.
+## <a name="change-the-save-location-of-shared-data-and-settings"></a>Modificare il salvataggio posizione dei dati condivisi e impostazioni
+Se la soluzione è costituita da un componente aggiuntivo e un processo esterno a Office, non utilizzare cartella dati applicazioni dell'utente o il Registro di sistema per lo scambio di dati o delle impostazioni tra il componente aggiuntivo e il processo esterno. In alternativa, è consigliabile usare cartella temporanea dell'utente, documenti o directory di installazione della soluzione.
 
 ## <a name="increment-the-version-number-with-each-update"></a>Incrementare il numero di versione con ogni aggiornamento
-Impostare il numero di versione dei file binari nella soluzione e viene incrementato a ogni aggiornamento. Questo rende più semplice per gli utenti di identificare le modifiche tra le versioni e valutare la compatibilità.
+Imposta il numero di versione dei file binari nella soluzione e incrementarlo con ogni aggiornamento. Ciò renderà più facile per gli utenti identificare le modifiche apportate tra le versioni e valutare la compatibilità.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Fornire istruzioni di supporto per le versioni più recenti di Office
-I clienti richiedono ISV di fornire istruzioni di supporto per i loro COM, VSTO e VBA componenti aggiuntivi che eseguono Office. Elenca i supporto esplicito istruzioni consente ai clienti tramite Office 365 ProPlus strumenti per la conformità comprendere il supporto tecnico. 
+I clienti chiedono agli ISV di fornire istruzioni di supporto per i loro COM, VSTO e VBA componenti aggiuntivi che vengono eseguiti in Office. Elenca i supporto esplicito istruzioni aiuta i clienti che usano Office 365 ProPlus strumenti per la conformità comprendere il supporto tecnico. 
 
-Per fornire istruzioni di supporto per le applicazioni client di Office (ad esempio, Word o Excel), verificare innanzitutto che i componenti aggiuntivi eseguiti nella versione corrente di Office e quindi eseguire il commit per gli aggiornamenti, se il componente aggiuntivo si interrompe in una versione futura. Non è necessario testare i componenti aggiuntivi quando Microsoft rilascia una nuova compilazione o un aggiornamento a Office. Microsoft cambia raramente la piattaforma di estendibilità COM, VSTO e VBA in Office e queste modifiche verranno documentate.
+Per fornire istruzioni di supporto per le applicazioni client di Office (ad esempio, Word o Excel), verificare innanzitutto che Esegui nella versione Office corrente dei componenti aggiuntivi e quindi eseguire il commit che forniscono gli aggiornamenti se il componente aggiuntivo si interrompe in una versione futura. Non è necessario testare i componenti aggiuntivi quando Microsoft rilascia una nuova build o un aggiornamento a Office. Microsoft vengono modificati raramente la piattaforma di estendibilità COM, VSTO e VBA in Office e queste modifiche saranno ben documentate.
 
->Importante: Microsoft gestisce un elenco di componenti aggiuntivi supportati per i report di conformità, le informazioni di contatto ISV. Per ottenere il componente aggiuntivo elencato, vedere [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
+>Importante: Microsoft gestisce un elenco di componenti aggiuntivi supportati per i report di conformità e le informazioni di contatto ISV. Per ottenere il componente aggiuntivo elencato, vedere [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
-## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utilizzare Monitor di processo per eseguire il debug di installazione o il caricamento di problemi
-Se il componente aggiuntivo presenta problemi di compatibilità durante l'installazione o di carico, potrebbe essere correlati per i problemi di accesso ai file o del Registro di sistema. Utilizzare [Process Monitor](/sysinternals/downloads/procmon) o uno strumento di debug simile per accedere e confrontare il comportamento in un ambiente di lavoro per identificare il problema.
+## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Usare monitoraggio di processo per eseguire il debug di installazione o il caricamento di problemi
+Se il componente aggiuntivo ha problemi di compatibilità durante l'installazione o caricamento, possono essere correlate a problemi di accesso del Registro di sistema o file. Uso [Process Monitor](/sysinternals/downloads/procmon) o uno strumento di debug simile per registrare e confrontare il comportamento in un ambiente di lavoro per consentire di identificare il problema.

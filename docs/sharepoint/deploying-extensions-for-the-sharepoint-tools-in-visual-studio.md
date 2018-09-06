@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b430d1331a12e080d238d34a4817afea8585d1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326865"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774916"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Distribuire le estensioni per gli strumenti di SharePoint in Visual Studio
 
@@ -134,7 +134,7 @@ Le procedure seguenti descrivono come aggiungere voci per il file con estensione
 
 6.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto modello di progetto o modello di elemento e quindi scegliere **Scarica progetto**.
 
-7.  Aprire di nuovo il menu di scelta rapida per il nodo del progetto e quindi scegliere **Edit***NomeProgettoModello***csproj** oppure **Edit***NomeProgettoModello***. vbproj**.
+7.  Aprire di nuovo il menu di scelta rapida per il nodo del progetto e quindi scegliere **Edit**_NomeProgettoModello_**csproj** oppure **Edit**  _NomeProgettoModello_**vbproj**.
 
 8.  Individuare la seguente `VSTemplate` elemento nel file di progetto.
 

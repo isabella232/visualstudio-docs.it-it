@@ -1,5 +1,5 @@
 ---
-title: Pagina pubblica, Progettazione progetti (sviluppo per Office in Visual Studio)
+title: Pagina pubblica, creazione progetti (sviluppo per Office in Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,20 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f1cd13ac0e167b407d01d2a5d769de16f6ce4da0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692844"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672238"
 ---
-# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Pagina pubblica, Progettazione progetti (sviluppo per Office in Visual Studio)
+# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Pagina pubblica, creazione progetti (sviluppo per Office in Visual Studio)
   La pagina **Pubblica** di **Creazione progetti** viene usata per configurare le proprietà per la distribuzione.  
   
  Per accedere a questa pagina, selezionare il progetto in **Esplora soluzioni**, quindi, nel menu **Progetto** , scegliere *NomeProgetto* **Proprietà**. Se la pagina **Pubblica** non viene visualizzata, scegliere la scheda **Pubblica** .  
   
 > [!NOTE]  
->  È anche possibile impostare il percorso di pubblicazione nella **Pubblicazione guidata**. Per altre informazioni, vedere [procedura: pubblicare una soluzione Office tramite ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  È anche possibile impostare il percorso di pubblicazione nella **Pubblicazione guidata**. Per altre informazioni, vedere [procedura: pubblicare una soluzione Office usando ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Posizione cartella di pubblicazione (sito Web, server FTP o percorso file)**  
@@ -42,7 +42,7 @@ ms.locfileid: "34692844"
   
  Le opzioni includono il computer locale, una condivisione file UNC o un sito Web HTTP/HTTPS. Il percorso può essere locale (*c:\foldername\publishfolder*), relativo (*pubblicare\\*), o un percorso completo (*\\\servername\foldername* o http://*servername/foldername*).  
   
- Per impostazione predefinita, il percorso di pubblicazione viene *http://localhost/projectname/* se IIS è installato, o il *pubblicare\\*  directory se non è installato IIS.  
+ Per impostazione predefinita, è il percorso di pubblicazione *http://localhost/projectname/* se è stato installato, IIS o il *pubblicare\\*  directory se non è installato IIS.  
   
  **URL cartella di installazione**  
  Facoltativo.  
@@ -55,7 +55,7 @@ ms.locfileid: "34692844"
   
  Se i file di installazione si trovano in un percorso relativo al documento o al programma di installazione, ad esempio l'opzione CD, lasciare vuota questa casella.  
   
- Questo valore può essere assegnato successivamente da un amministratore. Per altre informazioni, vedere [procedura: modificare il percorso di installazione di una soluzione Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Questo valore può essere assegnato successivamente da un amministratore. Per altre informazioni, vedere [procedura: modificare il percorso di installazione di una soluzione Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Prerequisiti**  
  I prerequisiti possono essere inclusi nel programma di installazione o scaricati su richiesta durante l'installazione.  
@@ -97,10 +97,9 @@ ms.locfileid: "34692844"
   
     -   Carica su richiesta: specifica che il componente aggiuntivo VSTO viene caricato quando lo richiede l'applicazione, ad esempio quando un utente fa clic su un elemento dell'interfaccia utente che usa la funzionalità nel componente aggiuntivo VSTO.  
   
- **Lingua di pubblicazione**  
- Questa opzione imposta la lingua delle Condizioni di licenza software Microsoft e include i Language Pack nell'elenco dei prerequisiti. Non influisce sulla lingua della personalizzazione. La lingua del programma di installazione viene determinata dalle lingue installate di Visual Studio.  
+ **Lingua di pubblicazione** questa opzione imposta la lingua delle condizioni di licenza Software Microsoft e include i language pack nell'elenco dei prerequisiti. Non influisce sulla lingua della personalizzazione. La lingua del programma di installazione viene determinata dalle lingue installate di Visual Studio.  
   
- Per ulteriori informazioni su come modificare la **lingua di pubblicazione**, vedere [procedura: modificare la lingua di pubblicazione per un'applicazione ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+ Per altre informazioni su come modificare la **lingua di pubblicazione**, vedere [procedura: modificare la lingua di pubblicazione per un'applicazione ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
  **Versione di pubblicazione**  
  Imposta il numero di versione per la personalizzazione. Quando il numero di versione viene modificato, l'applicazione viene pubblicata come aggiornamento. Viene creata una nuova cartella per ogni versione durante il processo di compilazione per evitare la sovrascrittura della versione precedentemente pubblicata. Ogni parte della versione di pubblicazione (**Principale**, **Secondaria**, **Compilazione**, **Revisione**) può contenere fino a cinque cifre.  
@@ -113,7 +112,7 @@ ms.locfileid: "34692844"
   
 ## <a name="see-also"></a>Vedere anche  
  [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)   
- [Distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Prerequisiti per la distribuzione di soluzioni Office](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Distribuire una soluzione Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Prerequisiti per la distribuzione di soluzioni Office](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

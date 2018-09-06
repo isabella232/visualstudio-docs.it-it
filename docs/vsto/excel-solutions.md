@@ -29,19 +29,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e2c6e25c3acdfb4c90eb0ba74d66670be339588
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0e37bea181441b7026fdb3ecc1236296409b7749
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672004"
 ---
 # <a name="excel-solutions"></a>soluzioni Excel
-  Visual Studio fornisce modelli di progetto che è possibile usare per creare personalizzazioni a livello di documento e componenti aggiuntivi VSTO per Microsoft Office Excel. È possibile usare queste soluzioni per automatizzare Excel, estenderne le funzionalità e personalizzarne l'interfaccia utente. Per ulteriori informazioni sulle differenze tra personalizzazioni a livello di documento e componenti aggiuntivi VSTO, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  Visual Studio fornisce modelli di progetto che è possibile usare per creare personalizzazioni a livello di documento e componenti aggiuntivi VSTO per Microsoft Office Excel. È possibile usare queste soluzioni per automatizzare Excel, estenderne le funzionalità e personalizzarne l'interfaccia utente. Per altre informazioni sulle differenze tra personalizzazioni a livello di documento e componenti aggiuntivi VSTO, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 > [!NOTE]  
->  Interessati allo sviluppo di soluzioni che estendono l'esperienza di Office in [più piattaforme](https://dev.office.com/add-in-availability)? Vedere la nuova [modello aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office hanno un footprint ridotto rispetto alle soluzioni e i componenti aggiuntivi VSTO e possono essere creati con quasi tutte le tecnologie, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  
+>  Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  
   
  In questo argomento vengono fornite le seguenti informazioni:  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 05/22/2018
   
 -   [Sviluppo di personalizzazioni a livello di documento per Excel](#doclevel).  
   
--   [Lo sviluppo di componenti aggiuntivi VSTO per Excel](#applevel).  
+-   [Sviluppare componenti aggiuntivi VSTO per Excel](#applevel).  
   
 -   [Personalizzare l'interfaccia utente di Excel](#UI).  
   
@@ -61,28 +62,28 @@ ms.lasthandoff: 05/22/2018
 ##  <a name="doclevel"></a> Sviluppo di personalizzazioni a livello di documento per Excel  
  Una personalizzazione a livello di documento per Microsoft Office Excel è costituita da un assembly associato a una cartella di lavoro specifica. L'assembly in genere estende la cartella di lavoro personalizzando l'interfaccia utente e automatizzando Excel. Diversamente da un componente aggiuntivo VSTO a livello di applicazione, associato a Excel stesso, la funzionalità che si implementa in una personalizzazione è disponibile solo quando la cartella di lavoro associata è aperta in Excel.  
   
- Per creare un progetto di personalizzazione a livello di documento per Excel, utilizzare la cartella di lavoro di Excel o i modelli di progetto di modello di Excel nel **nuovo progetto** finestra di dialogo di Visual Studio. Per altre informazioni, vedere [procedura: progetti di Office Create in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Per creare un progetto di personalizzazione a livello di documento per Excel, usare la cartella di lavoro di Excel o modelli di progetto di modello di Excel nella finestra di **nuovo progetto** finestra di dialogo di Visual Studio. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Per ulteriori informazioni sul funzionamento delle personalizzazioni a livello di documento, vedere [architettura delle personalizzazioni a livello di documento di](../vsto/architecture-of-document-level-customizations.md).  
+ Per altre informazioni sul funzionamento di personalizzazioni a livello di documento, vedere [architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md).  
   
-### <a name="excel-customization-programming-model"></a>Modello di programmazione di personalizzazioni di Excel  
+### <a name="excel-customization-programming-model"></a>Modello di programmazione di personalizzazione di Excel  
  Quando si crea un progetto a livello di documento per Excel, in Visual Studio vengono generate diverse classi che costituiscono il fondamento della soluzione: `ThisWorkbook`, `Sheet1`, `Sheet2`e `Sheet3`. Queste classi rappresentano la cartella di lavoro e fogli di lavoro associati alla soluzione e forniscono un punto di partenza per la scrittura del codice.  
   
- Per altre informazioni su queste classi generate e altre funzionalità che è possibile usare in un progetto a livello di documento, vedere [programmare le personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md).  
+ Per altre informazioni su queste classi generate e altre funzionalità che è possibile usare in un progetto a livello di documento, vedere [programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md).  
   
-##  <a name="applevel"></a> Lo sviluppo di componenti aggiuntivi VSTO per Excel  
- Un componente aggiuntivo VSTO per Microsoft Office Excel è costituito da un assembly caricato da Excel. L'assembly in genere estende Excel personalizzando l'interfaccia utente e automatizzando Excel. A differenza di una personalizzazione a livello di documento, associata a una cartella di lavoro specifica, la funzionalità implementata in un componente aggiuntivo VSTO non è limitata a una singola cartella di lavoro.  
+##  <a name="applevel"></a> Sviluppare componenti aggiuntivi VSTO per Excel  
+ Un componente aggiuntivo VSTO per Microsoft Office Excel è costituito da un assembly caricato da Excel. L'assembly in genere estende Excel personalizzando l'interfaccia utente e automatizzando Excel. A differenza di una personalizzazione a livello di documento, il quale è associata a una cartella di lavoro specifico, la funzionalità implementata in un componente aggiuntivo VSTO non è limitata a qualsiasi cartella di lavoro singola.  
   
- Per creare un progetto di componente aggiuntivo VSTO per Excel, utilizzare la cartella di lavoro di Excel o i modelli di progetto di modello di Excel nel **nuovo progetto** finestra di dialogo di Visual Studio. Per altre informazioni, vedere [procedura: progetti di Office Create in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Per creare un progetto di componente aggiuntivo VSTO per Excel, usare la cartella di lavoro di Excel o modelli di progetto di modello di Excel nella finestra di **nuovo progetto** finestra di dialogo di Visual Studio. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Per informazioni generali sul funzionamento dei componenti aggiuntivi VSTO, vedere [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
   
- ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [procedura per automatizzare PowerPoint da un componente aggiuntivo di Excel?](http://go.microsoft.com/fwlink/?LinkID=130300).  
+ ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [procedura per automatizzare PowerPoint da un componente aggiuntivo di Excel?](http://go.microsoft.com/fwlink/?LinkID=130300).  
   
-### <a name="excel-add-in-programming-model"></a>Aggiungi modello di programmazione di Excel  
+### <a name="excel-add-in-programming-model"></a>Excel Add-in modello di programmazione  
  Quando si crea un progetto di componente aggiuntivo VSTO per Excel, Visual Studio genera una classe, chiamata `ThisAddIn`, che costituisce la base della soluzione. Questa classe fornisce un punto di partenza per la scrittura del codice ed espone anche il modello a oggetti di Excel nel componente aggiuntivo VSTO.  
   
- Per ulteriori informazioni sul `ThisAddIn` classe e altre funzionalità di Visual Studio è possibile usare in un componente aggiuntivo VSTO, vedere [programma di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md).  
+ Per altre informazioni sul `ThisAddIn` classe e altre funzionalità di Visual Studio è possibile usare in un componente aggiuntivo VSTO, vedere [programma VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
 ##  <a name="UI"></a> Personalizzare l'interfaccia utente di Excel  
  Sono disponibili diverse modalità per personalizzare l'interfaccia utente di Excel. Alcune opzioni sono disponibili per tutti i tipi di progetto e altre opzioni sono disponibili solo per i componenti aggiuntivi VSTO o le personalizzazioni a livello di documento.  
@@ -93,7 +94,7 @@ ms.lasthandoff: 05/22/2018
 |Attività|Per altre informazioni|  
 |----------|--------------------------|  
 |Personalizzare la barra multifunzione.|[Panoramica della barra multifunzione](../vsto/ribbon-overview.md)|  
-|Aggiungere controlli Windows Form o controlli estesi di Excel a un foglio di lavoro della cartella di lavoro personalizzata per una personalizzazione a livello di documento, o in qualsiasi cartella di lavoro aperta per un componente aggiuntivo VSTO.|[Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Procedura: aggiungere controlli Chart a fogli di lavoro](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Procedura: aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Procedura: aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
+|Aggiungere controlli Windows Form o controlli estesi di Excel a un foglio di lavoro della cartella di lavoro personalizzata per una personalizzazione a livello di documento, o in qualsiasi cartella di lavoro aperta per un componente aggiuntivo VSTO.|[Procedura: aggiungere i controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Procedura: aggiungere controlli Chart a fogli di lavoro](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Procedura: aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Procedura: aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
   
 ### <a name="options-for-document-level-customizations"></a>Opzioni per le personalizzazioni a livello di documento  
  La tabella seguente elenca le opzioni di personalizzazione disponibili solo per le personalizzazioni a livello di documento.  
@@ -117,8 +118,8 @@ ms.lasthandoff: 05/22/2018
 |[Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)|Fornisce informazioni sugli oggetti estesi (forniti da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]) che è possibile usare nelle soluzioni Excel.|  
 |[Globalizzazione e localizzazione di soluzioni di Excel](../vsto/globalization-and-localization-of-excel-solutions.md)|Contiene considerazioni speciali per le soluzioni Excel eseguite in computer che hanno impostazioni di Windows non in inglese.|  
 |[Controlli Windows Form in panoramica di documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Descrive come è possibile aggiungere controlli Windows Form ai fogli di lavoro di Excel.|  
-|[Procedura dettagliata: Creazione di una personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Illustra come creare una personalizzazione di base a livello di documento per Excel.|  
-|[Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)|Mostra come creare un componente aggiuntivo VSTO di base per Excel.|  
+|[Procedura dettagliata: Creare una personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Illustra come creare una personalizzazione di base a livello di documento per Excel.|  
+|[Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)|Mostra come creare un componente aggiuntivo VSTO di base per Excel.|  
 |[Procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione nel progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)|Viene illustrato come aggiungere un pulsante Windows Form, un <xref:Microsoft.Office.Tools.Excel.NamedRange>e un <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in fase di esecuzione usando un componente aggiuntivo VSTO.|
 |[Comprendere la creazione condivisa e componenti aggiuntivi](./understanding-coauthoring-and-addins.md)|Descrive le regolazioni che potrebbe essere necessario apportare alle soluzioni per supportare creazione condivisa.|  
 |[Excel 2010 nello sviluppo per Office](http://go.microsoft.com/fwlink/?LinkId=199011)|Fornisce collegamenti ad articoli e documentazione di riferimento sullo sviluppo di soluzioni Excel. Gli articoli non sono specifici per lo sviluppo di Office usando Visual Studio.|  

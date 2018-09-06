@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: rimuovere a livello di codice tutti i commenti dai documenti | Documenti Microsoft'
+title: 'Procedura: rimuovere a livello di codice tutti i commenti dai documenti'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,25 +16,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19c713356a8949261524eda9f44fee8fae9f9f21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 005414fce7b7bc04c22b266f5f5f6d54a399a182
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672855"
 ---
-# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Procedura: Rimuovere tutti i commenti dai documenti a livello di codice
-  Utilizzare il metodo DeleteAllComments per rimuovere tutti i commenti da un documento di Microsoft Office Word.  
+# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Procedura: rimuovere a livello di codice tutti i commenti dai documenti
+  Usare il `DeleteAllComments` metodo per rimuovere tutti i commenti da un documento di Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-remove-all-comments-from-a-document-that-is-part-of-a-document-level-customization"></a>Per rimuovere tutti i commenti da un documento che fa parte di una personalizzazione a livello di documento  
+## <a name="to-remove-all-comments-from-a-document-that-is-part-of-a-document-level-customization"></a>Per rimuovere tutti i commenti da un documento che fa parte di una personalizzazione a livello di documento  
   
 1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Word.Document.DeleteAllComments%2A> della classe `ThisDocument` nel progetto. Per usare questo esempio di codice, eseguirlo dalla classe `ThisDocument` .  
   
      [!code-vb[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#119)]  
   
-### <a name="to-remove-all-comments-from-a-document-by-using-an-vsto-add-in"></a>Per rimuovere tutti i commenti da un documento usando un componente aggiuntivo VSTO  
+## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>Per rimuovere tutti i commenti da un documento usando un componente aggiuntivo VSTO  
   
 1.  Chiamare il metodo <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Document> da cui si vogliono rimuovere i commenti.  
   

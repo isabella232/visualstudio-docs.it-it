@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla programmazione di componenti aggiuntivi VSTO
+title: Introduzione a programming VSTO Add-ins
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,27 +18,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7249c3971c8008f70b9e5add79adddde17fe6a82
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0443a8fc23c2dc9a78cf35ba8a822fc6627a1c1c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672364"
 ---
-# <a name="get-started-programming-vsto-add-ins"></a>Introduzione alla programmazione di componenti aggiuntivi VSTO
-  È possibile usare componenti aggiuntivi VSTO per automatizzare le applicazioni di Microsoft Office, estendere le funzionalità dell'applicazione e personalizzare l'interfaccia utente dell'applicazione. Per informazioni sul confronto tra componenti aggiuntivi VSTO e altri tipi di soluzioni Office è possibile creare tramite Visual Studio, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+# <a name="get-started-programming-vsto-add-ins"></a>Introduzione a programming VSTO Add-ins
+  È possibile usare componenti aggiuntivi VSTO per automatizzare le applicazioni di Microsoft Office, estendere le funzionalità dell'applicazione e personalizzare l'interfaccia utente dell'applicazione. Per informazioni sulle differenze tra componenti aggiuntivi VSTO per altri tipi di soluzioni Office è possibile creare tramite Visual Studio, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
 ## <a name="create-vsto-add-in-projects"></a>Creare progetti di componente aggiuntivo VSTO  
- Creare progetti di componente aggiuntivo VSTO usando uno dei modelli di progetto del componente aggiuntivo VSTO nella finestra di **nuovo progetto** la finestra di dialogo. Questi modelli includono riferimenti dell'assembly e file di progetto necessari. Visual Studio offre modelli di progetto di componente aggiuntivo VSTO per la maggior parte delle applicazioni di Office.  
+ Creare progetti di componente aggiuntivo VSTO usando uno dei modelli di progetto del componente aggiuntivo VSTO nella finestra di **nuovo progetto** nella finestra di dialogo. Questi modelli includono riferimenti dell'assembly e file di progetto necessari. Visual Studio offre modelli di progetto di componente aggiuntivo VSTO per la maggior parte delle applicazioni di Office.  
   
- Per ulteriori informazioni su come creare un progetto di componente aggiuntivo VSTO, vedere [procedura: progetti di Office Create in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Per ulteriori informazioni sui modelli di progetto, vedere [panoramica dei modelli di progetto Office](../vsto/office-project-templates-overview.md).  
+ Per altre informazioni su come creare un progetto di componente aggiuntivo VSTO, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Per altre informazioni sui modelli di progetto, vedere [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md).  
   
 ## <a name="develop-vsto-add-in-projects"></a>Sviluppare progetti di componente aggiuntivo VSTO  
- Quando si crea un progetto di componente aggiuntivo VSTO, Visual Studio crea automaticamente un *ThisAddIn. vb* (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) o *ThisAddIn.cs* (in c#) i file di codice. Questo file contiene il `ThisAddIn` (classe), che fornisce le basi per il componente aggiuntivo VSTO. È possibile usare i membri di questa classe per eseguire il codice quando il componente aggiuntivo VSTO viene caricato o scaricato, per accedere al modello a oggetti dell'applicazione host e per estendere le funzionalità dell'applicazione. Per altre informazioni, vedere [programma di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md).  
+ Quando si crea un progetto di componente aggiuntivo VSTO, Visual Studio crea automaticamente un *ThisAddIn. vb* (nella [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) oppure *ThisAddIn.cs* (in c#) i file di codice. Questo file contiene il `ThisAddIn` (classe), che fornisce le basi per il componente aggiuntivo VSTO. È possibile usare i membri di questa classe per eseguire il codice quando il componente aggiuntivo VSTO viene caricato o scaricato, per accedere al modello a oggetti dell'applicazione host e per estendere le funzionalità dell'applicazione. Per altre informazioni, vedere [programma VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
-## <a name="automate-applications-by-using-the-object-models"></a>Automatizzare le applicazioni utilizzando i modelli a oggetti  
- I modelli a oggetti delle applicazioni di Microsoft Office espongono molti tipi per i quali è possibile eseguire la programmazione in un componente aggiuntivo VSTO. È possibile utilizzare questi tipi per automatizzare l'applicazione. Ad esempio, a livello di programmazione, è possibile creare e inviare un messaggio di posta elettronica in Outlook o è possibile aprire un documento e aggiungere contenuto in Word. Per ulteriori informazioni su come accedere al modello a oggetti dell'applicazione host nel codice, vedere [programma di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md).  
+## <a name="automate-applications-by-using-the-object-models"></a>Automatizzare le applicazioni usando i modelli a oggetti  
+ I modelli a oggetti delle applicazioni di Microsoft Office espongono molti tipi per i quali è possibile eseguire la programmazione in un componente aggiuntivo VSTO. È possibile utilizzare questi tipi per automatizzare l'applicazione. Ad esempio, a livello di programmazione, è possibile creare e inviare un messaggio di posta elettronica in Outlook o è possibile aprire un documento e aggiungere contenuto in Word. Per altre informazioni su come accedere al modello a oggetti dell'applicazione host nel codice, vedere [programma VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
  Per altre informazioni sui modelli a oggetti di applicazioni specifiche di Microsoft Office, vedere gli argomenti seguenti:  
   
@@ -54,45 +55,45 @@ ms.lasthandoff: 05/22/2018
   
 -   [Soluzioni Project](../vsto/project-solutions.md)  
   
--   [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)  
+-   [Panoramica del modello a oggetti Visio](../vsto/visio-object-model-overview.md)  
   
 ## <a name="customize-the-user-interface-of-applications"></a>Personalizzare l'interfaccia utente delle applicazioni  
- Esistono diversi modi per personalizzare l'interfaccia utente dell'applicazione host mediante un componente aggiuntivo VSTO:  
+ Esistono diversi modi per personalizzare l'interfaccia utente dell'applicazione host usando un componente aggiuntivo VSTO:  
   
--   Per Excel e Word, è possibile aggiungere controlli gestiti ai documenti. Per altre informazioni, vedere [documenti estendere Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+-   Per Excel e Word, è possibile aggiungere controlli gestiti ai documenti. Per altre informazioni, vedere [estendere documenti Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 -   Se l'applicazione la supporta, è possibile personalizzare la barra multifunzione. Per altre informazioni, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
   
 -   Se l'applicazione lo supporta, è possibile creare un riquadro attività personalizzato. Per altre informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).  
   
--   Per Outlook, è possibile creare un'area del modulo personalizzato. Per altre informazioni, vedere [aree del modulo di Outlook creare](../vsto/creating-outlook-form-regions.md).  
+-   Per Outlook, è possibile creare un'area del modulo personalizzato. Per altre informazioni, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).  
   
 -   Per tutte le applicazioni di Microsoft Office, è possibile visualizzare Windows Form nel componente aggiuntivo VSTO.  
   
- Per ulteriori informazioni su come personalizzare le applicazioni dell'interfaccia utente di Microsoft Office, vedere [personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
+ Per altre informazioni su come personalizzare le applicazioni dell'interfaccia utente di Microsoft Office, vedere [personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
   
 ## <a name="next-steps"></a>Passaggi successivi  
  Per informazioni su come creare componenti aggiuntivi VSTO, vedere le procedure dettagliate seguenti:  
   
--   [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
 -   [Procedura dettagliata: Creare il primo aggiuntivo VSTO per Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+-   [Procedura dettagliata: Creare un componente aggiuntivo di VSTO per PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
 -   [Procedura dettagliata: Creare il primo aggiuntivo VSTO per Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+-   [Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
  Queste procedure dettagliate presentano gli strumenti di sviluppo per Office disponibili in Visual Studio e il modello di programmazione per i componenti aggiuntivi VSTO.  
   
- Per un elenco di argomenti che illustrano alcune delle attività comuni nei progetti di Office, vedere [attività comuni nella programmazione con Office](../vsto/common-tasks-in-office-programming.md).  
+ Per un elenco di argomenti che illustrano alcune delle attività comuni nei progetti di Office, vedere [attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Iniziare a &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
  [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Programma-componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)  
+ [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

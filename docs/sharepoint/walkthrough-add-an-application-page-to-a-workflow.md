@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626000"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774588"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro
   Questa procedura dettagliata illustra come aggiungere una pagina dell'applicazione che consente di visualizzare i dati derivati da un flusso di lavoro a un progetto di flusso di lavoro. Essendo basato su progetto descritto nell'argomento [procedura dettagliata: creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -337,7 +337,7 @@ ms.locfileid: "42626000"
 
 14. Ripetere i passaggi da 11 a 13 nell'elenco dei documenti condivisi altri documenti. (Il numero esatto di documenti non è importante.)
 
-15. Visualizzare la pagina di riepilogo dell'applicazione expense report aprendo l'URL seguente in un Web browser: **http://***NomeSistema***/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Visualizzare la pagina di riepilogo dell'applicazione expense report aprendo l'URL seguente in un Web browser: **http://**_NomeSistema_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      La pagina Riepilogo della nota spese Elenca tutte le note spese che supera la quantità allocata e la quantità per che è superato la quantità totale per tutti i report.
 

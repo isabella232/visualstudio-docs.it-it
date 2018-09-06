@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi di sicurezza delle soluzioni Office | Documenti Microsoft
+title: Risolvere i problemi di sicurezza delle soluzioni Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,22 +15,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 547ba6d1e58376c50d0e01ab8fd3d55f62d5a935
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 347cd6cfa1e773d3900e7294d691f061d91a762d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693318"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673210"
 ---
-# <a name="troubleshooting-office-solution-security"></a>Risoluzione dei problemi relativi alla sicurezza delle soluzioni Office
-  In questo argomento contiene suggerimenti per la risoluzione dei problemi comuni che possono verificarsi quando si lavora con sicurezza delle soluzioni Office.  
+# <a name="troubleshoot-office-solution-security"></a>Risolvere i problemi di sicurezza delle soluzioni Office
+  In questo argomento contiene suggerimenti per la risoluzione di problemi comuni che possono verificarsi quando si lavora con sicurezza delle soluzioni Office.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Trusted soluzioni non possono essere installate da siti con restrizioni  
- Gli utenti non è possibile installare una soluzione da un percorso web se il sito Web è presente nell'area siti con restrizioni di Internet Explorer. Questo vale anche se la soluzione è firmata con un certificato attendibile.  
+## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Soluzioni attendibili non possono essere installate da siti con restrizioni  
+ Se il sito Web è contenuto nell'area siti con restrizioni di Internet Explorer, gli utenti non è possibile installare una soluzione da un percorso web. Questo vale anche se la soluzione è firmata con un certificato attendibile.  
   
- L'URL del manifesto di distribuzione può essere suddivise in una delle cinque aree:  
+ L'URL del manifesto della distribuzione può essere classificata in base a una delle cinque aree:  
   
 -   Risorse del Computer  
   
@@ -42,16 +42,16 @@ ms.locfileid: "34693318"
   
 -   Siti con restrizioni  
   
- Se il percorso del manifesto della distribuzione è stato assegnato all'area siti con restrizioni, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non installare la soluzione. Se il percorso è noto e può essere considerato attendibile, l'utente può rimuovere il percorso dall'area siti con restrizioni e installare la soluzione. Per informazioni su come gestire le zone, vedere [di editori attendibili ClickOnce configurazione](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Se il percorso del manifesto della distribuzione è stato assegnato all'area siti con restrizioni, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non installa la soluzione. Se il percorso è noto e può essere considerato attendibile, l'utente può rimuovere il percorso dall'area siti con restrizioni e installare la soluzione. Per informazioni su come gestire le zone, vedere [configurazione di editori attendibili ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
-## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Soluzioni non possono essere installate da condivisioni File di rete o indirizzi di siti Web quando sicurezza avanzata di Internet Explorer o sia installato Internet Explorer 7  
- Internet Explorer Enhanced Security Configuration (IEESC) in Windows Server 2003 e versioni successive e Internet Explorer 7 e versioni successive, in modo significativo limita la capacità degli utenti per accedere a Internet. Quando gli utenti tentano di installare soluzioni Office da un percorso web o condivisione di rete di file, è possibile che venga visualizzato il seguente messaggio di errore: "la funzionalità personalizzata in questa applicazione non funzionerà perché il certificato utilizzato per firmare il manifesto di distribuzione per *SolutionName* non è attendibile. Contattare l'amministratore per ulteriore assistenza."  
+## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Le soluzioni non possono essere installate da condivisioni file di rete o percorsi web quando si installa la funzionalità sicurezza avanzata di Internet Explorer o Internet Explorer 7  
+ Internet Explorer Enhanced Security Configuration (IEESC) in Windows Server 2003 e versioni successive e Internet Explorer 7 e versioni successive, consente di limitare in modo significativo la capacità degli utenti per accedere a Internet. Quando gli utenti provano a installare le soluzioni Office da un percorso di condivisione o web file rete, che venga visualizzato il messaggio di errore seguente: "la funzionalità di personalizzazione in questa applicazione non funzionerà perché il certificato usato per firmare il manifesto di distribuzione per *SolutionName* non è attendibile. Contattare l'amministratore per ottenere assistenza."  
   
- Con IEESC e Internet Explorer 7 e versioni successive, se l'URL del manifesto della distribuzione è stato categorizzato nell'area Internet, il manifesto deve essere un certificato da un autore attendibile o non è possibile installare la soluzione. Senza IEESC, il comportamento predefinito è per richiedere all'utente finale per prendere una decisione di attendibilità.  
+ Con IEESC e Internet Explorer 7 e versioni successive, se l'URL del manifesto della distribuzione è stato categorizzato nell'area Internet, il manifesto deve avere un certificato da un autore attendibile o non è possibile installare la soluzione. Senza IEESC, il comportamento predefinito è per richiedere all'utente finale per prendere una decisione di attendibilità.  
   
- Gestire l'effetto di IEESC e Internet Explorer 7 e versioni successive, identificare i siti Web e i percorsi UNC universal naming convention (UNC) che si considera attendibile e li aggiunge a una delle aree di sicurezza con attendibilità (intranet locale o siti attendibili). Per informazioni su come gestire le zone, vedere [configurazione di editori attendibili ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Per gestire l'effetto di IEESC e Internet Explorer 7 e versioni successive, identificare i siti Web e percorsi UNC universal naming convention (UNC) che si considera attendibile e aggiungerli a una delle aree di sicurezza attendibile (intranet locale o siti attendibili). Per informazioni su come gestire le zone, vedere [editori attendibili ClickOnce configurare](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Sicurezza delle soluzioni Office](../vsto/securing-office-solutions.md)  
+ [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)  
   
   

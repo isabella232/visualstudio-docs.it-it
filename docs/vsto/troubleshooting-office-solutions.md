@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi delle soluzioni Office
+title: Risolvere i problemi di soluzioni Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,22 +17,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f3fa22f6f6c0b6bb980be28faa46912bacbe341
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693185"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671884"
 ---
-# <a name="troubleshoot-office-solutions"></a>Risolvere i problemi delle soluzioni Office
+# <a name="troubleshoot-office-solutions"></a>Risolvere i problemi di soluzioni Office
   Questa sezione contiene suggerimenti per la risoluzione di problemi comuni che si potrebbero incontrare quando si creano soluzioni usando gli strumenti di sviluppo per Office in Visual Studio.  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
  [Risolvere gli errori nelle soluzioni Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Descrive i problemi comuni che potrebbero verificarsi durante la progettazione, l'esecuzione e il test di soluzioni Office in Visual Studio.  
   
- [Procedura: riabilitare un componente aggiuntivo VSTO che è stato disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
- Descrive come riabilitare un componente aggiuntivo VSTO che è stato disabilitato con o senza chiusura imprevista.  
+ [Procedura: riabilitare un VSTO Add-in è stato disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ Descrive come riabilitare un componente aggiuntivo in VSTO che è stato disabilitato hardware o software.  
   
  [Supporto aggiuntivo per gli errori nelle soluzioni Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
  Descrive altre risorse per la risoluzione dei problemi relativi a errori e avvisi in soluzioni Office.  
@@ -50,7 +50,7 @@ ms.locfileid: "34693185"
  [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)  
  Contiene argomenti che illustrano come le soluzioni Office includano le funzioni di sicurezza disponibili in .NET Framework.  
   
- [Attività comuni nella programmazione con Office](../vsto/common-tasks-in-office-programming.md)  
+ [Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)  
  Elenca domande frequenti sulla programmazione di soluzioni Office e fornisce collegamenti che possono consentire la risoluzione di problemi comuni.  
   
   

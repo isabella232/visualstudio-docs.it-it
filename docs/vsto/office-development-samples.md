@@ -1,5 +1,5 @@
 ---
-title: Esempi di sviluppo di Office | Documenti Microsoft
+title: Esempi di sviluppo Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571417"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672743"
 ---
 # <a name="office-development-samples"></a>Esempi di sviluppo Office
   Visual Studio include applicazioni di esempio che illustrano come usare Microsoft Office Developer Tools per creare soluzioni Office. Il codice in questi esempi illustra la sintassi, la struttura e le tecniche usate per creare soluzioni Office.  
   
- Per esempi più aggiornati, vedere [esempi per sviluppatori MSDN: imparare dagli codice](http://go.microsoft.com/fwlink/?LinkID=248199) del sito Web Microsoft.  
+ Per gli esempi più aggiornati, vedere [esempi per sviluppatori MSDN: imparare attraverso il codice](http://go.microsoft.com/fwlink/?LinkID=248199) del sito Web Microsoft.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -44,7 +44,7 @@ ms.locfileid: "34571417"
 |Esempio di interoperabilità VBA e VSTO|Illustra come chiamare un metodo in una personalizzazione a livello di documento per Excel da codice Visual Basic, Applications Edition (VBA) contenuto nella cartella di lavoro.<br /><br /> Questo esempio è disponibile solo online.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Esempi per sviluppatori MSDN: imparare dagli esempi di codice](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Attività comuni nella programmazione con Office](../vsto/common-tasks-in-office-programming.md)  
+ [Esempi per sviluppatori MSDN: imparare attraverso esempi di codice](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)  
   
   

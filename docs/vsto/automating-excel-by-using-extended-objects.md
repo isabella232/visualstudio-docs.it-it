@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 234436b0c8b81d4de83e00b1bb3635916eb459b8
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767754"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673370"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automazione di Excel usando oggetti estesi
   Quando si sviluppano soluzioni Excel in Visual Studio, è possibile usare *elementi host* e *controlli host*nelle soluzioni. Si tratta di oggetti che estendono determinati oggetti usati comunemente nel modello a oggetti di Excel (cioè, il modello a oggetti esposto dall'assembly di interoperabilità primario per Excel), come ad esempio gli oggetti <xref:Microsoft.Office.Interop.Excel.Worksheet> e <xref:Microsoft.Office.Interop.Excel.Range> . Gli oggetti estesi si comportano come gli oggetti di Excel sui quali si basano, ma forniscono funzionalità aggiuntive come ad esempio nuovi eventi e funzionalità di data binding agli oggetti.  
@@ -40,7 +40,7 @@ ms.locfileid: "34767754"
 ## <a name="excel-host-items"></a>Elementi host di Excel  
  I progetti Excel consentono l'accesso a diversi elementi host:  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Questo elemento host rappresenta un foglio di lavoro del progetto. Viene anche usato come contenitore per controlli gestiti, inclusi i controlli host e quelli Windows Form e gestisce informazioni relative ai controlli della relativa area. Per altre informazioni, vedere [elemento host Worksheet](../vsto/worksheet-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Questo elemento host contiene e rappresenta un foglio di lavoro nel progetto. Viene anche usato come contenitore per controlli gestiti, inclusi i controlli host e quelli Windows Form e gestisce informazioni relative ai controlli della relativa area. Per altre informazioni, vedere [elemento host Worksheet](../vsto/worksheet-host-item.md).  
   
 -   <xref:Microsoft.Office.Tools.Excel.Workbook>. Questo elemento host rappresenta la cartella di lavoro del progetto e viene usato come contenitore per i componenti condivisi da tutti i fogli di lavoro nella cartella di lavoro. Per altre informazioni, vedere [elemento host Workbook](../vsto/workbook-host-item.md).  
   
@@ -48,23 +48,23 @@ ms.locfileid: "34767754"
   
      Quando si aggiunge un foglio grafico in fase di progettazione come nuovo foglio nel progetto di personalizzazione a livello di documento di Microsoft Office Excel, Visual Studio crea automaticamente un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> .  
   
-     Sebbene un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> sia un foglio di lavoro in Excel, non è possibile aggiungere alcun controllo al foglio grafico. Se si vuole disporre di altri controlli in un foglio di lavoro con un grafico, non usare un foglio grafico. Al contrario, è possibile usare un grafico come oggetto incorporato in un foglio di lavoro usando il controllo host <xref:Microsoft.Office.Tools.Excel.Chart> . Per altre informazioni, vedere [grafico controllo](../vsto/chart-control.md).  
+     Sebbene un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> sia un foglio di lavoro in Excel, non è possibile aggiungere alcun controllo al foglio grafico. Se si vuole disporre di altri controlli in un foglio di lavoro con un grafico, non usare un foglio grafico. Al contrario, è possibile usare un grafico come oggetto incorporato in un foglio di lavoro usando il controllo host <xref:Microsoft.Office.Tools.Excel.Chart> . Per altre informazioni, vedere [controllo del grafico](../vsto/chart-control.md).  
   
 ## <a name="excel-host-controls"></a>controlli host di Excel  
  Vi sono vari controlli per Excel che consentono di creare, organizzare e automatizzare le cartelle e i fogli di lavoro. Si tratta di controlli host che forniscono funzionalità di data binding ed eventi che non sono disponibili nelle rispettive controparti del modello a oggetti di Excel nativo.  
   
  Per altre informazioni sui controlli host da poter usare in progetti Excel, vedere i seguenti argomenti:  
   
--   [Chart (controllo)](../vsto/chart-control.md)  
+-   [Controllo Chart](../vsto/chart-control.md)  
   
 -   [ListObject (controllo)](../vsto/listobject-control.md)  
   
 -   [NamedRange (controllo)](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange (controllo)](../vsto/xmlmappedrange-control.md)  
+-   [Controllo XmlMappedRange](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: controlli ListObject riempimento con dati](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Procedura: controlli riempimento ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Procedura: aggiungere controlli Chart a fogli di lavoro](../vsto/how-to-add-chart-controls-to-worksheets.md)   
  [Procedura: aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [Procedura: aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
@@ -72,12 +72,12 @@ ms.locfileid: "34767754"
  [Procedura: ridimensionare i controlli NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Procedura: ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Procedura: convalidare dati quando viene aggiunta una nuova riga a un controllo ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Procedura: delle colonne ListObject mappa ai dati](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Procedura: colonne di mappa ListObject ai dati](../vsto/how-to-map-listobject-columns-to-data.md)   
  [Procedura dettagliata: Programmazione per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Estendere i documenti di Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)   
  [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Elementi host e Cenni preliminari sui controlli host](../vsto/host-items-and-host-controls-overview.md)   
+ [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f25a5e18e78025811e26210de53413b668385539
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566538"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774778"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
 È possibile installare un linguaggio specifico di dominio nel proprio computer o in altri computer. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deve essere già installato nel computer di destinazione.
@@ -36,7 +36,7 @@ ms.locfileid: "39566538"
 
     1.  Nella **Esplora soluzioni**, fare doppio clic il **DslPackage** del progetto e quindi fare clic su **Apri cartella in Esplora Windows**.
 
-    2.  Individuare il file **bin\\\*\\***YourProject***. DslPackage.vsix**
+    2.  Individuare il file **bin\\\*\\**_YourProject_**. DslPackage.vsix**
 
 2.  Copia il **VSIX** file nel computer di destinazione in cui si desidera installare il linguaggio DSL. Può trattarsi del computer in uso o di un altro computer.
 

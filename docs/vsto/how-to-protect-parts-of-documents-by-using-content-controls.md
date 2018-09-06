@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: proteggere parti di documenti mediante controlli contenuto | Documenti Microsoft'
+title: 'Procedura: proteggere parti di documenti mediante controlli contenuto'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a72603f71395bbbf8e167b6a2361f7d8b2a30a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6cbe73fb5da7ae5d0efa01e1e7c6fb0068310ad2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672818"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: proteggere parti di documenti mediante i controlli del contenuto
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: proteggere parti di documenti mediante controlli contenuto
   Quando si protegge parte di un documento, si impedisce agli utenti di modificare o eliminare il contenuto in quella parte del documento. È possibile proteggere parti di un documento di Microsoft Office Word usando i controlli contenuto in diversi modi.  
   
 -   È possibile proteggere un controllo del contenuto.  
@@ -36,24 +37,24 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-##  <a name="EditDeleteControl"></a> La protezione di un controllo contenuto  
- È possibile impedire agli utenti di modificare o eliminare un controllo del contenuto impostando le proprietà del controllo in un progetto a livello di documento in fase di progettazione o di esecuzione.  
+##  <a name="EditDeleteControl"></a> Proteggere un controllo del contenuto  
+ È possibile impedire agli utenti di modificare o eliminare un controllo contenuto impostando le proprietà del controllo in un progetto a livello di documento in fase di progettazione o in fase di esecuzione.  
   
- È anche possibile proteggere i controlli del contenuto aggiunti a un documento in fase di esecuzione con un progetto di componente aggiuntivo VSTO. Per ulteriori informazioni, vedere [procedura: aggiungere controlli contenuto ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ È anche possibile proteggere i controlli del contenuto aggiunti a un documento in fase di esecuzione con un progetto di componente aggiuntivo VSTO. Per altre informazioni, vedere [procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
-#### <a name="to-protect-a-content-control-at-design-time"></a>Per proteggere un controllo del contenuto in fase di progettazione  
+### <a name="to-protect-a-content-control-at-design-time"></a>Per proteggere un controllo del contenuto in fase di progettazione  
   
 1.  Nel documento contenuto nella finestra di progettazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], selezionare il controllo del contenuto da proteggere.  
   
 2.  Nel **proprietà** finestra, impostare una o entrambe le proprietà seguenti:  
   
-    -   Per impedire agli utenti di modificare il controllo, impostare **LockContents** a **True**.  
+    -   Per impedire agli utenti di modificare il controllo, impostare **LockContents** al **True**.  
   
-    -   Per impedire agli utenti di eliminare il controllo, impostare **LockContentControl** a **True**.  
+    -   Per impedire agli utenti di eliminare il controllo, impostare **LockContentControl** al **True**.  
   
 3.  Fare clic su **OK**.  
   
-#### <a name="to-protect-a-content-control-at-run-time"></a>Per proteggere un controllo del contenuto in fase di esecuzione  
+### <a name="to-protect-a-content-control-at-runtime"></a>Per proteggere un controllo contenuto in fase di esecuzione  
   
 1.  Impostare il `LockContents` proprietà del controllo contenuto a **true** per impedire agli utenti di modificare il controllo e impostare il `LockContentControl` proprietà **true** per impedire agli utenti di eliminare il controllo.  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]
      [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
   
-## <a name="protecting-a-part-of-a-document-that-is-not-in-a-content-control"></a>Protezione di una parte di un documento non presente in un controllo del contenuto  
+## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>Proteggere una parte di un documento che non è in un controllo contenuto  
  È possibile impedire agli utenti di modificare un'area di un documento inserendo l'area in un controllo <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Questa operazione è utile negli scenari seguenti:  
   
 -   Si vuole proteggere un'area che non contiene i controlli del contenuto.  
@@ -75,22 +76,22 @@ ms.lasthandoff: 04/16/2018
 -   Si vuole proteggere un'area che contiene i controlli del contenuto, ma il testo o gli altri elementi da proteggere non sono nei controlli del contenuto.  
   
 > [!NOTE]  
->  Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. Per impedire agli utenti di modificare un controllo contenuto incorporato, utilizzare il **LockContents** proprietà del controllo.  
+>  Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. Per impedire agli utenti di modificare un controllo contenuto incorporato, usare il **LockContents** proprietà del controllo.  
   
-#### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Per proteggere un'area di un documento in fase di progettazione  
+### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Per proteggere un'area di un documento in fase di progettazione  
   
 1.  Nel documento contenuto nella finestra di progettazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], selezionare l'area da proteggere.  
   
 2.  Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .  
   
     > [!NOTE]  
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: visualizzare la scheda Sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-3.  Nel **controlli** gruppo, fare clic su di **gruppo** pulsante a discesa e quindi fare clic su **gruppo**.  
+3.  Nel **controlli** gruppo, fare clic sui **gruppo** pulsante elenco a discesa e quindi fare clic su **gruppo**.  
   
-     L'oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> contenente l'area protetta viene automaticamente generato nella classe `ThisDocument` del progetto. Un bordo che rappresenta il controllo di gruppo è visibile in fase di progettazione, ma non esiste alcun bordo visibile in fase di esecuzione.  
+     L'oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> contenente l'area protetta viene automaticamente generato nella classe `ThisDocument` del progetto. Un bordo che rappresenta il controllo di gruppo è visibile in fase di progettazione, ma non vi è alcun bordo visibile in fase di esecuzione.  
   
-#### <a name="to-protect-an-area-of-a-document-at-run-time"></a>Per proteggere un'area di un documento in fase di esecuzione  
+### <a name="to-protect-an-area-of-a-document-at-runtime"></a>Per proteggere un'area di un documento in fase di esecuzione  
   
 1.  Selezionare a livello di codice l'area da proteggere, quindi chiamare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> per creare un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
   
@@ -106,9 +107,9 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Automazione di Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)   
- [Controlli contenuto](../vsto/content-controls.md)   
- [Procedura: aggiungere controlli contenuto ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Panoramica degli elementi e dei controlli host](../vsto/host-items-and-host-controls-overview.md)   
- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Controlli del contenuto](../vsto/content-controls.md)   
+ [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)   
+ [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)  
    

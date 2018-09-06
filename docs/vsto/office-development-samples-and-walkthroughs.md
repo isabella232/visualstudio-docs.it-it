@@ -1,5 +1,5 @@
 ---
-title: Procedure dettagliate ed esempi di sviluppo di Office | Documenti Microsoft
+title: Procedure dettagliate ed esempi di sviluppo office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,31 +23,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae0594107d4ffbfa09d33a3e5bff20f65ea48ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572686"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672866"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Procedure dettagliate ed esempi di sviluppo office
-  In questa sezione contiene applicazioni di esempio, il codice di esempio e dettagliate che illustrano la sintassi, struttura e le tecniche utilizzate per compilare soluzioni Microsoft Office.  
+  In questa sezione contiene le applicazioni di esempio, codice di esempio e istruzioni dettagliate che illustrano la sintassi, struttura e le tecniche usate per compilare soluzioni di Microsoft Office.  
   
  Il codice di esempio è destinato a scopo informativo e non deve essere utilizzato nelle soluzioni distribuite senza modifiche. In particolare, sicurezza deve essere presi in considerazione maggiore.  
   
  Per informazioni sulla protezione delle applicazioni, vedere [soluzioni Office Secure](../vsto/securing-office-solutions.md).  
   
 > [!NOTE]  
->  Interessati allo sviluppo di soluzioni che estendono l'esperienza di Office in [più piattaforme](https://dev.office.com/add-in-availability)? Vedere la nuova [modello aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office hanno un footprint ridotto rispetto alle soluzioni e i componenti aggiuntivi VSTO e possono essere creati con quasi tutte le tecnologie, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  
+>  Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
-|[Esempi di sviluppo Office](../vsto/office-development-samples.md)|Vengono forniti collegamenti ad applicazioni di esempio che illustrano l'utilizzo di sviluppo per Office e SharePoint in Visual Studio.|  
-|[Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)|Vengono elencate procedure dettagliate che offrono un'introduzione agli strumenti di sviluppo per Office in Visual Studio e illustrano come integrare nelle applicazioni aziendali di Office Word.|  
-|[Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)|Vengono elencate procedure dettagliate che offrono un'introduzione agli strumenti di sviluppo per Office in Visual Studio e illustrano come integrare nelle applicazioni aziendali di Office Excel.|  
-|[Dati nelle procedure dettagliate di soluzioni Office](../vsto/data-in-office-solutions-walkthroughs.md)|Vengono elencate procedure dettagliate che illustrano come utilizzare i dati nelle soluzioni.|  
+|[Esempi di sviluppo Office](../vsto/office-development-samples.md)|Vengono forniti collegamenti alle applicazioni di esempio che illustrano l'uso di sviluppo per Office e SharePoint in Visual Studio.|  
+|[Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)|Elenca le guide dettagliate forniscono un'introduzione agli strumenti di sviluppo per Office in Visual Studio che consentono di illustrare come integrare nelle applicazioni aziendali di Office Word.|  
+|[Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)|Elenca le guide dettagliate forniscono un'introduzione agli strumenti di sviluppo per Office in Visual Studio che consentono di illustrare come integrare nelle applicazioni aziendali di Office Excel.|  
+|[Dati nelle procedure dettagliate di soluzioni Office](../vsto/data-in-office-solutions-walkthroughs.md)|Elenca le procedure dettagliate che illustrano come usare i dati nelle soluzioni.|  
 |[Procedure dettagliate di personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization-walkthroughs.md)|Vengono elencate procedure dettagliate che illustrano come è possibile personalizzare l'interfaccia utente (UI) delle applicazioni Microsoft Office.|  
 |[Procedure dettagliate di sicurezza e distribuzione](../vsto/security-and-deployment-walkthroughs.md)|Vengono elencate procedure dettagliate che illustrano come è possibile impostare criteri di sicurezza per consentire l'esecuzione della soluzione e come è possibile distribuire la soluzione.|  
   
@@ -55,10 +55,10 @@ ms.locfileid: "34572686"
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
-|[Iniziare a &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Vengono forniti collegamenti a informazioni sull'installazione, i modelli di progetto, assembly di interoperabilità primari di Office e nuove funzionalità di sviluppo per Office.|  
-|[Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Viene illustrato il codice gestito funzionamento delle soluzioni Office dal punto di vista dello sviluppatore e l'utente finale e include informazioni sul funzionamento del codice gestito come documenti di Office e applicazioni.|  
-|[Attività comuni nella programmazione con Office](../vsto/common-tasks-in-office-programming.md)|Elenca le domande frequenti sulla programmazione con sviluppo per Office in Visual Studio e vengono forniti collegamenti ad argomenti che consentono di risolvere i problemi comuni.|  
-|[Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)|Vengono forniti collegamenti a informazioni su come creare soluzioni Microsoft Office e sul ruolo degli assembly nella soluzione.|  
+|[Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Vengono forniti collegamenti alle informazioni sull'installazione, i modelli di progetto, assembly di interoperabilità primari di Office e nuove funzionalità di sviluppo per Office.|  
+|[Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Viene illustrato il codice gestito funzionamento delle soluzioni Office dal punto di vista dello sviluppatore e l'utente finale e include informazioni sul modo in cui del codice gestito con i documenti di Office e le applicazioni.|  
+|[Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)|Elenca le domande frequenti sulla programmazione con sviluppo per Office in Visual Studio e fornisce collegamenti ad argomenti che consentono di risolvere i problemi comuni.|  
+|[Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)|Vengono forniti collegamenti a informazioni su come creare soluzioni Microsoft Office e sul ruolo degli assembly nella soluzione.|  
 |[Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)|Viene fornita una panoramica del riquadro attività a livello di documento denominato nel riquadro azioni.|  
   
   

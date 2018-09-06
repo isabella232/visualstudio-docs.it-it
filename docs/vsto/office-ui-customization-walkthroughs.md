@@ -18,24 +18,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b4935d0256eb1a5aab57f24a884232e9d97b29c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 93a945278d2565bb98706e9303bc662a78cd00ee
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693156"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672858"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Procedure dettagliate di personalizzazione dell'interfaccia utente di Office
   Le procedure dettagliate seguenti mostrano come personalizzare l'interfaccia utente delle applicazioni di Microsoft Office usando le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.  
   
-## <a name="actions-pane-walkthroughs"></a>Procedure dettagliate di riquadro azioni  
+## <a name="actions-pane-walkthroughs"></a>Procedure dettagliate riquadro azioni  
  [Procedura dettagliata: Inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
  Mostra come creare un riquadro azioni in un documento Word. Il riquadro azioni contiene due controlli che inviano l'input utente al documento.  
   
- [Procedura dettagliata: Associare dati ai controlli in un riquadro azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
+ [Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
  Mostra come associare i controlli in un riquadro azioni di Word ai dati. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.  
   
- [Procedura dettagliata: Associare dati ai controlli in un riquadro azioni di Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
+ [Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
  Descrive come aggiungere controlli associati a un'origine dati a un riquadro azioni in Excel.  
   
 ## <a name="custom-task-pane-walkthroughs"></a>Procedure dettagliate di riquadro attività personalizzato  
@@ -60,12 +60,12 @@ ms.locfileid: "34693156"
   
 ## <a name="controls-on-word-documents"></a>Controlli nei documenti di Word  
  [Procedura dettagliata: Aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
- Mostra come aggiungere i controlli a un documento usando un componente aggiuntivo VSTO.  
+ Illustra come aggiungere controlli a un documento mediante un componente aggiuntivo VSTO.  
   
- [Procedura dettagliata: Modifica la formattazione dei documenti mediante i controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
+ [Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
  Mostra come modificare la formattazione in un documento Word usando le caselle di controllo in una personalizzazione a livello di documento.  
   
- [Procedura dettagliata: Visualizzare il testo in una casella di testo in un documento mediante un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
+ [Procedura dettagliata: Visualizzazione di testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  Illustra come usare i pulsanti e le caselle di testo nei documenti Word.  
   
  [Procedura dettagliata: Aggiornamento di un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
@@ -73,12 +73,12 @@ ms.locfileid: "34693156"
   
 ## <a name="controls-on-excel-worksheets"></a>Controlli nei fogli di lavoro di Excel  
  [Procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
- Mostra come aggiungere i controlli a un foglio di lavoro usando un componente aggiuntivo VSTO.  
+ Mostra come aggiungere controlli a un foglio di lavoro mediante un componente aggiuntivo VSTO.  
   
- [Procedura dettagliata: Modifica del foglio di lavoro della formattazione mediante i controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
+ [Procedura dettagliata: Modifica del foglio di lavoro della formattazione mediante controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
  Fornisce le nozioni di base sull'uso di caselle di controllo in un foglio di lavoro di Excel per modificare la formattazione.  
   
- [Procedura dettagliata: Visualizzare il testo in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
+ [Procedura dettagliata: Visualizzazione di testo in una casella di testo in un foglio di lavoro tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
  Fornisce le nozioni di base sull'uso di pulsanti e caselle di testo in fogli di lavoro di Excel.  
   
  [Procedura dettagliata: Aggiornamento di un grafico in un foglio di lavoro mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
@@ -89,8 +89,8 @@ ms.locfileid: "34693156"
  [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)   
  [Dati nelle procedure dettagliate di soluzioni Office](../vsto/data-in-office-solutions-walkthroughs.md)   
  [Procedure dettagliate di sicurezza e distribuzione](../vsto/security-and-deployment-walkthroughs.md)   
- [Iniziare a &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Attività comuni nella programmazione con Office](../vsto/common-tasks-in-office-programming.md)   
- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)   
+ [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
   
   
