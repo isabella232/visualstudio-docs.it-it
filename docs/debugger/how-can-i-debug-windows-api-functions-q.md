@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042f243c0469b8b37e301cf5c9f2410cf201f7be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 7cc765c6da62973469280e97759fbab566ca6f37
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058610"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281676"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Come è possibile eseguire il debug di funzioni API Windows?
 Per eseguire il debug di una funzione API Windows con NT Symbols caricato, effettuare le operazioni seguenti.  
@@ -41,7 +41,7 @@ Per eseguire il debug di una funzione API Windows con NT Symbols caricato, effet
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Per ottenere il nome decorato, vedere [visualizzazione di nomi decorati](http://msdn.microsoft.com/en-us/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Per ottenere il nome decorato, vedere [visualizzazione di nomi decorati](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Domande frequenti sul codice nativo debug](../debugger/debugging-native-code-faqs.md)   

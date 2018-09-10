@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512253"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280571"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Novità di estendibilità di Visual Studio 2017
 
@@ -73,7 +73,7 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    In fase di esecuzione, il sottosistema di pkgdef Visual Studio consentirà di unire queste voci nel file di configurazione di runtime del processo di Visual Studio (sotto *[VSAPPDATA]\devenv.exe.config*) come [ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx) elementi. Questo è il modo consigliato per consentire il processo di Visual Studio a trovare l'assembly, in quanto evita la ricerca tramite percorsi di probe.
+    In fase di esecuzione, il sottosistema di pkgdef Visual Studio consentirà di unire queste voci nel file di configurazione di runtime del processo di Visual Studio (sotto *[VSAPPDATA]\devenv.exe.config*) come [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementi. Questo è il modo consigliato per consentire il processo di Visual Studio a trovare l'assembly, in quanto evita la ricerca tramite percorsi di probe.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reazione a questa modifica di rilievo
 
@@ -87,7 +87,7 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 
 ### <a name="global-com-registration"></a>Registrazione COM globale
 
-* Visual Studio installato in precedenza, numero di chiavi del Registro di sistema nell'hive HKEY_LOCAL_MACHINE e HKEY_CLASSES_ROOT per supportare registrazione COM nativa. Per eliminare tale impatto, Visual Studio Usa ora [attivazione senza registrazione per i componenti COM](https://msdn.microsoft.com/en-us/library/ms973913.aspx).
+* Visual Studio installato in precedenza, numero di chiavi del Registro di sistema nell'hive HKEY_LOCAL_MACHINE e HKEY_CLASSES_ROOT per supportare registrazione COM nativa. Per eliminare tale impatto, Visual Studio Usa ora [attivazione senza registrazione per i componenti COM](https://msdn.microsoft.com/library/ms973913.aspx).
 * Di conseguenza, la maggior parte delle TLB / OLB / file DLL in % ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv non vengono più installati per impostazione predefinita da Visual Studio. Questi file vengono ora installati in [INSTALLDIR] con manifesti di Registration-Free COM corrispondenti utilizzati dal processo host di Visual Studio.
 * Di conseguenza, il codice esterno che si basa su registrazione COM globale per le interfacce COM di Visual Studio non sono più disponibili queste registrazioni. Codice in esecuzione nel processo di Visual Studio non visualizzerà una differenza.
 
@@ -106,5 +106,5 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 
 * Codice esterno deve essere convertito per utilizzare l'attivazione senza registrazione per nonché i componenti COM.
 * Componenti esterni possono trovare il percorso di Visual Studio [seguendo le istruzioni riportate qui](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
-* Si consiglia di usano i componenti esterni le [esterno Settings Manager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) anziché la lettura/scrittura direttamente alle chiavi del Registro di sistema di Visual Studio.
+* Si consiglia di usano i componenti esterni le [esterno Settings Manager](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) anziché la lettura/scrittura direttamente alle chiavi del Registro di sistema di Visual Studio.
 * Controllare se i componenti che di estensione Usa hanno implementato un'altra tecnica per la registrazione. Ad esempio, le estensioni del debugger possono essere in grado di sfruttare i vantaggi della nuova [msvsmon registrazione COM file JSON](migrate-debugger-COM-registration.md).

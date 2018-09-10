@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla modifica di codice in Visual Studio
+title: Introduzione alla modifica
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 420250a9e8dc99d6a02505efa7efb8f44e287e12
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511235"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626527"
 ---
-# <a name="quickstart-use-the-code-editor"></a>Guida introduttiva: Usare l'editor del codice
+# <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
 In questa introduzione all'editor di codice di Visual Studio della durata di 10 minuti si aggiunge codice a un file per vedere in che modo Visual Studio semplifica la scrittura, la navigazione e la comprensione del codice.
 
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
-Questa guida introduttiva presuppone una certa familiarità con un linguaggio di programmazione. In caso contrario, è consigliabile leggere prima di tutto una delle guide introduttive alla programmazione, ad esempio su come creare un'app Web con [Python](../ide/quickstart-python.md) o [C#](../ide/tutorial-csharp-aspnet-core.md) oppure come creare un'app console con [Visual Basic](../ide/quickstart-visual-basic-console.md) o [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Questa articolo presuppone una certa familiarità con un linguaggio di programmazione. In caso contrario, è consigliabile leggere prima di tutto una delle guide introduttive alla programmazione, ad esempio su come creare un'app Web con [Python](../ide/quickstart-python.md) o [C#](../ide/tutorial-csharp-aspnet-core.md) oppure come creare un'app console con [Visual Basic](../ide/quickstart-visual-basic-console.md) o [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Creare un nuovo file di codice
 
@@ -157,16 +157,8 @@ Quando si inizia a creare codice è facile commettere errori e quindi dover modi
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Questa guida introduttiva per l'editor di Visual Studio è stata completata. È successivamente possibile provare altre guide introduttive per l'ambiente di sviluppo di Visual Studio.
-
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Guida introduttiva: Personalizzare Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
+> [Introduzione a progetti e soluzioni](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

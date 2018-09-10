@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513273"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627071"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -105,15 +105,13 @@ Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerime
 Sono state presentate solo alcune delle funzionalità di Visual Studio per iniziare ad acquisire familiarità con l'interfaccia utente. Per esplorare ulteriormente:
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Personalizzare l'IDE](../ide/quickstart-personalize-the-ide.md)
+> [Informazioni sull'editor del codice](../ide/quickstart-editor.md)
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Scrivere codice nell'editor](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
+> [Guida introduttiva: progetti e soluzioni](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
-- [Funzionalità di Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Altre funzionalità di Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Modificare i colori del tema e del carattere](../ide/quickstart-personalize-the-ide.md)

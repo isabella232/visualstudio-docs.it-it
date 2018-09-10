@@ -1,6 +1,6 @@
 ---
-title: Spostarsi all'interno del codice in Visual Studio
-ms.date: 09/26/2017
+title: Comandi di spostamento per il codice
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9293565b4a238b1486f491c5a343d83364fba088
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448610"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626822"
 ---
 # <a name="navigate-code"></a>Spostarsi all'interno del codice
 
@@ -80,15 +80,23 @@ Per Vai a sono disponibili i comandi seguenti, a cui si accede dal menu **Modifi
 
 - **Vai alla riga** (**CTRL**+**G**): consente di passare al numero di riga specificato nel documento attivo.
 
-- **Vai a tutti** (**CTRL**+**T** o **CTRL**+**,** ): consente di passare alla riga, al tipo, al file, al membro o al simbolo specificato.
+- **Vai a tutti** o **CTRL**+**T** o **CTRL**+**,**: consente di passare alla riga, al tipo, al file, al membro o al simbolo specificato.
 
-- **Vai al file** (**CTRL**+**1**, **CTRL**+**F**): consente di passare al file specificato nella soluzione.
+- **Vai al file** o **CTRL**+**1**, **CTRL**+**F**: consente di passare al file specificato nella soluzione.
 
-- **Vai al tipo** (**CTRL**+**1**, **CTRL**+**T**): consente di passare al tipo specificato nella soluzione.
+- **Go To Recent File** (Vai a file recenti) o **CTRL**+**1**, **CTRL**+**R**: consente di passare al fine usato di recente specificato nella soluzione (novità in Visual Studio 2017 versione 15.8).
 
-- **Vai al membro** (**CTRL**+**1**, **CTRL**+**M**): consente di passare al membro specificato nella soluzione.
+- **Vai al tipo** o **CTRL**+**1**, **CTRL**+**T**: consente di passare al tipo specificato nella soluzione.
 
-- **Vai al simbolo** (**CTRL**+**1**, **CTRL**+**S**): consente di passare al simbolo specificato nella soluzione.
+- **Go To Member** (Vai al membro) o **CTRL**+**1**, **CTRL**+**M**: consente di passare al membro specificato nella soluzione.
+
+- **Go To Symbol** (Vai al simbolo) o **CTRL**+**1**, **CTRL**+**S**): consente di passare al simbolo specificato nella soluzione.
+
+In Visual Studio 2017 versione 15.8 e versioni successive, sono disponibili anche i comandi di spostamento **Vai a** seguenti:
+
+- **Go To Next Issue in File** (Vai al problema successivo nel file) o **ALT**+**PGGIÙ** e **Go To Previous Issue in File** (Vai al problema precedente nel file) o **ALT** + **PGSU**
+
+- **Vai alla posizione dell'ultima modifica** o **CTRL**+**MAIUSC**+**BACKSPACE**
 
 Per altre informazioni su questi comandi, vedere l'argomento relativo alla [ricerca di codice con i comandi Vai a](../ide/go-to.md).
 

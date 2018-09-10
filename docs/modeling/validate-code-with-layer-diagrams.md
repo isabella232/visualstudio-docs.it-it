@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 85c7aad0ef5f9374c722a58ec35c001695e55013
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 018b6a2f26f9b83b50498c6a0ec1e560fea94267
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567194"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280688"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -218,7 +218,7 @@ In questa versione di Visual Studio, si verifica la convalida delle dipendenze i
 
  Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors). Per altre informazioni su [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], vedere:
 
--   [Compilazione e versione](/vsts/build-release/index)
+-   [Pipeline di Azure](/azure/devops/pipelines/index)
 
 -   [Utilizzare il modello predefinito per il processo di compilazione](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 

@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 138567792ed57aff0c1471b7f9004999c357764b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057213"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281106"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Individuazione di perdite di memoria tramite la libreria CRT
 Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappresentato dalle perdite di memoria, ovvero dall'impossibilità di deallocare correttamente la memoria allocata in precedenza. Una piccola perdita di memoria potrebbe passare inosservata, ma nel tempo può causare problemi come un calo delle prestazioni o l'arresto anomalo in caso di completo esaurimento della memoria. Nel peggiore dei casi, un'applicazione che usa tutta la memoria disponibile può causare l'arresto di un'altra applicazione, rendendo più difficile l'individuazione dell'applicazione responsabile del problema. Anche le perdite di memoria apparentemente inoffensive possono essere indice di altri problemi che è necessario correggere.  
@@ -108,7 +108,7 @@ Object dump complete.
   
 -   Numero di allocazione della memoria, che in questo esempio è `18`  
   
--   [Tipo di blocco](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)che in questo esempio è `normal` .  
+-   Il [tipo di blocco](https://msdn.microsoft.com/library/e2f42faf-0687-49e7-aa1f-916038354f97), ovvero `normal` in questo esempio.  
   
 -   Posizione esadecimale della memoria che in questo esempio è `0x00780E80` .  
   

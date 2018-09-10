@@ -1,5 +1,5 @@
 ---
-title: Introduzione a progetti e soluzioni in Visual Studio
+title: Introduzione a progetti e soluzioni
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512304"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626939"
 ---
-# <a name="quickstart-projects-and-solutions"></a>Guida introduttiva: Progetti e soluzioni
+# <a name="learn-about-projects-and-solutions"></a>Informazioni su progetti e soluzioni
 
-Questa guida introduttiva di 10 minuti esamina che cosa significa creare una *soluzione* e un *progetto* in Visual Studio. Una soluzione è un contenitore che consente di organizzare uno o più progetti di codice correlati, ad esempio, una libreria di classi e il progetto di test corrispondente. Si esaminano le proprietà di un progetto e alcuni dei file che può contenere. Verrà anche creato un riferimento da un progetto a un altro.
+Questa articolo introduttivo spiega che cosa significa creare una *soluzione* e un *progetto* in Visual Studio. Una soluzione è un contenitore che consente di organizzare uno o più progetti di codice correlati, ad esempio, una libreria di classi e il progetto di test corrispondente. Si esaminano le proprietà di un progetto e alcuni dei file che può contenere. Verrà anche creato un riferimento da un progetto a un altro.
 
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
@@ -176,19 +176,9 @@ La riga del file di codice C# contenente l'attributo <xref:System.Runtime.Compil
 
 Per verificare che l'unit test funzioni scegliere **Test** > **Esegui** > **Tutti i test** nella barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
 
-La guida introduttiva è stata completata. Ora può risultare utile vedere altre guide introduttive di Visual Studio o apprendere altre informazioni sulla [creazione di progetti e soluzioni](../ide/creating-solutions-and-projects.md).
-
-> [!div class="nextstepaction"]
-> [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Guida introduttiva: Personalizzare Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>Vedere anche
 
+- [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md)
 - [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)
 - [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

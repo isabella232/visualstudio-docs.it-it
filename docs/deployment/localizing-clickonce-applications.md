@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8341568fdc272bcb45184d9d263bceae792036
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078966"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279342"
 ---
 # <a name="localize-clickonce-applications"></a>Localizzare le applicazioni ClickOnce
 La localizzazione è il processo di adattamento di un'applicazione a impostazioni cultura specifiche. Questo processo consiste nel tradurre il testo dell'interfaccia utente in una lingua specifica di un paese/area geografica, usare la formattazione di data e valuta corretta, regolare la dimensione dei controlli di un form e, se necessario, eseguire il mirroring dei controlli da destra verso sinistra.  
@@ -53,7 +53,7 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
  Il vantaggio di questo approccio è dato dalla possibilità di creare un'unica distribuzione e di semplificare il processo della distribuzione localizzata. In fase di esecuzione verrà usato l'assembly satellite appropriato, a seconda delle impostazioni cultura predefinite del sistema operativo Windows dell'utente. L'inconveniente di questo approccio riguarda il fatto che, ogni volta che l'applicazione viene installata o aggiornata in un computer client, vengono scaricati tutti gli assembly satellite. Se nell'applicazione è contenuto un numero elevato di stringhe o i clienti hanno una connessione di rete lenta, questo processo può influire sulle prestazioni durante l'aggiornamento dell'applicazione.  
   
 > [!NOTE]
->  Con questo approccio si presuppone che l'applicazione regoli automaticamente l'altezza, la larghezza e la posizione dei controlli per adattare dimensioni diverse delle stringhe di testo nelle varie impostazioni cultura. In Windows Form è disponibile un'ampia gamma di controlli e tecnologie che consentono di progettare il form in modo da facilitarne la localizzazione, inclusi i controlli <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> e la proprietà <xref:System.Windows.Forms.Control.AutoSize%2A>.  Vedere anche [procedura: supportare la localizzazione in Windows Form usando AutoSize e il controllo TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+>  Con questo approccio si presuppone che l'applicazione regoli automaticamente l'altezza, la larghezza e la posizione dei controlli per adattare dimensioni diverse delle stringhe di testo nelle varie impostazioni cultura. In Windows Form è disponibile un'ampia gamma di controlli e tecnologie che consentono di progettare il form in modo da facilitarne la localizzazione, inclusi i controlli <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> e la proprietà <xref:System.Windows.Forms.Control.AutoSize%2A>.  Vedere anche [procedura: supportare la localizzazione in Windows Form usando AutoSize e il controllo TableLayoutPanel](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Generare una distribuzione per ogni impostazione cultura  
  In questa strategia di distribuzione vengono generate più distribuzioni. In ogni distribuzione viene incluso solo l'assembly satellite necessario per impostazioni cultura specifiche e la distribuzione viene contrassegnata come specifica di tali impostazioni cultura.  
@@ -69,7 +69,7 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
   
  Il download degli assembly satellite su richiesta differisce leggermente dal download degli altri tipi di assembly su richiesta. Per altre informazioni ed esempi di codice su come abilitare questo scenario mediante il [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] degli strumenti per [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vedere [procedura dettagliata: download di assembly Satellite su richiesta con l'API della distribuzione ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Questo scenario può essere attivato anche in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Vedere anche [Procedura dettagliata: Download di assembly satellite su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) o [Procedura dettagliata: Download di assembly satellite su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Questo scenario può essere attivato anche in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Vedere anche [procedura dettagliata: download di assembly Satellite su richiesta con la distribuzione ClickOnce API tramite la finestra di progettazione](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) o [procedura dettagliata: download di assembly Satellite su richiesta con l'API della distribuzione ClickOnce Usando la finestra di progettazione](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Test delle applicazioni ClickOnce localizzate prima della distribuzione  
  Un assembly satellite verrà usato per un'applicazione Windows Form solo se la proprietà <xref:System.Threading.Thread.CurrentUICulture%2A> per il thread principale dell'applicazione è impostata sulle impostazioni cultura dell'assembly satellite. È probabile che i clienti nei mercati locali eseguano già una versione localizzata di Windows con il valore predefinito appropriato specificato per le impostazioni cultura.  

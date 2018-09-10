@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbe18bcfdc4b90960abeae9ae88dcee8817780b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 533db5643359c245b2fc725e1eebcbb39487317b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388124"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627110"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -104,12 +104,13 @@ Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerime
 
 Sono state presentate solo alcune delle funzionalità di Visual Studio per iniziare ad acquisire familiarità con l'interfaccia utente. Per esplorare ulteriormente:
 
-- Per esplorare in maggior dettaglio Visual Studio ed esercitarsi con il debug, vedere [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Informazioni sull'editor del codice](../ide/quickstart-editor.md)
 
-- Consultare la sezione **Elementi generali dell'interfaccia utente** della documentazione di Visual Studio, che illustra in modo più approfondito finestre come l'[Elenco errori](../ide/reference/error-list-window.md), la [finestra di output](../ide/reference/output-window.md), la [finestra Proprietà](../ide/reference/properties-window.md) e la [finestra di dialogo Opzioni](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Guida introduttiva: progetti e soluzioni](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Guida introduttiva: Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Guida introduttiva: Scrivere codice nell'editor](../ide/quickstart-editor.md)
-- [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
+- [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
+- [Modificare i colori del tema e del carattere](../ide/quickstart-personalize-the-ide.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddTypeLib | Documenti Microsoft
+title: IActiveScriptAuthor::AddTypeLib | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 150628f1822c721f1e349005de457951e226ef1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e1122b5327da5573071bc534b5eb1a16fa69b873
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645621"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283379"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
-Aggiunge una libreria dei tipi nello spazio dei nomi per lo script.  
+Aggiunge una libreria dei tipi dello spazio dei nomi per lo script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,10 +47,10 @@ HRESULT AddTypeLib(
  [in] Il numero di versione principale.  
   
  `dwMinor`  
- [in] Numero di versione secondario.  
+ [in] Il numero di versione secondario.  
   
  `dwFlags`  
- [in] Non usato.  
+ [in] Non utilizzato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -60,9 +60,9 @@ HRESULT AddTypeLib(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo chiama `LoadTypeLib` per caricare la libreria dei tipi. Al completamento dell'operazione, questo metodo chiama `IActiveScriptAuthor::AddNamedItem` per aggiungere informazioni sul tipo.  
+ Questo metodo chiama `LoadTypeLib` per caricare la libreria dei tipi. Al termine dell'operazione, questo metodo chiama `IActiveScriptAuthor::AddNamedItem` per aggiungere le informazioni sul tipo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
- [LoadTypeLib](http://msdn.microsoft.com/en-us/155b48e5-5438-409e-9342-630a6a500f60)
+ [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

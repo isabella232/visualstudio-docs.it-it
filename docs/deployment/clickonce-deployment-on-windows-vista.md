@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4113c2e33e3be97a5102f5e5eca0344087a49c6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 815186959d4a8cd1daea46c69bda976eb4483c1f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078397"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282586"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Distribuzione ClickOnce in Windows Vista
 
@@ -54,6 +54,6 @@ Visual Studio offre le seguenti opzioni per la generazione del manifesto:
   
 ## <a name="see-also"></a>Vedere anche  
  [Distribuzione e protezione ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Autorizzazioni utente e Visual Studio](http://msdn.microsoft.com/en-us/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
+ [Autorizzazioni utente e Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
  [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)  (Applicazione (pagina), Creazione progetti (C#))  
  [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

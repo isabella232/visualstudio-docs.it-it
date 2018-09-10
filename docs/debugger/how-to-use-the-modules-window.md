@@ -1,5 +1,5 @@
 ---
-title: Visualizza le DLL e file eseguibili nel Debugger | Documenti Microsoft
+title: Visualizzare le DLL e file eseguibili nel Debugger | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,16 +25,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46dc913b95396e16f208611bcfc926378609bef6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f582c435239c83503b179d6bb5e142936a41cb4b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476660"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279011"
 ---
-# <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>Visualizzare le DLL e file eseguibili utilizzando la finestra moduli nel Debugger di Visual Studio
+# <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>Visualizzare le DLL e file eseguibili tramite la finestra moduli nel Debugger di Visual Studio
  
-Il **moduli** finestra sono elencate le DLL e file eseguibili (EXE) che vengono utilizzati dal programma e Mostra le informazioni rilevanti per ognuno. 
+Il **moduli** finestra sono elencate le DLL e file eseguibili (EXE) che vengono utilizzati dal programma e Visualizza informazioni rilevanti per ognuno. 
 
 > [!NOTE]
 >  Questa funzionalità non è disponibile per il debug di script o SQL. 
@@ -49,32 +49,32 @@ Il **moduli** finestra sono elencate le DLL e file eseguibili (EXE) che vengono 
   
 -   Fare clic sul pulsante nella parte superiore della colonna.  
   
-     È possibile caricare simboli o specificare un percorso simboli dal **moduli** finestra usando il menu di scelta rapida.  
+     È possibile caricare i simboli o specificare un percorso simboli dal **moduli** finestra usando il menu di scelta rapida.  
   
 ## <a name="loading-symbols"></a>Caricamento dei simboli  
- Nel **moduli** finestra, è possibile visualizzare i moduli di caricati simboli di debug. Queste informazioni sono visualizzate le **stato simboli** colonna. Se viene visualizzato lo stato **loadingCannot ignorati trovare o aprire il file PDB**, o **caricamento disabilitato dall'impostazione include/exclude**, è possibile utilizzare il debugger per scaricare i simboli di simboli pubblici Microsoft Server o per caricare i simboli da una directory del simbolo sul computer. Per altre informazioni, vedere [specificare simboli (PDB) e file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ Nel **moduli** finestra, è possibile vedere quali moduli sono caricati i simboli di debug. Queste informazioni sono visualizzate le **stato simboli** colonna. Se lo stato è indicato **Skipped loadingCannot trovare o aprire il file PDB**, o **caricamento disabilitato dall'impostazione include/exclude**, è possibile usare il debugger per scaricare i simboli dai simboli pubblici Microsoft i server o per caricare i simboli da una directory di simboli nel computer. Per altre informazioni, vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 #### <a name="to-load-symbols-manually"></a>Per caricare i simboli manualmente  
   
-1.  Nel **moduli** , il pulsante destro finestra un modulo per cui non sono stati caricati i simboli.  
+1.  Nel **moduli** finestra, pulsante destro del mouse un modulo per il quale non sono stati caricati i simboli.  
   
-2.  Scegliere **Carica simboli da** e quindi fare clic su **server dei simboli Microsoft** o **percorso dei simboli**.  
+2.  Puntare **Carica simboli da** e quindi fare clic su **server dei simboli Microsoft** oppure **percorso dei simboli**.  
   
 #### <a name="to-change-symbol-load-settings"></a>Per modificare le impostazioni di caricamento dei simboli  
   
-1.  Nel **moduli** finestra, fare doppio clic su qualsiasi modulo.  
+1.  Nel **moduli** finestra, fare doppio clic su qualsiasi modulo MSIL.  
   
-2.  Fare clic su **le impostazioni dei simboli**.  
+2.  Fare clic su **delle impostazioni dei simboli**.  
   
-     È ora possibile modificare le impostazioni di caricamento dei simboli, come descritto in [specificare percorsi dei simboli e il comportamento di caricamento](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Riavviare la sessione di debug per rendere effettive le modifiche.  
+     È ora possibile modificare le impostazioni di caricamento di simboli, come descritto in [specificare i percorsi dei simboli e il comportamento di caricamento](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Riavviare la sessione di debug per rendere effettive le modifiche.  
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>Per modificare il comportamento di caricamento dei simboli per un modulo specifico  
   
-1.  Nel **moduli** finestra, fare doppio clic sul modulo.  
+1.  Nel **moduli** finestra, fare clic sul modulo.  
   
-2.  Scegliere **impostazioni caricamento automatico simboli** e quindi fare clic su **Carica sempre manualmente** o **predefinito**. Riavviare la sessione di debug per rendere effettive le modifiche.  
+2.  Puntare **impostazioni caricamento automatico simboli** e quindi fare clic su **Carica sempre manualmente** oppure **predefinito**. Riavviare la sessione di debug per rendere effettive le modifiche.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interruzione dell'esecuzione](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Interruzione dell'esecuzione](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
  [Visualizzazione dei dati nel Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Specificare i simboli (PDB) e file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

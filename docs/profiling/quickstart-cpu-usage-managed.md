@@ -2,7 +2,7 @@
 title: Analizzare i dati d'uso della CPU (codice gestito)
 description: Misurare le prestazioni delle app in C# e Visual Basic con lo strumento di diagnostica Utilizzo CPU
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206850"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626860"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (codice gestito)
 
@@ -26,11 +26,15 @@ Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi
 
 L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. L'hub diagnostica offre molte altre opzioni per la registrazione e l'analisi di questo tipo di dati.
 
+Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**. In Windows 7 e versioni successive, è possibile usare lo strumento di relazione finale, il [profiler delle prestazioni](../profiling/profiling-feature-tour.md).
+
 ## <a name="create-a-project"></a>Creare un progetto
 
 1. In Visual Studio scegliere **File** > **Nuovo progetto**.
 
 2. In **Visual C#** o **Visual Basic** scegliere **Desktop di Windows** e quindi nel riquadro al centro scegliere **App console (.NET Framework)**.
+
+    Se non viene visualizzato il modello di progetto **Applicazione console**, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
 
 3. Digitare un nome come **MyProfilingApp** e fare clic su **OK**.
 

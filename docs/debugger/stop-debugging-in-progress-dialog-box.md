@@ -1,5 +1,5 @@
 ---
-title: Arrestare il debug nella finestra di dialogo stato | Documenti Microsoft
+title: Arrestare il debug nella finestra di dialogo di avanzamento | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,21 +21,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7eca0124869a9c636738c8641f5d2e97e63404
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e13967cc18fae8d837cc71ea8a91c60f2b1bb
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475686"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281195"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Terminazione debug in corso (finestra di dialogo)
 Questa finestra di dialogo viene visualizzata quando il debugger tenta di interrompere una sessione di debug, ma questa operazione richiede tempo. L'interruzione di una sessione di debug è in genere un'operazione molto veloce e questa finestra di dialogo non viene visualizzata. Talvolta, tuttavia, è necessario più tempo per la disconnessione da tutti i processi in fase di debug. Se l'interruzione della sessione richiede diversi secondi o si verifica un errore di disconnessione, viene visualizzata questa finestra di dialogo. Se ciò avviene di frequente, è possibile che sia presente un problema interno. Può quindi essere opportuno contattare il Servizio Supporto Tecnico Clienti Microsoft.  
   
- È possibile attendere il disconnessione dei processi questa finestra di dialogo scomparsa o usare il **Termina ora** pulsante per forzare l'interruzione immediata.  
+ È possibile attendere il disconnessione dei processi e questa finestra di dialogo, o usare il **Termina ora** pulsante per forzare la terminazione immediata.  
   
- **Arresta**  
- Fare clic su questo pulsante per terminare immediatamente la sessione di debug. Utilizzando **Termina ora** termineranno anziché scollegare i processi in corso il debug. Se si esegue il debug di processi di sistema, interruzione di tali processi con **Termina ora** può avere effetti imprevisti e indesiderati.  
+ **Interrompere ora**  
+ Fare clic su questo pulsante per terminare immediatamente la sessione di debug. Usando **Termina ora** terminerà, anziché disconnessi i processi in corso il debug. Se si esegue il debug di processi di sistema, terminazione tali processi con **Termina ora** può avere effetti imprevisti e indesiderati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Disconnessione di programmi](http://msdn.microsoft.com/en-us/f2c756c2-8079-474b-94c2-01c19a141a01)
+ [Disconnessione di programmi](/previous-versions/visualstudio/visual-studio-2010/x1thkxez(v=vs.100))

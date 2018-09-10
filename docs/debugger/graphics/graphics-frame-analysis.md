@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512057"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280079"
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio per analizzare e ottimizzare le prestazioni di rendering del gioco o dell'app Direct3D.  
@@ -34,7 +34,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
   
  Anche se l'analisi dei frame è stata progettata principalmente per permettere di ottenere prestazioni di rendering migliori, può anche aiutare a ottenere una qualità visiva superiore per una destinazione di prestazioni specifica o a ridurre il consumo di energia della GPU.  
   
- Per visualizzare una dimostrazione di ciò che è possibile eseguire l'analisi dei Frame per l'app, è possibile guardare il [Frame analisi grafica di Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video su Channel 9.  
+ Per visualizzare una dimostrazione di ciò che è possibile eseguire l'analisi dei Frame per l'app, è possibile guardare il [Frame analisi grafica di Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video su Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Uso dell'analisi dei frame  
  Prima di potere usare l'analisi dei frame è necessario acquisire informazioni sugli elementi grafici dall'app durante l'esecuzione, esattamente come si farebbe con gli altri strumenti di Analizzatore grafica. Nella finestra del documento (. vsglog) log della grafica, quindi scegliere il **analisi dei Frame** scheda.  
@@ -72,14 +72,14 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 #### <a name="timeline"></a>Sequenza temporale  
  La sequenza temporale mostra una panoramica dei tempi reciproci di chiamata di disegno. Poiché le barre più larghe corrispondono a tempi di disegno più lunghi, è possibile usarla per individuare rapidamente le chiamate di disegno più dispendiose nel frame. Se il frame acquisito include un numero elevato di chiamate di disegno, più chiamate di disegno saranno combinate in un'unica barra, la cui lunghezza corrisponde alla somma delle chiamate di disegno specifiche.  
   
- ![La sequenza temporale Mostra disegno&#45;chiamare i costi. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![La sequenza temporale Mostra disegno&#45;chiamare i costi. ](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  È possibile posizionare il puntatore su una barra per verificare l'evento di chiamata di disegno a cui corrisponde la barra. Se si seleziona la barra, l'elenco di eventi sarà sincronizzato in base all'evento specifico.  
   
 #### <a name="table"></a>Tabella  
  La tabella numerica sotto la sequenza temporale mostra le prestazioni relative di ogni variante di rendering per ogni chiamata di disegno rispetto al rendering predefinito dell'app. Ogni colonna mostra una diversa variante di rendering e ogni riga rappresenta una chiamata di disegno diversa, identificata nella colonna più a sinistra. È possibile seguire i collegamenti relativi a un evento per visualizzarlo nella finestra Elenco eventi grafici.  
   
- ![La tabella riepilogo Mostra diverse varianti. ] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![La tabella riepilogo Mostra diverse varianti. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  La seconda colonna da sinistra nella tabella Riepilogo mostra il tempo di rendering iniziale, ovvero il tempo necessario per il completamento della chiamata di disegno da parte del rendering predefinito dell'app. Le colonne rimanenti mostrano le prestazioni relative di ogni variante di rendering sotto forma di percentuale del valore di base, in modo da permettere di individuare con facilità eventuali miglioramenti nelle prestazioni. Le percentuali superiori al 100% hanno richiesto un tempo superiore rispetto al valore di base, ovvero indicano un calo nelle prestazioni, mentre le percentuali inferiori al 100% hanno richiesto meno tempo, ovvero indicano un miglioramento nelle prestazioni.  
   
@@ -88,7 +88,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 #### <a name="hot-draw-calls"></a>Chiamate di disegno "problematiche"  
  Per evidenziare le chiamate di disegno che consumano una proporzione maggiore del tempo di rendering complessivo o che potrebbero essere insolitamente lente per motivi evitabili, la riga che include queste chiamate di disegno "problematiche" avrà ombreggiatura di colore rosso quando la rispettiva durata iniziale supera di più di una deviazione standard la durata media iniziale di tutte le chiamate di disegno nel frame.  
   
- ![Questa chiamata a DrawIndexed contiene varianti a caldo e a freddo. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![Questa chiamata a DrawIndexed contiene varianti a caldo e a freddo. ](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Rilevanza statistica  
  Per evidenziare le variazioni di rendering con rilevanza maggiore, l'analisi dei frame determina la rilevanza statistica di ogni variante di rendering e mostra in grassetto le varianti più significative. Le varianti che migliorano le prestazioni sono mostrate in verde, mentre quelle che le riducono sono mostrate in rosso. I risultati non significativi a livello statistico sono mostrati in testo normale.  
@@ -103,12 +103,12 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Piattaforme che non supportano i contatori hardware  
  La maggior parte delle piattaforme non offre il supporto completo per i contatori GPU hardware, incluse tutte le GPU attualmente fornite da Intel, AMD e nVidia. Se non sono presenti contatori hardware da raccogliere, sarà visualizzata solo una tabella Dettagli, che include la durata media assoluta di tutte le varianti.  
   
- ![La tabella di dettagli e alcune varianti di riproduzione. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![La tabella di dettagli e alcune varianti di riproduzione. ](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Piattaforme che supportano i contatori hardware  
  Per le piattaforme che supportano i contatori GPU hardware, ad esempio nVidia T40 SOC e tutti i SOC Qualcomm, sono visualizzate alcune tabelle Dettagli, una per ogni variante. Ogni contatore hardware disponibile è raccolto per ogni variante di rendering ed è visualizzato nella tabella Dettagli specifica.  
   
- ![I contatori hardware vengono visualizzati se supportati. ] (media/pix_frame.png "pix_frame")  
+ ![I contatori hardware vengono visualizzati se supportati. ](media/pix_frame.png "pix_frame")  
   
  Le informazioni relative ai contatori hardware offrono una visualizzazione molto dettagliata del comportamento specifico della piattaforma hardware per ogni chiamata di disegno, che possono aiutare a identificare con grande precisione la causa dei colli di bottiglia relativi alle prestazioni.  
   

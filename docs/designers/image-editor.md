@@ -1,34 +1,33 @@
 ---
 title: Editor di immagini
-ms.date: 11/04/2016
+ms.date: 08/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e57139c4b24ffc3b615a0794a26b8569339c003
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978463"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627213"
 ---
 # <a name="image-editor"></a>Editor immagini
 
-Questo documento descrive come usare l'editor di immagini di Visual Studio per visualizzare e modificare le risorse di trama e di immagine.
+Questo articolo descrive come usare l'**editor di immagini** di Visual Studio per visualizzare e modificare la trama e le risorse di immagine.
 
- L'editor di immagini consente di applicare tipi di formati di trama e di immagine completi da usare per lo sviluppo di app DirectX. Nell'editor è incluso il supporto per formati di file di immagine e codifiche dei colori comuni, per funzionalità come i canali alfa e il mapping MIP e per molti dei formati di trama con accelerazione hardware e ad alta compressione supportati da DirectX.
+Con l'**editor di immagini** è possibile usare i tipi di formati avanzati per trame e immagini, che vengono impiegati nello sviluppo di app DirectX. Nell'editor è incluso il supporto per formati di file di immagine e codifiche dei colori comuni, per funzionalità come i canali alfa e il mapping MIP e per molti dei formati di trama con accelerazione hardware e ad alta compressione supportati da DirectX.
 
 ## <a name="supported-formats"></a>Formati supportati
 
-L'editor di immagini supporta questi formati di immagine:
+L'**editor di immagini** supporta i formati di immagine seguenti:
 
 |Nome del formato|Estensione del file|
 |-----------------|-------------------------|
@@ -44,59 +43,77 @@ L'editor di immagini supporta questi formati di immagine:
 
 Questa sezione descrive come aggiungere un'immagine al progetto Visual Studio e configurarla in base ai propri requisiti.
 
-### <a name="to-add-an-image-to-your-project"></a>Per aggiungere un'immagine al progetto
+### <a name="add-an-image-to-your-project"></a>Aggiungere un'immagine al progetto
 
-1.  In **Esplora soluzioni** aprire il menu di scelta rapida del progetto a cui si vuole aggiungere l'immagine e scegliere **Aggiungi** > **Nuovo elemento**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto a cui si vuole aggiungere l'immagine e scegliere **Aggiungi** > **Nuovo elemento**.
 
-2.  Nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato**, selezionare **Grafica** e quindi selezionare un formato di file appropriato per l'immagine. Per informazioni su come scegliere un formato di file in base ai requisiti, vedere la sezione seguente.
+2. Nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato**, selezionare **Grafica** e quindi selezionare un formato di file appropriato per l'immagine.
 
-3.  Specificare i campi **Nome** e **Posizione** per indicare rispettivamente il nome del file di immagine e la posizione in cui si vuole crearlo.
+   > [!NOTE]
+   > Se non viene visualizzata la categoria **Grafica** nella finestra di dialogo **Aggiungi nuovo elemento**, potrebbe essere necessario installare il componente **Editor di immagini e modelli 3D**. Chiudere la finestra di dialogo e selezionare **Strumenti** > **Get Tools and Features** (Ottieni strumenti e funzionalità) dalla barra dei menu per aprire il **programma di installazione di Visual Studio**. Selezionare la scheda **Singoli componenti** e il componente **Editor di immagini e modelli 3D** nella categoria **Giochi e grafica**. Selezionare **Modifica**.
+   >
+   > ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
+   >
+   > Se è installato il componente **Editor di immagini e modelli 3D** e non viene comunque visualizzata la categoria di modello **Grafica**, questa categoria viene visualizzata solo per determinati tipi di progetto, ad esempio applicazioni console.
 
-4.  Scegliere il pulsante **Aggiungi**.
+   Per informazioni su come scegliere un formato di file in base ai requisiti, vedere la sezione [Scelta del formato dell'immagine](#choose-the-image-format).
+
+3. Specificare il **Nome** e la **Posizione** in cui si desidera creare il file di immagine.
+
+4. Scegliere il pulsante **Aggiungi**.
 
 ### <a name="choose-the-image-format"></a>Scelta del formato dell'immagine
 
-A seconda di come si prevede di usare l'immagine, alcuni formati di file possono essere più appropriati di altri. Ad esempio, alcuni formati possono non supportare una funzionalità di cui si ha bisogno, come la trasparenza o uno specifico formato del colore, o possono non offrire un adeguato sistema di compressione per il contenuto dell'immagine.
+A seconda di come si prevede di usare l'immagine, alcuni formati di file possono essere più appropriati di altri. Alcuni formati, ad esempio, potrebbero non supportare una funzionalità necessaria, quali il formato trasparenza o un formato di colore specifico. Alcuni formati potrebbero non offrire la compressione adatta per il tipo di contenuto dell'immagine pianificata.
 
- Le informazioni seguenti possono essere utili per scegliere un formato di immagine adatto alle proprie esigenze.
+Le informazioni seguenti possono essere utili per scegliere un formato di immagine adatto alle proprie esigenze:
 
- **Immagine bitmap (.bmp)** Formato dell'immagine bitmap. Un formato di immagine non compresso che supporta colori a 24 bit. Il formato bitmap non supporta la trasparenza.
+**Immagine bitmap (estensione bmp)**
 
- **Immagine GIF (.gif)** Formato di immagine GIF (Graphics Interchange Format). Un formato di immagine senza perdita di dati con compressione LZW che supporta fino a 256 colori. Non è adatto a fotografie e immagini con una quantità significativa di dettagli di colore, ma offre dei buoni rapporti di compressione per le immagini con un numero limitato di colori che hanno un alto livello di coerenza nei colori.
+Formato dell'immagine bitmap. Un formato di immagine non compresso che supporta colori a 24 bit. Il formato bitmap non supporta la trasparenza.
 
- **Immagine JPG (.jpg)** Formato di immagine JPEG (Joint Photographic Experts Group). Un formato di immagine a elevata compressione e con perdita di dati che supporta colori a 24 bit ed è adatto alla compressione per scopi generici delle immagini che hanno un alto livello di coerenza nei colori.
+**Immagine GIF (estensione gif)**
 
- **Immagine PNG (.png)** 
+Formato di immagine GIF (Graphics Interchange Format). Un formato di immagine senza perdita di dati con compressione LZW che supporta fino a 256 colori. Non è adatto a fotografie e immagini con una quantità significativa di dettagli di colore, ma offre dei buoni rapporti di compressione per le immagini con un numero limitato di colori che hanno un alto livello di coerenza nei colori.
+
+**Immagine JPG (estensione jpg)**
+
+Formato di immagine JPEG (Joint Photographic Experts Group). Un formato di immagine a elevata compressione e con perdita di dati che supporta colori a 24 bit ed è adatto alla compressione per scopi generici di immagini che hanno un alto livello di coerenza nei colori.
+
+**Immagine PNG (estensione png)**
+
 Formato di immagine PNG (Portable Network Graphics). Un formato di immagine con compressione moderata e senza perdita di dati che supporta colori a 24 bit e trasparenza alfa. È adatto alle immagini naturali e artificiali, ma non fornisce buoni rapporti di compressione come i formati con perdita di dati quali JPG o GIF.
 
- **Immagine TIFF (.tif)** Formato di immagine TIFF o TIF (Tagged Image File Format). Un formato di immagine flessibile che supporta diversi schemi di compressione.
+**Immagine TIFF (estensione tif)**
 
- **Trama DDS (.dds)** Formato di trama DDS (DirectDraw Surface). Un formato di trama a elevata compressione e con perdita di dati che supporta colori a 24 bit e trasparenza alfa. I rapporti di compressione possono essere al massimo di 8:1. Si basa sulla tecnologia di compressione S3 Texture Compression, che può essere decompressa nell'hardware grafico.
+Formato di immagine TIFF o TIF (Tagged Image File Format). Un formato di immagine flessibile che supporta diversi schemi di compressione.
 
- **Immagine TGA (.tga)** Formato di immagine TGA (Truevision Graphics Adapter), noto anche come Targa. Un formato di immagine senza perdita di dati con compressione RLE che supporta sia immagini con colori mappati (tavolozza dei colori) sia immagini con colori diretti, con colori fino a 24 bit e trasparenza alfa. Non è adatto a fotografie e immagini con una quantità significativa di dettagli di colore, ma offre dei buoni rapporti di compressione per le immagini con ampi intervalli di colori identici.
+**Trama DDS (estensione dds)**
+
+Formato di trama DDS (DirectDraw Surface). Un formato di trama a elevata compressione e con perdita di dati che supporta colori a 24 bit e trasparenza alfa. I rapporti di compressione possono essere al massimo di 8:1. Si basa sulla tecnologia di compressione S3 Texture Compression, che può essere decompressa nell'hardware grafico.
+
+**Immagine TGA (estensione tga)**
+
+Formato di immagine TGA (Truevision Graphics Adapter), noto anche come Targa. Un formato di immagine senza perdita di dati con compressione RLE che supporta sia immagini con colori mappati (tavolozza dei colori) sia immagini con colori diretti, con colori fino a 24 bit e trasparenza alfa. Non è adatto a fotografie e immagini con una quantità significativa di dettagli di colore, ma offre dei buoni rapporti di compressione per le immagini con ampi intervalli di colori identici.
 
 ### <a name="configure-the-image"></a>Configurazione dell'immagine
 
-Prima di iniziare a lavorare all'immagine appena creata, è possibile modificarne la configurazione predefinita. È ad esempio possibile modificare le dimensioni o il formato di colore usato. Per informazioni su come configurare queste e altre proprietà dell'immagine, vedere [Proprietà dell'immagine](#ImageProperties).
+Prima di iniziare a lavorare all'immagine creata, è possibile modificarne la configurazione predefinita. È ad esempio possibile modificare le dimensioni o il formato di colore usato. Per informazioni su come configurare queste e altre proprietà dell'immagine, vedere [Proprietà dell'immagine](#image-properties).
 
 > [!NOTE]
->  Prima di salvare il lavoro, assicurarsi di impostare la proprietà **Formato colore** se si vuole usare un formato di colore specifico. Se il formato del file supporta la compressione, è possibile modificare le impostazioni di compressione quando si salva il file per la prima volta oppure quando si sceglie **Salva con nome**.
+> Prima di salvare il lavoro, assicurarsi di impostare la proprietà **Formato colore** se si vuole usare un formato di colore specifico. Se il formato del file supporta la compressione, è possibile modificare le impostazioni di compressione quando si salva il file per la prima volta oppure quando si sceglie **Salva con nome**.
 
 ## <a name="work-with-the-image-editor"></a>Uso dell'editor di immagini
 
-Questa sezione descrive come usare l'editor di immagini per modificare le trame e le immagini.
+Questa sezione descrive come usare l'**editor di immagini** per modificare le trame e le immagini.
 
-### <a name="image-editor-toolbars"></a>Barre degli strumenti dell'editor di immagini
+I comandi che influiscono sullo stato dell'**editor di immagini** si trovano nella barra degli strumenti della **modalità dell'editor di immagini** insieme ai comandi avanzati. Questa barra degli strumenti si trova lungo il bordo superiore dell'area di progettazione dell'**editor di immagini**. Gli strumenti di disegno si trovano nella barra degli strumenti dell'**editor di immagini** lungo il bordo sinistro dell'area di progettazione dell'**editor di immagini**.
 
-Le barre degli strumenti dell'editor di immagini contengono i comandi che consentono di lavorare con le immagini.
+### <a name="image-editor-mode-toolbar"></a>Barra degli strumenti della modalità dell'editor di immagini
 
- I controlli che influiscono sullo stato dell'editor di immagini si trovano nella barra degli strumenti della **modalità dell'editor di immagini** insieme ai comandi avanzati. Questa barra degli strumenti si trova lungo il bordo superiore dell'area di progettazione dell'editor di immagini. Gli strumenti di disegno si trovano nella barra degli strumenti **Editor di immagini** lungo il bordo sinistro dell'area di progettazione.
+![Barra degli strumenti della modalità dell'editor di immagini in Visual Studio](../designers/media/digit-tre-modal-toolbar.png)
 
- Di seguito è illustrata la barra degli strumenti della **modalità dell'editor di immagini**:
-
- ![Barra degli strumenti modale Editor di immagini.](../designers/media/digit-tre-modal-toolbar.png)
-
- La tabella seguente descrive gli elementi disponibili nella barra degli strumenti della **modalità dell'editor di immagini**, nell'ordine di visualizzazione da sinistra verso destra.
+La tabella seguente descrive gli elementi nella barra degli strumenti della **modalità dell'editor di immagini**, elencati nell'ordine di visualizzazione da sinistra verso destra:
 
 |Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
@@ -114,13 +131,13 @@ Le barre degli strumenti dell'editor di immagini contengono i comandi che consen
 |**Canale rosso**<br /><br /> **Canale verde**<br /><br /> **Canale blu**<br /><br /> **Canale alfa**|Abilita o disabilita il canale di colore specifico. **Nota:** abilitando o disabilitando in modo sistematico i canali dei colori, è possibile isolare i problemi correlati a uno o più canali. Ad esempio, è possibile identificare la trasparenza alpha non corretta.|
 |**Sfondo**|Abilita o disabilita la visualizzazione dello sfondo attraverso parti trasparenti dell'immagine. È possibile configurare la modalità di visualizzazione dello sfondo scegliendo tra le opzioni seguenti:<br /><br /> **Scacchi**<br /> Usa il colore verde insieme al colore di sfondo specificato per visualizzare lo sfondo con un motivo a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.<br /><br /> Sfondo bianco<br /> Usa il bianco per visualizzare lo sfondo.<br /><br /> Sfondo nero<br /> Usa il nero per visualizzare lo sfondo.<br /><br /> Anima sfondo<br /> Esegue lentamente una panoramica del modello a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.|
 |**Proprietà**|Apre o chiude alternativamente la finestra **Proprietà**.|
-|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP (Windows Advanced Rasterization Platform) di Direct3D 11 per il rendering dell'area di progettazione dell'editor di immagini.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato *DDS* per salvare l'immagine.<br /><br /> **Visualizza**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:** è possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|
+|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per eseguire il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP, Windows Advanced Rasterization Platform, di Direct3D 11 per il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato *DDS* per salvare l'immagine.<br /><br /> **Visualizza**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:** è possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|
 
- Di seguito è illustrata la barra degli strumenti **Editor di immagini**.
+### <a name="image-editor-toolbar"></a>Barra degli strumenti dell'editor di immagini
 
- ![Barra degli strumenti dell'editor di immagini](../designers/media/digit-tre-toolbar.png)
+![Barra degli strumenti dell'editor di immagini](../designers/media/digit-tre-toolbar.png)
 
- La tabella seguente descrive gli elementi disponibili nella barra degli strumenti **Editor di immagini**, nell'ordine di visualizzazione dall'alto verso il basso.
+La tabella seguente descrive gli elementi nella barra degli strumenti dell'**editor di immagini**, elencati nell'ordine di visualizzazione dall'alto verso il basso:
 
 |Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
@@ -137,22 +154,24 @@ Le barre degli strumenti dell'editor di immagini contengono i comandi che consen
 
 ### <a name="work-with-mip-levels"></a>Uso dei livelli MIP
 
-Alcuni formati di immagine, ad esempio *DDS* (DirectDraw Surface), supportano i livelli MIP per il livello di dettaglio dell'area della trama. Per informazioni su come generare e usare i livelli MIP, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Alcuni formati di immagine, ad esempio il formato con estensione *DDS*, DirectDraw Surface, supportano i livelli MIP per il livello di dettaglio dello spazio della trama. Per informazioni su come generare e usare i livelli MIP, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Uso della trasparenza
 
-Alcuni formati di immagine, ad esempio *DDS* (DirectDraw Surface), supportano la trasparenza. Esistono diversi modi di usare la trasparenza, a seconda dello strumento in uso. Per specificare il livello di trasparenza per una selezione di colore, nella finestra **Proprietà** impostare la componente **A** (alpha) di tale selezione di colore. Ecco come i diversi tipi di strumenti controllano la modalità di applicazione della trasparenza:
+Alcuni formati di immagine, ad esempio i formati con estensione *DDS*, DirectDraw Surface, supportano la trasparenza. Esistono diversi modi di usare la trasparenza, a seconda dello strumento in uso. Per specificare il livello di trasparenza per una selezione di colore, nella finestra **Proprietà** impostare la componente **A** (alpha) di tale selezione di colore.
+
+La tabella seguente descrive come i diversi tipi di strumenti controllano la modalità di applicazione della trasparenza:
 
 |Strumento|Descrizione|
 |----------|-----------------|
 |**Matita**, **Pennello**, **Aerografo**, **Linea**, **Rettangolo**, **Rettangolo arrotondato**, **Ellisse**, **Testo**|Per fondere la selezione di colore attiva insieme all'immagine, nella finestra **Proprietà** espandere il gruppo di proprietà **Canali** e impostare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.<br /><br /> Per disegnare usando la selezione di colore attiva e lasciare invariato il valore alfa dell'immagine, deselezionare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.|
 |**Riempimento**|Per fondere la selezione di colore attiva insieme all'immagine, basta scegliere l'area da riempire.<br /><br /> Per usare la selezione di colore attiva, incluso il valore del canale alfa, per sovrascrivere l'immagine, tenere premuto **MAIUSC** e scegliere l'area da riempire.|
 
-### Proprietà dell'immagine<a name="ImageProperties"></a>
+### <a name="image-properties"></a>Proprietà immagine
 
 È possibile usare la finestra **Proprietà** per specificare varie proprietà dell'immagine, ad esempio impostare le proprietà Larghezza e Altezza per ridimensionare l'immagine.
 
-La tabella seguente descrive le proprietà dell'immagine.
+La tabella seguente descrive le proprietà dell'immagine:
 
 |Proprietà|Descrizione|
 |--------------|-----------------|
@@ -169,37 +188,35 @@ La tabella seguente descrive le proprietà dell'immagine.
 |Sezione di profondità|Sezione di profondità corrente. Solo la prima sezione può essere visualizzata. Tutte le altre sezioni vengono perse quando l'immagine viene salvata.|
 
 > [!NOTE]
->  Poiché la proprietà **Rotazione di** si applica a tutti gli strumenti e alle aree selezionate, viene sempre visualizzata nella parte inferiore della finestra **Proprietà** insieme ad altre proprietà degli strumenti. **Rotazione di** viene sempre visualizzata perché l'intera immagine è implicitamente selezionata quando non sono attivi altri strumenti o selezioni. Per altre informazioni sulla proprietà **Rotazione di**, vedere [Proprietà degli strumenti](#ToolProperties).
+> Poiché la proprietà **Rotazione di** si applica a tutti gli strumenti e alle aree selezionate, viene sempre visualizzata nella parte inferiore della finestra **Proprietà** insieme ad altre proprietà degli strumenti. **Rotazione di** viene sempre visualizzata perché l'intera immagine è implicitamente selezionata quando non sono attivi altri strumenti o selezioni. Per altre informazioni sulla proprietà **Rotazione di**, vedere [Proprietà degli strumenti](#tool -properties).
 
-#### <a name="resize-images"></a>Ridimensionamento delle immagini
+### <a name="resize-images"></a>Ridimensionamento delle immagini
 
-Esistono due modi per ridimensionare un'immagine. In entrambi i casi l'editor di immagini usa l'interpolazione bilineare per ricampionare l'immagine.
+Esistono due modi per ridimensionare un'immagine. In entrambi i casi l'**editor di immagini** usa l'interpolazione bilineare per ricampionare l'immagine.
 
--   Nella finestra **Proprietà** specificare nuovi valori per le proprietà **Larghezza** e **Altezza**.
+- Nella finestra **Proprietà** specificare nuovi valori per le proprietà **Larghezza** e **Altezza**.
 
--   Selezionare l'intera immagine e usare i marcatori del bordo per ridimensionarla.
+- Selezionare l'intera immagine e usare i marcatori del bordo per ridimensionarla.
 
-### <a name="work-with-tools"></a>Uso degli strumenti
+### <a name="selected-regions"></a>Aree selezionate
 
-#### <a name="selected-regions"></a>Aree selezionate
+Le selezioni nell'**editor di immagini** definiscono le aree dell'immagine attive. Gli strumenti e le trasformazioni influenzano le aree attive. Se è presente una selezione attiva, le aree esterne all'area selezionata non sono interessate dalla maggior parte degli strumenti e delle trasformazioni. Se invece non è presente una selezione attiva, l'intera immagine è attiva.
 
-Le selezioni nell'editor di immagini definiscono le aree dell'immagine attive, ovvero le aree su cui agiscono gli strumenti e le trasformazioni. Se è presente una selezione attiva, le aree esterne all'area selezionata non sono interessate dalla maggior parte degli strumenti e delle trasformazioni. Se invece non è presente una selezione attiva, l'intera immagine è attiva.
+La maggior parte degli strumenti, come **Matita**, **Pennello**, **Aerografo**, **Riempimento**, **Gomma** e primitive 2D, e delle trasformazioni, come **Ruota**, **Taglia**, **Inverti colori**, **Capovolgi orizzontalmente** e **Capovolgi verticalmente**, è vincolata o definita dalla selezione attiva. Tuttavia, alcuni strumenti, quali **Contagocce** e **Testo**, e trasformazioni, quali **Genera MIP**, non sono interessati dalle selezioni attive. Questi strumenti si comportano sempre come se l'intera immagine corrisponda alla selezione attiva.
 
-La maggior parte degli strumenti, come **Matita**, **Pennello**, **Aerografo**, **Riempimento**, **Gomma** e primitive 2D, e delle trasformazioni, come **Ruota**, **Taglia**, **Inverti colori**, **Capovolgi orizzontalmente** e **Capovolgi verticalmente**, è vincolata o definita dalla selezione attiva. Tuttavia, alcuni strumenti, come **Contagocce** e **Testo**, e trasformazioni, come **Genera MIP**, non sono interessati dalla selezione attiva e si comportano sempre come se l'intera immagine corrisponda alla selezione attiva.
+Mentre si seleziona un'area, è possibile tenere premuto **MAIUSC** per eseguire una selezione proporzionale, ovvero quadrata. In caso contrario, la selezione non è vincolata.
 
-Mentre si seleziona un'area, è possibile tenere premuto **MAIUSC** per eseguire una selezione (quadrata) proporzionale. In caso contrario, la selezione non è vincolata.
+#### <a name="resize-selections"></a>Ridimensionamento delle selezioni
 
-##### <a name="resize-selections"></a>Ridimensionamento delle selezioni
+Dopo aver selezionato un'area, è possibile ridimensionarla o ridimensionarne i contenuti di immagine modificando le dimensioni del marcatore di selezione. Quando si ridimensiona l'area selezionata, è possibile usare i tasti di modifica seguenti per modificare il comportamento dell'area selezionata durante il ridimensionamento:
 
-Dopo aver selezionato un'area, è possibile ridimensionarla o ridimensionarne i contenuti di immagine modificando le dimensioni del marcatore di selezione. Quando si ridimensiona l'area selezionata, è possibile usare i tasti di modifica seguenti per modificare il comportamento dell'area selezionata durante il ridimensionamento (tenere premuto il tasto mentre si esegue l'operazione).
+**CTRL**: copia il contenuto dell'area selezionata prima che venga ridimensionata. In questo modo, l'immagine originale rimane invariata mentre la copia viene ridimensionata.
 
-CTRL&mdash;Copia il contenuto dell'area selezionata prima che venga ridimensionata. In questo modo, l'immagine originale rimane invariata mentre la copia viene ridimensionata.
+**MAIUSC**: ridimensiona l'area selezionata proporzionalmente alle dimensioni originali.
 
-MAIUSC&mdash;Ridimensiona l'area selezionata proporzionalmente alle dimensioni originali.
+**ALT**: modifica le dimensioni dell'area selezionata. In questo modo, l'immagine rimane invariata.
 
-ALT&mdash;Modifica le dimensioni dell'area selezionata. In questo modo, l'immagine rimane invariata.
-
-Di seguito sono elencate le combinazioni di tasti di modifica valide:
+La tabella seguente illustra le combinazioni di tasti di modifica valide:
 
 |CTRL|Shift|ALT|Descrizione|
 |----------|-----------|---------|-----------------|
@@ -210,13 +227,13 @@ Di seguito sono elencate le combinazioni di tasti di modifica valide:
 |**CTRL**|||Copia e quindi ridimensiona il contenuto dell'area selezionata.|
 |**CTRL**|**MAIUSC**||Copia e quindi ridimensiona in modo proporzionale il contenuto dell'area selezionata.|
 
-#### Proprietà degli strumenti <a name="ToolProperties"></a> 
+### <a name="tool-properties"></a>Proprietà degli strumenti
 
 Quando è selezionato uno strumento, è possibile usare la finestra **Proprietà** per specificare i dettagli su come questo deve agire sull'immagine. Ad esempio, è possibile impostare lo spessore dello strumento **Matita** o il colore dello strumento **Pennello**.
 
 È inoltre possibile impostare sia un colore di primo piano sia un colore di sfondo. Entrambi supportano un canale alfa per fornire l'opacità definita dall'utente. Le impostazioni si applicano a tutti gli strumenti. Se si usa il mouse, il pulsante sinistro corrisponde al colore di primo piano e quello destro corrisponde al colore di sfondo.
 
-La tabella seguente descrive le proprietà degli strumenti.
+La tabella seguente descrive le proprietà degli strumenti:
 
 |Strumento|Proprietà|
 |----------|----------------|

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bbe3eb392de21cc1b165819fe469eb4de726d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755885"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281026"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usare i file di Dump con Visual Studio
 File dump con o senza heap; creare un file di dump. Aprire un file di dump. trovare i file binari del pdb e file di origine per un file di dump.
@@ -55,7 +55,7 @@ File dump con o senza heap; creare un file di dump. Aprire un file di dump. trov
 
 -   Visual Studio può eseguire il debug dei file dump delle app native di dispositivi ARM. Visual Studio può inoltre eseguire il debug dei file dump di app gestite di dispositivi ARM, ma solo nel debugger nativo.
 
--   Per eseguire il debug [in modalità kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) file di dump, scaricare gli strumenti di debug per Windows che fa parte delle [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+-   Per eseguire il debug [in modalità kernel](/windows-hardware/drivers/debugger/kernel-mode-dump-files) file di dump, scaricare gli strumenti di debug per Windows che fa parte delle [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 -   Visual Studio non è possibile eseguire il debug di file dump salvati nel formato dump precedente noto come un [dump completi della modalità utente](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Si noti che un dump completo in modalità utente non corrisponde a un dump con heap.
 
@@ -114,5 +114,5 @@ File dump con o senza heap; creare un file di dump. Aprire un file di dump. trov
 ## <a name="see-also"></a>Vedere anche
 
 - [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

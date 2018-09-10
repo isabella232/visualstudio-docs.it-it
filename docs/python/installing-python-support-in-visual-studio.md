@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499903"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627215"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Come installare il supporto di Python in Visual Studio in Windows
 
@@ -26,7 +26,7 @@ Per installare il supporto Python per Visual Studio (noto anche come Python Tool
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 e versioni precedenti](#visual-studio-2013-and-earlier)
 
-Per Visual Studio 2015 e versioni precedenti è anche necessario [installare un interprete Python](installing-python-interpreters.md) separatamente a scelta. Installare Python 3.5 e versioni precedenti. Python 3.6 non è supportato e genera il messaggio **Versione 3.6 di Python non supportata**. Nella stessa pagina sono contenute anche le istruzioni per l'aggiunta di un interprete Python esistente in Visual Studio 2017.
+Per Visual Studio 2015 e versioni precedenti è anche necessario [installare un interprete Python](installing-python-interpreters.md) di propria scelta separatamente. Le versioni di Python 3.5 e versioni precedenti, 3.6+ non sono supportate e generano il messaggio **Unsupported Python version 3.6** (Versione 3.6 di Python non supportata). Nella stessa pagina sono contenute anche le istruzioni per l'aggiunta di un interprete Python esistente in Visual Studio 2017.
 
 Per testare rapidamente il supporto Python dopo aver eseguito la procedura di installazione, aprire la finestra **interattiva di Python** premendo **ALT**+**I** e quindi immettere `2+2`. Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
 

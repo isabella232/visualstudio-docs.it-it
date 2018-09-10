@@ -2,7 +2,7 @@
 title: Analizzare i dati d'uso della CPU (C++)
 description: Misurare le prestazioni delle app in C++ con lo strumento di diagnostica Utilizzo CPU
 ms.custom: ''
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d5b4d67e5b23e9d875f700f9f7e5171469952c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627150"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (C++)
 
@@ -27,17 +28,21 @@ Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi
 
 L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. L'hub diagnostica offre molte altre opzioni per la registrazione e l'analisi di questo tipo di dati.
 
+Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**. In Windows 7 e versioni successive, è possibile usare lo strumento di relazione finale, il [profiler delle prestazioni](../profiling/profiling-feature-tour.md).
+
 ## <a name="create-a-project"></a>Creare un progetto
 
-1. In Visual Studio scegliere **File > Nuovo progetto**.
+1. In Visual Studio scegliere **File** > **Nuovo progetto**.
 
 2. In **Visual C++** scegliere **Desktop di Windows** e nel riquadro al centro scegliere **Applicazione console di Windows**.
+
+    Se il modello di progetto **Applicazione console di Windows** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
 
 3. Digitare un nome come **Diagnostics_Get_Started_Native** e fare clic su **OK**.
 
     Visual Studio crea il progetto.
 
-4. In MyDbgApp.cpp sostituire il codice seguente
+4. In *MyDbgApp.cpp* sostituire il codice seguente
 
     ```c++
     int main()
@@ -110,7 +115,7 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
     }
     ```
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Passaggio 1: Raccogliere i dati di profilatura 
+## <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura 
   
 1.  In primo luogo impostare un punto di interruzione dell'app su questa riga di codice nella funzione `main`:
 
@@ -125,9 +130,9 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
     > [!TIP]
     > Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
   
-3.  La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug/Windows/Mostra strumenti di diagnostica**.
+3.  La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
 
-4.  Fare clic su **Debug / Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
+4.  Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
 
      Al termine del caricamento dell'applicazione viene visualizzata la vista **Riepilogo** degli strumenti di diagnostica.
 
@@ -149,7 +154,7 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
 
      A questo punto, è possibile iniziare ad analizzare i dati.
 
-## <a name="Step2"></a> Passaggio 2: Analizzare i dati di utilizzo della CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati di utilizzo della CPU
 
 È consigliabile iniziare ad analizzare i dati esaminando l'elenco di funzioni in Utilizzo CPU, identificando le funzioni che svolgono la maggior parte del lavoro e quindi concentrandosi su ognuna di esse.
 
@@ -184,4 +189,4 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
 ## <a name="see-also"></a>Vedere anche  
 
  [Profilatura in Visual Studio](../profiling/index.md)  
- [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
+ [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

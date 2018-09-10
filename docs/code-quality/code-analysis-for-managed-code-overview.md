@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 78a7abc8c0d13de7ec3c9c8d196e3b47cf867403
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131882"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279093"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Panoramica dell'analisi codice per il codice gestito
 
@@ -44,7 +44,7 @@ Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei me
 
 Regole di analisi codice per il codice gestito vengono raggruppate in [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). È possibile usare uno dei set di regole standard Microsoft oppure è possibile [creare un set di regole personalizzate](../code-quality/how-to-create-a-custom-rule-set.md) per soddisfare esigenze specifiche.
 
-## <a name="suppress-warnings"></a>Non visualizzare avvisi
+## <a name="suppress-warnings"></a>Non visualizzare gli avvisi
 
 È in genere utile indicare se un avviso non è applicabile. In questo modo lo sviluppatore e altri individui che potrebbero esaminare il codice in un secondo momento verranno informati del fatto che un avviso è stato sottoposto ad analisi, quindi è stato eliminato o ignorato.
 
@@ -71,14 +71,14 @@ Le organizzazioni richiedono talvolta che tutte le archiviazioni soddisfino dete
 
 - Analisi del codice viene eseguito come parte della build più recente.
 
-A tale scopo, è utile quindi definire dei criteri specifici per l'archiviazione. Per altre informazioni, vedere [miglioramento della qualità del codice con i criteri di controllo il progetto Team](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+A tale scopo, è utile quindi definire dei criteri specifici per l'archiviazione. Per altre informazioni, vedere [miglioramento della qualità del codice con i criteri di controllo progetto](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Integrazione di team build
 
-È possibile utilizzare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi come parte del processo di compilazione. Per altre informazioni, vedere [Build e release (VSTS)](/vsts/build-release/index).
+È possibile utilizzare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi come parte del processo di compilazione. Per altre informazioni, vedere [pipeline di Azure](/azure/devops/pipelines/index).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli analizzatori di Roslyn](../code-quality/roslyn-analyzers-overview.md)
 - [Uso di set di regole per raggruppare regole di analisi del codice](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Procedura: abilitare e disabilitare l'analisi automatica del codice](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Procedura: Abilitare e disabilitare l'analisi codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

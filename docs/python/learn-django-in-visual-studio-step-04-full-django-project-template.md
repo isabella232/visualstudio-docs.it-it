@@ -1,7 +1,7 @@
 ---
 title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 4
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità del modello Progetto Web Django.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 4e37b8f5b50a7145ca5fbaa0597fd6109b1be98a
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388176"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627300"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Passaggio 4: Usare il modello di progetto Web Django completo
 
@@ -31,7 +31,7 @@ In questo passaggio:
 > - Si comprenderanno le visualizzazioni e i modelli di pagina creati dal modello di progetto, costituito da tre pagine che ereditano da un modello di pagina di base e che usa librerie JavaScript statiche come jQuery e Bootstrap (passaggio 4-2)
 > - Si comprenderà il routing degli URL fornito dal modello (passaggio 4-3)
 
-Il modello fornisce anche l' autenticazione di base, come descritto nel passaggio 5.
+Il modello offre anche l'autenticazione di base, come descritto nel passaggio 5.
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Passaggio 4-1: Creare un progetto da un modello
 

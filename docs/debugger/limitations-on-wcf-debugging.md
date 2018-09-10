@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058523"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280650"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitazioni del debug di WCF
 Sono disponibili tre modalità per avviare il debug di un servizio WCF:  
@@ -63,7 +63,7 @@ Sono disponibili tre modalità per avviare il debug di un servizio WCF:
   
 -   Il servizio deve essere parte della soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di cui si esegue il debug.  
   
--   Il servizio deve essere ospitato. Può essere parte di un progetto di sito Web (File system e HTTP), un progetto di applicazione Web (File system e HTTP) o un progetto di libreria di servizi WCF. I progetti di libreria di servizi WCF possono essere librerie di servizi o librerie di servizi di flusso di lavoro.  
+-   Il servizio deve essere ospitato. Può far parte di un progetto di sito Web (File System e HTTP), il progetto di applicazione Web (File System e HTTP) o progetto libreria di servizi WCF. I progetti di libreria di servizi WCF possono essere librerie di servizi o librerie di servizi di flusso di lavoro.  
   
 -   Il servizio deve essere richiamato da un client WCF.  
   

@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586477"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626635"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing con Visual Studio 2017
 
@@ -59,7 +59,12 @@ In alcuni casi, per consentire il funzionamento di Live Unit Testing, potrebbe e
 
 ## <a name="configure-live-unit-testing"></a>Configurare Live Unit Testing
 
-Per configurare Live Unit Testing, selezionare **Strumenti** > **Opzioni** dal menu di primo livello di Visual Studio e quindi scegliere **Live Unit Testing** nel riquadro a sinistra della finestra di dialogo **Opzioni**. La figura seguente illustra le opzioni di configurazione di Live Unit Testing disponibili nella finestra di dialogo.
+Per configurare Live Unit Testing, selezionare **Strumenti** > **Opzioni** dalla barra dei menu di primo livello di Visual Studio e quindi scegliere **Live Unit Testing** nel riquadro a sinistra della finestra di dialogo **Opzioni**.
+
+> [!TIP]
+> Dopo l'abilitazione di Live Unit Testing (vedere la sezione successiva, [Avviare, sospendere e arrestare Live Unit Testing](#start-pause-and-stop-live-unit-testing)), è anche possibile aprire la finestra di dialogo **Opzioni** selezionando **Test** > **Live Unit Testing** > **Opzioni**.
+
+La figura seguente illustra le opzioni di configurazione di Live Unit Testing disponibili nella finestra di dialogo:
 
   ![Image](./media/lut-options.png)
 
@@ -68,20 +73,28 @@ Le opzioni configurabili includono:
 - Sospensione dell'esecuzione di Live Unit Testing in caso di compilazione e debug di una soluzione.
 
 - Sospensione dell'esecuzione di Live Unit Testing quando l'alimentazione a batteria del sistema scende sotto una soglia specificata.
+
 - Esecuzione automatica di Live Unit Testing all'apertura di una soluzione.
+
+- Abilitazione del simbolo di debug e generazione di commenti in formato documentazione XML.
+
 - Directory in cui archiviare i dati salvati in modo permanente.
-   Il pulsante **Delete Persisted Data** (Elimina i dati salvati in modo permanente) consente di eliminare tutti i dati salvati in modo permanente. Questa opzione risulta utile quando Live Unit Testing si comporta in modo imprevedibile o imprevisto, suggerendo il danneggiamento dei dati salvati in modo permanente.
+
+- Possibilità di eliminare tutti i dati persistenti. Questa opzione risulta utile quando Live Unit Testing si comporta in modo imprevedibile o imprevisto, suggerendo il danneggiamento dei dati salvati in modo permanente.
+   
 - Intervallo dopo il quale si verifica il timeout di un test case; il valore predefinito è 30 secondi.
+
 - Numero massimo di processi di test creati da Live Unit Testing.
+
 - Quantità massima di memoria che i processi di Live Unit Testing possono utilizzare.
+
 - Livello delle informazioni scritte nella finestra **Output** di Live Unit Testing.
+
    È possibile scegliere di non visualizzare informazioni di log (**Nessuno**), solo i messaggi errore (**Errore**), messaggi di errore e messaggi informativi (**Informazioni**, che corrisponde al valore predefinito) o tutti i dettagli (**Dettagliato**).
 
-Per visualizzare l'output dettagliato nella finestra **Output** di Live Unit Testing, è anche possibile assegnare il valore "1" a una variabile di ambiente a livello di utente denominata `VS_UTE_DIAGNOSTICS` e riavviare Visual Studio.
+   Per visualizzare l'output dettagliato nella finestra **Output** di Live Unit Testing, è anche possibile assegnare il valore "1" a una variabile di ambiente a livello di utente denominata `VS_UTE_DIAGNOSTICS` e riavviare Visual Studio.
 
-Per acquisire in un file i messaggi di log dettagliati di MSBuild restituiti da Live Unit Testing, impostare la variabile di ambiente a livello di utente `LiveUnitTesting_BuildLog` sul nome del file in cui salvare il log.
-
-Dopo l'abilitazione di Live Unit Testing (vedere la sezione successiva, [Avviare, sospendere e arrestare Live Unit Testing](#start-pause-and-stop-live-unit-testing)), è anche possibile aprire la finestra di dialogo **Opzioni** selezionando **Test** > **Live Unit Testing** > **Opzioni**.
+   Per acquisire in un file i messaggi di log dettagliati di MSBuild restituiti da Live Unit Testing, impostare la variabile di ambiente a livello di utente `LiveUnitTesting_BuildLog` sul nome del file in cui salvare il log.
 
 ## <a name="start-pause-and-stop-live-unit-testing"></a>Avviare, sospendere e arrestare Live Unit Testing
 
@@ -104,7 +117,7 @@ Per abilitare Live Unit Testing, selezionare **Test** > **Live Unit Testing** > 
 
 ## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Accedere alla visualizzazione del code coverage nell'editor durante la digitazione
 
-Dopo l'abilitazione, Live Unit Testing aggiorna le singole righe di codice nell'editor di Visual Studio in modo da indicare se il codice scritto è coperto da unit test e se i test coperti vengono superati.  La figura seguente mostra le righe di codice con test superati e non superati, nonché le righe di codice non coperte dai test. Le righe contraddistinte da un segno di spunta "✓" verde sono coperte solo da test superati, quelle contraddistinte da una "x" rossa sono coperte da uno o più test non superati, mentre quelle contraddistinte da un simbolo "" blu non sono coperte da alcun test.
+Dopo l'abilitazione, Live Unit Testing aggiorna le singole righe di codice nell'editor di Visual Studio in modo da indicare se il codice scritto è coperto da unit test e se i test coperti vengono superati.  La figura seguente mostra le righe di codice con test superati e non superati, nonché le righe di codice non coperte dai test. Le righe contraddistinte da un segno di spunta "✓" verde sono coperte solo da test superati, quelle contraddistinte da una "x" rossa sono coperte da uno o più test non superati, mentre quelle contraddistinte da un simbolo "➖" blu non sono coperte da alcun test.
 
   ![Image](./media/lut-codewindow.png)
 
@@ -124,7 +137,7 @@ Quando si passa il puntatore su un test non superato nella descrizione comando, 
 
   ![Image](./media/lut-failedmsg.png)
 
-Quando si passa al test non riuscito, Live Unit Testing indica anche visivamente nella firma del metodo i test con esito positivo (indicati da un becher mezzo pieno con un simbolo "✓" verde), i test con esito negativo (indicati da un becher mezzo pieno con un simbolo "🞩" rosso) o i test non interessati da Live Unit Testing (indicati da un becher mezzo pieno con un simbolo "" blu). I metodi non di test non sono decorati con simboli. La figura seguente illustra tutti e quattro i tipi di metodi.
+Quando si passa al test non riuscito, Live Unit Testing indica anche visivamente nella firma del metodo i test con esito positivo (indicati da un becher mezzo pieno con un simbolo "✓" verde), i test con esito negativo (indicati da un becher mezzo pieno con un simbolo "🞩" rosso) o i test non interessati da Live Unit Testing (indicati da un becher mezzo pieno con un simbolo "➖" blu). I metodi non di test non sono decorati con simboli. La figura seguente illustra tutti e quattro i tipi di metodi.
 
   ![Image](media/lut-testsource.png)
 

@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512291"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280883"
 ---
 # <a name="using-the-tasks-window"></a>Utilizzo della finestra Attività
 
-Il **attività** finestra è simile al **thread** finestra, ad eccezione del fatto che mostra informazioni sugli <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), o [winjs. Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) oggetti anziché ogni thread. Analogamente ai thread, le attività rappresentano operazioni asincrone eseguibili simultaneamente; tuttavia, più attività possono essere eseguite nello stesso thread.
+Il **attività** finestra è simile al **thread** finestra, ad eccezione del fatto che mostra informazioni sugli <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), o [winjs. Promise ](/previous-versions/windows/apps/br211867(v=win.10)) oggetti anziché ogni thread. Analogamente ai thread, le attività rappresentano operazioni asincrone eseguibili simultaneamente; tuttavia, più attività possono essere eseguite nello stesso thread.
 
 Nel codice gestito, è possibile usare la **attività** finestra quando si lavora con <xref:System.Threading.Tasks.Task?displayProperty=fullName> oggetti o con il **await** e **async** parole chiave (**Await** e **Async** in Visual Basic). Per altre informazioni sulle attività nel codice gestito, vedere [programmazione parallela](/dotnet/standard/parallel-programming/index).
 
 Nel codice nativo, è possibile usare la **attività** finestra quando si lavora con [gruppi di attività](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algoritmi paralleli](/cpp/parallel/concrt/parallel-algorithms), [agenti asincroni](/cpp/parallel/concrt/asynchronous-agents), e [attività leggere](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Per altre informazioni sulle attività nel codice nativo, vedere [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime).
 
-In JavaScript, è possibile utilizzare la finestra attività quando si lavora con promise `.then` codice. Visualizzare [programmazione asincrona in JavaScript (app UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) per altre informazioni.
+In JavaScript, è possibile utilizzare la finestra attività quando si lavora con promise `.then` codice. Visualizzare [programmazione asincrona in JavaScript (app UWP)](/previous-versions/windows/apps/hh700330(v=win.10)) per altre informazioni.
 
 È possibile usare la **attività** finestra ogni volta che accede al debugger. È possibile accedervi nel **eseguire il Debug** menu, fare clic su **Windows** e quindi scegliendo **attività**. La figura seguente mostra le **attività** finestra nella modalità predefinita.
 

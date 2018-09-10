@@ -1,5 +1,5 @@
 ---
-title: Eseguire App UWP nel simulatore | Documenti Microsoft
+title: Eseguire App UWP nel simulatore | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,25 +15,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480661"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281052"
 ---
-# <a name="run-uwp-apps-in-the-simulator"></a>Eseguire App UWP nel simulatore
-Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula un'app UWP. In genere, è possibile eseguire il debug sul computer locale, un dispositivo collegato o un computer remoto. Tuttavia, in alcuni scenari, si consiglia di utilizzare il simulatore di Visual Studio per emulare dello schermo fisico di diverse dimensioni e la risoluzione. È anche possibile simulare i comuni eventi di tocco e rotazione e le proprietà di connessione di rete.
+# <a name="run-uwp-apps-in-the-simulator"></a>Eseguire app UWP nel simulatore
+Il simulatore di Visual Studio per le app UWP è un'applicazione desktop che simula un'app UWP. In genere, è opportuno eseguire il debug nel computer locale, un dispositivo connesso o un computer remoto. Tuttavia, in alcuni scenari, è possibile usare il simulatore di Visual Studio per emulare una dimensione dello schermo fisico diverso e risoluzione. È anche possibile simulare i comuni eventi di rotazione e tocco e simulare le proprietà di connessione di rete.
   
- Il simulatore offre un ambiente in cui è possibile progettare, sviluppare, eseguire il debug e testare le app UWP. Tuttavia, prima di pubblicare l'app in Microsoft Store, è necessario testare l'app in un dispositivo reale.  
+ Il simulatore offre un ambiente in cui è possibile progettare, sviluppare, eseguire il debug e testare App UWP. Tuttavia, prima di pubblicare l'app in Microsoft Store, è necessario testare l'app in un dispositivo reale.  
   
- Il simulatore di Visual Studio per App UWP non eseguito in un ambiente isolato nel computer locale. Di conseguenza, gli errori che si verificano nel simulatore, ad esempio un errore irreversibile a livello di sistema, può influenzare l'intero computer.  
+ Il simulatore di Visual Studio per le app UWP non viene eseguito in un ambiente isolato nel computer locale. Di conseguenza, gli errori che si verificano nel simulatore, ad esempio un errore irreversibile a livello di sistema, può influenzare l'intero computer.  
   
 > [!IMPORTANT]
 >  Il simulatore di Visual Studio 2015 non include il pulsante Georilevazione perché il simulatore di Windows 10 non prevede la simulazione di georilevazione.
   
 ##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Impostare il simulatore come destinazione  
- Per eseguire l'app UWP nel simulatore, scegli **simulatore** dall'elenco a discesa elenco accanto al **Avvia debug** pulsante del debugger **Standard** barra degli strumenti. Questa opzione è disponibile solo se l'app **minima piattaforma di destinazione. Versione** è minore o uguale al sistema operativo nel computer di sviluppo. 
+ Per eseguire l'app UWP nel simulatore, scegli **simulatore** dall'elenco a discesa elenco accanto al **Avvia debug** pulsante nel debugger **Standard** sulla barra degli strumenti. Questa opzione è disponibile solo se l'app **minima piattaforma di destinazione. Versione** è minore o uguale al sistema operativo nel computer di sviluppo. 
   
  ![L'esecuzione nel simulatore](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   
@@ -44,9 +44,9 @@ Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula
   
 -   ![Pulsante emulazione tocco di avvio](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") emulazione tocco di avvio: imposta la modalità di interazione sui movimenti tocco di un singolo dito. Gli eventi di un singolo dito includono tocco, trascinamento e scorrimento rapido.  
   
-     ![Destinazione di un solo dito sul simulatore](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger") l'icona di bersaglio singolo indica la posizione degli eventi nel simulatore. Usa il mouse per posizionare il puntatore.  
+     ![Destinazione simulatore un dito](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger") l'icona di bersaglio singolo indica la posizione degli eventi nel simulatore. Usa il mouse per posizionare il puntatore.  
   
-     ![Destinazione touch un solo dito sul](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged") premere il pulsante sinistro del mouse per attivare la modalità tocco. Ad esempio, fai clic sul pulsante per simulare un tocco o premi e tieni premuto il pulsante mentre trascini o scorri rapidamente.  
+     ![Destinazione touch un dito](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged") premere il pulsante sinistro del mouse per attivare la modalità tocco. Ad esempio, fai clic sul pulsante per simulare un tocco o premi e tieni premuto il pulsante mentre trascini o scorri rapidamente.  
   
 ## <a name="pinch-and-zoom"></a>Zoom indietro/avanti  
  Imposta la modalità di interazione per i movimenti zoom indietro e avanti di due dita.  
@@ -94,7 +94,7 @@ Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula
  Le dimensioni e la risoluzione dello schermo sono elencate come *Larghezza schermo in pollici, larghezza in pixel X altezza in pixel*. Come noterai, le dimensioni e la risoluzione dello schermo sono simulate. Le coordinate della posizione nel simulatore vengono convertite nelle coordinate delle dimensioni e della risoluzione del dispositivo selezionato.  
   
 > [!NOTE]
->  Puoi salvare le versioni ridimensionate delle immagini bitmap nell'app. Windows caricherà l'immagine corretta per la scala corrente. Per ulteriori informazioni, vedere [Introduzione a progettazione e l'interfaccia utente](/windows/uwp/layout/design-and-ui-intro). Tuttavia, se modifichi la risoluzione del simulatore in modo Windows selezioni un'immagine diversa in base alla risoluzione, dovrai arrestare e riavviare la sessione di debug per visualizzare la nuova immagine.  
+>  Puoi salvare le versioni ridimensionate delle immagini bitmap nell'app. Windows caricherà l'immagine corretta per la scala corrente. Per altre informazioni, vedere [intro progettazione e l'interfaccia utente](/windows/uwp/layout/design-and-ui-intro). Tuttavia, se modifichi la risoluzione del simulatore in modo Windows selezioni un'immagine diversa in base alla risoluzione, dovrai arrestare e riavviare la sessione di debug per visualizzare la nuova immagine.  
   
 ##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Acquisire una schermata dell'app da inviare a Microsoft Store  
  Quando si invia un'app in Microsoft Store, è necessario includere alcune schermate dell'app.  
@@ -109,9 +109,9 @@ Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula
      ![Menu di scelta rapida impostazioni screenshot](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simulare le proprietà di connessione di rete  
- È possibile consentire agli utenti dell'app per gestire il costo delle connessioni di rete a consumo mantenendo la consapevolezza di connessione dati o costo piano stato modifiche alla rete e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento un limite di trasferimento dati specificato. Il [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API consentono di rispondere a [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) gli eventi che consentono l'accesso. Vedere [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Puoi consentire agli utenti dell'app di gestire il costo delle connessioni di rete a consumo mantenendo la consapevolezza di connessione dati o costi piano stato modifiche alla rete e abilitando l'app usare queste informazioni per evitare di incorrere in costi aggiuntivi per il roaming o il superamento un limite di trasferimento dati specificato. Il [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API consentono di rispondere agli [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) gli eventi che consentono l'accesso. Visualizzare [Guida introduttiva: gestione di rete a consumo i vincoli di costo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
- Per eseguire il debug o il test di codice in grado di riconoscere costo di rete, il simulatore può simulare le proprietà di una rete esposte tramite il [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) oggetto restituito da [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
+ Per eseguire il debug o testare il codice con riconoscimento dei costi di rete, il simulatore può simulare le proprietà di una rete esposte tramite il [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) oggetto restituito da [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
   
  Per simulare le proprietà di rete:  
   
@@ -121,32 +121,32 @@ Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula
   
      Deseleziona la casella di controllo per rimuovere la simulazione e tornare alle proprietà di rete dell'interfaccia attualmente connessa.  
   
-3.  Immetti un **Nome profilo** per la rete simulata. Si consiglia di utilizzare un nome univoco che è possibile utilizzare per identificare la simulazione nella [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) proprietà del [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) oggetto.  
+3.  Immetti un **Nome profilo** per la rete simulata. È consigliabile usare un nome univoco che è possibile usare per identificare la simulazione nella [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) proprietà delle [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) oggetto.  
   
-4.  Selezionare il [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) valore per il profilo di **tipo costo rete** elenco.  
+4.  Selezionare il [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) valore per il profilo dalle **tipo costo rete** elenco.  
   
-5.  Dal **Flag di stato limite dati** elenco, è possibile impostare il [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) proprietà o [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) proprietà su true, oppure è possibile scegliere  **In limite dati** per impostare entrambi i valori su false.  
+5.  Dal **Flag di stato limite dati** elenco, è possibile impostare il [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) proprietà o la [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) su true oppure è possibile scegliere  **Limite dati non superato** per impostare entrambi i valori su false.  
   
-6.  Dal **stato Roaming** elenco, impostare il [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) proprietà.  
+6.  Dal **stato Roaming** elencare, impostare il [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) proprietà.  
   
-7.  Scegliere **imposta proprietà** per simulare le proprietà di rete generando un primo piano [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) evento e uno sfondo [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) di tipo  **NetworkStateChange**.  
+7.  Scegli **impostazione delle proprietà** per simulare le proprietà di rete generando un primo piano [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) evento e uno sfondo [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) typu  **NetworkStateChange**.  
   
  **Altre informazioni sulla gestione delle connessioni di rete**  
   
- [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+ [Guida introduttiva: Gestione dei vincoli di costo di reti a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Esempio di informazioni di rete](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+ [Esempio di informazioni di rete](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analizzare l'utilizzo di energia](../profiling/analyze-energy-use-in-store-apps.md)  
+ [Analizzare il consumo di energia](../profiling/analyze-energy-use-in-store-apps.md)  
   
  [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Come rispondere agli eventi di sistema con attività in background](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+ [Come rispondere agli eventi di sistema con attività in background](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [Come attivare eventi di sospensione, ripresa e background nelle app UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Come attivare eventi di sospensione, ripresa e background nelle app UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Spostarsi nel simulatore con la tastiera  
- È possibile passare la barra degli strumenti del simulatore premendo **CTRL + ALT + freccia** per spostare lo stato attivo dalla finestra del simulatore alla barra degli strumenti del simulatore. Utilizza **Freccia su** e **Freccia giù** per spostarti tra i pulsanti della barra degli strumenti.  
+ È possibile passare la barra degli strumenti simulatore premendo **CTRL + ALT + freccia** per spostare lo stato attivo dalla finestra del simulatore alla barra degli strumenti di simulatore. Utilizza **Freccia su** e **Freccia giù** per spostarti tra i pulsanti della barra degli strumenti.  
   
  È possibile arrestare il simulatore premendo **CTRL + ALT + F4**.  
   

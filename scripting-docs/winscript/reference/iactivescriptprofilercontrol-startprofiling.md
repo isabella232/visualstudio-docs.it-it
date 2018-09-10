@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling | Documenti Microsoft
+title: IActiveScriptProfilerControl::StartProfiling | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5362eaba439ff7a645a8323c4eed5d9496f6d88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5540573991be11230acb33b088174bbb5c39f7f7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724871"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281715"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Avvia il profiling nel motore di scripting. Il motore di script crea un'istanza dell'oggetto profiler effettuando una chiamata a [CoCreateInstance](http://msdn.microsoft.com/en-us/7295a55b-12c7-4ed0-a7a4-9ecee16afdec).  
+Avvia la profilatura sul motore di scripting. Il motore di script crea un'istanza dell'oggetto profiler effettuando una chiamata a [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,16 +37,16 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>Parametri  
  `clsidProfilerObject`  
- [in] Classe (CLSID) di identificatore dell'oggetto del profiler da creare.  
+ [in] Identificatore (CLSID) dell'oggetto del profiler per creare la classe.  
   
  `dwEventMask`  
- [in] Maschera di bit a 4 byte che specifica i tipi di eventi. I bit sono definiti [enumerazione PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ [in] Maschera di bit a 4 byte che specifica i tipi di eventi. I bit sono definiti in [enumerazione PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
  [in] Un valore a 4 byte che viene passato all'oggetto del profiler.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un valore HRESULT. I valori possibili sono i seguenti:  
+ Restituisce un HRESULT. I valori possibili sono i seguenti:  
   
 |Valore restituito|Significato|  
 |------------------|-------------|  

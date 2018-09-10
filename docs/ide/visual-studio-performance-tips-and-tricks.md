@@ -1,21 +1,20 @@
 ---
-title: Suggerimenti sulle prestazioni di Visual Studio
-ms.date: 08/31/2017
+title: Suggerimenti per migliorare le prestazioni
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433535"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626867"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -40,7 +39,13 @@ Tramite una barra gialla, Visual Studio indica se il ripristino automatico dei d
 
 1. Nella pagina **Progetti e soluzioni** > **Generale** deselezionare **Reopen documents on solution load** (Riapri documenti al caricamento della soluzione).
 
-Se si disabilita il ripristino automatico dei file, è possibile accedere velocemente ai file da aprire usando il comando [Vai a](../ide/go-to.md). Selezionare **Modifica** > **Vai a** > **Vai a tutti** o premere **CTRL**+**T**.
+Se si disabilita il ripristino automatico dei file, è possibile accedere velocemente ai file da aprire usando il comando [Vai a](../ide/go-to.md):
+
+- Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere  **CTRL**+**T**.
+
+- In Visual Studio 2017 versione 15.8 e versioni successive è possibile passare all'ultima posizione di modifica in una soluzione usando **Modifica** > **Vai a** > **Vai alla posizione dell'ultima modifica** oppure premendo **CTRL**+**MAIUSC**+**BACKSPACE**.
+
+- In Visual Studio 2017 versione 15.8 e versioni successive usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **Modifica** > **Vai a** > **Go To Recent File** (Vai a file recenti) oppure premere **CTRL**+**1**, **CTRL**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configurare le opzioni di debug
 

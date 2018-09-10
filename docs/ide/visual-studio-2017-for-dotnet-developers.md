@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468273"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626874"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guida sulla produttività di Visual Studio 2017 in C#
 
@@ -46,12 +46,12 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 | **CTRL**+**.** (o **ALT**+**INVIO** in profilo C# ) | Azioni rapide e refactoring | Visualizza le correzioni e le azioni di generazione di codice, i refactoring e altre azioni rapide disponibili in corrispondenza della posizione del cursore o del codice selezionato |
 | **Ctrl**+**D** | Duplicare una riga | Duplica la riga di codice in cui si trova il cursore (disponibile in **Visual Studio 2017 versione 15.6** e versioni successive) |
 | **MAIUSC**+**ALT**+**+**/**-** | Espandi/Comprimi selezione | Espande o comprime la selezione corrente nell'editor (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive) |
-| **MAIUSC** + **ALT** + **INS** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
+| **CTRL** + **ALT** + **.** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
 | **CTRL**+**Q** | Avvio veloce | Consente di effettuare una ricerca all'interno di tutte le impostazioni di Visual Studio |
 | **F5** | Avvia debug | Avvia il debug dell'applicazione |
 | **CTRL**+**F5** | Esecuzione senza debug | Esegue l'applicazione in locale senza debug |
-| **CTRL**+**K**,**D** (profilo predefinito) o **CTRL**+**E**,**D** (profilo C#) | Formatta documento | Corregge le violazioni alle regole di formattazione nel file in base alle impostazioni relative alle nuove righe, alla spaziatura e ai rientri |
-| **CTRL**+**\\**,**E** (profilo predefinito) o **CTRL**+**W**,**E** (profilo C#) | Visualizzazione dell'elenco errori | Consente di visualizzare tutti gli errori nel documento, nel progetto o nella soluzione |
+| **CTRL**+**K**,**D** (profilo predefinito) o **CTRL**+**E**,**D** (profilo C#) | [Formatta documento](code-styles-and-quick-actions.md#format-document-command) | Corregge le violazioni alle regole di formattazione nel file in base alle impostazioni relative alle nuove righe, alla spaziatura e ai rientri |
+| **CTRL**+**\\**,**CTRL**+**E** (Profilo predefinito) o **CTRL**+**W**,**E** (Profilo C#) | Visualizzazione dell'elenco errori | Consente di visualizzare tutti gli errori nel documento, nel progetto o nella soluzione |
 | **ALT** + **PGSU/PGGIÙ** | Passa a problema successivo/precedente | Passa all'errore, avviso, suggerimento precedente/successivo nel documento (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
 
 > [!NOTE]

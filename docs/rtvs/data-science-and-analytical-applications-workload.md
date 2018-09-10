@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecbd5d1fce685243d889b39017efed24ca4492a0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627117"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installare il supporto per l'analisi scientifica in Visual Studio
 
@@ -30,7 +31,7 @@ Il carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati, c
 R e Python sono due dei principali dei linguaggi di scripting usati per le attività di data science. Entrambi i linguaggi sono facili da imparare e sono supportati da un nutrito ecosistema di pacchetti. Questi pacchetti soddisfano le esigenze di un'ampia gamma di scenari, ad esempio l'acquisizione e la pulizia dei dati, il training di modelli di dati, la distribuzione dei dati e i tracciati. F# è inoltre un linguaggio .NET potente e prima di tutto funzionale, adatto a una grande varietà di attività di elaborazione dati.
 
 <!--Note link on the image because this one is large -->
-[![Screenshot di Visual Studio con R, Python e F#](media/data-science-workload-screens.png)](media/data-science-workload-screens.png)
+[![Screenshot di Visual Studio con R, Python e F#](media/data-science-workload-screens.png)](media/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>Opzioni del carico di lavoro
 
@@ -49,9 +50,9 @@ Per impostazione predefinita, il carico di lavoro installa le opzioni seguenti, 
 
 Sebbene F# sia incluso in vari altri carichi di lavoro e Python abbia un carico di lavoro specifico, il carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati è l'unico al momento a includere R. È comunque possibile installare R anche in modo indipendente dal carico di lavoro. Nella scheda **Singoli componenti** nel programma di installazione selezionare le opzioni di R seguenti:
 
-- **Attività di sviluppo >Supporto per il linguaggio R**
-- **Attività di sviluppo > Microsoft R Client**
-- **Compilatori, strumenti di compilazione e runtime > Supporto del runtime per strumenti di sviluppo R**
+- **Attività di sviluppo** > **Supporto per il linguaggio R**
+- **Attività di sviluppo** > **Microsoft R Client**
+- **Compilatori, strumenti di compilazione e runtime** > **Supporto del runtime per strumenti di sviluppo R**
 
 ## <a name="sql-server-integration"></a>Integrazione con SQL Server
 
@@ -75,7 +76,7 @@ Per sfruttare al meglio l'integrazione in SQL Server, usare il programma di inst
 
 Per ulteriori informazioni:
 
-- [Uso di SQL Server ed R](../rtvs/sql-server.md)
+- [Usare SQL Server ed R](integrating-sql-server-with-r.md)
 - [In-database Advanced Analytics with R in SQL Server 2016 (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/) (Analisi avanzata all'interno del database con R in SQL Server 2016)
 - [Python in SQL Server 2017: enhanced in-database machine learning (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/) (Python in SQL Server 2017: funzionalità avanzate di Machine Learning all'interno del database)
 
@@ -88,4 +89,4 @@ Azure SDK per Python semplifica l'uso e la gestione dei servizi di Microsoft Azu
 Azure Notebooks (attualmente in anteprima) consente l'accesso online gratuito ai notebook di Jupyter in esecuzione nel cloud in Microsoft Azure. Il servizio include notebook di esempio in Python, R e F# per iniziare. Visitare [notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Screenshot di Azure Notebooks con l'esempio Introduction to R (Introduzione a R)](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png)
+[![Screenshot di Azure Notebooks con l'esempio Introduction to R (Introduzione a R)](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png#lightbox)

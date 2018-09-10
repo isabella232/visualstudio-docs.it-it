@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 3cee40dd1dab8c3a9d9b57b84e6e299651bc5fc8
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626666"
 ---
 # <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 Usare lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger per rilevare perdite di memoria e usi inefficienti della memoria. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo. È possibile raccogliere snapshot di app.NET, native o in modalità mista (.NET e native).  
@@ -23,6 +24,8 @@ Usare lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger pe
 -   È anche possibile confrontare (diff) due snapshot di un'app per trovare le aree del codice che provocano l'incremento dell'uso della memoria nel tempo.  
 
 Per istruzioni dettagliate, vedere l'esercitazione sull'[analisi dell'uso della memoria](../profiling/memory-usage.md). Per analizzare l'uso della memoria senza collegare il debugger, vedere [Utilizzo della memoria senza il debugger](memory-usage-without-debugging2.md).
+
+È possibile usare gli strumenti di profilatura senza il debugger con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
   
 ## <a name="blogs-and-videos"></a>Blog e video  
 
@@ -36,4 +39,4 @@ Per istruzioni dettagliate, vedere l'esercitazione sull'[analisi dell'uso della 
 
 ## <a name="see-also"></a>Vedere anche
  [Profilatura in Visual Studio](../profiling/index.md)  
- [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
+ [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

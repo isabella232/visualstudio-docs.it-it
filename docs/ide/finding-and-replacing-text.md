@@ -1,6 +1,6 @@
 ---
-title: Cercare e sostituire testo
-ms.date: 05/07/2018
+title: Cercare e sostituire testo e selezione di più punti di inserimento
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -27,22 +27,22 @@ helpviewer_keywords:
 - find and replace
 - find text
 - replace text
-ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
+- multi-caret selection
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106752"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627077"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
-È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) oppure [Ricerca/sostituzione nei file](#find-in-files-and-replace-in-files).
+È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) oppure [Ricerca/sostituzione nei file](#find-replace-in-files). La novità di Visual Studio 2017 versione 15.8 è che possibile cercare e sostituire *alcune* istanze di un modello usando la *[selezione di più punti di inserimento](#multi-caret-selection)*.
 
 > [!TIP]
 > Se si stanno rinominando simboli del codice, ad esempio variabili e i metodi, è preferibile *[effettuarne il refactoring](../ide/reference/rename.md)* anziché usare la funzionalità di ricerca e sostituzione. Il refactoring è un'opzione avanzata in grado di rilevare l'ambito, mentre con la ricerca e sostituzione vengono sostituite indifferentemente tutte le istanze.
@@ -58,7 +58,7 @@ La funzionalità di ricerca e sostituzione è disponibile nell'editor, in alcune
 
 Il controllo **Trova e sostituisci** viene visualizzato nell'angolo superiore destro della finestra dell'editor di codice. Il controllo **Trova e sostituisci** evidenzia immediatamente tutte le occorrenze della stringa di ricerca specificata nel documento corrente. È possibile spostarsi da un'occorrenza all'altra scegliendo il pulsante **Trova successivo** o **Trova precedente** nel controllo di ricerca.
 
-![Controllo Trova e sostituisci](media/find-and-replace-box.png)
+![Trova e sostituisci in Visual Studio](media/find-and-replace-box.png)
 
 È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto**.
 
@@ -74,7 +74,7 @@ Una versione del controllo di **ricerca** è disponibile anche in alcune finestr
 
 **Find/Replace in Files** (Trova/Sostituisci nei file) funziona come il controllo **Trova e sostituisci**, con la differenza che è possibile definire un ambito per la ricerca. Non solo è possibile cercare il file aperto corrente nell'editor, ma anche tutti i documenti aperti, l'intera soluzione, il progetto corrente e gli insiemi di cartelle selezionati. È inoltre possibile eseguire la ricerca in base all'estensione del nome file. Per accedere alla finestra di dialogo **Cerca/Sostituisci nei file**, selezionare **Trova e sostituisci** dal menu **Modifica** o premere **CTRL+MAIUSC+F**.
 
-![Cerca nei file (finestra di dialogo)](media/find-in-files-box.png)
+![Cerca in File di Visual Studio](media/find-in-files-box.png)
 
 ### <a name="find-results"></a>Risultati ricerca
 
@@ -90,6 +90,41 @@ Quando si sceglie **Find All**  (Trova tutti), si apre una finestra **Risultati 
 ### <a name="create-custom-component-sets"></a>Creare set di componenti personalizzati
 
 È possibile definire set di componenti nell'ambito di ricerca scegliendo il pulsante **Modifica insieme di componenti personalizzato** accanto alla casella **Cerca in**. È possibile specificare i componenti .NET o COM installati, i progetti Visual Studio che sono inclusi nella soluzione, o qualunque assembly o libreria dei tipi (*.dll*, *.tlb*, *.olb*, *.exe* o *.ocx*). Per individuare i riferimenti, selezionare la casella **Cerca in riferimenti**.
+
+## <a name="multi-caret-selection"></a>Selezione di più punti di inserimento
+
+**Novità in Visual Studio 2017 versione 15.8**
+
+Usare la *selezione di più punti di inserimento* per apportare la stessa modifica apportata in due o più posizioni nello stesso momento. Ad esempio, è possibile inserire lo stesso testo o modificare il testo esistente in più posizioni nello stesso momento.
+
+Nello screenshot seguente `-0000` è selezionato in tre posizioni; se l'utente preme **Elimina**, vengono eliminate tutte e tre le selezioni:
+
+![Selezione di più punti di inserimento in un file XML in Visual Studio](media/multi-caret-selection.png)
+
+Per selezionare più punti di inserimento, fare clic o effettuare la prima selezione di testo come di consueto, quindi premere **ALT** mentre si fa clic o si seleziona il testo in ogni nuova posizione. È anche possibile aggiungere automaticamente il testo corrispondente come selezioni aggiuntive o selezionare una casella di testo per modificare in modo identico ogni riga.
+
+> [!TIP]
+> Se si è scelto **ALT** come tasto di modifica per il clic del mouse di Vai a definizione in **Strumenti** > **Opzioni**, la selezione per più punti di inserimento è disabilitata.
+
+### <a name="commands"></a>Comandi:
+
+Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punti di inserimento:
+
+|Collegamento|Operazione|
+|-|-|
+|**CTRL**+**ALT** + clic|Aggiungere un punto di inserimento secondario|
+|**CTRL**+**ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
+|**CTRL**+**ALT** + clic + trascina|Aggiungere una selezione secondaria|
+|**MAIUSC**+**ALT**+**.**|Aggiungere il testo successivo corrispondente come selezione|
+|**CTRL**+**MAIUSC**+**ALT**+**,**|Aggiungere tutto il testo corrispondente come selezione|
+|**MAIUSC**+**ALT**+**,**|Rimuovere l'ultima occorrenza selezionata|
+|**CTRL**+**MAIUSC**+**Alt**+**.**|Ignorare l'occorrenza corrispondente successiva|
+|**ALT** + clic|Aggiungere una selezione di casella|
+|**ESC** oppure clic|Cancellare tutte le selezioni|
+
+Alcuni comandi sono disponibili anche nel menu **Modifica**, in **Più punti di inserimento**:
+
+![Menu a comparsa per Più punti di inserimento in Visual Studio](media/edit-menu-multiple-carets.png)
 
 ## <a name="see-also"></a>Vedere anche
 

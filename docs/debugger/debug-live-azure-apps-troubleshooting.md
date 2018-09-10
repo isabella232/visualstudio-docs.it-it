@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152013"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284107"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
@@ -42,7 +42,7 @@ Eseguire questi passaggi:
 
 - Fare clic su di **modificare le impostazioni dei simboli...** collegamento in questa pagina. Nel **Debug > simboli** impostazioni, aggiungere una directory cache dei simboli. Riavviare il debug di snapshot dopo aver impostato il percorso dei simboli.
 
-   I simboli o un file con estensione pdb, disponibili nel progetto devono corrispondere la distribuzione del servizio App. La maggior parte delle distribuzioni (distribuzione tramite Visual Studio, integrazione continua/recapito Continuo con Visual Studio Team Services o Kudu, e così via) verranno pubblicati i file di simboli insieme al servizio App. Impostare la directory cache dei simboli consente a Visual Studio usare questi simboli.
+   I simboli o un file con estensione pdb, disponibili nel progetto devono corrispondere la distribuzione del servizio App. La maggior parte delle distribuzioni (distribuzione tramite Visual Studio, integrazione continua/recapito Continuo con le pipeline di Azure o Kudu, e così via) verranno pubblicati i file di simboli insieme al servizio App. Impostare la directory cache dei simboli consente a Visual Studio usare questi simboli.
 
    ![Impostazioni dei simboli](../debugger/media/snapshot-troubleshooting-symbol-settings.png "impostazioni dei simboli")
 

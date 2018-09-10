@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug di applicazioni a 64 Bit | Documenti Microsoft
+title: Il debug di applicazioni a 64 bit | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17577684c7adffe46326d2151710e88745c60e1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 28a7625729989252a29ab1d0f65feec010e9e65f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461438"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284081"
 ---
 # <a name="debug-64-bit-applications"></a>Eseguire il debug di applicazioni a 64 bit
 È possibile eseguire il debug di un'applicazione a 64 bit in esecuzione nel computer locale o in un computer remoto.  
@@ -46,7 +46,7 @@ ms.locfileid: "31461438"
 4.  Avviare il debug. L'esperienza dovrebbe corrispondere a quella di una configurazione a 32 bit. Se si verificano errori, vedere la sezione relativa alla risoluzione dei problemi di seguito.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>Risoluzione dei problemi di debug a 64 bit  
- Potrebbe essere visualizzato un errore: "un'operazione di debug a 64 bit richiede più tempo del previsto." In questo caso, Visual Studio ha inviato una richiesta alla versione a 64 bit di msvsmon.exe ed è stato necessario molto tempo per la restituzione del risultato di tale richiesta.  
+ Si potrebbe essere visualizzato un errore: "un'operazione di debug a 64 bit richiede più tempo del previsto." In questo caso, Visual Studio ha inviato una richiesta alla versione a 64 bit di msvsmon.exe ed è stato necessario molto tempo per la restituzione del risultato di tale richiesta.  
   
  Questo errore può avere due cause principali:  
   
@@ -55,8 +55,8 @@ ms.locfileid: "31461438"
 -   Si è verificato un blocco o un problema di prestazioni di Visual Studio. Se il problema si verifica regolarmente, è possibile raccogliere dump di Visual Studio (devenv.exe) e del processo di lavoro (msvsmon.exe) e inviarli a Microsoft. Per informazioni sulla segnalazione di un problema, vedere [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
   
 ## <a name="see-also"></a>Vedere anche  
- [Applicazioni a 64 bit](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Applicazioni a 64 bit](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
  [Configurazione di programmi per 64 Bit](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
- [Supporto a 64 bit di Visual Studio IDE](../ide/visual-studio-ide-64-bit-support.md)   
- [Utilizzo dei file di Dump](../debugger/using-dump-files.md)   
+ [Supporto a 64 bit dell'IDE di Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
+ [Uso dei file Dump](../debugger/using-dump-files.md)   
  [Debug remoto](../debugger/remote-debugging.md)

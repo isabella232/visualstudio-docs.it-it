@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623771"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280224"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -216,9 +216,9 @@ Durante il lavoro, i team aggiornano gli elementi di lavoro in modo da rifletter
 
 Vedere:
 
-- [Tenere traccia del lavoro tramite Visual Studio Online o Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [Sugli strumenti Agile e gestione dei progetti Agile](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [I grafici, dashboard e widget (VSTS)](/vsts/report/dashboards/overview?view=vsts)
+- [I grafici, dashboard e widget (servizi di Azure DevOps)](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [Creare il backlog e le attività tramite Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -238,13 +238,13 @@ Per assicurarsi che il codice sia conforme alla progettazione, i team configuran
 
 Vedere:
 
-- [Test dell'applicazione](/vsts/test/overview?view=vsts)
+- [Test dell'applicazione](/azure/devops/test/overview?view=vsts)
 
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)
 
 - [Utilizzare il controllo della versione](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Compilazione e versione](/vsts/build-release/index)
+- [Pipeline di Azure](/azure/devops/pipelines/index)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Aggiornare il sistema mediante visualizzazione e modellazione
 

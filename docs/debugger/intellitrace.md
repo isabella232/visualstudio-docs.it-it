@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad3344d688159ded35cd8f6c6aa757cc8a7a478
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 972338fa4b52a61024cabd098c29cd0f5d9c8a4f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623692"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280779"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -46,7 +46,7 @@ ms.locfileid: "42623692"
 |||
 |-|-|
 |**Eseguire il debug dell'applicazione con IntelliTrace:**<br /><br /> -Mostrare gli eventi passati.<br />-Mostra me chiamare informazioni con gli eventi passati.<br />-Salva la sessione di IntelliTrace.<br />-Controllare i dati raccolti da IntelliTrace.|- [Procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debug cronologico](../debugger/historical-debugging.md)<br />- [Visualizzare gli snapshot con tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Raccogliere dati IntelliTrace durante una sessione di test in Test Manager**|- [Raccogliere più dati di diagnostica nei test manuali](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Raccogliere dati IntelliTrace durante una sessione di test in Test Manager**|- [Raccogliere più dati di diagnostica nei test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|
 |**Raccogliere dati IntelliTrace dalle applicazioni distribuite**|- [Tramite l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Avviare il debug da un file di log IntelliTrace (file. iTrace).**|- [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ IntelliTrace consente anche di eseguire il debug di errori difficili da riprodur
 
 - L'applicazione si arresta in modo anomalo in un computer utilizzato per i test, ma viene eseguita correttamente in un computer di sviluppo.
 
-     È possibile raccogliere dati IntelliTrace da Microsoft Test Manager, salvare i dati in un file .iTrace e allegarlo a un elemento di lavoro Team Foundation Server per analizzarlo in un secondo momento. Visualizzare [raccogliere più dati di diagnostica nei test manuali](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) e [uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md).
+     È possibile raccogliere dati IntelliTrace da Microsoft Test Manager, salvare i dati in un file .iTrace e allegarlo a un elemento di lavoro Team Foundation Server per analizzarlo in un secondo momento. Visualizzare [raccogliere più dati di diagnostica nei test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) e [uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md).
 
 - Un bug o un arresto anomalo si verifica in un'applicazione distribuita.
 
@@ -175,7 +175,7 @@ Per controllare la quantità di informazioni sulle chiamate raccolte da IntelliT
 
 Per impostazione predefinita, vengono raccolti dati solo per eventi di IntelliTrace selezionati. Ciò può rallentare o meno l'applicazione, a seconda della struttura e dell'organizzazione del codice. Ad esempio, se IntelliTrace registra spesso un evento, questo potrebbe rallentare l'applicazione. Potrebbe essere opportuno anche considerare il refactoring dell'applicazione.
 
-La raccolta di informazioni sulle chiamate potrebbe rallentare significativamente l'applicazione. Potrebbero inoltre aumentare le dimensioni di ogni file di log IntelliTrace (file con estensione iTrace) salvato nel disco. Per ridurre al minimo questi effetti, raccogliere le informazioni sulle chiamate solo per i moduli desiderati.  Per modificare le dimensioni massime del file. iTrace, passare a **degli strumenti**, **opzioni**, **IntelliTrace**, **avanzate**.
+La raccolta di informazioni sulle chiamate potrebbe rallentare significativamente l'applicazione. Potrebbero inoltre aumentare le dimensioni di ogni file di log IntelliTrace (file con estensione iTrace) salvato nel disco. Per ridurre al minimo questi effetti, raccogliere le informazioni sulle chiamate solo per i moduli desiderati.  Per modificare le dimensioni massime del file. iTrace, passare a **degli strumenti**, **opzioni**, **IntelliTrace**, **avanzate**. 
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

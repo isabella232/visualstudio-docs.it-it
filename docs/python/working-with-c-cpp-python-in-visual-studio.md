@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 289d22798b243a7276d74257b0d3b1f7213b3a32
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586560"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627158"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creare un'estensione C++ per Python
 
@@ -48,7 +48,7 @@ Per altre informazioni, vedere [Installare il supporto di Python per Visual Stud
 
 1. Creare un nuovo progetto di Python in Visual Studio selezionando **File** > **Nuovo** > **Progetto**. Cercare "Python", selezionare il modello **Applicazione Python**, assegnare a questo un nome e un percorso appropriati e selezionare **OK**.
 
-1. L'utilizzo di C++ richiede l'uso di un interprete Python a 32 bit (è consigliato Python 3.6). Nella finestra **Esplora soluzioni** di Visual Studio espandere il nodo del progetto e quindi il nodo **Ambienti Python**. Se come impostazione predefinita non viene visualizzato un ambiente a 32 bit (in grassetto o con etichetta **impostazioni globali predefinite**), seguire le istruzioni in [Selezionare un ambiente Python per un progetto](selecting-a-python-environment-for-a-project.md). Se non è installato alcun interprete a 32 bit, vedere [Installare interpreti Python](installing-python-interpreters.md).
+1. L'utilizzo di C++ richiede l'uso di un interprete Python a 32 bit. È consigliato Python 3.6 o versioni successive. Nella finestra **Esplora soluzioni** di Visual Studio espandere il nodo del progetto e quindi il nodo **Ambienti Python**. Se come impostazione predefinita non viene visualizzato un ambiente a 32 bit (in grassetto o con etichetta **impostazioni globali predefinite**), seguire le istruzioni in [Selezionare un ambiente Python per un progetto](selecting-a-python-environment-for-a-project.md). Se non è installato alcun interprete a 32 bit, vedere [Installare interpreti Python](installing-python-interpreters.md).
 
 1. Nel file *.py* del progetto, incollare il codice seguente che effettua il benchmark del calcolo di una tangente iperbolica, implementato senza usare la libreria matematica per un confronto più semplice. È anche possibile immettere il codice manualmente per provare alcune delle [funzionalità di modifica Python](editing-python-code-in-visual-studio.md).
 

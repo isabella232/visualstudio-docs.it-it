@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5e0ddb21e12af4c6e35274dd9a5fd572654e6119
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953495"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279856"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e altre parti interessate e consente di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
@@ -24,7 +24,7 @@ ms.locfileid: "31953495"
  Per le versioni di Visual Studio che supportano queste funzionalità, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="system-and-subsystem-testing"></a>Test di sistema e di sottosistema
- *Test di sistema* noto anche come *test di accettazione*, significa test se vengono soddisfatte le esigenze degli utenti. Questi test riguardano il comportamento del sistema visibile esternamente piuttosto che la progettazione interna.
+ *Test di sistema* noto anche come *test di accettazione*, significa che il test se vengono soddisfatte le esigenze degli utenti. Questi test riguardano il comportamento del sistema visibile esternamente piuttosto che la progettazione interna.
 
  I test di sistema sono molto utili quando è necessario estendere o riprogettare un sistema e permettono di evitare di introdurre bug quando si modifica il codice.
 
@@ -35,7 +35,7 @@ ms.locfileid: "31953495"
  Il test di sottosistema applica gli stessi principi ai componenti principali di un sistema. Ogni componente viene testato separatamente dagli altri componenti. l test di sottosistema sono incentrati sul comportamento visibile nelle interfacce utente o nell'API del componente.
 
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Derivazione dei test di sistema da un modello di requisiti
- È possibile creare e gestire una relazione tra i test di sistema e un modello di requisiti. Per stabilire questa relazione, si scrivono test che corrispondono agli elementi principali del modello di requisiti. Visual Studio facilita il mantenimento di tale relazione permettendo di creare collegamenti tra i test e le parti del modello. Per ulteriori informazioni sui modelli di requisiti, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).
+ È possibile creare e gestire una relazione tra i test di sistema e un modello di requisiti. Per stabilire questa relazione, si scrivono test che corrispondono agli elementi principali del modello di requisiti. Visual Studio facilita il mantenimento di tale relazione permettendo di creare collegamenti tra i test e le parti del modello. Per altre informazioni sui modelli di requisiti, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).
 
 ### <a name="write-tests-for-each-use-case"></a>Scrivere test per ogni caso di utilizzo
  Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è possibile creare un gruppo di test per ogni caso di utilizzo definito nel modello di requisiti. Se ad esempio si ha un caso di utilizzo Ordinazione pasto che include Creazione ordine e Aggiunta elemento all'ordine, è possibile creare i test sia per i casi di utilizzo in generale che per quelli più dettagliati.
@@ -55,17 +55,17 @@ ms.locfileid: "31953495"
 -   Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, il test di una funzione aritmetica semplice, può essere: Input 4; verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input; moltiplicare l'output per se stesso e verificare che il risultato sia l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.
 
 #### <a name="linking-tests-to-use-cases"></a>Collegamento di test ai casi di utilizzo
- Se si utilizza [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] per progettare ed eseguire i test, è possibile organizzare i test in elementi di lavoro storia utente, requisito o caso d'uso. È possibile collegare questi elementi di lavoro ai casi di utilizzo del modello, in modo da tenere traccia rapidamente delle modifiche dei requisiti nei test, oltre che dello stato di avanzamento di ogni caso di utilizzo.
+ Se si usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] per progettare ed eseguire i test, è possibile organizzare i test in elementi di lavoro storia utente requisito o caso d'uso. È possibile collegare questi elementi di lavoro ai casi di utilizzo del modello, in modo da tenere traccia rapidamente delle modifiche dei requisiti nei test, oltre che dello stato di avanzamento di ogni caso di utilizzo.
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Per collegare i test a un caso di utilizzo
 
 1.  In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
 
-     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Per ulteriori informazioni, vedere [tenere traccia del lavoro tramite Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).
+     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Collegare l'elemento di lavoro requisito a uno o più casi di utilizzo del modello.
 
-     In un diagramma caso d'uso, fare doppio clic su un caso d'uso e quindi fare clic su **Collega a elemento di lavoro**.
+     In un diagramma caso di utilizzo, fare doppio clic su un caso d'uso e quindi fare clic su **Collega a elemento di lavoro**.
 
 3.  Aggiungere al gruppo di test i test case che verificano i casi di utilizzo.
 
@@ -112,7 +112,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="deriving-subsystem-tests-from-models"></a>Derivazione dei test di sottosistema dai modelli
  Nella progettazione di alto livello di un sistema di grandi dimensioni è possibile identificare componenti o sottosistemi. Rappresentano le parti che possono essere progettate separatamente, che risiedono in computer diversi o che sono moduli riutilizzabili da ricombinare in vari modi.
 
- A ciascun componente principale è possibile applicare gli stessi principi usati per il sistema completo. In un progetto di grandi dimensioni, ogni componente può avere il proprio modello di requisiti. Nei progetti più piccoli è possibile creare un modello architetturale o una progettazione di alto livello per mostrare i componenti principali e le relative interazioni. Per ulteriori informazioni, vedere [modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md).
+ A ciascun componente principale è possibile applicare gli stessi principi usati per il sistema completo. In un progetto di grandi dimensioni, ogni componente può avere il proprio modello di requisiti. Nei progetti più piccoli è possibile creare un modello architetturale o una progettazione di alto livello per mostrare i componenti principali e le relative interazioni. Per altre informazioni, vedere [modellare l'architettura dell'applicazione](../modeling/model-your-app-s-architecture.md).
 
  In entrambi i casi è possibile stabilire una relazione tra gli elementi del modello e i test di sottosistema, in modo analogo all'operazione eseguita per stabilire una relazione tra il modello di requisiti e i test di sistema.
 
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  Da un punto di vista del test, un modello di requisiti può essere considerato un metodo abbreviato per i test. È quindi importante gestire la relazione tra i test e il modello in tutto il progetto.
 
-##  <a name="Attaching"></a> Collegare Test case a elementi di modello
+##  <a name="Attaching"></a> Associazione di Test case agli elementi del modello
  Se il progetto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], è possibile collegare i test agli elementi del modello. In questo modo è possibile trovare rapidamente i test interessati da una modifica ai requisiti e tenere traccia dell'ambito di applicazione di un requisito.
 
  È possibile collegare i test a tutti i tipi di elemento. Ecco alcuni esempi:
@@ -149,11 +149,11 @@ Assert (countAfter == countBefore = 1);
 
 1.  In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
 
-     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Per ulteriori informazioni, vedere [tenere traccia del lavoro tramite Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).
+     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Collegare l'elemento di lavoro requisito a uno o più elementi del modello.
 
-     In un diagramma di modellazione, fare doppio clic su un elemento, commento o una relazione e quindi fare clic su **Collega a elemento di lavoro**.
+     In un diagramma di modellazione, fare doppio clic su un elemento, commento o relazione e quindi fare clic su **Collega a elemento di lavoro**.
 
 3.  Aggiungere al gruppo di test i test case che verificano il requisito espresso nell'elemento del modello.
 

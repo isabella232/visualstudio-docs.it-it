@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364bdcab6ac455833e33cf59391aaef4f0af81d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6884ec7284fa99a9221b378935250cc676d11de8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058009"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280211"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnosticare i problemi dopo la distribuzione
 Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando IntelliTrace, includere le informazioni di compilazione nella versione per consentire a Visual Studio di trovare automaticamente i file di origine corretti e i file di simboli necessari per il debug del log IntelliTrace.  
@@ -41,11 +41,11 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
  
  ####  <a name="TFS2017"></a> Team Foundation Server 2017
 
- Configurare la definizione di compilazione per aggiungere le posizioni di origine, compilazione e simboli al manifesto di compilazione (file BuildInfo.config). Team Foundation Build crea automaticamente questo file e lo inserisce nella cartella di output del progetto.
+ Configurare la pipeline di compilazione per aggiungere i percorsi dell'origine, compilazione e simboli al manifesto di compilazione (file buildinfo. config). Team Foundation Build crea automaticamente questo file e lo inserisce nella cartella di output del progetto.
   
-1.  Se si dispone già di una definizione di compilazione usando il modello di ASP.NET Core (.NET Framework), è possibile [modificare la definizione di compilazione o creare una nuova definizione di compilazione.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)
+1.  Se si dispone già di una pipeline di compilazione usando il modello ASP.NET Core (.NET Framework), è possibile [modificare pipeline di compilazione o creare una nuova pipeline di compilazione.](/azure/devops/pipelines/get-started-designer)
   
-     ![Visualizza definizione di compilazione in TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![Visualizza compilazione della pipeline in TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
   
 2.  Se si crea un nuovo modello, scegliere il modello di ASP.NET Core (.NET Framework). 
   
@@ -55,9 +55,9 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
   
      Se si usa un modello personalizzato, verificare che disponga di un'attività per l'indicizzazione dell'origine. In seguito verrà aggiunto un argomento MSBuild per specificare il percorso in cui salvare i file dei simboli.
   
-     ![Impostare il percorso dei simboli nella definizione di compilazione TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![Impostare il percorso dei simboli nella pipeline di compilazione TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     Per altre informazioni sui simboli, vedere [pubblicare i dati dei simboli](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+     Per altre informazioni sui simboli, vedere [pubblicare i dati dei simboli](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols).  
   
 4.  Aggiungere questo argomento MSBuild per inserire i percorsi di TFS e simboli nel file manifesto di compilazione:  
   
@@ -70,11 +70,11 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
     Passare a [passaggio 2: rilasciare l'app](#DeployRelease)  
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
- Configurare la definizione di compilazione per aggiungere le posizioni di origine, compilazione e simboli al manifesto di compilazione (file BuildInfo.config). Team Foundation Build crea automaticamente questo file e lo inserisce nella cartella di output del progetto.  
+ Configurare la pipeline di compilazione per aggiungere i percorsi dell'origine, compilazione e simboli al manifesto di compilazione (file buildinfo. config). Team Foundation Build crea automaticamente questo file e lo inserisce nella cartella di output del progetto.  
 
-1.  [Modificare la definizione di compilazione o creare una nuova definizione di compilazione.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1.  [Modificare la pipeline di compilazione o creare una nuova pipeline di compilazione.](/azure/devops/pipelines/get-started-designer)  
 
-     ![Visualizza definizione di compilazione in TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+     ![Visualizza compilazione della pipeline in TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
 
 2.  Scegliere il modello predefinito (TfvcTemplate.12.xaml) o il proprio modello personalizzato.  
 
@@ -84,9 +84,9 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
      Se si usa un modello personalizzato, verificare che disponga di un'attività per l'indicizzazione dell'origine. In seguito verrà aggiunto un argomento MSBuild per specificare il percorso in cui salvare i file dei simboli.  
 
-     ![Impostare il percorso dei simboli nella definizione di compilazione TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![Impostare il percorso dei simboli nella pipeline di compilazione TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
 
-     Per altre informazioni sui simboli, vedere [pubblicare i dati dei simboli](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+     Per altre informazioni sui simboli, vedere [pubblicare i dati dei simboli](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols).  
 
 4.  Aggiungere questo argomento MSBuild per inserire i percorsi di TFS e simboli nel file manifesto di compilazione:  
 
@@ -119,11 +119,11 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
 1.  Installare Visual Studio 2013 (qualsiasi edizione) nel server Team Foundation Build.  
 
-2.  Nella definizione della compilazione specificare il percorso in cui salvare i simboli in modo da indicizzare automaticamente l'origine.  
+2.  Nella pipeline di compilazione, specificare dove salvare i simboli in modo da indicizzare automaticamente l'origine.  
 
      Se si usa un modello personalizzato, verificare che disponga di un'attività per l'indicizzazione dell'origine.  
 
-3.  Aggiungere gli argomenti MSBuild alla definizione della compilazione:  
+3.  Aggiungere gli argomenti MSBuild alla pipeline di compilazione:  
 
     -   **/p:VisualStudioVersion = 12.0**  
 
@@ -176,7 +176,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
  **/p: buildsymbolstorepath =**\<*percorso dei simboli*>  
 
 ##  <a name="DeployRelease"></a> Passaggio 2: Rilasciare l'app  
- Se si usa il [pacchetto Web.Deploy](http://msdn.microsoft.com/library/dd394698.aspx) creato dal processo di compilazione per distribuire l'applicazione, il manifesto di compilazione viene rinominato automaticamente da "*NomeProgetto*.BuildInfo.config" a "BuildInfo.config" e viene inserito nella stessa cartella del file Web.config dell'applicazione, nel server Web.  
+ Se si usa la [pacchetto di Web. deploy](https://msdn.microsoft.com/library/dd394698.aspx) creato dal processo di compilazione per distribuire l'app, il manifesto di compilazione viene rinominato automaticamente da "*ProjectName*. Buildinfo. config"a"Buildinfo. config"e viene inserito nella stessa cartella Web. config file dell'app sul server web.  
 
  Se vengono usati altri metodi per distribuire l'applicazione, assicurarsi che il manifesto di compilazione sia rinominato da "*ProjectName*.BuildInfo.config" a "BuildInfo.config" inserito nella stessa cartella del file Web.config dell'applicazione, nel server Web.  
 
@@ -234,7 +234,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
      ![Passare al codice dell'applicazione dall'evento prestazioni](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
 
-     È possibile esaminare altri valori registrati, lo stack di chiamate, eseguire un'istruzione alla volta nel codice o usare la finestra **IntelliTrace** per [spostarsi in avanti o indietro tra gli altri metodi](../debugger/intellitrace.md) chiamati durante questo evento di prestazioni. [Che cos'è tutti gli altri eventi e informazioni riportati nel log IntelliTrace? ](../debugger/using-saved-intellitrace-data.md) [Cos'altro è possibile eseguire da qui?](#WhatElse) [Servono altre informazioni sugli eventi di prestazioni?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     È possibile esaminare altri valori registrati, lo stack di chiamate, eseguire un'istruzione alla volta nel codice o usare la finestra **IntelliTrace** per [spostarsi in avanti o indietro tra gli altri metodi](../debugger/intellitrace.md) chiamati durante questo evento di prestazioni. [Che cos'è tutti gli altri eventi e informazioni riportati nel log IntelliTrace? ](../debugger/using-saved-intellitrace-data.md) [Cos'altro è possibile eseguire da qui?](#WhatElse) [Servono altre informazioni sugli eventi di prestazioni?](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)  
 
 ### <a name="diagnose-an-exception"></a>Diagnosticare un'eccezione  
 
@@ -336,7 +336,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
      Informazioni sul sistema di compilazione, `"TeamBuild"` o `"MSBuild"`e queste proprietà richieste:  
 
-    -   **BuildLabel** (per TeamBuild): nome e il numero della build. Questa etichetta viene usata anche come nome dell'evento di distribuzione. Per altre informazioni sui numeri di build, vedere [usare i numeri per assegnare nomi significativi alle compilazioni completate di build](http://msdn.microsoft.com/Library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+    -   **BuildLabel** (per TeamBuild): nome e il numero della build. Questa etichetta viene usata anche come nome dell'evento di distribuzione. Per altre informazioni sui numeri di build, vedere [usare i numeri per assegnare nomi significativi alle compilazioni completate di build](/azure/devops/pipelines/build/options).  
 
     -   **SymbolPath** (Consigliato): elenco di URI per le posizioni dei simboli (file PDB)separati da punto e virgola. Questi URI possono essere URL o UNC. In tal modo è più facile trovare i simboli corrispondenti, utili per il debug.  
 
@@ -396,9 +396,9 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
      ![Apri dal controllo del codice sorgente &#45; migrate](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
 ####  <a name="WhatWorkspace"></a> D: che cos'è un'area di lavoro?  
- **R:** le [dell'area di lavoro viene memorizzata una copia dell'origine](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) in modo che è possibile sviluppare e svilupparla prima di archiviare il lavoro. Se non è già presente un'area di lavoro mappata specificatamente alla soluzione o al progetto trovato, in Visual Studio viene richiesto di scegliere un'area di lavoro disponibile oppure di crearne una nuova con il nome del computer in uso come nome predefinito dell'area di lavoro.  
+ **R:** le [dell'area di lavoro viene memorizzata una copia dell'origine](/azure/devops/repos/tfvc/create-work-workspaces) in modo che è possibile sviluppare e svilupparla prima di archiviare il lavoro. Se non è già presente un'area di lavoro mappata specificatamente alla soluzione o al progetto trovato, in Visual Studio viene richiesto di scegliere un'area di lavoro disponibile oppure di crearne una nuova con il nome del computer in uso come nome predefinito dell'area di lavoro.  
 
 ####  <a name="UntrustedSymbols"></a> D: perché viene visualizzato questo messaggio sui simboli non attendibili?  
- ![Eseguire il debug con percorso dei simboli non attendibili? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+ ![Eseguire il debug con percorso dei simboli non attendibili? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **R:** questo messaggio viene visualizzato quando il percorso dei simboli nel file manifesto di compilazione (\<*ProjectName*>. Buildinfo. config) non è incluso nell'elenco dei percorsi dei simboli attendibili. È possibile aggiungere il percorso dell'elenco di percorsi di simboli nelle opzioni del debugger.

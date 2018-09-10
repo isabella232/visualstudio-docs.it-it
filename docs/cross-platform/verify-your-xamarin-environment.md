@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9ae697825d0d4a2c380c6f0d540153fbf06d4da4
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233087"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42626637"
 ---
 # <a name="verify-your-xamarin-environment"></a>Verificare l'ambiente Xamarin
 
@@ -54,7 +54,7 @@ Queste azioni creano una soluzione con quattro progetti: un progetto di libreria
 
   ![Selezionare Visual Studio Emulator for Android come destinazione di debug](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  Per informazioni più dettagliate, vedere [Introducing Visual Studio's Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Introduzione a Visual Studio Emulator for Android) (blog di Visual Studio ALM). In caso di problemi di funzionamento dell'emulatore, vedere [Risolvere i problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). È anche possibile creare nuovi profili di dispositivo per l'emulatore selezionando **Strumenti > Android > Gestione emulatori Android**.
+  Per informazioni più dettagliate, vedere [Introducing Visual Studio's Emulator for Android](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/) (Introduzione all'emulatore di Visual Studio for Android) nel blog di Microsoft DevOps. In caso di problemi di funzionamento dell'emulatore, vedere [Risolvere i problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). È anche possibile creare nuovi profili di dispositivo per l'emulatore selezionando **Strumenti > Android > Gestione emulatori Android**.
 
 3. Premere **F5** per compilare e distribuire il programma al dispositivo o all'emulatore Android.
 

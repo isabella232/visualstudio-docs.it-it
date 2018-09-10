@@ -1,5 +1,5 @@
 ---
-title: Il debug degli Script lato client | Documenti Microsoft
+title: Debug degli Script lato client | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464810"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283118"
 ---
 # <a name="client-side-script-debugging"></a>Debug di script sul lato client
 Il debugger di Visual Studio offre un ambiente di debug completo per l'individuazione e la correzione degli errori negli script lato client delle pagine ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Apertura di documenti di script  
-È possibile visualizzare gli elenchi di documenti di script sul lato server e lato client nel **Esplora** da visualizzare. È possibile aprire qualsiasi documento di script da **Esplora soluzioni**. Per altre informazioni, vedere [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+È possibile visualizzare gli elenchi di documenti script lato server e lato client il **Esplora soluzioni** da visualizzare. È possibile aprire qualsiasi documento di script da **Esplora soluzioni**. Per altre informazioni, vedere [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mapping dei punti di interruzione  
  In Visual Studio non è possibile eseguire direttamente il debug di codice lato server, ma è possibile impostare un punto di interruzione in un file lato server. Visual Studio esegue automaticamente il mapping del punto di interruzione a un percorso corrispondente del file lato client e crea un punto di interruzione associato nel codice lato client.  
@@ -59,11 +59,11 @@ Il debugger di Visual Studio offre un ambiente di debug completo per l'individua
 ## <a name="debugging-ajax-script-applications"></a>Debug di applicazioni script AJAX  
  Nelle applicazioni Web che supportano AJAX viene fatto largo uso di codice script e vengono poste serie problematiche di debug. Per informazioni sulle tecniche di debug AJAX, vedere  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debug e Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Limitazioni del debug di Script](../debugger/limitations-on-script-debugging.md)   
- [Finestre delle variabili](../debugger/debugger-windows.md)   
+ [Limitazioni del debug degli Script](../debugger/limitations-on-script-debugging.md)   
+ [Variabile Windows](../debugger/debugger-windows.md)   
  [Finestra di controllo immediato](../ide/reference/immediate-window.md)   
- [Debug e traccia panoramica delle applicazioni Ajax](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debug e Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

@@ -1,10 +1,9 @@
 ---
-title: Trovare codice con i comandi Vai a
-ms.date: 09/26/2017
+title: Passare al file, passare al simbolo, passare alla riga
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
 - code editor, go to line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aca1106bb6dfa3838890e4ae5c1886875e3e357
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447193"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626783"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
@@ -56,12 +55,13 @@ Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli 
 Per limitare la ricerca a un tipo specifico di elemento di codice, è possibile specificare un prefisso nella casella di ricerca o selezionare una delle cinque icone di filtro:
 
 Prefisso | Icona | Metodo rapido | Descrizione
-:----: | ---- | -------- | ---
-\#     | ![Icona Simbolo](media/gotoall_symbolicon.png) | **CTRL**+**1**, **CTRL**+**S** | Consente di passare al simbolo specificato
-f      | ![Icona File](media/gotoall_fileicon.png)     | **CTRL**+**1**, **CTRL**+**F** | Consente di passare al file specificato
-m      | ![Icona del membro](media/gotoall_membericon.png) | **CTRL**+**1**, **CTRL**+**M** | Consente di passare al membro specificato
-t      | ![Icona Tipo](media/gotoall_typeicon.png)     | **CTRL**+**1**, **CTRL**+**T** | Consente di passare al tipo specificato
-:      | ![Icona Riga](media/gotoall_lineicon.png)     | **CTRL**+**G**         | Consente di passare al numero di riga specificato
+:-: | - | - | -
+:| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL**+**G**         | Consente di passare al numero di riga specificato
+f| ![Icona File](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Consente di passare al file specificato
+f| ![Icona File recenti](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **CTRL**+**R** | Consente di passare al file specificato, visitato di recente
+t| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL**+**1**, **CTRL**+**T** | Consente di passare al tipo specificato
+m| ![Icona Membri](media/gotoall-members-icon.png) | **CTRL**+**1**, **CTRL**+**M** | Consente di passare al membro specificato
+\#| ![Icona Simboli](media/gotoall-symbols-icon.png) | **CTRL**+**1**, **CTRL**+**S** | Consente di passare al simbolo specificato
 
 ### <a name="filter-to-a-specific-location"></a>Filtrare in base a una posizione specifica
 

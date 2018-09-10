@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626114"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280637"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Generale, Debug, finestra di dialogo Opzioni
 Il **strumenti > Opzioni > Debug > Generale** pagina consente di impostare le opzioni descritte in questo articolo.
@@ -72,7 +72,7 @@ Nella condizione 2 e 3, l'eccezione viene talvolta intercettata dal codice gesti
   
 - **Chiama la funzione di conversione delle stringhe su oggetti nelle finestre delle variabili (c# e JavaScript solo)** esegue una chiamata di conversione di stringhe implicita durante la valutazione di oggetti nelle finestre delle variabili. Il risultato viene visualizzato come stringa anziché il nome del tipo. Questa opzione è applicabile solo al debug in codice C#. Questa impostazione può essere sottoposto a override mediante l'attributo DebuggerDisplay (vedere [usando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Abilitare il supporto del server di origine** indica al debugger di Visual Studio per ottenere i file di origine dai server di origine che implementano il SrcSrv (`srcsrv.dll`) protocollo. Team Foundation Server e gli strumenti di debug per Windows sono due server di origine che implementano il protocollo. Per altre informazioni sull'installazione di SrcSrv, vedere la [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) documentazione. Inoltre, vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Abilitare il supporto del server di origine** indica al debugger di Visual Studio per ottenere i file di origine dai server di origine che implementano il SrcSrv (`srcsrv.dll`) protocollo. Team Foundation Server e gli strumenti di debug per Windows sono due server di origine che implementano il protocollo. Per altre informazioni sull'installazione di SrcSrv, vedere la [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) documentazione. Inoltre, vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Poiché leggendo *PDB* file possono eseguire codice arbitrario nei file, assicurarsi che si ritiene attendibile il server.  

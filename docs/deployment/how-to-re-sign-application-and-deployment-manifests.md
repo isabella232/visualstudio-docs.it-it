@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078641"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280675"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: firmare manifesti dell'applicazione e distribuzione
 Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel manifesto dell'applicazione per applicazioni Windows Forms, le applicazioni Windows Presentation Foundation (xbap) o soluzioni Office, è necessario firmare nuovamente l'applicazione e distribuzione dei manifesti con un certificato. Questo processo assicura che nei computer degli utenti finali non vengono installati file alterati.  
@@ -33,7 +33,7 @@ Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel 
  Un altro scenario in cui si potrebbero accedere nuovamente i manifesti è quando i clienti vogliono firmare l'applicazione e manifesti della distribuzione con il proprio certificato.  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Firmare nuovamente i manifesti dell'applicazione e distribuzione  
- Questa procedura presuppone che sono già state apportate modifiche al file manifesto dell'applicazione (*manifest*). Per altre informazioni, vedere [procedura: modificare le proprietà di distribuzione](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Questa procedura presuppone che sono già state apportate modifiche al file manifesto dell'applicazione (*manifest*). Per altre informazioni, vedere [procedura: modificare le proprietà di distribuzione](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Per firmare nuovamente l'applicazione e distribuzione dei manifesti con Mage.exe  
   

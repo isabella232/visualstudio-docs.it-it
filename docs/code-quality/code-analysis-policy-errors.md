@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175891"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278920"
 ---
 # <a name="code-analysis-policy-errors"></a>Errori dei criteri per l'analisi del codice
 Se non sono stato soddisfatto i criteri di analisi codice per l'archiviazione, si verificano gli errori seguenti:
 
  **Le impostazioni di analisi del codice per uno o più progetti non sono compatibili con i criteri di analisi del codice.**
 
- I requisiti di analisi codice check-in controllo del codice sorgente il progetto team non è stata soddisfatta per uno o più progetti di codice. Questo errore può essere causato da una o più delle condizioni seguenti:
+ I requisiti di analisi codice check-in controllo del codice sorgente il progetto non è stata soddisfatta per uno o più progetti di codice. Questo errore può essere causato da una o più delle condizioni seguenti:
 
 1.  Analisi del codice non è abilitato in fase di compilazione per tutti i progetti nella soluzione.
 
-2.  La regola locale impostata per il progetto in Visual Studio ha meno restrittivo **azione** impostazione di regola il progetto team, ad esempio, imposta una regola che è impostata su **azione**=**errore**  nel server è relativo **azione** impostata su **avviso** oppure **Nessuno** nella regola impostata viene eseguita in Visual Studio).
+2.  La regola locale impostata per il progetto in Visual Studio ha meno restrittivo **azione** impostazione di set di regole il progetto, ad esempio, una regola che è impostata su **azione**=**errore** nel server è relativo **azione** impostata su **avviso** oppure **Nessuno** nella regola impostata viene eseguita in Visual Studio).
 
-3.  Il set specificata in Visual Studio di regole non contiene tutte le regole che vengono specificate nella regola specificata nei criteri di archiviazione al posto dell'analisi del codice per il progetto team.
+3.  Il set specificata in Visual Studio di regole non contiene tutte le regole che vengono specificate nella regola di impostare i criteri di archiviazione al posto dell'analisi del codice per il progetto specificata.
 
  **I criteri di analisi codice non è riuscita. Sono presenti errori nel progetto {0} o la compilazione non è aggiornata.**
 

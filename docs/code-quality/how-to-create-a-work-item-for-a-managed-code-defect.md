@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fcbb7716d8ba0496d267f3c8757bb8425884cfb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b251970bfd57b31842e1573e2e156e11a517c81a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918961"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279475"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Procedura: Creare un elemento di lavoro per un errore del codice gestito
 
-È possibile utilizzare la funzionalità di rilevamento di elementi di lavoro per registrare un elemento di lavoro all'interno di Visual Studio. Per utilizzare questa funzionalità, il progetto deve far parte del progetto Team in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
+È possibile usare la funzionalità di rilevamento elemento di lavoro all'elemento di lavoro di log dall'interno di Visual Studio. Per usare questa funzionalità, il progetto deve far parte di un progetto Azure DevOps in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
 
-## <a name="to-create-a-work-item-for-managed-code-defect"></a>Per creare un elemento di lavoro per un errore del codice gestito
+## <a name="to-create-a-work-item-for-managed-code-defect"></a>Per creare un elemento di lavoro per difetto del codice gestito
 
 1. Nel **analisi del codice** finestra, selezionare l'avviso.
 
-2. Scegliere **azioni**, quindi scegliere **Crea elemento di lavoro** e scegliere il tipo di elemento di lavoro da creare.
+2. Scegli **azioni**, quindi scegliere **Crea elemento di lavoro** e scegliere il tipo di elemento di lavoro da creare.
 
-     È possibile specificare le informazioni di errore, viene creato un nuovo elemento di lavoro.
+     È possibile specificare le informazioni di difetto viene creato un nuovo elemento di lavoro.
 
 ## <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>Per creare un elemento di lavoro per più difetti del codice gestito
 
-1. Nel **elenco errori**, selezionare più avvisi e quindi fare doppio clic sugli avvisi.
+1. Nel **elenco errori**, selezionare più avvisi e quindi fare doppio clic su avvisi.
 
-2. Scegliere **Crea elemento di lavoro** e fare clic sul tipo di elemento di lavoro da creare.
+2. Puntare **Crea elemento di lavoro** e fare clic sul tipo di elemento di lavoro da creare.
 
-     Per tutti gli avvisi selezionati è possibile specificare le informazioni sull'errore, viene creato un singolo elemento di lavoro.
+     Viene creato un singolo elemento di lavoro per tutti gli avvisi selezionati è possibile specificare le informazioni sull'errore.

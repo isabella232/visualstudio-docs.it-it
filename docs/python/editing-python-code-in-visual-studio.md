@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500121"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626869"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
@@ -34,7 +34,7 @@ Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Fu
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Visual Studio 2017 15.7 e versioni successive supporta anche i [suggerimenti relativi al tipo](#type-hints).
+IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Visual Studio 2017 versione 15.7 e versioni successive supporta anche i [suggerimenti relativi al tipo](#type-hints).
 
 Per migliorare le prestazioni, IntelliSense in **Visual Studio 2017 versione 15.5** e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di **Esplora soluzioni**, nella scheda **IntelliSense** (vedere [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md#intellisense-tab)).
 

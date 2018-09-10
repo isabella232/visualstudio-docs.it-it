@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d0bde2f36aa644bf9335ce74cf4a1ac3bd433a6c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468299"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282066"
 ---
 # <a name="debugger-settings-and-preparation"></a>Impostazioni di debug e preparazione
 In questa sezione vengono descritte le impostazioni delle proprietà correlate al debugger e le operazioni di preparazione necessarie per eseguire il debug del programma con il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Se si crea il programma in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante i modelli di progetto, tali impostazioni vengono definite automaticamente in modo corretto nella configurazione di debug.  
@@ -46,7 +46,7 @@ In questa sezione vengono descritte le impostazioni delle proprietà correlate a
  Viene descritto come eseguire il debug di un eseguibile che non fa parte di un progetto Visual Studio.  
   
  [Procedura: Eseguire il debug con codice sorgente di Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
- Spiega come eseguire il debug di codice sorgente disponibile in Microsoft Code Center Premium dall'interno del progetto Visual Studio.  
+ Viene descritto come eseguire il debug di origine da Microsoft Code Center Premium nel progetto di Visual Studio.  
   
  [Eseguire il debug di applicazioni a 64 Bit](../debugger/debug-64-bit-applications.md)  
  Spiega come eseguire il debug di applicazioni a 64 bit.  

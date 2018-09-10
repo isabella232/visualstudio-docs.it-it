@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469054"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626541"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -23,7 +23,7 @@ In Visual Studio 2017 è possibile aggiungere un file [EditorConfig](http://edit
 Le impostazioni di EditorConfig sono supportate da numerosi editor di codice e molti ambienti IDE, tra cui Visual Studio. Si tratta di un componente portatile che viene trasferito con il codice ed è in grado di imporre stili di codice anche all'esterno di Visual Studio.
 
 > [!NOTE]
-> Quando si aggiunge un file EditorConfig al progetto in Visual Studio, la formattazione del codice esistente non viene modificata a meno che non si formatti il documento (**Modifica** > **Avanzate**  >  **Formato documento** o **CTRL**+**K**, **CTRL**+**D**). Le nuove righe di codice vengono tuttavia formattate in base alle impostazioni del file EditorConfig.
+> Quando si aggiunge un file EditorConfig al progetto in Visual Studio, la formattazione del codice esistente non viene modificata a meno che non si formatti il documento: nel profilo predefinito selezionare **Modifica** > **Avanzate** > **Formatta documento** o **CTRL**+**K**, **CTRL**+**D**. Le nuove righe di codice vengono tuttavia formattate in base alle impostazioni del file EditorConfig. È possibile definire le impostazioni di EditorConfig che si desidera applicare con **Formatta documento** nella pagina delle opzioni [**Formattazione**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Coerenza del codice
 

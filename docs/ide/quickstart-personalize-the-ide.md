@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512561"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626972"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio
 
-In questa guida introduttiva della durata di 5-10 minuti verranno illustrate le procedure per personalizzare il tema colori e due colori del testo nell'editor di testo di Visual Studio.
+In questa guida introduttiva della durata di 5-10 minuti verranno illustrate le procedure per personalizzare il tema colori di Visual Studio selezionando il tema scuro. Si effettuerà anche la personalizzazione dei colori per due diversi tipi di testo nell'editor di testo.
 
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
@@ -97,19 +97,7 @@ Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di
 
 Sono stati presentati solo un paio di modi per personalizzare i colori in Visual Studio. Per ottenere un ambiente di Visual Studio veramente su misura, è possibile esplorare tutte le altre opzioni di personalizzazione disponibili nella finestra di dialogo **Opzioni**.
 
-## <a name="next-steps"></a>Passaggi successivi
-
-> [!div class="nextstepaction"]
-> [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Guida introduttiva: Scrivere codice nell'editor](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>Vedere anche
 
-- [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Personalizzare l'editor](../ide/customizing-the-editor.md)
 - [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)

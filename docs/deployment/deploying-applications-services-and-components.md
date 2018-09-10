@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231226"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279115"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guida introduttiva: Presentazione della distribuzione in Visual Studio
 
@@ -114,7 +114,7 @@ Se sono necessari più di un'installazione di un'applicazione desktop più compl
 
 ## <a name="devops-deployment"></a>Distribuzione di DevOps
 
-In un ambiente di team, è possibile usare Visual Studio Team Services (VSTS) per abilitare la distribuzione continua dell'app. Per altre informazioni, vedere [compilazione e versione](/vsts/build-release/index) e [Deploy to Azure](/vsts/deploy-azure/index).
+In un ambiente di team, è possibile usare le pipeline di Azure per abilitare la distribuzione continua dell'app. Per altre informazioni, vedere [pipeline di Azure](/azure/devops/pipelines/index) e [Deploy to Azure](/azure/devops/deploy-azure/index).
 
 ## <a name="deployment-for-other-app-types"></a>Distribuzione per altri tipi di app
 
@@ -122,7 +122,7 @@ In un ambiente di team, è possibile usare Visual Studio Team Services (VSTS) pe
 | --- | --- | --- |
 | **App di Office** | È possibile pubblicare un componente aggiuntivo per Office in Visual Studio. | [Distribuire e pubblicare il componente aggiuntivo di Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Servizio WCF o OData**  | Altre applicazioni possono utilizzare servizi WCF RIA distribuiti in un server web. | [Sviluppo e distribuzione di WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch non è più supportato in Visual Studio 2017, ma può essere comunque distribuito da Visual Studio 2015 e versioni precedenti. | [Distribuzione di applicazioni LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch non è più supportato in Visual Studio 2017, ma può essere comunque distribuito da Visual Studio 2015 e versioni precedenti. | [Distribuzione di applicazioni LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
 
 ## <a name="next-steps"></a>Passaggi successivi
 

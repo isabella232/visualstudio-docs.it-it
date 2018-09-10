@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 325641a143df2fe14a02d96f1103f58ddf533cd8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 455dc578e99700e4d6f53efae5a1bb5747e28d02
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37438040"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280025"
 ---
 # <a name="cc-assertions"></a>Asserzioni C/C++
 Un'istruzione di asserzione specifica una condizione che si prevede abbia valore true in un punto del programma. Se tale condizione non è true, l'asserzione non riesce, viene interrotta l'esecuzione del programma e il [finestra di dialogo Asserzione non riuscita](../debugger/assertion-failed-dialog-box.md) viene visualizzata.  
@@ -159,7 +159,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
  [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_MFC_assertions"></a> Asserzioni MFC  
- MFC definisce il [ASSERT](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) macro per il controllo delle asserzioni. Definisce anche il `MFC ASSERT_VALID` e `CObject::AssertValid` metodi per verificare lo stato interno di un `CObject`-oggetto derivato.  
+ MFC definisce il [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) macro per il controllo delle asserzioni. Definisce anche il `MFC ASSERT_VALID` e `CObject::AssertValid` metodi per verificare lo stato interno di un `CObject`-oggetto derivato.  
   
  Se l'argomento di MFC `ASSERT` macro restituisce zero o false, la macro interrompe l'esecuzione del programma e avvisa l'utente; in caso contrario, l'esecuzione continua.  
   

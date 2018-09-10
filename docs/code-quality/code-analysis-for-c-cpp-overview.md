@@ -23,56 +23,56 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea576ba794350e6cee6b20f8ef9adb62f82a9c51
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 152d57b0b1d1659883a9096c84b650ad192c34d1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031566"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280987"
 ---
-# <a name="code-analysis-for-cc-overview"></a>Analisi del codice per C/C++ overview
+# <a name="code-analysis-for-cc-overview"></a>Analisi del codice per C/C++: Panoramica
 
-Lo strumento di analisi del codice C/C++ fornisce informazioni sui possibili errori nel codice sorgente C/C++. Gli errori di codifica più comuni segnalati dallo strumento includono i sovraccarichi del buffer, l'annullamento dell'inizializzazione della memoria, le dereferenziazioni al puntatore null e le perdite di memoria e risorse. Lo strumento può inoltre eseguire controlli sul [linee guida dei componenti di base di C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+Lo strumento di analisi del codice C/C++ fornisce informazioni sui possibili errori nel codice sorgente C/C++. Gli errori di codifica più comuni segnalati dallo strumento includono i sovraccarichi del buffer, l'annullamento dell'inizializzazione della memoria, le dereferenziazioni al puntatore null e le perdite di memoria e risorse. Lo strumento può anche eseguire controlli a fronte di [linee guida di base di C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-## <a name="ide-integrated-development-environment-integration"></a>Integrazione nell'IDE (integrated development environment)
+## <a name="ide-integrated-development-environment-integration"></a>Integrazione nell'IDE (ambiente di sviluppo integrato)
 
 Lo strumento di analisi codice è completamente integrato nell'IDE di Visual Studio.
 
-Durante il processo di compilazione, tutti gli avvisi generati per il codice sorgente vengono visualizzati nell'elenco errori. È possibile passare al codice sorgente che ha provocato l'avviso e, è possibile visualizzare informazioni aggiuntive sulla causa e possibili soluzioni del problema.
+Durante il processo di compilazione, tutti gli avvisi generati per il codice sorgente vengono visualizzati nell'elenco errori. È possibile passare al codice sorgente che ha causato l'avviso ed è possibile visualizzare informazioni aggiuntive sulla causa e le possibili soluzioni del problema.
 
 ## <a name="command-line-support"></a>Supporto della riga di comando
 
-È inoltre possibile utilizzare lo strumento di analisi dalla riga di comando, come illustrato nell'esempio seguente:
+È anche possibile usare lo strumento di analisi dalla riga di comando, come illustrato nell'esempio seguente:
 
 ```cmd
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 15.7 e versioni successive** è possibile eseguire lo strumento da riga di comando con qualsiasi sistema di compilazione incluse CMake.
+**Visual Studio 2017 versione 15.7 e successive** è possibile eseguire lo strumento da riga di comando con qualsiasi sistema di compilazione inclusi CMake.
 
 ## <a name="pragma-support"></a>supporto #pragma
 
-È possibile utilizzare il `#pragma` direttiva considera gli avvisi come errori; attiva o disattiva gli avvisi e esclusione di avvisi per singole righe di codice. Per altre informazioni, vedere [procedura: impostare le proprietà di analisi codice per progetti C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+È possibile usare il `#pragma` direttiva considerarli come errori; Abilita o disabilita gli avvisi e non visualizzare avvisi per singole righe di codice. Per altre informazioni, vedere [procedura: impostare le proprietà di analisi codice per progetti C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
 ## <a name="annotation-support"></a>Supporto delle annotazioni
 
-Annotazioni migliorano l'accuratezza dell'analisi del codice. Annotazioni informazioni aggiuntive sul pre e post-condizioni nei parametri di funzione e tipi restituiscono. Per altre informazioni, vedere [procedura: specificare informazioni aggiuntive di codice utilizzando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Annotazioni di migliorano l'accuratezza dell'analisi del codice. Le annotazioni forniscono informazioni aggiuntive sulle condizioni di pre-elaborazione e post-sui parametri della funzione e i tipi restituiscono. Per altre informazioni, vedere [procedura: specificare informazioni aggiuntive di codice usando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Eseguire lo strumento di analisi come parte di criteri di archiviazione
 
-Si potrebbe voler richiedono che tutte le origine codice archiviazioni soddisfino determinati criteri. In particolare, si desidera assicurarsi che l'analisi è stata eseguita come un passaggio di compilazione locale più recente. Per ulteriori informazioni sull'abilitazione di criteri di controllo dell'analisi codice, vedere [creazione e utilizzo Check-In Criteri di analisi codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+È possibile richiedere che tutte le origine codice archiviazioni soddisfino determinati criteri. In particolare, si desidera assicurarsi che l'analisi è stata eseguita come un passaggio di compilazione locale più recente. Per altre informazioni su come abilitare un criterio di controllo dell'analisi codice, vedere [creazione e uso analisi codice Check-In Criteri](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Integrazione di Team Build
 
-È possibile utilizzare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi codice come il [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo di compilazione. Per altre informazioni, vedere [Compilazione e versione](/vsts/build-release/index).
+È possibile usare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi di codice come passaggio del [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo di compilazione. Per altre informazioni, vedere [pipeline di Azure](/azure/devops/pipelines/index).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Guida introduttiva: Analisi del codice per C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Procedura dettagliata: Analisi del codice C/C++ per errori del](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Procedura dettagliata: Analisi del codice C/C++ per i difetti](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Avvisi dell'analisi codice per C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Usare gli strumenti di verifica delle Linee guida di base di C++](using-the-cpp-core-guidelines-checkers.md)
-- [Linee guida di base C++ controllo di riferimento](code-analysis-for-cpp-corecheck.md)
+- [Riferimento di controllo linee guida per la base di C++](code-analysis-for-cpp-corecheck.md)
 - [Usare set di regole per specificare le regole C++ da eseguire](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 - [Analizzare la qualità del Driver tramite gli strumenti di analisi codice](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
 - [Analisi del codice per gli avvisi di driver](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

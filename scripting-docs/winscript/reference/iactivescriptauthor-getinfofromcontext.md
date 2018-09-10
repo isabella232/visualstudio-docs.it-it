@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetInfoFromContext | Documenti Microsoft
+title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27c13dbe51bb1150554275b5fbeacd00be2e445f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3465552b99b2185ea475c5479f044ee7b27704ae
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645801"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281247"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
-Restituisce tipo di informazioni e le posizioni di ancoraggio di un carattere specificato in un blocco di codice. Fornisce informazioni per il membro IntelliSense, gli elenchi globali e suggerimenti relativi ai parametri.  
+Restituisce digitare le informazioni e le posizioni di ancoraggio per un determinato carattere in un blocco di codice. Fornisce informazioni per il membro IntelliSense, gli elenchi globali e suggerimenti relativi ai parametri.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,7 +47,7 @@ HRESULT GetInfoFromContext(
   
 #### <a name="parameters"></a>Parametri  
  `pszCode`  
- [in] L'indirizzo della stringa di blocco di codice usata per generare i risultati di informazioni.  
+ [in] L'indirizzo della stringa blocco di codice utilizzata per generare i risultati di informazioni.  
   
  `cchCode`  
  [in] La lunghezza del blocco di codice.  
@@ -66,25 +66,25 @@ HRESULT GetInfoFromContext(
 |SCRIPT_CMPL_PARAMLIST|0x0004|Chiamare l'elenco di parametri di metodo.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Elenco globale.|  
   
- Il tipo SCRIPT_CMPL_GLOBALLIST viene trattato come un elemento di completamento predefinito che può essere combinato utilizzando l'operatore OR con altri elementi di completamento. Lo script di creazione prima motore tenta di popolare le informazioni sul tipo per altri elementi dell'elenco di completamento. Se il problema persiste, il motore viene popolato per SCRIPT_CMPL_GLOBALLIST.  
+ Il tipo SCRIPT_CMPL_GLOBALLIST viene considerato come un elemento di completamento predefinito che può essere combinato utilizzando l'operatore OR con altri elementi di completamento. Lo script di creazione motore innanzitutto tenta di popolare le informazioni sul tipo per gli altri elementi dell'elenco di completamento. Se il problema persiste, il motore compila per SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
- [out] Il tipo di elenco fornito.  
+ [out] Il tipo di elenco specificato.  
   
  `pichListAnchorPosition`  
  [out] Indice iniziale del contesto che contiene la posizione corrente. L'indice iniziale è relativo all'inizio del blocco.  
   
- Viene popolato solo quando `dwListTypesRequested` include SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST o SCRIPT_CMPL_GLOBALLIST. Per altri tipi di elenco richiesto, il risultato è indefinito.  
+ Questo campo viene popolato solo quando `dwListTypesRequested` include SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST o SCRIPT_CMPL_GLOBALLIST. Per altri tipi di elenco richiesto, il risultato è indefinito.  
   
  `pichFuncAnchorPosition`  
  [out] Indice iniziale della chiamata di funzione che contiene la posizione corrente. L'indice iniziale è relativo all'inizio del blocco.  
   
- Viene popolato solo quando il contesto che contiene la posizione corrente è una chiamata di funzione e quando `dwListTypesRequested` include SCRIPT_CMPL_PARAMLIST. In caso contrario, il risultato è indefinito.  
+ Questo campo viene popolato solo quando il contesto che contiene la posizione corrente è una chiamata di funzione e quando `dwListTypesRequested` include SCRIPT_CMPL_PARAMLIST. In caso contrario, il risultato è indefinito.  
   
  `pmemid`  
- [out] MEMBERID della funzione, come definito da un tipo nel `IProvideMultipleClassInfo``ppunk` parametro out.  
+ [out] La proprietà MEMBERID della funzione, come definito da un tipo nel `IProvideMultipleClassInfo``ppunk` parametro out.  
   
- Viene popolato solo quando `dwListTypesRequested` include SCRIPT_CMPL_PARAMLIST.  
+ Questo campo viene popolato solo quando `dwListTypesRequested` include SCRIPT_CMPL_PARAMLIST.  
   
  `piCurrentParameter`  
  [out] L'indice del parametro che contiene la posizione corrente. Se la posizione corrente è sul nome della funzione, viene restituito -1.  
@@ -104,5 +104,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IProvideMultipleClassInfo](https://msdn.microsoft.com/library/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo.aspx)   
+ [Interfaccia IProvideMultipleClassInfo](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

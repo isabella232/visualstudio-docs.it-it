@@ -1,7 +1,7 @@
 ---
 title: Esercitazione - Informazioni su Django in Visual Studio, passaggio 3
 description: Procedura dettagliata sui concetti di base relativi a Django nel contesto dei progetti di Visual Studio, che illustra, in particolare, come rendere disponibili file statici, aggiungere pagine all'app e usare l'ereditarietà dei modelli
-ms.date: 06/27/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388345"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626945"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
 
@@ -27,7 +27,7 @@ Nei passaggi precedenti di questa esercitazione si è appreso come creare un'app
 In questo passaggio viene descritto come:
 
 > [!div class="checklist"]
-> - Usare i modelli di elementi di Visual Studio per creare rapidamente nuovi file di tipi diversi con un comodo codice boilerplate (passaggio 3-1)
+> - Usare i modelli di elementi di Visual Studio per aggiungere rapidamente nuovi file di tipi diversi con un comodo codice boilerplate (passaggio 3-1)
 > - Configurare il progetto Django per rendere disponibili file statici (passaggio 3-2)
 > - Aggiungere altre pagine all'app (passaggio 3-3)
 > - Usare l'ereditarietà dei modelli per creare un'intestazione e una barra di spostamento usate in più pagine (passaggio 3-4)
@@ -78,7 +78,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     }
     ```
 
-1. Sostituire il contenuto del file *templates/HelloDjangoApp/index.html* dell'app con il codice seguente che sostituisce l'elemento `<strong>` usato nel passaggio 2 con un elemento `<span>` che fa riferimento alla classe di stile `message`. L'uso di una classe di stile in questo modo offre maggiore flessibilità nell'applicazione degli stili all'elemento. Se il file *index.html* non è stato spostato in una sottocartella in *templates*, vedere la sezione sugli [spazi dei nomi dei modelli](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) nel passaggio 2.
+1. Sostituire il contenuto del file *templates/HelloDjangoApp/index.html* dell'app con il codice seguente che sostituisce l'elemento `<strong>` usato nel passaggio 2 con un elemento `<span>` che fa riferimento alla classe di stile `message`. L'uso di una classe di stile in questo modo offre maggiore flessibilità nell'applicazione degli stili all'elemento. Se il file *index.html* non è stato spostato in una sottocartella in *modelli* durante l'uso di VS 2017 15.7 e versioni successive, fare riferimento allo [spazio dei nomi del modello](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) nel passaggio 2-4.
 
     ```html
     <html>
@@ -186,7 +186,7 @@ Un modello di base delinea i blocchi usando i tag `{% block <block_name> %}` e `
 
 I passaggi seguenti illustrano l'ereditarietà:
 
-1. Nella cartella *templates/HelloDjangoApp* dell'app creare un nuovo file HTML (usando il menu di scelta rapida **Aggiungi** > **Nuovo elemento** o **Aggiungi** > **Pagina HTML**) denominato `layout.html` e sostituirne il contenuto con il markup riportato di seguito. È possibile notare che questo modello contiene un blocco denominato "content" che è quello che le pagine di riferimento devono sostituire:
+1. Nella cartella *modelli/HelloDjangoApp* dell'app creare un nuovo file HTML denominato *layout.html*, usando il menu di scelta rapida **Aggiungi** > **Nuovo elemento** o **Aggiungi** > **Pagina HTML**, e sostituirne il contenuto con il markup riportato di seguito. È possibile notare che questo modello contiene un blocco denominato "content" che è quello che le pagine di riferimento devono sostituire:
 
     ```html
     <!DOCTYPE html>

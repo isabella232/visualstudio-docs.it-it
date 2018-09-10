@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cedc3a66b3c6b73dd778011afd8e96b7e1e2d762
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926483"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626625"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -46,6 +46,7 @@ Per descrivere il tipo di simboli a cui applicare la regola di denominazione, sp
 L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola.
 
 - \* (usare questo valore per specificare tutti i simboli)
+- namespace
 - classe
 - struct
 - interfaccia
@@ -56,6 +57,9 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - event
 - delegato
 - parametro
+- type_parameter
+- locali
+- local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Livelli di accessibilità dei simboli
 
@@ -71,6 +75,7 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - private
 - protected
 - protected\_internal o protected_friend
+- locali
 
 > [!NOTE]
 > Non specificare un livello di accessibilità come parte della convenzione di denominazione, se l'accessibilità non è applicabile al tipo di simbolo di destinazione. Ad esempio, per i parametri non sono previsti livelli di accessibilità. Se si specifica un livello di accessibilità per una convenzione di denominazione di parametri, la regola di denominazione non funzionerà correttamente.

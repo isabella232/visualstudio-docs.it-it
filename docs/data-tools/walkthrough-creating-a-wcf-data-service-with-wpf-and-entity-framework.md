@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178387"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281533"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework
 Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] che è ospitato in un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applicazione web e quindi accedervi da un'applicazione Windows Forms.
@@ -106,7 +106,7 @@ Nel passaggio successivo, si crea un' [!INCLUDE[adonet_edm](../data-tools/includ
 7.  Nel **scegliere la versione** pagina, scegliere il **Entity Framework 5.0** pulsante di opzione e quindi scegliere il **Avanti** pulsante.
 
     > [!NOTE]
-    >  Per usare la versione più recente di Entity Framework 6 con i servizi WCF, è necessario installare il pacchetto NuGet del Provider di WCF Data Services Entity Framework. Visualizzare [uso di WCF Data Services 5.6.0 with Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+    >  Per usare la versione più recente di Entity Framework 6 con i servizi WCF, è necessario installare il pacchetto NuGet del Provider di WCF Data Services Entity Framework. Visualizzare [uso di WCF Data Services 5.6.0 with Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  Nel **Scegli oggetti di Database** , espandere il **tabelle** nodo, seleziona il **clienti** casella di controllo e quindi scegliere il **fine** pulsante.
 
