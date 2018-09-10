@@ -94,7 +94,7 @@
 ## [Estensione del filtro di Esplora soluzioni](extending-the-solution-explorer-filter.md)
 ## [Gestione del caricamento di progetti in una soluzione](managing-project-loading-in-a-solution.md)
 # [Creazione di modelli di progetto e di elemento personalizzati](creating-custom-project-and-item-templates.md)
-## [Aggiornamento di modelli di progetti ed elementi personalizzati per Visual Studio "15"](upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md)
+## [Aggiornamento di modelli di progetti ed elementi personalizzati per Visual Studio "15"](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
 ## [Procedura: Usare procedure guidate con modelli di progetto](how-to-use-wizards-with-project-templates.md)
 ## [Riferimenti sullo schema dei modelli di Visual Studio](visual-studio-template-schema-reference.md)
 ### [Elemento AppliesTo (modelli di Visual Studio)](appliesto-element-visual-studio-templates.md)
