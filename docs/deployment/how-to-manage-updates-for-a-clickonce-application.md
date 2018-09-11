@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a02c4b438d6e7504056ce5cdcc06bfc129d218
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5bd9d8d7e88bc9ee8c8b041571ddaa258067c300
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151588"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283652"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedura: gestire gli aggiornamenti per un'applicazione ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono cercare gli aggiornamenti automaticamente o a livello di codice. Gli sviluppatori, è necessario un numero elevato di flessibilità nello specificare come e quando vengono eseguiti controlli di aggiornamento, se gli aggiornamenti sono obbligatori e in cui controllare la disponibilità di aggiornamenti.  
@@ -109,7 +109,7 @@ ms.locfileid: "39151588"
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [Finestra di dialogo Aggiornamenti applicazione](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [Finestra di dialogo Aggiornamenti applicazione](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
  [Scegliere una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Pubblicazione ClickOnce aplications](../deployment/publishing-clickonce-applications.md)   
  [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623641"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283626"
 ---
 # <a name="validate-your-system-during-development"></a>Convalidare il sistema durante lo sviluppo
 Visual Studio consente di mantenere la coerenza del software con i requisiti degli utenti e con l'architettura del sistema.
@@ -42,7 +42,7 @@ Visual Studio consente di mantenere la coerenza del software con i requisiti deg
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Test dell'applicazione](/vsts/test/overview?view=vsts)
+- [Test dell'applicazione](/azure/devops/test/overview?view=vsts)
 - [Modellare i requisiti utente](../modeling/model-user-requirements.md)
 - [Analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)
 

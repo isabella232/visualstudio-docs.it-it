@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fc119bbd990dab11a144ccc4e1894bb827a2fe1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67623989fc8ff2bf2d44bc435a48db81fecb1fba
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118054"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282341"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilare le prestazioni delle applicazioni di SharePoint
 
@@ -65,7 +65,7 @@ I test codificati dell'interfaccia utente unità automaticamente l'applicazione 
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Procedura dettagliata: Profilatura di un'applicazione SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Viene illustrato come eseguire un'analisi del profilo di campionamento su un'applicazione SharePoint.|
-|[Eseguire il test delle prestazioni dell'applicazione prima del rilascio](/vsts/test/load-test/run-performance-tests-app-before-release?view=vsts)|Viene descritto come creare i test di carico, che consentono di test di stress delle applicazioni di SharePoint.|
+|[Eseguire il test delle prestazioni dell'applicazione prima del rilascio](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Viene descritto come creare i test di carico, che consentono di test di stress delle applicazioni di SharePoint.|
 |[Eseguire unit test del codice](/visualstudio/test/unit-test-your-code)|Viene descritto come individuare errori logici nel codice tramite unit test.|
 |[Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Descrive come testare l'interfaccia utente delle applicazioni SharePoint.|
 

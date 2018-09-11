@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 56b9e68767d4191aab016e3c0d976efb808aff01
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154385"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282612"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi di configurazione server e client nelle distribuzioni ClickOnce
 Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzione contiene un tipo di file che Windows non riconosce, ad esempio un file di Microsoft Word, IIS non le consentirà nemmeno la trasmissione del file e la distribuzione non riuscirà.  
@@ -41,7 +41,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
   
 -   *Deploy* 
   
- Tuttavia, è possibile disabilitare questa opzione deselezionando le **, l'estensione di file ". deploy"** opzione il [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), nel qual caso è necessario configurare il server Web per sbloccare tutte le estensioni di file utilizzato nell'applicazione.  
+ Tuttavia, è possibile disabilitare questa opzione deselezionando le **, l'estensione di file ". deploy"** opzione il [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), nel qual caso è necessario configurare il server Web per sbloccare tutte le estensioni di file utilizzato nell'applicazione.  
   
  È necessario configurare *manifest*, *Application*, e *deploy*, ad esempio, se si usa IIS in cui non è stato installato il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o se si è utilizzo di un altro server Web (ad esempio Apache).  
   

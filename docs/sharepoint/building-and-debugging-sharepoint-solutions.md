@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf89354880059b8fe743e5558b2c406467a38014
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326114"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283535"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Compilare ed eseguire il debug di soluzioni SharePoint
   In generale, la compilazione e debug delle soluzioni SharePoint è quello utilizzato per compilazione e debug di altri tipi di progetti in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Gli argomenti di questa sezione illustrano le differenze esistenti.  
@@ -44,8 +44,8 @@ ms.locfileid: "36326114"
 ## <a name="debug-and-test-sharepoint-solutions"></a>Eseguire il debug e testare le soluzioni SharePoint
  Prima del debug, [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] copie di *wsp* pacchetto nel server SharePoint, attiva il sito e le funzionalità con ambito Web e in alcuni casi, viene avviato il progetto. In altri casi, potrebbe essere necessario aprire manualmente il progetto. Per altre informazioni, vedere [soluzioni di risolvere i problemi di SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md) e [soluzioni SharePoint Debug](../sharepoint/debugging-sharepoint-solutions.md).  
   
-## <a name="debug-and-verify-sharepoint-solutions-by-using-alm-features"></a>Eseguire il debug e verificare le soluzioni SharePoint tramite le funzionalità ALM
- Con le funzionalità di Visual Studio ALM, ad esempio il testing unità e IntelliTrace, è possibile individuare con maggiore precisione i problemi delle soluzioni di SharePoint. Con la profilatura è possibile individuare e identificare aree problematiche delle prestazioni nelle soluzioni di SharePoint. Per altre informazioni, vedere [verifica e debug del codice SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) e [profilatura delle prestazioni di applicazioni SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  
+## <a name="debug-and-verify-sharepoint-solutions-by-using-azure-devops-services-features"></a>Eseguire il debug e verificare le soluzioni di SharePoint usando le funzionalità di servizi di Azure DevOps
+ Funzionalità di DevOps servizi Azure, ad esempio gli unit test e IntelliTrace consentono più accuratamente individuare i problemi delle soluzioni di SharePoint. Con la profilatura è possibile individuare e identificare aree problematiche delle prestazioni nelle soluzioni di SharePoint. Per altre informazioni, vedere [verifica e debug del codice SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) e [profilatura delle prestazioni di applicazioni SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  
   
 ## <a name="security-during-the-build-process"></a>Sicurezza durante il processo di compilazione
  Per creare un pacchetto o distribuire soluzioni di SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] deve disporre dell'autorizzazione per copiare i file nel server SharePoint. È necessario eseguire [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] come un processo con privilegi elevati e l'utente account deve essere un amministratore di raccolte di sito nel server SharePoint. Inoltre, è necessario specificare se il progetto è una soluzione creata mediante sandbox o una soluzione farm. Per altre informazioni, vedere [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  

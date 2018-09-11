@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: tornare alla funzione che ha chiamato MFC se interrotta | Documenti Microsoft'
+title: 'Procedura: tornare alla funzione che ha chiamato MFC se interrotta | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,24 +25,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 356e9f4950e62f3ac1399b1e79ee2fe400cec47b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: da15793027eb643078771d33464258fea73fec9d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472886"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283392"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Procedura: tornare alla funzione che ha chiamato MFC se interrotta
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- Se è stata utilizzata la **interrompere** comando il **Debug** menu per interrompere il programma e finisce in MFC e si è certi che il problema è nel codice, è possibile utilizzare la finestra Stack di chiamate per tornare alla funzione. Per ulteriori informazioni, vedere [procedura: utilizzare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).  
+ Se è stato usato il **interrompere** comando il **Debug** menu per interrompere il programma e finisce nel MFC e si è certi che il problema è nel codice, è possibile utilizzare la finestra Stack di chiamate per tornare alla funzione. Per altre informazioni, vedere [procedura: usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).  
   
- Talvolta è possibile che il codice si interrompa nel message pump. In questo caso, non è disponibile codice utente nello stack di chiamate. Per evitare questo problema, è possibile utilizzare i punti di interruzione (possibilmente con condizioni e conteggi dei passaggi) anziché il **interrompere** comando. Per ulteriori informazioni, vedere [i punti di interruzione e punti di analisi](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)).  
+ Talvolta è possibile che il codice si interrompa nel message pump. In questo caso, non è disponibile codice utente nello stack di chiamate. Per evitare questo problema, è possibile usare i punti di interruzione (possibilmente con condizioni e conteggi dei passaggi) anziché il **Interrompi** comando. Per altre informazioni, vedere [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 ### <a name="to-navigate-to-the-function-from-which-mfc-was-called"></a>Per tornare alla funzione da cui è stata eseguita la chiamata di MFC  
   
--   Utilizzare il **Stack di chiamate** finestra.  
+-   Usare la **Stack di chiamate** finestra.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Domande frequenti sul codice nativo debug](../debugger/debugging-native-code-faqs.md)   

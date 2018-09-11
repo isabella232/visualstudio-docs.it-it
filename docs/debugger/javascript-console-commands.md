@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154372"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282209"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandi della JavaScript Console in Visual Studio
   
- È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle App UWP e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle App Cordova, vedere [il Debug dell'App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedere [questo argomento](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle App UWP e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle App Cordova, vedere [il Debug dell'App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedi [in questo argomento](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **Debug** > **Finestre** > **Console JavaScript**.  
   

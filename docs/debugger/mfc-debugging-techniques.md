@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d22c040857db1b10d084bfdba2e4387071a8ebc1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059284"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283003"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.  
@@ -83,7 +83,7 @@ _asm int 3
  [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_TRACE_macro"></a> Utilizzo della macro TRACE  
- Per visualizzare i messaggi generati dal programma nella [finestra di output](../ide/reference/output-window.md)del debugger è possibile usare la macro [ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) oppure la macro [TRACE](http://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) MFC. Analogamente alle [asserzioni](../debugger/c-cpp-assertions.md)le macro di traccia sono attive solo nella versione di debug del programma e vengono annullate quando ne viene effettuata la compilazione nella versione di rilascio.  
+ Per visualizzare i messaggi dal programma nel debugger [finestra di Output](../ide/reference/output-window.md), è possibile utilizzare il [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) macro o MFC [traccia](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) macro. Analogamente alle [asserzioni](../debugger/c-cpp-assertions.md)le macro di traccia sono attive solo nella versione di debug del programma e vengono annullate quando ne viene effettuata la compilazione nella versione di rilascio.  
   
  Gli esempi che seguono illustrano alcuni metodi di utilizzo della macro **TRACE** . Analogamente a `printf`la macro **TRACE** è in grado di gestire svariati argomenti.  
   
@@ -119,7 +119,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  MFC offre classi e funzioni per il rilevamento della memoria allocata ma mai disallocata.  
   
 ###  <a name="BKMK_Tracking_memory_allocations"></a> Gestione delle allocazioni di memoria  
- In MFC è possibile usare la macro [DEBUG_NEW](http://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) anziché l'operatore **new** per un supporto nella ricerca di perdite di memoria. Nella versione di debug del programma, `DEBUG_NEW` tiene traccia del nome file e del numero di riga di ciascun oggetto da esso allocato. Quando si compila una versione di rilascio del programma, `DEBUG_NEW` si traduce in una semplice operazione **new** senza informazioni relative a nome file e numero di riga. La velocità non viene pertanto in alcun modo compromessa nella versione di rilascio del programma.  
+ In MFC, è possibile usare la macro [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) invece del **nuove** le perdite di operatore per agevolare l'individuazione della memoria. Nella versione di debug del programma, `DEBUG_NEW` tiene traccia del nome file e del numero di riga di ciascun oggetto da esso allocato. Quando si compila una versione di rilascio del programma, `DEBUG_NEW` si traduce in una semplice operazione **new** senza informazioni relative a nome file e numero di riga. La velocità non viene pertanto in alcun modo compromessa nella versione di rilascio del programma.  
   
  Se non si desidera riscrivere l'intero programma in modo da utilizzare `DEBUG_NEW` anziché **new**, sarà possibile definire questa macro nei file sorgente:  
   
@@ -138,11 +138,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **Per abilitare o disabilitare la diagnostica della memoria**  
   
--   Chiamare la funzione globale [AfxEnableMemoryTracking](http://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) per abilitare o disabilitare l'allocatore di memoria diagnostico. Dal momento che la diagnostica della memoria si trova per impostazione predefinita nella libreria di debug, in genere si ricorre a questa funzione per disattivare tale diagnostica temporaneamente, aumentando la velocità di esecuzione del programma e riducendo l'output di diagnostica.  
+-   Chiamare la funzione globale [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) per abilitare o disabilitare l'allocatore di memoria diagnostico. Dal momento che la diagnostica della memoria si trova per impostazione predefinita nella libreria di debug, in genere si ricorre a questa funzione per disattivare tale diagnostica temporaneamente, aumentando la velocità di esecuzione del programma e riducendo l'output di diagnostica.  
   
  **Per selezionare caratteristiche specifiche di diagnostica della memoria con afxMemDF**  
   
--   Se si desidera godere di un maggior controllo sulle caratteristiche di diagnostica della memoria, sarà possibile attivare e disattivare selettivamente singole caratteristiche di diagnostica della memoria impostando il valore della variabile globale MFC [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). A questa variabile è possibile assegnare i seguenti valori, come specificato dal tipo enumerato **afxMemDF**.  
+-   Se si desidera un controllo più preciso sulle caratteristiche di diagnostica della memoria, è possibile in modo selettivo attivare le funzionalità di diagnostica di memoria singoli e disattivare impostando il valore della variabile globale MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). A questa variabile è possibile assegnare i seguenti valori, come specificato dal tipo enumerato **afxMemDF**.  
   
     |Valore|Descrizione|  
     |-----------|-----------------|  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Creazione di snapshot di memoria  
   
-1.  Creare un [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) oggetto e chiamare il [CMemoryState:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) funzione membro. Verrà creato il primo snapshot della memoria.  
+1.  Creare un [CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100)) oggetto e chiamare il [CMemoryState:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) funzione membro. Verrà creato il primo snapshot della memoria.  
   
 2.  Dopo che il programma ha eseguito le operazioni di allocazione e disallocazione di memoria, creare un altro oggetto `CMemoryState` e chiamare `Checkpoint` per tale oggetto. Verrà creato un secondo snapshot dell'utilizzo della memoria.  
   
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
     1.  Nel  **\<progetto > pagine delle proprietà** della finestra di dialogo fare clic sui **Configuration Manager** pulsante.  
   
-    2.  Nella [finestra di dialogo Gestione configurazione](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)individuare il progetto all'interno della griglia. Nel **Configuration** colonna, selezionare  **\<nuovo... >**.  
+    2.  Nel [finestra di dialogo di Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), individuare il progetto nella griglia. Nel **Configuration** colonna, selezionare  **\<nuovo... >**.  
   
-    3.  Nella [finestra di dialogo Nuova configurazione progetto](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)digitare, all'interno della casella **Nome configurazione progetto** , il nome da assegnare alla nuova configurazione, ad esempio "Debug parziale".  
+    3.  Nel [finestra di dialogo nuova configurazione progetto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), digitare un nome alla nuova configurazione, ad esempio "Debug parziale", il **nome configurazione progetto** casella.  
   
     4.  Scegliere **Release** dall'elenco **Copia impostazioni da**.  
   

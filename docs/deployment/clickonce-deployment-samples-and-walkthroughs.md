@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3c61fc3e2b36dfc28ee7f1a56ace7035360064
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 37ff64b5c1b5cec9a4b05f293bfc8c43ac7e1bb7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077565"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282274"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Procedure dettagliate ed esempi di distribuzione ClickOnce
 In questa sezione contiene applicazioni di esempio, codice di esempio e istruzioni dettagliate che illustrano la sintassi, struttura e le tecniche usate per distribuire Windows Form, WPF e applicazioni console.  
@@ -40,5 +40,5 @@ In questa sezione contiene applicazioni di esempio, codice di esempio e istruzio
 |[Scaricare gli assembly su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Viene spiegato come scaricare gli assembly dell'applicazione solo quando vengono innanzitutto usati dall'applicazione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedure dettagliate di Visual Studio](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Procedure dettagliate di Visual Studio](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Esempi di Visual Studio](../ide/visual-studio-samples.md)
