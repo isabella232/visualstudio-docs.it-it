@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284135"
+ms.locfileid: "44321255"
 ---
 # <a name="using-the-code-metrics-results-window"></a>Uso della finestra Risultati metrica codice
 
@@ -102,9 +102,9 @@ Il **filtro** casella di riepilogo a discesa contiene i nomi delle colonne di ri
 
 ## <a name="creating-a-work-item-based-on-code-metric-results"></a>Creazione di un elemento di lavoro basato sui risultati metrica codice
 
-È possibile creare un [Azure lavagne](/azure/devops/boards/index) genera elemento di lavoro che si basa sul **risultati metrica codice** finestra. Quando viene creato l'elemento di lavoro, Visual Studio avvia automaticamente un titolo nel **Title** dati di metrica del campo e il codice sotto il **cronologia** scheda.
+È possibile creare un [Azure lavagne](/azure/devops/boards/index?view=vsts) genera elemento di lavoro che si basa sul **risultati metrica codice** finestra. Quando viene creato l'elemento di lavoro, Visual Studio avvia automaticamente un titolo nel **Title** dati di metrica del campo e il codice sotto il **cronologia** scheda.
 
-Per altre informazioni sulle aree di Azure gli elementi di lavoro, vedere [elementi di lavoro](/azure/devops/boards/work-items/index).
+Per altre informazioni sulle aree di Azure gli elementi di lavoro, vedere [elementi di lavoro](/azure/devops/boards/work-items/index?view=vsts).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Per creare un elemento di lavoro basato su un risultato
 

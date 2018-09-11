@@ -9,12 +9,12 @@ description: Informazioni su come scaricare e installare l'ambiente IDE di Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 571bca9d5192f8499d36819299e76648beebe1a6
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f65deb92684f043597256d8e2f0664f18da9cfa1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282626"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289397"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Uso del vantaggio di Visual Studio 2017
 
@@ -28,34 +28,36 @@ I sottoscrittori di Visual Studio hanno accesso all'ambiente IDE di Visual Studi
 Per scaricare l'ambiente IDE:
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Individuare il riquadro IDE di Visual Studio nella sezione Strumenti e fare clic sul collegamento **Download** nella parte inferiore del riquadro del vantaggio.  È anche possibile eseguire il download dalla pagina [Download](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
-
-    ![Riquadro Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Riquadro Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-tile.png)
 
 3.  Si verrà reindirizzati alla pagina Scarica i risultati di Visual Studio Enterprise, dove è possibile scaricare l'ambiente IDE e ottenere un codice Product Key per attivarlo. È anche possibile richiedere un codice Product Key facendo clic sul pulsante azzurro **Ottieni chiave**. In alternativa, è possibile richiedere un codice Product Key in seguito nella pagina [Product keys](https://my.visualstudio.com/productkeys) (Codici Product Key).
 4.  Nella scheda Dettagli della pagina Scarica i risultati:
     - Selezionare l'architettura (x86, x64)
     - Selezionare il linguaggio preferito.
 5.  Fare clic sul pulsante di download blu.
-    ![Dettagli del download di Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-download-details.png)
+    > [!div class="mx-imgBorder"]
+    > ![Dettagli del download di Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-download-details.png)
 6.  Per eseguire subito l'installazione, fare clic su **Esegui**.
 7.  Nella finestra di dialogo Controllo dell'account utente fare clic su **Sì**.
 8.  Fare clic su **Continua** per accettare le condizioni di licenza.
 9.  Quando viene avviato il programma di installazione, scegliere i carichi di lavoro, i singoli componenti e i Language Pack scegliendoli nelle schede corrispondenti.
-    ![Personalizzare Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Personalizzare Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
 
 10.  Fare clic su **Installa**.
 
 11. Dopo il completamento dell'installazione, è possibile scegliere se modificarla o se avviare Visual Studio.  Fare clic su **Avvia** per iniziare.
-
-    ![Avviare Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avviare Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
 
 12. Accedere con l'account associato alla sottoscrizione di Visual Studio.
 
 13. Scegliere il tema preferito e fare clic su **Avvia Visual Studio**.
 
 14. Verrà visualizzata la Pagina iniziale.  È tutto pronto per iniziare a usare Visual Studio.
-
-    ![Iniziare a usare Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Iniziare a usare Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
 
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |

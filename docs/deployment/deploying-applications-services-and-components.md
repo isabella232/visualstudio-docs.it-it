@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279115"
+ms.locfileid: "44320553"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guida introduttiva: Presentazione della distribuzione in Visual Studio
 
@@ -45,7 +45,7 @@ Distribuzione in una cartella locale in genere viene utilizzata per il test o pe
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png)
 
-- **Runtime di Visual C++**: È possibile distribuire il runtime di Visual C++ tramite la distribuzione locale o collegamento statico. Per altre informazioni, vedere [distribuzione di applicazioni Desktop Native (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Runtime di Visual C++**: È possibile distribuire il runtime di Visual C++ tramite la distribuzione locale o collegamento statico. Per altre informazioni, vedere [distribuzione di applicazioni Desktop Native (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Pubblicare in Azure
 
@@ -76,7 +76,7 @@ Distribuzione in una cartella locale in genere viene utilizzata per il test o pe
 
     È anche possibile distribuire applicazioni ASP.NET e servizi in diversi altri modi. Per altre informazioni, vedere [ASP.NET la distribuzione di applicazioni e servizi web](http://www.asp.net/aspnet/overview/deployment).
 
-- **Runtime di Visual C++**: È possibile distribuire il runtime di Visual C++ con la distribuzione centrale. Per altre informazioni, vedere [distribuzione di applicazioni Desktop Native (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Runtime di Visual C++**: È possibile distribuire il runtime di Visual C++ con la distribuzione centrale. Per altre informazioni, vedere [distribuzione di applicazioni Desktop Native (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Desktop di Windows** è possibile pubblicare un'applicazione desktop di Windows in un server web o una condivisione di file di rete mediante la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere [distribuire un'app desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) e [distribuire un'app nativa tramite ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -114,7 +114,7 @@ Se sono necessari più di un'installazione di un'applicazione desktop più compl
 
 ## <a name="devops-deployment"></a>Distribuzione di DevOps
 
-In un ambiente di team, è possibile usare le pipeline di Azure per abilitare la distribuzione continua dell'app. Per altre informazioni, vedere [pipeline di Azure](/azure/devops/pipelines/index) e [Deploy to Azure](/azure/devops/deploy-azure/index).
+In un ambiente di team, è possibile usare le pipeline di Azure per abilitare la distribuzione continua dell'app. Per altre informazioni, vedere [pipeline di Azure](/azure/devops/pipelines/index?view=vsts) e [Deploy to Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Distribuzione per altri tipi di app
 
@@ -122,7 +122,7 @@ In un ambiente di team, è possibile usare le pipeline di Azure per abilitare la
 | --- | --- | --- |
 | **App di Office** | È possibile pubblicare un componente aggiuntivo per Office in Visual Studio. | [Distribuire e pubblicare il componente aggiuntivo di Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Servizio WCF o OData**  | Altre applicazioni possono utilizzare servizi WCF RIA distribuiti in un server web. | [Sviluppo e distribuzione di WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch non è più supportato in Visual Studio 2017, ma può essere comunque distribuito da Visual Studio 2015 e versioni precedenti. | [Distribuzione di applicazioni LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch non è più supportato in Visual Studio 2017, ma può essere comunque distribuito da Visual Studio 2015 e versioni precedenti. | [Distribuzione di applicazioni LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio training Opsgility con la sottoscrizione
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380310"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289430"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Vantaggio Opsgility nelle sottoscrizioni di Visual Studio
 
@@ -26,17 +26,17 @@ Alcune sottoscrizioni selezionate di Visual Studio includono un anno di accesso 
 2.  Individuare il riquadro Opsgility nella sezione Strumenti della pagina Vantaggi e fare clic sul collegamento **Attiva** nella parte inferiore del riquadro del vantaggio.
 
 3.  Per usufruire del vantaggio Opsgility, fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.   Si riceverà la notifica del recupero del codice del coupon.  Fare clic su **Attiva** per continuare.
-
-    ![Riquadro del vantaggio Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Riquadro del vantaggio Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  Verrà effettuato il reindirizzamento alla pagina di destinazione [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse) (Training online Opsgility per Visual Studio Enterprise).  Può presentarsi l'opportunità di avviare una sessione di chat con uno specialista del supporto tecnico.  Se non si vuole avviare una chat, è possibile ridurre a icona tale finestra.  Compilare le informazioni di contatto richieste e fare clic su **Register** (Iscriviti).
-
-    ![Pagina di destinazione del vantaggio Opsgility](_img\vs-opsgility\vs-opsgility-registration.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pagina di destinazione del vantaggio Opsgility](_img\vs-opsgility\vs-opsgility-registration.png)
 
 5.  Questo è tutto.  È tutto pronto per iniziare l'apprendimento.  Per rendere più facile iniziare, ecco l'elenco di percorsi di apprendimento suggeriti, disponibile sul lato sinistro della pagina.  Buona lettura.
-
-    ![Home page del vantaggio Opsgility](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Home page del vantaggio Opsgility](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |

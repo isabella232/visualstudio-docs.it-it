@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 152d57b0b1d1659883a9096c84b650ad192c34d1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280987"
+ms.locfileid: "44320709"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analisi del codice per C/C++: Panoramica
 
@@ -64,7 +64,7 @@ Annotazioni di migliorano l'accuratezza dell'analisi del codice. Le annotazioni 
 
 ## <a name="team-build-integration"></a>Integrazione di Team Build
 
-È possibile usare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi di codice come passaggio del [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo di compilazione. Per altre informazioni, vedere [pipeline di Azure](/azure/devops/pipelines/index).
+È possibile usare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi di codice come passaggio del [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo di compilazione. Per altre informazioni, vedere [pipeline di Azure](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Vedere anche
 

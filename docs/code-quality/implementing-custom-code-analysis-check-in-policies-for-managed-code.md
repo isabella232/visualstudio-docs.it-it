@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1c5de11ca7c49070e238125162aa1eeb08ad5bb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47973228fbb4d2c7380e4b20537aaf301ed937db
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281455"
+ms.locfileid: "44321099"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementare i criteri di archiviazione di analisi codice personalizzati per il codice gestito
 
@@ -60,7 +60,7 @@ Per creare una regola personalizzata impostata per un progetto DevOps di Azure, 
 
 1. Nelle **Esplora controllo codice sorgente**, fare doppio clic su nuova cartella e quindi fare clic su **aggiungere elementi alla cartella**.
 
-     Per altre informazioni, vedere [Git e repository di Azure](/azure/devops/repos/git/overview).
+     Per altre informazioni, vedere [Git e repository di Azure](/azure/devops/repos/git/overview?view=vsts).
 
 2. Scegliere il set di regole file creato e quindi fare clic su **fine**.
 

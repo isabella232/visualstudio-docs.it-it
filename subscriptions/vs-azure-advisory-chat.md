@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio di Azure Advisory Chat incluso nelle sot
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280803"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289417"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -25,16 +25,16 @@ Assistenza per iniziare a usare Azure in tempo reale. Include consulenze per i s
 L'uso di Azure Advisory Chat è semplice.
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Individuare il riquadro Azure Advisory Chat nella sezione Supporto e fare clic su **Avvia chat**.
-
-    ![Riquadro Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Riquadro Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
 3. Verrà visualizzata una notifica per segnalare che il servizio è attualmente disponibile solo in inglese, fatta eccezione per l'assistenza relativa a problemi di account, fatturazione e sottoscrizioni.  Scegliere **Continua**.
-
-    ![Dichiarazione di non responsabilità di Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > [!div class="mx-imgBorder"]
+    > ![Dichiarazione di non responsabilità di Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. Questo è tutto.  Verrà aperta una finestra di chat e verrà visualizzato uno stato che indica la posizione in coda.  Il successivo esperto disponibile risponderà alla chat.
-
-    ![Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Idoneità
 

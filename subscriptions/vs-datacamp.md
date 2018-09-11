@@ -9,12 +9,12 @@ description: Informazioni sulla sottoscrizione di training di DataCamp inclusa n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ab16223378e8e985c636611bc4598b70bdef20f4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 0220bf4a5a07fac2e9ecda8f8c638d9c5f0a6145
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890129"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289294"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 
@@ -27,10 +27,12 @@ La durata del vantaggio DataCamp varia a seconda della sottoscrizione di Visual 
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Individuare il riquadro del vantaggio DataCamp nella categoria "Sviluppo professionale" e fare clic su **Attivalo**.
-    ![Riquadro del vantaggio DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![Riquadro del vantaggio DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
 
 3. Nella pagina DataCamp è possibile creare un nuovo account.  È possibile scegliere di immettere un indirizzo di posta elettronica e una password o di accedere tramite un account di Facebook, LinkedIn o Google.  Dopo aver fornito le informazioni di accesso, fare clic su **Get Started** (Inizia).
-    ![Creazione di un nuovo account DataCamp](_img\vs-datacamp\vs-datacamp-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Creazione di un nuovo account DataCamp](_img\vs-datacamp\vs-datacamp-create-account.png)
 
     > [!NOTE]
     > Quando si inizia a creare l'account, è possibile che venga visualizzato il messaggio di errore seguente: "OOPS!  Your promo code is invalid or expired" (Il codice promozionale non è valido o è scaduto").  Ciò accade perché, quando viene creato, il codice promozionale scade dopo alcuni minuti.  Se si riceve questo messaggio, è sufficiente tornare alla pagina [Vantaggi](https://my.visualstudio.com/benefits) e fare clic sul collegamento **Attivalo** nel riquadro del vantaggio DataCamp.
@@ -42,24 +44,27 @@ La durata del vantaggio DataCamp varia a seconda della sottoscrizione di Visual 
 
 
     Per iniziare è sufficiente fare clic sul percorso scelto.
-
-     ![Scelta del percorso DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
+    > [!div class="mx-imgBorder"]
+    > ![Scelta del percorso DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
 
 5. Dopo aver selezionato il percorso, è possibile affinare maggiormente il percorso di apprendimento selezionando un obiettivo.  Se ad esempio si è scelto il percorso "Develop your Data Science Skillset" (Sviluppo dell'insieme di competenze di data science), vengono visualizzate le opzioni seguenti. Scegliere un'opzione, oppure fare clic su **I am not sure.  Show me all career paths** (Non so. Mostrami tutti i percorsi di carriera) per creare un percorso più ampio.
-
-    ![Insieme di competenze di data science di DataCamp](_img\vs-datacamp\vs-datacamp-datascience.png)
+    > [!div class="mx-imgBorder"]
+    > ![Insieme di competenze di data science di DataCamp](_img\vs-datacamp\vs-datacamp-datascience.png)
 
 
 6. In base al percorso e alle opzioni selezionate verrà selezionata una selezione di percorsi di carriera.  Fare clic sul pulsante **Enroll** (Registrati) corrispondente al percorso scelto.
-
-    ![Percorso di carriera di DataCamp](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+    > [!div class="mx-imgBorder"]
+    > ![Percorso di carriera di DataCamp](_img\vs-datacamp\vs-datacamp-all-tracks.png)
 
 7. Dopo la registrazione, si aprirà il primo corso del percorso.  Verrà visualizzata un'esercitazione che spiegherà come interagire con il corso (spostamento ed esecuzione degli esercizi).
 
+    > [!div class="mx-imgBorder"]
+    > ![Introduzione a DataCamp](_img\vs-datacamp\vs-datacamp-getting-started.png)
 
-    ![Introduzione a DataCamp](_img\vs-datacamp\vs-datacamp-getting-started.png)
+È possibile interrompere il training in qualsiasi momento e riprenderlo nella sessione successiva.  Visitare [http://www.datacamp.com](http://www.datacamp.com) e accedere.  Verrà visualizzato il dashboard e sarà possibile riprendere il training dal punto in cui era stato sospeso. È sufficiente fare clic su **Continue Track** (Continua il percorso).
 
-È possibile interrompere il training in qualsiasi momento e riprenderlo nella sessione successiva.  Visitare [http://www.datacamp.com](http://www.datacamp.com) e accedere.  Verrà visualizzato il dashboard e sarà possibile riprendere il training dal punto in cui era stato sospeso. È sufficiente fare clic su **Continue Track** (Continua il percorso). ![Continuazione del training su DataCamp](_img\vs-datacamp\vs-datacamp-continue-training.png)
+> [!div class="mx-imgBorder"]   
+> ![Continuazione del training su DataCamp](_img\vs-datacamp\vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Idoneità
 

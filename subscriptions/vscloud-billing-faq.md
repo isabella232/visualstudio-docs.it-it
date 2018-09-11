@@ -9,12 +9,12 @@ description: Domande sulla fatturazione per sottoscrizioni cloud.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303322"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289480"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio
 
@@ -26,9 +26,9 @@ Assicurarsi di [confrontare i vantaggi e i prezzi delle sottoscrizioni cloud](ht
 A: no. Tutte le sottoscrizioni cloud di Visual Studio devono essere acquistate usando una sottoscrizione di Azure. (Considerarla come l'account di fatturazione di Azure.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>D: quali tipi di sottoscrizioni di Azure possono essere usati per acquistare sottoscrizioni cloud di Visual Studio?
-R: possono essere usate quasi tutte le sottoscrizioni di Azure. Sono supportate le sottoscrizioni di Azure collegate a [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), le sottoscrizioni di Azure configurate da Cloud Solution Provider (CSP), le sottoscrizioni di Azure configurate da rivenditori di Microsoft Open License, le sottoscrizioni di Azure con pagamento in base al consumo ed è persino possibile effettuare acquisiti con sottoscrizioni di Azure configurate dai sottoscrittori di Visual Studio come vantaggio per i sottoscrittori, ma non è possibile usare il credito mensile per acquistare altre sottoscrizioni di Visual Studio.
+R: possono essere usate quasi tutte le sottoscrizioni di Azure. Sono supportate le sottoscrizioni di Azure collegate a [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), le sottoscrizioni di Azure configurate da Cloud Solution Provider (CSP), le sottoscrizioni di Azure configurate da rivenditori di Microsoft Open License e le sottoscrizioni di Azure con pagamento in base al consumo.
 
-L'unica eccezione degna di nota è il fatto che non sia possibile usare la [versione di valutazione gratuita di Azure](https://azure.microsoft.com/pricing/free-trial/).
+Non possono essere usati alcuni tipi di sottoscrizioni di Azure, tra cui la [versione di valutazione gratuita di Azure](https://azure.microsoft.com/pricing/free-trial/) e sottoscrizioni incluse come vantaggi per i sottoscrittori nelle sottoscrizioni di Visual Studio.
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>D: è obbligatorio acquistare altri servizi di Azure?
 R: assolutamente no. Se si vogliono acquistare solo sottoscrizioni cloud di Visual Studio tramite Azure, è possibile farlo.

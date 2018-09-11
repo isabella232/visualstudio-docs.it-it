@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4e7be9da93b422a28d01b83e023ac76a05ea514
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: HT
+ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283639"
+ms.locfileid: "44321268"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Iniziare a sviluppare estensioni di Visual Studio
 Se non hai mai scritto un'estensione di Visual Studio prima di, è necessario probabilmente alcune delle domande. Ne sono elencati alcune delle cause più comuni di seguito. Se le informazioni che si sta cercando non viene visualizzata, usare i pulsanti di commenti e suggerimenti (**questa pagina è stata utile?** nella parte inferiore della schermata) per richiedere che si desidera.
@@ -76,7 +76,7 @@ Se non hai mai scritto un'estensione di Visual Studio prima di, è necessario pr
 
 -   Pacchetti VSPackage di base: [creazione di un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Modello di progetto VSIX: [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md) 
+-   Modello di progetto VSIX: [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Come si ottiene l'estensione per l'aspetto di Visual Studio?
  Ottenere suggerimenti straordinari per progettazione dell'interfaccia utente per l'estensione nella [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -87,4 +87,4 @@ Se non hai mai scritto un'estensione di Visual Studio prima di, è necessario pr
 ## <a name="how-can-i-distribute-my-extension"></a>Come è possibile distribuire l'estensione?
  È possibile installare l'estensione in un altro computer o inviarlo ad altri utenti come file con estensione VSIX, che si installa facendovi doppio clic. È possibile trovare ulteriori informazioni sui pacchetti VSIX [spedizione di estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- È anche possibile pubblicare l'estensione in Visual Studio Marketplace, che rende visibile a un numero elevato di clienti di Visual Studio. Per un esempio di creazione del pacchetto di un'estensione nel Marketplace, vedere [procedura dettagliata: pubblicazione di un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Per altre informazioni su cosa occorre fare per pubblicare nel Marketplace, vedere [prodotti ed estensioni per Visual Studio](/azure/devops/extend/overview).
+ È anche possibile pubblicare l'estensione in Visual Studio Marketplace, che rende visibile a un numero elevato di clienti di Visual Studio. Per un esempio di creazione del pacchetto di un'estensione nel Marketplace, vedere [procedura dettagliata: pubblicazione di un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Per altre informazioni su cosa occorre fare per pubblicare nel Marketplace, vedere [prodotti ed estensioni per Visual Studio](/azure/devops/extend/overview?view=vsts).

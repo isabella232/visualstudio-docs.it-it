@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio Concierge Chat nelle sottoscrizioni di V
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 395b05d3b3caa7a800cc28ca1f93c944e6320d1e
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281875"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289509"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -27,16 +27,16 @@ Ottenere assistenza tramite il servizio Concierge Chat è molto semplice.
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Individuare il riquadro Concierge Chat nella sezione Supporto della pagina dei vantaggi e fare clic su **Avvia chat**.
-
-    ![Riquadro Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Riquadro Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
 3. Scegliere **Continua**.
 
 4. Verrà aperta una finestra di chat e verrà visualizzato un contatore che mostra la posizione nella coda.
 
 5. La chat verrà avviata non appena diventa disponibile un agente.
-
-    ![Sessione di Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sessione di Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |

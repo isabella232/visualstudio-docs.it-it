@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio Account per sviluppatore di Windows incl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382451"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289438"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 
@@ -29,12 +29,12 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Individuare il riquadro Account per sviluppatore di Windows nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.  Copiare il codice negli Appunti e quindi fare clic su **Attiva**.
-
-    ![Riquadro del vantaggio per sviluppatori di Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Riquadro del vantaggio per sviluppatori di Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
 2. Nel sito [https://developer.microsoft.com](https://developer.microsoft.com) è possibile iniziare il processo di registrazione.  Fare clic su **Iscriviti** per continuare.
-
-    ![Registrazione al vantaggio per sviluppatori di Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Registrazione al vantaggio per sviluppatori di Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
 
 3. Accedere alla sottoscrizione.  Se si hanno più account, scegliere quello associato alla sottoscrizione Enterprise.
 4. Nella pagina successiva selezionare il paese o la regione di residenza o in cui si trova la società e quindi fare clic su **Avanti**.
@@ -43,8 +43,8 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 7. Specificare le informazioni di contatto e la lingua preferita per la posta elettronica e quindi fare clic su **Avanti**.
 8. Può essere richiesto di verificare la password.  Immetterla e fare clic su **Accedi**.
 9. Nella pagina Registration - Payment (Registrazione - Pagamento) incollare il codice copiato in precedenza nel campo Codice promozionale.  La pagina verrà aggiornata per mostrare che *non è richiesto alcun pagamento*.  Scegliere **Avanti**.
-
-    ![Registrazione al vantaggio per sviluppatori di Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Registrazione al vantaggio per sviluppatori di Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
 
 10. Rivedere le informazioni dell'account e il contratto per gli sviluppatori di app, selezionare la casella di controllo per indicare l'accettazione dei termini e delle condizioni  e quindi fare clic su **Fine**.
 11. Fare clic su **Vai al dashboard** per iniziare a usare l'account per sviluppatore di Windows.

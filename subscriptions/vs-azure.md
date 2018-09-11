@@ -9,12 +9,12 @@ description: Informazioni su come attivare il vantaggio Azure incluso nella sott
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379736"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289479"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 
@@ -53,21 +53,22 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 1.  Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Individuare il riquadro Azure nella sezione Strumenti della pagina Vantaggi e fare clic sul collegamento **Attiva** nella parte inferiore del riquadro del vantaggio.
-
-    ![Riquadro Azure](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Riquadro Azure](_img\vs-azure\vs-azure-tile.png)
 
 3.  Compilare le informazioni richieste per creare la sottoscrizione di Azure, selezionare la casella di controllo per accettare termini e condizioni e fare clic su **Iscriviti**:
-
-    ![Registrazione di Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Registrazione di Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  Quando l'account è pronto, è possibile scegliere un piano di supporto di Azure (venduto separatamente) o iniziare la sottoscrizione di Azure.
-
-    ![Preparazione di Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Preparazione di Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  Verrà caricato il dashboard di Azure. La prima volta che lo si usa, viene offerta la possibilità di seguire una panoramica.  La panoramica è costituita da una serie di descrizioni che indicano come eseguire una serie di attività e come trovare informazioni pertinenti.  Al termine della panoramica, o se la si chiude, viene visualizzato il dashboard di Azure.
 
 6.  Creare un segnalibro per il [portale di Azure](https://portal.azure.com) per facilitare l'accesso in futuro.
-![Dashboard di Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Dashboard di Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Domande frequenti
 

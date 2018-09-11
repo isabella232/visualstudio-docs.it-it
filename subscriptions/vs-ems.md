@@ -9,16 +9,19 @@ description: Informazioni sul vantaggio Enterprise Mobility + Security incluso n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 52da738cc6e123c435e54523c240cd1b6d83dc8d
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281651"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289481"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) nelle sottoscrizioni di Visual Studio
 
 Le sottoscrizioni cloud e standard annuali di Visual Studio Enterprise includono Enterprise Mobility + Security (EMS).  Con EMS è possibile proteggere e gestire le identità, i dispositivi, le app e i dati di Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics e Microsoft Cloud App Security.
+
+> [!NOTE]
+> Se si acquista una sottoscrizione pluriennale tramite contratti multilicenza, il vantaggio EMS è attualmente disponibile solo nel primo anno.  
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 
@@ -27,24 +30,24 @@ Per usare EMS, è necessario configurare un account o accedere con un account es
 1.  Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Individuare il riquadro Enterprise Mobility & Security nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro.   Si riceverà la notifica del recupero del codice.  Fare clic su **Attiva**.
-
-    ![Riquadro del vantaggio EMS](_img\vs-ems\vs-ems-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Riquadro del vantaggio EMS](_img\vs-ems\vs-ems-tile.png)
 
 2.  Nella pagina Enterprise Mobility + Security E5 è possibile accedere con una sottoscrizione esistente o crearne una nuova.  Per crearne una nuova, compilare le informazioni richieste e fare clic su **Avanti**.
-
-    ![Creazione dell'account per il vantaggio EMS](_img\vs-ems\vs-ems-create-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Creazione dell'account per il vantaggio EMS](_img\vs-ems\vs-ems-create-account-cropped.png)
 
 3. Creare l'ID utente e la password.  Fare clic su **Crea il mio account** per continuare.
-
-    ![Creazione dell'ID utente per il vantaggio EMS](_img\vs-ems\vs-ems-userID-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Creazione dell'ID utente per il vantaggio EMS](_img\vs-ems\vs-ems-userID-cropped.png)
 
 4.  Specificare quindi un numero di telefono per ricevere un codice di verifica tramite telefono o SMS.  Immettere il codice e fare clic su **Avanti**.
+    > [!div class="mx-imgBorder"]
+    > ![Verifica del vantaggio EMS](_img\vs-ems\vs-ems-robot-cropped.png)
 
-    ![Verifica del vantaggio EMS](_img\vs-ems\vs-ems-robot-cropped.png)
-
-5.  La pagina successiva visualizza la pagina di accesso e l'ID utente.  Salvare le informazioni per un uso successivo.  Fare clic su **È tutto pronto**.
-
-    ![Account per il vantaggio EMS creato](_img\vs-ems\vs-ems-save-info-cropped.png)
+5.  La pagina successiva visualizza la pagina di accesso e l'ID utente.  Salvare le informazioni per un uso successivo.  Fare clic su **È tutto pronto**
+    > [!div class="mx-imgBorder"]
+    > ![Account per il vantaggio EMS creato](_img\vs-ems\vs-ems-save-info-cropped.png)
 
 6.  EMS richiede l'accesso al [portale di Microsoft Azure](https://azure.microsoft.com).  Seguire i tre passaggi nella pagina di destinazione EMS per attivare la sottoscrizione di Azure, aggiungere utenti e configurare EMS.
 
