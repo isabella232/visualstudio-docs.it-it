@@ -4,12 +4,12 @@ hide_bc: true
 title: Documentazione di Visual Studio | Microsoft Docs
 description: Informazioni su come usare Visual Studio 2017 per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.
 ms.topic: hub-page
-ms.openlocfilehash: 6a287d934fd91fc7c042f5480bbbbecb82e6238b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: cfbfa4d355466e429831e4c07e2e74c72b6876ed
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225110"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281117"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -353,7 +353,7 @@ App Web con ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=865130">
+                                <a href="/visualstudio/version-control/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -372,7 +372,7 @@ App Web con ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts">
+                                <a href="/azure/devops/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -383,7 +383,7 @@ App Web con ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>DevOps</h3>
-                                                    <p>Compilare e rilasciare le app in modo continuativo nel cloud e implementare le procedure di Agile con VSTS.</p>
+                                                    <p>Compilare e rilasciare le app in modo continuativo nel cloud e implementare le procedure di Agile con Azure DevOps Services.</p>
                                                 </div>
                                             </div>
                                         </div>
