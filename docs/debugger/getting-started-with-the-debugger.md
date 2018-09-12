@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623599"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384227"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>: Esercitazione eseguire il debug usando Visual Studio
 
@@ -31,7 +31,7 @@ Questo articolo presenta le funzionalità del debugger di Visual Studio in una p
 |---------|---------|
 |  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sull'esecuzione del debug che illustra una procedura simile. |
 
-Anche se l'app demo è c# e C++, le funzionalità sono applicabili a Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in c#. Per passare tra il codice di esempio C++ e c#, usare il filtro della lingua in alto a destra della pagina.
+Anche se l'app demo è c# e C++, le funzionalità sono applicabili a Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in c#. Per spostarsi tra i linguaggi c# e codice di esempio di C++ in questo articolo, usare il filtro della lingua in alto a destra della pagina.
 
 In questa esercitazione si eseguono le attività seguenti:
 
@@ -286,9 +286,9 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Impostare un punto di interruzione e avviare il debugger
 
-1. Nel `foreach` ciclo del `Main` funzione (`for` ciclo in C++ `main` (funzione)), impostare un punto di interruzione facendo clic sul margine sinistro della prima riga del codice.
+1. Nel `foreach` ciclo del `Main` funzione (`for` ciclo in C++ `main` (funzione)), impostare un punto di interruzione facendo clic sul margine sinistro della riga di codice seguente:
 
-    ![Impostare un punto di interruzione](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (o, `shape->Draw()` in C++)
 
     Viene visualizzato un cerchio rosso in cui è impostato il punto di interruzione.
 
@@ -296,7 +296,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
 6. Premere **F5** o nella **Avvia debug** pulsante, l'app viene avviata e il debugger viene eseguito per la riga di codice in cui è impostato il punto di interruzione.
 
-    ![Raggiungere un punto di interruzione](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![Impostare e raggiungere un punto di interruzione](../debugger/media/get-started-set-breakpoint.gif)
 
     La freccia gialla rappresenta l'istruzione in cui il debugger ha sospeso, che anche sospende l'esecuzione di app nella stessa fase (questa istruzione non è ancora eseguito).
 
@@ -308,9 +308,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
 In genere, usiamo i tasti di scelta rapida in questo caso, perché è un buon metodo per ottenere rapidamente in esecuzione l'app nel debugger (comandi equivalenti, ad esempio menu i comandi vengono visualizzati tra parentesi).
 
-1. Premere **F11** (oppure scegliere **Debug > Esegui istruzione**) una volta (più volte in c#) fino a quando non si posiziona sul `shape.Draw` chiamata al metodo il `Main` metodo (`shape->Draw` in C++).
-
-1. Premere **F11** ancora una volta per far avanzare nel codice per il `Rectangle` classe.
+1. Durante la pausa il `shape.Draw` chiamata al metodo il `Main` metodo (`shape->Draw` in C++), premere **F11** (oppure scegliere **Debug > Esegui istruzione**) per avanzare nel codice per il `Rectangle` classe.
 
      ![Usare F11 per codice Esegui istruzione](../debugger/media/get-started-f11.png "F11 Esegui istruzione")
 
@@ -364,19 +362,19 @@ Fare clic sui **riavviare** ![riavviare App](../debugger/media/dbg-tour-restart.
 
 Quando si preme **riavviare**, consentono di risparmiare tempo e l'arresto dell'app e riavviare il debugger. Il debugger si fermerà in corrispondenza il primo punto di interruzione viene raggiunto mediante l'esecuzione di codice.
 
-Il debugger si arresta nuovamente nel punto di interruzione è impostato, nelle `foreach` ciclo (`for` ciclo in C++).
+Il debugger si arresta nuovamente nel punto di interruzione è impostato, scegliere il `shape.Draw()` metodo (`shape->Draw()` in C++).
 
 ## <a name="inspect-variables-with-data-tips"></a>Esaminare le variabili con i suggerimenti dati
 
 Funzionalità che consentono di controllare le variabili sono una delle funzionalità più utili del debugger, ed esistono diversi modi per farlo. Spesso, quando si tenta di eseguire il debug di un problema, si sta tentando di scoprire se le variabili archiviano i valori che si prevede possano avere in un determinato momento.
 
-1. Durante la pausa nel `foreach` ciclo (`for` ciclo in C++), premere **F11** una volta.
-
-1. Passare il mouse sul `shapes` oggetto e viene visualizzato il valore di proprietà predefinito, il `Count` proprietà.
+1. Durante la pausa nel `shape.Draw()` metodo (`shape->Draw()` in C++), passare il mouse sul `shapes` oggetto e viene visualizzato il valore di proprietà predefinito, il `Count` proprietà.
 
 1. Espandere la `shapes` oggetto per visualizzare tutte le relative proprietà, ad esempio il primo indice della matrice `[0]`, che ha il valore di `Rectangle` (c#) o un indirizzo di memoria (C++).
 
-     ![Visualizzare un suggerimento dati](../debugger/media/get-started-data-tip.png "consente di visualizzare un suggerimento dati")
+     ![Visualizzare un suggerimento dati](../debugger/media/get-started-data-tip.gif "consente di visualizzare un suggerimento dati")
+
+    È possibile espandere ulteriormente gli oggetti per visualizzare le relative proprietà, ad esempio il `Height` proprietà del rettangolo.
 
     Spesso, durante il debug, si desidera un modo rapido per verificare i valori delle proprietà sugli oggetti e i suggerimenti dati sono un buon metodo per eseguire questa operazione.
 
