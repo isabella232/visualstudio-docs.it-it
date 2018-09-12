@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 156e3c45c0ccbc9ad9393a2baf7536bf317335bc
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a86b74787a574a1ad54b228c117f6cb598f1eb2b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262832"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775165"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Raccogliere dati di intervallo dettagliati tramite la strumentazione
 Il metodo di strumentazione degli strumenti per la profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] inserisce il codice di profilatura in una copia di un modulo. Il codice registra ogni voce, uscita e chiamata di funzione delle funzioni nel modulo durante un'esecuzione di profilatura. Il metodo di strumentazione è utile per raccogliere informazioni dettagliate sugli intervalli relative a una sezione del codice e per comprendere l'impatto delle operazioni di input e output sulle prestazioni dell'applicazione.  
@@ -32,11 +32,11 @@ Il metodo di strumentazione degli strumenti per la profilatura di [!INCLUDE[vspr
 -   Nella pagina **Generale** della finestra di dialogo delle proprietà per la sessione di prestazioni selezionare **Strumentazione**.  
   
 ## <a name="common-tasks"></a>Attività comuni
- È possibile specificare altre opzioni nella finestra di dialogo *Pagine delle proprietà***Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:  
+ È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:  
   
 -   In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.  
   
- Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo *Pagine delle proprietà di***Sessione prestazioni** quando si esegue la profilatura con il metodo di strumentazione.  
+ Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** quando si esegue la profilatura con il metodo di strumentazione.  
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  

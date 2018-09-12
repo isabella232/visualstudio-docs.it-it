@@ -13,17 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49f2559ecd2937ed1d54940416d5653b9dd59dbb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924007"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282794"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
-Stili e modelli per gli elementi nella finestra di progettazione XAML vengono archiviati in entità riutilizzabili dette risorse. Gli stili consentono di impostare le proprietà degli elementi e riutilizzare tali impostazioni per conferire un aspetto uniforme a più elementi. Un oggetto [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) definisce l'aspetto di un controllo e può anche essere applicato come risorsa. Per altre informazioni, vedere [Quickstart: Styling controls](http://go.microsoft.com/fwlink/?LinkID=248239) (Guida introduttiva: Applicazione di stili ai controlli) e [QuickStart: Control templates](http://go.microsoft.com/fwlink/?LinkID=247982) (Guida introduttiva: Modelli di controllo).
+Stili e modelli per gli elementi nella finestra di progettazione XAML vengono archiviati in entità riutilizzabili dette risorse. Gli stili consentono di impostare le proprietà degli elementi e riutilizzare tali impostazioni per conferire un aspetto uniforme a più elementi. Un oggetto [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definisce l'aspetto di un controllo e può anche essere applicato come risorsa. Per altre informazioni, vedere [Quickstart: Styling controls](http://go.microsoft.com/fwlink/?LinkID=248239) (Guida introduttiva: Applicazione di stili ai controlli) e [QuickStart: Control templates](http://go.microsoft.com/fwlink/?LinkID=247982) (Guida introduttiva: Modelli di controllo).
 
- Quando si crea una nuova risorsa da una proprietà, una classe [Style](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) o un oggetto `ControlTemplate` esistente, la finestra di dialogo **Crea risorsa** consente di definire la risorsa a livello di applicazione, di documento o di elemento. Questi livelli determinano le posizioni in cui è possibile usare la risorsa. Se, ad esempio, si definisce la risorsa a livello di elemento, questa può essere applicata solo all'elemento in cui è stata creata. È anche possibile archiviare la risorsa in un dizionario risorse, ovvero un file separato che è possibile riutilizzare in un altro progetto.
+ Quando si crea una nuova risorsa da una proprietà, una classe [Style](/uwp/api/Windows.UI.Xaml.Style) o un oggetto `ControlTemplate` esistente, la finestra di dialogo **Crea risorsa** consente di definire la risorsa a livello di applicazione, di documento o di elemento. Questi livelli determinano le posizioni in cui è possibile usare la risorsa. Se, ad esempio, si definisce la risorsa a livello di elemento, questa può essere applicata solo all'elemento in cui è stata creata. È anche possibile archiviare la risorsa in un dizionario risorse, ovvero un file separato che è possibile riutilizzare in un altro progetto.
 
 ### <a name="to-create-a-new-resource"></a>Per creare una nuova risorsa
 

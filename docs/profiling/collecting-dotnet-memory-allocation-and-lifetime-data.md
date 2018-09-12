@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548635"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775206"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Raccogliere dati di durata e allocazione di memoria .NET
 
@@ -53,11 +53,11 @@ Per informazioni su come raccogliere dati di memoria .NET tramite gli strumenti 
 
 ## <a name="common-tasks"></a>Attività comuni
 
-È possibile specificare altre opzioni nella finestra di dialogo *Pagine delle proprietà***Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
+È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
 
 - In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.
 
-Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo *Pagine delle proprietà***Sessione di prestazioni** quando si raccolgono dati di memoria .NET.
+Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_ della **sessione di prestazioni** quando si raccolgono dati di memoria .NET.
 
 |Attività|Contenuto correlato|
 |----------|---------------------|

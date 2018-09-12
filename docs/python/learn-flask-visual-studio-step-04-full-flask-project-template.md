@@ -1,7 +1,7 @@
 ---
 title: Esercitazione - Informazioni su Flask in Visual Studio, passaggio 4
 description: Procedura dettagliata sui concetti di base relativi a Flask nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalità offerte dai modelli Progetto Web Flask e Progetto Web Flask/Jade.
-ms.date: 05/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f36fbd480f9fc14ba382b3a9a06c2821335870d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388150"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775958"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Passaggio 4: Usare il modello Progetto Web Flask completo
 
@@ -59,7 +59,7 @@ Questo articolo vale anche per il modello "Progetto Web Flask/Jade", che produce
 
 1. È possibile lasciare l'app in esecuzione per le sezioni seguenti.
 
-    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (generalmente **env**) e scegliere **Ignora questi elementi locali**.
+    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (in genere **env**) e scegliere **Ignora questi elementi locali**.
 
 ### <a name="examine-what-the-template-creates"></a>Esaminare gli elementi creati dal modello
 

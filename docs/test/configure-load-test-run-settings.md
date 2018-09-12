@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382422"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283330"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurare le impostazioni esecuzione test di carico
 
@@ -37,6 +37,6 @@ L'impostazione esecuzione test iniziale viene creata quando si crea un test di c
 |**Specificare il conteggio di iterazioni test nelle impostazioni esecuzione test di carico:** è possibile specificare il numero di esecuzioni di tutti i test delle prestazioni Web e degli unit test in tutti gli scenari dei test di carico configurando la proprietà **Iterazioni test**.|-   [Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Specificare la frequenza di campionamento per un'impostazione esecuzione test di carico:** è possibile specificare la frequenza con cui tramite il test di carico vengono raccolti i dati del contatore delle prestazioni configurando la proprietà **Frequenza campionamento**.|-   [Procedura: Specificare la frequenza di campionamento](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Specificare l'opzione relativa all'intervallo archiviazione dettagli:** è possibile specificare la modalità con cui salvare i dettagli del test di carico configurando la proprietà **Intervallo archiviazione dettagli**.|-   [Procedura: Specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**Specificare il tempo di conservazione delle risorse di test:** accelerare il ciclo test > correzione> ripetizione test conservando le risorse di test per un periodo specificato dalla proprietà **Tempo di conservazione risorse**.|-   [Retain the resources to speed up load testing](/vsts/test/load-test/getting-started-with-performance-testing?view=vsts) (Conservare le risorse per accelerare il test di carico)|
+|**Specificare il tempo di conservazione delle risorse di test:** accelerare il ciclo test > correzione> ripetizione test conservando le risorse di test per un periodo specificato dalla proprietà **Tempo di conservazione risorse**.|-   [Retain the resources to speed up load testing](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts) (Conservare le risorse per accelerare il test di carico)|
 |**Usare parametri di contesto:** è possibile usare parametri di contesto per impostare parametri per una stringa. Se, ad esempio, il test di carico contiene un test delle prestazioni Web che usa un server Web con parametri, è possibile aggiungere un parametro di contesto alle impostazioni esecuzione test per eseguire il mapping a un server diverso.|-   [Procedura: Aggiungere parametri di contesto a un'impostazione di esecuzione](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**Configurazione delle proprietà di registrazione dei test:** è possibile configurare la frequenza con la quale vengono scritti i dati nel log associato alle impostazioni esecuzione test di carico. Questa operazione può essere importante quando si esegue un test di carico di grandi dimensioni o complesso in quanto le dimensioni del log potrebbero raggiungere diversi gigabyte.<br /><br /> È inoltre possibile configurare il salvataggio automatico del file di log qualora il test di carico non risulti utile nel debug e nell'analisi dell'applicazione.|-   [Modifica delle impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)|

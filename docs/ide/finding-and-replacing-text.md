@@ -33,16 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627077"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384240"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
-È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) oppure [Ricerca/sostituzione nei file](#find-replace-in-files). La novità di Visual Studio 2017 versione 15.8 è che possibile cercare e sostituire *alcune* istanze di un modello usando la *[selezione di più punti di inserimento](#multi-caret-selection)*.
+È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) oppure [Ricerca/sostituzione nei file](#find-in-files-and-replace-in-files). La novità di Visual Studio 2017 versione 15.8 è che possibile cercare e sostituire *alcune* istanze di un modello usando la *[selezione di più punti di inserimento](#multi-caret-selection)*.
 
 > [!TIP]
 > Se si stanno rinominando simboli del codice, ad esempio variabili e i metodi, è preferibile *[effettuarne il refactoring](../ide/reference/rename.md)* anziché usare la funzionalità di ricerca e sostituzione. Il refactoring è un'opzione avanzata in grado di rilevare l'ambito, mentre con la ricerca e sostituzione vengono sostituite indifferentemente tutte le istanze.

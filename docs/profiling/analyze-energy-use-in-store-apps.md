@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4ad28707c6f90a84d69734959f783851e3bc783c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3578573a2020dbf048e3da4e0bf44a54df07860b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692135"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668612"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizzare il consumo di energia nelle app UWP
 Il profiler **Utilizzo di energia** di Visual Studio consente di analizzare il consumo di energia e potenza delle app UWP su dispositivi tablet a bassa potenza alimentati completamente o in parte dalle batterie integrate. In un dispositivo alimentato a batteria, un'applicazione che utilizza una quantità eccessiva di energia può causare l'insoddisfazione del cliente al punto tale da comportarne, alla fine, la disinstallazione. L'ottimizzazione del consumo di energia può aumentare l'adozione e l'uso dell'applicazione da parte dei clienti.  
@@ -155,4 +155,4 @@ if (performance && performance.mark) {
 
 ## <a name="see-also"></a>Vedere anche
  [Profilatura in Visual Studio](../profiling/index.md)  
- [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
+ [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

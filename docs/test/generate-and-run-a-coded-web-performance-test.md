@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1920037b84871b388a1cc746b634b73577efd89
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 663b2e18eb71cb627bd521df0de6bc21c95cef05
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179576"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320749"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
 
@@ -29,7 +29,7 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generare un test prestazioni Web codificato
 
-1.  Se non è stato creato un test delle prestazioni Web, vedere [Registrare un test delle prestazioni Web](/vsts/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1.  Se non è stato creato un test delle prestazioni Web, vedere [Registrare un test delle prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
 
 2.  Generare il test codificato.
 

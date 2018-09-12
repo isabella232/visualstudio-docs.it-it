@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: f47d5c013de34a64591100b8a459f6b18721e0b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0251dd1630ca20e13bcc2238acb32a50031dd122
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635603"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280324"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -82,7 +82,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 |[Introduzione alla piattaforma UWP (Universal Windows Platform)](/windows/uwp/get-started/universal-application-platform-guide)|
 |[Creare la prima app](/windows/uwp/get-started/your-first-app)|
 |[Sviluppare app per la piattaforma UWP (Universal Windows Platform)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Migrare le app alla piattaforma UWP (Universal Windows Platform)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
+|[Migrare le app alla piattaforma UWP (Universal Windows Platform)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ##  <a name="HTML"></a>Compilare un'app per Android, iOS e Windows (HTML/JavaScript)
 
@@ -136,9 +136,9 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 |**Altre informazioni**|
 |--------------------|
 |[Scaricare Visual Studio.](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Installare gli strumenti Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
+|[Installare gli strumenti Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma.](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Library)|
 |[Altre informazioni sull'uso di C++ per interagire con più piattaforme.](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Installare gli strumenti necessari, quindi creare un'applicazione NativeActivity per Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
+|[Installare gli strumenti necessari, quindi creare un'applicazione NativeActivity per Android](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
 |[Informazioni sulla condivisione del codice C++ con le app Android e Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Esempi di Sviluppo di app per dispositivi mobili multipiattaforma per C++](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
 |[Altri esempi di Sviluppo di app per dispositivi mobili multipiattaforma per C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
@@ -158,12 +158,12 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 |[Altre informazioni sulla compilazione di giochi Unity con Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Altre informazioni su Visual Studio Tools per Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Iniziare a usare Visual Studio Tools per Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[Informazioni sugli ultimi miglioramenti apportati a Visual Studio Tools per Unity 2.0 Preview](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (blog di Visual Studio)|
+|[Informazioni sugli ultimi miglioramenti apportati a Visual Studio Tools per Unity 2.0 Preview](https://blogs.msdn.microsoft.com/visualstudio/2014/12/03/visual-studio-tools-for-unity-2-0-preview/) (blog di Visual Studio)|
 |[Guardare un video di introduzione a Visual Studio Tools per Unity 2.0 Preview](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Video)|
 |[Informazioni su Unity](http://unity3d.com/) (sito Web Unity)|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Aggiungere le API di Office 365 a un progetto di Visual Studio](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Aggiungere le API di Office 365 a un progetto di Visual Studio](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
 - [Servizi app di Azure: app per dispositivi mobili](https://azure.microsoft.com/services/app-service/mobile/)
 - [Visual Studio App Center](https://docs.microsoft.com/appcenter)

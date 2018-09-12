@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de525650c7e93497c86fa7ebf493922d8fad6ef
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6aa365df2d7cdc1219ceea718594682685f2a759
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668779"
 ---
 # <a name="startprofile"></a>StartProfile
 La funzione `StartProfile` imposta il contatore su 1 (On) per il livello di profilatura specificato.  
@@ -44,7 +45,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  Identificatore del processo o del thread generato dal sistema.  
   
-## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
+## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito  
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
 |Enumerator|Descrizione|  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  Se lo stato di Start/Stop e lo stato di Suspend/Resume sono entrambi ON, lo stato di profilatura per il livello è ON. Affinché un thread venga incluso nella profilatura, gli stati dei livelli globale, processo e thread per il thread devono essere ON.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informazioni sulla funzione  
- Intestazione: dichiarata in VSPerf.h  
+ *Intestazione: dichiarata in VSPerf.h*  
   
- Libreria di importazione: VSPerf.lib  
+ Libreria di importazione: *VSPerf.lib*  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente illustra la chiamata della funzione StartProfile.  

@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572345"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668755"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Risolvere i problemi relativi agli strumenti per le prestazioni
 Quando si usano gli strumenti di profilatura, potrebbe verificarsi uno dei seguenti problemi:  
   
--   [Non vengono raccolti dati dagli strumenti di profilatura](#NoDataCollected)  
+-   [Non vengono raccolti dati dagli strumenti di profilatura](#no-data-is-collected-by-the-profiling-tools)  
   
--   [Nei report e nelle visualizzazioni delle prestazioni vengono visualizzati numeri invece dei nomi di funzione](#NoSymbols)  
+-   [Nei report e nelle visualizzazioni delle prestazioni vengono visualizzati numeri invece dei nomi di funzione](#performance-views-and-reports-display-numbers-for-function-names)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Non vengono raccolti dati dagli strumenti di profilatura  
  Dopo aver eseguito la profilatura di un'applicazione, non viene creato alcun file di dati di profilatura (con estensione *vsp*) e viene visualizzato il seguente avviso nella finestra **Output** o nella finestra di comando:  

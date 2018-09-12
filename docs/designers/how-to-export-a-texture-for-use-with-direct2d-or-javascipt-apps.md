@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4666bbd295f32e9782e445661c1a4736ec6c06c1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 4fd6a2483ebd0255056f471a37744a5b358c185f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924040"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278816"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procedura: Esportare una trama da usare con app Direct2D o Javascript
 La pipeline di contenuti immagine può generare trame compatibili con le convenzioni di rendering interne di Direct2D. Le trame di questo genere sono adatte alle app che usano Direct2D e alle app UWP create mediante JavaScript.
@@ -53,7 +53,7 @@ La pipeline di contenuti immagine può generare trame compatibili con le convenz
 
 2.  Configurare il file di trama in modo che venga elaborato dalla pipeline di contenuti immagine. In **Esplora soluzioni** aprire il menu di scelta rapida per il file di trama appena creato e quindi scegliere **Proprietà**. Nella pagina **Proprietà di configurazione** > **Generale** impostare la proprietà **Tipo di elemento** su **Image Content Pipeline** (Pipeline di contenuti immagine). Assicurarsi che la proprietà **Contenuto** sia impostata su **Sì** e che l'opzione **Exclude From Build** (Escludi da compilazione) sia impostata su **No**, quindi scegliere il pulsante **Applica**. Viene visualizzata la pagina delle proprietà di configurazione **Image Content Pipeline** (Pipeline di contenuti immagine).
 
-3.  Impostare il formato di output su uno dei formati compressi a blocchi. Nella pagina **Proprietà di configurazione** > **Image Content Pipeline (Pipeline di contenuti immagine)**  > **Generale**, impostare la proprietà **Comprimi** su **BC3_UNORM compression (/compress:BC3_UNORM)** (Compressione BC3_UNORM (/compress:BC3_UNORM)). È possibile scegliere uno degli altri formati BC1, BC2 o BC3, in base alle specifiche esigenze. Direct2D attualmente non supporta le trame BC4, BC5, BC6 o BC7. Per altre informazioni sui diversi formati BC, vedere [Block Compression (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx) (Compressione a blocchi (Direct3D 10)).
+3.  Impostare il formato di output su uno dei formati compressi a blocchi. Nella pagina **Proprietà di configurazione** > **Image Content Pipeline (Pipeline di contenuti immagine)**  > **Generale**, impostare la proprietà **Comprimi** su **BC3_UNORM compression (/compress:BC3_UNORM)** (Compressione BC3_UNORM (/compress:BC3_UNORM)). È possibile scegliere uno degli altri formati BC1, BC2 o BC3, in base alle specifiche esigenze. Direct2D attualmente non supporta le trame BC4, BC5, BC6 o BC7. Per altre informazioni sui diversi formati BC, vedere [Block Compression (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression) (Compressione a blocchi (Direct3D 10)).
 
     > [!NOTE]
     >  Il formato di compressione specificato determina il formato del file generato dalla pipeline di contenuti immagine. Questo si differenzia dalla proprietà **Formato** dell'immagine di origine nell'editor di immagini, che determina il formato del file di immagine di origine così com'è archiviato su disco, ovvero il *formato di lavoro*. In genere, non è consigliabile usare un formato di lavoro compresso.

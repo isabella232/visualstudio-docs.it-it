@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 557cdd14a37a52933df44c92b76fe608a1cc273c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1effd15666839b6e48bcebf46120585c4cfc36c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079888"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282885"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 
@@ -102,4 +102,4 @@ Nella finestra di progettazione XAML è possibile impostare le proprietà di dat
 ## <a name="see-also"></a>Vedere anche
 
 - [Creare un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Finestra di dialogo Aggiungi convertitore di valori](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Finestra di dialogo Aggiungi convertitore di valori](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)

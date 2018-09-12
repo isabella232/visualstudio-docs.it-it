@@ -1,7 +1,7 @@
 ---
 title: 'Guida introduttiva: creare un progetto Python da un modello'
 description: In questa guida introduttiva viene creato un progetto Visual Studio per Python usando il modello predefinito per un'app Flask di base.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3478e5b6156cdcf9c1aa6d814cb3cdd35e9579d1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: b9f361ba73f8fd1d3963ca39a90ac01ba9effe6f
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586496"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43996002"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Guida introduttiva: Creare un progetto Python da un modello in Visual Studio
 

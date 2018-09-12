@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626976"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320839"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Avvio rapido: Presentazione degli strumenti di profilatura
 
@@ -156,7 +156,7 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |Strumento di prestazioni|Desktop di Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì| 
-|[Utilizzo CPU](../profiling/cpu-usage.md)|sì (vedere la nota)|sì|sì (vedere la nota)|
+|[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
 |[Utilizzo GPU](../debugger/gpu-usage.md)|sì|sì|No| 
 |[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|

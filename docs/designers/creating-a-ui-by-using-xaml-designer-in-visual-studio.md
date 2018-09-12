@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3daf20ee3fcb2472e88d2387abf870862b0d5c47
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889967"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283691"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva per semplificare la progettazione di app per Windows e per il Web. È possibile creare interfacce utente per le app trascinando i controlli dalla **Casella degli strumenti** e impostando le proprietà nella finestra **Proprietà** . È anche possibile modificare il codice XAML direttamente nella visualizzazione XAML.
@@ -41,7 +41,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  **Guide di allineamento** Le guide di allineamento sono *limiti di allineamento*, visualizzati sotto forma di linee tratteggiate rosse, per indicare quando i bordi dei controlli sono allineati o quando le linee di base del testo sono allineate. I limiti di allineamento vengono visualizzati solo quando è abilitato l' **allineamento alle guide di allineamento** .
 
- **Sbarre della griglia** Le sbarre di tipo `Grid` consentono di gestire righe e colonne in un pannello [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). È possibile creare ed eliminare righe e colonne e modificare le rispettive larghezze e altezze. La sbarra verticale della griglia, visualizzata nel lato sinistro della tavola da disegno, viene usata per le righe, mentre la sbarra orizzontale, visualizzata in alto, viene usata per le colonne.
+ **Sbarre della griglia** Le sbarre di tipo `Grid` consentono di gestire righe e colonne in un pannello [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid). È possibile creare ed eliminare righe e colonne e modificare le rispettive larghezze e altezze. La sbarra verticale della griglia, visualizzata nel lato sinistro della tavola da disegno, viene usata per le righe, mentre la sbarra orizzontale, visualizzata in alto, viene usata per le colonne.
 
  **Strumenti decorativi griglia** Uno strumento decorativo griglia viene visualizzato sotto forma di triangolo a cui è collegata una linea verticale oppure orizzontale sulla barra di scorrimento della griglia. Quando si trascina uno strumento decorativo griglia, le larghezze o altezze delle colonne o righe adiacenti vengono aggiornate in base allo spostamento del mouse.
 
@@ -49,7 +49,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  **Quadratini di ridimensionamento** I quadratini di ridimensionamento vengono visualizzati sui controlli selezionati e ne permettono il ridimensionamento. Quando si ridimensiona un controllo, vengono in genere visualizzati i valori relativi a larghezza e altezza per semplificare il ridimensionamento del controllo. Per altre informazioni sulla modifica dei controlli nella visualizzazione **Progettazione**, vedere [Utilizzo di elementi in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).
 
- **Margini** I margini rappresentano la quantità di spazio fisso tra il bordo di un controllo e il bordo del rispettivo contenitore. È possibile impostare i margini di un controllo usando le proprietà [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) in **Layout** nella finestra Proprietà.
+ **Margini** I margini rappresentano la quantità di spazio fisso tra il bordo di un controllo e il bordo del rispettivo contenitore. È possibile impostare i margini di un controllo usando le proprietà [Margin](/uwp/api/windows.ui.xaml.frameworkelement.margin) in **Layout** nella finestra Proprietà.
 
  **Strumenti decorativi del margine** È possibile usare gli strumenti decorativi del margine per modificare i margini di un elemento in relazione al rispettivo contenitore di layout. Se uno strumento decorativo del margine è aperto, il margine non viene impostato e viene visualizzata una catena interrotta. Se il margine non è impostato, gli elementi restano al proprio posto quando il contenitore di layout viene ridimensionato in fase di esecuzione. Se uno strumento decorativo del margine viene chiuso, viene visualizzata una catena ininterrotta e gli elementi vengono spostati insieme al margine quando il contenitore di layout viene ridimensionato in fase di esecuzione (il margine resta fisso).
 

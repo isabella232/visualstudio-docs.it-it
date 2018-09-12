@@ -12,16 +12,16 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749460"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668582"
 ---
 # <a name="custom-native-etw-heap-events"></a>Personalizzare gli eventi dell'heap ETW nativo
 
-Visual Studio contiene un'ampia gamma di [strumenti di profilatura e diagnostica](../profiling/profiling-tools.md), tra cui un profiler nativo della memoria.  Il profiler esegue l'hook degli [eventi ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) dal provider di heap e offre un'analisi delle modalità di allocazione e uso della memoria.  Per impostazione predefinita, questo strumento consente di analizzare solo le allocazioni effettuate dall'heap standard di Windows ed eventuali allocazioni esterne all'heap nativo non vengono visualizzate.
+Visual Studio contiene un'ampia gamma di [strumenti di profilatura e diagnostica](../profiling/profiling-feature-tour.md), tra cui un profiler nativo della memoria.  Il profiler esegue l'hook degli [eventi ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) dal provider di heap e offre un'analisi delle modalità di allocazione e uso della memoria.  Per impostazione predefinita, questo strumento consente di analizzare solo le allocazioni effettuate dall'heap standard di Windows ed eventuali allocazioni esterne all'heap nativo non vengono visualizzate.
 
 Vi sono molti i casi in cui può essere utile usare il proprio heap personalizzato ed evitare il sovraccarico di allocazioni dall'heap standard.  Ad esempio, è possibile usare [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) per allocare una grande quantità di memoria all'avvio dell'app o del gioco e quindi gestire i propri blocchi all'interno di tale elenco.  In questo scenario lo strumento profiler della memoria vedrà solo l'allocazione iniziale e non la gestione personalizzata eseguita all'interno del blocco di memoria.  Tuttavia, se si usa utilizza il provider ETW dell'heap nativo personalizzato, è possibile consentire allo strumento di sapere quali allocazioni vengono create all'esterno dell'heap standard.
 
@@ -155,8 +155,8 @@ L'*heap NT* predefinito ha lo stesso aspetto di prima, con l'aggiunta dell'ogget
 Come con l'heap standard di Windows, è possibile usare questo strumento per confrontare gli snapshot e verificare la presenza di spazi inutilizzati ed errori nell'heap personalizzato, descritto nella documentazione principale di [Utilizzo memoria](../profiling/memory-usage.md).
 
 > [!TIP]
-> Visual Studio contiene anche uno strumento **Utilizzo memoria** nel set di strumenti di **profilatura delle prestazioni**, che viene abilitato dall'opzione di menu **Debug**>**Profiler prestazioni** o dalla combinazione di tasti **ALT**+**F2**.  Questa funzionalità non include la verifica dell'heap e non visualizza l'heap personalizzato come descritto in questo documento.  Solo la finestra **Strumenti di diagnostica**, che può essere abilitata con il menu **Debug**>**Windows**>**Mostra strumenti di diagnostica** o la combinazione di tasti **CTRL**+**ALT**+**F2**, contiene questa funzionalità.
+> Visual Studio contiene anche uno strumento **Utilizzo memoria** nel set di strumenti di **profilatura delle prestazioni**, che viene abilitato dall'opzione di menu **Debug** > **Profiler prestazioni** o dalla combinazione di tasti **ALT**+**F2**.  Questa funzionalità non include la verifica dell'heap e non visualizza l'heap personalizzato come descritto in questo documento.  Solo la finestra **Strumenti di diagnostica**, che può essere abilitata con il menu **Debug** > **Windows** > **Mostra strumenti di diagnostica** o la combinazione di tasti **CTRL**+**ALT**+**F2**, contiene questa funzionalità.
 
 ## <a name="see-also"></a>Vedere anche
-[Strumenti di profilatura](../profiling/profiling-tools.md)  
+[Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)  
 [Utilizzo memoria](../profiling/memory-usage.md)

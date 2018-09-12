@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d1d57dc8c0eb07b90da79de3fee5d42678e7a22
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 206c856eb87243fd6021c4ff8bb9f6890b8eaf25
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279986"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384214"
 ---
 # <a name="application-property-page-uwp-projects"></a>Pagina delle proprietà dell'applicazione (progetti UWP)
 
@@ -46,7 +46,7 @@ Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLan
 
 È possibile impostare la versione di destinazione e la versione minima di Windows 10 per l'app usando gli elenchi a discesa in questa sezione. È consigliabile selezionare la versione più recente di Windows 10, e se si sviluppa un'app aziendale, anche supportare una versione minima precedente. Per altre informazioni sulla scelta della versione di Windows 10, vedere [Scegliere una versione di UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Per informazioni sulla selezione della piattaforma di destinazione di Visual Studio 2017, vedere [Selezione della piattaforma](/visualstudio/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
+Per informazioni sulla selezione della piattaforma di destinazione di Visual Studio 2017, vedere [Selezione della piattaforma](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
 ## <a name="see-also"></a>Vedere anche
 

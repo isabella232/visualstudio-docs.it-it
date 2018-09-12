@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567212"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384305"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -176,7 +176,7 @@ Raggruppa gli elementi [CodeSnippet](../ide/code-snippets-schema-reference.md#co
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento facoltativo. Elemento padre di tutti i dati del frammento di codice. Possono esistere zero o più elementi `CodeSnippet` in un elemento `CodeSnippets`.|
+|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Elemento facoltativo. Elemento padre di tutti i dati del frammento di codice. Possono esistere zero o più elementi `CodeSnippet` in un elemento `CodeSnippets`.|
 
 ## <a name="declarations-element"></a>Elemento Declarations
 
@@ -196,7 +196,7 @@ Specifica i valori letterali e gli oggetti che costituiscono le parti modificabi
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
+|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
 
 ## <a name="default-element"></a>Elemento Default
 
@@ -279,7 +279,7 @@ Specifica informazioni generali sul frammento di codice IntelliSense.
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento padre di tutti i dati del frammento di codice.|
+|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Elemento padre di tutti i dati del frammento di codice.|
 
 ## <a name="helpurl-element"></a>Elemento HelpUrl
 
@@ -422,7 +422,7 @@ I valori letterali e gli oggetti non possono contenere un elemento **ID** con va
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations)|Contiene i valori letterali e gli oggetti di un frammento di codice che è possibile modificare.|
+|[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Contiene i valori letterali e gli oggetti di un frammento di codice che è possibile modificare.|
 
 ## <a name="namespace-element"></a>Elemento Namespace
 
@@ -491,7 +491,7 @@ Specifica informazioni sui riferimenti ad assembly richiesti dal frammento di co
 
 |Elemento padre|Descrizione|
 |--------------------|-----------------|
-|[Elemento References](../ide/code-snippets-schema-reference.md#references)|Elemento di raggruppamento per elementi `Reference`.|
+|[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento di raggruppamento per elementi `Reference`.|
 
 ## <a name="references-element"></a>Elemento References
 

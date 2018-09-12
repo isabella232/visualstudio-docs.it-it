@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225084"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384292"
 ---
 # <a name="install-visual-studio-2017"></a>Installare Visual Studio 2017
 
@@ -69,7 +69,7 @@ Eseguire quindi il file del programma di avvio automatico per installare il prog
 
   Se si riceve una comunicazione di Controllo dell'account utente, fare clic su **Sì**.
 
-2. Verrà richiesto di confermare le [Condizioni di licenza](https://visualstudio.microsoft.com/license-terms/) e l'[Informativa sulla privacy](https://go.microsoft.com/fwlink/?LinkID=824704) di Microsoft. Scegliere **Continua**.
+2. Verrà richiesto di confermare le [Condizioni di licenza](https://visualstudio.microsoft.com/license-terms/) e l'[Informativa sulla privacy](https://privacy.microsoft.com/privacystatement) di Microsoft. Scegliere **Continua**.
 
    ![Condizioni di licenza e informativa sulla privacy](media/vs2017-privacy-and-license-terms.PNG "Condizioni di licenza e informativa sulla privacy")
 
@@ -138,7 +138,7 @@ Per altre informazioni, vedere la pagina [Cambiare i percorsi di installazione i
    Ad esempio, per [compilare un'app C++](../ide/getting-started-with-cpp-in-visual-studio.md), fare clic su **Installati**, espandere **Visual C++** e selezionare il tipo di progetto C++ che si vuole compilare. <br><br>
    Per [compilare un'app C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), fare clic su **Installati**, espandere **Visual C#** e selezionare il tipo di progetto C# che si vuole compilare.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]  
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
 
 ## <a name="see-also"></a>Vedere anche
 

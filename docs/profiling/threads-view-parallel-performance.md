@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573167"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668690"
 ---
 # <a name="threads-view-parallel-performance"></a>Visualizzazione Thread (prestazioni in parallelo)
 La **visualizzazione thread** è la visualizzazione più dettagliata e completa nel Visualizzatore di concorrenza (scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Tramite questa visualizzazione, è possibile identificare se i thread sono in esecuzione o se sono bloccati a causa di operazioni di sincronizzazione, di I/O oppure per altri motivi.  

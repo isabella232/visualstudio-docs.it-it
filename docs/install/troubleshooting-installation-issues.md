@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a7ae2bff6d35c77dc54ce07207af375b76ee77
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: db85353830e1d86773a870a410797bfb5c60ccd7
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511691"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384123"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio 2017
 
@@ -56,7 +56,7 @@ Il programma di bootstrap dell'installazione di Visual Studio è un file eseguib
 
 In alcune situazioni, ad esempio quando sono presenti file danneggiati, può essere necessario esaminare i problemi singolarmente. Per consentirci di fornire il supporto ottimale, procedere come indicato di seguito:
 
-1. Raccogliere i log di installazione. Per altre informazioni, vedere [Come ottenere i log di installazione di Visual Studio](#how-to-get-the-visual-studio-installation-logs).
+1. Raccogliere i log di installazione. Per altre informazioni, vedere [Come ottenere i log di installazione di Visual Studio](#how-to-get-visual-studio-installation-logs).
 2. Aprire il programma di installazione di Visual Studio e quindi fare clic su **Segnala un problema** per aprire Visual Studio Feedback Tool.
 ![È possibile usare il pulsante Commenti e suggerimenti per aprire lo strumento di feedback](media/report-a-problem.png)
 3. Specificare un titolo per la segnalazione del problema e fornire i relativi dettagli. Fare clic su **Avanti** per accedere alla sezione **Allegati** e quindi allegare il file di log generato. In genere, il file è disponibile in `%TEMP%\vslogs.zip`.

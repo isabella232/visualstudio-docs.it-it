@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0dc63350b3acf89b1b226e5ebae45fdf8868fb3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 112983b543a602bca7105ad1b5b69c5995eadeb0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750090"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774619"
 ---
 # <a name="crosssession"></a>CrossSession
 L'opzione *CrossSession* di **VSPerfCmd.exe** consente al profiler di raccogliere dati da qualsiasi sessione della console. L'opzione **CrossSession** deve essere usata con l'opzione **Start**.  
@@ -37,10 +37,10 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  **Start:** `Method`  
  L'opzione **Start** inizializza il profiler sul metodo di profilatura specificato.  
   
- **Attach:** *PID*[**,***PID*]  
+ **Attach:** _PID_[**,**_PID_]  
  Avvia la profilatura dei processi specificati.  
   
- **Detach**[**:***PID*[,*PID*]]  
+ **Detach**[**:**_PID_[,_PID_]]  
  Arresta la profilatura dei processi specificati.  
   
 ## <a name="example"></a>Esempio  

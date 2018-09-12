@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233152"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283666"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulatore di Visual Studio per Android
 
@@ -84,7 +84,7 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
  Dopo aver installato il set di profili di destinazione, è possibile avviare questi nuovi profili direttamente dalla gestione premendo il pulsante verde **Riproduci**. Verranno inoltre visualizzati nel menu a discesa destinazione debug in qualsiasi tipo di progetto per dispositivi mobili multipiattaforma di Visual Studio.  
   
 ##  <a name="FeaturesTest"></a> Funzionalità che è possibile testare nell'emulatore  
- Per informazioni dettagliate sulle funzionalità che è possibile testare nell'emulatore, vedere questo [post di blog](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Per informazioni dettagliate sulle funzionalità che è possibile testare nell'emulatore, vedere questo [post di blog](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/).  
   
 ##  <a name="FeaturesNonTest"></a> Funzionalità che non è possibile testare nell'emulatore  
  Nell'elenco seguente vengono descritte le funzionalità della piattaforma Android che **non è possibile** testare nell'emulatore. È necessario verificare queste funzionalità in un dispositivo fisico.  

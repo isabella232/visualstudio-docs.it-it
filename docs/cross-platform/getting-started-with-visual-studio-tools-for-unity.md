@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252466"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283112"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Introduzione a Visual Studio Tools per Unity
 
@@ -85,7 +85,7 @@ A partire da Unity 2018.1, Visual Studio deve essere l'editor di script esterno 
 
 - Per Visual Studio 2015 Community, Visual Studio 2015 Professional o Enterprise di Visual Studio 2015:
 
-   [Scaricare Visual Studio 2015 Tools per Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+   [Scaricare Visual Studio 2015 Tools per Unity](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
 > Visual Studio Tools per Unity richiede Unity 5.2 e versioni successive e una versione di Visual Studio che supporti le estensioni, come Visual Studio Community, Professional, Premium o Enterprise. Per verificare che Visual Studio Tools per Unity sia abilitato nella versione di Unity installata, selezionare **About Unity (Informazioni su Unity)** dalla menu della **Guida in linea** e cercare il testo "Microsoft Visual Studio Tools for Unity enabled" nella parte inferiore sinistra della finestra di dialogo.

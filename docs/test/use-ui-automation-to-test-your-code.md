@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381159"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321203"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 
@@ -35,7 +35,7 @@ Come mostrato nell'illustrazione seguente, in una procedura di sviluppo tipica s
 
 Creare un test codificato dell'interfaccia utente è semplice. Basta eseguire il test manualmente mentre il **Generatore di test codificati dell'interfaccia utente** è in esecuzione in background. È anche possibile specificare i valori che devono apparire in specifici campi. Il **Generatore di test codificati dell'interfaccia utente** registra le azioni e genera codice da queste azioni. Dopo aver creato il test, è possibile modificarlo in un editor specializzato che consente di modificare la sequenza di azioni.
 
-In alternativa, se si dispone di un test case registrato in Microsoft Test Manager, si può generare codice a partire da esso. Per altre informazioni, vedere [Registrare e riprodurre test manuali](/vsts/test/mtm/record-play-back-manual-tests).
+In alternativa, se si dispone di un test case registrato in Microsoft Test Manager, si può generare codice a partire da esso. Per altre informazioni, vedere [Registrare e riprodurre test manuali](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts).
 
 Il **Generatore di test codificati dell'interfaccia utente** e l'editor appositi semplificano la creazione e la modifica di test codificati dell'interfaccia utente, anche se le proprie competenze principali sono orientate alle attività di test piuttosto che alla scrittura di codice. Per gli sviluppatori che vogliono estendere i test in modo più avanzato, tuttavia, il codice è strutturato in modo da essere estremamente semplice da copiare e adattare. Ad esempio, si può registrare un test per l'acquisto di un articolo in un sito Web e quindi modificare il codice generato per aggiungere un ciclo che acquista molti articoli.
 
@@ -441,7 +441,7 @@ Con i controlli derivanti da <xref:Microsoft.VisualStudio.TestTools.UITesting.UI
 
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
 
-- [Eseguire test nel processo di compilazione](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [Eseguire test nel processo di compilazione](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
@@ -451,7 +451,7 @@ Con i controlli derivanti da <xref:Microsoft.VisualStudio.TestTools.UITesting.UI
 
 - [Estendere test codificati dell'interfaccia utente e registrazioni delle azioni](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre informazioni sui test manuali, vedere [Eseguire test manuali con Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager). Per altre informazioni sui test automatizzati, vedere [Strumenti di test di Visual Studio](../test/improve-code-quality.md).
+I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre informazioni sui test manuali, vedere [Eseguire test manuali con Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Per altre informazioni sui test automatizzati, vedere [Strumenti di test di Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Vedere anche
 

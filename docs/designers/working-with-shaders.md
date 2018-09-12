@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e77085c840a7ef52bdf40d0c0491bfdfc9d384c3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078316"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280201"
 ---
 # <a name="work-with-shaders"></a>Usare gli shader
 
@@ -33,7 +33,7 @@ I tipi più comuni di shader sono i *vertex shader*, che eseguono calcoli per ve
 
 Nella finestra di progettazione shader, gli shader vengono salvati in formato DGSL (Directed Graph Shader Language), un formato XML basato sul linguaggio DGML (Directed Graph Markup Language). È possibile applicare shader DGSL direttamente ai modelli 3D nell'editor modello. Prima di poter usare uno shader DGSL nell'applicazione, è tuttavia necessario esportarlo in un formato noto a DirectX, ad esempio HLSL.
 
-Poiché DGSL è compatibile con DGML, è possibile usare gli strumenti progettati per analizzare i documenti DGML anche per analizzare gli shader DGSL. Per altre informazioni su DGML, vedere [Informazioni su DGML (Directed Graph Markup Language)](http://msdn.microsoft.com/library/ee842619.aspx).
+Poiché DGSL è compatibile con DGML, è possibile usare gli strumenti progettati per analizzare i documenti DGML anche per analizzare gli shader DGSL. Per altre informazioni su DGML, vedere [Informazioni su DGML (Directed Graph Markup Language)](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

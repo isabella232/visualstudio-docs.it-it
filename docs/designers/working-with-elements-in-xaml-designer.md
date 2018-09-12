@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078927"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279661"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Utilizzo di elementi in XAML Designer
 È possibile aggiungere elementi, come controlli, layout e forme, all'app in XAML, nel codice o usando la finestra di progettazione XAML. Questo argomento descrive come usare gli elementi nella finestra di progettazione XAML in Visual Studio o in Blend per Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Aggiunta di un elemento a un layout
- Per *layout* si intende il processo di ridimensionamento e posizionamento degli elementi in un'interfaccia utente. Per posizionare gli elementi visivi, è necessario inserirli in una classe [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) del layout. Una classe `Panel` contiene una proprietà figlio, ovvero una raccolta di tipi [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx). È possibile usare vari elementi figlio di `Panel`, ad esempio [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) e [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) come contenitori di layout e per posizionare e disporre gli elementi in una pagina.
+ Per *layout* si intende il processo di ridimensionamento e posizionamento degli elementi in un'interfaccia utente. Per posizionare gli elementi visivi, è necessario inserirli in una classe [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel) del layout. Una classe `Panel` contiene una proprietà figlio, ovvero una raccolta di tipi [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement). È possibile usare vari elementi figlio di `Panel`, ad esempio [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) e [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) come contenitori di layout e per posizionare e disporre gli elementi in una pagina.
 
  Per impostazione predefinita, viene usato un pannello `Grid` come contenitore di layout di primo livello all'interno di una pagina o di un modulo. È possibile aggiungere pannelli, controlli o altri elementi di layout all'interno del layout di pagina di primo livello.
 
@@ -33,7 +33,7 @@ ms.locfileid: "39078927"
 
     -   Trascinare un elemento dalla **casella degli strumenti** nella tavola da disegno.
 
-    -   Nella **casella degli strumenti** fare clic su uno degli strumenti di disegno, ad esempio [Ellisse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) o [Rettangolo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx) e disegnare un elemento nel pannello attivo.
+    -   Nella **casella degli strumenti** fare clic su uno degli strumenti di disegno, ad esempio [Ellisse](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) o [Rettangolo](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle) e disegnare un elemento nel pannello attivo.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Modifica dell'ordine dei livelli degli elementi
  Quando sono presenti due elementi nella tavola da disegno nella finestra di progettazione XAML, uno appare davanti all'altro nell'ordine dei livelli. Alla fine dell'elenco di elementi nella finestra Struttura documento si trova l'elemento in primo piano, eccetto quando è impostata la proprietà **ZIndex** per un elemento. Quando si inserisce un elemento in una pagina, un modulo o un contenitore di layout, l'elemento viene automaticamente posizionato davanti agli altri nell'elemento contenitore attivo. Per modificare l'ordine degli elementi, è possibile usare i comandi di **Ordina** o trascinare gli elementi nella struttura a oggetti nella finestra Struttura documento.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 424675726dd91664923cde0a3a5ad5573d51b4d5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b8ce2c1d7a28eff441cbf3a95e8f9df644789e70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548336"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775552"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Raccogliere dati di concorrenza di thread e processi
 
@@ -31,11 +31,11 @@ Il metodo di profilatura della concorrenza degli strumenti di profilatura di Vis
 
 ## <a name="common-tasks"></a>Attività comuni
 
-È possibile specificare altre opzioni nella finestra di dialogo *Pagine delle proprietà***Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
+È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
 
 - In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.
 
-Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo *Pagine delle proprietà***Sessioni prestazioni* quando si esegue la profilatura con il metodo di concorrenza.
+Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_ della **sessione di prestazioni** quando si esegue la profilatura con il metodo di concorrenza.
 
 |Attività|Contenuto correlato|
 |----------|---------------------|

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fef6883056affd6ee47da86d8f2860c8c9ca047
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4085fa30d1732e6943453a85d25fee2638fa0638
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548258"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774630"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>Raccogliere le statistiche sulle prestazioni tramite il campionamento
 
@@ -34,11 +34,11 @@ Per impostazione predefinita, il metodo di campionamento degli strumenti di prof
 
 ## <a name="common-tasks"></a>Attività comuni
 
-È possibile specificare altre opzioni nella finestra di dialogo *Pagine delle proprietà***Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
+È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
 
 - In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.
 
- Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo *Pagine delle proprietà***Sessione di prestazioni** quando si esegue la profilatura con il metodo di campionamento.
+ Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_ della **sessione di prestazioni** quando si esegue la profilatura con il metodo di campionamento.
 
 |Attività|Contenuto correlato|
 |----------|---------------------|

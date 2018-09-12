@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668611"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizzare l'utilizzo della rete nelle app UWP
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](/uwp/api/windows.web.http). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.  
@@ -76,4 +77,4 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
  [Blog di Visual Studio: Introducing Visual Studio's network inspector (Introduzione al controllo di rete di Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Video di Channel 9: Strumenti di diagnostica di Visual Studio - Nuovo Profiler di rete](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilatura in Visual Studio](../profiling/index.md)  
- [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
+ [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

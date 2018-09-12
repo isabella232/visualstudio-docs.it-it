@@ -1,7 +1,7 @@
 ---
 title: Esercitazione - Informazioni su Flask in Visual Studio, passaggio 2
 description: Procedura dettagliata dei concetti di base relativi a Flask nel contesto dei progetti di Visual Studio, che illustra in particolare i passaggi della creazione di un'app e dell'uso di visualizzazioni e modelli.
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9900fd69cf51ca97d9cb9c6be8bbbe6bba22971
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388332"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776155"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Flask con visualizzazioni e modelli di pagina
 
@@ -198,7 +198,7 @@ Poiché il valore restituito per la visualizzazione è una stringa, è possibile
 
 Risposta: Anche se i modelli vengono in genere mantenuti in file HTML separati, è possibile usare anche un modello inline. L'uso di un file distinto è l'opzione consigliata, tuttavia, per mantenere una netta separazione tra il markup e il codice.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione di file html?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione html?
 
 Risposta: L'estensione *html* per i file di modello di pagina è del tutto facoltativa, perché il percorso relativo esatto del file viene sempre identificato nel primo argomento della funzione `render_template`. Per i file con estensione *html*, tuttavia, Visual Studio e altri editor offrono in genere funzionalità quali il completamento del codice e la colorazione della sintassi, che compensano il fatto che i modelli di pagina non siano rigorosamente HTML.
 

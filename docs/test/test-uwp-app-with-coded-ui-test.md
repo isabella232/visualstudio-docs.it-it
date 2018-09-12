@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694093"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668803"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Creare un test codificato dell'interfaccia utente per testare un'app UWP
 
@@ -128,7 +128,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
-1. Successivamente, è necessario ottenere l'elemento **AutomationId** dell'[app](#create-a-simple-universal-windows-app) UWP che si vuole testare. Aprire il menu **Start** di Windows per visualizzare il riquadro per l'app. In seguito, trascinare lo strumento selettore di precisione con l'![icona del bersaglio](media/target-icon.png) dalla finestra di dialogo **Generatore di test codificati dell'interfaccia utente** al riquadro dell'app. Quando una casella blu circonda il riquadro, rilasciare il mouse.
+1. Successivamente, è necessario ottenere l'elemento **AutomationId** dell'[app](#create-a-uwp-app-to-test) UWP che si vuole testare. Aprire il menu **Start** di Windows per visualizzare il riquadro per l'app. In seguito, trascinare lo strumento selettore di precisione con l'![icona del bersaglio](media/target-icon.png) dalla finestra di dialogo **Generatore di test codificati dell'interfaccia utente** al riquadro dell'app. Quando una casella blu circonda il riquadro, rilasciare il mouse.
 
    ![Strumento selettore di precisione](media/cross-hair-tool.png)
 

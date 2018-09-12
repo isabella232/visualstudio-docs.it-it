@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a156e7acfdb68d1fa523263835eeee4a573ff78
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668935"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 Il metodo `SuspendProfile` incrementa il contatore Suspend/Resume per il livello di profilatura specificato.  
@@ -44,7 +45,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
   
  Identificatore del processo o del thread generato dal sistema.  
   
-## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
+## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito  
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
 |Enumerator|Descrizione|  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  Se lo stato di Start/Stop e lo stato di Suspend/Resume sono entrambi ON, lo stato di profilatura per il livello è ON. Affinché un thread venga incluso nella profilatura, gli stati dei livelli globale, processo e thread per il thread devono essere tutti ON.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informazioni sulla funzione  
- Intestazione: dichiarata in VSPerf.h  
+ *Intestazione: dichiarata in VSPerf.h*  
   
- Libreria di importazione: VSPerf.lib  
+ Libreria di importazione: *VSPerf.lib*  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente illustra il metodo SuspendProfile. Questo esempio presuppone l'esecuzione di una chiamata precedente a StartProfile per il processo o thread identificato da [PROFILE_CURRENTID](../profiling/profile-currentid.md).  

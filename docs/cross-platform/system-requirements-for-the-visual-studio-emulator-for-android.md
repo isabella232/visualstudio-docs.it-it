@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251549"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279401"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator per Android
 Visual Studio Emulator per Android viene eseguito come una macchina virtuale in Hyper-V, la tecnologia di virtualizzazione per Windows 8 e versioni successive. Per eseguire l'emulatore, il computer deve soddisfare i requisiti per l'esecuzione di Hyper-V, come descritto in questo argomento.  
@@ -117,7 +117,7 @@ Visual Studio Emulator per Android viene eseguito come una macchina virtuale in 
   
 |Requisito|Come controllare e abilitare questo requisito|  
 |-----------------|----------------------------------------------|  
-|Hyper-V deve essere installato|Seguire le stesse istruzioni usate per [abilitare Hyper-V per l'emulatore di Windows Phone](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx).<br /><br /> Controllare lo stato del servizio **Hyper-V Virtual Machine Management** nello snap-in Servizi.|  
+|Hyper-V deve essere installato|Seguire le stesse istruzioni usate per [abilitare Hyper-V per l'emulatore di Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Controllare lo stato del servizio **Hyper-V Virtual Machine Management** nello snap-in Servizi.|  
 |Hyper-V deve essere in esecuzione.|Per altre informazioni sulla gestione dei servizi, vedere gli argomenti seguenti:<br /><br /> -   [Avviare, arrestare, sospendere, riprendere o riavviare un servizio](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurare la modalità di avvio di un servizio](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  È necessario essere un membro del gruppo di amministratori di Hyper-V locali.  
