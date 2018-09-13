@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138943"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701709"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introduzione agli strumenti di Visual Studio Kubernetes
 
@@ -38,7 +38,7 @@ Per sfruttare questa nuova funzionalità, è necessario:
 
     1.  Helm CLI installata nella workstation di sviluppo. Per altre informazioni, vedere [installazione di Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Helm configurato per il cluster AKS. Per altre informazioni su come eseguire questa operazione, vedere [Jak nakonfigurovat Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1.  Helm configurato per il cluster AKS usando la `helm init` comando. Per altre informazioni su come eseguire questa operazione, vedere [Jak nakonfigurovat Helm](/azure/aks/kubernetes-helm#configure-helm).
 
 ## <a name="create-a-new-kubernetes-project"></a>Creare un nuovo progetto di Kubernetes
 
@@ -82,7 +82,7 @@ Con tutti i file in punto, è possibile utilizzare l'IDE di Visual Studio per sc
 
 Dopo aver ottenuto il codice in esecuzione nel modo desiderato, è possibile pubblicare direttamente da Visual Studio in un cluster AKS.
 
-A tale scopo, è necessario innanzitutto configurare un profilo di pubblicazione che pubblica l'immagine del contenitore per registro contenitori di Azure (ACR). Servizio contenitore di AZURE possono quindi eseguire il pull dell'immagine del contenitore da registro contenitori di AZURE e distribuirla nel cluster.
+A tale scopo, è innanzitutto necessario verificare di aver installato tutti gli elementi come descritto nel [prerequisiti](#prerequisities) sezione sotto l'elemento per la pubblicazione nel servizio contenitore di AZURE ed eseguire tutti i passaggi della riga di comando specificato usando i collegamenti. Quindi, configurare un profilo di pubblicazione che pubblica l'immagine del contenitore per registro contenitori di Azure (ACR). Servizio contenitore di AZURE possono quindi eseguire il pull dell'immagine del contenitore da registro contenitori di AZURE e distribuirla nel cluster.
 
 1. In **Esplora soluzioni**, fare clic sui *project* e scegliere **Publish**.
 
