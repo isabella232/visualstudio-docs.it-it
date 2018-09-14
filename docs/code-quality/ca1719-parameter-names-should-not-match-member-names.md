@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1174fa0533519b551e237c685f0a6fe67661752a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16b50ed49659891ae469f346afbf8a677bb059dc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915336"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546889"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: I nomi dei parametri non devono corrispondere ai nomi dei membri
 |||
@@ -38,10 +38,10 @@ ms.locfileid: "31915336"
  Un nome di parametro deve comunicare il significato di un parametro e un nome di membro deve comunicare il significato di un membro. Le progettazioni in cui questi nomi coincidono sono rare. Assegnare a un parametro lo stesso nome del relativo membro non è intuitiva e rende più complesso l'utilizzo della libreria.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Selezionare un nome di parametro che non corrisponde al nome di membro.
+ Selezionare un nome di parametro che non corrispondono al nome di membro.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Per un nuovo sviluppo, non noto possono verificarsi scenari in cui è necessario escludere un avviso da questa regola. Per le librerie fornite, potrebbe essere necessario escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Per i nuovi sviluppi, nessun noti verificarsi gli scenari in cui è necessario eliminare un avviso da questa regola. Per le librerie, potrebbe essere necessario eliminare un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
  [CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b59e9b0947c6d2b1cbb37cdc850a144976d495
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915597"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551769"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitare classi interne prive di istanze
 |||
@@ -35,41 +35,41 @@ ms.locfileid: "31915597"
  Un'istanza di un tipo a livello di assembly non viene creata dal codice nell'assembly.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola cerca di individuare una chiamata a uno dei costruttori del tipo e segnala una violazione, se viene trovata alcuna chiamata.
+ Questa regola cerca di individuare una chiamata a uno dei costruttori del tipo e se viene trovata alcuna chiamata viene segnalata una violazione.
 
- I tipi seguenti non vengono esaminati da questa regola:
+ I tipi seguenti non vengono analizzati da questa regola:
 
--   Tipi valore
+- Tipi valore
 
--   Tipi astratti
+- Tipi astratti
 
--   Enumerazioni
+- Enumerazioni
 
--   Delegati
+- Delegati
 
--   Tipi di matrice emesso dal compilatore
+- Tipi di matrice emesso dal compilatore
 
--   I tipi che non è possibile creare un'istanza e che definiscono `static` (`Shared` in Visual Basic) solo i metodi.
+- I tipi che non può essere inizializzata e che definiscono `static` (`Shared` in Visual Basic) solo i metodi.
 
- Se si applica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> all'assembly che in fase di analisi, questa regola non verrà eseguita su qualsiasi costruttore contrassegnati come `internal` poiché non è possibile stabilire se un campo è utilizzato da un altro `friend` assembly.
+ Se si applicano <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> all'assembly che si sta analizzando, questa regola non verrà eseguita su qualsiasi costruttore contrassegnati come `internal` poiché non è possibile stabilire se un campo viene usato da un altro `friend` assembly.
 
- Sebbene sia possibile aggirare questa limitazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] analisi codice, FxCop autonomo esterno verrà eseguito sui costruttori interni se ogni `friend` assembly è presente nell'analisi.
+ Anche se è possibile aggirare questa limitazione in analisi di codice di Visual Studio, FxCop autonomo esterno si verificherà in costruttori interni se ogni `friend` assembly è presente nell'analisi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere il codice che lo utilizza. Se il tipo contiene solo i metodi statici, è possibile aggiungere uno dei seguenti al tipo per impedire al compilatore di creazione di un costruttore di istanza pubblico predefinito:
+ Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere il codice che lo utilizza. Se il tipo contiene solo i metodi statici, aggiungere uno dei valori seguenti per il tipo per impedire al compilatore di creazione di un costruttore di istanza pubblici predefinito:
 
--   Costruttore privato per i tipi che hanno come destinazione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versioni 1.0 e 1.1.
+- Un costruttore privato per i tipi che hanno come destinazione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versioni 1.0 e 1.1.
 
--   Il `static` (`Shared` in Visual Basic) modificatore per i tipi che hanno come destinazione [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- Il `static` (`Shared` in Visual Basic) che hanno come destinazione i tipi di modificatore per [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  È possibile eliminare un avviso da questa regola. Si consiglia di eliminare l'avviso nelle situazioni seguenti:
 
--   La classe viene creata tramite metodi reflection ad associazione tardiva, ad esempio <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- La classe viene creata tramite i metodi di reflection con associazione tardiva, ad esempio <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
--   La classe viene creata automaticamente dal runtime o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Ad esempio, le classi che implementano <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La classe viene creata automaticamente dal runtime o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Ad esempio, le classi che implementano <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
--   La classe viene passata come parametro di tipo generico che dispone di un nuovo vincolo. Nell'esempio seguente genera ad esempio, questa regola.
+- La classe viene passata come parametro di tipo generico che ha un nuovo vincolo. Nell'esempio seguente genera ad esempio, questa regola.
 
     ```csharp
     internal class MyClass

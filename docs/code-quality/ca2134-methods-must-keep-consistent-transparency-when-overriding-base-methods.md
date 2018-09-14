@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c02ce23c341df377bc16b56cdd85769acf5582c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f56b81f3f3ce16f509f29791e28992402c222f9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917746"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552003"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: I metodi devono conservare trasparenza consistente durante l'override dei metodi base
 |||
@@ -28,20 +28,20 @@ ms.locfileid: "31917746"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Questa regola viene attivata quando un metodo contrassegnato con il <xref:System.Security.SecurityCriticalAttribute> esegue l'override di un metodo trasparente o contrassegnato con il <xref:System.Security.SecuritySafeCriticalAttribute>. La regola funziona anche quando un metodo trasparente o contrassegnato con il <xref:System.Security.SecuritySafeCriticalAttribute> esegue l'override di un metodo contrassegnato con un <xref:System.Security.SecurityCriticalAttribute>.
+ Questa regola viene attivata quando un metodo contrassegnato con il <xref:System.Security.SecurityCriticalAttribute> esegue l'override di un metodo trasparente o contrassegnato con il <xref:System.Security.SecuritySafeCriticalAttribute>. La regola viene attivata anche quando un metodo trasparente o contrassegnato con il <xref:System.Security.SecuritySafeCriticalAttribute> esegue l'override di un metodo contrassegnato con un <xref:System.Security.SecurityCriticalAttribute>.
 
  La regola è applicata in caso di esecuzione dell'override di un metodo virtuale o di implementazione di un'interfaccia.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola viene attivata sui tentativi di modificare l'accessibilità di sicurezza di un metodo ulteriormente fino alla catena di ereditarietà. Ad esempio, se un metodo virtuale in una classe di base è trasparente o critico, quindi la classe derivata deve eseguire l'override con un metodo transparent o SafeCritical. Al contrario, se virtuale è critico per la sicurezza, la classe derivata deve eseguire l'override con un metodo SecurityCritical. La stessa regola vale per l'implementazione di metodi di interfaccia.
+ Questa regola viene attivata sui tentativi di modificare l'accessibilità di sicurezza di un metodo ulteriormente la catena di ereditarietà. Ad esempio, se un metodo virtuale in una classe di base è trasparente o critico, quindi la classe derivata deve sostituirlo con un metodo trasparente o critico. Viceversa, se virtuale è critico per la sicurezza, la classe derivata deve eseguirne l'override con un metodo SecurityCritical. Le stesse regole valgono per l'implementazione di metodi di interfaccia.
 
- Regole di trasparenza vengono applicate quando il codice viene compilato anziché in fase di esecuzione tramite JIT in modo che il calcolo della trasparenza non dispone di informazioni di tipo dinamico. Pertanto, il risultato del calcolo della trasparenza deve essere in grado di determinare esclusivamente dai tipi statici compilato tramite JIT, indipendentemente dal tipo dinamico.
+ Regole di trasparenza vengono applicate quando il codice JIT compilato anziché in fase di esecuzione, in modo che il calcolo della trasparenza non dispone di informazioni di tipo dinamico. Di conseguenza, il risultato del calcolo della trasparenza deve essere in grado di essere determinata esclusivamente dai tipi statici compilato tramite JIT, indipendentemente dal tipo dinamico.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare la trasparenza del metodo che si esegue l'override di un metodo virtuale o che implementa un'interfaccia per corrispondere la trasparenza di virtuale o il metodo di interfaccia.
+ Per correggere una violazione di questa regola, modificare la trasparenza del metodo che viene viene sottoposto a override un metodo virtuale o che implementa un'interfaccia in modo da corrispondere la trasparenza del commutatore o il metodo di interfaccia.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere gli avvisi da questa regola. Le violazioni di questa regola comporterà un runtime <xref:System.TypeLoadException> per gli assembly che utilizzano la trasparenza di livello 2.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non eliminare gli avvisi da questa regola. Le violazioni di questa regola comporterà un runtime <xref:System.TypeLoadException> per gli assembly che usano la trasparenza di livello 2.
 
 ## <a name="examples"></a>Esempi
 

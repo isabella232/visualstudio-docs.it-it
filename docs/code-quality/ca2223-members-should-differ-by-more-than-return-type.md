@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aaa7671f1aa110edd42897111e746e62eab8048
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93822dd3db325e3463c4a8f175c8ca289cac9e5d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922470"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549826"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: La differenza tra membri non deve limitarsi al tipo restituito
+
 |||
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
@@ -32,22 +33,21 @@ ms.locfileid: "31922470"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Due membri pubblici o protetti avere le firme sono identiche tranne che per il tipo restituito.
+ Due membri pubblici o protetti con firme identiche ad eccezione di tipo restituito.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Nonostante common language runtime consenta l'utilizzo di tipi restituiti per differenziare membri altrimenti identici, questa funzionalità non è incluso in Common Language Specification e non è una funzionalità comune dei linguaggi di programmazione .NET. Quando i membri differiscono solo per il tipo restituito, sviluppatori e gli strumenti di sviluppo potrebbero non distinguerli correttamente.
+ Anche se common language runtime consenta l'utilizzo dei tipi restituiti per differenziare membri altrimenti identici, questa funzionalità non è incluso nel Common Language Specification, né è una funzionalità comune dei linguaggi di programmazione .NET. Quando i membri sono diversi solo per il tipo restituito, gli sviluppatori e gli strumenti di sviluppo potrebbero non correttamente distinguere tra di essi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, è possibile modificare la progettazione dei membri in modo che sono univoci in base solo i nomi e tipi di parametro o di non esporre i membri.
+ Per correggere una violazione di questa regola, modificare la progettazione dei membri sono univoci basati solo sul relativi nomi e tipi di parametro, o non espongono i membri.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente, in Microsoft intermediate language (MSIL), viene illustrato un tipo che viola questa regola. Si noti che questa regola non può essere violata utilizzando c# o Visual Basic.
+ L'esempio seguente, in Microsoft intermediate language (MSIL), viene illustrato un tipo che viola la regola. Si noti che questa regola non può essere violata usando c# o Visual Basic.
 
 ```
-
 .namespace UsageLibrary
 {
   .class public auto ansi beforefieldinit ReturnTypeTest
@@ -94,5 +94,4 @@ ms.locfileid: "31922470"
   } // end of class ReturnTypeTest
 
 } // end of namespace UsageLibrary
-
 ```

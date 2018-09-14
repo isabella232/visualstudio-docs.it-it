@@ -14,16 +14,20 @@ ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8616c8e70d298e5ed5798ab378590217923d8617
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a54dd39746364d6908f440ac77d7a2b8bbfdbcf6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901883"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547620"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Contrassegnare gli attributi con AttributeUsageAttribute
+
 |||
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
@@ -32,21 +36,21 @@ ms.locfileid: "31901883"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Il <xref:System.AttributeUsageAttribute?displayProperty=fullName> attributo non è presente sull'attributo personalizzato.
+ Il <xref:System.AttributeUsageAttribute?displayProperty=fullName> attributo non è presente nell'attributo personalizzato.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando si definisce un attributo personalizzato, contrassegnarlo tramite <xref:System.AttributeUsageAttribute> per indicare la posizione nel codice sorgente può essere applicato l'attributo personalizzato. Il significato e l'utilizzo previsto di un attributo ne determinano le posizioni valide nel codice. Ad esempio, è possibile definire un attributo che identifica la persona responsabile per la gestione e l'ottimizzazione di ogni tipo in una raccolta, e responsabilità viene sempre assegnata a livello di tipo. In questo caso, i compilatori devono abilitare l'attributo su classi, enumerazioni e le interfacce, ma non devono abilitarla nei metodi, eventi o proprietà. Procedure e i criteri organizzativi indicano se l'attributo deve essere abilitato per gli assembly.
+ Quando si definisce un attributo personalizzato, contrassegnarlo tramite <xref:System.AttributeUsageAttribute> per indicare la posizione nel codice sorgente può essere applicato l'attributo personalizzato. Il significato e l'utilizzo previsto di un attributo ne determinano le posizioni valide nel codice. Ad esempio, si potrebbe definire un attributo che identifica la persona responsabile della manutenzione e miglioramento di ogni tipo in una libreria, e che responsabilità viene sempre assegnata a livello di tipo. In questo caso, i compilatori devono abilitare l'attributo su classi, enumerazioni e le interfacce, ma non consigliabile abilitarlo in metodi, eventi o proprietà. Le procedure e i criteri dell'organizzazione indicano se l'attributo deve essere abilitato su assembly.
 
- Il <xref:System.AttributeTargets?displayProperty=fullName> enumerazione definisce le destinazioni che è possibile specificare un attributo personalizzato. Se si omette <xref:System.AttributeUsageAttribute>, l'attributo personalizzato sarà valida per tutte le destinazioni, come definito dal `All` valore <xref:System.AttributeTargets> enumerazione.
+ Il <xref:System.AttributeTargets?displayProperty=fullName> enumerazione definisce le destinazioni che è possibile specificare per un attributo personalizzato. Se si omette <xref:System.AttributeUsageAttribute>, l'attributo personalizzato sarà valido per tutte le destinazioni, come definito per il `All` pari a <xref:System.AttributeTargets> enumerazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, specificare le destinazioni per l'attributo utilizzando <xref:System.AttributeUsageAttribute>. Vedere l'esempio seguente.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È necessario correggere una violazione di questa regola anziché escludere il messaggio. Anche se l'attributo eredita <xref:System.AttributeUsageAttribute>, l'attributo deve essere presenta per semplificare la manutenzione del codice.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È necessario correggere una violazione di questa regola invece di escludere il messaggio. Anche se l'attributo eredita <xref:System.AttributeUsageAttribute>, l'attributo deve essere presente per semplificare la manutenzione del codice.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente definisce due attributi. `BadCodeMaintainerAttribute` in modo non corretto omette il <xref:System.AttributeUsageAttribute> istruzione, e `GoodCodeMaintainerAttribute` implementa correttamente l'attributo descritto in precedenza in questa sezione. Si noti che la proprietà `DeveloperName` è richiesta dalla regola di progettazione [CA1019: definire le funzioni di accesso per gli argomenti degli attributi](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) e viene inclusa per completezza.
+ L'esempio seguente definisce due attributi. `BadCodeMaintainerAttribute` in modo non corretto vengono omessi il <xref:System.AttributeUsageAttribute> istruzione e `GoodCodeMaintainerAttribute` implementa correttamente l'attributo che è descritti in precedenza in questa sezione. Si noti che la proprietà `DeveloperName` è richiesto dalla regola di progettazione [CA1019: definire funzioni di accesso per gli argomenti degli attributi](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) ed è incluso per motivi di completezza.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
@@ -57,4 +61,5 @@ ms.locfileid: "31901883"
  [CA1813: Evitare attributi non sealed](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Attributi](/dotnet/standard/design-guidelines/attributes)
+
+- [Attributi](/dotnet/standard/design-guidelines/attributes)

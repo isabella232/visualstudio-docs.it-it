@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f49c8a4da3ad746e5221bb689285c89d48e6e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04d08cc9d20759796c35f0145e519a27fdb12fdf
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918559"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547254"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Utilizzare solo API della versione di .NET Framework di destinazione
 |||
@@ -29,41 +29,43 @@ ms.locfileid: "31918559"
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
 |Category|Microsoft.Portability|
-|Modifica importante|Sostanziale - Quando viene generato con la firma di un membro visibile esternamente o un tipo.<br /><br /> Non sostanziale - Quando viene generato nel corpo di un metodo.|
+|Modifica importante|Rilievo - quando viene attivato in base alla firma di un membro visibile esternamente o un tipo.<br /><br /> Non sostanziale - Quando viene attivato nel corpo di un metodo.|
 
 ## <a name="cause"></a>Causa
- Un tipo o membro utilizza un membro o un tipo che è stato introdotto in un service pack che non è stato incluso con framework di destinazione del progetto.
+ Un membro o tipo sta utilizzando un membro o un tipo che è stato introdotto in un service pack che non è stata incluso con framework di destinazione del progetto.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Tipi e i nuovi membri sono stati inclusi in .NET Framework 2.0 Service Pack 1 e 2, .NET Framework 3.0 Service Pack 1 e 2 e .NET Framework 3.5 Service Pack 1. I progetti destinati alle versioni principali di .NET Framework involontariamente possono richiedere dipendenze in queste nuove API. Per evitare questa dipendenza, questa regola viene attivata in caso di utilizzo di nuovi membri e tipi che non sono stati inclusi per impostazione predefinita con il framework di destinazione del progetto.
+ Tipi e membri nuovi erano inclusi in .NET Framework 2.0 Service Pack 1 e 2, .NET Framework 3.0 Service Pack 1 e 2 e .NET Framework 3.5 Service Pack 1. Progetti destinati a versioni principali di .NET Framework involontariamente possono richiedere le dipendenze su queste nuove API. Per evitare questa dipendenza, questa regola viene attivata in caso di utilizzo di eventuali nuovi membri e tipi che non sono stati inclusi per impostazione predefinita con framework di destinazione del progetto.
 
- **Framework di destinazione e le dipendenze dei Service Pack**
+ **Framework di destinazione e le dipendenze di Service Pack**
 
 |||
 |-|-|
-|Quando il framework di destinazione è|Viene attivato in caso di utilizzo di membri introdotti in|
+|Quando è il framework di destinazione|Viene attivato in caso di utilizzo di membri introdotti in|
 |.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|
 |.NET Framework 3.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/D|
 
- Per modificare il framework di destinazione del progetto, vedere [come destinazione una versione di .NET Framework specifico](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Per modificare il framework di destinazione del progetto, vedere [come destinazione una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per rimuovere la dipendenza del service pack, rimuovere tutti gli utilizzi del nuovo membro o tipo. Se si tratta di una dipendenza intenzionale, eliminare l'avviso o disattivare la regola.
+ Per rimuovere la dipendenza dal service pack, rimuovere tutti gli utilizzi del nuovo membro o tipo. Se si tratta di una dipendenza intenzionale, eliminare l'avviso o disattivare questa regola.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola se non si tratta di una dipendenza intenzionale del service pack specificato. In questo caso, l'applicazione potrebbe non riuscire per l'esecuzione nei sistemi senza questo service pack installato. Eliminare l'avviso o disattivare questa regola se si tratta di una dipendenza intenzionale.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non escludere un avviso da questa regola se non si tratta di una dipendenza da intenzionale del service pack specificato. In questo caso, l'applicazione potrebbe non riuscire per l'esecuzione nei sistemi senza questo service pack installato. Eliminare l'avviso o disattivare questa regola se fosse una dipendenza intenzionale.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrata una classe che utilizza il tipo DateTimeOffset è disponibile solo in .NET 2.0 Service Pack 1. Questo esempio è necessario che .NET Framework 2.0 è stato selezionato nell'elenco a discesa Framework di destinazione nelle proprietà del progetto.
+ Nell'esempio seguente viene illustrata una classe che utilizza il tipo di valore DateTimeOffset che è disponibile solo in .NET 2.0 Service Pack 1. Questo esempio richiede che .NET Framework 2.0 è stato selezionato nell'elenco a discesa Framework di destinazione nelle proprietà del progetto.
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente consente di correggere la violazione descritta in precedenza sostituendo gli utilizzi del tipo DateTimeOffset con il tipo DateTime.
+ Nell'esempio seguente consente di correggere la violazione descritta in precedenza, sostituendo gli utilizzi del tipo di DateTimeOffset con il tipo DateTime.
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
 ## <a name="see-also"></a>Vedere anche
- [Avvisi di portabilità](../code-quality/portability-warnings.md) [destinato a una versione di specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+
+- [Portability Warnings](../code-quality/portability-warnings.md)
+- [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

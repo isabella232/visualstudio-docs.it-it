@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88708fdcb41a43d3e8b3f78b4e66decb7211a4b4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7d1595c6bdf7eafb5b86daba99e943aad3f02ac7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177422"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550648"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: Non contrassegnare componenti serviti con WebMethod
 
@@ -44,7 +44,7 @@ Un metodo in un tipo che eredita da <xref:System.EnterpriseServices.ServicedComp
 
 Per correggere una violazione di questa regola, rimuovere l'attributo di <xref:System.EnterpriseServices.ServicedComponent> (metodo).
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
 Non escludere un avviso da questa regola. Sono presenti scenari in cui la combinazione di questi elementi è corretta.
 

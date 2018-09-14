@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 799d0d04f8620c07be0583869eeba5dd760c7f70
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3322b968266ad6fdfe1be2e5bdaac73aad32b9c7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915539"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551912"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Non considerare i fiber come i thread
+
 |||
 |-|-|
 |TypeName|DoNotTreatFibersAsThreads|
@@ -32,13 +33,17 @@ ms.locfileid: "31915539"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Un thread gestito viene considerato come un thread Win32.
+
+Un thread gestito viene considerato come un thread Win32.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Si presuppone che un thread gestito è un thread Win32. È un fiber. Common language runtime (CLR) eseguirà i thread gestiti come fiber nel contesto del thread reali che appartengono a SQL. Questi thread possono essere condivisi tra AppDomains e database nel processo di SQL Server. Utilizzando gestito funzionerà archiviazione locale di thread, ma è possibile non utilizzare l'archiviazione locale di thread non gestito o si presuppone che il codice verrà eseguito nuovamente sul thread del sistema operativo corrente. Non modificare le impostazioni, ad esempio le impostazioni locali del thread. Non chiamare CreateCriticalSection o CreateMutex tramite P/Invoke perché richiedono che il thread che accede a un blocco deve anche uscirne. Poiché non sarà il caso quando si utilizzano i fiber, i mutex e le sezioni critiche Win32 dovrà essere inutili, in SQL. Potrebbe essere possibile utilizzare la maggior parte dello stato su un oggetto System. thread gestito. Ciò include l'archiviazione locale di thread gestiti e le impostazioni cultura dell'interfaccia utente correnti del thread. Tuttavia, per motivi legati al modello di programmazione, non sarà in grado di modificare le impostazioni cultura correnti di un thread quando si utilizza SQL. verrà applicata una nuova autorizzazione.
+
+Non presupporre che un thread gestito è un thread Win32. è un fiber. Common language runtime (CLR) i thread gestiti viene eseguito come fiber nel contesto del thread reali che appartengono a SQL. Questi thread possono essere condivisi tra domini applicazione e perfino i database nel processo di SQL Server. Usando managed works archiviazione locale di thread, ma non è possibile usare l'archiviazione locale di thread non gestito o si supponga che il codice verrà eseguito nuovamente sul thread del sistema operativo corrente. Non modificare le impostazioni, ad esempio le impostazioni locali del thread. Non chiamare CreateCriticalSection o CreateMutex tramite P/Invoke perché richiedono che il thread che accede a un blocco deve inoltre uscirne. Poiché il thread che accede a un blocco non consente di uscire un blocco quando si usano fiber, mutex e sezioni critiche Win32 sono inutili in SQL. È possibile usare la maggior parte dello stato in modo sicuro in un oggetto gestito <xref:System.Threading.Thread> oggetto, tra cui archivio locale dei thread gestiti e le impostazioni cultura dell'interfaccia utente correnti del thread. Per motivi legati al modello di programmazione, tuttavia, sarà possibile modificare le impostazioni cultura correnti di un thread quando si usa SQL. Questa limitazione verrà imposta una nuova autorizzazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Esaminare l'utilizzo di thread e modificare di conseguenza il codice.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non è necessario eliminare questa regola.
+Esaminare l'utilizzo di thread e modificare di conseguenza il codice.
+
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+
+Non eliminare questa regola.

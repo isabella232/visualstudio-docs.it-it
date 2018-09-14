@@ -14,16 +14,20 @@ ms.assetid: 60ca5e02-3c51-42dd-942b-4f950eecfa0f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f324eee1ae71f063ddd19d5a7f3d82af6f45c00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4baa4f12a3d4cb113dd99f1cd3e158742c1ed1a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897013"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545606"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Non utilizzare AutoDual ClassInterfaceType
+
 |||
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|
@@ -32,18 +36,18 @@ ms.locfileid: "31897013"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo visibile modello COM (Component Object) è contrassegnato con il <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo impostato sul `AutoDual` valore <xref:System.Runtime.InteropServices.ClassInterfaceType>.
+ Un tipo visibile modello COM (Component Object) è contrassegnato con il <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo impostato il `AutoDual` pari a <xref:System.Runtime.InteropServices.ClassInterfaceType>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I tipi che utilizzano un'interfaccia duale consentono l'associazione dei client a uno specifico layout di interfaccia. Eventuali modifiche apportate in una versione futura al layout del tipo o ai tipi base interromperanno l'associazione dei client COM all'interfaccia. Per impostazione predefinita, se il <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo viene omesso, viene utilizzata un'interfaccia solo dispatch.
+ I tipi che utilizzano un'interfaccia duale consentono l'associazione dei client a uno specifico layout di interfaccia. Eventuali modifiche apportate in una versione futura al layout del tipo o ai tipi base interromperanno l'associazione dei client COM all'interfaccia. Per impostazione predefinita, se il <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo viene omesso, viene usata un'interfaccia solo dispatch.
 
- Se non diversamente specificato, tutti i tipi non generici pubblici sono visibili a COM. tutti i tipi generici e non pubblici non sono visibili a COM.
+ Se non diversamente specificato, tutti i tipi generici pubblici sono visibili a COM. tutti i tipi generici e non pubblici non sono visibili a COM.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il valore della <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo la `None` valore <xref:System.Runtime.InteropServices.ClassInterfaceType> e definire in modo esplicito l'interfaccia.
+ Per correggere una violazione di questa regola, modificare il valore della <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> dell'attributo per il `None` pari a <xref:System.Runtime.InteropServices.ClassInterfaceType> e definire in modo esplicito l'interfaccia.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola a meno che non si è certi che il layout del tipo e i relativi tipi di base non verrà modificato in una versione futura.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non escludere un avviso da questa regola a meno che non è certo che il layout del tipo e i relativi tipi di base non verrà modificati in una versione futura.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene illustrata una classe che viola la regola e una nuova dichiarazione della classe per utilizzare un'interfaccia esplicita.
@@ -57,4 +61,6 @@ ms.locfileid: "31897013"
  [CA1412: Contrassegnare le interfacce ComSource come IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Qualificazione di tipi .NET per l'interoperabilità](/dotnet/framework/interop/qualifying-net-types-for-interoperation) [interoperabilità con codice non gestito](/dotnet/framework/interop/index)
+
+- [Qualificazione di tipi .NET per l'interoperabilità](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+- [Interoperabilità con codice non gestito](/dotnet/framework/interop/index)

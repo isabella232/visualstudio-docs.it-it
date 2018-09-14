@@ -14,16 +14,21 @@ ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a532207bf8e002dbde92bb85115c35b4de954c48
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8d124045165223358015c7cd7ae30bb3355b8b2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919039"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548764"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitare complessità eccessiva
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
@@ -32,33 +37,33 @@ ms.locfileid: "31919039"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Un metodo presenta una complessità ciclomatica eccessiva.
+ Un metodo presenta una complessità ciclomatica eccessivo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- *Complessità ciclomatica* misura il numero di percorsi linearmente indipendenti tramite il metodo, determinato dal numero e dalla complessità di rami condizionali. In genere, una complessità ciclomatica bassa indica un metodo che è facile da comprendere, testare e gestire. La complessità ciclomatica viene calcolata da un grafico del flusso di controllo del metodo e come indicato di seguito:
+ *Complessità ciclomatica* misura il numero di percorsi linearmente indipendenti tramite il metodo, che è determinato dal numero e dalla complessità di rami condizionale. Una complessità ciclomatica basso indica in genere un metodo che è facile da comprendere, testare e gestire. La complessità ciclomatica viene calcolata da un grafico del flusso di controllo del metodo e come indicato di seguito:
 
- complessità ciclomatica = numero di vertici - il numero di nodi + 1
+ complessità ciclomatica = numero di vertici - 1 + il numero di nodi
 
- in un nodo rappresenta un punto di ramo logico e un bordo rappresenta una riga tra i nodi.
+ in cui un nodo rappresenta un punto di branch per la logica e una rete perimetrale rappresenta una linea tra i nodi.
 
- La regola segnala una violazione quando la complessità ciclomatica è superiore a 25.
+ La regola genera una violazione quando la complessità ciclomatica è più di 25.
 
- Altre informazioni sulla metrica del codice in [misurazione della complessità e la manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+ Altre informazioni sulla metrica del codice in [misurazione della complessità e manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, eseguire il refactoring del metodo per ridurre la complessità ciclomatica.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se non è possibile ridurre facilmente la complessità e il metodo è facile da comprendere, testare e gestire. In particolare, un metodo che contiene una grande `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) istruzione è un candidato per l'esclusione. Il rischio di destabilizzare il codice di base del ciclo di sviluppo o di introdurre una modifica imprevista nel comportamento di runtime nel codice fornito in precedenza potrà superano i vantaggi di manutenibilità dal refactoring del codice.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un avviso da questa regola se non è possibile ridurre facilmente la complessità e il metodo è facile da comprendere, testare e gestire. In particolare, un metodo che contiene una grande `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) istruzione sia un candidato per l'esclusione. Il rischio di destabilizzare il ritardo del ciclo di sviluppo o di introdurre modifiche impreviste del comportamento di runtime nel codice fornito in precedenza potrebbe superare i vantaggi di manutenibilità di refactoring del codice base di codice.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>La modalità di calcolo complessità ciclomatica
  La complessità ciclomatica viene calcolata aggiungendo 1 al seguente:
 
--   Numero di rami (ad esempio `if`, `while`, e `do`)
+- Numero di rami (ad esempio `if`, `while`, e `do`)
 
--   Numero di `case` le istruzioni in un `switch`
+- Numero di `case` le istruzioni in un `switch`
 
- Gli esempi seguenti mostrano i metodi che presentano vari complessità ciclomatica.
+ Gli esempi seguenti illustrano i metodi che hanno complessità ciclomatica diversi.
 
 ## <a name="example"></a>Esempio
  **Complessità ciclomatica di 1**

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d67c99a9c2b30461170b7e8b5090e0c08241ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917869"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551285"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: I finalizzatori devono essere protetti
+
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
@@ -35,16 +36,16 @@ ms.locfileid: "31917869"
  Un tipo pubblico implementa un finalizzatore che non specifica della famiglia di accesso (protetto).
 
 ## <a name="rule-description"></a>Descrizione della regola
- I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori di c#, Visual Basic e Visual C++.
+ I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori c#, Visual Basic e Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il finalizzatore per essere accessibili a famiglia.
+ Per correggere una violazione di questa regola, impostare il finalizzatore per essere accessibile tramite la famiglia.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Questa regola non può essere violata in qualsiasi linguaggio .NET di alto livello; può essere violata se si sta scrivendo Microsoft Intermediate Language.
+ Questa regola non può essere violata in qualsiasi linguaggio .NET ad alto livello. può essere violata se si sta scrivendo Microsoft Intermediate Language.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -80,4 +81,5 @@ ms.locfileid: "31917869"
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- [Criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

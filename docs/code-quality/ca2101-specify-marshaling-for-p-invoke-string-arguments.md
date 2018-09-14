@@ -1,5 +1,5 @@
 ---
-title: 'CA2101: Specificare il marshalling per gli argomenti di stringa P-Invoke'
+title: 'CA2101: Specificare il marshalling per argomenti di stringa P-Invoke'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc32aedf38430ab3ce9657f3a7e4d8d9e416fa57
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b560f2be6cad77bd4381d9ca9968c42c37b462ab
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918857"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548343"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Specificare il marshalling per gli argomenti di stringa P/Invoke
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31918857"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Platform invoke membro consente chiamanti parzialmente attendibili, presenta un parametro di stringa e non esegue il marshalling della stringa.
+ Un platform invoke membro consente chiamanti parzialmente attendibili, ha un parametro di stringa e non esegue in modo esplicito il marshalling della stringa.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando si converte da Unicode ad ANSI, è possibile che non tutti i caratteri Unicode possono essere rappresentati in una tabella codici ANSI specifica. *Fallback con mapping* tenta di risolvere il problema tramite la sostituzione di un carattere per il carattere che non può essere rappresentato. L'utilizzo di questa funzionalità può causare una potenziale vulnerabilità di sicurezza, perché non è possibile controllare il carattere che viene scelto. Ad esempio, il codice dannoso potrebbe intenzionalmente creare una stringa Unicode che contiene caratteri che non si trovano in una particolare tabella codici, che vengono convertiti in caratteri speciali del file system, ad esempio '... ' o '/'. Si noti inoltre che i controlli di sicurezza per i caratteri speciali vengono frequentemente eseguiti prima che la stringa viene convertita in formato ANSI.
+ Quando si converte da Unicode ad ANSI, è possibile che non tutti i caratteri Unicode possono essere rappresentati in una tabella codici ANSI specifica. *Mapping più appropriato* tenta di risolvere questo problema sostituendo un carattere per carattere che non può essere rappresentato. L'uso di questa funzionalità può causare una potenziale vulnerabilità di sicurezza perché non è possibile controllare il carattere che viene scelto. Ad esempio codice dannoso intenzionalmente è stato possibile creare una stringa Unicode che contiene i caratteri che non si trovano in una tabella codici specifico, che vengono convertiti in caratteri speciali del file system, ad esempio '.. ' o '/'. Si noti anche che i controlli di sicurezza per i caratteri speciali spesso si verificano prima che la stringa viene convertita in formato ANSI.
 
- Il mapping più appropriato è il valore predefinito per la conversione non gestita, WChar a MByte. A meno che non si disabilita in modo esplicito il mapping più appropriato, il codice potrebbe contenere una vulnerabilità della protezione a causa di questo problema.
+ Mapping più appropriato è quello predefinito per la conversione non gestito, WChar a MB liberi per. A meno che non si disabiliti esplicitamente il mapping più appropriato, il codice potrebbe contenere una vulnerabilità della protezione a causa di questo problema.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, eseguire il marshalling esplicito i tipi di dati stringa.
+ Per correggere una violazione di questa regola, in modo esplicito il marshalling dei tipi dati stringa.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo che viola la regola e quindi viene illustrato come correggere la violazione.
+ Nell'esempio seguente viene illustrato un metodo che viola questa regola e quindi viene illustrato come correggere la violazione.
 
  [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

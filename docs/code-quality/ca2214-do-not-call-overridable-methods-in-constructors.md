@@ -14,16 +14,20 @@ ms.assetid: 335b57ca-a6e8-41b4-a20e-57ee172c97c3
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b5ebcd4164f9db28d4cb1f150ee3a4bb21b21cde
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ddc827e77b37de6490cb4bee081748f317865b57
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920111"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549560"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Non chiamare metodi sottoponibili a override nei costruttori
+
 |||
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
@@ -32,25 +36,32 @@ ms.locfileid: "31920111"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Il costruttore di un tipo non sealed chiama un metodo virtuale definito nella relativa classe.
+
+Il costruttore di un tipo unsealed chiama un metodo virtuale definito nella relativa classe.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando viene chiamato un metodo virtuale, il tipo effettivo che esegue il metodo non è selezionato in fase di esecuzione. Quando un costruttore chiama un metodo virtuale, è possibile che il costruttore per l'istanza che richiama il metodo non è stata eseguita.
+
+Quando viene chiamato un metodo virtuale, il tipo effettivo che esegue il metodo non è selezionato fino alla fase di esecuzione. Quando un costruttore chiama un metodo virtuale, è possibile che il costruttore per l'istanza che richiama il metodo non è stata eseguita.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, non chiamare metodi virtuali da un tipo all'interno di costruttori del tipo.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola. Il costruttore deve essere riprogettato per eliminare la chiamata al metodo virtuale.
+Per correggere una violazione di questa regola, non chiamare metodi virtuali del tipo dall'interno di costruttori del tipo.
+
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+
+Non escludere un avviso da questa regola. Il costruttore deve essere riprogettato per eliminare la chiamata al metodo virtuale.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato l'effetto della violazione di questa regola. L'applicazione di test crea un'istanza di `DerivedType`, che comporta la relativa classe base (`BadlyConstructedType`) esecuzione del costruttore. `BadlyConstructedType`del costruttore chiama in modo non corretto del metodo virtuale `DoSomething`. Come illustrato nell'output, `DerivedType.DoSomething()` viene eseguito prima del `DerivedType`dell'esecuzione del costruttore.
 
- [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
- [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]
+L'esempio seguente illustra l'effetto della violazione di questa regola. L'applicazione di test viene creata un'istanza di `DerivedType`, in modo che la classe di base (`BadlyConstructedType`) costruttore per l'esecuzione. `BadlyConstructedType`del costruttore chiama in modo non corretto del metodo virtuale `DoSomething`. Come illustrato nell'output, `DerivedType.DoSomething()` viene eseguito prima del `DerivedType`dell'esecuzione del costruttore.
 
- Questo esempio produce il seguente output:
+[!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
+[!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]
 
- **Chiamare il costruttore basa. ** 
- **DoSomething derivato viene chiamato - inizializzato? Non**
-**chiamata derivato ctor.**
+Questo esempio produce il seguente output:
+
+```txt
+Calling base ctor.
+Derived DoSomething is called - initialized ? No
+Calling derived ctor.
+```

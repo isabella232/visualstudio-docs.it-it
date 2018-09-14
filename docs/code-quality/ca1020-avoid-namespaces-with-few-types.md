@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d95e626349296f9b6c857263a78ce67751b471b5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fc7a691cb5c5626ea096046e277ec3d1655db0b6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178930"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546220"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Evitare l'utilizzo di spazi dei nomi con un numero ridotto di tipi
 
@@ -47,6 +47,6 @@ Assicurarsi che ogni spazio dei nomi disponga di un'organizzazione logica e che 
 
 Per correggere una violazione di questa regola, provare a combinare gli spazi dei nomi che contengono alcuni tipi in un unico spazio dei nomi.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
 È possibile eliminare un avviso da questa regola quando lo spazio dei nomi non contiene tipi che vengono usati con i tipi di spazi dei nomi.

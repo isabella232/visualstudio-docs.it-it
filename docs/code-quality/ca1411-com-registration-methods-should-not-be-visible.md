@@ -14,16 +14,20 @@ ms.assetid: a59f96f1-1f38-4596-b656-947df5c55311
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e7407609e587049965cf513a16c9b03d1e7fa90
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0cd599ee67182084e7f2fb663d343281b0a8b079
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916952"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551714"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: I metodi di registrazione COM non devono essere visibili
+
 |||
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
@@ -32,19 +36,20 @@ ms.locfileid: "31916952"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo contrassegnato con il <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attributo è visibile esternamente.
+
+Un metodo contrassegnato con il <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o il <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attributo è visibile esternamente.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando un assembly viene registrato con modello COM (Component Object), vengono aggiunte voci al Registro di sistema per ogni tipo nell'assembly visibile a COM. I metodi contrassegnati con il <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> e <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> gli attributi vengono chiamati durante i processi di registrazione e annullamento della registrazione, rispettivamente, per eseguire il codice utente specifico per la registrazione/annullamento della registrazione di questi tipi. Questo codice non deve essere chiamato di fuori di questi processi.
+ Quando un assembly viene registrato con modello COM (Component Object), vengono aggiunte voci nel Registro di sistema per ogni tipo visibile a COM nell'assembly. I metodi contrassegnati con il <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> e <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> attributi vengono chiamati durante i processi di registrazione e annullamento della registrazione, rispettivamente, per eseguire il codice utente specifico per la registrazione/annullamento della registrazione di questi tipi. Questo codice non deve essere chiamato all'esterno di questi processi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare l'accessibilità del metodo `private` o `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Per correggere una violazione di questa regola, modificare l'accessibilità del metodo `private` oppure `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente mostra due metodi che violano la regola.
+ L'esempio seguente illustra due metodi che violano la regola.
 
  [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
  [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
@@ -53,4 +58,7 @@ ms.locfileid: "31916952"
  [CA1410: I metodi di registrazione COM devono corrispondere](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [Registrazione di assembly con COM](/dotnet/framework/interop/registering-assemblies-with-com) [Regasm.exe (strumento di registrazione Assembly)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)
+
+- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
+- [Registrazione di assembly presso COM](/dotnet/framework/interop/registering-assemblies-with-com)
+- [Regasm.exe (strumento di registrazione di assembly)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

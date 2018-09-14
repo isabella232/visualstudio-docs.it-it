@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d295ef0a0cc2723634ad6f32c9bb91c4f7524b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8dac5acc0b7c7fff02862853bfd996362f80d1cc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919318"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547500"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: I tipi APTCA devono estendere solo tipi di base APTCA
 
@@ -34,57 +34,57 @@ ms.locfileid: "31919318"
 
 ## <a name="cause"></a>Causa
 
-Un tipo pubblico o protetto in un assembly con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attributo eredita dal tipo dichiarato in un assembly che non dispone dell'attributo.
+Un tipo pubblico o protetto in un assembly con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attributo eredita da un tipo dichiarato in un assembly che non dispone dell'attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Per impostazione predefinita, pubblici o protetti tipi negli assembly con nomi sicuri sono protetti in modo implicito da un [InheritanceDemand](xref:System.Security.Permissions.SecurityAction#System_Security_Permissions_SecurityAction_InheritanceDemand) per l'attendibilità totale. Gli assembly con nome sicuro contrassegnati con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attributo (APTCA) non dispone di questo tipo di protezione. L'attributo disabilita la richiesta di ereditarietà. Tipi esposti dichiarati in un assembly senza una richiesta di ereditarietà sono ereditabili dai tipi che non dispongono di attendibilità totale.
+Per impostazione predefinita, pubblici o protetti tipi negli assembly con nomi sicuri sono protetti in modo implicito da un [InheritanceDemand](xref:System.Security.Permissions.SecurityAction#System_Security_Permissions_SecurityAction_InheritanceDemand) per un'attendibilità totale. Assembly con nome sicuro è contrassegnato con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attributo (APTCA) non è questo tipo di protezione. L'attributo disabilita la richiesta di ereditarietà. I tipi esposti dichiarati in un assembly senza una richiesta di ereditarietà sono ereditabili dai tipi che non dispongono di attendibilità totale.
 
-Quando l'attributo APTCA è presente in un assembly completamente attendibile e un tipo nell'assembly eredita da un tipo che non consente chiamanti parzialmente attendibili, è possibile una violazione della sicurezza. Se due tipi `T1` e `T2` soddisfano le condizioni seguenti, i chiamanti malintenzionati possono utilizzare il tipo `T1` per ignorare la richiesta di ereditarietà di attendibilità totale implicita che protegge `T2`:
+Quando l'attributo APTCA è presente in un assembly completamente attendibile e un tipo nell'assembly eredita da un tipo che non consente chiamanti parzialmente attendibili, è possibile una violazione della sicurezza. Se due tipi `T1` e `T2` soddisfa le condizioni seguenti, i chiamanti malintenzionati possono usare il tipo `T1` per ignorare la richiesta di ereditarietà implicita con attendibilità totale che protegge `T2`:
 
-- `T1` è un tipo pubblico dichiarato in un assembly completamente attendibile con l'attributo APTCA.
+- `T1` è un tipo pubblico dichiarato in un assembly completamente attendibile che ha l'attributo APTCA.
 
-- `T1` eredita da un tipo `T2` all'esterno del relativo assembly.
+- `T1` eredita da un tipo `T2` esterno dell'assembly.
 
-- `T2`dell'assembly non ha l'attributo APTCA e, pertanto, non può essere ereditato dai tipi in assembly parzialmente attendibili.
+- `T2`dell'assembly non ha l'attributo APTCA e, pertanto, non può essere ereditato dai tipi negli assembly parzialmente attendibile.
 
-Un tipo parzialmente attendibile `X` può ereditare da `T1`, che fornisce accesso a membri ereditati dichiarati `T2`. Poiché `T2` non hanno l'attributo APTCA, il relativo tipo derivato immediato (`T1`) deve soddisfare una richiesta di ereditarietà per l'attendibilità totale; `T1` sia totalmente attendibile e pertanto soddisfa questo controllo. Il rischio di sicurezza è perché `X` contribuisce a soddisfare la richiesta di ereditarietà che protegge `T2` dalle sottoclassi non attendibili. Per questo motivo, non tipi con l'attributo APTCA devono estendere tipi che non dispone dell'attributo.
+Un tipo parzialmente attendibile `X` possono ereditare `T1`, che fornisce accesso ai membri ereditati dichiarati in `T2`. In quanto `T2` non ha l'attributo APTCA, il relativo tipo derivato immediata (`T1`) deve soddisfare una richiesta di ereditarietà per l'attendibilità totale; `T1` sia totalmente attendibile e pertanto soddisfa questo controllo. Il rischio di sicurezza, infatti `X` contribuisce a soddisfare la richiesta di ereditarietà che protegge `T2` dalle sottoclassi non attendibili. Per questo motivo, i tipi con l'attributo APTCA non devono estendere tipi che non dispongono dell'attributo.
 
-Un altro problema di sicurezza e magari più comuni, che è il tipo derivato (`T1`) può, a causa di un errore del programmatore, esporre i membri protetti dal tipo che richiede attendibilità totale (`T2`). Quando si verifica questa esposizione, i chiamanti non attendibili accedere a informazioni che devono essere disponibili solo per tipi completamente attendibili.
+Un altro problema di sicurezza e magari più comuni, che è il tipo derivato (`T1`) può, a causa di errori del programmatore, esporre i membri protetti dal tipo che richiede attendibilità totale (`T2`). Quando si verifica questo rischio, i chiamanti non attendibili accedere a informazioni che devono essere disponibili solo ai tipi completamente attendibili.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Se il tipo restituito dalla violazione di un assembly che non richiede l'attributo APTCA, rimuoverlo.
+Se il tipo segnalato dalla violazione è in un assembly che non richiede l'attributo APTCA, rimuoverlo.
 
-Se l'attributo APTCA è necessario, aggiungere il tipo di una richiesta di ereditarietà per l'attendibilità totale. La richiesta di ereditarietà protegge contro eredità da tipi non attendibili.
+Se l'attributo APTCA è necessario, aggiungere una richiesta di ereditarietà per l'attendibilità totale per il tipo. La richiesta di ereditarietà protezione dall'ereditarietà da tipi non attendibili.
 
-È possibile correggere una violazione aggiungendo l'attributo APTCA agli assembly dei tipi di base segnalati dalla violazione. Non eseguire questa operazione senza prima eseguire una revisione di sicurezza con utilizzo intensivo di tutto il codice negli assembly e tutto il codice che dipende dagli assembly.
+È possibile correggere una violazione, aggiungere l'attributo APTCA agli assembly dei tipi di base segnalati dalla violazione. Non eseguire questa operazione senza prima eseguire una verifica di sicurezza con utilizzo intensivo di tutto il codice negli assembly e tutto il codice che dipende dagli assembly.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
-Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che i membri protetti esposti dal tipo non consentano direttamente o indirettamente a chiamanti non attendibili di accedere a informazioni riservate, operazioni o risorse che possono essere utilizzate in modo distruttivo.
+Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che i membri protetti esposti dal tipo non direttamente o indirettamente consentono ai chiamanti non attendibili di accedere a informazioni riservate, operazioni o risorse che possono essere usate in modo distruttivo.
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente usa due assembly e un'applicazione di test per illustrare la vulnerabilità di sicurezza rilevata da questa regola. Il primo assembly non ha l'attributo APTCA e non deve essere ereditabile dai tipi parzialmente attendibili (rappresentato da `T2` nella spiegazione precedente).
+L'esempio seguente usa due assembly e un'applicazione di test per illustrare la vulnerabilità di sicurezza rilevata da questa regola. Il primo assembly non ha l'attributo APTCA e non deve essere ereditato dai tipi parzialmente attendibili (rappresentato da `T2` nella precedente discussione riguardo).
 
 [!code-csharp[FxCop.Security.NoAptcaInherit#1](../code-quality/codesnippet/CSharp/ca2117-aptca-types-should-only-extend-aptca-base-types_1.cs)]
 
-Il secondo assembly, rappresentato da `T1` nella discussione precedente, è completamente attendibile e consente ai chiamanti parzialmente attendibili.
+Il secondo assembly, rappresentato da `T1` nella precedente discussione è completamente attendibile e consente ai chiamanti parzialmente attendibili.
 
 [!code-csharp[FxCop.Security.YesAptcaInherit#1](../code-quality/codesnippet/CSharp/ca2117-aptca-types-should-only-extend-aptca-base-types_2.cs)]
 
-Il tipo di test, rappresentato da `X` nella discussione precedente, è in un assembly parzialmente attendibile.
+Il tipo di test, rappresentato da `X` nella discussione precedente è in un assembly parzialmente attendibile.
 
 [!code-csharp[FxCop.Security.TestAptcaInherit#1](../code-quality/codesnippet/CSharp/ca2117-aptca-types-should-only-extend-aptca-base-types_3.cs)]
 
 Questo esempio produce il seguente output:
 
-**Soddisfino in glen luoghi protetti 2/22/2003 12:00:00 AM!**
-
-**Da Test: Sunny Prato**
-
-**Soddisfino in Prato sunny 2/22/2003 12:00:00 AM!**
+```txt
+Meet at the shady glen 2/22/2003 12:00:00 AM!
+From Test: sunny meadow
+Meet at the sunny meadow 2/22/2003 12:00:00 AM!
+```
 
 ## <a name="related-rules"></a>Regole correlate
 

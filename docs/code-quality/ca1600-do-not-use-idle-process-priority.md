@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcac11312b15049c743d596914b06819000801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915962"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550505"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Non impostare la priorità del processo su Inattivo
 |||
@@ -35,10 +35,10 @@ ms.locfileid: "31915962"
  Questa regola si verifica quando i processi sono impostati su `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Non impostare la priorità del processo su Inattivo. I processi con `System.Diagnostics.ProcessPriorityClass.Idle` . Idle occupano la CPU diversamente sarebbe inattiva e blocca quindi la modalità standby.
+ Non impostare la priorità del processo su Inattivo. I processi con `System.Diagnostics.ProcessPriorityClass.Idle` occupano la CPU diversamente sarebbe inattiva e blocca quindi la modalità standby.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Impostare i processi su `ProcessPriorityClass.BelowNormal`.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Questa regola deve essere eliminata solo quando è necessaria una priorità di processo su inattivo e le considerazioni sulla mobilità possono essere ignorati.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Questa regola deve essere eliminata solo quando è necessaria una priorità processo inattivo e le considerazioni sulla mobilità può essere ignorati in modo sicuro.

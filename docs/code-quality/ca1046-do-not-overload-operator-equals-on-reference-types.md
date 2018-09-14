@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6809534d14b58d60759133e972b5220fcfd58d61
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3f0aeb519fdc22d3fb68812d24979c7aa6c23f85
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899750"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551707"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Non eseguire l'overload dell'operatore "uguale a" per i tipi di riferimento
+
 |||
 |-|-|
 |TypeName|DoNotOverrideOperatorEqualsOnReferenceTypes|
@@ -32,7 +33,7 @@ ms.locfileid: "31899750"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo di riferimento pubblico o annidato overload dell'operatore di uguaglianza.
+ Un tipo di riferimento pubblica pubblica o annidata esegue l'overload dell'operatore di uguaglianza.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Per i tipi di riferimento, l'implementazione predefinita dell'operatore di uguaglianza è quasi sempre corretta. Per impostazione predefinita, i due riferimenti sono uguali solo se puntano allo stesso oggetto.
@@ -40,8 +41,8 @@ ms.locfileid: "31899750"
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, rimuovere l'implementazione dell'operatore di uguaglianza.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola quando il tipo di riferimento si comporta come un tipo di valore incorporato. Se è appropriato per eseguire l'addizione o sottrazione nelle istanze del tipo, è probabilmente corretto implementare l'operatore di uguaglianza e di escludere la violazione.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un avviso da questa regola quando il tipo di riferimento si comporta come un tipo di valore predefinito. Se è significativo per eseguire operazioni di addizione o sottrazione nelle istanze del tipo, è probabilmente corretta implementare l'operatore di uguaglianza e sopprimere la violazione.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene illustrato il comportamento predefinito quando si confrontano due riferimenti.
@@ -49,18 +50,25 @@ ms.locfileid: "31899750"
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
 
 ## <a name="example"></a>Esempio
- La seguente applicazione confronta alcuni riferimenti.
 
- [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
+La seguente applicazione confronta alcuni riferimenti.
 
- Questo esempio produce il seguente output:
+[!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
 
- **un = nuovo (2,2) e b = nuovo (2,2) sono uguali. Non**
-**c e un oggetto sono uguali. Sì**
-**b e a sono = =? Non**
-**c e sono = =? Sì**
+Questo esempio produce il seguente output:
+
+```txt
+a = new (2,2) and b = new (2,2) are equal? No
+c and a are equal? Yes
+b and a are == ? No
+c and a are == ? Yes
+```
+
 ## <a name="related-rules"></a>Regole correlate
- [CA1013: Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+
+[CA1013: Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Object.Equals%2A?displayProperty=fullName> [Operatori di uguaglianza](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- [Operatori di uguaglianza](/dotnet/standard/design-guidelines/equality-operators)

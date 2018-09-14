@@ -14,16 +14,20 @@ ms.assetid: a762ea2f-5285-4f73-bfb9-9eb10aea4290
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eefb3fdb207ecacca4998168509e8c5b9b1a2f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: efaac5fc5b5f8784d204c31e537a5279a81e2699
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898837"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548308"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: I tipi di base del tipo visibile a COM devono essere visibili a COM
+
 |||
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
@@ -35,12 +39,12 @@ ms.locfileid: "31898837"
  Un tipo visibile modello COM (Component Object) deriva da un tipo che non è visibile a COM.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando un tipo visibile a COM aggiunge membri in una nuova versione, è necessario rispettare severe linee guida per evitare di interrompere l'associazione alla versione corrente dei client COM. Un tipo che non è visibile a COM presuppone che è necessario seguire queste regole di controllo delle versioni COM durante l'aggiunta di nuovi membri. Tuttavia, se visibile a COM un tipo deriva dal tipo invisibile a COM ed espone un'interfaccia di classe <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ClassInterfaceType> (impostazione predefinita), tutti i membri pubblici del tipo di base (a meno che non siano specificatamente contrassegnati come COM invisibile, che sarebbe ridondante) vengono esposti a COM. Se il tipo di base aggiunge nuovi membri in una versione successiva, tutti i client COM che associano l'interfaccia della classe del tipo derivato potrebbero interrompere il funzionamento. Tipi visibili a COM devono derivare solo da tipi visibili a COM per ridurre il rischio di interrompere i client COM.
+ Quando un tipo visibile a COM consente di aggiungere membri in una nuova versione, deve attenersi alle indicazioni rigorose per evitare di interrompere l'associazione alla versione corrente dei client COM. Un tipo che non è visibile a COM si presuppone che non è necessario rispettare queste regole di controllo delle versioni di COM durante l'aggiunta di nuovi membri. Tuttavia, se un visibili a COM tipo deriva dal tipo visibile a COM ed espone un'interfaccia di classe <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ClassInterfaceType> (impostazione predefinita), tutti i membri pubblici del tipo di base (a meno che non siano specificamente contrassegnati come COM invisibili, che potrebbero essere ridondanti) sono esposte a COM. Se il tipo di base consente di aggiungere nuovi membri in una versione successiva, potrebbero interrompere qualsiasi client COM che sono associati all'interfaccia di classe del tipo derivato. Tipi visibili a COM devono derivare solo da tipi visibili a COM per ridurre il rischio di interrompere i client COM.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rendere invisibili i tipi visibili a COM di base o il tipo derivato COM.
+ Per correggere una violazione di questa regola, rendere invisibile il tipo derivato, COM o i tipi di base visibile a COM.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
@@ -50,4 +54,6 @@ ms.locfileid: "31898837"
  [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Interoperabilità con codice non gestito](/dotnet/framework/interop/index)
+
+- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>
+- [Interoperabilità con codice non gestito](/dotnet/framework/interop/index)

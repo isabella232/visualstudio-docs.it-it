@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c43cfc1a448d9073a8bbe493d75c7c117f57d737
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8d17c2981e4dabe82817aeedcf4fcab93e970b47
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915556"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548894"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Non esporre in modo indiretto metodi con richieste di collegamento
+
 |||
 |-|-|
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
@@ -32,29 +33,35 @@ ms.locfileid: "31915556"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un membro pubblico o protetto presenta un [le richieste di collegamento](/dotnet/framework/misc/link-demands) e viene chiamato da un membro che non esegue alcun controllo della sicurezza.
+ Un membro pubblico o protetto ha un [richieste di collegamento](/dotnet/framework/misc/link-demands) e viene chiamato da un membro che non esegue controlli di sicurezza.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Una richiesta di collegamento controlla esclusivamente le autorizzazioni del chiamante immediato. Se un membro `X` non rende richieste di sicurezza dei relativi chiamanti e chiamate di codice protetto da una richiesta di collegamento, un chiamante senza l'autorizzazione necessaria è possibile utilizzare `X` per accedere al membro protetto.
+ Una richiesta di collegamento controlla esclusivamente le autorizzazioni del chiamante immediato. Se un membro `X` non effettua richieste alcuna sicurezza dei relativi chiamanti e chiamate di codice protetto da una richiesta di collegamento, un chiamante senza l'autorizzazione necessaria possa usare `X` per accedere al membro protetto.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Aggiungere una protezione [dati e modellazione](/dotnet/framework/data/index) o richiesta di collegamento per il membro in modo che non fornisca accesso non protetto non è più al membro protetto dalla richiesta di collegamento.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che il codice non concede i chiamanti accesso a operazioni o risorse che possono essere utilizzate in modo distruttivo.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che il codice non concede i chiamanti accesso a operazioni o risorse che possono essere usate in modo distruttivo.
 
-## <a name="example"></a>Esempio
- Gli esempi seguenti mostrano una libreria che viola la regola e un'applicazione che illustra i punti deboli della libreria. La libreria di esempio fornisce due metodi che insieme violano la regola. Il `EnvironmentSetting` metodo è protetto da una richiesta di collegamento per l'accesso illimitato alle variabili di ambiente. Il `DomainInformation` metodo non effettua protezione richieste dai relativi chiamanti prima di chiamare `EnvironmentSetting`.
+## <a name="example-1"></a>Esempio 1
+ Gli esempi seguenti mostrano una libreria che viola la regola e un'applicazione che illustra i punti deboli della libreria. La libreria di esempio fornisce due metodi che insieme violano la regola. Il `EnvironmentSetting` metodo è protetto da una richiesta di collegamento per l'accesso illimitato alle variabili di ambiente. Il `DomainInformation` metodo non rende SecurityDemand dei chiamanti prima di chiamare `EnvironmentSetting`.
 
  [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
  La seguente applicazione chiama il membro della libreria non protetto.
 
  [!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
 
- Questo esempio produce il seguente output:
+Questo esempio produce il seguente output:
 
- **Valore da membro non protetto: Seattle**
+```txt
+*Value from unsecured member: seattle.corp.contoso.com
+```
+
 ## <a name="see-also"></a>Vedere anche
- [Linee guida di codice sicuro](/dotnet/standard/security/secure-coding-guidelines) [le richieste di collegamento](/dotnet/framework/misc/link-demands) [dati e modellazione](/dotnet/framework/data/index)
+
+- [Linee guida per la generazione di codice sicuro](/dotnet/standard/security/secure-coding-guidelines)
+- [Richieste di collegamento](/dotnet/framework/misc/link-demands)
+- [Dati e modellazione](/dotnet/framework/data/index)

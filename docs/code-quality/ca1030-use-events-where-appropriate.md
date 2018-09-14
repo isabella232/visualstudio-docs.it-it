@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9349321319b8bab81a2d9e7b52e7f2d25e87f796
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d1b0bac434ad7a182dc56ac08173646068623bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900060"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547548"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Utilizzare eventi dove appropriato
 |||
@@ -32,23 +32,23 @@ ms.locfileid: "31900060"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Nome di un metodo pubblico, protetto o privato inizia con uno dei valori seguenti:
+ Nome di un metodo pubblico, protetto o privato inizia con uno dei seguenti:
 
--   Componente aggiuntivo
+- Componente aggiuntivo
 
--   RemoveOn
+- RemoveOn
 
--   Incendio
+- Incendi
 
--   Generare
+- Raise
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola rileva i metodi che presentano nomi comunemente utilizzati per gli eventi. Eventi seguono il modello di progettazione osservatore o pubblicazione-sottoscrizione; vengono utilizzati quando una modifica dello stato in un oggetto deve essere comunicata ad altri oggetti. Se un metodo viene chiamato in risposta a una modifica dello stato chiaramente definita, il metodo deve essere richiamato da un gestore eventi. Gli oggetti che chiamano il metodo devono generare eventi anziché chiamare direttamente il metodo.
+ Questa regola rileva i metodi che presentano nomi comunemente utilizzati per gli eventi. Gli eventi di seguono lo schema progettuale osservatore o Publish-Subscribe; vengono utilizzati quando una modifica dello stato in un oggetto deve essere comunicata ad altri oggetti. Se un metodo viene chiamato in risposta a una modifica dello stato chiaramente definita, il metodo deve essere richiamato da un gestore eventi. Gli oggetti che chiamano il metodo devono generare eventi anziché chiamare direttamente il metodo.
 
- Alcuni esempi comuni di eventi si trovano in applicazioni con interfaccia utente in cui un'azione dell'utente, ad esempio un pulsante fa sì che un segmento di codice da eseguire. Il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modello di eventi non è limitato alle interfacce utente, deve essere utilizzata ovunque è necessario comunicare lo stato passa a uno o più oggetti.
+ Alcuni esempi comuni di eventi si trovano in applicazioni con interfaccia utente in cui un'azione dell'utente, ad esempio facendo clic su un pulsante fa sì che un segmento di codice da eseguire. Il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modello di eventi non è limitato alle interfacce utente, deve essere usata ovunque è necessario comunicare lo stato passa a uno o più oggetti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Se il metodo viene chiamato quando cambia lo stato di un oggetto, è consigliabile valutare la modifica della progettazione di utilizzare il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modello di eventi.
+ Se il metodo viene chiamato quando cambia lo stato di un oggetto, è consigliabile modificare la progettazione per utilizzare il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modello di eventi.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere un avviso da questa regola se il metodo non funziona con il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modello di eventi.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Eliminare un avviso da questa regola se il metodo non funziona con il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modello di eventi.

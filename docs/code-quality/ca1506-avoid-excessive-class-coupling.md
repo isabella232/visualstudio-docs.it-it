@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a613ecfd339399b161292a75f7fb2abeb972d986
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 57c23ea9c6afb27ee89886936fff690a4285f5c0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916677"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549911"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitare un numero eccessivo di accoppiamenti di classi
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
@@ -37,13 +38,15 @@ ms.locfileid: "31916677"
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo.
 
- Tipi e metodi che presentano un elevato livello di accoppiamenti di classi possono essere difficili da gestire. È consigliabile disporre di tipi e metodi che presentano accoppiamento bassa e coesione elevata.
+ Tipi e metodi che hanno un livello elevato di accoppiamenti di classi possono essere difficili da gestire. È buona norma disporre di tipi e metodi che mostrano uno stile accoppiamento ridotto e un'elevata coesione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere questa violazione, provare a riprogettare il tipo o un metodo per ridurre il numero di tipi a cui è associata.
+ Per correggere questa violazione, provare a riprogettare il tipo o metodo in modo da ridurre il numero di tipi a cui è associato.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere questo avviso quando il tipo o metodo è considerata accettabile, nonostante il numero elevato di dipendenze da altri tipi.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Escludere questo avviso quando il tipo o metodo è considerato accettabile, nonostante il numero elevato di dipendenze da altri tipi.
 
 ## <a name="see-also"></a>Vedere anche
- [Avvisi di manutenibilità](../code-quality/maintainability-warnings.md) [misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+
+- [Avvisi di manutenibilità](../code-quality/maintainability-warnings.md)
+- [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

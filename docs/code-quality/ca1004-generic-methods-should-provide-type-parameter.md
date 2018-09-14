@@ -14,16 +14,20 @@ ms.assetid: 38755f6a-fb45-4bf2-932e-0354ad826499
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f4616f86cdab54d1946203c46b294bea1d7aff
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b282545d04c82efb44ed87d21ddf66ee73ab77af
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899600"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550934"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: I metodi generici devono fornire parametri di tipo
+
 |||
 |-|-|
 |TypeName|GenericMethodsShouldProvideTypeParameter|
@@ -35,16 +39,16 @@ ms.locfileid: "31899600"
  La firma di parametro di un metodo generico visibile esternamente non contiene tipi che corrispondono a tutti i parametri di tipo del metodo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per inferenza si intende la procedura con cui viene determinato l'argomento tipo di un metodo generico in base al tipo di argomento passato al metodo, piuttosto che in base alla specifica esplicita dell'argomento tipo. Per consentire l'inferenza, la firma di parametro di un metodo generico deve includere un parametro dello stesso tipo del parametro di tipo relativo al metodo. In tal caso non è necessario specificare l'argomento tipo. Quando si utilizza l'inferenza per tutti i parametri di tipo, la sintassi per chiamare metodi di istanza generici e non generici è identica. Ciò semplifica l'usabilità dei metodi generici.
+ Per inferenza si intende la procedura con cui viene determinato l'argomento tipo di un metodo generico in base al tipo di argomento passato al metodo, piuttosto che in base alla specifica esplicita dell'argomento tipo. Per consentire l'inferenza, la firma di parametro di un metodo generico deve includere un parametro dello stesso tipo del parametro di tipo relativo al metodo. In tal caso non è necessario specificare l'argomento tipo. Quando si usa l'inferenza per tutti i parametri di tipo, la sintassi per chiamare i metodi di istanza generici e non generici è identica. Ciò semplifica l'usabilità dei metodi generici.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, è possibile modificare la struttura in modo che la firma di parametro contiene lo stesso tipo per ogni parametro di tipo del metodo.
+ Per correggere una violazione di questa regola, modificare la progettazione in modo che la firma di parametro contiene lo stesso tipo per ogni parametro di tipo del metodo.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola. Fornisce una sintassi che è facile da comprendere e utilizzare generics riduce il tempo necessario all'apprendimento e aumenta la frequenza di adozione di nuove librerie.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non escludere un avviso da questa regola. Che fornisce una sintassi facile da comprendere e usare generics riduce il tempo necessario all'apprendimento e aumenta la frequenza di adozione di nuove librerie.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrata la sintassi per chiamare due metodi generici. L'argomento tipo per `InferredTypeArgument` viene dedotto e l'argomento tipo per `NotInferredTypeArgument` deve essere specificato in modo esplicito.
+ Nell'esempio seguente viene illustrata la sintassi per chiamare due metodi generici. L'argomento tipo per `InferredTypeArgument` viene dedotto e l'argomento tipo per `NotInferredTypeArgument` devono essere specificati esplicitamente.
 
  [!code-vb[FxCop.Design.Inference#1](../code-quality/codesnippet/VisualBasic/ca1004-generic-methods-should-provide-type-parameter_1.vb)]
  [!code-csharp[FxCop.Design.Inference#1](../code-quality/codesnippet/CSharp/ca1004-generic-methods-should-provide-type-parameter_1.cs)]

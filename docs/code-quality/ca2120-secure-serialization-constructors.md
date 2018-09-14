@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 449258d04b6a47fef42c56637a4de48a4e5d1d12
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 123bff32b847342f4081a73abb1d8b899cc0efec
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915391"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548504"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Proteggere i costruttori di serializzazione
+
 |||
 |-|-|
 |TypeName|SecureSerializationConstructors|
@@ -32,16 +33,16 @@ ms.locfileid: "31915391"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Il tipo implementa il <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia, non è un delegato o un'interfaccia e viene dichiarata in un assembly che consente ai chiamanti parzialmente attendibili. Il tipo ha un costruttore che accetta un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> oggetto e un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> oggetto (la firma del costruttore di serializzazione). Questo costruttore non è protetto da un controllo di sicurezza, ma uno o più costruttori regolari nel tipo sono protetti.
+ Il tipo implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia, non è un delegato o un'interfaccia e viene dichiarata in un assembly che consente ai chiamanti parzialmente attendibili. Il tipo ha un costruttore che accetta un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> oggetto e un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> oggetto (la firma del costruttore di serializzazione). Questo costruttore non è protetto da un controllo di sicurezza, ma uno o più costruttori regolari nel tipo viene protetto.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola è rilevante per i tipi che supportano la serializzazione personalizzata. Un tipo supporta la serializzazione personalizzata se implementa il <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia. Il costruttore di serializzazione è obbligatorio e viene utilizzato per deserializzare o ricreare oggetti serializzati utilizzando il <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metodo. Poiché il costruttore di serializzazione alloca e inizializza gli oggetti, i controlli di sicurezza che sono presenti sui costruttori regolari inoltre devono essere presenti nel costruttore di serializzazione. In caso di violazione di questa regola, i chiamanti che è Impossibile creare un'istanza in caso contrario è possibile utilizzare il costruttore di serializzazione per eseguire questa operazione.
+ Questa regola è rilevante per i tipi che supportano la serializzazione personalizzata. Un tipo supporta la serializzazione personalizzata se implementa il <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia. Il costruttore di serializzazione è obbligatorio e viene utilizzato per deserializzare oppure ricreare gli oggetti che sono stati serializzati utilizzando la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> (metodo). Poiché il costruttore di serializzazione alloca e inizializza gli oggetti, i controlli di sicurezza che sono presenti sui costruttori regolari inoltre devono essere presenti nel costruttore di serializzazione. Se si violano questa regola, i chiamanti che non è stato in caso contrario, creare un'istanza è stato possibile utilizzare il costruttore di serializzazione per eseguire questa operazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, proteggere il costruttore di serializzazione con richieste di sicurezza che sono identiche a quelle che proteggono gli altri costruttori.
+ Per correggere una violazione di questa regola, proteggere il costruttore di serializzazione con richieste di sicurezza che sono identici a quelli che proteggono altri costruttori.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere una violazione della regola.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non eliminare una violazione della regola.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene illustrato un tipo che viola la regola.
@@ -54,4 +55,7 @@ ms.locfileid: "31915391"
  [CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>
+
+- <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

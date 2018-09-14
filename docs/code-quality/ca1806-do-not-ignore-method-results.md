@@ -13,15 +13,20 @@ helpviewer_keywords:
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 author: gewarren
 ms.author: gewarren
+dev_langs:
+- CPP
+- CSharp
+- VB
 manager: douge
-ms.openlocfilehash: 6b0d5870b29fea9d6ef99a3951ef12d938b0eab3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebbad9eb48a448aa756f580ade794ba70eb25611
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914666"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546837"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Non ignorare i risultati dei metodi
+
 |||
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
@@ -30,31 +35,32 @@ ms.locfileid: "31914666"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Esistono diversi motivi possibili per questo avviso:
 
--   Viene creato un nuovo oggetto, ma mai utilizzato.
+Esistono diversi motivi possibili per questo avviso:
 
--   Viene chiamato un metodo che crea e restituisce una nuova stringa e la nuova stringa non viene mai utilizzata.
+- Un nuovo oggetto viene creato ma mai usato.
 
--   Un metodo COM o P/Invoke che restituisce un codice di errore o HRESULT che non viene mai utilizzato. Descrizione della regola
+- Viene chiamato un metodo che crea e restituisce una nuova stringa e la nuova stringa non viene mai usata.
 
- Creazione di oggetti non necessari e la garbage collection associata dell'oggetto inutilizzato influire negativamente sulle prestazioni.
+- Un metodo COM o P/Invoke che restituisce un codice di errore o HRESULT che non viene mai usato. Descrizione della regola
 
- Le stringhe sono immutabili e metodi, ad esempio String. ToUpper restituisce una nuova istanza di una stringa anziché modificare l'istanza di stringa nel metodo chiamante.
+La creazione di oggetti non necessari e la garbage collection associata dell'oggetto inutilizzato influiscono negativamente sulle prestazioni.
 
- Ignorando HRESULT o codice di errore può causare un comportamento imprevisto in condizioni di errore o di risorse insufficienti.
+Le stringhe sono modificabili e metodi, ad esempio String. ToUpper restituisce una nuova istanza di una stringa invece di modificare l'istanza della stringa nel metodo chiamante.
+
+Ignorando HRESULT o codice di errore può causare un comportamento imprevisto in condizioni di errore o alle condizioni di risorse insufficienti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Se il metodo crea una nuova istanza dell'oggetto B che non viene mai usato, passare l'istanza come argomento a un altro metodo o assegnare l'istanza a una variabile. Se la creazione dell'oggetto non è necessaria, rimuoverla- o -
+ Se il metodo crea una nuova istanza dell'oggetto B che non viene mai usato, passare l'istanza come argomento a un altro metodo oppure assegnare l'istanza a una variabile. Se la creazione dell'oggetto non è necessaria, rimuoverla- o -
 
- Se il metodo chiama il metodo B, ma non utilizza la nuova istanza della stringa restituita dal metodo B. Passare l'istanza come argomento a un altro metodo, assegnare l'istanza a una variabile. Oppure rimuovere la chiamata se non è necessaria.
+ Se il metodo chiama il metodo B, ma non usa la nuova istanza di stringa restituita dal metodo B. Passare l'istanza come argomento a un altro metodo, assegnare l'istanza a una variabile. Oppure rimuovere la chiamata se non è necessaria.
 
  oppure
 
- Se il metodo chiama il metodo B, ma non viene utilizzato il valore HRESULT o codice di errore che il metodo restituisce. Utilizzare il risultato in un'istruzione condizionale, assegnare il risultato a una variabile oppure passarlo come argomento a un altro metodo.
+ Se il metodo chiama il metodo B, ma non usa il valore HRESULT o codice di errore che il metodo restituisce. Usare il risultato in un'istruzione condizionale, assegnare il risultato a una variabile oppure passarlo come argomento a un altro metodo.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola, a meno che l'operazione di creazione dell'oggetto scopo preciso.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non escludere un avviso da questa regola, a meno che l'atto di creare l'oggetto viene usato per scopi.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene illustrata una classe che ignora il risultato della chiamata String. Trim.
@@ -64,17 +70,17 @@ ms.locfileid: "31914666"
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente consente di correggere la violazione precedente assegnando il risultato di String. Trim alla variabile che in cui è stata chiamata.
+ Nell'esempio seguente consente di correggere la violazione precedente assegnando il risultato di String. Trim nella variabile di che cui è stato chiamato.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo che non utilizza un oggetto che viene creato.
+ Nell'esempio seguente viene illustrato un metodo che non usa un oggetto creato.
 
 > [!NOTE]
->  Questa violazione non può essere riprodotti in Visual Basic.
+> Questa violazione non può essere riprodotta in Visual Basic.
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]

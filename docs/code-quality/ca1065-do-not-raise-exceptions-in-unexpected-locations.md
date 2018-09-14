@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b338b37d62f3612dd5eb6d575b6ef0d57202c1f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4999770367ad7b170398333cf7c7cf2cb9d1c407
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900663"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546694"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Non generare eccezioni in posizioni non previste
 
@@ -38,7 +38,7 @@ Un metodo che normalmente non genera eccezioni genera un'eccezione.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Metodi che non devono generare eccezioni possono essere suddivisi in categorie come indicato di seguito:
+I metodi che non possono generare eccezioni possono essere suddivisi in categorie come indicato di seguito:
 
 - Metodi Get di proprietà
 
@@ -64,85 +64,85 @@ Le sezioni seguenti illustrano questi tipi di metodo.
 
 ### <a name="property-get-methods"></a>Metodi Get di proprietà
 
-Le proprietà sono fondamentalmente smart. Pertanto, devono comportarsi come un campo il più possibile. I campi non generano eccezioni e non dovrebbero proprietà. Se si dispone di una proprietà che genera un'eccezione, prendere in considerazione è un metodo.
+Le proprietà sono fondamentalmente intelligente. Pertanto, devono comportarsi come un campo quanto più possibile. I campi non generano eccezioni ed è opportuno proprietà. Se si dispone di una proprietà che genera un'eccezione, prendere in considerazione un metodo.
 
-Le eccezioni seguenti possono essere generate da un metodo get della proprietà:
+Le eccezioni seguenti possono essere generate da un metodo get di proprietà:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> tutti i derivati e (inclusi <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e tutte le derivazioni (tra cui <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> e tutti i derivati
+- <xref:System.NotSupportedException?displayProperty=fullName> e tutte le derivazioni
 
-- <xref:System.ArgumentException?displayProperty=fullName> (solo da indicizzata get)
+- <xref:System.ArgumentException?displayProperty=fullName> (solo da indicizzare get)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (solo da indicizzata get)
+- <xref:System.Collections.Generic.KeyNotFoundException> (solo da indicizzare get)
 
 ### <a name="event-accessor-methods"></a>Metodi della funzione di accesso agli eventi
 
-Funzioni di accesso eventi devono essere operazioni semplici che non generano eccezioni. Un evento non deve generare un'eccezione quando si tenta di aggiungere o rimuovere un gestore eventi.
+Queste funzioni devono essere semplici operazioni che non generano eccezioni. Un evento non deve generare un'eccezione quando si tenta di aggiungere o rimuovere un gestore eventi.
 
 Le eccezioni seguenti possono essere generate da una funzione di accesso eventi:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> tutti i derivati e (inclusi <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e tutte le derivazioni (tra cui <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> e tutti i derivati
+- <xref:System.NotSupportedException?displayProperty=fullName> e tutte le derivazioni
 
-- <xref:System.ArgumentException> e derivati
+- <xref:System.ArgumentException> i derivati
 
 ### <a name="equals-methods"></a>Metodi Equals
 
-Nell'esempio **è uguale a** metodi non devono generare eccezioni:
+Quanto segue **è uguale a** metodi non devono generare eccezioni:
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Un **è uguale a** metodo dovrebbe restituire `true` o `false` anziché generare un'eccezione. Ad esempio, se Equals vengono passati due tipi non corrispondenti deve restituire `false` anziché generare un <xref:System.ArgumentException>.
+Un' **è uguale a** metodo dovrebbe restituire `true` o `false` anziché generare un'eccezione. Ad esempio, se non viene passato è uguale a due tipi non corrispondenti deve semplicemente restituire `false` anziché generare un <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Metodi GetHashCode
 
-Nell'esempio **GetHashCode** metodi in genere non devono generare eccezioni:
+Quanto segue **GetHashCode** metodi in genere non devono generare eccezioni:
 
 - <xref:System.Object.GetHashCode%2A>
 
 - <xref:System.Collections.IEqualityComparer.GetHashCode%2A>
 
-**GetHashCode** deve sempre restituire un valore. In caso contrario, è possibile perdere elementi nella tabella hash.
+**GetHashCode** deve sempre restituire un valore. In caso contrario, è possibile perdere gli elementi nella tabella hash.
 
-Le versioni di **GetHashCode** che accettano un argomento può generare un <xref:System.ArgumentException>. Tuttavia, **Object. GetHashCode** non deve mai generare un'eccezione.
+Le versioni di **GetHashCode** che accettano un argomento può generare un <xref:System.ArgumentException>. Tuttavia **Object. GetHashCode** non deve mai generare un'eccezione.
 
 ### <a name="tostring-methods"></a>Metodi ToString
 
-Il debugger utilizza <xref:System.Object.ToString%2A?displayProperty=fullName> per consentire di visualizzare informazioni sugli oggetti in formato stringa. Pertanto, **ToString** non dovrebbero modificare lo stato di un oggetto e non non deve generare eccezioni.
+Il debugger usa <xref:System.Object.ToString%2A?displayProperty=fullName> per consentire di visualizzare informazioni sugli oggetti in formato stringa. Pertanto **ToString** non dovrebbe modificare lo stato di un oggetto, e non dovrà generare eccezioni.
 
 ### <a name="static-constructors"></a>Costruttori statici
 
-Il tipo sarà inutilizzabile nel dominio applicazione corrente a causa la generazione di eccezioni da un costruttore statico. È un buon motivo (ad esempio un problema di sicurezza) per generare un'eccezione da un costruttore statico.
+Generazione di eccezioni da un costruttore statico, fa sì che il tipo sarà inutilizzabile nel dominio dell'applicazione corrente. È consigliabile utilizzare un buon motivo (ad esempio un problema di sicurezza) per generare un'eccezione da un costruttore statico.
 
 ### <a name="finalizers"></a>Finalizzatori
 
-Generare un'eccezione da un finalizzatore il CLR esito negativo rapido, che a sua volta il processo. Pertanto, la generazione di eccezioni in un finalizzatore deve essere sempre evitata.
+Generare un'eccezione da un finalizzatore fa sì che CLR a fallire, che elimina il processo. Pertanto, la generazione di eccezioni in un finalizzatore deve essere sempre evitata.
 
 ### <a name="dispose-methods"></a>Eliminazione dei metodi
 
-Oggetto <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metodo non deve generare un'eccezione. Dispose viene spesso chiamato come parte della logica di pulizia in un `finally` clausola. Pertanto, in modo esplicito la generazione di un'eccezione da Dispose forza l'utente dovrà aggiungere la gestione delle eccezioni di `finally` clausola.
+Oggetto <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metodo non deve generare un'eccezione. Dispose viene spesso definito come parte della logica di pulizia in un `finally` clausola. Pertanto, in modo esplicito un'eccezione dal metodo Dispose impone all'utente di aggiungere la gestione delle eccezioni di `finally` clausola.
 
-Il **Dispose (false)** percorso del codice non deve mai generare eccezioni, poiché Dispose viene quasi sempre chiamato da un finalizzatore.
+Il **Dispose (false)** percorso di codice non dovrebbe mai generare eccezioni, poiché Dispose viene quasi sempre chiamato da un finalizzatore.
 
 ### <a name="equality-operators--"></a>Gli operatori di uguaglianza (= =,! =)
 
-Come i metodi Equals, gli operatori di uguaglianza devono restituire `true` o `false`e non devono generare eccezioni.
+Come i metodi Equals, devono restituire gli operatori di uguaglianza `true` o `false`e non devono generare eccezioni.
 
 ### <a name="implicit-cast-operators"></a>Operatori di Cast impliciti
 
-Poiché l'utente è spesso a conoscenza che è stato chiamato un operatore di cast impliciti, un'eccezione generata dall'operatore di cast implicito è imprevista. Pertanto, eccezioni non devono essere generate dagli operatori di cast impliciti.
+Poiché l'utente è spesso a conoscenza che è stato chiamato un operatore cast implicito, un'eccezione generata dall'operatore di cast implicito è imprevista. Di conseguenza, nessuna eccezione devono essere generata dagli operatori di cast impliciti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per le funzioni Get di proprietà, di modificare la logica in modo che non sia più associata a un'eccezione o modificare la proprietà in un metodo.
+Per il getter di proprietà, di modificare la logica in modo che non sia più associata generare un'eccezione o modificare la proprietà in un metodo.
 
-Per tutti gli altri tipi di metodo elencate in precedenza, è possibile modificare la logica in modo che non è più necessario generare un'eccezione.
+Per tutti gli altri metodo tipi elencati in precedenza, modificare la logica in modo che non è più necessario generare un'eccezione.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
 Se la violazione è stata causata da una dichiarazione di eccezione anziché un'eccezione generata, è possibile eliminare un avviso da questa regola.
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f24b0f4c6358da459525288a2812446c1c73f3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c67cd83f8487b67c580d544fd2d350612dfb48a8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915232"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549638"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: Rimuovere i finalizzatori vuoti
 |||
@@ -31,18 +31,18 @@ ms.locfileid: "31915232"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Un tipo implementa un finalizzatore, è vuoto, chiama solo il finalizzatore del tipo di base o chiama solo metodi emessi in modo condizionale.
+ Un tipo implementa un finalizzatore è vuoto, chiama solo il finalizzatore del tipo di base o chiama solo metodi emessi in modo condizionale.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando possibile, evitare di utilizzare i finalizzatori per non sovraccaricare ulteriormente le prestazioni durante il rilevamento della durata dell'oggetto. Prima di raccogliere l'oggetto, il garbage collector eseguirà il finalizzatore. Ciò significa che due raccolte sono necessarie per raccogliere l'oggetto. Un finalizzatore vuoto provoca questo sovraccarico senza alcun vantaggio.
+ Quando possibile, evitare di utilizzare i finalizzatori per non sovraccaricare ulteriormente le prestazioni durante il rilevamento della durata dell'oggetto. Prima di raccogliere l'oggetto, il garbage collector eseguirà il finalizzatore. Ciò significa che due raccolte verrà richiesto di raccogliere l'oggetto. Un finalizzatore vuoto provoca questo sovraccarico senza alcun vantaggio.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Rimuovere il finalizzatore vuoto. Se un finalizzatore è richiesto per il debug, racchiudere l'intero finalizzatore in `#if DEBUG / #endif` direttive.
+ Rimuovere il finalizzatore è vuoto. Se è necessario per il debug di un finalizzatore, racchiudere l'intero finalizzatore in `#if DEBUG / #endif` direttive.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un messaggio da questa regola. Impossibile eliminare la finalizzazione riduce le prestazioni e non offre alcun vantaggio.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non eliminare un messaggio da questa regola. Tentativo di eliminare la finalizzazione riduce le prestazioni e non offre alcun vantaggio.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un finalizzatore vuoto che deve essere rimosso, un finalizzatore che deve essere racchiusi tra `#if DEBUG / #endif` direttive e un finalizzatore che utilizza il `#if DEBUG / #endif` direttive correttamente.
+ L'esempio seguente mostra un finalizzatore vuoto che deve essere rimosso, un finalizzatore che deve essere racchiuso tra parentesi `#if DEBUG / #endif` direttive e un finalizzatore che usa il `#if DEBUG / #endif` direttive correttamente.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]

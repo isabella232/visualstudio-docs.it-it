@@ -1,5 +1,5 @@
 ---
-title: 'CA1415: Dichiarare richiama P correttamente'
+title: 'CA1415: Dichiarare correttamente P-Invoke'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a690baeb804d3722d442c30077cc07d260a8952
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 603ba2448e9716a77ec7610a32d016dfc124c72c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915763"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548647"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Dichiarare correttamente i P/Invoke
 |||
@@ -29,18 +29,18 @@ ms.locfileid: "31915763"
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |Category|Microsoft.Interoperability|
-|Modifica importante|Non sostanziale - Se P/Invoke che dichiara il parametro non è visibile all'esterno dell'assembly. Sostanziale - Se P/Invoke che dichiara il parametro è visibile all'esterno dell'assembly.|
+|Modifica importante|Non sostanziale - Se i P/Invoke che dichiara il parametro non è visibile all'esterno dell'assembly. Rilievo - se i P/Invoke che dichiara il parametro può essere visualizzato all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
- Un metodo di PInvoke è dichiarato in modo non corretto.
+ Metodo di un platform invoke viene dichiarato in modo non corretto.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un platform invoke (metodo) accede al codice non gestito e viene definito utilizzando il `Declare` parola chiave in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Attualmente, questa regola viene ricercato platform invoke per le dichiarazioni di metodo che le funzioni Win32 che dispone di un puntatore a un parametro di struttura OVERLAPPED e il cui parametro gestito corrispondente non è un puntatore a un <xref:System.Threading.NativeOverlapped?displayProperty=fullName> struttura.
+ Una piattaforma di richiamare codice non gestito accede a metodo e viene definito tramite il `Declare` parola chiave in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o il <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Attualmente, questa regola consente di cercare le dichiarazioni di metodo che usano funzioni Win32 con un puntatore a un parametro di struttura OVERLAPPED di platform invoke e il cui parametro gestito corrispondente non è un puntatore a un <xref:System.Threading.NativeOverlapped?displayProperty=fullName> struttura.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, dichiarare correttamente il platform invoke (metodo).
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio

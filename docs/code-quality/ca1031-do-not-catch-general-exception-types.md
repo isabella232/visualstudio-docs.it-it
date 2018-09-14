@@ -14,16 +14,21 @@ ms.assetid: cbc283ae-2a46-4ec0-940e-85aa189b118f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbc03edf93c6b4977fe62d72a4df0d60dff035d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16b43aa25ef4e2d81b2d6f72e7e1c2bfa3e8b6f7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900380"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551630"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Non rilevare tipi di eccezione generali
+
 |||
 |-|-|
 |TypeName|DoNotCatchGeneralExceptionTypes|
@@ -32,22 +37,22 @@ ms.locfileid: "31900380"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Un'eccezione generale come <xref:System.Exception?displayProperty=fullName> o <xref:System.SystemException?displayProperty=fullName> viene rilevata in un `catch` istruzione o una clausola catch generale, ad esempio `catch()` viene utilizzato.
+ Un'eccezione, ad esempio <xref:System.Exception?displayProperty=fullName> o <xref:System.SystemException?displayProperty=fullName> si trova in un `catch` istruzione o una clausola catch generale, ad esempio `catch()` viene usato.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Le eccezioni generali non devono essere rilevate.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rilevare un'eccezione più specifica o rigenerare l'eccezione generale come ultima istruzione nel `catch` blocco.
+ Per correggere una violazione di questa regola, rilevare un'eccezione più specifica oppure generare nuovamente l'eccezione generale come ultima istruzione nel `catch` blocco.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola. Il rilevamento di tipi di eccezione generali può nascondere i problemi in fase di esecuzione da parte dell'utente di libreria e può rendere più difficile il debug.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non escludere un avviso da questa regola. Il rilevamento di tipi di eccezione generali problemi in fase di esecuzione da parte dell'utente della libreria possono essere nascosti e può rendere più difficile il debug.
 
 > [!NOTE]
->  A partire dal [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], common language runtime (CLR) non recapita più eccezioni di stato danneggiato che si verificano nel sistema operativo e codice gestito, ad esempio le violazioni di accesso in [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], devono essere gestiti da codice gestito. Se si desidera compilare un'applicazione nel [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o versioni successive e mantenere la gestione delle eccezioni di stato danneggiato, è possibile applicare il <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attributo al metodo che gestisce l'eccezione di stato danneggiato.
+> Inizia con la [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], common language runtime (CLR) non trasmette più eccezioni stato danneggiato che si verificano nel sistema operativo e codice gestito, ad esempio le violazioni di accesso nel [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], per essere gestito dal codice gestito. Se si vuole compilare un'applicazione nel [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o versioni successive e mantenere la gestione delle eccezioni stato danneggiato, è possibile applicare il <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> al metodo che gestisce l'eccezione di stato danneggiato.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo che viola la regola e un tipo che implementa correttamente il `catch` blocco.
+ L'esempio seguente mostra un tipo che viola la regola e un tipo che implementa correttamente il `catch` blocco.
 
  [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
  [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]

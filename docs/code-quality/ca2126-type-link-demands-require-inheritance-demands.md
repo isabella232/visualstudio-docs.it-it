@@ -14,16 +14,21 @@ ms.assetid: 07b604e5-5579-4df9-a578-dadd0d8370a7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d3143bb7508af1fcb0a946ce7e3a3f0a8697b204
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82fe9045173e65b24204a3b04e12b6a7f655c651
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917462"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548400"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Per le richieste di collegamento dei tipi sono necessarie richieste di ereditarietà
+
 |||
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
@@ -35,12 +40,12 @@ ms.locfileid: "31917462"
  Un tipo non sealed pubblico è protetto con una richiesta di collegamento, dispone di un metodo sottoponibile a override e il tipo né il metodo è protetto con una richiesta di ereditarietà.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Una richiesta di collegamento in un metodo o il tipo dichiarante il chiamante immediato del metodo deve avere l'autorizzazione specificata. Una richiesta di ereditarietà in un metodo richiede un metodo di overriding disporre dell'autorizzazione specificata. Una richiesta di ereditarietà in un tipo richiede una classe di derivazione disporre dell'autorizzazione specificata.
+ Una richiesta di collegamento in un metodo o nel relativo tipo dichiarante richiede che il chiamante immediato del metodo di avere l'autorizzazione specificata. Una richiesta di ereditarietà in un metodo richiede un metodo di override per avere l'autorizzazione specificata. Una richiesta di ereditarietà in un tipo richiede una classe di derivazione per avere l'autorizzazione specificata.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, proteggere il tipo o il metodo con una richiesta di ereditarietà per la stessa autorizzazione della richiesta di collegamento.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
@@ -60,4 +65,6 @@ ms.locfileid: "31917462"
  [CA2123: Le richieste di collegamento negli override devono essere identiche a quelle nei metodi di base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Linee guida di codice sicuro](/dotnet/standard/security/secure-coding-guidelines) [le richieste di collegamento](/dotnet/framework/misc/link-demands)
+
+- [Linee guida per la generazione di codice sicuro](/dotnet/standard/security/secure-coding-guidelines)
+- [Richieste di collegamento](/dotnet/framework/misc/link-demands)

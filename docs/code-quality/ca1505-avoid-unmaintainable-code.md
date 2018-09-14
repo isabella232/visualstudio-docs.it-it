@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41600d40091ed2c656ab189a257a0ef2db6e0271
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914406"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546915"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: evitare codice non manutenibile
+
 |||
 |-|-|
 |TypeName|AvoidUnmantainableCode|
@@ -35,15 +36,17 @@ ms.locfileid: "31914406"
  Un tipo o metodo presenta un valore di indice di gestibilità basso.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Viene calcolato l'indice di manutenibilità utilizzando le seguenti metriche: righe di codice, il volume del programma e complessità ciclomatica. Il volume del programma è una misura della difficoltà di comprensione di un tipo o metodo che è in base al numero di operatori e operandi nel codice. Complessità ciclomatica è una misura della complessità strutturale del tipo o metodo. Altre informazioni sulla metrica del codice in [misurazione della complessità e la manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
+ L'indice di manutenibilità viene calcolato usando le metriche seguenti: righe di codice, il volume del programma e complessità ciclomatica. Il volume del programma è una misura della difficoltà di comprensione di un tipo o metodo che si basa sul numero di operatori e operandi nel codice. Complessità ciclomatica è una misura della complessità strutturale del tipo o metodo. Altre informazioni sulla metrica del codice in [misurazione della complessità e manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
 
  Un indice di manutenibilità basso indica che un tipo o metodo è probabilmente difficile da gestire e sarebbe un buon candidato per la riprogettazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere questa violazione, riprogettare il tipo o metodo e provare a dividere il più piccoli e più mirati tipi o metodi.
+ Per correggere questa violazione, riprogettare il tipo o metodo e tentare di suddividerlo in più mirati e limitati di tipi o metodi.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere questo avviso quando un tipo o metodo è considerata accettabile nonostante le grandi dimensioni o quando il tipo o metodo non può essere divisa.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Escludere questo avviso quando un tipo o metodo è considerato accettabile nonostante le grandi dimensioni o quando il tipo o metodo non può essere divisa.
 
 ## <a name="see-also"></a>Vedere anche
- [Avvisi di manutenibilità](../code-quality/maintainability-warnings.md) [misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+
+- [Avvisi di manutenibilità](../code-quality/maintainability-warnings.md)
+- [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

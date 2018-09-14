@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afcfe25a9ff4541331ddfc35ebe86bbf884ef02e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3af665f3a0f59cb1dd8c8c8ee581fc37f9da7e78
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918517"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550921"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: I membri non devono avere annotazioni di trasparenza in conflitto
 |||
@@ -39,12 +39,12 @@ ms.locfileid: "31918517"
  Gli attributi di trasparenza vengono applicati da elementi di codice con un ambito più ampio a elementi con ambito più ridotto. Gli attributi di trasparenza di elementi di codice che presentano un ambito più ampio hanno la precedenza su quelli contenuti nel primo elemento. Ad esempio, una classe contrassegnata con il <xref:System.Security.SecurityCriticalAttribute> attributo non può contenere un metodo contrassegnato con il <xref:System.Security.SecuritySafeCriticalAttribute> attributo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere questa violazione, rimuovere l'attributo di sicurezza dall'elemento di codice che ha un ambito inferiore oppure modificarne l'attributo corrispondente all'elemento di codice che lo contiene.
+ Per correggere questa violazione, rimuovere l'attributo di sicurezza dall'elemento di codice che ha un ambito più basso o modificare il relativo attributo per corrispondere all'elemento di codice che lo contiene.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere gli avvisi da questa regola.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non eliminare gli avvisi da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente, un metodo è contrassegnato con il <xref:System.Security.SecuritySafeCriticalAttribute> attributo e è un membro di una classe contrassegnata con il <xref:System.Security.SecurityCriticalAttribute> attributo. L'attributo di sicurezza sicuro deve essere rimosso.
+ Nell'esempio seguente, un metodo è contrassegnato con il <xref:System.Security.SecuritySafeCriticalAttribute> attributo ed è un membro di una classe contrassegnata con il <xref:System.Security.SecurityCriticalAttribute> attributo. L'attributo di protezione sicura deve essere rimosso.
 
  [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]

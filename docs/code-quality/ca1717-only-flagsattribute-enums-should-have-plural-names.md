@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93cc4b36372d1e5ef6c81f16dc74285c336d08cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 297f6025cb8ea24ad333f9e6962d8659e78eb8d2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914575"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551873"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Solo le enumerazioni con FlagsAttribute devono avere nomi plurali
 |||
@@ -35,17 +35,17 @@ ms.locfileid: "31914575"
  Il nome di un'enumerazione visibile esternamente termina con una parola plurale e l'enumerazione non è contrassegnato con il <xref:System.FlagsAttribute?displayProperty=fullName> attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Convenzioni di denominazione di base, che un nome plurale in un'enumerazione indica che è possibile specificare contemporaneamente più di un valore dell'enumerazione. Il <xref:System.FlagsAttribute> indica ai compilatori che l'enumerazione deve essere considerata come un campo di bit che consente di eseguire operazioni bit per bit nell'enumerazione.
+ Convenzioni di denominazione indicano che un nome plurale per un'enumerazione indica che è possibile specificare contemporaneamente più di un valore dell'enumerazione. Il <xref:System.FlagsAttribute> indica ai compilatori di enumerazione deve essere considerato un campo di bit che consente di eseguire operazioni bit per bit su enumerazione.
 
- Se solo un valore di un'enumerazione può essere specificato in un momento, il nome dell'enumerazione deve essere una parola singolare. Ad esempio, un'enumerazione che definisce i giorni della settimana potrebbe essere deve essere utilizzato in un'applicazione in cui è possibile specificare più giorni. Questa enumerazione dovrà contenere il <xref:System.FlagsAttribute> e potrebbe essere denominata "Days". Un'enumerazione simile che consente un solo giorno specificare l'attributo non è necessario e potrebbe essere chiamato 'Day'.
+ Se solo un valore di un'enumerazione può essere specificato in un momento, il nome dell'enumerazione deve essere una parola singola. Ad esempio, un'enumerazione che definisce i giorni della settimana potrebbe essere destinata all'uso in un'applicazione in cui è possibile specificare più giorni. Questa enumerazione deve avere il <xref:System.FlagsAttribute> e potrebbe essere denominata "Days". Un'enumerazione simile che consenta solo un singolo giorno specificare non include l'attributo e può essere chiamato 'Day'.
 
- Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce il tempo necessario per l'apprendimento di una nuova libreria software e aumenta la confidenza di clienti che la libreria è stata sviluppata da un utente che ha esperienza nello sviluppo di codice gestito.
+ Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce il tempo necessario per l'apprendimento di una nuova libreria di software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Cambiare il nome dell'enumerazione di una parola singolare o aggiungere il <xref:System.FlagsAttribute>.
+ Cambiare il nome dell'enumerazione di una parola singolare oppure aggiungere il <xref:System.FlagsAttribute>.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se il nome termina con una parola singolare.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un avviso da questa regola se il nome termina con una singola parola.
 
 ## <a name="related-rules"></a>Regole correlate
  [CA1714: Le enumerazioni con Flags devono avere nomi plurali](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
@@ -55,4 +55,6 @@ ms.locfileid: "31914575"
  [CA2217: Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.FlagsAttribute?displayProperty=fullName> [Progettazione di enum](/dotnet/standard/design-guidelines/enum)
+
+- <xref:System.FlagsAttribute?displayProperty=fullName>
+- [Progettazione di enum](/dotnet/standard/design-guidelines/enum)

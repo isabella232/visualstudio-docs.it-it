@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 514a062429168592fe46112ad008d0d1f4e60a28
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914784"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550609"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Gli identificatori non devono corrispondere a parole chiave
 |||
@@ -35,20 +35,20 @@ ms.locfileid: "31914784"
  Un nome di uno spazio dei nomi, un tipo o un membro virtuale o di interfaccia corrisponde a una parola chiave riservata in un linguaggio di programmazione.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Gli identificatori per spazi dei nomi, tipi e virtuali e i membri di interfaccia non devono corrispondere a parole chiave definite dai linguaggi con destinazione common language runtime. A seconda del linguaggio utilizzato e la parola chiave, gli errori del compilatore e ambiguità possono rendere difficile da usare la libreria.
+ Gli identificatori per spazi dei nomi, tipi e virtuali e i membri di interfaccia non devono corrispondere a parole chiave definite da linguaggi destinati a common language runtime. A seconda del linguaggio utilizzato e la parola chiave, le ambiguità e gli errori del compilatore possono rendere difficile da usare la libreria.
 
- Questa regola confrontato con le parole chiave nelle lingue seguenti:
+ Questa regola consente di controllare con parole chiave nelle seguenti lingue:
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- Viene utilizzato il confronto tra maiuscole e minuscole per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] parole chiave e il confronto tra maiuscole e minuscole viene utilizzato per le altre lingue.
+ Confronto tra maiuscole e minuscole viene usato per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] parole chiave e il confronto tra maiuscole e minuscole viene usato per le altre lingue.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Selezionare un nome che non compare nell'elenco di parole chiave.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Se si è convinti che l'identificatore verrà confondere gli utenti dell'API, e che la libreria sia utilizzabile in tutte le lingue disponibili in, è possibile eliminare un avviso da questa regola di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un avviso da questa regola se si sono convinti che l'identificatore sarà importante non confondere gli utenti dell'API e che sia utilizzabile in tutte le lingue disponibili nella libreria di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

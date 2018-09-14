@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d402bec5bf9c79b845f3bfa643c65fc07359a09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4dac6beddf43e88d47a54ddf2b0e0d56e387038
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900119"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547203"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitare tasti di scelta rapida duplicati
+
 |||
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
@@ -32,23 +33,26 @@ ms.locfileid: "31900119"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Estende un tipo <xref:System.Windows.Forms.Control?displayProperty=fullName> e contiene due o più controlli di primo livello che presentano tasti di scelta identici vengono archiviati in un file di risorse.
+ Estende un tipo <xref:System.Windows.Forms.Control?displayProperty=fullName> e contiene due o più controlli di primo livello che dispongono di chiavi di accesso identico che vengono archiviate in un file di risorse.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un tasto di scelta o tasto di scelta rapida consente l'accesso da tastiera a un controllo mediante ALT. Quando più controlli presentano tasti di scelta duplicati, il comportamento del tasto di scelta non è ben definito. L'utente potrebbe non essere in grado di accedere al controllo desiderato utilizzando la chiave di accesso e un controllo diverso da quello che è possibile che sia attivato.
 
- L'implementazione corrente di questa regola ignora le voci di menu. Tuttavia, le voci di menu nel sottomenu stesso non devono essere identica tasti di scelta.
+Una chiave di accesso, noto anche come un tasto di scelta rapida, consente l'accesso da tastiera a un controllo usando il **Alt** chiave. Quando più controlli presentano la stessa chiave di accesso, il comportamento della chiave di accesso non è ben definito. L'utente potrebbe non essere in grado di accedere al controllo desiderato usando la chiave di accesso e un controllo diverso da quello che serve potrebbe essere abilitato.
+
+L'implementazione corrente di questa regola ignora le voci di menu. Tuttavia, le voci di menu nel sottomenu stesso non devono avere le chiavi di accesso identico.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, definire le chiavi di accesso univoco per tutti i controlli.
+ Per correggere una violazione di questa regola, definire le chiavi di accesso univoci per tutti i controlli.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un form minimo che contiene due controlli che dispongono di chiavi di accesso identici. Le chiavi vengono archiviate in un file di risorse, non viene visualizzato. Tuttavia, i relativi valori vengono visualizzati in impostati come commento out `checkBox.Text` righe. Il comportamento dei tasti di scelta rapida duplicati può essere esaminato tramite lo scambio di `checkBox.Text` righe con le controparti impostate come commentata. Tuttavia, in questo caso, l'esempio non genererà un avviso dalla regola.
+ Nell'esempio seguente viene illustrato un form minimo che contiene due controlli che dispongono di chiavi di accesso identico. Le chiavi vengono archiviate in un file di risorse, non viene visualizzato. Tuttavia, i relativi valori visualizzati in impostati come commento out `checkBox.Text` righe. Il comportamento dei tasti di scelta rapida duplicati può essere esaminato mediante lo scambio di `checkBox.Text` righe con le controparti impostate come commentate. Tuttavia, in questo caso, l'esempio non genererà un avviso in base alla regola.
 
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [Risorse nelle applicazioni Desktop](/dotnet/framework/resources/index)
+
+- <xref:System.Resources.ResourceManager?displayProperty=fullName>
+- [Risorse nelle applicazioni desktop](/dotnet/framework/resources/index)

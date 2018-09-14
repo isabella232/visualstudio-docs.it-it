@@ -14,16 +14,20 @@ ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6379a811da7c62be59a322ee68ad9f030d9693d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3e03c1028dc310748aff7c8263ce75ace9985be
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899717"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551734"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Utilizzare generics dove appropriato
+
 |||
 |-|-|
 |TypeName|UseGenericsWhereAppropriate|
@@ -32,19 +36,19 @@ ms.locfileid: "31899717"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo visibile esternamente contiene un parametro di riferimento di tipo <xref:System.Object?displayProperty=fullName>la destinazione dell'assembly contenente [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Un metodo visibile esternamente contiene un parametro di riferimento di tipo <xref:System.Object?displayProperty=fullName>la destinazione dell'assembly che lo contiene [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un parametro di riferimento è un parametro che viene modificato tramite il `ref` (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) (parola chiave). Il tipo di argomento fornito per un parametro di riferimento deve corrispondere esattamente a un tipo di parametro. Per utilizzare un tipo derivato dal tipo di parametro di riferimento, è necessario innanzitutto eseguire il cast il tipo e assegnato a una variabile del tipo di parametro di riferimento. Utilizzo di un metodo generico consente di tutti i tipi, soggetti a vincoli, deve essere passato al metodo senza prima eseguire il cast di tipo al tipo di parametro di riferimento.
+ Un parametro di riferimento è un parametro che viene modificato tramite il `ref` (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) (parola chiave). Il tipo di argomento fornito per un parametro di riferimento deve corrispondere esattamente al tipo di parametro di riferimento. Per usare un tipo derivato dal tipo di parametro di riferimento, è necessario prima di tutto eseguire il cast al tipo e assegnato a una variabile del tipo di parametro di riferimento. Uso di un metodo generico consente tutti i tipi, soggetti a vincoli, deve essere passato al metodo senza prima eseguire il cast di tipo al tipo di parametro di riferimento.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rendere il metodo generico e sostituire il <xref:System.Object> parametro tramite un parametro di tipo.
+ Per correggere una violazione di questa regola, impostare il metodo generico e sostituire il <xref:System.Object> parametro utilizzando un parametro di tipo.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente mostra una routine di scambio di utilizzo generico che viene implementata come metodi e non generici. Si noti come in modo efficiente le stringhe vengono scambiate tramite il metodo generico rispetto al metodo non generico.
+ L'esempio seguente illustra una routine di scambio per utilizzo generico che viene implementata sotto forma di metodi e non generici. Si noti come in modo efficiente le stringhe vengono scambiate tramite il metodo generico rispetto al metodo non generico.
 
  [!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
  [!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]

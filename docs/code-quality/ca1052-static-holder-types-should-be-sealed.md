@@ -14,16 +14,21 @@ ms.assetid: 51a3165d-781e-4a55-aa0d-ea25fee7d4f2
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d20ed9ab4ed7fc47d601fb6edd6d38675d0ccec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc264b9e47fe9169c0b1ad9d3257323c437620f7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897906"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550427"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: I tipi che contengono membri statici devono essere sealed
+
 |||
 |-|-|
 |TypeName|StaticHolderTypesShouldBeSealed|
@@ -35,13 +40,13 @@ ms.locfileid: "31897906"
  Un tipo pubblico o protetto contiene solo membri statici e non è dichiarato con la [sealed](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modificatore.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola presuppone che un tipo che contiene solo membri statici non è progettato per essere ereditate, perché il tipo non fornisce alcuna funzionalità che possono essere sostituite in un tipo derivato. Un tipo non adatto a essere ereditato deve essere contrassegnato con il `sealed` modificatore per impedirne l'utilizzo come tipo di base.
+ Questa regola presuppone che un tipo che contiene solo membri statici non è progettato per essere ereditato, poiché il tipo non fornisce alcuna funzionalità che può essere sottoposto a override in un tipo derivato. Un tipo che non è destinato a essere ereditato deve essere contrassegnato con il `sealed` modificatore proibire l'uso come un tipo di base.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, contrassegnare il tipo come `sealed`. Se la destinazione è [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 o versione successiva, un approccio migliore consiste nel contrassegnare il tipo come `static`. In questo modo, si evita che dichiarare un costruttore privato per impedire che la creazione della classe.
+ Per correggere una violazione di questa regola, contrassegnare il tipo come `sealed`. Se la destinazione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 o versione successiva, un approccio migliore consiste nel contrassegnare il tipo come `static`. In questo modo, evitare di dichiarare un costruttore privato per impedire la creazione di classe.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere un avviso da questa regola solo se il tipo è progettato per essere ereditata. L'assenza del `sealed` modificatore indica che il tipo può essere utilizzato come tipo di base.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Eliminare un avviso da questa regola solo se il tipo è progettato per essere ereditata. L'assenza del `sealed` modificatore suggerisce che il tipo è utile come un tipo di base.
 
 ## <a name="example-of-a-violation"></a>Esempio di violazione
 
@@ -56,7 +61,7 @@ ms.locfileid: "31897906"
 ## <a name="fix-with-the-static-modifier"></a>Risolvere con il modificatore Static
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente viene illustrato come risolvere una violazione di questa regola, contrassegnare il tipo con il `static` modificatore.
+ Nell'esempio seguente viene illustrato come correggere una violazione di questa regola, si contrassegna il tipo con il `static` modificatore.
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 991358ec361e414c9f5d335feb43eadde628a763
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dc61c31d2951d230c04fb52d7d1e6ffd932a03
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924674"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550307"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Gli overload degli operatori hanno alternative con nome
 |||
@@ -35,7 +35,7 @@ ms.locfileid: "31924674"
  È stato rilevato un overload di operatore e il metodo alternativo denominato previsto non è stato trovato.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Overload di operatori consente l'utilizzo di simboli per rappresentare i calcoli per un tipo. Ad esempio, un tipo che esegue l'overload il simbolo di segno più (+) per l'aggiunta in genere avrebbe un membro alternativo denominato 'Add'. Il membro alternativo denominato fornisce l'accesso per la stessa funzionalità come l'operatore e viene fornito per gli sviluppatori che programmano in linguaggi che non supportano gli operatori di overload.
+ L'overload degli operatori consente di usare i simboli per rappresentare i calcoli per un tipo. Ad esempio, un tipo che esegue l'overload sul simbolo più (+) per l'aggiunta in genere necessario un membro alternativo denominato 'Add'. Il membro alternativo denominato fornisce l'accesso per la stessa funzionalità dell'operatore e viene fornito per gli sviluppatori che programmano in linguaggi che non supportano gli operatori di overload.
 
  Questa regola esamina gli operatori elencati nella tabella seguente.
 
@@ -57,8 +57,8 @@ ms.locfileid: "31924674"
 |>=|>=|>=|Compare|
 |++|N/D|++|Operatore di incremento|
 |<>|!=|Equals|
-|<<|<<|<<|LeftShift|
-|<<=|<<=|<<=|LeftShift|
+|<<|<<|<<|MAIUSC|
+|<<=|<<=|<<=|MAIUSC|
 |<|<|<|Compare|
 |<=|<=|\<=|Compare|
 |&&|N/D|&&|LogicalAnd|
@@ -69,29 +69,29 @@ ms.locfileid: "31924674"
 |* (binario)|*|*|Per|
 |*=|N/D|*=|Per|
 |~|non|~|OnesComplement|
-|>>|>>|>>|Tasto|
-=|N/D|>>=|Tasto|
+|>>|>>|>>|MAIUSC destro|
+=|N/D|>>=|MAIUSC destro|
 |-(binario)|-(binario)|-(binario)|Sottrai|
 |-=|N/D|-=|Sottrai|
 |true|IsTrue|N/D|IsTrue (proprietà)|
-|-(unario)|N/D|-|Negare|
-|+ (unario)|N/D|+|Plus|
+|-(unario)|N/D|-|negate)|
+|+ (unario)|N/D|+|Segno più|
 |False|IsFalse|False|IsTrue (proprietà)|
 
- N/d = = Impossibile eseguire l'overload nella lingua selezionata.
+ N/d = = non possono essere sottoposti a overload nella lingua selezionata.
 
- La regola controlla anche gli operatori di cast impliciti ed espliciti in un tipo (`SomeType`) controllando i metodi denominati `ToSomeType` e `FromSomeType`.
+ La regola controlla anche gli operatori di cast impliciti ed espliciti in un tipo (`SomeType`) tramite il controllo dei metodi denominati `ToSomeType` e `FromSomeType`.
 
  In c#, quando viene eseguito l'overload di un operatore binario, l'operatore di assegnazione corrispondente, se presente, viene anche in modo implicito l'overload.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, implementare il metodo alternativo per l'operatore. il nome utilizzando il nome alternativo consigliato.
+ Per correggere una violazione di questa regola, implementare il metodo alternativo per l'operatore. il nome usando il nome alternativo consigliato.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola se si implementa una libreria condivisa. Le applicazioni possono ignorare un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente definisce una struttura che viola questa regola. Per correggere l'esempio, aggiungere un pubblico `Add(int x, int y)` metodo alla struttura.
+ Nell'esempio seguente definisce una struttura che violano questa regola. Per correggere l'esempio, aggiungere un pubblico `Add(int x, int y)` metodo alla struttura.
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 

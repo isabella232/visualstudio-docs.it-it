@@ -14,47 +14,51 @@ ms.assetid: 00882cf9-e10d-4d40-9126-3e6753e3c934
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a26c2b941289ed7a83e66e1677db172660d270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 25bb1d9d26c9f5f4b4447af46cb48b5492429136
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920255"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549327"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementare correttamente i metodi di serializzazione
+
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
 |Category|Microsoft.Usage|
-|Modifica importante|Sostanziale - Se il metodo è visibile all'esterno dell'assembly.<br /><br /> Non sostanziale - Se il metodo non è visibile all'esterno dell'assembly.|
+|Modifica importante|Rilievo - se il metodo è visibile all'esterno dell'assembly.<br /><br /> Non importante: se il metodo non è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
  Un metodo che gestisce un evento di serializzazione non dispone della visibilità, del tipo restituito o della firma corretta.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un metodo viene designato un gestore di serializzazione applicando uno dei seguenti attributi di serializzazione evento:
+ Un metodo viene designato un gestore di eventi di serializzazione applicando uno dei seguenti attributi di serializzazione eventi:
 
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- I gestori di eventi di serializzazione accettano un solo parametro di tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, restituire `void`e hanno `private` visibilità.
+ I gestori di eventi di serializzazione accettano un solo parametro di tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`e hanno `private` visibilità.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, correggere la firma, il tipo restituito o la visibilità del gestore dell'evento di serializzazione.
+ Per correggere una violazione di questa regola, correggere la firma, il tipo restituito o visibilità del gestore dell'evento di serializzazione.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene dichiarato in modo corretto la serializzazione di gestori eventi.
+ Nell'esempio seguente viene dichiarato in modo corretto la serializzazione di gestori di eventi.
 
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/VisualBasic/ca2238-implement-serialization-methods-correctly_1.vb)]
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]

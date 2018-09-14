@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aa6fe4cf38d89e76fc7151f493aac414179064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6808520f3b28a2da8421394619550166d88d52d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923377"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551938"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Valori letterali stringa di attributo devono essere analizzate correttamente
+
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
@@ -32,33 +33,34 @@ ms.locfileid: "31923377"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Parametro del valore letterale stringa dell'attributo non analizza correttamente un URL, un GUID o una versione.
+ Parametro dell'attributo del valore letterale stringa non analizza correttamente per un URL, GUID o versione.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Poiché gli attributi sono derivati da <xref:System.Attribute?displayProperty=fullName>e gli attributi vengono utilizzati in fase di compilazione, solo i valori costanti possono essere passati ai relativi costruttori. I parametri dell'attributo che devono rappresentare gli URL, GUID e versioni non possono essere tipizzati come <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, e <xref:System.Version?displayProperty=fullName>, perché questi tipi non possono essere rappresentati come costanti. Al contrario, devono essere rappresentati da stringhe.
+ Poiché gli attributi sono derivati da <xref:System.Attribute?displayProperty=fullName>e gli attributi vengono utilizzati in fase di compilazione, solo i valori costanti possono essere passati ai relativi costruttori. Parametri dell'attributo che devono rappresentare gli URL, GUID e le versioni non possono essere tipizzati come <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, e <xref:System.Version?displayProperty=fullName>, perché questi tipi non possono essere rappresentati come costanti. Invece, devono essere rappresentati da stringhe.
 
- Poiché il parametro è tipizzato come una stringa, è possibile che è stato passato un parametro di formato non corretto in fase di compilazione.
+ Poiché il parametro è tipizzato come una stringa, è possibile che un parametro di formato non corretto può essere passato in fase di compilazione.
 
- Questa regola utilizza un approccio euristico di denominazione per trovare i parametri che rappresentano un uniform resource identifier (URI), un identificatore univoco globale (GUID, Globally Unique Identifier) o una versione e verifica che il valore passato sia corretto.
+ Questa regola viene utilizzata un'euristica dei nomi per trovare i parametri che rappresentano un identificatore di risorsa uniforme (URI), un identificatore univoco globale (GUID, Globally Unique Identifier) o una versione e verifica che il valore passato sia corretto.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Modificare la stringa di parametri per un URL in formato corretto, GUID o versione.
+ Modificare la stringa di parametri a un URL, GUID o versione in formato corretto.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se il parametro non rappresenta un URL, un GUID o una versione.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un avviso da questa regola se il parametro non rappresenta un URL, GUID o versione.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente mostra codice per AssemblyFileVersionAttribute che viola questa regola.
+ L'esempio seguente illustra codice per il AssemblyFileVersionAttribute che violano questa regola.
 
  [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../code-quality/codesnippet/CSharp/ca2243-attribute-string-literals-should-parse-correctly_1.cs)]
 
- La regola viene attivata dagli elementi seguenti:
+ La regola viene attivata dai parametri seguenti:
 
--   Parametri che contengono 'version' e non possono essere analizzati in System. Version.
+- Parametri che contengono 'version' e non possono essere analizzati per Version.
 
--   Parametri che contengono "guid" e non possono essere analizzati in System. GUID.
+- Parametri che contengono "guid" e non possono essere analizzati da System. GUID.
 
--   Parametri che contengono 'uri', 'urn' o 'url' e non possono essere analizzati in System. Uri.
+- Parametri che contengono 'uri', 'urn' o 'url' e non possono essere analizzati in System. Uri.
 
 ## <a name="see-also"></a>Vedere anche
- [CA1054: I parametri URI non devono essere stringhe](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+
+- [CA1054: I parametri URI non devono essere stringhe](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6eef1097565090fd1b9be572f9a33afed9afed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f4f0240b8a3cc1a08b29d0f7f21f3f7599ab3fe
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917912"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546675"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: I costruttori statici devono essere privati
 |||
@@ -35,18 +35,18 @@ ms.locfileid: "31917912"
  Un tipo ha un costruttore statico non è privato.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un costruttore statico, noto anche come un costruttore di classe, viene utilizzato per inizializzare un tipo. Il costruttore statico viene chiamato prima che venga creata la prima istanza del tipo o venga fatto riferimento a qualsiasi membro statico. L'utente non dispone di alcun controllo sulla quando viene chiamato il costruttore statico. Se un costruttore statico non è privato, può essere chiamato da codice esterno al sistema. A seconda delle operazioni eseguite nel costruttore, questa situazione può causare comportamenti imprevisti.
+ Un costruttore statico, noto anche come un costruttore di classe, viene utilizzato per inizializzare un tipo. Il costruttore statico viene chiamato prima che venga creata la prima istanza del tipo o venga fatto riferimento a qualsiasi membro statico. L'utente non ha alcun controllo su quando viene chiamato il costruttore statico. Se un costruttore statico non è privato, può essere chiamato da codice esterno al sistema. A seconda delle operazioni eseguite nel costruttore, questa situazione può causare comportamenti imprevisti.
 
  Questa regola viene applicata dai compilatori c# e Visual Basic.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Le violazioni vengono in genere causate da una delle azioni seguenti:
+ Le violazioni sono in genere causate da una delle azioni seguenti:
 
--   Viene definito un costruttore statico per il tipo e non privata.
+- È definito un costruttore statico per il tipo e non hai apportato privata.
 
--   Il compilatore di linguaggio di programmazione l'aggiunta di un costruttore statico predefinito al tipo e non renderlo privato.
+- Il compilatore del linguaggio di programmazione aggiunto un costruttore statico predefinito al tipo e non hai apportato privata.
 
- Per risolvere il primo tipo di violazione, rendere privato il costruttore statico. Per correggere il secondo tipo, aggiungere un costruttore statico privato al tipo.
+ Per risolvere il tipo prima della violazione, rendere privato il costruttore statico. Per risolvere il tipo di secondo, aggiungere un costruttore statico privato per il tipo.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere tali violazioni. Se la progettazione software richiede una chiamata esplicita a un costruttore statico, è probabile che la struttura contiene gravi difetti e deve essere riviste.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non visualizzare tali violazioni. Se la progettazione software richiede una chiamata esplicita a un costruttore statico, è probabile che la struttura contiene difetti grave e deve essere esaminata.

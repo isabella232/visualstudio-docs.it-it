@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2ed7050ff7b804d3224390393c3c860bc25c30
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d76a0ecf6a2eeac677475eb25efe495129c213
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916038"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548517"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Controllare la sicurezza dichiarativa sui tipi di valori
+
 |||
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
@@ -32,31 +33,42 @@ ms.locfileid: "31916038"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo di valore pubblico o protetto è protetto da un [dati e modellazione](/dotnet/framework/data/index) o [le richieste di collegamento](/dotnet/framework/misc/link-demands).
+
+Un tipo valore pubblico o protetto è protetto da un [dati e modellazione](/dotnet/framework/data/index) oppure [linking](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Tipi di valore vengono allocati e inizializzati dai relativi costruttori predefiniti prima di eseguire altri costruttori. Se un tipo di valore è protetto da Demand o LinkDemand e il chiamante non dispone delle autorizzazioni per il controllo di sicurezza, un costruttore diverso da quello predefinito avrà esito negativo e verrà generata un'eccezione di sicurezza. Il tipo di valore non viene deallocato; si è mantenuto lo stato impostato dal costruttore predefinito. Non presupporre che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
+
+I tipi di valore sono allocati e inizializzati dai relativi costruttori predefiniti prima di eseguire altri costruttori. Se un tipo di valore è protetto da Demand o LinkDemand, e il chiamante non dispone di autorizzazioni per il controllo di sicurezza, un costruttore diverso da quello predefinito avrà esito negativo e verrà generata un'eccezione di sicurezza. Il tipo di valore non viene deallocato; rimarrà nello stato impostato dal costruttore predefinito. Non presupporre che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- È possibile correggere una violazione di questa regola se il controllo di sicurezza per rimuovere il tipo e controlli di sicurezza a livello di metodo utilizzare al suo posto. Si noti che la violazione di correzione in questo modo verrà impedisce ai chiamanti con autorizzazioni non adeguate di ottenere le istanze del tipo di valore. È necessario assicurarsi che un'istanza del tipo di valore, nello stato predefinito, non espongono informazioni riservate e non può essere utilizzata in modo dannoso.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se qualsiasi chiamante può ottenere le istanze del tipo di valore nello stato predefinito senza causare una minaccia alla sicurezza.
+È possibile correggere una violazione di questa regola a meno che non si rimuove il controllo di sicurezza dal tipo e controlli di sicurezza a livello di metodo di utilizzo al suo posto. Correzione della violazione in questo modo non impedisce ai chiamanti con autorizzazioni non adeguate dal recupero delle istanze del tipo di valore. È necessario assicurarsi che un'istanza del tipo di valore, nello stato predefinito, non espone informazioni riservate e non può essere utilizzata in modo dannoso.
 
-## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrata una raccolta che contiene un tipo di valore che viola questa regola. Si noti che il `StructureManager` tipo presuppone che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
- [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
+Se un chiamante qualsiasi possibile ottenere le istanze del tipo di valore nello stato predefinito senza causare una minaccia alla sicurezza, è possibile eliminare un avviso da questa regola.
 
-## <a name="example"></a>Esempio
- L'applicazione riportata di seguito illustra i punti deboli della libreria.
+## <a name="example-1"></a>Esempio 1
 
- [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
+Nell'esempio seguente mostra una libreria che contiene un tipo di valore che viola la regola. Il `StructureManager` tipo presuppone che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
 
- Questo esempio produce il seguente output:
+[!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
- **Costruttore personalizzato struttura: richiesta non riuscita. ** 
- **Nuovi valori SecuredTypeStructure 100 100**
-**nuovi valori SecuredTypeStructure 200 200**
+## <a name="example-2"></a>Esempio 2
+
+L'applicazione seguente illustra punti deboli della libreria.
+
+[!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
+
+Questo esempio produce il seguente output:
+
+```txt
+Structure custom constructor: Request failed.
+New values SecuredTypeStructure 100 100
+New values SecuredTypeStructure 200 200
+```
+
 ## <a name="see-also"></a>Vedere anche
- [Le richieste di collegamento](/dotnet/framework/misc/link-demands) [dati e modellazione](/dotnet/framework/data/index)
+
+- [Richieste di collegamento](/dotnet/framework/misc/link-demands)
+- [Dati e modellazione](/dotnet/framework/data/index)

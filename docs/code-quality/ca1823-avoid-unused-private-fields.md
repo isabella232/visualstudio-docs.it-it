@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d6e0301894b23f4671e16b24ea0b34eac4904
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918494"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549404"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitare campi privati non utilizzati
 |||
@@ -32,15 +32,15 @@ ms.locfileid: "31918494"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Questa regola viene segnalata quando un campo privato nel codice esiste ma non viene utilizzato da qualsiasi percorso di codice.
+ Questa regola viene segnalata quando un campo privato nel codice esiste ma non viene usato da qualsiasi percorso di codice.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Sono stati rilevati campi privati che non sembrano essere utilizzati all'interno dell'assembly.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere il campo o aggiungere codice che lo utilizza.
+ Per correggere una violazione di questa regola, rimuovere il campo o aggiungere codice che lo usa.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  È possibile eliminare un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate

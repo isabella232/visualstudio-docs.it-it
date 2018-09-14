@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d90e56eee9c68ff94b18204928ecaeeeb55ae0a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e80409a1837da3e82e375561341f4fb4c3da9c28
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919534"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548245"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Non generare eccezioni in clausole di eccezione
 |||
@@ -35,17 +35,17 @@ ms.locfileid: "31919534"
  Viene generata un'eccezione da un `finally`, filtro o una clausola fault.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando in una clausola di eccezione viene generata un'eccezione, aumenta notevolmente la difficoltà del debug.
+ Se in una clausola di eccezione viene generata un'eccezione, aumenta notevolmente la difficoltà del debug.
 
- Quando viene generata un'eccezione un `finally` o clausola fault, la nuova eccezione nasconde l'eccezione attiva, se presente. In questo modo difficili da rilevare ed eseguire il debug dell'errore originale.
+ Quando viene generata un'eccezione un `finally` o clausola fault, la nuova eccezione nasconde l'eccezione attiva, se presente. Ciò rende difficile da rilevare ed eseguire il debug dell'errore originale.
 
- Quando viene generata un'eccezione in una clausola di filtro, il runtime automaticamente intercetta l'eccezione e fa sì che il filtro restituisce false. Non è possibile indicare la differenza tra la restituzione di false e un'eccezione da parte di un filtro. Questo rende difficile rilevare e il debug degli errori nella logica del filtro.
+ Quando viene generata un'eccezione in una clausola di filtro, il runtime in modo invisibile intercetta l'eccezione e fa sì che il filtro restituisce false. Non è possibile indicare la differenza tra la restituzione di false e un'eccezione da parte di un filtro. Questo rende difficile rilevare e il debug degli errori nella logica del filtro.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere la violazione di questa regola, non generare in modo esplicito un'eccezione da un `finally`, filtro o una clausola fault.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso per questa regola. Non sono scenari in cui un'eccezione generata in una clausola di eccezione offre un vantaggio al codice in esecuzione.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Non eliminare un avviso per questa regola. Non esistono scenari in cui un'eccezione generata in una clausola di eccezione fornisce un vantaggio per l'esecuzione del codice.
 
 ## <a name="related-rules"></a>Regole correlate
  [CA1065: Non generare eccezioni in posizioni impreviste](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)

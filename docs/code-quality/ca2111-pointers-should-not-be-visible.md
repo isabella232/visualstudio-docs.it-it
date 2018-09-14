@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b7688910275414f1421fe81dffc5bc3efcd1d93
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a08d15ec491bb78c2d9398c8e689015c9523a3c1
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916374"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546824"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: I puntatori non devono essere visibili
+
 |||
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
@@ -32,21 +33,21 @@ ms.locfileid: "31916374"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un membro pubblico o protetto <xref:System.IntPtr?displayProperty=fullName> o <xref:System.UIntPtr?displayProperty=fullName> campo non è di sola lettura.
+ Un oggetto pubblico o protetto <xref:System.IntPtr?displayProperty=fullName> o <xref:System.UIntPtr?displayProperty=fullName> campo non è in sola lettura.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.IntPtr> e <xref:System.UIntPtr> sono tipi di puntatore che vengono utilizzati per accedere alla memoria non gestita. Se un puntatore non è privato, interno o in sola lettura, codice dannoso può modificare il valore dell'indicatore di misura, potenzialmente consentire l'accesso a percorsi arbitrari nella memoria o causando errori dell'applicazione o del sistema.
+ <xref:System.IntPtr> e <xref:System.UIntPtr> sono tipi di puntatore vengono utilizzati per accedere alla memoria non gestita. Se un puntatore non è privato, interno o di sola lettura, codice dannoso può modificare il valore del puntatore, potenzialmente consentire l'accesso a percorsi arbitrari nella memoria o causando errori di sistema o dell'applicazione.
 
  Se si prevede di proteggere l'accesso al tipo che contiene il campo del puntatore, vedere [CA2112: i tipi protetti non devono esporre campi](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Proteggere il puntatore del mouse, rendendo di sola lettura, interno o privato.
+ Proteggere il puntatore del mouse, rendendo di sola lettura, interni o privati.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere un avviso da questa regola se non si utilizzano il valore dell'indicatore di misura.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Eliminare un avviso da questa regola se non si fa affidamento sul valore dell'indicatore di misura.
 
 ## <a name="example"></a>Esempio
- Il codice seguente illustra i puntatori che violano e soddisfano la regola. Si noti che i puntatori non privati violano anche la regola [CA1051: non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ Il codice seguente illustra i puntatori che violano ed soddisfano la regola. Si noti che i puntatori non privati anche violano la regola [CA1051: non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
 
@@ -56,4 +57,6 @@ ms.locfileid: "31916374"
  [CA1051: Non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>
+
+- <xref:System.IntPtr?displayProperty=fullName>
+- <xref:System.UIntPtr?displayProperty=fullName>

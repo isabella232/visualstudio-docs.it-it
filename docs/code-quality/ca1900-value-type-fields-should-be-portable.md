@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9add21d932f7685a2dee214f396b2cbda089a5a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4608812c85764125e9cf33dba0e4b0d0b80bbaed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917215"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550557"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: I campi dei tipi di valore devono essere portabili
 |||
@@ -29,16 +29,16 @@ ms.locfileid: "31917215"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
 |Category|Microsoft.Portability|
-|Modifica importante|Sostanziale - Se il campo è visibile all'esterno dell'assembly.<br /><br /> Non sostanziale - Se il campo non è visibile all'esterno dell'assembly.|
+|Modifica importante|Rilievo - se il campo può essere visualizzato all'esterno dell'assembly.<br /><br /> Non sostanziale - Se il campo non è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
- Questa regola verifica che le strutture dichiarate con layout esplicito vengano allineate correttamente quando il marshalling a codice non gestito nei sistemi operativi a 64 bit. IA-64 non consente gli accessi alla memoria non allineata e il processo verrà arrestato in modo anomalo se questa violazione non viene risolto.
+ Questa regola verifica che le strutture che vengono dichiarate con layout esplicito vengano allineate correttamente quando il marshalling nel codice non gestito nei sistemi operativi a 64 bit. IA-64 non consente gli accessi alla memoria non allineata e il processo verrà arrestato se questa violazione non viene risolto.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Strutture con layout esplicito che contiene campi non allineati causano arresti anomali nei sistemi operativi a 64 bit.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Devono disporre di tutti i campi che sono inferiori a 8 byte offset che siano un multiplo delle dimensioni e i campi che sono di 8 byte o superiori devono avere offset che sono un multiplo di 8. Un'altra soluzione consiste nell'utilizzare `LayoutKind.Sequential` anziché `LayoutKind.Explicit`, se ragionevole.
+ Tutti i campi che sono inferiori a 8 byte devono disporre di offset che siano un multiplo della dimensione e i campi che sono a 8 byte o superiori devono avere gli offset sono un multiplo di 8. Un'altra soluzione consiste nell'usare `LayoutKind.Sequential` invece di `LayoutKind.Explicit`se ragionevole.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Questo avviso deve essere eliminato solo se si verifica l'errore.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Questo avviso deve essere eliminato solo se si verifica in errore.

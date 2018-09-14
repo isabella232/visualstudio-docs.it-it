@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5863f4d8ca4db47f7e537f0b1abc5eb280434c80
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ff16cdce4be04bd076c93763fb6a22d2721675f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916799"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551782"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Asserzioni protette
+
 |||
 |-|-|
 |TypeName|SecureAsserts|
@@ -32,16 +33,18 @@ ms.locfileid: "31916799"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo asserisce un'autorizzazione e non vengono eseguiti controlli di sicurezza sul chiamante.
+ Un metodo asserisce un'autorizzazione e non esegue alcuna verifica di sicurezza sul chiamante.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando si asserisce un'autorizzazione di sicurezza senza eseguire alcun controllo di sicurezza, nel codice potrebbero restare punti deboli nella sicurezza. Un percorso stack di sicurezza si interrompe quando viene dichiarata un'autorizzazione di sicurezza. Se si asserisce un'autorizzazione senza eseguire alcun controllo sul chiamante, il chiamante indirettamente eseguire codice utilizzando le autorizzazioni. Asserzioni senza controlli di sicurezza sono consentite solo quando si è certi che l'asserzione non può essere utilizzato in modo dannoso. Un'asserzione è puramente informativo se il codice chiamato non provoca problemi o gli utenti non è possibile passare informazioni arbitrarie al codice chiamato.
+ Quando si asserisce un'autorizzazione di sicurezza senza eseguire alcun controllo di sicurezza, nel codice potrebbero restare punti deboli nella sicurezza. Uno stack di sicurezza si interrompe quando viene dichiarata un'autorizzazione di sicurezza. Se si asserisce un'autorizzazione senza eseguire alcun controllo sul chiamante, il chiamante indirettamente potrebbe eseguire codice con le autorizzazioni. Asserzioni senza controlli di sicurezza sono consentiti se si conosce che l'asserzione non può essere usata in modo dannoso. Un'asserzione non crea problemi se il codice chiamato sia innocuo o se gli utenti non è possibile passare informazioni arbitrarie al codice che si chiama.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere una richiesta di sicurezza per il metodo o il tipo dichiarante.
+ Per correggere una violazione di questa regola, aggiungere una richiesta di sicurezza per il metodo o nel relativo tipo dichiarante.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere un avviso da questa regola solo dopo un'attenta revisione della sicurezza.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Eliminare un avviso da questa regola solo dopo un'attenta revisione della sicurezza.
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [Linee guida di codice sicuro](/dotnet/standard/security/secure-coding-guidelines)
+
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
+- [Linee guida per la generazione di codice sicuro](/dotnet/standard/security/secure-coding-guidelines)

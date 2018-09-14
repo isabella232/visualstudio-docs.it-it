@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faed3f5d49c6c08ca0a9bc90465f4e21ef3fec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916953"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549732"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Gli identificatori non devono contenere un suffisso non corretto
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -32,12 +33,14 @@ ms.locfileid: "31916953"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un identificatore ha un suffisso non corretto.
+
+Un identificatore ha un suffisso non corretto.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per convenzione, solo i nomi dei tipi che estendono determinati tipi di base o che implementano determinate interfacce o dei tipi derivati da questi tipi devono terminare con suffissi specifici riservati. Gli altri nomi di tipi non devono utilizzare questi suffissi riservati.
 
- Nella tabella seguente sono elencati i suffissi riservati e i tipi base e interfacce a cui sono associate.
+Per convenzione, solo i nomi dei tipi che estendono determinati tipi di base o implementano determinate interfacce o dei tipi derivati da questi tipi devono terminare con suffissi specifici riservati. Gli altri nomi di tipi non devono utilizzare questi suffissi riservati.
+
+La tabella seguente elenca i suffissi riservati e i tipi di base e interfacce a cui sono associate.
 
 |Suffisso|Interfaccia di tipo di base|
 |------------|--------------------------|
@@ -45,33 +48,38 @@ ms.locfileid: "31916953"
 |Raccolta|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
 |Dizionario|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
-|EventHandler|Un delegato del gestore di evento|
+|EventHandler|Un delegato del gestore eventi|
 |Eccezione|<xref:System.Exception?displayProperty=fullName>|
 |Autorizzazioni|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Coda|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Flusso|<xref:System.IO.Stream?displayProperty=fullName>|
 
- Inoltre, i seguenti suffissi devono **non** utilizzare:
+Inoltre, i suffissi seguenti dovrebbero **non** utilizzabili:
 
--   delegato
+- `Delegate`
 
--   Enum
+- `Enum`
 
--   Impl - utilizzare invece 'Base'
+- `Impl` (usare `Core` invece)
 
--   Ex o suffisso analogo per distinguerlo da una versione precedente dello stesso tipo
+- `Ex` o del suffisso simile per distinguerlo da una versione precedente dello stesso tipo
 
- Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la confidenza di clienti che la libreria è stata sviluppata da un utente che ha esperienza nello sviluppo di codice gestito.
+Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Rimuovere il suffisso dal nome del tipo.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non eliminare un avviso da questa regola a meno che il suffisso abbia un significato ambiguo nel dominio dell'applicazione.
+Rimuovere il suffisso dal nome del tipo.
+
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+
+Non eliminare un avviso da questa regola a meno che il suffisso abbia un significato ambiguo nel dominio dell'applicazione.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+
+- [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Gli attributi](/dotnet/standard/design-guidelines/attributes) [gestione e generazione di eventi](/dotnet/standard/events/index)
+
+- [Attributi](/dotnet/standard/design-guidelines/attributes)
+- [La gestione e generazione di eventi](/dotnet/standard/events/index)

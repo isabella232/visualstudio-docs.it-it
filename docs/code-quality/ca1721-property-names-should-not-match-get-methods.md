@@ -14,16 +14,20 @@ ms.assetid: 45a0e853-1f06-4688-af1b-cc634409e295
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c1b6502647644b59291b9d27ccf633d089d7110
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 26f6e23a340ec018f766477f0bdce089a43ca3e4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918595"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549677"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: I nomi delle proprietà non devono corrispondere ai metodi get
+
 |||
 |-|-|
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
@@ -32,24 +36,24 @@ ms.locfileid: "31918595"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Il nome di un membro pubblico o protetto inizia con 'Get' e in caso contrario corrisponda al nome di una proprietà di tipo pubblico o protetto. Ad esempio, un tipo che contiene un metodo denominato "GetColor" e una proprietà denominata 'Color' viola questa regola.
+ Il nome di un membro pubblico o protetto inizia con 'Get' e in caso contrario, corrisponde al nome di una proprietà pubblica o protetta. Ad esempio, un tipo che contiene un metodo denominato "GetColor" e una proprietà denominata 'Color' viola questa regola.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I metodi get e le proprietà devono avere nomi che consente di distinguere chiaramente le relative funzioni.
+ I metodi get e le proprietà devono avere nomi di distinguere chiaramente le relative funzioni.
 
- Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce il tempo necessario per l'apprendimento di una nuova libreria software e aumenta la confidenza di clienti che la libreria è stata sviluppata da un utente che ha esperienza nello sviluppo di codice gestito.
+ Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. Questa coerenza consente di ridurre il tempo necessario per informazioni su una nuova libreria di software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Modificare il nome in modo che il nome di un metodo che è preceduto da 'Get' non corrisponde.
+ Modificare il nome in modo che il nome di un metodo che ha il prefisso 'Get' non corrisponde.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.
 
 > [!NOTE]
->  Questo avviso può essere esclusa se il metodo Get è determinato implementando l'interfaccia IExtenderProvider.
+> Questo avviso può essere escluso se il metodo Get è causato dall'implementazione IExtenderProvider (interfaccia).
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente contiene un metodo e proprietà che violano questa regola.
+ L'esempio seguente contiene un metodo e proprietà che violano questa regola.
 
  [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
  [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]

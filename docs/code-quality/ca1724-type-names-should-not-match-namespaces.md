@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3944aba1a8b967e8da2bee007a4bbd4bacf4d6b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c178558743ca69fb3b62eccaf8164e4b49167ad3
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915828"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547568"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: I nomi dei tipi non devono corrispondere agli spazi dei nomi
 |||
@@ -38,7 +38,7 @@ ms.locfileid: "31915828"
  I nomi dei tipi non devono corrispondere ai nomi degli spazi dei nomi definiti nella libreria di classi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. La violazione di questa regola può ridurre l'utilizzabilità della libreria.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Selezionare un nome di tipo che corrisponde al nome di un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] spazio dei nomi della libreria di classe.
+ Selezionare un nome di tipo che non corrispondono al nome di un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dello spazio dei nomi della libreria di classi.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Per un nuovo sviluppo, non noto possono verificarsi scenari in cui è necessario escludere un avviso da questa regola. Prima di eliminare l'avviso, valutare attentamente come potrebbero confondere gli utenti della raccolta dal nome corrispondente. Per le librerie fornite, potrebbe essere necessario escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Per i nuovi sviluppi, nessun noti verificarsi gli scenari in cui è necessario eliminare un avviso da questa regola. Prima di eliminare l'avviso, considerare attentamente come gli utenti della libreria potrebbero essere confusi dal nome corrispondente. Per le librerie, potrebbe essere necessario eliminare un avviso da questa regola.

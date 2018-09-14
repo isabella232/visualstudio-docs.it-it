@@ -14,16 +14,20 @@ ms.assetid: 6480ff5e-0caa-4707-814e-2f927cdafef5
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d3e40c73a02c43ecfb13eda0abcfabcb0d3ad5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8c1b8adb3454b7309eefa49ded129ce899c3cf58
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919869"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548582"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Fornire metodi di deserializzazione per i campi facoltativi
+
 |||
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
@@ -32,15 +36,15 @@ ms.locfileid: "31919869"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo dispone di un campo che è contrassegnato con il <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> attributo e il tipo non fornisce metodi di gestione degli eventi di deserializzazione.
+ Un tipo ha un campo contrassegnato con il <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> attributo e il tipo non fornisce i metodi di gestione degli eventi di deserializzazione.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il <xref:System.Runtime.Serialization.OptionalFieldAttribute> attributo non ha alcun effetto sulla serializzazione, un campo contrassegnato con l'attributo è serializzato. Tuttavia, il campo viene ignorato durante la deserializzazione e mantiene il valore predefinito associato al relativo tipo. Gestori di eventi di deserializzazione devono essere dichiarati per impostare il campo durante il processo di deserializzazione.
+ Il <xref:System.Runtime.Serialization.OptionalFieldAttribute> attributo non ha alcun effetto sulla serializzazione; viene serializzato un campo contrassegnato con l'attributo. Tuttavia, il campo viene ignorato durante la deserializzazione e mantiene il valore predefinito associato al relativo tipo. I gestori di eventi di deserializzazione devono essere dichiarati per impostare il campo durante il processo di deserializzazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere metodi per il tipo di gestione degli eventi di deserializzazione.
+ Per correggere una violazione di questa regola, aggiungere i metodi per il tipo di gestione degli eventi di deserializzazione.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  È possibile eliminare un avviso da questa regola se il campo deve essere ignorato durante il processo di deserializzazione.
 
 ## <a name="example"></a>Esempio

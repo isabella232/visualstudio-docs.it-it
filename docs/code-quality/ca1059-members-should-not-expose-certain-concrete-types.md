@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c872685445dddaf55efc8c5880b053c865ff2351
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04e8348dc77222fbc06887efebf44c735eb7c8f0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898167"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550021"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: I membri non devono esporre tipi concreti specifici
 |||
@@ -32,24 +32,24 @@ ms.locfileid: "31898167"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un membro visibile esternamente è un tipo concreto specifico o espone tipi concreti specifici tramite uno dei relativi parametri o valore restituito. Attualmente, questa regola segnala l'esposizione dei tipi concreti seguenti:
+ Un membro visibile esternamente è un certo tipo concreto o espone tipi concreti specifici tramite uno dei relativi parametri o valore restituito. Attualmente, questa regola segnala l'esposizione dei tipi concreti seguenti:
 
--   Un tipo derivato da <xref:System.Xml.XmlNode?displayProperty=fullName>.
+- Un tipo derivato da <xref:System.Xml.XmlNode?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un tipo concreto è un tipo con implementazione completa, pertanto è possibile crearne un'istanza. Per consentire un utilizzo esteso del membro, sostituire il tipo concreto con l'interfaccia suggerita. In questo modo il membro accettare qualsiasi tipo che implementa l'interfaccia o essere utilizzate dove è previsto un tipo che implementa l'interfaccia.
+ Un tipo concreto è un tipo con implementazione completa, pertanto è possibile crearne un'istanza. Per consentire un utilizzo esteso del membro, sostituire il tipo concreto con l'interfaccia suggerita. In questo modo il membro accettare qualsiasi tipo che implementa l'interfaccia oppure essere usato in cui è previsto un tipo che implementa l'interfaccia.
 
- Nella tabella seguente sono elencati i tipi concreti di destinazione e le relative sostituzioni consigliate.
+ La tabella seguente elenca i tipi concreti di destinazione e le relative sostituzioni consigliate.
 
 |Tipo concreto|Sostituzione|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Tramite l'interfaccia separa il membro da un'implementazione specifica di un'origine dati XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Tramite l'interfaccia consente di disaccoppiare il membro da un'implementazione specifica di un'origine dati XML.|
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, modificare il tipo concreto per l'interfaccia suggerita.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un messaggio da questa regola se è necessaria la funzionalità specifica fornita dal tipo concreto.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un messaggio da questa regola se la funzionalità specifica fornita dal tipo concreto è obbligatorio.
 
 ## <a name="related-rules"></a>Regole correlate
  [CA1011: Considerare il passaggio di tipi di base come parametri](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

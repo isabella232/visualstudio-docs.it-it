@@ -15,59 +15,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f83e7754bcb96de05eac3273133cabbc8b8f61
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c81bd543a6695adcea37db5ab8570ff7749c0160
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917827"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551454"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizzare termini preferiti
+
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |Category|Microsoft.Naming|
-|Modifica importante|Sostanziale - Quando generato su assembly<br /><br /> Non sostanziale - Quando generato su parametri di tipo|
+|Modifica importante|Rilievo - quando viene attivato su assembly<br /><br /> Non sostanziale - Quando viene attivato su parametri di tipo|
 
 ## <a name="cause"></a>Causa
- Il nome di un identificatore visibile esternamente include un termine per il quale esiste un termine alternativo preferito. In alternativa, il nome include il termine Flag o flag.
+
+Il nome di un identificatore visibile esternamente include un termine per il quale esiste un termine alternativo preferito. In alternativa, il nome include il termine contrassegni o Flag.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola analizza un identificatore in token. Ogni singolo token e ogni combinazione di due token contigui viene confrontato con i termini che vengono compilati nella regola e nella sezione obsoleto dei dizionari personalizzati. La tabella seguente illustra i termini che vengono compilati nella regola e le alternative preferite.
+
+Questa regola analizza un identificatore in token. Ogni singolo token e ogni combinazione di token duale contigui viene confrontato con termini che vengono compilati nella regola e nella sezione dei dizionari personalizzati obsoleto. La tabella seguente illustra le condizioni che vengono compilate nella regola e le alternative preferite.
 
 |Termine obsoleto|Termine preferito|
 |-------------------|--------------------|
-|non sono|Non|
-|Annullato|Annullato|
-|Impossibile|Non è possibile|
-|ComPlus|EnterpriseServices|
-|Couldnt|CouldNot|
-|Didnt|DidNot|
-|Doesnt|Non|
-|Non|Si|
-|Flag o Flags|Non vi è alcun termine di sostituzione. Non usare.|
-|non veniva|HadNot|
-|Non è ancora|HasNot|
-|non sono stati|HaveNot|
-|Indici|Indexes|
-|non è|IsNot|
-|Account di accesso|Accesso|
-|Disconnessione|Disconnessione|
-|Shouldnt|ShouldNot|
-|Sign-on|Accedi|
-|Conclusione|Disconnessione|
-|Wasnt|WasNot|
-|non sono stati|WereNot|
-|Non riuscita|Non|
-|Wouldnt|WouldNot|
-|Scrivibile|Scrivibile|
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` o `Flags`|Non vi è alcun termine sostitutivo. Non usare.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, sostituire il termine con il termine alternativo preferito.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere un avviso da questa regola solo se il nome dell'identificatore è intenzionale e riguarda in particolare il termine originale anziché il termine preferito.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Eliminare un avviso da questa regola solo se il nome dell'identificatore è intenzionale e riguarda in modo specifico per il termine originale anziché il termine preferito.
 
 ## <a name="related-rules"></a>Regole correlate
  [Avvisi di denominazione](../code-quality/naming-warnings.md)

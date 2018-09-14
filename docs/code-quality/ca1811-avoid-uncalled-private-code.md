@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37ef9cdc76b86d3ad3c18489f63fb5c340aa6a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41b5bce1878ae7d23c21aedd0a4cb1b24b66548d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918464"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550680"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitare il codice privato non chiamato
 |||
@@ -34,23 +34,23 @@ ms.locfileid: "31918464"
 ## <a name="cause"></a>Causa
  Membro privato o interno (a livello di assembly) non presenta chiamanti nell'assembly, non viene richiamato da common language runtime e non viene richiamato da un delegato. I membri seguenti non sono controllati da questa regola:
 
--   Membri di interfaccia esplicita.
+- Membri di interfaccia esplicita.
 
--   Costruttori statici.
+- Costruttori statici.
 
--   Costruttori di serializzazione.
+- Costruttori di serializzazione.
 
--   I metodi contrassegnati con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- I metodi contrassegnati con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
--   Membri che corrispondono alle sostituzioni.
+- Membri che sono sostituzioni.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola può segnalare falsi positivi se si verificano i punti di ingresso che non sono attualmente identificate dalla logica della regola. Inoltre, un compilatore può creare codice non chiamabile in un assembly.
+ Questa regola può segnalare i falsi positivi se si verificano i punti di ingresso che non sono attualmente identificati dalla logica della regola. Inoltre, un compilatore può generare codice non chiamabile in un assembly.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, rimuovere il codice non chiamabile o aggiungere codice che lo chiama.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  È possibile eliminare un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate

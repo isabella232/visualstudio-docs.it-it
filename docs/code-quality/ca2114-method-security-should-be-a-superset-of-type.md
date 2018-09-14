@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d2fc6fb60dd837dd93de1db2758ee0e2c216850
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 66fe0031380139c55942a1a47f71066a327d5e24
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914952"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551428"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La sicurezza del metodo deve essere un superset del tipo
+
 |||
 |-|-|
 |TypeName|MethodSecurityShouldBeASupersetOfType|
@@ -32,33 +33,41 @@ ms.locfileid: "31914952"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo ha la sicurezza dichiarativa e uno dei relativi metodi ha la sicurezza dichiarativa per la stessa azione di sicurezza e l'azione di sicurezza non è [le richieste di collegamento](/dotnet/framework/misc/link-demands), e le autorizzazioni selezionate per il tipo non sono un sottoinsieme delle autorizzazioni controllato dal metodo.
+ Un tipo dispone di sicurezza dichiarativa e uno dei relativi metodi ha la sicurezza dichiarativa per la stessa azione di sicurezza e l'azione di sicurezza non è [richieste di collegamento](/dotnet/framework/misc/link-demands), e le autorizzazioni selezionate per il tipo non sono un sottoinsieme delle autorizzazioni selezionata dal metodo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un metodo non può presentare sia una sicurezza dichiarativa a livello di metodo e a livello di tipo per la stessa azione. I due controlli non sono stati combinati; viene applicata solo la richiesta a livello di metodo. Ad esempio, se un tipo richiede l'autorizzazione `X`, e uno dei relativi metodi richiede l'autorizzazione `Y`, codice non è necessario disporre dell'autorizzazione `X` per eseguire il metodo.
+ Un metodo non deve avere sia una sicurezza dichiarativa a livello di metodo e a livello di tipo per la stessa azione. Non vengono combinati i due controlli; viene applicata solo la richiesta a livello di metodo. Ad esempio, se un tipo richiede l'autorizzazione `X`, e uno dei relativi metodi richiede l'autorizzazione `Y`, codice non è necessario disporre dell'autorizzazione `X` all'esecuzione del metodo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Esaminare il codice per assicurarsi che entrambe le azioni sono obbligatori. Se sono necessarie entrambe le azioni, assicurarsi che l'azione a livello di metodo include la sicurezza specificata a livello di tipo. Ad esempio, se il tipo richiede l'autorizzazione `X`, e il relativo metodo deve anche richiedere l'autorizzazione `Y`, il metodo deve richiedere in modo esplicito `X` e `Y`.
+ Esaminare il codice per assicurarsi che entrambe le azioni sono obbligatori. Se sono necessarie entrambe le azioni, assicurarsi che l'azione a livello di metodo include la sicurezza a livello di tipo specificata. Ad esempio, se il tipo richiede l'autorizzazione `X`, e il relativo metodo deve anche richiedere l'autorizzazione `Y`, il metodo deve richiedere in modo esplicito `X` e `Y`.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se il metodo non richiede la sicurezza specificata dal tipo. Tuttavia, questo non è uno scenario comune e potrebbe indicare la necessità di una revisione della progettazione di attenzione.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un avviso da questa regola se il metodo non richiede la sicurezza specificata dal tipo. Tuttavia, ciò non è uno scenario comune e potrebbe indicare la necessità di una revisione di un'attenta progettazione.
 
-## <a name="example"></a>Esempio
- L'esempio seguente usa le autorizzazioni di ambiente per illustrare i rischi di violazione di questa regola. In questo esempio, il codice dell'applicazione crea un'istanza del tipo protetto prima di negare l'autorizzazione necessaria per il tipo. In uno scenario reale di rischio, l'applicazione potrebbe richiedere un altro modo per ottenere un'istanza dell'oggetto.
+## <a name="example-1"></a>Esempio 1
 
- Nell'esempio seguente, la libreria richiede l'autorizzazione per un tipo di scrittura e autorizzazioni di lettura per un metodo.
+Nell'esempio seguente usa le autorizzazioni dell'ambiente per illustrare i pericoli di violazione di questa regola. In questo esempio, il codice dell'applicazione crea un'istanza del tipo protetto prima di negare l'autorizzazione necessaria per il tipo. In uno scenario reale delle minacce, l'applicazione potrebbe richiedere un altro modo per ottenere un'istanza dell'oggetto.
 
- [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
+Nell'esempio seguente, la libreria richiede autorizzazioni di scrittura per un tipo e l'autorizzazione per un metodo di lettura.
 
-## <a name="example"></a>Esempio
- Il codice di applicazione seguente illustra la vulnerabilità della libreria chiamando il metodo, anche se non soddisfa il requisito di sicurezza a livello di tipo.
+[!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
 
- [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
+## <a name="example-2"></a>Esempio 2
 
- Questo esempio produce il seguente output:
+Il codice dell'applicazione seguente illustra la vulnerabilità della libreria chiamando il metodo anche se non soddisfa il requisito di sicurezza a livello di tipo.
 
- **[Tutte le autorizzazioni] Le informazioni personali: 6/16/1964 12:00:00 AM**
- **[Nessuna autorizzazione di scrittura (richiesta dal tipo)] informazioni personali: 6/16/1964 12:00:00 AM**
- **[read non (autorizzazione viene richiesto dalle (metodo))] non è stato possibile accedere alle informazioni personali: richiesta non riuscita.**
+[!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
+
+Questo esempio produce il seguente output:
+
+```txt
+[All permissions] Personal information: 6/16/1964 12:00:00 AM
+[No write permission (demanded by type)] Personal information: 6/16/1964 12:00:00 AM
+[No read permission (demanded by method)] Could not access personal information: Request failed.
+```
+
 ## <a name="see-also"></a>Vedere anche
- [Linee guida di codice sicuro](/dotnet/standard/security/secure-coding-guidelines) [le richieste di collegamento](/dotnet/framework/misc/link-demands) [dati e modellazione](/dotnet/framework/data/index)
+
+- [Linee guida per la generazione di codice sicuro](/dotnet/standard/security/secure-coding-guidelines)
+- [Richieste di collegamento](/dotnet/framework/misc/link-demands)
+- [Dati e modellazione](/dotnet/framework/data/index)

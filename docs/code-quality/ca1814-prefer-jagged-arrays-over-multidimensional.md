@@ -14,16 +14,20 @@ ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cbcf3cc6167cc98cb61380aa1ac54af5a291eb09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 69210ac7957cf66119c059fc34a9eb4e11a4d0cb
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915744"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551892"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Preferire matrici di matrici rispetto a matrici multidimensionali
+
 |||
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
@@ -40,11 +44,11 @@ ms.locfileid: "31915744"
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, modificare la matrice multidimensionale in una matrice di matrici.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere un avviso da questa regola se la matrice multidimensionale non causare uno spreco di spazio.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Eliminare un avviso da questa regola se la matrice multidimensionale non spreco di spazio.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente mostra le dichiarazioni per le matrici di matrici e multidimensionali.
+ L'esempio seguente illustra le dichiarazioni per matrici e matrici multidimensionali.
 
  [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
  [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]

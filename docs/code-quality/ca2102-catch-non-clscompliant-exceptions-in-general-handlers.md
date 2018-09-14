@@ -15,14 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f32e6fa3d1dfc3c8ee0f116a6e06de49c90ea256
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4f424ec6585119619cc7fa64efe5d436779b8a65
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916434"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547454"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Individuare le eccezioni non conformi a CLS nei gestori generali
+
 |||
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
@@ -31,25 +32,25 @@ ms.locfileid: "31916434"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Un membro in un assembly che non è contrassegnato con il <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> o è contrassegnato come `RuntimeCompatibility(WrapNonExceptionThrows = false)` contiene un blocco catch che gestisce <xref:System.Exception?displayProperty=fullName> e non contiene un blocco catch generale immediatamente successivo. Questa regola ignora [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] assembly.
+ Un membro in un assembly che non sia contrassegnato con il <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> o è contrassegnata `RuntimeCompatibility(WrapNonExceptionThrows = false)` contiene un blocco catch che gestisce <xref:System.Exception?displayProperty=fullName> e non contiene un blocco catch generale immediatamente successivo. Questa regola ignora [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] assembly.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un blocco catch che gestisce <xref:System.Exception> intercetta tutte le eccezioni conforme a Common Language Specification (CLS). Tuttavia, non rileva eccezioni non CLS. Non conforme a CLS eccezioni possono essere generate da codice nativo o da codice gestito che è stato generato da Microsoft intermediate language (MSIL) dell'Assembler. Si noti che in c# e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilatori non consente non conforme a CLS la generazione di eccezioni conforme e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] non intercetta le eccezioni non CLS conformi. Se si intende del blocco catch per gestire tutte le eccezioni, utilizzare la seguente sintassi blocco catch generale.
+ Un blocco catch che gestisce <xref:System.Exception> intercetta tutte le eccezioni conforme a Common Language Specification (CLS). Tuttavia, non rileva eccezioni non CLS. Non conforme a CLS possono essere generate eccezioni dal codice nativo o da codice gestito che è stato generato da Microsoft intermediate language (MSIL) dell'Assembler. Si noti che il codice c# e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilatori non consente non conformi a CLS conforme di eccezioni e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] non intercetta eccezioni non CLS. Se si intende del blocco catch per gestire tutte le eccezioni, usare la sintassi di blocco catch generale seguente.
 
--   C#: `catch {}`
+- C#: `catch {}`
 
--   C++: `catch(...) {}` o `catch(Object^) {}`
+- C++: `catch(...) {}` o `catch(Object^) {}`
 
- Un'eccezione conforme a CLS non gestita diventa un problema di sicurezza quando vengono rimosse le autorizzazioni concesse in precedenza nel blocco catch. Poiché non vengono intercettate eccezioni non CLS, un metodo dannoso che genera un'eccezione non CLS eccezione potrebbe eseguire con autorizzazioni elevate.
+ Eccezione non gestita non conformi a CLS conformi diventa un problema di sicurezza quando vengono rimosse le autorizzazioni concesse in precedenza nel blocco catch. Poiché non vengono rilevate eccezioni non CLS, è stato possibile eseguire un metodo dannoso che genera un'eccezione non CLS eccezione compatibile con autorizzazioni elevate.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola quando si desidera rilevare tutte le eccezioni, sostituire o aggiungere un blocco catch generale o contrassegnare l'assembly `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Se le autorizzazioni vengono rimosse nel blocco catch, duplicato in generale la funzionalità di blocco catch. Se non si intende gestire tutte le eccezioni, sostituire il blocco catch che gestisce <xref:System.Exception> con blocchi catch che gestiscono i tipi di eccezione specifici.
+ Per correggere una violazione di questa regola quando si desidera intercettare tutte le eccezioni, sostituire o aggiungere un blocco catch generale o contrassegnare l'assembly `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Se le autorizzazioni vengono rimossi in un blocco catch, duplicati in generale la funzionalità blocco catch. Se non è lo scopo di gestire tutte le eccezioni, sostituire il blocco catch che gestisce <xref:System.Exception> con blocchi catch che gestiscono tipi di eccezione specifici.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se il blocco try non contiene istruzioni che potrebbero generare un'eccezione non CLS. Poiché qualsiasi codice nativo o gestito potrebbe eccezione non CLS conforme, è necessario conoscere tutto il codice che può essere eseguito in tutti i percorsi di codice all'interno del blocco try. Si noti che le eccezioni conformi non conforme a CLS non vengono generate da common language runtime.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un avviso da questa regola se il blocco try non contiene tutte le istruzioni che possono generare un'eccezione non CLS conforme. Poiché qualsiasi codice nativo o gestito potrebbe generare un non conformi a CLS eccezione conforme, ciò richiede una conoscenza di tutto il codice che può essere eseguito in tutti i percorsi del codice nel blocco try. Si noti che-eccezioni non CLS conformi non vengono generate da common language runtime.
 
-## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrata una classe MSIL che genera un'eccezione non CLS.
+## <a name="example-1"></a>Esempio 1
+ Nell'esempio seguente viene illustrata una classe di codice MSIL che genera un'eccezione non CLS conforme.
 
 ```
 .assembly ThrowNonClsCompliantException {}
@@ -65,7 +66,7 @@ ms.locfileid: "31916434"
 }
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
  Nell'esempio seguente viene illustrato un metodo che contiene un blocco catch generale che soddisfa la regola.
 
  [!code-csharp[FxCop.Security.CatchNonClsCompliantException#1](../code-quality/codesnippet/CSharp/ca2102-catch-non-clscompliant-exceptions-in-general-handlers_1.cs)]
@@ -81,4 +82,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
  [CA1031: Non rilevare tipi di eccezione generali](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Eccezioni e gestione delle eccezioni](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling) [Ilasm.exe (Assembler IL)](/dotnet/framework/tools/ilasm-exe-il-assembler) [indipendenza del linguaggio e componenti indipendenti dal linguaggio](/dotnet/standard/language-independence-and-language-independent-components)
+
+- [Eccezioni e gestione delle eccezioni](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling)
+- [Ilasm.exe (Assembler IL)](/dotnet/framework/tools/ilasm-exe-il-assembler)
+- [Indipendenza del linguaggio e componenti indipendenti dal linguaggio](/dotnet/standard/language-independence-and-language-independent-components)

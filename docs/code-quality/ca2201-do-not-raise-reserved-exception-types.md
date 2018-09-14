@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 696eed674dd2b85ec048290ba88084751230635d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 763c8656507f8a1d9c1f59bd548469c338aeb012
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924037"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547519"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Non generare tipi di eccezione riservati
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -32,60 +33,65 @@ ms.locfileid: "31924037"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo genera un tipo di eccezione troppo generale o che è riservato dal runtime.
+
+Un metodo genera un tipo di eccezione che è troppo generico o che è riservato dal runtime.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I seguenti tipi di eccezione sono troppo generici per fornire informazioni sufficienti per l'utente:
 
--   <xref:System.Exception?displayProperty=fullName>
+I seguenti tipi di eccezione sono troppo generici per fornire informazioni sufficienti per l'utente:
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
- I seguenti tipi di eccezione sono riservati e devono essere generati solo da common language runtime:
+- <xref:System.SystemException?displayProperty=fullName>
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+I seguenti tipi di eccezione sono riservati e devono essere generati solo da common language runtime:
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
- **Non generare eccezioni generali**
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- Se si genera un tipo di eccezione generale, ad esempio <xref:System.Exception> o <xref:System.SystemException> in una libreria o framework, saranno costretti a rilevare tutte le eccezioni, incluse le eccezioni sconosciute che non sono progettati gestire.
+**Non generare eccezioni generali**
 
- Al contrario, generare un tipo più derivato esiste già nel framework oppure creare un nuovo tipo che deriva da <xref:System.Exception>.
+Se si genera un tipo di eccezione generali, ad esempio <xref:System.Exception> o <xref:System.SystemException> in una libreria o framework, saranno costretti a intercettare tutte le eccezioni, incluse le eccezioni sconosciute che non si conosce la modalità di gestione.
 
- **Generare eccezioni specifiche**
+Al contrario, generare un tipo più derivato che esiste già nel framework, o creare un proprio tipo che deriva da <xref:System.Exception>.
 
- Nella tabella seguente vengono illustrati i parametri e le eccezioni da generare quando si convalida il parametro, incluso il parametro di valore nella funzione di accesso set di una proprietà:
+**Generare eccezioni specifiche**
 
-|Descrizione parametro|Eccezione|
+Nella tabella seguente vengono illustrati parametri e le eccezioni da generare quando si convalida il parametro, tra cui il parametro del valore nella funzione di accesso set di una proprietà:
+
+|Descrizione dei parametri|Eccezione|
 |---------------------------|---------------|
 |`null` Riferimento|<xref:System.ArgumentNullException?displayProperty=fullName>|
-|Compreso nell'intervallo consentito di valori (ad esempio un indice per un elenco o raccolta)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|Non valido `enum` valore|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|Contiene un formato che non soddisfa le specifiche del parametro di un metodo (ad esempio la stringa di formato per `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
-|Non è valida|<xref:System.ArgumentException?displayProperty=fullName>|
+|Compreso nell'intervallo consentito di valori (ad esempio un indice per una raccolta o elenco)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
+|Non è valido `enum` valore|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|Contiene un formato che non soddisfa le specifiche di parametri di un metodo (ad esempio la stringa di formato per `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
+|In caso contrario, non è valido|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Quando un'operazione non è valida per lo stato corrente di un oggetto generare <xref:System.InvalidOperationException?displayProperty=fullName>
+Quando un'operazione non è valida per lo stato corrente di un oggetto generare <xref:System.InvalidOperationException?displayProperty=fullName>
 
- Generata quando viene eseguita un'operazione su un oggetto che è stato eliminato <xref:System.ObjectDisposedException?displayProperty=fullName>
+Generata quando viene eseguita un'operazione su un oggetto che è stato eliminato <xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Quando un'operazione non è supportata (ad esempio in un override **oggetto Stream. Write** in un flusso aperto per la lettura) throw <xref:System.NotSupportedException?displayProperty=fullName>
+Quando un'operazione non è supportata (ad esempio in un stato eseguito l'override **oggetto Stream. Write** in un Stream aperto per la lettura) throw <xref:System.NotSupportedException?displayProperty=fullName>
 
- Generata quando una conversione comporterebbe un overflow (ad esempio un overload dell'operatore di cast esplicito) <xref:System.OverflowException?displayProperty=fullName>
+Quando una conversione comporterebbe un overflow (ad esempio un overload dell'operatore di cast espliciti) generare <xref:System.OverflowException?displayProperty=fullName>
 
- Per tutti gli altri casi, è consigliabile creare un proprio tipo che deriva da <xref:System.Exception> e generarlo.
+Per tutti gli altri casi, è consigliabile creare un proprio tipo che deriva da <xref:System.Exception> e generarlo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il tipo dell'eccezione generata in un tipo specifico che non è uno dei tipi riservati.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola.
+Per correggere una violazione di questa regola, modificare il tipo dell'eccezione generata in un tipo specifico che non è uno dei tipi riservati.
+
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+
+Non escludere un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1031: Non rilevare tipi di eccezione generali](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+
+- [CA1031: Non rilevare tipi di eccezione generali](../code-quality/ca1031-do-not-catch-general-exception-types.md)

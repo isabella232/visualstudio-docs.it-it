@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb43481b80726171414fab6b6a65fee8a5e29cb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f79a0e4fcb9cf4f82b85e9d62ffa51ef969293c7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31902016"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550999"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Le raccolte devono implementare un'interfaccia generica
 |||
@@ -32,55 +32,55 @@ ms.locfileid: "31902016"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Implementa un tipo visibile esternamente il <xref:System.Collections.IEnumerable?displayProperty=fullName> interfaccia ma non implementa il <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interfaccia la destinazione dell'assembly contenente [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Questa regola ignora i tipi che implementano <xref:System.Collections.IDictionary?displayProperty=fullName>.
+ Implementa un tipo visibile esternamente il <xref:System.Collections.IEnumerable?displayProperty=fullName> dell'interfaccia, ma non implementa le <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interfaccia e l'assembly che lo contiene è destinato [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Questa regola ignora i tipi che implementano <xref:System.Collections.IDictionary?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per ampliare la possibilità di utilizzo di una raccolta, implementare una delle interfacce di raccolta generiche. La raccolta può quindi essere utilizzata per popolare tipi di raccolte generiche, ad esempio:
+ Per ampliare la possibilità di utilizzo di una raccolta, implementare una delle interfacce di raccolta generiche. Quindi la raccolta può essere utilizzata per popolare tipi di raccolte generiche, ad esempio il seguente:
 
--   <xref:System.Collections.Generic.List%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, implementare una delle interfacce di raccolte generiche seguenti:
+ Per correggere una violazione di questa regola, implementare una delle interfacce di raccolta generiche seguenti:
 
--   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È consigliabile escludere un avviso da questa regola. Tuttavia, la raccolta avrà un utilizzo più limitato.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un avviso da questa regola. Tuttavia, la raccolta sarà necessario un utilizzo più limitato.
 
-## <a name="example-violation"></a>Violazione di esempio
+## <a name="example-violation"></a>Esempio di violazione
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente viene illustrata una classe (tipo di riferimento) da cui deriva il tipo non generico `CollectionBase` (classe), che violano questa regola.
+ Nell'esempio seguente viene illustrata una classe (tipo riferimento) che deriva da non generica `CollectionBase` che viola questa regola.
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
 ### <a name="comments"></a>Commenti
- Per correggere una violazione di questa violazione, si deve implementare le interfacce generiche o modificare la classe base per un tipo che implementa già entrambe le interfacce generiche e non generici, ad esempio la `Collection<T>` classe.
+ Per correggere una violazione della violazione, si deve implementare le interfacce generiche o modificare la classe di base in un tipo che implementa già entrambe le interfacce generiche e non generici, ad esempio il `Collection<T>` classe.
 
-## <a name="fix-by-base-class-change"></a>Per risolvere, modifica della classe Base
+## <a name="fix-by-base-class-change"></a>Correggere da modifica della classe di Base
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente consente di correggere la violazione modificando la classe di base della raccolta da non generico `CollectionBase` sulla classe generica `Collection<T>` (`Collection(Of T)` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) classe.
+ Nell'esempio seguente la violazione viene corretta modificando la classe di base della raccolta da non generica `CollectionBase` sulla classe generica `Collection<T>` (`Collection(Of T)` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) classe.
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
 ### <a name="comments"></a>Commenti
- Modifica della classe di base di una classe già rilasciata è considerata una modifica di rilievo per i consumer esistenti.
+ La classe base di una classe già rilasciata la modifica è considerata una modifica di rilievo per i consumer esistenti.
 
 ## <a name="fix-by-interface-implementation"></a>Correggere dall'implementazione dell'interfaccia
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente consente di correggere la violazione implementando le interfacce generiche: `IEnumerable<T>`, `ICollection<T>`, e `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, e `IList(Of T)` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Nell'esempio seguente la violazione viene corretta mediante l'implementazione di queste interfacce generiche: `IEnumerable<T>`, `ICollection<T>`, e `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, e `IList(Of T)` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]

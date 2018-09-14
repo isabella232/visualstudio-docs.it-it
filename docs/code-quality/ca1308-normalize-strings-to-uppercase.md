@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5cda66d2a43ee3fde8e3e7b2d22a64a09655da3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 358910be4245c5c00541a7a4f686226b6250e902
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897143"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545700"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizzare le stringhe in lettere maiuscole
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31897143"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Un'operazione normalizza stringa in caratteri minuscoli.
+ Un'operazione normalizza una stringa in caratteri minuscoli.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Le stringhe devono essere normalizzate in maiuscolo. Un piccolo gruppo di caratteri, quando vengono convertiti in caratteri minuscoli, non è possibile completare un round trip. Per completare un round trip mezzi per convertire i caratteri da una delle impostazioni locali a un altro che rappresenta i dati di tipo carattere in modo diverso, quindi in modo accurato recuperano i caratteri originali dai caratteri convertiti.
+ Le stringhe devono essere normalizzate in maiuscolo. Un piccolo gruppo di caratteri, quando questi vengono convertiti in caratteri minuscoli, non è possibile completare un round trip. Per completare un round trip mezzi per convertire i caratteri delle impostazioni locali in un'altra delle impostazioni locali che rappresenta i dati di tipo carattere in modo diverso, quindi in modo accurato recupero i caratteri originali dai caratteri convertiti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Modificare le operazioni che convertono le stringhe in caratteri minuscoli in modo che le stringhe vengono convertite in caratteri maiuscoli invece. Ad esempio, modificare `String.ToLower(CultureInfo.InvariantCulture)` a `String.ToUpper(CultureInfo.InvariantCulture)`.
+ Modificare le operazioni di conversione di stringhe in caratteri minuscoli in modo che le stringhe vengono convertite in caratteri maiuscoli invece. Ad esempio, modificare `String.ToLower(CultureInfo.InvariantCulture)` in `String.ToUpper(CultureInfo.InvariantCulture)`.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un messaggio di avviso quando si fanno decisione relativa alla sicurezza in base al risultato (ad esempio, quando si visualizza nell'interfaccia utente).
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un messaggio di avviso quando non si apportano decisione relativa alla sicurezza in base al risultato (ad esempio, quando si visualizza nell'interfaccia utente).
 
 ## <a name="see-also"></a>Vedere anche
  [Avvisi di globalizzazione](../code-quality/globalization-warnings.md)

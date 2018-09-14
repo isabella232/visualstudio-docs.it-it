@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6b495572786bc4934d2972dfdfd27642803d3f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919843"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546392"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Esecuzione di script XSLT non protetta
 
@@ -27,13 +27,13 @@ ms.locfileid: "31919843"
 
 ## <a name="cause"></a>Causa
 
-Se si esegue Extensible Stylesheets Language Transformations (XSLT) in applicazioni .NET in modo non protetto, il processore può risolvere i riferimenti URI non attendibili che potrebbero divulgare informazioni riservate a utenti malintenzionati causando attacchi Denial of Service e XSS. Per ulteriori informazioni, vedere [Considerations(.NET Guide) sicurezza XSLT](/dotnet/standard/data/xml/xslt-security-considerations).
+Se si esegue Extensible Stylesheets Language Transformations (XSLT) in applicazioni .NET in modo non protetto, il processore può risolvere i riferimenti URI non attendibili che potrebbero divulgare informazioni riservate a utenti malintenzionati causando attacchi Denial of Service e XSS. Per altre informazioni, vedere [Considerations(.NET Guide) sicurezza XSLT](/dotnet/standard/data/xml/xslt-security-considerations).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-**XSLT** è uno standard di World Wide Web Consortium (W3C) per la trasformazione dei dati XML. XSLT viene in genere usato per scrivere i fogli di stile per trasformare i dati XML in altri formati, ad esempio HTML, testo di lunghezza fissa, testo delimitato da virgole, oppure in un altro formato XML. Sebbene non sia consentito per impostazione predefinita, è possibile scegliere di abilitarlo per un progetto.
+**XSLT** è uno standard di World Wide Web Consortium (W3C) per la trasformazione dei dati XML. XSLT è in genere utilizzato per scrivere i fogli di stile per trasformare i dati XML in altri formati, ad esempio HTML, testo di lunghezza fissa, testo delimitato da virgole o un altro formato XML. Sebbene non sia consentito per impostazione predefinita, è possibile scegliere di abilitarlo per un progetto.
 
-Per assicurarsi di non esporre una superficie di attacco, questa regola viene attivata ogni volta che il XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> riceve le istanze di una combinazione non protetta di <xref:System.Xml.Xsl.XsltSettings> e <xref:System.Xml.XmlResolver>, che consente l'elaborazione di uno script dannoso.
+Per assicurarsi che non si espone una superficie di attacco, questa regola viene attivata ogni volta che il XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> istanze di combinazione non protetta di riceve <xref:System.Xml.Xsl.XsltSettings> e <xref:System.Xml.XmlResolver>, che consente l'elaborazione di uno script dannoso.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -41,13 +41,13 @@ Per assicurarsi di non esporre una superficie di attacco, questa regola viene at
 
 - Sostituire l'argomento <xref:System.Xml.XmlResolver> con Null o con un'istanza di <xref:System.Xml.XmlSecureResolver> .
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
 A meno che non si abbia la certezza che l'input provenga da un'origine attendibile, non escludere una regola da questo avviso.
 
 ## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Violazione&mdash;utilizza XsltSettings.TrustedXslt
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Violazione che usa XsltSettings.TrustedXslt
 
 ```csharp
 using System.Xml;
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>Soluzione&mdash;utilizzare XsltSettings.Default
+### <a name="solution-that-uses-xsltsettingsdefault"></a>Soluzione che usa XsltSettings.Default
 
 ```csharp
 using System.Xml;
@@ -89,7 +89,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Violazione&mdash;documentare l'esecuzione di script e funzioni non è stato disabilitato
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Violazione&mdash;documentare l'esecuzione di script e funzioni non disabilitata
 
 ```csharp
 using System.Xml;
@@ -114,7 +114,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Soluzione&mdash;disabilitare l'esecuzione di script e funzioni del documento
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Soluzione&mdash;disabilitare l'esecuzione di script e funzioni di documento
 
 ```csharp
 using System.Xml;
@@ -143,4 +143,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Vedere anche
 
-[Considerazioni sulla sicurezza XSLT (Guida per .NET)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [Considerazioni sulla sicurezza XSLT (Guida per .NET)](/dotnet/standard/data/xml/xslt-security-considerations)

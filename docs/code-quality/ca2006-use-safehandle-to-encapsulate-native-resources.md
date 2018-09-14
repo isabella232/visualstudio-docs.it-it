@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4183828b4deddede919ea30db825e65f0360adef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b039dc1331ae3f8a47468289611e5bb9be32134d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915047"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549365"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Utilizzare SafeHandle per incapsulare le risorse native
 |||
@@ -35,17 +35,20 @@ ms.locfileid: "31915047"
  Il codice gestito utilizza <xref:System.IntPtr> per accedere alle risorse native.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Utilizzo di `IntPtr` in codice gestito potrebbe indicare un potenziale problema di sicurezza e affidabilità. Tutte le occorrenze di `IntPtr` devono essere esaminate per determinare se l'utilizzo di un <xref:System.Runtime.InteropServices.SafeHandle> , o una tecnologia simile, è necessario al suo posto. Se si verificheranno problemi di `IntPtr` rappresenta una risorsa nativa, ad esempio memoria, un handle di file o un socket, che il codice gestito si considera. Se il codice gestito proprietario della risorsa, è necessario rilasciare anche le risorse native a esso associate, perché un errore a tale scopo potrebbe causare la perdita della risorsa.
+ Uso di `IntPtr` nel codice gestito potrebbe indicare un potenziale problema di sicurezza e affidabilità. Tutte le occorrenze dei `IntPtr` devono essere esaminate per determinare se l'uso di un <xref:System.Runtime.InteropServices.SafeHandle> , o una tecnologia simile, è necessario al suo posto. Se si verificheranno problemi di `IntPtr` rappresenta una risorsa nativa, ad esempio memoria, un handle di file o un socket, che il codice gestito viene considerato come proprietario. Se il codice gestito è il proprietario della risorsa, è necessario rilasciare anche le risorse native associate, in quanto un tentativo di eseguire questa operazione potrebbe causare perdite di risorse.
 
- In questi scenari, i problemi di sicurezza o di affidabilità saranno disponibile anche se è consentito l'accesso multithreading di `IntPtr` e modalità di rilascio della risorsa che è rappresentata dal `IntPtr` viene fornito. Questi problemi riguardano il riciclo del `IntPtr` valore sul rilascio di risorse durante l'utilizzo simultaneo della risorsa è stata effettuata in un altro thread. Ciò può causare una race condition in cui un thread può leggere o scrivere i dati associati con la risorsa errata. Ad esempio, se il tipo è archiviato un handle del sistema operativo come un `IntPtr` e consente agli utenti di chiamare entrambe **Chiudi** e qualsiasi altro metodo che utilizza tale handle simultaneamente e senza alcun tipo di sincronizzazione, il codice include un riciclo esiste un problema.
+ In questi scenari, i problemi di sicurezza o di affidabilità saranno disponibile anche se è consentito l'accesso a thread multipli per il `IntPtr` e un modo per rilasciare la risorsa rappresentata dalla `IntPtr` viene fornito. Questi problemi riguardano il riciclo del `IntPtr` valore sul rilascio di risorse durante l'utilizzo simultaneo di risorsa è stata effettuata in un altro thread. Ciò può causare una race condition in cui un thread possa leggere o scrivere dati associata alla risorsa errata. Ad esempio, se il tipo archivia un handle del sistema operativo come una `IntPtr` e consente agli utenti di chiamare entrambe **Chiudi** e qualsiasi altro metodo che usa tale handle e simultaneamente senza alcun tipo di sincronizzazione, il codice ha un riciclo c'è problema.
 
- Questo problema di riciclo può causare il danneggiamento dei dati e, spesso una vulnerabilità di sicurezza. `SafeHandle` e la relativa classe di elemento di pari livello <xref:System.Runtime.InteropServices.CriticalHandle> forniscono un meccanismo per incapsulare un handle nativo di una risorsa in modo che è possibile evitare tali problemi di threading. Inoltre, è possibile utilizzare `SafeHandle` e la relativa classe di elemento di pari livello `CriticalHandle` per altri problemi di threading, ad esempio, per controllare con attenzione la durata degli oggetti gestiti che contengono una copia dell'handle nativo nelle chiamate ai metodi nativi. In questo caso, è spesso possibile evitare le chiamate a `GC.KeepAlive`. Il sovraccarico delle prestazioni che si verifica quando si utilizza `SafeHandle` e, a un livello inferiore, `CriticalHandle`, possono spesso essere ridotti attraverso un'attenta progettazione.
+ Questo problema di riciclo può causare il danneggiamento dei dati e, spesso una vulnerabilità di sicurezza. `SafeHandle` e la relativa classe di elemento di pari livello <xref:System.Runtime.InteropServices.CriticalHandle> forniscono un meccanismo per incapsulare un handle nativo di una risorsa in modo che tali problemi di threading possono essere evitati. Inoltre, è possibile usare `SafeHandle` e la relativa classe di elemento di pari livello `CriticalHandle` per altri problemi di threading, ad esempio, per controllare con attenzione la durata degli oggetti gestiti che contengono una copia dell'handle nativo nelle chiamate ai metodi nativi. In questo caso, è spesso possibile evitare chiamate a `GC.KeepAlive`. L'overhead delle prestazioni che si verifica quando si usa `SafeHandle` e, a un livello inferiore, `CriticalHandle`, spesso può essere ridotto tramite un'attenta progettazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Convertire `IntPtr` l'utilizzo di `SafeHandle` per gestire in modo sicuro l'accesso alle risorse native. Vedere il <xref:System.Runtime.InteropServices.SafeHandle> argomento di riferimento per gli esempi.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non è necessario eliminare l'avviso.
+Convertire `IntPtr` tra l'utilizzo di `SafeHandle` per gestire in modo sicuro l'accesso alle risorse native. Vedere il <xref:System.Runtime.InteropServices.SafeHandle> articolo di riferimento per gli esempi.
+
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+
+Non eliminare questo avviso.
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.IDisposable>
+
+- <xref:System.IDisposable>

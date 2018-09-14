@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70bc0065957321894c53726790b73b432dfdea6f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 961052d778551818942977b4d8895b85e96091d6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901040"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551821"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Gli elenchi sono fortemente tipizzati
+
 |||
 |-|-|
 |TypeName|ListsAreStronglyTyped|
@@ -32,35 +33,37 @@ ms.locfileid: "31901040"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Il tipo pubblico o protetto, il tipo implementa <xref:System.Collections.IList?displayProperty=fullName> ma non fornisce un metodo fortemente tipizzato per uno o più delle operazioni seguenti:
 
--   IList.Item
+Il tipo pubblico o protetto il tipo implementa <xref:System.Collections.IList?displayProperty=fullName> ma non fornisce un metodo fortemente tipizzato per uno o più delle operazioni seguenti:
 
--   IList
+- IList.Item
 
--   IList.Contains
+- IList
 
--   IList.IndexOf
+- IList.Contains
 
--   IList. Insert
+- IList.IndexOf
 
--   IList.Remove
+- IList. Insert
+
+- IList.Remove
 
 ## <a name="rule-description"></a>Descrizione della regola
- La regola richiede <xref:System.Collections.IList> le implementazioni per fornire fortemente membri tipizzati in modo che gli utenti non devono eseguire il cast di argomenti per il <xref:System.Object?displayProperty=fullName> digitare quando utilizzano la funzionalità fornita dall'interfaccia. Il <xref:System.Collections.IList> interfaccia viene implementata da raccolte di oggetti che è possibile accedere tramite indice. Questa regola presuppone che il tipo che implementa <xref:System.Collections.IList> esegua questa operazione per gestire una raccolta di istanze di un tipo più sicuro <xref:System.Object>.
 
- <xref:System.Collections.IList> implementa il <xref:System.Collections.ICollection?displayProperty=fullName> e <xref:System.Collections.IEnumerable?displayProperty=fullName> interfacce. Se si implementa <xref:System.Collections.IList>, è necessario fornire i membri richiesti fortemente tipizzati per <xref:System.Collections.ICollection>. Se gli oggetti nella raccolta estendono <xref:System.ValueType?displayProperty=fullName>, è necessario fornire un membro fortemente tipizzato per <xref:System.Collections.IEnumerable.GetEnumerator%2A> per evitare un calo delle prestazioni causato dalla conversione boxing; non è obbligatorio quando gli oggetti della raccolta sono un tipo di riferimento.
+Questa regola richiede <xref:System.Collections.IList> implementazioni per fornire fortemente tipizzate membri, in modo che gli utenti non è necessario eseguire il cast di argomenti per il <xref:System.Object?displayProperty=fullName> digitare quando usano la funzionalità fornita dall'interfaccia. Il <xref:System.Collections.IList> viene implementata mediante raccolte di oggetti che è possibile accedere tramite indice. Questa regola presuppone che il tipo che implementa <xref:System.Collections.IList> gestisce una raccolta di istanze di un tipo più sicuro <xref:System.Object>.
 
- Per garantire la conformità con questa regola, implementare i membri di interfaccia in modo esplicito utilizzando nomi nel formato InterfaceName, ad esempio <xref:System.Collections.IList.Add%2A>. I membri di interfaccia esplicita utilizzano i tipi di dati che vengono dichiarati dall'interfaccia. Implementare i membri fortemente tipizzati utilizzando il nome di membro di interfaccia, ad esempio `Add`. Dichiarare i membri fortemente tipizzati come pubblici e dichiarare i parametri e restituire valori di tipo sicuro gestito dalla raccolta. I tipi sicuri sostituiscono i tipi più vulnerabili, ad esempio <xref:System.Object> e <xref:System.Array> che vengono dichiarati dall'interfaccia.
+<xref:System.Collections.IList> implementa il <xref:System.Collections.ICollection?displayProperty=fullName> e <xref:System.Collections.IEnumerable?displayProperty=fullName> interfacce. Se si implementa <xref:System.Collections.IList>, è necessario fornire i membri necessari fortemente tipizzati per <xref:System.Collections.ICollection>. Se gli oggetti nella raccolta estendono <xref:System.ValueType?displayProperty=fullName>, è necessario fornire un membro fortemente tipizzato per <xref:System.Collections.IEnumerable.GetEnumerator%2A> di evitare un calo nelle prestazioni causato dalla conversione boxing; non è obbligatorio quando gli oggetti della raccolta sono un tipo di riferimento.
+
+Per garantire la conformità con questa regola, implementare i membri di interfaccia in modo esplicito usando nomi nel formato InterfaceName, ad esempio <xref:System.Collections.IList.Add%2A>. I membri di interfaccia esplicita utilizzano i tipi di dati che vengono dichiarati dall'interfaccia. Implementare i membri fortemente tipizzati usando il nome di membro di interfaccia, ad esempio `Add`. Dichiarare i membri fortemente tipizzati come pubblici e dichiarare i parametri e restituire i valori siano del tipo sicuro gestito dalla raccolta. I tipi sicuri sostituiscono, ad esempio tipi più vulnerabili <xref:System.Object> e <xref:System.Array> che vengono dichiarati dall'interfaccia.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, implementare in modo esplicito <xref:System.Collections.IList> membri e fornire alternative fortemente tipizzate per i membri indicati in precedenza. Per il codice che implementa correttamente il <xref:System.Collections.IList> interfaccia e fornisce la membri fortemente tipizzati, vedere l'esempio seguente.
+ Per correggere una violazione di questa regola, implementare in modo esplicito <xref:System.Collections.IList> membri e offrono alternative fortemente tipizzate per i membri che sono stati annotati in precedenza. Per il codice che implementa correttamente il <xref:System.Collections.IList> interfaccia e offre la necessaria membri fortemente tipizzati, vedere l'esempio seguente.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere un avviso da questa regola quando si implementa una nuova raccolta basata su oggetti, ad esempio un elenco collegato, in cui i tipi che estendono la nuova raccolta determinano il tipo sicuro. Questi tipi devono conformarsi a questa regola ed esporre membri fortemente tipizzati.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Eliminare un avviso da questa regola quando si implementa una nuova raccolta basata su oggetti, ad esempio un elenco collegato, in cui i tipi che estendono la nuova raccolta determinano la tipizzazione forte. Questi tipi devono conformi a questa regola ed esporre membri fortemente tipizzati.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente, il tipo `YourType` estende <xref:System.Collections.CollectionBase?displayProperty=fullName>, come avviene per tutte le raccolte fortemente tipizzate. Si noti che <xref:System.Collections.CollectionBase> fornisce l'implementazione esplicita del <xref:System.Collections.IList> interfaccia. Pertanto, è necessario fornire solo i membri fortemente tipizzati per <xref:System.Collections.IList> e <xref:System.Collections.ICollection>.
+ Nell'esempio seguente, il tipo `YourType` estende <xref:System.Collections.CollectionBase?displayProperty=fullName>, come avviene per tutte le raccolte fortemente tipizzate. <xref:System.Collections.CollectionBase> fornisce l'implementazione esplicita del <xref:System.Collections.IList> interfaccia per l'utente. Pertanto, è necessario fornire solo i membri fortemente tipizzati per <xref:System.Collections.IList> e <xref:System.Collections.ICollection>.
 
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
 
@@ -70,4 +73,9 @@ ms.locfileid: "31901040"
  [CA1038: Gli enumeratori devono essere fortemente tipizzati](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.ICollection?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName> <xref:System.Collections.IList?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
+
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ICollection?displayProperty=fullName>
+- <xref:System.Collections.IEnumerable?displayProperty=fullName>
+- <xref:System.Collections.IList?displayProperty=fullName>
+- <xref:System.Object?displayProperty=fullName>

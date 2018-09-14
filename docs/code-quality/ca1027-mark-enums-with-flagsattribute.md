@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b11b64ffbf6245357cccd04c0e67cf8791f6351f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6e3da71d2849c4690b33dd0f479fdf62aa0d7d7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899926"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549339"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Contrassegnare le enumerazioni con FlagsAttribute
 |||
@@ -32,21 +32,21 @@ ms.locfileid: "31899926"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- I valori di un'enumerazione pubblica sono potenze di due o combinazioni di altri valori definiti nell'enumerazione, e <xref:System.FlagsAttribute?displayProperty=fullName> attributo non è presente. Per ridurre i falsi positivi, questa regola segnala una violazione per le enumerazioni con valori contigui.
+ I valori di enumerazione pubblica sono potenze di due o combinazioni di altri valori definiti nell'enumerazione, e il <xref:System.FlagsAttribute?displayProperty=fullName> attributo non è presente. Per ridurre i falsi positivi, questa regola non segnala una violazione per enumerazioni associate a valori contigui.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Applicare <xref:System.FlagsAttribute> a un'enumerazione quando le relative costanti denominate possono essere combinate. Si consideri, ad esempio, un'enumerazione dei giorni della settimana in un'applicazione che tiene traccia di quali risorse del giorno sono disponibili. Se la disponibilità di ogni risorsa è codificata tramite l'enumerazione con <xref:System.FlagsAttribute> presente, qualsiasi combinazione di giorni può essere rappresentato. Senza l'attributo, è possibile rappresentare un solo giorno della settimana.
+ Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Applicare <xref:System.FlagsAttribute> a un'enumerazione quando le relative costanti denominate possono essere combinate. Si consideri, ad esempio, un'enumerazione dei giorni della settimana in un'applicazione che tiene traccia delle risorse del giorno in cui sono disponibili. Se la disponibilità di ogni risorsa viene codificata utilizzando l'enumerazione con <xref:System.FlagsAttribute> present, qualsiasi combinazione di giorni può essere rappresentato. Senza l'attributo può essere rappresentato un solo giorno della settimana.
 
- Per i campi che vengono archiviate enumerazioni combinabili, i singoli valori di enumerazione vengono trattati come gruppi di bit nel campo. Pertanto, tali campi sono dette *campi di bit*. Per combinare i valori di enumerazione per l'archiviazione in un campo di bit, utilizzare gli operatori booleani condizionali. Per testare un campo di bit per determinare se è presente un valore di enumerazione specifico, utilizzare gli operatori logici Boolean. Per un campo di bit archiviare e recuperare correttamente i valori di enumerazione, ogni valore definito nell'enumerazione deve essere una potenza di due. In caso contrario, gli operatori logici Boolean non sarà in grado di estrarre i singoli valori di enumerazione che vengono archiviati nel campo.
+ Per i campi che archiviano le enumerazioni combinable, singoli valori di enumerazione sono considerati come gruppi di bit del campo. Di conseguenza, questi campi sono talvolta detti *campi di bit*. Per combinare i valori di enumerazione per l'archiviazione in un campo di bit, usare gli operatori booleani condizionali. Per testare un campo di bit per determinare se è presente un valore di enumerazione specifico, usare gli operatori logici booleani. Per un campo di bit archiviare e recuperare valori di enumerazione correttamente, ogni valore definito nell'enumerazione deve essere una potenza di due. In caso contrario, gli operatori logici booleani non sarà in grado di estrarre i singoli valori di enumerazione che sono archiviati nel campo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, aggiungere <xref:System.FlagsAttribute> all'enumerazione.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere un avviso da questa regola se non si desidera valori di enumerazione siano combinabili.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ Eliminare un avviso da questa regola se non si desidera valori di enumerazione da combinabili.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente, `DaysEnumNeedsFlags` è un'enumerazione che soddisfi i requisiti per l'utilizzo di <xref:System.FlagsAttribute>, ma non è presente. Il `ColorEnumShouldNotHaveFlag` enumerazione non dispongono di valori che sono potenze di due, ma specifica erroneamente <xref:System.FlagsAttribute>. Questa condizione viola regola [CA2217: non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+ Nell'esempio riportato di seguito `DaysEnumNeedsFlags` è un'enumerazione che soddisfi i requisiti per l'uso di <xref:System.FlagsAttribute>, ma non è presente. Il `ColorEnumShouldNotHaveFlag` enumerazione non ha i valori che sono potenze di due, ma specifica erroneamente <xref:System.FlagsAttribute>. Questa condizione viola regola [CA2217: non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 

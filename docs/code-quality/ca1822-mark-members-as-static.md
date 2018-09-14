@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 498a3638a02891683aff1b343431418d1a82bab0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 09aa3a879fad84f511d3649e98e5be98e62f4038
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914985"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546798"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Contrassegna i membri come statici
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31914985"
 |TypeName|MarkMethodsAsStatic|
 |CheckId|CA1822|
 |Category|Microsoft.Performance|
-|Modifica importante|Non sostanziale - Se il membro non è visibile all'esterno dell'assembly, indipendentemente dal fatto le modifiche apportate. Non sostanziale - Se si modifica solo il membro a un membro di istanza con il `this` (parola chiave).<br /><br /> Sostanziale - Se si modifica il membro da un membro di istanza a un membro statico e è visibile all'esterno dell'assembly.|
+|Modifica importante|Non sostanziale - Se il membro non è visibile all'esterno dell'assembly, indipendentemente dalle modifiche apportate. Non importante: se si modifica semplicemente il membro a un membro di istanza con il `this` (parola chiave).<br /><br /> Rilievo - se si modifica il membro da un membro di istanza a un membro statico ed è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
- Un membro che non accedono ai dati di istanza non è contrassegnato come static (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Un membro che non accede ai dati dell'istanza non è contrassegnato come static (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="rule-description"></a>Descrizione della regola
- I membri che non accedono ai dati di istanza o non chiamano metodi di istanza possono essere contrassegnati come static (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Tramite il compilatore verranno quindi inviati siti di chiamata non virtuali a tali membri. Per evitare un controllo in fase di esecuzione per ogni chiamata che consente di verifica che il puntatore all'oggetto corrente è diverso da null, la creazione di siti di chiamata non virtuali. Si potrà così ottenere un sensibile miglioramento delle prestazioni per codici sensibili delle prestazioni. In alcuni casi, l'errore per accedere all'istanza di oggetto corrente rappresenta un problema di correzione.
+ I membri che non accedono ai dati di istanza o non chiamano metodi di istanza possono essere contrassegnati come static (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Tramite il compilatore verranno quindi inviati siti di chiamata non virtuali a tali membri. Creazione di siti di chiamata non virtuali, si impedirà di un controllo in fase di esecuzione per ogni chiamata che accerti che il puntatore all'oggetto corrente è diverso da null. Si potrà così ottenere un miglioramento sensibile miglioramento delle prestazioni per codici sensibili alle prestazioni. In alcuni casi, l'errore di accesso di istanza dell'oggetto corrente rappresenta un problema di correzione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Contrassegnare il membro come static (o condivise in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) o utilizzare 'this' / 'Me' nel metodo corpo, se appropriato.
+ Contrassegnare il membro come static (o condivisi [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) o utilizzare 'this' / 'Me' nel metodo body, se appropriato.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola per il codice fornito in precedenza per il quale la correzione sarebbe una modifica di rilievo.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+ È possibile eliminare un avviso da questa regola per il codice fornito in precedenza per il quale la correzione sarebbe una modifica sostanziale.
 
 ## <a name="related-rules"></a>Regole correlate
  [CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)
