@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42623667"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612675"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Come eseguire il debug per principianti
 
@@ -332,4 +332,4 @@ Quando si trova l'area di codice con il problema, utilizzare il debugger per esa
 In questo articolo si sono appreso alcuni concetti fondamentali di debug generali. Successivamente, è possibile iniziare a imparare a eseguire il debug con Visual Studio.
 
 > [!div class="nextstepaction"]
-> [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+> [Informazioni sul debug tramite Visual Studio](../debugger/getting-started-with-the-debugger.md)

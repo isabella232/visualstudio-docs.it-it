@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552097"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612740"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Specifica di file di simboli con estensione pdb) e di file di origine nel debugger di Visual Studio
 Un file di database (con estensione pdb) del programma, denominato anche file di simboli, esegue il mapping di identificatori creati nel codice sorgente per le classi, metodi e altro codice per gli identificatori utilizzati nei file eseguibili compilati del progetto. Il file con estensione pdb esegue inoltre il mapping delle istruzioni nel codice sorgente alle istruzioni di esecuzione nei file eseguibili. Il debugger Usa queste informazioni per stabilire due informazioni essenziali:
@@ -45,7 +45,11 @@ Un file di database (con estensione pdb) del programma, denominato anche file di
 Un file di simboli contiene anche il percorso originale dei file di origine e, facoltativamente, il percorso di un server di origine da cui è possibile recuperare i file di origine.
   
 > [!TIP]
-> Se si desidera eseguire il debug di codice di fuori del codice sorgente del progetto, ad esempio di codice Windows o il codice di terze parti chiamato dal progetto, è necessario specificare il percorso del file PDB (e, facoltativamente, i file di origine del codice esterno) e tali file devono corrispondere esattamente alla compilazione di t il file eseguibili.  
+> Se si desidera eseguire il debug di codice di fuori del codice sorgente del progetto, ad esempio di codice Windows o il codice di terze parti chiamato dal progetto, è necessario specificare il percorso del file PDB (e, facoltativamente, i file di origine del codice esterno) e tali file devono corrispondere esattamente alla compilazione di t il file eseguibili. 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>Come gestire I file di simboli durante il debug? 
+
+Il **moduli** finestra può indicare quali moduli di codice il debugger è trattare come codice utente, o My Code e il simbolo di caricamento dello stato per il modulo. È anche possibile usare questa finestra per caricare i simboli durante il debug. Per altre informazioni, vedere [acquisire maggiore familiarità con la modalità con cui il debugger si connette all'app](../debugger/debugger-tips-and-tricks.md#modules_window).
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> In cui il debugger esegue la ricerca dei file di simboli? 
   
