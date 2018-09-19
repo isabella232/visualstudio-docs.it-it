@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008434"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552084"
 ---
 # <a name="debug-python-and-c-together"></a>Debug contemporaneo di codice Python e C++
 
@@ -104,7 +104,7 @@ Le transizioni vengono visualizzate come **[Codice esterno]**, senza specificare
 
 ### <a name="step-between-python-and-native-code"></a>Passaggio tra codice Python e codice nativo
 
-Quando si usano i comandi **Esegui istruzione** (**F11**) o **Esci da istruzione/routine** (**MAIUSC**+**F11**), il debugger in modalità mista gestisce correttamente le modifiche tra i tipi di codice. Ad esempio, quando Python chiama un metodo di un tipo implementato in C, l'esecuzione di istruzioni in una chiamata a tale metodo si interrompe all'inizio della funzione nativa che implementa il metodo. Analogamente, quando il codice nativo chiama una funzione API Python, ciò causa la chiamata del codice Python. Ad esempio, l'esecuzione di `PyObject_CallObject` per un valore di funzione originariamente definito in Python si interrompe all'inizio della funzione Python. Il passaggio da codice Python a codice nativo è supportato anche per le funzioni native richiamate da Python tramite [ctypes](http://docs.python.org/3/library/ctypes.html).
+Quando si usano i comandi **Esegui istruzione** (**F11**) o **Esci da istruzione/routine** (**MAIUSC**+**F11**), il debugger in modalità mista gestisce correttamente le modifiche tra i tipi di codice. Ad esempio, quando Python chiama un metodo di un tipo implementato in C, l'esecuzione di istruzioni in una chiamata a tale metodo si interrompe all'inizio della funzione nativa che implementa il metodo. Analogamente, quando il codice nativo chiama una funzione API Python, ciò causa la chiamata del codice Python. Ad esempio, l'esecuzione di `PyObject_CallObject` per un valore di funzione originariamente definito in Python si interrompe all'inizio della funzione Python. Il passaggio da codice Python a codice nativo è supportato anche per le funzioni native richiamate da Python tramite [ctypes](https://docs.python.org/3/library/ctypes.html).
 
 ### <a name="pyobject-values-view-in-native-code"></a>Visualizzazione di valori PyObject nel codice nativo
 
@@ -137,7 +137,7 @@ Il nodo **[Visualizzazione Python]** non viene visualizzato automaticamente per 
 
 Per Python 2. x, tuttavia, ogni tipo di oggetto dichiara in genere l'intestazione come raccolta di campi inline e non esiste alcuna associazione tra i tipi personalizzati creati e `PyObject` a livello del sistema dei tipi nel codice C/C++. Per abilitare i nodi **[Visualizzazione Python]** per questi tipi personalizzati, modificare il file *PythonDkm.natvis* nella [directory di installazione di Python Tools](installing-python-support-in-visual-studio.md#install-locations) e aggiungere un altro elemento nel codice XML per lo struct C o la classe C++.
 
-Un'opzione alternativa (e migliore) consiste nel seguire la proposta [PEP 3123](http://www.python.org/dev/peps/pep-3123/) e usare un campo `PyObject ob_base;` esplicito invece di `PyObject_HEAD`, sebbene ciò non sia sempre possibile per motivi di compatibilità con le versioni precedenti.
+Un'opzione alternativa (e migliore) consiste nel seguire la proposta [PEP 3123](https://www.python.org/dev/peps/pep-3123/) e usare un campo `PyObject ob_base;` esplicito invece di `PyObject_HEAD`, sebbene ciò non sia sempre possibile per motivi di compatibilità con le versioni precedenti.
 
 ### <a name="native-values-view-in-python-code"></a>Visualizzazione di valori nativi nel codice Python
 

@@ -9,12 +9,12 @@ description: Informazioni su come attivare il vantaggio Supporto tecnico incluso
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289472"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701767"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 
@@ -32,12 +32,13 @@ ms.locfileid: "43289472"
 3.  Per completare il processo, è necessario specificare al rappresentante gli elementi seguenti:
     - L'indirizzo di posta elettronica che si usa per accedere alla sottoscrizione
     - L'ID sottoscrizione, che viene visualizzato nella scheda [Sottoscrizioni](https://my.visualstudio.com/subscriptions).
+
     > [!div class="mx-imgBorder"]
     > ![Trovare l'ID sottoscrizione del vantaggio Supporto tecnico](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > Per attivare l'account di supporto tecnico in una lingua diversa dall'inglese, scegliere un paese dall'[elenco seguente](https://support.microsoft.com/help/14084/activate-support-contract).   
+> [!NOTE]
+> Per attivare l'account di supporto tecnico in una lingua diversa dall'inglese, scegliere un paese dall'[elenco seguente](https://support.microsoft.com/help/14084/activate-support-contract).   
 
 
 ## <a name="how-to-submit-an-incident"></a>Come inviare un evento imprevisto
