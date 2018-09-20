@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498915"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370718"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Creare istanze del progetto tramite le factory di progetto
 Tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usano un *factory progetto* per creare istanze di oggetti del progetto. È simile a una factory di classe standard per gli oggetti COM cocreatable una factory progetto. Oggetti del progetto non sono tuttavia cocreatable; possono essere creati solo mediante una factory progetto.  
@@ -28,7 +28,7 @@ Tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
   
  È possibile implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaccia in una classe nel progetto. In genere, si trova in un proprio modulo.  
   
- Per un esempio di un'implementazione del `IVsProjectFactory` l'interfaccia, vedere *PrjFac.cpp*, in cui è contenuto il [progetto di base](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) directory degli esempi.  
+ Per un esempio di un'implementazione del `IVsProjectFactory` l'interfaccia, vedere *PrjFac.cpp*, in cui è contenuto il [progetto di base](https://www.microsoft.com/download/details.aspx?id=55984) directory degli esempi.  
   
  I progetti che supportano l'aggregazione da un proprietario devono mantenere una chiave del proprietario nel relativo file di progetto. Quando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metodo viene chiamato su un progetto con una chiave del proprietario, il progetto di proprietà converte la chiave del proprietario in una factory progetto GUID chiama quindi il `CreateProject` metodo factory del progetto per eseguire la creazione effettiva.  
   

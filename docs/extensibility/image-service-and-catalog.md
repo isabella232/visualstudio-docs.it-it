@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 64a22cb00a90d9d5475fe89ff8c7fc800f23d86a
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512044"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371147"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigliate per adottare il catalogo di immagini introdotto in Visual Studio 2015 e Visual Studio Image Service.  
@@ -662,7 +662,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
  Controllare [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) per gli esempi più recenti.  
   
 ### <a name="tooling"></a>Strumenti  
- Per facilitare la creazione o l'aggiornamento dell'interfaccia utente che interagisce con il servizio immagini è stato creato un set di strumenti di supporto per il servizio immagini. Per altre informazioni su ogni strumento, vedere la documentazione fornita con gli strumenti. Gli strumenti sono inclusi come parte di [Visual Studio 2015 SDK.](http://msdn.microsoft.com/library/bb166441.aspx)  
+ Per facilitare la creazione o l'aggiornamento dell'interfaccia utente che interagisce con il servizio immagini è stato creato un set di strumenti di supporto per il servizio immagini. Per altre informazioni su ogni strumento, vedere la documentazione fornita con gli strumenti. Gli strumenti sono inclusi come parte del [Visual Studio 2015 SDK](visual-studio-sdk.md).
   
  **ManifestFromResources**  
   

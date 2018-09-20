@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59f8d57c0ba0e84107cd0d0290b950b335e5f2b0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6a1575093ee78fec887c9fbedcfc29339f86f2e7
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639471"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370484"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>Procedura: cancellare lo stack di annullamento
 La procedura seguente illustra come cancellare lo stack di annullamento.  
   
 ## <a name="to-clear-the-undo-stack"></a>Per cancellare lo stack di annullamento  
   
-1.  Per cancellare l'utilizzo dello stack di annullamento il [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) (metodo). Di seguito è riportato un esempio:  
+1.  Per cancellare l'utilizzo dello stack di annullamento il [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) (metodo). Di seguito è riportato un esempio:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  

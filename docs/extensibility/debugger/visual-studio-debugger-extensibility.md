@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa2f858121e8486209518f348193e8a2bbee645a
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b0be4a96854315bcf8b83db86692758e198980cd
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276468"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370926"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Estendibilità del debugger Visual Studio
 Visual Studio include un debugger di codice sorgente completamente interattivi, che fornisce uno strumento potente e facile da usare per tenere traccia dei bug nel programma. Il debugger ha supporto completo per Visual Basic, c#, C/C++ e JavaScript. Tuttavia, con il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], vale a dire disponibile la [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), altri linguaggi di programmazione possono essere supportati nel debugger con le stesse funzionalità avanzate.  
@@ -28,7 +28,7 @@ Visual Studio include un debugger di codice sorgente completamente interattivi, 
   
  Il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] include un riferimento completo a tutti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] elementi necessari per creare un nuovo DE. Inoltre, esistono esempi ed esercitazioni utili per iniziare a usare.  
   
- Per un esempio completo di un sistema di progetto linguaggio con il supporto del debug, vedere la [esempio di IronPython](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Per un esempio completo di un sistema di progetto linguaggio con il supporto del debug, vedere la [esempio di IronPython](https://www.microsoft.com/download/details.aspx?id=55984).  
   
  Le sezioni seguenti viene descritto come estendere il debugger usando la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   

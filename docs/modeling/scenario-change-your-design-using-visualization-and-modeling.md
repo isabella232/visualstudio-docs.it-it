@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321164"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371095"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -182,7 +182,7 @@ Dinner Now deve stimare i costi da sostenere per soddisfare il nuovo requisito. 
 
  **Diagramma delle dipendenze**
 
-Per assicurarsi che non si verificano conflitti con la progettazione durante lo sviluppo di codice, i team usano la convalida delle dipendenze su compilazioni che vengono eseguiti in Team Foundation Build. È anche possibile creare un'attività personalizzata MSBuild per richiedere la convalida delle dipendenze nelle operazioni check-in. Per raccogliere gli errori di convalida, usano report di compilazione.
+Per assicurarsi che non si verificano conflitti con la progettazione durante lo sviluppo di codice, i team usano la convalida delle dipendenze su compilazioni che vengono eseguiti in Azure DevOps. È anche possibile creare un'attività personalizzata MSBuild per richiedere la convalida delle dipendenze nelle operazioni check-in. Per raccogliere gli errori di convalida, usano report di compilazione.
 
 Vedere:
 
@@ -234,7 +234,7 @@ Quando i team completano ogni attività, archiviano il codice in Controllo della
 
 Dinner Now dispone di un'ampia raccolta di test automatizzati, che possono essere riutilizzati da Lucerne in quanto ancora applicabili ai nuovi scenari. Lucerne può inoltre estendere questi test e aggiungerne altri per analizzare nuove funzionalità. Entrambi i team usano Visual Studio per eseguire i test manuali.
 
-Per assicurarsi che il codice sia conforme alla progettazione, i team configurano le compilazioni in Team Foundation Build per includere la convalida delle dipendenze. In caso di conflitti, viene generato un report con i dettagli.
+Per assicurarsi che il codice sia conforme alla progettazione, i team configurano le compilazioni in DevOps di Azure per includere la convalida delle dipendenze. In caso di conflitti, viene generato un report con i dettagli.
 
 Vedere:
 

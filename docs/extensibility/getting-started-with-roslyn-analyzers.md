@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12c1bba1d07ab695f265425d6aeae6806589dcd4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497849"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370588"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Iniziare con gli analizzatori di Roslyn
 
@@ -26,13 +26,13 @@ Con gli analizzatori di codice in tempo reale, basato sul progetto in Visual Stu
 
 [Aggiungere codice corregge procedura dettagliata: ottenere le correzioni degli utenti ai problemi di Analizzatore](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[Introduzione e una procedura dettagliata dell'analizzatore reali di comunicare con](http://channel9.msdn.com/events/Build/2015/3-725)
+[Introduzione e una procedura dettagliata dell'analizzatore reali di comunicare con](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[Analizzatore Roslyn reali](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) che è anche possibile guardare come un [parlare](http://channel9.msdn.com/events/Build/2015/3-725)
+[Analizzatore Roslyn reali](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) che è anche possibile guardare come un [parlare](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Alcuni esempi su github, raggruppati in tre tipi di analizzatori](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[Introduzione e panoramica di alcuni analizzatori parlare](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
+[Introduzione e panoramica di alcuni analizzatori parlare](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>Vedere anche
 

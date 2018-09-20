@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69eaf52f9864b61cfc5045da9dbaf0ca6b4410b9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511665"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370575"
 ---
 # <a name="checklist-create-new-project-types"></a>Elenco di controllo: Creare nuovi tipi di progetto
 È necessario completare diverse attività per creare un nuovo tipo di progetto. Elenco di controllo seguente offre una Guida alle attività:  
@@ -36,7 +36,7 @@ ms.locfileid: "39511665"
   
     -   Factory del progetto, per gestire la creazione di nuovi progetti e aprire progetti esistenti. Per altre informazioni, vedere [creare le istanze del progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    -   Gerarchia del progetto e la gestione dei comandi. Per altre informazioni, vedere [HierUtil7 Usa le classi di progetto per implementare un tipo di progetto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md), [componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)e [ Confronto tra oggetti MenuCommand Visual Studio. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).  
+    -   Gerarchia del progetto e la gestione dei comandi. Per altre informazioni, vedere [HierUtil7 Usa le classi di progetto per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md), [componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)e [ Confronto tra oggetti MenuCommand Visual Studio. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).  
   
     -   Gestione elementi di progetto, inclusa l'aggiunta del progetto per la **nuovo progetto** nella finestra di dialogo. Per altre informazioni, vedere [aggiunta di progetto e modelli di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md) e [registrare i modelli di progetto ed elemento](../../extensibility/internals/registering-project-and-item-templates.md).  
   

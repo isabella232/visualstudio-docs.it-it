@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 718642c65920072da20a7e2193755d0e24ed32cb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 03e95dce70b38a6c2b51e0b610cb8e8bd6379239
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512265"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370991"
 ---
 # <a name="context-parameters"></a>Parametri di contesto
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), è possibile aggiungere le procedure guidate per il **nuovo progetto**, **Aggiungi nuovo elemento**, o **Aggiungi progetto Sub** finestre di dialogo. Le procedure guidate di aggiunta sono disponibili nel **File** dal menu o facendo clic su un progetto in **Esplora soluzioni**. L'IDE passa i parametri di contesto per l'implementazione della procedura guidata. I parametri di contesto definiscono lo stato del progetto quando l'IDE chiama la procedura guidata.  
@@ -67,4 +67,4 @@ Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di svi
  [Parametri personalizzati](../../extensibility/internals/custom-parameters.md)   
  [Procedure guidate](../../extensibility/internals/wizards.md)   
  [File della procedura guidata (con estensione vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [Parametri di contesto per l'avvio di procedure guidate](http://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+ [Parametri di contesto per l'avvio di procedure guidate](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)

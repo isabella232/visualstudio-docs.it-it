@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321125"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371062"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -52,16 +52,14 @@ Per assicurarsi che non entrino in conflitto con la progettazione codice, è pos
 
 -   Visual Studio
 
--   Visual Studio sul server Team Foundation Build in uso per convalidare il codice automaticamente con Team Foundation Build
-
 -   Una soluzione che include un progetto di modellazione con un diagramma delle dipendenze. Questo diagramma di dipendenza deve essere collegato agli artefatti nei progetti c# o Visual Basic che si desidera convalidare. Visualizzare [creare i diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md).
 
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- È possibile convalidare il codice manualmente da un diagramma di dipendenze open in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare il codice automaticamente quando sono in esecuzione compilazioni locali o Team Foundation Build. Visualizzare [Video di Channel 9: progettazione e convalidare l'architettura utilizzando i diagrammi delle dipendenze](http://go.microsoft.com/fwlink/?LinkID=252073).
+È possibile convalidare il codice manualmente da un diagramma di dipendenze open in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare codice automaticamente quando si eseguono compilazioni locali o le pipeline di Azure Build. Visualizzare [Video di Channel 9: progettazione e convalidare l'architettura utilizzando i diagrammi delle dipendenze](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
->  Se si desidera eseguire la convalida dei livelli in Team Foundation Build, è inoltre necessario installare la stessa versione di Visual Studio nel server di compilazione.
+> Se si desidera eseguire la convalida dei livelli tramite Team Foundation Server, è necessario installare anche la stessa versione di Visual Studio nel server di compilazione.
 
 -   [Se un elemento supporta la convalida](#SupportsValidation)
 
@@ -182,51 +180,32 @@ In questa versione di Visual Studio, si verifica la convalida delle dipendenze i
 |Tutti gli errori eliminati da nascondere il **elenco errori** finestra|Fare doppio clic in un punto qualsiasi nella **elenco errori** finestra, scegliere **Gestisci errori di convalida**, quindi fare clic su **Nascondi errori eliminati**.|
 
 ##  <a name="ValidateAuto"></a> Convalidare codice automaticamente
- È possibile eseguire la convalida dei livelli ogni volta che si esegue una compilazione. Se il team usa Team Foundation Build, è possibile eseguire la convalida dei livelli nelle archiviazioni gestite, che si possono specificare creando un'attività personalizzata MSBuild, e usare i rapporti di compilazione per raccogliere gli errori di convalida. Per creare compilazioni di archiviazione gestite, vedere [utilizzare un processo di compilazione di archiviazione gestita per convalidare le modifiche](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+
+È possibile eseguire la convalida dei livelli ogni volta che si esegue una compilazione. Se il team Usa DevOps di Azure, è possibile eseguire la convalida dei livelli con archiviazioni gestite, che si possono specificare creando un'attività personalizzata MSBuild e usare i report di compilazione per raccogliere gli errori di convalida. Per creare compilazioni di archiviazione gestite, vedere [utilizzare un processo di compilazione di archiviazione gestita per convalidare le modifiche](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Per convalidare automaticamente il codice durante una compilazione locale
 
--   Usare un editor di testo per aprire il file del progetto di modellazione (.modelproj), quindi includere la proprietà seguente:
+Usare un editor di testo per aprire il file del progetto di modellazione (.modelproj), quindi includere la proprietà seguente:
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- oppure -
+\- oppure -
 
 1.  Nelle **Esplora soluzioni**, fare clic sul progetto che contiene il diagramma delle dipendenze o i diagrammi di modellazione e quindi fare clic su **proprietà**.
 
 2.  Nel **delle proprietà** finestra, impostare il progetto di modellazione **Convalida architettura** proprietà **True**.
 
-     Il progetto di modellazione viene incluso nel processo di convalida.
+    Il progetto di modellazione viene incluso nel processo di convalida.
 
 3.  Nelle **Esplora soluzioni**, fare clic sul file di diagramma (con estensione layerdiagram) delle dipendenze che si desidera utilizzare per la convalida.
 
 4.  Nel **proprietà** finestra, assicurarsi che il diagramma **azione di compilazione** viene impostata su **Validate**.
 
-     Ciò include il diagramma delle dipendenze nel processo di convalida.
+    Ciò include il diagramma delle dipendenze nel processo di convalida.
 
- Per gestire gli errori nella finestra Elenco errori, vedere [Gestisci errori di convalida](#ManageErrors).
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Per convalidare codice automaticamente durante un'operazione di Team Foundation Build
-
-1.  Nelle **Team Explorer**, fare doppio clic sulla definizione di compilazione e quindi fare clic su **processo**.
-
-2.  Sotto **parametri processo di compilazione**, espandere **compilazione**e digitare il comando seguente nel **argomenti MSBuild** parametro:
-
-     `/p:ValidateArchitecture=true`
-
- Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors). Per altre informazioni su [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], vedere:
-
--   [Pipeline di Azure](/azure/devops/pipelines/index?view=vsts)
-
--   [Utilizzare il modello predefinito per il processo di compilazione](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [Modificare una compilazione Legacy basata su upgradetemplate. Xaml](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [Personalizzare il modello del processo di compilazione](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [Monitorare lo stato di una compilazione in esecuzione](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+Per gestire gli errori nella finestra Elenco errori, vedere [Gestisci errori di convalida](#ManageErrors).
 
 ##  <a name="TroubleshootingValidation"></a> Risolvere i problemi di convalida dei layer
  Nella tabella seguente vengono descritti i problemi di convalida dei livelli e la relativa risoluzione. Questi problemi differiscono dagli errori risultanti da conflitti tra il codice e la progettazione. Per altre informazioni su questi errori, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).

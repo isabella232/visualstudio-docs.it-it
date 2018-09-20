@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f362987a8a52692aa0b38bf921b6763dbc8a2c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637055"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370549"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Configurazione di inizializzazione e i metadati della finestra di progettazione
 Modifica degli attributi dei metadati e il filtro associato a una finestra di progettazione o un componente della finestra di progettazione fornisce un meccanismo per le applicazioni definire quali strumenti vengono usati da una particolare finestra di progettazione per gestire diversi <xref:System.Type> oggetti (ad esempio strutture dei dati, le classi, o entità con interfaccia grafica), quando la finestra di progettazione è disponibile, e come IDE di Visual Studio è configurato per supportare la finestra di progettazione (per istanza quali **casella degli strumenti** categoria o scheda è disponibile).  
@@ -100,4 +100,4 @@ Modifica degli attributi dei metadati e il filtro associato a una finestra di pr
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [Estendere il supporto in fase di dDesign](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Estendere il supporto in fase di progettazione](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
