@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a462501637fab8ea916dd5488b0796351164d5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500709"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495622"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Procedura dettagliata: Aggiungere XAML personalizzato nella pagina iniziale
 Questa procedura dettagliata viene illustrato come creare una pagina iniziale personalizzata di Visual Studio che contiene un Web browser.  
@@ -93,4 +93,4 @@ Questa procedura dettagliata viene illustrato come creare una pagina iniziale pe
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzare la pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Controlli contenitore WPF](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
+ [Controlli contenitore WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)

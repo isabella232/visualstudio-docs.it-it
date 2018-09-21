@@ -1,7 +1,7 @@
 ---
 title: Funzionalità IntelliTrace | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 608b183333d3561f9db586955142f94a8371c055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279532"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495726"
 ---
 # <a name="intellitrace-features"></a>Funzionalità di IntelliTrace
 
@@ -42,21 +42,21 @@ Per verificare che IntelliTrace sia abilitato, aprire il **strumenti > Opzioni >
 > [!NOTE]
 > L'ambito di tutte le impostazioni riguardanti il **IntelliTrace** pagina delle opzioni è Visual Studio come intero, non i singoli progetti o soluzioni. Una modifica di queste impostazioni si applica a tutte le istanze di Visual Studio, le sessioni di debug tutti e tutti i progetti o soluzioni.
 
-## <a name="ChooseEvents"></a> Scegliere gli eventi registrati da IntelliTrace
+## <a name="ChooseEvents"></a> Scegliere gli eventi registrati da IntelliTrace (solo codice gestito)
 
 È possibile attivare o disattivare la registrazione di eventi di IntelliTrace specifici.
 
 Se il debug è in corso, interromperlo. Passare a **strumenti > Opzioni > IntelliTrace > eventi IntelliTrace**. Scegliere gli eventi di IntelliTrace per registrare.
 
-## <a name="Snapshots"></a> Raccogli snapshot ed eventi
+## <a name="Snapshots"></a> Raccogli snapshot
 
-Questo non è abilitato per impostazione predefinita, ma IntelliTrace è possibile acquisire snapshot dell'applicazione in tutti gli eventi di passaggio del debugger e del punto di interruzione ed è possibile visualizzare gli snapshot theses in una sessione di debug cronologica. Uno snapshot offre una visualizzazione dello stato dell'applicazione completo. Per abilitare l'acquisizione di snapshot, passare a **strumenti > Opzioni > IntelliTrace > Generale**e selezionare **IntelliTrace snapshot ed eventi**. Per altre informazioni, vedere [visualizzare gli snapshot con tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
+Questo non è abilitato per impostazione predefinita, ma IntelliTrace è possibile acquisire snapshot dell'applicazione in tutti gli eventi di passaggio del debugger e del punto di interruzione ed è possibile visualizzare questi snapshot in una sessione di debug cronologica. Uno snapshot offre una visualizzazione dello stato dell'applicazione completo. Per abilitare l'acquisizione di snapshot, passare a **strumenti > Opzioni > IntelliTrace > Generale**e selezionare **istantanee di IntelliTrace (gestite e native)**. Per altre informazioni, vedere [visualizzare gli snapshot con tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
 
-Gli snapshot sono disponibili in Visual Studio Enterprise 2017 versione 15.5 e versioni successive e richiede Windows 10 Anniversary Update o versione successiva.  Per le app .NET Core e ASP.NET Core, è necessario Visual Studio Enterprise 2017 versione 15.7 preview 1.
+Gli snapshot sono disponibili in Visual Studio Enterprise 2017 versione 15.5 e versioni successive e richiede Windows 10 Anniversary Update o versione successiva.  Per le app .NET Core e ASP.NET Core, è necessario Visual Studio Enterprise 2017 versione 15.7. Per le app native destinate a Windows, Visual Studio Enterprise 2017 versione 15.9 Preview 2 è obbligatorio.
 
-## <a name="GoingFurther"></a> Raccogli eventi di IntelliTrace e informazioni di chiamata
+## <a name="GoingFurther"></a> Raccogli eventi di IntelliTrace e chiamare informazioni (solo codice gestito)
 
-Questo non è abilitato per impostazione predefinita, ma IntelliTrace consente di registrare le chiamate di metodo insieme agli eventi. Per abilitare la raccolta di chiamate passano al metodo **strumenti > Opzioni > IntelliTrace > Generale**e selezionare **eventi IntelliTrace e informazioni sulle chiamate**.
+Questo non è abilitato per impostazione predefinita, ma IntelliTrace consente di registrare le chiamate di metodo insieme agli eventi. Per abilitare la raccolta di chiamate passano al metodo **strumenti > Opzioni > IntelliTrace > Generale**e selezionare **eventi IntelliTrace e informazioni (solo gestite) di chiamata**.
 
 Informazioni sulle chiamate non è attualmente disponibile per le app .NET Core e ASP.NET Core. 
 

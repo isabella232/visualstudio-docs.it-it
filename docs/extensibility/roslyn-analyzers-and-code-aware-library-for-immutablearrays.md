@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad8f58e1d576a738c17095b6306261964e448651
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637721"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495921"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Gli analizzatori di Roslyn e libreria con riconoscimento del codice per ImmutableArrays
 
@@ -307,13 +307,13 @@ Successivamente, il metodo recupera la radice del documento e, poiché ciò può
 
 ## <a name="talk-video-and-finish-code-project"></a>Comunicare con video e di fine progetto di codice
 
-È possibile visualizzare in questo esempio viene sviluppato e illustrate dettagliatamente nella [in questo webcast](http://channel9.msdn.com/events/Build/2015/3-725).  Il discorso dimostra l'analizzatore di lavoro e illustra la creazione.
+È possibile visualizzare in questo esempio viene sviluppato e illustrate dettagliatamente nella [in questo webcast](https://channel9.msdn.com/events/Build/2015/3-725).  Il discorso dimostra l'analizzatore di lavoro e illustra la creazione.
 
 È possibile visualizzare tutto il codice completato [qui](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers).  Le sottocartelle *DoNotUseImmutableArrayCollectionInitializer* e *DoNotUseImmutableArrayCtor* ognuna dispone di un file c# per la ricerca di problemi e un file c# che implementa il codice corregge che mostrano nel Visual Studio lampadina dell'interfaccia utente.  Si noti che il codice include una piccola astrazione altre per evitare il recupero ImmutableArray\<T > tipo di oggetto più volte.  Usa le azioni registrate annidate per salvare l'oggetto di tipo in un contesto che è disponibile ogni volta che le azioni sub (analizzare la creazione di oggetti e analizzare le inizializzazioni raccolta) eseguire.
 
 ## <a name="see-also"></a>Vedere anche
 
-* [\\Talk \Build 2015](http://channel9.msdn.com/events/Build/2015/3-725)
+* [\\Talk \Build 2015](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Codice completo in GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [Alcuni esempi su GitHub, raggruppati in tre tipi di analizzatori](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [Gli altri documenti nel sito GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

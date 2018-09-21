@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513374"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495999"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 Questo articolo contiene le attività seguenti per gli integratori di Visualizzatore della Guida di Visual Studio:  
@@ -822,13 +822,13 @@ Per testare questo come se distribuita:
 ### <a name="additional-resources"></a>Risorse aggiuntive  
 Per le API di Runtime, vedere [API di Windows della Guida](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
-Per altre informazioni su come usare l'API della Guida, vedere [esempi di codice del visualizzatore Guida in linea](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+Per altre informazioni su come usare l'API della Guida, vedere [esempi di codice del visualizzatore Guida in linea](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 Per fornire commenti e suggerimenti relativi a questi componenti, utilizzare [Microsoft Connect](http://connect.microsoft.com/).  
   
 Inviare suggerimenti sulle funzionalità per [Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-Per ottenere ulteriore assistenza, provare il [Guida e documentazione per sviluppatori MSDN forum](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+Per ottenere ulteriore assistenza, provare il [Guida e documentazione per sviluppatori MSDN forum](https://social.msdn.microsoft.com/Forums)  
   
 Gli aggiornamenti sulle importanti problema, consultare il [Leggimi Visualizzatore della Guida](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   

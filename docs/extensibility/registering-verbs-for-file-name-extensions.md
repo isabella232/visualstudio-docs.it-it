@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639730"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495258"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrare i verbi per estensioni di file
 L'associazione di un'estensione di file a un'applicazione ha in genere un'azione da preferire che si verifica quando un utente fa doppio clic su un file. Preferibile utilizzare l'azione è collegata a un verbo, ad esempio open, che corrisponde all'azione.  
   
- È possibile registrare i verbi associati un ProgID (programmatic identifier) per un'estensione usando la chiave Shell nel percorso **HKEY_CLASSES_ROOT\{progid} \shell**. Per altre informazioni, vedere [tipi di File](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ È possibile registrare i verbi associati un ProgID (programmatic identifier) per un'estensione usando la chiave Shell nel percorso **HKEY_CLASSES_ROOT\{progid} \shell**. Per altre informazioni, vedere [tipi di File](/windows/desktop/shell/fa-file-types).  
   
 ## <a name="register-standard-verbs"></a>Registrare i verbi standard  
  Il sistema operativo riconosce i verbi standard seguenti:  

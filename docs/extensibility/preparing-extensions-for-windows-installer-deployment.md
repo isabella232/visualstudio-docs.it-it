@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef69ac45a090aa4395aa15d1395cff1665255b51
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cc742fecbbe03ff3d3aa0fb3f8d61a9c5f09254b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639113"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495271"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Preparare le estensioni per la distribuzione di Windows Installer
 È possibile utilizzare un pacchetto di Windows Installer (MSI) per distribuire un pacchetto VSIX. Tuttavia, è possibile estrarre il contenuto di un pacchetto VSIX per la distribuzione di file MSI. Questo documento illustra come preparare un progetto di cui l'output predefinito è un pacchetto VSIX per l'inclusione in un progetto di installazione.  
@@ -58,5 +58,5 @@ ms.locfileid: "39639113"
 5.  Aggiungere i file rimanenti al progetto di installazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Distribuzione del programma di installazione Visual Studio](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [Procedura dettagliata: Creare un'azione personalizzata](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)
+ [Distribuzione del programma di installazione Visual Studio](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [Procedura dettagliata: Creare un'azione personalizzata](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

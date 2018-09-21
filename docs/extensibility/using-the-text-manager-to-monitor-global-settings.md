@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0378d4c8c021cb47362220b49c8d7cb5a4ebc82
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2a90d7d900054ee1ba8dec1a278d37d5898985dd
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079787"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495427"
 ---
 # <a name="use-the-text-manager-to-monitor-global-settings"></a>Usare la gestione di testo per monitorare le impostazioni globali
 Se si implementa un editor di base, è necessario monitorare le modifiche apportate alle impostazioni globali, perché queste modifiche potrebbero influenzare l'istanza dell'editor. È possibile tenere traccia delle modifiche rimanendo in ascolto di eventi generati da Gestione testi. Ad esempio, quando si specifica una preferenza globale per l'aspetto o il comportamento di un componente nell'editor principale, ad esempio relativo oggetto dati del documento, la gestione di testo archivia le informazioni e comunica a tutti i client interessati.  
@@ -43,4 +43,4 @@ Se si implementa un editor di base, è necessario monitorare le modifiche apport
   
 ## <a name="see-also"></a>Vedere anche  
  [All'interno dell'editor di base](../extensibility/inside-the-core-editor.md)   
- [Funzionalità dell'editor](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
+ [Funzionalità dell'editor](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

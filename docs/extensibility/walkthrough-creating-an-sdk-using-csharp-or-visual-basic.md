@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 397147bdc5c6ae11c06bfaa47667ad24aa53e2dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497875"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495947"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creare un SDK tramite c# o Visual Basic
 In questa procedura dettagliata si apprenderà come creare un SDK della libreria matematica semplice con Visual c# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). È possibile completare le procedure seguenti:  
@@ -93,7 +93,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```
 
@@ -105,7 +105,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```  
   
@@ -166,7 +166,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
   
 6.  Nel riquadro dei dettagli, scegliere il **semplice Math SDK** estensione.  
   
-     Vengono visualizzate informazioni aggiuntive sul SDK. È possibile scegliere il **per altre informazioni** collegamento per aprire http://www.msdn.microsoft.com, come specificato nel file Sdkmanifest più indietro in questa procedura dettagliata.  
+     Vengono visualizzate informazioni aggiuntive sul SDK. È possibile scegliere il **per altre informazioni** collegamento per aprire https://msdn.microsoft.com/, come specificato nel file Sdkmanifest più indietro in questa procedura dettagliata.  
   
 7.  Nel **gestione riferimenti** finestra di dialogo, seleziona la **SDK matematiche semplici** casella di controllo e quindi scegliere il **OK** pulsante.  
   
@@ -243,5 +243,5 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Creare un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Procedura dettagliata: Creare un SDK con JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Procedura dettagliata: Creare un SDK con JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md)

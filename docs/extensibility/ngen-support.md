@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2919559a748769c3b30e09023ad4f10965d62ce6
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3b5f9c7b297d98836ca3e5c017d2a0d440a30470
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639490"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495479"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Supporto di Ngen in VSIX v3
 
@@ -26,7 +26,7 @@ Di seguito è riportato un frammento da MSDN che spiega quali "ngen":
 
 >Generatore di immagini Native (*Ngen.exe*) è uno strumento che consente di migliorare le prestazioni delle applicazioni gestite. *Ngen.exe* crea immagini native, che sono file che contengono codice compilato specifico del processore del computer e li installa nella cache delle immagini native nel computer locale. Il runtime può usare le immagini native della cache anziché il compilatore Just-In-Time (JIT) per compilare l'assembly originale.
 >
->da [Ngen.exe (Native Image Generator)](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
+>da [Ngen.exe (Native Image Generator)](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
 Per poter "ngen" un assembly, il progetto VSIX deve essere installato "per ogni istanza per ogni macchina". Questa opzione può essere abilitata selezionando la casella di controllo "tutti gli utenti" `extension.vsixmanifest` progettazione:
 
@@ -41,7 +41,7 @@ Esistono 4 proprietà che è possibile impostare:
 1. **Ngen** (booleana) - se true, il programma di installazione di Visual Studio verrà "ngen" dell'assembly.
 2. **Applicazione Ngen** (stringa) - Ngen offre l'opportunità di utilizzare un application *app* file per risolvere le dipendenze dell'assembly. Questo valore deve essere impostato su un'applicazione la cui proprietà *app. config* si desidera utilizzare (relativo alla directory di installazione di Visual Studio).
 3. **Architettura Ngen** (enumerazione) - l'architettura in modo nativo compila l'assembly. Le opzioni sono: una. B NotSpecified. X86 c. X64 d. Tutti
-4. **Priorità Ngen** (numero intero compreso tra 1 e 3 -) a livello di priorità di Ngen è documentato al [livelli di priorità Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
+4. **Priorità Ngen** (numero intero compreso tra 1 e 3 -) a livello di priorità di Ngen è documentato al [livelli di priorità Ngen.exe](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
 Di seguito viene illustrato il **proprietà** finestra in azione:
 

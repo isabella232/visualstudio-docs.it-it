@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99bcb83ad085d67d219cea7a7860994fba3e9bd7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513426"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495544"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 Il programma di installazione di Windows installa e Disinstalla applicazioni o i prodotti software nel computer dell'utente, eseguire queste attività in unità denominate i componenti di Windows Installer (denominati talvolta WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni usando Windows Installer e installazione.  
@@ -75,4 +75,4 @@ Il programma di installazione di Windows installa e Disinstalla applicazioni o i
 -   Alcuna risorsa con controllo delle versioni non deve sempre fornito con più WIC.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Cosa accade se le regole dei componenti vengono interrotte.](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Cosa accade se le regole dei componenti vengono interrotte.](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638030"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495453"
 ---
 # <a name="localize-menu-commands"></a>Localizzare i comandi di menu
 È possibile fornire il testo localizzato per i comandi di menu e barra degli strumenti mediante la creazione di localizzata *vsct* i file e localizzate *resx* file per il pacchetto VSPackage e quindi aggiornare i file di progetto incorporare il modifiche.  
@@ -37,7 +37,7 @@ ms.locfileid: "39638030"
   
 2.  Creare una copia del *filename.en US.vsct* per ogni lingua localizzata.  
   
-     Nome di ogni copia *filename. { Impostazioni locali} vsct*, dove *{delle impostazioni locali}* è un nome di impostazioni cultura particolari. Per un elenco di valori di nome impostazioni cultura, vedere [ID impostazioni locali assegnati da Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Nome di ogni copia *filename. { Impostazioni locali} vsct*, dove *{delle impostazioni locali}* è un nome di impostazioni cultura particolari. Per un elenco di valori di nome impostazioni cultura, vedere [ID impostazioni locali assegnati da Microsoft](/windows/uwp/publish/supported-languages).  
   
      Questi *filename. Locale.vsct* file conterrà il testo del menu localizzato per il pacchetto.  
   

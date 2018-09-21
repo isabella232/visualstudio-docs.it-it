@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd3bf8f3f31b914debc6dab4eb5c4f6e7b27086
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512223"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495986"
 ---
 # <a name="project-model-core-components"></a>Componenti di base del modello di progetto
 Espandono le tabelle seguenti nel modello di progetto. Le tabelle presentano una breve descrizione di interfacce e servizi identificati nel modello e le interfacce e i servizi associati a oggetti specifici. Inoltre, le tabelle in dettaglio le altre interfacce facoltative la creazione del progetto e di manutenzione a seconda dei requisiti del tipo di progetto specifico.  
@@ -105,6 +105,6 @@ Espandono le tabelle seguenti nel modello di progetto. Le tabelle presentano una
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Non incluso nella Build: utilizzo delle classi progetto HierUtil7 per implementare un tipo di progetto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Non incluso nella Build: utilizzo delle classi progetto HierUtil7 per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Supporto di strumenti di esplorazione dei simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)
