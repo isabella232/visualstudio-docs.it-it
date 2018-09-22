@@ -1,5 +1,5 @@
 ---
-title: Visualizzare gli eventi con IntelliTrace | Documenti Microsoft
+title: Visualizzare gli eventi con IntelliTrace | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,24 +10,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd43297dcf6a15e7d064809a5c4b5091f51ac63
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f46113365b66a75d3f9e149181637c79068645ab
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477719"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542325"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>Visualizzare gli eventi con IntelliTrace in Visual Studio
+# <a name="view-events-with-intellitrace-in-visual-studio"></a>Visualizza eventi con IntelliTrace in Visual Studio
 È possibile usare IntelliTrace per raccogliere informazioni su eventi o categorie di eventi specifici o su singole chiamate di funzione oltre agli eventi. I passaggi seguenti illustrano come eseguire quest'operazione.  
   
- È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition, ma non le edizioni Professional o Community.  
+ È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition, ma non edizioni Professional o Community.  
   
 ##  <a name="GettingStarted"></a> Configurare Intellitrace  
- È possibile provare a eseguire il debug con soli eventi IntelliTrace. Gli eventi IntelliTrace sono eventi del debugger, eccezioni, eventi .NET Framework e altri eventi di sistema. È possibile attivare o disattivare eventi specifici per il controllo degli eventi che IntelliTrace registra prima di avviare il debug. Per ulteriori informazioni, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
+ È possibile provare a eseguire il debug con soli eventi IntelliTrace. Gli eventi IntelliTrace sono eventi del debugger, eccezioni, eventi .NET Framework e altri eventi di sistema. È possibile attivare o disattivare eventi specifici per il controllo degli eventi che IntelliTrace registra prima di avviare il debug. Per altre informazioni, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
   
- - Attivare l'evento di IntelliTrace per l'accesso ai file. Passare al **strumenti > Opzioni > IntelliTrace > eventi IntelliTrace** pagina, quindi espandere il **File** categoria. Selezionare la categoria di eventi **File** . Saranno selezionati tutti gli eventi relativi ai file (accesso,  chiusura, eliminazione).
+ - Attivare l'evento di IntelliTrace per l'accesso ai file. Andare alla **strumenti > Opzioni > IntelliTrace > eventi IntelliTrace** pagina ed espandere le **File** categoria. Selezionare la categoria di eventi **File** . Saranno selezionati tutti gli eventi relativi ai file (accesso,  chiusura, eliminazione).
 
-## <a name="create-your-app"></a>Creare l'app.
+## <a name="create-your-app"></a>Crea la tua app
   
 1.  Creare un'applicazione console C#. Aprire il file Program.cs e aggiungere l’istruzione `using` seguente:  
   
@@ -64,7 +64,7 @@ ms.locfileid: "31477719"
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "Update1 IntelliTrace")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace Update1")  
   
 3.  Selezionare l'evento per espandere i dettagli.  
   
@@ -74,7 +74,7 @@ ms.locfileid: "31477719"
   
      È possibile scegliere il collegamento al percorso per aprire il file. Se il nome del percorso completo non è disponibile, viene visualizzata la finestra di dialogo **Apri file** .  
   
-     Fare clic su **attivare debug cronologico**, che imposta il contesto del debugger per l'ora in cui l'evento selezionato è stato raccolto, mostrando i dati cronologici nel **Stack di chiamate**, **variabili locali** e le altre finestre del debugger partecipanti. Se il codice sorgente è disponibile, Visual Studio sposta il puntatore sul codice corrispondente nella finestra di origine per consentirne l'analisi.  
+     Fare clic su **attivare debug cronologico**, che imposta il contesto del debugger sul momento quando l'evento selezionato è stato raccolto, mostrando i dati cronologici nel **Stack di chiamate**, **variabililocali** e le altre finestre del debugger partecipanti. Se il codice sorgente è disponibile, Visual Studio sposta il puntatore sul codice corrispondente nella finestra di origine per consentirne l'analisi.  
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
@@ -84,7 +84,7 @@ ms.locfileid: "31477719"
   
 ## <a name="next-steps"></a>Passaggi successivi
 
-È possibile utilizzare alcune delle funzionalità avanzate di IntelliTrace con il debug cronologico:
+È possibile usare alcune delle funzionalità avanzate di IntelliTrace con il debug cronologico:
 
- - Per visualizzare gli snapshot, vedere [visualizzare snapshot tramite IntelliTrace passaggio-back](../debugger/how-to-use-intellitrace-step-back.md)
- - Per informazioni su come controllare le variabili e spostarsi nel codice, vedere [controllare l'app con il debug cronologico](../debugger/historical-debugging-inspect-app.md)
+ - Per visualizzare gli snapshot, vedere [ispezionare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md)
+ - Per informazioni su come controllare le variabili ed esplorare il codice, vedere [analizzare un'app con il debug cronologico](../debugger/historical-debugging-inspect-app.md)
