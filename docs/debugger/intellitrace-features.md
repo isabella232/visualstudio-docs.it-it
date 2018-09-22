@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495726"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542468"
 ---
 # <a name="intellitrace-features"></a>Funzionalità di IntelliTrace
 
@@ -50,7 +50,7 @@ Se il debug è in corso, interromperlo. Passare a **strumenti > Opzioni > Intell
 
 ## <a name="Snapshots"></a> Raccogli snapshot
 
-Questo non è abilitato per impostazione predefinita, ma IntelliTrace è possibile acquisire snapshot dell'applicazione in tutti gli eventi di passaggio del debugger e del punto di interruzione ed è possibile visualizzare questi snapshot in una sessione di debug cronologica. Uno snapshot offre una visualizzazione dello stato dell'applicazione completo. Per abilitare l'acquisizione di snapshot, passare a **strumenti > Opzioni > IntelliTrace > Generale**e selezionare **istantanee di IntelliTrace (gestite e native)**. Per altre informazioni, vedere [visualizzare gli snapshot con tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
+Questo non è abilitato per impostazione predefinita, ma IntelliTrace è possibile acquisire snapshot dell'applicazione in tutti gli eventi di passaggio del debugger e del punto di interruzione ed è possibile visualizzare questi snapshot in una sessione di debug cronologica. Uno snapshot offre una visualizzazione dello stato dell'applicazione completo. Per abilitare l'acquisizione di snapshot, passare a **strumenti > Opzioni > IntelliTrace > Generale**e selezionare **istantanee di IntelliTrace (gestite e native)**. Per altre informazioni, vedere [ispezionare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md)
 
 Gli snapshot sono disponibili in Visual Studio Enterprise 2017 versione 15.5 e versioni successive e richiede Windows 10 Anniversary Update o versione successiva.  Per le app .NET Core e ASP.NET Core, è necessario Visual Studio Enterprise 2017 versione 15.7. Per le app native destinate a Windows, Visual Studio Enterprise 2017 versione 15.9 Preview 2 è obbligatorio.
 

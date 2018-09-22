@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433454"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542436"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Quali sono le novità relative al Debugger di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ Il debugger include queste nuove funzionalità:
 
     ![Passaggio precedente e inoltrare i pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti Vai indietro e Avanti")
 
-    Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+    Per altre informazioni, vedere la [ispezionare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md) pagina.
 
 - Il **Helper eccezioni** sostituisce le informazioni sulle eccezioni e viene visualizzato in una finestra di dialogo non modale in cui si è verificato l'errore. Il **Helper eccezioni** fornisce un accesso più rapido per eventuali eccezioni interne, un'analisi aggiuntiva dal debugger (se disponibile) e accesso immediato al **impostazioni eccezioni** per l'eccezione. L'Helper eccezioni possono anche essere trascinata in una vista mobile se sta bloccando un elemento che si desidera vedere.
 
