@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 987584be6d2d0a2ee794622e64e989de9ea80334
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135578"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028949"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Creare un'installazione offline di Visual Studio 2017
 
@@ -34,7 +34,7 @@ Ad esempio, la connessione Internet potrebbe essere inaffidabile o la larghezza 
 
 ## <a name="use-the-download-all-then-install-feature"></a>Usare la funzionalità "Scarica tutto, quindi installa"
 
-[**Novità della versione 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&view=vs-2017#install
+[**Novità della versione 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
 ): dopo aver scaricato il programma di installazione Web, selezionare la nuova opzione **Scarica tutto, quindi installare** nel programma di installazione di Visual Studio. Continuare quindi con l'installazione.
 
    ![Opzione "Scarica tutto, quindi installa"](media/download-all-then-install.png)

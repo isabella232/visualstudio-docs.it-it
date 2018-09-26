@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638713"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029027"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -44,7 +44,7 @@ Tutti i modelli **Progetto Web \<framework> vuoto** creano un progetto con una q
 | --- | --- |
 | **Progetto Web Bottle vuoto** | Genera un'app minima in *app.py* con una home page per `/` e una pagina `/hello/<name>` che restituisce `<name>` usando un modello di pagina inline molto breve. |
 | **Progetto Web Django vuoto** | Genera un progetto Django con la struttura fondamentale del sito Django ma nessuna app Django. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 1 dell'esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Progetto Web Flask vuoto** | Genera un'app minima con un'unica pagina "Hello World!" per `/`. Questa app è simile al risultato che si ottiene seguendo i passaggi dettagliati nella [Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio](../ide/quickstart-python.md?context=visualstudio/python/default). Vedere anche [Informazioni su Flask, passaggio 1](learn-flask-visual-studio-step-01-project-solution.md).
+| **Progetto Web Flask vuoto** | Genera un'app minima con un'unica pagina "Hello World!" per `/`. Questa app è simile al risultato che si ottiene seguendo i passaggi dettagliati nella [Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vedere anche [Informazioni su Flask, passaggio 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Gruppo Web
 

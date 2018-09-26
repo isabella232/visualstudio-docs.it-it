@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627213"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029121"
 ---
 # <a name="image-editor"></a>Editor immagini
 
@@ -53,8 +53,6 @@ Questa sezione descrive come aggiungere un'immagine al progetto Visual Studio e 
    > Se non viene visualizzata la categoria **Grafica** nella finestra di dialogo **Aggiungi nuovo elemento**, potrebbe essere necessario installare il componente **Editor di immagini e modelli 3D**. Chiudere la finestra di dialogo e selezionare **Strumenti** > **Get Tools and Features** (Ottieni strumenti e funzionalità) dalla barra dei menu per aprire il **programma di installazione di Visual Studio**. Selezionare la scheda **Singoli componenti** e il componente **Editor di immagini e modelli 3D** nella categoria **Giochi e grafica**. Selezionare **Modifica**.
    >
    > ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
-   >
-   > Se è installato il componente **Editor di immagini e modelli 3D** e non viene comunque visualizzata la categoria di modello **Grafica**, questa categoria viene visualizzata solo per determinati tipi di progetto, ad esempio applicazioni console.
 
    Per informazioni su come scegliere un formato di file in base ai requisiti, vedere la sezione [Scelta del formato dell'immagine](#choose-the-image-format).
 
