@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug con il Debugger JIT | Microsoft Docs
 ms.custom: ''
-ms.date: 07/06/17
+ms.date: 09/24/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176441"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168396"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug con il Debugger JIT in Visual Studio
 Debug Just-In-Time avvia Visual Studio automaticamente quando si verifica un'eccezione o un arresto anomalo del sistema in un'applicazione eseguita esternamente a Visual Studio. In questo modo è possibile testare l'applicazione quando Visual Studio non è in esecuzione e avviare il debug con Visual Studio quando si verifica un problema.
@@ -48,6 +48,8 @@ Il debug Just-In-Time funziona per le app desktop di Windows. Non funziona per l
 4.  Nel **Attiva debug JIT per questi tipi di codice** , selezionare o deselezionare i tipi di programma relativi: **gestito**, **Native**, o **Script**.
 
 5.  Fare clic su **OK**.
+
+    Se si Abilita Just-in-Time debugger, ma non visualizzato in un arresto anomalo dell'applicazione o un'eccezione, vedere [gli errori di debug Just-In-Time](#jit_errors).
 
 Il debug JIT può comunque essere abilitato anche se Visual Studio non è più presente nel computer. Quando non è installato Visual Studio, è possibile disabilitare il debug da Visual Studio Just-In-Time **opzioni** nella finestra di dialogo. In questo caso, è possibile disabilitare il debug JIT modificando il Registro di sistema di Windows.
 
@@ -152,28 +154,33 @@ static void Main(string[] args)
 
  È possibile avviare il debug a questo punto. Se si trattasse di un'applicazione reale, è necessario scoprire il motivo per cui il codice che genera l'eccezione.
 
-## <a name="just-in-time-debugging-errors"></a>Errori del debug JIT
- Se non viene visualizzata la finestra di dialogo quando il programma si blocca, questo potrebbe verificarsi a causa delle impostazioni di segnalazione errori Windows nel computer. Per altre informazioni, vedere [. Le impostazioni di segnalazione errori Windows](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).
+## <a name="jit_errors"></a> Errori di debug Just-In-Time
+ Se non viene visualizzata la finestra di dialogo quando il programma di arresto anomalo ed è necessario abilitare la funzionalità, ciò potrebbe verificarsi a causa delle impostazioni di segnalazione errori Windows nel computer. Assicurarsi di aggiungere un **disabilitato** valore alle chiavi del Registro di sistema seguente e impostare il valore su 1:
 
- I messaggi di errore elencati di seguito sono associati al debug JIT.
+* Segnalazione errori HKLM\Software\Microsoft\Windows\Windows
+* Segnalazione errori HKLM\Software\WOW6432Node\Microsoft\Windows\Windows
+ 
+Per altre informazioni su queste impostazioni, vedere [. Le impostazioni di segnalazione errori Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
 
--   **Impossibile connettersi al processo bloccato. Il programma specificato non è un programma Windows o MS-DOS.**
+Inoltre, si potrebbero visualizzare messaggi di errore seguenti che sono associati a Just-In-Time di debug.
 
-     Questo errore si verifica quando si prova a connettersi a un processo in esecuzione come utente diverso.
+- **Impossibile connettersi al processo bloccato. Il programma specificato non è un programma Windows o MS-DOS.**
 
-     Per risolvere questo problema, avviare Visual Studio, aprire il **Connetti a processo** dalla finestra di dialogo il **Debug** menu e trovare il processo che si desidera eseguire il debug nel **processi disponibili**elenco. Se non si conosce il nome del processo, esaminare i **Debugger JIT di Visual Studio** finestra di dialogo e annotare l'ID del processo. Selezionare il processo nel **processi disponibili** elenco e fare clic su **Attach**. Nel **Debugger JIT di Visual Studio** finestra di dialogo, fare clic su **No** per chiudere la finestra di dialogo.
+    Questo errore si verifica quando si prova a connettersi a un processo in esecuzione come utente diverso.
 
--   **È stato possibile avviare il debugger perché nessun utente è connesso.**
+    Per risolvere questo problema, avviare Visual Studio, aprire il **Connetti a processo** dalla finestra di dialogo il **Debug** menu e trovare il processo che si desidera eseguire il debug nel **processi disponibili**elenco. Se non si conosce il nome del processo, esaminare i **Debugger JIT di Visual Studio** finestra di dialogo e annotare l'ID del processo. Selezionare il processo nel **processi disponibili** elenco e fare clic su **Attach**. Nel **Debugger JIT di Visual Studio** finestra di dialogo, fare clic su **No** per chiudere la finestra di dialogo.
 
-     Questo errore si verifica quando il debug JIT tenta di avviare Visual Studio in un computer in cui nessun utente è connesso alla console. Poiché nessun utente è connesso, non esiste una sessione utente nella quale visualizzare la finestra di dialogo del debug JIT.
+- **È stato possibile avviare il debugger perché nessun utente è connesso.**
 
-     Per correggere questo problema, connettersi al computer.
+    Questo errore si verifica quando il debug JIT tenta di avviare Visual Studio in un computer in cui nessun utente è connesso alla console. Poiché nessun utente è connesso, non esiste una sessione utente nella quale visualizzare la finestra di dialogo del debug JIT.
 
--   **Classe non registrata.**
+    Per correggere questo problema, connettersi al computer.
 
-     Questo errore indica che il debugger ha tentato di creare una classe COM non registrata, probabilmente a causa di un problema di installazione.
+- **Classe non registrata.**
 
-     Per risolvere questo problema, usare il disco di installazione per reinstallare o riparare l'installazione di Visual Studio.
+    Questo errore indica che il debugger ha tentato di creare una classe COM non registrata, probabilmente a causa di un problema di installazione.
+
+    Per risolvere questo problema, usare il disco di installazione per reinstallare o riparare l'installazione di Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
  [Sicurezza del debugger](../debugger/debugger-security.md) [nozioni fondamentali di debug](../debugger/getting-started-with-the-debugger.md) [Just-In-Time, debug, finestra di dialogo Opzioni](../debugger/just-in-time-debugging-options-dialog-box.md) [avviso di sicurezza: connessione a un processo appartenente a un utente non attendibile può essere pericolosi. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
