@@ -1,0 +1,57 @@
+---
+title: Rapporto marcatori | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- vs.cv.threads.report.markers
+ms.assetid: 829ce099-172e-4c7e-bbd0-578b110c59bd
+caps.latest.revision: 11
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2c8a495135a0a7cf493dfc8a8c407409c37e273e
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47520283"
+---
+# <a name="markers-report"></a>Rapporto marcatori
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+La versione più recente di questo argomento è reperibile in [rapporto marcatori](https://docs.microsoft.com/visualstudio/profiling/markers-report).  
+  
+Il rapporto Marcatori elenca i marcatori nell'intervallo di tempo visualizzato.  La panoramica o lo zoom così come le corsie nascoste potrebbero far comparire o scomparire i marcatori. Il rapporto contiene le informazioni seguenti per ogni marcatore:  
+  
+-   L'ora in cui è stato avviato, rispetto all'inizio della traccia.  
+  
+-   La durata. La durata è zero per i flag e i messaggi poiché rappresentano un istante.  
+  
+-   L'ID del thread che lo ha generato.  
+  
+-   Il provider ETW (Event Tracking for Windows) che lo ha generato.  
+  
+-   La serie di marcatori da cui è stato scritto.  
+  
+-   La categoria di eventi a cui appartiene.  
+  
+-   Il livello di importanza.  
+  
+-   Il tipo (intervallo, flag o messaggio).  
+  
+-   Una descrizione dettagliata di cosa rappresenta.  
+  
+ Scegliere il pulsante **Esporta** per salvare il rapporto Marcatori come file con estensione csv. È possibile usare i dati nel file con estensione csv con altre app o strumenti.  
+  
+> [!NOTE]
+>  Il rapporto Marcatori può visualizzare 1000 marcatori. Per visualizzare tutti i marcatori, esportare il rapporto completo in un file con estensione csv.
+
+
+

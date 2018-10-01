@@ -1,0 +1,70 @@
+---
+title: Proprietà degli elementi nei diagrammi di attività UML | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-tfs-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- vs.teamarch.activitydiagram.shapes.properties
+helpviewer_keywords:
+- UML, element properties
+- activity diagrams, properties
+ms.assetid: 9849d45e-65d5-46bd-a319-757e90b7c748
+caps.latest.revision: 19
+author: alexhomer1
+ms.author: gewarren
+manager: douge
+ms.openlocfilehash: c50a84f9e3c5425459ea458c3f6bbc282d64b0b1
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47518405"
+---
+# <a name="properties-of-elements-on-uml-activity-diagrams"></a>Proprietà di elementi in diagrammi di attività UML
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+La versione più recente di questo argomento è reperibile in [delle proprietà degli elementi nei diagrammi di attività UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-activity-diagrams).  
+  
+In un diagramma caso di utilizzo UML ogni elemento del diagramma dispone di proprietà. Per visualizzare le proprietà di un elemento, fare doppio clic sull'elemento sul diagramma o nel **Esplora modelli UML** e quindi fare clic su **proprietà**. Le proprietà vengono visualizzate nel **proprietà** finestra.  
+  
+> [!NOTE]
+>  Questo argomento illustra le proprietà degli elementi nei diagrammi di attività UML. Per informazioni su come leggere i diagrammi attività UML, vedere [diagrammi di attività UML: riferimento](../modeling/uml-activity-diagrams-reference.md). Per altre informazioni su come creare diagrammi attività UML, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
+  
+## <a name="properties-of-elements"></a>Proprietà degli elementi  
+  
+|Proprietà|Impostazione predefinita|Elemento|Descrizione|  
+|--------------|-------------|-------------|-----------------|  
+|**Name**|Nome predefinito|Tutti|Identifica l'elemento.|  
+|**Nome completo**|Pacchetto :: Nome|Tutti|Identifica l'elemento in modo univoco. Preceduto dal nome completo del pacchetto che lo contiene.|  
+|**Elementi di lavoro**|0 elementi associati|Tutti|Numero di elementi di lavoro associati a questo elemento. Per associare gli elementi di lavoro, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).|  
+|**Descrizione**|(nessuno)|Tutti|Qui è possibile inserire note generali sull'elemento.|  
+|**Colore**|(impostazione predefinita per il tipo)|Tutti|Colore della forma.|  
+|**Corpo**|(nessuno)|Azione|Specifica l'azione in dettaglio.|  
+|**Lingua**|(nessuno)|Azione|Il linguaggio dell'espressione nel corpo.|  
+|**Local Postconditions**|(nessuno)|Azione, invio, accettazione, chiama comportamento, chiama operazione|Vincoli che devono essere soddisfatti al termine dell'esecuzione. L'obiettivo raggiunto dall'azione.|  
+|**Local Preconditions**|(nessuno)|Azione, invio, accettazione, chiama comportamento, chiama operazione|Vincoli che devono essere soddisfatti prima dell'inizio dell'esecuzione.|  
+|**Modalità sincrona**|True|Chiama comportamento, chiama operazione|-Se true, l'azione attende fino al termine dell'attività.|  
+|**Comportamento**|(nessuno)|Chiama comportamento|-L'attività richiamata.|  
+|**Operazione**|(nessuno)|Chiama operazione|-L'operazione richiamata.|  
+|**Si può effettuare l'unmarshalling**|False|Accetta evento|-Se true, possono essere presenti diversi pin di output tipizzati e dati sono unmarshalling. Se false, tutti i dati vengono visualizzati in un unico pin.|  
+|**Limite superiore**|**\***|Nodo oggetto, parametro attività|**0** indica che i dati devono passare direttamente lungo il flusso.<br /><br /> **\*** indica che i dati possono essere archiviati nel flusso.|  
+|**Selezione**|(nessuno)|Nodo oggetto, parametro attività, pin di input, pin di output, flusso oggetto|Richiama un processo che filtra i dati. Questo processo può essere definito in un altro diagramma.|  
+|**Ordinamento**|(nessuno)|Nodo Oggetto, parametro attività, pin di input, pin di output|-Come più i token vengono archiviati.|  
+|**È il controllo**|False|Pin di input, pin di output|-Se true, il flusso su questo pin è un flusso di controllo. Se false, è un flusso oggetto.|  
+|**Type**|(nessuno)|Pin di input, pin di output, nodo oggetto, parametro attività|-Il tipo di oggetti trasmessi.<br />-Il tipo può essere un tipo primitivo, ad esempio Integer o un classificatore definito altrove nel modello. Se si immette il nome di un tipo che non è definito, verrà visualizzato nei **tipi non specificati** sezione di Esplora modelli UML.|  
+|**Molteplicità**|1|Pin di input, pin di output|-Può essere un singolo valore o un intervallo `[n..m]`.<br />-Limite inferiore `n` -l'azione non può iniziare (per un pin di input) o arrestata (per un pin di output) fino a quando non sono presenti `n` oggetti in attesa nel pin.<br />-L'estremo `m` -l'azione non può usare o produrre più di `m` oggetti in un'esecuzione. * significa che non esiste alcun limite.|  
+|**Trasformazione**|(nessuno)|Flusso oggetto|-Richiama un processo che trasforma i dati. Questo processo può essere definito in un altro diagramma.|  
+|**Multicast**|False|Flusso oggetto|-Indica che potrebbero essere presenti diversi componenti o oggetti destinatario.|  
+|**È MultiReceive**|False|Flusso oggetto|-Indica che potrebbero essere presenti diversi componenti o oggetti destinatario.|  
+|**Is Single Execution**|False|Diagramma di attività|-Se impostata, esiste al massimo un'esecuzione di questo diagramma alla volta.|  
+  
+## <a name="see-also"></a>Vedere anche  
+ [Diagrammi di attività UML: riferimento](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md)
+
+
+
