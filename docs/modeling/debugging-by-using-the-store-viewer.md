@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567064"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858652"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Esecuzione del debug utilizzando il Visualizzatore di archivio
 Con il Visualizzatore Store, è possibile esaminare lo stato di un *archiviare* usato da [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Il Visualizzatore Store consente di visualizzare tutti gli elementi di modello di dominio appartenenti a un negozio specifico, con le proprietà degli elementi e collegamenti tra elementi.
 
 ## <a name="opening-store-viewer"></a>Visualizzatore di apertura Store
- Quando si utilizza il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sperimentale di compilazione, arrestare il codice in un punto di interruzione in un'istanza dell'archivio contiene informazioni sul modello. Quindi, aprire il Visualizzatore Store digitando il comando seguente nel **Immediate** finestra:
+ Quando si è nella build sperimentale di Visual Studio, arrestare il codice in un punto di interruzione in un'istanza dell'archivio contiene informazioni sul modello. Quindi, aprire il Visualizzatore Store digitando il comando seguente nel **Immediate** finestra:
 
 ```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);

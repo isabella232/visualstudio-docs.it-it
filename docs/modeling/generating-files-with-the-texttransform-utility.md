@@ -12,19 +12,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 152f8d656bf83a6ad46770e695cd64c508dcc3bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6ca9fd11e56631061d86c35f9e6bd686b8750b50
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951479"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859380"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generare file con l'utilità TextTransform
 
-TextTransform.exe è uno strumento da riga di comando che è possibile utilizzare per trasformare un modello di testo. Quando si chiama TextTransform.exe, specificare il nome di un file di modello di testo come argomento. TextTransform.exe chiama il motore di trasformazione di testo ed elabora il modello di testo. TextTransform.exe viene in genere chiamato dagli script. Tuttavia, non è in genere necessario, in quanto è possibile eseguire trasformazione del testo in Visual Studio o nel processo di compilazione.
+TextTransform.exe è uno strumento da riga di comando che è possibile utilizzare per trasformare un modello di testo. Quando si chiama TextTransform.exe, specificare il nome di un file di modello di testo come argomento. TextTransform.exe chiama il motore di trasformazione del testo ed elabora il modello di testo. TextTransform.exe viene in genere chiamato dagli script. Tuttavia, non è in genere necessaria, poiché è possibile eseguire la trasformazione di testo in Visual Studio o nel processo di compilazione.
 
 > [!NOTE]
-> Se si desidera eseguire la trasformazione di testo come parte di un processo di compilazione, utilizzare l'attività di trasformazione di testo di MSBuild. Per ulteriori informazioni, vedere [generazione di codice in un processo di compilazione](../modeling/code-generation-in-a-build-process.md). In un computer nel quale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è installato, è anche possibile scrivere un'applicazione o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensione in grado di trasformare i modelli di testo. Per ulteriori informazioni, vedere [l'elaborazione di modelli di testo tramite un Host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
+> Se si desidera eseguire la trasformazione di testo come parte di un processo di compilazione, è consigliabile usare l'attività di trasformazione di testo di MSBuild. Per altre informazioni, vedere [generazione di codice in un processo di compilazione](../modeling/code-generation-in-a-build-process.md). In un computer in cui è installato Visual Studio, è anche possibile scrivere un'applicazione o estensione di Visual Studio in grado di trasformare i modelli di testo. Per altre informazioni, vedere [elaborazione di modelli di testo tramite un Host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
  TextTransform.exe si trova nella directory seguente:
 
@@ -38,9 +38,9 @@ per l'edizione Professional, o
 
 Nelle versioni precedenti di Visual Studio, il file si trova nel percorso seguente:
 
-**\Programmi file (x86) \Common Shared\TextTemplating\{versione}**
+**\Programmi file (x86) \Common Files\Microsoft Shared\TextTemplating\{versione}**
 
-{version} in cui dipende la precedente versione installata.
+dove {version} dipende la versione precedente installata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,23 +52,23 @@ TextTransform [<options>] <templateName>
 
 |**Argomento**|**Descrizione**|
 |------------------|---------------------|
-|`templateName`|Identifica il nome del file di modello che si desidera trasformare.|
+|`templateName`|Identifica il nome del file del modello che si desidera trasformare.|
 
 |**Opzione**|**Descrizione**|
 |----------------|---------------------|
 |**-out** \<nomefile >|Il file in cui viene scritto l'output della trasformazione.|
-|**-r** \<assembly>|Un assembly utilizzato per compilare ed eseguire il modello di testo.|
+|**-r** \<assembly>|Un assembly utilizzato per la compilazione e l'esecuzione del modello di testo.|
 |**-u** \<namespace>|Uno spazio dei nomi utilizzato per la compilazione del modello.|
 |**-I** \<includedirectory>|Una directory che contiene i modelli di testo inclusi nel modello di testo specificato.|
-|**-P** \<referencepath>|Una directory in cui cercare gli assembly all'interno del modello di testo o per l'utilizzo di **- r** opzione.<br /><br /> Ad esempio, per includere gli assembly utilizzati per l'API di Visual Studio, usare<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
-|**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Il nome, nome completo del tipo e assembly di un processore di direttiva può essere utilizzato per elaborare le direttive personalizzate all'interno del modello di testo.|
-|**-** [processorName]! [ directiveName!] \<nomeparametro >! \<parameterValue >|Specificare un valore di parametro per un processore di direttiva. Se si specifica solo il nome del parametro e valore, il parametro sarà disponibile a tutti i processori di direttiva. Se si specifica un processore di direttiva, il parametro è disponibile solo per il processore specificato. Se si specifica un nome di direttiva, il parametro è disponibile solo quando viene elaborata la direttiva specificata.<br /><br /> Per accedere ai valori di parametro da un processore di direttiva o modello di testo, utilizzare [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). In un modello di testo, includere `hostspecific` nella direttiva del modello e richiamare il messaggio su `this.Host`. Ad esempio:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Digitare sempre il '!' contrassegnato, anche se si omette il processore facoltativo e i nomi di direttiva. Ad esempio:<br /><br /> `-a !!param!value`|
-|**-h**|Viene fornita la Guida.|
+|**-P** \<referencepath>|Una directory per cercare gli assembly specificati all'interno del modello di testo o per l'uso di **- r** opzione.<br /><br /> Ad esempio, per includere gli assembly utilizzati per l'API di Visual Studio, usare<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
+|**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Il nome, nome completo del tipo e assembly di un processore di direttiva che può essere utilizzato per elaborare direttive personalizzate all'interno del modello di testo.|
+|**-un** [processorName]. [ directiveName]. \<parameterName >! \<parameterValue >|Specificare un valore di parametro per un processore di direttiva. Se si specifica solo il nome del parametro e il valore, il parametro sarà disponibile per tutti i processori di direttiva. Se si specifica un processore di direttiva, il parametro è disponibile solo per il processore specificato. Se si specifica un nome di direttiva, il parametro è disponibile solo quando viene elaborata la direttiva specificata.<br /><br /> Per accedere ai valori di parametro da un processore di direttiva o di un modello di testo, usare [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). In un modello di testo, includere `hostspecific` nella direttiva del modello e richiamare il messaggio su `this.Host`. Ad esempio:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Digitare sempre il '!' contrassegnato, anche se si omette il processore facoltativo e nomi di direttiva. Ad esempio:<br /><br /> `-a !!param!value`|
+|**-h**|Fornisce la Guida.|
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 |Attività|Argomento|
 |----------|-----------|
-|Generare file in una soluzione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Generare i file in una soluzione di Visual Studio.|[Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Scrivere processori di direttive per trasformare le origini dati.|[Personalizzazione della trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md)|
-|Scrivere un host del modello di testo che consente di richiamare i modelli di testo da un'applicazione personalizzata.|[Elaborazione di modelli di testo tramite un host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md)|
+|Scrivere un host di modello di testo che consente di richiamare i modelli di testo dalla propria applicazione.|[Elaborazione di modelli di testo tramite un host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md)|

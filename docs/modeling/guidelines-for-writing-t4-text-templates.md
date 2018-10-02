@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178462"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859627"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Linee guida per la scrittura di modelli di testo T4
-Potrebbero essere utile se si desidera generare codice programma o altre risorse dell'applicazione in queste linee guida generali [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le regole non sono corretti.
+Queste linee guida generali potrebbero essere utile se si sta generando codice programma o altre risorse dell'applicazione in Visual Studio. Le regole non sono corretti.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Linee guida per i modelli T4 in fase di progettazione
- Modelli T4 in fase di progettazione sono modelli che generano il codice di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto in fase di progettazione. Per altre informazioni, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+ Modelli T4 in fase di progettazione sono modelli che generano codice nel progetto di Visual Studio in fase di progettazione. Per altre informazioni, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
  Generare gli aspetti variabili dell'applicazione.
 Generazione di codice è particolarmente utile per gli aspetti dell'applicazione che potrebbero cambiare nel corso del progetto o verrà modificato tra versioni diverse dell'applicazione. Separare questi aspetti variabili dagli aspetti più invarianti in modo che sia possibile determinare più facilmente ciò che può essere generato. Ad esempio, se l'applicazione fornisce un sito Web, separare il servizio funzioni dalla logica che definisce i percorsi di navigazione da una pagina a un'altra pagina standard.
 
  Codificare gli aspetti variabili in uno o più modelli di origine.
-Un modello è un file o database che legge ogni modello per ottenere valori specifici per parti variabili del codice che deve essere generato. I modelli possono essere database, file XML di propria progettazione, diagrammi o domain-specific Language. In genere, un modello consente di generare molti file in un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto. Ogni file viene generato da un modello distinto.
+Un modello è un file o database che legge ogni modello per ottenere valori specifici per parti variabili del codice che deve essere generato. I modelli possono essere database, file XML di propria progettazione, diagrammi o domain-specific Language. In genere, un modello consente di generare molti file in un progetto di Visual Studio. Ogni file viene generato da un modello distinto.
 
  È possibile usare più di un modello in un progetto. Ad esempio, si potrebbe definire un modello per la navigazione tra le pagine web e un modello distinto per il layout delle pagine.
 
@@ -122,7 +122,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ## <a name="guidelines-for-all-t4-templates"></a>Linee guida per tutti i modelli T4
  Raccolta dei dati separata dalla generazione di testo tenta di evitare di combinare calcolo e i blocchi di testo. In ogni modello di testo, usare il primo \<codice & blocco & > per impostare le variabili ed eseguire calcoli complessi. Dal primo blocco di testo fino alla fine del modello o il primo \<funzionalità della classe & + block & >, evitare di espressioni lunghe ed evitare i cicli e istruzioni condizionali a meno che non contengono blocchi di testo. Questa pratica rende più facile da leggere e gestire il modello.
 
- Non usare `.tt` per includere file utilizzano un'estensione nome file diverso, ad esempio `.ttinclude` i file di inclusione. Usare `.tt` solo per i file che si desidera essere elaborati come fase di esecuzione o in fase di progettazione modelli di testo. In alcuni casi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] riconosce `.tt` i file e imposta automaticamente le relative proprietà per l'elaborazione.
+ Non usare `.tt` per includere file utilizzano un'estensione nome file diverso, ad esempio `.ttinclude` i file di inclusione. Usare `.tt` solo per i file che si desidera essere elaborati come fase di esecuzione o in fase di progettazione modelli di testo. In alcuni casi, Visual Studio riconosce `.tt` i file e imposta automaticamente le relative proprietà per l'elaborazione.
 
  Ogni modello di avvio come prototipo fissato.
 Scrivere un esempio di codice o del testo che si vuole generare e verificare che sia corretto. Quindi passare l'estensione con estensione tt e inserire in modo incrementale il codice che modifica il contenuto, vedere il modello.

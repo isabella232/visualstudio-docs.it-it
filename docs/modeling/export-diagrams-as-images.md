@@ -13,33 +13,33 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6d51b660235a793182cd968423522ade35ce1a56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c1e7f7f642245fe4170c670fafd7366361e6de0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946481"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858524"
 ---
 # <a name="export-diagrams-as-images"></a>Esportare diagrammi come immagini
-In Visual Studio, è possibile salvare i diagrammi di modellazione in formati di sola lettura in modo da poterli condividere con gli stakeholder, utenti o i membri del team di progetto che non utilizzano la stessa versione di Visual Studio.
+In Visual Studio, è possibile salvare diagrammi di modellazione in formati di sola lettura in modo da poterli condividere con gli stakeholder, utenti o i membri del progetto team che non usano la stessa versione di Visual Studio.
 
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni su quali edizioni di Visual Studio supportano questa funzionalità, vedere [supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Per copiare un diagramma o parte di un diagramma a un'altra applicazione
 
 1.  Nel diagramma selezionare alcune o tutte le forme.
 
-2.  Destro la selezione e quindi fare clic su **copia**.
+2.  Fare doppio clic la selezione e quindi fare clic su **copia**.
 
 3.  Incollare la selezione nell'applicazione scelta.
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Per salvare un diagramma di modellazione come file con estensione xps (XML Paper Specification)
 
-1.  Nel **File** menu, fare clic su **stampa** per aprire la **stampa** la finestra di dialogo.
+1.  Nel **File** menu, fare clic su **Print** per aprire la **stampa** nella finestra di dialogo.
 
-2.  Nel **nome** elenco, selezionare **Microsoft XPS Document Writer**, quindi fare clic su **OK**.
+2.  Nel **Name** elenco, selezionare **Microsoft XPS Document Writer**, quindi fare clic su **OK**.
 
-3.  Nel **salvare il file come** nella finestra di dialogo Salva file con un **documento XPS (\*XPS)** file.
+3.  Nel **salvare il file come** della finestra di dialogo Salva file con un **documento XPS (\*XPS)** file.
 
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework
 

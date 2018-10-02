@@ -1,0 +1,1 @@
+App di Windows Store compilata per Windows usando JavaScript.

@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a1c98007c968f12e220c0fef841e7680f299f7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283194"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858706"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
 Creare una mappa codici per tracciare visivamente lo stack di chiamate durante il debug. È possibile inserire note sulla mappa per tenere traccia dell'attività del codice e in tal modo concentrarsi sull'individuazione di bug.
@@ -66,7 +66,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
  Per informazioni dettagliate dei comandi e le azioni è possibile usare quando si lavora con le mappe codici, vedere [cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).
 
-##  <a name="MapStack"></a> Eseguire il mapping dello stack di chiamate
+## <a name="MapStack"></a> Eseguire il mapping dello stack di chiamate
 
 1.  Avviare il debug. (Tastiera: **F5**)
 
@@ -80,17 +80,17 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
      La mappa si aggiornerà automaticamente durante il debug. Visualizzare [aggiornare la mappa con lo stack di chiamate successivo](#UpdateMap).
 
-##  <a name="MakeNotes"></a> Aggiungere appunti sul codice
+## <a name="MakeNotes"></a> Aggiungere appunti sul codice
  Aggiungere commenti per tenere traccia di ciò che avviene nel codice. Per aggiungere una nuova riga in un commento, premere **MAIUSC + INVIO**.
 
  ![Aggiungere un commento allo stack di chiamate nella mappa del codice](../debugger/media/debuggermap_addcomment.png)
 
-##  <a name="UpdateMap"></a> Aggiornare la mappa con lo stack di chiamate successivo
+## <a name="UpdateMap"></a> Aggiornare la mappa con lo stack di chiamate successivo
  Eseguire l'app fino al punto di interruzione successivo o eseguire una funzione. La mappa aggiungerà un nuovo stack di chiamate.
 
  ![Aggiornare la mappa del codice con lo stack di chiamate successivo](../debugger/media/debuggermap_addclearcallstack.png)
 
-##  <a name="AddRelatedCode"></a> Aggiungere il codice correlato alla mappa
+## <a name="AddRelatedCode"></a> Aggiungere il codice correlato alla mappa
  Ora hai una mappa - che cosa successivamente? Se si lavora con c# o Visual Basic, aggiungere elementi, ad esempio campi, proprietà e altri metodi, per tenere traccia di ciò che avviene nel codice.
 
  Fare doppio clic su un metodo per visualizzarne la definizione del codice o usare il menu di scelta rapida del metodo. (Tastiera: selezionare il metodo nella mappa e premere **F12**)
@@ -114,7 +114,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
  ![Metodi che usano un campo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_foundallreferences.png)
 
-##  <a name="FindBugs"></a> Individuare bug usando la mappa
+## <a name="FindBugs"></a> Individuare bug usando la mappa
  Visualizzando il codice, sarà possibile rilevare i bug più rapidamente. Si supponga, ad esempio, che si sta esaminando un bug in un programma di disegno. Quando si disegna una linea e si tenta di annullare l'operazione, non accadrà nulla finché non si disegnerà un'altra riga.
 
  Pertanto, impostare punti di interruzione nei metodi `clear`, `undo` e `Repaint`, avviare il debug e compilare una mappa come quella indicata di seguito:
@@ -127,7 +127,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
  ![Aggiungere una nuova chiamata di metodo allo stack di chiamate nella mappa del codice](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-##  <a name="QA"></a> Domande e risposte
+## <a name="QA"></a> Domande e risposte
 
 -   **Non tutte le chiamate vengono visualizzate sulla mappa. Perché?**
 
@@ -159,7 +159,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
 -   **È possibile condividere la mappa con altri utenti?**
 
-     È possibile esportare la mappa, inviarla ad altri se è installato Microsoft Outlook o salvarla nella soluzione in modo che sia possibile archiviarla nel controllo della versione di Team Foundation.
+     È possibile esportare la mappa, inviarla ad altri se si dispone di Microsoft Outlook o salvarla alla soluzione in modo che è possibile archiviarlo nel controllo del codice sorgente.
 
      ![Condividere la mappa del codice dello stack di chiamate con altri utenti](../debugger/media/debuggermap_sharewithothers.png)
 

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566583"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859796"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procedura dettagliata: Generare codice tramite modelli di testo
 
@@ -30,7 +30,7 @@ Lo spazio dei nomi System. XML fornisce strumenti completi per il caricamento di
 In questo progetto di esempio un modello legge un file XML di esempio e genera classi che corrispondono a ogni tipo di nodo. Nel codice scritto a mano è possibile usare queste classi per passare al file XML. È anche possibile eseguire l'applicazione su qualsiasi altro file che usa gli stessi tipi di nodo. Lo scopo del file XML di esempio è fornire esempi di tutti i tipi di nodo con cui l'applicazione dovrà avere a che fare.
 
 > [!NOTE]
-> L'applicazione [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), inclusa in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
+> L'applicazione [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), incluso in Visual Studio, è possibile generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
 
 Ecco il file di esempio:
 
@@ -142,7 +142,7 @@ Aggiungere un file di modello di testo e impostare l'estensione di output *cs*.
 
 3.  Nel file, nella direttiva template, modificare l'attributo `hostspecific` in `true`.
 
-     Questa modifica consentirà al codice del modello di ottenere l'accesso ai servizi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
+     Questa modifica consentirà il codice del modello ottenere l'accesso ai servizi di Visual Studio.
 
 4.  Nella direttiva di output cambiare l'attributo di estensione in ".cs", in modo che il modello generi un file C#. In un progetto Visual Basic è necessario modificarlo in ".vb".
 
@@ -272,7 +272,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>Accedere alle API di Visual Studio
 
-L'impostazione dell'attributo `hostspecific` della direttiva `<#@template#>` consente al modello di ottenere l'accesso all'API [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Il modello può usarla per ottenere il percorso del file di progetto, per evitare di usare un percorso di file assoluto nel codice del modello.
+Impostando il `hostspecific` attributo del `<#@template#>` direttiva consente al modello di ottenere l'accesso all'API di Visual Studio. Il modello può usarla per ottenere il percorso del file di progetto, per evitare di usare un percorso di file assoluto nel codice del modello.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>

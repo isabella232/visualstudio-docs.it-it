@@ -9,28 +9,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1f12363af0d0b26aa72c5478df5da82c6d4fd02a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5425dc16b40495d1a9ab9010ac90fe6b552d02e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950348"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858002"
 ---
 # <a name="t4-parameter-directive"></a>Direttiva parameter T4
 
-In un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modello di testo, il `parameter` direttiva dichiara le proprietà nel codice del modello che vengono inizializzate dai valori passati dal contesto esterno. È possibile impostare questi valori se si scrive codice che richiama una trasformazione del testo.
+In un modello di testo di Visual Studio, il `parameter` direttiva dichiara le proprietà nel codice del modello che sono inizializzate da valori passati dal contesto esterno. È possibile impostare questi valori se si scrive codice che richiama trasformazione del testo.
 
-## <a name="using-the-parameter-directive"></a>Utilizzo della direttiva Parameter
+## <a name="using-the-parameter-directive"></a>Utilizzo della direttiva di parametro
 
 ```
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- Il `parameter` direttiva dichiara le proprietà nel codice del modello che vengono inizializzate dai valori passati dal contesto esterno. È possibile impostare questi valori se si scrive codice che richiama una trasformazione del testo. I valori possono essere passati nel `Session` dizionario, o in <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ Il `parameter` direttiva dichiara le proprietà nel codice del modello che sono inizializzate da valori passati dal contesto esterno. È possibile impostare questi valori se si scrive codice che richiama trasformazione del testo. I valori possono essere passati nel `Session` dizionario, o in <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
- È possibile dichiarare i parametri di qualsiasi tipo utilizzabile in remoto. Vale a dire, il tipo deve essere dichiarato con <xref:System.SerializableAttribute>, o deve derivare da <xref:System.MarshalByRefObject>. In questo modo i valori dei parametri da passare nell'AppDomain in cui viene elaborato il modello.
+ È possibile dichiarare parametri di qualsiasi tipo utilizzabile in remoto. Vale a dire, il tipo deve essere dichiarato con <xref:System.SerializableAttribute>, o deve derivare da <xref:System.MarshalByRefObject>. In questo modo i valori dei parametri da passare in dominio applicazione in cui viene elaborato il modello.
 
- Ad esempio, è possibile scrivere un modello di testo con il seguente contenuto:
+ Ad esempio, è possibile scrivere un modello di testo con il contenuto seguente:
 
 ```
 <#@ template language="C#" #>
@@ -44,7 +44,7 @@ Line <#= i #>
 ```
 
 ## <a name="passing-parameter-values-to-a-template"></a>Passaggio dei valori di parametro a un modello
- Se si sta scrivendo un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensione, ad esempio un comando di menu o un gestore eventi, è possibile elaborare un modello utilizzando il servizio del modello di testo:
+ Se si sta scrivendo un'estensione di Visual Studio, ad esempio un comando di menu o un gestore eventi, è possibile elaborare un modello usando il servizio del modello di testo:
 
 ```csharp
 // Get a service provider - how you do this depends on the context:
@@ -65,7 +65,7 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 ## <a name="passing-values-in-the-call-context"></a>Passaggio di valori nel contesto di chiamata
  In alternativa è possibile passare valori come dati logici in <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
- Nell'esempio seguente passa i valori utilizzando entrambi i metodi:
+ Nell'esempio seguente passa i valori usando entrambi i metodi:
 
 ```csharp
 ITextTemplating t4 = this.Store.GetService(typeof(STextTemplating)) as ITextTemplating;
@@ -87,10 +87,10 @@ string result = t4.ProcessTemplate("",
 
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Passaggio di valori per un modello di testo in fase di esecuzione (pre-elaborato)
- Non è in genere, è necessario utilizzare il `<#@parameter#>` direttiva con modelli di testo (pre-elaborato) della fase di esecuzione. In alternativa, è possibile definire un costruttore aggiuntivo o una proprietà impostabile per il codice generato, tramite il quale si passano valori di parametro. Per ulteriori informazioni, vedere [la generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Passare valori a un modello di testo (pre-elaborato) in fase di esecuzione
+ Non è in genere necessario usare il `<#@parameter#>` direttiva con modelli di testo (pre-elaborato) in fase di esecuzione. In alternativa, è possibile definire un costruttore aggiuntivo o una proprietà da impostare per il codice generato, tramite cui passare valori di parametri. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Tuttavia, se si desidera utilizzare `<#@parameter>` in un modello in fase di esecuzione, è possibile passare valori a esso utilizzando il dizionario di sessione. Ad esempio, se è stato creato il file come modello pre-elaborato chiamato `PreTextTemplate1`. È possibile richiamare il modello nel programma utilizzando il codice seguente.
+ Tuttavia, se si desidera utilizzare `<#@parameter>` in un modello in fase di esecuzione, è possibile passare valori a esso utilizzando il dizionario di sessione. Ad esempio, supponiamo di avere creato il file come modello di pre-elaborato chiamato `PreTextTemplate1`. È possibile richiamare il modello nel programma mediante il codice seguente.
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -102,7 +102,7 @@ string resultText = t.TransformText();
 
 ```
 
-## <a name="obtaining-arguments-from-texttemplateexe"></a>Acquisizione di argomenti da TextTemplate.exe
+## <a name="obtaining-arguments-from-texttemplateexe"></a>Recupero di argomenti da TextTemplate.exe
 
 > [!IMPORTANT]
->  Il `parameter` non recupera i valori impostati nella direttiva di `-a` parametro del `TextTransform.exe` utilità. Per ottenere questi valori, impostare `hostSpecific="true"` nel `template` direttiva e utilizzare `this.Host.ResolveParameterValue("","","argName")`.
+>  Il `parameter` direttiva non recupera i valori impostati nella `-a` parametro del `TextTransform.exe` utilità. Per ottenere questi valori, impostare `hostSpecific="true"` nella `template` direttiva e utilizzare `this.Host.ResolveParameterValue("","","argName")`.

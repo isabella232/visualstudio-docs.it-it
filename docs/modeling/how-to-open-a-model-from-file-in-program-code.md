@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566551"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860420"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: aprire un modello da file nel codice del programma
 È possibile aprire modelli di linguaggio specifico di dominio in qualsiasi applicazione.
 
- Da un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensione, è possibile usare ModelBus per questo scopo. ModelBus fornisce un meccanismo standard per fare riferimento a un modello o elementi in un modello e per trovare il modello se è stato spostato. Per altre informazioni, vedere [l'integrazione di modelli tramite Modelbus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ Da un'estensione di Visual Studio, è possibile usare ModelBus per questo scopo. ModelBus fornisce un meccanismo standard per fare riferimento a un modello o elementi in un modello e per trovare il modello se è stato spostato. Per altre informazioni, vedere [l'integrazione di modelli tramite Modelbus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Framework di destinazione
  Impostare il **framework di destinazione** del progetto dell'applicazione per **.NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Per impostare il framework di destinazione
 
-1.  Aprire il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto per l'applicazione in cui si vuole leggere un modello DSL.
+1.  Aprire il progetto di Visual Studio per l'applicazione in cui si vuole leggere un modello DSL.
 
 2.  Nelle **Esplora soluzioni**, fare clic sul progetto e quindi fare clic su **proprietà**.
 
@@ -36,7 +36,7 @@ ms.locfileid: "39566551"
 >  Potrebbe essere necessario eseguire questa operazione anche se si seleziona **.NET Framework 4** nella finestra di dialogo di creazione progetto. Il framework di destinazione non deve essere **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Riferimenti
- È necessario aggiungere questi riferimenti per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto di applicazione:
+ È necessario aggiungere questi riferimenti al progetto di applicazione Visual Studio:
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 

@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63599452347ce08140d4c530aa87f2deb938104d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948093"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859848"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generazione di codice da un linguaggio specifico di dominio
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente strumento per generare codice, documenti, file di configurazione e altri elementi da dati rappresentati nei modelli. Utilizzando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], è possibile creare un set di classi che rappresentano i dati, è possibile scrivere modelli di testo nelle classi i cui nomi e le proprietà riflettono i dati.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente strumento per generare codice, documenti, file di configurazione e altri artefatti da dati rappresentati nei modelli. Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], è possibile creare un set di classi che rappresentano i dati, è possibile scrivere modelli di testo nelle classi i cui nomi e le proprietà riflettono i dati.
 
- Ad esempio, Fabrikam disponga di un file XML di nomi di clienti e indirizzi di posta elettronica. Gli sviluppatori di creare un modello in cui i clienti sono una classe, con il nome di proprietà e il messaggio di posta elettronica. La scrittura di diversi modelli di testo per elaborare i dati, inclusi il frammento che produce una tabella di tutti i clienti come parte di una pagina HTML:
+ Ad esempio, Fabrikam ha un file XML di nomi di clienti e indirizzi di posta elettronica. Agli sviluppatori di creare un modello in cui clienti sono una classe, con il nome di proprietà e il messaggio di posta elettronica. Scrittura diversi modelli di testo per elaborare i dati, tra cui questo frammento cui viene prodotta una tabella di tutti i clienti come parte di una pagina HTML:
 
 ```
 <table>
@@ -29,11 +29,11 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente st
 <# } #>  </table>
 ```
 
- Quando viene elaborato il database dei clienti, il file XML viene letto nell'archivio modelli. Oggetto *processore di direttiva*, creato tramite [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], rende disponibili per il codice della classe Customer nel modello di testo. Molti modelli di testo possono essere eseguiti con lo stesso archivio.
+ Quando viene elaborato il database dei clienti, il file XML viene letto nell'archivio del modello. Oggetto *processore di direttiva*, creato utilizzando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], rende disponibili per il codice della classe Customer nel modello di testo. Molti modelli di testo possono essere eseguiti a fronte dell'archivio stesso.
 
- Modelli di testo sono essenziali per [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Vengono utilizzati per generare il codice sorgente per gli elementi del modello di dominio nonché per il pacchetto VSPackage e i controlli che consentono di integrare gli strumenti con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Modelli di testo sono essenziali per [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Vengono utilizzati per generare il codice sorgente per gli elementi del modello di dominio anche per il pacchetto VSPackage e i controlli che consentono di integrare gli strumenti con Visual Studio.
 
- In questa sezione vengono illustrati alcuni modi per creare, modificare ed eseguire il debug di modelli di testo utilizzati in [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
+ In questa sezione vengono illustrati alcuni dei modi per creare, modificare ed eseguire il debug di modelli di testo utilizzati in [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
 
 ## <a name="in-this-section"></a>In questa sezione
  [Accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md)
@@ -42,15 +42,15 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente st
 
  [Procedura dettagliata: debug di un modello di testo che accede a un modello](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
- Viene descritto come eseguire la risoluzione dei problemi e debug in un modello di testo che fa riferimento a un linguaggio specifico di dominio.
+ Viene descritto come eseguire la risoluzione dei problemi e debug su un modello di testo che fa riferimento a un linguaggio specifico di dominio.
 
  [Procedura dettagliata: connessione di un host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
- Viene descritto come connettersi a un host personalizzato per un processore di direttiva generato.
+ Viene descritto come connettere un host personalizzato a un processore di direttiva generato.
 
  [Comando DslTextTransform](../modeling/the-dsltexttransform-command.md)
 
- Descrive il file di comando che esegue il file eseguibile TextTransform nella riga di comando per i modelli di testo che fanno riferimento a linguaggi specifici di dominio.
+ Descrive il file di comando che esegue il file eseguibile TextTransform nella riga di comando per i modelli di testo che fanno riferimento a domain-specific Language.
 
 ## <a name="reference"></a>Riferimenti
  [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)
@@ -64,4 +64,4 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente st
 
  [Generazione di codice in un processo di compilazione](../modeling/code-generation-in-a-build-process.md)
 
- Se si siano generando file da un linguaggio DSL in un server di compilazione, leggere questo argomento.
+ Se si desidera generare i file da un linguaggio DSL in un server di compilazione, leggere questo argomento.

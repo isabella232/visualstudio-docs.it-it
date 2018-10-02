@@ -11,55 +11,55 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c65762bbc1fe068889c0420f0dec3d28000130
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951180"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860225"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
-Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile utilizzare modelli di testo per generare il codice Visual Basic o c# oppure è possibile generare un report HTML.
+Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o c# oppure è possibile generare un report HTML.
 
- Tre componenti prendono parte di questo processo: il motore, l'host e i processori di direttiva. Il motore controlla il processo. Questa utilità interagisce con l'host e il processore di direttiva per generare il file di output. L'host fornisce qualsiasi interazione con l'ambiente, ad esempio l'individuazione di file e assembly. Il processore di direttiva aggiunge funzionalità, ad esempio la lettura dei dati da un file XML o un database.
+ Tre componenti di partecipano a questo processo: il motore, l'host e i processori di direttiva. Il motore controlla il processo. interagisce con l'host e il processore di direttiva per generare il file di output. L'host fornisce qualsiasi interazione con l'ambiente, ad esempio l'individuazione di assembly e file. Il processore di direttiva aggiunge funzionalità, ad esempio la lettura dei dati da un file XML o un database.
 
- Il processo di trasformazione di modello di testo viene eseguito in due passaggi. In primo luogo, il motore crea una classe temporanea, nota come classe della trasformazione generata. Questa classe contiene il codice generato dalle direttive e blocchi di controllo. Successivamente, il motore compila ed esegue la classe della trasformazione generata per generare il file di output.
+ Il processo di trasformazione del modello testo viene eseguito in due passaggi. In primo luogo, il motore crea una classe temporanea, che è noto come la classe transformation generata. Questa classe contiene il codice generato dalle direttive e i blocchi di controllo. Successivamente, il motore compila ed esegue la classe transformation generata per produrre il file di output.
 
 ## <a name="components"></a>Componenti
 
 |Componente|Descrizione|Personalizzabile (Sì/No)|
 |---------------|-----------------|------------------------------|
-|Motore di|Il componente motore controlla il processo di trasformazione di modello di testo|No.|
-|Host|L'host è l'interfaccia tra il motore e l'ambiente utente. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è un host del processo di trasformazione del testo.|Sì. È possibile scrivere un host personalizzato.|
-|Processori di direttiva|Processori di direttive sono classi che gestiscono direttive nei modelli di testo. È possibile utilizzare le direttive per fornire dati per un modello di testo da un'origine di input.|Sì. È possibile scrivere processori di direttive personalizzate|
+|Motore|Il componente del motore consente di controllare il processo di trasformazione del modello testo|No.|
+|Host|L'host è l'interfaccia tra il motore e l'ambiente utente. Visual Studio è un host del processo di trasformazione del testo.|Sì. È possibile scrivere un host personalizzato.|
+|Processori di direttiva|Processori di direttiva sono classi che gestiscono le direttive nei modelli di testo. È possibile utilizzare le direttive per fornire dati a un modello di testo da un'origine di input.|Sì. È possibile scrivere processori di direttiva personalizzati|
 
 ## <a name="the-engine"></a>Il motore di
- Il motore riceve il modello sotto forma di stringa dall'host, che gestisce tutti i file che vengono utilizzati nel processo di trasformazione. Il motore chiede quindi l'host per individuare eventuali processori di direttiva personalizzati e altri aspetti dell'ambiente. Quindi, il motore compila ed esegue la classe della trasformazione generata. Il motore restituisce il testo generato per l'host, che generalmente Salva il testo in un file.
+ Il motore riceve il modello sotto forma di stringa dall'host, che gestisce tutti i file che vengono usati nel processo di trasformazione. Il motore richiede quindi l'host per individuare tutti i processori di direttiva personalizzati e altri aspetti dell'ambiente. Quindi, il motore viene compilata e viene eseguita la classe transformation generata. Il motore restituisce il testo generato per l'host, che normalmente consente di salvare il testo in un file.
 
 ## <a name="the-host"></a>L'Host
- L'host è responsabile per qualsiasi elemento che si riferisce all'ambiente all'esterno del processo di trasformazione, inclusi i seguenti:
+ L'host è responsabile per qualsiasi elemento che si riferisce all'ambiente all'esterno del processo di trasformazione, incluse le seguenti:
 
--   Individuazione file di testo e binari richiesti dal motore di o a un processore di direttiva. L'host può cercare le directory e global assembly cache per individuare gli assembly. L'host può individuare il codice di processore di direttiva personalizzato per il motore. L'host può anche individuare e leggere i file di testo e restituire il contenuto come stringhe.
+-   Individuazione file di testo e binari richiesti dal motore o un processore di direttiva. L'host può cercare le directory e global assembly cache per individuare gli assembly. L'host può individuare il codice di processore di direttiva personalizzato per il motore. L'host può anche individuare e leggere i file di testo e restituire il rispettivo contenuto sotto forma di stringhe.
 
--   Fornire gli elenchi di assembly standard e gli spazi dei nomi utilizzati dal motore per creare una classe della trasformazione generata.
+-   Fornendo elenchi di assembly standard e gli spazi dei nomi che vengono utilizzati dal motore per creare la classe transformation generata.
 
--   Fornire il dominio dell'applicazione che viene utilizzato quando il motore compila ed esegue la classe della trasformazione generata. Un dominio applicazione separato viene utilizzato per proteggere l'applicazione host da errori nel codice del modello.
+-   Fornire il dominio dell'applicazione che viene usato quando il motore compila ed esegue la classe transformation generata. Un dominio di applicazione separata viene utilizzato per proteggere l'applicazione host dagli errori nel codice del modello.
 
--   Scrittura del file di output generato.
+-   La scrittura del file di output generato.
 
 -   Impostazione dell'estensione predefinita per il file di output generato.
 
--   Gestione degli errori di trasformazione modello di testo. Ad esempio, l'host può visualizzare gli errori nell'interfaccia utente o scriverli in un file. (In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], gli errori vengono visualizzati nella finestra di messaggio di errore.)
+-   La gestione degli errori di trasformazione del modello testo. Ad esempio, l'host può visualizzare gli errori nell'interfaccia utente o scriverli in un file. (In Visual Studio, gli errori vengono visualizzati nella finestra di messaggio di errore).
 
--   Se un utente ha chiamato una direttiva senza fornire un valore, fornendo un valore di parametro obbligatorio. Il processore di direttiva può specificare il nome della direttiva e il parametro e chiedere all'host di fornire un valore predefinito se ne ha uno.
+-   Se un utente ha definito una direttiva senza fornire un valore, che fornisce un valore di parametro obbligatorio. Il processore di direttiva è possibile specificare il nome della direttiva e il parametro e chiedere all'host di fornire un valore predefinito se presente.
 
-## <a name="directives-and-directive-processors"></a>Direttive e processori di direttiva
- Una direttiva è un comando nel modello di testo. Fornisce i parametri per il processo di generazione. In genere, le direttive definiscono l'origine e il tipo del modello o di altri tipi di input e l'estensione del file di output.
+## <a name="directives-and-directive-processors"></a>Direttive e i processori di direttiva
+ Una direttiva è un comando nel modello di testo. Fornisce i parametri per il processo di generazione. In genere, le direttive definiscono l'origine e il tipo di modello o altri tipi di input e l'estensione del file di output.
 
- Un processore di direttiva può elaborare una o più direttive. Quando si trasforma un modello, è necessario aver installato un processore di direttiva possa gestire le direttive del modello.
+ Un processore di direttiva può elaborare uno o più direttive. Quando si trasforma un modello, è necessario aver installato un processore di direttiva che può gestire le direttive nel modello.
 
- Le direttive funzionano aggiungendo codice nella classe della trasformazione generata. Si chiamano direttive da un modello di testo e il motore elabora tutte le chiamate direttive durante la creazione di classe della trasformazione generata. Dopo aver chiamato una direttiva correttamente, il resto del codice che scrive nel modello di testo può basarsi sulle funzionalità che la direttiva fornisce. Ad esempio, è possibile effettuare la chiamata seguente al `import` direttiva del modello:
+ Direttive funzionano mediante l'aggiunta di codice nella classe transformation generata. È consigliabile chiamare direttive da un modello di testo e il motore elabora tutte le chiamate direttive durante la creazione della classe transformation generata. Dopo aver chiamato una direttiva correttamente, il resto del codice scritto nel modello di testo può basarsi sulle funzionalità che fornisce la direttiva. Ad esempio, si può effettuare la chiamata seguente per il `import` direttiva del modello:
 
  `<#@ import namespace="System.Text" #>`
 
- Il processore di direttiva standard converte in un `using` istruzione nella classe della trasformazione generata. È quindi possibile utilizzare il `StringBuilder` classe nella parte restante del codice del modello senza qualificare come `System.Text.StringBuilder`.
+ Il processore di direttiva standard converte questo a un `using` istruzione nella classe transformation generata. È quindi possibile usare la `StringBuilder` nella parte restante del codice del modello senza qualificare con il nome classe `System.Text.StringBuilder`.

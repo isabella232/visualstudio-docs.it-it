@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623845"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859393"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 
@@ -48,7 +48,7 @@ In entrambi i casi la creazione di un modello quasi sempre comporta una riduzion
 
 ## <a name="use-models-with-other-artifacts"></a>Usare i modelli con altri elementi
 
-Un modello non è da solo una specifica dei requisiti o un'architettura. È uno strumento per esprimere alcuni aspetti di questi elementi in modo più chiaro, ma non è possibile esprimere tutti i concetti necessari durante la progettazione del software. I modelli devono perciò essere usati con altri mezzi di comunicazione, ad esempio paragrafi o pagine di OneNote, documenti di Microsoft Office, elementi di lavoro in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] o Sticky Notes sulla bacheca della stanza del progetto. Tranne l'ultimo elemento, tutti i tipi di oggetto possono essere collegati alle parti di elementi del modello.
+Un modello non è da solo una specifica dei requisiti o un'architettura. È uno strumento per esprimere alcuni aspetti di questi elementi in modo più chiaro, ma non è possibile esprimere tutti i concetti necessari durante la progettazione del software. I modelli devono pertanto essere utilizzati con altri mezzi di comunicazione, ad esempio OneNote pagine o dei paragrafi, documenti di Microsoft Office, elementi di lavoro in Team Foundation o sticky notes sulla bacheca della stanza del progetto. Tranne l'ultimo elemento, tutti i tipi di oggetto possono essere collegati alle parti di elementi del modello.
 
 Di seguito sono riportati altri aspetti della specifica che in genere vengono usati con i modelli. A seconda della scala e dello stile del progetto, è possibile usare diversi di questi aspetti o non usarli affatto:
 
@@ -88,7 +88,7 @@ All'approcciarsi di ogni iterazione, è possibile usare modelli per definire cos
 
 - Verso la fine di ogni iterazione indire un workshop dei requisiti per definire in dettaglio i requisiti o le storie utente che verranno sviluppate nell'iterazione successiva. Invitare gli utenti e le parti interessate dell'azienda che sono in grado di decidere le priorità, nonché gli sviluppatori e i tester di sistema. Vengono consentite tre ore per definire i requisiti per un'iterazione di 2 settimane.
 
-- Per ogni partecipante l'obiettivo del workshop è accettare ciò che verrà effettuato entro la fine dell'iterazione successiva. Usare i modelli come uno degli strumenti che consentono di chiarire i requisiti. L'output del workshop è il backlog di un'iterazione: vale a dire un elenco di sviluppo di attività in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] e i gruppi di test in [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- Per ogni partecipante l'obiettivo del workshop è accettare ciò che verrà effettuato entro la fine dell'iterazione successiva. Usare i modelli come uno degli strumenti che consentono di chiarire i requisiti. L'output del workshop è un backlog iterazione: vale a dire, un elenco di attività di sviluppo in Team Foundation e gruppi di test in [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
 
 - Nel workshop dei requisiti discutere la progettazione solo nella misura in cui è necessario determinare le stime per le attività di sviluppo. In caso contrario, discutere sul comportamento del sistema che gli utenti possono sperimentare direttamente. Mantenere il modello requisiti separato dal modello dell'architettura.
 
@@ -96,7 +96,7 @@ All'approcciarsi di ogni iterazione, è possibile usare modelli per definire cos
 
 ### <a name="link-model-to-work-items"></a>Collegare il modello agli elementi di lavoro
 
-Dopo il workshop di requisiti, elaborare i dettagli del modello requisiti e collegare il modello alle attività di sviluppo. A tale scopo è possibile collegare gli elementi di lavoro in [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] agli elementi del modello.
+Dopo il workshop di requisiti, elaborare i dettagli del modello requisiti e collegare il modello alle attività di sviluppo. È possibile farlo collegando elementi di lavoro in Team Foundation per gli elementi del modello.
 
 È possibile collegare qualsiasi elemento agli elementi di lavoro, ma quelli più utili sono i seguenti:
 

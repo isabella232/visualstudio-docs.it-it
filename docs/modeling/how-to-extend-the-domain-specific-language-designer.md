@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176076"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860368"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 
@@ -68,19 +68,19 @@ Configurare un progetto che contiene il codice dell'estensione e un progetto VSI
 
 ## <a name="test-and-deployment"></a>Test e distribuzione
 
-Per testare qualsiasi delle estensioni in questo argomento, compilare ed eseguire la soluzione. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In questo caso, aprire una soluzione DSL. Modificare il diagramma DslDefinition. Il comportamento dell'estensione può essere visualizzato.
+Per testare qualsiasi delle estensioni in questo argomento, compilare ed eseguire la soluzione. Viene aperta un'istanza sperimentale di Visual Studio. In questo caso, aprire una soluzione DSL. Modificare il diagramma DslDefinition. Il comportamento dell'estensione può essere visualizzato.
 
-Per distribuire le estensioni per l'oggetto principale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]e ad altri computer, seguire questa procedura:
+Per distribuire le estensioni per il principale di Visual Studio e per altri computer, seguire questa procedura:
 
 1.  Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\*\\\*VSIX
 
 2.  Copiare questo file nel computer di destinazione e quindi in Windows Explorer (o Esplora File), fare doppio clic.
 
-     Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Gestione estensioni viene aperto per verificare che sia stato installato l'estensione.
+     Verrà aperto Gestione estensioni di Visual Studio per verificare che sia stato installato l'estensione.
 
 Per disinstallare l'estensione, seguire questa procedura:
 
-1.  in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]via il **Tools** menu, fare clic su **gestore estensioni del**.
+1.  In Visual Studio sul **degli strumenti** menu, fare clic su **gestore estensioni del**.
 
 2.  Selezionare l'estensione ed eliminarlo.
 
