@@ -198,9 +198,9 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
 1. Al termine, arrestare il server ed eseguire di nuovo il commit delle modifiche nel controllo del codice sorgente.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Domanda: Qual è lo scopo del tag {% crsf_token %} visualizzato negli elementi \>form\<?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a> Domanda: Qual è lo scopo del tag {% csrf_token %} visualizzato negli elementi \>form\<?
 
-Risposta: Il tag `{% crsf_token %}` include la [protezione da richieste intersito false (crsf, cross-site request forgery)](https://docs.djangoproject.com/en/2.0/ref/csrf/) predefinita di Django (documentazione di Django). Questo tag viene aggiunto in genere a qualsiasi elemento che prevede metodi di richiesta POST, PUT o DELETE, ad esempio un modulo. La funzione di rendering del modello (`render`) inserisce quindi la protezione necessaria.
+Risposta: Il tag `{% csrf_token %}` include la [protezione da richieste intersito false (csrf, cross-site request forgery)](https://docs.djangoproject.com/en/2.0/ref/csrf/) predefinita di Django (documentazione di Django). Questo tag viene aggiunto in genere a qualsiasi elemento che prevede metodi di richiesta POST, PUT o DELETE, ad esempio un modulo. La funzione di rendering del modello (`render`) inserisce quindi la protezione necessaria.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
