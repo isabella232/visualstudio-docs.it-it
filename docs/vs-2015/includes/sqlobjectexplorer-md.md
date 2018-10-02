@@ -1,0 +1,2 @@
+> [!NOTE]
+>  Nelle [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], è possibile connettersi a un database di SQL Server da **Esplora oggetti di SQL Server** o il **connessioni dati** nodo **Esplora Server**. **Esplora oggetti di SQL Server** fornisce una visualizzazione analoga a quella di SQL Server Management Studio. Per aprire questa finestra di esplorazione dalla barra dei menu, scegliere **View**, **Esplora oggetti di SQL Server**. Per altre informazioni, vedere [sviluppo del Database connesso](http://go.microsoft.com/fwlink/?LinkId=233646).
