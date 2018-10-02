@@ -1,0 +1,86 @@
+---
+title: Creazione di un'estensione con un pacchetto VSPackage | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
+caps.latest.revision: 6
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ea5e5320f612a1086e7bba2f63539470773078bf
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47532818"
+---
+# <a name="creating-an-extension-with-a-vspackage"></a>Creazione di un'estensione con un pacchetto VSPackage
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+La versione più recente di questo argomento è reperibile in [creazione di un'estensione con un pacchetto VSPackage](https://docs.microsoft.com/visualstudio/extensibility/creating-an-extension-with-a-vspackage).  
+  
+Questa procedura dettagliata illustra come creare un progetto VSIX e aggiungere un elemento di progetto VSPackage. Si userà il pacchetto VSPackage per ottenere il servizio Shell dell'interfaccia utente per visualizzare una finestra di messaggio.  
+  
+## <a name="prerequisites"></a>Prerequisiti  
+ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+  
+## <a name="creating-a-vspackage"></a>Creazione di un pacchetto VSPackage  
+  
+1.  Creare un progetto VSIX denominato **FirstPackage**. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
+  
+2.  Quando si apre il progetto, aggiungere un modello di elemento di pacchetto di Visual Studio denominato **FirstPackage**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **pacchetto di Visual Studio**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da **FirstPackage.cs**.  
+  
+3.  Compilare il progetto e avviare il debug.  
+  
+     Viene visualizzata l'istanza sperimentale di Visual Studio. Per altre informazioni sull'istanza sperimentale, vedere [il processo dell'istanza sperimentale](../extensibility/the-experimental-instance.md).  
+  
+4.  Nell'istanza sperimentale, aprire il **strumenti / estensioni e aggiornamenti** finestra. Dovrebbero vedere le **FirstPackage** estensione qui. (Se si apre **estensioni e aggiornamenti** nell'istanza di lavoro di Visual Studio, non verrà visualizzato **FirstPackage**).  
+  
+## <a name="loading-the-vspackage"></a>Il caricamento di VSPackage  
+ A questo punto l'estensione non viene caricato, poiché non c'è nulla che causa il caricamento. In genere, è possibile caricare un'estensione quando si interagisce con la relativa interfaccia utente (scelta di un comando di menu, aprire una finestra degli strumenti), oppure specificando che il VSPackage verrà caricato in un contesto dell'interfaccia utente specifico. Per altre informazioni sul caricamento dei contesti di pacchetti VSPackage e l'interfaccia utente, vedere [caricamento di VSPackage](../extensibility/loading-vspackages.md). Per questa procedura, mostreremo come caricare un pacchetto VSPackage quando è aperta una soluzione.  
+  
+1.  Aprire il file FirstPackage.cs. Cerca la dichiarazione della classe FirstPackage. Sostituire gli attributi esistenti con seguente:  
+  
+    ```csharp  
+    [PackageRegistration(UseManagedResourcesOnly = true)]  
+    [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
+    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
+    [Guid(FirstPackageGuids.PackageGuidString)]  
+    public sealed class FirstPackage : Package  
+    ```  
+  
+2.  Ora si aggiungerà un messaggio che ci consente di sapere che ha caricato il pacchetto VSPackage. Utilizziamo metodo Initialize () del VSPackage a tale scopo, in quanto è possibile ottenere servizi di Visual Studio solo dopo che il pacchetto VSPackage è stato individuato. (Per altre informazioni su come ottenere i servizi, vedere [procedura: ottenere un servizio](../extensibility/how-to-get-a-service.md).) Sostituire il metodo Initialize () di FirstPackage con il codice che ottiene il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> del servizio, ottiene il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaccia e le chiamate relative <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> (metodo).  
+  
+    ```csharp  
+    protected override void Initialize()  
+    {  
+        base.Initialize();  
+  
+        IVsUIShell uiShell = (IVsUIShell)GetService(typeof(SVsUIShell));  
+        Guid clsid = Guid.Empty;  
+        int result;  
+        Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(uiShell.ShowMessageBox(  
+            0,  
+            ref clsid,  
+            "FirstPackage",  
+             string.Format(CultureInfo.CurrentCulture, "Inside {0}.Initialize()", this.GetType().FullName),  
+            string.Empty,  
+            0,  
+            OLEMSGBUTTON.OLEMSGBUTTON_OK,  
+            OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST,  
+            OLEMSGICON.OLEMSGICON_INFO,  
+            0,  
+            out result));  
+    }  
+    ```  
+  
+3.  Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.  
+  
+4.  Aprire una soluzione nell'istanza sperimentale. Si dovrebbe essere una finestra di messaggio con la dicitura **Initialize () all'interno del pacchetto prima**.
+

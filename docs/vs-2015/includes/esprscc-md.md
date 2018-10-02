@@ -1,0 +1,1 @@
+Controllo della versione di Team Foundation
