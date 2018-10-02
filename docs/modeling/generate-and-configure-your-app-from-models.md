@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176811"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858503"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generare e configurare l'app da modelli
 È possibile generare o configurare parti dell'applicazione da un modello.
@@ -22,7 +22,7 @@ ms.locfileid: "39176811"
  Un modello rappresenta i requisiti in modo più diretto rispetto al codice. Derivando il comportamento dell'applicazione direttamente dal modello, è possibile rispondere ai cambiamenti di requisiti con maggiore rapidità e affidabilità che non semplicemente aggiornando il codice. Anche se la configurazione della derivazione richiede un impegno iniziale, l'investimento di tempo risulta sicuramente proficuo quando i requisiti sono destinati a cambiare o si prevede di realizzare più varianti del prodotto.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generazione del codice dell'applicazione da un modello
- Il modo più semplice per generare codice consiste nell'usare modelli di testo. È possibile generare codice nello stesso [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che contiene il modello di soluzione. Per altre informazioni, vedere:
+ Il modo più semplice per generare codice consiste nell'usare modelli di testo. È possibile generare codice nella stessa soluzione di Visual Studio che contiene il modello. Per altre informazioni, vedere:
 
 -   [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 

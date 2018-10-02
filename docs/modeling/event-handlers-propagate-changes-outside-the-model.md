@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776171"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859277"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 
-In Visualization and Modeling SDK, è possibile definire gestori eventi dell'archivio per propagare le modifiche alle risorse all'esterno dell'archivio, ad esempio di variabile non di archivio, file, i modelli in altri archivi o altri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensioni. I gestori eventi Store vengono eseguiti dopo la fine della transazione in cui si è verificato un evento di attivazione. Vengono anche eseguite in un'operazione di annullamento o ripristino. Pertanto, a differenza di archivio regole, gli eventi di archiviazione sono particolarmente utili per l'aggiornamento dei valori che non rientrano nell'archivio. A differenza degli eventi di .NET, archivio i gestori eventi registrati per l'ascolto di una classe: non è necessario registrare un gestore separato per ogni istanza. Per altre informazioni su come scegliere tra diversi modi per gestire le modifiche, vedere [procedura: rispondere a e la propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md).
+In Visualization and Modeling SDK, è possibile definire gestori eventi dell'archivio per propagare le modifiche alle risorse all'esterno dell'archivio, ad esempio di variabile non di archivio, file, i modelli in altri archivi o altre estensioni di Visual Studio. I gestori eventi Store vengono eseguiti dopo la fine della transazione in cui si è verificato un evento di attivazione. Vengono anche eseguite in un'operazione di annullamento o ripristino. Pertanto, a differenza di archivio regole, gli eventi di archiviazione sono particolarmente utili per l'aggiornamento dei valori che non rientrano nell'archivio. A differenza degli eventi di .NET, archivio i gestori eventi registrati per l'ascolto di una classe: non è necessario registrare un gestore separato per ogni istanza. Per altre informazioni su come scegliere tra diversi modi per gestire le modifiche, vedere [procedura: rispondere a e la propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md).
 
 L'area grafica e altri controlli dell'interfaccia utente sono esempi di risorse esterne che possono essere gestiti dagli eventi dell'archivio.
 

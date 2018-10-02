@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8c092543dc24be8ac84f683196f73c8fb264f9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 600b5c7822232581cd01bd9bbf7616f4d1e9bb7c
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919895"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859068"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analisi del codice per gli avvisi del codice gestito
 Lo strumento di analisi del codice gestito fornisce avvisi che indicano le violazioni delle regole nelle librerie del codice gestito. Gli avvisi sono organizzati in aree di regole, ad esempio progettazione, localizzazione, prestazioni e sicurezza. Ogni avviso indica una violazione di una regola di analisi del codice gestito. Questa sezione fornisce descrizioni dettagliate ed esempi per ogni avviso di analisi del codice gestito.
@@ -48,15 +48,15 @@ Lo strumento di analisi del codice gestito fornisce avvisi che indicano le viola
 |-|-|
 |[Avvisi generati da CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Elenchi di tutti gli avvisi generati da CheckId|
 |[Avvisi di crittografia](../code-quality/cryptography-warnings.md)|Avvisi che supportano applicazioni e librerie più sicure attraverso l'uso corretto della crittografia.|
-|[Avvisi di progettazione](../code-quality/design-warnings.md)|Avvisi che supportano la progettazione corretta delle librerie secondo quanto specificato nelle linee guida di progettazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .|
+|[Avvisi di progettazione](../code-quality/design-warnings.md)|Avvisi che supportano la progettazione corretta delle librerie come specificato dalle linee guida di progettazione di .NET Framework.|
 |[Avvisi di globalizzazione](../code-quality/globalization-warnings.md)|Avvisi che supportano applicazioni e librerie internazionalizzate.|
 |[Avvisi di interoperabilità](../code-quality/interoperability-warnings.md)|Avvisi che supportano l'interazione con i client COM.|
 |[Avvisi di manutenibilità](../code-quality/maintainability-warnings.md)|Avvisi che supportano la manutenzione di applicazioni e librerie.|
 |[Mobility Warnings](../code-quality/mobility-warnings.md)|Avvisi che supportano l'utilizzo efficiente dell'energia.|
-|[Avvisi di denominazione](../code-quality/naming-warnings.md)|Gli avvisi che supportano l'osservanza delle convenzioni di denominazione delle linee guida di progettazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .|
+|[Avvisi di denominazione](../code-quality/naming-warnings.md)|Avvisi che supportano la conformità alle convenzioni di denominazione delle linee guida di progettazione di .NET Framework.|
 |[Avvisi di prestazioni](../code-quality/performance-warnings.md)|Avvisi che supportano applicazioni e librerie ad alte prestazioni.|
 |[Portability Warnings](../code-quality/portability-warnings.md)|Avvisi che supportano la portabilità tra piattaforme diverse.|
 |[Avvisi di affidabilità](../code-quality/reliability-warnings.md)|Avvisi che supportano l'affidabilità di applicazioni e librerie, ad esempio il corretto utilizzo di memoria e thread.|
 |[Avvisi di sicurezza](../code-quality/security-warnings.md)|Avvisi che supportano applicazioni e librerie più sicure.|
-|[Avvisi di utilizzo](../code-quality/usage-warnings.md)|Avvisi che supportano l'utilizzo appropriato di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|
+|[Avvisi di utilizzo](../code-quality/usage-warnings.md)|Avvisi che supportano l'utilizzo appropriato di .NET Framework.|
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Errori che si verificano se i criteri di analisi del codice non sono soddisfatti al momento dell'archiviazione.|

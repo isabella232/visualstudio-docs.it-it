@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bc264b9e47fe9169c0b1ad9d3257323c437620f7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2c5d22db6a973947faf228e2e3844d63a916e24e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550427"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859497"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: I tipi che contengono membri statici devono essere sealed
 
@@ -43,7 +43,7 @@ ms.locfileid: "45550427"
  Questa regola presuppone che un tipo che contiene solo membri statici non è progettato per essere ereditato, poiché il tipo non fornisce alcuna funzionalità che può essere sottoposto a override in un tipo derivato. Un tipo che non è destinato a essere ereditato deve essere contrassegnato con il `sealed` modificatore proibire l'uso come un tipo di base.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, contrassegnare il tipo come `sealed`. Se la destinazione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 o versione successiva, un approccio migliore consiste nel contrassegnare il tipo come `static`. In questo modo, evitare di dichiarare un costruttore privato per impedire la creazione di classe.
+ Per correggere una violazione di questa regola, contrassegnare il tipo come `sealed`. Se la destinazione è .NET Framework 2.0 o versioni successive, un approccio migliore consiste nel contrassegnare il tipo come `static`. In questo modo, evitare di dichiarare un costruttore privato per impedire la creazione di classe.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Eliminare un avviso da questa regola solo se il tipo è progettato per essere ereditata. L'assenza del `sealed` modificatore suggerisce che il tipo è utile come un tipo di base.

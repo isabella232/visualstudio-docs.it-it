@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd26eecb1fba0aea266daf26eb071b8c29165ec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8716a16ea3b141e7c5053e526d92531d0a77bc1e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546759"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859406"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Non passare valori letterali come parametri localizzati
 
@@ -38,7 +38,7 @@ ms.locfileid: "45546759"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un metodo passa una stringa letterale come parametro a un costruttore o un metodo nel [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classi della libreria e questa stringa deve essere localizzabile.
+ Un metodo passa una stringa letterale come parametro a un costruttore o un metodo nella libreria di classi .NET Framework e tale stringa deve essere localizzabile.
 
  Questo avviso viene generato quando una valore letterale stringa viene passata come valore per un parametro o una proprietà e uno o più delle seguenti condizioni sono true:
 

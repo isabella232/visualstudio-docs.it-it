@@ -9,26 +9,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c8a7c88c0c1808b5155ada9d46cfbdad9edd5cf5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774778"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859354"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
-È possibile installare un linguaggio specifico di dominio nel proprio computer o in altri computer. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deve essere già installato nel computer di destinazione.
+È possibile installare un linguaggio specifico di dominio nel proprio computer o in altri computer. Visual Studio deve essere già installato nel computer di destinazione.
 
-##  <a name="which"></a> Scelta tra distribuzione MSI e VSIX
+## <a name="which"></a> Scelta tra distribuzione MSI e VSIX
  Esistono due metodi di distribuzione di un linguaggio specifico di dominio:
 
 |Metodo|Vantaggi|
 |------------|--------------|
-|VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensione)|Molto semplice da distribuire: copia ed eseguire la **VSIX** file dal progetto DslPackage.<br /><br /> Per altre informazioni, vedere [installazione e disinstallazione di un linguaggio DSL utilizzando il VSX](#Installing).|
-|Identità del servizio gestito (file di programma di installazione)|-Consente all'utente di aprire [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] facendo doppio clic su un file DSL.<br />-Consente di associare un'icona con il tipo di file DSL nel computer di destinazione.<br />-Associa uno schema XSD (XML schema) con il tipo di file DSL. Ciò consente di evitare gli avvisi quando i file verrà caricato in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> È necessario aggiungere un progetto di installazione alla soluzione per creare un file MSI.<br /><br /> Per altre informazioni, vedere [distribuzione di un linguaggio DSL utilizzando un file MSI](#msi).|
+|VSX (estensione di Visual Studio)|Molto semplice da distribuire: copia ed eseguire la **VSIX** file dal progetto DslPackage.<br /><br /> Per altre informazioni, vedere [installazione e disinstallazione di un linguaggio DSL utilizzando il VSX](#Installing).|
+|Identità del servizio gestito (file di programma di installazione)|-Consente all'utente di aprire Visual Studio facendo doppio clic su un file DSL.<br />-Consente di associare un'icona con il tipo di file DSL nel computer di destinazione.<br />-Associa uno schema XSD (XML schema) con il tipo di file DSL. Ciò consente di evitare gli avvisi quando i file verrà caricato in Visual Studio.<br /><br /> È necessario aggiungere un progetto di installazione alla soluzione per creare un file MSI.<br /><br /> Per altre informazioni, vedere [distribuzione di un linguaggio DSL utilizzando un file MSI](#msi).|
 
-##  <a name="Installing"></a> Installazione e disinstallazione di un linguaggio DSL utilizzando il VSX
- Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire un file DSL dall'interno [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ma non è possibile aprire il file da Esplora risorse di Windows.
+## <a name="Installing"></a> Installazione e disinstallazione di un linguaggio DSL utilizzando il VSX
+ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire un file DSL da Visual Studio, ma non è possibile aprire il file da Esplora risorse di Windows.
 
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Per installare un linguaggio DSL utilizzando il VSX
 
@@ -42,7 +42,7 @@ ms.locfileid: "43774778"
 
     -   Nel computer di destinazione deve essere una delle edizioni di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] che supporta linguaggi specifici di dominio in fase di esecuzione. Per altre informazioni, vedere [supportate le edizioni Visual Studio per Visualization and Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-    -   Nel computer di destinazione deve essere una delle edizioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] specificato in **DslPackage\source.extensions.manifest**.
+    -   Nel computer di destinazione deve essere una delle edizioni di Visual Studio specificata **DslPackage\source.extensions.manifest**.
 
 3.  Nel computer di destinazione, fare doppio clic il **VSIX** file.
 
@@ -50,7 +50,7 @@ ms.locfileid: "43774778"
 
 4.  Avviare o riavviare [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-5.  Per testare il linguaggio DSL, usare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per creare un nuovo file con estensione definito per il linguaggio DSL.
+5.  Per testare il linguaggio DSL, usare Visual Studio per creare un nuovo file con estensione definito per il linguaggio DSL.
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Per disinstallare un linguaggio specifico di dominio che è stato installato utilizzando VSX
 
@@ -64,12 +64,12 @@ ms.locfileid: "43774778"
 
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-##  <a name="msi"></a> Distribuzione di un linguaggio DSL in un file MSI
+## <a name="msi"></a> Distribuzione di un linguaggio DSL in un file MSI
  Con la definizione di un file MSI (programma di installazione di Windows) per il linguaggio DSL, è possibile consentire agli utenti di aprire i file DSL da Esplora risorse di Windows. È anche possibile associare un'icona e una breve descrizione con l'estensione di file. Inoltre, l'identità del servizio gestito è possibile installare uno schema XSD che può essere usato per convalidare i file DSL. Se si desidera, è possibile aggiungere altri componenti nel file MSI che verrà installato nello stesso momento.
 
  Per altre informazioni sui file MSI e altre opzioni di distribuzione, vedere [distribuzione di applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md).
 
- Per compilare un file MSI, si aggiunge un progetto di installazione per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione. Il metodo di creazione di un progetto di installazione più semplice consiste nell'usare il modello CreateMsiSetupProject.tt, che è possibile scaricare dal [sito VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Per compilare un file MSI, si aggiunge un progetto di installazione alla soluzione Visual Studio. Il metodo di creazione di un progetto di installazione più semplice consiste nell'usare il modello CreateMsiSetupProject.tt, che è possibile scaricare dal [sito VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Per distribuire un linguaggio DSL in un file MSI
 
@@ -101,7 +101,7 @@ ms.locfileid: "43774778"
 
 5.  Aggiungere **CreateMsiSetupProject.tt** al progetto Dsl.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verrà creato un file denominato **CreateMsiSetupProject.vdproj**.
+     Visual Studio creerà un file denominato **CreateMsiSetupProject.vdproj**.
 
 6.  In Esplora risorse, la copia Dsl\\\*.vdproj in una nuova cartella denominata il programma di installazione.
 
@@ -125,7 +125,7 @@ ms.locfileid: "43774778"
 
     -   Nella visualizzazione elenco Windows Explorer, il file viene visualizzato con l'icona e una descrizione che è definito.
 
-    -   Quando si fa doppio clic il file, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] avvia e apre il file DSL in un editor di linguaggio specifico di dominio.
+    -   Quando si fare doppio clic il file, l'avvio di Visual Studio e si apre il file DSL in un editor di linguaggio specifico di dominio.
 
  Se si preferisce, è possibile creare il progetto di installazione manualmente, anziché usare il modello di testo. Per una procedura dettagliata che includa questa procedura vedere il capitolo 5 del [visualizzazione e modellazione Lab SDK](http://go.microsoft.com/fwlink/?LinkId=208878).
 

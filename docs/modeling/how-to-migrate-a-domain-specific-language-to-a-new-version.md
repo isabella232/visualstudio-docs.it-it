@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab671cfffdf43d9b69ecda7f06c27a0e8df6bf70
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a238eabbcba4f28b12f899de5b2d4eae30cfef9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775913"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858769"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 È possibile eseguire la migrazione di progetti di definiscono e usano il linguaggio specifico di dominio per [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] che è stato distribuito con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
- Uno strumento di migrazione viene fornito come parte di [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Lo strumento converte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetti e soluzioni che utilizzano o definiscono gli strumenti DSL.
+ Uno strumento di migrazione viene fornito come parte di [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Lo strumento converte i progetti di Visual Studio e le soluzioni che utilizzano o definiscono gli strumenti DSL.
 
- È necessario eseguire lo strumento di migrazione in modo esplicito: non viene avviato automaticamente quando si apre una soluzione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Lo strumento e il documento di indicazioni dettagliate è reperibile in questo percorso:
+ È necessario eseguire lo strumento di migrazione in modo esplicito: non viene avviato automaticamente quando si apre una soluzione in Visual Studio. Lo strumento e il documento di indicazioni dettagliate è reperibile in questo percorso:
 
  **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Prima che si esegue la migrazione dei progetti DSL
- Lo strumento di migrazione modifica [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i file di progetto (**csproj**) e i file di soluzione (**sln**).
+ Lo strumento di migrazione modifica i file di progetto di Visual Studio (**file con estensione csproj**) e i file di soluzione (**sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Per preparare i progetti di migrazione.
 
