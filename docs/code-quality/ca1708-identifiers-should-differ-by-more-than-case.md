@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 852ca3d81b2dc72e4f0cb518a002b746a77cf5e3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552058"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860160"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45552058"
  Selezionare un nome che è univoco se confrontato con altri identificatori, in modo tra maiuscole e minuscole.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola. La libreria potrebbe non essere utilizzabile in tutte le lingue disponibili nel [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Non escludere un avviso da questa regola. La libreria potrebbe non essere utilizzabile in tutte le lingue disponibili in .NET Framework.
 
 ## <a name="example-of-a-violation"></a>Esempio di violazione
  L'esempio seguente illustra una violazione della regola.

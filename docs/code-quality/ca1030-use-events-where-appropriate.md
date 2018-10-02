@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b0bac434ad7a182dc56ac08173646068623bd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 31eb949588353a6f2f11ddbbdf516d1a5da63488
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547548"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859732"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Utilizzare eventi dove appropriato
 |||
@@ -45,10 +45,10 @@ ms.locfileid: "45547548"
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola rileva i metodi che presentano nomi comunemente utilizzati per gli eventi. Gli eventi di seguono lo schema progettuale osservatore o Publish-Subscribe; vengono utilizzati quando una modifica dello stato in un oggetto deve essere comunicata ad altri oggetti. Se un metodo viene chiamato in risposta a una modifica dello stato chiaramente definita, il metodo deve essere richiamato da un gestore eventi. Gli oggetti che chiamano il metodo devono generare eventi anziché chiamare direttamente il metodo.
 
- Alcuni esempi comuni di eventi si trovano in applicazioni con interfaccia utente in cui un'azione dell'utente, ad esempio facendo clic su un pulsante fa sì che un segmento di codice da eseguire. Il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modello di eventi non è limitato alle interfacce utente, deve essere usata ovunque è necessario comunicare lo stato passa a uno o più oggetti.
+ Alcuni esempi comuni di eventi si trovano in applicazioni con interfaccia utente in cui un'azione dell'utente, ad esempio facendo clic su un pulsante fa sì che un segmento di codice da eseguire. Il modello di eventi .NET Framework non è limitato alle interfacce utente; deve essere usata ovunque che è necessario comunicare lo stato passa a uno o più oggetti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Se il metodo viene chiamato quando cambia lo stato di un oggetto, è consigliabile modificare la progettazione per utilizzare il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modello di eventi.
+ Se il metodo viene chiamato quando cambia lo stato di un oggetto, è consigliabile modificare la progettazione per utilizzare il modello di eventi .NET Framework.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Eliminare un avviso da questa regola se il metodo non funziona con il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modello di eventi.
+ Eliminare un avviso da questa regola se il metodo non funziona con il modello di eventi .NET Framework.

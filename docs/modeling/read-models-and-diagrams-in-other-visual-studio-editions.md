@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 420a17dbac9e0a3bf10b4c92baa108067ad44949
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775581"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859679"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leggere modelli e diagrammi in altre edizioni di Visual Studio
 Quando si apre un modello in una versione di Visual Studio che non supporta la creazione di modelli, il modello viene aperto in modalità di sola lettura. In questa modalità è possibile modificare il layout dei diagrammi, ma non modificare il modello.
@@ -26,7 +26,7 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Accesso a un modello e ai diagrammi
  Per leggere un diagramma delle dipendenze, è necessario usare prima Visual Studio per aprire il progetto di modellazione e quindi aprire il diagramma in esso contenuti.
 
- Per questo motivo, se si vuole leggere un diagramma delle dipendenze, è anche necessario avere accesso al progetto di modellazione in cui è stato creato. Per eseguire questa operazione, è possibile accedere al progetto da [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)] oppure ottenere una copia dei file di progetto.
+ Per questo motivo, se si vuole leggere un diagramma delle dipendenze, è anche necessario avere accesso al progetto di modellazione in cui è stato creato. È possibile farlo oppure accedere al progetto dal controllo del codice sorgente, ottenendo una copia dei file di progetto.
 
 > [!NOTE]
 >  Non si applica alle mappe codice e ai diagrammi classi .NET generati dal codice. Questi diagrammi possono essere visualizzati indipendentemente dal progetto di modellazione.
@@ -53,7 +53,7 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
 
  Queste modifiche possono essere salvate. Se si desidera rendere visibili ad altri utenti le modifiche, è necessario inviare almeno aggiornato **layout** file.
 
-##  <a name="RelatedTopics"></a> Argomenti correlati
+## <a name="RelatedTopics"></a> Argomenti correlati
 
 |Titolo|Descrizione|
 |-----------|-----------------|

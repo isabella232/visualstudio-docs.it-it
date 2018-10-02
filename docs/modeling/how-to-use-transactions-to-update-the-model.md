@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567341"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859224"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: utilizzare le transazioni per aggiornare il modello
 Le transazioni assicurarsi che le modifiche apportate all'archivio siano considerate come un gruppo. Le modifiche che sono raggruppate possono essere eseguito il commit o rollback come unità singola.
 
- Ogni volta che il codice del programma modifica, aggiunge o elimina qualsiasi elemento di Store in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK, l'operazione deve essere eseguita all'interno di una transazione. Deve esistere un'istanza attiva del <xref:Microsoft.VisualStudio.Modeling.Transaction> associata con il Store quando avviene la modifica. Questo vale per tutti gli elementi del modello, relazioni, forme, diagrammi e le relative proprietà.
+ Ogni volta che il codice del programma modifica, aggiunge o elimina qualsiasi elemento di Store in Visual Studio Visualization and Modeling SDK, è necessario farlo in una transazione. Deve esistere un'istanza attiva del <xref:Microsoft.VisualStudio.Modeling.Transaction> associata con il Store quando avviene la modifica. Questo vale per tutti gli elementi del modello, relazioni, forme, diagrammi e le relative proprietà.
 
  Il meccanismo di transazione ti aiuta a evitare stati incoerenti. Se si verifica un errore durante una transazione, vengano eseguito il rollback di tutte le modifiche. Se l'utente esegue un comando di annullamento, ogni transazione recente viene considerato come un unico passaggio. L'utente non è possibile annullare le parti di una modifica recente, a meno che non è esplicitamente posizionarli in transazioni separate.
 

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279856"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859783"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e altre parti interessate e consente di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
@@ -61,7 +61,7 @@ ms.locfileid: "44279856"
 
 1.  In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
 
-     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
+     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe essere un elemento di lavoro storia utente, requisito o caso d'uso, a seconda del modello di processo usato dal progetto con Team Foundation. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Collegare l'elemento di lavoro requisito a uno o più casi di utilizzo del modello.
 
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  Da un punto di vista del test, un modello di requisiti può essere considerato un metodo abbreviato per i test. È quindi importante gestire la relazione tra i test e il modello in tutto il progetto.
 
-##  <a name="Attaching"></a> Associazione di Test case agli elementi del modello
+## <a name="Attaching"></a> Associazione di Test case agli elementi del modello
  Se il progetto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], è possibile collegare i test agli elementi del modello. In questo modo è possibile trovare rapidamente i test interessati da una modifica ai requisiti e tenere traccia dell'ambito di applicazione di un requisito.
 
  È possibile collegare i test a tutti i tipi di elemento. Ecco alcuni esempi:
@@ -149,7 +149,7 @@ Assert (countAfter == countBefore = 1);
 
 1.  In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
 
-     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
+     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe essere un elemento di lavoro storia utente, requisito o caso d'uso, a seconda del modello di processo usato dal progetto con Team Foundation. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Collegare l'elemento di lavoro requisito a uno o più elementi del modello.
 

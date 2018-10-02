@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6044dd970029b3f233f8b20eb2e334b5041ceb33
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953536"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860199"
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
 
-Nei modelli di testo di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la direttiva `output` viene usata per definire l'estensione di file e la codifica del file trasformato.
+Nei modelli di testo di Visual Studio, il `output` direttiva viene usata per definire l'estensione del nome file e la codifica del file trasformato.
 
- Ad esempio, se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto include un file di modello denominato **MyTemplate.tt** che contiene la direttiva seguente:
+ Ad esempio, se il progetto di Visual Studio include un file di modello denominato **MyTemplate.tt** che contiene la direttiva seguente:
 
  `<#@output extension=".cs"#>`
 
- quindi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genererà un file denominato **MyTemplate.cs**
+ Visual Studio genererà un file denominato **MyTemplate.cs**
 
- La direttiva `output` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. L'applicazione otterrà la stringa generata con una chiamata a `TextTransform()`. Per ulteriori informazioni, vedere [la generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ La direttiva `output` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. L'applicazione otterrà la stringa generata con una chiamata a `TextTransform()`. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="using-the-output-directive"></a>Uso della direttiva output
 
@@ -39,7 +39,7 @@ Nei modelli di testo di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)
 ## <a name="extension-attribute"></a>attributo di estensione
  Specifica l'estensione di file del file di output di testo generato.
 
- Il valore predefinito è **cs**
+ Il valore predefinito è **. cs**
 
  Esempi: `<#@ output extension=".txt" #>`
 
@@ -49,7 +49,7 @@ Nei modelli di testo di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)
 
  `<#@ output extension=".vb" #>`
 
- I valori accettabili: Qualsiasi nome estensione di file valida.
+ I valori accettabili: Qualsiasi estensione di file valida.
 
 ## <a name="encoding-attribute"></a>attributo di codifica
  Specifica la codifica da usare quando viene generato il file di output. Ad esempio:

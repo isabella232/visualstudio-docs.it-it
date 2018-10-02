@@ -9,18 +9,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b26f0a6b58a1851e7e348ff367fe81f31eec4a56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c36d4d38079a74c27f41829852d3b4e242825d9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952654"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858964"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 
-Un modello di testo T4 di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di solito inizia con la direttiva `template` che specifica come deve essere elaborato il modello. Un modello di testo e qualsiasi file in esso incluso non devono contenere più di una direttiva template.
+In genere, un modello di testo T4 di Visual Studio inizia con un `template` direttiva che specifica come deve essere elaborato il modello. Un modello di testo e qualsiasi file in esso incluso non devono contenere più di una direttiva template.
 
- Per una panoramica generale di scrittura di modelli di testo, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
+ Per una panoramica generale della scrittura di modelli di testo, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template-directive"></a>Utilizzo della direttiva template
 
@@ -33,7 +33,7 @@ Un modello di testo T4 di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 ## <a name="compileroptions-attribute"></a>attributo compilerOptions
  Esempio: `compilerOptions="optimize+"`
 
- I valori validi: eventuali opzioni del compilatore valido.
+ I valori validi: qualsiasi opzione del compilatore valida.
 
  Ignorato per i modelli (pre-elaborati) della fase di esecuzione.
 
@@ -42,7 +42,7 @@ Un modello di testo T4 di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 ## <a name="culture-attribute"></a>attributo Culture
  Esempio: `culture="de-CH"`
 
- I valori validi: "", la lingua inglese, ovvero l'impostazione predefinita.
+ I valori validi: "", le impostazioni cultura invarianti, ovvero l'impostazione predefinita.
 
  Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per altre informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
@@ -58,7 +58,7 @@ debug="true"
 
  Se l'attributo `debug` ha valore `true`, il file di codice intermedio conterrà le informazioni che consentono al debugger di identificare in modo più accurato la posizione nel modello in cui si è verificata un'interruzione o un'eccezione.
 
- Per i modelli in fase di progettazione il file di codice intermedio verrà scritto per il **% TEMP %** directory.
+ Per i modelli in fase di progettazione il file di codice intermedio verrà scritto il **% TEMP %** directory.
 
  Per eseguire un modello in fase di progettazione nel debugger, salvare il modello di testo, quindi aprire il menu di scelta rapida del modello di testo in Esplora soluzioni e scegliere **Debug modello T4**.
 
@@ -72,9 +72,9 @@ hostspecific="true"
 
  Se si imposta il valore di questo attributo su `true`, viene aggiunta una proprietà denominata `Host` alla classe generata dal modello di testo. La proprietà è un riferimento all'host del motore di trasformazione e viene dichiarata come <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Se è stato definito un host personalizzato, è possibile eseguirne il cast sul tipo di host personalizzato.
 
- Poiché il tipo di questa proprietà dipende dal tipo di host, è utile solo se si scrive un modello di testo che funziona solo con un host specifico. È applicabile a [in fase di progettazione modelli](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ma non [modelli in fase di esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Poiché il tipo di questa proprietà dipende dal tipo di host, è utile solo se si scrive un modello di testo che funziona solo con un host specifico. È applicabile alla [modelli della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ma non [modelli in fase di esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Quando `hostspecific` è `true` e si utilizza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile eseguire il cast di `this.Host` a IServiceProvider per accedere alle funzionalità di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
+ Quando `hostspecific` viene `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -105,7 +105,7 @@ Content of myFile is:
 
  `VB`
 
- L'attributo di linguaggio specifica la lingua ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) da utilizzare per il codice sorgente nei blocchi di istruzioni e di espressioni. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
+ L'attributo della lingua specifica la lingua ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) da utilizzare per il codice sorgente nei blocchi di istruzioni e di espressioni. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
 
  Ad esempio:
 
@@ -128,7 +128,7 @@ Squares of numbers:
  È possibile specificare che il codice del programma del modello può ereditare da un'altra classe che può essere generata anche da un modello di testo.
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Ereditarietà in un modello di testo (pre-elaborato) della fase di esecuzione
- È possibile utilizzare l'ereditarietà tra i modelli di testo della fase di esecuzione per creare un modello di base che disponga di molte varianti derivate. Modelli in fase di esecuzione sono quelli che dispongono di **lo strumento personalizzato** proprietà impostata su **TextTemplatingFilePreprocessor**. Un modello della fase di esecuzione genera codice che è possibile chiamare nell'applicazione per creare il testo definito nel modello. Per ulteriori informazioni, vedere [la generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ È possibile utilizzare l'ereditarietà tra i modelli di testo della fase di esecuzione per creare un modello di base che disponga di molte varianti derivate. I modelli in fase di esecuzione sono quelli che dispongono di **Custom Tool** impostata su **TextTemplatingFilePreprocessor**. Un modello della fase di esecuzione genera codice che è possibile chiamare nell'applicazione per creare il testo definito nel modello. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Se non si specifica un attributo `inherits`, una classe di base e una classe derivata vengono generate dal modello di testo. Quando si specifica l'attributo `inherits`, viene generata solo la classe derivata. È possibile scrivere manualmente una classe di base, ma deve fornire i metodi utilizzati dalla classe derivata.
 
@@ -192,7 +192,7 @@ A common central text.
 This is the common footer.
 ```
 
- È possibile compilare le classi di base e derivate in progetti diversi. Ricordarsi di aggiungere il progetto di base o l'assembly di riferimenti del progetto derivato.
+ È possibile compilare le classi di base e derivate in progetti diversi. Ricordarsi di aggiungere il progetto di base o l'assembly per i riferimenti del progetto derivato.
 
  È inoltre possibile utilizzare una classe comune scritta manualmente come classe di base. La classe di base deve fornire i metodi utilizzati dalla classe derivata.
 
@@ -200,11 +200,11 @@ This is the common footer.
 >  Se si utilizzano insieme gli attributi `inherits` e `hostspecific`, specificare hostspecific="trueFromBase" nella classe derivata e host="true" nella classe base. Ciò impedisce una doppia definizione della proprietà `Host` nel codice generato.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Ereditarietà in un modello di testo della fase di progettazione
- Un modello di testo in fase di progettazione è un file per cui **lo strumento personalizzato** è impostato su **TextTemplatingFileGenerator**. Il modello genera un file di output di codice o testo che fa parte del progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per generare il file di output, il modello viene prima tradotto in un file del codice del programma intermedio che non viene in genere visualizzato. L'attributo `inherits` specifica la classe di base per questo codice intermedio.
+ Un modello di testo in fase di progettazione è un file per il quale **Custom Tool** è impostata su **TextTemplatingFileGenerator**. Il modello genera un file di output del codice o testo, che fa parte del progetto di Visual Studio. Per generare il file di output, il modello viene prima tradotto in un file del codice del programma intermedio che non viene in genere visualizzato. L'attributo `inherits` specifica la classe di base per questo codice intermedio.
 
  Per un modello di testo della fase di progettazione, è possibile specificare qualsiasi classe di base derivata da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilizzare la direttiva `<#@assembly#>` per caricare l'assembly o il progetto contenente la classe di base.
 
- Per ulteriori informazioni, vedere ["Ereditarietà in modelli di testo" nel Blog degli Mathew](http://go.microsoft.com/fwlink/?LinkId=208373).
+ Per altre informazioni, vedere ["ereditarietà nel testo" modelli nel Blog di Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
 ## <a name="linepragmas-attribute"></a>Attributo LinePragmas
  Esempio: `linePragmas="false"`
@@ -215,7 +215,7 @@ This is the common footer.
 
  Impostare questo attributo su false rimuove i tag che identificano i numeri di riga nel codice generato. Ciò significa che il compilatore segnalerà gli errori utilizzando i numeri di riga del codice generato. Ciò rende disponibili più opzioni di debug, infatti è possibile scegliere di eseguire il debug del modello di testo o del codice generato.
 
- Questo attributo consente, inoltre, quando si che i nomi di file assoluti nei pragma stanno causando Distraggono nel controllo del codice sorgente.
+ Questo attributo è utile anche se trovare che i nomi di file assoluti nei pragma stanno provocando merge fonte di distrazione nel controllo del codice sorgente.
 
 ## <a name="visibility-attribute"></a>Attributo di visibilità
  Esempio: `visibility="internal"`

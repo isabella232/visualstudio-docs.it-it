@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e087a7be95cfc6ba97d62720f2950672ca4bf199
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bd22b0e28859ea153466b58f5f27ab458f5aa529
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545593"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858944"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Gli assembly devono avere nomi sicuri validi
 
@@ -66,9 +66,9 @@ Si noti che per caricare e analizzare un assembly con firma ritardata, è necess
 
 Usare una delle procedure riportate di seguito:
 
-- Usare lo strumento Assembly Linker (Al.exe) fornito dal [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK.
+- Usare lo strumento Assembly Linker (Al.exe) fornito da .NET Framework SDK.
 
-- Per il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] v1.0 o v1.1, usare il <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> o <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> attributo.
+- Per .NET Framework v1.0 o v1.1, usare il <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> o <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> attributo.
 
 - Per il [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], usare il `/keyfile` oppure `/keycontainer` l'opzione del compilatore [/KEYFILE (specificare Key o coppia di chiavi per firmare un Assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) o [/KEYCONTAINER (specifica un contenitore di chiavi per firmare un Assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) opzione del linker in C++).
 
@@ -92,7 +92,7 @@ Usare una delle procedure riportate di seguito:
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Firmare l'assembly con nome sicuro all'esterno di Visual Studio
 
-Usare lo strumento nome sicuro (Sn.exe) avviene tramite il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK. Per altre informazioni, vedere [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+Usare lo strumento nome sicuro (Sn.exe) fornito da .NET Framework SDK. Per altre informazioni, vedere [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 

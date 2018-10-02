@@ -18,19 +18,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 314fe4fb88fedb1b287c41fddd9aef4a20bbd1af
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 56381b86b367d7ca93c43b2918d98eb0fdc092bb
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774932"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860485"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
 Per definire un linguaggio specifico di dominio (DSL), creare una soluzione di Visual Studio da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.
 
 Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [alcuna and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-##  <a name="templates"></a> Selezione di una soluzione di modello
+## <a name="templates"></a> Selezione di una soluzione di modello
  Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
 |||
@@ -122,7 +122,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
  Eliminare o rinominare le altre classi in base ai propri requisiti.
 
-##  <a name="patterns"></a> Modelli per la definizione di un linguaggio DSL
+## <a name="patterns"></a> Modelli per la definizione di un linguaggio DSL
  È consigliabile sviluppare un linguaggio DSL aggiungendo o modificando una o due funzionalità per volta. Aggiungere una funzionalità, eseguire il linguaggio DSL e testarlo e quindi aggiungere ancora una o due funzionalità. Una funzionalità tipica del linguaggio DSL potrebbe essere:
 
 -   Una classe di dominio, la relazione di incorporamento che connette l'elemento al modello, la forma necessaria per visualizzare gli elementi della classe nel diagramma e lo strumento elemento che consente agli utenti di creare elementi.
@@ -149,7 +149,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 > [!NOTE]
 >  "Modello" si riferisce a un'istanza del linguaggio DSL creata dagli utenti e in genere viene visualizzato come diagramma. Questo argomento descrive sia il diagramma di definizione DSL che i diagrammi del modello visualizzati quando viene usato il linguaggio DSL.
 
-##  <a name="classes"></a> Definizione delle classi di dominio
+## <a name="classes"></a> Definizione delle classi di dominio
  Le classi di dominio rappresentano i concetti del linguaggio DSL. Le istanze sono *elementi del modello*. Ad esempio in un **MusicLibrary** DSL potrebbe essere classi di dominio denominate **Album** e **brano**.
 
  Per creare una classe di dominio, è possibile trascinare dal **classe di dominio denominata** strumento al diagramma e quindi rinominare la classe.
@@ -231,7 +231,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
 7.  **Salvare il file, chiuderlo e riaprirlo**. Tutte le istanze create devono essere visibili nella finestra di esplorazione, dopo aver espanso i nodi.
 
-##  <a name="shapes"></a> Definizione di forme nel diagramma
+## <a name="shapes"></a> Definizione di forme nel diagramma
  È possibile definire classi di elementi visualizzati in un diagramma come rettangoli, ellissi o icone.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Per definire una classe di elementi visualizzati come forme in un diagramma
@@ -327,7 +327,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
  Dopo aver testato una forma, potrebbe essere necessario modificarne alcune proprietà e aggiungere alcune funzionalità avanzate. Per altre informazioni, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-##  <a name="references"></a> Definizione delle relazioni di riferimento
+## <a name="references"></a> Definizione delle relazioni di riferimento
  È possibile definire una relazione di riferimento tra qualsiasi classe di dominio di origine e qualsiasi classe di dominio di destinazione. Le relazioni di riferimento in genere vengono visualizzate in un diagramma come connettori, ovvero come linee che uniscono le forme.
 
  Ad esempio, se gli album musicali e gli artisti vengono visualizzati come forme nel diagramma, è possibile definire una relazione denominata ArtistiApparsiNegliAlbum che collega gli artisti agli album a cui hanno lavorato. Vedere l'esempio riportato nella figura.
@@ -409,7 +409,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
  Dopo aver testato un connettore, potrebbe essere necessario modificarne alcune proprietà e aggiungere alcune funzionalità avanzate. Per altre informazioni, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-##  <a name="compartments"></a> Definizione di forme che contengono elenchi: forme raggruppamento
+## <a name="compartments"></a> Definizione di forme che contengono elenchi: forme raggruppamento
  Una forma raggruppamento contiene uno o più elenchi di elementi. Ad esempio, in un linguaggio DSL di una raccolta musicale, è possibile usare forme raggruppamento per rappresentare gli album musicali. In ogni album c'è un elenco di brani.
 
  ![Forma Raggruppamento](../modeling/media/compartmentshape.png)
@@ -537,7 +537,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
 7.  Selezionare il collegamento o l'elemento nella forma raggruppamento. Verranno rimossi sia il collegamento che l'elemento.
 
-##  <a name="ports"></a> Definizione delle porte sul limite di un'altra forma
+## <a name="ports"></a> Definizione delle porte sul limite di un'altra forma
  Una porta è una forma che si trova sul limite di un'altra forma.
 
  Le porte possono essere usate anche per fornire un punto di connessione fisso su un'altra forma, verso cui l'utente può tracciare i connettori. In questo caso, è possibile rendere trasparente la forma della porta.
@@ -560,7 +560,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
  Per altre informazioni, vedere [delle proprietà di forme porta](../modeling/properties-of-port-shapes.md).
 
-##  <a name="swimlanes"></a> Definizione di un linguaggio DSL con corsie
+## <a name="swimlanes"></a> Definizione di un linguaggio DSL con corsie
  Le corsie sono una partizione orizzontale o verticale di un diagramma. Ogni corsia corrisponde a un elemento modello. La definizione DSL richiede una classe di dominio per gli elementi corsia.
 
  Il modo migliore per creare un linguaggio DSL con corsie è creare una nuova soluzione DSL e scegliere il modello di soluzione Flusso attività. Nella definizione DSL, la classe Actor è la classe di dominio mappata alla corsia. Rinominare questa e le altre classi in base alle esigenze del progetto.
@@ -571,7 +571,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
  Per altre informazioni, vedere [delle proprietà di corsie](../modeling/properties-of-swimlanes.md).
 
-##  <a name="addTypes"></a> Aggiunta di tipi di proprietà
+## <a name="addTypes"></a> Aggiunta di tipi di proprietà
 
 ### <a name="domain-enumerations-and-literals"></a>Enumerazioni di dominio e valori letterali
  Un'enumerazione di dominio è un tipo con più valori letterali.
@@ -587,7 +587,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
  Per aggiungere un tipo, fare doppio clic la radice del modello in DSL Explorer e quindi fare clic su **Aggiungi nuovo tipo esterno**. Nella finestra Proprietà impostare il nome su **colore** e lo spazio dei nomi **System. Drawing**. Questo tipo viene ora visualizzato in Esplora DSL sotto **tipi di dominio**. È possibile sceglierlo quando si imposta il tipo di una proprietà di dominio.
 
-##  <a name="custom"></a> Personalizzazione del linguaggio DSL
+## <a name="custom"></a> Personalizzazione del linguaggio DSL
  Con le tecniche descritte in questo argomento, è possibile creare rapidamente un linguaggio DSL con una notazione basata su diagramma, un formato XML leggibile e gli strumenti di base necessari per generare il codice e altri artefatti.
 
  Ci sono due metodi per estendere la definizione DSL:
@@ -607,7 +607,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 
  Vedere anche [procedura: modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-##  <a name="trouble"></a> Risoluzione dei problemi
+## <a name="trouble"></a> Risoluzione dei problemi
  La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [Forum sull'estensibilità degli strumenti di visualizzazione](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 |Problema|Suggerimento|
@@ -619,7 +619,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
 |Nella finestra di esplorazione del linguaggio DSL, gli elementi vengono mostrati solo con i nomi di tipo.|Nella definizione DSL, selezionare una proprietà di dominio della classe e nelle proprietà della finestra, impostare **è nome elemento** su true.|
 |Il linguaggio DSL si apre sempre nell'editor XML.|Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Fare clic sull'elemento del progetto, fare clic su **Apri con** e selezionare _Linguaggioutente_**progettazione (impostazione predefinita)**.|
 |La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly.|Esaminare e aggiornare **DslPackage\GeneratedCode\Package.tt** per altre informazioni, vedere [procedura: modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
-|La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione.|Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1.  In Windows il menu Start, in **tutti i programmi**, espandere [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], quindi **strumenti**, quindi fare clic su **Reimposta l'istanza Microsoft Visual Studio sperimentale**.<br />2.  In Visual Studio**compilare** menu, fare clic su **Ricompila soluzione**.|
+|La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione.|Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1.  In Windows il menu Start, in **tutti i programmi**, espandere [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], quindi **strumenti**, quindi fare clic su **Reimposta l'istanza Microsoft Visual Studio sperimentale**.<br />2.  Nel **compilare** menu, fare clic su **Ricompila soluzione**.|
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 738c214e845cb962bc6c28aa63806dee2858c295
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 50c03a16af9562df40dc04a431fac157c1321fbb
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551239"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860082"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Eseguire il wrapping delle clausole finally vulnerabili in un try esterno
 
@@ -33,13 +33,13 @@ ms.locfileid: "45551239"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Nelle versioni 1.0 e 1.1 del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], un metodo pubblico o protetto contiene un `try` / `catch` / `finally` blocco. Il `finally` blocco viene visualizzato per reimpostare lo stato di sicurezza e non è racchiuso un `finally` blocco.
+ Nelle versioni 1.0 e 1.1 di .NET Framework, un metodo pubblico o protetto contiene un `try` / `catch` / `finally` blocco. Il `finally` blocco viene visualizzato per reimpostare lo stato di sicurezza e non è racchiuso un `finally` blocco.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola individua `try` / `finally` blocchi nel codice destinato alle versioni 1.0 e 1.1 del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] che potrebbero essere vulnerabili ai filtri eccezioni dannoso presenti nello stack di chiamate. Se vengono eseguite operazioni, ad esempio la rappresentazione nel blocco try e viene generata un'eccezione, il filtro può essere eseguito prima il `finally` blocco. Nell'esempio della rappresentazione, ciò significa che il filtro viene eseguito come utente rappresentato. I filtri sono attualmente è possibile implementare solo in Visual Basic.
+ Questa regola individua `try` / `finally` blocchi nel codice destinato alle versioni 1.0 e 1.1 di .NET Framework che potrebbero essere vulnerabili ai filtri eccezioni dannoso presenti nello stack di chiamate. Se vengono eseguite operazioni, ad esempio la rappresentazione nel blocco try e viene generata un'eccezione, il filtro può essere eseguito prima il `finally` blocco. Nell'esempio della rappresentazione, ciò significa che il filtro viene eseguito come utente rappresentato. I filtri sono attualmente è possibile implementare solo in Visual Basic.
 
 > [!NOTE]
-> Nelle versioni 2.0 e versioni successive del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], il runtime protegge automaticamente un `try` / `catch` /  `finally` bloccare dai filtri eccezioni dannoso, se la reimpostazione si verifica direttamente all'interno del metodo che contiene il blocco di eccezioni.
+> Nelle versioni 2.0 e versioni successive di .NET Framework, il runtime protegge automaticamente un `try` / `catch` /  `finally` bloccare dai filtri eccezioni dannoso, se la reimpostazione si verifica direttamente all'interno del metodo che contiene il blocco di eccezioni.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Posizionare il wrapping `try` / `finally` in un blocco try esterno. Vedere il secondo esempio che segue. In tal modo il `finally` da eseguire prima del codice di filtro.
