@@ -1,6 +1,6 @@
 ---
 title: 'CA1724: I nomi dei tipi non devono corrispondere agli spazi dei nomi'
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c178558743ca69fb3b62eccaf8164e4b49167ad3
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bf359ffcc098fa2b5653c28da302e2777216ea5b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547568"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860264"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: I nomi dei tipi non devono corrispondere agli spazi dei nomi
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: I nomi dei tipi non devono corrispondere gli spazi dei nomi
+
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
@@ -32,13 +33,17 @@ ms.locfileid: "45547568"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un nome di tipo corrisponde a un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] spazi dei nomi in un confronto tra maiuscole e minuscole.
+
+Un nome di tipo corrisponde a un nome di riferimento dello spazio dei nomi contenente uno o più tipi visibili esternamente. Il confronto di nome è tra maiuscole e minuscole.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I nomi dei tipi non devono corrispondere ai nomi degli spazi dei nomi definiti nella libreria di classi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. La violazione di questa regola può ridurre l'utilizzabilità della libreria.
+
+I nomi dei tipi creati dall'utente non deve corrispondere i nomi degli spazi dei nomi di riferimento che hanno tipi visibili esternamente. Violazione di questa regola, è possibile ridurre l'utilizzabilità della libreria.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Selezionare un nome di tipo che non corrispondono al nome di un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dello spazio dei nomi della libreria di classi.
+
+Rinominare il tipo in modo che non corrisponde il nome di uno spazio dei nomi di cui viene fatto riferimento con tipi visibili esternamente.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Per i nuovi sviluppi, nessun noti verificarsi gli scenari in cui è necessario eliminare un avviso da questa regola. Prima di eliminare l'avviso, considerare attentamente come gli utenti della libreria potrebbero essere confusi dal nome corrispondente. Per le librerie, potrebbe essere necessario eliminare un avviso da questa regola.
+
+Per i nuovi sviluppi, nessun noti verificarsi gli scenari in cui è necessario eliminare un avviso da questa regola. Prima di eliminare l'avviso, considerare attentamente come gli utenti della libreria potrebbero essere confusi dal nome corrispondente. Per le librerie, potrebbe essere necessario eliminare un avviso da questa regola.

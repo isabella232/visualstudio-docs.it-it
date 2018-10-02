@@ -1,6 +1,6 @@
 ---
 title: 'CA2227: Le proprietà di raccolte devono essere in sola lettura'
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -20,12 +20,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aa1d8644049f78eccfda7402360bdbc930b61601
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f1bbd3e6ba97d969694e7d2142978c12552b3c50
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447674"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860251"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Le proprietà di raccolte devono essere in sola lettura
 
@@ -38,25 +38,27 @@ ms.locfileid: "34447674"
 
 ## <a name="cause"></a>Causa
 
-Una proprietà accessibile in scrittura visibile esternamente è di un tipo che implementa <xref:System.Collections.ICollection?displayProperty=fullName>. Questa regola ignora i set di autorizzazioni, matrici e indicizzatori (proprietà con il nome 'Item').
+È una proprietà scrivibile, visibile esternamente di un tipo che implementa <xref:System.Collections.ICollection?displayProperty=fullName>. Questa regola ignora le matrici, gli indicizzatori (proprietà con il nome 'Item') e i set di autorizzazioni.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Una proprietà di raccolta scrivibile consente a un utente di sostituire la raccolta con una raccolta completamente diversa. Una proprietà di sola lettura interrompe la sostituzione della raccolta, ma consente ancora l'impostazione dei singoli membri. Se la sostituzione della raccolta è un obiettivo, lo schema progettuale preferito è per includere un metodo per rimuovere tutti gli elementi dalla raccolta e un metodo per ripopolare la raccolta. Vedere il <xref:System.Collections.ArrayList.Clear%2A> e <xref:System.Collections.ArrayList.AddRange%2A> metodi di <xref:System.Collections.ArrayList?displayProperty=fullName> per un esempio di questo modello di classe.
+Una proprietà di raccolta scrivibile consente a un utente di sostituire la raccolta con una raccolta completamente diversa. Una proprietà di sola lettura interrompe la sostituzione della raccolta, ma consente ancora i singoli membri da impostare. Se la sostituzione della raccolta è un obiettivo, lo schema progettuale preferito è possibile includere un metodo per rimuovere tutti gli elementi dalla raccolta e un metodo per ripopolare la raccolta. Vedere le <xref:System.Collections.ArrayList.Clear%2A> e <xref:System.Collections.ArrayList.AddRange%2A> metodi del <xref:System.Collections.ArrayList?displayProperty=fullName> per un esempio di questo modello di classe.
 
-Serializzazione XML e binaria supportano le proprietà di sola lettura che vengono raccolte. Il <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> classe presenta requisiti specifici per i tipi che implementano <xref:System.Collections.ICollection> e <xref:System.Collections.IEnumerable?displayProperty=fullName> per poter essere serializzabili.
+La serializzazione XML e binaria supportano le proprietà di sola lettura che vengono raccolte. Il <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> classe presenta requisiti specifici per i tipi che implementano <xref:System.Collections.ICollection> e <xref:System.Collections.IEnumerable?displayProperty=fullName> per poter essere serializzabili.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, impostare la proprietà di sola lettura. Se la progettazione lo richiede, aggiungere metodi per cancellare e ripopolare la raccolta.
+Per correggere una violazione di questa regola, impostare la proprietà di sola lettura. Se la struttura richiede, aggiungere i metodi per cancellare e ripopolare la raccolta.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
-Non escludere gli avvisi da questa regola.
+È possibile eliminare l'avviso se la proprietà fa parte di un [i dati oggetto di trasferimento](/previous-versions/msp-n-p/ff649585(v=pandp.10)) classe.
+
+In caso contrario, non eliminare gli avvisi da questa regola.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un tipo con una proprietà di raccolta scrivibile e Mostra come la raccolta può essere sostituita direttamente. Inoltre, il modo preferito di sostituzione di una proprietà di raccolta di sola lettura mediante `Clear` e `AddRange` metodi viene visualizzato.
+Nell'esempio seguente viene illustrato un tipo con una proprietà di raccolta scrivibile e Mostra come la raccolta può essere sostituita direttamente. Inoltre, viene spiegato il modo preferito di sostituzione di una proprietà di raccolta di sola lettura usando `Clear` e `AddRange` metodi.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +66,4 @@ Nell'esempio seguente viene illustrato un tipo con una proprietà di raccolta sc
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA1819: Le proprietà non devono restituire matrici](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819: Le proprietà non devono restituire matrici](../code-quality/ca1819-properties-should-not-return-arrays.md)

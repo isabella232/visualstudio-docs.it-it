@@ -13,16 +13,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2009e4c186682157eab6803ad3055fd5818fd02d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511811"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860498"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizzare l'archiviazione dei file e la serializzazione XML
 
-Quando l'utente salva un'istanza, oppure *model*, di un linguaggio specifico di dominio (DSL) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], viene creato o aggiornato un file XML. Il file può essere ricaricato per ricreare il modello di Store.
+Quando l'utente salva un'istanza, oppure *modello*, di un linguaggio specifico di dominio (DSL) in Visual Studio, viene creato o aggiornato un file XML. Il file può essere ricaricato per ricreare il modello di Store.
 
 È possibile personalizzare lo schema di serializzazione modificando le impostazioni in **comportamento di serializzazione Xml** in DSL Explorer. È presente un nodo sotto **comportamento di serializzazione Xml** per ogni classe di dominio, proprietà e relazioni. Le relazioni si trovano sotto le classi di origine. Sono inoltre presenti nodi corrispondenti per la forma, connettore e diagramma classi.
 

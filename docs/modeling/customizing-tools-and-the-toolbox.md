@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cbdbfa2ffe94bf6ad287caeb5cbadb42b64c0d10
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512470"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860445"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizzazione di strumenti e della casella degli strumenti
 
 È necessario definire le voci della casella degli strumenti per gli elementi che gli utenti potranno aggiungere ai propri modelli. Esistono due tipi di strumenti: strumenti elemento e strumenti di connessione. Nella finestra di progettazione generata, un utente può selezionare uno strumento elemento per trascinare forme nel diagramma e uno strumento di connessione per tracciare i collegamenti tra le forme. In generale, gli strumenti elemento consentono agli utenti di aggiungere istanze di classi di dominio ai modelli e gli strumenti di connessione consentono di aggiungere istanze di relazioni di dominio.
 
-##  <a name="ToolboxDef"></a> Modalità di definizione della casella degli strumenti
+## <a name="ToolboxDef"></a> Modalità di definizione della casella degli strumenti
  In DSL Explorer espandere il nodo Editor e tutti i sottonodi. Verrà visualizzata una gerarchia simile alla seguente:
 
 ```
@@ -77,11 +77,11 @@ Il **generatore di connessioni** proprietà di uno strumento di connessione fa r
 
      **Per uno strumento di connessione:** impostare la **generatore di connessioni** proprietà dello strumento da uno degli elementi che sono disponibili nell'elenco a discesa. I generatori di connessione vengono creati automaticamente quando si mappa un connettore a una relazione di dominio. Se di recente si è creato un connettore, normalmente si selezionerà il generatore di connessioni associato.
 
-5.  Per testare il linguaggio specifico di dominio (DSL), premere F5 o CTRL+F5 e nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aprire un file di modello di esempio. Il nuovo strumento verrà visualizzato nella casella degli strumenti. Trascinarlo sul diagramma per verificare che crei un nuovo elemento.
+5.  Per testare il linguaggio DSL, premere F5 o CTRL+F5 e nell'istanza sperimentale di Visual Studio, aprire un file di modello di esempio. Il nuovo strumento verrà visualizzato nella casella degli strumenti. Trascinarlo sul diagramma per verificare che crei un nuovo elemento.
 
-     Se lo strumento non viene visualizzato, arrestare l'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Nella finestra di Windows **avviare** menu, eseguire **ripristinare Microsoft Visual Studio 2010 istanza sperimentale**. Nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **compilare** menu, fare clic su **Ricompila soluzione**. Testare di nuovo il DSL.
+     Se lo strumento non viene visualizzata, arrestare l'istanza sperimentale di Visual Studio. Nella finestra di Windows **avviare** menu, eseguire **ripristinare Microsoft Visual Studio 2010 istanza sperimentale**. Nel **compilare** menu, fare clic su **Ricompila soluzione**. Testare di nuovo il DSL.
 
-##  <a name="customizing"></a> Personalizzazione di strumenti elemento
+## <a name="customizing"></a> Personalizzazione di strumenti elemento
  Per impostazione predefinita, lo strumento creerà una singola istanza della classe specificata, ma è possibile scegliere tra due alternative:
 
 -   Definire le direttive di merge degli elementi su altre classi, per consentire loro di accettare nuove istanze di questa classe e di creare collegamenti aggiuntivi quando viene creato il nuovo elemento. Ad esempio, è possibile consentire all'utente di rilasciare un commento su un altro elemento e quindi creare un collegamento di riferimento tra i due.
@@ -92,7 +92,7 @@ Il **generatore di connessioni** proprietà di uno strumento di connessione fa r
 
 -   Scrivere codice per personalizzare lo strumento in modo che possa creare gruppi di elementi. Lo strumento è inizializzato dai metodi in ToolboxHelper.cs che possono essere sostituiti. Per altre informazioni, vedere [creazione di gruppi di elementi da uno strumento](#groups).
 
-##  <a name="groups"></a> Creazione di gruppi di elementi da uno strumento
+## <a name="groups"></a> Creazione di gruppi di elementi da uno strumento
  Ogni strumento elemento contiene un prototipo degli elementi che deve creare. Per impostazione predefinita, ogni strumento elemento crea un singolo elemento, ma è anche possibile creare un gruppi di oggetti correlati con un solo strumento. A questo scopo, è necessario inizializzare lo strumento con un prototipo <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> che contiene gli elementi correlati.
 
  L'esempio seguente è estratto da un DSL in cui è presente un tipo Transistor. Ogni transistor dispone di tre terminali denominati. Nello strumento elemento per i transistor è archiviato un prototipo contenente quattro elementi modello e tre collegamenti di relazione. Quando l'utente trascina lo strumento nel diagramma, viene creata un'istanza del prototipo che viene quindi collegato alla radice del modello.
@@ -142,7 +142,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ```
 
-##  <a name="connections"></a> Personalizzazione di strumenti di connessione
+## <a name="connections"></a> Personalizzazione di strumenti di connessione
  Generalmente uno strumento elemento viene creato quando si crea una nuova classe connettore. In alternativa, è possibile sottoporre uno strumento a overload consentendo ai tipi delle due entità finali di determinare il tipo di relazione. È ad esempio possibile definire uno strumento di connessione che può creare sia relazioni Persona-Persona sia relazioni Persona-Città.
 
  Gli strumenti di connessione richiamano i generatori di connessioni. Usare i generatori di connessioni per specificare il modo in cui gli utenti possono collegare gli elementi nella finestra di progettazione generata. I generatori di connessioni consentono di specificare gli elementi che si possono collegare e il tipo di collegamento che viene creato tra essi.
