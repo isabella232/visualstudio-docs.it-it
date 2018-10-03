@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bc8ecdbbbed1d7d128a5102141c7130dcaef026
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f7c05d76aa74e32695d20b2d5e9ed4f030e65813
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775775"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859809"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizzazione del comportamento di eliminazione
 L'eliminazione di un elemento in genere determina l'eliminazione anche degli elementi correlati. Tutte le relazioni a esso connesse ed eventuali elementi figlio vengono eliminati. Questo comportamento è definito *propagazione eliminazioni*. È possibile personalizzare la propagazione dell'eliminazione, ad esempio per fare in modo che vengano eliminati altri elementi correlati. Scrivendo codice programma, è possibile far dipendere la propagazione dell'eliminazione dallo stato del modello. È inoltre possibile fare in modo che un'eliminazione comporti altre modifiche.
@@ -35,11 +35,11 @@ L'eliminazione di un elemento in genere determina l'eliminazione anche degli ele
 
 -   [Regole di eliminazione](#rules) -usare le regole per propagare gli aggiornamenti di qualsiasi tipo all'interno dell'archivio, in cui una modifica potrebbe determinarne altre.
 
--   [Eventi di eliminazione](#rules) -usare archivio eventi per propagare gli aggiornamenti all'esterno dell'archivio, ad esempio in altri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] documenti.
+-   [Eventi di eliminazione](#rules) -eventi di archiviazione di uso per propagare gli aggiornamenti all'esterno dell'archivio, ad esempio ad altri documenti di Visual Studio.
 
 -   [Dividi](#unmerge) -usare l'operazione Dividi per annullare l'operazione di unione che associato un elemento figlio all'elemento padre.
 
-##  <a name="default"></a> Comportamento di eliminazione predefinito
+## <a name="default"></a> Comportamento di eliminazione predefinito
  Per impostazione predefinita, la propagazione dell'eliminazione è controllata dalle regole seguenti:
 
 -   Se si elimina un elemento, vengono eliminati anche tutti gli elementi incorporati. Gli elementi incorporati sono quelli che costituiscono le destinazioni delle relazioni di incorporamento per le quali tali elementi rappresentano l'origine. Ad esempio, se è presente una relazione di incorporamento dalla **Album** al **brano**, quindi quando viene eliminato un Album specifico, verranno eliminati anche tutti i relativi brani.
@@ -52,7 +52,7 @@ L'eliminazione di un elemento in genere determina l'eliminazione anche degli ele
 
 -   Ogni relazione connessa all'elemento, sia presso il ruolo di origine o il ruolo di destinazione, viene eliminata. La proprietà ruolo dell'elemento presso il ruolo opposto non contiene più l'elemento eliminato.
 
-##  <a name="property"></a> Impostazione dell'opzione di propagazione dell'eliminazione di un ruolo
+## <a name="property"></a> Impostazione dell'opzione di propagazione dell'eliminazione di un ruolo
  È possibile fare in modo che l'eliminazione si propaghi lungo una relazione di riferimento o da un elemento incorporato al relativo padre.
 
 #### <a name="to-set-delete-propagation"></a>Per impostare la propagazione dell'eliminazione
@@ -77,7 +77,7 @@ L'eliminazione di un elemento in genere determina l'eliminazione anche degli ele
 > [!NOTE]
 >  Per aggiungere il codice programma alla definizione DSL, creare un file di codice separato nella **Dsl** del progetto e scrivere definizioni parziali per aumentare le classi nella cartella codice generato. Per altre informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
-##  <a name="closure"></a> La definizione di una chiusura di eliminazione
+## <a name="closure"></a> La definizione di una chiusura di eliminazione
  L'operazione di eliminazione Usa la classe _modello_**DeleteClosure** per determinare quali elementi eliminare, data una selezione iniziale. Chiama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` ripetutamente, verificando il grafico delle relazioni. È possibile eseguire l'override di questi metodi. ShouldVisitRolePlayer viene fornito con l'identità di un collegamento e l'elemento in corrispondenza di uno dei ruoli del collegamento. Deve restituire uno dei valori seguenti:
 
 -   **Visitorfilterresult. Yes**: l'elemento deve essere eliminato e il walker deve passare per provare gli altri collegamenti dell'elemento.
@@ -130,7 +130,7 @@ partial class MusicLibDeleteClosure
 
  Tuttavia, questa tecnica presuppone che l'eliminazione interessi solo gli elementi adiacenti nel grafico delle relazioni: non è possibile usare questo metodo per eliminare un elemento di un'altra parte del modello. Non è possibile usarlo per aggiungere elementi o effettuare altre modifiche in risposta a un'eliminazione.
 
-##  <a name="ondeleting"></a> Uso di OnDeleting e OnDeleted
+## <a name="ondeleting"></a> Uso di OnDeleting e OnDeleted
  È possibile eseguire l'override di `OnDeleting()` o di `OnDeleted()` in una classe di dominio o in una relazione di dominio.
 
 1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> viene chiamato quando un elemento sta per essere eliminato, ma prima dello scollegamento delle relative relazioni. È sempre navigabile da e verso altri elementi e si trova sempre in `store.ElementDirectory`.
@@ -197,7 +197,7 @@ partial class Artist
 
  Quando si esegue <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> su un elemento, verranno chiamati i metodi OnDeleting e OnDeleted. Questi metodi vengono sempre eseguiti inline - vale a dire, immediatamente prima e dopo l'eliminazione effettiva. Se il codice elimina due o più elementi, OnDeleting e OnDeleted verranno chiamati alternativamente su tutti gli elementi.
 
-##  <a name="rules"></a> Gli eventi e regole di eliminazione
+## <a name="rules"></a> Gli eventi e regole di eliminazione
  Come alternativa ai gestori OnDelete, è possibile definire regole ed eventi di eliminazione.
 
 1.  **L'eliminazione** e **eliminare** regole vengono attivate solo in una transazione e non in un'operazione di annullamento o ripristino. È possibile impostarle in modo che vengano aggiunte a una coda ed eseguite al termine della transazione in cui viene effettuata l'eliminazione. L'eliminazione delle regole viene sempre eseguita prima di qualsiasi regola di eliminazione presente nella coda.
@@ -206,7 +206,7 @@ partial class Artist
 
      Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
-2.  **Eliminato** archivio eventi viene richiamato al termine di una transazione e viene chiamato dopo un'operazione di annullamento o ripristino. Può essere quindi usato per propagare le eliminazioni di oggetti esterni all'archivio, ad esempio file, voci di database o altri oggetti in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+2.  **Eliminato** archivio eventi viene richiamato al termine di una transazione e viene chiamato dopo un'operazione di annullamento o ripristino. Può pertanto essere utilizzato per propagare le eliminazioni di oggetti all'esterno dell'archivio, ad esempio file, voci di database o altri oggetti in Visual Studio.
 
      Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
@@ -287,7 +287,7 @@ partial class NestedShapesSampleDocData
 
 ```
 
-##  <a name="unmerge"></a> Operazione di divisione
+## <a name="unmerge"></a> Operazione di divisione
  Viene chiamata l'operazione che associa un elemento figlio all'elemento padre *merge*. Si verifica quando un nuovo elemento o gruppi di elementi vengono creati dalla casella degli strumenti o spostati da un'altra parte del modello oppure copiati dagli Appunti. Oltre a creare una relazione di incorporamento tra l'elemento padre e il nuovo elemento figlio, l'operazione di unione può anche impostare altre relazioni, creare elementi ausiliari e impostare valori di proprietà negli elementi. L'operazione di unione è incapsulata in una direttiva di unione degli elementi (EMD).
 
  Una EMD incapsula anche il complementari *Dividi* o `MergeDisconnect` operazione. Se è presente un cluster di elementi che è stato costruito tramite un'operazione di unione, per rimuovere un elemento dal cluster è consigliabile usare l'operazione di divisione associata, nel caso in cui si voglia mantenere la coerenza dello stato degli elementi rimanenti. Per l'operazione di divisione vengono usate in genere le tecniche descritte nelle sezioni precedenti.

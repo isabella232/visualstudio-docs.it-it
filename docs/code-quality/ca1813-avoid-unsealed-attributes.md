@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b7b5b360a6288b6ff2e13b6d7fc29df6728fad6f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 45804f08ea25ab8582d28632baf07abea24e0406
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546249"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859484"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitare attributi non sealed
 
@@ -41,7 +41,7 @@ Un tipo pubblico eredita da <xref:System.Attribute?displayProperty=fullName>, no
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-La libreria di classi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] fornisce metodi per recuperare attributi personalizzati. Per impostazione predefinita, questi metodi eseguono ricerche nella gerarchia di ereditarietà dell'attributo. Ad esempio, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> Cerca il tipo di attributo specificato o qualsiasi tipo di attributo che estende il tipo di attributo specificato. Utilizzo di attributi sealed Elimina la ricerca nella gerarchia di ereditarietà e può migliorare le prestazioni.
+La libreria di classi .NET Framework fornisce metodi per recuperare gli attributi personalizzati. Per impostazione predefinita, questi metodi eseguono ricerche nella gerarchia di ereditarietà dell'attributo. Ad esempio, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> Cerca il tipo di attributo specificato o qualsiasi tipo di attributo che estende il tipo di attributo specificato. Utilizzo di attributi sealed Elimina la ricerca nella gerarchia di ereditarietà e può migliorare le prestazioni.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

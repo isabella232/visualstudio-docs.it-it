@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 95e3d77471f4e118c83f0fb752048383d624acfd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 27c5c7126f66ad909264bdd6fb2505e5e8d87c3c
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38941821"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "48020883"
 ---
 > [!NOTE]
-> In Visual Studio 2017, il SDK di trasformazione di modello di testo e il SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano le funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> In Visual Studio 2017, il **trasformazione del modello di testo** componente viene installato automaticamente come parte delle **sviluppo di estensioni di Visual Studio** carico di lavoro. È anche possibile installarlo dal **singoli componenti** scheda del programma di installazione di Visual Studio, sotto il **strumenti di Code** categoria. Installare il **SDK di modellazione** componente dalle **singoli componenti** scheda.

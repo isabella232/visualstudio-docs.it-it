@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a18abfa94d3d53c6b96558fdf1cfc8d0c1c9cc5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 506b9b014b375b60491161c49925d49c45c79ef9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549706"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860238"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: I tipi non devono estendere tipi di base specifici
 |||
@@ -51,7 +51,7 @@ ms.locfileid: "45549706"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versione 1, era consigliabile derivare nuove eccezioni da <xref:System.ApplicationException>. La raccomandazione è stato modificato e nuove eccezioni devono derivare da <xref:System.Exception?displayProperty=fullName> o una delle sue sottoclassi nel <xref:System> dello spazio dei nomi.
+ Per .NET Framework versione 1, era consigliabile derivare nuove eccezioni da <xref:System.ApplicationException>. La raccomandazione è stato modificato e nuove eccezioni devono derivare da <xref:System.Exception?displayProperty=fullName> o una delle sue sottoclassi nel <xref:System> dello spazio dei nomi.
 
  Non creare una sottoclasse di <xref:System.Xml.XmlDocument> se si desidera creare una vista XML di un'origine dati o del modello di oggetto sottostante.
 
