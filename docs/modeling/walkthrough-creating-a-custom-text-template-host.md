@@ -15,21 +15,21 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c7a8d83b36e913467f6c4c62a8452d8d5f15fe6d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3b70cdb92a6b8c4cacfddbc8e4d978845210c6ba
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977202"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859133"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>Procedura dettagliata: Creare un Host del modello di testo personalizzato
+# <a name="walkthrough-create-a-custom-text-template-host"></a>Procedura dettagliata: Creare un host del modello di testo personalizzato
 
-Oggetto *modello di testo**host* fornisce un ambiente che consente di *motore di trasformazione del modello di testo* per l'esecuzione. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore o *processore di direttiva* che necessita di un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per ulteriori informazioni, vedere [il processo di trasformazione di modello di testo](../modeling/the-text-template-transformation-process.md).
+Oggetto *modello di testo**host* fornisce un ambiente che consente di *motore di trasformazione del modello di testo* per l'esecuzione. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore oppure *processore di direttiva* che necessita di un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per altre informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
 
-È possibile scrivere un host personalizzato se si desidera utilizzare il *trasformazione del modello di testo* funzionalità dall'esterno [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o se si desidera integrare tale funzionalità negli strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Per la documentazione dei singoli metodi, vedere <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
+È possibile scrivere un host personalizzato se si desidera utilizzare il *trasformazione del modello testo* funzionalità dall'esterno di Visual Studio o se si desidera integrare tale funzionalità negli strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Per la documentazione dei singoli metodi, vedere <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
 
 > [!WARNING]
-> Se si scrive un'estensione o un pacchetto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], anziché creare il proprio host, si consiglia di utilizzare il servizio del modello di testo. Per ulteriori informazioni, vedere [richiamo di trasformazione del testo in un'estensione VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+> Se si sta scrivendo un'estensione di Visual Studio o un pacchetto, è consigliabile utilizzare il servizio di creazione di modelli di testo invece di creare il proprio host. Per altre informazioni, vedere [richiamo di trasformazione del testo in un'estensione VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 Questa procedura dettagliata illustra le attività seguenti:
 
@@ -716,7 +716,7 @@ In questa procedura dettagliata, si crea un host personalizzato in un'applicazio
     End Namespace
     ```
 
-4.  Per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] solo, aprire il **progetto** dal menu **proprietà CustomHost**. Nel **oggetto di avvio** elenco, fare clic su **CustomHost**.
+4.  Per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] solo, aprire il **Project** dal menu **proprietà CustomHost**. Nel **oggetto di avvio** fare clic su **CustomHost**.
 
 5.  Nel **File** menu, fare clic su **Salva tutto**.
 
@@ -788,7 +788,7 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Anziché digitare l'indirizzo, è possibile passare al file CustomHost.exe in **Esplora** e quindi trascinare il file nella finestra del prompt dei comandi.
+    > Anziché digitare l'indirizzo, è possibile passare al file CustomHost.exe nelle **Windows Explorer** e quindi trascinare il file nella finestra del prompt dei comandi.
 
 3.  Digitare uno spazio.
 
@@ -799,11 +799,11 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > Anziché digitare l'indirizzo, è possibile passare al file TestTemplate.tt in **Esplora** e quindi trascinare il file nella finestra del prompt dei comandi.
+    > Anziché digitare l'indirizzo, è possibile passare al file TestTemplate.tt in **Windows Explorer** e quindi trascinare il file nella finestra del prompt dei comandi.
 
      L'applicazione host personalizzata viene eseguita e completa il processo di trasformazione del modello di testo.
 
-5.  In **Esplora**, passare alla cartella che contiene il file TestTemplate.tt.
+5.  Nelle **Windows Explorer**, passare alla cartella che contiene il file TestTemplate.tt.
 
      Questa cartella contiene anche file TestTemplate1.txt.
 
@@ -821,7 +821,7 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa procedura dettagliata, è stato creato un host di trasformazione del modello di testo che supporta la funzionalità della trasformazione di base. È possibile espandere l'host per supportare modelli di testo che chiamano processori di direttiva personalizzati o generati. Per ulteriori informazioni, vedere [procedura dettagliata: connessione di un Host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+In questa procedura dettagliata, è stato creato un host di trasformazione del modello di testo che supporta la funzionalità della trasformazione di base. È possibile espandere l'host per supportare modelli di testo che chiamano processori di direttiva personalizzati o generati. Per altre informazioni, vedere [procedura dettagliata: connessione di un Host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Vedere anche
 
