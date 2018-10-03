@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542602"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243952"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Esaminare stati precedenti di app tramite tornare indietro di IntelliTrace in Visual Studio
 
@@ -105,7 +105,9 @@ L'impatto sulle prestazioni di debug passo a passo generale dipende dall'applica
 ## <a name="known-issues"></a>Problemi noti  
 * Se si utilizza la modalità di eventi e snapshot IntelliTrace nelle versioni di Windows precedenti a Windows 10 Fall Creators Update (RS3) e se la piattaforma di destinazione di debug dell'applicazione è impostata su x86, IntelliTrace non registra snapshot.
 
-    Soluzione alternativa:
+    Soluzioni alternative:
+    * Se si è in Windows 10 Anniversary Update (RS1) e versioni precedenti di versione, 10.0.14393.2273 [installare KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+    * Se si è in Windows 10 Creators Update (RS2) e versioni precedenti di versione, 10.0.15063.1112 [installare KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
     * Installare o eseguire l'aggiornamento a Windows 10 Fall Creators Update (RS3). 
     * In alternativa: 
         1. Installare il componente Set di strumenti VC++ 2015.3 versione 140 per desktop (x86, x64) dal programma di installazione di Visual Studio.

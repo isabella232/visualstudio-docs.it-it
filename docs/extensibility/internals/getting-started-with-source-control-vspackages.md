@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4d5ecf02822ee0e96ffff7a4835c7ef10c06b86
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a98edacd71132e9290cb339f3b3741a0afc25888
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497405"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120436"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Introduzione a controllo del codice sorgente pacchetti VSPackage
-Un VSPackage di controllo del codice sorgente è un'alternativa più avanzata per il plug-in del controllo del codice sorgente. Per altre informazioni sui plug-in controllo codice sorgente, vedere [creare un plug-in del controllo del codice sorgente] (.. /.. / extensibility/internals/creating-a-source-control-plug-in.md. Controllo completo sul modello di controllo di origine, funzionalità e interfaccia utente (UI) consente a un VSPackage di controllo del codice sorgente e integra il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente come un pacchetto VSPackage.  
+Un VSPackage di controllo del codice sorgente è un'alternativa più avanzata per il plug-in del controllo del codice sorgente. Per altre informazioni sui plug-in controllo codice sorgente, vedere [creare plug-in un controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md). Controllo completo sul modello di controllo di origine, funzionalità e interfaccia utente (UI) consente a un VSPackage di controllo del codice sorgente e integra il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente come un pacchetto VSPackage.  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
  [Determinare se implementare un controllo del codice sorgente VSPackage](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)  
