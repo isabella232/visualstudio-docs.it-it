@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: c22ba73b464f91bf3036541304cdf94e8660970d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38811917"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48244117"
 ---
 1. Se si prevede di distribuire le applicazioni con distribuzione Web in Visual Studio, installare la versione più recente di distribuzione Web nel server.
 
