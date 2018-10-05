@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626632"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995963"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Django con visualizzazioni e modelli di pagina
 
@@ -53,7 +53,7 @@ Usando uno dei due metodi, creare un'app denominata "HelloDjangoApp". Il risulta
 | **\_\_init\_\_.py** | File che identifica l'app come pacchetto. |
 | **migrations** | Cartella in cui Django archivia gli script che aggiornano il database per l'allineamento alle modifiche apportate ai modelli. Gli strumenti di migrazione di Django applicano quindi le modifiche necessarie a qualsiasi versione precedente del database in modo che corrisponda ai modelli correnti. Usando le migrazioni, è possibile concentrarsi sui modelli e lasciare a Django la gestione dello schema di database sottostante. Le migrazioni vengono descritte nel passaggio 6. Per il momento, la cartella contiene semplicemente un file *\_\_init\_\_.py*, che indica che la cartella definisce il proprio pacchetto Python. |
 | **templates** | Cartella per i modelli di pagina Django contenente un unico file, *index.html* all'interno di una cartella che corrisponde al nome dell'app. In Visual Studio 2017 15.7 e versioni precedenti, il file è contenuto direttamente in *modelli* e il passaggio 2-4 contiene informazioni su come creare la sottocartella. I modelli sono blocchi di codice HTML in cui le visualizzazioni possono aggiungere informazioni per eseguire il rendering dinamico di una pagina. Le "variabili" del modello di pagina, ad esempio `{{ content }}` in *index.html*, sono segnaposto per i valori dinamici, come descritto più avanti in questo articolo (passaggio 2). In genere le app Django creano uno spazio dei nomi per i rispettivi modelli inserendoli in una sottocartella corrispondente al nome dell'app. |
-| **admin.py** | File Python in cui viene estesa l'interfaccia amministrativa dell'app (passaggio 6), usata per visualizzare e modificare dati in un database. Inizialmente, questo file contiene solo l'istruzione `from django.contrib import admin`. Per impostazione predefinita, Django include un'interfaccia amministrativa standard tramite le voci presenti nel file *settings.py* del progetto Django, che è possibile attivare rimuovendo i commenti dalle voci esistenti in *urls.py*. |
+| **admin.py** | File Python in cui viene estesa l'interfaccia amministrativa dell'app (vedere il passaggio 6) usato per distribuire e modificare i dati in un database. Inizialmente, questo file contiene solo l'istruzione `from django.contrib import admin`. Per impostazione predefinita, Django include un'interfaccia amministrativa standard tramite le voci presenti nel file *settings.py* del progetto Django, che è possibile attivare rimuovendo i commenti dalle voci esistenti in *urls.py*. |
 | **apps.py** | File Python che definisce una classe di configurazione per l'app. Vedere di seguito, dopo questa tabella. |
 | **models.py** | I modelli sono oggetti dati, identificati da funzioni, attraverso i quali le visualizzazioni interagiscono con il database sottostante dell'app (vedere il passaggio 6). Django fornisce il livello di connessione di database in modo che le app non debbano gestire questi dettagli. Il file *models.py* è una posizione predefinita in cui creare i modelli e contiene inizialmente solo l'istruzione `from django.db import models`. |
 | **tests.py** | File Python che contiene la struttura di base degli unit test. |

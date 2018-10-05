@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2c32f63f6272d550604df79186ae7c54cfc3f22e
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282525"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320943"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funzionalità di Visual Studio 2017
 
-L'argomento [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md) offre un'introduzione a Visual Studio. Questo articolo descrive funzionalità che potrebbero essere più appropriate per gli sviluppatori esperti o per chi ha già familiarità con Visual Studio.
+L'articolo [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md) offre un'introduzione a Visual Studio. Questo articolo descrive funzionalità che potrebbero essere più appropriate per gli sviluppatori esperti o per chi ha già familiarità con Visual Studio.
 
 ## <a name="modular-installation"></a>Installazione modulare
 
@@ -100,19 +100,19 @@ Quando l'applicazione è pronta per la distribuzione a utenti o clienti, Visual 
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gestire il codice sorgente e collaborare con altri utenti
 
-È possibile gestire il codice sorgente in repository GIT ospitati da qualsiasi provider, incluso GitHub. In alternativa, è possibile usare [Visual Studio Team Services (VSTS) ](/vsts/index) per gestire il codice insieme ai bug e agli elementi di lavoro per l'intero progetto. Per altre informazioni sulla gestione dei repository GIT in Visual Studio tramite Team Explorer, vedere [Get Started with Git and Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) (Introduzione a GIT e a Team Services (VSTS)). Visual Studio include anche altre funzionalità predefinite di controllo del codice sorgente. Per altre informazioni su tali funzionalità, vedere il post del blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Nuove funzionalità GIT in Visual Studio 2017).
+È possibile gestire il codice sorgente in repository GIT ospitati da qualsiasi provider, incluso GitHub. In alternativa, usare [Azure DevOps Services](/azure/devops/index?view=vsts) per gestire il codice insieme ai bug e agli elementi di lavoro per l'intero progetto. Per altre informazioni sulla gestione dei repository GIT in Visual Studio con Team Explorer, vedere [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) (Introduzione a GIT e Azure Repos). Visual Studio include anche altre funzionalità predefinite di controllo del codice sorgente. Per altre informazioni su tali funzionalità, vedere il post del blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Nuove funzionalità GIT in Visual Studio 2017).
 
-Visual Studio Team Services è un servizio basato sul cloud progettato per ospitare progetti software e consentire la collaborazione in team. Visual Studio Team Services supporta sistemi Git e di controllo del codice sorgente di Team Foundation, nonché metodologie di sviluppo Scrum, CMMI e Agile. Controllo della versione di Team Foundation (TFVC) usa un unico repository del server centralizzato per tenere traccia e gestire le versioni dei file. Le modifiche locali vengono sempre archiviate nel server centrale, in modo che gli altri sviluppatori possano disporre delle modifiche più recenti.
+Azure DevOps Services è un insieme di servizi basati sul cloud per la pianificazione, l'hosting, l'automazione e la distribuzione del software nonché la collaborazione nei team. Azure DevOps Services supporta sia i repository GIT (controllo della versione distribuito), sia il controllo della versione di Team Foundation (controllo della versione centralizzato), nonché le pipeline di compilazione e rilascio continui (CI/CD) del codice archiviato nei sistemi di controllo delle versioni. Azure DevOps Services supporta anche le metodologie di sviluppo Scrum, CMMI e Agile.
 
 Team Foundation Server (TFS) è l'hub di gestione del ciclo di vita delle applicazioni per Visual Studio. Consente a tutte le parti interessate di partecipare al processo di sviluppo usando un'unica soluzione. TFS è utile anche per la gestione di team e progetti eterogenei.
 
-Se si ha un account di Visual Studio Team Services o di Team Foundation Server nella rete, è possibile connettersi tramite la finestra **Team Explorer** in Visual Studio. Da questa finestra è possibile archiviare o estrarre il codice dal controllo del codice sorgente, gestire gli elementi di lavoro, avviare le compilazioni e accedere alle chat team e alle aree di lavoro. È possibile aprire **Team Explorer** dalla casella **Avvio veloce** o dal menu principale tramite **Visualizza** > **Team Explorer** o **Team** > **Gestisci connessioni**.
+Se in rete è presente un'organizzazione di Azure DevOps Services o Team Foundation Server, è possibile connettersi usando la finestra **Team Explorer** in Visual Studio. Da questa finestra è possibile archiviare o estrarre il codice dal controllo del codice sorgente, gestire gli elementi di lavoro, avviare le compilazioni e accedere alle chat team e alle aree di lavoro. È possibile aprire **Team Explorer** dalla casella **Avvio veloce** o dal menu principale tramite **Visualizza** > **Team Explorer** o **Team** > **Gestisci connessioni**.
 
-L'immagine seguente illustra la finestra **Team Explorer** per una soluzione ospitata in Visual Studio Team Services.
+L'immagine seguente illustra la finestra **Team Explorer** per una soluzione ospitata in Azure DevOps Services.
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-È anche possibile automatizzare il processo di compilazione per compilare il codice che gli sviluppatori del team hanno archiviato nel controllo della versione. È possibile ad esempio compilare uno o più progetti di notte o ogni volta che il codice viene controllato. Per altre informazioni, vedere [Build and Release (VSTS and TFS)](/vsts/build-release/index) (Compilazione e rilascio - VSTS e TFS).
+È anche possibile automatizzare il processo di compilazione per compilare il codice che gli sviluppatori del team hanno archiviato nel controllo della versione. È possibile ad esempio compilare uno o più progetti di notte o ogni volta che il codice viene controllato. Per altre informazioni, vedere [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="extend-visual-studio"></a>Estendere Visual Studio
 

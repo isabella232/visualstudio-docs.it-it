@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2017
 description: Informazioni sulle nuove funzionalità di Visual Studio 2017.
 ms.custom: ''
-ms.date: 08/21/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
-ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755509"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384188"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 
@@ -32,14 +32,14 @@ Se si sta valutando l'opportunità di eseguire l'aggiornamento da una versione p
 
 Di seguito è riportato un riepilogo generale delle modifiche apportate dopo la versione precedente, ovvero Visual Studio 2015:
 
-* **[Concetti fondamentali ridefiniti](#redefined-fundamentals)**. Una nuova esperienza di installazione offre la possibilità di completare l'installazione più rapidamente e di installare quello che serve all'occorrenza. Indipendentemente dal fatto che si vogliano caricare soluzioni e progetti di grandi dimensioni o lavorare su alcune cartelle di codice o persino su un singolo file di codice, l’avvio di Visual Studio è più veloce. Visual Studio permette anche di rimanere concentrati sul quadro generale, in particolare per i team che adottano la metodologia DevOps.
-* **[Prestazioni e produttività](#performance-and-productivity)**. Microsoft si è concentrata sulle funzionalità nuove e moderne di sviluppo per dispositivi mobili, cloud e desktop. Ha inoltre rivolto l’attenzione sul miglioramento complessivo dell'acquisizione, delle prestazioni e delle esperienze di produttività generali per gli sviluppatori. Visual Studio si avvia più velocemente, offre tempi di risposta migliori e usa meno memoria rispetto a prima.
+* **[Concetti fondamentali ridefiniti](#redefined-fundamentals)**. Una nuova esperienza di installazione offre la possibilità di completare l'installazione più rapidamente e di installare quello che serve all'occorrenza.
+* **[Prestazioni e produttività](#performance-and-productivity)**. Microsoft si è concentrata sulle funzionalità nuove e moderne di sviluppo per dispositivi mobili, cloud e desktop. E Visual Studio si avvia più velocemente, offre tempi di risposta migliori e usa meno memoria rispetto a prima.
 * **[Sviluppo di app cloud con Azure](#cloud-app-development-with-azure)**. Un gruppo di strumenti Azure incorporati consentono di creare facilmente app per cloud con tecnologia Microsoft Azure. Visual Studio facilita la configurazione, la compilazione, il debug, l'inserimento in pacchetti e la distribuzione di app e servizi in Azure.
-* **[Sviluppo di app Windows](#windows-app-development)**. Usare i modelli UWP in Visual Studio 2017 per creare un unico progetto per tutti i dispositivi Windows 10, ovvero PC, tablet, telefono, Xbox, HoloLens, Surface Hub e altro. Produrre quindi un pacchetto dell'app e inviarlo a Microsoft Store da Visual Studio per mettere l'app a disposizione dei clienti.
-* **[Sviluppo di app per dispositivi mobili](#mobile-app-development)**. Visual Studio 2017 supporta l'innovazione e permette di ottenere risultati rapidamente con Xamarin, che unifica i requisiti per dispositivi mobili multipiattaforma usando un'unica codebase principale e un singolo set di competenze. È possibile passare allo sviluppo per dispositivi mobili avvalendosi dei team, degli investimenti tecnologici e del codice C# esistenti, per offrire esperienze per consumatori in tempi più brevi e con costi minori del previsto. Ogni passaggio del ciclo di vita dei dispositivi mobili può essere velocizzato per realizzare esperienze per consumatori di alto livello o un portfolio di app di produttività per supportare e agevolare la forza lavoro. **Novità nella versione 15.8**: gli sviluppatori di app per dispositivi mobili che usano Hyper-V hanno accesso a un emulatore Android veloce che supporta sempre le API Android più recenti, funziona automaticamente con Google Play Services e supporta tutte le funzionalità dell'emulatore Android, inclusi la fotocamera, la georilevazione e l'avvio rapido.
-* **[Sviluppo multipiattaforma](#cross-platform-development)**. Distribuire facilmente software a qualsiasi piattaforma di destinazione. Estendere i processi DevOps a SQL Server con Redgate Data Tools e automatizza in modo sicuro le distribuzioni dei database da Visual Studio. Oppure, utilizzare .NET Core per scrivere app e librerie in modo che vengano eseguite senza modifiche nei sistemi operativi Windows, Linux e macOS. E **novità nella versione 15.3**: supporto di .NET Core 2.0 SDK affiancati.
-* **[Sviluppo di giochi](#games-development)**. Con Visual Studio Tools per Unity (VSTU) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usarne il potente debugger per individuare e correggere gli errori. La versione più recente di VSTU include la colorazione della sintassi per il linguaggio ShaderLab di Unity, un'ottimizzazione delle visualizzazioni del debugger e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.
-* **[Sviluppo AI](#ai-development)**. Con Visual Studio Tools for AI (**novità della versione 15.5**) è possibile usare le funzionalità di produttività di Visual Studio per promuovere l'innovazione nel settore dell'intelligenza artificiale. È possibile compilare, testare e distribuire soluzioni per l'apprendimento avanzato o di intelligenza artificiale che si integrano perfettamente con Azure Machine Learning per offrire funzionalità di sperimentazione avanzate, ad esempio l'invio di processi di preparazione dei dati e training di modelli in modo trasparente a destinazioni di calcolo diverse. Visual Studio Tools for AI supporta inoltre metriche personalizzate e la registrazione della cronologia di esecuzione, consentendo la riproducibilità e il controllo di operazioni di data science.
+* **[Sviluppo di app Windows](#windows-app-development)**. Usare i modelli UWP in Visual Studio 2017 per creare un unico progetto per tutti i dispositivi Windows 10, ovvero PC, tablet, telefono, Xbox, HoloLens, Surface Hub e altro.
+* **[Sviluppo di app per dispositivi mobili](#mobile-app-development)**. Xamarin consente di promuovere l'innovazione e di ottenere rapidamente risultati, inoltre unifica i requisiti per i dispositivi mobili multipiattaforma usando un'unica codebase principale e un singolo set di competenze.
+* **[Sviluppo multipiattaforma](#cross-platform-development)**. Distribuire facilmente software a qualsiasi piattaforma di destinazione. Estendere i processi DevOps a SQL Server con Redgate Data Tools e automatizza in modo sicuro le distribuzioni dei database da Visual Studio. Oppure, utilizzare .NET Core per scrivere app e librerie in modo che vengano eseguite senza modifiche nei sistemi operativi Windows, Linux e macOS.
+* **[Sviluppo di giochi](#games-development)**. Con Visual Studio Tools per Unity (VSTU) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usarne il potente debugger per individuare e correggere gli errori.
+* **[Sviluppo AI](#ai-development)**. Con Visual Studio Tools for AI è possibile usare le funzionalità di produttività di Visual Studio per promuovere l'innovazione nel settore dell'intelligenza artificiale. Compilare, testare e distribuire soluzioni per l'apprendimento avanzato o l'intelligenza artificiale perfettamente integrate con Azure Machine Learning per offrire funzionalità di sperimentazione avanzate.
 
 > [!NOTE]
 > Per un elenco completo delle nuove funzionalità in Visual Studio 2017, vedere le [Note sulla versione corrente](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). Per scoprire di più sulle funzionalità future offerte, vedere le [Note sulla versione di anteprima](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
@@ -106,11 +106,11 @@ Gestione roaming estensioni tiene traccia di tutte le estensioni installate, ma 
 
 Quando si usa Gestione roaming estensioni sono disponibili tre tipi di icona nell'elenco:
 
-* ![Icona In roaming](../ide/media/vs2017ide-roamedicon.png) ***In roaming***: un'estensione che fa parte dell'elenco di roaming, ma non è installata nel computer.
+* ![Icona In roaming](../ide/media/vs2017ide-roamedicon.png)**_In roaming_**: un'estensione che fa parte dell'elenco di roaming, ma non è installata nel computer.
   Per eseguire l'installazione usare il pulsante **Download**.
-* ![Icona In roaming e installata](../ide/media/vs2017ide-roamedinstalledicon.png) ***In roaming e installata***: tutte le estensioni incluse nell'elenco di roaming e installate nell'ambiente di sviluppo.
+* ![Icona In roaming e installata](../ide/media/vs2017ide-roamedinstalledicon.png) **_In roaming e installata_**: tutte le estensioni incluse nell'elenco di roaming e installate nell'ambiente di sviluppo.
   Se si decide di evitare il roaming, è possibile rimuovere le estensioni usando il pulsante **Arresta roaming**.
-* ![Icona Installata](../ide/media/vs2017ide-installedicon.png) ***Installata***: tutte le estensioni installate nell'ambiente, ma non incluse nell'elenco di roaming.
+* ![Icona Installata](../ide/media/vs2017ide-installedicon.png) **_Installata_**: tutte le estensioni installate nell'ambiente, ma non incluse nell'elenco di roaming.
   Per aggiungere le estensioni all'elenco di roaming, usare il pulsante **Avvia roaming**.
 
 Qualsiasi estensione scaricata quando si è connessi viene aggiunta all'elenco come **Roamed & Installed** (In roaming e installata). L'estensione diventa quindi parte dell'elenco di roaming, rendendola così accessibile da qualsiasi computer.
@@ -303,7 +303,7 @@ Un'altra **novità della versione 15.8**: sono stati apportati significativi mig
 
 ![Editor con visualizzazione suddivisa per la finestra di progettazione di Xamarin.Android](../ide/media/android-designer-split-view.png)
 
-Per altre informazioni, vedere [Accelerazione hardware per le prestazioni dell'emulatore](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview)
+Per altre informazioni, vedere [Accelerazione hardware per le prestazioni dell'emulatore](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 

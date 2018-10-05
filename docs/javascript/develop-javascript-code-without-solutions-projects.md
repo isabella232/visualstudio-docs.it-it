@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924741"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774603"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Sviluppare il codice JavaScript e TypeScript in Visual Studio senza soluzioni o progetti
 
@@ -58,3 +58,27 @@ Se la cartella contiene un file *tsconfig.json*, è possibile fare clic con il p
 
 > [!NOTE]
 > È possibile trovare altre informazioni su *tsconfig.json* nella [pagina del manuale di TypeScript relativa a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## <a name="unit-tests"></a>Unit test
+È possibile abilitare l'integrazione degli unit test in Visual Studio specificando una radice di test nel file *package.json*:
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+Il test runner consente di enumerare i pacchetti installati in locale per determinare i framework di test da usare.
+Se non viene riconosciuto nessun framework supportato, il test runner usa *ExportRunner* per impostazione predefinita. Gli altri framework supportati sono i seguenti:
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Tape ([github.com/substack/tape](https://github.com/substack/tape))
+
+Dopo aver aperto Esplora test (scegliere **Test** > **Finestre** > **Esplora test**), Visual Studio rileva e visualizza i test.
+
+> [!NOTE]
+> Se l'applicazione è scritta in TypeScript, il test runner enumererà solo i file JavaScript che sono da compilare per primi.

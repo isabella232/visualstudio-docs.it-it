@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573180"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668815"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guida per principianti al campionamento CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare i dati di **campionamento**.
@@ -41,7 +41,7 @@ ms.locfileid: "34573180"
 ## <a name="create-and-run-a-performance-session"></a>Creare e attivare una sessione di prestazioni  
  Per ottenere i dati che si devono analizzare, è necessario innanzitutto creare una sessione di prestazioni e quindi eseguire la sessione. La **Creazione guidata sessione di prestazioni** consente di eseguire entrambe le operazioni.  
   
- Se non si profila un'app desktop di Windows o un'app ASP.NET, è necessario usare uno degli altri strumenti di profilatura. Vedere [Presentazione degli strumenti di profilatura](../profiling/profiling-tools.md).  
+ Se non si profila un'app desktop di Windows o un'app ASP.NET, è necessario usare uno degli altri strumenti di profilatura. Vedere [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Per creare e attivare una sessione di prestazioni  
   
@@ -129,4 +129,4 @@ ms.locfileid: "34573180"
  [Introduzione](../profiling/getting-started-with-performance-tools.md)   
  [Panoramiche](../profiling/overviews-performance-tools.md)  
  [Profilatura in Visual Studio](../profiling/index.md)  
- [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
+ [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

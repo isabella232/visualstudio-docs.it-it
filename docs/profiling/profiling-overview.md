@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7905175493d2214db86fca288cd72ee1dcbabc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d3ec82822b2004cabb91f8c7677409acce69c199
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668923"
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Panoramica della profilatura in Visual Studio
 
@@ -25,7 +26,7 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* [Presentazione delle funzioni di profilatura](../profiling/profiling-feature-tour.md) per apprendere i diversi modi per misurare le prestazioni dell'applicazione.
+* [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md) per apprendere i diversi modi per misurare le prestazioni dell'applicazione.
 
 * [Analizzare l'uso della CPU](../profiling/cpu-usage.md) per informazioni dettagliate sullo strumento Utilizzo CPU.
 

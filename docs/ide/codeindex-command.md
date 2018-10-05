@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176372"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283489"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -27,7 +27,7 @@ Usare il comando **CodeIndex** per gestire l'indicizzazione del codice in Team F
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
-Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators** . Vedere [Permissions and groups defined for Team Services and TFS](/vsts/organizations/security/permissions?view=vsts) (Autorizzazioni e gruppi definiti per Team Services e TFS).
+Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators** . Vedere [Permissions and groups in Azure DevOps and TFS](/azure/devops/organizations/security/permissions?view=vsts) (Autorizzazioni e gruppi in Azure DevOps e TFS).
 
 > [!NOTE]
 > Anche se si accede con le credenziali amministrative, per eseguire questo comando, è necessario aprire una finestra del prompt dei comandi con privilegi elevati. È inoltre necessario eseguire questo comando dal livello applicazione di Team Foundation.
@@ -42,8 +42,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Argomento**|**Descrizione**|
 |------------------|---------------------|
-|`CollectionName`|Specifica il nome della raccolta di progetti team. Se il nome contiene spazi, racchiuderlo tra virgolette, ad esempio, "Sito Web di Fabrikam".|
-|`CollectionId`|Specifica il numero di identificazione della raccolta di progetti team.|
+|`CollectionName`|Specifica il nome della raccolta di progetti. Se il nome contiene spazi, racchiuderlo tra virgolette, ad esempio, "Sito Web di Fabrikam".|
+|`CollectionId`|Specifica il numero di identificazione della raccolta di progetti.|
 |`ServerPath`|Specifica il percorso di un file di codice.|
 
 |**Opzione**|**Descrizione**|
@@ -56,8 +56,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/destroyCodeIndex [/noPrompt]**|Eliminare l'indice del codice e rimuovere tutti i dati indicizzati. Non è richiesta conferma se si usa l'opzione **/noPrompt**.|
 |**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Controllare la quantità di dati temporanei creati da CodeLens durante l'elaborazione degli insiemi di modifiche. Il limite predefinito è 2 GB.<br /><br /> -   **view**: mostra il limite di dimensioni attuale.<br />-   `SizeInGBs`: modifica il limite di dimensioni.<br />-   **disable**: rimuove il limite di dimensioni.<br /><br /> Questo limite viene verificato prima dell'elaborazione di un nuovo insieme di modifiche con CodeLens. Se i dati temporanei superano questo limite, CodeLens sospende l'elaborazione degli insiemi di modifiche precedenti, non di quelli nuovi. CodeLens riavvia l'elaborazione dopo che i dati sono stati puliti e sono tornati sotto il limite. La pulizia viene eseguita automaticamente una volta al giorno. Questo implica che i dati temporanei potrebbero superare questo limite prima dell'esecuzione del processo di pulizia.|
 |**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Controllare la lunghezza dell'intervallo di indicizzazione della cronologia delle modifiche. Ciò incide sulla quantità di cronologia che CodeLens mostra all'utente. Il limite predefinito è di 12 mesi. Questo significa che CodeLens mostra la cronologia delle modifiche solo degli ultimi 12 mesi.<br /><br /> -   **view**: mostra il numero di mesi corrente.<br />-   **all**: indicizza tutta la cronologia delle modifiche.<br />-   `NumberOfMonths`: modifica il numero di mesi usato per indicizzare la cronologia delle modifiche.|
-|**/collectionName:** `CollectionName`|Specifica il nome dell'insieme di progetti team sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionId**.|
-|**/collectionId:** `CollectionId`|Specifica il numero di identificazione dell'insieme di progetti team sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionName**.|
+|**/collectionName:** `CollectionName`|Specifica il nome dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionId**.|
+|**/collectionId:** `CollectionId`|Specifica il numero di identificazione dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionName**.|
 
 ## <a name="examples"></a>Esempi
 

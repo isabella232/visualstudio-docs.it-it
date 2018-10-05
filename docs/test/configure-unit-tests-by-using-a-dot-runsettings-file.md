@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901485"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280285"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare unit test usando un file con estensione *runsettings*
 
@@ -24,7 +24,7 @@ I file di impostazioni esecuzione test sono facoltativi. Se non è richiesta una
 
 ## <a name="specify-a-run-settings-file"></a>Specificare un file di impostazioni esecuzione test
 
-I file di impostazioni esecuzione test possono essere usati per configurare i test eseguiti dalla [riga di comando](vstest-console-options.md), nell'IDE o in un [del flusso di lavoro di compilazione](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) usando Visual Studio Team Services (VSTS) o Team Foundation Server (TFS).
+I file di impostazioni esecuzione test possono essere usati per configurare i test eseguiti dalla [riga di comando](vstest-console-options.md), nell'IDE o in un [flusso di lavoro di compilazione](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) usando Azure Test Plans o Team Foundation Server (TFS).
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>Specificare un file di impostazioni esecuzione test nell'IDE
 
@@ -256,4 +256,4 @@ Queste impostazioni sono specifiche dell'adattatore di test che esegue i metodi 
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio test task (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts) (Attività Visual Studio Test)
+- [Attività di test di Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

@@ -1,7 +1,7 @@
 ---
 title: Ordine di compilazione delle destinazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178956"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774945"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 Le destinazioni devono venire ordinate se l'input per una destinazione dipende dall'output di un'altra destinazione. È possibile usare questi attributi per specificare l'ordine in cui vengono eseguite le destinazioni:  
@@ -114,7 +114,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
     Le destinazioni che elencano la destinazione condizionale in `BeforeTargets` o `AfterTargets` vengono ancora eseguite nell'ordine prescritto
   
-4.  Prima che venga eseguita una destinazione, ne vengono eseguite le destinazioni `DependsOnTargets`.  
+4.  Prima che una destinazione venga eseguita o ignorata, se l'attributo `Condition` è assente o non restituisce `false`, vengono eseguite le relative destinazioni `DependsOnTargets`.  
   
 5.  Prima che una destinazione venga eseguita o ignorata, vengono eseguite le destinazioni che la elencano in un attributo `BeforeTargets`.  
   

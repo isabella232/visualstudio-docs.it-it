@@ -9,22 +9,25 @@ description: Informazioni sulle modalità di acquisto e di gestione delle sottos
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a455e645629266be28e50718ae5fffde309b3dd9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283377"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282287"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 
-I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti.
+I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti.
 
 [Confrontare le opzioni di sottoscrizione cloud](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>Prerequisiti
+
 È prima di tutto necessario configurare il tenant del cliente nel Centro per i partner e creare una sottoscrizione di Azure per questo tenant.
-[Altre informazioni](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
+
+[Altre informazioni](/azure/devops/organizations/billing/csp/set-up-csp-customer)
+
 
 ## <a name="how-to-buy"></a>Modalità di acquisto
 
@@ -79,18 +82,21 @@ Di seguito viene illustrato come interpretare le informazioni disponibili in que
 
 Offriamo uno sconto del 5% per la sesta unità acquistata (per un determinato cliente) mensilmente di ogni sottoscrizione di Visual Studio. Questo è il motivo per cui sono visualizzate due righe per ogni opzione di sottoscrizione. Una riga mostra un valore minimo pari a 0, da interpretare come prezzo di base per le unità da 1 a 5. L'altra riga mostra un valore minimo pari a 5, ovvero il prezzo scontato del % 5 che si applica dalle 6 unità in poi.
 
-
 ## <a name="frequently-asked-questions"></a>Domande frequenti
+
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>D: come vengono elaborati gli addebiti per le sottoscrizioni cloud **mensili**?
+
 R: al momento del primo acquisto, viene fatturata una quantità ripartita in base ai giorni rimanenti del mese corrente. Ad esempio, se si acquistano 10 sottoscrizioni cloud mensili di Visual Studio Professional il 15 aprile, vengono addebitate 5 unità perché rimangono 15 giorni del mese di 30 giorni, ovvero il 50%, quindi l'addebito delle unità viene ripartito al 50%.
 Il primo del mese di maggio e per ogni mese successivo fino all'annullamento, verranno fatturate tutte e 10 le unità.
 
 Quando si aumenta la quantità a pagamento in un secondo momento, anche le unità aggiunte verranno ripartite in base ai giorni rimanenti del mese corrente. Pertanto, se si acquista un'altra sottoscrizione cloud mensile di Visual Studio Professional il 10 maggio, verranno fatturate approssimativamente 0,677 unità (21 giorni rimanenti nel mese di maggio di 31 giorni).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>D: come vengono elaborati gli addebiti per le sottoscrizioni cloud **annuali**?
+
 R: a ogni acquisto viene fatturata immediatamente l'intera quantità acquistata. Gli addebiti non vengono distribuiti nell'anno e non è prevista alcuna ripartizione proporzionale. Se si acquistano sottoscrizioni cloud annuali in momenti diversi nell'anno, ci saranno sottoscrizioni con rinnovo in mesi diversi. Non viene allineata la data di scadenza di tutte le sottoscrizioni cloud annuali di un cliente come avviene comunemente con i contratti multilicenza Microsoft.
 
-### <a name="q-how-do-cancelations-work"></a>D: come funzionano gli annullamenti?
+### <a name="q-how-do-cancellations-work"></a>D: come funzionano gli annullamenti?
+
 R: quando si annulla una sottoscrizione cloud di Visual Studio, si annulla il rinnovo automatico. La sottoscrizione continua fino alla relativa data di rinnovo normale e poi semplicemente scade.
 Alla scadenza, il sottoscrittore di Visual Studio non può più usare Visual Studio o qualsiasi altro vantaggio dalla sottoscrizione.
 

@@ -1,7 +1,7 @@
 ---
 title: Modifica del codice Python
 description: Per la modifica di codice Python in Visual Studio sono disponibili IntelliSense, frammenti di codice e funzionalità di navigazione, oltre a formattazione, lint e refactoring.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626869"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774765"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
-Gli sviluppatori passano la maggior parte del tempo nell'editor di codice, quindi il [supporto per Python in Visual Studio](installing-python-support-in-visual-studio.md) offre funzionalità che consentono di migliorare la produttività. Le funzionalità includono evidenziazione della sintassi di IntelliSense, completamento automatico, supporto per la firma digitale, override dei metodi, ricerca e navigazione.
+Poiché si passa molto tempo nell'editor di codice, il [supporto per Python in Visual Studio](installing-python-support-in-visual-studio.md) offre funzionalità che consentono di migliorare la produttività. Le funzionalità includono evidenziazione della sintassi di IntelliSense, completamento automatico, supporto per la firma digitale, override dei metodi, ricerca e navigazione.
 
 L'editor è anche integrato con la finestra **interattiva** in Visual Studio, semplificando così lo scambio di codice tra i due prodotti. Vedere [Passaggio 3: Usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usare la finestra interattiva - Comando per inviare codice alla finestra interattiva](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) per informazioni dettagliate.
 

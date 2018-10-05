@@ -9,12 +9,12 @@ description: Informazioni su come attivare la sottoscrizione di WhiteSource Bolt
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289374"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279167"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt nelle sottoscrizioni di Visual Studio
 
@@ -38,13 +38,15 @@ ms.locfileid: "43289374"
 
 4.  Nella sezione **Activate your account** (Attiva l'account) della pagina, l'utente viene guidato attraverso quattro passaggi:
 
-    - [Installare](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) l'estensione WhiteSource Bolt da Microsoft Visual Studio Marketplace. Se non si è autorizzati a installare le estensioni, vedere [Install free extensions for VSTS](/vsts/marketplace/install-vsts-extension?view=vsts) (Installare le estensioni gratuite per VSTS).
+    - [Installare](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) l'estensione WhiteSource Bolt da Microsoft Visual Studio Marketplace. Se non si è autorizzati a installare le estensioni, vedere [Install free extensions for Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts) (Installare le estensioni gratuite per Azure DevOps Services).
 
-    Fare clic sul pulsante **Install** (Installa) verde se si usa VSTS o sul pulsante **Download** per Team Foundation Server.  Per questo esempio si userà Visual Studio Team Services.
+
+    Fare clic sul pulsante **Install** (Installa) verde se si usa Azure DevOps Services o sul pulsante **Download** per Team Foundation Server.  In questo esempio si userà Azure DevOps Services.
     > [!div class="mx-imgBorder"]
     > ![Installazione dell'estensione del vantaggio WhiteSource](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Selezionare quindi l'account VSTS che si vuole usare e fare clic su **Confirm** (Conferma).  Se non è ancora stata eseguita la configurazione di VSTS, visitare la pagina [Vantaggi](https://my.visualstudio.com/benefits) e attivare il vantaggio VSTS.
+    - Selezionare quindi l'organizzazione di Azure DevOps Services che si vuole usare e fare clic su **Confirm** (Conferma).  Se Azure DevOps Services non è stato ancora configurato, visitare la pagina [Benefits](https://my.visualstudio.com/benefits) (Vantaggi) e attivare il vantaggio Azure DevOps Services.
+
     > [!div class="mx-imgBorder"]
     > ![Conferma dell'account del vantaggio WhiteSource](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
@@ -52,7 +54,7 @@ ms.locfileid: "43289374"
     > [!div class="mx-imgBorder"]
     > ![Installazione del vantaggio WhiteSource completata](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Aprire il dashboard del progetto di Visual Studio Team Services (VSTS), fare clic sul menu **Compilazione e versione** e scegliere **WhiteSource Bolt**.
+5.  Aprire il dashboard del progetto Azure DevOps Services, fare clic sul menu **Azure Pipelines** e scegliere **WhiteSource Bolt**.
     > [!div class="mx-imgBorder"]
     > ![Aggiunta dell'estensione del vantaggio WhiteSource](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
@@ -90,4 +92,4 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 
 -  Serve aiuto con WhiteSource Bolt?  Chat con un rappresentante WhiteSource Bolt in tempo reale all'indirizzo https://www.whitesourcesoftware.com/vse_whitesource_bolt/
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

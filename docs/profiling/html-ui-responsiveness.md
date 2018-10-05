@@ -17,16 +17,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668606"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.  
   
- Questo profiler può aiutare a isolare problemi come quelli associati alla velocità di risposta dell'interfaccia utente o agli effetti collaterali della piattaforma, che si presentano in genere con questi sintomi:  
+ Questo profiler può aiutarti a isolare problemi come quelli associati alla velocità di risposta dell'interfaccia utente o agli effetti collaterali della piattaforma, che si presentano in genere con questi sintomi:  
   
 -   Mancanza di velocità di risposta dell'interfaccia utente. La risposta dell'app può essere lenta se il thread UI viene bloccato. Le operazioni che potrebbero bloccare il thread UI includono codice JavaScript sincrono eccessivo, layout o operazioni di calcolo CSS eccessive, richieste XHR sincrone, operazioni di Garbage Collection, tempi di disegno eccessivi o codice JavaScript che richiede un uso intensivo del processore.  
   
@@ -34,14 +35,14 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
 -   Gli aggiornamenti visivi che sono meno frequenti del previsto. Ciò si verifica se il thread UI è troppo occupato a mantenere una frequenza dei fotogrammi uniforme. Ad esempio, se il thread UI è occupato, i fotogrammi potrebbero essere rimossi. Il lavoro di alcuni thread non UI, ad esempio le richieste di rete, la decodifica delle immagini e i disegni, può anche limitare la frequenza degli aggiornamenti visivi. (Non tutti i disegni vengono eseguiti nel thread UI).  
   
-##  <a name="RunningProfiler"></a> Eseguire lo strumento della velocità di risposta dell'interfaccia HTML  
+## <a name="run-the-html-ui-responsiveness-tool"></a>Eseguire lo strumento Velocità di risposta interfaccia utente HTML  
  In presenza di un'app UWP funzionante aperta in Visual Studio, è possibile usare lo strumento Velocità di risposta interfaccia utente HTML.  
   
 1.  Se si esegue l'app da Visual Studio, nell'elenco **Avvia debug** sulla barra degli strumenti **Standard** scegliere una destinazione di distribuzione come **Computer locale** o **Dispositivo**.  
   
 2.  Scegliere **Profiler prestazioni** dal menu **Debug**.  
   
-     Se si vuole modificare la destinazione di analisi del profiler, scegliere **Modifica destinazione**.  
+     Se si vuole modificare la destinazione di analisi del profiler, scegliere**Modifica destinazione**.  
   
      ![Cambia destinazione analisi](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
@@ -67,7 +68,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
 6.  Per interrompere la profilatura dell'app e visualizzare i dati raccolti dal profiler, scegli **Arresta raccolta**.  
   
-##  <a name="IsolateAnIssue"></a> Isolare un problema  
+## <a name="isolate-an-issue"></a>Isolare un problema  
  Nella seguente sezione vengono descritti i suggerimenti per isolare i problemi di prestazioni. Per una spiegazione dettagliata della procedura di identificazione e risoluzione dei problemi di prestazioni mediante un'app di esempio per la verifica delle prestazioni, vedere [Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Isolare un problema di risposta dell'interfaccia utente  
@@ -75,11 +76,11 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
 1.  Apri l'app in Visual Studio.  
   
-2.  Esegui i test dell'app per i problemi di velocità di risposta dell'interfaccia utente. Premi CTRL+F5 per avviare l'app senza debug.  
+2.  Esegui i test dell'app per i problemi di velocità di risposta dell'interfaccia utente. Premere **CTRL**+**F5** per avviare l'app senza eseguire il debug.  
   
      Se rilevi un problema, continua ad eseguire i test per tentare di restringere l'intervallo di tempo in cui il problema si verifica o per tentare di identificare i trigger che causano il comportamento.  
   
-3.  Passa a Visual Studio (ALT+TAB) e arresta l'app (MAIUSC+F5).  
+3.  Passare a Visual Studio (premere **ALT**+**TAB**) e arrestare l'app (**MAIUSC**+**F5**).  
   
 4.  Facoltativamente, puoi aggiungere contrassegni utente al codice usando [Contrassegnare il codice per l'analisi](#ProfileMark).  
   
@@ -118,7 +119,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
     -   Pagine o risorse URL caricate dall'app, ad esempio valutazioni di script per eventi di analisi HTML. Viene fornito il nome file o la risorsa.  
   
-    -   Altri eventi specificati in [Profiler event reference](#ProfilerEvents).  
+    -   Altri eventi specificati in [Profiler event reference](#profiler-event-reference).  
   
     > [!TIP]
     >  La maggior parte delle informazioni utili del profiler viene visualizzato nel grafico dei dettagli della sequenza temporale.  
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![Evento Misura utente nella visualizzazione dei dettagli della sequenza temporale](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> Analizzare i dati  
+## <a name="analyze-data"></a>Analizzare i dati  
  Nelle sezioni seguenti vengono fornite le informazioni per interpretare i dati visualizzati nel profiler.  
   
 ###  <a name="Ruler"></a> Visualizzare la sequenza temporale della sessione di diagnostica  
@@ -187,7 +188,7 @@ if (performance.mark && performance.measure) {
 -   Un evento di navigazione, che si verifica quando passi a una pagina diversa. Una descrizione comando per l'evento mostra l'URL della pagina di destinazione.  
   
 ###  <a name="CPUUtilization"></a> Visualizzare l'utilizzo della CPU  
- Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering**e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#ProfilerEvents) più avanti in questo argomento.  
+ Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering**e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#profiler-event-reference) più avanti in questo argomento.  
   
  Il grafico dell'utilizzo della CPU mostra la quantità di tempo trascorso in tutti i thread dell'app, combinando i valori di utilizzo per una o più CPU in un singolo valore percentuale. Il valore di utilizzo della CPU può superare il 100% quando sono in uso più CPU.  
   
@@ -247,7 +248,7 @@ if (performance.mark && performance.measure) {
   
  Se selezioni una parte della sequenza temporale per il grafico di utilizzo della CPU e della velocità effettiva visuale (FPS), il grafico dei dettagli della cronologia mostra informazioni dettagliate per il periodo di tempo selezionato.  
   
- Gli eventi nel grafico dei dettagli della cronologia sono contraddistinti dal colore per rappresentare le stesse categorie di lavoro che compaiono nel grafico di utilizzo della CPU. Per ulteriori informazioni sulle categorie di eventi e sugli eventi specifici, vedi [Profiler event reference](#ProfilerEvents) in questo argomento.  
+ Gli eventi nel grafico dei dettagli della cronologia sono contraddistinti dal colore per rappresentare le stesse categorie di lavoro che compaiono nel grafico di utilizzo della CPU. Per ulteriori informazioni sulle categorie di eventi e sugli eventi specifici, vedi [Profiler event reference](#profiler-event-reference) in questo argomento.  
   
  Usa il grafico dei dettagli della cronologia per:  
   
@@ -300,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![Eventi della sequenza temporale raggruppati per frame](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> Salvare una sessione di diagnostica  
+## <a name="save-a-diagnostic-session"></a>Salvare una sessione di diagnostica  
  In Visual Studio puoi salvare una sessione di diagnostica quando chiudi la scheda associata alla sessione. Le sessioni salvate possono essere riaperte in un momento successivo.  
   
-##  <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a>Profiler event reference  
  Gli eventi del profiler sono suddivisi in categorie e contraddistinti dal colore nel profiler della velocità di risposta dell'interfaccia utente. Ecco le categorie di eventi:  
   
 -   **Attendere.** Indica il tempo impiegato per il recupero delle risorse dell'app e l'analisi di HTML e CSS al primo caricamento dell'app. Può includere le richieste di rete.  
@@ -348,7 +349,7 @@ if (performance.mark && performance.measure) {
 |Frame|N/D|A causa delle modifiche visive apportate a DOM, tutte le parti interessate della pagina sono state ridisegnate. Evento generato da strumenti e usato per il raggruppamento.|  
 |Misura utente|N/D|Uno scenario specifico dell'app è stato misurato tramite il metodo `performance.measure` . Evento generato da strumenti e usato per l'analisi di codice.|  
   
-##  <a name="Tips"></a> Informazioni aggiuntive  
+## <a name="additional-information"></a>Informazioni aggiuntive  
   
 -   Guardare [il video](http://channel9.msdn.com/Events/Build/2013/3-316) della conferenza Build 2013 sul profiler della velocità di risposta dell'interfaccia utente.  
   
@@ -357,4 +358,4 @@ if (performance.mark && performance.measure) {
 -   Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Profiling Tools](../profiling/profiling-tools.md) (Strumenti di profilatura)
+ [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

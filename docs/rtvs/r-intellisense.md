@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5209cda81ab42f1beba8cd3afaca3aa38624c82c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a9efdae5623c00abe4626d1bbb21af4a790fa487
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666865"
 ---
 # <a name="intellisense"></a>IntelliSense
 
-Visual Studio IntelliSense visualizza informazioni sulle funzioni che è possibile chiamare, sui membri di oggetti, sugli argomenti della funzione e sui [frammenti di codice](code-snippets-for-r.md) direttamente durante la scrittura del codice. Visualizza anche i possibili completamenti durante la digitazione e completa quando si preme TAB o INVIO (vedere le [opzioni dell'editor](editing-r-code-in-visual-studio.md#editor-options) nella scheda **Avanzate**). Intellisense è disponibile sia nell'editor che nella[ finestra interattiva](interactive-repl-for-r-in-visual-studio.md).
+Visual Studio IntelliSense visualizza informazioni sulle funzioni che è possibile chiamare, sui membri di oggetti, sugli argomenti della funzione e sui [frammenti di codice](code-snippets-for-r.md) direttamente durante la scrittura del codice. Visualizza anche i possibili completamenti durante la digitazione e completa quando si preme **TAB** o **INVIO** (vedere le [opzioni dell'editor](editing-r-code-in-visual-studio.md#editor-options) nella scheda **Avanzate**). Intellisense è disponibile sia nell'editor che nella[ finestra interattiva](interactive-repl-for-r-in-visual-studio.md).
 
 ![Visualizzazione di una firma della funzione di IntelliSense](media/intellisense-function-signature.png)
 
@@ -26,22 +27,22 @@ Durante la digitazione di una funzione o di un'altra istruzione, IntelliSense of
 
 ![Menu di completamento automatico di IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Premendo TAB (o INVIO o BARRA SPAZIATRICE a seconda delle opzioni impostate) è possibile inserire l'elemento selezionato nell'elenco a discesa. È possibile modificare la selezione con i tasti di direzione.
+Premendo **TAB** (o **INVIO** o **BARRA SPAZIATRICE** a seconda delle opzioni impostate) è possibile inserire l'elemento selezionato nell'elenco a discesa. È possibile modificare la selezione con i tasti di direzione.
 
 IntelliSense offre anche suggerimenti per i membri di oggetti R:
 
 ![Suggerimenti di IntelliSense per i membri di un oggetto](media/intellisense-auto-complete-r-objects.png)
 
-Se si preme ESC, l'intero menu scompare. È possibile ripristinarlo premendo CTRL+BARRA SPAZIATRICE.
+Se si preme **ESC**, il menu viene chiuso. È possibile ripristinarlo premendo **CTRL**+**BARRA SPAZIATRICE**.
 
 Se si digita il segno di `(` aperta per una chiamata di funzione viene inserito il segno di `)` chiusa e viene ripristinato il supporto per la firma come illustrato in precedenza:
 
 ![Supporto per la firma per una funzione di IntelliSense](media/intellisense-function-signature.png)
 
-Premere nuovamente ESC per chiudere la finestra popup. È possibile ripristinarla per le firme della funzione premendo CTRL+MAIUSC+BARRA SPAZIATRICE.
+Premere **ESC** per chiudere la finestra popup. È possibile ripristinarla per le firme della funzione premendo **CTRL**+**MAIUSC**+**BARRA SPAZIATRICE**.
 
 > [!Tip]
-> Se la guida del parametro nasconde il testo sottostante, premere e tenere premuto il tasto CTRL per rendere semitrasparente il testo della guida.
+> Se la guida del parametro nasconde il testo sottostante, tenere premuto **CTRL** per rendere semitrasparente il testo della guida.
 
 ## <a name="intellisense-for-user-defined-functions-and-variables"></a>IntelliSense per variabili e funzioni definite dall'utente
 

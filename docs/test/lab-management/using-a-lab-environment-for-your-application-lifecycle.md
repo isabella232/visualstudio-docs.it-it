@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844303"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321177"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -40,9 +40,9 @@ Ecco alcuni esempi di topologie comuni di ambienti lab:
 |---|---|
 |  ![icona della telecamera per un video](../../install/media/video-icon.png)  |    [Guardare un video](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sulla gestione degli ambienti lab per l'esecuzione di test. |
 
-## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Usare il cloud con Compilazione e versione di Team Services o Team Foundation Server
+## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Usare il cloud con Compilazione e versione di Azure Pipelines o Team Foundation Server
 
-È possibile eseguire test automatizzati e automatizzare le operazioni di compilazione/distribuzione/test tramite le funzionalità [Compilazione e versione](/vsts/build-release/) disponibili in Team Foundation Server (TFS) e Visual Studio Team Services. Ecco alcuni dei vantaggi che offre:
+È possibile eseguire test automatizzati e automatizzare le operazioni di compilazione, distribuzione e test usando le funzionalità di [compilazione e versione](/azure/devops/pipelines/index?view=vsts) disponibili in Team Foundation Server (TFS) e Azure Test Plans. Ecco alcuni dei vantaggi che offre:
 
 * Non è necessario alcun controller di compilazione o di test.
 * L'agente di test viene installato tramite un'attività compresa nella compilazione o nella versione.
@@ -85,12 +85,12 @@ Con Visual Studio Lab Management è possibile creare due tipi di ambiente lab: *
 
 - **Modelli di macchina virtuale:** un modello di macchina virtuale è una macchina virtuale il cui nome e altri identificatori sono stati rimossi. Quando un modello di macchina virtuale viene distribuito in un ambiente SCVMM, Microsoft Test Manager genera nuovi identificatori. Ciò consente di distribuire più copie di una macchina virtuale nello stesso ambiente o in più ambienti e quindi eseguire le macchine virtuali contemporaneamente.
 
-- **Macchine virtuali archiviate:** una macchina virtuale archiviata nella libreria del progetto team e che include identificatori univoci.
+- **Macchine virtuali archiviate:** una macchina virtuale archiviata nella libreria del progetto che include identificatori univoci.
 
 > [!NOTE]
 > Lab Management non supporta SCVMM 2016.
 
-Per informazioni su SCVMM, vedere [Virtual Machine Manager](/vsts/build-release/apps/cd/scvmm/configure-scvmm).
+Per informazioni su SCVMM, vedere [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
 
 Gli ambienti standard e gli ambienti SCVMM supportano molte delle stesse funzionalità. Esistono tuttavia alcune importanti differenze da considerare. Nella tabella seguente vengono confrontate le funzionalità disponibili per gli ambienti standard e gli ambienti SCVMM.
 
@@ -119,9 +119,9 @@ Di seguito sono riportati alcuni concetti aggiuntivi che è necessario conoscere
 |Termine|Descrizione|
 |----------|-----------------|
 |Centro Lab|L'area di Microsoft Test Manager in cui creare e gestire ambienti lab.|
-|Lab del progetto team|La raccolta di ambienti lab che sono stati configurati in modo da connettersi a essi ed eseguire le macchine virtuali.|
-|Libreria del progetto team|Un archivio delle macchine virtuali archiviate, modelli e ambienti lab archiviati che sono stati importati nel gruppo host del progetto team. È possibile usare gli elementi della raccolta con ambienti SCVMM, tuttavia non è possibile aggiungerli direttamente in un ambiente standard. Non è possibile eseguire gli elementi della raccolta, ma è possibile usarli per implementare un nuovo ambiente.|
-|Ambiente distribuito|Un ambiente che è stato distribuito nel lab del progetto team per connettersi ed eseguire i relativi computer.|
+|Lab del progetto Azure DevOps|La raccolta di ambienti lab che sono stati configurati in modo da connettersi a essi ed eseguire le macchine virtuali.|
+|Libreria del progetto Azure DevOps|Archivio di macchine virtuali, modelli e ambienti lab archiviati che sono stati importati nel gruppo host del progetto. È possibile usare gli elementi della raccolta con ambienti SCVMM, tuttavia non è possibile aggiungerli direttamente in un ambiente standard. Non è possibile eseguire gli elementi della raccolta, ma è possibile usarli per implementare un nuovo ambiente.|
+|Ambiente distribuito|Ambiente che è stato distribuito nel lab del progetto per connessione e l'esecuzione dei relativi computer.|
 
 Per altre informazioni su Lab Management, vedere:
 

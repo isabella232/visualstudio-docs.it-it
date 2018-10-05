@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138391"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281091"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Risoluzione dei problemi correlati alla rete quando si installa o usa Visual Studio
 
@@ -73,7 +73,7 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Errore: "Connessione sottostante chiusa"
 
-Se si usa Visual Studio in una rete privata con un firewall, Visual Studio potrebbe non essere in grado di connettersi ad alcune risorse di rete. Queste risorse possono includere Visual Studio Team Services (VSTS) per l'accesso e la gestione delle licenze, NuGet e servizi di Azure. Se Visual Studio non è in grado di connettersi a una di queste risorse, potrebbe essere visualizzato il messaggio di errore seguente:
+Se si usa Visual Studio in una rete privata con un firewall, Visual Studio potrebbe non essere in grado di connettersi ad alcune risorse di rete. Queste risorse possono includere Azure DevOps Services per l'accesso e la gestione delle licenze, NuGet e servizi di Azure. Se Visual Studio non è in grado di connettersi a una di queste risorse, potrebbe essere visualizzato il messaggio di errore seguente:
 
   **Connessione sottostante chiusa: Errore imprevisto durante un'operazione di invio**
 
@@ -103,7 +103,7 @@ Abilitare le connessioni per gli URL seguenti:
 
 - cdn.vsassets.io (host di contenuti della rete CDN)
 
-- &#42;.gallerycdn.vsassets.io (host delle estensioni VSTS)
+- &#42;. gallerycdn.vsassets.io (estensioni host di Azure DevOps Services)
 
 - static2.sharepointonline.com (host di risorse usate da Visual Studio nel kit Office UI Fabric, ad esempio i tipi di carattere)
 

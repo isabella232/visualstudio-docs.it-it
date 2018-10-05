@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573141"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320982"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 Lo strumento *VSPerfCmd.exe* viene usato per avviare e arrestare la raccolta di dati sulle prestazioni. Viene usata la sintassi seguente:  
@@ -53,7 +53,7 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Arresta la raccolta di dati per il processo specificato.|  
 |[ThreadOn e ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Riprende la profilatura per il processo specificato dopo la sospensione della profilatura tramite una chiamata a **VSPerfCmdThreadOff**. Usare **ThreadOn** solo durante la profilatura con il metodo di strumentazione.|  
 |[ThreadOn e ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Sospende la profilatura per il thread specificato. Usare **ThreadOff** solo durante la profilatura con il metodo di strumentazione.|  
-|[Mark](../profiling/mark.md) **:** *NumContrassegno*[**,***TestoContrassegno***]**|Inserisce un contrassegno nel file dati di profilatura, con testo facoltativo.|  
+|[Mark](../profiling/mark.md) **:** _NumContrassegno_[**,**_TestoContrassegno_**]**|Inserisce un contrassegno nel file dati di profilatura, con testo facoltativo.|  
   
 ## <a name="sample-method-options"></a>Opzioni del metodo di campionamento  
  Le opzioni seguenti sono disponibili solo quando si usa il metodo di campionamento per la profilatura.  
@@ -63,8 +63,8 @@ VSPerfCmd [/U] [/options]
 |[Launch](../profiling/launch.md) **:** *Eseguibile*|Avvia l'applicazione specificata e inizia la profilatura.|  
 |[Args](../profiling/args.md) **:** *Argomenti*|Specifica gli argomenti della riga di comando da passare all'applicazione avviata.|  
 |[Console](../profiling/console.md)|Avvia il comando specificato in una nuova finestra del prompt dei comandi.|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Avvia la profilatura dei processi specificati. I processi possono essere identificati in base all'ID o al nome del processo.|  
-|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Arresta la profilatura dei processi specificati. I processi possono essere identificati in base all'ID o al nome del processo. Se non viene specificato alcun processo, la profilatura viene interrotta per tutti i processi.|  
+|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Avvia la profilatura dei processi specificati. I processi possono essere identificati in base all'ID o al nome del processo.|  
+|[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Arresta la profilatura dei processi specificati. I processi possono essere identificati in base all'ID o al nome del processo. Se non viene specificato alcun processo, la profilatura viene interrotta per tutti i processi.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Raccoglie dati sull'allocazione di memoria .NET e sulla durata degli oggetti. Usare solo con l'opzione **VSPerfCmdLaunch**.|  
   
 ### <a name="sample-interval-options"></a>Opzioni per l'intervallo di campionamento  
@@ -72,9 +72,9 @@ VSPerfCmd [/U] [/options]
   
 |Opzione|Descrizione|  
 |------------|-----------------|  
-|[PF](../profiling/pf.md)[**:***n*]|Esegue il campionamento ogni n errori di pagina (valore predefinito=10).|  
-|[Sys](../profiling/sys-vsperfcmd.md)[**:***n*]|Esegue il campionamento ogni n chiamate di sistema (valore predefinito=10).|  
-|[Timer](../profiling/timer.md)[**:***n*]|Esegue il campionamento ogni n cicli (valore predefinito=10000000).|  
+|[PF](../profiling/pf.md)[**:**_n_]|Esegue il campionamento ogni n errori di pagina (valore predefinito=10).|  
+|[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Esegue il campionamento ogni n chiamate di sistema (valore predefinito=10).|  
+|[Timer](../profiling/timer.md)[**:**_n_]|Esegue il campionamento ogni n cicli (valore predefinito=10000000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Opzioni per il componente del servizio e il dispositivo in modalità kernel  
  Le opzioni di amministrazione seguenti supportano la profilatura di componenti del servizio o dei driver di dispositivo in modalità kernel. Le opzioni di amministrazione impostano le autorizzazioni di profilatura e controllano il servizio o il driver di dispositivo profilato.  
@@ -83,7 +83,7 @@ VSPerfCmd [/U] [/options]
   
 |Opzione|Descrizione|  
 |------------|-----------------|  
-|**Admin:Security** \<**ALLOW&#124;DENY**> *Diritto*[ *Diritto*] \<*Utente*&#124;*Gruppo*>|Consente o nega l'accesso ai servizi di profilatura all'utente o al gruppo specificato.<br /><br /> `Right` può essere:<br /><br /> CrossSession: consente all'utente l'accesso al servizio per la profilatura tra sessioni.<br /><br /> SampleProfiling: consente all'utente di accedere al driver per abilitare la profilatura di campionamento. Usato anche per accedere alle informazioni di transizione del kernel durante la profilatura di traccia.<br /><br /> FullAccess: consente all'utente sia l'accesso CrossSession che l'accesso SampleProfiling.|  
+|**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*User*&#124;*Group*>|Consente o nega l'accesso ai servizi di profilatura all'utente o al gruppo specificato.<br /><br /> `Right` può essere:<br /><br /> CrossSession: consente all'utente l'accesso al servizio per la profilatura tra sessioni.<br /><br /> SampleProfiling: consente all'utente di accedere al driver per abilitare la profilatura di campionamento. Usato anche per accedere alle informazioni di transizione del kernel durante la profilatura di traccia.<br /><br /> FullAccess: consente all'utente sia l'accesso CrossSession che l'accesso SampleProfiling.|  
 |**Admin:Security, List**|Elenca lo stato corrente dei servizi di profilatura e le autorizzazioni utente.|  
 |**Admin:** \<*Servizio*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Avvia, arresta, installa o disinstalla il componente del servizio di profilatura (Servizio) o il driver del dispositivo in modalità kernel (Driver).|  
 |**Admin:** \<*Servizio*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Abilita o disabilita l'avvio automatico del servizio di profilatura (Servizio) o del driver del dispositivo in modalità kernel (Driver) dopo un riavvio.|  

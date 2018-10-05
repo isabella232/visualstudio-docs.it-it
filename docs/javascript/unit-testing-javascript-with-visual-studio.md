@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924791"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776093"
 ---
 # <a name="unit-testing-in-nodejs"></a>Testing unità in Node.js
 
@@ -78,7 +78,7 @@ Dopo aver aperto Esplora test (scegliere **Test** > **Finestre** > **Esplora tes
 > [!NOTE]
 > Non usare l'opzione `outdir` o `outfile` in *tsconfig.json* perché Esplora test non riuscirebbe a trovare gli unit test nei file TypeScript.
 
-## <a name="run-tests"></a>Eseguire i test
+## <a name="run-tests"></a>Esegui test
 
 È possibile eseguire i test in Visual Studio 2017 o dalla riga di comando.
 
@@ -147,3 +147,24 @@ Per un buon esempio delle implementazioni `find_tests` e `run_tests`, vedere l'i
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 L'individuazione dei framework di test disponibili avviene all'avvio di Visual Studio. Se un framework viene aggiunto mentre Visual Studio è in esecuzione, riavviare Visual Studio per rilevare il framework. Il riavvio non è tuttavia necessario quando si apportano modifiche all'implementazione.
+
+## <a name="unit-tests-in-other-project-types"></a>Unit test in altri tipi di progetto
+È possibile scrivere unit test non solo nei progetti Node.js. Quando si aggiungono le proprietà TestFramework e TestRoot a un qualsiasi progetto C# o VB, tali test vengono enumerati e possono essere eseguiti tramite la finestra Esplora Test.
+
+A tale scopo, fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni, scegliere **Scarica progetto**, quindi scegliere **Edit Project** (Modifica progetto). Nel file di progetto aggiungere i due elementi seguenti a un gruppo di proprietà.
+
+> [!NOTE]
+> Assicurarsi che il gruppo di proprietà al quale vengono aggiunti gli elementi non abbia una condizione specifica,
+> che potrebbe causare comportamenti inaspettati.
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+Successivamente, aggiungere i test alla cartella radice di test specificata. A questo punto i test saranno disponibili per essere eseguiti nella finestra Esplora test. Se inizialmente non vengono visualizzati, potrebbe essere necessario ricompilare il progetto.
+
+> [!NOTE]
+> Attualmente non funziona per i progetti NET Standard e .NET Core.

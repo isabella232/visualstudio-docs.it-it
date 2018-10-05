@@ -1,7 +1,7 @@
 ---
 title: Panoramica del supporto di Python in Visual Studio in Windows
 description: Riepilogo delle funzionalità Python di Visual Studio, il miglior ambiente IDE Python per Windows, noto anche come Python Tools for Visual Studio (PTVS).
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626910"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320969"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 
@@ -38,6 +38,8 @@ Per iniziare:
 La finestra **Ambienti Python** di Visual Studio (illustrata di seguito in un'ampia visualizzazione espansa) rappresenta un'unica posizione da cui gestire tutti gli ambienti Python globali, gli ambienti Conda e gli ambienti virtuali. Visual Studio rileva automaticamente le installazioni di Python in posizioni standard e consente di configurare installazioni personalizzate. Per ogni ambiente, è possibile gestire pacchetti, aprire una finestra interattiva specifica e accedere alle cartelle dell'ambiente con la massima facilità.
 
 ![Visualizzazione espansa della finestra Ambienti Python](media/environments-expanded-view.png)
+
+Usare il comando **Apri finestra interattiva** per eseguire in modo interattivo Python all'interno del contesto di Visual Studio. Usare il comando **Apri in PowerShell** per aprire una finestra di comando separata nella cartella dell'ambiente selezionato. Da tale finestra di comando è possibile eseguire qualsiasi script Python. 
 
 Per ulteriori informazioni:
 
@@ -62,7 +64,7 @@ Per ulteriori informazioni:
 
 ## <a name="interactive-window"></a>Finestra Interattiva
 
-Per ogni ambiente Python noto a Visual Studio, è possibile aprire facilmente lo stesso ambiente interattivo (REPL, ciclo Read–Eval–Print) per un interprete Python direttamente all'interno di Visual Studio, anziché usare un prompt dei comandi separato. È anche possibile passare facilmente da un ambiente all'altro.
+Per ogni ambiente Python noto a Visual Studio, è possibile aprire facilmente lo stesso ambiente interattivo (REPL, ciclo Read–Eval–Print) per un interprete Python direttamente all'interno di Visual Studio, anziché usare un prompt dei comandi separato. È anche possibile passare facilmente da un ambiente all'altro. Per aprire un prompt dei comandi separato, selezionare un ambiente nella finestra **Ambienti Python**, quindi selezionare il comando **Apri in PowerShell** come illustrato in precedenza in [Supporto di più interpreti](#support-for-multiple=interpreters).
 
 ![Finestra interattiva di Python in Visual Studio](media/interactive-window.png)
 
@@ -163,7 +165,7 @@ Un  La proposta migliore in questo campo è il [progetto Qt](https://www.qt.io/q
 
 **D. Un progetto Python può produrre un file eseguibile autonomo?**
 
-Un  Python è in genere un linguaggio interpretato, con cui il codice viene eseguito su richiesta in un ambiente in grado di supportare Python, ad esempio Visual Studio e i server Web. Visual Studio attualmente non offre la possibilità di creare un file eseguibile autonomo, ovvero un programma con un interprete Python incorporato. Tuttavia, esistono diversi metodi all'interno della community di Python per creare file eseguibili, come descritto in [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython può anche essere incorporato in un'applicazione nativa, come descritto nel post del blog, [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Uso del file ZIP incorporabile di CPython).
+Un  Python è in genere un linguaggio interpretato, con cui il codice viene eseguito su richiesta in un ambiente in grado di supportare Python, ad esempio Visual Studio e i server Web. Visual Studio attualmente non offre la possibilità di creare un file eseguibile autonomo, ovvero un programma con un interprete Python incorporato. Tuttavia, la community di Python offre diversi modi di creare file eseguibili, come descritto in [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython può anche essere incorporato in un'applicazione nativa, come descritto nel post del blog, [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Uso del file ZIP incorporabile di CPython).
 
 ## <a name="features-matrix"></a>Matrice delle funzionalità
 

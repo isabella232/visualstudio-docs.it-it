@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179697"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283470"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -59,9 +59,9 @@ Con Azure AD viene abilitato il supporto di Single Sign-On per utenti finali in 
 
 Per altre informazioni sui diversi tipi di autenticazione in ASP.NET, vedere [Creare progetti Web ASP.NET in Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (le informazioni sull'autenticazione sono ancora pertinenti per le versioni attuali di Visual Studio).
 
-### <a name="access-your-visual-studio-team-services-account"></a>Accedere all'account di Visual Studio Team Services
+### <a name="access-your-team-foundation-server-tfs-organization"></a>Accedere all'organizzazione di Team Foundation Server (TFS)
 
-Nel menu principale scegliere **Team** > **Connetti a Team Foundation Server** per visualizzare la finestra di **Team Explorer**. Fare clic su **Seleziona progetti team**. A questo punto nella casella di riepilogo sotto **Seleziona Team Foundation Server**verrà visualizzato l'URL dell'account di Visual Studio Team Services. Quando si seleziona l'URL verrà registrato senza dover immettere nuovamente le credenziali.
+Nel menu principale scegliere **Team** > **Connetti a Team Foundation Server** per visualizzare la finestra di **Team Explorer**. Fare clic su **Seleziona progetti**. A questo punto nella casella di riepilogo sotto **Seleziona Team Foundation Server** verrà visualizzato l'URL dell'organizzazione TFS. Quando si seleziona l'URL verrà registrato senza dover immettere nuovamente le credenziali.
 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Aggiungere un secondo account utente a Visual Studio
 

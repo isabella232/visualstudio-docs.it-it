@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381120"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279975"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -104,7 +104,7 @@ Per poter rimuovere un agente di test, è necessario che sia impostato sullo sta
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Per rimuovere un agente di test da un controller di test
 
-1. Se il controller di test non è registrato con un progetto team, attenersi alla procedura seguente.
+1. Se il test controller non è registrato con un progetto, attenersi alla procedura seguente.
 
     1. In Visual Studio aprire il file di impostazioni di test per il progetto di test, scegliere **Ruolo** e quindi selezionare **Gestisci controller di test** nell'elenco a discesa del campo **Controller**.
 
@@ -117,7 +117,7 @@ Per poter rimuovere un agente di test, è necessario che sia impostato sullo sta
         > [!NOTE]
         > La rimozione di un agente di test ne determina la disassociazione dal controller di test. Per disinstallare completamente l'agente di test, usare **Programmi e funzionalità** nel Pannello di controllo del computer in cui l'agente è installato.
 
-2. Se il test controller è registrato con un progetto team, rimuovere l'agente mediante Microsoft Test Manager.
+2. Se il test controller è registrato con un progetto, rimuovere l'agente tramite Microsoft Test Manager.
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Modifica delle impostazioni di un agente di test
 
@@ -135,7 +135,7 @@ Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valo
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Per modificare le impostazioni di un agente di test
 
 > [!NOTE]
-> Se l'agente di test è registrato con un test controller a sua volta registrato con un progetto team, modificare le impostazioni in Microsoft Test Manager.
+> Se l'agente di test è registrato con un test controller a sua volta registrato con un progetto, modificare le impostazioni in Microsoft Test Manager.
 
 1. Per configurare e monitorare il test controller e gli eventuali agenti registrati per un test di carico, scegliere il menu **Test di carico** in Visual Studio, quindi scegliere **Gestisci controller di test**. Per tutti gli altri test, aprire il file di impostazioni di test per il progetto di test in Visual Studio, scegliere **Ruolo** e quindi selezionare **Gestisci controller di test** nell'elenco a discesa del campo **Controller**.
 
@@ -153,7 +153,7 @@ Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valo
 |-------------------------|-----------------|
 |**Peso**|Consente di distribuire il carico quando si usano agenti di test con livelli diversi di prestazioni. Ad esempio, un agente di test con un peso pari a 100 riceve un carico doppio rispetto a uno con un peso di 50.|
 |**Commutazione IP**|Usato per configurare la commutazione IP. La commutazione IP consente a un agente di test di inviare richieste a un server usando un intervallo di indirizzi IP. In questo modo si simulano le chiamate provenienti da computer client diversi.<br /><br /> La commutazione IP è importante se il test di carico accede a una Web farm. La maggior parte dei servizi di bilanciamento del carico stabilisce un'affinità tra un client e un determinato server Web usando l'indirizzo IP del client. Se tutte le richieste sembrano provenire da un singolo client, il servizio di bilanciamento del carico non bilancia il carico. Per ottenere un buon bilanciamento del carico nella Web farm, verificare che le richieste provengano da un intervallo di indirizzi IP. **Nota**: è possibile specificare una scheda di rete o usare **(Tutti non assegnati)** per selezionarne automaticamente una non in uso. <br /><br /> Per usare la funzionalità di commutazione IP, è necessario che il servizio agente di test di Visual Studio sia in esecuzione come utente del gruppo Administrators del computer in cui si trova l'agente. Questo utente viene selezionato durante l'installazione dell'agente, ma è possibile cambiarlo modificando le proprietà del servizio e riavviandolo.<br /><br /> Per verificare che la commutazione IP funzioni correttamente, abilitare la funzionalità di registrazione di IIS nel server Web e usarla per verificare che le richieste provengano dagli indirizzi IP configurati.|
-|**Attributi**|Set di coppie nome/valore utilizzabili nella selezione di agenti di test. Ad esempio un test può richiedere un particolare sistema operativo. Nella scheda **Ruoli** del file di impostazioni di test è possibile aggiungere ruoli utilizzabili per selezionare un agente di test con attributi corrispondenti. Se si desidera eseguire un test su più computer, creare un attributo nel ruolo delle impostazioni di test configurato per l'esecuzione dei test, quindi configurare un attributo corrispondente in ogni agente di test da usare in tale ruolo. **Nota:** questa impostazione è disponibile solo per gli agenti di test registrati con un test controller non registrato in un progetto team, perché quegli attributi vengono usati solo nelle impostazioni di test per Visual Studio.|
+|**Attributi**|Set di coppie nome/valore utilizzabili nella selezione di agenti di test. Ad esempio un test può richiedere un particolare sistema operativo. Nella scheda **Ruoli** del file di impostazioni di test è possibile aggiungere ruoli utilizzabili per selezionare un agente di test con attributi corrispondenti. Se si desidera eseguire un test su più computer, creare un attributo nel ruolo delle impostazioni di test configurato per l'esecuzione dei test, quindi configurare un attributo corrispondente in ogni agente di test da usare in tale ruolo. **Nota:** questa impostazione è disponibile solo per gli agenti di test registrati con un test controller non registrato in un progetto, perché quegli attributi vengono usati solo nelle impostazioni di test per Visual Studio.|
 
 Le modifiche apportate al peso e agli attributi di un agente di test vengono applicate immediatamente, ma non influenzano i test in esecuzione. L'Intervallo di indirizzi IP diventa effettivo dopo il riavvio del controller di test.
 
@@ -164,12 +164,12 @@ Le modifiche apportate al peso e agli attributi di un agente di test vengono app
 
 ## <a name="configure-a-test-controller"></a>Configurazione di un controller di test
 
-Per configurare un test controller, è necessario usare **lo strumento di configurazione controller Team Test**. Quando si configura il controller di test, è possibile effettuarne la registrazione con una diversa raccolta di progetti team oppure annullarne la registrazione in una raccolta di progetti team.
+Per configurare un test controller, è necessario usare **lo strumento di configurazione controller Team Test**. Quando si configura il test controller, è possibile eseguirne la registrazione con una raccolta di progetti diversa oppure annullarne la registrazione in una raccolta di progetti.
 
-Se si vuole registrare il test controller con la raccolta di progetti Team Foundation Server, l'account usato per il servizio del test controller deve essere un membro del gruppo Account del servizio di test della raccolta di progetti per la raccolta di progetti team. In alternativa, l'account usato per eseguire lo strumento di configurazione del test controller deve essere un account Amministratore della raccolta di progetti.
+Se si vuole registrare il test controller con la raccolta di progetti Team Foundation Server, l'account usato per il servizio del test controller deve essere un membro del gruppo Account servizio test raccolta di progetti. In alternativa, l'account usato per eseguire lo strumento di configurazione del test controller deve essere un account Amministratore della raccolta di progetti.
 
 > [!NOTE]
-> Se si annulla la registrazione di un controller di test in una raccolta di progetti team che dispone di ambienti esistenti in una raccolta di progetti team, gli ambienti verranno mantenuti qualora quella raccolta di progetti team venisse spostata e si registrasse di nuovo il controller di test nella raccolta spostata.
+> Se si annulla la registrazione di un test controller in una raccolta di progetti che ha ambienti esistenti in una raccolta di progetti, gli ambienti saranno comunque mantenuti qualora quella raccolta di progetti venisse spostata e si registrasse di nuovo il test controller nella raccolta spostata.
 
 ### <a name="to-configure-a-test-controller"></a>Per configurare un controller di test
 
@@ -182,7 +182,7 @@ Se si vuole registrare il test controller con la raccolta di progetti Team Found
     > [!NOTE]
     > Le password Null non sono supportate per gli account utente.
 
-4. (Facoltativo) Se non si vuole usare il test controller con un ambiente lab ma solo eseguire test da Visual Studio, deselezionare **Registra con insieme di progetti team**.
+4. (Facoltativo) Se non si vuole usare il test controller con un ambiente lab, ma solo eseguire test da Visual Studio, deselezionare **Register with Project Collection** (Registra con la raccolta di progetti).
 
 5. (Facoltativo) Per configurare il test controller per test di carico, selezionare **Configura per test di carico**. Specificare quindi l'istanza di SQL Server in **Crea database dei risultati dei test di carico nell'istanza di SQL Server seguente**.
 

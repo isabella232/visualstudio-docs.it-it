@@ -1,31 +1,31 @@
 ---
 title: Controllo della versione di Team Foundation
-description: Connessione a Team Foundation Server o a Visual Studio Team Services con il controllo della versione di Team Foundation.
+description: Connessione a Team Foundation Server o ad Azure DevOps Services con il controllo della versione di Team Foundation.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/03/2018
+ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224306"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279842"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation 
 
 > [!NOTE]
 > **Nota**: il controllo della versione di Team Foundation Version è attualmente in anteprima e alcune funzionalità non sono ancora completamente operative. Inviare il proprio feedback su eventuali problemi riscontrati alla [community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/41/index.html). Presto saranno disponibili altre modifiche.
 
-Visual Studio Team Services (VSTS) e Team Foundation Server (TFS) mettono a disposizione due modelli di controllo della versione: Git, un controllo della versione distribuito, e il controllo della versione di Team Foundation (TFVC), un controllo della versione centralizzato. Questo articolo offre una panoramica del controllo della versione di Team Foundation con Visual Studio per Mac e rappresenta un punto di partenza per l'uso di questo strumento.
+Azure Repos offre due modelli di controllo della versione: Git, un controllo della versione distribuito, e il controllo della versione di Team Foundation, un controllo della versione centralizzato. Questo articolo offre una panoramica del controllo della versione di Team Foundation con Visual Studio per Mac e rappresenta un punto di partenza per l'uso di questo strumento.
 
 ## <a name="requirements"></a>Requisiti
 
 * Visual Studio Community, Professional o Enterprise per Mac versione 7.5 o successiva.
-* Visual Studio Team Services o Team Foundation Server 2013 e successive.
-* Un progetto in Visual Studio Team Services o Team Foundation Server configurato per l'uso del controllo della versione di Team Foundation.
+* Azure DevOps Services o Team Foundation Server 2013 e versioni successive.
+* Un progetto in Azure DevOps Services o Team Foundation Server configurato per l'uso del controllo della versione di Team Foundation.
 
 ## <a name="installation"></a>Installazione
 
@@ -47,17 +47,19 @@ Per informazioni sulle novità in ogni versione, vedere [Note sulla versione](ht
 
 ## <a name="using-the-add-in"></a>Uso del componente aggiuntivo
 
-Dopo aver installato l'estensione, selezionare **Controllo della versione > TFS/VSTS > Apri da Repository remoto**. 
+Dopo aver installato l'estensione, selezionare la voce di menu **Version Control > TFS/Azure DevOps > Open from Remote Repository** (Controllo della versione > TFS/Azure DevOps > Apri da repository remoto).
 
-Scegliere Visual Studio Team Services o Team Foundation Server per iniziare e scegliere **Continua**:
+  ![Voce di menu per aprire l'estensione](media/tfvc-source-control-explorer-devops.png)
 
-  ![Connettersi con un server](media/tfvc-choose-server-type.png)
+Scegliere VSTS o Team Foundation Server per iniziare e premere **Continue** (Continua):
 
-### <a name="vsts-authentication"></a>Autenticazione VSTS
+  ![Connettersi con un server](media/tfvc-choose-server-type-devops.png)
 
-Quando si seleziona un progetto ospitato in VSTS, viene richiesto di immettere i dati dell'account Microsoft:
+### <a name="azure-repos-authentication"></a>Autenticazione Azure Repos
 
-  ![Connettersi con un server VSTS](media/tfvc-vsts-login.png)
+Quando si seleziona un progetto ospitato in Azure Repos, viene richiesto di immettere i dati dell'account Microsoft:
+
+  ![Connettersi con Azure Repos](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>Autenticazione TFS
 
@@ -73,10 +75,10 @@ Dopo aver eseguito l'autenticazione, è possibile visualizzare un elenco dei rep
 
 Questa finestra di dialogo è suddivisa nei nodi seguenti:
 
-- Account o raccolta di VSTS: visualizza tutti gli account connessi all'account Microsoft con cui è stato eseguito l'accesso
-- Progetti team: ogni VSTS può includere diversi progetti team. Il progetto team è la posizione in cui sono ospitati il codice sorgente, gli elementi di lavoro e le compilazioni automatiche.
+- Organizzazione o raccolta di Azure DevOps Services: vengono visualizzate tutte le organizzazioni connesse all'account Microsoft usato per eseguire l'accesso.
+- Progetti: ogni organizzazione o raccolta può contenere una serie di progetti. Il progetto è la posizione in cui sono ospitati il codice sorgente, gli elementi di lavoro e le compilazioni automatiche.
 
-È possibile effettuare ricerche e applicare filtri in base al nome di un progetto o un account.
+È possibile eseguire ricerche e applicare filtri in base al nome di un progetto o di un'organizzazione.
 
 ### <a name="adding-a-new-server"></a>Aggiunta di un nuovo server
 
@@ -86,7 +88,7 @@ Per aggiungere un nuovo server all'elenco, scegliere il pulsante **Aggiungi host
 
 Selezionare il provider dall'elenco e immettere le credenziali:
 
-![Finestra di dialogo con l'opzione per il provider del controllo del codice sorgente](media/tfvc-add-new-creds.png)
+![Finestra di dialogo con l'opzione per il provider del controllo del codice sorgente](media/tfvc-add-new-creds-devops.png)
 
 ## <a name="creating-a-new-workspace"></a>Creazione di una nuova area di lavoro
 
@@ -102,9 +104,7 @@ Impostare il nome e il percorso locale per la nuova area di lavoro e selezionare
 
 Dopo aver creato un'area di lavoro e aver eseguito il mapping del progetto, è possibile iniziare a usare _Esplora controllo codice sorgente_.
 
-Per aprire Esplora controllo codice sorgente, selezionare **Controllo della versione > TFS/VSTS > Esplora controllo codice sorgente**:
-
-![Voce di menu per aprire Esplora controllo codice sorgente](media/tfvc-source-control-explorer.png)
+Per aprire Esplora controllo codice sorgente, selezionare **Controllo della versione > TFS/Azure DevOps > Esplora controllo codice sorgente**.
 
 Esplora controllo codice sorgente consente di esplorare tutti i progetti mappati e i relativi file e cartelle. Consente anche di eseguire tutte le azioni di base per il controllo del codice sorgente, ad esempio:
 
@@ -134,7 +134,7 @@ Per configurare il progetto remoto con un'area di lavoro locale, seguire questa 
     
     ![Creare una nuova finestra dell'area di lavoro con le opzioni predefinite](media/tfvc-workspace1.png) 
 
-1. Selezionare la cartella "$" per eseguire il mapping di tutti i progetti team del server alla stessa area di lavoro o selezionare un singolo progetto e fare clic su **OK**:
+1. Selezionare la cartella "$" per eseguire il mapping di tutti i progetti del server alla stessa area di lavoro o selezionare un singolo progetto e fare clic su **OK**:
     
     ![Finestra di dialogo Cerca cartella con tutti i progetti visualizzati](media/tfvc-workspace2.png) 
 
@@ -157,10 +157,10 @@ Le opzioni seguenti possono essere usate eseguire l'autenticazione in un server:
 - Basic
 - Ntlm
 
-Per usare l'autenticazione di base è necessario abilitare **credenziali di autenticazione alternative** in VSTS seguendo questa procedura:
+Per usare l'autenticazione di base è necessario abilitare le **credenziali di autenticazione alternative** in Azure DevOps Services seguendo questa procedura:
 
-1. Accedere all'account VSTS come proprietario dell'account (https://{account}.visualstudio.com).
-2. Dalla barra degli strumenti dell'account selezionare l'icona a forma di ingranaggio e quindi **Criteri**:
+1. Accedere all'organizzazione di Azure DevOps Services come proprietario (https://dev.azure.com/{organization}/{project}).
+2. Dalla barra degli strumenti dell'organizzazione selezionare l'icona a forma di ingranaggio, quindi **Policy** (Criteri):
     
     ![Opzione delle impostazioni dei criteri selezionata](media/tfvc-auth2.png) 
 
@@ -172,7 +172,7 @@ Per usare l'autenticazione di base è necessario abilitare **credenziali di aute
 
 Per configurare il controllo della versione di Team Foundation nel computer di sviluppo, **è necessario** creare un'area di lavoro, come descritto nella sezione [Gestione delle aree di lavoro](#managing-workspaces).
 
-In Esplora controllo codice sorgente premere il pulsante **Gestisci aree di lavoro**. Seguire i passaggi per eseguire il mapping del progetto team a una cartella sul computer di sviluppo.
+In Esplora controllo codice sorgente premere il pulsante **Gestisci aree di lavoro**. Seguire la procedura per eseguire il mapping del progetto team a una cartella sul computer di sviluppo.
 
 ### <a name="i-do-not-see-any--all-of-my-projects"></a>Non viene visualizzato alcun progetto
 

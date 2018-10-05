@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477483"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668768"
 ---
 # <a name="understand-performance-collection-methods"></a>Informazioni sui metodi di raccolta delle prestazioni
 
@@ -32,10 +32,10 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
 |[Campionamento](#sampling)|Raccoglie dati statistici sulle operazioni eseguite da un'applicazione.|
 |[Strumentazione](#instrumentation)|Raccoglie informazioni dettagliate sugli intervalli per ogni chiamata di funzione.|
 |[Concorrenza](#concurrency)|Raccoglie informazioni dettagliate sulle applicazioni multithread.|
-|[Memoria .NET](#net_memory)|Raccoglie informazioni dettagliate sull'allocazione e la Garbage Collection della memoria .NET.|
-|[Interazioni tra livelli](#tier_interaction)|Raccoglie informazioni sulle chiamate di funzione ADO.NET sincrone a un database di SQL Server.<br /><br /> I dati di profilatura dell'interazione tra livelli possono essere raccolti usando qualsiasi edizione di Visual Studio, ma possono essere visualizzati solo in Visual Studio Enterprise.|
+|[Memoria .NET](#net-memory)|Raccoglie informazioni dettagliate sull'allocazione e la Garbage Collection della memoria .NET.|
+|[Interazioni tra livelli](#tier-interaction)|Raccoglie informazioni sulle chiamate di funzione ADO.NET sincrone a un database di SQL Server.<br /><br /> I dati di profilatura dell'interazione tra livelli possono essere raccolti usando qualsiasi edizione di Visual Studio, ma possono essere visualizzati solo in Visual Studio Enterprise.|
 
-Usando alcuni metodi di profilatura, è anche possibile raccogliere dati aggiuntivi, ad esempio i contatori delle prestazioni di hardware e software. Per altre informazioni, vedere [Raccolta di dati aggiuntivi relativi alle prestazioni](../profiling/collecting-additional-performance-data.md).
+Usando alcuni metodi di profilatura, è anche possibile raccogliere dati aggiuntivi, ad esempio i contatori delle prestazioni di hardware e software. Per altre informazioni, vedere [Raccogliere dati aggiuntivi relativi alle prestazioni](../profiling/collecting-additional-performance-data.md).
 
 ## <a name="sampling"></a>Campionamento
 
