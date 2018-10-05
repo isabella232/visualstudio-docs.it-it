@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774691"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549311"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Eseguire il debug remoto di codice Python in Linux
 
@@ -99,7 +99,7 @@ In questa procedura viene impostato un semplice punto di interruzione per arrest
 1. Nel campo **Destinazione della connessione**, **Qualificatore** nelle versioni precedenti, immettere `tcp://<secret>@<ip_address>:5678`, dove `<secret>` è la stringa passata a `enable_attach` nel codice Python, `<ip_address>` è l'indirizzo IP del computer remoto, che può essere un indirizzo esplicito o un nome simile a myvm.cloudapp.net, e `:5678` è il numero di porta del debug remoto.
 
     > [!Warning]
-    > Se si sta effettuando una connessione sulla rete Internet pubblica, è preferibile usare invece `tcps` e seguire l'istruzione seguente per [proteggere la connessione del debugger con SSL](#securing-the-debugger-connection-with-ssl).
+    > Se si sta effettuando una connessione sulla rete Internet pubblica, è preferibile usare invece `tcps` e seguire l'istruzione seguente per [proteggere la connessione del debugger con SSL](#secure-the-debugger-connection-with-ssl).
 
 1. Premere **INVIO** per compilare l'elenco dei processi ptvsd disponibili nel computer:
 
@@ -148,7 +148,7 @@ Per impostazione predefinita, la connessione al server di debug remoto di ptvsd 
 
     Quando openssl richiede il **nome comune** usare il nome host o l'indirizzo IP, a seconda dell'opzione scelta per la connessione.
 
-    Per maggiori dettagli, vedere la sezione relativa ai [certificati autofirmati](http://docs.python.org/3/library/ssl.html#self-signed-certificates) nei documenti del modulo `ssl` di Python. Si noti che il comando in tali documenti genera solo un singolo file combinato.
+    Per maggiori dettagli, vedere la sezione relativa ai [certificati autofirmati](https://docs.python.org/3/library/ssl.html#self-signed-certificates) nei documenti del modulo `ssl` di Python. Si noti che il comando in tali documenti genera solo un singolo file combinato.
 
 1. Nel codice modificare la chiamata a `enable_attach` per includere gli argomenti `certfile` e `keyfile` usando i nomi di file come valori. Questi argomenti hanno lo stesso significato per la funzione `ssl.wrap_socket` standard di Python:
 
