@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 1b50bdf48e80e5ed259ba61f0e104e411e76a490
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612740"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788032"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Specifica di file di simboli con estensione pdb) e di file di origine nel debugger di Visual Studio
 Un file di database (con estensione pdb) del programma, denominato anche file di simboli, esegue il mapping di identificatori creati nel codice sorgente per le classi, metodi e altro codice per gli identificatori utilizzati nei file eseguibili compilati del progetto. Il file con estensione pdb esegue inoltre il mapping delle istruzioni nel codice sorgente alle istruzioni di esecuzione nei file eseguibili. Il debugger Usa queste informazioni per stabilire due informazioni essenziali:
@@ -175,35 +175,35 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 |**Caricare sempre automaticamente**|Aggiunge il file di simboli all'elenco di file caricati automaticamente dal debugger.|  
   
 ###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Impostare le opzioni del compilatore per i file di simboli  
- Quando si compila il progetto dall'IDE di Visual Studio e si utilizza la configurazione di compilazione **Debug** standard, i compilatori C++ e gestiti creano i file di simboli appropriati per il codice. È inoltre possibile impostare le opzioni del compilatore sulla riga di comando per creare i file di simboli.  
+Quando si compila il progetto dall'IDE di Visual Studio e si utilizza la configurazione di compilazione **Debug** standard, i compilatori C++ e gestiti creano i file di simboli appropriati per il codice. È inoltre possibile impostare le opzioni del compilatore sulla riga di comando per creare i file di simboli.  
   
- **Opzioni di C++**  
+**Opzioni di C++**  
   
- Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si esegue una compilazione con [/ZI o /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (per C/C++).  
+Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si esegue una compilazione con [/ZI o /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (per C/C++).  
   
- In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]l'opzione [/Fd](/cpp/build/reference/fd-program-database-file-name) assegna un nome al file con estensione pdb creato dal compilatore. Quando si crea un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con le procedure guidate, l'opzione **/Fd** viene impostata in modo da creare un file con estensione pdb denominato *project*.pdb.  
+In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]l'opzione [/Fd](/cpp/build/reference/fd-program-database-file-name) assegna un nome al file con estensione pdb creato dal compilatore. Quando si crea un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con le procedure guidate, l'opzione **/Fd** viene impostata in modo da creare un file con estensione pdb denominato *project*.pdb.  
   
- Se l'applicazione C/C++ viene compilata usando un makefile e si specifica **/ZI** o **/Zi** senza **/Fd**, vengono generati due file con estensione pdb:  
+Se l'applicazione C/C++ viene compilata usando un makefile e si specifica **/ZI** o **/Zi** senza **/Fd**, vengono generati due file con estensione pdb:  
   
--   VC*x*.pdb, dove *x* rappresenta la versione di Visual C++, ad esempio VC11.pdb. In questo file, disponibile nella stessa directory in cui si trova il makefile del progetto, vengono memorizzate tutte le informazioni di debug relative ai singoli file OBJ.  
+* VC*x*.pdb, dove *x* rappresenta la versione di Visual C++, ad esempio VC11.pdb. In questo file, disponibile nella stessa directory in cui si trova il makefile del progetto, vengono memorizzate tutte le informazioni di debug relative ai singoli file OBJ.  
   
--   project.pdb   In questo file vengono archiviate tutte le informazioni di debug relative al file con estensione exe. Per C/C++, questo file si trova nella sottodirectory \debug.  
+* project.pdb   In questo file vengono archiviate tutte le informazioni di debug relative al file con estensione exe. Per C/C++, questo file si trova nella sottodirectory \debug.  
   
- Ogni volta che crea un file OBJ, il compilatore C/C++ unisce le informazioni di debug nel file VC*x*.pdb. Queste includono informazioni sui tipi ma non sui simboli, quali le definizioni delle funzioni. Pertanto, anche se ogni file di origine include file di intestazione comuni, ad esempio \<Windows. h >, i typedef di tali intestazioni vengono archiviati una sola volta, anziché in ogni file OBJ.  
+Ogni volta che crea un file OBJ, il compilatore C/C++ unisce le informazioni di debug nel file VC*x*.pdb. Queste includono informazioni sui tipi ma non sui simboli, quali le definizioni delle funzioni. Pertanto, anche se ogni file di origine include file di intestazione comuni, ad esempio \<Windows. h >, i typedef di tali intestazioni vengono archiviati una sola volta, anziché in ogni file OBJ.  
   
- Il linker crea il file project.pdb contenente informazioni di debug relative al file EXE del progetto. Il file project.pdb contiene non solo le informazioni sui tipi disponibili nel file VC*x*.pdb, ma tutte le informazioni di debug, inclusi i prototipi di funzione. Entrambi i file con estensione pdb supportano gli aggiornamenti incrementali. Il linker incorpora inoltre il percorso del file con estensione pdb nel file con estensione exe o dll creato.  
+Il linker crea il file project.pdb contenente informazioni di debug relative al file EXE del progetto. Il file project.pdb contiene non solo le informazioni sui tipi disponibili nel file VC*x*.pdb, ma tutte le informazioni di debug, inclusi i prototipi di funzione. Entrambi i file con estensione pdb supportano gli aggiornamenti incrementali. Il linker incorpora inoltre il percorso del file con estensione pdb nel file con estensione exe o dll creato.  
   
- Il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizza il percorso del file pdb specificato nel file con estensione exe o dll per trovare il file project.pdb. Se il file con estensione pdb non viene trovato in tale percorso oppure se il percorso non è valido, ad esempio perché il progetto è stato spostato in un altro computer, il debugger cerca nel percorso contenente il file exe i percorsi di simboli specificati nella finestra di dialogo **Opzioni** (cartella**Debug** , nodo **Simboli** ). Il debugger non carica un file con estensione pdb che non corrisponde al file eseguibile sottoposto a debug. Se non viene trovato alcun file con estensione pdb, viene visualizzata una finestra di dialogo **Trova simboli** che consente di cercare simboli o aggiungere altri percorsi al percorso di ricerca.  
+Il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizza il percorso del file pdb specificato nel file con estensione exe o dll per trovare il file project.pdb. Se il file con estensione pdb non viene trovato in tale percorso oppure se il percorso non è valido, ad esempio perché il progetto è stato spostato in un altro computer, il debugger cerca nel percorso contenente il file exe i percorsi di simboli specificati nella finestra di dialogo **Opzioni** (cartella**Debug** , nodo **Simboli** ). Il debugger non carica un file con estensione pdb che non corrisponde al file eseguibile sottoposto a debug. Se non viene trovato alcun file con estensione pdb, viene visualizzata una finestra di dialogo **Trova simboli** che consente di cercare simboli o aggiungere altri percorsi al percorso di ricerca.  
   
- **Opzioni di .NET Framework**  
+**Opzioni di .NET Framework**  
   
- Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si compila con **/debug**. È possibile compilare applicazioni con **/debug:full** o **/debug:pdbonly**. Se si usa l'opzione di compilazione **/debug:full** , verrà generato codice di cui è possibile effettuare il debug. Se si usa l'opzione di compilazione **/debug:pdbonly** , vengono generati file con estensione pdb ma non l'attributo `DebuggableAttribute` , che indica al compilatore JIT che sono disponibili informazioni di debug. Usare **/debug:pdbonly** per generare file con estensione pdb per una build di rilascio che non si vuole sottoporre a debug. Per altre informazioni, vedere [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) o [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si compila con **/debug**. È possibile compilare applicazioni con **/debug:full** o **/debug:pdbonly**. Se si usa l'opzione di compilazione **/debug:full** , verrà generato codice di cui è possibile effettuare il debug. Se si usa l'opzione di compilazione **/debug:pdbonly** , vengono generati file con estensione pdb ma non l'attributo `DebuggableAttribute` , che indica al compilatore JIT che sono disponibili informazioni di debug. Usare **/debug:pdbonly** per generare file con estensione pdb per una build di rilascio che non si vuole sottoporre a debug. Per altre informazioni, vedere [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) o [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- Il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizza il percorso del file pdb specificato nel file con estensione exe o dll per trovare il file project.pdb. Se il file con estensione pdb non viene trovato in tale percorso oppure se il percorso non è valido, viene eseguita una ricerca nel percorso contenente il file EXE e quindi nei percorsi di simboli specificati nella finestra di dialogo **Opzioni** . Questo percorso in genere corrisponde alla cartella **Debug** del nodo **Simboli** . Il debugger non carica un file con estensione pdb che non corrisponde al file eseguibile sottoposto a debug. Se non viene trovato alcun file con estensione pdb, viene visualizzata una finestra di dialogo **Trova simboli** che consente di cercare simboli o aggiungere altri percorsi al percorso di ricerca.  
+Il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizza il percorso del file pdb specificato nel file con estensione exe o dll per trovare il file project.pdb. Se il file con estensione pdb non viene trovato in tale percorso oppure se il percorso non è valido, viene eseguita una ricerca nel percorso contenente il file EXE e quindi nei percorsi di simboli specificati nella finestra di dialogo **Opzioni** . Questo percorso in genere corrisponde alla cartella **Debug** del nodo **Simboli** . Il debugger non carica un file con estensione pdb che non corrisponde al file eseguibile sottoposto a debug. Se non viene trovato alcun file con estensione pdb, viene visualizzata una finestra di dialogo **Trova simboli** che consente di cercare simboli o aggiungere altri percorsi al percorso di ricerca.  
   
- **Applicazioni Web**  
+**Applicazioni Web**  
   
- Il file di configurazione dell'applicazione (Web.config) deve essere impostato sulla modalità debug. Tramite la modalità di debug, ASP.NET genera simboli per i file generati dinamicamente e il debugger si collega all'applicazione ASP.NET. Visual Studio configura automaticamente questa impostazione quando si avvia il debug, se è stato creato il progetto dal modello dei progetti Web.  
+Il file di configurazione dell'applicazione (Web.config) deve essere impostato sulla modalità debug. Tramite la modalità di debug, ASP.NET genera simboli per i file generati dinamicamente e il debugger si collega all'applicazione ASP.NET. Visual Studio configura automaticamente questa impostazione quando si avvia il debug, se è stato creato il progetto dal modello dei progetti Web.  
   
 ##  <a name="BKMK_Find_source_files"></a> Individuare i file di origine  
   
