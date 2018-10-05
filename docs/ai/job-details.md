@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: f11a66fd06a2b0b3b23d35c3153c5dd26fab282e
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b7c8de18ba0083d31287fe862ab0015cb210bce1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29709831"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279635"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Visualizzare le prestazioni e i dettagli di processi recenti
 Dopo l'invio dei processi è possibile visualizzare l'elenco dei processi per controllare il relativo stato, la durata e altri dettagli.
@@ -13,7 +13,7 @@ Dopo l'invio dei processi è possibile visualizzare l'elenco dei processi per co
 1. In **Esplora server** espandere il contesto di calcolo specifico.
 1. Fare doppio clic su **Processi**.
 1. Verrà visualizzato l'elenco dei processi inviati a tale contesto di calcolo.
-1. Selezionare un **processo** specifico nell'elenco per visualizzare i dettagli
+1. Selezionare un **processo** specifico dall'elenco per visualizzare i dettagli.
 
 ![Monitorare i processi](media\job-details\monitor-jobs.png)
 

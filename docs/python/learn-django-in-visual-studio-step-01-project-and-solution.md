@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626870"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280168"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Django in Visual Studio
 
@@ -100,7 +100,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
     ![Finestra di Team Explorer per il push in un repository remoto esistente](media/django/step01-push-to-github.png)
 
-    Se non è disponibile un repository esistente, le opzioni **Pubblica in GitHub** e **Effettua il push in Visual Studio Team Services** permettono di crearne uno direttamente da Visual Studio.
+    Se non è disponibile un repository esistente, le opzioni **Pubblica in GitHub** e **Esegui push ad Azure DevOps** consentono di crearne uno direttamente da Visual Studio.
 
 1. Durante lo svolgimento di questa esercitazione, abituarsi a usare periodicamente i controlli in Visual Studio per il commit e il push delle modifiche. Questa esercitazione ricorda di eseguire queste operazioni nei momenti appropriati.
 

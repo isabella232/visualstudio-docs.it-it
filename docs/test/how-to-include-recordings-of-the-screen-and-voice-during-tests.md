@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381970"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321073"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test
 
@@ -28,7 +28,7 @@ La funzionalità di registrazione dello schermo e della voce può essere utilizz
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Per configurare la registrazione dello schermo e della voce per le impostazioni di test
 
-1.  Aprire le impostazioni di test che si desidera configurare per la registrazione dello schermo e della voce. Per altre informazioni, vedere [Raccogliere dati diagnostici durante i test (VSTS)](/vsts/manual-test/collect-diagnostic-data) o [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+1.  Aprire le impostazioni di test che si desidera configurare per la registrazione dello schermo e della voce. Per altre informazioni, vedere [Raccogliere dati di diagnostica durante i test (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) o [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
 
 2.  Nelle impostazioni di test selezionare il **Ruolo** da usare per registrare lo schermo e la voce.
 
@@ -63,7 +63,7 @@ La funzionalità di registrazione dello schermo e della voce può essere utilizz
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Raccogliere dati di diagnostica durante i test (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Raccogliere dati di diagnostica nei test manuali (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Raccogliere dati di diagnostica durante i test (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
-- [Eseguire test manuali (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Eseguire test manuali (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204206"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320631"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installare agenti di test e test controller
 
-Per gli scenari di test che usano Visual Studio e Visual Studio Team Services (VSTS) o Team Foundation Server (TFS), non occorre un test controller. Gli agenti per Visual Studio gestiscono l'orchestrazione mediante la comunicazione con VSTS o TFS. Uno scenario potrebbe essere l'esecuzione continuativa di test per i flussi di lavoro di compilazione e versione in VSTS o TFS.
+Per gli scenari di test che usano Visual Studio e Azure Test Plans o Team Foundation Server (TFS), non occorre un test controller. Gli agenti per Visual Studio gestiscono l'orchestrazione mediante la comunicazione con Azure Test Plans o TFS. Uno scenario potrebbe essere l'esecuzione continuativa di test per i flussi di lavoro di compilazione e versione in Azure Test Plans o TFS.
 
 Potrebbe anche essere utile valutare se è preferibile usare la [gestione di compilazione e versione](use-build-or-rm-instead-of-lab-management.md) anziché Lab Management.
 
@@ -58,13 +58,13 @@ Questi programmi di installazione sono disponibili come file ISO per facilitarne
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Eseguire l'aggiornamento da agenti di test di Visual Studio 2013
 
-È consigliabile usare gli agenti per Visual Studio in tutti i nuovi scenari di test automatizzato. Per scaricare e installare gli agenti di test nel computer, è possibile usare l'attività *Deploy Test Agents* (Distribuisci agenti di test) in una definizione di compilazione.
+È consigliabile usare gli agenti per Visual Studio in tutti i nuovi scenari di test automatizzato. Per scaricare e installare gli agenti di test nel computer, è possibile usare l'attività *Deploy Test Agents* (Distribuisci agenti di test) in una pipeline di compilazione.
 
-La tabella seguente visualizza gli scenari supportati da Agents per Visual Studio 2013 e le alternative per Team Foundation Server (TFS) 2015 e VSTS:
+La tabella seguente visualizza gli scenari supportati da Agents per Visual Studio 2013 e le alternative per Team Foundation Server (TFS) 2015 e Azure Test Plans:
 
-| Scenari supportati da Agents per Visual Studio 2013 | Alternativa in TFS e VSTS |
+| Scenari supportati da Agents per Visual Studio 2013 | Alternativa in TFS e Azure Test Plans |
 | --- | --- |
-| Flusso di lavoro compilazione, distribuzione e test in Visual Studio | Gli utenti possono usare una [definizione di compilazione](/vsts/build-release/) (non una compilazione XAML) per gli scenari di compilazione, distribuzione e test in TFS. |
+| Flusso di lavoro compilazione, distribuzione e test in Visual Studio | Gli utenti possono usare una [pipeline di compilazione](/azure/devops/pipelines/index?view=vsts) (non una compilazione XAML) per gli scenari di compilazione, distribuzione e test in TFS. |
 | Test di carico (test delle prestazioni) usando computer remoti in posizioni locali | Per eseguire i test di carico in locale, usare Test Controller e Test Agents 2013 Update 5. |
 | Esecuzione remota di test automatizzati da Microsoft Test Manager usando un ambiente lab | Attualmente non è disponibile nessuna alternativa per questo scenario. È consigliabile usare l'attività Esegui test funzionali nelle definizioni di compilazione e di versione (non in una compilazione XAML) per eseguire i test in modalità remota. |
 | Sviluppatori che eseguono test remoti in Visual Studio | Non è più supportato. |

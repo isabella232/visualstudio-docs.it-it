@@ -11,26 +11,26 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845379"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320618"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usare Build and Release Management per l'esecuzione di test automatizzati
 
-Se si usano Microsoft Test Manager (MTM) e Lab Management per l'esecuzione di test automatizzati o per l'automazione delle operazioni di compilazione/distribuzione/test, questo argomento descrive come ottenere gli stessi risultati tramite le funzionalità [Compilazione e versione](/vsts/build-release/) in Team Foundation Server (TFS) e Visual Studio Team Services (VSTS).
+Se si usano Microsoft Test Manager (MTM) e Lab Management per l'esecuzione di test automatizzati o per l'automazione delle operazioni di compilazione/distribuzione/test, questo argomento descrive come ottenere gli stessi risultati tramite le funzionalità [build e release](/azure/devops/pipelines/index?view=vsts) in Team Foundation Server (TFS) e Azure Test Plans.
 
 ## <a name="build-deploy-test-automation"></a>Automazione delle operazioni di compilazione/distribuzione/test
 
-Per l'automazione della compilazione, della distribuzione e del test delle applicazioni, MTM e Lab Management si basano su una definizione di compilazione XAML. Per raggiungere questo obiettivo, la compilazione XAML si basa su diversi costrutti creati in MTM, ad esempio un ambiente lab e gruppi e impostazioni di test, e sui vari componenti di infrastruttura, ad esempio un controller di compilazione, agenti di compilazione, un controller di test e agenti di test. È possibile ottenere lo stesso risultato con un numero inferiore di passaggi tramite Build and Release Management in TFS e in Team Services.
+Per l'automazione della compilazione, della distribuzione e del test delle applicazioni, MTM e Lab Management si basano su una definizione di compilazione XAML. Per raggiungere questo obiettivo, la compilazione XAML si basa su diversi costrutti creati in MTM, ad esempio un ambiente lab e gruppi e impostazioni di test, e sui vari componenti di infrastruttura, ad esempio un controller di compilazione, agenti di compilazione, un controller di test e agenti di test. È possibile ottenere lo stesso risultato con un numero inferiore di passaggi tramite Build and Release Management in TFS e in Azure Pipelines.
 
 | Passaggi | Con la compilazione XAML | Con Build and Release Management |
 |-------|----------------------|-----------------|
 | Identificare i computer in cui distribuire la compilazione ed eseguire i test. | Creare un ambiente lab standard in MTM con questi computer. | N/D |
 | Identificare i test da eseguire. | Creare un gruppo di test in MTM, creare i test case e associare l'automazione a ogni test case. Creare le impostazioni di test in MTM identificando il ruolo dei computer nell'ambiente lab in cui devono essere eseguiti i test. | Se si prevede di gestire l'esecuzione dei test tramite piani di test, creare un gruppo di test automatizzati in MTM nello stesso modo. In alternativa, è possibile evitare questo passaggio se i test devono essere eseguiti direttamente da file binari di test generati dalle compilazioni. In entrambi i casi non è necessario creare impostazioni di test. |
-| Automatizzare la distribuzione e l'esecuzione di test. | Creare una definizione di compilazione XAML tramite LabDefaultTemplate.*.xaml. Specificare la compilazione, i gruppi di test e l'ambiente lab nella definizione di compilazione. | Creare una [definizione di compilazione o di versione](/vsts/build-release/) con un unico ambiente. Eseguire lo stesso script di distribuzione (dalla definizione di compilazione XAML) tramite l'attività Riga di comando ed eseguire test automatizzati tramite le attività Distribuzione agente di test ed Esegui test funzionali. Come input per queste attività, specificare l'elenco dei computer e le relative credenziali. |
+| Automatizzare la distribuzione e l'esecuzione di test. | Creare una definizione di compilazione XAML tramite LabDefaultTemplate.*.xaml. Specificare la compilazione, i gruppi di test e l'ambiente lab nella definizione di compilazione. | Creare una [pipeline di compilazione o di versione](/azure/devops/pipelines/index?view=vsts) con un unico ambiente. Eseguire lo stesso script di distribuzione (dalla definizione di compilazione XAML) tramite l'attività Riga di comando ed eseguire test automatizzati tramite le attività Distribuzione agente di test ed Esegui test funzionali. Come input per queste attività, specificare l'elenco dei computer e le relative credenziali. |
 
 Ecco alcuni dei vantaggi dell'uso di Build and Release Management per questo scenario:
 
@@ -45,17 +45,17 @@ Ecco alcuni dei vantaggi dell'uso di Build and Release Management per questo sce
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Gestione self-service di ambienti SCVMM
 
-Il [Test Center in Microsoft Test Manager](/vsts/manual-test/mtm/guidance-mtm-usage) supporta la possibilità di gestire una raccolta di modelli di ambiente, nonché di eseguire il provisioning di ambienti su richiesta tramite un [server SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+Il [Test Center in Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts) supporta la possibilità di gestire una raccolta di modelli di ambiente, nonché di eseguire il provisioning di ambienti su richiesta tramite un [server SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
 
 Le funzionalità di provisioning self-service di Centro lab hanno due obiettivi distinti:
 
 * Fornire un modo più semplice per gestire l'infrastruttura. La gestione di modelli di macchine virtuali e di ambienti e la creazione automatica di reti private per isolare i cloni degli ambienti l'uno dall'altro sono esempi di gestione dell'infrastruttura.
 
-* Consentire ai team di utilizzare macchine virtuali in modo più semplice per le attività di test e distribuzione. La possibilità di accedere agli ambienti lab con lo stesso modello di sicurezza dei progetti team e l'uso integrato delle macchine virtuali negli scenari di test sono esempi di utilizzo semplificato.
+* Consentire ai team di utilizzare macchine virtuali in modo più semplice per le attività di test e distribuzione. La possibilità di accedere agli ambienti lab con lo stesso modello di sicurezza dei progetti e l'uso integrato delle macchine virtuali negli scenari di test sono esempi di utilizzo semplificato.
 
 Tuttavia, data l'evoluzione di sistemi più avanzati di gestione del cloud pubblico e privato, come esempio [Microsoft Azure](https://azure.microsoft.com/) e [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/), per le funzionalità di gestione dell'infrastruttura di TFS 2017 e versioni successive non è prevista un'evoluzione. Viene invece ancora dedicata molta attenzione alla facilità di utilizzo delle risorse gestite tramite questo tipo di infrastrutture cloud.
 
-La tabella seguente offre un riepilogo delle attività più comuni eseguite in Centro lab e del modo in cui è possibile eseguire queste attività tramite SCVMM o Azure (nel caso di attività di gestione dell'infrastruttura) o tramite TFS e Team Services (nel caso di attività di test o distribuzione):
+La tabella seguente offre un riepilogo delle attività più comuni eseguite in Centro lab e del modo in cui è possibile eseguire queste attività tramite SCVMM o Azure (nel caso di attività di gestione dell'infrastruttura) o tramite TFS e Azure DevOps Services (nel caso di attività di test o distribuzione):
 
 | Passaggi | Con Centro lab | Con Build and Release Management |
 |-------|----------------------|-----------------|
@@ -68,11 +68,11 @@ La tabella seguente offre un riepilogo delle attività più comuni eseguite in C
 
 Un ambiente lab con isolamento rete è un gruppo di macchine virtuali SCVMM che possono essere clonate in sicurezza senza creare conflitti di rete. Questa attività è stata eseguita in MTM in base a una serie di istruzioni che usavano un set di schede di interfaccia di rete per configurare le macchine virtuali in una rete privata e un altro set di schede di interfaccia di rete per configurare le macchine virtuali in una rete pubblica.
 
-Tuttavia, è possibile usare Visual Studio Team Services e Team Foundation Server, in combinazione con l'attività di compilazione e distribuzione di SCVMM, per gestire gli ambienti SCVMM, eseguire il provisioning di reti virtuali isolate e implementare scenari di compilazione-distribuzione-test. Ad esempio, è possibile usare l'attività per:
+Tuttavia, è possibile usare Azure Test Plans e Team Foundation Server, in combinazione con l'attività di compilazione e distribuzione di SCVMM, per gestire gli ambienti SCVMM, eseguire il provisioning di reti virtuali isolate e implementare scenari di compilazione-distribuzione-test. Ad esempio, è possibile usare l'attività per:
 
 * Creare, ripristinare ed eliminare i checkpoint
 * Creare nuove macchine virtuali con un modello
 * Avviare e arrestare le macchine virtuali
 * Eseguire script di PowerShell personalizzati per SCVMM
 
-Per altre informazioni, vedere [Create a virtual network isolated environment for build-deploy-test scenarios](/vsts/build-release/actions/virtual-networks/create-virtual-network) (Creare un ambiente con isolamento di rete virtuale per scenari di compilazione-distribuzione-test).
+Per altre informazioni, vedere [Create a virtual network isolated environment for build-deploy-test scenarios](/azure/devops/pipelines/targets/create-virtual-network?view=vsts) (Creare un ambiente con isolamento di rete virtuale per scenari di compilazione-distribuzione-test).

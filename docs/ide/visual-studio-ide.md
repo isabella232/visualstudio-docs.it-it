@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627111"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320787"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Benvenuti all'IDE di Visual Studio
 
@@ -50,7 +50,7 @@ Per offrire una panoramica visiva di Visual Studio ad alto livello, l'immagine s
 
 - La finestra [Output](../ide/reference/output-window.md) (in basso al centro) è la finestra in cui Visual Studio invia le notifiche, ad esempio messaggi di errore e di debug, avvisi del compilatore, messaggi di stato di pubblicazione e altro. Ogni messaggio viene visualizzato in una scheda separata.
 
-- [Team Explorer](/vsts/user-guide/work-team-explorer) (in basso a destra) consente di tenere traccia degli elementi di lavoro e di condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [Team Foundation Version Control (TFVC)](/vsts/tfvc/overview).
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (in basso a destra) consente di tenere traccia degli elementi di lavoro e di condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
 ### <a name="popular-productivity-features"></a>Funzionalità di produttività più note
 
@@ -273,6 +273,8 @@ Se l'utente è pronto per approfondire maggiormente le attività di codifica, il
 - [Usare Visual Studio per creare la prima app Web Python](quickstart-python.md)
 
 - [Usare Visual Studio per creare la prima app Web C#](quickstart-aspnet-core.md)
+
+- [Usare Visual Studio per creare la prima app Web F#](quickstart-fsharp.md)
 
 - [Usare Visual Studio per creare la prima app Node.js](quickstart-nodejs.md)
 

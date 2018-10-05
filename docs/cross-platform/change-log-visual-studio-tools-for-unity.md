@@ -10,15 +10,33 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
-ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
+ms.openlocfilehash: abec2e0d2485b99d5cde020bffc5ad0b2dd473ac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42627040"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775384"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="3806"></a>3.8.0.6
+ Data di rilascio: 27 agosto 2018
+ 
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Correzione di ricaricamento di progetti e soluzione.
+
+## <a name="3805"></a>3.8.0.5
+ Data di rilascio: 20 agosto 2018
+ 
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Correzione dell'eliminazione della sottoscrizione di monitoraggio del progetto.
 
 ## <a name="3804"></a>3.8.0.4
  Data di rilascio: 14 agosto 2018

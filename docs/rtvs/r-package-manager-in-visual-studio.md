@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 8086d28c9591195c90268b52a03325b8acc2e420
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666514"
 ---
 # <a name="package-manager"></a>Gestione pacchetti
 
-Gestione pacchetti di R Tools per Visual Studio (RTVS) è un'interfaccia utente per la gestione dei pacchetti R. Per aprire questo strumento, selezionare **R Tools > Finestre > Pacchetti** o premere CTRL + 7.
+Gestione pacchetti di R Tools per Visual Studio (RTVS) è un'interfaccia utente per la gestione dei pacchetti R. Per aprirla, selezionare **R Tools** > **Finestre** > **Pacchetti** o premere **CTRL**+**7**.
 
 Gestione pacchetti contiene tre schede. Ogni scheda visualizza a sinistra un elenco di pacchetti pertinenti e a destra i dettagli specifici del pacchetto selezionato, ad esempio la versione, la descrizione, la licenza, il percorso di installazione, nonché collegamenti ad altre informazioni pertinenti. La casella di ricerca in alto a destra consente di filtrare l'elenco.
 
@@ -41,5 +42,5 @@ Gestione pacchetti contiene tre schede. Ogni scheda visualizza a sinistra un ele
 
 I pacchetti vengono installati nei percorsi seguenti:
 
-- I pacchetti di base inclusi in RTVS vengono installati in `C:\Program Files\Microsoft\R Client\R_SERVER\library`
-- I pacchetti aggiuntivi vengono installati in `%userprofile%\Documents\R\win-library\3.3`
+- I pacchetti di base inclusi in RTVS vengono installati in *C:\Programmi\Microsoft\R Client\R_SERVER\library*
+- I pacchetti aggiuntivi vengono installati in *%userprofile%\Documents\R\win-library\3.3*

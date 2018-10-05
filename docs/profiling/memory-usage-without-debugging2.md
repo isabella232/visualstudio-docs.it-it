@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668821"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger di Visual Studio
 È possibile usare lo strumento **Utilizzo memoria** senza debug per eseguire le operazioni seguenti:  
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/17/2018
   
  Questo argomento descrive come usare lo strumento Utilizzo memoria per analizzare un'app XAML UWP. Se si vuole analizzare l'uso della memoria nelle app UWP che usano JavaScript e HTML, vedere [Analizzare l'utilizzo della memoria (JavaScript)](../profiling/javascript-memory.md).  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Avviare una sessione di diagnostica con lo strumento Utilizzo memoria  
+## <a name="start-a-memory-usage-diagnostic-session"></a>Avviare una sessione diagnostica di Utilizzo memoria  
   
 1.  Aprire un progetto universale di Windows C# in Visual Studio.  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/17/2018
   
      ![Avviare una sessione di diagnostica con lo strumento Utilizzo memoria](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a> Monitorare l'uso della memoria  
+## <a name="monitor-memory-use"></a>Monitorare l'uso della memoria  
  Oltre a usare lo strumento **Utilizzo memoria** per generare rapporti dettagliati con cui trovare e correggere errori, è possibile usarlo anche per studiare gli effetti in tempo reale sulla memoria di uno scenario che si sta sviluppando attivamente.  
   
  Quando si avvia una sessione di diagnostica, l'app viene avviata e nella finestra **Strumenti di diagnostica** viene visualizzato un grafico della sequenza temporale dell'uso della memoria dell'app.  
@@ -55,12 +56,12 @@ ms.lasthandoff: 05/17/2018
   
  Per arrestare una sessione di monitoraggio senza creare un report, chiudi semplicemente la finestra di diagnostica. Per generare un rapporto dopo aver creato snapshot della memoria, scegliere **Arresta**.  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Creare snapshot dello stato della memoria dell'app  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Creare snapshot dello stato della memoria dell'app  
  Se viene riscontrato un problema di memoria su cui si vuole indagare, è possibile creare alcuni snapshot durante la sessione di diagnostica per acquisire oggetti in memoria in determinati momenti. Dato che un'app usa un gran numero di tipi di oggetti, potresti voler concentrare la tua analisi su un solo scenario. È anche una buona idea acquisire uno snapshot di base dell'app prima che si verifichi un problema di memoria, un altro dopo che il problema si presenta per la prima volta e uno o più snapshot aggiuntivi se si può ripetere lo scenario.  
   
  Per raccogliere snapshot, avvia una nuova sessione di diagnostica. Scegliere **Crea snapshot** quando si vogliono acquisire i dati di memoria. Per generare un rapporto, scegliere **Arresta**.  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a> Pagina delle informazioni generali dello strumento Utilizzo memoria  
+##  <a name="memory-usage-overview-page"></a>Pagina delle informazioni generali dello strumento Utilizzo memoria  
  Una volta completata la raccolta dei dati, lo strumento Utilizzo memoria arresta l'app e visualizza un report con informazioni generali.  
   
  ![Pagina delle informazioni generali dello strumento Utilizzo memoria](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -68,9 +69,9 @@ ms.lasthandoff: 05/17/2018
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Visualizzazioni snapshot dello strumento Utilizzo memoria  
  Usa le viste degli snapshot per aprire report dettagli in nuove finestre di Visual Studio. Esistono due tipi di viste degli snapshot:  
   
--   Un [rapporto dei dettagli degli snapshot](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) mostra i tipi e le istanze in un solo snapshot.  
+-   Un [rapporto dei dettagli degli snapshot](#snapshot-reports) mostra i tipi e le istanze in un solo snapshot.  
   
--   Un [rapporto delle differenze degli snapshot](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) confronta i tipi e le istanze in due snapshot.  
+-   Un [rapporto delle differenze degli snapshot](#snapshot-difference-diff-reports) confronta i tipi e le istanze in due snapshot.  
   
  ![Link della visualizzazione Snapshot](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 05/17/2018
 |![Passaggio 3](../profiling/media/procguid_3.png "ProcGuid_3")|Il testo del link indica la differenza tra la dimensione totale degli oggetti in memoria al momento dello snapshot e la dimensione totale dello snapshot precedente.<br /><br /> Il testo del link è un numero positivo quando la dimensione della memoria dello snapshot è maggiore rispetto allo snapshot precedente e un numero negativo quando la dimensione è minore. Il testo del link **Alla linea di base** indica che lo snapshot è il primo della sessione di diagnostica, mentre il testo **Nessuna differenza** indica che la differenza è zero.<br /><br /> Scegli questo link per visualizzare un report delle differenze degli snapshot, ordinato in base alla differenza riguardo alla dimensione totale delle istanze dei tipi.|  
 |![Passaggio 4](../profiling/media/procguid_4.png "ProcGuid_4")|Il testo del link mostra la differenza tra il numero totale di oggetti di memoria nello snapshot e il numero di oggetti nello snapshot precedente.<br /><br /> Scegli questo link per visualizzare un report delle differenze degli snapshot, ordinato in base alla differenza riguardo al numero totale di istanze dei tipi.|  
   
-##  <a name="BKMK_Snapshot_reports"></a> Rapporti degli snapshot  
+## <a name="snapshot-reports"></a>Report degli snapshot  
  ![Rapporto snapshot dello strumento Utilizzo memoria](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a> Alberi dei rapporti degli snapshot  
@@ -118,7 +119,7 @@ ms.lasthandoff: 05/17/2018
 ####  <a name="BKMK_Just_My_Code"></a> Just My Code  
  Il filtro **Just My Code** nasconde la maggior parte delle istanze generate da codice esterno. I tipi esterni sono di proprietà del sistema operativo o di componenti .NET Framework oppure sono generati dal compilatore.  
   
-##  <a name="BKMK_Snapshot_details_reports"></a> Rapporti dettagli degli snapshot  
+## <a name="snapshot-details-reports"></a>Report dettagli degli snapshot  
  Usa un report dettagli di uno snapshot per concentrarti su un solo snapshot di una sessione di diagnostica. Per aprire un report dettagli, scegli uno dei link in una visualizzazione snapshot, come mostrato nell'immagine. Entrambi i collegamenti aprono lo stesso rapporto e l'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito** nel rapporto. In entrambi i casi, puoi modificare il tipo di ordinamento dopo l'apertura del report.  
   
  ![Link al rapporto degli snapshot in una visualizzazione snapshot](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -157,7 +158,7 @@ ms.lasthandoff: 05/17/2018
 |**Dimensioni (byte)**|Per un tipo, dimensione di tutte le istanze del tipo, esclusa la dimensione degli oggetti contenuti nel tipo.<br /><br /> Per un'istanza, dimensione dell'oggetto, esclusa la dimensione degli oggetti contenuti nell'oggetto.|  
 |**Dimensione inclusiva (byte)**|Dimensione totale delle istanze del tipo o dimensione dell'istanza, inclusa la dimensione degli oggetti contenuti.|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a> Rapporti delle differenze di snapshot  
+## <a name="snapshot-difference-diff-reports"></a>Report delle differenze degli snapshot  
  Un report delle differenze degli snapshot mostra le modifiche tra uno snapshot principale e lo snapshot creato immediatamente prima. Per aprire un report delle differenze, scegli uno dei link in una visualizzazione snapshot, come mostrato nell'immagine. Entrambi i collegamenti aprono lo stesso rapporto e l'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito** nel rapporto. Puoi modificare il tipo di ordinamento dopo l'apertura del report.  
   
  ![Link al rapporto delle differenze in una visualizzazione snapshot](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
@@ -202,6 +203,6 @@ ms.lasthandoff: 05/17/2018
 ## <a name="see-also"></a>Vedere anche  
  [Memoria JavaScript](../profiling/javascript-memory.md)  
  [Profilatura in Visual Studio](../profiling/index.md)  
- [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)  
+ [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)  
  [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnostica dei problemi di memoria con il nuovo strumento Utilizzo memoria in Visual Studio)

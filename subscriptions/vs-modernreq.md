@@ -9,16 +9,16 @@ description: Informazioni sulla suite di prodotti MODERNRequirements inclusi nel
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289469"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279024"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Vantaggio MODERNRequirements4TFS nelle sottoscrizioni di Visual Studio
 
-Alcune sottoscrizioni di Visual Studio selezionate includono una sottoscrizione di sei mesi per SmartOffice 4TFS di MODERNRequirements e ModernRequirements4TFS.  SmartOffice4TFS di MODERNRequirements estende le funzionalità di TFS o Visual Studio Team Services con report basati su Microsoft Word e la creazione di testi con formattazione semplificata e veloce.  ModernRequirements4TFS fornisce elementi di lavoro di base e funzionalità di simulazione HTML5.
+Alcune sottoscrizioni di Visual Studio selezionate includono una sottoscrizione di sei mesi per SmartOffice 4TFS di MODERNRequirements e ModernRequirements4TFS.  SmartOffice4TFS di MODERNRequirements estende le funzionalità di TFS o Azure DevOps Services con report basati su Microsoft Word e la creazione di testi con formattazione semplificata e veloce.  ModernRequirements4TFS fornisce elementi di lavoro di base e funzionalità di simulazione HTML5.
 
 
 ## <a name="activation-steps"></a>Procedura di attivazione
@@ -41,7 +41,7 @@ Alcune sottoscrizioni di Visual Studio selezionate includono una sottoscrizione 
 
 5.  Nella pagina di download è possibile installare le suite di MODERNRequirements o singoli moduli dalla suite SMARTOffice4TFS.  L'opzione più adatta dipende dalle preferenze e dalla versione di TFS installata.  Assicurarsi di acquisire familiarità con le informazioni nella pagina per facilitare la scelta della versione corretta dei prodotti.
     > [!div class="mx-imgBorder"]
-    > ![Opzioni di download di ModernRequirements](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+    > ![Opzioni di Download di ModernRequirements](_img\vs-modernreq\vs-modernreq-download-page-new.png)
 
 6.  In questo esempio si sceglierà SMARTOffice4TFS.  Verrà visualizzata la finestra di dialogo di download con tre opzioni per il download e il salvataggio del file con estensione zip.  In questo esempio si sceglie **Salva** in modo da avere una copia del pacchetto nella cartella Download del PC.
 
@@ -101,4 +101,4 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 ## <a name="support-resources"></a>Risorse di supporto
 -  Serve aiuto con i prodotti ModernRequirements?  Visitare https://www.modernrequirements.com/support-2/.
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

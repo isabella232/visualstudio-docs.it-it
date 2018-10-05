@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebbc778c71c464a6e4eabaebfff15760b99478
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78e83a69e21c1c6cd1aa10235d66f63fb1e5e27a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954259"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775219"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Combinazioni di tasti (Help Viewer)
 
@@ -61,7 +61,7 @@ ms.locfileid: "31954259"
 |Argomento|**CTRL**+**TAB**|Passare da una scheda all'altra da sinistra a destra.|
 |Argomento|**CTRL**+**MAIUSC**+**TAB**|Passare da una scheda all'altra da destra a sinistra.|
 |Argomento|**CTRL**+**W**|Chiudere la scheda corrente.|
-|Argomento|**CTRL**+***numero***|Passare a una scheda specifica in cui ***numero*** è compreso tra 1 e 9 e indica la scheda in sequenza.|
+|Argomento|**CTRL**+**_numero_**|Passare a una scheda specifica in cui **_numero_** è compreso tra 1 e 9 e indica la scheda in sequenza.|
 |Argomento|**CTRL**+**ALT**+**F4**|Chiudere le altre schede del contenuto.|
 |Argomento|**CTRL**+**MAIUSC**+**segno più**|Aumentare lo zoom del 10%.|
 |Argomento|**CTRL**+**segno meno**|Ridurre lo zoom del 10%.|

@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380365"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320904"
 ---
 # <a name="unit-test-your-code"></a>Eseguire unit test del codice
 
@@ -49,8 +49,8 @@ Usare gli argomenti seguenti per la comprensione e la creazione di unit test:
 |**Eseguire unit test del codice**|-   [Scrivere unit test per C/C++ con il framework di unit test Microsoft per C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**Isolamento degli unit test**|-   [Isolare codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Usare code coverage per identificare la percentuale del codice del progetto in fase di test:** informazioni sulla funzionalità code coverage degli strumenti di test di Visual Studio.|-   [Usare la funzionalità code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Eseguire analisi di stress e prestazioni usando test di carico:** è possibile creare un test di carico e aggiungervi gli unit test per isolare problemi di prestazioni e di stress nell'applicazione.|-   [Test di carico (VSTS e TFS)](/vsts/load-test/)|
-|**Impostare quality gate:** è possibile creare quality gate che stabiliscano l'esecuzione dei test prima dell'archiviazione del codice, in modo da garantire la qualità di quest'ultimo.|-   [Check-in policies (VSTS)](/vsts/tfvc/add-check-policies) (Criteri di archiviazione (VSTS))|
+|**Eseguire analisi di stress e prestazioni usando test di carico:** è possibile creare un test di carico e aggiungervi gli unit test per isolare problemi di prestazioni e di stress nell'applicazione.|-   [Test di carico (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Impostare quality gate:** è possibile creare quality gate che stabiliscano l'esecuzione dei test prima dell'archiviazione o dell'unione del codice, in modo da garantire la qualità di quest'ultimo.|-   [Criteri di archiviazione (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**Impostare le opzioni di test:** ad esempio, è possibile specificare dove archiviare i risultati dei test.|[Configurazione di unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentazione di riferimento API

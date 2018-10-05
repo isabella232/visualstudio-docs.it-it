@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9d2d6c30696636bc8fd2ca571940ac0165eabbcf
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379289"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321047"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Procedura: Installare un adattatore dati di diagnostica personalizzato
 
@@ -46,7 +46,7 @@ Se si è creato un adattatore dati di diagnostica personalizzato o si è ricevut
     > [!NOTE]
     > Anche se l'adattatore dati di diagnostica e l'editor di configurazione possono essere creati nello stesso progetto e compilati nello stesso assembly, è possibile utilizzare progetti distinti e creare assembly distinti, se lo si preferisce.
 
-     Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 2.  Per selezionare l'adattatore dati di diagnostica per un test, è necessario in primo luogo selezionare impostazioni test esistenti o crearne di nuove da Microsoft Test Manager o Visual Studio, quindi selezionare l'adattatore dati di diagnostica nella scheda **Dati e diagnostica** delle impostazioni di test selezionate.
 
