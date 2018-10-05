@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281065"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548231"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Passaggio 6: Usare il modello Progetto Web Django di sondaggi
 
@@ -118,7 +118,7 @@ Un modello Choice è correlato a un modello Poll tramite il campo `poll`, contie
 
 L'elenco completo di tipi di campo è `CharField` (testo limitato) `TextField` (testo illimitato), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` e `ManyToMany`. Ogni campo accetta alcuni attributi, ad esempio `max_length`. L'attributo `blank=True` indica che il campo è facoltativo. `null=true` indica che un valore è facoltativo. C'è anche un attributo `choices` che limita i valori a quelli inclusi in una matrice di tuple valore dati/valore visualizzato. Vedere [Model field reference](https://docs.djangoproject.com/en/2.0/ref/models/fields/) (Informazioni di riferimento sui campi dei modelli) nella documentazione di Django.
 
-È possibile determinare esattamente ciò che viene archiviato nel database esaminando il file *db.sqlite3* nel progetto tramite uno strumento come il [browser SQLite](http://sqlitebrowser.org/). Nel database è possibile notare che un campo di chiave esterna come `poll` nel modello Choice è archiviato come `poll_id`. Django gestisce il mapping automaticamente.
+È possibile determinare esattamente ciò che viene archiviato nel database esaminando il file *db.sqlite3* nel progetto tramite uno strumento come il [browser SQLite](https://sqlitebrowser.org/). Nel database è possibile notare che un campo di chiave esterna come `poll` nel modello Choice è archiviato come `poll_id`. Django gestisce il mapping automaticamente.
 
 In generale, usare il database in Django significa lavorare esclusivamente tramite i modelli, in modo che Django possa gestire il database sottostante per conto dell'utente.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Per vedere l'effetto, eseguire prima di tutto l'app per vedere che non sono ancora presenti sondaggi. Visitare quindi l'URL "/seed" e, quando l'app torna alla home page, si dovrebbe notare che sono diventati disponibili alcuni sondaggi. Esaminare anche in questo caso il file *db.sqlite3* non elaborato con uno strumento come il [browser SQLite](http://sqlitebrowser.org/).
+Per vedere l'effetto, eseguire prima di tutto l'app per vedere che non sono ancora presenti sondaggi. Visitare quindi l'URL "/seed" e, quando l'app torna alla home page, si dovrebbe notare che sono diventati disponibili alcuni sondaggi. Esaminare anche in questo caso il file *db.sqlite3* non elaborato con uno strumento come il [browser SQLite](https://sqlitebrowser.org/).
 
 ![App Progetto Web Django di sondaggi con database con valori di inizializzazione](media/django/step06-app-with-seeded-database.png)
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283418"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029066"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
@@ -36,7 +36,7 @@ In questa esercitazione si imparerà a:
 Nel corso della procedura verrà creata un'unica soluzione di Visual Studio che contiene tre progetti separati. Il progetto viene creato usando diversi modelli di progetto Flask inclusi in Visual Studio. Mantenendo i progetti nella stessa soluzione, è possibile spostarsi facilmente tra i diversi file per confrontarli.
 
 > [!Note]
-> Questa esercitazione si differenzia dalla guida [Flask Quickstart](../ide/quickstart-python.md?context=visualstudio/python/default) (Avvio rapido di Flask) per il fatto che offre un maggior numero di informazioni e spiega come usare i vari modelli di progetto Flask, ideali come punto di partenza per la creazione dei propri progetti. Ad esempio, i modelli di progetto installano automaticamente il pacchetto Flask durante la creazione di un progetto, evitando la necessità di installare il pacchetto manualmente come illustrato nell'Avvio rapido.
+> Questa esercitazione si differenzia dalla guida [Flask Quickstart](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) (Avvio rapido di Flask) per il fatto che offre un maggior numero di informazioni e spiega come usare i vari modelli di progetto Flask, ideali come punto di partenza per la creazione dei propri progetti. Ad esempio, i modelli di progetto installano automaticamente il pacchetto Flask durante la creazione di un progetto, evitando la necessità di installare il pacchetto manualmente come illustrato nell'Avvio rapido.
 
 ## <a name="prerequisites"></a>Prerequisiti
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995963"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547932"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Django con visualizzazioni e modelli di pagina
 
@@ -125,7 +125,7 @@ Risposta: Nelle espressioni regolari che definiscono modelli di URL, ^ significa
 
 Se non si usa un carattere $ finale in un'espressione regolare, come in `^home`, il modello di URL corrisponde a *qualsiasi* URL che inizia con "home", ad esempio "home", "homework", "homestead" e "home192837".
 
-Per sperimentare diverse espressioni regolari, provare gli strumenti online, ad esempio [regex101.com](https://regex101.com) all'indirizzo [pythex.org](http://www.pythex.org).
+Per sperimentare diverse espressioni regolari, provare gli strumenti online, ad esempio [regex101.com](https://regex101.com) all'indirizzo [pythex.org](https://www.pythex.org).
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Passaggio 2-3: Eseguire il rendering di una visualizzazione tramite HTML
 
