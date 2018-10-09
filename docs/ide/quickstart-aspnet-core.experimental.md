@@ -2,7 +2,7 @@
 title: Usare Visual Studio per creare un'app Web ASP.NET Core in C#
 description: Informazioni dettagliate su come creare un'app Web Hello World in Visual Studio con C# e ASP.NET Core.
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135605"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028936"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
@@ -39,9 +39,9 @@ Per prima cosa, creare un progetto dell'applicazione Web ASP:NET Core. Ecco come
 
 1. Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** verificare che **ASP.NET Core 2.0** venga visualizzato nel menu a discesa in alto. Scegliere quindi **Applicazione Web** e **OK**.
 
-  ![Visualizzare il file di immagine animata che illustra come creare un progetto ASP.NET Core C# in Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![Visualizzare il file di immagine animata che illustra come creare un progetto ASP.NET Core C# in Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  Dopo pochi istanti, Visual Studio apre il file di progetto.
+   Dopo pochi istanti, Visual Studio apre il file di progetto.
 
    > [!NOTE]
    > Se non viene visualizzata la categoria dei modelli di progetto **.NET Core** scegliere il collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro.
@@ -58,13 +58,15 @@ Per prima cosa, creare un progetto dell'applicazione Web ASP:NET Core. Ecco come
 
 In seguito si procederà alla creazione e all'esecuzione dell'app Web "Hello World". Ecco come fare.
 
-1. In **Esplora soluzioni** espandere la cartella **Pagine** e quindi scegliere **About.cshtml**.
+1. In Visual Studio, in **Esplora soluzioni** espandere la cartella **Pagine** e quindi scegliere **About.cshtml**.
 
-   Questo file corrisponde a una pagina denominata **Informazioni su** nell'app Web.
+   ![Scegliere il file About.cshtml in Esplora soluzioni](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   Questo file corrisponde a una pagina denominata **Informazioni su** nell'app Web, eseguita in un Web browser.
 
    ![Pagina di informazioni nell'app Web](../ide/media/csharp-aspnet-about-page.png)
 
-1. Modificare il testo "informazioni aggiuntive" in "**Hello World!**".
+1. Nell'editor del codice di Visual Studio modificare il testo "informazioni aggiuntive" in "**Hello World!**".
 
 1. In **Esplora soluzioni** espandere **About.cshtml** e quindi scegliere **About.cshtml**.
 
@@ -72,12 +74,12 @@ In seguito si procederà alla creazione e all'esecuzione dell'app Web "Hello Wor
 
 1. Scegliere **IIS Express** o premere **CTRL**+**F5** per eseguire l'app e aprirla in un Web browser.
 
-  ![Visualizzare il file di immagine animata che illustra come creare ed eseguire un'app Web ASP.NET Core C# in Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![Visualizzare il file di immagine animata che illustra come creare ed eseguire un'app Web ASP.NET Core C# in Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Se viene visualizzato il messaggio di errore **Non è possibile connettersi al server Web 'IIS Express'**, chiudere Visual Studio e quindi aprirlo usando l'opzione **Esegui come amministratore** dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
 
-1. Verificare che la pagina **Informazioni su** includa il testo aggiornato.
+1. Nel Web browser verificare che la pagina **Informazioni su** includa il testo aggiornato.
 
 1. Chiudere il Web browser.
 

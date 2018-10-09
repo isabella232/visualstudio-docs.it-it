@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626941"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029134"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 
-Questo documento descrive come usare l'editor modello di Visual Studio per visualizzare, creare e modificare modelli 3D.
+Questo documento descrive come usare l'**editor dei modelli** di Visual Studio per visualizzare, creare e modificare modelli 3D.
 
-È possibile usare l'editor modello per creare modelli 3D di base completamente nuovi o per visualizzare e modificare modelli 3D più complessi creati usando strumenti di modellazione 3D completi. L'editor modello supporta diversi formati di modelli 3D usati nello sviluppo di applicazioni DirectX.
+È possibile usare l'**editor dei modelli** per creare modelli 3D di base completamente nuovi o per visualizzare e modificare modelli 3D più complessi creati usando strumenti di modellazione 3D completi.
 
 ## <a name="supported-formats"></a>Formati supportati
 
-L'editor modello supporta i formati di modello indicati di seguito.
+L'**editor dei modelli** supporta diversi formati di modelli 3D usati nello sviluppo di app DirectX:
 
 |Nome del formato|Estensione nome del file|Operazioni supportate (visualizzazione, modifica, creazione)|
 |-----------------|--------------------|-------------------------------------------------|
@@ -38,24 +38,31 @@ L'editor modello supporta i formati di modello indicati di seguito.
 
 ## <a name="get-started"></a>Introduzione
 
-Questa sezione descrive come aggiungere un modello 3D al progetto Visual Studio e offre informazioni introduttive di base.
+Questa sezione descrive come aggiungere un modello 3D al progetto C++ Visual Studio e offre altre informazioni di base utili per iniziare.
+
+> [!NOTE]
+> L'integrazione della compilazione automatica degli elementi grafici, ad esempio scene 3D (file con estensione fbx) è supportata solo per i progetti C++.
 
 ### <a name="to-add-a-3d-model-to-your-project"></a>Per aggiungere un modello 3D al progetto
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto a cui si vuole aggiungere l'immagine e scegliere **Aggiungi** > **Nuovo elemento**.
+1. Assicurarsi di avere a disposizione il componente di Visual Studio richiesto installato necessario per usare gli elementi grafici. Questo componente è denominato **Editor di immagini e modelli 3D**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento**, nella categoria **Grafica**, selezionare **Scena 3D (.fbx)**.
+   Per installarlo, aprire il Programma di installazione di Visual Studio selezionando **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu e quindi selezionare la scheda **Singoli componenti**. Selezionare il componente **Editor di immagini e modelli 3D** nella categoria **Giochi e grafica** e quindi selezionare **Modifica**.
+
+   ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
+
+   Viene avviata l'installazione del componente.
+
+2. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto C++ a cui si vuole aggiungere l'immagine e quindi scegliere **Aggiungi** > **Nuovo elemento**.
+
+3. Nella finestra di dialogo **Aggiungi nuovo elemento**, nella categoria **Grafica**, selezionare **Scena 3D (.fbx)**.
 
    ![Finestra di dialogo Aggiungi nuovo elemento con scena 3D selezionata](media/add-new-3d-scene.png)
 
    > [!NOTE]
-   > Se non viene visualizzata la categoria **Grafica** nella finestra di dialogo **Aggiungi nuovo elemento**, potrebbe essere necessario installare il componente **Editor di immagini e modelli 3D**. Chiudere la finestra di dialogo e selezionare **Strumenti** > **Get Tools and Features** (Ottieni strumenti e funzionalità) dalla barra dei menu per aprire il **programma di installazione di Visual Studio**. Selezionare la scheda **Singoli componenti** e il componente **Editor di immagini e modelli 3D** nella categoria **Giochi e grafica**. Selezionare **Modifica**.
-   >
-   > ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
-   >
-   > Se è installato il componente **Editor di immagini e modelli 3D** e non viene comunque visualizzata la categoria di modello **Grafica**, questa categoria viene visualizzata solo per determinati tipi di progetto, ad esempio applicazioni console.
+   > Se non viene visualizzata la categoria **Grafica** nella finestra di dialogo **Aggiungi nuovo elemento** e il componente **Editor di immagini e modelli 3D** è installato, gli elementi grafici non sono supportati per il tipo di progetto.
 
-3. Immettere il **nome** del file del modello e selezionare **Aggiungi**.
+4. Immettere il **nome** del file del modello e selezionare **Aggiungi**.
 
 ### <a name="axis-orientation"></a>Orientamento asse
 
@@ -159,7 +166,7 @@ Per importare un oggetto 3D da un file, nella barra degli strumenti dell'**edito
 
 È possibile trasformare un oggetto utilizzando strumenti di modellazione o impostando proprietà.
 
-#### <a name="to-transform-an-object-by-using-modeling-tools"></a>Per trasformare un oggetto utilizzando strumenti di modellazione
+#### <a name="transform-an-object-by-using-modeling-tools"></a>Trasformare un oggetto usando gli strumenti di modellazione
 
 1. In modalità **Seleziona** selezionare l'oggetto da trasformare. Una sovrapposizione del wireframe indica che l'oggetto è stato selezionato.
 
@@ -167,7 +174,7 @@ Per importare un oggetto 3D da un file, nella barra degli strumenti dell'**edito
 
 3. Utilizzare il manipolatore per eseguire la trasformazione. Per le trasformazioni di traslazione e ridimensionamento il manipolatore rappresenta un indicatore di asse. È possibile modificare un asse per volta oppure tutti gli assi contemporaneamente utilizzando il cubo bianco al centro dell'indicatore. Per la rotazione, il manipolatore è una sfera composta da cerchi con colori diversi che corrispondono all'asse x (rosso), all'asse y (verde) e all'asse z (blu). È necessario modificare separatamente ogni asse per creare la rotazione desiderata.
 
-#### <a name="to-transform-an-object-by-setting-its-properties"></a>Per trasformare un oggetto impostandone le proprietà
+#### <a name="transform-an-object-by-setting-its-properties"></a>Trasformare un oggetto impostandone le proprietà
 
 1. In modalità **Seleziona** selezionare l'oggetto da trasformare. Una sovrapposizione del wireframe indica che l'oggetto è stato selezionato.
 
@@ -196,7 +203,7 @@ La traslazione e la rotazione possono verificarsi nel sistema di coordinate loca
 
 È possibile modificare la forma di un oggetto 3D spostandone o eliminandone vertici, bordi e facce. Per impostazione predefinita, l'editor dei modelli è in *modalità oggetto* ed è pertanto possibile selezionare e trasformare interi oggetti. Per selezionare punti, bordi o facce, scegliere la modalità di selezione appropriata. Nella barra degli strumenti della **modalità editor dei modelli** scegliere **Modalità di selezione** e la modalità desiderata.
 
- È possibile creare vertici aggiuntivi per estrusione o suddivisione. L'estrusione duplica i vertici di una faccia (un set complanare di vertici) che rimangono collegati tramite i vertici duplicati. La suddivisione aggiunge vertici per creare diverse facce laddove ne era presente solamente una. Per creare le nuove facce, vengono aggiunti nuovi vertici, uno al centro della faccia originale e uno in mezzo a ciascun bordo, quindi vengono uniti ai vertici originali. Il numero di facce aggiunte è uguale al numero dei bordi nella faccia originale. In entrambi i casi è possibile traslare, ruotare e ridimensionare i nuovi vertici per modificare la geometria dell'oggetto.
+È possibile creare vertici aggiuntivi per estrusione o suddivisione. L'estrusione duplica i vertici di una faccia (un set complanare di vertici) che rimangono collegati tramite i vertici duplicati. La suddivisione aggiunge vertici per creare diverse facce laddove ne era presente solamente una. Per creare le nuove facce, vengono aggiunti nuovi vertici, uno al centro della faccia originale e uno in mezzo a ciascun bordo, quindi vengono uniti ai vertici originali. Il numero di facce aggiunte è uguale al numero dei bordi nella faccia originale. In entrambi i casi è possibile traslare, ruotare e ridimensionare i nuovi vertici per modificare la geometria dell'oggetto.
 
 #### <a name="to-extrude-a-face-from-an-object"></a>Per estrudere una faccia da un oggetto
 
@@ -210,21 +217,21 @@ La traslazione e la rotazione possono verificarsi nel sistema di coordinate loca
 
 2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Strumenti** > **Suddividi**.
 
- È inoltre possibile triangolare facce, eseguire il merge di oggetti e convertire selezioni di poligoni in nuovi oggetti. La triangolazione crea bordi aggiuntivi in modo che una faccia non triangolare venga convertita in un numero ottimale di triangoli. Questa funzionalità non fornisce tuttavia dettagli geometrici aggiuntivi. L'azione di merge combina gli oggetti selezionati in un oggetto. Nuovi oggetti possono essere creati da una selezione di poligoni.
+È inoltre possibile triangolare facce, eseguire il merge di oggetti e convertire selezioni di poligoni in nuovi oggetti. La triangolazione crea bordi aggiuntivi in modo che una faccia non triangolare venga convertita in un numero ottimale di triangoli. Questa funzionalità non fornisce tuttavia dettagli geometrici aggiuntivi. L'azione di merge combina gli oggetti selezionati in un oggetto. Nuovi oggetti possono essere creati da una selezione di poligoni.
 
-#### <a name="to-triangulate-a-face"></a>Per triangolare una faccia
+#### <a name="triangulate-a-face"></a>Triangolare una faccia
 
 1. In modalità di selezione delle facce, selezionare la faccia di cui si desidera eseguire la triangolazione.
 
 2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Strumenti** > **Triangolazione**.
 
-#### <a name="to-merge-objects"></a>Per eseguire il merge di oggetti
+#### <a name="merge-objects"></a>Eseguire il merge di oggetti
 
 1. In modalità di selezione degli oggetti, selezionare gli oggetti di cui si desidera eseguire il merge.
 
 2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Strumenti** > **Merge di oggetti**.
 
-#### <a name="to-create-an-object-from-a-polygon-selection"></a>Per creare un oggetto da una selezione di poligoni
+#### <a name="create-an-object-from-a-polygon-selection"></a>Creare un oggetto da una selezione di poligoni
 
 1. In modalità di selezione delle facce, selezionare le facce da cui si desidera creare un nuovo oggetto.
 
@@ -268,13 +275,13 @@ Per rimuovere tutti i materiali da un oggetto, nella barra degli strumenti dell'
 
 È possibile costruire una gerarchia di oggetti impostandone uno come padre degli altri o raggruppandoli insieme come pari livello in un nodo segnaposto che funge da padre.
 
-#### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Per creare una gerarchia con un oggetto padre
+#### <a name="create-a-hierarchy-that-has-a-parent-object"></a>Creare una gerarchia con un oggetto padre
 
 1. In modalità **Seleziona** selezionare due o più oggetti. Il primo oggetto selezionato sarà l'oggetto padre.
 
 2. Nella barra degli strumenti dell'**editor modello** scegliere **Script** > **Scene Management** (Gestione scena)  > **Attach to Parent** (Connetti a oggetto padre).
 
-#### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Per creare una gerarchia di oggetti di pari livello
+#### <a name="create-a-hierarchy-of-sibling-objects"></a>Creare una gerarchia di oggetti di pari livello
 
 1. In modalità **Seleziona** selezionare due o più oggetti. Viene creato un oggetto segnaposto, che diviene oggetto padre.
 

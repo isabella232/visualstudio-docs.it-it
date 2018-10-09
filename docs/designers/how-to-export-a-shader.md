@@ -10,32 +10,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb69a4662521c08fc8d2df34bbbfa41a5d1d7ea
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: bd06664cda1c60d2624b77a0381e1269fcb3c484
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924079"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028976"
 ---
 # <a name="how-to-export-a-shader"></a>Procedura: Esportare uno shader
-Questo documento illustra come usare la finestra di progettazione shader per esportare uno shader DGSL (Directed Graph Shader Language) da usare nell'app.
 
- Questo documento illustra questa attività:
+Questo articolo illustra come usare la **finestra di progettazione shader** per esportare uno shader DGSL (Directed Graph Shader Language) da usare nell'app.
 
--   Esportazione di uno shader
+## <a name="export-a-shader"></a>Esportare uno shader
 
-## <a name="exporting-a-shader"></a>Esportazione di uno shader
- Dopo aver creato uno shader tramite la finestra di progettazione shader, prima di poterlo usare nell'app è necessario esportarlo in un formato supportato dall'API di grafica in uso. È possibile esportare uno shader in modi diversi, in base alle proprie esigenze.
+Dopo aver creato uno shader tramite la finestra di progettazione shader, prima di poterlo usare nell'app è necessario esportarlo in un formato supportato dall'API di grafica in uso. È possibile esportare uno shader in modi diversi, in base alle proprie esigenze.
 
-### <a name="to-export-a-shader"></a>Per esportare uno shader
-
-1.  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aprire un file **Visual Shader Graph (.dgsl)**.
+1. In Visual Studio aprire un file **Visual Shader Graph (.dgsl)**.
 
      Se non si ha un file **Visual Shader Graph (.dgsl)** da aprire, crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md).
 
-2.  Nella barra degli strumenti **Progettazione shader** scegliere **Avanzate** > **Esporta** > **Esporta come**. Viene visualizzata la finestra di dialogo **Esporta shader**.
+2. Nella barra degli strumenti **Progettazione shader** scegliere **Avanzate** > **Esporta** > **Esporta come**. Viene visualizzata la finestra di dialogo **Esporta shader**.
 
-3.  Nell'elenco a discesa **Salva come** scegliere il formato in cui si vuole esportare il file.
+3. Nell'elenco a discesa **Salva come** scegliere il formato in cui si vuole esportare il file.
 
      Di seguito sono illustrati i formati che è possibile scegliere:
 
@@ -45,7 +41,7 @@ Questo documento illustra come usare la finestra di progettazione shader per esp
 
      **Intestazione C++ (\*.h)** Esporta lo shader come intestazione di tipo C che definisce una matrice di byte contenente il bytecode HLSL. Questa opzione allunga i tempi necessari per eseguire il debug e correggere il codice in base ai problemi riscontrati dagli utenti finali, perché per testare la correzione è necessario ricompilare l'app. Questa opzione rende particolarmente difficile, seppure non impossibile, modificare lo shader dopo essere stato distribuito in un'app. Eventuali utenti che intendano modificare lo shader in modi indesiderati riscontreranno quindi grandi difficoltà.
 
-4.  Nella casella combinata **Nome file** specificare un nome per lo shader esportato e scegliere il pulsante **Salva**.
+4. Nella casella combinata **Nome file** specificare un nome per lo shader esportato e scegliere il pulsante **Salva**.
 
 ## <a name="see-also"></a>Vedere anche
 

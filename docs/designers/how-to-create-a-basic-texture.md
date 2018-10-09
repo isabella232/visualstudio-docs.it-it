@@ -10,57 +10,57 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b4bd1d34ef2dc31935038bb1be30d548c58208fd
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512629"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028988"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
-Questo documento illustra come usare l'editor di immagini per creare una trama di base.
 
- Questo documento illustra queste attività:
+Questo articolo illustra come usare l'editor di immagini per creare una trama di base, incluse le attività seguenti:
 
--   Impostazione della dimensione della trama
+- Impostazione della dimensione della trama
 
--   Impostazione dei colori di primo piano e di sfondo
+- Impostazione dei colori di primo piano e di sfondo
 
--   Utilizzo del canale alfa (trasparenza)
+- Utilizzo del canale alfa (trasparenza)
 
--   Utilizzo degli strumenti **Riempimento** e **Ellisse**
+- Utilizzo degli strumenti **Riempimento** e **Ellisse**
 
--   Impostazione delle proprietà dello strumento
+- Impostazione delle proprietà dello strumento
 
-## <a name="creating-a-basic-texture"></a>Creazione di una trama di base
- È possibile usare l'editor di immagini per creare e modificare immagini e trame per un gioco o un'app.
+## <a name="create-a-basic-texture"></a>Creare una trama di base
 
- La procedura seguente illustra come creare una trama che rappresenta una destinazione "bullseye". Al termine dell'operazione, la trama dovrebbe essere simile all'immagine seguente. Per illustrare meglio la trasparenza nella trama, l'editor di immagini è stato configurato per l'utilizzo di un modello verde a scacchi.
+È possibile usare l'editor di immagini per creare e modificare immagini e trame per un gioco o un'app.
 
- ![Destinazione "Bullseye" con trasparenza visualizzata in verde](../designers/media/digit-bullseye-texture-in-editor.png)
+La procedura seguente illustra come creare una trama che rappresenta una destinazione "bullseye". Al termine dell'operazione, la trama dovrebbe essere simile all'immagine seguente. Per illustrare meglio la trasparenza nella trama, l'editor di immagini è stato configurato per l'utilizzo di un modello verde a scacchi.
 
- Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. Usare la finestra **Proprietà** per impostare la dimensione dell'immagine, modificare le proprietà dello strumento e specificare i colori mentre si lavora.
+![Destinazione "Bullseye" con trasparenza visualizzata in verde](../designers/media/digit-bullseye-texture-in-editor.png)
 
-#### <a name="to-create-a-bullseye-target-texture"></a>Per creare una trama di destinazione "bullseye"
+Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. Usare la finestra **Proprietà** per impostare la dimensione dell'immagine, modificare le proprietà dello strumento e specificare i colori mentre si lavora.
 
-1.  Creare una trama da usare. Per informazioni su come aggiungere una trama al progetto, vedere la sezione Introduzione in [Editor di immagini](../designers/image-editor.md).
+### <a name="create-a-bullseye-target-texture"></a>Creare una trama di destinazione "bersaglio"
 
-2.  Impostare le dimensioni dell'immagine su 512 x 512 pixel. Nella finestra **Proprietà** impostare il valore delle proprietà **Larghezza** e **Altezza** su `512`.
+1. Creare una trama da usare. Per informazioni su come aggiungere una trama al progetto, vedere [Editor di immagini](../designers/image-editor.md#get-started).
 
-3.  Nella barra degli strumenti scegliere lo strumento **Riempimento**. Nella finestra **Proprietà** vengono visualizzate le proprietà dello strumento **Riempimento** insieme alle proprietà dell'immagine.
+2. Impostare le dimensioni dell'immagine su 512 x 512 pixel. Nella finestra **Proprietà** impostare il valore delle proprietà **Larghezza** e **Altezza** su `512`.
 
-4.  Impostare il colore di primo piano su un nero completamente trasparente. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Primo piano**. Impostare i valori delle proprietà **R**, **G**, **B**e **A** accanto alla selezione colori su `0`.
+3. Nella barra degli strumenti scegliere lo strumento **Riempimento**. Nella finestra **Proprietà** vengono visualizzate le proprietà dello strumento **Riempimento** insieme alle proprietà dell'immagine.
 
-5.  Nella barra degli strumenti dell'editor di immagini scegliere lo strumento **Riempimento** e, tenendo premuto **MAIUSC**, scegliere un punto qualsiasi nell'immagine. L'utilizzo di **MAIUSC** fa sì che il valore alfa del colore di riempimento sostituisca il colore dell'immagine; in caso contrario, il valore alfa consente di sfumare il colore di riempimento con il colore dell'immagine.
+4. Impostare il colore di primo piano su un nero completamente trasparente. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Primo piano**. Impostare i valori delle proprietà **R**, **G**, **B**e **A** accanto alla selezione colori su `0`.
+
+5. Nella barra degli strumenti dell'editor di immagini scegliere lo strumento **Riempimento** e, tenendo premuto **MAIUSC**, scegliere un punto qualsiasi nell'immagine. L'utilizzo di **MAIUSC** fa sì che il valore alfa del colore di riempimento sostituisca il colore dell'immagine; in caso contrario, il valore alfa consente di sfumare il colore di riempimento con il colore dell'immagine.
 
     > [!IMPORTANT]
     > Questo passaggio, insieme alla selezione del colore nel passaggio precedente, assicura che l'immagine di base sia preparata per la trama di destinazione "bullseye" che si intende disegnare. Poiché l'immagine viene riempita con un nero trasparente e il bordo della destinazione è nero, non saranno presenti artefatti di aliasing intorno alla destinazione.
 
-6.  Nella barra degli strumenti scegliere lo strumento **Ellissi**.
+6. Nella barra degli strumenti scegliere lo strumento **Ellissi**.
 
-7.  Impostare il colore di primo piano su un nero completamente opaco. Impostare i valori delle proprietà **R**, **G** e **B** su `0` e il valore della proprietà **A** su `255`.
+7. Impostare il colore di primo piano su un nero completamente opaco. Impostare i valori delle proprietà **R**, **G** e **B** su `0` e il valore della proprietà **A** su `255`.
 
-8.  Impostare il colore di sfondo su un bianco completamente opaco. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Sfondo**. Impostare i valori delle proprietà **R**, **G**, **B** e **A** su `255`.
+8. Impostare il colore di sfondo su un bianco completamente opaco. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Sfondo**. Impostare i valori delle proprietà **R**, **G**, **B** e **A** su `255`.
 
 9. Impostare la larghezza del contorno dell'ellisse. Nella finestra **Proprietà**, nel gruppo di proprietà **Aspetto**, impostare il valore della proprietà **Larghezza** su `8`.
 
@@ -69,7 +69,7 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per disegnare più facilmente il cerchio, tenere premuto **MAIUSC** mentre si disegna.
 
     > [!NOTE]
-    > Le coordinate in pixel della posizione corrente del puntatore sono visualizzate sulla barra di stato di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    > Le coordinate in pixel della posizione corrente del puntatore sono visualizzate nella barra di stato di Visual Studio.
 
 12. Modificare il colore di sfondo. Impostare **R** su `44`, **G** su `165`, **B** su `211` e **A** su `255`.
 
@@ -83,11 +83,11 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 
 17. Disegnare un altro cerchio dalla coordinata in pixel `(192, 192)` alla coordinata in pixel `(320, 320)`.
 
- La trama di destinazione "bullseye" è completa. Di seguito è riportata l'immagine finale, illustrata con la trasparenza.
+La trama di destinazione "bullseye" è completa. Di seguito è riportata l'immagine finale, illustrata con la trasparenza.
 
- ![Trama di destinazione "bullseye" completa](../designers/media/gfx_image_demo_bullseye.png)
+![Trama di destinazione "bullseye" completa](../designers/media/gfx_image_demo_bullseye.png)
 
- Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Vedere anche
 
