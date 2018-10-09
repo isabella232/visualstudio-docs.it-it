@@ -1,7 +1,7 @@
 ---
 title: Installazione del supporto di Python
 description: Procedura relativa all'installazione di Python Tools for Visual Studio (PTVS) in Visual Studio 2017, 2015, 2013, 2012 e 2010, inclusi le opzioni e i percorsi di installazione.
-ms.date: 06/26/2018
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627215"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168370"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Come installare il supporto di Python in Visual Studio in Windows
 
@@ -25,8 +25,6 @@ Per installare il supporto Python per Visual Studio (noto anche come Python Tool
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 e versioni precedenti](#visual-studio-2013-and-earlier)
-
-Per Visual Studio 2015 e versioni precedenti è anche necessario [installare un interprete Python](installing-python-interpreters.md) di propria scelta separatamente. Le versioni di Python 3.5 e versioni precedenti, 3.6+ non sono supportate e generano il messaggio **Unsupported Python version 3.6** (Versione 3.6 di Python non supportata). Nella stessa pagina sono contenute anche le istruzioni per l'aggiunta di un interprete Python esistente in Visual Studio 2017.
 
 Per testare rapidamente il supporto Python dopo aver eseguito la procedura di installazione, aprire la finestra **interattiva di Python** premendo **ALT**+**I** e quindi immettere `2+2`. Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
 
@@ -96,7 +94,7 @@ Se si verificano problemi durante l'installazione o l'esecuzione di Python in Vi
 
     ![Opzione PTVS nel programma di installazione di Visual Studio 2015](media/installation-vs2015.png)
 
-1. Una volta completata l'installazione di Visual Studio, [installare un interprete Python a scelta](installing-python-interpreters.md). Se è già installato un interprete e Visual Studio non lo rileva automaticamente, vedere [Identificazione manuale di un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+1. Una volta completata l'installazione di Visual Studio, [installare un interprete Python a scelta](installing-python-interpreters.md). Visual Studio 2015 supporta solo Python 3.5 e versioni precedenti. Nelle versioni successive viene generato un messaggio del tipo **Versione 3.6 di Python non supportata**. Se è già installato un interprete e Visual Studio non lo rileva automaticamente, vedere [Identificazione manuale di un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 e versioni precedenti
 

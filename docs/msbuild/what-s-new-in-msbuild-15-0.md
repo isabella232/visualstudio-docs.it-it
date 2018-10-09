@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8eae3b6131ca147149324477119df1be55ba35
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2333f45cca5510a4ba3bb0f54abf45a569454cf8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154018"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028963"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novità di MSBuild 15
 

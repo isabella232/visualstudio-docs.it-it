@@ -1,5 +1,5 @@
 ---
-title: Esercitazione sull'uso di Python, passaggio 1, creazione di un progetto
+title: Esercitazione sull'uso di Python, passaggio 1, creare un progetto
 description: Panoramica e passaggio 1 della procedura dettagliata di base delle funzionalità di Python in Visual Studio, inclusi i prerequisiti e la creazione di un nuovo progetto Python.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 215dbce2ccfdce88b6e24fd1802c91fe0f1a6936
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639432"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547893"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: Uso di Python in Visual Studio
 

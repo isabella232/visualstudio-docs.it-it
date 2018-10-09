@@ -1,6 +1,6 @@
 ---
 title: Finestra di progettazione shader
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0deaf83c224270b582043e918b64591468d5783f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078953"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029053"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 
-Questo documento descrive come usare la finestra di progettazione shader di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per creare, modificare ed esportare effetti visivi personalizzati noti come *shader*.
+Questo documento descrive come usare la **finestra di progettazione shader** di Visual Studio per creare, modificare ed esportare effetti visivi personalizzati noti come *shader*.
 
-È possibile usare la finestra di progettazione shader per creare effetti visivi personalizzati per un gioco o un app anche se non si conosce il linguaggio di programmazione HLSL. Per creare uno shader nella finestra di progettazione shader, è sufficiente delinearlo come un grafico. A questo scopo, si aggiungono all'area di progettazione *nodi* che rappresentano i dati e le operazioni e quindi si creano connessioni tra di essi per definire il modo in cui le operazioni elaborano i dati. Per ogni nodo dell'operazione viene fornita un'anteprima dell'effetto prodotto fino a quel momento in modo da poterne visualizzare il risultato. I dati passano attraverso i nodi verso un nodo finale che rappresenta l'output dello shader.
+È possibile usare la **finestra di progettazione shader** per creare effetti visivi personalizzati per un gioco o un'app anche se non si conosce il linguaggio di programmazione HLSL (High-Level Shader Language). Per creare uno shader nella **finestra di progettazione shader**, si definisce il layout in forma di grafico. A questo scopo, si aggiungono all'area di progettazione *nodi* che rappresentano i dati e le operazioni, quindi si creano connessioni tra di essi per definire il modo in cui le operazioni elaborano i dati. Per ogni nodo dell'operazione viene fornita un'anteprima dell'effetto prodotto fino a quel momento in modo da poterne visualizzare il risultato. I dati passano attraverso i nodi verso un nodo finale che rappresenta l'output dello shader.
 
 ## <a name="supported-formats"></a>Formati supportati
 
-La finestra di progettazione shader supporta i formati di shader illustrati di seguito.
+La **finestra di progettazione shader** supporta questi formati di shader:
 
 |Nome del formato|Estensione nome del file|Operazioni supportate (visualizzazione, modifica, esportazione)|
 |-----------------|--------------------|-------------------------------------------------|
@@ -39,17 +39,29 @@ La finestra di progettazione shader supporta i formati di shader illustrati di s
 
 ## <a name="get-started"></a>Introduzione
 
-In questa sezione viene descritto come aggiungere uno shader DGSL al progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e vengono fornite informazioni introduttive di base.
+In questa sezione viene descritto come aggiungere uno shader DGSL al progetto Visual Studio C++ e vengono fornite informazioni introduttive di base.
+
+> [!NOTE]
+> L'integrazione della compilazione automatica degli elementi grafici, come i grafici shader (file con estensione dgsl) è supportata solo per i progetti C++.
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>Per aggiungere uno shader DGSL al progetto
 
-1.  In **Esplora soluzioni** aprire il menu di scelta rapida del progetto a cui si vuole aggiungere lo shader e quindi scegliere **Aggiungi** > **Nuovo elemento**.
+1. Assicurarsi di avere a disposizione il componente di Visual Studio richiesto installato necessario per usare gli elementi grafici. Questo componente è denominato **Editor di immagini e modelli 3D**.
 
-2.  Nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato**, selezionare **Grafica** e quindi selezionare **Visual Effect Graph (.dgsl)**.
+   Per installarlo, aprire il Programma di installazione di Visual Studio selezionando **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu e quindi selezionare la scheda **Singoli componenti**. Selezionare il componente **Editor di immagini e modelli 3D** nella categoria **Giochi e grafica** e quindi selezionare **Modifica**.
 
-3.  Specificare il **Nome** del file shader e il **percorso** in cui crearlo.
+   ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
 
-4.  Scegliere il pulsante **Aggiungi**.
+2. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto C++ a cui si vuole aggiungere lo shader e quindi scegliere **Aggiungi** > **Nuovo elemento**.
+
+3. Nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato**, selezionare **Grafica** e quindi selezionare **Visual Effect Graph (.dgsl)**.
+
+   > [!NOTE]
+   > Se non viene visualizzata la categoria **Grafica** nella finestra di dialogo **Aggiungi nuovo elemento** e il componente **Editor di immagini e modelli 3D** è installato, gli elementi grafici non sono supportati per il tipo di progetto.
+
+4. Specificare il **Nome** del file shader e il **percorso** in cui crearlo.
+
+5. Scegliere il pulsante **Aggiungi**.
 
 ### <a name="the-default-shader"></a>Shader predefinito
 
@@ -63,7 +75,7 @@ Nelle sezioni seguenti viene descritto come utilizzare Progettazione shader per 
 
 Le barre degli strumenti della finestra di progettazione shader contengono comandi che consentono di usare grafici di shader DGSL.
 
-I comandi che influiscono sullo stato della finestra di progettazione shader si trovano nella barra degli strumenti **Modalità progettazione shader** della finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Gli strumenti e i comandi di progettazione si trovano nella barra degli strumenti della **finestra di progettazione shader** disponibile nell'area di progettazione.
+I comandi che influiscono sullo stato della finestra di progettazione shader si trovano nella barra degli strumenti **Modalità progettazione shader** della finestra principale di Visual Studio. Gli strumenti e i comandi di progettazione si trovano nella barra degli strumenti della **finestra di progettazione shader** disponibile nell'area di progettazione.
 
 Di seguito è illustrata la barra degli strumenti **Modalità progettazione shader**.
 
@@ -77,7 +89,7 @@ Questa tabella descrive gli elementi disponibili nella barra degli strumenti **M
 |**Panoramica**|Consente lo spostamento di un grafico shader relativo alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nell'area di progettazione e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
 |**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli del grafico shader relativo alla cornice della finestra. In modalità **Zoom** selezionare un punto nell'area di progettazione e spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per eseguire lo zoom avanti o indietro usando la rotellina del mouse.|
 |**Adatta alla finestra**|Consente di visualizzare il grafico shader completo nella cornice della finestra.|
-|**Modalità rendering in tempo reale**|Se è abilitato il rendering in tempo reale, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene ridisegnata l'area di progettazione, anche se non viene eseguita alcuna azione da parte dell'utente. Questa modalità è utile se si utilizzano shader mutevoli nel tempo.|
+|**Modalità rendering in tempo reale**|Se è abilitato il rendering in tempo reale, Visual Studio ridisegna l'area di progettazione, anche se non viene eseguita alcuna azione da parte dell'utente. Questa modalità è utile se si utilizzano shader mutevoli nel tempo.|
 |**Anteprima con sfera**|Se abilitata, viene usato un modello di sfera per visualizzare in anteprima lo shader. È possibile abilitare una sola forma di anteprima alla volta.|
 |**Anteprima con cubo**|Se abilitata, viene usato un modello di cubo per visualizzare in anteprima lo shader. È possibile abilitare una sola forma di anteprima alla volta.|
 |**Anteprima con cilindro**|Se abilitata, viene usato un modello di cilindro per visualizzare in anteprima lo shader. È possibile abilitare una sola forma di anteprima alla volta.|
@@ -97,19 +109,19 @@ Usare la modalità **Seleziona** per aggiungere, rimuovere, riposizionare, conne
 
 #### <a name="to-perform-basic-operations-in-select-mode"></a>Per eseguire operazioni di base in modalità Seleziona
 
--   Ecco come:
+- Ecco come:
 
-    -   Per aggiungere un nodo al grafico, selezionarlo nella **casella degli strumenti** e spostarlo nell'area di progettazione.
+   - Per aggiungere un nodo al grafico, selezionarlo nella **casella degli strumenti** e spostarlo nell'area di progettazione.
 
-    -   Per rimuovere un nodo dal grafico, selezionarlo e premere **CANC**.
+   - Per rimuovere un nodo dal grafico, selezionarlo e premere **CANC**.
 
-    -   Per riposizionare un nodo, selezionarlo e spostarlo in una nuova posizione.
+   - Per riposizionare un nodo, selezionarlo e spostarlo in una nuova posizione.
 
-    -   Per collegare due nodi, spostare un terminale di output di un nodo in un terminale di input dell'altro nodo. Possono essere collegati solo terminali con tipi compatibili. Una linea tra i terminali mostra la connessione.
+   - Per collegare due nodi, spostare un terminale di output di un nodo in un terminale di input dell'altro nodo. Possono essere collegati solo terminali con tipi compatibili. Una linea tra i terminali mostra la connessione.
 
-    -   Per rimuovere una connessione, scegliere **Interrompi collegamenti** dal menu di scelta rapida di uno dei terminali connessi.
+   - Per rimuovere una connessione, scegliere **Interrompi collegamenti** dal menu di scelta rapida di uno dei terminali connessi.
 
-    -   Per configurare le proprietà di un nodo, selezionare il nodo e nella finestra **Proprietà** specificare nuovi valori per le proprietà.
+   - Per configurare le proprietà di un nodo, selezionare il nodo e nella finestra **Proprietà** specificare nuovi valori per le proprietà.
 
 ### <a name="preview-shaders"></a>Anteprima degli shader
 
@@ -122,15 +134,16 @@ Nella finestra di progettazione shader sono disponibili sei forme, una sfera, un
 Per scegliere una forma da visualizzare in anteprima, nella barra degli strumenti **Modalità progettazione shader** scegliere la forma desiderata.
 
 #### <a name="textures-and-material-parameters"></a>Trame e parametri di materiale
- Molti shader si basano su trame e proprietà di materiali per produrre un aspetto univoco per ogni tipo di oggetto nell'app. Per vedere l'aspetto che avrà lo shader nell'app, è possibile impostare le trame e le proprietà di materiali usate per il rendering dell'anteprima per trovare una corrispondenza con le trame e i parametri che possono essere usati nell'app.
 
-##### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Per associare una trama diversa a un registro di trama o modificare altri parametri di materiali
+Molti shader si basano su trame e proprietà di materiali per produrre un aspetto univoco per ogni tipo di oggetto nell'app. Per vedere l'aspetto che avrà lo shader nell'app, è possibile impostare le trame e le proprietà di materiali usate per il rendering dell'anteprima per trovare una corrispondenza con le trame e i parametri che possono essere usati nell'app.
 
-1.  In modalità **Seleziona** selezionare un'area vuota dell'area di progettazione. Nella finestra **Proprietà** vengono visualizzate le proprietà globali dello shader.
+Per associare una trama diversa a un registro di trama o modificare altri parametri di materiali:
 
-2.  Nella finestra **Proprietà** specificare nuovi valori per le proprietà di trama e parametri che si vuole modificare.
+1. In modalità **Seleziona** selezionare un'area vuota dell'area di progettazione. Nella finestra **Proprietà** vengono visualizzate le proprietà globali dello shader.
 
-Di seguito sono riportati i parametri di shader che è possibile modificare.
+2. Nella finestra **Proprietà** specificare nuovi valori per le proprietà di trama e parametri che si vuole modificare.
+
+La tabella seguente riporta i parametri di shader che è possibile modificare:
 
 |Parametro|Proprietà|
 |---------------|----------------|
@@ -190,6 +203,6 @@ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportar
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce una panoramica degli strumenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a cui attingere per poter usare trame e immagini, modelli 3D ed effetti shader.|
-|[Editor immagini](../designers/image-editor.md)|Descrive come utilizzare l'editor di immagini di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con trame e immagini.|
-|[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'Editor dei modelli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per lavorare con modelli 3D.|
+|[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce una panoramica degli strumenti di Visual Studio a cui attingere per poter usare trame e immagini, modelli 3D ed effetti shader.|
+|[Editor immagini](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|
+|[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'editor dei modelli di Visual Studio per lavorare con i modelli 3D.|
