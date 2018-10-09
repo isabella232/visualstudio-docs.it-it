@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082131"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863896"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio tramite la riga di comando
 
-Questa procedura dettagliata illustra come pubblicare un'estensione di Visual Studio in Visual Studio Marketplace tramite riga di comando. Quando si aggiunge l'estensione nel Marketplace, gli sviluppatori possono usare la **estensioni e aggiornamenti** finestra di dialogo per cercare estensioni nuove e aggiornate.
+Questa procedura dettagliata illustra come pubblicare un'estensione di Visual Studio in Visual Studio Marketplace tramite riga di comando. Quando si aggiunge l'estensione nel Marketplace, gli sviluppatori possono usare la [ **estensioni e aggiornamenti** ](../ide/finding-and-using-visual-studio-extensions.md) finestra di dialogo per cercare estensioni nuove e aggiornate.
 
 VsixPublisher.exe è lo strumento da riga di comando per la pubblicazione di estensioni di Visual Studio nel Marketplace. È possibile accedervi da ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. I comandi disponibili su questo strumento sono: **pubblicare**, **createPublisher**, **deletePublisher**, **deleteExtension**,  **account di accesso**, **disconnessione**.
 
