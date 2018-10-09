@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc30f572f48622776bb1014c2a5e3c17bf8f27b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512376"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863933"
 ---
 # <a name="layout-for-visual-studio"></a>Layout per Visual Studio
 La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra di dialogo utilità](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), che sono il unthemed finestre di dialogo standard di seguire [principi di layout di finestra di dialogo Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Mentre Visual Studio viene spostato alla relativa interfaccia utente di aggiornamento, alcune delle finestre di dialogo più evidenti sono una nuova progettazione che stabilisce le esperienze di definizione del prodotto. Questi [layout di finestra di dialogo con tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) hanno un aspetto a tema.  
@@ -159,5 +159,5 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
   
 ## <a name="see-also"></a>Vedere anche  
  [Modelli di applicazione per Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   
- [Controlli (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)   
- [Finestre di dialogo (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+ [Controlli (Windows)](/windows/desktop/uxguide/controls)   
+ [Finestre di dialogo (Windows)](/windows/desktop/uxguide/win-dialog-box)

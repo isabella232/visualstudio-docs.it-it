@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511992"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863998"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Il tipo di carattere ambiente
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   Testo del carattere di ambiente in grassetto deve seguire la spaziatura interna e spaziatura altezza riga predefinita.  
   
 ## <a name="see-also"></a>Vedere anche  
- [MSDN: I tipi di carattere (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN: Testo dell'interfaccia utente (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN: I tipi di carattere (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN: Testo dell'interfaccia utente (Windows)](/windows/desktop/uxguide/text-ui)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512239"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863952"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Le notifiche e avanzamento per Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Sistemi di notifica  
@@ -213,7 +213,7 @@ ms.locfileid: "39512239"
  La casella di selezione (noto anche come un "anello di stato") è un indicatore di stato indeterminato utilizzato principalmente in relazione al contesto dell'interfaccia utente. Visualizzare una casella di selezione in stretta vicinanza al relativo contenuto correlato, ad esempio un'intestazione di categoria testuale, messaggistica o controllo.  
   
 ##### <a name="cursor-feedback"></a>Risposta del cursore  
- Per le operazioni che richiedere da 2 a 7 secondi, fornire commenti e suggerimenti del cursore. In genere, ciò significa che tramite il cursore di attesa fornito dal sistema operativo. Per istruzioni, vedere l'articolo di MSDN [Cursors.Wait proprietà](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).  
+ Per le operazioni che richiedere da 2 a 7 secondi, fornire commenti e suggerimenti del cursore. In genere, ciò significa che tramite il cursore di attesa fornito dal sistema operativo. Per istruzioni, vedere l'articolo di MSDN [Cursors.Wait proprietà](/dotnet/api/system.windows.input.cursors.wait).  
   
 #### <a name="progress-indicator-locations"></a>Percorsi di indicatore di stato di avanzamento  
   
