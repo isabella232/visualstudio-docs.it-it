@@ -25,17 +25,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b6a7e624298ae3766f67a1bd49760b9b5e066bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e99f18122dc0be7e3a68871aa58a9109502da9c0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518842"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880955"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [documentazione di Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+La versione più recente di questo argomento è reperibile in [documentazione di Visual Studio 2017](/visualstudio/).  
   
 È possibile creare con associazione a dati [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] controlli usando il **Zdroje dat** finestra. In primo luogo, aggiungere un'origine dati per il **Zdroje dat** finestra. Quindi, trascinare elementi dal **Zdroje dat** finestra per il**WPF Designer**.  
   
@@ -114,9 +114,9 @@ La versione più recente di questo argomento è reperibile in [documentazione di
   
 1.  Nel **Zdroje dat** (finestra), usare una delle procedure riportate di seguito:  
   
-    -   Per aggiungere un'associazione dati a un controllo esistente che visualizza più campi di dati, ad esempio <xref:System.Windows.Controls.DataGrid> o <xref:System.Windows.Controls.ListView>, selezionare l'elemento che rappresenta la tabella o l'oggetto da associare al controllo.  
+    -   Per aggiungere un data binding a un controllo esistente che visualizza più campi di dati, ad esempio <xref:System.Windows.Controls.DataGrid> o <xref:System.Windows.Controls.ListView>, selezionare l'elemento che rappresenta la tabella o l'oggetto da associare al controllo.  
   
-    -   Per aggiungere un'associazione dati a un controllo esistente che visualizza più campi di dati, ad esempio <xref:System.Windows.Controls.ComboBox> o <xref:System.Windows.Controls.TextBox>, espandere l'elemento che rappresenta la tabella o l'oggetto che contiene i dati, quindi selezionare l'elemento che rappresenta i dati da associare al controllo.  
+    -   Per aggiungere un data binding a un controllo esistente che visualizza più campi di dati, ad esempio <xref:System.Windows.Controls.ComboBox> o <xref:System.Windows.Controls.TextBox>, espandere l'elemento che rappresenta la tabella o l'oggetto che contiene i dati, quindi selezionare l'elemento che rappresenta i dati da associare al controllo.  
   
 2.  Trascinare l'elemento selezionato dal **Zdroje dat** finestra in un controllo esistente nella finestra di progettazione. Il controllo deve essere un obiettivo di rilascio valido. Per altre informazioni, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   

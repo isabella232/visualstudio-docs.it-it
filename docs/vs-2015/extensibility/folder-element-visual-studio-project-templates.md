@@ -17,12 +17,12 @@ ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9827186ad2e7310f2a7554c8d830518f9979411
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c26dd5652b2c167e8ae33be4250015ba32c34a96
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530282"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878875"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelli di progetto Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Specifica una cartella in cui verrà aggiunto al progetto.
 ## <a name="remarks"></a>Note  
  `Folder` è un elemento figlio facoltativo di `Project`.  
   
- È possibile usare uno qualsiasi dei seguenti metodi per organizzare gli elementi del progetto in cartelle in un modello:  
+ Per organizzare gli elementi del progetto in cartelle in un modello, è possibile usare uno qualsiasi dei metodi seguenti:  
   
 -   Includere le cartelle nel file zip del modello e aggiungerli al progetto nel file vstemplate, specificando il percorso del file nei `ProjectItem` elementi, con nessuna `Folder` elementi. Questo è il metodo consigliato. Ad esempio:  
   

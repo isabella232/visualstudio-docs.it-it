@@ -19,12 +19,12 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dd0e668f9bf657d38b69beb1bc132547dd6bda1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519105"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880084"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrazione di modelli di progetto e di elementi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 |SortPriority|REG_DWORD|Impostare SortPriority per regolare l'ordine in cui i modelli vengono visualizzati nei **Aggiungi nuovo elemento** nella finestra di dialogo. I valori maggiori SortPriority vengono visualizzati in precedenza nell'elenco dei modelli.|  
   
 ### <a name="registering-file-filters"></a>La registrazione di filtri file  
- Facoltativamente, è possibile registrare i filtri che [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilizza quando richiesto, specificare i nomi file. Ad esempio, il [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrare per il il **Apri File** è la finestra di dialogo:  
+ Facoltativamente, è possibile registrare i filtri che [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilizza quando richiesto, specificare i nomi file. Ad esempio, il [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Filtra per il **Apri File** è la finestra di dialogo:  
   
  **File Visual c# (\*cs,\*resx,\*Settings,\*XSD,\*WSDL);\*. cs,\*, RESX\*Settings,\*XSD,\*. WSDL)**  
   

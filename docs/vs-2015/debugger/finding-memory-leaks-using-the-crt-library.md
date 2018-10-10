@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540911"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879772"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Individuazione di perdite di memoria tramite la libreria CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappr
   
  Affinché le funzioni CRT funzionino correttamente, le istruzioni `#include` devono seguire l'ordine qui indicato.  
   
- Incluse le mappe CRTDBG. h i `malloc` e il [gratuito](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) funzioni alle corrispondenti versioni di debug, [malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) e `free`, cui tenere traccia di allocazione della memoria e la deallocazione. Questa operazione di mapping viene eseguita solo nelle build di debug che presentano `_DEBUG`. Le build di rilascio usano le normali funzioni `malloc` e `free` .  
+ Includendo crtdbg.h, si esegue il mapping delle funzioni `malloc` e [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) alle corrispondenti versioni di debug, [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) e `free`, che consentono di tenere traccia dell'allocazione e della deallocazione della memoria. Questa operazione di mapping viene eseguita solo nelle build di debug che presentano `_DEBUG`. Le build di rilascio usano le normali funzioni `malloc` e `free` .  
   
  L'istruzione `#define` esegue il mapping di una versione di base delle funzioni di heap CRT alla corrispondente versione di debug. Se si omette l'istruzione `#define` , il dump della perdita di memoria sarà meno dettagliato.  
   
@@ -74,7 +74,7 @@ Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappr
 _CrtDumpMemoryLeaks();  
 ```  
   
- Se l'applicazione presenta più uscite, non occorre effettuare manualmente una chiamata a [CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) a ogni punto di uscita. Una chiamata a `_CrtSetDbgFlag` all'inizio dell'applicazione determina una chiamata automatica a `_CrtDumpMemoryLeaks` a ogni punto di uscita. È necessario impostare i due campi di bit indicati di seguito:  
+ Se l'applicazione presenta più uscite, non è necessario effettuare manualmente una chiamata a [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) a ogni punto di uscita. Una chiamata a `_CrtSetDbgFlag` all'inizio dell'applicazione determina una chiamata automatica a `_CrtDumpMemoryLeaks` a ogni punto di uscita. È necessario impostare i due campi di bit indicati di seguito:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -89,7 +89,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretazione del report delle perdite di memoria  
- Se l'applicazione non definisce `_CRTDBG_MAP_ALLOC`, [CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) consente di visualizzare un report delle perdite di memoria che ha un aspetto simile al seguente:  
+ Se `_CRTDBG_MAP_ALLOC`non viene definito, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) visualizza un report delle perdite di memoria simile al seguente:  
   
 ```  
 Detected memory leaks!  
@@ -194,7 +194,7 @@ Ciò indica che l'allocazione persa era nella riga 20 di debug_new.cpp.
   
 2.  Quando l'applicazione si interrompe al punto di interruzione, viene visualizzata la finestra **Espressioni di controllo** .  
   
-3.  Nella finestra **Espressioni di controllo** digitare `_crtBreakAlloc` nella colonna **Nome** .  
+3.  Nel **Watch** finestra, digitare `_crtBreakAlloc` nel **nome** colonna.  
   
      Se si usa la versione DLL multithread della libreria CRT (opzione /MD), includere l'operatore di contesto `{,,ucrtbased.dll}_crtBreakAlloc`  
   

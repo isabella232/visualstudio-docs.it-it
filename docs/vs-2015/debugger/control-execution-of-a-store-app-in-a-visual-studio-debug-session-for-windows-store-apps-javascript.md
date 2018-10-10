@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5725dc2be204ae3b657a857c5a358a29b8c3709
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519440"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881137"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controllare l'esecuzione di un'app dello Store in una sessione di debug di Visual Studio per le app di Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -301,7 +301,7 @@ Questa guida introduttiva illustra come spostarsi nel debugger di Visual Studio 
   
     -   **Anonymous function** indica la riga nella funzione `module` in cui l'esecuzione viene sospesa. Questa è la parte superiore dello stack di chiamate.  
   
-4.  **Eseguire un'istruzione nelle funzioni per raggiungere la funzione example5_d.** Scegliere **Debug** on the **Debug** (tastiera: **F11**) per eseguire le chiamate nel percorso di chiamate fino a raggiungere il punto di ingresso della funzione example5_d. Ogni volta che una funzione chiama una funzione, il numero di riga della funzione chiamante viene salvato e la funzione chiamata viene posizionata all'inizio dello stack. Il numero di riga della funzione chiamante è il punto in cui la funzione chiamante ha sospeso l'esecuzione. Una freccia gialla indica la funzione attualmente in esecuzione.  
+4.  **Eseguire un'istruzione nelle funzioni per raggiungere la funzione example5_d.** Scegli **Esegui istruzione** nel **eseguire il Debug** menu (tastiera: **F11**) per eseguire le chiamate nel percorso di chiamate fino a raggiungere il punto di ingresso della funzione example5_d. Ogni volta che una funzione chiama una funzione, il numero di riga della funzione chiamante viene salvato e la funzione chiamata viene posizionata all'inizio dello stack. Il numero di riga della funzione chiamante è il punto in cui la funzione chiamante ha sospeso l'esecuzione. Una freccia gialla indica la funzione attualmente in esecuzione.  
   
      ![Finestra stack di chiamate](../debugger/media/dbg-jsnav-callstack-windows.png "DBG_JSNAV_CallStack_windows")  
   
