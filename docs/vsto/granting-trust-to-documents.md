@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673722"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073441"
 ---
 # <a name="grant-trust-to-documents"></a>Concedere l'attendibilità ai documenti
   Un progetto a livello di documento presenta gli stessi requisiti di sicurezza dei progetti a livello di applicazione, ovvero la firma dei manifesti con un certificato o la risposta, tramite clic, a una richiesta di attendibilità. Inoltre, il documento o la cartella di lavoro si deve trovare in una directory definita come percorso attendibile.  
@@ -33,7 +33,7 @@ ms.locfileid: "35673722"
 ## <a name="trusted-locations"></a>Percorsi attendibili  
  Le applicazioni in [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e Office 2010 hanno il Centro protezione in cui gli utenti possono configurare le impostazioni di sicurezza e privacy, come i percorsi attendibili. Per le soluzioni Office, il computer locale è considerato un percorso attendibile. Tuttavia, a causa del rischio più elevato, alcune directory non possono mai essere considerate attendibili, come le cartelle temporanee del sistema, per ciascun utente e per Internet Explorer.  
   
- Per altre informazioni sul Centro protezione, vedere [sicurezza e criteri e impostazioni di Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Per altre informazioni su come creare, gestire, rimuovere e configurare cartelle attendibili, vedere [configurare percorsi attendibili ed editori attendibili in Office system 2007](http://go.microsoft.com/fwlink/?LinkId=89203) e [creazione, rimozione o modifica un percorso per i file attendibile](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+ Per altre informazioni sul Centro protezione, vedere [sicurezza e criteri e impostazioni di Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Per altre informazioni su come creare, gestire, rimuovere e configurare cartelle attendibili, vedere [configurare percorsi attendibili ed editori attendibili in Office system 2007](http://go.microsoft.com/fwlink/?LinkId=89203) e [creazione, rimozione o modifica un percorso per i file attendibile](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="security-considerations-for-office-solutions"></a>Considerazioni sulla sicurezza per le soluzioni Office  
  Quando si determinano le cartelle da aggiungere ai percorsi attendibili, è necessario tenere in considerazione diversi aspetti relativi alla sicurezza:  

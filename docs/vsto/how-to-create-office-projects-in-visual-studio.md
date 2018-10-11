@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f39e1a5c5271e806a8e90499e50cb9bd4705a5d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 725d902c181e6082c7f995ceec805aa05441bbaa
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673327"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074052"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Procedura: creare progetti di Office in Visual Studio
   È possibile usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per creare il componente aggiuntivo VSTO e a livello di documento personalizzazioni per le applicazioni Microsoft Office. Per altre informazioni su questi tipi di progetti, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -157,7 +157,7 @@ ms.locfileid: "35673327"
   
     -   Si sta creando un progetto di modello di Word basato su un *dotx* file. È necessario aggiungere la cartella del progetto all'elenco di percorsi attendibili in modo che sia possibile eseguire il progetto e il relativo debug.  
   
-     Per altre informazioni su come aggiungere un documento ai percorsi attendibili, vedere il sito web Microsoft Office Online [creazione, rimozione o modifica di un percorso attendibile per i file](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+     Per altre informazioni su come aggiungere un documento ai percorsi attendibili, vedere il sito web Microsoft Office Online [creazione, rimozione o modifica di un percorso attendibile per i file](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)   

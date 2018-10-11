@@ -17,23 +17,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd86b7c15fa198b37ce15c75b13d2863f56ca3ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693370"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074065"
 ---
 # <a name="secure-office-solutions"></a>Proteggere le soluzioni Office
   Il modello di sicurezza per le soluzioni Office comprende diverse tecnologie: il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], il Centro protezione di Microsoft Office e l'area siti con restrizioni di Internet Explorer. Le sezioni seguenti descrivono il funzionamento delle diverse funzionalità di sicurezza:  
   
 -   [Concedere l'attendibilità alle soluzioni Office](#GrantingTrustToSolutions)  
   
--   [Concedere l'attendibilità a documenti](#GrantingTrustToDocuments)  
+-   [Concedere l'attendibilità ai documenti](#GrantingTrustToDocuments)  
   
 -   [Concedere l'attendibilità quando si usa Windows Installer](#GrantingTrustWindowsInstaller)  
   
--   [Considerazioni specifiche sulla sicurezza per le soluzioni Office](#Security)  
+-   [Considerazioni sulla sicurezza specifiche per le soluzioni Office](#Security)  
   
 -   [Sicurezza durante lo sviluppo](#SecurityDuringDeployment)  
   
@@ -50,13 +50,13 @@ ms.locfileid: "34693370"
   
  Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).  
   
-##  <a name="GrantingTrustToDocuments"></a> Concedere l'attendibilità a documenti  
+##  <a name="GrantingTrustToDocuments"></a> Concedere l'attendibilità ai documenti  
  Una personalizzazione a livello di documento richiede che il documento si trovi in una directory progettata come percorso attendibile. Per altre informazioni, vedere [concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md).  
   
 ##  <a name="GrantingTrustWindowsInstaller"></a> Concedere l'attendibilità quando si usa Windows Installer  
- È possibile usare Windows Installer per creare un file MSI per installare le soluzioni Office nella directory Programmi, che richiede diritti di amministratore. Per le soluzioni Office nella directory Programmi, Visual Studio 2010 Tools per Office runtime considera le soluzioni di Office siano attendibili e non appare la richiesta di attendibilità di ClickOnce.  
+ È possibile usare Windows Installer per creare un file MSI per installare le soluzioni Office nella directory Programmi, che richiede diritti di amministratore. Per le soluzioni Office nella directory Programmi, Visual Studio 2010 Tools per Office runtime considera le soluzioni di Office siano attendibili e non include la richiesta di attendibilità di ClickOnce.  
   
-##  <a name="Security"></a> Considerazioni specifiche sulla sicurezza per le soluzioni Office  
+##  <a name="Security"></a> Considerazioni sulla sicurezza specifiche per le soluzioni Office  
  Le funzionalità di sicurezza fornite da [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] e Microsoft Office possono contribuire alla protezione contro diverse possibili minacce alla sicurezza nelle soluzioni Office. Per altre informazioni, vedere [considerazioni specifiche sulla sicurezza per le soluzioni Office](../vsto/specific-security-considerations-for-office-solutions.md).  
   
 ##  <a name="SecurityDuringDeployment"></a> Sicurezza durante lo sviluppo  
@@ -65,11 +65,11 @@ ms.locfileid: "34693370"
 ### <a name="document-level-solutions"></a>Soluzioni a livello di documento  
  Il percorso completo di un documento deve essere aggiunto all'elenco di percorsi attendibili nell'applicazione Microsoft Office se si stanno sviluppando i tipi di progetti seguenti:  
   
--   Le soluzioni presenti in una condivisione di file di rete, ad esempio a livello di documento  *\\\servername\sharename*.  
+-   Le soluzioni presenti in una condivisione file di rete, ad esempio a livello di documento  *\\\servername\sharename*.  
   
 -   A livello di documento soluzioni per Word che usano *doc* oppure *docm* file.  
   
- Includere le sottodirectory quando si aggiunge il percorso del documento all'elenco di percorsi attendibili oppure includere le cartelle di debug e di compilazione specifiche. Per ulteriori informazioni, vedere l'articolo della Guida Online di Microsoft Office [creazione, rimozione o modifica di un percorso attendibile per i file](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+ Includere le sottodirectory quando si aggiunge il percorso del documento all'elenco di percorsi attendibili oppure includere le cartelle di debug e di compilazione specifiche. Per altre informazioni, vedere l'articolo della Guida Online di Microsoft Office [creazione, rimozione o modifica di un percorso attendibile per i file](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Certificati temporanei  
  Se non è disponibile un certificato di firma, Visual Studio crea un certificato temporaneo. Usare questo certificato temporaneo solo durante lo sviluppo e acquistare un certificato ufficiale per la distribuzione.  
@@ -87,27 +87,27 @@ ms.locfileid: "34693370"
 ### <a name="sequence-of-security-checks-during-installation"></a>Sequenza di controlli di sicurezza durante l'installazione  
  Quando una soluzione Office viene installata o aggiornata, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] esegue un set di controlli di sicurezza in una sequenza specifica per prendere una decisione di attendibilità. Una soluzione viene installata o aggiornata solo se il runtime ne determina l'attendibilità.  
   
- È possibile avviare il processo di installazione in uno dei seguenti quattro modi: eseguendo il programma di installazione, aprendo il manifesto di distribuzione, aprendo l'host di applicazioni di Microsoft Office o eseguendo *VSTOInstaller.exe*.  
+ È possibile avviare il processo di installazione in uno dei quattro modi: eseguendo il programma di installazione, aprendo il manifesto di distribuzione, aprendo l'host dell'applicazione Microsoft Office o eseguendo *VSTOInstaller.exe*.  
   
- Il primo controllo di sicurezza si applica solo alle soluzioni a livello di documento. Il documento di una soluzione a livello di documento deve trovarsi in un percorso attendibile. Se il documento si trova in una condivisione di file di rete remota oppure ha un *doc* oppure *docm* estensione nome file, il percorso del documento deve essere aggiunto all'elenco di percorsi attendibili. Per altre informazioni, vedere [concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md).  
+ Il primo controllo di sicurezza si applica solo alle soluzioni a livello di documento. Il documento di una soluzione a livello di documento deve trovarsi in un percorso attendibile. Se il documento si trova in una condivisione file di rete remota oppure ha un *doc* oppure *docm* estensione nome file, il percorso del documento deve essere aggiunto all'elenco di percorsi attendibili. Per altre informazioni, vedere [concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md).  
   
  ![Sicurezza VSTO: installazione da Microsoft Office](../vsto/media/host-install.png "sicurezza VSTO: installazione da Microsoft Office")  
   
- Il set di controlli di sicurezza successivo è quello di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] e ClickOnce. Per superare questi controlli, soluzioni Office devono richiedere le autorizzazioni FullTrust, essere firmate con un certificato che non è elencato nell'elenco di server di pubblicazione non attendibili e trovarsi in una posizione che non è presente in tale area Internet Explorer. Se il certificato nell'elenco di server di pubblicazione Trusted, la soluzione viene installata immediatamente. In caso contrario, se ha superato i controlli, la soluzione continua con l'ultimo set di controlli.  
+ Il set di controlli di sicurezza successivo è quello di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] e ClickOnce. Per superare questi controlli, le soluzioni Office devono richiedere le autorizzazioni FullTrust, essere firmate con un certificato che non è elencato nell'elenco editori non attendibili e trovarsi in una posizione che non è presente nell'area con restrizioni di Internet Explorer. Se il certificato si trova nell'elenco degli editori attendibili, la soluzione viene installata immediatamente. In caso contrario, se ha superato i controlli, la soluzione continua con l'ultimo set di controlli.  
   
  ![Sicurezza VSTO per l'installazione di soluzioni](../vsto/media/installing.png "sicurezza VSTO per l'installazione di soluzioni")  
   
- Se il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità è consentito e la soluzione non è ancora concessa l'attendibilità, il runtime consente all'utente finale di prendere la decisione di attendibilità. Se l'utente concede l'attendibilità alla soluzione, viene aggiunta una voce all'elenco di inclusione dell'utente. Tutte le soluzioni nell'elenco di inclusione dell'utente hanno l'attendibilità totale e possono essere installate ed eseguite.  
+ Se il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità è consentito e la soluzione non è ancora stata concessa attendibilità, il runtime consentirà all'utente finale di prendere la decisione di attendibilità. Se l'utente concede l'attendibilità alla soluzione, viene aggiunta una voce all'elenco di inclusione dell'utente. Tutte le soluzioni nell'elenco di inclusione dell'utente hanno l'attendibilità totale e possono essere installate ed eseguite.  
   
- A partire da Visual Studio 2010, l'elenco di inclusione viene ignorato se la soluzione Office viene installata usando Windows Installer (MSI) nella directory Programmi. Per altre informazioni, vedere [soluzioni Office Trust utilizzando gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
+ A partire da Visual Studio 2010, l'elenco di inclusione viene ignorato se la soluzione Office viene installata usando Windows Installer (MSI) nella directory Programmi. Per altre informazioni, vedere [soluzioni di Office Trust usando gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
- ![Sicurezza VSTO: tramite il programma di installazione per installare](../vsto/media/setup-vstoinstaller.png "sicurezza VSTO: tramite il programma di installazione per installare")  
+ ![Sicurezza VSTO: utilizzo del programma di installazione per installare](../vsto/media/setup-vstoinstaller.png "sicurezza VSTO: utilizzo del programma di installazione per installare")  
   
 ## <a name="see-also"></a>Vedere anche  
  [Concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md)   
- [Concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md)   
- [Trust di soluzioni Office mediante gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
- [Procedura: configurare la protezione di elenco di inclusione](../vsto/how-to-configure-inclusion-list-security.md)   
+ [Concedere l'attendibilità ai documenti](../vsto/granting-trust-to-documents.md)   
+ [Trust di soluzioni Office mediante elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
+ [Procedura: configurare la sicurezza di elenco di inclusione](../vsto/how-to-configure-inclusion-list-security.md)   
  [Procedura: firmare soluzioni Office](../vsto/how-to-sign-office-solutions.md)   
  [Risolvere i problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)   
  [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)   
