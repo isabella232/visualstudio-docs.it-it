@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531714"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879213"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di amministratore di Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide).
+Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di amministratore di Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
 È possibile distribuire Visual Studio 2015 in una rete purché ogni computer di destinazione soddisfi le [requisiti di installazione minimi](http://www.microsoft.com/visualstudio/eng/products/2013-editions). È possibile creare una condivisione di rete eseguendo il file di installazione con l'opzione /layout (come descritto nel [creare un'installazione Offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) pagina) e quindi copiarla dal computer locale alla condivisione di rete. Se si usa un'immagine ISO, è possibile montare l'immagine ISO e condividerla o copiarla in una condivisione di rete.  
   
@@ -59,7 +59,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di 
 ## <a name="controlling-what-is-installed"></a>Controllo dei componenti installati  
  Se si vuole controllare cosa può installare l'utente finale esistono due opzioni: l'installazione del file dell'amministratore e le opzioni da riga di comando. Selezionare l'installazione del file dell'amministratore se l'obiettivo è quello di limitare le scelte dell'utente finale nell'esperienza di installazione di Visual Studio. Selezionare i parametri della riga di comando se si intende creare una configurazione iniziale ma si vuole consentire all'utente finale di personalizzare la propria esperienza di installazione di Visual Studio.  
   
- Per altre informazioni sull'esperienza di file dell'amministratore, vedere [procedura: creare ed eseguire un'installazione automatica di Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) e [procedura: applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Per altre informazioni sui controlli della riga di comando, vedere la [utilizzare i parametri della riga di comando per installare Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) pagina.  
+ Per altre informazioni sull'esperienza relativa al file dell'amministratore, vedere [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) e [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Per altre informazioni sui controlli della riga di comando, vedere la [utilizzare i parametri della riga di comando per installare Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) pagina.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Specifica delle impostazioni dei commenti e suggerimenti del cliente  
  Per impostazione predefinita, l'installazione di Visual Studio consente l'invio di commenti dei clienti. È possibile configurare Visual Studio per disabilitare i suggerimenti dei clienti nei singoli computer modificando in stringa "0" il valore della chiave seguente del Registro di sistema:  

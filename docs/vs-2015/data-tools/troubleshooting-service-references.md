@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540866"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880890"
 ---
 # <a name="troubleshooting-service-references"></a>Risoluzione dei problemi relativi ai riferimenti al servizio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ Questo argomento elenca i problemi comuni che possono verificarsi quando si sta 
 ## <a name="error-debugging-service-code"></a>Codice di errore debug del servizio
  Quando si esegue il codice per un servizio WCF dal codice client e si verifichi un errore correlato ai simboli mancanti. Ciò può verificarsi quando un servizio che faceva parte della soluzione è stato spostato o rimosso dalla soluzione.
 
- Quando si aggiunge un riferimento a un servizio WCF che fa parte della soluzione corrente, viene aggiunto una dipendenza di compilazione esplicita tra il progetto di servizio e il progetto di client del servizio. Questa operazione garantisce che il client accede sempre i file binari del servizio aggiornati, che è particolarmente importante per gli scenari, ad esempio l'esecuzione di istruzioni dal codice client nel codice del servizio di debug.
+ Quando si aggiunge un riferimento a un servizio WCF che fa parte della soluzione corrente, viene aggiunto una dipendenza di compilazione esplicita tra il progetto di servizio e il progetto di client del servizio. In questo modo si garantisce che il client accede sempre i file binari del servizio aggiornati, che è particolarmente importante per gli scenari, ad esempio l'esecuzione di istruzioni dal codice client nel codice del servizio di debug.
 
- Se il progetto di servizio viene rimosso dalla soluzione, viene invalidata questa dipendenza di compilazione esplicita. Visual Studio non può più garantire che che viene ricompilato il progetto di servizio base alle esigenze.
+ Se il progetto di servizio viene rimosso dalla soluzione, viene invalidata questa dipendenza di compilazione esplicita. Visual Studio non può più garantire che il progetto di servizio viene ricompilato base alle esigenze.
 
  Per correggere questo errore, è necessario ricompilare manualmente il progetto di servizio:
 

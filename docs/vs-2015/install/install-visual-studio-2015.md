@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: db32eaaefd89bce9b3972853b7bb02a307b8df4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5f28f547d6d206cce7fe4face3b92d5fdf0ae4b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519558"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880127"
 ---
 # <a name="install-visual-studio-2015"></a>Installare Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Questa pagina include informazioni dettagliate per l'installazione di **Visual S
  È possibile installare Visual Studio usando i supporti di installazione (DVD), usando il servizio di sottoscrizione di Visual Studio dal [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) sito Web, scaricando un programma di installazione web di [Visual Studio Scarica](http://go.microsoft.com/fwlink/?LinkId=517106) sito Web, oppure creare un layout di installazione offline (vedere la [creare una linea installazione di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) pagina per altri dettagli).  
   
 > [!IMPORTANT]
->  Per installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è necessario disporre delle credenziali di amministratore. Tuttavia, dopo l'installazione le credenziali non sono necessarie per usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+>  Per installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]è necessario disporre delle credenziali di amministratore. Tuttavia, dopo l'installazione le credenziali non sono necessarie per usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Per l'account dell'amministratore locale deve essere abilitati i privilegi seguenti per installare tutti gli elementi in Visual Studio.  
   
@@ -88,7 +88,7 @@ Questa pagina include informazioni dettagliate per l'installazione di **Visual S
  Per altre informazioni sui requisiti di questo account amministratore locale, vedere l'articolo della Knowledge Base, [L'installazione di SQL Server non riesce se l'account di configurazione non ha determinati diritti utente](https://support.microsoft.com/en-us/kb/2000257).  
   
 ###  <a name="BKMK_Media"></a> Usando i supporti di installazione  
- Per installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nella directory radice sui supporti di installazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], eseguire il file di installazione per l'edizione preferita:  
+ Per installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nella directory radice sui supporti di installazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , eseguire il file di installazione per l'edizione preferita:  
   
 |Edizione|File di installazione|  
 |-------------|-----------------------|  
@@ -135,7 +135,7 @@ Questa pagina include informazioni dettagliate per l'installazione di **Visual S
   
 #### <a name="to-install-or-uninstall-help-content"></a>Per installare o disinstallare il contenuto della Guida  
   
-1.  Nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dal menu barra, scegliere **aiutare**, **Aggiungi e Rimuovi contenuto della Guida**.  
+1.  Nella barra dei menu di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , scegliere **?** quindi **Aggiungi e rimuovi contenuto della Guida**.  
   
 2.  Nella scheda **Gestisci contenuti** di **Microsoft Help Viewer**selezionare l'origine di installazione per il contenuto della Guida.  
   
@@ -203,7 +203,7 @@ Questa pagina include informazioni dettagliate per l'installazione di **Visual S
 |-----------|-----------------|  
 |[Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Viene descritto come installare Visual Studio quando non si è connessi a Internet.
 |[Installare versioni affiancate di Visual Studio](../install/install-visual-studio-versions-side-by-side.md)|Vengono fornite informazioni sull'installazione di più versioni di Visual Studio nello stesso computer.|  
-|[Usare i parametri della riga di comando per installare Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Elenca i parametri della riga di comando che è possibile usare quando si installa Visual Studio da un prompt dei comandi.|  
+|[Usare i parametri della riga di comando per installare Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Elenca i parametri della riga di comando che è possibile usare quando si installa Visual Studio da un prompt dei comandi.|  
 |[Disinstallare Visual Studio](../install/uninstall-visual-studio.md)|Viene descritto come disinstallare Visual Studio.|  
 |[Guida di Visual Studio Administrator](../install/visual-studio-administrator-guide.md)|Fornisce informazioni sulle opzioni di distribuzione per Visual Studio.|  
 |[The Visual Studio Image Library](../designers/the-visual-studio-image-library.md) (Libreria di immagini di Visual Studio)|Vengono fornite informazioni sull'installazione di immagini che possono essere usate nelle applicazioni di Visual Studio.|  

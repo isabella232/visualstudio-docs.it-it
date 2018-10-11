@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e90c3f5ec522190cf08027bdffbc9a9558cee90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525282"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880780"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Servizi e prodotti per l'accessibilità (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i
   
  Poiché gli indirizzi Web possono cambiare, è possibile che il sito menzionato in questo documento non risulti disponibile.  
   
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Servizio clienti per persone con problemi uditivi  
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Servizio clienti per persone con problemi di udito  
  Gli utenti con problemi di udito possono effettuare l'accesso ai servizi di supporto tecnico e clienti Microsoft tramite un servizio DTS (TTY/TDD):  
   
  Per il servizio clienti, contattare Microsoft Sales Information Center al numero (800) 892-5234 dalle 6:30 alle 17:30 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi.  

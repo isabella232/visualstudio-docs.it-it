@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 587da32a1216c219b1811e8fbc8c1dd9ed2b01ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8b352b5abdeb975c09d3be95fc7384930eb022
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530583"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880929"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -561,7 +561,7 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
 ####  <a name="BKMK_CommandComboBox"></a> Casella combinata  
   
 > [!IMPORTANT]
->  Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se l'elenco a discesa non contiene un'area di testo modificabile, usare i token di colore indicati in [discesa](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
+>  Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se la casella di riepilogo a discesa non contiene un'area di testo modificabile, usare i token di colore indicati in [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
   
  ![Casella combinata con linea rossa](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
@@ -808,7 +808,7 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
 ####  <a name="BKMK_CommandDropDown"></a> Elenco a discesa  
   
 > [!IMPORTANT]
->  Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa include un'area di testo modificabile, usare i token di colore indicati in [pole se seznamem](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
+>  Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa contiene un'area di testo modificabile, usare i token di colore indicati in [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
   
  ![Eliminare&#45;verso il basso con linea rossa](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
   
@@ -1017,7 +1017,7 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>Pulsante di menu combinato  
- I pulsanti di menu combinato condividono molti nomi di token con altri controlli della barra dei comandi, come pulsanti, menu e testo della barra dei comandi. Tutti i nomi di token dei pulsanti a discesa e di azione necessari vengono ripetuti qui per praticità. Gli elenchi di elenco a discesa sul pulsante di menu combinato sono implementazioni della barra dei comandi [menu](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
+ I pulsanti di menu combinato condividono molti nomi di token con altri controlli della barra dei comandi, come pulsanti, menu e testo della barra dei comandi. Tutti i nomi di token dei pulsanti a discesa e di azione necessari vengono ripetuti qui per praticità. Gli elenchi a discesa dei pulsanti di menu combinato sono implementazioni dei [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)della barra dei comandi.  
   
  ![Pulsante di menu combinato con linea rossa](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")  
   
@@ -1668,7 +1668,7 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Impostato sullo stesso colore dello sfondo.  
   
 #### <a name="document-overflow-button"></a>Pulsante di overflow dei documenti  
- Il pulsante di overflow dei documenti è presente se ci sono uno o più documenti aperti, indipendentemente dal fatto che nella configurazione corrente sia disponibile spazio sufficiente da contenere tutte le schede dei documenti. Il menu a discesa di overflow di documento, è controllato dal **CommandBarMenu** colori (vedere [menu](../../misc/shared-colors.md#BKMK_CommandMenus)), viene visualizzato un elenco di tutti i documenti aperti, sia visibili sia nascosti e il glifo di overflow cambia a seconda se vengono visualizzati tutti i documenti aperti nel canale delle schede.  
+ Il pulsante di overflow dei documenti è presente se ci sono uno o più documenti aperti, indipendentemente dal fatto che nella configurazione corrente sia disponibile spazio sufficiente da contenere tutte le schede dei documenti. Il menu a discesa di overflow dei documenti, controllato dai colori di **CommandBarMenu** (vedere [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), visualizza un elenco di tutti i documenti aperti, sia visibili sia nascosti, e il glifo di overflow cambia a seconda che tutti i documenti aperti siano o meno visualizzati nel canale delle schede.  
   
  ![Overflow con linea rossa](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")  
   
@@ -2802,7 +2802,7 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  `Environment.ToolWindowBorder`  
   
 ### <a name="scroll-bar"></a>Barra di scorrimento  
- Le barre di scorrimento hanno uno stile che riflette l'ambiente di Visual Studio e non è necessario applicarvi un tema. Tuttavia, si potrebbe scegliere di sfruttare i colori usati nelle barre di scorrimento in modo che l'interfaccia utente appaia sempre coerente con questa parte dell'ambiente di Visual Studio.  
+ Le barre di scorrimento hanno uno stile che riflette l'ambiente di Visual Studio e non è necessario applicarvi un tema. Tuttavia, si potrebbe decidere che si desidera sfruttare i colori usati nelle barre di scorrimento in modo che l'interfaccia utente appaia sempre coerenza con questa parte dell'ambiente di Visual Studio.  
   
  ![Barra di scorrimento con linea rossa](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")  
   
@@ -3348,7 +3348,7 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per qualsiasi interfaccia utente diversa da un elenco a discesa o una casella combinata.  
   
--   per un [elenco a discesa](../../misc/shared-colors.md#BKMK_CommandDropDown) oppure [pole se seznamem](../../misc/shared-colors.md#BKMK_CommandComboBox) nella barra dei comandi.  
+-   Per un controllo [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) o [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) nella barra dei comandi.  
   
  **Default**  
   
@@ -3698,7 +3698,7 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  nessuno  
   
 ## <a name="manifest-designer"></a>Finestra Progettazione manifesto  
- La finestra Progettazione manifesto è stata progettata come strumento per semplificare la modifica del file manifesto in progetti Windows 8 e Windows Phone 8. Benché non sia disponibile per l'utilizzo alcun framework condiviso, potrebbe essere appropriato fare in modo che il layout di progettazione e i colori delle schede di orientamento/spostamento corrispondano alla struttura complessiva. Per altre informazioni sui dettagli del layout, vedere [Layout per Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
+ La finestra Progettazione manifesto è stata progettata come strumento per semplificare la modifica del file manifesto in progetti Windows 8 e Windows Phone 8. Benché non sia disponibile per l'utilizzo alcun framework condiviso, potrebbe essere appropriato fare in modo che il layout di progettazione e i colori delle schede di orientamento/spostamento corrispondano alla struttura complessiva. Per altre informazioni sui dettagli del layout, vedere [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
   
  ![Finestra di progettazione manifesto con linea rossa](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")  
   
@@ -4156,25 +4156,25 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
   
  `TreeView.SelectedItemActive`  
   
- Dal [Visualizazione](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria  
+ Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Bordo  
   
  `TreeView.FocusVisualBorder`  
   
- Dal [Visualizazione](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria  
+ Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Primo piano (glifo)  
   
  `TreeView.SelectedItemActive`  
   
- Dal [Visualizazione](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria  
+ Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Primo piano (testo)  
   
  `TreeView.SelectedItemActive`  
   
- Dal [Visualizazione](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria  
+ Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  ![Nodo padre della casella degli strumenti con stato non attivo](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")  
   
@@ -4188,7 +4188,7 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
   
  `TreeView.SelectedItemInactive`  
   
- Dal [Visualizazione](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria  
+ Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Bordo  
   
@@ -4198,11 +4198,11 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
   
  `TreeView.SelectedItemInactive`  
   
- Dal [Visualizazione](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria  
+ Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Primo piano (testo)  
   
  `TreeView.SelectedItemInactive`  
   
- Dal [Visualizazione](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria
+ Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 

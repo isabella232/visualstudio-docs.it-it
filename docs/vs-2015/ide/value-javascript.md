@@ -17,17 +17,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bdb645bed570df019c4f4fe15b6865e1197bec67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a19732336cbbba16c0cebda75735a2a807240d6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531195"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880778"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;valore&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [documentazione di Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+La versione più recente di questo argomento è reperibile in [documentazione di Visual Studio 2017](/visualstudio/).  
   
 Specifica le informazioni sulla documentazione per `get` e `set` funzioni per ECMAScript 3 proprietà.  
   

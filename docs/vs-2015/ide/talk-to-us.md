@@ -15,12 +15,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c85bdfd08fb3d2ad06c9dfd17b46a31fe4ed74d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0f068a40fc4cbac2cd261fe295e6e8b0fb53b2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530221"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878979"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Siamo interessati alle tue idee per migliorare la nostra documentazione. Non pos
  Se si verificano problemi con Visual Studio, ad esempio arresti anomali, prestazioni ridotte, un comportamento imprevisto e così via, segnalare il problema a Microsoft facendo clic sull'icona di commenti e suggerimenti accanto a **avvio veloce**, oppure scegliendo  **Guida &#124; Invia commenti e suggerimenti &#124; segnala un problema** dal menu principale. Per altre informazioni, vedere [come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Inviare suggerimenti sulle funzionalità di Visual Studio  
- Se si individuano eventuali aree di miglioramento, è possibile indicarle a Microsoft. Scegliere **Suggerimento** per suggerire una funzionalità o una modifica al team di Visual Studio. Il suggerimento verrà inserito automaticamente in [UserVoice](https://visualstudio.uservoice.com) , dove altri utenti possono votarlo.  
+ Se si individuano eventuali aree di miglioramento, è possibile indicarle a Microsoft. Scegliere **Suggerimento** per suggerire una funzionalità o una modifica al team di Visual Studio. Il suggerimento verrà inserito automaticamente in [UserVoice](https://visualstudio.uservoice.com) dove altri utenti possono votarlo.  
   
 ## <a name="rate-this-product"></a>Valutare il prodotto  
  Le versioni non definitive di Visual Studio includono una voce di menu **Valuta questo prodotto** che consente di inviare commenti e suggerimenti sulla qualità della build in esecuzione. Questa voce di menu non è visualizzata nelle versioni rilasciate del prodotto.  

@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531310"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880721"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ La versione più recente di questo argomento è reperibile in [debug remoto](htt
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Per scaricare e installare remote tools
   
-1.  Nel computer server o dispositivo che si desidera eseguire il debug (piuttosto che il computer che esegue Visual Studio), installare la versione corretta di remote tools.
+1.  Nel dispositivo o server macchina che si desidera eseguire il debug (anziché il computer che esegue Visual Studio), installare la versione corretta di remote tools.
 
     |Versione|Collegamento|Note|
     |-|-|-|
@@ -59,7 +59,7 @@ La versione più recente di questo argomento è reperibile in [debug remoto](htt
     > [!IMPORTANT]
     >  Si consiglia di che installare la versione più recente di remote tools corrispondente alla versione di Visual Studio. Le versioni non corrispondenti non sono consigliate.  
     >   
-    >  Inoltre, è necessario installare gli strumenti remoti che hanno la stessa architettura del sistema operativo in cui si desidera installarlo. In altre parole, se si vuole eseguire il debug di un'applicazione a 32 bit su un un computer remoto che esegue un sistema operativo a 64 bit, è necessario installare la versione a 64 bit di remote tools sul computer remoto.  
+    >  Inoltre, è necessario installare gli strumenti remoti che hanno la stessa architettura del sistema operativo in cui si desidera installarlo. In altre parole, se si desidera eseguire il debug di un'applicazione a 32 bit in un computer remoto che esegue un sistema operativo a 64 bit, è necessario installare la versione a 64 bit di remote tools sul computer remoto.  
   
 3.  Dopo avere scaricato il file eseguibile, seguire le istruzioni per installare l'applicazione nel computer remoto. Vedere [istruzioni di configurazione](#bkmk_setup)
 
@@ -286,7 +286,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurare il debug con simboli remoti  
  Dovrebbe essere possibile eseguire il debug del codice con i simboli generati nel computer di Visual Studio. L'uso di simboli locali consente di migliorare notevolmente le prestazioni del debugger remoto.  Se è necessario usare simboli remoti, indicare a Remote Debugging Monitor di eseguire la ricerca di simboli nel computer remoto.  
   
- A partire da Visual Studio 2013 Update 2, è possibile usare la seguente opzione della riga di comando di msvsmon per usare i simboli remoti per il codice gestito: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
+ A partire da Visual Studio 2013 Update 2 è possibile usare la seguente opzione della riga di comando di msvsmon per usare i simboli remoti per il codice gestito: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
  Per altre informazioni, vedere Guida al debug remoto (premere **F1** la finestra del debugger remoto, oppure fare clic su **Guida / utilizzo**). È possibile trovare altre informazioni, vedere [.NET simbolo modifiche nel caricamento remoto in Visual Studio 2012 e 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
@@ -304,7 +304,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
 ## <a name="see-also"></a>Vedere anche  
  [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)  (Debug in Visual Studio)  
  [Configurare il Firewall di Windows per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [Assegnazioni di porta del Debugger remoto](../debugger/remote-debugger-port-assignments.md)   
+ [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Debug remoto di ASP.NET in un computer remoto con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

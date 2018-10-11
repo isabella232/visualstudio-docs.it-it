@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529277"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880245"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanner e parser dei servizi di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>L'analisi per le parentesi graffe corrispondenti  
  Questo esempio viene illustrato il flusso di controllo per la corrispondenza di una parentesi graffa di chiusura che l'utente ha digitato. In questo processo, lo scanner utilizzato per la colorazione viene usato anche per determinare il tipo di token e indica se il token può attivare un'operazione di corrispondenza parentesi graffe. Se il trigger viene trovato, il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> viene chiamato per trovare la parentesi graffa corrispondente. Infine, vengono evidenziate le due parentesi graffe.  
   
- Anche se le parentesi graffe vengono utilizzate nei nomi dei trigger e analizzare i motivi, questo processo non è limitato per le parentesi graffe effettive. Qualsiasi coppia di caratteri specificato da un oggetto corrispondente coppia è supportato. Gli esempi includono (e), \< e >, e [e].  
+ Anche se le parentesi graffe vengono utilizzate nei nomi dei trigger e analizzare i motivi, questo processo non è limitato per le parentesi graffe effettive. Qualsiasi coppia di caratteri specificato da una coppia corrispondente è supportato. Gli esempi includono (e), \< e >, e [e].  
   
  Si supponga che il servizio di linguaggio supporta le parentesi graffe corrispondenti.  
   

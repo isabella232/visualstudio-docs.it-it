@@ -16,12 +16,12 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34cf96f38d169994d85f758c9453b6ad15ad6390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99561ea9e1fe46f5e0f90bf994c8b9eaf4b11d32
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520236"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880529"
 ---
 # <a name="registering-an-expression-evaluator"></a>Registrazione di un analizzatore di espressioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ La versione più recente di questo argomento è reperibile in [la registrazione 
 ## <a name="managed-code-expression-evaluator"></a>Analizzatore di espressioni di codice gestito  
  Un codice gestito EE viene implementato come una libreria di classi, che è una DLL che si registra con l'ambiente COM, in genere avviato da una chiamata al programma VSIP **regpkg.exe**. Il processo effettivo di scrivere le chiavi del Registro di sistema per l'ambiente COM viene gestito automaticamente.  
   
- Un metodo della classe principale è contrassegnato con il <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, che indica che tale metodo viene chiamato quando la DLL da registrare con COM. Questo metodo di registrazione, spesso denominato `RegisterClass`, esegue l'attività di registrazione della DLL con Visual Studio. Un oggetto corrispondente `UnregisterClass` (contrassegnato con il <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), Annulla gli effetti di `RegisterClass` quando viene disinstallata la DLL.  
+ Un metodo della classe principale è contrassegnato con il <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, che indica che è metodo da chiamare quando la DLL da registrare con COM. Questo metodo di registrazione, spesso denominato `RegisterClass`, esegue l'attività di registrazione della DLL con Visual Studio. Un oggetto corrispondente `UnregisterClass` (contrassegnato con il <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), Annulla gli effetti di `RegisterClass` quando viene disinstallata la DLL.  
   
  Le stesse voci del Registro di sistema vengono effettuate per un EE scritti in codice non gestito. l'unica differenza è che non vi sia alcuna funzione di supporto, ad esempio `SetEEMetric` per svolgere il lavoro per l'utente. Un esempio di questo processo di registrazione/annullamento della registrazione è simile alla seguente:  
   
