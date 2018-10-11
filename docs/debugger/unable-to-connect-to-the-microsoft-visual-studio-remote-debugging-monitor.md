@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f52834b1983b808a2da57795dc2c5653511f88
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058711"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073935"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
 Questo messaggio può verificarsi perché remote debugging monitor non sia configurato correttamente nel computer remoto o il computer remoto è inaccessibile a causa di problemi di rete o la presenza di un firewall.
@@ -116,7 +116,7 @@ Potrebbe trattarsi di un problema legacy specifico di Windows XP e Windows 7. Ve
 
 Se non è possibile connettersi usando il nome del computer remoto, provare a utilizzare l'indirizzo IP. È possibile usare `ipconfig` in una riga di comando nel computer remoto per ottenere l'indirizzo IPv4. Se si usa un file host, verificare che sia configurato correttamente.
 
-Se il problema persiste, verificare che il computer remoto sia accessibile in rete ([ping](https://technet.microsoft.com/en-us/library/cc732509(v=ws.10).aspx) nel computer remoto). Non è supportato il debug remoto tramite Internet, tranne che in alcuni scenari di Microsoft Azure.
+Se il problema persiste, verificare che il computer remoto sia accessibile in rete ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) nel computer remoto). Non è supportato il debug remoto tramite Internet, tranne che in alcuni scenari di Microsoft Azure.
   
 ### <a name="server_incorrect"></a> Il nome del server non è corretto o software di terze parti interferisce con il debugger remoto
 
@@ -153,7 +153,7 @@ Per risolvere il problema, usare uno dei metodi seguenti:
 ### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Il computer locale e quello remoto hanno modalità di autenticazione diverse  
  Il computer locale e quello remoto devono usare la stessa modalità di autenticazione. Per risolvere questo problema, assicurarsi che entrambi i computer usino la stessa modalità di autenticazione. È possibile modificare la modalità di autenticazione. Nella finestra del debugger remoto, andare alla **strumenti > Opzioni** nella finestra di dialogo.
   
- Per altre informazioni sulle modalità di autenticazione, vedere [Panoramica di Autenticazione di Windows](https://technet.microsoft.com/en-us/library/hh831472.aspx).   
+ Per altre informazioni sulle modalità di autenticazione, vedere [Panoramica di Autenticazione di Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).   
   
 ### <a name="anti-virus-software-is-blocking-the-connections"></a>Il software antivirus sta bloccando le connessioni  
  Il software antivirus di Windows consente le connessioni del debugger remoto, mentre altri software antivirus di terze parti potrebbero bloccarle. Controllare la documentazione del software antivirus per scoprire come consentire queste connessioni.  
@@ -168,4 +168,4 @@ Per risolvere il problema, usare uno dei metodi seguenti:
  Per ottenere più remoti assistenza sul debugger, aprire pagina della Guida del debugger remoto (**aiutare > utilizzo** nel debugger remoto).
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug remoto](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
