@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279687"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612662"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
 
@@ -54,6 +54,10 @@ Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.ex
 |**/ListSettingsProviders**|Elenca i provider di impostazioni test installati.|
 |**/Blame**|Monitora i test durante l'esecuzione e, se il processo host del test si arresta in modo anomalo, genera i nomi dei test nella sequenza di esecuzione fino al test specifico che era in esecuzione al momento dell'arresto anomalo. Questo output semplifica l'isolamento del test che causa l'errore e l'ulteriore diagnosi. [Altre informazioni](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nome file*]**|Scrive i log di traccia di diagnostica nel file specificato.|
+|**/ResultsDirectory:[*percorso*]**|Directory dei risultati dei test che verrà creata nel percorso specificato, se non esistente.<br />Esempio: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*ID processo padre*]**|ID del processo padre responsabile dell'avvio del processo corrente.|
+|**/Port:[*porta*]**|La porta per la connessione socket e la ricezione dei messaggi di evento.|
+|**/Collect:[*nome descrittivo agente di raccolta dati*]**|Abilita l'agente di raccolta dati per l'esecuzione dei test. [Altre informazioni](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Opzioni e valori non applicano la distinzione tra maiuscole e minuscole.

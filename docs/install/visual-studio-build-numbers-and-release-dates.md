@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 09/06/2018
+ms.date: 09/20/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 85373579dfc4b626dcdf35b8ac2a29f654da4d4b
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 30e176c7094a303560f1d7cb81732bfd7b62f1d9
+ms.sourcegitcommit: a2d8a662601e61614ac5332391e64ee011fba28a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996090"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46501156"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio 2017
 
@@ -25,6 +25,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.8.5 | Rilascio | 20 settembre 2018 | 15.8.28010.2036 |
+| 15.9.0 Preview 2 | Anteprima | 11 settembre 2018 | 15.9.28107.0 |
+| 15.8.4 | Rilascio | 11 settembre 2018 | 15.8.28010.2026 |
 | 15.8.3 | Rilascio | 06 settembre 2018 | 15.8.28010.2019 |
 | 15.8.2 | Rilascio | 28 agosto 2018 | 15.8.28010.2016 |
 | 15.0.18 | Rilascio | 28 agosto 2018 | 15.0.26228.52 |

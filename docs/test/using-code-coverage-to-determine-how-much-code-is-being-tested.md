@@ -1,6 +1,6 @@
 ---
-title: Code coverage in Visual Studio
-ms.date: 11/04/2016
+title: Test di code coverage
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 - CPP
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 8dc6ff1e2813f1457e8a41328f759e8e27d9aa65
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279947"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370939"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -32,26 +32,26 @@ Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando E
 
 ![Risultati del code coverage con colorazione](../test/media/codecoverage1.png)
 
- **Requisiti**
+## <a name="requirements"></a>Requisiti
 
--   Visual Studio Enterprise
+La funzionalità di code coverage è disponibile solo in Visual Studio Enterprise Edition.
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Per analizzare il code coverage su unit test in Esplora test
 
-1.  Scegliere **Analizza code coverage** dal menu **Test**.
+1. Scegliere **Analizza code coverage** dal menu **Test**.
 
-2.  Per vedere quali righe sono state eseguite, scegliere ![icona Mostra colorazione code coverage](../test/media/codecoverage-showcoloringicon.png)**Mostra colorazione code coverage**.
+2. Per vedere quali righe sono state eseguite, scegliere ![icona Mostra colorazione code coverage](../test/media/codecoverage-showcoloringicon.png) **Mostra colorazione code coverage**.
 
-     Per modificare i colori o per usare il grassetto, scegliere **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** > **Mostra impostazioni per: Editor di testo**. In **Elementi visualizzati** regolare gli elementi di code coverage.
+   Per modificare i colori o per usare il grassetto, scegliere **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** > **Mostra impostazioni per: Editor di testo**. In **Elementi visualizzati** regolare gli elementi di code coverage.
 
-3.  Se i risultati mostrano un code coverage basso, esaminare quali parti del codice non vengono analizzate e scrivere altri test per includerle nel code coverage. I team di sviluppo in genere mirano a coprire l'80% del code coverage. In alcune situazioni, un code coverage basso è accettabile. Ad esempio, un code coverage basso è accettabile quando il codice viene generato da un modello standard.
+3. Se i risultati mostrano un code coverage basso, esaminare quali parti del codice non vengono analizzate e scrivere altri test per includerle nel code coverage. I team di sviluppo in genere mirano a coprire l'80% del code coverage. In alcune situazioni, un code coverage basso è accettabile. Ad esempio, un code coverage basso è accettabile quando il codice viene generato da un modello standard.
 
 > [!TIP]
 > - Assicurarsi che l'ottimizzazione del compilatore sia disattivata
 > - Se si sta usando codice non gestito (nativo), usare una compilazione di debug
 > - Assicurarsi che vengano generati i file con estensione pdb (simbolo) per ogni assembly.
 
-Se non si ottengono i risultati previsti, vedere [Risoluzione dei problemi di code coverage](../test/troubleshooting-code-coverage.md). Ricordarsi di eseguire nuovamente il code coverage dopo aver aggiornato il codice. I risultati di code coverage e la colorazione del codice non vengono aggiornati automaticamente dopo aver modificato il codice o quando si eseguono i test.
+Se non si ottengono i risultati previsti, vedere [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md). Ricordarsi di eseguire nuovamente il code coverage dopo aver aggiornato il codice. I risultati di code coverage e la colorazione del codice non vengono aggiornati automaticamente dopo aver modificato il codice o quando si eseguono i test.
 
 ## <a name="report-in-blocks-or-lines"></a>Report in blocchi o righe
 
@@ -69,42 +69,44 @@ La finestra di code coverage può inoltre essere utilizzata per visualizzare i r
 
 È possibile eseguire il merge dei risultati di esecuzioni diverse, ad esempio le esecuzioni che utilizzano dati di test diversi.
 
--   **Per visualizzare un precedente set di risultati**, sceglierlo dal menu a discesa. Nel menu viene visualizzato un elenco temporaneo che viene cancellato quando si apre una nuova soluzione.
+- **Per visualizzare un precedente set di risultati**, sceglierlo dal menu a discesa. Nel menu viene visualizzato un elenco temporaneo che viene cancellato quando si apre una nuova soluzione.
 
--   **Per visualizzare i risultati da una sessione precedente**, scegliere **Import Code Coverage Results** (Importa risultati di code coverage), passare alla cartella **TestResults** nella soluzione e importare un file con estensione *coverage*.
+- **Per visualizzare i risultati da una sessione precedente**, scegliere **Import Code Coverage Results** (Importa risultati di code coverage), passare alla cartella **TestResults** nella soluzione e importare un file con estensione *coverage*.
 
-    La colorazione del code coverage potrebbe non essere corretta se il codice sorgente è stato modificato dopo la generazione del file con estensione *coverage*.
+   La colorazione del code coverage potrebbe non essere corretta se il codice sorgente è stato modificato dopo la generazione del file con estensione *coverage*.
 
--   **Per rendere i risultati leggibili come testo**, scegliere **Export Code Coverage Results** (Esporta risultati di code coverage). Viene generato un file leggibile con estensione *coveragexml* che può essere elaborato con altri strumenti o facilmente inviato per posta elettronica.
+- **Per rendere i risultati leggibili come testo**, scegliere **Export Code Coverage Results** (Esporta risultati di code coverage). Viene generato un file leggibile con estensione *coveragexml* che può essere elaborato con altri strumenti o facilmente inviato per posta elettronica.
 
--   **Per inviare i risultati a un altro utente**, inviare un file con estensione *coverage* o un file esportato con estensione *coveragexml*. L'utente potrà quindi importare il file. Se l'utente dispone della stessa versione del codice sorgente, potrà vedere la colorazione del code coverage.
+- **Per inviare i risultati a un altro utente**, inviare un file con estensione *coverage* o un file esportato con estensione *coveragexml*. L'utente potrà quindi importare il file. Se l'utente dispone della stessa versione del codice sorgente, potrà vedere la colorazione del code coverage.
 
 ## <a name="merge-results-from-different-runs"></a>Unire i risultati di esecuzioni diverse
 
 In alcune situazioni, verranno utilizzati blocchi di codice diversi a seconda dei dati di test. Pertanto, è necessario combinare i risultati delle diverse esecuzioni di test.
 
- Ad esempio, si supponga che quando si esegue un test con input "2 ", si rileva che viene analizzato il 50% di una particolare funzione e quando si esegue il test una seconda volta con l'input "- 2 ", si rileva nella visualizzazione della colorazione di code coverage che viene analizzato l'altro 50% della funzione. A questo punto viene eseguito il merge dei risultati delle due esecuzioni dei test e nel report e nella visualizzazione della colorazione di code coverage viene indicato che il 100% della funzione è stato analizzato.
+Ad esempio, si supponga che quando si esegue un test con input "2 ", si rileva che viene analizzato il 50% di una particolare funzione e quando si esegue il test una seconda volta con l'input "- 2 ", si rileva nella visualizzazione della colorazione di code coverage che viene analizzato l'altro 50% della funzione. A questo punto viene eseguito il merge dei risultati delle due esecuzioni dei test e nel report e nella visualizzazione della colorazione di code coverage viene indicato che il 100% della funzione è stato analizzato.
 
- A questo scopo, usare l'![icona per il pulsante di esecuzione del merge nella finestra Code coverage](../test/media/codecoverage-mergeicon.png)**merge dei risultati di code coverage**. È possibile scegliere qualsiasi combinazione di esecuzioni recenti o risultati importati. Per combinare i risultati esportati, è necessario prima importarli.
+A questo scopo, usare l'![icona per il pulsante di esecuzione del merge nella finestra Code coverage](../test/media/codecoverage-mergeicon.png)**icona per il merge dei risultati di code coverage**. È possibile scegliere qualsiasi combinazione di esecuzioni recenti o risultati importati. Per combinare i risultati esportati, è necessario prima importarli.
 
- Usare **Export Code Coverage Results** (Esporta risultati di code coverage) per salvare i risultati di un'operazione di merge.
+Usare **Export Code Coverage Results** (Esporta risultati di code coverage) per salvare i risultati di un'operazione di merge.
 
 ### <a name="limitations-in-merging"></a>Limitazioni del merge
 
--   Se si esegue il merge dei dati di code coverage di versioni differenti del codice, vengono visualizzati i risultati separati ma non combinati. Per ottenere risultati combinati, utilizzare la stessa compilazione del codice, cambiando solo i dati di test.
+- Se si esegue il merge dei dati di code coverage di versioni differenti del codice, vengono visualizzati i risultati separati ma non combinati. Per ottenere risultati combinati, utilizzare la stessa compilazione del codice, cambiando solo i dati di test.
 
--   Se si esegue il merge di un file di risultati che è stato esportato e poi importato, è possibile visualizzare solo i risultati per riga e non per blocco. Usare il comando **Aggiungi/Rimuovi colonne** per visualizzare i dati della riga.
+- Se si esegue il merge di un file di risultati che è stato esportato e poi importato, è possibile visualizzare solo i risultati per riga e non per blocco. Usare il comando **Aggiungi/Rimuovi colonne** per visualizzare i dati della riga.
 
--   Se si esegue il merge dei risultati dei test di un progetto ASP.NET, vengono visualizzati i risultati dei test separati ma non combinati. Si applica solo agli elementi ASP.NET: i risultati per tutti gli altri assembly vengono combinati.
+- Se si esegue il merge dei risultati dei test di un progetto ASP.NET, vengono visualizzati i risultati dei test separati ma non combinati. Si applica solo agli elementi ASP.NET: i risultati per tutti gli altri assembly vengono combinati.
 
 ## <a name="exclude-elements-from-the-code-coverage-results"></a>Escludere elementi dai risultati di code coverage
 
-Potrebbe essere necessario escludere specifici elementi nel codice dai risultati di code coverage, ad esempio se il codice viene generato da un modello di testo. Aggiungere l'attributo `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` a uno dei seguenti elementi di codice: classe, struct, metodo, proprietà, metodo Set o Get di proprietà, evento. Si noti che l'esclusione di una classe non esclude le relative classi derivate.
+Potrebbe essere necessario escludere specifici elementi nel codice dai risultati di code coverage, ad esempio se il codice viene generato da un modello di testo. Aggiungere l'attributo <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> a uno dei seguenti elementi di codice: classe, struct, metodo, proprietà, metodo Set o Get di proprietà, evento.
 
- Ad esempio:
+> [!TIP]
+> L'esclusione di una classe non esclude le relative classi derivate.
+
+Ad esempio:
 
 ```csharp
-
 using System.Diagnostics.CodeAnalysis;
 ...
 public class ExampleClass1
@@ -132,7 +134,6 @@ public class ExampleClass1
 }
 [ExcludeFromCodeCoverage]
 class ExampleClass2 { ... }
-
 ```
 
 ```vb
@@ -222,23 +223,23 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Utilizzare le seguenti macro:
 
- `ExcludeFromCodeCoverage(` *NomeEsclusione* `, L"` *NomeFunzione* `");`
+`ExcludeFromCodeCoverage(` *NomeEsclusione* `, L"` *NomeFunzione* `");`
 
- `ExcludeSourceFromCodeCoverage(` *NomeEsclusione* `, L"` *PercorsoFileOrigine* `");`
+`ExcludeSourceFromCodeCoverage(` *NomeEsclusione* `, L"` *PercorsoFileOrigine* `");`
 
--   *NomeEsclusione* è un nome univoco.
+- *NomeEsclusione* è un nome univoco.
 
--   *NomeFunzione* è un nome completo di funzione. Si possono utilizzare i caratteri jolly. Ad esempio, per escludere tutte le funzioni di una classe, scrivere `MyNamespace::MyClass::*`
+- *NomeFunzione* è un nome completo di funzione. Si possono utilizzare i caratteri jolly. Ad esempio, per escludere tutte le funzioni di una classe, scrivere `MyNamespace::MyClass::*`
 
--   *PercorsoFileOrigine* è il percorso locale o UNC di un file con estensione cpp. Si possono utilizzare i caratteri jolly. L'esempio seguente esclude tutti i file in una directory specifica: `\\MyComputer\Source\UnitTests\*.cpp`
+- *PercorsoFileOrigine* è il percorso locale o UNC di un file con estensione cpp. Si possono utilizzare i caratteri jolly. L'esempio seguente esclude tutti i file in una directory specifica: `\\MyComputer\Source\UnitTests\*.cpp`
 
--   `#include <CodeCoverage\CodeCoverage.h>`
+- `#include <CodeCoverage\CodeCoverage.h>`
 
--   Effettuare le chiamate alle macro di esclusione nello spazio dei nomi globale e non in uno spazio dei nomi o una classe qualsiasi.
+- Effettuare le chiamate alle macro di esclusione nello spazio dei nomi globale e non in uno spazio dei nomi o una classe qualsiasi.
 
--   È possibile inserire le esclusioni nel file di codice dello unit test oppure nel file di codice dell'applicazione.
+- È possibile inserire le esclusioni nel file di codice dello unit test oppure nel file di codice dell'applicazione.
 
--   Le esclusione devono essere compilate come codice non gestito (nativo), impostando l'opzione del compilatore oppure utilizzando `#pragma managed(off)`.
+- Le esclusione devono essere compilate come codice non gestito (nativo), impostando l'opzione del compilatore oppure utilizzando `#pragma managed(off)`.
 
 > [!NOTE]
 > Per escludere funzioni nel codice gestito C++/CLI applicare l'attributo `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` alla funzione. L'operazione è uguale in C#.
@@ -251,41 +252,30 @@ Per l'analisi di code coverage è possibile esercitare un maggiore controllo sug
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analizzare code coverage in Azure Pipelines
 
-Quando si controlla il codice, i test vengono eseguiti sul server di compilazione insieme a tutti gli altri test degli altri membri del team. Se questo aspetto non è ancora stato configurato, vedere [Eseguire test nel processo di compilazione](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38). È utile analizzare il code coverage in Azure Pipelines perché offre un'immagine aggiornata e completa del code coverage dell'intero progetto. Vengono anche inclusi i test di sistema automatizzati e altri test codificati che normalmente non vengono eseguiti nei computer di sviluppo.
-
-1. In **Team Explorer** aprire **Compilazioni** e aggiungere o modificare una definizione di compilazione.
-
-2. Nella pagina **Processo** espandere **Test automatizzati**, **Origine test**, **Impostazioni esecuzione test**. Impostare **Tipo di file di impostazioni esecuzione test** su **Code coverage abilitato**.
-
-   Se si dispone di più di una definizione di origine del test, ripetere questo passaggio per ciascuna di esse.
-
-   ![Impostazione della definizione di compilazione per il code coverage](../test/media/codecoverage-plaincc.png)
-
-> [!TIP]
-> Se non vi è alcun campo denominato **Type of Run Settings File** (Tipo di file impostazioni esecuzione), modificare la proprietà **Test Runner**. In **Test automatizzati** selezionare **Assembly di test** e premere il pulsante con i puntini di sospensione **[...]** alla fine della riga. Nella finestra di dialogo **Aggiungi/Modifica esecuzione dei test** in **Test Runner** scegliere **Visual Studio Test Runner**.
-
-Dopo la compilazione, i risultati di code coverage sono associati all'esecuzione dei test e vengo visualizzati nel riepilogo compilazione.
+Quando si controlla il codice, i test vengono eseguiti sul server di compilazione insieme ai test degli altri membri del team. È utile analizzare il code coverage in Azure Pipelines per ottenere un'immagine aggiornata e completa del code coverage dell'intero progetto. Vengono anche inclusi i test di sistema automatizzati e altri test codificati che normalmente non vengono eseguiti nei computer di sviluppo. Per altre informazioni, vedere [Eseguire unit test con le compilazioni](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analizzare il code coverage dalla riga di comando
 
 Per eseguire un test dalla riga di comando, usare *vstest.console.exe*. Il code coverage è un'opzione dell'utilità *vstest.console.exe*.
 
-1.  Avviare il prompt dei comandi di Visual Studio Developer:
+1. Avviare Prompt dei comandi per gli sviluppatori per Visual Studio:
 
-    Nel menu **Start** di Windows scegliere **Visual Studio 2017** > **Prompt dei comandi per gli sviluppatori per VS 2017**.
+   Nel menu **Start** di Windows scegliere **Visual Studio 2017** > **Prompt dei comandi per gli sviluppatori per VS 2017**.
 
-2.  Eseguire il comando seguente:
+2. Al prompt dei comandi, eseguire il comando seguente:
 
-    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
+   ```shell
+   vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage
+   ```
 
 Per altre informazioni, vedere [Opzioni della riga di comando di VSTest.Console.exe](vstest-console-options.md).
 
 ## <a name="troubleshoot"></a>Risolvere i problemi
 
-Se non vengono visualizzati risultati del code coverage, vedere l'argomento [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md).
+Se non vengono visualizzati i risultati del code coverage, vedere l'articolo [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md)
-- [Risoluzione dei problemi di code coverage](../test/troubleshooting-code-coverage.md)
+- [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md)
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)

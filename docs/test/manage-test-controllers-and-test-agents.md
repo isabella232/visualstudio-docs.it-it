@@ -1,6 +1,6 @@
 ---
 title: Gestire i test controller e gli agenti di test in Visual Studio
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279975"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371030"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -41,17 +41,15 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
     > [!NOTE]
     > È necessario che l'agente di test sia già installato affinché possa essere aggiunto a un controller di test. Per altre informazioni su come installare un agente di test, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
-2. Se si desidera modificare la modalità di esecuzione dell'agente di test, scegliere **Opzioni di esecuzione**.
+2. Verranno visualizzate due opzioni relative alla modalità di esecuzione dell'agente di test:
 
-     Verranno visualizzate due opzioni relative alla modalità di esecuzione dell'agente di test:
+   - **Servizio**: se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Servizio** in **Esegui agente di test come**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
 
-     **Servizio**: se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Servizio** in **Esegui agente di test come**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
+      A questo punto è possibile immettere i dettagli sull'utente quando l'agente di test viene avviato come servizio.
 
-     A questo punto è possibile immettere i dettagli sull'utente quando l'agente di test viene avviato come servizio.
+      1. Immettere il nome in **Nome utente**.
 
-    1. Immettere il nome in **Nome utente**.
-
-    2. Immettere la password in **Password**.
+      2. Immettere la password in **Password**.
 
         |**Informazioni importanti sull'account utente**|
         |--------------------------------------------|
@@ -60,27 +58,20 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
         |-   Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul test controller.|
         |-   È necessario che l'utente che sta tentando di usare il test controller  disponga di un account utente per tale test controller, diversamente non sarà in grado di eseguite i test.|
 
-     **Processo interattivo**: se si desidera eseguire test automatizzati che devono interagire con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Processo interattivo**. L'agente di test verrà avviato come processo interattivo anziché come servizio.
+   - **Processo interattivo**: se si desidera eseguire test automatizzati che devono interagire con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Processo interattivo**. L'agente di test verrà avviato come processo interattivo anziché come servizio.
 
-     Nella pagina successiva immettere i dettagli relativi all'utente quando l'agente di test viene avviato come processo e specificare le altre opzioni.
+      Nella pagina successiva immettere i dettagli relativi all'utente quando l'agente di test viene avviato come processo e specificare le altre opzioni.
 
-    1. Immettere il nome in **Nome utente**.
+      1. Immettere il nome in **Nome utente**.
 
-    2. Immettere la password in **Password**.
+      2. Immettere la password in **Password**.
 
         > [!NOTE]
         > Se si configura l'agente di test in modo che venga eseguito come processo interattivo con un utente diverso dall'utente attualmente attivo, è necessario riavviare il computer e accedere come utente corrente per poter avviare l'agente. Inoltre, le password Null non sono supportate per gli account utente. Se si desidera utilizzare l'agente di raccolta di IntelliTrace o l'emulazione di rete, l'account utente deve essere un membro del gruppo Administrators.
 
-        |**Informazioni importanti sull'account utente**|
-        |--------------------------------------------|
-        |-   Le password Null non sono supportate per gli account utente.|
-        |-   Se si desidera utilizzare IntelliTrace o l'adattatore dati di emulazione di rete e diagnostico, è necessario che l'account utente sia membro del gruppo Administrators. Se nel computer che esegue l'agente di test viene utilizzato un sistema operativo che dispone di un account utente con privilegi minimi, sarà necessario eseguire l'agente di test anche come amministratore (con privilegi elevati).|
-        |-   Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul test controller.|
-        |-   È necessario che l'utente che sta tentando di usare il test controller  disponga di un account utente per tale test controller, diversamente non sarà in grado di eseguite i test.|
+      3. Per accertarsi che un computer che dispone di un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accesso automatico**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
 
-    3. Per accertarsi che un computer che dispone di un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accesso automatico**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
-
-    4. Per assicurarsi che lo screen saver sia disabilitato in quanto potrebbe interferire con i test automatizzati che devono interagire con il desktop, selezionare **Verifica che lo screen saver sia disabilitato**.
+      4. Per assicurarsi che lo screen saver sia disabilitato in quanto potrebbe interferire con i test automatizzati che devono interagire con il desktop, selezionare **Verifica che lo screen saver sia disabilitato**.
 
         > [!WARNING]
         > L'accesso automatico e la disabilitazione dello screen saver implicano rischi per la sicurezza. Se si abilita l'accesso automatico si consente ad altri utenti di avviare il computer e di usare l'account in grado di accedere automaticamente. Se si disabilita lo screen saver, è possibile che non venga richiesto di immettere le credenziali di un utente per accedere e sbloccare il computer. In questo modo chiunque possa raggiungere fisicamente il computer potrà accedere al sistema. Se si abilitano queste funzionalità in un computer, è consigliabile accertarsi che esso sia fisicamente protetto. Ad esempio, i computer potrebbero essere collocati in un laboratorio sicuro. La deselezione dell'opzione **Verifica che lo screen saver sia disabilitato** non abilita lo screen saver.
@@ -160,7 +151,7 @@ Le modifiche apportate al peso e agli attributi di un agente di test vengono app
 (Facoltativo) Per modificare lo stato di un agente di test, selezionare l'agente nell'elenco, quindi selezionare l'azione tra le opzioni disponibili in base allo stato corrente dell'agente stesso.
 
 > [!NOTE]
-> Se l'agente di test è in esecuzione come processo, il relativo stato può essere gestito dall'icona dell'area di notifica disponibile nel computer in cui l'agente è installato. Indica lo stato dell'agente di test. Se l'agente è in esecuzione come processo, con questo strumento è possibile avviarlo, arrestarlo o riavviarlo. Per avviare l'agente di test come processo se non è in esecuzione, scegliere **Start** > **Tutti i Programmi** > **Microsoft Visual Studio** > **Agente di test di Microsoft Visual Studio**. In questo modo verrà aggiunta l'icona dell'area di notifica.
+> Se l'agente di test è in esecuzione come processo, il relativo stato può essere gestito dall'icona dell'area di notifica disponibile nel computer in cui l'agente è installato. Indica lo stato dell'agente di test. Se l'agente è in esecuzione come processo, con questo strumento è possibile avviarlo, arrestarlo o riavviarlo.
 
 ## <a name="configure-a-test-controller"></a>Configurazione di un controller di test
 
@@ -173,7 +164,7 @@ Se si vuole registrare il test controller con la raccolta di progetti Team Found
 
 ### <a name="to-configure-a-test-controller"></a>Per configurare un controller di test
 
-1. Per eseguire lo strumento per riconfigurare il test controller in qualsiasi momento, scegliere **Start** > **Tutti i programmi** >  **Microsoft Visual Studio** > **Microsoft Visual Studio Test Controller Configuration Tool**.
+1. Per eseguire lo strumento per riconfigurare il test controller in qualsiasi momento, scegliere **Start** > **Test Controller Configuration Tool**.
 
      Verrà visualizzata la finestra di dialogo **Configura controller di test**.
 
@@ -182,9 +173,9 @@ Se si vuole registrare il test controller con la raccolta di progetti Team Found
     > [!NOTE]
     > Le password Null non sono supportate per gli account utente.
 
-4. (Facoltativo) Se non si vuole usare il test controller con un ambiente lab, ma solo eseguire test da Visual Studio, deselezionare **Register with Project Collection** (Registra con la raccolta di progetti).
+4. (Facoltativo) Se non si vuole usare il test controller con un ambiente lab ma solo eseguire test da Visual Studio, deselezionare **Register test controller with Team Project Collection** (Registra test controller con la raccolta di progetti team).
 
-5. (Facoltativo) Per configurare il test controller per test di carico, selezionare **Configura per test di carico**. Specificare quindi l'istanza di SQL Server in **Crea database dei risultati dei test di carico nell'istanza di SQL Server seguente**.
+5. (Facoltativo) Per configurare il test controller per test di carico, selezionare **Configure test controller for load testing** (Configura test controller per test di carico). Specificare l'istanza di SQL Server in **Crea database dei risultati dei test di carico nell'istanza di SQL Server seguente**.
 
 > [!NOTE]
 > Per altre informazioni sulla risoluzione dei problemi relativi ai test controller, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).

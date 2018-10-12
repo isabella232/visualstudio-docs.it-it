@@ -2,7 +2,7 @@
 title: Creare un'app Node.js ed Express
 description: In questa esercitazione si creerà un'app usando Node.js Tools for Visual Studio
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124918"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168344"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
 In questa esercitazione per lo sviluppo in Visual Studio con Node.js ed Express si creerà una semplice applicazione Web Node.js e si aggiungerà codice all'app, quindi si esploreranno alcune funzionalità dell'ambiente IDE e si eseguirà l'app. Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://visualstudio.microsoft.com).
@@ -192,9 +192,11 @@ L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò,
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 
-1. Selezionare la destinazione di debug sulla barra degli strumenti Debug.
+1. Selezionare la destinazione di debug sulla barra degli strumenti Debug, ad esempio Edge o Chrome.
 
     ![Selezione della destinazione di debug](../javascript/media/tutorial-nodejs-deploy-target.png)
+
+    Se Chrome è disponibile nel computer in uso ma non viene visualizzato come opzione, scegliere **Esplora con** dall'elenco a discesa delle destinazioni di debug e selezionare Chrome come destinazione browser predefinita (scegliere **Imposta come predefinito**).
 
 1. Premere **F5** (**Debug** > **Avvia debug**) per eseguire l'applicazione.
 

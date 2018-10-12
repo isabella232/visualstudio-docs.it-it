@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7ee37ddd9899b979d8440202c89d03284b26f48
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0c1e911dad2b4abe2fb092b2adb221c4aebec136
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279076"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370770"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilazione e creazione in Visual Studio
 
@@ -28,13 +28,13 @@ Compilando spesso il codice è possibile identificare rapidamente gli errori in 
 
 Una compilazione riuscita conferma che la sintassi del codice sorgente dell'applicazione è corretta e che tutti i riferimenti statici a librerie, assembly e altri componenti sono stati risolti. Il risultato è un file eseguibile dell'applicazione che può essere testato per il funzionamento corretto sia in un [ambiente di debug](../debugger/index.md), sia mediante vari test manuali e automatici per la [convalida della qualità del codice](../test/improve-code-quality.md). Dopo aver testato completamente l'applicazione è quindi possibile compilare una versione di rilascio da distribuire ai clienti. Per un'introduzione a questo processo, vedere [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md).
 
-Per compilare un'applicazione è possibile usare uno di questi metodi: IDE di Visual Studio, strumenti da riga di comando MSBuild, Team Foundation Build e Azure DevOps Services:
+Per compilare un'applicazione è possibile usare uno di questi metodi: IDE di Visual Studio, strumenti da riga di comando MSBuild e Azure Pipelines:
 
 | Metodo di compilazione | Vantaggi |
 | --- |--- | --- |
 | IDE |- Creazione immediata di build e test in un debugger.<br />- Esecuzione di compilazioni multiprocessore per progetti C++ e C#.<br />- Personalizzazione di vari aspetti del sistema di compilazione. |
 | Riga di comando MSBuild| - Compilazione di progetti senza installare Visual Studio.<br />- Esecuzione di compilazioni multiprocessore per tutti i tipi di progetto.<br />- Personalizzazione della maggior parte delle aree del sistema di compilazione.|
-| Team Foundation Build | - Automazione della compilazione come parte di un processo di integrazione continua/recapito continuo.<br />- Implementazione di test automatizzati con ogni compilazione.<br />- Uso di risorse di codice praticamente illimitate per i processi di compilazione.<br />- Modifica del flusso di lavoro di compilazione e creazione di attività di compilazione per eseguire attività personalizzate specifiche.|
+| Azure Pipelines | - Automazione della compilazione come parte di un processo di integrazione continua/recapito continuo.<br />- Implementazione di test automatizzati con ogni compilazione.<br />- Uso di risorse di codice praticamente illimitate per i processi di compilazione.<br />- Modifica del flusso di lavoro di compilazione e creazione di attività di compilazione per eseguire attività personalizzate specifiche.|
 
 La documentazione di questa sezione approfondisce i dettagli del processo di compilazione basato su IDE. Per informazioni sugli altri metodi, vedere rispettivamente [MSBuild](../msbuild/msbuild.md) e [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 

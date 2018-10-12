@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 2c7706e635cc159b7ae85274d46c2be762926ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320826"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551262"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -78,7 +78,7 @@ Visual Studio 2017 15.7 e versioni successive rileva automaticamente gli ambient
 ## <a name="the-python-environments-window"></a>Finestra Ambienti Python
 
 > [!Note]
-> Gli screenshot illustrati in questa sezione si riferiscono a Visual Studio 15.8. È possibile visualizzare un'interfaccia utente leggermente diversa in un'altra versione di Visual Studio.
+> Gli screenshot illustrati in questa sezione si riferiscono a Visual Studio 15.8. È possibile visualizzare un'interfaccia utente diversa in un'altra versione di Visual Studio.
 
 Gli ambienti rilevati da Visual Studio vengono visualizzati nella finestra **Ambienti Python**. Per aprire la finestra, usare uno dei metodi seguenti:
 

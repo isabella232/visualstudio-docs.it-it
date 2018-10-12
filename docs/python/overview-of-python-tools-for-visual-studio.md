@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320969"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029147"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 
@@ -30,7 +30,7 @@ Per iniziare:
 
 - Seguire le [istruzioni di installazione](installing-python-support-in-visual-studio.md) per configurare il carico di lavoro di Python.
 - Acquisire familiarità con le funzionalità Python di Visual Studio tramite le sezioni in questo articolo. È anche possibile [guardare una serie di video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) per un'introduzione a Python in Visual Studio (per un totale di 22 minuti).
-- Eseguire una o più guide introduttive per creare un progetto. In caso di dubbi, iniziare con [Creare un'app Web con Flask](../ide/quickstart-python.md?context=visualstudio/python/default).
+- Eseguire una o più guide introduttive per creare un progetto. In caso di dubbi, iniziare con [Creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 - Seguire l'esercitazione [Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) per un'esperienza completa.
 
 ## <a name="support-for-multiple-interpreters"></a>Supporto di più interpreti
@@ -45,7 +45,7 @@ Per ulteriori informazioni:
 
 - Video (2 minuti 35 secondi): [Manage Python environments](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Gestire gli ambienti Python)
 - Documentazione: [Gestire gli ambienti Python](managing-python-environments-in-visual-studio.md)
-- Documenti: [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md)
+- Documentazione: [Informazioni di riferimento su Ambienti Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Modifica avanzata, IntelliSense e comprensione del codice
 
@@ -64,7 +64,7 @@ Per ulteriori informazioni:
 
 ## <a name="interactive-window"></a>Finestra Interattiva
 
-Per ogni ambiente Python noto a Visual Studio, è possibile aprire facilmente lo stesso ambiente interattivo (REPL, ciclo Read–Eval–Print) per un interprete Python direttamente all'interno di Visual Studio, anziché usare un prompt dei comandi separato. È anche possibile passare facilmente da un ambiente all'altro. Per aprire un prompt dei comandi separato, selezionare un ambiente nella finestra **Ambienti Python**, quindi selezionare il comando **Apri in PowerShell** come illustrato in precedenza in [Supporto di più interpreti](#support-for-multiple=interpreters).
+Per ogni ambiente Python noto a Visual Studio, è possibile aprire facilmente lo stesso ambiente interattivo (REPL, ciclo Read–Eval–Print) per un interprete Python direttamente all'interno di Visual Studio, anziché usare un prompt dei comandi separato. È anche possibile passare facilmente da un ambiente all'altro. Per aprire un prompt dei comandi separato, selezionare un ambiente nella finestra **Ambienti Python**, quindi selezionare il comando **Apri in PowerShell** come illustrato in precedenza in [Supporto di più interpreti](#support-for-multipleiinterpreters).
 
 ![Finestra interattiva di Python in Visual Studio](media/interactive-window.png)
 
@@ -161,11 +161,11 @@ Un  Non in questo momento, ma è possibile votare a favore della richiesta in [U
 
 **D. Cosa si può usare per compilare un'interfaccia utente con Python?**
 
-Un  La proposta migliore in questo campo è il [progetto Qt](https://www.qt.io/qt-for-application-development/), con le associazioni per Python note come [PySide (l'associazione ufficiale)](http://wiki.qt.io/PySide) (vedere anche [PySide downloads](https://download.qt.io/official_releases/pyside/.)) e [PyQt](https://wiki.python.org/moin/PyQt). Attualmente il supporto di Python in Visual Studio non include strumenti specifici per lo sviluppo dell'interfaccia utente.
+Un  La proposta migliore in questo campo è il [progetto Qt](https://www.qt.io/qt-for-application-development/), con le associazioni per Python note come [PySide (l'associazione ufficiale)](https://wiki.qt.io/PySide) (vedere anche [PySide downloads](https://download.qt.io/official_releases/pyside/.)) e [PyQt](https://wiki.python.org/moin/PyQt). Attualmente il supporto di Python in Visual Studio non include strumenti specifici per lo sviluppo dell'interfaccia utente.
 
 **D. Un progetto Python può produrre un file eseguibile autonomo?**
 
-Un  Python è in genere un linguaggio interpretato, con cui il codice viene eseguito su richiesta in un ambiente in grado di supportare Python, ad esempio Visual Studio e i server Web. Visual Studio attualmente non offre la possibilità di creare un file eseguibile autonomo, ovvero un programma con un interprete Python incorporato. Tuttavia, la community di Python offre diversi modi di creare file eseguibili, come descritto in [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython può anche essere incorporato in un'applicazione nativa, come descritto nel post del blog, [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Uso del file ZIP incorporabile di CPython).
+Un  Python è in genere un linguaggio interpretato, con cui il codice viene eseguito su richiesta in un ambiente in grado di supportare Python, ad esempio Visual Studio e i server Web. Visual Studio attualmente non offre la possibilità di creare un file eseguibile autonomo, ovvero un programma con un interprete Python incorporato. Tuttavia, la community di Python offre diversi modi di creare file eseguibili, come descritto in [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython può anche essere incorporato in un'applicazione nativa, come descritto nel post del blog, [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Uso del file ZIP incorporabile di CPython).
 
 ## <a name="features-matrix"></a>Matrice delle funzionalità
 
@@ -283,19 +283,19 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 | Debug di test | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 <br/>
 
-1. Il supporto Git per Visual Studio 2012 è incluso nell'estensione Visual Studio Tools for Git, disponibile in [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
+1. Il supporto Git per Visual Studio 2012 è incluso nell'estensione Visual Studio Tools for Git, disponibile in [Visual Studio Gallery](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
-1. Per la distribuzione nel sito Web di Azure è necessario [Azure SDK per .NET 2.1 - Visual Studio 2010 SP1](http://go.microsoft.com/fwlink/?LinkId=313855). Visual Studio 2010 non è supportato nelle versioni successive.
+1. Per la distribuzione nel sito Web di Azure è necessario [Azure SDK per .NET 2.1 - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855). Visual Studio 2010 non è supportato nelle versioni successive.
 
-1. Per il supporto per il ruolo di lavoro e il ruolo Web di Azure è richiesto [Azure SDK per .NET 2.3 - Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=323511) o versione successiva.
+1. Per il supporto per il ruolo di lavoro e il ruolo Web di Azure è richiesto [Azure SDK per .NET 2.3 - Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=323511) o versione successiva.
 
-1. Per il supporto per il ruolo di lavoro e il ruolo Web di Azure è richiesto [Azure SDK per .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o versione successiva.
+1. Per il supporto per il ruolo di lavoro e il ruolo Web di Azure è richiesto [Azure SDK per .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) o versione successiva.
 
 1. L'editor di modelli Django in Visual Studio 2013 presenta alcuni problemi noti che vengono risolti installando l'Update 2.
 
-1. Richiede Windows 8 o versione successiva. La finestra **Collega a processo** non è disponibile in Visual Studio 2013 Express per il Web, ma è comunque possibile eseguire il debug remoto del sito Web di Azure usando il comando **Collega debugger (Python)** in **Esplora server**. Il debug remoto richiede [Azure SDK per .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o versione successiva.
+1. Richiede Windows 8 o versione successiva. La finestra **Collega a processo** non è disponibile in Visual Studio 2013 Express per il Web, ma è comunque possibile eseguire il debug remoto del sito Web di Azure usando il comando **Collega debugger (Python)** in **Esplora server**. Il debug remoto richiede [Azure SDK per .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) o versione successiva.
 
-1. Richiede Windows 8 o versione successiva. Per il comando **Collega debugger (Python)** in **Esplora server** è richiesto [Azure SDK for .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o versione successiva.
+1. Richiede Windows 8 o versione successiva. Per il comando **Collega debugger (Python)** in **Esplora server** è richiesto [Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) o versione successiva.
 
 1. Richiede Windows 8 o versione successiva.
 
