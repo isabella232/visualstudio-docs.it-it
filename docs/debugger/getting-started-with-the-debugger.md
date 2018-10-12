@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612688"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101043"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>: Esercitazione eseguire il debug usando Visual Studio
 
@@ -31,7 +31,7 @@ Questo articolo presenta le funzionalità del debugger di Visual Studio in una p
 |---------|---------|
 |  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sull'esecuzione del debug che illustra una procedura simile. |
 
-Anche se l'app demo è c# e C++, le funzionalità sono applicabili a Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in c#. Per spostarsi tra i linguaggi c# e codice di esempio di C++ in questo articolo, usare il filtro della lingua in alto a destra della pagina.
+Anche se l'app demo è c# e C++, le funzionalità sono applicabili a Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se diversamente specificato). Gli screenshot sono in c#.
 
 In questa esercitazione si eseguono le attività seguenti:
 
@@ -60,6 +60,9 @@ In questa esercitazione si eseguono le attività seguenti:
 3. Digitare un nome come **get-avviato-Debug** e fare clic su **OK**.
 
     Visual Studio crea il progetto.
+
+    > [!NOTE]
+    > Per spostarsi tra i linguaggi c# e codice di esempio di C++ in questo articolo, usare il filtro della lingua in alto a destra della pagina.
 
 4. Nelle *Program.cs* (c#) o *get-avviato-debugging.cpp* (C++), sostituire il codice seguente
 
