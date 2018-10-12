@@ -7,14 +7,14 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279842"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542437"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation 
+# <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation
 
 > [!NOTE]
 > **Nota**: il controllo della versione di Team Foundation Version è attualmente in anteprima e alcune funzionalità non sono ancora completamente operative. Inviare il proprio feedback su eventuali problemi riscontrati alla [community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/41/index.html). Presto saranno disponibili altre modifiche.
@@ -31,7 +31,7 @@ Azure Repos offre due modelli di controllo della versione: Git, un controllo del
 
 In Visual Studio per Mac scegliere **Visual Studio > Estensioni...** dal menu. Nella scheda **Raccolta** selezionare **Controllo della versione > Controllo della versione di Team Foundation per TFS e VSTS** e fare clic su **Installa…**:
 
-  ![Gestione estensioni](media/tfvc-install.png) 
+  ![Gestione estensioni](media/tfvc-install.png)
 
 Seguire i prompt per installare l'estensione. Al termine dell'installazione, riavviare l'IDE.
 
@@ -39,7 +39,7 @@ Seguire i prompt per installare l'estensione. Al termine dell'installazione, ria
 
 Periodicamente vengono rilasciati aggiornamenti per l'estensione TFVC. Per accedere agli aggiornamenti, scegliere **Visual Studio > Estensioni...**  dal menu e selezionare la scheda **Aggiornamenti**. Selezionare l'estensione nell'elenco e premere il pulsante **Aggiorna**:
 
-  ![Visualizzazione dell'aggiornamento in Gestione estensioni](media/tfvc-update.png) 
+  ![Visualizzazione dell'aggiornamento in Gestione estensioni](media/tfvc-update.png)
 
 Scegliere **Installa** nella finestra di dialogo successiva per disinstallare il pacchetto precedente e installare quello nuovo.
 
@@ -63,7 +63,7 @@ Quando si seleziona un progetto ospitato in Azure Repos, viene richiesto di imme
 
 ### <a name="tfs-authentication"></a>Autenticazione TFS
 
-Per connettersi a TFS, immettere i dettagli del server e le credenziali dell'account. Immettere un dominio per usare l'autenticazione NTLM oppure lasciare il campo vuoto per usare l'autenticazione di base. Selezionare **Aggiungi server**: 
+Per connettersi a TFS, immettere i dettagli del server e le credenziali dell'account. Immettere un dominio per usare l'autenticazione NTLM oppure lasciare il campo vuoto per usare l'autenticazione di base. Selezionare **Aggiungi server**:
 
 ![Accedere a un server TFS](media/tfvc-login.png)
 
@@ -75,7 +75,7 @@ Dopo aver eseguito l'autenticazione, è possibile visualizzare un elenco dei rep
 
 Questa finestra di dialogo è suddivisa nei nodi seguenti:
 
-- Organizzazione o raccolta di Azure DevOps Services: vengono visualizzate tutte le organizzazioni connesse all'account Microsoft usato per eseguire l'accesso.
+- Organizzazione o raccolta di Azure DevOps: vengono visualizzate tutte le organizzazioni connesse all'account Microsoft usato per eseguire l'accesso.
 - Progetti: ogni organizzazione o raccolta può contenere una serie di progetti. Il progetto è la posizione in cui sono ospitati il codice sorgente, gli elementi di lavoro e le compilazioni automatiche.
 
 È possibile eseguire ricerche e applicare filtri in base al nome di un progetto o di un'organizzazione.
@@ -124,24 +124,24 @@ Molte di queste azioni sono disponibili tramite i menu di scelta rapida del prog
 
 Se non è ancora stata creata un'area di lavoro, come descritto nella sezione [Creazione di una nuova area di lavoro](#creating-a-new-workspace), Esplora controllo codice sorgente è vuoto:
 
-![Esplora controllo codice sorgente vuoto](media/tfvc-setup-empty-sce.png) 
+![Esplora controllo codice sorgente vuoto](media/tfvc-setup-empty-sce.png)
 
 Per configurare il progetto remoto con un'area di lavoro locale, seguire questa procedura:
 
 1. Selezionare il **Server** dalla casella combinata.
 1. Si noti che non sono presenti aree di lavoro e che il percorso locale non è mappato. Selezionare il collegamento **Non mappato** per visualizzare la finestra di dialogo **Crea nuova area di lavoro**.
 1. Specificare un nome per l'area di lavoro e quindi fare clic su **Aggiungi Cartella di lavoro**  per eseguire il mapping del progetto in una cartella locale nel computer:
-    
-    ![Creare una nuova finestra dell'area di lavoro con le opzioni predefinite](media/tfvc-workspace1.png) 
+
+    ![Creare una nuova finestra dell'area di lavoro con le opzioni predefinite](media/tfvc-workspace1.png)
 
 1. Selezionare la cartella "$" per eseguire il mapping di tutti i progetti del server alla stessa area di lavoro o selezionare un singolo progetto e fare clic su **OK**:
-    
-    ![Finestra di dialogo Cerca cartella con tutti i progetti visualizzati](media/tfvc-workspace2.png) 
+
+    ![Finestra di dialogo Cerca cartella con tutti i progetti visualizzati](media/tfvc-workspace2.png)
 
 1. Selezionare il percorso del computer locale a cui si vuole mappare il progetto o i progetti e fare clic su **Seleziona cartella**.
 1. Confermare i dettagli della nuova area di lavoro scegliendo **OK**
-    
-    ![Creare una nuova finestra dell'area di lavoro con la cartella di lavoro aggiunta](media/tfvc-workspace3.png) 
+
+    ![Creare una nuova finestra dell'area di lavoro con la cartella di lavoro aggiunta](media/tfvc-workspace3.png)
 
 Dopo aver configurato l'area di lavoro, è possibile modificarla o rimuoverla facendo clic sul pulsante **Gestisci aree di lavoro** in Esplora controllo codice sorgente.
 
@@ -159,14 +159,15 @@ Le opzioni seguenti possono essere usate eseguire l'autenticazione in un server:
 
 Per usare l'autenticazione di base è necessario abilitare le **credenziali di autenticazione alternative** in Azure DevOps Services seguendo questa procedura:
 
-1. Accedere all'organizzazione di Azure DevOps Services come proprietario (https://dev.azure.com/{organization}/{project}).
+1. Accedere all'organizzazione di Azure DevOps come proprietario (https://dev.azure.com/{organization}/{project}).
+
 2. Dalla barra degli strumenti dell'organizzazione selezionare l'icona a forma di ingranaggio, quindi **Policy** (Criteri):
-    
-    ![Opzione delle impostazioni dei criteri selezionata](media/tfvc-auth2.png) 
+
+    ![Opzione delle impostazioni dei criteri selezionata](media/tfvc-auth2.png)
 
 3. Verificare le impostazioni di connessione dell'applicazione. Modificare queste impostazioni in base ai propri criteri di sicurezza:
-    
-    ![Opzione delle impostazioni dei criteri selezionata](media/tfvc-auth.png)  
+
+    ![Opzione delle impostazioni dei criteri selezionata](media/tfvc-auth.png)
 
 ### <a name="i-do-not-see-anything-in-tfvc"></a>Nel controllo della versione di Team Foundation non viene visualizzato nulla
 

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280623"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542377"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procedura: Sbloccare Visual Studio
 
@@ -27,14 +27,14 @@ ms.locfileid: "44280623"
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Per sbloccare Visual Studio usando un abbonamento online
 
-Per sbloccare Visual Studio usando una sottoscrizione di Visual Studio o un'organizzazione Azure DevOps Services associata a un account Microsoft o un account aziendale o dell'istituto di istruzione:
+Per sbloccare Visual Studio usando una sottoscrizione di Visual Studio o un'organizzazione di Azure DevOps associata a un account Microsoft o un account aziendale o dell'istituto di istruzione:
 
 1. Fare clic sul pulsante **Accedi** nell'angolo superiore destro dell'IDE oppure scegliere **File** > **Impostazioni account** per aprire la finestra di dialogo **Impostazioni account** e fare clic sul pulsante **Accedi**.
 
-1. Immettere le credenziali per un account Microsoft oppure un account aziendale o dell'istituto di istruzione. Visual Studio individua una sottoscrizione di Visual Studio o un'organizzazione Azure DevOps Services associata all'account.
+1. Immettere le credenziali per un account Microsoft oppure un account aziendale o dell'istituto di istruzione. Visual Studio individua una sottoscrizione di Visual Studio o un'organizzazione di Azure DevOps associata all'account.
 
 > [!IMPORTANT]
-> Visual Studio cerca automaticamente le sottoscrizioni online associate quando ci si connette a un'organizzazione Azure DevOps Services dalla finestra dello strumento **Team Explorer**. Quando ci si connette a un'organizzazione Azure DevOps Services si può accedere sia con un account Microsoft, sia con un account aziendale o dell'istituto di istruzione. Se è disponibile un abbonamento online per l'account utente, Visual Studio sbloccherà automaticamente l'IDE.
+> Visual Studio cerca automaticamente le sottoscrizioni online associate quando ci si connette a un'organizzazione di Azure DevOps dalla finestra dello strumento **Team Explorer**. Quando ci si connette a un'organizzazione di Azure DevOps, si può accedere sia con un account Microsoft, sia con un account aziendale o dell'istituto di istruzione. Se è disponibile un abbonamento online per l'account utente, Visual Studio sbloccherà automaticamente l'IDE.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Per sbloccare Visual Studio con un codice Product Key
 

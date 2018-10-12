@@ -1070,6 +1070,8 @@ items:
     items:
     - name: Privacy dei dati della community degli sviluppatori
       href: ide/developer-community-privacy.md
+  - name: Suggerire una funzionalità per Visual Studio
+    href: ide/suggest-a-feature.md
   - name: Analisi utilizzo software
     href: ide/visual-studio-experience-improvement-program.md
     items:
@@ -1079,9 +1081,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Comunicazioni con Microsoft
     href: ide/talk-to-us.md
-ms.openlocfilehash: 62d5838aff0b07b453a4fb2577cec8ae805bee86
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 3777ffcf9ea782d31ad4cc68823ddc2066433e9f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880572"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074130"
