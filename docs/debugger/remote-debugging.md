@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46913c1bb671c1986c4f302a84d4183fe17f5878
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778294"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101089"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -47,47 +47,6 @@ Se sufficiente da scaricare e installare il debugger remoto e non sono necessari
 ## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare remote tools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-## <a name="unblock_msvsmon"></a> Sbloccare il download di remote tools in Windows Server
-
-Le impostazioni di sicurezza predefinite in Internet Explorer in Windows Server possono rendere molto tempo per il download di componenti, ad esempio gli strumenti remoti.
-
-* Sicurezza avanzata è abilitata in Internet Explorer, che impedisce l'apertura di siti Web e l'accesso a risorse web, a meno che il dominio che contiene la risorsa è esplicitamente consentito (vale a dire, attendibili). Anche se è possibile disabilitare questa impostazione, non è consigliabile che perché può presenta un rischio per la sicurezza.
-
-* In Windows Server 2016, un'impostazione predefinita in **Opzioni Internet** > **sicurezza** > **Internet**  >   **Livello personalizzato** > **Scarica** anche disabilita il download di file. Se si sceglie di scaricare gli strumenti remoti direttamente in Windows Server, è necessario abilitare il download di file.
-
-Per scaricare gli strumenti di Windows Server, è consigliabile una delle operazioni seguenti:
-
-* Scaricare remote tools in un computer diverso, ad esempio un in esecuzione Visual Studio e quindi copiare il *.exe* file da Windows Server.
-
-* Eseguire il debugger remoto [da una condivisione file](#fileshare_msvsmon) nel computer di Visual Studio.
-
-* Scaricare gli strumenti remoti direttamente nel Server di Windows e accettare le richieste per aggiungere siti attendibili. Siti Web moderni includono spesso molte risorse di terze parti, in modo che ciò può comportare molti dei prompt. Inoltre, tutti i collegamenti di reindirizzamento potrebbe essere necessario essere aggiunti manualmente. È possibile scegliere di aggiungere alcuni dei siti attendibili prima di iniziare il download. Passare a **Opzioni Internet > sicurezza > siti attendibili > siti** e aggiungere i seguenti siti.
-
-  * VisualStudio.microsoft.com
-  * download.visualstudio.microsoft.com
-  * sulle: vuoto
-
-  Per le versioni precedenti del debugger in my.visualstudio.com, aggiungere questi siti aggiuntivi per assicurarsi che tale account di accesso ha esito positivo:
-
-  * microsoft.com
-  * go.microsoft.com
-  * download.microsoft.com
-  * My.VisualStudio.com
-  * Login.microsoftonline.com
-  * Login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
-  * msft.STS.microsoft.com
-  * auth.GFX.ms
-  * app.vssps.visualstudio.com
-  * vlscppe.microsoft.com
-  * query.Prod.cms.RT.microsoft.com
-
-    Se si sceglie di aggiungere questi domini durante il download di remote tools, scegli **Add** quando richiesto.
-
-    ![Finestra di dialogo contenuto bloccato](../debugger/media/remotedbg-blocked-content.png)
-
-    Quando si scarica il software, si ottengono alcune richieste aggiuntive di concedere autorizzazioni per caricare vari script del sito web e risorse. In my.visualstudio.com, è consigliabile aggiungere i domini aggiuntivi per assicurarsi che tale account di accesso ha esito positivo.
 
 ## <a name="requirements_msvsmon"></a> Requisiti
 
