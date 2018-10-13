@@ -1,7 +1,7 @@
 ---
 title: Attività GenerateResource | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b60160cf2d22756904dab4b3b0317bd67c84f4ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212498"
 ---
 # <a name="generateresource-task"></a>Attività GenerateResource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [attività GenerateResource](https://docs.microsoft.com/visualstudio/msbuild/generateresource-task).  
-  
   
 Converte file con estensione txt o resx (formato di risorsa basato su XML) in file binari di Common Language Runtime (con estensione resources) che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file con estensione txt o resx in file con estensione resource. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   

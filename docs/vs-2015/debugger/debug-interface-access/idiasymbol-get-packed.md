@@ -1,7 +1,7 @@
 ---
 title: Get_packed | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 817c6eea9f33e893f6678b078361a3af76275e48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec05963fad61fbb35d0f5d4ce89fe743fc32043e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185965"
 ---
 # <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Get_packed](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-packed).  
-  
 Recupera un flag che specifica se il tipo di dati definito dall'utente (UDT) verrà compressi.  
   
 ## <a name="syntax"></a>Sintassi  

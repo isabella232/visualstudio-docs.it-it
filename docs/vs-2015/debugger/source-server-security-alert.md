@@ -1,7 +1,7 @@
 ---
 title: Avviso di sicurezza di Server di origine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b971a05f9cd8873a1dbac3cafe6865ffce238868
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f75ae71cb03e4811e5fa0599bd1ee51371c7891
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525596"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230100"
 ---
 # <a name="source-server-security-alert"></a>Avviso di sicurezza del server di origine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [avviso di sicurezza di Server di origine](https://docs.microsoft.com/visualstudio/debugger/source-server-security-alert).  
-  
 Quando viene utilizzato il server di origine, utilizzare unicamente file di simboli provenienti da un percorso conosciuto o attendibile.  
   
  Questo avviso viene visualizzato quando si attiva il supporto del server di origine. I comandi del server di origine sono incorporati nei file di simboli del debug (PDB). Assicurarsi di verificare l'origine dei file PDB.  

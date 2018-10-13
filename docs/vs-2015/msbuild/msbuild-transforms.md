@@ -1,7 +1,7 @@
 ---
 title: Trasformazioni di MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c2751519372bf4824d74bd40028a057c369233d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce1d0b63518fb48636fca38b2788eea2d0c189a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518368"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223705"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [MSBuild trasforma](https://docs.microsoft.com/visualstudio/msbuild/msbuild-transforms).  
-  
   
 Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Questo argomento descrive le trasformazioni e il relativo uso in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] per compilare progetti in modo più efficiente.  
   

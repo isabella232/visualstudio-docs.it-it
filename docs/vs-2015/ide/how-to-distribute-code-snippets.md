@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Distribuire frammenti di codice | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bda2aa5e7639b951b0df6bb83ff2d50fd4331e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185705"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: distribuire i frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: distribuire frammenti di codice](https://docs.microsoft.com/visualstudio/ide/how-to-distribute-code-snippets).  
-  
 È sufficiente fornire i frammenti di codice ad altri utenti, che dovranno installarli nei computer con Gestione frammenti di codice. Se si hanno diversi frammenti da distribuire o si vuole distribuirli più ampiamente, tuttavia, è possibile includere il file di frammento in un'estensione di Visual Studio, che gli utenti di Visual Studio possono installare.  
   
  Per creare estensioni di Visual Studio, è necessario installare Visual Studio SDK. Trovare la versione di VSSDK che corrisponde all'installazione di Visual Studio in [download di Visual Studio 2015](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  

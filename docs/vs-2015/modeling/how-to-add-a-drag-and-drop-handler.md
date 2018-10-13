@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: aggiungere un gestore di trascinamento e rilascio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 503231fbae306c198e7c1e728f7c2b63794289b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e163386c7f00f0646bb711617e402a1873e544e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280527"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: aggiungere un gestore di trascinamento della selezione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: aggiungere un gestore di trascinamento e rilascio](https://docs.microsoft.com/visualstudio/modeling/how-to-add-a-drag-and-drop-handler).  
-  
 È possibile aggiungere al linguaggio DSL gestori per gli eventi di trascinamento della selezione, in modo che gli utenti possano trascinare gli elementi sul diagramma da altri diagrammi o da altre parti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È possibile aggiungere gestori anche per eventi come il doppio clic. Insieme, i gestori di trascinamento e rilascio e fare doppio clic sono noti come *gestori movimenti*.  
   
  Questo argomento illustra i movimenti di trascinamento della selezione originati in altri diagrammi. Per gli eventi di spostamento e copia in uno stesso diagramma, considerare come alternativa la possibilità di definire una sottoclasse di `ElementOperations`. Per altre informazioni, vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md). È anche possibile personalizzare la definizione DSL.  

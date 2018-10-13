@@ -1,7 +1,7 @@
 ---
 title: Proprietà di elementi UML diagrammi di sequenza | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,22 +18,20 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b1f83999f3859583c4429ff3bf19482f01d90546
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7af657496fc95b07c7149f75fa03087eb1988606
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245219"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>Proprietà di elementi in diagrammi di sequenza UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [diagrammi di sequenza di proprietà di elementi in UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-sequence-diagrams).  
-  
 In un diagramma sequenza UML, ogni elemento del diagramma ha delle proprietà. Per visualizzare le proprietà di un elemento, fare doppio clic sull'elemento sul diagramma o nel **Esplora modelli UML** e quindi fare clic su **proprietà**. Le proprietà vengono visualizzate nel **proprietà** finestra.  
   
 > [!NOTE]
->  Questo argomento illustra le proprietà degli elementi nei diagrammi di sequenza UML. Per altre informazioni su come leggere i diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md). Per altre informazioni su come creare diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Questo argomento illustra le proprietà degli elementi nei diagrammi di sequenza UML. Per altre informazioni su come leggere i diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md). Per altre informazioni su come creare diagrammi di sequenza UML, vedere [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Proprietà degli elementi  
   

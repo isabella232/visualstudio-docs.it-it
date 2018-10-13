@@ -1,7 +1,7 @@
 ---
 title: 'Passaggio 8: personalizzare il quiz | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72e630a3d065e196d33919045316fad27c912750
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559bd2a1b908ab5b1590a2ec2dd71225020db79a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532412"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260143"
 ---
 # <a name="step-8-customize-the-quiz"></a>Passaggio 8: personalizzare il quiz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [passaggio 8: personalizzare il Quiz](https://docs.microsoft.com/visualstudio/ide/step-8-customize-the-quiz).  
-  
 Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per personalizzare il quiz ed espandere ciò che è stato appreso. Ad esempio, si consideri la modalità mediante la quale tramite il programma vengono creati problemi di divisione casuali per cui la risposta non è mai una frazione. Per esercitarsi ulteriormente, modificare il colore del controllo `timeLabel` e offrire un suggerimento all'utente.  
   
 ### <a name="to-customize-the-quiz"></a>Per personalizzare il quiz  

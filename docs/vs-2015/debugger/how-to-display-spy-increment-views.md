@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: visualizzare le visualizzazioni di Spy + + | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbb4043dbbed22bef38db30b52ce62a948c16ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6947bf1ac93658827da61c4031fdb2376b35ac7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185900"
 ---
 # <a name="how-to-display-spy-views"></a>Procedura: visualizzare le visualizzazioni di Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: visualizzare visualizzazioni di Spy](https://docs.microsoft.com/visualstudio/debugger/how-to-display-spy-increment-views).  
-  
 Avvio di Spy + +, viene aperto in [Windows Vista](../debugger/windows-view.md), una visualizzazione struttura ad albero di tutte le finestre e i controlli disponibili nel computer. Questa finestra di primo livello è stata aggiunta una didascalia "Windows 1". Sono disponibili anche altre tre visualizzazioni di Spy + +: [visualizzazione messaggi](../debugger/messages-view.md), [visualizzazione processi](../debugger/processes-view.md), e [visualizzazione thread](../debugger/threads-view.md). È possibile visualizzare la visualizzazione desiderata di **Spy** menu. Per altre informazioni, vedere [visualizzazioni di Spy + +](../debugger/spy-increment-views.md).  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -1,7 +1,7 @@
 ---
 title: Filtro delle visualizzazioni report | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5fe6ce49a9ffee4230cfd4c0528b53761bc1caf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238290"
 ---
 # <a name="filtering-report-views"></a>Filtrare visualizzazioni rapporto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [filtrare visualizzazioni Report](https://docs.microsoft.com/visualstudio/profiling/filtering-report-views).  
-  
 È possibile applicare filtri ai file di dati di profilatura per limitare i dati di profilatura che appaiono nelle visualizzazioni report Prestazioni e vengono esportati nei file di report. È possibile ridurre un report ai dati tra due valori di timestamp e ridurre i dati a processi e thread specifici. È possibile salvare i filtri in un file e quindi creare un filtro per un altro file di dati di profilatura importando il filtro salvato.  
   
  È anche possibile limitare un report a un intervallo di tempo usando la sequenza temporale grafica della visualizzazione Riepilogo. Vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  

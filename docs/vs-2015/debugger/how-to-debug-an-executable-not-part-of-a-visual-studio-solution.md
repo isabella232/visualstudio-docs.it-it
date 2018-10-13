@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: eseguire il Debug di un eseguibile non incluso in una soluzione di Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36acf39ce892afb2a2601b3149987aa8d7e9f4ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 241a1dbf3af5db726f344ab42d53de3fdd30db3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278787"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procedura: eseguire il debug di un eseguibile non incluso in una soluzione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: eseguire il Debug di un file eseguibile non fa parte di una soluzione Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).  
-  
 Talvolta può essere necessario eseguire il debug di un file eseguibile non incluso in un progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ossia di un eseguibile creato all'esterno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ricevuto da un altro sviluppatore.  
   
  In questi casi, normalmente si avvia l'eseguibile all'esterno di Visual Studio e ci si connette al processo in esecuzione utilizzando il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere[connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  

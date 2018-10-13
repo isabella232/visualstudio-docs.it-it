@@ -1,7 +1,7 @@
 ---
 title: 'Nuova generazione del progetto: Dietro le quinte, parte 2 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 132baff48f92b8ff6cea5841c41bdb7824fd2753
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ce2ad60c2c3c072ab5e38f2dbee11035d44176a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279591"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generazione di un nuovo progetto: dietro le quinte, parte 2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [nuova generazione progetto: Under the Hood, parte due](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-two).  
-  
 In [nuova generazione del progetto: Under the Hood, Part One](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) abbiamo visto come il **nuovo progetto** inserite nella finestra di dialogo. Si supponga di aver selezionato una **applicazione di Windows Visual c#**, compilati il **Name** e **percorso** caselle di testo e fa clic su OK.  
   
 ## <a name="generating-the-solution-files"></a>Per generare i file di soluzione  

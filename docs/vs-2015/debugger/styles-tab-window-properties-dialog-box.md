@@ -1,7 +1,7 @@
 ---
 title: Scheda stili, finestra di dialogo Proprietà finestra | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8733cea5451760c355b1c8bc804a4936fa144aae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 798b858a173f7c8c6ffa1d00048f1900aae8b395
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277511"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Scheda Stili, finestra di dialogo Proprietà finestra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [scheda stili, finestra di dialogo Proprietà finestra](https://docs.microsoft.com/visualstudio/debugger/styles-tab-window-properties-dialog-box).  
-  
 Usare la **stili** pressione di tab per visualizzare gli stili applicati per la finestra selezionata. Per visualizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo per il [Windows Vista](../debugger/windows-view.md) finestra. Selezionare qualsiasi nodo finestra nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
   
  Le impostazioni seguenti sono disponibili sul **stili** scheda:  

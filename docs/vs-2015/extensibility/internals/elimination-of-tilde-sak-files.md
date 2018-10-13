@@ -1,7 +1,7 @@
 ---
 title: Eliminazione di ~ SAK file | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a11ed0972c403c4c3ea2a8b3f607135f12e9e315
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527819"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216099"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminazione di file ~SAK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [azzerare ~ SAK file](https://docs.microsoft.com/visualstudio/extensibility/internals/elimination-of-tilde-sak-files).  
-  
 In origine controllo plug-in API 1.2, il ~ SAK file sono stati sostituiti da flag di funzionalità e nuove funzioni che rilevano se un plug-in del controllo del codice sorgente supporta il file MSSCCPRJ estrazioni condivise.  
   
 ## <a name="sak-files"></a>~ File SAK  

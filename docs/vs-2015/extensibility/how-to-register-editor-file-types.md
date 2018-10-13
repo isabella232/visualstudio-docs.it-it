@@ -1,7 +1,7 @@
 ---
 title: "Procedura: registrare i tipi di File dell'Editor | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ab70770bfc764bba01aba3a40918fdf77ae490d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eadb14a7de675e6a1b7839b4101b8d0d6756a11f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198315"
 ---
 # <a name="how-to-register-editor-file-types"></a>Procedura: registrare i tipi di File dell'Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: registrare i tipi di File Editor](https://docs.microsoft.com/visualstudio/extensibility/how-to-register-editor-file-types).  
-  
 Il modo più semplice per registrare i tipi di file editor consiste nell'usare gli attributi di registrazione forniti come parte di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] classi framework (MPF) del pacchetto gestito. Se si implementa il pacchetto in native [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], è anche possibile scrivere uno script del Registro di sistema che si registra un editor e agli interni associati.  
   
 ## <a name="registration-using-mpf-classes"></a>Registrazione tramite le classi MPF  
@@ -50,7 +48,7 @@ Il modo più semplice per registrare i tipi di file editor consiste nell'usare g
   
      `NameResourceID` è definito nel file del progetto BasicEditorUI Resources.h e identifica l'editor come Editor"My".  
   
-2.  Eseguire l'override del metodo <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+2.  Eseguire l'override del metodo <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
   
      Nell'implementazione del metodo di <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo, chiamare il <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> (metodo) e passare l'istanza della factory dell'editor come illustrato di seguito.  
   

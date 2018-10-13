@@ -1,7 +1,7 @@
 ---
 title: Periodo di I/O (visualizzazione dei thread) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25512da43fc32b42c2a1f79e3c8dbe992ea30ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55050ad6ed805c2996cfc52561b17e2614a6ee12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236795"
 ---
 # <a name="io-time-threads-view"></a>Tempo di I/O (visualizzazione Thread)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [I / O (visualizzazione thread) ora](https://docs.microsoft.com/visualstudio/profiling/i-o-time-threads-view).  
-  
 Questi segmenti nella sequenza temporale sono associati ai periodi di blocco categorizzati come I/O. Ciò significa che un thread è in attesa del completamento di un'operazione di I/O. È possibile che il thread sia stato bloccato in un'API oppure da un tempo di attesa del kernel correlato all'I/O che il visualizzatore di concorrenza conteggia come I/O. Le interfacce API `CreateFile()`, `ReadFile()` e `WSARecv()` rientrano in questo gruppo.  
   
 ## <a name="see-also"></a>Vedere anche  

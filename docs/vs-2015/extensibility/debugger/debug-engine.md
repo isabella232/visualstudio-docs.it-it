@@ -1,7 +1,7 @@
 ---
 title: Motore di debug | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89f2c2fafb397246a8a2df8dab7d59a361edc11c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 781712ad9ef199073028b62a3fc5a50b4c2cad77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282685"
 ---
 # <a name="debug-engine"></a>Motore di debug
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [motore di Debug](https://docs.microsoft.com/visualstudio/extensibility/debugger/debug-engine).  
-  
 Un motore di debug (DE) funziona con l'interprete o sistema operativo per fornire servizi di debug, ad esempio valutazione dell'espressione di controllo e i punti di interruzione esecuzione. La Germania è responsabile per il monitoraggio dello stato di un programma in fase di debug. A tale scopo, la Germania utilizza qualsiasi metodo è disponibili per il processo del runtime supportati, sia dalla CPU o dalle API fornita dal runtime.  
   
  Ad esempio, common language runtime (CLR) fornisce meccanismi per monitorare un programma in esecuzione tramite le interfacce ICorDebugXXX. Un CRI che supporta Common Language Runtime Usa le interfacce appropriate ICorDebugXXX per tenere traccia di un programma di codice gestito in fase di debug. Comunica quindi tutte le modifiche dello stato per la gestione di debug di sessione (SDM), che inoltra tali informazioni per il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  

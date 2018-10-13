@@ -1,7 +1,7 @@
 ---
 title: Documenti, Ambiente, finestra di dialogo Opzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bdb4133e25e4b10933d901a7e607cd03113702ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540926"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246207"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Documenti, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [documenti, ambiente, finestra di dialogo Opzioni](https://docs.microsoft.com/visualstudio/ide/reference/documents-environment-options-dialog-box).  
-  
   
 Usare la finestra di dialogo **Opzioni** per controllare la visualizzazione dei documenti nell'ambiente di sviluppo integrato (IDE) e gestire le modifiche esterne apportate a documenti e file. Per accedere a questa finestra di dialogo fare clic su **Opzioni** dal menu **Strumenti** e selezionare **Documenti** nel nodo **Ambiente**. Se l'opzione **Documenti** non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.  
   

@@ -1,7 +1,7 @@
 ---
 title: "Procedura: usare il contesto dell'interfaccia utente basata su regole per le estensioni di Visual Studio | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -9,18 +9,16 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: dfe3e1645bd23c859a36f4de222472b8460fd305
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194701"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procedura: usare il contesto dell'interfaccia utente basata su regole per le estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: basato su regole di utilizzo di contesto dell'interfaccia utente per le estensioni di Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions).  
-  
 Visual Studio consente il caricamento di VSPackage durante determinati noto <xref:Microsoft.VisualStudio.Shell.UIContext>s vengono attivati. Tuttavia, questi contesti dell'interfaccia utente non sono molto accurati più capillare, non lasciando gli autori delle estensioni nessuna scelta ma per il prelievo di un contesto dell'interfaccia utente disponibili che viene attivato prima del punto di lo desiderano VSPackage da caricare. Per un elenco di contesti dell'interfaccia utente ben noti, vedere <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Caricamento dei pacchetti può avere un impatto sulle prestazioni e caricarli prima di quanto sono necessarie, non è la procedura consigliata. Visual Studio 2015 ha introdotto il concetto dei contesti di interfaccia utente basata su regole, un meccanismo che consente agli autori di estensioni definire le condizioni precise in cui viene attivato un contesto dell'interfaccia utente e associati i pacchetti VSPackage caricato.  

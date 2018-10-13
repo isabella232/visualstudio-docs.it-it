@@ -1,7 +1,7 @@
 ---
 title: Strutture e unioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c4a5b371d52a249dafd4b13844e3ef3c6c5dff3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 374ee61c65da830b85a8983e61939c25c2296718
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227110"
 ---
 # <a name="structures-and-unions"></a>Strutture e unioni
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [strutture e unioni](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/structures-and-unions).  
-  
 Di seguito sono strutture e unioni in Visual Studio Debugging SDK.  
   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)  

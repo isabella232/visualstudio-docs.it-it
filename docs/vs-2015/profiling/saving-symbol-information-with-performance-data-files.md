@@ -1,7 +1,7 @@
 ---
 title: Salvataggio delle informazioni sui simboli con i file di dati di prestazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98d8a981a1f186c87940cf0a63f5c72d91d56b1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a41cbbed95461245b701ead1e9c11e662bd02f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199772"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Salvataggio delle informazioni sui simboli con i file di dati di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [salvataggio delle informazioni sui simboli con i file di dati prestazioni](https://docs.microsoft.com/visualstudio/profiling/saving-symbol-information-with-performance-data-files).  
-  
 Se si usa l'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per analizzare i file e si prevede di spostare il file con estensione vsp in un altro computer, è necessario configurare le impostazioni del progetto relative alle prestazioni per salvare o *serializzare* i simboli nel file di rapporto. In questo modo viene incrementata la dimensione di un file di rapporto. La serializzazione dei simboli è necessaria per due motivi:  
   
 -   Per incorporare i simboli del codice in un rapporto di prestazioni prima che gli assembly di destinazione vadano persi dal relativo percorso di archiviazione temporanea.  

@@ -1,7 +1,7 @@
 ---
 title: Analisi del codice per gli avvisi del codice gestito | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e1d74a44db244ed83e7d05fb09e66c96475466c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278915"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analisi del codice per gli avvisi del codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analisi del codice per gli avvisi del codice gestito](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-warnings).  
-  
 Lo strumento di analisi del codice gestito fornisce avvisi che indicano le violazioni delle regole nelle librerie del codice gestito. Gli avvisi sono organizzati in aree di regole, ad esempio progettazione, localizzazione, prestazioni e sicurezza. Ogni avviso indica una violazione di una regola di analisi del codice gestito. Questa sezione fornisce descrizioni dettagliate ed esempi per ogni avviso di analisi del codice gestito.  
   
  La tabella seguente mostra il tipo di informazioni fornite per ogni avviso.  
@@ -56,17 +54,17 @@ Lo strumento di analisi del codice gestito fornisce avvisi che indicano le viola
 |-|-|  
 |[Avvisi generati da CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Elenchi di tutti gli avvisi generati da CheckId|  
 |[Avvisi di crittografia](../code-quality/cryptography-warnings.md)|Avvisi che supportano applicazioni e librerie più sicure attraverso l'uso corretto della crittografia.|  
-|[Avvisi di progettazione](../code-quality/design-warnings.md)|Avvisi che supportano la progettazione corretta delle librerie come specificato da di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] linee guida di progettazione.|  
+|[Avvisi di progettazione](../code-quality/design-warnings.md)|Avvisi che supportano la progettazione corretta delle librerie secondo quanto specificato nelle linee guida di progettazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .|  
 |[Avvisi di globalizzazione](../code-quality/globalization-warnings.md)|Avvisi che supportano applicazioni e librerie internazionalizzate.|  
 |[Avvisi di interoperabilità](../code-quality/interoperability-warnings.md)|Avvisi che supportano l'interazione con i client COM.|  
 |[Avvisi di manutenibilità](../code-quality/maintainability-warnings.md)|Avvisi che supportano la manutenzione di applicazioni e librerie.|  
 |[Mobility Warnings](../code-quality/mobility-warnings.md)|Avvisi che supportano l'utilizzo efficiente dell'energia.|  
-|[Avvisi di denominazione](../code-quality/naming-warnings.md)|Gli avvisi che supportano la conformità alle convenzioni di denominazione del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] linee guida di progettazione.|  
+|[Avvisi di denominazione](../code-quality/naming-warnings.md)|Gli avvisi che supportano l'osservanza delle convenzioni di denominazione delle linee guida di progettazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .|  
 |[Avvisi di prestazioni](../code-quality/performance-warnings.md)|Avvisi che supportano applicazioni e librerie ad alte prestazioni.|  
 |[Portability Warnings](../code-quality/portability-warnings.md)|Avvisi che supportano la portabilità tra piattaforme diverse.|  
 |[Avvisi di affidabilità](../code-quality/reliability-warnings.md)|Avvisi che supportano l'affidabilità di applicazioni e librerie, ad esempio il corretto utilizzo di memoria e thread.|  
 |[Avvisi di sicurezza](../code-quality/security-warnings.md)|Avvisi che supportano applicazioni e librerie più sicure.|  
-|[Avvisi di utilizzo](../code-quality/usage-warnings.md)|Gli avvisi che supportano l'utilizzo appropriato del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
+|[Avvisi di utilizzo](../code-quality/usage-warnings.md)|Avvisi che supportano l'utilizzo appropriato di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Errori che si verificano se i criteri di analisi del codice non sono soddisfatti al momento dell'archiviazione.|
 
 

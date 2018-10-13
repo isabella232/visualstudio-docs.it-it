@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: usare la finestra registri | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 668ed9b48d5013a0a134911c4bed56b99ba7e3c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15d7f4fb441a62967cdbfc0ed4491b1226abbd3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238966"
 ---
 # <a name="how-to-use-the-registers-window"></a>Procedura: utilizzare la finestra Registri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [valori di registrazione di visualizzazione nel Debugger di Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-registers-window).  
-  
 La finestra Registri è disponibile solo se è abilitato il debug a livello di indirizzo nel **le opzioni** della finestra di dialogo **debug** nodo **generale** categoria.  
   
  Il **registra** finestra viene visualizzato il contenuto. Se si mantengono le **registra** finestra aperta durante l'esecuzione del programma, è possibile visualizzare le modifiche dei valori durante l'esecuzione di codice. I valori modificati di recente sono visualizzati in rosso. È possibile modificare i valori dei registri. Per altre informazioni, vedere [procedura: modificare un valore di registro](../debugger/how-to-edit-a-register-value.md).  

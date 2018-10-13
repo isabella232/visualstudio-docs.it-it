@@ -1,7 +1,7 @@
 ---
 title: MSSCCPRJ. File SCC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a3387d5563cee60149c8d59a0d7f7179c211a10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a220dbbf80320603b997f03ca16db58dd2865be0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529249"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246025"
 ---
 # <a name="mssccprjscc-file"></a>File MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [MSSCCPRJ. File SCC](https://docs.microsoft.com/visualstudio/extensibility/mssccprj-scc-file).  
-  
 Quando una soluzione di Visual Studio o un progetto viene inserito nel controllo del codice sorgente usare l'IDE, l'IDE riceve due tipi principali di informazioni dal controllo del codice sorgente del plug-in forma di stringhe. Queste stringhe "AuxPath" e "ProjName", sono opache per l'IDE, ma vengono utilizzati per il plug-in per individuare la soluzione o progetto in controllo della versione. L'IDE in genere Ottiene queste stringhe la prima volta chiamando il [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e quindi li salva nel file di soluzione o il progetto per le chiamate successive al [SccOpenProject](../extensibility/sccopenproject-function.md). Se si incorpora nei file di soluzione e progetto, le stringhe "AuxPath" e "ProjName" non vengono aggiornate automaticamente quando un utente di rami, fork, o copia i file di soluzione e progetto in controllo della versione. Per assicurarsi che i file di soluzione e progetto puntino alla posizione corretta nel controllo della versione, gli utenti devono aggiornare manualmente le stringhe. Poiché le stringhe devono essere opaca, potrebbe non sempre essere chiaro come devono essere aggiornati.  
   
  Il plug-in del controllo del codice sorgente è possibile evitare questo problema archiviando le stringhe "AuxPath" e "ProjName" in un file speciale denominato il MSSCCPRJ. File di controllo del codice sorgente. È un file locale, sul lato client, che è di proprietà e gestito dal plug-in. Questo file non viene mai inserito nel controllo del codice sorgente, ma viene generato il plug-in per tutte le directory che contiene i file di controllo del codice sorgente. Per determinare quali file sono file della soluzione e progetto di Visual Studio, un controllo del codice sorgente del plug-in grado di confrontare le estensioni di file rispetto a un elenco standard o fornita dall'utente. Una volta l'IDE rileva che un plug-in supporta il MSSCCPRJ. File di controllo del codice sorgente, cessa di incorporare "AuxPath" e "ProjName" stringhe nella soluzione e i file di progetto che legge tali stringhe dal MSSCCPRJ. Controllo del codice sorgente del file invece.  

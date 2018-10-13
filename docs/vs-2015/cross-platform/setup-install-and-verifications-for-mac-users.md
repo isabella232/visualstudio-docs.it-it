@@ -1,7 +1,7 @@
 ---
 title: Configurazione, installazione e verifiche per gli utenti Mac | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 3a98e0913e51063aa5740974eeaad9b16b764732
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17c0b75fbc4625a11a4d1e418cb5830d04ecab90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278707"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Configurazione, installazione e verifiche per gli utenti Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [programma di installazione, l'installazione e verifiche per gli utenti Mac](https://docs.microsoft.com/visualstudio/cross-platform/setup-install-and-verifications-for-mac-users).  
-  
   
 Questo argomento è destinato agli sviluppatori che lavorano principalmente su un Mac e che useranno facoltativamente Visual Studio in una macchina virtuale Windows sul Mac. Gli sviluppatori che lavorano principalmente su un computer Windows e devono impostare un Mac secondario per attività di sviluppo destinate a iOS possono vedere l'argomento [Configurazione e installazione](../cross-platform/setup-and-install.md) principale.  
   

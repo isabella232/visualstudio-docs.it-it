@@ -1,7 +1,7 @@
 ---
 title: Modificare lo stile degli oggetti in Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6205eea283bec68a3fbbf5c95a5bac36fdbaee9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240152"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificare lo stile degli oggetti in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [modificare lo stile degli oggetti in Blend](https://docs.microsoft.com/visualstudio/designers/modify-the-style-of-objects-in-blend).  
-  
 Il modo più semplice per personalizzare un oggetto consiste nell'impostare le proprietà nel riquadro **Proprietà**.  
   
  Per riusare impostazioni o gruppi di impostazioni, creare una risorsa riutilizzabile, ovvero uno *stile*, un *modello* o qualcosa di semplice, come un colore personalizzato. È anche possibile impostare un controllo in modo che venga visualizzato in modo diverso a seconda dello stato, come ad esempio un pulsante che diventa verde quando viene selezionato dall'utente.  

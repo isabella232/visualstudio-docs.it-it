@@ -1,7 +1,7 @@
 ---
 title: Debug del codice GPU | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279266"
 ---
 # <a name="debugging-gpu-code"></a>Debug del codice GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [debug del codice GPU](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code).  
-  
 È possibile eseguire il debug del codice C++ in esecuzione nell'unità di elaborazione grafica (GPU). Il supporto del debug di GPU in Visual Studio include il rilevamento di race condition, l'avvio di processi e la connessione a essi e l'integrazione nelle finestre di debug.  
   
 ## <a name="supported-platforms"></a>Piattaforme supportate  
@@ -70,7 +68,7 @@ La versione più recente di questo argomento è reperibile in [debug del codice 
 -   [Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Eccezioni di sincronizzazione dei dati  
- Il debugger può identificare diverse condizioni di sincronizzazione dei dati durante l'esecuzione. Quando viene rilevata una condizione, il debugger attivo lo stato di interruzione. Sono disponibili due opzioni, ovvero**interrompere** oppure **continua**. Tramite il **eccezioni** nella finestra di dialogo è possibile configurare se il debugger rileva queste condizioni e anche quali condizioni causano l'interruzione. Per altre informazioni, vedere [la gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md). È anche possibile usare la **opzioni** finestra di dialogo per specificare che il debugger deve ignorare le eccezioni se i dati scritti non modificano il valore dei dati. Per altre informazioni, vedere [generale, debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md).  
+ Il debugger può identificare diverse condizioni di sincronizzazione dei dati durante l'esecuzione. Quando viene rilevata una condizione, il debugger attivo lo stato di interruzione. Sono disponibili due opzioni, ovvero**interrompere** oppure **continua**. Tramite il **eccezioni** nella finestra di dialogo è possibile configurare se il debugger rileva queste condizioni e anche quali condizioni causano l'interruzione. Per altre informazioni, vedere [la gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md). È anche possibile usare la **opzioni** finestra di dialogo per specificare che il debugger deve ignorare le eccezioni se i dati scritti non modificano il valore dei dati. Per altre informazioni, vedere [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="troubleshooting"></a>Risoluzione dei problemi  
   

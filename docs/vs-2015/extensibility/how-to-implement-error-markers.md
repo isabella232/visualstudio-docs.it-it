@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: implementare gli indicatori di errore | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b09696cb8419fe763e62047ff179cb6f6338f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ff4df9e76494e6409ce9d988781926e1a10602a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242957"
 ---
 # <a name="how-to-implement-error-markers"></a>Procedura: implementare gli indicatori di errore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: implementare gli indicatori di errore](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-error-markers).  
-  
 Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili le personalizzazioni dell'editor di testo per implementare. Tuttavia, i vantaggi che offrono agli utenti di un VSPackage possono di gran lunga i costi per fornire loro. Gli indicatori di errore leggermente contrassegnano testo che il parser del linguaggio che considera non corretto con una riga rossa ondulata o una sottolineatura ondulata. Questo indicatore consente ai programmatori visualizzando visivamente il codice non corretto.  
   
  Usare marcatori di testo per implementare la sottolineatura ondulata rossa. Di norma, servizi di linguaggio aggiungere ondulate di colore rosso per il buffer di testo come sessione in background, in fase di inattività o in un thread in background.  

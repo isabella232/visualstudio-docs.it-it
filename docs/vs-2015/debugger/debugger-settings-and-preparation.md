@@ -1,7 +1,7 @@
 ---
 title: Le impostazioni e preparazione del debugger | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,19 +24,17 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42bd81214e013f84b16eaa83d8123a8c09ee38ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79657c6ce53bf1111eec37c1548ea3d4c61d3394
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225316"
 ---
 # <a name="debugger-settings-and-preparation"></a>Impostazioni di debug e preparazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [impostazioni di debug e preparazione](https://docs.microsoft.com/visualstudio/debugger/debugger-settings-and-preparation).  
-  
-In questa sezione vengono descritte le impostazioni delle proprietà correlate al debugger e le operazioni di preparazione necessarie per eseguire il debug del programma con il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se si crea il programma in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mediante i modelli di progetto, tali impostazioni vengono definite automaticamente in modo corretto nella configurazione di debug.  
+In questa sezione vengono descritte le impostazioni delle proprietà correlate al debugger e le operazioni di preparazione necessarie per eseguire il debug del programma con il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Se si crea il programma in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mediante i modelli di progetto, tali impostazioni vengono definite automaticamente in modo corretto nella configurazione di debug.  
   
  Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md).  
   

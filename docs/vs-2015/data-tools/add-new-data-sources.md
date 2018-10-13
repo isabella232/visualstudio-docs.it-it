@@ -1,7 +1,7 @@
 ---
 title: Aggiungere nuove origini dati | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb629119655327c7608025d66bb5e42d857d039d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279149"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiungono nuove origini dati](https://docs.microsoft.com/visualstudio/data-tools/add-new-data-sources).  
-  
   
 Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere disponibili i dati a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database di **Zdroje dat** finestra. Questo tipo di origine dati può essere:  
   

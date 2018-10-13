@@ -1,7 +1,7 @@
 ---
 title: Introduzione al debug in Visual Studio 2015 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec46ba094ccafbb06ec64e181d4a64906feaa205
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531889"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281450"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introduzione al debug in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Guida introduttiva a debug in Visual Studio](https://docs.microsoft.com/visualstudio/ide/getting-started-with-debugging-in-visual-studio).  
-  
 Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e la compilazione di un progetto. Questo argomento spiega come iniziare a usare il set di base delle funzionalità dell'interfaccia utente di debug.  
   
  Nota: i collegamenti a funzionalità più avanzate e ad argomenti per specifiche piattaforme o funzionalità sono disponibili nella parte inferiore della pagina.  

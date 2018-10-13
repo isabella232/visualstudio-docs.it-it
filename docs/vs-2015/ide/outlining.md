@@ -1,7 +1,7 @@
 ---
 title: Struttura | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 939bb5ac1188a54217339c1bf3e9e3a828493d90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518336"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282516"
 ---
 # <a name="outlining"></a>struttura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [struttura](https://docs.microsoft.com/visualstudio/ide/outlining).  
-  
 È possibile scegliere di nascondere parti di codice comprimendo un'area di codice in modo che venga visualizzata sotto un segno più (+). Per espandere un'area compressa fare clic sul segno più. In alternativa è possibile premere CTRL + M + M per comprimere un'area e quindi CTRL + M + M per espanderla nuovamente. È anche possibile comprimere un'area della struttura facendo doppio clic su qualsiasi riga nell'area a margine della struttura, che viene visualizzata a sinistra del codice. Il contenuto di un'area compressa può essere visualizzato come descrizione comando quando si passa il mouse sull'area compressa.  
   
  Le aree nel margine della struttura vengono evidenziate anche quando si passa il mouse sul margine. Il valore predefinito del colore dell'evidenziazione può sembrare piuttosto debole in alcune configurazioni di colore. È possibile modificarlo in **Strumenti/Opzioni/Ambiente/Tipi di carattere e colori/Area comprimibile**.  

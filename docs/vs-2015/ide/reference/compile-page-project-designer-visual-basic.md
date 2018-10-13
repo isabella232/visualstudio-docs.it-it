@@ -1,7 +1,7 @@
 ---
 title: Pagina Compilazione, Creazione progetti (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77dd35111f22ffa1418963e14222e858fadd4f6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c8ed6735a1038ba2bbdf3e3fffe548be47da9d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279643"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Compilazione (pagina), Creazione progetti (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [pagina compilazione, creazione progetti (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
-  
   
 Usare la pagina **Compilazione** in Creazione progetti per specificare le istruzioni di compilazione. In questa pagina è anche possibile specificare opzioni del compilatore avanzate ed eventi di pre-compilazione o post-compilazione.  
   

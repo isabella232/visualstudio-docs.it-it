@@ -1,7 +1,7 @@
 ---
 title: Convalidare il sistema durante lo sviluppo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b0d65d99cf99c7f1468a0bf596eb687f931b5d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33d5de340455e5e0f6a39dd9ce470d2e96327216
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262184"
 ---
 # <a name="validate-your-system-during-development"></a>Convalidare il sistema durante lo sviluppo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [convalidare il sistema durante lo sviluppo](https://docs.microsoft.com/visualstudio/modeling/validate-your-system-during-development).  
-  
 Visual Studio consente di mantenere la coerenza del software con i requisiti degli utenti e con l'architettura del sistema.  
   
  Per individuare le versioni di Visual Studio che supportano le singole funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -37,7 +35,7 @@ Visual Studio consente di mantenere la coerenza del software con i requisiti deg
   
 |**Attività**|**Argomenti correlati**|  
 |---------------|---------------------------|  
-|**Verificare che il modello sia coerente:**<br /><br /> A seconda del modo in cui il progetto usa e interpreta i modelli, può essere utile non consentire alcune combinazioni di elementi. Ad esempio, si possono limitare le classi UML in modo che abbiano sempre nomi conformi con [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]. È possibile definire vincoli come questi nelle estensioni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|-   [Convalidare il modello UML](../modeling/validate-your-uml-model.md)<br />-   [Definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md)|  
+|**Verificare che il modello sia coerente:**<br /><br /> A seconda del modo in cui il progetto usa e interpreta i modelli, può essere utile non consentire alcune combinazioni di elementi. Ad esempio, si possono limitare le classi UML in modo che abbiano sempre nomi conformi con [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]. È possibile definire vincoli come questi nelle estensioni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|-   [Convalidare il modello UML](../modeling/validate-your-uml-model.md)<br />-   [Definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md)|  
 |**Verificare che il software soddisfi i requisiti degli utenti**:<br /><br /> È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e per altre parti interessate e di aggiornare rapidamente i test quando cambiano i requisiti.|-   [Sviluppare test da un modello](../modeling/develop-tests-from-a-model.md)|  
 |**Verificare che il software rimanga coerente con la progettazione desiderata del sistema:**<br /><br /> I diagrammi livello descrivono le dipendenze desiderate tra i componenti dell'applicazione. Durante lo sviluppo, è possibile verificare che le dipendenze effettive nel codice siano conformi alla progettazione desiderata.|-   [Creare diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md)|  
   

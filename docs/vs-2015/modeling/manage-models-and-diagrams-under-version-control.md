@@ -1,7 +1,7 @@
 ---
 title: Gestire modelli e diagrammi nel controllo della versione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,24 +14,22 @@ caps.latest.revision: 32
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aa1da880195e3566460d8169c6eed4e81bb0fb1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187566"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gestire modelli e diagrammi nel controllo della versione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [gestire modelli e diagrammi nel controllo della versione](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control).  
-  
-Gestire versioni diverse dei progetti di modellazione e i diagrammi, incluse le mappe codice (file con estensione dgml), usando [Usa il controllo della versione di Team Foundation o Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); entrambi con un'istanza locale di Team Foundation Server o nel cloud con Visual Studio Team Services.  
+Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse le mappe codice (file DGML), usando [il controllo della versione di Team Foundation o Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314), in locale con Team Foundation Server locale o nel cloud con Visual Studio Team Services.  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!IMPORTANT]
->  Prestare attenzione quando diversi utenti lavorano sullo stesso progetto di modellazione. Scopri come è possibile [organizzare modelli in progetti di medie o grandi dimensioni](../modeling/structure-your-modeling-solution.md).  
+>  Prestare attenzione quando diversi utenti lavorano sullo stesso progetto di modellazione. Scoprire come [organizzare modelli in progetti di medie o grandi dimensioni](../modeling/structure-your-modeling-solution.md).  
   
 ##  <a name="ModelingProjects"></a> File in un progetto di modellazione  
  Più utenti possono usare un progetto di modellazione contemporaneamente, purché lavorino su file diversi.  
@@ -66,7 +64,7 @@ Gestire versioni diverse dei progetti di modellazione e i diagrammi, incluse le 
   
 -   Per tenere traccia dei pacchetti, rinominare i file di pacchetto in modo che rispecchino i nomi dei pacchetti effettivi.  
   
--   Nelle [!INCLUDE[esprscc](../includes/esprscc-md.md)], eseguire sempre **Archivia** e **Leggi ultima versione** operazioni nel progetto di modellazione completo, mai sui singoli file.  
+-   In [!INCLUDE[esprscc](../includes/esprscc-md.md)]eseguire sempre le operazioni **Archivia** e **Leggi ultima versione** sul progetto di modellazione completo, mai sui singoli file.  
   
 -   Eseguire sempre un'operazione **Leggi** immediatamente prima di archiviare il progetto di modellazione.  
   
@@ -82,7 +80,7 @@ Gestire versioni diverse dei progetti di modellazione e i diagrammi, incluse le 
   
 -   Modifica delle proprietà delle relazioni che superano i limiti del pacchetto.  
   
--   Per altre informazioni sui blocchi di estrazione, vedere [controllare estrarre e modificare i file](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+-   Per informazioni sui blocchi di estrazione, vedere [Estrarre e modificare i file](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Per spostare un file di diagramma all'interno o all'esterno di una cartella di progetto  
   

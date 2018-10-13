@@ -1,7 +1,7 @@
 ---
 title: Supporto per la finestra Auto in un servizio di linguaggio Legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68d9266ce81da0819bbf0f17c06409afcb02083f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05a3181206f9e73ffe7800a581fc93c3712c4afa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283621"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Supporto per la finestra Auto in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [supporto per la finestra Auto in un servizio di linguaggio Legacy](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service).  
-  
 Il **Auto** finestra vengono visualizzate le espressioni, ad esempio variabili e parametri che rientrano nell'ambito quando il programma in fase di debug viene sospeso (a causa di un punto di interruzione o un'eccezione). Le espressioni possono includere variabili, locali o globali e i parametri che sono stati modificati nell'ambito locale. Il **Auto** finestra può includere anche le creazioni di istanze di una classe, struttura o un altro tipo. Tutto ciò che un analizzatore di espressioni può valutare potenzialmente possono essere visualizzati nei **Auto** finestra.  
   
  Il framework di pacchetto gestito (MPF) è incluso alcun supporto diretto per il **Auto** finestra. Tuttavia, se esegue l'override di <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metodo, è possibile restituire un elenco delle espressioni devono essere presentati nel **Auto** finestra.  

@@ -1,7 +1,7 @@
 ---
 title: Format Specifiers in c# | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27c3dcf59068ca511f52850e328ef186c22b3dfa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6abc97117af62732f659ca469ab757d1ff1cdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281191"
 ---
 # <a name="format-specifiers-in-c"></a>Identificatori di formato in C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [identificatori di formato in c#](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-csharp).  
-  
 È possibile modificare il formato con cui viene visualizzato il valore nella finestra **Espressioni di controllo** usando gli identificatori di formato. Gli identificatori di formato possono essere usati anche nella finestra **Immediata** , nella finestra **Comando** e persino nelle finestre di origine. Se in queste finestre ci si posiziona su un'espressione, il risultato verrà visualizzato in un suggerimento dati. I suggerimenti dati riflettono l'identificatore di formato nella visualizzazione Suggerimento dati.  
   
  Per usare un identificatore di formato, digitare l'espressione seguita da una virgola e dall'identificatore appropriato.  
@@ -68,7 +66,7 @@ La versione più recente di questo argomento è reperibile in [identificatori di
   
 |Identificatore|Formato|Valore dell'espressione di controllo originale|Visualizza|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Impone la valutazione di un'espressione. Può risultare utile quando la valutazione implicita di proprietà e di chiamate di funzione implicite è disattivata. Visualizzare [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Messaggio "La valutazione della funzione implicita è stata disattivata dall'utente"|\<valore >|  
+|ac|Impone la valutazione di un'espressione. Può risultare utile quando la valutazione implicita di proprietà e di chiamate di funzione implicite è disattivata. Vedere [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Messaggio "La valutazione della funzione implicita è stata disattivata dall'utente"|\<valore >|  
 |d|intero decimale|0x0065|101|  
 |dynamic|Visualizza l'oggetto specificato usando una visualizzazione dinamica|Visualizza tutti i membri dell'oggetto, inclusa la visualizzazione dinamica|Visualizza solo la visualizzazione dinamica|  
 |h|intero esadecimale|61541|0x0000F065|  

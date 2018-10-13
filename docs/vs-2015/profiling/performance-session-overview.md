@@ -1,7 +1,7 @@
 ---
 title: Panoramica delle sessioni di prestazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528304"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242814"
 ---
 # <a name="performance-session-overview"></a>Panoramica delle sessioni di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [panoramica delle sessioni di prestazioni](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).  
-  
 In questa panoramica vengono illustrate le nozioni di base della profilatura. Gli sviluppatori non esperti di prestazioni potranno notare come gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] possano contribuire ad accrescere rapidamente la produttività e a migliorare le prestazioni del codice. Gli sviluppatori con esperienza nella profilatura possono trovare informazioni su specifici processi e funzionalità degli strumenti di profilatura.  
   
  Gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consentono di identificare problemi di prestazioni nel codice sorgente e di confrontare le prestazioni delle possibili soluzioni. Le procedure guidate e le impostazioni predefinite degli strumenti di profilatura permettono di ottenere immediatamente informazioni dettagliate su molti problemi relativi alle prestazioni. Le funzionalità e le opzioni degli strumenti di profilatura assicurano un controllo completo del processo di profilatura. Questo controllo include la destinazione precisa delle sezioni di codice, la raccolta di informazioni sulla temporizzazione a livello di blocco e l'inclusione nei dati di altre informazioni sulle prestazioni del sistema e del processore.  

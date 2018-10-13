@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Visualizzazione delle descrizioni comando informazioni rapide | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b13dce0ea4f2bb54c802b63fd19f74b8173e94d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237653"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Procedura dettagliata: visualizzazione delle descrizioni comando di InformazioniBase
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: visualizzazione di descrizioni comandi informazioni rapide](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-quickinfo-tooltips).  
-  
 Informazioni rapide è una funzionalità di IntelliSense che consente di visualizzare le firme dei metodi e le descrizioni quando l'utente sposta il puntatore sul nome di un metodo. È possibile implementare funzionalità basata sul linguaggio, ad esempio informazioni rapide che definisce gli identificatori per il quale si desidera fornire descrizioni Informazionibase, e quindi creando una descrizione comando in cui visualizzare il contenuto. È possibile definire QuickInfo nel contesto di un servizio di linguaggio, è possibile definire il tipo di contenuto e l'estensione di nome file e visualizzare le informazioni rapide per solo tale tipo o è possibile visualizzare informazioni rapide per un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata illustra come visualizzare informazioni rapide per il tipo di contenuto "text".  
   
  Nell'esempio di informazioni rapide in questa procedura dettagliata vengono visualizzate le descrizioni comandi quando si sposta il puntatore del mouse su un nome di metodo. Questa progettazione è necessario implementare queste quattro interfacce:  
@@ -50,7 +48,7 @@ Informazioni rapide è una funzionalità di IntelliSense che consente di visuali
   
 #### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `QuickInfoTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `QuickInfoTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -61,7 +59,7 @@ Informazioni rapide è una funzionalità di IntelliSense che consente di visuali
   
 #### <a name="to-implement-the-quickinfo-source"></a>Per implementare l'origine di informazioni rapide  
   
-1.  Aggiungere un file di classe e denominarla `TestQuickInfoSource`.  
+1.  Aggiungere un file di classe e assegnargli il nome `TestQuickInfoSource`.  
   
 2.  Aggiungere un riferimento a Microsoft.VisualStudio.Language.IntelliSense.  
   
@@ -160,7 +158,7 @@ Informazioni rapide è una funzionalità di IntelliSense che consente di visuali
      [!code-csharp[VSSDKQuickInfoTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#16)]
      [!code-vb[VSSDKQuickInfoTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#16)]  
   
-2.  Importazione di <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> come proprietà.  
+2.  Importare <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> come proprietà.  
   
      [!code-csharp[VSSDKQuickInfoTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#17)]
      [!code-vb[VSSDKQuickInfoTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#17)]  

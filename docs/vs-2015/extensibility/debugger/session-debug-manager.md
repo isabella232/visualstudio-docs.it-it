@@ -1,7 +1,7 @@
 ---
 title: Sessione di Debug Manager | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aaeac3a5e728d73700b5c2b12d68f5918fd6e658
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f963b67441dd9a3029c374baa190a50e67bf1285
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540892"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247604"
 ---
 # <a name="session-debug-manager"></a>Gestione del debug delle sessioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [sessione di Debug Manager](https://docs.microsoft.com/visualstudio/extensibility/debugger/session-debug-manager).  
-  
 Gestore di sessione di debug (SDM) gestisce un numero qualsiasi di motori di debug (DE) il debug di un numero qualsiasi di programmi in più processi in qualsiasi numero di computer. Oltre a essere un motore di debug multiplexer, il modello SDM fornisce una visualizzazione unificata della sessione di debug all'IDE.  
   
 ## <a name="session-debug-manager-operation"></a>Operazione sessione di Debug Manager  

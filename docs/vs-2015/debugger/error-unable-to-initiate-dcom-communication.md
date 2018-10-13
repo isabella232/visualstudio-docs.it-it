@@ -1,7 +1,7 @@
 ---
 title: 'Errore: Impossibile avviare la comunicazione DCOM | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c8ee1e5a9a9f799a4e9d5d8a4cc3b6f5e03b504
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 83b9bee3e67876ea941e3640c9f77906d8f53d96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277277"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Errore: impossibile avviare la comunicazione DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [errore: Impossibile avviare la comunicazione DCOM](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-initiate-dcom-communication).  
-  
 Si è verificato un errore DCOM quando il computer locale ha tentato di comunicare con il computer remoto. Questo errore è causato dalla presenza di un firewall nel server remoto oppure dall'interruzione dell'autenticazione di Windows nel computer remoto.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
@@ -42,7 +40,7 @@ Si è verificato un errore DCOM quando il computer locale ha tentato di comunica
 -   Per ripristinare l'autenticazione di Windows, provare a riavviare entrambi i computer. Controllare se nel log eventi del computer locale e di quello remoto sono segnalati errori di Kerberos e contattare gli amministratori di dominio in caso di problemi noti.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug remoto](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

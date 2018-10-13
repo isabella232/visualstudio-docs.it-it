@@ -1,7 +1,7 @@
 ---
 title: "Procedura: includere un File di dati in un'applicazione ClickOnce | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ee465b3b4524b4f5c530369722f8bdaf36b85227
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e954550b8d59f1d1672e1229387714ad251a38c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540448"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204698"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedura: includere un file di dati in un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: includere un File di dati in un'applicazione ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-include-a-data-file-in-a-clickonce-application).  
-  
 Ogni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installata è assegnata una directory di dati sul disco locale del computer di destinazione in cui l'applicazione può gestire i propri dati. File di dati possono includere file di qualsiasi tipo: file di testo, file XML o anche i file di Microsoft Access (mdb). Le procedure seguenti illustrano come aggiungere un file di dati di qualsiasi tipo nel [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Per includere un file di dati usando Mage.exe  
