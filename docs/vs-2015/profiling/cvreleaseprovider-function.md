@@ -1,7 +1,7 @@
 ---
 title: Funzione CvReleaseProvider | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e62e897b56407ab985125361700da60d4e0fdcd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5b644dfdb469d84b90a1a0d7d59651fbad2460b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525811"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300781"
 ---
 # <a name="cvreleaseprovider-function"></a>Funzione CvReleaseProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [funzione CvReleaseProvider](https://docs.microsoft.com/visualstudio/profiling/cvreleaseprovider-function).  
-  
 Rilascia un provider di marcatori. Il rilascio del provider di marcatori non influisce sulle serie di marcatori del provider create in precedenza. Le serie di marcatori devono essere rilasciate separatamente dalla chiamata CvReleaseMarkerSeries. Il mancato rilascio del provider di marcatori causa una perdita di memoria.  
   
 ## <a name="syntax"></a>Sintassi  

@@ -1,7 +1,7 @@
 ---
 title: Recuperare le informazioni di colore per la colorazione del testo e carattere | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d4b5ebbaea2b146f1b853360b88bad2363ce77f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540924"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274248"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Recuperare le informazioni di colore per la colorazione del testo e del tipo di carattere
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [recupero di tipi di carattere e le informazioni relative ai colori per la colorazione del testo](https://docs.microsoft.com/visualstudio/extensibility/getting-font-and-color-information-for-text-colorization).  
-  
 Il processo che esegue il rendering o Visualizza colorato testo negli elementi dell'interfaccia utente dipende dal tipo di progetto, la tecnologia e per gli sviluppatori preferenze. Il **Fonts and Colors** pagina delle proprietà vengono archiviate le impostazioni.  
   
  La maggior parte delle implementazioni che visualizzano testo colorato necessario il `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` e associate le interfacce per la presentazione, recuperare e archiviare il testo delle impostazioni di visualizzazione.  

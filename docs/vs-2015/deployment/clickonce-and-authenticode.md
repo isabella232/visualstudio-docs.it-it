@@ -1,7 +1,7 @@
 ---
 title: ClickOnce e Authenticode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,26 +24,24 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289485"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ClickOnce e Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode).  
-  
-Authenticode * è una tecnologia Microsoft che usa la crittografia standard del settore per firmare il codice dell'applicazione con certificati digitali che verificano l'autenticità dell'editore dell'applicazione. Usando la tecnologia Authenticode per la distribuzione delle applicazioni, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] riduce i rischi di Trojan horse. ovvero virus o altri programmi dannosi presentati da una terza parte malintenzionata in modo ingannevole come programmi legittimi provenienti da una fonte definita e attendibile. Firmare le distribuzioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un certificato digitale è un passaggio facoltativo per verificare che gli assembly e i file non siano stati manomessi.  
+Authenticode * è una tecnologia Microsoft che usa la crittografia standard del settore per firmare il codice dell'applicazione con certificati digitali che verificano l'autenticità dell'editore dell'applicazione. Usando la tecnologia Authenticode per la distribuzione di applicazioni, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] consente di ridurre i rischi di trojan horse, ovvero virus o altri programmi dannosi presentati da una terza parte malintenzionata in modo ingannevole come programmi legittimi provenienti da una fonte definita e attendibile. Firmare le distribuzioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un certificato digitale è un passaggio facoltativo per verificare che gli assembly e i file non siano stati manomessi.  
   
  Le sezioni seguenti descrivono i diversi tipi di certificati digitali usati in Authenticode, la procedura di convalida dei certificati mediante Autorità di certificazione (CA, Certification Authority), il ruolo del timestamp nei certificati e i metodi di archiviazione disponibili per i certificati.  
   
 ## <a name="authenticode-and-code-signing"></a>Firma del codice e Authenticode  
  Un *certificato digitale* è un file che contiene una coppia di chiavi di crittografia pubblica/privata, nonché i metadati relativi all'editore a cui è stato rilasciato il certificato e all'autorità di certificazione.  
   
- Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, non funzionerà. Per altre informazioni, vedere [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)(Introduzione alla firma del codice).  
+ Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, l'applicazione non funzionerà. Per altre informazioni, vedere [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)(Introduzione alla firma del codice).  
   
  È possibile ottenere un certificato per la firma del codice in uno dei tre modi seguenti:  
   
@@ -76,7 +74,7 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
   
 ### <a name="storing-certificates"></a>Archiviazione dei certificati  
   
--   È possibile archiviare i certificati nel file system, come file con estensione pfx, oppure all'interno di un contenitore di chiavi. Un utente su un dominio Windows può avere più contenitori di chiavi. Per impostazione predefinita, l'utilità MakeCert.exe archivia i certificati nel contenitore di chiavi personale, a meno che non venga specificato di salvarli in un file con estensione pfx. Mage.exe e MageUI.exe, gli strumenti di [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] per la creazione di distribuzioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consentono di usare certificati archiviati in entrambi i modi.  
+-   È possibile archiviare i certificati nel file system, come file con estensione pfx, oppure all'interno di un contenitore di chiavi. Un utente su un dominio Windows può avere più contenitori di chiavi. Per impostazione predefinita, l'utilità MakeCert.exe archivia i certificati nel contenitore di chiavi personale, a meno che non venga specificato di salvarli in un file con estensione pfx. Mage.exe e MageUI.exe, gli strumenti di [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] per la creazione di distribuzioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , consentono di usare certificati archiviati in entrambi i modi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   

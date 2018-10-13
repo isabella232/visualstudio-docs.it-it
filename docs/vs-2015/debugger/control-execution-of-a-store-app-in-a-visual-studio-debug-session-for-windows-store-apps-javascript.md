@@ -1,7 +1,7 @@
 ---
 title: Controllare l'esecuzione di un'app di Store in una sessione di debug di Visual Studio per le app Windows Store (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275522"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controllare l'esecuzione di un'app dello Store in una sessione di debug di Visual Studio per le app di Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [controllare l'esecuzione di un'app di Store in una sessione di debug di Visual Studio per le app Windows Store (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript).  
-  
 Questa guida introduttiva illustra come spostarsi nel debugger di Visual Studio e come visualizzare lo stato del programma in una sessione.  
   
  La guida è destinata agli sviluppatori che non hanno familiarità con il debug in Visual Studio e a coloro che desiderano avere maggiori informazioni su come spostarsi in una sessione di debug di Visual Studio, ma non insegna l'arte stessa del debug Le funzioni incluse nel codice di esempio sono concepite solo per illustrare le procedure di debug descritte in questo argomento. Non usano procedure consigliate per la progettazione di app o funzioni. In realtà, come si scoprirà presto, le funzioni e l'app stessa non hanno alcuna finalità pratica.  

@@ -1,7 +1,7 @@
 ---
 title: Creazione di cartelle contenitore padre per le soluzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a172598ebe54007c6b0a7b2c6843d04b49a2b72a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307716"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Creazione di cartelle contenitore padre per le soluzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di cartelle contenitore padre per le soluzioni](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-parent-container-folders-for-solutions).  
-  
 Nell'API versione 1.2 del plug-in controllo di origine, un utente può specificare una destinazione di controllo di origine solo nodo radice per tutti i progetti Web all'interno della soluzione. Questa singola radice viene chiamata una radice unificata con privilegi elevati (SUR).  
   
  Nell'API versione 1.1 del plug-in controllo di origine, se l'utente aggiunto una soluzione multiprogetto al controllo del codice sorgente, l'utente è stato richiesto di specificare una destinazione di controllo di origine per ciascun progetto Web.  

@@ -1,7 +1,7 @@
 ---
 title: Funzionalità IntelliTrace | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 73
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15b58b80a3ab3c9ae1a515eda82a946d56c0554d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4443c18b6972d87d49272d33e7d2f33c25277c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278551"
 ---
 # <a name="intellitrace-features"></a>Funzionalità di IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [funzionalità IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/intellitrace-features).  
-  
 È possibile utilizzare IntelliTrace per registrare gli eventi e il metodo chiama l'applicazione, che consente di esaminare il relativo stato (stack di chiamate e i valori delle variabili locali) in diversi momenti dell'esecuzione. È sufficiente avviare il debug come di consueto: IntelliTrace è attivato per impostazione predefinita e si possono vedere le informazioni di registrazione di IntelliTrace nel nuovo **strumenti di diagnostica** finestra sotto il **eventi** scheda. Selezionare un evento e fare clic su **attivare debug cronologico** per visualizzare gli stack di chiamate e variabili locali registrati per questo evento.  
   
  Per una descrizione dettagliata, vedere [procedura dettagliata: utilizzo di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  

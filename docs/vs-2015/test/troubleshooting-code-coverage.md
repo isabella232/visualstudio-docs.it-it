@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi di code coverage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5934f1e42b9954d0d8206db90304142d77f8df78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306049"
 ---
 # <a name="troubleshooting-code-coverage"></a>Risoluzione dei problemi di code coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [risoluzione dei problemi di Code Coverage](https://docs.microsoft.com/visualstudio/test/troubleshooting-code-coverage).  
-  
 Lo strumento di analisi della copertura del codice in Visual Studio raccoglie dati per assembly nativo e gestito (file .dll o .exe). Tuttavia, in alcuni casi, la finestra dei risultati della copertura del codice visualizza un errore simile a "Generati risultati vuoti: ...." Esistono vari motivi possibili per cui questo può verificarsi. Questo argomento è progettato per aiutare a risolvere quei problemi.  
   
 ## <a name="what-you-should-see"></a>Cosa si dovrebbe vedere  

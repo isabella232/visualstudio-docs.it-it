@@ -1,7 +1,7 @@
 ---
 title: Modifica e continuazione nella finestra di dialogo (C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364538c4c4b3d485d136ddfbe4acf6de81228e4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4faa19868f3520a761b40419234ce7a77125a914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280178"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Finestra di dialogo Modifica e continuazione (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [finestra di dialogo di continuare (C++) ed Edit](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box-cpp).  
-  
 La modalità Modifica e continuazione non ha applicato le modifiche apportate al codice nativo. Questa condizione potrebbe essere temporanea. In alcuni casi, la modalità Modifica e continuazione non applica immediatamente le modifiche al codice nativo, ma in seguito durante la sessione di debug, ad esempio al termine della chiamata corrente alla procedura in esecuzione. Per altre informazioni, vedere [modifica e continuazione](../debugger/edit-and-continue.md).  
   
  È possibile modificare il codice per correggere l'errore mentre si esegue ancora il debug, interrompere il debug e correggere il codice o ignorare l'errore e continuare il debug. Se si continua senza apportare la correzione, le modifiche al codice non verranno applicate immediatamente.  

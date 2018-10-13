@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Isolated Shell | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286065"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Visual Studio Isolated Shell](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell).  
-  
 La shell isolata di Visual Studio consente di creare applicazioni autonome che è possono eseguire side-by-side con altre versioni di Visual Studio. È usato principalmente per ospitare strumenti specializzati che è possono usare i servizi di Visual Studio ma anche avere un aspetto personalizzato e personalizzazione. Funzionalità di Visual Studio e gruppi di comandi di menu possono facilmente essere attivati e disattivata. I titoli di applicazioni, applicazione icone e schermate iniziali sono completamente personalizzabili. Per un elenco delle funzionalità personalizzabili, vedere [personalizzazione della Shell isolata](../extensibility/customizing-the-isolated-shell.md).  
   
  Per usare un progetto di shell isolata, è necessario installare Visual Studio SDK. A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

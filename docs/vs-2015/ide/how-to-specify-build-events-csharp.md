@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Specificare gli eventi di compilazione (C#) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297297"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: specificare eventi di compilazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: specificare eventi di compilazione (c#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp).  
-  
 È possibile usare gli eventi di compilazione per specificare i comandi da eseguire prima dell'inizio o al termine della compilazione. Gli eventi di compilazione vengono eseguiti solo se la compilazione raggiunge correttamente i punti corrispondenti nel processo di compilazione.  
   
  Quando un progetto viene compilato, gli eventi di pre-compilazione vengono aggiunti a un file denominato PreBuildEvent.bat mentre gli eventi di post-compilazione vengono aggiunti a un file denominato PostBuildEvent.bat. Per garantire il controllo degli errori, aggiungere comandi di controllo degli errori personalizzati alle istruzioni di compilazione.  

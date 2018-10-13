@@ -1,7 +1,7 @@
 ---
 title: "Procedura: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e815170640b57a667b71aac3e9e3526e2fe8b275
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 256324f198ce9592700c5c14367e87e240101d70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47590460"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302198"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedura: instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: instrumentare un'applicazione Web ASP.NET in modo dinamico compilato e la raccolta di dati di intervallo dettagliati con il Profiler tramite la riga di comando](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line).  
-  
 In questo argomento viene descritto come utilizzare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gli strumenti da riga di comando degli strumenti di profilatura per raccogliere dati di intervallo dettagliati per compilata in modo dinamico [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applicazione usando il metodo di profilatura della strumentazione.  
   
 > [!NOTE]

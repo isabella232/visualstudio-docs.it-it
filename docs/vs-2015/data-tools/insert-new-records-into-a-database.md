@@ -1,7 +1,7 @@
 ---
 title: Inserire nuovi record in un database | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,20 +23,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4413949061a4bc48990e9935fe9dd60252cdde0b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297401"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserire nuovi record in un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [inserire nuovi record in un database](https://docs.microsoft.com/visualstudio/data-tools/insert-new-records-into-a-database).  
   
-  
-Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Update` metodo, o uno dei metodi DBDirect di TableAdapter (in particolare il `TableAdapter.Insert` (metodo)). Per altre informazioni, vedere [panoramica degli oggetti TableAdapter](../data-tools/tableadapter-overview.md).  
+Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Update` metodo, o uno dei metodi DBDirect di TableAdapter (in particolare il `TableAdapter.Insert` (metodo)). Per altre informazioni, vedere [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
   
  Se l'applicazione non usa gli oggetti TableAdapter, è possibile usare gli oggetti comando (ad esempio, <xref:System.Data.SqlClient.SqlCommand>) per inserire nuovi record nel database.  
   
