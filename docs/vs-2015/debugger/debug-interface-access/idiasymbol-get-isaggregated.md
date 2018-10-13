@@ -1,7 +1,7 @@
 ---
 title: Get_isaggregated | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 072158226e31c80839f5734adf384a65308c67a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a85131308e4a798b5f849d6ce0f7c1de54dae37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285403"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Get_isaggregated](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isaggregated).  
-  
 Recupera un flag che specifica se il simbolo di dati fa parte di una funzione di aggregazione o una raccolta di simboli. il compilatore considererà i simboli aggregati come entità separate, ma sono in effetti parte di un singolo simbolo di dimensioni maggiori.  
   
 ## <a name="syntax"></a>Sintassi  

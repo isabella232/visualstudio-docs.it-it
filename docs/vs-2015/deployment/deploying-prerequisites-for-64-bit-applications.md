@@ -1,7 +1,7 @@
 ---
 title: Prerequisiti per le applicazioni a 64 bit la distribuzione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 0f98a611b382f3884ede2e1e239944b9e584ab77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ac12f6992e32566e95170410b33e626d0bcfa3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286442"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Prerequisiti per la distribuzione di applicazioni a 64 bit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [prerequisiti di distribuzione per le applicazioni a 64 bit](https://docs.microsoft.com/visualstudio/deployment/deploying-prerequisites-for-64-bit-applications).  
-  
 La distribuzione ClickOnce supporta l'installazione di applicazioni su piattaforme a 64 bit. Le piattaforme di destinazione vengono **x86** per piattaforme a 32 bit **x64** per le macchine che supportano il set di istruzioni AMD64 ed EM64T, e **Itanium** per il processore Itanium a 64 bit.  
   
 ## <a name="prerequisites"></a>Prerequisiti  

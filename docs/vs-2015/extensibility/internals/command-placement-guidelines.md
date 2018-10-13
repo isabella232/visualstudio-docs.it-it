@@ -1,7 +1,7 @@
 ---
 title: Linee guida per la selezione host di comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81c40e2ee18f828ad379cdaabc40854fb87ccfb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf6c047e649f1615cbb15704621d3c0a8eafaf2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527437"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284882"
 ---
 # <a name="command-placement-guidelines"></a>Linee guida per il posizionamento dei comandi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [linee guida per la selezione host comando](https://docs.microsoft.com/visualstudio/extensibility/internals/command-placement-guidelines).  
-  
 Le procedure consigliate per il posizionamento comandi nell'ambiente di sviluppo integrato (IDE) di Visual Studio variano a seconda delle dimensioni del set di comandi. I comandi sono definiti e posizionati in base alle informazioni nei file con estensione vsct.  
   
 ## <a name="best-practices-for-all-command-sets"></a>Procedure consigliate per tutti i set di comandi  

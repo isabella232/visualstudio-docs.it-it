@@ -1,7 +1,7 @@
 ---
 title: Unit test per metodi generici | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 19e17718cdee01b4fec4b126072126d4ff9ee281
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 208682486f2a1b3c9be69e969b5d80374c8fde32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295789"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Unit test per metodi generici](https://docs.microsoft.com/visualstudio/test/unit-tests-for-generic-methods).  
-  
 È possibile generare unit test per metodi generici procedendo esattamente come per altri metodi, come descritto in [Procedura: Creare ed eseguire uno unit test](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Le sezioni seguenti forniscono informazioni ed esempi relativi alla creazione di unit test per metodi generici.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Argomenti di tipo e vincoli di tipo  

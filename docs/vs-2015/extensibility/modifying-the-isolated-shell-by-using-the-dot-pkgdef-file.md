@@ -1,7 +1,7 @@
 ---
 title: Modifica della Shell isolata tramite il. File pkgdef | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3a9b56d946e5a337c5afeb6cdd399c3c7ba24bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291460"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modifica della Shell isolata tramite il. File pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [modificando l'isolato Shell tramite l'utilizzo di. File pkgdef](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file).  
-  
 Il file con estensione pkgdef supporta le impostazioni che è possibile usare per personalizzare un'applicazione shell isolata. Specifica i valori che vengono creati quando un'applicazione è installata in un computer e che viene fatto riferimento dalla shell di Visual Studio quando avvia l'applicazione. Le impostazioni sono organizzate nel file di base alle chiavi del Registro di sistema applicabili.  
   
 > [!WARNING]

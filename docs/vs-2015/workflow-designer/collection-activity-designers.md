@@ -1,7 +1,7 @@
 ---
 title: Activity Designer Collection | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6188660725967c301f0d2a6ad838769b30f2f1eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9324c49cd05d82feab670ee3b0f9d4e261ca24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291993"
 ---
 # <a name="collection-activity-designers"></a>ActivityDesigner della raccolta
-Gli ActivityDesigner Collection vengono usati per creare e configurare le attività per la gestione di raccolte. Gli argomenti contenuti in questa sezione ed elencati nella tabella seguente forniscono istruzioni sull'utilizzo degli ActivityDesigner e delle finestre di progettazione dei modelli di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
+Gli ActivityDesigner della raccolta vengono usati per creare e configurare le attività per la gestione di raccolte. Gli argomenti contenuti in questa sezione ed elencati nella tabella seguente forniscono istruzioni sull'utilizzo degli ActivityDesigner e delle finestre di progettazione dei modelli di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)  

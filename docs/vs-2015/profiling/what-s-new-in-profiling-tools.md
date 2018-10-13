@@ -1,7 +1,7 @@
 ---
 title: Novità negli strumenti di profilatura | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ab7fe2362bbf9779854bb1c79bfb4de9ffd1600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5cb1d89409b38fea4e3745de7a619e913c6122f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290160"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Cosa&#39;s negli strumenti di profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [What ' s New in profilatura](https://docs.microsoft.com/visualstudio/profiling/what-s-new-in-profiling-tools).  
-  
 Per informazioni sulle novità relative al debug ed alla diagnostica di Visual Studio 2015 Update 1, vedere le [note sulla versione di Visual Studio 2015 Update 1](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Per informazioni sulle novità relative al debug ed alla diagnostica di Visual Studio 2015, vedere le [note sulla versione di Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
@@ -42,7 +40,7 @@ Per informazioni sulle novità relative al debug ed alla diagnostica di Visual S
  È ora possibile eseguire gli strumenti di diagnostica durante il debug con la nuova **gli strumenti di diagnostica** finestra. La finestra viene visualizzata automaticamente, ma è possibile aprirla anche con la nuova voce di menu **Mostra strumenti di diagnostica** (tasto di scelta rapida **Ctrl+Alt+F2**).  
   
 ## <a name="diagnostics-without-debugging-ui-and-hotkey-changes"></a>Diagnostica con modifiche all'interfaccia utente e i tasti di scelta rapida di debug  
- Per eseguire la diagnostica senza debug, passare ad **Debug / avvia diagnostica tools senza eseguire debug** o **Debug / Profiler / Profiler prestazioni...** . In Visual Studio 2013, questo è stato trovato **analizza / prestazioni e diagnostica** oppure **eseguire il Debug / prestazioni e diagnostica**.  
+ Per eseguire la diagnostica senza debug, passare ad **Debug / avvia diagnostica tools senza eseguire debug** o **Debug / Profiler / Profiler prestazioni...** . In Visual Studio 2013, questo è stato trovato **Analizza / prestazioni e diagnostica** o **Debug / prestazioni e diagnostica**.  
   
  Il **Esplora prestazioni** attualmente si trova **Debug / Profiler / Esplora prestazioni**. In Visual Studio 2013 è stato trovato **Analizza / Profiler**.  
   

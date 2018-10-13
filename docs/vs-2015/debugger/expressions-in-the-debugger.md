@@ -1,14 +1,14 @@
 ---
 title: Espressioni nel Debugger | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 dev_langs:
@@ -32,18 +32,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b8350356b82b6d2cefc3fda725d90dccea75e55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289328"
 ---
 # <a name="expressions-in-the-debugger"></a>Espressioni nel debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [espressioni nel Debugger](https://docs.microsoft.com/visualstudio/debugger/expressions-in-the-debugger).  
-  
 Il debugger di Visual Studio include analizzatori di espressioni che vengono usati quando si immette un'espressione nella finestra di dialogo **Controllo immediato** , nella finestra **Espressioni di controllo** o **Immediato** . Gli analizzatori di espressioni vengono inoltre usati nella finestra **Punti di interruzione** e in molte altre posizioni all'interno del debugger.  
   
  Le sezioni seguenti forniscono informazioni dettagliate sulle espressioni in linguaggi diversi.  
@@ -138,7 +136,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - Espressioni non supportate  
   
 ### <a name="dynamic-objects"></a>Oggetti dinamici  
- Nelle espressioni del debugger è possibile usare variabili tipizzate staticamente come dinamiche. Quando gli oggetti che implementano il <xref:System.Dynamic.IDynamicMetaObjectProvider> vengono valutati nella finestra Espressioni di controllo del nodo viene aggiunto una visualizzazione dinamica. Il nodo Visualizzazione dinamica mostra i membri dell'oggetto, ma non consente la modifica dei valori dei membri.  
+ Nelle espressioni del debugger è possibile usare variabili tipizzate staticamente come dinamiche. Quando gli oggetti che implementano <xref:System.Dynamic.IDynamicMetaObjectProvider> vengono valutati nella finestra Espressioni di controllo, viene aggiunto un nodo Visualizzazione dinamica. Il nodo Visualizzazione dinamica mostra i membri dell'oggetto, ma non consente la modifica dei valori dei membri.  
   
  Le funzionalità seguenti degli oggetti dinamici non sono supportate:  
   
@@ -162,7 +160,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - Espressioni non supportate  
   
 ### <a name="dynamic-objects"></a>Oggetti dinamici  
- Nelle espressioni del debugger è possibile usare variabili tipizzate staticamente come dinamiche. Quando gli oggetti che implementano il <xref:System.Dynamic.IDynamicMetaObjectProvider> vengono valutati nella finestra Espressioni di controllo del nodo viene aggiunto una visualizzazione dinamica. Il nodo Visualizzazione dinamica mostra i membri dell'oggetto, ma non consente la modifica dei valori dei membri.  
+ Nelle espressioni del debugger è possibile usare variabili tipizzate staticamente come dinamiche. Quando gli oggetti che implementano <xref:System.Dynamic.IDynamicMetaObjectProvider> vengono valutati nella finestra Espressioni di controllo, viene aggiunto un nodo Visualizzazione dinamica. Il nodo Visualizzazione dinamica mostra i membri dell'oggetto, ma non consente la modifica dei valori dei membri.  
   
  Le funzionalità seguenti degli oggetti dinamici non sono supportate:  
   
@@ -223,7 +221,7 @@ int main()
   
 ## <a name="see-also"></a>Vedere anche  
  [Identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md)   
- [Operatore di contesto (C++)](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Identificatori di formato in c#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudo variabili](../debugger/pseudovariables.md)
 

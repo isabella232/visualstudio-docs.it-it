@@ -1,7 +1,7 @@
 ---
 title: Convalidare il modello UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 42e0733668a1f96dc1881d4d4d58a575eeb9eb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292695"
 ---
 # <a name="validate-your-uml-model"></a>Eseguire la convalida di un modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [convalidare il modello UML](https://docs.microsoft.com/visualstudio/modeling/validate-your-uml-model).  
-  
 Alcuni dei modelli UML che è possibile creare in Visual Studio potrebbero essere considerati non validi nel progetto. Ad esempio, è possibile richiedere che un caso di utilizzo sia sempre collegato a un diagramma di sequenza contenente le linee di vita che rappresentano gli attori del caso di utilizzo. È possibile installare o definire *vincoli* che consentono al team di conformarsi a requisiti come questo. I vincoli possono essere applicati quando l'utente salva o apre un modello e possono essere richiamati dal comando di menu.  
   
  Non vengono forniti vincoli con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in quanto dipendono dal modo in cui il team interpreta e usa i modelli UML. È tuttavia possibile definire vincoli personalizzati e installare vincoli definiti da altri utenti. Per informazioni su come definire vincoli e assemblarli per la distribuzione, vedere [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md).  

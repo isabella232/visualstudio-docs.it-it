@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione processi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c83b57ade3a78a4dcc926e34547ee566326e129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288990"
 ---
 # <a name="processes-view"></a>Visualizzazione processi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione processi](https://docs.microsoft.com/visualstudio/debugger/processes-view).  
-  
 La visualizzazione dei processi viene visualizzato un albero di tutti i processi attivi nel sistema. Vengono visualizzati il nome del modulo e l'ID processo. Se si vuole esaminare un particolare processo di sistema, che in genere corrisponde a un programma in esecuzione, usare la visualizzazione dei processi. I processi sono identificati da nomi di modulo o vengono designati come "processi di sistema".  
   
  Microsoft Windows supporta più processi. Ogni processo può avere uno o più thread e ogni thread può avere uno o più associate finestre di primo livello. Ogni finestra di primo livello può disporre di una serie di windows. Un simbolo + indica che un livello è compressa. La visualizzazione compressa è costituito da una riga per ogni processo. Scegliere il simbolo + per espandere il livello.  

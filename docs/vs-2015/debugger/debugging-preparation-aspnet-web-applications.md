@@ -1,7 +1,7 @@
 ---
 title: 'Preparazione al debug: Applicazioni Web ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,19 +24,17 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292890"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Preparazione al debug: applicazioni Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [preparazione al debug: applicazioni Web ASP.NET](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications).  
-  
-Il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modello sito Web consente di creare un'applicazione Web Form. Quando si crea un sito Web mediante questo modello, in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vengono definite automaticamente le impostazioni predefinite per il debug. Nel **proprietà del progetto** nella finestra di dialogo è possibile specificare se si desidera che la pagina Web da una pagina di avvio. Quando si avvia il debug di un' [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]sito Web con queste impostazioni predefinite, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] avvia Internet Explorer e collega il debugger per il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] processo di lavoro (aspnet_wp.exe o w3wp.exe). Per altre informazioni, vedere [requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md).  
+Il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modello sito Web consente di creare un'applicazione Web Form. Quando si crea un sito Web mediante questo modello, in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vengono definite automaticamente le impostazioni predefinite per il debug. Nel **proprietà del progetto** nella finestra di dialogo è possibile specificare se si desidera che la pagina Web da una pagina di avvio. Quando si avvia il debug di un' [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]sito Web con queste impostazioni predefinite, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] avvia Internet Explorer e collega il debugger per il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] processo di lavoro (aspnet_wp.exe o w3wp.exe). Per altre informazioni, vedere [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>Per creare un'applicazione Web Form  
   

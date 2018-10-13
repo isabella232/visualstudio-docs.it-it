@@ -1,7 +1,7 @@
 ---
 title: "Procedura: eseguire il Debug di un'applicazione con attendibilità parziale | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5880b375f15b189a2532ed750d87b95fea51f0df
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d6b3b7bb7e880b30e975770ee35dfb537e62827b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590616"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288223"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Procedura: eseguire il debug di un'applicazione parzialmente attendibile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: eseguire il Debug a Partial Trust Application](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-a-partial-trust-application).  
-  
 Le informazioni contenute in questo argomento sono valide per applicazioni Windows e console  
   
  [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md) rende più semplice distribuire le applicazioni parzialmente attendibili che sfruttano [Code Access Security](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) per limitare l'accesso alle risorse in un computer.  

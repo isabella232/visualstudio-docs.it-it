@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Non visualizzare avvisi del compilatore | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286091"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: non visualizzare avvisi del compilatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: eliminare gli avvisi del compilatore](https://docs.microsoft.com/visualstudio/ide/how-to-suppress-compiler-warnings).  
-  
 È possibile ripulire un log di compilazione specificando uno o più tipi di avvisi del compilatore che non devono essere contenuti nel log. È ad esempio possibile usare questa tecnica per rivedere alcune ma non tutte le informazioni generate automaticamente quando il livello di dettaglio del log di compilazione viene impostato su Normale, Dettagliato o Diagnostico. Per altre informazioni sul livello di dettaglio, vedere [How to: View, Save, and Configure Build Log Files](../ide/how-to-view-save-and-configure-build-log-files.md) (Procedura: Visualizzare, salvare e configurare file di log di compilazione)  
   
 ### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Per non visualizzare avvisi specifici per Visual C# o F#  

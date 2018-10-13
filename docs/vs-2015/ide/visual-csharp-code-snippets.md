@@ -1,7 +1,7 @@
 ---
 title: Frammenti di codice Visual C# | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297414"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [frammenti di codice Visual c#](https://docs.microsoft.com/visualstudio/ide/visual-csharp-code-snippets).  
-  
 I frammenti di codice sono piccole porzioni di codice pronte all'uso che si possono inserire rapidamente nel codice. Ad esempio, il frammento di codice `for` crea un ciclo `for` vuoto. Alcuni frammenti di codice sono frammenti racchiusi, che consentono di selezionare righe di codice e quindi scegliere un frammento di codice che incorpora le righe di codice selezionate. Ad esempio, quando si selezionano righe di codice e si attiva il frammento di codice `for`, viene creato un ciclo `for` con le righe di codice all'interno del blocco del ciclo. I frammenti di codice possono rendere la scrittura del codice dei programmi più veloce, più semplice e più affidabile.  
   
  È possibile inserire un frammento di codice nella posizione del cursore o un frammento di codice racchiuso intorno al codice attualmente selezionato. Lo strumento per l'inserimento dei frammenti di codice viene richiamato usando i comandi **Inserisci frammento di codice** o **Racchiudi tra** del menu **IntelliSense** o usando i tasti di scelta rapida CTRL+K e quindi X o CTRL+K e quindi S rispettivamente.  

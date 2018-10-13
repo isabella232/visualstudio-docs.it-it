@@ -1,7 +1,7 @@
 ---
 title: 'File XSD di esempio: Relazioni | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 304cc9d25f99071e13fd8cae104b09a0836a3224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42dbe702c1b6841dd834af28e02737c00aed6595
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518359"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295711"
 ---
 # <a name="sample-xsd-file-relationships"></a>File XSD di esempio: relazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [File XSD di esempio: relazioni](https://docs.microsoft.com/visualstudio/xml-tools/sample-xsd-file-relationships).  
-  
   
 Il file XSD seguente viene usato in vari esempi nella documentazione relativa alla progettazione di schemi XSD. Questo file è uno schema di ordine di acquisto con annotazioni e documentazione.  
   

@@ -1,7 +1,7 @@
 ---
 title: Finestra di dialogo tipo di carattere (Guida di Microsoft Spy + +) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8e753bd3f0e00e813556813689cb0702fc43214
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0fa7fcf78180790e9f57ae2f944a9b5683e8423
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530041"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288070"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Finestra di dialogo Tipo di carattere (Guida di Microsoft Spy++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [finestra di dialogo tipo di carattere (Microsoft Spy + + Help)](https://docs.microsoft.com/visualstudio/debugger/font-dialog-box-microsoft-spy-increment-help).  
-  
 Usare questa finestra di dialogo per configurare il tipo di carattere utilizzato una [visualizzazioni di Spy + +](../debugger/spy-increment-views.md) finestra. Per visualizzare questa finestra di dialogo, espandere la **View** dal menu e scegliere **Font**.  
   
  Sono disponibili le seguenti impostazioni:  

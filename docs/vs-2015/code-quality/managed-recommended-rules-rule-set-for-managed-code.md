@@ -1,7 +1,7 @@
 ---
 title: Set di regole consigliate gestite per codice gestito | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: dedbe4329c35f3d59c4650b028330e4e98691148
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33c35304643d0743b5da53a75cae9a01125b7da6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518035"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296101"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Set di regole consigliate gestite per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [set di regole regole consigliate gestite per codice gestito](https://docs.microsoft.com/visualstudio/code-quality/managed-recommended-rules-rule-set-for-managed-code).  
-  
 È possibile usare il set di concentrarsi sui problemi più critici nel codice gestito, incluse potenziali lacune nella protezione, arresti anomali delle applicazioni e altri errori importanti per la logica e progettazione di regole regole consigliate gestite Microsoft. È consigliabile includere questo set di regole in eventuali set di regole personalizzato creato per i progetti.  
   
 |Regola|Descrizione|  

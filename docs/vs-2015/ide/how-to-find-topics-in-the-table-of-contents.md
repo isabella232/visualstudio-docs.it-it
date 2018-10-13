@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: trovare argomenti nel sommario | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77c6221dc8362fb8a6bea6a272ca1e39d7fcd9af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7805113a1d35b352c048711f7ce4aa634ad4cb5e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292747"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Procedura: trovare argomenti nel sommario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: trovare argomenti nel sommario](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-table-of-contents).  
-  
 Nella scheda **Contenuto** è possibile usare il sommario per trovare le informazioni. Il sommario è un elenco espandibile che contiene tutti argomenti dei libri installati. Per informazioni sull'accessibilità relative a come spostarsi nel sommario, vedere [Tasti di scelta rapida (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]

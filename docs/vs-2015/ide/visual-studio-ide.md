@@ -1,7 +1,7 @@
 ---
 title: IDE di Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98d0da464c5c156d959a05410326cebd4cd870f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529100"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292786"
 ---
 # <a name="visual-studio-ide"></a>IDE di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [documentazione dell'IDE di Visual Studio](https://docs.microsoft.com/visualstudio/ide/index).
-
 Microsoft Visual Studio 2015 è una suite di strumenti per la creazione di software, dalla fase di pianificazione fino alla progettazione dell'interfaccia utente, la codifica, i test, il debug, l'analisi della qualità del codice e delle prestazioni, la distribuzione ai clienti e la raccolta di dati di telemetria sull'utilizzo. Questi strumenti sono progettati per integrarsi perfettamente e sono tutti esposti tramite Visual Studio Integrated Development Environment (IDE).
 
 Visual Studio può essere usato per creare diversi tipi di applicazioni, da semplici applicazioni e giochi dello Store per client mobili a sistemi complessi per aziende e data center. È possibile creare:
@@ -36,9 +33,9 @@ Visual Studio può essere usato per creare diversi tipi di applicazioni, da semp
 
 - Giochi e applicazioni a elevato utilizzo di grafica per un'ampia gamma di dispositivi Windows, tra cui Xbox, usando DirectX.
 
-Per impostazione predefinita, Visual Studio offre supporto per C#, C e C++, JavaScript, F# e Visual Basic. Visual Studio funziona e si integra bene con applicazioni di terze parti come Unity tramite il [Visual Studio Tools per Unity](../cross-platform/visual-studio-tools-for-unity.md) estensione e Apache Cordova tramite [Visual Studio Tools per Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). È possibile estendere manualmente Visual Studio creando strumenti personalizzati in grado di eseguire attività specializzate.
+Per impostazione predefinita, Visual Studio offre supporto per C#, C e C++, JavaScript, F# e Visual Basic. Visual Studio funziona e si integra bene con applicazioni di terze parti come Unity tramite l’estensione [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) e con Apache Cordova tramite [Visual Studio Tools per Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). È possibile estendere manualmente Visual Studio creando strumenti personalizzati in grado di eseguire attività specializzate.
 
-Se non si è mai usato Visual Studio in precedenza, apprendere le nozioni di base con nostri [Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md) esercitazioni e procedure dettagliate.
+Se non si è mai usato Visual Studio in precedenza, apprendere le nozioni di base con le esercitazioni e le procedure dettagliate della [Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md) .
 
 Se si desidera scoprire nuove funzionalità di Visual Studio 2015, vedere [What ' s New in Visual Studio 2015](../what-s-new-in-visual-studio-2015.md).
 
@@ -55,20 +52,20 @@ Se si desidera scoprire nuove funzionalità di Visual Studio 2015, vedere [What 
 ### <a name="signing-in"></a>Accesso
  Quando si avvia Visual Studio per la prima volta, è possibile accedere usano l'account Microsoft o l'account aziendale o dell'istituto di istruzione. L'accesso consente di sincronizzare le impostazioni, ad esempio i layout delle finestre, tra più dispositivi e di connettersi automaticamente ai servizi richiesti, ad esempio le sottoscrizioni di Azure e Visual Studio Team Services. Se si ha una licenza basata sulla sottoscrizione, è necessario accedere a Visual Studio a intervalli regolari per mantenere aggiornati i token di licenza. Se si ha una licenza con codice Product Key, l'accesso non è necessario, ma consente di connettersi più facilmente a Visual Studio Team Services e agli account con Azure, Office 365, Salesforce.com. Per altre informazioni, vedere [Accesso a Visual Studio](../ide/signing-in-to-visual-studio.md).
 
- Se si hanno più account di Visual Studio Team Services, account di Azure o sottoscrizioni MSDN, è possibile collegarli e accedere alle risorse e ai servizi in tutti gli account con un unico accesso. Per altre informazioni, vedere l'articolo [Usare più account utente](../ide/work-with-multiple-user-accounts.md).
+ Se si hanno più account di Visual Studio Team Services, account di Azure o sottoscrizioni MSDN, è possibile collegarli e accedere alle risorse e ai servizi in tutti gli account con un unico accesso. Per altre informazioni, vedere [Work with multiple user accounts](../ide/work-with-multiple-user-accounts.md).
 
 ### <a name="staying-up-to-date"></a>Rimanere aggiornati
  L'icona di notifica nell'angolo superiore destro della barra del titolo segnala la disponibilità di aggiornamenti per Visual Studio o per i relativi componenti installati. È possibile scegliere se ignorare queste notifiche o eseguire gli aggiornamenti. Per altre informazioni, vedere [Notifiche di Visual Studio](../ide/visual-studio-notifications.md).
 
 ### <a name="finding-things-and-getting-help"></a>Operazioni di ricerca e richieste di supporto
- Il [avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) finestra illustrato di seguito è un modo rapido per trovare i comandi di Visual Studio, strumenti, funzionalità e così via quando non si conoscono i tasti di scelta rapida o menu la posizione. È sufficiente digitare la propria ricerca per ottenere un collegamento da Avvio veloce.
+ La finestra [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) visualizzata di seguito permette di trovare rapidamente comandi, strumenti, funzionalità e altri elementi di Visual Studio quando non si conoscono i tasti di scelta rapida o la posizione dei menu. È sufficiente digitare la propria ricerca per ottenere un collegamento da Avvio veloce.
 
  ![Risultati di avvio veloce per 'nuovo progetto'](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
  MSDN è il sito web Microsoft per la documentazione tecnica. La pagina che si sta leggendo è di MSDN. In Visual Studio è possibile premere **F1** per passare alla pagina della Guida MSDN per la finestra attiva. È anche possibile premere **F1** nell'editor del codice per passare alla pagina della Guida MSDN per l'API o la parola chiave nella posizione corrente del punto di inserimento. Ad esempio, in un file c#, posizionare il cursore all'interno o alla fine di una `System.String` dichiarazione e premere **F1** per passare alla pagina della Guida MSDN per <xref:System.String>.
 
 ### <a name="giving-feedback"></a>Commenti e suggerimenti
- In Visual Studio i commenti e i suggerimenti possono essere inseriti in modo facile e in qualsiasi momento. Fare clic sull'icona relativa ai commenti sulla barra del titolo accanto a **Avvio veloce** , quindi su **Segnala un problema** o **Suggerimento**. Le edizioni provvisorie di Visual Studio offrono anche un'opzione **Valuta questo prodotto** . Microsoft esaminerà questi commenti e li userà per migliorare il prodotto. Per altre informazioni, vedere [Comunicazioni con Microsoft](../ide/talk-to-us.md).
+ In Visual Studio i commenti e i suggerimenti possono essere inseriti in modo facile e in qualsiasi momento. Fare clic sull'icona relativa ai commenti sulla barra del titolo accanto a **Avvio veloce** , quindi su **Segnala un problema** o **Suggerimento**. Le edizioni provvisorie di Visual Studio offrono anche un'opzione **Valuta questo prodotto** . Microsoft esaminerà questi commenti e li userà per migliorare il prodotto. Per altre informazioni, vedere [Talk to Us](../ide/talk-to-us.md).
 
 ### <a name="personalizing-the-ide"></a>Personalizzazione dell'IDE
  È possibile personalizzare il layout della finestra per adattarlo al proprio stile di sviluppo. È possibile ancorare, rendere mobili o nascondere tutte le finestre in qualsiasi momento ed è anche possibile eseguire l'editor in modalità schermo intero. È possibile creare e salvare più layout di finestra personalizzati che visualizzano solo le finestre necessarie per contesti specifici. Ad esempio, si può creare un layout a schermo intero in modo che venga visualizzato solo l'editor di codice. Inoltre, si possono creare diversi layout per il debug e per le operazioni del team. Per altre informazioni, vedere [Personalizzazione del layout delle finestre](../ide/customizing-window-layouts-in-visual-studio.md).
@@ -94,7 +91,7 @@ Se si desidera scoprire nuove funzionalità di Visual Studio 2015, vedere [What 
  ![Finestra di dialogo Nuovo progetto di Visual Studio](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
 
 ## <a name="designing-the-user-interface"></a>Progettazione dell'interfaccia utente
- Una finestra di progettazione è uno strumento intuitivo che consente di creare un'interfaccia utente senza scrivere codice. È possibile trascinare i controlli dell'interfaccia utente, ad esempio le caselle di riepilogo, i calendari e i pulsanti dal [casella degli strumenti](../ide/reference/toolbox.md) finestra in un'area di progettazione che rappresenta la finestra o finestra di dialogo. È possibile ridimensionare e ridisporre gli elementi senza scrivere alcun codice. Le finestre di progettazione sono incluse per qualsiasi tipo di progetto con un'interfaccia utente.
+ Una finestra di progettazione è uno strumento intuitivo che consente di creare un'interfaccia utente senza scrivere codice. È possibile trascinare i controlli dell'interfaccia utente, ad esempio le caselle di riepilogo, i calendari e i pulsanti dalla finestra [Toolbox](../ide/reference/toolbox.md) , in un'area di progettazione che rappresenta la finestra o la finestra di dialogo. È possibile ridimensionare e ridisporre gli elementi senza scrivere alcun codice. Le finestre di progettazione sono incluse per qualsiasi tipo di progetto con un'interfaccia utente.
 
  Se il progetto contiene un'interfaccia utente basata su XAML, la finestra di progettazione predefinita è Blend per Visual Studio, un sofisticato strumento di grafica perfettamente integrato con Visual Studio.
 
@@ -119,7 +116,7 @@ Se si desidera scoprire nuove funzionalità di Visual Studio 2015, vedere [What 
 
  L'editor di testo ha un alto livello di interazione (se richiesto) e molte funzionalità per la produttività che consentono di scrivere codice in modo più rapido ed efficace. Le funzionalità variano in base al linguaggio e non è necessario usare alcun linguaggio (digitando "Editor" in Avvio veloce) per attivarle o disattivarle. Alcune delle funzionalità di produttività usate più di frequente sono:
 
-1.  [Refactoring](../ide/refactoring-in-visual-studio.md) include operazioni come la ridenominazione intelligente delle variabili, lo spostamento delle righe di codice selezionate in funzioni separate, lo spostamento di codice in altre posizioni, parametri della funzione riordinamento e altro ancora.
+1.  [Refactoring](../ide/refactoring-in-visual-studio.md) include operazioni come la ridenominazione intelligente delle variabili, lo spostamento delle righe di codice selezionate in funzioni separate, lo spostamento di codice in altre posizioni, il riordinamento dei parametri di funzione e molto altro.
 
 2.  *IntelliSense* è un termine generico che comprende diverse funzionalità comuni che visualizzano le informazioni sul tipo di codice direttamente nell'editor e, in alcuni casi, scrivono automaticamente piccole parti di codice. È come se si avesse a disposizione la documentazione di base all'interno dell'editor, senza dover cercare le informazioni sul tipo in una finestra della Guida separata. Le funzionalità di IntelliSense variano a seconda del linguaggio. Per altre informazioni, vedere [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md). La figura seguente illustra alcune funzionalità di IntelliSense:
 
@@ -131,7 +128,7 @@ Se si desidera scoprire nuove funzionalità di Visual Studio 2015, vedere [What 
 
 4.  I [segnalibri](../ide/setting-bookmarks-in-code.md) consentono di passare rapidamente a righe specifiche dei file in uso.
 
-5.  Nel menu di scelta rapida dell'editor di testo è possibile richiamare la finestra [Gerarchia di chiamata](../ide/reference/call-hierarchy.md) per visualizzare i metodi che chiamano e vengono chiamati dal metodo sotto il cursore.
+5.  Nel menu di scelta rapida dell'editor di testo è possibile richiamare la finestra [Call Hierarchy](../ide/reference/call-hierarchy.md) per visualizzare i metodi che chiamano e vengono chiamati dal metodo sotto il punto di inserimento.
 
 6.  **CodeLens** : consente di trovare i riferimenti e le modifiche al codice, i bug collegati, gli elementi di lavoro, le revisioni del codice e gli unit test senza uscire dall'editor. Per altre informazioni, vedere [Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md).
 
@@ -158,9 +155,9 @@ L'output di compilazione, tra cui un messaggio di errore o di completamento, vie
 
  Il debugger stesso ha a disposizione più finestre che consentono di visualizzare e modificare le variabili locali, lo stack di chiamate e altri aspetti dell'ambiente di runtime. Le finestre sono disponibili nel menu **Debug** .
 
- La [finestra di controllo immediato](../ide/reference/immediate-window.md) consente di digitare un'espressione e visualizzare immediatamente il risultato.
+ La [Immediate Window](../ide/reference/immediate-window.md) consente di digitare un'espressione e visualizzare immediatamente il risultato.
 
- La finestra [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) registra ogni chiamata di metodo e altri eventi in un programma .NET in esecuzione e aiuta a individuare rapidamente la causa di un problema.
+ La finestra [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) registra ogni chiamata al metodo e altri eventi in un programma .NET in esecuzione e aiuta a individuare rapidamente la causa di un problema.
 
  Per altre informazioni, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
@@ -173,7 +170,7 @@ L'output di compilazione, tra cui un messaggio di errore o di completamento, vie
  Visual Studio include potenti strumenti per l'analisi statica e di runtime. Gli strumenti di analisi statica consentono di identificare potenziali errori di progettazione, globalizzazione, interoperabilità, prestazioni, sicurezza e altre categorie. Il test delle prestazioni, o profilatura, comporta la misurazione della modalità di esecuzione del programma. Per accedere a questi strumenti, usare il menu **Analizza** . Per altre informazioni, vedere [Miglioramento della qualità con gli strumenti di diagnostica di Visual Studio](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>Connessione ai database e ai servizi cloud
- Il [Esplora Server](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) finestra in Visual Studio Mostra le risorse in tutti gli account gestiti con l'account di personalizzazione (quello eseguire l'accesso), tra cui le istanze di SQL Server, Azure, Salesforce.com, Office 365, e siti Web.
+ La finestra [Esplora server](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) di Visual Studio include le risorse di tutti gli account gestiti con l'account di personalizzazione (l'account usato per la connessione), tra cui le istanze di SQL Server, Azure, Salesforce.com, Office 365 e i siti Web.
 
  ![Esplora server](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
@@ -190,9 +187,9 @@ L'output di compilazione, tra cui un messaggio di errore o di completamento, vie
  È possibile usare gli strumenti di architettura e modellazione di Visual Studio per progettare e modellare l'applicazione. Questi strumenti consentono di visualizzare la struttura, il comportamento e le relazioni del codice. È possibile creare modelli con diversi livelli di dettaglio in tutto il ciclo di vita dell'applicazione nel contesto del processo di sviluppo. È possibile tenere traccia di requisiti, attività, test case, bug e altre operazioni associate ai modelli collegando gli elementi del modello agli elementi di lavoro di Team Foundation Server e al piano di sviluppo. Per altre informazioni, vedere [Progettare e modellare l'applicazione](../modeling/analyze-and-model-your-architecture.md).
 
 ## <a name="extending-visual-studio-through-the-visual-studio-sdk"></a>Estensione di Visual Studio tramite Visual Studio SDK
- Visual Studio è una piattaforma estendibile. Un'estensione di Visual Studio è uno strumento personalizzato che si integra con l'IDE. È possibile aggiungere estensioni di terze parti o crearne di proprie. Per altre informazioni, vedere [lo sviluppo di estensioni di Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
+ Visual Studio è una piattaforma estendibile. Un'estensione di Visual Studio è uno strumento personalizzato che si integra con l'IDE. È possibile aggiungere estensioni di terze parti o crearne di proprie. Per altre informazioni, vedere [Sviluppo di estensioni di Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
 
- Le [Linee guida sull'esperienza utente di Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md) costituiscono un riferimento essenziale per chiunque scriva estensioni per Visual Studio. Queste linee guida specifiche della piattaforma includono informazioni sulla progettazione di finestre di dialogo, tipi di carattere, colori, icone, controlli comuni e altri modelli di interazione che consentono l’integrazione della nuova funzionalità con Visual Studio.
+ Le [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md) costituiscono un riferimento essenziale per chiunque scriva estensioni per Visual Studio. Queste linee guida specifiche della piattaforma includono informazioni sulla progettazione di finestre di dialogo, tipi di carattere, colori, icone, controlli comuni e altri modelli di interazione che consentono l’integrazione della nuova funzionalità con Visual Studio.
 
 ## <a name="in-this-guide"></a>In questa guida
 

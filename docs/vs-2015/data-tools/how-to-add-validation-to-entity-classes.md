@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: aggiungere la convalida a classi di entità | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f512a330a1253f0db9b0f7e75de5f0a6ca52658d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: faa6f205bfc4033ea4adb92f5d0d0a6718d4ac47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286403"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: aggiungere la convalida a classi di entità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: aggiungere la convalida a classi di entità](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-validation-to-entity-classes).  
-  
   
 *La convalida* le classi di entità è il processo di conferma che i valori immessi negli oggetti dati sono conformi con i vincoli nello schema di un oggetto, nonché alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.  
   

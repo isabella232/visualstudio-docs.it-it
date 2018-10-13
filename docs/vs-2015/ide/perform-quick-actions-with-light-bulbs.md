@@ -1,7 +1,7 @@
 ---
 title: Eseguire azioni rapide con le lampadine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd0c28f55be540207c7590e068c0b5f93a2abc39
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 338e8e82e8b8f904c6f7f1e9e5f079e3de788bd3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294567"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Eseguire azioni rapide con le lampadine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [documentazione di Visual Studio 2017](/visualstudio/).  
-  
 Le lampadine sono una nuova funzionalità per la produttività di Visual Studio 2015. Si tratta di icone visualizzate nell'editor di Visual Studio, su cui si può fare clic per eseguire azioni rapide, tra cui refactoring e correzione degli errori. Grazie alle lampadine è possibile accedere a informazioni e strumenti utili per la correzione degli errori e il refactoring, nella maggior parte dei casi direttamente sulla riga in cui si sta digitando.  
   
  ![Icona lampadina piccola](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")  

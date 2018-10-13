@@ -1,7 +1,7 @@
 ---
 title: Informazioni sui valori dei dati di strumentazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da7a4ddebb8504d4a6ac9b3d39a0ee4646f5d8f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298883"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Informazioni sui valori dei dati di strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [informazioni sui valori di dati di strumentazione](https://docs.microsoft.com/visualstudio/profiling/understanding-instrumentation-data-values).  
-  
 Il metodo di profilatura *Strumentazione* di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] registra informazioni dettagliate sugli intervalli per le chiamate di funzione, le righe e le istruzioni nell'applicazione sottoposta a profilatura.  
   
  **Requisiti**  

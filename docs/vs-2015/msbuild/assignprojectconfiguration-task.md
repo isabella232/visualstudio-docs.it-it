@@ -1,7 +1,7 @@
 ---
 title: Attività AssignProjectConfiguration | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c812b74735720d11c5fc4662faff056073dc778d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57e513dc8b5cb914fd26f23b63e1a7e7d4908b76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290511"
 ---
 # <a name="assignprojectconfiguration-task"></a>Attività AssignProjectConfiguration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [attività AssignProjectConfiguration](https://docs.microsoft.com/visualstudio/msbuild/assignprojectconfiguration-task).  
-  
   
 Questa attività accetta stringhe di configurazione elenco e le assegna ai progetti specificati.  
   

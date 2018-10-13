@@ -1,7 +1,7 @@
 ---
 title: Supporto per il progetto e le proprietà di configurazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cdae139ae64f5404da04a98ff1167c51d679af2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f506340e75b7d0d1001f00ff46592bc60efab77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294346"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Supporto per le proprietà di configurazione e del progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [supporto per la proprietà di configurazione e progetto](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-project-and-configuration-properties).  
-  
 Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE) può visualizzare le proprietà di configurazione e progetto. È possibile fornire una pagina delle proprietà per il proprio tipo di progetto in modo che l'utente può impostare le proprietà dell'applicazione.  
   
  Selezionando un nodo del progetto in **Esplora soluzioni** e quindi facendo clic su **delle proprietà** sul **progetto** menu, è possibile aprire una finestra di dialogo che include configurazione e progetto proprietà. Nelle [!INCLUDE[csprcs](../../includes/csprcs-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]e tipi derivati da questi linguaggi, questa finestra di dialogo viene visualizzata come una pagina a schede nel progetto di [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md). Per altre informazioni, vedere [non incluso nella Build: procedura dettagliata: esposizione di progetto e le proprietà di configurazione (c#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
