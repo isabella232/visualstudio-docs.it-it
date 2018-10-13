@@ -1,7 +1,7 @@
 ---
 title: Thunk | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cde6c7bb3ba519a039176bcb74be57f7d65146d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8da8b66a18b6f46bbd2989371f469cc49677be8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530839"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180284"
 ---
 # <a name="thunk"></a>Thunk
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Thunk](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/thunk).  
-  
 Ciascuna `thunk` è identificato da un `SymTagThunk` tag.  
   
 ## <a name="properties"></a>Proprietà  

@@ -1,7 +1,7 @@
 ---
 title: Elemento extern | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dce51835164424272874b42b6073131607c7272
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc1b406fa0675a481b538446f9c4bf0716475872
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171886"
 ---
 # <a name="extern-element"></a>Elemento Extern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elemento Extern](https://docs.microsoft.com/visualstudio/extensibility/extern-element).  
-  
 L'elemento Extern fa riferimento a qualsiasi file di intestazione esterno (con estensione h) di tipo merge con il file con estensione vsct in fase di compilazione. I file da unire devono trovarsi nel percorso di inclusione specificato per il compilatore VSCT oppure fa riferimento un' [elemento includono](../extensibility/include-element.md). I file potrebbero essere altri file con estensione vsct o file di intestazione C++.  
   
  Le definizioni nel file di intestazione devono essere nel formato "#define [simbolo] [valore]" il valore può essere un altro simbolo, se è definito in precedenza. Le definizioni possono essere utilizzate nelle istruzioni condizionali di elementi di comando. Qualsiasi simbolo non usato effettivamente verrà rimosse.  

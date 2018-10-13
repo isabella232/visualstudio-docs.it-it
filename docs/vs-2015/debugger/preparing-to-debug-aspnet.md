@@ -1,7 +1,7 @@
 ---
 title: Preparazione al Debug di ASP.NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d9f19e062f60f1f72ca1f7e3ee54aeb211e4b75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57031fa7529a7ef12c7ad8c2c61b41194bd18f74
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171497"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Preparazione al debug di ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Preparing to Debug ASP.NET](https://docs.microsoft.com/visualstudio/debugger/preparing-to-debug-aspnet).  
-  
 In questa sezione descrive come configurare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eseguire il debug di un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] o un'applicazione WCF.  
   
 ## <a name="in-this-section"></a>In questa sezione  

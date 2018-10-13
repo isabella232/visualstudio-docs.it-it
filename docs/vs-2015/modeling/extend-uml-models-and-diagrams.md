@@ -1,7 +1,7 @@
 ---
 title: Estendere modelli e diagrammi UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,17 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179127"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estendere modelli e diagrammi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [modelli e diagrammi UML estendere](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams).  
-  
-In questo argomento sono riepilogati i diversi modi in cui è possibile estendere gli strumenti di modellazione UML di Visual Studio. Per informazioni sulle versioni di Visual Studio supportano ogni tipo di modello e lo strumento, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+In questo argomento sono riepilogati i diversi modi in cui è possibile estendere gli strumenti di modellazione UML di Visual Studio. Per individuare le versioni di Visual Studio che supportano i singoli tipi di modello e strumenti, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
  Nello scenario di esempio seguente Fabrikam progetta e installa sistemi di gestione bagagli in aeroporto. I progetti di diversi aeroporti presentano molte analogie in termini di attrezzatura di base e software che la controlla. Vi sono però anche molti fattori che variano notevolmente, come la configurazione dei nastri trasportatori, i banchi del check-in, i contenitori di stoccaggio e altre apparecchiature per la gestione dei bagagli.  
   

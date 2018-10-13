@@ -1,7 +1,7 @@
 ---
 title: Modalità mista debug per i processi x64 è solo supportato quando si usa Microsoft.NET Framework 4 o versioni successive | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0297d9bcfb380261d2ad2e73853ded70285f1b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7735e1199e7871324fe22b0af33d2ff3230ca51
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175773"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [mista modalità debug per i processi x64 è solo supportato quando si usa Microsoft.NET Framework 4 o versione successiva](https://docs.microsoft.com/visualstudio/debugger/mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoft-dotnet-framework-4-or-greater).  
-  
 NET Framework versioni precedenti a 4 non forniscono supporto per il debug in modalità mista di x64 processi. Ciò significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.  
   
 ### <a name="workarounds"></a>Soluzioni  

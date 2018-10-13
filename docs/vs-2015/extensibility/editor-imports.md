@@ -1,7 +1,7 @@
 ---
 title: Importazioni dell'editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7017d4a99bbfd58a854ba1cd33230f11928024cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b7bb4ccf7c599b66d8e4e50c01270d5fede1f3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171879"
 ---
 # <a name="editor-imports"></a>Importazioni dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [importazioni dell'Editor](https://docs.microsoft.com/visualstudio/extensibility/editor-imports).  
-  
 È possibile importare un numero di servizi di editor, le factory e Broker che forniscono l'estensione con diversi tipi di accesso per l'editor principale. Ad esempio, è possibile importare il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> per fornire un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> per un determinato tipo di contenuto. (Questo strumento di spostamento consente che eseguire diversi tipi di ricerche in un buffer di testo).  
   
  Per usare l'importazione in un editor, importato come un campo o proprietà di una classe che consente di esportare una parte del componente Managed Extensibility Framework.  

@@ -1,7 +1,7 @@
 ---
 title: Visualizzare un modello UML nei diagrammi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5439394885ecdd3801b34bb224144bad16d4c2f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 412bddfa7a25f613a3a400905d13dff478b5a309
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517500"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173160"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Visualizzare un modello UML nei diagrammi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzare un modello UML nei diagrammi](https://docs.microsoft.com/visualstudio/modeling/display-a-uml-model-on-diagrams).  
-  
-Nel codice programma per un'estensione a Visual Studio, è possibile controllare come vengono visualizzati gli elementi modello nei diagrammi. Per le versioni di Visual Studio che supportano i modelli UML, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+Nel codice programma per un'estensione a Visual Studio, è possibile controllare come vengono visualizzati gli elementi modello nei diagrammi. Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  In questo argomento  
  -   [Per visualizzare un elemento in un diagramma](#Display)  

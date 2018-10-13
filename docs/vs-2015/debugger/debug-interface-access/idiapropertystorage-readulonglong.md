@@ -1,7 +1,7 @@
 ---
 title: IDiaPropertyStorage::ReadULONGLONG | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e3d0be1386df556ad24ef505ba253cb0e25c5e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb0554f3ec0a366b2cac7441d403df23fe4de981
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518836"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175448"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [IDiaPropertyStorage::ReadULONGLONG](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiapropertystorage-readulonglong).  
-  
 Legge `ULONGLONG` valori in un set di proprietà.  
   
 ## <a name="syntax"></a>Sintassi  

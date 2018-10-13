@@ -1,7 +1,7 @@
 ---
 title: Tasti di modifica dello strumento Penna in Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e393f6014d6541378f32a13b7bbb76618b6308b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fd240ffae322d21e37049b5ec0a862515b00f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531092"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172107"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Tasti di modifica strumento Penna in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Pen tasti di modifica strumento in Blend](https://docs.microsoft.com/visualstudio/designers/pen-tool-modifier-keys-in-blend).  
-  
 La tabella seguente elenca i tasti di scelta rapida che è possibile per modificare un tracciato mentre viene creato con lo strumento **Penna**![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). È possibile usare lo strumento **Penna** anche per aggiungere o rimuovere punti su un tracciato esistente oppure per congiungere due tracciati.  
   
 |Per|Eseguire questa operazione|Puntatore|  

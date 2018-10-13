@@ -1,7 +1,7 @@
 ---
 title: Creazione di un sistema di progetto di base, parte 1 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8735ed6760df7d9b4ad21c673bdda75cddb6f7d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da91c08e42604bdcf5d8f0471acdd7d74992a5e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173825"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Creazione di un sistema di progetto di base, parte 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di un sistema di progetto di base, parte 1](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-1).  
-  
 In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per organizzare file di codice sorgente e altre risorse. I progetti vengono visualizzati come figli di soluzioni nel **Esplora soluzioni**. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente e creare riferimenti a servizi Web, database e altre risorse.  
   
  I progetti sono definiti nel file di progetto, ad esempio un file con estensione csproj per un progetto Visual c#. È possibile creare un proprio tipo di progetto che ha il proprio estensione nome file di progetto. Per altre informazioni sui tipi di progetto, vedere [tipi di progetto](../extensibility/internals/project-types.md).  

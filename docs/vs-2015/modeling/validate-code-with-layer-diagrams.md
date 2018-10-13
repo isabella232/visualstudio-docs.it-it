@@ -1,7 +1,7 @@
 ---
 title: Convalidare il codice con diagrammi livello | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5430d436684be0bbf50004204da8bcd6a18d9bee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517678"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173719"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Convalidare il codice con diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [convalidare il codice con diagrammi delle dipendenze](https://docs.microsoft.com/visualstudio/modeling/validate-code-with-layer-diagrams).  
-  
 Per assicurarsi che il codice non sia in conflitto con la progettazione, è possibile convalidare il codice con diagrammi livello in Visual Studio. In questo modo è possibile effettuare le operazioni seguenti:  
   
 -   Trovare conflitti tra le dipendenze nel codice e le dipendenze nel diagramma livello.  
@@ -208,7 +206,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
   
 -   [Modificare una compilazione Legacy basata su upgradetemplate. Xaml](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
--   [Personalizzare il modello di processo di compilazione](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+-   [Personalizzare il modello del processo di compilazione](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 -   [Monitorare lo stato di una compilazione in esecuzione](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   

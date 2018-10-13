@@ -1,7 +1,7 @@
 ---
 title: Utilità CreatePkgDef | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec77937e18ab437107b0e9d269fb4b5c7c8e2381
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63334ba9d454407bb93a87bf89b12cb472184d58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181597"
 ---
 # <a name="createpkgdef-utility"></a>Utilità CreatePkgDef
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [utilità CreatePkgDef](https://docs.microsoft.com/visualstudio/extensibility/internals/createpkgdef-utility).  
-  
 Accetta un file con estensione dll per un'estensione di Visual Studio come parametro e crea un file con estensione pkgdef per accompagnare il file DLL. Il file con estensione pkgdef contiene tutte le informazioni che verrebbe scritto nel Registro di sistema in caso contrario, quando è installata l'estensione.  
   
 > [!NOTE]

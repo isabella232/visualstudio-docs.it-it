@@ -1,7 +1,7 @@
 ---
 title: Aggiornamento dell'interfaccia utente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77fa7407c6c271b66104ed6d835bc516a40c288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533173"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181041"
 ---
 # <a name="updating-the-user-interface"></a>Aggiornamento dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiornamento dell'interfaccia utente](https://docs.microsoft.com/visualstudio/extensibility/updating-the-user-interface).  
-  
 Dopo aver implementato un comando, è possibile aggiungere codice per aggiornare l'interfaccia utente con lo stato dei nuovi comandi.  
   
  In una tipica applicazione Win32, il set di comandi possa eseguire il polling in modo continuo e lo stato dei singoli comandi può essere modificato perché l'utente visualizza li. Tuttavia, poiché il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell può ospitare un numero illimitato di pacchetti VSPackage, polling complete potrebbe ridurre la velocità di risposta, in particolare il polling in assembly di interoperabilità tra codice gestito e COM.  

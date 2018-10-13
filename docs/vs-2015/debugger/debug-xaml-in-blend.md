@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di XAML in Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1fe1c312c747e25fc1b1e93a51e26d6e67c4a9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c2e135c788ce4fc632efa617323e7ac6fc1f3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179881"
 ---
 # <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [eseguire il Debug di XAML in Blend](https://docs.microsoft.com/visualstudio/debugger/debug-xaml-in-blend).  
-  
 Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../includes/blend-first-md.md)] per eseguire il debug del codice XAML nell'app. Quando si compila un progetto, eventuali errori vengono visualizzati nei **risultati** pannello. Fai doppio clic su un errore per trovare il markup correlato all'errore. Se è necessario più spazio per lavorare, è possibile nascondere il **risultati** pannello premendo F12.  
   
 ## <a name="syntax-errors"></a>Errori di sintassi  

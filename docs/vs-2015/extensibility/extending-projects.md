@@ -1,7 +1,7 @@
 ---
 title: Estensione di progetti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 007e92833d8bf0ee3b1ae81e2e13fed2b08e903c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d16cf3886fb8b60cf642a3b669b22ac07838a3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175162"
 ---
 # <a name="extending-projects"></a>Estensione dei progetti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [estensione di progetti](https://docs.microsoft.com/visualstudio/extensibility/extending-projects).  
-  
 Progetti e soluzioni sono i modi in cui che Visual Studio consente di organizzare i file di codice e risorse in unità di compilazione e distribuzione. È possibile trovare altre informazioni sui progetti in [progetti (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
  È possibile creare i tipi di progetto con Visual Studio SDK e il Framework di pacchetto gestito per progetti, che è possibile scaricare all'indirizzo [Framework di pacchetto gestito per progetti](http://mpfproj12.codeplex.com/). Per comprendere come vengono implementati i progetti personalizzati, vedere [nuova generazione progetto: Under the Hood, parte uno](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nuova generazione progetto: Under the Hood, seconda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  

@@ -1,7 +1,7 @@
 ---
 title: Leggere un modello UML nel codice del programma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f55126366fc80830edd92b16d64c51991c13e731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 014f7d7c76577cd9a749807eb994785d45f56e68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519572"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182487"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Leggere un modello UML nel codice programma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [leggere un modello UML nel codice programma](https://docs.microsoft.com/visualstudio/modeling/read-a-uml-model-in-program-code).  
-  
 È possibile caricare un modello UML e i relativi diagrammi usando l'API UML.  
   
 ##  <a name="Reading"></a> Lettura di un modello nel codice programma  

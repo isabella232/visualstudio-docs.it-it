@@ -1,7 +1,7 @@
 ---
 title: Modifica e continuazione errori e avvisi (c#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -66,12 +66,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 98ee36f703af67b3f6ede230203676a30acf19d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 277208c47a51b1320a29d7cac869b0e786b7b291
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175955"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Errori e avvisi di Modifica e continuazione (C#)
 È stata apportata una modifica a una sezione di codice che non è consentita in Modifica e continuazione di Visual c#.  
@@ -80,7 +80,7 @@ ms.locfileid: "47532929"
   
  Le modifiche al codice dichiarativo che hanno effetto sulla struttura pubblica di una classe in genere non sono consentite. Alcune modifiche che potrebbe essere necessario apportare al corpo di un metodo o una proprietà oppure a dichiarazioni private all'interno di una classe non sono consentite. Quando possibile, la funzionalità Modifica e continuazione contrassegna il codice che non è possibile modificare in grigio chiaro e visualizza un messaggio di errore.  
   
- Per altre informazioni sulle modifiche supportate in modifica e continuazione per [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], vedere [modifiche al codice supportate (c#)](../debugger/supported-code-changes-csharp.md). Se si desiderano maggiori informazioni su un errore o un avviso specifico, è possibile cercare o pubblicare un post nel [forum MSDN sull'IDE di Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693).  
+ Per altre informazioni sulle modifiche supportate in Modifica e continuazione per [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], vedere [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Se si desiderano maggiori informazioni su un errore o un avviso specifico, è possibile cercare o pubblicare un post nel [forum MSDN sull'IDE di Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693).  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   

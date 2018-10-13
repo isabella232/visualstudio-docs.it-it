@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Struttura | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6737d9fffa1f0f38fab57edd4031647d0cc1510e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d86dd811339122415a4511b7b7cf28f239be752
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529469"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181974"
 ---
 # <a name="walkthrough-outlining"></a>Procedura dettagliata: definizione della struttura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: struttura](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-outlining).  
-  
 È possibile implementare funzionalità basate sul linguaggio, ad esempio definendo i tipi di aree di testo che si desidera espandere o comprimere la struttura. È possibile definire le aree nel contesto di un servizio di linguaggio, è possibile definire il tipo di contenuto e l'estensione di nome file e applicare la definizione dell'area da solo a quel tipo o è possibile applicare le definizioni di area a un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata illustra come definire e visualizzare le aree della struttura.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -36,7 +34,7 @@ La versione più recente di questo argomento è reperibile in [procedura dettagl
   
 #### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF  
   
-1.  Creare un progetto VSIX. Denominare la soluzione `OutlineRegionTest`.  
+1.  Creare un progetto VSIX. Assegnare alla soluzione il nome `OutlineRegionTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -49,7 +47,7 @@ La versione più recente di questo argomento è reperibile in [procedura dettagl
   
 #### <a name="to-implement-an-outlining-tagger"></a>Per implementare un tagger della struttura  
   
-1.  Aggiungere un file di classe e denominarla `OutliningTagger`.  
+1.  Aggiungere un file di classe e assegnargli il nome `OutliningTagger`.  
   
 2.  Importare gli spazi dei nomi seguenti.  
   
