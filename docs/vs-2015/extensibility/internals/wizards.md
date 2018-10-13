@@ -1,7 +1,7 @@
 ---
 title: Procedure guidate | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1396837a0d9eee3b31a5e938a2305052d5cc2761
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2331c75b5e0d708d6a2d0fa1ab987cc869879cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224302"
 ---
 # <a name="wizards"></a>Procedure guidate
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedure guidate](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards).  
-  
 Dopo aver creato una procedura guidata, si desidera in genere deve essere aggiunto il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo (IDE) integrato in modo che altri utenti possano usarlo. La procedura guidata di aggiunta appare nel **Aggiungi nuovo progetto** oppure **Aggiungi nuovo elemento** finestre di dialogo. Per visualizzare il **Aggiungi nuovo progetto** oppure **Aggiungi nuovo elemento** finestra di dialogo finestre, fare doppio clic su una soluzione aperta in **Esplora soluzioni**, scegliere **Aggiungi**, e quindi fare clic su **nuovo progetto** oppure **nuovo elemento**.  
   
  Procedure guidate possono essere implementate in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per consentire agli utenti di selezionare una visualizzazione struttura ad albero dei valori disponibili quando i colleghi aprono il **Aggiungi nuovo progetto** nella finestra di dialogo o il **Aggiungi nuovo elemento** nella finestra di dialogo o quando sono fare doppio clic su un elemento in **Esplora soluzioni**.  
@@ -61,5 +59,5 @@ Dopo aver creato una procedura guidata, si desidera in genere deve essere aggiun
  Viene illustrato come creare una procedura guidata.  
   
  [Estensione dei progetti](../../extensibility/extending-projects.md)  
- Viene descritto come utilizzare [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] progetti e soluzioni per organizzare i file di codice e i file di risorse e come implementare il codice sorgente.
+ Descrive come usare i progetti e le soluzioni di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per organizzare file di codice e file di risorse e come implementare il controllo del codice sorgente.
 

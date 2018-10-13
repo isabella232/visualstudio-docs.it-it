@@ -1,7 +1,7 @@
 ---
 title: Get_types | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78be235d82e0bf9113bcfdcef0bf85575e5f5d35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 11fedc128fae389d07eff17fda8d292d0e336a3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529257"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204750"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Get_types](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-types).  
-  
 Recupera una matrice di tipi specifici del compilatore per questo simbolo.  
   
 ## <a name="syntax"></a>Sintassi  

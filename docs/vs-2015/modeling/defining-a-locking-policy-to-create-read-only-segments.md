@@ -1,7 +1,7 @@
 ---
 title: La definizione di un criterio di blocco per creare segmenti di sola lettura | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8af4722d76b9d68f4e880175bccdb1730b6e163b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231413"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [che definisce un criterio di blocco per creare segmenti di sola lettura](https://docs.microsoft.com/visualstudio/modeling/defining-a-locking-policy-to-create-read-only-segments).  
-  
 L'API di immutabilità del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK consente a un programma di blocco o parte di un modello di linguaggio specifico di dominio (DSL) in modo che è possibile leggere ma non modificato. Questa opzione di sola lettura, ad esempio, potrebbe essere usata in modo che un utente può chiedere i colleghi per aggiungere annotazioni e rivedere un modello DSL ma è possibile impedire loro di modificare l'originale.  
   
  Inoltre, l'autore di un linguaggio DSL, è possibile definire un *criteri blocco.* Un criterio di blocco definisce stabilisce quali blocchi sono consentite, non consentito o obbligatorio. Ad esempio, quando si pubblica un linguaggio DSL, è possibile incoraggiare gli sviluppatori di terze parti per estendere la soluzione con i nuovi comandi. Ma è anche possibile usare un criterio di blocco per impedire che modifica lo stato di sola lettura di parti specificate del modello.  

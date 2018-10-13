@@ -1,7 +1,7 @@
 ---
 title: Debug del codice gestito | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211588"
 ---
 # <a name="debugging-managed-code"></a>Debug del codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Debugging Managed Code](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code).  
-  
 In questa sezione vengono descritti alcuni problemi di debug comuni e vengono illustrate varie tecniche per le applicazioni gestite, ovvero scritte in linguaggi compatibili con Common Language Runtime, ad esempio Visual Basic, C# e C++. Le tecniche descritte sono di livello avanzato. Per altre informazioni, vedere [usando il Debugger](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>In questa sezione  
@@ -56,7 +54,7 @@ In questa sezione vengono descritti alcuni problemi di debug comuni e vengono il
  [Debug del metodo OnStart](../debugger/how-to-debug-the-onstart-method.md)  
  Vengono forniti codici di esempio per consentire il debug del metodo `OnStart` di un servizio Windows gestito. Per eseguire il debug del metodo `OnStart` di un servizio Windows, è necessario aggiungere alcune righe di codice per simulare il servizio.  
   
- [Debug in modalità mista](../debugger/debugging-mixed-mode-applications.md)  
+ [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
  Viene descritto il debug di applicazioni in modalità mista, ovvero qualsiasi applicazione nella quale vengono combinati codice nativo e codice gestito.  
   
  [Errore: impossibile eseguire il debug perché nel sistema è attivato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  

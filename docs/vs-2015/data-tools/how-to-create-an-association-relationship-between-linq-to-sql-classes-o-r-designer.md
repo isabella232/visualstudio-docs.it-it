@@ -1,7 +1,7 @@
 ---
 title: "Procedura: creare un'associazione (relazione) tra classi LINQ to SQL (O-R Designer) | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14b60094150467aeda7641d018e06db15e7bda03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c739fcf11cec7eb841b99e58b01ada32cfdfd49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209365"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Procedura: creare un'associazione (relazione) tra classi LINQ to SQL (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: creare un'associazione (relazione) tra classi LINQ to SQL (O-R Designer)](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer).  
-  
   
 Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] sono analoghe alle relazioni tra tabelle in un database. È possibile creare associazioni tra classi di entità usando il **Editor di associazione** nella finestra di dialogo.  
   

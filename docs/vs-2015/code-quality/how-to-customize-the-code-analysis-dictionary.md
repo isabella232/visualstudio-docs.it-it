@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: personalizzare il dizionario di analisi del codice | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a46631e9f69c89af0e1d283c484ad71023821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227916"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedura: Personalizzare il dizionario di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: personalizzare il dizionario di analisi codice](https://docs.microsoft.com/visualstudio/code-quality/how-to-customize-the-code-analysis-dictionary).  
-  
 Analisi del codice Usa un dizionario predefinito per verificare gli identificatori nel codice per gli errori di ortografia, grammaticale case e altre convenzioni di denominazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] linee guida. È possibile creare un file Xml del dizionario personalizzato per aggiungere, rimuovere o modificare i termini e abbreviazioni acronimi al dizionario predefinito.  
   
  Ad esempio, si supponga che il codice contiene una classe denominata **contraccolpo**. Analisi del codice identifica il nome come un insieme di due parole: **sportello** e **colpo**. Verrà generato un avviso che **colpo** non sia stato digitato correttamente. Per forzare l'analisi del codice per riconoscere il controllo ortografico, è possibile aggiungere il termine **colpo** al dizionario personalizzato.  

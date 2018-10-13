@@ -1,7 +1,7 @@
 ---
 title: 'CA1024: Utilizzare proprietà dove appropriato | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 952bb3c63e9d8ce645b9e986f44aaed50cb0afa4
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: fd859492faeb5af7a74d0261ff8d86333ff5ade8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47590073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222729"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Utilizzare proprietà dove appropriato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [CA1024: utilizzare proprietà dove appropriato](https://docs.microsoft.com/visualstudio/code-quality/ca1024-use-properties-where-appropriate).
-
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|

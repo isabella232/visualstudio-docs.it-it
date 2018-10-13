@@ -1,7 +1,7 @@
 ---
 title: Configurazione per la compilazione del progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799330ffa4fbedc5d1fee1ff4cb2f0dfdb3049f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcac8acced823f294c4e6dd33302e3eea30b0439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221117"
 ---
 # <a name="project-configuration-for-building"></a>Configurazione del progetto per la compilazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [configurazione del progetto per la compilazione](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-building).  
-  
 L'elenco delle configurazioni di soluzione per una determinata soluzione viene gestito dalla finestra di dialogo configurazioni di soluzione.  
   
  Un utente può creare altre configurazioni di soluzione, ognuno con un nome univoco. Se l'utente crea una nuova configurazione di soluzione, l'IDE per impostazione predefinita al nome di configurazione corrispondente in progetti o di Debug se non esiste alcun nome corrispondente. L'utente può modificare la selezione per soddisfare requisiti specifici, se necessario. L'unica eccezione a questo comportamento è quando il progetto supporta una configurazione che corrisponde al nome della nuova configurazione di soluzione. Si supponga, ad esempio, che una soluzione contiene Project1 e Project2. Project1 dispone di configurazioni di progetto MyConfig1 Debug e delle vendite al dettaglio. Project2 dispone di configurazioni di progetto MyConfig2 Debug e delle vendite al dettaglio.  

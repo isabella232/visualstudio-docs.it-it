@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Scrittura di un visualizzatore in c# | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 871856c38b40d38892b6236fa02b63f47b62d112
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd8c12e415b37f04635327d195ef0f96649a2894
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199186"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: scrittura di un visualizzatore in c#](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp).  
-  
 Questa procedura dettagliata illustra come scrivere un visualizzatore semplice usando c#. Il visualizzatore che verrà creato in questa procedura dettagliata consente di visualizzare il contenuto di una stringa usando una finestra di messaggio Windows Form. Questo visualizzatore semplice di stringhe non è particolarmente utile di per sé, ma mostra i passaggi di base che è necessario seguire per creare più utili visualizzatori per altri tipi di dati.  
   
 > [!NOTE]

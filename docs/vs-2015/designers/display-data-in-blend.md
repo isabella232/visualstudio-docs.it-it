@@ -1,7 +1,7 @@
 ---
 title: Visualizzare dati in Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dda286da7f3471932d0ae583f2da29d1bf7a5205
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96784fbd5fa4934246a58aa76e4938ceea1bc826
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532041"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231270"
 ---
 # <a name="display-data-in-blend"></a>Visualizzare dati in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzare i dati in Blend](https://docs.microsoft.com/visualstudio/designers/display-data-in-blend).  
-  
 È possibile visualizzare dati di esempio nella finestra di progettazione durante la personalizzazione del layout delle pagine. È possibile generare dati di esempio da zero o usando una classe esistente. È inoltre possibile connettersi a *dati dinamici* che verranno visualizzati nell'app durante l'esecuzione.  
   
  **Contenuto dell'argomento:**  

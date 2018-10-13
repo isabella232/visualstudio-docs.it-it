@@ -1,7 +1,7 @@
 ---
 title: Modellare i requisiti dell'utente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e7628db84a8f7515dfdf3ba9110ce1183751d8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215826"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [modellare i requisiti utente](https://docs.microsoft.com/visualstudio/modeling/model-user-requirements).  
-  
 Visual Studio facilita la comprensione, la discussione e la comunicazione delle esigenze degli utenti mediante la creazione di diagrammi delle attività e del ruolo che il sistema svolge per il raggiungimento degli obiettivi. Un modello di requisiti è un set di tali diagrammi, ognuno dei quali è incentrato su un aspetto diverso delle esigenze degli utenti. Per una dimostrazione video, vedere: [Modellazione del dominio aziendale](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Per vedere quali versioni di Visual Studio supportano ogni tipo di modello, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -143,7 +141,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 |Elementi in un diagramma classi concettuali|[Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)|  
 |Come sviluppare codice dalle classi concettuali|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
- In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali. Quanto segue [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione per rendere le frecce sono non direzionali il valore predefinito: [esempio: funzionalità modellazione di domini UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali. Nell'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seguente le frecce sono non direzionali per impostazione predefinita: [Esempio: funzionalità di modellazione di un dominio UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.  

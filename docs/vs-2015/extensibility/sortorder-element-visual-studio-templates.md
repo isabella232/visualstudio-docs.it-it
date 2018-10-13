@@ -1,7 +1,7 @@
 ---
 title: Elemento SortOrder (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4619d151e66d288907dea97894a1ae133be8708b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7932edc042f4c90073cadb50fc48c0f32c394236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224718"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>Elemento SortOrder (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elemento SortOrder (modelli di Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/sortorder-element-visual-studio-templates).  
-  
 Specifica un valore che viene usato per disporre il modello, tra gli altri modelli della stessa categoria, così come appare in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
  \<VSTemplate >  

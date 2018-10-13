@@ -1,7 +1,7 @@
 ---
 title: Compilatore dei colori VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08358c8d4b77834bf0dfefe626891de44b2b754c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3594d587f9d4968127b6e81a5c5e3b5549a9df89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207324"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [compilatore dei colori VSIX](https://docs.microsoft.com/visualstudio/extensibility/internals/vsix-color-compiler).  
-  
 Lo strumento compilatore di Visual Studio estensione colore è un'applicazione console che accetta un file con estensione XML che rappresenta i colori per i temi di Visual Studio esistenti e vengono convertiti in un pkgdef file in modo che questi colori possono essere usati in Visual Studio. Poiché è facile confrontare le differenze tra file con estensione XML, questo strumento è utile per la gestione dei colori personalizzati nel controllo del codice sorgente. Anche possibile eseguire l'hook al ambienti di compilazione in modo che l'output della compilazione è un file. pkgdef valido.  
   
  **Schema XML del tema**  

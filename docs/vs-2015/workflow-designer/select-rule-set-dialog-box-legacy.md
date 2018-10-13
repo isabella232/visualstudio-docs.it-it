@@ -1,7 +1,7 @@
 ---
 title: Selezionare una finestra di dialogo Set di regole (Legacy) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 170a7467be4f1fb3bfdc3f3696c654717131a3d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c53aefdf17e11974e5ef563cd3684e80722837c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195988"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Finestra di dialogo Seleziona set di regole (legacy)
 Questo argomento viene descritto come usare il **seleziona Set di regole** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

@@ -1,7 +1,7 @@
 ---
 title: Attività Vbc | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0457456651e233c44e5e8e5ae44e30013e0de0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184249"
 ---
 # <a name="vbc-task"></a>Attività Vbc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [attività Vbc](https://docs.microsoft.com/visualstudio/msbuild/vbc-task).  
-  
   
 Esegue il wrapping di vbc.exe, un compilatore che genera file eseguibili con estensione exe, librerie a collegamento dinamico con estensione dll o moduli di codice con estensione netmodule. Per altre informazioni su vbc.exe, vedere [Visual Basic Command-Line Compiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c) (Compilatore della riga di comando di Visual Basic).  
   

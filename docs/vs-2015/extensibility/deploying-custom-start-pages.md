@@ -1,7 +1,7 @@
 ---
 title: Distribuzione di pagine iniziali personalizzate | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a7c4ec55263212ef7c44c7e5b6093ef4a3e9adb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99520828ff4a6ac44ca4512b2104cb3019a9785a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235378"
 ---
 # <a name="deploying-custom-start-pages"></a>Distribuzione di pagine iniziali personalizzate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Deploying Custom Start Pages](https://docs.microsoft.com/visualstudio/extensibility/deploying-custom-start-pages).  
-  
 È possibile distribuire le pagine iniziali personalizzate tramite distribuzione VSIX oppure copiando i file nelle posizioni corrette nel computer di destinazione.  
   
 ## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>Distribuzione VSIX usando il modello di progetto di pagina iniziale  

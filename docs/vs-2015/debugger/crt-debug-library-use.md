@@ -1,7 +1,7 @@
 ---
 title: Uso della libreria CRT di Debug | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87b0923153d5e4d0a3c5e4eb33a97e31fd3b2802
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd9eb706627600b9c32b4cda7c020174777d1a2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527959"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199517"
 ---
 # <a name="crt-debug-library-use"></a>Utilizzo della libreria di debug CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [uso della libreria di Debug CRT](https://docs.microsoft.com/visualstudio/debugger/crt-debug-library-use).  
-  
 La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Per usare una delle librerie di debug CRT, è necessario collegarlo con [/debug](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) e la compilazione con **/MDd**, **/MTd**, oppure **/LDd**.  
   
 ## <a name="remarks"></a>Note  

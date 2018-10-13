@@ -1,7 +1,7 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8b193eae0e41f48c0f947bbf8af596084a1544f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b085401b905011fcf62f5ef94cc214af1d978f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224549"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [POPLISTFUNC](https://docs.microsoft.com/visualstudio/extensibility/poplistfunc).  
-  
 Questo callback viene fornito per il [SccPopulateList](../extensibility/sccpopulatelist-function.md) dall'IDE e viene usato per il plug-in del controllo del codice sorgente per aggiornare un elenco di file o directory (anche fornito al `SccPopulateList` (funzione)).  
   
  Quando un utente sceglie il **ottenere** comando nell'IDE, l'IDE visualizza una casella di riepilogo di tutti i file che l'utente può ottenere. Sfortunatamente, l'IDE non conosce l'elenco esatto di tutti i file che è possibile che venga visualizzato all'utente; solo il plug-in dispone di questo elenco. Se altri utenti aggiunti file al progetto di controllo del codice sorgente, questi file dovrebbero essere visualizzati nell'elenco, ma l'IDE non saperlo. L'IDE compila un elenco dei file che ritiene che l'utente può ottenere. Prima di visualizzare l'elenco all'utente, chiama il [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` offrendo il plug-in del controllo del codice sorgente possibilità di aggiungere ed eliminare i file dall'elenco.  

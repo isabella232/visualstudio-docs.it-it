@@ -1,7 +1,7 @@
 ---
 title: Indirizzamento Problemi2 DPI | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cb14cf601633efa6bbb022d8d1a56e62cc0f9b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9d86204eb79eb0dd20db45d4ffe5c1f80c2e9dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194066"
 ---
 # <a name="addressing-dpi-issues"></a>Risoluzione dei problemi relativi a DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [indirizzamento Problemi2 DPI](https://docs.microsoft.com/visualstudio/extensibility/addressing-dpi-issues2).  
-  
 Un numero crescente di dispositivi è distribuiti con "schermi". Queste schermate hanno in genere più di 200 pixel per pollice (PPID). Per lavorare con un'applicazione in tali computer sarà necessario il contenuto per la scalabilità verticale per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire dal 2014, la destinazione principale per schermi ad alta densità è mobile computing dispositivi (Tablet, computer portatili conchiglia e telefoni).  
   
  Windows 8.1 e versioni successive sono disponibili molte funzionalità per abilitare questi computer lavorare con gli ambienti in cui la macchina è collegata a entrambi ad alta densità e densità standard consente di visualizzare contemporaneamente e consente di visualizzare.  

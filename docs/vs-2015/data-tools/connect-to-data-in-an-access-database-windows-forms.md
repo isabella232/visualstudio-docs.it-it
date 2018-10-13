@@ -1,7 +1,7 @@
 ---
 title: Connettersi ai dati in un database di Access (Windows Form) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ddab545909730a4fe7f94adf59c6cee74c86409
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4741dedb907bb88513147a98b916831abd965576
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207350"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Connettersi ai dati in un database di Access (Windows Form)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [connettersi ai dati in un database di Access (Windows Form)](https://docs.microsoft.com/visualstudio/data-tools/connect-to-data-in-an-access-database-windows-forms).  
-  
   
 È possibile connettersi a un database di Access (un file con estensione mdf o un file con estensione accdb) tramite Visual Studio. Dopo aver definito la connessione, i dati vengono visualizzati nei **Zdroje dat** finestra. da cui è possibile trascinare tabelle o visualizzazioni nei form. Se si desidera comprendere il modo in cui il sistema del progetto in Visual Studio gestisce questi file di database locali, vedere [procedura: gestire i file di dati locale in un progetto](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
   

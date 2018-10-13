@@ -1,7 +1,7 @@
 ---
 title: Selezionare una finestra di dialogo tipo di codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87949e312607fd3461e370481aed344c392a02ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e25ff3a0c21288744306455735324d4d72547cb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200902"
 ---
 # <a name="select-code-type-dialog-box"></a>Finestra di dialogo Seleziona tipo di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [dialogo Seleziona tipo di codice](https://docs.microsoft.com/visualstudio/debugger/select-code-type-dialog-box).  
-  
 Per aprire questa finestra di dialogo, aprire il **Connetti a processo** finestra di dialogo e quindi scegliere il **selezionare** pulsante.  
   
  **Determina automaticamente il tipo di codice per eseguire il debug**  

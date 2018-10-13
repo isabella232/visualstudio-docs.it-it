@@ -1,7 +1,7 @@
 ---
 title: Definire un comando di menu in un diagramma di modellazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,22 +14,20 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1a93ab331771db3303ffcbcb7c067c4c325e6a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193154"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definire un comando di menu in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [definire un comando di menu in un diagramma di modellazione](https://docs.microsoft.com/visualstudio/modeling/define-a-menu-command-on-a-modeling-diagram).  
-  
 In Visual Studio è possibile definire altre voci di menu nei menu di scelta rapida di un diagramma UML. È possibile controllare se il comando di menu viene visualizzato ed è abilitato nel menu di scelta rapida di tutti gli elementi del diagramma ed è possibile scrivere codice che viene eseguito quando l'utente sceglie la voce di menu. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.  
   
 ## <a name="requirements"></a>Requisiti  
- Visualizzare [requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -221,17 +219,17 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
 1.  Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.  
   
-     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Risoluzione dei problemi**: se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non avviato:  
+     **Risoluzione dei problemi**: se non viene avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
   
     -   Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
-    -   In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel **Avvia programma esterno** campo sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
+    -   In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione. Usare un diagramma appartenente a uno dei tipi elencati negli attributi della classe del comando di menu.  
+2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione. Usare un diagramma appartenente a uno dei tipi elencati negli attributi della classe del comando di menu.  
   
 3.  Aprire il menu di scelta rapida in qualsiasi punto del diagramma. Il comando dovrebbe essere visualizzato nel menu.  
   
@@ -246,7 +244,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
     -   Il tipo di diagramma del modello in uso (classe UML, sequenza e così via) sia elencato come uno degli attributi della classe del comando di menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` e così via.  
   
 ##  <a name="Installing"></a> Installazione e disinstallazione di un'estensione  
- È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri computer.  
+ È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.  
   
 #### <a name="to-install-an-extension"></a>Per installare un'estensione  
   
@@ -258,7 +256,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
 2.  Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.  
   
-     Nel computer di destinazione deve essere una delle edizioni di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] indicata nel **vsixmanifest**.  
+     Nel computer di destinazione deve essere installata una delle edizioni di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] specificate in **source.extension.vsixmanifest**.  
   
 3.  Nel computer di destinazione aprire il file **.vsix** , ad esempio facendovi doppio clic.  
   
@@ -279,7 +277,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
  *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [versione]**  
   
 ##  <a name="MenuExample"></a> Esempio  
- L'esempio seguente mostra il codice per un comando di menu che scambierà i nomi di due elementi in un diagramma classi. Questo codice deve essere compilato in un progetto di estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e installato come indicato nelle precedenti sezioni.  
+ L'esempio seguente mostra il codice per un comando di menu che scambierà i nomi di due elementi in un diagramma classi. Questo codice deve essere compilato in un progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension e installato come indicato nelle precedenti sezioni.  
   
 ```  
 using System.Collections.Generic; // for IEnumerable  

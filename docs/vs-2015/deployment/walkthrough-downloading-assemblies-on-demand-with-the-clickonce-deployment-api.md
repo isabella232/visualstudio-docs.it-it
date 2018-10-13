@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Download di assembly su richiesta con l'API della distribuzione ClickOnce | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8b5779ee2c1cd57d08627038ab7b65cc760afb5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e1f9e1a2115e61e46e0050c1e6504e73c0180fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199134"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: download di assembly su richiesta con l'API della distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: download di assembly su richiesta con l'API della distribuzione ClickOnce](https://docs.microsoft.com/visualstudio/deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api).  
-  
 Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione vengono scaricati alla prima esecuzione dell'applicazione. Tuttavia, è possibile parti dell'applicazione usati da un set ridotto di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura riportata di seguito viene illustrato come contrassegnare determinati assembly nell'applicazione come "facoltativi" e come scaricarli tramite le classi di <xref:System.Deployment.Application> dello spazio dei nomi quando richiesti da common language runtime (CLR).  
   
 > [!NOTE]

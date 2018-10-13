@@ -1,7 +1,7 @@
 ---
 title: Set di regole estese di progettazione le linee guida per il codice gestito | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb9b8544d2d4f902bf5bd64afc937f505990b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b486156a2b2fb9161b20441cfb8e62c2a9b4bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207818"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [set di regole regole estese delle linee guida per la progettazione per codice gestito](https://docs.microsoft.com/visualstudio/code-quality/extended-design-guidelines-rules-rule-set-for-managed-code).  
-  
 Il set di regole delle linee guida di progettazione estesa Microsoft consente di espandere le regole di progettazione di base delle linee guida per ottimizzare i problemi di usabilità e facilità di gestione che vengono segnalati. Extra attenzione è rivolta alle linee guida sulla denominazione. È consigliabile includere questa regola impostata se il progetto contiene codice di libreria o se si desidera applicare gli standard ottimali per la scrittura di codice che è facile da gestire.  
   
  Le regole delle linee guida di progettazione estesa includono tutte le regole Microsoft base delle linee guida di progettazione del disegno. Le regole base delle linee guida di progettazione includono tutte le regole Microsoft minime. Per altre informazioni, vedere [set di regole regole base delle linee guida di progettazione per codice gestito](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) e [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

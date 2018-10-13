@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: aggiornare i progetti Visual C++ a Visual Studio 2015 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8fcc3e835e2a8cb6613dc78e67383f534f97f7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8673d2d1648acad973ebfa339e0334a5c1fd769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188571"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedura: Aggiornare i progetti Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Quando si apre per la prima volta un progetto Visual C++ creato in una versione 
   
 -   Il progetto viene modificato in modo da usare il compilatore e le librerie di [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] (PlatformToolset = VisualStudio v140).  
   
--   Per [!INCLUDE[cppcli](../includes/cppcli-md.md)] progetti, la versione di TargetFrameworkVersion viene modificato in .NET Framework 4.5.2.  
+-   Per i progetti [!INCLUDE[cppcli](../includes/cppcli-md.md)] TargetFrameworkVersion viene impostato su .NET Framework 4.5.2.  
   
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Continuare a usare un set di strumenti della piattaforma personalizzato  
  Se si desidera continuare a usare un set di strumenti della piattaforma personalizzato in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], il set di strumenti deve trovarsi in %Programmi%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x86 o in %Programmi (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x64. Per informazioni su come creare un set di strumenti della piattaforma personalizzato, vedere il post relativo al [multitargeting nativo per C++](http://go.microsoft.com/fwlink/?LinkId=248587) nel blog del team di Visual C++.  

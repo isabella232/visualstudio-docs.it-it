@@ -1,7 +1,7 @@
 ---
 title: Impostazioni sincronizzate in Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e0facac569671c880004d1fc1a7aa29487e7926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29e962192644d605f83504fb14df10398e1237ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228397"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Impostazioni sincronizzate in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [sincronizzare le impostazioni in Visual Studio](https://docs.microsoft.com/visualstudio/ide/synchronized-settings-in-visual-studio).  
-  
 Per impostazione predefinita, quando si usa lo stesso account di personalizzazione per accedere a Visual Studio Online da più computer, le impostazioni vengono sincronizzate su tutti i computer.  
   
 ## <a name="synchronized-settings"></a>Impostazioni sincronizzate  

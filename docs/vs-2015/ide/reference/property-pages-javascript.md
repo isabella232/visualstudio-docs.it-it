@@ -1,7 +1,7 @@
 ---
 title: Pagine delle proprietà, JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1491c904be7cf44d739add233a05ba5f01b5df1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3753c11851c1ab4f5e9e32df55c37f0b22d2f3bc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206830"
 ---
 # <a name="property-pages-javascript"></a>Pagine proprietà, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [pagine delle proprietà, JavaScript](https://docs.microsoft.com/visualstudio/ide/reference/property-pages-javascript).  
-  
   
 L'opzione **Pagine delle proprietà** consente di accedere alle impostazioni del progetto. È possibile usare le pagine visualizzate in **Pagine delle proprietà** per modificare le proprietà del progetto.  
   

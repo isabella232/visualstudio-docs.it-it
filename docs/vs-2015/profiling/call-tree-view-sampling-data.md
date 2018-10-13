@@ -1,7 +1,7 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di campionamento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7f7f4f435b0b00fb68395d0c00670d7f89c9cb2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e8e04ff22333731e49e8d28f355de513fa57675
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528943"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195685"
 ---
 # <a name="call-tree-view---sampling-data"></a>Visualizzazione Albero delle chiamate: dati di campionamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione albero delle chiamate: dati di campionamento](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-sampling-data).  
-  
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata.  
   
 > [!NOTE]
@@ -67,7 +65,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
  [Visualizzazione Albero delle chiamate: dati di campionamento del profiler](../profiling/call-tree-view-sampling-data.md)   
  [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
 
 
 

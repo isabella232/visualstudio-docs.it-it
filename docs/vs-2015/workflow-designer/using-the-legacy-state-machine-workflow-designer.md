@@ -1,7 +1,7 @@
 ---
 title: Utilizzo di progettazione del flusso di lavoro computer stati (Legacy) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: aafe537adf0a48ea38cdeb84a3461fef30cb13e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231686"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilizzo della finestra di progettazione flusso di lavoro di una macchina a stati (legacy)
 Quando si crea un progetto del flusso di lavoro macchina a stati nuovo in [!INCLUDE[vs2010](../includes/vs2010-md.md)] che viene destinato al [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o il [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], è possibile scegliere di usare i **applicazione Console flusso di lavoro macchina a stati** o il  **Stato della libreria del flusso di lavoro di Machine** modello di progetto legacy. Se si sceglie uno di questi modelli di progetto della macchina a stati, la finestra di progettazione della macchina a stati viene presentata come interfaccia utente della finestra di progettazione del flusso di lavoro legacy. Per informazioni sui modelli progetto macchina a stati legacy, vedere [procedura: creare lo stato del flusso di lavoro applicazioni Console macchina (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [procedura: creare una libreria del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

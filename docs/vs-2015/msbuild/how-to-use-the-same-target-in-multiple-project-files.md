@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Usare la stessa destinazione in più file di progetto | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ece9041d03ee8a17a4f97f8aad3971e1181edf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b886c4865d715c4fee4e9385288f2e4eb15baa5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223340"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: utilizzare la stessa destinazione in più file di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: usare la stessa destinazione in più file di progetto](https://docs.microsoft.com/visualstudio/msbuild/how-to-use-the-same-target-in-multiple-project-files).  
-  
   
 Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], è possibile che sia stato necessario usare le stesse attività e destinazioni in file di progetto diversi. Anziché includere in ogni file di progetto la descrizione completa di tali attività o destinazioni, è possibile salvare una destinazione in un file di progetto separato e importarlo in qualsiasi altro progetto in cui si intende usare la destinazione.  
   

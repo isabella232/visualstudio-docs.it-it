@@ -1,7 +1,7 @@
 ---
 title: Eseguire l'associazione a un'attività&#39;finestra di dialogo Proprietà (Legacy) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6beb1585a4a760f2e1c38a1fdc929d8b581bb9ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbc9c36bec7c01e7a7e771e7f7145da40b84b177
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528204"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211016"
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Eseguire l'associazione a un'attività&#39;finestra di dialogo Proprietà (Legacy)
 Questo argomento viene descritto come usare il **associare alla proprietà dell'attività** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

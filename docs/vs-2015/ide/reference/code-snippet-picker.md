@@ -1,7 +1,7 @@
 ---
 title: Selezione frammento di codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6ebcdd673f577845378df72fdcacbce37f64f0b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531747"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213323"
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [selezione frammento di codice](https://docs.microsoft.com/visualstudio/ide/reference/code-snippet-picker).  
-  
   
 L'editor del codice di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] include la **Selezione frammento di codice** che consente, in pochi clic del mouse, di inserire blocchi di codice pronti nel documento attivo.  
   

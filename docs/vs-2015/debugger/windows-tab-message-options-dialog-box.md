@@ -1,7 +1,7 @@
 ---
 title: Scheda di Windows, finestra di dialogo Opzioni messaggio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474afed35351bc62276a82fc7e4ffe5e5a6f9164
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 307ebbe46cf74ce03bbf546273c6bfcd760d0956
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189813"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Scheda Finestre, finestra di dialogo Opzioni messaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [della scheda di Windows, finestra di dialogo Opzioni messaggio](https://docs.microsoft.com/visualstudio/debugger/windows-tab-message-options-dialog-box).  
-  
 Usare la **Windows** per impostare l'ambito dei messaggi elencati nella scheda [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **i messaggi di Log** dal **Spy** menu.  
   
  Le impostazioni seguenti sono disponibili sul **Windows** scheda:  

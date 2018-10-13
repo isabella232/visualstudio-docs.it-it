@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: accedere e vincolare la selezione corrente | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 308187842eeaed8e216336ab84c6e9036c1ced70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531829"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187577"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Procedura: accedere e vincolare la selezione corrente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: accedere e vincolare la selezione corrente](https://docs.microsoft.com/visualstudio/modeling/how-to-access-and-constrain-the-current-selection).  
-  
 Quando si scrive un gestore comandi o movimenti per il linguaggio specifico di dominio, è possibile determinare l'elemento che l'utente selezionata. È possibile anche impedire alcune forme o i campi selezionati. Ad esempio, è possibile disporre che, quando l'utente fa clic su un elemento decorator di icona, viene selezionata invece la forma che lo contiene. Vincolare la selezione in questo modo riduce il numero dei gestori che è necessario scrivere. Inoltre rende più semplice per l'utente, che è possibile fare clic su un punto qualsiasi nella forma senza la necessità di evitare l'elemento decorator.  
   
 ## <a name="accessing-the-current-selection-from-a-command-handler"></a>Accesso alla selezione corrente da un gestore comando  
@@ -43,10 +41,10 @@ Quando si scrive un gestore comandi o movimenti per il linguaggio specifico di d
     |Metodo <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Restituisce `true` se il diagramma è selezionato nella finestra di progettazione del modello; in caso contrario, `false`.|  
     |Metodo <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>|Restituisce `true` se esattamente un elemento è selezionato nella finestra di progettazione del modello; in caso contrario, `false`.|  
     |Metodo <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Restituisce `true` se esattamente un elemento è selezionato nella finestra attiva; in caso contrario, `false`.|  
-    |Proprietà <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Ottiene una raccolta di sola lettura degli elementi selezionati in Progettazione modelli.|  
-    |Proprietà <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Ottiene una raccolta di sola lettura degli elementi selezionati nella finestra attiva.|  
-    |Proprietà <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Ottiene l'elemento principale della selezione in Progettazione modelli.|  
-    |Proprietà <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Ottiene l'elemento principale della selezione nella finestra attiva.|  
+    |Proprietà<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> |Ottiene una raccolta di sola lettura degli elementi selezionati in Progettazione modelli.|  
+    |Proprietà<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> |Ottiene una raccolta di sola lettura degli elementi selezionati nella finestra attiva.|  
+    |Proprietà<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> |Ottiene l'elemento principale della selezione in Progettazione modelli.|  
+    |Proprietà<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> |Ottiene l'elemento principale della selezione nella finestra attiva.|  
   
 2.  Il <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> proprietà del <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> classe fornisce l'accesso per il <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> oggetto che rappresenta la finestra di progettazione modelli e fornisce accesso aggiuntivo gli elementi selezionati in Progettazione modelli.  
   

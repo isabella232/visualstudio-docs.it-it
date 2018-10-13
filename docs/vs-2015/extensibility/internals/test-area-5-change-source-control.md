@@ -1,7 +1,7 @@
 ---
 title: 'Area di test 5: Modifica controllo del codice sorgente | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5aab46b6a87f6178219075ac64951be3b76fd7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528399"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229255"
 ---
 # <a name="test-area-5-change-source-control"></a>Area di test 5: Modificare il controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Area di Test 5: Modifica controllo del codice sorgente](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-5-change-source-control).  
-  
 Quest'area del plug-in test di controllo del codice sorgente illustra la modifica il controllo del codice sorgente tramite il **Modifica controllo del codice sorgente** comando.  
   
  **Modifica controllo del codice sorgente** comando fornisce quattro funzioni di base per l'utente:  

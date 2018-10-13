@@ -1,7 +1,7 @@
 ---
 title: All'interno di Visual Studio SDK | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf54468618e12abdd29921677687201f9840a70c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d22e5c1384e4b24bd3b05cb868a40cede19ba1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214708"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>All'interno di Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [all'interno di Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/inside-the-visual-studio-sdk).  
-  
 In questa sezione fornisce informazioni approfondite sulle estensioni di Visual Studio, tra cui architettura di Visual Studio, componenti, servizi, schemi, utilità e simili.  
   
 ## <a name="extensibility-architecture"></a>Architettura di estendibilità  
@@ -38,7 +36,7 @@ In questa sezione fornisce informazioni approfondite sulle estensioni di Visual 
 Generalizzato vista dell'architettura di Visual Studio  
   
 ## <a name="vspackages"></a>VSPackages  
- I VSPackage sono moduli software che compongono ed estendono Visual Studio con elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione. I VSPackage rappresentano l'unità centrale dell'architettura di Visual Studio. Per altre informazioni, vedere [VSPackage](../../extensibility/internals/vspackages.md).  
+ I VSPackage sono moduli software che compongono ed estendono Visual Studio con elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione. I VSPackage rappresentano l'unità centrale dell'architettura di Visual Studio. Per altre informazioni, vedere [VSPackages](../../extensibility/internals/vspackages.md).  
   
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  La shell di Visual Studio fornisce funzionalità di base e supportare la comunicazione incrociata tra il componente VSPackage ed estensioni MEF. Per altre informazioni, vedere [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).  

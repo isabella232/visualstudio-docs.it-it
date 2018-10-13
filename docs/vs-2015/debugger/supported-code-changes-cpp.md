@@ -1,7 +1,7 @@
 ---
 title: Modifiche supportate al codice (C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e56918753d93cfd70a3d9a7458f36a72bbabaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225355"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [modifiche di codice supportato (C++)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-cpp).  
-  
 L'opzione Modifica e continuazione per Visual C++ gestisce la gran parte dei tipi di modifica al codice. Alcune modifiche non possono tuttavia essere applicate durante l'esecuzione del programma. Per applicare tali modifiche, è necessario arrestare l'esecuzione e compilare una versione aggiornata del codice.  
   
  Vedere [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) per informazioni sull'uso di Modifica e continuazione per C++ in Visual Studio.  
@@ -77,7 +75,7 @@ L'opzione Modifica e continuazione per Visual C++ gestisce la gran parte dei tip
 ##  <a name="BKMK_Unsupported_scenarios"></a> Scenari non supportati  
  Modifica e continuazione per C/C++ non è disponibile nei seguenti scenari di debug:  
   
--   Debug di applicazioni native compilate con [/Zo (ottimizzare il debug)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+-   Debug di applicazioni native compilate con [/Zo (Ottimizzare il debug)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
   
 -   Nelle versioni di Visual Studio precedenti a Visual Studio 2015 Update 1, debug di app di Windows Store o componenti. A partire da Visual Studio 2015 Update 1, è possibile usare Modifica e continuazione nelle app C++ di Windows Store e nelle app DirectX perché ora è supportata l'opzione del compilatore `/ZI` con l'opzione  `/bigobj` . È anche possibile usare Modifica e continuazione con file binari compilati con l'opzione `/FASTLINK` .  
   
@@ -147,7 +145,7 @@ L'opzione Modifica e continuazione per Visual C++ gestisce la gran parte dei tip
 3.  Deselezionare la casella di controllo **Consenti precompilazione** .  
   
 ##  <a name="BKMK_IDL_Attribute_Limitations"></a> Limitazioni degli attributi IDL  
- Modifica e Continua non consentono di rigenerare file di definizione di interfaccia (IDL). Le modifiche agli attributi IDL non verranno pertanto riflesse mentre si esegue il debug. Per visualizzare il risultato delle modifiche agli attributi IDL è necessario interrompere il debug e ricompilare l'app. Se gli attributi IDL sono stati modificati, non verrà generato alcun errore o avviso. Per altre informazioni, vedere [attributi IDL](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
+ Modifica e Continua non consentono di rigenerare file di definizione di interfaccia (IDL). Le modifiche agli attributi IDL non verranno pertanto riflesse mentre si esegue il debug. Per visualizzare il risultato delle modifiche agli attributi IDL è necessario interrompere il debug e ricompilare l'app. Se gli attributi IDL sono stati modificati, non verrà generato alcun errore o avviso. Per altre informazioni, vedere [Attributi IDL](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

@@ -1,7 +1,7 @@
 ---
 title: Operatori logici nelle espressioni di ricerca | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf55bbdc025b4aabd13f7ded72c2ea69386a61b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8337c455ac283e7b9abbf70c39493b31c01a7d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212537"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Operatori logici nelle espressioni di ricerca
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [gli operatori logici nelle espressioni di ricerca](https://docs.microsoft.com/visualstudio/ide/logical-operators-in-search-expressions).  
-  
 Con gli operatori logici è possibile limitare la ricerca di contenuto mediante la creazione di espressioni di ricerca più complesse partendo da quelle più semplici. Come illustrato nella tabella seguente, gli operatori logici specificano in che modo più termini di ricerca debbano essere combinati in una query di ricerca.  
   
 > [!IMPORTANT]

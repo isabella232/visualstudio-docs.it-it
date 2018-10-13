@@ -1,7 +1,7 @@
 ---
 title: Scrittura di codice nell'Editor di testo e del codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519706"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220532"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Scrittura di codice nell'Editor di testo e del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [scrittura di codice nell'Editor di testo e del codice](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scrittura e la gestione del codice. È possibile espandere e comprimere diversi blocchi di codice usando la struttura. Per altre informazioni sul codice in uso, vedere IntelliSense, **Visualizzatore oggetti**e Gerarchia di chiamata. Per spostarsi all'interno del codice, usare funzionalità come **Passa a**, **Vai a definizione**e **Trova tutti i riferimenti**. È possibile inserire i blocchi di codice con i frammenti di codice e generare il codice usando funzionalità come **Generazione dall'utilizzo**. Se non si è mai usato l'editor di Visual Studio 2015 in precedenza, vedere [Modifica del codice](https://www.visualstudio.com/features/ide-vs) per una rapida panoramica.  
 
  Il codice può essere visualizzato in diversi modi. Per visualizzare una visualizzazione classi della soluzione, è possibile aprire la finestra **Visualizzazione classi** o espandere i nodi in **Esplora soluzioni** nei file di classe.  
@@ -130,7 +127,7 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 
  ![Pulsanti di navigazione per spostarsi avanti e indietro](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- Per una panoramica del codice, è anche possibile usare la barra di scorrimento avanzata in una finestra del codice. In modalità di mapping è possibile visualizzare l'anteprima del codice quando si sposta il cursore verso l'alto e verso il basso nella barra di scorrimento. Per altre informazioni, vedere [Procedura: Tenere traccia del codice personalizzando la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+ Per una panoramica del codice, è anche possibile usare la barra di scorrimento avanzata in una finestra del codice. In modalità di mapping è possibile visualizzare l'anteprima del codice quando si sposta il cursore verso l'alto e verso il basso nella barra di scorrimento. Per altre informazioni, vedere [How to: Track Your Code by Customizing the Scrollbar](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
 
  I comandi seguenti sono metodi di spostamento specifici per il codice:  
 

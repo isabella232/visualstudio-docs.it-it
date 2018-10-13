@@ -1,7 +1,7 @@
 ---
 title: Composizione di un test codificato dell'interfaccia utente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c9fea94f0298212bb8c3909d4227936437b8f24c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7595a967a6dae091da6c5a7613a27c602cc1381e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202748"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Anatomia di un Test codificato dell'interfaccia](https://docs.microsoft.com/visualstudio/test/anatomy-of-a-coded-ui-test).  
-  
 Quando si crea un test codificato dell'interfaccia utente in un progetto di test codificato dell'interfaccia utente, vengono aggiunti alcuni file alla soluzione. In questo argomento, si userà un test codificato dell'interfaccia utente di esempio per esaminare questi file.  
   
  **Requisiti**  

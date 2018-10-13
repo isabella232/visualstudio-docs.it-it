@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: eseguire il Debug di eccezioni ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d37a67fd0b25de79ceb764e9e80884b97310a307
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a08e382ed9d97aa659012934d3edef45151e10ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178529"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Procedura: debug di eccezioni ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: eseguire il Debug di eccezioni ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-aspnet-exceptions).  
-  
 Debug delle eccezioni è una parte importante dello sviluppo di un solido [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dell'applicazione. Informazioni generali su come eseguire il debug di eccezioni, vedere [la gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md).  
   
  Per eseguire il debug non gestite [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] eccezioni, è necessario assicurarsi che il debugger si arresta per loro. Il runtime di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dispone di un gestore eccezioni di livello superiore. Di conseguenza, per impostazione predefinita il debugger non si interrompe mai in corrispondenza di eccezioni non gestite. Per interrompere il debugger quando viene generata un'eccezione, è necessario selezionare **Interrompi quando un'eccezione è: generata** impostazione per tale eccezione nella **eccezioni** nella finestra di dialogo.  

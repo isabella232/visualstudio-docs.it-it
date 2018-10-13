@@ -1,7 +1,7 @@
 ---
 title: Compilare un'applicazione OpenGL ES in Android e iOS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 499349b6599eed9c4677d9b667c044efae2dec18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1679884d79ee6c3e81af847a68338a93876c03d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193973"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Compilare un'applicazione OpenGL ES in Android e iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [compilare un'applicazione OpenGL ES in Android e iOS](https://docs.microsoft.com/visualstudio/cross-platform/build-an-opengl-es-application-on-android-and-ios).  
-  
   
 Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma, è possibile creare soluzioni e progetti di Visual Studio per le app iOS e Android che condividono un codice comune. Questo argomento descrive un modello di soluzione che crea un'app iOS semplice e un'app NativeActivity di Android. Le app hanno un codice C++ in comune che usa OpenGL ES per visualizzare lo stesso cubo rotante animato in tutte le piattaforme. OpenGL ES (OpenGL for Embedded Systems o GLES) è un'API grafica 2D e 3D supportata in molti dispositivi mobili.  
   

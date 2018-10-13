@@ -1,7 +1,7 @@
 ---
 title: Specifica di una finestra delle proprietà personalizzate | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: 88ba48a4cf04d0ad5efb59939c57f021926dfd2e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b3aeae11e087b6a6bd662ed32564d93062426df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518619"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186277"
 ---
 # <a name="providing-a-custom-properties-window"></a>Specifica di una finestra Proprietà personalizzate
 È possibile specificare il proprio **delle proprietà** finestra per un sistema di progetto specificato, anziché il **proprietà** finestra fornita dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE). Lo scenario più frequentemente si è verificato è quando si familiarità implementa l'oggetto individuato nella cornice della finestra.  

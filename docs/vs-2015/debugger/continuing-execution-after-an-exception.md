@@ -1,7 +1,7 @@
 ---
 title: Continuare l'esecuzione dopo un'eccezione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a71d71622809dfaeea399355e490fe4e69b52b9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9e99a29c097bdf5e23bdb8f4955cd1ccc7ec19e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230126"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [continui l'esecuzione dopo un'eccezione](https://docs.microsoft.com/visualstudio/debugger/continuing-execution-after-an-exception).  
-  
 Quando l'esecuzione viene interrotta dal debugger a causa di un'eccezione, viene visualizzata una finestra di dialogo. Per Visual Basic o c#, verrà visualizzato il [informazioni sulle eccezioni](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) finestra di dialogo, per impostazione predefinita. Per C++, si noterà il precedente **eccezione** nella finestra di dialogo. Se Usa Visual Basic o c#, ma sono disabilitate le **informazioni sulle eccezioni** nel **opzioni** della finestra di dialogo verrà visualizzato il **eccezione** nella finestra di dialogo.  
   
  Quando la **informazioni sulle eccezioni** oppure **eccezione** verrà visualizzata la finestra di dialogo, è possibile provare a risolvere il problema che ha causato l'eccezione.  

@@ -1,7 +1,7 @@
 ---
 title: Verifica dei sottotipi di un progetto in fase di esecuzione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e77fa60687ecfebdae8555b516af678cf3966211
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8aa68670b82fdba0f189cfb8bf2a06db15f33b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215059"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Verifica dei sottotipi di un progetto in fase di esecuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [sottotipi di verifica di un progetto in fase di esecuzione](https://docs.microsoft.com/visualstudio/extensibility/verifying-subtypes-of-a-project-at-run-time).  
-  
 Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzati deve includere logica da cercare in modo che si può arrestare normalmente se non è presente il sottotipo di sottotipo. La procedura seguente viene illustrato come verificare la presenza di un sottotipo specificato.  
   
 ### <a name="to-verify-the-presence-of-a-subtype"></a>Per verificare la presenza di un sottotipo  

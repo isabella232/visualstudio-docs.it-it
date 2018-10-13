@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: espandere e comprimere alberi di Spy + + | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15cc746a31eb3ca0c0de8f7e9ef2dafdc40082d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1c4611d756e9a233e0f33543afc4fd32bbea6ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216138"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procedura: Espandere e comprimere alberi di Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: espandere e comprimere Spy + + alberi](https://docs.microsoft.com/visualstudio/debugger/how-to-expand-and-collapse-spy-increment-trees).  
-  
 È possibile espandere e comprimere le visualizzazioni di Windows, processi e thread usando due metodi: facendo clic sulle icone nella finestra o usando il **albero** menu. Il + e -icone nella struttura agiscono come avviene nella finestra del progetto Visual C++.  
   
  Il **albero** menu contiene quattro comandi:  

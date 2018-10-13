@@ -1,7 +1,7 @@
 ---
 title: Impostazioni per una configurazione di Debug Visual Basic del progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af9d9976c6aa6743cfda4c69d3b2f8d958ab03bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3bcc3b6090efb16d74485bf8e7747d7cc8ee7b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526279"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188669"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [impostazioni di progetto per una configurazione di Debug Visual Basic](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-a-visual-basic-debug-configuration).  
-  
 È possibile modificare le impostazioni di progetto per un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] configurazione di debug nella **pagine delle proprietà** finestra, come illustrato in [configurazioni Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md). Le tabelle seguenti mostrano la posizione in cui sono disponibili le impostazioni correlate al debugger il **pagine delle proprietà** finestra.  
   
 > [!WARNING]

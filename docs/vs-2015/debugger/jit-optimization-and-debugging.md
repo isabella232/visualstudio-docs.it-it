@@ -1,7 +1,7 @@
 ---
 title: JIT debug e ottimizzazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201983"
 ---
 # <a name="jit-optimization-and-debugging"></a>Debug e ottimizzazione JIT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [debug e ottimizzazione JIT](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging).  
-  
 Quando si esegue il debug di un'applicazione gestita, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene disattivata l'ottimizzazione del codice just-in-time (JIT) per impostazione predefinita. Viene pertanto eseguito il debug di codice non ottimizzato. L'esecuzione di codice non ottimizzato è più lenta, ma il debug è più completo. Il debug di codice ottimizzato è più complesso ed è consigliabile eseguirlo solo se un problema si verifica nel codice ottimizzato ma non può essere riprodotto nella versione non ottimizzata.  
   
  L'ottimizzazione JIT è controllata nella [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per il **disattivare l'ottimizzazione JIT al caricamento del modulo** opzione. È possibile trovare questa opzione sul **generali** pagina il **debug** nodo nel **opzioni** nella finestra di dialogo.  

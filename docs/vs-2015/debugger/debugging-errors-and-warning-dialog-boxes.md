@@ -1,7 +1,7 @@
 ---
 title: Debug degli errori e le finestre di dialogo di avviso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef599f3d786618339ac695b182a4efb5682035d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 225cd9e209d3fd513d4991e5c20bfc4a6a07e9d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517961"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216666"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Finestre di dialogo di errore e di avviso per il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [gli errori di debug e finestre di dialogo di avviso](https://docs.microsoft.com/visualstudio/debugger/debugging-errors-and-warning-dialog-boxes).  
-  
 Di seguito sono riportate le finestre di errore e di avviso che possono essere visualizzate quando si effettua il debug di un'applicazione.  
   
 ## <a name="in-this-section"></a>In questa sezione  

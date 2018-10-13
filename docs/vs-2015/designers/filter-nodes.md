@@ -1,7 +1,7 @@
 ---
 title: Nodi filtro | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2789676505588c2041abfd876a228fc456ee3607
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8046fcbeebe2af0c6c7ebb725ffe4ed6cfa263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520144"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178581"
 ---
 # <a name="filter-nodes"></a>Nodi del filtro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [i nodi filtro](https://docs.microsoft.com/visualstudio/designers/filter-nodes).  
-  
 In Progettazione shader, i nodi filtro trasformano un input, ad esempio, un campione di colore o trama, in un valore di colore figurativo. Questi valori di colori figurativi vengono comunemente usati durante il rendering non fotorealistico o come componenti di altri effetti visivi.  
   
 ## <a name="filter-node-reference"></a>Riferimento per i nodi filtri  

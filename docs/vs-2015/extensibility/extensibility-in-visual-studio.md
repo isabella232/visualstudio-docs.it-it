@@ -1,7 +1,7 @@
 ---
 title: Estendibilità in Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,18 +11,16 @@ ms.assetid: 81b0dbe6-ddf3-4899-b09c-a3837037231d
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ffb64ba229878afa87f9a35df3f02a2a9f4388e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 174cf3e7986659ec6fe34675c5a343ab36d023d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532168"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215475"
 ---
 # <a name="extensibility-in-visual-studio"></a>Estendibilità in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [estendibilità in Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/extensibility-in-visual-studio).  
-  
 Visual Studio offre molte opzioni di estendibilità. È possibile creare SDK personalizzati, usare gli SDK di Azure (che vengono installati come parte di Visual Studio), Windows e Windows Phone ed estendere Visual Studio.  
   
 ## <a name="extend-visual-studio"></a>Estendere Visual Studio  

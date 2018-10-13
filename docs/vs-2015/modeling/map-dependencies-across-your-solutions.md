@@ -1,12 +1,12 @@
 ---
 title: Eseguire il mapping delle dipendenze nelle soluzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -32,18 +32,16 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 06dc2d18ab6641847e2f0edb0d34cb671bca28a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200772"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Eseguire il mapping delle dipendenze nelle soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [mappare le dipendenze nelle soluzioni](https://docs.microsoft.com/visualstudio/modeling/map-dependencies-across-your-solutions).  
-  
 Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe codice. In questo modo è possibile vedere il funzionamento complessivo del codice senza leggere file e righe di codice.  
   
  ![Visualizzare le dipendenze nelle soluzioni](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
@@ -289,7 +287,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
      ![Utilizzare il riquadro filtro per semplificare la visualizzazione](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ##  <a name="SeeSourceHeader"></a> Visualizzare le dipendenze tra i file di origine e i file di intestazione C e C++  
- Per creare mappe più complete per i progetti C++, impostare l'opzione del compilatore di informazioni di visualizzazione (**/FR**) su tali progetti. Vedere [/FR, /Fr (Crea. File SBR)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). In caso contrario, viene visualizzato un messaggio con la richiesta di impostare l'opzione. Se si seleziona **OK**, l'opzione viene impostata solo per la mappa corrente. È possibile scegliere di nascondere il messaggio per tutte le mappe successive. Se si nasconde il messaggio, è possibile visualizzarlo nuovamente. Impostare la seguente chiave del Registro di sistema su `0` o eliminare la chiave:  
+ Per creare mappe più complete per i progetti C++, impostare l'opzione del compilatore di informazioni di visualizzazione (**/FR**) su tali progetti. Vedere [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). In caso contrario, viene visualizzato un messaggio con la richiesta di impostare l'opzione. Se si seleziona **OK**, l'opzione viene impostata solo per la mappa corrente. È possibile scegliere di nascondere il messaggio per tutte le mappe successive. Se si nasconde il messaggio, è possibile visualizzarlo nuovamente. Impostare la seguente chiave del Registro di sistema su `0` o eliminare la chiave:  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
   
@@ -315,12 +313,12 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 |**Problema**|**Possibile causa**|**Risoluzione**|  
 |---------------|------------------------|--------------------|  
 |Non è stato possibile generare la mappa codice.|Nessun progetto nella soluzione è stato compilato correttamente.|Correggere gli errori di compilazione che si sono verificati, quindi rigenerare la mappa.|  
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] smette di rispondere quando si prova a generare una mappa codice dal **architettura** menu.|Il file di database del programma (con estensione pdb) potrebbe essere danneggiato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Ricompilare la soluzione e riprovare.|  
-|Alcune impostazioni per il database di esplorazione IntelliSense sono disabilitate.|Alcune impostazioni di IntelliSense potrebbero essere disabilitate nella [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **opzioni** nella finestra di dialogo.|Attivare le impostazioni per abilitarle.<br /><br /> Visualizzare [opzioni, Editor di testo, C/C++, avanzate](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
-|Il messaggio **Metodi sconosciuti** viene visualizzato su un nodo di metodo.<br /><br /> Questo problema si verifica perché non è possibile risolvere il nome del metodo.|Il file binario potrebbe non disporre di una tabella di rilocazione di base.|Attivare l'opzione **/FIXED:NO** nel linker.<br /><br /> Visualizzare [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
-||Il file di database del programma (con estensione pdb) potrebbe non essere compilato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Attivare l'opzione **/DEBUG** nel linker.<br /><br /> Visualizzare [/debug (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
+|Quando si prova a generare una mappa codice dal menu[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Architettura **,** smette di rispondere.|Il file di database del programma (con estensione pdb) potrebbe essere danneggiato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Ricompilare la soluzione e riprovare.|  
+|Alcune impostazioni per il database di esplorazione IntelliSense sono disabilitate.|Alcune impostazioni di IntelliSense potrebbero essere disabilitate nella finestra di dialogo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**di** .|Attivare le impostazioni per abilitarle.<br /><br /> Visualizzare [opzioni, Editor di testo, C/C++, avanzate](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
+|Il messaggio **Metodi sconosciuti** viene visualizzato su un nodo di metodo.<br /><br /> Questo problema si verifica perché non è possibile risolvere il nome del metodo.|Il file binario potrebbe non disporre di una tabella di rilocazione di base.|Attivare l'opzione **/FIXED:NO** nel linker.<br /><br /> Vedere [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
+||Il file di database del programma (con estensione pdb) potrebbe non essere compilato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Attivare l'opzione **/DEBUG** nel linker.<br /><br /> Vedere [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||Non è possibile aprire o trovare il file pdb nei percorsi previsti.|Verificare che il file pdb esista nei percorsi previsti.|  
-||Le informazioni di debug sono state rimosse dal file pdb.|Se nel linker è stata usata l'opzione **/PDBSTRIPPED** , includere il file pdb completo.<br /><br /> Visualizzare [/PDBSTRIPPED (Rimuove simboli privati)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
+||Le informazioni di debug sono state rimosse dal file pdb.|Se nel linker è stata usata l'opzione **/PDBSTRIPPED** , includere il file pdb completo.<br /><br /> Vedere [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
 ||Il chiamante non è una funzione e non è un thunk nel file binario o un puntatore nella sezione di dati.|Quando il chiamante è un thunk, provare a usare `_declspec(dllimport)` per evitare il thunk.<br /><br /> Vedere:<br /><br /> -   [Regole e limitazioni generali](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importazione di chiamate di funzione tramite declspec](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ##  <a name="RenderMoreQuickly"></a> Accelerare il rendering delle mappe codice  

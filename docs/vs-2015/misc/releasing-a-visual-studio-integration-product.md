@@ -1,7 +1,7 @@
 ---
 title: Rilascio del prodotto di integrazione di Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c94ed6a5-d5a2-40d3-b227-65318a3eb364
 caps.latest.revision: 17
 manager: douge
-ms.openlocfilehash: 24f4b4c01dcd00de8a258e90e310dc7e4b98bf11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c571a01aab27e56375d92f9abbced386a12bce7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197496"
 ---
 # <a name="releasing-a-visual-studio-integration-product"></a>Rilascio del prodotto di integrazione di Visual Studio
 Gli argomenti di questa sezione illustrano come rilasciare il prodotto di integrazione di Visual Studio compilando e installando VSPackage e usando il test di integrazione con Visual Studio (VSIT).  
@@ -37,4 +37,4 @@ Gli argomenti di questa sezione illustrano come rilasciare il prodotto di integr
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Personalizzazione dei test con Visual Studio SDK](http://msdn.microsoft.com/en-us/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
- Viene descritto come utilizzare il [!INCLUDE[esprtest](../includes/esprtest-md.md)] suite per creare, gestire, modificare ed eseguire i test e di ottenere e archiviare i risultati dei test.
+ Descrive come usare la famiglia di prodotti di [!INCLUDE[esprtest](../includes/esprtest-md.md)] per creare, gestire, modificare ed eseguire i test nonché ottenere e archiviare i risultati del test.

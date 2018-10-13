@@ -1,7 +1,7 @@
 ---
 title: Creazione di rapporti del profiler tramite la riga di comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d94a2c6c025ada73e1d43e041c2bf6e30f8b66c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb90505dacbb22268087d3eb15a8df39fdcc932
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525546"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238771"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>Creazione di rapporti del profiler tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di report di Profiler dalla riga di comando](https://docs.microsoft.com/visualstudio/profiling/creating-profiler-reports-from-the-command-line).  
-  
 Lo strumento della riga di comando **VSPerfReport** consente di creare report con estensione xml o csv (valori delimitati da virgole) da file di dati di profilatura con estensione vsp. I tipi di report VSPerfReport sono molto simili alle visualizzazioni basate su tabella dell'interfaccia di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È possibile filtrare il report per visualizzare solo il codice o per visualizzare solo un segmento del file di dati di profilatura. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).  
   
  È anche possibile semplificare la condivisione dei file di dati di profilatura incorporando simboli nei file con estensione vsp o creando file di report preanalizzati (con estensione vsps), più piccoli e più facili da aprire.  

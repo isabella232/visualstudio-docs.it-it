@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Raccogliere i dati di campionamento a livello di riga | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd57893476ba7654a37fc44d1681adc3264f92b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198588"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procedura: Raccogliere i dati di campionamento a livello di riga
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: raccogliere dati di campionamento a livello di riga](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-line-level-sampling-data).  
-  
 Il campionamento a livello di riga è una capacità del profiler che consente di determinare il punto del codice di una funzione che richiede un uso intensivo del processore, ad esempio una funzione con esempi esclusivi elevati, in cui il processore impiega la maggior parte del tempo.  
   
 ## <a name="overview"></a>Panoramica  

@@ -1,7 +1,7 @@
 ---
 title: Aggiungere comandi e movimenti a diagrammi livelli | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9434c93caf9cfe614a01cf9a10912f1d0562b9bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223216"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Aggiunta di comandi e movimenti a diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiungere comandi e movimenti ai diagrammi delle dipendenze](https://docs.microsoft.com/visualstudio/modeling/add-commands-and-gestures-to-layer-diagrams).  
-  
 È possibile definire comandi del menu di scelta rapida e gestori movimenti nei diagrammi livello in Visual Studio. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) che è possibile distribuire ad altri utenti di Visual Studio.  
   
  Se si vuole, è possibile definire gestori comandi e movimenti diversi nello stesso progetto di Visual Studio. È anche possibile combinare più progetti di questo tipo in un progetto VSIX. Ad esempio, è possibile definire un unico progetto VSIX che include comandi di livello, un linguaggio specifico di dominio e comandi per i diagrammi UML.  
@@ -50,7 +48,7 @@ La versione più recente di questo argomento è reperibile in [aggiungere comand
   
 3.  Per testare l'estensione, premere **CTRL+F5** o **F5**.  
   
-     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questa istanza creare un diagramma livello. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.  
+     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questa istanza creare un diagramma livello. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.  
   
 4.  Chiudere l'istanza sperimentale e modificare il codice di esempio. Per altre informazioni, vedere [esplorare e aggiornare i modelli nel codice del programma di livello](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
@@ -60,7 +58,7 @@ La versione più recente di questo argomento è reperibile in [aggiungere comand
   
      [Definizione di un gestore movimenti](#gesture)  
   
-6.  Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], o in un altro computer, trovare il **VSIX** del file in **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
+6.  Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Aggiunta di un comando o movimento a un progetto VSIX separato  
  Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori. Per informazioni sugli altri tipi di estensione di modellazione, vedere [modelli e diagrammi UML estendere](../modeling/extend-uml-models-and-diagrams.md).  
@@ -111,7 +109,7 @@ La versione più recente di questo argomento è reperibile in [aggiungere comand
   
 2.  Per testare la funzionalità, premere CTRL+F5 o F5. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questa istanza creare o aprire un diagramma livello.  
   
-3.  Per installare l'estensione VSIX nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
+3.  Per installare il progetto VSIX nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
   
      Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   

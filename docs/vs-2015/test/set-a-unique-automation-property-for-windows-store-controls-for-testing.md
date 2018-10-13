@@ -1,7 +1,7 @@
 ---
 title: Impostare una proprietà di automazione univoca dei controlli Windows Store per il test | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dd593efa23d40278a314f6b1c1d90e7f7905922
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e20186a7615f774f3cef0b57c56a61a3b076b8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238875"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Impostare una proprietà di automazione univoca dei controlli Windows Store per il test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [impostare un'automazione di proprietà univoci per Windows Store controlli per il test](https://docs.microsoft.com/visualstudio/test/set-a-unique-automation-property-for-windows-store-controls-for-testing).  
-  
 Per eseguire test codificati dell'interfaccia utente per un'applicazione di Windows Store basata su XAML, è necessario disporre di una proprietà di automazione univoca che identifichi ogni controllo.  
   
  È possibile assegnare una proprietà di automazione univoca in base al tipo di controllo XAML nell'applicazione. Ecco come assegnare questa proprietà di automazione univoca nelle situazioni seguenti:  

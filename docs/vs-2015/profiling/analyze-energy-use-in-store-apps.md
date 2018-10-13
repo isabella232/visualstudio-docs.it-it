@@ -1,7 +1,7 @@
 ---
 title: Analizzare il consumo di energia nelle app dello Store | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b204a31e5efe9c7870a02e9eb7a0a48c19d4c6eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189254"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizzare il consumo di energia nelle app dello Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analizzare il consumo di energia nelle app di Store](https://docs.microsoft.com/visualstudio/profiling/analyze-energy-use-in-store-apps).  
-  
 Il profiler **Utilizzo di energia** consente di analizzare il consumo di energia e potenza delle applicazioni Windows Store su dispositivi tablet a bassa potenza alimentati completamente o in parte dalle batterie integrate. In un dispositivo alimentato a batteria, un'applicazione che utilizza una quantità eccessiva di energia può causare l'insoddisfazione del cliente al punto tale da comportarne, alla fine, la disinstallazione. L'ottimizzazione del consumo di energia può aumentare l'adozione e l'utilizzo dell'applicazione da parte dei clienti.  
   
 ##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Che cos'è il profiler Consumo di energia, come funziona e cosa misura  

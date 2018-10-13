@@ -1,7 +1,7 @@
 ---
 title: Creare un'applicazione dati semplice usando ADO.NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204309"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creare un'applicazione dati semplice usando ADO.NET](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet).  
-  
   
 Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile individuare come interagire con un database dall'interno di una semplice applicazione "Form over data" di Windows Forms con Visual c# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi DataSet, LINQ to SQL ed Entity Framework, in definitiva, eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.  
   
@@ -37,7 +35,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
 > [!IMPORTANT]
 >  Per semplificare il codice, non include la gestione delle eccezioni dell'ambiente di produzione.  
   
- **Contenuto dell'argomento**  
+ **In questo argomento**  
   
 -   [Configurare il database di esempio](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
@@ -221,7 +219,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
   
     |Commento|Descrizione|  
     |-------------|-----------------|  
-    |Util-1|Aggiungere il `System.Configuration` dello spazio dei nomi.|  
+    |Util-1|Aggiungere lo spazio dei nomi `System.Configuration` .|  
     |Util-2|Definire una variabile `returnValue` e inizializzarla su `null` (C#) o `Nothing` (Visual Basic).|  
     |Util-3|Anche se è stato immesso `connString` come nome della stringa di connessione nel **delle proprietà** finestra, è necessario specificare `"SimpleDataApp.Properties.Settings.connString"` (c#) o `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) nel codice.|  
   

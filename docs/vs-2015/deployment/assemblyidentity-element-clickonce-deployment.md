@@ -1,7 +1,7 @@
 ---
 title: '&lt;assemblyIdentity&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4b1f5a0dbf056925b4f2a25356759dccacc3b363
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 157ad7bb43ae7eb164d7c58edb79f51df3da5dcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195110"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; elemento (distribuzione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ &lt;assemblyIdentity&gt; elemento (distribuzione ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/assemblyidentity-element-clickonce-deployment).  
-  
 Identifica l'assembly principale del [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione.  
   
 ## <a name="syntax"></a>Sintassi  

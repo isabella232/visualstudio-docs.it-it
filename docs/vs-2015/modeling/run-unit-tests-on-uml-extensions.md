@@ -1,7 +1,7 @@
 ---
 title: Eseguire unit test su estensioni UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ac030a4e0b93d189a8b69db5f1df52b65bdf11df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205068"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Eseguire unit test su estensioni UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [eseguire gli unit test su estensioni UML](https://docs.microsoft.com/visualstudio/modeling/run-unit-tests-on-uml-extensions).  
-  
 Per mantenere la stabilità del codice in caso di modifiche successive, è consigliabile scrivere unit test ed eseguirli come parte di un normale processo di compilazione. Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md). Per configurare i test per le estensioni di modellazione di Visual Studio sono necessarie alcune informazioni. Riepilogo:  
   
 -   [Impostazione di uno Unit Test per le estensioni VSIX](#Host)  
@@ -51,7 +49,7 @@ Per mantenere la stabilità del codice in caso di modifiche successive, è consi
  Per un esempio di estensione UML sottoposta a unit test, vedere la raccolta di esempi di codice disponibile nella pagina [Immissione rapida in UML tramite testo](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Requisiti  
- Visualizzare [requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   

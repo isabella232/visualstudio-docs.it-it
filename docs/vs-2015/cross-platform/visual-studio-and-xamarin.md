@@ -1,7 +1,7 @@
 ---
 title: Visual Studio e Xamarin | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a45ce4e6f319dffbb59f8f2040ad815f0e01e71c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b9682f17716946c642186ee91c84b8060879b0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540674"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199576"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio e Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Visual Studio e Xamarin](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-and-xamarin).  
-  
   
 Xamarin è una piattaforma per lo sviluppo di app per dispositivi mobili per la creazione di app iOS, Android e Windows native da una codebase C#/.NET comune, che consente di ottenere un riutilizzo del codice tra le piattaforme dal 75% a quasi il 100%. Le app scritte con Xamarin e C# hanno accesso completo alle API della piattaforma sottostante, oltre alla possibilità di creare interfacce utente native ed eseguire la compilazione in pacchetti specifici della piattaforma, rendendo minimo l'impatto sulle prestazioni in fase di runtime. Nota: Xamarin supporta anche F#, ma nella presente documentazione verrà illustrato solo C#. Visual Basic non è attualmente supportato.  
   

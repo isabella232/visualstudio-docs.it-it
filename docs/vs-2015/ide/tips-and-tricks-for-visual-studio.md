@@ -1,7 +1,7 @@
 ---
 title: Suggerimenti su Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 353ab484ae10070abe80270ec2dd210d355310a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30412c96ee0acf23e74125151b5d7d3050ab9af7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237484"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Suggerimenti su Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [suggerimenti e consigli per Visual Studio](https://docs.microsoft.com/visualstudio/ide/tips-and-tricks-for-visual-studio).  
-  
 È possibile spostarsi più facilmente in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] utilizzando i tasti di scelta rapida descritti in questo argomento. Per informazioni più generali, vedere [\<PAVEOVER>Tasti di scelta rapida di Visual Studio](http://msdn.microsoft.com/en-us/2e15e27f-296b-4e9c-91e6-d91ea0110a67). Per informazioni su come ottimizzare Visual Studio per l'accessibilità, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md).  
   
 -   [Gestione delle finestre](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)  

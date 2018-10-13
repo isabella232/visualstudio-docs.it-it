@@ -1,7 +1,7 @@
 ---
 title: Informazioni sui parametri in un tipo di linguaggio legacy2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bee48d3688a43a3dbfb32848818c318f1cf7b2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200031"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sui parametri in un servizio di linguaggio Legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [informazioni sui parametri in un tipo di linguaggio legacy2](https://docs.microsoft.com/visualstudio/extensibility/internals/parameter-info-in-a-legacy-language-service2).  
-  
 Informazioni sul parametro di IntelliSense è una descrizione comando che consente di visualizzare la firma di un metodo quando l'utente digita l'elenco dei parametri start carattere (in genere una parentesi di apertura) per l'elenco di parametri di metodo. Quando si immette ogni parametro e il separatore di parametro (in genere una virgola) è tipizzato, la descrizione comando viene aggiornato per mostrare il parametro successivo in grassetto.  
   
  Le classi di framework (MPF) di pacchetto gestito forniscono supporto per la gestione di descrizione comando informazioni sul parametro. Il parser deve rilevare parametro start, parametro successivamente, e caratteri di fine dei parametri che deve fornire un elenco delle firme del metodo e i relativi parametri.  

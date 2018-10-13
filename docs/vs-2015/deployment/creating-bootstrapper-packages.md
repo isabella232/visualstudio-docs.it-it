@@ -1,7 +1,7 @@
 ---
 title: Creazione di pacchetti di programma di bootstrap | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ee6badf48d0d196001c948495f9b658114c66ff6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208911"
 ---
 # <a name="creating-bootstrapper-packages"></a>Creazione di programmi di avvio automatico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di pacchetti Bootstrapper](https://docs.microsoft.com/visualstudio/deployment/creating-bootstrapper-packages).  
-  
 Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili quali file di Windows Installer (.msi) e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  
   
  Il programma di avvio automatico prima rileva se i prerequisiti sono già installati. Se i prerequisiti non sono installati, visualizza prima i contratti di licenza. Successivamente, dopo che l'utente finale accetta i contratti di licenza, ha inizio l'installazione dei prerequisiti. Se invece tutti i prerequisiti vengono rilevati, viene semplicemente avviato il programma di installazione dell'applicazione.  
@@ -133,9 +131,9 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Finestra di dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md)   
+ [Prerequisiti (finestra di dialogo)](../ide/reference/prerequisites-dialog-box.md)   
  [Riferimenti dello Schema di pacchetto e del prodotto](../deployment/product-and-package-schema-reference.md)   
- [Usare Visual Studio 2005 Bootstrapper per avviare l'installazione](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Usare il programma di avvio automatico di Visual Studio 2005 per avviare l'installazione](http://go.microsoft.com/fwlink/?LinkId=107537)
 
 
 

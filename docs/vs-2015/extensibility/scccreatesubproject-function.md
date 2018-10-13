@@ -1,7 +1,7 @@
 ---
 title: Funzione SccCreateSubProject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d940dc4ae8a4b36e37ef521c3c0dca1491fedf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e62e1567559898b198866fe3e67e9b5b53096273
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232089"
 ---
 # <a name="scccreatesubproject-function"></a>Funzione SccCreateSubProject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [funzione SccCreateSubProject](https://docs.microsoft.com/visualstudio/extensibility/scccreatesubproject-function).  
-  
 Questa funzione crea un sottoprogetto con il nome specificato in un progetto padre esistente specificato da di `lpParentProjPath` argomento.  
   
 ## <a name="syntax"></a>Sintassi  

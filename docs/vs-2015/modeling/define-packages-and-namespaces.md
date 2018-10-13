@@ -1,7 +1,7 @@
 ---
 title: Definire pacchetti e spazi dei nomi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4d45d5aab1326fd2ee4be0c0b27be5c4ea526a5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219414"
 ---
 # <a name="define-packages-and-namespaces"></a>Definire pacchetti e spazi dei nomi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [definire pacchetti e spazi dei nomi](https://docs.microsoft.com/visualstudio/modeling/define-packages-and-namespaces).  
-  
 In Visual Studio, un *pacchetto* è un contenitore per le definizioni di elementi UML, ad esempio classi, casi d'uso e i componenti. Un pacchetto può contenere anche altri pacchetti.  
   
  In Esplora modelli UML, tutte le definizioni all'interno di un pacchetto vengono annidate sotto il pacchetto. Il modello UML è un tipo di pacchetto e costituisce la radice dell'albero.  
