@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273091"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Il tipo di carattere ambiente
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` Restituisce un valore booleano? (valore booleano che ammette valori null) con il `DialogResult`, che può essere utilizzato se necessario. Il valore restituito è true se la finestra di dialogo è stata chiusa con **OK**.  
   
- Se è necessario visualizzare alcuni UI WPF che non è una finestra di dialogo e ospitato in un proprio `HwndSource`, ad esempio una finestra popup o una finestra figlio WPF di una finestra di finestra padre Win32/Windows Form, è necessario impostare la `FontFamily` e `FontSize` nell'elemento radice di WPF e implementa. (La shell imposta le proprietà nella finestra principale, ma non essere ereditate oltre un `HWND`). La shell fornisce risorse a cui possono essere associate le proprietà e simile al seguente:  
+ Se è necessario visualizzare alcuni UI WPF che non è una finestra di dialogo e ospitato in un proprio `HwndSource`, ad esempio una finestra popup o una finestra figlio WPF della finestra padre Win32/Windows Form, è necessario impostare la `FontFamily` e `FontSize` nell'elemento radice dell'elemento WPF. (La shell imposta le proprietà nella finestra principale, ma non essere ereditate oltre un `HWND`). La shell fornisce risorse a cui possono essere associate le proprietà e simile al seguente:  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  

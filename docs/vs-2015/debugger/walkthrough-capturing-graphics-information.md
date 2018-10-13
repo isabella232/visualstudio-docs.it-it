@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Cattura delle informazioni grafica | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de553729d37bb82d1b30c6a142f7e65c983bb1c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273013"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: cattura delle informazioni grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: acquisizione di informazioni grafiche](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information).  
-  
-Questa procedura dettagliata illustra come usare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostica della grafica per acquisire manualmente informazioni grafiche da un'app Direct3D.  
+Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per acquisire manualmente informazioni grafiche da un'app Direct3D.  
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  
   
@@ -39,7 +37,7 @@ Questa procedura dettagliata illustra come usare il [!INCLUDE[vsprvs](../include
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Per abilitare l'acquisizione di informazioni grafiche dopo il caricamento di un progetto o una soluzione  
   
-1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], caricare un file di progetto o una soluzione per l'app che si desidera acquisire informazioni grafiche da.  
+1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]caricare un file di progetto o di soluzione per l'app dalla quale si vogliono acquisire informazioni grafiche.  
   
 2.  Scegliere **Avvia diagnostica**sulla barra degli strumenti Diagnostica grafica.  
   
@@ -69,7 +67,7 @@ Questa procedura dettagliata illustra come usare il [!INCLUDE[vsprvs](../include
 -   Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Visualizzare [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Acquisizione di informazioni grafiche](../debugger/capturing-graphics-information.md)
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
 
 
 
