@@ -1,7 +1,7 @@
 ---
 title: "Errore: Impossibile accedere all'interfaccia di debug di SQL Server | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b2499081daaff60b128c67558990e15f248a6f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5d4780ece4ae00b2fb0b8c59bc84f3e48980b30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200889"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Errore: impossibile accedere all'interfaccia di debug di SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [errori: non è possibile accedere all'interfaccia di debug di SQL Server](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-access-the-sql-server-debugging-interface).  
-  
 Questo messaggio viene visualizzato quando si tenta di eseguire il debug di SQL su un computer in cui non è attivato questo tipo di debug.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  

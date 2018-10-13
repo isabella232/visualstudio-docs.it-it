@@ -1,7 +1,7 @@
 ---
 title: Personalizzare i file di progetto creati con VSTU | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ef11a6585d741fd28de918d4fa2a81f1eb927b43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9144eaf751c9e78c79d247121d34dd4365ea5414
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517321"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184613"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personalizzare i file di progetto creati con VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [personalizzare progetto file creati con VSTU](https://docs.microsoft.com/visualstudio/cross-platform/customize-project-files-created-by-vstu).  
-  
   
 Visual Studio Tools per Unity offre un callback in stile Unity durante la generazione dei file di progetto. Eseguire la registrazione con l'evento `VisualStudioIntegration.ProjectFileGeneration` per modificare il file di progetto ogni volta che viene rigenerato.  
   

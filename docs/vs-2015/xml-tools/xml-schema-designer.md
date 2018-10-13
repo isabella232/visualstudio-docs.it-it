@@ -1,7 +1,7 @@
 ---
 title: Progettazione XML Schema | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1aa88b7181166fb1b339180a52929ed87abf420
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13f35c5bdadd74935f8b29d4b59031337f880ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236834"
 ---
 # <a name="xml-schema-designer"></a>Progettazione XML Schema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Progettazione XML Schema](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer).  
-  
   
 Progettazione XML Schema (Progettazione XSD) è un strumento grafico che consente di visualizzare un set di schemi a livelli diversi di astrazione. Progettazione XSD è costituito dai seguenti componenti principali:    
   

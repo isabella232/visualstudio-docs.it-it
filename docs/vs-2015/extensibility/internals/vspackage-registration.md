@@ -1,7 +1,7 @@
 ---
 title: Registrazione di pacchetti VSPackage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6a67f5198c743de343059a8eee0787dc367b938
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9399f5e68d89a6913b444fd57b9f32467aac71c4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185692"
 ---
 # <a name="vspackage-registration"></a>Registrazione di pacchetti VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [registrazione di pacchetti VSPackage](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-registration).  
-  
 È necessario consigliare i pacchetti VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] che sono installati e deve essere caricato. Questo processo viene eseguito scrivendo informazioni nel Registro di sistema. Ovvero un tipico processo di un programma di installazione.  
   
 > [!NOTE]

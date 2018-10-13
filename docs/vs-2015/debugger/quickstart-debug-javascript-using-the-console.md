@@ -1,7 +1,7 @@
 ---
 title: 'Guida introduttiva: Eseguire il Debug di JavaScript con la console | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58aee96aead76444ea2363c79db6e4d8060b1346
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205517"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guida introduttiva: Eseguire il debug di JavaScript con la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Guida introduttiva: eseguire il Debug JavaScript con la console](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-javascript-using-the-console).  
-  
 Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- È possibile usare la finestra Console JavaScript per interagire con le app di Windows Store compilate con JavaScript ed eseguirne il debug. Queste funzionalità sono supportate per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] App, Windows Phone Store di App e le app create con Visual Studio Tools per Apache Cordova. Per informazioni di riferimento sui comandi della console, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ È possibile usare la finestra Console JavaScript per interagire con le app di Windows Store compilate con JavaScript ed eseguirne il debug. Queste funzionalità sono supportate per app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , app di Windows Phone Store e app create con Strumenti di Visual Studio per Apache Cordova. Per informazioni di riferimento sui comandi della console, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  La finestra Console JavaScript ti permette di:  
   
@@ -168,15 +166,15 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      L'app viene eseguita, ma mancano le immagini. Gli errori APPHOST della finestra Console JavaScript indicano che mancano le immagini.  
   
-9. Con il `FlipView` app in esecuzione nel simulatore o l'emulatore Windows Phone, tipo `Data.items` nella finestra di input richiesta della console (accanto al ">>" simbolo) e premere INVIO.  
+9. Con l'app `FlipView` in esecuzione nel simulatore o nell'emulatore Windows Phone, digitare `Data.items` nella richiesta di input della finestra della console (accanto al simbolo">>") e premere INVIO.  
   
-     Nella finestra della console apparirà un visualizzatore per l'oggetto `items` . Questo indica che è stata creata un'istanza dell'oggetto `items` , che è disponibile nel contesto dello script corrente. Nella finestra della console è possibile fare clic sui nodi di un oggetto per visualizzare i valori delle proprietà (o usare i tasti di direzione). Come si può vedere nella figura, se si fa clic sull'oggetto `items._data` , i riferimenti relativi all'origine delle immagini non sono corretti, come previsto. Le immagini predefinite (logo.png) sono ancora presenti nell'oggetto e vi sono immagini mancanti frammiste alle immagini previste.  
+     Nella finestra della console apparirà un visualizzatore per l'oggetto `items`. Questo indica che è stata creata un'istanza dell'oggetto `items` , che è disponibile nel contesto dello script corrente. Nella finestra della console è possibile fare clic sui nodi di un oggetto per visualizzare i valori delle proprietà (o usare i tasti di direzione). Come si può vedere nella figura, se si fa clic sull'oggetto `items._data` , i riferimenti relativi all'origine delle immagini non sono corretti, come previsto. Le immagini predefinite (logo.png) sono ancora presenti nell'oggetto e vi sono immagini mancanti frammiste alle immagini previste.  
   
      ![Finestra della JavaScript Console](../debugger/media/js-console-window.png "JS_Console_Window")  
   
      Noterai anche che nell'oggetto `items._data` sono presenti molti più elementi del previsto.  
   
-10. Al prompt digitare `Data.items.push` e premere INVIO. Nella finestra della console viene visualizzato un visualizzatore per la funzione `push`, implementata in un file di progetto di [!INCLUDE[winjs_long](../includes/winjs-long-md.md)]. In questa app, la funzione `push` viene usata per aggiungere gli elementi corretti. Con una piccola ricerca tramite IntelliSense, si scopre che sarebbe necessario usare `setAt` per sostituire le immagini predefinite.  
+10. Al prompt digitare `Data.items.push` e premere INVIO. Nella finestra della console viene visualizzato un visualizzatore per la funzione `push` , implementata in un file di progetto di [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] . In questa app, la funzione `push` viene usata per aggiungere gli elementi corretti. Con una piccola ricerca tramite IntelliSense, si scopre che sarebbe necessario usare `setAt` per sostituire le immagini predefinite.  
   
 11. Per risolvere il problema in modo interattivo senza interrompere la sessione di debug, aprire default.js e selezionare il codice seguente dalla funzione `updateImages` :  
   
@@ -284,7 +282,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Comandi della JavaScript Console](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Il debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: eseguire il Debug di flussi di lavoro basati su ASP.NET (Legacy) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: d30cb54ea035dfac63cf3ab4761c2c7cb5376314
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9da40b0b40216fc36ea45b199ecde9c6dc4a89d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529439"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236886"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Procedura: eseguire il debug di flussi di lavoro basati su ASP.NET (legacy)
 In questo argomento viene descritto come eseguire il debug di applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] basate su [!INCLUDE[wf](../includes/wf-md.md)] che fanno riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] in [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy.  

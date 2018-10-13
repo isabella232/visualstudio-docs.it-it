@@ -1,7 +1,7 @@
 ---
 title: Contesto di valutazione di espressioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc2c2ecc4f7867c2ad39ba72f9edcb72c0935ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb3fcf4d15a1c9020b7bd64587362fcf442f79c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526943"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194056"
 ---
 # <a name="expression-evaluation-context"></a>Contesto di valutazione delle espressioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [contesto di valutazione dell'espressione](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluation-context).  
-  
 Nelle [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debug, un' **contesto di valutazione dell'espressione**:  
   
 -   Rappresenta un contesto per la valutazione dell'espressione. Un contesto di valutazione corrisponde in genere, per l'ambito lessicale in cui valutare le variabili, parametri, funzioni e metodi. Ad esempio, un contesto di valutazione di espressioni associato a uno stack frame fornirà il contesto per la valutazione delle variabili locali, parametri del metodo e i membri della classe (se applicabile).  

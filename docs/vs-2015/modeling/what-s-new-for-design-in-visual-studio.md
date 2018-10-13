@@ -1,7 +1,7 @@
 ---
 title: Cosa&#39;novità per la progettazione in Visual Studio s | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,15 @@ caps.latest.revision: 34
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d710d17caaf60cea7b11a1ebd81d91796fdb46d6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3d6ab30934750f2c825029c1433ea7ca68447dcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204282"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novità relative alla progettazione in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [Novità&#39;s novità per la progettazione in Visual Studio](https://docs.microsoft.com/visualstudio/modeling/what-s-new-for-design-in-visual-studio).
-
 Questa versione di Visual Studio include i seguenti miglioramenti, utili per comprendere e progettare meglio il codice.
 
  **Le mappe codici e grafici delle dipendenze**
@@ -62,7 +59,7 @@ Questa versione di Visual Studio include i seguenti miglioramenti, utili per com
 
 -   **Creare diagrammi da Visualizzazione classi e Visualizzatore oggetti**. Trascinare la selezione di file e assembly in una mappa nuova o esistente dalle finestre Visualizzazione classi e Visualizzatore oggetti.
 
- Visualizzare [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).
+ Vedere [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
  **Altre modifiche di progettazione e modellazione in questa versione:**
 

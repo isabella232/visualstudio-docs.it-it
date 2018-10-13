@@ -1,7 +1,7 @@
 ---
 title: Account utente e aggiornamenti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3547d2084fe8644b099bac96c8b6b772e16e1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76f1e52ed548cdca5bd2e910023e4371fdc87e1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532417"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222423"
 ---
 # <a name="user-accounts-and-updates"></a>Account utente e aggiornamenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [gli account utente e aggiornamenti](https://docs.microsoft.com/visualstudio/ide/user-accounts-and-updates).  
-  
 Visual Studio è un ambiente connesso. Accedendovi è possibile accedere a tutti i servizi associati all'account utente e a tutti gli account che sono collegati a tale account. Le impostazioni dell’account viaggiano con l’utente in qualsiasi luogo utilizzi Visual Studio. È possibile configurare i livelli di autorizzazione su un'istanza specifica di Visual Studio per i singoli utenti. Visual Studio, inoltre, indica quando è disponibile un aggiornamento per un componente dell'installazione, ad esempio un SDK.  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  

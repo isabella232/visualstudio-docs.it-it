@@ -1,7 +1,7 @@
 ---
 title: Activity Designer FinalState | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ecbbded923645a1b2bf6eafe9bbe038e0cb3b29c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48c44dc585ce1c9cf4e7b29970b4014f128b873d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528130"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209170"
 ---
 # <a name="finalstate-activity-designer"></a>ActivityDesigner FinalState
 La finestra di progettazione di <xref:System.Activities.Core.Presentation.FinalState> viene usata per creare un <xref:System.Activities.Statements.State> che termina un'istanza della macchina a stati.  
   
 ## <a name="using-the-finalstate-activity-designer"></a>Uso di ActivityDesigner FinalState  
- Il **FinalState** designer viene utilizzato per creare un <xref:System.Activities.Statements.State> preconfigurato come stato finale in una macchina a stati. Oggetto <xref:System.Activities.Statements.State> che viene creato utilizzando il <xref:System.Activities.Core.Presentation.FinalState> ActivityDesigner ha relativo <xref:System.Activities.Statements.State.IsFinal%2A> proprietà impostata su **true**, non ha alcun <xref:System.Activities.Statements.State.Exit%2A> attività e Nessuna transizione che abbia origine da quest'ultimo. Usare la <xref:System.Activities.Core.Presentation.FinalState> ActivityDesigner di aggiungere un <xref:System.Activities.Statements.State> attività preconfigurata come stato finale in una macchina a stati, trascinare il **FinalState** ActivityDesigner dal **macchina a stati**sezione il **casella degli strumenti** e rilasciarlo nella finestra di progettazione del flusso di lavoro. Un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState> può essere rilasciato in <xref:System.Activities.Statements.StateMachine> e le transizioni possono essere aggiunte successivamente, o una transizione può essere creata quando viene rilasciato un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState>. Per altre informazioni sulla creazione delle transizioni, vedere [transizione](../workflow-designer/transition-activity-designer.md).  
+ Il **FinalState** designer viene utilizzato per creare un <xref:System.Activities.Statements.State> preconfigurato come stato finale in una macchina a stati. Oggetto <xref:System.Activities.Statements.State> che viene creato utilizzando il <xref:System.Activities.Core.Presentation.FinalState> ActivityDesigner ha relativo <xref:System.Activities.Statements.State.IsFinal%2A> proprietà impostata su **true**, non ha alcun <xref:System.Activities.Statements.State.Exit%2A> attività e Nessuna transizione che abbia origine da quest'ultimo. Usare la <xref:System.Activities.Core.Presentation.FinalState> ActivityDesigner di aggiungere un <xref:System.Activities.Statements.State> attività preconfigurata come stato finale in una macchina a stati, trascinare il **FinalState** ActivityDesigner dal **macchina a stati**sezione il **casella degli strumenti** e rilasciarlo nella finestra di progettazione del flusso di lavoro. Un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState> può essere rilasciato in <xref:System.Activities.Statements.StateMachine> e le transizioni possono essere aggiunte successivamente o una transizione può essere creata quando viene rilasciato un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState>. Per altre informazioni sulla creazione delle transizioni, vedere [transizione](../workflow-designer/transition-activity-designer.md).  
   
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività di stato in Progettazione flussi di lavoro   
  Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities.Core.Presentation.FinalState> che possono essere impostate usando la finestra di progettazione e viene descritta la modalità di utilizzo nella finestra di progettazione. Alcune di queste proprietà possono essere modificate nella griglia delle proprietà, mentre altre possono essere modificate nell'area di progettazione.  

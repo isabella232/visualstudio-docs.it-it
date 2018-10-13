@@ -1,7 +1,7 @@
 ---
 title: Aggiornare un modello UML da un thread in background | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 448a24d2bfe7a466a239c025046bd0e6f13ea64e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216853"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aggiornare un modello UML da un thread in background
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiornare un modello UML da un thread in background](https://docs.microsoft.com/visualstudio/modeling/update-a-uml-model-from-a-background-thread).  
-  
 A volte può essere utile apportare modifiche a un modello in un thread in background. Ad esempio, se si stanno caricando informazioni da una risorsa esterna lenta, è possibile usare un thread in background per controllare gli aggiornamenti. In questo modo, l'utente può visualizzare ogni aggiornamento non appena si verifica.  
   
  È tuttavia necessario tenere presente che l'archivio UML non è thread-safe. Ecco alcune precauzioni importanti:  

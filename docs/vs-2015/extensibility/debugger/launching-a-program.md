@@ -1,7 +1,7 @@
 ---
 title: Avvio di un programma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5987f793e6f0164654f280f8417494066e3e5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27b7daadd3642a4eb35d993e37b6ade3bd829972
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242549"
 ---
 # <a name="launching-a-program"></a>Avvio di un programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [avviando un programma](https://docs.microsoft.com/visualstudio/extensibility/debugger/launching-a-program).  
-  
 Gli utenti che desiderano eseguire il debug di un programma è possono premere F5 per eseguire il debugger dall'IDE. Questo passaggio inizia una serie di eventi che risultano dell'IDE per la connessione a un motore di debug (DE), che a sua volta connesso, o collegato, per il programma come indicato di seguito:  
   
 1.  L'IDE chiama innanzitutto il pacchetto del progetto per ottenere le impostazioni di debug progetto attivo della soluzione. Le impostazioni includono la directory di avvio, le variabili di ambiente, la porta in cui verrà eseguito il programma e la Germania da utilizzare per creare il programma, se specificato. Queste impostazioni vengono passate al pacchetto di debug.  

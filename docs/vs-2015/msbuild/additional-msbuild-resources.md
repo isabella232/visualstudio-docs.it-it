@@ -1,7 +1,7 @@
 ---
 title: Risorse aggiuntive per MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -604,18 +604,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6bb77f0d43b129b84bb63cc96ef59988dc13ac6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 935d73f8dd1a5c1dedb3fb4d1e7a727d19e5d10b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222742"
 ---
 # <a name="additional-msbuild-resources"></a>Risorse aggiuntive per MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [altre risorse di MSBuild](https://docs.microsoft.com/visualstudio/msbuild/additional-msbuild-resources).  
-  
   
 Se si sta tentando di risolvere un problema e non si riescono a trovare le informazioni necessarie nella documentazione, è possibile consultare altre risorse, ad esempio articoli della Knowledge Base, la community di sviluppatori o il supporto tecnico.  
   

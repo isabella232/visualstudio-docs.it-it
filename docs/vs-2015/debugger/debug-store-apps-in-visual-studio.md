@@ -1,7 +1,7 @@
 ---
 title: App Store di debug in Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3afe6e31062b8f55add97455f0e1836128b7d0e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2e9780672abbff1cec9c74298579e575e59a665
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219141"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Eseguire il debug di app dello Store in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [App Store di Debug in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-store-apps-in-visual-studio).  
-  
 Il debugger di Visual Studio consente di controllare l'esecuzione di un programma e di esaminarne lo stato. Puoi usare il debugger per trovare la causa di problemi nell'app di Windows Store e per comprendere meglio il funzionamento dell'app. Quando sospendi (interrompi) l'esecuzione nel debugger, Visual Studio mostra il file di origine che contiene il codice in esecuzione ed evidenzia l'istruzione in esecuzione. Puoi esaminare i valori delle variabili, lo stack di chiamate delle funzioni in esecuzione e altri aspetti dello stato del programma. Puoi continuare a eseguire (esaminare) il programma un'istruzione alla volta per verificare come le istruzioni cambiano i valori del programma. Nelle app scritte in JavaScript, puoi esaminare e modificare il DOM della pagina.  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  

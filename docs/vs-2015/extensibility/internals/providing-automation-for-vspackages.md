@@ -1,7 +1,7 @@
 ---
 title: Automazione per i pacchetti VSPackage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96996afb545e34c1de683aceda558481a0a09e81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c527d34abcd8743cd8a521acc6ee372ae04eee6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210418"
 ---
 # <a name="providing-automation-for-vspackages"></a>Automazione per i pacchetti VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [che fornisce un'automazione per i pacchetti VSPackage](https://docs.microsoft.com/visualstudio/extensibility/internals/providing-automation-for-vspackages).  
-  
 Esistono due modi per fornire l'automazione per i pacchetti VSPackage: implementando oggetti specifici di un pacchetto VSPackage e mediante l'implementazione di oggetti di automazione standard. In genere, questi vengono usati insieme per estendere il modello di automazione dell'ambiente.  
   
 ## <a name="vspackage-specific-objects"></a>Oggetti specifici di un pacchetto VSPackage  

@@ -1,7 +1,7 @@
 ---
 title: 'Estensione Excel di esempio: classe TechnologyManager | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 440591cae5251c614c13738668bbe71d43f90600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190580"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Estensione Excel di esempio: classe TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [estensione Excel di esempio: classe TechnologyManager](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-technologymanager-class).  
-  
 Questa classe, che estende la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>, è responsabile di fornire i servizi di base per l'estensione [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Benché la classe di base disponga di numerosi metodi, in questo esempio ne viene usato solo un sottoinsieme.  
   
  Alcuni metodi restituiscono solo un valore di proprietà. Molti metodi sono progettati per consentire allo sviluppatore di eseguire l'override degli algoritmi predefiniti incorporati nel modulo dei test codificati dell'interfaccia utente. Questi metodi generano un'eccezione <xref:System.NotSupportedException> o restituiscono `null`, che indica al framework di usare l'algoritmo predefinito.  

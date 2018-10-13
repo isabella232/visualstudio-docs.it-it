@@ -1,7 +1,7 @@
 ---
 title: Set di regole minime native regole | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2b1c2f599a3f700bb9e04d3f423690b46059b385
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8163e3f95dcf6230e2ef286950edb43cdd22cbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210158"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Set di regole minime native
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [set di regole regole minime Native](https://docs.microsoft.com/visualstudio/code-quality/native-minimum-rules-rule-set).  
-  
 Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali delle applicazioni. È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.  
   
 |Regola|Descrizione|  

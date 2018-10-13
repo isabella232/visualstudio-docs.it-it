@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: utilizzare le transazioni per aggiornare il modello | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fe70656f5bcc9e8c132594ff6bb4fec646e5df5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531759"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236860"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: utilizzare le transazioni per aggiornare il modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: usare transazioni per aggiornare il modello](https://docs.microsoft.com/visualstudio/modeling/how-to-use-transactions-to-update-the-model).  
-  
 Le transazioni assicurarsi che le modifiche apportate all'archivio siano considerate come un gruppo. Le modifiche che sono raggruppate possono essere eseguito il commit o rollback come unità singola.  
   
  Ogni volta che il codice del programma modifica, aggiunge o elimina qualsiasi elemento di Store in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK, l'operazione deve essere eseguita all'interno di una transazione. Deve esistere un'istanza attiva del <xref:Microsoft.VisualStudio.Modeling.Transaction> associata con il Store quando avviene la modifica. Questo vale per tutti gli elementi del modello, relazioni, forme, diagrammi e le relative proprietà.  

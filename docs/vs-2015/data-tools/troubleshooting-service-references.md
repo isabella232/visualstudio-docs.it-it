@@ -1,7 +1,7 @@
 ---
 title: I riferimenti al servizio di risoluzione dei problemi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223964"
 ---
 # <a name="troubleshooting-service-references"></a>Risoluzione dei problemi relativi ai riferimenti al servizio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [riferimenti al servizio di risoluzione dei problemi](https://docs.microsoft.com/visualstudio/data-tools/troubleshooting-service-references).
-
 Questo argomento elenca i problemi comuni che possono verificarsi quando si sta lavorando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] oppure [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] fa riferimento [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="error-returning-data-from-a-service"></a>Errore durante la restituzione dei dati da un servizio

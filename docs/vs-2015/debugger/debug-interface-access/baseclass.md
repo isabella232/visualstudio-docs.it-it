@@ -1,7 +1,7 @@
 ---
 title: BaseClass | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c7fcff45c4d11a9ee7047222e9803ee9f1bdc58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86da35d23af05b318bcecf950064e5d8de23df0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242086"
 ---
 # <a name="baseclass"></a>BaseClass
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [BaseClass](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/baseclass).  
-  
 Ogni classe di base per un simbolo tipo definito dall'utente (UDT) è identificato da un elemento figlio con un `SymTagBaseClass` tag. Il [Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) proprietà contiene il simbolo per il tipo definito dall'utente sottostante e tutte le proprietà del tipo sottostante in questione sono disponibili come parte di questo simbolo BaseClass.  
   
 ## <a name="properties"></a>Proprietà  

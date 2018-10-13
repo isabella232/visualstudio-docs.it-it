@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: abilitare il debug per le applicazioni ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9f96a53a6ccdd505735a09d3e9c39acaa3517c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d0e7a4b6f6daf4fb93884e6d5673ce550259ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235937"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Come fare per: Attivare il debug per applicazioni ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: attivare il debug per le applicazioni ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).  
-  
 Per abilitare il debug, è necessario abilitarlo sia nella pagina **Proprietà progetto** sia nel file web.config dell'applicazione.  
   
 > [!NOTE]  
@@ -53,7 +51,7 @@ Per abilitare il debug, è necessario abilitarlo sia nella pagina **Proprietà p
 1.  Aprire il file web.config usando qualsiasi editor di testo o parser XML standard.  
   
     > [!NOTE]  
-    > Tuttavia, non è possibile accedere al file in remoto usando un Web browser. Per motivi di sicurezza [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configura Microsoft IIS per impedire l'accesso diretto del browser ai file Web. config. Se si prova ad accedere a un file di configurazione usando un browser, viene restituito l'errore di accesso HTTP 403 (accesso non consentito).  
+    > Tuttavia, non è possibile accedere al file in remoto usando un Web browser. Per motivi di sicurezza, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configura Microsoft IIS per prevenire l'accesso diretto del browser ai file Web.config. Se si prova ad accedere a un file di configurazione usando un browser, viene restituito l'errore di accesso HTTP 403 (accesso non consentito).  
   
 2.  Web.config è un file XML e di conseguenza contiene sezioni annidate contrassegnate da tag. Individuare l'elemento `configuration/system.web/compilation` . Se l'elemento di compilazione non esiste, è necessario crearlo.  
   
@@ -86,13 +84,13 @@ Il file web.config dovrebbe essere analogo a quello dell'esempio seguente. Si no
 ```  
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Rileva modifiche al file Web. config e applica le nuove impostazioni di configurazione automaticamente. Non è necessario riavviare il computer o il server IIS server perché le modifiche abbiano effetto.  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] rileva automaticamente qualsiasi modifica apportata ai file Web.config e applica le nuove impostazioni di configurazione. Non è necessario riavviare il computer o il server IIS server perché le modifiche abbiano effetto.  
   
-Un sito Web può contenere più directory e sottodirectory virtuali, ognuna delle quali può includere file Web.config. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] le applicazioni ereditano le impostazioni dal file Web. config a livelli superiori nel percorso URL. File di configurazione gerarchici che consentono di modificare le impostazioni per diverse [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applicazioni nello stesso momento, ad esempio per tutte le applicazioni sottostanti nella gerarchia. Tuttavia, se `debug` è impostato in un file di livello inferiore nella gerarchia, eseguirà l'override del valore di livello superiore.  
+Un sito Web può contenere più directory e sottodirectory virtuali, ognuna delle quali può includere file Web.config. Le applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ereditano le impostazioni dai file Web.config a livelli superiori nel percorso URL. I file di configurazione gerarchici permettono di modificare le impostazioni per diverse applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] contemporaneamente, ad esempio per tutte le applicazioni sottostanti nella gerarchia. Tuttavia, se `debug` è impostato in un file di livello inferiore nella gerarchia, eseguirà l'override del valore di livello superiore.  
   
 Ad esempio, è possibile specificare `debug="true"` in www.microsoft.com/aaa/Web.config perché qualsiasi applicazione presente nella cartella aaa e in qualsiasi sottocartella di aaa erediti l'impostazione. Pertanto, se il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dell'applicazione si trova www.microsoft.com/aaa/bbb, erediterà tale impostazione, così come qualsiasi [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] le applicazioni in www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd e così via. L'unica eccezione si verifica se una di queste applicazioni esegue l'ovveride dell'impostazione per mezzo del proprio file Web.config di livello inferiore.  
   
-Attivazione della modalità di debug influiranno notevolmente le prestazioni dei [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dell'applicazione. Ricordare di disabilitare la modalità di debug prima di distribuire un'applicazione commerciale o di condurre misurazioni delle prestazioni.  
+L'abilitazione della modalità di debug ha un notevole effetto sulle prestazioni dell'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Ricordare di disabilitare la modalità di debug prima di distribuire un'applicazione commerciale o di condurre misurazioni delle prestazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
 [Debug di applicazioni ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  

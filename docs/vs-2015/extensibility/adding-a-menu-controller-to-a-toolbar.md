@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di un Controller di Menu per una barra degli strumenti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f6d124b1dc6bcd16b0f4d62c47df521ba25b07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231179"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Aggiunta di un controller di menu a una barra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiunta di un Controller di Menu per una barra degli strumenti](https://docs.microsoft.com/visualstudio/extensibility/adding-a-menu-controller-to-a-toolbar).  
-  
 Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) procedura dettagliata e viene illustrato come aggiungere un controller di menu per la finestra degli strumenti. I passaggi illustrati in questo caso è possibile applicare anche alla barra degli strumenti che viene creato nel [aggiunta di una barra degli strumenti](../extensibility/adding-a-toolbar.md) procedura dettagliata.  
   
  Un controller di menu è un controllo split. Il lato sinistro del controller di menu Mostra l'ultimo comando, e può essere eseguito facendovi clic sopra. La parte destra del controller di menu è una freccia che, quando si fa clic, viene aperto un elenco di comandi aggiuntivi. Quando si fa clic su un comando nell'elenco, l'esecuzione del comando, e sostituisce il comando sul lato sinistro del controller di menu. In questo modo, il controller di menu funziona come un pulsante di comando che mostra sempre il comando ultimo usato da un elenco.  

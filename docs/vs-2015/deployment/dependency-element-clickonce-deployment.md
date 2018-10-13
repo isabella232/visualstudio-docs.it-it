@@ -1,7 +1,7 @@
 ---
 title: '&lt;dipendenza&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 735b37196586f540186a3ca43c9c315ede51d084
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214927"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dipendenza&gt; elemento (distribuzione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ &lt;dipendenza&gt; elemento (distribuzione ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-deployment).  
-  
 Identifica la versione dell'applicazione per l'installazione e la posizione del manifesto dell'applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -97,7 +95,7 @@ Identifica la versione dell'applicazione per l'installazione e la posizione del 
 |`size`|Facoltativo. Le dimensioni del manifesto dell'applicazione, in byte.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Obbligatorio. Questo elemento è figlio dell'elemento `dependentAssembly`. Il contenuto del `assemblyIdentity` deve essere identico a quello descritto nel [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione. La tabella seguente illustra gli attributi del `assemblyIdentity` elemento.  
+ Obbligatorio. Questo elemento è figlio dell'elemento `dependentAssembly` . Il contenuto del `assemblyIdentity` deve essere identico a quello descritto nel [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione. La tabella seguente illustra gli attributi del `assemblyIdentity` elemento.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -109,12 +107,12 @@ Identifica la versione dell'applicazione per l'installazione e la posizione del 
 |`type`|Facoltativo. Per tecnologia di installazione compatibilità con Windows side-by-side con le versioni precedenti. L'unico valore consentito è `win32`.|  
   
 ## <a name="hash"></a>hash  
- Il `hash` costituisce un elemento figlio facoltativo di `file` elemento. Il `hash` elemento non ha attributi.  
+ Il `hash` costituisce un elemento figlio facoltativo di `file` elemento. L'elemento `hash` non ha attributi.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza per assicurarsi che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non è incluso, questo controllo non verrà eseguito. Pertanto, l'omissione di `hash` elemento non è consigliato.  
   
 ## <a name="dsigtransforms"></a>dsig: Transforms  
- Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:Transforms` elemento non ha attributi.  
+ Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:Transforms` non ha attributi.  
   
 ## <a name="dsigtransform"></a>dsig: Transform  
  Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. La tabella seguente illustra gli attributi del `dsig:Transform` elemento.  
@@ -131,7 +129,7 @@ Identifica la versione dell'applicazione per l'installazione e la posizione del 
 |`Algorithm`|L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ## <a name="dsigdigestvalue"></a>dsig:  
- Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:DigestValue` elemento non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
+ Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestValue` non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
   
 ## <a name="remarks"></a>Note  
  Manifesti di distribuzione hanno in genere un singolo `assemblyIdentity` elemento che identifica il nome e la versione del manifesto dell'applicazione.  

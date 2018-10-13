@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Raccogliere dati sulle prestazioni per un sito Web | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d854345ca32500b379e68249e516f9e1efcd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532734"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185907"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: raccogliere dati sulle prestazioni per un sito Web](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-performance-data-for-a-web-site).  
-  
 Per raccogliere dati sulle prestazioni per un'applicazione Web di **, è possibile usare la** Creazione guidata sessione di prestazioni[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. È possibile profilare un'applicazione Web aperta in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oppure un sito Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] disponibile nel computer locale e non aperto nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
@@ -93,7 +91,7 @@ Per raccogliere dati sulle prestazioni per un'applicazione Web di **, è possibi
   
     -   Per i siti esterni sui quali si vuole raccogliere dati JavaScript, digitare l'URL, ad esempio http://www.contoso.com.  
   
-     Per altre informazioni, visualizzare le pagine delle proprietà per un file binario di destinazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+     Per altre informazioni, visualizzare le pagine delle proprietà per un file binario di destinazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 6.  Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli (TIP), dati da JavaScript in esecuzione nelle pagine Web o entrambi.  
   

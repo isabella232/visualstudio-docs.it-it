@@ -1,7 +1,7 @@
 ---
 title: T4 Direttiva di Output | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0eaa2d8e3fc257e14e04bad3cac706b8a3bc92a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e2d30c5d1dee578da14608a4e272fea09184a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198523"
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [direttiva Output T4](https://docs.microsoft.com/visualstudio/modeling/t4-output-directive).  
-  
 Nei modelli di testo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la direttiva `output` viene usata per definire l'estensione di file e la codifica del file trasformato.  
   
  Ad esempio, se il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto include un file di modello denominato **MyTemplate.tt** che contiene la direttiva seguente:  

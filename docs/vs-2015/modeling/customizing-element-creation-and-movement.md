@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione di spostamento e la creazione dell'elemento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 589c8c9be01477a2319943b47b329d09a80dc16f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203528"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [spostamento e la creazione degli elementi di personalizzazione](https://docs.microsoft.com/visualstudio/modeling/customizing-element-creation-and-movement).  
-  
 È possibile consentire a un elemento è possibile trascinare un altro, dalla casella degli strumenti o in un incollare o spostare l'operazione. È possibile avere gli elementi spostati collegati agli elementi di destinazione, usando le relazioni che si specificano.  
   
  Una direttiva di unione elementi (EMD) specifica che cosa avviene quando un elemento del modello è *unito* in un altro elemento del modello. Ciò si verifica quando:  

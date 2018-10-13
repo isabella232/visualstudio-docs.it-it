@@ -1,7 +1,7 @@
 ---
 title: Usando la finestra di progettazione del flusso di lavoro | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 74e193af384d91816dc2e26d11194d1632d8672b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 124df9e4f4728af8621685a3c285b50bf064f14a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184145"
 ---
 # <a name="using-the-workflow-designer"></a>Utilizzo di Progettazione flussi di lavoro
 Contenuto della sezione viene illustrato nei dettagli come creare nuove attività e nuovi progetti di flusso di lavoro usando le finestre di progettazione incorporate e l'editor espressioni ospitato da diversi ActivityDesigner.  

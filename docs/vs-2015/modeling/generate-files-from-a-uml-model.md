@@ -1,7 +1,7 @@
 ---
 title: Generare file da un modello UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 20d017c8db48f2afa3732fbf99a8361775c9f6d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226499"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generare file da un modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [generare file da un modello UML](https://docs.microsoft.com/visualstudio/modeling/generate-files-from-a-uml-model).  
-  
 Da un modello UML, è possibile generare codice programma, schemi, documenti, risorse e altri tipi di elementi. Un metodo pratico per la generazione di file di testo da un modello UML consiste nell'utilizzare [modelli di testo](../modeling/code-generation-and-t4-text-templates.md). Questi consentono di incorporare il codice programma nel testo da generare.  
   
  Esistono tre scenari principali:  

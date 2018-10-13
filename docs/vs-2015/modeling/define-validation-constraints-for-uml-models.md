@@ -1,7 +1,7 @@
 ---
 title: Definire vincoli di convalida per i modelli UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,33 +14,31 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176540"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definire vincoli di convalida per i modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [definire vincoli di convalida per i modelli UML](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 È possibile definire vincoli di convalida che verificano se il modello soddisfa una condizione specificata. Ad esempio, si può definire un vincolo che assicura che un utente non crei un ciclo di relazioni di ereditarietà. Il vincolo viene richiamato quando l'utente cerca di aprire o di salvare il modello e può essere richiamato anche manualmente. Se il vincolo non riesce, alla finestra di errore viene aggiunto un messaggio definito dall'utente. È possibile creare un pacchetto di questi vincoli in un progetto[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.  
   
  Si possono definire anche vincoli che convalidano il modello a fronte di risorse esterne, ad esempio un database. Se si desidera convalidare il codice programma in base a un diagramma livello, vedere [aggiungere la convalida architettura personalizzati a diagrammi livelli](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
- Per le versioni di Visual Studio che supportano i modelli UML, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="requirements"></a>Requisiti  
- Visualizzare [requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="applying-validation-constraints"></a>Applicazione dei vincoli di convalida  
  I vincoli di convalida vengono applicati in tre casi: quando si salva un modello, quando si apre un modello e quando si fa clic su **Convalida modello UML** nel menu **Architettura** . In ogni caso, verranno applicati solo i vincoli definiti per il caso specifico, anche se di solito si definisce ogni vincolo in modo che venga applicato in più di un caso.  
   
- Gli errori di convalida vengono segnalati nell'apposita finestra di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Fare doppio clic su un errore per selezionare gli elementi del modello errati.  
+ Gli errori di convalida vengono segnalati nell'apposita finestra di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Fare doppio clic su un errore per selezionare gli elementi del modello errati.  
   
  Per altre informazioni sull'applicazione della convalida, vedere [convalidare il modello UML](../modeling/validate-your-uml-model.md).  
   
@@ -190,17 +188,17 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1.  Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.  
   
-     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Risoluzione dei problemi**: se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non avviato:  
+     **Risoluzione dei problemi**: se non viene avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
   
     -   Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
-    -   In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel **Avvia programma esterno** campo sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
+    -   In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione.  
+2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione.  
   
 3.  Per configurare un test per il vincolo di esempio fornito nella sezione precedente:  
   
@@ -244,7 +242,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }  
 ```  
   
- Visualizzare [programmazione con l'API UML](../modeling/programming-with-the-uml-api.md) per informazioni sui metodi e i tipi utilizzabili per esplorare e leggere il modello.  
+ Vedere [Programming with the UML API](../modeling/programming-with-the-uml-api.md) per informazioni sui metodi e sui tipi utilizzabili per esplorare e leggere il modello.  
   
 ### <a name="about-validation-constraint-methods"></a>Informazioni sui metodi dei vincoli di convalida  
  Ogni vincolo di convalida è definito da un metodo nel seguente formato:  
@@ -274,7 +272,7 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` appare nell'elenco errori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+-   `"error string"` viene visualizzato nell'elenco errori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
 -   `errorCode` è una stringa che identifica l'errore in modo univoco  
   
@@ -369,7 +367,7 @@ context.LogError(... , usecase);
 |`Context.GetValue<T>()`|Ottiene un valore del tipo specificato.|  
   
 ##  <a name="Installing"></a> Installazione e disinstallazione di un'estensione  
- È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri computer.  
+ È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.  
   
 #### <a name="to-install-an-extension"></a>Per installare un'estensione  
   
@@ -381,7 +379,7 @@ context.LogError(... , usecase);
   
 2.  Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.  
   
-    -   Nel computer di destinazione deve essere una delle edizioni di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] indicata nel **vsixmanifest**.  
+    -   Nel computer di destinazione deve essere installata una delle edizioni di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] specificate in **source.extension.vsixmanifest**.  
   
 3.  Nel computer di destinazione aprire il file **.vsix** .  
   
