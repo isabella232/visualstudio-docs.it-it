@@ -1,7 +1,7 @@
 ---
 title: Area di lavoro della finestra di progettazione di XML Schema | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22515ffe0e195006f1080738fc5b0686e647d5ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae20cd6a2eb8a4e3d8c1869cc4a0c707ccdf6de2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240955"
 ---
 # <a name="xml-schema-designer-workspace"></a>Area di lavoro di Progettazione XML Schema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [area di lavoro Progettazione XML Schema](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer-workspace).  
-  
   
 Progettazione XML Schema (Progettazione XSD) è uno strumento grafico che consente di esplorare gli schemi XML. Oltre al [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), che consente di esplorare e di esplorare l'albero di XML Schema e di eseguire ricerche, progettazione XSD fornisce tre visualizzazioni che consentono di esplorare lo schema XSD in modo più dettagliato. La visualizzazione iniziale è il punto di avvio per Progettazione XSD; dalla visualizzazione iniziale, è possibile passare alle altre visualizzazioni di Progettazione XSD e vedere i dettagli relativi al set di schemi. La visualizzazione grafico consente di visualizzare una panoramica di un set di schemi e delle relazioni tra i nodi degli schemi. La visualizzazione modello di contenuto fornisce una rappresentazione grafica dei dettagli relativi a nodi dello schema locali e globali, inclusi tipi semplici e complessi, elementi, gruppi, attributi e gruppi di attributi.  
   

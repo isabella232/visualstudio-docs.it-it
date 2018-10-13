@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: eseguire il Debug di codice sorgente di .NET Framework | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c2bd633a4f6c6b0580b23d0fbf1bb25094247
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c717e1d9eccce48319d8a73dd52d7f13ce36296e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517595"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240617"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: debug del codice sorgente di .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: eseguire il Debug di .NET Framework origine](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-dotnet-framework-source).  
-  
 La versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornisce nuove funzionalità per [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] debug. Per eseguire il debug [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] origine, è necessario avere accesso ai simboli per il codice di debug. È anche necessario attivare l'esecuzione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] origine.  
   
  È possibile abilitare [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] simboli nel download e l'esecuzione di **opzioni** nella finestra di dialogo. Quando si attiva il download dei simboli, è possibile scegliere di scaricarli immediatamente o attivare solo l'opzione per eseguire il download successivamente. Se non si esegue immediatamente il download, i simboli verranno scaricati la volta successiva che si avvia il debug dell'applicazione. È inoltre possibile scaricarli manualmente dal **moduli** finestra o il **Stack di chiamate** finestra.  
