@@ -1,7 +1,7 @@
 ---
 title: Visualizzare le stringhe in un visualizzatore di stringhe | Microsoft Docs
 ms.custom: ''
-ms.date: 07/11/2017
+ms.date: 07/11/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -22,49 +22,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca6e4519a85659b36e5cf6baebaadd1d1c626f1a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274313"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Stringhe di visualizzazione in un visualizzatore di stringhe in Visual Studio
-Durante il debug, è possibile aprire un visualizzatore di stringhe per le stringhe di visualizzazione che sono troppo lunghi per visualizzare in una finestra del debugger o suggerimento dati. In molti scenari, il visualizzatore può aiutare a identificare le stringhe in formato non valido.
 
-I visualizzatori stringa predefinite standard includono testo normale, XML, HTML e JSON. Per alcuni altri tipi, ad esempio gli oggetti WPF che vengono visualizzati nel debugger di windows, ad esempio la **Auto** finestra, è anche possibile aprire i visualizzatori.
+Durante il debug in Visual Studio, è possibile visualizzare le stringhe con il Visualizzatore stringhe predefinite. Il Visualizzatore stringhe Mostra le stringhe che sono troppo lunghi per una finestra del debugger o suggerimento dati. Può anche consentono di identificare le stringhe in formato non valido.
+
+Il Visualizzatore stringhe predefinito include i testo normale, XML, HTML e JSON opzioni. È anche possibile aprire i visualizzatori per alcuni altri tipi, ad esempio gli oggetti WPF, dal **Auto** o altre finestre del debugger.
 
 ## <a name="open-a-string-visualizer"></a>Aprire un visualizzatore di stringhe
 
-Per visualizzare un testo normale, una stringa XML, HTML o JSON, fare clic sull'icona della lente di ingrandimento ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icona Visualizzatore") al passaggio del mouse su una variabile che contiene un valore stringa. Deve essere sospesa nel debugger per visualizzare l'icona della lente di ingrandimento.
+Per aprire il Visualizzatore stringhe, è necessario essere messo in pausa durante il debug. Passare il mouse su una variabile con un testo normale, XML, HTML o JSON valore stringa e selezionare l'icona della lente di ingrandimento ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icona Visualizzatore").
 
-![Aprire un visualizzatore di stringhe](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
+![Aprire un visualizzatore di stringhe](../debugger/media/dbg-tips-string-visualizers.png "Visualizzatore stringhe Open")
 
-## <a name="view-string-data"></a>Visualizzare i dati stringa
+## <a name="view-string-visualizer-data"></a>Visualizzare i dati del Visualizzatore di stringhe
 
-Il **espressione** campo nel Visualizzatore di stringa viene visualizzata la variabile corrente o l'espressione è posizionato nel debugger.
+Nella finestra del Visualizzatore di stringa, il **espressione** campo Mostra la variabile o espressione passa il mouse, e il **valore** campo viene visualizzato il valore della stringa. 
 
-Il **valore** campo viene visualizzato il valore della stringa. Il Visualizzatore di testo Mostra il testo normale.
+Uno spazio vuoto **valore** significa che il Visualizzatore scelto non riconosce la stringa. Ad esempio, il **visualizzatore XML** Mostra un valore vuoto **valore** per una stringa di testo senza tag XML o una stringa JSON. 
 
-Uno spazio vuoto **valore** indica che il visualizzatore specifico sia in grado di riconoscere il tipo di stringa. Ad esempio, il visualizzatore XML mostra un valore vuoto **valore** per una stringa di testo (con nessun tag XML) o un oggetto JSON formattato stringa. Se si desidera visualizzare una stringa non riconoscibile in un visualizzatore, usare il Visualizzatore di testo.
+Per visualizzare le stringhe che il Visualizzatore scelto non è in grado di riconoscere, scegliere il **Visualizzatore testo**. Il **Visualizzatore testo** Mostra testo normale.
 
 ### <a name="view-json-string-data"></a>Visualizzare i dati di stringa JSON
 
-Una stringa JSON ben formata risulterà simile al seguente nel Visualizzatore di JSON. JSON non può visualizzare un'icona di errore (o vuoto se non riconosciuto). Se viene visualizzata un'icona di errore, copiare e incollare la stringa JSON in uno strumento di Lint JSON, ad esempio [JSLint](https://www.jslint.com/) per identificare l'errore JSON.
+Una stringa JSON ben formata risulterà simile alla figura seguente nel Visualizzatore di JSON. JSON non può visualizzare un'icona di errore (o vuoto se non riconosciuto). Per identificare l'errore JSON, copiare e incollare la stringa in uno strumento di Lint JSON, ad esempio [JSLint](https://www.jslint.com/).
 
 ![Visualizzatore di stringhe JSON](../debugger/media/dbg-tips-string-visualizer-json.png "Visualizzatore stringhe JSON")
 
 ### <a name="view-xml-string-data"></a>Visualizzare i dati di stringa XML
 
-Una stringa in formato XML sarà simile a quanto illustrato di seguito nel visualizzatore XML. XML non valido potrebbe essere visualizzata senza i tag XML (o vuoto se non riconosciuto).
+Una stringa XML ben formata risulterà simile alla figura seguente nel visualizzatore XML. XML non valido potrebbe visualizzare senza il tag XML oppure lasciare vuoto se non è stata riconosciuta.
 
 ![Visualizzatore di stringhe XML](../debugger/media/dbg-string-visualizers-xml.png "Visualizzatore stringhe XML")
 
 ### <a name="view-html-string-data"></a>Dati di stringa di visualizzazione HTML
 
-Una stringa HTML ben formata risulterà simile alla visualizzazione che si vedrebbe se la stringa viene eseguito il rendering in un browser, come illustrato nella figura seguente. HTML non corretto potrebbero visualizzati come testo normale.
+Verrà visualizzata una stringa HTML ben formata come se viene eseguito il rendering in un browser, come illustrato nella figura seguente. HTML non corretto potrebbero visualizzati come testo normale.
 
-![Stringa HTML Visualizer](../debugger/media/dbg-string-visualizers-html.png "Visualizzatore stringhe HTML")
+![Visualizzatore stringhe HTML](../debugger/media/dbg-string-visualizers-html.png "Visualizzatore stringhe HTML")
 
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di visualizzatori personalizzati (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)

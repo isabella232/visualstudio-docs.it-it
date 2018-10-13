@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: eseguire il Debug di applicazioni Web | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,23 +24,21 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dce1129282dc7273631e261bb32d313f65ce381
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4e185b1b35a2462547ca8689dc1a4bfe80ff036
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260812"
 ---
 # <a name="how-to-debug-web-applications"></a>Procedura: eseguire il debug di applicazioni Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: eseguire il Debug di applicazioni Web](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-web-applications).  
-  
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è la tecnologia principale per lo sviluppo di applicazioni Web in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornisce potenti strumenti per il debug di applicazioni Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a livello locale o su un server remoto. Questo argomento descrive come eseguire il debug di un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] progetto durante lo sviluppo. Per informazioni su come eseguire il debug di un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] già distribuito in un server di produzione di applicazioni Web, vedere [il debug di applicazioni Web distribuite](../debugger/debugging-deployed-web-applications.md).  
   
  Per eseguire il debug di un'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]:  
   
--   È necessario disporre delle autorizzazioni richieste. Per altre informazioni, vedere [requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md).  
+-   È necessario disporre delle autorizzazioni richieste. Per altre informazioni, vedere [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
 -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] il debug deve essere abilitato nel **proprietà del progetto**.  
   

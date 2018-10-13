@@ -1,7 +1,7 @@
 ---
 title: Attività GenerateDeploymentManifest | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86b26edae7b96c9ce29bcef4ed1b37744faf68eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ad0b9919c5c567662d78573573f1bf046c93552
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529856"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261891"
 ---
 # <a name="generatedeploymentmanifest-task"></a>Attività GenerateDeploymentManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [attività GenerateDeploymentManifest](https://docs.microsoft.com/visualstudio/msbuild/generatedeploymentmanifest-task).  
-  
   
 Genera un manifesto di distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. In un manifesto di distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] viene descritta la distribuzione di un'applicazione definendone un'identità univoca, identificando caratteristiche di distribuzione come la modalità di installazione o la modalità online, specificando impostazioni e percorsi di aggiornamento dell'applicazione e indicando il manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] corrispondente.  
   

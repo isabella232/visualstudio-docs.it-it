@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: creazione di una palla da biliardo tridimensionale realistica | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f20907e33ba8a0f077c0d68c6fbfebf2fd1d0b44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303d826a22ff67ec499fcd4e8d59d6a7819a822d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274118"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procedura dettagliata: creazione di una palla da biliardo tridimensionale realistica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: creazione di una palla da biliardo 3D realistici](https://docs.microsoft.com/visualstudio/designers/walkthrough-creating-a-realistic-3-d-billiard-ball).  
-  
 In questa procedura dettagliata viene illustrato come creare una palla da biliardo tridimensionale realistica utilizzando la Modalità progettazione shader e l'editor di immagini in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L'aspetto tridimensionale della palla da biliardo viene raggiunto combinando diverse tecniche di shader con le risorse appropriate di trama.  
   
  Questo documento illustra le attività seguenti:  

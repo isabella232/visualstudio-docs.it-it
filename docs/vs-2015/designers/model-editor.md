@@ -1,7 +1,7 @@
 ---
 title: Editor dei modelli | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d53d22baf0ff1e458a2dd1ee601f59cdfe081ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264046"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Editor dei modelli](https://docs.microsoft.com/visualstudio/designers/model-editor).  
-  
 In questo documento viene descritto come utilizzare l'editor modello di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per visualizzare, creare e modificare modelli 3D.  
   
  È possibile utilizzare l'editor modello per creare modelli 3D di base completamente nuovi o per visualizzare e modificare modelli 3D più complessi creati utilizzando strumenti di modellazione 3D completi. L'editor modello supporta diversi formati di modelli 3D utilizzati nello sviluppo di applicazioni DirectX.  
@@ -317,7 +315,7 @@ In questo documento viene descritto come utilizzare l'editor modello di [!INCLUD
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Working with 3-D Assets for Games and Apps](../designers/working-with-3-d-assets-for-games-and-apps.md) (Uso di risorse 3D per giochi e app)|Fornisce una panoramica degli strumenti [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a cui attingere per poter utilizzare risorse grafiche, quali trame, immagini, modelli 3D ed effetti shader.|  
-|[Editor immagini](../designers/image-editor.md)|Descrive come utilizzare l'editor di immagini di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con trame e immagini.|  
+|[Image Editor](../designers/image-editor.md)|Descrive come utilizzare l'editor di immagini di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con trame e immagini.|  
 |[Finestra di progettazione shader](../designers/shader-designer.md)|Descrive come utilizzare Progettazione shader di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con shader.|
 
 

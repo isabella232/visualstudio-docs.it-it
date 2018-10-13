@@ -1,7 +1,7 @@
 ---
 title: Generare codice dai diagrammi classi UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222834"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generare codice da diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [generare il codice da diagrammi classi UML](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams).  
-  
 Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usare il **genera codice** comando. Per impostazione predefinita, il comando genera un tipo C# per ogni tipo UML selezionato. Tale comportamento può essere modificato o esteso modificando o copiando i modelli di testo che generano il codice. È possibile specificare un comportamento differente per i tipi contenuti nei vari pacchetti del modello.  
   
  Il **genera codice** comando è particolarmente indicato per la generazione di codice dalla selezione dell'utente di elementi e per la generazione di un file per ogni classe UML o un altro elemento. Ad esempio, nella schermata seguente sono illustrati due file C# generati da due classi UML.  
@@ -173,9 +171,9 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
     |------------------|---------------------|  
     |nome|Nome per il binding. Per eseguire l'override di un binding ereditato da un pacchetto o da un modello che lo contiene, usare lo stesso nome del binding di cui si desidera eseguire l'override.|  
     |Overwrite|Se true, il codice esistente viene sovrascritto.|  
-    |Target Name|Nome del file generato.<br /><br /> È possibile inserire le espressioni in questa stringa, ad esempio `{Name}` o `{Owner.Name}`. Ad esempio, è possibile scrivere: `{Owner.Name}_{Name}`. L'espressione viene valutata sull'elemento del modello e può usare proprietà di elementi, ma non metodi. Per trovare le proprietà possono essere usate, esaminare le proprietà dei tipi nella **Microsoft.VisualStudio.Uml.\*** . **Importante:** `{Name}` oppure `{Owner.Name}` può essere utilizzato solo nel **nome destinazione** proprietà.   Per modificare il nome della classe generata, è necessario modificare il modello. Per altre informazioni, vedere [scrittura di un modello di testo](#writing).|  
+    |Target Name|Nome del file generato.<br /><br /> È possibile inserire le espressioni in questa stringa, ad esempio `{Name}` o `{Owner.Name}`. Ad esempio, è possibile scrivere: `{Owner.Name}_{Name}`. L'espressione viene valutata sull'elemento del modello e può usare proprietà di elementi, ma non metodi. Per trovare le proprietà possono essere usate, esaminare le proprietà dei tipi nella **Microsoft.VisualStudio.Uml.\*** . **Importante:** `{Name}` oppure `{Owner.Name}` può essere utilizzato solo nel **nome destinazione** proprietà. Per modificare il nome della classe generata, è necessario modificare il modello. Per altre informazioni, vedere [scrittura di un modello di testo](#writing).|  
     |Project Path|Specifica il percorso del progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che conterrà i file di output della trasformazione. Usare valori tipizzati per creare un nuovo progetto. Fare clic sul pulsante con puntini di sospensione (**[...]** ) per selezionare un progetto esistente.<br /><br /> Se non esiste alcun progetto, verrà creato un nuovo progetto Libreria di classi C#.<br /><br /> A questo scopo, è necessario digitare direttamente il progetto. È possibile includere macro di variabili di ambiente quali %ProgramFiles% o %LocalAppData%.|  
-    |Target Directory|Cartella in cui viene generato il file di destinazione. Il percorso è relativo alla cartella del progetto.<br /><br /> È possibile usare l'espressione `{PackageStructure}` per inserire un percorso che corrisponde ai nomi dei pacchetti contenitore. Il valore predefinito è `\GeneratedCode\{PackageStructure}`. È anche possibile includere variabili di ambiente quali %TEMP% o %HomePath%. **Importante:** `{PackageStructure}` può essere utilizzato solo nelle **Directory di destinazione** proprietà.  |  
+    |Target Directory|Cartella in cui viene generato il file di destinazione. Il percorso è relativo alla cartella del progetto.<br /><br /> È possibile usare l'espressione `{PackageStructure}` per inserire un percorso che corrisponde ai nomi dei pacchetti contenitore. Il valore predefinito è `\GeneratedCode\{PackageStructure}`. È anche possibile includere variabili di ambiente quali %TEMP% o %HomePath%. **Importante:** `{PackageStructure}` può essere utilizzato solo nelle **Directory di destinazione** proprietà.|  
     |Percorso del file di modello|Modello che eseguirà la trasformazione.<br /><br /> È possibile usare i modelli forniti o crearne di personalizzati. I modelli forniti sono disponibili nel percorso seguente:<br /><br /> … \Programmi\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  È possibile collegare a un elemento il numero di associazioni desiderato.  

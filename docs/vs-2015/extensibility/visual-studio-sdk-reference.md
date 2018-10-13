@@ -1,7 +1,7 @@
 ---
 title: Riferimento al SDK di Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 048423c5ff981b1c3b14ccb9db1ce0ffe1076209
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db82d0ccfbd4a82686e2b8069a26d3cdadffb73b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232063"
 ---
 # <a name="visual-studio-sdk-reference"></a>Informazioni di riferimento su Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [riferimenti di Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk-reference).  
-  
 In questa sezione contiene informazioni su Visual Studio gli spazi dei nomi relativi spazi dei nomi e altre aree di interesse per gli sviluppatori che usano Visual Studio SDK.  
   
 ## <a name="in-this-section"></a>In questa sezione

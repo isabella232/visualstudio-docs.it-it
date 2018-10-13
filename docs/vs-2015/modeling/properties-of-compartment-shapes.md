@@ -1,7 +1,7 @@
 ---
 title: Proprietà delle forme di raggruppamento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8ae8a384fd554185c35abe007472decbe2d91242
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5730093a9eda6464bd6b67fa09976a4e9cd2f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216385"
 ---
 # <a name="properties-of-compartment-shapes"></a>Proprietà delle forme di raggruppamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [delle proprietà di forme raggruppamento](https://docs.microsoft.com/visualstudio/modeling/properties-of-compartment-shapes).  
-  
 Forme raggruppamento sono una delle forme che è possibile usare per la visualizzazione di una classe di dominio in un linguaggio specifico di dominio. È possibile espandere e comprimere i raggruppamenti.  
   
  Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  

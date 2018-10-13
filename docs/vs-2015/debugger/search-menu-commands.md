@@ -1,7 +1,7 @@
 ---
 title: Cercare i comandi di Menu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4781251bb367c06424979d053ec795316f1d817c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfa037cd2bb6555b8249e0cd405d301156391638
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272389"
 ---
 # <a name="search-menu-commands"></a>comandi del menu Cerca
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [comandi del Menu Cerca](https://docs.microsoft.com/visualstudio/debugger/search-menu-commands).  
-  
 Il **ricerca** menu fornisce comandi per eseguire la ricerca di specifici di windows.  
   
  **Trova messaggio/finestra/processo/Thread**  

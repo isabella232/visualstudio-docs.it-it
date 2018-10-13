@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammi dei componenti UML: Riferimento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f628ebfa84246c6d991543352f4de36a51cc7fbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99188aa069a830d17e31733ad20b0ae727d63f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531888"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206741"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagrammi dei componenti UML: riferimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [diagrammi dei componenti UML: riferimento](https://docs.microsoft.com/visualstudio/modeling/uml-component-diagrams-reference).  
-  
 In Visual Studio, un *diagramma dei componenti* vengono illustrate le parti di una progettazione di un sistema software. Un diagramma dei componenti consente di visualizzare la struttura generale del sistema e il comportamento del servizio che tali parti forniscono e utilizzano tramite le interfacce. Per creare un diagramma dei componenti UML, nelle **Architecture** menu, fare clic su **nuovo diagramma livello o UML**.  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

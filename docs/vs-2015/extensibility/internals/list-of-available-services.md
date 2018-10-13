@@ -1,7 +1,7 @@
 ---
 title: Elenco dei servizi disponibili | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b09e58ee64eeb27940ea30f9a03429706b720cf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658a4406b16c3f79f3c485e62e6de8027bb35167
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248105"
 ---
 # <a name="list-of-available-services"></a>Elenco di servizi disponibili
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elenco di servizi disponibili](https://docs.microsoft.com/visualstudio/extensibility/internals/list-of-available-services).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e Visual Studio SDK supportano i servizi seguenti. Alcuni pacchetti offrono i propri servizi non elencati qui, ad esempio, servizi di linguaggio non è un GUID del singolo servizio. È necessario utilizzare il nome del linguaggio per trovare il GUID del servizio di linguaggio nel Registro di sistema.  
   
  Per ottenere l'interfaccia primaria o interfacce con ogni servizio, utilizzare il GUID di servizio è elencato qui o ottenuto da un'altra origine (ad esempio, i servizi di linguaggio).  

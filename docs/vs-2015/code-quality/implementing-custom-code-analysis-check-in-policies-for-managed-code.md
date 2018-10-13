@@ -1,7 +1,7 @@
 ---
 title: Implementazione di criteri analisi codice personalizzati Check-in per codice gestito | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533108"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268970"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementazione di criteri di archiviazione dell'analisi codice personalizzati per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analisi del codice personalizzata che implementa criteri di archiviazione per Managed Code](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code).  
-  
 Un'analisi del codice dei criteri di archiviazione consente di specificare un set di regole che i membri di un progetto team devono eseguire nel codice sorgente prima che venga verificata controllo della versione. Microsoft offre un set di standard *set di regole* tale analisi del codice di gruppo le regole in aree funzionali. *Set di regole di criteri di archiviazione personalizzati* specificano un set di regole di analisi di codice specifici di un progetto team. Un set di regole viene archiviato in un file con estensione ruleset.  
   
  I criteri di archiviazione vengono impostati a livello di progetto team e specificati dalla posizione di un file con estensione ruleset nella struttura di controllo della versione. Non sono previste restrizioni sul percorso controllo della versione del set di regole personalizzate dei criteri del team.  

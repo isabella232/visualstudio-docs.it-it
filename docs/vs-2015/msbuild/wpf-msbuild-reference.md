@@ -1,7 +1,7 @@
 ---
 title: Informazioni di riferimento su MSBuild WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ce51d31abb51c7cd63273b7e50c9ebd2b8499c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7b02761cad83684087099de7a061d7eed38d83b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263380"
 ---
 # <a name="wpf-msbuild-reference"></a>Informazioni di riferimento su MSBuild WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [riferimenti a MSBuild WPF](https://docs.microsoft.com/visualstudio/msbuild/wpf-msbuild-reference).  
-  
   
 Windows Presentation Foundation (WPF) estende Microsoft Build Engine (MSBuild) con supporto aggiuntivo per la compilazione, documentato in questa sezione.  
   

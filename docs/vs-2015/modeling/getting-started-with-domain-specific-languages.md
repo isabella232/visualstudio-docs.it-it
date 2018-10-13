@@ -1,7 +1,7 @@
 ---
 title: Introduzione ai linguaggi specifici dei domini | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 128c96c6bd400f74ac698df550fdba70ffec2eed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc0cf72be3fccbfdafd5ab3a7570ea6aac900f11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251979"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici del dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Introduzione ai linguaggi specifici del dominio](https://docs.microsoft.com/visualstudio/modeling/getting-started-with-domain-specific-languages).  
-  
 Questo argomento illustra i concetti di base nella definizione e uso di un linguaggio specifico di dominio (DSL) creato con il SDK di modellazione per Visual Studio.  
   
  Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [alcuna and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
@@ -115,7 +113,7 @@ Questo argomento illustra i concetti di base nella definizione e uso di un lingu
   
      Il linguaggio DSL si basa e viene installato nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L'istanza sperimentale accetta le impostazioni da un sottoalbero distinto del Registro di sistema, in cui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] le estensioni vengono registrate a scopo di debug. Le normali istanze di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non sono disponibili per le estensioni registrate non esiste.  
+     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . L'istanza sperimentale accetta le impostazioni da un sottoalbero distinto del Registro di sistema, in cui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] le estensioni vengono registrate a scopo di debug. Le normali istanze di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non sono disponibili per le estensioni registrate non esiste.  
   
 3.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aprire il file di modello denominato **Test** dalla **Esplora**.  
   

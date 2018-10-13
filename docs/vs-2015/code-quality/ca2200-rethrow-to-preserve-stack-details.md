@@ -1,7 +1,7 @@
 ---
 title: 'CA2200: eseguire il Rethrow per conservare i dettagli dello stack | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5a79dd4f12a2d97cb707a38f4a46e5a20a8436b1
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 0dba01ae129432371f8b4fa84a75e93598231428
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264927"
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Eseguire il rethrow per conservare i dettagli dello stack
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [CA2200 eseguire il: Rethrow per conservare i dettagli dello stack](https://docs.microsoft.com/visualstudio/code-quality/ca2200-rethrow-to-preserve-stack-details).
-
 |||
 |-|-|
 |TypeName|RethrowToPreserveStackDetails|

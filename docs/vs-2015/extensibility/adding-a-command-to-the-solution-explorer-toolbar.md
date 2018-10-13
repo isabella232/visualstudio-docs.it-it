@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di un comando alla barra degli strumenti di Esplora soluzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254399"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Aggiunta di un comando alla barra degli strumenti di Esplora soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiunta di un comando alla barra degli strumenti Esplora soluzione](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar).  
-  
 Questa procedura dettagliata viene illustrato come aggiungere un pulsante per la **Esplora soluzioni** sulla barra degli strumenti.  
   
  Qualsiasi comando in una barra degli strumenti o menu viene chiamato un pulsante in Visual Studio. Quando si fa clic sul pulsante, viene eseguito il codice nel gestore del comando. In genere, i comandi correlati vengono raggruppati insieme per formare un gruppo. I menu o barre degli strumenti fungono da contenitori per i gruppi. La priorità determina l'ordine in cui vengono visualizzati i singoli comandi in un gruppo dal menu o sulla barra degli strumenti. È possibile impedire la visualizzazione sulla barra degli strumenti o nel menu controllando la visibilità di un pulsante. Un comando che è racchiuso un `<VisibilityConstraints>` verrà visualizzata la sezione del file con estensione vsct solo nel contesto associato. La visibilità non può essere applicata ai gruppi.  

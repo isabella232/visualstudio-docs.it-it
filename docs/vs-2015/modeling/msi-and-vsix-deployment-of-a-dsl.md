@@ -1,7 +1,7 @@
 ---
 title: Distribuzione MSI e VSIX di un linguaggio DSL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9842dd41b01d10405c3e3cae0d0dde2a704ecdf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7c1ad9b9790a7d7fda27bab0d409480f8114d3a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590802"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258297"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [distribuzione MSI e VSIX di un linguaggio DSL](https://docs.microsoft.com/visualstudio/modeling/msi-and-vsix-deployment-of-a-dsl).  
-  
 È possibile installare un linguaggio specifico di dominio nel proprio computer o in altri computer. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] deve essere già installato nel computer di destinazione.  
   
 ##  <a name="which"></a> Scelta tra distribuzione MSI e VSIX  

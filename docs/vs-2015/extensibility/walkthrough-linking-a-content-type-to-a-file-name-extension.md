@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1742da19e2d99cbb22d930b7146b1f9859e19cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45534f4a85cd289360c098083228ac5f28025a90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261729"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: collegamento di un tipo di contenuto a un'estensione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: collegamento di un tipo di contenuto a un'estensione di File](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension).  
-  
 È possibile definire il proprio tipo di contenuto e un collegamento un'estensione di file con estensioni dell'editor Managed Extensibility Framework (MEF). In alcuni casi, l'estensione è già stato definito da un servizio di linguaggio; Tuttavia, per usarlo con MEF è comunque necessario collegarlo a un tipo di contenuto.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -34,13 +32,13 @@ La versione più recente di questo argomento è reperibile in [procedura dettagl
   
 ## <a name="creating-a-mef-project"></a>Creazione di un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `ContentTypeTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `ContentTypeTest`.  
   
 2.  Nel **vsixmanifest** file, andare alla **asset** e impostare il **tipo** campo **MEFComponent**, il **sorgente** campo **un progetto nella soluzione corrente**e la **progetto** campo per il nome del progetto.  
   
 ## <a name="defining-the-content-type"></a>Definizione del tipo di contenuto  
   
-1.  Aggiungere un file di classe e denominarla `FileAndContentTypes`.  
+1.  Aggiungere un file di classe e assegnargli il nome `FileAndContentTypes`.  
   
 2.  Aggiungere riferimenti agli assembly riportati di seguito:  
   

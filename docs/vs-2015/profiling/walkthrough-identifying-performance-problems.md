@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Identificazione dei problemi di prestazioni | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3227329f972dcb8d3aba4380ca816f137ef06f6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274482"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Procedura dettagliata: Identificazione dei problemi di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: identificazione dei problemi di prestazioni](https://docs.microsoft.com/visualstudio/profiling/walkthrough-identifying-performance-problems).  
-  
 Questa procedura dettagliata illustra come eseguire la profilatura di un'applicazione per identificare i problemi di prestazioni.  
   
  In questa procedura dettagliata verrà illustrato il processo di profilatura di un'applicazione gestita e sarà descritto come usare il campionamento e la strumentazione per isolare e identificare i problemi di prestazioni nell'applicazione.  

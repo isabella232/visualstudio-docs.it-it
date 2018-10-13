@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di dati di interazione tra livelli dalla riga di comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce7713b39acb7736e34f6ab6017b0cd32b1e1cfa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228417"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Aggiunta di dati di interazione tra livelli dalla riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiunta di dati di interazione tra livelli dalla riga di comando](https://docs.microsoft.com/visualstudio/profiling/adding-tier-interaction-data-from-the-command-line).  
-  
 La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui tempi di esecuzione delle chiamate [!INCLUDE[vstecado](../includes/vstecado-md.md)] sincrone nelle funzioni di applicazioni multilivello che comunicano con uno o più database.  
   
  **Windows 8 e Windows Server 2012**  
@@ -41,7 +39,7 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
  **Raccolta di dati TIP in un computer remoto**  
   
- Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il **vs\_profiler\_**_\<piattaforma >_ **\_**  _\<Lingua >_**.exe** file la _% VSInstallDir %_**\Team Tools\Setups**cartella di Visual Studio nel computer remoto del computer e installarlo. Non è possibile utilizzare gli strumenti di profilatura di [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) download del pacchetto.  
+ Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il **vs\_profiler\_**_\<piattaforma >_ **\_**  _\<Lingua >_**.exe** file la _% VSInstallDir %_**\Team Tools\Setups**cartella di Visual Studio nel computer remoto del computer e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download [Remote Tools per Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  **Report TIP**  
   

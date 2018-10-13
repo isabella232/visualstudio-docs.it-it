@@ -1,14 +1,14 @@
 ---
 title: Introduzione a Visual c# e Visual Basic | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
 - Visual Basic tutorial
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d526da8cb5013de7f56d5cc43b8ee2ec52014b47
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517955"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253773"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Guida introduttiva a Visual C# e Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Introduzione a Visual c# e Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic).  
-  
 Documentazione di riferimento ideale per chi non ha familiarità con Visual C# o Microsoft Visual Basic. La Guida introduttiva è composta da una serie di lezioni sequenziali contenenti informazioni introduttive su Visual C# e Visual Basic che consentono di scrivere ottimi programmi software divertendosi.  
   
  Per altre informazioni su Visual C++, vedere [Risorse di Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  

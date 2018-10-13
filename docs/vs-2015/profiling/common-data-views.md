@@ -1,7 +1,7 @@
 ---
 title: Visualizzazioni dei dati comuni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1253d6ca6a2dc80c1d8875e729f532944038b1b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4bcd83f3be97400b3b6f52646732d7a82ddd2849
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255879"
 ---
 # <a name="common-data-views"></a>Visualizzazioni dei dati comuni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazioni dei dati comuni](https://docs.microsoft.com/visualstudio/profiling/common-data-views).  
-  
 Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i report dei file di dati del profiler comuni a tutti i metodi di profilatura.  
   
 ## <a name="in-this-section"></a>In questa sezione  
@@ -38,10 +36,10 @@ Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i re
  [Visualizzazione Chiamante/Chiamato](../profiling/caller-callee-view.md)  
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.  
   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)  
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)  
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.  
   
- [Visualizzazione moduli](../profiling/modules-view.md)  
+ [Visualizzazione Moduli](../profiling/modules-view.md)  
  Descrive la visualizzazione e il report Moduli. Le colonne di dati dipendono dal metodo di profilatura.  
   
  [Visualizzazione Funzioni](../profiling/functions-view.md)  

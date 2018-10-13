@@ -1,7 +1,7 @@
 ---
 title: Linee guida per la scrittura di modelli di testo T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5e9d2bfcd0e036f3775de768edff320dfcf44066
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4d0b435544ffd77292e8cad217247733cac4075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272233"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Linee guida per la scrittura di modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [linee guida per i modelli di testo T4 di scrittura](https://docs.microsoft.com/visualstudio/modeling/guidelines-for-writing-t4-text-templates).  
-  
 Potrebbero essere utile se si desidera generare codice programma o altre risorse dell'applicazione in queste linee guida generali [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le regole non sono corretti.  
   
 ## <a name="guidelines-for-design-time-t4-templates"></a>Linee guida per i modelli T4 in fase di progettazione  

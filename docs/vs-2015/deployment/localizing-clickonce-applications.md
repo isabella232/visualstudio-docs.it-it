@@ -1,7 +1,7 @@
 ---
 title: Localizzazione di applicazioni ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 285c1273114fe7f59b2ee0bb6bc612d18cbaf32e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525422"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261469"
 ---
 # <a name="localizing-clickonce-applications"></a>Localizzazione delle applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [localizzazione di applicazioni ClickOnce](https://docs.microsoft.com/visualstudio/deployment/localizing-clickonce-applications).  
-  
 La localizzazione è il processo di adattamento di un'applicazione a impostazioni cultura specifiche. Questo processo consiste nel tradurre il testo dell'interfaccia utente in una lingua specifica di un paese/area geografica, usare la formattazione di data e valuta corretta, regolare la dimensione dei controlli di un form e, se necessario, eseguire il mirroring dei controlli da destra verso sinistra.  
   
  La localizzazione di un'applicazione comporta la creazione di uno o più assembly satellite. In ogni assembly sono contenute stringhe dell'interfaccia utente, immagini e altre risorse specifiche di determinate impostazioni cultura. Nel file eseguibile principale dell'applicazione sono contenute le stringhe delle impostazioni cultura predefinite dell'applicazione.  
@@ -66,7 +64,7 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
 ## <a name="generate-one-deployment-for-each-culture"></a>Generare una distribuzione per le singole impostazioni cultura  
  In questa strategia di distribuzione vengono generate più distribuzioni. In ogni distribuzione viene incluso solo l'assembly satellite necessario per impostazioni cultura specifiche e la distribuzione viene contrassegnata come specifica di tali impostazioni cultura.  
   
- Per usare questo metodo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], impostare il **Publish Language** proprietà il **pubblica** pressione di tab per l'area desiderata. L'assembly satellite richiesto per il paese/regione selezionato verrà incluso automaticamente in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e tutti gli altri assembly satellite verranno esclusi dalla distribuzione.  
+ Per usare questo metodo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], impostare il **Publish Language** proprietà il **pubblica** pressione di tab per l'area desiderata. L'assembly satellite richiesto per il paese/area geografica selezionato verrà incluso automaticamente in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e tutti gli altri assembly satellite verranno esclusi dalla distribuzione.  
   
  Questa stessa operazione può essere eseguita con lo strumento MageUI.exe in Microsoft [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Usare la **Popola** pulsante il **file** scheda del manifesto dell'applicazione per escludere tutti gli altri assembly satellite dalla directory dell'applicazione, quindi impostare il **delle impostazioni cultura**campo di **nome** scheda per il manifesto della distribuzione MageUI.exe. Questi passaggi non consentono solo di includere l'assembly satellite corretto, ma anche di impostare l'attributo `language` dell'elemento `assemblyIdentity` nel manifesto della distribuzione sul valore delle impostazioni cultura corrispondenti.  
   

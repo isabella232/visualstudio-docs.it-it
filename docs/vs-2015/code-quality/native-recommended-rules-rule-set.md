@@ -1,7 +1,7 @@
 ---
 title: Set di regole regole consigliate native | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345acf57686f57c79aa0d40ed5fdbf288475b156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbdb356a47e398bfa7b3417c876b5a1f5027543d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200674"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Set di regole consigliate native
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [set di regole regole consigliate Native](https://docs.microsoft.com/visualstudio/code-quality/native-recommended-rules-rule-set).  
-  
 Le regole consigliate Native orientate ai problemi più critici e comuni nel codice nativo, incluse potenziali lacune nella protezione e arresti anomali delle applicazioni.  È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.  Questo set di regole è progettato per funzionare con l'edizione di Visual Studio Professional e versioni successive.  
   
 |Regola|Descrizione|  

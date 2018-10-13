@@ -1,7 +1,7 @@
 ---
 title: Eliminare gli avvisi tramite l'attributo SuppressMessage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ea1aff6aa086c5babb3e6ecf52e7427ffa06813
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91ae1c5d15ddbb364aeba16c2c4de49ce19d09c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205959"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Rimuovere avvisi tramite l'attributo SuppressMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [non visualizzare avvisi tramite l'utilizzo dell'attributo SuppressMessage](https://docs.microsoft.com/visualstudio/code-quality/suppress-warnings-by-using-the-suppressmessage-attribute).  
-  
 Spesso è utile indicare che l'avviso è applicabile per informare i membri del team che è stato esaminato il codice e che è stato rilevato che l'avviso deve essere eliminato. In origine la soppressione (ISS) consente allo sviluppatore di inserire l'attributo che elimina l'avviso in corrispondenza della posizione che ha generato l'avviso. È possibile aggiungere l'attributo ISS direttamente al file di origine oppure è possibile usare il menu di scelta rapida di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
 ## <a name="in-this-section"></a>In questa sezione  
