@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Prima applicazione desktop WPF | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5994c17ff4e7e6071a22d235ab6888727b9ed026
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47591021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289919"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procedura dettagliata: Applicazione desktop WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: My Applicazione2 di Desktop WPF prima](https://docs.microsoft.com/visualstudio/designers/walkthrough-my-first-wpf-desktop-application2).  
-  
 name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzione allo sviluppo di Windows Presentation Foundation (WPF). Verrà creata un'applicazione di base che include gli elementi comuni alla maggior parte delle applicazioni desktop WPF: markup XAML, code-behind, definizioni delle applicazioni, controlli, layout, data binding e stili.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Creazione del progetto di applicazione  

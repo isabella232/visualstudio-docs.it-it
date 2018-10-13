@@ -1,7 +1,7 @@
 ---
 title: Il debug, finestra di dialogo Opzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a03eb60900e0634bef6fedd1200d8633ad7b93d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea3c784aa5920935976ccbf873fd49919f9372fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293865"
 ---
 # <a name="debugging-options-dialog-box"></a>Debug, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Debugging, Options Dialog Box](https://docs.microsoft.com/visualstudio/debugger/debugging-options-dialog-box).  
-  
 Il **debug** cartella, nella **opzioni** nella finestra di dialogo il **strumenti** menu, sono disponibili le pagine seguenti, che consentono di specificare i debugger opzioni dello strumento.  
   
 -   [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)  

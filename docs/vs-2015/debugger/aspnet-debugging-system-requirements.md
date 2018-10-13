@@ -1,7 +1,7 @@
 ---
 title: 'Debug di ASP.NET: Requisiti di sistema | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5386390261028fd635f93bc06d3a3fc8805ebdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57cdfc52079a11bfb3bd83baa2e3ff2484d368f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286481"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Requisiti di sistema per il debug di ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [debug ASP.NET: requisiti di sistema](https://docs.microsoft.com/visualstudio/debugger/aspnet-debugging-system-requirements).  
-  
-In questo argomento descrive i requisiti software e di sicurezza per [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] scenari di debug:  
+In questo argomento vengono descritti i requisiti software e di sicurezza per gli scenari di debug di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
   
 -   Debug locale in cui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e l'applicazione Web vengono eseguiti nello stesso computer. Questo scenario presenta due varianti:  
   
@@ -47,7 +45,7 @@ In questo argomento descrive i requisiti software e di sicurezza per [!INCLUDE[v
 ## <a name="security-requirements"></a>Requisiti di sicurezza  
  Per il debug remoto, i computer locale e remoto devono appartenere a una configurazione di dominio o di gruppo di lavoro.  
   
- Per eseguire il debug del processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], è necessario disporre delle autorizzazioni appropriate. Per impostazione predefinita [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] le applicazioni eseguite con il **ASPNET** utente. Se il processo di lavoro è in esecuzione come **ASPNET**o come **SERVIZIO DI RETE**, per eseguirne il debug è necessario disporre dei privilegi di amministratore.  
+ Per eseguire il debug del processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , è necessario disporre delle autorizzazioni appropriate. Per impostazione predefinita, le applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] vengono eseguite come utente **ASPNET** . Se il processo di lavoro è in esecuzione come **ASPNET**o come **SERVIZIO DI RETE**, per eseguirne il debug è necessario disporre dei privilegi di amministratore.  
   
  Il nome del processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni, vedere [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

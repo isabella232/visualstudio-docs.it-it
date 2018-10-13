@@ -1,7 +1,7 @@
 ---
 title: Risorse della community di WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06b7022f44f6aa8c180e28ef13493d17c1a008df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 326670dcb5087961b17d45f8f945c989da044c9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297102"
 ---
 # <a name="wpf-community-resources"></a>Risorse della community di WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [le risorse della Community di WPF](https://docs.microsoft.com/visualstudio/designers/wpf-community-resources).  
-  
 Microsoft mette a disposizione numerose risorse della community per conoscere, discutere e fornire commenti e suggerimenti su Windows Presentation Foundation (WPF), inclusi blog creati da membri del team WPF e leader della community, forum e il centro commenti e suggerimenti di Microsoft Connect.  
   
 ## <a name="community"></a>Community  

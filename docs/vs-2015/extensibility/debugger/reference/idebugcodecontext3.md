@@ -1,7 +1,7 @@
 ---
 title: IDebugCodeContext3 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7064cddbf81a01e7d55d64249d4ff4da6e585728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc3ed9762a781b26c6bf12e0c51fa95efaf9056b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529841"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294996"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [IDebugCodeContext3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcodecontext3).  
-  
 Estende la [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) interfaccia per abilitare il recupero delle interfacce di modulo e processo.  
   
 ## <a name="syntax"></a>Sintassi  

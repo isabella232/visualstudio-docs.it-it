@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Oggetti mancanti a causa della Pipeline configurati in modo errato | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5cbe580bed0cda79a5a218109be1fd7f633f115
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f1b0d94fcc04c8f7ca8c2deb10af4c5dcc0cbbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530391"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293527"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: oggetti mancanti a causa di una pipeline configurata in modo non corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: mancano gli oggetti a causa della Pipeline non configurato correttamente](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-misconfigured-pipeline).  
-  
-Questa procedura dettagliata illustra come usare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gli strumenti di diagnostica della grafica per esaminare un oggetto mancante a causa di un pixel shader non impostato.  
+Questa procedura dettagliata descrive come usare gli strumenti della barra degli strumenti Diagnostica della grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per individuare un problema dovuto a un oggetto mancante a causa di un pixel shader non impostato.  
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  
   
@@ -50,7 +48,7 @@ Questa procedura dettagliata illustra come usare il [!INCLUDE[vsprvs](../include
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Per esaminare un frame in un log di grafica  
   
-1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], caricare un documento di log di grafica contenente un frame che mostra l'oggetto mancante. Verrà visualizzata una nuova scheda del log della grafica [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Nella parte superiore di questa scheda è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.  
+1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]caricare un log di grafica contenente un frame che mostra l'oggetto mancante. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]viene visualizzata una nuova scheda del log di grafica. Nella parte superiore di questa scheda è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.  
   
 2.  In **Elenco frame**selezionare un frame indicante che l'oggetto non è visualizzato. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la scheda del log di grafica ha un aspetto simile al seguente:  
   

@@ -1,7 +1,7 @@
 ---
 title: Debug degli Script lato client | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5ef2f9640922b1379d30979519761ca009e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288028"
 ---
 # <a name="client-side-script-debugging"></a>Debug di script sul lato client
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [debug degli Script lato Client](https://docs.microsoft.com/visualstudio/debugger/client-side-script-debugging).  
-  
 Il debugger di Visual Studio offre un ambiente di debug completo per l'individuazione e la correzione degli errori negli script lato client delle pagine ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Apertura di documenti di script  
@@ -67,14 +65,14 @@ Il debugger di Visual Studio offre un ambiente di debug completo per l'individua
 ## <a name="debugging-ajax-script-applications"></a>Debug di applicazioni script AJAX  
  Nelle applicazioni Web che supportano AJAX viene fatto largo uso di codice script e vengono poste serie problematiche di debug. Per informazioni sulle tecniche di debug AJAX, vedere  
   
- [Debug e Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Limitazioni del debug degli Script](../debugger/limitations-on-script-debugging.md)   
  [Variabile Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Finestra di controllo immediato](../ide/reference/immediate-window.md)   
- [Debug e Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
 
 
 

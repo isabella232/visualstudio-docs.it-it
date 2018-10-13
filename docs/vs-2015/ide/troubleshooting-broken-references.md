@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi relativi ai riferimenti interrotti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6cee6fcd845630b7f980fab602193f845aab458c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292942"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [risolvere i problemi relativi ai riferimenti interrotti](https://docs.microsoft.com/visualstudio/ide/troubleshooting-broken-references).  
-  
 Se l'applicazione tenta di usare un riferimento interrotto, viene generato un errore di eccezione. L'impossibilità di trovare il componente a cui si è fatto riferimento è la causa principale dell'errore, ma esistono diverse situazioni in cui un riferimento può essere considerato interrotto. Di seguito è riportato l'elenco delle cause di interruzione di un riferimento.  
   
 -   Il percorso del riferimento del progetto non è corretto o è incompleto.  

@@ -1,7 +1,7 @@
 ---
 title: Attività XmlPeek | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f85283ec6e3d9f172bc081363403863a94be89c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c6ad86c061d089b7cedaf040082fe9f51ae26120
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289770"
 ---
 # <a name="xmlpeek-task"></a>Attività XmlPeek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [attività XmlPeek](https://docs.microsoft.com/visualstudio/msbuild/xmlpeek-task).  
-  
   
 Restituisce valori come specificato dalla query XPath da un file XML.  
   

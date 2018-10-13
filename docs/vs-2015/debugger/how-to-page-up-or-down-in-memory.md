@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: pagina su o freccia giù in memoria | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d443955af62f2375357828c0513bbdee289a781
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f49664edc622c9944015c4cea9814a7deb2cfe7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292682"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Procedura: spostare verso l'alto o verso il basso una pagina di memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: pagina su o freccia giù in memoria](https://docs.microsoft.com/visualstudio/debugger/how-to-page-up-or-down-in-memory).  
-  
 Quando si visualizza il contenuto della memoria in un **memoria** finestra o il **Disassembly** finestra, è possibile usare la barra di scorrimento verticale per spostarsi verso l'alto o verso il basso nello spazio di memoria.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Per spostarsi verso l'alto o verso il basso di una pagina di memoria  

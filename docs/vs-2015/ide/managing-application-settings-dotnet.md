@@ -1,7 +1,7 @@
 ---
 title: Gestione delle impostazioni di un'applicazione (.NET)| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc739c3ad34d5ed3b3de0a72ec76245c1ba0c155
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531222"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289510"
 ---
 # <a name="managing-application-settings-net"></a>Gestione delle impostazioni di un'applicazione (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [le impostazioni di gestione di applicazioni (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet).  
-  
 Le impostazioni dell'applicazione consentono di archiviare le informazioni sull'applicazione in modo dinamico. Le impostazioni consentono di archiviare nel computer client le informazioni che non devono essere incluse nel codice dell'applicazione (ad esempio una stringa di connessione), le preferenze dell'utente e altre informazioni necessarie in fase di esecuzione.  
   
  Le impostazioni dell'applicazione sostituiscono le proprietà dinamiche usate nelle versioni precedenti di Visual Studio.  

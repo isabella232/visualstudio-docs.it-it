@@ -1,7 +1,7 @@
 ---
 title: Creazione di una finestra degli strumenti a istanza multipla | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527608"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286364"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Creazione di una finestra degli strumenti a istanze multiple
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di una finestra degli strumenti a più istanze](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window).  
-  
 È possibile programmare una finestra degli strumenti in modo che più istanze, sono possibile aprire contemporaneamente. Per impostazione predefinita, finestre degli strumenti possono avere una sola istanza aprire.  
   
  Quando si usa una finestra degli strumenti a istanza multipla, è possibile mostrare diverse fonti correlate di informazioni nello stesso momento. Ad esempio, è possibile inserire un multilinea <xref:System.Windows.Forms.TextBox> controllare in una finestra degli strumenti a istanza multipla, in modo che siano disponibili contemporaneamente diversi frammenti di codice durante una sessione di programmazione. Inoltre, ad esempio, è possibile inserire un <xref:System.Windows.Forms.DataGrid> casella controllo e un elenco di riepilogo a discesa in una finestra degli strumenti a istanza multipla, in modo che sia possibile rilevare numerose origini dati in tempo reale contemporaneamente.  

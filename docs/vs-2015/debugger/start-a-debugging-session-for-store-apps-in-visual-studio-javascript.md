@@ -1,7 +1,7 @@
 ---
 title: Avviare una sessione di debug per le app di Store in Visual Studio (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9131c0e9a9b1b329a2c24d02e0988e68d701987b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6818383fd5da157359e74effc86c69d181b32be2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294983"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Avviare una sessione di debug per le app dello Store in Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [avviare una sessione di debug per le app di Store in Visual Studio (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript).  
-  
 Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Questo argomento descrive come avviare una sessione di debug per app Windows Store scritte in JavaScript e HTML5. Puoi avviare il debug con una sola sequenza di tasti oppure puoi configurare la sessione di debug per scenari specifici e poi scegliere il modo in cui avviare l'app.  
@@ -112,7 +110,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |||  
 |-|-|  
 |**Computer locale**|Esegue il debug dell'app nella sessione corrente nel computer locale. Visualizzare [Run Windows Store app nel computer locale](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-|**Simulatore**|Esegue il debug dell'app nel simulatore di Visual Studio per le app in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. Il simulatore è una finestra del desktop che consente di eseguire il debug delle funzionalità del dispositivo, ad esempio i movimenti tocco e la rotazione del dispositivo, che non sono disponibile nel computer locale. Visualizzare [Run Windows Store app nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+|**Simulatore**|Esegue il debug dell'app nel simulatore di Visual Studio per le app in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] . Il simulatore è una finestra del desktop che consente di eseguire il debug delle funzionalità del dispositivo, ad esempio i movimenti tocco e la rotazione del dispositivo, che non sono disponibile nel computer locale. Visualizzare [Run Windows Store app nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md).|  
 |**Computer remoto**|Esegue il debug dell'app in un dispositivo connesso al computer locale su una rete Intranet o collegato direttamente tramite un cavo Ethernet. Per eseguire il debug in modalità remota, Visual Studio Remote Tools deve essere installato e in esecuzione sul dispositivo remoto. Visualizzare [Run Windows Store App in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
  Se scegli **Computer remoto**, specifica il nome o l'indirizzo IP del computer remoto nei modi seguenti:  
@@ -194,7 +192,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     |||  
     |-|-|  
     |**Computer locale**|Esegue il debug dell'app nella sessione corrente nel computer locale. Visualizzare [Run Windows Store app nel computer locale](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-    |**Simulatore**|Esegue il debug dell'app nel simulatore di Visual Studio per le app in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. Il simulatore è una finestra del desktop che consente di eseguire il debug delle funzionalità del dispositivo, ad esempio i movimenti tocco e la rotazione del dispositivo, che non sono disponibile nel computer locale. Visualizzare [Run Windows Store app nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+    |**Simulatore**|Esegue il debug dell'app nel simulatore di Visual Studio per le app in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] . Il simulatore è una finestra del desktop che consente di eseguire il debug delle funzionalità del dispositivo, ad esempio i movimenti tocco e la rotazione del dispositivo, che non sono disponibile nel computer locale. Visualizzare [Run Windows Store app nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md).|  
     |**Computer remoto**|Esegue il debug dell'app in un dispositivo connesso al computer locale su una rete Intranet o collegato direttamente tramite un cavo Ethernet. Per eseguire il debug in modalità remota, Visual Studio Remote Tools deve essere installato e in esecuzione sul dispositivo remoto. Visualizzare [Run Windows Store App in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
 3.  Scegli l'app dall'elenco **Pacchetti applicazione installati** .  
@@ -206,7 +204,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Quando fai clic su **Start**l'app viene avviata o impostata per l'esecuzione in modalità debug.  
   
 ##  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Collegare il debugger a un'app in esecuzione  
- Per collegare il debugger a un'app in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], devi utilizzare Debuggable Package Manager per impostare l'esecuzione dell'app in modalità debug. Debuggable Package Manager viene installato con Visual Studio Remote Tools.  
+ Per collegare il debugger a un'app in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , devi utilizzare Debuggable Package Manager per impostare l'esecuzione dell'app in modalità debug. Debuggable Package Manager viene installato con Visual Studio Remote Tools.  
   
  Il collegamento del debugger a un'app è utile quando devi eseguire il debug di un'app già installata, come un'app installata da Windows Store. Il collegamento è necessario quando disponi dei file di origine dell'app, ma non di un progetto di Visual Studio per l'app. Ad esempio, potresti disporre di un sistema di compilazione personalizzato che non utilizza progetti o soluzioni di Visual Studio.  
   

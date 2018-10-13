@@ -1,7 +1,7 @@
 ---
 title: "Procedura: Trovare argomenti nell'indice | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46021283b922758a8b4c5eafad1adeda3d6be573
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530811"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296803"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Procedura: Trovare argomenti nell'indice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: trovare argomenti nell'indice](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-index).  
-  
 L'indice contiene un elenco di parole chiave associate agli argomenti del contenuto installato. È possibile che a ogni argomento sia associata più di una parola chiave e che ogni parola chiave sia associata a più di un argomento. Usare questo indice nello stesso modo in cui si consulta l'indice di un libro.  
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>Per trovare un argomento usando l'indice  

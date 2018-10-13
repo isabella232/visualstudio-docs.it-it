@@ -1,7 +1,7 @@
 ---
 title: Enumeratore di messaggio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 374881ecfe7af76b4d5aed3c6ae56b64094406fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d03e4c56a5cee3964ae5a4ec2fd9ca328988cdab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285584"
 ---
 # <a name="message-enumerator"></a>Enumeratore di messaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [enumeratore di messaggio](https://docs.microsoft.com/visualstudio/extensibility/message-enumerator).  
-  
 I flag seguenti vengono utilizzati per il `TEXTOUTPROC` funzione, che è una funzione di callback che nell'IDE è disponibile quando si chiama il [SccOpenProject](../extensibility/sccopenproject-function.md) (vedere [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) per informazioni dettagliate su callback funzione).  
   
  Se l'IDE è richiesto per annullare il processo, potrebbe essere visualizzato uno dei messaggi di annullamento. In questo caso, l'origine controllo utilizzi plug-in `SCC_MSG_STARTCANCEL` chiedere l'IDE per visualizzare il **annullare** pulsante. Successivamente, è possibile inviare qualsiasi set di messaggi normali. Se uno qualsiasi di questi restituisce `SCC_MSG_RTN_CANCEL`, quindi il plug-in viene chiusa l'operazione e restituisce. Il plug-in anche esegue il polling `SCC_MSG_DOCANCEL` periodicamente per determinare se l'utente ha annullato l'operazione. Quando tutte le operazioni vengono eseguite o se l'utente ha annullato, il plug-in Invia `SCC_MSG_STOPCANCEL`. Il `SCC_MSG_INFO`, SCC_MSG_WARNING, e i tipi SCC_MSG_ERROR vengono utilizzati per i messaggi visualizzati nell'elenco scorrevole dei messaggi. `SCC_MSG_STATUS` è un tipo speciale che indica che il testo dovrebbe essere inclusa in una barra di stato o l'area di visualizzazione temporaneo. Non resta in modo permanente nell'elenco.  

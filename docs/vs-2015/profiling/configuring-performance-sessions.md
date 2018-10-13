@@ -1,7 +1,7 @@
 ---
 title: Configurazione di sessioni di prestazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e804e1638574d6918a1db4effbfbc1c20c80f63e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b858d7a521f53876e185d8d4deb2b3467833d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285337"
 ---
 # <a name="configuring-performance-sessions"></a>Configurazione di sessioni di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [configurazione di sessioni di prestazioni](https://docs.microsoft.com/visualstudio/profiling/configuring-performance-sessions).  
-  
 Usando gli strumenti per la profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile raccogliere un'ampia gamma di dati sulle prestazioni per un numero elevato di tipi di applicazioni. In questa sezione viene illustrato come usare le proprietà della Creazione guidata sessione di prestazioni della sessione di prestazioni e del file binario di destinazione per configurare gli strumenti di profilatura per raccogliere i dati di interesse. Le proprietà di configurazione degli strumenti per la profilatura possono essere usate anche per controllare quanti dati vengono raccolti in un'esecuzione di profilatura. Per altre informazioni, vedere [Controlling Data Collection](../profiling/controlling-data-collection.md) (Controllo della raccolta di dati).  
   
 > [!NOTE]

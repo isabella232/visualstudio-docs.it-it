@@ -1,7 +1,7 @@
 ---
 title: Spazio dei nomi diagnostic | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3959d7f5399073e3d27131ffcd73541c882d9cdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b52f7cceee8eddc2d5643661d0d820afef10e504
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520185"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297286"
 ---
 # <a name="diagnostic-namespace"></a>Spazio dei nomi diagnostic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Namespace diagnostica](https://docs.microsoft.com/visualstudio/profiling/diagnostic-namespace).  
-  
 Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.  
   
 ## <a name="syntax"></a>Sintassi  

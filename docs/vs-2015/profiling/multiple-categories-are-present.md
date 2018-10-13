@@ -1,7 +1,7 @@
 ---
 title: Più categorie presenti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 438dd5b3639f7783d24ef8f21a68da837be92452
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 471934642bba9e9fe31b8c1b010de83dc9d13a06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285493"
 ---
 # <a name="multiple-categories-are-present"></a>Più categorie presenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [sono presenti di più categorie](https://docs.microsoft.com/visualstudio/profiling/multiple-categories-are-present).  
-  
 La sezione selezionata contiene più di un tipo di attività per un intervallo di tempo specificato. Si noti che vengono visualizzati due colori, uno impilato verticalmente sull'altro. Questi colori rappresentano solo le prime due attività più frequenti nell'intervallo di tempo specificato. Le frequenze di queste due attività sono rappresentate in relazione l'una all'altra come terzi o metà della barra verticale. Per visualizzare ulteriori dettagli, provare fare zoom avanti in questa sezione della visualizzazione dei thread.  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -1,7 +1,7 @@
 ---
 title: Annotazione di parametri di funzione e valori restituiti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -131,18 +131,16 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c3a0cad60dc7867b31238669a612cdb0dac4097
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530497"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297167"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [annotazione di parametri di funzione e restituire valori](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-parameters-and-return-values).  
-  
 Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzione semplice, ovvero valori scalari e i puntatori alle strutture e classi e la maggior parte dei tipi di buffer.  Questo articolo illustra anche i modelli di uso comune per le annotazioni. Per le annotazioni aggiuntive che sono correlate alle funzioni, vedere [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)  
   
 ## <a name="pointer-parameters"></a>Parametri dei puntatori  

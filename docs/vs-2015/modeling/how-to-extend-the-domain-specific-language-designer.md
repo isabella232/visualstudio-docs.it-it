@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: estendere la finestra di progettazione Domain-Specific Language | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 568b5f608d06c61b25b84bce56bb8c80a1a6d690
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294268"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "47530329"
      System.Windows.Forms  
   
 ## <a name="testing-and-deployment"></a>Test e distribuzione  
- Per testare qualsiasi delle estensioni in questo argomento, compilare ed eseguire la soluzione. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questo caso, aprire una soluzione DSL. Modificare il diagramma DslDefinition. Il comportamento dell'estensione può essere visualizzato.  
+ Per testare qualsiasi delle estensioni in questo argomento, compilare ed eseguire la soluzione. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questo caso, aprire una soluzione DSL. Modificare il diagramma DslDefinition. Il comportamento dell'estensione può essere visualizzato.  
   
  Per distribuire le estensioni per l'oggetto principale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e ad altri computer, seguire questa procedura:  
   

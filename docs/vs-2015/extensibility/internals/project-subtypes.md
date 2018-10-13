@@ -1,7 +1,7 @@
 ---
 title: Sottotipi di progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be128ffa861cde72440485584d2b5661bf545394
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ac5b4a0cadee02417ae0c1ab1ab93ef61e70d26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291564"
 ---
 # <a name="project-subtypes"></a>Sottotipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [sottotipi di progetto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes).  
-  
 Sottotipi di progetto consentono di personalizzare o specificare il comportamento dei sistemi di progetto di una versione [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Le personalizzazioni includono il salvataggio dei dati aggiuntivi nel file di progetto, aggiungendo o filtrando gli elementi di **Aggiungi nuovo elemento** della finestra di dialogo controllo come gli assembly vengono eseguito il debug e distribuiti ed estendendo il progetto **proprietà Pagine** nella finestra di dialogo. I pacchetti VSPackage implementare sottotipi di progetto tramite aggregazione COM.  
   
 > [!NOTE]

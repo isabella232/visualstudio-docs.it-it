@@ -1,7 +1,7 @@
 ---
 title: Creazione di un Windows Form di controllo della casella degli strumenti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc1deab4439133eb43348289fcfbba204a1cf9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529889"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294216"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Creazione di un controllo della casella degli strumenti Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di un controllo della casella degli strumenti di Windows Forms](https://docs.microsoft.com/visualstudio/extensibility/creating-a-windows-forms-toolbox-control).  
-  
 Il modello di elemento di controllo della casella degli strumenti di Windows Form incluso in Visual Studio Extensibility Tools (Visual Studio SDK) consente di creare un controllo che viene aggiunto automaticamente per il **casella degli strumenti** quando l'estensione viene installata. In questo argomento viene illustrato come usare il modello per creare un controllo di un contatore semplice che è possibile distribuire ad altri utenti.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -67,7 +65,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
     |`Button1`|**per**|Reimposta|  
   
 ### <a name="coding-the-user-control"></a>Codifica del controllo utente  
- Il controllo `Counter` esporrà un metodo per incrementare il contatore, un evento da generare ogni volta che il contatore viene incrementato, un pulsante `Reset` e tre proprietà per archiviare il conteggio corrente, il testo visualizzato e se mostrare o nascondere il pulsante `Reset` . Il `ProvideToolboxControl` attributo determina la posizione nel **casella degli strumenti** il `Counter` controllo verrà visualizzato.  
+ Il controllo `Counter` esporrà un metodo per incrementare il contatore, un evento da generare ogni volta che il contatore viene incrementato, un pulsante `Reset` e tre proprietà per archiviare il conteggio corrente, il testo visualizzato e se mostrare o nascondere il pulsante `Reset` . L'attributo `ProvideToolboxControl` determina la posizione nella **casella degli strumenti** in cui verrà visualizzato il controllo `Counter` .  
   
 ##### <a name="to-code-the-user-control"></a>Per codificare il controllo utente  
   
@@ -145,7 +143,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
     ```  
   
-8.  Immediatamente sopra la definizione di classe, nelle `ProvideToolboxControl` dichiarazione dell'attributo, modificare il valore del primo parametro da `"MyWinFormsControl.Counter"` a `"General"`. In questo modo si imposta il nome del gruppo di elementi che ospiterà il controllo nella **casella degli strumenti**.  
+8.  Immediatamente sopra la definizione di classe, nella dichiarazione dell'attributo `ProvideToolboxControl` , modificare il valore del primo parametro da `"MyWinFormsControl.Counter"` a `"General"`. In questo modo si imposta il nome del gruppo di elementi che ospiterà il controllo nella **casella degli strumenti**.  
   
      L'esempio seguente mostra l'attributo `ProvideToolboxControl` e la definizione di classe modificata.  
   
