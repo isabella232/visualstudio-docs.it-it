@@ -1,7 +1,7 @@
 ---
 title: Visualizzare i valori dei dati nei suggerimenti dati nell'editor del codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1a7e755fd81bb66d822f7232e903fea9c53087c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273923"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Visualizzare i valori di dati nei suggerimenti dati nell'editor del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzare i valori dei dati nei suggerimenti dati nell'editor del codice](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor).  
-  
 I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle variabili nel programma durante il debug. I suggerimenti dati funzionano solo in modalità di interruzione e solo con variabili che si trovano nell'ambito di esecuzione corrente.  
   
  Nelle [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], i suggerimenti dati possono essere aggiunti a una posizione specifica in un file di origine, oppure possono scorrere nella parte superiore delle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows.  

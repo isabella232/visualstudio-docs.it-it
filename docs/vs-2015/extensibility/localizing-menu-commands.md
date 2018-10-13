@@ -1,7 +1,7 @@
 ---
 title: Localizzazione di comandi di Menu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce3cbbf101e357f761ffaf256d0b130a0c005fdb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526069"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197705"
 ---
 # <a name="localizing-menu-commands"></a>Localizzazione dei comandi di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [localizzazione di comandi di Menu](https://docs.microsoft.com/visualstudio/extensibility/localizing-menu-commands).  
-  
 È possibile fornire il testo localizzato per menu e barra degli strumenti dei comandi di creazione di file con estensione vsct localizzato e localizzato file con estensione resx per il pacchetto VSPackage e quindi aggiornando i file di progetto incorporare le modifiche.  
   
  Per informazioni su come localizzare l'esperienza di installazione, vedere [localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md).  

@@ -1,7 +1,7 @@
 ---
 title: Pagina Compilazione, Creazione progetti (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e0e1a858c2d26105a4376bcea594096054942590
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530803"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280618"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [pagina compilazione, creazione progetti (c#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp).  
-  
   
 Usare la pagina **Compilazione** di **Creazione progetti** per specificare le proprietà di configurazione della compilazione del progetto. Questa pagina è applicabile solo ai progetti [!INCLUDE[csprcs](../../includes/csprcs-md.md)].  
   

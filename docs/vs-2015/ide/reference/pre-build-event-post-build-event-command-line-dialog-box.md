@@ -1,7 +1,7 @@
 ---
 title: Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -39,18 +39,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57dae16903a8ee1398a6e5e19c4c111585ec29f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4c2f0297195dc1a9be23a1dd8aca980a6e32958
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517175"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202514"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [finestra di dialogo riga di comando eventi pre-compilazione / Post-compilazione](https://docs.microsoft.com/visualstudio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).  
-  
   
 È possibile digitare gli eventi pre-compilazione o post-compilazione per la [Pagina Eventi di compilazione, Creazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) direttamente nella casella di modifica oppure selezionare le macro pre-compilazione e post-compilazione da un elenco di macro disponibili.  
   

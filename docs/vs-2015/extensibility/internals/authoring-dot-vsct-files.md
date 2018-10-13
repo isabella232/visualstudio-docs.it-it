@@ -1,7 +1,7 @@
 ---
 title: Creazione. File Vsct | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283673"
 ---
 # <a name="authoring-vsct-files"></a>Creazione. File Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione e modifica. File Vsct](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files).  
-  
 Questo documento illustra come creare un file con estensione vsct per aggiungere voci di menu, barre degli strumenti e altri elementi dell'interfaccia utente per l'ambiente di sviluppo integrato (IDE) di Visual Studio. Usare questi passaggi quando si aggiungono elementi dell'interfaccia utente a un pacchetto di Visual Studio (VSPackage di) che non dispone già di un file con estensione vsct.  
   
  Per i nuovi progetti, è consigliabile usare il modello di pacchetto di Visual Studio in quanto genera un file vsct che, a seconda delle selezioni, ha già gli elementi necessari per un comando di menu, una finestra degli strumenti o un editor personalizzato. È possibile modificare questo file con estensione vsct per soddisfare i requisiti del pacchetto VSPackage. Per altre informazioni su come modificare un file vsct, vedere gli esempi nella [estensione di menu e comandi](../../extensibility/extending-menus-and-commands.md).  

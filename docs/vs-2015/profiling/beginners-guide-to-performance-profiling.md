@@ -1,14 +1,14 @@
 ---
 title: Guida per principianti alla profilatura delle prestazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -20,18 +20,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6bd3085e3aef314d8768656eb66e61647b1676
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f69ae132a47f81438abb43bd11b04fee869aa66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226681"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guida per principianti alla profilatura delle prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Guida per principianti alla profilatura delle prestazioni in Visual Studio](https://docs.microsoft.com/visualstudio/profiling/beginners-guide-to-performance-profiling).  
-  
 È possibile utilizzare strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare i dati di **campionamento**.  
   
  Il **campionamento** è un metodo di profilatura statistico che consente di sapere quali funzioni svolgono la maggior parte del lavoro in modalità utente nell'applicazione. Il campionamento è un buon punto di partenza per individuare aree velocizzare l'applicazione.  

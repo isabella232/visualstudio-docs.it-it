@@ -1,7 +1,7 @@
 ---
 title: Creare diagrammi e progetti di modellazione UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250484"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Creare diagrammi e progetti di modellazione UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [diagrammi e progetti di modellazione UML creare](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
-  
 I modelli UML semplificano la comprensione, l'esame e la progettazione di sistemi software. Visual Studio fornisce i modelli per cinque dei diagrammi UML usati più frequentemente: attività, classi, componenti, sequenza e caso di utilizzo. È anche possibile creare diagrammi livello, che semplificano la definizione della struttura del sistema.  
   
  I diagrammi di modellazione UML e i diagrammi livello possono essere usati solo all'interno di un progetto di modello. Ogni progetto di modello include un modello UML condiviso e alcuni diagrammi UML. Ogni diagramma è una visualizzazione parziale del modello. Il modello UML include tutti gli elementi dei diagrammi UML e può essere visualizzato tramite Esplora modelli UML. Per informazioni sui modelli e la loro relazione con i diagrammi, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md). Per informazioni sui modelli di progetto nel controllo della versione, vedere [gestire modelli e diagrammi nel controllo della versione](../modeling/manage-models-and-diagrams-under-version-control.md) e [strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)  
@@ -148,7 +146,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
   
 -   Diagramma classi creati come visualizzazioni del codice sorgente. Non sono correlati ai diagrammi classi UML. Per altre informazioni, vedere [progettazione e visualizzazione di classi e tipi](../ide/designing-and-viewing-classes-and-types.md).  
   
--   Mappe codice Visualizzare [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).  
+-   Mappe codice Vedere [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 -   Diagrammi che non sono diagrammi UML o diagrammi livello, ad esempio linguaggi specifici di dominio.  
   

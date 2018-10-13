@@ -1,7 +1,7 @@
 ---
 title: Accesso ai modelli da modelli di testo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5f23a080f33b668d185f4e7b1409da5b4ac97deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257192"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accesso ai modelli da modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [l'accesso ai modelli da modelli di testo](https://docs.microsoft.com/visualstudio/modeling/accessing-models-from-text-templates).  
-  
 Usando i modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo che si basano sui modelli di linguaggio specifico di dominio. Per informazioni di base sui modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). I modelli di testo funzioneranno in modalità sperimentale quando si esegue il debug del linguaggio DSL e funzioneranno anche in un computer in cui è stato distribuito il linguaggio DSL.  
   
 > [!NOTE]

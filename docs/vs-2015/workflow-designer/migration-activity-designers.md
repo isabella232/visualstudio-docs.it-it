@@ -1,7 +1,7 @@
 ---
 title: Activity Designer Migration | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ae161fc5ff6f2b415cb477dcc3726a23802520a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8fdec5b2a32f8a25832663ede74757d0bc8285c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518590"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236704"
 ---
 # <a name="migration-activity-designers"></a>ActivityDesigner Migrazione
-Gli ActivityDesigner Migration vengono usati per chiamare le attività del flusso di lavoro 3.0/3.5 da un flusso di lavoro destinato a [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Gli argomenti contenuti in questa sezione forniscono istruzioni sull'utilizzo degli ActivityDesigner di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
+Gli ActivityDesigner Migration vengono usati per chiamare le attività del flusso di lavoro 3.0/3.5 da un flusso di lavoro destinato a [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Gli argomenti contenuti in questa sezione forniscono materiale sussidiario sull'utilizzo degli ActivityDesigner di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Interop](../workflow-designer/interop-activity-designer.md)  

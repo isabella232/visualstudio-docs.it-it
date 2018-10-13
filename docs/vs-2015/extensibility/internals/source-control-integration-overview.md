@@ -1,7 +1,7 @@
 ---
 title: Panoramica dell'integrazione di controllo di origine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8fc2368fd2da031342cf76ab7ba9abb85e6f4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224185"
 ---
 # <a name="source-control-integration-overview"></a>Panoramica dell'integrazione del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Source Control Integration Overview](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-overview).  
-  
 Questa sezione Confronta i due modi per integrare nel controllo del codice sorgente Visual Studio; un controllo del codice sorgente del plug-in e un pacchetto VSPackage che fornisce una soluzione di controllo del codice sorgente e vengono evidenziate le nuove funzionalità di controllo di origine. Visual Studio consente il passaggio manuale tra controllo del codice sorgente pacchetti VSPackage e plug-in controllo codice sorgente, nonché basati su soluzioni un passaggio automatico.  
   
 ## <a name="source-control-integration"></a>Integrazione del controllo codice sorgente  

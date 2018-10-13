@@ -1,7 +1,7 @@
 ---
 title: Attività CL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e10c5d6ed0e4b992f5b573cd46bd1248d8d24d90
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddc31a98419553228b099e2dfb8652992b884176
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234832"
 ---
 # <a name="cl-task"></a>Attività CL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [attività CL](https://docs.microsoft.com/visualstudio/msbuild/cl-task).  
-  
   
 Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compilatore genera file eseguibili (EXE), librerie a collegamento dinamico (DLL) o moduli di codice (NETMODULE). Per altre informazioni, vedere [Opzioni del compilatore](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   

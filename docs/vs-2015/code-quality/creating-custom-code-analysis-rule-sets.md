@@ -1,7 +1,7 @@
 ---
 title: Creazione di set di regole di analisi codice personalizzati | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67df017724f31a14504bbd7e2b66657b1db918b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526138"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273585"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Creazione di set di regole di analisi del codice personalizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [set di regole di creazione personalizzato codice Analysis](https://docs.microsoft.com/visualstudio/code-quality/creating-custom-code-analysis-rule-sets).  
-  
 Per applicare regole di analisi del codice a un progetto di codice gestito, che specifica un set di regole che contiene una o più regole. I set di regole standard di Microsoft includono gruppi di regole sono organizzate in funzione e la profondità. Ad esempio, le regole Microsoft base progettazione le linee guida e le regole di progettazione le linee guida Microsoft estesi contengono regole dello stato attivo sull'utilizzabilità e dei problemi di gestibilità, con particolare attenzione sulle regole di denominazione nel set di regole estese.  
   
  È anche possibile creare un set di regole personalizzate che combina due o più standard set di regole o che specifica le regole in uno o più set di regola standard. Si salva una regola personalizzata imposta a un file con estensione ruleset e possono essere specificate in più progetti di codice.  

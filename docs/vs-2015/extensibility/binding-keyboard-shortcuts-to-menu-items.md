@@ -1,7 +1,7 @@
 ---
 title: Associazione di scelte rapide da tastiera a voci di Menu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f661129a4706ce0ac501a5fbad9a7ce5a60e3127
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc5c937033087e3bea7b5326e90be64410fcfb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277472"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Associazione di scelte rapide da tastiera a voci di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [associazione di scelte rapide da tastiera a voci di Menu](https://docs.microsoft.com/visualstudio/extensibility/binding-keyboard-shortcuts-to-menu-items).  
-  
 Per associare un tasto di scelta rapida per un comando di menu personalizzate, è sufficiente aggiungere una voce al file con estensione vsct per il pacchetto. Questo argomento viene illustrato come eseguire il mapping di un tasto di scelta rapida per un pulsante personalizzato, voce di menu o comandi della barra degli strumenti e come applicare il mapping della tastiera nell'editor predefinito o limitati a un editor personalizzato.  
   
  Per assegnare tasti di scelta rapida da tastiera a voci di menu esistenti di Visual Studio, vedere [identificazione e personalizzazione dei tasti](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

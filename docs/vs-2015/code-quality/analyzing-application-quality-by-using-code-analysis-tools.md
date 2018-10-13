@@ -1,7 +1,7 @@
 ---
 title: Analisi della qualità dell'applicazione tramite gli strumenti di analisi di codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1b62ac482d18bc8844045d90d32f4d48416daeca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216696"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analisi della qualità dell'applicazione tramite gli strumenti di analisi codice](https://docs.microsoft.com/visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools).  
-  
 In questa sezione  
  [Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
  L'analisi del codice di Visual Studio per il codice gestito fornisce informazioni sugli assembly gestiti, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET Framework. I messaggi di avviso identificano eventuali problemi di programmazione e progettazione e, se possibile, forniscono informazioni su come risolverli.  

@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Creazione di un'area di controllo di visualizzazione, i comandi e le impostazioni (guide di colonne) | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94ed4de4820aca9d88b9c589e2fe5a15a51842e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265110"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Procedura dettagliata: creazione di un'area di controllo di visualizzazione, di comandi e impostazioni (guide di colonne)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di un'area di controllo di visualizzazione, i comandi e impostazioni](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides).  
-  
 È possibile estendere l'editor di testo o codice di Visual Studio con i comandi e visualizzare gli effetti.  In questo argomento illustra come iniziare a usare una funzionalità di estensione più diffusi, guide di colonne.  Le guide di colonna sono visivamente chiara linee disegnate su visualizzazione dell'editor di testo che consentono di gestire il codice per la larghezza delle colonne specifiche.  Codice formattato in modo specifico può essere importante per gli esempi si includere nei documenti, post di blog, o i report di bug.  
   
  In questa procedura dettagliata apprenderà come:  

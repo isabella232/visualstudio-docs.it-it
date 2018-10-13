@@ -1,7 +1,7 @@
 ---
 title: Controllare le proprietà XAML durante il debug | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb10290e14290f59950e6b291d479de2099ac7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 282b93ac9f04f5e547567e8380e65826f433ba2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282256"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [delle proprietà di ispezionare XAML durante il debug](https://docs.microsoft.com/visualstudio/debugger/inspect-xaml-properties-while-debugging).  
-  
 È possibile ottenere una visualizzazione in tempo reale del codice XAML in esecuzione con il **albero elementi visivi attivi** e il **Esplora proprietà attive**. Questi strumenti offrono una visualizzazione albero degli elementi dell'interfaccia utente dell'applicazione XAML in esecuzione e mostrano le proprietà di runtime di qualsiasi elemento dell'interfaccia utente selezionato.  
   
  È possibile usare questi strumenti nelle configurazioni seguenti:  

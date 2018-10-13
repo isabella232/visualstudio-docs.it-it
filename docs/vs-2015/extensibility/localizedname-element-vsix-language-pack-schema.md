@@ -1,7 +1,7 @@
 ---
 title: Elemento LocalizedName (Schema del progetto VSIX Language Pack) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b5315307a8aa13140db0f5182bcf7014bb2898b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc4cc8b2594720226a98f3d2664fca30a7ffe22a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269633"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>Elemento LocalizedName (Schema del progetto VSIX Language Pack)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elemento LocalizedName (Schema del progetto VSIX Language Pack)](https://docs.microsoft.com/visualstudio/extensibility/localizedname-element-vsix-language-pack-schema).  
-  
 Obbligatorio. Il nome localizzato dell'estensione da installare.  
   
 ## <a name="syntax"></a>Sintassi  

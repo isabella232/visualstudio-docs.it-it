@@ -1,7 +1,7 @@
 ---
 title: Elementi MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,24 +16,22 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 522de2d2a10e58c1f7d6a42b2456c63648655a86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229359"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elementi MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-items).  
-  
   
 Gli elementi MSBuild sono input nel sistema di compilazione e in genere rappresentano i file. Gli elementi sono raggruppati in tipi di elemento in base ai nomi degli elementi. I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione.  
   
  Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini "elemento" e "valore dell'elemento" sono interscambiabili.  
   
- **Contenuto dell'argomento**  
+ **In questo argomento**  
   
 -   [Creazione di elementi in un file di progetto](#BKMK_Creating1)  
   

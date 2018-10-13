@@ -1,7 +1,7 @@
 ---
 title: "Procedura: verificare la presenza di aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ecb3ba8e0fd05e0fb0cd79cde32abe235af743e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a380d549fa10c3229601a1a9541679c7e3ac1e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282191"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procedura: controllare gli aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: verificare la presenza dell'applicazione degli aggiornamenti a livello di codice usando l'API della distribuzione ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api).  
-  
 ClickOnce fornisce due modi per aggiornare un'applicazione dopo la distribuzione. Il primo metodo, è possibile configurare la distribuzione ClickOnce per cercare automaticamente gli aggiornamenti a intervalli specifici. Il secondo metodo, è possibile scrivere codice che usa il <xref:System.Deployment.Application.ApplicationDeployment> classe per cercare gli aggiornamenti basati su un evento, ad esempio una richiesta dell'utente.  
   
  Le procedure seguenti mostrano un codice per l'esecuzione di un aggiornamento a livello di codice e viene inoltre descritto come configurare la distribuzione ClickOnce per abilitare i controlli di aggiornamento a livello di codice.  

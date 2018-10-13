@@ -1,7 +1,7 @@
 ---
 title: Analizzatore di espressioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8856284869a256f9be08931b36db644621a3202d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c65705cd38ef202d06e6461f59e5b4e5ae5c9a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526870"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225290"
 ---
 # <a name="expression-evaluator"></a>Analizzatore di espressioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analizzatore di espressioni](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluator).  
-  
 Analizzatori di espressioni (EE), esaminare la sintassi di una lingua per analizzare e valutare variabili ed espressioni in fase di esecuzione, consentendo loro di essere visualizzato dall'utente quando l'IDE è in modalità di interruzione.  
   
 ## <a name="using-expression-evaluators"></a>Usando gli analizzatori di espressioni  

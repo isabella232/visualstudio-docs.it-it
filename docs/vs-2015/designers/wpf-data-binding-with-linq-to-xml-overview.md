@@ -1,7 +1,7 @@
 ---
 title: Panoramica del data binding WPF con LINQ to XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 584645062920143787c599c317a9ca93dd7da2b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247273"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Panoramica del data binding WPF con LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Data Binding WPF con LINQ to XML Panoramica](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview).  
-  
 In questo argomento vengono brevemente descritte le funzionalità dinamiche di associazione dati dello spazio dei nomi <xref:System.Xml.Linq>. Queste funzionalità possono essere usate come origine dati per gli elementi dell'interfaccia utente in WPF (Windows Presentation Foundation).  
   
 ## <a name="xaml-and-linq-to-xml"></a>XAML e LINQ to XML  

@@ -1,7 +1,7 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c24cec082e7935275d776832d96a63e910c7997a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc2f0354a01bc2f706e2ddec6c21b1513f8d5778
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212875"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione albero delle chiamate: dati di campionamento di memoria .NET](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-dotnet-memory-sampling-data).  
-  
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati di allocazione della memoria .NET per queste chiamate di funzione.  
   
  I valori nella visualizzazione Albero delle chiamate sono relativi alle istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. I valori percentuali vengono calcolati confrontando il valore dell'istanza della funzione e il numero totale o le dimensioni delle allocazioni nell'esecuzione della profilatura.  
@@ -63,7 +61,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
 
 
 

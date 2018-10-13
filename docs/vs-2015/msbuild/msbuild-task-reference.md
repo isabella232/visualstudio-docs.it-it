@@ -1,7 +1,7 @@
 ---
 title: Riferimenti delle attività MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b7b413d403f2b85cc5c8e792cbee19488f8f11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6f1767ce1c572e1e3d8eacae8ba3a60f3593476
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193992"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [riferimenti delle attività MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-task-reference).  
-  
   
 Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività riportate nell'elenco seguente sono incluse in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Quando [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] è installato, sono disponibili attività aggiuntive usate per compilare progetti [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Per altre informazioni, vedere [Visual C++ Tasks](../msbuild/msbuild-tasks-specific-to-visual-cpp.md) (Attività Visual C++).  
   

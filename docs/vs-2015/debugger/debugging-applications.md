@@ -1,7 +1,7 @@
 ---
 title: Debug di applicazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38f4e65040c9a4ab0afb5217a0b83ccffd894929
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c45ef73b4fe448d64a23292c83de8f01e0b6f339
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281697"
 ---
 # <a name="debugging-applications"></a>Debug di applicazioni 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Debugging Applications](https://docs.microsoft.com/visualstudio/debugger/debugging-applications).  
-  
 Nelle sezioni seguenti è trattato il debug per tipi specifici di applicazioni. Diversi tipi di applicazioni e linguaggi richiedono impostazioni e tecniche diverse e presentano problemi diversi che devono essere sottoposti a debug.  
   
 ## <a name="debugging-for-different-types-of-applications"></a>Debug per diversi tipi di applicazioni  

@@ -1,7 +1,7 @@
 ---
 title: Usando i dati di IntelliTrace salvati | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 112
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95672eb37c07042cafa3c57ba267f3c7f0a03580
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c241a4ac216fa42d6a67e7e2165e2ceac195e96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279097"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [tramite dati di IntelliTrace salvati](https://docs.microsoft.com/visualstudio/debugger/using-saved-intellitrace-data).  
-  
 Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il debug da un file di log IntelliTrace (.iTrace). Questo file può contenere eventi di prestazioni, eccezioni, thread, passi del test, moduli e altre informazioni di sistema che IntelliTrace ha raccolto durante l'esecuzione dell'applicazione.  
   
  Assicurarsi di disporre degli elementi seguenti:  

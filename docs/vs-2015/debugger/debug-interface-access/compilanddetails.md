@@ -1,7 +1,7 @@
 ---
 title: CompilandDetails | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c385d82dfc9a4223610000642b82b8cffe4a7109
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37468ba708ded9d1fd0b976fd3771d1a18291d71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525597"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266630"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [CompilandDetails](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compilanddetails).  
-  
 Informazioni compilando sono suddiviso tra i simboli con un `SymTagCompiland` tag (dettaglio bassa) e un `SymTagCompilandDetails` tag (livello di dettaglio alto). `SymTagCompilandDetails` richiede il caricamento dei simboli aggiuntivi. Tuttavia, fornisce un'ampia gamma di informazioni del modulo che non è disponibile con un `SymTagCompiland` simbolo.  
   
 ## <a name="properties"></a>Proprietà  

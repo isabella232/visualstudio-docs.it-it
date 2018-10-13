@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Creazione di un oggetto TableAdapter con più query | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: e48750cf876f561b25802fd20b1e270215a1b605
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4226fc805ed0335109d0a6b98f1235ae46de1664
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206700"
 ---
 # <a name="walkthrough-creating-a-tableadapter-with-multiple-queries"></a>Procedura dettagliata: creazione di un oggetto TableAdapter con più query
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

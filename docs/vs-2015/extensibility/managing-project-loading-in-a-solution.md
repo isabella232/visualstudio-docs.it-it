@@ -1,7 +1,7 @@
 ---
 title: La gestione del caricamento di progetti in una soluzione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dab040cc22375244d0a091eeb63d8ad011c3b12f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281385"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Gestione del caricamento di progetti in una soluzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [gestire il caricamento di progetto in una soluzione](https://docs.microsoft.com/visualstudio/extensibility/managing-project-loading-in-a-solution).  
-  
 Soluzioni di Visual Studio possono contenere un numero elevato di progetti. Il comportamento di Visual Studio predefinito consiste nel caricare tutti i progetti in una soluzione al momento che la soluzione è aperta e per non consentire all'utente di accedere a nessuno dei progetti finché non termina il caricamento di tutti gli elementi. Quando il processo di caricamento di progetti a lungo termine più di due minuti, viene visualizzato un indicatore di stato che mostra il numero totale di progetti e il numero di progetti caricati. L'utente può scaricare i progetti mentre si lavora in una soluzione con più progetti, ma questa procedura presenta alcuni svantaggi: i progetti non caricati non vengono compilati come parte di un comando Ricompila soluzione e le descrizioni di IntelliSense dei tipi e membri di chiusi i progetti non vengono visualizzati.  
   
  Gli sviluppatori possono ridurre i tempi di caricamento delle soluzioni e gestire il caricamento di comportamento mediante la creazione di un caricamento della soluzione responsabile del progetto. Il gestore di caricamento della soluzione può impostare il caricamento delle priorità per progetti specifici o tipi di progetto del progetto diverso, assicurarsi che i progetti vengono caricati prima di avviare una compilazione in background, ritardare il caricamento in background fino al completamento di altre attività in background ed eseguire altre attività di gestione del carico di progetto.  

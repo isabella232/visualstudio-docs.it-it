@@ -1,7 +1,7 @@
 ---
 title: Individuazione di perdite di memoria tramite la libreria CRT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879772"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198081"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Individuazione di perdite di memoria tramite la libreria CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [libreria di individuazione di perdite di memoria usando CRT](https://docs.microsoft.com/visualstudio/debugger/finding-memory-leaks-using-the-crt-library).  
-  
 Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappresentato dalle perdite di memoria, ovvero dall'impossibilità di deallocare correttamente la memoria allocata in precedenza. Una piccola perdita di memoria potrebbe passare inosservata, ma nel tempo può causare problemi come un calo delle prestazioni o l'arresto anomalo in caso di completo esaurimento della memoria. Nel peggiore dei casi, un'applicazione che usa tutta la memoria disponibile può causare l'arresto di un'altra applicazione, rendendo più difficile l'individuazione dell'applicazione responsabile del problema. Anche le perdite di memoria apparentemente inoffensive possono essere indice di altri problemi che è necessario correggere.  
   
  Il debugger di[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e le librerie di runtime C (CRT) offrono gli strumenti necessari per rilevare e identificare le perdite di memoria.  

@@ -1,7 +1,7 @@
 ---
 title: Componenti di base del modello di progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e0fd5b5963686ac38975c62bab1d8ee93224cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2819f32993df6215e506ae6612d2716f95780bf8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283335"
 ---
 # <a name="project-model-core-components"></a>Componenti di base del modello di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [componenti di base del modello di progetto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-model-core-components).  
-  
 Espandono le tabelle seguenti nel modello di progetto. Le tabelle presentano una breve descrizione di interfacce e servizi identificati nel modello e le interfacce e i servizi associati a oggetti specifici. Inoltre, le tabelle in dettaglio le altre interfacce facoltative la creazione del progetto e di manutenzione a seconda dei requisiti del tipo di progetto specifico.  
   
  Per altre informazioni, vedere [strumenti di esplorazione che supportano simbolo](../../extensibility/internals/supporting-symbol-browsing-tools.md).  

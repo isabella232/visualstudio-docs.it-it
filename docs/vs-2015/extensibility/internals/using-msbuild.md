@@ -1,7 +1,7 @@
 ---
 title: Uso di MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8b776823c78835ad687a110c1fcc0ba1382bead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d382261615624fe099694af5b067de55090ad0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519211"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229333"
 ---
 # <a name="using-msbuild"></a>Uso di MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [uso di MSBuild](https://docs.microsoft.com/visualstudio/extensibility/internals/using-msbuild).  
-  
 MSBuild fornisce un formato XML ben definito ed estendibile per la creazione di file di progetto che descrivono gli elementi di progetto per essere compilato, attività di compilazione e le configurazioni della build.  
   
  Per un esempio end-to-end di un sistema di progetto linguaggio basato su MSBuild, vedere Approfondimenti esempio IronPython nel[esempi di VSSDK](../../misc/vssdk-samples.md).  

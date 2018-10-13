@@ -1,7 +1,7 @@
 ---
 title: Supporto di più visualizzazioni documento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c1dc6614e90b0f4830991116440e94048145bae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519335"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282700"
 ---
 # <a name="supporting-multiple-document-views"></a>Supporto di più visualizzazioni documento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Supporting Multiple Document Views](https://docs.microsoft.com/visualstudio/extensibility/supporting-multiple-document-views).  
-  
 È possibile fornire più di una visualizzazione di un documento tramite la creazione di dati del documento separata e oggetti di visualizzazione di documenti per l'editor. Alcuni casi in cui una visualizzazione del documento aggiuntivo potrebbe essere utile sono:  
   
 -   Nuovo supporto di finestre: si desidera fornire due o più viste dello stesso tipo, l'editor in modo che un utente che dispone già di una finestra aprire nell'editor è possibile aprire una nuova finestra selezionando il **nuova finestra** dal **finestra** dal menu.  

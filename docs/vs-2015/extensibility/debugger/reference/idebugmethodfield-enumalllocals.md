@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::EnumAllLocals | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce7db92adfed5558eaaa86e2e84af51da9059020
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b00145dba853a6f2518bfdb67e8f2feb52f83c1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195260"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [IDebugMethodField::EnumAllLocals](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmethodfield-enumalllocals).  
-  
 Crea un enumeratore per tutte le variabili locali del metodo, inclusi quelli generati internamente da un compilatore.  
   
 ## <a name="syntax"></a>Sintassi  

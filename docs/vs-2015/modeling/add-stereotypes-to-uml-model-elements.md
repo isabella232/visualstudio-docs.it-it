@@ -1,7 +1,7 @@
 ---
 title: Aggiungere stereotipi a elementi del modello UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b570889c117f2fac037ddf40efe32abbd0b309c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48bc410c2f9f6a3dfb0e18b713a9b50dda499ea8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530733"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259714"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Aggiungere stereotipi a elementi del modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Add stereotipi UML di elementi del modello](https://docs.microsoft.com/visualstudio/modeling/add-stereotypes-to-uml-model-elements).  
-  
 È possibile aggiungere uno stereotipo a un elemento del modello UML per aggiungervi annotazioni e fornirlo di proprietà specializzate. Per aggiungere uno stereotipo a un elemento del modello, lo stereotipo deve essere definito in un profilo ed è necessario collegare il profilo a un pacchetto o al modello contenente l'elemento del modello. Ogni stereotipo può essere aggiunto solo a determinati tipi di elemento del modello, ad esempio classi UML, casi di utilizzo o componenti.  
   
  Ad esempio, per definire una classe UML con lo stereotipo «specification», è necessario crearlo in un pacchetto o in un modello collegato al profilo standard L2.  

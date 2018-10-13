@@ -1,7 +1,7 @@
 ---
 title: L'accesso ai Buffer di testo usando l'API Legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e89b91dbacf60df034ac7ce3653c25c2cae7ab3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84843f40b6d07e937837914f07aecf10adad2bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529840"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277212"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>L'accesso ai Buffer di testo usando l'API Legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [l'accesso ai Buffer di testo usando l'API Legacy](https://docs.microsoft.com/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api).  
-  
 Il testo è responsabile della gestione dei flussi di testo e salvataggio permanente dei file. Anche se il buffer può leggere o scrivere altri formati, tutte le comunicazioni normali con il buffer viene eseguita utilizzando Unicode. Nelle API legacy, il buffer di testo può usare unidimensionale o un sistema di coordinate bidimensionale per identificare le posizioni di carattere nel buffer.  
   
 ## <a name="one--and-two-dimension-coordinate-systems"></a>Dimensione di uno e due sistemi di Coordinate  

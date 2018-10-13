@@ -1,7 +1,7 @@
 ---
 title: 'Guida introduttiva: Analisi del codice per C / C++ | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97e3aa842a2ebb19492370836058ec2236a44564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241774"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Guida introduttiva all'analisi del codice per C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [avvio rapido: analisi del codice per C/C++](https://docs.microsoft.com/visualstudio/code-quality/quick-start-code-analysis-for-c-cpp).  
-  
 È possibile migliorare la qualità dell'applicazione eseguendo regolarmente l'analisi del codice C o C++. Ciò consente di individuare i problemi comuni, le violazioni delle buone norme di programmazione o i difetti che sono difficili da individuare tramite test. Gli avvisi dell'analisi del codice sono diversi dagli avvisi e dagli errori del compilatore perché l'analisi del codice esegue la ricerca di modelli di codice specifici che risultano validi ma che potrebbero comunque causare problemi per gli utenti che usano il codice.  
   
 ## <a name="in-this-topic"></a>Contenuto dell'argomento  

@@ -1,7 +1,7 @@
 ---
 title: Aggiungere la convalida architettura personalizzati a diagrammi livelli | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ef9831dd5268c545373433d728df7e36d31cf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517734"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231101"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati a diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiungere la convalida architettura personalizzati a diagrammi delle dipendenze](https://docs.microsoft.com/visualstudio/modeling/add-custom-architecture-validation-to-layer-diagrams).  
-  
 In Visual Studio gli utenti possono convalidare il codice sorgente in un progetto rispetto a un modello di livello, in modo da poter verificare che il codice sorgente sia conforme alla dipendenze in un diagramma livello. Benché sia disponibile un algoritmo di convalida standard, è possibile definire estensioni di convalida personalizzate.  
   
  Quando l'utente seleziona il comando **Convalida architettura** in un diagramma livello, viene richiamato il metodo di convalida standard, seguito dalle eventuali estensioni di convalida installate.  
@@ -65,7 +63,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
     > [!NOTE]
     >  Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
   
-5.  Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], o in un altro computer, trovare il **VSIX** del file in **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
+5.  Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Aggiunta di validator dei livelli a un progetto VSIX separato  
  Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori. Per informazioni sugli altri tipi di estensione di modellazione, vedere [modelli e diagrammi UML estendere](../modeling/extend-uml-models-and-diagrams.md).  
@@ -122,7 +120,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
     > [!NOTE]
     >  Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
   
-8.  Per installare l'estensione VSIX nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
+8.  Per installare il progetto VSIX nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
   
      Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
@@ -215,12 +213,12 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
   
  Per connettere il debugger al processo di convalida, inserire una chiamata a `System.Diagnostics.Debugger.Launch()` all'avvio del metodo di convalida. Quando viene visualizzata la finestra di dialogo di debug, selezionare l'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- In alternativa, è possibile inserire una chiamata a `System.Windows.Forms.MessageBox.Show()`. Quando viene visualizzata la finestra di messaggio, passare all'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e scegliere il **Debug** menu fare clic su **Connetti a processo**. Selezionare il processo denominato **Graphcmd.exe**.  
+ In alternativa, è possibile inserire una chiamata a `System.Windows.Forms.MessageBox.Show()`. Quando viene visualizzata la finestra di messaggio, passare all'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e scegliere **Connetti a processo** dal menu **Debug**. Selezionare il processo denominato **Graphcmd.exe**.  
   
  Avviare sempre l'istanza sperimentale premendo CTRL+F5 (**Avvia senza eseguire debug**).  
   
 ### <a name="deploying-a-validation-extension"></a>Distribuzione di un'estensione di convalida  
- Per installare l'estensione di convalida in un computer in cui è installata una versione appropriata di Visual Studio, aprire il file VSIX nel computer di destinazione. Per eseguire l'installazione in un computer in cui è installato [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], è necessario estrarre manualmente il contenuto VSIX in una cartella Extensions. Per altre informazioni, vedere [distribuire un'estensione del modello di livello](../modeling/deploy-a-layer-model-extension.md).  
+ Per installare l'estensione di convalida in un computer in cui è installata una versione appropriata di Visual Studio, aprire il file VSIX nel computer di destinazione. Per eseguire l'installazione in un computer in cui è installato [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] , è necessario estrarre manualmente il contenuto VSIX in una cartella Extensions. Per altre informazioni, vedere [distribuire un'estensione del modello di livello](../modeling/deploy-a-layer-model-extension.md).  
   
 ##  <a name="example"></a> Example code  
   

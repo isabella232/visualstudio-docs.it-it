@@ -1,7 +1,7 @@
 ---
 title: Utilizzo di marcatori di testo con l'API Legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b276a678d4b5e97e3ef949bdf1fd74b37070f9d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f863571672c42f63912629844fd72d8c92ca8400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263666"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Utilizzo di marcatori di testo con l'API Legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [usando i marcatori di testo con l'API Legacy](https://docs.microsoft.com/visualstudio/extensibility/using-text-markers-with-the-legacy-api).  
-  
 Un marcatore di testo è un intervallo di testo in un buffer che può influenzare la visualizzazione a virgola mobile e il comportamento di un'area di testo. Marcatori di includono i punti di interruzione, i segnalibri, sottolineature ondulate di colore e le aree di sola lettura. Marcatori di testo sono fondamentalmente diversi da colorazione della sintassi. Colorazione della sintassi è un modo rapido per comunicare la sintassi del linguaggio che è associata a un'area di testo. Colorazione della sintassi viene in genere richiesta quando Windows viene ridisegnato schermo, la velocità è importante. Colorazione della sintassi viene modificato solo il colore del testo. Marcatori di testo è possono modificare molte altre proprietà di testo. Marcatori di testo è possono "spostarsi" e applicare un comportamento speciale e la colorazione.  
   
  A causa dell'overhead delle prestazioni associati marcatori di testo, non creare molti marcatori per i buffer di testo. Ogni indicatore viene aggiornato ogni volta che un utente modifica il contenuto del buffer.  

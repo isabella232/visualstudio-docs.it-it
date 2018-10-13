@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Uso di XSLT IntelliSense | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a5a773b17d5393d15a4eb9a5947fe1e3215d784
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad8345f7a7dfd4d875dc33989b85ba74421ad04a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266799"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Procedura dettagliata: utilizzo di XSLT IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: uso di XSLT IntelliSense](https://docs.microsoft.com/visualstudio/xml-tools/walkthrough-using-xslt-intellisense).  
-  
   
 Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completare automaticamente il valore di alcuni attributi.  
   

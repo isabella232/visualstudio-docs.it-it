@@ -1,7 +1,7 @@
 ---
 title: Trusted Application Deployment Overview | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: afcfc0d2a494b27359de041b13a8e9595ede1bc7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215917"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Trusted Application Deployment Overview](https://docs.microsoft.com/visualstudio/deployment/trusted-application-deployment-overview).  
-  
 Questo argomento presenta informazioni generali su come distribuire applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con autorizzazioni elevate usando la tecnologia per la distribuzione di applicazioni attendibili.  
   
- La distribuzione di applicazioni attendibili, parte della tecnologia di distribuzione di [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consente alle organizzazioni di qualsiasi dimensione di concedere autorizzazioni aggiuntive a un'applicazione gestita in modo più sicuro senza richieste dell'utente. Con la distribuzione di applicazioni attendibili, un'organizzazione può configurare semplicemente un computer client in modo che disponga di un elenco di editori attendibili, identificati usando i certificati Authenticode. In seguito, tutte le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] firmate da uno di questi editori attendibili ricevono un livello di attendibilità superiore.  
+ La distribuzione di applicazioni attendibili, parte della tecnologia di distribuzione di [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , consente alle organizzazioni di qualsiasi dimensione di concedere autorizzazioni aggiuntive a un'applicazione gestita in modo più sicuro senza richieste dell'utente. Con la distribuzione di applicazioni attendibili, un'organizzazione può configurare semplicemente un computer client in modo che disponga di un elenco di editori attendibili, identificati usando i certificati Authenticode. In seguito, tutte le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] firmate da uno di questi editori attendibili ricevono un livello di attendibilità superiore.  
   
 > [!NOTE]
 >  La distribuzione di applicazioni attendibili richiede una configurazione eseguita una sola volta nel computer di un utente. Negli ambienti desktop gestiti, questa configurazione può essere eseguita usando i criteri globali. Se non è la soluzione desiderata per l'applicazione, usare l'elevazione delle autorizzazioni. Per altre informazioni, vedere [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).  
@@ -90,12 +88,12 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
 -   CertMgr.exe, che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per altre informazioni, vedere [Certmgr.exe (strumento di gestione certificati)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Creare un'applicazione ClickOnce  
- Un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è un'applicazione client [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione usando il **Publish** comando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Per informazioni dettagliate sui [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione, vedere [questa procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è un'applicazione client [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando il comando **Publish** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Per informazioni dettagliate sui [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione, vedere [questa procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
- La distribuzione di applicazioni attendibili è specifica per [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è può essere usata solo con le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+ La distribuzione di applicazioni attendibili è specifica per [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]è può essere usata solo con le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
 ### <a name="sign-the-deployment"></a>Formare la distribuzione  
- Dopo aver ottenuto il certificato, usarlo per firmare la distribuzione. Se si distribuisce l'applicazione usando la pubblicazione guidata di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], viene generato automaticamente un certificato di prova se non è già stato specificato un altro certificato. È anche possibile usare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finestra Creazione progetti, tuttavia, per fornire un certificato rilasciato da un'autorità di certificazione.  Vedere anche [Procedura: pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) o [Procedura: pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
+ Dopo aver ottenuto il certificato, usarlo per firmare la distribuzione. Se si distribuisce l'applicazione usando la pubblicazione guidata di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , viene generato automaticamente un certificato di prova se non è già stato specificato un altro certificato. Tuttavia, è anche possibile usare la finestra Creazione progetti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per specificare un certificato fornito da un'autorità di certificazione.  Vedere anche [Procedura: pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) o [Procedura: pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
   
 > [!CAUTION]
 >  Non si consiglia di distribuire l'applicazione con un certificato di prova.  

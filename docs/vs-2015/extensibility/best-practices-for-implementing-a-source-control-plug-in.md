@@ -1,7 +1,7 @@
 ---
 title: Procedure consigliate per l'implementazione di un plug-in del controllo del codice sorgente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a444100536473b934996b78761395c09ddc906c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fccadb7bd4b2ceaed201ab2d4d5b5c4fa71bc0ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254689"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Procedure consigliate per implementare un plug-in del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedure consigliate per implementare un plug-in controllo sorgente](https://docs.microsoft.com/visualstudio/extensibility/best-practices-for-implementing-a-source-control-plug-in).  
-  
 I dettagli tecnici seguenti possono aiutarti a implementare in modo affidabile un plug-in controllo del codice sorgente [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="memory-management-issues"></a>Problemi di gestione della memoria  

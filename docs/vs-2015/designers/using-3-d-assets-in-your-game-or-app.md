@@ -1,7 +1,7 @@
 ---
 title: Using 3-D Assets in Your Game or App (Uso delle risorse tridimensionali nel gioco o nell'app) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226310"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Utilizzo delle risorse tridimensionali nel gioco o nell'app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [uso di asset 3D nel gioco Your o nell'App](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app).  
-  
 Questo articolo spiega come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per elaborare asset 3D e includerli nelle build.  
   
  Dopo avere creato asset 3D mediante gli strumenti disponibili in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile usarli nell'app. Perché gli asset siano utilizzabili, tuttavia, è necessario convertirli in un formato supportato da DirectX. Per agevolare la conversione degli asset, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornisce personalizzazioni di compilazione per ogni tipo di asset che può produrre. Per includere gli asset nella build, è sufficiente configurare il progetto per l'uso delle personalizzazioni di compilazione, aggiungere gli asset al progetto e configurarli per l'uso della personalizzazione di compilazione appropriata. In seguito è possibile caricare gli asset nell'app e usarli mediante la creazione e compilazione di risorse DirectX, come per qualsiasi altra app DirectX.  

@@ -1,7 +1,7 @@
 ---
 title: Analisi del codice per C-c + + Panoramica | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 27
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6764e39d55ebe2ce11776035f25d6fdf69be081
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42de573efcc44437eddf0e7d098681d05c094131
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530392"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222040"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Cenni preliminari sull'analisi del codice per C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analisi del codice per C/C++ Panoramica](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-c-cpp-overview).  
-  
 Lo strumento di analisi del codice C/C++ fornisce agli sviluppatori informazioni sui possibili errori nel codice sorgente C/C++. Gli errori di codifica più comuni segnalati dallo strumento includono i sovraccarichi del buffer, la memoria non inizializzata, dereferenziazioni al puntatore null e perdite di memoria e risorse.  
   
 ## <a name="ide-integrated-development-environment-integration"></a>Integrazione nell'IDE (Integrated Development Environment)  
