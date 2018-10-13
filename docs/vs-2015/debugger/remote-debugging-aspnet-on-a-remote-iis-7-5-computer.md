@@ -1,31 +1,29 @@
 ---
 title: Debug remoto di ASP.NET su un remoto con IIS 7.5 Computer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de51ed1cda2116b1f3b8b698be6e4653a1b648fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 124a4775593a161b1de7f55465bf20739909e4f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239850"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Debug remoto di ASP.NET in un Computer remoto con IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Remote Debug ASP.NET in un Computer IIS remoto](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer).  
-  
 È possibile distribuire un'applicazione Web ASP.NET in un computer Windows Server con IIS e configurarlo per il debug remoto. Questa guida illustra come impostare e configurare un'applicazione di Visual Studio 2015 MVC 4.5.2, distribuirla a IIS e collegare il debugger remoto da Visual Studio.
 
 Queste procedure sono state testate in queste configurazioni di server:
@@ -38,7 +36,7 @@ La maggior parte delle informazioni in questo articolo si applica anche al debug
 
 Per istruzioni su come scaricare il debugger remoto nel computer Windows Server, vedere [debug remoto](../debugger/remote-debugging.md).
 
-Per eseguire il debug remoto delle applicazioni ASP.NET, è possibile eseguire l'applicazione del debugger remoto come amministratore o avviare il debugger remoto come servizio. Informazioni dettagliate su come eseguire il debugger remoto come servizio possa essere disponibili nel [debug remoto](../debugger/remote-debugging.md).
+Per eseguire il debug remoto delle applicazioni ASP.NET, è possibile eseguire l'applicazione del debugger remoto come amministratore o avviare il debugger remoto come servizio. Informazioni dettagliate su come eseguire il debugger remoto come servizio sono disponibili in [Remote Debugging](../debugger/remote-debugging.md).
 
 Dopo l'installazione, assicurarsi che il debugger remoto è in esecuzione nel computer di destinazione. (In caso contrario, cercare **Remote Debugger** nel **avviare** menu. ) Nella finestra del debugger remoto appare come segue. (4020 è il numero di porta predefinito)
 

@@ -1,7 +1,7 @@
 ---
 title: Guida di orientamento per l'estensione del Debugger | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 753f63b1a3deae2b1eab7bd46d1302bebaa16b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fce5c11b5393bb8e3887b1369866a5f0906195d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242105"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guida di orientamento per l'estensione del debugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Guida di orientamento per l'estensione del Debugger](https://docs.microsoft.com/visualstudio/extensibility/debugger/roadmap-for-extending-the-debugger).  
-  
 Questa documentazione vengono fornite informazioni di riferimento e Guida per l'estensione di [!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)] del debugger con la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debug documentazione include esempi, un riferimento completo e numerosi scenari rappresentativi che illustrano i modi tipici per personalizzare il debugger.  

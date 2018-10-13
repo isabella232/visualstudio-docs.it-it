@@ -1,7 +1,7 @@
 ---
 title: Frammenti di codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29087da38fe7c89936e3823b43e591116396e432
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242172"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [frammenti di codice](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
-  
 I frammenti di codice sono piccoli blocchi di codice riutilizzabili che possono essere inseriti in un file di codice usando un comando di menu di scelta rapida o una combinazione di tasti di scelta rapida. In genere contengono blocchi di codice comunemente usati, ad esempio blocchi try-finally o if-else, ma possono essere usati per inserire intere classi o metodi.  
   
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Frammenti di espansione e frammenti Racchiudi tra  
