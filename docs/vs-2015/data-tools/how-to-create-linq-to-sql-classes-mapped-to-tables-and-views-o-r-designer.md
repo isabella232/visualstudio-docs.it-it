@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: creare LINQ to SQL classi mappate a tabelle e visualizzazioni (O-R Designer) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d9cebc980b62a5676ee4e65e5554086a273fa73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269543"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Procedura: creare LINQ to SQL classi mappate a tabelle e visualizzazioni (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [procedura: creare classi LINQ to SQL mappate a tabelle e visualizzazioni (O-R Designer)](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer).
-
 Classi LINQ to SQL mappate a tabelle di database e le viste vengono chiamati *le classi di entità*. Per la classe di entità viene eseguito il mapping a un record, mentre per le singole proprietà di una classe di entità viene eseguito il mapping alle singole colonne che costituiscono un record. Creare classi di entità che si basano su viste o tabelle di database trascinando le tabelle o viste dal **Esplora Server**/**Database Explorer** nel [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). Il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] genera le classi e applica le specifiche [! LINQ agli attributi SQL per abilitare [! LINQ alle funzionalità di SQL (la comunicazione dei dati e le funzionalità di modifica di <xref:System.Data.Linq.DataContext>). Per informazioni dettagliate su [! Classi LINQ to SQL, vedere [LINQ al modello a oggetti SQL](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
 > [!NOTE]

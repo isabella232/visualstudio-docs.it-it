@@ -1,7 +1,7 @@
 ---
 title: Definire un gestore movimenti in un diagramma di modellazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248084"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [definire un gestore movimenti in un diagramma di modellazione](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram).  
-  
 In Visual Studio è possibile definire i comandi eseguiti quando l'utente trascina o fa doppio clic sugli elementi in un diagramma UML. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.  
   
  Se esiste già un comportamento predefinito per il tipo di diagramma e il tipo di elemento che si vuole trascinare, potrebbe non essere possibile aggiungere o modificare questo comportamento.  
   
 ## <a name="requirements"></a>Requisiti  
- Visualizzare [requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -242,17 +240,17 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
 1.  Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.  
   
-     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Risoluzione dei problemi**: se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non avviato:  
+     **Risoluzione dei problemi**: se non viene avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
   
     -   Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
-    -   In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel **Avvia programma esterno** campo sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
+    -   In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione. Usare un diagramma appartenente a uno dei tipi elencati negli attributi della classe del gestore movimenti.  
+2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione. Usare un diagramma appartenente a uno dei tipi elencati negli attributi della classe del gestore movimenti.  
   
 3.  Fare doppio clic in un punto qualsiasi del diagramma. Dovrebbe essere chiamato il gestore di doppio clic.  
   
@@ -327,7 +325,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
      Se l'oggetto di origine è un elemento UML trascinato da Esplora modelli UML o da un altro diagramma UML, vedere [elementi di modello Get UML da IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
 ### <a name="writing-the-code-of-the-methods"></a>Scrittura del codice dei metodi  
- Per altre informazioni sulla scrittura del codice per leggere e aggiornare il modello, vedere [programmazione con l'API UML](../modeling/programming-with-the-uml-api.md).  
+ Per altre informazioni sulla scrittura del codice per la lettura e l'aggiornamento del modello, vedere [Programming with the UML API](../modeling/programming-with-the-uml-api.md).  
   
  Per informazioni sull'accesso alle informazioni del modello in un'operazione di trascinamento, vedere [elementi di modello Get UML da IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
@@ -354,7 +352,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
  Per altre informazioni, vedere [esplorare il modello UML](../modeling/navigate-the-uml-model.md).  
   
 ##  <a name="Installing"></a> Installazione e disinstallazione di un'estensione  
- È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri computer.  
+ È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.  
   
 #### <a name="to-install-an-extension"></a>Per installare un'estensione  
   
@@ -366,7 +364,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 2.  Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.  
   
-     Nel computer di destinazione deve essere una delle edizioni di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] indicata nel **vsixmanifest**.  
+     Nel computer di destinazione deve essere installata una delle edizioni di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] specificate in **source.extension.vsixmanifest**.  
   
 3.  Nel computer di destinazione aprire il file **.vsix** .  
   

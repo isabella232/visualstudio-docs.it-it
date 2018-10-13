@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: usare frammenti di codice XML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0025ef0033aba0b04c43b2e1a44c3790322dfd5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245856"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedura: utilizzare frammenti XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: usare frammenti di codice XML](https://docs.microsoft.com/visualstudio/xml-tools/how-to-use-xml-snippets).  
-  
   
 È possibile richiamare i frammenti XML usando i due comandi seguenti dal menu di scelta rapida dell'editor XML. Il **Inserisci frammento di codice** comando inserisce il frammento XML in corrispondenza della posizione del cursore. Il **Racchiudi** comando esegue il wrapping di frammenti XML intorno al testo selezionato. Ogni frammento XML dispone di tipi di frammento designati. I tipi di frammento determinano se il frammento di codice è disponibile con la **Inserisci frammento** comando, il **Racchiudi** o entrambi.  
   

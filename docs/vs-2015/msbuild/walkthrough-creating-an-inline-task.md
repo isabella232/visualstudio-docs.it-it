@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Creazione di un'attività inline | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 727c8cec7309952189558d2f4b7aebc8ec99738d
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 265a83444ce495452767b217a84072bfc17377d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250198"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Procedura dettagliata: Creazione di un'attività inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: creazione di un'attività Inline](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-creating-an-inline-task).  
-  
   
 Le attività di MSBuild in genere vengono create compilando una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. Per altre informazioni, vedere [Inline Tasks](../msbuild/msbuild-inline-tasks.md) (Attività inline).  
   

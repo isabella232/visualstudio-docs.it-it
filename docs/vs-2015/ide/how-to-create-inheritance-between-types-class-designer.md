@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Creare ereditarietà tra tipi (Progettazione classi) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd1b47ca4be4b68c1ddf3d4b75fcdfd25407705c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bcc052589f090eaad8aace8c491f74d3bbfefe9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530304"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257777"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Procedura: Creare ereditarietà tra tipi (Progettazione classi) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: creare ereditarietà tra tipi (Progettazione classi)](https://docs.microsoft.com/visualstudio/ide/how-to-create-inheritance-between-types-class-designer).  
-  
 Per creare una relazione di ereditarietà tra due tipi in un diagramma classi usando Progettazione classi, connettere il tipo di base al tipo o ai tipi derivati corrispondenti. È possibile creare una relazione di ereditarietà tra due classi, tra una classe e un'interfaccia o tra due interfacce.  
   
 ### <a name="to-create-an-inheritance-between-types"></a>Per creare un'ereditarietà tra tipi  

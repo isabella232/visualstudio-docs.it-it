@@ -1,7 +1,7 @@
 ---
 title: La migrazione di un servizio di linguaggio Legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a9cd6edb18f33a87f81d36feea55a26c0ed1e78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39f2cc0932e875a33621241d6cba0cb0b692ff6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247308"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrazione di un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [la migrazione di un servizio di linguaggio Legacy](https://docs.microsoft.com/visualstudio/extensibility/internals/migrating-a-legacy-language-service).  
-  
 È possibile eseguire la migrazione di un servizio di linguaggio legacy a una versione successiva di Visual Studio l'aggiornamento del progetto e l'aggiunta di un file vsixmanifest al progetto. Il servizio di linguaggio stesso continuerà a funzionare come prima, poiché l'editor di Visual Studio consente di adattare lo.  
   
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare un servizio di linguaggio, vedere [Editor e le estensioni del servizio di linguaggio](../../extensibility/editor-and-language-service-extensions.md).  

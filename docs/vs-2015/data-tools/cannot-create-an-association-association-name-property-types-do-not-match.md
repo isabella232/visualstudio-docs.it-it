@@ -1,7 +1,7 @@
 ---
 title: Impossibile creare un'associazione &lt;il nome dell'associazione&gt; -tipi di proprietà non corrispondono | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6254fd662e1ce021839f1cae5e77de5000453185
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 674a7de3bf3b4988bfd92390305a03c968d1dbe2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268515"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossibile creare un'associazione &lt;il nome dell'associazione&gt; -tipi di proprietà non corrispondono
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [non è possibile creare un'associazione &lt;il nome dell'associazione&gt; -tipi di proprietà non corrispondono](https://docs.microsoft.com/visualstudio/data-tools/cannot-create-an-association-association-name-property-types-do-not-match).  
-  
   
 Impossibile creare un'associazione \<nome associazione >-tipi di proprietà non corrispondono. Proprietà non hanno tipi corrispondenti: \<i nomi delle proprietà >.  
   

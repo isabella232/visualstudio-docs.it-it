@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: eliminare le notifiche di modifica di File | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526551"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257517"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Procedura: eliminare le notifiche di modifica di File
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: eliminare le notifiche di cambiamento File](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications).  
-  
 Quando è stato modificato il file fisico che rappresenta il buffer di testo, consente di visualizzare una finestra di dialogo con il messaggio **si desidera salvare le modifiche apportate ai seguenti elementi?** Questo è noto come notifica di modifica di file. Se sono condividono molte modifiche al file, tuttavia, questa finestra di dialogo ripetutamente la visualizzazione può diventare rapidamente fastidiosa.  
   
  A livello di codice, è possibile eliminare questa finestra di dialogo mediante la procedura seguente. In questo modo, è possibile ricaricare un file immediatamente senza dover richiedere all'utente di salvare le modifiche ogni volta.  

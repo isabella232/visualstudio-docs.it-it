@@ -1,7 +1,7 @@
 ---
 title: Creazione di soluzioni e progetti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee777b8b1d2664fbaa284033f21624238d5cf456
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248534"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creare soluzioni e progetti](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
-  
 I progetti sono i contenitori logici di tutti gli elementi necessari per compilare l'applicazione. Quando si crea un progetto scegliendo **File &#124; Nuovo &#124; Progetto** dal menu principale, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea una soluzione in cui inserirlo. È quindi possibile aggiungere altri progetti nuovi o esistenti alla soluzione, se necessario. È possibile creare progetti dai file di codice esistenti ed è possibile creare progetti temporanei (solo .NET) che verranno eliminati al termine del loro uso.  
   
 > [!NOTE]

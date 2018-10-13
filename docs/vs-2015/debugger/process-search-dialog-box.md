@@ -1,7 +1,7 @@
 ---
 title: Finestra di dialogo ricerca elabora | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 455921678267ae918175445bdd06fe4391f84fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43f856e849974375e9360dac1844e634c9915000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244647"
 ---
 # <a name="process-search-dialog-box"></a>Finestra di dialogo Ricerca processi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [dialogo Ricerca processi](https://docs.microsoft.com/visualstudio/debugger/process-search-dialog-box).  
-  
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un processo specifico nel [visualizzazione processi](../debugger/processes-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo a un **processi** finestra di visualizzazione. Quindi scegliere **Trova processo** dalle **ricerca** menu.  
   
  Sono disponibili le seguenti impostazioni:  

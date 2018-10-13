@@ -1,7 +1,7 @@
 ---
 title: Enumerazioni (debug di Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e6c431624c176142007b383470d67dc4f73e50f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 9340030c9dd2a1a69b50162dd4c5b29f9eb6a50d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247260"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumerazioni (debug di Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [enumerazioni (debug in Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/enumerations-visual-studio-debugging).  
-  
 Di seguito sono le enumerazioni per il [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Debugging SDK.  
   
  [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)  

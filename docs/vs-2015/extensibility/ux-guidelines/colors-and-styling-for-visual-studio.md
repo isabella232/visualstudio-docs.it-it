@@ -1,7 +1,7 @@
 ---
 title: I colori e stili per Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 355df1e0b0697470637f4bf79ad0eea15c4cd7c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267410"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [colori e stili per Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/colors-and-styling-for-visual-studio).  
-  
 ## <a name="using-color-in-visual-studio"></a>Uso di colore in Visual Studio  
  In Visual Studio, colore viene usato principalmente come strumento di comunicazione, non solo come effetto. Usare il colore minimo e si riserva per le situazioni in cui si desidera:  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: eseguire il Debug in un Cluster a prestazioni elevate | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ce148ab317b14aad6cd1e2c48a6f9245c81df98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5d57e1ff9a4ab082698b1c5d31b09a668cdc1c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262550"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Procedura: eseguire il debug su un cluster ad alte prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: eseguire il Debug in un Cluster ad alte prestazioni](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-on-a-high-performance-cluster).  
-  
 Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per requisiti generali di installazione remota, vedere [debug remoto](../debugger/remote-debugging.md).  
   
  Quando si esegue il debug in un cluster ad alte prestazioni, è possibile usare tutte le tecniche e le finestre di debug di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] disponibili per il debug remoto. Poiché, tuttavia, il debug viene eseguito in remoto, la finestra della console esterna non è disponibile.  

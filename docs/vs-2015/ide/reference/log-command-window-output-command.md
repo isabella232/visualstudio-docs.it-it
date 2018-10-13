@@ -1,7 +1,7 @@
 ---
 title: Comando Registra output finestra di comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f6cdef31ec8988612815a76c30198e97ddf4c26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c48c61177f80be00532347d3c49173aae54c7109
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266396"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [finestra di comando registra Output comando](https://docs.microsoft.com/visualstudio/ide/reference/log-command-window-output-command).  
-  
   
 Copia interamente l'input e l'output della finestra di **comando** in un file.  
   
@@ -83,7 +81,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
  [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
  [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

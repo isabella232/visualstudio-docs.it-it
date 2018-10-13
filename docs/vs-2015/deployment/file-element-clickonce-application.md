@@ -1,7 +1,7 @@
 ---
 title: '&lt;file&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bf5f0c803c9c60c9a4846aeba960cbdbf4c8129b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532039"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270738"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file&gt; elemento (applicazione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ &lt;file&gt; elemento (applicazione ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/file-element-clickonce-application).  
-  
 Identifica tutti i file scaricata e usata dall'applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -122,7 +120,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 |---------------|-----------------|  
 |`clsid`|Obbligatorio. L'ID di classe del componente COM espresso come GUID.|  
 |`description`|Facoltativo. Nome della classe.|  
-|`threadingModel`|Facoltativo. Il modello di threading utilizzato dalle classi COM nel processo. Se questa proprietà è null, non viene utilizzato alcun modello di threading. Il componente viene creato nel thread principale del client e vengono effettuato il marshalling di chiamate da altri thread per questo thread. L'elenco seguente mostra i valori validi:<br /><br /> `Apartment`, `Free`, `Both` e `Neutral`.|  
+|`threadingModel`|Facoltativo. Il modello di threading utilizzato dalle classi COM nel processo. Se questa proprietà è null, non viene utilizzato alcun modello di threading. Il componente viene creato nel thread principale del client e vengono effettuato il marshalling di chiamate da altri thread per questo thread. L'elenco seguente mostra i valori validi:<br /><br /> `Apartment`, `Free`, `Both`e `Neutral`.|  
 |`tlbid`|Facoltativo. GUID della libreria dei tipi per il componente COM.|  
 |`progid`|Facoltativo. Identificatore a livello di codice dipendente dalla versione associati al componente COM. Il formato di un `ProgID` è `<vendor>.<component>.<version>`.|  
 |`miscStatus`|Facoltativo. I duplicati nell'assembly manifesto le informazioni fornite dal `MiscStatus` chiave del Registro di sistema. Se i valori per il `miscStatusIcon`, `miscStatusContent`, `miscStatusDocprint`, o `miscStatusThumbnail` gli attributi non vengono trovati, il corrispondente valore predefinito elencato nella `miscStatus` viene usato per gli attributi mancanti. Il valore può essere un elenco delimitato da virgole dei valori dell'attributo nella tabella seguente. È possibile usare questo attributo se la classe COM è una classe OCX che richiede `MiscStatus` valori di chiave del Registro di sistema.|  
@@ -154,7 +152,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 |`Name`|Facoltativo. Il nome dell'interfaccia che verrà visualizzato nel codice.|  
 |`Tlbid`|Facoltativo. La libreria dei tipi che contiene la descrizione dell'interfaccia specificata per il `iid` attributo.|  
 |`proxyStubClass32`|Facoltativo. Esegue il mapping di un IID a un CLSID nelle DLL proxy a 32 bit.|  
-|`threadingModel`|Facoltativo. Facoltativo. Il modello di threading utilizzato dalle classi COM nel processo. Se questa proprietà è null, non viene utilizzato alcun modello di threading. Il componente viene creato nel thread principale del client e vengono effettuato il marshalling di chiamate da altri thread per questo thread. L'elenco seguente mostra i valori validi:<br /><br /> `Apartment`, `Free`, `Both` e `Neutral`.|  
+|`threadingModel`|Facoltativo. Facoltativo. Il modello di threading utilizzato dalle classi COM nel processo. Se questa proprietà è null, non viene utilizzato alcun modello di threading. Il componente viene creato nel thread principale del client e vengono effettuato il marshalling di chiamate da altri thread per questo thread. L'elenco seguente mostra i valori validi:<br /><br /> `Apartment`, `Free`, `Both`e `Neutral`.|  
   
 ## <a name="windowclass"></a>windowClass  
  Il `windowClass` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento fa riferimento a una classe di finestra definita dal componente COM che deve essere installata una versione applicato. L'elemento contiene gli attributi seguenti.  
@@ -164,31 +162,31 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 |`versioned`|Facoltativo. Controlla se la finestra interna classe nome usato nella registrazione contiene la versione dell'assembly che contiene la classe della finestra. Il valore di questo attributo può essere `yes` o `no`. Il valore predefinito è `yes`. Il valore `no` deve essere utilizzato solo se la stessa classe della finestra è definita da un componente side-by-side ed un'equivalente non-side-by-side e si desidera trattarli come la classe della finestra stessa. Si noti che si applicano le regole normali sulla registrazione delle classi di finestra, ovvero solo il primo componente che registra la classe di finestra saranno in grado di registrare, perché non dispone di una versione applicata.|  
   
 ## <a name="hash"></a>hash  
- Il `hash` costituisce un elemento figlio facoltativo di `file` elemento. Il `hash` elemento non ha attributi.  
+ Il `hash` costituisce un elemento figlio facoltativo di `file` elemento. L'elemento `hash` non ha attributi.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza, per assicurarsi che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non è incluso, questo controllo non verrà eseguito. Pertanto, l'omissione di `hash` elemento non è consigliato.  
   
  Se un manifesto contiene un file che non è stato eseguito l'hashing, tale manifesto non può essere digitale firmato, perché gli utenti non è possibile verificare il contenuto di un file senza hash.  
   
 ## <a name="dsigtransforms"></a>dsig: Transforms  
- Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:Transforms` elemento non ha attributi.  
+ Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:Transforms` non ha attributi.  
   
 ## <a name="dsigtransform"></a>dsig: Transform  
- Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. Il `dsig:Transform` elemento ha gli attributi seguenti.  
+ Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. L'elemento `dsig:Transform` presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Algorithm`|L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ## <a name="dsigdigestmethod"></a>dsig: DigestMethod  
- Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:DigestMethod` elemento ha gli attributi seguenti.  
+ Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestMethod` presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Algorithm`|L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ## <a name="dsigdigestvalue"></a>dsig:  
- Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:DigestValue` elemento non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
+ Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestValue` non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
   
 ## <a name="remarks"></a>Note  
  Questo elemento identifica tutti gli i file che costituiscono l'applicazione e, in particolare, i valori hash per la verifica dei file. Questo elemento può includere anche i dati sull'isolamento modello COM (Component Object) associati al file. Se viene modificato un file, file manifesto dell'applicazione deve inoltre essere aggiornato per riflettere la modifica.  

@@ -1,7 +1,7 @@
 ---
 title: Opzioni e le pagine di opzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97bf59649d0f2099261bef7a3e425f2fe7fc553e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261040"
 ---
 # <a name="options-and-options-pages"></a>Opzioni e pagine di opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [opzioni e le pagine di opzioni](https://docs.microsoft.com/visualstudio/extensibility/internals/options-and-options-pages).  
-  
 Facendo clic su **opzioni** nel **Tools** si aprirà il menu il **opzioni** nella finestra di dialogo. Le opzioni nella finestra di dialogo vengono collettivamente le pagine di opzioni. Il controllo struttura ad albero nel riquadro di spostamento include le categorie delle opzioni e ogni categoria include le pagine di opzioni. Quando si seleziona una pagina, le relative opzioni appaiono nel riquadro di destra. Queste pagine consentono di modificare i valori delle opzioni che determinano lo stato di un pacchetto VSPackage.  
   
 ## <a name="support-for-options-pages"></a>Supporto per le pagine di opzioni  

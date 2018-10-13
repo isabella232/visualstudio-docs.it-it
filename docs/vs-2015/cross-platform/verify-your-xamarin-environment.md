@@ -1,7 +1,7 @@
 ---
 title: Verificare l'ambiente Xamarin | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,20 +10,18 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6c3d629f4b5a634c1dbc2c55f44db1db144e9a81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66428a7f06aee5449191a13e2712ae119daffb0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243492"
 ---
 # <a name="verify-your-xamarin-environment"></a>Verificare l'ambiente Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [verificare l'ambiente Xamarin](https://docs.microsoft.com/visualstudio/cross-platform/verify-your-xamarin-environment).  
   
-  
-Al termine dei programmi di installazione (vedere [Setup and install](../cross-platform/setup-and-install.md)), dedicare alcuni minuti per verificare che tutto sia pronto per le attività di sviluppo con Xamarin.  
+Al termine dei programmi di installazione (vedere [Configurazione e installazione](../cross-platform/setup-and-install.md)), dedicare alcuni minuti per verificare che tutto sia pronto per le attività di sviluppo con Xamarin.  
   
  Dopo aver completato queste verifiche, è possibile eseguire una o entrambe le procedure dettagliate seguenti:  
   

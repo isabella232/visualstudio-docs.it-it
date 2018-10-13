@@ -1,7 +1,7 @@
 ---
 title: Creare ed eseguire unit test per un'app dello Store in Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 76a73232cf4c522baf261d50910d188234e8a4c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249509"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Creare ed eseguire unit test per un'app dello Store in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione ed eseguire unit test per un'app di Store in Visual Studio](https://docs.microsoft.com/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio).  
-  
 Gli strumenti di unit test di Visual Studio 2012 Express per Windows 8 sono progettati per offrire supporto a sviluppatori e team che integrano gli unit test nelle attività di sviluppo del software. Gli unit test offrono a sviluppatori e tester un metodo efficace e gestibile per la ricerca di errori logici nei metodi delle classi nei progetti Visual C#, Visual Basic e Visual C++.  
   
 > [!NOTE]

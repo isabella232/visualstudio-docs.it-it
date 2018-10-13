@@ -1,7 +1,7 @@
 ---
 title: Creazione di applicazioni ClickOnce dalla riga di comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: beb799a75649b02a04dc4a0aae8672855b1094b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271030"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilazione di applicazioni ClickOnce dalla riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [compilazione di applicazioni ClickOnce dalla riga di comando](https://docs.microsoft.com/visualstudio/deployment/building-clickonce-applications-from-the-command-line).  
-  
 In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], è possibile compilare progetti dalla riga di comando, anche se sono stati creati nell'ambiente di sviluppo integrato (IDE). In effetti, è possibile ricompilare un progetto creato con [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] in un altro computer che dispone solo di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] installato. In questo modo di riprodurre una build con un processo automatizzato, ad esempio, in una compilazione centrale lab o tramite tecniche di scripting avanzate esula dall'ambito di compilazione del progetto stesso.  
   
 ## <a name="using-msbuild-to-reproduce-clickonce-application-deployments"></a>Uso di MSBuild per riprodurre le distribuzioni di applicazioni ClickOnce  

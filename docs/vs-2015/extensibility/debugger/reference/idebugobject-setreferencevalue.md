@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::SetReferenceValue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51770bf8b57877450917933af2f5382205aa60fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bba91eeaeacff2b2cdf8bae67730312769905438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266877"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [IDebugObject::SetReferenceValue](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject-setreferencevalue).  
-  
 Imposta il valore di riferimento di questo oggetto.  
   
 ## <a name="syntax"></a>Sintassi  

@@ -1,7 +1,7 @@
 ---
 title: 'I diagrammi livello: Riferimento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85024000e0cb4be7f9828052c6bc9194d498ab30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520284"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248313"
 ---
 # <a name="layer-diagrams-reference"></a>Diagrammi livello: riferimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [diagrammi delle dipendenze: riferimenti](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-reference).  
-  
 In Visual Studio, è possibile usare una *diagramma livello* per visualizzare l'architettura di alto livello, logica del sistema. Un diagramma livello organizza gli elementi fisici nel sistema in gruppi logici astratti, chiamati *livelli*. Questi livelli descrivono le attività principali eseguite dagli elementi o i componenti principali del sistema. Ogni livello può anche contenere livelli annidati che descrivono attività più dettagliate.  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

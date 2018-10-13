@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Limitare la strumentazione a specifiche funzioni | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab089bd02fafc4dc711fa01c49a9690bbd9f6a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0432a3e07d10db9daa03395f182836726bdf753
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529655"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249184"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedura: Limitare la strumentazione a specifiche funzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: limite di strumentazione a specifiche funzioni](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-functions).  
-  
 È possibile limitare la strumentazione e la raccolta dei dati a una o più funzioni impostando le opzioni nella pagina **Avanzate** di **Sessione prestazioni** o nelle pagine delle proprietà del file binario di destinazione:  
   
 -   Se si specificano le funzioni nella pagina delle proprietà della sessione di prestazioni, solo tali funzioni vengono instrumentate in tutti i file binari instrumentati della sessione.  

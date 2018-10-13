@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: creare un Set di regole personalizzato | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee21452912fa87b63b49db609828ef44cac7c4c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255502"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Procedura: Creare un set di regole personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: creare un Set di regole personalizzato](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-custom-rule-set).  
-  
 Nelle [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], e [!INCLUDE[vsPro](../includes/vspro-md.md)], è possibile creare e modificare un oggetto personalizzato *set di regole* per soddisfare specifiche esigenze del progetto associate con l'analisi del codice. Per creare una regola personalizzata impostata, si apre uno o più standard regola imposta nell'editor set di regole. È quindi possibile aggiungere o rimuovere le regole specifiche ed è possibile modificare l'azione che si verifica quando l'analisi del codice determina che una regola è stata violata.  
   
  Per creare una nuova regola personalizzata impostata, è necessario salvarlo con un nuovo nome file. Il set di regole personalizzato viene assegnato automaticamente al progetto.  

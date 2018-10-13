@@ -1,7 +1,7 @@
 ---
 title: (BoundsRules) vincolano posizione e dimensione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cafcf44bc1365b74474b201a01d0089465cc7430
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb9d9c35f5600ee98d53863780d9f54c3eed53f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528734"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253721"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Le regole associate (BoundsRules) vincolano posizione e dimensione delle forme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [BoundsRules posizione vincolare e dimensione](https://docs.microsoft.com/visualstudio/modeling/boundsrules-constrain-shape-location-and-size).  
-  
 Oggetto *regola sui limiti* è una classe che definisce i limiti su dimensioni e la posizione di una forma. Fornisce un metodo che viene chiamato ripetutamente mentre un utente sta trascinando una forma o l'angoli o ai lati di una forma.  
   
  Nell'esempio seguente limita una forma rettangolare sia una barra di dimensioni fisse, orizzontale o verticale. Quando l'utente trascina l'angoli o ai lati, la struttura alternativamente le due configurazioni consentite dell'altezza e larghezza.  

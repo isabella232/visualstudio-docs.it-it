@@ -1,7 +1,7 @@
 ---
 title: Installazione di sistemi di database, strumenti ed esempi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1dea5adb6903c7beaf39c65909296224afa2a44c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f18ace9a18eefd0758e581b83001b85c3f48a3da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244283"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Installazione di sistemi di database, strumenti ed esempi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [installazione di sistemi di database, strumenti ed esempi](https://docs.microsoft.com/visualstudio/data-tools/installing-database-systems-tools-and-samples).  
-  
   
 Visual Studio non include i sistemi di database diversi da quelli usati internamente. Per sviluppare un'applicazione dati connessi in Visual Studio, in genere installa il sistema di database nel computer di sviluppo locale e quindi distribuire l'applicazione e database in un ambiente di produzione quando sono pronte. Per il sistema di database deve essere accessibile da applicazioni .NET e per essere visibile nelle finestre di Visual Studio data tools, è necessario un provider di dati ADO.NET. Un provider deve supportare in modo specifico Entity Framework se si prevede di usare modelli di dati di entità nell'applicazione .NET.     Molti provider vengono offerti tramite Gestione pacchetti NuGet o tramite Visual Studio Gallery.  
   

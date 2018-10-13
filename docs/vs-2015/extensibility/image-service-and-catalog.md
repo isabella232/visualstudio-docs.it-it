@@ -1,7 +1,7 @@
 ---
 title: Immagine di servizio e catalogo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3079bada9b8d3e9a0b2644e4aaa3d9e3ee3bebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847ac3b7ed956daf61a04c5891871c9182594877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526339"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265213"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [servizio immagini e il catalogo](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog).  
-  
 Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigliate per adottare il catalogo di immagini introdotto in Visual Studio 2015 e Visual Studio Image Service.  
   
  Il servizio immagini introdotto in Visual Studio 2015 consente agli sviluppatori di ottenere le immagini ottimali per il dispositivo e il tema scelto dell'utente per visualizzare l'immagine, inclusi corretto dei temi per il contesto in cui sono visualizzate. Adozione del servizio immagini consentirà di eliminare i punti deboli principali correlati alla manutenzione di asset, il ridimensionamento HDPI e temi.  

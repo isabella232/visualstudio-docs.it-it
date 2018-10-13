@@ -1,7 +1,7 @@
 ---
 title: Implementazione di un tipo di linguaggio legacy2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0b812fd0cc54f117e89d09f151293eec1cf6fe8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35dc4c6b80975ccddc42e54d0d7f39cf9024d62d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253123"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementazione di un servizio di linguaggio Legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [implementazione di un tipo di linguaggio legacy2](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-a-legacy-language-service2).  
-  
 Per implementare un servizio di linguaggio tramite il framework di pacchetto gestito (MPF), è necessario derivare una classe dalla classe di <xref:Microsoft.VisualStudio.Package.LanguageService> classe e implementare i seguenti metodi astratti e le proprietà:  
   
--   Metodo <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>  
+-   Metodo <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>   
   
 -   Metodo <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>  
   

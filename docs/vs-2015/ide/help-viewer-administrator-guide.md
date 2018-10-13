@@ -1,7 +1,7 @@
 ---
 title: Guida dell'amministratore di Help Viewer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97d28d0651be2fd04e283b05e5a9a0e81997c338
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256958"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Guida dell'amministratore di Help Viewer](https://docs.microsoft.com/visualstudio/ide/help-viewer-administrator-guide).  
-  
 Il visualizzatore della Guida consente di gestire le installazioni della Guida locale per gli ambienti di rete con o senza accesso a Internet. Il contenuto della Guida locale viene configurato per ogni singolo computer. Per impostazione predefinita, gli utenti devono disporre dei diritti di amministratore per aggiornare l'installazione della Guida locale.  
   
  Se l'ambiente di rete consente ai client di accedere a Internet, il visualizzatore della Guida consente di usare script della riga di comando per distribuire contenuto della Guida locale da Internet.  

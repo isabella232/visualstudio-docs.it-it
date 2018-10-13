@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 48bd09cdd068adba49147222cc7458afe77c61e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528222"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253006"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: uso di un File di configurazione per definire un'origine dati](https://docs.microsoft.com/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source).  
-  
 Questa procedura dettagliata illustra come usare un'origine dati definita in un file app.config per gli unit test. Viene mostrato come creare un file app.config che definisce un'origine dati che può essere usata dalla classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Le attività incluse nella procedura dettagliata sono le seguenti:  
   
 -   Creazione di un file app.config.  

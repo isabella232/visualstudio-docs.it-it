@@ -1,7 +1,7 @@
 ---
 title: Profilatura rapida di sito Web con VSPerfASPNETCmd | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16bef2afa14d992300649d4ec9ffd9752def099
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 5911a574bb10e284cfd9aa2a58cff9fddba5c7ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247663"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilatura rapida di sito Web con VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [profilatura rapida di sito Web con VSPerfASPNETCmd](https://docs.microsoft.com/visualstudio/profiling/rapid-web-site-profiling-with-vsperfaspnetcmd).  
-  
 Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilmente la profilatura di applicazioni Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. **VSPerfASPNETCmd** è il metodo preferito per la profilatura con il profiler autonomo. Per altre informazioni, vedere [Procedura: installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]

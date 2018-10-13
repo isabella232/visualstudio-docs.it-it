@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Installare il profiler autonomo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c0b9048d54af3fdc6910803a3d82d8b33700d0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f42732471ae71ddf0b748c562feabd7b6d3da49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263536"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Procedura: installare il profiler autonomo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: installare il Profiler autonomo](https://docs.microsoft.com/visualstudio/profiling/how-to-install-the-stand-alone-profiler).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] offre un profiler autonomo basato sulla riga di comando che può essere eseguito senza installare l'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Questa situazione si verifica quando un computer non ha o non può avere un ambiente di sviluppo installato. È consigliabile, ad esempio, non installare un ambiente di sviluppo in un server Web di produzione.  
   
 > [!NOTE]

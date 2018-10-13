@@ -1,7 +1,7 @@
 ---
 title: Comando Alias | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 17c5d979acf41693ddf8e7d0fccbbce10b581d9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9fb6a4da0b18cf022ee388ff4a6fa5f399dc650
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532609"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258518"
 ---
 # <a name="alias-command"></a>Comando Alias
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [comando Alias](https://docs.microsoft.com/visualstudio/ide/reference/alias-command).  
-  
   
 Crea un nuovo alias per un comando completo, un comando completo con i relativi argomenti o un altro alias.  
   
@@ -90,7 +88,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
  [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
  [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

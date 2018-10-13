@@ -1,7 +1,7 @@
 ---
 title: Metodo marker_series::is_enabled | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db5a91a3b2212967cb1de915f15abb9d5caa9d98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 774b1281209787a19cdd83e4ef1019e4bf63591c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263796"
 ---
 # <a name="markerseriesisenabled-method"></a>Metodo marker_series::is_enabled
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [marker_series:: is_enabled metodo](https://docs.microsoft.com/visualstudio/profiling/marker-series-is-enabled-method).  
-  
 Determina se il provider è stato abilitato da una sessione.  
   
 ## <a name="syntax"></a>Sintassi  

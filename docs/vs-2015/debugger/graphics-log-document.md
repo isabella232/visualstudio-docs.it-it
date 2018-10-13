@@ -1,7 +1,7 @@
 ---
 title: Documento di Log della grafica | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 385744b280bbd8069acef4da0a36ae9bd9716fcb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b35cd0a0063ab02af0ed0831079439926b446794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525532"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261560"
 ---
 # <a name="graphics-log-document"></a>Documento log grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [documento Log grafica](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-log-document).  
-  
 Il documento di log della grafica è la registrazione degli eventi di grafica che si sono verificati durante l'esecuzione dell'app in una sessione di diagnostica della grafica. Dopo la registrazione, è possibile esaminare il log in Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.  
   
  Ecco l'aspetto di un documento di log della grafica in Analizzatore grafica:  
@@ -86,7 +84,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
   
 |Proprietà|Descrizione|  
 |--------------|-----------------|  
-|**Percorso**|Percorso del file con estensione vsglog. **Nota:** in acquisizione legacy, questa proprietà è inutilizzata.|  
+|**Path**|Percorso del file con estensione vsglog. **Nota:** in acquisizione legacy, questa proprietà è inutilizzata.|  
   
  **Informazioni sul modulo**  
  Visualizza il nome e la versione delle DLL (Dynamic Link Library) caricate dall'app durante la sessione di acquisizione.  
@@ -108,7 +106,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |Proprietà|Descrizione|  
 |--------------|-----------------|  
 |**Data/ora dell'ultima modifica**|Data e ora in cui è stata compilata l'app.|  
-|**Percorso**|Percorso dell'app.|  
+|**Path**|Percorso dell'app.|  
 |**ID processo**|ID processo assegnato all'app.|  
 |**Version**|Versione dell'app.|  
   

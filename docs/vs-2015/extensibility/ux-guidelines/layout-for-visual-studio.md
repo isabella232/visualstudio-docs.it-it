@@ -1,7 +1,7 @@
 ---
 title: Layout per Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25ba43a08bc2c886302894d891800ac1db87a18a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67117992e7043335152adea59d7e15f7bbdcce00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254755"
 ---
 # <a name="layout-for-visual-studio"></a>Layout per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Layout per Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/layout-for-visual-studio).  
-  
 La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra di dialogo utilità](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), che sono il unthemed finestre di dialogo standard di seguire [principi di layout di finestra di dialogo Windows Desktop](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx). Mentre Visual Studio viene spostato alla relativa interfaccia utente di aggiornamento, alcune delle finestre di dialogo più evidenti sono una nuova progettazione che stabilisce le esperienze di definizione del prodotto. Questi [layout di finestra di dialogo con tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) hanno un aspetto a tema.  
   
 ##  <a name="BKMK_UtilityDialogLayout"></a> Layout di finestra di dialogo utilità  

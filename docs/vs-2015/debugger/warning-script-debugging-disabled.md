@@ -1,7 +1,7 @@
 ---
 title: 'Avviso: Debug degli Script disabilitato | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91b54b3e9a70284dc1efb03be7adfaa5d1421920
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2274d1fc8ce534ed5d839efe6de8e933595c395f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519757"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264979"
 ---
 # <a name="warning-script-debugging-disabled"></a>Avviso: debug degli script disabilitato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [avviso: debug degli Script disabilitato](https://docs.microsoft.com/visualstudio/debugger/warning-script-debugging-disabled).  
-  
 Il debug degli script è attualmente disabilitato in Internet Explorer  
   
  Questo avviso viene visualizzato quando si tenta di eseguire il debug dello script senza abilitare il debug degli script in Internet Explorer. Per motivi di sicurezza, il debug degli script è disabilitato in Internet Explorer per impostazione predefinita.  

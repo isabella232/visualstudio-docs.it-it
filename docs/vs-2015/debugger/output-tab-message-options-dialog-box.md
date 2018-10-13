@@ -1,7 +1,7 @@
 ---
 title: Scheda output, messaggi di finestra di dialogo Opzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48e2e8d33df976944259f431430bb3e491a1acf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f4604754dcbb0d250fb14188a2fa3cc889a03f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247989"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Scheda Output, finestra di dialogo Opzioni messaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [scheda Output, finestra di dialogo Opzioni messaggio](https://docs.microsoft.com/visualstudio/debugger/output-tab-message-options-dialog-box).  
-  
 Usare la **Output** tab per specificare quali dati di ogni messaggio all'elenco nella [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **i messaggi di Log** dal **Spy** menu.  
   
  Le impostazioni seguenti sono disponibili sul **Output** scheda:  

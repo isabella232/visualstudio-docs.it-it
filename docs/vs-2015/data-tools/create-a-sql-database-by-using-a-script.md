@@ -1,7 +1,7 @@
 ---
 title: Creare un database SQL usando uno script | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,22 +17,20 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9a2e3fdeccf8e3b094bd5fb1519d740cee7ce41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266591"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Creare un database SQL usando uno script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creare un database SQL usando uno script](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-script).  
-  
   
 In questa procedura dettagliata, si usa Visual Studio per creare un database di piccole dimensioni che contiene il codice di esempio per [creare un'applicazione dati semplice usando ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
   
- **Contenuto dell'argomento**  
+ **In questo argomento**  
   
 -   [Creare uno script contenente uno schema di database](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
   

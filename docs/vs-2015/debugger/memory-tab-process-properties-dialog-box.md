@@ -1,7 +1,7 @@
 ---
 title: Scheda memoria, finestra di dialogo Proprietà processo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45d7933b70555a3c80a094ea8cd3f982e232f5de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 724e760c585f0e6423164e1a6bb28aefbf696c2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245797"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Scheda Memoria, finestra di dialogo Proprietà processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [della scheda di memoria, finestra di dialogo Proprietà processo](https://docs.microsoft.com/visualstudio/debugger/memory-tab-process-properties-dialog-box).  
-  
 Usare la **memoria** scheda per visualizzare l'utilizzo della memoria da parte di un processo. Per visualizzare il [finestra di dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo su un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
   
  Le impostazioni seguenti sono disponibili sul **memoria** scheda:  

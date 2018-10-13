@@ -1,7 +1,7 @@
 ---
 title: Strumenti di profilatura | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244038"
 ---
 # <a name="profiling-tools"></a>Strumenti di profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [profilatura in Visual Studio](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour).  
-  
 Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizzo della memoria e della CPU e altri problemi a livello di applicazione. Con questi strumenti è possibile accumulare i dati, ad esempio i valori delle variabili, le chiamate di funzione e gli eventi, in base al tempo di esecuzione dell'applicazione nel debugger. È possibile visualizzare lo stato dell'applicazione in punti diversi durante l'esecuzione del codice.  
   
  Consultare il riepilogo in basso per vedere quali strumenti sono disponibili per il tipo di progetto, ad esempio, desktop, UWP, ASP.NET.  
@@ -48,7 +46,7 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
 ## <a name="cpu-usage"></a>Utilizzo CPU  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice C++, C#/VB e JavaScript.  È possibile usare questo strumento con le applicazioni desktop e le app universali di Windows, nonché con le app dei servizi app di Azure. Lo strumento **Utilizzo CPU** può essere eseguito dalla finestra **Strumenti di diagnostica** durante il debug (**Debug / Windows / Mostra strumenti di diagnostica**) o all'esterno del debugger (**Debug / Profiler prestazioni**). Visualizzare [l'utilizzo della CPU](../profiling/cpu-usage.md) per altre informazioni.  
+ Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice C++, C#/VB e JavaScript.  È possibile usare questo strumento con le applicazioni desktop e le app universali di Windows, nonché con le app dei servizi app di Azure. Lo strumento **Utilizzo CPU** può essere eseguito dalla finestra **Strumenti di diagnostica** durante il debug (**Debug / Windows / Mostra strumenti di diagnostica**) o all'esterno del debugger (**Debug / Profiler prestazioni**). Vedere [Utilizzo CPU](../profiling/cpu-usage.md) .  
   
 ## <a name="performance-explorer"></a>Esplora prestazioni  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  

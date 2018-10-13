@@ -1,7 +1,7 @@
 ---
 title: Estensione di menu e comandi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 158759d2511b6ba1209a045a898969fce774e0a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20ec62586f9a725c1a33da60986d3c8729f0e402
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520264"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261001"
 ---
 # <a name="extending-menus-and-commands"></a>Estensione di menu e comandi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [estensione di menu e comandi](https://docs.microsoft.com/visualstudio/extensibility/extending-menus-and-commands).  
-  
 I comandi sono la procedura per aggiungere azioni e i processi per Visual Studio. Nella maggior parte dei casi i comandi vengono visualizzati nei menu o barre degli strumenti. Il modello di progetto VSPackage viene illustrato come implementare un comando molto semplice. Per un'implementazione leggermente più lunga, ma comunque fondamentale, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
  Per altre informazioni sui comandi, menu e barre degli strumenti di Visual Studio, vedere [comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md).  

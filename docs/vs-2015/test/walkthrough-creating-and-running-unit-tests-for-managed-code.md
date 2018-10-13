@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0bc6ab5854d0db9fc5bae7c642b804bc5af27a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e50cfc446bf13e93258e28877f9706a3ccd86ae7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270634"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: creazione ed esecuzione di Unit test per codice gestito](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code).  
-  
 Questa procedura dettagliata illustra come creare, eseguire e personalizzare una serie di unit test usando il framework di unit test di Microsoft per il codice gestito ed Esplora test di Visual Studio. Verrà illustrato prima di tutto il progetto C# in fase di sviluppo, quindi saranno creati i test in cui verrà usato il codice e saranno esaminati i risultati. Sarà infine possibile modificare il codice del progetto ed eseguire nuovamente i test.  
   
  Di seguito sono elencate le diverse sezioni di questo argomento:  

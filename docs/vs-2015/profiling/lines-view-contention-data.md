@@ -1,7 +1,7 @@
 ---
 title: 'Visualizzazione Righe: dati sui conflitti | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09149f44e80155a13986d42d2b3279e5c39c8884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254735"
 ---
 # <a name="lines-view---contention-data"></a>Visualizzazione Righe: dati sui conflitti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione righe: dati sui conflitti](https://docs.microsoft.com/visualstudio/profiling/lines-view-contention-data).  
-  
 Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura. In un file di origine un'istruzione può occupare più di una riga in un file di origine e una singola riga può includere più di un'istruzione.  
   
  Un'istruzione viene identificata in base ai dati seguenti:  

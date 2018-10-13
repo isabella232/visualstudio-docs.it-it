@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: usare la finestra Stack di chiamate | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590613"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271661"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Procedura: utilizzare la finestra Stack di chiamate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzare lo Stack di chiamate nel Debugger di Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window).  
-  
 Tramite il **Stack di chiamate** finestra, è possibile visualizzare le chiamate di funzione o routine attualmente presenti nello stack.  
   
  Il **Stack di chiamate** viene visualizzato il nome di ogni funzione e il linguaggio di programmazione in cui è scritto. Il nome della funzione o della procedura può essere seguito da informazioni facoltative quali il nome del modulo, il numero di riga, oltre a nomi, tipi e valori di parametri. La visualizzazione di queste informazioni opzionali può essere attivata o disattivata.  

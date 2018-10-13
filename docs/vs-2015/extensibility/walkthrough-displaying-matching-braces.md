@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247832"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Procedura dettagliata: visualizzazione della corrispondenza parentesi graffe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: visualizzazione delle parentesi graffe corrispondenti](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces).  
-  
 È possibile implementare funzionalità basate sul linguaggio, come corrispondenza che definisce le parentesi graffe che si desidera trovare una corrispondenza, e quindi aggiungendo un tag del marcatore di testo per le parentesi graffe corrispondenti quando il cursore si trova su una delle parentesi graffe tra parentesi graffe. È possibile definire le parentesi graffe nel contesto di un linguaggio, è possibile definire il tipo di contenuto e l'estensione di nome file e applicare i tag per solo tale tipo o è possibile applicare i tag per un tipo di contenuto esistente (ad esempio "text"). Procedura dettagliata illustra come applicare i tag per il tipo di contenuto "text" corrispondenza tra parentesi graffe.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -36,7 +34,7 @@ La versione più recente di questo argomento è reperibile in [procedura dettagl
   
 #### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF  
   
-1.  Creare un progetto di classificatore editor. Denominare la soluzione `BraceMatchingTest`.  
+1.  Creare un progetto di classificatore editor. Assegnare alla soluzione il nome `BraceMatchingTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

@@ -1,7 +1,7 @@
 ---
 title: "Procedura: Gestire la modalità A capo automatico nell'editor | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d129b22bdd4a69c8c8874a42fd6259018b6fee2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 011bae45760e01d6b3cb8ed55e7d0afdf017e7cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271804"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: gestire la modalità A capo automatico nell'editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: gestire funzione a capo automatico nell'Editor](https://docs.microsoft.com/visualstudio/ide/reference/how-to-manage-word-wrap-in-the-editor).  
-  
   
 È possibile selezionare e deselezionare l'opzione **A capo automatico**. Se questa opzione è selezionata, la parte di una riga che si estende oltre la larghezza corrente della finestra dell'Editor del codice viene visualizzata nella riga successiva. Se questa opzione è deselezionata, ad esempio per facilitare l'uso della numerazione delle righe, è possibile visualizzare la parte finale delle righe lunghe scorrendo la finestra verso destra.  
   

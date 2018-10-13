@@ -1,7 +1,7 @@
 ---
 title: Strumento Windows nel Registro di sistema | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e0d3b3a1d7a91e8d4d7f8fc80e57434df3d4c62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f3ea7aa24a6c049b5cee6e130dee839952bef2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517193"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266857"
 ---
 # <a name="tool-windows-in-the-registry"></a>Strumento Windows nel Registro di sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [dello strumento Windows nel Registro di sistema](https://docs.microsoft.com/visualstudio/extensibility/tool-windows-in-the-registry).  
-  
 Pacchetti VSPackage che forniscono finestre degli strumenti è necessario registrare con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] come strumento di provider di finestra. Finestre degli strumenti create utilizzando il modello di pacchetto di Visual Studio per eseguire questa operazione per impostazione predefinita. I provider di finestra degli strumenti hanno chiavi del Registro di sistema che specificano gli attributi di visibilità, ad esempio dimensioni della finestra degli strumenti predefinita e la posizione, il GUID della finestra che viene utilizzato come il riquadro della finestra degli strumenti e lo stile di ancoraggio.  
   
  Durante lo sviluppo, i provider di finestra degli strumenti gestita registrare finestre degli strumenti aggiungendo attributi al codice sorgente e quindi eseguendo l'utilità RegPkg.exe sull'assembly risultante. Per altre informazioni, vedere [la registrazione di una finestra degli strumenti](../extensibility/registering-a-tool-window.md).  

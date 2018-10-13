@@ -1,7 +1,7 @@
 ---
 title: Raccolta di dati di memoria da servizi .NET Framework tramite la riga di comando del profiler | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ee88087c96b05854359a7e6bcfd95b6c09925ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303e740aa753536a9c15543a03712e7480f41e0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269621"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Raccolta di dati di memoria da servizi .NET Framework tramite la riga di comando del profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [raccolta di dati di memoria da servizi .NET Framework tramite la riga di comando del Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line).  
-  
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'allocazione della memoria e sulla durata degli oggetti per i servizi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] tramite il metodo di campionamento dalla riga di comando.  
   
 ## <a name="common-tasks"></a>Attività comuni  

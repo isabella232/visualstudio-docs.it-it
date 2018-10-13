@@ -1,7 +1,7 @@
 ---
 title: Oggetto VSCodeWindow | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17dd907bf041f37c4273548f0793b26625a34e3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12752b015bc8e3f69002fd8732622fc11eface65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259378"
 ---
 # <a name="vscodewindow-object"></a>Oggetto VSCodeWindow
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [oggetto VSCodeWindow](https://docs.microsoft.com/visualstudio/extensibility/vscodewindow-object).  
-  
 Una finestra del codice è una finestra del documento specializzata che può includere uno o più visualizzazioni di testo, in genere il <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> oggetto.  
   
  A livello di architettura, la finestra del codice è una finestra del documento che si trova all'interno di una cornice di finestra. A livello funzionale, la finestra del codice è semplicemente una finestra del documento con funzionalità aggiuntive. Nella modalità interfaccia a documenti multipli (MDI), la finestra del codice è la cornice figlio MDI. Per altre informazioni, vedere [personalizzazione di Windows di codice usando l'API Legacy](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
