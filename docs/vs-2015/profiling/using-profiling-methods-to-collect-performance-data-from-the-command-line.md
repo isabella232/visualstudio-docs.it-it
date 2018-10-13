@@ -1,7 +1,7 @@
 ---
 title: Uso di metodi di profilatura per raccogliere dati di prestazioni tramite la riga di comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cfb82c00c0a20c490aa3b5e5a9f78bf2384a40c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c86132b2ad4677733eebbb50c78f185ff0c9871
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175374"
 ---
-# <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Utilizzo di metodi di profilatura per raccogliere dati di prestazioni tramite la riga di comando
+# <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Uso di metodi di profilatura per raccogliere dati di prestazioni tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [usando metodi di profilatura per raccogliere i dati sulle prestazioni dalla riga di comando](https://docs.microsoft.com/visualstudio/profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line).  
-  
 La scelta degli strumenti e delle opzioni della riga di comando per gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dipende da fattori come il tipo di applicazione sottoposta a profilatura, il metodo di profilatura da usare e il fatto che l'applicazione di destinazione sia scritta in codice nativo o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
  Questo argomento organizza gli argomenti relativi alle procedure della riga di comando in base al metodo di profilatura scelto.  

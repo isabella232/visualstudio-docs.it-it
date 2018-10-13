@@ -1,7 +1,7 @@
 ---
 title: '&lt;trustInfo&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dd14e5bf24262d7f6c16245c74d093ca556cc2fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527154"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175565"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (applicazione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ &lt;trustInfo&gt; elemento (applicazione ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/trustinfo-element-clickonce-application).  
-  
 Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'applicazione nel computer client.  
   
 ## <a name="syntax"></a>Sintassi  

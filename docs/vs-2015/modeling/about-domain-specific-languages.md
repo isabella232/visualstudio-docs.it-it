@@ -1,7 +1,7 @@
 ---
 title: Informazioni sui linguaggi specifici dei domini | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 971c63d25aee9c8676921b5ee7e112ae41a8a251
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529149"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175266"
 ---
 # <a name="about-domain-specific-languages"></a>Informazioni sui linguaggi specifici del dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [sui linguaggi specifici di dominio](https://docs.microsoft.com/visualstudio/modeling/about-domain-specific-languages).  
-  
 A differenza di un linguaggio generico come c# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere le istruzioni in una particolare area problematica o dominio.  
   
  DSL Well-Known includere espressioni regolari e SQL. Ogni linguaggio specifico di dominio è preferibile rispetto a un linguaggio generico per descrivere le operazioni su stringhe di testo o un database, ma molto peggiori per descrivere le idee che esulano dall'ambito di un proprio. Singoli settori hanno anche le proprie soluzioni DSL. Ad esempio, nel settore delle telecomunicazioni, chiamare descrizione lingue vengono ampiamente utilizzate per specificare la sequenza degli stati in una chiamata telefonica e in modalità wireless nel settore di viaggio standard che DSL viene usato per descrivere ogni nuova prenotazione dei voli.  

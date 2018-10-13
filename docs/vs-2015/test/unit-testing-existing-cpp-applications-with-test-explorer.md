@@ -1,7 +1,7 @@
 ---
 title: Esecuzione di unit test delle applicazioni C++ esistenti con Esplora test | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172458"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Testing unità delle applicazioni C++ esistenti con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Unit test delle applicazioni C++ esistenti con Esplora Test](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer).  
-  
 È consigliabile, prima di modificare un'applicazione esistente, assicurarsi di avere una buona copertura con unit test. Questo permette di avere la certezza che le modifiche non abbiano introdotto bug. Se l'applicazione non dispone di unit test, si possono aggiungere usando le tecniche illustrate in questo argomento. In questo argomento viene descritto come aggiungere unit test per codice esistente in Visual C++, partendo dalla decisione di come verificare il codice per la creazione, la scrittura e infine eseguire i test.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Decidere come testare il codice  

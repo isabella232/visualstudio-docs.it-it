@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione dell'archiviazione di File e serializzazione XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183020"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizzazione dell'archiviazione dei file e della serializzazione XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [archiviazione di File di personalizzazione e la serializzazione XML](https://docs.microsoft.com/visualstudio/modeling/customizing-file-storage-and-xml-serialization).  
-  
 Quando l'utente salva un'istanza, oppure *model*, di un linguaggio specifico di dominio (DSL) in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], viene creato o aggiornato un file XML. Il file può essere ricaricato per ricreare il modello di Store.  
   
  È possibile personalizzare lo schema di serializzazione modificando le impostazioni in **comportamento di serializzazione Xml** in DSL Explorer. È presente un nodo sotto **comportamento di serializzazione Xml** per ogni classe di dominio, proprietà e relazioni. Le relazioni si trovano sotto le classi di origine. Sono inoltre presenti nodi corrispondenti per la forma, connettore e diagramma classi.  

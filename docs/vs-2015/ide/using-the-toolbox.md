@@ -1,7 +1,7 @@
 ---
 title: Uso della casella degli strumenti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 140387efef05d7f03812a2d5147aa3cdfc111ed1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28f142a011f86afe70bfe83fd2cec274548c7b50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173147"
 ---
 # <a name="using-the-toolbox"></a>Utilizzo della Casella degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [usando la casella degli strumenti](https://docs.microsoft.com/visualstudio/ide/using-the-toolbox).  
-  
 È possibile usare la casella degli strumenti per aggiungere controlli e altri elementi al progetto. È possibile trascinare diversi controlli sulla superficie della finestra di progettazione in uso nonché ridimensionare e posizionare tali controlli.  
   
  La casella degli strumenti viene visualizzata insieme alle visualizzazioni delle finestre di progettazione, ad esempio la visualizzazione Progettazione di un file XAML. La casella degli strumenti visualizza solo i controlli che possono essere usati nella finestra di progettazione corrente.  

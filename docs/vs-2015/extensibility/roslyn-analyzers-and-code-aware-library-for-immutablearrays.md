@@ -1,7 +1,7 @@
 ---
 title: Gli analizzatori di Roslyn e libreria con riconoscimento del codice per ImmutableArrays | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173355"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizzatori Roslyn e libreria con riconoscimento del codice per ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analizzatori di Roslyn e libreria con riconoscimento del codice per ImmutableArrays](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays).  
-  
 Il [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") consente di creare librerie con riconoscimento del codice.  Una libreria con riconoscimento del codice fornisce la funzionalità che è possibile usare e agli strumenti (analizzatori di Roslyn) per l'uso della libreria nel modo migliore o per evitare errori.  In questo argomento illustra come compilare un analizzatore Roslyn reale per rilevare gli errori comuni quando si usa la [NIB: le raccolte non modificabili](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) pacchetto NuGet.  L'esempio illustra inoltre come fornire una correzione del codice per un problema di codice rilevato dall'analizzatore.  Gli utenti visualizzano le correzioni del codice in Visual Studio lampadina dell'interfaccia utente e possono applicare una correzione per il codice automaticamente.  
   
 ## <a name="getting-started"></a>Introduzione  

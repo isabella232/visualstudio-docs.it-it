@@ -1,7 +1,7 @@
 ---
 title: Regole di prestazioni relative a memoria e paging | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e9512fefc13dccebdb0a930ea6000edcbbd8f7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7776daa85c176f95dd95a3d120d5c2471d10214a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519355"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183352"
 ---
 # <a name="memory-and-paging-performance-rules"></a>Regole di prestazioni relative a memoria e paging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [memoria e Paging le regole di prestazioni](https://docs.microsoft.com/visualstudio/profiling/memory-and-paging-performance-rules).  
-  
 Le regole di prestazioni nelle categoria memoria e paging identificano l'attività di paging in un'esecuzione di profilatura che può influire sulla velocità di risposta e le prestazioni dell'applicazione.  
   
 |||  

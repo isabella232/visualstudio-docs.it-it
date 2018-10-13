@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: risolvere i problemi di aggiornamento di progetti di Visual Studio con esito negativo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 9cd9ca350fe238c0c15998cbc44ca3e8236890b4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176117"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedura: Risolvere i problemi relativi agli aggiornamenti di progetti Visual Studio con esito negativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

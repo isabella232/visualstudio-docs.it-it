@@ -1,7 +1,7 @@
 ---
 title: "Procedura: creare ed eseguire un'installazione automatica di Visual Studio | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,17 +17,17 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3604c43dc3a406c303b3b056fe3b155efe182e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173849"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Procedura: Creare ed eseguire un'installazione automatica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile eseguire l’applicazione di installazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] come un’installazione automatica, cioè invisibile all’utente, su una rete intranet invece che su un supporto tipo DVD. In questo argomento viene descritto come preparare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per questo tipo di installazione da una condivisione di rete.  
+È possibile eseguire l'applicazione di installazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] come un'installazione automatica, cioè invisibile all'utente, su una rete intranet invece che su un supporto tipo DVD. In questo argomento viene descritto come preparare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per questo tipo di installazione da una condivisione di rete.  
   
 ## <a name="creating-a-network-image"></a>Creazione di un'immagine di rete  
  Innanzitutto, creare un'immagine di rete del supporto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -60,13 +60,13 @@ ms.locfileid: "47530746"
 >  Un altro modo per eseguire questa operazione consiste nell'omettere gli elementi figlio facoltativi di un elemento padre, vale a dire di non includere gli elementi "Selected="no"", ma è necessario comunque inserire tutti gli elementi "Selected="yes"" alla fine del file AdminDeployment.xml.  
   
 > [!IMPORTANT]
->  Durante l'installazione, il computer potrebbe riavviarsi automaticamente una o più volte. Dopo il riavvio, è necessario accedere nuovamente con lo stesso account utente con cui è stato effettuato l'accesso per eseguire l'installazione prima di riavviare il computer. È possibile evitare i riavvii automatici installando i componenti prerequisiti prima di eseguire un'installazione automatica. Per altre informazioni, vedere la sezione intitolata "Evitare il riavvio durante l'installazione" nel [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).  
+>  Durante l'installazione, il computer potrebbe riavviarsi automaticamente una o più volte. Dopo il riavvio, è necessario accedere nuovamente con lo stesso account utente con cui è stato effettuato l'accesso per eseguire l'installazione prima di riavviare il computer. È possibile evitare i riavvii automatici installando i componenti prerequisiti prima di eseguire un'installazione automatica. Per altre informazioni, vedere la sezione intitolata "Evitare il riavvio durante l'installazione" nella [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).  
   
  Lo schema del file AdminDeployment contiene i seguenti elementi:  
   
 |Elemento|Attributo|Valori|Descrizione|  
 |-------------|---------------|------------|-----------------|  
-|BundleCustomizations|TargetDir|*Percorso*|Si comporta come la sostituzione del percorso nell'interfaccia utente dell'applicazione di installazione. Questo elemento viene ignorato se Visual Studio è già installato.|  
+|BundleCustomizations|TargetDir|*Path*|Si comporta come la sostituzione del percorso nell'interfaccia utente dell'applicazione di installazione. Questo elemento viene ignorato se Visual Studio è già installato.|  
 |BundleCustomizations|NoWeb|Sì&#124;predefinito|Se il valore di questo elemento è Sì, l'applicazione di installazione non tenta mai di accedere al Web durante l'azione di installazione.|  
 |SelectableItemCustomization|Hidden|Sì&#124;No|Se il valore di questo elemento è Sì, nasconde un elemento selezionabile nell'albero della personalizzazione.|  
 |SelectableItemCustomization|Selezionato|Sì&#124;No|Seleziona o deseleziona un elemento selezionabile nell'albero della personalizzazione.|  
@@ -111,7 +111,7 @@ ms.locfileid: "47530746"
   
 -   Aprire il **Pannello di controllo**, quindi scegliere **Programmi e funzionalità**.  
   
--   Scegli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quindi scegliere **modifica**.  
+-   Scegliere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quindi scegliere **Modifica**.  
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Per modificare le impostazioni di AdminDeployment in un computer client dopo l'installazione di Visual Studio  
   

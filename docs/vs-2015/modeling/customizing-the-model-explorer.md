@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione di Esplora modelli | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a4ae4092156ebfaa506e43708bbabeea894828d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77999eea0a76088368ff5e7ee66f9088dc45efa5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527474"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175942"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizzazione di Esplora modelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [personalizzazione di Esplora modelli](https://docs.microsoft.com/visualstudio/modeling/customizing-the-model-explorer).  
-  
 È possibile modificare l'aspetto e il comportamento di esplorazione per la finestra di progettazione di linguaggio specifico di dominio come indicato di seguito:  
   
 -   Modificare il titolo della finestra.  

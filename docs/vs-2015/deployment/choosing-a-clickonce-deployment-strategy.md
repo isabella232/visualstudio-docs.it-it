@@ -1,7 +1,7 @@
 ---
 title: Scelta di una strategia di distribuzione ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 24eee31385ea2ef1c01924660e47e370fbed83f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54bf4f58a4cfe8622e12b3808ea9f36c8cf1ee49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175630"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Scelta di una strategia di distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [scelta di una strategia di distribuzione ClickOnce](https://docs.microsoft.com/visualstudio/deployment/choosing-a-clickonce-deployment-strategy).  
-  
 Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sono disponibili tre diverse strategie. La scelta dipende principalmente dal tipo di applicazione che si desidera distribuire. Le tre strategie di distribuzione sono elencate di seguito:  
   
 -   Installazione dal Web o da una condivisione di rete  

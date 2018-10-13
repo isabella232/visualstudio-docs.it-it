@@ -1,7 +1,7 @@
 ---
 title: Demo di esempio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aca1c819ee413f1bcc2fe81c90233256a12317a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1332c335387342d381c1e0030c3c66003c3528b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175851"
 ---
 # <a name="demo-sample"></a>Esempio dimostrativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [esempio dimostrativo](https://docs.microsoft.com/visualstudio/code-quality/demo-sample).  
-  
 Questa procedure seguenti illustrano come creare l'esempio per la [procedura dettagliata: analisi di codice C/C++ per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Le procedure di creano:  
   
 -   Oggetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soluzione denominata CppDemo.  

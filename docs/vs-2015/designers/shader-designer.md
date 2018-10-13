@@ -1,7 +1,7 @@
 ---
 title: Finestra di progettazione shader | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182795"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [finestra di progettazione Shader](https://docs.microsoft.com/visualstudio/designers/shader-designer).  
-  
 Questo documento descrive come usare la finestra di progettazione shader di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per creare, modificare ed esportare effetti visivi personalizzati noti come *shader*.  
   
  È possibile usare la finestra di progettazione shader per creare effetti visivi personalizzati per un gioco o un app anche se non si conosce il linguaggio di programmazione HLSL. Per creare uno shader nella finestra di progettazione shader, è sufficiente delinearlo come un grafico. A questo scopo, si aggiungono all'area di progettazione *nodi* che rappresentano i dati e le operazioni e quindi si creano connessioni tra di essi per definire il modo in cui le operazioni elaborano i dati. Per ogni nodo dell'operazione viene fornita un'anteprima dell'effetto prodotto fino a quel momento in modo da poterne visualizzare il risultato. I dati passano attraverso i nodi verso un nodo finale che rappresenta l'output dello shader.  

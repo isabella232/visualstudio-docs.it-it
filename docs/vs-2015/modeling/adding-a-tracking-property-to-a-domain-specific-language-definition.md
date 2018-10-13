@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f17058f2300e607707a5f2208eebe9bb2570095
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183003"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiunta di una proprietà di rilevamento per una definizione del linguaggio specifico di dominio](https://docs.microsoft.com/visualstudio/modeling/adding-a-tracking-property-to-a-domain-specific-language-definition).  
-  
 Questa procedura dettagliata illustra come aggiungere una proprietà di rilevamento a un modello di dominio.  
   
  Oggetto *rilevamento dominio* è una proprietà che può essere aggiornato dall'utente, ma che ha il valore predefinito che viene calcolato usando i valori delle altre proprietà di dominio o altri elementi.  

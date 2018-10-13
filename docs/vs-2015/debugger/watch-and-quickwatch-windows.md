@@ -1,7 +1,7 @@
 ---
 title: Espressioni di controllo e controllo immediato Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526262"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173628"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Finestre Espressioni di controllo e Controllo immediato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [impostare un'espressione di controllo sulle variabili in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows).  
-  
 È possibile usare la **Watch** (**eseguire il Debug / Windows / espressioni di controllo / guardare (1, 2, 3, 4)**) e **controllo immediato** (pulsante destro del mouse sulla variabile / **eseguire il Debug / controllo immediato**) windows per controllare variabili ed espressioni durante una sessione di debug.  La differenza è che la finestra **Espressioni di controllo** può visualizzare più variabili, mentre la finestra **Controllo immediato** visualizza una singola variabile alla volta.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Osservazione di una singola variabile con Controllo immediato  
@@ -104,7 +102,7 @@ static void Main(string[] args)
   
 5.  Continuare il debug.  
   
- I valori delle variabili cambieranno durante l'iterazione del ciclo `for` .  
+ I valori delle variabili cambieranno durante l'iterazione del ciclo `for`.  
   
  Se si programma in codice nativo, può essere necessario, in certi casi, qualificare il contesto di un nome di variabile o di un'espressione contenente un nome di variabile. Il contesto è rappresentato dalla funzione, il file di origine e il modulo in cui risiede una variabile. È possibile usare la sintassi dell'operatore di contesto per questa operazione. Per altre informazioni, vedere Espressioni in C++.  
   
