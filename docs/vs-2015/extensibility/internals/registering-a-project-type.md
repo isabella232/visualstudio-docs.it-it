@@ -1,7 +1,7 @@
 ---
 title: Registrazione di un tipo di progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336658e0a216f7fc24435715bf978ce5badefe5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532900"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271778"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [registrazione di un tipo di progetto](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-project-type).  
-  
 Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro di sistema che consentono a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] riconoscere e usare il tipo di progetto. Queste voci del Registro di sistema in genere create usando un file di script (con estensione RGS) del Registro di sistema.  
   
  Nell'esempio seguente, le istruzioni dal Registro di sistema forniscono i percorsi predefiniti e i dati dove applicabile, seguita da una tabella che contiene le voci dello script del Registro di sistema per ogni istruzione. Le tabelle forniscono le voci di script e informazioni aggiuntive sulle istruzioni.  

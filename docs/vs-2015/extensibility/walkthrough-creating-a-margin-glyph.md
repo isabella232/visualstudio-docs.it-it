@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Creazione di un glifo del margine | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83b721c7b0ac33d9a37d9705cd780edcd591d9aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a44b816df914567ff3470f6726ac7ba380921839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527235"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270998"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Procedura dettagliata: creazione di un glifo di margine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: creazione di un glifo del margine](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-margin-glyph).  
-  
 È possibile personalizzare l'aspetto dei margini dell'editor tramite le estensioni dell'editor personalizzato. Questa procedura dettagliata inserisce un'icona personalizzata sul margine indicatore ogni volta che viene visualizzata la parola "todo" in un commento del codice.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -34,7 +32,7 @@ La versione più recente di questo argomento è reperibile in [procedura dettagl
   
 ## <a name="creating-a-mef-project"></a>Creazione di un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `TodoGlyphTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `TodoGlyphTest`.  
   
 2.  Aggiungere un elemento di progetto di classificatore Editor. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -45,7 +43,7 @@ La versione più recente di questo argomento è reperibile in [procedura dettagl
   
 #### <a name="to-define-the-glyph"></a>Per definire il glifo  
   
-1.  Aggiungere un file di classe e denominarla `TodoGlyphFactory`.  
+1.  Aggiungere un file di classe e assegnargli il nome `TodoGlyphFactory`.  
   
 2.  Aggiungere quanto segue usando dichiarazioni.  
   
