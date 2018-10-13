@@ -1,7 +1,7 @@
 ---
 title: Visualizzazioni del flusso di lavoro sequenziale (Legacy) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 46c37ec7f3813078b9e70076bf92e6d0e1b86453
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ac9d10ddb687063de8c45296bc879854a0979a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532222"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248729"
 ---
 # <a name="sequential-workflow-views-legacy"></a>Visualizzazioni del flusso di lavoro sequenziale (legacy)
 In [!INCLUDE[vs2010](../includes/vs2010-md.md)] è presente un'utilità [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy che è possibile usare per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o a [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

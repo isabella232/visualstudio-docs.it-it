@@ -1,7 +1,7 @@
 ---
 title: Pagina Firma, Creazione progetti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eef35adac40b51e1ec46404d9b0da5cbe22f7509
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4aa8ee86032c4cadf9cbfa59d3db840102be669
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518410"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263945"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [pagina firma, creazione progetti](https://docs.microsoft.com/visualstudio/ide/reference/signing-page-project-designer).  
-  
   
 Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell'applicazione e di distribuzione, nonché l'assembly (firma con nome sicuro).  
   

@@ -1,7 +1,7 @@
 ---
 title: Estendere la barra di stato | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc9a691b3ee8955f7fad33c84d7d0d40652e6a8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea7854bb90564f68a7f178ceda7b561b123dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244738"
 ---
 # <a name="extending-the-status-bar"></a>Estensione della barra di stato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [estendendo la barra di stato](https://docs.microsoft.com/visualstudio/extensibility/extending-the-status-bar).  
-  
 È possibile utilizzare la barra di stato di Visual Studio nella parte inferiore dell'IDE per visualizzare le informazioni.  
   
  Quando si estende la barra di stato, è possibile visualizzare le informazioni e l'interfaccia utente in quattro aree: l'area commenti e suggerimenti, l'indicatore di stato, l'area animazione e l'area di progettazione. L'area commenti e suggerimenti consente di visualizzare il testo ed evidenziare il testo visualizzato. L'indicatore di stato Mostra lo stato incrementale per le operazioni a esecuzione breve, ad esempio salvataggio di un file. L'area animazione visualizza un'animazione chiuso in modo continuativo per le operazioni a esecuzione prolungata o operazione di lunghezza non determinata, quali la creazione di più progetti in una soluzione. E l'area di progettazione Mostra il numero di riga e alla colonna della posizione del cursore.  

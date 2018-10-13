@@ -1,7 +1,7 @@
 ---
 title: Esplora prestazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2076aaa86f51da7928b0f81213ff97553262eb56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d504c06cb038bbaa7298249384e88ad5bb2d5705
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248482"
 ---
 # <a name="performance-explorer"></a>Esplora prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Esplora prestazioni](https://docs.microsoft.com/visualstudio/profiling/performance-explorer).  
-  
 Gli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] strumenti di profilatura di Visual Studio consentono agli sviluppatori di misurare, valutare e risolvere i problemi correlati alle prestazioni riscontrati nel codice. Questi strumenti sono completamente integrati nell'IDE per fornire un'esperienza utente trasparente e accessibile.  
   
  Profilatura di un'applicazione è semplice. Iniziare creando una nuova sessione di prestazioni. In Visual Studio Team System Development Edition, è possibile utilizzare la creazione guidata sessione di prestazioni per creare una nuova sessione di prestazioni. Al termine di una sessione di prestazioni, i dati raccolti durante l'analisi vengono salvati in un file con estensione vsp. È possibile visualizzare il file con estensione vsp all'interno dell'IDE. Sono disponibili diverse visualizzazioni dei rapporti consentono di visualizzare e rilevare i problemi di prestazioni dai dati raccolti.  

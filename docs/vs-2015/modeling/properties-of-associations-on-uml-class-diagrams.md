@@ -1,7 +1,7 @@
 ---
 title: Proprietà delle associazioni nei UML diagrammi classi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96dc1d942a06e4030992889970fd3946d2e4d9d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8274cd45142886dd71e0c8ce8e1950c0fee9609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252070"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Proprietà delle associazioni nei diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [proprietà delle associazioni nei UML diagrammi classi](https://docs.microsoft.com/visualstudio/modeling/properties-of-associations-on-uml-class-diagrams).  
-  
 In un diagramma classi UML, è possibile tracciare *associazioni* tra qualsiasi coppia di tipi. Un tipo è una classe, un'interfaccia o un'enumerazione.  
   
  Un'associazione indica che il sistema sviluppato archivia collegamenti di un determinato tipo tra le istanze dei tipi associati. In genere, un'associazione non implica altro sull'implementazione dei collegamenti. Ad esempio, i collegamenti potrebbero essere puntatori, righe in una tabella, nomi soggetti a riferimenti incrociati in XML e così via.  

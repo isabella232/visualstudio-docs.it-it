@@ -1,7 +1,7 @@
 ---
 title: '&lt;punto di ingresso&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 05e8e08718d9a0a87a1a3903e512c690ab0ebff8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532711"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255314"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punto di ingresso&gt; elemento (applicazione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ &lt;entryPoint&gt; elemento (applicazione ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/entrypoint-element-clickonce-application).  
-  
 Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione viene eseguita in un computer client.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -61,9 +59,9 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- L'elemento `entryPoint` è obbligatorio e si trova nello spazio dei nomi `urn:schemas-microsoft-com:asm.v2`. Potrebbe essere presente solo un `entryPoint` elemento definito in un manifesto dell'applicazione.  
+ L'elemento `entryPoint` è obbligatorio e si trova nello spazio dei nomi `urn:schemas-microsoft-com:asm.v2` . Potrebbe essere presente solo un `entryPoint` elemento definito in un manifesto dell'applicazione.  
   
- Il `entryPoint` elemento ha l'attributo seguente.  
+ L'elemento `entryPoint` presenta l'attributo seguente:  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: sincronizzare set di regole di progetto di codice con i criteri di controllo del progetto Team | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263120"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Procedura: sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto team
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: sincronizzare i set di regole progetto codice con criteri di archiviazione del progetto Team](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy).  
-  
 Specificando un set di regole che contiene almeno le regole specificate nel set di regole per i criteri di controllo è sincronizzare le impostazioni di analisi codice per progetti di codice per i criteri di controllo per il progetto team. Il responsabile per gli sviluppatori può dare è il nome e la posizione del set di regole per i criteri di controllo. Assicurarsi che l'analisi del codice per il progetto usi il set di regole corretto, è possibile usare una delle opzioni seguenti:  
   
 -   Se i criteri di controllo viene utilizzato uno dei set di regole predefinite Microsoft, aprire la finestra di dialogo proprietà per il progetto di codice, visualizzare la pagina di analisi del codice e selezionare la regola impostata nella pagina analisi del codice delle impostazioni di progetto di codice. Il set di regole standard installate automaticamente con Visual Studio di Microsoft è impostata su sola lettura e non deve essere modificato. Se non vengono modificati i set di regole, le regole nel set di regole locali e criteri di corrispondenza è garantite.  

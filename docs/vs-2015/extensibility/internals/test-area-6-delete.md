@@ -1,7 +1,7 @@
 ---
 title: 'Area di test 6: Elimina | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a05b84b3c75cec22f008b5f690c8b4ee0f8c6df3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529437"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261813"
 ---
 # <a name="test-area-6-delete"></a>Area di test 6: Eliminare
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Test Area 6: eliminare](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-6-delete).  
-  
 Quest'area del plug-in test di controllo del codice sorgente illustra le azioni di eliminazione.  
   
  Di risposta per eliminare le azioni nel controllo del codice sorgente **Esplora soluzioni**.  

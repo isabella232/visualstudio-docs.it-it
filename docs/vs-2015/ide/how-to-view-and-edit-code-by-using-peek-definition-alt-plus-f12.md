@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Visualizzare e modificare il codice tramite il comando Visualizza definizione (ALT+F12) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e10c19480004345d4a5df1d628972a788794e13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254475"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: visualizzare e modificare il codice utilizzando la finestra Visualizza definizione (ALT+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)](https://docs.microsoft.com/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).  
-  
 È possibile usare il comando **Visualizza definizione** per visualizzare e modificare il codice senza uscire dal codice in fase di scrittura. **Visualizza definizione** e **Vai a definizione** visualizzano le stesse informazioni, ma **Visualizza definizione** mostra il codice in una finestra popup e **Vai a definizione** mostra il codice in una finestra separata. **Vai a definizione** determina il passaggio del contesto (ovvero la finestra di codice attiva, la riga corrente e la posizione del cursore) alla finestra del codice della definizione. Tramite **Visualizza definizione** è possibile visualizzare e modificare la definizione e spostarsi all'interno del file di definizione, mantenendo la stessa posizione nel file di codice originale.  
   
  È possibile usare **Visualizza definizione** con codice C#, Visual Basic e C++. In Visual Basic **Visualizza definizione** Mostra un collegamento per il **Visualizzatore oggetti** per i simboli sprovvisti di metadati di definizione (ad esempio, tipi di .NET Framework che vengono compilati in).  

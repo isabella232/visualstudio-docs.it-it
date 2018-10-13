@@ -1,7 +1,7 @@
 ---
 title: Configurazione della soluzione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8735f841f7b26f03c30bc7f42b06b3ca5e260d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245798"
 ---
 # <a name="solution-configuration"></a>Configurazione soluzione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [configurazione della soluzione](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-configuration).  
-  
 Configurazioni soluzione archiviano proprietà a livello di soluzione. Quindi indirizzano il comportamento dei **avviare** chiave (F5) e **compilazione** comandi. Per impostazione predefinita, questi comandi compilare e avviare la configurazione di debug. Entrambi i comandi vengono eseguite nel contesto di una configurazione di soluzione. Ciò significa che l'utente può aspettarsi F5 per avviare e qualunque sia la soluzione attiva viene configurata tramite le impostazioni di compilazione. L'ambiente è progettato per ottimizzare per le soluzioni anziché per i progetti quando si tratta di compilazione e l'esecuzione.  
   
  Barra degli strumenti standard di Visual Studio contiene un pulsante di avvio e un elenco a discesa a destra del pulsante Avvia configurazione della soluzione. Questo elenco consente agli utenti di scegliere la configurazione da avviare quando viene premuto F5, creare le proprie configurazioni di soluzione o modificare una configurazione esistente.  

@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: miglioramento della velocità di risposta dell'interfaccia utente (HTML) | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9409a8af25d2283e3b808c7e779aa86361d2e454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526409"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258310"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: velocità di risposta di miglioramento dell'interfaccia utente (HTML)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-improving-ui-responsiveness-html).  
-  
 Questa procedura dettagliata descrive i passaggi per identificare e risolvere un problema di prestazioni tramite il [profiler della velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md). Il profiler è disponibile in Visual Studio per le app universali di Windows e le app di Windows Store con JavaScript. In questo scenario creerai un'app di test delle prestazioni che aggiorna gli elementi DOM troppo frequentemente e userai il profiler per identificare e risolvere il problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Creazione ed esecuzione dell'app di test delle prestazioni  

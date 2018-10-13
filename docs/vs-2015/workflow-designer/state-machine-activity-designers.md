@@ -1,7 +1,7 @@
 ---
 title: ActivityDesigner della macchina di stato | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5b9da275c3c4c679fcc6de08f5611b2a594bd8bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fff12b5d3ba67f01a210d708081a010c4c20eea1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245518"
 ---
 # <a name="state-machine-activity-designers"></a>ActivityDesigner della macchina a stati
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] include alcuni ActivityDesigner che è possibile usare per la costruzione di flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e viene fornito materiale sussidiario sulle relative modalità di utilizzo.  

@@ -1,7 +1,7 @@
 ---
 title: Proprietà delle relazioni di dominio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ff37703643dc9d1c795fe10b5f24154ee46174af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48af74aa470f195c1cfbd49ffbabb37e2461251d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518169"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263731"
 ---
 # <a name="properties-of-domain-relationships"></a>Proprietà delle relazioni di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [relazioni di proprietà di dominio](https://docs.microsoft.com/visualstudio/modeling/properties-of-domain-relationships).  
-  
 Le proprietà nella tabella seguente sono associate a una relazione di dominio. Per informazioni sulle relazioni di dominio, vedere [informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Proprietà|Descrizione|Impostazione predefinita|  

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: implementare la gestione di annullamento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47b71b7e2760af18605d3ded52b68cfc38742e65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72355b396dc88fc02c1ccdfb4f3a2ed4afe66467
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246285"
 ---
 # <a name="how-to-implement-undo-management"></a>Procedura: implementare la gestione di annullamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: implementare annullare gestione](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-undo-management).  
-  
 L'interfaccia primaria usata per la gestione dell'annullamento è <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, che viene implementato dall'ambiente. Per supportare la gestione dell'annullamento, implementare le unità di annullamento separato (vale a dire <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, che può contenere più i singoli passaggi.  
   
  Modalità di implementazione di gestione dell'annullamento varia a seconda se l'editor supporta più visualizzazioni o meno. Nelle sezioni seguenti vengono descritti in dettaglio le procedure per ogni implementazione.  

@@ -1,7 +1,7 @@
 ---
 title: Collegare elementi di modello ed elementi di lavoro | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 603438fda4c2f883376292b68896309a4e669be5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263926"
 ---
 # <a name="link-model-elements-and-work-items"></a>Collegare elementi di modello ed elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [collegare elementi di modello ed elementi di lavoro](https://docs.microsoft.com/visualstudio/modeling/link-model-elements-and-work-items).  
-  
 È possibile tenere traccia di attività, test case, bug, requisiti, problemi e altre operazioni correlate al modello collegando gli elementi del modello in Visual Studio e gli elementi di lavoro in Team Foundation Server o Visual Studio Online. È possibile inoltre associare documenti agli elementi di lavoro per associarli agli elementi del modello.  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -145,7 +143,7 @@ La versione più recente di questo argomento è reperibile in [collegare element
 1.  In **Team Explorer**verificare di essere connessi al progetto team in cui gli elementi del modello sono collegati all'elemento di lavoro.  
   
     > [!NOTE]
-    >  Per visualizzare gli elementi del modello collegati, è possibile usare solo Team Explorer, non Team Web Access. Verificare che l'area di lavoro venga mappata al progetto di modello contenente gli elementi o i diagrammi di modellazione. Se non si dispone di un'area di lavoro, è necessario crearla. Visualizzare [risoluzione dei problemi](#Troubleshooting) e [creare e usare aree di lavoro](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    >  Per visualizzare gli elementi del modello collegati, è possibile usare solo Team Explorer, non Team Web Access. Verificare che l'area di lavoro venga mappata al progetto di modello contenente gli elementi o i diagrammi di modellazione. Se non si dispone di un'area di lavoro, è necessario crearla. Vedere [Risoluzione dei problemi](#Troubleshooting) e [Creare e usare aree di lavoro](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2.  Aprire l'elemento di lavoro e scegliere **Collegamenti**. In **Collegamento modello**aprire il menu di scelta rapida per l'elemento del modello collegato. Scegliere **Apri elemento collegato**.  
   
@@ -173,7 +171,7 @@ La versione più recente di questo argomento è reperibile in [collegare element
   
 |**Problema**|**Possibile causa**|**Risoluzione**|  
 |---------------|------------------------|--------------------|  
-|Impossibile trovare l'elemento del modello da collegare.|L'elemento potrebbe essere in un diagramma di un progetto di modello archiviato nel [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Potrebbe non essere presente un'area di lavoro mappata al diagramma.|Eseguire il mapping dell'area di lavoro al progetto di modello e al diagramma. Se non è presente un'area di lavoro, è necessario crearla.<br /><br /> Il messaggio di errore visualizzato per questo problema contiene il percorso che è possibile usare per eseguire il mapping dell'area di lavoro.<br /><br /> Visualizzare [creare e usare aree di lavoro](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|Impossibile trovare l'elemento del modello da collegare.|L'elemento potrebbe essere in un diagramma di un progetto di modello archiviato nel [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Potrebbe non essere presente un'area di lavoro mappata al diagramma.|Eseguire il mapping dell'area di lavoro al progetto di modello e al diagramma. Se non è presente un'area di lavoro, è necessario crearla.<br /><br /> Il messaggio di errore visualizzato per questo problema contiene il percorso che è possibile usare per eseguire il mapping dell'area di lavoro.<br /><br /> Vedere [Creare e usare aree di lavoro](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |Impossibile trovare l'elemento del modello collegato.|L'elemento collegato potrebbe essere in un diagramma che è stato spostato, rinominato o eliminato.|1.  Nell'elemento di lavoro, eliminare il collegamento all'elemento del modello.<br />2.  Creare un nuovo collegamento dall'elemento di lavoro all'elemento del modello.|  
 |All'elemento di lavoro non sono associati gli elementi del modello collegato previsti.|Un elemento di lavoro mostra un elemento livello collegato solo se il collegamento è stato creato dall'elemento di lavoro. Se il team non usa il [!INCLUDE[esprscc](../includes/esprscc-md.md)], per creare i collegamenti verrà usato il percorso locale dei diagrammi. Se il progetto di modello e i relativi diagrammi sono nel [!INCLUDE[esprscc](../includes/esprscc-md.md)], tutti i membri del team che possono accedere al progetto potranno visualizzare gli elementi collegati negli elementi di lavoro.|Provare ad aggiornare l'elemento di lavoro.|  
 |L'eliminazione di un collegamento a un elemento del modello da un elemento di lavoro non elimina il collegamento dall'elemento del modello all'elemento di lavoro.||Eliminare il collegamento all'elemento di lavoro a partire dall'elemento del modello.|  

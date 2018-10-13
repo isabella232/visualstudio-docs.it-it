@@ -1,7 +1,7 @@
 ---
 title: Libreria di controlli (codice gestito) Web | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bdc9c62699e905a2c7aaee106dcb9cba14ac312
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7e942fe6909d41ed5000f5e8a4f31f0de87cf9e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262522"
 ---
 # <a name="web-control-library-managed-code"></a>Libreria di controlli Web (Codice gestito)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [libreria di controlli Web (codice gestito)](https://docs.microsoft.com/visualstudio/debugger/web-control-library-managed-code).  
-  
 Il modello di progetto Libreria di controlli Web consente di creare una DLL. Poiché la libreria di classi è una DLL, non è possibile eseguirla direttamente. È necessario creare una pagina di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in cui sia incorporato il controllo. Per altre informazioni, vedere [modello libreria di controlli Web](http://msdn.microsoft.com/en-us/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Per eseguire il debug di una libreria di controlli Web (procedura 1)  

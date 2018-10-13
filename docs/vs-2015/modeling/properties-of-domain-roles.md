@@ -1,7 +1,7 @@
 ---
 title: Proprietà dei ruoli di dominio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6dc3f92bf1f9788f501b96540b35006ff112267b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51149979544c19b0a887ad77e80a26284051778b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244088"
 ---
 # <a name="properties-of-domain-roles"></a>Proprietà dei ruoli di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [delle proprietà dei ruoli di dominio](https://docs.microsoft.com/visualstudio/modeling/properties-of-domain-roles).  
-  
 Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per informazioni sui ruoli di dominio, vedere [informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Proprietà|Descrizione|Impostazione predefinita|  

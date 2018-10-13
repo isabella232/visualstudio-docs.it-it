@@ -1,7 +1,7 @@
 ---
 title: T4 Direttiva Template | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 01369002b5deaa5456d09d6a93e774ad36f85c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248223"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [direttiva Template T4](https://docs.microsoft.com/visualstudio/modeling/t4-template-directive).  
-  
 Un modello di testo T4 di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di solito inizia con la direttiva `template` che specifica come deve essere elaborato il modello. Un modello di testo e qualsiasi file in esso incluso non devono contenere più di una direttiva template.  
   
  Per una panoramica generale della scrittura di modelli di testo, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).  

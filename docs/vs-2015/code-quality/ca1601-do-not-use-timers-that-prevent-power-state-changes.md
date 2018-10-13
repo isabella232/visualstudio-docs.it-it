@@ -1,7 +1,7 @@
 ---
 title: 'CA1601: Non usare i timer che impediscono le modifiche dello stato di alimentazione | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: de1b5e943274b80d8a46d05dcd0cdb8fe8b2b82a
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: f31fdec5f01f2359647e85acd36f67beabce159a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258693"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Non utilizzare i timer che impediscono le modifiche allo stato di potenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [CA1601: non usare i timer che impediscono le modifiche dello stato di alimentazione](https://docs.microsoft.com/visualstudio/code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes).
-
 |||
 |-|-|
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|

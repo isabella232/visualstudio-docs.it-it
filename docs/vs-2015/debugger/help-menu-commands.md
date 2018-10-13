@@ -1,7 +1,7 @@
 ---
 title: Comandi del Menu? | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20c1b07f535e6976c2bd95f29eb76bafdca5e0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e3d2c63c64a0204962137a5a051c8682ac4794f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255788"
 ---
 # <a name="help-menu-commands"></a>comandi del menu ?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Guida comandi di Menu](https://docs.microsoft.com/visualstudio/debugger/help-menu-commands).  
-  
 Il **aiutare** menu sono disponibili comandi per aprire i file della Guida.  
   
  **Index**  
