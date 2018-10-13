@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Impostare le autorizzazioni | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4bed698bd520255dd762aa223e3eb94a5d704e6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187548"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: impostare le autorizzazioni](https://docs.microsoft.com/visualstudio/profiling/how-to-set-permissions).  
-  
 Questo argomento descrive il modo in cui un amministratore di un computer concede le autorizzazioni di sicurezza necessarie per la profilatura a un utente o un gruppo che non dispone di autorizzazioni di amministratore per quel computer.  
   
  Secondo un principio di base della sicurezza, le applicazioni devono essere eseguite con le autorizzazioni strettamente necessarie. Questo principio vale anche per gli utenti. Se gli utenti sono in grado di operare in modo efficace con i privilegi del gruppo Users anziché con quelli del gruppo Administrators, non è necessario concedere loro le autorizzazioni specifiche degli amministratori. La prima procedura, "Per creare un account utente con autorizzazioni utente", descrive come creare un account utente per un membro del gruppo Users.  

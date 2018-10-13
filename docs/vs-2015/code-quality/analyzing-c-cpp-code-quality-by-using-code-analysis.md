@@ -1,7 +1,7 @@
 ---
 title: Analisi della qualità del codice C-c + + tramite analisi del codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 37
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dda0e5ee66834c4e57f0614ca855ec8b5a251aa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09879cd71bfda25224653e7a51a61d048f06c095
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224958"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Verifica della qualità del codice C/C++ tramite analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analisi della qualità codice C/C++ tramite analisi del codice](https://docs.microsoft.com/visualstudio/code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis).  
-  
 È possibile migliorare il codice C/C++ tramite l'analisi codice in Visual Studio per individuare e correggere difetti del codice.  
   
 ## <a name="in-this-section"></a>In questa sezione  

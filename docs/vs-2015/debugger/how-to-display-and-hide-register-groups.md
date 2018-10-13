@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: visualizzare e nascondere gruppi di registri | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3060a21d9ffbaf079696eef83f01b7f0787ed59a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206492"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Procedura: visualizzare e nascondere gruppi di registri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: visualizzare e nascondere gruppi di registri](https://docs.microsoft.com/visualstudio/debugger/how-to-display-and-hide-register-groups).  
-  
 Il **registra** è disponibile solo se è abilitato il debug a livello di indirizzo nella finestra di **opzioni** della finestra di dialogo **debug** nodo, **generale**categoria.  
   
  Per evitare confusione, il **registra** finestra i registri sono organizzati in gruppi. Se facendo clic la **registra** finestra, verrà visualizzato un menu di scelta rapida contenente tali gruppi, che è possibile visualizzare o nascondere secondo necessità seguendo la procedura riportata di seguito.  

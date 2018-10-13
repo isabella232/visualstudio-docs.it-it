@@ -1,7 +1,7 @@
 ---
 title: Linee guida per la manutenzione di applicazioni Shell isolate | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dff7d9349e5081fa0e8ab64bfd32c90b83f19de3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70d59500c49c6e6939d85a35d9c1ff9393f5708e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208390"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Linee guida per la manutenzione per applicazioni della Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [linee guida per la manutenzione per le applicazioni della Shell isolata](https://docs.microsoft.com/visualstudio/extensibility/servicing-guidelines-for-isolated-shell-applications).  
-  
 Quando si distribuisce un'applicazione shell isolata di Visual Studio, è necessario essere in grado di fornire gli aggiornamenti software per l'applicazione dopo l'installazione. A tale scopo, è necessario installare l'applicazione usando un file di Microsoft Installer (MSI). Questo tipo di installazione consente gli aggiornamenti software forniti da Microsoft per essere ridistribuito da Web scaricare e utilizzata dai clienti senza l'intervento personalizzato.  
   
 ## <a name="servicing-requirements"></a>I requisiti di manutenzione  

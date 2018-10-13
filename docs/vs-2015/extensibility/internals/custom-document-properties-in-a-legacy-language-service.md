@@ -1,7 +1,7 @@
 ---
 title: Proprietà personalizzate dei documenti in un servizio di linguaggio Legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6e29fe0831385456a36f6d3519c28f5adf1006a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 139c5b92d8dd9198e518c50b45531138e5cbc06b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520225"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194859"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Proprietà personalizzate dei documenti in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [le proprietà di documento personalizzate in un servizio di linguaggio Legacy](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-document-properties-in-a-legacy-language-service).  
-  
 Le proprietà del documento possono essere visualizzate nei [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **proprietà** finestra. I linguaggi di programmazione a livello generale non è associata ai file di origine singole proprietà. Tuttavia, XML supporta le proprietà di documento che interessano la codifica, schema e fogli di stile.  
   
 ## <a name="discussion"></a>Discussione  

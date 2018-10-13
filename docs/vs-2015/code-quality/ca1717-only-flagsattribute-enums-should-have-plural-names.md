@@ -1,7 +1,7 @@
 ---
 title: 'CA1717: Solo le enumerazioni con FlagsAttribute devono avere nomi plurali | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5fbaa220d39f72900dbf03d238a45fc988b65e6b
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 328803fb1a04a3c1ad123857660d8f67f8fccb81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47590289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179062"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Solo le enumerazioni con FlagsAttribute devono avere nomi plurali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [CA1717: le enumerazioni con FlagsAttribute solo devono avere nomi plurali](https://docs.microsoft.com/visualstudio/code-quality/ca1717-only-flagsattribute-enums-should-have-plural-names).
-
 |||
 |-|-|
 |TypeName|OnlyFlagsEnumsShouldHavePluralNames|

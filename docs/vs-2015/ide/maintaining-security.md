@@ -1,7 +1,7 @@
 ---
 title: Gestione della sicurezza | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2093e33b2a6b3424b39c8377f8168afd1e90939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793ec2b6f5ccfad1ded9f8a4cc2d4e6c4b994f0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230802"
 ---
 # <a name="maintaining-security"></a>Gestione della sicurezza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Gestione sicurezza](https://docs.microsoft.com/visualstudio/ide/maintaining-security).  
-  
 Si afferma spesso che il prezzo da pagare per la sicurezza sia dato da una vigilanza costante. Indipendentemente dall'attenzione dedicata alla sicurezza durante la progettazione e lo sviluppo dell'applicazione, occorre considerare che i punti deboli relativi a questo aspetto si manifesteranno dopo la distribuzione. Controllando l'applicazione e analizzandone i log eventi potrebbero venire alla luce problemi precedentemente nascosti.  
   
  Inoltre, non è sufficiente vigilare la propria applicazione, ma occorre tenersi aggiornati rispetto alle minacce e ai punti deboli della piattaforma sulla quale questa viene eseguita e su altri eventuali prodotti dai quali potrebbe dipendere.  

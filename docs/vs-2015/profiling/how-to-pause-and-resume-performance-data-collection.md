@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Sospendere e riprendere la raccolta dei dati sulle prestazioni | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c780e3bbb545ec3611b00dd56d21cb3f87c75d44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0e3c64575d7efe6ee724ee2486d7785a5f655f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540392"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205621"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dei dati sulle prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: sospendere e riprendere la raccolta dati prestazioni](https://docs.microsoft.com/visualstudio/profiling/how-to-pause-and-resume-performance-data-collection).  
-  
 Dalla finestra pagina della sessione di profilatura è possibile controllare interattivamente la raccolta dei dati di profilatura.  
   
  Il controllo della raccolta dei dati consente di ridurre la dimensione del file di dati del profilo e di raccogliere solo i dati per le operazioni a cui si è interessati. È possibile sospendere e riprendere la profilatura più volte in una sessione di prestazioni.  

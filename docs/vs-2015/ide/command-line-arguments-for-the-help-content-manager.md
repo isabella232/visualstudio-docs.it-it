@@ -1,7 +1,7 @@
 ---
 title: Argomenti della riga di comando per Gestione contenuto della Guida | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b5497eaaf74e36997150529f7a962ab02101d1a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214695"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per la Gestione contenuto della Guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [gli argomenti della riga di comando per Gestione contenuto della Guida](https://docs.microsoft.com/visualstudio/ide/command-line-arguments-for-the-help-content-manager).  
-  
 È possibile specificare come distribuire e gestire il contenuto della Guida locale usando gli argomenti della riga di comando per Gestione contenuto della Guida (HlpCtntmgr.exe). È necessario eseguire gli script per questo strumento da riga di comando con le autorizzazioni di amministratore e non è possibile eseguire questi script come servizio. Usando questo strumento è possibile eseguire le seguenti attività:  
   
 -   Aggiungere o aggiornare il contenuto della Guida locale da un disco o dal cloud.  

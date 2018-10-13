@@ -1,7 +1,7 @@
 ---
 title: Dettagli di Runtime del controllo di origine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca2d6830a9feb61c088274761995eeb227b1d661
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38b086f578d71c291ef12cb7b90e3ba1ce1ee89f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529939"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212434"
 ---
 # <a name="source-control-runtime-details"></a>Dettagli di runtime del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [dettagli di Runtime del controllo sorgente](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-runtime-details).  
-  
 Quando l'utente aggiunge un file nel progetto di controllo del codice sorgente o tramite un controller di automazione, ad esempio una procedura guidata, viene aggiunto un progetto al controllo del codice sorgente. Un progetto non è specificata per se stesso che è sotto controllo del codice sorgente; supporta controllo del codice sorgente, ma devono essere aggiunti manualmente a esso.  
   
 ## <a name="registering-with-a-source-control-package"></a>La registrazione con un pacchetto controllo del codice sorgente  

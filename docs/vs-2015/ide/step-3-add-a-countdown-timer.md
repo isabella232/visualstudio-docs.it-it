@@ -1,7 +1,7 @@
 ---
 title: 'Passaggio 3: aggiungere un timer per il conto alla rovescia | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: efdf3c02750b2c926d79917efd382aec6c6e71a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bbbc5e7de56e3ab03976b1933895035913bb7d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228150"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: aggiungere un timer per il conto alla rovescia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [passaggio 3: aggiungere un Timer del conto alla rovescia](https://docs.microsoft.com/visualstudio/ide/step-3-add-a-countdown-timer).  
-  
 Nella terza parte di questa esercitazione si aggiungerà un timer per il conto alla rovescia per tenere traccia del numero di secondi che rimangono all'esecutore del quiz per completare l'operazione.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Inserimento di commenti al codice XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 82a76cdc9da6a9d289ca325caf36f6ff2c159770
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 77c0eab37d23a9324d10c89b435f771dba28e634
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185458"
 ---
 # <a name="supplying-xml-code-comments"></a>Inserimento di commenti al codice XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [inserimento di commenti al codice XML](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments).  
-  
 È possibile rendere disponibili commenti nei file di codice sorgente come IntelliSense. Quando si aggiunge l'opzione /doc alla riga di comando del compilatore Visual Basic, C# o C++, viene generato un file con estensione xml che funge da base per la documentazione IntelliSense.  
   
  Per altre informazioni sulla documentazione di codice in Visual Basic, vedere [procedura: creare documentazione XML](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: fornire supporto per la struttura espanso in un servizio di linguaggio Legacy | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ab97a9b26c1dd76949a4bae6dd9640319398bd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6371339da12d88832e84d5086ed2d8a83226a94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239540"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Procedura: fornire supporto per la struttura espanso in un servizio di linguaggio Legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [forniscono supporto per la struttura in un servizio di linguaggio](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service).  
-  
 Sono disponibili due opzioni per l'estensione di supporto per la struttura per il linguaggio oltre, supportando il **Comprimi alle definizioni** comando. È possibile aggiungere aree della struttura controllata dall'editor e aggiungere aree della struttura controllato dal client.  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>Aggiunta di aree della struttura controllata dall'Editor  

@@ -1,7 +1,7 @@
 ---
 title: Cosa&#39;s novità di Visual Studio 2015 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226172"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Cosa&#39;s novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio 2015 è una famiglia integrata di strumenti di produttività per s
 ## <a name="a-new-setup-experience"></a>Una nuova esperienza di installazione  
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]  
   
- L'esperienza di installazione di Visual Studio 2015 è stata suddivisa in componenti in modo che è necessario installare le parti che è necessario. In questo modo l'installazione più veloce per molti scenari comuni che coinvolgono lo sviluppo Web o .NET. Se altri tipi di sviluppo, ad esempio sviluppo multipiattaforma per dispositivi mobili, o si lavora in C++ o F #, scegliere **personalizzato** installazione e quindi scegliere i componenti e il SDK di terze parti facoltativo che è necessario. È inoltre possibile installare i componenti personalizzati in un secondo momento. Ad esempio, se si sceglie l'installazione di base e quindi tentare di creare un nuovo progetto C++, verrà richiesto di scaricare gli strumenti di sviluppo C++.  
+ L'esperienza di installazione di Visual Studio 2015 è stata suddivisa in componenti in modo che è necessario installare le parti che è necessario. In questo modo l'installazione più veloce per molti scenari comuni che coinvolgono lo sviluppo Web o .NET. Se altri tipi di sviluppo, ad esempio sviluppo multipiattaforma per dispositivi mobili, o si lavora in C++ o F#, scegliere <ph x=&quot;1&quot; type=&quot;bpt&quot;>&lt;bpt id=&quot;p1&quot;&gt;**&lt;/bpt&gt;</ph>personalizzato<ph x=&quot;2&quot; type=&quot;ept&quot;>&lt;ept id=&quot;p1&quot;&gt;**&lt;/ept&gt;</ph> installazione e quindi scegliere i componenti e il SDK di terze parti facoltativo che è necessario. È inoltre possibile installare i componenti personalizzati in un secondo momento. Ad esempio, se si sceglie l'installazione di base e quindi tentare di creare un nuovo progetto C++, verrà richiesto di scaricare gli strumenti di sviluppo C++.  
   
  ![Dialogo di installazione di Visual Studio 2015](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")  
   

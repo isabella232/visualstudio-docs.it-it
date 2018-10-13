@@ -1,7 +1,7 @@
 ---
 title: Generazione di testo in fase di esecuzione con modelli di testo T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540598"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214747"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [generazione di testo in fase di esecuzione con modelli di testo T4](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates).  
-  
 È possibile generare stringhe di testo nell'applicazione in fase di esecuzione usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] runtime i modelli di testo. Il computer in cui viene eseguito l'applicazione non deve avere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. I modelli di runtime sono talvolta denominati "pre-elaborato i modelli di testo" perché in fase di compilazione, il modello genera il codice che viene eseguito in fase di esecuzione.  
   
  Ogni modello è una combinazione del testo visualizzato nella stringa generata e frammenti di codice programma. I frammenti del programma forniscono valori per le parti variabili della stringa e anche controllano parti condizionale e ripetute.  

@@ -1,7 +1,7 @@
 ---
 title: 'CA3075: Elaborazione DTD non protetta | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7c8a7fefe3b39c68040101e73ec678d92a81a875
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b201631d86d0fd36a0f35d2842400473abf5fc3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201578"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versione più recente di questo argomento è reperibile in [CA3075: elaborazione DTD non protetta](https://docs.microsoft.com/visualstudio/code-quality/ca3075-insecure-dtd-processing).
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -36,7 +33,7 @@ La versione più recente di questo argomento è reperibile in [CA3075: elaborazi
  Se si usano istanze di <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non protette o si fa riferimento a origini di entità esterne, il parser può accettare un input non attendibile e divulgare informazioni riservate a utenti malintenzionati.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Oggetto [definizione DTD (Document Type Definition)](https://msdn.microsoft.com/library/aa468547.aspx) è uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito per il [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori potenziale [divulgazione](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) minacce, con conseguente [Denial of Service (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) attacchi. Questa regola viene attivata quando:
+ La [definizione DTD (Document Type Definition)](https://msdn.microsoft.com/library/aa468547.aspx) rappresenta uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito dalla raccomandazione  [W3C (World Wide Web Consortium) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori delle minacce potenziali di [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , che possono causare attacchi [Denial of Service (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Questa regola viene attivata quando:
 
 -   DtdProcessing viene abilitato nell'istanza di <xref:System.Xml.XmlReader> , che risolve le entità XML esterne con <xref:System.Xml.XmlUrlResolver>.
 

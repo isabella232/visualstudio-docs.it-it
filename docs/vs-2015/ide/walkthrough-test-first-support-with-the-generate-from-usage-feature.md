@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Supporto test preliminare con la funzionalità di generazione dall'utilizzo | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a290eebec2c3847d41f36568196ec35935e332a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529947"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232843"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Procedura dettagliata: supporto test preliminare con la funzionalità di generazione dall'utilizzo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: supporto Test preliminare con la funzionalità di generazione dall'utilizzo](https://docs.microsoft.com/visualstudio/ide/walkthrough-test-first-support-with-the-generate-from-usage-feature).  
-  
 Questo argomento illustra come usare la funzionalità di [generazione dall'utilizzo](../misc/generate-from-usage.md), che supporta lo sviluppo di test preventivi.  
   
  Lo*sviluppo di test preventivi* è un approccio alla progettazione software in cui prima si scrivono unit test in base alle specifiche del prodotto e quindi si scrive il codice sorgente necessario per fare in modo che i test abbiano esito positivo. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta lo sviluppo di test preventivi grazie alla generazione di nuovi tipi e membri nel codice sorgente quando si fa riferimento a essi per la prima volta nei test case, prima che vengano definiti.  

@@ -1,7 +1,7 @@
 ---
 title: Estendere il filtro di Esplora soluzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df93778a54da9c24b59228bd27e4930721273cbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dfe0d8e8341847941880bd2b44ee29341cc07ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195754"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Estensione del filtro di Esplora soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [estendere il filtro di Esplora soluzioni](https://docs.microsoft.com/visualstudio/extensibility/extending-the-solution-explorer-filter).  
-  
 È possibile estendere **Esplora soluzioni** filtrare la funzionalità per mostrare o nascondere file diversi. Ad esempio, è possibile creare un filtro che mostra solo classi factory file c# la **Esplora soluzioni**, come illustrato di seguito in questa procedura dettagliata.  
   
 ## <a name="prerequisites"></a>Prerequisiti  

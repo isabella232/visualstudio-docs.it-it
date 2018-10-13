@@ -1,7 +1,7 @@
 ---
 title: Hosting di IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20e2c0d2c14a0191811453b8e1a5cadf3d314e98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6b02716effa95beb1492c25c56d835e6deb91de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216983"
 ---
 # <a name="intellisense-hosting"></a>Hosting di IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [IntelliSense Hosting](https://docs.microsoft.com/visualstudio/extensibility/intellisense-hosting).  
-  
 Visual Studio consente l'hosting di IntelliSense. IntellSense che ospita consente di fornire IntelliSense per codice che non è ospitato da editor di testo di Visual Studio.  
   
 ## <a name="intellisense-hosting-usage"></a>Utilizzo di Hosting di IntelliSense  

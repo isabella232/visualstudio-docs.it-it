@@ -1,7 +1,7 @@
 ---
 title: Registrazione di verbi per estensioni di File | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6c42b1682c7f599513b9894646b30dee029740e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532594"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196326"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrazione di verbi per le estensioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [la registrazione di verbi per estensioni di File](https://docs.microsoft.com/visualstudio/extensibility/registering-verbs-for-file-name-extensions).  
-  
 L'associazione di un'estensione di file a un'applicazione ha in genere un'azione da preferire che si verifica quando un utente fa doppio clic su un file. Preferibile utilizzare l'azione è collegata a un verbo, ad esempio open, che corrisponde all'azione.  
   
  È possibile registrare i verbi associati con un identificatore a livello di codice (ProgID) per un'estensione usando la chiave di Shell che si trova in HKEY_CLASSES_ROOT\\*progid*\shell. Per altre informazioni, vedere [tipi di File](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Debug degli errori a causa dello sfondo di Rendering | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bd3416e9a3902a77489b4d3a5547e3614376c59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210171"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: debug per il Rendering degli errori a causa di un'ombreggiatura](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-debugging-rendering-errors-due-to-shading).  
-  
-Questa procedura dettagliata illustra come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostica della grafica per esaminare un oggetto colorato in modo non corretto a causa di un bug dello shader.  
+Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per esaminare un problema dovuto a un oggetto colorato in modo non corretto a causa di un bug dello shader.  
   
  Questa procedura dettagliata illustra come:  
   
@@ -48,7 +46,7 @@ Questa procedura dettagliata illustra come usare [!INCLUDE[vsprvs](../includes/v
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Per esaminare un frame in un log di grafica  
   
-1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], caricare un log di grafica contenente un frame che mostra il modello mancante. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene visualizzata una nuova finestra del documento del log di grafica. Nella parte superiore di questa finestra è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.  
+1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]caricare un log di grafica contenente un frame che mostra il modello mancante. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene visualizzata una nuova finestra del documento del log di grafica. Nella parte superiore di questa finestra è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.  
   
 2.  In **Elenco frame**selezionare un frame in cui l'oggetto non ha l'aspetto corretto. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la finestra del documento del log di grafica ha il seguente aspetto:  
   

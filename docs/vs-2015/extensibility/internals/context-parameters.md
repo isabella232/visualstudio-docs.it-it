@@ -1,7 +1,7 @@
 ---
 title: I parametri di contesto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c890a1ffa91d4e6017411e99b4845304a2399279
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 663583129453fc8bd9b71c2be2337a5528f9f7d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238083"
 ---
 # <a name="context-parameters"></a>Parametri di contesto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [parametri di contesto](https://docs.microsoft.com/visualstudio/extensibility/internals/context-parameters).  
-  
 Nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE), è possibile aggiungere le procedure guidate per il **nuovo progetto**, **Aggiungi nuovo elemento**, o **Aggiungi progetto Sub** finestre di dialogo. Le procedure guidate di aggiunta sono disponibili nel **File** dal menu o facendo clic su un progetto in **Esplora soluzioni**. L'IDE passa i parametri di contesto per l'implementazione della procedura guidata. I parametri di contesto definiscono lo stato del progetto quando l'IDE chiama la procedura guidata.  
   
  Procedure guidate di avvio dell'IDE, impostando il <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> flag nella chiamata dell'IDE per la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> metodo per il progetto. Se impostato, il progetto deve rendere la `IVsExtensibility::RunWizardFile` metodo da eseguire usando il nome della procedura guidata registrati o GUID e altri parametri di contesto che l'IDE passa a esso.  

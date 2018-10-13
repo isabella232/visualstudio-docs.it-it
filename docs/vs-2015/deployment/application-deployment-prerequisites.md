@@ -1,7 +1,7 @@
 ---
 title: Prerequisiti per la distribuzione dell'applicazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217932"
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [prerequisiti per la distribuzione dell'applicazione](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites).  
-  
 Affinché l'applicazione venga installata ed eseguita correttamente, è necessario che nel computer di destinazione siano già installati tutti i componenti da cui l'applicazione dipende. Ad esempio, la maggior parte delle applicazioni create con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hanno una dipendenza da [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]; prima di installare l'applicazione, è necessario che nel computer di destinazione sia presente la versione corretta di Common Language Runtime.  
   
  È possibile selezionare questi prerequisiti sono le **Prerequisites Dialog Box** e installare .NET Framework e altri componenti ridistribuibili come parte dell'installazione. Questa pratica è nota come *bootstrap*. Successivamente [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera un programma eseguibile di Windows denominato Setup.exe, noto anche come un *bootstrapper*. Il programma di avvio automatico installa questi prerequisiti prima dell'esecuzione dell'applicazione. Per altre informazioni sulla selezione di questi prerequisiti, vedere [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  

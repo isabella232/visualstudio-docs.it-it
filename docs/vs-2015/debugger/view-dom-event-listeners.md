@@ -1,7 +1,7 @@
 ---
 title: Visualizzare listener di eventi DOM | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223301"
 ---
 # <a name="view-dom-event-listeners"></a>Visualizzare i listener di eventi DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [listener di eventi di visualizzazione DOM](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners).  
-  
 Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Il **eventi** scheda della finestra di DOM Explorer mostra gli eventi associati a un elemento DOM. Ogni nodo principale nel **eventi** scheda rappresenta un evento con sottoscrittori attivi. Il nodo principale contiene i sottonodi che rappresentano i listener di eventi registrati per l'evento specifico. Oltre a visualizzare i listener di eventi, puoi usare questa scheda per spostarti nel percorso del listener di eventi nel codice JavaScript. Le informazioni contenute in questo argomento sono applicabili alle app di Windows Store compilate con HTML e JavaScript.  
@@ -62,7 +60,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 6.  In DOM Explorer scegli `Find` nell'angolo superiore destro.  
   
-7.  Tipo `ListView`, quindi premere INVIO.  
+7.  Digitare `ListView`e premere Invio.  
   
 8.  Se necessario, scegliere il **successivo** per trovare il `DIV` elemento che rappresenta il `ListView` controllo (questo elemento dispone di un `data-win-control` pari a `WinJS.UI.ListView`).  
   

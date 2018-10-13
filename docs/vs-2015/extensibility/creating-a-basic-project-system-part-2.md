@@ -1,7 +1,7 @@
 ---
 title: Creazione di un sistema di progetto di base, parte 2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea16f64d07450eabebb0ff49f8c8ea26a0214ffa
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1e5661b7bd11891f43427749a158f33f07444e43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236639"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Creazione di un sistema di progetto di base, parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di un sistema di progetto di base, parte 2](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-2).  
-  
 La prima procedura dettagliata in questa serie [creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema del progetto di base mediante l'aggiunta di un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare questo, è necessario completare la prima procedura dettagliata.  
   
  Questa procedura dettagliata viene illustrato come creare un tipo di progetto che ha il .myproj di estensione nome file progetto. Per completare la procedura dettagliata, non è necessario creare un proprio linguaggio perché la procedura dettagliata Usa il sistema di progetto Visual c# esistente.  

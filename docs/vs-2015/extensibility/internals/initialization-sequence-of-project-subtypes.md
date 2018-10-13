@@ -1,7 +1,7 @@
 ---
 title: Sequenza di inizializzazione dei sottotipi di progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b69dc5bea8ffc6e8248e777990653ed24097a30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8352e97659ad3daeac5f5e36987bfef3565e42bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526049"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224081"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Sequenza di inizializzazione dei sottotipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [sequenza di inizializzazione dei sottotipi di progetto](https://docs.microsoft.com/visualstudio/extensibility/internals/initialization-sequence-of-project-subtypes).  
-  
 L'ambiente costruisce un progetto chiamando l'implementazione della factory di progetto di base di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. La costruzione di un sottotipo di progetto inizia quando l'ambiente determina che l'elenco GUID tipo di progetto per l'estensione del file di progetto non è vuota. L'estensione di file di progetto e il GUID del progetto specificare se il progetto è un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] tipo di progetto. Ad esempio, l'estensione vbproj e {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identificare un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] progetto.  
   
 ## <a name="environments-initialization-of-project-subtypes"></a>Inizializzazione dell'ambiente di sottotipi di progetto  

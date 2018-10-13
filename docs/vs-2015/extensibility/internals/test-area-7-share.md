@@ -1,7 +1,7 @@
 ---
 title: 'Area di test 7: Condividere | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 31ef127e53a43cf018da5b78ed79a6b2145815da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54bfa75703e88b08d87daff5d460b868afca3c9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532845"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228124"
 ---
 # <a name="test-area-7-share"></a>Area di test 7: Condividere
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Test Area 7: condivisione](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-7-share).  
-  
 Questa area di test illustra gli elementi di condivisione tra località, tramite il **condivisione** comando.  
   
  È un'operazione di hhare la duplicazione apparente di file e cartella elementi tra due o più posizioni all'interno di una gerarchia di file di controllo di origine. Nel server non è realmente verificarsi la duplicazione, ma l'utente di visualizzare lo stesso file in due o più percorsi specificati. Ogni volta che vengono apportate modifiche per gli elementi condivisi, tali modifiche vengono visualizzati in tutti gli altri percorsi condivisi.  

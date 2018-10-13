@@ -1,7 +1,7 @@
 ---
 title: Comando Apri soluzione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c2c93f44ba7c801b31390c411da1d16c1645bf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15c51e341761ad34241f1230f797896ce8dc2e9e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186417"
 ---
 # <a name="open-solution-command"></a>Comando Apri soluzione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [comando Apri soluzione](https://docs.microsoft.com/visualstudio/ide/reference/open-solution-command).  
-  
   
 Apre una soluzione esistente, chiudendo tutte le altre soluzioni aperte.  
   
@@ -60,7 +58,7 @@ File.OpenSolution filename
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
  [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
  [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

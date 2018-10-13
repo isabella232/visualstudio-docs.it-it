@@ -1,7 +1,7 @@
 ---
 title: Creare viste personalizzate di oggetti nativi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab7343a13d1c5182e207728a2d4772b6704789ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23a6b08bcc592284f8cb2381abe1967d50428873
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236535"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Creare viste personalizzate di oggetti nativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creare viste personalizzate di oggetti nativi](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects).  
-  
 Il framework Natvis di Visual Studio consente di personalizzare il modo in cui Visual Studio visualizza i tipi nativi nelle finestre delle variabili del debugger (ad esempio, le finestre **Espressioni di controllo**, **Variabili locali**e **Suggerimenti dati** ).  
   
  Natvis sostituisce il file **autoexp.dat** usato nelle versioni precedenti di Visual Studio e include la sintassi XML, funzionalità di diagnostica migliorate, controllo delle versioni e supporto di più file.  
@@ -356,7 +354,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 -   Se si specifica un nodo `Expand` senza i nodi figlio sottostanti, il tipo non sarà espandibile nelle finestre del debugger.  
   
 ####  <a name="BKMK_Item_expansion"></a> Espansione di Item  
- L'elemento `Item` è l'elemento più semplice e comune da usare in un nodo `Expand` . `Item` definisce un singolo elemento figlio. Ad esempio, si supponga di disporre di una classe `CRect` i cui campi sono `top`, `left`, `right`e `bottom` e che contiene la seguente voce di visualizzazione:  
+ L'elemento `Item` è l'elemento più semplice e comune da usare in un nodo `Expand` . `Item` definisce un singolo elemento figlio. Ad esempio, si supponga di disporre di una classe `CRect` i cui campi sono `top`, `left`, `right` e `bottom` e che contiene la seguente voce di visualizzazione:  
   
 ```xml  
 <Type Name="CRect">  

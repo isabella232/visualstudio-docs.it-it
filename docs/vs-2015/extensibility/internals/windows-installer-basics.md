@@ -1,7 +1,7 @@
 ---
 title: Nozioni di base di Windows Installer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a15d47971a7f500d1f709dfb248838f84065f21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 281dfa7a8c671923dd64eb8ecaee0629d4b8e224
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223054"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [nozioni di base di Windows Installer](https://docs.microsoft.com/visualstudio/extensibility/internals/windows-installer-basics).  
-  
 Il programma di installazione di Windows installa e Disinstalla applicazioni o i prodotti software nel computer dell'utente, eseguire queste attività in unità denominate i componenti di Windows Installer (denominati talvolta WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni usando Windows Installer e installazione.  
   
  Per una documentazione completa del programma di installazione di Windows, vedere l'argomento Platform SDK [Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx).  

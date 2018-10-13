@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di un elenco a un sottomenu ultima usata | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a5f0177243c178890673986b0c04b4627505e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223733"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Aggiunta di un elenco usato più di recente a un sottomenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiunta di una più recente usato elenco a un sottomenu](https://docs.microsoft.com/visualstudio/extensibility/adding-a-most-recently-used-list-to-a-submenu).  
-  
 Questa procedura dettagliata si basa sulle dimostrazioni [aggiunta di un sottomenu a un Menu](../extensibility/adding-a-submenu-to-a-menu.md)e viene illustrato come aggiungere un elenco dinamico di un sottomenu. L'elenco dinamico costituisce la base per la creazione di un elenco più recente (MRU).  
   
  Un elenco di menu dinamico inizia con un segnaposto in un menu. Ogni volta che viene visualizzato il menu di scelta, l'ambiente di sviluppo integrato (IDE) di Visual Studio chiede il pacchetto VSPackage per tutti i comandi che devono essere visualizzati nel segnaposto. Un elenco dinamico può verificarsi in qualsiasi punto in un menu. Tuttavia, gli elenchi dinamici vengono in genere archiviati e visualizzati da soli nel sottomenu o al fondo del menu. Utilizzando questi modelli di progettazione, si abilita l'elenco dinamico di comandi per espandere e comprimere senza incidere sulla posizione di altri comandi del menu. In questa procedura dettagliata, viene visualizzato l'elenco MRU dinamico nella parte inferiore di un sottomenu esistente, separato dal resto del sottomenu da una riga.  

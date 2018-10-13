@@ -1,7 +1,7 @@
 ---
 title: Usando il modello di automazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da79ac654f37b8f9fd9ceaa1eac3df09204f7196
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51579a61cad76cd3164a8ddce739511e7a81d622
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203177"
 ---
 # <a name="using-the-automation-model"></a>Uso del modello di automazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [usando il modello di automazione](https://docs.microsoft.com/visualstudio/extensibility/internals/using-the-automation-model).  
-  
 Dopo aver connesso il pacchetto VSPackage all'automazione, è possibile ottenere le proprietà e metodi chiamando il <xref:EnvDTE.DTEClass.GetObject%2A> metodo su di <xref:EnvDTE._DTE> oggetto, passando una stringa che rappresenta l'oggetto da recuperare.  
   
 ## <a name="obtaining-project-objects"></a>Recupero di oggetti del progetto  

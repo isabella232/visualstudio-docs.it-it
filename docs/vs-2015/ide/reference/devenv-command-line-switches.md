@@ -1,7 +1,7 @@
 ---
 title: Opzioni della riga di comando devenv | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 459ab16b30882feb3d167d7668ffd660e6490cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215034"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [opzioni della riga di comando Devenv](https://docs.microsoft.com/visualstudio/ide/reference/devenv-command-line-switches).  
-  
   
 La riga di comando devenv consente di impostare varie opzioni per l'ambiente di sviluppo integrato (IDE, Integrated Development Environment) e di compilare, eseguire il debug e distribuire i progetti dalla riga di comando. Usare queste opzioni per eseguire l'IDE da uno script o un file con estensione bat, ad esempio uno script di compilazione notturna, o per avviare l'IDE in una configurazione particolare.  
   

@@ -1,7 +1,7 @@
 ---
 title: Misurazione della complessità e della manutenibilità del codice gestito | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 062ac6f8c9610c8b8e877c3d975fb1f4b6eef4e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b83ab0627685d599d0866d789c18bee8d08659a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214226"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Misurazione della complessità e della manutenibilità del codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [misurazione della complessità e manutenibilità del codice gestito](https://docs.microsoft.com/visualstudio/code-quality/measuring-complexity-and-maintainability-of-managed-code).  
-  
 La maggiore complessità delle applicazioni software moderne aumenta anche la difficoltà di rendere il codice affidabile e facile da gestire. Negli ultimi anni, molti di misurazione del software, noti come metrica del codice, sono stati sviluppati che consentono agli sviluppatori di comprendere in cui il codice deve rielaborazione o maggiore di test.  
   
  Gli sviluppatori possono usare [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] per generare dati di metrica del codice che consentono di misurare la complessità e della manutenibilità del codice gestito. Dati di metrica codice possono essere generati per un'intera soluzione o un singolo progetto.  

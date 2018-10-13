@@ -1,7 +1,7 @@
 ---
 title: Panoramica della Cache di ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5fb0bcd8c589f8ade12f8da0c4151e1f2894dd1d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e976877a045b6efc7ca3d9fb103b9d1a8e88df7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217295"
 ---
 # <a name="clickonce-cache-overview"></a>Cenni preliminari sulla cache di ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Cenni preliminari sulla Cache di ClickOnce](https://docs.microsoft.com/visualstudio/deployment/clickonce-cache-overview).  
-  
 Tutti i [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] le applicazioni, se vengono installati in locale o ospitati online, vengono archiviate nel computer client in un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]application *cache*. Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cache è una famiglia di directory nascoste sotto la directory delle impostazioni locali della cartella documenti e le impostazioni dell'utente corrente. Questa cache contiene tutti i file dell'applicazione, tra cui l'assembly, i file di configurazione, applicazione e le impostazioni utente e directory dei dati. La cache è inoltre responsabile per la migrazione di directory dei dati dell'applicazione alla versione più recente. Per altre informazioni sulla migrazione dei dati, vedere [l'accesso ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
  Fornendo un'unica posizione per l'archiviazione dell'applicazione, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] subentra il compito di gestire l'installazione fisica di un'applicazione da parte dell'utente. La cache anche consente di isolare le applicazioni, mantenendo gli assembly e file di dati per tutte le applicazioni e le relative versioni separano uno da altro. Ad esempio, quando si aggiorna un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] un'applicazione, che vengono fornite versione e le relative risorse di dati con le proprie directory nella cache.  

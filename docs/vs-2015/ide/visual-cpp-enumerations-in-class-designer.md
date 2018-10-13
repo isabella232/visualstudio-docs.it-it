@@ -1,7 +1,7 @@
 ---
 title: Enumerazioni Visual C++ in Progettazione classi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d4bc1385c934d9858cef19f8ffe73ad6a0baaf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d88cb954e89cfd6401f674fbbbc901ac634982
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530815"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236359"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Enumerazioni Visual C++ in Progettazione classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [enumerazioni Visual C++ in Progettazione classi](https://docs.microsoft.com/visualstudio/ide/visual-cpp-enumerations-in-class-designer).  
-  
 Progettazione classi supporta C++ `enum` e i tipi `enum class` con ambito. Di seguito è riportato un esempio:  
   
 ```  

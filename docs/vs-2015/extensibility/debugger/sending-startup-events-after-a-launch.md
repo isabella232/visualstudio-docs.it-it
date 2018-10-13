@@ -1,7 +1,7 @@
 ---
 title: L'invio di eventi di avvio dopo un avvio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 21b98fccac32b50e6aec643a7b69832e65d53dd8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae6986862021313650551cb12a38b68eaea72e35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186615"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Invio degli eventi di avvio dopo un avvio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [l'invio di avvio eventi dopo un avvio](https://docs.microsoft.com/visualstudio/extensibility/debugger/sending-startup-events-after-a-launch).  
-  
 Dopo che il motore di debug (DE) è collegato al programma, invia una serie di eventi di avvio nuovamente alla sessione di debug.  
   
  Gli eventi di avvio inviati nuovamente alla sessione di debug includono quanto segue:  

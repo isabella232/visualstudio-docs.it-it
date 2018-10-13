@@ -1,7 +1,7 @@
 ---
 title: Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e746e94f879f9b5c09441e19c5c5e534521cee02
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23749bd33faef774d28657aeae3016d716fea0b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527842"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223145"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [finestra di dialogo Opzioni, progetti e soluzioni, progetti Web](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-web-projects).  
-  
   
 Imposta il server Web che i progetti Web useranno per lo sviluppo all'interno di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Per accedere a questa finestra di dialogo, fare clic su **Strumenti/Opzioni**. Espandere **Progetti e soluzioni** e quindi fare clic su **Progetti Web**.  
   

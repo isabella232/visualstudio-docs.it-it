@@ -1,7 +1,7 @@
 ---
 title: Distribuzione ClickOnce in Windows Vista | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8057cc9c27d99058d5f16052864082e288591457
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6340d34e6f974cf8e7ea6f2dd7fea38b5ef94a57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224510"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Distribuzione ClickOnce in Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [distribuzione ClickOnce in Windows Vista](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-on-windows-vista).  
-  
 Compilazione di applicazioni in Visual Studio per controllo Account utente (UAC) in Windows Vista in genere genera un manifesto incorporato, come dati binari con codifica XML nel file eseguibile dell'applicazione. Poiché le applicazioni ClickOnce and Registration-Free COM è necessario un manifesto esterno, Visual Studio genera un file per questi tipi di progetto che contiene i dati di controllo dell'account utente invece di un manifesto incorporato. Per impostazione predefinita, Visual Studio Usa le informazioni da un file denominato manifest per generare informazioni di manifesto UAC esterne (per la distribuzione ClickOnce and Registration-Free COM) o da incorporare nel file eseguibile dell'applicazione (per tutti gli altri casi). Visual Studio offre le seguenti opzioni per la generazione del manifesto:  
   
 -   Usare un manifesto incorporato. Incorporare i dati di controllo dell'account utente nel file eseguibile dell'applicazione e vengono eseguite come utente normale.  

@@ -1,7 +1,7 @@
 ---
 title: Attività UidManager | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f64a91ddf1eea2bdd74bd64e2d33acfd4d60827
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa51ddb8f2cf6e200b7313069fca3ee6db3ebcf3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525737"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208065"
 ---
 # <a name="uidmanager-task"></a>Attività UidManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [attività UidManager](https://docs.microsoft.com/visualstudio/msbuild/uidmanager-task).  
-  
   
 L'attività <xref:Microsoft.Build.Tasks.Windows.UidManager> controlla, aggiorna o rimuove gli identificatori univoci (UID) per localizzare tutti gli elementi [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] inclusi nei file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] di origine.  
   

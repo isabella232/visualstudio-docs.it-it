@@ -1,7 +1,7 @@
 ---
 title: Panoramica della finestra proprietà | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bd869cd9d5fd10a31383d93671bf820887087a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de60ed84abf4d4d2e01838140301919e13468239
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188708"
 ---
 # <a name="properties-window-overview"></a>Panoramica della finestra Proprietà
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Panoramica della finestra proprietà](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-overview).  
-  
 Il **delle proprietà** finestra viene utilizzata per visualizzare le proprietà di oggetti selezionati nei due tipi principali di windows disponibile nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE). Questi due tipi di windows sono:  
   
 -   Finestre degli strumenti, ad esempio browser Esplora soluzioni, Visualizzazione classi e oggetti  

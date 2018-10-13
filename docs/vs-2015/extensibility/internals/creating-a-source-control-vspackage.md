@@ -1,7 +1,7 @@
 ---
 title: Creazione di un VSPackage di controllo del codice sorgente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e67d21fe906dd6bc2a1da0a7a483ee78aa0fe2db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7d897e8aeaf140048695a14d552ae5c5ab200a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220025"
 ---
 # <a name="creating-a-source-control-vspackage"></a>Creazione di un pacchetto VSPackage di controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di un VSPackage di controllo del codice sorgente](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-a-source-control-vspackage).  
-  
 Questa documentazione include collegamenti a panoramica dell'architettura di un pacchetto controllo del codice sorgente integrato con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], l'API definita per le interfacce da implementare e i servizi devono essere usati e un esempio che illustra una semplice origine controllare l'implementazione del pacchetto.  
   
  Con un controllo del codice sorgente VSPackage, è possibile creare un percorso di una profonda integrazione di controllo del codice sorgente per l'integrazione con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Consente di ignorare il controllo del codice sorgente predefinite dell'interfaccia utente ospitato dal pacchetto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]rispondere alle richieste di controllo di origine del sistema del progetto e interagirvi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] componenti, ad esempio **Esplora soluzioni**. Il [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] conferisce [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] opera in partnership con un meccanismo per creare un pacchetto VSPackage che può essere integrato con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usando un modello di servizio.  

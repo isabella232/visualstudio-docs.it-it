@@ -1,7 +1,7 @@
 ---
 title: Descrizione del modello di Directory (. File VSDIR) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201980"
 ---
 # <a name="template-directory-description-vsdir-files"></a>File (con estensione vsdir) di descrizione della directory dei modelli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Descrizione Directory del modello (. File VSDIR)](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files).  
-  
 Un file di descrizione di directory di modello (con estensione VSDIR) è un file di testo che consente l'ambiente di sviluppo integrato (IDE) per visualizzare le cartelle, file VSZ della procedura guidata e i file di modello che sono associati al progetto nelle finestre di dialogo. Il contenuto include un record per ogni file o cartella. Tutti i file VSDir in una posizione di cui si fa riferimento vengono uniti, anche se file sola VSDIR generalmente è fornito per descrivere più cartelle, le procedure guidate o i file di modello.  
   
  Tutte le cartelle (secondarie), i file di cui vengono fatto riferimento nel file VSDIR e il file VSDIR stesso si trovano nella stessa directory. Quando l'IDE viene eseguita una procedura guidata o si visualizza una cartella o il file nei **nuovo progetto** oppure **Aggiungi nuovo elemento** finestre di dialogo, l'IDE esamina la directory che contiene i file eseguiti per determinare se un file VSDIR presente. Se viene trovato un file VSDIR, l'IDE legge in modo da determinare se contiene una voce del file o cartella visualizzata o eseguita. Se viene trovata una voce, l'IDE Usa le informazioni nella visualizzazione del contenuto o l'esecuzione della procedura guidata.  

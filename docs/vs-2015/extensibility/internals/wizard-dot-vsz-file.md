@@ -1,7 +1,7 @@
 ---
 title: Procedura guidata (. File vsz) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24296384ec66386cdcb735547a1b6ce9c64a0618
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d8d36ba617f5d5828354e32b5b0f45ed9ec1ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197166"
 ---
 # <a name="wizard-vsz-file"></a>File (con estensione vsz) della procedura guidata
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Wizard (. File vsz)](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-dot-vsz-file).  
-  
 L'ambiente di sviluppo integrato (IDE) usa i file con estensione vsz per avviare le procedure guidate. Questi file VSZ contengono informazioni utilizzate per determinare quale procedura guidata per chiamare l'IDE e quali informazioni per passare alla procedura guidata.  
   
  Un file VSZ è una versione di un file di testo in formato con estensione ini che non dispone di sezioni. Le informazioni note all'IDE viene archiviate all'inizio del file. Ciò fornisce un collegamento tra la procedura guidata che chiama l'IDE e i parametri nel file VSZ da passare all'IDE. Il resto del file contiene i parametri che sono specifici per la procedura guidata e che devono essere raccolti dall'IDE e passati alla procedura guidata specifica.  

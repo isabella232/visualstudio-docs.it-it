@@ -1,7 +1,7 @@
 ---
 title: 'DA0502: Consumo massimo CPU del processo sottoposto a profilatura | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be9b9ff318ade6546369e20d5508b2ad79dc0bb9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: adc15c55c155248fdd3331daa4422d0c42dc21eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519513"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197243"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: Consumo massimo CPU del processo sottoposto a profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [DA0502: consumo massimo CPU del processo sottoposto a profilatura](https://docs.microsoft.com/visualstudio/profiling/da0502-maximum-cpu-consumption-by-the-process-being-profiled).  
-  
 Id regola | DA0502 |  
 | Categoria | Monitoraggio delle risorse |  
 | Metodo di profilatura | Tutti i |  

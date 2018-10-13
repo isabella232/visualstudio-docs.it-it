@@ -1,7 +1,7 @@
 ---
 title: Per determinare se implementare un VSPackage di controllo del codice sorgente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2af76d97b9fcf725079593155f8c3c5f695ca50a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 123a0448f71befcbc2e258d2cf662eb8ecff131a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203879"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Scelta di implementazione di un pacchetto VSPackage di controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Determining Whether per implementare un VSPackage di controllo del codice sorgente](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-whether-to-implement-a-source-control-vspackage).  
-  
 In questa sezione vengono illustrate le scelte di plug-in controllo codice sorgente e controllo del codice sorgente pacchetti VSPackage per estendere le soluzioni e fornisce indicazioni generali sulla scelta di un percorso adatto integrazione controllo del codice sorgente.  
   
 ## <a name="small-source-control-solution-with-limited-resources"></a>Soluzione di controllo di origine di dimensioni ridotte con risorse limitate  

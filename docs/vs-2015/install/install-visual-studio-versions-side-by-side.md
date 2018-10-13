@@ -1,7 +1,7 @@
 ---
 title: Installare le versioni Visual Studio Side-by-Side | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ae67e83b2f1444c09129ed5242afac2c3939c954
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199901"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare le versioni Visual Studio Side-by-Side
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "47532232"
 È possibile installare questa versione di Visual Studio in un computer in cui è già installata una versione precedente. Se si verifica un errore di installazione, è possibile usare lo [strumento di raccolta dei log](http://go.microsoft.com/fwlink/?LinkId=262077) per raccogliere informazioni sugli errori per poter eseguire il debug dei problemi manualmente.  
   
 > [!NOTE]
->  È consigliabile installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] versioni nell'ordine in cui sono state rilasciate. Ad esempio, installare Visual Studio 2013 prima di installare Visual Studio 2015.  
+>  Si consiglia di installare le versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nell'ordine nel quale vengono rilasciate. Ad esempio, installare Visual Studio 2013 prima di installare Visual Studio 2015.  
   
  Prima di installare le versioni affiancate, verificare le seguenti condizioni:  
   
--   Se si usa Visual Studio 2015 per aprire una soluzione creata in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], in un secondo momento è possibile aprire e modificare nuovamente la soluzione nella versione precedente purché non sia stata implementata alcuna funzionalità specifica di Visual Studio 2015.  
+-   Se si usa Visual Studio 2015 per aprire una soluzione creata in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], successivamente è possibile aprire e modificare nuovamente la soluzione nella versione precedente purché non sia stata implementata alcuna funzionalità specifica di Visual Studio 2015.  
   
--   Se si prova a usare Visual Studio 2015 per aprire una soluzione creata in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] o una versione precedente, potrebbe essere necessario modificare i progetti e file per renderli compatibili con Visual Studio 2015. Per altre informazioni, vedere la [conversione, migrazione e aggiornare i progetti di Visual Studio](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) pagina.  
+-   Se si prova a usare Visual Studio 2015 per aprire una soluzione creata in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] o in una versione precedente, potrebbe essere necessario modificare i progetti e i file per renderli compatibili con Visual Studio 2015. Per altre informazioni, vedere la [conversione, migrazione e aggiornare i progetti di Visual Studio](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) pagina.  
   
--   Se si disinstalla una versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] da un computer in cui sono installate più versioni, le associazioni di file per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verranno rimosse per tutte le versioni. È possibile modificare il mapping di queste associazioni di file usando il **Ripristina associazioni File** pulsante la **ambiente**, **generali** pagina del [opzioni](../ide/reference/general-environment-options-dialog-box.md) finestra di dialogo.  
+-   Se si disinstalla una versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] da un computer in cui sono installate più versioni, le associazioni di file per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verranno rimosse per tutte le versioni. È possibile eseguire di nuovo il mapping di queste associazioni di file tramite il pulsante **Ripristina associazioni file** in **Ambiente**nella pagina **Generale** della finestra di dialogo [Opzioni](../ide/reference/general-environment-options-dialog-box.md) .  
   
 -   Visual Studio non aggiorna automaticamente le estensioni, perché non tutte le estensioni sono compatibili. È necessario reinstallare le estensioni da [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=178891) o dall'autore del software.  
   

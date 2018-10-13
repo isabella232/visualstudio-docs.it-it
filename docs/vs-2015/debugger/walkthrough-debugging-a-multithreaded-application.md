@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Debug di un'applicazione multithreading | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13fa717cc7f3952e44fe0dffecf735e7b53345a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186199"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Procedura dettagliata: debug di un'applicazione multithreading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [debug di un'App con multithreading usando la finestra thread](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] fornisce un miglioramento **thread** finestra e un'interfaccia utente miglioramenti per renderne più semplice eseguire il debug di applicazioni multithreading. Il completamento di questa procedura dettagliata richiede solo alcuni minuti, ma è utile per familiarizzare con le nuove funzionalità dell'interfaccia per il debug delle applicazioni multithreading.  
   
  Per iniziare questa procedura dettagliata, è necessario un progetto di applicazione multithreading. Per creare tale progetto, attenersi alla procedura qui indicata.  

@@ -1,7 +1,7 @@
 ---
 title: Interfacce (VSPackage di controllo di origine) e servizi correlati | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2aa25cc89bb3832aec6cfdf9a57c135147a1d86f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05ee2b91204c9dca07f59e088ab07db7ee9ceaca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210132"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfacce e servizi correlati (VSPackage di controllo del codice sorgente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [interfacce (VSPackage di controllo di origine) e servizi correlati](https://docs.microsoft.com/visualstudio/extensibility/internals/related-services-and-interfaces-source-control-vspackage).  
-  
 In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in controllo di origine al [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Il controllo del codice sorgente pacchetto VSPackage implementa alcune di queste interfacce e usato da altri utenti per eseguire attività di controllo di origine.  
   
 ## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfacce implementate da e per pacchetti VSPackage di controllo di origine  

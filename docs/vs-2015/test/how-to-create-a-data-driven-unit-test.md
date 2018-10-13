@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Creare uno unit test basato sui dati | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1b5f0fea9712d1ba62aa8965b4d4a2e7d7d0e230
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177671"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare uno unit test basato sui dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: creare uno Unit Test basato sui dati](https://docs.microsoft.com/visualstudio/test/how-to-create-a-data-driven-unit-test).  
-  
 Tramite il framework unit test Microsoft per il codice gestito, è possibile impostare un metodo di unit test per recuperare i valori usati nel metodo di test da un'origine dati. Il metodo viene eseguito in successione per ogni riga nell'origine dati, rendendo più semplice testare una un'ampia varietà di input con un singolo metodo.  
   
  Di seguito sono elencate le diverse sezioni di questo argomento:  

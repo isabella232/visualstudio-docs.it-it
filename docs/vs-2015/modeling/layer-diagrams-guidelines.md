@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammi livello: Linee guida | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202579"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammi livello: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [diagrammi delle dipendenze: linee guida](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines).  
-  
 Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* in Visual Studio. Assicurarsi che il codice rimanga coerente con la progettazione convalidando il codice con un diagramma livello. È anche possibile includere la convalida dei livelli nel processo di compilazione. Visualizzare [Video di Channel 9: progettazione e convalidare l'architettura utilizzando i diagrammi livello](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

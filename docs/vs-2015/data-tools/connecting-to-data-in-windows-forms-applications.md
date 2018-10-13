@@ -1,7 +1,7 @@
 ---
 title: Connessione ai dati in Windows Forms Application | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,12 +42,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: d1132ee07e892886e49fbaa4670b309afc448da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8da35b32f3dd25bd7ed47b25f722c6b0aa21ac7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208949"
 ---
 # <a name="connecting-to-data-in-windows-forms-applications"></a>Connessione ai dati nelle applicazioni Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ ms.locfileid: "47532038"
   
 |Azione|Descrizione|  
 |------------|-----------------|  
-|Eseguire la [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).|Le connessioni vengono configurate quando si sceglie il percorso del database nel **configurazione guidata origine dati**. Per altre informazioni, vedere [procedura: connettersi ai dati in un Database](../data-tools/how-to-connect-to-data-in-a-database.md).|  
+|Eseguire la [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).|Le connessioni vengono configurate quando si sceglie il percorso del database nel **configurazione guidata origine dati**. Per altre informazioni, vedere [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).|  
 |Eseguire la [configurazione guidata TableAdapter](http://msdn.microsoft.com/library/3a373dd9-7b34-4d3c-a48b-69414512bac8).|Le connessioni vengono create all'interno di **configurazione guidata TableAdapter**. Per altre informazioni, vedere [creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).|  
 |Eseguire la [modifica di TableAdapter](../data-tools/editing-tableadapters.md).|Le connessioni vengono create all'interno di **configurazione guidata Query TableAdapter**. Per altre informazioni, vedere [procedura: creare query TableAdapter](../data-tools/how-to-create-tableadapter-queries.md).|  
 |Trascinare gli elementi dal [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) in un form o nella [Component Designer](http://msdn.microsoft.com/library/61a3a450-5b15-465e-bd9a-72a6c8c2b282).|Oggetti connessione vengono creati quando si trascinano elementi dal **Zdroje dat** finestra nel **progettazione form di Windows** oppure **Component Designer**. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).|  

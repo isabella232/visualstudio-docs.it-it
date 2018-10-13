@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Visualizzare, salvare e configurare file di log di compilazione | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d30e2b571e0a46afa10c8100085e6c23513159e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26ece0c0d46e5c747ac05bae8c2d4fc793c34601
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532142"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207402"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: visualizzare, salvare e configurare file di log di compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: visualizzazione, salvare e configurare file di Log di compilazione](https://docs.microsoft.com/visualstudio/ide/how-to-view-save-and-configure-build-log-files).  
-  
 Dopo aver compilato un progetto nell'IDE di Visual Studio, è possibile visualizzare informazioni sulla compilazione nella finestra **Output**. Usando queste informazioni è possibile ad esempio risolvere un errore di compilazione. Per i progetti C++ è possibile visualizzare le stesse informazioni anche in un file con estensione txt creato e salvato automaticamente. Per i progetti di codice gestito è possibile copiare e incollare le informazioni dalla finestra **Output** in un file con estensione txt e salvarlo manualmente. È anche possibile usare l'IDE per specificare i tipi di informazioni da visualizzare per ogni compilazione.  
   
  Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un file con estensione txt per salvare le informazioni sulla compilazione. Per altre informazioni, vedere [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md).  
