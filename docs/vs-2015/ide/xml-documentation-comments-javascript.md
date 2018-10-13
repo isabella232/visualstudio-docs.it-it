@@ -1,7 +1,7 @@
 ---
 title: Commenti della documentazione XML (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5accfb63d33a028048c9715cfe9cdf728a5db2d
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 26d690948378998f83d4fe6c8f909ffca1d3df8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225628"
 ---
 # <a name="xml-documentation-comments-javascript"></a>Commenti relativi alla documentazione XML (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [documentazione di Visual Studio 2017](/visualstudio/).  
-  
 In JavaScript è possibile creare la documentazione relativa al codice includendo i tag XML nei campi di commento speciali nel codice sorgente. Questi tag XML vengono utilizzati da IntelliSense per fornire informazioni sugli oggetti JavaScript.  
   
  La posizione dei commenti del codice varia a seconda del tag specifico.  

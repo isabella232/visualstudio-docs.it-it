@@ -1,7 +1,7 @@
 ---
 title: Idiaenumframedata | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37e9d695c70a3b69357f9d40315ed2359a52fc2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09664b3a91a2836b578d0c117ec92fa7cb2aad21
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518318"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267765"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Idiaenumframedata](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumframedata-next).  
-  
 Recupera un determinato numero di elementi di dati di intervallo nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  

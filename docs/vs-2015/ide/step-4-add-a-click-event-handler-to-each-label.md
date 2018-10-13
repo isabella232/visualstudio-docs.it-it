@@ -1,7 +1,7 @@
 ---
 title: 'Passaggio 4: Aggiungere un gestore degli eventi Click a ogni etichetta | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92b6e04ef903c1fa6cf7e94b04874e2d6048acd1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252031"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Passaggio 4: aggiungere un gestore degli eventi Click a ogni etichetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [passaggio 4: aggiungere un gestore eventi Click a ogni etichetta](https://docs.microsoft.com/visualstudio/ide/step-4-add-a-click-event-handler-to-each-label).  
-  
 Il gioco delle coppie funziona come segue:  
   
 1.  Quando un giocatore sceglie uno dei quadrati con un'icona nascosta, il programma mostra l'icona al giocatore facendola diventare nera.  

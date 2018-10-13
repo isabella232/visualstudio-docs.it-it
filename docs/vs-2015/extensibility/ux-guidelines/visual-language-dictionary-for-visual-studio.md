@@ -1,7 +1,7 @@
 ---
 title: Dizionario del linguaggio visivo per Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267631"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Dizionario del linguaggio visivo per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [dizionario del linguaggio Visual per Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio).  
-  
 Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono i blocchi predefiniti di relativo visualizzato e altre immagini. Quando si progetta nuove icone, usare questo dizionario per identificare i concetti che si desidera trasmettere in un'immagine personalizzata.  
   
  **Linee guida generali**  
@@ -297,7 +295,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 |**Popout**|![Icona POP](../../extensibility/ux-guidelines/media/vld-c-popout.png "VLD_C_PopOut")|![Icona POP](../../extensibility/ux-guidelines/media/vld-c-popout-popin.png "VLD_C_PopOut_PopIn") Popin|  
 |**Potenza**|![Icona di alimentazione](../../extensibility/ux-guidelines/media/vld-c-power.png "VLD_C_Power")|![Icona gruppi di continuità](../../extensibility/ux-guidelines/media/vld-c-power-uninterruptiblepowersupply.png "VLD_C_Power_UninterruptiblePowerSupply") di continuità|  
 |**Precedente**|![Icona Indietro](../../extensibility/ux-guidelines/media/vld-c-previous.png "VLD_C_Previous")|![Icona segnalibro precedente](../../extensibility/ux-guidelines/media/vld-c-previous-previousbookmark.png "VLD_C_Previous_PreviousBookmark") precedente segnalibro ![icona Indietro Find](../../extensibility/ux-guidelines/media/vld-c-previous-findprevious.png "VLD_C_Previous_FindPrevious") trovare precedente|  
-|**Stampa**|![Icona della stampante](../../extensibility/ux-guidelines/media/vld-c-print.png "VLD_C_Print")|![Icona della stampante diretto](../../extensibility/ux-guidelines/media/vld-c-print-printdirect.png "VLD_C_Print_PrintDirect") stampa diretta ![icona finestra di dialogo Stampa](../../extensibility/ux-guidelines/media/vld-c-print-printdialog.png "VLD_C_Print_PrintDialog") finestra di dialogo Stampa ![stampa icona del controllo documento](../../extensibility/ux-guidelines/media/vld-c-print-printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl") controllo documenti di stampa|  
+|**Print**|![Icona della stampante](../../extensibility/ux-guidelines/media/vld-c-print.png "VLD_C_Print")|![Icona della stampante diretto](../../extensibility/ux-guidelines/media/vld-c-print-printdirect.png "VLD_C_Print_PrintDirect") stampa diretta ![icona finestra di dialogo Stampa](../../extensibility/ux-guidelines/media/vld-c-print-printdialog.png "VLD_C_Print_PrintDialog") finestra di dialogo Stampa ![stampa icona del controllo documento](../../extensibility/ux-guidelines/media/vld-c-print-printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl") controllo documenti di stampa|  
 |**Procedure** finestra interattiva|![Icona routine](../../extensibility/ux-guidelines/media/vld-c-procedure.png "VLD_C_Procedure")|![Icona finestra interattiva di Python](../../extensibility/ux-guidelines/media/vld-c-procedure-pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow") finestra interattiva di Python ![icona di avviso di routine](../../extensibility/ux-guidelines/media/vld-c-procedure-procedurewarning.png "VLD_C_Procedure_ ProcedureWarning") avviso di routine ![icona di Stored procedure](../../extensibility/ux-guidelines/media/vld-c-procedure-storedprocedure.png "VLD_C_Procedure_StoredProcedure") Stored procedure|  
 |**Proprietà** impostazioni, configurazioni|![Icona della proprietà](../../extensibility/ux-guidelines/media/vld-c-property.png "VLD_C_Property")|![Icona della proprietà componente](../../extensibility/ux-guidelines/media/vld-c-property-addproperty.png "VLD_C_Property_AddProperty") aggiungere proprietà ![icona di avviso di proprietà estese](../../extensibility/ux-guidelines/media/vld-c-property-extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning") Proprietà-estesa avviso ![icona nuova proprietà](../../extensibility/ux-guidelines/media/vld-c-property-newproperty.png "VLD_C_Property_NewProperty") nuova proprietà|  
   

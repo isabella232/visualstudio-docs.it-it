@@ -1,7 +1,7 @@
 ---
 title: Limitazioni del debug degli Script | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aebdb57d9a242280be82e04c2a550159cba985d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f597cad06870f23b7481f0375c9eb3abb550e4e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251110"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitazioni del debug di script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [limitazioni del debug degli Script](https://docs.microsoft.com/visualstudio/debugger/limitations-on-script-debugging).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta il debug di script lato client, soggetto alle limitazioni trattate in questo argomento.  
   
 ## <a name="limitations-on-breakpoint-mapping-with-client-side-script"></a>Limitazioni sul mapping dei punti di interruzione con script lato client  

@@ -1,7 +1,7 @@
 ---
 title: Caricamento dei documenti ritardato | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3469484518a4d802c8fc0de11a32533fa429d3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67fe53cefe3d128869d53592bf3e5c42a9d27a4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240916"
 ---
 # <a name="delayed-document-loading"></a>Caricamento dei documenti ritardato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [caricamento del documento ritardato](https://docs.microsoft.com/visualstudio/extensibility/internals/delayed-document-loading).  
-  
 Quando un utente riapre una soluzione di Visual Studio, è possibile che la maggior parte dei documenti associati non vengono caricata contemporaneamente. La cornice della finestra documento viene creata in uno stato in sospeso-initialization, e un documento di segnaposto (denominato frame dello stub) viene inserito nel documento di tabella in esecuzione (RDT).  
   
  L'estensione può causare i documenti di progetto da caricare inutilmente eseguendo una query di elementi nei documenti prima che vengano caricati. Questo può accrescere il footprint di memoria complessiva per Visual Studio.  

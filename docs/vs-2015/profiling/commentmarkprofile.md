@@ -1,7 +1,7 @@
 ---
 title: CommentMarkProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5d22de9eb9ad8294a77424cc98b5d3cf35735ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a64b4a1510e92fee6fe881580681bd5c7c5200c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519562"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245921"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [CommentMarkProfile](https://docs.microsoft.com/visualstudio/profiling/commentmarkprofile).  
-  
 La funzione `CommentMarkProfile` inserisce un indicatore numerico e una stringa di testo nel file VSP. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione `CommentMarkProfile`.  
   
 ## <a name="syntax"></a>Sintassi  

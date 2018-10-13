@@ -1,7 +1,7 @@
 ---
 title: Supporto per la barra di spostamento in un servizio di linguaggio Legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e62ac19a42877c1c7c995ffd3d416b5225514b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532010"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267371"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [supporto per la barra di spostamento in un servizio di linguaggio Legacy](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service).  
-  
 Barra di spostamento nella parte superiore della visualizzazione dell'editor consente di visualizzare i tipi e membri nel file. I tipi vengono visualizzati nell'elenco a tendina a sinistra e i membri vengono visualizzati in destra elenco a discesa. Quando l'utente seleziona un tipo, il cursore viene posizionato nella prima riga del tipo. Quando l'utente seleziona un membro, il cursore viene posizionato sulla definizione del membro. Le caselle di riepilogo a discesa vengono aggiornate per riflettere il percorso corrente del punto di inserimento.  
   
 ## <a name="displaying-and-updating-the-navigation-bar"></a>Visualizzazione e l'aggiornamento la barra di spostamento  

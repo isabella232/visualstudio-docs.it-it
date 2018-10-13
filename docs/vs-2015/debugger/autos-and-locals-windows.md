@@ -1,14 +1,14 @@
 ---
 title: Auto e variabili locali Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 877d145f83ce15cd5c1bb49b607519888ad0e96b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519243"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191321"
 ---
 # <a name="autos-and-locals-windows"></a>Finestre Auto e Variabili locali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [esaminare le variabili nel Debugger di Visual Studio](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows).  
-  
 La finestra **Auto** (durante il debug, **CTRL+ALT+V, A**oppure **Debug / Finestre / Auto**) e la finestra **Variabili locali** (durante il debug, **CTRL+ALT+V, L**oppure **Debug / Finestre / Variabili locali**) sono molto utili quando è necessario vedere i valori variabili durante le operazioni di debug. La finestra **Variabili locali** mostra le variabili definite nell'ambito locale, che corrisponde in genere alla funzione o al metodo attualmente in esecuzione. La finestra **Auto** mostra le variabili usate attorno alla riga corrente (il punto in cui il debugger viene arrestato). Le variabili effettivamente visualizzate variano in base al linguaggio. Vedere quali variabili vengono visualizzate nella finestra Auto? di seguito.  
   
  Per altre informazioni sul debug di base, vedere [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  

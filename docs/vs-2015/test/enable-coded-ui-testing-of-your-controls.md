@@ -1,7 +1,7 @@
 ---
 title: Abilitare il test codificato dell'interfaccia utente per i controlli | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 316c8e80a1ccfd95ea83114092604e1542292a05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247871"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Abilitare il test codificato dell'interfaccia utente per i controlli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [abilitare test codificati dell'interfaccia utente test di per i controlli](https://docs.microsoft.com/visualstudio/test/enable-coded-ui-testing-of-your-controls).  
-  
 Il controllo può essere testato più facilmente se si implementa il supporto per il framework dei test codificati dell'interfaccia utente. È possibile aggiungere gradualmente livelli crescenti di supporto. Si può iniziare supportando la registrazione, la riproduzione e la convalida delle proprietà. Sarà quindi possibile consentire al generatore di test codificati dell'interfaccia utente di riconoscere le proprietà personalizzate del controllo, nonché fornire classi personalizzate per accedere a tali proprietà dal codice generato. È anche possibile consentire al generatore di test codificati dell'interfaccia utente di acquisire le azioni nella modalità che più si avvicina di più allo scopo dell'azione registrata.  
   
  **Contenuto dell'argomento:**  

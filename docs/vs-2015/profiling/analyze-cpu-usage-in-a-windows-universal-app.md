@@ -1,7 +1,7 @@
 ---
 title: Analizzare l'utilizzo della CPU in un'app universale di Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f57fdf99c6ccb19c6d8add600943d799d3a28ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250718"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analizzare l'utilizzo della CPU in un'app universale di Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analizzare l'utilizzo della CPU in un'App di Windows universale](https://docs.microsoft.com/visualstudio/profiling/analyze-cpu-usage-in-a-windows-universal-app).  
-  
 Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, è consigliabile partire dall'analisi dell'utilizzo della CPU. Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice. Per concentrare l'attenzione su scenari specifici, utilizzo CPU può essere eseguito con il [velocità di risposta UI XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) dello strumento, il [consumo di energia](../profiling/analyze-energy-use-in-store-apps.md) strumento, o entrambi gli strumenti in un'unica sessione di diagnostica.  

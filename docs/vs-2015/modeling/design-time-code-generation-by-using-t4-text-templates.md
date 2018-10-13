@@ -1,7 +1,7 @@
 ---
 title: Generazione di codice in fase di progettazione tramite modelli di testo T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 12551e10640b522f1405cb6a4fa0476f4f7b48c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268333"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [generazione di codice in fase di progettazione tramite modelli di testo T4](https://docs.microsoft.com/visualstudio/modeling/design-time-code-generation-by-using-t4-text-templates).  
-  
 I modelli di testo T4 in fase di progettazione permettono di generare codice programma e altri file nel progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In genere, i modelli sono scritti in modo da variare il codice in cui vengono generate in base ai dati da un *modello*. Un modello è un file o un database che include informazioni chiave sui requisiti dell'applicazione.  
   
  È ad esempio possibile usare un modello per definire un flusso di lavoro come tabella o diagramma. Dal modello è possibile generare il software che esegue il flusso di lavoro. In caso di modifica dei requisiti utente, la definizione del nuovo flusso di lavoro con gli utenti risulta molto semplice. La rigenerazione di codice dal flusso di lavoro è più attendibile dell'aggiornamento manuale del codice.  

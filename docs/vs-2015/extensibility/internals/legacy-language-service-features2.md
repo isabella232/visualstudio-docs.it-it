@@ -1,7 +1,7 @@
 ---
 title: Features2 servizio di linguaggio legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c81d96285eca1401b3ddc5345f75640b6facc3bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e815790cd485c729d5c58847f5a244c8689d3ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246637"
 ---
 # <a name="legacy-language-service-features"></a>Funzionalità del servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Features2 servizio di linguaggio Legacy](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-features2).  
-  
 I seguenti argomenti elencano alcune delle funzionalità del servizio di linguaggio legacy che è possibile fornire.  
   
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare un servizio di linguaggio, vedere [Editor e le estensioni del servizio di linguaggio](../../extensibility/editor-and-language-service-extensions.md).  

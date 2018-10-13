@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdefeb0589e926554d0bec2b33a954821ce5d979
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ab2c5bbea358c226407ba83e2a367195ecfef06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520248"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270610"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: creare un'applicazione Desktop WPF connessa a un servizio Mobile di Azure](https://docs.microsoft.com/visualstudio/designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service).  
-  
 È possibile usare Windows Presentation Foundation (WPF) per creare rapidamente un'applicazione desktop moderna che usa un servizio mobile di Azure per archiviare e fornire i dati.  
   
 ##  <a name="Requirements"></a> Prerequisiti  

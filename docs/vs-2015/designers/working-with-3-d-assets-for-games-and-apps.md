@@ -1,7 +1,7 @@
 ---
 title: Utilizzo di risorse 3D per giochi e app | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48082153e92a280745d649a23454f6c3870302dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265233"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Utilizzo di risorse tridimensionali per giochi e app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [utilizzo di risorse 3D per giochi e app](https://docs.microsoft.com/visualstudio/designers/working-with-3-d-assets-for-games-and-apps).  
-  
 Questo documento descrive gli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che è possibile usare per creare o modificare modelli 3D, trame e shader per app e giochi DirectX.  
   
 ## <a name="directx-app-development-in-visual-studio"></a>Sviluppo di app DirectX in Visual Studio  

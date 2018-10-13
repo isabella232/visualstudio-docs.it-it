@@ -1,7 +1,7 @@
 ---
 title: Elementi di un modello di progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3c26bb501e28c324233e4991fc8023b2adcdcf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248560"
 ---
 # <a name="elements-of-a-project-model"></a>Elementi di un modello di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elementi di un modello di progetto](https://docs.microsoft.com/visualstudio/extensibility/internals/elements-of-a-project-model).  
-  
 Le interfacce e implementazioni di tutti i progetti in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] condividono una struttura di base: il modello di progetto per il tipo di progetto. Nel modello di progetto che è il pacchetto VSPackage si sta sviluppando, è creare oggetti conformi alle decisioni di progettazione e funziona con la funzionalità globale fornita dall'IDE. Anche se si controllano come viene mantenuto un elemento del progetto, ad esempio, non si controlla la notifica che un file deve essere persistente. Quando un utente inserisce lo stato attivo su un elemento di progetto aperto e sceglie **salvare** nel **File** menu nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] menu barra, il codice del tipo di progetto devono intercettare il comando dall'IDE, il file della e Invia notifica all'IDE che non sono più viene modificato il file.  
   
  Il pacchetto VSPackage interagisce con l'IDE tramite i servizi che forniscono l'accesso alle interfacce di IDE. Ad esempio, tramite il servizio specifico, di monitoraggio e la route comandi e si forniscono informazioni sul contesto per le selezioni effettuate nel progetto. Tutte le funzionalità IDE globale necessari per il pacchetto VSPackage sono fornita da servizi. Per altre informazioni sui servizi, vedere [procedura: ottenere un servizio](../../extensibility/how-to-get-a-service.md).  

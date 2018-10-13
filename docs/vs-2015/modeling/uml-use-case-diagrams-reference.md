@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammi caso di utilizzo UML: Riferimento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2bc0d23a1404925183af00ab710a422639e51654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256308"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagrammi casi d'uso UML: riferimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [diagrammi caso d'uso UML: riferimento](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-reference).  
-  
 In Visual Studio, un *diagramma caso di utilizzo* riepiloga gli utenti che utilizzano l'applicazione o il sistema e ciò che è possibile eseguire. Per creare un diagramma caso di utilizzo UML nel **Architecture** menu, fare clic su **nuovo diagramma livello o UML**.  
   
  Un diagramma caso di utilizzo è incentrato sulla descrizione dei requisiti dell'utente. Illustra le relazioni tra requisiti, utenti e componenti principali. Non descrive però i requisiti in dettaglio, i quali vengono illustrati in diagrammi o documenti separati da poter collegare a ogni caso di utilizzo. Per informazioni su come diagrammi casi d'uso consentono di comprendere, illustrare e comunicare le esigenze degli utenti, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  

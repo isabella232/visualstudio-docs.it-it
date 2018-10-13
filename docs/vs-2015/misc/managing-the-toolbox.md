@@ -1,7 +1,7 @@
 ---
 title: La gestione della casella degli strumenti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,29 +15,29 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: fa9b30429de00f950e4d9de160fe72ece7f06760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517350"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254411"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
-Il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] consente a un VSPackage, ad esempio un editor o finestra di progettazione per gestire l'appartenenza e l'aspetto del **casella degli strumenti**.  
+[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] consente a un pacchetto VSPackage, ad esempio un editor o una finestra di progettazione, di gestire l'appartenenza e l'aspetto della **casella degli strumenti**.  
   
- La **casella degli strumenti** può inoltre essere gestita usando l'automazione. Per altre informazioni sulla gestione di una casella degli strumenti tramite l'automazione, vedere [procedura: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ La **casella degli strumenti** può inoltre essere gestita usando l'automazione. Per altre informazioni sulla gestione di una casella degli strumenti tramite l'automazione, vedere [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Selezione automatica della scheda della casella degli strumenti  
  Una scheda o una categoria specifica della **casella degli strumenti** può essere impostata automaticamente come attiva in base alla finestra di progettazione o all'editor attualmente attivo. Ad esempio, se è attivata una finestra di progettazione di form, si potrebbe voler impostare come attiva la scheda **Tutti i Windows Form** .  
   
  Questo supporto è limitato a editor e finestre di progettazione che richiedono:  
   
-1.  L'implementazione di un oggetto factory per fornire istanze dell'editor o della finestra di progettazione. Per altre informazioni sull'implementazione di un oggetto factory dell'editor o finestra di progettazione, vedere [factory dell'Editor](../extensibility/editor-factories.md).  
+1.  L'implementazione di un oggetto factory per fornire istanze dell'editor o della finestra di progettazione. Per altre informazioni sull'implementazione di un oggetto factory della finestra di progettazione o dell'editor, vedere [Editor Factories](../extensibility/editor-factories.md).  
   
 2.  La registrazione della scheda della casella degli strumenti che è attivata automaticamente se è presente l'editor o la finestra di progettazione.  
   
 ## <a name="controlling-the-toolbox"></a>Controllo della casella degli strumenti  
- Integrando il supporto per automazione, il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornisce le interfacce seguenti per offrire i pacchetti VSPackage un maggiore controllo sulla gestione della **casella degli strumenti** è gestito.  
+ Integrando il supporto per l'automazione, [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornisce le interfacce seguenti per offrire ai pacchetti VSPackage un maggiore controllo sulla gestione della **casella degli strumenti** .  
   
 |Interfaccia|Descrizione|  
 |---------------|-----------------|  

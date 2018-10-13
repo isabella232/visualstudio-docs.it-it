@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findInlineeLinesByRVA | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61c2c9862096ee727b02350c16c1793e26f765ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ae95f0ef1c1487f365a533712d94e6d3f34850d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532020"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210080"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [IDiaSymbol::findInlineeLinesByRVA](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findinlineelinesbyrva).  
-  
 Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni sul numeri di riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale relativo specificato (RVA).  
   
 ## <a name="syntax"></a>Sintassi  

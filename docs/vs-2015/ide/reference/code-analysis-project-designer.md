@@ -1,7 +1,7 @@
 ---
 title: Analisi del codice, Creazione progetti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25419c9dbee9b4a41522c8314a0b4198df62c6a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e2af505b7cf5700a521903a873c117c7daf4681
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245167"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [analisi del codice, Progettazione progetti](https://docs.microsoft.com/visualstudio/ide/reference/code-analysis-project-designer).  
-  
   
 Contiene lo strumento di analisi del codice che è possibile scegliere di eseguire nel codice. Lo strumento restituisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET Framework.  
   

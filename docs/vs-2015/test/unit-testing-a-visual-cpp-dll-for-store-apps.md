@@ -1,7 +1,7 @@
 ---
 title: Esecuzione di unit test di una DLL di Visual C++ per le app dello Store | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 6396fccd3e0203e90c38936c53016810803a1975
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244361"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Testing unità di una DLL di Visual C++ per le app dello Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Unit test di una DLL di Visual C++ per le app di Store](https://docs.microsoft.com/visualstudio/test/unit-testing-a-visual-cpp-dll-for-store-apps).  
-  
 Questo argomento descrive come creare unit test per una DLL in C++ per app di Windows Store. La DLL RooterLib ricorda vagamente la teoria dei limiti di calcolo, implementando una funzione che calcola una stima della radice quadrata di un numero specificato. La DLL può quindi essere inclusa in un'app di Windows Store che mostra a un utente il lato divertente della matematica.  
   
  Questo argomento illustra come usare unit test come primo passaggio dell'attività di sviluppo Secondo questo approccio devi innanzitutto scrivere un metodo di test che verifica il comportamento specifico del sistema che stai testando, quindi scriverai il codice che supera il test. Apportando modifiche nell'ordine in cui sono presentate le procedure riportate di seguito, è possibile invertire questa strategia scrivendo prima il codice da testare e quindi gli unit test.  

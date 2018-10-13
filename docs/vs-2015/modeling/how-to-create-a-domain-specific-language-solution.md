@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: creare una soluzione Domain-Specific Language | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 305360700463f1b5379f711598e6eed31c1de36c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223217"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: creare una soluzione di linguaggio specifico di dominio](https://docs.microsoft.com/visualstudio/modeling/how-to-create-a-domain-specific-language-solution).  
-  
 Un linguaggio specifico di dominio (DSL) viene creato usando un specializzato [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soluzione.  
   
 ## <a name="prerequisites"></a>Prerequisiti  

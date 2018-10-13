@@ -1,7 +1,7 @@
 ---
 title: Distribuzione di un processore di direttiva personalizzato | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d95aae0908a4e1e2ba72e860d56ec975b051f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251953"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [distribuzione di un processore di direttiva personalizzato](https://docs.microsoft.com/visualstudio/modeling/deploying-a-custom-directive-processor).  
-  
 Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in un computer qualsiasi, è necessario registrarlo da uno dei metodi descritti in questo argomento.  
   
  I metodi alternativi sono i seguenti:  
@@ -159,7 +157,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
  Verificare che il file .pkgdef venga visualizzato nella cartella di compilazione, che in genere è bin\Debug o bin\Release. Se non è visualizzato, aprire il file .csproj in un editor di testo e rimuovere il nodo seguente: `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.  
   
- Per altre informazioni, vedere [VSPackage](../extensibility/internals/vspackages.md).  
+ Per altre informazioni, vedere [VSPackages](../extensibility/internals/vspackages.md).  
   
 ## <a name="setting-a-registry-key"></a>Impostazione di una chiave di Registro di sistema  
  Questo metodo per installare un processore di direttiva personalizzato è il meno preferito. Non fornisce un modo comodo per abilitare e disabilitare il processore di direttiva e non fornisce un metodo per distribuire il processore di direttiva ad altri utenti.  

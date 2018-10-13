@@ -1,7 +1,7 @@
 ---
 title: Scenari di installazione di pacchetti VSPackage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b88dcef6eebe552c23268cb307248956db5486b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 819f6b9a1da5979e3e9647d6a0773d741f13e945
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519212"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253058"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenari di installazione di pacchetti VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [scenari di installazione di VSPackage](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-setup-scenarios).  
-  
 È importante progettare il programma di installazione di VSPackage per la flessibilità. Ad esempio, potrebbe essere necessario rilasciare una patch di sicurezza in futuro oppure è possibile modificare una strategia di business che richiede il supporto del controllo delle versioni side-by-side completa.  
   
  Nelle [supporto di più versioni di Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md), è possibile leggere sui vantaggi e i problemi di supportare le installazioni side-by-side di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] le installazioni dei componenti condivisi o side-by-side di un VSPackage. In breve, i pacchetti VSPackage side-by-side offrono la massima flessibilità per supportare nuove funzionalità di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  

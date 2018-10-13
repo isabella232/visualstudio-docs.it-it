@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: impostare punti di interruzione nei flussi di lavoro (Legacy) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ac587b238d52e8955a4fe70cabc89444b39c712d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 158592ccef331c541bf27494856cfa1314b21f88
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252551"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procedura: impostare punti di interruzione nei flussi di lavoro (legacy)
 In questo argomento viene descritto come impostare punti di interruzione nelle applicazioni [!INCLUDE[wf](../includes/wf-md.md)] usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando l'applicazione [!INCLUDE[wf2](../includes/wf2-md.md)] deve fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

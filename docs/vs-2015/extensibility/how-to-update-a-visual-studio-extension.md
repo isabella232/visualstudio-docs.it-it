@@ -1,7 +1,7 @@
 ---
 title: "Procedura: aggiornare un'estensione di Visual Studio | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3675b8f342601ee3b79169a6c39e849686d7c12e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d86f723ae4c9acc64dfe7643552b9a74b78963
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254904"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Procedura: aggiornare un'estensione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: aggiornare un'estensione di Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/how-to-update-a-visual-studio-extension).  
-  
 È possibile aggiornare un'estensione di Visual Studio nel sistema mediante **estensioni e aggiornamenti** per installare la versione aggiornata. Se si crea una versione aggiornata di un'estensione, è possibile segnalare l'aggiornamento incrementando il numero di versione nel manifesto VSIX.  
   
  Gli aggiornamenti vengono installati quando il manifesto VSIX dell'estensione in ingresso con lo stesso `ID` come un valore più alto e quello installato `Version` numero. Se il `Version` numero è uguale o inferiore, il pacchetto non può essere installato. Se il `ID` valori non corrispondono, il pacchetto che non è ancora installato è riconosciuto come un'estensione separata.  

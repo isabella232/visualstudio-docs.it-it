@@ -1,7 +1,7 @@
 ---
 title: Le funzionalità di VSPackage di controllo di origine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93c2da699e0b40152442d38c4510e2a8c8ed5b54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b3ed1b616225bc1ea0e0f01d3a37a34a492a493
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527282"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246773"
 ---
 # <a name="source-control-vspackage-features"></a>Funzionalità dei pacchetti VSPackage di controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [funzionalità di VSPackage di controllo del codice sorgente](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-features).  
-  
 Questa sezione descrive le varie caratteristiche di un pacchetto VSPackage di controllo di origine. Descrive la registrazione e selezione dettagli per questo tipo di un VSPackage e vengono illustrate tre delle funzionalità relativa ai controlli origine principale: è possibile gestire gli eventi Query Edit Query Save (QEQS), di sostituzione di glifi e interfaccia utente personalizzata (UI) per il controllo del codice sorgente funzioni.  
   
 ## <a name="in-this-section"></a>In questa sezione  

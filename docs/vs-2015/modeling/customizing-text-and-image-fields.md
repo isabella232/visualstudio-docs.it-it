@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione dei campi testo e immagine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271128"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizzazione dei campi testo e immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [personalizzazione dei campi testo e immagine](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields).  
-  
 Quando si definisce un elemento decorator di testo in una forma, è rappresentato da un TextField. Per esempi dell'inizializzazione di TextFields e altri ShapeFields, esaminare Dsl\GeneratedCode\Shapes.cs alla soluzione DSL.  
   
  Un TextField non è un oggetto che gestisce un'area all'interno di una forma, ad esempio lo spazio assegnato a un'etichetta. Un'istanza di TextField viene condiviso tra molte forme della stessa classe. L'istanza TextField non archivia il testo dell'etichetta separatamente per ogni istanza: invece di `GetDisplayText(ShapeElement)` assume la forma come parametro di metodo e possibile cercare il testo dipendono dallo stato corrente della forma e il relativo elemento modello.  

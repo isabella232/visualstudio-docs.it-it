@@ -1,7 +1,7 @@
 ---
 title: 'DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efe023f54e32932dc53f65acd702d928d65e8aa9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532499"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269581"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [DA0018: applicazione a 32 bit in esecuzione nel processo di limite di memoria gestito](https://docs.microsoft.com/visualstudio/profiling/da0018-32-bit-application-running-at-process-managed-memory-limits).  
-  
 Id regola | DA0018 |  
 | Categoria | Utilizzo degli strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  

@@ -1,7 +1,7 @@
 ---
 title: Panoramica del multitargeting di Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277069"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Cenni preliminari sul multitargeting di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Visual Studio Cenni preliminari sul multitargeting](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview).  
-  
 In questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile specificare la versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] necessaria per l'applicazione. Pertanto, se si intende usare questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per continuare a sviluppare un progetto che è stato avviato in una versione precedente, non è necessario modificare la destinazione del framework. È anche possibile creare una soluzione contenente progetti destinati a versioni diverse del framework. La definizione della destinazione del framework consente anche di garantire che l'applicazione usi solo le funzionalità disponibili nella versione specificata del framework.  
   
 > [!TIP]

@@ -1,7 +1,7 @@
 ---
 title: Notifica della porta | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81b27b4da563c01c809203690c05702530f58416
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517293"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263549"
 ---
 # <a name="notifying-the-port"></a>Notifica della porta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [notifica della porta](https://docs.microsoft.com/visualstudio/extensibility/debugger/notifying-the-port).  
-  
 Dopo aver avviato un programma, la porta deve ricevere una notifica, come indicato di seguito:  
   
 1.  Quando una porta riceve un nuovo nodo di programma, invia un evento di creazione del programma tornare alla sessione di debug. L'evento è caratterizzata da un'interfaccia che rappresenta il programma.  

@@ -1,7 +1,7 @@
 ---
 title: IDebugCanStopEvent2::CanStop | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65095961510bd80758cbf94c4d9aa8811f61a9fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32fae422d0f8b16bef91dbdd28471456648c1df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247249"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [IDebugCanStopEvent2::CanStop](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcanstopevent2-canstop).  
-  
 Notifica al motore di debug (DE) per interrompere in corrispondenza della posizione di codice corrente o semplicemente continuare l'esecuzione o meno.  
   
 ## <a name="syntax"></a>Sintassi  

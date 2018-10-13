@@ -1,7 +1,7 @@
 ---
 title: Supporto a 64 bit per IDE di Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3215cccf956e0d9c4bf80e70dfa377eef823283d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89ccc29b35c7495857d54c5baa4ea6b0667ae5fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259779"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Supporto a 64 bit per IDE di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [supporto di Visual Studio IDE 64-Bit](https://docs.microsoft.com/visualstudio/ide/visual-studio-ide-64-bit-support).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di configurare le applicazioni per diverse piattaforme di destinazione, tra cui le piattaforme a 64 bit. Per altre informazioni sul supporto delle piattaforme a 64 bit in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vedere [Applicazioni a 64 bit](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="deploying-a-64-bit-application"></a>Distribuzione di un'applicazione a 64 bit  

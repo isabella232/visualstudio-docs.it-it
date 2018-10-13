@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: specificare i file da pubblicare mediante ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c56d378c8adee1801fb82fc4a2ed84e5b05c0aef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268320"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: specificare i file da pubblicare mediante ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: specificare quale file da pubblicare mediante ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-which-files-are-published-by-clickonce).  
-  
 Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i file di applicazione, tutte le non di codice nel progetto vengono distribuiti insieme all'applicazione. In alcuni casi, si potrebbe non desidera che la pubblicazione di determinati file o che si desidera installare determinati file in base alle condizioni. Visual Studio offre le funzionalità per escludere i file, contrassegnarli come file di dati o prerequisiti e creare gruppi di file per l'installazione condizionale.  
   
  I file da un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione vengono gestiti nel **i file dell'applicazione** finestra di dialogo, accessibile dal **pubblica** pagina del **Progettazione progetti**.  

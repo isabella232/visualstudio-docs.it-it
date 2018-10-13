@@ -1,7 +1,7 @@
 ---
 title: IDebugLoadCompleteEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 276740390bf1307e695b24527839cf6aa9f11369
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fab0f340c4ef1598acde844f3af6b0e3a5cbf304
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258193"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [IDebugLoadCompleteEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugloadcompleteevent2).  
-  
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando viene caricato un programma, ma prima che venga eseguito qualsiasi codice.  
   
 ## <a name="syntax"></a>Sintassi  

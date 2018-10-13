@@ -1,7 +1,7 @@
 ---
 title: Init | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d394ce2f149be842b42ffe4661cfbc361858bd71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a630906fa2a23a87853e8a835f155cda3ec06ecc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527479"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252395"
 ---
 # <a name="init"></a>Init
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Init](https://docs.microsoft.com/visualstudio/debugger/graphics/init).  
-  
 Prepara il componente di diagnostica della grafica integrato nell'applicazione per acquisire e registrare attivamente le informazioni grafiche in un file di log di grafica.  
   
 ## <a name="syntax"></a>Sintassi  

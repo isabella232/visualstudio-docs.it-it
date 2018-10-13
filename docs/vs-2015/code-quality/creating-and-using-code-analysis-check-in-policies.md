@@ -1,7 +1,7 @@
 ---
 title: Creazione e utilizzo di criteri di controllo dell'analisi del codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238355"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Creazione e utilizzo di criteri di archiviazione di analisi codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione e uso analisi codice Check-In Criteri](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies).  
-  
 Quando si usa Team Foundation Version Control (TFVC), è possibile creare un criterio di controllo dell'analisi codice per .NET Framework e progetti di codice nativi (C/C++) in un progetto team. È possibile usare i criteri di controllo dell'analisi codice per controllare e migliorare la qualità del codice che viene archiviato nella codebase.  
   
  I criteri vengono soddisfatti quando la compilazione locale è aggiornata e l'analisi del codice è stato eseguito nel file di origine più recente. Come minimo, le regole di analisi codice abilitate nel progetto di codice devono contenere le stesse regole di quelli definiti nel check-in Criteri di progetto team. Le regole che sono state specificate come errori nelle impostazioni del progetto Team devono essere specificate anche come errori nel progetto di codice  

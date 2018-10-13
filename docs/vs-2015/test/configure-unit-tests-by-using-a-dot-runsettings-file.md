@@ -1,7 +1,7 @@
 ---
 title: Configurare unit test usando un file con estensione runsettings | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e071364a6aaf7e83c554200548574c52b9b49ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528549"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255619"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurazione di unit test usando un file con estensione runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [configurare gli unit test usando un file con estensione RunSettings](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).  
-  
 Gli unit test in Visual Studio possono essere configurati usando un file di tipo *.runsettings. Il nome file non è rilevante, purché si usi l'estensione "runsettings". Ad esempio, è possibile modificare la versione di .NET Framework in cui vengono eseguiti i test, la directory in cui vengono recapitati i risultati e i dati raccolti durante l'esecuzione dei test.  
   
  Se non si vogliono eseguire configurazioni particolari, non sarà necessario alcun file di tipo *.runsettings. L'opzione più frequente consiste nel personalizzare il [code coverage](../test/customizing-code-coverage-analysis.md).  

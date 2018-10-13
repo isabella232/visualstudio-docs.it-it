@@ -1,7 +1,7 @@
 ---
 title: Tramite l'agente di raccolta autonomo IntelliTrace | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c17850ebbbd8a7031bc1380bc4e651d0f9dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527688"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267475"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Uso dell'agente di raccolta autonomo IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [usando l'agente di raccolta autonomo IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
 L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati diagnostici di IntelliTrace per le app nei server di produzione o in altri ambienti senza installare Visual Studio nel computer di destinazione e senza cambiare l'ambiente del sistema di destinazione. L'agente di raccolta autonomo IntelliTrace funziona nelle app Web, SharePoint, WPF e Windows Form. Al termine della raccolta dei dati, eliminare semplicemente l'agente di raccolta per disinstallarlo.  
   
  IntelliTrace in azione: [Raccolta e analisi dei dati IntelliTrace in produzione per il debug (video su Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)  
@@ -88,7 +86,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
   
 1.  Nel server dell'app, creare la directory dell'agente di raccolta, ad esempio **C:\IntelliTraceCollector**  
   
-2.  Scaricare l'agente di raccolta dall'Area download Microsoft o dalla cartella di installazione di Visual Studio 2103 Update 3. [Agente di raccolta IntelliTrace per Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::  
+2.  Scaricare l'agente di raccolta dall'Area download Microsoft o dalla cartella di installazione di Visual Studio 2103 Update 3. [Agente di raccolta IntelliTrace per Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909):  
   
     -   **Area download Microsoft**:  
   
@@ -390,7 +388,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
   
 -   Da una sessione in Visual Studio Enterprise di debug di IntelliTrace, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
   
--   Da una sessione di test in Microsoft Test Manager, vedere [procedura: raccogliere dati IntelliTrace per agevolare il Debug di problemi complessi](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).  
+-   Da una sessione di test in Microsoft Test Manager, vedere [Procedura: Raccogliere dati IntelliTrace per agevolare il debug di problemi complessi](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).  
   
 ## <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere altre informazioni?  
  [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)  

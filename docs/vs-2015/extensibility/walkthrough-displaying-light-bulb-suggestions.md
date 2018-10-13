@@ -1,7 +1,7 @@
 ---
 title: 'Walkthrough: Displaying Light Bulb Suggestions | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c36dad27a4d4a5bff5381b99041f7221447645e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252499"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Procedura dettagliata: visualizzazione dei suggerimenti delle icone lampadina
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: visualizzazione di suggerimenti con lampadina](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-light-bulb-suggestions).  
-  
 Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono per visualizzare un set di azioni, ad esempio correzioni per problemi identificati dagli analizzatori di codice predefiniti o il refactoring del codice.  
   
  Negli editor di Visual c# e Visual Basic, è anche possibile usare .NET Compiler Platform ("Roslyn") per scrivere e creare pacchetti personalizzati analizzatori di codice con le azioni che consentono di visualizzare le lampadine automaticamente. Per altre informazioni, vedere:  
@@ -50,7 +48,7 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creazione di un progetto Managed Extensibility Framework (MEF)  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `LightBulbTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `LightBulbTest`.  
   
 2.  Aggiungere un **classificatore Editor** modello di elemento al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -228,14 +226,14 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
   
 1.  Nel progetto, aggiungere un riferimento a set e Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll **Copia localmente** a `False`.  
   
-2.  Creare due classi, il primo denominato `UpperCaseSuggestedAction` e il secondo denominato `LowerCaseSuggestedAction`. Entrambe le classi implementano <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
+2.  Creare due classi, denominate `UpperCaseSuggestedAction` e `LowerCaseSuggestedAction`. Entrambe le classi implementano <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Entrambe le classi sono simile ad eccezione del fatto che una chiama <xref:System.String.ToUpper%2A> e l'altra chiama <xref:System.String.ToLower%2A>. Anche se i passaggi seguenti descrivono solo la classe dell'azione per le maiuscole, è necessario implementarle entrambe. Usare i passaggi per l'implementazione dell'azione per le maiuscole come criterio per l'implementazione dell'azione per le minuscole.  
+     Le due classi sono simili, con l'unica eccezione che una chiama <xref:System.String.ToUpper%2A> e l'altra chiama <xref:System.String.ToLower%2A>. Anche se i passaggi seguenti descrivono solo la classe dell'azione per le maiuscole, è necessario implementarle entrambe. Usare i passaggi per l'implementazione dell'azione per le maiuscole come criterio per l'implementazione dell'azione per le minuscole.  
   
 3.  Aggiungere quanto segue usando istruzioni per queste classi:  
   
@@ -325,7 +323,7 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
     }  
     ```  
   
-9. Implementare il <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> metodo sostituendo il testo nel controllo span con l'equivalente in maiuscole.  
+9. Implementare il metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> sostituendo il testo nell'intervallo con l'equivalente in maiuscole.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  

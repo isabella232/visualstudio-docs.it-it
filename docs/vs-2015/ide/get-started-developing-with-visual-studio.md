@@ -1,7 +1,7 @@
 ---
 title: Introduzione allo sviluppo con Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: deeb0b377c863bdfb742e4d483e8b5e5f160dd1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2575e3e9ffa5f1b67709bc1fd342dbcf95417aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261508"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Introduzione allo sviluppo con Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Get Started Developing with Visual Studio](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio).  
-  
 Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il prodotto, queste pagine sono utili per iniziare a scrivere codice.  
   
 -   **[Creare app Web](https://www.visualstudio.com/features/modern-web-tooling-vs):** strumenti per creare e distribuire applicazioni Web moderne.  
@@ -40,7 +38,7 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
   
 -   **[Creare le app per dispositivi mobili multipiattaforma in C# o Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**: introduzione all'uso di Visual Studio e agli strumenti per Xamarin per creare app per dispositivi mobili che eseguano Android, iOS e la piattaforma UWP (Universal Windows Platform) da una base codice condivisa.  
   
-     Carica un esempio:[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (interfaccia utente nativa) o [esempio Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interfaccia utente condiviso da xamarin. Forms) &#124; [eseguire un'esercitazione](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [Sfoglia i documenti](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [guardare un video                                                                  ](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     Carica un esempio:[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (interfaccia utente nativa) o [esempio Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interfaccia utente condiviso da xamarin. Forms) &#124; [eseguire un'esercitazione](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [Sfoglia i documenti](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [guardare un video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
   
 -   **[Creare app e librerie multipiattaforma native in C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Visitare questa pagina per iniziare a creare app e librerie C++ per Android, iOS e la piattaforma UWP.  
   
@@ -72,7 +70,7 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
   
 |||  
 |-|-|  
-|[Getting Started with Visual C# and Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) (Introduzione a Visual C# e Visual Basic)|[Scrittura di codice JavaScript](http://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|  
+|[Guida introduttiva a Visual C# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[Scrittura di codice JavaScript](http://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|  
 |[Visual C++ for Cross-Platform Mobile Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) (Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma)|[Introduction to Functional Programming with F#](http://msdn.microsoft.com/library/vstudio/dd233147.aspx) (Introduzione alla programmazione funzionale con F#)|  
 |[Introduzione a C++ in Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)|[Introduzione al debug in Visual Studio 2015](../ide/getting-started-with-debugging-in-visual-studio-2015.md)|
 

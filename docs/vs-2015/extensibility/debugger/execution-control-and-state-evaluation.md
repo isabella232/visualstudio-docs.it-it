@@ -1,7 +1,7 @@
 ---
 title: Controllo dell'esecuzione e valutazione dello stato | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72b13fece6129c6b3996363bb0ec082330c9b686
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20c2737d233e90cba5813709b2c4cf8ac232105f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528249"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263198"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Controllo dell'esecuzione e valutazione dello stato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [controllo di esecuzione e valutazione dello stato](https://docs.microsoft.com/visualstudio/extensibility/debugger/execution-control-and-state-evaluation).  
-  
 Debug di un'applicazione richiede l'implementazione di tali funzionalità di controllo di esecuzione come l'esecuzione di funzioni, l'arresto nei punti di interruzione e continuare l'esecuzione. Debug di base di Visual Studio il controllo dell'esecuzione sugli eventi inviati tra i componenti del debugger.  
   
 ## <a name="in-this-section"></a>In questa sezione  
