@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Gestire configurazioni della build applicando le impostazioni di Visual Basic Developer | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f96242e638e10ac494b0d56e0fb1b89601a35e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b191b5d4223d32e4d620c779f5813c0db651a6cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300560"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedura: gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: gestire configurazioni della Build di Visual Basic Developer impostazioni](https://docs.microsoft.com/visualstudio/ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied).  
-  
 Per impostazione predefinita, tutte le opzioni di configurazione della build avanzate sono nascoste tramite l'applicazione di impostazioni di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Developer. Questo argomento illustra come abilitare manualmente tali impostazioni.  
   
 ## <a name="enabling-advanced-build-configurations"></a>Abilitazione di configurazioni della build avanzate  

@@ -1,7 +1,7 @@
 ---
 title: Visualizzatore di concorrenza | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14e265562b325352b42741ca505233a64e0ac1af
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 5ac795c2068a27d673b6c603d4ef8c7d3be056cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304187"
 ---
 # <a name="concurrency-visualizer"></a>Visualizzatore di concorrenze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Visualizzatore di concorrenza](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer).  
-  
 NOTA]
 >  Il Visualizzatore di concorrenza è un'estensione facoltativa di Visual Studio. Scaricare il Visualizzatore di concorrenza e gli strumenti di raccolta del visualizzatore di concorrenza dai collegamenti seguenti:  
 >   

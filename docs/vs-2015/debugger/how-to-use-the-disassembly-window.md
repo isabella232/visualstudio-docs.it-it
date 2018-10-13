@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: utilizzare la finestra Disassembly | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17747cdab2987a053ef5fff2bc7b8a11867d94fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287758"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Procedura: utilizzare la finestra Disassembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzare il codice Disassembly nel Debugger di Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-disassembly-window).  
-  
 Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo il **le opzioni** della finestra di dialogo **debug** nodo. Non è invece disponibile per il debug di script o SQL.  
   
  Il **Disassembly** finestra Mostra il codice assembly corrispondente alle istruzioni create dal compilatore. Se si sta eseguendo il debug di codice gestito, tali istruzioni in linguaggio assembly corrispondono al codice nativo creato dal compilatore JIT (Just-In-Time), non al linguaggio MSIL (Microsoft Intermediate Language) generato dal compilatore di Visual Studio.  

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il profiler tramite la riga di comando | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 566bd0c6455ef00a7629be34890b5613c381d4e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80a58cd6427f6f59629abf591141b2af036bb345
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519769"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278174"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedura: instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il profiler tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il Profiler da riga di comando](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line).  
-  
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per instrumentare un componente nativo, ad esempio un file con estensione exe o dll C++, e raccogliere dati di intervallo dettagliati.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 'Visualizzazione Processo: dati sui conflitti | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 411de842beb616cf4ed7c51d0458e8d7bce82690
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f03a3d5b7033ae0124368425de3d7d85f9f040a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527610"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288658"
 ---
 # <a name="process-view---contention-data"></a>Visualizzazione Processo: dati sui conflitti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione processo: dati sui conflitti](https://docs.microsoft.com/visualstudio/profiling/process-view-contention-data).  
-  
 Nella visualizzazione Processo sono riportati i dati sui conflitti per i processi e i thread eseguiti durante l'esecuzione della profilatura.  
   
  Quando sono disponibili i simboli, i processi vengono elencati in base al nome. Quando non sono disponibili i simboli, i processi vengono elencati in base all'indirizzo di memoria in formato esadecimale. I thread vengono elencati come elementi figlio del processo che li ha creati.  

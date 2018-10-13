@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Connettere il profiler a un servizio .NET per raccogliere dati di memoria tramite la riga di comando | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f380d84e5dd662008e233b7c7854d44d9b1e270
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 91f0568c2ed300a65b4506d4b9f7d62459ad7247
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879759"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306683"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procedura: connettere il profiler a un servizio .NET per raccogliere dati di memoria tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: connettere il Profiler a un servizio .NET per raccogliere dati di memoria tramite la riga di comando](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line).  
-  
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per connettere il profiler a un servizio [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e raccogliere dati di memoria. È possibile raccogliere dati relativi al numero e alla dimensione delle allocazioni di memoria ed è anche possibile raccogliere dati sulla durata degli oggetti di memoria.  
   
 > [!NOTE]

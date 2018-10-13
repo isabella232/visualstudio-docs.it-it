@@ -1,7 +1,7 @@
 ---
 title: Strategia di implementazione dell'analizzatore di espressioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9bb9135dda7b5c8240517efabb3a899022ba1d3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1647eff0d9bd4ab281e0862388c6b99d120245c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517519"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306644"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>Strategia di implementazione di un analizzatore di espressioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [strategia di implementazione dell'analizzatore di espressioni](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluator-implementation-strategy).  
-  
 > [!IMPORTANT]
 >  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   

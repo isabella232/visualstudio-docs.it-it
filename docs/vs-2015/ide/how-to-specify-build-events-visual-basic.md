@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Specificare gli eventi di compilazione (Visual Basic) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fc4c0efad510c511cde5d6803807a1fb1f8efd67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c9c6c937d0426170854ef3a9de04348005fc0cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298896"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedura: specificare gli eventi di compilazione (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: specificare eventi di compilazione (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-visual-basic).  
-  
 Gli eventi di compilazione in Visual Basic possono essere usati per eseguire script, macro o altre azioni come parte del processo di compilazione. Gli eventi di pre-compilazione si verificano prima della compilazione e gli eventi di post-compilazione si verificano dopo la compilazione.  
   
  Gli eventi di compilazione vengono specificati nella finestra di dialogo **Eventi di compilazione** disponibile nella pagina **Compila** della **Creazione progetti**.  

@@ -1,7 +1,7 @@
 ---
 title: '&lt;Pacchetto&gt; elemento (programma di avvio automatico) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65523e419e10612a09324f9e33ac3ae147e94bbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b605d891fac3dceae77eb9bd3a1c0707b3fd6650
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298675"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacchetto&gt; elemento (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ &lt;pacchetto&gt; elemento (programma di avvio automatico)](https://docs.microsoft.com/visualstudio/deployment/package-element-bootstrapper).  
-  
 Il `Package` elemento è l'elemento XML di primo livello all'interno di un file del pacchetto.  
   
 ## <a name="syntax"></a>Sintassi  

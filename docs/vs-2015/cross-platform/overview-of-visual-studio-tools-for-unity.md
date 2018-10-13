@@ -1,7 +1,7 @@
 ---
 title: Panoramica di Visual Studio Tools per Unity |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: bea1ce00cfae19954153fa994c10b2211be19806
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532519"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287690"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Panoramica di Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Panoramica di Visual Studio Tools per Unity](https://docs.microsoft.com/visualstudio/cross-platform/overview-of-visual-studio-tools-for-unity).  
-  
   
 Questa sezione contiene altre informazioni sulle funzionalità offerte da Visual Studio Tools per Unity e su come usarle per incrementare la produttività con Unity.  
   

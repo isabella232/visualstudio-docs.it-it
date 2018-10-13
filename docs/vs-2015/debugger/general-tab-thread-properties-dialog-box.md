@@ -1,7 +1,7 @@
 ---
 title: Scheda Generale, finestra di dialogo proprietà Thread | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2610e76710d2c3138d981e3a2df83345cac418bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26eed1eb9d40fe78de34512f9e560ca59c19df12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307703"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Scheda Generale, finestra di dialogo Proprietà thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [scheda Generale, finestra di dialogo proprietà Thread](https://docs.microsoft.com/visualstudio/debugger/general-tab-thread-properties-dialog-box).  
-  
 Usare questa finestra di dialogo per ottenere ulteriori informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo a un [visualizzazione thread](../debugger/threads-view.md) finestra, oppure aprire [visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare qualsiasi nodo di thread nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
   
  Il **Thread Properties** finestra di dialogo contiene un riquadro, il **generali** scheda. Sono disponibili le seguenti impostazioni:  

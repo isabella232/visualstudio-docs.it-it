@@ -1,7 +1,7 @@
 ---
 title: Estensione delle proprietà | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303706"
 ---
 # <a name="extending-properties"></a>Estensione delle proprietà
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [estensione di proprietà](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties).  
-  
 Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **delle proprietà** finestra è un visualizzatore proprietà universale per i componenti COM e COM+ e supporta tutte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prodotti. Il **delle proprietà** finestra funziona con `ITypeInfo` digitare le informazioni e i metadati di COM+ per elencare le proprietà in fase di progettazione per l'oggetto attualmente selezionato in un'altra finestra nell'ambiente di sviluppo integrato (IDE).  
   
  Il **delle proprietà** finestra, che può essere aperta, premere F4 sulla tastiera, oppure selezionando **finestra delle proprietà** sul **visualizzazione** menu, viene utilizzato per visualizzare e modificare proprietà indipendenti dalla configurazione, in fase di progettazione e gli eventi degli oggetti selezionati. Proprietà dipendenti dalla configurazione, associate a soluzioni e progetti, vengono visualizzate nella [pagine delle proprietà](../../extensibility/internals/property-pages.md). Per altre informazioni, vedere [le proprietà del progetto: NIB](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [la gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md), e [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
@@ -96,5 +94,5 @@ Finestra Proprietà
  Viene spiegato come [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gestisce in modo efficiente gli elementi, ad esempio i riferimenti, le connessioni dati, cartelle e file necessari per l'attività di sviluppo tramite soluzioni e progetti.  
   
  [Estensione di altre parti di Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Viene illustrato come utilizzare [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per creare elementi dell'interfaccia utente che corrispondono al resto dei servizi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+ Spiega come usare i servizi di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per creare elementi dell'interfaccia utente che corrispondono al resto di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
 

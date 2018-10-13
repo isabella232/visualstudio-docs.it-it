@@ -1,7 +1,7 @@
 ---
 title: Esecuzione degli strumenti di profilatura con o senza il debugger | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938d1dc3e257ad4737e5fd33d831feb0c16a81d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526535"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301483"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Esecuzione degli strumenti di profilatura con o senza il debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [in esecuzione gli strumenti di profilatura con o senza il Debugger](https://docs.microsoft.com/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
-  
 Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni dei quali (ad esempio, **Utilizzo CPU** e **Utilizzo memoria**) possono essere eseguiti con o senza il debugger. Gli strumenti per le prestazioni privi di debugger devono essere eseguiti su configurazioni di rilascio; al contrario, gli strumenti di debugger integrati devono essere eseguiti sulle configurazioni di debug.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Lo strumento deve essere eseguito con o senza il debugger?  

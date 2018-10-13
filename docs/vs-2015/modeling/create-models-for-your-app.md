@@ -1,7 +1,7 @@
 ---
 title: Creare modelli per l'app | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 60
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 769542e2f2864864146cb0f94c4dbf5bf1920b5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb7c2e0095d83ecbe21e6002f86c44682745341a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301899"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creare modelli per l'app](https://docs.microsoft.com/visualstudio/modeling/create-models-for-your-app).  
-  
 I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le idee sul codice e i requisiti dell'utente che devono supportare il sistema software. Ad esempio, per descrivere e comunicare i requisiti utente, è possibile usare caso di utilizzo, attività, classe e diagrammi di sequenza UML (Unified Modeling Language). Per descrivere e comunicare le funzionalità del sistema, è possibile usare il componente, la classe, l'attività e i diagrammi di sequenza UML.  
   
  Visualizzare [Video di Channel 9: migliorare l'architettura tramite la modellazione](http://go.microsoft.com/fwlink/?LinkID=252078).  

@@ -1,7 +1,7 @@
 ---
 title: Finestra di dialogo Proprietà finestra, scheda di Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 925727710ac36e40f2eed1a648418df745417c27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9546be8fd50daea8369b00ae9bbc1eab2427c9c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297219"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Scheda Finestre, finestra di dialogo Proprietà finestra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [finestra di dialogo Proprietà finestra, scheda Windows](https://docs.microsoft.com/visualstudio/debugger/windows-tab-window-properties-dialog-box).  
-  
 Usare la **Windows** pressione di tab per visualizzare informazioni sulle finestre correlate per la finestra selezionata. Per visualizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo per il [Windows Vista](../debugger/windows-view.md) finestra. Selezionare qualsiasi nodo finestra nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
   
  Le impostazioni seguenti sono disponibili sul **Windows** scheda:  

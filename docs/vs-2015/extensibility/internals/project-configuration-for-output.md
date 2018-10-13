@@ -1,7 +1,7 @@
 ---
 title: Configurazione per l'Output del progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c2d4a8641189e7ff9d4190ee68a578f5dd51785
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5e871a2053bb14b30ad47955104edb5c3fe4658
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304122"
 ---
 # <a name="project-configuration-for-output"></a>Configurazione del progetto per l'output
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [configurazione del progetto per l'Output](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-output).  
-  
 Ogni configurazione può supportare un set di processi di compilazione che generano gli elementi di output, ad esempio file eseguibile o una risorsa. Questi elementi di output sono privati per l'utente e possono essere inseriti in gruppi che si collegano i tipi correlati dell'output, ad esempio file eseguibili (.exe,. dll, con estensione LIB) e i file di origine (. idl, file con estensione h).  
   
  Gli elementi di output possono essere rese disponibili tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> metodi ed enumerate con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> metodi. Quando si desidera raggruppare gli elementi di output, il progetto deve inoltre implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> interfaccia.  

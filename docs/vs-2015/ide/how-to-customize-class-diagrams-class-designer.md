@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Personalizzare i diagrammi classi (Progettazione classi) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d55744331cfa0aa78649a3654d7863ecc2287835
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527824"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296179"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Procedura: personalizzare i diagrammi classi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: personalizzare i diagrammi classi (Progettazione classi)](https://docs.microsoft.com/visualstudio/ide/how-to-customize-class-diagrams-class-designer).  
-  
 È possibile modificare la modalità con cui i diagrammi classi visualizzano le informazioni. È possibile personalizzare l'intero diagramma o i singoli tipi nell'area di progettazione.  
   
  È possibile, ad esempio, regolare il livello di zoom di un intero diagramma classi, modificare il modo in cui singoli membri di tipo vengono raggruppati e ordinati, nascondere o visualizzare relazioni e spostare singoli tipi o set di tipi in qualsiasi punto del diagramma.  
@@ -40,7 +38,7 @@ La versione più recente di questo argomento è reperibile in [procedura: person
   
  Le sezioni contenenti membri di tipo, ad esempio la sezione Proprietà in una classe, vengono definite raggruppamenti. È possibile nascondere o visualizzare singoli raggruppamenti e membri di tipo.  
   
- **Contenuto dell'argomento**  
+ **In questo argomento**  
   
 -   [Eseguire lo zoom avanti e indietro sul diagramma classi](../ide/how-to-customize-class-diagrams-class-designer.md#ZoomInOut)  
   

@@ -1,7 +1,7 @@
 ---
 title: Nodi dei parametri | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bed941a35af21b78ea5159a218ccd36d2ff5f1e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276290"
 ---
 # <a name="parameter-nodes"></a>Nodi Parameter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [nodi Parameter](https://docs.microsoft.com/visualstudio/designers/parameter-nodes).  
-  
 Nella finestra di progettazione shader, i nodi dei parametri rappresentano gli input dello shader controllati dall'app in base al disegno e includono, ad esempio, proprietà materiali, luci direzionali, posizione della fotocamera e ora. Questi parametri possono essere modificati a ogni chiamata di disegno e, quindi, è possibile usare lo stesso shader per fornire aspetti diversi a uno stesso oggetto.  
   
 ## <a name="parameter-node-reference"></a>Riferimento per i nodi dei parametri  

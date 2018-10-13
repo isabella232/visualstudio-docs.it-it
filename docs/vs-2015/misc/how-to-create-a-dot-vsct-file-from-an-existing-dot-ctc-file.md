@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: creare una. File Vsct da un oggetto esistente. File CTC | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 0d267e6046539001cbe454ab69867c02f0a606ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530259"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303485"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: Creare un file con estensione vsct da un file CTC esistente
-È possibile creare un file con estensione vsct basato su XML da un file di origine CTC esistente della tabella comandi. In questo modo, è possibile sfruttare i vantaggi del nuovo basato su XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comando nel formato del compilatore tabella (VSCT).  
+È possibile creare un file con estensione vsct basato su XML da un file di origine CTC esistente della tabella comandi. In questo modo, si può sfruttare il nuovo formato basato su XML del compilatore della tabella comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSCT).  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Per creare un file con estensione vsct da un file CTC  
   
@@ -34,7 +34,7 @@ ms.locfileid: "47530259"
   
 4.  Inserire i file nella stessa directory.  
   
-5.  Nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finestra Prompt dei comandi, passare alla directory.  
+5.  Nella finestra del prompt dei comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spostarsi nella directory.  
   
 6.  Digitare  
   

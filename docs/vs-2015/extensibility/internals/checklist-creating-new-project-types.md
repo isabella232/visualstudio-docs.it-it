@@ -1,7 +1,7 @@
 ---
 title: 'Elenco di controllo: Creazione di nuovi tipi di progetto | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f73462d32e0b047e0b2427646cfc5a3709c5e78a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8047ea1aeb6a163a627f9198ca3f6731419949ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285987"
 ---
 # <a name="checklist-creating-new-project-types"></a>Elenco di controllo: Creazione di nuovi tipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elenco di controllo: creazione di nuovi tipi di progetto](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-new-project-types).  
-  
 È necessario completare diverse attività per creare un nuovo tipo di progetto. Elenco di controllo seguente fornisce una Guida alle attività.  
   
 1.  Progettare la funzionalità per il nuovo tipo di progetto. Per altre informazioni, vedere [decisioni di progettazione di tipo di progetto](../../extensibility/internals/project-type-design-decisions.md).  
@@ -58,7 +56,7 @@ La versione più recente di questo argomento è reperibile in [elenco di control
   
     -   Gli oggetti o classi derivate da `IDispatch`, disponibile per l'automazione.  
   
-    -   File XML comando Table (vsct). Per altre informazioni, vedere [Visual Studio Command Table (. File Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+    -   File XML comando Table (vsct). Per altre informazioni, vedere [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 6.  Test, eseguire il debug e avviare il tipo di progetto.  
   

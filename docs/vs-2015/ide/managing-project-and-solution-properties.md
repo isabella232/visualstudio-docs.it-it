@@ -1,7 +1,7 @@
 ---
 title: Gestione delle proprietà di progetti e soluzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bca50ff8128782bda1841120996f3f3dda6d4ad2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43b46fc40da93352c4748662b66df91f0d25802b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519340"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290550"
 ---
 # <a name="managing-project-and-solution-properties"></a>Gestione delle proprietà di progetti e soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [gestione dei progetti e le proprietà della soluzione](https://docs.microsoft.com/visualstudio/ide/managing-project-and-solution-properties).  
-  
 Le proprietà dei progetti governano molti aspetti della compilazione, del debug, del test e della distribuzione. Alcune proprietà sono comuni tra tutti i tipi di progetto e altre sono univoche di piattaforme o linguaggi specifici. Per accedere alle proprietà di progetto, fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni e scegliere Proprietà oppure digitare le proprietà nella casella di ricerca **Avvio veloce** nella barra dei menu.  
   
  ![Menu di scelta rapida Progetto](../ide/media/vs2015-proj-prop-menu.gif "vs2015_proj_prop_menu")  

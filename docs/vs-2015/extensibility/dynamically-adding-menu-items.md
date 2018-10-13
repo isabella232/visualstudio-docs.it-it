@@ -1,7 +1,7 @@
 ---
 title: Aggiunta dinamica di voci di Menu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: edd3a97eea69843bcd09a9483a7cea196d3a4c5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb0cd49d8ce9f1851bd54bb3362932de775eb2c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300202"
 ---
 # <a name="dynamically-adding-menu-items"></a>Aggiunta dinamica di voci di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [in modo dinamico aggiungendo le voci di Menu](https://docs.microsoft.com/visualstudio/extensibility/dynamically-adding-menu-items).  
-  
 È possibile aggiungere voci di menu in fase di esecuzione, specificando il `DynamicItemStart` comando flag in una definizione del pulsante di segnaposto nel file di comando-table (vsct) di Visual Studio, definendo (in codice) il numero di menu degli elementi da visualizzare e la gestione di comandi. Quando il VSPackage viene caricato, il segnaposto viene sostituito con le voci di menu dinamico.  
   
  Visual Studio Usa gli elenchi dinamici nel **usati di recente** elenco (MRU), che visualizza i nomi dei documenti che sono state aperte di recente, e il **Windows** elenco, che vengono visualizzati i nomi di windows che sono attualmente aperti.   Il `DynamicItemStart` flag in una definizione di comando specifica che il comando è un segnaposto fino a quando non viene aperto il pacchetto VSPackage. Quando si apre il pacchetto VSPackage, il segnaposto viene sostituito con 0 o altri comandi che vengono creati in fase di esecuzione e aggiunto all'elenco dinamico. Potrebbe non essere in grado di visualizzare la posizione nel menu in cui viene visualizzato l'elenco dinamico fino a quando non viene aperto il pacchetto VSPackage.  Per popolare l'elenco dinamico, Visual Studio chiede il pacchetto VSPackage per cercare un comando con un ID di cui primi caratteri sono le stesse l'ID del segnaposto. Quando Visual Studio rileva un comando corrisponda, aggiunge il nome del comando per l'elenco dinamico. Viene quindi incrementa l'ID e cerca un altro comando corrisponda da aggiungere all'elenco dinamico fino a quando non sono disponibili i comandi non è più dinamici.  

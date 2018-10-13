@@ -1,7 +1,7 @@
 ---
 title: App Run Windows Store in un computer remoto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289575"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Eseguire app di Windows Store in un computer remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Run Windows Store App in un computer remoto](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).  
-  
 Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Tramite l'applicazione Visual Studio Remote Tools è possibile avviare, eseguire il debug, profilare e testare un'applicazione Windows Store in esecuzione su un dispositivo utilizzando un secondo computer che esegue Visual Studio. L'esecuzione su un dispositivo remoto può essere particolarmente efficiente quando il computer che esegue Visual Studio non supporta le funzionalità specifiche delle applicazioni Windows Store, come il tocco, la georilevazione e l'orientamento fisico. In questo argomento vengono descritte le procedure per configurare e avviare una sessione remota.  

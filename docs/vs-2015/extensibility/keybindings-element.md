@@ -1,7 +1,7 @@
 ---
 title: Elemento KeyBindings | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0d9e84ab0884b0756af8629f6bded6b02257453
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17845f85fd1634ad40d812d1b05a72ab15422b01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530281"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282048"
 ---
 # <a name="keybindings-element"></a>Elemento KeyBindings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [tasti di scelta rapida elemento](https://docs.microsoft.com/visualstudio/extensibility/keybindings-element).  
-  
 L'elemento KeyBindings Raggruppa gli elementi di tasto di scelta rapida e altri raggruppamenti di tasti di scelta rapida.  
   
 ## <a name="syntax"></a>Sintassi  

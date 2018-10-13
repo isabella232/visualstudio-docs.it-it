@@ -1,7 +1,7 @@
 ---
 title: Riferimento di set di regole di analisi di codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0834d9c08cd8c570ae28a1a604f65627656b7009
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519984"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279162"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Tabella di riferimento del set di regole di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [riferimento di set di regole di analisi di codice](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-rule-set-reference).  
-  
 Quando si configurano analisi codice per progetti di codice in gestito [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], o [!INCLUDE[vsPro](../includes/vspro-md.md)]viene visualizzato un elenco incorporati *set di regole*. È possibile utilizzare uno dei set di regole standard o personalizzare un set di regole per soddisfare i requisiti del progetto.  
   
 ## <a name="available-rule-sets"></a>Set di regole disponibili  

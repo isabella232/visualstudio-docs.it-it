@@ -1,14 +1,14 @@
 ---
 title: Usare i modelli nel processo di sviluppo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
@@ -16,18 +16,16 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ff2526d6ff7bb19448674aed043848e760b85e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286000"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [usare i modelli nel processo di sviluppo](https://docs.microsoft.com/visualstudio/modeling/use-models-in-your-development-process).  
-  
 In Visual Studio è possibile usare un modello che consenta di comprendere e modificare un sistema, un'applicazione o un componente. Un modello consente di visualizzare l'ambiente in cui opera il sistema, chiarire le esigenze degli utenti, definire l'architettura del sistema, analizzare il codice e assicurarsi che soddisfi i requisiti. Visualizzare [Video di Channel 9: migliorare l'architettura tramite la modellazione](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Per vedere quali versioni di Visual Studio supportano ogni tipo di modello, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -145,7 +143,7 @@ In Visual Studio è possibile usare un modello che consenta di comprendere e mod
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Documentazione Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Usare i modelli in Agile development](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Usare i modelli nello sviluppo Agile](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Creare modelli per l'app](../modeling/create-models-for-your-app.md)   
  [Modellare i requisiti utente](../modeling/model-user-requirements.md)   
  [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)   

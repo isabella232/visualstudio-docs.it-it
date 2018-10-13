@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Creare modelli di elementi a più file | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de6d2fd4decc4d71fce1fe4f417f429c837deb7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286793"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: creare modelli di elementi a più file
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: creare modelli di elementi a più file](https://docs.microsoft.com/visualstudio/ide/how-to-create-multi-file-item-templates).  
-  
 Sebbene i modelli di elementi possano specificare un solo elemento, in alcuni casi l'elemento è costituito da più file. Ad esempio, un modello di elemento di Windows Forms per Visual Basic richiede i tre file seguenti:  
   
 -   Un file con estensione vb che contiene il codice per il modulo.  

@@ -1,7 +1,7 @@
 ---
 title: Raccolta di statistiche di applicazioni Web ASP.NET usando il metodo di campionamento del profiler tramite la riga di comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4353308ce42ad61fdc53732d1a077f510ed2c1c
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 004f09db73c1eaa977d64b8bafb376a60a45a7a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277888"
 ---
 # <a name="collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line"></a>Raccolta di statistiche di applicazioni Web ASP.NET usando il metodo di campionamento del profiler tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [raccogliere statistiche dell'applicazione per le applicazioni Web ASP.NET usando il metodo di campionamento del Profiler da riga di comando](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line).  
-  
 Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche sulle prestazioni per un'applicazione Web ASP.NET tramite gli strumenti da riga di comando **VSPerfASPNETCmd** e **VSPerfCmd** e il metodo di profilatura del campionamento.  
   
 > [!NOTE]

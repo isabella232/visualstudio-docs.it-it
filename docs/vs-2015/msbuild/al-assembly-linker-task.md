@@ -1,7 +1,7 @@
 ---
 title: Attività AL (Assembly Linker) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f30928d989ebceef0c3d786396d78f0a126dc96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf0f5995b9f0e2fca0d909b9d0da0dbe6b386978
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280475"
 ---
 # <a name="al-assembly-linker-task"></a>Attività AL (Assembly Linker)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [attività AL (Assembly Linker)](https://docs.microsoft.com/visualstudio/msbuild/al-assembly-linker-task).  
-  
   
 L'attività AL esegue il wrapping di AL.exe, uno strumento distribuito con [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Lo strumento Assembly Linker consente di creare un assembly con un manifesto da uno o più file che costituiscono moduli o file di risorse. Poiché è possibile che negli ambienti di compilazione e sviluppo queste funzionalità siano già disponibili, spesso non è necessario usare direttamente questa attività. Assembly Linker è particolarmente utile per gli sviluppatori che hanno la necessità di creare un unico assembly da più file di componenti, ad esempio quelli che possono essere prodotti dallo sviluppo in linguaggi misti. Questa attività non combina i moduli in un unico file assembly. Affinché l'assembly ottenuto venga caricato correttamente, è comunque necessario che i singoli moduli vengano distribuiti e che siano disponibili. Per altre informazioni su AL.exe, vedere [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
   

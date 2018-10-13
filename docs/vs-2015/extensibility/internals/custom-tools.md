@@ -1,7 +1,7 @@
 ---
 title: Gli strumenti personalizzati | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72fb6f9f0ceb3b9f2ae04f39b2c37c416acf47b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0726457567221f5adb091d543cc17621179021
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278408"
 ---
 # <a name="custom-tools"></a>Strumenti personalizzati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [strumenti personalizzati](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-tools).  
-  
 *Gli strumenti personalizzati* consentono di associare uno strumento a un elemento in un progetto ed eseguire tale strumento ogni volta che viene salvato il file. Alcuni strumenti personalizzati, anche detta *generatori di file singoli*, vengono spesso usati per implementare i traduttori che generano codice dai dati e viceversa. Ad esempio, creano i generatori di file singolo [!INCLUDE[csprcs](../../includes/csprcs-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] codice all'esterno di Settings e resx in file di origine. Il codice sorgente generato fornisce accesso fortemente tipizzato ai dati nei file con estensione resx e. Settings. Il [!INCLUDE[csprcs](../../includes/csprcs-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] tipi di progetto supportano gli strumenti personalizzati; [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] non li supportano tipi di progetto. Tipi di progetto personalizzati possono anche supportare gli strumenti personalizzati.  
   
  Gli strumenti personalizzati verranno registrati i componenti che implementano il `IVsSingleFileGenerator` interfaccia.  
@@ -63,5 +61,5 @@ La versione più recente di questo argomento è reperibile in [strumenti persona
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Estensione dei progetti](../../extensibility/extending-projects.md)  
- Viene descritto come utilizzare [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] progetti e soluzioni per organizzare i file di codice e i file di risorse e come implementare il codice sorgente.
+ Descrive come usare i progetti e le soluzioni di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per organizzare file di codice e file di risorse e come implementare il controllo del codice sorgente.
 

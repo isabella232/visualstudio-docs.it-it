@@ -1,7 +1,7 @@
 ---
 title: Funzioni API del plug-in controllo di origine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eadf9c76fcebe79eb8e8f599aecdf934485a34ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c02d873e2ccb6062f94569d1231b47fc56624fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293039"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funzioni API del plug-in del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [funzioni API dei plug-in controllo di origine](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-api-functions).  
-  
 L'API dei plug-in del controllo origine fornisce le funzioni seguenti, che devono essere implementate dal controllo del codice sorgente del plug-in conformità con questa API. Le firme di ogni funzione e la semantica associata con il flag di bit e altri parametri sono descritti in dettaglio in questo riferimento.  
   
 ## <a name="initialization-and-housekeeping-functions"></a>Inizializzazione e funzioni di manutenzione  

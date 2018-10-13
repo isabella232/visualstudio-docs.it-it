@@ -1,7 +1,7 @@
 ---
 title: Manifesto dell'applicazione ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 28d96d1edaba18b6b6c171139db116ad7f8b49bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57e48816ede7210a268cc465da1eee3b6ff43d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289588"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ClickOnce Application Manifest](https://docs.microsoft.com/visualstudio/deployment/clickonce-application-manifest).  
-  
 Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione è un file XML che descrive un'applicazione che viene distribuita usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesti dell'applicazione sono i seguenti elementi e attributi.  
@@ -44,7 +42,7 @@ Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'ap
 |[\<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md)|Identifica i requisiti di sicurezza dell'applicazione.|nessuno|  
 |[\<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md)|Obbligatorio. Identifica il punto di ingresso del codice dell'applicazione.|`name`|  
 |[\<dipendenza > elemento](../deployment/dependency-element-clickonce-application.md)|Obbligatorio. Identifica ogni dipendenza necessaria per l'esecuzione dell'applicazione. Può anche identificare gli assembly che è necessario preinstallare.|nessuno|  
-|[\<file > elemento](../deployment/file-element-clickonce-application.md)|Facoltativo. Identifica il file non viene usato dall'applicazione ogni assembly. Può includere i dati sull'isolamento COM (Component Object Model) associati al file.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<Elemento file>](../deployment/file-element-clickonce-application.md)|Facoltativo. Identifica il file non viene usato dall'applicazione ogni assembly. Può includere i dati sull'isolamento COM (Component Object Model) associati al file.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)|Facoltativo. Identifica un'estensione di file da associare all'applicazione.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>Note  

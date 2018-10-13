@@ -1,7 +1,7 @@
 ---
 title: 'Visualizzazione Moduli: dati sui conflitti | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccd57d1bbc81c44ce1b6130613e9752f2fc55b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4461795294df4824d2af2c8ada02e2f5929e0c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305997"
 ---
 # <a name="modules-view---contention-data"></a>Visualizzazione Moduli: dati sui conflitti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione moduli: dati sui conflitti](https://docs.microsoft.com/visualstudio/profiling/modules-view-contention-data).  
-  
 Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati sulla concorrenza raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo in cui si sono verificati gli eventi di conflitto sono elencate nel nodo del modulo.  
   
  Se era in corso l'esecuzione del codice della funzione quando si è verificato un evento di conflitto, ovvero la funzione si trovava in cima allo stack di chiamate, le righe di codice sorgente e gli indirizzi delle istruzioni in esecuzione sono elencati sotto il nodo della funzione. Poiché i dati vengono raccolti per una riga di codice sorgente o per un puntatore all'istruzione durante l'esecuzione della riga o dell'istruzione, i valori inclusivi ed esclusivi sono sempre gli stessi sia per i dati di riga che per quelli di istruzione.  
@@ -58,7 +56,7 @@ Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati 
  [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)   
- [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)
+ [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)
 
 
 

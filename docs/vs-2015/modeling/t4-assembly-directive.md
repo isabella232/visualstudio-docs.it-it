@@ -1,7 +1,7 @@
 ---
 title: T4 Direttiva Assembly | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 072f2fe9ff82a99370677c50c6c97929c8e0b330
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ede2e84ac644fc8e1438873ea561ef3010f670c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531334"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301004"
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [direttiva Assembly T4](https://docs.microsoft.com/visualstudio/modeling/t4-assembly-directive).  
-  
 In un modello di testo della fase di progettazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la direttiva `assembly` carica un assembly in modo che il codice del modello possa utilizzarne i tipi. L'effetto è simile all'aggiunta di un riferimento all'assembly in un progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Per una panoramica generale della scrittura di modelli di testo, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).  
