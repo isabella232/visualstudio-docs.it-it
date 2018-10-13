@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di directory per la finestra di dialogo Nuovo progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e22f0566ddde7bfd795bb01141deabbecd532a19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd99b6a58bb5203e7e0dfd7df95494cb258c9228
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190489"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Aggiunta di directory nella finestra di dialogo Nuovo progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiunta di directory per la finestra di dialogo Nuovo progetto](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-directories-to-the-new-project-dialog-box).  
-  
 Quando si creano nuovi tipi di progetto, è anche possibile registrare una nuova directory nel **nuovo progetto** finestra di dialogo per la visualizzazione per l'uso come modelli. Esempio di codice seguente illustra come registrare una nuova directory, noto anche come un nodo. Nell'esempio vengono registrati modelli esposti dal VSPackage CLSID_Package. Di conseguenza, il lato sinistro della **nuovo progetto** nella finestra di dialogo offre il nodo aggiunto, con un nome stabilito dalla risorsa Folder_Label_ResID. Questa risorsa verrà caricata della DLL satellite di VSPackage.  
   
  Il **cartella** valore rappresenta un GUID di una cartella in cui viene visualizzato il nodo Folder_Label_ResID. Nell'esempio, rappresenta il GUID il **altri progetti** cartella il **tipi di progetto** riquadro del **nuovo progetto** nella finestra di dialogo. Se il **altri progetti** valore è assente, l'etichetta viene posizionata nella parte superiore.  

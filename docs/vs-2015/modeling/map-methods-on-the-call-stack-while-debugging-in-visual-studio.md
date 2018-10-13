@@ -1,14 +1,14 @@
 ---
 title: Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -35,18 +35,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 72080588cb27351b9778e6c25dc0b70c5c39dc24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dab0d3acf7d7f0234531ddc7074f8e8402d13b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196638"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [mappare i metodi sullo stack di chiamate durante il debug in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio).  
-  
 Creare una mappa del codice per tracciare visivamente lo stack di chiamate durante il debug. È possibile inserire note sulla mappa per tenere traccia dell'attività del codice e in tal modo concentrarsi sull'individuazione di bug.  
   
  ![Debug con stack di chiamate in mappe codici](../debugger/media/debuggermap-overview.png "DebuggerMap_Overview")  

@@ -1,7 +1,7 @@
 ---
 title: Estendere il DSL mediante MEF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 378aab6aaac3c45dc0a912dc62f5ebf55fffd46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4b3eea594bbfca0701fc8e719af0cf481fa434c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194135"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [estendere il DSL mediante MEF](https://docs.microsoft.com/visualstudio/modeling/extend-your-dsl-by-using-mef).  
-  
 È possibile estendere il linguaggio specifico di dominio (DSL) mediante Managed Extensibility Framework (MEF). Utente o altri sviluppatori sarà in grado di scrivere le estensioni per il DSL senza modificare il codice del programma e definizione DSL. Tali estensioni includono comandi di menu, gestori di trascinamento e rilascio e la convalida. Gli utenti saranno in grado di installare il linguaggio DSL e, facoltativamente, installare le estensioni per tale.  
   
  Inoltre, quando si abilita MEF nel linguaggio DSL, potrebbe risultare più semplice per la scrittura di alcune delle funzionalità del linguaggio DSL, anche se sono tutti compilati con il linguaggio DSL.  

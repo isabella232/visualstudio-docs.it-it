@@ -1,7 +1,7 @@
 ---
 title: Installare e gestire contenuto locale | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193842"
 ---
 # <a name="install-and-manage-local-content"></a>Installare e gestire il contenuto locale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [installare e gestire contenuto locale](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content).  
-  
 Usare Microsoft Help Viewer per aggiungere, rimuovere, aggiornare e spostare il contenuto della Guida installato nel computer a seconda delle esigenze di sviluppo del software.  
   
  Per gestire il contenuto nel computer locale, è necessario accedere con un account che disponga di autorizzazioni amministrative. Inoltre, si potrebbe non essere in grado di gestire il contenuto locale se si lavora in un ambiente aziendale poiché gli amministratori di sistema potrebbero prendere tali decisioni per l'organizzazione. Per altre informazioni, vedere la [Guida dell'amministratore di Help Viewer](../ide/help-viewer-administrator-guide.md).  
