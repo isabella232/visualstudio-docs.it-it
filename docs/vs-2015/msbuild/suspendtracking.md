@@ -1,7 +1,7 @@
 ---
 title: SuspendTracking | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f61e777ae40f5175b71d1abc26b25fabcc0a4043
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37f70e4776a2a93a593214c18ab07f4fcfcf0bcc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518224"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299741"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [SuspendTracking](https://docs.microsoft.com/visualstudio/msbuild/suspendtracking).  
-  
   
 Sospende la verifica nel contesto corrente.  
   

@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione di Windows di codice usando l'API Legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7738ef02b7f26e78197ca974fdc03b60c157799f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c698f9661866ad6d2900bb7feb0f0f4a17d21589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299988"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalizzazione di Windows di codice usando l'API Legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [personalizzazione di Windows di codice usando l'API Legacy](https://docs.microsoft.com/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api).  
-  
 Una finestra del codice è un oggetto finestra di documento che supporta uno o più visualizzazioni di testo. Esattamente le stesse funzionalità di una finestra del codice dipendono dal servizio di linguaggio associato. In modalità interfaccia a documenti multipli (MDI), la finestra del codice è la cornice figlio MDI.  
   
  Finestre del codice sono controllate da servizi di linguaggio e ogni servizio di linguaggio può fornire un proprio gestore di finestra di codice. In questo modo il servizio di linguaggio aggiungere le proprie aree di controllo alla finestra del codice, ad esempio linee a zigzag, la colorazione e altro ancora. Per altre informazioni su come creare una finestra di core, vedere [creazione di un'istanza di Core Editor tramite l'API Legacy](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  

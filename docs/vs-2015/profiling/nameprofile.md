@@ -1,7 +1,7 @@
 ---
 title: NameProfile | Documenti Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 966a3557c4436a625c7b8cd07ce850216085f194
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301938"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [NameProfile](https://docs.microsoft.com/visualstudio/profiling/nameprofile).  
-  
 La funzione `NameProfile` assegna una stringa al processo o al thread specificato.  
   
  L'API NameProfile è disponibile solo per la profilatura con il metodo di strumentazione. L'API NameProfile non è supportata per la profilatura con il metodo di campionamento.  

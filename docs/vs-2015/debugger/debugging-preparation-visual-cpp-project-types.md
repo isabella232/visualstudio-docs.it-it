@@ -1,7 +1,7 @@
 ---
 title: 'Preparazione al debug: Tipi di progetto Visual C++ | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 592232277dd8eda337bf90e6df114c2a03e75c4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304941"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparazione al debug: tipi di progetto Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [preparazione al debug: tipi di progetto Visual C++](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-visual-cpp-project-types).  
-  
 In questa sezione viene descritto come eseguire il debug dei tipi di progetto di base creati mediante i modelli di progetto [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
   
  Si noti che questi tipi di progetto che consentono di creare DLL come output sono stati raggruppati all'interno [debug di progetti DLL](../debugger/debugging-dll-projects.md) a causa di presentano le caratteristiche comuni.  
@@ -67,7 +65,7 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
 |-------------------|-------------|  
 |**Genera informazioni di debug**|È necessario impostare sempre questa opzione **Sì (/debug)** per creare i simboli di debug e i file necessari per eseguire il debug. Quando l'applicazione passa alla fase di produzione, è possibile disattivare questa opzione.|  
   
- [Contenuto dell'argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+ [In questo argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Win32_Projects"></a> Progetti Win32  
  Le applicazioni Win32 sono programmi Windows tradizionali scritti in C o C++. Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è una procedura molto semplice.  
@@ -104,20 +102,20 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
   
  Per altre informazioni, vedere[impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
- [Contenuto dell'argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+ [In questo argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Applicazioni Windows Forms (.NET)  
  Il **Windows Forms Application (.NET)** modello crea un [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] applicazione Windows Form. Per altre informazioni, vedere [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
- Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è simile a quello delle applicazioni Windows Form gestite.  
+ Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è simile a quello delle applicazioni Windows Forms gestite.  
   
  Quando si crea un progetto di Windows Form mediante il modello di progetto, in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vengono definite automaticamente le impostazioni necessarie per le configurazioni di debug e di rilascio. Se necessario, è possibile modificare queste impostazioni nella finestra di  **\<nome progetto > pagine delle proprietà** nella finestra di dialogo. Per altre informazioni, vedere [configurazioni Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md).  
   
  Per altre informazioni, vedere [impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
- Per eseguire il debug di un'applicazione Windows Form è anche possibile avviare l'applicazione all'esterno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e stabilire una connessione. Per altre informazioni, vedere [collegamento a una o più programmi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ Per eseguire il debug di un'applicazione Windows Forms è anche possibile avviare l'applicazione all'esterno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e stabilire una connessione. Per altre informazioni, vedere [collegamento a una o più programmi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
- [Contenuto dell'argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+ [In questo argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Nozioni di base sul debugger](../debugger/debugger-basics.md)   

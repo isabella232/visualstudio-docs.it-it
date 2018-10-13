@@ -1,7 +1,7 @@
 ---
 title: Gestione degli errori e i valori restituiti | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b306918843f5acb1ed70f46e104116ffb0a012d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 315315e925eecd45b1c001531f5ebb6be207b2e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519985"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306852"
 ---
 # <a name="error-handling-and-return-values"></a>Gestione degli errori e valori restituiti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [gestione degli errori e restituire valori](https://docs.microsoft.com/visualstudio/extensibility/error-handling-and-return-values).  
-  
 I pacchetti VSPackage e COM utilizzano la stessa architettura per gli errori. Il `SetErrorInfo` e `GetErrorInfo` funzioni fanno parte delle Win32 application programming interface (API). Qualsiasi pacchetto VSPackage nell'ambiente di sviluppo integrato (IDE) possibile chiamare queste API Win32 globale al record informazioni dettagliate sull'errore quando si riceve una notifica di errore. Il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornisce gli assembly di interoperabilità per gestire le informazioni sull'errore.  
   
 ## <a name="interop-methods"></a>Metodi di interoperabilità  

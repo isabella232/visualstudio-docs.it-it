@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione Thread (prestazioni in parallelo) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 644308065518afa9caf6fb0db088c2ffc556a8e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300248"
 ---
 # <a name="threads-view-parallel-performance"></a>Visualizzazione Thread (prestazioni in parallelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione thread (prestazioni in parallelo)](https://docs.microsoft.com/visualstudio/profiling/threads-view-parallel-performance).  
-  
 La visualizzazione Thread è la visualizzazione più dettagliata e ricca di funzionalità disponibile nel visualizzatore di concorrenza. Tramite questa visualizzazione, è possibile identificare se i thread sono in esecuzione o se sono bloccati a causa di operazioni di sincronizzazione, di I/O oppure per altri motivi.  
   
  Durante l'analisi del profilo, il visualizzatore di concorrenza esamina tutti gli eventi di cambio di contesto del sistema operativo per ogni thread dell'applicazione. I cambi di contesto possono verificarsi per diversi motivi, ad esempio nei casi seguenti:  

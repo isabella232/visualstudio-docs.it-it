@@ -1,7 +1,7 @@
 ---
 title: Debug Just-In-Time in Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1256584c2d4517b566095b3b71c6d080c6327df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517475"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294047"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debug JIT in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [debug JIT in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-in-visual-studio).  
-  
 Debug Just-In-Time avvia Visual Studio automaticamente quando si verifica un'eccezione o un arresto anomalo del sistema in un'applicazione eseguita esternamente a Visual Studio. In questo modo è possibile testare l'applicazione quando Visual Studio non è in esecuzione e avviare il debug con Visual Studio quando si verifica un problema.
 
 Il debug Just-In-Time funziona per le app desktop di Windows. Non funziona per le app universali di Windows e non funziona per il codice gestito ospitato in un'applicazione nativa, ad esempio visualizzatori.

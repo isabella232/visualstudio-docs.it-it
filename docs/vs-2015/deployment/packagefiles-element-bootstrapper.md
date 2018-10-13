@@ -1,7 +1,7 @@
 ---
 title: '&lt;PackageFiles&gt; elemento (programma di avvio automatico) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a82d60cd3bee12dcba9798826d03bd7aea7612be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4cddd6752872cf03ef5f5d55b0cbbb88aa1e66a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519787"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302783"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ &lt;PackageFiles&gt; elemento (programma di avvio automatico)](https://docs.microsoft.com/visualstudio/deployment/packagefiles-element-bootstrapper).  
-  
 Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono i pacchetti di installazione eseguiti in seguito al `Command` elemento.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -52,7 +50,7 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `PackageFiles` elemento ha l'attributo seguente.  
+ L'elemento `PackageFiles` presenta l'attributo seguente:  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  

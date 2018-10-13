@@ -1,7 +1,7 @@
 ---
 title: Esplorare una sessione di debug in Visual Studio (Xaml e c#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529418"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306306"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Esplorare una sessione di debug in Visual Studio (Xaml e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [esplorare una sessione di debug in Visual Studio (Xaml e c#)](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp).  
-  
 Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Visual Studio e come visualizzare e modificare lo stato del programma in una sessione.  
   
  La guida è destinata agli sviluppatori che non hanno familiarità con il debug in Visual Studio e a coloro che desiderano avere maggiori informazioni su come spostarsi in una sessione di debug di Visual Studio, ma non insegna l'arte stessa del debug I metodi inclusi nel codice di esempio sono concepiti solo per illustrare le procedure di debug descritte in questo argomento. Non utilizzano procedure consigliate per la progettazione di app o funzioni. In realtà, come si scoprirà presto, i metodi e l'app stessa non hanno alcuna finalità pratica.  

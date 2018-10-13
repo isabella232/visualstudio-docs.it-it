@@ -1,7 +1,7 @@
 ---
 title: Introduzione a estendibilità del Debugger | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8f056ed8fff53eb166b37f2adba9daa17f12916
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 321c4790decb81d91ef57afe6bedffcd89a179e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304973"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Introduzione all'estendibilità del debugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Guida introduttiva a estendibilità del Debugger](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-started-with-debugger-extensibility).  
-  
 Il [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] vengono fornite le informazioni necessarie per creare e personalizzare i componenti del debugger per eseguire il debug di programmi dall'interno di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debug ha aggiunti miglioramenti derivati dall'usabilità completa test eseguiti nel precedente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugger. È possibile usare [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debug con il passaggio attraverso un'applicazione in più lingue oppure è possibile implementare in immediatamente la modifica delle variabili durante il debug di applicazioni e soluzioni in più lingue.  

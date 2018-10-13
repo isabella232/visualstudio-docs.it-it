@@ -1,7 +1,7 @@
 ---
 title: I gestori eventi propagano le modifiche apportate all'esterno del modello | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303199"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [gestori di propagare le modifiche di fuori il modello di eventi](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model).  
-  
 In Visualization and Modeling SDK, è possibile definire gestori eventi dell'archivio per propagare le modifiche alle risorse all'esterno dell'archivio, ad esempio di variabile non di archivio, file, i modelli in altri archivi o altri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensioni. I gestori eventi Store vengono eseguiti dopo la fine della transazione in cui si è verificato un evento di attivazione. Vengono anche eseguite in un'operazione di annullamento o ripristino. Pertanto, a differenza di archivio regole, gli eventi di archiviazione sono particolarmente utili per l'aggiornamento dei valori che non rientrano nell'archivio. A differenza degli eventi di .NET, archivio i gestori eventi registrati per l'ascolto di una classe: non è necessario registrare un gestore separato per ogni istanza. Per altre informazioni su come scegliere tra diversi modi per gestire le modifiche, vedere [procedura: rispondere a e la propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md).  
   
  L'area grafica e altri controlli dell'interfaccia utente sono esempi di risorse esterne che possono essere gestiti dagli eventi dell'archivio.  

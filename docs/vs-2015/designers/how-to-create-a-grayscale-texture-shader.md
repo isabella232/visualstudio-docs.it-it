@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Creare uno shader con trama in scala di grigi | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9ec147f690612b6094925ae893d42bc4dd5145a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2fd97c38dcd61bc285b6d9a82d02a17f0fc47d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517512"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304798"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Procedura: Creare uno shader con trama in scala di grigi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: creare uno shader con trama in scala di grigi](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-grayscale-texture-shader).  
-  
 Questo documento illustra come usare la finestra di progettazione shader e il linguaggio DGSL (Directed Graph Shader Language) per creare uno shader con trama in scala di grigi. Questo shader modifica il valore di colore RGB del campione di trama e lo usa insieme al valore alfa invariato per impostare il colore finale.  
   
 ## <a name="creating-a-grayscale-texture-shader"></a>Creazione di uno shader con trama in scala di grigi  

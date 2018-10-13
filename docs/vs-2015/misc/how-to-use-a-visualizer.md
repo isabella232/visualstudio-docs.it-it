@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: usare un visualizzatore | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,12 +28,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: cc158e0d84db56bc26262d60acd0fb8e92e47188
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdf4c9b3a2ea8dc1322a10799f7f7051b71e035c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529210"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306514"
 ---
 # <a name="how-to-use-a-visualizer"></a>Procedura: utilizzare un visualizzatore
 È possibile usare un visualizzatore per visualizzare il contenuto di una variabile o di un oggetto in modo significativo per il tipo di dati. È possibile utilizzare i visualizzatori da **suggerimenti dati**, un **Watch** finestra, il **Auto** finestra o il **variabili locali** finestra.  
