@@ -1,7 +1,7 @@
 ---
 title: '&lt;Le pianificazioni&gt; elemento (programma di avvio automatico) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c72ee64bcc174bcd11d800bbc8dd0e1b9848b746
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba556d1f9ab7dfefd5502ee150354d4f664d6710
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250991"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Le pianificazioni&gt; elemento (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [ &lt;pianificazioni&gt; elemento (programma di avvio automatico)](https://docs.microsoft.com/visualstudio/deployment/schedules-element-bootstrapper).  
-  
 Il `Schedules` elemento contiene `Schedule` gli elementi, che definiscono l'ora specifica a quali comandi definiti dal `Command` elemento deve essere eseguito.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -50,7 +48,7 @@ Il `Schedules` elemento contiene `Schedule` gli elementi, che definiscono l'ora 
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `Schedules` elemento è figlio di `Product` elemento. Ciascuna `Product` potrebbe avere al massimo un elemento `Schedules` elemento. Il `Schedules` elemento non ha attributi.  
+ Il `Schedules` elemento è figlio di `Product` elemento. Ciascuna `Product` potrebbe avere al massimo un elemento `Schedules` elemento. L'elemento `Schedules` non ha attributi.  
   
 ## <a name="schedule"></a>Pianificazione  
  Il `Schedule` elemento è figlio di `Schedules` elemento. Oggetto `Schedules` deve avere almeno un elemento `Schedule` elemento.  

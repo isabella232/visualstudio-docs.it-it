@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Personalizzazione della visualizzazione di testo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39dca1309adeef8270ae7bb716c4274874451b91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 661c812625856551f2f6c8194fa97e5df21efbaf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199043"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Procedura dettagliata: personalizzazione della visualizzazione di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: personalizzazione della visualizzazione di testo](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-customizing-the-text-view).  
-  
 È possibile personalizzare una visualizzazione di testo, modificando le proprietà seguenti nella mappa dell'editor-format:  
   
 -   Margine indicatore  
@@ -46,7 +44,7 @@ La versione più recente di questo argomento è reperibile in [procedura dettagl
   
 ## <a name="creating-a-mef-project"></a>Creazione di un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `ViewPropertyTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `ViewPropertyTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -54,7 +52,7 @@ La versione più recente di questo argomento è reperibile in [procedura dettagl
   
 ## <a name="defining-the-content-type"></a>Definizione del tipo di contenuto  
   
-1.  Aggiungere un file di classe e denominarla `ViewPropertyModifier`.  
+1.  Aggiungere un file di classe e assegnargli il nome `ViewPropertyModifier`.  
   
 2.  Aggiungere il codice seguente `using` direttive:  
   

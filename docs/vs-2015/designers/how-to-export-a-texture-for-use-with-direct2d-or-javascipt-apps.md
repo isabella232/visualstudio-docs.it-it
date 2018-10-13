@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Esportare una trama da usare con app Direct2D o Javascript | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b064620174a3a64194eee3ae18bffbe330ece13b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43854b2d0aad0e1466f8d8b6fcb45921999aba5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186290"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procedura: Esportare una trama da usare con app Direct2D o Javascript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: esportare una trama da usare con Direct2D o App JavaScript](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps).  
-  
 La pipeline di contenuti immagine può generare trame compatibili con le convenzioni di rendering interne di Direct2D. Le trame di questo genere sono adatte alle app che usano Direct2D e alle app di Windows Store create mediante JavaScript.  
   
  Questo documento illustra le attività seguenti:  

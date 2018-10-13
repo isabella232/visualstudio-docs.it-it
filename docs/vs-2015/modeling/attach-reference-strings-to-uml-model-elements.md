@@ -1,7 +1,7 @@
 ---
 title: Allegare stringhe di riferimento agli elementi del modello UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0d917bf0553fbea06c73d3f4ce57f01b3f99a36d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f62c99f09638127f42f1f8e36594e60a58d3b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519595"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243854"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>Allegare stringhe di riferimento agli elementi del modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [stringhe di riferimento Attach UML di elementi del modello](https://docs.microsoft.com/visualstudio/modeling/attach-reference-strings-to-uml-model-elements).  
-  
 È possibile scrivere codice per allegare stringhe arbitrarie agli elementi del modello. Una stringa può essere, ad esempio, un URI, il risultato memorizzato nella cache di un calcolo o un riferimento del bus di modelli a un elemento in un altro modello. Ogni stringa è contenuta in un oggetto IReference. A ogni elemento del modello è possibile allegare il un numero di oggetti IReference desiderato.  
   
  A ogni oggetto IReference è associato un nome. Questo nome può essere usato per indicare come deve essere interpretato il valore di riferimento. Ad esempio, è possibile impostare il nome su "URI" per indicare che il valore deve essere interpretato come un URI. Sono disponibili alcuni valori di nomi di riferimento predefiniti usati dagli strumenti di modellazione.  

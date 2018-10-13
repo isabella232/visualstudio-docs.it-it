@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione Albero delle chiamate | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b672670dc621b66e51228678af025db8d7f449b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df170176397bd8b74c169e8331baaffa9f6b744
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518747"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225446"
 ---
 # <a name="call-tree-view"></a>Visualizzazione Albero delle chiamate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione albero delle chiamate](https://docs.microsoft.com/visualstudio/profiling/call-tree-view).  
-  
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati delle prestazioni delle chiamate di funzione.  
   
  Nella visualizzazione Albero delle chiamate è anche possibile espandere ed evidenziare il percorso di esecuzione di una funzione che ha richiesto più tempo o che è stata campionata con maggiore frequenza. Per visualizzare il percorso più oneroso a livello di prestazioni, fare clic con il pulsante destro del mouse sulla funzione e scegliere **Espandi percorso critico**.  
@@ -50,13 +48,13 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
   
  Per altre informazioni sulle definizioni delle colonne nella visualizzazione Albero delle chiamate, vedere gli argomenti seguenti:  
   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)  
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)  
   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)  
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)  
   
  [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-contention-data.md)  
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-contention-data.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)   

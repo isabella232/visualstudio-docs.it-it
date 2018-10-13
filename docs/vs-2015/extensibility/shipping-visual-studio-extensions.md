@@ -1,7 +1,7 @@
 ---
 title: Estensioni di Visual Studio di spedizione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,18 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c419de36379b277a661442e2d863696db02c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac367f2482a6b8bc5b5b25fca72e8ca05e1f58b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260187"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Distribuzione delle estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Nota**: la raccolta di Visual Studio verrà sostituita da Visual Studio Marketplace. Vedere la versione più recente di questo argomento per informazioni dettagliate.
 
-La versione più recente di questo argomento è reperibile in [spedizione di estensioni di Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/shipping-visual-studio-extensions).  
   
 Dopo aver completato lo sviluppo dell'estensione, è possibile installarla in altri computer, condividerlo con i colleghi e amici o pubblicarlo nella raccolta di Visual Studio. In questa sezione viene illustrato tutto ciò è necessario eseguire per pubblicare e gestire l'estensione: uso dei file con estensione VSIX, pubblicazione, localizzazione e l'aggiornamento.  
   

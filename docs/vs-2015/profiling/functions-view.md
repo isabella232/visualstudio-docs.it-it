@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione Funzioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4bc15c21400b720bd5dde9c18111d7cc68afc34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ae3a5053c6e1cdd5f3e8ab36c80823fdb13b41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205608"
 ---
 # <a name="functions-view"></a>Visualizzazione Funzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione funzioni](https://docs.microsoft.com/visualstudio/profiling/functions-view).  
-  
 La visualizzazione Funzioni elenca le funzioni chiamate durante la profilatura.  
   
  Per impostazione predefinita, le funzioni vengono elencate per nome. Per visualizzare le funzioni per modulo, fare clic con il pulsante destro del mouse nella finestra Visualizzazione Funzioni e quindi selezionare **Mostra in visualizzazione Modulo**. Verrà visualizzata la visualizzazione Modulo.  

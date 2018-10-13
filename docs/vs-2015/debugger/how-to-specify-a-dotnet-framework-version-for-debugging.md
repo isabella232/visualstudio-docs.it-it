@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: specificare una versione di .NET Framework per il debug | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a07975591525f9109fecfbfb5aaa27642fc9562
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 914c4bfb58485bd1d423e58bbe8fc8ab7f1a898a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272961"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Procedura: specificare una versione di .NET Framework per il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: specificare un .NET Framework versione per il debug](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-a-dotnet-framework-version-for-debugging).  
-  
 Il debugger di [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] supporta il debug delle versioni precedenti di Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], oltre che della versione corrente. Se si avvia un'applicazione da Visual Studio, il debugger può identificare sempre la versione corretta del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] per l'applicazione si esegue il debug. Se l'applicazione è già in esecuzione e si utilizza **collegarsi**, il debugger potrebbe non essere sempre in grado di identificare una versione precedente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. In questo caso, verrà visualizzato un messaggio di errore simile al seguente:  
   
  Il debugger ha interpretato erroneamente la versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] che verrà utilizzata dall'applicazione.  

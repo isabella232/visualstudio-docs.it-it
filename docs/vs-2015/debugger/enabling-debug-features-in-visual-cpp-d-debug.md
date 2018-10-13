@@ -1,7 +1,7 @@
 ---
 title: Abilitazione della funzionalità di Debug in Visual C++ (-D_DEBUG) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67de755105f30ee4a88daeef26bc29bc9841ae39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 452cf6ac386affb886e9a318e8686eea85e59d66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526558"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237146"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Attivazione delle funzionalità di debug in Visual C++ (/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [l'abilitazione delle funzionalità di Debug in Visual C++ (-D_DEBUG)](https://docs.microsoft.com/visualstudio/debugger/enabling-debug-features-in-visual-cpp-d-debug).  
-  
 Nelle [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], le funzionalità di debug, ad esempio le asserzioni vengono abilitate quando si compila il programma con il simbolo **debug** definito. È possibile definire **debug** in uno dei due modi:  
   
 -   Specificare **#define debug** nel codice sorgente, o  

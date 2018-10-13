@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Rilocare file binari instrumentati | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3114ee88feefdbb409ed1a1e1ad025a18123c002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d0ddfb3cd52e212965ebf928bf087519f38b0bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531279"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240981"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Procedura: Rilocare file binari instrumentati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: rilocare file binari instrumentati](https://docs.microsoft.com/visualstudio/profiling/how-to-relocate-instrumented-binaries).  
-  
 Durante la strumentazione, i probe vengono inseriti nel file binario per misurare le prestazioni dell'applicazione. Se si sceglie di rilocare il file binario instrumentato, una copia del file binario originale viene instrumentata e inserita nella posizione specificata. Questa opzione è utile se non si vuole che il profiler rinomini il file binario originale. Se il file binario non viene rilocato, la versione originale di tale file verrà sovrascritta.  
   
  **Requisiti**  

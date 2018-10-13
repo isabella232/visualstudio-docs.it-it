@@ -1,7 +1,7 @@
 ---
 title: Disattivare i vincoli durante il riempimento di un set di dati | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b14830b7ed4922b4e383ef245c0366c184b606e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c47d3cb5e02117cb75ab86579b0cb3b166bd510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259909"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Disattivare i vincoli durante il riempimento di un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [disattivare i vincoli durante il riempimento di un set di dati](https://docs.microsoft.com/visualstudio/data-tools/turn-off-constraints-while-filling-a-dataset).  
-  
   
 Se un set di dati contiene i vincoli (ad esempio i vincoli di chiave esterna), theycan genera errori relativi all'ordine delle operazioni che vengono eseguite a fronte del set di dati. Ad esempio, il caricamento di record figlio prima dei record padre loadingrelated, può violano un vincolo e causare un errore. Non appena si carica un record figlio, il vincolo controlla il relativo record figlio e genera un errore.  
   
@@ -57,7 +55,7 @@ Se un set di dati contiene i vincoli (ad esempio i vincoli di chiave esterna), t
   
 1.  Aprire il set di dati nel [creazione e modifica di dataset tipizzati](../data-tools/creating-and-editing-typed-datasets.md). Per altre informazioni, vedere [procedura: aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Nel **le proprietà** impostare nella finestra di <xref:System.Data.DataSet.EnforceConstraints%2A> proprietà `false`.  
+2.  Nella finestra **Proprietà** impostare la proprietà <xref:System.Data.DataSet.EnforceConstraints%2A> su `false`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)   

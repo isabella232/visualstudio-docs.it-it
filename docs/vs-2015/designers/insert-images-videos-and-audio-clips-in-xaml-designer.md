@@ -1,7 +1,7 @@
 ---
 title: Inserire immagini, video e clip audio nella finestra di progettazione XAML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097e2430feac4b5d9235a2684746f60f1cb87033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63d26d079e686339ad8ed93c5aefb8c7a468e899
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283959"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Inserire immagini, video e clip audio nella finestra di progettazione XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [inserire immagini, video e clip audio nella finestra di progettazione XAML](https://docs.microsoft.com/visualstudio/designers/insert-images-videos-and-audio-clips-in-xaml-designer).  
-  
 È possibile rendere l'app visivamente accattivante tramite immagini, video e clip audio.  
   
  ![Immagini ridimensionate per l'adattamento](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")  

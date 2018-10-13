@@ -1,7 +1,7 @@
 ---
 title: Creazione di modelli di progetti e di elementi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e288329637c6a6f421a5b32f19084897a31e5f22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d8d5321187d4665ebc10cb3e7471294df50db30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255352"
 ---
 # <a name="creating-project-and-item-templates"></a>Creazione di modelli di progetti e di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di Project and Item Templates](https://docs.microsoft.com/visualstudio/ide/creating-project-and-item-templates).  
-  
 I modelli di progetto e di elemento di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] forniscono stub riutilizzabili che supportano gli utenti con codice e strutture di base che è possibile utilizzare per gli scopi desiderati.  
   
 ## <a name="visual-studio-templates"></a>Modelli di Visual Studio  
