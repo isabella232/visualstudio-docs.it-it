@@ -1,7 +1,7 @@
 ---
 title: L'accesso ai dati locali e remoti in applicazioni ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3659df70b6b253d0cf23bb8eb033709fc6916e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532926"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218843"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Accesso a dati locali e remoti in applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [l'accesso ai dati locali e remoti in applicazioni ClickOnce](https://docs.microsoft.com/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
-  
 La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] offre diverse opzioni per la lettura e la scrittura di dati, in locale e in remoto.  
   
 ## <a name="local-data"></a>Dati locali  
@@ -53,7 +51,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
 >  Quando un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] viene disinstallata, viene rimossa anche la directory dei dati. Non usare mai la directory dei dati per archiviare dati gestiti dall'utente finale, ad esempio i documenti.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Contrassegno dei file di dati in una distribuzione ClickOnce  
- Per inserire un file esistente nella directory dei dati, è necessario contrassegnarlo come file di dati nel file manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Per altre informazioni, vedere [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Per inserire un file esistente nella directory dei dati, è necessario contrassegnarlo come file di dati nel file manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Per altre informazioni, vedere [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>Lettura e scrittura nella directory dei dati  
  Per la lettura dalla directory dei dati, l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deve richiedere le autorizzazioni di lettura. Analogamente, per la scrittura nella directory sono necessarie le autorizzazioni di scrittura. L'applicazione ottiene automaticamente queste autorizzazioni se è configurata per l'esecuzione con attendibilità totale. Per altre informazioni sull'elevazione delle autorizzazioni per l'applicazione utilizzando l'elevazione delle autorizzazioni o distribuzione di applicazioni attendibili, vedere [protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).  
@@ -84,7 +82,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
   
  Lo spazio di memorizzazione isolato funziona in tutte le versioni di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Lo spazio di memorizzazione isolato funziona anche in applicazioni parzialmente attendibili senza necessità di autorizzazioni aggiuntive. Usare lo spazio di memorizzazione isolato se l'applicazione deve essere eseguita con attendibilità parziale, ma deve gestire dati specifici dell'applicazione.  
   
- Per altre informazioni, vedere [isolato](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
+ Per altre informazioni, vedere [Spazio di memorizzazione isolato](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
 ### <a name="other-local-files"></a>Altri file locali  
  Se l'applicazione deve usare o salvare dati dell'utente finale come report, immagini, musica e così via, l'applicazione richiederà che <xref:System.Security.Permissions.FileIOPermission> sia in grado di leggere e scrivere i dati nel file system locale.  
@@ -93,7 +91,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
  A un certo punto, l'applicazione dovrà probabilmente recuperare informazioni da un sito Web remoto, ad esempio dati del cliente o informazioni di mercato. Questa sezione descrive le tecniche più comuni per il recupero dei dati remoti.  
   
 ### <a name="accessing-files-by-using-http"></a>Accesso ai file con HTTP  
- È possibile accedere ai dati da un server Web usando la classe <xref:System.Net.WebClient> o <xref:System.Net.HttpWebRequest> nello spazio dei nomi <xref:System.Net> . I dati possono essere file statici o applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] che restituiscono testo non elaborato o dati XML. Se i dati sono in formato XML, il modo più veloce per recuperarli prevede l'uso della classe <xref:System.Xml.XmlDocument> , il cui metodo <xref:System.Xml.XmlDocument.Load%2A> acquisisce un URL come argomento. Per un esempio, vedere [lettura di un documento XML nel DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
+ È possibile accedere ai dati da un server Web usando la classe <xref:System.Net.WebClient> o <xref:System.Net.HttpWebRequest> nello spazio dei nomi <xref:System.Net> . I dati possono essere file statici o applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] che restituiscono testo non elaborato o dati XML. Se i dati sono in formato XML, il modo più veloce per recuperarli prevede l'uso della classe <xref:System.Xml.XmlDocument> , il cui metodo <xref:System.Xml.XmlDocument.Load%2A> acquisisce un URL come argomento. Per un esempio, vedere [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
   
  È necessario tenere presenti i problemi legati alla sicurezza quando l'applicazione accede ai dati remoti tramite HTTP. Per impostazione predefinita, l'accesso dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] alle risorse di rete può essere limitato, a seconda di come è stata distribuita l'applicazione. Queste restrizioni vengono applicate per evitare che programmi dannosi accedano ai dati remoti riservati o che usino il computer di un utente per attaccare gli altri computer della rete.  
   

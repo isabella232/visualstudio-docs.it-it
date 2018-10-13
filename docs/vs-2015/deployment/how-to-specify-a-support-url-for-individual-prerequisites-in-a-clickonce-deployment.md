@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 99003812248a10ca8797a5727911caf4ba3a0a60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b7f9c9f718b0f76d2a2b0c313c951064c5dc6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262262"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedura: specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment).  
-  
 Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] possibile testare la distribuzione per un numero di prerequisiti che devono essere disponibili nel computer client per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] esecuzione dell'applicazione. Queste includono la versione minima richiesta del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], la versione del sistema operativo e tutti gli assembly che devono essere preinstallati nella global assembly cache (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], tuttavia, non è possibile installare uno di questi prerequisiti stesso. Se un prerequisito non viene trovato, semplicemente arresta l'installazione e visualizza una finestra di dialogo che spiega il motivo per cui l'installazione non è riuscita.  
   
  Esistono due metodi per l'installazione dei prerequisiti. È possibile installarli usando un'applicazione di avvio automatico. In alternativa, è possibile specificare un URL di supporto per i singoli prerequisiti, viene visualizzato agli utenti nella finestra di dialogo se il prerequisito non viene trovato. La pagina fa riferimento tale URL può contenere collegamenti a istruzioni per installare i prerequisiti richiesti. Se un'applicazione non specifica un URL di supporto per un prerequisito per singoli [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] consente di visualizzare l'URL del supporto specificato nel manifesto di distribuzione per l'applicazione nel suo complesso, se è definito.  

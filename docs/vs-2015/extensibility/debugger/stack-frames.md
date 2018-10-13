@@ -1,7 +1,7 @@
 ---
 title: Stack frame | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1efbc05528dd009098749fbe75316c0261b1b20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 301a782ebf0eda9b1e97c9f0f09c10a0985de4c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271596"
 ---
 # <a name="stack-frames"></a>Stack frame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Stack frame](https://docs.microsoft.com/visualstudio/extensibility/debugger/stack-frames).  
-  
 In termini di architettura del debugger, un **frame dello stack**:  
   
 -   È un'astrazione di un oggetto stack che fornisce il contesto di esecuzione di un thread. Un thread viene sempre eseguito all'interno di una funzione. Uno stack frame contiene le variabili locali della funzione e gli argomenti ad esso. Per eseguire il debug con Visual Studio, la lingua o l'ambiente in fase di debug deve supportare gli stack frame.  

@@ -1,7 +1,7 @@
 ---
 title: Riferimento API per SDK di modellazione per Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 65f8fffbe86bfb80916aa62d3f148795a3c279d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7cb71263ec8c375ce7263b0b0ebf393cccde99be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211575"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Riferimento API per SDK di modellazione per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [riferimento API per SDK di modellazione per Visual Studio](https://docs.microsoft.com/visualstudio/modeling/api-reference-for-modeling-sdk-for-visual-studio).  
-  
 La visualizzazione e Visual Studio Modeling SDK offre la piattaforma in cui vengono compilati gli strumenti UML e i linguaggi specifici di dominio (DSL).  
   
 > [!NOTE]

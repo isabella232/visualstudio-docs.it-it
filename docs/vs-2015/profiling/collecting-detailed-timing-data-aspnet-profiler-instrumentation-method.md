@@ -1,7 +1,7 @@
 ---
 title: Raccolta di dati di intervallo dettagliati per un'applicazione Web ASP.NET usando il metodo di strumentazione del profiler tramite la riga di comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eabd6d66079fc003bb87e867c0b5bb572c3bddc1
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: a1a6e53eb896a1e38033667620d07752294eb6a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47590490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255359"
 ---
 # <a name="collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Raccolta di dati di intervallo dettagliati per un'applicazione Web ASP.NET utilizzando il metodo di strumentazione del profiler tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Collecting intervallo dati dettagliati per un'applicazione Web ASP.NET usando il metodo di strumentazione del Profiler da riga di comando](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line).  
-  
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] usando lo strumento della riga di comando **VSPerfCmd** e il metodo di strumentazione.  
   
 > [!NOTE]

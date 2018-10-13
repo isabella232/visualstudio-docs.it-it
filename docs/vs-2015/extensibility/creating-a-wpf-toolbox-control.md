@@ -1,7 +1,7 @@
 ---
 title: Creazione di un controllo della casella degli strumenti WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0785ebf5177e892bd5c450525af10dd61d381fc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a521566d25509750334e4f1202699787c3343ca6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225615"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Creazione di un controllo della casella degli strumenti WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione di un controllo della casella degli strumenti WPF](https://docs.microsoft.com/visualstudio/extensibility/creating-a-wpf-toolbox-control).  
-  
 Il modello di controllo della casella degli strumenti WPF (Windows Presentation Framework) consente di creare controlli WPF che vengono aggiunti automaticamente per il **casella degli strumenti** quando l'estensione viene installata. Questo argomento illustra come usare il modello per creare un **casella degli strumenti** controllo che è possibile distribuire ad altri utenti.  
   
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -47,7 +45,7 @@ Il modello di controllo della casella degli strumenti WPF (Windows Presentation 
   
 1.  Aprire MyToolboxControl.xaml nella finestra di progettazione.  
   
-     La finestra di progettazione Mostra un' <xref:System.Windows.Controls.Grid> controllo contenente un <xref:System.Windows.Controls.Button> controllo.  
+     La finestra di progettazione mostra un controllo <xref:System.Windows.Controls.Grid> che contiene un controllo <xref:System.Windows.Controls.Button>.  
   
 2.  Definire il layout di griglia. Quando si seleziona il <xref:System.Windows.Controls.Grid> controllare, sui bordi superiore e sinistro della griglia vengono visualizzate le barre di controllo blu. È possibile aggiungere righe e colonne nella griglia facendo clic sulle barre.  
   

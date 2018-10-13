@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi di distribuzioni ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7ece1315bf95e5b24c0f689796752a5cde100654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20a162a8280854954a58fb0447957a3894325cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284752"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Risoluzione dei problemi relativi alle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [risoluzione dei problemi delle distribuzioni di ClickOnce](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-clickonce-deployments).  
-  
 Questo argomento illustra come diagnosticare e risolvere i problemi più comuni con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] le distribuzioni.  
   
  Nella maggior parte dei casi, un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione verrà scaricati in un computer ed eseguite senza problemi. Esistono alcuni casi, tuttavia, in cui i problemi di configurazione di server o un'applicazione Web possono causare problemi imprevisti.  

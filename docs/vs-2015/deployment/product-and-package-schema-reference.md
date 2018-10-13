@@ -1,7 +1,7 @@
 ---
 title: Riferimenti dello Schema di pacchetto e del prodotto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271033"
 ---
 # <a name="product-and-package-schema-reference"></a>Riferimenti dello schema di prodotti e package
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [riferimenti prodotti e Package Schema](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference).  
-  
 Oggetto *del file di prodotto* è un manifesto XML che descrive tutte le dipendenze esterne richieste da un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione. Esempi di dipendenze esterne di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e Microsoft Data Access Components (MDAC). Un file del pacchetto è simile a un file di prodotto ma viene usato per installare i componenti dipendenti dalla lingua di una dipendenza, ad esempio gli assembly localizzati, i contratti di licenza e documentazione.  
   
  Il file di prodotto e i pacchetti è costituito da uno un livello superiore `Product` o `Package` elemento, ognuno dei quali contiene gli elementi seguenti.  

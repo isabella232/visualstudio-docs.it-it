@@ -1,7 +1,7 @@
 ---
 title: Debug di applicazioni Web distribuite | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 896cec857b38dd5fb0d7119aed06ca08d2df1e35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc9aefdb6fca70eae0343a5f7fffde661b5a7be1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276315"
 ---
 # <a name="debugging-deployed-web-applications"></a>Debug di applicazioni Web distribuite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [debug di applicazioni Web distribuite](https://docs.microsoft.com/visualstudio/debugger/debugging-deployed-web-applications).  
-  
 Se è necessario eseguire il debug di un'applicazione Web in esecuzione su un server di produzione, è consigliabile procedere con cautela. In caso di connessione al processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] per eseguire il debug e raggiungere un punto di interruzione, ad esempio, tutto il codice gestito nel processo di lavoro si arresta. L'arresto di tutto il codice gestito nel processo di lavoro può comportare l'arresto del lavoro per tutti gli utenti del server. Prima di eseguire il debug su un server di produzione, tenere in considerazione il potenziale impatto sulle attività produttive.  
   
  Per utilizzare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per eseguire il debug di un'applicazione distribuita, è necessario effettuare la connessione al processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e verificare che il debugger abbia accesso ai simboli per l'applicazione. Inoltre, è necessario individuare e aprire i file di origine dell'applicazione. Per altre informazioni, vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [procedura: trovare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), e [requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md).  

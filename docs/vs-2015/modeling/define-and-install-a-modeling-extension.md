@@ -1,7 +1,7 @@
 ---
 title: Definire e installare un'estensione di modellazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590580"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234403"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definire e installare un'estensione di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [definire e installare un'estensione di modellazione](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension).  
-  
 In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazione. In questo modo, è possibile adattare i modelli e diagrammi alle proprie esigenze. Ad esempio, è possibile definire comandi di menu, profili UML, vincoli di convalida ed elementi della casella degli strumenti. È possibile definire diversi componenti in un'unica estensione. È anche possibile distribuire queste estensioni ad altri utenti di Visual Studio in formato [VSIX (Visual Studio Integration Extension)](http://go.microsoft.com/fwlink/?LinkId=160780). È possibile creare un'estensione VSIX tramite un progetto VSIX in Visual Studio.  
   
 ## <a name="requirements"></a>Requisiti  
- Visualizzare [requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="creating-a-modeling-extension-solution"></a>Creazione di una soluzione di estensione di modellazione  
  Per definire un'estensione di modellazione, è necessario creare una soluzione contenente questi progetti:  
@@ -102,9 +100,9 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
   
 #### <a name="to-run-an-extension-during-its-development"></a>Per eseguire un'estensione durante lo sviluppo  
   
-1.  Nel [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debug** menu, scegliere **Avvia debug**.  
+1.  Nel menu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debug** scegliere **Avvia debug**.  
   
-     Il progetto viene compilato e una nuova istanza di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] viene avviata in modalità sperimentale.  
+     Il progetto viene compilato e viene avviata una nuova istanza di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] in modalità sperimentale.  
   
     -   In alternativa è possibile scegliere **Avvia senza eseguire debug**, che riduce il tempo impiegato per avviare il programma.  
   

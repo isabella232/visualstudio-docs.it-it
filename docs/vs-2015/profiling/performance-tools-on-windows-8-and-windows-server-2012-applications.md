@@ -1,7 +1,7 @@
 ---
 title: Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195520"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](https://docs.microsoft.com/visualstudio/profiling/performance-tools-on-windows-8-and-windows-server-2012-applications).  
-  
 Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative delle modalità di raccolta dei dati in queste piattaforme da parte degli strumenti per le prestazioni di Visual Studio. Le app di Windows Store richiedono nuove tecniche di raccolta. Questo argomento descrive le modifiche agli strumenti per le prestazioni nelle piattaforme Windows 8 e Windows Server 2012.  
   
 > [!NOTE]
@@ -143,7 +141,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
  **Raccolta di dati TIP in un computer remoto**  
   
- Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il **vs\_profiler\_**_\<piattaforma >_ **\_**  _\<Lingua >_**.exe** file la _% VSInstallDir %_**\Team Tools\Setups**cartella di Visual Studio nel computer remoto del computer e installarlo. Non è possibile utilizzare gli strumenti di profilatura di [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) download del pacchetto.  
+ Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il **vs\_profiler\_**_\<piattaforma >_ **\_**  _\<Lingua >_**.exe** file la _% VSInstallDir %_**\Team Tools\Setups**cartella di Visual Studio nel computer remoto del computer e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download [Remote Tools per Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  È possibile usare [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) per raccogliere i dati di profilatura.  
   

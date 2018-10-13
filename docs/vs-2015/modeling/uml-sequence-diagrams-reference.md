@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammi di sequenza UML: Riferimento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47533168"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195130"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>Diagrammi di sequenza UML: riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [diagrammi di sequenza UML: riferimento](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference).  
-  
 In Visual Studio, un *diagramma di sequenza* Mostra un'interazione che rappresenta la sequenza di messaggi tra istanze di classi, componenti, sottosistemi o attori. Data e ora scorrono verso la parte inferiore del diagramma e mostrano il flusso di controllo da un partecipante a un altro. Usare i diagrammi di sequenza per visualizzare istanze ed eventi, invece di classi e metodi. Nel diagramma possono essere visualizzate più istanze dello stesso tipo e più di un'occorrenza dello stesso messaggio.  
   
  I diagrammi sequenza UML fanno parte di un modello UML ed esistono soltanto all'interno dei progetti di modellazione UML. Per creare un diagramma di sequenza UML nel **Architecture** menu, fare clic su **nuovo diagramma livello o UML**. Altre informazioni su come creare e disegnare [diagrammi di sequenza UML](../modeling/uml-sequence-diagrams-guidelines.md) oppure [diagrammi di modellazione UML](../modeling/edit-uml-models-and-diagrams.md) in generale.  

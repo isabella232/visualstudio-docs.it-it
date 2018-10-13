@@ -1,7 +1,7 @@
 ---
 title: Opzioni, Editor di testo, Tutti i linguaggi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fd7fc6b0c5c82c29d5f315a8797416e540dcb99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2584f56e31dea55ff7a4d67b61b8c7453ade4c10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255710"
 ---
 # <a name="options-text-editor-all-languages"></a>Opzioni, Editor di testo, Tutti i linguaggi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [opzioni, Editor di testo, tutti i linguaggi](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-all-languages).  
-  
   
 Questa finestra di dialogo consente di modificare il comportamento predefinito dell'editor del codice. Queste impostazioni si applicano anche agli altri editor basati sull'editor del codice, come ad esempio la visualizzazione dell'origine della finestra di progettazione HTML. Per aprire questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**. All'interno della cartella dell'**Editor di testo** espandere la sottocartella **All Languages** (Tutti i linguaggi), quindi scegliere **Generale**.  
   

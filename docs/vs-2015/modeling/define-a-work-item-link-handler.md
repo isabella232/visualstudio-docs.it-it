@@ -1,7 +1,7 @@
 ---
 title: Definire un gestore di collegamento elemento di lavoro | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532567"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290420"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definire un gestore dei collegamenti agli elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [definire un gestore di collegamento elemento di lavoro](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler).  
-  
 È possibile creare un progetto Visual Studio Integration Extension che risponde quando l'utente crea o elimina un collegamento tra un elemento del modello UML e un elemento di lavoro. Ad esempio, quando l'utente sceglie di collegare un nuovo elemento di lavoro a un elemento del modello, il codice può inizializzare i campi dell'elemento di lavoro dai valori nel modello.  
   
 ## <a name="set-up-a-uml-extension-solution"></a>Impostare una soluzione di estensione UML  
@@ -163,11 +161,11 @@ namespace WorkItems
   
 1.  Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.  
   
-     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      **Risoluzione dei problemi**: se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non viene avviato, verificare che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
-2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione.  
+2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione.  
   
 3.  Creare un elemento del modello, ad esempio la classe UML, e impostarne il nome.  
   

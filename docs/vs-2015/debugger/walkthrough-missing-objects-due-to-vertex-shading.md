@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 16856796cf6b31b8273fa4d2d3c35b7dd100e0cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879824"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241969"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: mancano gli oggetti a causa di ombreggiatura vertice](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading).  
-  
 Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica della grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per esaminare un problema dovuto a un oggetto mancante a causa di un errore che si verifica durante la fase Vertex shader.  
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  

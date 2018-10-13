@@ -1,7 +1,7 @@
 ---
 title: Visualizzare i dati del documento e documento negli editor personalizzati | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6df543f832fa85ea6d74fc2846355fbf9deab912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 258718a99e774b7098ff29dd66efc51a57062475
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206908"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dati documento e visualizzazione documento negli editor personalizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [i dati del documento e visualizzazione documento negli editor personalizzati](https://docs.microsoft.com/visualstudio/extensibility/document-data-and-document-view-in-custom-editors).  
-  
 Un editor personalizzato è costituita da due parti: un oggetto dati del documento e un oggetto visualizzazione del documento. Come suggeriscono i nomi, l'oggetto dati del documento rappresenta i dati di testo da visualizzare e l'oggetto visualizzazione del documento (o "visualizzazione") rappresenta uno o più finestre in cui visualizzare l'oggetto dati del documento.  
   
 ## <a name="document-data-object"></a>Oggetto dati del documento  

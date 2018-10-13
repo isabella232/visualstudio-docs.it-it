@@ -1,7 +1,7 @@
 ---
 title: Autorizzazione del proxy richiesta | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 855fa85a8135ceac60f262fc5510fad4aa34b006
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2650dadddefe3be18a4406eb4fd07c5599622212
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526959"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259212"
 ---
 # <a name="proxy-authorization-required"></a>Autorizzazione del proxy richiesta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [richiesta autorizzazione Proxy](https://docs.microsoft.com/visualstudio/ide/reference/proxy-authorization-required).  
-  
   
 Generalmente questo errore si verifica quando gli utenti sono connessi a Visual Studio Online tramite un server proxy e il server proxy blocca le chiamate. Visual Studio Online viene usato per mantenere l'utente connesso all'IDE.  
   

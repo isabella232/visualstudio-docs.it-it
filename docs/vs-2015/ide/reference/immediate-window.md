@@ -1,7 +1,7 @@
 ---
 title: Finestra di controllo immediato | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3bd020a66b29180bdfb3430d1710e8f3c29a9b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203671"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [finestra controllo immediato](https://docs.microsoft.com/visualstudio/ide/reference/immediate-window).  
-  
   
 Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le espressioni, eseguire istruzioni, i valori delle variabili di stampa e così via. Consente di immettere le espressioni che devono essere valutate ed eseguite dal linguaggio di sviluppo durante il debug. Per visualizzare il **immediato** finestra, aprire un progetto per la modifica, quindi scegliere **Windows** dal **Debug** dal menu **immediato**, oppure premere CTRL + ALT + I.  
   

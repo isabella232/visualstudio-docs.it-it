@@ -1,7 +1,7 @@
 ---
 title: Persistenza del progetto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5c44fde30720fe17f4b9f3a5d679750ccb78ee6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 068f919ae0717158220712bfe010c58cd401d5d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177108"
 ---
 # <a name="project-persistence"></a>Salvataggio permanente dei progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [salvataggio permanente dei progetti](https://docs.microsoft.com/visualstudio/extensibility/internals/project-persistence).  
-  
 La persistenza è una considerazione di progettazione chiave per il progetto. La maggior parte dei progetti usano elementi di progetto che rappresentano file; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] supporta anche progetti i cui dati sono non basate su file. Entrambi i file di proprietà del progetto e il file di progetto devono essere persistente. L'IDE indica il progetto per salvare se stesso o un elemento del progetto.  
   
  Modelli per i progetti vengono passati alla factory del progetto. I modelli devono supportare l'inizializzazione di tutti gli elementi di progetto in base ai requisiti del tipo di progetto specifico. Questi modelli in un secondo momento possono essere salvati come file di progetto e gestiti dall'IDE tramite la soluzione. Per altre informazioni, vedere [creazione di istanze da usando progetto le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) e [soluzioni](../../extensibility/internals/solutions.md).  

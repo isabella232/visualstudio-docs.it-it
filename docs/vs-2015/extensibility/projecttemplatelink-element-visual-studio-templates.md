@@ -1,7 +1,7 @@
 ---
 title: Elemento ProjectTemplateLink (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 272ae0fc3e494db74ddc6f610c57712458ac06c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28114c13c829246dc7adcf41eacd7bf3868bd2cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288899"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elemento ProjectTemplateLink (modelli di Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/projecttemplatelink-element-visual-studio-templates).  
-  
 Specifica il percorso del file .vstemplate di un progetto in un modello multiprogetto.  
   
  \<VSTemplate >  

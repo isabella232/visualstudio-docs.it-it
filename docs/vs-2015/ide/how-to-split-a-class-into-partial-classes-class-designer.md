@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Dividere una classe in classi parziali (Progettazione classi) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bbf355caf4a67e54a53f7447f813bf5870b9086
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245479"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Procedura: dividere una classe in classi parziali (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: dividere una classe in classi parziali (Progettazione classi)](https://docs.microsoft.com/visualstudio/ide/how-to-split-a-class-into-partial-classes-class-designer).  
-  
 È possibile dividere la dichiarazione di una classe o struttura in più dichiarazioni usando la parola chiave `Partial` in Visual Basic o la parola chiave `partial` in Visual C#. Si può usare il numero di dichiarazioni parziali desiderato, in un numero qualsiasi di file di origine differenti oppure in un singolo file di origine. Tutte le dichiarazioni, tuttavia, devono trovarsi nello stesso assembly e nello stesso spazio dei nomi.  
   
  Le classi parziali sono utili in varie situazioni. Ad esempio, quando si lavora su progetti di grandi dimensioni, la separazione di una classe in più file consente a più programmatori di lavorare in contemporanea. Quando si lavora con il codice generato da Visual Studio, è possibile modificare la classe senza dover ricreare il file di origine. (Il codice wrapper per Windows Form e per servizi Web è un esempio di codice generato da Visual Studio.) È possibile creare codice che usa classi generate automaticamente senza dover modificare il file creato da Visual Studio.  

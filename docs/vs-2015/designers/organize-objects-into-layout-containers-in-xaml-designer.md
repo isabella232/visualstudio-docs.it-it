@@ -1,7 +1,7 @@
 ---
 title: Organizzare gli oggetti in contenitori di layout nella finestra di progettazione XAML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329e41454431c0d19adda5175b455449d4f48e7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219557"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [organizzare gli oggetti in contenitori di layout nella finestra di progettazione XAML](https://docs.microsoft.com/visualstudio/designers/organize-objects-into-layout-containers-in-xaml-designer).  
-  
 Si supponga di voler impostare la posizione degli oggetti, quali immagini, pulsanti e video, in una pagina. È probabile che si preferisca organizzarli in righe e colonne, su un'unica riga disposti orizzontalmente o verticalmente o impostare per ognuno una posizione fissa.  
   
  Dopo aver dedicato tempo all'organizzazione degli oggetti nella pagina, è possibile passare alla scelta di un pannello di layout. Inizialmente in tutte le pagine è presente un pannello di layout in quanto viene usato per aggiungervi gli oggetti. Per impostazione predefinita, si tratta di un **griglia** ma è possibile modificarlo.  

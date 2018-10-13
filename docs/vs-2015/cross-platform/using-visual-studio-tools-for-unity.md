@@ -1,7 +1,7 @@
 ---
 title: Uso di Strumenti di Visual Studio Tools per Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 036a3a8b3e3c055325f1062a39ad439160378684
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199212"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso di Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [usando Visual Studio Tools per Unity](https://docs.microsoft.com/visualstudio/cross-platform/using-visual-studio-tools-for-unity).  
-  
   
 In questa sezione verrà illustrato come usare le funzionalità per l'integrazione e la produttività di Visual Studio Tools per Unity e come usare il debugger di Visual Studio per lo sviluppo di Unity.  
   
@@ -104,7 +102,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
 |Apri procedura guidata MonoBehaviour rapidi|**CTRL+MAIUSC+Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
 |Apri Esplora progetti Unity|**ALT+MAIUSC+E**|**View.UnityProjectExplorer**|  
 |Accedi alla documentazione di Unity|**CTRL+ALT+M, CTRL+H**|**Help.UnityAPIReference**|  
-|Connetti al debugger Unity (lettore o editor)|**_Nessun valore predefinito_**|**Debug.AttachUnityDebugger**|  
+|Connetti al debugger Unity (lettore o editor)|**_Non sono previsti valori predefiniti_**|**Debug.AttachUnityDebugger**|  
   
  Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di scelta rapida predefinite. Per informazioni su come modificarle, vedere [Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx).  
   

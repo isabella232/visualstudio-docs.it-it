@@ -1,7 +1,7 @@
 ---
 title: Set di regole base di correttezza per codice gestito | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83f0ac2eb1345a8a933e92682e0f6a76ed3d0edf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b435d813ad1e7c9308bfa6a7d8d243b877d6d6b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184591"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [set di regole regole base di correttezza per codice gestito](https://docs.microsoft.com/visualstudio/code-quality/basic-correctness-rules-rule-set-for-managed-code).  
-  
 Il set di regole regole base di correttezza è incentrato sulla presenza di errori logici e gli errori più comuni nell'utilizzo di API del framework. Le regole base di correttezza includono le regole nel set di regole regole minime. Per altre informazioni, vedere [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) è necessario includere questo set di regole per espandere l'elenco degli avvisi segnalati dalle regole minime consigliate.  
   
  Nella tabella seguente vengono descritte tutte le regole nel set di regole regole base di correttezza Microsoft.  

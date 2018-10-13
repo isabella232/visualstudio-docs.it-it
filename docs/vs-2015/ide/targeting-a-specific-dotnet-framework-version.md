@@ -1,7 +1,7 @@
 ---
 title: Sviluppo per una versione specifica di .NET Framework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae41e7aea5bd4a1a355993a061829a190e1ef80b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529436"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277927"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Sviluppo per una versione specifica di .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [come destinazione una versione specifica di .NET Framework](https://docs.microsoft.com/visualstudio/ide/targeting-a-specific-dotnet-framework-version).  
-  
 In Visual Studio è possibile specificare la versione o il profilo di .NET Framework per cui si vuole sviluppare il progetto. Per un'applicazione da eseguire in un altro computer, la versione di .NET Framework per cui viene sviluppata l'applicazione deve essere compatibile con quella installata nel computer.  
   
  Questa sezione contiene argomenti che descrivono come sviluppare progetti per versioni specifiche di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  

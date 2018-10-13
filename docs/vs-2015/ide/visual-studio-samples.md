@@ -1,7 +1,7 @@
 ---
 title: Esempi di Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2b8f5a4a957616743634ac033a56a836585e6444
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27345bb7bdedd833c4eaf2a05ce5029960373ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519193"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206225"
 ---
-# <a name="visual-studio-samples"></a>Esempi di Visual Studio
+# <a name="visual-studio-samples"></a>Visual Studio Samples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [esempi di Visual Studio](https://docs.microsoft.com/visualstudio/ide/visual-studio-samples).  
-  
 È possibile trovare esempi di Visual Studio sul sito Web [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkID=127810) .  
   
  È possibile usare la finestra di dialogo **Nuovo progetto** per ricercare gli esempi. Per aprire la finestra di dialogo, scegliere **File**, **Nuovo**, **Progetto**nella barra dei menu.  
@@ -49,7 +47,7 @@ La versione più recente di questo argomento è reperibile in [esempi di Visual 
 |[Esempi di VSSDK](http://aka.ms/vs2015sdksamples)|Illustra come estendere Visual Studio.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Getting Started with Visual C# and Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) (Introduzione a Visual C# e Visual Basic)
+ [Guida introduttiva a Visual C# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Implementazione della colorazione della sintassi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259254"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementazione della colorazione della sintassi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [implementazione della colorazione della sintassi](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring).  
-  
 Quando il servizio di linguaggio fornisce la colorazione della sintassi, il parser converte una riga di testo in una matrice di elementi colorabili e restituisce i tipi di token corrispondenti a questi elementi colorabili. Il parser deve restituire tipi di token che appartengono a un elenco di elementi colorabili. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Consente di visualizzare ogni elemento colorabile nella finestra del codice in base agli attributi assegnati dall'oggetto colorizzatore per il tipo di token appropriato.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] non specifica un'interfaccia, parser e implementazione di parser è responsabilità dell'utente. Tuttavia, un'implementazione di parser predefinita viene fornita nel progetto di Visual Studio Language Pack. Per codice gestito, il framework di pacchetto gestito (MPF) fornisce supporto completo per la colorazione del testo.  

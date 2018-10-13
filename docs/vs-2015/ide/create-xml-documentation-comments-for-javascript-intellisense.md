@@ -1,7 +1,7 @@
 ---
 title: Creare commenti in formato documentazione XML per IntelliSense per JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881020"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220558"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Creare commenti in formato documentazione XML per IntelliSense per JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [documentazione di Visual Studio 2017](/visualstudio/).  
-  
 *Commenti in formato documentazione XML* sono JavaScript commenti aggiungere uno script per fornire informazioni sugli elementi di codice, ad esempio variabili, funzioni e campi. In Visual Studio, queste descrizioni di testo vengono visualizzate con IntelliSense quando si fa riferimento la funzione di script.  
   
  In questo argomento fornisce un'esercitazione di base sull'uso di commenti in formato documentazione XML. Per informazioni sull'uso di altri elementi, ad esempio [ \<var >](../ide/var-javascript.md) e [ \<valore >](../ide/value-javascript.md)e per altri esempi di codice, vedere [commenti in formato documentazione XML ](../ide/xml-documentation-comments-javascript.md). Per informazioni su come fornire le informazioni di IntelliSense per una richiamata asincrona, ad esempio un `Promise`, vedere [ \<restituisce >](../ide/returns-javascript.md).  

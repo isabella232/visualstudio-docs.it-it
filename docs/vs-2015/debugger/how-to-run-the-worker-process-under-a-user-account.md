@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: eseguire il processo di lavoro con un Account utente | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08ac00384110cc73175286365fef6ee4b67a0170
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a07e492bf8c3ae71b430acd5bde69a852b96baee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280189"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: eseguire il ruolo di lavoro processo con un Account utente](https://docs.microsoft.com/visualstudio/debugger/how-to-run-the-worker-process-under-a-user-account).  
-  
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.  
   
 ## <a name="procedure"></a>Routine  
@@ -49,7 +47,7 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
   
 3.  Salvare il file machine.config.  
   
-4.  In [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)] IIS 6.0 è installato per impostazione predefinita. Il processo di lavoro corrispondente è w3wp.exe. Per eseguirlo in modalità IIS 6.0 con aspnet_wp.exe come processo di lavoro, è necessario attenersi alla procedura riportata di seguito:  
+4.  In [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)]IIS 6.0 è installato per impostazione predefinita. Il processo di lavoro corrispondente è w3wp.exe. Per eseguirlo in modalità IIS 6.0 con aspnet_wp.exe come processo di lavoro, è necessario attenersi alla procedura riportata di seguito:  
   
     1.  Fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione** e infine **Internet Information Services**.  
   
@@ -73,7 +71,7 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
     net start w3svc  
     ```  
   
-6.  Individuare la cartella dei file temporanei di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], che dovrebbe trovarsi nello stesso percorso della cartella CONFIG. Fare doppio clic su oggetto temporaneo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] cartella dei file e scegliere **proprietà** menu di scelta rapida.  
+6.  Individuare la cartella dei file temporanei di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , che dovrebbe trovarsi nello stesso percorso della cartella CONFIG. Fare clic con il pulsante destro del mouse sulla cartella dei file temporanei di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , quindi scegliere **Proprietà** dal menu di scelta rapida.  
   
 7.  Nella finestra di dialogo **Proprietà file ASP.NET temporanei** scegliere la scheda **Sicurezza** .  
   

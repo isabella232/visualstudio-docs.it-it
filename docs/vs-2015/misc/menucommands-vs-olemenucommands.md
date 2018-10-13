@@ -1,7 +1,7 @@
 ---
 title: Confronto tra oggetti MenuCommand e OleMenuCommands | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: douge
-ms.openlocfilehash: b60f56c0622750751848e0d6492c4235c9458e9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c555b306c38d852f8fbd02c6f2b9347f4a359559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193583"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>Confronto tra oggetti MenuCommand e OleMenuCommand
 È possibile creare comandi di menu derivandoli dall'oggetto <xref:System.ComponentModel.Design.MenuCommand> o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> e implementando i gestori eventi appropriati. Nella maggior parte dei casi, è possibile usare <xref:System.ComponentModel.Design.MenuCommand>, come avviene nel modello di progetto VSPackage, ma talvolta potrebbe essere necessario usare <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -71,7 +71,7 @@ ms.locfileid: "47519095"
      
     1.  Impostare i campi `guid` e `id` in modo che corrispondano alla coppia GUID:ID del nuovo comando.  
   
-    2.  Impostare l'attributo `priority` .  
+    2.  Impostare l'attributo `priority`.  
   
          L'attributo `priority` viene usato dal file VSCT per determinare la posizione del pulsante tra gli altri oggetti nel gruppo padre.  
   
@@ -210,7 +210,7 @@ ms.locfileid: "47519095"
   
 1.  Restituire <xref:Microsoft.VisualStudio.VSConstants.S_OK> per i comandi validi.  
   
-2.  Impostare l'elemento `cmdf` del parametro `prgCmds` .  
+2.  Impostare l'elemento `cmdf` del parametro `prgCmds`.  
   
      Il valore dell'elemento `cmdf` è l'unione logica dei valori dell'enumerazione <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> , combinati usando l'operatore logico OR (operatore`|`).  
   
@@ -238,7 +238,7 @@ ms.locfileid: "47519095"
   
          `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-    -   Se il comando usa il flag `TEXTCHANGES` , impostare l'elemento `rgwz` del parametro `pCmdText` sul nuovo testo del comando e impostare l'elemento `cwActual` del parametro `pCmdText` sulla dimensione della stringa di comando.  
+    -   Se il comando usa il flag `TEXTCHANGES`, impostare l'elemento `rgwz` del parametro `pCmdText` sul nuovo testo del comando e impostare l'elemento `cwActual` del parametro `pCmdText` sulla dimensione della stringa di comando.  
   
      Per le condizioni di errore, il metodo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> deve gestire i casi di errore seguenti:  
   

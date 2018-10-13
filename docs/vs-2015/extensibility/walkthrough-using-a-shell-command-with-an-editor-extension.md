@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Uso di un comando della Shell con un'estensione dell'Editor | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0965a44350d431dcc60058956f0b42f5393025e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea320b18dc9164c0cbf87cbccf1c33ea7fab2230
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185588"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Procedura dettagliata: uso di un comando della shell con un'estensione dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: uso di un comando della Shell con un'estensione di Editor](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-using-a-shell-command-with-an-editor-extension).  
-  
 Da un pacchetto VSPackage, è possibile aggiungere le funzionalità, ad esempio i comandi di menu per l'editor. Questa procedura dettagliata illustra come aggiungere un'area di controllo a una visualizzazione di testo nell'editor quando si richiama un comando di menu.  
   
  Questa procedura dettagliata illustra l'uso di un pacchetto VSPackage insieme a una parte di componente Managed Extensibility Framework (MEF). È necessario usare un pacchetto VSPackage per registrare il comando di menu con la shell di Visual Studio e si può usare il comando per accedere alla parte del componente MEF.  
