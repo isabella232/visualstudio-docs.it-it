@@ -1,7 +1,7 @@
 ---
 title: Registrazione e selezione (VSPackage di controllo codice sorgente) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef8cf369d2660523bdfe4ad6eaa83be5748eedf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519001"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305786"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrazione e selezione (VSPackage di controllo del codice sorgente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [registrazione e selezione (VSPackage di controllo codice sorgente)](https://docs.microsoft.com/visualstudio/extensibility/internals/registration-and-selection-source-control-vspackage).  
-  
 Un pacchetto VSPackage deve essere registrata per esporla a controllo del codice sorgente di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Se più di un controllo del codice sorgente VSPackage è registrato, l'utente può selezionare quale VSPackage da caricare in momenti appropriati. Visualizzare [VSPackage](../../extensibility/internals/vspackages.md) per altre informazioni sui pacchetti VSPackage e come registrarle.  
   
 ## <a name="registering-a-source-control-package"></a>La registrazione di un pacchetto controllo del codice sorgente  

@@ -1,7 +1,7 @@
 ---
 title: Utilizzo dei diagrammi classi (Progettazione classi) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf7812d7d0047b71bac846e03ec15e7b3c92869f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306709"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Utilizzo dei diagrammi classi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [utilizzo dei diagrammi classi (Progettazione classi)](https://docs.microsoft.com/visualstudio/ide/working-with-class-diagrams-class-designer).  
-  
 I diagrammi classi consentono di comprendere la struttura delle classi dei progetti scritti da altri utenti oppure risalenti a molto tempo prima. È possibile usarli per personalizzare, condividere e presentare informazioni sui progetti ad altri utenti.  
   
  La prima fase della presentazione di informazioni sui progetti consiste nella creazione di un diagramma classi che comprenda gli elementi da visualizzare. Per altre informazioni, vedere [Visualizzazione dei tipi e delle relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md). È possibile creare più diagrammi classi per un progetto, da usare per mostrare una visualizzazione distinta del progetto, un subset scelto dei tipi del progetto oppure un subset scelto dei membri dei tipi.  

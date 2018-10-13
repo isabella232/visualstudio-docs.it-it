@@ -1,7 +1,7 @@
 ---
 title: Flag di bit usati da comandi specifici | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7f9a633dd88e0018c6c9ccc82438ed99770885c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97569043b84cbfc18a62e3058f03e4f7f6c4b8f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528905"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300365"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flag di bit usati da comandi specifici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [flag di bit usati da comandi specifici](https://docs.microsoft.com/visualstudio/extensibility/bitflags-used-by-specific-commands).  
-  
 Il comportamento di un numero di funzioni nell'API dei plug-in controllo di origine può essere modificato impostando uno o più bit in un singolo valore. Questi valori sono noti come flag di bit. I vari flag di bit usati dall'API dei plug-in controllo di origine sono descritte in dettaglio in questo caso, raggruppati per la funzione che li Usa.  
   
 ## <a name="checked-out-flag"></a>Flag di stato estratto  

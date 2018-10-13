@@ -1,7 +1,7 @@
 ---
 title: Test delle app di Store con Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: cf4000b4-91b5-4b3f-a00d-cc8d192467c2
 caps.latest.revision: 22
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1abdb56b46ce7c393113b097e345470a615aa50f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 68f0c280ab8d733b274853317c9bd917bd22046c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532147"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301054"
 ---
 # <a name="testing-store-apps-with-visual-studio"></a>Test delle applicazioni Store con Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [App Store di Testing con Visual Studio](https://docs.microsoft.com/visualstudio/test/testing-store-apps-with-visual-studio).  
-  
 Visual Studio include strumenti di test che consentono di garantire l’alta qualità dell'app di Store.  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  

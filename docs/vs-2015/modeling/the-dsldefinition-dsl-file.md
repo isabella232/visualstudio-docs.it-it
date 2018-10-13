@@ -1,7 +1,7 @@
 ---
 title: Il file Dsldefinition. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8d6df6e4957eec471e4d0f1212493c088e19703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bf56b06771b905ec4982f7de7f91648c2e6b3a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306124"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [il file Dsldefinition DSL](https://docs.microsoft.com/visualstudio/modeling/the-dsldefinition-dsl-file).  
-  
 In questo argomento descrive la struttura del file Dsldefinition DSL nel progetto Dsl di una [!INCLUDE[dsl](../includes/dsl-md.md)] soluzione, che definisce un *linguaggio specifico di dominio*. Il file Dsldefinition DSL descrive le classi e relazioni di un linguaggio specifico di dominio, con il diagramma, forme, connettori, il formato di serializzazione, e **casella degli strumenti** del linguaggio specifico di dominio e il relativo strumenti di modifica. In una soluzione di linguaggio specifico di dominio, il codice che definisce tali strumenti viene generato in base alle informazioni presenti nel file DslDefinition.dsl.  
   
  In genere, si utilizza il *progettista del linguaggio specifico di dominio* per modificare il file Dsldefinition DSL. Poiché il formato del file DslDefinition.dsl non elaborato è XML, è possibile aprirlo in un editor XML. Può risultare utile comprendere quali informazioni sono contenute nel file e come sono organizzate per eseguire il debug ed estendere le funzionalità.  

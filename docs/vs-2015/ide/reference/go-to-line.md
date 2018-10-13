@@ -1,7 +1,7 @@
 ---
 title: Vai alla riga | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7f0268bfc2519600022d2d2214c693fe3a2ae0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 129783c558df130bc952c2573abad968a9df9d41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531285"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304109"
 ---
 # <a name="go-to-line"></a>Vai alla riga
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Vai alla riga](https://docs.microsoft.com/visualstudio/ide/reference/go-to-line).  
-  
   
 Questa finestra di dialogo consente di passare a una riga specifica nel documento attivo. Per accedere a questa finestra di dialogo, aprire un documento per la modifica e quindi scegliere **Vai** dal menu **Modifica**.  
   

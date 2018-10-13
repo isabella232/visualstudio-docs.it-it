@@ -1,7 +1,7 @@
 ---
 title: Specificare quando e dove applicare un'annotazione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca11e9339534c1053a62442f4eb2e4a65ca2a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4772dc980743db131002dbde80346836e9dc4c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303355"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Specificare dove e quando applicare un'annotazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [specificando quando e dove un'annotazione applica](https://docs.microsoft.com/visualstudio/code-quality/specifying-when-and-where-an-annotation-applies).  
-  
 Quando un'annotazione condizionale, potrebbe essere necessario altre annotazioni per specificare che per l'analizzatore.  Ad esempio, se una funzione dispone di una variabile che può essere sincrone o asincrone, il comportamento della funzione come indicato di seguito: nel caso sincrono sempre alla fine ha esito positivo, ma nel caso asincrono segnala un errore se potrebbe non riuscire immediatamente. Quando la funzione viene chiamata in modo sincrono, controllando il valore di risultato non fornisce alcun valore per l'analizzatore di codice perché potrebbe non avere restituita.  Tuttavia, quando la funzione viene chiamata in modo asincrono e il risultato della funzione non è selezionato, può verificarsi un errore grave. In questo esempio illustra una situazione in cui è possibile usare il `_When_` annotazione, descritto più avanti in questo articolo, abilitare il controllo.  
   
 ## <a name="structural-annotations"></a>Annotazioni strutturali  

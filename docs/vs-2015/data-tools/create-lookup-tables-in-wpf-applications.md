@@ -1,7 +1,7 @@
 ---
 title: Creare tabelle di ricerca nelle applicazioni WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12940c7be5e09975c6a6cf71fad94c47f3f6db32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303342"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca nelle applicazioni WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creare tabelle di ricerca nelle applicazioni WPF](https://docs.microsoft.com/visualstudio/data-tools/create-lookup-tables-in-wpf-applications).  
-  
   
 Il termine *tabella di ricerca* (talvolta chiamato un *binding di ricerca*) descrive un controllo che visualizza le informazioni da una tabella dati in base al valore di un campo di chiave esterna in un'altra tabella. È possibile creare una tabella di ricerca trascinando il nodo principale di una tabella padre o dell'oggetto nel **Zdroje dat** finestra in un controllo che è già associato a una colonna o proprietà in una tabella figlio correlata.  
   
@@ -46,7 +44,7 @@ Il termine *tabella di ricerca* (talvolta chiamato un *binding di ricerca*) desc
   
 1.  Aggiungere uno dei seguenti tipi di origini dati con dati correlati al progetto:  
   
-    -   Set di dati o Entity Data Model. Per altre informazioni, vedere [procedura: connettersi ai dati in un Database](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Set di dati o Entity Data Model. Per altre informazioni, vedere [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).  
   
     -   WCF Data Service, servizio WCF o un servizio Web. Per altre informazioni, vedere [procedura: connettersi ai dati in un servizio](../data-tools/how-to-connect-to-data-in-a-service.md).  
   

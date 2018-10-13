@@ -1,7 +1,7 @@
 ---
 title: Visual Studio data tools per C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306189"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools per C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Visual Studio data tools per C++](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp).  
-  
   
 C++ nativo può spesso fornire prestazioni ottimali quando si accede a origini dati. Tuttavia, i dati degli strumenti per le applicazioni C++ in Visual Studio non avanzati come nel caso di applicazioni .NET. Ad esempio, le finestre di origini dati non sono utilizzabile per trascinamento della selezione di origini dati in un'area di progettazione di C++. Se è necessario un livello relazionale a oggetti, sarà necessario scriverne uno proprio, oppure utilizzare un prodotto di terze parti.  Lo stesso vale per la funzionalità di data binding, sebbene le applicazioni che usano la libreria Microsoft Foundation Class è possono usare alcune classi di database, insieme ai documenti e visualizzazioni, per archiviare i dati in memoria e la visualizza all'utente. Per altre informazioni, vedere [l'accesso ai dati in Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   

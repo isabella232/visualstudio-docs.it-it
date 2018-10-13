@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione dei controlli runtime nativi | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65aaef84c96605eb0ac5a4836c637c2990a15477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532336"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300885"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalizzazione dei controlli runtime nativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [personalizzazione dei controlli runtime nativi](https://docs.microsoft.com/visualstudio/debugger/native-run-time-checks-customization).  
-  
 Quando esegue la compilazione con **/RTC** (controlli di run-time) oppure usare il `runtime_checks` pragma, la libreria di runtime C fornisce controlli runtime nativi. In alcuni casi può essere necessario personalizzare il controllo runtime:  
   
 -   Per indirizzare i messaggi del controllo runtime a un file o una destinazione diversa da quella predefinita.  
