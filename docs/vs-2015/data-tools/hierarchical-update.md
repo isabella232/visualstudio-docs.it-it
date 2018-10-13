@@ -1,7 +1,7 @@
 ---
 title: Aggiornamento gerarchico | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddef56f8ec38d73524db661b89e83c456bc50ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239382"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [aggiornamento gerarchico](https://docs.microsoft.com/visualstudio/data-tools/hierarchical-update).  
-  
   
 Aggiornamento gerarchico * si riferisce al processo di salvataggio dei dati aggiornati (da un set di dati con due o più tabelle correlate) in un database, mantenendo le regole di integrità referenziale. *L'integrità referenziale* fa riferimento a regole di coerenza fornite tramite i vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione dei record correlati. È ad esempio, l'integrità referenziale che impone la creazione di un record del cliente prima di consentire gli ordini da creare per quel cliente.  Per altre informazioni sulle relazioni nei set di dati, vedere [relazioni nei DataSet](../data-tools/relationships-in-datasets.md)  
   
@@ -124,9 +122,9 @@ Aggiornamento gerarchico * si riferisce al processo di salvataggio dei dati aggi
 |Member|Descrizione|  
 |------------|-----------------|  
 |Metodo `UpdateAll`|Salva tutti i dati da tutte le tabelle di dati.|  
-|Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|  
+|Proprietà`BackUpDataSetBeforeUpdate` |Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|  
 |*tableName* `TableAdapter` proprietà|Rappresenta un `TableAdapter`. Generato `TableAdapterManager` contiene una proprietà per ogni `TableAdapter` gestisce. Ad esempio, viene generato un set di dati con una tabella Customers e Orders con un `TableAdapterManager` che contiene `CustomersTableAdapter` e `OrdersTableAdapter` proprietà.|  
-|Proprietà `UpdateOrder`|Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati. Per altre informazioni, vedere [procedura: impostare l'ordine che esegue quando un aggiornamento gerarchico](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
+|Proprietà`UpdateOrder` |Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati. Per altre informazioni, vedere [procedura: impostare l'ordine che esegue quando un aggiornamento gerarchico](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

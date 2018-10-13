@@ -1,7 +1,7 @@
 ---
 title: Proprietà di una definizione DSL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5c5ebb4672cdbb82692dc01339409ef7fa91c2d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50b4325d2329bbaf402dcf2f059c51b5a796bdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197366"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [delle proprietà di una definizione DSL](https://docs.microsoft.com/visualstudio/modeling/properties-of-a-dsl-definition).  
-  
 Definiscono le proprietà DslDefinition *linguaggio specifico di dominio* le proprietà di definizione, ad esempio numerazione delle versioni. Vengono visualizzate le proprietà DslDefinition nelle **proprietà** finestra quando si fa clic su un'area vuota del diagramma nel *progettista del linguaggio specifico di dominio*.  
   
  Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  

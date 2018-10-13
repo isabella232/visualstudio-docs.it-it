@@ -1,7 +1,7 @@
 ---
 title: Features1 servizio di linguaggio legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed5b66c8148df36b89cfb6e6ae048a05f393551
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e864f9899c274fe58da16cdb5581058dd20f725
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185396"
 ---
 # <a name="legacy-language-service-features"></a>Funzionalità del servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Features1 servizio di linguaggio Legacy](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-features1).  
-  
 Un servizio di linguaggio managed package framework (MPF) può supportare uno o più [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] funzionalità, ad esempio l'evidenziazione della sintassi, IntelliSense e convalida di punto di interruzione. Ogni funzionalità possono essere implementata indipendente dagli altri, ma tutti richiedono un parser e uno scanner tranne l'evidenziazione della sintassi, che richiede solo uno scanner.  
   
 ## <a name="in-this-section"></a>In questa sezione  

@@ -1,7 +1,7 @@
 ---
 title: Generazione di codice e modelli di testo T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e57349e8c6f969986333eb8b12a9a3cf70ba3ce6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229825"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generazione di codice e modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [generazione di codice e modelli di testo T4](https://docs.microsoft.com/visualstudio/modeling/code-generation-and-t4-text-templates).  
-  
-Nelle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], una *modello di testo T4* è una combinazione di blocchi di testo e logica di controllo che può generare un file di testo. La logica di controllo è scritta come frammenti di codice programma in [!INCLUDE[csprcs](../includes/csprcs-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. In Visual Studio 2015 Update 2 e versioni successive è possibile usare le funzionalità di C# versione 6.0 nelle direttive dei modelli T4. Il file generato può essere testo di qualsiasi tipo, ad esempio una pagina Web, un file di risorse o codice sorgente di un programma in qualsiasi linguaggio.  
+In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]un *modello di testo T4* è una combinazione di blocchi di testo e della logica di controllo che può generare un file di testo. La logica di controllo è scritta come frammenti di codice programma in [!INCLUDE[csprcs](../includes/csprcs-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. In Visual Studio 2015 Update 2 e versioni successive è possibile usare le funzionalità di C# versione 6.0 nelle direttive dei modelli T4. Il file generato può essere testo di qualsiasi tipo, ad esempio una pagina Web, un file di risorse o codice sorgente di un programma in qualsiasi linguaggio.  
   
  Esistono due tipi di modelli di testo T4:  
   
@@ -58,14 +56,14 @@ string webResponseText = new MyTemplate().TransformText();
   
 ```  
   
- L'applicazione può essere eseguita in un computer che non dispone [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installato.  
+ L'applicazione può essere eseguita in un computer in cui non è installato [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
  Per creare un modello in fase di esecuzione, aggiungere un file di **modello di testo pre-elaborato** al progetto. In alternativa, è possibile aggiungere un file di testo normale e impostare la relativa proprietà **Strumento personalizzato** su **TextTemplatingFilePreprocessor**.  
   
  Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Per altre informazioni sulla sintassi dei modelli, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).  
   
- **Modelli di testo T4 in fase di progettazione** vengono eseguiti in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per definire parte del codice sorgente e altre risorse dell'applicazione.  
- In genere si usano diversi modelli che leggono i dati in un singolo file di input o un database e si generano alcuni file `.cs`, `.vb`o altri file di origine. Ogni modello genera un file. Vengono eseguite all'interno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ I**modelli di testo T4 in fase di progettazione** vengono eseguiti in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per definire parte del codice sorgente e altre risorse dell'applicazione.  
+ In genere si usano diversi modelli che leggono i dati in un singolo file di input o un database e si generano alcuni file `.cs`, `.vb`o altri file di origine. Ogni modello genera un file. Vengono eseguiti in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  I dati di input potrebbero ad esempio essere un file XML di dati di configurazione. Ogni volta che si modifica il file XML durante lo sviluppo, i modelli di testo rigenereranno parte del codice dell'applicazione. Uno dei modelli potrebbe assomigliare all'esempio seguente:  
   
@@ -112,7 +110,7 @@ namespace Fabrikam.FirstJob
  La generazione di codice e di altre risorse da un modello consente di aggiornare l'applicazione attraverso l'aggiornamento del modello.  
   
  [Generazione di codice in un processo di compilazione](../modeling/code-generation-in-a-build-process.md)  
- Se è stato installato [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK, è possibile verificare il software generato resti aggiornato con le modifiche nel modello.  
+ Se è stato installato l'SDK di visualizzazione e modellazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , è possibile garantire il software generato resti aggiornato con le modifiche nel modello.  
   
  [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)  
  La sintassi di un file di modello di testo.  

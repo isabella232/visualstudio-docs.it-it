@@ -1,7 +1,7 @@
 ---
 title: 'Passaggio 2: creare un problema di addizione casuale | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59addf4513afbc1208cabc7ec61eb7a4be4b9a5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47429cb995dd7374276a9e2872d1b80ed452281a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204373"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Passaggio 2: creare un problema di addizione casuale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [passaggio 2: creare un problema di addizione casuale](https://docs.microsoft.com/visualstudio/ide/step-2-create-a-random-addition-problem).  
-  
 Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di matematica basati su numeri casuali. Viene inoltre creato un metodo denominato `StartTheQuiz()` che completa i problemi e avvia il timer del conto alla rovescia. Più avanti nell'esercitazione si aggiungeranno problemi di sottrazione, moltiplicazione e divisione.  
   
 > [!NOTE]

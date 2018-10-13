@@ -1,7 +1,7 @@
 ---
 title: Creazione di una categoria di impostazioni | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91c46e5a222526dd68d98be0c855067cd96b10f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1a59e2c185460ffd9b9326c8458681f5953de76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186149"
 ---
 # <a name="creating-a-settings-category"></a>Creazione di una categoria di impostazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Creating a Settings Category](https://docs.microsoft.com/visualstudio/extensibility/creating-a-settings-category).  
-  
 In questa procedura dettagliata si crea una categoria di impostazioni di Visual Studio e lo usano per salvare i valori e ripristinare i valori da un file di impostazioni. Una categoria di impostazioni è un gruppo di proprietà correlate che vengono visualizzati come un "punto di impostazioni personalizzate"; vale a dire come una casella di controllo nel **Importa / Esporta impostazioni** procedura guidata. (È possibile trovarlo nel **strumenti** menu.) Le impostazioni vengono salvate o ripristinate come una categoria e le singole impostazioni non vengono visualizzate nella procedura guidata. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Si crea una categoria di impostazioni mediante la derivazione da di <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.  

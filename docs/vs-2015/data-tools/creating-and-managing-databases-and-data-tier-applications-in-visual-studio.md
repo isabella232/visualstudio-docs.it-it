@@ -1,7 +1,7 @@
 ---
 title: Creazione e gestione di database e applicazioni livello dati in Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ea5370349204765932baed828ffb9c9332b088f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82caaa97e4b6471e3c585fb23c49af00b2ceef0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241618"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Creazione e gestione di database e applicazioni livello dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [creazione e gestione di database e applicazioni livello dati](https://docs.microsoft.com/visualstudio/data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio).  
-  
   
 IMPORTANTE]
 >  I progetti di database che sono state incluse nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sono ora disponibili [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] strumenti. Per altre informazioni, vedere [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).  

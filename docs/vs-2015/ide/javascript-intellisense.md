@@ -1,7 +1,7 @@
 ---
 title: IntelliSense per JavaScript |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b64dc915dddb7290eb80a8a38352e87a331e0dd0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194714"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [JavaScript IntelliSense](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense).  
-  
 IntelliSense consente di scrivere codice più velocemente e con meno errori fornendo informazioni durante la compilazione. Durante l’utilizzo di script client nell'editor JavaScript, in IntelliSense vengono elencati gli oggetti, le funzioni, le proprietà e i parametri disponibili in base al contesto corrente. È possibile selezionare un'opzione di codifica dall’elenco popup fornito da IntelliSense per completare il codice.  
   
  IntelliSense semplifica il completamento delle seguenti attività:  
@@ -220,7 +218,7 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
   
 -   Se viene specificato un riferimento alla pagina, non sono consentiti altri tipi di direttive di riferimento.  
   
--   I nomi di file utilizzano percorsi relativi. È possibile utilizzare l'operatore tilde (`~`) per creare percorsi relativi alla directory radice dell'applicazione.  
+-   I nomi di file utilizzano percorsi relativi. È possibile usare l'operatore tilde (`~`) per creare percorsi relativi alla directory radice dell'applicazione.  
   
 -   I percorsi assoluti vengono ignorati.  
   

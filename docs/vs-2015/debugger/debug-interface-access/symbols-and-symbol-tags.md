@@ -1,7 +1,7 @@
 ---
 title: I simboli e relativi tag | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04dfbe961b122ded6ddb5ff19d70091ba6c408c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7eaf514ce88b20954ace1206ab625ae55ed12cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47527411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189787"
 ---
 # <a name="symbols-and-symbol-tags"></a>Simboli e relativi tag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [simboli e relativi tag](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symbols-and-symbol-tags).  
-  
 Informazioni di debug su un programma compilato viene archiviate nel file di database (con estensione pdb) di programma come simboli che sono accessibili tramite le API di SDK eseguire il Debug Interface Access (DIA). Tutti i simboli sono una [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) e una [Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) proprietà. Il `symTag` proprietà indica il tipo di simbolo in base il [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione. Il `symIndexId` proprietà è un `DWORD` valore che contiene l'identificatore univoco per ogni istanza di un simbolo.  
   
  I simboli hanno anche proprietà che è possibile specificare altre informazioni sui simboli, nonché i riferimenti agli altri simboli, in genere un [Get_lexicalparent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) o [Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Quando si esegue la query di una proprietà che contiene un riferimento, il riferimento viene restituito come un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto. Tali proprietà sono sempre associate a un'altra proprietà con lo stesso nome ma con suffisso con "Id", ad esempio, [Get_lexicalparentid](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) e [Get_classparentid](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Le tabelle nel [percorsi di simboli](../../debugger/debug-interface-access/symbol-locations.md), [gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), e [classe gerarchia dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) descrive le proprietà per ognuno dei diversi tipi di simboli. Queste proprietà possono essere presenti le informazioni o riferimenti agli altri simboli. Poiché il `*Id` proprietà sono identificatori ordinale semplicemente numerici delle relative proprietà correlate, vengono omessi da altre discussioni. Vengono definiti solo se necessario per i dettagli di parametro.  

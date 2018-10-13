@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Configurazione e utilizzo di un Set di regole | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518655"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221637"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procedura dettagliata: Configurazione e uso di un set di regole personalizzate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: configurazione e utilizzo di un Set di regole personalizzato](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set).  
-  
 Questa procedura dettagliata illustra come usare gli strumenti di analisi codice che sono stati configurati per usare un oggetto personalizzato *set di regole* in una libreria di classi. È possibile selezionare un set di regole che è correlato al tipo di progetto che è stato specificato per la soluzione, oppure è possibile selezionare set di regole alternativa per soddisfare esigenze specifiche, ad esempio l'analisi del codice legacy per i problemi che possono essere risolti in modo che non determina interruzione. In entrambi i casi, i set di regole possono essere personalizzati anche per adattarli ai propri requisiti di progetto.  
   
  In questa procedura dettagliata, avanzerà questi processi:  

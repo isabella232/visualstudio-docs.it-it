@@ -1,7 +1,7 @@
 ---
 title: Elemento Description (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90603a46f1cfba140a18a16537a8efbf0de981c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4819ffa95ad2fc347c01457d47422c62deb2fd9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236769"
 ---
 # <a name="description-element-visual-studio-templates"></a>Elemento Description (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elemento Description (modelli di Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/description-element-visual-studio-templates).  
-  
 Specifica la descrizione del modello così come appare in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
  \<VSTemplate >  

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Filtrare le visualizzazioni dei rapporti degli strumenti di profilatura per visualizzare Just My Code | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3045ff86b2d7d0e7a86a12964ff9a00f4ab840b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7bc1719b0cac40aa35c0aad3841a0ca49c9da44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226473"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Procedura: Filtrare visualizzazioni report degli strumenti per la profilatura per visualizzare Just My Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: filtro profilatura visualizzazioni Report degli strumenti per visualizzare Just My Code](https://docs.microsoft.com/visualstudio/profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code).  
-  
 Visual Studio 2010 Premium fornisce un filtro per i rapporti di prestazioni in modo che venga visualizzato solo il codice che è stato implementato. Questa funzionalità, denominata Just My Code, è abilitata per impostazione predefinita. Viene configurata tramite l'opzione **Just My Code** nella finestra di dialogo **Opzioni**.  
   
 ### <a name="to-enable-just-my-code"></a>Per abilitare Just My Code  

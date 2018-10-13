@@ -1,7 +1,7 @@
 ---
 title: Editor di immagini | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49149fcae2afa25c22132f23298d3dea6bccf60f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531427"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185770"
 ---
 # <a name="image-editor"></a>Editor di immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Editor di immagini](https://docs.microsoft.com/visualstudio/designers/image-editor).  
-  
 Questo documento descrive come usare l'editor di immagini di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per visualizzare e modificare le risorse di trama e di immagine.  
   
  L'editor di immagini consente di applicare tipi di formati di trama e di immagine completi da usare per lo sviluppo di app DirectX. Nell'editor è incluso il supporto per formati di file di immagine e codifiche dei colori comuni, per funzionalità come i canali alfa e il mapping MIP e per molti dei formati di trama con accelerazione hardware e ad alta compressione supportati da DirectX.  

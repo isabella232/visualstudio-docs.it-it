@@ -1,7 +1,7 @@
 ---
 title: "Procedura: instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di memoria tramite la riga di comando del profiler | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4693b7e1b0b274c9166bfa4f8d25531433a566bb
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: b8bd0d26f8feff5c1db7bea5fd6c4f05d4f3e90e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879304"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228475"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di memoria tramite la riga di comando del profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura: instrumentare un'applicazione Web ASP.NET in modo dinamico compilato e raccogliere dati di memoria tramite la riga di comando del Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line).  
-  
 Questo argomento illustra come usare gli strumenti della riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per raccogliere dati dettagliati dell'allocazione di memoria .NET della durata degli oggetti per un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilata in modo dinamico tramite il metodo di profilatura della strumentazione.  
   
 > [!NOTE]

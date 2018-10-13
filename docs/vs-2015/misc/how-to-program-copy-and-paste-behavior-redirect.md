@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: programmare il copia e Incolla Behavior - reindirizzamento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: 1268914e887645c833fa25f998ece0f88d80e795
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5fa570b117e4b31454ddb92d13e991c8981c4fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526863"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216970"
 ---
 # <a name="how-to-program-copy-and-paste-behavior---redirect"></a>Procedura: programmare il comportamento della funzione Copia e incolla (reindirizzamento)
 Il contenuto di questo argomento è stato unito a un argomento simile. Vedi [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).

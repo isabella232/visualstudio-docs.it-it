@@ -1,7 +1,7 @@
 ---
 title: Usando i controlli delle linee guida di base di C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f7813659f63e14c22ee40dc28eaa5b2d029288e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517499"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194090"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando i controlli delle linee guida di base di C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [usando i controlli delle linee guida di base di C++](https://docs.microsoft.com/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).  
-  
 Linee guida di base di C++ sono un set di linee guida, regole e le procedure consigliate sulla scrittura di codice in C++ creato da progettisti e gli esperti di C++ portabile.  Visual Studio supporta ora i componenti dei pacchetti che creano le regole aggiuntive per il codice di strumenti di analisi per verificare il codice per la conformità con le linee guida di base C++ e suggerire miglioramenti.  
   
 ## <a name="the-c-core-guidelines-project"></a>Il progetto di linee guida di base di C++  

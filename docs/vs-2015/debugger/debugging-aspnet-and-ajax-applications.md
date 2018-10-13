@@ -1,7 +1,7 @@
 ---
 title: Debug di applicazioni ASP.NET e AJAX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81ca66b7f7d4dde596b465211cb92cec5e695ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5943b75513394b44d88dfcfa496e56dad267171
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205205"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Debug di applicazioni ASP.NET e AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [debug di applicazioni ASP.NET e AJAX](https://docs.microsoft.com/visualstudio/debugger/debugging-aspnet-and-ajax-applications).  
-  
 Il debug di applicazioni Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è simile a quello di Windows Form o qualsiasi altra applicazione Windows poiché entrambi i tipi di applicazione impiegano controlli ed eventi. Tuttavia, esistono anche differenze sostanziali tra i due tipi di applicazioni:  
   
 -   Tenere traccia dello stato è un'operazione più complessa in un'applicazione Web.  
@@ -53,7 +51,7 @@ Il debug di applicazioni Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è
  [Gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md)  
  Viene spiegato perché è necessario attivare l'opzione Just My Code per il debug di eccezioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Debug e Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  Vengono illustrati alcuni strumenti e tecniche che possono agevolare il debug del codice AJAX.  
   
  [IntelliTrace](../debugger/intellitrace.md)  

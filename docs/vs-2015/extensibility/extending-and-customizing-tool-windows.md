@@ -1,7 +1,7 @@
 ---
 title: Estensione e personalizzazione di Windows lo strumento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ba7833a48647043fcb9b6d8ca9095be7cabef0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591351f41d0cd85de92836990e8d8523258f3d33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199940"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Estensione e personalizzazione delle finestre degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [estensione e personalizzazione di Windows lo strumento](https://docs.microsoft.com/visualstudio/extensibility/extending-and-customizing-tool-windows).  
-  
 Visual Studio offre diversi tipi di windows, ad esempio finestre degli strumenti, finestre dei documenti e finestre di dialogo. Altre finestre, ad esempio la finestra Proprietà, la finestra di Output e la finestra Elenco attività, sono tipi di finestre degli strumenti.  
   
 ## <a name="tool-windows"></a>Finestre degli strumenti  
@@ -43,7 +41,7 @@ Visual Studio offre diversi tipi di windows, ad esempio finestre degli strumenti
   
  Le finestre degli strumenti possono essere ancorate, mobili o a schede nella cornice del documento. La cornice della finestra degli strumenti viene fornita dall'IDE ed è usata per controllare le dimensioni, la posizione, lo stato di ancoraggio e altre proprietà persistenti. Il riquadro della finestra degli strumenti visualizza il contenuto. Le dimensioni e la posizione predefinite vengono applicate solo alla prima apertura della finestra degli strumenti. Successivamente, lo stato della finestra viene salvato in modo permanente.  
   
- I riquadri della finestra degli strumenti possono ospitare controlli utente WPF e supportare le barre degli strumenti. È possibile eseguire l'override di <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> proprietà per restituire l'handle del controllo ospitato.  
+ I riquadri della finestra degli strumenti possono ospitare controlli utente WPF e supportare le barre degli strumenti. È possibile eseguire l'override della proprietà <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> per restituire l'handle del controllo ospitato.  
   
  È possibile aggiungere più funzionalità diverse alle finestre degli strumenti. Ad esempio, è possibile aggiungere una barra degli strumenti: [aggiunta di una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menu di scelta rapida: [aggiunta di un Menu di scelta rapida in una finestra degli strumenti](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). È possibile aggiungere un controllo di ricerca che consente di cercare gli elementi all'interno la finestra degli strumenti: [aggiunta di ricerca per una finestra degli strumenti](../extensibility/adding-search-to-a-tool-window.md).  
   

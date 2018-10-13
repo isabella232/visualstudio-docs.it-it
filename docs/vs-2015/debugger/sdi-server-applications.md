@@ -1,7 +1,7 @@
 ---
 title: Applicazioni Server SDI | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c6ee3ee3a1273c02dd094f89c099230024eabfc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba975d21e1fbef2d32b45dd4ebdc758e8b6cf575
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199069"
 ---
 # <a name="sdi-server-applications"></a>Applicazioni server SDI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [applicazioni Server SDI](https://docs.microsoft.com/visualstudio/debugger/sdi-server-applications).  
-  
 Se si esegue il debug un'applicazione server SDI, è necessario specificare `/Embedding` o `/Automation` nel **argomenti della riga di comando** proprietà nel *progetto* la finestra di dialogo Pagine delle proprietà per C/C++, c#, o Progetti Visual Basic.  
   
  Grazie a questi argomenti della riga di comando, il debugger è in grado di avviare l'applicazione server come se tale avvio venisse eseguito da un contenitore. In seguito all'avvio del contenitore da Program Manager o File Manager, il contenitore utilizzerà l'istanza del server già avviata dal debugger.  

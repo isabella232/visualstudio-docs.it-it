@@ -1,7 +1,7 @@
 ---
 title: 'Visualizzazione Chiamante/chiamato: dati di campionamento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ed2f99527b8c1f5f38cbbcfd72ee32ad9912fd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a8933eb0adc6322b2da6b1e16400769a5ea22c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192608"
 ---
 # <a name="caller--callee-view---sampling-data"></a>Visualizzazione Chiamante/chiamato: dati di campionamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione chiamante - chiamato: dati di campionamento](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-sampling-data).  
-  
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di profilatura per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.  
   
  Nella griglia centrale **Funzione corrente** visualizza le informazioni di profilatura per la funzione selezionata. Sono incluse tutte le chiamate campionate alla funzione.  

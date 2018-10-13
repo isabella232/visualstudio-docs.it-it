@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione di tipi e i dati | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10d83291a8d5820241ff2837b6b4a773c7b6fdba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a88969139c993163c88f2dc16fc8cbdb7a62feb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202774"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualizzazione di tipi e dati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione di dati e visualizzare](https://docs.microsoft.com/visualstudio/extensibility/debugger/visualizing-and-viewing-data).  
-  
 Visualizzatori di tipi e visualizzatori personalizzati presentano i dati in un modo rapido significativo per gli sviluppatori. L'analizzatore di espressioni (EE) può supportare visualizzatori di tipi di terze parti, nonché fornire i propri visualizzatori personalizzati.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Determina il numero di visualizzatori di tipi e visualizzatori personalizzati associati al tipo dell'oggetto chiamando il [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) (metodo). Se si verifica il Visualizzatore di almeno un tipo o il visualizzatore personalizzato disponibile, Visual Studio chiama il [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) metodo per recuperare un elenco dei visualizzatori e visualizzatori (in realtà, un elenco di `CLSID`s che implementano il i visualizzatori e visualizzatori) e li presenta all'utente.  

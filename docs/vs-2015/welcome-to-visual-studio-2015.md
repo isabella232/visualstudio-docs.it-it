@@ -1,7 +1,7 @@
 ---
 title: Benvenuti in Visual Studio 2015 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 71ef72b3374967cb977ad8891b66fd0b91732707
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f950ffa99fa6c68d51349e2b059b3e621ed069d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529410"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231237"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Benvenuti in Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Visual Studio offre tutto ciò che occorre per creare app eccezionali per dispos
   
  Scaricare gratuitamente [Community di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=517106) per iniziare subito la codifica. Per lo sviluppo multipiattaforma, assicurarsi di installare i pacchetti facoltativi. È possibile ottenere altre funzionalità con [altre versioni di Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs).  
   
- Una volta aperto Visual Studio, sarà possibile creare un nuovo progetto e iniziare a scrivere il codice. Scegliere il tipo di app da creare Oppure è possibile [guardare la presentazione](./ide/visual-studio-ide.md) dell'IDE di Visual Studio per acquisire familiarità con gli strumenti.  
+ Una volta aperto Visual Studio, sarà possibile creare un nuovo progetto e iniziare a scrivere il codice. Scegliere il tipo di app da creare oppure [guardare la presentazione](./ide/visual-studio-ide.md) dell'ambiente IDE di Visual Studio per acquisire familiarità con gli strumenti.  
   
  Non dimenticare poi di esplorare la [Code Gallery](https://code.msdn.microsoft.com/) in cui sono disponibili esempi che consentiranno di scrivere l'app ancora più rapidamente.  
   
@@ -57,15 +57,15 @@ Visual Studio offre tutto ciò che occorre per creare app eccezionali per dispos
   
  Scegliere gli strumenti necessari in base ai requisiti dell'app e al linguaggio che si desidera usare.  
   
-1.  [Xamarin per Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): una codebase comune in c# per tutti i dispositivi  
+1.  [Xamarin per Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): una codebase comune in C# per tutti i dispositivi  
   
 2.  [Apache Cordova con Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): una codebase comune per HTML, CSS e JavaScript o Typescript  
   
 3.  [Visual Studio Tools per Unity](./cross-platform/visual-studio-tools-for-unity.md): sviluppo di giochi 2D/3D in c#  
   
-4.  [C++ per lo sviluppo Cross-Platform](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): App e librerie di codice condiviso in C++  
+4.  [C++ per lo sviluppo multipiattaforma](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): app e librerie di codice condiviso in C++  
   
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: eseguire il Debug e testare le applicazioni Android indipendentemente dall'IDE  
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Emulatore di Visual Studio per Android: eseguire il debug e testare le applicazioni Android indipendentemente dall'IDE  
   
 ## <a name="connect-your-apps-to-services"></a>Connettere le app ai servizi  
  È possibile connettersi a questi servizi automaticamente (supponendo di avere un account per ogni servizio):  
@@ -82,7 +82,7 @@ Visual Studio offre tutto ciò che occorre per creare app eccezionali per dispos
 ## <a name="build-test-and-manage-your-code"></a>Compilare, testare e gestire il codice  
   
 ### <a name="check-in-your-code"></a>Archiviare il proprio codice  
- Se si lavora in un team, è necessario condividere anche le versioni più recenti del codice in modo che ogni membro del team usi la stessa codebase. Visual Studio si integra perfettamente con Visual Studio Team Services o Team Foundation Server per fornire il controllo della versione con Git o TFVC (Team Foundation Version Control). Usare Visual Studio Team Services per archiviare il codice nel cloud senza alcuna manutenzione di un server locale. Se si desidera disporre di un server locale, usare Team Foundation Server. Quando si crea un progetto di codice, è disponibile l'opzione per aggiungerlo al controllo della versione. Informazioni sul controllo della versione sistema adatto alle proprie esigenze: [controllo della versione](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+ Se si lavora in un team, è necessario condividere anche le versioni più recenti del codice in modo che ogni membro del team usi la stessa codebase. Visual Studio si integra perfettamente con Visual Studio Team Services o Team Foundation Server per fornire il controllo della versione con Git o TFVC (Team Foundation Version Control). Usare Visual Studio Team Services per archiviare il codice nel cloud senza alcuna manutenzione di un server locale. Se si desidera disporre di un server locale, usare Team Foundation Server. Quando si crea un progetto di codice, è disponibile l'opzione per aggiungerlo al controllo della versione. Per informazioni sul sistema di controllo della versione più adatto alle proprie esigenze, vedere [Usare il controllo della versione](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
 ### <a name="build-your-app"></a>Compilare l'app  
  È possibile [compilare l'app localmente](./ide/compiling-and-building-in-visual-studio.md) e assicurarsi che funzioni correttamente. Usare quindi gli [strumenti di debug](./debugger/debugging-in-visual-studio.md) per risolvere eventuali problemi con l'app. Oppure è possibile compilare progetti nei server di compilazione condivisi o nel cloud. Automatizzare il processo di compilazione per compilare il codice che gli sviluppatori del team hanno archiviato nel controllo della versione. È possibile ad esempio compilare uno o più progetti di notte o ogni volta che il codice viene controllato.  
@@ -131,7 +131,7 @@ Visual Studio offre tutto ciò che occorre per creare app eccezionali per dispos
   
 -   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)  
   
--   [DevOps e gestione del ciclo di vita delle applicazioni](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)  
+-   [Gestione del ciclo di vita di DevOps e delle applicazioni](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)  
   
 -   [Talk to Us](./ide/talk-to-us.md) (Comunicazioni con Microsoft)
 

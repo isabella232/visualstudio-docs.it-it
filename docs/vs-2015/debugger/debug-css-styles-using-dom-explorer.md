@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di stili CSS tramite DOM Explorer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 889626b5d80afebfd701a7bc347466da97ba707b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a30ac9669c7093c7eb3b656076c606cbf5a9fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47531455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220740"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Eseguire il debug di stili CSS tramite DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [stili Debug CSS tramite DOM Explorer](https://docs.microsoft.com/visualstudio/debugger/debug-css-styles-using-dom-explorer).  
-  
 Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Quando si esegue il debug delle app di Windows Store o di Windows Phone Store e di app create usando Strumenti di Visual Studio per Apache Cordova, è possibile visualizzare e modificare le regole CSS per alcuni elementi DOM e i relativi elementi figlio.  
@@ -58,14 +56,14 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 >  Le modifiche apportate nelle schede **Stili** e **Calcolata** non sono permanenti, vengono infatti perse quando si arresta il debug. Per modificare il codice sorgente e ricaricare le pagine senza arrestare e riavviare il debugger, aggiornare l'app usando il ![pulsante di aggiornamento Windows app](../debugger/media/js-refresh.png "JS_Refresh") pulsante (**Windows aggiorna app** ) sul **Debug** (solo app Windows Store e Windows Phone Store) sulla barra degli strumenti. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Esempio di correzione di una regola CSS  
- Questo esempio illustra come controllare le regole CSS ed eseguire il debug di un problema di stile. Per questo esempio, supponiamo che tu voglia modificare il colore di un carattere usato per visualizzare i titoli di gruppo nel modello Applicazione divisa di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
+ Questo esempio illustra come controllare le regole CSS ed eseguire il debug di un problema di stile. Per questo esempio, si supponga di voler modificare il colore di un carattere usato per visualizzare i titoli di gruppo nel modello Applicazione divisa di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
   
 > [!NOTE]
 >  Questo esempio mostra un'app di Windows Store, ma tutte le funzionalità di DOM Explorer illustrate sono valide anche per le app di Windows Phone Store e, ad eccezione della scheda Modifiche, per le app create con Strumenti di Visual Studio per Apache Cordova.  
   
 #### <a name="to-view-and-change-css-rules"></a>Per visualizzare e modificare le regole CSS  
   
-1.  In Visual Studio crea una nuova app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] usando JavaScript e HTML nel modello di progetto Applicazione divisa.  
+1.  In Visual Studio creare una nuova app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] usando JavaScript e HTML nel modello di progetto Applicazione divisa.  
   
 2.  In **Esplora soluzioni**aprire items.css, disponibile nella cartella delle pagine.  
   

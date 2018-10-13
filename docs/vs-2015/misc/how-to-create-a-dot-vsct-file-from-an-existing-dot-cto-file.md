@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: creare una. File Vsct da un oggetto esistente. File CTO | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: e77ebf34cd56cee80040009cff3ebb2fee9befac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 82cf711d33b3b3ca5150378e7111a2a21c8c03cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590598"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235742"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procedura: Creare un file con estensione vsct da un file CTO esistente
 È possibile creare un file con estensione vsct basato su XML da un file CTO binario esistente. Questa operazione consente di sfruttare il nuovo formato di compilatore della tabella comandi. Questo processo funziona anche se il file CTO è stato compilato da un file CTC. È possibile modificare e compilare il file VSCT in un altro file CTO.  
@@ -32,9 +32,9 @@ ms.locfileid: "47590598"
   
 3.  Nel prompt dei comandi di Visual Studio, passare alla directory che contiene i file con estensione cto e ctsym.  
   
-4.  Tipo di **vsct.exe** _ctofilename_**CTO** _vsctfilename_**vsct -S**  _symfilename_**ctsym**.  
+4.  Digitare **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**_symfilename_**.ctsym**.  
   
-     `ctofilename` è il nome del file CTO `vsctfilename` è il nome del file vsct che si desidera creare, e `symfilename` è il nome del file ctsym.  
+     `ctofilename` è il nome del file CTO, `vsctfilename` è il nome del file VSCT che si vuole creare e `symfilename` è il nome del file CTSYM.  
   
      Questo processo crea un nuovo file del compilatore della tabella comandi XML con estensione vsct. È possibile modificare e compilare il file con vsct.exe, il compilatore vsct, come si farebbe con qualsiasi altro file VSCT.  
   

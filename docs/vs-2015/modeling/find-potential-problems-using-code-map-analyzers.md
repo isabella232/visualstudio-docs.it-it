@@ -1,12 +1,12 @@
 ---
 title: Trovare problemi potenziali usando analizzatori di mappe di codice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemapanalyzers
 helpviewer_keywords:
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b15a6d95e2a64aa09d57cb4fba02ab0369be5799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccac7f869c0395839e2c63354558df0389ced36b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204802"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Trovare problemi potenziali usando gli analizzatori di mappe codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [trovare problemi potenziali usando codice di eseguire il mapping di analizzatori](https://docs.microsoft.com/visualstudio/modeling/find-potential-problems-using-code-map-analyzers).  
-  
 Eseguire gli analizzatori sulle mappe codice per identificare il codice che potrebbe essere eccessivamente complesso o che potrebbe richiedere un miglioramento. È possibile, ad esempio, usare gli analizzatori seguenti:  
   
 |**Per trovare codice con**|**Esaminare queste aree per vedere se**|  

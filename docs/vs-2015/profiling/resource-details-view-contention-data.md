@@ -1,7 +1,7 @@
 ---
 title: 'Visualizzazione Dettagli risorsa: dati sui conflitti | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 760240544971062da3a5161eab7d203ba6d097c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a99cce1d78c91ce2300e30127d0e5375d2cc1b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203723"
 ---
 # <a name="resource-details-view---contention-data"></a>Visualizzazione Dettagli risorsa: dati sui conflitti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [visualizzazione Dettagli risorsa: dati sui conflitti](https://docs.microsoft.com/visualstudio/profiling/resource-details-view-contention-data).  
-  
 La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale degli eventi di blocco causati dai conflitti relativi a una risorsa selezionata. Si verifica un evento di blocco quando un thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso alla risorsa.  
   
  In questa visualizzazione la sequenza temporale dell'esecuzione di ciascun thread è rappresentata come una barra orizzontale, mentre ogni evento di blocco è rappresentato come una barra verticale nella sequenza temporale del thread. Se necessario, è possibile ingrandire una sezione della sequenza temporale per visualizzare i singoli eventi. Per visualizzare il percorso di esecuzione (stack di chiamate) delle funzioni che hanno condotto all'evento, fare clic sulla barra dell'evento. Le funzioni verranno visualizzate nella finestra **Stack di chiamate**. Quando è disponibile il codice sorgente per una funzione, è possibile fare clic sul nome della funzione per modificare il file di origine nell'interfaccia per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

@@ -1,7 +1,7 @@
 ---
 title: Funzione CvReleaseMarkerSeries | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8df22a27f23395ac3de6bb3b4f28c7746dd10ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b65c84257bb99e85b949006fa0fa17505c88690
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226278"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Funzione CvReleaseMarkerSeries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [funzione CvReleaseMarkerSeries](https://docs.microsoft.com/visualstudio/profiling/cvreleasemarkerseries-function).  
-  
 Rilascia una serie di marcatori. Dopo il rilascio, non usare l'oggetto serie di marcatori o l'applicazione potrebbe arrestarsi in modo anomalo. Il mancato rilascio della serie di marcatori causa una perdita di memoria.  
   
 ## <a name="syntax"></a>Sintassi  

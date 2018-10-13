@@ -1,7 +1,7 @@
 ---
 title: Personalizzare Help Viewer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ac05dfe8bad028effc329b76cd5a9ecb364122c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5287ab7c3330e162e7b9bf0d47e385272c18cda
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210821"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizzare il visualizzatore della Guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [personalizzare Help Viewer](https://docs.microsoft.com/visualstudio/ide/customize-the-help-viewer).  
-  
 È possibile configurare diverse funzionalità di Help Viewer usando il **opzioni Help Viewer** nella finestra di dialogo.  
   
 ## <a name="setting-viewer-options"></a>Impostazione opzioni Help Viewer  

@@ -1,7 +1,7 @@
 ---
 title: Fornire un contesto del servizio linguaggio con l'API Legacy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72bcd275fab0ae8380167dbbc8a9fae21c28a36c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 950e7606292487f10ee6e901e82abaa3c6f92a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195729"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Fornire un contesto del servizio linguaggio con l'API Legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [fornendo un contesto del servizio linguaggio con l'API Legacy](https://docs.microsoft.com/visualstudio/extensibility/providing-a-language-service-context-by-using-the-legacy-api).  
-  
 Sono disponibili due opzioni per un servizio di linguaggio fornire contesto utente utilizzando il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale: fornire il contesto di marcatore di testo o forniscono tutto il contesto utente. Di seguito vengono illustrate le differenze tra ogni.  
   
  Per altre informazioni sulla capacità di fornire contesto a un servizio di linguaggio che è connesso a un editor personalizzato, vedere [procedura: fornire contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md).  

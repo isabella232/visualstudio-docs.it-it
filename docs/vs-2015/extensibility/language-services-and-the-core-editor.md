@@ -1,7 +1,7 @@
 ---
 title: Servizi di linguaggio e l'Editor principale | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6de7975c085073bf9082f77499a6456b44a55b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a1ccca0b20a681505ef197c4eefad1b3a813af6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218322"
 ---
 # <a name="language-services-and-the-core-editor"></a>Servizi di linguaggio e l'Editor principale di
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [servizi di linguaggio e l'Editor principale](https://docs.microsoft.com/visualstudio/extensibility/language-services-and-the-core-editor).  
-  
 Editor di Visual Studio sono spesso associati a un servizio di linguaggio. Tra le altre cose, un servizio di linguaggio fornisce la colorazione della sintassi, completamento delle istruzioni, IntelliSense e la formattazione del testo.  
   
 ## <a name="core-editors-and-document-data-objects"></a>Editor principale e oggetti dati documenti  

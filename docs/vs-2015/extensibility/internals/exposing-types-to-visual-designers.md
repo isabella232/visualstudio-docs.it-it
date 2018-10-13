@@ -1,7 +1,7 @@
 ---
 title: Esposizione di tipi di finestre di progettazione visiva | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e09161d7ea2e27fbc1f4c7bd68cc7da952d3f1d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47525911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242008"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Esposizione di tipi nelle finestre di progettazione visiva
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [che espone i tipi di finestre di progettazione visiva](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-types-to-visual-designers).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve avere accesso alle definizioni di classe e il tipo in fase di progettazione per visualizzare una finestra di progettazione. Le classi vengono caricate da un set predefinito di assembly che includono il set completo delle dipendenze del progetto corrente (riferimenti e le relative dipendenze). Potrebbe essere necessario anche per finestre di progettazione visiva per accedere alle classi e tipi definiti nei file generati da strumenti personalizzati.  
   
  Il [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] e [!INCLUDE[csprcs](../../includes/csprcs-md.md)] sistemi di progetto forniscono il supporto per l'accesso alle classi generate e i tipi tramite portatile temporaneo file eseguibili (file PE temporanei). Qualsiasi file generati da uno strumento personalizzato può essere compilato in un assembly temporaneo in modo che i tipi possono essere caricati da tali assembly ed esposte nelle finestre di progettazione. L'output di ogni strumento personalizzato viene compilato in un file PE temporaneo separato e l'esito positivo o negativo di questa compilazione temporanea dipende solo se il file generato può essere compilato. Anche se un progetto non venga compilato nel suo complesso, singoli file PE temporaneo potrebbe essere ancora disponibili nelle finestre di progettazione.  

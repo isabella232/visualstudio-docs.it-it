@@ -1,7 +1,7 @@
 ---
 title: Uso della finestra attività | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226200"
 ---
 # <a name="using-the-tasks-window"></a>Utilizzo della finestra Attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [utilizzando la finestra attività](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window).  
-  
 Il **attività** finestra è simile al **thread** finestra, ad eccezione del fatto che mostra informazioni sugli <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), o [winjs. Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) oggetti anziché ogni thread. Analogamente ai thread, le attività rappresentano operazioni asincrone eseguibili simultaneamente; tuttavia, più attività possono essere eseguite nello stesso thread. Visualizzare [programmazione asincrona in JavaScript (app di Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) per altre informazioni.  
   
  Nel codice gestito, è possibile usare la **attività** finestra quando si lavora con <xref:System.Threading.Tasks.Task?displayProperty=fullName> oggetti o con il **await** e **async** parole chiave (**Await** e **Async** in Visual Basic). Per altre informazioni sulle attività nel codice gestito, vedere [programmazione parallela](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  

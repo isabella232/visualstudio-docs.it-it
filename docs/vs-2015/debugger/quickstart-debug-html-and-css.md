@@ -1,7 +1,7 @@
 ---
 title: 'Guida introduttiva: Debug di HTML e CSS | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47540472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225485"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Guida introduttiva: Eseguire il debug di HTML e CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [Guida introduttiva: eseguire il Debug di HTML e CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css).  
-  
 Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Per le app JavaScript, Visual Studio offre un'esperienza di debug completa che include funzionalità note agli sviluppatori di Visual Studio e Internet Explorer. Queste funzionalità sono supportate per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], le app di Windows Phone Store e per le app create con Visual Studio Tools per Apache Cordova  
+ Per le app JavaScript, Visual Studio offre un'esperienza di debug completa che include funzionalità note agli sviluppatori di Visual Studio e Internet Explorer. Queste funzionalità sono supportate per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], app di Windows Phone Store e app create con Strumenti di Visual Studio per Apache Cordova  
   
  Usando il modello di debug interattivo fornito dagli strumenti di ispezione DOM, è possibile visualizzare e modificare il codice HTML e CSS sottoposto a rendering. È possibile eseguire tutte queste operazioni senza arrestare e riavviare il debugger.  
   
@@ -197,7 +195,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
      ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  È anche possibile selezionare l'elemento DIV nell'angolo inferiore sinistro della finestra JavaScript Console digitando `select(fView)` nel >> input prompt dei comandi e premere INVIO.  
+    >  È anche possibile selezionare l'elemento DIV nell'angolo in basso a sinistra della finestra Console JavaScript digitando `select(fView)` alla richiesta di input >>, quindi premere INVIO.  
   
      I valori visualizzati nelle schede sul lato destro della finestra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento corrente in DOM Explorer.  
   
@@ -295,13 +293,13 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ##  <a name="BrowserSupport"></a> Supporto di browser e piattaforme  
  Gli strumenti di Visual Studio per JavaScript, DOM Explorer e la finestra Console JavaScript sono supportati nelle piattaforme seguenti:  
   
--   App di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e Windows Phone Store scritte in JavaScript e HTML  
+-   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e app di Windows Phone Store scritte in JavaScript e HTML  
   
 -   Internet Explorer 11 in esecuzione in [!INCLUDE[win81](../includes/win81-md.md)]  
   
 -   Internet Explorer 10 in esecuzione in [!INCLUDE[win8](../includes/win8-md.md)]  
   
- Andare [Ecco](http://go.microsoft.com/fwlink/?LinkID=232448) per scaricare [!INCLUDE[win8](../includes/win8-md.md)] e Visual Studio.  
+ [Qui](http://go.microsoft.com/fwlink/?LinkID=232448) è possibile scaricare [!INCLUDE[win8](../includes/win8-md.md)] e Visual Studio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -311,7 +309,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Eseguire il debug di un controllo WebView](../debugger/debug-a-webview-control.md)   
  [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Comandi della JavaScript Console](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Il debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Supporto tecnico e accessibilità](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
 

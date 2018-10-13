@@ -1,7 +1,7 @@
 ---
 title: Set di regole base di progettazione delle linee guida per il codice gestito | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aad4bb755889ca4d2aa9766836f156495d281bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed0728eb0daa5c1ff0f322db42f66373181f3e23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47520037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184717"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Set di regole Regole base delle linee guida di progettazione per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [set di regole regole base delle linee guida di progettazione per codice gestito](https://docs.microsoft.com/visualstudio/code-quality/basic-design-guideline-rules-rule-set-for-managed-code).  
-  
 È possibile usare il set di concentrarsi su come rendere più facile da comprendere e usare il codice di regole regole base delle linee guida di progettazione Microsoft. È consigliabile includere questo set di regole se il progetto contiene codice di libreria o se si desidera applicare le procedure consigliate per il codice che è facile da gestire.  
   
  Le regole base delle linee guida di progettazione includono tutte le regole nel set di regole regole minime consigliate Microsoft. Per un elenco di regole minime, vedere [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).  

@@ -1,7 +1,7 @@
 ---
 title: Definire un profilo per estendere UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221260"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definire un profilo per estendere UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [definire un profilo per estendere UML](https://docs.microsoft.com/visualstudio/modeling/define-a-profile-to-extend-uml).  
-  
 È possibile definire un *profilo UML* per personalizzare gli elementi del modello standard per scopi specifici. Un profilo definisce uno o più *stereotipi UML*. Uno stereotipo può essere usato per contrassegnare un tipo come rappresentazione di un determinato tipo di oggetto. Uno stereotipo può anche essere usato per estendere l'elenco di proprietà di un elemento.  
   
  Vengono installati diversi profili con le edizioni supportate di Visual Studio. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Per altre informazioni su questi profili e su come applicare gli stereotipi, vedere [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  

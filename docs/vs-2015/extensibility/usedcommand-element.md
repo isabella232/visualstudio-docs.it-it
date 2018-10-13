@@ -1,7 +1,7 @@
 ---
 title: Elemento UsedCommand | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78ab46c4524bb25563d407514aa0590e75feffaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: abcc3117b46cca424388b849f9baf26d79ca270e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47530269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194642"
 ---
 # <a name="usedcommand-element"></a>Elemento UsedCommand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [elemento UsedCommand](https://docs.microsoft.com/visualstudio/extensibility/usedcommand-element).  
-  
 Consente a un VSPackage di accedere a un comando che viene definito in un altro file con estensione vsct. Ad esempio, se il pacchetto VSPackage Usa lo standard **copia** comando, che è definito dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell, può aggiungere il comando a un menu o sulla barra degli strumenti senza implementarla nuovamente.  
   
 ## <a name="syntax"></a>Sintassi  

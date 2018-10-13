@@ -1,7 +1,7 @@
 ---
 title: Soluzioni e progetti in Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -55,18 +55,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7223acc3612d12fc5589e46b06b9fa76b5ecf002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e5996d07a3186c1881e4fc44b3b1622a9ab221f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47532007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211146"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [soluzioni e progetti in Visual Studio](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio).  
-  
 Quando si crea un’app, un’applicazione, un sito Web, uno script, un plug-in e così via in Visual Studio, si comincia con un *progetto*. In senso logico, un progetto contiene di tutti i file di codice sorgente, le icone, le immagini, i file di dati e qualsiasi altro elemento che verrà compilato in un programma eseguibile o in un sito Web in caso contrario, o necessario per eseguire la compilazione.  Un progetto contiene anche tutte le impostazioni del compilatore e altri file di configurazione che potrebbero essere necessari per i vari servizi o componenti con cui il programma comunicherà.  
   
  In senso letterale, un progetto è un file XML (*.vbproj, \*.csproj, \*.vcxproj) che definisce una gerarchia di cartelle virtuali insieme ai percorsi di tutti gli elementi in essa contenuti e a tutte le impostazioni di compilazione. In Visual Studio, il file di progetto viene utilizzato da Esplora soluzioni per visualizzare il contenuto e le impostazioni del progetto. Quando si compila il progetto, il motore MSBuild utilizza il file di progetto per creare il file eseguibile. È inoltre possibile personalizzare progetti per produrre altri tipi di output.  

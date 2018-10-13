@@ -1,7 +1,7 @@
 ---
 title: Attivazione sul posto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: douge
-ms.openlocfilehash: c41ac709efd980dc1f49307d4fdffb465c9c627e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47529398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232193"
 ---
 # <a name="in-place-activation"></a>Attivazione sul posto
 Se la visualizzazione dell'editor ospita controlli ActiveX o altri controlli attivi, è necessario implementare la visualizzazione come controllo ActiveX o come oggetto dati del documento attivo usando il modello di attivazione sul posto.  
@@ -51,7 +51,7 @@ Editor di attivazione sul posto
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|Visualizza|Mezzo principale attraverso cui un oggetto incorporato fornisce funzionalità di base al relativo contenitore e comunica con esso.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>|Visualizza|Gestisce l'attivazione e la disattivazione degli oggetti sul posto e determina la quantità dell'oggetto sul posto che deve essere visibile.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceObject>|Visualizza|Fornisce un canale diretto di comunicazione tra un oggetto sul posto, la finestra cornice più esterna dell'applicazione associata e la finestra del documento nell'applicazione che contiene l'oggetto incorporato.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Visualizza|Implementa un oggetto ActiveX. Si noti che i metodi della <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> e `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` che i dati del documento separata e visualizzazione non vengono usati nell'IDE.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Visualizza|Implementa un oggetto ActiveX. Si noti che i metodi di <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> e `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` che separano i dati del documento e la visualizzazione non sono usati nell'IDE.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Visualizzazione/Dati|Consente all'oggetto dati del documento o all'oggetto visualizzazione del documento, o a entrambi, di partecipare alla gestione dei comandi.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Visualizza|Consente gli aggiornamenti della barra di stato.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Visualizza|Consente l'aggiunta di elementi alla casella degli strumenti.|  

@@ -1,7 +1,7 @@
 ---
 title: "Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce | Microsoft Docs"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d8f93b6d7f55659cc614969dcc1c8b8dd93ccf73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4e8874324c5e5cbfb5bc42e5c6c23666b5e14b67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590739"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236171"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application).  
-  
 Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione oppure è necessario usare le funzionalità avanzate di distribuzione, ad esempio la distribuzione di applicazioni attendibili, è necessario utilizzare lo strumento da riga di comando Mage.exe per creare il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesti. Questa procedura dettagliata viene descritto come creare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione utilizzando la versione della riga di comando (Mage.exe) o quella con interfaccia grafica (MageUI.exe) del Manifest Generation and Editing Tool.  
   
 ## <a name="prerequisites"></a>Prerequisiti  

@@ -1,7 +1,7 @@
 ---
 title: Annotazione del comportamento della funzione | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c05fca9a23f213f14aaecffda87478819291e1f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1be20fed5e7fd98860a4a62c3d59fc458bed04ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234390"
 ---
 # <a name="annotating-function-behavior"></a>Annotazione del comportamento delle funzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [annotazione del comportamento della funzione](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-behavior).  
-  
 Oltre ad annotare [i parametri di funzione e restituire valori](../code-quality/annotating-function-parameters-and-return-values.md), è possibile annotare le proprietà dell'intera funzione.  
   
 ## <a name="function-annotations"></a>Annotazioni (funzione)  

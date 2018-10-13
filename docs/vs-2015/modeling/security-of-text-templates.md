@@ -1,7 +1,7 @@
 ---
 title: Sicurezza dei modelli di testo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ce9ccca0a144de7101e886712105315ec64fa75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65b4b6616921dae0abb0bb54316d8b8262d1f652
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47518993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214682"
 ---
 # <a name="security-of-text-templates"></a>Sicurezza dei modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [sicurezza dei modelli di testo](https://docs.microsoft.com/visualstudio/modeling/security-of-text-templates).  
-  
 I modelli di testo presentano i problemi di sicurezza seguenti:  
   
 -   Modelli di testo sono vulnerabili a operazioni di inserimento di codice arbitrario.  

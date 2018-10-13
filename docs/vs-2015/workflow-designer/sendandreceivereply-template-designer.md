@@ -1,7 +1,7 @@
 ---
 title: Progettazione del modello SendAndReceiveReply | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9d1bda133368baa8b72066000b1f239cfabe6e39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b68eea331c58c0fa2b8249293bda0cfb974b1b42
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47517373"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234598"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Finestra di progettazione del modello SendAndReceiveReply
 Il **SendAndReceiveReply** modello viene utilizzato per creare una coppia di preconfigurati <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.ReceiveReply> attività all'interno di un <xref:System.Activities.Statements.Sequence> attività correlate come parte di uno scambio di messaggi di richiesta/risposta modello sul client.  
