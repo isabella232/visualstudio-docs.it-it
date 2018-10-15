@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: Cattura programmatica delle informazioni grafiche | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5807dcc1b5d4aef42d698fa051f425a17fab7f8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47519323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298155"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: cattura programmatica delle informazioni grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [procedura dettagliata: acquisizione grafica informazioni a livello di programmazione](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information-programmatically).  
-  
 La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di acquisire a livello di codice informazioni grafiche da un'app Direct3D.  
   
  L'acquisizione a livello di codice è utile in scenari quali ad esempio:  
@@ -113,7 +111,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
     ```  
   
     > [!NOTE]
-    >  Se `DXGIGetDebugInterface1` restituisce `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), assicurarsi che l'app è in esecuzione nella diagnostica della grafica (ALT+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    >  Se si include `DXGIGetDebugInterface1` restituisce `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), assicurarsi che l'app sia in esecuzione nella diagnostica grafica (ALT+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche  
  Ora che si dispone di un'interfaccia `IDXGraphicsAnalysis` valida, è possibile usare `BeginCapture` e `EndCapture` per acquisire informazioni grafiche.  
@@ -207,7 +205,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Cattura delle informazioni grafica](../debugger/walkthrough-capturing-graphics-information.md)   
- [Acquisizione di informazioni grafiche](../debugger/capturing-graphics-information.md)   
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md)
 
 

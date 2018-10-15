@@ -1,7 +1,7 @@
 ---
 title: Impostazione di un'immagine di sfondo in un diagramma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47526053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240552"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Impostazione di un'immagine di sfondo in un diagramma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [impostazione di un'immagine di sfondo in un diagramma](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram).  
-  
 In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK è possibile impostare l'immagine di sfondo per una finestra di progettazione generata tramite codice personalizzato.  
   
 ## <a name="setting-the-background-image"></a>Impostazione dell'immagine di sfondo  
@@ -52,7 +50,7 @@ In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK �
   
 11. Se Resources.Designer.cs non è presente, fare clic sul file resources. resx nel **Esplora soluzioni**.  
   
-12. Nel **le proprietà** impostare nella finestra di `Custom Tool` proprietà `ResXFileCodeGenerator`.  
+12. Nella finestra **Proprietà** impostare la proprietà `Custom Tool` su `ResXFileCodeGenerator`.  
   
 13. Nelle **Esplora soluzioni**, fare clic sul progetto Dsl, scegliere **Add**, fare clic su **nuova cartella**.  
   
