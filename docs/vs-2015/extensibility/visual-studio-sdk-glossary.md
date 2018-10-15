@@ -1,7 +1,7 @@
 ---
 title: Glossario di Visual Studio SDK | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 453826081ae3d0b747d948212e713dd672550b31
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20310605ed73247958287903a8eb3926ee55ba1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47528755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225550"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossario di Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versione più recente di questo argomento è reperibile in [glossario di Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk-glossary).  
-  
 Questo glossario include le definizioni dei termini utilizzati nel [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] documentazione.  
   
 ## <a name="terms"></a>Termini  
