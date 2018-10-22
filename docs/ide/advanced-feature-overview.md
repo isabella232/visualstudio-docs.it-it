@@ -66,7 +66,7 @@ Per altre informazioni, vedere [Strumenti Web moderni](https://visualstudio.micr
 
 - Compilare app [.NET Core](/dotnet/core/) da eseguire in Windows, macOS e Linux.
 
-- Compilare app per dispositivi mobili per iOS, Android e Windows in C# e F # usando [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
+- Compilare app per dispositivi mobili per iOS, Android e Windows in C# e F# usando [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
 - Usare le tecnologie Web standard&mdash;HTML, CSS e JavaScript&mdash; per compilare app per dispositivi mobili per iOS, Android e Windows usando [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 

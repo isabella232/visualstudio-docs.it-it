@@ -1,6 +1,6 @@
 ---
 title: Usare come destinazione versioni precedenti di .NET Framework per F#
-description: "Informazioni sull'uso di una versione precedente di .NET Framework come destinazione quando si usa F # in Visual Studio."
+description: Informazioni sull'uso di una versione precedente di .NET Framework come destinazione quando si usa F# in Visual Studio.
 ms.date: 07/11/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
