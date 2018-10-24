@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b76efc5c1c476f69a11804c74cd3341139c9c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080314"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863855"
 ---
 # <a name="midl-task"></a>MIDL (attività)
 Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language), *midl.exe*. Per altre informazioni, vedere [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).  
@@ -245,7 +245,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
   
      Se `true`, è necessario che il formato dei file di input sia compatibile con *mktyplib.exe* versione 2.03.  
   
-     Per altre informazioni, vedere l'opzione **/mktyplib203** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche [ODL file syntax](https://msdn.microsoft.com/library/windows/desktop/ms221683(v=vs.85).aspx) (Sintassi del file ODL) nel sito Web MSDN.  
+     Per altre informazioni, vedere l'opzione **/mktyplib203** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche [ODL file syntax](/previous-versions/windows/desktop/automat/odl-file-syntax) (Sintassi del file ODL) nel sito Web MSDN.  
   
 -   **OutputDirectory**  
   
@@ -418,4 +418,4 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
      Per altre informazioni, vedere l'opzione **/W** in [MIDL command-line reference](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **WarnAsError** in questa tabella.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

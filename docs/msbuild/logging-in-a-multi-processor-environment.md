@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077578"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879252"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrazione in un ambiente a più processori
 La possibilità di MSBuild di utilizzare più processori può ridurre notevolmente i tempi di compilazione del progetto, ma aggiunge complessità alla registrazione. In un ambiente a processore singolo, il logger può gestire eventi, messaggi, avvisi ed errori in ingresso in modo prevedibile e sequenziale. Tuttavia, in un ambiente a più processori gli eventi di diverse origini possono arrivare contemporaneamente o fuori sequenza. MSBuild offre un nuovo logger compatibile con più processori e consente la creazione di "logger di inoltro" personalizzati.  
@@ -62,15 +62,15 @@ public interface IForwardingLogger: INodeLogger
  Per altre informazioni, vedere [Creare logger di inoltro](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Allegare un logger distribuito  
- Per allegare un logger distribuito a una build da riga di comando, usare l'opzione `/distributedlogger` (o la forma breve `/dl`). I formati da usare per specificare i nomi dei tipi e delle classi del logger sono identici a quelli usati per l'opzione `/logger`, ad eccezione del fatto che un logger distribuito è costituito da due classi di registrazione: un logger di inoltro e un logger centrale. L'esempio seguente illustra come allegare un logger distribuito:  
+ Per allegare un logger distribuito a una build da riga di comando, usare l'opzione `-distributedlogger` (o la forma breve `-dl`). I formati da usare per specificare i nomi dei tipi e delle classi del logger sono identici a quelli usati per l'opzione `-logger`, ad eccezione del fatto che un logger distribuito è costituito da due classi di registrazione: un logger di inoltro e un logger centrale. L'esempio seguente illustra come allegare un logger distribuito:  
   
 ```cmd  
-msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
+msbuild.exe *.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
 ```  
   
- Un asterisco (*) separa i due nomi di logger nell'opzione `/dl`.  
+ Un asterisco (*) separa i due nomi di logger nell'opzione `-dl`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Logger di compilazione](../msbuild/build-loggers.md)   
