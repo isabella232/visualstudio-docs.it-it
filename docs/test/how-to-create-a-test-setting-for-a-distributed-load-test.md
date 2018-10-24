@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b7d7592d1bdbce0a5a80b304a89c7eaa28875502
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816055"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedura: Creare un'impostazione test per un test di carico distribuito
 
@@ -124,7 +124,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
      **Adattatori dati di diagnostica per test di carico**
 
     |Adattatore dati di diagnostica|Utilizzo nei test di carico|Argomento associato|
-    |-----------------------------|-------------------------|----------------------|
+    |-|-------------------------|-|
     |**Proxy client ASP.NET per IntelliTrace e impatto test:** questo proxy consente di raccogliere informazioni sulle chiamate http da un client a un server Web per gli adattatori dati di diagnostica di IntelliTrace e impatto test.|![Icona Informazioni](../test/media/vc364f4.gif)<br /><br /> A meno che ci sia una specifica esigenza di raccogliere informazioni sul sistema per i computer degli agenti di test, non includere questo adattatore. **Attenzione:** non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti. <br /><br /> I dati dell'impatto sui test non vengono raccolti tramite test di carico.||
     |**IntelliTrace:** è possibile configurare informazioni specifiche sulla traccia diagnostica archiviate in un file di log. Un file di log ha estensione *tdlog*. Quando si esegue il test e un passo del test non riesce, è possibile creare un bug. Il file di log che contiene la traccia diagnostica viene associato automaticamente al bug. I dati raccolti nel file di log aumentano la produttività di debug riducendo il tempo necessario per riprodurre e diagnosticare un errore nel codice. Da questo file di log è possibile ricreare la sessione locale in un altro computer. In questo modo si riduce il rischio che non sia possibile riprodurre un bug.<br /><br /> Per altre informazioni, vedere [Raccogliere dati IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Icona Importante](../test/media/vc364f3.gif)<br /><br /> Non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti e registrati. È opportuno tentare di utilizzare l'adattatore IntelliTrace solo in test di carico che non hanno lunga esecuzione e non utilizzano molti agenti di test.|[Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Profiler ASP.NET:** è possibile creare un'impostazione test che includa la profilatura ASP.NET per la raccolta di dati sulle prestazioni nelle applicazioni Web ASP.NET.|L'adattatore dati di diagnostica del profiler ASP.NET profila il processo di Internet Information Services (IIS), pertanto non funzionerà con un server web di sviluppo. Per profilare il sito web nel test di carico, è necessario installare un agente di test nel computer sul quale IIS è in esecuzione. L'agente di test non genererà carico, ma sarà un agente di sola raccolta. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|[Procedura: Configurare il profiler ASP.NET per i test di carico usando le impostazioni test](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|

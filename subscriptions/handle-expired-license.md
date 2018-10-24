@@ -9,18 +9,18 @@ description: Informazioni su come gli amministratori possono gestire le sottoscr
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ed407abbf4da1914f8a7faa03bbec5ae74b87049
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a5f968eef0418a89d4db78f8d79258bfe6004385
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815754"
 ---
 # <a name="handling-expired-subscriptions"></a>Gestione delle sottoscrizioni scadute
 
 Quando la sottoscrizione di un utente è scaduta, ciò viene indicato nel portale con una barra rossa accanto al nome nell'elenco dei sottoscrittori. Per fare in modo che tali sottoscrittori continuino a utilizzare i vantaggi della sottoscrizione a Visual Studio, è necessario rinnovare le loro licenze. 
 > [!div class="mx-imgBorder"]
-> ![Elenco di sottoscrizioni scadute](_img\expired-subscriptions\expired-list.png)
+> ![Elenco di sottoscrizioni scadute](_img/expired-subscriptions/expired-list.png)
 
 **Per rinnovare le sottoscrizioni**
 1.  Contattare il rivenditore di contratti multilicenza o il rivenditore Microsoft. 

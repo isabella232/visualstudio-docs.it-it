@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821838"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: Visualizzare il tempo di risposta delle pagine Web in un test di carico usando l'Analizzatore test di carico
 
@@ -39,32 +39,32 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 ### <a name="to-view-response-time-data-in-a-table"></a>Per visualizzare i dati sul tempo di risposta in una tabella
 
-1.  Nell'**Analizzatore test di carico** scegliere **Tabelle** nella barra degli strumenti per assicurarsi che venga visualizzata la griglia della tabella.
+1. Nell'**Analizzatore test di carico** scegliere **Tabelle** nella barra degli strumenti per assicurarsi che venga visualizzata la griglia della tabella.
 
-2.  Nella casella di riepilogo **Tabella** selezionare **Pagine**.
+2. Nella casella di riepilogo **Tabella** selezionare **Pagine**.
 
-3.  I dati per ogni pagina vengono visualizzati nella griglia. Solitamente vengono visualizzate le colonne seguenti.
+3. I dati per ogni pagina vengono visualizzati nella griglia. Solitamente vengono visualizzate le colonne seguenti.
 
-    |Intestazione colonna|Descrizione|
-    |-|-|
-    |**Page**|Nome della pagina Web.|
-    |**Scenario**|Nome dello scenario. Importante se il test Web include più di uno scenario.|
-    |**Test**|Nome del test delle prestazioni web. Importante se il test di carico include più di un test delle prestazioni web.|
-    |**Network**|Tipo di rete.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-    |**Totale**|Numero complessivo di richieste effettuate per la pagina Web. Corrisponde al totale di tutte le iterazioni nel test di carico.|
-    |**Media**|Tempo di risposta medio della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-    |**Min**|Tempo di risposta minimo della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-    |**Mediana**|Tempo di risposta mediano della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-    |**90%**|Novantesimo percentile per il tempo di risposta. Ciò indica che il 90% delle pagine ha risposto più velocemente di questo numero, mentre il 10% più lentamente.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-    |**95%**|Novantacinquesimo percentile per il tempo di risposta. Ciò indica che il 95% delle pagine ha risposto più velocemente di questo numero, mentre il 5% più lentamente.|
-    |**99%**|Novantanovesimo percentile per il tempo di risposta. Ciò indica che il 99% delle pagine ha risposto più velocemente di questo numero, mentre il 1% più lentamente.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-    |**Max**|Tempo di risposta massimo della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-    |**Deviazione standard**|Per impostazione predefinita, i dati della deviazione standard non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-    |**Tempo di risposta pagina**|Tempo di risposta medio per tutte le richieste effettuate per la pagina Web.|
-    |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:** il tempo pagina obiettivo viene visualizzato solo quando nel test delle prestazioni web è stato definito l'obiettivo per la richiesta.|
-    |**% corrispondenza a obiettivo**|Percentuale delle richieste effettuate per la pagina web che soddisfano il tempo di risposta obiettivo.|
+   |Intestazione colonna|Descrizione|
+   |-|-|
+   |**Page**|Nome della pagina Web.|
+   |**Scenario**|Nome dello scenario. Importante se il test Web include più di uno scenario.|
+   |**Test**|Nome del test delle prestazioni web. Importante se il test di carico include più di un test delle prestazioni web.|
+   |**Network**|Tipo di rete.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**Totale**|Numero complessivo di richieste effettuate per la pagina Web. Corrisponde al totale di tutte le iterazioni nel test di carico.|
+   |**Media**|Tempo di risposta medio della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**Min**|Tempo di risposta minimo della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**Mediana**|Tempo di risposta mediano della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**90%**|Novantesimo percentile per il tempo di risposta. Ciò indica che il 90% delle pagine ha risposto più velocemente di questo numero, mentre il 10% più lentamente.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**95%**|Novantacinquesimo percentile per il tempo di risposta. Ciò indica che il 95% delle pagine ha risposto più velocemente di questo numero, mentre il 5% più lentamente.|
+   |**99%**|Novantanovesimo percentile per il tempo di risposta. Ciò indica che il 99% delle pagine ha risposto più velocemente di questo numero, mentre il 1% più lentamente.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**Max**|Tempo di risposta massimo della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**Deviazione standard**|Per impostazione predefinita, i dati della deviazione standard non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**Tempo di risposta pagina**|Tempo di risposta medio per tutte le richieste effettuate per la pagina Web.|
+   |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:** il tempo pagina obiettivo viene visualizzato solo quando nel test delle prestazioni web è stato definito l'obiettivo per la richiesta.|
+   |**% corrispondenza a obiettivo**|Percentuale delle richieste effettuate per la pagina web che soddisfano il tempo di risposta obiettivo.|
 
- Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+   Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-response-time-data-in-a-graph"></a>Visualizzare i dati sul tempo di risposta in un grafico
 
@@ -72,26 +72,26 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>Per visualizzare i dati sul tempo di risposta in un grafico
 
-1.  Nell'**Analizzatore test di carico** scegliere **Grafici** nella barra degli strumenti per assicurarsi che venga visualizzato il grafico.
+1. Nell'**Analizzatore test di carico** scegliere **Grafici** nella barra degli strumenti per assicurarsi che venga visualizzato il grafico.
 
-2.  Nella finestra **Contatori** espandere il nodo dello scenario desiderato, ad esempio `Scenario1`.
+2. Nella finestra **Contatori** espandere il nodo dello scenario desiderato, ad esempio `Scenario1`.
 
-3.  Espandere il nodo del test delle prestazioni web desiderato.
+3. Espandere il nodo del test delle prestazioni web desiderato.
 
-4.  Espandere il nodo **Pagine**.
+4. Espandere il nodo **Pagine**.
 
-5.  Espandere il nodo della pagina desiderato.
+5. Espandere il nodo della pagina desiderato.
 
-6.  Fare clic con il pulsante destro del mouse su **% di pagine corrispondenti a obiettivo**, quindi scegliere **Mostra contatore su grafico**.
+6. Fare clic con il pulsante destro del mouse su **% di pagine corrispondenti a obiettivo**, quindi scegliere **Mostra contatore su grafico**.
 
-     I dati vengono aggiunti al grafico.
+    I dati vengono aggiunti al grafico.
 
-7.  (Facoltativo) Ripetere il passaggio precedente per **Avg. Page Time**, **Page Response Time Goal** e **Total Pages**.
+7. (Facoltativo) Ripetere il passaggio precedente per **Avg. Page Time**, **Page Response Time Goal** e **Total Pages**.
 
-    > [!NOTE]
-    > Il valore **Page Response Time Goal** è costante.
+   > [!NOTE]
+   > Il valore **Page Response Time Goal** è costante.
 
- Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
+   Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f302445ebc8de788fc6776900f73b45550d73fa3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bcd63e9a155843d715e63fb6514e22f356847d2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821383"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opzioni, Editor di testo, C#, Formattazione
 
@@ -57,12 +57,12 @@ Queste impostazioni configurano il comando **Formatta documento** per eseguire u
 |**Aggiungi/rimuovi le parentesi graffe per le istruzioni di controllo a riga singola**|Se selezionata, aggiunge o rimuove le parentesi graffe da istruzioni di controllo a riga singola quando **Edit.FormatDocument** viene attivato.| csharp_prefer_braces<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice**  > **Preferenze per blocchi di codice** > **Preferisci parentesi graffe** |
 |**Aggiungi i modificatori di accessibilità**|Se selezionata, aggiunge i modificatori di accessibilità mancanti quando **Edit.FormatDocument** viene attivato.| dotnet_style_require_accessibility_modifiers |
 |**Ordina i modificatori di accessibilità**|Se selezionata, ordina i modificatori di accessibilità quando **Edit.FormatDocument** viene attivato.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**Applica le preferenze relative al corpo di espressioni/blocchi**|Se selezionata, converte i membri con corpo di espressione per bloccare i corpi, o viceversa, quando **Edit.FormatDocument** viene attivato.| [Opzioni di EditorConfig per il membro con corpo di espressione](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice**  > **Preferenze per espressioni** > **Use expression body for methods, constructors, etc.** (Usa il corpo dell'espressione per metodi, costruttori e così via)  |
-|**Applica le preferenze relative al tipo implicito/esplicito**|Se selezionata, consente di convertire `var` al tipo esplicito, o viceversa, quando **Edit.FormatDocument** viene attivato.| [Opzioni di base di EditorConfig per il tipo esplicito](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice** > **Preferenze per 'var'**  |
+|**Applica le preferenze relative al corpo di espressioni/blocchi**|Se selezionata, converte i membri con corpo di espressione per bloccare i corpi, o viceversa, quando **Edit.FormatDocument** viene attivato.| [Opzioni di EditorConfig per il membro con corpo di espressione](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice**  > **Preferenze per espressioni** > **Use expression body for methods, constructors, etc.** (Usa il corpo dell'espressione per metodi, costruttori e così via) |
+|**Applica le preferenze relative al tipo implicito/esplicito**|Se selezionata, consente di convertire `var` al tipo esplicito, o viceversa, quando **Edit.FormatDocument** viene attivato.| [Opzioni di base di EditorConfig per il tipo esplicito](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice** > **Preferenze per 'var'** |
 |**Applica le preferenze relative alle variabili 'out' inline**|Se selezionata, ordina inline le variabili `out` dove possibile quando **Edit.FormatDocument** viene attivato.| csharp_style_inlined_variable_declaration<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice** > **Preferenze per variabili** > **Preferisci dichiarazione di variabile inline** |
 |**Applica le preferenze relative al tipo di linguaggio/framework**|Se selezionata, consente di convertire i tipi di linguaggio ai tipi framework, o viceversa, quando **Edit.FormatDocument** viene attivato.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice** > **preferenze per tipi predefiniti** |
 |**Applica le preferenze di inizializzazione di oggetti/raccolte**|Se selezionata, usa inizializzatori di insieme e oggetto laddove possibile quando **Edit.FormatDocument** viene attivato.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice** > **Preferenze per espressioni** > **Preferisci inizializzatore di oggetto** o **Preferisci inizializzatore di insieme** |
-|**Applica le preferenze relative alla qualificazione 'this.'**|Se selezionata, consente di applicare le preferenze `this.` quando **Edit.FormatDocument** viene attivato.| [Opzioni di EditorConfig per la qualificazione this.](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice** > **Preferenze per 'this.'**  |
+|**Applica le preferenze relative alla qualificazione 'this.'**|Se selezionata, consente di applicare le preferenze `this.` quando **Edit.FormatDocument** viene attivato.| [Opzioni di EditorConfig per la qualificazione this.](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice** > **Preferenze per 'this.'** |
 |**Imposta i campi privati come di sola lettura quando possibile**|Se selezionata, rende privati i campi `readonly` dove possibile quando **Edit.FormatDocument** viene attivato.| dotnet_style_readonly_field<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice**  > **Preferenze campi** > **Preferisci readonly** |
 |**Rimuovi cast non necessari**|Se selezionata, consente di rimuovere i cast inutili quando **Edit.FormatDocument** viene attivato.| N/D |
 |**Rimuovi variabili non usate**|Se selezionata, consente di rimuovere le variabili non usate quando **Edit.FormatDocument** viene attivato.| N/D |

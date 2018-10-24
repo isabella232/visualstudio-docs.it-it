@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821489"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procedura dettagliata: Sviluppo di test preventivi con la funzionalità di generazione dall'utilizzo
 
@@ -36,15 +36,15 @@ Questo argomento illustra come usare la funzionalità di [generazione dall'utili
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Creare un progetto di libreria di classi Windows e un progetto di test
 
-1.  In [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] creare un nuovo progetto di **libreria di classi Windows**. Assegnare al progetto il nome `GFUDemo_VB` o `GFUDemo_CS`, a seconda del linguaggio in uso.
+1. In [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] creare un nuovo progetto di **libreria di classi Windows**. Assegnare al progetto il nome `GFUDemo_VB` o `GFUDemo_CS`, a seconda del linguaggio in uso.
 
-2.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sull'icona della soluzione nella parte superiore, scegliere **Aggiungi** e selezionare **Nuovo progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** scegliere **Test**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sull'icona della soluzione nella parte superiore, scegliere **Aggiungi** e selezionare **Nuovo progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** scegliere **Test**.
 
-3.  Nel riquadro centrale scegliere **Progetto unit test** e accettare il nome predefinito `UnitTestProject1`. La figura seguente mostra la finestra di dialogo quando viene visualizzata in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] l'aspetto della finestra di dialogo è simile.
+3. Nel riquadro centrale scegliere **Progetto unit test** e accettare il nome predefinito `UnitTestProject1`. La figura seguente mostra la finestra di dialogo quando viene visualizzata in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] l'aspetto della finestra di dialogo è simile.
 
-     ![Finestra di dialogo Nuovo progetto di test](../ide/media/newproject_test.png)
+    ![Finestra di dialogo Nuovo progetto di test](../ide/media/newproject_test.png)
 
-4.  Scegliere **OK** per chiudere la finestra di dialogo **Nuovo progetto**.
+4. Scegliere **OK** per chiudere la finestra di dialogo **Nuovo progetto**.
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Aggiungere un riferimento al progetto di libreria di classi
 
@@ -58,20 +58,20 @@ Questo argomento illustra come usare la funzionalità di [generazione dall'utili
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Generare una nuova classe da uno unit test
 
-1.  Il progetto di test contiene un file denominato *UnitTest1*. Fare doppio clic su questo file in **Esplora soluzioni** per aprirlo nell'editor del codice. Vengono generati una classe di test e un metodo di test.
+1. Il progetto di test contiene un file denominato *UnitTest1*. Fare doppio clic su questo file in **Esplora soluzioni** per aprirlo nell'editor del codice. Vengono generati una classe di test e un metodo di test.
 
-2.  Individuare la dichiarazione della classe `UnitTest1` e rinominarla in `AutomobileTest`.
+2. Individuare la dichiarazione della classe `UnitTest1` e rinominarla in `AutomobileTest`.
 
- > [!NOTE]
- >  IntelliSense offre ora due alternative per il completamento delle istruzioni IntelliSense: la *modalità di terminazione* e la *modalità con suggerimenti*. Usare la modalità con suggerimenti per i casi in cui classi e membri vengono usati prima di essere definiti. Quando una finestra di **IntelliSense** è aperta, è possibile premere **CTRL**+**ALT**+**BARRA SPAZIATRICE** per passare dalla modalità di terminazione alla modalità con suggerimenti e viceversa. Per altre informazioni, vedere [Usare IntelliSense](../ide/using-intellisense.md). La modalità con suggerimenti sarà utile quando si digita `Automobile` nel passaggio successivo.
+   > [!NOTE]
+   >  IntelliSense offre ora due alternative per il completamento delle istruzioni IntelliSense: la *modalità di terminazione* e la *modalità con suggerimenti*. Usare la modalità con suggerimenti per i casi in cui classi e membri vengono usati prima di essere definiti. Quando una finestra di **IntelliSense** è aperta, è possibile premere **CTRL**+**ALT**+**BARRA SPAZIATRICE** per passare dalla modalità di terminazione alla modalità con suggerimenti e viceversa. Per altre informazioni, vedere [Usare IntelliSense](../ide/using-intellisense.md). La modalità con suggerimenti sarà utile quando si digita `Automobile` nel passaggio successivo.
 
-3.  Individuare il metodo `TestMethod1()` e rinominarlo in `DefaultAutomobileIsInitializedCorrectly()`. All'interno di questo metodo creare una nuova istanza di una classe denominata `Automobile`, come illustrato negli screenshot seguenti. Vengono visualizzate una sottolineatura ondulata che indica un errore in fase di compilazione e una lampadina [Azioni rapide](../ide/quick-actions.md) a sinistra (solo C#) o direttamente sotto la sottolineatura a zigzag se si passa il puntatore del mouse sopra.
+3. Individuare il metodo `TestMethod1()` e rinominarlo in `DefaultAutomobileIsInitializedCorrectly()`. All'interno di questo metodo creare una nuova istanza di una classe denominata `Automobile`, come illustrato negli screenshot seguenti. Vengono visualizzate una sottolineatura ondulata che indica un errore in fase di compilazione e una lampadina [Azioni rapide](../ide/quick-actions.md) a sinistra (solo C#) o direttamente sotto la sottolineatura a zigzag se si passa il puntatore del mouse sopra.
 
-     ![Azioni rapide in Visual Basic](../ide/media/genclass_underlinevb.png)
+    ![Azioni rapide in Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Azioni rapide in C&#35;](../ide/media/genclass_underline.png)
+    ![Azioni rapide in C&#35;](../ide/media/genclass_underline.png)
 
-4.  Scegliere o fare clic sulla lampadina **Azioni rapide**. Verrà visualizzato un messaggio di errore a indicare che il tipo `Automobile` non è definito. Vengono anche proposte alcune soluzioni.
+4. Scegliere o fare clic sulla lampadina **Azioni rapide**. Verrà visualizzato un messaggio di errore a indicare che il tipo `Automobile` non è definito. Vengono anche proposte alcune soluzioni.
 
 5. Fare clic su **Genera nuovo tipo** per aprire la finestra di dialogo **Genera tipo**. Questa finestra di dialogo contiene alcune opzioni, tra cui la possibilità di generare il tipo in un progetto diverso.
 
@@ -79,9 +79,9 @@ Questo argomento illustra come usare la funzionalità di [generazione dall'utili
 
      ![Finestra di dialogo Genera nuovo tipo](../ide/media/genotherdialog.png)
 
-6.  Fare clic su **OK** per chiudere la finestra di dialogo e creare il nuovo file.
+7. Fare clic su **OK** per chiudere la finestra di dialogo e creare il nuovo file.
 
-7.  In **Esplora soluzioni** verificare che sotto il nodo di progetto **GFUDemo_VB** o **GFUDemo_CS** sia presente il nuovo file *Automobile.vb* o *Automobile.cs*. Nell'editor del codice lo stato attivo è ancora in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. È quindi possibile continuare a scrivere il test con un'interruzione minima.
+8. In **Esplora soluzioni** verificare che sotto il nodo di progetto **GFUDemo_VB** o **GFUDemo_CS** sia presente il nuovo file *Automobile.vb* o *Automobile.cs*. Nell'editor del codice lo stato attivo è ancora in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. È quindi possibile continuare a scrivere il test con un'interruzione minima.
 
 ### <a name="generate-a-property-stub"></a>Generare uno stub per una proprietà
 Si supponga che la specifica del prodotto indichi che la classe `Automobile` ha due proprietà pubbliche denominate `Model` e `TopSpeed`. Queste proprietà devono essere inizializzate con i valori predefiniti `"Not specified"` e `-1` dal costruttore predefinito. Lo unit test seguente verificherà che il costruttore predefinito imposti le proprietà sui valori predefiniti corretti.

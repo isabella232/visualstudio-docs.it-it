@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815182"
 ---
 # <a name="list-memory-command"></a>Comando Elenca memoria
 Visualizza il contenuto dell'intervallo di memoria specificato.
@@ -71,7 +71,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  Di seguito viene riportato un elenco degli alias disponibili per il comando **Debug.ListMemory**:
 
 |Alias|Comandi e opzioni|
-|-----------|--------------------------|
+|-----------| - |
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
 |**db**|Debug.ListMemory /Format:OneByte|
@@ -94,4 +94,4 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

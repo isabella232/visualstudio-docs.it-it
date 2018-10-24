@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 4d40d03bde0323ce44b9de6ff1ae13e281f0ed6c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 9e83a851385b155eaafb372dfe096dbb1b34fed5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815807"
 ---
 # <a name="editor-behavior"></a>Comportamento dell'editor
 
@@ -18,13 +18,13 @@ ms.locfileid: "43224282"
 
 ![Opzioni per il comportamento dell'editor](media/source-editor-image9.png)
 
-*  Parentesi graffe di chiusura corrispondenti possono essere aggiunte automaticamente al codice durante la creazione di nuovi metodi, classi o proprietà. Quando questa opzione è selezionata, se si digita `{`, viene automaticamente aggiunto `}`.
+* Parentesi graffe di chiusura corrispondenti possono essere aggiunte automaticamente al codice durante la creazione di nuovi metodi, classi o proprietà. Quando questa opzione è selezionata, se si digita `{`, viene automaticamente aggiunto `}`.
 * La formattazione immediata del codice viene attivata all'inserimento dei caratteri, ad esempio un punto e virgola o una parentesi, in base alle preferenze di formattazione impostate.
 * È anche possibile scegliere di formattare il file quando lo si salva, per scrivere il codice nel modo desiderato e lasciare che sia l'IDE a formattare il codice in base alle preferenze impostate.
 * Il rientro può essere impostato su Nessuno, Rientro automatico o Rientro intelligente. Di seguito vengono descritte queste impostazioni:
- * Nessuno: imposta il cursore all'inizio della riga successiva
- * Rientro automatico: imposta il cursore sulla stessa colonna nella riga successiva
- * Rientro intelligente: posiziona il rientro nella riga seguente in base al codice
+  * Nessuno: imposta il cursore all'inizio della riga successiva
+  * Rientro automatico: imposta il cursore sulla stessa colonna nella riga successiva
+  * Rientro intelligente: posiziona il rientro nella riga seguente in base al codice
 * Il comportamento relativo all'interruzione delle parole differisce a seconda del sistema operativo e ai fini dello spostamento, l'editor di testo deve essere in grado di riconoscere l'inizio o la fine delle parole. La formattazione può essere impostata su Unix o Windows.
 
 È anche possibile impostare regole di formattazione per XML, CSS, HTML e JSON.

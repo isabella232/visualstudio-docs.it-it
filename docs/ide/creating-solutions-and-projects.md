@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813817"
 ---
 # <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
 
@@ -45,28 +45,28 @@ In ogni caso non è obbligatorio usare le soluzioni e i progetti per sviluppare 
 
 1. Esistono vari metodi per creare un nuovo progetto in Visual Studio. Nella **pagina iniziale** immettere il nome di un modello di progetto nella casella **Cerca modelli di progetto** o scegliere il collegamento **Crea nuovo progetto** per aprire la finestra di dialogo **Nuovo progetto**. È anche possibile scegliere **File** > **Nuovo** > **Progetto** dalla barra dei menu o scegliere il pulsante **Nuovo progetto** sulla barra degli strumenti.
 
-  ![Pagina iniziale](./media/vside-newproject1.png)
+   ![Pagina iniziale](./media/vside-newproject1.png)
 
-  Nella finestra di dialogo **Nuovo progetto** i modelli di progetto disponibili vengono visualizzati in un elenco sotto la categoria **Modelli**. I modelli sono organizzati per linguaggio di programmazione e tipo di progetto, ad esempio Visual C#, JavaScript e Azure Data Lake.
+   Nella finestra di dialogo **Nuovo progetto** i modelli di progetto disponibili vengono visualizzati in un elenco sotto la categoria **Modelli**. I modelli sono organizzati per linguaggio di programmazione e tipo di progetto, ad esempio Visual C#, JavaScript e Azure Data Lake.
 
-  ![Finestra di dialogo Nuovo progetto](./media/vside-newproject-templates-list.png)
+   ![Finestra di dialogo Nuovo progetto](./media/vside-newproject-templates-list.png)
 
-  > [!NOTE]
-  > L'elenco delle lingue disponibili e i modelli di progetto visualizzati dipendono dalla versione di Visual Studio in esecuzione e dai carichi di lavoro installati. Per informazioni su come installare altri carichi di lavoro, vedere [Modify Visual Studio 2017 by adding or removing workloads and components](../install/modify-visual-studio.md) (Modificare Visual Studio 2017 aggiungendo o rimuovendo carichi di lavoro e componenti).
+   > [!NOTE]
+   > L'elenco delle lingue disponibili e i modelli di progetto visualizzati dipendono dalla versione di Visual Studio in esecuzione e dai carichi di lavoro installati. Per informazioni su come installare altri carichi di lavoro, vedere [Modify Visual Studio 2017 by adding or removing workloads and components](../install/modify-visual-studio.md) (Modificare Visual Studio 2017 aggiungendo o rimuovendo carichi di lavoro e componenti).
 
-1. Visualizzare l'elenco dei modelli per il linguaggio di programmazione che si vuole usare facendo clic sul triangolo accanto al nome del linguaggio, quindi scegliere un tipo di progetto.
+2. Visualizzare l'elenco dei modelli per il linguaggio di programmazione che si vuole usare facendo clic sul triangolo accanto al nome del linguaggio, quindi scegliere un tipo di progetto.
 
-  L'esempio seguente mostra i modelli di progetto disponibili per i progetti .NET Core di Visual C#.
+   L'esempio seguente mostra i modelli di progetto disponibili per i progetti .NET Core di Visual C#.
 
-  ![Modelli di progetto](./media/new-project-dialog-net-core.png)
+   ![Modelli di progetto](./media/new-project-dialog-net-core.png)
 
-1. Immettere il nome del nuovo progetto nella casella **Nome**. È possibile scegliere di salvare il progetto nel percorso predefinito del sistema oppure scegliere il pulsante **Sfoglia** per impostare un altro percorso.
+3. Immettere il nome del nuovo progetto nella casella **Nome**. È possibile scegliere di salvare il progetto nel percorso predefinito del sistema oppure scegliere il pulsante **Sfoglia** per impostare un altro percorso.
 
-  È anche possibile scegliere di modificare il nome della soluzione oppure aggiungere il nuovo progetto a un repository Git scegliendo **Aggiungi al controllo del codice sorgente**.
+   È anche possibile scegliere di modificare il nome della soluzione oppure aggiungere il nuovo progetto a un repository Git scegliendo **Aggiungi al controllo del codice sorgente**.
 
-1. Scegliere il pulsante **OK** per creare la soluzione e il progetto.
+4. Scegliere il pulsante **OK** per creare la soluzione e il progetto.
 
-1. Per aggiungere un altro progetto alla soluzione, scegliere il nodo della soluzione in **Esplora soluzioni** e quindi sulla barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+5. Per aggiungere un altro progetto alla soluzione, scegliere il nodo della soluzione in **Esplora soluzioni** e quindi sulla barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Creare un progetto da file di codice esistenti
 
