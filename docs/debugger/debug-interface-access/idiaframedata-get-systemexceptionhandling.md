@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_systemexceptionhandling | Documenti Microsoft'
+title: Get_systemexceptionhandling | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 218cc1c9bc9b031621df1d6a3722d698f82999e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 889f2cf72d27b84cff86792f7b0ba3a43d63d09e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882730"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
-Recupera un flag che indica se la gestione delle eccezioni di sistema sono validi.  
+Recupera un flag che indica se la gestione delle eccezioni di sistema è in vigore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,9 +40,9 @@ HRESULT get_systemExceptionHandling (
  Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Gestione delle eccezioni di sistema è più comunemente noto come gestione strutturata delle eccezioni.  
+ La gestione delle eccezioni di sistema è più comunemente noto come gestione strutturata delle eccezioni.  
   
- Per determinare se la gestione delle eccezioni C++ è attiva, chiamare il [idiaframedata:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) metodo.  
+ Per determinare se la gestione delle eccezioni C++ è attivo, chiamare il [Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

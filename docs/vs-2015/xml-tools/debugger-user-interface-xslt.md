@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891856"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,13 +90,13 @@ In questo argomento vengono descritte le finestre di dialogo e altre finestre de
   
  Nell'elenco seguente vengono descritte alcune restrizioni alla valutazione dell'espressione XPath.  
   
--   Sono consentite solo le funzioni XPath incorporate.  
+- Sono consentite solo le funzioni XPath incorporate.  
   
--   Non sono consentite le funzioni XSLT incorporate quali `document()`, `key()` e così via.  
+- Non sono consentite le funzioni XSLT incorporate quali `document()`, `key()` e così via.  
   
--   Non sono consentite funzioni definite dall'utente.  
+- Non sono consentite funzioni definite dall'utente.  
   
- Per altre informazioni, vedere [procedura: valutare un'espressione XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Per altre informazioni, vedere [procedura: valutare un'espressione XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Finestra Disassembly  
  Nella finestra Disassembly viene visualizzato il codice di assembly generato dal compilatore XSLT. Questa finestra può essere usata nello stesso modo in cui si usano tutte le altre finestre Disassembly di Visual Studio.  

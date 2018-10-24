@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadPropertyNames | Documenti Microsoft
+title: IDiaPropertyStorage::ReadPropertyNames | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a13ac0e3a1af8dc20fe63f832e7a19d7bf40c271
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4d51eaed785932703a5eb97714be8dc7b407fc81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891817"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-Recupera corrispondente per i nomi di stringa fornito gli identificatori di proprietà.  
+Recupera i nomi di stringa corrispondente assegnato gli identificatori di proprietà.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,19 +36,19 @@ HRESULT ReadPropertyNames (
   
 #### <a name="parameters"></a>Parametri  
  `cpropid`  
- [in] Numero di ID di proprietà in `rgpropid`.  
+ [in] Numero di ID proprietà nel `rgpropid`.  
   
  `rgpropid`  
- [in] Matrice di ID di proprietà per cui ottenere i nomi (`PROPID` è definito in Wtypes. H come un `ULONG`).  
+ [in] Matrice di ID proprietà per cui ottenere i nomi (`PROPID` definito in Wtypes. H come un `ULONG`).  
   
  `rglpwstrName`  
- [in, out] Matrice di nomi di proprietà per l'ID di proprietà specificato. La matrice deve essere pre-allocata per contenere il numero richiesto di nomi di proprietà e deve essere in grado di contenere almeno `cpropid``BSTR` stringhe.  
+ [in, out] Matrice di nomi di proprietà per l'ID di proprietà specificato. La matrice deve essere preallocata per contenere il numero di nomi di proprietà richiesto e deve essere in grado di contenere almeno `cpropid``BSTR` stringhe.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- I nomi di proprietà restituito devono essere liberati (chiamando il `SysFreeString` funzione) quando non sono più necessari.  
+ I nomi di proprietà restituito devono essere liberati (chiamando il `SysFreeString` funzioni) quando non sono più necessari.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolByVA | Documenti Microsoft
+title: Findsymbolbyva | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 576cc81eb8d45e522af2a945bb581c61a3d28620
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 46304a95f6e7b42c65d19a1e7bfd51fc1d2ff171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882509"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
-Recupera un tipo di simbolo specificato che contiene o vicino a, un indirizzo virtuale specificato.  
+Recupera un tipo di simbolo specificato che contiene, o è più vicino, un indirizzo virtuale specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,7 +39,7 @@ HRESULT findSymbolByVA (
  [in] Specifica l'indirizzo virtuale.  
   
  `symtag`  
- [in] Tipo di simbolo da trovare. I valori vengono prelevati i [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) enumerazione.  
+ [in] Tipo di simbolo da trovare. I valori sono ricavati dal [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione.  
   
  `ppSymbol`  
  [out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperare l'oggetto che rappresenta il simbolo.  
@@ -57,4 +57,4 @@ pSession->findSymbolByVA( va, SymTagFunction, &pFunc );
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)
+ [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

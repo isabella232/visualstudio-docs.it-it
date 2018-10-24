@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00ad8f91e738cb98aeba93b69cb47c6ab644aa3f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671887"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883477"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Procedura: salvare i documenti a livello di codice
   Esistono diversi modi per salvare i documenti di Microsoft Office Word. È possibile salvare un documento senza modificare il nome del documento, oppure è possibile salvare un documento con un nuovo nome.  
@@ -32,19 +32,19 @@ ms.locfileid: "35671887"
   
 ### <a name="to-save-the-document-associated-with-a-document-level-customization"></a>Per salvare il documento associato a una personalizzazione a livello di documento  
   
-1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Word.Document.Save%2A> della classe <xref:Microsoft.Office.Tools.Word.Document>. Per usare questo esempio di codice, eseguirlo dalla classe `ThisDocument` nel progetto.  
+1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Word.Document.Save%2A> della classe <xref:Microsoft.Office.Tools.Word.Document> . Per usare questo esempio di codice, eseguirlo dalla classe `ThisDocument` nel progetto.  
   
      [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]  
   
 ### <a name="to-save-the-active-document"></a>Per salvare il documento attivo  
   
-1.  Chiamare il <xref:Microsoft.Office.Interop.Word._Document.Save%2A> metodo per il documento attivo. Per usare questo esempio di codice, eseguirlo dalla classe `ThisDocument` o `ThisAddIn` nel progetto.  
+1. Chiamare il <xref:Microsoft.Office.Interop.Word._Document.Save%2A> metodo per il documento attivo. Per usare questo esempio di codice, eseguirlo dalla classe `ThisDocument` o `ThisAddIn` nel progetto.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
-     [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
+    [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
+    [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
   
- Se non si è certi se il documento che si desidera salvare il documento attivo, è possibile fare riferimento ad esso in base al nome.  
+   Se non si è certi se il documento che si desidera salvare il documento attivo, è possibile fare riferimento ad esso in base al nome.  
   
 ### <a name="to-save-a-document-specified-by-name"></a>Per salvare un documento specificato in base al nome  
   

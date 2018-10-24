@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f689d6a0b93ef91c181e536624bb09856c2f35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883968"
 ---
 # <a name="making-commands-available"></a>Miglioramento della disponibilità dei comandi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ Quando vengono aggiunti più pacchetti VSPackage in Visual Studio, l'interfaccia
   
  Un'area principale contesto quinta è lo stato dell'interfaccia utente dell'IDE. Contesti dell'interfaccia utente sono identificati dal contesto del comando attivo `GUID`s, come indicato di seguito:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
- Questi GUID sono contrassegnati come attiva o inattiva, a seconda dello stato corrente dell'IDE. Più contesti dell'interfaccia utente possono essere attivi contemporaneamente.  
+  Questi GUID sono contrassegnati come attiva o inattiva, a seconda dello stato corrente dell'IDE. Più contesti dell'interfaccia utente possono essere attivi contemporaneamente.  
   
 ### <a name="hiding-and-displaying-commands-based-on-context"></a>Per nascondere e visualizzare i comandi in base al contesto  
  È possibile visualizzare o nascondere un comando del pacchetto nell'IDE senza caricare il pacchetto stesso. A tale scopo, definire il comando nel file con estensione vsct del pacchetto usando il `DefaultDisabled`, `DefaultInvisible`, e `DynamicVisibility` comando flag e aggiungere uno o più [VisibilityItem](../../extensibility/visibilityitem-element.md) elementi di [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sezione. Quando un contesto del comando specificato `GUID` diventa attivo, il comando viene visualizzato senza il caricamento del pacchetto.  
@@ -113,13 +113,13 @@ Quando vengono aggiunti più pacchetti VSPackage in Visual Studio, l'interfaccia
   
  Il comando è impostato per essere abilitato e visualizzata ogni volta che esiste una soluzione; vale a dire, ogni volta che uno del contesto del comando seguente GUID è attivo:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
- Nell'esempio, si noti che ogni flag di comando è un oggetto separato [Flag di comando](../../extensibility/command-flag-element.md) elemento.  
+  Nell'esempio, si noti che ogni flag di comando è un oggetto separato [Flag di comando](../../extensibility/command-flag-element.md) elemento.  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   

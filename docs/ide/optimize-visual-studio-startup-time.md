@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 451238283e5f256f9c7c302bd81dd45ad2825cf4
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 20f56af789a84ef73c66e0cd50c87ec48a6212a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884056"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Ottimizzare il tempo di avvio di Visual Studio
 
@@ -59,13 +59,13 @@ La finestra di dialogo elenca le estensioni e le finestre degli strumenti che co
 
 3. Scegliere una delle tre opzioni seguenti:
 
-    - **Usa comportamento predefinito:** comportamento predefinito della finestra degli strumenti. Mantenere selezionata questa opzione non migliorerà le prestazioni di avvio.
+   - **Usa comportamento predefinito:** comportamento predefinito della finestra degli strumenti. Mantenere selezionata questa opzione non migliorerà le prestazioni di avvio.
 
-    - **Non visualizzare la finestra all'avvio:** la finestra degli strumenti specificata viene sempre chiusa all'apertura di Visual Studio, anche se è stata lasciata aperta in una sessione precedente. È possibile aprire la finestra degli strumenti dal menu appropriato quando necessario.
+   - **Non visualizzare la finestra all'avvio:** la finestra degli strumenti specificata viene sempre chiusa all'apertura di Visual Studio, anche se è stata lasciata aperta in una sessione precedente. È possibile aprire la finestra degli strumenti dal menu appropriato quando necessario.
 
-    - **Nascondi automaticamente la finestra all'avvio:** se una finestra degli strumenti è stata lasciata aperta in una sessione precedente, questa opzione consente di comprimere il gruppo della finestra degli strumenti all'avvio per evitarne l'inizializzazione. Questa opzione è una scelta ottimale se si usa spesso una finestra degli strumenti. La finestra degli strumenti rimane disponibile senza compromettere il tempo di avvio di Visual Studio.
+   - **Nascondi automaticamente la finestra all'avvio:** se una finestra degli strumenti è stata lasciata aperta in una sessione precedente, questa opzione consente di comprimere il gruppo della finestra degli strumenti all'avvio per evitarne l'inizializzazione. Questa opzione è una scelta ottimale se si usa spesso una finestra degli strumenti. La finestra degli strumenti rimane disponibile senza compromettere il tempo di avvio di Visual Studio.
 
-    ![Gestisci prestazioni di Visual Studio - visualizzazione delle finestre degli strumenti](../ide/media/vside_perfdialog_toolwindows.png)
+     ![Gestisci prestazioni di Visual Studio - visualizzazione delle finestre degli strumenti](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
 > In alcune versioni precedenti di Visual Studio 2017 è presente una funzionalità denominata **caricamento leggero soluzioni**. Questa funzionalità non è più disponibile in Visual Studio 2017 versione 15.5 e versioni successive. In Visual Studio 2017 versione 15.5 e versioni successive le soluzioni di grandi dimensioni contenenti codice gestito vengono caricate molto più velocemente che in passato, anche senza il caricamento leggero soluzioni.

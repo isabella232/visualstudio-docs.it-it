@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT | Documenti Microsoft
+title: BP_PASSCOUNT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7437a61688958a1346b9c638ad07e3e55dc51f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 105c6668c50d690bcc0016f888ce1f241130d1eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883120"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
-Descrive il numero e le condizioni in cui viene generato un punto di interruzione condizionale.  
+Descrive il numero e le condizioni in cui viene attivato un punto di interruzione condizionale.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,15 +43,15 @@ public struct BP_PASSCOUNT {
   
 ## <a name="members"></a>Membri  
  `dwPassCount`  
- Il numero di volte per passare sul punto di interruzione prima che venga attivata.  
+ Il numero di volte in cui passa sopra il punto di interruzione prima che venga attivata.  
   
  `stylePassCount`  
- Un valore di [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) conteggio esecuzioni test di enumerazione che specifica lo stile del punto di interruzione.  
+ Un valore compreso il [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) conteggio esecuzioni di test di enumerazione che specifica lo stile del punto di interruzione.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è membro il [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struttura.  
+ Questa struttura è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struttura.  
   
- Questa struttura viene inoltre passata come parametro per il[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) e[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) metodi.  
+ Questa struttura viene anche passata come parametro per il[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) e[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) metodi.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

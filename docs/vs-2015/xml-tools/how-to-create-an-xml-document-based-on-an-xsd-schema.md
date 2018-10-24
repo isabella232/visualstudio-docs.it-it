@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54d7ead9f759e990b741ac9c5219af693d10a412
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884225"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: creare un documento XML in base allo schema XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Il **genera XML di esempio** funzionalità genera un file XML di esempio basato 
   
  È possibile usare questa opzione per gli scenari seguenti:  
   
--   Per comprendere l'uso di diversi costrutti nello schema.  
+- Per comprendere l'uso di diversi costrutti nello schema.  
   
--   Per confermare che lo schema funziona come previsto.  
+- Per confermare che lo schema funziona come previsto.  
   
- Il **genera XML di esempio** funzionalità è disponibile solo per gli elementi globali e richiede un set di schemi XML valido.  
+  Il **genera XML di esempio** funzionalità è disponibile solo per gli elementi globali e richiede un set di schemi XML valido.  
   
- Questa funzionalità genera di norma documenti XML validi. Tuttavia, se lo schema contiene uno o più degli elementi seguenti, l'esempio potrebbe non essere valido:  
+  Questa funzionalità genera di norma documenti XML validi. Tuttavia, se lo schema contiene uno o più degli elementi seguenti, l'esempio potrebbe non essere valido:  
   
--   I vincoli di identità `xs:key`, `xs:keyref` e `xs:unique`.  
+- I vincoli di identità `xs:key`, `xs:keyref` e `xs:unique`.  
   
--   Facet `xs:pattern`.  
+- Facet `xs:pattern`.  
   
--   Enumerazioni di tipo `xs:QName`.  
+- Enumerazioni di tipo `xs:QName`.  
   
--   I tipi `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.  
+- I tipi `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.  
   
- Si noti inoltre che il contenuto `xs:base64Binary` sarà generato solo se le enumerazioni si verificano nello schema per il tipo specificato.  
+  Si noti inoltre che il contenuto `xs:base64Binary` sarà generato solo se le enumerazioni si verificano nello schema per il tipo specificato.  
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Per generare un documento di istanza XML basato sul file XSD  
   
