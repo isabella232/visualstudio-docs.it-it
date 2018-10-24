@@ -16,12 +16,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd93f4e0f2d9cca4d7fd12f9c69733655cb99127
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fffb77788a4ac88f2ee607dd989de8c7aab8aebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821929"
 ---
 # <a name="custom-colorable-items"></a>Elementi colorabili personalizzati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,31 +45,31 @@ ms.locfileid: "49192088"
   
 ## <a name="implementing-custom-colorable-items"></a>Implementazione di elementi colorabili personalizzati  
   
-1.  Definire cosa deve essere colorata nel linguaggio, ad esempio parole chiave, operatore e identificatore.  
+1. Definire cosa deve essere colorata nel linguaggio, ad esempio parole chiave, operatore e identificatore.  
   
-2.  Creare un'enumerazione di questi elementi colorabili.  
+2. Creare un'enumerazione di questi elementi colorabili.  
   
-3.  Associare i tipi di token restituiti da un parser o dello scanner con i valori enumerati.  
+3. Associare i tipi di token restituiti da un parser o dello scanner con i valori enumerati.  
   
-     I valori che rappresentano i tipi di token, ad esempio, potrebbero essere gli stessi valori dell'enumerazione di elementi colorabili personalizzati.  
+    I valori che rappresentano i tipi di token, ad esempio, potrebbero essere gli stessi valori dell'enumerazione di elementi colorabili personalizzati.  
   
-4.  Nell'implementazione del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodo nella <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> oggetto, compilare l'elenco di attributi con i valori dell'enumerazione di elementi colorabili personalizzati corrispondente per i tipi di token restituiti dal parser o dello scanner.  
+4. Nell'implementazione del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodo nella <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> oggetto, compilare l'elenco di attributi con i valori dell'enumerazione di elementi colorabili personalizzati corrispondente per i tipi di token restituiti dal parser o dello scanner.  
   
-5.  Nella stessa classe che implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> l'interfaccia, implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfaccia e i relativi due metodi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
+5. Nella stessa classe che implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> l'interfaccia, implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfaccia e i relativi due metodi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
   
-6.  Implementare l'interfaccia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
+6. Implementare l'interfaccia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
   
-7.  Se si desidera supportare valori di colore a 24 bit o ad alta, implementare anche il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfaccia.  
+7. Se si desidera supportare valori di colore a 24 bit o ad alta, implementare anche il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfaccia.  
   
-8.  Nell'oggetto servizio di linguaggio, creare un elenco che contiene il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> oggetti, uno per ogni elemento colorabile possibile identificare il parser o lo scanner.  
+8. Nell'oggetto servizio di linguaggio, creare un elenco che contiene il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> oggetti, uno per ogni elemento colorabile possibile identificare il parser o lo scanner.  
   
-     È possibile accedere a ogni elemento nell'elenco usando il valore corrispondente dall'enumerazione di elementi colorabili personalizzati. Usare i valori di enumerazione come indice nell'elenco. Il primo elemento nell'elenco non viene mai eseguito l'accesso, poiché per il testo predefinito corrisponde allo stile [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sempre gestisce se stesso. Possibile rimediare a questo mediante l'inserimento di un elemento colorabile segnaposto all'inizio dell'elenco.  
+    È possibile accedere a ogni elemento nell'elenco usando il valore corrispondente dall'enumerazione di elementi colorabili personalizzati. Usare i valori di enumerazione come indice nell'elenco. Il primo elemento nell'elenco non viene mai eseguito l'accesso, poiché per il testo predefinito corrisponde allo stile [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sempre gestisce se stesso. Possibile rimediare a questo mediante l'inserimento di un elemento colorabile segnaposto all'inizio dell'elenco.  
   
 9. Nell'implementazione del metodo di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> (metodo), restituiscono il numero di elementi nell'elenco di elementi colorabili personalizzati.  
   
 10. Nell'implementazione del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> (metodo), restituiscono l'elemento colorabile richiesto dall'elenco.  
   
- Per un esempio di come implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfacce, vedere <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
+    Per un esempio di come implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfacce, vedere <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modello di un servizio di linguaggio Legacy](../../extensibility/internals/model-of-a-legacy-language-service.md)   

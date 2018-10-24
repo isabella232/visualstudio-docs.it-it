@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetElementType | Documenti Microsoft
+title: IDebugArrayField::GetElementType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c2eb6009eacd40081be28cc5945310d7a00fc1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95457fdc91e4c625cb56aaba58593acf2a64e16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821942"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Ottiene il tipo di elemento nella matrice.  
@@ -41,10 +41,10 @@ int GetElementType(
   
 #### <a name="parameters"></a>Parametri  
  `ppType`  
- [out] Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che descrive il tipo di elemento.  
+ [out] Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive il tipo di elemento.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  Il [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) oggetto presuppone che tutti gli elementi della matrice sono dello stesso tipo.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory | Documenti Microsoft
+title: IDiaStackWalkHelper::readMemory | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a8e435dddaf0d6fb3908a1ccb6233f08ccd28b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 76b054d004e6c62f9d36ca5fcebe1a7f0476fbfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825856"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 Legge un blocco di dati dall'immagine del file eseguibile in memoria.  
@@ -38,16 +38,16 @@ HRESULT readMemory(
   
 #### <a name="parameters"></a>Parametri  
  `type`  
- [in] Un valore di [MemoryTypeEnum (enumerazione)](../../debugger/debug-interface-access/memorytypeenum.md) enumerazione che specifica il tipo di memoria per la lettura.  
+ [in] Un valore compreso il [enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) enumerazione che specifica il tipo di memoria da leggere.  
   
- va  
+ Valutazione della vulnerabilità  
  [in] Indirizzo virtuale dell'immagine da cui iniziare la lettura.  
   
  `cbData`  
  [in] Le dimensioni del buffer di dati in byte.  
   
  `pcbData`  
- [out] Restituisce il numero di byte effettivamente letti. Se `pbData` è `NULL`, quindi il numero totale di byte di dati disponibili.  
+ [out] Restituisce il numero di byte effettivamente letti. Se `pbData` è `NULL`, il valore è il numero totale di byte di dati disponibili.  
   
  `pbData`  
  [in, out] Un buffer che viene compilato con la memoria di lettura.  
@@ -57,4 +57,4 @@ HRESULT readMemory(
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [MemoryTypeEnum (enumerazione)](../../debugger/debug-interface-access/memorytypeenum.md)
+ [Enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)

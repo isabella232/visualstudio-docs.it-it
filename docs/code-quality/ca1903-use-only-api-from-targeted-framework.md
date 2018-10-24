@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d08cc9d20759796c35f0145e519a27fdb12fdf
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822813"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Utilizzare solo API della versione di .NET Framework di destinazione
+
 |||
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|

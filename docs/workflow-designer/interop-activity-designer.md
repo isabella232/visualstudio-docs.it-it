@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849359"
 ---
 # <a name="interop-activity-designer"></a>ActivityDesigner Interop
 
@@ -46,7 +46,7 @@ Fare clic sul **fare clic per passare** testo nel **ActivityType** finestra, nel
 La tabella seguente illustra il <xref:System.Activities.Statements.Interop> proprietà e viene descritto come usarle nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area di progettazione del flusso di lavoro.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo dell'attività <xref:System.Activities.Statements.Interop>. Il valore predefinito è **interoperabilità**. Anche se il nome visualizzato non è obbligatorio, è consigliabile per fornirne una.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Consente di specificare il tipo di attività incluso nell'attività <xref:System.Activities.Statements.Interop>. Tale tipo specificato deve derivare da <xref:System.Workflow.ComponentModel.Activity>.|
 

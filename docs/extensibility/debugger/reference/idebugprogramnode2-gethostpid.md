@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostPid | Documenti Microsoft
+title: IDebugProgramNode2::GetHostPid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33296937ec969deb204d98363afd8ec8af9f1e08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d6931efe0025d1437e91a0194807e8ea7c9783b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854351"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Ottiene l'identificatore di processo di sistema per il processo che ospita il programma.  
@@ -47,7 +47,7 @@ int GetHostPid (
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per una semplice `CProgram` oggetto che implementa il [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CProgram` oggetto che implementa le [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia.  
   
 ```cpp  
 HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsectioncontribs:: Next | Documenti Microsoft'
+title: Idiaenumsectioncontribs | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f700ef7160cff643c2a60007d7b1f83ecbe4eeb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 630914434defea47254597ca0e392379b70a3283
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818952"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-Recupera un numero specificato di contributi di sezione nella sequenza di enumerazione.  
+Recupera un determinato numero di contributi vengano effettuati sezione nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +36,16 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametri  
  celt  
- [in] Il numero dei contributi di sezione nell'enumeratore deve essere recuperato.  
+ [in] Il numero di contributi vengano effettuati sezione nell'enumeratore deve essere recuperato.  
   
  rgelt  
- [out] Matrice che deve essere compilato con la [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) gli oggetti che rappresentano i contributi di sezione desiderata.  
+ [out] Matrice che deve essere compilato con il [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) gli oggetti che rappresentano i contributi di sezione desiderata.  
   
  pceltFetched  
- [out] Restituisce il numero dei contributi di sezione nell'enumeratore recuperata.  
+ [out] Restituisce il numero di contributi vengano effettuati sezione nell'enumeratore recuperato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esistono alcun ulteriori contributi di sezione. In caso contrario, verrà restituito un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esistono Nessun più contributi di sezione. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   

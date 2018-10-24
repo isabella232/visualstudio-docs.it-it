@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Documenti Microsoft
+title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22f6cadaa88d6cc87ec70451d9da850cd49b7753
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a93877066e90bbc72ca58181d192219e898897d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833889"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Questo metodo aggiunge un nodo di programma per ogni motore di debug (DE) specificato.  
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>Parametri  
  `guidLaunchingEngine`  
- [in] Il `GUID` di un DE che deve essere utilizzato per avviare i programmi (e viene utilizzato per aggiungere nodi di programma).  
+ [in] Il `GUID` di un CRI che deve essere utilizzato per avviare programmi (e si presuppone per aggiungere nodi di un proprio programma).  
   
  `rgguidSpecificEngines`  
  [in] Matrice di `GUID`s di DEs per il programma che verranno aggiunti i nodi.  
   
  `celtSpecificEngines`  
- [in] Il numero di `GUID`s nel `rgguidSpecificEngines` matrice.  
+ [in] I numerosi `GUID`s nel `rgguidSpecificEngines` matrice.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- [Nodi di programma](../../../extensibility/debugger/program-nodes.md) verranno aggiunti per ogni Germania elencati nella `rgguidSpecificEngines`, escludendo il motore di avvio (come specificato in `guidLaunchingEngine`), che vengono utilizzati per aggiungere il proprio nodo programma quando si avvia un programma.  
+ [I nodi di programma](../../../extensibility/debugger/program-nodes.md) verranno aggiunti per ogni Germania elencati nella `rgguidSpecificEngines`, escluso il motore che esegue l'applicazione (come specificato in `guidLaunchingEngine`), che vengono utilizzati per aggiungere il proprio nodo programma quando avvia un programma.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   

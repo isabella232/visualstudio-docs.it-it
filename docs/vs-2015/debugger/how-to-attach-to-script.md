@@ -24,12 +24,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b86987554a3cd39d96a44f1f0c3396a1c32b98fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08a82442d4e7eed160c6ec83d67c498073b42ac9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852557"
 ---
 # <a name="how-to-attach-to-script"></a>Procedura: connettersi a file script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ In questo argomento viene illustrato come connettere manualmente il debugger di 
   
 ### <a name="to-attach-to-a-running-process"></a>Per connettersi a un processo in esecuzione  
   
-1.  Scegliere **Connetti a processo** dal menu **Debug**. (Se è aperto alcun progetto, scegliere **Connetti a processo** nel **Tools** menu.)  
+1. Scegliere **Connetti a processo** dal menu **Debug**. (Se è aperto alcun progetto, scegliere **Connetti a processo** nel **Tools** menu.)  
   
-2.  Nel **Connetti a processo** della finestra di dialogo esaminare le **processi disponibili** elenco e individuare il processo di script si desidera stabilire una connessione. È possibile identificare i processi di script esaminando la **tipo** colonna.  
+2. Nel **Connetti a processo** della finestra di dialogo esaminare le **processi disponibili** elenco e individuare il processo di script si desidera stabilire una connessione. È possibile identificare i processi di script esaminando la **tipo** colonna.  
   
-    1.  Se il processo di cui si desidera eseguire il debug è in esecuzione in un altro computer, sarà necessario innanzitutto selezionare il computer remoto. Per altre informazioni, vedere [procedura: selezionare un Computer remoto](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1.  Se il processo di cui si desidera eseguire il debug è in esecuzione in un altro computer, sarà necessario innanzitutto selezionare il computer remoto. Per altre informazioni, vedere [procedura: selezionare un Computer remoto](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-    2.  Se il processo viene eseguito con un account utente diverso, selezionare la casella di controllo **Mostra processi di tutti gli utenti** .  
+   2.  Se il processo viene eseguito con un account utente diverso, selezionare la casella di controllo **Mostra processi di tutti gli utenti** .  
   
-    3.  Se si è connessi tramite **connessione Desktop remoto**, selezionare la **Mostra processi in tutte le sessioni** casella di controllo.  
+   3.  Se si è connessi tramite **connessione Desktop remoto**, selezionare la **Mostra processi in tutte le sessioni** casella di controllo.  
   
-3.  Fare clic sul processo al quale ci si desidera connettere.  
+3. Fare clic sul processo al quale ci si desidera connettere.  
   
-4.  Nel **collegare a** casella, dovrebbe essere **codice Script** oppure **automatico: codice Script**. Se viene visualizzata una voce diversa, attenersi alla seguente procedura:  
+4. Nel **collegare a** casella, dovrebbe essere **codice Script** oppure **automatico: codice Script**. Se viene visualizzata una voce diversa, attenersi alla seguente procedura:  
   
-    1.  Fare clic su **Seleziona**.  
+   1.  Fare clic su **Seleziona**.  
   
-    2.  Nel **Seleziona tipo di codice** finestra di dialogo, fare clic su **eseguire il Debug di questi tipi di codice** e selezionare **Script**.  
+   2.  Nel **Seleziona tipo di codice** finestra di dialogo, fare clic su **eseguire il Debug di questi tipi di codice** e selezionare **Script**.  
   
-    3.  Fare clic su **OK**.  
+   3.  Fare clic su **OK**.  
   
-5.  Scegliere **Connetti**.  
+5. Scegliere **Connetti**.  
   
-     A questo punto, è possibile che venga visualizzato un avviso in cui viene comunicato che il debug degli script è disabilitato in Internet Explorer. In tal caso, vedere [avviso: debug degli Script disabilitato](../debugger/warning-script-debugging-disabled.md).  
+    A questo punto, è possibile che venga visualizzato un avviso in cui viene comunicato che il debug degli script è disabilitato in Internet Explorer. In tal caso, vedere [avviso: debug degli Script disabilitato](../debugger/warning-script-debugging-disabled.md).  
   
- L'elenco **Processi disponibili** viene visualizzato automaticamente quando si apre la finestra di dialogo **Processi** . I processi possono essere avviati e interrotti in background mentre la finestra di dialogo è aperta. È quindi possibile che il contenuto non sia sempre aggiornato. È possibile aggiornare l'elenco in qualsiasi momento per visualizzare l'elenco corrente dei processi, premere il **Aggiorna** pulsante.  
+   L'elenco **Processi disponibili** viene visualizzato automaticamente quando si apre la finestra di dialogo **Processi** . I processi possono essere avviati e interrotti in background mentre la finestra di dialogo è aperta. È quindi possibile che il contenuto non sia sempre aggiornato. È possibile aggiornare l'elenco in qualsiasi momento per visualizzare l'elenco corrente dei processi, premere il **Aggiorna** pulsante.  
   
- Durante l'esecuzione del debug è possibile essere connessi a più di un programma, ma in un dato momento solo uno di tali programmi potrà essere attivo nel debugger. È possibile impostare il programma attivo nella barra degli strumenti Posizione di debug. Per altre informazioni, vedere [procedura: impostare il processo corrente](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+   Durante l'esecuzione del debug è possibile essere connessi a più di un programma, ma in un dato momento solo uno di tali programmi potrà essere attivo nel debugger. È possibile impostare il programma attivo nella barra degli strumenti Posizione di debug. Per altre informazioni, vedere [procedura: impostare il processo corrente](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
- Tutti i **Debug** i comandi di menu esecuzione interessano il programma attivo. È possibile interrompere qualsiasi programma sottoposto a debug dalla finestra di dialogo processi. Visualizzare [usando i punti di interruzione](../debugger/using-breakpoints.md).  
+   Tutti i **Debug** i comandi di menu esecuzione interessano il programma attivo. È possibile interrompere qualsiasi programma sottoposto a debug dalla finestra di dialogo processi. Visualizzare [usando i punti di interruzione](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
 >  Se si tenta di connettersi a un processo appartenente a un account utente non attendibile, verrà visualizzata una finestra di dialogo contenente un avviso di sicurezza per chiedere conferma dell'operazione. Per altre informazioni, vedere [avviso di sicurezza: connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti risultano sospette o non si è certi, non stabilire la connessione al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  

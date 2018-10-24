@@ -1,5 +1,5 @@
 ---
-title: Modifiche supportate al codice (C++) | Documenti Microsoft
+title: Modifiche supportate al codice (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb97c08b8673854e0fe0d0bbd64efbe038227c43
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854117"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C++)
 L'opzione Modifica e continuazione per Visual C++ gestisce la gran parte dei tipi di modifica al codice. Alcune modifiche non possono tuttavia essere applicate durante l'esecuzione del programma. Per applicare tali modifiche, è necessario arrestare l'esecuzione e compilare una versione aggiornata del codice.  
@@ -40,38 +40,38 @@ L'opzione Modifica e continuazione per Visual C++ gestisce la gran parte dei tip
 ##  <a name="BKMK_Unsupported_changes"></a> Modifiche non supportate  
  Le seguenti modifiche del codice C/C++ non possono essere applicate durante una sessione di debug:  
   
--   La maggior parte delle modifiche a dati globali o statici.  
+- La maggior parte delle modifiche a dati globali o statici.  
   
--   Le modifiche a file eseguibili copiati da un altro computer e non compilati localmente.  
+- Le modifiche a file eseguibili copiati da un altro computer e non compilati localmente.  
   
--   Le modifiche a un tipo di dati che hanno effetto sul layout di un oggetto, ad esempio i membri dati di una classe.  
+- Le modifiche a un tipo di dati che hanno effetto sul layout di un oggetto, ad esempio i membri dati di una classe.  
   
--   Aggiunta di più di 64 KB di nuovo codice o nuovi dati.  
+- Aggiunta di più di 64 KB di nuovo codice o nuovi dati.  
   
--   Aggiunta di variabili che richiedono un costruttore in un punto precedente al puntatore all'istruzione.  
+- Aggiunta di variabili che richiedono un costruttore in un punto precedente al puntatore all'istruzione.  
   
--   Modifiche che interessano il codice per il quale è necessaria l'inizializzazione di runtime.  
+- Modifiche che interessano il codice per il quale è necessaria l'inizializzazione di runtime.  
   
--   Aggiunta di gestori di eccezioni, in alcune istanze.  
+- Aggiunta di gestori di eccezioni, in alcune istanze.  
   
--   Modifiche di file di risorse.  
+- Modifiche di file di risorse.  
   
--   Modifiche del codice di file di sola lettura.  
+- Modifiche del codice di file di sola lettura.  
   
--   Modifiche del codice privo di un file PDB corrispondente.  
+- Modifiche del codice privo di un file PDB corrispondente.  
   
--   Modifiche del codice privo di un file oggetto.  
+- Modifiche del codice privo di un file oggetto.  
   
- Se si apporta una di queste modifiche e si tenta quindi di applicare le modifiche al codice, viene visualizzato un messaggio di errore o di avviso nella finestra **Output** .  
+  Se si apporta una di queste modifiche e si tenta quindi di applicare le modifiche al codice, viene visualizzato un messaggio di errore o di avviso nella finestra **Output** .  
   
--   Le librerie statiche non vengono aggiornate con la funzionalità Modifica e continuazione. Se si apporta una modifica in una libreria statica, l'esecuzione continua con la versione precedente e non viene visualizzato alcun avviso.  
+- Le librerie statiche non vengono aggiornate con la funzionalità Modifica e continuazione. Se si apporta una modifica in una libreria statica, l'esecuzione continua con la versione precedente e non viene visualizzato alcun avviso.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Scenari non supportati  
  Modifica e continuazione per C/C++ non è disponibile nei seguenti scenari di debug:  
   
 -   Debug di applicazioni native compilate con [/Zo (Ottimizzare il debug)](/cpp/build/reference/zo-enhance-optimized-debugging)  
   
--   Nelle versioni di Visual Studio precedenti a Visual Studio 2015 Update 1, debug di App UWP o componenti. A partire da Visual Studio 2015 Update 1, è possibile utilizzare Modifica e continuazione nelle App UWP C++ e DirectX, perché è ora supportata la `/ZI` opzione del compilatore con il `/bigobj` passare. È anche possibile usare Modifica e continuazione con file binari compilati con l'opzione `/FASTLINK` .  
+-   Nelle versioni di Visual Studio precedenti a Visual Studio 2015 Update 1, il debug di App UWP o componenti. A partire da Visual Studio 2015 Update 1, è possibile usare modifica e continuazione nelle App UWP C++ e nelle App DirectX perché ora è supportata la `/ZI` opzione del compilatore con la `/bigobj` passare. È anche possibile usare Modifica e continuazione con file binari compilati con l'opzione `/FASTLINK` .  
   
 -   Debug in Windows 98.  
   

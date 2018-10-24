@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831821"
 ---
 # <a name="core-interfaces"></a>Interfacce di base
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 ## <a name="discussion"></a>Discussione  
  Queste interfacce vengono usate principalmente per creare il motore di debug (DE). Essi sono organizzate per categorie:  
   
--   [Punti di interruzione](#Breakpoints)  
+- [Punti di interruzione](#Breakpoints)  
   
--   [Contesti](#Contexts)  
+- [Contesti](#Contexts)  
   
--   [In modalità Server Core](#CoreServer)  
+- [In modalità Server Core](#CoreServer)  
   
--   [Motori di debug](#DebugEngines)  
+- [Motori di debug](#DebugEngines)  
   
--   [Documenti](#Documents)  
+- [Documenti](#Documents)  
   
--   [Eventi](#Events)  
+- [Eventi](#Events)  
   
--   [Espressioni](#Expressions)  
+- [Espressioni](#Expressions)  
   
--   [Memoria](#Memory)  
+- [Memoria](#Memory)  
   
--   [Moduli](#Modules)  
+- [Moduli](#Modules)  
   
--   [Porte](#Ports)  
+- [Porte](#Ports)  
   
--   [Processi](#Processes)  
+- [Processi](#Processes)  
   
--   [Programmi](#Programs)  
+- [Programmi](#Programs)  
   
--   [Proprietà](#Properties)  
+- [Proprietà](#Properties)  
   
--   [Stack frame](#StackFrames)  
+- [Stack frame](#StackFrames)  
   
--   [Thread](#Threads)  
+- [Thread](#Threads)  
   
--   [Visualizzatori di tipi](#TypeVisualizers)  
+- [Visualizzatori di tipi](#TypeVisualizers)  
   
- Le entità che possono implementare le interfacce sono:  
+  Le entità che possono implementare le interfacce sono:  
   
--   Eseguire il debug del motore (DE)  
+- Eseguire il debug del motore (DE)  
   
--   Fornitore di porte (PS)  
+- Fornitore di porte (PS)  
   
--   Analizzatore di espressioni (EE)  
+- Analizzatore di espressioni (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> Punti di interruzione  
  Queste interfacce sono correlate per l'implementazione e il rilevamento di punti di interruzione.  

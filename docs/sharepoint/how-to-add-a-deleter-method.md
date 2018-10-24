@@ -24,52 +24,52 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ac3df32dd384a6e8beeb164e897d6534e2a96fb
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0bc47da90356149e3fe2e1d1b888bf5ac6a877e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842677"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Procedura: aggiungere un metodo Deleter
   È possibile abilitare un utente finale eliminare un record di dati da un elenco esterno in un sito di SharePoint tramite l'aggiunta di un metodo Deleter per il modello. Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-deleter-method"></a>Per creare un metodo Deleter  
   
-1.  Nel **finestra di progettazione integrazione applicativa dei dati**, scegliere un'entità.  
+1. Nel **finestra di progettazione integrazione applicativa dei dati**, scegliere un'entità.  
   
-2.  Nella barra dei menu, scegliere **View** > **Other Windows** > **Dettagli metodo BDC**.  
+2. Nella barra dei menu, scegliere **View** > **Other Windows** > **Dettagli metodo BDC**.  
   
-     Il **Dettagli metodo BDC** verrà visualizzata la finestra. Per altre informazioni su questa finestra, vedere [Cenni preliminari sugli strumenti di progettazione di modelli di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md).  
+    Il **Dettagli metodo BDC** verrà visualizzata la finestra. Per altre informazioni su questa finestra, vedere [Cenni preliminari sugli strumenti di progettazione di modelli di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  Nel **aggiungere un metodo** casella di riepilogo **creare un metodo Deleter**.  
+3. Nel **aggiungere un metodo** casella di riepilogo **creare un metodo Deleter**.  
   
-     Visual Studio aggiunge i seguenti elementi al modello. Questi elementi vengono visualizzati nei **Dettagli metodo BDC** finestra.  
+    Visual Studio aggiunge i seguenti elementi al modello. Questi elementi vengono visualizzati nei **Dettagli metodo BDC** finestra.  
   
-    -   Un metodo denominato **Elimina**.  
+   - Un metodo denominato **Elimina**.  
   
-    -   Un parametro di input per il metodo.  
+   - Un parametro di input per il metodo.  
   
-    -   Un descrittore di tipo per il parametro.  
+   - Un descrittore di tipo per il parametro.  
   
-    -   Un'istanza del metodo per il metodo.  
+   - Un'istanza del metodo per il metodo.  
   
      Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-4.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida del servizio file di codice che è stato generato per l'entità e quindi scegliere **Visualizza codice**.  
+4. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida del servizio file di codice che è stato generato per l'entità e quindi scegliere **Visualizza codice**.  
   
-     File di codice servizio dell'entità viene aperto nell'Editor del codice. Per altre informazioni sui file di codice servizio dell'entità, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).  
+    File di codice servizio dell'entità viene aperto nell'Editor del codice. Per altre informazioni sui file di codice servizio dell'entità, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-5.  Aggiungere codice al metodo Deleter per eliminare un record. L'esempio seguente elimina una voce da un ordine di vendita tramite il database di esempio AdventureWorks per SQL Server.  
+5. Aggiungere codice al metodo Deleter per eliminare un record. L'esempio seguente elimina una voce da un ordine di vendita tramite il database di esempio AdventureWorks per SQL Server.  
   
-    > [!NOTE]  
-    >  Il metodo in questo esempio usa due parametri di input.  
+   > [!NOTE]  
+   >  Il metodo in questo esempio usa due parametri di input.  
   
-    > [!NOTE]  
-    >  Sostituire il valore del `ServerName` campo con il nome del server.  
+   > [!NOTE]  
+   >  Sostituire il valore del `ServerName` campo con il nome del server.  
   
-     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
-     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
+    [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
+    [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
   
 ## <a name="see-also"></a>Vedere anche
  [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)   

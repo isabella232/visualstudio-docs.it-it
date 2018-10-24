@@ -17,12 +17,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8179262ceabe1765ee6c9eab96553bcbcbbee419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bab850a6943268581035336a923232377e6489f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843678"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>L'accesso a tipo di carattere archiviata e le impostazioni dei colori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,17 +53,17 @@ Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente di sviluppo integrato (
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Usare la persistenza dello stato dei tipi di carattere e colori  
  Rendere persistenti i tipi di carattere e colori comporta:  
   
--   Sincronizzare le impostazioni IDE con impostazioni archiviate nel Registro di sistema.  
+- Sincronizzare le impostazioni IDE con impostazioni archiviate nel Registro di sistema.  
   
--   La propagazione di informazioni sulla modifica del Registro di sistema.  
+- La propagazione di informazioni sulla modifica del Registro di sistema.  
   
--   L'impostazione e recupero delle impostazioni archiviate nel Registro di sistema.  
+- L'impostazione e recupero delle impostazioni archiviate nel Registro di sistema.  
   
- La sincronizzazione delle impostazione di archiviazione con le impostazioni IDE è in gran parte trasparente. L'IDE sottostante scrive automaticamente le impostazioni aggiornate per **elementi visualizzati** alle voci del Registro di sistema delle categorie.  
+  La sincronizzazione delle impostazione di archiviazione con le impostazioni IDE è in gran parte trasparente. L'IDE sottostante scrive automaticamente le impostazioni aggiornate per **elementi visualizzati** alle voci del Registro di sistema delle categorie.  
   
- Se più pacchetti VSPackage condividono una determinata categoria, un pacchetto VSPackage richiede che gli eventi vengono generati quando i metodi del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia vengono utilizzati per modificare le impostazioni del Registro di sistema archiviati.  
+  Se più pacchetti VSPackage condividono una determinata categoria, un pacchetto VSPackage richiede che gli eventi vengono generati quando i metodi del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia vengono utilizzati per modificare le impostazioni del Registro di sistema archiviati.  
   
- Per impostazione predefinita, non è abilitata la generazione di eventi. Per abilitare la generazione di eventi, una categoria deve essere aperto usando <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. In questo modo, l'IDE chiamare appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> metodo che implementa un pacchetto VSPackage.  
+  Per impostazione predefinita, non è abilitata la generazione di eventi. Per abilitare la generazione di eventi, una categoria deve essere aperto usando <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. In questo modo, l'IDE chiamare appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> metodo che implementa un pacchetto VSPackage.  
   
 > [!NOTE]
 >  Modifica dei dati mediante la **carattere e colori** pagina delle proprietà generano eventi indipendenti di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. È possibile usare la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> per determinare se un aggiornamento delle impostazioni di carattere e colori memorizzato nella cache è necessaria prima di chiamare i metodi di interfaccia di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> classe.  

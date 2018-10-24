@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847631"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 
@@ -31,7 +31,7 @@ Questo documento descrive come usare la **finestra di progettazione shader** di 
 La **finestra di progettazione shader** supporta questi formati di shader:
 
 |Nome del formato|Estensione nome del file|Operazioni supportate (visualizzazione, modifica, esportazione)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Directed Graph Shader Language|*.dgsl*|Visualizzazione, modifica|
 |Shader HLSL (codice sorgente)|*.hlsl*|Esporta|
 |Shader HLSL (bytecode)|*.cso*|Esporta|
@@ -177,7 +177,7 @@ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportar
 ## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
 
 |Comando|Scelte rapide da tastiera|
-|-------------|------------------------|
+|-------------| - |
 |Passare alla modalità **Seleziona**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
 |Passare alla modalità **Zoom**|**CTRL**+**G**, **CTRL**+**Z**<br /><br /> **Z**|
 |Passare alla modalità **Panoramica**|**CTRL**+**G**, **CTRL**+**P**<br /><br /> **K**|
@@ -204,5 +204,5 @@ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportar
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce una panoramica degli strumenti di Visual Studio a cui attingere per poter usare trame e immagini, modelli 3D ed effetti shader.|
-|[Editor immagini](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|
+|[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'editor dei modelli di Visual Studio per lavorare con i modelli 3D.|

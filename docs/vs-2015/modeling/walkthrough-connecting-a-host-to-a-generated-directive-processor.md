@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817873"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: connessione di un host a un processore di direttiva generato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ ms.locfileid: "49251934"
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Usare strumenti Domain-Specific Language per generare un processore di direttiva che si basa su un modello di dominio  
   
-1.  Creare una soluzione di linguaggio specifico di dominio che ha le caratteristiche seguenti:  
+1. Creare una soluzione di linguaggio specifico di dominio che ha le caratteristiche seguenti:  
   
-    -   Nome: DSLMinimalTest  
+   - Nome: DSLMinimalTest  
   
-    -   Modello di soluzione: linguaggio minimo  
+   - Modello di soluzione: linguaggio minimo  
   
-    -   Estensione di file: min  
+   - Estensione di file: min  
   
-    -   Nome della società: Fabrikam  
+   - Nome della società: Fabrikam  
   
      Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [procedura: creare una soluzione di linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-2.  Scegliere **Compila soluzione** dal menu **Compila**.  
+2. Scegliere **Compila soluzione** dal menu **Compila**.  
   
-    > [!IMPORTANT]
-    >  Questo passaggio genera il processore di direttiva e aggiunge la chiave per lo nel Registro di sistema.  
+   > [!IMPORTANT]
+   >  Questo passaggio genera il processore di direttiva e aggiunge la chiave per lo nel Registro di sistema.  
   
-3.  Scegliere **Avvia debug** dal menu **Debug**.  
+3. Scegliere **Avvia debug** dal menu **Debug**.  
   
-     Una seconda istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apre.  
+    Una seconda istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apre.  
   
-4.  Nella build sperimentale, nella **Esplora soluzioni**, fare doppio clic sul file **sample.min**.  
+4. Nella build sperimentale, nella **Esplora soluzioni**, fare doppio clic sul file **sample.min**.  
   
-     Il file viene aperto nella finestra di progettazione. Si noti che il modello a dispone di due elementi, ExampleElement1 ed ExampleElement2 e un collegamento tra di essi.  
+    Il file viene aperto nella finestra di progettazione. Si noti che il modello a dispone di due elementi, ExampleElement1 ed ExampleElement2 e un collegamento tra di essi.  
   
-5.  Chiudere la seconda istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Chiudere la seconda istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-6.  Salvare la soluzione e quindi chiudere la finestra di progettazione di linguaggio specifico di dominio.  
+6. Salvare la soluzione e quindi chiudere la finestra di progettazione di linguaggio specifico di dominio.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>La connessione di un Host del modello di testo personalizzato a un processore di direttiva  
  Dopo aver generato il processore di direttiva, si connette il processore di direttiva e l'host del modello di testo personalizzato creato nella [procedura dettagliata: creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md).  

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue | Documenti Microsoft
+title: IDebugObject::SetValue | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6f8f589c0dca8c97e1a9664d9eaa93bf9e8741
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b78a4513aab8a9c4d2c539a592799dffdcea53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850971"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-Imposta il valore dell'oggetto da una serie di byte consecutiva.  
+Imposta il valore dell'oggetto da una serie consecutiva di byte.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -49,10 +49,10 @@ int SetValue(
  [in] Le dimensioni del valore in byte.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- I valori nella matrice vengono copiati in questa [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto, sostituendo i valori esistenti. Le dimensioni del nuovo valore possono essere maggiore o minore del valore esistente. Questo `IDebugObject` non può essere un riferimento null.  
+ I valori nella matrice vengono copiati [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto, sostituendo i valori esistenti. Le dimensioni del nuovo valore possono essere maggiore o minore di quello esistente. Ciò `IDebugObject` non può essere un riferimento null.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

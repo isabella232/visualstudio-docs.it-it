@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider::GetPropertyProxy | Documenti Microsoft
+title: IPropertyProxyProvider::GetPropertyProxy | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d789c1020c9e4cdcaf8e472fbf2c3e481ac211b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83a4f1e68ff58e61feb1d185626c4d55c16f6589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836489"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
-Recupera l'interfaccia di proxy di proprietà per l'ID del proxy specificato.  
+Recupera l'interfaccia proprietà del proxy per l'ID del proxy specificate.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,7 +52,7 @@ int GetPropertyProxy(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Per supportare i visualizzatori di tipo esterno, questo metodo inoltra la chiamata al [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) metodo. Vedere [Visualizing e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) per informazioni dettagliate su come viene ottenuto il IEEVisualizerService.  
+ Per supportare i visualizzatori di tipo esterno, questo metodo inoltra la chiamata per il [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) (metodo). Visualizzare [visualizzazione di dati e visualizzare](../../../extensibility/debugger/visualizing-and-viewing-data.md) per informazioni dettagliate sul modo in cui viene ottenuto il IEEVisualizerService.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)   

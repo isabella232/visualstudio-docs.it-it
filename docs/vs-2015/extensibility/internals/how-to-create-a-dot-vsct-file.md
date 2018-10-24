@@ -15,27 +15,27 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b28fe38a9d45816481233c3ae267b3c764ee264
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89ac7468b04f9493aca0b57dca832e01d9298f83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847852"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procedura: creare una. File Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Esistono diversi modi per creare un file di configurazione (con estensione vsct) basato su XML di Visual Studio Command Table.  
   
--   È possibile creare un nuovo VSPackage nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] modello di pacchetto.  
+- È possibile creare un nuovo VSPackage nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] modello di pacchetto.  
   
--   È possibile usare il compilatore comando basato su XML di configurazione di tabella, Vsct.exe, per generare un file da un file con estensione CTC esistente.  
+- È possibile usare il compilatore comando basato su XML di configurazione di tabella, Vsct.exe, per generare un file da un file con estensione CTC esistente.  
   
--   È possibile usare Vsct.exe per generare un file con estensione vsct da un file CTO esistente.  
+- È possibile usare Vsct.exe per generare un file con estensione vsct da un file CTO esistente.  
   
--   È possibile creare manualmente un nuovo file con estensione vsct.  
+- È possibile creare manualmente un nuovo file con estensione vsct.  
   
- Questo argomento illustra come creare manualmente un nuovo file con estensione vsct.  
+  Questo argomento illustra come creare manualmente un nuovo file con estensione vsct.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Per creare manualmente un nuovo file con estensione vsct  
   

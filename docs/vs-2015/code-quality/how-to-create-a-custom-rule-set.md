@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812465"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Procedura: Creare un set di regole personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ Nelle [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Per creare una regola personalizzata da un singolo set di regole esistente  
   
-1.  In Esplora soluzioni fare clic sul progetto e quindi selezionare **proprietà**.  
+1. In Esplora soluzioni fare clic sul progetto e quindi selezionare **proprietà**.  
   
-2.  Nel **delle proprietà** scheda, fare clic su **analisi del codice**.  
+2. Nel **delle proprietà** scheda, fare clic su **analisi del codice**.  
   
-3.  Nel **del Set di regole** riepilogo, effettuare una delle operazioni seguenti:  
+3. Nel **del Set di regole** riepilogo, effettuare una delle operazioni seguenti:  
   
-    -   Selezionare il set di regole che si desidera personalizzare.  
+   - Selezionare il set di regole che si desidera personalizzare.  
   
      \- oppure -  
   
-    -   Selezionare  **\<Sfoglia >** per specificare set di una regola esistente non incluso nell'elenco.  
+   - Selezionare  **\<Sfoglia >** per specificare set di una regola esistente non incluso nell'elenco.  
   
-4.  Fare clic su **aperto** per visualizzare le regole nell'editor set di regole.  
+4. Fare clic su **aperto** per visualizzare le regole nell'editor set di regole.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Per creare una regola personalizzata impostata da più set di regole esistente  
   

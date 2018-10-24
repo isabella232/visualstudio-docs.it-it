@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetSymbolPath | Documenti Microsoft
+title: IDebugEngine3::SetSymbolPath | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5a79cfd817be1a665f0008a39420e7cb39cc50b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 00f493c0c64dc8bc6bef6adff59fff4ce1bcb8c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854572"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-Imposta il percorso o i percorsi in cui vengono ricercati i simboli di debug.  
+Imposta il percorso o percorsi in cui vengono ricercati i simboli di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,16 +48,16 @@ int SetSymbolPath(
 |Parametro|Descrizione|  
 |---------------|-----------------|  
 |`szSymbolSearchPath`|[in] Stringa contenente il percorso di ricerca di simboli o i percorsi. Per informazioni dettagliate, vedere "la sezione Osservazioni". Non può essere null.|  
-|`szSymbolCachePath`|[in] Stringa contenente il percorso locale in cui possono essere memorizzati nella cache i simboli. Non può essere null.|  
-|`Flags`|[in] Non è utilizzato; sempre impostato su 0.|  
+|`szSymbolCachePath`|[in] Stringa contenente il percorso locale in cui possono essere memorizzati nella cache dei simboli. Non può essere null.|  
+|`Flags`|[in] Non usato; sempre impostato su 0.|  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- La stringa `szSymbolSearchPath` è un elenco di uno o più percorsi, separati da punti e virgola, di cercare simboli. Questi percorsi possono essere un percorso locale, un percorso UNC in stile o un URL. Questi percorsi possono anche essere una combinazione di tipi diversi. Se il percorso UNC (ad esempio, \\\Symserver\Symbols), quindi il motore di debug deve determinare se il percorso è a un server di simboli e deve essere in grado di caricare i simboli dai server memorizzarli nella cache nel percorso specificato da `szSymbolCachePath`.  
+ La stringa `szSymbolSearchPath` è un elenco di uno o più percorsi, separati da punti e virgola, per la ricerca dei simboli. Questi percorsi possono essere un percorso locale, un percorso UNC in stile o un URL. Questi percorsi possono essere anche una combinazione di tipi diversi. Se il percorso UNC (ad esempio, \\\Symserver\Symbols), quindi il motore di debug deve determinare se il percorso è in un server di simboli e deve essere in grado di caricare i simboli dai server, memorizzarli nella cache nel percorso specificato da `szSymbolCachePath`.  
   
- Il percorso dei simboli può anche contenere uno o più percorsi di cache. Memorizza nella cache è elencati in ordine di priorità, con la cache di priorità più alta per primi e separati da * simboli. Ad esempio:  
+ Il percorso dei simboli può anche contenere uno o più percorsi di cache. Le cache sono elencate in ordine di priorità, con la cache con priorità più alta prima di tutto e separate da * simboli. Ad esempio:  
   
 ```  
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com  

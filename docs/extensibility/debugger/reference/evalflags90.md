@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS90 | Documenti Microsoft
+title: EVALFLAGS90 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 120bf38afbf05f367757de3a5e453cab8b4311b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43c8c7dcba7ea1125c031f0cc64a902d88f67017
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849426"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-Enumera i valori validi per i flag che controllano la valutazione dell'espressione. Questa enumerazione estende il [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumerazione.  
+Enumera i valori validi per i flag che controllano la valutazione dell'espressione. Questa enumerazione estende la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -69,19 +69,19 @@ public enum enum_EVALFLAGS90
  Specifica che il valore restituito, se presente, da valutare.  
   
  EVAL90_NOSIDEEFFECTS  
- Specifica che gli effetti collaterali non sono consentite.  
+ Specifica che gli effetti collaterali non saranno consentite.  
   
  EVAL90_ALLOWBPS  
- Specifica di arresto per i punti di interruzione.  
+ Specifica l'arresto per i punti di interruzione.  
   
  EVAL90_ALLOWERRORREPORT  
  Specifica che la segnalazione errori per l'host deve essere autorizzato. Utilizzato principalmente per la valutazione dell'espressione in uno script in Internet Explorer.  
   
  EVAL90_FUNCTION_AS_ADDRESS  
- Funzioni di forza da valutare come indirizzi, invece di richiamare la funzione.  
+ Funzioni di forze deve essere valutata come indirizzi, anziché richiamare la funzione.  
   
  EVAL90_NOFUNCEVAL  
- Impedisce che funzione da valutare. Si consideri ad esempio il `int` token nell'espressione `myExpression(int) + 10`. Questa funzione può essere valutata correttamente come un indirizzo, ma non come un valore.  
+ Impedisce che funzione viene valutata. Si consideri, ad esempio, il `int` token dell'espressione `myExpression(int) + 10`. Questa funzione può essere valutata correttamente come un indirizzo, ma non come un valore.  
   
  EVAL90_NOEVENTS  
  Flag per indicare che gli eventi che si verificano durante la valutazione dell'espressione non devono essere inviati al gestore di sessione di debug (SDM) o all'IDE.  
@@ -93,7 +93,7 @@ public enum enum_EVALFLAGS90
  Consente la creazione di variabili implicita.  
   
  EVAL90_FORCE_EVALUATION_NOW  
- Valutazione forza affinché venga eseguito immediatamente. Ciò è utile quando l'elaborazione di una richiesta, ad esempio una richiesta dell'utente.  
+ Valutazione di forze affinché venga eseguito immediatamente. Ciò è utile quando una richiesta, ad esempio una richiesta dell'utente di manutenzione.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Msdbg90.h  

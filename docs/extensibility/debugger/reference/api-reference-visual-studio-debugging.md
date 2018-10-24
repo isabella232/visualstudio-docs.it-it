@@ -1,5 +1,5 @@
 ---
-title: Riferimento all'API (debug di Visual Studio) | Documenti Microsoft
+title: Riferimento all'API (debug di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c9007d679e36e2aa6dbab41074338395434be42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97d5aa6fc92457557493005389d129993d38e099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839440"
 ---
-# <a name="api-reference-visual-studio-debugging"></a>Riferimento all'API (debug di Visual Studio)
-La sezione di riferimento include una panoramica concettuale dell'API, una Guida che illustra la sintassi e utilizzo per tutti gli elementi API e un'ampia gamma di esempi di codice. Tutti i riferimenti sono elencati in ordine alfabetico in base alla categoria.  
+# <a name="api-reference-visual-studio-debugging"></a>Riferimenti API (debug di Visual Studio)
+La sezione di riferimento include una panoramica concettuale dell'API, una Guida che illustra la sintassi e sull'utilizzo per tutti gli elementi di API e un'ampia gamma di esempi di codice. Tutti i riferimenti sono elencati in ordine alfabetico per categoria.  
   
- La tabella seguente illustra il comune `HRESULT` valori restituiti dai metodi.  
+ La tabella seguente illustra i comuni `HRESULT` valori restituiti dai metodi.  
   
 |nome|Descrizione|Valore|  
 |----------|-----------------|-----------|  
@@ -40,14 +40,14 @@ La sezione di riferimento include una panoramica concettuale dell'API, una Guida
 |E_ACCESSDENIED|Errore di accesso generale negato.|0x80070005|  
   
 > [!NOTE]
->  Quando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debug metodo restituisce `S_OK`, si presuppone che tutte le risorse sono validi i puntatori di parametro, vale a dire alcuna convalida non viene effettuata su out puntatori parametro quando `S_OK` viene restituito.  
-  
+>  Quando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debug metodo restituisce `S_OK`, si presuppone che tutte le risorse sono validi i puntatori di parametro, vale a dire, alcuna convalida non viene effettuata in orizzontale i puntatori di parametro quando `S_OK` viene restituito.  
+> 
 > [!NOTE]
->  Non valido o `NULL` [parametri out] può causare l'IDE di arresto anomalo del sistema.  
+>  Non è valido o `NULL` [parametri out] può causare l'IDE di arresto anomalo del sistema.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
  [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [Helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Helper SDK per eseguire il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Estendibilità del debugger di Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

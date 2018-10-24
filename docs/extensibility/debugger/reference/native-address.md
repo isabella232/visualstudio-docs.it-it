@@ -1,5 +1,5 @@
 ---
-title: NATIVE_ADDRESS | Documenti Microsoft
+title: NATIVE_ADDRESS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb443816db82d6003536b36783fd6555ef45db24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 751b4dfc641b017a4dc3f47f90b95e8447a2b1c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126646"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840428"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 Questa struttura rappresenta un indirizzo nativo.  
@@ -44,7 +44,7 @@ public struct NATIVE_ADDRESS {
  L'indirizzo nativo (il significato di questo dipende dalla fase di esecuzione e del sistema operativo).  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_NATIVE` (compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  
+ Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_NATIVE` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  

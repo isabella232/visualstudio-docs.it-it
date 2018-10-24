@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Documenti Microsoft
+title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36cacd8ba313c9beb7565ebb20cbce23f7b6c12e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbb12f315bc0e83e14ad4a342443ed3207411dae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846382"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Recupera l'identificatore di checksum e l'algoritmo del documento con il numero massimo di byte da utilizzare.  
+Recupera l'identificatore di algoritmo e del documento dato il numero massimo di byte da usare.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -49,7 +49,7 @@ public int GetChecksumAndAlgorithmId(
  [out] Identificatore univoco per l'algoritmo di checksum.  
   
  `cMaxBytes`  
- [in] Numero massimo di byte da utilizzare per il valore di checksum.  
+ [in] Numero massimo di byte da usare per il valore di checksum.  
   
  `pChecksum`  
  [out] Valore di checksum.  

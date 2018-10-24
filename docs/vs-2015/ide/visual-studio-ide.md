@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852713"
 ---
 # <a name="visual-studio-ide"></a>IDE di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,31 +116,31 @@ Se si desidera scoprire nuove funzionalità di Visual Studio 2015, vedere [What 
 
  L'editor di testo ha un alto livello di interazione (se richiesto) e molte funzionalità per la produttività che consentono di scrivere codice in modo più rapido ed efficace. Le funzionalità variano in base al linguaggio e non è necessario usare alcun linguaggio (digitando "Editor" in Avvio veloce) per attivarle o disattivarle. Alcune delle funzionalità di produttività usate più di frequente sono:
 
-1.  [Refactoring](../ide/refactoring-in-visual-studio.md) include operazioni come la ridenominazione intelligente delle variabili, lo spostamento delle righe di codice selezionate in funzioni separate, lo spostamento di codice in altre posizioni, il riordinamento dei parametri di funzione e molto altro.
+1. [Refactoring](../ide/refactoring-in-visual-studio.md) include operazioni come la ridenominazione intelligente delle variabili, lo spostamento delle righe di codice selezionate in funzioni separate, lo spostamento di codice in altre posizioni, il riordinamento dei parametri di funzione e molto altro.
 
-2.  *IntelliSense* è un termine generico che comprende diverse funzionalità comuni che visualizzano le informazioni sul tipo di codice direttamente nell'editor e, in alcuni casi, scrivono automaticamente piccole parti di codice. È come se si avesse a disposizione la documentazione di base all'interno dell'editor, senza dover cercare le informazioni sul tipo in una finestra della Guida separata. Le funzionalità di IntelliSense variano a seconda del linguaggio. Per altre informazioni, vedere [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md). La figura seguente illustra alcune funzionalità di IntelliSense:
+2. *IntelliSense* è un termine generico che comprende diverse funzionalità comuni che visualizzano le informazioni sul tipo di codice direttamente nell'editor e, in alcuni casi, scrivono automaticamente piccole parti di codice. È come se si avesse a disposizione la documentazione di base all'interno dell'editor, senza dover cercare le informazioni sul tipo in una finestra della Guida separata. Le funzionalità di IntelliSense variano a seconda del linguaggio. Per altre informazioni, vedere [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md). La figura seguente illustra alcune funzionalità di IntelliSense:
 
-     ![Elenco dei membri di Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Elenco dei membri di Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
-3.  **Linee a zigzag** : segnalano errori o potenziali problemi nel codice in tempo reale durante la digitazione e consentono di risolverli immediatamente senza attendere che vengano rilevati durante la fase di compilazione o di esecuzione. Se si passa il mouse su una linea a zigzag, vengono visualizzate informazioni aggiuntive sull'errore. Sul margine sinistro può essere visualizzata anche una lampadina con i suggerimenti su come risolvere l'errore. Per altre informazioni, vedere [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md).
+3. **Linee a zigzag** : segnalano errori o potenziali problemi nel codice in tempo reale durante la digitazione e consentono di risolverli immediatamente senza attendere che vengano rilevati durante la fase di compilazione o di esecuzione. Se si passa il mouse su una linea a zigzag, vengono visualizzate informazioni aggiuntive sull'errore. Sul margine sinistro può essere visualizzata anche una lampadina con i suggerimenti su come risolvere l'errore. Per altre informazioni, vedere [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md).
 
-     ![Lampadina con passaggio del mouse](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![Lampadina con passaggio del mouse](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
-4.  I [segnalibri](../ide/setting-bookmarks-in-code.md) consentono di passare rapidamente a righe specifiche dei file in uso.
+4. I [segnalibri](../ide/setting-bookmarks-in-code.md) consentono di passare rapidamente a righe specifiche dei file in uso.
 
-5.  Nel menu di scelta rapida dell'editor di testo è possibile richiamare la finestra [Call Hierarchy](../ide/reference/call-hierarchy.md) per visualizzare i metodi che chiamano e vengono chiamati dal metodo sotto il punto di inserimento.
+5. Nel menu di scelta rapida dell'editor di testo è possibile richiamare la finestra [Call Hierarchy](../ide/reference/call-hierarchy.md) per visualizzare i metodi che chiamano e vengono chiamati dal metodo sotto il punto di inserimento.
 
-6.  **CodeLens** : consente di trovare i riferimenti e le modifiche al codice, i bug collegati, gli elementi di lavoro, le revisioni del codice e gli unit test senza uscire dall'editor. Per altre informazioni, vedere [Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md).
+6. **CodeLens** : consente di trovare i riferimenti e le modifiche al codice, i bug collegati, gli elementi di lavoro, le revisioni del codice e gli unit test senza uscire dall'editor. Per altre informazioni, vedere [Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-7.  La finestra **Visualizza definizione** mostra un metodo o una definizione di tipo inline senza uscire dal contesto corrente. Questa finestra ora funziona anche con XAML.
+7. La finestra **Visualizza definizione** mostra un metodo o una definizione di tipo inline senza uscire dal contesto corrente. Questa finestra ora funziona anche con XAML.
 
-8.  L'opzione del menu di scelta rapida **Vai a definizione** visualizza direttamente la posizione in cui è definita la funzione o l'oggetto. Facendo clic con il pulsante destro del mouse nell'editor sono disponibili anche altri comandi di spostamento.
+8. L'opzione del menu di scelta rapida **Vai a definizione** visualizza direttamente la posizione in cui è definita la funzione o l'oggetto. Facendo clic con il pulsante destro del mouse nell'editor sono disponibili anche altri comandi di spostamento.
 
 9. Uno strumento correlato, [Visualizzatore oggetti](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), consente di controllare gli assembly .NET o Windows Runtime nel sistema per vedere quali tipi contengono e quali metodi e proprietà contengono questi tipi.
 
      ![Visualizzatore oggetti con System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
- Molte voci dei menu Modifica e Visualizza sono collegate in qualche modo all'editor di codice. Per altre informazioni sull'editor, vedere [Scrittura di codice nell'editor di testo e del codice](../ide/writing-code-in-the-code-and-text-editor.md) e [Modifica del codice](https://www.visualstudio.com/features/ide-vs).
+   Molte voci dei menu Modifica e Visualizza sono collegate in qualche modo all'editor di codice. Per altre informazioni sull'editor, vedere [Scrittura di codice nell'editor di testo e del codice](../ide/writing-code-in-the-code-and-text-editor.md) e [Modifica del codice](https://www.visualstudio.com/features/ide-vs).
 
 ## <a name="compiling-and-building-your-code"></a>Creazione e compilazione del codice
 

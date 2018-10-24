@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848488"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Procedura: disabilitare il processo di hosting
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Le chiamate ad alcune API possono essere influenzate quando il processo di hosti
   
 ### <a name="to-disable-the-hosting-process"></a>Per disabilitare il processo di hosting  
   
-1.  Aprire un progetto eseguibile in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. I progetti che non producono file eseguibili (ad esempio librerie di classi o progetti di servizio) non dispongono di questa opzione.  
+1. Aprire un progetto eseguibile in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. I progetti che non producono file eseguibili (ad esempio librerie di classi o progetti di servizio) non dispongono di questa opzione.  
   
-2.  Scegliere **Proprietà** dal menu **Progetto**.  
+2. Scegliere **Proprietà** dal menu **Progetto**.  
   
-3.  Fare clic sulla scheda **Debug**.  
+3. Fare clic sulla scheda **Debug**.  
   
-4.  Deselezionare la casella di controllo **Abilita processo di hosting di Visual Studio**.  
+4. Deselezionare la casella di controllo **Abilita processo di hosting di Visual Studio**.  
   
- Quando il processo di hosting viene disabilitato, diverse funzionalità di debug non sono disponibili o presentano prestazioni ridotte. Per altre informazioni, vedere [Debug e processo di hosting](../debugger/debugging-and-the-hosting-process.md).  
+   Quando il processo di hosting viene disabilitato, diverse funzionalità di debug non sono disponibili o presentano prestazioni ridotte. Per altre informazioni, vedere [Debug e processo di hosting](../debugger/debugging-and-the-hosting-process.md).  
   
- In generale, quando il processo di hosting viene disabilitato:  
+   In generale, quando il processo di hosting viene disabilitato:  
   
 -   Aumenta il tempo necessario per avviare il debug di applicazioni [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   

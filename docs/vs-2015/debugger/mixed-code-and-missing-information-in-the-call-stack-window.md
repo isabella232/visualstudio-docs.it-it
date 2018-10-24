@@ -32,23 +32,23 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03277af5f1cca5c3ded7b43a82ca6bbe74c5e756
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b594d5cfdee66ccdca2859a7ff0fc90fc5afb536
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825452"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Codice misto e informazioni mancanti nella finestra Stack di chiamate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A causa delle differenze tra gli stack di chiamate per il codice gestito e il codice nativo, il debugger non è sempre in grado di visualizzare lo stack di chiamate completo in caso di tipi di codice misti. Quando il codice nativo chiama il codice gestito, è possibile notare le seguenti discrepanze nel **Stack di chiamate** finestra:  
   
--   Il frame nativo situato immediatamente di sopra del codice gestito potrebbe non includere il **Stack di chiamate** finestra. Per altre informazioni, vedere [procedura: uscire da codice gestito quando sono visualizzati frame nativi mancanti dalla finestra Stack di chiamate](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
+- Il frame nativo situato immediatamente di sopra del codice gestito potrebbe non includere il **Stack di chiamate** finestra. Per altre informazioni, vedere [procedura: uscire da codice gestito quando sono visualizzati frame nativi mancanti dalla finestra Stack di chiamate](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
   
--   Per le applicazioni in modalità mista avviate all'esterno del debugger, il **Stack di chiamate** finestra potrebbe visualizzare solo il codice gestito e nessuno dei frame nativi saranno visibili.  
+- Per le applicazioni in modalità mista avviate all'esterno del debugger, il **Stack di chiamate** finestra potrebbe visualizzare solo il codice gestito e nessuno dei frame nativi saranno visibili.  
   
- Entrambi i casi sono piuttosto rari. Nella maggior parte delle chiamate native a codice gestito gli stack di chiamate verranno visualizzati in modo corretto.  
+  Entrambi i casi sono piuttosto rari. Nella maggior parte delle chiamate native a codice gestito gli stack di chiamate verranno visualizzati in modo corretto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md)

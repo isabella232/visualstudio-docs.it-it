@@ -17,37 +17,37 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843483"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare forme d'immagine per specificare l'aspetto delle classi di dominio in una finestra di progettazione generata. Definire una forma immagine impostando il `Image` proprietà della classe in un file di immagine predefinito. Sono supportati i formati seguenti:  
   
--   .gif  
+- .gif  
   
--   .jpg  
+- .jpg  
   
--   .jpeg  
+- .jpeg  
   
--   .bmp  
+- .bmp  
   
--   .wmf  
+- .wmf  
   
--   EMF  
+- EMF  
   
--   .png  
+- .png  
   
- Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nel **risorse**cartella le **Dsl** progetto.  
+  Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nel **risorse**cartella le **Dsl** progetto.  
   
- Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Forme d'immagine hanno le proprietà elencate nella tabella seguente.  
+  Forme d'immagine hanno le proprietà elencate nella tabella seguente.  
   
 |Proprietà|Descrizione|Impostazione predefinita|  
 |--------------|-----------------|-------------|  

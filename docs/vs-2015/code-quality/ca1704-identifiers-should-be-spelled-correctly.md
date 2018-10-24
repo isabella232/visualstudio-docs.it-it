@@ -20,15 +20,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a39b0a05efd70dcbfb611fba19c5e17250be5e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827545"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Gli identificatori devono essere digitati correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
@@ -42,30 +43,30 @@ ms.locfileid: "49263744"
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola analizza l'identificatore per i token e controlla l'ortografia di ogni token. Algoritmo di analisi esegue le trasformazioni seguenti:
 
--   Lettere maiuscole avviare un nuovo token. Ad esempio, MyNameIsJoe suddivide in token "My", "Name", "Is", "Joe".
+- Lettere maiuscole avviare un nuovo token. Ad esempio, MyNameIsJoe suddivide in token "My", "Name", "Is", "Joe".
 
--   Per più lettere maiuscole, l'ultima lettera maiuscola avvia un nuovo token. Ad esempio, GUIEditor suddivide in token di "Interfaccia utente grafica", "Editor".
+- Per più lettere maiuscole, l'ultima lettera maiuscola avvia un nuovo token. Ad esempio, GUIEditor suddivide in token di "Interfaccia utente grafica", "Editor".
 
--   Vengono rimossi iniziali e finali apostrofi. Ad esempio, 'sender' suddivide in token "mittente".
+- Vengono rimossi iniziali e finali apostrofi. Ad esempio, 'sender' suddivide in token "mittente".
 
--   Caratteri di sottolineatura indicano la fine di un token e vengono rimossi. Ad esempio Hello_world suddivide in token di "Hello", "world".
+- Caratteri di sottolineatura indicano la fine di un token e vengono rimossi. Ad esempio Hello_world suddivide in token di "Hello", "world".
 
--   Le e commerciali incorporate vengono rimossi. Ad esempio, for&mat viene scomposto nel token "format".
+- Le e commerciali incorporate vengono rimossi. Ad esempio, for&mat viene scomposto nel token "format".
 
- Per impostazione predefinita, viene utilizzata la versione inglese (en) del correttore ortografico. Nessun altro dizionari sono attualmente disponibili.
+  Per impostazione predefinita, viene utilizzata la versione inglese (en) del correttore ortografico. Nessun altro dizionari sono attualmente disponibili.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, correggere l'ortografia del termine o aggiungere la parola al dizionario personalizzato denominato DizionarioPersonale. Inserire il dizionario nella directory di installazione dello strumento, nella directory del progetto o nella directory che è associata allo strumento sotto il profilo dell'utente (%USERPROFILE%\Application dati\\...). Per informazioni su come aggiungere il dizionario personalizzato a un progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vedere [procedura: personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
--   Aggiungere le parole che non dovrebbero provocare una violazione in un percorso Dictionary/parole/Recognized.
+- Aggiungere le parole che non dovrebbero provocare una violazione in un percorso Dictionary/parole/Recognized.
 
--   Aggiungere le parole che devono causare una violazione in un percorso dizionario/parole/non riconosciuto.
+- Aggiungere le parole che devono causare una violazione in un percorso dizionario/parole/non riconosciuto.
 
--   Aggiungere le parole che devono essere contrassegnate come obsoleta in un percorso dizionario/parole/deprecate. Vedere l'argomento di regola correlata [CA1726: utilizzare termini Preferiti](../code-quality/ca1726-use-preferred-terms.md)per altre informazioni.
+- Aggiungere le parole che devono essere contrassegnate come obsoleta in un percorso dizionario/parole/deprecate. Vedere l'argomento di regola correlata [CA1726: utilizzare termini Preferiti](../code-quality/ca1726-use-preferred-terms.md)per altre informazioni.
 
--   Aggiungere le eccezioni alle regole di maiuscole e minuscole degli acronimi al percorso di dizionario/acronimi/CasingExceptions.
+- Aggiungere le eccezioni alle regole di maiuscole e minuscole degli acronimi al percorso di dizionario/acronimi/CasingExceptions.
 
- Di seguito è riportato un esempio della struttura di un file del dizionario personalizzato.
+  Di seguito è riportato un esempio della struttura di un file del dizionario personalizzato.
 
 ```
 <Dictionary>

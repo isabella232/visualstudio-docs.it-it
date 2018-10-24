@@ -9,12 +9,12 @@ description: Si possono verificare errori di accesso se si usano alias o nomi de
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854468"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Possibili errori di accesso alle sottoscrizioni di Visual Studio con alias
 
@@ -116,10 +116,10 @@ Dopo l'assegnazione di una sottoscrizione al sottoscrittore, quest'ultimo riceve
 1. Passare a https://my.visualstudio.com e fare clic su **Crea un account Microsoft**.
 
 2. Completare i campi:
-    - Immettere l'indirizzo di posta elettronica che ha ricevuto il messaggio di benvenuto nella casella Someone@example.com
-    - Creare la password
-    - Scegliere le impostazioni promozionali
-    - Fare clic su **Avanti**.
+   - Immettere l'indirizzo di posta elettronica che ha ricevuto il messaggio di benvenuto nella casella Someone@example.com
+   - Creare la password
+   - Scegliere le impostazioni promozionali
+   - Fare clic su **Avanti**.
 
 3. Completare i passaggi di convalida e fare clic su **Avanti**.
 
@@ -141,10 +141,10 @@ Ti è stata assegnata una sottoscrizione di Visual Studio ed è possibile che tu
 2. Fare clic su Crea un account Microsoft sul lato destro
 
 3. Compilare il modulo:
-    - Usare l'indirizzo di posta elettronica aziendale nella casella someone@example.com
-    - Immettere una password
-    - Selezionare la preferenza per le promozioni
-    - Fare clic su Avanti
+   - Usare l'indirizzo di posta elettronica aziendale nella casella someone@example.com
+   - Immettere una password
+   - Selezionare la preferenza per le promozioni
+   - Fare clic su Avanti
 
 4. Completare i passaggi di convalida dell'account
 

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::Reset | Documenti Microsoft
+title: IEnumDebugCodeContexts2::Reset | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db487e60215416813dcc67647241fe4684512c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 840846a4f2889c61705eeb87afcf9c7ad8e5af2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846876"
 ---
 # <a name="ienumdebugcodecontexts2reset"></a>IEnumDebugCodeContexts2::Reset
-Reimposta il primo elemento dell'enumerazione.  
+Reimposta l'enumerazione sul primo elemento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,7 +41,7 @@ int Reset();
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Dopo che questo metodo viene chiamato, la chiamata successiva al [Avanti](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md) metodo restituisce il primo elemento dell'enumerazione.  
+ Dopo che questo metodo viene chiamato, la chiamata successiva per la [successivo](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md) metodo restituisce il primo elemento dell'enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828702"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice Visual Basic e C# nelle app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ##  <a name="BKMK_Run"></a> Esecuzione dell'analisi del codice  
  Per eseguire l'analisi del codice nella soluzione di Visual Studio:  
   
--   Dal menu **Genera** scegliere **Esegui analisi del codice sulla soluzione**.  
+- Dal menu **Genera** scegliere **Esegui analisi del codice sulla soluzione**.  
   
- Per eseguire automaticamente l'analisi codice ogni volta che compili un progetto:  
+  Per eseguire automaticamente l'analisi codice ogni volta che compili un progetto:  
   
-1.  Fare clic con il pulsante destro del mouse sul nome del progetto in Esplora soluzioni e quindi scegliere **Proprietà**.  
+1. Fare clic con il pulsante destro del mouse sul nome del progetto in Esplora soluzioni e quindi scegliere **Proprietà**.  
   
-2.  Nella pagina delle proprietà del progetto, scegliere **Analisi codice** e quindi **Attiva analisi codice in fase di compilazione (definisce la costante CODE_ANALYSIS)**.  
+2. Nella pagina delle proprietà del progetto, scegliere **Analisi codice** e quindi **Attiva analisi codice in fase di compilazione (definisce la costante CODE_ANALYSIS)**.  
   
- La soluzione viene compilata e viene eseguita l'analisi del codice. I risultati vengono visualizzati nella finestra Analisi codice.  
+   La soluzione viene compilata e viene eseguita l'analisi del codice. I risultati vengono visualizzati nella finestra Analisi codice.  
   
- ![Finestra Analisi codice](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![Finestra Analisi codice](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi di analisi del codice  
  Per analizzare un avviso specifico, fai clic sul titolo dell'avviso nella finestra Analisi codice. L'avviso si espande per visualizzare le informazioni dettagliate sul problema.  
@@ -80,15 +80,15 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  Per eliminare un avviso:  
   
-1.  Se le informazioni dettagliate non sono visualizzate, fai clic sul titolo dell'avviso per espanderlo.  
+1. Se le informazioni dettagliate non sono visualizzate, fai clic sul titolo dell'avviso per espanderlo.  
   
-2.  Scegliere il collegamento **Azioni** nella parte inferiore dell'avviso.  
+2. Scegliere il collegamento **Azioni** nella parte inferiore dell'avviso.  
   
-3.  Scegliere **Elimina messaggio** e quindi **nell'origine** o **nel file di eliminazione**.  
+3. Scegliere **Elimina messaggio** e quindi **nell'origine** o **nel file di eliminazione**.  
   
-    -   L'opzione **nell'origine** inserisce un attributo `SuppressMessage` nel file di origine sopra al metodo che ha generato l'avviso. In questo modo l'eliminazione risulta più facilmente individuabile.  
+   - L'opzione **nell'origine** inserisce un attributo `SuppressMessage` nel file di origine sopra al metodo che ha generato l'avviso. In questo modo l'eliminazione risulta più facilmente individuabile.  
   
-    -   L'opzione **nel file di eliminazione** aggiunge un attributo `SuppressMessage` al file **GlobalSuppressions.cs** del progetto. Ciò può rendere più semplice la gestione delle eliminazioni. Si noti che anche l'attributo `SuppressMessage` aggiunto a **GlobalSuppression.cs** fa riferimento al metodo che ha generato l'avviso. Non elimina l'avviso globalmente.  
+   - L'opzione **nel file di eliminazione** aggiunge un attributo `SuppressMessage` al file **GlobalSuppressions.cs** del progetto. Ciò può rendere più semplice la gestione delle eliminazioni. Si noti che anche l'attributo `SuppressMessage` aggiunto a **GlobalSuppression.cs** fa riferimento al metodo che ha generato l'avviso. Non elimina l'avviso globalmente.  
   
      La decisione se eliminare l'avviso nel file di origine o nel file di eliminazione dipende dal tuo stile di codifica e dalle esigenze.  
   

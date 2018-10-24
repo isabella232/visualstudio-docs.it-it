@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: afee98dfd4d3192bb964c09ba4813c4469af95ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839908"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
 Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina web conterrà "\<html >..." e tutte le altre parti standard di una pagina HTML. Inserito nel modello vengono *blocchi di controllo*, quali sono i frammenti di codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
@@ -255,7 +255,6 @@ private void WriteSquareLine(int i)
 #>
 Content of MyFile.txt is:
 <#= myFile #>
-
 ```
 
 È anche possibile ottenere altri servizi forniti dall'host. Per altre informazioni, vedere [l'accesso a Visual Studio o altri host da un modello](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
@@ -272,7 +271,7 @@ Content of MyFile.txt is:
 ## <a name="related-topics"></a>Argomenti correlati
 
 |Attività|Argomento|
-|----------|-----------|
+|-|-|
 |Scrivere un modello.|[Linee guida per la scrittura di modelli di testo T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Generare testo usando il codice programma.|[Struttura del modello testo](../modeling/writing-a-t4-text-template.md)|
 |Generare i file in una soluzione di Visual Studio.|[Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|

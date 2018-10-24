@@ -15,17 +15,17 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1cc8f2b2efc6c538af84d54cb487a8e35dbba6f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304226"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817275"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Procedura dettagliata: creazione di un host del modello di testo personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Oggetto *modello di testo**host* fornisce un ambiente che consente di *motore di trasformazione del modello di testo* per l'esecuzione. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore oppure *processore di direttiva* che necessita di un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per altre informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).  
+Oggetto *modello di testo*<em>host</em> fornisce un ambiente che consente la *motore di trasformazione del modello di testo* per l'esecuzione. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore oppure *processore di direttiva* che necessita di un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per altre informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).  
   
  È possibile scrivere un host personalizzato se si desidera utilizzare il *trasformazione del modello di testo* funzionalità dall'esterno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o se si desidera integrare tale funzionalità negli strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Per la documentazione dei singoli metodi, vedere <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

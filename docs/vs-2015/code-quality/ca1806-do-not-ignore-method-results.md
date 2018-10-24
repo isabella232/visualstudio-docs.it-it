@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830587"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Non ignorare i risultati dei metodi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250107"
 ## <a name="cause"></a>Causa  
  Esistono diversi motivi possibili per questo avviso:  
   
--   Un nuovo oggetto viene creato ma mai usato.  
+- Un nuovo oggetto viene creato ma mai usato.  
   
--   Viene chiamato un metodo che crea e restituisce una nuova stringa e la nuova stringa non viene mai usata.  
+- Viene chiamato un metodo che crea e restituisce una nuova stringa e la nuova stringa non viene mai usata.  
   
--   Un metodo COM o P/Invoke che restituisce un codice di errore o HRESULT che non viene mai usato. Descrizione della regola  
+- Un metodo COM o P/Invoke che restituisce un codice di errore o HRESULT che non viene mai usato. Descrizione della regola  
   
- La creazione di oggetti non necessari e la garbage collection associata dell'oggetto inutilizzato influiscono negativamente sulle prestazioni.  
+  La creazione di oggetti non necessari e la garbage collection associata dell'oggetto inutilizzato influiscono negativamente sulle prestazioni.  
   
- Le stringhe sono modificabili e metodi, ad esempio String. ToUpper restituisce una nuova istanza di una stringa invece di modificare l'istanza della stringa nel metodo chiamante.  
+  Le stringhe sono modificabili e metodi, ad esempio String. ToUpper restituisce una nuova istanza di una stringa invece di modificare l'istanza della stringa nel metodo chiamante.  
   
- Ignorando HRESULT o codice di errore può causare un comportamento imprevisto in condizioni di errore o alle condizioni di risorse insufficienti.  
+  Ignorando HRESULT o codice di errore può causare un comportamento imprevisto in condizioni di errore o alle condizioni di risorse insufficienti.  
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Se il metodo crea una nuova istanza dell'oggetto B che non viene mai usato, passare l'istanza come argomento a un altro metodo oppure assegnare l'istanza a una variabile. Se la creazione dell'oggetto non è necessaria, rimuoverla- o -  

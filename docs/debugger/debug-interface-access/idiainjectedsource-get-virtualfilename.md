@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource::get_virtualFilename | Documenti Microsoft
+title: Get_virtualfilename | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82a1cf2c998a141d52af3d996ee7c0763f56992
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9b4fe6547929a5db7f793d9f2f8551327a6455ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844547"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-Recupera il nome assegnato al codice sorgente non basate su file. vale a dire codice inserito.  
+Recupera il nome assegnato al codice sorgente non basate su file. vale a dire, il codice che è stato inserito.  
   
 ## <a name="syntax"></a>Sintassi  
   

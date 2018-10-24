@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673642"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839765"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: aggiornare un'origine dati con dati provenienti da un controllo host
   È possibile associare un controllo host a un'origine dati e aggiornare l'origine dati con le modifiche apportate ai dati nel controllo. Questo processo prevede due passaggi principali:  
   
-1.  Aggiornare l'origine dati in memoria con i dati modificati nel controllo. In genere, l'origine dati in memoria è un oggetto <xref:System.Data.DataSet>, <xref:System.Data.DataTable>o un altro oggetto dati.  
+1. Aggiornare l'origine dati in memoria con i dati modificati nel controllo. In genere, l'origine dati in memoria è un oggetto <xref:System.Data.DataSet>, <xref:System.Data.DataTable>o un altro oggetto dati.  
   
-2.  Aggiornare il database con i dati modificati nell'origine dati in memoria. Ciò è possibile solo se l'origine dati è connessa a un database back-end, ad esempio un database SQL Server o Microsoft Office Access.  
+2. Aggiornare il database con i dati modificati nell'origine dati in memoria. Ciò è possibile solo se l'origine dati è connessa a un database back-end, ad esempio un database SQL Server o Microsoft Office Access.  
   
- Per altre informazioni sui controlli host e il data binding, vedere [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md) e [associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+   Per altre informazioni sui controlli host e il data binding, vedere [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md) e [associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>Aggiornare l'origine dati in memoria  
  Per impostazione predefinita, i controlli host che consentono il data binding semplice (ad esempio i controlli contenuto in un documento di Word o un controllo di intervallo denominato in un foglio di lavoro di Excel) non salvano le modifiche all'origine dati in memoria. In altre parole, quando un utente finale modifica un valore in un controllo host e successivamente si sposta dal controllo, il nuovo valore del controllo non viene salvato nell'origine dati.  
@@ -57,14 +57,14 @@ ms.locfileid: "35673642"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Per impostare un controllo in modo che l'origine dati in memoria venga aggiornata automaticamente tramite codice  
   
-1.  Usare la modalità DataSourceUpdateMode del <xref:System.Windows.Forms.Binding> oggetto che associa il controllo all'origine dati. Per aggiornare l'origine dati è possibile procedere in due modi:  
+1. Usare la modalità DataSourceUpdateMode del <xref:System.Windows.Forms.Binding> oggetto che associa il controllo all'origine dati. Per aggiornare l'origine dati è possibile procedere in due modi:  
   
-    -   Per aggiornare l'origine dati quando il controllo viene convalidato, impostare questa proprietà su System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
+   - Per aggiornare l'origine dati quando il controllo viene convalidato, impostare questa proprietà su System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
   
-    -   Per aggiornare l'origine dati quando cambia il valore della proprietà del controllo associato a dati, impostare questa proprietà su DataSourceUpdateMode.  
+   - Per aggiornare l'origine dati quando cambia il valore della proprietà del controllo associato a dati, impostare questa proprietà su DataSourceUpdateMode.  
   
-        > [!NOTE]  
-        >  L'opzione DataSourceUpdateMode non si applica ai controlli host di Word perché Word non le notifiche non offerta al documento o modifica del controllo. ma può essere usata per i controlli Windows Form nei documenti di Word.  
+     > [!NOTE]  
+     >  L'opzione DataSourceUpdateMode non si applica ai controlli host di Word perché Word non le notifiche non offerta al documento o modifica del controllo. ma può essere usata per i controlli Windows Form nei documenti di Word.  
   
      L'esempio seguente configura un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in modo che l'origine dati venga aggiornata automaticamente quando si modifica il valore del controllo. Questo esempio presuppone che sia presente un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> denominato `namedRange1` la cui proprietà <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> è associata a un campo in un'origine dati.  
   

@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c65a5ed9cc06c8d9c4d471b878762d863802f5f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20accedd9591c777cad26aed30c05954dfabbdfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811089"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Errore: Microsoft Visual Studio Remote Debugging Monitor sul computer remoto non dispone dell'autorizzazione per connettersi al computer.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Questo errore si verifica quando l'utente che tenta di eseguire Visual Studio Re
   
 ### <a name="to-fix-this-problem"></a>Per risolvere il problema  
   
--   Aggiungere un account utente al computer host del debugger di Visual Studio, con lo stesso nome e password dell'account utente che esegue msvsmon nel computer remoto.  
+- Aggiungere un account utente al computer host del debugger di Visual Studio, con lo stesso nome e password dell'account utente che esegue msvsmon nel computer remoto.  
   
-     \- oppure -  
+   \- oppure -  
   
--   Eseguire msvsmon utilizzando un account utente che dispone dell'autorizzazione per l'invio di chiamate nel computer locale, ovvero di un account utente configurato come utente di dominio e amministratore nel computer in cui è in esecuzione msvsmon. L'account utente per l'esecuzione di msvsmon può essere specificato in due diversi modi:  
+- Eseguire msvsmon utilizzando un account utente che dispone dell'autorizzazione per l'invio di chiamate nel computer locale, ovvero di un account utente configurato come utente di dominio e amministratore nel computer in cui è in esecuzione msvsmon. L'account utente per l'esecuzione di msvsmon può essere specificato in due diversi modi:  
   
-    -   Fare doppio clic sull'icona di msvsmon e scegliere **runas** menu di scelta rapida  
+  - Fare doppio clic sull'icona di msvsmon e scegliere **runas** menu di scelta rapida  
   
-     \- oppure -  
+    \- oppure -  
   
-    -   Al prompt dei comandi, digitare `runas.exe`.  
+  - Al prompt dei comandi, digitare `runas.exe`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug remoto tra domini](http://msdn.microsoft.com/library/8e697ce1-55e8-4ab0-a05f-f87225e2f29b)   

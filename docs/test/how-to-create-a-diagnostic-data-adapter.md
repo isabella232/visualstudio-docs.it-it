@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851608"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: Creare un adattatore dati di diagnostica
 
@@ -33,7 +33,7 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
  Di seguito è riportato un elenco parziale di eventi chiave che è possibile utilizzare quando si crea l'adattatore dati di diagnostica. Per un elenco completo di eventi dell'adattatore dati di diagnostica, vedere la classe astratta <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
 |event|Descrizione|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Inizio dell'esecuzione di test|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Fine dell'esecuzione di test|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Inizio di ciascun test nell'esecuzione di test|
@@ -52,78 +52,78 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Per creare e installare un adattatore dati di diagnostica
 
-1.  Creare una nuova libreria di classi.
+1. Creare una nuova libreria di classi.
 
-    1.  Scegliere **Nuovo** dal menu **File**, quindi selezionare **Nuovo progetto**.
+   1.  Scegliere **Nuovo** dal menu **File**, quindi selezionare **Nuovo progetto**.
 
-    2.  Da **Tipi progetto**, selezionare il linguaggio da usare.
+   2.  Da **Tipi progetto**, selezionare il linguaggio da usare.
 
-    3.  Da **Modelli Visual Studio installati**, selezionare **Libreria di classi**.
+   3.  Da **Modelli Visual Studio installati**, selezionare **Libreria di classi**.
 
-    4.  Digitare un nome per l'adattatore dati di diagnostica.
+   4.  Digitare un nome per l'adattatore dati di diagnostica.
 
-    5.  Scegliere **OK**.
+   5.  Scegliere **OK**.
 
-2.  Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
+2. Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti**, quindi scegliere il comando **Aggiungi riferimento**.
+   1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti**, quindi scegliere il comando **Aggiungi riferimento**.
 
-    2.  Scegliere **.NET** e individuare **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2.  Scegliere **.NET** e individuare **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-    3.  Scegliere **OK**.
+   3.  Scegliere **OK**.
 
-3.  Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.Common**.
+3. Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e scegliere **Aggiungi riferimento**.
+   1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e scegliere **Aggiungi riferimento**.
 
-    2.  Scegliere **/.NET** e individuare **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2.  Scegliere **/.NET** e individuare **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-    3.  Scegliere **OK**.
+   3.  Scegliere **OK**.
 
-4.  Aggiungere le seguenti istruzioni `using` al file della classe:
+4. Aggiungere le seguenti istruzioni `using` al file della classe:
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  Aggiungere <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> alla classe dell'adattatore dati di diagnostica in modo che venga identificato come adattatore dati di diagnostica, sostituendo **Company**, **Product** e **Version** con le informazioni appropriate per l'adattatore dati di diagnostica:
+5. Aggiungere <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> alla classe dell'adattatore dati di diagnostica in modo che venga identificato come adattatore dati di diagnostica, sostituendo **Company**, **Product** e **Version** con le informazioni appropriate per l'adattatore dati di diagnostica:
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  Aggiungere l'attributo <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> alla classe, sostituendo i parametri con le informazioni appropriate per l'adattatore dati di diagnostica:
+6. Aggiungere l'attributo <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> alla classe, sostituendo i parametri con le informazioni appropriate per l'adattatore dati di diagnostica:
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     Questo nome descrittivo viene visualizzato nell'attività delle impostazioni di test.
+    Questo nome descrittivo viene visualizzato nell'attività delle impostazioni di test.
 
-    > [!NOTE]
-    > È possibile aggiungere anche <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> per specificare l'oggetto `Type` dell'editor di configurazione personalizzato per questo adattatore dati e specificare facoltativamente il file della Guida da utilizzare per l'editor.
-    >
-    > È inoltre possibile applicare <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> per specificare che deve essere sempre abilitato.
+   > [!NOTE]
+   > È possibile aggiungere anche <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> per specificare l'oggetto `Type` dell'editor di configurazione personalizzato per questo adattatore dati e specificare facoltativamente il file della Guida da utilizzare per l'editor.
+   >
+   > È inoltre possibile applicare <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> per specificare che deve essere sempre abilitato.
 
-7.  La classe dell'adattatore dati di diagnostica deve ereditare dalla classe <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> come indicato di seguito:
+7. La classe dell'adattatore dati di diagnostica deve ereditare dalla classe <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> come indicato di seguito:
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  Aggiungere le variabili locali come segue:
+8. Aggiungere le variabili locali come segue:
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. Aggiungere il metodo <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> e un metodo **Dispose**. Nel metodo `Initialize` è possibile inizializzare il sink dati e i dati di configurazione delle impostazioni di test, nonché registrare i gestori degli eventi che si desidera utilizzare, come indicato di seguito:
 
@@ -273,7 +273,7 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 
 17. Eseguire i test utilizzando le impostazioni di test con l'adattatore dati di diagnostica selezionato.
 
-   Il file di dati specificato verrà allegato ai risultati del test.
+    Il file di dati specificato verrà allegato ai risultati del test.
 
 ## <a name="see-also"></a>Vedere anche
 

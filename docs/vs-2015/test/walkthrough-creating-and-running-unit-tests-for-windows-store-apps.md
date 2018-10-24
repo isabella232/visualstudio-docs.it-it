@@ -18,12 +18,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852531"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Procedura dettagliata: creazione ed esecuzione di unit test per le applicazioni Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
   
  In Visual Studio sono disponibili le funzionalità di testing unità seguenti:  
   
--   [Creare progetti di unit test](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [Creare progetti di unit test](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [Modificare il manifesto per il progetto di unit test](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [Modificare il manifesto per il progetto di unit test](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [Scrivere il codice dello unit test](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [Scrivere il codice dello unit test](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [Eseguire unit test](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [Eseguire unit test](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- Le procedure riportate di seguito descrivono i passaggi per creare, eseguire ed effettuare il debug di unit test per app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gestite.  
+  Le procedure riportate di seguito descrivono i passaggi per creare, eseguire ed effettuare il debug di unit test per app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gestite.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Visual Studio  

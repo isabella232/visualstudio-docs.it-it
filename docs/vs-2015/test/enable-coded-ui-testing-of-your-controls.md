@@ -13,12 +13,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848540"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Abilitare il test codificato dell'interfaccia utente per i controlli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Il controllo può essere testato più facilmente se si implementa il supporto pe
   
  **Contenuto dell'argomento:**  
   
-1.  [Supportare registrazione, riproduzione e convalida delle proprietà implementando l'accessibilità](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [Supportare registrazione, riproduzione e convalida delle proprietà implementando l'accessibilità](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [Supportare la convalida delle proprietà personalizzate implementando un provider di proprietà](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [Supportare la convalida delle proprietà personalizzate implementando un provider di proprietà](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [Supportare la generazione di codice implementando una classe per accedere alle proprietà personalizzate](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [Supportare la generazione di codice implementando una classe per accedere alle proprietà personalizzate](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [Supportare le azioni sensibili allo scopo implementando un filtro azioni](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [Supportare le azioni sensibili allo scopo implementando un filtro azioni](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a>Supportare registrazione, riproduzione e convalida delle proprietà implementando l'accessibilità  
  Il generatore di test codificati dell'interfaccia utente acquisisce informazioni sui controlli intercettati durante la registrazione e quindi genera il codice per riprodurre quella sessione. Se il controllo non supporta l'accessibilità, il generatore di test codificati dell'interfaccia utente acquisisce le azioni (quali i clic del mouse) usando le coordinate dello schermo. Quando il test viene riprodotto, il codice generato emetterà i clic del mouse nelle stesse coordinate dello schermo. Se, quando il test viene riprodotto, il controllo viene visualizzato in un punto diverso dello schermo, l'azione nel controllo da parte del codice generato non riuscirà. Ciò può dare luogo a errori se il test viene riprodotto in diverse configurazioni dello schermo, in ambienti diversi o dopo l'applicazione di modifiche al layout dell'interfaccia utente.  

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db39f9c58c0fa2f0ea57d94cd1be404173720088
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848501"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe
 
@@ -31,7 +31,7 @@ ms.locfileid: "33957314"
 Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 
 |Combinazione del mouse|Contesto|Descrizione|
-|-----------------------|-------------|-----------------|
+| - |-------------|-----------------|
 |Doppio clic|Elementi forma|Apre l'editor del codice.|
 |Doppio clic|Connettore simbolo|Espande/comprime il simbolo.|
 |Doppio clic|Etichetta del connettore simbolo|Richiama il comando **Mostra interfaccia**.|
