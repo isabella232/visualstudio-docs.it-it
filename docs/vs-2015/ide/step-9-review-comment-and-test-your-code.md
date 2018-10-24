@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3743c31aeca3c6e34afa84ed8c9ee3ddd59d98a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300404"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836957"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: esaminare, commentare e testare il codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,29 +28,29 @@ Successivamente si aggiunge un commento al codice. Un commento è una nota che n
   
  Si è appena compilato un programma che funziona e sebbene non sia ancora finito, è già in grado di caricare un'immagine. Prima di aggiungere un commento al codice e di testarlo, prendere tempo per rivedere i concetti di codifica, poiché tali concetti si utilizzeranno frequentemente:  
   
--   Dopo aver fatto doppio clic sul pulsante **Show a picture** (Visualizza immagine) in Progettazione Windows Form, l'IDE ha aggiunto automaticamente un *metodo* al codice del programma.  
+- Dopo aver fatto doppio clic sul pulsante **Show a picture** (Visualizza immagine) in Progettazione Windows Form, l'IDE ha aggiunto automaticamente un *metodo* al codice del programma.  
   
--   I metodi rappresentano la modalità di organizzazione del codice, vale a dire il modo in cui viene raggruppato il codice.  
+- I metodi rappresentano la modalità di organizzazione del codice, vale a dire il modo in cui viene raggruppato il codice.  
   
--   Nella maggior parte dei casi, un metodo esegue un piccolo numero di operazioni in un ordine specifico, come ad esempio il metodo `showButton_Click()`, che visualizza una finestra di dialogo e quindi carica un'immagine.  
+- Nella maggior parte dei casi, un metodo esegue un piccolo numero di operazioni in un ordine specifico, come ad esempio il metodo `showButton_Click()`, che visualizza una finestra di dialogo e quindi carica un'immagine.  
   
--   Un metodo è costituito da *istruzioni* o righe di codice. Un metodo può essere considerato un modo per raggruppare istruzioni d codice.  
+- Un metodo è costituito da *istruzioni* o righe di codice. Un metodo può essere considerato un modo per raggruppare istruzioni d codice.  
   
--   Quando un metodo viene eseguito, o *chiamato*, le istruzioni nel metodo vengono eseguite in ordine, una dopo l'altra, a cominciare dalla prima.  
+- Quando un metodo viene eseguito, o *chiamato*, le istruzioni nel metodo vengono eseguite in ordine, una dopo l'altra, a cominciare dalla prima.  
   
-     Di seguito è riportato un esempio di istruzione.  
+   Di seguito è riportato un esempio di istruzione.  
   
-    ```csharp  
-    pictureBox1.Load(openFileDialog1.FileName);  
-    ```  
+  ```csharp  
+  pictureBox1.Load(openFileDialog1.FileName);  
+  ```  
   
-    ```vb  
-    pictureBox1.Load(openFileDialog1.FileName)  
-    ```  
+  ```vb  
+  pictureBox1.Load(openFileDialog1.FileName)  
+  ```  
   
-     Le istruzioni consentono ai programmi di eseguire azioni. In Visual C# un'istruzione termina sempre con un punto e virgola. In Visual Basic la fine di una riga è la fine di un'istruzione. In Visual Basic non sono necessari punti e virgola. L'istruzione precedente indica al controllo `PictureBox` di caricare il file selezionato dall'utente con il componente **OpenFileDialog**.  
+   Le istruzioni consentono ai programmi di eseguire azioni. In Visual C# un'istruzione termina sempre con un punto e virgola. In Visual Basic la fine di una riga è la fine di un'istruzione. In Visual Basic non sono necessari punti e virgola. L'istruzione precedente indica al controllo `PictureBox` di caricare il file selezionato dall'utente con il componente **OpenFileDialog**.  
   
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")Per una versione video di questo argomento, vedere [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) (Esercitazione 1: creare un visualizzatore di immagini in Visual Basic - Video 5) o [Tutorial 1: Create a Picture Viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206) (Esercitazione 1: creare un visualizzatore di immagini in C# - Video 5). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.  
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")Per una versione video di questo argomento, vedere [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) (Esercitazione 1: creare un visualizzatore di immagini in Visual Basic - Video 5) o [Tutorial 1: Create a Picture Viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206) (Esercitazione 1: creare un visualizzatore di immagini in C# - Video 5). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.  
   
 ### <a name="to-add-comments"></a>Per aggiungere commenti  
   

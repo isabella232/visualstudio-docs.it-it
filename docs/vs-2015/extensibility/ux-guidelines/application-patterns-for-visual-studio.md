@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbe8dd5ba0687471478d87606db45aa506991c12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848696"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli di applicazione per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,19 +67,19 @@ ms.locfileid: "49192543"
 #### <a name="tool-window-states"></a>Stati della finestra degli strumenti  
  Finestre degli strumenti di Visual Studio hanno diversi stati, alcuni dei quali sono utente attivato (ad esempio, la funzionalità Nascondi automaticamente). Altri Stati, ad esempio visibili, automaticamente consenta le finestre degli strumenti vengono visualizzati nel contesto corretto e nascondere quando non sono necessarie. Esistono cinque stati della finestra degli strumenti in totale.  
   
--   **Ancorato/bloccato** finestre degli strumenti possono essere collegate a uno qualsiasi dei quattro lati dell'area del documento. L'icona della puntina da disegno viene visualizzato nella barra del titolo di finestra degli strumenti. La finestra degli strumenti può essere ancorata orizzontalmente o verticalmente lungo il bordo della shell e altre finestre degli strumenti e può anche essere collegata a schede.  
+- **Ancorato/bloccato** finestre degli strumenti possono essere collegate a uno qualsiasi dei quattro lati dell'area del documento. L'icona della puntina da disegno viene visualizzato nella barra del titolo di finestra degli strumenti. La finestra degli strumenti può essere ancorata orizzontalmente o verticalmente lungo il bordo della shell e altre finestre degli strumenti e può anche essere collegata a schede.  
   
--   **Nascosta automaticamente** finestre degli strumenti vengono rimossi. Non è più visualizzata, lasciando una scheda (con il nome della finestra degli strumenti e la relativa icona) sul bordo dell'area del documento può scorrere la finestra. La finestra degli strumenti verrà visualizzato quando l'utente passa sopra la scheda.  
+- **Nascosta automaticamente** finestre degli strumenti vengono rimossi. Non è più visualizzata, lasciando una scheda (con il nome della finestra degli strumenti e la relativa icona) sul bordo dell'area del documento può scorrere la finestra. La finestra degli strumenti verrà visualizzato quando l'utente passa sopra la scheda.  
   
--   **Visibili automaticamente** finestre degli strumenti vengono visualizzati automaticamente quando un altro componente dell'interfaccia utente, ad esempio un editor, viene avviato o ottiene lo stato attivo.  
+- **Visibili automaticamente** finestre degli strumenti vengono visualizzati automaticamente quando un altro componente dell'interfaccia utente, ad esempio un editor, viene avviato o ottiene lo stato attivo.  
   
--   **Mobile** finestre degli strumenti al passaggio del mouse all'esterno dell'IDE. Ciò è utile per le configurazioni con più monitor.  
+- **Mobile** finestre degli strumenti al passaggio del mouse all'esterno dell'IDE. Ciò è utile per le configurazioni con più monitor.  
   
--   **Documento a schede** finestre degli strumenti possono essere ancorate anche all'interno del documento. Ciò è utile per le finestre degli strumenti di grandi dimensioni, ad esempio il Visualizzatore oggetti, che richiedono più spazio rispetto ai bordi della cornice di ancoraggio.  
+- **Documento a schede** finestre degli strumenti possono essere ancorate anche all'interno del documento. Ciò è utile per le finestre degli strumenti di grandi dimensioni, ad esempio il Visualizzatore oggetti, che richiedono più spazio rispetto ai bordi della cornice di ancoraggio.  
   
- ![Strumento gli stati della finestra in Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
+  ![Strumento gli stati della finestra in Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
   
- **Stati della finestra degli strumenti in Visual Studio**  
+  **Stati della finestra degli strumenti in Visual Studio**  
   
 #### <a name="single-instance-and-multi-instance"></a>A istanza singola e a istanza multipla  
  Finestre degli strumenti sono a istanza singola o multi-istanza. Alcune finestre degli strumenti a istanza singola potrebbero essere associate alla finestra di documento attivo, mentre finestre degli strumenti a istanza multipla forse no. Finestre degli strumenti a istanza multipla rispondono al comando finestra/nuova finestra mediante la creazione di una nuova istanza della finestra. L'immagine seguente illustra una finestra degli strumenti se si abilita il comando nuova finestra quando è attiva un'istanza della finestra:  
@@ -164,19 +164,19 @@ ms.locfileid: "49192543"
 ### <a name="user-expectations-for-specific-document-types"></a>Aspettative dell'utente per i tipi di documento specifico  
  Esistono diversi tipi di base differenti degli editor di documento e ognuna ha un set di interazioni che siano coerenti con altri utenti dello stesso tipo.  
   
--   **Editor di testo:** editor di codice, i file di log  
+- **Editor di testo:** editor di codice, i file di log  
   
--   **Nell'area di progettazione:** WPF, Progettazione Windows Form  
+- **Nell'area di progettazione:** WPF, Progettazione Windows Form  
   
--   **Editor finestra di dialogo-style:** progettazione manifesto, proprietà del progetto  
+- **Editor finestra di dialogo-style:** progettazione manifesto, proprietà del progetto  
   
--   **Progettazione modelli:** Progettazione flussi di lavoro, codemap, diagramma dell'architettura, progressione  
+- **Progettazione modelli:** Progettazione flussi di lavoro, codemap, diagramma dell'architettura, progressione  
   
- Esistono anche diversi tipi non di editor che usano anche il documento. Anche se essi non modificare i documenti autonomamente, è necessario eseguire interazioni standard per le finestre dei documenti.  
+  Esistono anche diversi tipi non di editor che usano anche il documento. Anche se essi non modificare i documenti autonomamente, è necessario eseguire interazioni standard per le finestre dei documenti.  
   
--   **I report:** IntelliTrace report, Hyper-V, report del profiler  
+- **I report:** IntelliTrace report, Hyper-V, report del profiler  
   
--   **Dashboard:** Hub diagnostica  
+- **Dashboard:** Hub diagnostica  
   
 #### <a name="text-based-editors"></a>Editor basati su testo  
   
@@ -251,13 +251,13 @@ ms.locfileid: "49192543"
   
  Se si è appurato che è necessario una finestra di dialogo, sono disponibili tre opzioni, in ordine di preferenza:  
   
-1.  Integrare le funzionalità in una delle finestre di dialogo condivisi in Visual Studio.  
+1. Integrare le funzionalità in una delle finestre di dialogo condivisi in Visual Studio.  
   
-2.  Creare il proprio finestra di dialogo utilizzando un criterio è stato trovato in una finestra di dialogo simile esistente.  
+2. Creare il proprio finestra di dialogo utilizzando un criterio è stato trovato in una finestra di dialogo simile esistente.  
   
-3.  Creare una nuova finestra di dialogo, l'interazione seguente e linee guida di layout.  
+3. Creare una nuova finestra di dialogo, l'interazione seguente e linee guida di layout.  
   
- In questo argomento viene descritto come scegliere il modello di finestra di dialogo corretto all'interno dei flussi di lavoro di Visual Studio e le convenzioni comuni per la progettazione della finestra.  
+   In questo argomento viene descritto come scegliere il modello di finestra di dialogo corretto all'interno dei flussi di lavoro di Visual Studio e le convenzioni comuni per la progettazione della finestra.  
   
 ### <a name="themes"></a>Themes  
  Finestre di dialogo in Visual Studio seguire uno dei due stili di base:  
@@ -268,15 +268,15 @@ ms.locfileid: "49192543"
 #### <a name="themed"></a>Con tema  
  Le finestre di dialogo di specializzazione "firma" potrebbe essere a tema. Le finestre di dialogo con tema hanno un aspetto distinto, che presenta anche alcuni modelli di interazione speciali associati allo stile. Tema la finestra di dialogo solo se soddisfa questi requisiti:  
   
--   La finestra di dialogo è un'esperienza comune che verrà visualizzata e usata spesso o dal numero di utenti (ad esempio, il **nuovo progetto** finestra di dialogo.  
+- La finestra di dialogo è un'esperienza comune che verrà visualizzata e usata spesso o dal numero di utenti (ad esempio, il **nuovo progetto** finestra di dialogo.  
   
--   La finestra di dialogo contiene gli elementi del marchio del prodotto notificate all'utente (ad esempio, il **impostazioni Account** finestra di dialogo).  
+- La finestra di dialogo contiene gli elementi del marchio del prodotto notificate all'utente (ad esempio, il **impostazioni Account** finestra di dialogo).  
   
--   La finestra di dialogo viene visualizzato come parte integrante di un flusso più grande che includa altre finestre di dialogo con tema (ad esempio, il **Aggiungi servizio connesso** finestra di dialogo).  
+- La finestra di dialogo viene visualizzato come parte integrante di un flusso più grande che includa altre finestre di dialogo con tema (ad esempio, il **Aggiungi servizio connesso** finestra di dialogo).  
   
--   La finestra di dialogo è una parte importante di un'esperienza che riveste un ruolo strategico nell'innalzamento di livello o differenziare una versione del prodotto.  
+- La finestra di dialogo è una parte importante di un'esperienza che riveste un ruolo strategico nell'innalzamento di livello o differenziare una versione del prodotto.  
   
- Quando si crea una finestra di dialogo con tema, utilizzare i colori di ambiente appropriate e seguire il layout corretto e modelli di interazione. (Vedere [Layout per Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
+  Quando si crea una finestra di dialogo con tema, utilizzare i colori di ambiente appropriate e seguire il layout corretto e modelli di interazione. (Vedere [Layout per Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
   
 ### <a name="dialog-design"></a>Progettazione di finestra di dialogo  
  Le finestre di dialogo ben progettate considerare gli elementi seguenti:  
@@ -360,17 +360,17 @@ ms.locfileid: "49192543"
   
 #### <a name="title-bars"></a>Barre del titolo  
   
--   Il testo nella barra del titolo deve riflettere il nome del comando che l'ha avviata.  
+- Il testo nella barra del titolo deve riflettere il nome del comando che l'ha avviata.  
   
--   Nessuna icona deve essere utilizzata nella barra del titolo della finestra. Nei casi in cui il sistema richiede uno, usare il logo di Visual Studio.  
+- Nessuna icona deve essere utilizzata nella barra del titolo della finestra. Nei casi in cui il sistema richiede uno, usare il logo di Visual Studio.  
   
--   Le finestre di dialogo non è necessario ridurre o ingrandire i pulsanti.  
+- Le finestre di dialogo non è necessario ridurre o ingrandire i pulsanti.  
   
--   Pulsante nella barra del titolo sono state deprecate. Non verranno aggiunte alle nuove finestre di dialogo. Quando sono presenti, avviano un argomento della Guida che è concettualmente attinenti all'attività.  
+- Pulsante nella barra del titolo sono state deprecate. Non verranno aggiunte alle nuove finestre di dialogo. Quando sono presenti, avviano un argomento della Guida che è concettualmente attinenti all'attività.  
   
- ![Spostare il titolo della barra di specifiche per Visual Studio](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
+  ![Spostare il titolo della barra di specifiche per Visual Studio](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
   
- **Specifiche delle linee guida per le barre del titolo nelle finestre di dialogo di Visual Studio.**  
+  **Specifiche delle linee guida per le barre del titolo nelle finestre di dialogo di Visual Studio.**  
   
 #### <a name="control-buttons"></a>Pulsanti di controllo  
  In genere **OK**/**Annulla**/**Guida** devono essere disposte orizzontalmente i pulsanti nell'angolo inferiore destro della finestra di dialogo. Se una finestra di dialogo dispone di diversi altri pulsanti nella parte inferiore della finestra di dialogo che potrebbe presentarsi visual confusione con i pulsanti di controllo, è consentita la pila verticale alternativa.  
@@ -381,11 +381,11 @@ ms.locfileid: "49192543"
   
  La finestra di dialogo deve includere un pulsante di controllo predefinito. Per determinare il comando migliore da usare come valore predefinito, scegliere una delle opzioni seguenti (elencate in ordine di priorità):  
   
--   Scegliere il comando più sicuro e sicuro come impostazione predefinita. Ciò significa che se si sceglie il comando più probabile evitare la perdita di dati ed evitare l'accesso di sistema non intenzionali.  
+- Scegliere il comando più sicuro e sicuro come impostazione predefinita. Ciò significa che se si sceglie il comando più probabile evitare la perdita di dati ed evitare l'accesso di sistema non intenzionali.  
   
--   Se sicurezza e la perdita di dati non sono fattori, quindi scegliere il comando predefinito basato su convenience. Tra cui il comando probabilmente come predefinito determinerà un miglioramento del flusso di lavoro dell'utente quando la finestra di dialogo supporta le attività frequenti o ripetitive.  
+- Se sicurezza e la perdita di dati non sono fattori, quindi scegliere il comando predefinito basato su convenience. Tra cui il comando probabilmente come predefinito determinerà un miglioramento del flusso di lavoro dell'utente quando la finestra di dialogo supporta le attività frequenti o ripetitive.  
   
- Evitare di scegliere un'azione distruttiva in modo permanente per il comando predefinito. Se è presente un comando di questo tipo, scegliere un comando sicuro come impostazione predefinita.  
+  Evitare di scegliere un'azione distruttiva in modo permanente per il comando predefinito. Se è presente un comando di questo tipo, scegliere un comando sicuro come impostazione predefinita.  
   
 #### <a name="access-keys"></a>Chiavi di accesso  
  Non usare chiavi di accesso per **OK**/**Annulla**/**Guida** pulsanti. Per impostazione predefinita, questi pulsanti sono mappati a tasti di scelta rapida:  
@@ -437,54 +437,54 @@ ms.locfileid: "49192543"
   
  I progetti devono sempre:  
   
--   Supporta la possibilità di aggiungere le cartelle dei progetti per organizzare il contenuto di progetto  
+- Supporta la possibilità di aggiungere le cartelle dei progetti per organizzare il contenuto di progetto  
   
--   Gestire un modello coerente per la persistenza del progetto  
+- Gestire un modello coerente per la persistenza del progetto  
   
- I progetti deve essere gestito anche modelli di interazione coerente per:  
+  I progetti deve essere gestito anche modelli di interazione coerente per:  
   
--   Rimozione di elementi di progetto  
+- Rimozione di elementi di progetto  
   
--   Salvataggio di documenti  
+- Salvataggio di documenti  
   
--   Modifica delle proprietà di progetto  
+- Modifica delle proprietà di progetto  
   
--   Modifica il progetto in una visualizzazione alternativa  
+- Modifica il progetto in una visualizzazione alternativa  
   
--   Operazioni di trascinamento e rilascio  
+- Operazioni di trascinamento e rilascio  
   
 ### <a name="drag-and-drop-interaction-model"></a>Modello di interazione di trascinamento e rilascio  
  In genere classificare se stessi come basato sul riferimento (in modo permanente solo i riferimenti a elementi del progetto in archiviazione), i progetti basati su directory (in grado di rendere persistenti solo gli elementi di progetto fisicamente archiviate all'interno di gerarchia del progetto), o mista (in modo permanente i riferimenti o gli elementi fisici). L'IDE supporta tutti i tre tipi di progetti contemporaneamente all'interno di **Esplora soluzioni**.  
   
  Da una prospettiva di trascinamento e rilascio, le caratteristiche seguenti devono applicare a ogni tipo di progetto all'interno di **Esplora soluzioni**:  
   
--   **In base al riferimento di progetto:** il punto chiave è che il progetto sta trascinando intorno a un riferimento a un elemento nell'archivio. Quando un progetto basato sul riferimento agisce come origine per un'operazione di spostamento, è necessario rimuovere solo il riferimento all'elemento dal progetto. L'elemento non deve effettivamente eliminato dal disco rigido. Quando un progetto basato sul riferimento agisce come una destinazione per un'operazione (copia o spostamento), opportuno aggiungere un riferimento all'elemento di origine originale senza creare una copia privata dell'elemento.  
+- **In base al riferimento di progetto:** il punto chiave è che il progetto sta trascinando intorno a un riferimento a un elemento nell'archivio. Quando un progetto basato sul riferimento agisce come origine per un'operazione di spostamento, è necessario rimuovere solo il riferimento all'elemento dal progetto. L'elemento non deve effettivamente eliminato dal disco rigido. Quando un progetto basato sul riferimento agisce come una destinazione per un'operazione (copia o spostamento), opportuno aggiungere un riferimento all'elemento di origine originale senza creare una copia privata dell'elemento.  
   
--   **Progetto basato su directory:** da un punto di vista di trascinamento e rilascio, il progetto sta trascinando tutto l'elemento fisico anziché un riferimento. Quando un progetto basato su directory agisce come origine per un'operazione di spostamento, deve finire eliminazione dell'elemento fisico dal disco rigido, oltre a rimuoverlo dal progetto. Quando un progetto basato su directory agisce come una destinazione per un'operazione (copia o spostamento), consigliabile eseguire una copia dell'elemento di origine nel relativo percorso di destinazione.  
+- **Progetto basato su directory:** da un punto di vista di trascinamento e rilascio, il progetto sta trascinando tutto l'elemento fisico anziché un riferimento. Quando un progetto basato su directory agisce come origine per un'operazione di spostamento, deve finire eliminazione dell'elemento fisico dal disco rigido, oltre a rimuoverlo dal progetto. Quando un progetto basato su directory agisce come una destinazione per un'operazione (copia o spostamento), consigliabile eseguire una copia dell'elemento di origine nel relativo percorso di destinazione.  
   
--   **Progetto di destinazione mista:** da un punto di vista di trascinamento e rilascio, il comportamento di questo tipo di progetto è basato sulla natura dell'elemento trascinato (un riferimento a un elemento nello spazio di memorizzazione) o l'elemento stesso. Il comportamento corretto per i riferimenti e gli elementi fisici sono descritti in precedenza.  
+- **Progetto di destinazione mista:** da un punto di vista di trascinamento e rilascio, il comportamento di questo tipo di progetto è basato sulla natura dell'elemento trascinato (un riferimento a un elemento nello spazio di memorizzazione) o l'elemento stesso. Il comportamento corretto per i riferimenti e gli elementi fisici sono descritti in precedenza.  
   
- Se si sono verificati solo un tipo di progetto nel **Esplora soluzioni**, operazioni di trascinamento e rilascio sarà molto semplice. Poiché ogni sistema del progetto ha la possibilità di definire il comportamento di trascinamento e rilascio, alcune linee guida (basati sul comportamento di trascinamento e rilascio di Windows Explorer) deve essere seguita per garantire un'esperienza utente prevedibile:  
+  Se si sono verificati solo un tipo di progetto nel **Esplora soluzioni**, operazioni di trascinamento e rilascio sarà molto semplice. Poiché ogni sistema del progetto ha la possibilità di definire il comportamento di trascinamento e rilascio, alcune linee guida (basati sul comportamento di trascinamento e rilascio di Windows Explorer) deve essere seguita per garantire un'esperienza utente prevedibile:  
   
--   Invariato un'operazione di trascinamento **Esplora soluzioni** (quando Ctrl né MAIUSC è premuto) deve risultare in un'operazione di spostamento.  
+- Invariato un'operazione di trascinamento **Esplora soluzioni** (quando Ctrl né MAIUSC è premuto) deve risultare in un'operazione di spostamento.  
   
--   Operazione di spostamento trascinamento dovrebbe restituire anche un'operazione di spostamento.  
+- Operazione di spostamento trascinamento dovrebbe restituire anche un'operazione di spostamento.  
   
--   Trascinare premendo CTRL operazione dovrebbe restituire un'operazione di copia.  
+- Trascinare premendo CTRL operazione dovrebbe restituire un'operazione di copia.  
   
--   I sistemi di progetto basato su riferimenti e mista supportano la nozione di aggiunta di un collegamento (o riferimento) all'elemento di origine. Quando questi progetti vengono usati come destinazione di un'operazione di trascinamento e rilascio (quando **Ctrl + Maiusc** viene tenuto premuto), dovrebbe restituire un riferimento all'elemento da aggiungere al progetto  
+- I sistemi di progetto basato su riferimenti e mista supportano la nozione di aggiunta di un collegamento (o riferimento) all'elemento di origine. Quando questi progetti vengono usati come destinazione di un'operazione di trascinamento e rilascio (quando **Ctrl + Maiusc** viene tenuto premuto), dovrebbe restituire un riferimento all'elemento da aggiungere al progetto  
   
- Non tutte le operazioni di trascinamento e rilascio sono ragionevole tra le combinazioni dei progetti in base al riferimento basato su directory e misti. In particolare, è problematico al fatto che consentire un'operazione di spostamento tra un progetto di origine basato su directory e un progetto di destinazione in base al riferimento perché il progetto di origine basato su directory sarà necessario eliminare l'elemento di origine dopo il completamento dello spostamento. Progetto di destinazione basato su riferimenti terminerebbe quindi con un riferimento a un elemento eliminato.  
+  Non tutte le operazioni di trascinamento e rilascio sono ragionevole tra le combinazioni dei progetti in base al riferimento basato su directory e misti. In particolare, è problematico al fatto che consentire un'operazione di spostamento tra un progetto di origine basato su directory e un progetto di destinazione in base al riferimento perché il progetto di origine basato su directory sarà necessario eliminare l'elemento di origine dopo il completamento dello spostamento. Progetto di destinazione basato su riferimenti terminerebbe quindi con un riferimento a un elemento eliminato.  
   
- È inoltre fuorviante al fatto che consentire un'operazione di copia tra questi tipi di progetti perché il progetto in base al riferimento di destinazione non deve fare una copia indipendente dell'elemento di origine. Analogamente, Ctrl + Maiusc trascinando una directory in base al progetto di destinazione non deve essere consentito perché è in grado di mantenere riferimenti a un progetto basato su directory. Nei casi in cui l'operazione di trascinamento e rilascio non è supportata, l'IDE deve impedire l'eliminazione e far visualizzare all'utente il cursore di non trascinamento (mostrato nella seguente tabella puntatore).  
+  È inoltre fuorviante al fatto che consentire un'operazione di copia tra questi tipi di progetti perché il progetto in base al riferimento di destinazione non deve fare una copia indipendente dell'elemento di origine. Analogamente, Ctrl + Maiusc trascinando una directory in base al progetto di destinazione non deve essere consentito perché è in grado di mantenere riferimenti a un progetto basato su directory. Nei casi in cui l'operazione di trascinamento e rilascio non è supportata, l'IDE deve impedire l'eliminazione e far visualizzare all'utente il cursore di non trascinamento (mostrato nella seguente tabella puntatore).  
   
- Per implementare correttamente il comportamento di trascinamento e rilascio, il progetto di origine dell'operazione di trascinamento deve comunicare la sua natura (ad esempio, si tratta o directory dal basato su riferimenti?) nel progetto di destinazione. Queste informazioni sono indicate dal formato degli Appunti che è disponibile dall'origine. Come origine di un trascinamento (o l'operazione di copia negli Appunti) un progetto deve offrire uno **CF_VSREFPROJECTITEM**S oppure **CF_VSSTGPROJECTITEMS** rispettivamente, a seconda se il progetto è basato sul riferimento o basate su directory. Entrambi questi formati hanno lo stesso contenuto di dati, che è simile a di Windows **CF_HDROP** formattare ad eccezione del fatto che gli elenchi di stringhe, anziché essere nomi di file, sono un valore double -**NULL** terminato l'elenco di  **Projref** stringhe (come restituito da **IVsSolution::GetProjrefOfItem** oppure **:: GetProjrefOfProject** come appropriato).  
+  Per implementare correttamente il comportamento di trascinamento e rilascio, il progetto di origine dell'operazione di trascinamento deve comunicare la sua natura (ad esempio, si tratta o directory dal basato su riferimenti?) nel progetto di destinazione. Queste informazioni sono indicate dal formato degli Appunti che è disponibile dall'origine. Come origine di un trascinamento (o l'operazione di copia negli Appunti) un progetto deve offrire uno **CF_VSREFPROJECTITEM**S oppure **CF_VSSTGPROJECTITEMS** rispettivamente, a seconda se il progetto è basato sul riferimento o basate su directory. Entrambi questi formati hanno lo stesso contenuto di dati, che è simile a di Windows **CF_HDROP** formattare ad eccezione del fatto che gli elenchi di stringhe, anziché essere nomi di file, sono un valore double -**NULL** terminato l'elenco di  **Projref** stringhe (come restituito da **IVsSolution::GetProjrefOfItem** oppure **:: GetProjrefOfProject** come appropriato).  
   
- Come destinazione di un rilascio (o l'operazione Incolla degli Appunti), un progetto deve accettare entrambi **CF_VSREFPROJECTITEMS** e **CF_VSSTGPROJECTITEMS**, anche se la gestione dell'operazione di trascinamento e rilascio esatta varia a seconda della natura del progetto di destinazione e il progetto di origine. Il progetto di origine dichiara la sua natura dal fatto che offre **CF_VSREFPROJECTITEMS** oppure **CF_VSSTGPROJECTITEMS**. La destinazione del trascinamento riconosce la propria natura e pertanto ha informazioni sufficienti per prendere le decisioni come e se un sposta, copia e collegamento deve essere eseguito. L'utente modifica l'operazione di trascinamento e rilascio deve essere eseguita premendo il Ctrl, MAIUSC, o i tasti Ctrl e MAIUSC. È importante che l'obiettivo di rilascio indicare in modo corretto verrà eseguita in anticipo in quale operazione relativi **DragEnter** e **DragOver** metodi. Il **Esplora soluzioni** eseguirà automaticamente se il progetto di origine e il progetto di destinazione sono nello stesso progetto.  
+  Come destinazione di un rilascio (o l'operazione Incolla degli Appunti), un progetto deve accettare entrambi **CF_VSREFPROJECTITEMS** e **CF_VSSTGPROJECTITEMS**, anche se la gestione dell'operazione di trascinamento e rilascio esatta varia a seconda della natura del progetto di destinazione e il progetto di origine. Il progetto di origine dichiara la sua natura dal fatto che offre **CF_VSREFPROJECTITEMS** oppure **CF_VSSTGPROJECTITEMS**. La destinazione del trascinamento riconosce la propria natura e pertanto ha informazioni sufficienti per prendere le decisioni come e se un sposta, copia e collegamento deve essere eseguito. L'utente modifica l'operazione di trascinamento e rilascio deve essere eseguita premendo il Ctrl, MAIUSC, o i tasti Ctrl e MAIUSC. È importante che l'obiettivo di rilascio indicare in modo corretto verrà eseguita in anticipo in quale operazione relativi **DragEnter** e **DragOver** metodi. Il **Esplora soluzioni** eseguirà automaticamente se il progetto di origine e il progetto di destinazione sono nello stesso progetto.  
   
- Il trascinamento degli elementi di progetto tra istanze di Visual Studio (ad esempio, da un'istanza di devenv.exe a un'altra) in modo specifico non è supportato. Il **Esplora soluzioni** Disabilita direttamente anche questo.  
+  Il trascinamento degli elementi di progetto tra istanze di Visual Studio (ad esempio, da un'istanza di devenv.exe a un'altra) in modo specifico non è supportato. Il **Esplora soluzioni** Disabilita direttamente anche questo.  
   
- L'utente deve sempre essere in grado di determinare l'effetto di un'operazione di trascinamento e rilascio selezionando un elemento, trascinarlo nella posizione di destinazione e osservare che i seguenti puntatori del mouse viene visualizzata prima l'elemento viene eliminato:  
+  L'utente deve sempre essere in grado di determinare l'effetto di un'operazione di trascinamento e rilascio selezionando un elemento, trascinarlo nella posizione di destinazione e osservare che i seguenti puntatori del mouse viene visualizzata prima l'elemento viene eliminato:  
   
 |Puntatore del mouse|Comando|Descrizione|  
 |-------------------|-------------|-----------------|  
@@ -583,33 +583,33 @@ ms.locfileid: "49192543"
   
  Tali dettagli devono prendere in considerazione quando si implementa il trascinamento **Esplora soluzioni**:  
   
--   Progettare per più scenari di selezione.  
+- Progettare per più scenari di selezione.  
   
--   I nomi di file (percorso completo) devono essere univoci per il progetto di destinazione o l'eliminazione non deve essere consentito.  
+- I nomi di file (percorso completo) devono essere univoci per il progetto di destinazione o l'eliminazione non deve essere consentito.  
   
--   I nomi delle cartelle devono essere univoci (senza maiuscole/minuscole) a livello di essi vengono eliminati.  
+- I nomi delle cartelle devono essere univoci (senza maiuscole/minuscole) a livello di essi vengono eliminati.  
   
--   Vi sono differenze di comportamento tra i file che sono chiusi o aperti in fase di trascinamento (non indicata nei scenari descritti in precedenza).  
+- Vi sono differenze di comportamento tra i file che sono chiusi o aperti in fase di trascinamento (non indicata nei scenari descritti in precedenza).  
   
--   File di livello superiore si comportano in modo leggermente diverso rispetto ai file nelle cartelle.  
+- File di livello superiore si comportano in modo leggermente diverso rispetto ai file nelle cartelle.  
   
- Un altro problema da considerare è la modalità di gestione di operazioni di spostamento agli elementi che dispongono di editor o aprire finestre di progettazione. Il comportamento previsto è come indicato di seguito (si applica a tutti i tipi di progetto):  
+  Un altro problema da considerare è la modalità di gestione di operazioni di spostamento agli elementi che dispongono di editor o aprire finestre di progettazione. Il comportamento previsto è come indicato di seguito (si applica a tutti i tipi di progetto):  
   
-1.  Se l'aprire editor/finestra di progettazione non ha le modifiche non salvate, quindi la finestra dell'editor/progettazione deve essere automaticamente chiuso.  
+1. Se l'aprire editor/finestra di progettazione non ha le modifiche non salvate, quindi la finestra dell'editor/progettazione deve essere automaticamente chiuso.  
   
-2.  Se l'aprire editor/finestra di progettazione sono modifiche non salvate, quindi l'origine dell'operazione di trascinamento deve attendere per l'eliminazione si verificano e quindi chiedere all'utente di salvare le modifiche non sottoposte a commit nei documenti aperti prima di chiudere la finestra con un prompt simile al seguente :  
+2. Se l'aprire editor/finestra di progettazione sono modifiche non salvate, quindi l'origine dell'operazione di trascinamento deve attendere per l'eliminazione si verificano e quindi chiedere all'utente di salvare le modifiche non sottoposte a commit nei documenti aperti prima di chiudere la finestra con un prompt simile al seguente :  
   
-    ```  
-    ==========================================================   
-         One or more open documents have unsaved changes.  
-    Do you want to save uncommitted changes before proceeding?   
-                      [Yes]  [No]  [Cancel]   
-    ==========================================================  
-    ```  
+   ```  
+   ==========================================================   
+        One or more open documents have unsaved changes.  
+   Do you want to save uncommitted changes before proceeding?   
+                     [Yes]  [No]  [Cancel]   
+   ==========================================================  
+   ```  
   
- In questo modo l'utente la possibilità di salvare i lavori in corso prima che la destinazione crea le copie. Un nuovo metodo **IVsHierarchyDropDataSource2::OnBeforeDropNotify** è stato aggiunto per consentire queste operazioni di gestione.  
+   In questo modo l'utente la possibilità di salvare i lavori in corso prima che la destinazione crea le copie. Un nuovo metodo **IVsHierarchyDropDataSource2::OnBeforeDropNotify** è stato aggiunto per consentire queste operazioni di gestione.  
   
- La destinazione è possibile copiare lo stato dell'elemento perché è nello spazio di memorizzazione (senza includere le modifiche non salvate nell'editor, se l'utente ha scelto **No**). Dopo che la destinazione è stata completata la copia (in **IVsHierarchyDropDataSource::Drop**), l'origine è data la possibilità di completare la parte di eliminazione dell'operazione di spostamento (in **IVsHierarchyDropDataSource::O nDropNotify**).  
+   La destinazione è possibile copiare lo stato dell'elemento perché è nello spazio di memorizzazione (senza includere le modifiche non salvate nell'editor, se l'utente ha scelto **No**). Dopo che la destinazione è stata completata la copia (in **IVsHierarchyDropDataSource::Drop**), l'origine è data la possibilità di completare la parte di eliminazione dell'operazione di spostamento (in **IVsHierarchyDropDataSource::O nDropNotify**).  
   
- Qualsiasi editor con le modifiche non salvate deve essere lasciato aperto. Per i documenti con le modifiche non salvate, ciò significa che la fase di copia dell'operazione di spostamento verrà eseguita ma verrà interrotta la porzione di eliminazione. In uno scenario di selezione di più quando l'utente sceglie **No**, tali documenti con le modifiche non salvate non devono essere chiuso o rimossi, ma quelli senza modifiche non salvate deve essere chiuso e rimossi.
+   Qualsiasi editor con le modifiche non salvate deve essere lasciato aperto. Per i documenti con le modifiche non salvate, ciò significa che la fase di copia dell'operazione di spostamento verrà eseguita ma verrà interrotta la porzione di eliminazione. In uno scenario di selezione di più quando l'utente sceglie **No**, tali documenti con le modifiche non salvate non devono essere chiuso o rimossi, ma quelli senza modifiche non salvate deve essere chiuso e rimossi.
 

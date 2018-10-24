@@ -16,12 +16,12 @@ ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec96812041ce6d86857dbd53414f5120ccf5a524
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 020754fb1ddb020e120ba11e8aa3ec8d97206603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852297"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedura: gestire una raccolta privata mediante le impostazioni del Registro di sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  Il `Repositories` chiave fa riferimento alla raccolta per essere abilitati o disabilitati. Visual Studio Gallery e la raccolta di esempi usano il repository seguente GUID:  
   
--   Visual Studio Gallery: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Visual Studio Gallery: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   Raccolta di esempi: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- Raccolta di esempi: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
- Il `Disabled` valore è facoltativo. Per impostazione predefinita, una raccolta è abilitata.  
+  Il `Disabled` valore è facoltativo. Per impostazione predefinita, una raccolta è abilitata.  
   
- Il `Priority` valore determina l'ordine in cui le raccolte disponibili sono elencate nella finestra di dialogo Opzioni. Raccolta di Visual Studio ha priorità 10 e la raccolta di esempi ha priorità 20. Raccolte private avviare con priorità 100. Se diverse raccolte hanno lo stesso valore di priorità, l'ordine in cui vengono visualizzati è determinato dai valori dei relativi localizzata `DisplayName` attributi.  
+  Il `Priority` valore determina l'ordine in cui le raccolte disponibili sono elencate nella finestra di dialogo Opzioni. Raccolta di Visual Studio ha priorità 10 e la raccolta di esempi ha priorità 20. Raccolte private avviare con priorità 100. Se diverse raccolte hanno lo stesso valore di priorità, l'ordine in cui vengono visualizzati è determinato dai valori dei relativi localizzata `DisplayName` attributi.  
   
- Il `Protocol` valore è obbligatorio per le raccolte basate su Atom o basata su SharePoint.  
+  Il `Protocol` valore è obbligatorio per le raccolte basate su Atom o basata su SharePoint.  
   
- Sia `DisplayName`, o entrambe `DisplayNameResourceID` e `DisplayNamePackageGuid`, deve essere specificato. Se si specifica all, il `DisplayNameResourceID` e `DisplayNamePackageGuid` coppia viene utilizzata.  
+  Sia `DisplayName`, o entrambe `DisplayNameResourceID` e `DisplayNamePackageGuid`, deve essere specificato. Se si specifica all, il `DisplayNameResourceID` e `DisplayNamePackageGuid` coppia viene utilizzata.  
   
 ## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Disabilitare la raccolta di Visual Studio usando un File con estensione pkgdef  
  È possibile disabilitare una raccolta in un file. pkgdef. La voce seguente disabilita la raccolta di Visual Studio:  

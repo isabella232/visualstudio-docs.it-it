@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816701"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizzazione ed estensione di un linguaggio specifico di dominio
 Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in corrispondenza del quale è possibile definire gli strumenti di modellazione:
@@ -35,7 +35,7 @@ Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in co
 ## <a name="customShapes"></a> In questa sezione
 
 |Per ottenere questo effetto|Fare riferimento a questo argomento|
-|----------------------------|-------------------------|
+|-|-|
 |Consentire all'utente di impostare le proprietà di colore e stile di una forma.|La classe di forma o connettore di fare doppio clic su, scegliere **Aggiungi esposta**, fare clic su un elemento.<br /><br /> Visualizzare [personalizzazione della presentazione nel diagramma](../modeling/customizing-presentation-on-the-diagram.md).|
 |Diverse classi di elemento del modello simile nel diagramma, la condivisione di proprietà, ad esempio l'altezza iniziale e la larghezza, colore, le descrizioni comandi.|Utilizzare l'ereditarietà tra le forme o classi di connettore. I mapping tra le forme derivate e le classi di dominio derivate ereditano i dettagli del mapping di elementi padre.<br /><br /> In alternativa, eseguire il mapping di classi di dominio diverso per la stessa classe shape.|
 |Una classe di elemento del modello viene visualizzata per contesti di diverse forme.|Eseguire il mapping di più di una classe di forma alla stessa classe di dominio. Quando si compila la soluzione, seguire la segnalazione errori e fornire il codice richiesto per decidere quale forma da utilizzare.|

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa4c2f37efe92bfbc3c06e0bc8f0657b1205652a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: efa56c94e211a40e314025ae06d263164de1afd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833018"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Procedura: aggiornamento a livello di programmazione del testo di segnalibro
   È possibile inserire testo in un segnalibro in un documento di Microsoft Office Word in modo da poter recuperare il testo in seguito o sostituire il testo in un segnalibro. Se si sviluppa una personalizzazione a livello di documento, è anche possibile aggiornare il testo in un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> associato a dati. Per altre informazioni, vedere [associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -31,15 +31,15 @@ ms.locfileid: "35671953"
   
  L'oggetto segnalibro può essere di due tipi diversi:  
   
--   Controllo host <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+- Controllo host <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     I controlli <xref:Microsoft.Office.Tools.Word.Bookmark> estendono gli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> nativi permettendo il data binding e l'esposizione di eventi. Per altre informazioni sui controlli host, vedere [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md).  
+   I controlli <xref:Microsoft.Office.Tools.Word.Bookmark> estendono gli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> nativi permettendo il data binding e l'esposizione di eventi. Per altre informazioni sui controlli host, vedere [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md).  
   
--   Oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> nativo.  
+- Oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> nativo.  
   
-     Gli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> non includono eventi né hanno funzionalità di data binding.  
+   Gli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> non includono eventi né hanno funzionalità di data binding.  
   
- Quando si assegna testo a un segnalibro, il comportamento tra un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> e un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> è diverso. Per altre informazioni, vedere [Bookmark (controllo)](../vsto/bookmark-control.md).  
+  Quando si assegna testo a un segnalibro, il comportamento tra un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> e un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> è diverso. Per altre informazioni, vedere [Bookmark (controllo)](../vsto/bookmark-control.md).  
   
 ## <a name="use-host-controls"></a>Utilizzare i controlli host  
   

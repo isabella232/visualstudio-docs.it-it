@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 146a525394b51f71f470f1246610a855d968dddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840038"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Distribuzione di applicazioni ClickOnce per i server di test e di produzione senza riapposizione della firma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Questo argomento illustra una nuova funzionalità di ClickOnce introdotta in .NE
   
  Di seguito sono riportati due esempi per chiarire questo concetto. Nel primo esempio, si pubblica un'applicazione ClickOnce che non ha `deploymentProvider` tag e si chiede agli utenti di installare l'app da http://www.adatum.com/MyApplication/. Se si decide che si desidera pubblicare al successivo aggiornamento dell'applicazione dal http://subdomain.adatum.com/MyApplication/, è non necessario indicare questo nel manifesto di distribuzione che si trova in alcun modo http://www.adatum.com/MyApplication/. È possibile eseguire una delle seguenti operazioni:  
   
--   Indicare agli utenti di disinstallare la versione precedente e installare la nuova versione dalla nuova posizione.  
+- Indicare agli utenti di disinstallare la versione precedente e installare la nuova versione dalla nuova posizione.  
   
--   Includere un aggiornamento sul http://www.adatum.com/MyApplication/ che include un `deploymentProvider` che punta a http://www.adatum.com/MyApplication/. Quindi, rilasciare un altro aggiornamento in un secondo momento con `deploymentProvider` che punta a http://subdomain.adatum.com/MyApplication/.  
+- Includere un aggiornamento sul http://www.adatum.com/MyApplication/ che include un `deploymentProvider` che punta a http://www.adatum.com/MyApplication/. Quindi, rilasciare un altro aggiornamento in un secondo momento con `deploymentProvider` che punta a http://subdomain.adatum.com/MyApplication/.  
   
- Nel secondo esempio, si pubblica un'applicazione ClickOnce che specifica `deploymentProvider`, e si decide quindi di rimuoverlo. Una volta nella nuova versione senza `deploymentProvider` è stato scaricato ai client, non sarà in grado di reindirizzare il percorso usato per gli aggiornamenti fino a quando non si rilascia una versione dell'applicazione che ha `deploymentProvider` ripristinato. Come con il primo esempio `deploymentProvider` inizialmente deve puntare al percorso di aggiornamento corrente, non al nuovo percorso. In questo caso, se si tenta di inserire un `deploymentProvider` che fa riferimento a http://subdomain.adatum.com/MyApplication/, al successivo aggiornamento avrà esito negativo.  
+  Nel secondo esempio, si pubblica un'applicazione ClickOnce che specifica `deploymentProvider`, e si decide quindi di rimuoverlo. Una volta nella nuova versione senza `deploymentProvider` è stato scaricato ai client, non sarà in grado di reindirizzare il percorso usato per gli aggiornamenti fino a quando non si rilascia una versione dell'applicazione che ha `deploymentProvider` ripristinato. Come con il primo esempio `deploymentProvider` inizialmente deve puntare al percorso di aggiornamento corrente, non al nuovo percorso. In questo caso, se si tenta di inserire un `deploymentProvider` che fa riferimento a http://subdomain.adatum.com/MyApplication/, al successivo aggiornamento avrà esito negativo.  
   
 ## <a name="creating-a-deployment"></a>Creazione di una distribuzione  
  Per istruzioni dettagliate sulla creazione di distribuzioni che possono essere distribuite da diversi percorsi di rete, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce che viene non richiedono nuova firma e che mantiene informazioni sulla personalizzazione](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

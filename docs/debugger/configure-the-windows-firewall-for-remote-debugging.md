@@ -10,35 +10,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9688948ebe2fa5e045578ee808e068d59450d748
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 7f6904313ff585b8099c993f83e90bacb91a4ba2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847955"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurare Windows Firewall per il debug remoto
 Questo argomento illustra come configurare il firewall per abilitare il debug remoto nei computer che eseguono i sistemi operativi seguenti:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 7   
+- Windows 7   
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
 
--   Windows Server 2012
+- Windows Server 2012
   
--   Windows Server 2008 R2 
+- Windows Server 2008 R2 
   
- Se la rete su cui si esegue il debug non è protetta da un firewall, questa configurazione non è necessaria. In caso contrario, è necessario modificare la configurazione del firewall sia nel computer che ospita Visual Studio, sia nel computer remoto di cui si esegue il debug.  
+  Se la rete su cui si esegue il debug non è protetta da un firewall, questa configurazione non è necessaria. In caso contrario, è necessario modificare la configurazione del firewall sia nel computer che ospita Visual Studio, sia nel computer remoto di cui si esegue il debug.  
   
- **IPSec** : se la rete richiede che le comunicazioni avvengano tramite IPSec, è necessario aprire porte aggiuntive sia sul computer host di Visual Studio sia sul computer remoto.  
+  **IPSec** : se la rete richiede che le comunicazioni avvengano tramite IPSec, è necessario aprire porte aggiuntive sia sul computer host di Visual Studio sia sul computer remoto.  
   
- **Server Web** : se si esegue il debug di un server Web remoto, è necessario aprire una porta supplementare sul computer remoto. (Per IIS, la porta 80 deve essere aperta.)  
+  **Server Web** : se si esegue il debug di un server Web remoto, è necessario aprire una porta supplementare sul computer remoto. (Per IIS, la porta 80 deve essere aperta.)  
   
- Tenere presente che non è necessario che entrambi i computer eseguano lo stesso sistema operativo. Ad esempio, il computer di Visual Studio può eseguire Windows 10 e il computer remoto può eseguire Windows Server 2012 R2.      
+  Tenere presente che non è necessario che entrambi i computer eseguano lo stesso sistema operativo. Ad esempio, il computer di Visual Studio può eseguire Windows 10 e il computer remoto può eseguire Windows Server 2012 R2.      
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Porte nel computer remoto che abilitano il debug remoto  
   
@@ -120,4 +120,4 @@ Se si utilizza la modalità di compatibilità per il debugger (**strumenti > Opz
 |80|In uscita|TCP|Richiesto per il debug di server Web.|
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug remoto](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

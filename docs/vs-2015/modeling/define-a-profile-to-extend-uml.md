@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2886e454e9986e63cbc3496d3ef5b0664e85dede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851595"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definire un profilo per estendere UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49221260"
   
  È possibile definire i propri profili per adattare ed estendere il linguaggio UML alla propria architettura o area aziendale. Ad esempio:  
   
--   Se si definiscono spesso siti Web, si può definire un proprio profilo che fornisca uno stereotipo «WebPage» applicabile alle classi nei diagrammi classi. Sarebbe quindi possibile usare i diagrammi classi per pianificare un sito Web. Ogni classe «WebPage» avrebbe proprietà aggiuntive per il contenuto della pagina, lo stile e così via.  
+- Se si definiscono spesso siti Web, si può definire un proprio profilo che fornisca uno stereotipo «WebPage» applicabile alle classi nei diagrammi classi. Sarebbe quindi possibile usare i diagrammi classi per pianificare un sito Web. Ogni classe «WebPage» avrebbe proprietà aggiuntive per il contenuto della pagina, lo stile e così via.  
   
--   Se si sviluppa software di e-banking, si potrebbe definire un profilo che fornisca uno stereotipo «Account». Sarebbe quindi possibile usare i diagrammi classi per definire tipi diversi di conto e mostrare le relazioni tra di essi.  
+- Se si sviluppa software di e-banking, si potrebbe definire un profilo che fornisca uno stereotipo «Account». Sarebbe quindi possibile usare i diagrammi classi per definire tipi diversi di conto e mostrare le relazioni tra di essi.  
   
- È possibile distribuire i propri profili al team. Ogni membro del team può installare il profilo. Ciò consente di modificare e creare modelli che usano i relativi stereotipi.  
+  È possibile distribuire i propri profili al team. Ogni membro del team può installare il profilo. Ciò consente di modificare e creare modelli che usano i relativi stereotipi.  
   
 > [!NOTE]
 >  Se si applicano gli stereotipi di un profilo in un modello che si sta modificando e quindi si condivide il modello con altre persone, queste devono installare lo stesso profilo nei propri computer. In caso contrario, non saranno in grado di visualizzare gli stereotipi usati.  
@@ -83,56 +83,56 @@ ms.locfileid: "49221260"
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Per definire un profilo in una nuova estensione di Visual Studio  
   
-1.  Creare un progetto di estensione di Visual Studio  
+1. Creare un progetto di estensione di Visual Studio  
   
-    > [!NOTE]
-    >  È necessario avere installato [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] per usare questa procedura.  
+   > [!NOTE]
+   >  È necessario avere installato [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] per usare questa procedura.  
   
-    1.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+   1.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-    2.  Nel **nuovo progetto** nella finestra di dialogo **modelli installati**, espandere **Visual c#**, fare clic su **estendibilità**, quindi fare clic su  **Progetto VSIX**. Impostare il nome del progetto e scegliere **OK**.  
+   2.  Nel **nuovo progetto** nella finestra di dialogo **modelli installati**, espandere **Visual c#**, fare clic su **estendibilità**, quindi fare clic su  **Progetto VSIX**. Impostare il nome del progetto e scegliere **OK**.  
   
-2.  Aggiungere il profilo al progetto.  
+2. Aggiungere il profilo al progetto.  
   
-    -   In Esplora soluzioni fare clic sul progetto, scegliere **Add**, quindi fare clic su **elemento esistente**. Nella finestra di dialogo individuare il file del profilo.  
+   -   In Esplora soluzioni fare clic sul progetto, scegliere **Add**, quindi fare clic su **elemento esistente**. Nella finestra di dialogo individuare il file del profilo.  
   
-3.  Impostare il file di profilo **Copia output** proprietà.  
+3. Impostare il file di profilo **Copia output** proprietà.  
   
-    1.  In Esplora soluzioni fare doppio clic su file del profilo e quindi fare clic su **proprietà**.  
+   1.  In Esplora soluzioni fare doppio clic su file del profilo e quindi fare clic su **proprietà**.  
   
-    2.  Nella finestra Proprietà impostare il **copia in Directory di Output** proprietà **Copia sempre**.  
+   2.  Nella finestra Proprietà impostare il **copia in Directory di Output** proprietà **Copia sempre**.  
   
-4.  In Esplora soluzioni aprire `source.extension.vsixmanifest`.  
+4. In Esplora soluzioni aprire `source.extension.vsixmanifest`.  
   
-     Il file viene aperto nell'editor del manifesto dell'estensione.  
+    Il file viene aperto nell'editor del manifesto dell'estensione.  
   
-5.  Nel **asset** pagina, aggiungere una riga che descrive il profilo:  
+5. Nel **asset** pagina, aggiungere una riga che descrive il profilo:  
   
-    -   Fare clic su **Nuovo**. Impostare i campi nella **Aggiungi nuovo Asset** finestra di dialogo come indicato di seguito.  
+   -   Fare clic su **Nuovo**. Impostare i campi nella **Aggiungi nuovo Asset** finestra di dialogo come indicato di seguito.  
   
-    -   Impostare **tipo** a `Microsoft.VisualStudio.UmlProfile`  
+   -   Impostare **tipo** a `Microsoft.VisualStudio.UmlProfile`  
   
-         Non si tratta di una delle opzioni a discesa. Inserire il nome usando la tastiera.  
+        Non si tratta di una delle opzioni a discesa. Inserire il nome usando la tastiera.  
   
-    -   Fare clic su **File in filesystem** e selezionare il nome del file di profilo, ad esempio `MyProfile.profile`  
+   -   Fare clic su **File in filesystem** e selezionare il nome del file di profilo, ad esempio `MyProfile.profile`  
   
-6.  Compilare il progetto.  
+6. Compilare il progetto.  
   
-7.  **Per eseguire il debug del profilo**, premere F5.  
+7. **Per eseguire il debug del profilo**, premere F5.  
   
-     Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire un progetto di modellazione. In Esplora modelli UML selezionare l'elemento radice del modello, quindi nella finestra Proprietà selezionare il profilo. Selezionare gli elementi nel modello e impostare gli stereotipi che sono stati definiti per essi.  
+    Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire un progetto di modellazione. In Esplora modelli UML selezionare l'elemento radice del modello, quindi nella finestra Proprietà selezionare il profilo. Selezionare gli elementi nel modello e impostare gli stereotipi che sono stati definiti per essi.  
   
-8.  **Per estrarre il file VSIX per la distribuzione**  
+8. **Per estrarre il file VSIX per la distribuzione**  
   
-    1.  In Windows Explorer, aprire la cartella **.\bin\Debug** oppure **.\bin\Release** per trovare i **VSIX** file. Si tratta di un file di estensione [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Può essere installato nel computer e inviato ad altri utenti di Visual Studio.  
+   1.  In Windows Explorer, aprire la cartella **.\bin\Debug** oppure **.\bin\Release** per trovare i **VSIX** file. Si tratta di un file di estensione [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Può essere installato nel computer e inviato ad altri utenti di Visual Studio.  
   
-    2.  Per installare l'estensione:  
+   2.  Per installare l'estensione:  
   
-        1.  Fare doppio clic sul file `.vsix`. Verrà avviato Visual Studio Extension Installer.  
+       1.  Fare doppio clic sul file `.vsix`. Verrà avviato Visual Studio Extension Installer.  
   
-        2.  Riavviare tutte le istanze di Visual Studio in esecuzione.  
+       2.  Riavviare tutte le istanze di Visual Studio in esecuzione.  
   
- La seguente procedura alternativa può essere usata per estensioni di piccole dimensioni se [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] non è stato installato.  
+   La seguente procedura alternativa può essere usata per estensioni di piccole dimensioni se [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] non è stato installato.  
   
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>Per definire un'estensione del profilo senza usare Visual Studio SDK  
   
@@ -348,24 +348,24 @@ ms.locfileid: "49221260"
  Viene visualizzato l'errore seguente quando si apre un modello UML: **VS1707: Impossibile caricare i profili seguenti perché si è verificato un errore di serializzazione: MyProfile.profile**  
  1.  Verificare che la sintassi XML di base del file con estensione profile sia corretta.  
   
-2.  Assicurarsi che ogni nome di moniker sia nel formato /profileName/nodeName. profileName è il valore dell'attributo name nel nodo del profilo radice. nodeName è il valore dell'attributo name di una metaclasse, externalType o enumerationType.  
+2. Assicurarsi che ogni nome di moniker sia nel formato /profileName/nodeName. profileName è il valore dell'attributo name nel nodo del profilo radice. nodeName è il valore dell'attributo name di una metaclasse, externalType o enumerationType.  
   
-3.  Verificare la sintassi sia come descritto qui, come illustrato nel _unità_**: \Programmi\Microsoft Visual Studio [versione] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
+3. Verificare la sintassi sia come descritto qui, come illustrato nel _unità_**: \Programmi\Microsoft Visual Studio [versione] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
   
-4.  Disinstallare l'estensione errata. Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.  
+4. Disinstallare l'estensione errata. Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.  
   
-    -   Se l'estensione non è visibile, vedere l'elemento successivo.  
+   -   Se l'estensione non è visibile, vedere l'elemento successivo.  
   
-5.  Ricompilare il file VSIX e aprirlo in Esplora risorse per reinstallarlo. Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Ricompilare il file VSIX e aprirlo in Esplora risorse per reinstallarlo. Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- L'estensione non visibile in Gestione estensioni, ma quando si prova a installarla nuovamente, verrà visualizzato il messaggio seguente: **l'estensione è già installata per tutti i prodotti applicabili.**  
- 1.  Rimuovere il file di estensione da una sottocartella della *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [versione]  
+   L'estensione non visibile in Gestione estensioni, ma quando si prova a installarla nuovamente, verrà visualizzato il messaggio seguente: **l'estensione è già installata per tutti i prodotti applicabili.**  
+   1.  Rimuovere il file di estensione da una sottocartella della *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [versione]  
   
-    -   Per visualizzare *LocalAppData*, è necessario impostare cartelle e visualizzare file nascosti nella scheda Visualizza di opzioni cartella Windows Explorer.  
+   -   Per visualizzare *LocalAppData*, è necessario impostare cartelle e visualizzare file nascosti nella scheda Visualizza di opzioni cartella Windows Explorer.  
   
-    -   *LocalAppData* è in genere in C:\Users\\*userName*\AppData\Local\  
+   -   *LocalAppData* è in genere in C:\Users\\*userName*\AppData\Local\  
   
-2.  Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  
  [Aggiungere stereotipi a elementi del modello UML](../modeling/add-stereotypes-to-uml-model-elements.md)   

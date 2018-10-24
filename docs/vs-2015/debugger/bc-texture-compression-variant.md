@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837971"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante di compressione della trama BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Abilita la compressione a blocchi in tutte le trame con un formato di pixel che 
 ## <a name="remarks"></a>Note  
  Per comprimere le trame, usare un formato di compressione basato su blocchi in ogni chiamata a `ID3DDevice::CreateTexture2D` che crea una trama di origine. In particolare, le trame vengono compresse quando:  
   
--   L'oggetto `D3D11_TEXTURE2D_DESC` passato a `pDesc` descrive una risorsa shader che non cambia, ovvero:  
+- L'oggetto `D3D11_TEXTURE2D_DESC` passato a `pDesc` descrive una risorsa shader che non cambia, ovvero:  
   
-    -   Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.  
+  -   Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.  
   
-    -   Il membro Usage è impostato su D3D11_USAGE_DEFAULT o su D3D11_USAGE_IMMUTABLE.  
+  -   Il membro Usage è impostato su D3D11_USAGE_DEFAULT o su D3D11_USAGE_IMMUTABLE.  
   
-    -   Il membro CPUAccessFlags è impostato su 0 (nessun accesso alla CPU).  
+  -   Il membro CPUAccessFlags è impostato su 0 (nessun accesso alla CPU).  
   
-    -   Il membro Count del membro SamplerDesc è impostato su 1 (nessun anti-aliasing multicampione).  
+  -   Il membro Count del membro SamplerDesc è impostato su 1 (nessun anti-aliasing multicampione).  
   
--   Vengono forniti i dati iniziali alla chiamata a `CreateTexture2D`.  
+- Vengono forniti i dati iniziali alla chiamata a `CreateTexture2D`.  
   
- Di seguito sono riportati i formati di origine supportati e i relativi formati di compressione a blocchi.  
+  Di seguito sono riportati i formati di origine supportati e i relativi formati di compressione a blocchi.  
   
 |Formato originale (da)|Formato compresso (a)|  
 |------------------------------|------------------------------|  

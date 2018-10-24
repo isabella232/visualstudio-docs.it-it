@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853142"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Creare le pagine dell'applicazione per SharePoint
   Un' *pagina dell'applicazione* è una pagina Web ASP.NET è progettata per l'uso in un sito Web di SharePoint. Le pagine dell'applicazione sono un tipo specializzato di pagina ASP.NET. La differenza principale tra una pagina dell'applicazione e una pagina ASP.NET standard è che una pagina dell'applicazione contiene il contenuto che viene unito a una pagina master di SharePoint. Una pagina master consente alle pagine di applicazione condividere lo stesso aspetto e comportamento delle altre pagine in un sito.  
@@ -67,7 +67,7 @@ ms.locfileid: "36326127"
   
  È possibile eseguire il debug di una pagina dell'applicazione esattamente come si potrebbero eseguire il debug di altri elementi del progetto SharePoint in Visual Studio. Quando si avvia il debugger di Visual Studio, Visual Studio apre il sito di SharePoint.  
   
- Per visualizzare la pagina dell'applicazione, è necessario passare manualmente al percorso della pagina applicazione (ad esempio: http://*nome_server*/_layouts/*Project_Name*/ApplicationPage1.aspx).  
+ Per visualizzare la pagina dell'applicazione, è necessario passare manualmente al percorso della pagina applicazione (ad esempio: http://<em>nome_server</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).  
   
  Per altre informazioni su come eseguire il debug di progetti SharePoint, vedere [risolvere i problemi di SharePoint soluzioni](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   

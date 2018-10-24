@@ -13,15 +13,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b201631d86d0fd36a0f35d2842400473abf5fc3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8284f065a829ac7ecc29330fb8a9dad74e92690e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850179"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -35,41 +36,41 @@ ms.locfileid: "49201578"
 ## <a name="rule-description"></a>Descrizione della regola
  La [definizione DTD (Document Type Definition)](https://msdn.microsoft.com/library/aa468547.aspx) rappresenta uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito dalla raccomandazione  [W3C (World Wide Web Consortium) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori delle minacce potenziali di [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , che possono causare attacchi [Denial of Service (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Questa regola viene attivata quando:
 
--   DtdProcessing viene abilitato nell'istanza di <xref:System.Xml.XmlReader> , che risolve le entità XML esterne con <xref:System.Xml.XmlUrlResolver>.
+- DtdProcessing viene abilitato nell'istanza di <xref:System.Xml.XmlReader> , che risolve le entità XML esterne con <xref:System.Xml.XmlUrlResolver>.
 
--   La proprietà <xref:System.Xml.XmlNode.InnerXml%2A> nel codice XML è impostata.
+- La proprietà <xref:System.Xml.XmlNode.InnerXml%2A> nel codice XML è impostata.
 
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> viene impostata su Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> viene impostata su Parse.
 
--   Un input non attendibile viene elaborato con <xref:System.Xml.XmlResolver> anziché con <xref:System.Xml.XmlSecureResolver> .
+- Un input non attendibile viene elaborato con <xref:System.Xml.XmlResolver> anziché con <xref:System.Xml.XmlSecureResolver> .
 
--   XmlReader.<xref:System.Xml.XmlReader.Create%2A> metodo viene richiamato con un <xref:System.Xml.XmlReaderSettings> istanza o senza alcuna istanza.
+- XmlReader.<xref:System.Xml.XmlReader.Create%2A> metodo viene richiamato con un <xref:System.Xml.XmlReaderSettings> istanza o senza alcuna istanza.
 
--   <xref:System.Xml.XmlReader> viene creato con le impostazioni predefinite non protette o valori.
+- <xref:System.Xml.XmlReader> viene creato con le impostazioni predefinite non protette o valori.
 
- In ognuno di questi casi, il risultato è lo stesso: il contenuto del file system o delle condivisioni di rete nel computer in cui viene elaborato il codice XML sarà esposto alle minacce di utenti malintenzionati e potrà quindi essere usato come vettore di attacchi DoS.
+  In ognuno di questi casi, il risultato è lo stesso: il contenuto del file system o delle condivisioni di rete nel computer in cui viene elaborato il codice XML sarà esposto alle minacce di utenti malintenzionati e potrà quindi essere usato come vettore di attacchi DoS.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
--   Rilevare ed elaborare tutte le eccezioni XmlTextReader correttamente per evitare la divulgazione di informazioni di percorso.
+- Rilevare ed elaborare tutte le eccezioni XmlTextReader correttamente per evitare la divulgazione di informazioni di percorso.
 
--   Usare il <xref:System.Xml.XmlSecureResolver> per limitare le risorse che può accedere XmlTextReader.
+- Usare il <xref:System.Xml.XmlSecureResolver> per limitare le risorse che può accedere XmlTextReader.
 
--   Non consentire la <xref:System.Xml.XmlReader> per aprire eventuali risorse esterne impostando la <xref:System.Xml.XmlResolver> proprietà **null**.
+- Non consentire la <xref:System.Xml.XmlReader> per aprire eventuali risorse esterne impostando la <xref:System.Xml.XmlResolver> proprietà **null**.
 
--   Assicurarsi che la proprietà <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> di <xref:System.Data.DataViewManager> venga assegnata da un'origine attendibile.
+- Assicurarsi che la proprietà <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> di <xref:System.Data.DataViewManager> venga assegnata da un'origine attendibile.
 
- .NET 3.5 e versioni precedenti
+  .NET 3.5 e versioni precedenti
 
--   Disabilitare l'elaborazione DTD se usano origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> proprietà **true** .
+- Disabilitare l'elaborazione DTD se usano origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> proprietà **true** .
 
--   La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Visualizzare [richieste di ereditarietà](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per altre informazioni.
+- La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Visualizzare [richieste di ereditarietà](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per altre informazioni.
 
- .NET 4 e versioni successive
+  .NET 4 e versioni successive
 
--   Evitare di abilitare DtdProcessing se si usano origini non attendibili impostando la proprietà DtdProcessing su [Prohibit o Ignore](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
+- Evitare di abilitare DtdProcessing se si usano origini non attendibili impostando la proprietà DtdProcessing su [Prohibit o Ignore](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
 
--   Assicurarsi che il metodo Load() accetti un'istanza di XmlReader ovunque venga usato InnerXml.
+- Assicurarsi che il metodo Load() accetti un'istanza di XmlReader ovunque venga usato InnerXml.
 
 > [!NOTE]
 >  Questa regola potrebbe segnalare dei falsi positivi in alcune istanze valide di XmlSecureResolver. Questo problema dovrebbe essere risolto per la metà del 2016.

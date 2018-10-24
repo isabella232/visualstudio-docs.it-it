@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827480"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definire e installare un'estensione di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 ## <a name="creating-a-modeling-extension-solution"></a>Creazione di una soluzione di estensione di modellazione  
  Per definire un'estensione di modellazione, è necessario creare una soluzione contenente questi progetti:  
   
--   Un progetto VSIX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration Extension), che genera un file che funge da programma di installazione per i componenti dell'estensione.  
+- Un progetto VSIX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration Extension), che genera un file che funge da programma di installazione per i componenti dell'estensione.  
   
--   Un progetto di libreria di classi, necessario per i componenti che includono il codice programma.  
+- Un progetto di libreria di classi, necessario per i componenti che includono il codice programma.  
   
- Se si vuole creare un'estensione con diversi componenti, è possibile svilupparli in un'unica soluzione. È necessario un solo progetto VSIX.  
+  Se si vuole creare un'estensione con diversi componenti, è possibile svilupparli in un'unica soluzione. È necessario un solo progetto VSIX.  
   
- I componenti che non richiedono codice, ad esempio gli elementi della casella degli strumenti personalizzati e i profili UML personalizzati, possono essere aggiunti direttamente al progetto VSIX senza usare progetti di libreria di classi separati. I componenti che richiedono il codice programma si definiscono più facilmente in un progetto di libreria di classi separato. I componenti che richiedono il codice includono i gestori di movimento, i comandi di menu e il codice di convalida.  
+  I componenti che non richiedono codice, ad esempio gli elementi della casella degli strumenti personalizzati e i profili UML personalizzati, possono essere aggiunti direttamente al progetto VSIX senza usare progetti di libreria di classi separati. I componenti che richiedono il codice programma si definiscono più facilmente in un progetto di libreria di classi separato. I componenti che richiedono il codice includono i gestori di movimento, i comandi di menu e il codice di convalida.  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Per creare un progetto di libreria di classi per comandi di menu, gestori di movimento o convalida  
   
@@ -133,15 +133,15 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
   
 #### <a name="to-uninstall-an-extension"></a>Per disinstallare un'estensione  
   
-1.  Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.  
+1. Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.  
   
-2.  Espandere **Estensioni installate**.  
+2. Espandere **Estensioni installate**.  
   
-3.  Selezionare l'estensione e quindi fare clic su **Disinstalla**.  
+3. Selezionare l'estensione e quindi fare clic su **Disinstalla**.  
   
- Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente in cui *% LocalAppData %* è in genere *DriveName*: \Users\\*UserName*\AppData\Local:  
+   Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente in cui *% LocalAppData %* è in genere *DriveName*: \Users\\*UserName*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versione]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versione]**  
   
 ## <a name="see-also"></a>Vedere anche  
  [Definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md)   

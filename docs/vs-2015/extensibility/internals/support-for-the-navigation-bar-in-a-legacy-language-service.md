@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839141"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  Man mano che cambia la selezione nei tipi di elenco a discesa, l'elenco dei membri da aggiornare in modo da riflettere il nuovo tipo. Che cosa viene visualizzata nell'elenco dei membri possa essere:  
   
--   L'elenco dei membri per il tipo corrente.  
+- L'elenco dei membri per il tipo corrente.  
   
--   Tutti i membri disponibili nell'origine dei file, ma con tutti i membri non di tipo corrente visualizzato nel testo grigio. L'utente può comunque selezionare i membri di grigio, in modo che possono essere utilizzati per la navigazione rapida, ma il colore indica che non fanno parte del tipo attualmente selezionato.  
+- Tutti i membri disponibili nell'origine dei file, ma con tutti i membri non di tipo corrente visualizzato nel testo grigio. L'utente può comunque selezionare i membri di grigio, in modo che possono essere utilizzati per la navigazione rapida, ma il colore indica che non fanno parte del tipo attualmente selezionato.  
   
- Un'implementazione del <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo in genere esegue i passaggi seguenti:  
+  Un'implementazione del <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo in genere esegue i passaggi seguenti:  
   
 1.  Ottenere un elenco delle dichiarazioni correnti del file di origine.  
   

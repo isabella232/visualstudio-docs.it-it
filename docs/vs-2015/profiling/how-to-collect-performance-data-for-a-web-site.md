@@ -24,12 +24,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f265bf63890cfe2dcc9ecb9ef845803ef1c858cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840649"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Per raccogliere dati sulle prestazioni per un'applicazione Web di **, è possibi
   
  In base alle autorizzazioni di accesso a livello utente che un amministratore ha reso disponibili, un singolo utente può avere o meno le autorizzazioni di sicurezza necessarie per creare una sessione del profiler sul computer che ospita il processo ASP.NET. Gli esempi seguenti illustrano le possibili differenze tra i diversi tipi di utenti:  
   
--   Se l'amministratore ha impostato l'avvio del driver e del servizio, alcuni utenti possono accedere a funzionalità di profilatura avanzate.  
+- Se l'amministratore ha impostato l'avvio del driver e del servizio, alcuni utenti possono accedere a funzionalità di profilatura avanzate.  
   
--   Gli utenti di dominio possono accedere soltanto ad esempi di profilatura.  
+- Gli utenti di dominio possono accedere soltanto ad esempi di profilatura.  
   
--   Alcuni utenti possono negare l'accesso alle funzionalità di profilatura a tutti gli altri utenti.  
+- Alcuni utenti possono negare l'accesso alle funzionalità di profilatura a tutti gli altri utenti.  
   
- Per altre informazioni, vedere [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Per altre informazioni, vedere [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-profile-a-web-site-project"></a>Per profilare un progetto di sito Web  
   
@@ -75,33 +75,33 @@ Per raccogliere dati sulle prestazioni per un'applicazione Web di **, è possibi
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Per profilare un sito Web senza aprire un progetto in Visual Studio  
   
-1.  Aprire [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] o [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Aprire [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] o [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni**.  
+2. Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni**.  
   
-3.  Nella prima pagina della procedura guidata selezionare un metodo di profilatura e quindi fare clic su **Avanti**. Per altre informazioni, vedere [Informazioni sui metodi di raccolta delle prestazioni](../profiling/understanding-performance-collection-methods.md).  
+3. Nella prima pagina della procedura guidata selezionare un metodo di profilatura e quindi fare clic su **Avanti**. Per altre informazioni, vedere [Informazioni sui metodi di raccolta delle prestazioni](../profiling/understanding-performance-collection-methods.md).  
   
-4.  Nella seconda pagina della procedura guidata, selezionare l'opzione **Profilatura di un'applicazione ASP.NET o JavaScript** e quindi fare clic su **Avanti**.  
+4. Nella seconda pagina della procedura guidata, selezionare l'opzione **Profilatura di un'applicazione ASP.NET o JavaScript** e quindi fare clic su **Avanti**.  
   
-5.  Nella terza pagina della procedura guidata digitare l'URL della home page dell'applicazione nella casella **Specificare l'URL o il percorso che esegue l'applicazione Web** e quindi fare clic su **Avanti**.  
+5. Nella terza pagina della procedura guidata digitare l'URL della home page dell'applicazione nella casella **Specificare l'URL o il percorso che esegue l'applicazione Web** e quindi fare clic su **Avanti**.  
   
-    -   Per un sito Web basato su un server (IIS), digitare l'URL, ad esempio **http://localhost/MySite/default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.  
+   - Per un sito Web basato su un server (IIS), digitare l'URL, ad esempio **http://localhost/MySite/default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.  
   
-    -   Per un sito Web basato su file, digitare un percorso, ad esempio file///**c:\WebSites\MySite\default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] presente in c:\webSites\MySite e in Internet Explorer verrà aperta la pagina http://localhost:nnnn/MySite/default.aspx per avviare la sessione.  
+   - Per un sito Web basato su file, digitare un percorso, ad esempio file///**c:\WebSites\MySite\default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] presente in c:\webSites\MySite e in Internet Explorer verrà aperta la pagina http://localhost:nnnn/MySite/default.aspx per avviare la sessione.  
   
-    -   Per i siti esterni sui quali si vuole raccogliere dati JavaScript, digitare l'URL, ad esempio http://www.contoso.com.  
+   - Per i siti esterni sui quali si vuole raccogliere dati JavaScript, digitare l'URL, ad esempio http://www.contoso.com.  
   
      Per altre informazioni, visualizzare le pagine delle proprietà per un file binario di destinazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
-6.  Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli (TIP), dati da JavaScript in esecuzione nelle pagine Web o entrambi.  
+6. Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli (TIP), dati da JavaScript in esecuzione nelle pagine Web o entrambi.  
   
-    -   Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .  
+   -   Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .  
   
-    -   Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profila JavaScript** .  
+   -   Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profila JavaScript** .  
   
-7.  Scegliere **Avanti**.  
+7. Scegliere **Avanti**.  
   
-8.  Nella quarta pagina della procedura guidata fare clic su **Fine**.  
+8. Nella quarta pagina della procedura guidata fare clic su **Fine**.  
   
 9. Verrà creata una sessione di prestazioni per l'applicazione ASP.NET e il sito Web verrà avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.  
   

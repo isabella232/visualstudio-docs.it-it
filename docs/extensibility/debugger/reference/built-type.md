@@ -1,5 +1,5 @@
 ---
-title: BUILT_TYPE | Documenti Microsoft
+title: BUILT_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14a9010925db5c175b7110fb12261eb135162246
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0955ca40e136e5b89f105430f3dd887b66f25a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853311"
 ---
 # <a name="builttype"></a>BUILT_TYPE
-Questa struttura consente di specificare informazioni su un tipo di campo prelevato dai metadati.  
+Questa struttura consente di specificare informazioni su un tipo di campo impiegato dai metadati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,16 +45,16 @@ public struct BUILT_TYPE {
   
 #### <a name="parameters"></a>Parametri  
  ulAppDomainID  
- ID dell'applicazione da cui proviene il simbolo. Questo viene utilizzato per identificare in modo univoco un'istanza dell'applicazione.  
+ ID dell'applicazione da cui proviene il simbolo. Ciò consente di identificare in modo univoco un'istanza dell'applicazione.  
   
  guidModule  
  Il GUID del modulo che contiene questo campo.  
   
  pUnderlyingField  
- Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che identifica il campo sottostante associato a questo campo viene compilato.  
+ Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che identifica il campo sottostante associato a questo campo viene compilato.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura viene visualizzato come parte dell'unione nel [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struttura quando il `dwKind` campo il `TYPE_INFO` struttura è impostata su `TYPE_KIND_BUILT` (compreso il [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumerazione).  
+ Questa struttura viene visualizzato come parte dell'unione nel [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struttura quando il `dwKind` campo il `TYPE_INFO` struttura è impostata su `TYPE_KIND_BUILT` (un valore compreso il [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumerazione).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  

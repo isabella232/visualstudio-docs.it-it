@@ -20,15 +20,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 107248d0dddf89f63056a8a385eeb2a942ca91c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 084fd28106a3ac5af9a40d46cf687d4982f53690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834307"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Specificare IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
@@ -48,15 +49,15 @@ ms.locfileid: "49186702"
 ## <a name="rule-description"></a>Descrizione della regola
  Quando un <xref:System.Globalization.CultureInfo?displayProperty=fullName> o <xref:System.IFormatProvider> oggetto non viene specificato, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali. Inoltre, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] membri scelgono le impostazioni cultura predefinite e la formattazione basato su presupposti che potrebbero non essere corretti per il codice. Per assicurarsi che il codice funzioni come previsto per gli scenari, è necessario fornire informazioni specifiche delle impostazioni cultura in base alle linee guida seguenti:
 
--   Se il valore verrà visualizzato all'utente, usare le impostazioni cultura correnti. Vedere <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
+- Se il valore verrà visualizzato all'utente, usare le impostazioni cultura correnti. Vedere <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
 
--   Se il valore verrà archiviato e utilizzato dal software (persistente in un file o database), usare le impostazioni cultura invarianti. Vedere <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
+- Se il valore verrà archiviato e utilizzato dal software (persistente in un file o database), usare le impostazioni cultura invarianti. Vedere <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
 
--   Se non si conosce la destinazione del valore, dispone al consumer di dati o provider di specificare le impostazioni cultura.
+- Se non si conosce la destinazione del valore, dispone al consumer di dati o provider di specificare le impostazioni cultura.
 
- Si noti che <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> viene usato solo per recuperare le risorse localizzate con un'istanza del <xref:System.Resources.ResourceManager?displayProperty=fullName> classe.
+  Si noti che <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> viene usato solo per recuperare le risorse localizzate con un'istanza del <xref:System.Resources.ResourceManager?displayProperty=fullName> classe.
 
- Anche se il comportamento predefinito del membro di overload è adatto alle proprie esigenze, è preferibile chiamare in modo esplicito l'overload specifico delle impostazioni cultura in modo che quest'ultima è autodocumentato e più facilmente gestibili.
+  Anche se il comportamento predefinito del membro di overload è adatto alle proprie esigenze, è preferibile chiamare in modo esplicito l'overload specifico delle impostazioni cultura in modo che quest'ultima è autodocumentato e più facilmente gestibili.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, usare l'overload che accetta un <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider> e specificare l'argomento in base alle linee guida elencate in precedenza.

@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851119"
 ---
 # <a name="call-hierarchy"></a>Gerarchia di chiamata
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,24 +41,24 @@ La gerarchia di chiamata consente di spostarsi nel codice visualizzando tutte le
  ![Gerarchia di chiamata con un nodo aperto](../../ide/reference/media/onenode.png "OneNode")  
 Finestra Gerarchia di chiamata  
   
--   Se si espande il nodo **Chiamate a**, vengono visualizzati tutti i membri che chiamano il membro selezionato.  
+- Se si espande il nodo **Chiamate a**, vengono visualizzati tutti i membri che chiamano il membro selezionato.  
   
--   Se si espande il nodo **Chiamate da**, vengono visualizzati tutti i membri chiamati dal membro selezionato.  
+- Se si espande il nodo **Chiamate da**, vengono visualizzati tutti i membri chiamati dal membro selezionato.  
   
- È quindi possibile espandere ognuno di questi membri dei sottonodi nei nodi **Chiamate a** e **Chiamate da**. In questo modo è possibile spostarsi nello stack dei chiamanti, come illustrato nella figura seguente.  
+  È quindi possibile espandere ognuno di questi membri dei sottonodi nei nodi **Chiamate a** e **Chiamate da**. In questo modo è possibile spostarsi nello stack dei chiamanti, come illustrato nella figura seguente.  
   
- ![Gerarchia di chiamata con più nodi aperti](../../ide/media/multiplenodes.png "MultipleNodes")  
-Finestra Gerarchia di chiamata  
+  ![Gerarchia di chiamata con più nodi aperti](../../ide/media/multiplenodes.png "MultipleNodes")  
+  Finestra Gerarchia di chiamata  
   
- Per i membri definiti come virtuali o astratti viene visualizzato un nodo **Overrides method name** (Esegui override nome metodo). Per i membri di interfaccia viene visualizzato un nodo **Implements method name** (Implementa nome metodo). Questi nodi espandibili vengono visualizzati allo stesso livello dei nodi **Chiamate a** e **Chiamate da**.  
+  Per i membri definiti come virtuali o astratti viene visualizzato un nodo **Overrides method name** (Esegui override nome metodo). Per i membri di interfaccia viene visualizzato un nodo **Implements method name** (Implementa nome metodo). Questi nodi espandibili vengono visualizzati allo stesso livello dei nodi **Chiamate a** e **Chiamate da**.  
   
- La casella **Ambito di ricerca** sulla barra degli strumenti include le opzioni **Soluzione personale**, **Progetto corrente** e **documento corrente**.  
+  La casella **Ambito di ricerca** sulla barra degli strumenti include le opzioni **Soluzione personale**, **Progetto corrente** e **documento corrente**.  
   
- Quando si seleziona un membro figlio nel riquadro della visualizzazione struttura ad albero **Gerarchia di chiamata**:  
+  Quando si seleziona un membro figlio nel riquadro della visualizzazione struttura ad albero **Gerarchia di chiamata**:  
   
--   Il riquadro dei dettagli **Gerarchia di chiamata** visualizza tutte le righe di codice in cui tale membro figlio viene chiamato dal membro padre.  
+- Il riquadro dei dettagli **Gerarchia di chiamata** visualizza tutte le righe di codice in cui tale membro figlio viene chiamato dal membro padre.  
   
--   La **finestra Definizione codice**, se aperta, visualizza il codice per il membro selezionato. Questa finestra è disponibile in C# e C++. Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).  
+- La **finestra Definizione codice**, se aperta, visualizza il codice per il membro selezionato. Questa finestra è disponibile in C# e C++. Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
 >  La finestra Gerarchia di chiamata non trova riferimenti ai gruppi di metodi, che includono le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.  

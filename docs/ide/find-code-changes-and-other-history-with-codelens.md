@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853519"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -162,7 +164,7 @@ Per confrontare una modifica in arrivo con la versione locale, premere **MAIUSC*
 L'icona visualizzata nella colonna **Branch** indica in che modo il branch è correlato al branch in uso.
 
 |**Icona**|**La modifica proviene da:**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens: icona di modifica da branch corrente](../ide/media/codelensbranchcurrenticon.png)|Branch corrente|
 |![CodeLens: icona di modifica da branch padre](../ide/media/codelensbranchparenticon.png)|Branch padre|
 |![CodeLens: icona di modifica da branch figlio](../ide/media/codelensbranchchildicon.png)|Branch figlio|

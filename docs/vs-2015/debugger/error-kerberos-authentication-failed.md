@@ -21,12 +21,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1fbea1d9279bb85c82a534873941f74ac7586e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd142d08574d93053ce8a0ebd8b4ca27ed4f0790
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815052"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Errore: autenticazione Kerberos non riuscita
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
  L'autenticazione Kerberos non è disponibile nei seguenti casi:  
   
--   Il computer di destinazione o il computer host del debugger si trova in un gruppo di lavoro anziché in un dominio.  
+- Il computer di destinazione o il computer host del debugger si trova in un gruppo di lavoro anziché in un dominio.  
   
-     \- oppure -  
+   \- oppure -  
   
--   Kerberos è stato disabilitato sul controller di dominio.  
+- Kerberos è stato disabilitato sul controller di dominio.  
   
- Se l'autenticazione Kerberos non è disponibile, modificare l'account utilizzato per l'esecuzione di Visual Studio Remote Debugging Monitor. Per istruzioni, vedere [errori: servizio di Visual Studio Remote Debugger nel computer di destinazione non può connettersi al computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+  Se l'autenticazione Kerberos non è disponibile, modificare l'account utilizzato per l'esecuzione di Visual Studio Remote Debugging Monitor. Per istruzioni, vedere [errori: servizio di Visual Studio Remote Debugger nel computer di destinazione non può connettersi al computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
- Se il messaggio di errore viene visualizzato nonostante entrambi i computer siano connessi allo stesso dominio, verificare che il nome del computer host del debugger venga risolto correttamente dal DNS del computer di destinazione. Attenersi alla procedura indicata di seguito.  
+  Se il messaggio di errore viene visualizzato nonostante entrambi i computer siano connessi allo stesso dominio, verificare che il nome del computer host del debugger venga risolto correttamente dal DNS del computer di destinazione. Attenersi alla procedura indicata di seguito.  
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Per verificare la corretta risoluzione del nome del computer host del debugger da parte del DNS del computer di destinazione  
   

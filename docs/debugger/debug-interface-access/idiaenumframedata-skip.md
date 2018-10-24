@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::Skip | Documenti Microsoft
+title: Idiaenumframedata | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f75ca23d1df6b81a23277fc94e60f9c0a2920f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4987279f336b549389bd7d338bb12e842a3d87f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818292"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
-Ignora un numero specificato di elementi frame di dati in una sequenza di enumerazione.  
+Ignora un determinato numero di elementi di frame di dati in una sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Parametri  
  celt  
- [in] Il numero di elementi di dati di frame nella sequenza di enumerazione da ignorare.  
+ [in] Il numero di elementi di dati di intervallo nella sequenza di enumerazione da ignorare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non sono presenti più record da ignorare.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se sono presenti più record da ignorare.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

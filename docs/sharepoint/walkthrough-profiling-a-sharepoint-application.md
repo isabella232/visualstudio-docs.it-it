@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852751"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: Profilatura di un'applicazione SharePoint
   In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più onerosa (esecuzione più lenta) del progetto, noto anche come il *percorso ad accesso frequente*.  
   
  In questa procedura dettagliata vengono descritte le attività seguenti:  
   
--   [Aggiunta di una funzionalità e un ricevitore di eventi funzionalità](#BKMK_AddFtrandFtrEvntReceiver).  
+- [Aggiunta di una funzionalità e un ricevitore di eventi funzionalità](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Configurazione e distribuzione dell'applicazione SharePoint](#BKMK_ConfigSharePointApp).  
+- [Configurazione e distribuzione dell'applicazione SharePoint](#BKMK_ConfigSharePointApp).  
   
--   [Esecuzione dell'applicazione SharePoint](#BKMK_RunSPApp).  
+- [Esecuzione dell'applicazione SharePoint](#BKMK_RunSPApp).  
   
--   [Visualizzazione e l'interpretazione dei risultati di profilatura](#BKMK_ViewResults).  
+- [Visualizzazione e l'interpretazione dei risultati di profilatura](#BKMK_ViewResults).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -52,23 +52,23 @@ ms.locfileid: "42634706"
   
 #### <a name="to-create-a-sharepoint-project"></a>Per creare un progetto SharePoint  
   
-1.  Nella barra dei menu, scegliere **File** > **New** > **progetto** per visualizzare il **nuovo progetto** nella finestra di dialogo.  
+1. Nella barra dei menu, scegliere **File** > **New** > **progetto** per visualizzare il **nuovo progetto** nella finestra di dialogo.  
   
-2.  Espandere la **SharePoint** nodo sotto **Visual c#** o **Visual Basic**, quindi scegliere il **2010** nodo.  
+2. Espandere la **SharePoint** nodo sotto **Visual c#** o **Visual Basic**, quindi scegliere il **2010** nodo.  
   
-3.  Nel riquadro Modelli scegliere il **progetto SharePoint 2010** modello.  
+3. Nel riquadro Modelli scegliere il **progetto SharePoint 2010** modello.  
   
-4.  Nel **Name** casella, immettere **ProfileTest**e quindi scegliere il **OK** pulsante.  
+4. Nel **Name** casella, immettere **ProfileTest**e quindi scegliere il **OK** pulsante.  
   
-     Il **Personalizzazione guidata SharePoint** viene visualizzata.  
+    Il **Personalizzazione guidata SharePoint** viene visualizzata.  
   
-5.  Nel **specificare il livello di sito e la sicurezza per il debug** pagina, immettere l'URL per il sito di SharePoint server in cui si desidera eseguire il debug della definizione di sito o utilizzare il percorso predefinito (http://*il nome del sistema*/) .  
+5. Nel **specificare il livello di sito e la sicurezza per il debug** pagina, immettere l'URL per il sito di SharePoint server in cui si desidera eseguire il debug della definizione di sito o utilizzare il percorso predefinito (http://<em>il nome del sistema</em>/) .  
   
-6.  Nel **qual è il livello di attendibilità per la soluzione SharePoint?** keychains le **Distribuisci come soluzione farm** pulsante di opzione.  
+6. Nel **qual è il livello di attendibilità per la soluzione SharePoint?** keychains le **Distribuisci come soluzione farm** pulsante di opzione.  
   
-     Attualmente, è possibile profilare solo soluzioni farm. Per altre informazioni sulle soluzioni create mediante sandbox e soluzioni farm, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).  
+    Attualmente, è possibile profilare solo soluzioni farm. Per altre informazioni sulle soluzioni create mediante sandbox e soluzioni farm, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Scegliere il **fine** pulsante. Il progetto viene visualizzato nella **Esplora soluzioni**.  
+7. Scegliere il **fine** pulsante. Il progetto viene visualizzato nella **Esplora soluzioni**.  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Aggiungere una funzionalità e un ricevitore di eventi
  Successivamente, aggiungere una funzionalità al progetto insieme a un ricevitore di eventi per la funzionalità. In questo ricevitore di eventi sarà incluso il codice da profilare.  

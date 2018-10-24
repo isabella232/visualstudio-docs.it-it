@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8157e10ccc79df3caea8257d46753f2993501e5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812284"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Individuazione di perdite di memoria tramite la libreria CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,21 +112,21 @@ Object dump complete.
   
  Che `_CRTDBG_MAP_ALLOC` sia stato o meno definito, nel report delle perdite di memoria verranno visualizzate le informazioni seguenti:  
   
--   Numero di allocazione della memoria, che in questo esempio è `18`  
+- Numero di allocazione della memoria, che in questo esempio è `18`  
   
--   [Tipo di blocco](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)che in questo esempio è `normal` .  
+- [Tipo di blocco](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)che in questo esempio è `normal` .  
   
--   Posizione esadecimale della memoria che in questo esempio è `0x00780E80` .  
+- Posizione esadecimale della memoria che in questo esempio è `0x00780E80` .  
   
--   Dimensioni del blocco, `64 bytes` in questo esempio.  
+- Dimensioni del blocco, `64 bytes` in questo esempio.  
   
--   I primi 16 byte di dati nel blocco, in formato esadecimale.  
+- I primi 16 byte di dati nel blocco, in formato esadecimale.  
   
- Il report delle perdite di memoria identifica un blocco di memoria come normale, client o CRT. Un *blocco normale* è dato da memoria ordinaria allocata dal programma. Un *blocco client* è un tipo speciale di blocco di memoria usato dai programmi MFC per oggetti che richiedono un distruttore. L'operazione MFC `new` crea un blocco normale o un blocco client, a seconda dell'oggetto creato. Un *blocco CRT* è allocato dalla libreria CRT per il proprio uso. La deallocazione di questi blocchi è gestita dalla libreria CRT. È quindi improbabile che vengano indicati nel report delle perdite di memoria, a meno il problema non sia davvero serio, ad esempio la libreria CRT è danneggiata.  
+  Il report delle perdite di memoria identifica un blocco di memoria come normale, client o CRT. Un *blocco normale* è dato da memoria ordinaria allocata dal programma. Un *blocco client* è un tipo speciale di blocco di memoria usato dai programmi MFC per oggetti che richiedono un distruttore. L'operazione MFC `new` crea un blocco normale o un blocco client, a seconda dell'oggetto creato. Un *blocco CRT* è allocato dalla libreria CRT per il proprio uso. La deallocazione di questi blocchi è gestita dalla libreria CRT. È quindi improbabile che vengano indicati nel report delle perdite di memoria, a meno il problema non sia davvero serio, ad esempio la libreria CRT è danneggiata.  
   
- Esistono altri due tipi di blocchi di memoria che non compaiono mai nei report delle perdite di memoria. Un *blocco libero* è dato da memoria rilasciata. Per definizione non si tratta quindi di perdita. Un *blocco da ignorare* è dato da memoria che è stata esplicitamente contrassegnata per essere esclusa dal report delle perdite di memoria.  
+  Esistono altri due tipi di blocchi di memoria che non compaiono mai nei report delle perdite di memoria. Un *blocco libero* è dato da memoria rilasciata. Per definizione non si tratta quindi di perdita. Un *blocco da ignorare* è dato da memoria che è stata esplicitamente contrassegnata per essere esclusa dal report delle perdite di memoria.  
   
- Queste tecniche sono appropriate per la memoria allocata tramite la funzione `malloc` CRT standard. Se la memoria usando C++ viene allocata `new` operatore, tuttavia, ne verrà visualizzato solo il numero di file e righe in cui l'implementazione dell'oggetto globale `operator new` chiamate `_malloc_dbg` nel report delle perdite di memoria. Poiché questo comportamento non è molto utile, è possibile modificarlo per segnalare la riga che ha effettuato l'allocazione tramite una macro che si presenta come segue: 
+  Queste tecniche sono appropriate per la memoria allocata tramite la funzione `malloc` CRT standard. Se la memoria usando C++ viene allocata `new` operatore, tuttavia, ne verrà visualizzato solo il numero di file e righe in cui l'implementazione dell'oggetto globale `operator new` chiamate `_malloc_dbg` nel report delle perdite di memoria. Poiché questo comportamento non è molto utile, è possibile modificarlo per segnalare la riga che ha effettuato l'allocazione tramite una macro che si presenta come segue: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -188,25 +188,25 @@ Ciò indica che l'allocazione persa era nella riga 20 di debug_new.cpp.
   
 #### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>Per impostare un punto di interruzione dell'allocazione di memoria usando la finestra Espressioni di controllo  
   
-1.  Impostare un punto di interruzione in prossimità dell'inizio dell'applicazione, quindi avviare l'applicazione.  
+1. Impostare un punto di interruzione in prossimità dell'inizio dell'applicazione, quindi avviare l'applicazione.  
   
-2.  Quando l'applicazione si interrompe al punto di interruzione, viene visualizzata la finestra **Espressioni di controllo** .  
+2. Quando l'applicazione si interrompe al punto di interruzione, viene visualizzata la finestra **Espressioni di controllo** .  
   
-3.  Nel **Watch** finestra, digitare `_crtBreakAlloc` nel **nome** colonna.  
+3. Nel **Watch** finestra, digitare `_crtBreakAlloc` nel **nome** colonna.  
   
-     Se si usa la versione DLL multithread della libreria CRT (opzione /MD), includere l'operatore di contesto `{,,ucrtbased.dll}_crtBreakAlloc`  
+    Se si usa la versione DLL multithread della libreria CRT (opzione /MD), includere l'operatore di contesto `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4.  Premere **INVIO**.  
+4. Premere **INVIO**.  
   
-     Il debugger valuterà la chiamata e ne visualizzerà il risultato nella colonna **Valore** . Questo valore sarà –1 se non è stato impostato alcun punto di interruzione su allocazioni di memoria.  
+    Il debugger valuterà la chiamata e ne visualizzerà il risultato nella colonna **Valore** . Questo valore sarà –1 se non è stato impostato alcun punto di interruzione su allocazioni di memoria.  
   
-5.  Nella colonna **Valore** sostituire il valore visualizzato con il numero di allocazione della memoria in corrispondenza del quale si vuole effettuare l'interruzione.  
+5. Nella colonna **Valore** sostituire il valore visualizzato con il numero di allocazione della memoria in corrispondenza del quale si vuole effettuare l'interruzione.  
   
- Dopo avere impostato un punto di interruzione su un numero di allocazione della memoria, è possibile continuare con il debug. Fare attenzione a eseguire il programma nelle stesse condizioni dell'esecuzione precedente, in modo che l'ordine di allocazione della memoria non venga modificato. Quando il programma si interrompe all'allocazione di memoria specificata, è possibile usare la finestra **Stack di chiamate** e altre finestre del debugger per determinare in quali condizioni è stata allocata la memoria. È quindi possibile continuare l'esecuzione per osservare ciò che accade all'oggetto e determinare perché la relativa deallocazione non avviene correttamente.  
+   Dopo avere impostato un punto di interruzione su un numero di allocazione della memoria, è possibile continuare con il debug. Fare attenzione a eseguire il programma nelle stesse condizioni dell'esecuzione precedente, in modo che l'ordine di allocazione della memoria non venga modificato. Quando il programma si interrompe all'allocazione di memoria specificata, è possibile usare la finestra **Stack di chiamate** e altre finestre del debugger per determinare in quali condizioni è stata allocata la memoria. È quindi possibile continuare l'esecuzione per osservare ciò che accade all'oggetto e determinare perché la relativa deallocazione non avviene correttamente.  
   
- Anche l'impostazione di un punto di interruzione dei dati sull'oggetto può essere utile. Per altre informazioni, vedere [Using Breakpoints](../debugger/using-breakpoints.md).  
+   Anche l'impostazione di un punto di interruzione dei dati sull'oggetto può essere utile. Per altre informazioni, vedere [Using Breakpoints](../debugger/using-breakpoints.md).  
   
- È anche possibile impostare i punti di interruzione dell'allocazione di memoria nel codice. Questo risultato può essere raggiunto in due modi:  
+   È anche possibile impostare i punti di interruzione dell'allocazione di memoria nel codice. Questo risultato può essere raggiunto in due modi:  
   
 ```  
 _crtBreakAlloc = 18;  

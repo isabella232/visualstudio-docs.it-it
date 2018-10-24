@@ -65,12 +65,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838686"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Scrittura di codice nell'Editor di testo e del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,19 +146,19 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 
  Per nascondere la barra di navigazione, modificare l'opzione **Barra di navigazione** nelle impostazioni Tutti i linguaggi dell'editor di testo (**Strumenti/Opzioni/Editor di testo/Tutti i linguaggi**oppure modificare le impostazioni per i singoli linguaggi). È possibile spostarsi tra le caselle a discesa come segue:  
 
--   Per spostare lo stato attivo dalla finestra del codice alla barra di spostamento, premere la combinazione di tasti di scelta rapida CTRL+F2.  
+- Per spostare lo stato attivo dalla finestra del codice alla barra di spostamento, premere la combinazione di tasti di scelta rapida CTRL+F2.  
 
--   Per ripristinare lo stato attivo dalla barra di spostamento alla finestra del codice, premere ESC.  
+- Per ripristinare lo stato attivo dalla barra di spostamento alla finestra del codice, premere ESC.  
 
--   Per spostare lo stato attivo da un elemento a un elemento nella barra di spostamento, premere TAB.  
+- Per spostare lo stato attivo da un elemento a un elemento nella barra di spostamento, premere TAB.  
 
--   Per selezionare l'elemento della barra di navigazione con stato attivo e tornare all'IDE, premere INVIO.  
+- Per selezionare l'elemento della barra di navigazione con stato attivo e tornare all'IDE, premere INVIO.  
 
--   Per spostarsi in una classe o in un tipo, fare clic sul nome nell'elenco a discesa a sinistra.  
+- Per spostarsi in una classe o in un tipo, fare clic sul nome nell'elenco a discesa a sinistra.  
 
--   Per passare direttamente a una procedura in una classe, fare clic su una procedura nell'elenco a discesa a destra.  
+- Per passare direttamente a una procedura in una classe, fare clic su una procedura nell'elenco a discesa a destra.  
 
- In una classe parziale i membri definiti al di fuori del file di codice corrente possono non essere disponibili.  
+  In una classe parziale i membri definiti al di fuori del file di codice corrente possono non essere disponibili.  
 
 ## <a name="find-code-using-navigate-to"></a>Trovare codice con Passa a
 "Passa a" comando Visual Studio consente di eseguire una ricerca mirata del codice che consentono di trovare rapidamente gli elementi specificati nel file di codice, percorsi di file e i simboli del codice. A differenza di altri strumenti di ricerca nel testo, ad esempio Trova o Cerca nei file, Passa a limita la ricerca alle aree in cui si trova il codice effettivo, ad esempio file, form e moduli di codice. Se ad esempio si cerca una stringa in un'applicazione Web ASP.NET usando Trova o Cerca nei file nell'intera soluzione, si potrebbero ottenere diversi risultati, incluse istanze della stringa nelle note sul codice. Con passa a, tuttavia, si potrebbe ottengono solo una singola funzione, ignorando tutte le istanze della stringa nei commenti del codice.

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3525cb3f983495cc11403c1fcb419de43c5059
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 59ec7e9df4088c21820fa5fec319ab3e4ac10f78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853259"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > ActivityDesigner
 
@@ -38,7 +38,7 @@ Il **ExistsInCollection\<T >** ActivityDesigner può essere trascinato dal **cas
 La tabella seguente illustra il <xref:System.Activities.Statements.ExistsInCollection%601> proprietà e viene descritto come usarle nella finestra di progettazione:
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo dell'attività <xref:System.Activities.Statements.ExistsInCollection%601>. L'impostazione predefinita è ExistsInCollection < Int32\>. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|L'elemento da cercare nella raccolta\<T >. Questo elemento è di tipo *T*, che è di tipo *TypeArgument*. Per specificare l'elemento, digitare un'espressione Visual Basic nella griglia delle proprietà.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Raccolta in cui si desidera controllare se l'elemento esiste. Questa raccolta è di tipo **ICollection < TypeArgument\>.** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|

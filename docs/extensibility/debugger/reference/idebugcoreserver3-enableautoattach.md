@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach | Documenti Microsoft
+title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf32eb5d8771f95ec155a93d1fe1e770e0cc2d52
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e5fc3ab0767a7077860c82acefc9554ba1228cee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831120"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Consente l'associazione automatica per i motori di debug specificata.  
+Consente l'associazione automatica per i motori di debug specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -53,16 +53,16 @@ int EnableAutoAttach(
  [in] Il numero di motori specificato in `rgguidSpecificEngines`.  
   
  `pszStartPageUrl`  
- [in] L'URL inizia da utilizzare quando ci si connette automaticamente.  
+ [in] URL iniziale da usare quando ci si collega automaticamente.  
   
  `pbstrSessionID`  
- [out] ID della sessione che è stato collegato automaticamente.  
+ [out] ID della sessione che è stata collegata automaticamente.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Un codice di errore `E_AUTO_ATTACH_NOT_REGISTERED`, che indica che la class factory auto-attach non è stata registrata.  
   
 ## <a name="remarks"></a>Note  
- Quando viene avviato un programma associato all'URL specificato, i motori di debug specificata vengono automaticamente avviati e collegati.  
+ Quando viene avviato un programma associato all'URL specificato, i motori di debug specificato vengono automaticamente avviati e collegati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

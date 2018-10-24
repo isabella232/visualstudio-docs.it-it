@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::CanTerminateProcess | Documenti Microsoft
+title: IDebugEngineLaunch2::CanTerminateProcess | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b6dcbb10b4d188ac3a5e59cfccf9f1150b3cd00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de1fece83161b70a3df6d8faed358ca2d22cd232
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829898"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 Determina se un processo può essere terminato.  
@@ -41,13 +41,13 @@ int CanTerminateProcess (
   
 #### <a name="parameters"></a>Parametri  
  `pProcess`  
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo da terminare.  
+ [in] Un' [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo da terminare.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `S_FALSE` se il motore non può terminare il processo, ad esempio, perché l'accesso è negato.  
   
 ## <a name="remarks"></a>Note  
- Se questo metodo restituisce `S_OK`, quindi il [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) metodo può essere chiamato per effettivamente terminare il processo.  
+ Se questo metodo restituisce `S_OK`, quindi, il [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) metodo può essere chiamato per terminare effettivamente il processo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   

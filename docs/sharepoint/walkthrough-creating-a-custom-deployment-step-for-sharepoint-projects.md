@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e5c5856217951d15042f07edb97a918e09ba777
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f42433b4ec79138e60b11e6380a6b709e74bacd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812843"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procedura dettagliata: Creare un passaggio di distribuzione personalizzato per progetti SharePoint
   Quando si distribuisce un progetto SharePoint, Visual Studio esegue una serie di passaggi di distribuzione in un ordine specifico. Visual Studio include numerosi passaggi di distribuzione predefinite, ma è anche possibile creare una propria.  
@@ -45,28 +45,28 @@ ms.locfileid: "42635026"
 ## <a name="prerequisites"></a>Prerequisiti  
  Sono necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:  
   
--   Edizioni supportate di Windows, SharePoint e Visual Studio.
+- Edizioni supportate di Windows, SharePoint e Visual Studio.
   
--   Visual Studio SDK. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'estensione. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'estensione. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
+  Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
   
--   Usando il modello a oggetti server per SharePoint. Per altre informazioni, vedere [usando il modello a oggetti lato Server SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Usando il modello a oggetti server per SharePoint. Per altre informazioni, vedere [usando il modello a oggetti lato Server SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Soluzioni di SharePoint. Per altre informazioni, vedere [panoramica delle soluzioni](http://go.microsoft.com/fwlink/?LinkId=169422).  
+- Soluzioni di SharePoint. Per altre informazioni, vedere [panoramica delle soluzioni](http://go.microsoft.com/fwlink/?LinkId=169422).  
   
--   Aggiornamento delle soluzioni di SharePoint. Per altre informazioni, vedere [l'aggiornamento di una soluzione](http://go.microsoft.com/fwlink/?LinkId=177802).  
+- Aggiornamento delle soluzioni di SharePoint. Per altre informazioni, vedere [l'aggiornamento di una soluzione](http://go.microsoft.com/fwlink/?LinkId=177802).  
   
 ## <a name="create-the-projects"></a>Creare i progetti
  Per completare questa procedura dettagliata, è necessario creare tre progetti:  
   
--   Un progetto VSIX per creare il pacchetto VSIX per distribuire l'estensione.  
+- Un progetto VSIX per creare il pacchetto VSIX per distribuire l'estensione.  
   
--   Un progetto libreria di classi che implementa l'estensione. Questo progetto deve avere come destinazione .NET Framework 4.5.  
+- Un progetto libreria di classi che implementa l'estensione. Questo progetto deve avere come destinazione .NET Framework 4.5.  
   
--   Un progetto libreria di classi che definisce i comandi di SharePoint personalizzati. Questo progetto deve avere come destinazione .NET Framework 3.5.  
+- Un progetto libreria di classi che definisce i comandi di SharePoint personalizzati. Questo progetto deve avere come destinazione .NET Framework 3.5.  
   
- Avviare la procedura dettagliata mediante la creazione di progetti.  
+  Avviare la procedura dettagliata mediante la creazione di progetti.  
   
 #### <a name="to-create-the-vsix-project"></a>Per creare il progetto VSIX  
   
@@ -250,28 +250,28 @@ ms.locfileid: "42635026"
   
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>Per creare un progetto SharePoint con una definizione di elenco e un'istanza di elenco  
   
-1.  Nell'istanza sperimentale di Visual Studio, sulla barra dei menu, scegliere **File** > **New** > **progetto**.  
+1. Nell'istanza sperimentale di Visual Studio, sulla barra dei menu, scegliere **File** > **New** > **progetto**.  
   
-2.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** nodo o la **Visual Basic** nodo, espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.  
+2. Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** nodo o la **Visual Basic** nodo, espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.  
   
-3.  Nella parte superiore della finestra di dialogo, verificare che **.NET Framework 3.5** visualizzato nell'elenco delle versioni di .NET Framework.  
+3. Nella parte superiore della finestra di dialogo, verificare che **.NET Framework 3.5** visualizzato nell'elenco delle versioni di .NET Framework.  
   
-     Per i progetti [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] necessaria questa versione di .NET Framework.  
+    Per i progetti [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] necessaria questa versione di .NET Framework.  
   
-4.  Nell'elenco dei modelli di progetto, scegliere **progetto SharePoint 2010**, denominare il progetto **EmployeesListDefinition**, quindi scegliere il **OK** pulsante.  
+4. Nell'elenco dei modelli di progetto, scegliere **progetto SharePoint 2010**, denominare il progetto **EmployeesListDefinition**, quindi scegliere il **OK** pulsante.  
   
-5.  Nel **Personalizzazione guidata SharePoint**, immettere l'URL del sito che si desidera utilizzare per il debug.  
+5. Nel **Personalizzazione guidata SharePoint**, immettere l'URL del sito che si desidera utilizzare per il debug.  
   
-6.  Sotto **qual è il livello di attendibilità per questa soluzione di SharePoint**, scegliere il **Distribuisci come soluzione farm** pulsante di opzione.  
+6. Sotto **qual è il livello di attendibilità per questa soluzione di SharePoint**, scegliere il **Distribuisci come soluzione farm** pulsante di opzione.  
   
-    > [!NOTE]  
-    >  Il passaggio di distribuzione di aggiornamento non supporta soluzioni create mediante sandbox.  
+   > [!NOTE]  
+   >  Il passaggio di distribuzione di aggiornamento non supporta soluzioni create mediante sandbox.  
   
-7.  Scegliere il **fine** pulsante.  
+7. Scegliere il **fine** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il progetto EmployeesListDefinition.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il progetto EmployeesListDefinition.  
   
-8.  Aprire il menu di scelta rapida per il progetto EmployeesListDefinition, scegliere **Add**, quindi scegliere **nuovo elemento**.  
+8. Aprire il menu di scelta rapida per il progetto EmployeesListDefinition, scegliere **Add**, quindi scegliere **nuovo elemento**.  
   
 9. Nel **Aggiungi nuovo elemento - EmployeesListDefinition** finestra di dialogo espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.  
   
@@ -281,13 +281,13 @@ ms.locfileid: "42635026"
   
 11. Nel **scegliere le impostazioni dell'elenco** pagina, verificare le impostazioni seguenti e quindi scegliere il **fine** pulsante:  
   
-    1.  **Elenco di dipendenti** viene visualizzato nei **quale nome si desidera visualizzare per l'elenco?** casella.  
+    1. **Elenco di dipendenti** viene visualizzato nei **quale nome si desidera visualizzare per l'elenco?** casella.  
   
-    2.  Il **creare un elenco personalizzabile basato su:** viene scelto il pulsante di opzione.  
+    2. Il **creare un elenco personalizzabile basato su:** viene scelto il pulsante di opzione.  
   
-    3.  **Predefinito (vuoto)** viene scelto nel **creare un elenco personalizzabile basato su:** elenco.  
+    3. **Predefinito (vuoto)** viene scelto nel **creare un elenco personalizzabile basato su:** elenco.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea l'elemento dell'elenco di dipendenti con una colonna del titolo e una singola istanza vuota e verrà visualizzata la finestra di progettazione di elenco.  
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea l'elemento dell'elenco di dipendenti con una colonna del titolo e una singola istanza vuota e verrà visualizzata la finestra di progettazione di elenco.  
   
 12. Nella finestra di progettazione di elenco nel **colonne** scheda, scegliere il **digitare un nome di colonna nuovo o esistente** riga e quindi aggiungere le colonne seguenti nel **nome visualizzato colonna** elenco:  
   
@@ -419,29 +419,29 @@ ms.locfileid: "42635026"
   
 #### <a name="to-test-the-upgrade-deployment-step"></a>Per testare il passaggio di distribuzione di aggiornamento  
   
-1.  Nell'istanza sperimentale di Visual Studio, in **Esplora soluzioni**, aprire il menu di scelta rapida per il **EmployeesListDefinition** nodo del progetto e quindi scegliere **proprietà**.  
+1. Nell'istanza sperimentale di Visual Studio, in **Esplora soluzioni**, aprire il menu di scelta rapida per il **EmployeesListDefinition** nodo del progetto e quindi scegliere **proprietà**.  
   
-     Verrà visualizzata la finestra di proprietà dell'Editor/finestra di progettazione.  
+    Verrà visualizzata la finestra di proprietà dell'Editor/finestra di progettazione.  
   
-2.  Nel **SharePoint** scheda, impostare il **configurazione distribuzione attiva** proprietà **aggiornamento**.  
+2. Nel **SharePoint** scheda, impostare il **configurazione distribuzione attiva** proprietà **aggiornamento**.  
   
-     Questa configurazione di distribuzione personalizzato include il nuovo passaggio di distribuzione dell'aggiornamento.  
+    Questa configurazione di distribuzione personalizzato include il nuovo passaggio di distribuzione dell'aggiornamento.  
   
-3.  Aprire il menu di scelta rapida per il **elenco di dipendenti** dell'elemento di progetto e quindi scegliere **proprietà** oppure **Open**.  
+3. Aprire il menu di scelta rapida per il **elenco di dipendenti** dell'elemento di progetto e quindi scegliere **proprietà** oppure **Open**.  
   
-     Verrà visualizzata la finestra di proprietà dell'Editor/finestra di progettazione.  
+    Verrà visualizzata la finestra di proprietà dell'Editor/finestra di progettazione.  
   
-4.  Nel **viste** scheda, scegliere il **posta elettronica** colonna e quindi scegliere il **<** per spostare la colonna dalla chiave il **colonneselezionate**elencati per il **colonne disponibili** elenco.  
+4. Nel **viste** scheda, scegliere il **posta elettronica** colonna e quindi scegliere il **<** per spostare la colonna dalla chiave il **colonneselezionate**elencati per il **colonne disponibili** elenco.  
   
-     Questa azione rimuove questi campi dalla visualizzazione predefinita della **dipendenti** elenco nel sito di SharePoint.  
+    Questa azione rimuove questi campi dalla visualizzazione predefinita della **dipendenti** elenco nel sito di SharePoint.  
   
-5.  Avviare il debug scegliendo il **F5** chiave o, nella barra dei menu, scegliendo **Debug** > **Avvia debug**.  
+5. Avviare il debug scegliendo il **F5** chiave o, nella barra dei menu, scegliendo **Debug** > **Avvia debug**.  
   
-6.  Verificare che il codice in altra istanza di Visual Studio si arresta nel punto di interruzione impostato in precedenza nel `CanExecute` (metodo).  
+6. Verificare che il codice in altra istanza di Visual Studio si arresta nel punto di interruzione impostato in precedenza nel `CanExecute` (metodo).  
   
-7.  Scegliere il **F5** chiave nuovo o, nella barra dei menu, scegliere **Debug** > **continua**.  
+7. Scegliere il **F5** chiave nuovo o, nella barra dei menu, scegliere **Debug** > **continua**.  
   
-8.  Verificare che il codice si interrompe al punto di interruzione impostato in precedenza nel `Execute` (metodo).  
+8. Verificare che il codice si interrompe al punto di interruzione impostato in precedenza nel `Execute` (metodo).  
   
 9. Scegliere il **F5** chiave alternativa, sulla barra dei menu, scegliere **Debug** > **continua** un'ultima volta.  
   
@@ -449,11 +449,11 @@ ms.locfileid: "42635026"
   
 10. Nel **sono elencati** sezione nell'area avvio veloce, scegliere il **dipendenti** elencare e verificare i dettagli seguenti:  
   
-    -   L'elemento che sono stati aggiunti manualmente in precedenza (per Andy, la gestione di strutture) è ancora presente nell'elenco.  
+    - L'elemento che sono stati aggiunti manualmente in precedenza (per Andy, la gestione di strutture) è ancora presente nell'elenco.  
   
-    -   Il **telefono dell'ufficio** e **indirizzo di posta elettronica** colonne non vengono visualizzati in questa visualizzazione dell'elenco.  
+    - Il **telefono dell'ufficio** e **indirizzo di posta elettronica** colonne non vengono visualizzati in questa visualizzazione dell'elenco.  
   
-     Il **aggiornare** Modifica configurazione distribuzione esistente **dipendenti** istanza di elenco nel sito di SharePoint. Se è stato usato il **predefinito** configurazione della distribuzione anziché il **aggiornare** configurazione, si potrebbe verificarsi un conflitto di distribuzione. Visual Studio potrebbe risolvere il conflitto, sostituendo il **dipendenti** elenco e della voce di Andy, la gestione di strutture, verranno eliminati.  
+      Il **aggiornare** Modifica configurazione distribuzione esistente **dipendenti** istanza di elenco nel sito di SharePoint. Se è stato usato il **predefinito** configurazione della distribuzione anziché il **aggiornare** configurazione, si potrebbe verificarsi un conflitto di distribuzione. Visual Studio potrebbe risolvere il conflitto, sostituendo il **dipendenti** elenco e della voce di Andy, la gestione di strutture, verranno eliminati.  
   
 ## <a name="clean-up-the-development-computer"></a>Pulire il computer di sviluppo
  Dopo aver completato il passaggio di distribuzione dell'aggiornamento di test, rimuovere l'istanza e la definizione di elenco dal sito di SharePoint e rimuovere l'estensione di passaggio di distribuzione da Visual Studio.  

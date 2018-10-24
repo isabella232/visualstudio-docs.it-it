@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::Clone | Documenti Microsoft
+title: Idiaenumdebugstreams | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd9c9f8cfe37cf54181fc9c76b450846c12d5b41
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6247e36ecc34c016cf4b976664f14d6e3fb5bb80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836132"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
-Crea un enumeratore che contiene lo stesso stato di enumerazione come enumerazione corrente.  
+Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>Parametri  
  `ppenum`  
- [out] Restituisce un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) oggetto che contiene un duplicato dell'enumeratore. I flussi non vengono duplicati, solo l'enumeratore.  
+ [out] Restituisce un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) oggetto che contiene un duplicato dell'enumeratore. I flussi non vengano duplicati, solo l'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

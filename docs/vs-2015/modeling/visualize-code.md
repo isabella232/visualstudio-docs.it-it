@@ -18,29 +18,29 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82ce653eda1ec074f050809845610fbc1ab1bc0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833657"
 ---
 # <a name="visualize-code"></a>Visualizzare il codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare gli strumenti di visualizzazione e modellazione di Visual Studio per comprendere più facilmente il codice esistente e descrivere l'applicazione. In questo modo è possibile avere un'indicazione visiva dell'impatto che le modifiche potrebbero avere sul codice e valutare il lavoro e i rischi risultanti da tali modifiche. Ad esempio:  
   
--   Per comprendere le relazioni nel codice, eseguire visivamente il mapping di tali relazioni.  
+- Per comprendere le relazioni nel codice, eseguire visivamente il mapping di tali relazioni.  
   
--   Per descrivere l'architettura del sistema e mantenere il codice coerente con la progettazione, creare diagrammi livello e convalidare codice rispetto a questi diagrammi.  
+- Per descrivere l'architettura del sistema e mantenere il codice coerente con la progettazione, creare diagrammi livello e convalidare codice rispetto a questi diagrammi.  
   
--   Per descrivere le strutture delle classi, creare diagrammi classi.  
+- Per descrivere le strutture delle classi, creare diagrammi classi.  
   
--   Per modellare e comunicare i vari aspetti del sistema, creare diagrammi UML (Unified Modeling Language). Ad esempio, è possibile modellare componenti, tipi, interazioni e processi di un sistema.  
+- Per modellare e comunicare i vari aspetti del sistema, creare diagrammi UML (Unified Modeling Language). Ad esempio, è possibile modellare componenti, tipi, interazioni e processi di un sistema.  
   
- Questi strumenti facilitano anche la comunicazione con le persone coinvolte nel progetto. Ad esempio, è possibile usare diagrammi classi UML per creare un glossario comune per discutere il sistema con parti interessate, utenti e membri del team di progetto.  
+  Questi strumenti facilitano anche la comunicazione con le persone coinvolte nel progetto. Ad esempio, è possibile usare diagrammi classi UML per creare un glossario comune per discutere il sistema con parti interessate, utenti e membri del team di progetto.  
   
- Per individuare le versioni di Visual Studio che supportano le singole funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
+  Per individuare le versioni di Visual Studio che supportano le singole funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
 ## <a name="what-do-you-want-to-do"></a>Selezionare l'operazione da eseguire.  
   

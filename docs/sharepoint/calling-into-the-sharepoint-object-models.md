@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36cbcf01a7e070ab88230e0cd0165db935944a59
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3afb988b226ccf62fae92ab02d8380d20b19605b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853431"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Chiamare i modelli a oggetti SharePoint
   Quando si creano estensioni per gli strumenti di SharePoint in Visual Studio, è necessario chiamare APIs di SharePoint per eseguire determinate attività. Ad esempio, se si crea un passaggio di distribuzione personalizzato per progetti SharePoint, potrebbe essere necessario chiamare APIs per eseguire alcune attività per distribuire soluzioni di SharePoint.  
@@ -37,11 +37,11 @@ ms.locfileid: "36326745"
   
  Tuttavia, il modello a oggetti client presenta due svantaggi nel contesto delle estensioni di strumenti di SharePoint:  
   
--   Il modello a oggetti client fornisce solo un subset del modello a oggetti server. Se è necessario usare le funzionalità di SharePoint che non sono esposta nel modello a oggetti client, è necessario usare il modello a oggetti server.  
+- Il modello a oggetti client fornisce solo un subset del modello a oggetti server. Se è necessario usare le funzionalità di SharePoint che non sono esposta nel modello a oggetti client, è necessario usare il modello a oggetti server.  
   
--   Usando il modello a oggetti client nelle estensioni di strumenti di SharePoint deve funzionare nella maggior parte dei casi, si potrebbero verificarsi alcuni scenari in cui le chiamate al modello a oggetti client non funzionano come previsto. Il modello a oggetti client è progettato per essere utilizzato nelle applicazioni client per effettuare chiamate nei siti di SharePoint su un server remoto o una farm. Gli strumenti di SharePoint in Visual Studio funzionano solo con un'installazione di SharePoint locale nel computer di sviluppo. Pertanto, quando si usa il modello a oggetti client in un'estensione degli strumenti di SharePoint, chiamare in un sito di SharePoint nel computer locale, ovvero non modo in cui il modello a oggetti client è stato progettato per essere utilizzato.  
+- Usando il modello a oggetti client nelle estensioni di strumenti di SharePoint deve funzionare nella maggior parte dei casi, si potrebbero verificarsi alcuni scenari in cui le chiamate al modello a oggetti client non funzionano come previsto. Il modello a oggetti client è progettato per essere utilizzato nelle applicazioni client per effettuare chiamate nei siti di SharePoint su un server remoto o una farm. Gli strumenti di SharePoint in Visual Studio funzionano solo con un'installazione di SharePoint locale nel computer di sviluppo. Pertanto, quando si usa il modello a oggetti client in un'estensione degli strumenti di SharePoint, chiamare in un sito di SharePoint nel computer locale, ovvero non modo in cui il modello a oggetti client è stato progettato per essere utilizzato.  
   
- Per una procedura dettagliata che illustra come usare il modello a oggetti client in un'estensione degli strumenti di SharePoint in Visual Studio, vedere [procedura dettagliata: chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+  Per una procedura dettagliata che illustra come usare il modello a oggetti client in un'estensione degli strumenti di SharePoint in Visual Studio, vedere [procedura dettagliata: chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="use-the-server-object-model-in-extension-projects"></a>Usare il modello a oggetti server nei progetti di estensione
  Il modello a oggetti server è un superset del modello a oggetti client. Quando si usa il modello a oggetti server, è possibile usare tutte le funzionalità che [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] espongono a livello di codice.  

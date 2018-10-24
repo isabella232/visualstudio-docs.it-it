@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e832088c49366cee3cb2a4f45df7a1250171e7df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849528"
 ---
 # <a name="thread-details-view---contention-data"></a>Visualizzazione Dettagli thread: dati sui conflitti
 La visualizzazione Dettagli thread presenta un grafico della sequenza temporale degli eventi di blocco nel thread selezionato di un'esecuzione della profilatura causati da conflitti relativi alle risorse. Si verifica un evento di blocco quando il thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso a una risorsa.  
@@ -46,9 +46,9 @@ La visualizzazione Dettagli thread presenta un grafico della sequenza temporale 
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Per visualizzare o modificare il codice sorgente di una funzione nello stack di chiamate  
   
--   Nella finestra **Stack di chiamate** fare clic sul nome della funzione.  
+- Nella finestra **Stack di chiamate** fare clic sul nome della funzione.  
   
- Il codice sorgente della funzione deve far parte del progetto corrente.  
+  Il codice sorgente della funzione deve far parte del progetto corrente.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Per visualizzare gli eventi di conflitto di una risorsa in tutti i thread nell'esecuzione della profilatura  
   

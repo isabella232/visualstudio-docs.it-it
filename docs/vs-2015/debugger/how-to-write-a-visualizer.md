@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 815c2eba06af4fe50eb9dc87dd158fe1713342ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1243c9d26e25bd76a7e8b3518484671bdd973fb9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841871"
 ---
 # <a name="how-to-write-a-visualizer"></a>Procedura: scrivere un visualizzatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,27 +43,27 @@ ms.locfileid: "49280150"
   
  L'architettura di un visualizzatore del debugger è definita da due parti:  
   
--   Il *lato debugger* viene eseguito all'interno del debugger di Visual Studio. Il codice del lato debugger crea e visualizza l'interfaccia utente del visualizzatore.  
+- Il *lato debugger* viene eseguito all'interno del debugger di Visual Studio. Il codice del lato debugger crea e visualizza l'interfaccia utente del visualizzatore.  
   
--   Il *ritrasferire al lato* viene eseguito all'interno del processo di debug in Visual Studio (il *dell'oggetto del debug*).  
+- Il *ritrasferire al lato* viene eseguito all'interno del processo di debug in Visual Studio (il *dell'oggetto del debug*).  
   
- L'oggetto dati che si desidera visualizzare, ad esempio un oggetto stringa, esiste nel processo dell'oggetto del debug. Di conseguenza, il lato oggetto del debug deve inviare l'oggetto dati al lato debugger, che può quindi visualizzarlo in un'interfaccia utente creata dallo sviluppatore.  
+  L'oggetto dati che si desidera visualizzare, ad esempio un oggetto stringa, esiste nel processo dell'oggetto del debug. Di conseguenza, il lato oggetto del debug deve inviare l'oggetto dati al lato debugger, che può quindi visualizzarlo in un'interfaccia utente creata dallo sviluppatore.  
   
- Il lato debugger riceve questo oggetto dati da visualizzare da un *provider di oggetti* che implementa il <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfaccia. Il lato oggetto del debug invia l'oggetto dati tramite il *origine dell'oggetto*, che deriva da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. Il provider di oggetti può inoltre inviare nuovamente i dati all'origine oggetto consentendo in tal modo di scrivere un visualizzatore che modifica e visualizza i dati. Il provider di oggetti può essere sottoposto a override per comunicare con l'analizzatore di espressioni e, di conseguenza, con l'origine oggetto.  
+  Il lato debugger riceve questo oggetto dati da visualizzare da un *provider di oggetti* che implementa il <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfaccia. Il lato oggetto del debug invia l'oggetto dati tramite il *origine dell'oggetto*, che deriva da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. Il provider di oggetti può inoltre inviare nuovamente i dati all'origine oggetto consentendo in tal modo di scrivere un visualizzatore che modifica e visualizza i dati. Il provider di oggetti può essere sottoposto a override per comunicare con l'analizzatore di espressioni e, di conseguenza, con l'origine oggetto.  
   
- L'oggetto del debug e il lato debugger comunicano tra loro tramite la classe <xref:System.IO.Stream>. Sono disponibili metodi che consentono di serializzare un oggetto dati in un oggetto <xref:System.IO.Stream> e deserializzare l'oggetto <xref:System.IO.Stream> in un oggetto dati.  
+  L'oggetto del debug e il lato debugger comunicano tra loro tramite la classe <xref:System.IO.Stream>. Sono disponibili metodi che consentono di serializzare un oggetto dati in un oggetto <xref:System.IO.Stream> e deserializzare l'oggetto <xref:System.IO.Stream> in un oggetto dati.  
   
- Il codice dell'oggetto del debug viene specificato tramite l'attributo DebuggerVisualizer (<xref:System.Diagnostics.DebuggerVisualizerAttribute>).  
+  Il codice dell'oggetto del debug viene specificato tramite l'attributo DebuggerVisualizer (<xref:System.Diagnostics.DebuggerVisualizerAttribute>).  
   
- Per creare l'interfaccia utente del visualizzatore nel lato debugger, è necessario creare una classe che eredita da <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> ed eseguire l'override del metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> per visualizzare l'interfaccia.  
+  Per creare l'interfaccia utente del visualizzatore nel lato debugger, è necessario creare una classe che eredita da <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> ed eseguire l'override del metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> per visualizzare l'interfaccia.  
   
- È possibile usare <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> per visualizzare Windows Forms, finestre di dialogo e controlli nel visualizzatore.  
+  È possibile usare <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> per visualizzare Windows Forms, finestre di dialogo e controlli nel visualizzatore.  
   
- Il supporto per i tipi generici è limitato. È possibile scrivere un visualizzatore per una destinazione di tipo generico solo quest'ultimo è di tipo aperto. Questa limitazione è identica a quella prevista quando si usa l'attributo `DebuggerTypeProxy`. Per informazioni dettagliate, vedere [usando l'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
+  Il supporto per i tipi generici è limitato. È possibile scrivere un visualizzatore per una destinazione di tipo generico solo quest'ultimo è di tipo aperto. Questa limitazione è identica a quella prevista quando si usa l'attributo `DebuggerTypeProxy`. Per informazioni dettagliate, vedere [usando l'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
   
- Ai visualizzatori personalizzati possono essere associate considerazioni sulla sicurezza. Visualizzare [considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md).  
+  Ai visualizzatori personalizzati possono essere associate considerazioni sulla sicurezza. Visualizzare [considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md).  
   
- Nelle procedure riportate di seguito vengono fornite informazioni generali sulle operazioni da effettuare per creare un visualizzatore. Per una spiegazione più dettagliata, vedere [procedura dettagliata: scrittura di un visualizzatore in c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Nelle procedure riportate di seguito vengono fornite informazioni generali sulle operazioni da effettuare per creare un visualizzatore. Per una spiegazione più dettagliata, vedere [procedura dettagliata: scrittura di un visualizzatore in c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Per creare il lato debugger  
   

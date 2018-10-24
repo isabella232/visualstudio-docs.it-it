@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812946"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definizione di forme e connettori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ Per visualizzare le informazioni su un diagramma in un linguaggio specifico di d
 ##  <a name="shapeTypes"></a> Tipi di base di forme e connettori  
  Un diagramma DSL viene visualizzata una raccolta di *forme* collegate tra esse tramite linee o *connettori*.  In genere, ma non sempre:  
   
--   Le forme sono la rappresentazione visibile di elementi modello.  
+- Le forme sono la rappresentazione visibile di elementi modello.  
   
--   I connettori rappresentano le relazioni di riferimento.  
+- I connettori rappresentano le relazioni di riferimento.  
   
--   Il diagramma rappresenta l'istanza radice del modello.  
+- Il diagramma rappresenta l'istanza radice del modello.  
   
--   Le relazioni di incorporamento tra elementi modello sono mostrate tramite il contenimento. Ad esempio, gli elementi che rappresentano le porte dei componenti sono incorporati nel componente.  
+- Le relazioni di incorporamento tra elementi modello sono mostrate tramite il contenimento. Ad esempio, gli elementi che rappresentano le porte dei componenti sono incorporati nel componente.  
   
- Questi modelli non sono imposti ma sono fortemente supportati. Quando si progetta un DSL, tenere presente che la progettazione delle relazioni di incorporamento deve essere influenzata dal modo in cui si vuole presentare il modello sullo schermo. Al contrario, le relazioni di riferimento devono riflettere i concetti del dominio aziendale.  
+  Questi modelli non sono imposti ma sono fortemente supportati. Quando si progetta un DSL, tenere presente che la progettazione delle relazioni di incorporamento deve essere influenzata dal modo in cui si vuole presentare il modello sullo schermo. Al contrario, le relazioni di riferimento devono riflettere i concetti del dominio aziendale.  
   
- Sono disponibili i tipi di forme seguenti:  
+  Sono disponibili i tipi di forme seguenti:  
   
 |Tipo di forma|Descrizione|  
 |----------------|-----------------|  

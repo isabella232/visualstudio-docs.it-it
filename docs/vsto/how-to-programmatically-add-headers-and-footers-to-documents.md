@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 98f9ed1025c264b4fa7432e2ce397e988e6795f4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: cf8fd8d679760a6758ffb4afb71262a897845e87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849907"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Procedura: aggiungere a livello di codice le intestazioni e piè di pagina ai documenti
   È possibile aggiungere testo alle intestazioni e ai piè di pagina del documento usando la proprietà <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> e la proprietà <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> di <xref:Microsoft.Office.Interop.Word.Section>. Ogni sezione di un documento contiene tre intestazioni e piè di pagina:  
   
--   <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
+- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
   
--   <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterEvenPages>  
+- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterEvenPages>  
   
--   <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterFirstPage>  
+- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterFirstPage>  
   
- Le procedure sono diverse per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.  
+  Le procedure sono diverse per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="document-level-customizations"></a>Personalizzazioni a livello di documento  
  Per usare gli esempi di codice seguenti, eseguirli dalla classe `ThisDocument` nel progetto.  

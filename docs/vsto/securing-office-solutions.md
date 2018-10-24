@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846200"
 ---
 # <a name="secure-office-solutions"></a>Proteggere le soluzioni Office
   Il modello di sicurezza per le soluzioni Office comprende diverse tecnologie: il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], il Centro protezione di Microsoft Office e l'area siti con restrizioni di Internet Explorer. Le sezioni seguenti descrivono il funzionamento delle diverse funzionalità di sicurezza:  
   
--   [Concedere l'attendibilità alle soluzioni Office](#GrantingTrustToSolutions)  
+- [Concedere l'attendibilità alle soluzioni Office](#GrantingTrustToSolutions)  
   
--   [Concedere l'attendibilità ai documenti](#GrantingTrustToDocuments)  
+- [Concedere l'attendibilità ai documenti](#GrantingTrustToDocuments)  
   
--   [Concedere l'attendibilità quando si usa Windows Installer](#GrantingTrustWindowsInstaller)  
+- [Concedere l'attendibilità quando si usa Windows Installer](#GrantingTrustWindowsInstaller)  
   
--   [Considerazioni sulla sicurezza specifiche per le soluzioni Office](#Security)  
+- [Considerazioni sulla sicurezza specifiche per le soluzioni Office](#Security)  
   
--   [Sicurezza durante lo sviluppo](#SecurityDuringDeployment)  
+- [Sicurezza durante lo sviluppo](#SecurityDuringDeployment)  
   
--   [Visual Studio Tools per Office runtime](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio Tools per Office runtime](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> Concedere l'attendibilità alle soluzioni Office  
  La concessione dell'attendibilità alle soluzioni Office prevede la modifica dei criteri di sicurezza di tutti gli utenti finali in modo che la soluzione Office venga considerata attendibile in base alla seguente evidenza:  
   
--   Il certificato usato per firmare il manifesto della distribuzione.  
+- Il certificato usato per firmare il manifesto della distribuzione.  
   
--   L'URL del manifesto della distribuzione.  
+- L'URL del manifesto della distribuzione.  
   
- Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).  
+  Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).  
   
 ##  <a name="GrantingTrustToDocuments"></a> Concedere l'attendibilità ai documenti  
  Una personalizzazione a livello di documento richiede che il documento si trovi in una directory progettata come percorso attendibile. Per altre informazioni, vedere [concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md).  
@@ -65,11 +65,11 @@ ms.locfileid: "49074065"
 ### <a name="document-level-solutions"></a>Soluzioni a livello di documento  
  Il percorso completo di un documento deve essere aggiunto all'elenco di percorsi attendibili nell'applicazione Microsoft Office se si stanno sviluppando i tipi di progetti seguenti:  
   
--   Le soluzioni presenti in una condivisione file di rete, ad esempio a livello di documento  *\\\servername\sharename*.  
+- Le soluzioni presenti in una condivisione file di rete, ad esempio a livello di documento  *\\\servername\sharename*.  
   
--   A livello di documento soluzioni per Word che usano *doc* oppure *docm* file.  
+- A livello di documento soluzioni per Word che usano *doc* oppure *docm* file.  
   
- Includere le sottodirectory quando si aggiunge il percorso del documento all'elenco di percorsi attendibili oppure includere le cartelle di debug e di compilazione specifiche. Per altre informazioni, vedere l'articolo della Guida Online di Microsoft Office [creazione, rimozione o modifica di un percorso attendibile per i file](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+  Includere le sottodirectory quando si aggiunge il percorso del documento all'elenco di percorsi attendibili oppure includere le cartelle di debug e di compilazione specifiche. Per altre informazioni, vedere l'articolo della Guida Online di Microsoft Office [creazione, rimozione o modifica di un percorso attendibile per i file](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Certificati temporanei  
  Se non è disponibile un certificato di firma, Visual Studio crea un certificato temporaneo. Usare questo certificato temporaneo solo durante lo sviluppo e acquistare un certificato ufficiale per la distribuzione.  

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7300af951a50fb463453e83041d0651ac2c62cef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835264"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellare l'applicazione&#39;architettura s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,49 +63,49 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
  Il modello requisiti fornisce queste informazioni essenziali:  
   
--   Interfacce fornite. Un'interfaccia fornita fornisce un elenco dei servizi o operazioni che il sistema o il componente deve fornire ai propri utenti, che siano utenti o altri componenti software.  
+- Interfacce fornite. Un'interfaccia fornita fornisce un elenco dei servizi o operazioni che il sistema o il componente deve fornire ai propri utenti, che siano utenti o altri componenti software.  
   
--   Interfacce necessarie. Un'interfaccia richiesta fornisce un elenco di servizi o operazioni che possono essere usate dal sistema o dal componente. In alcuni casi, sarà possibile progettare tutti questi servizi come parte del proprio sistema. In altri casi, specialmente se si sta sviluppando un componente che può essere combinato con altri componenti in molte configurazioni, l'interfaccia richiesta verrà impostata da considerazioni esterne.  
+- Interfacce necessarie. Un'interfaccia richiesta fornisce un elenco di servizi o operazioni che possono essere usate dal sistema o dal componente. In alcuni casi, sarà possibile progettare tutti questi servizi come parte del proprio sistema. In altri casi, specialmente se si sta sviluppando un componente che può essere combinato con altri componenti in molte configurazioni, l'interfaccia richiesta verrà impostata da considerazioni esterne.  
   
--   Requisiti di qualità del servizio. Le prestazioni, la sicurezza, l'affidabilità e altri obiettivi e vincoli che il sistema deve soddisfare.  
+- Requisiti di qualità del servizio. Le prestazioni, la sicurezza, l'affidabilità e altri obiettivi e vincoli che il sistema deve soddisfare.  
   
- Il modello requisiti viene scritto dal punto di vista degli utenti del sistema, siano essi persone o altri componenti software. Questi non conoscono i meccanismi interni del sistema. Al contrario, l'obiettivo in un modello architettonico è descrivere i meccanismi interni e mostrare come soddisfano le esigenze degli utenti.  
+  Il modello requisiti viene scritto dal punto di vista degli utenti del sistema, siano essi persone o altri componenti software. Questi non conoscono i meccanismi interni del sistema. Al contrario, l'obiettivo in un modello architettonico è descrivere i meccanismi interni e mostrare come soddisfano le esigenze degli utenti.  
   
- Se si mantengono i requisiti e modelli architettonici separati, diventa più semplice illustrare i requisiti con gli utenti. In tal modo vengono agevolati anche il refactoring di progettazione e la considerazione di architetture alternative mentre i requisiti restano invariati.  
+  Se si mantengono i requisiti e modelli architettonici separati, diventa più semplice illustrare i requisiti con gli utenti. In tal modo vengono agevolati anche il refactoring di progettazione e la considerazione di architetture alternative mentre i requisiti restano invariati.  
   
- È possibile separare i requisiti e modelli architettonici in due modi diversi:  
+  È possibile separare i requisiti e modelli architettonici in due modi diversi:  
   
--   È possibile mantenerli nella stessa soluzione ma in progetti diversi. Verranno visualizzati come modelli separati in Esplora modelli UML. Diversi membri del team possono operare in parallelo sui modelli. È possibile creare tipi limitati di traccia tra i modelli.  
+- È possibile mantenerli nella stessa soluzione ma in progetti diversi. Verranno visualizzati come modelli separati in Esplora modelli UML. Diversi membri del team possono operare in parallelo sui modelli. È possibile creare tipi limitati di traccia tra i modelli.  
   
--   Inserirli nello stesso modello UML, ma in pacchetti diversi. In questo modo è più semplice tracciare le dipendenze tra i modelli, ma si impedisce a più persone alla volta l'uso del modello. Inoltre, un modello molto grande richiederà più tempo per il caricamento in Visual Studio. Questo approccio è pertanto meno adatto per progetti di grandi dimensioni.  
+- Inserirli nello stesso modello UML, ma in pacchetti diversi. In questo modo è più semplice tracciare le dipendenze tra i modelli, ma si impedisce a più persone alla volta l'uso del modello. Inoltre, un modello molto grande richiederà più tempo per il caricamento in Visual Studio. Questo approccio è pertanto meno adatto per progetti di grandi dimensioni.  
   
- La quantità di dettagli che devono essere inseriti in un modello di requisiti o architettonico dipende dalla scala del progetto e dalle dimensioni e dalla distribuzione del team. Un piccolo team su un progetto breve non po' andare oltre il disegno di un diagramma classi dei concetti aziendali e alcuni schemi progettuali; un progetto di grandi dimensioni distribuito su più aree ha bisogno di più dettagli.  
+  La quantità di dettagli che devono essere inseriti in un modello di requisiti o architettonico dipende dalla scala del progetto e dalle dimensioni e dalla distribuzione del team. Un piccolo team su un progetto breve non po' andare oltre il disegno di un diagramma classi dei concetti aziendali e alcuni schemi progettuali; un progetto di grandi dimensioni distribuito su più aree ha bisogno di più dettagli.  
   
 ##  <a name="BigDecisions"></a> Modelli di architettura  
  Nelle prime fasi di sviluppo è necessario scegliere le principali tecnologie e gli elementi da cui dipende la progettazione. Le aree in cui devono essere apportate queste scelte includono quanto segue:  
   
--   Scelte di tecnologia di base, ad esempio la scelta tra un database e un file system e la scelta tra un'applicazione di rete e un client Web e così via.  
+- Scelte di tecnologia di base, ad esempio la scelta tra un database e un file system e la scelta tra un'applicazione di rete e un client Web e così via.  
   
--   Scelte di framework, ad esempio una scelta tra Windows Workflow Foundation o ADO.NET Entity Framework.  
+- Scelte di framework, ad esempio una scelta tra Windows Workflow Foundation o ADO.NET Entity Framework.  
   
--   Scelte dei metodi di integrazione, ad esempio tra un bus di servizio aziendale o un canale Point to Point.  
+- Scelte dei metodi di integrazione, ad esempio tra un bus di servizio aziendale o un canale Point to Point.  
   
- Queste scelte vengono frequentemente determinate dai requisiti di qualità del servizio, ad esempio la scala e la flessibilità e possono essere effettuate prima che siano noti i requisiti dettagliati. In un sistema di grandi dimensioni, la configurazione di hardware e software sono fortemente correlati.  
+  Queste scelte vengono frequentemente determinate dai requisiti di qualità del servizio, ad esempio la scala e la flessibilità e possono essere effettuate prima che siano noti i requisiti dettagliati. In un sistema di grandi dimensioni, la configurazione di hardware e software sono fortemente correlati.  
   
- Le selezioni effettuate influiscono sulla modalità di utilizzo e di interpretazione del modello architettonico. Ad esempio, in un sistema che usa un database, le associazioni in un diagramma classi potrebbero rappresentare relazioni o chiavi esterne nel database, mentre in un sistema basato su file XML, le associazioni potrebbero indicare riferimenti incrociati che usano XPath. In un sistema distribuito i messaggi in un diagramma di sequenza possono rappresentare messaggi su una connessione; in un'applicazione indipendente, possono rappresentare chiamate di funzione.  
+  Le selezioni effettuate influiscono sulla modalità di utilizzo e di interpretazione del modello architettonico. Ad esempio, in un sistema che usa un database, le associazioni in un diagramma classi potrebbero rappresentare relazioni o chiavi esterne nel database, mentre in un sistema basato su file XML, le associazioni potrebbero indicare riferimenti incrociati che usano XPath. In un sistema distribuito i messaggi in un diagramma di sequenza possono rappresentare messaggi su una connessione; in un'applicazione indipendente, possono rappresentare chiamate di funzione.  
   
 ##  <a name="Components"></a> Componenti e relative interfacce  
  Le indicazioni principali di questa sezione sono le seguenti:  
   
--   Creare diagrammi dei componenti per mostrare le parti principali del sistema.  
+- Creare diagrammi dei componenti per mostrare le parti principali del sistema.  
   
--   Disegnare le dipendenze tra i componenti o le interfacce per mostrare la struttura del sistema.  
+- Disegnare le dipendenze tra i componenti o le interfacce per mostrare la struttura del sistema.  
   
--   Usare interfacce sui componenti per visualizzare i servizi che ciascun componente fornisce o richiede.  
+- Usare interfacce sui componenti per visualizzare i servizi che ciascun componente fornisce o richiede.  
   
--   In una progettazione di grandi dimensioni, è possibile creare diagrammi separati per scomporre ogni componente in parti più piccole.  
+- In una progettazione di grandi dimensioni, è possibile creare diagrammi separati per scomporre ogni componente in parti più piccole.  
   
- Questi concetti sono approfonditi nelle sezioni seguenti.  
+  Questi concetti sono approfonditi nelle sezioni seguenti.  
   
 ### <a name="components"></a>Componenti  
  Le viste centrali di un modello dell'architettura sono i diagrammi dei componenti che mostrano le parti principali del sistema e le modalità di dipendenza tra loro. Per altre informazioni sui diagrammi dei componenti, vedere [diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md).  
@@ -131,13 +131,13 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
  Un'architettura ben strutturata dispone di una disposizione chiara delle dipendenze, in cui tali condizioni sono vere:  
   
--   In una mappa codice non sono presenti cicli.  
+- In una mappa codice non sono presenti cicli.  
   
--   I componenti possono essere disposti in livelli in cui ogni dipendenza va da un componente di un livello a quello del livello successivo. Tutte le dipendenze tra due livelli qualsiasi vanno nella stessa direzione.  
+- I componenti possono essere disposti in livelli in cui ogni dipendenza va da un componente di un livello a quello del livello successivo. Tutte le dipendenze tra due livelli qualsiasi vanno nella stessa direzione.  
   
- È possibile visualizzare direttamente le dipendenze tra componenti oppure è possibile visualizzare le dipendenze tra le interfacce richieste e fornite associate ai componenti. Tramite le interfacce è possibile definire le operazioni che vengono usate in ogni dipendenza. In genere, le dipendenze vengono visualizzate tra i componenti quando i diagrammi vengono creati per la prima volta e quindi sostituiti dalle dipendenze tra interfacce durante l'aggiunta di altre informazioni. Entrambe le versioni sono descrizioni corrette del software, ma la versione con interfacce offre informazioni più dettagliate rispetto alle versioni precedenti.  
+  È possibile visualizzare direttamente le dipendenze tra componenti oppure è possibile visualizzare le dipendenze tra le interfacce richieste e fornite associate ai componenti. Tramite le interfacce è possibile definire le operazioni che vengono usate in ogni dipendenza. In genere, le dipendenze vengono visualizzate tra i componenti quando i diagrammi vengono creati per la prima volta e quindi sostituiti dalle dipendenze tra interfacce durante l'aggiunta di altre informazioni. Entrambe le versioni sono descrizioni corrette del software, ma la versione con interfacce offre informazioni più dettagliate rispetto alle versioni precedenti.  
   
- La gestione delle dipendenze è molto importante per la produzione di software gestibile. I diagrammi dei componenti devono riflettere tutte le dipendenze nel codice. Se il codice esiste già, verificare che tutte le dipendenze vengono visualizzate nei diagrammi. Se il codice è in fase di sviluppo, verificare che non includa le dipendenze che non sono previsti nel diagramma dei componenti. Per consentire l'individuazione delle dipendenze nel codice, è possibile generare diagrammi livello. Per garantire che siano soddisfatti i vincoli di dipendenza pianificati, è possibile convalidare il codice rispetto ai diagrammi livello. Per altre informazioni, vedere [diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md).  
+  La gestione delle dipendenze è molto importante per la produzione di software gestibile. I diagrammi dei componenti devono riflettere tutte le dipendenze nel codice. Se il codice esiste già, verificare che tutte le dipendenze vengono visualizzate nei diagrammi. Se il codice è in fase di sviluppo, verificare che non includa le dipendenze che non sono previsti nel diagramma dei componenti. Per consentire l'individuazione delle dipendenze nel codice, è possibile generare diagrammi livello. Per garantire che siano soddisfatti i vincoli di dipendenza pianificati, è possibile convalidare il codice rispetto ai diagrammi livello. Per altre informazioni, vedere [diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Interfacce  
  Posizionando le interfacce sui componenti, è possibile separare e denominare i gruppi principali di operazioni fornite da ogni componente. I componenti di un sistema di vendite basato su Web, ad esempio, potrebbero disporre di un'interfaccia mediante la quale i clienti acquistano beni, un'interfaccia mediante la quale i fornitori aggiornano i cataloghi e una terza interfaccia mediante la quale viene gestito il sistema.  
@@ -146,17 +146,17 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
  Se si definiscono entrambi le interfacce fornite e richieste, è possibile separare chiaramente il componente dal resto della progettazione, in modo da poter usare le tecniche seguenti:  
   
--   Posizionare il componente in un test harness in cui i componenti circostanti sono simulati dal test harness.  
+- Posizionare il componente in un test harness in cui i componenti circostanti sono simulati dal test harness.  
   
--   Sviluppare il componente indipendentemente da altri componenti.  
+- Sviluppare il componente indipendentemente da altri componenti.  
   
--   Riutilizzare il componente in altri contesti accoppiando le interfacce a componenti diversi.  
+- Riutilizzare il componente in altri contesti accoppiando le interfacce a componenti diversi.  
   
- Quando si vuole definire l'elenco delle operazioni in un'interfaccia, è possibile creare un'altra visualizzazione dell'interfaccia in un diagramma classi UML. A tale scopo, individuare l'interfaccia in Esplora modelli UML e trascinarla in un diagramma classi. È quindi possibile aggiungere operazioni all'interfaccia.  
+  Quando si vuole definire l'elenco delle operazioni in un'interfaccia, è possibile creare un'altra visualizzazione dell'interfaccia in un diagramma classi UML. A tale scopo, individuare l'interfaccia in Esplora modelli UML e trascinarla in un diagramma classi. È quindi possibile aggiungere operazioni all'interfaccia.  
   
- Un'operazione in un'interfaccia UML può rappresentare qualsiasi modalità in cui può essere richiamato un comportamento di un componente. Potrebbe rappresentare una richiesta di servizio Web, un segnale o un'interazione di un altro tipo o una chiamata di funzione di un programma normale.  
+  Un'operazione in un'interfaccia UML può rappresentare qualsiasi modalità in cui può essere richiamato un comportamento di un componente. Potrebbe rappresentare una richiesta di servizio Web, un segnale o un'interazione di un altro tipo o una chiamata di funzione di un programma normale.  
   
- Per determinare le operazioni da aggiungere, creare diagrammi di sequenza per mostrare il modo in cui i componenti interagiscono tra loro. Visualizzare [interazioni tra componenti](#Interactions). Ognuno di questi diagrammi di sequenza visualizza le interazioni che si verificano in un caso di utilizzo diversi. In questo modo, è possibile eseguire gradualmente aggiunte all'elenco di operazioni in ogni interfaccia di componente, esplorando i casi di utilizzo.  
+  Per determinare le operazioni da aggiungere, creare diagrammi di sequenza per mostrare il modo in cui i componenti interagiscono tra loro. Visualizzare [interazioni tra componenti](#Interactions). Ognuno di questi diagrammi di sequenza visualizza le interazioni che si verificano in un caso di utilizzo diversi. In questo modo, è possibile eseguire gradualmente aggiunte all'elenco di operazioni in ogni interfaccia di componente, esplorando i casi di utilizzo.  
   
 ### <a name="decomposing-a-component-into-parts"></a>Scomposizione di un componente in parti  
  È possibile applicare la procedura descritta nelle sezioni precedenti per ogni componente.  
@@ -169,32 +169,32 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
  Nelle situazioni elencate usare le parti:  
   
--   La progettazione del componente padre deve sempre usare il tipo componente della parte. Di conseguenza, la progettazione della parte è fondamentale per la progettazione del componente padre.  
+- La progettazione del componente padre deve sempre usare il tipo componente della parte. Di conseguenza, la progettazione della parte è fondamentale per la progettazione del componente padre.  
   
--   Il componente padre non dispone di alcun esistenza concreta in proprio. È possibile ad esempio disporre di un componente concettuale chiamato livello di presentazione che rappresenta una raccolta di componenti reali che gestiscono le interazioni e le visualizzazioni dell'utente.  
+- Il componente padre non dispone di alcun esistenza concreta in proprio. È possibile ad esempio disporre di un componente concettuale chiamato livello di presentazione che rappresenta una raccolta di componenti reali che gestiscono le interazioni e le visualizzazioni dell'utente.  
   
- Usare componenti separati accessibili tramite le interfacce richieste in queste situazioni:  
+  Usare componenti separati accessibili tramite le interfacce richieste in queste situazioni:  
   
--   Il componente richiedente può essere accoppiato tramite le relative interfacce a diversi componenti di fornitura in fase di esecuzione.  
+- Il componente richiedente può essere accoppiato tramite le relative interfacce a diversi componenti di fornitura in fase di esecuzione.  
   
--   La progettazione è tale per cui sarebbe facile sostituire un provider con un altro.  
+- La progettazione è tale per cui sarebbe facile sostituire un provider con un altro.  
   
- L'utilizzo di interfacce richieste è preferibile all'utilizzo delle parti. Sebbene la progettazione può richiedere più tempo, il sistema risultante è più flessibile. È anche più semplice testare separatamente i componenti. In questo modo sono possibili meno accoppiamenti nei piani di sviluppo.  
+  L'utilizzo di interfacce richieste è preferibile all'utilizzo delle parti. Sebbene la progettazione può richiedere più tempo, il sistema risultante è più flessibile. È anche più semplice testare separatamente i componenti. In questo modo sono possibili meno accoppiamenti nei piani di sviluppo.  
   
 ##  <a name="Interactions"></a> Interazioni tra componenti  
  Le indicazioni principali di questa sezione sono le seguenti:  
   
--   Identificare i casi di utilizzo del sistema.  
+- Identificare i casi di utilizzo del sistema.  
   
--   Per ogni caso di utilizzo creare uno o più diagrammi per mostrare come i componenti del sistema ottengono il risultato richiesto collaborando tra loro e con gli utenti. In genere, si tratta di diagrammi di sequenza o diagrammi attività.  
+- Per ogni caso di utilizzo creare uno o più diagrammi per mostrare come i componenti del sistema ottengono il risultato richiesto collaborando tra loro e con gli utenti. In genere, si tratta di diagrammi di sequenza o diagrammi attività.  
   
--   Usare le interfacce per specificare i messaggi ricevuti da ogni componente.  
+- Usare le interfacce per specificare i messaggi ricevuti da ogni componente.  
   
--   Vengono descritti gli effetti delle operazioni nelle interfacce.  
+- Vengono descritti gli effetti delle operazioni nelle interfacce.  
   
--   Ripetere la procedura per ogni componente, che mostra come interagiscono le parti.  
+- Ripetere la procedura per ogni componente, che mostra come interagiscono le parti.  
   
- In un sistema di vendite basato sul Web, ad esempio, il modello requisiti potrebbe definire un acquisto del cliente come un caso di utilizzo. È possibile creare un diagramma di sequenza per mostrare le interazioni del cliente con i componenti nel livello di presentazione e per mostrare le interazioni con il warehouse e i componenti di contabilità.  
+  In un sistema di vendite basato sul Web, ad esempio, il modello requisiti potrebbe definire un acquisto del cliente come un caso di utilizzo. È possibile creare un diagramma di sequenza per mostrare le interazioni del cliente con i componenti nel livello di presentazione e per mostrare le interazioni con il warehouse e i componenti di contabilità.  
   
 ### <a name="identifying-the-initiating-events"></a>Identificazione degli eventi di inizializzazione  
  Le operazioni eseguite dalla maggior parte dei sistemi software possono essere divise in modo semplice in base alle risposte fornite a input o eventi diversi. L'evento di inizializzazione potrebbe essere uno dei seguenti:  

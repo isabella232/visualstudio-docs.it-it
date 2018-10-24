@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: modificare tipi di carattere | Documenti Microsoft'
+title: 'Procedura: modificare tipi di carattere | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e79893e7f06afead4a327ce9a342b77f6acb8ca9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e3d372823d3dc3e8d874bfd50e361f23ec056da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833618"
 ---
 # <a name="how-to-change-fonts"></a>Procedura: modificare i tipi di carattere
-È possibile modificare il tipo di carattere, lo stile del carattere e dimensione del carattere per le finestre di Spy + +.  
+È possibile modificare il tipo di carattere, lo stile del carattere e dimensioni del carattere per le finestre di Spy + +.  
   
-### <a name="to-change-font-options"></a>Per modificare le opzioni di tipo di carattere  
+### <a name="to-change-font-options"></a>Per modificare le opzioni del tipo di carattere  
   
-1.  Dal **vista** menu, scegliere **carattere**.  
+1. Dal **View** menu, scegliere **Font**.  
   
-2.  Scegliere un tipo di carattere, stile e dimensioni del carattere.  
+2. Scegliere un tipo di carattere, lo stile del carattere e dimensioni del carattere.  
   
-3.  Fare clic su **OK**.  
+3. Fare clic su **OK**.  
   
- Selezione **salvare imposta come predefinito** causerà tutte le finestre Spy + + future utilizzare questo tipo di carattere.  
+   Selezionando **salvare imposta come predefinito** causerà tutte le finestre Spy + + future usare questo tipo di carattere.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Utilizzo di Spy + +](../debugger/using-spy-increment.md)   

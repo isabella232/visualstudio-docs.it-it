@@ -15,42 +15,42 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 846a889a22188249a1a42e8d66f0b3730a19dfc2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7c4297b1beaf93d82233eb756d0c812cc38e20c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839388"
 ---
 # <a name="supported-event-types"></a>Tipi di evento supportati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Debug in Visual Studio supporta attualmente i tipi di evento seguente:  
   
--   Eventi asincroni  
+- Eventi asincroni  
   
-     Inviare una notifica di gestore di sessione di debug (SDM) e IDE di modifica lo stato dell'applicazione in fase di debug. Questi eventi vengono elaborati con il tempo libero il modello SDM e dell'IDE. Nessuna risposta viene inviata al motore di debug (DE) dopo l'elaborazione dell'evento. Il [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) e [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) interfacce sono esempi di eventi asincroni.  
+   Inviare una notifica di gestore di sessione di debug (SDM) e IDE di modifica lo stato dell'applicazione in fase di debug. Questi eventi vengono elaborati con il tempo libero il modello SDM e dell'IDE. Nessuna risposta viene inviata al motore di debug (DE) dopo l'elaborazione dell'evento. Il [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) e [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) interfacce sono esempi di eventi asincroni.  
   
--   Eventi sincroni  
+- Eventi sincroni  
   
-     Inviare una notifica di SDM e IDE di modifica lo stato dell'applicazione in fase di debug. L'unica differenza tra questi eventi e gli eventi asincroni è che viene inviata la risposta tramite il [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) (metodo).  
+   Inviare una notifica di SDM e IDE di modifica lo stato dell'applicazione in fase di debug. L'unica differenza tra questi eventi e gli eventi asincroni è che viene inviata la risposta tramite il [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) (metodo).  
   
-     L'invio di un evento sincrono è utile se è necessario il DE per continuare l'elaborazione dopo che l'IDE riceve ed elabora l'evento.  
+   L'invio di un evento sincrono è utile se è necessario il DE per continuare l'elaborazione dopo che l'IDE riceve ed elabora l'evento.  
   
--   Sincrono eventi di arresto o eventi di arresto  
+- Sincrono eventi di arresto o eventi di arresto  
   
-     Notificare il modello SDM e dell'IDE che l'applicazione in fase di debug è stato arrestato l'esecuzione del codice. Quando si invia un evento di arresto tramite il metodo [evento](../../extensibility/debugger/reference/idebugeventcallback2-event.md), il [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) parametro è obbligatorio. Gli eventi di arresto proseguono da una chiamata a uno dei metodi seguenti:  
+   Notificare il modello SDM e dell'IDE che l'applicazione in fase di debug è stato arrestato l'esecuzione del codice. Quando si invia un evento di arresto tramite il metodo [evento](../../extensibility/debugger/reference/idebugeventcallback2-event.md), il [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) parametro è obbligatorio. Gli eventi di arresto proseguono da una chiamata a uno dei metodi seguenti:  
   
-    -   [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     Le interfacce [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sono riportati alcuni esempi di eventi di arresto.  
+    Le interfacce [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sono riportati alcuni esempi di eventi di arresto.  
   
-    > [!NOTE]
-    >  Gli eventi di arresto asincrona non sono supportati. È un errore per inviare un evento di arresto asincrona.  
+  > [!NOTE]
+  >  Gli eventi di arresto asincrona non sono supportati. È un errore per inviare un evento di arresto asincrona.  
   
 ## <a name="discussion"></a>Discussione  
  L'implementazione effettiva degli eventi dipende dalla progettazione del DE. Il tipo di ogni evento inviato è determinato dai relativi attributi, che vengono impostate quando si progetta il DE. Ad esempio, può inviare un Germania un' [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) come un evento asincrono, mentre un altro può inviare i dati come un evento di arresto.  

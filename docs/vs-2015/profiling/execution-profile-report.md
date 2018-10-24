@@ -18,23 +18,23 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4b84193f341163dc0a39ded71781cc678c7650
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a66f3961cc6ddd4bb3f8970c77a8f7cff9b0fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849229"
 ---
 # <a name="execution-profile-report"></a>Report del profilo di esecuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il rapporto del profilo di esecuzione è un profilo di campionamento tradizionale. I campioni vengono presi ogni millisecondo circa durante i periodi in cui un thread è in esecuzione su un core logico e il visualizzatore di concorrenza compila un albero delle chiamate tipico collazionando il set di stack di campioni accumulato. I dati della tabella possono essere influenzati dall'intervallo di tempo corrente e dai thread nascosti e dai filtri seguenti che possono essere applicati:  
   
--   Se l'opzione Just My Code è selezionata, vengono visualizzati solo gli stack frame con codice utente, più un livello sotto il codice utente.  
+- Se l'opzione Just My Code è selezionata, vengono visualizzati solo gli stack frame con codice utente, più un livello sotto il codice utente.  
   
--   Se è impostato il valore di Riduzione rumore, gli stack collazionati con una frequenza minore di quella specificata vengono esclusi dal filtro.  
+- Se è impostato il valore di Riduzione rumore, gli stack collazionati con una frequenza minore di quella specificata vengono esclusi dal filtro.  
   
- Nella tabella seguente vengono illustrate le colonne del rapporto.  
+  Nella tabella seguente vengono illustrate le colonne del rapporto.  
   
 |Colonna|Descrizione|  
 |------------|-----------------|  

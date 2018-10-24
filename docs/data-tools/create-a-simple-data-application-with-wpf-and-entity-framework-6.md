@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c39546d48cd8b8bf71594685f944751c1f023750
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822072"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 
@@ -60,35 +60,35 @@ Questo esempio Usa il database di esempio Northwind e SQL Server Express LocalDB
 
 ## <a name="create-the-model"></a>Creare il modello
 
-1.  Fare clic sul nodo del progetto in Esplora soluzioni e scegliere **Add** > **nuovo elemento**. Nel riquadro di sinistra, sotto il nodo c#, scegliere **Data** nel riquadro centrale, scegliere **ADO.NET Entity Data Model**.
+1. Pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Add** > **nuovo elemento**. Nel riquadro di sinistra, sotto il nodo c#, scegliere **Data** nel riquadro centrale, scegliere **ADO.NET Entity Data Model**.
 
-     ![Entity Framework modello nuovo elemento di progetto](../data-tools/media/raddata-ef-new-project-item.png)
+   ![Entity Framework modello nuovo elemento di progetto](../data-tools/media/raddata-ef-new-project-item.png)
 
-  2.  Chiamare il modello `Northwind_model` e scegliere **OK**. Il **procedura guidata Entity Data Model** apre. Scegli **Entity Framework Designer dal database** e quindi fare clic su **successivo**.
+2. Chiamare il modello `Northwind_model` e scegliere **OK**. Il **procedura guidata Entity Data Model** apre. Scegli **Entity Framework Designer dal database** e quindi fare clic su **successivo**.
 
-     ![Modello EF da Database](../data-tools/media/raddata-ef-model-from-database.png)
+   ![Modello EF da Database](../data-tools/media/raddata-ef-model-from-database.png)
 
-3.  Nella schermata successiva, scegliere di LocalDB Northwind connessione fare clic su **successivo**.
+3. Nella schermata successiva, scegliere di LocalDB Northwind connessione fare clic su **successivo**.
 
-4.  Nella pagina successiva della procedura guidata, scegliere quali tabelle, stored procedure e altri oggetti di database da includere nel modello di Entity Framework. Espandere il nodo dbo nella visualizzazione albero e scegliere **clienti**, **ordini**, e **Order Details**. Lasciare le impostazioni predefinite selezionate e fare clic su **fine**.
+4. Nella pagina successiva della procedura guidata, scegliere quali tabelle, stored procedure e altri oggetti di database da includere nel modello di Entity Framework. Espandere il nodo dbo nella visualizzazione albero e scegliere **clienti**, **ordini**, e **Order Details**. Lasciare le impostazioni predefinite selezionate e fare clic su **fine**.
 
-     ![Scegli oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png)
+    ![Scegli oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png)
 
-5.  La procedura guidata genera le classi di c# che rappresentano il modello di Entity Framework. Le classi sono plain precedente le classi di c# e sono ciò databind all'interfaccia utente WPF. Il *edmx* file descrive le relazioni e altri metadati che associa le classi di oggetti nel database. Il *tt* file sono modelli T4 che generano il codice che opera sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in **Esplora soluzioni** sotto il nodo Northwind_model:
+5. La procedura guidata genera le classi di c# che rappresentano il modello di Entity Framework. Le classi sono plain precedente le classi di c# e sono ciò databind all'interfaccia utente WPF. Il *edmx* file descrive le relazioni e altri metadati che associa le classi di oggetti nel database. Il *tt* file sono modelli T4 che generano il codice che opera sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in **Esplora soluzioni** sotto il nodo Northwind_model:
 
-       ![File del modello EF di Esplora soluzioni](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
+      ![File del modello EF di Esplora soluzioni](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
-     Area di progettazione per il *edmx* file consente di modificare alcune proprietà e relazioni nel modello. Non si intende utilizzare la finestra di progettazione in questa procedura dettagliata.
+    Area di progettazione per il *edmx* file consente di modificare alcune proprietà e relazioni nel modello. Non si intende utilizzare la finestra di progettazione in questa procedura dettagliata.
 
-6.  Il *tt* file sono di uso generale ed è necessario modificare uno di essi per lavorare con il Data Binding WPF, che richiede ObservableCollections. Nelle **Esplora soluzioni**, espandere il nodo Northwind_model fino a individuare *Northwind_model.tt*. (Assicurarsi che non si lavora nel *. Context.tt* file, che è direttamente sotto la *edmx* file.)
+6. Il *tt* file sono di uso generale ed è necessario modificare uno di essi per lavorare con il Data Binding WPF, che richiede ObservableCollections. Nelle **Esplora soluzioni**, espandere il nodo Northwind_model fino a individuare *Northwind_model.tt*. (Assicurarsi che non si lavora nel *. Context.tt* file, che è direttamente sotto la *edmx* file.)
 
-    -   Sostituire le due occorrenze della <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601>.
+   -   Sostituire le due occorrenze della <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601>.
 
-    -   Sostituire la prima occorrenza di <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> intorno alla riga 51. Non sostituire la seconda occorrenza della HashSet.
+   -   Sostituire la prima occorrenza di <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> intorno alla riga 51. Non sostituire la seconda occorrenza della HashSet.
 
-    -   Sostituire l'unica occorrenza di <xref:System.Collections.Generic> (intorno alla riga 431) con <xref:System.Collections.ObjectModel>.
+   -   Sostituire l'unica occorrenza di <xref:System.Collections.Generic> (intorno alla riga 431) con <xref:System.Collections.ObjectModel>.
 
-7.  Premere **Ctrl**+**MAIUSC**+**B** per compilare il progetto. Al termine della compilazione, le classi del modello sono visibili per la creazione guidata origine dati.
+7. Premere **Ctrl**+**MAIUSC**+**B** per compilare il progetto. Al termine della compilazione, le classi del modello sono visibili per la creazione guidata origine dati.
 
 A questo punto si è pronti per associare questo modello per la pagina XAML in modo che si può visualizzare, esplorare e modificare i dati.
 

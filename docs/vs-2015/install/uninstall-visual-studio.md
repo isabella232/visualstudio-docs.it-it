@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25fbfec12299cecf265437baa04a3dd86093f30b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ec83128682a874a5491d62762b424045f11c4b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849853"
 ---
 # <a name="uninstall-visual-studio"></a>Disinstallare Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Questa pagina descrive la procedura di disinstallazione di Visual Studio 2015, u
 ##  <a name="uninstalling"></a>   
 #### <a name="to-uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>Per disinstallare Visual Studio usando il metodo di disinstallazione "standard"  
   
-1.  Nelle **Pannello di controllo**via le **programmi e funzionalità** pagina, scegliere l'edizione del prodotto che vuoi disinstallare e quindi scegliere **modifica**.  
+1. Nelle **Pannello di controllo**via le **programmi e funzionalità** pagina, scegliere l'edizione del prodotto che vuoi disinstallare e quindi scegliere **modifica**.  
   
-2.  Nell'installazione guidata, scegliere **disinstallazione**, scegliere **Yes**e quindi seguire le istruzioni rimanenti della procedura guidata.  
+2. Nell'installazione guidata, scegliere **disinstallazione**, scegliere **Yes**e quindi seguire le istruzioni rimanenti della procedura guidata.  
   
- Questo metodo standard, o predefinito lascerà alcuni elementi della versione di Visual Studio originariamente installata (ad esempio, di Microsoft .NET Framework, Microsoft Visual C++ Redistributable, Microsoft SQL Server, e così via).   È necessario lasciare questi due componenti in quanto molte altre applicazioni dipendono da essi. Tuttavia, se si desidera rimuovere anche questi elementi, seleziona la relativa voce in **programmi e funzionalità**e quindi eliminali singolarmente.  
+   Questo metodo standard, o predefinito lascerà alcuni elementi della versione di Visual Studio originariamente installata (ad esempio, di Microsoft .NET Framework, Microsoft Visual C++ Redistributable, Microsoft SQL Server, e così via).   È necessario lasciare questi due componenti in quanto molte altre applicazioni dipendono da essi. Tuttavia, se si desidera rimuovere anche questi elementi, seleziona la relativa voce in **programmi e funzionalità**e quindi eliminali singolarmente.  
   
 #### <a name="to-uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Per disinstallare Visual Studio e tutti gli altri file correlati (vale a dire, disinstallare quasi tutto)  
   
@@ -66,18 +66,18 @@ Questa pagina descrive la procedura di disinstallazione di Visual Studio 2015, u
   
 #### <a name="to-roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Eseguire il rollback a una versione precedente o una versione di Visual Studio  
   
-1.  Disinstalla Visual Studio usando uno dei metodi elencati in questo argomento.  
+1. Disinstalla Visual Studio usando uno dei metodi elencati in questo argomento.  
   
-    > [!WARNING]
-    >  Disinstallazione di una versione corrente di Visual Studio (o un aggiornamento di Visual Studio) e quindi installare una versione precedente potrebbero non funzionare come previsto.  
-    >   
-    >  Il risultato dipende da quale versione o rilascio di Visual Studio è installato, quali versioni dei relativi componenti vengono installate, quali prodotti sono installati con dipendenze sia la versione di Visual Studio o i relativi componenti, e infine su la versione di Visual Studio precedenti si intende installare o reinstallare.  A causa di tutte queste variabili, una disinstallazione standard saranno spesso non rimuoverà che alcuni componenti potrebbero non funzionare con versioni o versioni precedenti di Visual Studio.  
-    >   
-    >  Pertanto, per ottenere risultati ottimali, è consigliabile usare la [dello strumento di disinstallazione di Visual Studio](https://github.com/Microsoft/VisualStudioUninstaller/releases).  
+   > [!WARNING]
+   >  Disinstallazione di una versione corrente di Visual Studio (o un aggiornamento di Visual Studio) e quindi installare una versione precedente potrebbero non funzionare come previsto.  
+   >   
+   >  Il risultato dipende da quale versione o rilascio di Visual Studio è installato, quali versioni dei relativi componenti vengono installate, quali prodotti sono installati con dipendenze sia la versione di Visual Studio o i relativi componenti, e infine su la versione di Visual Studio precedenti si intende installare o reinstallare.  A causa di tutte queste variabili, una disinstallazione standard saranno spesso non rimuoverà che alcuni componenti potrebbero non funzionare con versioni o versioni precedenti di Visual Studio.  
+   >   
+   >  Pertanto, per ottenere risultati ottimali, è consigliabile usare la [dello strumento di disinstallazione di Visual Studio](https://github.com/Microsoft/VisualStudioUninstaller/releases).  
   
-2.  Installare o reinstallare la versione precedente di Visual Studio che si desidera utilizzare.  
+2. Installare o reinstallare la versione precedente di Visual Studio che si desidera utilizzare.  
   
- Anche se si installa una versione precedente di Visual Studio, il programma di installazione potrebbe comunque provare a usare una versione più recente o release se disponibile. Per informazioni più dettagliate, vedere la [procedura: installare una versione specifica di Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) argomento.  
+   Anche se si installa una versione precedente di Visual Studio, il programma di installazione potrebbe comunque provare a usare una versione più recente o release se disponibile. Per informazioni più dettagliate, vedere la [procedura: installare una versione specifica di Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) argomento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Installare Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

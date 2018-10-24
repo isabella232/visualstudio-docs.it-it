@@ -1,5 +1,5 @@
 ---
-title: Funzione SccPopulateDirList | Documenti Microsoft
+title: Funzione SccPopulateDirList | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5315f3156f71310c92069ec3743232e98818b9a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b5839735e7564b486444cc0f9b65c71bc06f047
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847994"
 ---
-# <a name="sccpopulatedirlist-function"></a>SccPopulateDirList (funzione)
-Questa funzione determina quali directory e, facoltativamente, i file vengono archiviati nel controllo del codice sorgente, viene visualizzato un elenco di directory da esaminare.  
+# <a name="sccpopulatedirlist-function"></a>Funzione SccPopulateDirList
+Questa funzione determina le directory e, facoltativamente, i file vengono archiviati nel controllo del codice sorgente, dato un elenco di directory da esaminare.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,10 +40,10 @@ SCCRTN SccPopulateDirList(
   
 #### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto plug-in controllo di origine.  
+ [in] Il puntatore di contesto del plug-in controllo di origine.  
   
  nDirs  
- [in] Numero di percorsi di directory nel `lpDirPaths` matrice.  
+ [in] Numero di percorsi di directory nella `lpDirPaths` matrice.  
   
  lpDirPaths  
  [in] Matrice di percorsi di directory da esaminare.  
@@ -52,13 +52,13 @@ SCCRTN SccPopulateDirList(
  [in] Funzione di callback da chiamare per ogni nome del file nel percorso di directory e (facoltativamente) `lpDirPaths` (vedere [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) per informazioni dettagliate).  
   
  pvCallerData  
- [in] Valore che deve essere passato alla funzione di callback subisce modifiche.  
+ [in] Valore che deve essere passato alla funzione di callback invariato.  
   
- fOptions  
- [in] Una combinazione di valori che controllano la modalità di elaborazione le directory (vedere la sezione "PopulateDirList flags" [flag di bit utilizzati dai comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per i valori possibili).  
+ Opzioni  
+ [in] Una combinazione di valori che controllano il modo in cui vengono elaborate le directory (vedere la sezione "PopulateDirList flags" [flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per i valori possibili).  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
@@ -66,10 +66,10 @@ SCCRTN SccPopulateDirList(
 |SCC_E_UNKNOWNERROR|Si è verificato un errore.|  
   
 ## <a name="remarks"></a>Note  
- Solo le directory e, facoltativamente, i nomi di file che vengono effettivamente nel repository del controllo del codice sorgente vengono passati alla funzione di callback.  
+ Solo le directory e, facoltativamente, i nomi di file che sono effettivamente nel repository del controllo del codice sorgente vengono passati alla funzione di callback.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
- [Flag di bit utilizzati dai comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)   
+ [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
  [Codici di errore](../extensibility/error-codes.md)

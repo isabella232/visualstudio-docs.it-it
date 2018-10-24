@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850516"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Usare questa finestra di dialogo per modificare le impostazioni di formattazione
  Sottolinea errori nell'editor  
  Identifica gli errori di compilazione nel codice. Quando questa opzione è selezionata, vengono visualizzate sottolineature ondulate con colori che hanno un significato specifico:  
   
--   Gli errori di analisi sono visualizzati in rosso.  
+- Gli errori di analisi sono visualizzati in rosso.  
   
--   Gli errori di compilazione sono visualizzati in blu.  
+- Gli errori di compilazione sono visualizzati in blu.  
   
--   Gli avvisi di compilazione sono visualizzati in verde.  
+- Gli avvisi di compilazione sono visualizzati in verde.  
   
--   Le modifiche [Modifica e continuazione](../../debugger/edit-and-continue.md) non valide sono visualizzate in viola.  
+- Le modifiche [Modifica e continuazione](../../debugger/edit-and-continue.md) non valide sono visualizzate in viola.  
   
- Spostare il puntatore sul segmento di codice sottolineato per visualizzare una descrizione comando con informazioni sull'errore.  
+  Spostare il puntatore sul segmento di codice sottolineato per visualizzare una descrizione comando con informazioni sull'errore.  
   
- Mostra errori di semantica in tempo reale  
- Identifica alcuni errori di compilazione senza compilazione esplicita, ad esempio la dichiarazione e l'uso di un tipo sconosciuto o il riferimento a una proprietà sconosciuta.  
+  Mostra errori di semantica in tempo reale  
+  Identifica alcuni errori di compilazione senza compilazione esplicita, ad esempio la dichiarazione e l'uso di un tipo sconosciuto o il riferimento a una proprietà sconosciuta.  
   
- Evidenzia riferimenti a simbolo sotto il cursore  
- Quando il cursore viene posizionato all'interno di un simbolo o quando si fa clic su un simbolo, vengono evidenziate tutte le istanze del simbolo nel file di codice.  
+  Evidenzia riferimenti a simbolo sotto il cursore  
+  Quando il cursore viene posizionato all'interno di un simbolo o quando si fa clic su un simbolo, vengono evidenziate tutte le istanze del simbolo nel file di codice.  
   
 ## <a name="refactoring"></a>Refactoring  
  Verifica risultati del refactoring  

@@ -17,12 +17,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824282"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,41 +52,41 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
 ## <a name="prerequisites"></a>Prerequisiti  
  Per creare l'applicazione, è necessario disporre di:  
   
--   Visual Studio Community Edition.  
+- Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB.  
+- SQL Server Express LocalDB.  
   
--   Piccolo database di esempio creato seguendo i passaggi descritti in [creare un database SQL usando uno script](../data-tools/create-a-sql-database-by-using-a-script.md).  
+- Piccolo database di esempio creato seguendo i passaggi descritti in [creare un database SQL usando uno script](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
--   La stringa di connessione per il database dopo averla configurata. È possibile trovare questo valore aprendo **Esplora oggetti di SQL Server**, aprendo il menu di scelta rapida per il database, selezionando **delle proprietà**e quindi scorrere verso il **ConnectionString** proprietà.  
+- La stringa di connessione per il database dopo averla configurata. È possibile trovare questo valore aprendo **Esplora oggetti di SQL Server**, aprendo il menu di scelta rapida per il database, selezionando **delle proprietà**e quindi scorrere verso il **ConnectionString** proprietà.  
   
- In questo argomento si presuppone una certa familiarità con la funzionalità di base dell'IDE di Visual Studio e la capacità di creare un'applicazione Windows Forms, aggiungere form a tale progetto, inserire i pulsanti e altri controlli presenti in tali form, impostare le proprietà di tali controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) prima di iniziare questo argomento.  
+  In questo argomento si presuppone una certa familiarità con la funzionalità di base dell'IDE di Visual Studio e la capacità di creare un'applicazione Windows Forms, aggiungere form a tale progetto, inserire i pulsanti e altri controlli presenti in tali form, impostare le proprietà di tali controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) prima di iniziare questo argomento.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Configurare il database di esempio  
  Il database di esempio per questa procedura dettagliata è costituito dalle tabelle Customer e Orders. Le tabelle inizialmente non contengono dati. I dati verranno aggiunti quando si esegue l'applicazione creata. Il database include inoltre cinque stored procedure semplici. [Creare un database SQL usando uno script](../data-tools/create-a-sql-database-by-using-a-script.md) contiene uno script Transact-SQL che crea le tabelle, le chiavi primarie ed esterne, i vincoli e le stored procedure.  
   
 ##  <a name="BKMK_createtheformsandaddcontrols"></a> Creare i form e aggiungere i controlli  
   
-1.  Creare un progetto per un'applicazione Windows Forms e denominarlo SimpleDataApp.  
+1. Creare un progetto per un'applicazione Windows Forms e denominarlo SimpleDataApp.  
   
-     Visual Studio crea il progetto e diversi file, tra cui un form Windows vuoto denominato Form1.  
+    Visual Studio crea il progetto e diversi file, tra cui un form Windows vuoto denominato Form1.  
   
-2.  Aggiungere due form Windows al progetto in modo che includa tre formati seguenti e quindi assegnare loro i nomi seguenti:  
+2. Aggiungere due form Windows al progetto in modo che includa tre formati seguenti e quindi assegnare loro i nomi seguenti:  
   
-    -   Navigazione  
+   -   Navigazione  
   
-    -   NewCustomer  
+   -   NewCustomer  
   
-    -   FillOrCancel  
+   -   FillOrCancel  
   
-3.  Per ogni form, aggiungere caselle di testo, pulsanti e altri controlli come illustrato nelle figure seguenti. Per ciascun controllo, impostare le proprietà descritte nelle tabelle.  
+3. Per ogni form, aggiungere caselle di testo, pulsanti e altri controlli come illustrato nelle figure seguenti. Per ciascun controllo, impostare le proprietà descritte nelle tabelle.  
   
-    > [!NOTE]
-    >  La casella di gruppo e i controlli Label migliorano la leggibilità, ma non vengono usati nel codice.  
+   > [!NOTE]
+   >  La casella di gruppo e i controlli Label migliorano la leggibilità, ma non vengono usati nel codice.  
   
- **Form navigazione**  
+   **Form navigazione**  
   
- ![Finestra di dialogo di spostamento](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+   ![Finestra di dialogo di spostamento](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
 |Controlli per il form Navigazione|Proprietà|  
 |--------------------------------------|----------------|  

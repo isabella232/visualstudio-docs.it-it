@@ -29,12 +29,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad873a4aaa71dc03a2e7cbf213d40973d73dcdf6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840987"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,31 +46,31 @@ L'opzione Modifica e continuazione per Visual C++ gestisce la gran parte dei tip
 ##  <a name="BKMK_Unsupported_changes"></a> Modifiche non supportate  
  Le seguenti modifiche del codice C/C++ non possono essere applicate durante una sessione di debug:  
   
--   La maggior parte delle modifiche a dati globali o statici.  
+- La maggior parte delle modifiche a dati globali o statici.  
   
--   Le modifiche a file eseguibili copiati da un altro computer e non compilati localmente.  
+- Le modifiche a file eseguibili copiati da un altro computer e non compilati localmente.  
   
--   Le modifiche a un tipo di dati che hanno effetto sul layout di un oggetto, ad esempio i membri dati di una classe.  
+- Le modifiche a un tipo di dati che hanno effetto sul layout di un oggetto, ad esempio i membri dati di una classe.  
   
--   Aggiunta di più di 64 KB di nuovo codice o nuovi dati.  
+- Aggiunta di più di 64 KB di nuovo codice o nuovi dati.  
   
--   Aggiunta di variabili che richiedono un costruttore in un punto precedente al puntatore all'istruzione.  
+- Aggiunta di variabili che richiedono un costruttore in un punto precedente al puntatore all'istruzione.  
   
--   Modifiche che interessano il codice per il quale è necessaria l'inizializzazione di runtime.  
+- Modifiche che interessano il codice per il quale è necessaria l'inizializzazione di runtime.  
   
--   Aggiunta di gestori di eccezioni, in alcune istanze.  
+- Aggiunta di gestori di eccezioni, in alcune istanze.  
   
--   Modifiche di file di risorse.  
+- Modifiche di file di risorse.  
   
--   Modifiche del codice di file di sola lettura.  
+- Modifiche del codice di file di sola lettura.  
   
--   Modifiche del codice privo di un file PDB corrispondente.  
+- Modifiche del codice privo di un file PDB corrispondente.  
   
--   Modifiche del codice privo di un file oggetto.  
+- Modifiche del codice privo di un file oggetto.  
   
- Se si apporta una di queste modifiche e si tenta quindi di applicare le modifiche al codice, viene visualizzato un messaggio di errore o di avviso nella finestra **Output** .  
+  Se si apporta una di queste modifiche e si tenta quindi di applicare le modifiche al codice, viene visualizzato un messaggio di errore o di avviso nella finestra **Output** .  
   
--   Le librerie statiche non vengono aggiornate con la funzionalità Modifica e continuazione. Se si apporta una modifica in una libreria statica, l'esecuzione continua con la versione precedente e non viene visualizzato alcun avviso.  
+- Le librerie statiche non vengono aggiornate con la funzionalità Modifica e continuazione. Se si apporta una modifica in una libreria statica, l'esecuzione continua con la versione precedente e non viene visualizzato alcun avviso.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Scenari non supportati  
  Modifica e continuazione per C/C++ non è disponibile nei seguenti scenari di debug:  

@@ -13,12 +13,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853184"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Uso di stub per isolare le parti dell'applicazione tra loro per gli unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,13 +125,13 @@ End Function
   
  L'inserimento dell'interfaccia applica la regola seguente:  
   
--   Il codice di un componente dell'applicazione non deve mai esplicitamente fare riferimento a una classe di un altro componente né in una dichiarazione né in un'istruzione `new`. Diversamente, le variabili e i parametri devono essere dichiarati con le interfacce. Le istanze dei componenti devono essere create solo dal contenitore dei componenti.  
+- Il codice di un componente dell'applicazione non deve mai esplicitamente fare riferimento a una classe di un altro componente né in una dichiarazione né in un'istruzione `new`. Diversamente, le variabili e i parametri devono essere dichiarati con le interfacce. Le istanze dei componenti devono essere create solo dal contenitore dei componenti.  
   
-     Per "componente" in questo caso si intende una classe o un gruppo di classi che si sviluppa e aggiorna contemporaneamente. In genere, un componente rappresenta il codice di un progetto di Visual Studio. È meno importante separare le classi all'interno di un componente perché vengono aggiornate contemporaneamente.  
+   Per "componente" in questo caso si intende una classe o un gruppo di classi che si sviluppa e aggiorna contemporaneamente. In genere, un componente rappresenta il codice di un progetto di Visual Studio. È meno importante separare le classi all'interno di un componente perché vengono aggiornate contemporaneamente.  
   
-     Non è pertanto importante separare i componenti dalle classi di una piattaforma relativamente stabile, ad esempio System.dll. La scritture delle interfacce per tutte queste classi creerebbero confusioni nel codice.  
+   Non è pertanto importante separare i componenti dalle classi di una piattaforma relativamente stabile, ad esempio System.dll. La scritture delle interfacce per tutte queste classi creerebbero confusioni nel codice.  
   
- Il codice di StockAnalyzer può pertanto essere migliorato se lo si separa da StockFeed usando un'interfaccia simile alla seguente:  
+  Il codice di StockAnalyzer può pertanto essere migliorato se lo si separa da StockFeed usando un'interfaccia simile alla seguente:  
   
 ```csharp  
 public interface IStockFeed  

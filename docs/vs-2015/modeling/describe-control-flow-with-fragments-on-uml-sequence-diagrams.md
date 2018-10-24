@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e162b1fdc8f775fc7b4d95249ceeac8d86cd0b74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836866"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrivere il flusso di controllo con frammenti in diagrammi di sequenza UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,46 +57,46 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
   
 #### <a name="to-create-a-combined-fragment"></a>Per creare un frammento combinato  
   
-1.  Selezionare un messaggio, o una sequenza di messaggi, che iniziano tutti nella stessa linea di vita o occorrenza esecuzione.  
+1. Selezionare un messaggio, o una sequenza di messaggi, che iniziano tutti nella stessa linea di vita o occorrenza esecuzione.  
   
-    > [!NOTE]
-    >  Se si selezionano più messaggi, questi devono formare una sequenza ininterrotta.  
+   > [!NOTE]
+   >  Se si selezionano più messaggi, questi devono formare una sequenza ininterrotta.  
   
-2.  Fare clic con il pulsante destro del mouse su uno dei messaggi, scegliere **Racchiudi tra**e quindi fare clic sul tipo di frammento combinato desiderato, ad esempio **Alterna frammento combinato**.  
+2. Fare clic con il pulsante destro del mouse su uno dei messaggi, scegliere **Racchiudi tra**e quindi fare clic sul tipo di frammento combinato desiderato, ad esempio **Alterna frammento combinato**.  
   
-     Viene visualizzato un nuovo frammento combinato. L'intestazione indica il tipo di frammento combinato selezionato, ad esempio **Alt**.  
+    Viene visualizzato un nuovo frammento combinato. L'intestazione indica il tipo di frammento combinato selezionato, ad esempio **Alt**.  
   
-     All'interno del frammento combinato è presente un frammento che contiene i messaggi selezionati.  
+    All'interno del frammento combinato è presente un frammento che contiene i messaggi selezionati.  
   
- È possibile aggiungere più operandi interazione ad alcuni tipi di frammento combinato.  
+   È possibile aggiungere più operandi interazione ad alcuni tipi di frammento combinato.  
   
- Dopo avere riorganizzato la disposizione dei messaggi all'interno di un frammento combinato, scegliere **Ridisponi layout** dal menu di scelta rapida per ridimensionare il frame del frammento combinato.  
+   Dopo avere riorganizzato la disposizione dei messaggi all'interno di un frammento combinato, scegliere **Ridisponi layout** dal menu di scelta rapida per ridimensionare il frame del frammento combinato.  
   
 #### <a name="to-add-a-new-interaction-operand-to-a-combined-fragment"></a>Per aggiungere un nuovo operando interazione a un frammento combinato  
   
-1.  Fare clic con il pulsante destro del mouse in uno spazio vuoto nell'operando interazione (2), all'esterno di qualsiasi frammento contenuto e sotto l'intestazione del frammento combinato.  
+1. Fare clic con il pulsante destro del mouse in uno spazio vuoto nell'operando interazione (2), all'esterno di qualsiasi frammento contenuto e sotto l'intestazione del frammento combinato.  
   
-2.  Scegliere **Aggiungi**.  
+2. Scegliere **Aggiungi**.  
   
-3.  Fare clic su **Operando interazione prima**o **Operando interazione dopo**.  
+3. Fare clic su **Operando interazione prima**o **Operando interazione dopo**.  
   
-4.  È possibile aggiungere messaggi all'interno del nuovo operando interazione usando gli strumenti dei messaggi oppure copiando e incollando messaggi esistenti.  
+4. È possibile aggiungere messaggi all'interno del nuovo operando interazione usando gli strumenti dei messaggi oppure copiando e incollando messaggi esistenti.  
   
- È possibile impostare la proprietà **Guard** di un operando interazione per descrivere le condizioni in cui vengono eseguiti i messaggi al suo interno. Ad esempio, in un frammento combinato **Loop** è possibile usare la clausola guard per specificare la condizione durante la quale il ciclo continua. In un frammento combinato **Alt** è possibile specificare una condizione separata per ogni operando interazione.  
+   È possibile impostare la proprietà **Guard** di un operando interazione per descrivere le condizioni in cui vengono eseguiti i messaggi al suo interno. Ad esempio, in un frammento combinato **Loop** è possibile usare la clausola guard per specificare la condizione durante la quale il ciclo continua. In un frammento combinato **Alt** è possibile specificare una condizione separata per ogni operando interazione.  
   
 #### <a name="to-set-the-guard-of-an-interaction-operand"></a>Per impostare la clausola guard di un operando interazione  
   
-1.  Fare clic in uno spazio vuoto nell'operando interazione (2), all'esterno di qualsiasi frammento contenuto.  
+1. Fare clic in uno spazio vuoto nell'operando interazione (2), all'esterno di qualsiasi frammento contenuto.  
   
-     Viene visualizzato un bordo di selezione attorno all'operando interazione e attorno alla condizione guard.  
+    Viene visualizzato un bordo di selezione attorno all'operando interazione e attorno alla condizione guard.  
   
-     L'intestazione nella finestra **Proprietà** indica **Operando interazione**.  
+    L'intestazione nella finestra **Proprietà** indica **Operando interazione**.  
   
-2.  Digitare la condizione guard.  
+2. Digitare la condizione guard.  
   
-     La condizione verrà visualizzata accanto alla parte superiore del frammento (4).  
+    La condizione verrà visualizzata accanto alla parte superiore del frammento (4).  
   
- È possibile impostare le proprietà di alcuni tipi di frammenti combinati.  
+   È possibile impostare le proprietà di alcuni tipi di frammenti combinati.  
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Per impostare o visualizzare le proprietà di un frammento combinato  
   
