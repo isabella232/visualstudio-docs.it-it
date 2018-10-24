@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2584f56e31dea55ff7a4d67b61b8c7453ade4c10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987e0339f2d27405c81ce05b6a30181a1469be7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884173"
 ---
 # <a name="options-text-editor-all-languages"></a>Opzioni, Editor di testo, Tutti i linguaggi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ Questa finestra di dialogo consente di modificare il comportamento predefinito d
  Applica comandi Taglia o Copia a righe vuote in assenza di selezione  
  Questa opzione consente di impostare il comportamento dell'editor quando si posiziona il punto di inserimento su una riga vuota, non si seleziona alcun elemento, quindi si utilizza il comando Copia o Taglia.  
   
--   Se questa opzione è selezionata, la riga vuota viene copiata o tagliata. Se successivamente si utilizza il comando Incolla, viene inserita una nuova riga vuota.  
+- Se questa opzione è selezionata, la riga vuota viene copiata o tagliata. Se successivamente si utilizza il comando Incolla, viene inserita una nuova riga vuota.  
   
--   Se questa opzione è deselezionata, il comando Taglia rimuove le righe vuote. Tuttavia, i dati negli Appunti vengono mantenuti. Quindi, se si utilizza il comando Incolla, viene inserito il contenuto copiato più di recente negli Appunti. Se non è stata effettuata alcuna copia precedente, non viene incollato nulla.  
+- Se questa opzione è deselezionata, il comando Taglia rimuove le righe vuote. Tuttavia, i dati negli Appunti vengono mantenuti. Quindi, se si utilizza il comando Incolla, viene inserito il contenuto copiato più di recente negli Appunti. Se non è stata effettuata alcuna copia precedente, non viene incollato nulla.  
   
- Questa impostazione non ha alcun effetto sul comando Copia o Taglia se una riga non è vuota. Se non si seleziona alcun elemento, viene copiata o tagliata l'intera riga. Se quindi si applica il comando Incolla, viene inserito il testo dell'intera riga, incluso il carattere di fine riga.  
+  Questa impostazione non ha alcun effetto sul comando Copia o Taglia se una riga non è vuota. Se non si seleziona alcun elemento, viene copiata o tagliata l'intera riga. Se quindi si applica il comando Incolla, viene inserito il testo dell'intera riga, incluso il carattere di fine riga.  
   
 > [!TIP]
 >  Per visualizzare gli indicatori per spazi, tabulazioni e fine riga e distinguere pertanto le righe rientrate da quelle completamente vuote, selezionare **Avanzate** dal menu **Modifica**, quindi scegliere **Mostra/Nascondi spazi**.  
