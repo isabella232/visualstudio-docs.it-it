@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895470"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di elementi `PropertyGroup` da valutare.  
@@ -64,11 +64,11 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 
 ### <a name="parent-elements"></a>Elementi padre  
 
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Specifica il blocco di codice da eseguire se le condizioni di tutti gli elementi `When` restituiscono `false`.|  
-|[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
-|[When](../msbuild/when-element-msbuild.md)|Specifica un blocco di codice selezionabile dall'elemento `Choose`.|  
+| Elemento | Descrizione |
+| - | - |
+| [Otherwise](../msbuild/otherwise-element-msbuild.md) | Specifica il blocco di codice da eseguire se le condizioni di tutti gli elementi `When` restituiscono `false`. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [When](../msbuild/when-element-msbuild.md) | Specifica un blocco di codice selezionabile dall'elemento `Choose`. |
 
 ## <a name="remarks"></a>Note  
  Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md).  
@@ -122,5 +122,5 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 ```  
 
 ## <a name="see-also"></a>Vedere anche  
- [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md)   
+ [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)   
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
