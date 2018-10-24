@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByRVA | Documenti Microsoft
+title: Findlinesbyrva | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e14b41fe3e7595ef56364fa92b0153f4f457fdd6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2e2f3713407ad17f468e125a1592ee8d684d27d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869743"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
-Recupera le righe in un modulo specificato che contengono un indirizzo virtuale relativo specificato (RVA).  
+Recupera le righe che contengono un indirizzo virtuale relativo specificato (RVA) in un modulo specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,16 +39,16 @@ HRESULT findLinesByRVA (
  [in] Specifica l'indirizzo come un RVA.  
   
  `length`  
- [in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query.  
+ [in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query viene usata.  
   
  `ppResult`  
- [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco della riga di numeri che copre l'intervallo di indirizzi specificato.  
+ [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco di tutto la riga di numeri che coprono l'intervallo di indirizzi specificato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga contenuti nella funzione specificata utilizzando l'indirizzo della funzione relativo virtuale e lunghezza.  
+ In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga contenuti nella funzione specificata usando l'indirizzo virtuale relativo della funzione e la lunghezza.  
   
 ```C++  
 IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)  

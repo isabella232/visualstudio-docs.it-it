@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: e46da7cf39ad816f70454983c56dd5751981f741
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 303b8677781d7fde893cc74e4fbcdbd5772966c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863022"
 ---
 # <a name="verify-your-xamarin-environment"></a>Verificare l'ambiente Xamarin
 
@@ -42,19 +42,19 @@ Queste azioni creano una soluzione con quattro progetti: un progetto di libreria
 
 1. Verificare che sia installata la versione più recente di Android SDK Tools. A tale scopo, passare a **Strumenti > Android > Android SDK Manager**. Installare le versioni più recenti di Android SDK Tools, degli strumenti della piattaforma Android SDK e degli strumenti di compilazione di Android SDK. Non è necessario installare sempre il livello API Android più recente. Il livello API necessario dipende dal livello della piattaforma che si vuole usare come destinazione. In genere, con la piattaforma Xamarin viene installato anche il livello della piattaforma Android richiesto.
 
-2.  Convalidare la compilazione e il debug in un dispositivo o in un emulatore:
+2. Convalidare la compilazione e il debug in un dispositivo o in un emulatore:
 
-    -   Fare clic con il pulsante destro del mouse sul progetto Android in Esplora soluzioni e scegliere **Imposta come progetto di avvio**.
+   -   Fare clic con il pulsante destro del mouse sul progetto Android in Esplora soluzioni e scegliere **Imposta come progetto di avvio**.
 
-    -   Sulla barra degli strumenti è visualizzata una casella di riepilogo a discesa contenente l'elenco degli emulatori e dei dispositivi Android disponibili.
+   -   Sulla barra degli strumenti è visualizzata una casella di riepilogo a discesa contenente l'elenco degli emulatori e dei dispositivi Android disponibili.
 
-    I dispositivi Android devono essere abilitati per il debug USB tramite Opzioni per sviluppatori nella pagina Impostazioni del dispositivo. Il dispositivo viene quindi collegato al computer con un cavo USB.
+   I dispositivi Android devono essere abilitati per il debug USB tramite Opzioni per sviluppatori nella pagina Impostazioni del dispositivo. Il dispositivo viene quindi collegato al computer con un cavo USB.
 
-    Sono elencati anche gli emulatori. Selezionare uno dei dispositivi o degli emulatori di Visual Studio:
+   Sono elencati anche gli emulatori. Selezionare uno dei dispositivi o degli emulatori di Visual Studio:
 
-  ![Selezionare Visual Studio Emulator for Android come destinazione di debug](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
+   ![Selezionare Visual Studio Emulator for Android come destinazione di debug](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  Per informazioni più dettagliate, vedere [Introducing Visual Studio's Emulator for Android](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/) (Introduzione all'emulatore di Visual Studio for Android) nel blog di Microsoft DevOps. In caso di problemi di funzionamento dell'emulatore, vedere [Risolvere i problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). È anche possibile creare nuovi profili di dispositivo per l'emulatore selezionando **Strumenti > Android > Gestione emulatori Android**.
+   Per informazioni più dettagliate, vedere [Introducing Visual Studio's Emulator for Android](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/) (Introduzione all'emulatore di Visual Studio for Android) nel blog di Microsoft DevOps. In caso di problemi di funzionamento dell'emulatore, vedere [Risolvere i problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). È anche possibile creare nuovi profili di dispositivo per l'emulatore selezionando **Strumenti > Android > Gestione emulatori Android**.
 
 3. Premere **F5** per compilare e distribuire il programma al dispositivo o all'emulatore Android.
 
@@ -68,28 +68,28 @@ Queste azioni creano una soluzione con quattro progetti: un progetto di libreria
 
 ## <a name="ios"></a>iOS
 
-1.  Assicurarsi che il Mac sia disponibile in rete e associato a Visual Studio, come descritto in [Connessione al Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/).
+1. Assicurarsi che il Mac sia disponibile in rete e associato a Visual Studio, come descritto in [Connessione al Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/).
 
-2.  Fare clic con il pulsante destro del mouse sul progetto iOS in Esplora soluzioni e scegliere **Imposta come progetto di avvio**.
+2. Fare clic con il pulsante destro del mouse sul progetto iOS in Esplora soluzioni e scegliere **Imposta come progetto di avvio**.
 
-3.  Selezionare la destinazione **iPhoneSimulator** nell'elenco a discesa di compilazione di Visual Studio, come illustrato di seguito, oppure la destinazione **iPhone**, nel caso di un dispositivo con tethering al Mac.
+3. Selezionare la destinazione **iPhoneSimulator** nell'elenco a discesa di compilazione di Visual Studio, come illustrato di seguito, oppure la destinazione **iPhone**, nel caso di un dispositivo con tethering al Mac.
 
- ![Selezione della destinazione di compilazione di iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
+   ![Selezione della destinazione di compilazione di iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
 
- Se non è elencato alcun simulatore avviare Xcode nel Mac, selezionare **Xcode** > **Preferences** (Preferenze) e fare clic su **Download** (Scarica). Sotto l'intestazione **Components** (Componenti) dovrebbero essere visualizzate le versioni del simulatore disponibili per il download. Altre istruzioni per il debug sono disponibili nella pagina [Debug in iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios).
+   Se non è elencato alcun simulatore avviare Xcode nel Mac, selezionare **Xcode** > **Preferences** (Preferenze) e fare clic su **Download** (Scarica). Sotto l'intestazione **Components** (Componenti) dovrebbero essere visualizzate le versioni del simulatore disponibili per il download. Altre istruzioni per il debug sono disponibili nella pagina [Debug in iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios).
 
-4.  Selezionare la destinazione del dispositivo emulatore dall'elenco a discesa di Visual Studio:
+4. Selezionare la destinazione del dispositivo emulatore dall'elenco a discesa di Visual Studio:
 
- ![Selezione di una destinazione di debug iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
+   ![Selezione di una destinazione di debug iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
 
 5. Avviare il debugger premendo **F5**. Il simulatore viene avviato nel Mac, dove è possibile interagire con l'app mentre viene eseguito il debug in Visual Studio. Se al Mac è connesso un iPhone o un iPad fisico, il dispositivo viene visualizzato nell'elenco ed è possibile selezionarlo. Se nell'elenco non è visualizzato alcun dispositivo o simulatore, controllare la connessione al Mac. Vedere l'articolo collegato nel passaggio 1 precedente o passare a **Strumenti**  > **iOS** > **Associa a Mac**
 
-6.  Se si verificano problemi di connessione al Mac, leggere [Risoluzione dei problemi di connessione](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).
+6. Se si verificano problemi di connessione al Mac, leggere [Risoluzione dei problemi di connessione](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).
 
-7.  Se viene visualizzato l'errore "Non esistono profili di provisioning installati corrispondenti alle chiavi di firma del codice Mac OS X installate", provare i suggerimenti seguenti:
+7. Se viene visualizzato l'errore "Non esistono profili di provisioning installati corrispondenti alle chiavi di firma del codice Mac OS X installate", provare i suggerimenti seguenti:
 
-  - Verificare che l'account Id Apple sia aggiunto in Xcode nel Mac, come descritto nell'articolo [Add your account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Aggiungere l'account personale a Xcode) in apple.com.  Dopo aver aggiunto l'account, assicurarsi di riavviare sia Visual Studio che Xcode.
+   - Verificare che l'account Id Apple sia aggiunto in Xcode nel Mac, come descritto nell'articolo [Add your account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Aggiungere l'account personale a Xcode) in apple.com.  Dopo aver aggiunto l'account, assicurarsi di riavviare sia Visual Studio che Xcode.
 
-  - Nella scheda relativa alla firma del bundle iOS nelle proprietà del progetto iOS verificare che il campo Custom Entitlement sia vuoto per la configurazione di debug attiva.  Nota: è consigliabile provare a rimuovere questa impostazione solo se viene segnalato l'errore precedente.
+   - Nella scheda relativa alla firma del bundle iOS nelle proprietà del progetto iOS verificare che il campo Custom Entitlement sia vuoto per la configurazione di debug attiva.  Nota: è consigliabile provare a rimuovere questa impostazione solo se viene segnalato l'errore precedente.
 
-  ![CrossPlat Xamarin Verify 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin Verify 8")
+   ![CrossPlat Xamarin Verify 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin Verify 8")

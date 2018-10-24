@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Documenti Microsoft
+title: BP_ERROR_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 676ec19fec1406d85e6a7d9e66865b2794f72aa6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f61247bafe95039b89b43e740ce69693b584604f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866339"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Specifica il tipo di errore di un punto di interruzione.  
@@ -62,42 +62,42 @@ public enum enum_BP_ERROR_TYPE {
   
 ## <a name="members"></a>Membri  
  BPET_NONE  
- Non specifica l'errore alcun punto di interruzione.  
+ Non specifica di nessun errore punto di interruzione.  
   
  BPET_TYPE_WARNING  
- Specifica un punto di interruzione di avviso stile di errore.  
+ Specifica un errore di tipo avviso punto di interruzione.  
   
  BPET_TYPE_ERROR  
- Specifica un errore del punto di interruzione lo stile di errore.  
+ Specifica un errore di punto di interruzione di stile di errore.  
   
  BPET_SEV_HIGH  
- Specifica un punto di interruzione di alto livello di gravità di errore.  
+ Specifica un punto di interruzione di elevata gravità errore.  
   
  BPET_SEV_GENERAL  
- Specifica un punto di interruzione a livello di gravità medio di errore.  
+ Specifica un punto di interruzione di media gravità errore.  
   
  BPET_SEV_LOW  
- Specifica un punto di interruzione di basso livello di gravità di errore.  
+ Specifica un punto di interruzione di bassa gravità errore.  
   
  BPET_TYPE_MASK  
- Specifica un errore di tipo maschera punto di interruzione.  
+ Specifica un errore di punto di interruzione stile maschera.  
   
  BPET_SEV_MASK  
- Specifica un punto di interruzione gravità maschera-tipo di errore.  
+ Specifica un punto di interruzione di tipo di maschera di gravità errore.  
   
  BPET_GENERAL_WARNING  
- Specifica un punto di interruzione stile-generale-avviso di errore.  
+ Specifica un errore generale-avviso-style punto di interruzione.  
   
  BPET_GENERAL_ERROR  
- Specifica un punto di interruzione lo stile di errore generale di errore.  
+ Specifica un errore generale-errore-style punto di interruzione.  
   
  BPET_ALL  
  Specifica tutti i tipi di errore di punto di interruzione.  
   
 ## <a name="remarks"></a>Note  
- Questi valori possono essere combinati con un bit per bit `OR` e vengono usate per il `dwType` appartenente il [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struttura. Passato come parametro per il [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) metodo.  
+ Questi valori possono essere combinati con un bit per bit `OR` e vengono utilizzate per il `dwType` membro delle [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struttura. Passato come parametro per il [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) (metodo).  
   
- Un tipo di errore del punto di interruzione è costituito da un tipo e un livello di gravità. Ciò significa che un tipo di errore del punto di interruzione non è mai un tipo (ad esempio, `BPET_TYPE_ERROR`,) o un livello di gravità (ad esempio, `BPET_SEV_GENERAL`) da solo. `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` fornire valori predefiniti dei punti di interruzione di avviso ed errore generale.  
+ Un tipo di errore del punto di interruzione è costituito da un tipo e un livello di gravità. Ciò significa che un tipo di errore del punto di interruzione non è mai semplicemente un tipo (ad esempio, `BPET_TYPE_ERROR`,) o un livello di gravità (ad esempio, `BPET_SEV_GENERAL`) da solo. `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` fornire i valori predefiniti dei punti di interruzione di avviso ed errore generale.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

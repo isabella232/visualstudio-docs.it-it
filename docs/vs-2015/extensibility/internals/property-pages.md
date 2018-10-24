@@ -17,12 +17,12 @@ ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f68dc7cc470e4244616c6e9a3cb41bdeb8f9103
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b2ce17deeb1af3054dfd87a42f0b8114c981d69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868781"
 ---
 # <a name="property-pages"></a>Pagine delle proprietà
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,46 +45,46 @@ Finestra di dialogo Pagine delle proprietà di progetto con la struttura di camp
   
  Sono disponibili solo due categorie di livello superiore in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pagine delle proprietà:  
   
--   Proprietà comuni, che consente di visualizzare informazioni indipendenti dalla configurazione per gli oggetti selezionati. Di conseguenza, quando viene selezionata una delle sottocategorie proprietà comuni, le opzioni di configurazione, piattaforma e Configuration Manager nella parte superiore della finestra di dialogo non sono disponibili.  
+- Proprietà comuni, che consente di visualizzare informazioni indipendenti dalla configurazione per gli oggetti selezionati. Di conseguenza, quando viene selezionata una delle sottocategorie proprietà comuni, le opzioni di configurazione, piattaforma e Configuration Manager nella parte superiore della finestra di dialogo non sono disponibili.  
   
--   Proprietà di configurazione, che contiene informazioni dipendenti dalla configurazione relative ai parametri di compilazione, debug e ottimizzazione per la soluzione o progetto.  
+- Proprietà di configurazione, che contiene informazioni dipendenti dalla configurazione relative ai parametri di compilazione, debug e ottimizzazione per la soluzione o progetto.  
   
- Non è possibile creare le eventuali altre categorie di livello superiore, ma è possibile scegliere di non visualizzare una o l'altra nell'implementazione di `IVsPropertyPage`. Se, ad esempio, non è qualsiasi proprietà indipendenti dalla configurazione da visualizzare per un oggetto, è possibile scegliere di non visualizzare la categoria di proprietà comuni. Per visualizzare le proprietà comuni se `ISpecifyPropertyPages` viene implementata dalla proprietà di configurazione e l'oggetto di visualizzazione dell'elemento quando si implementano `ISpecifyPropertyPages` nell'oggetto di configurazione (l'oggetto che implementa `IVsCfg`, `IVsProjectCfg`ed elementi correlati interfacce).  
+  Non è possibile creare le eventuali altre categorie di livello superiore, ma è possibile scegliere di non visualizzare una o l'altra nell'implementazione di `IVsPropertyPage`. Se, ad esempio, non è qualsiasi proprietà indipendenti dalla configurazione da visualizzare per un oggetto, è possibile scegliere di non visualizzare la categoria di proprietà comuni. Per visualizzare le proprietà comuni se `ISpecifyPropertyPages` viene implementata dalla proprietà di configurazione e l'oggetto di visualizzazione dell'elemento quando si implementano `ISpecifyPropertyPages` nell'oggetto di configurazione (l'oggetto che implementa `IVsCfg`, `IVsProjectCfg`ed elementi correlati interfacce).  
   
- Ogni categoria visualizzata in una categoria principale rappresenta una pagina delle proprietà separate. Voci di categoria e sottocategoria disponibili nella finestra di dialogo sono determinate dall'implementazione della `ISpecifyPropertyPages` e `IVsPropertyPage`.  
+  Ogni categoria visualizzata in una categoria principale rappresenta una pagina delle proprietà separate. Voci di categoria e sottocategoria disponibili nella finestra di dialogo sono determinate dall'implementazione della `ISpecifyPropertyPages` e `IVsPropertyPage`.  
   
- `IDispatch` gli oggetti per gli elementi nel contenitore di selezione che dispongono di proprietà da visualizzare nella proprietà pagine implementare `ISpecifyPropertyPages` per enumerare un elenco di ID di classe. Gli ID di classe vengono passati come variabili a `ISpecifyPropertyPages` e vengono usati per creare un'istanza di pagine delle proprietà. L'elenco di ID di classe viene anche passato a `IVsPropertyPage` per creare la struttura ad albero a sinistra della finestra di dialogo. Le pagine delle proprietà, quindi passare informazioni eseguire il backup per il `IDispatch` oggetto che implementa `ISpecifyPropertyPages` e inserisce le informazioni per ogni pagina.  
+  `IDispatch` gli oggetti per gli elementi nel contenitore di selezione che dispongono di proprietà da visualizzare nella proprietà pagine implementare `ISpecifyPropertyPages` per enumerare un elenco di ID di classe. Gli ID di classe vengono passati come variabili a `ISpecifyPropertyPages` e vengono usati per creare un'istanza di pagine delle proprietà. L'elenco di ID di classe viene anche passato a `IVsPropertyPage` per creare la struttura ad albero a sinistra della finestra di dialogo. Le pagine delle proprietà, quindi passare informazioni eseguire il backup per il `IDispatch` oggetto che implementa `ISpecifyPropertyPages` e inserisce le informazioni per ogni pagina.  
   
- Le proprietà dell'oggetto di visualizzazione vengono recuperate usando `IDispatch` per ogni oggetto nel contenitore di selezione.  
+  Le proprietà dell'oggetto di visualizzazione vengono recuperate usando `IDispatch` per ogni oggetto nel contenitore di selezione.  
   
- Implementazione `Help::DisplayTopicFromF1Keyword` nel pacchetto VSPackage fornisce la funzionalità per il pulsante?.  
+  Implementazione `Help::DisplayTopicFromF1Keyword` nel pacchetto VSPackage fornisce la funzionalità per il pulsante?.  
   
- Per altre informazioni, vedere `IDispatch` e `ISpecifyPropertyPages`in MSDN library.  
+  Per altre informazioni, vedere `IDispatch` e `ISpecifyPropertyPages`in MSDN library.  
   
- Il secondo tipo di pagine delle proprietà visualizzati negli host esempi una forma di griglia delle proprietà, come illustrato nello screenshot seguente.  
+  Il secondo tipo di pagine delle proprietà visualizzati negli host esempi una forma di griglia delle proprietà, come illustrato nello screenshot seguente.  
   
- ![Pagine delle proprietà di VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
-Finestra di dialogo Pagine delle proprietà con la griglia delle proprietà  
+  ![Pagine delle proprietà di VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+  Finestra di dialogo Pagine delle proprietà con la griglia delle proprietà  
   
- Le interfacce `IVSMDPropertyBrowser` e `IVSMDPropertyGrid` (dichiarato in vsmanaged.h) vengono usati per creare e popolare la griglia delle proprietà all'interno di una finestra di dialogo o una finestra.  
+  Le interfacce `IVSMDPropertyBrowser` e `IVSMDPropertyGrid` (dichiarato in vsmanaged.h) vengono usati per creare e popolare la griglia delle proprietà all'interno di una finestra di dialogo o una finestra.  
   
- L'architettura dei progetti è stato notevolmente modificato dalle versioni precedenti di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. In particolare, è attiva la nozione di quale progetto è stato modificato. In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], non vi è alcun concetto di un progetto attivo. Negli ambienti di sviluppo precedenti, il progetto attivo è stato il progetto che crea e Distribuisci i comandi sarebbe per impostazione predefinita indipendentemente dal contesto. A questo punto, la soluzione controlla ed esegue l'arbitraggio che crea e Distribuisci i comandi si applicano a progetti.  
+  L'architettura dei progetti è stato notevolmente modificato dalle versioni precedenti di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. In particolare, è attiva la nozione di quale progetto è stato modificato. In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], non vi è alcun concetto di un progetto attivo. Negli ambienti di sviluppo precedenti, il progetto attivo è stato il progetto che crea e Distribuisci i comandi sarebbe per impostazione predefinita indipendentemente dal contesto. A questo punto, la soluzione controlla ed esegue l'arbitraggio che crea e Distribuisci i comandi si applicano a progetti.  
   
- Qual era in precedenza un progetto attivo ora viene acquisito in uno dei tre modi diversi:  
+  Qual era in precedenza un progetto attivo ora viene acquisito in uno dei tre modi diversi:  
   
--   Il progetto di avvio  
+- Il progetto di avvio  
   
-     È possibile specificare uno o più progetti dalla pagina delle proprietà della soluzione che viene avviato quando l'utente preme F5 o si sceglie di eseguire dal menu Compila. Questo funziona in modo analogo per il progetto attivo precedente nel senso che il relativo nome viene visualizzato in Esplora soluzioni con tipo di carattere grassetto.  
+   È possibile specificare uno o più progetti dalla pagina delle proprietà della soluzione che viene avviato quando l'utente preme F5 o si sceglie di eseguire dal menu Compila. Questo funziona in modo analogo per il progetto attivo precedente nel senso che il relativo nome viene visualizzato in Esplora soluzioni con tipo di carattere grassetto.  
   
-     È possibile recuperare il progetto di avvio come proprietà nel modello di automazione chiamando `DTE.Solution.SolutionBuild.StartupProjects`. In un pacchetto VSPackage, si chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metodi. `IVsSolutionBuildManager` è disponibile come servizio da `QueryService` su SID_SVsSolutionBuildManager. Per altre informazioni, vedere [oggetto di configurazione di progetto](../../extensibility/internals/project-configuration-object.md) e [configurazione della soluzione](../../extensibility/internals/solution-configuration.md).  
+   È possibile recuperare il progetto di avvio come proprietà nel modello di automazione chiamando `DTE.Solution.SolutionBuild.StartupProjects`. In un pacchetto VSPackage, si chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metodi. `IVsSolutionBuildManager` è disponibile come servizio da `QueryService` su SID_SVsSolutionBuildManager. Per altre informazioni, vedere [oggetto di configurazione di progetto](../../extensibility/internals/project-configuration-object.md) e [configurazione della soluzione](../../extensibility/internals/solution-configuration.md).  
   
--   Configurazione di compilazione della soluzione attiva  
+- Configurazione di compilazione della soluzione attiva  
   
-     [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] contiene una configurazione soluzione attiva, disponibile nel modello di automazione implementando `DTE.Solution.SolutionBuild.ActiveConfiguration`. Una configurazione di soluzione è una raccolta che contiene una configurazione di progetto per ogni progetto nella soluzione (ogni progetto può avere più configurazioni su più piattaforme, con nomi diversi). Per altre informazioni relative alle pagine delle proprietà della soluzione, vedere [configurazione della soluzione](../../extensibility/internals/solution-configuration.md).  
+   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] contiene una configurazione soluzione attiva, disponibile nel modello di automazione implementando `DTE.Solution.SolutionBuild.ActiveConfiguration`. Una configurazione di soluzione è una raccolta che contiene una configurazione di progetto per ogni progetto nella soluzione (ogni progetto può avere più configurazioni su più piattaforme, con nomi diversi). Per altre informazioni relative alle pagine delle proprietà della soluzione, vedere [configurazione della soluzione](../../extensibility/internals/solution-configuration.md).  
   
--   Progetto attualmente selezionato  
+- Progetto attualmente selezionato  
   
-     Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> metodo per recuperare la gerarchia del progetto e l'elemento del progetto o gli elementi selezionati. Da DTE, si utilizzerebbe il `SelectedItems.SelectedItem.Project` e `SelectedItems.SelectedItem.ProjectItem` metodi. Codice di esempio in tali intestazioni nel nucleo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] documenti.  
+   Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> metodo per recuperare la gerarchia del progetto e l'elemento del progetto o gli elementi selezionati. Da DTE, si utilizzerebbe il `SelectedItems.SelectedItem.Project` e `SelectedItems.SelectedItem.ProjectItem` metodi. Codice di esempio in tali intestazioni nel nucleo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] documenti.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>   

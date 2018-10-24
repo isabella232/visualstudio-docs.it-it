@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862164"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: utilizzare esclusivamente la tastiera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238524"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Per aggiungere controlli della casella degli strumenti a una finestra di progettazione tramite la tastiera  
   
-1.  Sulla barra dei menu scegliere **Visualizza**, **Casella degli strumenti**.  
+1. Sulla barra dei menu scegliere **Visualizza**, **Casella degli strumenti**.  
   
-2.  Scegliere CTRL + Freccia SU oppure CTRL + Freccia GIÙ per spostarsi tra le sezioni della scheda della casella degli strumenti corrente.  
+2. Scegliere CTRL + Freccia SU oppure CTRL + Freccia GIÙ per spostarsi tra le sezioni della scheda della casella degli strumenti corrente.  
   
-3.  Scegliere Freccia SU o **Freccia GIÙ** per passare da un controllo all'altro.  
+3. Scegliere Freccia SU o **Freccia GIÙ** per passare da un controllo all'altro.  
   
-4.  Dopo aver selezionato il controllo, scegliere Invio.  
+4. Dopo aver selezionato il controllo, scegliere Invio.  
   
- Il controllo viene aggiunto al form o alla finestra di progettazione.  
+   Il controllo viene aggiunto al form o alla finestra di progettazione.  
   
 ## <a name="dialog-box-options"></a>Opzioni della finestra di dialogo  
  È possibile passare da un'opzione all'altra all'interno di una finestra di dialogo e modificare le impostazioni delle opzioni tramite la tastiera.  

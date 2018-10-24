@@ -1,5 +1,5 @@
 ---
-title: Aree di lavoro in Visual Studio | Documenti Microsoft
+title: Le aree di lavoro in Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 02/21/2018
 ms.technology:
@@ -12,58 +12,58 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0230201677fd2422817ca1fbeab6679a424e5c05
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865830"
 ---
 # <a name="workspaces"></a>Workspaces
 
-Un'area di lavoro è il modo in cui Visual Studio rappresenta una raccolta di file in [cartella aperta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), e viene rappresentato dal <xref:Microsoft.VisualStudio.Workspace.IWorkspace> tipo. Di per sé l'area di lavoro non comprensione del contenuto o le funzionalità relative ai file all'interno della cartella. Piuttosto, fornisce un set di API per le funzionalità e le estensioni per produrre e usare dati che altri utenti possa intervenire su Generale. I produttori sono composti da tramite il [Managed Extensibility Framework](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (MEF) utilizzando vari esportare gli attributi.
+Un'area di lavoro è come Visual Studio rappresenta qualsiasi raccolta di file nel [Apri cartella](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), e viene rappresentato dal <xref:Microsoft.VisualStudio.Workspace.IWorkspace> tipo. Di per sé l'area di lavoro non comprende il contenuto o le funzionalità relative ai file all'interno della cartella. Piuttosto, fornisce un set generale di API per le funzionalità e le estensioni per produrre e utilizzare dati che altri utenti possono essere eseguite. I producer sono composti da tramite il [Managed Extensibility Framework](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (MEF) utilizzando vari esporti gli attributi.
 
-## <a name="workspace-providers-and-services"></a>Servizi e i provider dell'area di lavoro
+## <a name="workspace-providers-and-services"></a>Provider dell'area di lavoro e servizi
 
-Servizi e i provider dell'area di lavoro forniscono i dati e le funzionalità da reagire al contenuto di un'area di lavoro. Potrebbero fornire informazioni sui file contestuale, i simboli nei file di origine o la funzionalità di compilazione.
+Servizi e i provider dell'area di lavoro forniscono i dati e le funzionalità per ricevere il contenuto di un'area di lavoro. Potrebbero fornire informazioni sul file contestuale, i simboli nel file di origine, o la funzionalità di compilazione.
 
-Entrambi i concetti utilizzano un [modello di factory](https://en.wikipedia.org/wiki/Factory_method_pattern) e siano stati importati tramite MEF nell'area di lavoro. Implementano tutti gli attributi di esportazione `IProviderMetadataBase` o `IWorkspaceServiceFactoryMetadata`, ma sono presenti tipi concreti che devono usare le estensioni per i tipi esportati.
+Entrambi i concetti di usare una [modello factory](https://en.wikipedia.org/wiki/Factory_method_pattern) e importati tramite MEF nell'area di lavoro. Implementano tutti gli attributi di esportazione `IProviderMetadataBase` o `IWorkspaceServiceFactoryMetadata`, ma esistono tipi concreti utilizzate dalle estensioni per i tipi esportati.
 
-Una differenza tra provider e i servizi è la loro relazione con l'area di lavoro. Un'area di lavoro può avere molti provider di un determinato tipo, ma viene creato un solo servizio di un determinato tipo per ogni area di lavoro. Ad esempio, un'area di lavoro include molti file scanner provider ma l'area di lavoro ha un solo servizio di indicizzazione per ogni area di lavoro.
+Una differenza tra provider e i servizi è la loro relazione con l'area di lavoro. Un'area di lavoro può avere molti provider di un determinato tipo, ma solo un servizio di un particolare tipo viene creato per ogni area di lavoro. Ad esempio, un'area di lavoro ha molti provider di analisi di file ma l'area di lavoro ha un solo servizio di indicizzazione per ogni area di lavoro.
 
-Un'altra differenza principale è il consumo dei dati dal provider e i servizi. L'area di lavoro è il punto di ingresso per ottenere dati dai provider per due motivi. In primo luogo, i provider hanno in genere alcuni set di dati che creano "narrow". I dati potrebbero essere i simboli per un file di origine c# o compilare contesti di file per un _CMakeLists.txt_ file. L'area di lavoro corrisponderanno richiesta del consumer per i provider i cui metadati allineati con la richiesta. In secondo luogo, alcuni scenari consentano per molti provider contribuiscano a una richiesta mentre altri scenari di utilizzare il provider con priorità più alta.
+Un'altra differenza principale è il consumo dei dati dal provider e i servizi. L'area di lavoro è il punto di ingresso per ottenere dati dai provider per due motivi. In primo luogo, i provider hanno in genere alcuni set ristretto di dati creati. I dati possono essere i simboli per un C# file di origine o contesti di file per compilare un _cmakelists. txt_ file. L'area di lavoro corrisponderanno richiesta del consumer ai provider i cui metadati allineare con la richiesta. In secondo luogo, consentano di alcuni scenari per molti provider di contribuire a una richiesta mentre altri scenari di usare il provider con priorità più alta.
 
-Al contrario, le estensioni possono ottenere le istanze di e interagire direttamente con i servizi dell'area di lavoro. Metodi di estensione in `IWorkspace` sono disponibili per i servizi forniti da Visual Studio, ad esempio <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A>. L'estensione può offrire un servizio dell'area di lavoro per i componenti all'interno dell'estensione o delle altre estensioni da utilizzare. È preferibile utilizzare <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetServiceAsync%2A> o un metodo di estensione forniti nel `IWorkspace` tipo.
+Al contrario, le estensioni possono ottenere istanze di e interagire direttamente con i servizi dell'area di lavoro. Metodi di estensione sul `IWorkspace` sono disponibili per i servizi forniti da Visual Studio, ad esempio <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A>. L'estensione può offrire un servizio dell'area di lavoro per i componenti all'interno dell'estensione o per altre estensioni da utilizzare. I consumer utilizzino <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetServiceAsync%2A> o un metodo di estensione fornito dal `IWorkspace` tipo.
 
 >[!WARNING]
-> Non modificare i servizi che sono in conflitto con Visual Studio. Può generare problemi imprevisti.
+> Non creare servizi che sono in conflitto con Visual Studio. Si possono verificare problemi imprevisti.
 
-## <a name="disposal-on-workspace-closure"></a>Disposizione sulla chiusura dell'area di lavoro
+## <a name="disposal-on-workspace-closure"></a>Eliminazione nella chiusura dell'area di lavoro
 
-Sulla chiusura di un'area di lavoro, potrebbe essere necessario Extender dispose ma una chiamata asincrona codice. Il <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> interfaccia è disponibile per la scrittura di codice semplice.
+In chiusura di un'area di lavoro, potrebbe essere necessario Extender dispose ma una chiamata asincrona codice. Il <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> interfaccia è disponibile per consentire di scrivere questo codice semplice.
 
 ## <a name="related-types"></a>Tipi correlati
 
 - <xref:Microsoft.VisualStudio.Workspace.IWorkspace> è l'entità centrale per un'area di lavoro aperto, ad esempio una cartella aperta.
 - <xref:Microsoft.VisualStudio.Workspace.IWorkspaceProviderFactory`1> Crea un provider per ogni area di lavoro creata un'istanza.
 - <xref:Microsoft.VisualStudio.Workspace.IWorkspaceServiceFactory> Crea un servizio per ogni area di lavoro creata un'istanza.
-- <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> deve essere implementato nel provider e i servizi che devono eseguire codice asincrono durante l'eliminazione.
-- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper> fornisce metodi helper per l'accesso ai servizi noti o non autorizzato.
+- <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> devono essere implementati in provider e i servizi che devono eseguire codice asincrono durante l'eliminazione.
+- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper> fornisce metodi helper per l'accesso ai servizi noti o servizi arbitrari.
 
 ## <a name="workspace-settings"></a>Impostazioni dell'area di lavoro
 
-Aree di lavoro hanno un' <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> servizio disponga di controllo semplice ma potenti su un'area di lavoro. Per una panoramica di base delle impostazioni, vedere [personalizzare compilazione ed eseguire il debug di attività](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
+Aree di lavoro includono un <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> servizio con un controllo semplice ma potente su un'area di lavoro. Per una panoramica di base delle impostazioni, vedere [personalizzare la compilazione e il debug di attività](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
-Le impostazioni per la maggior parte `SettingsType` sono tipi _JSON_ file, ad esempio _VSWorkspaceSettings.json_ e _tasks.vs.json_.
+Le impostazioni per la maggior parte `SettingsType` sono tipi _. JSON_ i file, ad esempio _vsworkspacesettings. JSON_ e _Tasks_.
 
-La potenza delle impostazioni dell'area di lavoro è incentrata sui "ambiti", che sono semplicemente i percorsi nell'area di lavoro. Quando un consumer chiama <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A>, tutti gli ambiti che includono il percorso richiesto e il tipo di impostazione vengono aggregati. Priorità di aggregazione di ambito è il seguente:
+La potenza di impostazioni dell'area di lavoro incentri "ambiti", che sono semplicemente i percorsi nell'area di lavoro. Quando un consumer chiama <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A>, vengono aggregati tutti gli ambiti che includono il percorso richiesto e il tipo di impostazione. Priorità di aggregazione di ambito è il seguente:
 
-1. "Impostazioni locali", che è in genere la radice dell'area di lavoro `.vs` directory.
+1. "Impostazioni locali", che è in genere la radice area di lavoro `.vs` directory.
 1. Il percorso richiesto stesso.
-1. La directory padre del percorso richiesto.
-1. Tutti ulteriormente padre delle directory e include la radice dell'area di lavoro.
-1. "Impostazioni globali", ovvero in una directory utente.
+1. La directory padre del percorso di richiesta.
+1. Directory fino a quella inclusa la radice dell'area di lavoro tutti ulteriormente padre.
+1. "Impostazioni globali", ovvero in una directory dell'utente.
 
-Il risultato è un'istanza di <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>. Questo oggetto contiene le impostazioni per un particolare tipo ed è possibile eseguire query per impostare i nomi delle chiavi archiviate come `string`. Il <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> metodi e <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> i metodi di estensione prevede che il chiamante deve conoscere il tipo del valore dell'impostazione richiesto. Come la maggior parte dei file di impostazioni vengono rese persistenti come _JSON_ file, molte chiamate utilizzeranno `string`, `bool`, `int`e matrici di questi tipi. Sono supportati anche i tipi di oggetto. In questi casi, è possibile utilizzare `IWorkspaceSettings` se stesso come argomento di tipo. Ad esempio:
+Il risultato è un'istanza di <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>. Questo oggetto contiene le impostazioni per un tipo particolare e possono eseguire query per l'impostazione di nomi delle chiavi archiviate come `string`. Il <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> metodi e <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> i metodi di estensione prevede che il chiamante deve conoscere il tipo del valore dell'impostazione richiesto. Poiché la maggior parte dei file di impostazioni vengono rese persistenti come _. JSON_ i file, molte chiamate userà `string`, `bool`, `int`e matrici di questi tipi. Sono supportati anche i tipi di oggetto. In questi casi, è possibile usare `IWorkspaceSettings` se stesso come argomento di tipo. Ad esempio:
 
 ```json
 {
@@ -80,7 +80,7 @@ Il risultato è un'istanza di <xref:Microsoft.VisualStudio.Workspace.Settings.IW
 }
 ```
 
-Presupponendo che queste impostazioni sono stati in cui un utente _VSWorkspaceSettings.json_, i dati può essere eseguito come:
+Supponendo che queste impostazioni sono stati in cui un utente _vsworkspacesettings. JSON_, i dati sono accessibili come:
 
 ```csharp
 using System.Collections.Generic;
@@ -115,13 +115,13 @@ private static void ReadSettings(IWorkspace workspace)
 ```
 
 >[!NOTE]
->Non sono correlate alle API disponibile in queste impostazioni API il `Microsoft.VisualStudio.Settings` dello spazio dei nomi. Le impostazioni dell'area di lavoro sono indipendenti dell'host e utilizzano file di impostazioni specifiche dell'area di lavoro o i provider di impostazioni dinamiche.
+>Queste impostazioni API non sono correlate alle API disponibile nel `Microsoft.VisualStudio.Settings` dello spazio dei nomi. Le impostazioni dell'area di lavoro sono indipendente dell'host e usano file di impostazioni specifiche dell'area di lavoro o i provider di impostazioni dinamiche.
 
-### <a name="providing-dynamic-settings"></a>Fornire impostazioni dinamiche
+### <a name="providing-dynamic-settings"></a>Fornendo impostazioni dinamiche
 
-Le estensioni possono fornire <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProvider>s. Questi provider in memoria consentono alle estensioni aggiungere impostazioni o eseguire l'override di altri utenti.
+Le estensioni possono fornire <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProvider>s. Questi provider in memoria consentono le estensioni per aggiungere le impostazioni o eseguire l'override di altri utenti.
 
-Esportazione di un `IWorkspaceSettingsProvider` è diverso da quello di altri provider di area di lavoro. La factory non è `IWorkspaceProviderFactory` e nessun tipo di attributo speciale. Diversamente, implementare <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProviderFactory> e usare `[Export(typeof(IWorkspaceSettingsProviderFactory))]`.
+Esportazione di un `IWorkspaceSettingsProvider` è diverso rispetto ad altri provider dell'area di lavoro. La factory non è `IWorkspaceProviderFactory` e nessun tipo di attributo speciali. Implementare invece <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProviderFactory> e usare `[Export(typeof(IWorkspaceSettingsProviderFactory))]`.
 
 ```csharp
 // Common workspace provider factory pattern
@@ -149,13 +149,13 @@ internal class MySettingsProviderFactory : IWorkspaceSettingsProviderFactory
 
 - <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> impostazioni di letture e le aggregazioni per area di lavoro.
 - <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetSettingsManager%2A> Ottiene il `IWorkspaceSettingsManager` per un'area di lavoro.
-- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> Ottiene le impostazioni per un determinato ambito aggregati in tutti gli ambiti sovrapposti.
-- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> contiene le impostazioni per un particolare ambito.
+- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> Ottiene le impostazioni per un determinato ambito aggregato per tutti gli ambiti sovrapposti.
+- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> contiene le impostazioni per un determinato ambito.
 
-## <a name="workspace-suggested-practices"></a>Area di lavoro suggerito procedure consigliate
+## <a name="workspace-suggested-practices"></a>Area di lavoro suggeriti procedure consigliate
 
-- Restituire gli oggetti dal `IWorkspaceProviderFactory.CreateProvider` o le API simile che memorizza i relativi `Workspace` contesto quando creato. Interfacce di provider vengono scritti in attesa di che questo oggetto viene mantenuto al momento della creazione.
-- Salvare le cache specifiche dell'area di lavoro o le impostazioni all'interno del percorso "Impostazioni locali" dell'area di lavoro. Creare un tracciato per i file tramite `Microsoft.VisualStudio.Workspace.WorkspaceHelper.MakeRootedUnderWorkingFolder` in Visual Studio 2017 15,6 o versione successiva. Per le versioni precedenti alla versione 15,6, usare il frammento seguente:
+- Restituire gli oggetti dal `IWorkspaceProviderFactory.CreateProvider` o le API simili che memorizzano le `Workspace` contesto quando creato. Le interfacce i provider vengono scritte aspetta che questo oggetto viene mantenuto durante la creazione.
+- Salvare le impostazioni all'interno del percorso "Impostazioni locali" dell'area di lavoro o le cache specifiche dell'area di lavoro. Creare un percorso per il file utilizzando `Microsoft.VisualStudio.Workspace.WorkspaceHelper.MakeRootedUnderWorkingFolder` in Visual Studio 2017 versione 15.6 o versione successiva. Nelle versioni precedenti alla versione 15.6, usare il frammento seguente:
 
 ```csharp
 using System.IO;
@@ -171,17 +171,17 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 ## <a name="solution-events-and-package-auto-load"></a>Gli eventi della soluzione e auto-caricamento del pacchetto
 
-Possono implementare pacchetti caricati `IVsSolutionEvents7` e richiamare `IVsSolution.AdviseSolutionEvents`. Include eventi su apertura e chiusura di una cartella in Visual Studio.
+I pacchetti caricati possono implementare `IVsSolutionEvents7` e richiamare `IVsSolution.AdviseSolutionEvents`. Include gli eventi su apertura e chiusura di una cartella in Visual Studio.
 
-Un contesto dell'interfaccia utente può essere utilizzato per caricare automaticamente il pacchetto. Il valore è `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
+Un contesto dell'interfaccia utente utilizzabile per il caricamento automatico del pacchetto. Il valore è `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Il pacchetto SourceExplorerPackage non è stato caricato correttamente
 
-Estensibilità dell'area di lavoro è molto frequentemente basate su MEF ed errore di composizione comporterà la generazione del pacchetto hosting Apri cartella in cui non caricato. Se, ad esempio, un'estensione consente di esportare un tipo con `ExportFileContextProviderAttribute`, ma il tipo implementa solo `IWorkspaceProviderFactory<IFileContextActionProvider>`, si verificherà un errore durante il tentativo di aprire una cartella in Visual Studio. I dettagli dell'errore sono reperibile nella _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Risolvere gli eventuali errori per i tipi implementati dall'estensione.
+Estendibilità dell'area di lavoro è principalmente basato su MEF e gli errori di composizione causerà il pacchetto di hosting di Apri cartella per il caricamento ha esito negativo. Ad esempio, se un'estensione consente di esportare un tipo con `ExportFileContextProviderAttribute`, ma il tipo implementa solo `IWorkspaceProviderFactory<IFileContextActionProvider>`, si verificherà un errore durante il tentativo di aprire una cartella in Visual Studio. I dettagli dell'errore sono reperibile nel _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Risolvere gli eventuali errori per i tipi implementati dall'estensione.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* [I contesti di file](workspace-file-contexts.md) -provider di contesto File portare intelligence codice per le aree di lavoro di cartella aperta. 
-* [L'indicizzazione](workspace-indexing.md) -l'indicizzazione dell'area di lavoro raccoglie e mantiene le informazioni sull'area di lavoro.
+* [I contesti di file](workspace-file-contexts.md) -provider di contesto File bring intelligence codice per le aree di lavoro di Apri cartella. 
+* [L'indicizzazione](workspace-indexing.md) -area di lavoro di indicizzazione raccoglie e rende persistenti le informazioni sull'area di lavoro.

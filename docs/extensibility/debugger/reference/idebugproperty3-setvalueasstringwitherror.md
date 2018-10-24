@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Documenti Microsoft
+title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9379d474f135c5d6bbe82fd3391e7e4d8241f1b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5f747185dd696f6d70cc4c514f54eaddef5bfa7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864440"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Imposta il valore di questa proprietà e restituisce un messaggio di errore, se necessario.  
@@ -56,7 +56,7 @@ int SetValueAsStringWithError(
  [in] Il periodo di tempo di attesa per il valore da impostare (`INFINITE` l'attesa è illimitata).  
   
  `errorString`  
- [out] Se si è verificato un errore di impostazione del valore, questo contiene il motivo dell'errore.  
+ [out] Se si è verificato un errore di impostazione del valore, contiene il motivo dell'errore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
@@ -65,7 +65,7 @@ int SetValueAsStringWithError(
  Il valore in ingresso può essere un'espressione da valutare.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CProperty** oggetto che espone il [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un **CProperty** oggetto che espone le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia.  
   
 ```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   

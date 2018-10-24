@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870055"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
@@ -39,7 +39,7 @@ Vengono forniti molti grafici incorporati. È possibile usare i grafici incorpor
 Nella tabella seguente sono riportati i grafici incorporati disponibili per l'analisi dei risultati dei test di carico.
 
 |Nome grafico|Descrizione|
-|----------------|-----------------|
+|-|-|
 |Indicatori chiave|Contatori che descrivono gli aspetti di base delle prestazioni del test, ad esempio carico utente, velocità effettiva e tempo di risposta.|
 |Tempo di risposta per test|Dati relativi alla quantità di tempo richiesta per l'esecuzione dei test.|
 |Tempo di risposta per pagina|Tempo di risposta medio per le pagine Web a cui si accede durante il test di carico.|
@@ -63,7 +63,7 @@ Nella tabella seguente sono riportati i grafici incorporati disponibili per l'an
  Nella legenda sono presenti le seguenti colonne:
 
 |Contatore|Nome del contatore|
-|-------------|-----------------------------|
+|-|-|
 |Istanza|Il nome dell'istanza del contatore.|
 |Category|Il nome della categoria del contatore.|
 |Computer|Il nome del computer in cui viene raccolto il contatore.|
@@ -77,7 +77,7 @@ Nella tabella seguente sono riportati i grafici incorporati disponibili per l'an
 ## <a name="tasks"></a>Attività
 
 |Attività|Argomenti correlati|
-|-----------|-----------------------|
+|-|-|
 |**Personalizzare i grafici tramite la legenda:** la legenda della visualizzazione Grafici consente di visualizzare informazioni per ciascun contatore delle prestazioni associato a un grafico. È possibile usare la legenda per rimuovere ed evidenziare contatori delle prestazioni nel grafico e personalizzare le opzioni relative ai tracciati.|-   [Uso della legenda della visualizzazione Grafici per analizzare i test di carico](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Visualizzare i contatori nei grafici:** è possibile aggiungere diversi tipi di dati in un grafico dei risultati dei test di carico inserendo contatori nel grafico.|-   [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Fare zoom avanti nei grafici:** al termine di un test di carico, è possibile usare le barre dello zoom per eseguire lo zoom avanti e scorrere un'area del grafico. Lo zoom avanti consente di analizzare i dettagli anche minuti dei dati generati durante l'esecuzione di un test di carico.|-   [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|

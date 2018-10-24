@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 0d79c8a57a58e92f826a9d6bf48ac15213a2f58e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 829882cf3504583a4e9dbc3532c900df26a921f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862528"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Scrivere unit test per le DLL C++ in Visual Studio
 
@@ -42,84 +42,84 @@ ms.locfileid: "39382668"
 
 ###  <a name="staticLink"></a> Per modificare la DLL in una libreria statica
 
--   Se i test devono usare membri che non vengono esportati dal progetto della DLL e il progetto sottoposto al test viene compilato come libreria dinamica, può essere utile convertirlo in una libreria statica.
+- Se i test devono usare membri che non vengono esportati dal progetto della DLL e il progetto sottoposto al test viene compilato come libreria dinamica, può essere utile convertirlo in una libreria statica.
 
-    1.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
+  1.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
 
-    2.  Scegliere **Proprietà di configurazione** > **Generale**.
+  2.  Scegliere **Proprietà di configurazione** > **Generale**.
 
-    3.  Impostare **Tipo di configurazione** su **Libreria statica (.lib)**.
+  3.  Impostare **Tipo di configurazione** su **Libreria statica (.lib)**.
 
- Continuare con la procedura [Per collegare i test all'oggetto o ai file di libreria](#objectRef).
+  Continuare con la procedura [Per collegare i test all'oggetto o ai file di libreria](#objectRef).
 
 ###  <a name="projectRef"></a> Per fare riferimento a funzioni della DLL esportate dal progetto di test
 
--   Se il progetto della DLL esporta le funzioni che si vogliono testare, è possibile aggiungere un riferimento al progetto di codice dal progetto di test.
+- Se il progetto della DLL esporta le funzioni che si vogliono testare, è possibile aggiungere un riferimento al progetto di codice dal progetto di test.
 
-    1.  Creare un progetto unit test nativo.
+  1.  Creare un progetto unit test nativo.
 
-        1.  Nel menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++**.
+      1.  Nel menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++**.
 
-    2.  In **Esplora soluzioni** scegliere **Riferimenti** dal menu di scelta rapida del progetto di test. Si apre la finestra **Proprietà** del progetto.
+  2.  In **Esplora soluzioni** scegliere **Riferimenti** dal menu di scelta rapida del progetto di test. Si apre la finestra **Proprietà** del progetto.
 
-    3.  Selezionare **Proprietà comuni** > **Framework e riferimenti** e quindi scegliere il pulsante **Aggiungi nuovo riferimento**.
+  3.  Selezionare **Proprietà comuni** > **Framework e riferimenti** e quindi scegliere il pulsante **Aggiungi nuovo riferimento**.
 
-    4.  Selezionare **Progetti** e quindi il progetto da testare.
+  4.  Selezionare **Progetti** e quindi il progetto da testare.
 
-         Scegliere il pulsante **Aggiungi**.
+       Scegliere il pulsante **Aggiungi**.
 
-    5.  Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
+  5.  Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
 
-         Scegliere **Proprietà di configurazione** > **Directory di VC++** > **Directory di inclusione**.
+       Scegliere **Proprietà di configurazione** > **Directory di VC++** > **Directory di inclusione**.
 
-         Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
+       Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
- Andare a [Scrittura di unit test](#addTests).
+  Andare a [Scrittura di unit test](#addTests).
 
 ###  <a name="objectRef"></a> Per collegare i test all'oggetto o a file di libreria
 
--   Se la DLL non esporta le funzioni che si vuole testare, è possibile aggiungere il file con estensione *obj* o *lib* di output alle dipendenze del progetto di test.
+- Se la DLL non esporta le funzioni che si vuole testare, è possibile aggiungere il file con estensione *obj* o *lib* di output alle dipendenze del progetto di test.
 
-    1.  Creare un progetto unit test nativo.
+  1.  Creare un progetto unit test nativo.
 
-        1.  Nel menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test nativo**.
+      1.  Nel menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test nativo**.
 
-    2.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto di test.
+  2.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto di test.
 
-    3.  Scegliere **Proprietà di configurazione** > **Linker** > **Input** > **Dipendenze aggiuntive**.
+  3.  Scegliere **Proprietà di configurazione** > **Linker** > **Input** > **Dipendenze aggiuntive**.
 
-         Scegliere **Modifica** e aggiungere i nomi dei file con estensione **obj** o **lib**. Non usare nomi di percorso completo.
+       Scegliere **Modifica** e aggiungere i nomi dei file con estensione **obj** o **lib**. Non usare nomi di percorso completo.
 
-    4.  Scegliere **Proprietà di configurazione** > **Linker** > **Generale** > **Directory librerie aggiuntive**.
+  4.  Scegliere **Proprietà di configurazione** > **Linker** > **Generale** > **Directory librerie aggiuntive**.
 
-         Scegliere **Modifica** e aggiungere il percorso della directory dei file con estensione **obj** o **lib**. Il percorso è in genere contenuto nella cartella di compilazione del progetto sottoposto a test.
+       Scegliere **Modifica** e aggiungere il percorso della directory dei file con estensione **obj** o **lib**. Il percorso è in genere contenuto nella cartella di compilazione del progetto sottoposto a test.
 
-    5.  Scegliere **Proprietà di configurazione** > **Directory di VC++** > **Directory di inclusione**.
+  5.  Scegliere **Proprietà di configurazione** > **Directory di VC++** > **Directory di inclusione**.
 
-         Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
+       Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
- Andare a [Scrittura di unit test](#addTests).
+  Andare a [Scrittura di unit test](#addTests).
 
 ###  <a name="sameProject"></a> Per aggiungere unit test nello stesso progetto
 
-1.  Modificare il codice prodotto delle proprietà del progetto per includere le intestazioni e i file di libreria necessari per gli unit test.
+1. Modificare il codice prodotto delle proprietà del progetto per includere le intestazioni e i file di libreria necessari per gli unit test.
 
-    1.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
+   1.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
 
-    2.  Scegliere **Proprietà di configurazione** > **Directory di VC++**.
+   2.  Scegliere **Proprietà di configurazione** > **Directory di VC++**.
 
-    3.  Modificare le directory di inclusione e di libreria:
+   3.  Modificare le directory di inclusione e di libreria:
 
-        |Directory|Proprietà|
-        |-|-|
-        |**Directory di inclusione** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Directory delle librerie** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
+       |Directory|Proprietà|
+       |-|-|
+       |**Directory di inclusione** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
+       |**Directory delle librerie** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Aggiungere un file di unit test C++:
+2. Aggiungere un file di unit test C++:
 
-    -   In **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo elemento** > **Unit Test C++** dal menu di scelta rapida del progetto.
+   -   In **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo elemento** > **Unit Test C++** dal menu di scelta rapida del progetto.
 
- Andare a [Scrittura di unit test](#addTests).
+   Andare a [Scrittura di unit test](#addTests).
 
 ##  <a name="addTests"></a> Scrivere gli unit test
 

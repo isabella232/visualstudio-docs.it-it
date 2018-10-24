@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b737fc8b589d746a5fa733c835d64c4af30a221b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867182"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Procedura: proteggere i fogli di lavoro a livello di codice
   La funzionalità di protezione di Microsoft Office Excel consente di impedire la modifica degli oggetti di un foglio di lavoro da parte degli utenti o mediante codice. Per impostazione predefinita, dopo l'attivazione della protezione tutte le celle risultano bloccate.  
@@ -39,11 +39,11 @@ ms.locfileid: "35673687"
   
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>Per proteggere un foglio di lavoro nella finestra di progettazione  
   
-1.  Nel **modifiche** gruppo o il **revisione** scheda, fare clic su **Proteggi foglio**.  
+1. Nel **modifiche** gruppo o il **revisione** scheda, fare clic su **Proteggi foglio**.  
   
-     Il **Proteggi foglio** verrà visualizzata la finestra di dialogo. È possibile impostare una password e specificare le azioni che gli utenti possono eseguire nel foglio di lavoro, ad esempio formattare le celle o inserire righe.  
+    Il **Proteggi foglio** verrà visualizzata la finestra di dialogo. È possibile impostare una password e specificare le azioni che gli utenti possono eseguire nel foglio di lavoro, ad esempio formattare le celle o inserire righe.  
   
- È anche possibile consentire agli utenti di modificare intervalli specifici nei fogli di lavoro protetti.  
+   È anche possibile consentire agli utenti di modificare intervalli specifici nei fogli di lavoro protetti.  
   
 ### <a name="to-allow-editing-in-specific-ranges"></a>Per consentire la modifica in intervalli specifici  
   

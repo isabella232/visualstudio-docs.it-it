@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1abbf86799b290bd8afd9ed76fdb7f94b390c1b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865856"
 ---
 # <a name="client-side-script-debugging"></a>Debug di script sul lato client
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,17 +47,17 @@ Il debugger di Visual Studio offre un ambiente di debug completo per l'individua
   
  Il debugger si connette automaticamente allo script quando si verifica uno dei seguenti casi:  
   
--   Rilevamento di punti di interruzione impostati nello script.  
+- Rilevamento di punti di interruzione impostati nello script.  
   
--   Rilevamento di un'istruzione `Stop` VBScript o un'istruzione `debugger` JScript nel codice script.  
+- Rilevamento di un'istruzione `Stop` VBScript o un'istruzione `debugger` JScript nel codice script.  
   
--   Rilevamento di un errore di sintassi o di runtime nello script da parte del browser o del server. In tal caso, verrà visualizzata una finestra di dialogo con l'opzione per iniziare il debug.  
+- Rilevamento di un errore di sintassi o di runtime nello script da parte del browser o del server. In tal caso, verrà visualizzata una finestra di dialogo con l'opzione per iniziare il debug.  
   
- In caso di connessione manuale allo script, l'esecuzione del processo di script continua fino a quando viene nuovamente arrestato. È possibile arrestarlo scegliendo **Interrompi** dal menu **Debug** .  
+  In caso di connessione manuale allo script, l'esecuzione del processo di script continua fino a quando viene nuovamente arrestato. È possibile arrestarlo scegliendo **Interrompi** dal menu **Debug** .  
   
- Quando il debugger viene connesso automaticamente, l'esecuzione degli script viene arrestata nella riga dove si rileva il punto di interruzione, l'istruzione `Stop` o l'istruzione `debugger` o un errore, o nel punto scelto per iniziare il debug in Internet Explorer.  
+  Quando il debugger viene connesso automaticamente, l'esecuzione degli script viene arrestata nella riga dove si rileva il punto di interruzione, l'istruzione `Stop` o l'istruzione `debugger` o un errore, o nel punto scelto per iniziare il debug in Internet Explorer.  
   
- A tal punto, è possibile utilizzare le comuni utilità del debugger per iniziare il debug. Ad esempio, è possibile utilizzare i comandi **Esegui** per continuare a eseguire il codice riga per riga. Per visualizzare e controllare il flusso di script è possibile utilizzare la finestra **Stack di chiamate** . Per visualizzare o modificare le variabili e le proprietà utilizzare le finestre delle variabili o la finestra di **controllo immediato** .  
+  A tal punto, è possibile utilizzare le comuni utilità del debugger per iniziare il debug. Ad esempio, è possibile utilizzare i comandi **Esegui** per continuare a eseguire il codice riga per riga. Per visualizzare e controllare il flusso di script è possibile utilizzare la finestra **Stack di chiamate** . Per visualizzare o modificare le variabili e le proprietà utilizzare le finestre delle variabili o la finestra di **controllo immediato** .  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>Messaggi di errore avanzati per il debug di script  
  Visual Studio offre messaggi di errore avanzati per problemi di debug di script comuni. Questi messaggi vengono visualizzati solo in caso di connessione manuale a Internet Explorer. Se si verifica una condizione di errore all'apertura automatica di Internet Explorer, provare la connessione manuale in modo da poter vedere i messaggi di errore.  
