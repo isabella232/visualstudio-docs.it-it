@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 55c9e7c6ec4a34d59c45b2a56abedaa6d3fd2974
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815613"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942445"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Procedura: Installare il profiler autonomo
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre un profiler autonomo basato sulla riga di comando che può essere eseguito senza installare l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questa situazione si verifica quando un computer non ha o non può avere un ambiente di sviluppo installato. È consigliabile, ad esempio, non installare un ambiente di sviluppo in un server Web di produzione.  
@@ -28,28 +28,28 @@ ms.locfileid: "34815613"
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Per installare il profiler autonomo  
   
-1.  Individuare il programma di installazione del profiler autonomo (*vs_profiler.exe*) nei supporti di installazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nella directory che include il percorso *\Standalone Profiler* ed eseguirlo.  
+1. Individuare il programma di installazione del profiler autonomo (*vs_profiler.exe*) nei supporti di installazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nella directory che include il percorso *\Standalone Profiler* ed eseguirlo.  
   
-2.  Aggiungere i percorsi per *vsintr.exe* e *msdis150.dll* al percorso di sistema.  
+2. Aggiungere i percorsi per *vsintr.exe* e *msdis150.dll* al percorso di sistema.  
   
-    > [!NOTE]
-    >  Nell'installazione predefinita di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] *vsinstr.exe* e *msdis150.dll* si trovano in *\Programmi\Visual Studio 10\Team Tools\Performance Tools*.  
+   > [!NOTE]
+   >  Nell'installazione predefinita di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] *vsinstr.exe* e *msdis150.dll* si trovano in *\Programmi\Visual Studio 10\Team Tools\Performance Tools*.  
   
-3.  Al prompt dei comandi digitare **VSInstr**.  
+3. Al prompt dei comandi digitare **VSInstr**.  
   
-    > [!NOTE]
-    >  Se vengono visualizzate le informazioni di utilizzo per vsinstr.exe, significa che tutti gli elementi sono configurati correttamente. Se viene visualizzato un errore in cui viene comunicato che vsinstr.exe o una delle relative dipendenze non è stata trovata, verificare di aver specificato correttamente i percorsi come descritto nel passaggio 2.  
+   > [!NOTE]
+   >  Se vengono visualizzate le informazioni di utilizzo per vsinstr.exe, significa che tutti gli elementi sono configurati correttamente. Se viene visualizzato un errore in cui viene comunicato che vsinstr.exe o una delle relative dipendenze non è stata trovata, verificare di aver specificato correttamente i percorsi come descritto nel passaggio 2.  
   
-4.  Specificare il server dei simboli impostando la variabile **_NT_SYMBOL_PATH** su **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
+4. Specificare il server dei simboli impostando la variabile **_NT_SYMBOL_PATH** su **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
   
-5.  Dopo aver impostato il server dei simboli usando le variabili di ambiente di sistema, eseguire gli strumenti del profiler da riga di comando in un nuovo prompt dei comandi. In questo modo le nuove variabili di ambiente vengono rese effettive. Nella finestra del prompt dei comandi digitare il comando seguente:  
+5. Dopo aver impostato il server dei simboli usando le variabili di ambiente di sistema, eseguire gli strumenti del profiler da riga di comando in un nuovo prompt dei comandi. In questo modo le nuove variabili di ambiente vengono rese effettive. Nella finestra del prompt dei comandi digitare il comando seguente:  
   
-     **start %COMSPEC%**  
+    **start %COMSPEC%**  
   
-    > [!NOTE]
-    >  Per istruzioni dettagliate su come impostare il pacchetto del server dei simboli, vedere [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+   > [!NOTE]
+   >  Per istruzioni dettagliate su come impostare il pacchetto del server dei simboli, vedere [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
-6.  Usare lo strumento [VSPerfReport](../profiling/vsperfreport.md) per serializzare i simboli nel file dei dati di profilatura (con estensione vsp). Usare le opzioni **VSPerfReport /summary:all /packsymbols**. Se non sono presenti simboli inseriti nel file di dati, assicurarsi di aver impostato la variabile di ambiente _NT_SYMBOL_PATH.  
+6. Usare lo strumento [VSPerfReport](../profiling/vsperfreport.md) per serializzare i simboli nel file dei dati di profilatura (con estensione vsp). Usare le opzioni **VSPerfReport /summary:all /packsymbols**. Se non sono presenti simboli inseriti nel file di dati, assicurarsi di aver impostato la variabile di ambiente _NT_SYMBOL_PATH.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   

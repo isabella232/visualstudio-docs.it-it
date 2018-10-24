@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949435"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,47 +53,47 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
  **Mostra impostazioni per**  
  Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificare le combinazioni di tipi i carattere e colori. Dopo aver selezionato un elemento in questo elenco è possibile personalizzare le impostazioni dei colori per l'elemento selezionato in **Elementi visualizzati**.  
   
--   **Editor di testo**  
+- **Editor di testo**  
   
-     Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per l'Editor di testo influiscono sull'aspetto del testo nell'editor di testo predefinito. I documenti aperti in un editor di testo all'esterno dell'IDE non saranno interessati da queste impostazioni.  
+   Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per l'Editor di testo influiscono sull'aspetto del testo nell'editor di testo predefinito. I documenti aperti in un editor di testo all'esterno dell'IDE non saranno interessati da queste impostazioni.  
   
--   **Stampante**  
+- **Stampante**  
   
-     Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per gli elementi Stampante influiscono sull'aspetto del testo nei documenti stampati.  
+   Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per gli elementi Stampante influiscono sull'aspetto del testo nei documenti stampati.  
   
-    > [!NOTE]
-    >  Se necessario, è possibile selezionare un tipo di carattere predefinito per la stampa diverso da quello usato per la visualizzazione nell'editor di testo. Questo può essere utile durante la stampa di codice che contiene sia caratteri a un byte che DBCS.  
+  > [!NOTE]
+  >  Se necessario, è possibile selezionare un tipo di carattere predefinito per la stampa diverso da quello usato per la visualizzazione nell'editor di testo. Questo può essere utile durante la stampa di codice che contiene sia caratteri a un byte che DBCS.  
   
--   **Completamento istruzioni**  
+- **Completamento istruzioni**  
   
-     Modifica lo stile e la dimensione del carattere per il testo visualizzato nel popup di completamento delle istruzioni nell'editor.  
+   Modifica lo stile e la dimensione del carattere per il testo visualizzato nel popup di completamento delle istruzioni nell'editor.  
   
--   **Descrizione comando editor**  
+- **Descrizione comando editor**  
   
-     Modifica lo stile e la dimensione del carattere per il testo visualizzato nelle descrizioni comandi visualizzate nell'editor.  
+   Modifica lo stile e la dimensione del carattere per il testo visualizzato nelle descrizioni comandi visualizzate nell'editor.  
   
--   **Tipo di carattere ambiente**  
+- **Tipo di carattere ambiente**  
   
-     Modifica lo stile e la dimensione del carattere per tutti gli elementi dell'interfaccia utente dell'IDE per i quali non è stata ancora impostata un'opzione separata in **Mostra impostazioni per**. Questa opzione è valida, ad esempio, per la **Pagina iniziale** ma non influisce sulla finestra di **Output**.  
+   Modifica lo stile e la dimensione del carattere per tutti gli elementi dell'interfaccia utente dell'IDE per i quali non è stata ancora impostata un'opzione separata in **Mostra impostazioni per**. Questa opzione è valida, ad esempio, per la **Pagina iniziale** ma non influisce sulla finestra di **Output**.  
   
--   **[Tutte le finestre degli strumenti di testo]**  
+- **[Tutte le finestre degli strumenti di testo]**  
   
-     Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per questo elemento influiscono sull'aspetto del testo nelle finestre degli strumenti con riquadri di output nell'IDE. Ad esempio, finestra di output, finestra di comando, finestra di controllo immediato e così via.  
+   Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per questo elemento influiscono sull'aspetto del testo nelle finestre degli strumenti con riquadri di output nell'IDE. Ad esempio, finestra di output, finestra di comando, finestra di controllo immediato e così via.  
   
-    > [!NOTE]
-    >  Le modifiche al testo degli elementi **[Tutte le finestre degli strumenti di testo]** non sono effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.  
+  > [!NOTE]
+  >  Le modifiche al testo degli elementi **[Tutte le finestre degli strumenti di testo]** non sono effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.  
   
- **Valori predefiniti**  
- Reimposta i valori relativi al tipo di carattere e al colore dell'elemento elenco selezionato in **Mostra impostazioni per**. Il pulsante **Usa** viene visualizzato quando sono disponibili per la selezione altre combinazioni di visualizzazione. Ad esempio, è possibile scegliere tra due combinazioni per l'elemento Stampante.  
+  **Valori predefiniti**  
+  Reimposta i valori relativi al tipo di carattere e al colore dell'elemento elenco selezionato in **Mostra impostazioni per**. Il pulsante **Usa** viene visualizzato quando sono disponibili per la selezione altre combinazioni di visualizzazione. Ad esempio, è possibile scegliere tra due combinazioni per l'elemento Stampante.  
   
- **Carattere (tipi di carattere a larghezza fissa in grassetto)**  
- Elenca tutti i tipi di carattere installati nel sistema. La prima volta che viene visualizzato il menu a discesa, nel campo **Mostra impostazioni per** viene evidenziato il tipo di carattere corrente per l'elemento selezionato. I tipi di carattere a larghezza fissa, più facili da allineare nell'editor, sono visualizzati in grassetto.  
+  **Carattere (tipi di carattere a larghezza fissa in grassetto)**  
+  Elenca tutti i tipi di carattere installati nel sistema. La prima volta che viene visualizzato il menu a discesa, nel campo **Mostra impostazioni per** viene evidenziato il tipo di carattere corrente per l'elemento selezionato. I tipi di carattere a larghezza fissa, più facili da allineare nell'editor, sono visualizzati in grassetto.  
   
- **Dimensione**  
- Elenca le dimensioni in punti disponibili per il tipo di carattere evidenziato. La modifica della dimensione del carattere influisce su tutti gli **Elementi visualizzati** disponibili per la selezione in **Mostra impostazioni per**.  
+  **Dimensione**  
+  Elenca le dimensioni in punti disponibili per il tipo di carattere evidenziato. La modifica della dimensione del carattere influisce su tutti gli **Elementi visualizzati** disponibili per la selezione in **Mostra impostazioni per**.  
   
- **Elementi visualizzati**  
- Elenca gli elementi per cui è possibile modificare il colore di primo piano e sfondo.  
+  **Elementi visualizzati**  
+  Elenca gli elementi per cui è possibile modificare il colore di primo piano e sfondo.  
   
 > [!NOTE]
 >  L'elemento visualizzato predefinito è **Testo normale**. Di conseguenza, le proprietà assegnate a **Testo normale** verranno sostituite dalle proprietà assegnate ad altri elementi visualizzati. Se, ad esempio, si assegna il colore blu a **Testo normale** e il colore verde a **Identificatore**, tutti gli identificatori verranno visualizzati in verde. In questo esempio le proprietà di **Identificatore** sostituiscono le proprietà di **Testo normale**.  
