@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873890"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Word
   Questa procedura dettagliata viene descritta l'associazione dati a controlli in un riquadro azioni di Word. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.  
@@ -78,28 +78,28 @@ ms.locfileid: "38781932"
   
 ### <a name="to-add-a-data-source-to-the-project"></a>Per aggiungere un'origine dati al progetto  
   
-1.  Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.  
+1. Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.  
   
-    > [!NOTE]  
-    >  Se **Mostra origini dati** non è disponibile, fare clic sul documento di Word e quindi riprovare.  
+   > [!NOTE]  
+   >  Se **Mostra origini dati** non è disponibile, fare clic sul documento di Word e quindi riprovare.  
   
-2.  Fare clic su **Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.  
+2. Fare clic su **Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.  
   
-3.  Selezionare **Database** e quindi fare clic su **successivo**.  
+3. Selezionare **Database** e quindi fare clic su **successivo**.  
   
-4.  Selezionare una connessione dati al database di SQL Server di esempio Northwind, oppure aggiungere una nuova connessione usando il **nuova connessione** pulsante.  
+4. Selezionare una connessione dati al database di SQL Server di esempio Northwind, oppure aggiungere una nuova connessione usando il **nuova connessione** pulsante.  
   
-5.  Scegliere **Avanti**.  
+5. Scegliere **Avanti**.  
   
-6.  Deselezionare l'opzione per salvare la connessione, se è selezionata, quindi scegliere **successivo**.  
+6. Deselezionare l'opzione per salvare la connessione, se è selezionata, quindi scegliere **successivo**.  
   
-7.  Espandere la **tabelle** nodo il **degli oggetti di Database** finestra.  
+7. Espandere la **tabelle** nodo il **degli oggetti di Database** finestra.  
   
-8.  Selezionare la casella di controllo accanto al **Suppliers** e **prodotti** tabelle.  
+8. Selezionare la casella di controllo accanto al **Suppliers** e **prodotti** tabelle.  
   
 9. Scegliere **Fine**.  
   
- La procedura guidata aggiunge i **Suppliers** tabella e **prodotti** alla tabella il **Zdroje dat** finestra. Aggiunge anche un set di dati tipizzato al progetto che è visibile nel **Esplora soluzioni**.  
+   La procedura guidata aggiunge i **Suppliers** tabella e **prodotti** alla tabella il **Zdroje dat** finestra. Aggiunge anche un set di dati tipizzato al progetto che è visibile nel **Esplora soluzioni**.  
   
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Per aggiungere controlli Windows Form con associazione a dati a un controllo riquadro azioni  
   

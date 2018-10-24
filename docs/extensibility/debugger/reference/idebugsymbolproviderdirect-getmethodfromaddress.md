@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetMethodFromAddress | Documenti Microsoft
+title: IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b164e7e317da54f6ea22131e923c55901acec49
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8a4f9e99dc1eb0c1cedc6d82690330eb6420098
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880143"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-Recupera informazioni sul metodo in corrispondenza dell'indirizzo di debug specificata.  
+Recupera le informazioni sul metodo in corrispondenza dell'indirizzo di debug specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,7 +52,7 @@ int GetMethodFromAddress(
   
 #### <a name="parameters"></a>Parametri  
  `pAddress`  
- [in] Indirizzo rappresentato da eseguire il debug di [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.  
+ [in] Eseguire il debug indirizzo rappresentato dal [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.  
   
  `pGuid`  
  [out] Identificatore univoco del modulo.  
@@ -61,13 +61,13 @@ int GetMethodFromAddress(
  [out] Identificatore del dominio dell'applicazione.  
   
  `pTokenClass`  
- [out] Token che rappresenta la classe contenitore.  
+ [out] Token che rappresenta la classe che lo contiene.  
   
  `pTokenMethod`  
  [out] Token che rappresenta il modulo.  
   
  `pdwOffset`  
- [out] Un offset in byte dall'inizio di `pAddress` parametro.  
+ [out] Offset in byte dall'inizio del `pAddress` parametro.  
   
  `pdwVersion`  
  [out] Numero di versione del metodo.  

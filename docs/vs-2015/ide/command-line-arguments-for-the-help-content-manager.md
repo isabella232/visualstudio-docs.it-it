@@ -14,27 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873409"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per la Gestione contenuto della Guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile specificare come distribuire e gestire il contenuto della Guida locale usando gli argomenti della riga di comando per Gestione contenuto della Guida (HlpCtntmgr.exe). È necessario eseguire gli script per questo strumento da riga di comando con le autorizzazioni di amministratore e non è possibile eseguire questi script come servizio. Usando questo strumento è possibile eseguire le seguenti attività:  
   
--   Aggiungere o aggiornare il contenuto della Guida locale da un disco o dal cloud.  
+- Aggiungere o aggiornare il contenuto della Guida locale da un disco o dal cloud.  
   
--   Rimuovere il contenuto della Guida locale.  
+- Rimuovere il contenuto della Guida locale.  
   
--   Spostare l'archivio del contenuto della Guida locale.  
+- Spostare l'archivio del contenuto della Guida locale.  
   
--   Aggiungere, aggiornare, rimuovere o spostare automaticamente il contenuto della Guida locale.  
+- Aggiungere, aggiornare, rimuovere o spostare automaticamente il contenuto della Guida locale.  
   
- Sintassi:  
+  Sintassi:  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

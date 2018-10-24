@@ -18,12 +18,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: f6e311f7c0268cecb94498fffda702438ea921b0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879298"
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
   Parametri sostituibili, oppure *token*, può essere usato nei file di progetto per fornire valori per elementi di soluzione SharePoint con i valori effettivi non sono noti in fase di progettazione. Si tratta di una funzione simile allo standard [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] token del modello. Per altre informazioni, vedere [parametri di modello](/visualstudio/ide/template-parameters).  
@@ -34,17 +34,17 @@ ms.locfileid: "37119941"
 ## <a name="token-rules"></a>Regole di token
  Le regole seguenti si applicano ai token:  
   
--   I token possono essere specificati in qualsiasi punto in una riga.  
+- I token possono essere specificati in qualsiasi punto in una riga.  
   
--   I token non possono estendersi su più righe.  
+- I token non possono estendersi su più righe.  
   
--   Lo stesso token può essere specificato più volte sulla stessa riga e nello stesso file.  
+- Lo stesso token può essere specificato più volte sulla stessa riga e nello stesso file.  
   
--   Token diversi può essere specificato nella stessa riga.  
+- Token diversi può essere specificato nella stessa riga.  
   
- I token che non seguono queste regole vengono ignorati e non generano un avviso o errore.  
+  I token che non seguono queste regole vengono ignorati e non generano un avviso o errore.  
   
- La sostituzione dei token con valori di stringa viene eseguita immediatamente dopo la trasformazione del manifesto. Questa sostituzione consente all'utente di modificare i modelli con i token del manifesto.  
+  La sostituzione dei token con valori di stringa viene eseguita immediatamente dopo la trasformazione del manifesto. Questa sostituzione consente all'utente di modificare i modelli con i token del manifesto.  
   
 ### <a name="token-name-resolution"></a>Risoluzione dei nomi di token
  Nella maggior parte dei casi, un token viene risolto in un valore specifico indipendentemente da dove è contenuto. Tuttavia, se il token è correlato a un pacchetto o una funzionalità, il valore del token dipende in cui è contenuto. Ad esempio, se è una funzionalità nel pacchetto, il token `$SharePoint.Package.Name$` risolve nel valore di "Pacchetto r." Se la stessa funzionalità è nel pacchetto B, allora `$SharePoint.Package.Name$` si risolve in "Del pacchetto B."  
@@ -75,19 +75,19 @@ ms.locfileid: "37119941"
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Aggiungere le estensioni per l'elenco di estensioni di file di sostituzione dei token
  Anche se i token in teoria possono essere usati da tutti i file che appartiene a un elemento incluso nel pacchetto, per impostazione predefinita, un progetto SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ricerche per i token solo nel file di pacchetto, i file manifesto e i file con le estensioni seguenti:  
   
--   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
+- [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
--   ASCX  
+- ASCX  
   
--   ASPX  
+- ASPX  
   
--   Web part  
+- Web part  
   
--   CON ESTENSIONE DWP  
+- CON ESTENSIONE DWP  
   
- Queste estensioni sono definite dal `<TokenReplacementFileExtensions>` elemento nel file targets, che si trova nel... \\< file di programma\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools cartella.  
+  Queste estensioni sono definite dal `<TokenReplacementFileExtensions>` elemento nel file targets, che si trova nel... \\< file di programma\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools cartella.  
   
- È tuttavia possibile aggiungere altre estensioni di file all'elenco. Aggiungere un `<TokenReplacementFileExtensions>` elemento a qualsiasi oggetto PropertyGroup nel file di progetto SharePoint definito prima il \<Import > del file di destinazioni di SharePoint.  
+  È tuttavia possibile aggiungere altre estensioni di file all'elenco. Aggiungere un `<TokenReplacementFileExtensions>` elemento a qualsiasi oggetto PropertyGroup nel file di progetto SharePoint definito prima il \<Import > del file di destinazioni di SharePoint.  
   
 > [!NOTE]  
 >  Poiché la sostituzione dei token si verifica dopo la compilazione di un progetto, non è possibile aggiungere estensioni di file per i tipi di file che vengono compilati, ad esempio *cs*, *vb* oppure *resx*. I token vengono sostituiti solo nei file non compilati.  
@@ -110,5 +110,5 @@ ms.locfileid: "37119941"
  È possibile aggiungere l'estensione direttamente alle destinazioni (*targets*) file. Tuttavia, non aggiungere l'estensione viene modificato l'elenco di estensioni per tutti i progetti SharePoint incluso nel pacchetto nel sistema locale, solo il proprio. Questa estensione può essere utile quando si è l'unico sviluppatore del sistema o se richiedono la maggior parte dei progetti. Tuttavia, poiché è specifico del sistema, questo approccio non è portabile e di conseguenza, è consigliabile che si aggiungere tutte le estensioni al file di progetto.  
   
 ## <a name="see-also"></a>Vedere anche
- [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+ [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

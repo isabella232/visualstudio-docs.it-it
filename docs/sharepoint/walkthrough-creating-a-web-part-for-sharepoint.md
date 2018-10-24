@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872408"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procedura dettagliata: Creare una web part per SharePoint
 
@@ -94,38 +94,38 @@ Aggiungere un **Web Part** elemento al progetto. Il **Web Part** elemento aggiun
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Aggiungere il codice seguente alla classe `WebPart1`. Questo codice dichiara i campi seguenti:
+3. Aggiungere il codice seguente alla classe `WebPart1` . Questo codice dichiara i campi seguenti:
 
-    - Una griglia di dati per visualizzare i dipendenti nella Web Part.
+   - Una griglia di dati per visualizzare i dipendenti nella Web Part.
 
-    - Testo visualizzato nel controllo a cui viene utilizzato per filtrare la griglia dei dati.
+   - Testo visualizzato nel controllo a cui viene utilizzato per filtrare la griglia dei dati.
 
-    - Un'etichetta che viene visualizzato un errore se la griglia dei dati è in grado di visualizzare i dati.
+   - Un'etichetta che viene visualizzato un errore se la griglia dei dati è in grado di visualizzare i dati.
 
-    - Stringa che contiene il percorso del file di dati dipendenti.
+   - Stringa che contiene il percorso del file di dati dipendenti.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Aggiungere il codice seguente alla classe `WebPart1`. Questo codice aggiunge una proprietà personalizzata denominata `DataFilePath` alla Web Part. Una proprietà personalizzata è una proprietà che è possibile impostare in SharePoint dall'utente. Questa proprietà ottiene e imposta la posizione di un file di dati XML che viene usata per popolare la griglia dei dati.
+4. Aggiungere il codice seguente alla classe `WebPart1` . Questo codice aggiunge una proprietà personalizzata denominata `DataFilePath` alla Web Part. Una proprietà personalizzata è una proprietà che è possibile impostare in SharePoint dall'utente. Questa proprietà ottiene e imposta la posizione di un file di dati XML che viene usata per popolare la griglia dei dati.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
 5. Sostituire il metodo `CreateChildControls` con il codice seguente. Mediante il codice vengono effettuate le seguenti attività:
 
-    - Aggiunge la griglia dei dati e l'etichetta che è stato dichiarato nel passaggio precedente.
+   - Aggiunge la griglia dei dati e l'etichetta che è stato dichiarato nel passaggio precedente.
 
-    - Associa la griglia dei dati in un file XML che contiene i dati dei dipendenti.
+   - Associa la griglia dei dati in un file XML che contiene i dati dei dipendenti.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Aggiungere il metodo seguente alla classe `WebPart1`. Mediante il codice vengono effettuate le seguenti attività:
+6. Aggiungere il metodo seguente alla classe `WebPart1` . Mediante il codice vengono effettuate le seguenti attività:
 
-    - Crea un verbo visualizzata nel menu dei verbi Web Part della Web part sottoposto a rendering.
+   - Crea un verbo visualizzata nel menu dei verbi Web Part della Web part sottoposto a rendering.
 
-    - Gestione dell'evento generato quando l'utente sceglie il verbo nel relativo menu. Questo codice filtra l'elenco di dipendenti che viene visualizzato nella griglia dei dati.
+   - Gestione dell'evento generato quando l'utente sceglie il verbo nel relativo menu. Questo codice filtra l'elenco di dipendenti che viene visualizzato nella griglia dei dati.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

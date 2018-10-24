@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::GetSymbolInfo | Documenti Microsoft
+title: IDebugModule3::GetSymbolInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53d84b9ef6cdabc12c88e30fc65d506cad673a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e121434f5db1edc1e4c13df3e832cba5be7d471
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876126"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Recupera un elenco di percorsi in cui vengono ricercati i simboli, nonché i risultati di ogni percorso di ricerca.  
@@ -45,29 +45,29 @@ int GetSymbolInfo(
   
 #### <a name="parameters"></a>Parametri  
  `dwFields`  
- [in] Una combinazione di flag dal [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumerazione che specifica quali campi della `pInfo` deve essere compilata.  
+ [in] Una combinazione di flag dal [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumerazione che specifica quali campi della `pInfo` sono da compilare.  
   
  `pInfo`  
- [out] Oggetto [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) struttura i cui membri devono essere compilato con le informazioni specificate. Se questo è un valore null, questo metodo restituisce `E_INVALIDARG`.  
+ [out] Oggetto [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) struttura i cui membri sono da compilare con le informazioni specificate. Se questo è un valore null, questo metodo restituisce `E_INVALIDARG`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se il metodo ha esito positivo, restituisce `S_OK`; in caso contrario, viene restituito un codice di errore.  
   
 > [!NOTE]
->  La stringa restituita (nel `MODULE_SYMBOL_SEARCH_INFO` struttura) può essere vuoto se `S_OK` viene restituito. In questo caso, si è verificato alcuna informazione di ricerca da restituire.  
+>  La stringa restituita (nelle `MODULE_SYMBOL_SEARCH_INFO` struttura) può essere vuoto anche se `S_OK` viene restituito. In questo caso, si è verificato alcuna informazione di ricerca da restituire.  
   
 ## <a name="remarks"></a>Note  
- Se il `bstrVerboseSearchInfo` campo il `MODULE_SYMBOL_SEARCH_INFO` struttura non è vuota, quindi contiene un elenco di percorsi di ricerca e i risultati della ricerca. L'elenco viene formattato con un percorso, seguito dai puntini di sospensione ("..."), seguita dal risultato. Se è presente più di una coppia di risultati di percorso, ogni coppia è separato da una coppia di "\r\n" (ritorno a capo ritorno/avanzamento riga). Il modello è simile al seguente:  
+ Se il `bstrVerboseSearchInfo` campo il `MODULE_SYMBOL_SEARCH_INFO` struttura non è vuota, quindi contiene un elenco di percorsi di ricerca e i risultati della ricerca. L'elenco viene formattato con un percorso, seguito dai puntini di sospensione ("..."), seguito dal risultato. Se è presente più di una coppia di risultati di percorso, quindi ogni coppia è separato da una coppia di "\r\n" (ritorno a capo-/ avanzamento riga). Il modello è simile alla seguente:  
   
- \<percorso >... \<risultato > \r\n\<percorso >... \<risultato > \r\n\<percorso >... \<risultato >  
+ \<percorso >... \<risultati > \r\n\<path >... \<risultati > \r\n\<path >... \<risultato >  
   
  Si noti che l'ultima voce non dispone di una sequenza \r\n.  
   
 ## <a name="example"></a>Esempio  
- In questo esempio, questo metodo restituisce tre percorsi con tre risultati di ricerca diverso. Ogni riga viene terminata con una coppia di ritorno a capo ritorno avanzamento riga. Esempio di output solo stampa i risultati della ricerca come un'unica stringa.  
+ In questo esempio, questo metodo restituisce tre percorsi con tre risultati di ricerca diverso. Ogni riga termina con una coppia di ritorno a capo-/ avanzamento riga. L'output di esempio stampa semplicemente i risultati della ricerca come un'unica stringa.  
   
 > [!NOTE]
->  Un risultato di stato è tutto quello che segue immediatamente "…" fino alla fine della riga.  
+>  Un risultato di stato è tutto quello che segue immediatamente il "..." fino alla fine della riga.  
   
 ```cpp  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  
@@ -87,7 +87,7 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
   
  **c:\symbols\user32.pdb... File non trovato.**  
 **c:\winnt\symbols\user32.pdb... Versione non corrisponde.**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... I simboli caricati.**   
+**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Caricare i simboli.**   
 ## <a name="see-also"></a>Vedere anche  
  [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   

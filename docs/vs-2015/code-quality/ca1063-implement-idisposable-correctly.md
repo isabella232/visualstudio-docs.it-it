@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877296"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementare IDisposable correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287482"
 ## <a name="cause"></a>Causa
  `IDisposable` non è implementata correttamente. Di seguito sono elencati alcuni dei motivi per questo problema:
 
--   IDisposable è nuovamente implementate nella classe.
+- IDisposable è nuovamente implementate nella classe.
 
--   Completare nuovamente sottoposto a override.
+- Completare nuovamente sottoposto a override.
 
--   Viene eseguito l'override di Dispose.
+- Viene eseguito l'override di Dispose.
 
--   Dispose () non è pubblico, sealed o denominato Dispose.
+- Dispose () non è pubblico, sealed o denominato Dispose.
 
--   Dispose (bool) non è protetto, virtuale o non sealed.
+- Dispose (bool) non è protetto, virtuale o non sealed.
 
--   Nei tipi non sealed, Dispose () devono chiamare Dispose (true).
+- Nei tipi non sealed, Dispose () devono chiamare Dispose (true).
 
--   Per i tipi unsealed, l'implementazione di Finalize non chiama Dispose (bool) o il finalizzatore della classe base.
+- Per i tipi unsealed, l'implementazione di Finalize non chiama Dispose (bool) o il finalizzatore della classe base.
 
- Violazione di uno di questi modelli attiverà questo avviso.
+  Violazione di uno di questi modelli attiverà questo avviso.
 
- Ogni radice non sealed Tipo IDisposable debba fornire il proprio metodo Dispose (bool) di void virtuale protetto. Dispose () devono chiamare Dispose (true) e Finalize deve chiamare Dispose (false). Se si sta creando un tipo IDisposable radice non bloccato, è necessario definire Dispose (bool) e chiamarlo. Per altre informazioni, vedere [pulizia di risorse non gestite](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) nel [linee guida di progettazione di Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) sezione della documentazione di .NET Framework.
+  Ogni radice non sealed Tipo IDisposable debba fornire il proprio metodo Dispose (bool) di void virtuale protetto. Dispose () devono chiamare Dispose (true) e Finalize deve chiamare Dispose (false). Se si sta creando un tipo IDisposable radice non bloccato, è necessario definire Dispose (bool) e chiamarlo. Per altre informazioni, vedere [pulizia di risorse non gestite](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) nel [linee guida di progettazione di Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) sezione della documentazione di .NET Framework.
 
 ## <a name="rule-description"></a>Descrizione della regola
  È necessario che tutti i tipi IDisposable implementino correttamente il modello Dispose.

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: visualizzare le proprietà della finestra | Documenti Microsoft'
+title: 'Procedura: visualizzare le proprietà della finestra | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a345f5ac8fc6a77b10ef549a6c2be859106ee00
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 204121f40fa1cfc32040185286e7c566bbb59214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872421"
 ---
 # <a name="how-to-display-window-properties"></a>Procedura: visualizzare le proprietà della finestra
-Per ulteriori informazioni su una finestra elencata in [Windows Vista](../debugger/windows-view.md), utilizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md).  
+Per altre informazioni su una finestra elencata nella [Windows Vista](../debugger/windows-view.md), utilizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md).  
   
 ### <a name="to-open-the-window-properties-dialog-box"></a>Per aprire la finestra di dialogo Proprietà finestra  
   
-1.  Selezionare l'elemento, quindi scegliere **proprietà** dal **vista** menu.  
+1. Selezionare l'elemento, quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
   
- Le finestre di dialogo non modale. Quando si fa clic da un elemento in una finestra di visualizzazione, la finestra di dialogo viene aggiornata automaticamente con informazioni su ogni elemento selezionato.
+   Finestre di dialogo delle proprietà non sono modale. Come si fa clic da un elemento a altro in una finestra di visualizzazione, la finestra di dialogo viene aggiornata automaticamente con informazioni su ogni elemento selezionato.

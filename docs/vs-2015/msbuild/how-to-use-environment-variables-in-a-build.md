@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a03b706957d6308dce90fb9f0dd2284338e7609
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 463acc185a73b9a483bf74c98d4bde1cf0f42494
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877504"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: utilizzare le variabili di ambiente in una compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
   
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>Per usare una variabile di ambiente in un progetto MSBuild  
   
--   Fare riferimento alla variabile di ambiente esattamente come a una variabile dichiarata nel file di progetto. Il codice seguente, ad esempio, fa riferimento alla variabile di ambiente BIN_PATH:  
+- Fare riferimento alla variabile di ambiente esattamente come a una variabile dichiarata nel file di progetto. Il codice seguente, ad esempio, fa riferimento alla variabile di ambiente BIN_PATH:  
   
-     `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
+   `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
   
- È possibile usare un attributo `Condition` per fornire un valore predefinito per una proprietà se la variabile di ambiente non è stata impostata.  
+  È possibile usare un attributo `Condition` per fornire un valore predefinito per una proprietà se la variabile di ambiente non è stata impostata.  
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>Per fornire un valore predefinito per una proprietà  
   

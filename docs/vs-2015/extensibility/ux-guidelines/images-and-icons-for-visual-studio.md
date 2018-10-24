@@ -13,12 +13,12 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a818bf9b1975692c220b2be82b2fed7ca97fad13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8a1336ca880a3824e16f432c07ccf0caa769f60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872538"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Immagini e icone per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +45,21 @@ ms.locfileid: "49255749"
 ### <a name="overview"></a>Panoramica  
  Visual Studio Usa icone in stile moderno, che dispongono di geometria pulita e un saldo 50/50 pari positivo/negativo (chiaro o scuro) e quindi metafore dirette e comprensibile. Icona fondamentale progettazione punti sono incentrate maggiore chiarezza, semplificazione e il contesto.  
   
--   **Maggiore chiarezza:** concentrare la metafora di core che offre un'icona relativo significato e la tua personalità.  
+- **Maggiore chiarezza:** concentrare la metafora di core che offre un'icona relativo significato e la tua personalità.  
   
--   **Semplificazione:** ridurre l'icona al relativo significato core: consente di ottenere il tema con solo gli elementi necessari e non increspature.  
+- **Semplificazione:** ridurre l'icona al relativo significato core: consente di ottenere il tema con solo gli elementi necessari e non increspature.  
   
--   **Contesto:** prendere in considerazione tutti gli aspetti del ruolo dell'icona durante lo sviluppo di verifica, è fondamentale per decidere quali elementi costituiscono metafora di core dell'icona.  
+- **Contesto:** prendere in considerazione tutti gli aspetti del ruolo dell'icona durante lo sviluppo di verifica, è fondamentale per decidere quali elementi costituiscono metafora di core dell'icona.  
   
- Con le icone, sono presenti un numero di punti di progettazione per evitare di:  
+  Con le icone, sono presenti un numero di punti di progettazione per evitare di:  
   
--   Non usare le icone che indicano gli elementi dell'interfaccia utente, ad eccezione di quando appropriato. Scegliere un approccio più astratto o simbolico quando l'elemento dell'interfaccia utente non è comune, evidente, né univoco.  
+- Non usare le icone che indicano gli elementi dell'interfaccia utente, ad eccezione di quando appropriato. Scegliere un approccio più astratto o simbolico quando l'elemento dell'interfaccia utente non è comune, evidente, né univoco.  
   
--   Non utilizzo eccessivo di elementi comuni, ad esempio documenti, cartelle, frecce e la lente di ingrandimento. Usare questi elementi solo quando è essenziale per il significato dell'icona. Ad esempio, la lente di ingrandimento rivolta verso destra deve indicare solo Cerca, Sfoglia e individuare.  
+- Non utilizzo eccessivo di elementi comuni, ad esempio documenti, cartelle, frecce e la lente di ingrandimento. Usare questi elementi solo quando è essenziale per il significato dell'icona. Ad esempio, la lente di ingrandimento rivolta verso destra deve indicare solo Cerca, Sfoglia e individuare.  
   
--   Anche se alcuni elementi legacy icona gestiscono l'utilizzo del punto di vista, non creare nuove icone con punto di vista, a meno che l'elemento non dispone di chiarezza senza di essa.  
+- Anche se alcuni elementi legacy icona gestiscono l'utilizzo del punto di vista, non creare nuove icone con punto di vista, a meno che l'elemento non dispone di chiarezza senza di essa.  
   
--   Non cram troppe informazioni in un'icona. Una semplice immagine che può essere facilmente riconosciuta o appreso come simbolo di riconoscibile è molto più utile rispetto a un'immagine eccessivamente complessa. Un'icona non è esauriente.  
+- Non cram troppe informazioni in un'icona. Una semplice immagine che può essere facilmente riconosciuta o appreso come simbolo di riconoscibile è molto più utile rispetto a un'immagine eccessivamente complessa. Un'icona non è esauriente.  
   
 ### <a name="icon-creation"></a>Creazione di icone  
   
@@ -266,19 +266,19 @@ ms.locfileid: "49255749"
 ### <a name="icon-construction"></a>Costruzione di icona  
  Le dimensioni dell'icona in Visual Studio più piccola sono 16x16. La più grande in comune usare è 32x32. Tenere a mente non per riempire l'intero fotogramma 16 x 16, 24 x 24 o 32 x 32 quando si progetta un'icona. Costruzione di icona leggibili, uniform è essenziale per riconoscimento degli utenti. Rispettare quanto riportato di seguito durante la creazione di icone.  
   
--   Le icone devono essere chiaro comprensibile e coerente.  
+- Le icone devono essere chiaro comprensibile e coerente.  
   
--   È consigliabile usare gli elementi di notifica di stato sotto forma di icone singole e non a sovrapporli all'inizio di un elemento di base sull'icona. In determinati contesti, l'interfaccia utente potrebbe richiedere l'elemento di stato per poter essere associati con un elemento di base.  
+- È consigliabile usare gli elementi di notifica di stato sotto forma di icone singole e non a sovrapporli all'inizio di un elemento di base sull'icona. In determinati contesti, l'interfaccia utente potrebbe richiedere l'elemento di stato per poter essere associati con un elemento di base.  
   
--   Icone di progetto sono in genere i file con estensione ico che contengono diverse dimensioni. Vengono aggiornate solo le icone 16x16, 24x24 e 32x32. La maggior parte delle icone 16x16 e 24x24 conterrà gli stessi elementi. Le icone di 32 x 32 contengono informazioni più dettagliate, incluso il tipo di linguaggio di progetto quando applicabile.  
+- Icone di progetto sono in genere i file con estensione ico che contengono diverse dimensioni. Vengono aggiornate solo le icone 16x16, 24x24 e 32x32. La maggior parte delle icone 16x16 e 24x24 conterrà gli stessi elementi. Le icone di 32 x 32 contengono informazioni più dettagliate, incluso il tipo di linguaggio di progetto quando applicabile.  
   
--   Per le icone di 32 x 32, elementi di base in genere hanno uno spessore di linea 2 pixel. Uno spessore di linea 1 o 2 pixel può essere utilizzato per elementi di dettaglio. Usare giudizio per determinare che è più adatto.  
+- Per le icone di 32 x 32, elementi di base in genere hanno uno spessore di linea 2 pixel. Uno spessore di linea 1 o 2 pixel può essere utilizzato per elementi di dettaglio. Usare giudizio per determinare che è più adatto.  
   
--   Disporre di almeno un 1 pixel la spaziatura tra gli elementi per 16 x 16 e le icone di 24 x 24. Per le icone di 32 x 32, usare 2 pixel spaziatura tra gli elementi e tra il modificatore ed elemento di base.  
+- Disporre di almeno un 1 pixel la spaziatura tra gli elementi per 16 x 16 e le icone di 24 x 24. Per le icone di 32 x 32, usare 2 pixel spaziatura tra gli elementi e tra il modificatore ed elemento di base.  
   
- ![Spaziatura elementi per icone 16x16, 24x24 e 32x32](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
+  ![Spaziatura elementi per icone 16x16, 24x24 e 32x32](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
   
- **Spaziatura elementi per le icone di dimensioni pari a 16x16, 24x24 e 32x32**  
+  **Spaziatura elementi per le icone di dimensioni pari a 16x16, 24x24 e 32x32**  
   
 #### <a name="color-and-accessibility"></a>Colore e l'accessibilità  
  Linee guida per la conformità di Visual Studio richiedono che tutte le icone all'interno del prodotto passare i requisiti di accessibilità per colore e a contrasto elevato. Questo risultato viene ottenuto tramite inversione icona e durante la progettazione, è necessario essere consapevoli che verrà invertiti a livello di codice all'interno del prodotto.  

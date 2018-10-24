@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d45145da27d019b0750202a38c24ecb1e147d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881690"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger di Visual Studio
 
@@ -217,7 +217,7 @@ Per aggiungere le eccezioni condizionale:
 
    ![Condizioni aggiuntive per un'eccezione](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Per ogni riga della condizione, digitare il nome del modulo e modificare l'elenco di operatori di confronto per **è uguale a** oppure **non è uguale a**. È possibile specificare i caratteri jolly (**\***) nel nome per specificare più di un modulo.
+3. Per ogni riga della condizione, digitare il nome del modulo e modificare l'elenco di operatori di confronto per **è uguale a** oppure **non è uguale a**. È possibile specificare i caratteri jolly (* *\\* * *) nel nome per specificare più di un modulo.
 
 4. Se si desidera eliminare una condizione, scegliere il **X** alla fine della riga di condizione.
 

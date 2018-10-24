@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879532"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definire un elemento della casella degli strumenti di modellazione personalizzata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 ### <a name="what-the-custom-tool-will-replicate"></a>Cosa verrà replicato dallo strumento personalizzato  
  Uno strumento personalizzato replicherà la maggior parte delle funzionalità del diagramma di origine:  
   
--   Nomi. Quando viene creato un elemento dalla casella degli strumenti, viene aggiunto un numero alla fine del nome, se necessario, per evitare nomi duplicati nello stesso spazio dei nomi.  
+- Nomi. Quando viene creato un elemento dalla casella degli strumenti, viene aggiunto un numero alla fine del nome, se necessario, per evitare nomi duplicati nello stesso spazio dei nomi.  
   
--   Colori, dimensioni e forme  
+- Colori, dimensioni e forme  
   
--   Profili di pacchetti e stereotipi  
+- Profili di pacchetti e stereotipi  
   
--   Valori delle proprietà come Abstract  
+- Valori delle proprietà come Abstract  
   
--   Elementi di lavoro collegati  
+- Elementi di lavoro collegati  
   
--   Molteplicità e altre proprietà delle relazioni  
+- Molteplicità e altre proprietà delle relazioni  
   
--   Le posizioni relative delle forme.  
+- Le posizioni relative delle forme.  
   
- Le funzionalità seguenti non verranno mantenute in uno strumento personalizzato:  
+  Le funzionalità seguenti non verranno mantenute in uno strumento personalizzato:  
   
--   Forme semplici. Si tratta di forme che non sono correlate a elementi modello, che è possibile creare in alcuni tipi di diagrammi.  
+- Forme semplici. Si tratta di forme che non sono correlate a elementi modello, che è possibile creare in alcuni tipi di diagrammi.  
   
--   Connettore di routing. Se si instradano connettori manualmente, il routing non verrà mantenuto quando si usa lo strumento. Le posizioni di alcune forme annidate, come le porte, non vengono mantenute relativamente ai proprietari.  
+- Connettore di routing. Se si instradano connettori manualmente, il routing non verrà mantenuto quando si usa lo strumento. Le posizioni di alcune forme annidate, come le porte, non vengono mantenute relativamente ai proprietari.  
   
 ##  <a name="tbxinfo"></a> Come definire le proprietà di strumenti personalizzati  
  Le informazioni di una casella degli strumenti (**con estensione tbxinfo**) file consente di specificare un nome della casella degli strumenti, icona, della descrizione comando, scheda e parola chiave per uno o più strumenti personalizzati della Guida. Assegnargli un nome qualsiasi, ad esempio **MyTools**.  
@@ -114,19 +114,19 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
   
  Il valore di ogni elemento può essere:  
   
--   Come illustrato nell'esempio, `<bmp fileName="…"/>` per l'icona della casella degli strumenti e `<value>string</value>` per gli altri elementi.  
+- Come illustrato nell'esempio, `<bmp fileName="…"/>` per l'icona della casella degli strumenti e `<value>string</value>` per gli altri elementi.  
   
- \- oppure -  
+  \- oppure -  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     In questo caso, è necessario fornire un assembly compilato in cui sono stati compilati i valori stringa come risorse.  
+   In questo caso, è necessario fornire un assembly compilato in cui sono stati compilati i valori stringa come risorse.  
   
- Aggiungere un nodo `<customToolboxItem>` per ogni elemento della casella degli strumenti che si intende definire.  
+  Aggiungere un nodo `<customToolboxItem>` per ogni elemento della casella degli strumenti che si intende definire.  
   
- I nodi le **con estensione tbxinfo** file sono i seguenti. Esiste un valore predefinito per ogni nodo.  
+  I nodi le **con estensione tbxinfo** file sono i seguenti. Esiste un valore predefinito per ogni nodo.  
   
 |Nome nodo|Definisce|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>Per fornire versioni dello strumento in più lingue  
   
-1.  Creare un progetto Visual Studio Extension che contiene uno o più strumenti personalizzati.  
+1. Creare un progetto Visual Studio Extension che contiene uno o più strumenti personalizzati.  
   
-     Nel **con estensione tbxinfo** del file, usare il metodo di file di risorse per definire lo strumento `displayName`, della casella degli strumenti `tabName`e la descrizione comando. Creare un file di risorse in cui queste stringhe sono definite, compilarlo in un assembly e farvi riferimento dal file con estensione tbxinfo.  
+    Nel **con estensione tbxinfo** del file, usare il metodo di file di risorse per definire lo strumento `displayName`, della casella degli strumenti `tabName`e la descrizione comando. Creare un file di risorse in cui queste stringhe sono definite, compilarlo in un assembly e farvi riferimento dal file con estensione tbxinfo.  
   
-2.  Creare assembly aggiuntivi che contengono file di risorse con stringhe di altre lingue.  
+2. Creare assembly aggiuntivi che contengono file di risorse con stringhe di altre lingue.  
   
-3.  Posizionare ogni assembly aggiuntivo in una cartella il cui nome sia il codice delle impostazioni cultura per la lingua. Ad esempio, inserire una versione in francese dell'assembly all'interno di una cartella denominata **fr**.  
+3. Posizionare ogni assembly aggiuntivo in una cartella il cui nome sia il codice delle impostazioni cultura per la lingua. Ad esempio, inserire una versione in francese dell'assembly all'interno di una cartella denominata **fr**.  
   
-4.  È consigliabile usare un codice indipendente dalle impostazioni cultura, in genere costituito da due lettere, non il codice delle impostazioni cultura specifiche come ad esempio `fr-CA`. Per altre informazioni sui codici delle impostazioni cultura, vedere [metodo CultureInfo. GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), che fornisce un elenco completo dei codici delle impostazioni cultura.  
+4. È consigliabile usare un codice indipendente dalle impostazioni cultura, in genere costituito da due lettere, non il codice delle impostazioni cultura specifiche come ad esempio `fr-CA`. Per altre informazioni sui codici delle impostazioni cultura, vedere [metodo CultureInfo. GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), che fornisce un elenco completo dei codici delle impostazioni cultura.  
   
-5.  Compilare progetto Visual Studio Extension e distribuirlo.  
+5. Compilare progetto Visual Studio Extension e distribuirlo.  
   
-6.  Quando l'estensione viene installata in un altro computer, verrà automaticamente caricata la versione del file di risorse per le impostazioni cultura locali dell'utente. Se non è stata fornita una versione per le impostazioni cultura dell'utente, verranno usate le risorse predefinite.  
+6. Quando l'estensione viene installata in un altro computer, verrà automaticamente caricata la versione del file di risorse per le impostazioni cultura locali dell'utente. Se non è stata fornita una versione per le impostazioni cultura dell'utente, verranno usate le risorse predefinite.  
   
- Non è possibile usare questo metodo per installare versioni diverse del diagramma prototipo. I nomi degli elementi e dei connettori saranno gli stessi in ogni installazione.  
+   Non è possibile usare questo metodo per installare versioni diverse del diagramma prototipo. I nomi degli elementi e dei connettori saranno gli stessi in ogni installazione.  
   
 ## <a name="other-toolbox-operations"></a>Altre operazioni della casella degli strumenti  
  Normalmente, in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], è possibile personalizzare la casella degli strumenti rinominando gli strumenti, spostandoli in altre schede della casella degli strumenti ed eliminandoli. Queste modifiche non vengono mantenute per gli strumenti di modellazione personalizzati creati con le procedure descritte in questo argomento. Quando si riavvia [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], gli strumenti personalizzati verranno visualizzati nuovamente con i nomi e i percorsi definiti della casella degli strumenti.  

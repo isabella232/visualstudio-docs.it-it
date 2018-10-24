@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b80ea0c25766f75d21d193a67be68c13eb5ea0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878583"
 ---
 # <a name="comparing-properties-and-items"></a>Confronto di proprietà ed elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,27 +90,27 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
 ## <a name="property-and-item-evaluation-order"></a>Proprietà e ordine di valutazione degli elementi  
  Durante la fase di valutazione di una build, i file importati vengono incorporati nella build nell'ordine in cui vengono visualizzati. Le proprietà e gli elementi sono definiti in tre passaggi nell'ordine seguente:  
   
--   Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate.  
+- Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate.  
   
--   Le definizioni dell'elemento vengono definite e modificate nell'ordine in cui vengono visualizzate.  
+- Le definizioni dell'elemento vengono definite e modificate nell'ordine in cui vengono visualizzate.  
   
--   Gli elementi vengono definiti e modificati nell'ordine in cui vengono visualizzati.  
+- Gli elementi vengono definiti e modificati nell'ordine in cui vengono visualizzati.  
   
- Durante la fase di esecuzione di una build, le proprietà e gli elementi definiti all'interno di destinazioni vengono valutati insieme in un'unica fase nell'ordine in cui vengono visualizzati.  
+  Durante la fase di esecuzione di una build, le proprietà e gli elementi definiti all'interno di destinazioni vengono valutati insieme in un'unica fase nell'ordine in cui vengono visualizzati.  
   
- Non è tuttavia l'unico approccio. Quando si definisce una proprietà, una definizione dell'elemento o un elemento, viene valutato il relativo valore. L'analizzatore di espressioni espande la stringa che specifica il valore. L'espansione della stringa dipende dalla fase di compilazione. Di seguito viene riportato un ordine di valutazione di proprietà ed elementi più dettagliato:  
+  Non è tuttavia l'unico approccio. Quando si definisce una proprietà, una definizione dell'elemento o un elemento, viene valutato il relativo valore. L'analizzatore di espressioni espande la stringa che specifica il valore. L'espansione della stringa dipende dalla fase di compilazione. Di seguito viene riportato un ordine di valutazione di proprietà ed elementi più dettagliato:  
   
--   Durante la fase di valutazione di una build:  
+- Durante la fase di valutazione di una build:  
   
-    -   Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate. Vengono eseguite le funzioni di proprietà. I valori di proprietà nel formato $(PropertyName) vengono espansi all'interno di espressioni. Il valore della proprietà viene impostato sull'espressione espansa.  
+  -   Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate. Vengono eseguite le funzioni di proprietà. I valori di proprietà nel formato $(PropertyName) vengono espansi all'interno di espressioni. Il valore della proprietà viene impostato sull'espressione espansa.  
   
-    -   Le definizioni dell'elemento vengono definite e modificate nell'ordine in cui vengono visualizzate. Le funzioni di proprietà sono già state espanse all'interno di espressioni. I valori di metadati vengono impostati sulle espressioni espanse.  
+  -   Le definizioni dell'elemento vengono definite e modificate nell'ordine in cui vengono visualizzate. Le funzioni di proprietà sono già state espanse all'interno di espressioni. I valori di metadati vengono impostati sulle espressioni espanse.  
   
-    -   I tipi di elemento vengono definiti e modificati nell'ordine in cui vengono visualizzati. I valori di elemento nel formato @(ItemType) vengono espansi. Anche le trasformazioni degli elementi vengono espanse. Le funzioni di proprietà e i valori sono già stati espansi all'interno di espressioni. L'elenco di elementi e i valori di metadati vengono impostati sulle espressioni espanse.  
+  -   I tipi di elemento vengono definiti e modificati nell'ordine in cui vengono visualizzati. I valori di elemento nel formato @(ItemType) vengono espansi. Anche le trasformazioni degli elementi vengono espanse. Le funzioni di proprietà e i valori sono già stati espansi all'interno di espressioni. L'elenco di elementi e i valori di metadati vengono impostati sulle espressioni espanse.  
   
--   Durante la fase di esecuzione di una build:  
+- Durante la fase di esecuzione di una build:  
   
-    -   Le proprietà e gli elementi definiti all'interno di destinazione vengono valutati insieme nell'ordine in cui vengono visualizzati. Vengono eseguite le funzioni di proprietà e i valori della proprietà vengono espansi all'interno di espressioni. Anche i valori e le trasformazioni degli elementi vengono espansi. I valori di proprietà, i valori del tipo di elemento e i valori di metadati vengono impostati sulle espressioni espanse.  
+  -   Le proprietà e gli elementi definiti all'interno di destinazione vengono valutati insieme nell'ordine in cui vengono visualizzati. Vengono eseguite le funzioni di proprietà e i valori della proprietà vengono espansi all'interno di espressioni. Anche i valori e le trasformazioni degli elementi vengono espansi. I valori di proprietà, i valori del tipo di elemento e i valori di metadati vengono impostati sulle espressioni espanse.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Effetti meno evidenti dell'ordine di valutazione  
  Nella fase di valutazione di una build la valutazione delle proprietà precede la valutazione degli elementi. È tuttavia possibile che le proprietà abbiano valori visualizzati che devono dipendere da valori elemento. Considerare lo script seguente.  

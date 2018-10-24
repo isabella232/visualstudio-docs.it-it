@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e95dce70b38a6c2b51e0b610cb8e8bd6379239
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: d595bcc99cbacabd55c8e85775e1d691e917a41c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875840"
 ---
 # <a name="context-parameters"></a>Parametri di contesto
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), è possibile aggiungere le procedure guidate per il **nuovo progetto**, **Aggiungi nuovo elemento**, o **Aggiungi progetto Sub** finestre di dialogo. Le procedure guidate di aggiunta sono disponibili nel **File** dal menu o facendo clic su un progetto in **Esplora soluzioni**. L'IDE passa i parametri di contesto per l'implementazione della procedura guidata. I parametri di contesto definiscono lo stato del progetto quando l'IDE chiama la procedura guidata.  
@@ -28,38 +28,38 @@ Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di svi
   
 ## <a name="context-parameters-for-new-project"></a>Parametri di contesto per il nuovo progetto  
   
-|Parametro|Descrizione|  
-|---------------|-----------------|  
-|`WizardType`|Creazione guidata tipo di registrazione (<xref:EnvDTE.Constants.vsWizardNewProject>) o il GUID che indica il tipo di procedura guidata. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] implementazione, il GUID per la procedura guidata è {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}.|  
-|`ProjectName`|Stringa che rappresenta l'oggetto univoco [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nome del progetto.|  
-|`LocalDirectory`|Percorso locale di utilizzo file di progetto.|  
-|`InstallationDirectory`|Percorso della directory di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è l'installazione.|  
-|`FExclusive`|Flag booleano che indica che il progetto deve chiudersi soluzioni aperte.|  
-|`SolutionName`|Nome del file della soluzione senza la parte di directory o la *sln* estensione. Il *suo* nome del file viene creato anche usando `SolutionName`. Quando questo argomento non è una stringa vuota, la procedura guidata Usa <xref:EnvDTE._Solution.Create%2A> prima di aggiungere il progetto con <xref:EnvDTE._Solution.AddFromTemplate%2A>. Se questo nome è una stringa vuota, utilizzare <xref:EnvDTE._Solution.AddFromTemplate%2A> senza chiamare <xref:EnvDTE._Solution.Create%2A>.|  
-|`Silent`|Valore booleano che indica se la procedura guidata deve essere eseguito automaticamente come se **Finish** visitati (`TRUE`).|  
+| Parametro | Descrizione |
+|-------------------------| - |
+| `WizardType` | Creazione guidata tipo di registrazione (<xref:EnvDTE.Constants.vsWizardNewProject>) o il GUID che indica il tipo di procedura guidata. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] implementazione, il GUID per la procedura guidata è {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}. |
+| `ProjectName` | Stringa che rappresenta l'oggetto univoco [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nome del progetto. |
+| `LocalDirectory` | Percorso locale di utilizzo file di progetto. |
+| `InstallationDirectory` | Percorso della directory di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è l'installazione. |
+| `FExclusive` | Flag booleano che indica che il progetto deve chiudersi soluzioni aperte. |
+| `SolutionName` | Nome del file della soluzione senza la parte di directory o la *sln* estensione. Il *suo* nome del file viene creato anche usando `SolutionName`. Quando questo argomento non è una stringa vuota, la procedura guidata Usa <xref:EnvDTE._Solution.Create%2A> prima di aggiungere il progetto con <xref:EnvDTE._Solution.AddFromTemplate%2A>. Se questo nome è una stringa vuota, utilizzare <xref:EnvDTE._Solution.AddFromTemplate%2A> senza chiamare <xref:EnvDTE._Solution.Create%2A>. |
+| `Silent` | Valore booleano che indica se la procedura guidata deve essere eseguito automaticamente come se **Finish** visitati (`TRUE`). |
   
 ## <a name="context-parameters-for-add-new-item"></a>Parametri di contesto per Aggiungi nuovo elemento  
   
-|Parametro|Descrizione|  
-|---------------|-----------------|  
-|`WizardType`|Creazione guidata tipo di registrazione (<xref:EnvDTE.Constants.vsWizardAddItem>) o il GUID che indica il tipo di procedura guidata. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] implementazione, il GUID per la procedura guidata è {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}.|  
-|`ProjectName`|Stringa che rappresenta l'oggetto univoco [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nome del progetto.|  
-|`ProjectItems`|Percorso locale che contiene i file di progetto di lavoro.|  
-|`ItemName`|Nome dell'elemento che deve essere aggiunto. Questo nome è il nome file predefinito o il nome del file che l'utente digita dal **Aggiungi elementi** nella finestra di dialogo. Il nome è basato sui flag impostati nella *VSDIR* file. Il nome può essere un valore null.|  
-|`InstallationDirectory`|Percorso della directory di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è l'installazione.|  
-|`Silent`|Valore booleano che indica se la procedura guidata deve essere eseguito automaticamente come se **Finish** visitati (`TRUE`).|  
+| Parametro | Descrizione |
+|-------------------------| - |
+| `WizardType` | Creazione guidata tipo di registrazione (<xref:EnvDTE.Constants.vsWizardAddItem>) o il GUID che indica il tipo di procedura guidata. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] implementazione, il GUID per la procedura guidata è {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}. |
+| `ProjectName` | Stringa che rappresenta l'oggetto univoco [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nome del progetto. |
+| `ProjectItems` | Percorso locale che contiene i file di progetto di lavoro. |
+| `ItemName` | Nome dell'elemento che deve essere aggiunto. Questo nome è il nome file predefinito o il nome del file che l'utente digita dal **Aggiungi elementi** nella finestra di dialogo. Il nome è basato sui flag impostati nella *VSDIR* file. Il nome può essere un valore null. |
+| `InstallationDirectory` | Percorso della directory di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è l'installazione. |
+| `Silent` | Valore booleano che indica se la procedura guidata deve essere eseguito automaticamente come se **Finish** visitati (`TRUE`). |
   
 ## <a name="context-parameters-for-add-sub-project"></a>Parametri di contesto per aggiungere progetti Sub  
   
-|Parametro|Descrizione|  
-|---------------|-----------------|  
-|`WizardType`|Creazione guidata tipo di registrazione (<xref:EnvDTE.Constants.vsWizardAddSubProject>) o il GUID che indica il tipo di procedura guidata. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] implementazione, il GUID per la procedura guidata è {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}.|  
-|`ProjectName`|Stringa che rappresenta l'oggetto univoco [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nome del progetto.|  
-|`ProjectItems`|Puntatore al `ProjectItems` raccolta su cui opera la procedura guidata. Puntatore ' this ' viene passato alla procedura guidata in base alla selezione di gerarchia del progetto. Un utente seleziona in genere una cartella in cui inserire l'elemento e quindi chiama il progetto **Aggiungi elemento** nella finestra di dialogo.|  
-|`LocalDirectory`|Percorso locale di utilizzo file di progetto.|  
-|`ItemName`|Nome dell'elemento che deve essere aggiunto. Questo nome è il nome file predefinito o il nome del file che l'utente digita dal **Aggiungi elementi** nella finestra di dialogo. Il nome è basato sui flag impostati nella *VSDIR* file. Il nome può essere un valore null.|  
-|`InstallationDirectory`|Percorso della directory di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] installazione.|  
-|`Silent`|Valore booleano che indica se la procedura guidata deve essere eseguito automaticamente come se **Finish** visitati (`TRUE`).|  
+| Parametro | Descrizione |
+|-------------------------| - |
+| `WizardType` | Creazione guidata tipo di registrazione (<xref:EnvDTE.Constants.vsWizardAddSubProject>) o il GUID che indica il tipo di procedura guidata. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] implementazione, il GUID per la procedura guidata è {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}. |
+| `ProjectName` | Stringa che rappresenta l'oggetto univoco [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nome del progetto. |
+| `ProjectItems` | Puntatore al `ProjectItems` raccolta su cui opera la procedura guidata. Puntatore ' this ' viene passato alla procedura guidata in base alla selezione di gerarchia del progetto. Un utente seleziona in genere una cartella in cui inserire l'elemento e quindi chiama il progetto **Aggiungi elemento** nella finestra di dialogo. |
+| `LocalDirectory` | Percorso locale di utilizzo file di progetto. |
+| `ItemName` | Nome dell'elemento che deve essere aggiunto. Questo nome è il nome file predefinito o il nome del file che l'utente digita dal **Aggiungi elementi** nella finestra di dialogo. Il nome è basato sui flag impostati nella *VSDIR* file. Il nome può essere un valore null. |
+| `InstallationDirectory` | Percorso della directory di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] installazione. |
+| `Silent` | Valore booleano che indica se la procedura guidata deve essere eseguito automaticamente come se **Finish** visitati (`TRUE`). |
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>   
