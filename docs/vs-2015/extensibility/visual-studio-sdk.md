@@ -19,33 +19,33 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 930eab1a9356cf16a8615015742af30aa338bd21
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d716d9f715e307b3ebd3538df1622454cc4b547
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832875"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio SDK consente di estendere le funzionalità di Visual Studio o integrare le nuove funzionalità in Visual Studio. È possibile distribuire le estensioni ad altri utenti, oltre che per Visual Studio Gallery. Di seguito sono illustrati alcuni dei modi in cui si può estendere Visual Studio:  
   
--   Aggiungere i comandi, pulsanti, menu e altri elementi dell'interfaccia utente per l'IDE  
+- Aggiungere i comandi, pulsanti, menu e altri elementi dell'interfaccia utente per l'IDE  
   
--   Aggiungere finestre degli strumenti per la nuova funzionalità  
+- Aggiungere finestre degli strumenti per la nuova funzionalità  
   
--   Estensione di IntelliSense per una determinata lingua, o fornire IntelliSense per nuovi linguaggi di programmazione  
+- Estensione di IntelliSense per una determinata lingua, o fornire IntelliSense per nuovi linguaggi di programmazione  
   
--   Usare le lampadine per fornire suggerimenti e i suggerimenti che consentono agli sviluppatori di scrivere codice migliore  
+- Usare le lampadine per fornire suggerimenti e i suggerimenti che consentono agli sviluppatori di scrivere codice migliore  
   
--   Abilitare il supporto per una nuova lingua  
+- Abilitare il supporto per una nuova lingua  
   
--   Aggiungere un tipo di progetto personalizzati  
+- Aggiungere un tipo di progetto personalizzati  
   
--   Raggiungi milioni di sviluppatori tramite Visual Studio Gallery  
+- Raggiungi milioni di sviluppatori tramite Visual Studio Gallery  
   
- Se non hai mai scritto un'estensione di Visual Studio prima di, è necessario trovare altre informazioni su queste funzionalità e alla [iniziando a sviluppare estensioni di Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
+  Se non hai mai scritto un'estensione di Visual Studio prima di, è necessario trovare altre informazioni su queste funzionalità e alla [iniziando a sviluppare estensioni di Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="installing-the-visual-studio-sdk"></a>Installazione di Visual Studio SDK  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

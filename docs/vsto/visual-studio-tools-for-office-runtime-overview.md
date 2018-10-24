@@ -29,21 +29,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836996"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools per Office runtime overview
   Per eseguire soluzioni create con Microsoft Office developer tools in Visual Studio, Visual Studio 2010 Tools per Office runtime deve essere installato nei computer degli utenti finali. Per altre informazioni, vedere [procedura: installare Visual Studio Tools per Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools per Office runtime include due componenti principali:  
   
--   Le estensioni di Office per .NET Framework. Questi componenti sono assembly gestiti che forniscono il livello di comunicazione tra la soluzione e l'applicazione di Microsoft Office. Per altre informazioni, vedere [comprendere le estensioni di Office per .NET Framework](#officeextensions).  
+- Le estensioni di Office per .NET Framework. Questi componenti sono assembly gestiti che forniscono il livello di comunicazione tra la soluzione e l'applicazione di Microsoft Office. Per altre informazioni, vedere [comprendere le estensioni di Office per .NET Framework](#officeextensions).  
   
--   Il caricatore di soluzioni Office. Questo componente è un set di DLL non gestite che le applicazioni di Office usano per caricare il runtime e le soluzioni. Per altre informazioni, vedere [comprendere il caricatore di soluzioni Office](#UnmanagedLoader).  
+- Il caricatore di soluzioni Office. Questo componente è un set di DLL non gestite che le applicazioni di Office usano per caricare il runtime e le soluzioni. Per altre informazioni, vedere [comprendere il caricatore di soluzioni Office](#UnmanagedLoader).  
   
- È possibile installare il runtime in numerose modalità diverse. A seconda della configurazione del computer, al momento dell'installazione del runtime vengono installati componenti di runtime diversi. Per altre informazioni, vedere [Visual Studio Tools per scenari di installazione di Office runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
+  È possibile installare il runtime in numerose modalità diverse. A seconda della configurazione del computer, al momento dell'installazione del runtime vengono installati componenti di runtime diversi. Per altre informazioni, vedere [Visual Studio Tools per scenari di installazione di Office runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
 ##  <a name="officeextensions"></a> Comprendere le estensioni di Office per .NET Framework  
  Visual Studio 2010 Tools per Office runtime include estensioni Office per .NET Framework 3.5, il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e versioni successive. Nelle soluzioni destinate a ciascuna versione di .NET Framework vengono usate le estensioni appropriate per la versione interessata.  
@@ -58,24 +58,24 @@ ms.locfileid: "35672807"
 ### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>Interfacce nelle estensioni Office per .NET Framework 4 o versioni successive  
  La maggior parte delle interfacce nelle estensioni Office per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive non è studiata per essere implementata dal codice utente. Le uniche interfacce che è possibile implementare direttamente hanno nomi che iniziano con la lettera **I**, ad esempio <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>.  
   
- Tutte le interfacce che non iniziano con la lettera **ho** sono implementate internamente da Visual Studio 2010 Tools per Office runtime, e queste interfacce potrebbero cambiare nelle versioni future. Per creare oggetti che implementano tali interfacce, utilizzare i metodi forniti dall'oggetto `Globals.Factory` nel progetto. Ad esempio, per ottenere un oggetto che implementa l'interfaccia <xref:Microsoft.Office.Tools.Excel.SmartTag>, utilizzare il metodo `Globals.Factory.CreateSmartTag`. Per altre informazioni sulle `Globals.Factory`, vedere [globale accedere agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Tutte le interfacce che non iniziano con la lettera **ho** sono implementate internamente da Visual Studio 2010 Tools per Office runtime, e queste interfacce potrebbero cambiare nelle versioni future. Per creare oggetti che implementano tali interfacce, usare i metodi forniti dall'oggetto `Globals.Factory` nel progetto. Ad esempio, per ottenere un oggetto che implementa l'interfaccia <xref:Microsoft.Office.Tools.Excel.SmartTag>, usare il metodo `Globals.Factory.CreateSmartTag`. Per altre informazioni sulle `Globals.Factory`, vedere [globale accedere agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="enable-type-equivalence-and-embedded-types-in-projects-that-target-the-net-framework-4-or-later"></a>Abilitare l'equivalenza del tipo e tipi incorporati in progetti destinati a .NET Framework 4 o versione successivo  
  Poiché il modello a oggetti delle estensioni di Office per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva è basato su interfacce, è possibile usare la funzionalità di equivalenza dei tipi sia in Visual C# che in Visual Basic in Visual Studio per incorporare nella soluzione informazioni sul tipo da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Questa funzionalità consente alle soluzioni Office e a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] di eseguire il controllo della versione in modo indipendente. Se ad esempio la soluzione usa l'interfaccia <xref:Microsoft.Office.Tools.Word.Document> come tipo incorporato e la versione successiva del runtime aggiunge membri all'interfaccia <xref:Microsoft.Office.Tools.Word.Document> , la soluzione funzionerà comunque con la versione successiva del runtime. Se la soluzione non usa l'interfaccia <xref:Microsoft.Office.Tools.Word.Document> come tipo incorporato, non funzionerà più con la versione successiva del runtime.  
   
  Per impostazione predefinita, la funzionalità di equivalenza dei tipi non è abilitata quando si crea un progetto di Office destinato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva. Se si desidera abilitare tale funzionalità, impostare la proprietà **Incorpora tipi di interoperabilità** di uno qualsiasi dei seguenti riferimenti all'assembly nel progetto su **True**:  
   
--   Microsoft.Office.Tools.dll  
+- Microsoft.Office.Tools.dll  
   
--   Microsoft.Office.Tools.Common.dll  
+- Microsoft.Office.Tools.Common.dll  
   
--   Microsoft.Office.Tools.Excel.dll  
+- Microsoft.Office.Tools.Excel.dll  
   
--   Microsoft.Office.Tools.Outlook.dll  
+- Microsoft.Office.Tools.Outlook.dll  
   
--   Microsoft.Office.Tools.Word.dll  
+- Microsoft.Office.Tools.Word.dll  
   
- Dopo avere effettuato tale modifica, le informazioni sul tipo per tutti i tipi di runtime usati dal progetto vengono incorporate nell'assembly della soluzione quando il progetto viene compilato. Queste informazioni sui tipi incorporati, piuttosto che le informazioni sul tipo negli assembly di riferimento, vengono usati dalla soluzione in fase di esecuzione.  
+  Dopo avere effettuato tale modifica, le informazioni sul tipo per tutti i tipi di runtime usati dal progetto vengono incorporate nell'assembly della soluzione quando il progetto viene compilato. Queste informazioni sui tipi incorporati, piuttosto che le informazioni sul tipo negli assembly di riferimento, vengono usati dalla soluzione in fase di esecuzione.  
   
 ##  <a name="UnmanagedLoader"></a> Comprendere il caricatore di soluzioni Office  
  Il runtime di Visual Studio Tools per Office include molte DLL non gestite che nelle applicazioni di Office servono a caricare il runtime e le soluzioni Office. Anche se non si lavora mai direttamente con queste DLL, conoscerne lo scopo può permettere di comprendere meglio l'architettura delle soluzioni Office.  
@@ -90,17 +90,17 @@ ms.locfileid: "35672807"
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
  Dopo aver *VSTOEE. dll* carica la versione appropriata delle [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], *VSTOLoader. dll* esegue la maggior parte del lavoro richiesto per caricare l'assembly della soluzione. *VSTOLoader. dll* esegue diverse operazioni:  
   
--   Creare un dominio dell'applicazione per ogni assembly della soluzione.  
+- Creare un dominio dell'applicazione per ogni assembly della soluzione.  
   
--   Eseguire un set di controlli di sicurezza per verificare che l'assembly della soluzione disponga delle autorizzazioni per l'esecuzione.  
+- Eseguire un set di controlli di sicurezza per verificare che l'assembly della soluzione disponga delle autorizzazioni per l'esecuzione.  
   
--   Caricare la versione delle estensioni di Office per .NET Framework richiesta dalla soluzione.  
+- Caricare la versione delle estensioni di Office per .NET Framework richiesta dalla soluzione.  
   
- *VSTOLoader. dll* anche esegue diverse operazioni che sono specifici di componenti aggiuntivi VSTO:  
+  *VSTOLoader. dll* anche esegue diverse operazioni che sono specifici di componenti aggiuntivi VSTO:  
   
--   Implementa l'interfaccia <xref:Extensibility.IDTExtensibility2> . <xref:Extensibility.IDTExtensibility2> è un'interfaccia COM che deve essere implementata da tutti i componenti aggiuntivi VSTO per le applicazioni di Microsoft Office. Questa interfaccia definisce i metodi chiamati dall'applicazione per comunicare con il componente aggiuntivo VSTO.  
+- Implementa l'interfaccia <xref:Extensibility.IDTExtensibility2> . <xref:Extensibility.IDTExtensibility2> è un'interfaccia COM che deve essere implementata da tutti i componenti aggiuntivi VSTO per le applicazioni di Microsoft Office. Questa interfaccia definisce i metodi chiamati dall'applicazione per comunicare con il componente aggiuntivo VSTO.  
   
--   Implementa l'interfaccia IManagedAddin. Questa interfaccia viene usata dalle applicazioni di Office per consentire il caricamento di componenti aggiuntivi VSTO. Per altre informazioni, vedere [IManagedAddin (interfaccia)](../vsto/imanagedaddin-interface.md).  
+- Implementa l'interfaccia IManagedAddin. Questa interfaccia viene usata dalle applicazioni di Office per consentire il caricamento di componenti aggiuntivi VSTO. Per altre informazioni, vedere [IManagedAddin (interfaccia)](../vsto/imanagedaddin-interface.md).  
   
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Individuare le versioni a 32 e 64 bit del runtime  
  Esistono versioni distinte a 64 bit e a 32 bit di Visual Studio 2010 Tools per Office runtime. Tali versioni del runtime vengono usate per eseguire soluzioni in edizioni di Office a 64 bit e a 32 bit. Nella tabella seguente viene illustrata la versione del runtime richiesta per ogni combinazione di Windows e Office.  
@@ -123,7 +123,7 @@ ms.locfileid: "35672807"
  [Assembly in Visual Studio Tools per Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)   
- [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Eseguire l'aggiornamento e la migrazione di soluzioni Office](../vsto/upgrading-and-migrating-office-solutions.md)  
   

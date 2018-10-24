@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d09dc41f3726f21b432f39a504b5ea8b320bf107
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3bfc59eb1cec7e4ed5ef9b7955438fffb03ca5d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832901"
 ---
 # <a name="counter"></a>Counter
 L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del processore (hardware).  
   
--   Quando si usa il metodo di profilatura basato sul campionamento, l'opzione **Counter** consente di specificare il contatore delle prestazioni del chip e il numero di eventi del contatore da usare come intervallo di campionamento. Quando si usa il campionamento, è possibile specificare un solo contatore.  
+- Quando si usa il metodo di profilatura basato sul campionamento, l'opzione **Counter** consente di specificare il contatore delle prestazioni del chip e il numero di eventi del contatore da usare come intervallo di campionamento. Quando si usa il campionamento, è possibile specificare un solo contatore.  
   
--   Quando si usa il metodo di profilatura basato sulla strumentazione, il numero di eventi del contatore che si verificano nell'intervallo tra l'evento di raccolta corrente e quello precedente vengono elencati come campi separati nei report del profiler. Quando si usa la strumentazione, è possibile specificare più opzioni **Counter**.  
+- Quando si usa il metodo di profilatura basato sulla strumentazione, il numero di eventi del contatore che si verificano nell'intervallo tra l'evento di raccolta corrente e quello precedente vengono elencati come campi separati nei report del profiler. Quando si usa la strumentazione, è possibile specificare più opzioni **Counter**.  
   
- Ogni tipo di processore dispone del proprio set di contatori delle prestazioni dell'hardware. Il profiler definisce un set di contatori delle prestazioni generici comuni a quasi tutti i processori. Per elencare nel computer i contatori generici e quelli specifici del processore, usare il comando **QueryCounters** di VSPerfCmd.  
+  Ogni tipo di processore dispone del proprio set di contatori delle prestazioni dell'hardware. Il profiler definisce un set di contatori delle prestazioni generici comuni a quasi tutti i processori. Per elencare nel computer i contatori generici e quelli specifici del processore, usare il comando **QueryCounters** di VSPerfCmd.  
   
 ## <a name="syntax"></a>Sintassi  
   

@@ -15,37 +15,37 @@ ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a30805988b00fa2c25057f75ebdc3b6359444ab5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de07b2fc8846bd24bb3e4483c78eb339d9d49e4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817548"
 ---
 # <a name="attaching-directly-to-a-program"></a>Collegamento diretto a un programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Gli utenti che desiderano eseguire il debug di programmi in un processo che è già in esecuzione in genere seguono questa procedura:  
   
-1.  Nell'IDE, scegliere il **processi di Debug** dalle **Tools** menu.  
+1. Nell'IDE, scegliere il **processi di Debug** dalle **Tools** menu.  
   
-     Verrà visualizzata la finestra di dialogo **Processi**.  
+    Verrà visualizzata la finestra di dialogo **Processi**.  
   
-2.  Scegli un processo e scegliere il **Attach** pulsante.  
+2. Scegli un processo e scegliere il **Attach** pulsante.  
   
-     Il **Connetti a processo** verrà visualizzata la finestra di dialogo, elencare tutti i motori di debug (DEs) installati nel computer.  
+    Il **Connetti a processo** verrà visualizzata la finestra di dialogo, elencare tutti i motori di debug (DEs) installati nel computer.  
   
-3.  Specificare la crittografia DEs da utilizzare per il debug del processo selezionato e quindi fare clic su **OK**.  
+3. Specificare la crittografia DEs da utilizzare per il debug del processo selezionato e quindi fare clic su **OK**.  
   
- Il pacchetto di debug viene avviato una sessione di debug e passa l'elenco di DEs a esso. La sessione di debug, a sua volta passa questo elenco, insieme a una funzione di callback, per il processo selezionato e quindi chiede il processo di enumerare i relativi programmi in esecuzione.  
+   Il pacchetto di debug viene avviato una sessione di debug e passa l'elenco di DEs a esso. La sessione di debug, a sua volta passa questo elenco, insieme a una funzione di callback, per il processo selezionato e quindi chiede il processo di enumerare i relativi programmi in esecuzione.  
   
- A livello di codice in risposta alla richiesta dell'utente, il pacchetto di debug crea un'istanza di gestore di sessione di debug (SDM) e passa l'elenco di DEs selezionato a esso. Con l'elenco, il pacchetto di debug passa il modello SDM un' [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) interfaccia. Il pacchetto di debug passa l'elenco di DEs per il processo selezionato chiamando [IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). Chiama quindi il modello SDM [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) sulla porta per enumerare i programmi in esecuzione nel processo.  
+   A livello di codice in risposta alla richiesta dell'utente, il pacchetto di debug crea un'istanza di gestore di sessione di debug (SDM) e passa l'elenco di DEs selezionato a esso. Con l'elenco, il pacchetto di debug passa il modello SDM un' [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) interfaccia. Il pacchetto di debug passa l'elenco di DEs per il processo selezionato chiamando [IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). Chiama quindi il modello SDM [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) sulla porta per enumerare i programmi in esecuzione nel processo.  
   
- Da questo momento, ogni motore di debug è collegato a un programma esattamente come descritto nei [collegamento dopo un avvio](../../extensibility/debugger/attaching-after-a-launch.md), con due eccezioni.  
+   Da questo momento, ogni motore di debug è collegato a un programma esattamente come descritto nei [collegamento dopo un avvio](../../extensibility/debugger/attaching-after-a-launch.md), con due eccezioni.  
   
- Per motivi di efficienza, DEs implementate per condividere uno spazio indirizzi con il modello SDM vengono raggruppati in modo che ogni Germania offre un set di programmi collegherà a. In questo caso [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) chiamate [IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) e lo passa una matrice dei programmi a cui connettersi.  
+   Per motivi di efficienza, DEs implementate per condividere uno spazio indirizzi con il modello SDM vengono raggruppati in modo che ogni Germania offre un set di programmi collegherà a. In questo caso [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) chiamate [IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) e lo passa una matrice dei programmi a cui connettersi.  
   
- La seconda eccezione è che gli eventi di avvio inviati da un DE la connessione a un programma già in esecuzione non includono in genere l'evento punto di ingresso.  
+   La seconda eccezione è che gli eventi di avvio inviati da un DE la connessione a un programma già in esecuzione non includono in genere l'evento punto di ingresso.  
   
 ## <a name="see-also"></a>Vedere anche  
  [L'invio di eventi di avvio dopo un avvio](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   

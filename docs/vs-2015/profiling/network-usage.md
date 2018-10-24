@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812166"
 ---
 # <a name="network-usage"></a>Utilizzo della rete
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 ## <a name="collecting-network-tool-data"></a>Raccolta dei dati dello strumento di rete  
  È consigliabile eseguire lo strumento **Rete** con un progetto di Visual Studio aperto nel computer di Visual Studio.  
   
-1.  Aprire il progetto in Visual Studio.  
+1. Aprire il progetto in Visual Studio.  
   
-2.  Nella barra dei menu fare clic su **Debug/Profiler prestazioni...**. Scegliere Rete e quindi **Avvia**.  
+2. Nella barra dei menu fare clic su **Debug/Profiler prestazioni...**. Scegliere Rete e quindi **Avvia**.  
   
-3.  Lo strumento di rete inizia a raccogliere il traffico di rete HTTP dell'app.  
+3. Lo strumento di rete inizia a raccogliere il traffico di rete HTTP dell'app.  
   
-     Quando si esegue l'app, la visualizzazione di riepilogo nel riquadro sinistro visualizza automaticamente un elenco di operazioni HTTP acquisite. Selezionare un elemento nella visualizzazione di riepilogo per visualizzare ulteriori informazioni nel pannello dei dettagli nel riquadro di destra.  
+    Quando si esegue l'app, la visualizzazione di riepilogo nel riquadro sinistro visualizza automaticamente un elenco di operazioni HTTP acquisite. Selezionare un elemento nella visualizzazione di riepilogo per visualizzare ulteriori informazioni nel pannello dei dettagli nel riquadro di destra.  
   
-4.  Scegliere **Arresta** per chiudere l'app.  
+4. Scegliere **Arresta** per chiudere l'app.  
   
- La finestra di report dovrebbe essere analoga alla seguente:  
+   La finestra di report dovrebbe essere analoga alla seguente:  
   
- ![Finestra dello strumento Rete](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![Finestra dello strumento Rete](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analisi dei dati  
  È possibile analizzare il traffico HTTP acquisito mentre l'applicazione è in esecuzione o anche dopo che l'applicazione è stata chiusa, selezionando una delle operazioni di rete visualizzate nella visualizzazione di riepilogo.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::PassToDebuggee | Documenti Microsoft
+title: IDebugExceptionEvent2::PassToDebuggee | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce8e6b53a07f191d967bbd676e6fcfc96b53dc14
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b1fb575299000e4b9ab894a4700fdf314d17d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832706"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
-Specifica se l'eccezione deve essere passata per il programma in fase di debug quando si riprende l'esecuzione, o se l'eccezione deve essere ignorato.  
+Specifica se l'eccezione deve essere passata per il programma in fase di debug quando si riprende l'esecuzione o se l'eccezione deve essere eliminato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,15 +41,15 @@ int PassToDebuggee(
   
 #### <a name="parameters"></a>Parametri  
  `fPass`  
- [in] Diverso da zero (`TRUE`) se l'eccezione deve essere passato programma sottoposto a debug durante l'esecuzione riprende oppure zero (`FALSE`) se l'eccezione deve essere ignorato.  
+ [in] Diverso da zero (`TRUE`) se l'eccezione deve essere passata programma sottoposto a debug quando si riprende l'esecuzione, oppure zero (`FALSE`) se l'eccezione deve essere eliminato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Chiamare questo metodo non determina effettivamente il codice da eseguire nel programma sottoposto a debug. La chiamata è semplicemente per impostare lo stato per l'esecuzione di codice successiva. Ad esempio, le chiamate ai [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) metodo può restituire `S_OK` con il [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` campo impostato su `EXCEPTION_STOP_SECOND_CHANCE`.  
+ Chiamare questo metodo non determina effettivamente qualsiasi codice da eseguire nel programma sottoposto a debug. La chiamata è semplicemente impostare lo stato per l'esecuzione di codice successiva. Ad esempio, le chiamate al [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) metodo può restituire `S_OK` con il [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` campo impostato su `EXCEPTION_STOP_SECOND_CHANCE`.  
   
- L'IDE è possibile che venga visualizzato il [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) eventi e chiamate di [continua](../../../extensibility/debugger/reference/idebugprogram2-continue.md) metodo. Il motore di debug (DE) deve avere un comportamento predefinito di gestire il caso di `PassToDebuggee` non viene chiamato.  
+ Potrebbe essere visualizzato l'IDE di [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) eventi e chiamate di [continua](../../../extensibility/debugger/reference/idebugprogram2-continue.md) (metodo). Il motore di debug (DE) deve avere un comportamento predefinito per gestire il caso se il `PassToDebuggee` non viene chiamato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   

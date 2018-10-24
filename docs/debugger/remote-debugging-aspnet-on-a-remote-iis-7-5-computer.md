@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826507"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Debug remoto di ASP.NET in un Computer remoto con IIS
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'app in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
@@ -47,7 +47,7 @@ Questo articolo include i passaggi di configurazione di una configurazione di ba
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Creazione di ASP.NET 4.5.2 dell'applicazione nel computer di Visual Studio
   
-1. Creare una nuova applicazione MVC ASP.NET (**File > Nuovo > progetto**, quindi selezionare * * Visual c# > Web > applicazione Web ASP.NET. Nella sezione modelli **ASP.NET 4.5.2** selezionare **MVC**. Verificare che l'opzione **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.)
+1. Creare una nuova applicazione MVC ASP.NET (**File > Nuovo > progetto**, quindi selezionare <strong>Visual C# > Web > applicazione Web ASP.NET. In **ASP.NET 4.5.2</strong> sezione di modelli, selezionare **MVC**. Verificare che l'opzione **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.)
 
 2. Aprire il file HomeController.cs e impostare un punto di interruzione nel metodo `About()` .
 

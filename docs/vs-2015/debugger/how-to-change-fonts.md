@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2d1b2d6cf02bea494fb08583bcbc2c1e17583e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39d8638c3b0fba1c8753fd773a447863ee01be77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838621"
 ---
 # <a name="how-to-change-fonts"></a>Procedura: modificare i tipi di carattere
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "49206856"
   
 ### <a name="to-change-font-options"></a>Per modificare le opzioni del tipo di carattere  
   
-1.  Dal **View** menu, scegliere **Font**.  
+1. Dal **View** menu, scegliere **Font**.  
   
-2.  Scegliere un tipo di carattere, lo stile del carattere e dimensioni del carattere.  
+2. Scegliere un tipo di carattere, lo stile del carattere e dimensioni del carattere.  
   
-3.  Fare clic su **OK**.  
+3. Fare clic su **OK**.  
   
- Selezionando **salvare imposta come predefinito** causerà tutte le finestre Spy + + future usare questo tipo di carattere.  
+   Selezionando **salvare imposta come predefinito** causerà tutte le finestre Spy + + future usare questo tipo di carattere.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Utilizzo di Spy + +](../debugger/using-spy-increment.md)   

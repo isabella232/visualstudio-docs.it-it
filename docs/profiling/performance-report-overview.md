@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 455c05ae0d8645040d3f9eac68d20f57138df5cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830769"
 ---
 # <a name="performance-report-overview"></a>Panoramica del rapporto di prestazioni
 È possibile visualizzare i dati di profilatura di una sessione di prestazioni nella finestra **Rapporto di prestazioni** dell'ambiente di sviluppo integrato (IDE) di Visual Studio Team System Development Edition. I dati di profilatura vengono salvati in file con estensione vsp e vsps. Le finestre delle visualizzazioni dei rapporti consentono di visualizzare e analizzare i problemi relativi alle prestazioni delle applicazioni.  
@@ -42,13 +42,13 @@ ms.locfileid: "35255993"
 ### <a name="callercallee-view"></a>Visualizzazione Chiamante/chiamato  
  La visualizzazione Chiamante/chiamato consente di visualizzare un albero delle chiamate per una singola funzione. La visualizzazione è suddivisa in tre sezioni:  
   
--   La funzione di destinazione viene riportata nella parte centrale della visualizzazione.  
+- La funzione di destinazione viene riportata nella parte centrale della visualizzazione.  
   
--   Le funzioni che hanno chiamato la funzione (chiamanti) vengono visualizzate sopra la funzione di destinazione.  
+- Le funzioni che hanno chiamato la funzione (chiamanti) vengono visualizzate sopra la funzione di destinazione.  
   
--   Le funzioni che sono chiamate dalla funzione di destinazione (chiamate) sono visualizzate sotto la destinazione.  
+- Le funzioni che sono chiamate dalla funzione di destinazione (chiamate) sono visualizzate sotto la destinazione.  
   
- È possibile selezionare una funzione diversa facendo doppio clic su qualsiasi funzione nell'elenco delle funzioni chiamanti o chiamate. Per altre informazioni, vedere [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md).  
+  È possibile selezionare una funzione diversa facendo doppio clic su qualsiasi funzione nell'elenco delle funzioni chiamanti o chiamate. Per altre informazioni, vedere [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Visualizzazione Albero delle chiamate  
  La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati delle prestazioni delle relative chiamate di funzione.  

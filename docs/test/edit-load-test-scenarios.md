@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837139"
 ---
 # <a name="edit-load-test-scenarios"></a>Modificare gli scenari di test di carico
 
@@ -46,8 +46,8 @@ Uno scenario è costituito anche da molte altre proprietà che è possibile modi
 ## <a name="tasks"></a>Attività
 
 |Attività|Argomenti correlati|
-|-----------|-----------------------|
-|**Aggiungere pause di interazione umana artificiali nello scenario:** il tempo interazione utente consente di simulare il comportamento umano rispetto alle attese tra le interazioni con un sito Web. I tempi interazione utente intercorrono tra le richieste in un test delle prestazioni Web e tra le iterazioni del test in uno scenario di test di carico. L'uso dei tempi interazione utente in un test di carico può essere utile per creare simulazioni di carico più accurate.|-   [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md)|
+|-|-----------------------|
+|**Aggiungere pause di interazione umana artificiali nello scenario:** il tempo interazione utente consente di simulare il comportamento umano rispetto alle attese tra le interazioni con un sito Web. I tempi interazione utente intercorrono tra le richieste in un test Web e tra le interazioni test in uno scenario di test di carico. L'uso dei tempi interazione utente in un test di carico può essere utile per creare simulazioni di carico più accurate.|-   [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Specificare il numero di utenti virtuali per lo scenario:** è possibile configurare le proprietà del modello di carico per specificare come viene regolato il carico utente simulato durante un test di carico. Sono disponibili tre modelli di carico incorporati: costante, per passaggio e basato su obiettivo. La scelta del modello di carico e la regolazione delle proprietà avvengono per ottenere livelli appropriati in base agli obiettivi del test di carico.|-   [Modificare i modelli di carico per definire le attività di utenti virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Configurare la probabilità che un utente virtuale esegua un test nello scenario:** è possibile usare la combinazione di test per specificare la probabilità che un utente virtuale esegua un test specifico in uno scenario di test di carico. In questo modo, è possibile simulare un carico in maniera più realistica. Anziché avere un unico flusso di lavoro nelle applicazioni, è possibile avere più flussi di lavoro in modo da ottenere una migliore approssimazione della modalità di interazione degli utenti finali con le applicazioni.|-   [Modificare i modelli di combinazione di test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
 |**Aggiungere o rimuovere un test delle prestazioni Web o uno unit test da uno scenario di test di carico:** è possibile aggiungere o rimuovere un test delle prestazioni Web o uno unit test da un test di carico di uno scenario. Un test di carico contiene uno o più scenari, ciascuno dei quali contiene uno o più test delle prestazioni Web o unit test.|-   [Modificare la combinazione di test](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|

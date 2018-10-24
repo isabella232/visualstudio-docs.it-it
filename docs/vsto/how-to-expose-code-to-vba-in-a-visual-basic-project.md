@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839648"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Procedura: esporre il codice a VBA in un progetto Visual Basic
   È possibile esporre il codice in un [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] progetto di Visual Basic Applications Edition (VBA) se si desidera che i due tipi di codice per interagire tra loro.  
@@ -35,11 +35,11 @@ ms.locfileid: "35256097"
   
  Il processo è diverso da quella per il codice in altre classi per il codice in una classe di elementi host:  
   
--   [Esporre il codice in una classe di elementi host](#HostItemCode)  
+- [Esporre il codice in una classe di elementi host](#HostItemCode)  
   
--   [Esporre il codice che non è in una classe di elementi host](#NonHostItem)  
+- [Esporre il codice che non è in una classe di elementi host](#NonHostItem)  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come eseguire operazioni VSTO di ricerca per categorie: chiamare codice da VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come eseguire operazioni VSTO di ricerca per categorie: chiamare codice da VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Esporre il codice in una classe di elementi host  
  Per consentire al codice VBA di chiamare codice Visual Basic in una classe di elementi host, impostare il **EnableVbaCallers** proprietà dell'elemento host **True**.  

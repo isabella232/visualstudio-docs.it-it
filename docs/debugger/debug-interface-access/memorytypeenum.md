@@ -1,5 +1,5 @@
 ---
-title: MemoryTypeEnum | Documenti Microsoft
+title: MemoryTypeEnum | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 616bae99a4cb3ffafa4cdf773bce63576ed04e7a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4a8dcf657933cf62f3f2173bb89dadd1366b0cec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822943"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
-Specifica il tipo di memoria per l'accesso.  
+Specifica il tipo di memoria per accedere.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,19 +37,19 @@ enum MemoryTypeEnum {
   
 #### <a name="parameters"></a>Parametri  
  `MemTypeCode`  
- Accede solo il codice della memoria.  
+ Gli accessi alla memoria del codice solo.  
   
  `MemTypeData`  
  Accede a dati o dello stack di memoria.  
   
  `MemTypeStack`  
- Accessi solo la memoria dello stack.  
+ Gli accessi solo la memoria dello stack.  
   
  `MemTypeAny`  
  Accede a qualsiasi tipo di memoria.  
   
 ## <a name="remarks"></a>Note  
- I valori di questa enumerazione vengono passati per la [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) metodo per limitare l'accesso a tipi diversi di memoria.  
+ I valori di questa enumerazione vengono passati per il [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) metodo per limitare l'accesso a diversi tipi di memoria.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: cvconst.h  

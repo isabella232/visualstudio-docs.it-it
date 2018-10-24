@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835988"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 
@@ -41,7 +41,7 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
 - È possibile anche che alcuni utenti neghino l'accesso alle funzionalità di profilatura a tutti gli altri utenti.
 
- Per altre informazioni, vedere [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).
+  Per altre informazioni, vedere [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ## <a name="to-profile-a-web-site-project"></a>Per profilare un progetto di sito Web
 
@@ -79,11 +79,11 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
 5. Nella terza pagina della procedura guidata digitare l'URL della home page dell'applicazione nella casella **Specificare l'URL o il percorso che esegue l'applicazione Web** e quindi fare clic su **Avanti**.
 
-    - Per un sito Web basato su un server (IIS), digitare l'URL, ad esempio **http://localhost/MySite/default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.
+   - Per un sito Web basato su un server (IIS), digitare l'URL, ad esempio **<http://localhost/MySite/default.aspx>**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.
 
-    - Per un sito Web basato su file, digitare un percorso, ad esempio file///**c:\WebSites\MySite\default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente in c:\webSites\MySite e in Internet Explorer verrà aperta la pagina http://localhost:nnnn/MySite/default.aspx per avviare la sessione.
+   - Per un sito Web basato su file, digitare un percorso, ad esempio file///**c:\WebSites\MySite\default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente in c:\webSites\MySite e in Internet Explorer verrà aperta la pagina http://localhost:nnnn/MySite/default.aspx per avviare la sessione.
 
-    - Per i siti esterni sui quali si vuole raccogliere dati JavaScript, digitare l'URL, ad esempio http://www.contoso.com.
+   - Per i siti esterni sui quali si vuole raccogliere dati JavaScript, digitare l'URL, ad esempio http://www.contoso.com.
 
      Per altre informazioni, visualizzare le pagine delle proprietà per un file binario di destinazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 

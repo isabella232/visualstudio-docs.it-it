@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a5aa0a07af94514f5fff5758fad12bbabc7520ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ccfb4fa9de6513ecc36cad7156117d70879fca2e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857976"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814923"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Condivisione di classi tra DSL utilizzando una libreria DSL
 In Visual Studio Visualization and Modeling SDK è possibile creare una definizione DSL incompleta che è possibile importare in un altro linguaggio specifico di dominio. Ciò consente di scomporre le parti comuni dei modelli simili.
@@ -47,21 +47,21 @@ In Visual Studio Visualization and Modeling SDK è possibile creare una definizi
 
 #### <a name="to-import-a-dsl-library"></a>Per importare una libreria DSL
 
-1.  In un'altra definizione DSL, nella **DSL Explorer**, fare doppio clic la classe radice del DSL e quindi fare clic su **Aggiungi nuova importazione di DslLibrary**.
+1. In un'altra definizione DSL, nella **DSL Explorer**, fare doppio clic la classe radice del DSL e quindi fare clic su **Aggiungi nuova importazione di DslLibrary**.
 
-2.  Nella finestra Proprietà impostare il **percorso File** della libreria. È possibile usare un percorso assoluto o relativo.
+2. Nella finestra Proprietà impostare il **percorso File** della libreria. È possibile usare un percorso assoluto o relativo.
 
-     La libreria importata viene visualizzato in Esplora DSL, in modalità di sola lettura.
+    La libreria importata viene visualizzato in Esplora DSL, in modalità di sola lettura.
 
-3.  È possibile utilizzare le classi importate come classi di base. Creare una classe di dominio nel DSL l'importazione e nelle proprietà della finestra, impostare **classe di base** a una classe importata.
+3. È possibile utilizzare le classi importate come classi di base. Creare una classe di dominio nel DSL l'importazione e nelle proprietà della finestra, impostare **classe di base** a una classe importata.
 
-4.  Fare clic su Trasforma tutti i modelli.
+4. Fare clic su Trasforma tutti i modelli.
 
-5.  Aggiungere al progetto DSL un riferimento all'assembly (DLL) che è stato compilato dal progetto di libreria DSL.
+5. Aggiungere al progetto DSL un riferimento all'assembly (DLL) che è stato compilato dal progetto di libreria DSL.
 
-6.  Compilare la soluzione.
+6. Compilare la soluzione.
 
- Una libreria DSL è possibile importare altre librerie. Quando si importa una libreria, in DSL Explorer vengono visualizzati automaticamente anche le relative importazioni.
+   Una libreria DSL è possibile importare altre librerie. Quando si importa una libreria, in DSL Explorer vengono visualizzati automaticamente anche le relative importazioni.
 
 ## <a name="see-also"></a>Vedere anche
 

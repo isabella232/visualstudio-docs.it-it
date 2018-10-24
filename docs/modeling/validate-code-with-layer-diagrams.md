@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d1d2ea051097f297c3fdeb07d166cbbc182a4c99
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835709"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -115,41 +115,41 @@ Se si dispone di un diagramma di dipendenza aperto collegato agli elementi della
 
 ### <a name="validate-code-at-the-command-prompt"></a>Convalidare il codice al prompt dei comandi
 
-1.  Aprire il prompt dei comandi di Visual Studio.
+1. Aprire il prompt dei comandi di Visual Studio.
 
-2.  Effettuare una delle seguenti operazioni:
+2. Effettuare una delle seguenti operazioni:
 
-    - Per convalidare il codice rispetto a un progetto di modellazione specifico nella soluzione, eseguire MSBuild con la seguente proprietà personalizzata.
+   - Per convalidare il codice rispetto a un progetto di modellazione specifico nella soluzione, eseguire MSBuild con la seguente proprietà personalizzata.
 
-        ```
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
+       ```
 
-         - oppure -
+     - oppure -
 
-         Passare alla cartella che contiene il progetto di modellazione (con estensione modelproj) file e la dipendenza del diagramma e quindi eseguire MSBuild con la seguente proprietà personalizzata:
+       Passare alla cartella che contiene il progetto di modellazione (con estensione modelproj) file e la dipendenza del diagramma e quindi eseguire MSBuild con la seguente proprietà personalizzata:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
-    - Per convalidare codice rispetto a tutti i progetti di modellazione nella soluzione, eseguire MSBuild con la seguente proprietà personalizzata:
+   - Per convalidare codice rispetto a tutti i progetti di modellazione nella soluzione, eseguire MSBuild con la seguente proprietà personalizzata:
 
-        ```
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
+       ```
 
-         - oppure -
+     - oppure -
 
-         Passare alla cartella della soluzione, che deve contenere un progetto di modellazione contenente un diagramma delle dipendenze, quindi eseguire MSBuild con la seguente proprietà personalizzata:
+       Passare alla cartella della soluzione, che deve contenere un progetto di modellazione contenente un diagramma delle dipendenze, quindi eseguire MSBuild con la seguente proprietà personalizzata:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
      Verranno elencati tutti gli errori che si verificano. Per altre informazioni su MSBuild, vedere [MSBuild](../msbuild/msbuild.md) e [attività MSBuild](../msbuild/msbuild-task.md).
 
- Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).
+   Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).
 
 ### <a name="manage-validation-errors"></a>Gestire gli errori di convalida
 
@@ -165,7 +165,7 @@ Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni con
 Usare queste attività per gestire gli errori di convalida nel **elenco errori** finestra:
 
 |**Per**|**Seguire questi passaggi**|
-|------------|----------------------------|
+|-|-|
 |Eliminare gli errori selezionati durante la convalida|Fare doppio clic su uno o più errori selezionati, scegliere **Gestisci errori di convalida**, quindi fare clic su **Elimina errori**.<br /><br /> Gli errori eliminati vengono visualizzati come barrati. Alla successiva convalida, questi errori non saranno visualizzati.<br /><br /> Gli errori eliminati vengono registrati in un file con estensione suppressions per il corrispondente file di diagramma delle dipendenze.|
 |Interrompere l'eliminazione di errori selezionati|Fare doppio clic su selezionato eliminati gli errori, scegliere **Gestisci errori di convalida**, quindi fare clic su **Interrompi eliminazione errori**.<br /><br /> Alla successiva convalida, gli errori eliminati selezionati verranno visualizzati.|
 |Ripristinare tutti gli errori eliminati nella **elenco errori** finestra|Fare doppio clic in un punto qualsiasi nella **elenco errori** finestra, scegliere **Gestisci errori di convalida**, quindi fare clic su **Mostra tutti gli errori eliminati**.|
@@ -204,7 +204,7 @@ Per gestire gli errori nella finestra Elenco errori, vedere [Gestisci errori di 
 Nella tabella seguente vengono descritti i problemi di convalida dei livelli e la relativa risoluzione. Questi problemi differiscono dagli errori risultanti da conflitti tra il codice e la progettazione. Per altre informazioni su questi errori, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).
 
 |**Problema**|**Causa possibile**|**Risoluzione**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |Gli errori di convalida non si verificano come previsto.|Convalida non funziona sui diagrammi delle dipendenze che vengono copiati da altri diagrammi delle dipendenze in Esplora soluzioni e che si trovano nello stesso progetto di modello. i diagrammi delle dipendenze che vengono copiati in questo modo contengono gli stessi riferimenti del diagramma di dipendenza originale.|Aggiungere un nuovo diagramma di dipendenza al progetto di modellazione.<br /><br /> Copiare gli elementi dal diagramma di dipendenza di origine al nuovo diagramma.|
 
 ## <a name="resolve-layer-validation-errors"></a>Risolvere gli errori di convalida dei layer
@@ -220,20 +220,20 @@ Per risolvere gli errori, aggiornare il codice finché non verranno più visuali
 Nella sezione seguente viene descritta la sintassi usata negli errori, viene illustrato il significato degli errori e vengono indicate le operazioni che è possibile eseguire per risolverli o gestirli.
 
 |**Sintassi**|**Descrizione**|
-|----------------|---------------------|
+|-|-|
 |*ArtifactN*(*ArtifactTypeN*)|*Elementon* è un elemento che è associato a un livello nel diagramma delle dipendenze.<br /><br /> *Tipoelementon* è il tipo di *Elementon*, ad esempio un **classe** oppure **metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|
 |*NamespaceNameN*|Nome di uno spazio dei nomi.|
 |*LayerNameN*|Il nome di un livello nel diagramma delle dipendenze.|
 |*Tipodipendenza*|Il tipo di relazione di dipendenza tra *Elemento1* e *elemento2*. Ad esempio, *Elemento1* ha una **chiamate** relazione con *elemento2*.|
 
-|**Sintassi errore**|**Descrizione dell'errore**|
-|----------------------|---------------------------|
-|DV0001: **dipendenza non valida**|Questo problema viene segnalato quando un elemento di codice (spazio dei nomi, tipo, membro) mappato a un riferimento di livello un elemento di codice mappato a un altro livello, ma non vi è alcuna freccia di dipendenza tra questi livelli nel diagramma di convalida delle dipendenze che contiene questo livelli. Si tratta di una violazione di vincolo di dipendenza.|
-|DV1001: **nome spazio dei nomi non valido**|Questo problema viene segnalato in un elemento di codice associato a un livello che la proprietà "Consentito Namespace Names" non contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione dei vincoli di denominazione. Si noti che la sintassi di "Consentiti nomi Namespace" deve essere un elenco di punti e virgola degli spazi dei nomi in cui il codice gli elementi associati sono livello sono consentite da definire.|
-|DV1002: **dipendenza sullo spazio dei nomi spazi**|Questo problema viene segnalato in un elemento di codice associati a un livello e che fanno riferimento a un altro elemento di codice definito in uno spazio dei nomi che viene definito nella proprietà "Namespace spazi" del livello. Si tratta di una violazione dei vincoli di denominazione. Si noti che la proprietà "Spazi dei nomi" è definita come un elenco separato da punti e virgola degli spazi dei nomi che non deve essere fatto riferimento negli elementi di codice associati a questo livello.|
-|DV1003: **nome spazio dei nomi non consentito**|Questo problema viene segnalato in un elemento di codice associato a un livello che "Non consentiti nomi Namespace" proprietà contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione dei vincoli di denominazione. Si noti che la proprietà "Nome spazio dei nomi non consentito" è definita come un elenco separato da punti e virgola degli spazi dei nomi in cui il codice non devono essere definiti gli elementi associati a questo livello.|
-|DV3001: **collegamento mancante**|Livello '*nomelivello*'Collega a'*artefatto*' che non viene trovato. Probabilmente manca un riferimento a un assembly.|*Nomelivello* Collega a un elemento che non è stato trovato. Ad esempio, è possibile che manchi un collegamento a una classe perché nel progetto di modellazione manca un riferimento all'assembly che contiene la classe.|
-|DV9001: **trovata dall'analisi dell'architettura errori interni**|I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output.|Per altre informazioni, vedere il log degli eventi di compilazione o la finestra di output.|
+| **Sintassi errore** | **Descrizione dell'errore** |
+|-|-|
+| DV0001: **dipendenza non valida** | Questo problema viene segnalato quando un elemento di codice (spazio dei nomi, tipo, membro) mappato a un riferimento di livello un elemento di codice mappato a un altro livello, ma non vi è alcuna freccia di dipendenza tra questi livelli nel diagramma di convalida delle dipendenze che contiene questo livelli. Si tratta di una violazione di vincolo di dipendenza. |
+| DV1001: **nome spazio dei nomi non valido** | Questo problema viene segnalato in un elemento di codice associato a un livello che la proprietà "Consentito Namespace Names" non contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione dei vincoli di denominazione. Si noti che la sintassi di "Consentiti nomi Namespace" deve essere un elenco di punti e virgola degli spazi dei nomi in cui il codice gli elementi associati sono livello sono consentite da definire. |
+| DV1002: **dipendenza sullo spazio dei nomi spazi** | Questo problema viene segnalato in un elemento di codice associati a un livello e che fanno riferimento a un altro elemento di codice definito in uno spazio dei nomi che viene definito nella proprietà "Namespace spazi" del livello. Si tratta di una violazione dei vincoli di denominazione. Si noti che la proprietà "Spazi dei nomi" è definita come un elenco separato da punti e virgola degli spazi dei nomi che non deve essere fatto riferimento negli elementi di codice associati a questo livello. |
+| DV1003: **nome spazio dei nomi non consentito** | Questo problema viene segnalato in un elemento di codice associato a un livello che "Non consentiti nomi Namespace" proprietà contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione dei vincoli di denominazione. Si noti che la proprietà "Nome spazio dei nomi non consentito" è definita come un elenco separato da punti e virgola degli spazi dei nomi in cui il codice non devono essere definiti gli elementi associati a questo livello. |
+| DV3001: **collegamento mancante** | Livello '*nomelivello*'Collega a'*artefatto*' che non viene trovato. Probabilmente manca un riferimento a un assembly. |
+| DV9001: **trovata dall'analisi dell'architettura errori interni** | I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output. |
 
 ## <a name="see-also"></a>Vedere anche
 

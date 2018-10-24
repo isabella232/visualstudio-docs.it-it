@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826986"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Prodotti e servizi Microsoft per l'accessibilità
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i
 ##  <a name="hearing"></a> Servizio clienti per persone con problemi di udito  
  Gli utenti affetti da sordità o problemi di udito possono effettuare l'accesso ai servizi di supporto tecnico e clienti Microsoft tramite un servizio DTS (TTY/TDD):  
   
--   Per il servizio clienti, contattare Microsoft Sales Information Center al numero (800) 892-5234 dalle 6:30 alle 17:30 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi.  
+- Per il servizio clienti, contattare Microsoft Sales Information Center al numero (800) 892-5234 dalle 6:30 alle 17:30 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi.  
   
--   Per assistenza tecnica negli Stati Uniti, contattare il Servizio supporto tecnico Microsoft al numero (800) 892-5234 dalle 6.00 e alle 18.00 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi. In Canada, comporre il numero (905) 568-9641 dalle 8.00 e alle 20.00 (fuso orientale), dal lunedì al venerdì, escluse le festività.  
+- Per assistenza tecnica negli Stati Uniti, contattare il Servizio supporto tecnico Microsoft al numero (800) 892-5234 dalle 6.00 e alle 18.00 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi. In Canada, comporre il numero (905) 568-9641 dalle 8.00 e alle 20.00 (fuso orientale), dal lunedì al venerdì, escluse le festività.  
   
- Il Servizio supporto tecnico Microsoft è soggetto a prezzi, termini e condizioni in vigore al momento dell'utilizzo del servizio.  
+  Il Servizio supporto tecnico Microsoft è soggetto a prezzi, termini e condizioni in vigore al momento dell'utilizzo del servizio.  
   
 ##  <a name="moreinfo"></a> Ulteriori informazioni  
  Per altre informazioni sui vantaggi offerti dai computer con Assistive Technology agli utenti con disabilità, vedere il [sito Web di accessibilità Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).  

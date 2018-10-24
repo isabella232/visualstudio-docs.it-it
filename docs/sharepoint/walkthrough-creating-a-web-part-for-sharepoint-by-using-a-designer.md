@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831815"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procedura dettagliata: Creare una web part per SharePoint tramite una finestra di progettazione
 
@@ -98,9 +98,9 @@ Aggiungere il codice che consente all'utente di includere calendari alla visuali
 
 1. Eseguire una delle procedure seguenti:
 
-    - Nella finestra di progettazione, fare doppio clic il **Update** pulsante.
+   - Nella finestra di progettazione, fare doppio clic il **Update** pulsante.
 
-    - Nel **delle proprietà** finestra per il **Update** pulsante la **eventi** pulsante. Nel **fare clic su** proprietà, immettere **Button1_Click**e quindi premere INVIO.
+   - Nel **delle proprietà** finestra per il **Update** pulsante la **eventi** pulsante. Nel **fare clic su** proprietà, immettere **Button1_Click**e quindi premere INVIO.
 
      Il file di codice del controllo utente verrà aperto nell'Editor di codice e `Button1_Click` gestore eventi viene visualizzato. In un secondo momento, si aggiungerà codice a questo gestore eventi.
 
@@ -116,11 +116,11 @@ Aggiungere il codice che consente all'utente di includere calendari alla visuali
 
 4. Sostituire il `Page_Load` metodo di `VisualWebPart1` classe con il codice seguente. Mediante il codice vengono effettuate le seguenti attività:
 
-    - Aggiunge una visualizzazione del calendario mensile al controllo utente.
+   - Aggiunge una visualizzazione del calendario mensile al controllo utente.
 
-    - Aggiunge una casella di controllo per ogni elenco di calendario sul sito.
+   - Aggiunge una casella di controllo per ogni elenco di calendario sul sito.
 
-    - Specifica un modello per ogni tipo di elemento che viene visualizzato nella visualizzazione del calendario.
+   - Specifica un modello per ogni tipo di elemento che viene visualizzato nella visualizzazione del calendario.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]
