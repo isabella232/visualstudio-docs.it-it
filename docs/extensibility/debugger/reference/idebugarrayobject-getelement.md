@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement | Documenti Microsoft
+title: IDebugArrayObject::GetElement | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2e10eced58835044220da0650712dacb131ada3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cff3d3894ae23e7751ac7e7ccd7e62a7cb4d5374
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866103"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 Ottiene un elemento della matrice.  
@@ -43,16 +43,16 @@ int GetElement(
   
 #### <a name="parameters"></a>Parametri  
  `dwIndex`  
- [in] L'indice dell'elemento.  
+ [in] L'indice di elemento.  
   
  `ppElement`  
  [out] Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaccia che rappresenta l'elemento.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo visualizza tutti gli elementi di un oggetto matrice come una matrice unidimensionale, anche se l'oggetto di matrice è multidimensionale. Si consideri ad esempio la matrice `myarray[3][2][6]` e un `dwIndex` parametro pari a 20, questo metodo deve restituire l'elemento da `myarray[1][1][2]`e un `dwIndex` parametro 21 deve restituire l'elemento da `myarray[1][1][3]`. Utilizzare il [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) metodo per determinare il numero totale di elementi nella matrice.  
+ Questo metodo considera tutti gli elementi di un oggetto matrice come una matrice unidimensionale, anche se l'oggetto di matrice è multidimensionale. Si consideri ad esempio la matrice `myarray[3][2][6]` e una `dwIndex` parametro pari a 20, questo metodo restituisce l'elemento dal `myarray[1][1][2]`e un `dwIndex` restituisce l'elemento dal parametro di 21 `myarray[1][1][3]`. Usare la [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) metodo per determinare il numero totale di elementi nella matrice.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

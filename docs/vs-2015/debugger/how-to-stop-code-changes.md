@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ebe9a7d566c1e5b7748f02817564a58fa7eae934
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6d869e3e6be26db871deb3afc7bc398025cc15d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862359"
 ---
 # <a name="how-to-stop-code-changes"></a>Procedura: interrompere l'applicazione di modifiche al codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ In Modifica e continuazione è possibile scegliere di interrompere l'applicazion
   
 ### <a name="to-stop-applying-code-changes"></a>Per interrompere l'applicazione delle modifiche al codice  
   
--   Scegli **Interrompi applicazione modifiche del codice** dal **Debug** menu.  
+- Scegli **Interrompi applicazione modifiche del codice** dal **Debug** menu.  
   
- Questa voce di menu viene visualizzata solo durante l'applicazione delle modifiche al codice.  
+  Questa voce di menu viene visualizzata solo durante l'applicazione delle modifiche al codice.  
   
- Se si sceglie questa opzione, non verrà completata nessuna delle modifiche del codice.  
+  Se si sceglie questa opzione, non verrà completata nessuna delle modifiche del codice.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modifica e continuazione](../debugger/edit-and-continue.md)   

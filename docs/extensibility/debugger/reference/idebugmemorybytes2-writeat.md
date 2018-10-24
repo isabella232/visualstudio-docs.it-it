@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::WriteAt | Documenti Microsoft
+title: IDebugMemoryBytes2::WriteAt | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d1d79d88baf9688fe68ff44d59dcd4d19baf9f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a2d164f0ef816285e2df4a9e49b09d55feb90d25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864271"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
-Scrive il numero specificato di byte di memoria, a partire dall'indirizzo specificato.  
+Scrive il numero specificato di byte di memoria, iniziando in corrispondenza dell'indirizzo specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,19 +46,19 @@ int WriteAt(
   
 #### <a name="parameters"></a>Parametri  
  `pStartContext`  
- [in] Il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) oggetto che specifica in cui iniziare la scrittura di byte.  
+ [in] Il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che specifica la posizione in cui iniziare la scrittura dei byte.  
   
  `dwCount`  
  [in] Il numero di byte da scrivere.  
   
  `rgbMemory`  
- [in] Byte da scrivere. Questa matrice viene considerata almeno `dwCount` byte.  
+ [in] Byte da scrivere. Questa matrice si presuppone che sia almeno `dwCount` byte le dimensioni.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non tutti i byte può essere scritta o restituisce un codice di errore (in genere `E_FAIL`).  
   
 ## <a name="remarks"></a>Note  
- Se l'indirizzo iniziale non è presente all'interno della finestra memoria rappresentata da questo [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) dell'oggetto, si verifica alcun la scrittura e un codice di errore `E_FAIL` viene restituito, anche se la quantità di scrivere si sovrappone nello spazio di memoria.  
+ Se l'indirizzo iniziale non è presente all'interno della finestra memoria rappresentata da questo [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) dell'oggetto, si verifica alcuna scrittura e codice di errore `E_FAIL` viene restituito, anche se la quantità di scrivere si sovrappone allo spazio della memoria.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   

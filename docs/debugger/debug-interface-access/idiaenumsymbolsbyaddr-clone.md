@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::Clone | Documenti Microsoft
+title: Idiaenumsymbolsbyaddr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d60ad08c6ace9b0f130b0430e351689539480d97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f41e3d5c933e331deb8d7e4fb9486cf91018dcf2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868989"
 ---
 # <a name="idiaenumsymbolsbyaddrclone"></a>IDiaEnumSymbolsByAddr::Clone
 Crea una copia di un oggetto.  
@@ -34,7 +34,7 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>Parametri  
  ppenum  
- [out] Restituisce un [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) oggetto che contiene un duplicato dell'enumeratore. I simboli non vengono duplicati, solo l'enumeratore.  
+ [out] Restituisce un [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) oggetto che contiene un duplicato dell'enumeratore. I simboli non siano duplicati, solo l'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

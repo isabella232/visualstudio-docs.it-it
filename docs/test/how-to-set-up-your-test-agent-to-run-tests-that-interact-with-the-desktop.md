@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a1be45dd85fdbc7df9870fe7d0db16b4020376c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862099"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop
 
@@ -48,27 +48,27 @@ Utilizzare la procedura riportata di seguito per configurare qualsiasi agente as
 
    > [!NOTE]
    > - L'utente che si aggiunge per l'avvio del processo deve essere inoltre aggiunto come membro del gruppo TeamTestAgentService nel computer del controller di test associato all'agente. Se tale utente corrisponde all'utente corrente, quando lo si aggiunge al computer del test controller è necessario disconnettersi o riavviare il sistema.
-   - Le password Null non sono supportate per gli account utente.
-   - Se si desidera utilizzare IntelliTrace o l'adattatore dati di emulazione di rete e diagnostico, è necessario che l'account utente sia membro del gruppo Administrators. Se nel computer che esegue l'agente di test viene usato un sistema operativo che dispone di un account utente con privilegi minimi, sarà necessario eseguire l'agente di test anche come amministratore (con privilegi elevati). Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul controller di test.
-   - È necessario che l'utente che sta tentando di usare il test controller sia incluso nell'account utente di tale test controller. In caso contrario non sarà in grado di eseguire i test.
+   > - Le password Null non sono supportate per gli account utente.
+   > - Se si desidera utilizzare IntelliTrace o l'adattatore dati di emulazione di rete e diagnostico, è necessario che l'account utente sia membro del gruppo Administrators. Se nel computer che esegue l'agente di test viene usato un sistema operativo che dispone di un account utente con privilegi minimi, sarà necessario eseguire l'agente di test anche come amministratore (con privilegi elevati). Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul controller di test.
+   > - È necessario che l'utente che sta tentando di usare il test controller sia incluso nell'account utente di tale test controller. In caso contrario non sarà in grado di eseguire i test.
 
 4. Per assicurarsi che un computer con un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accesso automatico**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
 
    > [!NOTE]
    > Quando si è connessi all'ambiente lab usando un desktop remoto o una connessione basata su guest, si potrebbero verificare disconnessioni frequenti e impreviste. La connessione potrebbe interrompersi in quanto il computer potrebbe essere configurato per l'accesso automatico alla rete.
 
-7. Per assicurarsi che lo screen saver sia disabilitato in quanto potrebbe interferire con i test automatizzati che devono interagire con il desktop, selezionare **Verifica che lo screen saver sia disabilitato**.
+5. Per assicurarsi che lo screen saver sia disabilitato in quanto potrebbe interferire con i test automatizzati che devono interagire con il desktop, selezionare **Verifica che lo screen saver sia disabilitato**.
 
    > [!WARNING]
    > L'accesso automatico e la disabilitazione dello screen saver implicano rischi per la sicurezza. Se si abilita l'accesso automatico si consente ad altri utenti di avviare il computer e di usare l'account in grado di accedere automaticamente. Se si disabilita lo screen saver, è possibile che non venga richiesto di immettere le credenziali di un utente per accedere e sbloccare il computer. In questo modo chiunque possa raggiungere il computer fisico può accedere al sistema. Se si abilitano queste funzionalità in un computer, è consigliabile accertarsi che esso sia fisicamente protetto. Ad esempio, i computer potrebbero essere collocati in un laboratorio sicuro. La deselezione dell'opzione **Verifica che lo screen saver sia disabilitato** non abilita lo screen saver.
 
    Per modificare l'agente riconfigurandolo per l'esecuzione come servizio, è possibile utilizzare questo strumento e selezionare **Servizio**.
 
-8. Per applicare le modifiche apportate, scegliere **Applica impostazioni**.
+6. Per applicare le modifiche apportate, scegliere **Applica impostazioni**.
 
    Viene visualizzata la finestra di dialogo **Riepilogo configurazione** indicante lo stato di ognuno dei passaggi necessari per configurare l'agente di test.
 
-9. Per chiudere la finestra di dialogo **Riepilogo configurazione**, fare clic su **Chiudi**. Quindi scegliere ancora **Chiudi** per chiudere **Test Agent Configuration Tool**.
+7. Per chiudere la finestra di dialogo **Riepilogo configurazione**, fare clic su **Chiudi**. Quindi scegliere ancora **Chiudi** per chiudere **Test Agent Configuration Tool**.
 
    > [!NOTE]
    > Per gli agenti di test eseguiti come processo, nel computer è disponibile un'icona dell'area di notifica. Tale icona indica lo stato dell'agente di test. Se l'agente è in esecuzione come processo, con questo strumento è possibile avviarlo, arrestarlo o riavviarlo. Per avviare l'agente di test come processo se non è in esecuzione, scegliere **Start** > **Visual Studio** > **Agente di test di Microsoft Visual Studio**.

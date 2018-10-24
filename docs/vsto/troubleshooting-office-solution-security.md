@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 347cd6cfa1e773d3900e7294d691f061d91a762d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862931"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Risolvere i problemi di sicurezza delle soluzioni Office
   In questo argomento contiene suggerimenti per la risoluzione di problemi comuni che possono verificarsi quando si lavora con sicurezza delle soluzioni Office.  
@@ -32,17 +32,17 @@ ms.locfileid: "35673210"
   
  L'URL del manifesto della distribuzione può essere classificata in base a una delle cinque aree:  
   
--   Risorse del Computer  
+- Risorse del Computer  
   
--   Internet  
+- Internet  
   
--   Intranet locale  
+- Intranet locale  
   
--   Siti attendibili  
+- Siti attendibili  
   
--   Siti con restrizioni  
+- Siti con restrizioni  
   
- Se il percorso del manifesto della distribuzione è stato assegnato all'area siti con restrizioni, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non installa la soluzione. Se il percorso è noto e può essere considerato attendibile, l'utente può rimuovere il percorso dall'area siti con restrizioni e installare la soluzione. Per informazioni su come gestire le zone, vedere [configurazione di editori attendibili ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
+  Se il percorso del manifesto della distribuzione è stato assegnato all'area siti con restrizioni, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non installa la soluzione. Se il percorso è noto e può essere considerato attendibile, l'utente può rimuovere il percorso dall'area siti con restrizioni e installare la soluzione. Per informazioni su come gestire le zone, vedere [configurazione di editori attendibili ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Le soluzioni non possono essere installate da condivisioni file di rete o percorsi web quando si installa la funzionalità sicurezza avanzata di Internet Explorer o Internet Explorer 7  
  Internet Explorer Enhanced Security Configuration (IEESC) in Windows Server 2003 e versioni successive e Internet Explorer 7 e versioni successive, consente di limitare in modo significativo la capacità degli utenti per accedere a Internet. Quando gli utenti provano a installare le soluzioni Office da un percorso di condivisione o web file rete, che venga visualizzato il messaggio di errore seguente: "la funzionalità di personalizzazione in questa applicazione non funzionerà perché il certificato usato per firmare il manifesto di distribuzione per *SolutionName* non è attendibile. Contattare l'amministratore per ottenere assistenza."  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2309428ffa87409bd35f1a05c2cfd591db3cc1a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: f897c2ae11e9b9677557684ca4755d0df66ddbdd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864790"
 ---
 # <a name="vsix-project-template"></a>Modello di progetto VSIX
 È possibile usare il modello di progetto VSIX per eseguire il wrapping di uno o più estensioni di Visual Studio in un progetto VSIX e quindi pubblicare il pacchetto nel [Visual Studio gallery](http://go.microsoft.com/fwlink/?LinkID=123847) sito Web.  
@@ -38,50 +38,50 @@ ms.locfileid: "39586287"
 ## <a name="uses-of-the-vsix-project-template"></a>Utilizzi del modello di progetto VSIX  
  Il modello di progetto VSIX ha due utilizzi principali:  
   
--   Per distribuire i modelli di progetto, modelli di elementi e altre estensioni che non dispongono ancora il supporto VSIX.  
+- Per distribuire i modelli di progetto, modelli di elementi e altre estensioni che non dispongono ancora il supporto VSIX.  
   
--   Per eseguire il wrapping gli output di più estensioni nel pacchetto una distribuzione.  
+- Per eseguire il wrapping gli output di più estensioni nel pacchetto una distribuzione.  
   
- Non è necessario usare il modello di progetto VSIX per distribuire i pacchetti VSPackage o altri tipi di estensioni che hanno già VSIX supporto.  
+  Non è necessario usare il modello di progetto VSIX per distribuire i pacchetti VSPackage o altri tipi di estensioni che hanno già VSIX supporto.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Creazione del pacchetto di un'estensione in un progetto VSIX vuoto  
  È possibile creare un pacchetto, un'estensione esistente o un'estensione che non dispone già di VSIX supportare, inserendoli in un progetto VSIX vuoto. L'estensione da sottoporre a wrapping deve essere di un tipo supportato dal [schema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
 ### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Per creare un pacchetto di un'estensione usando un progetto VSIX  
   
-1.  Compilare i progetti che costituiscono l'estensione.  
+1. Compilare i progetti che costituiscono l'estensione.  
   
-2.  Creare un progetto VSIX usando il **progetto VSIX** modello.  
+2. Creare un progetto VSIX usando il **progetto VSIX** modello.  
   
-     *Vsixmanifest* viene aperto in **progettazione manifesto**.  
+    *Vsixmanifest* viene aperto in **progettazione manifesto**.  
   
-3.  Nel **asset** scheda, scegliere il **New** pulsante.  
+3. Nel **asset** scheda, scegliere il **New** pulsante.  
   
-     Il **Aggiungi nuovo Asset** verrà visualizzata la finestra di dialogo.  
+    Il **Aggiungi nuovo Asset** verrà visualizzata la finestra di dialogo.  
   
-4.  Nel **tipo** elenco, scegliere il tipo di estensione da aggiungere.  
+4. Nel **tipo** elenco, scegliere il tipo di estensione da aggiungere.  
   
-5.  Per aggiungere un elemento di estensione o contenuto che è incluso nella soluzione corrente (ad esempio, un modello di elemento o un assembly compilato), seguire i passaggi seguenti:  
+5. Per aggiungere un elemento di estensione o contenuto che è incluso nella soluzione corrente (ad esempio, un modello di elemento o un assembly compilato), seguire i passaggi seguenti:  
   
-    1.  Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
+   1.  Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
   
-    2.  Nel **progetto** scegliere il nome dell'estensione.  
+   2.  Nel **progetto** scegliere il nome dell'estensione.  
   
-    3.  Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
+   3.  Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
   
-6.  Per aggiungere un elemento di contenuto che non è incluso nella soluzione corrente o un'estensione, seguire i passaggi seguenti:  
+6. Per aggiungere un elemento di contenuto che non è incluso nella soluzione corrente o un'estensione, seguire i passaggi seguenti:  
   
-    1.  Nel **origine** elenco a discesa, scegliere **File in filesystem**.  
+   1.  Nel **origine** elenco a discesa, scegliere **File in filesystem**.  
   
-    2.  Nel **percorso** campo, immettere il percorso completo al file di estensione compilato o compresso o utilizzare il **Sfoglia** pulsante per individuare il file.  
+   2.  Nel **percorso** campo, immettere il percorso completo al file di estensione compilato o compresso o utilizzare il **Sfoglia** pulsante per individuare il file.  
   
-    3.  Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
+   3.  Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
   
-7.  Se si desidera che il pacchetto a includere le estensioni aggiuntive, aggiungerle allo stesso modo.  
+7. Se si desidera che il pacchetto a includere le estensioni aggiuntive, aggiungerle allo stesso modo.  
   
-8.  Compilare la soluzione.  
+8. Compilare la soluzione.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Crea una *VSIX* file che contiene un file manifesto VSIX, [Content_Types]*XML* file e tutte le risorse di estensione che è stato aggiunto al progetto.  
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Crea una *VSIX* file che contiene un file manifesto VSIX, [Content_Types]*XML* file e tutte le risorse di estensione che è stato aggiunto al progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti su VSIX extension schema 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)   

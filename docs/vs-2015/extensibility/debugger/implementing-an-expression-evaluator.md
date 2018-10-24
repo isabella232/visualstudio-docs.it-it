@@ -16,12 +16,12 @@ ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3af5f80324e5b6a956917cd0fe0c135acae99a6d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7671f3e05b990ba96abf9084582d80545495bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864908"
 ---
 # <a name="implementing-an-expression-evaluator"></a>Implementazione di un analizzatore di espressioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,37 +33,37 @@ ms.locfileid: "49293969"
   
  L'analizzatore di Espressioni accetta un'espressione da DE sotto forma di stringa e analizza o lo valuta. L'analizzatore di Espressioni implementa le interfacce seguenti, che vengono usate per la Germania:  
   
--   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
+- [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
--   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
+- [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
- L'analizzatore di Espressioni chiama l'oggetto binder, fornito per la Germania, per ottenere il valore di simboli e oggetti. L'analizzatore di Espressioni Usa le interfacce seguenti, che sono implementate dal DE:  
+  L'analizzatore di Espressioni chiama l'oggetto binder, fornito per la Germania, per ottenere il valore di simboli e oggetti. L'analizzatore di Espressioni Usa le interfacce seguenti, che sono implementate dal DE:  
   
--   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
--   [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
+- [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
   
--   [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
+- [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
   
--   [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
+- [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
   
--   [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
+- [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
   
--   [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
+- [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
   
--   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
+- [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- Implementa l'analizzatore di Espressioni [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fornisce il meccanismo per la descrizione del risultato della valutazione di un'espressione, ad esempio una variabile locale, una primitiva o un oggetto, a Visual Studio, che consente di visualizzare le informazioni appropriate nella **variabili locali**,  **Guarda**, oppure **immediato** finestra.  
+  Implementa l'analizzatore di Espressioni [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fornisce il meccanismo per la descrizione del risultato della valutazione di un'espressione, ad esempio una variabile locale, una primitiva o un oggetto, a Visual Studio, che consente di visualizzare le informazioni appropriate nella **variabili locali**,  **Guarda**, oppure **immediato** finestra.  
   
- Stored procedure è assegnata all'analizzatore di Espressioni per la Germania quando vengono richieste informazioni. La stored procedure SP implementa le interfacce che descrivono gli indirizzi e campi, ad esempio le interfacce seguenti e i relativi derivati:  
+  Stored procedure è assegnata all'analizzatore di Espressioni per la Germania quando vengono richieste informazioni. La stored procedure SP implementa le interfacce che descrivono gli indirizzi e campi, ad esempio le interfacce seguenti e i relativi derivati:  
   
--   [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
+- [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
   
--   [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
+- [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
--   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
+- [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
- L'analizzatore di Espressioni utilizza tutte queste interfacce.  
+  L'analizzatore di Espressioni utilizza tutte queste interfacce.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Strategia di implementazione di un analizzatore di espressioni](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
