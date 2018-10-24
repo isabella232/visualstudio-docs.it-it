@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea9c1739b0f1236deedcea98bcbc96e99abb404
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908746"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Tasti di modifica strumento Penna in Blend
 Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile usare per modificare un tracciato mentre viene creato con lo strumento **Penna** ![strumento Penna](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). È possibile usare lo strumento **Penna** anche per aggiungere o rimuovere punti su un tracciato esistente oppure per congiungere due tracciati.
 
 |Per|Eseguire questa operazione|Puntatore|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Creare un punto iniziale di un segmento di linea retta|Fai clic per creare il nuovo punto|![Creare un punto iniziale di un segmento di linea retta](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Puntatore penna|
 |Creare un punto iniziale di un segmento di linea curva|Fai clic per creare il nuovo punto e quindi trascina per regolare i punti di controllo della tangente prima di rilasciare il pulsante del mouse|![Creare un punto iniziale di un segmento di linea curva](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Puntatore penna|
 |Modificare l'ultima tangente senza arrotondare il tracciato, in modo da ottenere un angolo acuto|Fare clic per creare il nuovo punto e quindi premere **ALT** prima di rilasciare il pulsante del mouse|![Modificare l'ultima tangente senza arrotondare il tracciato](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921288"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere i metodi di raccolta
 
@@ -32,12 +32,12 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 - Nella prima pagina della procedura guidata selezionare una delle opzioni seguenti:
 
-|Opzione|Descrizione|
-|------------|-----------------|
-|**Campionamento CPU**|Consente di raccogliere le statistiche dell'applicazione utili per l'analisi iniziale e per l'analisi dei problemi relativi all'uso della CPU.|
-|**Strumentazione**|Consente di raccogliere i dati di intervallo dettagliati utili per l'analisi mirata e per l'analisi dei problemi relativi alle prestazioni di input/output.|
-|**Allocazione della memoria .NET**|Consente di raccogliere i dati relativi all'allocazione della memoria [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usando il metodo di profilatura del campionamento.|
-|**Concorrenza**|Consente di raccogliere i dati numerici sui conflitti di risorse.|
+| Opzione | Descrizione |
+|----------------------------| - |
+| **Campionamento CPU** | Consente di raccogliere le statistiche dell'applicazione utili per l'analisi iniziale e per l'analisi dei problemi relativi all'uso della CPU. |
+| **Strumentazione** | Consente di raccogliere i dati di intervallo dettagliati utili per l'analisi mirata e per l'analisi dei problemi relativi alle prestazioni di input/output. |
+| **Allocazione della memoria .NET** | Consente di raccogliere i dati relativi all'allocazione della memoria [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usando il metodo di profilatura del campionamento. |
+| **Concorrenza** | Consente di raccogliere i dati numerici sui conflitti di risorse. |
 
 ## <a name="performance-explorer"></a>Esplora prestazioni
 

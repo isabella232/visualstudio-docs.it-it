@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf39d9a01794e34a50d81489214bb006e4c6448
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 05724c81b9983414c4e0c86870b630e29c33ade3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926579"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori
 Questo documento descrive le proprietà di tipi di carattere e colori per una finestra degli strumenti registrata per la visualizzazione in **Tipi di carattere e colori** nella categoria **Ambiente** della finestra di dialogo **Opzioni**. Supporta la natura dinamica dei gruppi di elementi colorabili, che possono cambiare se vengono installati o disinstallati pacchetti VSPackage.
@@ -37,7 +37,7 @@ Questo documento descrive le proprietà di tipi di carattere e colori per una fi
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
 |Nome degli elementi delle proprietà|Valore|Descrizione|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |FontFamily|Get/Set (String)|Il tipo di carattere da usare, ad esempio "Courier New".|
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>) |Valore <xref:EnvDTE.vsFontCharSet> che specifica il tipo di set di caratteri da usare, ad esempio ebraico o russo. |
 |FontSize|Get/Set (Short)|La dimensione del carattere da usare, in punti. Ad esempio, 10 o 12.|

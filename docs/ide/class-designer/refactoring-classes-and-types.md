@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee534ca3c8b2a1cef441005586bc58601fb15ed7
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922523"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactoring di classi e tipi in Progettazione classi
 
@@ -38,7 +38,7 @@ Quando si effettua il refactoring del codice, si modifica la struttura interna d
 ## <a name="common-tasks"></a>Attività comuni
 
 |Attività|Contenuto di supporto|
-|----------|------------------------|
+|----------| - |
 |**Refactoring di classi:** è possibile usare le operazioni di refactoring per suddividere una classe in classi parziali o per implementare una classe base astratta.|-   [Procedura: dividere una classe in classi parziali](how-to-split-a-class-into-partial-classes.md)|
 |**Uso di interfacce:** in Progettazione classi è possibile implementare un'interfaccia nel diagramma classi connettendola a una classe che fornisce il codice per i metodi di interfaccia.|-   [Procedura: implementare un'interfaccia](how-to-implement-an-interface.md)|
 |**Refactoring di tipi, membri dei tipi e parametri:** con Progettazione classi è possibile rinominare i tipi, eseguire l'override dei membri dei tipi oppure spostarli da un tipo all'altro. È anche possibile creare tipi nullable.|-   [Ridenominazione di tipi e membri dei tipi](#rename-types-and-type-members)<br />-   [Spostamento dei membri dei tipi da un tipo a un altro](#move-type-members-from-one-type-to-another)<br />-   [Procedura: Creare un tipo nullable](how-to-create-a-nullable-type.md)|

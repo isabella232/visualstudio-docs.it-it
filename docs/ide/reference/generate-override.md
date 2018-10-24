@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c366ce3d393e639590e5d45fc55ad5523be920b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919065"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Generare un override in Visual Studio
 
@@ -36,13 +36,13 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-    ![IntelliSense per l'override C#](media/override-intellisense-cs.png)
+      ![IntelliSense per l'override C#](media/override-intellisense-cs.png)
 
    - Visual Basic:
 
-    ![IntelliSense per l'override VB](media/override-intellisense-vb.png)
+      ![IntelliSense per l'override VB](media/override-intellisense-vb.png)
 
-1. Selezionare il metodo di cui si vuole eseguire l'override dalla classe di base.
+2. Selezionare il metodo di cui si vuole eseguire l'override dalla classe di base.
 
    > [!TIP]
    > - Usare l'icona delle proprietà ![Icona della proprietà](media/override-property-cs.png) per mostrare o nascondere le proprietà nell'elenco.
@@ -52,11 +52,11 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-      ![Risultato dell'override C#](media/override-result-cs.png)
+       ![Risultato dell'override C#](media/override-result-cs.png)
 
    - Visual Basic:
 
-      ![Risultato dell'override VB](media/override-result-vb.png)
+       ![Risultato dell'override VB](media/override-result-vb.png)
 
 ## <a name="see-also"></a>Vedere anche
 

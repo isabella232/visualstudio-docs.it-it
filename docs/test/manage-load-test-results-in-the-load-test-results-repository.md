@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950017"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gestire i risultati dei test di carico nel repository dei risultati del test di carico
 
@@ -44,7 +44,7 @@ Quando si eseguono i test di carico, le informazioni raccolte durante l'esecuzio
 ## <a name="load-test-analyzer-tasks"></a>Attività dell'Analizzatore test di carico
 
 |Attività|Argomenti correlati|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Configurare un repository dei risultati del test di carico**: è possibile configurare un repository dei risultati del test di carico in un database SQL. **Nota:** un repository del test di carico può essere creato anche quando si installa un test controller. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).||
 |**Selezione e visualizzazione di un repository dei risultati:** è possibile selezionare un repository dei risultati specifico. La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui archiviare i risultati del test di carico utilizzando la finestra **Gestisci controller test**.|-   [Procedura: Selezionare un repository dei risultati del test di carico](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)|
 |**Eliminare un risultato del test di carico dal repository**: è possibile rimuovere un risultato del test di carico dall'**Editor test di carico** utilizzando la finestra di dialogo **Apri e gestisci risultati test di carico**.|-   [Procedura: Eliminare i risultati di un test di carico da un repository](../test/how-to-delete-load-test-results-from-a-repository.md)|

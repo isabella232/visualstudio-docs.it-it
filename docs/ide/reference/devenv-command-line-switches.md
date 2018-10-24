@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951115"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907040"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 
@@ -61,7 +61,7 @@ Le regole di sintassi per le opzioni `devenv` sono simili a quelle di altre util
 Le opzioni della riga di comando seguenti consentono di visualizzare l'IDE ed eseguire l'attività descritta.
 
 |Switch della riga di comando|Descrizione|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Avvia l'IDE ed esegue il comando specificato.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Carica un eseguibile C++ sotto il controllo del debugger. Questa opzione non è disponibile per gli eseguibili Visual Basic o C#. Per altre informazioni, vedere [Automatically start a process in the debugger](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger) (Avviare automaticamente un processo nel debugger).|
 |[/LCID or /l](../../ide/reference/lcid-devenv-exe.md)|Imposta la lingua predefinita per l'IDE. Se la lingua specificata non è inclusa nell'installazione di Visual Studio, questa impostazione viene ignorata.|
@@ -77,7 +77,7 @@ Le opzioni della riga di comando seguenti consentono di visualizzare l'IDE ed es
 Le opzioni della riga di comando seguenti non visualizzano l'IDE.
 
 |Switch della riga di comando|Descrizione|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Visualizza la guida per le opzioni devenv nella **finestra del prompt dei comandi**.<br /><br /> **Devenv /?**|
 |[/Build](../../ide/reference/build-devenv-exe.md)|Compila la soluzione o il progetto specificati in base alla configurazione relativa.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Elimina i file creati dal comando di compilazione, senza che ciò abbia effetto sui file di origine.<br /><br /> **Devenv myproj.csproj /clean**|

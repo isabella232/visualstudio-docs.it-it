@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855443"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tasti di scelta rapida per la finestra di progettazione XAML
+
 I tasti di scelta rapida nella finestra di progettazione XAML consentono di lavorare più velocemente grazie alla possibilità di eseguire, con un unico tasto di scelta rapida, un'azione che richiederebbe diversi clic del pulsante del mouse.
 
 ## <a name="element-shortcuts"></a>Tasti di scelta rapida per gli elementi
- Questa tabella elenca i tasti di scelta rapida disponibili per lavorare con gli elementi nella tavola da disegno.
+
+Questa tabella elenca i tasti di scelta rapida disponibili per lavorare con gli elementi nella tavola da disegno.
 
 |**Per eseguire questa azione**|**Eseguire questa operazione**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Creare un elemento|Premere **Ctrl**+**N**|
 |Duplicare un elemento|Tenere premuto **Alt** e premere un tasto di direzione.|
 |Modificare il testo in un controllo|Premere **F2** (premere **Esc** per uscire)|
@@ -39,10 +41,11 @@ I tasti di scelta rapida nella finestra di progettazione XAML consentono di lavo
 |Selezionare una proprietà per un elemento|Con un elemento selezionato e lo stato attivo nella finestra Proprietà, premere **Tab**. Usare **Ctrl**+**Tab** per spostare lo stato attivo sulla finestra Proprietà. È possibile usare i tasti di direzione per selezionare i valori delle proprietà dagli elenchi a discesa.|
 
 ## <a name="document-outline-window-shortcuts"></a>Tasti di scelta rapida della finestra Struttura documento
- La tabella seguente elenca i tasti di scelta rapida disponibili quando si lavora con gli elementi nella finestra Struttura documento.
+
+La tabella seguente elenca i tasti di scelta rapida disponibili quando si lavora con gli elementi nella finestra Struttura documento.
 
 |**Per eseguire questa azione**|**Eseguire questa operazione**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Nascondere gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL**+**H**|
 |Mostrare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**Maiusc**+**Ctrl**+**H**|
 |Bloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL**+**L**|

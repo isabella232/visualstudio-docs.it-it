@@ -31,19 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938799"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Creare e configurare membri di tipi in Progettazione classi
 
 È possibile aggiungere questi membri ai tipi in un diagramma classi e configurarli nella finestra **Dettagli classe**:
 
 |**Type**|**Membri che può contenere**|
-|--------------|--------------------------------|
+|--------------| - |
 |Classe|metodo, proprietà (per C# e Visual Basic), campo, evento (per C# e Visual Basic), costruttore (metodo), distruttore (metodo), costante|
 |Enum|membro|
 |Interfaccia|metodo, proprietà, evento (per C# e Visual Basic)|
@@ -58,7 +58,7 @@ ms.locfileid: "33957697"
 ## <a name="common-tasks"></a>Attività comuni
 
 |Attività|Contenuto di supporto|
-|----------|------------------------|
+|----------| - |
 |**Introduzione:** prima di creare e configurare membri di tipo, è necessario aprire la finestra **Dettagli classe**.|- [Aprire la finestra Dettagli classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Note sull'uso di Dettagli classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Visualizzare le informazioni di sola lettura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**Creare e modificare membri di tipi:**  è possibile creare nuovi membri, modificare i membri e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|- [Creare membri](creating-and-configuring-type-members.md#create-members)<br />- [Modificare i membri dei tipi](creating-and-configuring-type-members.md#modify-type-members)<br />- [Aggiungere parametri a metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928672"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
 
@@ -51,7 +51,7 @@ La maggior parte di valori numerici visualizzata in una tabella per i contatori 
  Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle esecuzioni di test di carico.
 
 |Nome tabella|Descrizione|
-|----------------|-----------------|
+|-|-|
 |Errori|Visualizza un elenco di errori generati durante l'esecuzione del test di carico. Per altre informazioni, vedere la [Tabella degli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in questo argomento e [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Pages|Visualizza un elenco di pagine visitate durante l'esecuzione di un test di carico. Alcuni dati di questa tabella sono disponibili solo al termine di un test di carico. Per altre informazioni, vedere [Procedura: Visualizzare la risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Richieste|Visualizza dettagli relativi alle singole richieste emesse durante un test di carico, tra cui tutte le richieste HTTP e le richieste dipendenti, ad esempio immagini. Per altre informazioni, vedere la [Tabella Richieste](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) in questo argomento.|
@@ -73,7 +73,7 @@ La maggior parte di valori numerici visualizzata in una tabella per i contatori 
  Nella tabella seguente sono elencate le colonne della tabella **Richieste**:
 
 |Colonna|Descrizione|Visibile per impostazione predefinita|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Richiesta**|URL della richiesta, ad esempio *home.html* o *orange-arrow.gif*.|Yes|
 |**Scenario**|Nome dello scenario.|Yes|
 |**Test**|Nome del test.|Yes|
@@ -95,7 +95,7 @@ La maggior parte di valori numerici visualizzata in una tabella per i contatori 
  Nella tabella seguente sono elencate le colonne della tabella **Test**.
 
 |Colonna|Descrizione|Visibile per impostazione predefinita|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Test**|Nome del test.|Yes|
 |**Scenario**|Nome dello scenario.|Yes|
 |**Totale**|Numero totale di volte in cui il test è stato eseguito nello scenario. Include il numero di volte in cui il test è stato superato e non superato.|Yes|
@@ -119,7 +119,7 @@ La maggior parte di valori numerici visualizzata in una tabella per i contatori 
 > Per visualizzare tutte le colonne, è necessario abilitare la proprietà Intervallo archiviazione dettagli associata all'impostazione esecuzione test attiva. Per altre informazioni, vedere [Procedura: Specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Colonna|Descrizione|Visibile senza i dettagli dell'intervallo|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**Transazione**|Nome della transazione.|Yes|
 |**Scenario**|Nome dello scenario.|Yes|
 |**Test**|Nome del test.|Yes|
@@ -145,7 +145,7 @@ La maggior parte di valori numerici visualizzata in una tabella per i contatori 
  La tabella degli errori contiene le seguenti colonne:
 
 |Colonna|Descrizione|Visibile per impostazione predefinita|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Tipo|Il tipo di errore, ad esempio HttpError.|Yes|
 |Sottotipo|Il sottotipo di errore, ad esempio LoadTestException.|Yes|
 |Conteggio|Il numero di errori di questo tipo che si sono verificati durante il test di carico. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile fare clic su qualsiasi collegamento ipertestuale per visualizzare un elenco dei singoli errori.|Yes|
@@ -163,7 +163,7 @@ Nella tabella degli errori sono raggruppati gli errori per tipo e sottotipo. Per
 La tabella **Errori test di carico** contiene le seguenti colonne:
 
 |Colonna|Descrizione|
-|------------|-----------------|
+|-|-|
 |**Ora**|L'ora durante il test di carico in cui si è verificato l'errore.|
 |**Agente**|Il nome del computer agente in cui si è verificato l'errore. Questo è importante quando si eseguono test di carico usando controller di test e agenti di test. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|Nome del test delle prestazioni Web in cui si è verificato l'errore.|

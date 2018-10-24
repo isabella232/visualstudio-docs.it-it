@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b4b5a818a75399fc4ce29fb7f2bec6332dac0585
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930596"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring con estrazione di un metodo
 
@@ -41,21 +41,21 @@ Questo refactoring si applica a:
 
    - C#:
 
-    ![Codice evidenziato - C#](media/extractmethod-highlight-cs.png)
+       ![Codice evidenziato - C#](media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato - Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Codice evidenziato - Visual Basic](media/extractmethod-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+R** e quindi **CTRL+M**. Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai metodo** dal popup della finestra di anteprima.
+      - Premere **CTRL+R** e quindi **CTRL+M**. Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai metodo** dal popup della finestra di anteprima.
    - **Mouse**
-     - Selezionare **Modifica > Refactoring - Estrai metodo**.
-     - Fare clic con il pulsante destro del mouse sul codice e scegliere **Refactoring > Estrai > Estrai metodo**.
-     - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare **Estrai metodo** dal popup della finestra di anteprima.
+      - Selezionare **Modifica > Refactoring - Estrai metodo**.
+      - Fare clic con il pulsante destro del mouse sul codice e scegliere **Refactoring > Estrai > Estrai metodo**.
+      - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare **Estrai metodo** dal popup della finestra di anteprima.
 
    Il metodo verrà creato immediatamente. Da qui, è ora possibile rinominare il metodo semplicemente digitandone il nuovo nome.
 
@@ -64,13 +64,13 @@ Questo refactoring si applica a:
 
    - C#:
 
-    ![Rinominare il metodo - C#](media/extractmethod-rename-cs.png)
+      ![Rinominare il metodo - C#](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-    ![Rinominare il metodo - Visual Basic](media/extractmethod-rename-vb.png)
+      ![Rinominare il metodo - Visual Basic](media/extractmethod-rename-vb.png)
 
-1. Quando si è soddisfatti della modifica, scegliere il pulsante **Applica** o premere **INVIO**. Verrà eseguito il commit delle modifiche.
+3. Quando si è soddisfatti della modifica, scegliere il pulsante **Applica** o premere **INVIO**. Verrà eseguito il commit delle modifiche.
 
 ## <a name="see-also"></a>Vedere anche
 

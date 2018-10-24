@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932351"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: Eseguire lo zoom avanti su un'area del grafico nei risultati del test di carico
 
@@ -94,15 +94,15 @@ Al termine di un test di carico, è possibile utilizzare le barre dello zoom per
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>Per eseguire lo zoom su un'area del grafico selezionandola e trascinandola
 
-1.  Selezionare un'estremità dell'area dello zoom di un grafico.
+1. Selezionare un'estremità dell'area dello zoom di un grafico.
 
-2.  Trascinare il puntatore del mouse verso l'altra estremità dell'area dello zoom.
+2. Trascinare il puntatore del mouse verso l'altra estremità dell'area dello zoom.
 
-3.  Rilasciare il pulsante del mouse.
+3. Rilasciare il pulsante del mouse.
 
-     Viene ingrandita l'area che è stata selezionata e trascinata.
+    Viene ingrandita l'area che è stata selezionata e trascinata.
 
- Nella procedura descritta di seguito viene illustrato come eseguire rapidamente lo zoom indietro su un'area senza dovere regolare le estremità della barra dello zoom.
+   Nella procedura descritta di seguito viene illustrato come eseguire rapidamente lo zoom indietro su un'area senza dovere regolare le estremità della barra dello zoom.
 
 ### <a name="to-zoom-out"></a>Per eseguire lo zoom indietro
 

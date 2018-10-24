@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930544"
 ---
 # <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
 È possibile usare le pagine nella cartella **Ambiente** della finestra di dialogo **Opzioni** per impostare la visualizzazione e il comportamento di alcuni elementi dell'ambiente di sviluppo integrato (IDE). Per accedere alle pagine di Ambiente, nella barra dei menu scegliere **Strumenti**, **Opzioni** e fare clic su **Ambiente**.
@@ -28,7 +28,7 @@ ms.locfileid: "31947937"
 
 
 |Per informazioni sulla procedura|Vedere|
-|----------------------------------|---------|
+| - |---------|
 |Personalizzare l'aspetto e il comportamento di finestre, menu e altri elementi dell'IDE.|[Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)|
 |Modificare le impostazioni predefinite per il salvataggio e il recupero automatici dei file|[Salvataggio automatico, Ambiente, finestra di dialogo Opzioni](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Definire le impostazioni di gestione e visualizzazione di documenti che includono il comportamento dei file esterni.|[Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)|

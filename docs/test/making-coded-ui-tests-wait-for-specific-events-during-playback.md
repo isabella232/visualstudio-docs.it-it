@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a0b40ad057622636581aafdd554dfa162ac2ac
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: faee56676329d9dd70f189eeddac82bba680a1d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912786"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 
@@ -69,7 +69,6 @@ private static bool IsStatusDone(UITestControl control)
 
 // In test method, wait till the method evaluates to true
 statusText.WaitForControlCondition(IsStatusDone);
-
 ```
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
@@ -88,7 +87,6 @@ private static bool IsStatusDoneOrError(UITestControl[] controls)
 
 // In test method, wait till the method evaluates to true
 UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
-
 ```
 
  Tutti questi metodi presentano il seguente comportamento:

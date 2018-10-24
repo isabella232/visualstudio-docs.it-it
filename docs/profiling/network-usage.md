@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918883"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizzare l'utilizzo della rete nelle app UWP
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](/uwp/api/windows.web.http). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.  
@@ -28,19 +28,19 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 ## <a name="collect-network-tool-data"></a>Raccogliere i dati dello strumento di rete  
  È consigliabile eseguire lo strumento **Rete** con un progetto di Visual Studio aperto nel computer di Visual Studio.  
   
-1.  Aprire il progetto in Visual Studio.  
+1. Aprire il progetto in Visual Studio.  
   
-2.  Nella barra dei menu fare clic su **Debug/Profiler prestazioni**. Scegliere **Rete** e quindi **Avvia**.  
+2. Nella barra dei menu fare clic su **Debug/Profiler prestazioni**. Scegliere **Rete** e quindi **Avvia**.  
   
-3.  Lo strumento di rete inizia a raccogliere il traffico di rete HTTP dell'app.  
+3. Lo strumento di rete inizia a raccogliere il traffico di rete HTTP dell'app.  
   
-     Quando si esegue l'app, la visualizzazione di riepilogo nel riquadro sinistro visualizza automaticamente un elenco di operazioni HTTP acquisite. Selezionare un elemento nella visualizzazione di riepilogo per visualizzare ulteriori informazioni nel pannello dei dettagli nel riquadro di destra.  
+    Quando si esegue l'app, la visualizzazione di riepilogo nel riquadro sinistro visualizza automaticamente un elenco di operazioni HTTP acquisite. Selezionare un elemento nella visualizzazione di riepilogo per visualizzare ulteriori informazioni nel pannello dei dettagli nel riquadro di destra.  
   
-4.  Scegliere **Arresta** per chiudere l'app.  
+4. Scegliere **Arresta** per chiudere l'app.  
   
- La finestra di report dovrebbe essere analoga alla seguente:  
+   La finestra di report dovrebbe essere analoga alla seguente:  
   
- ![Finestra dello strumento Rete](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+   ![Finestra dello strumento Rete](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyze-data"></a>Analizzare i dati  
  È possibile analizzare il traffico HTTP acquisito mentre l'applicazione è in esecuzione o anche dopo che l'applicazione è stata chiusa, selezionando una delle operazioni di rete visualizzate nella visualizzazione di riepilogo.  

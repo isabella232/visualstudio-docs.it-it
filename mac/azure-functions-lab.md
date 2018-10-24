@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919741"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
 
@@ -34,17 +34,17 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 1. Avviare **Visual Studio per Mac**.
 
-1. Selezionare **File > Nuova soluzione**.
+2. Selezionare **File > Nuova soluzione**.
 
-1. Nella categoria **Cloud > Generale** selezionare il modello **Funzioni di Azure**. Si userà C# per creare una libreria di classi .NET che ospita le funzioni di Azure. Scegliere **Avanti**.
+3. Nella categoria **Cloud > Generale** selezionare il modello **Funzioni di Azure**. Si userà C# per creare una libreria di classi .NET che ospita le funzioni di Azure. Scegliere **Avanti**.
 
     ![Selezione del modello Funzioni di Azure](media/azure-functions-lab-image1.png)
 
-1. Impostare **Nome progetto** su **"AzureFunctionsLab"** e fare clic su **Crea**.
+4. Impostare **Nome progetto** su **"AzureFunctionsLab"** e fare clic su **Crea**.
 
     ![Denominazione e creazione del progetto di funzione di Azure](media/azure-functions-lab-image2.png)
 
-1. Espandere i nodi nel **riquadro della soluzione**. Il modello di progetto predefinito include riferimenti NuGet a vari pacchetti di Processi Web di Azure e al pacchetto Newtonsoft.Json. 
+5. Espandere i nodi nel **riquadro della soluzione**. Il modello di progetto predefinito include riferimenti NuGet a vari pacchetti di Processi Web di Azure e al pacchetto Newtonsoft.Json. 
 
      Sono presenti anche tre file:  
         - **host.json** per la descrizione delle opzioni di configurazione globali dell'host  

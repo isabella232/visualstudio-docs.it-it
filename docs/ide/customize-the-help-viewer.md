@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa41165041c4be1b4d527f2df20dacfcf0600af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de2f17933977d13fb524d34887a9e9af9c88114
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951106"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizzare Help Viewer
 È possibile personalizzare il layout delle finestre di Help Viewer, così come altre opzioni quali dimensioni del carattere, numero massimo di risultati e se includere contenuto in inglese.
@@ -41,7 +41,7 @@ Scegliere l'argomento in qualsiasi scheda di spostamento e quindi premere **CTRL
 Per aprire la finestra di dialogo **Opzioni Help Viewer** scegliere il pulsante **Opzioni Help Viewer** sulla barra degli strumenti.
 
 |Per eseguire questa attività:|Eseguire questo passaggio:|
-|---------------------------|---------------------|
+| - | - |
 |Modificare le dimensioni del carattere per la visualizzazione del testo|Scegliere una dimensione nell'elenco **Dimensioni testo**.|
 |Modificare il numero massimo di risultati di ricerca visualizzati nella scheda **Ricerca**|Scegliere un valore nell'elenco **Numero massimo di risultati di ricerca**.|
 |Modificare il numero massimo di voci della cronologia visualizzate nella finestra **Preferiti**|Scegliere un valore nell'elenco **Numero massimo di voci della cronologia salvate**.|

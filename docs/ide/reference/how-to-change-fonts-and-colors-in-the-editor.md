@@ -16,21 +16,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1a6912f1b3877eadf6739d696f01d0f391a97b30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892714"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procedura: modificare i tipi di carattere e i colori utilizzati nell'editor
 È possibile modificare il tipo di carattere predefinito, le dimensioni del carattere e i colori di sfondo e primo piano dei diversi **elementi di visualizzazione** del testo nell'Editor del codice. Quando si modificano le impostazioni del carattere tenere presente le informazioni seguenti:
 
--   Le impostazioni **Tipo di carattere** e **Dimensioni** sono globali per tutti gli elementi di testo in tutti gli editor di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- Le impostazioni **Tipo di carattere** e **Dimensioni** sono globali per tutti gli elementi di testo in tutti gli editor di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
--   I nomi dei tipi di carattere a larghezza fissa in grassetto sono elencati in grassetto.
+- I nomi dei tipi di carattere a larghezza fissa in grassetto sono elencati in grassetto.
 
--   Le opzioni **Primo piano elemento**, **Sfondo elemento** e **Grassetto** possono essere impostate per ogni tipo di elemento di testo. Ad esempio, se si modificano i colori e si seleziona **Grassetto** per **Commento** e **Segnalibri**, gli altri tipi di elementi di testo non verranno modificati.
+- Le opzioni **Primo piano elemento**, **Sfondo elemento** e **Grassetto** possono essere impostate per ogni tipo di elemento di testo. Ad esempio, se si modificano i colori e si seleziona **Grassetto** per **Commento** e **Segnalibri**, gli altri tipi di elementi di testo non verranno modificati.
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).

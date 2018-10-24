@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 229097b12e5b32e6be6af6b9614a628346780063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921483"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Usare il pannello Contatori nella visualizzazione Grafici e nella visualizzazione Tabelle
 
@@ -54,7 +54,7 @@ Nel riquadro Contatori sono disponibili le seguenti funzionalità:
 ## <a name="tasks"></a>Attività
 
 |Attività|Argomenti correlati|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Aggiungere più contatori delle prestazioni a un grafico nella visualizzazione grafico:** nel pannello **Contatori** è possibile aggiungere diversi tipi di dati a un grafico del test di carico aggiungendo più contatori delle prestazioni nel grafico.|-   [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Analizzare tutte le soglie specificate nel test di carico violate:** nel pannello **Contatori** vengono visualizzate le icone che rappresentano le violazioni di soglia che è possibile aggiungere a tabelle e grafici per un'ulteriore analisi.|-   [Procedura: Analizzare le violazioni di soglia usando il pannello Contatori](../test/analyze-threshold-rule-violations-in-load-tests.md)|
 |**Analizzare tutti gli errori rilevati durante l'esecuzione del test di carico:** nel pannello **Contatori** è incluso un nodo degli errori che contiene le categorie e le sottocategorie di errore, ad esempio gli errori HTTP, che è possibile usare per aggiungere gli errori ai grafici per un'ulteriore analisi.|-   [Procedura: Analizzare gli errori usando il pannello Contatori](../test/how-to-analyze-errors-using-the-counters-panel.md)|
@@ -66,7 +66,7 @@ Nelle impostazioni esecuzione test di carico scegliere un valore per la propriet
 Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
 |Durata test di carico|Frequenza di campionamento consigliata|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 ora|5 secondi|
 |1 - 8 ore|15 secondi|
 |8 - 24 ore|30 secondi|

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb194836f40ce599ee3509b11fc9849b6a7780ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930219"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedura: Configurare progetti per più piattaforme di destinazione
 
@@ -56,11 +56,11 @@ Poiché è possibile modificare le impostazioni in base alla combinazione di con
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Per creare più configurazioni di soluzione contemporaneamente
 
-1.  Usare **Gestione configurazione** per aggiungere almeno due piattaforme di destinazione per la soluzione.
+1. Usare **Gestione configurazione** per aggiungere almeno due piattaforme di destinazione per la soluzione.
 
-2.  Usare la finestra **Compilazione batch** per compilare più configurazioni di soluzione contemporaneamente.
+2. Usare la finestra **Compilazione batch** per compilare più configurazioni di soluzione contemporaneamente.
 
- È possibile avere una piattaforma a livello di soluzione impostata ad esempio su [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] e non avere all'interno della soluzione alcun progetto per la stessa piattaforma. È anche possibile avere più progetti nella soluzione ognuno con una piattaforma diversa come destinazione. In questi casi è consigliabile creare una nuova configurazione con un nome descrittivo per evitare confusione.
+   È possibile avere una piattaforma a livello di soluzione impostata ad esempio su [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] e non avere all'interno della soluzione alcun progetto per la stessa piattaforma. È anche possibile avere più progetti nella soluzione ognuno con una piattaforma diversa come destinazione. In questi casi è consigliabile creare una nuova configurazione con un nome descrittivo per evitare confusione.
 
 ## <a name="see-also"></a>Vedere anche
 
