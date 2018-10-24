@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a13d617ec523a3215e28668bca179aeace656f7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7322738fe1bd17944bc5d1883bc9c16e56cc59e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855087"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellare l'applicazione&#39;architettura s
 Per garantire che il sistema software o l'applicazione soddisfi degli utenti esigenze, è possibile creare modelli in Visual Studio come parte del comportamento dell'applicazione o sistema software e la descrizione della struttura complessiva. Usando gli schemi è anche possibile descrivere modelli usati durante la progettazione. Questi modelli consentono di comprendere l'architettura esistente, discutere le modifiche e comunicare chiaramente le intenzioni.
@@ -54,30 +54,30 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
 
  Il modello requisiti fornisce queste informazioni essenziali:
 
--   Interfacce fornite. Un'interfaccia fornita fornisce un elenco dei servizi o operazioni che il sistema o il componente deve fornire ai propri utenti, che siano utenti o altri componenti software.
+- Interfacce fornite. Un'interfaccia fornita fornisce un elenco dei servizi o operazioni che il sistema o il componente deve fornire ai propri utenti, che siano utenti o altri componenti software.
 
--   Interfacce necessarie. Un'interfaccia richiesta fornisce un elenco di servizi o operazioni che possono essere usate dal sistema o dal componente. In alcuni casi, sarà possibile progettare tutti questi servizi come parte del proprio sistema. In altri casi, specialmente se si sta sviluppando un componente che può essere combinato con altri componenti in molte configurazioni, l'interfaccia richiesta verrà impostata da considerazioni esterne.
+- Interfacce necessarie. Un'interfaccia richiesta fornisce un elenco di servizi o operazioni che possono essere usate dal sistema o dal componente. In alcuni casi, sarà possibile progettare tutti questi servizi come parte del proprio sistema. In altri casi, specialmente se si sta sviluppando un componente che può essere combinato con altri componenti in molte configurazioni, l'interfaccia richiesta verrà impostata da considerazioni esterne.
 
--   Requisiti di qualità del servizio. Le prestazioni, la sicurezza, l'affidabilità e altri obiettivi e vincoli che il sistema deve soddisfare.
+- Requisiti di qualità del servizio. Le prestazioni, la sicurezza, l'affidabilità e altri obiettivi e vincoli che il sistema deve soddisfare.
 
- Il modello requisiti viene scritto dal punto di vista degli utenti del sistema, siano essi persone o altri componenti software. Questi non conoscono i meccanismi interni del sistema. Al contrario, l'obiettivo in un modello architettonico è descrivere i meccanismi interni e mostrare come soddisfano le esigenze degli utenti.
+  Il modello requisiti viene scritto dal punto di vista degli utenti del sistema, siano essi persone o altri componenti software. Questi non conoscono i meccanismi interni del sistema. Al contrario, l'obiettivo in un modello architettonico è descrivere i meccanismi interni e mostrare come soddisfano le esigenze degli utenti.
 
- Se si mantengono i requisiti e modelli architettonici separati, diventa più semplice illustrare i requisiti con gli utenti. In tal modo vengono agevolati anche il refactoring di progettazione e la considerazione di architetture alternative mentre i requisiti restano invariati.
+  Se si mantengono i requisiti e modelli architettonici separati, diventa più semplice illustrare i requisiti con gli utenti. In tal modo vengono agevolati anche il refactoring di progettazione e la considerazione di architetture alternative mentre i requisiti restano invariati.
 
- La quantità di dettagli che devono essere inseriti in un modello di requisiti o architettonico dipende dalla scala del progetto e dalle dimensioni e dalla distribuzione del team. Un piccolo team su un progetto breve non po' andare oltre il disegno di un diagramma classi dei concetti aziendali e alcuni schemi progettuali; un progetto di grandi dimensioni distribuito su più aree ha bisogno di più dettagli.
+  La quantità di dettagli che devono essere inseriti in un modello di requisiti o architettonico dipende dalla scala del progetto e dalle dimensioni e dalla distribuzione del team. Un piccolo team su un progetto breve non po' andare oltre il disegno di un diagramma classi dei concetti aziendali e alcuni schemi progettuali; un progetto di grandi dimensioni distribuito su più aree ha bisogno di più dettagli.
 
 ## <a name="BigDecisions"></a> Modelli di architettura
  Nelle prime fasi di sviluppo è necessario scegliere le principali tecnologie e gli elementi da cui dipende la progettazione. Le aree in cui devono essere apportate queste scelte includono quanto segue:
 
--   Basare le scelte di tecnologia, ad esempio la scelta tra un database e un file system e la scelta tra un'applicazione di rete e un client web e così via.
+- Basare le scelte di tecnologia, ad esempio la scelta tra un database e un file system e la scelta tra un'applicazione di rete e un client web e così via.
 
--   Scelte di framework, ad esempio una scelta tra Windows Workflow Foundation o ADO.NET Entity Framework.
+- Scelte di framework, ad esempio una scelta tra Windows Workflow Foundation o ADO.NET Entity Framework.
 
--   Scelte dei metodi di integrazione, ad esempio tra un bus di servizio aziendale o un canale Point to Point.
+- Scelte dei metodi di integrazione, ad esempio tra un bus di servizio aziendale o un canale Point to Point.
 
- Queste scelte vengono frequentemente determinate dai requisiti di qualità del servizio, ad esempio la scala e la flessibilità e possono essere effettuate prima che siano noti i requisiti dettagliati. In un sistema di grandi dimensioni, la configurazione di hardware e software sono fortemente correlati.
+  Queste scelte vengono frequentemente determinate dai requisiti di qualità del servizio, ad esempio la scala e la flessibilità e possono essere effettuate prima che siano noti i requisiti dettagliati. In un sistema di grandi dimensioni, la configurazione di hardware e software sono fortemente correlati.
 
- Le selezioni effettuate influiscono sulla modalità di utilizzo e di interpretazione del modello architettonico. Ad esempio, in un sistema che usa un database, le associazioni in un diagramma classi potrebbero rappresentare relazioni o chiavi esterne nel database, mentre in un sistema basato su file XML, le associazioni potrebbero indicare riferimenti incrociati che usano XPath. In un sistema distribuito i messaggi in un diagramma di sequenza possono rappresentare messaggi su una connessione; in un'applicazione indipendente, possono rappresentare chiamate di funzione.
+  Le selezioni effettuate influiscono sulla modalità di utilizzo e di interpretazione del modello architettonico. Ad esempio, in un sistema che usa un database, le associazioni in un diagramma classi potrebbero rappresentare relazioni o chiavi esterne nel database, mentre in un sistema basato su file XML, le associazioni potrebbero indicare riferimenti incrociati che usano XPath. In un sistema distribuito i messaggi in un diagramma di sequenza possono rappresentare messaggi su una connessione; in un'applicazione indipendente, possono rappresentare chiamate di funzione.
 
 ## <a name="Patterns"></a> Modelli di progettazione
  Uno schema progettuale è una struttura sulla modalità di progettazione di un particolare aspetto del software, specialmente uno che ricorre in parti diverse del sistema. Adottando un approccio uniforme nel progetto, è possibile ridurre il costo di progettazione, garantire la coerenza nell'interfaccia utente e ridurre i costi di comprensione e modifica del codice.

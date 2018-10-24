@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860760"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Pattern di controllo comuni per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224042"
   
 ##### <a name="visual-style"></a>Stile di visualizzazione  
   
--   Le filigrane devono essere centrate orizzontalmente all'interno della finestra.  
+- Le filigrane devono essere centrate orizzontalmente all'interno della finestra.  
   
--   Le filigrane devono essere allineato al centro, non allineata a sinistra.  
+- Le filigrane devono essere allineato al centro, non allineata a sinistra.  
   
--   Le filigrane possono essere centrate verticalmente o posizionate nella parte superiore dell'area. Se si trova nella parte superiore dell'area, è necessario sufficiente spazio di sopra in modo da evidenziare la filigrana.  
+- Le filigrane possono essere centrate verticalmente o posizionate nella parte superiore dell'area. Se si trova nella parte superiore dell'area, è necessario sufficiente spazio di sopra in modo da evidenziare la filigrana.  
   
--   Usare il `Environment.GrayText` il tipo di carattere di colore ambiente token e standard. I collegamenti ipertestuali devono usare i token standard hyperlink condiviso: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, e `Environment.PanelHyperlinkDisabled`.  
+- Usare il `Environment.GrayText` il tipo di carattere di colore ambiente token e standard. I collegamenti ipertestuali devono usare i token standard hyperlink condiviso: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, e `Environment.PanelHyperlinkDisabled`.  
   
--   Non è possibile selezionare le filigrane sullo sfondo  
+- Non è possibile selezionare le filigrane sullo sfondo  
   
--   Se possibile, includere i collegamenti della filigrana per consentire all'utente di iniziare.  
+- Se possibile, includere i collegamenti della filigrana per consentire all'utente di iniziare.  
   
- ![Il testo in una finestra di progettazione della filigrana](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
+  ![Il testo in una finestra di progettazione della filigrana](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
   
- ![Il testo in una finestra degli strumenti della filigrana](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
+  ![Il testo in una finestra degli strumenti della filigrana](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
   
- **Esempi di testo della filigrana in Visual Studio**  
+  **Esempi di testo della filigrana in Visual Studio**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> I collegamenti ipertestuali e pulsanti  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224042"
   
  Quando utilizzare i pulsanti di comando:  
   
--   Comandi principali  
+- Comandi principali  
   
--   Attivazione di windows usato per raccogliere l'input o scelte, anche se sono comandi secondari  
+- Attivazione di windows usato per raccogliere l'input o scelte, anche se sono comandi secondari  
   
--   Azioni distruttive o irreversibili  
+- Azioni distruttive o irreversibili  
   
--   Pulsanti di impegno all'interno di procedure guidate e flussi di pagina  
+- Pulsanti di impegno all'interno di procedure guidate e flussi di pagina  
   
- Evitare di pulsanti di comando nelle finestre degli strumenti, oppure se è necessario più di due parole per l'etichetta. I collegamenti possono avere più etichette.  
+  Evitare di pulsanti di comando nelle finestre degli strumenti, oppure se è necessario più di due parole per l'etichetta. I collegamenti possono avere più etichette.  
   
- Quando usare i collegamenti:  
+  Quando usare i collegamenti:  
   
--   Navigazione verso un'altra finestra, documento o pagina web  
+- Navigazione verso un'altra finestra, documento o pagina web  
   
--   Situazioni che richiedono un'etichetta più lungo o breve frase per descrivere lo scopo dell'azione  
+- Situazioni che richiedono un'etichetta più lungo o breve frase per descrivere lo scopo dell'azione  
   
--   Una stretta spazi in cui un pulsante potrebbe sovraccaricare l'interfaccia utente, condizione che l'azione non distruttive o irreversibili  
+- Una stretta spazi in cui un pulsante potrebbe sovraccaricare l'interfaccia utente, condizione che l'azione non distruttive o irreversibili  
   
--   Ridimensionando comandi secondari nelle situazioni in cui sono presenti molti comandi  
+- Ridimensionando comandi secondari nelle situazioni in cui sono presenti molti comandi  
   
 #### <a name="examples"></a>Esempi  
  ![Collegamenti ai comandi sulla barra delle informazioni seguendo un messaggio di stato](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703 01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224042"
   
  Quando usare il pulsante puntini di sospensione-only breve:  
   
--   Se è presente più di un long **[Sfoglia...]**  pulsante in una finestra di dialogo, ad esempio quando diversi campi consentono per l'esplorazione. Usare il breve **[...]**  per ognuno evitare la confusione chiavi di accesso create da questa situazione (**& esplorare** e **esplo & ra** nella finestra di dialogo stessa).  
+- Se è presente più di un long **[Sfoglia...]**  pulsante in una finestra di dialogo, ad esempio quando diversi campi consentono per l'esplorazione. Usare il breve **[...]**  per ognuno evitare la confusione chiavi di accesso create da questa situazione (**& esplorare** e **esplo & ra** nella finestra di dialogo stessa).  
   
--   In una finestra di dialogo stretto o quando non è possibile utilizzare per inserire il pulsante di tempo ragionevole.  
+- In una finestra di dialogo stretto o quando non è possibile utilizzare per inserire il pulsante di tempo ragionevole.  
   
--   Se il pulsante verrà visualizzato in un controllo griglia.  
+- Se il pulsante verrà visualizzato in un controllo griglia.  
   
- Linee guida per il pulsante:  
+  Linee guida per il pulsante:  
   
--   Non usare una chiave di accesso. Per l'accesso utilizzando la tastiera, l'utente deve scheda dal controllo adiacente. Assicurarsi che l'ordine di tabulazione sia in modo che qualsiasi pulsante rientra immediatamente dopo il campo che è riempire. Non usare mai un carattere di sottolineatura seguito dal primo periodo.  
+- Non usare una chiave di accesso. Per l'accesso utilizzando la tastiera, l'utente deve scheda dal controllo adiacente. Assicurarsi che l'ordine di tabulazione sia in modo che qualsiasi pulsante rientra immediatamente dopo il campo che è riempire. Non usare mai un carattere di sottolineatura seguito dal primo periodo.  
   
--   Microsoft Active Accessibility (MSAA) impostata **Name** proprietà **Sfoglia...**  (tra cui i puntini di sospensione) in modo che schermata verrà letto, come "Sfoglia" e non "punto-punto-punto" o "periodo-punto-punto". Per i controlli gestiti, ciò significa impostazione il **AccessibleName** proprietà.  
+- Microsoft Active Accessibility (MSAA) impostata **Name** proprietà **Sfoglia...**  (tra cui i puntini di sospensione) in modo che schermata verrà letto, come "Sfoglia" e non "punto-punto-punto" o "periodo-punto-punto". Per i controlli gestiti, ciò significa impostazione il **AccessibleName** proprietà.  
   
--   Non usare mai i puntini di sospensione **[...]**  pulsante esclusivamente per un'azione di esplorazione. Ad esempio, se è necessario un **[novità]**  pulsante ma non hanno spazio sufficiente per il testo, quindi la finestra di dialogo debba essere riprogettata.  
+- Non usare mai i puntini di sospensione **[...]**  pulsante esclusivamente per un'azione di esplorazione. Ad esempio, se è necessario un **[novità]**  pulsante ma non hanno spazio sufficiente per il testo, quindi la finestra di dialogo debba essere riprogettata.  
   
 ##### <a name="sizing-and-spacing"></a>Ridimensionamento e la spaziatura  
  ![Ridimensionamento &#91;Sfoglia... &#93; pulsanti](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703 06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224042"
 ##### <a name="trid-tree-view-and-grid-view"></a>Albero (visualizzazione struttura ad albero e griglia)  
  Un controllo albero è un controllo complesso che contiene una visualizzazione albero all'interno di una griglia. Espansione e compressione di esplorazione dell'albero deve rispettare gli stessi comandi da tastiera in una visualizzazione ad albero, con le aggiunte seguenti:  
   
--   **Freccia destra:** espandere un nodo. Dopo aver espanso il nodo, deve continuare passando alla colonna più vicina a destra. Navigazione deve essere interrotta alla fine della riga.  
+- **Freccia destra:** espandere un nodo. Dopo aver espanso il nodo, deve continuare passando alla colonna più vicina a destra. Navigazione deve essere interrotta alla fine della riga.  
   
--   **Scheda:** consente di passare alla più vicina cella a destra.  Alla fine della riga, navigazione continua alla riga successiva.  
+- **Scheda:** consente di passare alla più vicina cella a destra.  Alla fine della riga, navigazione continua alla riga successiva.  
   
--   **Maiusc + Tab:** consente di passare per la cella più vicina a sinistra.  All'inizio della riga, navigazione continua nella cella più a destra nella riga precedente.  
+- **Maiusc + Tab:** consente di passare per la cella più vicina a sinistra.  All'inizio della riga, navigazione continua nella cella più a destra nella riga precedente.  
   
- ![Controllo albero in Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
+  ![Controllo albero in Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
   
- **Un controllo albero in Visual Studio**
+  **Un controllo albero in Visual Studio**
 

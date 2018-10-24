@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::AddProgramNode | Documenti Microsoft
+title: IDebugPortNotify2::AddProgramNode | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54726a332bd27d01a0229a9127480d2871360d47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6724d33a10f766ac30d8211b656710c8a9f900da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122613"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860533"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 Registra un programma che è possibile eseguire il debug con la porta in cui viene eseguito.  
@@ -41,13 +41,13 @@ int AddProgramNode(
   
 #### <a name="parameters"></a>Parametri  
  `pProgramNode`  
- [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il programma da registrare.  
+ [in] Un' [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il programma da registrare.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Un nodo del programma può essere annullata la registrazione dalla porta chiamando il [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) metodo.  
+ Un programma nodo può essere annullata la registrazione dalla porta chiamando il [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   

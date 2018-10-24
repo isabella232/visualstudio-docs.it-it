@@ -27,12 +27,12 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cad1f9d5e0e4cefe6e0fba6ec4e919e78f00dd4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855859"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagrammi classi UML: riferimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,30 +49,30 @@ Un diagramma classi UML descrive le strutture di oggetti e informazioni usate da
 ## <a name="reading-class-diagrams"></a>Lettura dei diagrammi classi  
  Nella tabella in questa sezione vengono descritti gli elementi che è possibile visualizzare in un diagramma classi UML. Per informazioni sulle proprietà di questi elementi, vedere gli argomenti seguenti:  
   
--   [Proprietà di tipi in diagrammi classi UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
+- [Proprietà di tipi in diagrammi classi UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
   
--   [Proprietà di attributi in diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Proprietà di attributi in diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Proprietà di operazioni in diagrammi classi UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Proprietà di operazioni in diagrammi classi UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Proprietà delle associazioni nei diagrammi classi UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Proprietà delle associazioni nei diagrammi classi UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
- ![Tre classi che mostrano relazioni e le proprietà](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
+  ![Tre classi che mostrano relazioni e le proprietà](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-|**Forma**|**Elemento**|**Descrizione**|  
-|---------------|-----------------|---------------------|  
-|1|**Classe**|Una definizione di oggetti che condividono caratteristiche strutturali o comportamentali specifiche. Per altre informazioni, vedere [diagrammi di classi di proprietà di tipi in UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|  
-|1|Classificatore|Il nome generale per una classe, interfaccia o enumerazione. Sono classificatori anche componenti, casi di utilizzo e attori.|  
-|2|Controllo di compressione/espansione|Se non è possibile visualizzare i dettagli di un classificatore, fare clic sul'espansore nella parte superiore sinistra del classificatore. Potrebbe anche essere necessario fare clic su [+] in ogni segmento.|  
-|3|**Attributo**|Un valore tipizzato associato a ogni istanza di un classificatore.<br /><br /> Per aggiungere un attributo, scegliere il **attributi** della sezione e quindi premere **invio**. Digitare la firma dell'attributo. Per altre informazioni, vedere [diagrammi di classi di proprietà di attributi su UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).|  
-|4|**Operazione**|Un metodo o funzione che può essere eseguito da istanze di un classificatore. Per aggiungere un'operazione, scegliere il **Operations** della sezione e quindi premere **invio**. Digitare la firma dell'operazione. Per altre informazioni, vedere [proprietà di operazioni su UML diagrammi classi](../modeling/properties-of-operations-on-uml-class-diagrams.md).|  
-|5|**Associazione**|Una relazione tra i membri di due classificatori. Per altre informazioni, vedere [proprietà delle associazioni nei UML diagrammi classi](../modeling/properties-of-associations-on-uml-class-diagrams.md).|  
-|5a|**Aggregazione**|Un'associazione che rappresenta una relazione proprietà condivisa. Il **aggregazione** del ruolo proprietario è impostata su **condiviso**.|  
-|5b|**Composizione**|Un'associazione che rappresenta una relazione di parte intera. Il **aggregazione** del ruolo proprietario è impostata su **composito**.|  
-|6|**Nome dell'associazione**|Il nome di un'associazione. Il nome può essere lasciato vuoto.|  
-|7|**Nome del ruolo**|Il nome di un ruolo, ovvero un'estremità di un'associazione. Può essere usato per fare riferimento all'oggetto associato. Nella figura precedente per ogni ordine `O`, `O.ChosenMenu` è il menu associato.<br /><br /> Ogni ruolo dispone di proprietà personalizzate, elencate sotto le proprietà dell'associazione.|  
-|8|**Molteplicità**|Indica il numero di oggetti a questa estremità che può essere collegato a ogni oggetto all'altra estremità. Nell'esempio ogni ordine deve essere collegato a un solo menu.<br /><br /> **\*** significa che non vi è alcun limite al numero di collegamenti che possono essere apportati.|  
-|9|**Generalizzazione**|Il *specifici* classificatore eredita parte della definizione dalle *generali* classificatore. Il classificatore generale si trova all'estremità della freccia del connettore. Attributi, associazioni e operazioni vengono ereditati dal classificatore specifico.<br /><br /> Usare la **ereditarietà** lo strumento per creare una generalizzazione tra due classificatori.|  
+| **Forma** |       **Elemento**        |                                                                                                                                                             **Descrizione**                                                                                                                                                              |
+|-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     1     |        **Classe**         |                                                           Una definizione di oggetti che condividono caratteristiche strutturali o comportamentali specifiche. Per altre informazioni, vedere [diagrammi di classi di proprietà di tipi in UML](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
+|     1     |        Classificatore        |                                                                                                             Il nome generale per una classe, interfaccia o enumerazione. Sono classificatori anche componenti, casi di utilizzo e attori.                                                                                                             |
+|     2     | Controllo di compressione/espansione |                                                                                         Se non è possibile visualizzare i dettagli di un classificatore, fare clic sul'espansore nella parte superiore sinistra del classificatore. Potrebbe anche essere necessario fare clic su [+] in ogni segmento.                                                                                         |
+|     3     |      **Attributo**       |   Un valore tipizzato associato a ogni istanza di un classificatore.<br /><br /> Per aggiungere un attributo, scegliere il **attributi** della sezione e quindi premere **invio**. Digitare la firma dell'attributo. Per altre informazioni, vedere [diagrammi di classi di proprietà di attributi su UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
+|     4     |      **Operazione**       | Un metodo o funzione che può essere eseguito da istanze di un classificatore. Per aggiungere un'operazione, scegliere il **Operations** della sezione e quindi premere **invio**. Digitare la firma dell'operazione. Per altre informazioni, vedere [proprietà di operazioni su UML diagrammi classi](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
+|     5     |     **Associazione**      |                                                                  Una relazione tra i membri di due classificatori. Per altre informazioni, vedere [proprietà delle associazioni nei UML diagrammi classi](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
+|    5a     |     **Aggregazione**      |                                                                                                    Un'associazione che rappresenta una relazione proprietà condivisa. Il **aggregazione** del ruolo proprietario è impostata su **condiviso**.                                                                                                     |
+|    5b     |     **Composizione**      |                                                                                                      Un'associazione che rappresenta una relazione di parte intera. Il **aggregazione** del ruolo proprietario è impostata su **composito**.                                                                                                      |
+|     6     |   **Nome dell'associazione**   |                                                                                                                                         Il nome di un'associazione. Il nome può essere lasciato vuoto.                                                                                                                                          |
+|     7     |      **Nome del ruolo**       |                       Il nome di un ruolo, ovvero un'estremità di un'associazione. Può essere usato per fare riferimento all'oggetto associato. Nella figura precedente per ogni ordine `O`, `O.ChosenMenu` è il menu associato.<br /><br /> Ogni ruolo dispone di proprietà personalizzate, elencate sotto le proprietà dell'associazione.                       |
+|     8     |     **Molteplicità**     |                                         Indica il numero di oggetti a questa estremità che può essere collegato a ogni oggetto all'altra estremità. Nell'esempio ogni ordine deve essere collegato a un solo menu.<br /><br /> **\\**\* significa che non vi è alcun limite al numero di collegamenti che possono essere apportati.                                         |
+|     9     |    **Generalizzazione**    |  Il *specifici* classificatore eredita parte della definizione dalle *generali* classificatore. Il classificatore generale si trova all'estremità della freccia del connettore. Attributi, associazioni e operazioni vengono ereditati dal classificatore specifico.<br /><br /> Usare la **ereditarietà** lo strumento per creare una generalizzazione tra due classificatori.   |
   
  ![Pacchetto contenente l'interfaccia e l'enumerazione](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")  
   

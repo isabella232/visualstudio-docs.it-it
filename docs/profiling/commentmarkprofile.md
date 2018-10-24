@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aaae7a6ce1185426f23a8182ddcdf0c969f39a4b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c42fc37837673305fb13c99856e778c45a4a3a8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858498"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 La funzione `CommentMarkProfile` inserisce un indicatore numerico e una stringa di testo nel file con estensione *vsp*. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione `CommentMarkProfile`.  

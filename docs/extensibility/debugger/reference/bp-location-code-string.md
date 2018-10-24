@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING | Documenti Microsoft
+title: BP_LOCATION_CODE_STRING | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 102ad26fcc746c8400cfa5114d9559fc11729dee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31b7baad0350ef0524aee81e61f9019b8e91a9de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857146"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
-Utilizzata per impostare i punti di interruzione di codice in base a una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).  
+Utilizzata per impostare i punti di interruzione di codice basati su una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,13 +36,13 @@ typedef struct _BP_LOCATION_CODE_STRING {
   
 ## <a name="members"></a>Membri  
  `bstrContext`  
- Contesto del punto di interruzione all'interno del codice, in genere un nome di metodo o una funzione come illustrato in uno stack di chiamate.  
+ Contesto del punto di interruzione all'interno del codice, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.  
   
  `bstrCodeExpr`  
  Stringa che l'utente digita per descrivere il punto di interruzione del codice.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è membro il [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
+ Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

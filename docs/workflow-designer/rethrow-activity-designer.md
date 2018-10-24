@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c13b629047b73b3f3ee15f2fc25a0120a2c177
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2b1d1832a7c0c44abb1e8c97ec4c8265262d117e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857549"
 ---
 # <a name="rethrow-activity-designer"></a>ActivityDesigner Rethrow
 
@@ -36,7 +36,7 @@ Accesso di **Rethrow** ActivityDesigner nel **Error Handling** categoria del **d
 La tabella seguente illustra il <xref:System.Activities.Statements.Rethrow> proprietà e viene descritto l'utilizzo nella finestra di progettazione:
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.Rethrow>. Il valore predefinito è Rethrow.|
 
 ## <a name="see-also"></a>Vedere anche

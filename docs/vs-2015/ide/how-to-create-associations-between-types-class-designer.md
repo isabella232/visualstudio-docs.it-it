@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad870c9b470e96a120e334c79ed5b36e44cca41a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33b1a45d1c5dc3275ebbde8124986705bcac51ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856795"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Procedura: Creare associazioni tra tipi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Le linee di associazione in Progettazione classi mostrano le relazioni tra le cl
   
 ### <a name="to-change-the-name-of-an-association"></a>Per cambiare il nome di un'associazione  
   
--   Sulla superficie del diagramma fare clic sull'etichetta della linea di associazione e modificarla.  
+- Sulla superficie del diagramma fare clic sull'etichetta della linea di associazione e modificarla.  
   
- \- oppure -  
+  \- oppure -  
   
 1.  Fare clic sulla forma che contiene la proprietà visualizzata come associazione.  
   

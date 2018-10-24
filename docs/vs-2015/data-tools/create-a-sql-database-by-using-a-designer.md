@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860331"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Creare un database SQL usando una finestra di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ ms.locfileid: "49220753"
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Per creare un progetto e un file di database  
   
-1.  Creare un progetto Windows Form denominato `SampleDatabaseWalkthrough`.  
+1. Creare un progetto Windows Form denominato `SampleDatabaseWalkthrough`.  
   
-2.  Nella barra dei menu, selezionare **Project** > **Aggiungi nuovo elemento**.  
+2. Nella barra dei menu, selezionare **Project** > **Aggiungi nuovo elemento**.  
   
-3.  Nell'elenco dei modelli di elemento, scorrere verso il basso e selezionare **Database basato sul servizio**.  
+3. Nell'elenco dei modelli di elemento, scorrere verso il basso e selezionare **Database basato sul servizio**.  
   
-     ![Finestra di dialogo modelli di elemento](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![Finestra di dialogo modelli di elemento](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  Assegnare un nome del database **SampleDatabase**, quindi selezionare il **Add** pulsante.  
+4. Assegnare un nome del database **SampleDatabase**, quindi selezionare il **Add** pulsante.  
   
-5.  Se il **Zdroje dat** finestra non è aperta, aprirlo selezionando i tasti Maiusc + Alt + D o, nella barra dei menu, selezionando **View** > **Other Windows**  >  **Zdroje dat**.  
+5. Se il **Zdroje dat** finestra non è aperta, aprirlo selezionando i tasti Maiusc + Alt + D o, nella barra dei menu, selezionando **View** > **Other Windows**  >  **Zdroje dat**.  
   
-6.  Nel **Zdroje dat** finestra, seleziona la **Aggiungi nuova origine dati** collegamento.  
+6. Nel **Zdroje dat** finestra, seleziona la **Aggiungi nuova origine dati** collegamento.  
   
-7.  Nel **configurazione guidata origine dati**, selezionare la **successiva** quattro volte per accettare le impostazioni predefinite e quindi selezionare il **fine** pulsante.  
+7. Nel **configurazione guidata origine dati**, selezionare la **successiva** quattro volte per accettare le impostazioni predefinite e quindi selezionare il **fine** pulsante.  
   
- Se si apre la finestra delle proprietà per il database, è possibile visualizzare la stringa di connessione relativa e il percorso del file primario con estensione mdf. Si noterà che il file di database sia nella cartella del progetto.  
+   Se si apre la finestra delle proprietà per il database, è possibile visualizzare la stringa di connessione relativa e il percorso del file primario con estensione mdf. Si noterà che il file di database sia nella cartella del progetto.  
   
 -   In Visual Studio, selezionare **View** > **Esplora oggetti di SQL Server** se tale finestra non è già aperta. Aprire la finestra Proprietà espandere la **connessioni dati** nodo, aprendo il menu di scelta rapida per SampleDatabase. mdf e quindi selezionando **proprietà**.  
   

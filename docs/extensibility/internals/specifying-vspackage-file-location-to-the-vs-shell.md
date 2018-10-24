@@ -1,5 +1,5 @@
 ---
-title: Specificando il percorso di File di pacchetto VSPackage alla Shell di Visual Studio | Documenti Microsoft
+title: Specifica il percorso di File VSPackage nella shell di Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,22 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a4270fbd723e6c5aa6f16066066e0ca4ac74e5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 63948a464a43284f3b9205d185e4b0a4e39155e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856236"
 ---
-# <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Specificando il percorso di File di pacchetto VSPackage alla Shell di Visual Studio
+# <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Definizione del percorso di file VSPackage nella shell di Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve essere in grado di individuare l'assembly DLL per caricare il pacchetto VSPackage. È possibile individuarlo in vari modi, come descritto nella tabella seguente.  
-  
-|Metodo|Descrizione|  
-|------------|-----------------|  
-|Usare la chiave del Registro di sistema CodeBase.|La chiave CodeBase può essere utilizzata per indirizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per caricare l'assembly VSPackage da qualsiasi percorso di file completo. Il valore della chiave deve essere il percorso del file della DLL. Questo è il modo migliore per avere [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caricare l'assembly in pacchetto. Questa tecnica è detta anche "CodeBase/privata installazione directory tecnica." Durante la registrazione viene passato il valore della base di codice per le classi di attributi di registrazione tramite un'istanza di <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> tipo.|  
-|Posizionare la DLL nel **PrivateAssemblies** directory.|Collocare l'assembly nel **PrivateAssemblies** sottodirectory del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] directory. Gli assembly si trovano **PrivateAssemblies** vengono rilevate automaticamente, ma non sono visibili nel **Aggiungi riferimenti** la finestra di dialogo. La differenza tra **PrivateAssemblies** e **PublicAssemblies** consiste nel fatto che gli assembly in **PublicAssemblies** sono enumerate nella **aggiungere riferimenti**  la finestra di dialogo. Se si è scelto di non utilizzare la tecnica "directory di installazione CodeBase/privata", quindi è necessario installare nel **PrivateAssemblies** directory.|  
-|Utilizzare un assembly con nome sicuro e la chiave del Registro di sistema Assembly.|La chiave di Assembly consente di indirizzare in modo esplicito [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per caricare un nome sicuro denominato assembly VSPackage. Il valore della chiave deve essere il nome sicuro dell'assembly.|  
-|Posizionare la DLL nel **PublicAssemblies** directory.|Infine, l'assembly può anche essere inserito nel **PublicAssemblies** sottodirectory. Gli assembly si trovano **PublicAssemblies** vengono rilevate automaticamente e verrà visualizzato anche nella **Aggiungi riferimenti** nella finestra di dialogo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Gli assembly VSPackage devono essere posizionati solo nel **PublicAssemblies** directory se contengono i componenti che sono destinati a essere riutilizzati da altri sviluppatori VSPackage gestiti. La maggior parte degli assembly non soddisfano questo criterio.|  
-  
+
+
+| Metodo | Descrizione |
+| - | - |
+| Usare la chiave del Registro di sistema di base di codici. | La chiave CodeBase può essere utilizzata per indirizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per caricare l'assembly VSPackage da qualsiasi percorso completo del file. Il valore della chiave deve essere il percorso del file della DLL. Questo è il modo migliore per avere [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carica l'assembly del pacchetto. Questa tecnica è detta anche "CodeBase/privata installazione directory tecnica." Durante la registrazione viene passato il valore della codebase alle classi di attributo di registrazione tramite un'istanza di <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> tipo. |
+| Collocare la DLL nel **PrivateAssemblies** directory. | Inserire l'assembly nel **PrivateAssemblies** sottodirectory del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] directory. Gli assembly che si trovano **PrivateAssemblies** vengono rilevate automaticamente, ma non sono visibili nel **Aggiungi riferimenti** nella finestra di dialogo. La differenza tra **PrivateAssemblies** e **PublicAssemblies** è che gli assembly nel **PublicAssemblies** vengono enumerati nel **Aggiungi riferimenti**  nella finestra di dialogo. Se si sceglie di non usare la tecnica di "directory di installazione di base di codici/privata", quindi è necessario installare nel **PrivateAssemblies** directory. |
+| Usare un assembly con nome sicuro e la chiave del Registro di sistema Assembly. | La chiave di Assembly può essere utilizzata per indirizzare in modo esplicito [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per caricare un nome sicuro denominato assembly VSPackage. Il valore della chiave deve essere il nome sicuro dell'assembly. |
+| Collocare la DLL nel **PublicAssemblies** directory. | Infine, l'assembly può anche essere inserito nel **PublicAssemblies** sottodirectory. Gli assembly che si trovano **PublicAssemblies** vengono automaticamente rilevati e vengono visualizzate anche nel **aggiungere i riferimenti** nella finestra di dialogo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Gli assembly VSPackage devono essere posizionati solo nel **PublicAssemblies** directory se contengono i componenti destinati a essere riutilizzato da altri sviluppatori VSPackage gestiti. La maggior parte degli assembly non soddisfano questo criterio. |
+
 > [!NOTE]
->  Utilizzare assembly con nome sicuro, con segno per tutti gli assembly dipendenti. Questi assembly devono essere installati nella propria directory o global assembly cache (GAC). Questo consente di proteggere i conflitti con gli assembly che hanno lo stesso nome di file di base, noto come associazione con nome sicuro.
+>  Usare gli assembly con nome sicuro, con segno per tutti gli assembly dipendenti. Questi assembly devono anche essere installati nella global assembly cache (GAC) o la propria directory. Ciò consente di evitare conflitti con gli assembly con lo stesso nome di file di base, noto come associazione di "Weak"-name.
