@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950976"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Procedura: personalizzare i diagrammi classi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ ms.locfileid: "49296179"
   
 ##  <a name="DisplayAssociationAndInheritance"></a> Mostrare relazioni nascoste  
   
-1.  Aprire e selezionare un file di diagramma classi in Progettazione classi.  
+1. Aprire e selezionare un file di diagramma classi in Progettazione classi.  
   
-2.  Fare clic con il pulsante destro del mouse sul tipo con l'associazione o l'ereditarietà nascosta.  
+2. Fare clic con il pulsante destro del mouse sul tipo con l'associazione o l'ereditarietà nascosta.  
   
- Fare clic su **Mostra tutti i membri** per le linee di associazione e su **Mostra classe base** o **Mostra classi derivate** per le linee di ereditarietà.  
+   Fare clic su **Mostra tutti i membri** per le linee di associazione e su **Mostra classe base** o **Mostra classi derivate** per le linee di ereditarietà.  
   
 ##  <a name="RemoveCodeAndShape"></a> Rimuovere una forma da un diagramma di classi  
  È possibile rimuovere una forma di tipo dal diagramma di classi senza influire sul codice sottostante del tipo. La rimozione delle forme dei tipi da un diagramma classi influirà solo sul diagramma corrente: il codice sottostante che definisce il tipo e gli altri diagrammi in cui viene visualizzato il tipo non saranno interessati.  
