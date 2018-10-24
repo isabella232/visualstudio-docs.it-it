@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486c8e32b577b6c794a03c080a909023b40eafde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826389"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Scrittura di logger compatibili con più processori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,13 +71,13 @@ public interface INodeLogger: ILogger
   
  Esistono due modi per usare la registrazione distribuita, come indicato di seguito:  
   
--   Personalizzare il logger di inoltro preimpostato denominato <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
+- Personalizzare il logger di inoltro preimpostato denominato <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
   
--   Scrivere il proprio logger di inoltro personalizzato.  
+- Scrivere il proprio logger di inoltro personalizzato.  
   
- È possibile modificare ConfigurableForwardingLogger in base alle proprie esigenze. A tale scopo, chiamare il logger nella riga di comando usando MSBuild.exe e indicare gli eventi di compilazione che il logger dovrà inoltrare al nodo centrale.  
+  È possibile modificare ConfigurableForwardingLogger in base alle proprie esigenze. A tale scopo, chiamare il logger nella riga di comando usando MSBuild.exe e indicare gli eventi di compilazione che il logger dovrà inoltrare al nodo centrale.  
   
- In alternativa, è possibile creare un logger di inoltro personalizzato. Creando un logger di inoltro personalizzato, è possibile ottimizzare il comportamento del logger. Tuttavia, la creazione di un logger di inoltro personalizzato è più complessa rispetto alla personalizzazione di ConfigurableForwardingLogger. Per altre informazioni, vedere l'articolo relativo alla [creazione dei logger di inoltro](../msbuild/creating-forwarding-loggers.md).  
+  In alternativa, è possibile creare un logger di inoltro personalizzato. Creando un logger di inoltro personalizzato, è possibile ottimizzare il comportamento del logger. Tuttavia, la creazione di un logger di inoltro personalizzato è più complessa rispetto alla personalizzazione di ConfigurableForwardingLogger. Per altre informazioni, vedere l'articolo relativo alla [creazione dei logger di inoltro](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Uso di ConfigurableForwardingLogger per la registrazione distribuita semplice  
  Per allegare un oggetto ConfigurableForwardingLogger o un logger di inoltro personalizzato, usare l'opzione `/distributedlogger` (`/dl` per brevità) in una compilazione da riga di comando di MSBuild.exe. Il formato da usare per specificare i nomi dei tipi e delle classi del logger è identico a quello usato per l'opzione `/logger`, ad eccezione del fatto che un logger distribuito ha sempre due classi di registrazione anziché una sola, il logger di inoltro e il logger centrale. Di seguito è riportato un esempio di come allegare un logger di inoltro personalizzato denominato XMLForwardingLogger.  

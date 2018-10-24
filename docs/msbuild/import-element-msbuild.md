@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077490"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839609"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa il contenuto di un file di progetto in un altro file di progetto.  
@@ -55,10 +55,10 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 
 ### <a name="parent-elements"></a>Elementi padre  
 
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
-|[ImportGroup](../msbuild/importgroup-element.md)|Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa.|  
+| Elemento | Descrizione |
+| - | - |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [ImportGroup](../msbuild/importgroup-element.md) | Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa. |
 
 ## <a name="remarks"></a>Note  
  Tramite l'elemento `Import` , è possibile riutilizzare codice comune a più file di progetto. Ciò semplifica la gestione del codice, poiché tutti gli aggiornamenti apportati al codice condiviso vengono propagati a tutti i progetti che lo importano.  
@@ -75,7 +75,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 
 > [!NOTE]
 >  Mentre le istruzioni di importazione condizionale funzionano in MSBuilds per la riga di comando, non funzionano in MSBuild nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Le importazioni condizionali vengono valutate usando i valori di configurazione e piattaforma impostati quando viene caricato il progetto. Se vengono apportate modifiche successive che richiedono una rivalutazione delle istruzioni condizionali nel file di progetto, ad esempio la modifica della piattaforma, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rivaluta le condizioni sulle proprietà e gli elementi ma non sulle importazioni. Poiché non viene rivalutata la condizione di importazione, l'importazione viene ignorata.  
->   
+> 
 >  Per risolvere il problema, inserire le importazioni condizionali nei file con estensione *targets* o inserire il codice in un blocco condizionale, ad esempio un blocco [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md).  
 
 ## <a name="wildcards"></a>Caratteri jolly  

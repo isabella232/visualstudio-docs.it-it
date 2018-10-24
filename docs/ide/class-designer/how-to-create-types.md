@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842261"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Procedura: Creare tipi usando Progettazione classi
 
@@ -71,21 +71,21 @@ Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramm
 
 ##  <a name="CustAttributeType"></a> Applicare un attributo personalizzato a un tipo
 
-1.  Fare clic sulla forma del tipo in un diagramma classi.
+1. Fare clic sulla forma del tipo in un diagramma classi.
 
-2.  Nella finestra **Proprietà** fare clic sul pulsante con i puntini di sospensione (...) accanto alla proprietà **Attributi personalizzati** relativa al tipo.
+2. Nella finestra **Proprietà** fare clic sul pulsante con i puntini di sospensione (...) accanto alla proprietà **Attributi personalizzati** relativa al tipo.
 
-3.  Aggiungere uno o più attributi personalizzati, uno per riga. Non racchiuderli tra parentesi.
+3. Aggiungere uno o più attributi personalizzati, uno per riga. Non racchiuderli tra parentesi.
 
    Gli attributi personalizzati vengono applicati al tipo.
 
 ##  <a name="CustAttributeMember"></a> Applicare un attributo personalizzato a un membro di un tipo
 
-1.  Fare clic sul nome del membro nella forma del relativo tipo in un diagramma classi oppure nella relativa riga nella finestra Dettagli classe.
+1. Fare clic sul nome del membro nella forma del relativo tipo in un diagramma classi oppure nella relativa riga nella finestra Dettagli classe.
 
-2.  Nella finestra **Proprietà** individuare la proprietà **Attributi personalizzati** del membro.
+2. Nella finestra **Proprietà** individuare la proprietà **Attributi personalizzati** del membro.
 
-3.  Aggiungere uno o più attributi personalizzati, uno per riga. Non racchiuderli tra parentesi.
+3. Aggiungere uno o più attributi personalizzati, uno per riga. Non racchiuderli tra parentesi.
 
    Gli attributi personalizzati vengono applicati al tipo.
 

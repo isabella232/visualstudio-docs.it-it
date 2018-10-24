@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812426"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  
   
--   Creazione di un modello Entity Data Model generato dai dati nel database di esempio AdventureWorksLT.  
+- Creazione di un modello Entity Data Model generato dai dati nel database di esempio AdventureWorksLT.  
   
--   Creazione di un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] che espone i dati in Entity Data Model in un'applicazione WPF.  
+- Creazione di un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] che espone i dati in Entity Data Model in un'applicazione WPF.  
   
--   Creazione di un set di controlli con associazione a dati trascinando elementi dal **Zdroje dat** finestra di progettazione WPF.  
+- Creazione di un set di controlli con associazione a dati trascinando elementi dal **Zdroje dat** finestra di progettazione WPF.  
   
--   Creazione di pulsanti per spostarsi avanti e indietro tra i record cliente.  
+- Creazione di pulsanti per spostarsi avanti e indietro tra i record cliente.  
   
--   Creazione di un pulsante che consente di salvare le modifiche apportate ai dati nei controlli per il [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] e l'origine dati sottostante.  
+- Creazione di un pulsante che consente di salvare le modifiche apportate ai dati nei controlli per il [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] e l'origine dati sottostante.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:  
+  Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:  
   
--   WCF Data Services. Per altre informazioni, vedere [Panoramica](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Data Services. Per altre informazioni, vedere [Panoramica](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Modelli di dati in [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
+- Modelli di dati in [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
--   Modelli di Entity Data Model e ADO.NET Entity Framework. Per altre informazioni, vedere [Panoramica di Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Modelli di Entity Data Model e ADO.NET Entity Framework. Per altre informazioni, vedere [Panoramica di Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Uso di WPF Designer. Per altre informazioni, vedere [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Uso di WPF Designer. Per altre informazioni, vedere [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Creare il progetto di servizio  
  Avviare la procedura dettagliata creando un progetto per un'istanza di [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
@@ -207,39 +207,39 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 #### <a name="to-create-the-data-bound-controls"></a>Per creare i controlli associati a dati  
   
-1.  Nel **Zdroje dat** finestra, fare clic sul menu a discesa per il **SalesOrderHeaders** nodo e selezionare **dettagli**.  
+1. Nel **Zdroje dat** finestra, fare clic sul menu a discesa per il **SalesOrderHeaders** nodo e selezionare **dettagli**.  
   
-2.  Espandere la **SalesOrderHeaders** nodo.  
+2. Espandere la **SalesOrderHeaders** nodo.  
   
-3.  Per questo esempio, alcuni campi non verranno visualizzati, quindi fare clic sul menu a discesa accanto ai nodi seguenti e selezionare **None**:  
+3. Per questo esempio, alcuni campi non verranno visualizzati, quindi fare clic sul menu a discesa accanto ai nodi seguenti e selezionare **None**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **rowguid**  
+   - **rowguid**  
   
      Questa azione impedisce a Visual Studio di creare i controlli associati a dati per questi nodi nel passaggio successivo. In questa procedura dettagliata si presuppone che l'utente finale non necessario visualizzare i dati.  
   
-4.  Dal **Zdroje dat** finestra, trascinare le **SalesOrderHeaders** nodo nella riga della griglia sotto la riga che contiene i pulsanti.  
+4. Dal **Zdroje dat** finestra, trascinare le **SalesOrderHeaders** nodo nella riga della griglia sotto la riga che contiene i pulsanti.  
   
-     Visual Studio genera XAML e codice che crea un set di controlli associati ai dati di **prodotto** tabella. Per altre informazioni sulle XAML e codice generato, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Visual Studio genera XAML e codice che crea un set di controlli associati ai dati di **prodotto** tabella. Per altre informazioni sulle XAML e codice generato, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-5.  Nella finestra di progettazione, selezionare la casella di testo accanto al **Customer ID** etichetta.  
+5. Nella finestra di progettazione, selezionare la casella di testo accanto al **Customer ID** etichetta.  
   
-6.  Nel **delle proprietà** finestra, seleziona la casella di controllo accanto al **IsReadOnly** proprietà.  
+6. Nel **delle proprietà** finestra, seleziona la casella di controllo accanto al **IsReadOnly** proprietà.  
   
-7.  Impostare il **IsReadOnly** proprietà per ognuna delle caselle di testo seguenti:  
+7. Impostare il **IsReadOnly** proprietà per ognuna delle caselle di testo seguenti:  
   
-    -   **Numero di ordine di acquisto**  
+   -   **Numero di ordine di acquisto**  
   
-    -   **ID ordine di vendita**  
+   -   **ID ordine di vendita**  
   
-    -   **Numero di ordine di vendita**  
+   -   **Numero di ordine di vendita**  
   
 ## <a name="load-the-data-from-the-service"></a>Caricare i dati dal servizio  
  Usare l'oggetto proxy del servizio per caricare i dati di vendita dal servizio. Assegnare quindi i dati restituiti per l'origine dati per il <xref:System.Windows.Data.CollectionViewSource> nella finestra WPF.  

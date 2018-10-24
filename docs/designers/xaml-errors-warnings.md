@@ -10,12 +10,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 09251f13cafa320e2736e9c61135283bb9e9739d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844185"
 ---
 # <a name="xaml-errors-and-warnings"></a>Errori e avvisi XAML
 
@@ -26,7 +26,7 @@ Durante la creazione di codice XAML, Visual Studio analizza il codice mentre lo 
 Vari strumenti analizzano il codice XAML in background. Gli errori XAML sono suddivisi nei tre tipi seguenti, a seconda dello strumento che ha rilevato l'errore:
 
 |**Errore rilevato da**|**Formato codice di errore**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Servizio di linguaggio XAML (Editor XAML)|XLSxxxx|
 |Finestra di progettazione XAML|XDGxxxx|
 |Modifica e continuazione XAML|XECxxxx|

@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827585"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
   
  Nelle organizzazioni più grandi, l'editore e il deployer sono in genere due entità separate:  
   
--   L'editore è il gruppo che crea l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+- L'editore è il gruppo che crea l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
--   Il deployer è il gruppo, in genere del reparto IT, che distribuisce l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ai computer desktop aziendali.  
+- Il deployer è il gruppo, in genere del reparto IT, che distribuisce l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ai computer desktop aziendali.  
   
- Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione di applicazioni attendibili:  
+  Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione di applicazioni attendibili:  
   
 1.  Ottenere un certificato per l'editore.  
   

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 45ff6e07abb77623fe1007ef5e13556e26852224
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827462"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitare classi interne prive di istanze
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -32,12 +33,14 @@ ms.locfileid: "47859003"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Un'istanza di un tipo a livello di assembly non viene creata dal codice nell'assembly.
+
+Un'istanza di un tipo a livello di assembly non viene creata dal codice nell'assembly.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola cerca di individuare una chiamata a uno dei costruttori del tipo e se viene trovata alcuna chiamata viene segnalata una violazione.
 
- I tipi seguenti non vengono analizzati da questa regola:
+Questa regola cerca di individuare una chiamata a uno dei costruttori del tipo e se viene trovata alcuna chiamata viene segnalata una violazione.
+
+I tipi seguenti non vengono analizzati da questa regola:
 
 - Tipi valore
 
@@ -51,19 +54,21 @@ ms.locfileid: "47859003"
 
 - I tipi che non può essere inizializzata e che definiscono `static` (`Shared` in Visual Basic) solo i metodi.
 
- Se si applicano <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> all'assembly che si sta analizzando, questa regola non verrà eseguita su qualsiasi costruttore contrassegnati come `internal` poiché non è possibile stabilire se un campo viene usato da un altro `friend` assembly.
+Se si applicano <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> all'assembly che si sta analizzando, questa regola non verrà eseguita su qualsiasi costruttore contrassegnati come `internal` poiché non è possibile stabilire se un campo viene usato da un altro `friend` assembly.
 
- Anche se è possibile aggirare questa limitazione in analisi di codice di Visual Studio, FxCop autonomo esterno si verificherà in costruttori interni se ogni `friend` assembly è presente nell'analisi.
+Anche se è possibile aggirare questa limitazione in analisi di codice di Visual Studio, FxCop autonomo esterno si verificherà in costruttori interni se ogni `friend` assembly è presente nell'analisi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere il codice che lo utilizza. Se il tipo contiene solo i metodi statici, aggiungere uno dei valori seguenti per il tipo per impedire al compilatore di creazione di un costruttore di istanza pubblici predefinito:
+
+Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere il codice che lo utilizza. Se il tipo contiene solo i metodi statici, aggiungere uno dei valori seguenti per il tipo per impedire al compilatore di creazione di un costruttore di istanza pubblici predefinito:
 
 - Un costruttore privato per i tipi destinate a .NET Framework versioni 1.0 e 1.1.
 
 - Il `static` (`Shared` in Visual Basic) che hanno come destinazione i tipi di modificatore per [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola. Si consiglia di eliminare l'avviso nelle situazioni seguenti:
+
+È possibile eliminare un avviso da questa regola. Si consiglia di eliminare l'avviso nelle situazioni seguenti:
 
 - La classe viene creata tramite i metodi di reflection con associazione tardiva, ad esempio <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
@@ -90,11 +95,12 @@ ms.locfileid: "47859003"
     mc.Create();
     ```
 
- In questi casi, si consiglia che non visualizzare questo avviso.
+  In questi casi, si consiglia che non visualizzare questo avviso.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: Rivedere i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
+[CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)
+[CA1801: Rivedere i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
+
+[CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetInfo | Documenti Microsoft
+title: IDebugMemoryContext2::GetInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cc0af2cfc56b22e2b6488056a73004d653431d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c76d197a03d644fa841e55e7e7910f4d0541840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841988"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
-Recupera un [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struttura che descrive il contesto.  
+Recupera una [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struttura che descrive il contesto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,10 +44,10 @@ int GetInfo(
   
 #### <a name="parameters"></a>Parametri  
  `dwFields`  
- [in] Una combinazione di flag dal [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumerazione che indicano quali campi del [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struttura devono essere compilare.  
+ [in] Una combinazione di flag dal [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumerazione che indicano quali campi della [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struttura devono essere inserire.  
   
  `pInfo`  
- [in, out] Il `CONTEXT_INFO` struttura che viene compilato.  
+ [in, out] Il `CONTEXT_INFO` struttura compilata.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

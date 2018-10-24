@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843646"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificare lo stile degli oggetti in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ Il modo più semplice per personalizzare un oggetto consiste nell'impostare le p
   
  Per creare uno stile, selezionare l'oggetto, scegliere **Modifica stile** dal menu **Oggetto** e quindi **Modifica una copia** o **Crea vuoto**.  
   
--   Scegliere **Modifica una copia** per iniziare con lo stile o il modello predefinito del controllo.  
+- Scegliere **Modifica una copia** per iniziare con lo stile o il modello predefinito del controllo.  
   
--   Scegliere **Crea vuoto** per partire da zero.  
+- Scegliere **Crea vuoto** per partire da zero.  
   
- Il **modifica corrente** opzione viene visualizzata solo se si modifica uno stile o modello che già stato creato. Non sarà invece visibile per un controllo che usa ancora un modello di sistema predefinito.  
+  Il **modifica corrente** opzione viene visualizzata solo se si modifica uno stile o modello che già stato creato. Non sarà invece visibile per un controllo che usa ancora un modello di sistema predefinito.  
   
- Nella finestra di dialogo **Create Style Resource** (Crea risorsa di stile) è possibile assegnare un nome allo stile o al modello per poterlo usare in seguito oppure applicare lo stile o il modello a tutti i controlli di tale tipo.  
+  Nella finestra di dialogo **Create Style Resource** (Crea risorsa di stile) è possibile assegnare un nome allo stile o al modello per poterlo usare in seguito oppure applicare lo stile o il modello a tutti i controlli di tale tipo.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  Non è possibile creare stili o modelli per ogni tipo di controllo. Se questi non sono supportati in un controllo, il pulsante di navigazione non verrà visualizzato sopra la tavola da disegno.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank | Documenti Microsoft
+title: IDebugArrayField::GetRank | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fee642bb5f19efb62b631d71d3ba95eec45c0be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6921da02b2df62509dd820795581e3ce6dae92d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846239"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 Ottiene il numero di dimensioni o il numero di dimensioni della matrice.  
@@ -44,10 +44,10 @@ int GetRank(
  [out] Restituisce il rango.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Il numero di dimensioni della matrice corrisponde al numero di dimensioni. In C++ e c#, le matrici multidimensionali sono realmente le matrici di matrici e pertanto possono essere considerate solo una matrice unidimensionale (e `GetRank` metodo restituisce sempre 1). In [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], d'altra parte, le matrici multidimensionali sono gestite in modo diverso e il numero di dimensioni di tale matrice riflette il numero di dimensioni (e `GetRank` metodo restituisce sempre il numero di dimensioni).  
+ Il rango della matrice corrisponde al numero di dimensioni. In C++ e c#, le matrici multidimensionali sono in realtà le matrici di matrici e pertanto può essere considerate solo una matrice unidimensionale (e `GetRank` metodo restituirà sempre 1). Nelle [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], d'altra parte, le matrici multidimensionali sono gestite in modo diverso e il numero di dimensioni di una matrice di questo tipo riflette il numero di dimensioni (e `GetRank` metodo restituisce sempre il numero di dimensioni).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

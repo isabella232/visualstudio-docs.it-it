@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9abdf432664e57dd773649a88f97cf9b48675d7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2075bec37e29359fb9c403f9cb149b70c01845b6
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638173"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410988"
 ---
 # <a name="register-and-unregister-vspackages"></a>Registrare e annullare la registrazione di pacchetti VSPackage
 Attributi vengono utilizzati per registrare un VSPackage, ma  
@@ -33,7 +33,9 @@ Attributi vengono utilizzati per registrare un VSPackage, ma
 [PackageRegistration(UseManagedResourcesOnly = true)]  
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]  
 public sealed class BasicPackage : Package  
-{. . .}  
+{
+    // ...
+}  
 ```  
   
 ## <a name="unregister-an-extension"></a>Annullare la registrazione di un'estensione  
@@ -63,9 +65,9 @@ Il codice seguente viene illustrato come creare un nuovo attributo di registrazi
   
 ```csharp  
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]  
-    public class CustomRegistrationAttribute : RegistrationAttribute  
-    {  
-    }  
+public class CustomRegistrationAttribute : RegistrationAttribute  
+{  
+}  
 ```  
   
  Il <xref:System.AttributeUsageAttribute> viene utilizzato nelle classi di attributo per specificare l'elemento del programma (classe, metodo, e così via) a cui fa riferimento l'attributo, che può essere utilizzato più volte e che può essere ereditata.  
@@ -113,7 +115,7 @@ public override void Register(RegistrationAttribute.RegistrationContext context)
     {  
         if (packageKey != null)  
             packageKey.Close();  
-                }  
+    }  
 }  
   
 public override void Unregister(RegistrationContext context)  

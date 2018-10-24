@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845301"
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ L'editor del codice di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] include l
   
  La procedura per visualizzare la **Selezione frammento di codice** varia in base al linguaggio in uso.  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)] - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento** o **Racchiudi tra**.  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento** o **Racchiudi tra**.  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - La **Selezione frammento di codice** non è disponibile.  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - La **Selezione frammento di codice** non è disponibile.  
   
--   Visual F# - La **Selezione frammento di codice** non è disponibile.  
+- Visual F# - La **Selezione frammento di codice** non è disponibile.  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento** o **Racchiudi tra**.  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento** o **Racchiudi tra**.  
   
--   XML - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento** o **Racchiudi tra**.  
+- XML - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento** o **Racchiudi tra**.  
   
--   HTML - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento** o **Racchiudi tra**.  
+- HTML - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento** o **Racchiudi tra**.  
   
--   SQL - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.  
+- SQL - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.  
   
- Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'**Elenco cartelle** in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [Procedura dettagliata: creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).  
+  Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'**Elenco cartelle** in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [Procedura dettagliata: creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  Nome elemento  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841884"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: Data binding complesso in un progetto a livello di documento
   Questa procedura dettagliata illustra le nozioni di base di data binding complesso in un progetto a livello di documento. È possibile associare più celle in un foglio di lavoro di Microsoft Office Excel a campi nel database Northwind di SQL Server.  
@@ -32,13 +32,13 @@ ms.locfileid: "38781670"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Aggiunta di un'origine dati al progetto cartella di lavoro.  
+- Aggiunta di un'origine dati al progetto cartella di lavoro.  
   
--   Aggiunta di controlli con associazione a dati a un foglio di lavoro.  
+- Aggiunta di controlli con associazione a dati a un foglio di lavoro.  
   
--   Salvataggio delle modifiche dei dati nel database.  
+- Salvataggio delle modifiche dei dati nel database.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -67,25 +67,25 @@ ms.locfileid: "38781670"
   
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   
-1.  Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.  
+1. Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.  
   
-2.  Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
+2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
   
-3.  Selezionare **Database** e quindi fare clic su **successivo**.  
+3. Selezionare **Database** e quindi fare clic su **successivo**.  
   
-4.  Selezionare una connessione dati al database di SQL Server di esempio Northwind, oppure aggiungere una nuova connessione usando il **nuova connessione** pulsante.  
+4. Selezionare una connessione dati al database di SQL Server di esempio Northwind, oppure aggiungere una nuova connessione usando il **nuova connessione** pulsante.  
   
-5.  Dopo che una connessione è stata selezionata o creata, fare clic su **successivo**.  
+5. Dopo che una connessione è stata selezionata o creata, fare clic su **successivo**.  
   
-6.  Deselezionare l'opzione per salvare la connessione, se è selezionata, quindi scegliere **successivo**.  
+6. Deselezionare l'opzione per salvare la connessione, se è selezionata, quindi scegliere **successivo**.  
   
-7.  Espandere la **tabelle** nodo il **degli oggetti di Database** finestra.  
+7. Espandere la **tabelle** nodo il **degli oggetti di Database** finestra.  
   
-8.  Selezionare la casella di controllo accanto al **dipendenti** tabella.  
+8. Selezionare la casella di controllo accanto al **dipendenti** tabella.  
   
 9. Scegliere **Fine**.  
   
- La procedura guidata aggiunge i **dipendenti** alla tabella il **Zdroje dat** finestra. Aggiunge anche un set di dati tipizzato al progetto che è visibile nel **Esplora soluzioni**.  
+   La procedura guidata aggiunge i **dipendenti** alla tabella il **Zdroje dat** finestra. Aggiunge anche un set di dati tipizzato al progetto che è visibile nel **Esplora soluzioni**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Aggiungere controlli al foglio di lavoro  
  Verrà visualizzato un foglio di lavoro di **dipendenti** tabella quando viene aperta la cartella di lavoro. Gli utenti saranno in grado di apportare modifiche ai dati e quindi salvare le modifiche al database facendo clic su un pulsante.  
@@ -108,27 +108,27 @@ ms.locfileid: "38781670"
   
 ### <a name="to-add-a-button"></a>Per aggiungere un pulsante  
   
-1.  Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **A4** del foglio di lavoro.  
+1. Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **A4** del foglio di lavoro.  
   
- Il passaggio successivo consiste nell'aggiungere testo al pulsante quando si apre il foglio di lavoro.  
+   Il passaggio successivo consiste nell'aggiungere testo al pulsante quando si apre il foglio di lavoro.  
   
 ## <a name="initialize-the-control"></a>Inizializzare il controllo  
  Aggiungere testo al pulsante nel <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> gestore dell'evento.  
   
 ### <a name="to-initialize-the-control"></a>Per inizializzare il controllo  
   
-1.  Nella **Esplora soluzioni**, fare doppio clic su **Sheet1.vb** oppure **Sheet1.cs**, quindi fare clic su **Visualizza codice** menu di scelta rapida.  
+1. Nella **Esplora soluzioni**, fare doppio clic su **Sheet1.vb** oppure **Sheet1.cs**, quindi fare clic su **Visualizza codice** menu di scelta rapida.  
   
-2.  Aggiungere il codice seguente per il `Sheet1_Startup` metodo per impostare il testo per b`utton`.  
+2. Aggiungere il codice seguente per il `Sheet1_Startup` metodo per impostare il testo per b`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
+    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
+    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  Solo per c#, aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> dell'evento di `Sheet1_Startup` (metodo).  
+3. Solo per c#, aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> dell'evento di `Sheet1_Startup` (metodo).  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
+    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- A questo punto aggiungere il codice per gestire il <xref:System.Windows.Forms.Control.Click> evento del pulsante.  
+   A questo punto aggiungere il codice per gestire il <xref:System.Windows.Forms.Control.Click> evento del pulsante.  
   
 ## <a name="save-changes-to-the-database"></a>Salvare le modifiche al database  
  Sono state apportate modifiche per i dati disponibili solo nel set di dati locale fino a quando non vengono salvati in modo esplicito nel database.  
@@ -175,15 +175,15 @@ ms.locfileid: "38781670"
   
 ### <a name="to-add-new-rows"></a>Per aggiungere nuove righe  
   
-1.  Selezionare una cella all'interno dell'oggetto elenco.  
+1. Selezionare una cella all'interno dell'oggetto elenco.  
   
-     Verrà visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco (**\***) nella prima cella della nuova riga.  
+    Verrà visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco (* *\\* * *) nella prima cella della nuova riga.  
   
-2.  Aggiungere le informazioni seguenti nella riga vuota.  
+2. Aggiungere le informazioni seguenti nella riga vuota.  
   
-    |EmployeeID|LastName|FirstName|Titolo|  
-    |----------------|--------------|---------------|-----------|  
-    |10|Greco|Mario|Responsabile vendite|  
+   |EmployeeID|LastName|FirstName|Titolo|  
+   |----------------|--------------|---------------|-----------|  
+   |10|Greco|Mario|Responsabile vendite|  
   
 ### <a name="to-delete-rows"></a>Per eliminare righe  
   

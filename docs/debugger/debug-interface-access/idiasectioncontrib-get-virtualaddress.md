@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_virtualAddress | Documenti Microsoft
+title: Idiasectioncontrib | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b79262762b1841a52be0b401e28217e7b6059c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5a617b4df57cb8b8bc18933ff463d2cba655039a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825393"
 ---
 # <a name="idiasectioncontribgetvirtualaddress"></a>IDiaSectionContrib::get_virtualAddress
-Recupera l'indirizzo virtuale (VA) del contributo dell'indicatore.  
+Recupera l'indirizzo virtuale (valutazione della vulnerabilità) del contributo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT get_virtualAddress (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il VA del contributo dell'indicatore.  
+ [out] Restituisce la valutazione della vulnerabilità del contributo.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

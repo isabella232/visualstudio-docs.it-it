@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a51372b48eb01f0ff424c6919b572646235039f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820096"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,21 +63,21 @@ ms.locfileid: "49194837"
   
  La barra degli strumenti nella finestra Help Viewer contiene i pulsanti seguenti:  
   
--   Il pulsante **Mostra argomento nel contenuto** mostra la posizione dell'argomento nella scheda **Sommario**.  
+- Il pulsante **Mostra argomento nel contenuto** mostra la posizione dell'argomento nella scheda **Sommario**.  
   
--   Il pulsante **Aggiungi a Preferiti** aggiunge l'argomento attivo alla scheda **Preferiti**.  
+- Il pulsante **Aggiungi a Preferiti** aggiunge l'argomento attivo alla scheda **Preferiti**.  
   
--   Il pulsante **Trova in argomento** evidenzia il testo di ricerca nell'argomento attivo.  
+- Il pulsante **Trova in argomento** evidenzia il testo di ricerca nell'argomento attivo.  
   
--   Il pulsante**Stampa** stampa o mostra un'anteprima dell'argomento attivo.  
+- Il pulsante**Stampa** stampa o mostra un'anteprima dell'argomento attivo.  
   
--   Il pulsante **Opzioni Visualizzatore** visualizza le impostazioni come la grandezza del testo visualizzato, il numero di risultati di ricerca da restituire, il numero di argomenti da mostrare nella cronologia e se verificare la disponibilità di aggiornamenti online.  
+- Il pulsante **Opzioni Visualizzatore** visualizza le impostazioni come la grandezza del testo visualizzato, il numero di risultati di ricerca da restituire, il numero di argomenti da mostrare nella cronologia e se verificare la disponibilità di aggiornamenti online.  
   
--   Il pulsante **Gestisci contenuto** rende attiva la scheda **Gestisci contenuto**.  
+- Il pulsante **Gestisci contenuto** rende attiva la scheda **Gestisci contenuto**.  
   
--   Il piccolo triangolo apre un elenco di schede, incluse le schede degli argomenti e la scheda **Gestisci contenuto**. Scegliere una di queste schede per renderla attiva.  
+- Il piccolo triangolo apre un elenco di schede, incluse le schede degli argomenti e la scheda **Gestisci contenuto**. Scegliere una di queste schede per renderla attiva.  
   
- L'area inferiore della finestra Help Viewer contiene le informazioni sulla dimensione totale dei download in sospeso, la quantità di spazio su disco necessaria e la quantità di spazio su disco disponibile. Quest'area contiene anche le informazioni sugli errori che possono essersi verificati e un collegamento che è possibile scegliere per aggiornare il contenuto installato, se sono disponibili aggiornamenti.  
+  L'area inferiore della finestra Help Viewer contiene le informazioni sulla dimensione totale dei download in sospeso, la quantità di spazio su disco necessaria e la quantità di spazio su disco disponibile. Quest'area contiene anche le informazioni sugli errori che possono essersi verificati e un collegamento che è possibile scegliere per aggiornare il contenuto installato, se sono disponibili aggiornamenti.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida dell'amministratore di Help Viewer](../ide/help-viewer-administrator-guide.md)   

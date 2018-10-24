@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1f63e4f43db3f8c4b24b43bda02cf00b52befc94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842183"
 ---
 # <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, è consigliabile partire dall'analisi dell'utilizzo della CPU. Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice di Visual C++, Visual C#/Visual Basic e JavaScript. A partire da Visual Studio 2015 Update 1, è possibile visualizzare i dettagli dell'utilizzo della CPU a livello di singole funzioni senza uscire dal debugger. È possibile attivare o disattivare la profilatura della CPU durante il debug e visualizzare i risultati quando l'esecuzione viene interrotta, ad esempio in corrispondenza di un punto di interruzione.  
@@ -28,33 +28,33 @@ Per Windows 7 e le versioni successive è necessario usare lo strumento di profi
   
 ##  <a name="collect-cpu-usage-data"></a>Raccogliere i dati di Utilizzo CPU  
   
-1.  In Visual Studio impostare la configurazione della soluzione su **Versione** e scegliere la destinazione di distribuzione.  
+1. In Visual Studio impostare la configurazione della soluzione su **Versione** e scegliere la destinazione di distribuzione.  
   
-     ![Selezionare versione e computer locale](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Selezionare versione e computer locale](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Eseguendo l'app in modalità **Versione** si otterrà una migliore visualizzazione delle effettive prestazioni dell'app.  
+   -   Eseguendo l'app in modalità **Versione** si otterrà una migliore visualizzazione delle effettive prestazioni dell'app.  
   
-    -   L'esecuzione dell'app nel computer locale consente di replicare al meglio l'esecuzione dell'app installata.  
+   -   L'esecuzione dell'app nel computer locale consente di replicare al meglio l'esecuzione dell'app installata.  
   
-    -   Se si intende raccogliere dati da un dispositivo remoto, eseguire l'app direttamente nel dispositivo e non tramite Connessione Desktop remoto.  
+   -   Se si intende raccogliere dati da un dispositivo remoto, eseguire l'app direttamente nel dispositivo e non tramite Connessione Desktop remoto.  
   
-    -   Per le app di Windows Phone la raccolta dei dati direttamente dal **Dispositivo** consente di ottenere i dati più accurati.  
+   -   Per le app di Windows Phone la raccolta dei dati direttamente dal **Dispositivo** consente di ottenere i dati più accurati.  
   
-2.  Scegliere **Profiler prestazioni** dal menu **Debug**.  
+2. Scegliere **Profiler prestazioni** dal menu **Debug**.  
   
-3.  Scegliere **Utilizzo CPU** e quindi **Avvio**.  
+3. Scegliere **Utilizzo CPU** e quindi **Avvio**.  
   
-     ![Scegliere Utilizzo CPU](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Scegliere Utilizzo CPU](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  All'avvio dell'app fare clic su **Get Max Number**. Attendere circa un secondo dopo la visualizzazione dell'app, quindi scegliere **Get Max Number Async**. L'attesa tra i clic sui pulsanti consente di isolare in modo più semplice le routine relative ai clic nel report di diagnostica.  
+4. All'avvio dell'app fare clic su **Get Max Number**. Attendere circa un secondo dopo la visualizzazione dell'app, quindi scegliere **Get Max Number Async**. L'attesa tra i clic sui pulsanti consente di isolare in modo più semplice le routine relative ai clic nel report di diagnostica.  
   
-5.  Dopo la visualizzazione della seconda riga di output, scegli **Arresta raccolta** nell'hub Prestazioni e diagnostica.  
+5. Dopo la visualizzazione della seconda riga di output, scegli **Arresta raccolta** nell'hub Prestazioni e diagnostica.  
   
- ![Arrestare la raccolta di dati di CpuUsage](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Arrestare la raccolta di dati di CpuUsage](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
- Lo strumento Utilizzo CPU analizza i dati e visualizza il report.  
+   Lo strumento Utilizzo CPU analizza i dati e visualizza il report.  
   
- ![Report di CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+   ![Report di CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analizzare il report di Utilizzo CPU  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetRegistryRoot | Documenti Microsoft
+title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70b1730fc44deeb7e32433480f02f750c9bec193
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d327528d340bc5472278de13e83077cd2c28171b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840741"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
-Questo metodo imposta la radice del Registro di sistema. Usato per il debug side-by-side.  
+Questo metodo imposta la radice del Registro di sistema. Utilizzato per eseguire il debug side-by-side.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,13 +41,13 @@ int SetRegistryRoot(
   
 #### <a name="parameters"></a>Parametri  
  `ustrRegistryRoot`  
- [in] Il nuovo oggetto radice del Registro di sistema.  
+ [in] La nuova radice del Registro di sistema.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- La radice del Registro di sistema viene in genere impostata quando l'analizzatore di espressioni viene innanzitutto creata un'istanza e fa riferimento alla chiave del Registro di sistema per una specifica versione di Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*x. y* , dove *x. y* è un numero di versione).  
+ La radice del Registro di sistema è in genere impostata quando l'analizzatore di espressioni viene innanzitutto creata un'istanza e si fa riferimento alla chiave del Registro di sistema per una versione specifica di Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*x. y* , dove *x. y* è un numero di versione).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

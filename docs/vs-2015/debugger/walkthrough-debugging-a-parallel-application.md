@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823658"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Procedura dettagliata: debug di un'applicazione parallela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ Questa procedura dettagliata illustra come usare il **attività in parallelo** e
   
 #### <a name="to-create-the-sample-project"></a>Per creare il progetto di esempio  
   
-1.  In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.  
+1. In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.  
   
-2.  Nel **modelli installati** riquadro, selezionare Visual c#, Visual Basic o Visual C++. Per i linguaggi gestiti, assicurarsi che [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] sia visualizzato nella casella del framework.  
+2. Nel **modelli installati** riquadro, selezionare Visual c#, Visual Basic o Visual C++. Per i linguaggi gestiti, assicurarsi che [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] sia visualizzato nella casella del framework.  
   
-3.  Selezionare **applicazione Console** e quindi fare clic su **OK**. Restare nella configurazione per il debug, ovvero l'impostazione predefinita.  
+3. Selezionare **applicazione Console** e quindi fare clic su **OK**. Restare nella configurazione per il debug, ovvero l'impostazione predefinita.  
   
-4.  Aprire il file di codice con estensione CPP, CS o VB nel progetto. Eliminarne il contenuto per creare un file di codice vuoto.  
+4. Aprire il file di codice con estensione CPP, CS o VB nel progetto. Eliminarne il contenuto per creare un file di codice vuoto.  
   
-5.  Incollare il seguente codice per il linguaggio selezionato nel file di codice vuoto.  
+5. Incollare il seguente codice per il linguaggio selezionato nel file di codice vuoto.  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  Nel **File** menu, fare clic su **Salva tutto**.  
+6. Nel **File** menu, fare clic su **Salva tutto**.  
   
-2.  Nel **compilare** menu, fare clic su **Ricompila soluzione**.  
+7. Nel **compilare** menu, fare clic su **Ricompila soluzione**.  
   
-     Notare che vi sono quattro chiamate a `Debugger.Break` (`DebugBreak` nell'esempio C++). Pertanto, non è necessario inserire punti di interruzione; la semplice esecuzione dell'applicazione determinerà fino a quattro interruzioni nel debugger.  
+    Notare che vi sono quattro chiamate a `Debugger.Break` (`DebugBreak` nell'esempio C++). Pertanto, non è necessario inserire punti di interruzione; la semplice esecuzione dell'applicazione determinerà fino a quattro interruzioni nel debugger.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilizzo della finestra Stack in parallelo: visualizzazione Thread  
  Scegliere **Avvia debug** dal menu **Debug**. Attendere che venga raggiunto il primo punto di interruzione.  
@@ -153,33 +153,33 @@ Questa procedura dettagliata illustra come usare il **attività in parallelo** e
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Per riprendere l'esecuzione fino al terzo punto di interruzione  
   
-1.  Per riprendere l'esecuzione fino a quando non viene raggiunto il terzo punto di interruzione, scegliere il **Debug** menu, fare clic su **continua**.  
+1. Per riprendere l'esecuzione fino a quando non viene raggiunto il terzo punto di interruzione, scegliere il **Debug** menu, fare clic su **continua**.  
   
-     Se più thread si trovano nello stesso metodo ma questo, a sua volta, non si trovava all'inizio dello stack di chiamate, il metodo viene visualizzato in caselle diverse. Un esempio in corrispondenza del punto di interruzione corrente è S.L, il quale contiene tre thread e viene visualizzato in tre caselle. Fare doppio clic su S.L.  
+    Se più thread si trovano nello stesso metodo ma questo, a sua volta, non si trovava all'inizio dello stack di chiamate, il metodo viene visualizzato in caselle diverse. Un esempio in corrispondenza del punto di interruzione corrente è S.L, il quale contiene tre thread e viene visualizzato in tre caselle. Fare doppio clic su S.L.  
   
-     ![Percorso di esecuzione nella finestra Stack in parallelo](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![Percorso di esecuzione nella finestra Stack in parallelo](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     Si noti che S.L appare in grassetto nelle altre due caselle, così da poter vedere in quali altri punti viene visualizzato. Se si desidera visualizzare quali frame chiamano in l e quali sono le chiamate, scegliere il **attiva/disattiva visualizzazione metodo** pulsante sulla barra degli strumenti. La figura seguente mostra la visualizzazione del metodo di **stack in parallelo** finestra.  
+    Si noti che S.L appare in grassetto nelle altre due caselle, così da poter vedere in quali altri punti viene visualizzato. Se si desidera visualizzare quali frame chiamano in l e quali sono le chiamate, scegliere il **attiva/disattiva visualizzazione metodo** pulsante sulla barra degli strumenti. La figura seguente mostra la visualizzazione del metodo di **stack in parallelo** finestra.  
   
-     ![Visualizzazione metodo nella finestra Stack in parallelo](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![Visualizzazione metodo nella finestra Stack in parallelo](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     Si noti come il diagramma sia imperniato sul metodo selezionato e lo abbia posizionato nella propria casella al centro della visualizzazione. I chiamati e i chiamanti vengono visualizzati nella parte superiore e in quella inferiore. Scegliere il **attiva/disattiva visualizzazione metodo** nuovo pulsante per uscire da questa modalità.  
+    Si noti come il diagramma sia imperniato sul metodo selezionato e lo abbia posizionato nella propria casella al centro della visualizzazione. I chiamati e i chiamanti vengono visualizzati nella parte superiore e in quella inferiore. Scegliere il **attiva/disattiva visualizzazione metodo** nuovo pulsante per uscire da questa modalità.  
   
-     Il menu di scelta rapida del **stack in parallelo** finestra dispone anche di seguito altri elementi.  
+    Il menu di scelta rapida del **stack in parallelo** finestra dispone anche di seguito altri elementi.  
   
-    -   **Visualizzazione esadecimale** attiva o disattiva i numeri nelle descrizioni comandi tra decimale e il formato esadecimale.  
+   - **Visualizzazione esadecimale** attiva o disattiva i numeri nelle descrizioni comandi tra decimale e il formato esadecimale.  
   
-    -   **Informazioni sul caricamento dei simboli** e **impostazioni simboli** aprire le finestre di dialogo corrispondente.  
+   - **Informazioni sul caricamento dei simboli** e **impostazioni simboli** aprire le finestre di dialogo corrispondente.  
   
-    -   **Vai a codice sorgente** e **Vai a Disassembly** spostarsi nell'editor per il metodo selezionato.  
+   - **Vai a codice sorgente** e **Vai a Disassembly** spostarsi nell'editor per il metodo selezionato.  
   
-    -   **Mostra codice esterno** Visualizza tutti i frame anche se non si trovano nel codice utente. Provare questa voce per vedere il diagramma espandersi per accogliere i frame aggiuntivi, i quali possono essere disattivati in quanto non si dispone di simboli per tali frame.  
+   - **Mostra codice esterno** Visualizza tutti i frame anche se non si trovano nel codice utente. Provare questa voce per vedere il diagramma espandersi per accogliere i frame aggiuntivi, i quali possono essere disattivati in quanto non si dispone di simboli per tali frame.  
   
      Quando si dispone di diagrammi di grandi dimensioni e si avanza al punto di interruzione successivo, è possibile far sì che la visualizzazione scorra automaticamente fino allo stack frame attivo del thread corrente, vale a dire il thread che per primo ha raggiunto il punto di interruzione. Nel **stack in parallelo** finestra, assicurarsi che le **scorrimento automatico a Stack Frame corrente** pulsante sulla barra degli strumenti sia attivato.  
   
      ![Lo scorrimento automatico nella finestra Stack in parallelo](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  Prima di continuare, nelle **stack in parallelo** (finestra), scorrere fino in fondo a sinistra e verso il basso.  
+2. Prima di continuare, nelle **stack in parallelo** (finestra), scorrere fino in fondo a sinistra e verso il basso.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Per riprendere l'esecuzione fino al quarto punto di interruzione  
   

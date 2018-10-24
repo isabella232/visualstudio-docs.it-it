@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b632177ba941ad0e5ddb5700ae430573fd817d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0bce0be0f6c7953c44601edd090b1e1e7d3b6f6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832990"
 ---
 # <a name="delay-activity-designer"></a>ActivityDesigner Delay
 
@@ -38,14 +38,14 @@ Il **ritardo** ActivityDesigner può essere trascinato dalle **della casella deg
 La tabella seguente illustra il <xref:System.Activities.Statements.Delay> proprietà e viene descritto l'utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate nell'area di progettazione del flusso di lavoro.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo dell'attività <xref:System.Activities.Statements.Delay>. Il valore predefinito è Delay. Sebbene il <xref:System.Activities.Activity.DisplayName%2A> valore non è strettamente necessaria, è consigliabile usare uno.|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|True|Durata del ritardo del flusso di lavoro. Questa proprietà viene impostata nella griglia delle proprietà. Per specificare tale durata, digitare un valore <xref:System.TimeSpan> letterale nel formato 00:00:00 o un'espressione Visual Basic.|
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [assegnare](../workflow-designer/assign-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
 - [Activity Designer Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

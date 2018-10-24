@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Documenti Microsoft
+title: IDebugProperty2::SetValueAsReference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f8d871e6193835b51336a48355fde78fe95e103
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af0f31ba2bff7effce91232fd7e5cfc6f96afd9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833863"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Imposta il valore di questa proprietà sul valore del riferimento specificato.  
@@ -47,24 +47,24 @@ int SetValueAsReference(
   
 #### <a name="parameters"></a>Parametri  
  `rgpArgs`  
- [in] Matrice di argomenti da passare al metodo di impostazione di proprietà di codice gestito. Se il setter di proprietà non accetta argomenti o se questo [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto non fa riferimento a tale impostazione di una proprietà, `rgpArgs` deve essere un valore null. In genere, questo parametro è un valore null.  
+ [in] Matrice di argomenti da passare allo setter delle proprietà di codice gestito. Se il setter delle proprietà non accetta argomenti o se l'oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto non fa riferimento a tali un setter delle proprietà, `rgpArgs` deve essere un valore null. Questo parametro è in genere un valore null.  
   
  `dwArgCount`  
  [in] Il numero di argomenti in di `rgpArgs` matrice.  
   
  `pValue`  
- [in] Un riferimento, sotto forma di un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetto, il valore da utilizzare per impostare questa proprietà.  
+ [in] Un riferimento, sotto forma di un' [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetto, il valore da usare per impostare questa proprietà.  
   
  `dwTimeout`  
- [in] Il tempo da eseguire per impostare il valore, espresso in millisecondi. Un valore tipico è `INFINITE`. Questo problema riguarda il periodo di tempo che può accettare qualsiasi valutazione possibili.  
+ [in] Il tempo necessario eseguire per impostare il valore, espresso in millisecondi. Un valore tipico è `INFINITE`. Questo problema riguarda l'intervallo di tempo che può accettare qualsiasi valutazione possibili.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario restituisce un errore del codice, in genere uno dei seguenti:  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un errore di codice, in genere uno dei seguenti:  
   
 |Error|Descrizione|  
 |-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|L'impostazione del valore da un riferimento non è supportata.|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Impossibile impostare il valore di questa proprietà fa riferimento a un metodo.|  
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Impostazione del valore da un riferimento non è supportato.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Il valore non può essere impostato come questa proprietà fa riferimento a un metodo.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|Il valore è di sola lettura e non può essere impostato.|  
 |`E_NOTIMPL`|Il metodo non è implementato.|  
   

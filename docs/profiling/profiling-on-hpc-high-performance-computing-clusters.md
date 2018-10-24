@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842378"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Eseguire la profilatura su cluster HPC (High Performance Computing)
 
@@ -40,7 +40,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 - Installare [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] e la versione autonoma degli strumenti di profilatura sul nodo di calcolo HPC. I programmi di installazione per [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e per il profiler autonomo sono disponibili nel supporto di installazione di Visual Studio. **Nota** È necessario riavviare il computer dopo avere installato [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e prima di installare gli strumenti di profilatura.
 
- Per installare [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] e gli strumenti di profilatura autonomi su un nodo di calcolo HPC attivo e abilitare la profilatura nel computer del cluster, attenersi alla procedura seguente:
+  Per installare [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] e gli strumenti di profilatura autonomi su un nodo di calcolo HPC attivo e abilitare la profilatura nel computer del cluster, attenersi alla procedura seguente:
 
 1. Aprire la finestra del prompt dei comandi installata con HPC Pack.
 
@@ -52,11 +52,11 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-|||
-|-|-|
-|*%HeadNode%*|Nome del nodo head del cluster.|
-|*%FxPath%*|Percorso del programma di installazione di [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Nel supporto di installazione di Visual Studio il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
-|*%ProfilerPath%*|Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel supporto di installazione di Visual Studio il percorso è: Standalone Profiler\x64\vs_profiler.exe|
+| | |
+|------------------| - |
+| *%HeadNode%* | Nome del nodo head del cluster. |
+| *%FxPath%* | Percorso del programma di installazione di [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Nel supporto di installazione di Visual Studio il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel supporto di installazione di Visual Studio il percorso è: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Eseguire la profilatura su un nodo di calcolo HPC
 
@@ -68,9 +68,9 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 3. Nella seconda pagina della procedura guidata selezionare l'applicazione da profilare.
 
-    - Per profilare un progetto attualmente aperto in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], selezionare l'opzione **Uno o più progetti disponibili** e quindi selezionare il nome del progetto dall'elenco.
+   - Per profilare un progetto attualmente aperto in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], selezionare l'opzione **Uno o più progetti disponibili** e quindi selezionare il nome del progetto dall'elenco.
 
-    - Per profilare un file binario non incluso in un progetto aperto, selezionare l'opzione **Eseguibile (file EXE)**.
+   - Per profilare un file binario non incluso in un progetto aperto, selezionare l'opzione **Eseguibile (file EXE)**.
 
 4. Scegliere **Avanti**.
 
@@ -137,16 +137,17 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 ### <a name="advanced-properties"></a>Proprietà avanzate
 
-|Proprietà|Descrizione|
-|--------------|-----------------|
-|**Nome progetto**|Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] corrente.|
-|**Esegui pulizia all'arresto del profiler**|Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE.|
-|**File aggiuntivi da distribuire**|Specifica un elenco di file aggiuntivi separati da punto e virgola da distribuire sul nodo di calcolo. È possibile fare clic sul pulsante con i puntini di sospensione (**...**) per selezionare più file usando una finestra di dialogo.|
-|**Comando Mpiexec**|Specifica l'applicazione che avvia l'applicazione MPI. Il valore predefinito è **mpiexec.exe**.|
-|**Argomenti Mpiexec**|Specifica gli argomenti da passare al comando mpiexec.exe.|
-|**Nodi richiesti nel cluster**|Specifica il numero di nodi nel cluster su cui eseguire l'applicazione.|
-|**Distribuisci file CRT**|Se il valore è true, distribuisce il runtime C/C++ nel cluster.|
-|**Script pre-profilatura**|Specifica il percorso e il nome file di uno script da eseguire nel computer di sviluppo locale prima dell'avvio della sessione di profilatura.|
-|**Argomenti script pre-profilatura**|Specifica gli argomenti da passare allo script pre-profilatura.|
-|**Script post-profilatura**|Specifica il percorso e il nome file di uno script da eseguire nel computer di sviluppo locale al termine della sessione di profilatura.|
-|**Argomenti script post-profilatura**|Specifica gli argomenti da passare allo script post-profilatura.|
+| Proprietà | Descrizione |
+|---------------------------------------| - |
+| **Nome progetto** | Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] corrente. |
+| **Esegui pulizia all'arresto del profiler** | Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE. |
+| **File aggiuntivi da distribuire** | Specifica un elenco di file aggiuntivi separati da punto e virgola da distribuire sul nodo di calcolo. È possibile fare clic sul pulsante con i puntini di sospensione (**...**) per selezionare più file usando una finestra di dialogo. |
+| **Comando Mpiexec** | Specifica l'applicazione che avvia l'applicazione MPI. Il valore predefinito è **mpiexec.exe**. |
+| **Argomenti Mpiexec** | Specifica gli argomenti da passare al comando mpiexec.exe. |
+| **Nodi richiesti nel cluster** | Specifica il numero di nodi nel cluster su cui eseguire l'applicazione. |
+| **Distribuisci file CRT** | Se il valore è true, distribuisce il runtime C/C++ nel cluster. |
+| **Script pre-profilatura** | Specifica il percorso e il nome file di uno script da eseguire nel computer di sviluppo locale prima dell'avvio della sessione di profilatura. |
+| **Argomenti script pre-profilatura** | Specifica gli argomenti da passare allo script pre-profilatura. |
+| **Script post-profilatura** | Specifica il percorso e il nome file di uno script da eseguire nel computer di sviluppo locale al termine della sessione di profilatura. |
+| **Argomenti script post-profilatura** | Specifica gli argomenti da passare allo script post-profilatura. |
+

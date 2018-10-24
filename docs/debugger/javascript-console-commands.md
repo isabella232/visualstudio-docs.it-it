@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823749"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandi della JavaScript Console in Visual Studio
   
- È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle App UWP e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle App Cordova, vedere [il Debug dell'App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedi [in questo argomento](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
+ È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle App UWP e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedere [questo argomento](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **Debug** > **Finestre** > **Console JavaScript**.  
   
@@ -55,7 +55,7 @@ ms.locfileid: "44282209"
 |`msIsIndependentlyComposed(element)`|Usato nelle app Web. Non è supportato nelle App UWP scritte in JavaScript.|Non supportato.|  
 |`profile(reportName)`|Usato nelle app Web. Non è supportato nelle App UWP scritte in JavaScript.|Non supportato.|  
 |`profileEnd()`|Usato nelle app Web. Non è supportato nelle App UWP scritte in JavaScript.|Non supportato.|  
-|`select(element)`|Seleziona HTML specificato `element` nella [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`select(element)`|Seleziona l'elemento HTML `element` specificato in [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Avvia un timer identificato dal parametro facoltativo `name` . Se usato con `console.timeEnd`, calcola il tempo che intercorre tra `time` e `timeEnd`e invia il risultato (misurato in ms) alla console usando la stringa `name` come prefisso. Usato per abilitare la strumentazione del codice dell'app per la misurazione delle prestazioni.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Arresta un timer identificato dal parametro facoltativo `name` . Vedere il comando della console `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Invia una traccia dello stack alla finestra della console. La traccia include lo stack di chiamate completo e informazioni quali il nome file, il numero di riga e il numero di colonna.|`console.trace();`|  
@@ -70,7 +70,7 @@ ms.locfileid: "44282209"
 |`$(id)`|Restituisce un elemento in base all'ID. Si tratta di un comando di scelta rapida per `document.getElementById(id)`, dove `id` è una stringa che rappresenta l'ID dell'elemento.|`$("contenthost")`|  
 |`$$(selector)`|Restituisce una matrice di elementi che corrispondono al selettore specificato usando la sintassi del selettore CSS. Si tratta di un comando di scelta rapida per `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Consente di modificare il contesto per la valutazione di un'espressione dalla finestra di primo livello predefinita della pagina alla finestra del frame specificato. Chiamando `cd()` senza parametri, viene restituito il contesto nella finestra di primo livello.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|Seleziona l'elemento specificato nella [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|Seleziona l'elemento specificato in [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|Restituisce un visualizzatore per l'oggetto specificato. È possibile usare il visualizzatore per controllare le proprietà nella finestra della console.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>Verifica dell'esistenza di un comando della console  
@@ -104,16 +104,16 @@ console.log(user.first, user.last);
   
  Sono supportati i modelli di sostituzione seguenti:  
   
--   %s - stringa  
-     %i - intero  
-     %d - intero  
-     %f - float  
-     %o - oggetto  
-     %b - binario  
-     %x - esadecimale  
-     %e - esponente  
+- %s - stringa  
+   %i - intero  
+   %d - intero  
+   %f - float  
+   %o - oggetto  
+   %b - binario  
+   %x - esadecimale  
+   %e - esponente  
   
- Ecco alcuni esempi di utilizzo dei modelli di sostituzione in `console.log`:  
+  Ecco alcuni esempi di utilizzo dei modelli di sostituzione in `console.log`:  
   
 ```javascript  
 var user = new Object();  

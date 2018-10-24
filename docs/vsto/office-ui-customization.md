@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836767"
 ---
 # <a name="office-ui-customization"></a>Personalizzazione dell'interfaccia utente di Office
   È possibile personalizzare l'interfaccia utente (UI) delle applicazioni Microsoft Office mediante gli strumenti di sviluppo di Office in Visual Studio. Questo argomento descrive le funzionalità dell'interfaccia utente che è possibile personalizzare nelle sezioni seguenti:  
@@ -61,13 +61,13 @@ ms.locfileid: "35673599"
   
  Gli strumenti di sviluppo per Office in Visual Studio forniscono due diversi modi per personalizzare i riquadri attività:  
   
--   È possibile aggiungere un riquadro azioni a una personalizzazione a livello di documento. Per impostazione predefinita, viene visualizzato il riquadro azioni sul lato destro dell'applicazione, a destra del documento. Tuttavia, il riquadro azioni può apparire anche a sinistra, in alto o in basso nel documento.  
+- È possibile aggiungere un riquadro azioni a una personalizzazione a livello di documento. Per impostazione predefinita, viene visualizzato il riquadro azioni sul lato destro dell'applicazione, a destra del documento. Tuttavia, il riquadro azioni può apparire anche a sinistra, in alto o in basso nel documento.  
   
--   È possibile aggiungere un riquadro attività personalizzato a un componente aggiuntivo VSTO. Gli utenti possono ancorare i riquadri attività personalizzati a lati diversi della finestra dell'applicazione oppure possono trascinare i riquadri attività personalizzati in qualsiasi posizione nella finestra.  
+- È possibile aggiungere un riquadro attività personalizzato a un componente aggiuntivo VSTO. Gli utenti possono ancorare i riquadri attività personalizzati a lati diversi della finestra dell'applicazione oppure possono trascinare i riquadri attività personalizzati in qualsiasi posizione nella finestra.  
   
- I riquadri azioni e i riquadri attività personalizzati forniscono funzionalità grazie all'ampia gamma di controlli per consentire agli utenti di eseguire attività quali l'immissione di dati. Rispetto a un gruppo della barra multifunzione, i riquadri azioni e i riquadri attività personalizzati forniscono un'area molto più grande per includere testo e controlli.  
+  I riquadri azioni e i riquadri attività personalizzati forniscono funzionalità grazie all'ampia gamma di controlli per consentire agli utenti di eseguire attività quali l'immissione di dati. Rispetto a un gruppo della barra multifunzione, i riquadri azioni e i riquadri attività personalizzati forniscono un'area molto più grande per includere testo e controlli.  
   
- Per altre informazioni sui riquadri azioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md). Per altre informazioni sui riquadri attività personalizzati, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).  
+  Per altre informazioni sui riquadri azioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md). Per altre informazioni sui riquadri attività personalizzati, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).  
   
 ##  <a name="Ribbon"></a> Barra multifunzione personalizzata dell'interfaccia utente  
  È possibile personalizzare l'interfaccia utente della barra multifunzione per esporre funzionalità da aggiungere alle applicazioni di Office. La barra multifunzione è un modo per organizzare i comandi correlati (sotto forma di controlli) in modo che siano più semplici da trovare. È possibile creare proprie schede della barra multifunzione e i gruppi per consentire agli utenti di accedere alle funzionalità offerte nella soluzione. La maggior parte delle funzionalità che erano accessibili tramite i menu e le barre degli strumenti nelle versioni precedenti di Microsoft Office ora è accessibile tramite la barra multifunzione.  

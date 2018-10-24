@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames | Documenti Microsoft
+title: IDiaStackWalker::getEnumFrames | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a86af24d863982a527a5f3bd2fae58b4dbc6d431
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f4c7d8d30dee1d9c0a058177ad54aab864cee28d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836159"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 Recupera un enumeratore di frame dello stack x86 a piattaforme.  
@@ -38,13 +38,13 @@ HRESULT getEnumFrames(
  [in] L'helper [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) oggetto.  
   
  `ppEnum`  
- [out] Restituisce un [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) oggetto che contiene un elenco di [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) oggetti.  
+ [out] Restituisce un [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) oggetto che contiene un elenco delle [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) oggetti.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Per ottenere un elenco di frame dello stack su qualsiasi altra piattaforma, chiamare il [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) metodo.  
+ Per ottenere un elenco di frame dello stack in qualsiasi altra piattaforma, chiamare il [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   

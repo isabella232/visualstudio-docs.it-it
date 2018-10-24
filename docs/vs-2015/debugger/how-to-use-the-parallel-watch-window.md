@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837074"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Procedura: utilizzare la finestra Espressione di controllo in parallelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nella finestra Espressione di controllo in parallelo è possibile visualizzare contemporaneamente i valori di un'espressione utilizzata in più thread. Ogni riga rappresenta un thread in esecuzione in un'applicazione, ma un thread può essere rappresentato su più righe. In particolare, ogni riga rappresenta una chiamata di funzione la cui firma della funzione corrisponde alla funzione nello stack frame corrente. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile aggiungere flag, rimuovere flag, bloccare (sospendere) e sbloccare (riprendere) i thread. Le colonne seguenti vengono visualizzate nei **espressioni di controllo parallela** finestra:  
   
--   Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.  
+- Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.  
   
--   Colonna frame, in cui una freccia indica il frame selezionato.  
+- Colonna frame, in cui una freccia indica il frame selezionato.  
   
--   Colonna configurabile che consente di visualizzare il computer, il processo, la sezione, l'attività e il thread.  
+- Colonna configurabile che consente di visualizzare il computer, il processo, la sezione, l'attività e il thread.  
   
-    > [!TIP]
-    >  È necessario aprire la **l'attività parallela** finestra per visualizzare le informazioni sull'attività nel **espressioni di controllo parallela** finestra.  
+  > [!TIP]
+  >  È necessario aprire la **l'attività parallela** finestra per visualizzare le informazioni sull'attività nel **espressioni di controllo parallela** finestra.  
   
--   Il  **\<Aggiungi espressione di controllo >** colonna, in cui è possibile immettere espressioni di controllo.  
+- Il  **\<Aggiungi espressione di controllo >** colonna, in cui è possibile immettere espressioni di controllo.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Per visualizzare la finestra Espressione di controllo in parallelo  
   

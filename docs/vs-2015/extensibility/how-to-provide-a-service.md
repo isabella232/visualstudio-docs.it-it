@@ -15,12 +15,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be4e5fb7f5c5013ee9151f5db9b30d91a0894ee4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9dc7d2ef8aabab628f13ce9648e0fa5dc1f3b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845095"
 ---
 # <a name="how-to-provide-a-service"></a>Procedura: fornire un servizio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,50 +36,50 @@ Un pacchetto VSPackage può fornire servizi che è possibile usare altri pacchet
   
 #### <a name="implementing-a-service"></a>Implementazione di un servizio  
   
-1.  Creare un progetto VSIX (**File / nuovo / progetto / Visual c# / estendibilità / progetto VSIX**).  
+1. Creare un progetto VSIX (**File / nuovo / progetto / Visual c# / estendibilità / progetto VSIX**).  
   
-2.  Aggiungere al progetto un pacchetto VSPackage. Selezionare il nodo del progetto nel **Esplora soluzioni** e fare clic su **Aggiungi / nuovo elemento / elementi di Visual c# / Extensibility / pacchetto di Visual Studio**.  
+2. Aggiungere al progetto un pacchetto VSPackage. Selezionare il nodo del progetto nel **Esplora soluzioni** e fare clic su **Aggiungi / nuovo elemento / elementi di Visual c# / Extensibility / pacchetto di Visual Studio**.  
   
-3.  Per implementare un servizio, è necessario creare tre tipi:  
+3. Per implementare un servizio, è necessario creare tre tipi:  
   
-    -   Interfaccia che descrive il servizio. Molte di queste interfacce sono vuote, vale a dire, non hanno nessun metodo.  
+   - Interfaccia che descrive il servizio. Molte di queste interfacce sono vuote, vale a dire, non hanno nessun metodo.  
   
-    -   Interfaccia che descrive l'interfaccia del servizio. Questa interfaccia include i metodi da implementare.  
+   - Interfaccia che descrive l'interfaccia del servizio. Questa interfaccia include i metodi da implementare.  
   
-    -   Una classe che implementa il servizio e l'interfaccia del servizio.  
+   - Una classe che implementa il servizio e l'interfaccia del servizio.  
   
      Nell'esempio seguente viene illustrata un'implementazione di base dei tre tipi. Il costruttore della classe del servizio deve impostare il provider del servizio.  
   
-    ```csharp  
-    public class MyService : SMyService, IMyService  
-    {  
-        private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
-        private string myString;  
-        public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
-        {  
-            Trace.WriteLine(  
-                   "Constructing a new instance of MyService");  
-            serviceProvider = sp;  
-        }  
-        public void Hello()  
-        {  
-            myString = "hello";  
-        }  
-        public string Goodbye()  
-        {  
-           return "goodbye";  
-        }  
-    }  
-    public interface SMyService  
-    {  
-    }  
-    public interface IMyService  
-    {  
-        void Hello();  
-        string Goodbye();  
-    }  
+   ```csharp  
+   public class MyService : SMyService, IMyService  
+   {  
+       private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
+       private string myString;  
+       public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
+       {  
+           Trace.WriteLine(  
+                  "Constructing a new instance of MyService");  
+           serviceProvider = sp;  
+       }  
+       public void Hello()  
+       {  
+           myString = "hello";  
+       }  
+       public string Goodbye()  
+       {  
+          return "goodbye";  
+       }  
+   }  
+   public interface SMyService  
+   {  
+   }  
+   public interface IMyService  
+   {  
+       void Hello();  
+       string Goodbye();  
+   }  
   
-    ```  
+   ```  
   
 ### <a name="registering-a-service"></a>La registrazione di un servizio  
   

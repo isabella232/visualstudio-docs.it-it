@@ -9,35 +9,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f108e1385c74df7d627f35cd21e18638e50264fe
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816830"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare e cercare i manifesti dell'immagine, consentendo all'utente di modificarli in modo identico a Visual Studio. L'utente potrà modificare in background, dimensioni, DPI, contrasto elevato e altre impostazioni. Inoltre, lo strumento visualizza le informazioni di caricamento per ogni manifesto di immagini e Visualizza informazioni sull'origine per ogni immagine nel manifesto dell'immagine. Questo strumento è utile per:  
   
-1.  Diagnostica degli errori  
+1. Diagnostica degli errori  
   
-2.  Garantire che gli attributi sono impostati in modo corretto nei manifesti immagine personalizzata  
+2. Garantire che gli attributi sono impostati in modo corretto nei manifesti immagine personalizzata  
   
-3.  La ricerca delle immagini dell'immagine del catalogo di Visual Studio in modo che un'estensione di Visual Studio può usare le immagini che adatta lo stile di Visual Studio  
+3. La ricerca delle immagini dell'immagine del catalogo di Visual Studio in modo che un'estensione di Visual Studio può usare le immagini che adatta lo stile di Visual Studio  
   
- ![Immagine principale del Visualizzatore della libreria](../../extensibility/internals/media/image-library-viewer-hero.png "principale del Visualizzatore della libreria di immagini")  
+   ![Immagine principale del Visualizzatore della libreria](../../extensibility/internals/media/image-library-viewer-hero.png "principale del Visualizzatore della libreria di immagini")  
   
- **Moniker di immagini**  
+   **Moniker di immagini**  
   
- Un moniker di immagine (o moniker breve) è una coppia GUID: ID che identifica in modo univoco un asset di immagine o un asset di elenco immagini della raccolta.  
+   Un moniker di immagine (o moniker breve) è una coppia GUID: ID che identifica in modo univoco un asset di immagine o un asset di elenco immagini della raccolta.  
   
- **File manifesto di immagini**  
+   **File manifesto di immagini**  
   
- I file di immagine manifesto (.imagemanifest) sono file XML che definiscono un set di asset di immagini, i moniker che rappresentano tali asset e l'immagine reale o le immagini per rappresentare ogni asset. Manifesti dell'immagine può definire le immagini autonome o elenchi di immagini per il supporto legacy dell'interfaccia utente. Inoltre, esistono attributi che è possano impostare l'asset o le singole immagini protetti da ogni asset modificare quando e come vengono visualizzati tali asset.  
+   I file di immagine manifesto (.imagemanifest) sono file XML che definiscono un set di asset di immagini, i moniker che rappresentano tali asset e l'immagine reale o le immagini per rappresentare ogni asset. Manifesti dell'immagine può definire le immagini autonome o elenchi di immagini per il supporto legacy dell'interfaccia utente. Inoltre, esistono attributi che è possano impostare l'asset o le singole immagini protetti da ogni asset modificare quando e come vengono visualizzati tali asset.  
   
- **Schema del manifesto dell'immagine**  
+   **Schema del manifesto dell'immagine**  
   
- Un manifesto del completamento dell'immagine è simile alla seguente:  
+   Un manifesto del completamento dell'immagine è simile alla seguente:  
   
 ```xml  
 <ImageManifest>  

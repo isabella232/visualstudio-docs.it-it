@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844707"
 ---
 # <a name="switchlttgt-activity-designer"></a>Commutatore&lt;T&gt; ActivityDesigner
 L'attività <xref:System.Activities.Statements.Switch%601> valuta un'espressione specificata e viene eseguita da una raccolta di attività la cui chiave associata corrisponde al valore ottenuto dalla valutazione.  
@@ -50,11 +50,11 @@ L'attività <xref:System.Activities.Statements.Switch%601> valuta un'espressione
   
  È possibile eliminare un case in due modi.  
   
-1.  Selezionare il case ed eliminarlo.  
+1. Selezionare il case ed eliminarlo.  
   
-2.  Selezionare il pulsante destro del mouse case, per visualizzare il menu di scelta rapida e selezionare **Elimina**.  
+2. Selezionare il pulsante destro del mouse case, per visualizzare il menu di scelta rapida e selezionare **Elimina**.  
   
- Si noti che è necessario selezionare il case per eliminarlo. La selezione e la deselezione dell'attività in un case riguardano la sola attività e non il case.  
+   Si noti che è necessario selezionare il case per eliminarlo. La selezione e la deselezione dell'attività in un case riguardano la sola attività e non il case.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

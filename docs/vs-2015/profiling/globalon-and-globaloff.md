@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 477c3103ce3d0da27ee0f149065a1d58eca21a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38ed3c8396457f66fe40148216587b750c493190
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827025"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Le opzioni **GlobalOff** e **GlobalOn** di VSPerfCmd.exe consentono di sospender
   
  Le opzioni **GlobalOff** e **GlobalOn** influiscono anche sul conteggio globale Start/Stop gestito dalle funzioni API del profiler.  
   
--   **GlobalOff** imposta immediatamente il conteggio globale Start/Stop su 0 e sospendere la profilatura.  
+- **GlobalOff** imposta immediatamente il conteggio globale Start/Stop su 0 e sospendere la profilatura.  
   
--   **GlobalOn** imposta immediatamente il conteggio globale Start/Stop su 1 e riprende la profilatura.  
+- **GlobalOn** imposta immediatamente il conteggio globale Start/Stop su 1 e riprende la profilatura.  
   
- Per altre informazioni, vedere [API per strumenti di profilatura](../profiling/profiling-tools-apis.md).  
+  Per altre informazioni, vedere [API per strumenti di profilatura](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintassi  
   

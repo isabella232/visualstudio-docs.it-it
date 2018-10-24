@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831926"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Riferimenti su VSIX extension schema 2.0
 Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato del file è disciplinato da uno schema. La versione 2.0 di questo schema supporta l'aggiunta di attributi e i tipi personalizzati.  Lo schema del manifesto è estendibile. Il caricatore di manifesto ignora gli elementi XML e gli attributi che non comprende.  
@@ -162,33 +162,33 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
 ### <a name="assets-element"></a>Elemento Asset  
  Questo elemento contiene un elenco di `<Asset>` tag per ogni elemento di estensione o il contenuto esposto da questo pacchetto.  
   
--   `<Asset>` -Questo elemento contiene elementi e gli attributi seguenti:  
+- `<Asset>` -Questo elemento contiene elementi e gli attributi seguenti:  
   
-    -   `Type` -Tipo di estensione o contenuto rappresentato da questo elemento. Ciascuna `<Asset>` elemento deve avere un unico `Type`, ma più `<Asset>` elementi possono avere lo stesso `Type`. Questo attributo deve essere rappresentato come un nome completo, in base alle convenzioni dello spazio dei nomi. I tipi noti sono:  
+  - `Type` -Tipo di estensione o contenuto rappresentato da questo elemento. Ciascuna `<Asset>` elemento deve avere un unico `Type`, ma più `<Asset>` elementi possono avere lo stesso `Type`. Questo attributo deve essere rappresentato come un nome completo, in base alle convenzioni dello spazio dei nomi. I tipi noti sono:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         È possibile creare tipi personalizzati e assegnare loro nomi univoci. In fase di esecuzione all'interno di Visual Studio, il codice può enumerare e accedere a questi tipi personalizzati tramite l'API di Gestione estensioni.  
+       È possibile creare tipi personalizzati e assegnare loro nomi univoci. In fase di esecuzione all'interno di Visual Studio, il codice può enumerare e accedere a questi tipi personalizzati tramite l'API di Gestione estensioni.  
   
-    -   `Path` -il percorso relativo del file o cartella all'interno del pacchetto che contiene l'asset.  
+  - `Path` -il percorso relativo del file o cartella all'interno del pacchetto che contiene l'asset.  
     
-    -   `TargetVersion` -l'intervallo di versioni a cui si applica l'asset specificato. Usare per la spedizione di più versioni degli asset a versioni diverse di Visual Studio. Richiede Visual Studio ha effetto 2017.3 o versione successiva.
+  - `TargetVersion` -l'intervallo di versioni a cui si applica l'asset specificato. Usare per la spedizione di più versioni degli asset a versioni diverse di Visual Studio. Richiede Visual Studio ha effetto 2017.3 o versione successiva.
   
-    -   `AnyAttribute*` -Un set aperto di attributi esposti in fase di esecuzione come un dizionario di coppia nome-valore.  
+  - `AnyAttribute*` -Un set aperto di attributi esposti in fase di esecuzione come un dizionario di coppia nome-valore.  
   
-         `<AnyElement>*` -Qualsiasi contenuto strutturato è consentita tra un `<Asset>` begin ed end tag. Tutti gli elementi sono esposti come un elenco di oggetti XmlElement. Le estensioni VSIX è possono definire i metadati specifici del tipo strutturato nel file manifesto ed enumerarle in fase di esecuzione.  
+     `<AnyElement>*` -Qualsiasi contenuto strutturato è consentita tra un `<Asset>` begin ed end tag. Tutti gli elementi sono esposti come un elenco di oggetti XmlElement. Le estensioni VSIX è possono definire i metadati specifici del tipo strutturato nel file manifesto ed enumerarle in fase di esecuzione.  
   
 ### <a name="sample-manifest"></a>Manifesto di esempio  
   

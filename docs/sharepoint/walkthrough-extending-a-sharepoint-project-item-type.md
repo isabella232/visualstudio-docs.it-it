@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844515"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint
   È possibile usare la **Business Data Connectivity Model** elemento del progetto per creare un modello per il servizio di integrazione applicativa dei dati (BDC) in SharePoint. Per impostazione predefinita, quando si crea un modello utilizzando questo elemento del progetto, i dati nel modello non vengono visualizzati agli utenti. È anche necessario creare un elenco esterno in SharePoint per consentire agli utenti di visualizzare i dati.  
@@ -42,24 +42,24 @@ ms.locfileid: "42626146"
 ## <a name="prerequisites"></a>Prerequisiti  
  Sono necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:  
   
--   Le edizioni di Visual Studio, SharePoint e Microsoft Windows.  
+- Le edizioni di Visual Studio, SharePoint e Microsoft Windows.  
   
--   Oggetto [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'elemento del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Oggetto [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'elemento del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
+  Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
   
--   Il servizio di integrazione applicativa dei dati in [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Per altre informazioni, vedere [architettura di integrazione applicativa dei dati](http://go.microsoft.com/fwlink/?LinkId=177798).  
+- Il servizio di integrazione applicativa dei dati in [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Per altre informazioni, vedere [architettura di integrazione applicativa dei dati](http://go.microsoft.com/fwlink/?LinkId=177798).  
   
--   XML schema per i modelli di integrazione applicativa dei dati. Per altre informazioni, vedere [infrastruttura del modello di integrazione applicativa dei dati](http://go.microsoft.com/fwlink/?LinkId=177799).  
+- XML schema per i modelli di integrazione applicativa dei dati. Per altre informazioni, vedere [infrastruttura del modello di integrazione applicativa dei dati](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
 ## <a name="create-the-projects"></a>Creare i progetti
  Per completare questa procedura dettagliata, è necessario creare due progetti:  
   
--   Un progetto VSIX per creare il pacchetto VSIX per distribuire l'estensione di elemento di progetto.  
+- Un progetto VSIX per creare il pacchetto VSIX per distribuire l'estensione di elemento di progetto.  
   
--   Un progetto libreria di classi che implementa l'estensione di elemento di progetto.  
+- Un progetto libreria di classi che implementa l'estensione di elemento di progetto.  
   
- Avviare la procedura dettagliata mediante la creazione di progetti.  
+  Avviare la procedura dettagliata mediante la creazione di progetti.  
   
 #### <a name="to-create-the-vsix-project"></a>Per creare il progetto VSIX  
   

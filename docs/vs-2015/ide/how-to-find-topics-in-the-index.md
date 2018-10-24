@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50c19fdaeaf9842c91e5dd7e9ca1472355b1b3e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815982"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Procedura: Trovare argomenti nell'indice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ L'indice contiene un elenco di parole chiave associate agli argomenti del conten
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>Per trovare un argomento usando l'indice  
   
-1.  Nella scheda **Indice** eseguire una delle due attività seguenti:  
+1. Nella scheda **Indice** eseguire una delle due attività seguenti:  
   
-    -   Nella casella di testo specificare la parola chiave da cercare. Scrivere ad esempio "aggiorna" per trovare argomenti con parole chiave "aggiornare", "aggiornato" e "aggiornamento".  
+   - Nella casella di testo specificare la parola chiave da cercare. Scrivere ad esempio "aggiorna" per trovare argomenti con parole chiave "aggiornare", "aggiornato" e "aggiornamento".  
   
-         Facendo clic sul pulsante di filtro sopra la scheda, è possibile visualizzare tutte le voci che contengono il testo specificato o solo le voci che iniziano con il testo specificato.  
+      Facendo clic sul pulsante di filtro sopra la scheda, è possibile visualizzare tutte le voci che contengono il testo specificato o solo le voci che iniziano con il testo specificato.  
   
-        > [!NOTE]
-        >  Quando il pulsante di filtro viene visualizzato su uno sfondo più scuro con un bordo, le voci devono contenere il testo specificato. Se bordo e sfondo non sono visualizzati , le voci devono iniziare con il testo specificato.  
+     > [!NOTE]
+     >  Quando il pulsante di filtro viene visualizzato su uno sfondo più scuro con un bordo, le voci devono contenere il testo specificato. Se bordo e sfondo non sono visualizzati , le voci devono iniziare con il testo specificato.  
   
-    -   Scorrere l'indice e scegliere una parola chiave.  
+   - Scorrere l'indice e scegliere una parola chiave.  
   
      Se la parola chiave specificata è associata a un solo argomento, l'argomento viene visualizzato. In caso contrario, viene visualizzato un elenco di tutti gli argomenti associati alla parola chiave.  
   

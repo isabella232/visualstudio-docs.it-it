@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825989"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Modificare l'aspetto di un comando
 È possibile fornire feedback all'utente modificando l'aspetto di un comando. Ad esempio, è possibile che un comando in modo diverso quando non è disponibile. È possibile rendere i comandi disponibili o non, nascondere o visualizzarli, o selezionare o deselezionare li nel menu.  
   
  Per modificare l'aspetto di un comando, eseguire una di queste azioni:  
   
--   Specifica i flag appropriati nella definizione di comando nel file della tabella comandi.  
+- Specifica i flag appropriati nella definizione di comando nel file della tabella comandi.  
   
--   Usare il <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> servizio.  
+- Usare il <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> servizio.  
   
--   Implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia e modificare gli oggetti comando non elaborati.  
+- Implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia e modificare gli oggetti comando non elaborati.  
   
- La procedura seguente illustra come trovare e aggiornare l'aspetto di un comando usando il Framework di pacchetto gestito (MPF).  
+  La procedura seguente illustra come trovare e aggiornare l'aspetto di un comando usando il Framework di pacchetto gestito (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Per modificare l'aspetto di un comando di menu  
   

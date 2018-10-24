@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext | Documenti Microsoft
+title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb29d4245529e53a9313ae18638066979caab7a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad47eb92af6c9ad37bafe293e6c7392613718c30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846447"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 Restituisce il contesto del codice che rappresenta una posizione se l'operazione di rimozione di uno stack si è verificato.  
@@ -41,13 +41,13 @@ int GetUnwindCodeContext(
   
 #### <a name="parameters"></a>Parametri  
  `ppCodeContext`  
- [out] Restituisce un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto che rappresenta la posizione del contesto di codice se si è verificato uno svuotamento dello stack.  
+ [out] Restituisce un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto che rappresenta la posizione del contesto codice se si è verificato uno svuotamento dello stack.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Anche se questo metodo può restituire un contesto di codice per il percorso dopo la rimozione dello stack, non implica necessariamente che la rimozione dello stack può sono presenti nello stack frame corrente.  
+ Anche se questo metodo può restituire un contesto del codice per il percorso dopo la rimozione dello stack, ciò non significa necessariamente che la rimozione dello stack può sono presenti nello stack frame corrente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
