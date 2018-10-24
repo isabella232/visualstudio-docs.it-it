@@ -10,40 +10,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3c41c16f904077f884bc6cffcdf0ba97233a1a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6bba01c55e6e71a55895b7ebd16bb3063ed5c1f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904884"
 ---
 # <a name="schema-cache"></a>Cache degli schemi
 
-L'Editor XML fornisce una cache degli schemi situata nel *%InstallRoot%\Xml\Schemas.* directory. La cache degli schemi è globale per tutti gli utenti di un computer e include gli schemi XML standard usati per la convalida dei documenti IntelliSense e XML.
+L'Editor XML fornisce una cache degli schemi situata nella *%InstallRoot%\Xml\Schemas.* directory. La cache degli schemi è globale per tutti gli utenti di un computer e include gli schemi XML standard usati per la convalida dei documenti IntelliSense e XML.
 
-L'editor XML sono disponibili anche agli schemi presenti nella soluzione, gli schemi specificati nel **schemi** campo del documento **proprietà** finestra e gli schemi identificati dal `xsi:schemaLocation` e `xsi:noNamespaceSchemaLocation`attributi.
+L'editor XML può anche individuare gli schemi che si trova nella soluzione, gli schemi specificati nel **schemi** campo del documento **delle proprietà** finestra e gli schemi identificati dal `xsi:schemaLocation` e`xsi:noNamespaceSchemaLocation`degli attributi.
 
 Nella tabella seguente vengono descritti gli schemi installati con l'editor XML.
 
-|Nomefile|Descrizione|
-|--------------|-----------------|
-|*Catalog. xsd*|Schema per i file del catalogo schemi dell'editor XML. Per informazioni sui cataloghi degli schemi, vedere di seguito.|
-|*DotNetConfig*|Schema per i file Web. config, "http://schemas.microsoft.com/.NETConfiguration/v2.0".|
-|*MSBuild.xsd*|Schema per i file di creazione di MSBuild, "http://schemas.microsoft.com/developer/msbuild/2003".|
-|*msdata.xsd*|Schema per le annotazioni XSD aggiunte dalla classe <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata".|
-|*msxsl.xsd*|Schema per le estensioni del blocco di script Microsoft XSLT, urn:schemas-microsoft-com:xslt.|
-|*SnippetFormat.xsd*|Schema per i file XML del frammento di codice. Per esempi, vedere *%InstallDir%\VC#\Expansions*.|
-|*Soap1.1.xsd*|Schema per Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|
-|*Soap1.2.xsd*|Schema per il protocollo SOAP (Simple Object Access Protocol) 1.2.|
-|*SiteMapSchema.xsd*|Schema per il file XML sitemap ASP.NET, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|
-|*WSDL.xsd*|Schema per Web Service Description Language, http://schemas.xmlsoap.org/wsdl/.|
-|*xenc.xsd*|Schema per la crittografia XML, http://www.w3.org/2000/09/xmldsig#.|
-|*XHTML.xsd*|Schema per XHTML http://www.w3.org/1999/xhtml.|
-|*xlink.xsd*|Schema per XLink1.0, http://www.w3.org/1999/xlink.|
-|*XML.xsd*|Schema che descrive gli attributi XML: space e XML: lang, http://www.w3.org/XML/1998/namespace.|
-|*xmlsig.xsd*|Schema per le firme digitali XML http://www.w3.org/2000/09/xmldsig#.|
-|*XSDSchema*|Schema che descrive XSD stesso, http://www.w3.org/2001/XMLSchema.|
-|*XSLT*|Schema per XML le trasformazioni, http://www.w3.org/1999/XSL/Transform.|
+
+| Nomefile | Descrizione |
+|-| - |
+| *Catalog. xsd* | Schema per i file del catalogo schemi dell'editor XML. Per informazioni sui cataloghi degli schemi, vedere di seguito. |
+| *DotNetConfig* | Schema per i file Web. config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
+| *MSBuild.xsd* | Schema per i file, assicurarsi di MSBuild "<http://schemas.microsoft.com/developer/msbuild/2003>". |
+| *msdata.xsd* | Schema per le annotazioni XSD aggiunte dalla classe <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata". |
+| *msxsl.xsd* | Schema per le estensioni del blocco di script Microsoft XSLT, urn:schemas-microsoft-com:xslt. |
+| *SnippetFormat.xsd* | Schema per i file XML del frammento di codice. Per esempi, vedere *%InstallDir%\VC#\Expansions*. |
+| *Soap1.1.xsd* | Schema per Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/. |
+| *Soap1.2.xsd* | Schema per il protocollo SOAP (Simple Object Access Protocol) 1.2. |
+| *SiteMapSchema.xsd* | Schema per il file XML di mappa del sito ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
+| *WSDL.xsd* | Schema per Web Service Description Language, http://schemas.xmlsoap.org/wsdl/. |
+| *xenc.xsd* | Schema per la crittografia XML, http://www.w3.org/2000/09/xmldsig#. |
+| *XHTML.xsd* | Schema per XHTML http://www.w3.org/1999/xhtml. |
+| *xlink.xsd* | Schema per XLink 1.0, http://www.w3.org/1999/xlink. |
+| *XML.xsd* | Schema che descrive gli attributi XML: space e XML: lang, http://www.w3.org/XML/1998/namespace. |
+| *xmlsig.xsd* | Schema per le firme digitali XML http://www.w3.org/2000/09/xmldsig#. |
+| *XSDSchema* | Schema che descrive XSD stesso, http://www.w3.org/2001/XMLSchema. |
+| *XSLT* | Consente di trasformare lo schema per XML, http://www.w3.org/1999/XSL/Transform. |
 
 ## <a name="update-schemas-in-the-cache"></a>Aggiornare gli schemi nella cache
  L'editor carica la directory della cache di schema quando il package editor XML viene caricato e verifica le eventuali modifiche durante l'esecuzione. Se è stato aggiunto uno schema, esso viene caricato automaticamente in un indice di schemi noti in memoria. Se è stato rimosso uno schema, esso viene automaticamente rimosso dall'indice in memoria. Se è stato aggiornato uno schema, esso invalida automaticamente la cache degli schemi in memoria.
@@ -52,7 +53,7 @@ Nella tabella seguente vengono descritti gli schemi installati con l'editor XML.
 > Poiché la directory della cache di schema è globale, è sufficiente aggiungere qui gli schemi standard utili per tutti i progetti di Visual Studio che è possibile creare sul proprio computer.
 
 
- L'editor XML supporta inoltre un numero illimitato di file del catalogo degli schemi nella directory della cache. Per i cataloghi degli schemi è possibile scegliere altre posizioni per gli schemi che si desidera tenere sempre ben presenti nell'editor. Il *Catalog* file definisce il formato del file di catalogo ed è incluso nella directory della cache dello schema. Il *Catalog* file è il catalogo predefinito e contiene collegamenti ad altri schemi nella *% InstallDir %*. Un campione di seguito è riportato il *Catalog* file:
+ L'editor XML supporta inoltre un numero illimitato di file del catalogo degli schemi nella directory della cache. Per i cataloghi degli schemi è possibile scegliere altre posizioni per gli schemi che si desidera tenere sempre ben presenti nell'editor. Il *Catalog* file definisce il formato del file di catalogo ed è incluso nella directory della cache dello schema. Il *Catalog* file è il catalogo predefinito e contiene collegamenti ad altri schemi nel *% InstallDir %*. Di seguito è riportato un campione del *Catalog* file:
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -93,7 +94,7 @@ Nel documento catalogo può essere incluso un elemento `Catalog` che fa riferime
 ```
 
 ## <a name="localized-schemas"></a>Schemi localizzati
- In molti casi il *Catalog* file non contiene voci per gli schemi localizzati. È possibile aggiungere voci aggiuntive per il *Catalog* file che puntano a directory degli schemi localizzati.
+ In molti casi il *Catalog* file non contiene voci per gli schemi localizzati. È possibile aggiungere voci aggiuntive per il *Catalog* file che puntano alla directory degli schemi localizzati.
 
  Nell'esempio seguente è stato creato un nuovo elemento `Schema` che usa la variabile % LCID% per fare riferimento allo schema localizzato.
 
@@ -104,18 +105,18 @@ Nel documento catalogo può essere incluso un elemento `Catalog` che fa riferime
 
 ## <a name="change-the-location-of-the-schema-cache"></a>Modificare il percorso della cache dello schema
 
-È possibile personalizzare il percorso per la cache dello schema tramite il **varie** pagina Opzioni. Se si dispone di una directory di schemi preferiti, è possibile configurare l'editor in modo da usare solo questi schemi.
+È possibile personalizzare il percorso per la cache dello schema usando il **varie** pagina Opzioni. Se si dispone di una directory di schemi preferiti, è possibile configurare l'editor in modo da usare solo questi schemi.
 
 > [!NOTE]
 > Tale modifica ha effetto solo sull'utente corrente di Visual Studio.
 
 ### <a name="to-change-the-schema-cache-location"></a>Per modificare il percorso della cache degli schemi
 
-1.  Dal **strumenti** dal menu **opzioni**.
+1.  Dal **degli strumenti** dal menu **opzioni**.
 
 2.  Espandere **Editor di testo**, espandere **XML**, quindi fare clic su **varie**.
 
-3.  Fare clic su di **Sfoglia** pulsante il **schemi** campo.
+3.  Fare clic sul **esplorare** pulsante il **schemi** campo.
 
 4.  Selezionare la cartella della cache degli schemi e fare clic su **OK**.
 
