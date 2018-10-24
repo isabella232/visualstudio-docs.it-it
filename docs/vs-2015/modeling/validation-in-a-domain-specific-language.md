@@ -15,12 +15,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 75df1e1f2bbc5bc5c3bdd56b8c16f0587f18751b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950796"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
 ## <a name="running-validation"></a>Esecuzione della convalida  
  Quando un utente modifica un modello, ovvero un'istanza del linguaggio specifico di dominio, la convalida viene eseguita in seguito alle azioni seguenti:  
   
--   Il diagramma e scegliere **convalidare tutti**.  
+- Il diagramma e scegliere **convalidare tutti**.  
   
--   Fare clic sul nodo principale nella finestra di esplorazione del linguaggio DSL e selezionare **convalida tutto**  
+- Fare clic sul nodo principale nella finestra di esplorazione del linguaggio DSL e selezionare **convalida tutto**  
   
--   L'utente salva il modello.  
+- L'utente salva il modello.  
   
--   L'utente apre il modello.  
+- L'utente apre il modello.  
   
--   È anche possibile scrivere codice programma che esegue la convalida, ad esempio includendolo in un comando di menu oppure in risposta a una modifica.  
+- È anche possibile scrivere codice programma che esegue la convalida, ad esempio includendolo in un comando di menu oppure in risposta a una modifica.  
   
- Eventuali errori di convalida verranno visualizzati nei **elenco errori** finestra. L'utente può fare doppio clic su un messaggio di errore per selezionare gli elementi del modello che sono la causa dell'errore.  
+  Eventuali errori di convalida verranno visualizzati nei **elenco errori** finestra. L'utente può fare doppio clic su un messaggio di errore per selezionare gli elementi del modello che sono la causa dell'errore.  
   
 ## <a name="defining-validation-constraints"></a>Definizione dei vincoli di convalida  
  Per definire vincoli di convalida, è possibile aggiungere metodi di convalida alle classi di dominio o alle relazioni del linguaggio specifico di dominio. Durante l'esecuzione della convalida, avviata dall'utente o controllata dal programma, vengono eseguiti alcuni o tutti i metodi di convalida. Ogni metodo viene applicato a ogni istanza della propria classe e possono essere presenti diversi metodi di convalida in ogni classe.  
@@ -59,37 +59,37 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
   
 #### <a name="to-define-a-validation-constraint"></a>Per definire un vincolo di convalida  
   
-1.  Abilitare la convalida nel **editor\convalida** nodo:  
+1. Abilitare la convalida nel **editor\convalida** nodo:  
   
-    1.  Aprire **Dsl\DslDefinition.dsl**.  
+   1.  Aprire **Dsl\DslDefinition.dsl**.  
   
-    2.  In DSL Explorer espandere il **Editor** nodo e selezionare **convalida**.  
+   2.  In DSL Explorer espandere il **Editor** nodo e selezionare **convalida**.  
   
-    3.  Nella finestra Proprietà impostare il **viene utilizzato** delle proprietà per `true`. È più pratico impostare tutte queste proprietà.  
+   3.  Nella finestra Proprietà impostare il **viene utilizzato** delle proprietà per `true`. È più pratico impostare tutte queste proprietà.  
   
-    4.  Fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.  
+   4.  Fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.  
   
-2.  Scrivere le definizioni di classe parziali per una o più classi di dominio o relazioni di dominio Queste definizioni di scrittura in un nuovo file di codice nel **Dsl** progetto.  
+2. Scrivere le definizioni di classe parziali per una o più classi di dominio o relazioni di dominio Queste definizioni di scrittura in un nuovo file di codice nel **Dsl** progetto.  
   
-3.  Aggiungere questo attributo all'inizio di ogni classe:  
+3. Aggiungere questo attributo all'inizio di ogni classe:  
   
-    ```csharp  
-    [ValidationState(ValidationState.Enabled)]  
-    ```  
+   ```csharp  
+   [ValidationState(ValidationState.Enabled)]  
+   ```  
   
-    -   Per impostazione predefinita, questo attributo abiliterà inoltre la convalida per le classi derivate. Per disabilitare la convalida per una classe derivata specifica, è possibile usare `ValidationState.Disabled`.  
+   -   Per impostazione predefinita, questo attributo abiliterà inoltre la convalida per le classi derivate. Per disabilitare la convalida per una classe derivata specifica, è possibile usare `ValidationState.Disabled`.  
   
-4.  Aggiungere i metodi di convalida alle classi. Al metodo di convalida è possibile assegnare un nome qualsiasi, ma deve includere un parametro di tipo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
+4. Aggiungere i metodi di convalida alle classi. Al metodo di convalida è possibile assegnare un nome qualsiasi, ma deve includere un parametro di tipo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
-     Deve inoltre essere preceduto da uno o più attributi `ValidationMethod`:  
+    Deve inoltre essere preceduto da uno o più attributi `ValidationMethod`:  
   
-    ```csharp  
-    [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
-    ```  
+   ```csharp  
+   [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
+   ```  
   
-     Gli attributi ValidationCategories indicano quando viene eseguito il metodo.  
+    Gli attributi ValidationCategories indicano quando viene eseguito il metodo.  
   
- Ad esempio:  
+   Ad esempio:  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -132,21 +132,21 @@ public partial class ParentsHaveChildren
   
  Notare gli aspetti seguenti su questo codice:  
   
--   È possibile aggiungere metodi di convalida a classi di dominio o relazioni di dominio. Il codice per questi tipi è nel **Dsl\Generated Code\Domain\*cs**.  
+- È possibile aggiungere metodi di convalida a classi di dominio o relazioni di dominio. Il codice per questi tipi è nel **Dsl\Generated Code\Domain\*cs**.  
   
--   Ogni metodo di convalida viene applicato a ogni istanza delle relative classi e sottoclassi. Nel caso di una relazione di dominio ogni istanza è un collegamento tra due elementi del modello.  
+- Ogni metodo di convalida viene applicato a ogni istanza delle relative classi e sottoclassi. Nel caso di una relazione di dominio ogni istanza è un collegamento tra due elementi del modello.  
   
--   I metodi di convalida non vengono applicati in qualsiasi ordine specificato e ogni metodo non viene applicato alle istanze della propria classe in qualsiasi ordine prevedibile.  
+- I metodi di convalida non vengono applicati in qualsiasi ordine specificato e ogni metodo non viene applicato alle istanze della propria classe in qualsiasi ordine prevedibile.  
   
--   È in genere preferibile evitare che un metodo di convalida aggiorni il contenuto dell'archivio perché potrebbe causare risultati incoerenti. Il metodo deve invece segnalare eventuali errori chiamando `context.LogError`, `LogWarning` o `LogInfo`.  
+- È in genere preferibile evitare che un metodo di convalida aggiorni il contenuto dell'archivio perché potrebbe causare risultati incoerenti. Il metodo deve invece segnalare eventuali errori chiamando `context.LogError`, `LogWarning` o `LogInfo`.  
   
--   Nella chiamata a LogError è possibile fornire un elenco di elementi di modello o collegamenti di relazione che verranno selezionati quando l'utente fa doppio clic sul messaggio di errore.  
+- Nella chiamata a LogError è possibile fornire un elenco di elementi di modello o collegamenti di relazione che verranno selezionati quando l'utente fa doppio clic sul messaggio di errore.  
   
--   Per informazioni su come leggere il modello nel codice programma, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+- Per informazioni su come leggere il modello nel codice programma, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- L'esempio si applica al seguente modello di dominio. La relazione ParentsHaveChildren include ruoli denominati Child e Parent.  
+  L'esempio si applica al seguente modello di dominio. La relazione ParentsHaveChildren include ruoli denominati Child e Parent.  
   
- ![Diagramma di definizione DSL &#45; modello di albero genealogico](../modeling/media/familyt-person.png "FamilyT_Person")  
+  ![Diagramma di definizione DSL &#45; modello di albero genealogico](../modeling/media/familyt-person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>Categorie di convalida  
  Nell'attributo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> viene specificato quando eseguire il metodo di convalida.  
@@ -202,7 +202,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
   
  Se si imposta la molteplicità di un ruolo di una relazione di dominio su 1..* o 1..1, ma l'utente non crea un collegamento di questa relazione, verrà visualizzato un messaggio di errore di convalida.  
   
- Ad esempio, se il linguaggio DSL con le classi Person e Town (città) e una relazione PersonLivesInTown con una relazione **1..\***  presso il ruolo Town (città), quindi per ogni persona che non dispone di alcun Town (città), un messaggio di errore verrà visualizzato.  
+ Ad esempio, se il linguaggio DSL con le classi Person e Town (città) e una relazione PersonLivesInTown con una relazione **1..\\** * presso il ruolo Town (città), quindi per ogni persona che non dispone di alcun Town (città), un messaggio di errore verrà visualizzato.  
   
 ## <a name="running-validation-from-program-code"></a>Esecuzione della convalida dal codice programma  
  È possibile eseguire la convalida creando o accedendo a un oggetto ValidationController. Se si vuole che gli errori vengano visualizzati nella finestra degli errori, usare il controller ValidationController allegato al documento DocData del diagramma. Ad esempio, se si intende scrivere un comando di menu, `CurrentDocData.ValidationController` è disponibile nella classe del set di comandi:  

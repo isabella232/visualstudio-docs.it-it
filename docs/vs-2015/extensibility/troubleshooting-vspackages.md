@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949311"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Per risolvere i problemi di un pacchetto VSPackage mancano o una delle relative dipendenze  
   
-1.  Per codice gestito, assicurarsi che i percorsi di riferimento siano corretti.  
+1. Per codice gestito, assicurarsi che i percorsi di riferimento siano corretti.  
   
-    1.  Scegliere **Proprietà** dal menu **Progetto**.  
+   1.  Scegliere **Proprietà** dal menu **Progetto**.  
   
-    2.  Selezionare il **riferimenti** scheda le **pagine delle proprietà** nella finestra di dialogo e assicurarsi che tutti i percorsi siano corretti. In alternativa, è possibile usare la **Visualizzatore oggetti** per cercare gli oggetti di riferimento.  
+   2.  Selezionare il **riferimenti** scheda le **pagine delle proprietà** nella finestra di dialogo e assicurarsi che tutti i percorsi siano corretti. In alternativa, è possibile usare la **Visualizzatore oggetti** per cercare gli oggetti di riferimento.  
   
-         Per codice gestito, è possibile usare la [Fuslogvw.exe (Visualizzatore registro associazione Assembly)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) per visualizzare i dettagli di caricamenti di assembly non riuscita.  
+        Per codice gestito, è possibile usare la [Fuslogvw.exe (Visualizzatore registro associazione Assembly)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) per visualizzare i dettagli di caricamenti di assembly non riuscita.  
   
-2.  Per codice non gestito, trovare il CLSID del pacchetto VSPackage nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nodo del Registro di sistema CLSID:  
+2. Per codice non gestito, trovare il CLSID del pacchetto VSPackage nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nodo del Registro di sistema CLSID:  
   
-     Studio HKLM\Software\Microsoft\Visual\\*\<versione >* \CLSID  
+    Studio HKLM\Software\Microsoft\Visual\\*\<versione >* \CLSID  
   
- Assicurarsi che la voce InprocServer32 abbia il percorso corretto della dll VSPackage.  
+   Assicurarsi che la voce InprocServer32 abbia il percorso corretto della dll VSPackage.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pacchetti VSPackage](../extensibility/internals/vspackages.md)

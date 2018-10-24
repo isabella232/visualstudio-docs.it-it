@@ -17,12 +17,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 59d0de3dd53d7d9ab3a54fc11eb50666d39dfdc7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f79fb0ac4945253f1a10ce98a7e1ed17eaa6de63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950420"
 ---
 # <a name="unit-test-your-code"></a>Eseguire unit test del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Gli unit test rappresentano per sviluppatori e tester un modo rapido per verific
   
  Gli strumenti di unit test includono:  
   
-1.  **Esplora test.** Esplora test consente di eseguire unit test e visualizzare i relativi risultati. Esplora test può utilizzare qualsiasi framework per unit test, incluso un framework di terze parti provvisto di un apposito adapter.  
+1. **Esplora test.** Esplora test consente di eseguire unit test e visualizzare i relativi risultati. Esplora test può utilizzare qualsiasi framework per unit test, incluso un framework di terze parti provvisto di un apposito adapter.  
   
-2.  **Framework per unit test di Microsoft per codice gestito.** Il framework per unit test di Microsoft per il codice gestito viene installato con Visual Studio e fornisce un framework per testare il codice .NET.  
+2. **Framework per unit test di Microsoft per codice gestito.** Il framework per unit test di Microsoft per il codice gestito viene installato con Visual Studio e fornisce un framework per testare il codice .NET.  
   
-3.  **Framework per unit test di Microsoft per C++.** Il framework per unit test di Microsoft per C++ viene installato con Visual Studio e fornisce un framework per testare il codice nativo.  
+3. **Framework per unit test di Microsoft per C++.** Il framework per unit test di Microsoft per C++ viene installato con Visual Studio e fornisce un framework per testare il codice nativo.  
   
-4.  **Strumenti di code coverage.** È possibile determinare la quantità di codice del prodotto sottoposta agli unit test da un comando in Esplora test.  
+4. **Strumenti di code coverage.** È possibile determinare la quantità di codice del prodotto sottoposta agli unit test da un comando in Esplora test.  
   
-5.  **Framework di isolamento Microsoft Fakes.** Il framework di isolamento Microsoft Fakes può creare classi e metodi sostitutivi per il codice di sistema e di produzione che creano le dipendenze nel codice sottoposto a test. L'implementazione di delegati falsi per una funzione consente di controllare il comportamento e l'output dell'oggetto di dipendenza.  
+5. **Framework di isolamento Microsoft Fakes.** Il framework di isolamento Microsoft Fakes può creare classi e metodi sostitutivi per il codice di sistema e di produzione che creano le dipendenze nel codice sottoposto a test. L'implementazione di delegati falsi per una funzione consente di controllare il comportamento e l'output dell'oggetto di dipendenza.  
   
- È anche possibile creare [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) che esplorano il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni branch condizionale nel codice.  
+   È anche possibile creare [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) che esplorano il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni branch condizionale nel codice.  
   
 ## <a name="key-tasks"></a>Attività chiave  
  Usare gli argomenti seguenti per la comprensione e la creazione di unit test:  
