@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bf0d3885f9dc4e4360b8516bd13a62cfbea952
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815741"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicare un'estensione di Visual Studio
 
@@ -39,7 +39,7 @@ Questo articolo usa un'estensione VSPackage predefinito, ma i passaggi sono vali
 
 1. Aggiornare l'estensione *vsixmanifest* con le informazioni corrette sul nome del prodotto, autore e versione.
 
-  ![Aggiorna estensione vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![Aggiorna estensione vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. Compilare l'estensione **rilascio** modalità. L'estensione è ora fornita come un progetto VSIX nella cartella \bin\Release.
 
@@ -67,7 +67,7 @@ Questo articolo usa un'estensione VSPackage predefinito, ma i passaggi sono vali
 
 5. Fare clic su **pubblicare estensioni**.  Questa opzione si passa alla pagina di gestione per tutte le estensioni. Se non hai un account editore, viene chiesto di crearne uno in questo momento.
 
-  ![Caricare in Marketplace](media/upload-to-marketplace.png)
+   ![Caricare in Marketplace](media/upload-to-marketplace.png)
 
 6. Scegliere il server di pubblicazione da usare per caricare l'estensione. È possibile modificare i server di pubblicazione facendo clic sui nomi di server di pubblicazione elencati a sinistra. Fare clic su **nuova estensione** e selezionare **Visual Studio**.
 
@@ -85,29 +85,29 @@ Questo articolo usa un'estensione VSPackage predefinito, ma i passaggi sono vali
     
    * **Logo** che viene usato per l'estensione. Questo logo viene popolato automaticamente dal *vsixmanifest* file se specificato.
     
-    * **Descrizione breve** delle funzionalità dell'estensione. Questa descrizione viene popolato automaticamente dal *vsixmanifest* file.
+     * **Descrizione breve** delle funzionalità dell'estensione. Questa descrizione viene popolato automaticamente dal *vsixmanifest* file.
     
-    * **Panoramica** è un buon punto da includere le schermate e informazioni dettagliate sulla funzione associata l'estensione.
+     * **Panoramica** è un buon punto da includere le schermate e informazioni dettagliate sulla funzione associata l'estensione.
     
-    * **Le versioni di Visual Studio supportate** consente di scegliere quali versioni di Visual Studio funzionalità sarà disponibile l'estensione. L'estensione viene installata solo per tali versioni.
+     * **Le versioni di Visual Studio supportate** consente di scegliere quali versioni di Visual Studio funzionalità sarà disponibile l'estensione. L'estensione viene installata solo per tali versioni.
     
-    * * * Supportato edition consente di scegliere quali edizioni di Visual Studio sarà disponibile l'estensione di Visual Studio. L'estensione viene installata solo per queste edizioni.
+     * * * Supportato edition consente di scegliere quali edizioni di Visual Studio sarà disponibile l'estensione di Visual Studio. L'estensione viene installata solo per queste edizioni.
     
-    * **Tipo**. Il tipo più comune delle estensioni sono **strumenti**.
+     * **Tipo**. Il tipo più comune delle estensioni sono **strumenti**.
     
-    * **Categorie**. Selezionare un massimo di tre che sono una soluzione ottimale per l'estensione.
+     * **Categorie**. Selezionare un massimo di tre che sono una soluzione ottimale per l'estensione.
     
-    * **I tag** sono parole chiave che consentono agli utenti di trovare l'estensione. I tag consentono di aumentare la rilevanza di ricerca delle estensioni nel Marketplace.
+     * **I tag** sono parole chiave che consentono agli utenti di trovare l'estensione. I tag consentono di aumentare la rilevanza di ricerca delle estensioni nel Marketplace.
     
-    * **Categoria di prezzi** è il costo dell'estensione.
+     * **Categoria di prezzi** è il costo dell'estensione.
     
-    * **Repository del codice sorgente** consente di condividere un collegamento al codice sorgente con la community.
+     * **Repository del codice sorgente** consente di condividere un collegamento al codice sorgente con la community.
     
-    * **Consenti domande e risposte per l'estensione** consente agli utenti di lasciare domande nella pagina di voce di estensione.
+     * **Consenti domande e risposte per l'estensione** consente agli utenti di lasciare domande nella pagina di voce di estensione.
 
 9. Fare clic su **Salva e carica**. Pagina Gestisci visualizzata questa opzione di nuovo il server di pubblicazione. L'estensione non è ancora stata pubblicata. Per pubblicare l'estensione, fare clic sull'estensione e selezionare **Rendi pubblico**. È possibile visualizzare come l'estensione sarà simile in Marketplace, selezionando **Visualizza l'estensione**. Per i numeri di acquisizione, fare clic su **report**. Per apportare modifiche all'estensione, fare clic su **modifica**.
 
-  ![Menu dell'estensione movimento](media/extension-entry-menu.png)
+   ![Menu dell'estensione movimento](media/extension-entry-menu.png)
 
 10. Dopo aver fatto clic **Rendi pubblico**, l'estensione è ora pubblica. Visual Studio Marketplace per l'estensione di ricerca.
 
@@ -119,17 +119,17 @@ Marketplace supporta la concessione di autorizzazioni aggiuntive agli utenti per
 
 2. Selezionare **membri** e fare clic su **Add**.
 
-  ![Aggiungere altro utente](media/add-users.png)
+   ![Aggiungere altro utente](media/add-users.png)
 
 3. È quindi possibile specificare l'indirizzo di posta elettronica dell'utente che si desidera aggiungere e concedere il corretto livello di accesso nel **selezionare un ruolo**.  È possibile scegliere una delle opzioni seguenti:
 
-  * **Creatore**: l'utente può pubblicare estensioni, ma non è possibile visualizzare o gestire estensioni pubblicate da altri utenti.
+   * **Creatore**: l'utente può pubblicare estensioni, ma non è possibile visualizzare o gestire estensioni pubblicate da altri utenti.
   
-  * **Lettore**: l'utente può visualizzare le estensioni, ma non è possibile pubblicare o gestire le estensioni.
+   * **Lettore**: l'utente può visualizzare le estensioni, ma non è possibile pubblicare o gestire le estensioni.
   
-  * **Collaboratore**: l'utente può pubblicare e gestire le estensioni, ma non è possibile modificare le impostazioni di pubblicazione o gestire l'accesso.
+   * **Collaboratore**: l'utente può pubblicare e gestire le estensioni, ma non è possibile modificare le impostazioni di pubblicazione o gestire l'accesso.
   
-  * **Proprietario**: l'utente può pubblicare e gestire le estensioni, modificare le impostazioni di pubblicazione e gestire l'accesso.
+   * **Proprietario**: l'utente può pubblicare e gestire le estensioni, modificare le impostazioni di pubblicazione e gestire l'accesso.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installare l'estensione da Visual Studio Marketplace
 

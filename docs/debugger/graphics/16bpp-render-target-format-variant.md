@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832889"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>eseguire il rendering di destinazione variante del formato di 16 bpp
 Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazioni di rendering e i buffer nascosti.  
@@ -43,9 +43,9 @@ Le applicazioni che fanno parte di una catena di scambio hanno un formato di buf
 2. Copiare la destinazione di rendering nel buffer nascosto della catena di scambio disegnando una quad a schermo intero con la destinazione di rendering come trama di origine.
 3. Chiamare Present sulla catena di scambio.
 
- Se questa strategia consente di salvare più larghezza di banda usata dalla copia di destinazione di rendering per il buffer nascosto della catena di scambio, le prestazioni di rendering sono stata migliorata.
+   Se questa strategia consente di salvare più larghezza di banda usata dalla copia di destinazione di rendering per il buffer nascosto della catena di scambio, le prestazioni di rendering sono stata migliorata.
 
- Le architetture GPU che usano tecniche di rendering possono visualizzare i vantaggi significativi delle prestazioni utilizzando un formato di buffer di frame di 16 bit per pixel. Questo miglioramento è perché una parte maggiore del buffer di frame può adattarsi alla cache del buffer di ogni riquadro frame locale. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.  
+   Le architetture GPU che usano tecniche di rendering possono visualizzare i vantaggi significativi delle prestazioni utilizzando un formato di buffer di frame di 16 bit per pixel. Questo miglioramento è perché una parte maggiore del buffer di frame può adattarsi alla cache del buffer di ogni riquadro frame locale. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.  
   
 ## <a name="remarks"></a>Note  
  Il formato della destinazione di rendering viene reimpostato su DXGI_FORMAT_B5G6R5_UNORM a ogni chiamata al metodo `ID3D11Device::CreateTexture2D` che crea una destinazione di rendering. In particolare, il formato viene sovrascritto quando l'oggetto D3D11_TEXTURE2D_DESC passato a pDesc descrive una destinazione di rendering, ovvero:  

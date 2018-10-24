@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818328"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guida introduttiva: Eseguire il debug di JavaScript con la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  La finestra Console JavaScript ti permette di:  
   
--   Inviare oggetti, valori e messaggi dalla tua app alla finestra della console.  
+- Inviare oggetti, valori e messaggi dalla tua app alla finestra della console.  
   
--   Visualizzare e modificare i valori delle variabili locali e globali nell'app in esecuzione.  
+- Visualizzare e modificare i valori delle variabili locali e globali nell'app in esecuzione.  
   
--   Visualizzare visualizzatori degli oggetti.  
+- Visualizzare visualizzatori degli oggetti.  
   
--   Eseguire codice JavaScript all'interno del contesto di script corrente.  
+- Eseguire codice JavaScript all'interno del contesto di script corrente.  
   
--   Visualizzare errori ed eccezioni JavaScript, oltre alle eccezioni relative a Document Object Model (DOM) e Windows Runtime.  
+- Visualizzare errori ed eccezioni JavaScript, oltre alle eccezioni relative a Document Object Model (DOM) e Windows Runtime.  
   
--   Eseguire altre attività, come cancellare lo schermo. Per un elenco completo di comandi, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md) .  
+- Eseguire altre attività, come cancellare lo schermo. Per un elenco completo di comandi, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md) .  
   
- In questo argomento  
+  In questo argomento  
   
--   [Debug mediante la finestra Console JavaScript](#InteractiveConsole)  
+- [Debug mediante la finestra Console JavaScript](#InteractiveConsole)  
   
--   [Debug interattivo e modalità di interruzione](#InteractiveDebuggingBreakMode)  
+- [Debug interattivo e modalità di interruzione](#InteractiveDebuggingBreakMode)  
   
--   [Modalità a riga singola e modalità multiriga nella finestra Console JavaScript](#SinglelineMultilineMode)  
+- [Modalità a riga singola e modalità multiriga nella finestra Console JavaScript](#SinglelineMultilineMode)  
   
--   [Passaggio a un contesto di esecuzione di script diverso](#Switching)  
+- [Passaggio a un contesto di esecuzione di script diverso](#Switching)  
   
 > [!TIP]
 >  Se la finestra Console JavaScript è chiusa, scegliere **Debug**>**Finestre** > **Console JavaScript** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  

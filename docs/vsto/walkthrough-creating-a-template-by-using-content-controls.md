@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833187"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Procedura dettagliata: Creare un modello mediante controlli contenuto
   Questa procedura dettagliata mostra come creare una personalizzazione a livello di documento che usa i controlli contenuto per creare contenuti strutturati e riutilizzabili in un modello di Microsoft Office Word.  
@@ -35,17 +35,17 @@ ms.locfileid: "35672863"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Creazione di una tabella contenente i controlli contenuto in un modello di Word in fase di progettazione.  
+- Creazione di una tabella contenente i controlli contenuto in un modello di Word in fase di progettazione.  
   
--   Popolamento a livello di codice di un controllo contenuto della casella combinata e di un controllo contenuto dell'elenco a discesa.  
+- Popolamento a livello di codice di un controllo contenuto della casella combinata e di un controllo contenuto dell'elenco a discesa.  
   
--   Impedire agli utenti di modificare una tabella specificata.  
+- Impedire agli utenti di modificare una tabella specificata.  
   
--   Aggiunta di tabelle alla raccolta di blocchi predefiniti di un modello.  
+- Aggiunta di tabelle alla raccolta di blocchi predefiniti di un modello.  
   
--   Creazione di un controllo contenuto che visualizza i blocchi predefiniti disponibili nel modello.  
+- Creazione di un controllo contenuto che visualizza i blocchi predefiniti disponibili nel modello.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -68,31 +68,31 @@ ms.locfileid: "35672863"
   
 ### <a name="to-create-the-employee-table"></a>Per creare la tabella dei dipendenti  
   
-1.  Nel modello di Word ospitato nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, sulla barra multifunzione, fare clic sui **Inserisci** scheda.  
+1. Nel modello di Word ospitato nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, sulla barra multifunzione, fare clic sui **Inserisci** scheda.  
   
-2.  Nel **tabelle** gruppo, fare clic su **tabella**e inserire una tabella con due colonne e quattro righe.  
+2. Nel **tabelle** gruppo, fare clic su **tabella**e inserire una tabella con due colonne e quattro righe.  
   
-3.  Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:  
+3. Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:  
   
-    ||  
-    |-|  
-    |**Nome del dipendente**|  
-    |**Data di assunzione**|  
-    |**Titolo**|  
-    |**Immagine**|  
+   ||  
+   |-|  
+   |**Nome del dipendente**|  
+   |**Data di assunzione**|  
+   |**Titolo**|  
+   |**Immagine**|  
   
-4.  Fare clic nella prima cella nella seconda colonna (accanto a **Employee Name**).  
+4. Fare clic nella prima cella nella seconda colonna (accanto a **Employee Name**).  
   
-5.  Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .  
+5. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .  
   
-    > [!NOTE]  
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Nel **controlli** gruppo, fare clic sui **testo** pulsante ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>alla prima cella.  
+6. Nel **controlli** gruppo, fare clic sui **testo** pulsante ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>alla prima cella.  
   
-7.  Fare clic sulla seconda cella nella seconda colonna (accanto a **Data assunzione**).  
+7. Fare clic sulla seconda cella nella seconda colonna (accanto a **Data assunzione**).  
   
-8.  Nel **controlli** gruppo, fare clic sui **Date Picker** pulsante ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> alla seconda cella.  
+8. Nel **controlli** gruppo, fare clic sui **Date Picker** pulsante ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> alla seconda cella.  
   
 9. Fare clic sulla terza cella della seconda colonna (accanto a **titolo**).  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35672863"
   
 ### <a name="to-create-the-customer-feedback-table"></a>Per creare una tabella dei suggerimenti dei clienti  
   
-1.  Nel modello di Word, fare clic nella riga dopo la tabella dei dipendenti aggiunta in precedenza e premere **invio** per aggiungere un nuovo paragrafo.  
+1. Nel modello di Word, fare clic nella riga dopo la tabella dei dipendenti aggiunta in precedenza e premere **invio** per aggiungere un nuovo paragrafo.  
   
-2.  Sulla barra multifunzione, fare clic sui **Inserisci** scheda.  
+2. Sulla barra multifunzione, fare clic sui **Inserisci** scheda.  
   
-3.  Nel **tabelle** gruppo, fare clic su **tabella**e inserire una tabella con due colonne e tre righe.  
+3. Nel **tabelle** gruppo, fare clic su **tabella**e inserire una tabella con due colonne e tre righe.  
   
-4.  Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:  
+4. Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:  
   
-    ||  
-    |-|  
-    |**Nome del cliente**|  
-    |**Valutazione soddisfazione**|  
-    |**Commenti**|  
+   ||  
+   |-|  
+   |**Nome del cliente**|  
+   |**Valutazione soddisfazione**|  
+   |**Commenti**|  
   
-5.  Fare clic nella prima cella della seconda colonna (accanto a **Customer Name**).  
+5. Fare clic nella prima cella della seconda colonna (accanto a **Customer Name**).  
   
-6.  Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .  
+6. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .  
   
-7.  Nel **controlli** gruppo, fare clic sui **testo** pulsante ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>alla prima cella.  
+7. Nel **controlli** gruppo, fare clic sui **testo** pulsante ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>alla prima cella.  
   
-8.  Fare clic nella seconda cella della seconda colonna (accanto a **valutazione soddisfazione**).  
+8. Fare clic nella seconda cella della seconda colonna (accanto a **valutazione soddisfazione**).  
   
 9. Nel **controlli** gruppo, fare clic sul **elenco a discesa** pulsante ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> alla seconda cella.  
   
@@ -142,7 +142,7 @@ ms.locfileid: "35672863"
   
 1.  Nelle **Esplora soluzioni**, fare doppio clic su **ThisDocument.cs** oppure **ThisDocument. vb**, quindi fare clic su **Visualizza codice**.  
   
-2.  Aggiungere il codice seguente alla classe `ThisDocument`. Questo codice dichiara diversi oggetti che verranno usati più avanti nella procedura dettagliata.  
+2.  Aggiungere il codice seguente alla classe `ThisDocument` . Questo codice dichiara diversi oggetti che verranno usati più avanti nella procedura dettagliata.  
   
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  

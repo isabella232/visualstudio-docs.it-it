@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 865a33e181d761665dbe2e44976f171a2b60d433
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818679"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Procedura: a livello di codice aggiungere righe e colonne alle tabelle di Word
   In una tabella di Microsoft Office Word le celle sono organizzate in righe e colonne. È possibile usare il metodo <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Rows> per aggiungere righe alla tabella e il metodo <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Columns> per aggiungere colonne.  
@@ -32,15 +32,15 @@ ms.locfileid: "35255889"
 ## <a name="document-level-customization-examples"></a>Esempi di personalizzazione a livello di documento  
  Gli esempi di codice seguenti possono essere usati in una personalizzazione a livello di documento. Per usare questi esempi, eseguirli dalla classe `ThisDocument` nel progetto. Gli esempi presuppongono che il documento associato alla personalizzazione contenga già almeno una tabella.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  Questo codice viene eseguito solo in progetti creati usando uno dei modelli di progetto seguenti:  
->   
-> -   Documento di Word 2013  
-> -   Modello di Word 2013  
-> -   Documento di Word 2010  
-> -   Modello di Word 2010  
->   
->  Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento per la **Interop** assembly, quindi è necessario usare le classi da tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+> 
+> - Documento di Word 2013  
+> - Modello di Word 2013  
+> - Documento di Word 2010  
+> - Modello di Word 2010  
+> 
+>   Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento per la **Interop** assembly, quindi è necessario usare le classi da tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Per aggiungere una riga a una tabella  
   

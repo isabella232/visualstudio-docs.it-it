@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cca40c194db476558ff14b5c92a6919c15d204a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824326"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separare set di dati e TableAdapter in progetti diversi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,29 +42,29 @@ I dataset tipizzati sono stati migliorati in modo che il [TableAdapter](http://m
   
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Per separare il set di dati in un progetto diverso  
   
-1.  Aprire una soluzione che contiene un set di dati (file con estensione XSD).  
+1. Aprire una soluzione che contiene un set di dati (file con estensione XSD).  
   
-    > [!NOTE]
-    >  Se la soluzione non contiene il progetto in cui si desidera separare il codice di set di dati, creare il progetto oppure aggiungere un progetto esistente alla soluzione.  
+   > [!NOTE]
+   >  Se la soluzione non contiene il progetto in cui si desidera separare il codice di set di dati, creare il progetto oppure aggiungere un progetto esistente alla soluzione.  
   
-2.  Fare doppio clic su un file di set di dati tipizzato (un file con estensione XSD) in **Esplora soluzioni** per aprire il dataset nella cache le **Progettazione Dataset**.  
+2. Fare doppio clic su un file di set di dati tipizzato (un file con estensione XSD) in **Esplora soluzioni** per aprire il dataset nella cache le **Progettazione Dataset**.  
   
-3.  Selezionare un'area vuota del **Progettazione Dataset**.  
+3. Selezionare un'area vuota del **Progettazione Dataset**.  
   
-4.  Nel **delle proprietà** finestra, individuare il **DataSetProject** nodo.  
+4. Nel **delle proprietà** finestra, individuare il **DataSetProject** nodo.  
   
-5.  Nel **DataSetProject** elencare, selezionare il nome del progetto in cui si desidera generare il codice del set di dati.  
+5. Nel **DataSetProject** elencare, selezionare il nome del progetto in cui si desidera generare il codice del set di dati.  
   
-     Dopo aver selezionato il progetto in cui si desidera generare il codice del set di dati, il **DataSet File** proprietà viene popolata con un nome file predefinito. Se necessario, è possibile modificare questo nome. Inoltre, se si desidera generare il codice del set di dati in una directory specifica, è possibile impostare il **cartella del progetto** proprietà sul nome di una cartella.  
+    Dopo aver selezionato il progetto in cui si desidera generare il codice del set di dati, il **DataSet File** proprietà viene popolata con un nome file predefinito. Se necessario, è possibile modificare questo nome. Inoltre, se si desidera generare il codice del set di dati in una directory specifica, è possibile impostare il **cartella del progetto** proprietà sul nome di una cartella.  
   
-    > [!NOTE]
-    >  Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.  
+   > [!NOTE]
+   >  Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.  
   
-6.  Salvare il set di dati.  
+6. Salvare il set di dati.  
   
-     Il codice di set di dati viene generato nel progetto selezionato nel **DataSetProject** proprietà e il **TableAdapter** codice viene generato nel progetto corrente.  
+    Il codice di set di dati viene generato nel progetto selezionato nel **DataSetProject** proprietà e il **TableAdapter** codice viene generato nel progetto corrente.  
   
- Per impostazione predefinita, dopo aver separato il set di dati e `TableAdapter` code, il risultato è un file di classe discreti in ogni progetto. Il progetto originale include un file denominato NomeDataset.Designer.vb (o NomeDataset.Designer.cs) che contiene il `TableAdapter` codice. Il progetto che è designato nel **DataSetProject** proprietà dispone di un file denominato NomeDataset (o NomeDataset) che contiene il codice di set di dati.  
+   Per impostazione predefinita, dopo aver separato il set di dati e `TableAdapter` code, il risultato è un file di classe discreti in ogni progetto. Il progetto originale include un file denominato NomeDataset.Designer.vb (o NomeDataset.Designer.cs) che contiene il `TableAdapter` codice. Il progetto che è designato nel **DataSetProject** proprietà dispone di un file denominato NomeDataset (o NomeDataset) che contiene il codice di set di dati.  
   
 > [!NOTE]
 >  Per visualizzare il file di classe generata, selezionare il set di dati o `TableAdapter` progetto. Quindi, nella **Esplora soluzioni**, selezionare **Mostra tutti i file** .  

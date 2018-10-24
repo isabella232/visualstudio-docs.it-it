@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7890f5c1db26616ec1041b202a3863d1fbfae20e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845452"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico tramite l'Analizzatore test di carico
 
@@ -44,7 +44,7 @@ Trovare colli di bottiglia, identificare errori e misurare i miglioramenti dell'
 ## <a name="tasks"></a>Attività
 
 |Attività|Argomenti correlati|
-|-----------|-----------------------|
+|-|-|
 |**Accesso ai risultati del test di carico:** quando si esegue un test di carico dall'Editor test di carico, i risultati del test vengono aperti automaticamente e il test di carico in esecuzione viene visualizzato nell'**Analizzatore test di carico**.|-   [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)|
 |**Aggiungere note di analisi al test di carico:** è possibile aggiungere commenti al test di carico quando si conduce l'analisi. I commenti vengono archiviati in modo permanente, insieme al risultato del test di carico. La descrizione immessa viene visualizzata anche nella colonna **Descrizione** associata al test di carico nella finestra di dialogo **Apri e gestisci risultati test di carico** nell'Editor test di carico.<br /><br /> Per altre informazioni, vedere [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> I commenti vengono inoltre visualizzati quando si crea un rapporto di Excel per i risultati del test di carico.<br /><br /> Per altre informazioni, vedere [Creazione di report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md).|-   [Procedura: Aggiungere commenti mentre si analizza un test di carico completato](../test/how-to-add-comments-on-a-completed-load-test.md)|
 |**Analisi dei risultati del test di carico:** dopo l'accesso ai dati dell'esecuzione del test di carico, è possibile analizzare i dati risultanti. È possibile visualizzare il riepilogo del test di carico per comprendere rapidamente i risultati. Nel riepilogo dei test di carico vengono riportati i risultati principali in un formato compatto e di agevole lettura.<br /><br /> Il riepilogo può anche essere stampato. per comunicare più agevolmente i risultati dei test di carico agli stakeholder.<br /><br /> È possibile analizzare i dettagli dei risultati del test di carico utilizzando i grafici e le tabelle nei risultati. Le tabelle disponibili sono le seguenti: **Errori**, **Pagine**, **Richieste**, **Traccia SQL**, **Test**, **Soglie** e **Transazioni**.|-   [Cenni preliminari sul riepilogo dei risultati dei test di carico](../test/load-test-results-summary-overview.md)<br />-   [Procedura: Visualizzare la risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [Analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|

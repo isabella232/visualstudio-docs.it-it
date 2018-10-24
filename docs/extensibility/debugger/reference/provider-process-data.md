@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA | Documenti Microsoft
+title: PROVIDER_PROCESS_DATA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b1b5d67faea0ce5c1c2a56b3f411cd4f947067
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 789385ae229214beeb6c2ab9be90a964127e5e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819732"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 Questa struttura fornisce informazioni sui processi in esecuzione in un computer.  
@@ -54,7 +54,7 @@ public struct PROVIDER_PROCESS_DATA {
  Diverso da zero (`TRUE`) se il [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger è in esecuzione, zero (`FALSE`) in caso contrario.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura viene passata per il [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) (metodo) in cui viene compilato.  
+ Questa struttura viene passata per il [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) in cui viene compilato nel metodo.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

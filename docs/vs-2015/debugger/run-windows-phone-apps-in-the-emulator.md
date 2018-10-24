@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e17d1af4af50981b1c816d52444f3028162345c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5027c9d40d37aeaee6186662567a009fb051900e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812610"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Eseguire app di Windows Phone nell'emulatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
   
  Quando esegui un'app Windows Phone per la prima volta nell'emulatore Windows Phone, si verificano gli eventi seguenti:  
   
-1.  L'emulatore si avvia.  
+1. L'emulatore si avvia.  
   
-2.  L'emulatore carica il sistema operativo Windows Phone.  
+2. L'emulatore carica il sistema operativo Windows Phone.  
   
-3.  L'emulatore visualizza la schermata iniziale di Windows Phone.  
+3. L'emulatore visualizza la schermata iniziale di Windows Phone.  
   
-4.  L'app viene distribuita nell'emulatore.  
+4. L'app viene distribuita nell'emulatore.  
   
-5.  L'app viene eseguita nell'emulatore.  
+5. L'app viene eseguita nell'emulatore.  
   
- Se l'emulatore selezionato è già in esecuzione, l'app viene distribuita e avviata nell'emulatore in esecuzione. Può essere in esecuzione una sola istanza di ogni emulatore per volta.  
+   Se l'emulatore selezionato è già in esecuzione, l'app viene distribuita e avviata nell'emulatore in esecuzione. Può essere in esecuzione una sola istanza di ogni emulatore per volta.  
   
 > [!TIP]
 >  Quando testi l'app nell'emulatore, lascia aperto l'emulatore tra le sessioni di debug per poter eseguire di nuovo l'app rapidamente.  
@@ -75,13 +75,13 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
   
 ##### <a name="to-stop-a-running-app"></a>Per arrestare un'app in esecuzione  
   
--   Per arrestare un'app in esecuzione, effettua una delle seguenti operazioni:  
+- Per arrestare un'app in esecuzione, effettua una delle seguenti operazioni:  
   
-    -   In Visual Studio sul **eseguire il Debug** menu, fare clic su **arresta debug**, oppure premi MAIUSC+F5.  
+  - In Visual Studio sul **eseguire il Debug** menu, fare clic su **arresta debug**, oppure premi MAIUSC+F5.  
   
-    -   Nell'emulatore, premere il **nuovamente** pulsante per uscire dall'app. Se la pagina attiva dell'app non era pagina iniziale dell'app, si potrebbe essere necessario premere il **nuovamente** pulsante più volte.  
+  - Nell'emulatore, premere il **nuovamente** pulsante per uscire dall'app. Se la pagina attiva dell'app non era pagina iniziale dell'app, si potrebbe essere necessario premere il **nuovamente** pulsante più volte.  
   
-     L'app si chiude e viene visualizzata la schermata iniziale. Termina così la sessione di debug corrente.  
+    L'app si chiude e viene visualizzata la schermata iniziale. Termina così la sessione di debug corrente.  
   
 ##### <a name="to-restart-an-app-without-debugging"></a>Per riavviare un'app senza eseguire il debug  
   
@@ -122,21 +122,21 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
 ##  <a name="BKMK_buttons"></a> Usare i pulsanti hardware simulati nell'emulatore  
  Per simulare l'utilizzo dei pulsanti hardware di un telefono, puoi usare i pulsanti hardware simulati sul lato destro dello schermo dell'emulatore.  
   
--   Scegliere il **Power** pulsante per simulare l'attivazione e disattivare la visualizzazione. Fai clic e tieni premuto per simulare lo spegnimento del telefono.  
+- Scegliere il **Power** pulsante per simulare l'attivazione e disattivare la visualizzazione. Fai clic e tieni premuto per simulare lo spegnimento del telefono.  
   
--   Fare clic sui **aumento del Volume** oppure **Volume giù** pulsante per simulare la modifica del volume dell'altoparlante del telefono per le chiamate telefoniche e le notifiche.  
+- Fare clic sui **aumento del Volume** oppure **Volume giù** pulsante per simulare la modifica del volume dell'altoparlante del telefono per le chiamate telefoniche e le notifiche.  
   
--   Il **fotocamera** pulsante Avvia l'app della fotocamera. Puoi simulare lo scatto di una foto o l'acquisizione di un video usando i controlli nell'app della fotocamera.  
+- Il **fotocamera** pulsante Avvia l'app della fotocamera. Puoi simulare lo scatto di una foto o l'acquisizione di un video usando i controlli nell'app della fotocamera.  
   
- La schermata seguente mostra i pulsanti hardware simulati.  
+  La schermata seguente mostra i pulsanti hardware simulati.  
   
-1.  L'immagine a sinistra mostra la schermata iniziale dell'emulatore.  
+1. L'immagine a sinistra mostra la schermata iniziale dell'emulatore.  
   
-2.  L'immagine centrale Mostra l'emulatore dopo avere toccato il **Power** pulsante da disattivare lo schermo.  
+2. L'immagine centrale Mostra l'emulatore dopo avere toccato il **Power** pulsante da disattivare lo schermo.  
   
-3.  L'immagine a destra mostra lo schermo dell'emulatore dopo avere toccato il **aumento del Volume** pulsante per aumentare il volume.  
+3. L'immagine a destra mostra lo schermo dell'emulatore dopo avere toccato il **aumento del Volume** pulsante per aumentare il volume.  
   
- ![I pulsanti nell'emulatore Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
+   ![I pulsanti nell'emulatore Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
 ##  <a name="BKMK_tasks_kbd"></a> Usare la tastiera del computer con l'emulatore  
  L'emulatore consente di mappare la tastiera hardware del computer di sviluppo alla tastiera di un dispositivo Windows Phone. Il comportamento dei tasti corrisponde a quello in un dispositivo Windows Phone.  
@@ -175,21 +175,21 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
   
  Se, ad esempio, l'app richiede diversi contatti, puoi creare i record dei contatti una volta e salvare uno snapshot dell'emulatore. In caso contrario, dovrai ricreare i record dei contatti ogni volta che avvii l'emulatore.  
   
--   Fare clic su **nuovo checkpoint** per acquisire un nuovo snapshot dello stato dell'emulatore con i dati e le impostazioni necessarie per testare l'app in un secondo momento. Il nuovo checkpoint viene aggiunto per il **checkpoint** elenco.  
+- Fare clic su **nuovo checkpoint** per acquisire un nuovo snapshot dello stato dell'emulatore con i dati e le impostazioni necessarie per testare l'app in un secondo momento. Il nuovo checkpoint viene aggiunto per il **checkpoint** elenco.  
   
-     Non puoi acquisire un checkpoint mentre il debugger è collegato all'emulatore.  
+   Non puoi acquisire un checkpoint mentre il debugger è collegato all'emulatore.  
   
--   Seleziona un checkpoint nel **checkpoint** elenco per visualizzare le relative informazioni di checkpoint.  
+- Seleziona un checkpoint nel **checkpoint** elenco per visualizzare le relative informazioni di checkpoint.  
   
--   Selezionare il pulsante di opzione nel **predefinito** colonna per impostare un checkpoint salvato l'impostazione predefinita per l'emulatore attivo.  
+- Selezionare il pulsante di opzione nel **predefinito** colonna per impostare un checkpoint salvato l'impostazione predefinita per l'emulatore attivo.  
   
--   Fare clic su **ripristinare** per riavviare il sistema operativo Windows Phone nell'emulatore e caricare lo snapshot selezionato.  
+- Fare clic su **ripristinare** per riavviare il sistema operativo Windows Phone nell'emulatore e caricare lo snapshot selezionato.  
   
--   Fare clic su **eliminare** per eliminare uno snapshot che non è più necessario.  
+- Fare clic su **eliminare** per eliminare uno snapshot che non è più necessario.  
   
- L'immagine dell'emulatore originale viene sempre visualizzata come primo elemento nel **checkpoint** elencare e non possono essere modificate o eliminate. Puoi tuttavia selezionare uno snapshot diverso come immagine dell'emulatore originale.  
+  L'immagine dell'emulatore originale viene sempre visualizzata come primo elemento nel **checkpoint** elencare e non possono essere modificate o eliminate. Puoi tuttavia selezionare uno snapshot diverso come immagine dell'emulatore originale.  
   
- ![Scheda checkpoints dell'emulatore Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
+  ![Scheda checkpoints dell'emulatore Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
 ##  <a name="BKMK_tasks_shot"></a> Acquisire schermate nell'emulatore  
  Puoi creare schermate delle app Windows Phone usando lo strumento per l'acquisizione delle schermate disponibile nella finestra Strumenti aggiunti. Lo strumento crea file PNG corrispondenti alla risoluzione dell'emulatore in esecuzione.  
@@ -198,27 +198,27 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
   
 #### <a name="to-create-an-app-screenshot-by-using-the-built-in-emulator-screenshot-tool"></a>Per creare una schermata di un'app usando lo strumento integrato nell'emulatore  
   
-1.  Per ottimizzare la qualità delle schermate, imposta il livello di zoom dell'emulatore su 100%. Maggiore è il livello di zoom, migliore sarà la qualità della schermata.  
+1. Per ottimizzare la qualità delle schermate, imposta il livello di zoom dell'emulatore su 100%. Maggiore è il livello di zoom, migliore sarà la qualità della schermata.  
   
-2.  Avvia l'app nell'emulatore.  
+2. Avvia l'app nell'emulatore.  
   
-3.  Sulla barra degli strumenti dell'emulatore, fare clic sul pulsante di espansione per aprire la **strumenti aggiuntivi** finestra.  
+3. Sulla barra degli strumenti dell'emulatore, fare clic sul pulsante di espansione per aprire la **strumenti aggiuntivi** finestra.  
   
-4.  Scegliere il **Screenshot** scheda.  
+4. Scegliere il **Screenshot** scheda.  
   
-5.  Quando l'app è pronta, scegliere il **acquisire** pulsante.  
+5. Quando l'app è pronta, scegliere il **acquisire** pulsante.  
   
-     La schermata viene visualizzata nell'area di lavoro.  
+    La schermata viene visualizzata nell'area di lavoro.  
   
-6.  Fare clic sui **salvare** per aprire il **Salva con nome** nella finestra di dialogo.  
+6. Fare clic sui **salvare** per aprire il **Salva con nome** nella finestra di dialogo.  
   
-7.  Scegliere la località e **nomefile** che si desidera e quindi fare clic su **salvare**.  
+7. Scegliere la località e **nomefile** che si desidera e quindi fare clic su **salvare**.  
   
-8.  Se lo desideri, puoi passare ad altre pagine dell'app e acquisire ulteriori schermate.  
+8. Se lo desideri, puoi passare ad altre pagine dell'app e acquisire ulteriori schermate.  
   
 9. Avvia un emulatore con una risoluzione dello schermo diversa per acquisire la stessa schermata con diverse risoluzioni. Se hai eseguito l'app con il debug, devi arrestare il debug prima di eseguirla di nuovo in un altro emulatore.  
   
- Disabilita i contatori della frequenza dei fotogrammi sullo schermo dell'emulatore prima di acquisire le schermate che verranno inviate a Windows Phone Store.  
+   Disabilita i contatori della frequenza dei fotogrammi sullo schermo dell'emulatore prima di acquisire le schermate che verranno inviate a Windows Phone Store.  
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Per disabilitare i contatori della frequenza dei fotogrammi nell'emulatore prima di acquisire le schermate  
   

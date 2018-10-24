@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 28b42e5178808a86faff33dbb887500b8979123b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811921"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
 Usando il SDK di modellazione per Visual Studio, è possibile creare strumenti di sviluppo avanzato basato su modello che è possibile integrare in Visual Studio. Analogamente, è possibile creare una o più definizioni di modello e integrarle in un set di strumenti.
@@ -26,17 +26,17 @@ Usando il SDK di modellazione per Visual Studio, è possibile creare strumenti d
 
  MSDK consente di compilare rapidamente un modello nel formato di linguaggio specifico di dominio (DSL). Iniziare utilizzando un editor specifico per definire uno schema o una sintassi astratta insieme a una notazione grafica. Utilizzando questa definizione, VMSDK genera:
 
--   Implementazione di modello con un'API fortemente tipizzata eseguita in un archivio basato sulle transazioni.
+- Implementazione di modello con un'API fortemente tipizzata eseguita in un archivio basato sulle transazioni.
 
--   Finestra di esplorazione ad albero.
+- Finestra di esplorazione ad albero.
 
--   Editor grafico in cui gli utenti possono visualizzare il modello o parti definite.
+- Editor grafico in cui gli utenti possono visualizzare il modello o parti definite.
 
--   Metodi di serializzazione che salvano i modelli in XML leggibile.
+- Metodi di serializzazione che salvano i modelli in XML leggibile.
 
--   Funzionalità per generare codice di programma e altri elementi utilizzando il modello di testo.
+- Funzionalità per generare codice di programma e altri elementi utilizzando il modello di testo.
 
- Tutte queste funzionalità possono essere personalizzate ed estese. Le estensioni sono integrate in modo che sia comunque possibile aggiornare la definizione DSL e rigenerare le funzionalità senza perdere le estensioni.
+  Tutte queste funzionalità possono essere personalizzate ed estese. Le estensioni sono integrate in modo che sia comunque possibile aggiornare la definizione DSL e rigenerare le funzionalità senza perdere le estensioni.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

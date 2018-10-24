@@ -15,12 +15,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ed255d5b8a876ff29e5230c4517ab0b5e04398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266974"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843405"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Scelta della directory di installazione per un pacchetto VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,17 +54,17 @@ Un pacchetto VSPackage e relativi file di supporto devono trovarsi nel file syst
   
  [Gestione dei pacchetti VSPackage](../../extensibility/managing-vspackages.md) indica che le voci del Registro di sistema consentono di controllare [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] effettivamente Cerca un pacchetto VSPackage satellite DLL. Tuttavia, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tenta di caricare una DLL satellite in una sottodirectory denominata per un valore LCID, nell'ordine seguente:  
   
-1.  LCID (LCID di Visual Studio, ad esempio \1033 per inglese) predefinito  
+1. LCID (LCID di Visual Studio, ad esempio \1033 per inglese) predefinito  
   
-2.  Identificatore LCID predefinito con la varietà di lingua predefinita.  
+2. Identificatore LCID predefinito con la varietà di lingua predefinita.  
   
-3.  Identificatore LCID predefinito di sistema.  
+3. Identificatore LCID predefinito di sistema.  
   
-4.  Sistema LCID predefinito con la varietà di lingua predefinita.  
+4. Sistema LCID predefinito con la varietà di lingua predefinita.  
   
-5.  STATI UNITI Inglese (. \1033 o. \0x409).  
+5. STATI UNITI Inglese (. \1033 o. \0x409).  
   
- Se la DLL VSPackage include risorse e i punti di ingresso SatelliteDll\DllName del Registro di sistema, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tenta di caricarli nell'ordine sopra indicato.  
+   Se la DLL VSPackage include risorse e i punti di ingresso SatelliteDll\DllName del Registro di sistema, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tenta di caricarli nell'ordine sopra indicato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Scelta tra pacchetti VSPackage condivisi e con controllo delle versioni](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   

@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303199"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823697"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ In Visualization and Modeling SDK, è possibile definire gestori eventi dell'arc
   
 ### <a name="to-define-a-store-event"></a>Per definire un evento di archiviazione  
   
-1.  Scegliere il tipo di evento che si vuole monitorare. Per un elenco completo, esaminare le proprietà di <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Ogni proprietà corrisponde a un tipo di evento. I più usati sono tipi di evento:  
+1. Scegliere il tipo di evento che si vuole monitorare. Per un elenco completo, esaminare le proprietà di <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Ogni proprietà corrisponde a un tipo di evento. I più usati sono tipi di evento:  
   
-    -   `ElementAdded` -attivato quando un elemento del modello, viene creato il collegamento di relazione, forma o connettore.  
+   -   `ElementAdded` -attivato quando un elemento del modello, viene creato il collegamento di relazione, forma o connettore.  
   
-    -   ElementPropertyChanged-attivato quando il valore di un `Normal` della proprietà di dominio viene modificata. L'evento viene generato solo se i valori nuovi e precedenti non sono uguali. L'evento non può essere applicato alle proprietà di archiviazione calcolate e personalizzate.  
+   -   ElementPropertyChanged-attivato quando il valore di un `Normal` della proprietà di dominio viene modificata. L'evento viene generato solo se i valori nuovi e precedenti non sono uguali. L'evento non può essere applicato alle proprietà di archiviazione calcolate e personalizzate.  
   
-         Non può essere applicato alle proprietà del ruolo che corrispondono ai collegamenti di relazione. Usare invece `ElementAdded` per monitorare la relazione di dominio.  
+        Non può essere applicato alle proprietà del ruolo che corrispondono ai collegamenti di relazione. Usare invece `ElementAdded` per monitorare la relazione di dominio.  
   
-    -   `ElementDeleted` -attivato dopo un elemento del modello, relazione, forma o connettore è stato eliminato. È comunque possibile accedere i valori delle proprietà dell'elemento, ma lo sarà non presentano relazioni tra gli altri elementi.  
+   -   `ElementDeleted` -attivato dopo un elemento del modello, relazione, forma o connettore è stato eliminato. È comunque possibile accedere i valori delle proprietà dell'elemento, ma lo sarà non presentano relazioni tra gli altri elementi.  
   
-2.  Aggiungere una definizione di classe parziale per _Dslutente_**DocData** in un file di codice separato nella **DslPackage** progetto.  
+2. Aggiungere una definizione di classe parziale per _Dslutente_**DocData** in un file di codice separato nella **DslPackage** progetto.  
   
-3.  Scrivere il codice dell'evento come un metodo, come nell'esempio seguente. Può essere `static`, a meno che non si desidera accedere `DocData`.  
+3. Scrivere il codice dell'evento come un metodo, come nell'esempio seguente. Può essere `static`, a meno che non si desidera accedere `DocData`.  
   
-4.  Eseguire l'override `OnDocumentLoaded()` per registrare il gestore. Se si dispone di più di un gestore, è possibile registrarli tutti nella stessa posizione.  
+4. Eseguire l'override `OnDocumentLoaded()` per registrare il gestore. Se si dispone di più di un gestore, è possibile registrarli tutti nella stessa posizione.  
   
- Il percorso del codice di registrazione non critico. `DocView.LoadView()` è un percorso alternativo.  
+   Il percorso del codice di registrazione non critico. `DocView.LoadView()` è un percorso alternativo.  
   
 ```  
 using System;  

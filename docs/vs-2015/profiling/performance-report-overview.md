@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845849"
 ---
 # <a name="performance-report-overview"></a>Informazioni generali sul rapporto di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ ms.locfileid: "49290433"
 ### <a name="callercallee-view"></a>Visualizzazione Chiamante/chiamato  
  La visualizzazione Chiamante/chiamato consente di visualizzare un albero delle chiamate per una singola funzione. La visualizzazione è suddivisa in tre sezioni:  
   
--   La funzione di destinazione viene riportata nella parte centrale della visualizzazione.  
+- La funzione di destinazione viene riportata nella parte centrale della visualizzazione.  
   
--   Le funzioni che hanno chiamato la funzione (chiamanti) vengono visualizzate sopra la funzione di destinazione.  
+- Le funzioni che hanno chiamato la funzione (chiamanti) vengono visualizzate sopra la funzione di destinazione.  
   
--   Le funzioni che sono chiamate dalla funzione di destinazione (chiamate) sono visualizzate sotto la destinazione.  
+- Le funzioni che sono chiamate dalla funzione di destinazione (chiamate) sono visualizzate sotto la destinazione.  
   
- È possibile selezionare una funzione diversa facendo doppio clic su qualsiasi funzione nell'elenco delle funzioni chiamanti o chiamate. Per altre informazioni, vedere [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md).  
+  È possibile selezionare una funzione diversa facendo doppio clic su qualsiasi funzione nell'elenco delle funzioni chiamanti o chiamate. Per altre informazioni, vedere [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Visualizzazione Albero delle chiamate  
  La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati delle prestazioni delle relative chiamate di funzione.  

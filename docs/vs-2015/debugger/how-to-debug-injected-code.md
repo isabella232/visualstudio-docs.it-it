@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48091178f9f606adecaa9d0047ea35ef25e2b4a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819784"
 ---
 # <a name="how-to-debug-injected-code"></a>Procedura: eseguire il debug di codice inserito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ NOTA]
   
  Il ricorso agli attributi può semplificare notevolmente la programmazione in C++. Per altre informazioni, vedere [concetti](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Alcuni attributi sono interpretati direttamente dal compilatore. Con altri attributi è invece possibile inserire codice nell'origine del programma, il quale verrà quindi compilato dal compilatore. Questo codice inserito rende più semplice la programmazione perché riduce la quantità di codice che è necessario scrivere. A volte, tuttavia, può accadere che un bug arresti l'applicazione mentre è in esecuzione il codice inserito. Quando ciò accade, può essere utile esaminare tale codice e Visual Studio prevede due metodi per farlo:  
   
--   È possibile visualizzare il codice inserito nel **Disassembly** finestra.  
+- È possibile visualizzare il codice inserito nel **Disassembly** finestra.  
   
--   Usando [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), è possibile creare un file di origine unito contenente il codice inserito e originale.  
+- Usando [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), è possibile creare un file di origine unito contenente il codice inserito e originale.  
   
- Il **Disassembly** finestra vengono visualizzate le istruzioni in linguaggio assembly che corrispondono a codice sorgente e il codice inserito dagli attributi. Inoltre, il **Disassembly** finestra possono essere visualizzate l'annotazione del codice sorgente.  
+  Il **Disassembly** finestra vengono visualizzate le istruzioni in linguaggio assembly che corrispondono a codice sorgente e il codice inserito dagli attributi. Inoltre, il **Disassembly** finestra possono essere visualizzate l'annotazione del codice sorgente.  
   
 ### <a name="to-turn-on-source-annotation"></a>Per attivare l'annotazione del codice sorgente  
   

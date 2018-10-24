@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841104"
 ---
 # <a name="install-visual-studio-2015"></a>Installare Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Questa pagina include informazioni dettagliate per l'installazione di **Visual S
   
 #### <a name="to-install-or-uninstall-help-content"></a>Per installare o disinstallare il contenuto della Guida  
   
-1.  Nella barra dei menu di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , scegliere **?** quindi **Aggiungi e rimuovi contenuto della Guida**.  
+1. Nella barra dei menu di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , scegliere **?** quindi **Aggiungi e rimuovi contenuto della Guida**.  
   
-2.  Nella scheda **Gestisci contenuti** di **Microsoft Help Viewer**selezionare l'origine di installazione per il contenuto della Guida.  
+2. Nella scheda **Gestisci contenuti** di **Microsoft Help Viewer**selezionare l'origine di installazione per il contenuto della Guida.  
   
-3.  Se sta cercando una raccolta della Guida specifica, immettere il nome o una parola chiave nel **ricerca** casella di testo e quindi premere **invio**.  
+3. Se sta cercando una raccolta della Guida specifica, immettere il nome o una parola chiave nel **ricerca** casella di testo e quindi premere **invio**.  
   
-4.  Accanto al nome della raccolta della Guida desiderata, scegliere il collegamento **Aggiungi** o **Rimuovi** .  
+4. Accanto al nome della raccolta della Guida desiderata, scegliere il collegamento **Aggiungi** o **Rimuovi** .  
   
-5.  Scegliere il **Update** pulsante.  
+5. Scegliere il **Update** pulsante.  
   
- Per altre informazioni su come installare o distribuire della Guida offline, vedere la [Guida dell'amministratore di Help Viewer](../ide/help-viewer-administrator-guide.md).  
+   Per altre informazioni su come installare o distribuire della Guida offline, vedere la [Guida dell'amministratore di Help Viewer](../ide/help-viewer-administrator-guide.md).  
   
 ##  <a name="serviceReleases"></a> Controllo di Service Release e aggiornamenti del prodotto  
  Poiché non tutte le estensioni sono compatibili, Visual Studio non aggiorna automaticamente le estensioni quando esegue l'aggiornamento da versioni precedenti. È necessario reinstallare le estensioni dal [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkId=178891) o dall'autore del software.  

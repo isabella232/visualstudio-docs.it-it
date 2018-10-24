@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812491"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: aprire un modello da file nel codice del programma
 È possibile aprire modelli di linguaggio specifico di dominio in qualsiasi applicazione.
@@ -58,13 +58,13 @@ ms.locfileid: "47860420"
 ## <a name="reading-from-a-file"></a>La lettura da un File
  Nell'esempio seguente è progettato per la lettura di un linguaggio DSL in cui le classi importanti sono i seguenti:
 
--   FamilyTreeModel
+- FamilyTreeModel
 
--   FamilyTreeSerializationHelper
+- FamilyTreeSerializationHelper
 
--   FamilyTreeDomainModel
+- FamilyTreeDomainModel
 
- L'altra classe di dominio in questo linguaggio DSL è una persona.
+  L'altra classe di dominio in questo linguaggio DSL è una persona.
 
 ```csharp
 using System;

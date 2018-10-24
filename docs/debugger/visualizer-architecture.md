@@ -1,5 +1,5 @@
 ---
-title: Architettura del Visualizzatore | Documenti Microsoft
+title: Architettura del Visualizzatore | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b20572409ac49451f58584be20fbabfdab39a3ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836606"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
 L'architettura di un visualizzatore del debugger è definita da due parti:  
   
--   Il *lato debugger* viene eseguito all'interno del debugger di Visual Studio. Il codice del lato debugger crea e visualizza l'interfaccia utente del visualizzatore.  
+- Il *lato debugger* viene eseguito all'interno del debugger di Visual Studio. Il codice del lato debugger crea e visualizza l'interfaccia utente del visualizzatore.  
   
--   Il *lato oggetto del debug* viene eseguito all'interno del processo di debug in Visual Studio (il *oggetto del debug*).  
+- Il *ritrasferire al lato* viene eseguito all'interno del processo di debug in Visual Studio (il *dell'oggetto del debug*).  
   
- Un visualizzatore è un componente del debugger che consente al debugger visualizzare (*visualizzare*) il contenuto di un oggetto dati in modo significativo e comprensibile. Alcuni visualizzatori supportano anche la modifica dell'oggetto dati. Scrivendo visualizzatori personalizzati, è possibile estendere il debugger in modo da gestire i tipi di dati personalizzati.  
+  Un visualizzatore è un componente del debugger che consente al debugger da visualizzare (*visualizzare*) il contenuto di un oggetto dati in modo significativo e comprensibile. Alcuni visualizzatori supportano anche la modifica dell'oggetto dati. Scrivendo visualizzatori personalizzati, è possibile estendere il debugger in modo da gestire i tipi di dati personalizzati.  
   
- L'oggetto dati da visualizzare si trova all'interno del processo a cui si esegue il debug (il *oggetto del debug* processo). L'interfaccia utente in cui verranno visualizzati i dati viene creata all'interno del processo del debugger di Visual Studio:  
+  L'oggetto dati da visualizzare si trova all'interno del processo a cui si esegue il debug (il *dell'oggetto del debug* processo). L'interfaccia utente in cui verranno visualizzati i dati viene creata all'interno del processo del debugger di Visual Studio:  
   
 |Processo del debugger|Processo oggetto del debug|  
 |----------------------|----------------------|  

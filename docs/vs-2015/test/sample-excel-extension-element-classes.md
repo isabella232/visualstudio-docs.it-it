@@ -13,12 +13,12 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 814431f673757c2a3f3e37aac50bf2d6b89f35da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811946"
 ---
 # <a name="sample-excel-extension-element-classes"></a>Estensione Excel di esempio: classi Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ L'estensione usa classi derivate da <xref:Microsoft.VisualStudio.TestTools.UITes
 ## <a name="utilities-and-excelutilities-classes"></a>Classi Utilities ed ExcelUtilities  
  La classe interna `ExcelUtilities` fornisce alcuni valori costanti, ad esempio il nome della tecnologia, e un metodo che determina se l'handle di finestra fornito rappresenta un foglio di lavoro di Excel.  
   
- La classe `Utilities` dispone di metodi helper che restituiscono un'ampia varietà di informazioni sull'interfaccia utente. Alcuni metodi usano chiamate dirette a DLL di sistema esterne, ad esempio **USER32.DLL** e **OLEACC.DLL**, per ottenere gli handle di finestra dall'interfaccia utente **.**  
+ La classe `Utilities` dispone di metodi helper che restituiscono un'ampia varietà di informazioni sull'interfaccia utente. Alcuni metodi usano chiamate dirette a DLL di sistema esterne, ad esempio **USER32.DLL** e **OLEACC.DLL**, per ottenere gli handle di finestra dall'interfaccia utente<strong>.</strong>  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   

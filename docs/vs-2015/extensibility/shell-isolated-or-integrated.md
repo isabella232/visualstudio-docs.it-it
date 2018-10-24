@@ -19,12 +19,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01a16f7711b35d8c1062117d486fdf00ab998566
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835995"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolata o integrata)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "49266123"
   
 > [!IMPORTANT]
 >  Il [contratto di licenza utente finale (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) for integrata e isolata di Visual Studio Shell incluso una sezione sulla raccolta dei dati (**sezione 3. Dati**).  Descrive i dati di utilizzo dei clienti che possono essere raccolti da Microsoft da utenti che il software di shell integrata o isolata che si compila l'applicazione. Per altre informazioni, vedere [informativa della famiglia di prodotti di Microsoft Visual Studio sulla Privacy](https://www.visualstudio.com/en-us/dn948229).  
->   
+> 
 >  Se si raccolgono i dati di utilizzo separato dai tuoi clienti tramite l'applicazione, è necessario fornire preavviso appropriato per gli utenti dell'applicazione è raccogliere.  Quando si distribuisce il software di shell isolata o integrata come parte dell'applicazione, in base alla licenza di Visual Studio Software Development Kit, è necessario includere uno dei seguenti:  
->   
->  -   il contratto di licenza utente finale come parte della licenza dell'applicazione  
-> -   il proprio contratto di licenza che richiede agli utenti di accettare le condizioni che la protezione di Visual Studio integrata o isolata shell almeno della quantità come condizioni di licenza Microsoft utente finale per il software della shell  
+> 
+> - il contratto di licenza utente finale come parte della licenza dell'applicazione  
+>   -   il proprio contratto di licenza che richiede agli utenti di accettare le condizioni che la protezione di Visual Studio integrata o isolata shell almeno della quantità come condizioni di licenza Microsoft utente finale per il software della shell  
   
 ## <a name="additional-resources"></a>Risorse aggiuntive  
  Per altre informazioni sui pacchetti ridistribuibili, vedere la [download di Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) sito Web.  

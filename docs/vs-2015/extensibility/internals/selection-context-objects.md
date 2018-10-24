@@ -16,12 +16,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3d65a1fb510daec68060261141ddb2d05822988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228657"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836853"
 ---
 # <a name="selection-context-objects"></a>Oggetti del contesto di selezione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
   
  Modifica gli eventi del trigger di contesto di selezione globale in grado di monitorare i pacchetti VSPackage. I VSPackage possono eseguire le attività seguenti implementando `IVsTrackSelectionEx` e <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> interfacce:  
   
--   Aggiornare il file attualmente attivo in una gerarchia.  
+- Aggiornare il file attualmente attivo in una gerarchia.  
   
--   Monitorare le modifiche a determinati tipi di elementi. Ad esempio, se il pacchetto VSPackage Usa una speciale **delle proprietà** finestra, è possibile monitorare le modifiche in attivo **proprietà** finestra e quelle in uso quando è necessario riavviare.  
+- Monitorare le modifiche a determinati tipi di elementi. Ad esempio, se il pacchetto VSPackage Usa una speciale **delle proprietà** finestra, è possibile monitorare le modifiche in attivo **proprietà** finestra e quelle in uso quando è necessario riavviare.  
   
- La sequenza seguente illustra il corso tipico di traccia della selezione.  
+  La sequenza seguente illustra il corso tipico di traccia della selezione.  
   
 1.  L'IDE recupera il contesto della selezione dalla finestra appena aperta e lo inserisce nel contesto di selezione globale. Se il contesto di selezione Usa HIERARCHY_DONTPROPAGATE o SELCONTAINER_DONTPROPAGATE, tali informazioni non viene propagate al contesto globale. Per altre informazioni, vedere [commenti e suggerimenti all'utente](../../extensibility/internals/feedback-to-the-user.md).  
   

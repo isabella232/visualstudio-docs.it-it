@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844620"
 ---
 # <a name="how-to-build-incrementally"></a>Procedura: eseguire la compilazione incrementale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Quando si compila un progetto di grandi dimensioni, è importante che i componen
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Per specificare input e output per una destinazione  
   
--   Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Ad esempio:  
+- Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Ad esempio:  
   
-    ```  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] può confrontare i timestamp dei file di input con i timestamps dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Nell'esempio seguente, se un file dell'elenco di elementi `@(CSFile)` è più recente del file hello.exe, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] compilerà la destinazione; in caso contrario verrà ignorato:  
+  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] può confrontare i timestamp dei file di input con i timestamps dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Nell'esempio seguente, se un file dell'elenco di elementi `@(CSFile)` è più recente del file hello.exe, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] compilerà la destinazione; in caso contrario verrà ignorato:  
   
 ```  
 <Target Name="Build"   
@@ -67,13 +67,13 @@ Quando si compila un progetto di grandi dimensioni, è importante che i componen
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene usato un progetto che compila file della Guida per un ipotetico sistema di Guida. Il progetto converte i file di origine con estensione TXT in file CONTENT intermedi, che vengono quindi combinati con i file di metadati XML per generare il file con estensione HELP finale usato dal sistema di Guida. Il progetto usa le attività ipotetiche seguenti:  
   
--   `GenerateContentFiles`: converte file TXT in file CONTENT.  
+- `GenerateContentFiles`: converte file TXT in file CONTENT.  
   
--   `BuildHelp`: combina i file CONTENT e i file di metadati XML per compilare il file HELP finale.  
+- `BuildHelp`: combina i file CONTENT e i file di metadati XML per compilare il file HELP finale.  
   
- Il progetto usa trasformazioni per creare un mapping uno a uno tra input e output nell'attività `GenerateContentFiles`. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md). L'elemento `Output` è impostato per usare automaticamente gli output dall'attività `GenerateContentFiles` come input per l'attività `BuildHelp`.  
+  Il progetto usa trasformazioni per creare un mapping uno a uno tra input e output nell'attività `GenerateContentFiles`. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md). L'elemento `Output` è impostato per usare automaticamente gli output dall'attività `GenerateContentFiles` come input per l'attività `BuildHelp`.  
   
- Questo file di progetto contiene le destinazioni `Convert` e `Build`. Le attività `GenerateContentFiles` e `BuildHelp` vengono inserite rispettivamente nelle destinazioni `Convert` e `Build` in modo che ogni destinazione possa essere compilata in modo incrementale. Tramite l'elemento `Output`, gli output dell'attività `GenerateContentFiles` vengono inseriti nell'elenco di elementi `ContentFile` dove possono essere usati come input per l'attività `BuildHelp`. L'uso dell'elemento `Output` in questo modo offre automaticamente gli output da un'attività come input per un'altra attività in modo che non sia necessario elencare manualmente i singoli elementi o elenchi di elementi in ogni attività.  
+  Questo file di progetto contiene le destinazioni `Convert` e `Build`. Le attività `GenerateContentFiles` e `BuildHelp` vengono inserite rispettivamente nelle destinazioni `Convert` e `Build` in modo che ogni destinazione possa essere compilata in modo incrementale. Tramite l'elemento `Output`, gli output dell'attività `GenerateContentFiles` vengono inseriti nell'elenco di elementi `ContentFile` dove possono essere usati come input per l'attività `BuildHelp`. L'uso dell'elemento `Output` in questo modo offre automaticamente gli output da un'attività come input per un'altra attività in modo che non sia necessario elencare manualmente i singoli elementi o elenchi di elementi in ogni attività.  
   
 > [!NOTE]
 >  Sebbene la destinazione `GenerateContentFiles` possa essere compilata in modo incrementale, tutti gli output di tale destinazione sono sempre necessari come input per la destinazione `BuildHelp`. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] offre automaticamente tutti gli output da una sola destinazione come input per un'altra destinazione quando si usa l'elemento `Output`.  

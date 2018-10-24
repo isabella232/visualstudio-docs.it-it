@@ -1,5 +1,5 @@
 ---
-title: dwTYPE_KIND | Documenti Microsoft
+title: dwTYPE_KIND | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eaa1b9edc128b5e13641bb5b38296fd96740ab4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4339c18f7aa745c8b741c0a431b6073300ff145b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109643"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841767"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
-Specifica come interpretare il tipo di un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.  
+Specifica come interpretare il tipo di un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,7 +47,7 @@ public enum enum_dwTYPE_KIND {
   
 #### <a name="parameters"></a>Parametri  
  TYPE_KIND_METADATA  
- Il [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) unione deve essere interpretata come un [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) struttura.  
+ Il [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) unione deve essere interpretato come una [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) struttura.  
   
  TYPE_KIND_PDB  
  Il `TYPE_INFO` unione deve essere interpretata come un [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) struttura.  
@@ -56,7 +56,7 @@ public enum enum_dwTYPE_KIND {
  Il `TYPE_INFO` unione deve essere interpretata come un [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) struttura.  
   
 ## <a name="remarks"></a>Note  
- I valori di questa enumerazione sono il `dwKind` campo il [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struttura e vengono utilizzati per determinare come interpretare il `type` membro dell'unione. Il `TYPE_INFO` struttura viene restituita da una chiamata al [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) metodo.  
+ I valori di questa enumerazione vengono visualizzati nei `dwKind` campo del [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) strutturare e vengono usate per determinare come interpretare il `type` membro dell'unione. Il `TYPE_INFO` struttura viene restituita da una chiamata per il [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b8a8790cfa4f4e1f962fa5e6ce82b62781430f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846343"
 ---
 # <a name="parallelforeach-activity-designer"></a>ActivityDesigner ParallelForEach
 
@@ -44,7 +44,7 @@ Il **ParallelForEach\<T >** ActivityDesigner può essere trascinato dal **casell
 Nella tabella seguente sono elencate le proprietà più utili dell'attività <xref:System.Activities.Statements.ParallelForEach%601> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo visualizzato nell'intestazione dell'ActivityDesigner. Il valore predefinito è **ParallelForEach\<Int32 >**. Il valore può essere modificato facoltativamente nel **proprietà** griglia o direttamente nell'intestazione dell'ActivityDesigner.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Attività da eseguire per ogni elemento della raccolta. Per aggiungere il <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> attività, rilasciare un'attività dalla casella degli strumenti nel **corpo** nella casella il **ParallelForEach\<T >** ActivityDesigner con testo di suggerimento "Rilasciare l'attività".|
 |**TypeArgument**|True|Il tipo degli elementi di <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> raccolta specificata dal parametro generico *T*. Per impostazione predefinita **TypeArgument** è impostata su **Int32**. Per modificare il tipo T nel **ParallelForEach < T\>**  ActivityDesigner, modificare il valore della **TypeArgument** casella combinata nella griglia delle proprietà.|
@@ -55,6 +55,6 @@ Per impostazione predefinita, l'iteratore del ciclo è denominato item. È possi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Sequenza](../workflow-designer/sequence-activity-designer.md)
-- [Parallelo](../workflow-designer/parallel-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

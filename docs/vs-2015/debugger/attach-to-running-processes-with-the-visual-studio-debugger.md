@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825701"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Connessione a processi in esecuzione con il debugger di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,31 +83,31 @@ ms.locfileid: "49176774"
 
 1. In Visual Studio, selezionare **Debug / Connetti a processo** (o premere **CTRL + ALT + P**).
 
-2.  Nella finestra di dialogo **Connetti a processo** selezionare il tipo di connessione appropriato nell'elenco **Trasporto** . Per la maggior parte dei casi è possibile usare l'impostazione**Predefinito** .
+2. Nella finestra di dialogo **Connetti a processo** selezionare il tipo di connessione appropriato nell'elenco **Trasporto** . Per la maggior parte dei casi è possibile usare l'impostazione**Predefinito** .
 
-    L'impostazione **Trasporto** viene mantenuta tra una sessione di debug e l'altra. 
+   L'impostazione **Trasporto** viene mantenuta tra una sessione di debug e l'altra. 
   
-3.  Usare la casella di riepilogo **Qualificatore** per scegliere il nome del computer remoto in uno dei seguenti modi:  
+3. Usare la casella di riepilogo **Qualificatore** per scegliere il nome del computer remoto in uno dei seguenti modi:  
   
-    1.  Digitare il nome nella casella di riepilogo **Qualificatore** .
+   1. Digitare il nome nella casella di riepilogo **Qualificatore** .
     
-        >**Nota** se nei passaggi successivi, è possibile connettersi usando il nome del computer remoto, usare l'indirizzo IP. (Il numero di porta può essere visualizzato automaticamente dopo il processo di selezione. È possibile anche inserire manualmente. Nell'illustrazione seguente, 4020 è la porta predefinita per il debugger remoto.)  
+      >**Nota** se nei passaggi successivi, è possibile connettersi usando il nome del computer remoto, usare l'indirizzo IP. (Il numero di porta può essere visualizzato automaticamente dopo il processo di selezione. È possibile anche inserire manualmente. Nell'illustrazione seguente, 4020 è la porta predefinita per il debugger remoto.)  
   
-    2.  Fare clic sulla freccia a discesa della casella di riepilogo **Qualificatore** e selezionare il nome del computer dall'elenco a discesa.  
+   2. Fare clic sulla freccia a discesa della casella di riepilogo **Qualificatore** e selezionare il nome del computer dall'elenco a discesa.  
   
-    3.  Scegliere il pulsante **Trova** accanto all'elenco**Qualificatore** per aprire la finestra di dialogo **Seleziona connessione debugger remoto** . Nella finestra di dialogo **Seleziona connessione debugger remoto** sono elencati tutti i dispositivi presenti nella subnet locale e qualsiasi dispositivo connesso direttamente al computer tramite un cavo Ethernet. Fare clic sul computer o sul dispositivo desiderati e scegliere **Seleziona**. 
+   3. Scegliere il pulsante **Trova** accanto all'elenco**Qualificatore** per aprire la finestra di dialogo **Seleziona connessione debugger remoto** . Nella finestra di dialogo **Seleziona connessione debugger remoto** sono elencati tutti i dispositivi presenti nella subnet locale e qualsiasi dispositivo connesso direttamente al computer tramite un cavo Ethernet. Fare clic sul computer o sul dispositivo desiderati e scegliere **Seleziona**. 
   
-     L'impostazione **Qualificatore** viene invece mantenuta tra due sessioni di debug solo il qualificatore consente di stabilire correttamente una connessione di debug.
+      L'impostazione **Qualificatore** viene invece mantenuta tra due sessioni di debug solo il qualificatore consente di stabilire correttamente una connessione di debug.
      
-4.  Fare clic su **Aggiorna**.
+4. Fare clic su **Aggiorna**.
 
-      L'elenco **Processi disponibili** viene visualizzato automaticamente quando si apre la finestra di dialogo **Processi** . I processi possono essere avviati e interrotti in background mentre la finestra di dialogo è aperta. È quindi possibile che il contenuto non sia sempre aggiornato. Per visualizzare i processi correnti, è possibile aggiornare l'elenco in qualsiasi momento usando il pulsante **Aggiorna**. 
+     L'elenco **Processi disponibili** viene visualizzato automaticamente quando si apre la finestra di dialogo **Processi** . I processi possono essere avviati e interrotti in background mentre la finestra di dialogo è aperta. È quindi possibile che il contenuto non sia sempre aggiornato. Per visualizzare i processi correnti, è possibile aggiornare l'elenco in qualsiasi momento usando il pulsante **Aggiorna**. 
      
-4.  Nella finestra di dialogo **Connetti a processo** individuare il programma con il quale si desidera stabilire una connessione nell'elenco **Processi disponibili** .  
+5. Nella finestra di dialogo **Connetti a processo** individuare il programma con il quale si desidera stabilire una connessione nell'elenco **Processi disponibili** .  
   
-     Se il processo viene eseguito con un account utente diverso, selezionare la casella di controllo **Mostra processi di tutti gli utenti** .
+    Se il processo viene eseguito con un account utente diverso, selezionare la casella di controllo **Mostra processi di tutti gli utenti** .
      
-5.  Scegliere **Connetti**.  
+6. Scegliere **Connetti**.  
 
 ## <a name="additional-info"></a>Informazioni aggiuntive
 
@@ -164,21 +164,21 @@ In alcuni scenari di debug locale, è possibile eseguire il debug in Visual Stud
   
  **Per ottenere informazioni specifiche sul motivo per cui un tipo di codice non è stato possibile collegare**  
   
-1.  Disconnettersi dal processo. Scegliere **Disconnetti tutto** dal menu **Debug**.  
+1. Disconnettersi dal processo. Scegliere **Disconnetti tutto** dal menu **Debug**.  
   
-2.  Riconnettersi al processo, selezionando un solo tipo di codice.  
+2. Riconnettersi al processo, selezionando un solo tipo di codice.  
   
-    1.  Nella finestra di dialogo **Connetti a processo** selezionare il processo nell'elenco **Processi disponibili** .  
+   1. Nella finestra di dialogo **Connetti a processo** selezionare il processo nell'elenco **Processi disponibili** .  
   
-    2.  Fare clic su **Seleziona**.  
+   2. Fare clic su **Seleziona**.  
   
-    3.  Nella finestra di dialogo **Seleziona tipo di codice** selezionare il pulsante di opzione **Esegui il debug di questi tipi di codice** e il tipo di codice per cui si è verificato il problema di connessione. Deselezionare tutti gli altri codici.  
+   3. Nella finestra di dialogo **Seleziona tipo di codice** selezionare il pulsante di opzione **Esegui il debug di questi tipi di codice** e il tipo di codice per cui si è verificato il problema di connessione. Deselezionare tutti gli altri codici.  
   
-    4.  Fare clic su **OK**. La finestra di dialogo **Seleziona tipo di codice** verrà chiusa.  
+   4. Fare clic su **OK**. La finestra di dialogo **Seleziona tipo di codice** verrà chiusa.  
   
-    5.  Nella finestra di dialogo **Connetti a processo** scegliere **Connetti**.  
+   5. Nella finestra di dialogo **Connetti a processo** scegliere **Connetti**.  
   
-     La connessione non verrà eseguita e verrà visualizzato un messaggio di errore specifico.  
+      La connessione non verrà eseguita e verrà visualizzato un messaggio di errore specifico.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)   

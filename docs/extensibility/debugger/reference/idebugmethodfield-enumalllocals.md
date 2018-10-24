@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumAllLocals | Documenti Microsoft
+title: IDebugMethodField::EnumAllLocals | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c3c13f7252e6f3b662ded697ab267419fd66450
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b060e26668fb7a3c64cee9360e62c198d9c988c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113605"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841208"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
-Crea un enumeratore per tutte le variabili locali del metodo, inclusi quelli generati internamente dal compilatore.  
+Crea un enumeratore per tutte le variabili locali del metodo, inclusi quelli generati internamente da un compilatore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,18 +43,18 @@ int EnumAllLocals(
   
 #### <a name="parameters"></a>Parametri  
  `pAddress`  
- [in] Un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto che rappresenta un indirizzo all'interno del metodo, che punta a un particolare ambito o il contesto di debug.  
+ [in] Un' [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto che rappresenta un indirizzo di debug all'interno del metodo, che punta a un ambito specifico o di contesto.  
   
  `ppLocals`  
- [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) l'oggetto che rappresenta l'elenco di tutte le variabili locali nell'ambito specificato; in caso contrario, restituisce un valore null non indica nessun variabili locali.  
+ [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) rappresentano l'elenco di tutte le variabili locali nell'ambito specificato dell'oggetto; in caso contrario, restituisce un valore null indicante che nessuna variabile locale.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK o S_FALSE se sono non presenti variabili locali. In caso contrario, verrà restituito un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se non sono variabili non locali. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Vengono enumerate solo le variabili definite all'interno del blocco che contiene l'indirizzo di debug specificata. Questo metodo include le variabili locali generato dal compilatore. Se tutti gli elementi necessari sono variabili locali definite in modo esplicito nell'origine, chiamata di [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) metodo.  
+ Vengono enumerate solo le variabili definite all'interno del blocco che contiene l'indirizzo di debug specificato. Questo metodo include le variabili locali generate dal compilatore. Se tutto ciò che serve sono variabili locali definite in modo esplicito nell'origine, chiamata di [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) (metodo).  
   
- Un metodo può contenere più contesti di ambito o blocchi.  
+ Un metodo può contenere più blocchi o i contesti di definizione dell'ambito.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

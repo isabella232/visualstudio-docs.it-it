@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50e75f4855079666130e063d3c2b516f317e90f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819550"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: I metodi APTCA devono chiamare solo metodi APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
@@ -44,13 +45,13 @@ ms.locfileid: "49217893"
 
  Quando l'attributo APTCA è presente in un assembly completamente attendibile e l'assembly esegue codice in un altro assembly che non consente chiamanti parzialmente attendibili, è possibile una violazione della sicurezza. Se i due metodi `M1` e `M2` soddisfa le condizioni seguenti, i chiamanti malintenzionati possono usare il metodo `M1` per ignorare la richiesta di collegamento implicite con attendibilità totale che protegge `M2`:
 
--   `M1` è un metodo pubblico dichiarato in un assembly completamente attendibile che ha l'attributo APTCA.
+- `M1` è un metodo pubblico dichiarato in un assembly completamente attendibile che ha l'attributo APTCA.
 
--   `M1` chiama un metodo `M2` esterno `M1`dell'assembly.
+- `M1` chiama un metodo `M2` esterno `M1`dell'assembly.
 
--   `M2`dell'assembly non ha l'attributo APTCA e, pertanto non deve essere eseguito da o per conto di chiamanti parzialmente attendibili.
+- `M2`dell'assembly non ha l'attributo APTCA e, pertanto non deve essere eseguito da o per conto di chiamanti parzialmente attendibili.
 
- Un chiamante parzialmente attendibile `X` può chiamare metodo `M1`, provocando `M1` chiamare `M2`. In quanto `M2` non ha l'attributo APTCA, il relativo chiamante immediato (`M1`) deve soddisfare una richiesta di collegamento per l'attendibilità totale; `M1` sia totalmente attendibile e pertanto soddisfa questo controllo. Il rischio di sicurezza, infatti `X` contribuisce a soddisfare la richiesta di collegamento che consente di proteggere `M2` da chiamanti non attendibili. Di conseguenza, i metodi con l'attributo APTCA non devono chiamare metodi che non dispongono dell'attributo.
+  Un chiamante parzialmente attendibile `X` può chiamare metodo `M1`, provocando `M1` chiamare `M2`. In quanto `M2` non ha l'attributo APTCA, il relativo chiamante immediato (`M1`) deve soddisfare una richiesta di collegamento per l'attendibilità totale; `M1` sia totalmente attendibile e pertanto soddisfa questo controllo. Il rischio di sicurezza, infatti `X` contribuisce a soddisfare la richiesta di collegamento che consente di proteggere `M2` da chiamanti non attendibili. Di conseguenza, i metodi con l'attributo APTCA non devono chiamare metodi che non dispongono dell'attributo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Se è richiesto l'attributo APCTA, usare una richiesta per proteggere il metodo che chiama l'assembly con attendibilità totale. Le autorizzazioni esatte dipenderà è richiesta la funzionalità esposta dal metodo. Se è possibile, proteggere il metodo con una richiesta di attendibilità garantire che la funzionalità sottostante non viene esposta a chiamanti parzialmente attendibili. In caso contrario, selezionare un set di autorizzazioni che protegge in modo efficace le funzionalità esposte. Per altre informazioni sulle richieste, vedere [pretese](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843201"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi usati di frequente in Visual Studio
 
@@ -26,7 +26,7 @@ ms.locfileid: "46370978"
 ## <a name="build"></a>Compilazione
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**CTRL+MAIUSC+B** [Globale]|
 |Build.Cancel|**CTRL+INTERR** [Globale]|
 |Build.Compile|**CTRL+F7** [Globale]|
@@ -35,7 +35,7 @@ ms.locfileid: "46370978"
 ## <a name="debug"></a>Debug
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**CTRL+B** [Globale]|
 |Debug.BreakAll|**CTRL+ALT+INTERR** [Globale]|
 |Debug.DeleteAllBreakpoints|**CTRL+MAIUSC+F9** [Globale]|
@@ -55,7 +55,7 @@ ms.locfileid: "46370978"
 ## <a name="edit"></a>Edit
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**INVIO** [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br /> o **MAIUSC+INVIO** [Editor di testo]|
 |Edit.CollapseToDefinitions|**CTRL+M**, **CTRL+O** [Editor di testo]|
 |Edit.CommentSelection|**CTRL+K**, **CTRL+C** [Editor di testo]|
@@ -106,7 +106,7 @@ ms.locfileid: "46370978"
 ## <a name="file"></a>File
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**ALT+F4** [Globale]|
 |File.NewFile|**CTRL+N** [Globale]|
 |File.NewProject|**CTRL+MAIUSC+N** [Globale]|
@@ -122,26 +122,26 @@ ms.locfileid: "46370978"
 ## <a name="project"></a>Progetto
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**MAIUSC+ALT+A** [Globale]|
 |Project.AddNewItem|**CTRL+MAIUSC+A** [Globale]|
 
 ## <a name="refactor"></a>Refactoring
 
 |Comando|Tasto di scelta rapida [Contesto]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**CTRL+R, CTRL+M** [Globale]|
 
 ## <a name="tools"></a>Strumenti
 
 |Comando|Tasto di scelta rapida [Contesto]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**CTRL+ALT+P** [Globale]|
 
 ## <a name="view"></a>Visualizza
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**CTRL+MAIUSC+C** [Globale]|
 |View.EditLabel|**F2** [Globale]|
 |View.ErrorList|**CTRL+\\, CTRL+E** [Globale]<br /><br /> o **CTRL+\\, E** [Globale]|
@@ -162,7 +162,7 @@ ms.locfileid: "46370978"
 ## <a name="window"></a>Window
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**ESC** [Globale]|
 |Window.CloseDocumentWindow|**CTRL+F4** [Globale]|
 |Window.NextDocumentWindow|**CTRL+F6** [Globale]|

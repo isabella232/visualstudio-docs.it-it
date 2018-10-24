@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825420"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ ms.locfileid: "46542456"
 
 ## <a name="IntelliTraceSupport"></a> Le app che è possibile eseguire il debug con IntelliTrace?
 
-|||
-|-|-|
-|**Supporto completo**|-Applicazioni Visual Basic e Visual c# che usano .NET Framework 2.0 o versioni successive.<br/>È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br/>Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Per eseguire il debug delle app di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Supporto limitato**|-App native destinate a supporto di Windows la visualizzazione di snapshot tramite tornare indietro di IntelliTrace. Sono supportati solo gli eventi di eccezione e del debugger.<br />-.NET core e le app ASP.NET Core è supportato per determinati solo eventi (eventi Controller MVC, ADO.NET e HTTPClicent) nel debug locale. Agente di raccolta autonomo non è supportata per le app .NET Core o ASP.NET Core.<br />-App F # su base sperimentale<br />-App della piattaforma UWP supportata solo per gli eventi|
-|**Non è supportato**|-Altri linguaggi e script<br />-Windows Services, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] App|
+| | |
+|---------------------| - |
+| **Supporto completo** | -Applicazioni Visual Basic e Visual c# che usano .NET Framework 2.0 o versioni successive.<br/>È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br/>Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Per eseguire il debug delle app di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Supporto limitato** | -App native destinate a supporto di Windows la visualizzazione di snapshot tramite tornare indietro di IntelliTrace. Sono supportati solo gli eventi di eccezione e del debugger.<br />-.NET core e le app ASP.NET Core è supportato per determinati solo eventi (eventi Controller MVC, ADO.NET e HTTPClicent) nel debug locale. Agente di raccolta autonomo non è supportata per le app .NET Core o ASP.NET Core.<br />-App F # su base sperimentale<br />-App della piattaforma UWP supportata solo per gli eventi |
+| **Non è supportato** | -Altri linguaggi e script<br />-Windows Services, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] App |
 
 > [!NOTE]
 > Se si desidera eseguire il debug di un processo già in esecuzione, è possibile raccogliere eventi di IntelliTrace solo (nessuna informazione di chiamata). È possibile collegare a un processo a 32 o 64 bit del computer locale. Non vengono raccolti gli eventi che si verificano prima di collegare al processo.
@@ -77,7 +77,7 @@ IntelliTrace consente anche di eseguire il debug di errori difficili da riprodur
 
 - App Web ASP.NET ospitate in IIS o applicazioni SharePoint 2010 e SharePoint 2013 in esecuzione nella distribuzione quando si usa Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012. Visualizzare [usare l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) e [monitoraggio con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
 
- Di seguito sono riportati alcuni esempi sul modo in cui IntelliTrace semplifica le operazioni di debug:
+  Di seguito sono riportati alcuni esempi sul modo in cui IntelliTrace semplifica le operazioni di debug:
 
 - L'applicazione ha danneggiato un file di dati, ma non si sa dove si è verificato l'evento.
 
@@ -111,11 +111,11 @@ Per impostazione predefinita, IntelliTrace registra solo gli eventi di IntelliTr
 
      Per impostazione predefinita, ai fini delle prestazioni, IntelliTrace non registra ogni possibile valore per un evento del debugger. Vengono invece registrati questi valori:
 
-    - I valori di **variabili locali** finestra. Mantenere il **variabili locali** finestra aperta per visualizzare tali valori.
+  - I valori di **variabili locali** finestra. Mantenere il **variabili locali** finestra aperta per visualizzare tali valori.
 
-    - I valori di **Auto** solo se finestra la **Auto** finestra è aperta
+  - I valori di **Auto** solo se finestra la **Auto** finestra è aperta
 
-    - Valori nei suggerimenti dati mostrati quando si sposta il puntatore del mouse su una variabile nella finestra di origine per visualizzarne il valore. Tramite IntelliTrace non vengono raccolti i valori nei suggerimenti dati bloccati.
+  - Valori nei suggerimenti dati mostrati quando si sposta il puntatore del mouse su una variabile nella finestra di origine per visualizzarne il valore. Tramite IntelliTrace non vengono raccolti i valori nei suggerimenti dati bloccati.
 
     Quando è abilitata la modalità snapshot ed eventi IntelliTrace, IntelliTrace richiederà uno snapshot del processo dell'applicazione in ogni debugger **punto di interruzione** e **passaggio** evento. Ciò registrerà i valori nel **variabili locali**, **Auto**, e **Watch** windows, indipendentemente dal fatto di windows siano aperte. Verranno raccolti anche i valori nei suggerimenti eventuali dati aggiunti.
 

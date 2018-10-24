@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77a262edcbf55f7c1f14c36d35a8618f5b788dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: edc922b2d96776d38de1b55ab2226be0d2c10f85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815728"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Visualizzazione Righe: dati di campionamento di memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ La visualizzazione Righe dei dati di profilatura sull'allocazione di memoria .NE
   
  Un'istruzione viene identificata in base agli elementi seguenti:  
   
--   File di origine che contiene l'istruzione della funzione.  
+- File di origine che contiene l'istruzione della funzione.  
   
--   Funzione che contiene l'istruzione.  
+- Funzione che contiene l'istruzione.  
   
--   Riga di origine in cui inizia l'istruzione.  
+- Riga di origine in cui inizia l'istruzione.  
   
--   Carattere nella riga di origine in cui inizia l'istruzione.  
+- Carattere nella riga di origine in cui inizia l'istruzione.  
   
--   Riga di origine in cui termina l'istruzione.  
+- Riga di origine in cui termina l'istruzione.  
   
--   Carattere nella riga di origine in cui termina l'istruzione.  
+- Carattere nella riga di origine in cui termina l'istruzione.  
   
- Nella colonna Nome riga è disponibile una concatenazione ordinabile dei dati dell'identificatore.  
+  Nella colonna Nome riga è disponibile una concatenazione ordinabile dei dati dell'identificatore.  
   
- Per definizione, un'istruzione non chiama altre funzioni. Vengono quindi elencati solo valori esclusivi.  
+  Per definizione, un'istruzione non chiama altre funzioni. Vengono quindi elencati solo valori esclusivi.  
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
