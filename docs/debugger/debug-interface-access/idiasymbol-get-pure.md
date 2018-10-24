@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_pure | Documenti Microsoft
+title: Get_pure | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54c25dd0398674c7a583cbd3ac8163f4c0a5698
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f79523cec58c34039db817f36eaf22efe4e6acd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831185"
 ---
 # <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
 Recupera un flag che specifica se la funzione è pura virtuale.  
@@ -34,7 +34,7 @@ HRESULT get_pure (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` pura se la funzione virtuale; in caso contrario, restituisce `FALSE`.  
+ [out] Restituisce `TRUE` se la funzione è pura virtuale; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  

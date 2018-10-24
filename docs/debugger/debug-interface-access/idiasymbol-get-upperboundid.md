@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_upperBoundId | Documenti Microsoft
+title: Get_upperboundid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279bc4fafb1c0ffc860ca10b41e0bc545b568faf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 93de67915f8c0382a984786a1c33bc1dc3290f5b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815715"
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
-Recupera l'identificatore di simbolo il limite superiore di una dimensione di matrice FORTRAN.  
+Recupera l'identificatore di simbolo del limite superiore di una dimensione di matrice FORTRAN.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,7 +43,7 @@ HRESULT get_upperBoundId (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- L'identificatore è un valore univoco creato da DIA SDK per contrassegnare tutti i simboli come univoca.  
+ L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

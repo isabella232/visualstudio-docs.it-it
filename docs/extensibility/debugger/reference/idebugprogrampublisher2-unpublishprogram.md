@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgram | Documenti Microsoft
+title: IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bff0c60ea8401896eb5399ed797d90b62bf0d0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2daec6615f98d6e253e65bdc66cb7f1f545f9857
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118674"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822215"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
-Esegue un programma non disponibile per il debug.  
+Rende non disponibile per eseguire il debug di un programma.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,13 +41,13 @@ int UnpublishProgram(
   
 #### <a name="parameters"></a>Parametri  
  `pDebuggeeInterface`  
- [in] Un `IUnknown` interfaccia al programma. Questo è lo stesso valore fornito per il [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (metodo) e identifica in modo univoco il programma viene rimosso (vale a dire, viene usato come cookie).  
+ [in] Un `IUnknown` interfaccia al programma. Questo è lo stesso valore fornito per il [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (metodo) e identifica in modo univoco il programma viene rimosso (vale a dire, viene usato come un cookie).  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Per rendere disponibile un programma per i motori di debug e gestione di debug di sessione, utilizzare il [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metodo.  
+ Per rendere disponibile un programma per i motori di debug e gestione del debug della sessione, usare il [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac06fa18ee9459d8dc43bd0c536b68f9d027c97d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 024241870bb4a0a2ef696130cbe5ddc94319493a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837204"
 ---
 # <a name="resource-details-view---contention-data"></a>Visualizzazione Dettagli risorsa: dati sui conflitti
 La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale degli eventi di blocco causati dai conflitti relativi a una risorsa selezionata. Si verifica un evento di blocco quando un thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso alla risorsa.  
@@ -48,9 +48,9 @@ La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Per visualizzare o modificare il codice sorgente di una funzione nello stack di chiamate  
   
--   Nella finestra **Stack di chiamate** fare clic sul nome della funzione.  
+- Nella finestra **Stack di chiamate** fare clic sul nome della funzione.  
   
- Il codice sorgente della funzione deve far parte del progetto corrente.  
+  Il codice sorgente della funzione deve far parte del progetto corrente.  
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>Per visualizzare l'albero delle chiamate degli eventi di conflitto per la risorsa  
   

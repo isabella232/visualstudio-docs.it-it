@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840285"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procedura dettagliata: Visualizzazione di testo in una casella di testo in un foglio di lavoro tramite un pulsante
   Questa procedura dettagliata illustra le nozioni di base dell'uso di pulsanti e caselle di testo in fogli di lavoro di Microsoft Office Excel e come creare progetti di Excel con strumenti di sviluppo per Office in Visual Studio. Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli Excel all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -62,22 +62,22 @@ ms.locfileid: "35258441"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>Per aggiungere un pulsante e una casella di testo  
   
-1.  Verificare che il **My Excel Button.xlsx** cartella di lavoro è aperta nella finestra di progettazione di Visual Studio, con `Sheet1` visualizzato.  
+1. Verificare che il **My Excel Button.xlsx** cartella di lavoro è aperta nella finestra di progettazione di Visual Studio, con `Sheet1` visualizzato.  
   
-2.  Dal **controlli comuni** della casella degli strumenti, trascinare un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> a `Sheet1`.  
+2. Dal **controlli comuni** della casella degli strumenti, trascinare un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> a `Sheet1`.  
   
-3.  Dal **View** dal menu **finestra proprietà**.  
+3. Dal **View** dal menu **finestra proprietà**.  
   
-4.  Assicurarsi che **TextBox1** è visibile nel **delle proprietà** casella di riepilogo a discesa di finestra e modificare il **nome** proprietà della casella di testo per **displayText**.  
+4. Assicurarsi che **TextBox1** è visibile nel **delle proprietà** casella di riepilogo a discesa di finestra e modificare il **nome** proprietà della casella di testo per **displayText**.  
   
-5.  Trascinare un **sul pulsante** sul controllo `Sheet1` e modificare le proprietà seguenti:  
+5. Trascinare un **sul pulsante** sul controllo `Sheet1` e modificare le proprietà seguenti:  
   
-    |Proprietà|Valore|  
-    |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**per**|**Inserisci testo**|  
+   |Proprietà|Valore|  
+   |--------------|-----------|  
+   |**Name**|**insertText**|  
+   |**per**|**Inserisci testo**|  
   
- Scrivere ora il codice da eseguire quando si fa clic sul pulsante.  
+   Scrivere ora il codice da eseguire quando si fa clic sul pulsante.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Popolare la casella di testo quando si fa clic sul pulsante  
  Ogni volta che l'utente fa clic sul pulsante, **Hello World!** viene aggiunto alla casella di testo.  

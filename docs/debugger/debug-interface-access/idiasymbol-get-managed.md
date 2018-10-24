@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_managed | Documenti Microsoft
+title: Get_managed | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c23f59a4506ccf369b60bf45cf9320ff407b129c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 92e833bbb37e43d61911b18f27a1f1cf5a8e5b0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823242"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
-Recupera un flag che specifica se il simbolo fa riferimento a codice gestito.  
+Recupera un flag che specifica se il simbolo relativo al codice gestito.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT get_managed (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se il simbolo fa riferimento a codice non gestito; in caso contrario, restituisce `FALSE`.  
+ [out] Restituisce `TRUE` se il simbolo relativo al codice gestito; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  

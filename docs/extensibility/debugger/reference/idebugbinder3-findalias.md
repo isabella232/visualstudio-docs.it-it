@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::FindAlias | Documenti Microsoft
+title: IDebugBinder3::FindAlias | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e68038f6e00c2a04f4c96f5f9d93fc4919d2fd09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 128629f5cd359539406f438aec41909672e1ed83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837724"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-Questo metodo individua un alias, un nome. Si cercherà tutti gli alias nel programma.  
+Questo metodo individua un alias, dato un nome. Si eseguirà la ricerca tutti gli alias nel programma.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,13 +46,13 @@ int FindAlias(
  [in] Nome di alias da trovare.  
   
  `ppAlias`  
- [out] Alias (se presente) è rappresentato dal [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interfaccia.  
+ [out] Alias (se presente) rappresentato dal [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interfaccia.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` (se non viene trovato alias) o un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo inizializza l'oggetto di destinazione a null prima di chiamare il metodo. quindi verifica un valore null in seguito per determinare se l'alias è stato trovato.  
+ Questo metodo inizializza l'oggetto di destinazione a null prima di chiamare il metodo. quindi verifica un valore null in un secondo momento determinare se l'alias è stato trovato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f1769f4d94df0621e06eb01d3dad55598cc810c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824399"
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ ms.locfileid: "49178425"
   
 #### <a name="do-not"></a>Non:  
   
--   Utilizzano i movimenti di piccole dimensioni (spostamento in un footprint ridotto), preferendo si dissolve e modifica tramite lo spostamento di oggetti.  
+- Utilizzano i movimenti di piccole dimensioni (spostamento in un footprint ridotto), preferendo si dissolve e modifica tramite lo spostamento di oggetti.  
   
--   Usare le animazioni che si verificano su una vasta area della superficie sullo schermo. Indipendentemente dalle dimensioni, questo stile di animazione è fuorviante per l'utente.  
+- Usare le animazioni che si verificano su una vasta area della superficie sullo schermo. Indipendentemente dalle dimensioni, questo stile di animazione è fuorviante per l'utente.  
   
--   Usare le animazioni che non riguardano l'oggetto che utente è attualmente incentrato sulle o l'interazione con.  
+- Usare le animazioni che non riguardano l'oggetto che utente è attualmente incentrato sulle o l'interazione con.  
   
--   Usare le animazioni che richiedono l'interazione dell'utente per reimpostare lo stato, ad esempio obbligando l'utente di rispondere a una notifica per renderlo di arrestare lampeggiare lampeggiante. L'interazione con essi in alcun modo dovrebbe essere sufficiente per non prenderli in considerazione.  
+- Usare le animazioni che richiedono l'interazione dell'utente per reimpostare lo stato, ad esempio obbligando l'utente di rispondere a una notifica per renderlo di arrestare lampeggiare lampeggiante. L'interazione con essi in alcun modo dovrebbe essere sufficiente per non prenderli in considerazione.  
   
- Per altre informazioni sulle applicazioni per le procedure consigliate, vedere [modelli di animazione](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
+  Per altre informazioni sulle applicazioni per le procedure consigliate, vedere [modelli di animazione](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
   
 ### <a name="animation-metrics"></a>Criteri di misurazione di animazione  
   
@@ -205,21 +205,21 @@ ms.locfileid: "49178425"
 ### <a name="overview"></a>Panoramica  
  Le animazioni in Visual Studio sono concepite per fornire una funzione specifica e non ostacolare la produttività degli utenti. Caratteristiche di animazione generale da rispettare per includere:  
   
--   Piccola e non intrusivo  
+- Piccola e non intrusivo  
   
--   Naturali e realistico  
+- Naturali e realistico  
   
--   Sottili e avvolta  
+- Sottili e avvolta  
   
--   Veloci ed efficienti  
+- Veloci ed efficienti  
   
--   Tipo "relaxed", non accelera l'esecuzione  
+- Tipo "relaxed", non accelera l'esecuzione  
   
- La figura seguente mostra gli stili di animazione consigliati per l'uso in Visual Studio. Nessuna animazione e animazioni lievi, ad esempio la dissolvenza in entrata / dissolvenza sono utilizzati più di frequente. Applicazione limitata dello spostamento delle animazioni come espandere e comprimere, X e Y posizione modifica e la rotazione.  
+  La figura seguente mostra gli stili di animazione consigliati per l'uso in Visual Studio. Nessuna animazione e animazioni lievi, ad esempio la dissolvenza in entrata / dissolvenza sono utilizzati più di frequente. Applicazione limitata dello spostamento delle animazioni come espandere e comprimere, X e Y posizione modifica e la rotazione.  
   
- ![Gli stili di animazione consigliati per Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
+  ![Gli stili di animazione consigliati per Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
   
- **Stili di animazione consigliati per Visual Studio**  
+  **Stili di animazione consigliati per Visual Studio**  
   
 #### <a name="appear-and-disappear"></a>Vengono visualizzati e nascosti  
  Con questo modello, un elemento passa da visibile a out-di-visualizzazione e viceversa senza un'animazione di transizione:  
@@ -363,65 +363,65 @@ ms.locfileid: "49178425"
   
 #### <a name="tab-open"></a>Scheda aperta  
   
--   Stile di visualizzazione: vengono visualizzati  
+- Stile di visualizzazione: vengono visualizzati  
   
--   Durata: Zero secondi  
+- Durata: Zero secondi  
   
- ![Scheda animazione di apertura in Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
+  ![Scheda animazione di apertura in Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
   
 #### <a name="tab-close"></a>Chiudi scheda  
   
--   Stile di visualizzazione: Modificare la posizione X  
+- Stile di visualizzazione: Modificare la posizione X  
   
--   Durata: 200 millisecondi  
+- Durata: 200 millisecondi  
   
- ![Scheda animazione di chiusura in Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
+  ![Scheda animazione di chiusura in Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
   
 #### <a name="tab-reorder"></a>Riordinamento della scheda  
   
--   Stile di visualizzazione: Modificare la posizione X  
+- Stile di visualizzazione: Modificare la posizione X  
   
--   Durata: 200 millisecondi  
+- Durata: 200 millisecondi  
   
- ![Scheda animazione di riordinamento in Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
+  ![Scheda animazione di riordinamento in Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
   
 #### <a name="close-floating-document"></a>Chiuso documento mobile  
   
--   Stile di visualizzazione: vengono visualizzati  
+- Stile di visualizzazione: vengono visualizzati  
   
--   Durata: 200 millisecondi  
+- Durata: 200 millisecondi  
   
- ![Chiudi mobile animazione documenti in Visual Studio](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
+  ![Chiudi mobile animazione documenti in Visual Studio](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
   
 #### <a name="window-state-transition"></a>Transizione di stato finestra  
   
--   Style: Per garantire la coerenza con altre finestre, lasciare il sistema operativo corrente definiscono l'animazione di chiusura del documento.  
+- Style: Per garantire la coerenza con altre finestre, lasciare il sistema operativo corrente definiscono l'animazione di chiusura del documento.  
   
--   Durata: 200 millisecondi  
+- Durata: 200 millisecondi  
   
- ![Animazione di transizione di stato di finestra in Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
+  ![Animazione di transizione di stato di finestra in Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
   
 #### <a name="menu-open"></a>Menu di scelta  
   
--   Stile di visualizzazione: dissolvenza  
+- Stile di visualizzazione: dissolvenza  
   
--   Durata: 200 millisecondi  
+- Durata: 200 millisecondi  
   
- ![Animazione di apertura di menu in Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
+  ![Animazione di apertura di menu in Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
   
 #### <a name="menu-close"></a>Chiudi menu di scelta  
   
--   Stile di visualizzazione: dissolvenza  
+- Stile di visualizzazione: dissolvenza  
   
--   Durata: 200 millisecondi  
+- Durata: 200 millisecondi  
   
- ![Animazione di chiusura dal menu in Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
+  ![Animazione di chiusura dal menu in Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Nascondi automaticamente rivelare finestra degli strumenti  
   
--   Stile di visualizzazione: vengono visualizzati  
+- Stile di visualizzazione: vengono visualizzati  
   
--   Durata: Zero secondi  
+- Durata: Zero secondi  
   
- ![Automatico&#45;Nascondi l'animazione della finestra degli strumenti in Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
+  ![Automatico&#45;Nascondi l'animazione della finestra degli strumenti in Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
 

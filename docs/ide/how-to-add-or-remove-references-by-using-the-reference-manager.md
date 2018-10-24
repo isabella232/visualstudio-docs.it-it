@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b9b29cef4ad215e76af57e66c73eb2e8a134db
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839271"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
@@ -100,7 +100,7 @@ Alcuni componenti nell'elenco potrebbero non essere visualizzati, a seconda dell
 
     Quando si crea una nuova applicazione, alcuni progetti sono destinati a [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] per impostazione predefinita.
 
-- Evitare di aggiungere riferimenti a file agli output di altri progetti della stessa soluzione, poiché potrebbero verificarsi errori di compilazione. Usare invece la scheda **Progetti** della finestra di dialogo **Aggiungi riferimento** per creare riferimenti da progetto a progetto. Tale procedura facilita lo sviluppo in team, consentendo una migliore gestione delle librerie di classi create nei progetti. Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md).
+Evitare di aggiungere riferimenti a file agli output di altri progetti della stessa soluzione, poiché potrebbero verificarsi errori di compilazione. Usare invece la scheda **Progetti** della finestra di dialogo **Aggiungi riferimento** per creare riferimenti da progetto a progetto. Tale procedura facilita lo sviluppo in team, consentendo una migliore gestione delle librerie di classi create nei progetti. Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
 > In Visual Studio 2015 o versioni successive, viene creato un riferimento al file anziché un riferimento al progetto se la versione di destinazione di .NET Framework di un progetto è 4.5 o versioni successive e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0.
@@ -109,9 +109,9 @@ Alcuni componenti nell'elenco potrebbero non essere visualizzati, a seconda dell
 
 - Spostare o copiare l'assembly in una o più delle seguenti posizioni:
 
-    - La directory del progetto corrente. È possibile trovare questi assembly tramite la scheda **Sfoglia** .
+   - La directory del progetto corrente. È possibile trovare questi assembly tramite la scheda **Sfoglia** .
 
-    - Altre directory di progetto nella stessa soluzione. È possibile trovare questi assembly tramite la scheda **Progetti**.
+   - Altre directory di progetto nella stessa soluzione. È possibile trovare questi assembly tramite la scheda **Progetti**.
 
     \- oppure -
 
@@ -175,7 +175,7 @@ Per impostazione predefinita, nei progetti desktop il sottogruppo di **base** no
 </PropertyGroup>
 ```
 
-Assicurarsi di selezionare la casella di controllo **Windows** in questo sottogruppo. A questo punto dovrebbe essere possibile utilizzare gli elementi Windows Runtime. Tuttavia, è possibile che si intenda aggiungere <xref:System.Runtime>, in cui Windows Runtime definisce alcune classi e interfacce standard, come <xref:System.Collections.IEnumerable>, che sono usate in tutte le librerie di Windows Runtime. Per informazioni su come aggiungere <xref:System.Runtime>, vedere [Managed desktop apps and Windows Runtime](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types) (App desktop gestite e Windows Runtime).
+Assicurarsi di selezionare la casella di controllo **Windows** in questo sottogruppo. A questo punto dovrebbe essere possibile utilizzare gli elementi Windows Runtime. Tuttavia, è possibile che si intenda aggiungere <xref:System.Runtime>, in cui Windows Runtime definisce alcune classi e interfacce standard, come <xref:System.Collections.IEnumerable>, che sono usate in tutte le librerie di Windows Runtime. Per informazioni su come aggiungere <xref:System.Runtime>, vedere [Managed desktop apps and Windows Runtime](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types) (App desktop gestite e Windows Runtime).
 
 ### <a name="extensions-subgroup"></a>Sottogruppo Estensioni
 

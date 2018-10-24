@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af8904db6d1c07f9c805a21975101d7728456eec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f42416a6d88edc417c0150685ab4c7e198aa808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837100"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Gli identificatori non devono contenere un suffisso non corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -59,15 +60,15 @@ ms.locfileid: "49218309"
 
  Inoltre, i suffissi seguenti dovrebbero **non** utilizzabili:
 
--   delegato
+- delegato
 
--   Enum
+- Enum
 
--   Impl - in alternativa, usare 'Core'
+- Impl - in alternativa, usare 'Core'
 
--   Ad esempio o il suffisso simile per distinguerlo da una versione precedente dello stesso tipo
+- Ad esempio o il suffisso simile per distinguerlo da una versione precedente dello stesso tipo
 
- Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+  Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Rimuovere il suffisso dal nome del tipo.

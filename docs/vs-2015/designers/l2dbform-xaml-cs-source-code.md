@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817537"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Codice sorgente di L2DBForm.xaml.cs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ In questo argomento vengono forniti il contenuto e la descrizione del codice sor
   
  Tuttavia l'operazione principale di rimozione dell'elemento libro selezionato viene effettuata con due sole istruzioni:  
   
--   Innanzitutto viene recuperato l'elemento libro associato all'elemento attualmente selezionato nella casella di riepilogo.  
+- Innanzitutto viene recuperato l'elemento libro associato all'elemento attualmente selezionato nella casella di riepilogo.  
   
-    ```  
-    XElement selBook = (XElement)lbBooks.SelectedItem;   
-    ```  
+  ```  
+  XElement selBook = (XElement)lbBooks.SelectedItem;   
+  ```  
   
--   Quindi questo elemento viene eliminato dal provider di dati.  
+- Quindi questo elemento viene eliminato dal provider di dati.  
   
-    ```  
-    selBook.Remove();  
-    ```  
+  ```  
+  selBook.Remove();  
+  ```  
   
- Ancora una volta, l'associazione dati dinamica assicura l'aggiornamento automatico dell'interfaccia utente del programma.  
+  Ancora una volta, l'associazione dati dinamica assicura l'aggiornamento automatico dell'interfaccia utente del programma.  
   
 ## <a name="example"></a>Esempio  
   

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8684f85c7e5ccb8b4ca93ccc51a24c17ac40f633
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 339b0e9a3637ef375ee3ceee8c5fb84c2670c34f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838244"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di Visual Studio specializzata.
@@ -28,12 +28,12 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di Vi
 ## <a name="prerequisites"></a>Prerequisiti
  Prima di iniziare questa procedura, è innanzitutto necessario installare questi componenti:
 
-|||
-|-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|SDK di visualizzazione e modellazione di Visual Studio||
 
+| | |
+|-|-|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| SDK di visualizzazione e modellazione di Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -42,43 +42,43 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di Vi
 
 #### <a name="to-create-a-domain-specific-language-solution"></a>Per creare una soluzione domain-specific language
 
-1.  Avviare la procedura guidata linguaggio specifico di dominio.
+1. Avviare la procedura guidata linguaggio specifico di dominio.
 
-    1.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+   1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-    2.  Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
+   2. Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-    3.  Sotto **tipi di progetto**, espandere il **altri tipi di progetto** nodo e fare clic su **estendibilità**.
+   3. Sotto **tipi di progetto**, espandere il **altri tipi di progetto** nodo e fare clic su **estendibilità**.
 
-    4.  Fare clic su **finestra di progettazione Domain-Specific Language**.
+   4. Fare clic su **finestra di progettazione Domain-Specific Language**.
 
-    5.  Nel **nome** , digitare un nome per la soluzione. Fare clic su **OK**.
+   5. Nel **nome** , digitare un nome per la soluzione. Fare clic su **OK**.
 
-         Il **Creazione guidata finestra di progettazione di linguaggio specifico di dominio** viene visualizzata.
+       Il **Creazione guidata finestra di progettazione di linguaggio specifico di dominio** viene visualizzata.
 
-        > [!NOTE]
-        >  Preferibilmente, il nome indipendente dai tipi deve essere un Visual identificatore c# valido, poiché potrebbero essere utilizzata per generare il codice.
+      > [!NOTE]
+      >  Preferibilmente, il nome indipendente dai tipi deve essere un Visual identificatore c# valido, poiché potrebbero essere utilizzata per generare il codice.
 
-     ![Finestra di dialogo per la creazione di una soluzione DSL](../modeling/media/create_dsldialog.png)
+      ![Finestra di dialogo per la creazione di una soluzione DSL](../modeling/media/create_dsldialog.png)
 
-2.  Scegliere un modello DSL.
+2. Scegliere un modello DSL.
 
-     Nel **selezionare le opzioni di Domain-Specific Language** pagina, selezionare uno dei modelli di soluzione, ad esempio **linguaggio minimo**. Scegliere un modello simile al linguaggio specifico di dominio che si desidera creare.
+    Nel **selezionare le opzioni di Domain-Specific Language** pagina, selezionare uno dei modelli di soluzione, ad esempio **linguaggio minimo**. Scegliere un modello simile al linguaggio specifico di dominio che si desidera creare.
 
-     Per altre informazioni sui modelli di soluzione, vedere [scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    Per altre informazioni sui modelli di soluzione, vedere [scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-3.  Immettere un'estensione di file **estensione di File** pagina. Deve essere univoco nel computer in uso e in tutti i computer in cui si desidera installare il linguaggio DSL. Verrà visualizzato il messaggio **Nessuna applicazione o un editor di Visual Studio usano questa estensione**.
+3. Immettere un'estensione di file **estensione di File** pagina. Deve essere univoco nel computer in uso e in tutti i computer in cui si desidera installare il linguaggio DSL. Verrà visualizzato il messaggio **Nessuna applicazione o un editor di Visual Studio usano questa estensione**.
 
-    -   Se è stata usata l'estensione in DSL sperimentale precedente che non è stato completamente installato, è comunque possibile cancellarli indietro usando la **reimpostare l'istanza sperimentale** strumento, che sono disponibili nel menu di Visual Studio SDK.
+   -   Se è stata usata l'estensione in DSL sperimentale precedente che non è stato completamente installato, è comunque possibile cancellarli indietro usando la **reimpostare l'istanza sperimentale** strumento, che sono disponibili nel menu di Visual Studio SDK.
 
-    -   Se un'altra estensione di Visual Studio che usa l'estensione di file è stato completamente installata nel computer in uso, è consigliabile disinstallarla. Nel **degli strumenti** menu, fare clic su **gestore estensioni del**.
+   -   Se un'altra estensione di Visual Studio che usa l'estensione di file è stato completamente installata nel computer in uso, è consigliabile disinstallarla. Nel **degli strumenti** menu, fare clic su **gestore estensioni del**.
 
-4.  Esaminare e modificare se necessario, i campi nelle pagine rimanenti della procedura guidata. Quando si è soddisfatti con le impostazioni, fare clic su **fine**. Per altre informazioni sulle impostazioni, vedere [pagine della procedura guidata finestra di progettazione DSL](#settings).
+4. Esaminare e modificare se necessario, i campi nelle pagine rimanenti della procedura guidata. Quando si è soddisfatti con le impostazioni, fare clic su **fine**. Per altre informazioni sulle impostazioni, vedere [pagine della procedura guidata finestra di progettazione DSL](#settings).
 
-     La procedura guidata crea una soluzione che include due progetti, denominati **Dsl** e **DslPackage**.
+    La procedura guidata crea una soluzione che include due progetti, denominati **Dsl** e **DslPackage**.
 
-    > [!NOTE]
-    >  Se viene visualizzato un messaggio che avvisa l'utente non di eseguire modelli di testo da origini non attendibili, fare clic su **OK**. È possibile impostare questo messaggio non venga visualizzato anche in questo caso.
+   > [!NOTE]
+   >  Se viene visualizzato un messaggio che avvisa l'utente non di eseguire modelli di testo da origini non attendibili, fare clic su **OK**. È possibile impostare questo messaggio non venga visualizzato anche in questo caso.
 
 ## <a name="settings"></a> Pagine della procedura guidata della finestra di progettazione DSL
  È possibile lasciare vari campi invariati rispetto ai valori predefiniti. Tuttavia, assicurarsi di che impostare campo dell'estensione di File.

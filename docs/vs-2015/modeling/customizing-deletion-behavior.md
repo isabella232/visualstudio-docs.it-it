@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837561"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizzazione del comportamento di eliminazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ L'eliminazione di un elemento in genere determina l'eliminazione anche degli ele
   
 #### <a name="to-set-delete-propagation"></a>Per impostare la propagazione dell'eliminazione  
   
-1.  Nel diagramma di definizione DSL, selezionare la *ruolo* a cui si desidera propagare l'eliminazione. Il ruolo è rappresentato dalla linea a sinistra o a destra della casella relativa a una relazione di dominio.  
+1. Nel diagramma di definizione DSL, selezionare la *ruolo* a cui si desidera propagare l'eliminazione. Il ruolo è rappresentato dalla linea a sinistra o a destra della casella relativa a una relazione di dominio.  
   
-     Ad esempio, per specificare che ogni volta che si elimina un album vengano eliminati anche gli artisti correlati, selezionare il ruolo connesso alla classe di dominio Artista.  
+    Ad esempio, per specificare che ogni volta che si elimina un album vengano eliminati anche gli artisti correlati, selezionare il ruolo connesso alla classe di dominio Artista.  
   
-2.  Nella finestra Proprietà impostare il **Propaga eliminazione** proprietà.  
+2. Nella finestra Proprietà impostare il **Propaga eliminazione** proprietà.  
   
-3.  Premere F5 e verificare che:  
+3. Premere F5 e verificare che:  
   
-    -   Quando si elimina un'istanza della relazione, venga eliminato anche l'elemento presso il ruolo selezionato.  
+   -   Quando si elimina un'istanza della relazione, venga eliminato anche l'elemento presso il ruolo selezionato.  
   
-    -   Quando si elimina un elemento presso il ruolo opposto, vengano eliminate anche le istanze della relazione e gli elementi correlati presso tale ruolo.  
+   -   Quando si elimina un elemento presso il ruolo opposto, vengano eliminate anche le istanze della relazione e gli elementi correlati presso tale ruolo.  
   
- È anche possibile vedere le **Propaga eliminazione** opzione il **dettagli DSL** finestra. Selezionare una classe di dominio e, nella finestra Dettagli DSL, aprire il **comportamento eliminazione** pagina facendo clic sul pulsante sul lato della finestra. Il **Propagate** opzione viene visualizzata per il ruolo opposto di ogni relazione. Il **Elimina stile** colonna indica se il **Propagate** opzione viene usata l'impostazione predefinita, ma non ha alcun effetto separato.  
+   È anche possibile vedere le **Propaga eliminazione** opzione il **dettagli DSL** finestra. Selezionare una classe di dominio e, nella finestra Dettagli DSL, aprire il **comportamento eliminazione** pagina facendo clic sul pulsante sul lato della finestra. Il **Propagate** opzione viene visualizzata per il ruolo opposto di ogni relazione. Il **Elimina stile** colonna indica se il **Propagate** opzione viene usata l'impostazione predefinita, ma non ha alcun effetto separato.  
   
 ## <a name="delete-propagation-by-using-program-code"></a>Propagazione dell'eliminazione usando il codice programma  
  Le opzioni del file di definizione DSL consentono solo di scegliere se propagare l'eliminazione a un elemento immediatamente adiacente. Per implementare uno schema di propagazione dell'eliminazione più complesso, è possibile scrivere codice programma.  
@@ -138,17 +138,17 @@ partial class MusicLibDeleteClosure
 ##  <a name="ondeleting"></a> Uso di OnDeleting e OnDeleted  
  È possibile eseguire l'override di `OnDeleting()` o di `OnDeleted()` in una classe di dominio o in una relazione di dominio.  
   
-1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> viene chiamato quando un elemento sta per essere eliminato, ma prima dello scollegamento delle relative relazioni. È sempre navigabile da e verso altri elementi e si trova sempre in `store.ElementDirectory`.  
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> viene chiamato quando un elemento sta per essere eliminato, ma prima dello scollegamento delle relative relazioni. È sempre navigabile da e verso altri elementi e si trova sempre in `store.ElementDirectory`.  
   
-     Se si eliminano diversi elementi contemporaneamente, OnDeleting viene chiamato per tutti questi elementi prima di eseguire le eliminazioni.  
+    Se si eliminano diversi elementi contemporaneamente, OnDeleting viene chiamato per tutti questi elementi prima di eseguire le eliminazioni.  
   
-     `IsDeleting` è true.  
+    `IsDeleting` è true.  
   
-2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> è chiamato quando l'elemento è stato eliminato. Resta nell'heap CLR, quindi è possibile eseguire un'operazione di annullamento, se necessario, ma viene scollegato da altri elementi e rimosso da `store.ElementDirectory`. Per le relazioni, ancora riferimento ai ruoli gli assegnatari di ruolo precedente.`IsDeleted` è true.  
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> è chiamato quando l'elemento è stato eliminato. Resta nell'heap CLR, quindi è possibile eseguire un'operazione di annullamento, se necessario, ma viene scollegato da altri elementi e rimosso da `store.ElementDirectory`. Per le relazioni, ancora riferimento ai ruoli gli assegnatari di ruolo precedente.`IsDeleted` è true.  
   
-3.  OnDeleting e OnDeleted vengono chiamati quando l'utente richiama l'annullamento dopo aver creato un elemento e quando una precedente eliminazione viene ripetuta nell'operazione di ripristino. In questi casi, usare `this.Store.InUndoRedoOrRollback` per evitare l'aggiornamento degli elementi dell'archivio. Per altre informazioni, vedere [procedura: usare transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).  
+3. OnDeleting e OnDeleted vengono chiamati quando l'utente richiama l'annullamento dopo aver creato un elemento e quando una precedente eliminazione viene ripetuta nell'operazione di ripristino. In questi casi, usare `this.Store.InUndoRedoOrRollback` per evitare l'aggiornamento degli elementi dell'archivio. Per altre informazioni, vedere [procedura: usare transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
- Ad esempio, il codice seguente elimina un album quando l'ultimo brano figlio viene eliminato:  
+   Ad esempio, il codice seguente elimina un album quando l'ultimo brano figlio viene eliminato:  
   
 ```  
   

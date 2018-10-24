@@ -18,29 +18,29 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 082fe68979ea7ae6a0c0655b7731aa8c7c9f3ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838764"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework
 Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] che è ospitato in un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applicazione web e quindi accedervi da un'applicazione Windows Forms.
 
 In questa procedura dettagliata è:
 
--   Creare un'applicazione web per ospitare un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Creare un'applicazione web per ospitare un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Creare un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] che rappresenta il `Customers` tabella nel database Northwind.
+- Creare un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] che rappresenta il `Customers` tabella nel database Northwind.
 
--   Creare un oggetto [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Creare un oggetto [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Creare un'applicazione client e aggiungere un riferimento al servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Creare un'applicazione client e aggiungere un riferimento al servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Abilitazione del data binding al servizio e generazione dell'interfaccia utente.
+- Abilitazione del data binding al servizio e generazione dell'interfaccia utente.
 
--   Aggiunta facoltativa di funzionalità di filtraggio all'applicazione.
+- Aggiunta facoltativa di funzionalità di filtraggio all'applicazione.
 
 ## <a name="prerequisites"></a>Prerequisiti
 Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di esempio Northwind.
@@ -66,7 +66,7 @@ Nel primo passaggio, si aggiunge un progetto web per ospitare il servizio.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>Per creare il progetto web
+### <a name="to-create-the-web-project"></a>Per creare il progetto web
 
 1.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
@@ -78,7 +78,7 @@ Nel primo passaggio, si aggiunge un progetto web per ospitare il servizio.
 
 Nel passaggio successivo, si crea un' [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] che rappresenta il `Customers` tabella nel database Northwind.
 
-#### <a name="to-create-the-entity-data-model"></a>Per creare il modello Entity Data Model
+### <a name="to-create-the-entity-data-model"></a>Per creare il modello Entity Data Model
 
 1.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
@@ -101,12 +101,12 @@ Nel passaggio successivo, si crea un' [!INCLUDE[adonet_edm](../data-tools/includ
 6.  Se il database richiede una password, scegliere il **Sì, è possibile includere dati sensibili nella stringa di connessione** pulsante di opzione e quindi scegliere il **successivo** pulsante.
 
     > [!NOTE]
-    >  Se viene visualizzata una finestra di dialogo, scegliere **Sì** per salvare il file al progetto.
+    > Se viene visualizzata una finestra di dialogo, scegliere **Sì** per salvare il file al progetto.
 
 7.  Nel **scegliere la versione** pagina, scegliere il **Entity Framework 5.0** pulsante di opzione e quindi scegliere il **Avanti** pulsante.
 
     > [!NOTE]
-    >  Per usare la versione più recente di Entity Framework 6 con i servizi WCF, è necessario installare il pacchetto NuGet del Provider di WCF Data Services Entity Framework. Visualizzare [uso di WCF Data Services 5.6.0 with Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
+    > Per usare la versione più recente di Entity Framework 6 con i servizi WCF, è necessario installare il pacchetto NuGet del Provider di WCF Data Services Entity Framework. Visualizzare [uso di WCF Data Services 5.6.0 with Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  Nel **Scegli oggetti di Database** , espandere il **tabelle** nodo, seleziona il **clienti** casella di controllo e quindi scegliere il **fine** pulsante.
 
@@ -114,7 +114,7 @@ Nel passaggio successivo, si crea un' [!INCLUDE[adonet_edm](../data-tools/includ
 
 Nel passaggio successivo creare e testare il servizio dati.
 
-#### <a name="to-create-the-data-service"></a>Per creare il servizio dati
+### <a name="to-create-the-data-service"></a>Per creare il servizio dati
 
 1.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
@@ -141,7 +141,7 @@ Nel passaggio successivo creare e testare il servizio dati.
      Una rappresentazione XML dei dati di `Customers` viene visualizzata la tabella.
 
     > [!NOTE]
-    >  In alcuni casi, Internet Explorer interpreterà erroneamente i dati come feed RSS. È necessario assicurarsi che l'opzione per visualizzare feed RSS sia disabilitata. Per altre informazioni, vedere [risoluzione dei riferimenti al servizio](../data-tools/troubleshooting-service-references.md).
+    > In alcuni casi, Internet Explorer interpreterà erroneamente i dati come feed RSS. È necessario assicurarsi che l'opzione per visualizzare feed RSS sia disabilitata. Per altre informazioni, vedere [risoluzione dei riferimenti al servizio](../data-tools/troubleshooting-service-references.md).
 
 8.  Chiudere la finestra del browser.
 
@@ -152,7 +152,7 @@ Nei passaggi successivi, si crea un'applicazione client di Windows Form usare il
 
  Nel primo passaggio, aggiungere un progetto Windows Form alla soluzione e impostarlo come progetto di avvio.
 
-#### <a name="to-create-the-client-application"></a>Per creare l'applicazione client
+### <a name="to-create-the-client-application"></a>Per creare l'applicazione client
 
 1.  Nella barra dei menu scegliere File, **Add** > **nuovo progetto**.
 
@@ -166,7 +166,7 @@ Nei passaggi successivi, si crea un'applicazione client di Windows Form usare il
 
 Nel passaggio successivo, aggiungere un riferimento al servizio il [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] nel progetto web.
 
-#### <a name="to-add-a-service-reference"></a>Per aggiungere un riferimento al servizio
+### <a name="to-add-a-service-reference"></a>Per aggiungere un riferimento al servizio
 
 1.  Nella barra dei menu, scegliere **Project** > **Aggiungi riferimento al servizio**.
 
@@ -178,7 +178,7 @@ Nel passaggio successivo, aggiungere un riferimento al servizio il [!INCLUDE[ss_
 
 Nel passaggio successivo, si configura un'origine dati per consentire il data binding al servizio.
 
-#### <a name="to-enable-data-binding-to-the-service"></a>Per abilitare il data binding al servizio
+### <a name="to-enable-data-binding-to-the-service"></a>Per abilitare il data binding al servizio
 
 1.  Nella barra dei menu, scegliere **View** > **Other Windows** > **Zdroje dat**.
 
@@ -192,61 +192,60 @@ Nel passaggio successivo, si configura un'origine dati per consentire il data bi
 
 Nel passaggio successivo è creare l'interfaccia utente che visualizza i dati dal servizio.
 
-#### <a name="to-create-the-user-interface"></a>Per creare l'interfaccia utente
+### <a name="to-create-the-user-interface"></a>Per creare l'interfaccia utente
 
-1.  Nel **Zdroje dat** finestra, aprire il menu di scelta rapida per il **clienti** nodo e scegliere **copia**.
+1. Nel **Zdroje dat** finestra, aprire il menu di scelta rapida per il **clienti** nodo e scegliere **copia**.
 
-2.  Nel **Form1.vb** oppure **Form1.cs** progettazione form, aprire il menu di scelta rapida e scegliere **Incolla**.
+2. Nel **Form1.vb** oppure **Form1.cs** progettazione form, aprire il menu di scelta rapida e scegliere **Incolla**.
 
-     Al form vengono aggiunti un controllo <xref:System.Windows.Forms.DataGridView>, un componente <xref:System.Windows.Forms.BindingSource> e un componente <xref:System.Windows.Forms.BindingNavigator>.
+    Al form vengono aggiunti un controllo <xref:System.Windows.Forms.DataGridView>, un componente <xref:System.Windows.Forms.BindingSource> e un componente <xref:System.Windows.Forms.BindingNavigator>.
 
-3.  Scegliere il **CustomersDataGridView** (controllo) e quindi nel **proprietà** finestra set il **Dock** proprietà **riempire**.
+3. Scegliere il **CustomersDataGridView** (controllo) e quindi nel **proprietà** finestra set il **Dock** proprietà **riempire**.
 
-4.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **Form1** nodo e scegliere **Visualizza codice** per aprire l'Editor di codice e aggiungere il codice seguente `Imports` o`Using`all'inizio del file l'istruzione:
+4. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **Form1** nodo e scegliere **Visualizza codice** per aprire l'Editor di codice e aggiungere il codice seguente `Imports` o`Using`all'inizio del file l'istruzione:
 
-    ```vb
-    Imports NorthwindClient.ServiceReference1
-    ```
+   ```vb
+   Imports NorthwindClient.ServiceReference1
+   ```
 
-    ```csharp
-    using NorthwindClient.ServiceReference1;
-    ```
+   ```csharp
+   using NorthwindClient.ServiceReference1;
+   ```
 
-5.  Aggiungere il codice seguente al gestore eventi `Form1_Load`:
+5. Aggiungere il codice seguente al gestore eventi `Form1_Load` :
 
-    ```vb
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            Dim proxy As New NorthwindEntities _
-    (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
-            Me.CustomersBindingSource.DataSource = proxy.Customers
-        End Sub
-    ```
+   ```vb
+   Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+           Dim proxy As New NorthwindEntities _
+   (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
+           Me.CustomersBindingSource.DataSource = proxy.Customers
+       End Sub
+   ```
 
-    ```csharp
-    private void Form1_Load(object sender, EventArgs e)
-    {
-    NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
-    this.CustomersBindingSource.DataSource = proxy.Customers;
-    }
+   ```csharp
+   private void Form1_Load(object sender, EventArgs e)
+   {
+   NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
+   this.CustomersBindingSource.DataSource = proxy.Customers;
+   }
+   ```
 
-    ```
+6. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **NorthwindCustomers. svc** del file e scegliere **Visualizza nel Browser**. Verrà aperto Internet Explorer e viene visualizzato il XML schema per il servizio.
 
-6.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **NorthwindCustomers. svc** del file e scegliere **Visualizza nel Browser**. Verrà aperto Internet Explorer e viene visualizzato il XML schema per il servizio.
+7. Copiare l'URL dalla barra degli indirizzi di Internet Explorer.
 
-7.  Copiare l'URL dalla barra degli indirizzi di Internet Explorer.
-
-8.  Nel codice aggiunto nel passaggio 4, selezionare `http://localhost:53161/NorthwindCustomers.svc/` e sostituirlo con l'URL appena copiato.
+8. Nel codice aggiunto nel passaggio 4, selezionare `http://localhost:53161/NorthwindCustomers.svc/` e sostituirlo con l'URL appena copiato.
 
 9. Nella barra dei menu, scegliere **Debug** > **Avvia debug** per eseguire l'applicazione. Vengono visualizzate le informazioni dei clienti.
 
- A questo punto si disporrà di un'applicazione nella quale sarà visualizzato un elenco di clienti del servizio NorthwindCustomers. Se si desidera esporre altri dati tramite il servizio, è possibile modificare [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] per includere tabelle aggiuntive dal database Northwind.
+   A questo punto si disporrà di un'applicazione nella quale sarà visualizzato un elenco di clienti del servizio NorthwindCustomers. Se si desidera esporre altri dati tramite il servizio, è possibile modificare [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] per includere tabelle aggiuntive dal database Northwind.
 
 Il prossimo passaggio facoltativo, descrive come filtrare i dati restituiti dal servizio.
 
 ## <a name="adding-filtering-capabilities"></a>Aggiunta di funzionalità di filtraggio
  In questo passaggio si personalizza l'applicazione per filtrare i dati in base alla città del cliente.
 
-#### <a name="to-add-filtering-by-city"></a>Per aggiungere il filtraggio in base alla città
+### <a name="to-add-filtering-by-city"></a>Per aggiungere il filtraggio in base alla città
 
 1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **Form1.vb** oppure **Form1.cs** nodo e scegliere **aprire**.
 

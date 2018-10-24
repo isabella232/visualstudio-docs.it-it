@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ad96b9ed53b7600417f3c3e8a283c7a4a372842
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddb8f32cbf23184da140c3426e88c1f622dea1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832680"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,19 +43,19 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
 #### <a name="to-create-a-phong-shader"></a>Per creare uno shader Phong  
   
-1.  Creare uno shader Lambert, come descritto in [Procedura: Creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).  
+1. Creare uno shader Lambert, come descritto in [Procedura: Creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).  
   
-2.  Scollegare il nodo **Lambert** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Lambert** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.  
+2. Scollegare il nodo **Lambert** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Lambert** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.  
   
-3.  Aggiungere un nodo **Aggiungi** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Aggiungi** e spostarlo nell'area di progettazione.  
+3. Aggiungere un nodo **Aggiungi** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Aggiungi** e spostarlo nell'area di progettazione.  
   
-4.  Aggiungere un nodo **Speculare** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Speculare** e spostarlo nell'area di progettazione.  
+4. Aggiungere un nodo **Speculare** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Speculare** e spostarlo nell'area di progettazione.  
   
-5.  Aggiungere il contributo speculare. Spostare il terminale **Output** del nodo **Speculare** nel terminale **X** del nodo **Aggiungi** e quindi spostare il terminale **Output** del nodo **Lambert** nel terminale **Y** del nodo **Aggiungi**. Queste connessioni combinano i contributi totali di colore con riflessione diffusa e colore speculare per il pixel.  
+5. Aggiungere il contributo speculare. Spostare il terminale **Output** del nodo **Speculare** nel terminale **X** del nodo **Aggiungi** e quindi spostare il terminale **Output** del nodo **Lambert** nel terminale **Y** del nodo **Aggiungi**. Queste connessioni combinano i contributi totali di colore con riflessione diffusa e colore speculare per il pixel.  
   
-6.  Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Aggiungi** nel terminale **RGB** del nodo **Colore finale**.  
+6. Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Aggiungi** nel terminale **RGB** del nodo **Colore finale**.  
   
- La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.  
+   La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.  
   
 > [!NOTE]
 >  Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader e un colore metallizzato usando i parametri **MaterialSpecular** e **MaterialSpecularPower**. Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).  

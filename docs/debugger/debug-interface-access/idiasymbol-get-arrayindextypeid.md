@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_arrayIndexTypeId | Documenti Microsoft
+title: Get_arrayindextypeid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e4479a848978a41991c217fcbca578b033495
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bc761032c3a64200057f5e793aca80b1684c0d20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818653"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 Recupera l'identificatore di tipo di indice di matrice del simbolo.  
@@ -43,14 +43,14 @@ HRESULT get_arrayIndexTypeId (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- L'identificatore è un valore univoco creato da DIA SDK per contrassegnare tutti i simboli come univoca.  
+ L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 7.0 DIA SDK|  
+|Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
