@@ -13,12 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747352"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459673"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -151,7 +151,7 @@ Dopo aver verificato che tutto funzioni, è possibile preparare una build di ril
 
 Al termine della compilazione sarà stata creata un'applicazione che è possibile copiare ed eseguire in qualsiasi finestra del prompt dei comandi. Potrebbe non servire a molto, ma è il punto di partenza per grandi cose.
 
-La guida introduttiva è stata completata. Per esaminare altri esempi, vedere [Visual Studio Samples](../ide/visual-studio-samples.md).
+La guida introduttiva è stata completata.
 
 ## <a name="see-also"></a>Vedere anche
 

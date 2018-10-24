@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7ba1ad9158431a157bdba588b88f366eac45889a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812075"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
 
@@ -64,9 +64,9 @@ L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il r
 
    È ora possibile esaminare le cartelle e i file nel repository clonato, visualizzare il codice ed eseguire ricerche al suo interno nell'editor del codice di Visual Studio, usufruendo della colorazione della sintassi e di altre funzionalità.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![icona della telecamera per un video](../install/media/video-icon.png)|    [Guardare un video](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) su come clonare e aprire il codice da un repository di GitHub in Visual Studio. |
+| ![icona della telecamera per un video](../install/media/video-icon.png)| [Guardare un video](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) su come clonare e aprire il codice da un repository di GitHub in Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Eseguire il codice ed eseguirne il debug
 

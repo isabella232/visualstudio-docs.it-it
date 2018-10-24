@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812998"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisi delle violazioni delle regole di soglia nei test di carico tramite l'Analizzatore test di carico
 
@@ -35,7 +35,7 @@ Se si verificano violazioni, sulla barra di stato dell'**Analizzatore test di ca
  Nella tabella vengono visualizzate le prime 1.000 violazioni di soglia. La tabella seguente contiene queste colonne:
 
 |Colonna|Descrizione|Visibile per impostazione predefinita|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Ora|L'ora durante il test di carico in cui si è verificata la violazione.|Yes|
 |Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:** questo nome è importante quando i test di carico vengono eseguiti in rig.|Yes|
 |Category|La categoria del contatore delle prestazioni in cui si è verificata la violazione.|Yes|

@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea73a4f21a36907e3252530f68263e1a63a8819
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0f0abe9db7178678c4ffda7f4179117817b3add6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153917"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879306"
 ---
 # <a name="override-toolsversion-settings"></a>Override delle impostazioni ToolsVersion
 È possibile modificare il set di strumenti per progetti e soluzioni nei tre modi seguenti:  
   
-1.  Usando l'opzione `/ToolsVersion` (o `/tv`, in breve) quando si compila il progetto o la soluzione dalla riga di comando.  
+1.  Usando l'opzione `-ToolsVersion` (o `-tv`, in breve) quando si compila il progetto o la soluzione dalla riga di comando.  
   
 2.  Impostando il parametro `ToolsVersion` sull'attività MSBuild.  
   
 3.  Impostando la proprietà `$(ProjectToolsVersion)` in un progetto all'interno di una soluzione. Questo consente di compilare un progetto in una soluzione con una versione del set di strumenti diversa da quella degli altri progetti.  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Eseguire l'override delle impostazioni di ToolsVersion di progetti e soluzioni nelle compilazioni da riga di comando  
- Anche se i progetti Visual Studio vengono in genere compilati con la versione di ToolsVersion specificata nel file di progetto, è possibile usare l'opzione `/ToolsVersion` (o `/tv`) della riga di comando per eseguire l'override del valore e compilare tutti i progetti e le dipendenze tra progetti con un set di strumenti diverso. Ad esempio:  
+ Anche se i progetti Visual Studio vengono in genere compilati con la versione di ToolsVersion specificata nel file di progetto, è possibile usare l'opzione `-ToolsVersion` (o `-tv`) della riga di comando per eseguire l'override del valore e compilare tutti i progetti e le dipendenze tra progetti con un set di strumenti diverso. Ad esempio:  
   
 ```cmd  
-msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
+msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug  
 ```  
   
  Nell'esempio seguente tutti i progetti vengono compilati usando ToolsVersion 12.0. Vedere la sezione [Ordine di precedenza](#order-of-precedence) più avanti in questo argomento.  
   
- Quando si usa l'opzione `/tv` della riga di comando, è possibile usare facoltativamente la proprietà `$(ProjectToolsVersion)` nei progetti singoli per compilarli con un valore ToolsVersion diverso dagli altri progetti della soluzione.  
+ Quando si usa l'opzione `-tv` della riga di comando, è possibile usare facoltativamente la proprietà `$(ProjectToolsVersion)` nei progetti singoli per compilarli con un valore ToolsVersion diverso dagli altri progetti della soluzione.  
   
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>Eseguire l'override delle impostazioni ToolsVersion usando il parametro ToolsVersion dell'attività MSBuild  
  L'attività MSBuild è il mezzo principale per consentire a un progetto di compilarne un altro. Per consentire all'attività MSBuild di compilare un progetto con un ToolsVersion diverso da quello specificato nel progetto, è disponibile un parametro dell'attività facoltativo denominato `ToolsVersion`. L'esempio seguente illustra come usare tale parametro:  
@@ -78,10 +78,10 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
 3.  Immettere il comando seguente in un prompt dei comandi:  
   
     ```cmd  
-    msbuild projectA.proj /t:go /toolsversion:3.5  
+    msbuild projectA.proj -t:go -toolsversion:3.5  
     ```  
   
-4.  Viene visualizzato l'output seguente. Per `projectA`, l'impostazione `/toolsversion:3.5` nella riga di comando esegue l'override dell'impostazione `ToolsVersion=12.0` nel tag `Project`.  
+4.  Viene visualizzato l'output seguente. Per `projectA`, l'impostazione `-toolsversion:3.5` nella riga di comando esegue l'override dell'impostazione `ToolsVersion=12.0` nel tag `Project`.  
   
      `ProjectB` viene chiamato da un'attività in `projectA`. L'attività presenta `ToolsVersion=2.0`, che esegue l'override delle altre impostazioni di `ToolsVersion` per `projectB`.  
   
@@ -101,7 +101,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 1.  Attributo `ToolsVersion` sull'attività MSBuild usato per compilare il progetto, se disponibile.  
   
-2.  Opzione `/toolsversion` (o `/tv`) usata nel comando msbuild.exe, se disponibile.  
+2.  Opzione `-toolsversion` (o `-tv`) usata nel comando msbuild.exe, se disponibile.  
   
 3.  Se la variabile di ambiente `MSBUILDTREATALLTOOLSVERSIONSASCURRENT` è impostata, usare il valore `ToolsVersion` corrente.  
   
