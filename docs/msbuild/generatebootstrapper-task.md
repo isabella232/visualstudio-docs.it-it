@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 53ad85f77d014d534d625b8d08e36b7eb8c01f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895730"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (attività)
 Consente di rilevare, scaricare e installare automaticamente un'applicazione e i relativi prerequisiti. Funge da programma di installazione singolo che integra i programmi di installazione separati per tutti i componenti che costituiscono un'applicazione.  
@@ -33,122 +33,122 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
 ## <a name="task-parameters"></a>Parametri dell'attività  
  Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.  
   
--   `ApplicationFile`  
+- `ApplicationFile`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica il file che verrà usato dal programma di avvio automatico per iniziare l'installazione dell'applicazione dopo l'installazione di tutti i prerequisiti. Se non si specifica il parametro `BootstrapperItems` o `ApplicationFile`, si verificherà un errore di compilazione.  
+   Specifica il file che verrà usato dal programma di avvio automatico per iniziare l'installazione dell'applicazione dopo l'installazione di tutti i prerequisiti. Se non si specifica il parametro `BootstrapperItems` o `ApplicationFile`, si verificherà un errore di compilazione.  
   
--   `ApplicationName`  
+- `ApplicationName`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica il nome dell'applicazione che verrà installata dal programma di avvio automatico. Questo nome verrà visualizzato nell'interfaccia utente usata dal programma di avvio automatico durante l'installazione.  
+   Specifica il nome dell'applicazione che verrà installata dal programma di avvio automatico. Questo nome verrà visualizzato nell'interfaccia utente usata dal programma di avvio automatico durante l'installazione.  
   
--   `ApplicationRequiresElevation`  
+- `ApplicationRequiresElevation`  
   
-     Parametro `Boolean` facoltativo.  
+   Parametro `Boolean` facoltativo.  
   
-     Se `true`, il componente viene eseguito con autorizzazioni elevate quando viene installato in un computer di destinazione.  
+   Se `true`, il componente viene eseguito con autorizzazioni elevate quando viene installato in un computer di destinazione.  
   
--   `ApplicationUrl`  
+- `ApplicationUrl`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica il percorso Web che ospita il programma di installazione dell'applicazione.  
+   Specifica il percorso Web che ospita il programma di installazione dell'applicazione.  
   
--   `BootstrapperComponentFiles`  
+- `BootstrapperComponentFiles`  
   
-     Parametro di ouput facoltativo `String[]`.  
+   Parametro di ouput facoltativo `String[]`.  
   
-     Specifica il percorso predefinito dei file di pacchetto del programma di avvio automatico.  
+   Specifica il percorso predefinito dei file di pacchetto del programma di avvio automatico.  
   
--   `BootstrapperItems`  
+- `BootstrapperItems`  
   
-     Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.  
+   Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.  
   
-     Specifica i prodotti da compilare nel programma di avvio automatico. Gli elementi passati a questo parametro devono avere la sintassi seguente:  
+   Specifica i prodotti da compilare nel programma di avvio automatico. Gli elementi passati a questo parametro devono avere la sintassi seguente:  
   
-    ```xml  
-    <BootstrapperItem  
-        Include="ProductCode">  
-        <ProductName>  
-            ProductName  
-        </ProductName>  
-    </BootstrapperItem>  
-    ```  
+  ```xml  
+  <BootstrapperItem  
+      Include="ProductCode">  
+      <ProductName>  
+          ProductName  
+      </ProductName>  
+  </BootstrapperItem>  
+  ```  
   
-     L'attributo `Include` rappresenta il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono parametri di input [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obbligatori a meno che non sia stato specificato alcun `ApplicationFile`. È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.  
+   L'attributo `Include` rappresenta il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono parametri di input [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obbligatori a meno che non sia stato specificato alcun `ApplicationFile`. È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.  
   
-     Se non si specifica il parametro `BootstrapperItems` o `ApplicationFile`, si verificherà un errore di compilazione.  
+   Se non si specifica il parametro `BootstrapperItems` o `ApplicationFile`, si verificherà un errore di compilazione.  
   
--   `BootstrapperKeyFile`  
+- `BootstrapperKeyFile`  
   
-     Parametro di ouput facoltativo `String`.  
+   Parametro di ouput facoltativo `String`.  
   
-     Specifica il percorso di compilazione del file *setup.exe*  
+   Specifica il percorso di compilazione del file *setup.exe*  
   
--   `ComponentsLocation`  
+- `ComponentsLocation`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica il percorso in cui il programma di avvio automatico esegue la ricerca dei prerequisiti di installazione. Per il parametro è possibile specificare i valori seguenti:  
+   Specifica il percorso in cui il programma di avvio automatico esegue la ricerca dei prerequisiti di installazione. Per il parametro è possibile specificare i valori seguenti:  
   
-    -   `HomeSite`: indica che il prerequisito è ospitato dal fornitore del componente.  
+  - `HomeSite`: indica che il prerequisito è ospitato dal fornitore del componente.  
   
-    -   `Relative`: indica che il prerequisito è nella stessa posizione dell'applicazione.  
+  - `Relative`: indica che il prerequisito è nella stessa posizione dell'applicazione.  
   
-    -   `Absolute`: indica che tutti i componenti devono trovarsi in un URL centralizzato. Questo valore deve essere usato con il parametro di input `ComponentsUrl`.  
+  - `Absolute`: indica che tutti i componenti devono trovarsi in un URL centralizzato. Questo valore deve essere usato con il parametro di input `ComponentsUrl`.  
   
-     Se `ComponentsLocation` non è specificato, per impostazione predefinita viene usato `HomeSite`.  
+    Se `ComponentsLocation` non è specificato, per impostazione predefinita viene usato `HomeSite`.  
   
--   `ComponentsUrl`  
+- `ComponentsUrl`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica l'URL che contiene i prerequisiti di installazione.  
+   Specifica l'URL che contiene i prerequisiti di installazione.  
   
--   `CopyComponents`  
+- `CopyComponents`  
   
-     Parametro `Boolean` facoltativo.  
+   Parametro `Boolean` facoltativo.  
   
-     Se `true`, il programma di avvio automatico copia tutti i file di output nel percorso specificato nel parametro `OutputPath`. I valori del parametro `BootstrapperComponentFiles` devono essere tutti basati su questo percorso. Se `false`, i file non vengono copiati e i valori di `BootstrapperComponentFiles` si basano sul valore del parametro `Path`.  Il valore predefinito di questo parametro è `true`.  
+   Se `true`, il programma di avvio automatico copia tutti i file di output nel percorso specificato nel parametro `OutputPath`. I valori del parametro `BootstrapperComponentFiles` devono essere tutti basati su questo percorso. Se `false`, i file non vengono copiati e i valori di `BootstrapperComponentFiles` si basano sul valore del parametro `Path`.  Il valore predefinito di questo parametro è `true`.  
   
--   `Culture`  
+- `Culture`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica le impostazioni cultura da usare per i prerequisiti relativi all'interfaccia utente del programma di avvio automatico e all'installazione. Se le impostazioni cultura specificate non sono disponibili, l'attività usa il valore del parametro `FallbackCulture`.  
+   Specifica le impostazioni cultura da usare per i prerequisiti relativi all'interfaccia utente del programma di avvio automatico e all'installazione. Se le impostazioni cultura specificate non sono disponibili, l'attività usa il valore del parametro `FallbackCulture`.  
   
--   `FallbackCulture`  
+- `FallbackCulture`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica le impostazioni cultura secondarie da usare per l'interfaccia utente di avvio e i prerequisiti di installazione.  
+   Specifica le impostazioni cultura secondarie da usare per l'interfaccia utente di avvio e i prerequisiti di installazione.  
   
--   `OutputPath`  
+- `OutputPath`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica il percorso in cui copiare *setup.exe* e tutti i file di pacchetto.  
+   Specifica il percorso in cui copiare *setup.exe* e tutti i file di pacchetto.  
   
--   `Path`  
+- `Path`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica il percorso di tutti i pacchetti dei prerequisiti disponibili.  
+   Specifica il percorso di tutti i pacchetti dei prerequisiti disponibili.  
   
--   `SupportUrl`  
+- `SupportUrl`  
   
-     Parametro `String` facoltativo.  
+   Parametro `String` facoltativo.  
   
-     Specifica l'URL da implementare se l'installazione del programma di avvio automatico ha esito negativo.  
+   Specifica l'URL da implementare se l'installazione del programma di avvio automatico ha esito negativo.  
   
--   `Validate`  
+- `Validate`  
   
-     Parametro `Boolean` facoltativo.  
+   Parametro `Boolean` facoltativo.  
   
-     Se `true`, il programma di avvio automatico esegue la convalida XSD sugli elementi del programma di avvio automatico di input specificati. Il valore predefinito di questo parametro è `false`.  
+   Se `true`, il programma di avvio automatico esegue la convalida XSD sugli elementi del programma di avvio automatico di input specificati. Il valore predefinito di questo parametro è `false`.  
   
 ## <a name="remarks"></a>Note  
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
