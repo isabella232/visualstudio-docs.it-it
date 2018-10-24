@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_checksumtype | Documenti Microsoft'
+title: Get_checksumtype | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d1aa687ec7f19df61031d4ff334751ccabaebd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 39fa53d00d17446e63170d5b729d2e669ecb987b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948421"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Recupera il tipo di checksum.  
@@ -46,11 +46,11 @@ HRESULT get_checksumType (
 |-------------------|---------------------|-----------------|  
 |0|\<Nessuno >|Checksum non presente.|  
 |1|`CALG_MD5`|checksum generato con l'algoritmo hash MD5.|  
-|2|`CALG_SHA1`|checksum generato con l'algoritmo hash SHA1.|  
+|2|`CALG_SHA1`|checksum generato con l'algoritmo di hash SHA1.|  
   
- Il `CryptoAPI` etichette sono compresi il `ALG_ID` enumerazione. Per ulteriori informazioni su algoritmi di hash, consultare il `CryptoAPI` sezione di Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].  
+ Il `CryptoAPI` le etichette sono compresi il `ALG_ID` enumerazione. Per altre informazioni su algoritmi di hash, consultare il `CryptoAPI` sezione di Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].  
   
- Per ottenere i byte di checksum effettivo del file di origine, chiamare il [idiasourcefile:: Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) metodo.  
+ Per ottenere i byte di valore di checksum effettivo per il file di origine, chiamare il [Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 49329dab868e5d8fb1418915a27449de3cbd1f7e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: cd7f1f36374f3411b5a76f5df5e3e25bb52df230
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948642"
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 
@@ -34,11 +34,11 @@ In un modello di testo in fase di progettazione di Visual Studio, il `assembly` 
 
  Il nome dell'assembly deve essere uno dei seguenti:
 
--   Il nome sicuro dell'assembly nella GAC, quale `System.Xml.dll`. È inoltre possibile utilizzare la forma estesa, quale `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Per altre informazioni, vedere <xref:System.Reflection.AssemblyName>.
+- Il nome sicuro dell'assembly nella GAC, quale `System.Xml.dll`. È inoltre possibile utilizzare la forma estesa, quale `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Per altre informazioni, vedere <xref:System.Reflection.AssemblyName>.
 
--   Il percorso assoluto dell'assembly
+- Il percorso assoluto dell'assembly
 
- È possibile usare la `$(variableName)` sintassi per fare riferimento a variabili di Visual Studio, ad esempio `$(SolutionDir)`, e `%VariableName%` alle variabili di ambiente di riferimento. Ad esempio:
+  È possibile usare la `$(variableName)` sintassi per fare riferimento a variabili di Visual Studio, ad esempio `$(SolutionDir)`, e `%VariableName%` alle variabili di ambiente di riferimento. Ad esempio:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -49,21 +49,21 @@ In un modello di testo in fase di progettazione di Visual Studio, il `assembly` 
 ## <a name="standard-assemblies"></a>Assembly standard
  Gli assembly seguenti vengono caricati automaticamente, in modo che non sia necessario scrivere per essi direttive dell'assembly:
 
--   `Microsoft.VisualStudio.TextTemplating.1*.dll`
+- `Microsoft.VisualStudio.TextTemplating.1*.dll`
 
--   `System.dll`
+- `System.dll`
 
--   `WindowsBase.dll`
+- `WindowsBase.dll`
 
- Se si utilizza una direttiva personalizzata, il processore di direttiva potrebbe caricare assembly aggiuntivi. Ad esempio, se si scrivono modelli per un linguaggio DSL, non è necessario scrivere direttive dell'assembly per gli assembly seguenti:
+  Se si utilizza una direttiva personalizzata, il processore di direttiva potrebbe caricare assembly aggiuntivi. Ad esempio, se si scrivono modelli per un linguaggio DSL, non è necessario scrivere direttive dell'assembly per gli assembly seguenti:
 
--   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
+- `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
 
--   `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`
+- `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`
 
--   `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
+- `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
 
--   Assembly contenente il modello DSL.
+- Assembly contenente il modello DSL.
 
 ## <a name="msbuild"></a> Usando le proprietà del progetto in MSBuild e Visual Studio
  Macro di Visual Studio, ad esempio SolutionDir non funzionano in MSBuild. Se si desidera trasformare i modelli nel computer di compilazione, è necessario utilizzare le proprietà del progetto.
@@ -82,7 +82,6 @@ In un modello di testo in fase di progettazione di Visual Studio, il `assembly` 
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
  È ora possibile usare la proprietà del progetto nei modelli di testo, che si trasformano correttamente in Visual Studio e in MSBuild:

@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: f119f3b2bc438eacfaaa722bd57fb440aa303052
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425595"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948928"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C++
 
@@ -170,7 +170,6 @@ Se si prova a inserire il frammento distruttore all'esterno di una classe, esso 
 ```cpp
 ~TypeNamePlaceholder()
 {
-
 ```
 
 ## <a name="see-also"></a>Vedere anche
