@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877491"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49176306"
   
  La radice di un file web.config è l'elemento **configuration**. Per instrumentare e profilare un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilata in modo dinamico, è necessario aggiungere o modificare gli elementi seguenti:  
   
--   Elemento **configuration/runtime/assemblyBinding/dependentAssembly** che identifica l'assembly Microsoft.VisualStudio.Enterprise.ASPNetHelper che controlla il profilo. L'elemento **dependentAssembly** contiene due elementi figlio: **assemblyIdentity** e **codeBase**.  
+- Elemento **configuration/runtime/assemblyBinding/dependentAssembly** che identifica l'assembly Microsoft.VisualStudio.Enterprise.ASPNetHelper che controlla il profilo. L'elemento **dependentAssembly** contiene due elementi figlio: **assemblyIdentity** e **codeBase**.  
   
--   Elemento **configuration/system.web/compilation** che identifica il passaggio di compilazione post-elaborazione del profiler per l'assembly di destinazione.  
+- Elemento **configuration/system.web/compilation** che identifica il passaggio di compilazione post-elaborazione del profiler per l'assembly di destinazione.  
   
--   Due elementi **add** che identificano il percorso degli strumenti di profilatura aggiunti alla sezione **configuration/appSettings**.  
+- Due elementi **add** che identificano il percorso degli strumenti di profilatura aggiunti alla sezione **configuration/appSettings**.  
   
- Si consiglia di creare una copia del file web.config originale da usare per ripristinare la configurazione dell'applicazione.  
+  Si consiglia di creare una copia del file web.config originale da usare per ripristinare la configurazione dell'applicazione.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Per aggiungere l'assembly ASPNetHelper come elemento configuration/runtime/assemblyBinding/dependentAssembly  
   

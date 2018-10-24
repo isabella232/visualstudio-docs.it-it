@@ -22,37 +22,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873877"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procedura dettagliata: Creare un flusso di lavoro con form di associazione e di avvio
   Questa procedura dettagliata viene illustrato come creare un flusso di lavoro sequenza base che incorpora l'utilizzo dei form di associazione e di avvio. Questi sono i form ASPX che abilitano i parametri per essere aggiunti a un flusso di lavoro quando è associato prima di tutto dall'amministratore di SharePoint (form di associazione) e quando il flusso di lavoro viene avviato dall'utente (form di avvio).  
   
  Questa procedura dettagliata descrive uno scenario in cui un utente vuole creare un flusso di lavoro di approvazione delle note spese presenta i requisiti seguenti:  
   
--   Quando il flusso di lavoro è associato a un elenco, l'amministratore viene visualizzato un form di associazione in cui immettere un limite di dollari per spese.  
+- Quando il flusso di lavoro è associato a un elenco, l'amministratore viene visualizzato un form di associazione in cui immettere un limite di dollari per spese.  
   
--   I dipendenti caricare i rapporti spese nell'elenco di documenti condivisi, avviare il flusso di lavoro e quindi immettere il costo totale nel form di avvio del flusso di lavoro.  
+- I dipendenti caricare i rapporti spese nell'elenco di documenti condivisi, avviare il flusso di lavoro e quindi immettere il costo totale nel form di avvio del flusso di lavoro.  
   
--   Se un rapporto spese dipendente totale supera il limite predefinito dell'amministratore, viene creata un'attività per il responsabile approvazione della nota spese. Tuttavia, se expense report totale un dipendente è minore o uguale al limite di spesa, viene scritto un messaggio di approvazione automatica all'elenco cronologia del flusso di lavoro.  
+- Se un rapporto spese dipendente totale supera il limite predefinito dell'amministratore, viene creata un'attività per il responsabile approvazione della nota spese. Tuttavia, se expense report totale un dipendente è minore o uguale al limite di spesa, viene scritto un messaggio di approvazione automatica all'elenco cronologia del flusso di lavoro.  
   
- Questa procedura dettagliata illustra le attività seguenti:  
+  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Creazione di un progetto di flusso di lavoro sequenziale di definizione elenco di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+- Creazione di un progetto di flusso di lavoro sequenziale di definizione elenco di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Creazione di una pianificazione del flusso di lavoro.  
+- Creazione di una pianificazione del flusso di lavoro.  
   
--   La gestione degli eventi di attività del flusso di lavoro.  
+- La gestione degli eventi di attività del flusso di lavoro.  
   
--   Creazione di form di associazione e di avvio del flusso di lavoro.  
+- Creazione di form di associazione e di avvio del flusso di lavoro.  
   
--   Associazione del flusso di lavoro.  
+- Associazione del flusso di lavoro.  
   
--   Avviare manualmente il flusso di lavoro.  
+- Avviare manualmente il flusso di lavoro.  
   
 > [!NOTE]  
 >  Sebbene questa procedura dettagliata Usa un progetto di flusso di lavoro sequenziale, il processo è lo stesso per flussi di lavoro di stato.  

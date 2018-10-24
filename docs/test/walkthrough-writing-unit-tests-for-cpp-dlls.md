@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877257"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C/C++
 
@@ -117,53 +117,53 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 ##  <a name="make_functions_visible"></a> Unire il progetto di test al progetto DLL
 
-1.  Aggiungere il progetto DLL ai riferimenti del progetto di test:
+1. Aggiungere il progetto DLL ai riferimenti del progetto di test:
 
-    1.  Aprire le proprietà del progetto di test e scegliere **Proprietà comuni** > **Framework e riferimenti**.
+   1.  Aprire le proprietà del progetto di test e scegliere **Proprietà comuni** > **Framework e riferimenti**.
 
-         ![Proprietà progetto C++ | Framework e riferimenti](../test/media/utecpp08.png)
+        ![Proprietà progetto C++ | Framework e riferimenti](../test/media/utecpp08.png)
 
-    2.  Scegliere **Aggiungi nuovo riferimento**.
+   2.  Scegliere **Aggiungi nuovo riferimento**.
 
-         Nella finestra di dialogo **Aggiungi riferimento** , selezionare il progetto DLL e scegliere **Aggiungi**.
+        Nella finestra di dialogo **Aggiungi riferimento** , selezionare il progetto DLL e scegliere **Aggiungi**.
 
-         ![Proprietà progetto C++ | Aggiungi nuovo riferimento](../test/media/utecpp09.png)
+        ![Proprietà progetto C++ | Aggiungi nuovo riferimento](../test/media/utecpp09.png)
 
-2.  Nel file principale *con estensione cpp* dello unit test, includere il file *con estensione h* del codice DLL:
+2. Nel file principale *con estensione cpp* dello unit test, includere il file *con estensione h* del codice DLL:
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  Aggiungere un test di base che usa la funzione esportata:
+3. Aggiungere un test di base che usa la funzione esportata:
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  Compilare la soluzione.
+4. Compilare la soluzione.
 
-     Il nuovo test viene visualizzato in **Esplora test**.
+    Il nuovo test viene visualizzato in **Esplora test**.
 
-5.  In **Esplora test** scegliere **Esegui tutto**.
+5. In **Esplora test** scegliere **Esegui tutto**.
 
-     ![Esplora unit test &#45; Test di base superato](../test/media/utecpp10.png)
+    ![Esplora unit test &#45; Test di base superato](../test/media/utecpp10.png)
 
- È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
+   È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
 ##  <a name="iterate"></a> Aumentare i test in maniera iterativa e farli passare
 

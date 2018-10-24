@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolByVAEx | Documenti Microsoft
+title: Findsymbolbyvaex | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3fad26dfd43057f02105e867c5f1f0add57b20d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 706049acf99804038f48125b77a71b879658baac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874462"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
-Recupera un tipo di simbolo specificato che contiene o vicino a un indirizzo virtuale specificato (VA) e l'offset.  
+Recupera un tipo di simbolo specificato che contiene, o più vicino a un indirizzo virtuale specificato (valutazione della vulnerabilità) e l'offset.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ HRESULT findSymbolByVAEx (
  [in] Specifica il Virginia.  
   
  `symtag`  
- [in] Tipo di simbolo da trovare. I valori vengono prelevati i [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) enumerazione.  
+ [in] Tipo di simbolo da trovare. I valori sono ricavati dal [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione.  
   
  `ppSymbol`  
  [out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperare l'oggetto che rappresenta il simbolo.  
   
  `displacement`  
- [out] Restituisce un valore che specifica un offset dall'indirizzo virtuale specificato da `va`.  
+ [out] Restituisce un valore che specifica un offset dall'indirizzo virtuale fornito dal `va`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
@@ -64,4 +64,4 @@ pSession->findSymbolByVAEx( va, SymTagFunction, &pFunc, &disp );
  [Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Findsymbolbyva](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)
+ [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

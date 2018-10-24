@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InitSourceDataProvider | Documenti Microsoft
+title: IPropertyProxyEESide::InitSourceDataProvider | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6ae2716fc76d77d1c670bb206168826c66c48ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41add9a334dd6e78a476134845db7d31664755c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871082"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Inizializza i dati di origine per questo oggetto e restituisce un oggetto contenente i dati iniziali.  
@@ -47,7 +47,7 @@ int InitSourceDataProvider(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo esegue tutte le operazioni necessarie per inizializzare un oggetto in modo che può restituire un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) interfaccia sui dati dell'oggetto. In questo modo i dati dell'oggetto essere visualizzate e, se consentito, modificato da un visualizzatore di tipo.  
+ Questo metodo esegue tutte le operazioni necessarie per inizializzare un oggetto in modo che venga restituito un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) interfaccia sui dati dell'oggetto. Ciò consente di essere visualizzate e, se consentito, modificato da un visualizzatore di tipi di dati dell'oggetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

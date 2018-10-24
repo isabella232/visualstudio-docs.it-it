@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA | Documenti Microsoft
+title: BP_RESOLUTION_DATA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f76cba8fa2b1ea01a2cbd7670a05b449d476127b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f7ad3c88f0dd804daba2ee52126c7c6321a2a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876087"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
-Viene descritto il risultato dell'associazione di un punto di interruzione dei dati.  
+Descrive il risultato dell'associazione di un punto di interruzione dei dati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,19 +47,19 @@ public struct BP_RESOLUTION_DATA {
   
 ## <a name="members"></a>Membri  
  `bstrDataExpr`  
- L'espressione di dati che è stato associato.  
+ L'espressione di dati che è stata associata.  
   
  `bstrFunc`  
  Il nome della funzione è associato il punto di interruzione dei dati (se presente).  
   
  `bstrImage`  
- Il nome del modulo (ad esempio MyModule.dll) che è associato il punto di interruzione dei dati in.  
+ Il nome del modulo (ad esempio, MyModule.dll) che è associato il punto di interruzione dei dati in.  
   
  `dwFlags`  
- Un valore di [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) enumerazione, che indica la modalità di implementazione il punto di interruzione dei dati.  
+ Un valore compreso il [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) enumerazione, che indica come viene implementato il punto di interruzione dei dati.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è un membro del [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struttura, che a sua volta è un membro del [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura restituita dal [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metodo.  
+ Questa struttura è un membro del [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struttura, che a sua volta è un membro delle [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura restituita dal [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metodo.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

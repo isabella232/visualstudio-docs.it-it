@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Documenti Microsoft
+title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d809a5f06be6facd43265fb00e25fc08aabd1f81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21ceb40f54c4af0285576545efb0d228e65af493
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876074"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 Notifica il pacchetto di debug che sono stati aggiornati gli attributi di testo nel documento.  
@@ -43,10 +43,10 @@ int onUpdateTextAttributes(
   
 #### <a name="parameters"></a>Parametri  
  `pos`  
- [in] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura che indica in cui sono stati aggiornati gli attributi di testo.  
+ [in] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura che indica dove sono stati aggiornati gli attributi di testo.  
   
  `dwNumToUpdate`  
- [in] Specifica il numero di caratteri di testo che sono stati aggiornati.  
+ [in] Specifica il numero di caratteri del testo che sono stati aggiornati.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

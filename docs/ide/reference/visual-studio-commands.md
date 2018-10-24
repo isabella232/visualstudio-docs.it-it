@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b2a889c00245b983305d56e9eb79d78d0d4966
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879011"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
 I comandi di Visual Studio consentono di richiamare un comando dalla finestra **Comando** , dalla finestra **Comando immediato** o dalla casella **Trova/Comando** . In ogni caso, per indicare che deve essere eseguito un comando anziché un'operazione di ricerca o di debug, viene usato il segno di maggiore (`>`).
@@ -40,43 +40,44 @@ I comandi di Visual Studio consentono di richiamare un comando dalla finestra **
 
  I comandi seguenti accettano argomenti e/o opzioni.
 
-|Nome comando|Descrizione|
-|------------------|-----------------|
-|[Aggiungi elemento esistente](../../ide/reference/add-existing-item-command.md)|Aggiunge un file esistente alla soluzione corrente e lo apre.|
-|[Aggiungi progetto esistente](../../ide/reference/add-existing-project-command.md)|Aggiunge un progetto esistente alla soluzione corrente.|
-|[Aggiungi nuovo elemento](../../ide/reference/add-new-item-command.md)|Aggiunge un nuovo elemento, ad esempio un file con estensione htm, css o txt o una pagina con frame, alla soluzione corrente e lo apre.|
-|[Alias](../../ide/reference/alias-command.md)|Crea un nuovo alias per un comando completo, per un comando completo con i relativi argomenti oppure per un altro alias.|
-|[Valuta istruzione](../../ide/reference/evaluate-statement-command.md)|Valuta e visualizza l'istruzione specificata.|
-|[Find](../../ide/reference/find-command.md)|Ricerca il testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** .|
-|[Cerca nei file](../../ide/reference/find-in-files-command.md)|Ricerca il testo nei file usando un subset delle opzioni disponibili nel comando [Cerca nei file](../../ide/find-in-files.md).|
-|[Vai](../../ide/reference/go-to-command.md)|Sposta il cursore sulla riga specificata.|
-|[Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)|Visualizza lo stack di chiamate corrente.|
-|[Elenca disassembly](../../ide/reference/list-disassembly-command.md)|Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.|
-|[Elenca memoria](../../ide/reference/list-memory-command.md)|Visualizza il contenuto dell'intervallo di memoria specificato.|
-|[Elenca moduli](../../ide/reference/list-modules-command.md)|Elenca i moduli disponibili per il processo corrente.|
-|[Elenca registri](../../ide/reference/list-registers-command.md)|Visualizza un elenco di registri.|
-|[Elenca origine](../../ide/reference/list-source-command.md)|Visualizza le righe del codice sorgente specificate.|
-|[Elenca thread](../../ide/reference/list-threads-command.md)|Visualizza un elenco dei thread del programma corrente.|
-|[Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md)|Copia interamente l'input e l'output della finestra di comando in un file.|
-|[Nuovo file](../../ide/reference/new-file-command.md)|Crea un nuovo file e lo aggiunge al progetto attualmente selezionato.|
-|[Apri file](../../ide/reference/open-file-command.md)|Apre un file esistente e consente di specificare un editor.|
-|[Apri progetto](../../ide/reference/open-project-command.md)|Apre un progetto esistente e consente di aggiungerlo alla soluzione corrente.|
-|[Print](../../ide/reference/print-command.md)|Valuta l'espressione e visualizza i risultati o il testo specificato.|
-|[Comando Controllo immediato](../../ide/reference/quick-watch-command.md)|Visualizza il testo selezionato o specificato nel campo **Espressione** della finestra di dialogo **Espressione di controllo rapida** .|
-|[Sostituisci](../../ide/reference/replace-command.md)|Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** .|
-|[Sostituisci nei file](../../ide/reference/replace-in-files-command.md)|Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nella [Sostituisci nei file](../../ide/replace-in-files.md).|
-|[Imposta stack frame corrente](../../ide/reference/set-current-stack-frame-command.md)|Consente di visualizzare uno specifico stack frame.|
-|[Imposta thread corrente](../../ide/reference/set-current-thread-command.md)|Consente di visualizzare un thread specifico.|
-|[Imposta radice](../../ide/reference/set-radix-command.md)|Determina il numero di byte da visualizzare.|
-|[Shell](../../ide/reference/shell-command.md)|Avvia i programmi da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] come se il comando venisse eseguito dal prompt dei comandi.|
-|[Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|Visualizza l'URL specificato in una finestra del Web browser all'interno o all'esterno dell'ambiente di sviluppo integrato (IDE).|
-|[Start](../../ide/reference/start-command.md)|Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.|
-|[Path](../../ide/reference/symbol-path-command.md)|Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.|
-|[Attiva/disattiva punto di interruzione](../../ide/reference/toggle-breakpoint-command.md)|Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file.|
-|[Comando Espressioni di controllo](../../ide/reference/watch-command.md)|Crea e apre un'istanza specificata di una finestra **Espressione di controllo** .|
+
+| Nome comando | Descrizione |
+| - | - |
+| [Aggiungi elemento esistente](../../ide/reference/add-existing-item-command.md) | Aggiunge un file esistente alla soluzione corrente e lo apre. |
+| [Aggiungi progetto esistente](../../ide/reference/add-existing-project-command.md) | Aggiunge un progetto esistente alla soluzione corrente. |
+| [Aggiungi nuovo elemento](../../ide/reference/add-new-item-command.md) | Aggiunge un nuovo elemento, ad esempio un file con estensione htm, css o txt o una pagina con frame, alla soluzione corrente e lo apre. |
+| [Alias](../../ide/reference/alias-command.md) | Crea un nuovo alias per un comando completo, per un comando completo con i relativi argomenti oppure per un altro alias. |
+| [Valuta istruzione](../../ide/reference/evaluate-statement-command.md) | Valuta e visualizza l'istruzione specificata. |
+| [Find](../../ide/reference/find-command.md) | Ricerca il testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** . |
+| [Cerca nei file](../../ide/reference/find-in-files-command.md) | Ricerca il testo nei file usando un subset delle opzioni disponibili nel comando [Cerca nei file](../../ide/find-in-files.md). |
+| [Vai](../../ide/reference/go-to-command.md) | Sposta il cursore sulla riga specificata. |
+| [Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md) | Visualizza lo stack di chiamate corrente. |
+| [Elenca disassembly](../../ide/reference/list-disassembly-command.md) | Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori. |
+| [Elenca memoria](../../ide/reference/list-memory-command.md) | Visualizza il contenuto dell'intervallo di memoria specificato. |
+| [Elenca moduli](../../ide/reference/list-modules-command.md) | Elenca i moduli disponibili per il processo corrente. |
+| [Elenca registri](../../ide/reference/list-registers-command.md) | Visualizza un elenco di registri. |
+| [Elenca origine](../../ide/reference/list-source-command.md) | Visualizza le righe del codice sorgente specificate. |
+| [Elenca thread](../../ide/reference/list-threads-command.md) | Visualizza un elenco dei thread del programma corrente. |
+| [Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md) | Copia interamente l'input e l'output della finestra di comando in un file. |
+| [Nuovo file](../../ide/reference/new-file-command.md) | Crea un nuovo file e lo aggiunge al progetto attualmente selezionato. |
+| [Apri file](../../ide/reference/open-file-command.md) | Apre un file esistente e consente di specificare un editor. |
+| [Apri progetto](../../ide/reference/open-project-command.md) | Apre un progetto esistente e consente di aggiungerlo alla soluzione corrente. |
+| [Print](../../ide/reference/print-command.md) | Valuta l'espressione e visualizza i risultati o il testo specificato. |
+| [Comando Controllo immediato](../../ide/reference/quick-watch-command.md) | Visualizza il testo selezionato o specificato nel campo **Espressione** della finestra di dialogo **Espressione di controllo rapida** . |
+| [Sostituisci](../../ide/reference/replace-command.md) | Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** . |
+| [Sostituisci nei file](../../ide/reference/replace-in-files-command.md) | Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nella [Sostituisci nei file](../../ide/replace-in-files.md). |
+| [Imposta stack frame corrente](../../ide/reference/set-current-stack-frame-command.md) | Consente di visualizzare uno specifico stack frame. |
+| [Imposta thread corrente](../../ide/reference/set-current-thread-command.md) | Consente di visualizzare un thread specifico. |
+| [Imposta radice](../../ide/reference/set-radix-command.md) | Determina il numero di byte da visualizzare. |
+| [Shell](../../ide/reference/shell-command.md) | Avvia i programmi da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] come se il comando venisse eseguito dal prompt dei comandi. |
+| [Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md) | Visualizza l'URL specificato in una finestra del Web browser all'interno o all'esterno dell'ambiente di sviluppo integrato (IDE). |
+| [Start](../../ide/reference/start-command.md) | Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori. |
+| [Path](../../ide/reference/symbol-path-command.md) | Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli. |
+| [Attiva/disattiva punto di interruzione](../../ide/reference/toggle-breakpoint-command.md) | Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file. |
+| [Comando Espressioni di controllo](../../ide/reference/watch-command.md) | Crea e apre un'istanza specificata di una finestra **Espressione di controllo** . |
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

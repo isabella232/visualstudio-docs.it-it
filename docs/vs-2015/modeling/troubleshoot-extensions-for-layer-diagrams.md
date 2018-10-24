@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b4d7dbe7fc11a41d44063aab558389555a4b7af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879103"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Risoluzione dei problemi relativi a estensioni per diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ Questo argomento risolve alcuni problemi che possono verificarsi quando si crean
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Quando si preme F5 per eseguire il debug dell'estensione, i comandi, i gestori movimenti, le estensioni di convalida o le proprietà personalizzate non vengono visualizzate nei diagrammi livello nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-1.  Aprire la soluzione dell'estensione nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e il **compilare** menu, fare clic su **Ricompila soluzione**.  
+1. Aprire la soluzione dell'estensione nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e il **compilare** menu, fare clic su **Ricompila soluzione**.  
   
-2.  Premere **F5** oppure **CTRL+F5** per avviare l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aprire un diagramma livello e testare l'estensione.  
+2. Premere **F5** oppure **CTRL+F5** per avviare l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aprire un diagramma livello e testare l'estensione.  
   
- Continuare con la procedura descritta di seguito, se necessario.  
+   Continuare con la procedura descritta di seguito, se necessario.  
   
 #### <a name="an-old-version-of-my-extension-runs"></a>Viene seguita una versione precedente dell'estensione.  
   
-1.  Assicurarsi che non sia in esecuzione un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Assicurarsi che non sia in esecuzione un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Eliminare la cartella seguente: %LocalAppData%\Microsoft\VisualStudio\\[versione] \ComponentModelCache  
+2. Eliminare la cartella seguente: %LocalAppData%\Microsoft\VisualStudio\\[versione] \ComponentModelCache  
   
-    > [!NOTE]
-    >  % LocalAppData % corrisponde in genere *DriveName*: \Users\\*UserName*\AppData\Local.  
+   > [!NOTE]
+   >  % LocalAppData % corrisponde in genere *DriveName*: \Users\\*UserName*\AppData\Local.  
   
- Continuare con la procedura descritta di seguito, se necessario.  
+   Continuare con la procedura descritta di seguito, se necessario.  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Viene visualizzata una versione precedente dei risultati di convalida o il metodo di convalida non viene chiamato.  
   

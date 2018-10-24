@@ -1,5 +1,5 @@
 ---
-title: Costanti (Debug Interface Access SDK) | Documenti Microsoft
+title: Costanti (Debug Interface Access SDK) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c77febb7ad9f41880fef604849af75aa065ff593
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dd6908a8a0b49f5078e4c0d448ba2dedbe8f720a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872044"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Costanti (Debug Interface Access SDK)
-Per identificare diverse sezioni di un file di database di (programma PDB) programma debug tramite il DIA SDK, è possono utilizzare queste costanti di stringa.  
+Queste costanti di stringa possono essere utilizzate per identificare diverse sezioni di un file di database (PDB) di debug programma tramite il DIA SDK.  
   
 ## <a name="constants"></a>Costanti  
  Di seguito viene dichiarati come macro C/C++.  
@@ -40,7 +40,7 @@ Per identificare diverse sezioni di un file di database di (programma PDB) progr
 |`DiaTable_FrameData`|L "FrameData"|  
   
 ## <a name="example"></a>Esempio  
- Di seguito è riportato un esempio di utilizzo di uno di questi simboli:  
+ Di seguito è riportato un esempio con uno di questi simboli:  
   
 ```C++  
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)  

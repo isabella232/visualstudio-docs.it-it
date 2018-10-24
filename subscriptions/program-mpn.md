@@ -9,12 +9,12 @@ description: Dettagli su sottoscrizioni offerte, regole applicate e numero di so
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876769"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
@@ -23,11 +23,13 @@ I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono
 Quando un partner ottiene una competenza, sia di livello Silver che Gold, ottiene un numero di base di sottoscrizioni di Visual Studio Enterprise. Questo vantaggio di base cambia se il partner ottiene almeno una competenza Gold. La sottoscrizione di Visual Studio Enterprise è un'offerta personalizzata quasi equivalente alla [sottoscrizione cloud annuale di Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), ma con alcuni vantaggi rimossi (molti dei quali sono disponibili separatamente per i partner come vantaggi MPN generali anziché come parte delle sottoscrizioni di Visual Studio Enterprise offerte tramite MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Vantaggio di base Visual Studio quando si ottiene almeno una competenza di qualsiasi tipo
+
 | Competenze ottenute solo al livello Silver               | Almeno una competenza ottenuta al livello Gold   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 sottoscrizioni di Visual Studio Enterprise                   | 10 sottoscrizioni di Visual Studio Enterprise          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Vantaggio aggiuntivo Visual Studio per competenze selezionate
+
 | Competenza                                  | Sottoscrizioni aggiuntive ottenute per la competenza **Silver** | Sottoscrizioni aggiuntive ottenute per la competenza **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Sviluppo di applicazioni                     | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
@@ -39,6 +41,7 @@ Quando un partner ottiene una competenza, sia di livello Silver che Gold, ottien
 Indipendentemente dal numero di competenze ottenute da un partner, il numero di sottoscrizioni di Visual Studio è limitato come segue:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Limiti per le sottoscrizioni di Visual Studio ottenute tramite competenze
+
 | Vantaggio massimo per i partner con solo competenze Silver                   | Vantaggio massimo per i partner con almeno una competenza Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 sottoscrizioni di Visual Studio Enterprise per paese; 75 in tutto il mondo          | 50 sottoscrizioni di Visual Studio Enterprise per paese; 150 in tutto il mondo         |

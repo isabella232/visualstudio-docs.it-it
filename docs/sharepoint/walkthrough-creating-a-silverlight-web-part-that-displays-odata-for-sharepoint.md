@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878185"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procedura dettagliata: Creare una web part Silverlight che visualizza il servizio OData per SharePoint
   SharePoint 2010 espongono i propri dati elenco tramite OData. In SharePoint, il servizio OData viene implementato dal servizio RESTful ListData.svc. Questa procedura dettagliata viene illustrato come creare una web part di SharePoint che ospita un'applicazione Silverlight. L'applicazione Silverlight consente di visualizzare informazioni relative all'elenco SharePoint annuncio usando ListData.svc. Per altre informazioni, vedere [interfaccia REST di SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) e [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -42,25 +42,25 @@ ms.locfileid: "42626165"
   
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Per creare un'applicazione Silverlight e web part Silverlight
   
-1.  Nella barra dei menu, scegliere **File** > **New** > **progetto** per visualizzare il **nuovo progetto** nella finestra di dialogo.  
+1. Nella barra dei menu, scegliere **File** > **New** > **progetto** per visualizzare il **nuovo progetto** nella finestra di dialogo.  
   
-2.  Espandere la **SharePoint** nodo sotto **Visual c#** o **Visual Basic**, quindi scegliere il **2010** nodo.  
+2. Espandere la **SharePoint** nodo sotto **Visual c#** o **Visual Basic**, quindi scegliere il **2010** nodo.  
   
-3.  Nel riquadro Modelli scegliere il **Web Part Silverlight di SharePoint 2010** modello.  
+3. Nel riquadro Modelli scegliere il **Web Part Silverlight di SharePoint 2010** modello.  
   
-4.  Nel **Name** casella, immettere **SLWebPartTest** e quindi scegliere il **OK** pulsante.  
+4. Nel **Name** casella, immettere **SLWebPartTest** e quindi scegliere il **OK** pulsante.  
   
-     Il **Personalizzazione guidata SharePoint** verrà visualizzata la finestra di dialogo.  
+    Il **Personalizzazione guidata SharePoint** verrà visualizzata la finestra di dialogo.  
   
-5.  Nel **specificare il livello di sito e la sicurezza per il debug** pagina, immettere l'URL per il sito di SharePoint server in cui si desidera eseguire il debug della definizione di sito o utilizzare il percorso predefinito (http://*il nome del sistema*/) .  
+5. Nel **specificare il livello di sito e la sicurezza per il debug** pagina, immettere l'URL per il sito di SharePoint server in cui si desidera eseguire il debug della definizione di sito o utilizzare il percorso predefinito (http://<em>il nome del sistema</em>/) .  
   
-6.  Nel **qual è il livello di attendibilità per la soluzione SharePoint?** keychains le **Distribuisci come soluzione farm** pulsante di opzione.  
+6. Nel **qual è il livello di attendibilità per la soluzione SharePoint?** keychains le **Distribuisci come soluzione farm** pulsante di opzione.  
   
-     Sebbene questo esempio Usa una soluzione farm, i progetti web part di Silverlight possono essere distribuiti come farm o soluzioni create mediante sandbox. Per altre informazioni sulle soluzioni create mediante sandbox e soluzioni farm, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).  
+    Sebbene questo esempio Usa una soluzione farm, i progetti web part di Silverlight possono essere distribuiti come farm o soluzioni create mediante sandbox. Per altre informazioni sulle soluzioni create mediante sandbox e soluzioni farm, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Nel **modo in cui si desidera associare la Web Part Silverlight** sezione del **specificare le informazioni di configurazione Silverlight** pagina, scegliere il **crea un nuovo progetto Silverlight e lo si associa la web part** pulsante di opzione.  
+7. Nel **modo in cui si desidera associare la Web Part Silverlight** sezione del **specificare le informazioni di configurazione Silverlight** pagina, scegliere il **crea un nuovo progetto Silverlight e lo si associa la web part** pulsante di opzione.  
   
-8.  Modifica il **Name** a **SLApplication**, impostare **Language** a una delle due **Visual Basic** o **Visual c#**, e quindi impostare **la versione di Silverlight** al **Silverlight 4.0**.  
+8. Modifica il **Name** a **SLApplication**, impostare **Language** a una delle due **Visual Basic** o **Visual c#**, e quindi impostare **la versione di Silverlight** al **Silverlight 4.0**.  
   
 9. Scegliere il **fine** pulsante. I progetti vengono visualizzati nella **Esplora soluzioni**.  
   

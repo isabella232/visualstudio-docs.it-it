@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880510"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installazione di un'applicazione Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per installare un'app di Shell è necessario eseguire i passaggi seguenti.  
   
--   Preparare la soluzione.  
+- Preparare la soluzione.  
   
--   Creare un pacchetto Windows Installer (MSI) per l'applicazione.  
+- Creare un pacchetto Windows Installer (MSI) per l'applicazione.  
   
--   Creare un programma di avvio del programma di installazione.  
+- Creare un programma di avvio del programma di installazione.  
   
- Tutto il codice di esempio in questo documento provengono dal [Shell di esempio di distribuzione](http://go.microsoft.com/fwlink/?LinkId=262245), che è possibile scaricare dalla raccolta di codice del sito Web MSDN. L'esempio mostra i risultati dell'esecuzione di ognuno di questi passaggi.  
+  Tutto il codice di esempio in questo documento provengono dal [Shell di esempio di distribuzione](http://go.microsoft.com/fwlink/?LinkId=262245), che è possibile scaricare dalla raccolta di codice del sito Web MSDN. L'esempio mostra i risultati dell'esecuzione di ognuno di questi passaggi.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per eseguire le procedure descritte in questo argomento, gli strumenti seguenti devono essere installati nel computer.  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
--   Il [set di strumenti di Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=82720) versione 3.6  
+- Il [set di strumenti di Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=82720) versione 3.6  
   
- L'esempio richiede anche il Microsoft Visualization and Modeling SDK, che richiedono la shell non tutte.  
+  L'esempio richiede anche il Microsoft Visualization and Modeling SDK, che richiedono la shell non tutte.  
   
 ## <a name="preparing-your-solution"></a>Preparazione della soluzione  
  Per impostazione predefinita, i modelli di Shell di compilazione di pacchetti VSIX, ma questo comportamento è destinato principalmente a scopo di debug. Quando si distribuisce un'applicazione Shell, è necessario utilizzare i pacchetti MSI per consentire l'accesso del Registro di sistema e per i riavvii durante l'installazione. Per preparare l'applicazione per la distribuzione di file MSI, eseguire la procedura seguente.  

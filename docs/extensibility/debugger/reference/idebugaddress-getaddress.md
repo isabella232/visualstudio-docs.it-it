@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress::GetAddress | Documenti Microsoft
+title: IDebugAddress::GetAddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7f93b57d3cdbea71d3cf9cbe3d51645251c9628
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 869094fabca44eca352a9610ac59a6627df74dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873357"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
-Restituisce una struttura che descrive un oggetto e la relativa posizione all'interno dell'ambito o di un contenitore.  
+Restituisce una struttura che descrive un oggetto e il relativo percorso nel relativo ambito o di un contenitore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,10 +44,10 @@ int GetAddress(
  [in, out] Oggetto [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura che viene compilato da questo metodo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Il [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura viene passata a questo metodo, che quindi viene riempita con le informazioni appropriate. Modalità di interpretazione di queste informazioni dipende dal tipo di informazioni restituite e il gestore di simboli se stesso. Vedere [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) per altri dettagli.  
+ Il [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura viene passata a questo metodo, che quindi viene riempita con le informazioni appropriate. Modalità di interpretazione di queste informazioni dipende dal tipo di informazioni restituite e il gestore di simboli se stesso. Visualizzare [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) per altri dettagli.  
   
 ## <a name="see-also"></a>Vedere anche  
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

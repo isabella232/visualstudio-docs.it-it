@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880677"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usare asset 3D nel gioco o nell'app
 
@@ -41,7 +41,7 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
 2.  In **File di personalizzazione compilazioni disponibili** selezionare le caselle di controllo corrispondenti ai tipi di asset da includere nel progetto, come indicato nella tabella seguente:
 
     |Tipo di asset|Nome personalizzazione di compilazione|
-    |----------------|------------------------------|
+    |----------------| - |
     |Trame e immagini|**ImageContentTask(.targets, .props)**|
     |Modelli 3D|**MeshContentTask(.targets, .props)**|
     |Shader|**ShaderGraphContentTask(.targets, .props)**|
@@ -67,7 +67,7 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
 Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i relativi tipi di file di origine e output.
 
 |Tipo di elemento|Tipi di file di origine|Tipi di file di output|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**Pipeline di contenuti immagine**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
 |**Pipeline di contenuti mesh**|AutoDesk FBX Interchange File (*.fbx*)<br /><br /> Collada DAE File (*.dae*)<br /><br /> Wavefront OBJ File (*.obj*)|3D mesh file (*.cmo*)|
 |**Pipeline di contenuti shader**|Visual Shader Graph (*.dgsl*)|Compiled Shader Output (*.cso*)|

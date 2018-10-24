@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 981c05e61e02746e1cbaf40e7f15553d04786a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875073"
 ---
 # <a name="shared-colors"></a>Colori condivisi
 Inserire qui l'introduzione.  
@@ -48,10 +48,10 @@ Inserire qui l'introduzione.
  Usare…  
  -   Ogni volta che è necessario creare un menu personalizzato.  
   
--   Quando un nuovo componente dell'interfaccia utente deve corrispondere ai menu di Visual Studio.  
+- Quando un nuovo componente dell'interfaccia utente deve corrispondere ai menu di Visual Studio.  
   
- Non usare...  
- Il colore di sfondo da solo. Usare sempre la combinazione sfondo/primo piano specificata.  
+  Non usare...  
+  Il colore di sfondo da solo. Usare sempre la combinazione sfondo/primo piano specificata.  
   
 ##### <a name="menu-title"></a>Titolo del menu  
  I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo, nonché da un glifo facoltativo, in genere quando il menu si trova in una barra dei comandi.  
@@ -64,9 +64,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per qualsiasi elemento che non deve corrispondere sempre al titolo del menu.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -113,9 +113,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per qualsiasi elenco a discesa presente in un altro contesto.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -180,9 +180,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per gli elementi dell'interfaccia utente che non sono simili a una barra dei comandi.  
   
--   Per i componenti della barra dei comandi diversi da quelli per cui sono specificati i nomi di token.  
+- Per i componenti della barra dei comandi diversi da quelli per cui sono specificati i nomi di token.  
   
- **Predefinito** (nessun altro stato)  
+  **Predefinito** (nessun altro stato)  
   
 |Elemento|Nome token: Category.color|  
 |-------------|--------------------------------|  
@@ -202,9 +202,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per i controlli che hanno nomi di token propri.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -252,14 +252,14 @@ Inserire qui l'introduzione.
  Usare…  
  -   Quando si compilano caselle combinate personalizzate.  
   
--   Quando si crea un controllo della barra dei comandi simile a una casella combinata.  
+- Quando si crea un controllo della barra dei comandi simile a una casella combinata.  
   
- Non usare...  
- -   Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della barra dei comandi.  
+  Non usare...  
+  -   Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della barra dei comandi.  
   
--   Quando si ha accesso a una casella combinata con stile.  
+- Quando si ha accesso a una casella combinata con stile.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -333,9 +333,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per qualsiasi elemento che non è simile a un elenco a discesa.  
   
--   Per caselle combinate o pulsanti di menu combinato.  
+- Per caselle combinate o pulsanti di menu combinato.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -397,9 +397,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per altri tipi di pulsanti.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -550,19 +550,19 @@ Inserire qui l'introduzione.
 ##### <a name="open-document-tabs"></a>Schede dei documenti aperti  
  Per ogni documento aperto è presente una scheda nel canale delle schede dei documenti che ne visualizza il nome. I documenti possono essere selezionati o aperti in background e le rispettive schede riflettono questi stati:  
   
--   La scheda selezionata rappresenta il documento attualmente visualizzato nell'area dei documenti. Una scheda selezionata ha un bordo di documento che si estende fino al bordo superiore dell'area dei documenti.  
+- La scheda selezionata rappresenta il documento attualmente visualizzato nell'area dei documenti. Una scheda selezionata ha un bordo di documento che si estende fino al bordo superiore dell'area dei documenti.  
   
--   Le schede in secondo piano sono tutte le schede dei documenti diverse da quella attualmente selezionata. Se selezionate, diventano la scheda selezionata e acquisiscono tutti i colori di sfondo, del bordo e del testo da questi nomi di token.  
+- Le schede in secondo piano sono tutte le schede dei documenti diverse da quella attualmente selezionata. Se selezionate, diventano la scheda selezionata e acquisiscono tutti i colori di sfondo, del bordo e del testo da questi nomi di token.  
   
- ![Scheda documento aperto con linea rossa](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![Scheda documento aperto con linea rossa](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
   
- Usare…  
- Quando si creano schede dei documenti personalizzate.  
+  Usare…  
+  Quando si creano schede dei documenti personalizzate.  
   
- Non usare...  
- -   Per schede provvisorie (anteprima).  
+  Non usare...  
+  -   Per schede provvisorie (anteprima).  
   
--   Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
+- Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
   
 ##### <a name="selected-tab"></a>Scheda selezionata  
  **Con stato attivo**  
@@ -611,9 +611,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per qualsiasi tipo di documento o scheda non provvisorio (anteprima).  
   
--   Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
+- Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
   
- **Scheda anteprima selezionata: con stato attivo**  
+  **Scheda anteprima selezionata: con stato attivo**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -658,9 +658,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per un'interfaccia utente che non è simile a un pulsante di overflow.  
   
--   Per i pulsanti di overflow della barra dei comandi.  
+- Per i pulsanti di overflow della barra dei comandi.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -765,9 +765,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per i pulsanti visualizzati in altre posizioni.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -870,25 +870,25 @@ Inserire qui l'introduzione.
   
  Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a vicenda:  
   
--   "Con stato attivo" e "con stato non attivo" indicano se il cursore si trova o meno nella casella di testo.  
+- "Con stato attivo" e "con stato non attivo" indicano se il cursore si trova o meno nella casella di testo.  
   
--   "Attivo" e "inattivo" indicano se l'utente ha inserito una query di ricerca nella casella di testo.  
+- "Attivo" e "inattivo" indicano se l'utente ha inserito una query di ricerca nella casella di testo.  
   
--   "Passaggio del mouse" significa che l'utente ha posizionato il cursore del mouse sulla casella di ricerca (questo stato sostituisce tutti gli altri).  
+- "Passaggio del mouse" significa che l'utente ha posizionato il cursore del mouse sulla casella di ricerca (questo stato sostituisce tutti gli altri).  
   
--   "Disabilitato" significa che la funzionalità di ricerca è disattivata per il contesto corrente.  
+- "Disabilitato" significa che la funzionalità di ricerca è disattivata per il contesto corrente.  
   
- ![Casella di ricerca con linea rossa](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![Casella di ricerca con linea rossa](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
   
- Usare…  
- Quando si progetta una casella di ricerca personalizzata.  
+  Usare…  
+  Quando si progetta una casella di ricerca personalizzata.  
   
- Non usare...  
- -   Per qualsiasi elemento diverso da una casella di ricerca.  
+  Non usare...  
+  -   Per qualsiasi elemento diverso da una casella di ricerca.  
   
--   Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della casella di ricerca.  
+- Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della casella di ricerca.  
   
- **Con stato attivo**  
+  **Con stato attivo**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -969,14 +969,14 @@ Inserire qui l'introduzione.
  Usare…  
  -   Quando si crea un elenco a discesa di ricerca personalizzato.  
   
--   I nomi di token appropriati per i componenti dell'elenco corretti.  
+- I nomi di token appropriati per i componenti dell'elenco corretti.  
   
- Non usare...  
- -   Per elenchi a discesa visualizzati in altri contesti.  
+  Non usare...  
+  -   Per elenchi a discesa visualizzati in altri contesti.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Predefinito (nessun altro stato)**  
+  **Predefinito (nessun altro stato)**  
   
 |Elemento|Nome token: Category.color|  
 |-------------|--------------------------------|  
@@ -1133,9 +1133,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per qualsiasi elemento che non è simile a una visualizzazione albero.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1295,9 +1295,9 @@ Inserire qui l'introduzione.
  Non usare...  
  -   Per qualsiasi interfaccia utente diversa da un elenco a discesa o una casella combinata.  
   
--   Per un controllo [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) o [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) nella barra dei comandi.  
+- Per un controllo [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) o [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) nella barra dei comandi.  
   
- **Default**  
+  **Default**  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1428,12 +1428,12 @@ Inserire qui l'introduzione.
  Usare…  
  -   Per le finestre di progettazione simili alla finestra Progettazione manifesto.  
   
--   Invece di usare controlli scheda comuni nella parte superiore di un editor all'interno dell'area dei documenti.  
+- Invece di usare controlli scheda comuni nella parte superiore di un editor all'interno dell'area dei documenti.  
   
- Non usare...  
- -   Se sono presenti più di sei schede.  
+  Non usare...  
+  -   Se sono presenti più di sei schede.  
   
--   Per qualsiasi interfaccia utente non strutturata come la finestra Progettazione manifesto.  
+- Per qualsiasi interfaccia utente non strutturata come la finestra Progettazione manifesto.  
   
 |Stato|Componente|Elemento|Nome token: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
@@ -1550,10 +1550,10 @@ Inserire qui l'introduzione.
  Usare…  
  -   Per le aree in cui si posizionano menu o barre degli strumenti.  
   
--   Grazie alla combinazione di nome del token corretto sfondo/primo piano.  
+- con il corretto sfondo / primo piano del token combinazione di nome.  
   
- Non usare...  
- Per aree che non sono simili a uno scaffale dei comandi.  
+  Non usare...  
+  Per aree che non sono simili a uno scaffale dei comandi.  
   
 |Componente|Elemento|Nome token: Category.color|  
 |---------------|-------------|--------------------------------|  

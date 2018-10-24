@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc434e35755b04054d1e24da97e8a4699af7df0e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870776"
 ---
 # <a name="content-definition-dialog-box"></a>Finestra di dialogo Definizione contenuto
 
@@ -26,7 +26,7 @@ Il **definizione del contenuto** finestra di dialogo viene utilizzata nella fine
 La tabella seguente descrive gli elementi dell'interfaccia utente di **Inizializza correlazione** nella finestra di dialogo:
 
 |Elemento dell'interfaccia utente|Descrizione|
-|----------------|-----------------|
+|-|-----------------|
 |**Messaggio**|Specifica il contenuto del messaggio con il **i dati del messaggio** casella di testo espressione e il tipo utilizzando il **tipo di messaggio** casella di riepilogo a discesa. Per impostazione predefinita, il **definizione del contenuto** Usa le <xref:System.ServiceModel.Activities.ReceiveMessageContent>, che prevede un <xref:System.ServiceModel.Channels.Message> o un tipo all'interno della definizione di servizio del flusso di lavoro di contratto di messaggio.|
 |**Parametri**|Scegliere il **parametri** pulsante di opzione per usare <xref:System.ServiceModel.Activities.ReceiveParametersContent>, che prevede un contratto dati. Usare la griglia dei dati per impostare una raccolta generica di coppie chiave/valore <xref:System.Activities.OutArgument> i cui valori vengono assegnati ai parametri variabili nel flusso di lavoro corrente.|
 

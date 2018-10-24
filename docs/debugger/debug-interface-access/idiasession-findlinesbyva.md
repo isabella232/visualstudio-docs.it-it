@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByVA | Documenti Microsoft
+title: Findlinesbyva | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d88a93e5bd22befb661505bb09cdce6f5d3b544
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c199411504db6d4465b6e02f4ffaad988c48b46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870653"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Recupera le informazioni sul numeri di riga per le righe contenute in un intervallo di indirizzi virtuale specificato (VA).  
+Recupera le informazioni sul numeri di riga per righe contenute in un intervallo di indirizzi virtuale specificato (valutazione della vulnerabilità).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +36,16 @@ HRESULT findLinesByVA (
   
 #### <a name="parameters"></a>Parametri  
  `va`  
- [in] Specifica l'indirizzo come un Virginia.  
+ [in] Specifica l'indirizzo come un responsabile tecnologico  
   
  `length`  
- [in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query.  
+ [in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query viene usata.  
   
  `ppResult`  
- [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco della riga di numeri che copre l'intervallo di indirizzi specificato.  
+ [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco di tutto la riga di numeri che coprono l'intervallo di indirizzi specificato.  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga contenuti in una funzione utilizzando l'indirizzo della funzione virtuale e lunghezza.  
+ In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga inclusi in una funzione usando l'indirizzo della funzione virtuale e la lunghezza.  
   
 ```C++  
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  

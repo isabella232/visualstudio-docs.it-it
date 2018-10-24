@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::Prev | Documenti Microsoft
+title: Idiaenumsymbolsbyaddr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8db8e2c5aca3813475afaaa8ff08acf9902075e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e165268c1d31c61ba671f6087cc9922bf37e4103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870276"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 Recupera i simboli precedenti nell'ordine in base all'indirizzo.  
@@ -39,16 +39,16 @@ HRESULT Prev (
  [in] Il numero di simboli nell'enumeratore deve essere recuperato.  
   
  rgelt  
- [out] Matrice che deve essere compilato con [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) gli oggetti che rappresentano i simboli desiderati.  
+ [out] Matrice che deve essere compilata con [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) gli oggetti che rappresentano i simboli desiderati.  
   
  pceltFetched  
  [out] Restituisce il numero di simboli nell'enumeratore recuperata.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono non presenti Nessun simbolo precedente. In caso contrario, verrà restituito un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti simboli precedenti. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo aggiorna l'enumeratore si trova il numero di elementi recuperati.  
+ Questo metodo aggiorna la posizione di enumeratore per il numero di elementi recuperati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   

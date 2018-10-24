@@ -13,27 +13,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdf892b6d80358885f0da8e20a97bd9453c50f27
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dcd2c47de8e1ad8b650da0819b5e8b0a46213e29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875979"
 ---
 # <a name="document-windows"></a>Finestre dei documenti
 In Visual Studio, un *finestra di documento* è una finestra cornice figlio associato a una finestra di interfaccia a documenti multipli (MDI). Le finestre dei documenti vengono generalmente utilizzate per la visualizzazione e modifica di codice sorgente o di testo, ma che possono ospitare anche altri tipi di funzionalità. Finestre dei documenti:  
   
--   È possibile organizzare in gruppi di scheda separata orizzontale o verticale del padre MDI in modo che più file possono essere visualizzati nello stesso momento.  
+- È possibile organizzare in gruppi di scheda separata orizzontale o verticale del padre MDI in modo che più file possono essere visualizzati nello stesso momento.  
   
--   Possono essere ancorate in qualsiasi ordine del padre MDI.  
+- Possono essere ancorate in qualsiasi ordine del padre MDI.  
   
--   Possono essere spostate liberamente.  
+- Possono essere spostate liberamente.  
   
--   Sono collegate in ordine di tabulazione per le altre finestre MDI.  
+- Sono collegate in ordine di tabulazione per le altre finestre MDI.  
   
- Comandi per il raggruppamento, ancorate e mobili sono disponibili nel menu di scelta rapida per una scheda della finestra documento.  
+  Comandi per il raggruppamento, ancorate e mobili sono disponibili nel menu di scelta rapida per una scheda della finestra documento.  
   
- Per altre informazioni sul comportamento delle finestre in Visual Studio, vedere [personalizzare i layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md).  
+  Per altre informazioni sul comportamento delle finestre in Visual Studio, vedere [personalizzare i layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md).  
   
 ## <a name="document-window-implementation"></a>Implementazione della finestra documento  
  Le finestre dei documenti vengono create implementando un editor. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia consente di creare finestre di documento come parte di un'istanza di un editor. Per altre informazioni, vedere [Legacy interfacce nell'editor](../../extensibility/legacy-interfaces-in-the-editor.md).  

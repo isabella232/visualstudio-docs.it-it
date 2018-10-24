@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fd51bd397e6db3728c10f52db68d45e226fb605b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ffe88fb54da26468ca510a2f1a7ab6170d88db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881722"
 ---
 # <a name="how-to-install-sample-databases"></a>Procedura: installare database di esempio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,11 +96,11 @@ Diversi esempi di dati prevedono come requisito la connessione ai database di es
   
 #### <a name="to-install-the-northwind-sample-database-for-microsoft-access"></a>Per installare il database di esempio Northwind per Microsoft Access  
   
-1.  In Microsoft Access 2010 o versione successiva, cercare online modelli Northwind e scegliere **database di esempio Desktop Northwind 2007**.  
+1. In Microsoft Access 2010 o versione successiva, cercare online modelli Northwind e scegliere **database di esempio Desktop Northwind 2007**.  
   
-2.  In Microsoft Access salvare il file di database come Northwind.accdb.  
+2. In Microsoft Access salvare il file di database come Northwind.accdb.  
   
- La nuova estensione per i database di Access è .accdb. Visualizzare [programmazione dei dati con Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Per connettersi al database Northwind tramite Access, vedere [procedura: connettersi al Northwind Database](../data-tools/how-to-connect-to-the-northwind-database.md).  
+   La nuova estensione per i database di Access è .accdb. Visualizzare [programmazione dei dati con Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Per connettersi al database Northwind tramite Access, vedere [procedura: connettersi al Northwind Database](../data-tools/how-to-connect-to-the-northwind-database.md).  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
  I database di esempio sono forniti a fini illustrativi e non necessariamente presentano le procedure di sicurezza ottimali.  

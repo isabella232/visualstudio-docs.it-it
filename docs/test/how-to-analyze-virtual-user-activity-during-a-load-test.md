@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bdb8719174b4a5fb66dcf79db04d2ea3ea565381
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881703"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedura: Analizzare le attività degli utenti virtuali durante un test di carico usando il grafico attività utente virtuale
 
@@ -39,67 +39,67 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
 
 ## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>Per analizzare un'attività utente specifica nel Grafico attività utente virtuale
 
-1.  Usare lo strumento Zoom periodo di tempo nella parte inferiore del **Grafico attività utente virtuale** per selezionare un'area del grafico in cui si desidera analizzare i dettagli per un utente specifico.
+1. Usare lo strumento Zoom periodo di tempo nella parte inferiore del **Grafico attività utente virtuale** per selezionare un'area del grafico in cui si desidera analizzare i dettagli per un utente specifico.
 
-2.  Passare con il puntatore su un dettaglio nel grafico. Si noti che le informazioni seguenti vengono visualizzate nella descrizione comando:
+2. Passare con il puntatore su un dettaglio nel grafico. Si noti che le informazioni seguenti vengono visualizzate nella descrizione comando:
 
-    -   **ID utente**
+   - **ID utente**
 
-    -   **Scenario**
+   - **Scenario**
 
-    -   **Test**
+   - **Test**
 
-    -   **URL** (non visualizzato in un test o in una transazione)
+   - **URL** (non visualizzato in un test o in una transazione)
 
-    -   **Risultato**
+   - **Risultato**
 
-    -   **Browser** (non visualizzato in un test o in una transazione)
+   - **Browser** (non visualizzato in un test o in una transazione)
 
-    -   **Network**
+   - **Network**
 
-    -   **Ora di inizio**
+   - **Ora di inizio**
 
-    -   **Durata**
+   - **Durata**
 
-    -   **Agente**
+   - **Agente**
 
-    -   **Log test** (collegamento al log test)
+   - **Log test** (collegamento al log test)
 
-        > [!NOTE]
-        > Per facilitare il debug dell'applicazione, se si sceglie il collegamento **Log test** viene visualizzato il risultato del test Web o dello unit test associato al log.
+     > [!NOTE]
+     > Per facilitare il debug dell'applicazione, se si sceglie il collegamento **Log test** viene visualizzato il risultato del test Web o dello unit test associato al log.
 
      È quindi possibile usare le operazioni di filtro ed evidenziazione disponibili nel **Grafico attività utente virtuale**.
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Per utilizzare le opzioni di filtro nel Grafico attività utente virtuale
 
-1.  Nella **Legenda dettagli** usare l'elenco a discesa per selezionare **Test**, **Pagina** o **Transazione**.
+1. Nella **Legenda dettagli** usare l'elenco a discesa per selezionare **Test**, **Pagina** o **Transazione**.
 
-     **Riquadro Legenda dettagli**
+    **Riquadro Legenda dettagli**
 
-     ![Riquadro della legenda dei dettagli](../test/media/ltest_detailslegend.png)
+    ![Riquadro della legenda dei dettagli](../test/media/ltest_detailslegend.png)
 
-2.  Selezionare o deselezionare le caselle di controllo relative a pagine ASPX, errori, log, test e ricerca associati al test di carico.
+2. Selezionare o deselezionare le caselle di controllo relative a pagine ASPX, errori, log, test e ricerca associati al test di carico.
 
-     Il **Grafico attività utente virtuale** verrà aggiornato di conseguenza.
+    Il **Grafico attività utente virtuale** verrà aggiornato di conseguenza.
 
-     Il **Grafico attività utente virtuale** consente di filtrare test, pagine e transazioni in base ad alcuni criteri diversi. È ad esempio possibile rimuovere determinati test dalla visualizzazione, rimuovere tutti i test superati o rimuovere i test non superati a causa di errori specifici. È anche possibile rimuovere tutti i test che non dispongono di un log.
+    Il **Grafico attività utente virtuale** consente di filtrare test, pagine e transazioni in base ad alcuni criteri diversi. È ad esempio possibile rimuovere determinati test dalla visualizzazione, rimuovere tutti i test superati o rimuovere i test non superati a causa di errori specifici. È anche possibile rimuovere tutti i test che non dispongono di un log.
 
-     Ad esempio, è possibile selezionare l'opzione **(Evidenzia errori)** per visualizzare tutti gli errori nel grafico in colore rosso. È anche possibile selezionare l'opzione **(Evidenzia risultati con log)** per visualizzare tutti i risultati del test nel grafico che dispongono di log in colore verde.
+    Ad esempio, è possibile selezionare l'opzione **(Evidenzia errori)** per visualizzare tutti gli errori nel grafico in colore rosso. È anche possibile selezionare l'opzione **(Evidenzia risultati con log)** per visualizzare tutti i risultati del test nel grafico che dispongono di log in colore verde.
 
-     **Riquadro Risultati filtro**
+    **Riquadro Risultati filtro**
 
-     ![Riquadro dei risultati del filtro](../test/media/ltest_filterresults.png)
+    ![Riquadro dei risultati del filtro](../test/media/ltest_filterresults.png)
 
-3.  Nei **risultati del filtro** selezionare o deselezionare le caselle di controllo per le opzioni di filtro seguenti:
+3. Nei **risultati del filtro** selezionare o deselezionare le caselle di controllo per le opzioni di filtro seguenti:
 
-    -   **Mostra solo risultati con log** Vengono visualizzati solo i risultati dei test a cui è associato un log.
+   - **Mostra solo risultati con log** Vengono visualizzati solo i risultati dei test a cui è associato un log.
 
-    -   **Mostra risultati corretti** Vengono visualizzati solo i risultati dei test superati.
+   - **Mostra risultati corretti** Vengono visualizzati solo i risultati dei test superati.
 
-    -   **Mostra risultati con errori** Vengono visualizzati i risultati in cui sono presenti errori, che possono risultare utili per l'esecuzione del debug.
+   - **Mostra risultati con errori** Vengono visualizzati i risultati in cui sono presenti errori, che possono risultare utili per l'esecuzione del debug.
 
-        > [!NOTE]
-        > È possibile analizzare ulteriormente l'elenco dei tipi di errore nel nodo **Mostra risultati con errori** scegliendo il pulsante **Tabelle** nella barra degli strumenti del **Visualizzatore risultati test prestazioni Web**. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > [!NOTE]
+     > È possibile analizzare ulteriormente l'elenco dei tipi di errore nel nodo **Mostra risultati con errori** scegliendo il pulsante **Tabelle** nella barra degli strumenti del **Visualizzatore risultati test prestazioni Web**. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      Il **Grafico attività utente virtuale** verrà aggiornato di conseguenza.
 

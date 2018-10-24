@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36bdcd7360099818ac8510d9eab87d6d3dc0f0fc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f00f668c3eac9a39251d0a4e19f98ed597c373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873487"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Procedura: esporre il codice a VBA in un progetto Visual c#
   Se si desidera che i due tipi di codice per interagire tra loro, è possibile esporre codice in un progetto Visual c# in Visual Basic Applications Edition (VBA).  
@@ -39,56 +39,56 @@ ms.locfileid: "35257251"
   
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Per esporre il codice in un progetto Visual c# da VBA  
   
-1.  Aprire o creare un progetto a livello di documento che si basa su un documento di Word, cartella di lavoro di Excel o modello di Excel che supporta le macro e che contiene già codice VBA.  
+1. Aprire o creare un progetto a livello di documento che si basa su un documento di Word, cartella di lavoro di Excel o modello di Excel che supporta le macro e che contiene già codice VBA.  
   
-     Per altre informazioni sui formati di file di documento che supportano le macro, vedere [combinare VBA e le personalizzazioni a livello di documento](../vsto/combining-vba-and-document-level-customizations.md).  
+    Per altre informazioni sui formati di file di documento che supportano le macro, vedere [combinare VBA e le personalizzazioni a livello di documento](../vsto/combining-vba-and-document-level-customizations.md).  
   
-    > [!NOTE]  
-    >  Questa funzionalità non può essere usata nei progetti Modello di Word,  
+   > [!NOTE]  
+   >  Questa funzionalità non può essere usata nei progetti Modello di Word,  
   
-2.  Assicurarsi che il codice VBA nel documento può essere eseguita senza chiedere conferma all'utente di attivare le macro. È possibile considerare attendibile l'esecuzione del codice VBA aggiungendo il percorso del progetto di Office all'elenco di percorsi attendibili nelle impostazioni del Centro protezione per Word o Excel.  
+2. Assicurarsi che il codice VBA nel documento può essere eseguita senza chiedere conferma all'utente di attivare le macro. È possibile considerare attendibile l'esecuzione del codice VBA aggiungendo il percorso del progetto di Office all'elenco di percorsi attendibili nelle impostazioni del Centro protezione per Word o Excel.  
   
-3.  Aggiungere il membro che si desidera esporre a VBA in una classe pubblica nel progetto e il nuovo membro come dichiarare **pubblica**.  
+3. Aggiungere il membro che si desidera esporre a VBA in una classe pubblica nel progetto e il nuovo membro come dichiarare **pubblica**.  
   
-4.  Applicare la seguente istruzione <xref:System.Runtime.InteropServices.ComVisibleAttribute> e <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributi alla classe che si sta esponendo a VBA. Questi attributi rendono visibile la classe a COM, ma senza generare un'interfaccia di classe.  
+4. Applicare la seguente istruzione <xref:System.Runtime.InteropServices.ComVisibleAttribute> e <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributi alla classe che si sta esponendo a VBA. Questi attributi rendono visibile la classe a COM, ma senza generare un'interfaccia di classe.  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    [System.Runtime.InteropServices.ClassInterface(  
-        System.Runtime.InteropServices.ClassInterfaceType.None)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   [System.Runtime.InteropServices.ClassInterface(  
+       System.Runtime.InteropServices.ClassInterfaceType.None)]  
+   ```  
   
-5.  Eseguire l'override di **GetAutomationObject** metodo di una classe di elementi host nel progetto per restituire un'istanza della classe che si sta esponendo a VBA:  
+5. Eseguire l'override di **GetAutomationObject** metodo di una classe di elementi host nel progetto per restituire un'istanza della classe che si sta esponendo a VBA:  
   
-    -   Se si espone una classe di elementi host a VBA, eseguire l'override di **GetAutomationObject** metodo che appartiene a questa classe e restituisce l'istanza corrente della classe.  
+   - Se si espone una classe di elementi host a VBA, eseguire l'override di **GetAutomationObject** metodo che appartiene a questa classe e restituisce l'istanza corrente della classe.  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return this;  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return this;  
+     }  
+     ```  
   
-    -   Se si espone una classe che non è un elemento host su VBA, eseguire l'override di **GetAutomationObject** metodo di tutti gli host di elemento del progetto e restituire un'istanza della classe di elementi non host. Ad esempio, il codice seguente si presuppone che si espone una classe denominata `DocumentUtilities` a VBA.  
+   - Se si espone una classe che non è un elemento host su VBA, eseguire l'override di **GetAutomationObject** metodo di tutti gli host di elemento del progetto e restituire un'istanza della classe di elementi non host. Ad esempio, il codice seguente si presuppone che si espone una classe denominata `DocumentUtilities` a VBA.  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return new DocumentUtilities();  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return new DocumentUtilities();  
+     }  
+     ```  
   
      Per altre informazioni sugli elementi host, vedere [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Estrarre un'interfaccia dalla classe che si sta esponendo a VBA. Nel **Estrai interfaccia** finestra di dialogo, selezionare i membri pubblici che si desidera includere nella dichiarazione di interfaccia. Per altre informazioni, vedere [refactoring con estrazione interfaccia](../ide/reference/extract-interface.md).
+6. Estrarre un'interfaccia dalla classe che si sta esponendo a VBA. Nel **Estrai interfaccia** finestra di dialogo, selezionare i membri pubblici che si desidera includere nella dichiarazione di interfaccia. Per altre informazioni, vedere [refactoring con estrazione interfaccia](../ide/reference/extract-interface.md).
   
-7.  Aggiungere il **pubblica** una parola chiave per la dichiarazione dell'interfaccia.  
+7. Aggiungere il **pubblica** una parola chiave per la dichiarazione dell'interfaccia.  
   
-8.  Rendere visibili a COM aggiungendo il codice seguente l'interfaccia <xref:System.Runtime.InteropServices.ComVisibleAttribute> all'interfaccia dell'attributo.  
+8. Rendere visibili a COM aggiungendo il codice seguente l'interfaccia <xref:System.Runtime.InteropServices.ComVisibleAttribute> all'interfaccia dell'attributo.  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   ```  
   
 9. Aprire il documento (per Word) o un foglio di lavoro (per Excel) nella finestra di progettazione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
