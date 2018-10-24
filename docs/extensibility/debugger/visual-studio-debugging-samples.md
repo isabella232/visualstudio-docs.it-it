@@ -15,16 +15,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58f0930a98051d1674cf1828ed738def2949ca30
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: c422dc47ab7bf74c4a16e81efb4ed85d6b87b520
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950914"
 ---
 # <a name="visual-studio-debugging-samples"></a>Esempi di debug di Visual Studio
 Due esempi mostrano come estendere il debugger di Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
-  
--   L'esempio dell'analizzatore di espressioni Debugger, per linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] finestra, fare clic sui **esempi** scheda, fare clic su **tutti** o **c#** nell'elenco delle lingue e quindi fare clic su **Debugger**.  
-  
--   Visual Studio il Debug di motore di esempio, per linguaggi nativi, è disponibile in MSDN Code Gallery. Per altre informazioni, vedere [esempio di motore di debug Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) nel sito Web Microsoft.
+
+- L'esempio dell'analizzatore di espressioni Debugger, per linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] finestra, fare clic sui **esempi** scheda, fare clic su **tutti** o **c#** nell'elenco delle lingue e quindi fare clic su **Debugger**.  
+
+- Visual Studio il Debug di motore di esempio, per linguaggi nativi, è disponibile in MSDN Code Gallery. Per altre informazioni, vedere [esempio di motore di debug Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) nel sito Web Microsoft.
