@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827714"
 ---
 # <a name="set-up-remote-workspaces"></a>Impostare aree di lavoro remote
 
@@ -97,15 +97,15 @@ Per informazioni sui vantaggi e i rischi dell'uso di un certificato autofirmato,
 Per emettere un certificato autofirmato:
 
 1. Usare SSH o accedere al computer Linux.
-1. Installare il pacchetto `ssl-cert`:
+2. Installare il pacchetto `ssl-cert`:
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. Eseguire `make-ssl-cert` per generare il certificato SSL autofirmato predefinito:
+3. Eseguire `make-ssl-cert` per generare il certificato SSL autofirmato predefinito:
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. Convertire la chiave e i file PME generati in PFX. Il file PFX generato deve essere nella home directory:
+4. Convertire la chiave e i file PME generati in PFX. Il file PFX generato deve essere nella home directory:
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ Per eseguire codice R, il computer remoto deve avere un interprete R installato 
 
 1. Scaricare e installare uno dei seguenti programmi:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R per Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R per Windows](https://cran.r-project.org/bin/windows/base/)
 
-    Le funzionalità dei programmi sono identiche ma Microsoft R Open dispone di librerie aggiuntive di algebra lineare con accelerazione hardware, per gentile concessione di [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
+     Le funzionalità dei programmi sono identiche ma Microsoft R Open dispone di librerie aggiuntive di algebra lineare con accelerazione hardware, per gentile concessione di [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
 
-1. Eseguire il [programma di installazione di R Services](https://aka.ms/rtvs-services) e riavviare quando richiesto. Il programma di installazione esegue le operazioni seguenti:
+2. Eseguire il [programma di installazione di R Services](https://aka.ms/rtvs-services) e riavviare quando richiesto. Il programma di installazione esegue le operazioni seguenti:
 
     - Creare una cartella in *%PROGRAMFILES%\R Tools per Visual Studio\1.0\\* e copiare tutti i file binari necessari.
     - Installa `RHostBrokerService` e `RUserProfileService` e ne configura l'avvio automatico.
@@ -160,12 +160,12 @@ Per eseguire codice R, il computer remoto deve avere un interprete R installato 
 
 1. Scaricare e installare uno dei seguenti programmi:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R per Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R per Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    Le funzionalità dei programmi sono identiche ma Microsoft R Open dispone di librerie aggiuntive di algebra lineare con accelerazione hardware, per gentile concessione di [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
+     Le funzionalità dei programmi sono identiche ma Microsoft R Open dispone di librerie aggiuntive di algebra lineare con accelerazione hardware, per gentile concessione di [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
 
-1. Seguire le istruzioni in [Remote R Service per Linux](setting-up-remote-r-service-on-linux.md), che tratta argomenti come i computer Ubuntu fisici, le macchine virtuali Ubuntu di Azure, il sottosistema Windows per Linux (WSL) e i contenitori Docker, inclusi quelli in esecuzione in Azure Container Repository.
+2. Seguire le istruzioni in [Remote R Service per Linux](setting-up-remote-r-service-on-linux.md), che tratta argomenti come i computer Ubuntu fisici, le macchine virtuali Ubuntu di Azure, il sottosistema Windows per Linux (WSL) e i contenitori Docker, inclusi quelli in esecuzione in Azure Container Repository.
 
 ## <a name="configure-r-services"></a>Configurare i servizi R
 

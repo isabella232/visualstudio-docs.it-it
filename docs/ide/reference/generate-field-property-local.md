@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cff83eb490f8012e8679dbd0b2c6a65d27f8e14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00e3f1d994c854bab319b6fec823fce213f4f2ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822787"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generare un campo, una proprietà o una variabile locale in Visual Studio
 
@@ -36,24 +36,24 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-    ![Codice evidenziato C#](media/field-highlight-cs.png)
+       ![Codice evidenziato C#](media/field-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato VB](media/field-highlight-vb.png)
+       ![Codice evidenziato VB](media/field-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
-    ![Anteprima della generazione di campo/proprietà/elemento locale](media/field-preview-cs.png)
+      ![Anteprima della generazione di campo/proprietà/elemento locale](media/field-preview-cs.png)
 
-1. Selezionare una delle opzioni di generazione dal menu a discesa.
+3. Selezionare una delle opzioni di generazione dal menu a discesa.
 
    > [!TIP]
    > Usare il collegamento **Anteprima modifiche** nella parte inferiore della finestra di anteprima [per visualizzare tutte le modifiche](../../ide/preview-changes.md) che verranno apportate prima di effettuare la selezione.
@@ -62,11 +62,11 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-      ![Risultato della generazione del metodo C#](media/field-result-cs.png)
+       ![Risultato della generazione del metodo C#](media/field-result-cs.png)
 
    - Visual Basic:
 
-      ![Risultato della generazione del metodo VB](media/field-result-vb.png)
+       ![Risultato della generazione del metodo VB](media/field-result-vb.png)
 
 ## <a name="see-also"></a>Vedere anche
 

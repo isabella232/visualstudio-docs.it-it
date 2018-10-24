@@ -9,12 +9,12 @@ description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 409b5a98990f3dedc8ed321f085615c1d542ed7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822163"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -72,14 +72,14 @@ Il portale sottoscrizioni di Visual Studio riunisce tutti i programmi e le sotto
 
 La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di colore blu della pagina Vantaggi. Viene anche visualizzata in alto a destra della pagina.
 > [!div class="mx-imgBorder"]
-> ![Sottoscrizione attiva](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> ![Sottoscrizione attiva](_img/manage-vs-subscriptions/current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Per passare da una sottoscrizione all'altra è possibile:
 
 - Fare clic sul menu a discesa in alto a destra e scegliere la sottoscrizione dall'elenco
 - Fare clic sulla scheda Sottoscrizioni e quindi fare clic sulla sottoscrizione necessaria
-> [!div class="mx-imgBorder"]
-> ![Passaggio da una sottoscrizione all'altra](_img\manage-vs-subscriptions\change-subscription-resized.png)
+  > [!div class="mx-imgBorder"]
+  > ![Passaggio da una sottoscrizione all'altra](_img/manage-vs-subscriptions/change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Se la sottoscrizione non è visibile...
 
@@ -124,8 +124,8 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo, semplif
 4. Dopo aver completato le modifiche, fare clic su **Salva**.
 5. Fare clic sul pulsante **Indietro** del browser per tornare alla pagina Vantaggi.
 
-    > [!div class="mx-imgBorder"]
-    > ![Modifica delle informazioni sul profilo](_img\manage-vs-subscriptions\edit-profile-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Modifica delle informazioni sul profilo](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Collegamento della propria sottoscrizione alle sottoscrizioni Azure DevOps Services o Azure esistenti
 
@@ -140,8 +140,8 @@ Per aggiungere un account alternativo:
 3. In **Collegamenti correlati** scegliere **Add alternate account** (Aggiungi account alternativo).
 4. Immettere l'indirizzo e-mail dell'account aziendale o dell'istituto di istruzione e fare clic su **Aggiungi**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Account alternativo](_img\manage-vs-subscriptions\alternate-account-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Account alternativo](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
 Dopo aver aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo in qualsiasi momento facendo clic sulla scheda **Sottoscrizioni** e scegliendo l'opzione appropriata nella sezione **Collegamenti correlati**.
 

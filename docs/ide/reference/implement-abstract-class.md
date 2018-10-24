@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e89fb94b8c68bd4ac1219b675b8e77df206bf806
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6fc870e53e9323b8f76cfa39b2e6f961b04e973a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825764"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementare una classe astratta in Visual Studio
 
@@ -36,24 +36,24 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-    ![Codice evidenziato C#](media/abstract-highlight-cs.png)
+       ![Codice evidenziato C#](media/abstract-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato VB](media/abstract-highlight-vb.png)
+       ![Codice evidenziato VB](media/abstract-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
    ![Anteprima dell'implementazione della classe](media/abstract-preview-cs.png)
 
-1. Scegliere **Implementa classe astratta** dal menu a discesa.
+3. Scegliere **Implementa classe astratta** dal menu a discesa.
 
    > [!TIP]
    > - Usare il collegamento **Anteprima modifiche** nella parte inferiore della finestra di anteprima [per visualizzare tutte le modifiche](../../ide/preview-changes.md) che verranno apportate prima di effettuare la selezione.
@@ -63,11 +63,11 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-      ![Risultato dell'implementazione della classe C#](media/abstract-result-cs.png)
+       ![Risultato dell'implementazione della classe C#](media/abstract-result-cs.png)
 
    - Visual Basic:
 
-      ![Risultato dell'implementazione della classe VB](media/abstract-result-vb.png)
+       ![Risultato dell'implementazione della classe VB](media/abstract-result-vb.png)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -18,39 +18,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815195"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
+
 Usare la pagina **Riferimenti** di **Creazione progetti** per gestire riferimenti, riferimenti Web e spazi dei nomi importati del progetto. I progetti possono contenere riferimenti a componenti COM, servizi Web XML, assembly o librerie di classi .NET Framework o altre librerie di classi. Per altre informazioni sull'uso dei riferimenti, vedere [Gestione dei riferimenti in un progetto](../../ide/managing-references-in-a-project.md).
 
- Per accedere alla pagina **Riferimenti**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere **Progetto**, **Proprietà** sulla barra dei menu. Quando viene visualizzata la finestra Progettazione progetti fare clic sulla scheda **Riferimenti**.
+Per accedere alla pagina **Riferimenti**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere **Progetto**, **Proprietà** sulla barra dei menu. Quando viene visualizzata la finestra Progettazione progetti fare clic sulla scheda **Riferimenti**.
 
 ## <a name="uielement-list"></a>Elenco UIElement
- Le opzioni seguenti consentono di selezionare o rimuovere riferimenti e spazi dei nomi importati del progetto.
 
- **Riferimenti inutilizzati**
+Le opzioni seguenti consentono di selezionare o rimuovere riferimenti e spazi dei nomi importati del progetto.
 
- Fare clic su questo pulsante per accedere alla finestra di dialogo **Riferimenti inutilizzati**.
+**Riferimenti inutilizzati**
 
- La finestra di dialogo **Riferimenti inutilizzati** consente di rimuovere i riferimenti inclusi nel progetto ma non usati effettivamente dal codice. Contiene una griglia in cui sono elencati **Nome riferimento**, **Percorso** e altre informazioni sui riferimenti allo spazio dei nomi inutilizzati nel progetto. Nella griglia selezionare i riferimenti allo spazio dei nomi che si vuole rimuovere dal progetto e fare clic su **Rimuovi**.
+Fare clic su questo pulsante per accedere alla finestra di dialogo **Riferimenti inutilizzati**.
 
- **Percorsi riferimento**
+La finestra di dialogo **Riferimenti inutilizzati** consente di rimuovere i riferimenti inclusi nel progetto ma non usati effettivamente dal codice. Contiene una griglia in cui sono elencati **Nome riferimento**, **Percorso** e altre informazioni sui riferimenti allo spazio dei nomi inutilizzati nel progetto. Nella griglia selezionare i riferimenti allo spazio dei nomi che si vuole rimuovere dal progetto e fare clic su **Rimuovi**.
 
- Fare clic su questo pulsante per accedere alla finestra di dialogo **Percorsi riferimento**.
+**Percorsi riferimento**
+
+Fare clic su questo pulsante per accedere alla finestra di dialogo **Percorsi riferimento**.
 
 > [!NOTE]
 > Quando il sistema del progetto trova un riferimento a un assembly, il sistema risolve il riferimento eseguendo una ricerca nei percorsi seguenti nell'ordine seguente:
-
 >
->  1.  Cartella del progetto. I file della cartella del progetto vengono visualizzati in **Esplora soluzioni** quando l'opzione **Mostra tutti i file** non è attiva.
-> 2.  Cartelle specificate nella finestra di dialogo **Percorsi riferimento**.
-> 3.  Cartelle che visualizzano i file nella finestra di dialogo **Aggiungi riferimento**.
-> 4.  Cartella obj del progetto. Quando si aggiunge un riferimento COM al progetto, uno o più assembly possono essere aggiunti alla cartella obj del progetto.
+> 1. Cartella del progetto. I file della cartella del progetto vengono visualizzati in **Esplora soluzioni** quando l'opzione **Mostra tutti i file** non è attiva.
+> 2. Cartelle specificate nella finestra di dialogo **Percorsi riferimento**.
+> 3. Cartelle che visualizzano i file nella finestra di dialogo **Aggiungi riferimento**.
+> 4. Cartella obj del progetto. Quando si aggiunge un riferimento COM al progetto, uno o più assembly possono essere aggiunti alla cartella obj del progetto.
 
  **Riferimenti**
 
