@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 6c047be1c797c0304a71ae2c55f256bdc5325aaf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934613"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurare e installare Visual Studio per Mac
 
@@ -31,60 +31,60 @@ Per l'uso di iOS in Visual Studio è necessario quanto segue:
 
 2. Una volta scaricato il pacchetto di installazione, fare clic sul file **VisualStudioInstaller.dmg** per montare il programma di installazione e quindi eseguirlo facendo doppio clic sul logo, come illustrato nell'immagine seguente:
 
-  ![Finestra di dialogo del programma di installazione](media/installer-image1.png)
+   ![Finestra di dialogo del programma di installazione](media/installer-image1.png)
 
 3. Potrebbe venire visualizzata una finestra di dialogo di avviso simile a quella dell'immagine seguente. In questo caso, fare clic su **Apri**:
 
-  ![Finestra di dialogo di avviso](media/installer-image2.png)
+   ![Finestra di dialogo di avviso](media/installer-image2.png)
 
 4. Il programma di installazione controlla il sistema per verificare quali componenti devono essere installati o aggiornati:
 
-  ![Valutazione del sistema](media/installer-image3.png)
+   ![Valutazione del sistema](media/installer-image3.png)
 
 5. Verrà quindi visualizzata una finestra di dialogo di avviso che chiede di accettare le condizioni di licenza e privacy. Fare clic su **Continua** per accettare le condizioni:
 
-  ![Finestra di dialogo relativa alla licenza](media/installer-image4.png)
+   ![Finestra di dialogo relativa alla licenza](media/installer-image4.png)
 
 6. Il programma di installazione visualizza un elenco dei componenti necessari che non sono presenti e che devono essere scaricati e installati. Selezionare i prodotti da scaricare:
 
-  ![Selezionare gli elementi](media/installer-image5.png)
+   ![Selezionare gli elementi](media/installer-image5.png)
 
-  Se non si desidera installare tutte le piattaforme, usare la guida seguente per decidere quali piattaforme installare:
+   Se non si desidera installare tutte le piattaforme, usare la guida seguente per decidere quali piattaforme installare:
 
-  * **App con Xamarin**:
+   * **App con Xamarin**:
       - Xamarin.Forms - Selezionare le piattaforme **Android** e **iOS**.
       - Solo iOS - Selezionare la piattaforma **iOS** (si noti che sarà necessario installare [**Xcode**](https://developer.apple.com/xcode/)).
       - Solo Android - Selezionare la piattaforma **Android** (si noti che è necessario selezionare anche le dipendenze rilevanti).
       - Solo Mac - Selezionare la piattaforma **macOS** (si noti che sarà necessario installare [**Xcode**](https://developer.apple.com/xcode/)).
       - App Xamarin completamente multipiattaforma - Selezionare le piattaforme **Android**, **iOS** e **macOS**.
-  * **Applicazioni .NET Core** - Selezionare la piattaforma **.NET Core**.
-  * **Applicazioni Web ASP.NET Core** - Selezionare la piattaforma **.NET Core**.
-  * **Sviluppo di giochi Unity multipiattaforma** - Non è necessario installare alcuna piattaforma aggiuntiva oltre a Visual Studio per Mac. Fare riferimento alla [guida all'installazione di Unity](setup-vsmac-tools-unity.md) per altre informazioni sull'installazione dell'estensione di Unity.
+   * **Applicazioni .NET Core** - Selezionare la piattaforma **.NET Core**.
+   * **Applicazioni Web ASP.NET Core** - Selezionare la piattaforma **.NET Core**.
+   * **Sviluppo di giochi Unity multipiattaforma** - Non è necessario installare alcuna piattaforma aggiuntiva oltre a Visual Studio per Mac. Fare riferimento alla [guida all'installazione di Unity](setup-vsmac-tools-unity.md) per altre informazioni sull'installazione dell'estensione di Unity.
 
-  Questa schermata di installazione mostra la versione e le dimensioni di ogni singolo componente. È possibile fare clic su ogni componente per visualizzare un elenco delle relative dipendenze (per Android), visualizzare altri pacchetti scaricati (per .NET Core) o visualizzare le applicazioni aggiuntive necessarie (per iOS e macOS):
+   Questa schermata di installazione mostra la versione e le dimensioni di ogni singolo componente. È possibile fare clic su ogni componente per visualizzare un elenco delle relative dipendenze (per Android), visualizzare altri pacchetti scaricati (per .NET Core) o visualizzare le applicazioni aggiuntive necessarie (per iOS e macOS):
 
-  ![Dipendenze aggiuntive di Android](media/installer-image6.png)
+   ![Dipendenze aggiuntive di Android](media/installer-image6.png)
 
 7. Una volta selezionate le opzioni desiderate, fare clic su **Installa e aggiorna** per avviare il processo di installazione.
 
 8. Il programma di installazione avvia il processo di download e installazione degli elementi selezionati:
 
-  ![Avvio dell'installazione](media/installer-image7.png)
+   ![Avvio dell'installazione](media/installer-image7.png)
 
-  ![Download di Xamarin.Mac](media/installer-image8.png)
+   ![Download di Xamarin.Mac](media/installer-image8.png)
 
-  ![Completamento dell'installazione](media/installer-image9.png)
+   ![Completamento dell'installazione](media/installer-image9.png)
 
 9. Potrebbe essere necessario elevare le autorizzazioni necessarie per i singoli componenti richiesti per il completamento dell'installazione. Immettere le credenziali di amministratore in questa posizione per continuare il processo di installazione:
 
-  ![Immettere le autorizzazioni per continuare l'installazione](media/installer-image10.png)
+   ![Immettere le autorizzazioni per continuare l'installazione](media/installer-image10.png)
 
 10. Una volta completata l'installazione, è possibile iniziare a sviluppare app in Visual Studio premendo **Avvia**:
 
-  ![Aprire Visual Studio](media/installer-image11.png)
+    ![Aprire Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Se si sceglie di non installare una piattaforma o uno strumento durante l'installazione originale (deselezionandolo nel passaggio 6), è necessario eseguire di nuovo il [programma di installazione](https://visualstudio.microsoft.com/vs/) se si vuole aggiungere i componenti in un secondo momento.
+> Se si sceglie di non installare una piattaforma o uno strumento durante l'installazione originale (deselezionandolo nel passaggio 6), è necessario eseguire di nuovo il [programma di installazione](https://visualstudio.microsoft.com/vs/) se si vuole aggiungere i componenti in un secondo momento.
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installare Visual Studio per Mac protetto da un firewall o un server proxy

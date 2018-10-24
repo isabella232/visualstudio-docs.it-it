@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942998"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le espressioni, eseguire istruzioni, i valori delle variabili di stampa e così via. Consente di immettere le espressioni che devono essere valutate ed eseguite dal linguaggio di sviluppo durante il debug. Per visualizzare il **immediato** finestra, aprire un progetto per la modifica, quindi scegliere **Windows** dal **Debug** dal menu **immediato**, oppure premere CTRL + ALT + I.
@@ -54,27 +54,27 @@ Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le e
 
 #### <a name="to-execute-a-function-at-design-time"></a>Per eseguire una funzione in fase di progettazione
 
-1.  Copiare il codice seguente in un'applicazione console di [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:
+1. Copiare il codice seguente in un'applicazione console di [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:
 
-    ```vb
-    Module Module1
+   ```vb
+   Module Module1
 
-        Sub Main()
-            MyFunction(5)
-        End Sub
+       Sub Main()
+           MyFunction(5)
+       End Sub
 
-        Function MyFunction(ByVal input as Integer) As Integer
-            Return input * 2
-        End Function
+       Function MyFunction(ByVal input as Integer) As Integer
+           Return input * 2
+       End Function
 
-    End Module
-    ```
+   End Module
+   ```
 
-2.  Scegliere **Finestre** dal menu **Debug** e quindi fare clic su **Controllo immediato**.
+2. Scegliere **Finestre** dal menu **Debug** e quindi fare clic su **Controllo immediato**.
 
-3.  Tipo `?MyFunction(2)` nel **immediato** finestra e premere INVIO.
+3. Tipo `?MyFunction(2)` nel **immediato** finestra e premere INVIO.
 
-     Il **immediato** finestra eseguirà `MyFunction` e visualizzare `4`.
+    Il **immediato** finestra eseguirà `MyFunction` e visualizzare `4`.
 
 Se la funzione o subroutine contiene un punto di interruzione, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interromperà l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per altre informazioni, vedere [Procedura dettagliata: Debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md).
 
@@ -131,5 +131,5 @@ Non è possibile usare la valutazione delle espressioni in fase di progettazione
 - [Debug in Visual Studio](../../debugger/debugging-in-visual-studio.md)
 - [Debugger Basics](../../debugger/getting-started-with-the-debugger.md) (Nozioni di base sul debugger)
 - [Procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Uso delle espressioni regolari in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

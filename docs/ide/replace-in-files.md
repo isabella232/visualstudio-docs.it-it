@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b918ed26e6268adb71cbf500a8499f1eed02c54d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899331"
 ---
 # <a name="replace-in-files"></a>Sostituisci nei file
 
@@ -36,11 +36,11 @@ ms.locfileid: "31951921"
 
 1. Nel menu **Modifica** espandere **Trova e sostituisci**.
 
-1. Scegliere **Sostituisci nei file**.
+2. Scegliere **Sostituisci nei file**.
 
    oppure
 
-  Se la finestra **Trova e sostituisci** è già visualizzata, scegliere **Sostituisci nei file** nella barra degli strumenti.
+   Se la finestra **Trova e sostituisci** è già visualizzata, scegliere **Sostituisci nei file** nella barra degli strumenti.
 
 ## <a name="find-what"></a>Trova
 
@@ -92,7 +92,7 @@ Finestra **Risultati ricerca 2**
 
 Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 2**. Questa finestra viene visualizzata automaticamente per mostrare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 2**.
 
-**Visualizza solo nomi file**
+**Mostra solo nomi file**
 
 Quando questa casella di controllo è selezionata, le finestre **Risultati ricerca** elencano i nomi completi e i percorsi di tutti i file che contengono la stringa di ricerca. Tuttavia, i risultati non includono la riga di codice in cui viene visualizzata la stringa. Questa casella di controllo è disponibile solo per **Cerca nei file**.
 

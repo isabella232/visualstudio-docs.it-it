@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67e6e8744672c35bdf13e30269297dcc52c50a04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929608"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
 
@@ -41,24 +41,24 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-    ![Codice evidenziato C#](media/class-highlight-cs.png)
+       ![Codice evidenziato C#](media/class-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato VB](media/class-highlight-vb.png)
+       ![Codice evidenziato VB](media/class-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
-    ![Anteprima della generazione della classe](media/class-preview-cs.png)
+      ![Anteprima della generazione della classe](media/class-preview-cs.png)
 
-1. Selezionare una delle opzioni dal menu a discesa:
+3. Selezionare una delle opzioni dal menu a discesa:
 
    - Genera l'elemento classe '*NomeTipo*' nel nuovo file&mdash;Crea una classe denominata *NomeTipo* in un file denominato *NomeTipo*.cs/.vb
    - Genera l'elemento classe '*NomeTipo*'&mdash;Crea una classe denominata *NomeTipo* nel file corrente.
@@ -68,7 +68,7 @@ Questa generazione di codice si applica a:
    > [!TIP]
    > Usare il collegamento **Anteprima modifiche** nella parte inferiore della finestra di anteprima [per visualizzare tutte le modifiche](../../ide/preview-changes.md) che verranno apportate prima di effettuare la selezione.
 
-1. Se si seleziona l'opzione **Genera nuovo tipo**, viene visualizzata la finestra di dialogo **Genera tipo**. Configurare l'accessibilità, il tipo e la posizione del nuovo tipo.
+4. Se si seleziona l'opzione **Genera nuovo tipo**, viene visualizzata la finestra di dialogo **Genera tipo**. Configurare l'accessibilità, il tipo e la posizione del nuovo tipo.
 
    ![Genera tipo](media/class-newtype-cs.png)
 

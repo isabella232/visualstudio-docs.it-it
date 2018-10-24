@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ce7bfbe9d68a7edcc0711c1f7e954612e67d0c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7bfc700f0757d99686e28942ff796cf117b1456f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951223"
 ---
 # <a name="function-details-view"></a>Visualizzazione Dettagli funzione
 La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seguenti:  
   
--   Grafico a barre **Distribuzione costi**, che rappresenta le relazioni tra una funzione selezionata e le funzioni chiamanti che hanno eseguito la funzione selezionata e tra la funzione selezionata e le funzioni che ha chiamato.  
+- Grafico a barre **Distribuzione costi**, che rappresenta le relazioni tra una funzione selezionata e le funzioni chiamanti che hanno eseguito la funzione selezionata e tra la funzione selezionata e le funzioni che ha chiamato.  
   
--   Tabella **Dettagli prestazioni funzione**, che visualizza i dati di profilatura di riepilogo per la funzione specificata.  
+- Tabella **Dettagli prestazioni funzione**, che visualizza i dati di profilatura di riepilogo per la funzione specificata.  
   
--   Finestra **Visualizzazione codice funzione**, che visualizza il codice della funzione quando questo è disponibile.  
+- Finestra **Visualizzazione codice funzione**, che visualizza il codice della funzione quando questo è disponibile.  
   
- La finestra **Visualizzazione codice funzione** è un riquadro separato. Per impostazione predefinita,i due riquadri sono suddivisi orizzontalmente e la finestra **Visualizzazione codice funzione** è posizionata nella parte inferiore del frame.  
+  La finestra **Visualizzazione codice funzione** è un riquadro separato. Per impostazione predefinita,i due riquadri sono suddivisi orizzontalmente e la finestra **Visualizzazione codice funzione** è posizionata nella parte inferiore del frame.  
   
--   Per suddividere i due riquadri verticalmente, fare clic su **Dividi schermo verticalmente** sulla barra degli strumenti.  
+- Per suddividere i due riquadri verticalmente, fare clic su **Dividi schermo verticalmente** sulla barra degli strumenti.  
   
--   Per modificare le dimensioni relative dei riquadri, fare clic sul bordo ombreggiato tra i frame e trascinare il bordo in un'altra posizione.  
+- Per modificare le dimensioni relative dei riquadri, fare clic sul bordo ombreggiato tra i frame e trascinare il bordo in un'altra posizione.  
   
 ## <a name="cost-distribution-bar-chart"></a>Grafico a barre Distribuzione costi  
   
@@ -49,25 +49,25 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
   
  È possibile fare clic sul nome di una funzione chiamante per selezionarla nella visualizzazione.  
   
--   Se le funzioni chiamanti da elencare sono troppe, le funzioni con i contributi meno importanti vengono raccolte in un blocco **Altro**. Fare clic su **Altro** per visualizzare tutte le funzioni chiamanti e chiamate della funzione selezionata nella finestra della **visualizzazione Chiamante/chiamato**. Per altre informazioni, vedere [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md).  
+- Se le funzioni chiamanti da elencare sono troppe, le funzioni con i contributi meno importanti vengono raccolte in un blocco **Altro**. Fare clic su **Altro** per visualizzare tutte le funzioni chiamanti e chiamate della funzione selezionata nella finestra della **visualizzazione Chiamante/chiamato**. Per altre informazioni, vedere [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md).  
   
--   Se non sono presenti funzioni chiamanti o se la funzione è la funzione di ingresso di un thread o di un processo, viene visualizzato un blocco **Inizio dello Stack**.  
+- Se non sono presenti funzioni chiamanti o se la funzione è la funzione di ingresso di un thread o di un processo, viene visualizzato un blocco **Inizio dello Stack**.  
   
- **Funzione selezionata**  
+  **Funzione selezionata**  
   
- La barra della funzione selezionata mostra i contributi delle funzioni chiamate e del codice nella funzione selezionata rispetto alla metrica prestazioni totale della funzione selezionata. Le dimensioni del blocco che contiene una funzione chiamata o il corpo della funzione sono proporzionali al relativo contributo rispetto al valore totale della metrica prestazioni per la funzione selezionata.  
+  La barra della funzione selezionata mostra i contributi delle funzioni chiamate e del codice nella funzione selezionata rispetto alla metrica prestazioni totale della funzione selezionata. Le dimensioni del blocco che contiene una funzione chiamata o il corpo della funzione sono proporzionali al relativo contributo rispetto al valore totale della metrica prestazioni per la funzione selezionata.  
   
- È possibile fare clic sul nome di una funzione chiamata per selezionarla nella visualizzazione.  
+  È possibile fare clic sul nome di una funzione chiamata per selezionarla nella visualizzazione.  
   
--   Il valore **Totale** corrisponde alla metrica prestazioni per la funzione selezionata.  
+- Il valore **Totale** corrisponde alla metrica prestazioni per la funzione selezionata.  
   
--   Il blocco **Corpo della funzione** rappresenta la quantità del valore totale della metrica prestazioni relativo all'esecuzione diretta del codice nel corpo della funzione.  
+- Il blocco **Corpo della funzione** rappresenta la quantità del valore totale della metrica prestazioni relativo all'esecuzione diretta del codice nel corpo della funzione.  
   
--   Le funzioni chiamate dalla funzione selezionata sono elencate in blocchi. Le dimensioni del blocco delle funzioni selezionate rappresentano il valore della metrica prestazioni totale per la funzione selezionata riscontrato nella funzione chiamata.  
+- Le funzioni chiamate dalla funzione selezionata sono elencate in blocchi. Le dimensioni del blocco delle funzioni selezionate rappresentano il valore della metrica prestazioni totale per la funzione selezionata riscontrato nella funzione chiamata.  
   
--   Se le funzioni chiamanti da elencare sono troppe, le funzioni con i contributi meno importanti vengono raccolte in un blocco **Altro**. Fare clic su **Altro** per visualizzare tutte le funzioni chiamanti e chiamate della funzione selezionata nella finestra della **visualizzazione Chiamante/chiamato**. Per altre informazioni, vedere [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md).  
+- Se le funzioni chiamanti da elencare sono troppe, le funzioni con i contributi meno importanti vengono raccolte in un blocco **Altro**. Fare clic su **Altro** per visualizzare tutte le funzioni chiamanti e chiamate della funzione selezionata nella finestra della **visualizzazione Chiamante/chiamato**. Per altre informazioni, vedere [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md).  
   
--   Se non sono presenti funzioni chiamate, viene visualizzato un blocco **Fine dello stack**.  
+- Se non sono presenti funzioni chiamate, viene visualizzato un blocco **Fine dello stack**.  
   
 ## <a name="function-performance-details"></a>Dettagli prestazioni funzione  
  La tabella Dettagli prestazioni funzione contiene dati di riepilogo per le metriche prestazioni della funzione selezionata. Vengono visualizzati il valore e la percentuale. Specificare i dati di profilatura visualizzati nel grafico e nella tabella dei dettagli nell'elenco **Metrica prestazioni**.  

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907053"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
@@ -27,10 +27,10 @@ I comandi **Vai a** di Visual Studio consentono di eseguire una ricerca mirata n
 
 ## <a name="how-to-use-it"></a>Come usare la funzionalità
 
-Input        | Funzione
+Input | Funzione
 ------------ | ---
 **Tastiera** | Premere **CTRL**+**T** oppure **CTRL**+**,**
-**Mouse**    | Selezionare **Modifica** > **Vai a** > **Vai a tutti**
+**Mouse** | Selezionare **Modifica** > **Vai a** > **Vai a tutti**
 
 Viene visualizzata una piccola finestra nella parte superiore destra dell'editor del codice.
 
@@ -56,7 +56,7 @@ Per limitare la ricerca a un tipo specifico di elemento di codice, è possibile 
 
 Prefisso | Icona | Metodo rapido | Descrizione
 :-: | - | - | -
-:| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL**+**G**         | Consente di passare al numero di riga specificato
+:| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL**+**G** | Consente di passare al numero di riga specificato
 f| ![Icona File](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Consente di passare al file specificato
 f| ![Icona File recenti](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **CTRL**+**R** | Consente di passare al file specificato, visitato di recente
 t| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL**+**1**, **CTRL**+**T** | Consente di passare al tipo specificato
@@ -85,8 +85,8 @@ Se si seleziona l'icona a forma di ingranaggio ![Icona Ingranaggio](media/gotoal
 Impostazione | Descrizione
 ------- | ---
 Utilizza scheda anteprima | Visualizza immediatamente l'elemento selezionato nella scheda anteprima dell'IDE
-Mostra dettagli    | Visualizza informazioni relative a progetto, file, riga e riepilogo recuperando i commenti della documentazione nella finestra
-Centra la finestra   | Sposta la finestra al centro della parte superiore dell'editor di codice anziché in alto a destra
+Mostra dettagli | Visualizza informazioni relative a progetto, file, riga e riepilogo recuperando i commenti della documentazione nella finestra
+Centra la finestra | Sposta la finestra al centro della parte superiore dell'editor di codice anziché in alto a destra
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -9,12 +9,12 @@ description: Informazioni su come ottenere e gestire i codici Product Key in sot
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900852"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -79,11 +79,11 @@ Solo i sottoscrittori con sottoscrizioni attive possono scaricare i prodotti e r
 
 
 Per richiedere un codice Product Key:
-1.  Accedere alla propria sottoscrizione di Visual Studio.  Per scaricare i prodotti o richiedere codici Product Key, è necessario aver eseguito l'accesso.
-2.  Fare clic sulla scheda [Codici "Product Key"](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
-3.  I codici Product Key sono elencati in ordine alfabetico in base al nome del prodotto.  È possibile scorrere fino al nome del prodotto desiderato oppure cercarlo tramite la barra di ricerca nella parte superiore della pagina.
-    > [!div class="mx-imgBorder"]
-    > ![Cercare il codice Product Key](_img\product-keys\visio-product-key-cropped.png)
+1. Accedere alla propria sottoscrizione di Visual Studio.  Per scaricare i prodotti o richiedere codici Product Key, è necessario aver eseguito l'accesso.
+2. Fare clic sulla scheda [Codici "Product Key"](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
+3. I codici Product Key sono elencati in ordine alfabetico in base al nome del prodotto.  È possibile scorrere fino al nome del prodotto desiderato oppure cercarlo tramite la barra di ricerca nella parte superiore della pagina.
+   > [!div class="mx-imgBorder"]
+   > ![Cercare il codice Product Key](_img/product-keys/visio-product-key-cropped.png)
 
 In questo esempio è stata usata la barra di ricerca per individuare un codice Product Key per Visio 2010.
 Come si può osservare, vengono elencate diverse versioni di Visio 2010.  È già stato richiesto un codice per Visio 2010 Standard e Visio Premium 2010 e per entrambi vi sono ancora quattro codici rimanenti.  I codici richiesti sono entrambi per l'attivazione singola e vengono visualizzai nella pagina.  Si noti che è possibile registrare una breve nota sui codici richiesti nella colonna **Note**,  che può essere usata in combinazione con la data nella colonna **Richiesto** per tenere traccia dei codici richiesti.  È possibile ad esempio inserire note quando si attiva un'installazione del prodotto tramite il codice.

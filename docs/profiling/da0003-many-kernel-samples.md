@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97e2e745b59a22110f6392e2cd6fec1aea0a667a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: aec22a1312ec4b3ee404b9f701f1f34264d79dff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750233"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894742"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Numero elevato di campioni del kernel
+
 |||  
 |-|-|  
 |ID regola|DA0003|  
@@ -30,18 +31,18 @@ ms.locfileid: "34750233"
 |Metodi di profilatura|Campionamento|  
 |Messaggio|È presente un numero elevato di campioni in modalità kernel. Questa circostanza potrebbe indicare un volume elevato di attività I/O oppure un rapporto elevato di cambi di contesto. Si consiglia di profilare nuovamente l'applicazione utilizzando la modalità strumentazione.|  
 |Tipo regola|Informazioni|  
-  
+
 ## <a name="cause"></a>Causa  
  Una parte significativa degli esempi di stack di chiamate raccolti per l'applicazione era in esecuzione in modalità kernel. Si consiglia di profilare l'applicazione usando un altro metodo di profilatura.  
-  
+
 ## <a name="rule-description"></a>Descrizione della regola  
  In Windows è possibile eseguire il codice in modalità kernel oppure in modalità utente. La modalità kernel è chiamata anche modalità privilegiata. Solo il codice di sistema di basso livello, ad esempio un driver di dispositivo, viene eseguito in modalità kernel. Un'applicazione in modalità utente può passare alla modalità kernel per eseguire operazioni di I/O, per attendere primitive di sincronizzazione di thread o processi o per eseguire chiamate di sistema.  
-  
+
  Il campionamento è più efficace quando si profilano applicazioni che per la maggior parte del tempo eseguono operazioni in modalità utente. Il numero di campioni raccolti durante l'esecuzione dell'applicazione in modalità kernel può indicare operazioni di I/O frequenti o può indicare che si stanno verificando cambi di contesto. Nessuna di queste operazioni può essere analizzata usando il metodo di campionamento. Se è stato acquisito un numero eccessivo di campioni in modalità kernel, è possibile che i dati di campionamento non contengano un numero sufficiente di campioni in modalità utente per essere statisticamente significativi.  
-  
+
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Si consiglia di profilare nuovamente l'applicazione usando una delle opzioni seguenti:  
-  
+
 -   Profilare usando il metodo di strumentazione.  
-  
+
 -   Aumentare la frequenza di campionamento per tentare di raccogliere più campioni in modalità utente.

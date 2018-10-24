@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926943"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Utilizzo di elementi in XAML Designer
 È possibile aggiungere elementi, come controlli, layout e forme, all'app in XAML, nel codice o usando la finestra di progettazione XAML. Questo argomento descrive come usare gli elementi nella finestra di progettazione XAML in Visual Studio o in Blend per Visual Studio.
@@ -40,21 +40,21 @@ ms.locfileid: "44279661"
 
 #### <a name="to-change-the-layering-order"></a>Per modificare l'ordine dei livelli
 
--   Eseguire una delle operazioni seguenti:
+- Eseguire una delle operazioni seguenti:
 
-    -   Nella finestra **Struttura documento** trascinare gli elementi verso l'alto o verso il basso per creare l'ordine dei livelli desiderato.
+  - Nella finestra **Struttura documento** trascinare gli elementi verso l'alto o verso il basso per creare l'ordine dei livelli desiderato.
 
-    -   Fare clic con il pulsante destro del mouse nella finestra Struttura documento o nella tavola da disegno per cui si vuole modificare l'ordine dei livelli, scegliere **Ordina** e fare clic su una delle opzioni seguenti:
+  - Fare clic con il pulsante destro del mouse nella finestra Struttura documento o nella tavola da disegno per cui si vuole modificare l'ordine dei livelli, scegliere **Ordina** e fare clic su una delle opzioni seguenti:
 
-        -   **Porta in primo piano** per portare l'elemento davanti a tutti gli altri nell'ordine.
+    -   **Porta in primo piano** per portare l'elemento davanti a tutti gli altri nell'ordine.
 
-        -   **Porta avanti** per portare l'elemento avanti di un livello nell'ordine.
+    -   **Porta avanti** per portare l'elemento avanti di un livello nell'ordine.
 
-        -   **Porta indietro** per portare l'elemento indietro di un livello nell'ordine.
+    -   **Porta indietro** per portare l'elemento indietro di un livello nell'ordine.
 
-        -   **Porta in secondo piano** per portare l'elemento dietro tutti gli altri nell'ordine.
+    -   **Porta in secondo piano** per portare l'elemento dietro tutti gli altri nell'ordine.
 
-     Modificare la proprietà **ZIndex** nella sezione **Layout** della finestra Proprietà. Per gli elementi che si sovrappongono, la proprietà **ZIndex** ha la precedenza sull'ordine degli elementi indicato nella finestra Struttura documento. Un elemento con un valore **ZIndex** maggiore viene visualizzato in primo piano quando gli elementi si sovrappongono.
+    Modificare la proprietà **ZIndex** nella sezione **Layout** della finestra Proprietà. Per gli elementi che si sovrappongono, la proprietà **ZIndex** ha la precedenza sull'ordine degli elementi indicato nella finestra Struttura documento. Un elemento con un valore **ZIndex** maggiore viene visualizzato in primo piano quando gli elementi si sovrappongono.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Modifica dell'allineamento di un elemento
  È possibile allineare elementi nella tavola da disegno usando i comandi di menu o trascinando gli elementi sulle guide di allineamento.
@@ -109,9 +109,9 @@ ms.locfileid: "44279661"
 
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Per separare elementi ed eliminare il layout
 
--   Fare clic con il pulsante destro del mouse sul gruppo che si vuole separare e fare clic su **Separa**.
+- Fare clic con il pulsante destro del mouse sul gruppo che si vuole separare e fare clic su **Separa**.
 
- È anche possibile raggruppare o separare elementi facendo clic con il pulsante destro del mouse sugli elementi selezionati nella finestra Struttura documento e scegliendo **Raggruppa** o **Separa**.
+  È anche possibile raggruppare o separare elementi facendo clic con il pulsante destro del mouse sugli elementi selezionati nella finestra Struttura documento e scegliendo **Raggruppa** o **Separa**.
 
 ## <a name="resetting-the-element-layout"></a>Reimpostazione del layout degli elementi
  È possibile ripristinare i valori predefiniti per le proprietà di layout specifiche di un elemento usando i comandi di reimpostazione del layout. Usando questi comandi, è possibile reimpostare margini, allineamento, larghezza, altezza e dimensioni di un elemento, singolarmente o collettivamente.

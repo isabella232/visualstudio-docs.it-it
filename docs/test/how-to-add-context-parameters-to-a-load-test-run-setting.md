@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905901"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedura: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
 
@@ -36,19 +36,19 @@ Se si assegna il valore del parametro di contesto Webserver1 a `http://Corporate
 
 Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo stesso nome nelle diverse impostazioni di esecuzione del test di carico, è possibile eseguire il test di carico in ambienti diversi:
 
--   Impostazione di esecuzione server Web aziendale di gestione temporanea: il parametro di contesto denominato `WebServer1=http://CorporateStagingWebServer`
+- Impostazione di esecuzione server Web aziendale di gestione temporanea: il parametro di contesto denominato `WebServer1=http://CorporateStagingWebServer`
 
--   Impostazione di esecuzione server Web aziendale di produzione: il parametro di contesto denominato `WebServer1=http://CorporateProductionWebServer`
+- Impostazione di esecuzione server Web aziendale di produzione: il parametro di contesto denominato `WebServer1=http://CorporateProductionWebServer`
 
- **Modifica dell'impostazione di esecuzione test dalla riga di comando**
+  **Modifica dell'impostazione di esecuzione test dalla riga di comando**
 
- Se si desidera utilizzare impostazioni di esecuzione test differenti dalla riga di comando per sfruttare la strategia dei parametri di contesto, utilizzare i comandi seguenti:
+  Se si desidera utilizzare impostazioni di esecuzione test differenti dalla riga di comando per sfruttare la strategia dei parametri di contesto, utilizzare i comandi seguenti:
 
- **Set Test.UseRunSetting= CorporateStagingWebServer**
+  **Set Test.UseRunSetting= CorporateStagingWebServer**
 
- -e-
+  -e-
 
- **mstest /testcontainer:loadtest1.loadtest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Per aggiungere un parametro di contesto a un'impostazione di esecuzione
 
@@ -72,4 +72,4 @@ Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo ste
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Configurare le impostazioni esecuzione test di carico](../test/configure-load-test-run-settings.md)
+- [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)

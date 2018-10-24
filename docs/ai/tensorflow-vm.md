@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 8c84fbb3001bffb93d6c06f383551c073461419b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
-ms.locfileid: "30306721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911343"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Eseguire il training di un modello TensorFlow nel cloud
 
@@ -51,20 +51,20 @@ Scaricare questo [repository di GitHub](https://github.com/Microsoft/samples-for
 
 - Selezionare la cartella **TensorflowExamples** dal repository degli esempi scaricato e aprire il file **TensorflowExamples.sln**.
 
-![Apertura del progetto](media\tensorflow-local\open-project.png)
+   ![Apertura del progetto](media/tensorflow-local/open-project.png)
 
-![Apertura della soluzione](media\tensorflow-local\open-solution.png)
+   ![Apertura della soluzione](media/tensorflow-local/open-solution.png)
 
 ## <a name="add-azure-remote-vm"></a>Aggiungere una macchina virtuale remota di Azure
 
 In Esplora server fare clic con il pulsante destro del mouse sul nodo **Remote Machines** (Macchine remote) nel nodo AI Tools (Strumenti AI) e scegliere "Aggiungi" (Aggiungi). Immettere nome visualizzato, host IP, porta SSH, nome utente e password/file di chiave della macchina virtuale remota.
 
-![Aggiungere una nuova macchina virtuale remota](media\tensorflow-vm\add-remote-vm.png)
+![Aggiungere una nuova macchina virtuale remota](media/tensorflow-vm/add-remote-vm.png)
 
 ## <a name="submit-job-to-azure-vm"></a>Inviare il processo alla macchina virtuale di Azure
 In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto MNIST e scegliere **Invia processo**.
 
-![Invio di un processo a una macchina virtuale remota](media\tensorflow-vm\job-submission.png)
+![Invio di un processo a una macchina virtuale remota](media/tensorflow-vm/job-submission.png)
 
 Nella finestra di invio:
 
@@ -77,7 +77,7 @@ Nella finestra di invio:
 ## <a name="check-status-of-job"></a>Controllare lo stato del processo
 Per visualizzare lo stato e i dettagli dei processi, espandere la macchina virtuale a cui è stato inviato il processo in **Esplora server**. Fare doppio clic su **Processi**.
 
-![Browser processi](media\tensorflow-vm\job-browser.png)
+![Browser processi](media/tensorflow-vm/job-browser.png)
 
 ## <a name="clean-up-resources"></a>Pulire le risorse
 

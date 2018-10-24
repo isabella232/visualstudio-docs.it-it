@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949312"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
 
@@ -49,28 +49,28 @@ Un componente aggiuntivo è una DLL compilata che viene eseguita nell'ambiente d
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Per creare un componente aggiuntivo utilizzando la Creazione guidata componente aggiuntivo.
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+    Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
 
-2.  In **Modelli installati** espandere **Altri tipi di progetto** e selezionare **Extensibility**.
+2. In **Modelli installati** espandere **Altri tipi di progetto** e selezionare **Extensibility**.
 
-3.  Nell'elenco dei modelli selezionare **Componente aggiuntivo Visual Studio**.
+3. Nell'elenco dei modelli selezionare **Componente aggiuntivo Visual Studio**.
 
-4.  In **Nome** digitare un nome per il componente aggiuntivo. Ad esempio, **WebPerfTestResultsViewerAddin**.
+4. In **Nome** digitare un nome per il componente aggiuntivo. Ad esempio, **WebPerfTestResultsViewerAddin**.
 
-5.  Scegliere **OK**.
+5. Scegliere **OK**.
 
-     Viene avviata la **Creazione guidata componente aggiuntivo** di Visual Studio.
+    Viene avviata la **Creazione guidata componente aggiuntivo** di Visual Studio.
 
-6.  Scegliere **Avanti**.
+6. Scegliere **Avanti**.
 
-7.  Nella pagina **Selezionare un linguaggio di programmazione** selezionare il linguaggio di programmazione che si vuole usare per la compilazione del componente aggiuntivo.
+7. Nella pagina **Selezionare un linguaggio di programmazione** selezionare il linguaggio di programmazione che si vuole usare per la compilazione del componente aggiuntivo.
 
-    > [!NOTE]
-    > In questo argomento viene utilizzato Visual C# per il codice di esempio.
+   > [!NOTE]
+   > In questo argomento viene utilizzato Visual C# per il codice di esempio.
 
-8.  Nella pagina **Selezionare un host applicazioni** selezionare **Visual Studio**, quindi deselezionare **Visual Studio Macros**.
+8. Nella pagina **Selezionare un host applicazioni** selezionare **Visual Studio**, quindi deselezionare **Visual Studio Macros**.
 
 9. Scegliere **Avanti**.
 
@@ -96,18 +96,18 @@ Un componente aggiuntivo è una DLL compilata che viene eseguita nell'ambiente d
 
      Si aggiungerà codice al file *Connect.cs* dopo la procedura riportata di seguito, che crea un controllo utente a cui farà riferimento questo progetto WebPerfTestResultsViewerAddin.
 
- Dopo aver creato un componente aggiuntivo, è necessario registrarlo con Visual Studio affinché possa essere attivato in **Gestione componenti aggiuntivi**. Questa operazione viene eseguita usando un file XML con estensione *addin*.
+    Dopo aver creato un componente aggiuntivo, è necessario registrarlo con Visual Studio affinché possa essere attivato in **Gestione componenti aggiuntivi**. Questa operazione viene eseguita usando un file XML con estensione *addin*.
 
- In questo file *ADDIN* sono incluse le informazioni richieste da Visual Studio per visualizzare il componente aggiuntivo in **Gestione componenti aggiuntivi**. All'avvio, Visual Studio ricerca nel percorso dei file *ADDIN* eventuali file *ADDIN* disponibili. Se ne viene individuato uno, Visual Studio legge il file XML e fornisce a **Gestione componenti aggiuntivi** le informazioni necessarie per l'avvio del componente aggiuntivo quando viene fatto clic su quest'ultimo.
+    In questo file *ADDIN* sono incluse le informazioni richieste da Visual Studio per visualizzare il componente aggiuntivo in **Gestione componenti aggiuntivi**. All'avvio, Visual Studio ricerca nel percorso dei file *ADDIN* eventuali file *ADDIN* disponibili. Se ne viene individuato uno, Visual Studio legge il file XML e fornisce a **Gestione componenti aggiuntivi** le informazioni necessarie per l'avvio del componente aggiuntivo quando viene fatto clic su quest'ultimo.
 
- Il file *ADDIN* viene creato automaticamente quando si crea un componente aggiuntivo usando la **Creazione guidata componente aggiuntivo**.
+    Il file *ADDIN* viene creato automaticamente quando si crea un componente aggiuntivo usando la **Creazione guidata componente aggiuntivo**.
 
 ### <a name="add-in-file-locations"></a>Percorsi dei file del componente aggiuntivo
 
 La *Creazione guidata componente aggiuntivo* crea automaticamente due copie dei file **ADDIN**, come segue:
 
 |**Percorso del file con estensione addin**|**Descrizione**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |Cartella radice del progetto|Utilizzato per la distribuzione del progetto del componente aggiuntivo. Incluso nel progetto per facilitare le modifiche e impostato sul percorso locale per la distribuzione di tipo XCopy.|
 |Cartella del componente aggiuntivo|Utilizzata per l'esecuzione del componente aggiuntivo nell'ambiente di debug. Deve sempre indicare il percorso di output della configurazione della build corrente.|
 

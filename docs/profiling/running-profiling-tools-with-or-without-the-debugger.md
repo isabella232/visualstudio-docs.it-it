@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929426"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni dei quali (ad esempio, **Utilizzo CPU** e **Utilizzo memoria**) possono essere eseguiti con o senza il debugger. Gli strumenti per le prestazioni privi di debugger devono essere eseguiti su configurazioni di rilascio; al contrario, gli strumenti di debugger integrati devono essere eseguiti sulle configurazioni di debug.  
@@ -42,60 +42,60 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Raccogliere dati di profilatura durante il debug  
  La sezione seguente si occupa dell’esecuzione del debug in locale. È possibile trovare informazioni sul debug in un dispositivo o sul debug remoto nelle sezioni successive.  
   
-1.  Aprire il progetto di cui si vuole eseguire il debug, quindi fare clic su **Debug** > **Avvia debug** (oppure usare **Avvia** sulla barra degli strumenti o **F5**).  
+1. Aprire il progetto di cui si vuole eseguire il debug, quindi fare clic su **Debug** > **Avvia debug** (oppure usare **Avvia** sulla barra degli strumenti o **F5**).  
   
-2.  La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.  
+2. La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.  
   
-3.  Eseguire gli scenari per i quali si vuole raccogliere dati.  
+3. Eseguire gli scenari per i quali si vuole raccogliere dati.  
   
-     Quando si esegue la sessione, è possibile visualizzare informazioni su eventi, memoria di processo e utilizzo della CPU.  
+    Quando si esegue la sessione, è possibile visualizzare informazioni su eventi, memoria di processo e utilizzo della CPU.  
   
-     Il grafico seguente mostra la finestra **Strumenti di diagnostica** in Visual Studio 2015 Update 1:  
+    Il grafico seguente mostra la finestra **Strumenti di diagnostica** in Visual Studio 2015 Update 1:  
   
-     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  È possibile scegliere se visualizzare **Utilizzo memoria** o **Utilizzo CPU** (o entrambi) tramite l'impostazione **Seleziona strumenti** nella barra degli strumenti. Se si usa Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace in **Strumenti** > **Opzioni** > **IntelliTrace**.  
+4. È possibile scegliere se visualizzare **Utilizzo memoria** o **Utilizzo CPU** (o entrambi) tramite l'impostazione **Seleziona strumenti** nella barra degli strumenti. Se si usa Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace in **Strumenti** > **Opzioni** > **IntelliTrace**.  
   
-5.  La sessione di diagnostica termina quando si interrompe il debug.  
+5. La sessione di diagnostica termina quando si interrompe il debug.  
   
- In Visual Studio 2015 Update 1 la finestra **Strumenti di diagnostica** rende più semplice concentrarsi sugli eventi a cui si è interessati.   I nomi degli eventi sono ora accompagnati da prefissi di categoria (**Movimento**, **Output programma**, **Punto di interruzione**, **File** e così via), permettendo così di esaminare rapidamente l'elenco relativo a una determinata categoria o ignorare le categorie a cui non si è interessati.  
+   In Visual Studio 2015 Update 1 la finestra **Strumenti di diagnostica** rende più semplice concentrarsi sugli eventi a cui si è interessati.   I nomi degli eventi sono ora accompagnati da prefissi di categoria (**Movimento**, **Output programma**, **Punto di interruzione**, **File** e così via), permettendo così di esaminare rapidamente l'elenco relativo a una determinata categoria o ignorare le categorie a cui non si è interessati.  
   
- La finestra dispone ora di una casella di ricerca, tramite cui si può trovare una specifica stringa ovunque nell'elenco eventi. Ad esempio, l'immagine seguente mostra i risultati della ricerca della stringa "install", che ha restituito quattro eventi:  
+   La finestra dispone ora di una casella di ricerca, tramite cui si può trovare una specifica stringa ovunque nell'elenco eventi. Ad esempio, l'immagine seguente mostra i risultati della ricerca della stringa "install", che ha restituito quattro eventi:  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- È anche possibile escludere eventi dalla visualizzazione nella finestra o includerli nuovamente. Nell'elenco a discesa **Filtro** è possibile selezionare o deselezionare specifiche categorie di eventi. I nomi delle categorie sono uguali ai prefissi.  
+   È anche possibile escludere eventi dalla visualizzazione nella finestra o includerli nuovamente. Nell'elenco a discesa **Filtro** è possibile selezionare o deselezionare specifiche categorie di eventi. I nomi delle categorie sono uguali ai prefissi.  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- Per altre informazioni, vedere l'articolo relativo a come [eseguire ricerche e applicare filtri nella scheda Eventi della finestra Strumenti di diagnostica](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Per altre informazioni, vedere l'articolo relativo a come [eseguire ricerche e applicare filtri nella scheda Eventi della finestra Strumenti di diagnostica](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Raccogliere dati di profilatura senza il debug  
  Per l'esecuzione di alcuni strumenti di profilatura, è necessario disporre di privilegi di amministratore. È possibile avviare Visual Studio come amministratore oppure è possibile scegliere di eseguire gli strumenti come amministratore quando si avvia la sessione di diagnostica.  
   
-1.  Aprire il progetto in Visual Studio.  
+1. Aprire il progetto in Visual Studio.  
   
-2.  Scegliere **Profiler prestazioni** dal menu **Debug** (tasto di scelta rapida: **ALT**+**F2**).  
+2. Scegliere **Profiler prestazioni** dal menu **Debug** (tasto di scelta rapida: **ALT**+**F2**).  
   
-3.  Nella pagina di avvio di diagnostica scegliere uno o più strumenti da eseguire nella sessione. Vengono visualizzati solo gli strumenti applicabili al tipo di progetto, al sistema operativo e al linguaggio di programmazione. Quando si sceglie uno strumento di diagnostica, le selezioni degli strumenti che non possono essere eseguiti nella stessa sessione di diagnostica sono disattivate. Ecco le possibili scelte per un'app UWP C#:  
+3. Nella pagina di avvio di diagnostica scegliere uno o più strumenti da eseguire nella sessione. Vengono visualizzati solo gli strumenti applicabili al tipo di progetto, al sistema operativo e al linguaggio di programmazione. Quando si sceglie uno strumento di diagnostica, le selezioni degli strumenti che non possono essere eseguiti nella stessa sessione di diagnostica sono disattivate. Ecco le possibili scelte per un'app UWP C#:  
   
-     ![Selezionare gli strumenti di diagnostica](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+    ![Selezionare gli strumenti di diagnostica](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
-4.  Per avviare la sessione di diagnostica, fare clic su **Avvia**.  
+4. Per avviare la sessione di diagnostica, fare clic su **Avvia**.  
   
-5.  Eseguire gli scenari per cui si vogliono raccogliere dati.  
+5. Eseguire gli scenari per cui si vogliono raccogliere dati.  
   
-     Durante la sessione alcuni strumenti visualizzano grafici dei dati in tempo reale nella pagina di avvio degli strumenti di diagnostica.  
+    Durante la sessione alcuni strumenti visualizzano grafici dei dati in tempo reale nella pagina di avvio degli strumenti di diagnostica.  
   
-     ![Raccogliere dati nella pagina Prestazioni e diagnostica](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
+    ![Raccogliere dati nella pagina Prestazioni e diagnostica](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
   
-6.  Per terminare la sessione di diagnostica, scegliere **Arrestare la raccolta**.  
+6. Per terminare la sessione di diagnostica, scegliere **Arrestare la raccolta**.  
   
- Quando si arresta la raccolta di dati in una sessione di diagnostica, i dati vengono analizzati e il report viene visualizzato nella pagina Diagnostica.  
+   Quando si arresta la raccolta di dati in una sessione di diagnostica, i dati vengono analizzati e il report viene visualizzato nella pagina Diagnostica.  
   
- È anche possibile aprire i file di sessione .diagnostic salvati dall'elenco dei file aperti di recente nella pagina di avvio degli strumenti di diagnostica.  
+   È anche possibile aprire i file di sessione .diagnostic salvati dall'elenco dei file aperti di recente nella pagina di avvio degli strumenti di diagnostica.  
   
- ![Aprire un file della sessione di diagnostica salvato](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Aprire un file della sessione di diagnostica salvato](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Rapporto di profilatura  
  ![Rapporto degli strumenti di diagnostica](../profiling/media/diag_report.png "DIAG_Report")  

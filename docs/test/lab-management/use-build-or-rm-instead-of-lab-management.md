@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 1347e6170b5cf58a4e88365d7c1653389cfb6607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950654"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Usare Azure Test Plans anziché Lab Management per i test automatizzati
 
@@ -27,7 +27,7 @@ Se si usano Microsoft Test Manager (MTM) e Lab Management per l'esecuzione di te
 Per l'automazione della compilazione, della distribuzione e del test delle applicazioni, MTM e Lab Management si basano su una definizione di compilazione XAML. Per raggiungere questo obiettivo, la compilazione XAML si basa su diversi costrutti creati in MTM, ad esempio un ambiente lab e gruppi e impostazioni di test, e sui vari componenti di infrastruttura, ad esempio un controller di compilazione, agenti di compilazione, un controller di test e agenti di test. È possibile ottenere lo stesso risultato con un numero inferiore di passaggi tramite Build and Release Management in TFS e in Azure Pipelines.
 
 | Passaggi | Con la compilazione XAML | Con Build and Release Management |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | Identificare i computer in cui distribuire la compilazione ed eseguire i test. | Creare un ambiente lab standard in MTM con questi computer. | N/D |
 | Identificare i test da eseguire. | Creare un gruppo di test in MTM, creare i test case e associare l'automazione a ogni test case. Creare le impostazioni di test in MTM identificando il ruolo dei computer nell'ambiente lab in cui devono essere eseguiti i test. | Se si prevede di gestire l'esecuzione dei test tramite piani di test, creare un gruppo di test automatizzati in MTM nello stesso modo. In alternativa, è possibile evitare questo passaggio se i test devono essere eseguiti direttamente da file binari di test generati dalle compilazioni. In entrambi i casi non è necessario creare impostazioni di test. |
 | Automatizzare la distribuzione e l'esecuzione di test. | Creare una definizione di compilazione XAML tramite LabDefaultTemplate.*.xaml. Specificare la compilazione, i gruppi di test e l'ambiente lab nella definizione di compilazione. | Creare una [pipeline di compilazione o di versione](/azure/devops/pipelines/index?view=vsts) con un unico ambiente. Eseguire lo stesso script di distribuzione (dalla definizione di compilazione XAML) tramite l'attività Riga di comando ed eseguire test automatizzati tramite le attività Distribuzione agente di test ed Esegui test funzionali. Come input per queste attività, specificare l'elenco dei computer e le relative credenziali. |
@@ -58,7 +58,7 @@ Tuttavia, data l'evoluzione di sistemi più avanzati di gestione del cloud pubbl
 La tabella seguente offre un riepilogo delle attività più comuni eseguite in Centro lab e del modo in cui è possibile eseguire queste attività tramite SCVMM o Azure (nel caso di attività di gestione dell'infrastruttura) o tramite TFS e Azure DevOps Services (nel caso di attività di test o distribuzione):
 
 | Passaggi | Con Centro lab | Con Build and Release Management |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | Gestire una libreria di modelli di ambiente. | Creare un ambiente lab. Installare il software necessario nelle macchine virtuali. Eseguire Sysprep e archiviare l'ambiente come modello nella libreria. | Usare direttamente la console di amministrazione di SCVMM per creare e gestire modelli di macchine virtuali o modelli di servizi. Quando si usa Azure, selezionare uno dei [modelli di avvio rapido di Azure](https://azure.microsoft.com/resources/templates/). |
 | Creare un ambiente lab. | Selezionare un modello di ambiente nella libreria e distribuirlo. Specificare i parametri necessari per personalizzare le configurazioni delle macchine virtuali. | Usare direttamente la console di amministrazione di SCVMM per creare macchine virtuali o istanze del servizio da modelli. Usare direttamente il portale di Azure per creare risorse. In alternativa, creare una definizione di versione con un ambiente. Usare una o più attività di Azure dall'[estensione SCVMM Integration](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) per creare nuove macchine virtuali. Creare una nuova versione di questa definizione equivale alla creazione di un nuovo ambiente in Centro lab. |
 | Connettersi ai computer. | Aprire l'ambiente lab nel Visualizzatore dell'ambiente. | Usare direttamente la console di amministrazione di SCVMM per connettersi alle macchine virtuali. In alternativa, usare l'indirizzo IP o il nome DNS delle macchine virtuali per aprire sessioni di Desktop remoto. |

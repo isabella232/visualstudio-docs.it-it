@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9700fb8cc84e0403c180b0570ca874fdff784e8
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d71a59e0173be60779675f838fad20943eabc85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913254"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Procedura: Creare uno shader con Lambert di base
 
@@ -27,17 +27,17 @@ Il modello di illuminazione Lambert incorpora l'illuminazione ambientale e direz
 
 Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
-1.  Creare uno shader DGSL da usare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
+1. Creare uno shader DGSL da usare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
 
-2.  Scollegare il nodo **Colore punto** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti**. Lasciare connesso il terminale **Alfa**.
+2. Scollegare il nodo **Colore punto** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti**. Lasciare connesso il terminale **Alfa**.
 
-3.  Aggiungere un nodo **Lambert** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Lambert** e spostarlo nell'area di progettazione. Il nodo Lambert calcola il contributo totale di colore con riflessione diffusa del pixel in base ai parametri di illuminazione ambientale e diffusa.
+3. Aggiungere un nodo **Lambert** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Lambert** e spostarlo nell'area di progettazione. Il nodo Lambert calcola il contributo totale di colore con riflessione diffusa del pixel in base ai parametri di illuminazione ambientale e diffusa.
 
-4.  Collegare il nodo **Colore punto** al nodo **Lambert**. In modalità **Seleziona** spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Colore diffuso** del nodo **Lambert**. Questa connessione fornisce il nodo Lambert con interpolazione del colore con riflessione diffusa del pixel.
+4. Collegare il nodo **Colore punto** al nodo **Lambert**. In modalità **Seleziona** spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Colore diffuso** del nodo **Lambert**. Questa connessione fornisce il nodo Lambert con interpolazione del colore con riflessione diffusa del pixel.
 
-5.  Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Lambert** nel terminale **RGB** del nodo **Colore finale**.
+5. Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Lambert** nel terminale **RGB** del nodo **Colore finale**.
 
- La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.
+   La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.
 
 > [!NOTE]
 > Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader. Un gioco o un'app può usare questo parametro per specificare un valore di colore univoco per ogni oggetto. Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 82ddeb3bb9a813cf2faa7a1f77364dc792792f5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894651"
 ---
 # <a name="l2dbformxaml-source-code"></a>Codice sorgente di L2DBForm.xaml
 
@@ -238,7 +238,6 @@ L'ultima sezione dell'interfaccia utente, **Add New Book**, non usa l'associazio
         </DockPanel>
     </StackPanel>
 </Window>
-
 ```
 
 ### <a name="comments"></a>Commenti

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908742"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Specificare gli eventi di compilazione personalizzati in Visual Studio
 
@@ -37,24 +37,24 @@ Gli eventi di compilazione seguono la stessa sintassi dei comandi DOS, ma è pos
 
  Per ottenere risultati ottimali, seguire questi suggerimenti di formattazione:
 
--   Aggiungere un'`call`istruzione prima di tutti gli eventi di compilazione che eseguono file con estensione *.bat*.
+- Aggiungere un'`call`istruzione prima di tutti gli eventi di compilazione che eseguono file con estensione *.bat*.
 
-     Esempio: `call C:\MyFile.bat`
+   Esempio: `call C:\MyFile.bat`
 
-     Esempio: `call C:\MyFile.bat call C:\MyFile2.bat`
+   Esempio: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Racchiudere tra virgolette i percorsi dei file.
+- Racchiudere tra virgolette i percorsi dei file.
 
-     Esempio (per [!INCLUDE[win8](../debugger/includes/win8_md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
+   Esempio (per [!INCLUDE[win8](../debugger/includes/win8_md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   Separare più comandi usando le interruzioni di riga.
+- Separare più comandi usando le interruzioni di riga.
 
--   Includere i caratteri jolly, se necessario.
+- Includere i caratteri jolly, se necessario.
 
-     Esempio: `for %I in (*.txt *.doc *.html) do copy %I c:\`*directory*`\`
+   Esempio: `for %I in (*.txt *.doc *.html) do copy %I c:\`*directory*`\`
 
-    > [!NOTE]
-    >  `%I` nel codice sopra riportato deve essere `%%I` negli script batch.
+  > [!NOTE]
+  >  `%I` nel codice sopra riportato deve essere `%%I` negli script batch.
 
 ## <a name="see-also"></a>Vedere anche
 

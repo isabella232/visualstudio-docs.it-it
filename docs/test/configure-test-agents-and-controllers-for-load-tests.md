@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942985"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurare agenti di test e test controller per i test di carico
 
@@ -35,25 +35,25 @@ L'architettura di simulazione di carico è costituita da un client di Visual Stu
 
 Questa architettura offre i vantaggi seguenti:
 
--   La possibilità di scalare in orizzontale la generazione del carico aggiungendo altri agenti di test a un controller di test.
+- La possibilità di scalare in orizzontale la generazione del carico aggiungendo altri agenti di test a un controller di test.
 
--   La flessibilità di installare il software del client, del controller di test e degli agenti di test nello stesso computer o in computer diversi. Ad esempio:
+- La flessibilità di installare il software del client, del controller di test e degli agenti di test nello stesso computer o in computer diversi. Ad esempio:
 
-     **Configurazione locale:**
+   **Configurazione locale:**
 
-    -   Computer1: Visual Studio, controller, agente.
+  - Computer1: Visual Studio, controller, agente.
 
-     ![Computer locale che usa controller e agente](./media/load-test-configa.png)
+    ![Computer locale che usa controller e agente](./media/load-test-configa.png)
 
-     **Configurazione remota tipica:**
+    **Configurazione remota tipica:**
 
-    -   Computer1 e 2: Visual Studio (più tester possono usare lo stesso controller).
+  - Computer1 e 2: Visual Studio (più tester possono usare lo stesso controller).
 
-    -   Computer3: controller (in cui possono essere anche presenti agenti installati).
+  - Computer3: controller (in cui possono essere anche presenti agenti installati).
 
-    -   Computer4-n: agente o agenti tutti associati al controller in Computer3.
+  - Computer4-n: agente o agenti tutti associati al controller in Computer3.
 
-     ![Computer remoti che usano controller e agenti](./media/load-test-configb.png)
+    ![Computer remoti che usano controller e agenti](./media/load-test-configb.png)
 
 Anche se un controller di test gestisce in genere diversi agenti di test, un agente può essere associato solo a un unico controller. Ogni agente di test può essere condiviso da un team di sviluppatori. Questa architettura consente di aumentare il numero di agenti di test, generando così carichi maggiori.
 
