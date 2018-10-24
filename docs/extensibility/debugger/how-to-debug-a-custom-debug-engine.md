@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15456dddcb18909e514e485e749029c7dac9da9
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: bdc01eec9982f7e3a03cd84424bc56b031846a7d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858862"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Procedura: Eseguire il Debug di un motore di debug personalizzato
 Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> (metodo). Ciò significa che viene avviata la Germania sotto il controllo dell'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controllo del tipo di progetto. Tuttavia, tale istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è possibile eseguire il debug di DE. Di seguito sono i passaggi che consentono di eseguire il debug di DE personalizzato.  
@@ -32,21 +32,21 @@ Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStud
   
 ## <a name="debug-a-custom-debug-engine"></a>Eseguire il debug di un motore di debug personalizzato  
   
-1.  Avviare *msvsmon.exe*, Monitor di Debug remoto.  
+1. Avviare *msvsmon.exe*, Monitor di Debug remoto.  
   
-2.  Dal **strumenti** dal menu *msvsmon.exe*, selezionare **opzioni** per aprire la **opzioni** nella finestra di dialogo.  
+2. Dal **strumenti** dal menu *msvsmon.exe*, selezionare **opzioni** per aprire la **opzioni** nella finestra di dialogo.  
   
-3.  Selezionare l'opzione "Nessuna autenticazione" e fare clic su **OK**.  
+3. Selezionare l'opzione "Nessuna autenticazione" e fare clic su **OK**.  
   
-4.  Avviare un'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e aprire il progetto DE personalizzato.  
+4. Avviare un'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e aprire il progetto DE personalizzato.  
   
-5.  Avviare una seconda istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e aprire un progetto personalizzato che consente di avviare il DE (per lo sviluppo, si tratta in genere nell'hive del Registro di sistema sperimentale impostato quando viene installato VSIP).  
+5. Avviare una seconda istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e aprire un progetto personalizzato che consente di avviare il DE (per lo sviluppo, si tratta in genere nell'hive del Registro di sistema sperimentale impostato quando viene installato VSIP).  
   
-6.  In questa seconda istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], caricare un file di origine da un progetto personalizzato e avviare il programma da sottoporre a debug. Attendere qualche minuto per consentire il DE al caricamento o attendere fino a quando non viene raggiunto un punto di interruzione.  
+6. In questa seconda istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], caricare un file di origine da un progetto personalizzato e avviare il programma da sottoporre a debug. Attendere qualche minuto per consentire il DE al caricamento o attendere fino a quando non viene raggiunto un punto di interruzione.  
   
-7.  La prima istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (con il progetto DE), selezionare **Connetti a processo** dal **Debug** menu.  
+7. La prima istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (con il progetto DE), selezionare **Connetti a processo** dal **Debug** menu.  
   
-8.  Nel **Connetti a processo** della finestra di dialogo Modifica il **trasporto** al **remoto (solo nativo senza autenticazione)**.  
+8. Nel **Connetti a processo** della finestra di dialogo Modifica il **trasporto** al **remoto (solo nativo senza autenticazione)**.  
   
 9. Modifica il **qualificatore** sul nome del computer (Nota: è presente una cronologia delle voci, è necessario digitare il nome specificato una sola volta).  
   
@@ -58,21 +58,21 @@ Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStud
   
 ## <a name="debug-a-custom-project-type"></a>Eseguire il debug di un tipo di progetto personalizzati  
   
-1.  Avviare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in hive del Registro di sistema normale e carica il progetto digitare progetto (si tratta, l'origine per il tipo di progetto, non un'istanza del tipo di progetto).  
+1. Avviare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in hive del Registro di sistema normale e carica il progetto digitare progetto (si tratta, l'origine per il tipo di progetto, non un'istanza del tipo di progetto).  
   
-2.  Aprire le proprietà del progetto e passare al **Debug** pagina. Per il **comando**, digitare il percorso per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (per impostazione predefinita, si tratta *[disco]* \Programmi\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2. Aprire le proprietà del progetto e passare al **Debug** pagina. Per il **comando**, digitare il percorso per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (per impostazione predefinita, si tratta *[disco]* \Programmi\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
-3.  Per il **argomenti del comando**, tipo `/rootsuffix exp` per hive del Registro di sistema sperimentale (creato durante l'installazione di VSIP).  
+3. Per il **argomenti del comando**, tipo `/rootsuffix exp` per hive del Registro di sistema sperimentale (creato durante l'installazione di VSIP).  
   
-4.  Fai clic su **OK** per accettare le modifiche.  
+4. Fai clic su **OK** per accettare le modifiche.  
   
-5.  Avviare il tipo di progetto premendo **F5**. Verrà avviata una seconda istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+5. Avviare il tipo di progetto premendo **F5**. Verrà avviata una seconda istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-6.  A questo punto, è possibile inserire i punti di interruzione nel codice di origine del tipo di progetto.  
+6. A questo punto, è possibile inserire i punti di interruzione nel codice di origine del tipo di progetto.  
   
-7.  Nella seconda istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], caricare o creare una nuova istanza del tipo di progetto. Durante il caricamento o la creazione, è possibile raggiungere i punti di interruzione.  
+7. Nella seconda istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], caricare o creare una nuova istanza del tipo di progetto. Durante il caricamento o la creazione, è possibile raggiungere i punti di interruzione.  
   
-8.  Eseguire il debug del tipo di progetto.  
+8. Eseguire il debug del tipo di progetto.  
   
 9. Se si sceglie per il debug del processo di avvio un CRI, è possibile eseguire i passaggi nella procedura "Eseguire il Debug di un motore di debug personalizzate" per collegare il DE dopo che viene avviata. Questo offre tre istanze di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in esecuzione: una per l'origine di tipo di progetto, l'altra per il tipo di progetto creata un'istanza e un terzo collegati per la Germania.  
   

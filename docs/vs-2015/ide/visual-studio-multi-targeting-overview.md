@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857679"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Cenni preliminari sul multitargeting di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ In questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile
 ## <a name="framework-targeting-features"></a>Funzionalità di definizione della destinazione del framework  
  La definizione della destinazione del framework include le seguenti funzionalità:  
   
--   Quando si apre un progetto destinato a una versione precedente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], con [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] è possibile aggiornarla automaticamente o lasciare invariata la destinazione.  
+- Quando si apre un progetto destinato a una versione precedente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], con [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] è possibile aggiornarla automaticamente o lasciare invariata la destinazione.  
   
--   Quando si crea un progetto, è possibile specificare la versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] che si vuole usare come destinazione.  
+- Quando si crea un progetto, è possibile specificare la versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] che si vuole usare come destinazione.  
   
--   È possibile modificare la versione del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a cui è destinato un progetto esistente.  
+- È possibile modificare la versione del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a cui è destinato un progetto esistente.  
   
--   È possibile definire la destinazione di una versione diversa del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in ognuno dei numerosi progetti nella stessa soluzione.  
+- È possibile definire la destinazione di una versione diversa del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in ognuno dei numerosi progetti nella stessa soluzione.  
   
--   Quando si modifica la versione del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a cui è destinato un progetto, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] effettua tutte le modifiche necessarie ai riferimenti e ai file di configurazione.  
+- Quando si modifica la versione del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a cui è destinato un progetto, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] effettua tutte le modifiche necessarie ai riferimenti e ai file di configurazione.  
   
- Quando si lavora su un progetto destinato a una versione precedente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio modifica in modo dinamico l'ambiente di sviluppo, come indicato di seguito:  
+  Quando si lavora su un progetto destinato a una versione precedente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio modifica in modo dinamico l'ambiente di sviluppo, come indicato di seguito:  
   
--   Vengono filtrati gli elementi delle finestre di dialogo **Nuovo progetto**, **Aggiungi nuovo elemento**, **Aggiungi nuovo riferimento** **Aggiungi riferimento al servizio** per omettere scelte che non sono disponibili nella versione di destinazione.  
+- Vengono filtrati gli elementi delle finestre di dialogo **Nuovo progetto**, **Aggiungi nuovo elemento**, **Aggiungi nuovo riferimento** **Aggiungi riferimento al servizio** per omettere scelte che non sono disponibili nella versione di destinazione.  
   
--   Vengono filtrati i controlli personalizzati nella **Casella degli strumenti** per rimuovere quelli che non sono disponibili nella versione di destinazione e per visualizzare solo i controlli più aggiornati quando sono disponibili più controlli.  
+- Vengono filtrati i controlli personalizzati nella **Casella degli strumenti** per rimuovere quelli che non sono disponibili nella versione di destinazione e per visualizzare solo i controlli più aggiornati quando sono disponibili più controlli.  
   
--   Vengono applicati i filtri IntelliSense per omettere funzionalità del linguaggio che non sono disponibili nella versione di destinazione.  
+- Vengono applicati i filtri IntelliSense per omettere funzionalità del linguaggio che non sono disponibili nella versione di destinazione.  
   
--   Vengono filtrate le proprietà nella finestra **Proprietà** per omettere quelle che non sono disponibili nella versione di destinazione.  
+- Vengono filtrate le proprietà nella finestra **Proprietà** per omettere quelle che non sono disponibili nella versione di destinazione.  
   
--   Vengono filtrate le opzioni di menu per omettere opzioni che non sono disponibili nella versione di destinazione.  
+- Vengono filtrate le opzioni di menu per omettere opzioni che non sono disponibili nella versione di destinazione.  
   
--   Per le compilazioni, vengono usate la versione e le opzioni del compilatore appropriate per la versione di destinazione.  
+- Per le compilazioni, vengono usate la versione e le opzioni del compilatore appropriate per la versione di destinazione.  
   
 > [!NOTE]
 >  La definizione della destinazione del framework non garantisce che l'applicazione verrà eseguita correttamente. È necessario testare l'applicazione per assicurarsi che venga eseguita la versione di destinazione. Non è possibile usare come destinazione versioni di framework precedenti a .NET Framework 2.0.  

@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859057"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Usare la pagina **Riferimenti** di **Progettazione progetti** per gestire riferi
   
 > [!NOTE]
 >  Quando il sistema del progetto trova un riferimento a un assembly, il sistema risolve il riferimento eseguendo una ricerca nei percorsi seguenti nell'ordine seguente:  
->   
->  1.  Cartella del progetto. I file della cartella del progetto vengono visualizzati in **Esplora soluzioni** quando l'opzione **Mostra tutti i file** non è attiva.  
-> 2.  Cartelle specificate nella finestra di dialogo **Percorsi riferimento**.  
-> 3.  Cartelle che visualizzano i file nella finestra di dialogo **Aggiungi riferimento**.  
-> 4.  Cartella obj del progetto. Quando si aggiunge un riferimento COM al progetto, uno o più assembly possono essere aggiunti alla cartella obj del progetto.  
+> 
+> 1. Cartella del progetto. I file della cartella del progetto vengono visualizzati in **Esplora soluzioni** quando l'opzione **Mostra tutti i file** non è attiva.  
+>    2.  Cartelle specificate nella finestra di dialogo **Percorsi riferimento**.  
+>    3.  Cartelle che visualizzano i file nella finestra di dialogo **Aggiungi riferimento**.  
+>    4.  Cartella obj del progetto. Quando si aggiunge un riferimento COM al progetto, uno o più assembly possono essere aggiunti alla cartella obj del progetto.  
   
  **Riferimenti**  
  Questo elenco visualizza tutti i riferimenti del progetto, utilizzati o inutilizzati.  

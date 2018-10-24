@@ -20,12 +20,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859278"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,66 +82,66 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
 ### <a name="regenerating-the-code"></a>Rigenerazione di codice  
  Nei casi seguenti sarà eseguito un modello, che genera il file secondario:  
   
--   Modificare il modello, quindi spostare lo stato attivo su un'altra finestra di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Modificare il modello, quindi spostare lo stato attivo su un'altra finestra di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Salvare il modello.  
+- Salvare il modello.  
   
--   Fare clic su **Trasforma tutti i modelli** nel **compilazione** menu. Saranno trasformati tutti i modelli nella soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Fare clic su **Trasforma tutti i modelli** nel **compilazione** menu. Saranno trasformati tutti i modelli nella soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Nelle **Esplora soluzioni**, il menu di scelta rapida di qualsiasi file, scegliere **Esegui strumento personalizzato**. Usare questo metodo per trasformare un sottoinsieme selezionato di modelli.  
+- Nelle **Esplora soluzioni**, il menu di scelta rapida di qualsiasi file, scegliere **Esegui strumento personalizzato**. Usare questo metodo per trasformare un sottoinsieme selezionato di modelli.  
   
- È anche possibile configurare un progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modo che i modelli siano eseguiti dopo la modifica dei file di dati letti. Per altre informazioni, vedere [rigenerazione automatica di codice](#Regenerating).  
+  È anche possibile configurare un progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modo che i modelli siano eseguiti dopo la modifica dei file di dati letti. Per altre informazioni, vedere [rigenerazione automatica di codice](#Regenerating).  
   
 ## <a name="generating-variable-text"></a>Generazione del testo variabile  
  I modelli di testo permettono di usare il codice programma per variare il contenuto del file generato.  
   
 #### <a name="to-generate-text-by-using-program-code"></a>Per generare testo usando il codice programma  
   
-1.  Modificare il contenuto del file `.tt`:  
+1. Modificare il contenuto del file `.tt`:  
   
-    ```csharp  
-    <#@ template hostspecific="false" language="C#" #>  
-    <#@ output extension=".txt" #>  
-    <#int top = 10;  
+   ```csharp  
+   <#@ template hostspecific="false" language="C#" #>  
+   <#@ output extension=".txt" #>  
+   <#int top = 10;  
   
-    for (int i = 0; i<=top; i++)   
-    { #>  
+   for (int i = 0; i<=top; i++)   
+   { #>  
+      The square of <#= i #> is <#= i*i #>  
+   <# } #>  
+   ```  
+  
+   ```vb  
+   <#@ template hostspecific="false" language="VB" #>  
+   <#@ output extension=".txt" #>  
+   <#Dim top As Integer = 10  
+  
+   For i As Integer = 0 To top  
+   #>  
        The square of <#= i #> is <#= i*i #>  
-    <# } #>  
-    ```  
+   <#  
+   Next  
+   #>  
   
-    ```vb  
-    <#@ template hostspecific="false" language="VB" #>  
-    <#@ output extension=".txt" #>  
-    <#Dim top As Integer = 10  
+   ```  
   
-    For i As Integer = 0 To top  
-    #>  
-        The square of <#= i #> is <#= i*i #>  
-    <#  
-    Next  
-    #>  
+2. Salvare il file con estensione tt ed esaminare di nuovo il file con estensione txt generato. Elenca i quadrati dei numeri da 0 a 10.  
   
-    ```  
+   Si noti che le istruzioni sono racchiuse tra `<#...#>` e le singole espressioni tra `<#=...#>`. Per altre informazioni, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).  
   
-2.  Salvare il file con estensione tt ed esaminare di nuovo il file con estensione txt generato. Elenca i quadrati dei numeri da 0 a 10.  
-  
- Si noti che le istruzioni sono racchiuse tra `<#...#>` e le singole espressioni tra `<#=...#>`. Per altre informazioni, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).  
-  
- Se si scrive il codice di generazione in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la direttiva `template` deve includere `language="VB"`. Il valore predefinito è `"C#"`.  
+   Se si scrive il codice di generazione in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la direttiva `template` deve includere `language="VB"`. Il valore predefinito è `"C#"`.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debug di un modello di testo T4 in fase di progettazione  
  Per eseguire il debug di un modello di testo:  
   
--   Inserire `debug="true"` nella direttiva `template`. Ad esempio:  
+- Inserire `debug="true"` nella direttiva `template`. Ad esempio:  
   
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`  
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   Impostare punti di interruzione nel modello, esattamente come per il codice normale.  
+- Impostare punti di interruzione nel modello, esattamente come per il codice normale.  
   
--   Scegli **Debug modello T4** dal menu di scelta rapida del file di modello di testo in Esplora soluzioni.  
+- Scegli **Debug modello T4** dal menu di scelta rapida del file di modello di testo in Esplora soluzioni.  
   
- Il modello sarà eseguito e si interromperà in corrispondenza dei punti di interruzione. È possibile esaminare le variabili ed eseguire il codice un'istruzione alla volta usando le procedure normali.  
+  Il modello sarà eseguito e si interromperà in corrispondenza dei punti di interruzione. È possibile esaminare le variabili ed eseguire il codice un'istruzione alla volta usando le procedure normali.  
   
 > [!TIP]
 >  `debug="true"` permette il mapping più preciso del codice generato al modello, tramite l'inserimento di più direttive di numerazione di riga nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.  
@@ -208,13 +208,13 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
 ### <a name="structuring-text-templates"></a>Strutturazione di modelli di testo  
  È consigliabile separare il codice del modello in due parti:  
   
--   Una parte di configurazione o di raccolta dati, che imposta i valori nelle variabili ma non include blocchi di testo. Nell'esempio precedente questa parte corrisponde all'inizializzazione di `properties`.  
+- Una parte di configurazione o di raccolta dati, che imposta i valori nelle variabili ma non include blocchi di testo. Nell'esempio precedente questa parte corrisponde all'inizializzazione di `properties`.  
   
-     Questa è spesso definita la sezione "modello", poiché costruisce un modello in archivio e in genere legge un file di modello.  
+   Questa è spesso definita la sezione "modello", poiché costruisce un modello in archivio e in genere legge un file di modello.  
   
--   La parte di generazione del testo (`foreach(...){...}` nell'esempio), che usa i valori delle variabili.  
+- La parte di generazione del testo (`foreach(...){...}` nell'esempio), che usa i valori delle variabili.  
   
- Questa separazione non è necessaria, ma semplifica la lettura del modello, riducendo la complessità della parte che include il testo.  
+  Questa separazione non è necessaria, ma semplifica la lettura del modello, riducendo la complessità della parte che include il testo.  
   
 ## <a name="reading-files-or-other-sources"></a>Lettura di file o di altre origini  
  Per accedere a un file di modello o a un database, il codice del modello può usare assembly quali System.XML. Per ottenere l'accesso a questi assembly, è necessario inserire direttive simili alle seguenti:  

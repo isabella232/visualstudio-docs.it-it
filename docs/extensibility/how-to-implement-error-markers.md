@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75c6d92ae1cb5b71535d7f9aa4c9f2731f81e6ce
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: eb6e511fa899680338831f3bc8e2a411f2126006
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39640004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861163"
 ---
 # <a name="how-to-implement-error-markers"></a>Procedura: implementare gli indicatori di errore
 Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili le personalizzazioni dell'editor di testo per implementare. Tuttavia, i vantaggi che offrono agli utenti di un VSPackage possono di gran lunga i costi per fornire loro. Gli indicatori di errore leggermente contrassegnano testo che il parser del linguaggio che considera non corretto con una riga rossa ondulata o una sottolineatura ondulata. Questo indicatore consente ai programmatori visualizzando visivamente il codice non corretto.  
@@ -27,23 +27,23 @@ Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili l
   
 ## <a name="to-implement-the-red-wavy-underline-feature"></a>Per implementare la funzionalità di sottolineatura ondulata rossa  
   
-1.  Selezionare il testo in cui si desidera posizionare la sottolineatura ondulata rossa.  
+1. Selezionare il testo in cui si desidera posizionare la sottolineatura ondulata rossa.  
   
-2.  Creare un indicatore del tipo `MARKER_CODESENSE_ERROR`. Per altre informazioni, vedere [procedura: aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md).  
+2. Creare un indicatore del tipo `MARKER_CODESENSE_ERROR`. Per altre informazioni, vedere [procedura: aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md).  
   
-3.  Successivamente, passare un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> puntatore a interfaccia.  
+3. Successivamente, passare un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> puntatore a interfaccia.  
   
- Questo processo consente anche di creare testo della descrizione comando o un menu di scelta rapida speciali su un marcatore specificato. Per altre informazioni, vedere [procedura: aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md).  
+   Questo processo consente anche di creare testo della descrizione comando o un menu di scelta rapida speciali su un marcatore specificato. Per altre informazioni, vedere [procedura: aggiungere i marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md).  
   
- Gli oggetti seguenti sono necessari prima di visualizzare gli indicatori di errore.  
+   Gli oggetti seguenti sono necessari prima di visualizzare gli indicatori di errore.  
   
--   Un parser.  
+- Un parser.  
   
--   Un provider di attività (vale a dire, un'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) che gestisce un record delle modifiche nelle informazioni sulla riga allo scopo di identificare le righe per essere nuovamente analizzato.  
+- Un provider di attività (vale a dire, un'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) che gestisce un record delle modifiche nelle informazioni sulla riga allo scopo di identificare le righe per essere nuovamente analizzato.  
   
--   Un filtro di visualizzazione di testo per l'acquisizione del punto di inserimento eventi di modifica dalla vista che utilizza il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) (metodo).  
+- Un filtro di visualizzazione di testo per l'acquisizione del punto di inserimento eventi di modifica dalla vista che utilizza il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) (metodo).  
   
- Il parser, provider di attività e filtro forniscono l'infrastruttura necessaria rendere possibili gli indicatori di errore. I passaggi seguenti sono disponibili il processo per visualizzare gli indicatori di errore.  
+  Il parser, provider di attività e filtro forniscono l'infrastruttura necessaria rendere possibili gli indicatori di errore. I passaggi seguenti sono disponibili il processo per visualizzare gli indicatori di errore.  
   
 1.  In una vista che viene filtrata, il filtro recupera un puntatore per il provider di attività associato ai dati della visualizzazione.  
   

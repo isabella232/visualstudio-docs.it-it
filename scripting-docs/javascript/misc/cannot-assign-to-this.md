@@ -1,5 +1,5 @@
 ---
-title: Non è possibile assegnare a &#39; questo &#39; | Documenti Microsoft
+title: Non è possibile assegnare a &#39;questo&#39; | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,31 +20,32 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c164b9b7d2989076a9dc0ef0bafba6159bc08885
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 47e55d39e85675b37d2ac9741d1207a9e81d369e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856652"
 ---
-# <a name="cannot-assign-to-39this39"></a>Non è possibile assegnare a &#39; questo &#39;
-Si è tentato di assegnare un valore a **questo**. **questo** è un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (parola chiave) che fa riferimento a uno:  
-  
--   l'oggetto attualmente in esecuzione un metodo,  
-  
--   l'oggetto globale, se nessun metodo corrente (o il metodo non appartiene a un altro oggetto).  
-  
- Un metodo è un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funzione che viene richiamato tramite un oggetto. All'interno di un metodo di **questo** (parola chiave) è un riferimento all'oggetto tramite cui è stato richiamato il metodo (situazione che si verifica all'oggetto creato richiamando il costruttore della classe con il **nuova** operatore).  
-  
- All'interno di un metodo, è possibile utilizzare **questo** per fare riferimento all'oggetto corrente, ma non è possibile assegnare un nuovo valore per **questo**.  
-  
-### <a name="to-correct-this-error"></a>Per correggere l'errore  
-  
--   Non tentare di assegnare a **questo**. Per accedere a una proprietà o metodo di un oggetto istanza, utilizzare l'operatore punto (ad esempio, un cerchio **.** raggio).  
-  
-    > [!NOTE]
-    >  È possibile assegnare il nome variabile creata dall'utente **questo**; è un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] parola riservata.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Questa istruzione](../../javascript/reference/this-statement-javascript.md)   
- [Risoluzione dei problemi relativi agli script](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+# <a name="cannot-assign-to-39this39"></a>Non è possibile assegnare a &#39;questo&#39;
+Si è provato ad assegnare un valore per **ciò**. **Ciò** è un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] parola chiave che fa riferimento a:
+
+- l'oggetto attualmente in esecuzione un metodo,
+
+- l'oggetto globale, se nessun metodo corrente (o il metodo non appartiene a qualsiasi altro oggetto).
+
+Un metodo è un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funzione che viene richiamato tramite un oggetto. All'interno di un metodo, il **ciò** è un riferimento all'oggetto è stato richiamato il metodo tramite la parola chiave (che sembra essere l'oggetto creato tramite la chiamata al costruttore di classe con il **nuovi** operatore).
+
+All'interno di un metodo, è possibile usare **ciò** per fare riferimento all'oggetto corrente, ma è possibile assegnare un nuovo valore per **ciò**.
+
+## <a name="to-correct-this-error"></a>Per correggere l'errore
+
+- Non tentare di assegnare ai **ciò**. Per accedere a una proprietà o metodo di un oggetto istanza, usare l'operatore punto (ad esempio, **circle.radius**).
+
+  > [!NOTE]
+  > È possibile assegnare il nome variabile creata dall'utente **ciò**; è un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] parola riservata.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Istruzione this](../../javascript/reference/this-statement-javascript.md)
+- [Risoluzione dei problemi relativi agli script](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

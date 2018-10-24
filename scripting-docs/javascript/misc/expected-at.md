@@ -1,5 +1,5 @@
 ---
-title: Previsto &#39; @&#39; | Documenti Microsoft
+title: Previsto &#39;@&#39; | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f007129aa8da3ac49112fbc83b7abd31e4356c4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856847"
 ---
-# <a name="expected-3939"></a>Previsto &#39; @&#39;
-Si è tentato di creare una variabile da utilizzare con istruzioni di compilazione condizionale utilizzando il `@set` istruzione, ma non è stato inserito un simbolo di chiocciola "**@**" prima del nome della variabile.  
+# <a name="expected-3939"></a>Previsto &#39;@&#39;
+Si è tentato di creare una variabile da utilizzare con le istruzioni di compilazione condizionale utilizzando il `@set` istruzione, ma non è stato inserito un simbolo di chiocciola "**@**" prima il nome della variabile.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Aggiungere un simbolo di chiocciola "**@**" immediatamente prima il nome della variabile. Ad esempio:  
+-   Aggiungere un simbolo di chiocciola "**@**" immediatamente prima del nome della variabile. Ad esempio:  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [@setIstruzione](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set Istruzione](../../javascript/reference/at-set-statement-javascript.md)   
  [Compilazione condizionale](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variabili di compilazione condizionale](../../javascript/advanced/conditional-compilation-variables-javascript.md)

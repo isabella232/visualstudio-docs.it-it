@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861280"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
 Un linguaggio specifico di dominio (DSL) è definito dal relativo file di definizione DSL, insieme a qualsiasi codice programma personalizzato che è possibile scrivere. La maggior parte del codice del programma nella soluzione DSL viene generato da questo file.
@@ -135,7 +135,7 @@ Un linguaggio specifico di dominio (DSL) è definito dal relativo file di defini
  Configurare la molteplicità di un ruolo digitando nel diagramma o modificando la `Multiplicity` proprietà nel **proprietà** finestra. Nella tabella seguente descrive le impostazioni per questa proprietà.
 
 |Tipo di molteplicità|Descrizione|
-|-----------------------|-----------------|
+|-|-|
 |0.. * (zero a molti)|Ogni istanza della classe di dominio può avere più istanze della relazione o nessuna istanza della relazione.|
 |0..1 (zero a uno)|Ogni istanza della classe di dominio può avere non più di un'istanza della relazione o nessuna istanza della relazione.|
 |1..1 (uno)|Ogni istanza della classe di dominio può avere un'istanza della relazione. È possibile creare più di un'istanza di questa relazione da qualsiasi istanza della classe role. Se la convalida è abilitata, verrà visualizzato un errore di convalida quando qualsiasi istanza della classe ruolo non dispone di alcuna istanza della relazione.|

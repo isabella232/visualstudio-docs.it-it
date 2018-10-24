@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f286acae2996451688b0e1a40c4d758c4de8caf6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857848"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools per scenari di installazione di Office runtime
   È possibile installare Visual Studio 2010 Tools per Office runtime in tre modi:  
   
--   Quando si installa Visual Studio.  
+- Quando si installa Visual Studio.  
   
--   Quando si installa Microsoft Office.  
+- Quando si installa Microsoft Office.  
   
--   Quando si installa Visual Studio 2010 Tools per Office runtime redistributable.  
+- Quando si installa Visual Studio 2010 Tools per Office runtime redistributable.  
   
- I componenti runtime vengono installati in base alla configurazione del computer e allo scenario di installazione.  
+  I componenti runtime vengono installati in base alla configurazione del computer e allo scenario di installazione.  
   
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>Componenti runtime installati in ogni scenario di installazione  
  Visual Studio 2010 Tools per Office runtime include tre componenti: il caricatore di soluzioni Office, le estensioni di Office per .NET Framework 3.5 e le estensioni di Office per i [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva. Quando si installa il runtime, il caricatore di soluzioni Office viene sempre installato. L'installazione delle estensioni di Office per .NET Framework dipende dalla configurazione del computer e dallo scenario di installazione. Se una delle estensioni di Office non può essere installata quando il runtime viene installato per la prima volta, il runtime installerà automaticamente le estensioni di Office mancanti in un secondo momento, quando determinati requisiti saranno soddisfatti. Questa funzionalità del runtime è detta *installare su richiesta*.  
@@ -39,7 +39,7 @@ ms.locfileid: "35672695"
  Nella tabella seguente vengono illustrati i componenti runtime installati per impostazione predefinita in ogni scenario di installazione del runtime. Ulteriori informazioni su ogni scenario verranno visualizzate in un secondo momento.  
   
 |Scenario di installazione del runtime|Caricatore di soluzioni di Office|Estensioni di Office per .NET Framework 3.5|Estensioni di Office per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Estensioni di Office per [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
-|-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
+|-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|  
 |Con [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] e versione successiva|Yes|Sì, se è già installata .NET Framework 3.5.|Yes|Yes|  
 |Con [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Yes|Sì, se è già installata .NET Framework 3.5.|No|No|  
 |Con Office 2010 Service Pack 1 (SP1) o versione successiva|Yes|Sì, se è già installata .NET Framework 3.5.|Sì, se [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] è già installato.|No|  
