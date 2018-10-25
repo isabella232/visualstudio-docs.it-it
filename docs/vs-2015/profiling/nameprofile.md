@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfe1b5fb517ed7b886e681081ac7910cfe717cc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867169"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Nome dell'elemento di profilatura. Un nome non è valido (NameProfileA restituisce NAME_ERROR_INVALID_NAME) se:  
   
--   Il puntatore passato in NameProfileA è un valore NULL  
+- Il puntatore passato in NameProfileA è un valore NULL  
   
--   La stringa di dati di pszName inizia con un numero  
+- La stringa di dati di pszName inizia con un numero  
   
--   La stringa di dati di pszName contiene uno spazio  
+- La stringa di dati di pszName contiene uno spazio  
   
--   La stringa dati di pszName contiene uno dei caratteri seguenti: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
+- La stringa dati di pszName contiene uno dei caratteri seguenti: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
- `Level`  
+  `Level`  
   
- Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. I valori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:  
+  Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. I valori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:  
   
 |Enumerator|Descrizione|  
 |----------------|-----------------|  

@@ -21,12 +21,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830977"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: individuare e organizzare modelli di progetto e modelli di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,26 +39,26 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
 ### <a name="installed-templates"></a>Modelli installati  
  Per impostazione predefinita, i modelli installati con il prodotto risiedono nei percorsi seguenti:  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*Linguaggio*\\*Impostazioni locali*\  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*Linguaggio*\\*Impostazioni locali*\  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Linguaggio*\\*Impostazioni locali\\*  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Linguaggio*\\*Impostazioni locali\\*  
   
- Ad esempio, la directory seguente contiene i modelli di progetto personalizzati di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per la lingua inglese:  
+  Ad esempio, la directory seguente contiene i modelli di progetto personalizzati di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per la lingua inglese:  
   
- C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
+  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
   
 ### <a name="custom-templates"></a>Modelli personalizzati  
  Per impostazione predefinita, i modelli personalizzati risiedono nel percorso seguente:  
   
--   \Documenti\Visual Studio *Versione*\Templates\ProjectTemplates\\*Linguaggio*\  
+- \Documenti\Visual Studio *Versione*\Templates\ProjectTemplates\\*Linguaggio*\  
   
--   \Documenti\Visual Studio *Versione*\Templates\ItemTemplates\\*Linguaggio*\  
+- \Documenti\Visual Studio *Versione*\Templates\ItemTemplates\\*Linguaggio*\  
   
- La directory seguente, ad esempio, contiene i modelli di progetto personalizzati di [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
+  La directory seguente, ad esempio, contiene i modelli di progetto personalizzati di [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
   
- C:\Documents and settings\nomeutente\documenti\<versione documenti\\< versione di Visual Studio\>\Templates\ProjectTemplates\Visual c# \  
+  C:\Documents and settings\nomeutente\documenti\<versione documenti\\< versione di Visual Studio\>\Templates\ProjectTemplates\Visual c# \  
   
- I modelli personalizzati non includono una sottodirectory per i modelli localizzati. È possibile modificare la directory predefinita per i modelli personalizzati nella finestra di dialogo **Opzioni**, in **Ambiente/Progetti e soluzioni**.  
+  I modelli personalizzati non includono una sottodirectory per i modelli localizzati. È possibile modificare la directory predefinita per i modelli personalizzati nella finestra di dialogo **Opzioni**, in **Ambiente/Progetti e soluzioni**.  
   
 ## <a name="organizing-templates"></a>Organizzazione dei modelli  
  Le categorie nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento** riflettono le strutture delle directory esistenti nei percorsi dei modelli installati e dei modelli personalizzati. È possibile modificare le strutture di queste directory e organizzare i modelli in base alle esigenze.  
@@ -73,25 +73,25 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
   
 ##### <a name="to-create-new-installed-project-template-categories"></a>Per creare nuove categorie dei modelli di progetto installati  
   
-1.  Creare una cartella nella cartella del linguaggio della directory dei modelli installati. Ad esempio, per creare una categoria Office per i modelli di progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è necessario creare la directory seguente:  
+1. Creare una cartella nella cartella del linguaggio della directory dei modelli installati. Ad esempio, per creare una categoria Office per i modelli di progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è necessario creare la directory seguente:  
   
-     \\*DirectoryInstallazioneVisualStudio*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
+    \\*DirectoryInstallazioneVisualStudio*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
   
-2.  Inserire nella nuova cartella tutti modelli di questa categoria.  
+2. Inserire nella nuova cartella tutti modelli di questa categoria.  
   
-3.  Chiudere tutte le istanze di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Chiudere tutte le istanze di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Nel menu **Start** fare clic su **Esegui**, digitare **cmd**, e fare clic su **OK**.  
+4. Nel menu **Start** fare clic su **Esegui**, digitare **cmd**, e fare clic su **OK**.  
   
-5.  Al prompt dei comandi, passare alla directory che contiene devenv.exe e digitare **devenv /installvstemplates**.  
+5. Al prompt dei comandi, passare alla directory che contiene devenv.exe e digitare **devenv /installvstemplates**.  
   
-6.  Eseguire [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Eseguire [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+7. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-8.  Verificare che la categoria Office sia visualizzata nel riquadro **Tipi di progetto** della finestra di dialogo **Nuovo progetto**, in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
+8. Verificare che la categoria Office sia visualizzata nel riquadro **Tipi di progetto** della finestra di dialogo **Nuovo progetto**, in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
- È anche possibile raggruppare in una cartella personalizzata un subset dei modelli degli elementi del progetto.  
+   È anche possibile raggruppare in una cartella personalizzata un subset dei modelli degli elementi del progetto.  
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Per creare nuove categorie dei modelli di elemento installati  
   
@@ -120,17 +120,17 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
   
 ##### <a name="to-create-new-custom-project-template-categories"></a>Per creare nuove categorie dei modelli di progetto personalizzati  
   
-1.  Creare una cartella nella cartella del linguaggio della directory dei modelli di progetto personalizzati. Ad esempio, per creare una categoria HelloWorld per i modelli di [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario creare la directory seguente:  
+1. Creare una cartella nella cartella del linguaggio della directory dei modelli di progetto personalizzati. Ad esempio, per creare una categoria HelloWorld per i modelli di [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario creare la directory seguente:  
   
-     Documenti \My\\< versione di Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    Documenti \My\\< versione di Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
-2.  Inserire nella nuova cartella tutti modelli di questa categoria.  
+2. Inserire nella nuova cartella tutti modelli di questa categoria.  
   
-3.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+3. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-4.  Verificare che la categoria HelloWorld sia visualizzata nel riquadro **Tipi di progetto** della finestra di dialogo **Nuovo progetto**, in [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
+4. Verificare che la categoria HelloWorld sia visualizzata nel riquadro **Tipi di progetto** della finestra di dialogo **Nuovo progetto**, in [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   
- È anche possibile raggruppare in una cartella personalizzata un subset dei modelli di elemento personalizzati.  
+   È anche possibile raggruppare in una cartella personalizzata un subset dei modelli di elemento personalizzati.  
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Per creare nuove categorie di modelli di elemento personalizzati  
   

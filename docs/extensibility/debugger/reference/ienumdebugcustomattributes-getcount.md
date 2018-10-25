@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::GetCount | Documenti Microsoft
+title: IEnumDebugCustomAttributes::GetCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 223f453f427fe90764262bac55f2591d4fdf5646
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c90eb242485ecdb3d4939ac227d344402799280b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899851"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 Ottiene il numero di attributi personalizzati in un enumeratore.  
@@ -47,7 +47,7 @@ int GetCount(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo non è solitamente si interfaccia COM di enumerazione che specifica che solo `Next`, `Clone`, `Skip`, e `Reset` devono essere implementate.  
+ Questo metodo non fa parte dell'interfaccia di enumerazione COM facoltativa che specifica che solo `Next`, `Clone`, `Skip`, e `Reset` devono essere implementati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

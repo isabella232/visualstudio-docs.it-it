@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f73089c2894bd04c877302e87f11b77928048e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: fde39c346313dc66d5d94a5beb0e9e3b256ea436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920221"
 ---
 # <a name="configuration-options-overview"></a>Panoramica sulle opzioni di configurazione
 I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può supportare più configurazioni che possono essere compilate, sottoposto a debug, esecuzione e/o distribuita. Una configurazione è un tipo di compilazione descritto con un set denominato di proprietà, in genere le opzioni del compilatore e percorsi dei file. Per impostazione predefinita, le nuove soluzioni contengono due configurazioni *Debug* e *rilascio*. Queste configurazioni possono essere applicate con le relative impostazioni predefinite, o modificata per soddisfare i requisiti di progetto e/o soluzioni specifici. Alcuni pacchetti possono essere compilati in due modi: come editor ActiveX o come un componente sul posto. I progetti non sono necessario supportare più configurazioni, tuttavia. Se è disponibile solo una configurazione, tale configurazione viene mappata in tutte le configurazioni di soluzione.  
@@ -56,21 +56,21 @@ Interfacce di configurazione
   
  Alcune note relative al diagramma precedente:  
   
--   `IDispatch` viene contrassegnato come facoltativo nell'oggetto di configurazione. In particolare, è facoltativo per disporre le interfacce di configurazione nell'oggetto di visualizzazione.  
+- `IDispatch` viene contrassegnato come facoltativo nell'oggetto di configurazione. In particolare, è facoltativo per disporre le interfacce di configurazione nell'oggetto di visualizzazione.  
   
--   `IVsDebuggableProjectCfg` è contrassegnato come facoltativo nell'oggetto di configurazione, ma è necessario per il supporto del debug.  
+- `IVsDebuggableProjectCfg` è contrassegnato come facoltativo nell'oggetto di configurazione, ma è necessario per il supporto del debug.  
   
--   `IVsProjectCfg2` è contrassegnato come facoltativo nell'oggetto di configurazione, ma è necessario per l'output di supporto di raggruppamento.  
+- `IVsProjectCfg2` è contrassegnato come facoltativo nell'oggetto di configurazione, ma è necessario per l'output di supporto di raggruppamento.  
   
--   L'oggetto Provider di configurazione è contrassegnato come un oggetto facoltativo, ma l'opzione è la posizione in cui implementarla. È possibile implementare l'oggetto sull'oggetto progetto o in un oggetto separato.  
+- L'oggetto Provider di configurazione è contrassegnato come un oggetto facoltativo, ma l'opzione è la posizione in cui implementarla. È possibile implementare l'oggetto sull'oggetto progetto o in un oggetto separato.  
   
--   `IVsCfgProvider2` è necessaria per il supporto di piattaforma e la modifica della configurazione. `IVsCfgProvider` è sufficiente se non si implementa questa funzionalità.  
+- `IVsCfgProvider2` è necessaria per il supporto di piattaforma e la modifica della configurazione. `IVsCfgProvider` è sufficiente se non si implementa questa funzionalità.  
   
--   Alcuni di questi oggetti illustrati nel diagramma come oggetti separati possono essere combinati nella stessa classe dove possibile. in base alle esigenze specifiche di progettazione. In altri argomenti di questa sezione, tuttavia, gli oggetti e interfacce associate a tali oggetti verranno analizzate in base allo scenario presentato nel diagramma.  
+- Alcuni di questi oggetti illustrati nel diagramma come oggetti separati possono essere combinati nella stessa classe dove possibile. in base alle esigenze specifiche di progettazione. In altri argomenti di questa sezione, tuttavia, gli oggetti e interfacce associate a tali oggetti verranno analizzate in base allo scenario presentato nel diagramma.  
   
--   Alcuni oggetti vengono implementate separatamente. Ad esempio, progetto e soluzione compilazione si verificano su thread separati e l'oggetto per la gestione della qualità della vita compilazione separatamente dall'oggetto che descrive la configurazione per la compilazione.  
+- Alcuni oggetti vengono implementate separatamente. Ad esempio, progetto e soluzione compilazione si verificano su thread separati e l'oggetto per la gestione della qualità della vita compilazione separatamente dall'oggetto che descrive la configurazione per la compilazione.  
   
- Per altre informazioni sulle interfacce dell'oggetto di configurazione e le interfacce di oggetti provider di configurazione nel diagramma precedente, vedere [oggetto di configurazione progetto](../../extensibility/internals/project-configuration-object.md). È inoltre [configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md) disponibili ulteriori informazioni sulla dipendenza configurazione generatore e compilare interfacce dell'oggetto, e [configurazione del progetto per la Gestione distribuzione](../../extensibility/internals/project-configuration-for-managing-deployment.md) Descrive ulteriormente le interfacce collegate ai distributori di configurazione e gli oggetti di dipendenza di distribuzione. Infine [configurazione del progetto per l'output](../../extensibility/internals/project-configuration-for-output.md) descrive il gruppo di output e output interfacce dell'oggetto e l'uso delle pagine delle proprietà per visualizzare e impostare le proprietà dipendenti dalla configurazione.  
+  Per altre informazioni sulle interfacce dell'oggetto di configurazione e le interfacce di oggetti provider di configurazione nel diagramma precedente, vedere [oggetto di configurazione progetto](../../extensibility/internals/project-configuration-object.md). È inoltre [configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md) disponibili ulteriori informazioni sulla dipendenza configurazione generatore e compilare interfacce dell'oggetto, e [configurazione del progetto per la Gestione distribuzione](../../extensibility/internals/project-configuration-for-managing-deployment.md) Descrive ulteriormente le interfacce collegate ai distributori di configurazione e gli oggetti di dipendenza di distribuzione. Infine [configurazione del progetto per l'output](../../extensibility/internals/project-configuration-for-output.md) descrive il gruppo di output e output interfacce dell'oggetto e l'uso delle pagine delle proprietà per visualizzare e impostare le proprietà dipendenti dalla configurazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

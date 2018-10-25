@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_registerValue | Documenti Microsoft
+title: Get_registervalue | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c08258c98b46536f17f7819ce01c296d2d1900
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7799316a933e5f021df78699e41e6e9483746575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845953"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
-Recupera il valore di un registro specificato come indicato nel frame dello stack.  
+Recupera il valore di un registro specificato archiviato nel frame dello stack.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,14 +35,14 @@ HRESULT get_registerValue(
   
 #### <a name="parameters"></a>Parametri  
  `registerIndex`  
- [in] Uno del [CV_HREG_e (enumerazione)](../../debugger/debug-interface-access/cv-hreg-e.md) valori di enumerazione.  
+ [in] Uno dei [enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) valori di enumerazione.  
   
  `pRetVal`  
- [out] Valore memorizzato nel registro.  
+ [out] Valore archiviato nel registro.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [CV_HREG_e (enumerazione)](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [Enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

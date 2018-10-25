@@ -1,5 +1,5 @@
 ---
-title: Riferimento circolare nell'argomento value non supportato | Documenti Microsoft
+title: Riferimento circolare nell'argomento value non supportato | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949424"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Riferimento circolare nell'argomento Value non supportato
-È stato effettuato un tentativo di richiamare `JSON.stringify` con un valore che non è valido. Il `value` argomento, una matrice o l'oggetto contiene un riferimento circolare.  
+È stato eseguito un tentativo di richiamare `JSON.stringify` con un valore che non è valido. Il `value` argomento, una matrice o oggetto, contiene un riferimento circolare.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
 -   Rimuovere il riferimento circolare nell'argomento.  
   
 ## <a name="example"></a>Esempio  
- Il codice in questo esempio provoca un errore di runtime perché `john` contiene un riferimento a `mary` e `mary` contiene un riferimento a `john`. Per rimuovere il riferimento circolare, rimuovere o annullare l'impostazione della proprietà `brother` dal `mary` oggetto o `sister` proprietà dal `john` oggetto.  
+ Il codice in questo esempio provoca un errore di runtime perché `john` contiene un riferimento a `mary` e `mary` contiene un riferimento a `john`. Per rimuovere il riferimento circolare, rimuovere o annullare l'impostazione della proprietà `brother` dal `mary` oggetto o il `sister` proprietà dal `john` oggetto.  
   
 ```JavaScript  
 var john = new Object();  

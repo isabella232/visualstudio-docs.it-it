@@ -13,12 +13,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44f9bff7fe1508094474b7067237e8c0b6620605
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca4fd95664d45c480557b8a00d503550327c60ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833031"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -356,13 +356,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Iniziali maiuscole  
  Iniziali maiuscole sono uno stile in cui sono in maiuscolo le prime lettere della maggior parte o tutte le parole all'interno di una frase. In Visual Studio, tutte iniziali maiuscole viene usata per molti elementi, tra cui:  
   
--   **Descrizioni comandi.** Esempio: "anteprima di elementi selezionati"  
+- **Descrizioni comandi.** Esempio: "anteprima di elementi selezionati"  
   
--   **Intestazioni di colonna.** Esempio: "risposta di sistema"  
+- **Intestazioni di colonna.** Esempio: "risposta di sistema"  
   
--   **Voci di menu.** Esempio: "Salva tutto"  
+- **Voci di menu.** Esempio: "Salva tutto"  
   
- Quando si usano tutte iniziali maiuscole, queste sono le linee guida per i casi da convertire in maiuscolo parole o lasciare le lettere minuscole:  
+  Quando si usano tutte iniziali maiuscole, queste sono le linee guida per i casi da convertire in maiuscolo parole o lasciare le lettere minuscole:  
   
 |Maiuscole|I commenti e gli esempi|  
 |---------------|---------------------------|  

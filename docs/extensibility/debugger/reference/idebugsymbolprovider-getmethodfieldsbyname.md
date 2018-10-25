@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName | Documenti Microsoft
+title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 628cddc126e9617c918bf0d6f47c8fae46c09c0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa59d97cb95309f6a291d3c17ffee431cd596be3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822280"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 Questo metodo ottiene il campo che rappresenta un nome di metodo completo.  
@@ -48,7 +48,7 @@ int GetMethodFieldsByName(
  [in] Il nome del metodo.  
   
  `nameMatch`  
- [in] Seleziona il tipo di corrispondenza, ad esempio distinzione maiuscole/minuscole.  
+ [in] Seleziona il tipo di corrispondenza, ad esempio, distinzione maiuscole/minuscole.  
   
  `ppEnum`  
  [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumeratore per i campi associati a questo metodo.  
@@ -57,7 +57,7 @@ int GetMethodFieldsByName(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Se è in overload, ad esempio, un metodo può essere associato a più campi.  
+ Se viene eseguito l'overload, ad esempio, un metodo può essere associato a più campi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

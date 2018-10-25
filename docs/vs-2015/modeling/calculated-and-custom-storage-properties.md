@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852856"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
   
  Il metodo Set, tuttavia, potrebbe essere chiamato anche se l'utente richiama l'annullamento o ripristino o se una transazione è in fase di rollback. Quando si <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> è true, il metodo Set deve comportarsi come indicato di seguito:  
   
--   Consigliabile non apportare modifiche nell'archivio, ad esempio l'assegnazione di valori di altre proprietà di dominio. La gestione degli annullamenti imposterà i relativi valori.  
+- Consigliabile non apportare modifiche nell'archivio, ad esempio l'assegnazione di valori di altre proprietà di dominio. La gestione degli annullamenti imposterà i relativi valori.  
   
--   Tuttavia, è necessario aggiornare eventuali risorse esterne, ad esempio database di contenuto del file o oggetti all'esterno dell'archivio. Questo garantirà che si trovano in synchronism con i valori nell'archivio.  
+- Tuttavia, è necessario aggiornare eventuali risorse esterne, ad esempio database di contenuto del file o oggetti all'esterno dell'archivio. Questo garantirà che si trovano in synchronism con i valori nell'archivio.  
   
- Ad esempio:  
+  Ad esempio:  
   
 ```  
 void SetAgeValue(int value)  

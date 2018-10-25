@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896837"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Cercare e ridisporre le mappe del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ ms.locfileid: "49281437"
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Aggiungere un collegamento tra elementi di codice esistenti  
   
-1.  Selezionare l'elemento di codice sorgente. Sopra l'elemento di codice viene visualizzata una barra degli strumenti.  
+1. Selezionare l'elemento di codice sorgente. Sopra l'elemento di codice viene visualizzata una barra degli strumenti.  
   
-     ![Barra degli strumenti grafico delle dipendenze](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![Barra degli strumenti grafico delle dipendenze](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  Sulla barra degli strumenti, scegliere la prima icona **crea un collegamento da questo nodo a nodo che farà clic successivamente**.  
+2. Sulla barra degli strumenti, scegliere la prima icona **crea un collegamento da questo nodo a nodo che farà clic successivamente**.  
   
-3.  Selezionare l'elemento di codice di destinazione. Verrà visualizzato un collegamento tra i due elementi di codice.  
+3. Selezionare l'elemento di codice di destinazione. Verrà visualizzato un collegamento tra i due elementi di codice.  
   
- \- oppure -  
+   \- oppure -  
   
-1.  Selezionare l'elemento di codice sorgente nella mappa.  
+4. Selezionare l'elemento di codice sorgente nella mappa.  
   
-2.  Se è installato un mouse, spostare il puntatore del mouse fuori dai limiti della mappa.  
+5. Se è installato un mouse, spostare il puntatore del mouse fuori dai limiti della mappa.  
   
-3.  Aprire il menu di scelta rapida dell'elemento di codice e scegliere **Edit**, **Add**, **collegamento generico**.  
+6. Aprire il menu di scelta rapida dell'elemento di codice e scegliere **Edit**, **Add**, **collegamento generico**.  
   
-4.  Premere TAB fino a selezionare l'elemento di codice di destinazione per il collegamento.  
+7. Premere TAB fino a selezionare l'elemento di codice di destinazione per il collegamento.  
   
-5.  Premere **INVIO**.  
+8. Premere **INVIO**.  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Aggiungere un commento a un nodo esistente sulla mappa  

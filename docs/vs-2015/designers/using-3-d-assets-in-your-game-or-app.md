@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863595"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Utilizzo delle risorse tridimensionali nel gioco o nell'app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ Questo articolo spiega come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] p
   
 #### <a name="to-add-an-asset-to-your-build"></a>Per aggiungere un asset alla build  
   
-1.  In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida di un asset, quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.  
+1. In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida di un asset, quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.  
   
-2.  Verificare che le proprietà **Configurazione** e **Piattaforma** siano impostate sui valori a cui applicare le modifiche.  
+2. Verificare che le proprietà **Configurazione** e **Piattaforma** siano impostate sui valori a cui applicare le modifiche.  
   
-3.  In **Proprietà di configurazione** scegliere **Generale**, quindi nella sezione **Generale** della griglia delle proprietà impostare la proprietà **Tipo di elemento** sul tipo di elemento della pipeline di contenuti appropriato. Ad esempio, per un file di immagine o trama, scegliere **Image Content Pipeline**(Pipeline di contenuti immagine).  
+3. In **Proprietà di configurazione** scegliere **Generale**, quindi nella sezione **Generale** della griglia delle proprietà impostare la proprietà **Tipo di elemento** sul tipo di elemento della pipeline di contenuti appropriato. Ad esempio, per un file di immagine o trama, scegliere **Image Content Pipeline**(Pipeline di contenuti immagine).  
   
-    > [!IMPORTANT]
-    >  Per impostazione predefinita, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] presuppone che sia necessario suddividere in categorie molti tipi di file di immagine mediante il tipo di elemento **Immagine** integrato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È quindi necessario modificare la proprietà **Tipo di elemento** di ogni immagine che deve essere elaborata dalla pipeline di contenuti immagine. Per altri tipi di file di origine della pipeline di contenuti per i modelli 3D e la grafica visual shader, viene usato il **Tipo di elemento** corretto per impostazione predefinita.  
+   > [!IMPORTANT]
+   >  Per impostazione predefinita, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] presuppone che sia necessario suddividere in categorie molti tipi di file di immagine mediante il tipo di elemento **Immagine** integrato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È quindi necessario modificare la proprietà **Tipo di elemento** di ogni immagine che deve essere elaborata dalla pipeline di contenuti immagine. Per altri tipi di file di origine della pipeline di contenuti per i modelli 3D e la grafica visual shader, viene usato il **Tipo di elemento** corretto per impostazione predefinita.  
   
-4.  Fare clic sul pulsante **OK** .  
+4. Fare clic sul pulsante **OK** .  
   
- Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i corrispondenti tipi di file di origine e output.  
+   Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i corrispondenti tipi di file di origine e output.  
   
 |Tipo di elemento|Tipi di file di origine|Tipi di file di output|  
 |---------------|-----------------------|------------------------|  

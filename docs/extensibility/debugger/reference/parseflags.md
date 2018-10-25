@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Documenti Microsoft
+title: PARSEFLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70766aef19c199a191f141947f1b5a458450c322
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7192483b4f2ce88235fc5e8d48f1d51ef71b442f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913007"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Specifica la modalità di analisi dell'espressione.  
@@ -52,7 +52,7 @@ public enum enum_PARSEFLAGS {
  Indica che l'espressione deve essere analizzato (e valutate in un secondo momento) come un indirizzo.  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
- Indica che l'espressione viene analizzato in fase di progettazione (ovvero, quando una finestra di progettazione è aperto).  
+ Indica che l'espressione viene analizzato durante la fase di progettazione (ovvero, quando una finestra di progettazione è aperto).  
   
 ## <a name="remarks"></a>Note  
  Passato come parametro per il [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) e [analizzare](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metodi.  

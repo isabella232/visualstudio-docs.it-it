@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92d19e3edde058a8f0d2ca571ee8e909e010c1da
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 45b41227e5bcacbd5f0705bb46b0cacf01a46ab7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897030"
 ---
 # <a name="document-lock-holder-management"></a>Gestione dei detentori di blocchi documento
 La tabella documenti in esecuzione (RDT) mantiene un conteggio di documenti aperti e dispongono di eventuali blocchi di modifica. Quando viene modificata a livello di codice in background senza visualizzare un documento aperto in una finestra del documento, è possibile inserire un blocco di modifica in un documento nella RDT. Questa funzionalità viene spesso usata dagli strumenti di progettazione che modificano più file tramite un'interfaccia utente grafica.  
@@ -31,9 +31,9 @@ La tabella documenti in esecuzione (RDT) mantiene un conteggio di documenti aper
 ### <a name="file-b-is-opened-by-a-different-editor"></a>File "b" viene aperto da un altro editor  
  Nel caso in cui il file "b" è già aperto per "B" editor quando si tenta di aprire editor "A", esistono due scenari distinti per gestire:  
   
--   Se il file "b" è aperto in un editor compatibile, è necessario disporre dell'editor "A" Registra un blocco di modifica del documento sull'uso di file "b" il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> (metodo). Dopo che l'editor "A" avviene la modifica dei file "b", annullare la registrazione del documento Modifica blocco usando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> (metodo).  
+- Se il file "b" è aperto in un editor compatibile, è necessario disporre dell'editor "A" Registra un blocco di modifica del documento sull'uso di file "b" il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> (metodo). Dopo che l'editor "A" avviene la modifica dei file "b", annullare la registrazione del documento Modifica blocco usando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> (metodo).  
   
--   Se il file "b" è aperto in modo non compatibile, è possibile consentire l'apertura del file "b" effettuata è fallita dall'editor "A" hanno esito negativo oppure è possibile consentire la visualizzazione associata all'editor "A" parzialmente apre e visualizza un messaggio di errore appropriato. Il messaggio di errore dovrebbe indicare all'utente per chiudere il file "b" nell'editor non compatibile e quindi aprire nuovamente file "a" tramite editor "A". È anche possibile implementare il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> per richiedere all'utente di chiudere il file "b" che viene aperto nell'editor non compatibile. Se l'utente chiude il file "b", l'apertura del file "a" nell'editor "A" continua normalmente.  
+- Se il file "b" è aperto in modo non compatibile, è possibile consentire l'apertura del file "b" effettuata è fallita dall'editor "A" hanno esito negativo oppure è possibile consentire la visualizzazione associata all'editor "A" parzialmente apre e visualizza un messaggio di errore appropriato. Il messaggio di errore dovrebbe indicare all'utente per chiudere il file "b" nell'editor non compatibile e quindi aprire nuovamente file "a" tramite editor "A". È anche possibile implementare il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> per richiedere all'utente di chiudere il file "b" che viene aperto nell'editor non compatibile. Se l'utente chiude il file "b", l'apertura del file "a" nell'editor "A" continua normalmente.  
   
 ## <a name="additional-document-edit-lock-considerations"></a>Considerazioni sul blocco di modifica del documento aggiuntivo  
  Si verifica un comportamento diverso se editor "A" è l'unico editor che ha un documento di modifica blocco sul file "b", quello che si avrebbe se editor "B" contiene anche un documento di modifica blocco sul file "b". Nelle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **Progettazione classi** è riportato un esempio di una finestra di progettazione visiva che non viene mantenuto un blocco di modifica il file di codice associato. Vale a dire, se l'utente ha un diagramma classi aperto in visualizzazione progettazione e contemporaneamente aprire il file di codice associato, e se l'utente modifica il file di codice, ma non salvare le modifiche, le modifiche sono inoltre perse al file di diagramma (. CD) della classe. Se il **Progettazione classi** ha il solo documento Modifica blocco sul file di codice, all'utente non è richiesto per salvare le modifiche quando si chiude il file di codice. L'IDE chiede all'utente di salvare le modifiche solo dopo che l'utente chiude il **Progettazione classi**. Le modifiche salvate vengono riflesse in entrambi i file. Se entrambi i **Progettazione classi** l'editor di file di codice mantenuti attivi i blocchi di modifica del documento nel file di codice, quindi l'utente viene richiesto di salvare durante la chiusura del file di codice o del form. A questo punto le modifiche salvate vengono riflesse in forma e il file di codice. Per altre informazioni sui diagrammi classi, vedere [utilizzo dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md).  

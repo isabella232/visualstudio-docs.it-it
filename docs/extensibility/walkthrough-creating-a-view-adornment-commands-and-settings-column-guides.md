@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 7d0605798f5970411fa315d309807dc6f1f7a0cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872356"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procedura dettagliata: Creare un'area di controllo di visualizzazione, i comandi e impostazioni (guide di colonne)
 È possibile estendere l'editor di testo o codice di Visual Studio con i comandi e visualizzare gli effetti. Questo articolo illustra come iniziare a usare una funzionalità di estensione più diffusi, guide di colonne. Le guide di colonna sono visivamente chiara linee disegnate su visualizzazione dell'editor di testo che consentono di gestire il codice per la larghezza delle colonne specifiche. In particolare, codice formattato può essere importante per gli esempi si includere nei documenti, post di blog, o i report di bug.  
   
  In questa procedura dettagliata, è:  
   
--   Creare un progetto VSIX  
+- Creare un progetto VSIX  
   
--   Aggiungere un'area di controllo di visualizzazione dell'editor  
+- Aggiungere un'area di controllo di visualizzazione dell'editor  
   
--   Aggiungere il supporto per il salvataggio e recupero delle impostazioni (in cui al disegno colonna guide e i colori)  
+- Aggiungere il supporto per il salvataggio e recupero delle impostazioni (in cui al disegno colonna guide e i colori)  
   
--   Aggiunta di comandi (aggiunta/rimozione di guide di colonne, modificare i colori)  
+- Aggiunta di comandi (aggiunta/rimozione di guide di colonne, modificare i colori)  
   
--   Posizionare i comandi del menu di modifica e menu di scelta rapida documento di testo  
+- Posizionare i comandi del menu di modifica e menu di scelta rapida documento di testo  
   
--   Aggiungere il supporto per richiamare i comandi dalla finestra di comando di Visual Studio  
+- Aggiungere il supporto per richiamare i comandi dalla finestra di comando di Visual Studio  
   
- È possibile provare una versione della funzionalità di guide di colonna con questa raccolta di Visual Studio[estensione](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
+  È possibile provare una versione della funzionalità di guide di colonna con questa raccolta di Visual Studio[estensione](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
- **Nota**: In questa procedura dettagliata, si incolla un elevato livello di codice in pochi file generati dai modelli di estensione di Visual Studio. Tuttavia, a breve in questa procedura dettagliata fa riferimento a una soluzione completa su github con altri esempi di estensione. Il codice completo è leggermente diverso in quanto dispone le icone dei comandi reale invece di usare le icone generictemplate.  
+  **Nota**: In questa procedura dettagliata, si incolla un elevato livello di codice in pochi file generati dai modelli di estensione di Visual Studio. Tuttavia, a breve in questa procedura dettagliata fa riferimento a una soluzione completa su github con altri esempi di estensione. Il codice completo è leggermente diverso in quanto dispone le icone dei comandi reale invece di usare le icone generictemplate.  
   
 ## <a name="get-started"></a>Introduzione  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -45,21 +45,21 @@ ms.locfileid: "46496103"
 ## <a name="set-up-the-solution"></a>Configurare la soluzione  
  In primo luogo, si crea un progetto VSIX, aggiunta un'area di controllo di visualizzazione dell'editor e quindi aggiungerla un comando (che consente di aggiungere un pacchetto VSPackage come proprietaria di comando). L'architettura di base è il seguente:  
   
--   È necessario un listener di creazione della visualizzazione di testo che crea un `ColumnGuideAdornment` oggetto per ogni visualizzazione. Questo oggetto è in attesa di eventi relativi alla modifica della visualizzazione o modifica le impostazioni, le guide di colonna grafico o ad aggiornamento in base alle esigenze.  
+- È necessario un listener di creazione della visualizzazione di testo che crea un `ColumnGuideAdornment` oggetto per ogni visualizzazione. Questo oggetto è in attesa di eventi relativi alla modifica della visualizzazione o modifica le impostazioni, le guide di colonna grafico o ad aggiornamento in base alle esigenze.  
   
--   È presente un `GuidesSettingsManager` che gestisce la lettura e scrittura dalla risorsa di archiviazione di impostazioni di Visual Studio. Settings manager dispone anche di operazioni per l'aggiornamento delle impostazioni che supportano i comandi utente (Aggiungi colonna, rimuovere la colonna, modificare colore).  
+- È presente un `GuidesSettingsManager` che gestisce la lettura e scrittura dalla risorsa di archiviazione di impostazioni di Visual Studio. Settings manager dispone anche di operazioni per l'aggiornamento delle impostazioni che supportano i comandi utente (Aggiungi colonna, rimuovere la colonna, modificare colore).  
   
--   È un pacchetto VSIP che è necessario se si dispone di comandi dell'utente, ma è solo codice boilerplate che inizializza l'oggetto di implementazione di comandi.  
+- È un pacchetto VSIP che è necessario se si dispone di comandi dell'utente, ma è solo codice boilerplate che inizializza l'oggetto di implementazione di comandi.  
   
--   È presente una `ColumnGuideCommands` oggetto che l'utente esegue i comandi e associa i gestori di comando per i comandi dichiarati nel *vsct* file.  
+- È presente una `ColumnGuideCommands` oggetto che l'utente esegue i comandi e associa i gestori di comando per i comandi dichiarati nel *vsct* file.  
   
- **VSIX**. Uso **File &#124; New...**  comando per creare un progetto. Scegliere il **estendibilità** nodo **c#** nel riquadro di spostamento a sinistra e scegliere **progetto VSIX** nel riquadro di destra. Immettere il nome **ColumnGuides** e scegliere **OK** per creare il progetto.  
+  **VSIX**. Uso **File &#124; New...**  comando per creare un progetto. Scegliere il **estendibilità** nodo **c#** nel riquadro di spostamento a sinistra e scegliere **progetto VSIX** nel riquadro di destra. Immettere il nome **ColumnGuides** e scegliere **OK** per creare il progetto.  
   
- **Visualizzare l'area di controllo**. Premere il pulsante destro del puntatore sul nodo del progetto in Esplora soluzioni. Scegliere il **Aggiungi &#124; nuovo elemento...**  comando per aggiungere un nuovo elemento dell'area di controllo di visualizzazione. Scegli **estendibilità &#124; Editor** nel riquadro di spostamento a sinistra e scegliere **area di controllo del riquadro di visualizzazione dell'Editor** nel riquadro di destra. Immettere il nome **ColumnGuideAdornment** come elemento di un nome e scegliere **Add** per aggiungerlo.  
+  **Visualizzare l'area di controllo**. Premere il pulsante destro del puntatore sul nodo del progetto in Esplora soluzioni. Scegliere il **Aggiungi &#124; nuovo elemento...**  comando per aggiungere un nuovo elemento dell'area di controllo di visualizzazione. Scegli **estendibilità &#124; Editor** nel riquadro di spostamento a sinistra e scegliere **area di controllo del riquadro di visualizzazione dell'Editor** nel riquadro di destra. Immettere il nome **ColumnGuideAdornment** come elemento di un nome e scegliere **Add** per aggiungerlo.  
   
- È possibile visualizzare il modello di elemento aggiunti due file al progetto (nonché i riferimenti e così via): **ColumnGuideAdornment.cs** e **ColumnGuideAdornmentTextViewCreationListener.cs**. I modelli di disegno un rettangolo di colore viola nella vista. Nella sezione seguente, si modifica un paio di righe nel listener di creazione della visualizzazione e sostituire il contenuto del **ColumnGuideAdornment.cs**.  
+  È possibile visualizzare il modello di elemento aggiunti due file al progetto (nonché i riferimenti e così via): **ColumnGuideAdornment.cs** e **ColumnGuideAdornmentTextViewCreationListener.cs**. I modelli di disegno un rettangolo di colore viola nella vista. Nella sezione seguente, si modifica un paio di righe nel listener di creazione della visualizzazione e sostituire il contenuto del **ColumnGuideAdornment.cs**.  
   
- **I comandi**. Nelle **Esplora soluzioni**, premere il pulsante destro del puntatore sul nodo del progetto. Scegliere il **Aggiungi &#124; nuovo elemento...**  comando per aggiungere un nuovo elemento dell'area di controllo di visualizzazione. Scegli **estendibilità &#124; VSPackage** nel riquadro di spostamento a sinistra e scegliere **comando personalizzato** nel riquadro di destra. Immettere il nome **ColumnGuideCommands** come elemento di un nome e scegliere **Add**. Oltre a numerosi riferimenti, aggiunta di comandi e pacchetti anche aggiunto **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, e **ColumnGuideCommandsPackage.vsct** . Nella sezione seguente, si sostituisce il contenuto dei file e il cognome di definire e implementare i comandi.  
+  **I comandi**. Nelle **Esplora soluzioni**, premere il pulsante destro del puntatore sul nodo del progetto. Scegliere il **Aggiungi &#124; nuovo elemento...**  comando per aggiungere un nuovo elemento dell'area di controllo di visualizzazione. Scegli **estendibilità &#124; VSPackage** nel riquadro di spostamento a sinistra e scegliere **comando personalizzato** nel riquadro di destra. Immettere il nome **ColumnGuideCommands** come elemento di un nome e scegliere **Add**. Oltre a numerosi riferimenti, aggiunta di comandi e pacchetti anche aggiunto **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, e **ColumnGuideCommandsPackage.vsct** . Nella sezione seguente, si sostituisce il contenuto dei file e il cognome di definire e implementare i comandi.  
   
 ## <a name="set-up-the-text-view-creation-listener"></a>Configurare il listener di creazione della visualizzazione di testo  
  Aprire *ColumnGuideAdornmentTextViewCreationListener.cs* nell'editor. Questo codice implementa un gestore per ogni volta che Visual Studio crea le visualizzazioni di testo. Sono disponibili gli attributi che controllano quando viene chiamato il gestore a seconda delle caratteristiche della visualizzazione.  

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859668"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Utilizzo di set di regole per specificare le regole C++ da eseguire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ Nelle [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShor
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Per creare una regola personalizzata da un singolo set di regole esistente  
   
-1.  In Esplora soluzioni aprire il menu di scelta rapida per il progetto e quindi scegliere **proprietà**.  
+1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto e quindi scegliere **proprietà**.  
   
-2.  Nel **delle proprietà** scheda, scegliere **analisi del codice**.  
+2. Nel **delle proprietà** scheda, scegliere **analisi del codice**.  
   
-3.  Nel **del Set di regole** riepilogo, effettuare una delle operazioni seguenti:  
+3. Nel **del Set di regole** riepilogo, effettuare una delle operazioni seguenti:  
   
-    -   Scegliere il set di regole che si desidera personalizzare.  
+   - Scegliere il set di regole che si desidera personalizzare.  
   
      \- oppure -  
   
-    -   Scegli  **\<Sfoglia >** per specificare set di una regola esistente non incluso nell'elenco.  
+   - Scegli  **\<Sfoglia >** per specificare set di una regola esistente non incluso nell'elenco.  
   
-4.  Scegli **aperto** per visualizzare le regole nell'editor set di regole.  
+4. Scegli **aperto** per visualizzare le regole nell'editor set di regole.  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Per modificare una regola impostata nell'editor set di regole  
   

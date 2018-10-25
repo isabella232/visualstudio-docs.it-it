@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_functionStart | Documenti Microsoft
+title: Get_functionstart | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a54fd51b63bb53521b9f1e9c75f75e49d771b0ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6be173020e4aeb3b69197a038b4bc6d66c7eedc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908301"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
 Recupera un flag che indica se il blocco contiene il punto di ingresso di una funzione.  
@@ -40,7 +40,7 @@ HRESULT get_functionStart (
  Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- È possibile che uno stack frame che non sia l'inizio di una funzione perché il frame rappresenta un metodo inline o una funzione inserito in una funzione.  
+ È possibile che uno stack frame non sia l'inizio di una funzione in quanto il frame rappresenta un metodo in linea o una funzione inserito in una funzione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

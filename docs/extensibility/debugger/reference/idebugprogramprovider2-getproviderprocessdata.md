@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData | Documenti Microsoft
+title: IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a6da58083feb8699c6db24207c265bf50c0f0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b0cc8d3a87cf89edebb5f1ac35a0493b9451dfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926241"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
-Recupera un elenco dei programmi in esecuzione da un processo specificato.  
+Recupera un elenco di programmi in esecuzione da un processo specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -53,28 +53,28 @@ int GetProviderProcessData(
   
 |Flag|Descrizione|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Chiamante è in esecuzione sul computer remoto.|  
-|`PFLAG_DEBUGGEE`|Chiamante è in corso il debug (ulteriori informazioni di marshalling restituite per ogni nodo).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Chiamante è stato collegato ma non è stato avviato dal debugger.|  
-|`PFLAG_GET_PROGRAM_NODES`|Per un elenco di nodi programma chiamante richiede da restituire.|  
+|`PFLAG_REMOTE_PORT`|Chiamante è in esecuzione nel computer remoto.|  
+|`PFLAG_DEBUGGEE`|Chiamante è in corso il debug (verranno restituite informazioni aggiuntive sul marshalling per ogni nodo).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Chiamante è stato collegato a ma non avviare dal debugger.|  
+|`PFLAG_GET_PROGRAM_NODES`|Chiamante è richiesto un elenco dei nodi di programma da restituire.|  
   
  `pPort`  
- [in] La porta del processo chiamante è in esecuzione.  
+ [in] La porta del processo chiamante è in corso.  
   
  `processId`  
- [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che contiene l'ID del processo che contiene il programma in questione.  
+ [in] Un' [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che contiene l'ID del processo che contiene il programma in questione.  
   
  `EngineFilter`  
- [in] Una matrice di GUID per i motori di debug assegnato per eseguire il debug di questo processo (saranno usati per filtrare i programmi che vengono effettivamente restituiti basati su ciò che supportano i motori forniti; se nessun motore vengono specificato, quindi verranno restituiti tutti i programmi).  
+ [in] Una matrice di GUID per i motori di debug assegnato per il debug del processo (questi verrà utilizzati per filtrare i programmi che sono effettivamente restituiti basati su ciò che supportano i motori di fornito; se nessun motore vengono specificato, quindi verranno restituiti tutti i programmi).  
   
  `pProcess`  
- [out] Oggetto [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struttura che viene compilato con le informazioni richieste.  
+ [out] Oggetto [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struttura compilata con le informazioni richieste.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- In genere, questo metodo viene chiamato da un processo per ottenere un elenco di programmi in esecuzione in tale processo. Le informazioni restituite sono un elenco di [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetti.  
+ Questo metodo viene chiamato in genere da un processo per ottenere un elenco di programmi in esecuzione in tale processo. Le informazioni restituite sono elencate [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetti.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   

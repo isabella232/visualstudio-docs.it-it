@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: faa6f205bfc4033ea4adb92f5d0d0a6718d4ac47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91600821b3d68c04382028e469a4e1a54a5d191c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812752"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: aggiungere la convalida a classi di entità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,46 +37,46 @@ ms.locfileid: "49286403"
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Per convalidare i dati durante la modifica del valore di una colonna  
   
-1.  Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic il **dbml** del file in **Esplora soluzioni**.)  
+1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic il **dbml** del file in **Esplora soluzioni**.)  
   
-2.  Nella finestra di Progettazione relazionale oggetti, fare doppio clic su della classe per cui si desidera aggiungere la convalida e quindi fare clic su **Visualizza codice**.  
+2. Nella finestra di Progettazione relazionale oggetti, fare doppio clic su della classe per cui si desidera aggiungere la convalida e quindi fare clic su **Visualizza codice**.  
   
-     Viene aperto l'editor del codice con una classe parziale per la classe di entità selezionata.  
+    Viene aperto l'editor del codice con una classe parziale per la classe di entità selezionata.  
   
-3.  Posizionare il cursore nella classe parziale.  
+3. Posizionare il cursore nella classe parziale.  
   
-4.  Per i progetti di Visual Basic:  
+4. Per i progetti di Visual Basic:  
   
-    1.  Espandere la **nome del metodo** elenco.  
+   1. Espandere la **nome del metodo** elenco.  
   
-    2.  Individuare il **sul**_nomecolonna_**Changing** metodo per la colonna che si desidera aggiungere la convalida.  
+   2. Individuare il **sul**_nomecolonna_**Changing** metodo per la colonna che si desidera aggiungere la convalida.  
   
-    3.  Un' `On` *COLUMNNAME* `Changing` metodo viene aggiunto alla classe parziale.  
+   3. Un' `On` *COLUMNNAME* `Changing` metodo viene aggiunto alla classe parziale.  
   
-    4.  Aggiungere il codice riportato di seguito per verificare innanzitutto che sia stato immesso un valore e quindi per assicurarsi che il valore immesso per la colonna sia accettabile per l'applicazione. Poiché l'argomento `value` contiene il valore proposto, aggiungere logica per confermare che si tratta di un valore valido:  
+   4. Aggiungere il codice riportato di seguito per verificare innanzitutto che sia stato immesso un valore e quindi per assicurarsi che il valore immesso per la colonna sia accettabile per l'applicazione. Poiché l'argomento `value` contiene il valore proposto, aggiungere logica per confermare che si tratta di un valore valido:  
   
-        ```vb  
-        If value.HasValue Then  
-            ' Add code to ensure that the value is acceptable.  
-            ' If value < 1 Then  
-            '    Throw New Exception("Invalid data!")  
-            ' End If  
-        End If  
-        ```  
+      ```vb  
+      If value.HasValue Then  
+          ' Add code to ensure that the value is acceptable.  
+          ' If value < 1 Then  
+          '    Throw New Exception("Invalid data!")  
+          ' End If  
+      End If  
+      ```  
   
-     Per i progetti C#:  
+      Per i progetti C#:  
   
-    1.  Poiché i progetti C# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare i metodi parziali di modifica delle colonne.  
+   5. Poiché i progetti C# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare i metodi parziali di modifica delle colonne.  
   
-         Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di modifica delle colonne relativo alla colonna per cui si desidera aggiungere la convalida. Il codice riportato di seguito è simile al codice generato quando si seleziona un metodo parziale di modifica delle colonne:  
+       Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di modifica delle colonne relativo alla colonna per cui si desidera aggiungere la convalida. Il codice riportato di seguito è simile al codice generato quando si seleziona un metodo parziale di modifica delle colonne:  
   
-        ```csharp  
-        partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
-            {  
-               throw new System.NotImplementedException();  
-            }  
+      ```csharp  
+      partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
+          {  
+             throw new System.NotImplementedException();  
+          }  
   
-        ```  
+      ```  
   
 ## <a name="adding-validation-for-updates-to-an-entity-class"></a>Aggiunta della convalida per gli aggiornamenti a una classe di entità  
  Oltre a controllare i valori durante le modifiche, è anche possibile convalidare i dati quando si tenta di aggiornare una classe di entità completa. La convalida durante un tentativo di aggiornamento consente di confrontare i valori di più colonne, se richiesto dalle regole business. Nella procedura riportata di seguito viene mostrato come eseguire la convalida quando si tenta di aggiornare una classe di entità completa.  
@@ -86,47 +86,47 @@ ms.locfileid: "49286403"
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Per convalidare i dati durante un aggiornamento a una classe di entità  
   
-1.  Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic il **dbml** del file in **Esplora soluzioni**.)  
+1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic il **dbml** del file in **Esplora soluzioni**.)  
   
-2.  Fare doppio clic su un'area vuota della finestra di Progettazione relazionale oggetti e fare clic su **Visualizza codice**.  
+2. Fare doppio clic su un'area vuota della finestra di Progettazione relazionale oggetti e fare clic su **Visualizza codice**.  
   
-     Viene aperto l'editor del codice con una classe parziale per `DataContext`.  
+    Viene aperto l'editor del codice con una classe parziale per `DataContext`.  
   
-3.  Posizionare il cursore nella classe parziale per `DataContext`.  
+3. Posizionare il cursore nella classe parziale per `DataContext`.  
   
-4.  Per i progetti di Visual Basic:  
+4. Per i progetti di Visual Basic:  
   
-    1.  Espandere la **nome del metodo** elenco.  
+   1. Espandere la **nome del metodo** elenco.  
   
-    2.  Fare clic su **Update**_NOMECLASSEDIENTITÀ_.  
+   2. Fare clic su **Update**_NOMECLASSEDIENTITÀ_.  
   
-    3.  Un' `Update` *NOMECLASSEDIENTITÀ* metodo viene aggiunto alla classe parziale.  
+   3. Un' `Update` *NOMECLASSEDIENTITÀ* metodo viene aggiunto alla classe parziale.  
   
-    4.  Accedere ai valori delle singole colonne usando l'argomento `instance`, come mostrato nel codice seguente:  
+   4. Accedere ai valori delle singole colonne usando l'argomento `instance`, come mostrato nel codice seguente:  
   
-        ```vb  
-        If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
-            Dim ErrorMessage As String = "Invalid data!"  
-            Throw New Exception(ErrorMessage)  
-        End If  
-        ```  
+      ```vb  
+      If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
+          Dim ErrorMessage As String = "Invalid data!"  
+          Throw New Exception(ErrorMessage)  
+      End If  
+      ```  
   
-     Per i progetti C#:  
+      Per i progetti C#:  
   
-    1.  Poiché i progetti c# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare parziale `Update` *NomeClasse* (metodo).  
+   5. Poiché i progetti c# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare parziale `Update` *NomeClasse* (metodo).  
   
-    2.  Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento relativo alla classe per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice che viene generato quando si seleziona una `Update` *NomeClasse* metodo parziale:  
+   6. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento relativo alla classe per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice che viene generato quando si seleziona una `Update` *NomeClasse* metodo parziale:  
   
-        ```csharp  
-        partial void UpdateCLASSNAME(CLASSNAME instance)  
-        {  
-            if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
-            {  
-                string ErrorMessage = "Invalid data!";  
-                throw new System.Exception(ErrorMessage);  
-            }  
-        }  
-        ```  
+      ```csharp  
+      partial void UpdateCLASSNAME(CLASSNAME instance)  
+      {  
+          if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
+          {  
+              string ErrorMessage = "Invalid data!";  
+              throw new System.Exception(ErrorMessage);  
+          }  
+      }  
+      ```  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

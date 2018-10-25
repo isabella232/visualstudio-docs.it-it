@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817977"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurazione di unit test usando un file con estensione runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Gli unit test in Visual Studio possono essere configurati usando un file di tipo
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizzazione dei test con un file con estensione runsettings  
   
-1.  Aggiungere un file XML alla soluzione di Visual Studio e rinominarlo in test.runsettings. Il nome del file non è rilevante, ma l'estensione deve essere runsettings.  
+1. Aggiungere un file XML alla soluzione di Visual Studio e rinominarlo in test.runsettings. Il nome del file non è rilevante, ma l'estensione deve essere runsettings.  
   
-2.  Sostituire il contenuto del file con l' [esempio](#example).  
+2. Sostituire il contenuto del file con l' [esempio](#example).  
   
-     Modificarlo in base alle proprie esigenze.  
+    Modificarlo in base alle proprie esigenze.  
   
-3.  Nel menu **Test** scegliere **Impostazioni test**, quindi **Seleziona file di impostazioni test**.  
+3. Nel menu **Test** scegliere **Impostazioni test**, quindi **Seleziona file di impostazioni test**.  
   
- È possibile creare più file con estensione \*runsettings nella soluzione e abilitarli o disabilitarli in momenti diversi tramite il menu **Impostazioni test**.  
+   È possibile creare più file con estensione \*runsettings nella soluzione e abilitarli o disabilitarli in momenti diversi tramite il menu **Impostazioni test**.  
   
- ![Abilitazione di un file di impostazioni di esecuzione](../test/media/runsettings-1.png "RunSettings-1")  
+   ![Abilitazione di un file di impostazioni di esecuzione](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Copiare il file di esempio con estensione runsettings  
  Di seguito è riportato un tipico file di tipo *.runsettings. Ogni elemento del file è facoltativo, perché ogni valore ha un'impostazione predefinita.  

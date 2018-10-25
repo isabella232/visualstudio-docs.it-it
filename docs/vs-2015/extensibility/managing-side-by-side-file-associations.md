@@ -15,12 +15,12 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddcca5b79c858ab9331202b36d5ea9ff1ddca60f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889399"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Gestione delle associazioni di file side-by-side
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,46 +37,46 @@ Se il pacchetto VSPackage fornisce associazioni di file, è necessario decidere 
 ## <a name="facing-the-problem"></a>Rivolta verso il problema  
  Se si desidera più pacchetti VSPackage side-by-side per usare la stessa estensione, è necessario scegliere la versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] associato con l'estensione. Ecco due alternative:  
   
--   Aprire il file nella versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installato nel computer dell'utente.  
+- Aprire il file nella versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installato nel computer dell'utente.  
   
-     In questo approccio, il programma di installazione è responsabile di determinare la versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che inclusa nella voce del Registro di sistema scritta per l'associazione del file. In un pacchetto Windows Installer, è possibile includere azioni personalizzate per impostare una proprietà che indica la versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   In questo approccio, il programma di installazione è responsabile di determinare la versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che inclusa nella voce del Registro di sistema scritta per l'associazione del file. In un pacchetto Windows Installer, è possibile includere azioni personalizzate per impostare una proprietà che indica la versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    > [!NOTE]
-    >  In questo contesto, "latest" significa "versione supportata più recente." Queste voci di programma di installazione non rileva automaticamente una versione successiva di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le voci [requisiti di sistema di rilevamento](../extensibility/internals/detecting-system-requirements.md) e nella [comandi che devono essere eseguiti dopo l'installazione](../extensibility/internals/commands-that-must-be-run-after-installation.md) sono simili a quelli presentati in questo articolo e sono necessarie per supportare versioni aggiuntive di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  > [!NOTE]
+  >  In questo contesto, "latest" significa "versione supportata più recente." Queste voci di programma di installazione non rileva automaticamente una versione successiva di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le voci [requisiti di sistema di rilevamento](../extensibility/internals/detecting-system-requirements.md) e nella [comandi che devono essere eseguiti dopo l'installazione](../extensibility/internals/commands-that-must-be-run-after-installation.md) sono simili a quelli presentati in questo articolo e sono necessarie per supportare versioni aggiuntive di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-     Le righe seguenti nella tabella CustomAction impostare la proprietà DEVENV_EXE_LATEST sia una proprietà impostata dal AppSearch e tabelle RegLocator illustrate in [comandi che devono essere eseguiti dopo l'installazione](../extensibility/internals/commands-that-must-be-run-after-installation.md). Le righe della tabella InstallExecuteSequence pianificare le azioni personalizzate nelle prime fasi della sequenza di esecuzione. Valori nel rendere colonna condizione il lavoro per la logica:  
+   Le righe seguenti nella tabella CustomAction impostare la proprietà DEVENV_EXE_LATEST sia una proprietà impostata dal AppSearch e tabelle RegLocator illustrate in [comandi che devono essere eseguiti dopo l'installazione](../extensibility/internals/commands-that-must-be-run-after-installation.md). Le righe della tabella InstallExecuteSequence pianificare le azioni personalizzate nelle prime fasi della sequenza di esecuzione. Valori nel rendere colonna condizione il lavoro per la logica:  
   
-    -   Visual Studio .NET 2002 è la versione più recente, se si tratta della versione presente solo.  
+  - Visual Studio .NET 2002 è la versione più recente, se si tratta della versione presente solo.  
   
-    -   Visual Studio .NET 2003 è l'ultima versione solo se è presente e [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non è presente.  
+  - Visual Studio .NET 2003 è l'ultima versione solo se è presente e [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non è presente.  
   
-    -   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Se si tratta della versione presente soltanto, è la versione più recente.  
+  - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Se si tratta della versione presente soltanto, è la versione più recente.  
   
-     Il risultato finale è che DEVENV_EXE_LATEST contiene il percorso della versione più recente di devenv.exe.  
+    Il risultato finale è che DEVENV_EXE_LATEST contiene il percorso della versione più recente di devenv.exe.  
   
-    ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Righe della tabella CustomAction che determinano la versione più recente di Visual Studio  
+  ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Righe della tabella CustomAction che determinano la versione più recente di Visual Studio  
   
-    |Operazione|Tipo|Origine|destinazione|  
-    |------------|----------|------------|------------|  
-    |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
-    |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
-    |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|  
+  |Operazione|Tipo|Origine|destinazione|  
+  |------------|----------|------------|------------|  
+  |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
+  |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
+  |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|  
   
-    ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Righe della tabella InstallExecuteSequence che determinano la versione più recente di Visual Studio  
+  ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Righe della tabella InstallExecuteSequence che determinano la versione più recente di Visual Studio  
   
-    |Operazione|Condizione|Sequence|  
-    |------------|---------------|--------------|  
-    |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 E NON (DEVENV_EXE_2003 O DEVENV_EXE_2005)|410|  
-    |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 E NON DEVENV_EXE_2005|420|  
-    |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
+  |Operazione|Condizione|Sequence|  
+  |------------|---------------|--------------|  
+  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 E NON (DEVENV_EXE_2003 O DEVENV_EXE_2005)|410|  
+  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 E NON DEVENV_EXE_2005|420|  
+  |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
   
-     È possibile utilizzare la proprietà DEVENV_EXE_LATEST nella tabella del Registro di sistema del pacchetto Windows Installer per scrivere il HKEY_CLASSES_ROOT*ProgId*valore predefinito della chiave ShellOpenCommand, [DEVENV_EXE_LATEST] "%1"  
+   È possibile utilizzare la proprietà DEVENV_EXE_LATEST nella tabella del Registro di sistema del pacchetto Windows Installer per scrivere il HKEY_CLASSES_ROOT*ProgId*valore predefinito della chiave ShellOpenCommand, [DEVENV_EXE_LATEST] "%1"  
   
--   Eseguire un programma di avvio condivisa che può effettuare la scelta migliore rispetto alle versioni di VSPackage disponibili.  
+- Eseguire un programma di avvio condivisa che può effettuare la scelta migliore rispetto alle versioni di VSPackage disponibili.  
   
-     Gli sviluppatori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] scelto questo approccio per gestire i requisiti complessi dei formati più delle soluzioni e progetti risultanti da molte versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questo approccio, si registra un programma di avvio come il gestore dell'estensione. L'utilità di avvio esamina il file e decide quale versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il pacchetto VSPackage può gestire il file in questione. Ad esempio, se un utente apre un file che è stato salvato da una determinata versione del pacchetto VSPackage, l'utilità di avvio può avviare tale pacchetto VSPackage nella versione corrisponda di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Inoltre, un utente è stato possibile configurare l'utilità di avvio per avviare sempre la versione più recente. Un'utilità di avvio potrebbe anche richiedere all'utente di aggiornare il formato del file. Se il formato del file include un numero di versione, l'utilità di avvio è stato possibile comunicare un utente se il formato di file da una versione successiva a quella di una o più dei VSPackage installati.  
+   Gli sviluppatori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] scelto questo approccio per gestire i requisiti complessi dei formati più delle soluzioni e progetti risultanti da molte versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questo approccio, si registra un programma di avvio come il gestore dell'estensione. L'utilità di avvio esamina il file e decide quale versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il pacchetto VSPackage può gestire il file in questione. Ad esempio, se un utente apre un file che è stato salvato da una determinata versione del pacchetto VSPackage, l'utilità di avvio può avviare tale pacchetto VSPackage nella versione corrisponda di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Inoltre, un utente è stato possibile configurare l'utilità di avvio per avviare sempre la versione più recente. Un'utilità di avvio potrebbe anche richiedere all'utente di aggiornare il formato del file. Se il formato del file include un numero di versione, l'utilità di avvio è stato possibile comunicare un utente se il formato di file da una versione successiva a quella di una o più dei VSPackage installati.  
   
-     L'utilità di avvio deve essere un componente di Windows Installer che è condiviso con tutte le versioni del pacchetto VSPackage. Questo processo consente di verificare che la versione più recente viene sempre installata e non viene rimosso fino a quando non vengono disinstallate tutte le versioni del pacchetto VSPackage. In questo modo, le associazioni di file e le altre voci del Registro di sistema del componente dell'utilità di avvio vengono conservati anche se si disinstalla una versione del pacchetto VSPackage.  
+   L'utilità di avvio deve essere un componente di Windows Installer che è condiviso con tutte le versioni del pacchetto VSPackage. Questo processo consente di verificare che la versione più recente viene sempre installata e non viene rimosso fino a quando non vengono disinstallate tutte le versioni del pacchetto VSPackage. In questo modo, le associazioni di file e le altre voci del Registro di sistema del componente dell'utilità di avvio vengono conservati anche se si disinstalla una versione del pacchetto VSPackage.  
   
 ## <a name="uninstall-and-file-associations"></a>Disinstallare e le associazioni di File  
  Disinstallazione di un pacchetto VSPackage che scrive le voci del Registro di sistema per le associazioni di file consente di rimuovere le associazioni di file. Pertanto, l'estensione non dispone di alcun programmi associati. Programma di installazione di Windows non viene "ripristinato" le voci del Registro di sistema che sono stati aggiunti durante l'installazione di VSPackage. Ecco alcuni modi per risolvere le associazioni di file dell'utente:  

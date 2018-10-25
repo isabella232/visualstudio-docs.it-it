@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE | Documenti Microsoft
+title: DUMPTYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa44dfa59f4883fa29a1724344124267f28bce9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e886649a7eaa5f9f99eb2e2bfcc48985f12a5e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949552"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Specifica la quantità di stato di un programma (ad esempio un thread in esecuzione, gli stack frame e indirizzo dell'istruzione corrente) per eseguire il dump.  
+Specifica la quantità di stato del programma (ad esempio thread in esecuzione, gli stack frame e indirizzo dell'istruzione corrente) per eseguire il dump.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,13 +44,13 @@ public enum enum_DUMPTYPE {
   
 ## <a name="members"></a>Membri  
  DUMP_MINIDUMP  
- Specifica un dump compatto.  
+ Specifica un dump di piccole dimensioni e compatto.  
   
  DUMP_FULLDUMP  
  Specifica un dump completo e di grandi dimensioni.  
   
 ## <a name="remarks"></a>Note  
- Passata come argomento per il [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) metodo.  
+ Passato come argomento per il [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

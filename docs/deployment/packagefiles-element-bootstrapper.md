@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbb8fa5e4881c76aae08759b2feb159b764231f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813765"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (programma di avvio automatico)
 Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono i pacchetti di installazione eseguiti in seguito al `Command` elemento.  
-  
+
 ## <a name="syntax"></a>Sintassi  
-  
+
 ```xml  
 <PackageFiles  
     CopyAllPackageFiles  
@@ -42,30 +42,31 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
     />  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>Gli elementi e attributi  
- Il `PackageFiles` elemento ha l'attributo seguente.  
-  
+ L'elemento `PackageFiles` presenta l'attributo seguente:  
+
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|Facoltativo. Se impostato su `false`, il programma di installazione scaricherà solo i file a cui fa riferimento il `Command` elemento. Se impostato su `true`, verranno scaricati tutti i file.<br /><br /> Se impostato su `IfNotHomesite`, il programma di installazione si comporterà come se `False` se `ComponentsLocation` è impostata su `HomeSite`e in caso contrario, si comportano allo stesso come se `True`. Questa impostazione può essere utile per consentire ai pacchetti che sono essi stessi programmi di bootstrap eseguire il proprio comportamento in uno scenario HomeSite.<br /><br /> Il valore predefinito è `true`.|  
-  
+
 ## <a name="packagefile"></a>PackageFile  
  Il `PackageFile` elemento è figlio di `PackageFiles` elemento. Oggetto `PackageFiles` deve avere almeno un elemento `PackageFile` elemento.  
-  
+
  `PackageFile` ha gli attributi seguenti.  
-  
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|`Name`|Obbligatorio. Il nome del file del pacchetto. Si tratta del nome che il `Command` elemento farà riferimento quando definisce le condizioni in cui viene installato un pacchetto. Questo valore viene anche utilizzato come chiave nel `Strings` tabella per recuperare il nome localizzato che gli strumenti, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verrà utilizzato per descrivere il pacchetto.|  
-|`HomeSite`|Facoltativo. Il percorso del pacchetto nel server remoto, se non è incluso con il programma di installazione.|  
-|`CopyOnBuild`|Facoltativo. Specifica se il programma di avvio automatico deve copiare il file del pacchetto sul disco in fase di compilazione. Il valore predefinito è true.|  
-|`PublicKey`|La chiave crittografata pubblica del firmatario certificato del pacchetto. Obbligatorio se `HomeSite` viene usato; in caso contrario, facoltativo.|  
-|`Hash`|Facoltativo. Un hash SHA1 del file del pacchetto. Ciò consente di verificare l'integrità del file in fase di installazione. Se non è possibile calcolare l'hash identico dal file di pacchetto, il pacchetto non essere installato.|  
-  
+
+
+| Attributo | Descrizione |
+|---------------| - |
+| `Name` | Obbligatorio. Il nome del file del pacchetto. Si tratta del nome che il `Command` elemento farà riferimento quando definisce le condizioni in cui viene installato un pacchetto. Questo valore viene anche utilizzato come chiave nel `Strings` tabella per recuperare il nome localizzato che gli strumenti, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verrà utilizzato per descrivere il pacchetto. |
+| `HomeSite` | Facoltativo. Il percorso del pacchetto nel server remoto, se non è incluso con il programma di installazione. |
+| `CopyOnBuild` | Facoltativo. Specifica se il programma di avvio automatico deve copiare il file del pacchetto sul disco in fase di compilazione. Il valore predefinito è true. |
+| `PublicKey` | La chiave crittografata pubblica del firmatario certificato del pacchetto. Obbligatorio se `HomeSite` viene usato; in caso contrario, facoltativo. |
+| `Hash` | Facoltativo. Un hash SHA1 del file del pacchetto. Ciò consente di verificare l'integrità del file in fase di installazione. Se non è possibile calcolare l'hash identico dal file di pacchetto, il pacchetto non essere installato. |
+
 ## <a name="example"></a>Esempio  
  Esempio di codice seguente definisce i pacchetti per il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] package ridistribuibile e le relative dipendenze, ad esempio il programma di installazione di Windows.  
-  
+
 ```xml  
 <PackageFiles>  
     <PackageFile Name="instmsia.exe" HomeSite="InstMsiAExe" PublicKey="3082010A0282010100AA99BD39A81827F42B3D0B4C3F7C772EA7CBB5D18C0DC23A74D793B5E0A04B3F595ECE454F9A7929F149CC1A47EE55C2083E1220F855F2EE5FD3E0CA96BC30DEFE58C82732D08554E8F09110BBF32BBE19E5039B0B861DF3B0398CB8FD0B1D3C7326AC572BCA29A215908215E277A34052038B9DC270BA1FE934F6F335924E5583F8DA30B620DE5706B55A4206DE59CBF2DFA6BD154771192523D2CB6F9B1979DF6A5BF176057929FCC356CA8F440885558ACBC80F464B55CB8C96774A87E8A94106C7FF0DE968576372C36957B443CF323A30DC1BE9D543262A79FE95DB226724C92FD034E3E6FB514986B83CD0255FD6EC9E036187A96840C7F8E203E6CF050203010001"/>  
@@ -74,7 +75,7 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
     <PackageFile Name="dotnetchk.exe"/>  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="see-also"></a>Vedere anche  
  [\<Product > elemento](../deployment/product-element-bootstrapper.md)   
  [\<Pacchetto > elemento](../deployment/package-element-bootstrapper.md)   

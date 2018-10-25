@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911850"
 ---
 # <a name="hresult-information-in-managed-code"></a>Informazioni su HRESULT nel codice gestito
 L'interazione tra codice gestito e COM può causare problemi in presenza di valori restituiti HRESULT.  
   
  In un'interfaccia COM un valore restituito HRESULT può avere le funzioni seguenti:  
   
--   Fornire informazioni sugli errori (ad esempio <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
+- Fornire informazioni sugli errori (ad esempio <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
   
--   Fornire informazioni sullo stato in relazione al normale comportamento del programma.  
+- Fornire informazioni sullo stato in relazione al normale comportamento del programma.  
   
- Quando COM esegue una chiamata nel codice gestito, i valori HRESULT possono causare questi problemi:  
+  Quando COM esegue una chiamata nel codice gestito, i valori HRESULT possono causare questi problemi:  
   
--   Le funzioni COM che restituiscono valori HRESULT minori di zero (codici di errore) generano eccezioni.  
+- Le funzioni COM che restituiscono valori HRESULT minori di zero (codici di errore) generano eccezioni.  
   
--   I metodi COM che restituiscono regolarmente due o più codici di riuscita diversi, ad esempio <xref:Microsoft.VisualStudio.VSConstants.S_OK> o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, non possono essere distinti.  
+- I metodi COM che restituiscono regolarmente due o più codici di riuscita diversi, ad esempio <xref:Microsoft.VisualStudio.VSConstants.S_OK> o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, non possono essere distinti.  
   
- Poiché molte delle funzioni COM di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] restituiscono valori HRESULT minori di zero o codici di riuscita diversi, gli assembly di interoperabilità di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sono stati scritti in modo da mantenete le firme dei metodi. Tutti i metodi di interoperabilità di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sono di tipo `int` . I valori HRESULT vengono passati attraverso il livello di interoperabilità senza modifica e senza generare eccezioni.  
+  Poiché molte delle funzioni COM di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] restituiscono valori HRESULT minori di zero o codici di riuscita diversi, gli assembly di interoperabilità di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sono stati scritti in modo da mantenete le firme dei metodi. Tutti i metodi di interoperabilità di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sono di tipo `int` . I valori HRESULT vengono passati attraverso il livello di interoperabilità senza modifica e senza generare eccezioni.  
   
- Poiché una funzione COM restituisce un valore HRESULT al metodo gestito che la chiama, il metodo chiamante deve controllare il valore HRESULT e generare eccezioni, se necessario.  
+  Poiché una funzione COM restituisce un valore HRESULT al metodo gestito che la chiama, il metodo chiamante deve controllare il valore HRESULT e generare eccezioni, se necessario.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Gestione di valori HRESULT restituiti al codice gestito da COM  
  Quando si chiama un'interfaccia COM dal codice gestito, esaminare il valore HRESULT e generare un'eccezione, se necessario. La classe <xref:Microsoft.VisualStudio.ErrorHandler> contiene il metodo <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, che genera un'eccezione COM, a seconda del valore HRESULT passato.  

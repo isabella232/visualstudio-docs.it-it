@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 876e901e13a2fe25957744665e54f703e209fc7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c179639c0ab559ae4147559b9279fb7ef694c45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912799"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Varianti di MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Al
 ## <a name="remarks"></a>Note  
  Queste varianti eseguono l'override degli argomenti relativi conteggio e alla qualità dei campioni nelle chiamate a `ID3DDevice::CreateTexture2D` che creano destinazioni di rendering. In particolare, tali parametri vengono sottoposti a override nei casi seguenti:  
   
--   L'oggetto `D3D11_TEXTURE2D_DESC` passato in `pDesc` descrive una destinazione di rendering, ossia:  
+- L'oggetto `D3D11_TEXTURE2D_DESC` passato in `pDesc` descrive una destinazione di rendering, ossia:  
   
-    -   Il membro BindFlags presenta il flag D3D11_BIND_TARGET o il flag D3D11_BIND_DEPTH_STENCIL impostato.  
+  -   Il membro BindFlags presenta il flag D3D11_BIND_TARGET o il flag D3D11_BIND_DEPTH_STENCIL impostato.  
   
-    -   Il membro Usage è impostato su D3D11_USAGE_DEFAULT.  
+  -   Il membro Usage è impostato su D3D11_USAGE_DEFAULT.  
   
-    -   Il membro CPUAccessFlags è impostato su 0.  
+  -   Il membro CPUAccessFlags è impostato su 0.  
   
-    -   Il membro MipLevels è impostato su 1.  
+  -   Il membro MipLevels è impostato su 1.  
   
--   Il dispositivo supporta il conteggio dei campioni (0, 2 o 4) e la qualità degli stessi (0) necessari per il formato della destinazione di rendering richiesta (membro D3D11_TEXTURE2D_DESC::Format), così come determinato da `ID3D11Device::CheckMultisampleQualityLevels`.  
+- Il dispositivo supporta il conteggio dei campioni (0, 2 o 4) e la qualità degli stessi (0) necessari per il formato della destinazione di rendering richiesta (membro D3D11_TEXTURE2D_DESC::Format), così come determinato da `ID3D11Device::CheckMultisampleQualityLevels`.  
   
- Se il membro D3D11_TEXTURE2D_DESC::BindFlags ha il flag D3D_BIND_SHADER_RESOUCE o D3D11_BIND_UNORDERED_ACCESS impostato, vengono create due versioni della trama: la prima con tre flag deselezionati per l'uso come destinazione di rendering, mentre l'altra è una trama non MSAA che presenta i flag intatti in modo da agire come buffer di risoluzione per la prima versione. Ciò è necessario perché l'uso di una trama MSAA come risorsa shader o per l'accesso non ordinato difficilmente sarà valido. Uno shader che agisce su di essa genererebbe ad esempio risultati non corretti perché si prevederebbe una trama non MSAA. Se la variante ha creato la trama secondaria non MSAA, quando la destinazione di rendering MSAA viene annullata dal contesto del dispositivo, il relativo contenuto viene risolto nella trama non MSAA. Analogamente, quando la destinazione di rendering MSAA si trova impegnata come risorsa condivisa o viene usata in una visualizzazione con accesso non ordinato, verrà associata la trama non MSAA risolta.  
+  Se il membro D3D11_TEXTURE2D_DESC::BindFlags ha il flag D3D_BIND_SHADER_RESOUCE o D3D11_BIND_UNORDERED_ACCESS impostato, vengono create due versioni della trama: la prima con tre flag deselezionati per l'uso come destinazione di rendering, mentre l'altra è una trama non MSAA che presenta i flag intatti in modo da agire come buffer di risoluzione per la prima versione. Ciò è necessario perché l'uso di una trama MSAA come risorsa shader o per l'accesso non ordinato difficilmente sarà valido. Uno shader che agisce su di essa genererebbe ad esempio risultati non corretti perché si prevederebbe una trama non MSAA. Se la variante ha creato la trama secondaria non MSAA, quando la destinazione di rendering MSAA viene annullata dal contesto del dispositivo, il relativo contenuto viene risolto nella trama non MSAA. Analogamente, quando la destinazione di rendering MSAA si trova impegnata come risorsa condivisa o viene usata in una visualizzazione con accesso non ordinato, verrà associata la trama non MSAA risolta.  
   
- Queste varianti eseguono anche l'override delle impostazioni MSAA su tutte le catene di scambio create tramite `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` e `ID3D11CreateDeviceAndSwapChain`.  
+  Queste varianti eseguono anche l'override delle impostazioni MSAA su tutte le catene di scambio create tramite `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` e `ID3D11CreateDeviceAndSwapChain`.  
   
- L'effetto finale di queste modifiche è che tutto il rendering viene eseguito in una destinazione di rendering MSAA, ma, se l'applicazione usa una di tali destinazioni di rendering, o buffer della catena di scambio, come visualizzazione di risorse shader o visualizzazione con accesso non ordinato, i dati verranno campionati dalla copia risolta, non MSAA, della destinazione di rendering.  
+  L'effetto finale di queste modifiche è che tutto il rendering viene eseguito in una destinazione di rendering MSAA, ma, se l'applicazione usa una di tali destinazioni di rendering, o buffer della catena di scambio, come visualizzazione di risorse shader o visualizzazione con accesso non ordinato, i dati verranno campionati dalla copia risolta, non MSAA, della destinazione di rendering.  
   
 ## <a name="restrictions-and-limitations"></a>Limiti e restrizioni  
  In Direct3D11, le trame MSAA sono soggette a maggiori restrizioni rispetto alle trame non MSAA. Non è ad esempio possibile chiamare `ID3D11DeviceContext::UpdateSubresource` su una trama MSAA e la chiamata a `ID3D11DeviceContext::CopySubresourceRegion` non riuscirà se il conteggio e la qualità dei campioni delle risorse di origine e di destinazione non coincidono, situazione che può prodursi quando questa variante esegue l'override delle impostazioni MSAA di una risorsa ma non dell'altra.  

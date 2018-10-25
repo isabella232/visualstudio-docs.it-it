@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e56a1ba624603e69c07f769706b02a1e46927699
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5896c35c53feedb2f253bd86691f2fbf6793099e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875710"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;Restituisce&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,41 +44,41 @@ Specifica le informazioni sulla documentazione per il risultato di una chiamata 
  `type`  
  Facoltativo. Il tipo di dati del valore restituito. Il tipo può essere uno dei seguenti:  
   
--   Un linguaggio ECMAScript digitare nella specifica ECMAScript 5, ad esempio `Number` e `Object`.  
+- Un linguaggio ECMAScript digitare nella specifica ECMAScript 5, ad esempio `Number` e `Object`.  
   
--   Oggetto di un modello DOM, ad esempio `HTMLElement`, `Window`, e `Document`.  
+- Oggetto di un modello DOM, ad esempio `HTMLElement`, `Window`, e `Document`.  
   
--   Funzione del costruttore JavaScript.  
+- Funzione del costruttore JavaScript.  
   
- `integer`  
- Facoltativo. Se `type` è `Number`, specifica se il valore restituito è un numero intero. Impostare su `true` per indicare che il valore restituito è un numero intero; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  `integer`  
+  Facoltativo. Se `type` è `Number`, specifica se il valore restituito è un numero intero. Impostare su `true` per indicare che il valore restituito è un numero intero; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
   
- `domElement`  
- Facoltativo. Questo attributo è deprecato. il `type` attributo ha la precedenza su questo attributo. Questo attributo specifica se il valore restituito documentato è un elemento DOM. Impostare su `true` per specificare che il valore restituito è un elemento DOM; in caso contrario, impostato su `false`. Se il `type` attributo non è impostato e `domElement` è impostata su `true`, IntelliSense considera il valore restituito documentato come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
+  `domElement`  
+  Facoltativo. Questo attributo è deprecato. il `type` attributo ha la precedenza su questo attributo. Questo attributo specifica se il valore restituito documentato è un elemento DOM. Impostare su `true` per specificare che il valore restituito è un elemento DOM; in caso contrario, impostato su `false`. Se il `type` attributo non è impostato e `domElement` è impostata su `true`, IntelliSense considera il valore restituito documentato come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
   
- `mayBeNull`  
- Facoltativo. Specifica se il documento restituito può essere impostato su null. Impostare su `true` per indicare che il valore restituito può essere impostato su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  `mayBeNull`  
+  Facoltativo. Specifica se il documento restituito può essere impostato su null. Impostare su `true` per indicare che il valore restituito può essere impostato su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
   
- `elementType`  
- Facoltativo. Se `type` è `Array`, questo attributo specifica il tipo degli elementi nella matrice.  
+  `elementType`  
+  Facoltativo. Se `type` è `Array`, questo attributo specifica il tipo degli elementi nella matrice.  
   
- `elementInteger`  
- Facoltativo. Se `type` viene `Array` e `elementType` è `Number`, questo attributo specifica se gli elementi nella matrice sono numeri interi. Impostare su `true` per indicare che gli elementi nella matrice sono numeri interi; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  `elementInteger`  
+  Facoltativo. Se `type` viene `Array` e `elementType` è `Number`, questo attributo specifica se gli elementi nella matrice sono numeri interi. Impostare su `true` per indicare che gli elementi nella matrice sono numeri interi; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
   
- `elementDomElement`  
- Facoltativo. Questo attributo è deprecato. il `elementType` attributo ha la precedenza su questo attributo. Se `type` è `Array`, questo attributo specifica se gli elementi nella matrice sono elementi DOM. Impostare su `true` per specificare che gli elementi sono elementi DOM; in caso contrario, impostato su `false`. Se il `elementType` attributo non è impostato e `elementDomElement` è impostata su `true`, IntelliSense considera ogni elemento nella matrice come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
+  `elementDomElement`  
+  Facoltativo. Questo attributo è deprecato. il `elementType` attributo ha la precedenza su questo attributo. Se `type` è `Array`, questo attributo specifica se gli elementi nella matrice sono elementi DOM. Impostare su `true` per specificare che gli elementi sono elementi DOM; in caso contrario, impostato su `false`. Se il `elementType` attributo non è impostato e `elementDomElement` è impostata su `true`, IntelliSense considera ogni elemento nella matrice come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
   
- `elementMayBeNull`  
- Facoltativo. Se `type` è `Array`, specifica se gli elementi della matrice possono essere impostati su null. Impostare su `true` per indicare che gli elementi della matrice possono essere impostati su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  `elementMayBeNull`  
+  Facoltativo. Se `type` è `Array`, specifica se gli elementi della matrice possono essere impostati su null. Impostare su `true` per indicare che gli elementi della matrice possono essere impostati su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
   
- `locid`  
- Facoltativo. L'identificatore per le informazioni di localizzazione sul valore restituito. L'identificatore è un membro ID o corrisponde alla `name` valore in un bundle di messaggio definito dai metadati OpenAjax dell'attributo. Il tipo di identificatore dipende dal formato specificato nella [ \<loc >](../ide/loc-javascript.md) tag.  
+  `locid`  
+  Facoltativo. L'identificatore per le informazioni di localizzazione sul valore restituito. L'identificatore è un membro ID o corrisponde alla `name` valore in un bundle di messaggio definito dai metadati OpenAjax dell'attributo. Il tipo di identificatore dipende dal formato specificato nella [ \<loc >](../ide/loc-javascript.md) tag.  
   
- `value`  
- Facoltativo. Specifica il codice che deve essere valutato per l'uso da IntelliSense anziché il codice della funzione. Ad esempio, è possibile usare questo attributo per fornire IntelliSense per i callback asincroni, ad esempio un `Promise`. Usando il `value` dell'attributo con il `<returns>` elemento può migliorare le prestazioni di IntelliSense ignorando l'esecuzione di codice particolarmente lunghi.  
+  `value`  
+  Facoltativo. Specifica il codice che deve essere valutato per l'uso da IntelliSense anziché il codice della funzione. Ad esempio, è possibile usare questo attributo per fornire IntelliSense per i callback asincroni, ad esempio un `Promise`. Usando il `value` dell'attributo con il `<returns>` elemento può migliorare le prestazioni di IntelliSense ignorando l'esecuzione di codice particolarmente lunghi.  
   
- `description`  
- Facoltativo. Descrizione del valore restituito.  
+  `description`  
+  Facoltativo. Descrizione del valore restituito.  
   
 ## <a name="remarks"></a>Note  
  Il `<returns>` elemento deve essere inserito nel corpo della funzione prima di qualsiasi istruzione.  

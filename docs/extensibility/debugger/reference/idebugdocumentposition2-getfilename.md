@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetFileName | Documenti Microsoft
+title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81417fbb025fdea70a4b9fb51f0b49fb0257cd8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f77d7f89bd7970a17c78414393cd8856a6f62b4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872327"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Ottiene il nome del file del file di origine che contiene la posizione del documento.  
@@ -47,7 +47,7 @@ int GetFileName(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Un file di origine non può sempre essere un nome di file (file di origine inesistente su disco, ad esempio).  
+ Un file di origine non può sempre essere un nome di file (il file di origine potrebbe non esiste sul disco, ad esempio).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

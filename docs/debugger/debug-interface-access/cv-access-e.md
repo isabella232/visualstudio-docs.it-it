@@ -1,5 +1,5 @@
 ---
-title: CV_access_e | Documenti Microsoft
+title: CV_access_e | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b10f8a98284fdec9e94043a4b827fab226d3aa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b6de95d74b8d7edc3bde08437c3d018270758112
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878986"
 ---
 # <a name="cvaccesse"></a>CV_access_e
-Specifica l'ambito di visibilità (livello di accesso) di variabili e funzioni membro.  
+Specifica l'ambito di visibilità (livello di accesso) di funzioni membro e variabili.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,7 +36,7 @@ typedef enum CV_access_e {
   
 ## <a name="elements"></a>Elementi  
  CV_private  
- Membro con accesso privato.  
+ Membro dispone di accesso privato.  
   
  CV_protected  
  Membro con l'accesso protetto.  
@@ -45,7 +45,7 @@ typedef enum CV_access_e {
  Membro dispone di accesso pubblico.  
   
 ## <a name="remarks"></a>Note  
- Il `friend` identificatore di accesso non è incluso in questo caso perché è in genere utilizzata da funzioni non membro che hanno accesso a elementi privati e protetti della classe. Utilizzare il [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) metodo per individuare i simboli con `SymTagFriend` accesso.  
+ Il `friend` identificatore di accesso non viene incluso qui perché è in genere usato dalle funzioni non membro che dispongono dell'accesso agli elementi privati e protetti della classe. Usare la [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) metodo per individuare i simboli con `SymTagFriend` accesso.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: cvconst.h  

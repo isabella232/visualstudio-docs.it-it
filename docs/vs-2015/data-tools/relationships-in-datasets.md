@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935406"
 ---
 # <a name="relationships-in-datasets"></a>Relazioni nei DataSet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
   
  Il <xref:System.Data.DataRelation> oggetto esegue due funzioni:  
   
--   Può rendere disponibili i record correlati a un record che si sta lavorando. Fornisce i record figlio in presenza di un record padre (<xref:System.Data.DataRow.GetChildRows%2A>) e un record padre se si lavora con un record figlio (<xref:System.Data.DataRow.GetParentRow%2A>).  
+- Può rendere disponibili i record correlati a un record che si sta lavorando. Fornisce i record figlio in presenza di un record padre (<xref:System.Data.DataRow.GetChildRows%2A>) e un record padre se si lavora con un record figlio (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   È possibile applicare vincoli per l'integrità referenziale, ad esempio l'eliminazione di record figlio correlati quando si elimina un record padre.  
+- È possibile applicare vincoli per l'integrità referenziale, ad esempio l'eliminazione di record figlio correlati quando si elimina un record padre.  
   
- È importante comprendere la differenza tra un join e la funzione di un <xref:System.Data.DataRelation> oggetto. In un join, i record vengono ricavati dalle tabelle padre e figlio e inserire in un unico set di record. Quando si usa un <xref:System.Data.DataRelation> dell'oggetto, non viene creato alcun nuovo set di record. Al contrario, la DataRelation rileva la relazione tra tabelle e mantiene sincronizzata record padre e figlio.  
+  È importante comprendere la differenza tra un join e la funzione di un <xref:System.Data.DataRelation> oggetto. In un join, i record vengono ricavati dalle tabelle padre e figlio e inserire in un unico set di record. Quando si usa un <xref:System.Data.DataRelation> dell'oggetto, non viene creato alcun nuovo set di record. Al contrario, la DataRelation rileva la relazione tra tabelle e mantiene sincronizzata record padre e figlio.  
   
 ## <a name="datarelation-objects-and-constraints"></a>I vincoli e oggetti DataRelation  
  Oggetto <xref:System.Data.DataRelation> oggetto viene usato anche per creare e imporre i vincoli seguenti:  
   
--   Un vincolo univoco, che garantisce che una colonna nella tabella non contiene duplicati.  
+- Un vincolo univoco, che garantisce che una colonna nella tabella non contiene duplicati.  
   
--   Un vincolo foreign key, che può essere usato per mantenere l'integrità referenziale tra una tabella padre e figlio in un set di dati.  
+- Un vincolo foreign key, che può essere usato per mantenere l'integrità referenziale tra una tabella padre e figlio in un set di dati.  
   
- I vincoli specificati in un <xref:System.Data.DataRelation> oggetto vengono implementate automaticamente la creazione di oggetti appropriati o impostando proprietà. Se si crea un vincolo foreign key tramite il <xref:System.Data.DataRelation> (oggetto), le istanze del <xref:System.Data.ForeignKeyConstraint> classe vengono aggiunti per il <xref:System.Data.DataRelation> dell'oggetto <xref:System.Data.DataRelation.ChildKeyConstraint%2A> proprietà.  
+  I vincoli specificati in un <xref:System.Data.DataRelation> oggetto vengono implementate automaticamente la creazione di oggetti appropriati o impostando proprietà. Se si crea un vincolo foreign key tramite il <xref:System.Data.DataRelation> (oggetto), le istanze del <xref:System.Data.ForeignKeyConstraint> classe vengono aggiunti per il <xref:System.Data.DataRelation> dell'oggetto <xref:System.Data.DataRelation.ChildKeyConstraint%2A> proprietà.  
   
- Viene implementato un vincolo unique impostando semplicemente il <xref:System.Data.DataColumn.Unique%2A> proprietà di una colonna di dati da `true` o tramite l'aggiunta di un'istanza del <xref:System.Data.UniqueConstraint> classe per il <xref:System.Data.DataRelation> dell'oggetto <xref:System.Data.DataRelation.ParentKeyConstraint%2A> proprietà. Per informazioni sulla sospensione dei vincoli in un set di dati, vedere [disattivare i vincoli durante il riempimento di un set di dati](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+  Viene implementato un vincolo unique impostando semplicemente il <xref:System.Data.DataColumn.Unique%2A> proprietà di una colonna di dati da `true` o tramite l'aggiunta di un'istanza del <xref:System.Data.UniqueConstraint> classe per il <xref:System.Data.DataRelation> dell'oggetto <xref:System.Data.DataRelation.ParentKeyConstraint%2A> proprietà. Per informazioni sulla sospensione dei vincoli in un set di dati, vedere [disattivare i vincoli durante il riempimento di un set di dati](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
 ### <a name="referential-integrity-rules"></a>Regole di integrità referenziale  
  Come parte del vincolo di chiave esterna, è possibile specificare regole di integrità referenziale in tre punti:  
   
--   Quando viene aggiornato un record padre  
+- Quando viene aggiornato un record padre  
   
--   Quando viene eliminato un record padre  
+- Quando viene eliminato un record padre  
   
--   Quando una modifica è accettata o rifiutata  
+- Quando una modifica è accettata o rifiutata  
   
- Le regole che è possibile apportare siano specificate nel <xref:System.Data.Rule> enumerazione ed elencate nella tabella seguente.  
+  Le regole che è possibile apportare siano specificate nel <xref:System.Data.Rule> enumerazione ed elencate nella tabella seguente.  
   
 |Regola del vincolo di chiave esterna|Operazione|  
 |----------------------------------|------------|  

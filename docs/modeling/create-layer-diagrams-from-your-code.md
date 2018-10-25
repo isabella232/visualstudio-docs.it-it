@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 511234a1a577bbad87fa9ceecc2afe34945cce5c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951171"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi delle dipendenze dal codice
 
@@ -88,7 +88,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
  Per vedere se un elemento collegato supporta la convalida, aprire **Esplora livello** ed esaminare le **supporta la convalida** proprietà dell'elemento. Visualizzare [gestione dei collegamenti agli elementi](#Managing).
 
 |**Per**|**Seguire questi passaggi**|
-|------------|----------------------------|
+|-|-|
 |Creare un livello per un solo artefatto|<ol><li>Trascinare l'elemento nel diagramma delle dipendenze da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codice<br /><br />         Visualizzare [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) e [usare le mappe codice per il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'artefatto.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:** si trascinano file binari per il diagramma delle dipendenze non vengono aggiunti automaticamente i riferimenti al progetto di modellazione. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modellazione. **Per aggiungere i file binari al progetto di modellazione** <ol><li>Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto di modellazione e quindi scegliere **Aggiungi elemento esistente**.</li><li>Nel **Aggiungi elemento esistente** della finestra di dialogo selezionare i file binari, selezionarli e quindi scegliere **OK**.     I file binari verranno visualizzati nel progetto di modellazione.</li><li>Nelle **Esplora soluzioni**, scegliere un file binario che aggiunto e quindi premere **F4** per aprire il **proprietà** finestra.</li><li>Per ogni file binario, impostare il **Build Action** proprietà **Validate**.</li></ol>|
 |Creare un solo livello per tutti gli artefatti selezionati|Trascinare tutti gli artefatti nel diagramma delle dipendenze nello stesso momento.<br /><br /> Nel diagramma viene visualizzato un livello collegato a tutti gli artefatti.|
 |Creare un livello per ogni artefatto selezionato|Premere e tenere premuto il **MAIUSC** mentre si trascinano contemporaneamente tutti gli elementi nel diagramma delle dipendenze. **Nota:** se si usano i **MAIUSC** chiave per selezionare un intervallo di elementi, rilasciare il tasto dopo avere selezionato gli artefatti. Premerlo e tenerlo premuto nuovamente quando si trascinano gli artefatti nel diagramma. <br /><br /> Per ogni elemento nel diagramma viene visualizzato un livello collegato a ciascun elemento.|
@@ -118,7 +118,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 2.  Usare le seguenti attività per gestire tali collegamenti:
 
 |**Per**|**In Esplora livello**|
-|------------|---------------------------|
+|-|-|
 |Eliminare il collegamento tra il livello e un artefatto|Aprire il menu di scelta rapida per il collegamento all'artefatto e quindi scegliere **Elimina**.|
 |Spostare il collegamento da un livello a un altro|Trascinare il collegamento dell'elemento in un livello esistente del diagramma.<br /><br /> -oppure-<br /><br /> 1.  Aprire il menu di scelta rapida per il collegamento all'artefatto e quindi scegliere **Taglia**.<br />2.  Nel diagramma delle dipendenze, aprire il menu di scelta rapida per il livello e quindi scegliere **Incolla**.|
 |Copiare il collegamento da un livello a un altro|1.  Aprire il menu di scelta rapida per il collegamento all'artefatto e quindi scegliere **copia**.<br />2.  Nel diagramma delle dipendenze, aprire il menu di scelta rapida per il livello e quindi scegliere **Incolla**.|
@@ -131,15 +131,15 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 > [!NOTE]
 > Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per vedere quali artefatti sono associate dipendenze che è possibile decompilare, aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti**. Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Le dipendenze non verranno decompilate per artefatti per cui questa colonna viene visualizzato **False**.
 
--   Selezionare uno o più livelli, aprire il menu di scelta rapida per un livello selezionato e quindi scegliere **genera dipendenze**.
+- Selezionare uno o più livelli, aprire il menu di scelta rapida per un livello selezionato e quindi scegliere **genera dipendenze**.
 
- In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È possibile modificare queste dipendenze per allinearle con la progettazione desiderata.
+  In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È possibile modificare queste dipendenze per allinearle con la progettazione desiderata.
 
 ## <a name="EditDependencies"></a> Modificare livelli e dipendenze per visualizzare la progettazione desiderata
  Per descrivere le modifiche che si prevede di apportare al sistema o l'architettura desiderata, modificare il diagramma delle dipendenze:
 
 |**Per**|**Eseguire questi passaggi**|
-|------------|-----------------------------|
+|-|-|
 |Modificare o limitare la direzione di una dipendenza|Impostare relativi **direzione** proprietà.|
 |Creare nuove dipendenze|Usare la **Dependency** e **dipendenza bidirezionale** strumenti.<br /><br /> Per disegnare più dipendenze, fare doppio clic sullo strumento. Al termine, scegliere il **puntatore** degli strumenti oppure premere la **ESC** chiave.|
 |Specificare che gli artefatti associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|

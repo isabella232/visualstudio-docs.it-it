@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873669"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Eseguire unit test su estensioni UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per mantenere la stabilità del codice in caso di modifiche successive, è consigliabile scrivere unit test ed eseguirli come parte di un normale processo di compilazione. Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md). Per configurare i test per le estensioni di modellazione di Visual Studio sono necessarie alcune informazioni. Riepilogo:  
   
--   [Impostazione di uno Unit Test per le estensioni VSIX](#Host)  
+- [Impostazione di uno Unit Test per le estensioni VSIX](#Host)  
   
-     Eseguire test con l'adattatore host dell'IDE di VS. Aggiungere `[HostType("VS IDE")]`come prefisso a ogni metodo di test. L'adattatore host avvia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durante l'esecuzione dei test.  
+   Eseguire test con l'adattatore host dell'IDE di VS. Aggiungere `[HostType("VS IDE")]`come prefisso a ogni metodo di test. L'adattatore host avvia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durante l'esecuzione dei test.  
   
--   [L'accesso a DTE e ModelStore](#DTE)  
+- [L'accesso a DTE e ModelStore](#DTE)  
   
-     Sarà in genere necessario aprire un modello e i relativi diagrammi e infine accedere a `IModelStore` durante l'inizializzazione del test.  
+   Sarà in genere necessario aprire un modello e i relativi diagrammi e infine accedere a `IModelStore` durante l'inizializzazione del test.  
   
--   [Apertura di un diagramma del modello](#Opening)  
+- [Apertura di un diagramma del modello](#Opening)  
   
-     È possibile eseguire il casting di `EnvDTE.ProjectItem` in e da `IDiagramContext`.  
+   È possibile eseguire il casting di `EnvDTE.ProjectItem` in e da `IDiagramContext`.  
   
--   [Esecuzione di modifiche nel Thread dell'interfaccia utente](#UiThread)  
+- [Esecuzione di modifiche nel Thread dell'interfaccia utente](#UiThread)  
   
-     I test che modificano l'archivio modelli devono essere eseguiti nel thread dell'interfaccia utente. A tale scopo, è possibile usare `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` .  
+   I test che modificano l'archivio modelli devono essere eseguiti nel thread dell'interfaccia utente. A tale scopo, è possibile usare `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` .  
   
--   [Testing di comandi, movimenti e altri componenti MEF](#MEF)  
+- [Testing di comandi, movimenti e altri componenti MEF](#MEF)  
   
-     Per testare i componenti MEF, è necessario connettere in modo esplicito le relative proprietà importate a valori.  
+   Per testare i componenti MEF, è necessario connettere in modo esplicito le relative proprietà importate a valori.  
   
- Questi concetti sono approfonditi nelle sezioni seguenti.  
+  Questi concetti sono approfonditi nelle sezioni seguenti.  
   
- Per un esempio di estensione UML sottoposta a unit test, vedere la raccolta di esempi di codice disponibile nella pagina [Immissione rapida in UML tramite testo](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
+  Per un esempio di estensione UML sottoposta a unit test, vedere la raccolta di esempi di codice disponibile nella pagina [Immissione rapida in UML tramite testo](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Requisiti  
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).  

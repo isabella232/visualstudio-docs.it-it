@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849034"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procedura dettagliata: Creare una personalizzazione a livello di documento per Excel
   Questa procedura dettagliata introduttiva mostra come creare una personalizzazione a livello di documento per Microsoft Office Excel. Le funzionalità create in questo tipo di soluzione sono disponibili solo quando si apre una cartella di lavoro specifica. Una personalizzazione a livello di documento non può essere usata per apportare modifiche a un'intera applicazione, ad esempio per visualizzare una nuova scheda della barra multifunzione quando si apre una cartella di lavoro qualsiasi.  
@@ -31,17 +31,17 @@ ms.locfileid: "38800932"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Creazione di un progetto cartella di lavoro di Excel.  
+- Creazione di un progetto cartella di lavoro di Excel.  
   
--   Aggiunta di testo a un foglio di lavoro ospitato nella finestra di progettazione di Visual Studio.  
+- Aggiunta di testo a un foglio di lavoro ospitato nella finestra di progettazione di Visual Studio.  
   
--   Scrittura di codice che usa il modello a oggetti di Excel per aggiungere testo al foglio di lavoro personalizzato quando quest'ultimo viene aperta.  
+- Scrittura di codice che usa il modello a oggetti di Excel per aggiungere testo al foglio di lavoro personalizzato quando quest'ultimo viene aperta.  
   
--   Creazione ed esecuzione del progetto a scopo di test.  
+- Creazione ed esecuzione del progetto a scopo di test.  
   
--   Pulizia del progetto completato per rimuovere dal computer di sviluppo le impostazioni di sicurezza e i file di compilazione non necessari.  
+- Pulizia del progetto completato per rimuovere dal computer di sviluppo le impostazioni di sicurezza e i file di compilazione non necessari.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -54,35 +54,35 @@ ms.locfileid: "38800932"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Per creare un nuovo progetto cartella di lavoro di Excel in Visual Studio  
   
-1.  Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-3.  Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.  
+3. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.  
   
-4.  Nel nodo **Office/SharePoint** espanso, selezionare il nodo **Componenti aggiuntivi di Office** .  
+4. Nel nodo **Office/SharePoint** espanso, selezionare il nodo **Componenti aggiuntivi di Office** .  
   
-5.  Nell'elenco dei modelli di progetto scegliere un progetto di componente aggiuntivo VSTO di Excel.  
+5. Nell'elenco dei modelli di progetto scegliere un progetto di componente aggiuntivo VSTO di Excel.  
   
-6.  Nel **Name** , digitare **FirstWorkbookCustomization**.  
+6. Nel **Name** , digitare **FirstWorkbookCustomization**.  
   
-7.  Fare clic su **OK**.  
+7. Fare clic su **OK**.  
   
-     Viene visualizzata la **Creazione guidata progetto Visual Studio Tools per Office** .  
+    Viene visualizzata la **Creazione guidata progetto Visual Studio Tools per Office** .  
   
-8.  Selezionare **creare un nuovo documento**, fare clic su **OK**.  
+8. Selezionare **creare un nuovo documento**, fare clic su **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il **FirstWorkbookCustomization** del progetto e aggiunge i file seguenti al progetto.  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il **FirstWorkbookCustomization** del progetto e aggiunge i file seguenti al progetto.  
   
-    -   *FirstWorkbookCustomization*xlsx - rappresenta la cartella di lavoro di Excel nel progetto. Contiene tutti i fogli di lavoro e i grafici.  
+   - *FirstWorkbookCustomization*xlsx - rappresenta la cartella di lavoro di Excel nel progetto. Contiene tutti i fogli di lavoro e i grafici.  
   
-    -   Sheet1 (*vb* file per Visual Basic o *cs* file per Visual c#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il primo foglio della cartella di lavoro. Per altre informazioni, vedere [elemento host Worksheet](../vsto/worksheet-host-item.md).  
+   - Sheet1 (*vb* file per Visual Basic o *cs* file per Visual c#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il primo foglio della cartella di lavoro. Per altre informazioni, vedere [elemento host Worksheet](../vsto/worksheet-host-item.md).  
   
-    -   Sheet2 (*vb* file per Visual Basic o *cs* file per Visual c#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il secondo foglio della cartella di lavoro.  
+   - Sheet2 (*vb* file per Visual Basic o *cs* file per Visual c#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il secondo foglio della cartella di lavoro.  
   
-    -   Sheet3 (*vb* file per Visual Basic o *cs* file per Visual c#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il terzo foglio della cartella di lavoro.  
+   - Sheet3 (*vb* file per Visual Basic o *cs* file per Visual c#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il terzo foglio della cartella di lavoro.  
   
-    -   ThisWorkbook (*vb* file per Visual Basic o *cs* file per Visual c#)-contiene l'area di progettazione e il codice per le personalizzazioni a livello di cartella di lavoro. Per altre informazioni, vedere [elemento host Workbook](../vsto/workbook-host-item.md).  
+   - ThisWorkbook (*vb* file per Visual Basic o *cs* file per Visual c#)-contiene l'area di progettazione e il codice per le personalizzazioni a livello di cartella di lavoro. Per altre informazioni, vedere [elemento host Workbook](../vsto/workbook-host-item.md).  
   
      Il file di codice Sheet1 viene aperto automaticamente nella finestra di progettazione.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "38800932"
   
 -   Una definizione parziale della classe `Sheet1`, che rappresenta il modello di programmazione del foglio di lavoro e consente di accedere al modello a oggetti di Excel. Per altre informazioni, [elemento host Worksheet](../vsto/worksheet-host-item.md) e [Cenni preliminari sul modello a oggetti di Word](../vsto/word-object-model-overview.md). Il resto della classe `Sheet1` viene definito in un file di codice nascosto che l'utente non deve modificare.  
   
--   I gestori eventi `Sheet1_Startup` e `Sheet1_Shutdown`. Questi gestori eventi vengono chiamati quando Excel carica e scarica la personalizzazione. Usare questi gestori eventi per inizializzare la personalizzazione quando viene caricata e per eseguire la pulizia delle risorse usate dalla personalizzazione quando viene scaricata. Per altre informazioni, vedere [gli eventi nei progetti di Office](../vsto/events-in-office-projects.md).  
+-   I gestori eventi `Sheet1_Startup` e `Sheet1_Shutdown` . Questi gestori eventi vengono chiamati quando Excel carica e scarica la personalizzazione. Usare questi gestori eventi per inizializzare la personalizzazione quando viene caricata e per eseguire la pulizia delle risorse usate dalla personalizzazione quando viene scaricata. Per altre informazioni, vedere [gli eventi nei progetti di Office](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Per aggiungere al foglio di lavoro una seconda riga di codice mediante codice  
   

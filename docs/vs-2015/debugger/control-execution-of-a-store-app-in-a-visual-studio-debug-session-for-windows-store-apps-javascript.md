@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce3ef7b1d5fe975fdc2edc21a3dbe94fa873e96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813294"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controllare l'esecuzione di un'app dello Store in una sessione di debug di Visual Studio per le app di Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,28 +55,28 @@ Questa guida introduttiva illustra come spostarsi nel debugger di Visual Studio 
   
  [Visualizzare i dati delle variabili nella finestra Variabili locali](#BKMK_View_variable_data_in_the_Locals_window)  
   
--   [Visualizzare i dati delle variabili e la catena di prototipi di un oggetto](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
+- [Visualizzare i dati delle variabili e la catena di prototipi di un oggetto](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
   
--   [Esaminare i dati nella catena dell'ambito](#BKMK_Examine_scope_chain_data)  
+- [Esaminare i dati nella catena dell'ambito](#BKMK_Examine_scope_chain_data)  
   
- [Passare al codice tramite la finestra Stack di chiamate](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
+  [Passare al codice tramite la finestra Stack di chiamate](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
   
 ##  <a name="BKMK_Create_the_sample_app"></a> Creare l'app di esempio  
  Il debug viene eseguito sul codice. L'app di esempio usa quindi il framework dell'app di Windows Store solo per creare un file di origine in cui è possibile vedere come funziona la navigazione in una sessione di debug e come esaminare lo stato del programma. Tutto il codice richiamato viene chiamato dalla funzione `module` del file default.js. Non vengono aggiunti controlli, né gestiti eventi.  
   
-1.  **Creare un'app di Windows Store JavaScript vuota.** Aprire Visual Studio. Nella home page scegliere il collegamento **Nuovo progetto** . Nella finestra di dialogo **Nuovo progetto** scegliere **JavaScript** nell'elenco **Installato** , quindi scegliere **Windows Store**. Nell'elenco dei modelli di progetto fare clic su **Applicazione vuota**. Visual Studio crea una nuova soluzione e il progetto, visualizzando il file default.htm nell'editor di codice.  
+1. **Creare un'app di Windows Store JavaScript vuota.** Aprire Visual Studio. Nella home page scegliere il collegamento **Nuovo progetto** . Nella finestra di dialogo **Nuovo progetto** scegliere **JavaScript** nell'elenco **Installato** , quindi scegliere **Windows Store**. Nell'elenco dei modelli di progetto fare clic su **Applicazione vuota**. Visual Studio crea una nuova soluzione e il progetto, visualizzando il file default.htm nell'editor di codice.  
   
-     Osservare i file di script caricati nella pagina.  
+    Osservare i file di script caricati nella pagina.  
   
-    -   I file `base.js` e `ui.js` creano la **libreria Windows per JavaScript**. La Libreria Windows per JavaScript è un set di file CSS e JavaScript che semplificano la creazione di app di Windows Store usando JavaScript. Viene usata insieme a HTML, CSS e Windows Runtime per creare l'app.  
+   -   I file `base.js` e `ui.js` creano la **libreria Windows per JavaScript**. La Libreria Windows per JavaScript è un set di file CSS e JavaScript che semplificano la creazione di app di Windows Store usando JavaScript. Viene usata insieme a HTML, CSS e Windows Runtime per creare l'app.  
   
-    -   Il codice inizia nel file `default.js`  .  
+   -   Il codice inizia nel file `default.js`  .  
   
-2.  **Aprire il file di origine default.js.** In Esplora soluzioni aprire il nodo **js** e scegliere `default.js`in questo argomento.  
+2. **Aprire il file di origine default.js.** In Esplora soluzioni aprire il nodo **js** e scegliere `default.js`in questo argomento.  
   
-3.  **Sostituire il contenuto della pagina con il codice di esempio.** Eliminare tutto il contenuto dal file `default.js` . Fare clic sul collegamento: [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md), quindi copiare negli Appunti il codice elencato nella sezione JavaScript. (Scegliere **nuovamente** nel browser o Visualizzatore della Guida per tornare a questa pagina avvio rapido.) Nell'editor di Visual Studio incolla il codice nel file `default.js` vuoto. Scegliere **CTRL+S** per salvare il file.  
+3. **Sostituire il contenuto della pagina con il codice di esempio.** Eliminare tutto il contenuto dal file `default.js` . Fare clic sul collegamento: [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md), quindi copiare negli Appunti il codice elencato nella sezione JavaScript. (Scegliere **nuovamente** nel browser o Visualizzatore della Guida per tornare a questa pagina avvio rapido.) Nell'editor di Visual Studio incolla il codice nel file `default.js` vuoto. Scegliere **CTRL+S** per salvare il file.  
   
- È ora possibile continuare seguendo gli esempi in questo argomento.  
+   È ora possibile continuare seguendo gli esempi in questo argomento.  
   
 ##  <a name="BKMK_Set_and_run_to_a_breakpoint__step_into_a_function__and_examine_program_data"></a> Impostare e raggiungere un punto di interruzione, eseguire un'istruzione in una funzione ed esaminare i dati del programma  
  Il modo più comune per avviare una sessione di debug consiste nello scegliere **Avvia debug** dal menu **Debug** (tastiera: F5). L'app viene avviata e resta in esecuzione fino a quando non viene raggiunto un punto di interruzione, non viene sospesa manualmente o non si verifica un'eccezione oppure fino al termine dell'app.  
@@ -88,45 +88,45 @@ Questa guida introduttiva illustra come spostarsi nel debugger di Visual Studio 
 ###  <a name="BKMK_Example_1"></a> Esempio 1  
  In questo esempio viene impostato un punto di interruzione nel corpo della funzione `module` in `default.js` che chiama la prima delle istruzioni utente. Viene quindi eseguita un'istruzione nella funzione, vengono visualizzati i valori delle variabili nei suggerimenti dati del debugger, quindi si arresta il debug.  
   
-1.  **Impostare un punto di interruzione.** Impostare un punto di interruzione in corrispondenza dell'istruzione `callTrack = "module function";` subito dopo la chiamata a `app.start()`in questo argomento. Scegliere la riga nella barra di navigazione ombreggiata dell'editor del codice sorgente (tastiera: posizionare il cursore sulla riga e premere **F9** ).  
+1. **Impostare un punto di interruzione.** Impostare un punto di interruzione in corrispondenza dell'istruzione `callTrack = "module function";` subito dopo la chiamata a `app.start()`in questo argomento. Scegliere la riga nella barra di navigazione ombreggiata dell'editor del codice sorgente (tastiera: posizionare il cursore sulla riga e premere **F9** ).  
   
-     ![Impostare un punto di interruzione in example1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
+    ![Impostare un punto di interruzione in example1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
   
-     L'icona del punto di interruzione viene visualizzata nella barra.  
+    L'icona del punto di interruzione viene visualizzata nella barra.  
   
-2.  **Eseguire fino al punto di interruzione.** Avviare la sessione di debug scegliendo **Avvia debug** on the **Debug** (tastiera: F5).  
+2. **Eseguire fino al punto di interruzione.** Avviare la sessione di debug scegliendo **Avvia debug** on the **Debug** (tastiera: F5).  
   
-     L'esecuzione dell'app inizia e viene sospesa immediatamente prima dell'istruzione in cui è stato impostato il punto di interruzione. L'icona della riga corrente nella barra di navigazione identifica la posizione e l'istruzione corrente risulta evidenziata.  
+    L'esecuzione dell'app inizia e viene sospesa immediatamente prima dell'istruzione in cui è stato impostato il punto di interruzione. L'icona della riga corrente nella barra di navigazione identifica la posizione e l'istruzione corrente risulta evidenziata.  
   
-     ![Esegui fino al punto di interruzione](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
+    ![Esegui fino al punto di interruzione](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
   
-     A questo punto è possibile controllare l'esecuzione dell'app ed esaminare lo stato del programma mentre si esegue il codice un'istruzione alla volta.  
+    A questo punto è possibile controllare l'esecuzione dell'app ed esaminare lo stato del programma mentre si esegue il codice un'istruzione alla volta.  
   
-3.  **Eseguire un'istruzione nella funzione.** Nella finestra di dialogo **Debug** dal menu **Debug** (tastiera: **F11**).  
+3. **Eseguire un'istruzione nella funzione.** Nella finestra di dialogo **Debug** dal menu **Debug** (tastiera: **F11**).  
   
-     ![Passaggio in una riga di codice](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
+    ![Passaggio in una riga di codice](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
   
-     Si noti che il debugger passa alla riga successiva, che corrisponde a una chiamata alla funzione `example1` . Scegliere di nuovo **Esegui istruzione** . Il debugger passa alla prima riga di codice della funzione `example1` . La riga evidenziata non è stata eseguita, ma la funzione è stata caricata nello stack di chiamate ed è stata allocata la memoria per le variabili locali.  
+    Si noti che il debugger passa alla riga successiva, che corrisponde a una chiamata alla funzione `example1` . Scegliere di nuovo **Esegui istruzione** . Il debugger passa alla prima riga di codice della funzione `example1` . La riga evidenziata non è stata eseguita, ma la funzione è stata caricata nello stack di chiamate ed è stata allocata la memoria per le variabili locali.  
   
-4.  Quando si esegue un'istruzione in una riga di codice, il debugger esegue una delle seguenti azioni:  
+4. Quando si esegue un'istruzione in una riga di codice, il debugger esegue una delle seguenti azioni:  
   
-    -   Se l'istruzione successiva non è una chiamata a una funzione nella soluzione, il debugger esegue l'istruzione, passa all'istruzione successiva e quindi sospende l'esecuzione.  
+   - Se l'istruzione successiva non è una chiamata a una funzione nella soluzione, il debugger esegue l'istruzione, passa all'istruzione successiva e quindi sospende l'esecuzione.  
   
-    -   Se l'istruzione è una chiamata a una funzione nella soluzione, il debugger passa alla prima riga della funzione chiamata, quindi sospende l'esecuzione.  
+   - Se l'istruzione è una chiamata a una funzione nella soluzione, il debugger passa alla prima riga della funzione chiamata, quindi sospende l'esecuzione.  
   
      Continua a eseguire le istruzioni in `example1` finché non avrai raggiunto il punto di uscita. Il debugger evidenzia la parentesi graffa chiusa della funzione.  
   
-5.  **Visualizzare i valori delle variabili nei suggerimenti dati.** Continua a eseguire le istruzioni in `example1` finché non avrai raggiunto il punto di uscita. Il debugger evidenzia la parentesi graffa chiusa della funzione. Quando si posiziona il puntatore del mouse su un nome di variabile, il nome e il valore della variabile vengono visualizzati in un suggerimento dati.  
+5. **Visualizzare i valori delle variabili nei suggerimenti dati.** Continua a eseguire le istruzioni in `example1` finché non avrai raggiunto il punto di uscita. Il debugger evidenzia la parentesi graffa chiusa della funzione. Quando si posiziona il puntatore del mouse su un nome di variabile, il nome e il valore della variabile vengono visualizzati in un suggerimento dati.  
   
-     ![Visualizzare i valori delle variabili nel suggerimento dati](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
+    ![Visualizzare i valori delle variabili nel suggerimento dati](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
   
-6.  **Aggiungere un'espressione di controllo per la variabile callTrack** I file `callTrack` viene usata in tutta la guida introduttiva per illustrare le funzioni chiamate negli esempi. Per visualizzare più facilmente il valore della variabile, aggiungerla a una finestra Espressioni di controllo. Selezionare il nome della variabile nell'editor, quindi scegliere **Aggiungi espressione di controllo** dal menu di scelta rapida.  
+6. **Aggiungere un'espressione di controllo per la variabile callTrack** I file `callTrack` viene usata in tutta la guida introduttiva per illustrare le funzioni chiamate negli esempi. Per visualizzare più facilmente il valore della variabile, aggiungerla a una finestra Espressioni di controllo. Selezionare il nome della variabile nell'editor, quindi scegliere **Aggiungi espressione di controllo** dal menu di scelta rapida.  
   
-     ![Guarda una variabile](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
+    ![Guarda una variabile](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
   
-     È possibile controllare più variabili in una finestra Espressioni di controllo. I valori delle variabili controllate, come i valori nelle finestre dei suggerimenti dati, vengono aggiornati a ogni sospensione dell'esecuzione. Le variabili controllate vengono salvate in tutte le sessioni di debug.  
+    È possibile controllare più variabili in una finestra Espressioni di controllo. I valori delle variabili controllate, come i valori nelle finestre dei suggerimenti dati, vengono aggiornati a ogni sospensione dell'esecuzione. Le variabili controllate vengono salvate in tutte le sessioni di debug.  
   
-7.  **Terminare il debug.** Nella finestra di dialogo **Debug** dal menu **Debug** (tastiera: **MAIUSC+F5**). La sessione di debug verrà terminata.  
+7. **Terminare il debug.** Nella finestra di dialogo **Debug** dal menu **Debug** (tastiera: **MAIUSC+F5**). La sessione di debug verrà terminata.  
   
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> Eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine delle funzioni  
  A differenza dell'esecuzione di un'istruzione in una funzione chiamata da una funzione padre, l'esecuzione di un'istruzione/routine in una funzione comporta l'esecuzione della funzione figlio e la successiva sospensione dell'esecuzione nella funzione chiamante alla ripresa della funzione padre. Prima di eseguire un'istruzione/routine di una funzione, è opportuno avere acquisito familiarità con il funzionamento della funzione e avere la certezza che questa operazione non influisca sul problema che si sta analizzando.  
@@ -241,13 +241,13 @@ Questa guida introduttiva illustra come spostarsi nel debugger di Visual Studio 
 ##  <a name="BKMK_Examine_scope_chain_data"></a> Esaminare i dati nella catena dell'ambito  
  La *catena dell'ambito* di una funzione include tutte le variabili attive e raggiungibili dalla funzione. Le variabili globali fanno parte della catena dell'ambito, come tutti gli oggetti (funzioni incluse) specificati nella funzione che definisce la funzione attualmente in esecuzione. La variabile `callTrack` definita nella funzione `module` di `default.js` , ad esempio, è raggiungibile da qualsiasi funzione definita nella funzione `module` . Ogni ambito è elencato separatamente nella finestra Variabili locali.  
   
--   Le variabili della funzione attualmente in esecuzione sono elencate nella parte superiore della finestra.  
+- Le variabili della funzione attualmente in esecuzione sono elencate nella parte superiore della finestra.  
   
--   Le variabili dell'ambito di ogni funzione nella catena dell'ambito sono elencate nel nodo **[Scope]** relativo alla funzione. Le funzioni di ambito sono elencate in base al relativo ordine nella catena, dalla funzione che definisce la funzione corrente alla funzione più esterna della catena.  
+- Le variabili dell'ambito di ogni funzione nella catena dell'ambito sono elencate nel nodo **[Scope]** relativo alla funzione. Le funzioni di ambito sono elencate in base al relativo ordine nella catena, dalla funzione che definisce la funzione corrente alla funzione più esterna della catena.  
   
--   Nel nodo **[Globals]** sono elencati gli oggetti globali definiti all'esterno di qualsiasi funzione.  
+- Nel nodo **[Globals]** sono elencati gli oggetti globali definiti all'esterno di qualsiasi funzione.  
   
- Le catene dell'ambito possono generare confusione e vengono illustrate più chiaramente con un esempio. L'esempio seguente illustra in che modo la funzione `module` crea il relativo ambito e come è possibile creare un altro livello di ambito creando una chiusura.  
+  Le catene dell'ambito possono generare confusione e vengono illustrate più chiaramente con un esempio. L'esempio seguente illustra in che modo la funzione `module` crea il relativo ambito e come è possibile creare un altro livello di ambito creando una chiusura.  
   
 ###  <a name="BKMK_Example_4"></a> Esempio 4  
   

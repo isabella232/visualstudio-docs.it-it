@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FILE_LINE | Documenti Microsoft
+title: BP_LOCATION_CODE_FILE_LINE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a37bbc808322c54d1e0c9354353de2f59b2e19af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4c114919d74fba7a28c9d3ea11fc5bb9947d6a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866025"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
 Contiene i dati per il percorso di un punto di interruzione in una riga specifica in un file di codice sorgente.  
@@ -36,13 +36,13 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
   
 ## <a name="members"></a>Membri  
  `bstrContext`  
- Il contesto del punto di interruzione, in genere un nome di metodo o una funzione come illustrato in uno stack di chiamate.  
+ Il contesto del punto di interruzione, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.  
   
  `pDocPos`  
  Il [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) oggetto che rappresenta la posizione del documento del punto di interruzione.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è membro il [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
+ Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

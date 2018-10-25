@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetDocument | Documenti Microsoft
+title: IDebugDocumentPosition2::GetDocument | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2205e5cada416826e79d3ec26bc99405b26502ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9474fa39e8e908f925ad230f79ed705840fd500
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864634"
 ---
 # <a name="idebugdocumentposition2getdocument"></a>IDebugDocumentPosition2::GetDocument
 Ottiene il documento contenitore.  
@@ -41,7 +41,7 @@ int GetDocument(
   
 #### <a name="parameters"></a>Parametri  
  `ppDoc`  
- [out] Restituisce un [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) oggetto che rappresenta il documento che contiene questa posizione.  
+ [out] Restituisce un [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) oggetto che rappresenta il documento contenente questa posizione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

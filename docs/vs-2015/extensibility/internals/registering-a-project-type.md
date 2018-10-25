@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911333"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
   
  La voce di menu punta l'IDE per la risorsa usata per recuperare le informazioni di menu. Quando questi dati sono stati uniti al database di menu, la stessa chiave verrà aggiunto nella sezione MenusMerged del Registro di sistema. Il pacchetto VSPackage deve modificare qualsiasi elemento nella sezione MenusMerged direttamente. Nel campo dati nella tabella seguente, sono presenti tre virgole-campi delimitati da. Il primo campo definisce un percorso completo di un file di risorse di menu:  
   
--   Se il primo campo è omesso, la risorsa di menu verrà caricata dal identificata dal GUID VSPackage DLL satellite.  
+- Se il primo campo è omesso, la risorsa di menu verrà caricata dal identificata dal GUID VSPackage DLL satellite.  
   
- Il secondo campo che identifica un ID di risorsa di menu di scelta del tipo CTMENU:  
+  Il secondo campo che identifica un ID di risorsa di menu di scelta del tipo CTMENU:  
   
--   Se viene specificato l'ID di risorsa e il percorso del file viene fornito dal primo parametro, una risorsa di menu verrà caricata dal percorso di file completo.  
+- Se viene specificato l'ID di risorsa e il percorso del file viene fornito dal primo parametro, una risorsa di menu verrà caricata dal percorso di file completo.  
   
--   Se è specificato l'ID di risorsa, ma non è il percorso del file, la risorsa di menu verrà caricata della DLL satellite.  
+- Se è specificato l'ID di risorsa, ma non è il percorso del file, la risorsa di menu verrà caricata della DLL satellite.  
   
--   Se viene fornito il percorso completo e l'ID risorsa omesso, il file da caricare è previsto che un file CTO.  
+- Se viene fornito il percorso completo e l'ID risorsa omesso, il file da caricare è previsto che un file CTO.  
   
- L'ultimo campo identifica il numero di versione per la risorsa CTMENU. È possibile unire nuovamente il menu modificando il numero di versione.  
+  L'ultimo campo identifica il numero di versione per la risorsa CTMENU. È possibile unire nuovamente il menu modificando il numero di versione.  
   
 |nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  

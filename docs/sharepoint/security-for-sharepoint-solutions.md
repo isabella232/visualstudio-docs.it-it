@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878765"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicurezza per le soluzioni SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incorpora le funzionalità seguenti che consentono di migliorare la sicurezza delle applicazioni di SharePoint.
@@ -34,7 +34,7 @@ ms.locfileid: "42626133"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Attributo AllowPartiallyTrustedCallers
  Per impostazione predefinita, solo le applicazioni considerate completamente attendibili dal sistema di sicurezza (CA) di accesso di codice runtime possono accedere a un assembly di codice gestito condiviso. Contrassegnare un assembly completamente attendibile con l'attributo AllowPartiallyTrustedCallers consente agli assembly parzialmente attendibili per accedervi.
 
- L'attributo AllowPartiallyTrustedCallers viene aggiunto a qualsiasi soluzione di SharePoint che viene distribuito non in cache assembly globali del sistema ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Ad esempio soluzioni create mediante sandbox o soluzioni distribuite nella directory Bin dell'applicazione SharePoint. Per altre informazioni, vedere [modifiche della sicurezza versione 1 per Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) e [distribuzione di Web part in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+ L'attributo AllowPartiallyTrustedCallers viene aggiunto a qualsiasi soluzione di SharePoint che viene distribuito non in cache assembly globali del sistema ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Ad esempio soluzioni create mediante sandbox o soluzioni distribuite nella directory Bin dell'applicazione SharePoint. Per altre informazioni, vedere [modifiche della sicurezza versione 1 per Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) e [distribuzione di Web part in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Proprietà sicurezza script
  *Creare uno script injection* consiste nell'inserimento di codice potenzialmente dannoso in controlli o le pagine Web. Per proteggersi dagli attacchi script injection i siti di SharePoint 2010, i collaboratori non è possibile visualizzare o modificare le Web part o le relative proprietà per impostazione predefinita. Questo comportamento è controllato da un attributo di SafeControl denominato SafeAgainstScript. Nelle [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], impostare questo attributo in un elemento di progetto **voci di controllo sicure** sottoproprietà **sicurezza Script**. Per altre informazioni, vedere [fornire le informazioni del pacchetto e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [procedura: contrassegnare i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md).

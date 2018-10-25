@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Documenti Microsoft
+title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1dfee6c4b05325b170efea314ccbc814b0ebc56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4987074e63f26a91d890066b3b74240989745197
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947953"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Questo metodo ottiene la lingua utilizzata per compilare il codice in corrispondenza dell'indirizzo di debug.  
+Questo metodo ottiene il linguaggio utilizzato per compilare il codice in corrispondenza dell'indirizzo di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   

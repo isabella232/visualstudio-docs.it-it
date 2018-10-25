@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919156"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
 Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o c# oppure è possibile generare un report HTML.
@@ -28,7 +28,7 @@ Il processo di trasformazione del modello testo accetta un file di modello di te
 ## <a name="components"></a>Componenti
 
 |Componente|Descrizione|Personalizzabile (Sì/No)|
-|---------------|-----------------|------------------------------|
+|-|-|-|
 |Motore|Il componente del motore consente di controllare il processo di trasformazione del modello testo|No.|
 |Host|L'host è l'interfaccia tra il motore e l'ambiente utente. Visual Studio è un host del processo di trasformazione del testo.|Sì. È possibile scrivere un host personalizzato.|
 |Processori di direttiva|Processori di direttiva sono classi che gestiscono le direttive nei modelli di testo. È possibile utilizzare le direttive per fornire dati a un modello di testo da un'origine di input.|Sì. È possibile scrivere processori di direttiva personalizzati|

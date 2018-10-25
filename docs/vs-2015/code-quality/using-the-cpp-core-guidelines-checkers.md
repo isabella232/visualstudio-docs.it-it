@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63cd97a23f26d23b99aa7c93be90cef91a630856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906169"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando i controlli delle linee guida di base di C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ Linee guida di base di C++ sono un set di linee guida, regole e le procedure con
   
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>Per aggiungere il pacchetto Microsoft.CppCoreCheck al progetto  
   
-1.  Nelle **Esplora soluzioni**, pulsante destro del mouse per aprire il menu di scelta rapida del progetto nella soluzione che si desidera aggiungere il pacchetto. Scegli **Gestisci pacchetti NuGet** per aprire il **Gestione pacchetti NuGet**.  
+1. Nelle **Esplora soluzioni**, pulsante destro del mouse per aprire il menu di scelta rapida del progetto nella soluzione che si desidera aggiungere il pacchetto. Scegli **Gestisci pacchetti NuGet** per aprire il **Gestione pacchetti NuGet**.  
   
-2.  Nel **Gestisci pacchetti NuGet** (finestra), cercare Microsoft.CppCoreCheck.  
+2. Nel **Gestisci pacchetti NuGet** (finestra), cercare Microsoft.CppCoreCheck.  
   
-     ![Finestra Gestione pacchetti NuGet Mostra package CppCoreCheck](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
+    ![Finestra Gestione pacchetti NuGet Mostra package CppCoreCheck](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3.  Selezionare il pacchetto Microsoft.CppCoreCheck e quindi scegliere il **installare** pulsante per aggiungere le regole per il progetto.  
+3. Selezionare il pacchetto Microsoft.CppCoreCheck e quindi scegliere il **installare** pulsante per aggiungere le regole per il progetto.  
   
- Il pacchetto NuGet aggiunge un file con estensione targets di MSBuild aggiuntivo al progetto che viene richiamato quando si abilita analisi codice sul progetto. Questo file con estensione targets aggiunge le regole di controllo di base di C++ come un'estensione aggiuntiva allo strumento di analisi del codice di Visual Studio.  
+   Il pacchetto NuGet aggiunge un file con estensione targets di MSBuild aggiuntivo al progetto che viene richiamato quando si abilita analisi codice sul progetto. Questo file con estensione targets aggiunge le regole di controllo di base di C++ come un'estensione aggiuntiva allo strumento di analisi del codice di Visual Studio.  
   
- È possibile abilitare analisi del codice sul progetto selezionando il **Abilita analisi codice su compilazione** casella di controllo la **analisi del codice** sezione del **pagine delle proprietà** finestra di dialogo per il progetto.  
+   È possibile abilitare analisi del codice sul progetto selezionando il **Abilita analisi codice su compilazione** casella di controllo la **analisi del codice** sezione del **pagine delle proprietà** finestra di dialogo per il progetto.  
   
- ![Pagina delle proprietà per le impostazioni generali di analisi codice](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![Pagina delle proprietà per le impostazioni generali di analisi codice](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
- Le regole C++ Core controllare diventano parte del set di regole predefinite che vengono eseguiti quando è abilitata l'analisi del codice. Poiché le regole di controllo di base di C++ sono in fase di sviluppo, alcune regole potrebbero non essere pronti per l'uso in tutto il codice, ma possono risultare informativi durante lo sviluppo. Queste regole vengono rilasciate come sperimentale. È possibile scegliere se eseguire le regole rilasciate o sperimentale nelle proprietà del progetto.  
+   Le regole C++ Core controllare diventano parte del set di regole predefinite che vengono eseguiti quando è abilitata l'analisi del codice. Poiché le regole di controllo di base di C++ sono in fase di sviluppo, alcune regole potrebbero non essere pronti per l'uso in tutto il codice, ma possono risultare informativi durante lo sviluppo. Queste regole vengono rilasciate come sperimentale. È possibile scegliere se eseguire le regole rilasciate o sperimentale nelle proprietà del progetto.  
   
- ![Pagina delle proprietà per le impostazioni delle estensioni di analisi codice](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![Pagina delle proprietà per le impostazioni delle estensioni di analisi codice](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
- Per abilitare o disabilitare i set di regole C++ Core verificare, aprire il **pagine delle proprietà** finestra di dialogo per il progetto. Sotto **le proprietà di configurazione**, espandere **analisi del codice**, **estensioni**. Nell'elenco a discesa accanto al controllo **Abilita C++ Core controllare (rilascio)** oppure **Abilita C++ Core controllare (sperimentale)**, scegliere **Sì** oppure **No**. Scegli **OK** oppure **applica** per salvare le modifiche.  
+   Per abilitare o disabilitare i set di regole C++ Core verificare, aprire il **pagine delle proprietà** finestra di dialogo per il progetto. Sotto **le proprietà di configurazione**, espandere **analisi del codice**, **estensioni**. Nell'elenco a discesa accanto al controllo **Abilita C++ Core controllare (rilascio)** oppure **Abilita C++ Core controllare (sperimentale)**, scegliere **Sì** oppure **No**. Scegli **OK** oppure **applica** per salvare le modifiche.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Controllare i tipi, dei limiti e durate  
  Il pacchetto C++ Core controllare attualmente contiene controlli per la [indipendenza dai tipi](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [delimita safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), e [safety durata](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) profili.  
@@ -81,15 +81,15 @@ int main()
   
  Questo esempio illustra alcuni degli avvisi che è possono trovare le regole C++ Core controllare:  
   
--   C26494 è regola Type.5: inizializzare sempre un oggetto.  
+- C26494 è regola Type.5: inizializzare sempre un oggetto.  
   
--   C26485 è regola Bounds.3: decay non-matrice di puntatori.  
+- C26485 è regola Bounds.3: decay non-matrice di puntatori.  
   
--   C26481 è regola Bounds.1: non usare l'aritmetica dei puntatori. In alternativa, usare `span`.  
+- C26481 è regola Bounds.1: non usare l'aritmetica dei puntatori. In alternativa, usare `span`.  
   
- Se gli oggetti ruleSet analisi di codice C++ Core controllare installati e abilitati quando si compila questo codice, i primi due avvisi vengono visualizzati, ma il terzo viene eliminato. Ecco l'output di compilazione dal codice di esempio:  
+  Se gli oggetti ruleSet analisi di codice C++ Core controllare installati e abilitati quando si compila questo codice, i primi due avvisi vengono visualizzati, ma il terzo viene eliminato. Ecco l'output di compilazione dal codice di esempio:  
   
- **1 >---compilazione avviata: progetto: CoreCheckExample, configurazione: Debug Win32:**  
+  **1 >---compilazione avviata: progetto: CoreCheckExample, configurazione: Debug Win32:**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  

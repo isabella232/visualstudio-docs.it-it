@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS | Documenti Microsoft
+title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e4c4648108cdc6afa28f5a5dd8f9bfd46fcf59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04bc34de6e7ecbc438cfc63ed08c684cf4224366
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917024"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
-Viene descritta o specifica le proprietà di un processo.
+Descrivono o specificano le proprietà di un processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,7 +52,7 @@ PIFLAG_SYSTEM_PROCESS
 Indica che il processo è un processo di sistema.
 
 PIFLAG_DEBUGGER_ATTACHED  
-Indica che il processo viene eseguito il debug da un debugger. Potrebbe essere un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger, oppure può essere di alcuni altri debugger, ad esempio, WinDbg.
+Indica che il processo viene eseguito il debug da un debugger. Potrebbe essere un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger o potrebbe essere alcuni altri debugger, ad esempio, WinDbg.
 
 PIFLAG_PROCESS_STOPPED  
 Indica che il processo viene arrestato. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene anche specificato. Disponibile in Visual Studio 2005 e versioni successive.
@@ -62,7 +62,7 @@ Indica che il processo è in esecuzione. Valido solo se `PIFLAG_DEBUGGER_ATTACHE
 
 ## <a name="remarks"></a>Note
 
-Utilizzato per il `Flags` appartenente il [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struttura.
+Utilizzato per il `Flags` membro della [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struttura.
 
 Questi flag possono essere combinati con un bit per bit `OR`.
 

@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b09b5d3a6bb279291df64c0de720ba03f2eee16d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 052c4c59b72d5d7f5c4722fc32efc9ecedb0556b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921964"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
 ## <a name="files"></a>File  
  Nella scheda **File** è possibile specificare la directory in cui i file di traccia vengono archiviati ogni volta che una traccia viene raccolta.  Il visualizzatore di concorrenza genera quattro file per ogni traccia raccolta:  
   
--   File di log di traccia degli eventi (ETL) in modalità kernel (*.kernel.etl)  
+- File di log di traccia degli eventi (ETL) in modalità kernel (*.kernel.etl)  
   
--   File di log di traccia degli eventi in modalità utente (*.user.etl)  
+- File di log di traccia degli eventi in modalità utente (*.user.etl)  
   
--   File di dati del visualizzatore di concorrenza (*.CVData)  
+- File di dati del visualizzatore di concorrenza (*.CVData)  
   
--   File di traccia del visualizzatore di concorrenza (*.CVTrace)  
+- File di traccia del visualizzatore di concorrenza (*.CVTrace)  
   
- Nei due file con estensione etl vengono archiviati i dati di traccia non elaborati, mentre nei due file del visualizzatore di concorrenza vengono archiviati i dati elaborati.  I file con estensione etl non elaborati non vengono usati dopo l'elaborazione di una traccia.  La selezione della casella di controllo **Elimina i file di log traccia eventi (ETL) dopo l'analisi** riduce la quantità di dati di traccia archiviati nel disco.  
+  Nei due file con estensione etl vengono archiviati i dati di traccia non elaborati, mentre nei due file del visualizzatore di concorrenza vengono archiviati i dati elaborati.  I file con estensione etl non elaborati non vengono usati dopo l'elaborazione di una traccia.  La selezione della casella di controllo **Elimina i file di log traccia eventi (ETL) dopo l'analisi** riduce la quantità di dati di traccia archiviati nel disco.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Just My Code](../profiling/just-my-code-threads-view.md)   

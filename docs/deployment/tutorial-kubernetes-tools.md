@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942933"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introduzione agli strumenti di Visual Studio Kubernetes
 
@@ -90,21 +90,21 @@ A tale scopo, è innanzitutto necessario verificare di aver installato tutti gli
 
    ![Schermata di pubblicazione della voce di menu](media/k8s-tools-publish-project.png)
 
-1. Nel **Publish** schermata, scegli **registro contenitori di** come la pubblicazione di destinazione e seguire le istruzioni per selezionare il registro contenitori. Se si ha già un registro contenitori, scegliere **creare di nuovo registro di contenitori di Azure** per crearne uno da Visual Studio. Per altre informazioni, vedere [pubblicare il contenitore in Registro contenitori di Azure](#publish-your-container-to-azure-container-registry).
+2. Nel **Publish** schermata, scegli **registro contenitori di** come la pubblicazione di destinazione e seguire le istruzioni per selezionare il registro contenitori. Se si ha già un registro contenitori, scegliere **creare di nuovo registro di contenitori di Azure** per crearne uno da Visual Studio. Per altre informazioni, vedere [pubblicare il contenitore in Registro contenitori di Azure](#publish-your-container-to-azure-container-registry).
 
    ![Screenshot della selezione di una schermata di destinazione di pubblicazione](media/k8s-tools-publish-to-acr.png)
 
-1. In Esplora soluzioni, fare clic sulla *soluzione* e fare clic su **Publish to Azure AKS**.
+3. In Esplora soluzioni, fare clic sulla *soluzione* e fare clic su **Publish to Azure AKS**.
 
    ![Schermata di pubblicazione alla voce di menu Azure AKS](media/k8s-tools-publish-solution.png)
 
-1. Scegliere la sottoscrizione e il cluster AKS, con il registro contenitori di AZURE pubblica profilo appena creato. Fare quindi clic su **OK**.
+4. Scegliere la sottoscrizione e il cluster AKS, con il registro contenitori di AZURE pubblica profilo appena creato. Fare quindi clic su **OK**.
 
    ![Schermata di pubblicazione alla schermata di servizio contenitore di AZURE](media/k8s-tools-publish-to-aks.png)
 
    Verrà visualizzata la **Publish to Azure AKS** dello schermo.
 
-1.  Scegliere il **configurare Helm** collega per aggiornare la riga di comando usata per installare i grafici Helm nel server.
+5. Scegliere il **configurare Helm** collega per aggiornare la riga di comando usata per installare i grafici Helm nel server.
 
    ![Collegamento di screenshot di configurare Helm](media/k8s-tools-configure-helm.png)
 
@@ -112,7 +112,7 @@ A tale scopo, è innanzitutto necessario verificare di aver installato tutti gli
 
    ![Schermata di configurazione di schermata di Helm](media/k8s-tools-helm-configure-screen.png)
 
-1. Quando si è pronti per distribuire, scegliere il **pubblica** pulsante per pubblicare l'applicazione al servizio contenitore di AZURE.
+6. Quando si è pronti per distribuire, scegliere il **pubblica** pulsante per pubblicare l'applicazione al servizio contenitore di AZURE.
 
    ![Screenshot della pubblicazione alla schermata di Azure AKS](media/k8s-tools-publish-screen.png)
 

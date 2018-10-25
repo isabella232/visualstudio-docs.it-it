@@ -15,12 +15,12 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd784b718fb370ec8ce04937119a9d64995cdd8d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19b6c46615a41f25c5a9f3b979f1a1eed36b25f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948500"
 ---
 # <a name="how-to-update-the-status-bar"></a>Procedura: aggiornare la barra di stato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ Il **sulla barra di stato** una barra di controllo si trova nella parte inferior
 ## <a name="robust-programming"></a>Programmazione efficiente  
  Oggetto **sulla barra di stato** contiene quattro campi separati:  
   
--   Testo stato  
+- Testo stato  
   
--   Indicatore di stato  
+- Indicatore di stato  
   
--   Icona animata  
+- Icona animata  
   
--   Informazioni relative all'editor  
+- Informazioni relative all'editor  
   
- Per altre informazioni, vedere [barre di stato](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
+  Per altre informazioni, vedere [barre di stato](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
   
- Chiama automaticamente l'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodo del <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementazione quando viene attivata la finestra del documento.  
+  Chiama automaticamente l'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodo del <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementazione quando viene attivata la finestra del documento.  
   
- Il responsabile dell'implementazione di VSPackage è responsabile dell'aggiornamento del testo di stato nella barra di stato. L'IDE Reimposta questa stringa per "Pronto" se il campo di testo di stato è impostato su text vuota ("") in fase di inattività.  
+  Il responsabile dell'implementazione di VSPackage è responsabile dell'aggiornamento del testo di stato nella barra di stato. L'IDE Reimposta questa stringa per "Pronto" se il campo di testo di stato è impostato su text vuota ("") in fase di inattività.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Barre di stato](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)

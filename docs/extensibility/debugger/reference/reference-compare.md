@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE | Documenti Microsoft
+title: REFERENCE_COMPARE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5b65ec3e0cc4a5b52aa909dea9f3dafa735050c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7765255583b7160c1cdd19b11889f5de1b35594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926657"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 Specifica il tipo di confronto per i riferimenti.  
@@ -46,16 +46,16 @@ public enum enum_REFERENCE_COMPARE {
   
 ## <a name="members"></a>Membri  
  REF_COMPARE_EQUAL  
- Specifica un confronto uguale a.  
+ Specifica un confronto di uguaglianza.  
   
  REF_COMPARE_LESS_THAN  
- Specifica un minore di-di confronto.  
+ Specifica un minore di-confronto.  
   
  REF_COMPARE_GREATER_THAN  
- Specifica una maggiore, di confronto.  
+ Specifica una maggiore-confronto.  
   
 ## <a name="remarks"></a>Note  
- Passata come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugreference2-compare.md) metodo.  
+ Passato come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugreference2-compare.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

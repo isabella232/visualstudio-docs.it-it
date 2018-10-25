@@ -1,5 +1,5 @@
 ---
-title: IDebugIDECallback::DisplayMessage | Documenti Microsoft
+title: IDebugIDECallback::DisplayMessage | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04727fc05de87181195aae2afb9dc20d627c256a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 24fcea3a3fab79d5fc059bbb333eb1449967b3d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911369"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 Invia la stringa di messaggio specificato alla finestra di output del debugger.  

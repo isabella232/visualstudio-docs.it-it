@@ -16,12 +16,12 @@ ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6d1e7f9323227ca6d925acadf93068935887f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1d701679755d73e01e27c7be0ba9833bf878bc43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894443"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: creare un Atom per una raccolta privata di Feed
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ ms.locfileid: "49260054"
 ## <a name="creating-an-atom-feed"></a>Creazione di un atomo Feed  
  Per creare un feed come una raccolta privata Atom, è prima di tutto raccogliere le estensioni (file con estensione VSIX) in una cartella. È possibile organizzarle in sottocartelle, se si desidera. È necessario anche le risorse seguenti:  
   
--   Un file atom.xml che rende disponibili le estensioni come una raccolta privata. Per informazioni su come connettere il file atom.xml **estensioni e aggiornamenti**, vedere [gallerie Private](../extensibility/private-galleries.md).  
+- Un file atom.xml che rende disponibili le estensioni come una raccolta privata. Per informazioni su come connettere il file atom.xml **estensioni e aggiornamenti**, vedere [gallerie Private](../extensibility/private-galleries.md).  
   
--   Una cartella che contiene tutti i file di immagine che sono stati estratti dalle estensioni (ad esempio, schermate). Il file atom.xml contiene collegamenti relativi a queste immagini in modo che siano disponibili nei **estensioni e aggiornamenti**.  
+- Una cartella che contiene tutti i file di immagine che sono stati estratti dalle estensioni (ad esempio, schermate). Il file atom.xml contiene collegamenti relativi a queste immagini in modo che siano disponibili nei **estensioni e aggiornamenti**.  
   
- Si supponga, ad esempio, che sono state raccolte le due estensioni seguenti in una cartella:  
+  Si supponga, ad esempio, che sono state raccolte le due estensioni seguenti in una cartella:  
   
--   Template_Wizard_239.VSIX, ovvero un modello di progetto VSIX vuoto.  
+- Template_Wizard_239.VSIX, ovvero un modello di progetto VSIX vuoto.  
   
--   SelectionHighlight.vsix, ovvero uno strumento per evidenziare tutte le istanze di una parola selezionata.  
+- SelectionHighlight.vsix, ovvero uno strumento per evidenziare tutte le istanze di una parola selezionata.  
   
- Il contenuto del file atom.xml sarebbe simile al seguente:  
+  Il contenuto del file atom.xml sarebbe simile al seguente:  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a0cefc0822559f32a8a4413d7363636ed850a55
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a46509fb55c3d99c3cb2920dd6088497f326ab08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895496"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
 Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in una forma in un linguaggio specifico di dominio (DSL). È possibile visualizzare l'elemento decorator e scompaiano a seconda dello stato delle proprietà nel modello. In una forma che rappresenta una persona, ad esempio, si potrebbero hanno icone diverse che vengono visualizzati in base alla relativa al sesso dell'utente, numero di elementi figlio e così via.
@@ -24,45 +24,45 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Per controllare la visibilità di un elemento decorator di icona o di testo
 
-1.  Nel diagramma di definizione DSL, aggiungere alla classe di forma di icone o gli elementi Decorator di testo che si desidera visualizzare.
+1. Nel diagramma di definizione DSL, aggiungere alla classe di forma di icone o gli elementi Decorator di testo che si desidera visualizzare.
 
-    1.  Fare doppio clic la classe di forma, scegliere **Add**e quindi scegliere il tipo obbligatorio dell'elemento decorator.
+   1.  Fare doppio clic la classe di forma, scegliere **Add**e quindi scegliere il tipo obbligatorio dell'elemento decorator.
 
-    2.  Impostare l'elemento decorator **posizione** proprietà. Più di un elemento decorator può avere la stessa posizione. Ad esempio, si potrebbe avere icone Launcher per maschio e femmina nella stessa posizione di condivisione.
+   2.  Impostare l'elemento decorator **posizione** proprietà. Più di un elemento decorator può avere la stessa posizione. Ad esempio, si potrebbe avere icone Launcher per maschio e femmina nella stessa posizione di condivisione.
 
-    3.  Impostare il **icona predefinita** proprietà di un elemento decorator di icona.
+   3.  Impostare il **icona predefinita** proprietà di un elemento decorator di icona.
 
-2.  Selezionare la mappa elementi diagramma, ovvero la linea grigia tra la classe di forma e la classe di dominio nel diagramma di definizione DSL.
+2. Selezionare la mappa elementi diagramma, ovvero la linea grigia tra la classe di forma e la classe di dominio nel diagramma di definizione DSL.
 
-3.  Nella finestra Dettagli DSL nel **mappe elementi Decorator** scheda, selezionare un elemento decorator. Ad esempio, il MaleDecorator.
+3. Nella finestra Dettagli DSL nel **mappe elementi Decorator** scheda, selezionare un elemento decorator. Ad esempio, il MaleDecorator.
 
-4.  Verificare i **filtro di visibilità** casella.
+4. Verificare i **filtro di visibilità** casella.
 
-5.  Se la proprietà di dominio che debba controllare la visibilità è nella classe di dominio immediato, lasciare **percorso di proprietà Filter** vuoto.
+5. Se la proprietà di dominio che debba controllare la visibilità è nella classe di dominio immediato, lasciare **percorso di proprietà Filter** vuoto.
 
-     In caso contrario, fare clic sul menu a discesa e passare alla classe in cui si trova la proprietà o relazioni.
+    In caso contrario, fare clic sul menu a discesa e passare alla classe in cui si trova la proprietà o relazioni.
 
-    -   Per evitare una segnalazione di errore, non devono passare tramite una relazione contrassegnata con "*" nello strumento di navigazione.
+   -   Per evitare una segnalazione di errore, non devono passare tramite una relazione contrassegnata con "*" nello strumento di navigazione.
 
-6.  Impostare il **proprietà Filter** a una proprietà di dominio. Ad esempio, il sesso.
+6. Impostare il **proprietà Filter** a una proprietà di dominio. Ad esempio, il sesso.
 
-7.  Nel **voci visibilità** elencare, aggiungere i valori di questa proprietà di dominio per il quale deve essere visibile l'elemento decorator. Ad esempio, Male.
+7. Nel **voci visibilità** elencare, aggiungere i valori di questa proprietà di dominio per il quale deve essere visibile l'elemento decorator. Ad esempio, Male.
 
-8.  Ripetere i passaggi per ogni icona.
+8. Ripetere i passaggi per ogni icona.
 
 9. **Trasforma tutti i modelli**, compilare ed eseguire e aprire un diagramma di test.
 
 10. Quando si modifica il valore della proprietà controllo, gli elementi Decorator visualizzato che non vengono più visualizzati.
 
- Spesso, è consigliabile visibilità da parte di una formula più complessa rispetto a un semplice set di valori. Ad esempio, per avere un'icona dipendono dal numero di collegamenti di un tipo specifico o per renderla variano a seconda che un un numero è in un intervallo specifico. In tal caso, utilizzare la procedura seguente.
+    Spesso, è consigliabile visibilità da parte di una formula più complessa rispetto a un semplice set di valori. Ad esempio, per avere un'icona dipendono dal numero di collegamenti di un tipo specifico o per renderla variano a seconda che un un numero è in un intervallo specifico. In tal caso, utilizzare la procedura seguente.
 
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Controllare la visibilità di un elemento decorator in base a una formula
 
 1.  Aggiungere una proprietà calcolata del dominio per la classe di dominio. Nel **proprietà** finestra, impostare i valori seguenti:
 
-     **IsBrowsable =**`False`**-questo modo si nasconde la proprietà da parte dell'utente** 
+     **IsBrowsable =**`False`**-questo modo si nasconde la proprietà da parte dell'utente**
 
-     **Tipo =**`Calculated`**-questo significa che verrà fornito il codice che calcola il proprio valore** 
+     **Tipo =**`Calculated`**-questo significa che verrà fornito il codice che calcola il proprio valore**
 
      **Nome** ad esempio **DecoratorControl**
 

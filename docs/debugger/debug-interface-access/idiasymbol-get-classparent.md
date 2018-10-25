@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_classparent | Documenti Microsoft'
+title: Get_classparent | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 745342547d7c8264ebd9f2fa06bfababcc3aebcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f948e4ffdcd64c4c2c811aff7897f3245c100077
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816716"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
-Recupera un riferimento all'elemento padre di classe del simbolo.  
+Recupera un riferimento all'elemento padre classe del simbolo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,10 +47,10 @@ HRESULT get_classParent (
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 7.0 DIA SDK|  
+|Versione:|DIA SDK v7.0|  
   
 ## <a name="remarks"></a>Note  
- I tipi di simboli che possono essere padri di classe sono documentati in [classe gerarchia dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).  
+ I tipi di simboli che possono essere padri di classe sono documentati in [gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

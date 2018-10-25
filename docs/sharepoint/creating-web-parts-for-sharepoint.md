@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd92e4e4b5f4a0ae77cfae393d2d51446e17bcfe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906045"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Creazione di web part per SharePoint
   Utilizzando le web part, è possibile modificare il contenuto, l'aspetto e comportamento delle pagine di un sito di SharePoint utilizzando un browser. Web part sono controlli sul lato server che vengono eseguiti all'interno di una web part page: sono i blocchi predefiniti di pagine visualizzate in un sito di SharePoint. Visualizzare [blocco predefinito: Web part](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -84,25 +84,25 @@ ms.locfileid: "36327216"
 ## <a name="visual-web-part-limitations"></a>Limitazioni della Visual web part
  A partire da Visual Studio, è possibile aggiungere web part visive per soluzioni di SharePoint in modalità sandbox e soluzioni farm. Tuttavia, le web part visive hanno le limitazioni seguenti:  
   
--   Web part visive non supportano parametri sostituibili. Per altre informazioni, vedere [parametri sostituibili](../sharepoint/replaceable-parameters.md).  
+- Web part visive non supportano parametri sostituibili. Per altre informazioni, vedere [parametri sostituibili](../sharepoint/replaceable-parameters.md).  
   
--   Controlli utente o le web part visive non può essere trascinata ed eliminate o sono state copiate su web part visive. Questa azione causa un errore di compilazione.  
+- Controlli utente o le web part visive non può essere trascinata ed eliminate o sono state copiate su web part visive. Questa azione causa un errore di compilazione.  
   
--   Web part visive non supportano direttamente i token di SharePoint server, ad esempio $SPUrl. Per altre informazioni, vedere "Token limitazioni in modalità sandbox Web part visive" nell'argomento [risolvere i problemi di SharePoint soluzioni](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+- Web part visive non supportano direttamente i token di SharePoint server, ad esempio $SPUrl. Per altre informazioni, vedere "Token limitazioni in modalità sandbox Web part visive" nell'argomento [risolvere i problemi di SharePoint soluzioni](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
--   Web part visive in una soluzione creata mediante sandbox ricevono occasionalmente l'errore, "la richiesta di esecuzione di codice in modalità sandbox è stata rifiutata perché il relativo servizio Host era troppo occupato per gestire la richiesta". Per altre informazioni su questo errore, vedere il post nel [blog del Team di SharePoint per gli sviluppatori](http://go.microsoft.com/fwlink/?LinkId=225932).  
+- Web part visive in una soluzione creata mediante sandbox ricevono occasionalmente l'errore, "la richiesta di esecuzione di codice in modalità sandbox è stata rifiutata perché il relativo servizio Host era troppo occupato per gestire la richiesta". Per altre informazioni su questo errore, vedere il post nel [blog del Team di SharePoint per gli sviluppatori](http://go.microsoft.com/fwlink/?LinkId=225932).  
   
--   Debug di JavaScript lato server non è supportato in Visual Studio, ma è supportato il debug di JavaScript lato client.  
+- Debug di JavaScript lato server non è supportato in Visual Studio, ma è supportato il debug di JavaScript lato client.  
   
-     Sebbene sia possibile aggiungere JavaScript inline per un file di markup lato server, il debug non è supportato per i punti di interruzione aggiunti al markup. Per eseguire il debug JavaScript, fare riferimento a un file JavaScript esterno nel file di markup e quindi impostare i punti di interruzione nel file JavaScript.  
+   Sebbene sia possibile aggiungere JavaScript inline per un file di markup lato server, il debug non è supportato per i punti di interruzione aggiunti al markup. Per eseguire il debug JavaScript, fare riferimento a un file JavaScript esterno nel file di markup e quindi impostare i punti di interruzione nel file JavaScript.  
   
--   Debug di codice inline [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] codice deve essere eseguito nel file di codice generato anziché nel file di markup.  
+- Debug di codice inline [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] codice deve essere eseguito nel file di codice generato anziché nel file di markup.  
   
--   Web part visive non supportano l'uso del `<@ Assembly Src=` direttiva.  
+- Web part visive non supportano l'uso del `<@ Assembly Src=` direttiva.  
   
--   I controlli e alcuni web di SharePoint [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] controlli non sono supportati nell'ambiente sandbox di SharePoint. Se i controlli non supportati vengono utilizzati in una web part visiva in una soluzione creata mediante sandbox, l'errore, viene visualizzato "Il nome tipo o spazio dei nomi 'Theme' non esiste nello spazio dei nomi 'WebControls'".  
+- I controlli e alcuni web di SharePoint [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] controlli non sono supportati nell'ambiente sandbox di SharePoint. Se i controlli non supportati vengono utilizzati in una web part visiva in una soluzione creata mediante sandbox, l'errore, viene visualizzato "Il nome tipo o spazio dei nomi 'Theme' non esiste nello spazio dei nomi 'WebControls'".  
   
- Per altre informazioni sulle soluzioni create mediante sandbox, vedere [differenze tra modalità sandbox e soluzioni farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
+  Per altre informazioni sulle soluzioni create mediante sandbox, vedere [differenze tra modalità sandbox e soluzioni farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Crea stile meno recente web part basate su SharePoint
  È possibile usare i modelli in Visual Studio per creare personalizzato [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web part per SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web part vengono compilate in cima il [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruttura delle web part e corrispondono al tipo consigliato per i nuovi progetti.  

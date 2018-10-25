@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Documenti Microsoft
+title: IDebugCustomAttribute::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a33b4507cb54095a38671eaf310d87dae180be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11a4b986799cf03221b4af077fc3e1e5809c4137
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866480"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Ottiene il nome dell'attributo personalizzato.  
@@ -44,10 +44,10 @@ int GetName(
  [out] Restituisce una stringa contenente il nome dell'attributo personalizzato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- L'oggetto denominato restituito da questo metodo corrisponde al nome della classe utilizzata per dichiarare l'attributo. Questo potrebbe corrispondono esattamente al nome della classe dell'attributo personalizzato, come il suffisso "Attribute" da eliminare da un nome di attributo personalizzato quando viene utilizzata in una dichiarazione di c#.  
+ L'oggetto restituito da questo metodo denominato corrisponde al nome della classe utilizzata per dichiarare l'attributo. Ciò non è uguale a può corrispondere al nome della classe dell'attributo personalizzato come c# consente il suffisso "Attribute" che si desidera eliminare da un nome di attributo personalizzato quando viene usata in una dichiarazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

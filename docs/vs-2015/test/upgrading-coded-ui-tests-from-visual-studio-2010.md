@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907144"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aggiornamento dei test codificati dell'interfaccia utente da Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ I progetti di test contenenti test codificati dell'interfaccia utente creati in 
   
  Dopo avere applicato l'aggiornamento, le seguenti funzionalità dello strumento di test codificati dell'interfaccia utente [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 vengono aggiornate per Windows 8:  
   
--   È possibile eseguire un test codificato dell'interfaccia utente per i controlli WPF (Windows Presentation Foundation) basati su Microsoft .NET Framework 4.5 in un computer che esegue Windows 8.  
+- È possibile eseguire un test codificato dell'interfaccia utente per i controlli WPF (Windows Presentation Foundation) basati su Microsoft .NET Framework 4.5 in un computer che esegue Windows 8.  
   
--   È possibile eseguire un test codificato dell'interfaccia utente per Internet Explorer 10 a 64 bit (x64) in un computer che esegue Windows 8.  
+- È possibile eseguire un test codificato dell'interfaccia utente per Internet Explorer 10 a 64 bit (x64) in un computer che esegue Windows 8.  
   
- L'aggiornamento contiene anche le correzioni per i seguenti problemi:  
+  L'aggiornamento contiene anche le correzioni per i seguenti problemi:  
   
--   **Copertura codice:** impossibilità di aprire un file di code coverage (con estensione coverage) creato da Visual Studio 2012 SP1 in [!INCLUDE[vs2010](../includes/vs2010-md.md)] .  
+- **Copertura codice:** impossibilità di aprire un file di code coverage (con estensione coverage) creato da Visual Studio 2012 SP1 in [!INCLUDE[vs2010](../includes/vs2010-md.md)] .  
   
--   **Elementi di test bloccati:** il team dispone di un elemento di test assegnato a un utente non valido in Team Foundation Server (TFS) 2010. Ad esempio, un utente ha lasciato l'azienda, ma un test case è ancora assegnato a lui. Eseguire l'aggiornamento di TFS 2010 a TFS 2012. Utilizzare [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 per connettersi al server TFS aggiornato. Non è possibile assegnare l'elemento di test ad alcuni utenti TFS utilizzando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
+- **Elementi di test bloccati:** il team dispone di un elemento di test assegnato a un utente non valido in Team Foundation Server (TFS) 2010. Ad esempio, un utente ha lasciato l'azienda, ma un test case è ancora assegnato a lui. Eseguire l'aggiornamento di TFS 2010 a TFS 2012. Utilizzare [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 per connettersi al server TFS aggiornato. Non è possibile assegnare l'elemento di test ad alcuni utenti TFS utilizzando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
   
--   **Test di carico:** quando si esegue un test di carico con un tipo di rete diverso dal profilo della rete locale (LAN) in un computer che esegue Windows 8, il driver dell'emulatore di rete causa l'arresto anomalo del sistema operativo. Per altre informazioni, vedere l' [articolo KB 2736182](http://support.microsoft.com/kb/2736182).  
+- **Test di carico:** quando si esegue un test di carico con un tipo di rete diverso dal profilo della rete locale (LAN) in un computer che esegue Windows 8, il driver dell'emulatore di rete causa l'arresto anomalo del sistema operativo. Per altre informazioni, vedere l' [articolo KB 2736182](http://support.microsoft.com/kb/2736182).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

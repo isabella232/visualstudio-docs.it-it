@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901645"
 ---
 # <a name="viewing-the-structure-of-code"></a>Visualizzazione della struttura del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ Finestra Gerarchia di chiamata
   
  È possibile filtrare ciò che si vuole visualizzare nel **Visualizzatore oggetti**. Usando l'elenco a discesa nella parte superiore della finestra, è possibile scegliere una delle seguenti opzioni:  
   
--   Qualsiasi .NET Framework  
+- Qualsiasi .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   La soluzione attiva.  
+- La soluzione attiva.  
   
--   Un set di componenti personalizzato  
+- Un set di componenti personalizzato  
   
- I componenti personalizzati possono includere file eseguibili di codice gestito, assembly di librerie, librerie dei tipi e file OCX. Non è possibile aggiungere componenti personalizzati di C++. Le impostazioni personalizzate vengono salvate nella directory dell’applicazione utente di Visual Studio, %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
+  I componenti personalizzati possono includere file eseguibili di codice gestito, assembly di librerie, librerie dei tipi e file OCX. Non è possibile aggiungere componenti personalizzati di C++. Le impostazioni personalizzate vengono salvate nella directory dell’applicazione utente di Visual Studio, %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
   
- Nel riquadro di sinistra del **Visualizzatore oggetti** vengono visualizzati i contenitori fisici, ad esempio componenti COM e .NET Framework. È possibile espandere i nodi del contenitore per visualizzare gli spazi dei nomi che questi contengono e quindi espandere gli spazi dei nomi per visualizzare i tipi che essi contengono. Quando si seleziona un tipo, nel riquadro di destra sono elencati i relativi membri (ad esempio proprietà e metodi). Il riquadro inferiore destro visualizza informazioni dettagliate sull'elemento selezionato.  
+  Nel riquadro di sinistra del **Visualizzatore oggetti** vengono visualizzati i contenitori fisici, ad esempio componenti COM e .NET Framework. È possibile espandere i nodi del contenitore per visualizzare gli spazi dei nomi che questi contengono e quindi espandere gli spazi dei nomi per visualizzare i tipi che essi contengono. Quando si seleziona un tipo, nel riquadro di destra sono elencati i relativi membri (ad esempio proprietà e metodi). Il riquadro inferiore destro visualizza informazioni dettagliate sull'elemento selezionato.  
   
- È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante **Cancella ricerca** (X) accanto alla casella **Ricerca**.  
+  È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante **Cancella ricerca** (X) accanto alla casella **Ricerca**.  
   
- Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è possibile spostarsi tra le selezioni effettuate usando i pulsanti **Avanti** e **Indietro** sulla barra degli strumenti.  
+  Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è possibile spostarsi tra le selezioni effettuate usando i pulsanti **Avanti** e **Indietro** sulla barra degli strumenti.  
   
- È possibile usare il **Visualizzatore oggetti** per aggiungere un riferimento all'assembly a una soluzione aperta selezionando un elemento (assembly, spazio dei nomi, tipo o membro) e scegliendo il pulsante **Aggiungi riferimento** sulla barra degli strumenti.  
+  È possibile usare il **Visualizzatore oggetti** per aggiungere un riferimento all'assembly a una soluzione aperta selezionando un elemento (assembly, spazio dei nomi, tipo o membro) e scegliendo il pulsante **Aggiungi riferimento** sulla barra degli strumenti.  
   
 ### <a name="object-browser-settings"></a>Visualizzatore oggetti - Impostazioni  
  Con il pulsante **Visualizzatore oggetti - Impostazioni** sulla barra degli strumenti è possibile specificare una delle visualizzazioni seguenti.  

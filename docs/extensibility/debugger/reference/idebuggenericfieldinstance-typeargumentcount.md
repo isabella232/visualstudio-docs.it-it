@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::TypeArgumentCount | Documenti Microsoft
+title: IDebugGenericFieldInstance::TypeArgumentCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2fb72a486c58c0213361eb983371493f7ebafc5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 066084853c63f7f824b27b365e9abf0f2d695970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822238"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 Restituisce il numero del tipo di argomenti di parametro per questa istanza.  
@@ -46,7 +46,7 @@ int TypeArgumentCount(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Ad esempio, se elenco\<int >, questo metodo restituisce 1 e, se elenco\<int, float2 > questo metodo restituisce 2. Questo metodo restituisce 0 se non sono presenti argomenti di tipo.  
+ Ad esempio, se elenco\<int >, questo metodo restituisce 1 e, se elenco\<int, float2 > questo metodo restituisce 2. Questo metodo restituisce 0 se non sono presenti argomenti tipo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

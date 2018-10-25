@@ -16,12 +16,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f98fe27812235d742d5a116f930ab8e70b2cd0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a38410c1b64a455f12d91cd8460f5f04d369275
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847305"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Iniziare a sviluppare estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ Se non hai mai scritto un'estensione di Visual Studio prima di, è necessario pr
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Quali tipi di operazioni può fare con le estensioni di Visual Studio?  
  Il cielo è il limite se si desidera immaginando i modi in diverse estensioni di Visual Studio. Naturalmente, la maggior parte delle estensioni avere qualcosa a che fare con la scrittura di codice, ma che non deve necessariamente essere il caso. Di seguito sono riportati alcuni esempi dei tipi di estensioni che è possibile compilare:  
   
--   Supporto per lingue che non sono inclusi in Visual Studio, con la colorazione della sintassi, IntelliSense e il supporto del compilatore ed eseguire il debug  
+- Supporto per lingue che non sono inclusi in Visual Studio, con la colorazione della sintassi, IntelliSense e il supporto del compilatore ed eseguire il debug  
   
--   Strumenti di produttività che estendono i principali IDE esperienza con altri modelli, le conversazioni di refactoring, nuovo codice o finestre degli strumenti  
+- Strumenti di produttività che estendono i principali IDE esperienza con altri modelli, le conversazioni di refactoring, nuovo codice o finestre degli strumenti  
   
--   Finestre di progettazione specifici del dominio per scenari come il supporto di progettazione o cloud di dati  
+- Finestre di progettazione specifici del dominio per scenari come il supporto di progettazione o cloud di dati  
   
- Per esempi di estensioni, consultare il [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/). È anche possibile dare un'occhiata [Visual Studio Apri origine Extensions](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
+  Per esempi di estensioni, consultare il [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/). È anche possibile dare un'occhiata [Visual Studio Apri origine Extensions](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
   
 ## <a name="which-visual-studio-features-can-i-extend"></a>Le funzionalità di Visual Studio è possibile estendere?  
  In teoria, è possibile estendere solo una parte di Visual Studio: menu, barre degli strumenti, comandi, windows, soluzioni, progetti, editor e così via.  

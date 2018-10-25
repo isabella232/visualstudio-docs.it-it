@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isDataAligned | Documenti Microsoft
+title: Get_isdataaligned | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2888ce16c64b12ad846289148412733b18bc2500
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d4c2d43129eadb0b0779086fc5dba0860c735cac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837802"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
-Recupera un flag che specifica se il tipo definito dall'utente (UDT) è stato allineato per alcuni limiti di memoria specifici.  
+Recupera un flag che specifica se il tipo definito dall'utente (UDT) è stato allineato per alcuni limiti di memoria specifica.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,14 +43,14 @@ HRESULT get_isDataAligned(
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- Questa proprietà è impostata in genere quando il file eseguibile compilato con l'allineamento dei dati non predefinite. Ad esempio, il compilatore Microsoft C++ può modificare l'allineamento di dati con l'opzione della riga di comando, /Zp*#*, dove *#* è un valore di byte.  
+ Questa proprietà è impostata in genere quando il file eseguibile viene compilato con l'allineamento dei dati non predefinite. Ad esempio, il compilatore Microsoft C++ può modificare l'allineamento di dati con l'opzione della riga di comando, /Zp<em>#</em>, dove *#* è un valore di byte.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 8.0 DIA SDK|  
+|Versione:|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

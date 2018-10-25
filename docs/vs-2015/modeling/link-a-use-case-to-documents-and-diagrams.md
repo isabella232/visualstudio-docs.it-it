@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824503"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Collegare un caso d'uso a documenti e diagrammi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile collegare un caso di utilizzo in un diagramma caso di utilizzo a un altro diagramma o documento. Ad esempio, è possibile collegare il caso di utilizzo ai seguenti diagrammi e documenti:  
   
--   Un diagramma di sequenza che mostra come raggiungere gli obiettivi del caso di utilizzo usando le interazioni tra gli utenti e il sistema o i relativi componenti principali.  
+- Un diagramma di sequenza che mostra come raggiungere gli obiettivi del caso di utilizzo usando le interazioni tra gli utenti e il sistema o i relativi componenti principali.  
   
--   Un diagramma di attività che mostra le azioni dettagliate eseguite dagli utenti e dal sistema o dai relativi componenti principali durante l'esecuzione del caso di utilizzo.  
+- Un diagramma di attività che mostra le azioni dettagliate eseguite dagli utenti e dal sistema o dai relativi componenti principali durante l'esecuzione del caso di utilizzo.  
   
--   Una pagina o un paragrafo OneNote che descrive dettagliatamente il caso di utilizzo.  
+- Una pagina o un paragrafo OneNote che descrive dettagliatamente il caso di utilizzo.  
   
--   Un documento di Word o una presentazione di PowerPoint che descrive dettagliatamente il caso di utilizzo. È possibile tenere questi documenti nella soluzione o in una posizione accessibile al team, ad esempio un sito SharePoint.  
+- Un documento di Word o una presentazione di PowerPoint che descrive dettagliatamente il caso di utilizzo. È possibile tenere questi documenti nella soluzione o in una posizione accessibile al team, ad esempio un sito SharePoint.  
   
- Per collegare un caso di utilizzo a un documento, creare un elemento nel diagramma caso di utilizzo e connettere quest'ultimo all'elemento. Nelle proprietà dell'elemento, impostare il percorso del file dell'altro diagramma o documento. Quando si fa doppio clic sull'elemento, si apre l'altro diagramma o documento.  
+  Per collegare un caso di utilizzo a un documento, creare un elemento nel diagramma caso di utilizzo e connettere quest'ultimo all'elemento. Nelle proprietà dell'elemento, impostare il percorso del file dell'altro diagramma o documento. Quando si fa doppio clic sull'elemento, si apre l'altro diagramma o documento.  
   
- Non ci sono limitazioni al numero di elementi che è possibile connettere a un caso di utilizzo. È anche possibile collegare elementi ad altri tipi di elemento in un diagramma caso di utilizzo.  
+  Non ci sono limitazioni al numero di elementi che è possibile connettere a un caso di utilizzo. È anche possibile collegare elementi ad altri tipi di elemento in un diagramma caso di utilizzo.  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Per aprire un documento associato a un elemento  
   

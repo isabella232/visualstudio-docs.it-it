@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7616dd184bae2cabb433879ceadae79dbeb23b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942075"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di progetto in Visual Studio, potrebbe anche voler fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per creare un nuovo progetto che contiene l'elemento del progetto. Le informazioni raccolte sono utilizzabile per inizializzare l'elemento del progetto.  
@@ -48,15 +48,15 @@ ms.locfileid: "42626016"
   
  Sono inoltre necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:  
   
--   Edizioni supportate di Windows, SharePoint e Visual Studio.
+- Edizioni supportate di Windows, SharePoint e Visual Studio.
   
--   Visual Studio SDK. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'elemento del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'elemento del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
+  Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
   
--   Procedure guidate per i modelli di progetto ed elemento in Visual Studio. Per altre informazioni, vedere [procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md) e il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia.  
+- Procedure guidate per i modelli di progetto ed elemento in Visual Studio. Per altre informazioni, vedere [procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md) e il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia.  
   
--   Colonne del sito in SharePoint. Per altre informazioni, vedere [colonne](http://go.microsoft.com/fwlink/?LinkId=183547).  
+- Colonne del sito in SharePoint. Per altre informazioni, vedere [colonne](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
 ## <a name="understand-the-wizard-components"></a>Informazioni sui componenti di procedura guidata
  La procedura guidata illustrata in questa procedura dettagliata contiene diversi componenti. Nella tabella seguente vengono descritti questi componenti.  
@@ -72,11 +72,11 @@ ms.locfileid: "42626016"
 ## <a name="create-the-projects"></a>Creare i progetti
  Per completare questa procedura dettagliata, è necessario aggiungere più progetti alla soluzione creata in SiteColumnProjectItem [procedura dettagliata: creare un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   Un progetto WPF. Si implementeranno i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia e definire la procedura guidata dell'interfaccia utente in questo progetto.  
+- Un progetto WPF. Si implementeranno i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia e definire la procedura guidata dell'interfaccia utente in questo progetto.  
   
--   Un progetto libreria di classi che definisce i comandi di SharePoint. Questo progetto deve avere come destinazione.NET Framework 3.5.  
+- Un progetto libreria di classi che definisce i comandi di SharePoint. Questo progetto deve avere come destinazione.NET Framework 3.5.  
   
- Avviare la procedura dettagliata mediante la creazione di progetti.  
+  Avviare la procedura dettagliata mediante la creazione di progetti.  
   
 #### <a name="to-create-the-wpf-project"></a>Per creare il progetto WPF
   
@@ -192,13 +192,13 @@ ms.locfileid: "42626016"
 ## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Creare il modello di procedura guidata, manager firma e gli ID di comando di SharePoint
  Aggiungere codice al progetto ProjectTemplateWizard per implementare i componenti seguenti nell'esempio:  
   
--   Gli ID di comando di SharePoint. Queste stringhe di identificano i comandi di SharePoint che utilizza la procedura guidata. Più avanti in questa procedura dettagliata si aggiungerà codice al progetto SharePointCommands per implementare i comandi.  
+- Gli ID di comando di SharePoint. Queste stringhe di identificano i comandi di SharePoint che utilizza la procedura guidata. Più avanti in questa procedura dettagliata si aggiungerà codice al progetto SharePointCommands per implementare i comandi.  
   
--   Il modello di dati guidata.  
+- Il modello di dati guidata.  
   
--   Firma il project manager.  
+- Firma il project manager.  
   
- Per altre informazioni su questi componenti, vedere [informazioni sui componenti della procedura guidata](#wizardcomponents).  
+  Per altre informazioni su questi componenti, vedere [informazioni sui componenti della procedura guidata](#wizardcomponents).  
   
 #### <a name="to-define-the-sharepoint-command-ids"></a>Per definire gli ID di comando di SharePoint
   
@@ -485,29 +485,29 @@ ms.locfileid: "42626016"
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Per testare la procedura guidata in Visual Studio  
   
-1.  Nell'istanza sperimentale di Visual Studio, sulla barra dei menu, scegliere **File** > **New** > **progetto**.  
+1. Nell'istanza sperimentale di Visual Studio, sulla barra dei menu, scegliere **File** > **New** > **progetto**.  
   
-2.  Espandere la **Visual c#** nodo o il **Visual Basic** nodo (a seconda del linguaggio che supporta il modello di progetto), espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.  
+2. Espandere la **Visual c#** nodo o il **Visual Basic** nodo (a seconda del linguaggio che supporta il modello di progetto), espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.  
   
-3.  Nell'elenco dei modelli di progetto, scegliere **colonne del sito**, denominare il progetto **SiteColumnWizardTest**, quindi scegliere il **OK** pulsante.  
+3. Nell'elenco dei modelli di progetto, scegliere **colonne del sito**, denominare il progetto **SiteColumnWizardTest**, quindi scegliere il **OK** pulsante.  
   
-4.  Verificare che il codice in altra istanza di Visual Studio si arresta nel punto di interruzione impostato in precedenza nel `RunStarted` (metodo).  
+4. Verificare che il codice in altra istanza di Visual Studio si arresta nel punto di interruzione impostato in precedenza nel `RunStarted` (metodo).  
   
-5.  Continuare il debug del progetto scegliendo il **F5** chiave o, nella barra dei menu, scegliendo **Debug** > **continua**.  
+5. Continuare il debug del progetto scegliendo il **F5** chiave o, nella barra dei menu, scegliendo **Debug** > **continua**.  
   
-6.  Nel **Personalizzazione guidata SharePoint**, immettere l'URL del sito che si desidera utilizzare per il debug e quindi scegliere il **successivo** pulsante.  
+6. Nel **Personalizzazione guidata SharePoint**, immettere l'URL del sito che si desidera utilizzare per il debug e quindi scegliere il **successivo** pulsante.  
   
-7.  Nella seconda pagina della finestra di **Personalizzazione guidata SharePoint**, effettuare le selezioni seguenti:  
+7. Nella seconda pagina della finestra di **Personalizzazione guidata SharePoint**, effettuare le selezioni seguenti:  
   
-    -   Nel **tipo** casella di riepilogo **booleano**.  
+   - Nel **tipo** casella di riepilogo **booleano**.  
   
-    -   Nel **gruppo** casella di riepilogo **Custom Sì/No colonne**.  
+   - Nel **gruppo** casella di riepilogo **Custom Sì/No colonne**.  
   
-    -   Nel **nome** casella, immettere **My Sì/No colonna**e quindi scegliere il **fine** pulsante.  
+   - Nel **nome** casella, immettere **My Sì/No colonna**e quindi scegliere il **fine** pulsante.  
   
      Nelle **Esplora soluzioni**, un nuovo progetto viene visualizzato e contiene un elemento del progetto denominato **Field1**, e Visual Studio apre il progetto *Elements* file nell'editor.  
   
-8.  Verificare che *Elements* contiene i valori specificati nella procedura guidata.  
+8. Verificare che *Elements* contiene i valori specificati nella procedura guidata.  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>Per testare la colonna del sito in SharePoint  
   

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957add624e8efa7542991cc03ca48d6835e497f0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820774"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novità relative alla progettazione in Visual Studio
 
@@ -70,7 +70,7 @@ Per altre informazioni, vedere [questo post di blog](https://blogs.msdn.microsof
 Visual Studio 2017 è disponibile in diverse edizioni. Non tutte le forniscono il supporto per l'architettura e strumenti di modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
 
 |**Funzionalità**|**Edizione Enterprise**|**Professional edition**|**Edizione community**|
-|-----------------|--------------------|----------------------|-------------------|
+|-|-|-|-|
 |**Mappe codice**|Yes|Solo supporta la lettura di mappe codice, il filtro di codice viene eseguito il mapping, aggiunta di nuovi nodi generici e la creazione di un grafico diretto da una selezione.|-|
 |**Diagrammi delle dipendenze**|Yes|Supporta solo la lettura di diagrammi delle dipendenze.|Supporta solo la lettura di diagrammi delle dipendenze.|
 |**Grafici diretti** (diagrammi DGML)|Yes|Yes|Yes|

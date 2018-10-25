@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925735"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 ## <a name="target-build-order"></a>Ordine di compilazione delle destinazioni  
  Le destinazioni devono venire ordinate se l'input per una destinazione dipende dall'output di un'altra destinazione. Esistono diversi modi per specificare l'ordine di esecuzione delle destinazioni.  
   
--   Destinazioni iniziali  
+- Destinazioni iniziali  
   
--   Destinazioni predefinite  
+- Destinazioni predefinite  
   
--   Prima destinazione  
+- Prima destinazione  
   
--   Dipendenze tra destinazioni  
+- Dipendenze tra destinazioni  
   
--   `BeforeTargets` e `AfterTargets` (MSBuild 4.0)  
+- `BeforeTargets` e `AfterTargets` (MSBuild 4.0)  
   
- Una destinazione non viene mai eseguita due volte durante una compilazione, anche se da essa dipende una destinazione successiva nella compilazione. Il contributo della destinazione alla compilazione termina dopo che è stata eseguita.  
+  Una destinazione non viene mai eseguita due volte durante una compilazione, anche se da essa dipende una destinazione successiva nella compilazione. Il contributo della destinazione alla compilazione termina dopo che è stata eseguita.  
   
- Per dettagli e altre informazioni sull'ordine di compilazione delle destinazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md).  
+  Per dettagli e altre informazioni sull'ordine di compilazione delle destinazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione  
  Un elemento di destinazione può avere un attributo `Outputs` che specifica i metadati nel formato %(metadati). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio,  

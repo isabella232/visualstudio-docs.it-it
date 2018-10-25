@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939267"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Aggiunta della funzione di ricerca in una finestra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si creano o aggiorna una finestra degli strumenti nella propria estensione, è possibile aggiungere la stessa funzionalità di ricerca che viene visualizzato in un' posizione in Visual Studio. Questa funzionalità include le funzionalità seguenti:  
   
--   Una casella di ricerca che si trova sempre in un'area personalizzata della barra degli strumenti.  
+- Una casella di ricerca che si trova sempre in un'area personalizzata della barra degli strumenti.  
   
--   Un indicatore di stato che la casella di ricerca è sovrapposti.  
+- Un indicatore di stato che la casella di ricerca è sovrapposti.  
   
--   La possibilità di visualizzare i risultati non appena si immette ogni carattere (ricerca immediata) o solo dopo aver premuto il tasto INVIO (ricerca su richiesta).  
+- La possibilità di visualizzare i risultati non appena si immette ogni carattere (ricerca immediata) o solo dopo aver premuto il tasto INVIO (ricerca su richiesta).  
   
--   Un elenco che mostra le condizioni per il quale è stata eseguita la ricerca più di recente.  
+- Un elenco che mostra le condizioni per il quale è stata eseguita la ricerca più di recente.  
   
--   La possibilità di filtrare le ricerche da campi specifici o gli aspetti delle destinazioni di ricerca.  
+- La possibilità di filtrare le ricerche da campi specifici o gli aspetti delle destinazioni di ricerca.  
   
- Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività seguenti:  
+  Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività seguenti:  
   
 1.  Creare un progetto di VSPackage.  
   

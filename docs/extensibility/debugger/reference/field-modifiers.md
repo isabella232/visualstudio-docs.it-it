@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Documenti Microsoft
+title: FIELD_MODIFIERS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0040795564aa1d1d599a55928b888ec7cfcfd97e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6403beec680341416940a2cb4f65476408e095be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949084"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 Specifica i modificatori per un tipo di campo.  
@@ -106,25 +106,25 @@ public enum enum_FIELD_MODIFIERS {
   
 ## <a name="members"></a>Membri  
  FIELD_MOD_ACCESS_TYPE  
- Indica che il campo non è possibile accedere.  
+ Indica che il campo non è accessibile.  
   
  FIELD_MOD_ACCESS_PUBLIC  
  Indica che il campo dispone di accesso pubblico.  
   
  FIELD_MOD_ACCESS_PROTECTED  
- Indica che il campo con l'accesso protetto.  
+ Indica che il campo dispone di accesso protetto.  
   
  FIELD_MOD_ACCESS_PRIVATE  
- Indica che il campo con accesso privato.  
+ Indica che il campo dispone di accesso privata.  
   
  FIELD_MOD_NOMODIFIERS  
- Indica che il campo non ha modificatori.  
+ Indica che il campo non dispone di modificatori.  
   
  FIELD_MOD_STATIC  
  Indica che il campo è statico.  
   
  FIELD_MOD_CONSTANT  
- Indica che il campo è costante.  
+ Indica che il campo è una costante.  
   
  FIELD_MOD_TRANSIENT  
  Indica che il campo è temporaneo.  
@@ -151,7 +151,7 @@ public enum enum_FIELD_MODIFIERS {
  Indica che il campo è finale.  
   
  FIELD_MOD_SENTINEL  
- Indica che il campo è sentinel.  
+ Indica che il campo è un sentinel.  
   
  FIELD_MOD_INNERCLASS  
  Indica che il campo è una classe interna.  
@@ -172,21 +172,21 @@ public enum enum_FIELD_MODIFIERS {
  Indica che il campo ha un nome speciale, ad esempio, `.ctor` per un costruttore ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).  
   
  FIELD_MOD_HIDEBYSIG  
- Indica che il campo contiene il `Overloads` (parola chiave) applicata ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).  
+ Indica che il campo ha il `Overloads` parola chiave applicato ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).  
   
  FIELD_MOD_WRITEONLY  
- Indica che il campo è di sola scrittura. Questo valore non è incluso `FIELD_MOD_ALL`, come l'uso solo di questi campi di sola scrittura per la valutazione della funzione. Un utente deve richiedere esplicitamente `FIELD_MOD_WRITEONLY` campi.  
+ Indica che il campo è di sola scrittura. Questo valore non è incluso `FIELD_MOD_ALL`, come l'uso solo di tali campi di sola scrittura per la valutazione della funzione. Un utente deve richiedere esplicitamente `FIELD_MOD_WRITEONLY` campi.  
   
  FIELD_MOD_ACCESS_MASK  
- Indica una maschera di accesso al campo.  
+ Indica una maschera per l'accesso al campo.  
   
  FIELD_MOD_MASK  
  Indica una maschera per i modificatori di campo.  
   
 ## <a name="remarks"></a>Note  
- Utilizzato per il `dwModifiers` appartenente il [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struttura.  
+ Utilizzato per il `dwModifiers` membro della [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struttura.  
   
- Questi valori vengono passati anche per il [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) metodo per filtrare i campi specifici.  
+ Questi valori vengono passati anche per il [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) metodo per filtrare per campi specifici.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  

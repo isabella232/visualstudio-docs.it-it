@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892091"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: applicare codice di facile manutenibilità con criteri di controllo dell'analisi codice
 
@@ -47,15 +47,15 @@ Gli amministratori di controllo della versione di Team Foundation possono aggiun
 
 2. Selezionare le caselle di controllo per le regole seguenti:
 
-    -   Profondità dell'ereditarietà: **CA1501 AvoidExcessiveInheritance** -soglia: più di 5 livelli di avviso
+   - Profondità dell'ereditarietà: **CA1501 AvoidExcessiveInheritance** -soglia: più di 5 livelli di avviso
 
-    -   Complessità: **AvoidExcessiveComplexity CA1502** -soglia: avviso in più di 25
+   - Complessità: **AvoidExcessiveComplexity CA1502** -soglia: avviso in più di 25
 
-    -   Indice di manutenibilità: **CA1505 AvoidUnmaintainableCode** -soglia: avviso per meno di 20
+   - Indice di manutenibilità: **CA1505 AvoidUnmaintainableCode** -soglia: avviso per meno di 20
 
-    -   Accoppiamento di classe: **AvoidExcessiveClassCoupling CA1506** -soglia: avviso più di 80 per una classe e più di 30 per un metodo
+   - Accoppiamento di classe: **AvoidExcessiveClassCoupling CA1506** -soglia: avviso più di 80 per una classe e più di 30 per un metodo
 
-    Inoltre, se si desidera che una violazione delle regole per impedire una compilazione corretta, selezionare la **trattare avvisi come errori** casella di controllo accanto alla descrizione della regola.
+     Inoltre, se si desidera che una violazione delle regole per impedire una compilazione corretta, selezionare la **trattare avvisi come errori** casella di controllo accanto alla descrizione della regola.
 
 3. Fare clic su **OK**. Il nuovo criterio si applica ora a archiviazioni future.
 

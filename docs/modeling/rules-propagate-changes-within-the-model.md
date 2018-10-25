@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e1abc17e9675423359c6f850056a2fedf062e01
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865973"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
 È possibile creare una regola di archivio per propagare una modifica da un elemento a un altro in Visualization and Modeling SDK (VMSDK). Quando viene apportata una modifica a qualsiasi elemento nella finestra di Store, le regole vengono pianificate da eseguire, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio aggiungendo un elemento o l'eliminazione. È possibile collegare regole a tipi specifici di elementi, forme o i diagrammi. Molte funzionalità incorporate sono definite da regole: ad esempio, le regole di assicurano che un diagramma viene aggiornato quando viene modificato il modello. È possibile personalizzare il linguaggio specifico di dominio tramite l'aggiunta di regole personalizzate.
@@ -67,7 +67,6 @@ namespace ExampleNamespace
    }
  }
 }
-
 ```
 
 > [!NOTE]
@@ -75,13 +74,13 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule"></a>Per definire una regola
 
-1.  Definire la regola come preceduto da una classe di `RuleOn` attributo. L'attributo associa la regola con le classi di dominio, relazioni o gli elementi del diagramma. La regola verrà applicata a tutte le istanze di questa classe, che può essere astratta.
+1. Definire la regola come preceduto da una classe di `RuleOn` attributo. L'attributo associa la regola con le classi di dominio, relazioni o gli elementi del diagramma. La regola verrà applicata a tutte le istanze di questa classe, che può essere astratta.
 
-2.  Registrare la regola, aggiungerla al set restituito da `GetCustomDomainModelTypes()` della classe di modello di dominio.
+2. Registrare la regola, aggiungerla al set restituito da `GetCustomDomainModelTypes()` della classe di modello di dominio.
 
-3.  Derivare la classe di regola da una delle classi astratte regola e scrivere il codice del metodo di esecuzione.
+3. Derivare la classe di regola da una delle classi astratte regola e scrivere il codice del metodo di esecuzione.
 
- Le sezioni seguenti descrivono questi passaggi in maggiore dettaglio.
+   Le sezioni seguenti descrivono questi passaggi in maggiore dettaglio.
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Per definire una regola in una classe di dominio
 
@@ -129,24 +128,26 @@ namespace ExampleNamespace
 
 ### <a name="to-write-the-code-of-the-rule"></a>Per scrivere il codice della regola
 
--   Derivare la classe di regola da una delle classi base seguenti:
+- Derivare la classe di regola da una delle classi base seguenti:
 
-    |Classe base|Trigger|
-    |----------------|-------------|
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|Viene aggiunto un elemento, un collegamento o una forma.<br /><br /> Questa procedura guidata consente di rilevare relazioni nuove, oltre a nuovi elementi.|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|Il valore di una proprietà di dominio viene modificato. L'argomento del metodo fornisce i valori vecchi e nuovi.<br /><br /> Per le forme, questa regola viene attivata quando l'elemento predefinito `AbsoluteBounds` le modifiche alle proprietà, se la forma viene spostata.<br /><br /> In molti casi, risulta più semplice eseguire l'override `OnValueChanged` o `OnValueChanging` nel gestore della proprietà. Questi metodi vengono chiamati immediatamente prima e dopo la modifica. Al contrario, la regola viene in genere eseguito alla fine della transazione. Per altre informazioni, vedere [gestori di Modifica valore proprietà di dominio](../modeling/domain-property-value-change-handlers.md). **Nota:** questa regola non viene generata quando viene creato o eliminato un collegamento. Invece di scrivere un' `AddRule` e un `DeleteRule` della relazione di dominio.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|Attivato quando un elemento o un collegamento sta per essere eliminato. La proprietà ModelElement.IsDeleting vale fino alla fine della transazione.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|Eseguito quando un elemento o un collegamento è stato eliminato. La regola viene eseguita dopo che sono state eseguite tutte le altre regole, tra cui DeletingRules. ModelElement.IsDeleting è false e ModelElement.IsDeleted è true. Per consentire una successiva operazione di annullamento, l'elemento non viene effettivamente rimosso dalla memoria, ma viene rimosso dal Store.ElementDirectory.|
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|Un elemento viene spostato da un archivio di partizione a altra.<br /><br /> Si noti che questo non è correlato alla posizione di una forma grafica.|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|Questa regola si applica solo alle relazioni di dominio. Viene attivato se si assegna in modo esplicito un elemento del modello a un'estremità di un collegamento.|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|Attivazione eseguita quando l'ordine dei collegamenti verso o da un elemento viene modificato utilizzando i metodi MoveBefore o MoveToIndex su un collegamento.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|Eseguito quando viene creata una transazione.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|Eseguito quando la transazione sta per essere eseguito il commit.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|Eseguito quando la transazione sta per essere eseguito il rollback.|
 
--   Ogni classe dispone di un metodo che si esegue l'override. Tipo `override` nella classe per individuarlo. Il parametro di questo metodo identifica l'elemento che viene modificato.
+  | Classe base | Trigger |
+  |-|-|
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Viene aggiunto un elemento, un collegamento o una forma.<br /><br /> Questa procedura guidata consente di rilevare relazioni nuove, oltre a nuovi elementi. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Il valore di una proprietà di dominio viene modificato. L'argomento del metodo fornisce i valori vecchi e nuovi.<br /><br /> Per le forme, questa regola viene attivata quando l'elemento predefinito `AbsoluteBounds` le modifiche alle proprietà, se la forma viene spostata.<br /><br /> In molti casi, risulta più semplice eseguire l'override `OnValueChanged` o `OnValueChanging` nel gestore della proprietà. Questi metodi vengono chiamati immediatamente prima e dopo la modifica. Al contrario, la regola viene in genere eseguito alla fine della transazione. Per altre informazioni, vedere [gestori di Modifica valore proprietà di dominio](../modeling/domain-property-value-change-handlers.md). **Nota:** questa regola non viene generata quando viene creato o eliminato un collegamento. Invece di scrivere un' `AddRule` e un `DeleteRule` della relazione di dominio. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Attivato quando un elemento o un collegamento sta per essere eliminato. La proprietà ModelElement.IsDeleting vale fino alla fine della transazione. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Eseguito quando un elemento o un collegamento è stato eliminato. La regola viene eseguita dopo che sono state eseguite tutte le altre regole, tra cui DeletingRules. ModelElement.IsDeleting è false e ModelElement.IsDeleted è true. Per consentire una successiva operazione di annullamento, l'elemento non viene effettivamente rimosso dalla memoria, ma viene rimosso dal Store.ElementDirectory. |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Un elemento viene spostato da un archivio di partizione a altra.<br /><br /> Si noti che questo non è correlato alla posizione di una forma grafica. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Questa regola si applica solo alle relazioni di dominio. Viene attivato se si assegna in modo esplicito un elemento del modello a un'estremità di un collegamento. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Attivazione eseguita quando l'ordine dei collegamenti verso o da un elemento viene modificato utilizzando i metodi MoveBefore o MoveToIndex su un collegamento. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Eseguito quando viene creata una transazione. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Eseguito quando la transazione sta per essere eseguito il commit. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Eseguito quando la transazione sta per essere eseguito il rollback. |
 
- Si noti che i punti seguenti sulle regole:
+
+- Ogni classe dispone di un metodo che si esegue l'override. Tipo `override` nella classe per individuarlo. Il parametro di questo metodo identifica l'elemento che viene modificato.
+
+  Si noti che i punti seguenti sulle regole:
 
 1.  Il set di modifiche in una transazione può attivare molte regole. In genere, le regole vengono eseguite quando viene eseguito il commit della transazione più esterna. Vengono eseguiti in un ordine non specificato.
 
@@ -208,7 +209,6 @@ namespace Company.TaskRuleExample
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Vedere anche

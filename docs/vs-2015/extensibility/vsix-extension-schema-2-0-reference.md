@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893881"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Informazioni di riferimento su schema estensione VSIX 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
 ### <a name="assets-element"></a>Elemento Asset  
  Questo elemento contiene un elenco di `<Asset>` tag per ogni elemento di estensione o il contenuto esposto da questo pacchetto.  
   
--   `<Asset>` -Questo elemento contiene elementi e gli attributi seguenti:  
+- `<Asset>` -Questo elemento contiene elementi e gli attributi seguenti:  
   
-    -   `Type` – Questo è il tipo di estensione o contenuto rappresentato da questo elemento. Ciascuna `<Asset>` elemento deve avere un unico `Type`, ma più `<Asset>` elementi possono avere lo stesso `Type`. Questo attributo deve essere rappresentato come un nome completo, in base alle convenzioni dello spazio dei nomi. I tipi noti sono:  
+  - `Type` – Questo è il tipo di estensione o contenuto rappresentato da questo elemento. Ciascuna `<Asset>` elemento deve avere un unico `Type`, ma più `<Asset>` elementi possono avere lo stesso `Type`. Questo attributo deve essere rappresentato come un nome completo, in base alle convenzioni dello spazio dei nomi. I tipi noti sono:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         È possibile creare tipi personalizzati e assegnare loro nomi univoci. In fase di esecuzione all'interno di Visual Studio, il codice può enumerare e accedere a questi tipi personalizzati tramite l'API di Gestione estensioni.  
+       È possibile creare tipi personalizzati e assegnare loro nomi univoci. In fase di esecuzione all'interno di Visual Studio, il codice può enumerare e accedere a questi tipi personalizzati tramite l'API di Gestione estensioni.  
   
-    -   Percorso: il percorso relativo del file o cartella all'interno del pacchetto che contiene l'asset.  
+  - Percorso: il percorso relativo del file o cartella all'interno del pacchetto che contiene l'asset.  
   
-    -   `AnyAttribute*` -Un set aperto di attributi che verrà esposto in fase di esecuzione come un dizionario di coppia nome-valore.  
+  - `AnyAttribute*` -Un set aperto di attributi che verrà esposto in fase di esecuzione come un dizionario di coppia nome-valore.  
   
-         `<AnyElement>*` : Qualsiasi contenuto strutturato è consentita tra un `<Asset>` begin ed end tag. Tutti gli elementi sono esposti come un elenco di oggetti XmlElement. Le estensioni VSIX è possono definire i metadati specifici del tipo strutturato nel file manifesto ed enumerarle in fase di esecuzione.  
+     `<AnyElement>*` : Qualsiasi contenuto strutturato è consentita tra un `<Asset>` begin ed end tag. Tutti gli elementi sono esposti come un elenco di oggetti XmlElement. Le estensioni VSIX è possono definire i metadati specifici del tipo strutturato nel file manifesto ed enumerarle in fase di esecuzione.  
   
 ### <a name="sample-manifest"></a>Manifesto di esempio  
   
