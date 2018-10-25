@@ -17,12 +17,12 @@ ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0707544f739f934b49c6092bcb4c1c61975028ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cebe468e6325c73802ec073fc250a598f897c2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848514"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Comandi, menu e gruppi definiti dall'IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Molti menu, comandi e i gruppi di comandi sono già definiti per l'utilizzo di [
 ## <a name="finding-environment-defined-commands"></a>Trovare comandi definiti dall'ambiente  
  I comandi di ambiente vengono definiti in un set di file con estensione vsct quattro:  
   
--   SharedCmdDef.vsct  
+- SharedCmdDef.vsct  
   
--   SharedCmdPlace.vsct  
+- SharedCmdPlace.vsct  
   
--   ShellCmdDef.vsct  
+- ShellCmdDef.vsct  
   
--   ShellCmdPlace.vsct  
+- ShellCmdPlace.vsct  
   
- Questi file si trovano  *\<percorso di installazione di Visual Studio SDK >* \visualstudiointegration\common\inc.\\. Questi file forniscono le definizioni e i GUID dei menu e i gruppi che è possibile usare nel file di configurazione (con estensione vsct) della tabella comandi del pacchetto VSPackage come contenitori per il proprio menu, gruppi e i comandi.  
+  Questi file si trovano  *\<percorso di installazione di Visual Studio SDK >* \visualstudiointegration\common\inc.\\. Questi file forniscono le definizioni e i GUID dei menu e i gruppi che è possibile usare nel file di configurazione (con estensione vsct) della tabella comandi del pacchetto VSPackage come contenitori per il proprio menu, gruppi e i comandi.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [GUID e ID dei menu di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  
