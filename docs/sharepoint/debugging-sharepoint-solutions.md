@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903153"
 ---
 # <a name="debug-sharepoint-solutions"></a>Il debug delle soluzioni SharePoint
   È possibile eseguire il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Quando si avvia il debug, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] distribuisce i file di progetto nel server SharePoint e quindi apre un'istanza del sito di SharePoint nel Web browser. Le sezioni seguenti illustrano come eseguire il debug di applicazioni di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -43,13 +43,13 @@ ms.locfileid: "36327167"
 ## <a name="enable-debugging"></a>Abilita debug
  Durante il debug prima di tutto una soluzione di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], una finestra di dialogo avvisa l'utente che il file Web. config non è configurato per abilitare il debug. (Il file Web. config viene creato quando si installa SharePoint server. Per altre informazioni, vedere [uso di file Web. config](http://go.microsoft.com/fwlink/?LinkID=149266).) La finestra di dialogo offre la possibilità di scegliere se eseguire il progetto senza debug oppure modificare il file Web. config per abilitare il debug. Se si sceglie la prima opzione, il progetto viene eseguito normalmente. Se si sceglie la seconda opzione, il file web.config viene configurato per:  
   
--   Attivare lo stack di chiamate (`CallStack="true"`)  
+- Attivare lo stack di chiamate (`CallStack="true"`)  
   
--   Disabilitare gli errori personalizzati nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
+- Disabilitare gli errori personalizzati nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
   
--   Abilitare il debug di compilazione (`<compilation debug="true">`)  
+- Abilitare il debug di compilazione (`<compilation debug="true">`)  
   
- Il file Web. config risultante seguente:  
+  Il file Web. config risultante seguente:  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -89,24 +89,24 @@ ms.locfileid: "36327167"
 ## <a name="f5-debug-and-deployment-process"></a>Processo di distribuzione e debug F5
  Quando si esegue il progetto SharePoint in modalità di debug, il processo di distribuzione di SharePoint esegue le attività seguenti:  
   
-1.  Esegue i comandi di pre-distribuzione personalizzabili.  
+1. Esegue i comandi di pre-distribuzione personalizzabili.  
   
-2.  Crea un file del pacchetto (con estensione wsp) soluzioni Web utilizzando [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] comandi. Il file con estensione wsp include tutti i file necessari e le funzionalità. Per altre informazioni, vedere [panoramica delle soluzioni](http://go.microsoft.com/fwlink/?LinkID=128154).  
+2. Crea un file del pacchetto (con estensione wsp) soluzioni Web utilizzando [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] comandi. Il file con estensione wsp include tutti i file necessari e le funzionalità. Per altre informazioni, vedere [panoramica delle soluzioni](http://go.microsoft.com/fwlink/?LinkID=128154).  
   
-3.  Se la soluzione di SharePoint è una soluzione farm, ricicla le [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool di applicazioni per il sito specificato [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]. Questo passaggio rilascia i file bloccati dal [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processo di lavoro.  
+3. Se la soluzione di SharePoint è una soluzione farm, ricicla le [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool di applicazioni per il sito specificato [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]. Questo passaggio rilascia i file bloccati dal [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processo di lavoro.  
   
-4.  Se esiste già una versione precedente del pacchetto, viene ritratta la versione precedente delle funzionalità e i file nel file con estensione wsp. Questo passaggio per disattivare le funzionalità, disinstalla il pacchetto della soluzione e quindi Elimina il pacchetto della soluzione nel server SharePoint.  
+4. Se esiste già una versione precedente del pacchetto, viene ritratta la versione precedente delle funzionalità e i file nel file con estensione wsp. Questo passaggio per disattivare le funzionalità, disinstalla il pacchetto della soluzione e quindi Elimina il pacchetto della soluzione nel server SharePoint.  
   
-5.  Installa la versione corrente delle funzionalità e i file nel file con estensione wsp. Questo passaggio aggiunge e installa la soluzione nel server SharePoint.  
+5. Installa la versione corrente delle funzionalità e i file nel file con estensione wsp. Questo passaggio aggiunge e installa la soluzione nel server SharePoint.  
   
-6.  Per i flussi di lavoro, installa l'assembly del flusso di lavoro. È possibile modificare il percorso usando il *percorso dell'Assembly* proprietà.  
+6. Per i flussi di lavoro, installa l'assembly del flusso di lavoro. È possibile modificare il percorso usando il *percorso dell'Assembly* proprietà.  
   
-7.  Attiva funzionalità del progetto SharePoint se l'ambito è siti o Web. Funzionalità negli ambiti WebApplication e Farm non sono attivate.  
+7. Attiva funzionalità del progetto SharePoint se l'ambito è siti o Web. Funzionalità negli ambiti WebApplication e Farm non sono attivate.  
   
-8.  Per i flussi di lavoro, consente di associare il flusso di lavoro con la libreria, elenco o sito selezionato in SharePoint le **Personalizzazione guidata SharePoint**.  
+8. Per i flussi di lavoro, consente di associare il flusso di lavoro con la libreria, elenco o sito selezionato in SharePoint le **Personalizzazione guidata SharePoint**.  
   
-    > [!NOTE]  
-    >  Questa associazione viene generato solo se è stato selezionato **associa automaticamente flussi di lavoro** nella procedura guidata.  
+   > [!NOTE]  
+   >  Questa associazione viene generato solo se è stato selezionato **associa automaticamente flussi di lavoro** nella procedura guidata.  
   
 9. Esegue i comandi di post-distribuzione personalizzabili.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "36327167"
   
 12. Consente di visualizzare la libreria appropriata, un elenco o una pagina del sito nel Web browser.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Visualizza un messaggio di stato nella finestra di Output dopo ogni attività è stata completata. Se non è possibile completare un'attività, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Visualizza un messaggio di errore nella finestra Elenco errori.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Visualizza un messaggio di stato nella finestra di Output dopo ogni attività è stata completata. Se non è possibile completare un'attività, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Visualizza un messaggio di errore nella finestra Elenco errori.  
   
 ## <a name="sharepoint-project-features"></a>Funzionalità del progetto SharePoint
  Una funzionalità è un'unità modulare e portatile di funzionalità che semplificano la modifica dei siti usando definizioni di sito. È anche un pacchetto di [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] elementi (WSS) che possono essere attivati per un ambito specifico e che consente agli utenti di eseguire un'attività o un obiettivo specifico. I modelli vengono distribuiti come funzioni.  
@@ -128,8 +128,8 @@ ms.locfileid: "36327167"
 ## <a name="debug-workflows"></a>Flussi di lavoro di debug
  Quando si esegue il debug di progetti di flusso di lavoro, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aggiunge il modello di flusso di lavoro (a seconda del tipo) a una raccolta o a un elenco. È quindi possibile avviare il modello di flusso di lavoro manualmente o mediante l'aggiunta o aggiornamento di un elemento. È quindi possibile usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per eseguire il debug del flusso di lavoro.  
   
-> [!NOTE]  
->  Se si aggiungono i riferimenti ad altri assembly, assicurarsi che tali assembly vengono installati nella global assembly cache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). In caso contrario, la soluzione del flusso di lavoro avrà esito negativo. Per informazioni su come installare gli assembly, vedere [avviare manualmente un flusso di lavoro su un documento o elemento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
+> [!NOTE]
+>  Se si aggiungono i riferimenti ad altri assembly, assicurarsi che tali assembly vengono installati nella global assembly cache ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). In caso contrario, la soluzione del flusso di lavoro avrà esito negativo. Per informazioni su come installare gli assembly, vedere [avviare manualmente un flusso di lavoro su un documento o elemento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Tuttavia, il processo di distribuzione non viene avviato il flusso di lavoro. È necessario avviare il flusso di lavoro dal sito Web di SharePoint. È anche possibile avviare il flusso di lavoro tramite un'applicazione client, ad esempio Microsoft Office Word 2010 o tramite codice lato server separato. Usare uno degli approcci specificati nella **Personalizzazione guidata SharePoint**.  
   

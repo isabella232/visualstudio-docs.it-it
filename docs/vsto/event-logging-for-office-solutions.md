@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 267d3e06e9f0d4733a7985f65aa81f368c3f5413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925116"
 ---
 # <a name="event-logging-for-office-solutions"></a>Registrazione degli eventi per le soluzioni Office
   È possibile usare il Visualizzatore eventi di Windows per visualizzare i messaggi di eccezione acquisiti da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] quando si installano o disinstallano soluzioni Office. Questi messaggi del registratore eventi possono essere usati per risolvere i problemi di installazione e di distribuzione.  
@@ -51,33 +51,33 @@ ms.locfileid: "35672292"
   
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Per leggere il registro eventi in Windows 7, Windows Vista e Windows Server 2008  
   
-1.  Aprire **Strumenti di amministrazione**nel Pannello di controllo.  
+1. Aprire **Strumenti di amministrazione**nel Pannello di controllo.  
   
-2.  Avviare il **Visualizzatore eventi**.  
+2. Avviare il **Visualizzatore eventi**.  
   
-3.  Espandere **Registri di Windows**.  
+3. Espandere **Registri di Windows**.  
   
-4.  Nell'elenco dei registri eventi, selezionare **Applicazione**.  
+4. Nell'elenco dei registri eventi, selezionare **Applicazione**.  
   
-5.  Scegliere **Filtro registro corrente** dal menu **Azione**.  
+5. Scegliere **Filtro registro corrente** dal menu **Azione**.  
   
-6.  Selezionare **VSTO 4.0** nell'elenco **Origine evento**.  
+6. Selezionare **VSTO 4.0** nell'elenco **Origine evento**.  
   
-7.  Per gli eventi di installazione, digitare **4096** nella casella **ID evento**.  
+7. Per gli eventi di installazione, digitare **4096** nella casella **ID evento**.  
   
-8.  Fare clic su **OK** per visualizzare l'elenco filtrato.  
+8. Fare clic su **OK** per visualizzare l'elenco filtrato.  
   
- Il Visualizzatore eventi include le informazioni seguenti:  
+   Il Visualizzatore eventi include le informazioni seguenti:  
   
--   Il percorso del manifesto della distribuzione per la soluzione.  
+- Il percorso del manifesto della distribuzione per la soluzione.  
   
--   Un messaggio che descrive la causa dell'errore o dell'eccezione.  
+- Un messaggio che descrive la causa dell'errore o dell'eccezione.  
   
- Questi messaggi di eccezione possono consentire di determinare la causa di un problema di installazione, ad esempio un certificato o un percorso di documento non attendibile oppure un manifesto della distribuzione non valido.  
+  Questi messaggi di eccezione possono consentire di determinare la causa di un problema di installazione, ad esempio un certificato o un percorso di documento non attendibile oppure un manifesto della distribuzione non valido.  
   
- Dopo la disinstallazione di una soluzione Office, i messaggi di eccezione rimangono nel registro eventi.  
+  Dopo la disinstallazione di una soluzione Office, i messaggi di eccezione rimangono nel registro eventi.  
   
- Per visualizzare o registrare messaggi di eccezione durante l'esecuzione di una soluzione Office, vedere [Debug Office projects](../vsto/debugging-office-projects.md) e [progetti di Office di eseguire il Debug](../vsto/debugging-office-projects.md).  
+  Per visualizzare o registrare messaggi di eccezione durante l'esecuzione di una soluzione Office, vedere [Debug Office projects](../vsto/debugging-office-projects.md) e [progetti di Office di eseguire il Debug](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Localizzazione  
  Il linguaggio del messaggio di eccezione viene determinato dal linguaggio di runtime di Visual Studio Tools per Office. Ad esempio, se il computer dell'utente finale ha il language pack giapponese installato, il messaggio di eccezione viene scritto nel registro eventi in giapponese.  

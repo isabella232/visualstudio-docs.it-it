@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9810ba5086d3de8f5d3ad91bc2c62e0d30d349
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812518"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procedura dettagliata: Programmazione per eventi di un controllo NamedRange
   Questa procedura dettagliata illustra come aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo a un foglio di lavoro di Microsoft Office Excel e un programma per i relativi eventi usando gli strumenti di sviluppo per Office in Visual Studio.  
@@ -87,15 +87,15 @@ ms.locfileid: "35673506"
   
 ### <a name="to-add-text-to-your-worksheet"></a>Per aggiungere testo al foglio di lavoro  
   
-1.  Nella cella **A1**, digitare il testo seguente:  
+1. Nella cella **A1**, digitare il testo seguente:  
   
-     **Questo è un esempio di un controllo NamedRange.**  
+    **Questo è un esempio di un controllo NamedRange.**  
   
-2.  Nella cella **A3** (a sinistra del `namedRange2`), digitare il testo seguente:  
+2. Nella cella **A3** (a sinistra del `namedRange2`), digitare il testo seguente:  
   
-     **Eventi:**  
+    **Eventi:**  
   
- Nelle sezioni seguenti, si scriverà codice che inserisce il testo in `namedRange2` e modificare le proprietà del `namedRange2` controllo in risposta al <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, e <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> degli eventi di `namedRange1`.  
+   Nelle sezioni seguenti, si scriverà codice che inserisce il testo in `namedRange2` e modificare le proprietà del `namedRange2` controllo in risposta al <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, e <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> degli eventi di `namedRange1`.  
   
 ## <a name="add-code-to-respond-to-the-beforedoubleclick-event"></a>Aggiungere il codice per rispondere all'evento BeforeDoubleClick  
   

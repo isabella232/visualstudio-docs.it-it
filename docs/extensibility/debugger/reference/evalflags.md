@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Documenti Microsoft
+title: EVALFLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c718414749bb6c748f25fb90837644fe984a274
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef229fb06f8b265b76dc40019b18ae3c796740f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829963"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Specifica i flag che controllano la valutazione dell'espressione.  
@@ -57,19 +57,19 @@ public enum enum_EVALFLAGS {
  Specifica che il valore restituito, se presente, da valutare.  
   
  EVAL_NOSIDEEFFECTS  
- Specifica che gli effetti collaterali non sono consentite.  
+ Specifica che gli effetti collaterali non saranno consentite.  
   
  EVAL_ALLOWBPS  
- Specifica di arresto per i punti di interruzione.  
+ Specifica l'arresto per i punti di interruzione.  
   
  EVAL_ALLOWERRORREPORT  
  Specifica la segnalazione errori per l'host deve essere autorizzato. Utilizzato principalmente per la valutazione dell'espressione in uno script in Internet Explorer.  
   
  EVAL_FUNCTION_AS_ADDRESS  
- Funzioni di forza da valutare come indirizzi, invece di richiamare la funzione.  
+ Funzioni di forze deve essere valutata come indirizzi, anziché richiamare la funzione.  
   
  EVAL_NOFUNCEVAL  
- Impedisce che funzione da valutare. Si consideri ad esempio il `int` token nell'espressione `myExpression(int) + 10`. Questa funzione può essere valutata correttamente come un indirizzo, ma non come un valore.  
+ Impedisce che funzione viene valutata. Si consideri, ad esempio, il `int` token dell'espressione `myExpression(int) + 10`. Questa funzione può essere valutata correttamente come un indirizzo, ma non come un valore.  
   
  EVAL_NOEVENTS  
  Flag per indicare che gli eventi che si verificano durante la valutazione dell'espressione non devono essere inviati al gestore di sessione di debug (SDM) o all'IDE.  

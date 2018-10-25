@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850243"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Specifica di file di simboli con estensione pdb) e di file di origine nel debugger di Visual Studio
 
@@ -67,24 +67,24 @@ Inoltre, il debugger cerca i file di simboli nei percorsi seguenti:
    
    Per impostazione predefinita, se è stata compilata una DLL o un *.exe* file nel computer, il linker inserisce il percorso completo e il nome dell'oggetto associato *PDB* file nella DLL o *.exe* file. Il debugger verifica se il file di simboli è presente in tale percorso.  
    
-1. Nella stessa cartella della DLL o *.exe* file.
+2. Nella stessa cartella della DLL o *.exe* file.
    
-1. Tutti i percorsi specificati nelle opzioni del debugger per i file di simboli. Per aggiungere e abilitare i percorsi dei simboli, vedere [configurare i percorsi dei simboli e le opzioni di caricamento](#BKMK_Specify_symbol_locations_and_loading_behavior). 
+3. Tutti i percorsi specificati nelle opzioni del debugger per i file di simboli. Per aggiungere e abilitare i percorsi dei simboli, vedere [configurare i percorsi dei simboli e le opzioni di caricamento](#BKMK_Specify_symbol_locations_and_loading_behavior). 
    
-    - Qualsiasi cartella della cache di simboli locale.  
+   - Qualsiasi cartella della cache di simboli locale.  
   
-    - Rete specificata, internet, o i server di simboli locale e posizioni, ad esempio server dei simboli Microsoft se selezionato. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] può scaricare i file di simboli di debug dai server di simboli che implementano il `symsrv` protocollo. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) e il [strumenti di debug per Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sono due componenti che è possono utilizzare server dei simboli. 
+   - Rete specificata, internet, o i server di simboli locale e posizioni, ad esempio server dei simboli Microsoft se selezionato. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] può scaricare i file di simboli di debug dai server di simboli che implementano il `symsrv` protocollo. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) e il [strumenti di debug per Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sono due componenti che è possono utilizzare server dei simboli. 
       
-      È possibile utilizzare server dei simboli includono:  
+     È possibile utilizzare server dei simboli includono:  
       
-      **Server di simboli Microsoft pubblici**: per eseguire il debug di un arresto anomalo del sistema che si verifica durante una chiamata a una DLL di sistema o a una libreria di terze parti, è spesso necessario sistema *PDB* file. System *PDB* contengono i simboli per le DLL di Windows, *.exe* file e i driver di dispositivo. È possibile ottenere i simboli per i sistemi operativi Windows, MDAC, IIS, ISA e [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dai server dei simboli Microsoft pubblici. 
+     **Server di simboli Microsoft pubblici**: per eseguire il debug di un arresto anomalo del sistema che si verifica durante una chiamata a una DLL di sistema o a una libreria di terze parti, è spesso necessario sistema *PDB* file. System *PDB* contengono i simboli per le DLL di Windows, *.exe* file e i driver di dispositivo. È possibile ottenere i simboli per i sistemi operativi Windows, MDAC, IIS, ISA e [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dai server dei simboli Microsoft pubblici. 
       
-      **Server in una rete interna o nel computer locale di simboli**: team o dalla società può creare server di simboli per i propri prodotti e come cache dei simboli provenienti da origini esterne. Nel computer potrebbe essere presente un server di simboli. 
+     **Server in una rete interna o nel computer locale di simboli**: team o dalla società può creare server di simboli per i propri prodotti e come cache dei simboli provenienti da origini esterne. Nel computer potrebbe essere presente un server di simboli. 
       
-      **Server dei simboli di terze parti**: provider di terze parti di librerie e applicazioni di Windows può fornire l'accesso al server di simboli su internet. 
+     **Server dei simboli di terze parti**: provider di terze parti di librerie e applicazioni di Windows può fornire l'accesso al server di simboli su internet. 
     
-    > [!WARNING]
-    > Se si usa un server di simboli diverso dal server di simboli Microsoft pubblici, assicurarsi che il server di simboli e il relativo percorso siano attendibili. Poiché i file di simboli possono contenere codice eseguibile arbitrario, può essere esposto a rischi di sicurezza.  
+     > [!WARNING]
+     > Se si usa un server di simboli diverso dal server di simboli Microsoft pubblici, assicurarsi che il server di simboli e il relativo percorso siano attendibili. Poiché i file di simboli possono contenere codice eseguibile arbitrario, può essere esposto a rischi di sicurezza.  
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>Configurare le opzioni di caricamento e percorsi dei simboli
@@ -101,7 +101,7 @@ Nel **degli strumenti** > **opzioni** > **debug** > **simboli** pagina, è possi
    
    ![Strumenti di &#45; opzioni &#45; debug &#45; pagina simboli](media/dbg-options-symbols.png "strumenti &#45; opzioni &#45; debug &#45; pagina simboli")  
    
-1. Sotto **percorsi di file (con estensione pdb) di simboli**,
+2. Sotto **percorsi di file (con estensione pdb) di simboli**,
    - Usare la **server dei simboli Microsoft**, selezionare la casella di controllo.  
    
    - Per aggiungere una nuova posizione di server di simboli,
@@ -119,21 +119,21 @@ Nel **degli strumenti** > **opzioni** > **debug** > **simboli** pagina, è possi
    - Per modificare un URL o percorso, fare doppio clic sulla voce, oppure selezionarlo e premere **F2**.  
    - Per rimuovere una voce, selezionarlo e quindi selezionare il **-** icona.
   
-1.  (Facoltativo) Per migliorare le prestazioni di caricamento dei simboli, sotto **memorizza nella Cache i simboli in questa directory**, un percorso di cartella locale che i server di simboli possono copiare i simboli per tipo.  
+3. (Facoltativo) Per migliorare le prestazioni di caricamento dei simboli, sotto **memorizza nella Cache i simboli in questa directory**, un percorso di cartella locale che i server di simboli possono copiare i simboli per tipo.  
   
-    > [!NOTE]
-    > Cache dei simboli locale non viene inserito in una cartella protetta, ad esempio C:\Windows o una sottocartella. Usare invece una cartella di lettura e scrittura.  
+   > [!NOTE]
+   > Cache dei simboli locale non viene inserito in una cartella protetta, ad esempio C:\Windows o una sottocartella. Usare invece una cartella di lettura e scrittura.  
   
-    > [!NOTE]
-    > Per i progetti C++, se si dispone di `_NT_SYMBOL_PATH` set di variabili di ambiente, eseguirà l'override del valore impostato in **memorizza nella Cache i simboli in questa directory**.
+   > [!NOTE]
+   > Per i progetti C++, se si dispone di `_NT_SYMBOL_PATH` set di variabili di ambiente, eseguirà l'override del valore impostato in **memorizza nella Cache i simboli in questa directory**.
   
-1. Specificare i moduli desiderati il debugger deve caricare dal **percorsi di file (con estensione pdb) di simboli** quando viene avviato.  
+4. Specificare i moduli desiderati il debugger deve caricare dal **percorsi di file (con estensione pdb) di simboli** quando viene avviato.  
   
-  -  Selezionare **caricare tutti i moduli, eccetto quelli esclusi** (predefinito) per caricare tutti i simboli per tutti i moduli nel percorso del file di simboli, ad eccezione di moduli escludere in modo specifico. Per escludere alcuni moduli, selezionare **specificare moduli esclusi**, selezionare la **+** icona, digitare i nomi dei moduli per escludere, quindi selezionare **OK**.  
+   -  Selezionare **caricare tutti i moduli, eccetto quelli esclusi** (predefinito) per caricare tutti i simboli per tutti i moduli nel percorso del file di simboli, ad eccezione di moduli escludere in modo specifico. Per escludere alcuni moduli, selezionare **specificare moduli esclusi**, selezionare la **+** icona, digitare i nomi dei moduli per escludere, quindi selezionare **OK**.  
   
-  -  Per caricare solo i moduli specificati da percorsi dei file di simboli, selezionare **carico solo moduli specificati**. Selezionare **specificare moduli inclusi**, selezionare la **+** icona, digitare i nomi dei moduli da includere e quindi selezionare **OK**. I file di simboli per altri moduli non vengono caricati.  
+   -  Per caricare solo i moduli specificati da percorsi dei file di simboli, selezionare **carico solo moduli specificati**. Selezionare **specificare moduli inclusi**, selezionare la **+** icona, digitare i nomi dei moduli da includere e quindi selezionare **OK**. I file di simboli per altri moduli non vengono caricati.  
   
-1.  Scegliere **OK**.
+5. Scegliere **OK**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Altre opzioni di simboli di debug
   

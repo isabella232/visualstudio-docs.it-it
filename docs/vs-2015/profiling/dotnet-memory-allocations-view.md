@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63b5938131713c32f410f89c80a3efefa8b6c346
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a171613c4bd6f34b826869214d11d247c9c59a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924005"
 ---
 # <a name="net-memory-allocations-view"></a>Visualizzazione Allocazioni per la memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzio
   
  I dati presenti in una riga di tipo visualizzano il numero totale di oggetti del tipo che sono stati creati nell'esecuzione della profilatura e il numero totale di byte allocati per gli oggetti di quel tipo. I valori inclusivi ed esclusivi per un tipo sono sempre gli stessi.  
   
--   I valori inclusivi riguardano gli oggetti creati nelle istanze della funzione e delle relative funzioni figlio chiamate dalla funzione padre nell'albero delle chiamate.  
+- I valori inclusivi riguardano gli oggetti creati nelle istanze della funzione e delle relative funzioni figlio chiamate dalla funzione padre nell'albero delle chiamate.  
   
--   I valori esclusivi riguardano gli oggetti creati direttamente dalla funzione quando sono stati chiamati dalla funzione padre. Gli oggetti creati nelle funzioni figlio non sono inclusi.  
+- I valori esclusivi riguardano gli oggetti creati direttamente dalla funzione quando sono stati chiamati dalla funzione padre. Gli oggetti creati nelle funzioni figlio non sono inclusi.  
   
- I dati per una funzione consentono di visualizzare il numero di oggetti creati e il numero di byte allocati per gli oggetti del tipo padre.  
+  I dati per una funzione consentono di visualizzare il numero di oggetti creati e il numero di byte allocati per gli oggetti del tipo padre.  
   
 ## <a name="highlighting-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione  
  È possibile trovare il percorso di esecuzione dell'albero delle chiamate che ha creato la maggior parte degli oggetti del tipo padre.  

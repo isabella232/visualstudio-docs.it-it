@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_lexicalparent | Documenti Microsoft'
+title: Get_lexicalparent | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8180b9110aeb0010398eea5e19efed34fefc921
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ec761202f10f087f440c695d834f80045a0ac331
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864116"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
 Recupera un riferimento all'elemento padre lessicale del simbolo.  
@@ -43,9 +43,9 @@ HRESULT get_lexicalParent (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- L'elemento lessicale padre di un simbolo è la funzione o il modulo contenitore. Ad esempio, lessicale padre di un parametro di funzione o una variabile locale è la funzione stessa mentre lessicale padre della funzione è il modulo in cui è definito.  
+ Lessicale padre di un simbolo è la funzione o modulo che lo contiene. Ad esempio, lessicale padre di un parametro di funzione o variabile locale è la funzione stessa mentre lessicale padre della funzione è il modulo in che è definito.  
   
- I simboli possibili che possono essere visualizzati come elementi lessicali padre sono documentati in [gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).  
+ I simboli possibili che possono essere visualizzati come elementi padre lessicali sono documentati in [gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

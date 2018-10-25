@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204115"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884186"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
@@ -34,11 +34,11 @@ Per creare una regola personalizzata set, è possibile aprire una set di regole 
 
 3. Nel **eseguire questo set di regole** riepilogo, effettuare una delle operazioni seguenti:
 
-    - Selezionare il set di regole che si desidera personalizzare.
+   - Selezionare il set di regole che si desidera personalizzare.
 
      \- oppure -
 
-    - Selezionare  **\<Sfoglia >** per specificare set di una regola esistente non incluso nell'elenco.
+   - Selezionare  **\<Sfoglia >** per specificare set di una regola esistente non incluso nell'elenco.
 
 4. Selezionare **aperto** per visualizzare le regole nell'editor set di regole.
 

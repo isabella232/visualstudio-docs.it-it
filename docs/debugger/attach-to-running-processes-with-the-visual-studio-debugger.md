@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc638bdd70e9456ea1f2c937febbfdd974f2d20
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843262"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, selezionare **Debug** > **Connetti a processo** oppure premere **Ctrl**+**Alt** + **P** in Visual Studio e utilizzare il **Connetti a processo** finestra di dialogo per collegare il debugger al processo.
@@ -54,30 +54,30 @@ Per eseguire il debug di un processo in un computer remoto, vedere [connettersi 
 
 **Per connettersi a un processo nel computer locale:**  
 
-1.  In Visual Studio, selezionare **Debug** > **Connetti a processo** (o premere **Ctrl**+**Alt** + **P**) per aprire la **Connetti a processo** nella finestra di dialogo.
+1. In Visual Studio, selezionare **Debug** > **Connetti a processo** (o premere **Ctrl**+**Alt** + **P**) per aprire la **Connetti a processo** nella finestra di dialogo.
   
-  **Tipo di connessione** deve essere impostata su **predefinito**. **Destinazione della connessione** deve essere il nome del computer locale. 
+   **Tipo di connessione** deve essere impostata su **predefinito**. **Destinazione della connessione** deve essere il nome del computer locale. 
   
-  ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
+   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
   
-1.  Nel **processi disponibili** elencare, trovare e selezionare il processo o i processi di cui si desidera stabilire una connessione.  
+2. Nel **processi disponibili** elencare, trovare e selezionare il processo o i processi di cui si desidera stabilire una connessione.  
 
-  - Per selezionare rapidamente un processo, digitare il nome o la prima lettera di **Filtra processi** casella. 
+   - Per selezionare rapidamente un processo, digitare il nome o la prima lettera di **Filtra processi** casella. 
   
-  - Se non si conosce il nome del processo, scorrere l'elenco, oppure vedere [comuni scenari di debug](#BKMK_Scenarios) per alcuni nomi di processo comuni. 
+   - Se non si conosce il nome del processo, scorrere l'elenco, oppure vedere [comuni scenari di debug](#BKMK_Scenarios) per alcuni nomi di processo comuni. 
   
-  >[!TIP]
-  >I processi possono avviare e arrestare in background mentre il **Connetti a processo** nella finestra di dialogo è aperta, pertanto l'elenco dei processi in esecuzione potrebbe non essere sempre corrente. È possibile selezionare **Aggiorna** in qualsiasi momento per visualizzare l'elenco corrente. 
+   >[!TIP]
+   >I processi possono avviare e arrestare in background mentre il **Connetti a processo** nella finestra di dialogo è aperta, pertanto l'elenco dei processi in esecuzione potrebbe non essere sempre corrente. È possibile selezionare **Aggiorna** in qualsiasi momento per visualizzare l'elenco corrente. 
   
-1.  Nel **Collega a** campo, assicurarsi che sia elencato il tipo di codice si prevede di eseguire il debug. Il valore predefinito **automatica** l'impostazione funziona per la maggior parte dei tipi di app. 
+3. Nel **Collega a** campo, assicurarsi che sia elencato il tipo di codice si prevede di eseguire il debug. Il valore predefinito **automatica** l'impostazione funziona per la maggior parte dei tipi di app. 
   
-  Per selezionare manualmente i tipi di codice:
-    1. Fare clic su **Seleziona**. 
-    1. Nel **Seleziona tipo di codice** finestra di dialogo, selezionare **eseguire il Debug di questi tipi di codice**.
-    1. Selezionare i tipi di codice da sottoporre a debug.
-    1. Scegliere **OK**.
+   Per selezionare manualmente i tipi di codice:
+   1. Fare clic su **Seleziona**. 
+   1. Nel **Seleziona tipo di codice** finestra di dialogo, selezionare **eseguire il Debug di questi tipi di codice**.
+   1. Selezionare i tipi di codice da sottoporre a debug.
+   1. Scegliere **OK**.
   
-1.  Selezionare **collegare**.
+4. Selezionare **collegare**.
   
 >[!NOTE]
 >È possibile collegare più App per il debug, ma solo un'app è attiva nel debugger alla volta. È possibile impostare l'app attiva in Visual Studio **posizione di Debug** sulla barra degli strumenti oppure **processi** finestra.  
@@ -90,46 +90,46 @@ Per istruzioni più complete per il debug di applicazioni ASP.NET che sono state
 
 **Per connettersi a un processo in esecuzione in un computer remoto:**  
 
-1.  In Visual Studio, selezionare **Debug** > **Connetti a processo** (o premere **Ctrl**+**Alt** + **P**) per aprire la **Connetti a processo** nella finestra di dialogo.
+1. In Visual Studio, selezionare **Debug** > **Connetti a processo** (o premere **Ctrl**+**Alt** + **P**) per aprire la **Connetti a processo** nella finestra di dialogo.
   
-1.  **Tipo di connessione** deve essere **predefinito** per la maggior parte dei casi. Nel **destinazione della connessione** , selezionare il computer remoto, utilizzando uno dei metodi seguenti:
+2. **Tipo di connessione** deve essere **predefinito** per la maggior parte dei casi. Nel **destinazione della connessione** , selezionare il computer remoto, utilizzando uno dei metodi seguenti:
 
-  - Selezionare la freccia giù accanto a **destinazione della connessione**e selezionare il nome del computer nell'elenco a discesa.  
-  - Digitare il nome del computer nel **destinazione della connessione** casella.
+   - Selezionare la freccia giù accanto a **destinazione della connessione**e selezionare il nome del computer nell'elenco a discesa.  
+   - Digitare il nome del computer nel **destinazione della connessione** casella.
       
-      > [!NOTE]
-      > Se non è possibile connettersi usando il nome del computer remoto, provare a usare l'indirizzo IP e indirizzi di porta (ad esempio, `123.45.678.9:4022`). 4022 è la porta predefinita per il debugger remoto di Visual Studio 2017 x64. Per altre assegnazioni di porta del debugger remoto, vedere [assegnazioni di porta del debugger remoto](remote-debugger-port-assignments.md).  
+     > [!NOTE]
+     > Se non è possibile connettersi usando il nome del computer remoto, provare a usare l'indirizzo IP e indirizzi di porta (ad esempio, `123.45.678.9:4022`). 4022 è la porta predefinita per il debugger remoto di Visual Studio 2017 x64. Per altre assegnazioni di porta del debugger remoto, vedere [assegnazioni di porta del debugger remoto](remote-debugger-port-assignments.md).  
       
-  - Selezionare il **trovare** accanto alle **destinazione della connessione** casella per aprire il **le connessioni Remote** nella finestra di dialogo. Il **le connessioni Remote** nella finestra di dialogo sono elencati tutti i dispositivi sulla subnet locale o collegato direttamente al computer in uso. Potresti dover [aprire la porta UDP 3702](../debugger/remote-debugger-port-assignments.md) sul server per individuare i dispositivi remoti. Selezionare il computer o dispositivo desiderato, quindi fare clic su **seleziona**. 
+   - Selezionare il **trovare** accanto alle **destinazione della connessione** casella per aprire il **le connessioni Remote** nella finestra di dialogo. Il **le connessioni Remote** nella finestra di dialogo sono elencati tutti i dispositivi sulla subnet locale o collegato direttamente al computer in uso. Potresti dover [aprire la porta UDP 3702](../debugger/remote-debugger-port-assignments.md) sul server per individuare i dispositivi remoti. Selezionare il computer o dispositivo desiderato, quindi fare clic su **seleziona**. 
   
-  > [!NOTE]
-  > Il **tipo di connessione** impostazione viene mantenuta tra sessioni di debug. Il **destinazione della connessione** impostazione viene mantenuta tra sessioni di debug solo se si è verificato ha stabilito una connessione di debug che hanno come destinazione.
+   > [!NOTE]
+   > Il **tipo di connessione** impostazione viene mantenuta tra sessioni di debug. Il **destinazione della connessione** impostazione viene mantenuta tra sessioni di debug solo se si è verificato ha stabilito una connessione di debug che hanno come destinazione.
 
-1.  Fare clic su **Refresh** per popolare le **processi disponibili** elenco.
+3. Fare clic su **Refresh** per popolare le **processi disponibili** elenco.
      
-     >[!TIP]
-     >I processi possono avviare e arrestare in background mentre il **Connetti a processo** nella finestra di dialogo è aperta, pertanto l'elenco dei processi in esecuzione potrebbe non essere sempre corrente. È possibile selezionare **Aggiorna** in qualsiasi momento per visualizzare l'elenco corrente. 
+    >[!TIP]
+    >I processi possono avviare e arrestare in background mentre il **Connetti a processo** nella finestra di dialogo è aperta, pertanto l'elenco dei processi in esecuzione potrebbe non essere sempre corrente. È possibile selezionare **Aggiorna** in qualsiasi momento per visualizzare l'elenco corrente. 
      
-1.  Nel **processi disponibili** elencare, trovare e selezionare il processo o i processi di cui si desidera stabilire una connessione.  
+4. Nel **processi disponibili** elencare, trovare e selezionare il processo o i processi di cui si desidera stabilire una connessione.  
 
-  - Per selezionare rapidamente un processo, digitare il nome o la prima lettera di **Filtra processi** casella. 
+   - Per selezionare rapidamente un processo, digitare il nome o la prima lettera di **Filtra processi** casella. 
   
-  - Se non si conosce il nome del processo, scorrere l'elenco, oppure vedere [comuni scenari di debug](#BKMK_Scenarios) per alcuni nomi di processo comuni. 
+   - Se non si conosce il nome del processo, scorrere l'elenco, oppure vedere [comuni scenari di debug](#BKMK_Scenarios) per alcuni nomi di processo comuni. 
   
-  - Per trovare i processi in esecuzione in tutti gli account utente, selezionare la **Mostra i processi di tutti gli utenti** casella di controllo.
+   - Per trovare i processi in esecuzione in tutti gli account utente, selezionare la **Mostra i processi di tutti gli utenti** casella di controllo.
       
-      >[!NOTE]
-      >Se si tenta di connettersi a un processo appartenente a un account utente non attendibile, verrà visualizzata una finestra di dialogo contenente un avviso di sicurezza per chiedere conferma dell'operazione. Per altre informazioni vedere [avviso di sicurezza: connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti risultano sospette o non si è certi, non stabilire la connessione al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >[!NOTE]
+     >Se si tenta di connettersi a un processo appartenente a un account utente non attendibile, verrà visualizzata una finestra di dialogo contenente un avviso di sicurezza per chiedere conferma dell'operazione. Per altre informazioni vedere [avviso di sicurezza: connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti risultano sospette o non si è certi, non stabilire la connessione al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
-1.  Nel **Collega a** campo, assicurarsi che sia elencato il tipo di codice si prevede di eseguire il debug. Il valore predefinito **automatica** l'impostazione funziona per la maggior parte dei tipi di app. 
+5. Nel **Collega a** campo, assicurarsi che sia elencato il tipo di codice si prevede di eseguire il debug. Il valore predefinito **automatica** l'impostazione funziona per la maggior parte dei tipi di app. 
   
-  Per selezionare manualmente i tipi di codice:
-    1. Fare clic su **Seleziona**. 
-    1. Nel **Seleziona tipo di codice** finestra di dialogo, selezionare **eseguire il Debug di questi tipi di codice**.
-    1. Selezionare i tipi di codice da sottoporre a debug.
-    1. Scegliere **OK**.
+   Per selezionare manualmente i tipi di codice:
+   1. Fare clic su **Seleziona**. 
+   1. Nel **Seleziona tipo di codice** finestra di dialogo, selezionare **eseguire il Debug di questi tipi di codice**.
+   1. Selezionare i tipi di codice da sottoporre a debug.
+   1. Scegliere **OK**.
   
-1.  Selezionare **collegare**.
+6. Selezionare **collegare**.
   
 >[!NOTE]
 >È possibile collegare più App per il debug, ma solo un'app è attiva nel debugger alla volta. È possibile impostare l'app attiva in Visual Studio **posizione di Debug** sulla barra degli strumenti oppure **processi** finestra.  

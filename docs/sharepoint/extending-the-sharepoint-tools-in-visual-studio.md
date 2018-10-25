@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890674"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Estendere gli strumenti di SharePoint in Visual Studio
   Gli strumenti di SharePoint in Visual Studio soddisfano i requisiti di molti scenari di sviluppo di applicazioni. Tuttavia, è possibile individuare casi in cui non forniscono funzionalità che richiedono l'utente o altri sviluppatori. In questi casi, è possibile estendere gli strumenti di SharePoint per creare le funzionalità necessarie.
@@ -38,11 +38,11 @@ ms.locfileid: "42625924"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estensione del nodo Connessioni di SharePoint in Esplora Server
  In Visual Studio, è possibile usare la **connessioni di SharePoint** nodo il **Esplora Server** finestra per visualizzare molti dei componenti di uno o più siti SharePoint locali in una visualizzazione struttura ad albero gerarchica. È anche possibile estendere il **connessioni di SharePoint** nodo nei modi seguenti:
 
--   Tramite l'aggiunta di nodi personalizzati. Ciò è utile se si desidera visualizzare i componenti di siti di SharePoint che non vengono visualizzati per impostazione predefinita.
+- Tramite l'aggiunta di nodi personalizzati. Ciò è utile se si desidera visualizzare i componenti di siti di SharePoint che non vengono visualizzati per impostazione predefinita.
 
--   Estendendo i nodi esistenti. Ad esempio, è possibile aggiungere un nuovo nodo figlio a un nodo esistente oppure è possibile aggiungere una voce di menu di scelta rapida a un nodo ed eseguire attività quando uno sviluppatore fa clic sulla voce di menu.
+- Estendendo i nodi esistenti. Ad esempio, è possibile aggiungere un nuovo nodo figlio a un nodo esistente oppure è possibile aggiungere una voce di menu di scelta rapida a un nodo ed eseguire attività quando uno sviluppatore fa clic sulla voce di menu.
 
- Per altre informazioni, vedere [estendere del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Per altre informazioni, vedere [estendere del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="development-computer-requirements"></a>Requisiti del computer di sviluppo
  Per creare estensioni per gli strumenti di SharePoint, il computer di sviluppo deve soddisfare gli stessi requisiti per la creazione di soluzioni SharePoint in Visual Studio.

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Documenti Microsoft
+title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddbc6d2da448be163fcd84c90e55290265c361
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d63b410fc8cae67e27c15d4ed87c59bbed982d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825842"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-Determina se i simboli di debug vengono caricati per il modulo specificato dato l'identificatore del dominio applicazione.  
+Determina se vengono caricati i simboli di debug per il modulo specificato dato l'identificatore del dominio applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,7 +42,7 @@ int AreSymbolsLoaded (
   
 #### <a name="parameters"></a>Parametri  
  `ulAppDomainID`  
- [in] Identificatore per il dominio applicazione.  
+ [in] Identificatore per il dominio dell'applicazione.  
   
  `guidModule`  
  [in] Identificatore univoco per il modulo.  
@@ -51,7 +51,7 @@ int AreSymbolsLoaded (
  Se vengono caricati i simboli di debug, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE`.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(  

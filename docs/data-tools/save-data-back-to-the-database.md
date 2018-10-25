@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916907"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 
@@ -73,21 +73,21 @@ Un set di dati contiene insiemi di tabelle che contengono una raccolta di righe.
 Quando si uniscono i set di dati, è possibile passare un argomento booleano (`preserveChanges`) che indica il <xref:System.Data.DataSet.Merge%2A> metodo se si desidera mantenere le modifiche esistenti nel set di dati di destinazione. Poiché i set di dati di gestire più versioni di record, è importante tenere presente che viene eseguita l'unione di più versioni dei record. La tabella seguente illustra le modalità di unione di un record in due set di dati:
 
 |DataRowVersion|Set di dati di destinazione|Set di dati di origine|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Originale|James Wilson|James C. Wilson|
 |Corrente|Jim Wilson|James C. Wilson|
 
 Chiama il <xref:System.Data.DataSet.Merge%2A> metodo nella tabella precedente con `preserveChanges=false targetDataset.Merge(sourceDataset)` comporta i seguenti dati:
 
 |DataRowVersion|Set di dati di destinazione|Set di dati di origine|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Originale|James C. Wilson|James C. Wilson|
 |Corrente|James C. Wilson|James C. Wilson|
 
 Chiama il <xref:System.Data.DataSet.Merge%2A> metodo con `preserveChanges = true targetDataset.Merge(sourceDataset, true)` comporta i seguenti dati:
 
 |DataRowVersion|Set di dati di destinazione|Set di dati di origine|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Originale|James C. Wilson|James C. Wilson|
 |Corrente|Jim Wilson|James C. Wilson|
 
@@ -128,7 +128,7 @@ Il <xref:System.Data.DataRow.RowState%2A> proprietà di un <xref:System.Data.Dat
 La tabella seguente illustra i valori possibili del <xref:System.Data.DataRowState> enumerazione:
 
 |Valore DataRowState|Descrizione|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|La riga è stata aggiunta come elemento a un <xref:System.Data.DataRowCollection>. (Una riga in questo stato è privo di una versione originale corrispondente in quanto non esisteva quando l'ultimo <xref:System.Data.DataRow.AcceptChanges%2A> metodo è stato chiamato).|
 |<xref:System.Data.DataRowState.Deleted>|La riga è stata eliminata tramite il <xref:System.Data.DataRow.Delete%2A> di un <xref:System.Data.DataRow> oggetto.|
 |<xref:System.Data.DataRowState.Detached>|La riga è stata creata ma non fa parte di qualsiasi <xref:System.Data.DataRowCollection>. Oggetto <xref:System.Data.DataRow> oggetto è in questo stato subito dopo che è stato creato in precedenza è stato aggiunto a una raccolta e dopo che è stato rimosso da una raccolta.|
@@ -142,7 +142,7 @@ Set di dati di mantenere più versioni di record. Il <xref:System.Data.DataRowVe
 La tabella seguente illustra i valori possibili del <xref:System.Data.DataRowVersion> enumerazione:
 
 |Valore di DataRowVersion|Descrizione|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|La versione corrente di un record contiene tutte le modifiche che sono state eseguite sul record dall'ultima volta <xref:System.Data.DataRow.AcceptChanges%2A> è stato chiamato. Se la riga è stata eliminata, non vi è alcuna versione corrente.|
 |<xref:System.Data.DataRowVersion.Default>|Il valore predefinito di un record, come definito dall'origine dati o lo schema dei set di dati.|
 |<xref:System.Data.DataRowVersion.Original>|La versione originale di un record è una copia del record com'era che l'ultima applicazione delle modifiche sono state salvate nel set di dati. In pratica, in genere si tratta della versione di un record come già letto da un'origine dati.|

@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923446"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>L'aggiornamento di progetto personalizzato e i modelli di elemento per Visual Studio "15"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Gli aggiornamenti per le estensioni installate con un. IDENTITÀ DEL SERVIZIO GESTITO  
  Alcune estensioni basate su MSI distribuire modelli in posizioni di modelli comuni, ad esempio il seguente:  
   
--   **\<Directory di installazione di Visual Studio > \Common7\IDE.\\< ProjectTemplates/ItemTemplates >**  
+- **\<Directory di installazione di Visual Studio > \Common7\IDE.\\< ProjectTemplates/ItemTemplates >**  
   
--   **\<Directory di installazione di Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< progetto/ItemTemplates >**  
+- **\<Directory di installazione di Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< progetto/ItemTemplates >**  
   
- Se l'estensione esegue una distribuzione basata su MSI, è necessario generare manualmente il manifesto di modello e assicurarsi che sia incluso nel programma di installazione di estensione. È necessario confrontare gli esempi con estensione vstman elencati in precedenza e il [Visual Studio modello Manifest Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md). Per vedere cosa è necessario includere  
+  Se l'estensione esegue una distribuzione basata su MSI, è necessario generare manualmente il manifesto di modello e assicurarsi che sia incluso nel programma di installazione di estensione. È necessario confrontare gli esempi con estensione vstman elencati in precedenza e il [Visual Studio modello Manifest Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md). Per vedere cosa è necessario includere  
   
- È consigliabile creare manifesti distinti per i modelli di progetto ed elemento e puntano a root directory del modello come specificato sopra. È consigliabile creare un manifesto per ogni estensione e le impostazioni locali.  
+  È consigliabile creare manifesti distinti per i modelli di progetto ed elemento e puntano a root directory del modello come specificato sopra. È consigliabile creare un manifesto per ogni estensione e le impostazioni locali.  
   
 ## <a name="troubleshooting-template-installation"></a>Risoluzione dei problemi di installazione del modello  
  Se si verificano problemi relativi alla distribuzione dei modelli di progetto o un elemento, è possibile abilitare la registrazione diagnostica.  
   
-1.  Eseguire il comando seguente per impostare la chiave del Registro di sistema per abilitare la registrazione:  
+1. Eseguire il comando seguente per impostare la chiave del Registro di sistema per abilitare la registrazione:  
   
-     **REG aggiungere HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
+    **REG aggiungere HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
   
-2.  Avviare Visual Studio e avviare le finestre di dialogo Nuovo progetto e nuovo elemento per inizializzare entrambi gli alberi di modello. Il log di modello viene visualizzato nel **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Ogni inizializzazione di struttura ad albero del modello aggiunge voci al log.  
+2. Avviare Visual Studio e avviare le finestre di dialogo Nuovo progetto e nuovo elemento per inizializzare entrambi gli alberi di modello. Il log di modello viene visualizzato nel **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Ogni inizializzazione di struttura ad albero del modello aggiunge voci al log.  
   
- Il file di log contiene le colonne seguenti:  
+   Il file di log contiene le colonne seguenti:  
   
 -   **FullPathToTemplate**, che presenta i seguenti valori:  
   

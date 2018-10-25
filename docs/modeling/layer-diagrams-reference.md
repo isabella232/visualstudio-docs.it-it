@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92b4b6eea3fcaa4ce6785385fe5e779ba38dac61
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920930"
 ---
 # <a name="dependency-diagrams-reference"></a>I diagrammi delle dipendenze: riferimenti
 
@@ -59,7 +59,7 @@ In questo argomento vengono descritti gli elementi che è possibile usare in un 
 Nella tabella seguente vengono descritti gli elementi che è possibile usare in un diagramma di dipendenza.
 
 |**Forma**|**Elemento**|**Descrizione**|
-|---------------|-----------------|---------------------|
+|-|-|-|
 |1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi collegati a un livello, aprire il menu di scelta rapida per il livello e quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per altre informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **Non è consentito Namespace dipendenze** -specifica che gli artefatti associati a questo livello non possono dipendere da spazi dei nomi specificati.<br />-   **Forbidden Namespaces** -specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificato.<br />-   **Required Namespaces** -specifica che gli artefatti associati a questo livello devono appartenere a uno degli spazi dei nomi specificati.|
 |2|**dipendenza**|Indica che un livello può usare la funzionalità di un altro livello, ma non viceversa.<br /><br /> -   **Direzione** -specifica la direzione della dipendenza.|
 |3|**Dipendenza bidirezionale**|Indica che un livello può usare la funzionalità di un altro livello e viceversa.<br /><br /> -   **Direzione** -specifica la direzione della dipendenza.|
@@ -92,7 +92,7 @@ Nel diagramma delle dipendenze, aprire il menu di scelta rapida per uno o più l
 > Se non è possibile visualizzare tutte queste proprietà, espandere la **Esplora livello** finestra.
 
 |**Colonna in Esplora livello**|**Descrizione**|
-|----------------------------------|---------------------|
+|-|-|
 |**Categorie**|Tipo di elemento, ad esempio una classe, uno spazio dei nomi, un file di origine e così via|
 |**Livello**|Livello collegato all'elemento|
 |**Supporta la convalida**|Se **True**, quindi il processo di convalida dei livelli può verificare che il progetto sia conforme alla dipendenze da o verso questo elemento.<br /><br /> Se **False**, quindi il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md).|

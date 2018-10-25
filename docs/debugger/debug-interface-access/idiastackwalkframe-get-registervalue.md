@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkFrame::get_registerValue | Documenti Microsoft
+title: Idiastackwalkframe | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d45f9df66783223c78822d631a2bbfc04316e2b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 98c7ba6fdca3c9d2fd7bf898d864e9aca0670e6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843119"
 ---
 # <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
 Recupera il valore di un registro.  
@@ -35,7 +35,7 @@ HRESULT get_registerValue (
   
 #### <a name="parameters"></a>Parametri  
  `index`  
- [in] Un valore di [CV_HREG_e (enumerazione)](../../debugger/debug-interface-access/cv-hreg-e.md) che specifica il registro per ottenere il valore di enumerazione.  
+ [in] Un valore compreso il [enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) enumerazione che specifica la registrazione per ottenere il valore per.  
   
  `pRetVal`  
  [out] Restituisce il valore corrente del registro.  
@@ -45,4 +45,4 @@ HRESULT get_registerValue (
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [CV_HREG_e (enumerazione)](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [Enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

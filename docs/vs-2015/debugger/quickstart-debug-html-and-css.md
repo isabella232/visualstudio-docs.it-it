@@ -26,12 +26,12 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ba8f8be0d078856833b807f5d0f6ca29f346c22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873929"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Guida introduttiva: Eseguire il debug di HTML e CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,23 +44,23 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  In questo argomento  
   
--   [Controllo del DOM attivo](#InspectingDOM)  
+- [Controllo del DOM attivo](#InspectingDOM)  
   
--   [Selecting elements](#SelectingElements)  
+- [Selecting elements](#SelectingElements)  
   
- Per altre informazioni sull'uso di DOM Explorer, vedere i seguenti argomenti:  
+  Per altre informazioni sull'uso di DOM Explorer, vedere i seguenti argomenti:  
   
--   [Eseguire il debug di stili CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)  
+- [Eseguire il debug di stili CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)  
   
--   [Eseguire il debug del layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)  
+- [Eseguire il debug del layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)  
   
--   [Visualizzare i listener di eventi DOM](../debugger/view-dom-event-listeners.md)  
+- [Visualizzare i listener di eventi DOM](../debugger/view-dom-event-listeners.md)  
   
--   [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)  
+- [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)  
   
--   [Debug di un controllo WebView](../debugger/debug-a-webview-control.md)  
+- [Debug di un controllo WebView](../debugger/debug-a-webview-control.md)  
   
- Per informazioni su altre funzionalità, ad esempio utilizzando la finestra JavaScript Console e impostando punti di interruzione, debug JavaScript, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+  Per informazioni su altre funzionalità, ad esempio utilizzando la finestra JavaScript Console e impostando punti di interruzione, debug JavaScript, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Controllo del DOM attivo  
  DOM Explorer presenta una visualizzazione della pagina sottoposta a rendering. È possibile usarlo per modificare i valori e vedere immediatamente i risultati. In questo modo è possibile testare le modifiche senza arrestare e riavviare il debugger. Il codice sorgente nel progetto non viene modificato quando si interagisce con la pagina usando questo metodo. Pertanto è possibile apportare le modifiche al codice sorgente quando si trovano le correzioni del codice desiderate.  
@@ -70,13 +70,13 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  È possibile usare DOM Explorer per:  
   
--   Passare al sottoalbero di elementi DOM e controllare il codice HTML, CSS e JavaScript sottoposto a rendering.  
+- Passare al sottoalbero di elementi DOM e controllare il codice HTML, CSS e JavaScript sottoposto a rendering.  
   
--   Modificare dinamicamente gli attributi e gli stili CSS per gli elementi sottoposti a rendering e visualizzare immediatamente i risultati.  
+- Modificare dinamicamente gli attributi e gli stili CSS per gli elementi sottoposti a rendering e visualizzare immediatamente i risultati.  
   
--   Controllare l'applicazione degli stili CSS agli elementi della pagina e tenere traccia delle regole applicate.  
+- Controllare l'applicazione degli stili CSS agli elementi della pagina e tenere traccia delle regole applicate.  
   
- Quando si esegue il debug delle app, è spesso necessario selezionare elementi in DOM Explorer. Quando si seleziona un elemento, i valori visualizzati nelle schede a destra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento selezionato in DOM Explorer. Si tratta delle schede **Stili**, **Calcolata**e **Layout**. Le app di Windows Store supportano anche le schede **Eventi** e **Modifiche** . Per altre informazioni sulla selezione di elementi, vedere [Selecting elements](#SelectingElements).  
+  Quando si esegue il debug delle app, è spesso necessario selezionare elementi in DOM Explorer. Quando si seleziona un elemento, i valori visualizzati nelle schede a destra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento selezionato in DOM Explorer. Si tratta delle schede **Stili**, **Calcolata**e **Layout**. Le app di Windows Store supportano anche le schede **Eventi** e **Modifiche** . Per altre informazioni sulla selezione di elementi, vedere [Selecting elements](#SelectingElements).  
   
 > [!TIP]
 >  Se la finestra DOM Explorer è chiusa, scegliere **Debug**>**Finestre** > **DOM Explorer** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
@@ -88,100 +88,100 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Per eseguire il debug controllando il DOM attivo  
   
-1.  Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.  
+1. Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.  
   
-2.  Scegliere **JavaScript** > **Store**, quindi scegliere **Applicazioni Windows** o **Applicazioni Windows Phone**e infine fare clic su **Applicazione vuota**.  
+2. Scegliere **JavaScript** > **Store**, quindi scegliere **Applicazioni Windows** o **Applicazioni Windows Phone**e infine fare clic su **Applicazione vuota**.  
   
-3.  Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.  
+3. Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.  
   
-4.  Nell'elemento BODY del file default.html aggiungere il codice seguente:  
+4. Nell'elemento BODY del file default.html aggiungere il codice seguente:  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" style="width:100px;height:100px"  
-        data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" style="width:100px;height:100px"  
+       data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  Aprire default.css e aggiungere il codice CSS seguente:  
+5. Aprire default.css e aggiungere il codice CSS seguente:  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 100%;  
-        width: 100%;  
-        margin: 25%;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 100%;  
+       width: 100%;  
+       margin: 25%;  
+   }  
+   ```  
   
-6.  Sostituire il codice nel file default.js con questo codice:  
+6. Sostituire il codice nel file default.js con questo codice:  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
-        };  
+           pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
+           pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
+           pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-     L'illustrazione seguente mostra cosa accade se si esegue questa app nell'emulatore Windows Phone (è simile nel simulatore). Tuttavia, per ottenere questo stato dell'app occorre prima risolvere diversi bug.  
+    L'illustrazione seguente mostra cosa accade se si esegue questa app nell'emulatore Windows Phone (è simile nel simulatore). Tuttavia, per ottenere questo stato dell'app occorre prima risolvere diversi bug.  
   
-     ![App FlipView che mostra i risultati previsti](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
+    ![App FlipView che mostra i risultati previsti](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
   
-7.  Scegliere **Simulatore** o **Emulatore 8.1 WVGA 4 pollici 512 MB** dall'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **Debug** :  
+7. Scegliere **Simulatore** o **Emulatore 8.1 WVGA 4 pollici 512 MB** dall'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **Debug** :  
   
-     ![Elenco di destinazioni di debug selezionare](../debugger/media/js-select-target.png "JS_Select_Target")  
+    ![Elenco di destinazioni di debug selezionare](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  Scegliere **Debug** > **Avvia debug**o premere F5 per eseguire l'app in modalità debug.  
+8. Scegliere **Debug** > **Avvia debug**o premere F5 per eseguire l'app in modalità debug.  
   
-     L'app viene eseguita nel simulatore o nell'emulatore Windows Phone, ma la schermata sarà per lo più vuota perché gli stili presentano alcuni bug. La prima immagine `FlipView` è contenuta in un piccolo quadrato in prossimità del centro dello schermo.  
+    L'app viene eseguita nel simulatore o nell'emulatore Windows Phone, ma la schermata sarà per lo più vuota perché gli stili presentano alcuni bug. La prima immagine `FlipView` è contenuta in un piccolo quadrato in prossimità del centro dello schermo.  
   
 9. Se si esegue l'app nel simulatore, scegliere il comando della barra degli strumenti **Cambia risoluzione** a destra del simulatore per configurare una risoluzione pari a 1280 x 800. In questo modo, i valori mostrati nei passaggi seguenti corrisponderanno a quelli visibili nel simulatore.  
   
@@ -234,15 +234,15 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      Nella scheda **Layout** vendono visualizzati i seguenti valori:  
   
-    -   Per il simulatore, 320px (offset) e 320px (margine).  
+    - Per il simulatore, 320px (offset) e 320px (margine).  
   
-    -   Per l'emulatore Windows Phone, 100px (offset) e 100px (margine).  
+    - Per l'emulatore Windows Phone, 100px (offset) e 100px (margine).  
   
-     La figura seguente mostra come appare la scheda **Layout** se si usa l'emulatore Windows Phone (100px per offset e margine).  
+      La figura seguente mostra come appare la scheda **Layout** se si usa l'emulatore Windows Phone (100px per offset e margine).  
   
-     ![Scheda Layout di DOM Explorer](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
+      ![Scheda Layout di DOM Explorer](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
   
-     Ciò non sembra corretto. Anche la scheda **Calcolata** mostra gli stessi valori per i margini.  
+      Ciò non sembra corretto. Anche la scheda **Calcolata** mostra gli stessi valori per i margini.  
   
 21. Scegliere la scheda **Stili** e trovare il selettore CSS `#fView` . Per la proprietà **margin** il valore è 25%.  
   
@@ -267,23 +267,23 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ##  <a name="SelectingElements"></a> Selecting elements  
  È possibile selezionare gli elementi DOM in tre modi durante il debug di un'app:  
   
--   Facendo clic sugli elementi direttamente nella finestra di DOM Explorer oppure usando i tasti di direzione.  
+- Facendo clic sugli elementi direttamente nella finestra di DOM Explorer oppure usando i tasti di direzione.  
   
--   Usando il pulsante **Seleziona elemento** (CTRL+B).  
+- Usando il pulsante **Seleziona elemento** (CTRL+B).  
   
--   Usando il pulsante `select` , uno dei [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+- Usando il pulsante `select` , uno dei [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
- Quando si usa la finestra DOM Explorer per selezionare elementi e si posiziona il puntatore del mouse su un elemento, l'elemento corrispondente viene evidenziato nell'app in esecuzione. Fare clic sull'elemento in DOM Explorer per selezionarlo oppure usare i tasti freccia per evidenziare e selezionare elementi. La selezione di elementi in DOM Explorer può essere fatta anche tramite il pulsante **Seleziona elemento** . La figura seguente illustra il pulsante **Seleziona elemento** .  
+  Quando si usa la finestra DOM Explorer per selezionare elementi e si posiziona il puntatore del mouse su un elemento, l'elemento corrispondente viene evidenziato nell'app in esecuzione. Fare clic sull'elemento in DOM Explorer per selezionarlo oppure usare i tasti freccia per evidenziare e selezionare elementi. La selezione di elementi in DOM Explorer può essere fatta anche tramite il pulsante **Seleziona elemento** . La figura seguente illustra il pulsante **Seleziona elemento** .  
   
- ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+  ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
- Quando si fa clic su **Seleziona elemento** o si preme CTRL+B, la modalità di selezione cambia per consentire di selezionare un elemento in DOM Explorer facendo clic su di esso nell'app in esecuzione. La modalità torna alla modalità di selezione normale dopo un singolo clic. Quando si fa clic su **Seleziona elemento**, l'app passa in primo piano e il cursore cambia per riflettere la nuova modalità di selezione. Quando si fa clic sull'elemento con contorni, DOM Explorer ritorna in primo piano con l'elemento specificato selezionato.  
+  Quando si fa clic su **Seleziona elemento** o si preme CTRL+B, la modalità di selezione cambia per consentire di selezionare un elemento in DOM Explorer facendo clic su di esso nell'app in esecuzione. La modalità torna alla modalità di selezione normale dopo un singolo clic. Quando si fa clic su **Seleziona elemento**, l'app passa in primo piano e il cursore cambia per riflettere la nuova modalità di selezione. Quando si fa clic sull'elemento con contorni, DOM Explorer ritorna in primo piano con l'elemento specificato selezionato.  
   
- Prima di scegliere **Seleziona elemento**, è possibile specificare se evidenziare elementi nell'app in esecuzione attivando e disattivando il pulsante **Visualizza pagina Web in evidenza** . La figura seguente mostra questo pulsante. Le evidenziazioni vengono visualizzate per impostazione predefinita.  
+  Prima di scegliere **Seleziona elemento**, è possibile specificare se evidenziare elementi nell'app in esecuzione attivando e disattivando il pulsante **Visualizza pagina Web in evidenza** . La figura seguente mostra questo pulsante. Le evidenziazioni vengono visualizzate per impostazione predefinita.  
   
- ![Visualizza pagina web pulsante delle evidenziazioni](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
+  ![Visualizza pagina web pulsante delle evidenziazioni](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
   
- Quando si sceglie di evidenziare elementi, gli elementi su cui si posiziona il puntatore del mouse nel Simulatore vengono evidenziati. I colori per gli elementi evidenziati corrispondono al modello di riquadro visualizzato nella scheda **Layout** di DOM Explorer.  
+  Quando si sceglie di evidenziare elementi, gli elementi su cui si posiziona il puntatore del mouse nel Simulatore vengono evidenziati. I colori per gli elementi evidenziati corrispondono al modello di riquadro visualizzato nella scheda **Layout** di DOM Explorer.  
   
 > [!NOTE]
 >  L'evidenziazione degli elementi al passaggio del mouse è supportata solo in parte nell'emulatore Windows Phone.  
@@ -293,13 +293,13 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ##  <a name="BrowserSupport"></a> Supporto di browser e piattaforme  
  Gli strumenti di Visual Studio per JavaScript, DOM Explorer e la finestra Console JavaScript sono supportati nelle piattaforme seguenti:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e app di Windows Phone Store scritte in JavaScript e HTML  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e app di Windows Phone Store scritte in JavaScript e HTML  
   
--   Internet Explorer 11 in esecuzione in [!INCLUDE[win81](../includes/win81-md.md)]  
+- Internet Explorer 11 in esecuzione in [!INCLUDE[win81](../includes/win81-md.md)]  
   
--   Internet Explorer 10 in esecuzione in [!INCLUDE[win8](../includes/win8-md.md)]  
+- Internet Explorer 10 in esecuzione in [!INCLUDE[win8](../includes/win8-md.md)]  
   
- [Qui](http://go.microsoft.com/fwlink/?LinkID=232448) è possibile scaricare [!INCLUDE[win8](../includes/win8-md.md)] e Visual Studio.  
+  [Qui](http://go.microsoft.com/fwlink/?LinkID=232448) è possibile scaricare [!INCLUDE[win8](../includes/win8-md.md)] e Visual Studio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

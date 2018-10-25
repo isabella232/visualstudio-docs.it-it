@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c609e927244f0d0c297bdebedab451a6af59bd5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: debad8bbfbb72f43002c92dc3c962f378b13315e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853324"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Procedura: cercare un thread nella visualizzazione messaggi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,32 +32,32 @@ ms.locfileid: "49232882"
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>Per cercare un messaggio nella visualizzazione messaggi  
   
-1.  Disporre le finestre in modo tale Spy + + e un oggetto attivo [visualizzazione messaggi](../debugger/messages-view.md) finestra sono visibili.  
+1. Disporre le finestre in modo tale Spy + + e un oggetto attivo [visualizzazione messaggi](../debugger/messages-view.md) finestra sono visibili.  
   
-2.  Dal **ricerca** menu, scegliere **Trova messaggio**.  
+2. Dal **ricerca** menu, scegliere **Trova messaggio**.  
   
-     Il [finestra di dialogo Ricerca messaggi](../debugger/message-search-dialog-box.md) apre.  
+    Il [finestra di dialogo Ricerca messaggi](../debugger/message-search-dialog-box.md) apre.  
   
-3.  Trascinare il **strumento di ricerca** rispetto alla finestra desiderata. Quando si trascina lo strumento, il **ricerca messaggi** nella finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.  
+3. Trascinare il **strumento di ricerca** rispetto alla finestra desiderata. Quando si trascina lo strumento, il **ricerca messaggi** nella finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.  
   
-     - oppure -  
+    - oppure -  
   
-     Se hai l'handle della finestra di cui si desidera esaminare i messaggi, digitarla nella **gestire** casella di testo.  
+    Se hai l'handle della finestra di cui si desidera esaminare i messaggi, digitarla nella **gestire** casella di testo.  
   
-     - oppure -  
+    - oppure -  
   
-     Se si conosce il tipo di messaggio e/o ID del messaggio desiderati, selezionarli dal **tipo** e **messaggio** menu a discesa e deselezionare il **gestire** casella di testo.  
+    Se si conosce il tipo di messaggio e/o ID del messaggio desiderati, selezionarli dal **tipo** e **messaggio** menu a discesa e deselezionare il **gestire** casella di testo.  
   
-4.  Deselezionare tutti i campi per cui non si desidera specificare i valori.  
+4. Deselezionare tutti i campi per cui non si desidera specificare i valori.  
   
-    > [!TIP]
-    >  Per ridurre il disordine schermata, selezionare la **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e di mantenere solo le **Trova finestra** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni. La finestra principale di Spy + + è ripristinata quando si fa clic **OK** oppure **Cancel**, o quando si cancella il **Nascondi Spy + +** opzione.  
+   > [!TIP]
+   >  Per ridurre il disordine schermata, selezionare la **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e di mantenere solo le **Trova finestra** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni. La finestra principale di Spy + + è ripristinata quando si fa clic **OK** oppure **Cancel**, o quando si cancella il **Nascondi Spy + +** opzione.  
   
-5.  Scegli **iscrizione** oppure **verso il basso** per la direzione iniziale della ricerca.  
+5. Scegli **iscrizione** oppure **verso il basso** per la direzione iniziale della ricerca.  
   
-6.  Fare clic su **OK**.  
+6. Fare clic su **OK**.  
   
- Se viene trovato un messaggio corrisponda, evidenziarlo nella finestra di visualizzazione dei messaggi. Visualizzare [la visualizzazione messaggi](../debugger/messages-view.md).
+   Se viene trovato un messaggio corrisponda, evidenziarlo nella finestra di visualizzazione dei messaggi. Visualizzare [la visualizzazione messaggi](../debugger/messages-view.md).
 
 
 

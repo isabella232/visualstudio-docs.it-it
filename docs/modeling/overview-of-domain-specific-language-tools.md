@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 873c377b4b2262df6b12f581f1cdac901d27ffce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871745"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Informazioni generali sugli strumenti di linguaggio specifico di dominio
 Domain-Specific Language Tools (strumenti DSL), che sono ospitati in Visual Studio, consentono di progettare un linguaggio specifico di dominio e quindi generare tutte le operazioni che gli utenti devono disporre per creare modelli basati sulla lingua.
@@ -34,31 +34,31 @@ Domain-Specific Language Tools (strumenti DSL), che sono ospitati in Visual Stud
 ## <a name="the-dsl-tools-solution"></a>La soluzione di strumenti DSL
  La procedura guidata finestra di progettazione Domain-Specific fornisce i modelli di soluzioni seguenti:
 
--   Flusso di attività
+- Flusso di attività
 
--   Diagrammi classi
+- Diagrammi classi
 
--   Linguaggio minimo
+- Linguaggio minimo
 
--   Modelli di componenti
+- Modelli di componenti
 
--   WPF minimo
+- WPF minimo
 
--   Minimo Windows. Forms
+- Minimo Windows. Forms
 
--   Libreria DSL
+- Libreria DSL
 
- Per altre informazioni, vedere [scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
+  Per altre informazioni, vedere [scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- La procedura guidata crea una soluzione di Visual Studio con i progetti seguenti:
+  La procedura guidata crea una soluzione di Visual Studio con i progetti seguenti:
 
--   Linguaggio specifico di dominio
+- Linguaggio specifico di dominio
 
-     Progetto Dsl definisce il linguaggio specifico di dominio e dei relativi strumenti di modifica e di elaborazione.
+   Progetto Dsl definisce il linguaggio specifico di dominio e dei relativi strumenti di modifica e di elaborazione.
 
--   **DslPackage**
+- **DslPackage**
 
-     Al progetto DslPackage determina la modalità di integrazione degli strumenti di linguaggio con Visual Studio.
+   Al progetto DslPackage determina la modalità di integrazione degli strumenti di linguaggio con Visual Studio.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>L'interfaccia grafica strumenti DSL
  È possibile usare l'interfaccia grafica strumenti DSL per aggiungere elementi e relazioni per il linguaggio specifico di dominio. Dopo aver aggiunto gli elementi, è possibile definire il proprio aspetto eseguendone il mapping alle forme, personalizzazione dei colori e aggiungendo gli elementi Decorator. È anche possibile aggiungere elementi alla casella degli strumenti.

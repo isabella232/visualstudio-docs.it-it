@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919910"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedure consigliate per l'utilizzo dei frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ Il codice in un frammento illustra solo il modo più semplice per eseguire un'op
 ## <a name="security"></a>Sicurezza  
  In base a dove un frammento viene usato nel codice sorgente e a come viene modificato all'interno del codice, il livello di protezione cambia. Di seguito sono elencati alcuni aspetti da considerare.  
   
--   Accesso a file e database  
+- Accesso a file e database  
   
--   Sicurezza dall'accesso di codice  
+- Sicurezza dall'accesso di codice  
   
--   Protezione delle risorse, ad esempio dei registri eventi e del Registro di sistema  
+- Protezione delle risorse, ad esempio dei registri eventi e del Registro di sistema  
   
--   Archiviazione dei segreti  
+- Archiviazione dei segreti  
   
--   Verifica degli input  
+- Verifica degli input  
   
--   Passaggio dei dati a tecnologie script  
+- Passaggio dei dati a tecnologie script  
   
- Per altre informazioni, vedere [Securing Applications](../ide/securing-applications.md) (Protezione delle applicazioni).  
+  Per altre informazioni, vedere [Securing Applications](../ide/securing-applications.md) (Protezione delle applicazioni).  
   
 ## <a name="downloaded-code-snippets"></a>Frammenti di codice scaricati  
  I frammenti di codice IntelliSense installati da Visual Studio non rappresentano di per sé un pericolo. Possono tuttavia mettere a rischio la sicurezza dell'applicazione. È necessario trattare i frammenti di codice scaricati da Internet con estrema cautela, come si è soliti fare per qualsiasi altro contenuto scaricato.  

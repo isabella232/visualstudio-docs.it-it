@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a086fc37be7d9cd8ba4d4f51c1012b6ad0ba7046
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882574"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parametri facoltativi nelle soluzioni Office
   Molti dei metodi nei modelli a oggetti delle applicazioni di Microsoft Office accettano parametri facoltativi. Se si utilizza Visual Basic per sviluppare una soluzione Office in Visual Studio, non è necessario passare un valore per i parametri facoltativi. Infatti, per ogni parametro mancante vengono utilizzati automaticamente i valori predefiniti. Nella maggior parte dei casi, è anche possibile omettere i parametri facoltativi nei progetti Visual c#. Tuttavia, non è possibile omettere facoltativo **ref** i parametri del `ThisDocument` classi nei progetti di Word a livello di documento.  
@@ -57,19 +57,19 @@ ms.locfileid: "35671830"
   
  Quando si chiamano metodi della classe `ThisDocument`, attenersi le linee guida seguenti:  
   
--   Per accettare il valore predefinito facoltativo **ref** il parametro di, pass il `missing` variabile al parametro. La variabile `missing` viene definita automaticamente nei progetti Office di Visual C# e viene assegnata al valore <xref:System.Type.Missing> nel codice di progetto generato.  
+- Per accettare il valore predefinito facoltativo **ref** il parametro di, pass il `missing` variabile al parametro. La variabile `missing` viene definita automaticamente nei progetti Office di Visual C# e viene assegnata al valore <xref:System.Type.Missing> nel codice di progetto generato.  
   
--   Per specificare il proprio valore facoltativo **ref** parametro, dichiarare un oggetto che viene assegnato il valore che si desidera specificare e quindi passare l'oggetto al parametro.  
+- Per specificare il proprio valore facoltativo **ref** parametro, dichiarare un oggetto che viene assegnato il valore che si desidera specificare e quindi passare l'oggetto al parametro.  
   
- Esempio di codice seguente viene illustrato come chiamare le <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metodo specificando un valore per il *ignoreUppercase* parametro e accettando il valore predefinito per gli altri parametri.  
+  Esempio di codice seguente viene illustrato come chiamare le <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metodo specificando un valore per il *ignoreUppercase* parametro e accettando il valore predefinito per gli altri parametri.  
   
- [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
+  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
   
- Se si desidera scrivere codice che omette facoltativo **ref** i parametri di un metodo nel `ThisDocument` (classe), è possibile in alternativa chiamare il metodo di stesso sul <xref:Microsoft.Office.Interop.Word.Document> oggetto restituito dal <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> proprietà e omettere il parametri da quel metodo. È possibile eseguire questa operazione perché <xref:Microsoft.Office.Interop.Word.Document> è un'interfaccia, non una classe.  
+  Se si desidera scrivere codice che omette facoltativo **ref** i parametri di un metodo nel `ThisDocument` (classe), è possibile in alternativa chiamare il metodo di stesso sul <xref:Microsoft.Office.Interop.Word.Document> oggetto restituito dal <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> proprietà e omettere il parametri da quel metodo. È possibile eseguire questa operazione perché <xref:Microsoft.Office.Interop.Word.Document> è un'interfaccia, non una classe.  
   
- [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
+  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Per altre informazioni sui parametri di tipo riferimento e valore, vedere [passare argomenti per valore e per riferimento &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (per Visual Basic) e [passare i parametri &#40;C&#35; Guida alla programmazione&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+  Per altre informazioni sui parametri di tipo riferimento e valore, vedere [passare argomenti per valore e per riferimento &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (per Visual Basic) e [passare i parametri &#40;C&#35; Guida alla programmazione&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)   

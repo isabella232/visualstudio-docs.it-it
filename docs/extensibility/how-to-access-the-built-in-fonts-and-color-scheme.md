@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911252"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procedura: accedere ai tipi di carattere incorporati e ccheme dei colori
 L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tipi di carattere e colori associato con la finestra dell'editor. È possibile accedere a questo schema tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.
 
  Per usare lo schema di colori e tipi di carattere predefiniti, un pacchetto VSPackage deve:
 
--   Definire una categoria da usare con il servizio predefinito, i tipi di carattere e colori.
+- Definire una categoria da usare con il servizio predefinito, i tipi di carattere e colori.
 
--   Registrare la categoria con il server predefinito di tipi di carattere e colori.
+- Registrare la categoria con il server predefinito di tipi di carattere e colori.
 
--   Indicare all'IDE che una specifica finestra Usa gli elementi visualizzati predefiniti e le categorie mediante il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfacce.
+- Indicare all'IDE che una specifica finestra Usa gli elementi visualizzati predefiniti e le categorie mediante il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfacce.
 
- L'IDE Usa la categoria risulta come un handle della finestra. Nome della categoria viene visualizzato nel **Mostra impostazioni per:** casella di riepilogo a discesa nel **Fonts and Colors** pagina delle proprietà.
+  L'IDE Usa la categoria risulta come un handle della finestra. Nome della categoria viene visualizzato nel **Mostra impostazioni per:** casella di riepilogo a discesa nel **Fonts and Colors** pagina delle proprietà.
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Per definire una categoria utilizzando i colori e tipi di carattere predefiniti
 
@@ -67,15 +67,15 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di t
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Per avviare l'uso di caratteri fornita dal sistema e i colori
 
-1.  Creare un'istanza di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia come parte dell'implementazione e l'inizializzazione della finestra.
+1. Creare un'istanza di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia come parte dell'implementazione e l'inizializzazione della finestra.
 
-2.  Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodo per ottenere un'istanza del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfaccia corrispondente all'oggetto corrente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> istanza.
+2. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodo per ottenere un'istanza del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfaccia corrispondente all'oggetto corrente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> istanza.
 
-3.  Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> due volte.
+3. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> due volte.
 
-    -   Chiamare una volta con `VSEDITPROPID_ViewGeneral_ColorCategory`come argomento.
+   - Chiamare una volta con `VSEDITPROPID_ViewGeneral_ColorCategory`come argomento.
 
-    -   Chiamare una volta con `VSEDITPROPID_ViewGeneral_FontCategory` come argomento.
+   - Chiamare una volta con `VSEDITPROPID_ViewGeneral_FontCategory` come argomento.
 
      Questo imposta ed espone i servizi di tipi di carattere e colori predefiniti come proprietà della finestra.
 

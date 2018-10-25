@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1032df2f7ebcf4cbc1eae0d4b18757a3f90c4f68
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d3b9e565e5579405fa73ea6a3de12d7c27ed7edc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926839"
 ---
 # <a name="cancellationscope-activity-designer"></a>ActivityDesigner CancellationScope
 
@@ -38,7 +38,7 @@ Il **CancellationScope** ActivityDesigner può essere trascinato dalla **della c
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.CancellationScope> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Il <xref:System.Activities.Activity.DisplayName%2A> proprietà può essere modificata nella griglia delle proprietà ma le altre proprietà deve essere modificata nell'area di progettazione del flusso di lavoro.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.CancellationScope>. Il valore predefinito è CancellationScope. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Specifica l'attività per la quale viene fornita la logica di annullamento. Per aggiungere il <xref:System.Activities.Statements.CancellationScope.Body%2A> attività, rilasciare un'attività dalla **casella degli strumenti** nel **corpo** casella il **CancellationScope** ActivityDesigner. Aggiungere il testo di suggerimento "Rilasciare l'attività".|
 |<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Specifica l'attività che viene eseguita se è presente un annullamento. Per aggiungere il <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> attività, rilasciare un'attività dalla **casella degli strumenti** nel **CancellationHandler** casella il **CancellationScope** ActivityDesigner. Aggiungere il testo di suggerimento "Rilasciare l'attività".|
@@ -47,6 +47,6 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 
 - [Transazione](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [Compensare](../workflow-designer/compensate-activity-designer.md)
-- [Confermare](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

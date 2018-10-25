@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 029cd44bc19bd279ed9b5d46a5fea53539706a23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913891"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: creazione di un nuovo file di progetto MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
  Questa procedura dettagliata mostra come creare in modo incrementale un file di progetto di base usando solo un editor di testo. I passaggi della procedura dettagliata sono i seguenti:  
   
--   Creazione di un file di origine di applicazione minimo.  
+- Creazione di un file di origine di applicazione minimo.  
   
--   Creazione di un file di progetto MSBuild minimo.  
+- Creazione di un file di progetto MSBuild minimo.  
   
--   Estensione della variabile di ambiente PATH per includere MSBuild.  
+- Estensione della variabile di ambiente PATH per includere MSBuild.  
   
--   Compilazione dell'applicazione tramite il file di progetto.  
+- Compilazione dell'applicazione tramite il file di progetto.  
   
--   Aggiunta delle proprietà per controllare la compilazione.  
+- Aggiunta delle proprietà per controllare la compilazione.  
   
--   Controllo della compilazione mediante la modifica dei valori delle proprietà.  
+- Controllo della compilazione mediante la modifica dei valori delle proprietà.  
   
--   Aggiunta delle destinazioni nella compilazione.  
+- Aggiunta delle destinazioni nella compilazione.  
   
--   Controllo della compilazione specificando le destinazioni.  
+- Controllo della compilazione specificando le destinazioni.  
   
--   Compilazione incrementale.  
+- Compilazione incrementale.  
   
- Questa procedura dettagliata mostra come compilare il progetto tramite il prompt dei comandi ed esaminarne i risultati. Per altre informazioni su MSBuild e su come eseguirlo al prompt dei comandi, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  Questa procedura dettagliata mostra come compilare il progetto tramite il prompt dei comandi ed esaminarne i risultati. Per altre informazioni su MSBuild e su come eseguirlo al prompt dei comandi, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
- Per completare la procedura dettagliata sono necessari MSBuild e il compilatore di Visual C#, entrambi disponibili in .NET Framework (versione 2.0, 3.5, 4.0 o 4.5), che deve essere installato nel sistema in uso.  
+  Per completare la procedura dettagliata sono necessari MSBuild e il compilatore di Visual C#, entrambi disponibili in .NET Framework (versione 2.0, 3.5, 4.0 o 4.5), che deve essere installato nel sistema in uso.  
   
 ## <a name="creating-a-minimal-application"></a>Creazione di un'applicazione minima  
  Questa sezione illustra come creare un file di origine di applicazione di Visual C# minimo tramite un editor di testo.  
@@ -109,39 +109,39 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>Per creare un file di progetto MSBuild minimo  
   
-1.  Nell'editor di testo, sostituire il testo esistente con le due righe seguenti:  
+1. Nell'editor di testo, sostituire il testo esistente con le due righe seguenti:  
   
-    ```  
-    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    </Project>  
-    ```  
+   ```  
+   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   </Project>  
+   ```  
   
-2.  Inserire questo nodo `ItemGroup` come elemento figlio del nodo `Project`:  
+2. Inserire questo nodo `ItemGroup` come elemento figlio del nodo `Project`:  
   
-    ```  
-    <ItemGroup>  
-      <Compile Include="helloworld.cs" />  
-    </ItemGroup>  
-    ```  
+   ```  
+   <ItemGroup>  
+     <Compile Include="helloworld.cs" />  
+   </ItemGroup>  
+   ```  
   
-     Si noti che questo nodo `ItemGroup` contiene già un elemento Item.  
+    Si noti che questo nodo `ItemGroup` contiene già un elemento Item.  
   
-3.  Aggiungere un nodo `Target` come elemento figlio del nodo `Project`. Denominare il nodo `Build`.  
+3. Aggiungere un nodo `Target` come elemento figlio del nodo `Project`. Denominare il nodo `Build`.  
   
-    ```  
-    <Target Name="Build">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="Build">  
+   </Target>  
+   ```  
   
-4.  Inserire questo elemento Task come elemento figlio del nodo `Target`:  
+4. Inserire questo elemento Task come elemento figlio del nodo `Target`:  
   
-    ```  
-    <Csc Sources="@(Compile)"/>  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)"/>  
+   ```  
   
-5.  Salvare questo file di progetto e denominarlo Helloworld.csproj.  
+5. Salvare questo file di progetto e denominarlo Helloworld.csproj.  
   
- Il file di progetto minimo sarà simile al codice seguente:  
+   Il file di progetto minimo sarà simile al codice seguente:  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -201,36 +201,36 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 #### <a name="to-add-build-properties"></a>Per aggiungere le proprietà di compilazione  
   
-1.  Eliminare l'applicazione esistente digitando **del helloworld.exe** al prompt dei comandi.  
+1. Eliminare l'applicazione esistente digitando **del helloworld.exe** al prompt dei comandi.  
   
-2.  Nel file di progetto, inserire l'elemento `PropertyGroup` subito dopo l'elemento `Project` di apertura:  
+2. Nel file di progetto, inserire l'elemento `PropertyGroup` subito dopo l'elemento `Project` di apertura:  
   
-    ```  
-    <PropertyGroup>  
-      <AssemblyName>MSBuildSample</AssemblyName>  
-      <OutputPath>Bin\</OutputPath>  
-    </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup>  
+     <AssemblyName>MSBuildSample</AssemblyName>  
+     <OutputPath>Bin\</OutputPath>  
+   </PropertyGroup>  
+   ```  
   
-3.  Aggiungere questa attività alla destinazione Build subito prima dell'attività `Csc`:  
+3. Aggiungere questa attività alla destinazione Build subito prima dell'attività `Csc`:  
   
-    ```  
-    <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
-    ```  
+   ```  
+   <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
+   ```  
   
-     L'attività `MakeDir` crea una cartella con il nome specificato nella proprietà `OutputPath`, a condizione che al momento non esistano altre cartelle con lo stesso nome.  
+    L'attività `MakeDir` crea una cartella con il nome specificato nella proprietà `OutputPath`, a condizione che al momento non esistano altre cartelle con lo stesso nome.  
   
-4.  Aggiungere questo attributo `OutputAssembly` all'attività `Csc`:  
+4. Aggiungere questo attributo `OutputAssembly` all'attività `Csc`:  
   
-    ```  
-    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
+   ```  
   
-     In questo modo il compilatore di Visual C# genera un assembly denominato dalla proprietà `AssemblyName` e lo inserisce nella cartella denominata dalla proprietà `OutputPath`.  
+    In questo modo il compilatore di Visual C# genera un assembly denominato dalla proprietà `AssemblyName` e lo inserisce nella cartella denominata dalla proprietà `OutputPath`.  
   
-5.  Salvare le modifiche.  
+5. Salvare le modifiche.  
   
- Il file di progetto sarà ora simile al codice seguente:  
+   Il file di progetto sarà ora simile al codice seguente:  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -279,34 +279,34 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 ## <a name="adding-build-targets"></a>Aggiunta di destinazioni di compilazione  
  A questo punto, aggiungere altre due destinazioni al file di progetto, come segue:  
   
--   Una destinazione Clean che elimina i file meno recenti.  
+- Una destinazione Clean che elimina i file meno recenti.  
   
--   Una destinazione Rebuild che usa l'attributo `DependsOnTargets` per forzare l'esecuzione dell'attività Clean prima dell'attività Build.  
+- Una destinazione Rebuild che usa l'attributo `DependsOnTargets` per forzare l'esecuzione dell'attività Clean prima dell'attività Build.  
   
- Ora che sono presenti più destinazioni è possibile impostare la destinazione Build come destinazione predefinita.  
+  Ora che sono presenti più destinazioni è possibile impostare la destinazione Build come destinazione predefinita.  
   
 #### <a name="to-add-build-targets"></a>Per aggiungere destinazioni di compilazione  
   
-1.  Nel file di progetto, aggiungere subito dopo la destinazione Build le due destinazioni seguenti:  
+1. Nel file di progetto, aggiungere subito dopo la destinazione Build le due destinazioni seguenti:  
   
-    ```  
-    <Target Name="Clean" >  
-      <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
-    </Target>  
-    <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
-    ```  
+   ```  
+   <Target Name="Clean" >  
+     <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
+   </Target>  
+   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
+   ```  
   
-     La destinazione Clean richiama l'attività Delete per eliminare l'applicazione. La destinazione Rebuild viene eseguita solo dopo l'esecuzione di entrambe le destinazioni Clean e Build. Anche se è priva di attività, la destinazione Rebuild comporta l'esecuzione della destinazione Clean prima della destinazione Build.  
+    La destinazione Clean richiama l'attività Delete per eliminare l'applicazione. La destinazione Rebuild viene eseguita solo dopo l'esecuzione di entrambe le destinazioni Clean e Build. Anche se è priva di attività, la destinazione Rebuild comporta l'esecuzione della destinazione Clean prima della destinazione Build.  
   
-2.  Aggiungere questo attributo `DefaultTargets` all'elemento `Project` di apertura:  
+2. Aggiungere questo attributo `DefaultTargets` all'elemento `Project` di apertura:  
   
-    ```  
-    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    ```  
+   ```  
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   ```  
   
-     La destinazione Build viene impostata come destinazione predefinita.  
+    La destinazione Build viene impostata come destinazione predefinita.  
   
- Il file di progetto sarà ora simile al codice seguente:  
+   Il file di progetto sarà ora simile al codice seguente:  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

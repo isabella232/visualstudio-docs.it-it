@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907703"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modello di un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Un servizio di linguaggio definisce gli elementi e le funzionalità per una ling
 ## <a name="a-minimal-language-service"></a>Un servizio di linguaggio minimo  
  Il servizio di linguaggio più semplice contiene i due oggetti seguenti:  
   
--   Il *servizio di linguaggio* implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaccia. Un servizio di linguaggio conterrà informazioni sul linguaggio, inclusi nome, estensioni di file, gestione di finestre di codice e colorizzatore.  
+- Il *servizio di linguaggio* implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaccia. Un servizio di linguaggio conterrà informazioni sul linguaggio, inclusi nome, estensioni di file, gestione di finestre di codice e colorizzatore.  
   
--   Il *colorizzatore* implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfaccia.  
+- Il *colorizzatore* implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfaccia.  
   
- La rappresentazione concettuale seguente illustra un modello di un servizio di linguaggio di base.  
+  La rappresentazione concettuale seguente illustra un modello di un servizio di linguaggio di base.  
   
- ![Rappresentazione grafica del modello di servizio di linguaggio](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Modello di servizio di linguaggio di base  
+  ![Rappresentazione grafica del modello di servizio di linguaggio](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  Modello di servizio di linguaggio di base  
   
- Gli host della finestra documento la *visualizzazione di documenti* dell'editor, in questo caso il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor principale. La visualizzazione del documento e il buffer di testo sono di proprietà dall'editor. Questi oggetti rivolgersi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tramite una finestra del documento specializzato chiamato un *finestra del codice*. La finestra del codice è contenuta in un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> oggetto che viene creato e controllato dall'IDE.  
+  Gli host della finestra documento la *visualizzazione di documenti* dell'editor, in questo caso il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor principale. La visualizzazione del documento e il buffer di testo sono di proprietà dall'editor. Questi oggetti rivolgersi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tramite una finestra del documento specializzato chiamato un *finestra del codice*. La finestra del codice è contenuta in un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> oggetto che viene creato e controllato dall'IDE.  
   
- Quando viene caricato un file con una determinata estensione, l'editor consente di individuare il servizio di linguaggio associato a tale estensione e passa a tale finestra del codice chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> (metodo). Il servizio di linguaggio restituisce un *gestione di finestre di codice*, che implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfaccia.  
+  Quando viene caricato un file con una determinata estensione, l'editor consente di individuare il servizio di linguaggio associato a tale estensione e passa a tale finestra del codice chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> (metodo). Il servizio di linguaggio restituisce un *gestione di finestre di codice*, che implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfaccia.  
   
- Nella tabella seguente fornisce una panoramica degli oggetti nel modello.  
+  Nella tabella seguente fornisce una panoramica degli oggetti nel modello.  
   
 |Componente|Object|Funzione|  
 |---------------|------------|--------------|  

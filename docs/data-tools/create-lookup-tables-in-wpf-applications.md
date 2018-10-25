@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924200"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca nelle applicazioni WPF
 Il termine *tabella di ricerca* (talvolta chiamato un *binding di ricerca*) descrive un controllo che visualizza le informazioni da una tabella dati in base al valore di un campo di chiave esterna in un'altra tabella. È possibile creare una tabella di ricerca trascinando il nodo principale di una tabella padre o dell'oggetto nel **Zdroje dat** finestra in un controllo che è già associato a una colonna o proprietà in una tabella figlio correlata.
@@ -83,7 +83,7 @@ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni
      Visual Studio configura alcune proprietà sul controllo per configurare il binding di ricerca. Nella tabella seguente sono elencate le proprietà modificate da Visual Studio. Se necessario, è possibile modificare queste proprietà nel XAML o nel **proprietà** finestra.
 
     |Proprietà|Spiegazione dell'impostazione|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Questa proprietà specifica la raccolta o associazione usato per ottenere i dati che viene visualizzati nel controllo. Visual Studio imposta questa proprietà il <xref:System.Windows.Data.CollectionViewSource> per i dati padre è stato trascinato al controllo.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Questa proprietà specifica il percorso dell'elemento di dati che viene visualizzato nel controllo. Visual Studio imposta questa proprietà per la prima colonna o proprietà nei dati di padre, dopo la chiave primaria, con un tipo di dati stringa.<br /><br /> Se si desidera visualizzare una colonna diversa o proprietà nei dati dell'elemento padre, è possibile modificare questa proprietà per il percorso di una proprietà diversa.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio, questa proprietà viene associato alla colonna o alla proprietà dei dati che è stato trascinato nella finestra di progettazione figlio. Si tratta della chiave esterna per i dati padre.|

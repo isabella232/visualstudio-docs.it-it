@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8034ae225707ec6030daba39ed09bab3bd161c4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926683"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creazione di un linguaggio specifico di dominio basato su Windows Form
 È possibile usare Windows Form per visualizzare lo stato di un modello di linguaggio specifico di dominio (DSL), invece di usare un diagramma DSL. In questo argomento illustra l'associazione di un Windows Form a un linguaggio DSL, utilizzando la visualizzazione e Visual Studio SDK di modellazione.
@@ -26,30 +26,32 @@ ms.locfileid: "47859523"
 
 #### <a name="to-create-a-minimal-winforms-dsl"></a>Per creare un DSL WinForms minimo
 
-1.  Creare un DSL dal **Progettazione Windows Form minimo** modello.
+1. Creare un DSL dal **Progettazione Windows Form minimo** modello.
 
-     In questa procedura dettagliata, si presuppone che i nomi seguenti:
+    In questa procedura dettagliata, si presuppone che i nomi seguenti:
 
-    |||
-    |-|-|
-    |Nome di soluzione e DSL|FarmApp|
-    |Spazio dei nomi|Company.FarmApp|
 
-2.  Provare a usare l'esempio iniziale forniti dal modello:
+   | | |
+   |-|-|
+   | Nome di soluzione e DSL | FarmApp |
+   | Spazio dei nomi | Company.FarmApp |
 
-    1.  Trasforma tutti i modelli.
 
-    2.  Compilare ed eseguire il codice di esempio (**CTRL+F5**).
+2. Provare a usare l'esempio iniziale forniti dal modello:
 
-    3.  Nell'istanza sperimentale di Visual Studio, aprire il `Sample` file nel progetto di debug.
+   1.  Trasforma tutti i modelli.
 
-         Si noti che viene visualizzato in un controllo Windows Form.
+   2.  Compilare ed eseguire il codice di esempio (**CTRL+F5**).
 
-         È anche possibile visualizzare gli elementi del modello visualizzato nella finestra di esplorazione.
+   3.  Nell'istanza sperimentale di Visual Studio, aprire il `Sample` file nel progetto di debug.
 
-         Aggiungere alcuni elementi nel form o finestra di esplorazione e notare che vengono visualizzati nella sezione delle altre opzioni.
+        Si noti che viene visualizzato in un controllo Windows Form.
 
- Nell'istanza principale di Visual Studio, si noti che i punti seguenti circa soluzione DSL:
+        È anche possibile visualizzare gli elementi del modello visualizzato nella finestra di esplorazione.
+
+        Aggiungere alcuni elementi nel form o finestra di esplorazione e notare che vengono visualizzati nella sezione delle altre opzioni.
+
+   Nell'istanza principale di Visual Studio, si noti che i punti seguenti circa soluzione DSL:
 
 -   `DslDefinition.dsl` non contiene alcun elemento diagramma. Questo avviene perché non si utilizzerà i diagrammi DSL per visualizzare i modelli di istanza di questo DSL. Al contrario, si assocerà un Form Windows al modello e gli elementi nel form verranno visualizzato il modello.
 
@@ -132,30 +134,30 @@ ms.locfileid: "47859523"
 
 #### <a name="to-connect-your-model-to-a-form"></a>Per connettere il modello a un form
 
-1.  Nel **dell'interfaccia utente** progetto, eliminare tutti i file con estensione cs esistente.
+1. Nel **dell'interfaccia utente** progetto, eliminare tutti i file con estensione cs esistente.
 
-2.  Aggiungere un nuovo **UserControl** file denominato `FarmControl` per il **dell'interfaccia utente** progetto.
+2. Aggiungere un nuovo **UserControl** file denominato `FarmControl` per il **dell'interfaccia utente** progetto.
 
-3.  Nel **Zdroje dat** finestra, nel menu a discesa **Farm**, scegliere **dettagli**.
+3. Nel **Zdroje dat** finestra, nel menu a discesa **Farm**, scegliere **dettagli**.
 
-     Lasciare le impostazioni predefinite per le altre proprietà.
+    Lasciare le impostazioni predefinite per le altre proprietà.
 
-4.  Aprire FarmControl.cs nella visualizzazione progettazione.
+4. Aprire FarmControl.cs nella visualizzazione progettazione.
 
-     Trascinare **Farm** dalla finestra Origini dati FarmControl.
+    Trascinare **Farm** dalla finestra Origini dati FarmControl.
 
-     Un set di controlli viene visualizzata, una per ogni proprietà. Le proprietà della relazione non generano controlli.
+    Un set di controlli viene visualizzata, una per ogni proprietà. Le proprietà della relazione non generano controlli.
 
-5.  Eliminare **farmBindingNavigator**. Viene generato anche automaticamente nel `FarmControl` progettazione, ma non è utile per questa applicazione.
+5. Eliminare **farmBindingNavigator**. Viene generato anche automaticamente nel `FarmControl` progettazione, ma non è utile per questa applicazione.
 
-6.  Usando la casella degli strumenti, creare due istanze di **DataGridView**e denominarli `AnimalGridView` e `FieldGridView`.
+6. Usando la casella degli strumenti, creare due istanze di **DataGridView**e denominarli `AnimalGridView` e `FieldGridView`.
 
-    > [!NOTE]
-    >  Un'alternativa consiste nel trascinare gli elementi di animali e campi dalla finestra Origini dati nel controllo. Questa azione crea automaticamente le griglie dei dati e le associazioni tra la visualizzazione griglia e l'origine dati. Tuttavia, questa associazione non funziona correttamente per linguaggi specifici di dominio. Pertanto è preferibile creare le griglie dei dati e le associazioni manualmente.
+   > [!NOTE]
+   >  Un'alternativa consiste nel trascinare gli elementi di animali e campi dalla finestra Origini dati nel controllo. Questa azione crea automaticamente le griglie dei dati e le associazioni tra la visualizzazione griglia e l'origine dati. Tuttavia, questa associazione non funziona correttamente per linguaggi specifici di dominio. Pertanto è preferibile creare le griglie dei dati e le associazioni manualmente.
 
-7.  Se la casella degli strumenti non contiene il **ModelingBindingSource** dello strumento, aggiungerlo. Menu di scelta rapida del **Data** scheda, scegliere **Scegli elementi**. Nel **Scegli elementi della casella degli strumenti** finestra di dialogo, seleziona **ModelingBindingSource** dal **scheda Framework .NET**.
+7. Se la casella degli strumenti non contiene il **ModelingBindingSource** dello strumento, aggiungerlo. Menu di scelta rapida del **Data** scheda, scegliere **Scegli elementi**. Nel **Scegli elementi della casella degli strumenti** finestra di dialogo, seleziona **ModelingBindingSource** dal **scheda Framework .NET**.
 
-8.  Usando la casella degli strumenti, creare due istanze di **ModelingBindingSource**e denominarli `AnimalBinding` e `FieldBinding`.
+8. Usando la casella degli strumenti, creare due istanze di **ModelingBindingSource**e denominarli `AnimalBinding` e `FieldBinding`.
 
 9. Impostare il **DataSource** proprietà di ciascuno **ModelingBindingSource** al **farmBindingSource**.
 
@@ -165,15 +167,15 @@ ms.locfileid: "47859523"
 
 11. Modificare il layout del controllo Farm a piacimento.
 
- Il **ModelingBindingSource** è un adattatore che esegue diverse funzioni che sono specifiche per linguaggi specifici di dominio:
+    Il **ModelingBindingSource** è un adattatore che esegue diverse funzioni che sono specifiche per linguaggi specifici di dominio:
 
--   Esegue il wrapping degli aggiornamenti in una transazione di Store VMSDK.
+- Esegue il wrapping degli aggiornamenti in una transazione di Store VMSDK.
 
-     Ad esempio, quando l'utente elimina una riga nella griglia di visualizzazione dei dati, un'associazione regolare comporta un'eccezione di transazione.
+   Ad esempio, quando l'utente elimina una riga nella griglia di visualizzazione dei dati, un'associazione regolare comporta un'eccezione di transazione.
 
--   Assicura che, quando l'utente seleziona una riga, la finestra proprietà vengono visualizzate le proprietà dell'elemento del modello corrispondente, anziché sulla riga della griglia di dati.
+- Assicura che, quando l'utente seleziona una riga, la finestra proprietà vengono visualizzate le proprietà dell'elemento del modello corrispondente, anziché sulla riga della griglia di dati.
 
- ![DslWpf4](../modeling/media/dslwpf4.png) dello Schema dei collegamenti tra le origini dati e viste.
+  ![DslWpf4](../modeling/media/dslwpf4.png) dello Schema dei collegamenti tra le origini dati e viste.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Per completare le associazioni per il linguaggio DSL
 
@@ -247,62 +249,60 @@ ms.locfileid: "47859523"
 
 #### <a name="to-provide-add-buttons"></a>Per fornire pulsanti Aggiungi
 
-1.  Nella visualizzazione progettazione di FarmControl.cs, usare la casella degli strumenti per creare un pulsante nel form.
+1. Nella visualizzazione progettazione di FarmControl.cs, usare la casella degli strumenti per creare un pulsante nel form.
 
-     Modificare il nome e il testo del pulsante, ad esempio a `New Sheep`.
+    Modificare il nome e il testo del pulsante, ad esempio a `New Sheep`.
 
-2.  Aprire il codice dietro il pulsante (ad esempio facendovi doppio).
+2. Aprire il codice dietro il pulsante (ad esempio facendovi doppio).
 
-     Modificare come indicato di seguito:
+    Modificare come indicato di seguito:
 
-    ```csharp
-    private void NewSheepButton_Click(object sender, EventArgs e)
-    {
-      using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
-      {
-        elementOperations.MergeElementGroup(farm,
-          new ElementGroup(new Sheep(farm.Partition)));
-        t.Commit();
-      }
-    }
+   ```csharp
+   private void NewSheepButton_Click(object sender, EventArgs e)
+   {
+     using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
+     {
+       elementOperations.MergeElementGroup(farm,
+         new ElementGroup(new Sheep(farm.Partition)));
+       t.Commit();
+     }
+   }
 
-    // The following code is shared with other add buttons:
-    private ElementOperations operationsCache = null;
-    private ElementOperations elementOperations
-    {
-      get
-      {
-        if (operationsCache == null)
-        {
-          operationsCache = new ElementOperations(farm.Store, farm.Partition);
-        }
-        return operationsCache;
-      }
-    }
-    private Farm farm
-    {
-      get { return this.farmBindingSource.DataSource as Farm; }
-    }
+   // The following code is shared with other add buttons:
+   private ElementOperations operationsCache = null;
+   private ElementOperations elementOperations
+   {
+     get
+     {
+       if (operationsCache == null)
+       {
+         operationsCache = new ElementOperations(farm.Store, farm.Partition);
+       }
+       return operationsCache;
+     }
+   }
+   private Farm farm
+   {
+     get { return this.farmBindingSource.DataSource as Farm; }
+   }
+   ```
 
-    ```
+    È necessario anche inserire la direttiva seguente:
 
-     È necessario anche inserire la direttiva seguente:
+   ```csharp
 
-    ```csharp
+   using Microsoft.VisualStudio.Modeling;
+   ```
 
-    using Microsoft.VisualStudio.Modeling;
+3. Aggiungere pulsanti simile per caprini e i campi.
 
-    ```
+4. Compilare ed eseguire la soluzione.
 
-3.  Aggiungere pulsanti simile per caprini e i campi.
+5. Verificare che il nuovo pulsante Aggiunge un elemento. Il nuovo elemento deve essere visualizzato in entrambe le soluzioni FarmApp o nella visualizzazione griglia dei dati appropriati.
 
-4.  Compilare ed eseguire la soluzione.
+    Dovrebbe essere possibile modificare il nome dell'elemento nella visualizzazione griglia dei dati. È anche possibile eliminarlo da tale posizione.
 
-5.  Verificare che il nuovo pulsante Aggiunge un elemento. Il nuovo elemento deve essere visualizzato in entrambe le soluzioni FarmApp o nella visualizzazione griglia dei dati appropriati.
-
-     Dovrebbe essere possibile modificare il nome dell'elemento nella visualizzazione griglia dei dati. È anche possibile eliminarlo da tale posizione.
-
- ![Linguaggio specifico di dominio&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![Linguaggio specifico di dominio&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informazioni sul codice per aggiungere un elemento
  Per i pulsanti del nuovo elemento, il seguente codice alternativo è leggermente più semplice.
@@ -316,7 +316,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
     t.Commit();
   }
 }
-
 ```
 
  Tuttavia, questo codice non impostare un nome predefinito per il nuovo elemento. Non può essere eseguito alcun merge personalizzato che è stata definita nel **direttive di unione elementi** del linguaggio DSL, e non può essere eseguito qualsiasi codice personalizzato di tipo merge che potrebbe essere stato definito.

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::EnumMembers | Documenti Microsoft
+title: IDebugProperty::EnumMembers | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9cb57f2609fcd9a80e2a9e0dfd63637e6f700047
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07ad47ee8d0232df5f528db659def421475e7b33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924244"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
 Enumera i membri di una proprietà.  
@@ -41,19 +41,19 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>Parametri  
  `dwFieldSpec`  
- [in] Specifica il `DBGPROP_INFO_FLAGS` costanti che determinano quali campi nelle strutture di proprietà di debug enumerato sono da compilare.  
+ [in] Specifica il `DBGPROP_INFO_FLAGS` costanti che determinano quali campi nelle strutture di proprietà di debug enumerati sono da compilare.  
   
  `nRadix`  
- [in] Base per essere utilizzato per interpretare le informazioni numeriche.  
+ [in] Radice da utilizzare nell'interpretare le informazioni numeriche.  
   
  `refiid`  
- [in] Questo IID viene passato per il filtro dell'enumeratore. L'IID fa parte di `IDebugPropertyEnumType` interfacce da cui ereditare `IDebugPropertyEnumType_All`.  
+ [in] Questo IID viene passato per il filtro dell'enumeratore. IID è uno dei `IDebugPropertyEnumType` interfacce da cui ereditare `IDebugPropertyEnumType_All`.  
   
  `ppEnum`  
- [out] Restituisce il `IEnumDebugPropertyInfo` interfaccia che enumera le proprietà del membro.  
+ [out] Restituisce il `IEnumDebugPropertyInfo` interfaccia che enumera le proprietà dei membri.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un oggetto valido `HRESULT`, in genere `S_OK`.  
+ Restituisce un valore valido `HRESULT`, in genere `S_OK`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   

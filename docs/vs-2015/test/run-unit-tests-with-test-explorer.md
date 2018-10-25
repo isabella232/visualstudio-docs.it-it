@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846837"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 ###  <a name="BKMK_Run_tests"></a> Eseguire i test  
  È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:  
   
--   Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.  
+- Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.  
   
--   Per eseguire tutti i test in un gruppo predefinito, scegliere **Esegui...** e quindi scegliere il gruppo dal menu.  
+- Per eseguire tutti i test in un gruppo predefinito, scegliere **Esegui...** e quindi scegliere il gruppo dal menu.  
   
--   Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati**.  
+- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati**.  
   
--   Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.  
+- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.  
   
- Mentre il test viene eseguito, la barra Superato/Non superato nella parte superiore della finestra Esplora test mostra un'animazione. Al termine dell'esecuzione del test, la barra Superato/Non superato diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.  
+  Mentre il test viene eseguito, la barra Superato/Non superato nella parte superiore della finestra Esplora test mostra un'animazione. Al termine dell'esecuzione del test, la barra Superato/Non superato diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.  
   
- ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
+  ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> Eseguire test dopo ogni compilazione  
   
@@ -102,19 +102,19 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
   
  Il riquadro dei dettagli del test mostra le informazioni seguenti:  
   
--   Nome del file di origine e numero di riga del metodo di test.  
+- Nome del file di origine e numero di riga del metodo di test.  
   
--   Stato del test.  
+- Stato del test.  
   
--   Tempo impiegato per l'esecuzione del metodo di test.  
+- Tempo impiegato per l'esecuzione del metodo di test.  
   
- Se il test non viene superato, il riquadro dei dettagli mostra anche le informazioni seguenti:  
+  Se il test non viene superato, il riquadro dei dettagli mostra anche le informazioni seguenti:  
   
--   Messaggio restituito dal framework di unit test per il test.  
+- Messaggio restituito dal framework di unit test per il test.  
   
--   Analisi dello stack al momento del mancato superamento del test.  
+- Analisi dello stack al momento del mancato superamento del test.  
   
- ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
+  ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Visualizzare il codice sorgente di un metodo di test  
  Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e quindi scegliere **Apri Test** dal menu di scelta rapida (tastiera: F12).  
@@ -197,13 +197,13 @@ TEST_METHOD(Method1)
   
  Per filtrare in base a un criterio diverso:  
   
-1.  Aprire l'elenco a discesa a destra della casella di ricerca.  
+1. Aprire l'elenco a discesa a destra della casella di ricerca.  
   
-2.  Scegliere un nuovo criterio.  
+2. Scegliere un nuovo criterio.  
   
-3.  Immettere il valore di filtro tra virgolette.  
+3. Immettere il valore di filtro tra virgolette.  
   
- ![Filtrare i test in Esplora test](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![Filtrare i test in Esplora test](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.  
@@ -255,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a> Eseguire il debug di unit test  
  È possibile usare Esplora test per avviare una sessione di debug per i test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:  
   
-1.  Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.  
+1. Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.  
   
-    > [!NOTE]
-    >  Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.  
+   > [!NOTE]
+   >  Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.  
   
-2.  In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.  
+2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.  
   
- Per altre informazioni sul debugger, vedere [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).  
+   Per altre informazioni sul debugger, vedere [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).  
   
- ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
+   ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnosticare i problemi di prestazioni dei metodi di test  
  Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora Test e quindi scegliere Profilo dal menu di scelta rapida. Vedere [Esplora prestazioni](../profiling/performance-explorer.md).  
@@ -278,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Per eseguire il code coverage per i metodi di test in una soluzione:  
   
-1.  Scegliere **Test** dal menu di Visual Studio e quindi scegliere **Analizza code coverage**.  
+1. Scegliere **Test** dal menu di Visual Studio e quindi scegliere **Analizza code coverage**.  
   
-2.  Scegliere uno dei comandi seguenti dal sottomenu:  
+2. Scegliere uno dei comandi seguenti dal sottomenu:  
   
-    -   **Test selezionati** esegue i metodi di test selezionati in Esplora test.  
+   -   **Test selezionati** esegue i metodi di test selezionati in Esplora test.  
   
-    -   **Tutti i test** esegue tutti i metodi di test nella soluzione.  
+   -   **Tutti i test** esegue tutti i metodi di test nella soluzione.  
   
- La finestra Risultati code coverage mostra la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.  
+   La finestra Risultati code coverage mostra la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.  
   
- Per altre informazioni, vedere [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
+   Per altre informazioni, vedere [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
+   ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> Risorse esterne  
   

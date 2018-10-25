@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetLocale | Documenti Microsoft
+title: IDebugEngine2::SetLocale | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eca2f05c290f27a6c3037ef14cbf32fd219b6253
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5575a96a438cc0dced0e1508776320747bf4d921
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866038"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 Imposta le impostazioni locali del motore di debug (DE).  
@@ -41,13 +41,13 @@ int SetLocale(
   
 #### <a name="parameters"></a>Parametri  
  `wLangID`  
- [in] Specifica le impostazioni locali della lingua. Ad esempio 1033 per l'inglese.  
+ [in] Specifica le impostazioni locali della lingua. Ad esempio, 1033 per inglese.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene chiamato dal gestore di sessione di debug (SDM) per propagare le impostazioni locali dell'IDE in modo che le stringhe restituite per la Germania sono localizzate in modo corretto.  
+ Questo metodo viene chiamato dal gestore di sessione di debug (SDM) per la propagazione delle impostazioni locali dell'IDE in modo che le stringhe restituite per la Germania sono localizzate correttamente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

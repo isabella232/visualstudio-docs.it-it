@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926462"
 ---
 # <a name="deploy-custom-start-pages"></a>Distribuire le pagine iniziali personalizzate
 
@@ -42,17 +42,17 @@ Il modello di progetto di pagina iniziale Crea una copia del valore predefinito 
 
  Per creare una distribuzione VSIX senza usare il modello di progetto di pagina iniziale, creare prima di tutto una *VSIX* file per la pagina di avvio in uno dei due modi:
 
--   Aggiungendo i file della pagina iniziale personalizzati per un progetto VSIX vuoto. Per altre informazioni, vedere [modello di progetto VSIX](../extensibility/vsix-project-template.md).
+- Aggiungendo i file della pagina iniziale personalizzati per un progetto VSIX vuoto. Per altre informazioni, vedere [modello di progetto VSIX](../extensibility/vsix-project-template.md).
 
--   Creando manualmente un *VSIX* file. Per creare un *VSIX* file manualmente:
+- Creando manualmente un *VSIX* file. Per creare un *VSIX* file manualmente:
 
-    1.  Creare il *Extension. vsixmanifest* file e il *[Content_Types] XML* file in una nuova cartella. Per altre informazioni, vedere [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+  1.  Creare il *Extension. vsixmanifest* file e il *[Content_Types] XML* file in una nuova cartella. Per altre informazioni, vedere [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-    2.  In Windows Explorer, fare doppio clic la cartella che contiene i due file XML, fare clic su **Invia a**e quindi fare clic sulla cartella compressa. Rinominare l'oggetto risultante *zip* del file ai *Filename.vsix*, in cui nomefile è il nome del file ridistribuibile che installa il pacchetto.
+  2.  In Windows Explorer, fare doppio clic la cartella che contiene i due file XML, fare clic su **Invia a**e quindi fare clic sulla cartella compressa. Rinominare l'oggetto risultante *zip* del file ai *Filename.vsix*, in cui nomefile è il nome del file ridistribuibile che installa il pacchetto.
 
- Per Visual Studio riconosca una pagina iniziale, il `Content Element` del manifesto VSIX deve contenere un `CustomExtension Element` con il `Type` attributo impostato su `"StartPage"`. Viene visualizzata un'estensione di pagina iniziale che è stata installata utilizzando la distribuzione VSIX nel **Personalizza pagina iniziale** elenco il **avvio** pagina Opzioni come **[estensione installata]** *Nome dell'estensione*.
+  Per Visual Studio riconosca una pagina iniziale, il `Content Element` del manifesto VSIX deve contenere un `CustomExtension Element` con il `Type` attributo impostato su `"StartPage"`. Viene visualizzata un'estensione di pagina iniziale che è stata installata utilizzando la distribuzione VSIX nel **Personalizza pagina iniziale** elenco il **avvio** pagina Opzioni come **[estensione installata]** *Nome dell'estensione*.
 
- Se il pacchetto di pagina iniziale include gli assembly, è necessario aggiungere la registrazione di percorso di associazione in modo che siano disponibili quando si avvia Visual Studio. A tale scopo, assicurarsi che il pacchetto includa un *pkgdef* file che contiene le informazioni seguenti.
+  Se il pacchetto di pagina iniziale include gli assembly, è necessario aggiungere la registrazione di percorso di associazione in modo che siano disponibili quando si avvia Visual Studio. A tale scopo, assicurarsi che il pacchetto includa un *pkgdef* file che contiene le informazioni seguenti.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -85,7 +85,7 @@ Il modello di progetto di pagina iniziale Crea una copia del valore predefinito 
      Indica a Visual Studio per la ricerca nella nuova posizione della pagina iniziale.
 
 ## <a name="file-copy-deployment"></a>Distribuzione tramite Copia file
- Non è necessario creare un *VSIX* file per la distribuzione di una pagina iniziale personalizzata. Al contrario, è possibile copiare i file di supporto direttamente in dell'utente e il markup * \StartPages\* cartella. Il **Personalizza pagina iniziale** elenco il **avvio** opzioni pagina elenca ogni *XAML* file in tale cartella, con il percorso, ovvero, ad esempio, *% UserProfile%\My Documenti\Visual Studio {version} \StartPages\\{File Name} con estensione XAML*. Se la pagina iniziale include i riferimenti agli assembly privato, è necessario copiarli e incollarli nel * \PrivateAssemblies\* cartella.
+ Non è necessario creare un *VSIX* file per la distribuzione di una pagina iniziale personalizzata. Al contrario, è possibile copiare i file di supporto direttamente in dell'utente e il markup <em>\StartPages\* cartella. Il **Personalizza pagina iniziale</em>*  elenco il **avvio** opzioni pagina elenca ogni *XAML* file in tale cartella, con il percorso, ovvero, ad esempio, *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\/{nome File}. XAML*. Se la pagina iniziale include i riferimenti agli assembly privato, è necessario copiarli e incollarli nel * \PrivateAssemblies\* cartella.
 
  Per distribuire una pagina iniziale creato senza comprimerlo in un *VSIX* , è consigliabile utilizzare una strategia di copia del file di base, ad esempio, uno script di batch, o qualsiasi altra tecnologia di distribuzione che consente di inserire i file di Directory obbligatorie.
 

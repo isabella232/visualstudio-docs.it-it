@@ -22,12 +22,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891752"
 ---
 # <a name="link-model-elements-and-work-items"></a>Collegare elementi di modello ed elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ ms.locfileid: "49263926"
   
  È possibile ad esempio eseguire le attività indicate di seguito.  
   
--   Collegare un elemento di lavoro di una storia utente con un diagramma attività per mostrare il modo in cui la storia viene interpretata come una sequenza di operazioni.  
+- Collegare un elemento di lavoro di una storia utente con un diagramma attività per mostrare il modo in cui la storia viene interpretata come una sequenza di operazioni.  
   
--   Collegare un diagramma caso di utilizzo agli elementi di lavoro del test case per garantire che il caso di utilizzo sia implementato in modo corretto.  
+- Collegare un diagramma caso di utilizzo agli elementi di lavoro del test case per garantire che il caso di utilizzo sia implementato in modo corretto.  
   
--   Collegare un attributo in una classe di un diagramma classi UML a un elemento di lavoro bug per mostrare un errore nell'implementazione dell'attributo.  
+- Collegare un attributo in una classe di un diagramma classi UML a un elemento di lavoro bug per mostrare un errore nell'implementazione dell'attributo.  
   
--   Collegare un componente in un diagramma componente a un elemento di lavoro di attività per tenere traccia dello sviluppo del componente. Tale attività è generalmente suddivisa in attività minori  
+- Collegare un componente in un diagramma componente a un elemento di lavoro di attività per tenere traccia dello sviluppo del componente. Tale attività è generalmente suddivisa in attività minori  
   
- È possibile collegare elementi di lavoro a qualsiasi elemento che è possibile selezionare nei diagrammi di modellazione oppure in Esplora modelli UML.  
+  È possibile collegare elementi di lavoro a qualsiasi elemento che è possibile selezionare nei diagrammi di modellazione oppure in Esplora modelli UML.  
   
--   Tutti gli elementi nei modelli UML, ad esempio classi UML, linee di vita, casi di utilizzo, sottosistemi, attività, nodi oggetto, componenti, interfacce.  
+- Tutti gli elementi nei modelli UML, ad esempio classi UML, linee di vita, casi di utilizzo, sottosistemi, attività, nodi oggetto, componenti, interfacce.  
   
--   Tutte le relazioni nei modelli UML, ad esempio associazioni, generalizzazioni, dipendenze, flussi, messaggi.  
+- Tutte le relazioni nei modelli UML, ad esempio associazioni, generalizzazioni, dipendenze, flussi, messaggi.  
   
--   Parti di elementi, quali gli attributi e le operazioni di classi, le occorrenze dell'esecuzione di linee di vita, il pin di input e di output delle attività e le parti e le porte di componenti.  
+- Parti di elementi, quali gli attributi e le operazioni di classi, le occorrenze dell'esecuzione di linee di vita, il pin di input e di output delle attività e le parti e le porte di componenti.  
   
--   Livelli e dipendenze del livello.  
+- Livelli e dipendenze del livello.  
   
--   Commenti e collegamenti al commento.  
+- Commenti e collegamenti al commento.  
   
--   Diagrammi. Per selezionare un diagramma, scegliere una parte vuota del diagramma.  
+- Diagrammi. Per selezionare un diagramma, scegliere una parte vuota del diagramma.  
   
 > [!WARNING]
 >  Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  

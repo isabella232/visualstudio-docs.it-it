@@ -16,27 +16,27 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1abb0905e276c2e9a2c5fc99b7d77edffedbb2d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3067f9d54a91c02df63d3c22afda19da3b5707ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242595"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818012"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Creazione di finestre di progettazione ed editor personalizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi tipi di editor:  
   
--   L'editor principale di Visual Studio  
+- L'editor principale di Visual Studio  
   
--   Editor personalizzati  
+- Editor personalizzati  
   
--   Editor esterno  
+- Editor esterno  
   
--   Finestre di progettazione  
+- Finestre di progettazione  
   
- Le informazioni seguenti consentono di scegliere il tipo dell'editor che è necessario.  
+  Le informazioni seguenti consentono di scegliere il tipo dell'editor che è necessario.  
   
 ## <a name="types-of-editor"></a>Tipi di Editor  
  Per informazioni su editor principale di Visual Studio, vedere [estensione dell'Editor e servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md).  

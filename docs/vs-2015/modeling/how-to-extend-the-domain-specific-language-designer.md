@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878557"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ ms.locfileid: "49294268"
   
  Per distribuire le estensioni per l'oggetto principale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e ad altri computer, seguire questa procedura:  
   
-1.  Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\*\\\*VSIX  
+1. Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\*\\\*VSIX  
   
-2.  Copiare questo file nel computer di destinazione e quindi in Windows Explorer (o Esplora File), fare doppio clic.  
+2. Copiare questo file nel computer di destinazione e quindi in Windows Explorer (o Esplora File), fare doppio clic.  
   
-     Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Gestione estensioni viene aperto per verificare che sia stato installato l'estensione.  
+    Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Gestione estensioni viene aperto per verificare che sia stato installato l'estensione.  
   
- Per disinstallare l'estensione, seguire questa procedura:  
+   Per disinstallare l'estensione, seguire questa procedura:  
   
-1.  in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]via il **Tools** menu, fare clic su **gestore estensioni del**.  
+3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]via il **Tools** menu, fare clic su **gestore estensioni del**.  
   
-2.  Selezionare l'estensione ed eliminarlo.  
+4. Selezionare l'estensione ed eliminarlo.  
   
 ## <a name="adding-a-shortcut-menu-command"></a>Aggiunta di un comando di Menu di scelta rapida  
  Per rendere un comando di menu di scelta rapida vengono visualizzati nell'area di progettazione DSL o nella finestra Esplora DSL, scrivere una classe simile a quello riportato di seguito.  

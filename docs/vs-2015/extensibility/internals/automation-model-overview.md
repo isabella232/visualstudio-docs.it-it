@@ -16,12 +16,12 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e85e0a56ac11baf93ad743569d57152601077599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815923"
 ---
 # <a name="automation-model-overview"></a>Panoramica del modello di automazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ Oggetti di automazione di Visual Studio
   
  Posizioni in cui è possibile considerare l'estensione del modello di automazione dell'ambiente:  
   
--   Progetto  
+- Progetto  
   
--   Document  
+- Document  
   
--   Codice  
+- Codice  
   
--   Compilazione  
+- Compilazione  
   
- Per altre informazioni sull'automazione, vedere [automazione ed estendibilità in Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Questo documento e i documenti vengono forniti collegamenti per poter prendere decisioni relative a come si deve fornire l'automazione per il pacchetto VSPackage.  
+  Per altre informazioni sull'automazione, vedere [automazione ed estendibilità in Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Questo documento e i documenti vengono forniti collegamenti per poter prendere decisioni relative a come si deve fornire l'automazione per il pacchetto VSPackage.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: creare un componente aggiuntivo](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

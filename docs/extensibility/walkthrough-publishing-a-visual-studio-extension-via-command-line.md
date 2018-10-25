@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883354"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio tramite la riga di comando
 
@@ -33,12 +33,12 @@ VsixPublisher.exe è lo strumento da riga di comando per la pubblicazione di est
 
 Pubblica un'estensione nel Marketplace. L'estensione può essere un file vsix, un file exe o msi o un collegamento. Se l'estensione esiste già con la stessa versione, l'estensione verrà sovrascritta. Se l'estensione non esiste già, creerà una nuova estensione.
 
-|Opzioni di comando                    |Descrizione  |
+|Opzioni di comando |Descrizione |
 |---------|---------|
-|payload (obbligatorio)                 |  Un percorso per il payload per la pubblicazione o un collegamento da usare come "Altre informazioni sull'URL".      |
-|publishManifest (obbligatorio)         |  Percorso di pubblicazione del manifesto file da utilizzare.       |
-|ignoreWarnings                     |  Elenco di avvisi da ignorare durante la pubblicazione di un'estensione. Questi avvisi vengono visualizzati come i messaggi della riga di comando quando si pubblica un'estensione. (ad esempio, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken                 |  Token di accesso personale usato per autenticare il server di pubblicazione. Se non specificato, viene acquisito il token di accesso personale degli utenti ha eseguito l'accesso.       |
+|payload (obbligatorio) | Un percorso per il payload per la pubblicazione o un collegamento da usare come "Altre informazioni sull'URL". |
+|publishManifest (obbligatorio) | Percorso di pubblicazione del manifesto file da utilizzare. |
+|ignoreWarnings | Elenco di avvisi da ignorare durante la pubblicazione di un'estensione. Questi avvisi vengono visualizzati come i messaggi della riga di comando quando si pubblica un'estensione. (ad esempio, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|personalAccesToken | Token di accesso personale usato per autenticare il server di pubblicazione. Se non specificato, viene acquisito il token di accesso personale degli utenti ha eseguito l'accesso. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Crea un server di pubblicazione nel Marketplace. Registra inoltre il server di pubblicazione al computer per le azioni future (ad esempio, l'eliminazione/pubblicazione di un'estensione).
 
-|Opzioni di comando                    |Descrizione  |
+|Opzioni di comando |Descrizione |
 |---------|---------|
-|displayName (obbligatorio)             |  Nome visualizzato del server di pubblicazione.      |
-|Nome editore (obbligatorio)           |  Il nome del server di pubblicazione (ad esempio, l'identificatore).      |
-|personalAccessToken (obbligatorio)     |  Token di accesso personale usato per autenticare il server di pubblicazione.      |
-|shortDescription                   |  Una breve descrizione del server di pubblicazione (non un file).       |
-|longDescription                    |  Descrizione lunga del server di pubblicazione (non un file).      |
+|displayName (obbligatorio) | Nome visualizzato del server di pubblicazione. |
+|Nome editore (obbligatorio) | Il nome del server di pubblicazione (ad esempio, l'identificatore). |
+|personalAccessToken (obbligatorio) | Token di accesso personale usato per autenticare il server di pubblicazione. |
+|shortDescription | Una breve descrizione del server di pubblicazione (non un file). |
+|longDescription | Descrizione lunga del server di pubblicazione (non un file). |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Elimina un server di pubblicazione nel Marketplace.
 
-|Opzioni di comando                    |Descrizione  |
+|Opzioni di comando |Descrizione |
 |---------|---------|
-|Nome editore (obbligatorio)           |  Il nome del server di pubblicazione (ad esempio, l'identificatore).      |
-|personalAccessToken (obbligatorio)     |  Token di accesso personale usato per autenticare il server di pubblicazione.      |
+|Nome editore (obbligatorio) | Il nome del server di pubblicazione (ad esempio, l'identificatore). |
+|personalAccessToken (obbligatorio) | Token di accesso personale usato per autenticare il server di pubblicazione. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Elimina un'estensione dal Marketplace.
 
-|Opzioni di comando                    |Descrizione  |
+|Opzioni di comando |Descrizione |
 |---------|---------|
-|extensionName (obbligatorio)           |  Il nome dell'estensione da eliminare.      |
-|Nome editore (obbligatorio)           |  Il nome del server di pubblicazione (ad esempio, l'identificatore).      |
-|personalAccessToken                |  Token di accesso personale usato per autenticare il server di pubblicazione. Se non specificato, viene acquisito il token di accesso personale degli utenti ha eseguito l'accesso.     |
+|extensionName (obbligatorio) | Il nome dell'estensione da eliminare. |
+|Nome editore (obbligatorio) | Il nome del server di pubblicazione (ad esempio, l'identificatore). |
+|personalAccessToken | Token di accesso personale usato per autenticare il server di pubblicazione. Se non specificato, viene acquisito il token di accesso personale degli utenti ha eseguito l'accesso. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Accede al computer un server di pubblicazione.
 
-|Opzioni di comando                    |Descrizione  |
+|Opzioni di comando |Descrizione |
 |---------|---------|
-|personalAccessToken (obbligatorio      |  Token di accesso personale usato per autenticare il server di pubblicazione.      |
-|Nome editore (obbligatorio)           |  Il nome del server di pubblicazione (ad esempio, l'identificatore).      |
-|Sovrascrivere                          |  Specifica che qualsiasi server di pubblicazione esistente devono essere sovrascritti con il nuovo token di accesso personale.     |
+|personalAccessToken (obbligatorio | Token di accesso personale usato per autenticare il server di pubblicazione. |
+|Nome editore (obbligatorio) | Il nome del server di pubblicazione (ad esempio, l'identificatore). |
+|Sovrascrivere | Specifica che qualsiasi server di pubblicazione esistente devono essere sovrascritti con il nuovo token di accesso personale. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Registra un server di pubblicazione dal computer.
 
-|Opzioni di comando                    |Descrizione  |
+|Opzioni di comando |Descrizione |
 |---------|---------|
-|Nome editore (obbligatorio)           |  Il nome del server di pubblicazione (ad esempio, l'identificatore).      |
-|ignoreMissingPublisher             |  Specifica che lo strumento non di errore se il server di pubblicazione specificato non è già effettuato aggiuntivo.     |
+|Nome editore (obbligatorio) | Il nome del server di pubblicazione (ad esempio, l'identificatore). |
+|ignoreMissingPublisher | Specifica che lo strumento non di errore se il server di pubblicazione specificato non è già effettuato aggiuntivo. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f03dc4ea85fe0f44ea2253da9544ace9b0068abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250211"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922471"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: pubblicare un'applicazione WPF per la quale sono attivati gli stili di visualizzazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
   
  Per risolvere l'errore e pubblicare la soluzione, è necessario eseguire le attività seguenti:  
   
--   [Pubblicare la soluzione senza gli stili visuali abilitati](#BKMK_publishsolwovs).  
+- [Pubblicare la soluzione senza gli stili visuali abilitati](#BKMK_publishsolwovs).  
   
--   [Creare un file manifesto](#BKMK_CreateManifest).  
+- [Creare un file manifesto](#BKMK_CreateManifest).  
   
--   [Incorporare il file manifesto nel file eseguibile della soluzione pubblicata](#BKMK_embedmanifest).  
+- [Incorporare il file manifesto nel file eseguibile della soluzione pubblicata](#BKMK_embedmanifest).  
   
--   [Firmare i manifesti dell'applicazione e della distribuzione](#BKMK_signappdeplyman).  
+- [Firmare i manifesti dell'applicazione e della distribuzione](#BKMK_signappdeplyman).  
   
- Quindi, è possibile spostare i file pubblicati il posizione da cui si desidera che gli utenti finali a installare l'applicazione.  
+  Quindi, è possibile spostare i file pubblicati il posizione da cui si desidera che gli utenti finali a installare l'applicazione.  
   
 ##  <a name="BKMK_publishsolwovs"></a> Pubblicare la soluzione senza gli stili visuali abilitati  
   
@@ -100,72 +100,72 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
   
 ##  <a name="BKMK_embedmanifest"></a> Incorporare il file manifesto nel file eseguibile della soluzione pubblicata  
   
-1.  Aprire il **prompt dei comandi di Visual Studio**.  
+1. Aprire il **prompt dei comandi di Visual Studio**.  
   
-     Per altre informazioni su come aprire la **Prompt dei comandi di Visual Studio**, vedere [prompt dei comandi](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).  
+    Per altre informazioni su come aprire la **Prompt dei comandi di Visual Studio**, vedere [prompt dei comandi](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).  
   
-    > [!NOTE]
-    >  I passaggi rimanenti partono dai presupposti seguenti sulla soluzione:  
-    >   
-    >  -   È il nome della soluzione **MyWPFProject**.  
-    > -   La soluzione si trova nella seguente directory: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
-    >   
-    >      La soluzione viene pubblicata nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   La versione più recente dei file dell'applicazione pubblicata si trova nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  Non è necessario usare il nome o i percorsi delle directory descritti in precedenza. Il nome e i percorsi descritti sopra sono utilizzati solo per illustrare i passaggi necessari per pubblicare la propria soluzione.  
+   > [!NOTE]
+   >  I passaggi rimanenti partono dai presupposti seguenti sulla soluzione:  
+   > 
+   > - È il nome della soluzione **MyWPFProject**.  
+   >   -   La soluzione si trova nella seguente directory: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
+   > 
+   >   La soluzione viene pubblicata nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
+   >   -   La versione più recente dei file dell'applicazione pubblicata si trova nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   Non è necessario usare il nome o i percorsi delle directory descritti in precedenza. Il nome e i percorsi descritti sopra sono utilizzati solo per illustrare i passaggi necessari per pubblicare la propria soluzione.  
   
-2.  Al prompt dei comandi, modificare il percorso della directory che contiene la versione più recente dei file dell'applicazione pubblicata. L'esempio seguente illustra questo passaggio.  
+2. Al prompt dei comandi, modificare il percorso della directory che contiene la versione più recente dei file dell'applicazione pubblicata. L'esempio seguente illustra questo passaggio.  
   
-    ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  Al prompt dei comandi, eseguire il comando seguente per includere il file manifesto nel file eseguibile dell'applicazione.  
+3. Al prompt dei comandi, eseguire il comando seguente per includere il file manifesto nel file eseguibile dell'applicazione.  
   
-    ```  
-    mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ##  <a name="BKMK_signappdeplyman"></a> Firmare i manifesti dell'applicazione e della distribuzione  
   
-1.  Al prompt dei comandi, eseguire il comando seguente per rimuovere il `.deploy` estensione dal file eseguibile nella directory corrente.  
+1. Al prompt dei comandi, eseguire il comando seguente per rimuovere il `.deploy` estensione dal file eseguibile nella directory corrente.  
   
-    ```  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  Questo esempio si presuppone che un solo file ha il `.deploy` estensione di file. Assicurarsi che non è rinominare tutti i file in questa directory che hanno il `.deploy` estensione di file.  
+   > [!NOTE]
+   >  Questo esempio si presuppone che un solo file ha il `.deploy` estensione di file. Assicurarsi che non è rinominare tutti i file in questa directory che hanno il `.deploy` estensione di file.  
   
-2.  Al prompt dei comandi, eseguire il comando seguente per firmare il manifesto dell'applicazione.  
+2. Al prompt dei comandi, eseguire il comando seguente per firmare il manifesto dell'applicazione.  
   
-    ```  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  Questo esempio si presuppone che il manifesto viene firmata usando il `.pfx` file del progetto. Se non si firmano il manifesto, è possibile omettere il `–cf` parametro utilizzato in questo esempio. Se si firmano del manifesto con un certificato che richiede una password, specificare il `–password` opzione (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
+   > [!NOTE]
+   >  Questo esempio si presuppone che il manifesto viene firmata usando il `.pfx` file del progetto. Se non si firmano il manifesto, è possibile omettere il `–cf` parametro utilizzato in questo esempio. Se si firmano del manifesto con un certificato che richiede una password, specificare il `–password` opzione (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
   
-3.  Al prompt dei comandi, eseguire il comando seguente per aggiungere il `.deploy` estensione per il nome del file che è stato rinominato in un passaggio precedente di questa procedura.  
+3. Al prompt dei comandi, eseguire il comando seguente per aggiungere il `.deploy` estensione per il nome del file che è stato rinominato in un passaggio precedente di questa procedura.  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  Questo esempio si presuppone che un solo file aveva una `.deploy` estensione di file. Assicurarsi che non è rinominare tutti i file in questa directory che in precedenza era il `.deploy` estensione del nome file.  
+   > [!NOTE]
+   >  Questo esempio si presuppone che un solo file aveva una `.deploy` estensione di file. Assicurarsi che non è rinominare tutti i file in questa directory che in precedenza era il `.deploy` estensione del nome file.  
   
-4.  Al prompt dei comandi, eseguire il comando seguente per firmare il manifesto della distribuzione.  
+4. Al prompt dei comandi, eseguire il comando seguente per firmare il manifesto della distribuzione.  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  Questo esempio si presuppone che il manifesto viene firmata usando il `.pfx` file del progetto. Se non si firmano il manifesto, è possibile omettere il `–cf` parametro utilizzato in questo esempio. Se si firmano del manifesto con un certificato che richiede una password, specificare il `–password` opzione, come nel seguente esempio:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`.  
+   > [!NOTE]
+   >  Questo esempio si presuppone che il manifesto viene firmata usando il `.pfx` file del progetto. Se non si firmano il manifesto, è possibile omettere il `–cf` parametro utilizzato in questo esempio. Se si firmano del manifesto con un certificato che richiede una password, specificare il `–password` opzione, come nel seguente esempio:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`.  
   
- Dopo aver eseguito questi passaggi, è possibile spostare i file pubblicati il posizione da cui si desidera che gli utenti finali a installare l'applicazione. Se si intende aggiornare spesso la soluzione, è possibile spostare questi comandi in uno script ed eseguire lo script ogni volta che si pubblica una nuova versione.  
+   Dopo aver eseguito questi passaggi, è possibile spostare i file pubblicati il posizione da cui si desidera che gli utenti finali a installare l'applicazione. Se si intende aggiornare spesso la soluzione, è possibile spostare questi comandi in uno script ed eseguire lo script ogni volta che si pubblica una nuova versione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Risoluzione dei problemi relativi a errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   

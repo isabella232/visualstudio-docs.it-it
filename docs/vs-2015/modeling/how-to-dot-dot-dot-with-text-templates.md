@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903816"
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ Modelli di testo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] forniscono un m
 ### <a name="invoke-methods-from-a-template"></a>Richiamare i metodi da un modello  
  Se i metodi già esistono, ad esempio, nello standard [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] classi:  
   
--   Usare la \<&@assembly& > direttiva per caricare l'assembly e usare \<&@import& > per impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [direttiva Import T4](../modeling/t4-import-directive.md).  
+- Usare la \<&@assembly& > direttiva per caricare l'assembly e usare \<&@import& > per impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [direttiva Import T4](../modeling/t4-import-directive.md).  
   
-     Se spesso utilizzano lo stesso set di assembly e direttive import, prendere in considerazione la scrittura di un processore di direttiva. In ogni modello, è possibile richiamare il processore di direttiva, che è possibile caricare gli assembly e i file di modello e impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [creazione di processori direttiva di modelli di Custom T4 testo](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+   Se spesso utilizzano lo stesso set di assembly e direttive import, prendere in considerazione la scrittura di un processore di direttiva. In ogni modello, è possibile richiamare il processore di direttiva, che è possibile caricare gli assembly e i file di modello e impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [creazione di processori direttiva di modelli di Custom T4 testo](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- Se si siano scrivendo i metodi familiarità:  
+  Se si siano scrivendo i metodi familiarità:  
   
--   Se si scrive un modello di testo di runtime, scrivere una definizione di classe parziale con lo stesso nome di modello di testo della fase di esecuzione. Aggiungere i metodi aggiuntivi in questa classe.  
+- Se si scrive un modello di testo di runtime, scrivere una definizione di classe parziale con lo stesso nome di modello di testo della fase di esecuzione. Aggiungere i metodi aggiuntivi in questa classe.  
   
--   Scrivere un blocco di controllo di funzionalità di classe `<#+ ... #>` in cui è possibile dichiarare i metodi, proprietà e classi private. Quando viene compilato il modello di testo, viene trasformato in una classe. I blocchi di controllo standard `<#...#>` e testo vengono trasformati in un singolo metodo, e blocchi della funzionalità di classe vengono inseriti come membri separati. Per altre informazioni, vedere [blocchi di controllo del modello di testo](../modeling/text-template-control-blocks.md).  
+- Scrivere un blocco di controllo di funzionalità di classe `<#+ ... #>` in cui è possibile dichiarare i metodi, proprietà e classi private. Quando viene compilato il modello di testo, viene trasformato in una classe. I blocchi di controllo standard `<#...#>` e testo vengono trasformati in un singolo metodo, e blocchi della funzionalità di classe vengono inseriti come membri separati. Per altre informazioni, vedere [blocchi di controllo del modello di testo](../modeling/text-template-control-blocks.md).  
   
-     Metodi definiti come funzionalità di livello può includere anche i blocchi di testo incorporato.  
+   Metodi definiti come funzionalità di livello può includere anche i blocchi di testo incorporato.  
   
-     È consigliabile inserire le funzionalità di classe in un file separato che è possibile `<#@include#>` in uno o più file di modello.  
+   È consigliabile inserire le funzionalità di classe in un file separato che è possibile `<#@include#>` in uno o più file di modello.  
   
--   Scrivere i metodi in un assembly separato (libreria di classi) e chiamarli in base al modello. Usare la `<#@assembly#>` direttiva per caricare l'assembly e `<#@import#>` per impostare il contesto dello spazio dei nomi. Si noti che per ricompilare l'assembly anche se ne esegue il debug, potrebbe essere necessario arrestare e riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).  
+- Scrivere i metodi in un assembly separato (libreria di classi) e chiamarli in base al modello. Usare la `<#@assembly#>` direttiva per caricare l'assembly e `<#@import#>` per impostare il contesto dello spazio dei nomi. Si noti che per ricompilare l'assembly anche se ne esegue il debug, potrebbe essere necessario arrestare e riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>Generare molti file da un unico modello schema  
  Se spesso possibile generare file da modelli aventi lo stesso schema di database o XML:  

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9feb6af87246a27ee9b54a206b1d03a470a19619
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1de93e49e6d29616868e42a3017cb1737c3bf307
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922889"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossario di Visual Studio SDK
 Questo glossario include le definizioni dei termini utilizzati nel [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentazione.  
@@ -35,155 +35,155 @@ Questo glossario include le definizioni dei termini utilizzati nel [!INCLUDE[vsi
   
  Contesto dell'interfaccia utente del comando può essere utilizzato per:  
   
--   Assegnare un GUID a una barra degli strumenti viene visualizzata quando viene attivata una particolare finestra.  
+- Assegnare un GUID a una barra degli strumenti viene visualizzata quando viene attivata una particolare finestra.  
   
--   Assegnare un GUID per la disponibilità di un comando senza la necessità di caricare o eseguire un pacchetto VSPackage.  
+- Assegnare un GUID per la disponibilità di un comando senza la necessità di caricare o eseguire un pacchetto VSPackage.  
   
--   Assegnare un GUID per influire sul tasto di scelta rapida attiva.  
+- Assegnare un GUID per influire sul tasto di scelta rapida attiva.  
   
--   Assegnare un GUID per attivare la registrazione macro.  
+- Assegnare un GUID per attivare la registrazione macro.  
   
--   Assegnare un GUID per attivare la modalità di debug o per passare dalla progettazione alla modalità di esecuzione in un editor.  
+- Assegnare un GUID per attivare la modalità di debug o per passare dalla progettazione alla modalità di esecuzione in un editor.  
   
- component  
- Componente software che può essere eseguito parte delle funzionalità di un'applicazione senza tale applicazione con le informazioni sull'implementazione del software pre-esistenti. Comunicazione tra un componente e un'applicazione è esclusivamente tramite interfacce OLE stile.  
+  component  
+  Componente software che può essere eseguito parte delle funzionalità di un'applicazione senza tale applicazione con le informazioni sull'implementazione del software pre-esistenti. Comunicazione tra un componente e un'applicazione è esclusivamente tramite interfacce OLE stile.  
   
- gestione dei componenti  
- Un servizio, `SOleComponentManager`, che fornisce servizi di coordinamento non di interfaccia utente per i componenti di livello superiore. Il `SOleComponentManager` del servizio implementa il `IOleComponentManager` interfaccia.  
+  gestione dei componenti  
+  Un servizio, `SOleComponentManager`, che fornisce servizi di coordinamento non di interfaccia utente per i componenti di livello superiore. Il `SOleComponentManager` del servizio implementa il `IOleComponentManager` interfaccia.  
   
- gestione dei componenti dell'interfaccia utente  
- Un servizio, `SOleComponentUIManager`, che fornisce servizi coordinamento dell'interfaccia utente. Il `SOleComponentUIManager` del servizio implementa le `IOleComponentUIManager` e `IOleInPlaceComponentUIManager` interfacce.  
+  gestione dei componenti dell'interfaccia utente  
+  Un servizio, `SOleComponentUIManager`, che fornisce servizi coordinamento dell'interfaccia utente. Il `SOleComponentUIManager` del servizio implementa le `IOleComponentUIManager` e `IOleInPlaceComponentUIManager` interfacce.  
   
- contenitore di contesto  
- Un `IVsUserContext` oggetto (COM) collegato a un componente di ambiente. Questo oggetto contiene parole chiave di ricerca **F1** parole chiave e gli attributi relativi al componente. Contenitori di contesto inoltre puntano a qualsiasi elenco di sottocontesti collegati ad essi.  
+  contenitore di contesto  
+  Un `IVsUserContext` oggetto (COM) collegato a un componente di ambiente. Questo oggetto contiene parole chiave di ricerca **F1** parole chiave e gli attributi relativi al componente. Contenitori di contesto inoltre puntano a qualsiasi elenco di sottocontesti collegati ad essi.  
   
- provider di contesto  
- Un componente nell'IDE che dispone di un contenitore di contesto è associato. Tali componenti includono una finestra degli strumenti, editor o la gerarchia di progetto.  
+  provider di contesto  
+  Un componente nell'IDE che dispone di un contenitore di contesto è associato. Tali componenti includono una finestra degli strumenti, editor o la gerarchia di progetto.  
   
- finestra di progettazione  
- Un'interfaccia di programmazione che consente agli utenti di modificare gli elementi dell'interfaccia utente (moduli, pulsanti e altri controlli).  
+  finestra di progettazione  
+  Un'interfaccia di programmazione che consente agli utenti di modificare gli elementi dell'interfaccia utente (moduli, pulsanti e altri controlli).  
   
- Oggetto DocData  
- Un oggetto COM che incapsula i dati sottostanti di un documento in un mondo in cui è presente la separazione di documento/visualizzazione (ad esempio, nel caso dell'editor di testo, questa sarebbe il buffer di testo sottostante tutte le visualizzazioni dell'editor di testo). Se l'oggetto EditorFactory non fornisce questo oggetto, l'IDE produce uno per suo conto. La responsabilità di questo oggetto consiste nel gestire la persistenza dei dati e la semantica di condivisione per più viste attraverso questa stessa `DocData`. Se il `DocData` oggetto supporta la `IOleCommandTarget` interfaccia, è inclusa nel routing dei comandi dell'UIShell.  
+  Oggetto DocData  
+  Un oggetto COM che incapsula i dati sottostanti di un documento in un mondo in cui è presente la separazione di documento/visualizzazione (ad esempio, nel caso dell'editor di testo, questa sarebbe il buffer di testo sottostante tutte le visualizzazioni dell'editor di testo). Se l'oggetto EditorFactory non fornisce questo oggetto, l'IDE produce uno per suo conto. La responsabilità di questo oggetto consiste nel gestire la persistenza dei dati e la semantica di condivisione per più viste attraverso questa stessa `DocData`. Se il `DocData` oggetto supporta la `IOleCommandTarget` interfaccia, è inclusa nel routing dei comandi dell'UIShell.  
   
- DocObject  
- Tecnologia usata per ospitare l'interfaccia utente in un intervallo fornito dall'host. In particolare, questo termine si riferisce all'incorporamento di qualsiasi che supporta il `IOleDocument` e relative interfacce. Questa tecnologia ha molte applicazioni potenziali, ad esempio un dettaglio di implementazione di documenti di COM, finestre degli strumenti in Visual Basic 5.0, le finestre di progettazione ActiveX in Visual Basic 6.0 e così via.  
+  DocObject  
+  Tecnologia usata per ospitare l'interfaccia utente in un intervallo fornito dall'host. In particolare, questo termine si riferisce all'incorporamento di qualsiasi che supporta il `IOleDocument` e relative interfacce. Questa tecnologia ha molte applicazioni potenziali, ad esempio un dettaglio di implementazione di documenti di COM, finestre degli strumenti in Visual Basic 5.0, le finestre di progettazione ActiveX in Visual Basic 6.0 e così via.  
   
- documento  
- Usato per fare riferimento in modo generico per il documento nel suo complesso, ovvero sia le `DocData` e il `DocView`. Ad esempio, un DocumentFrame contiene un `DocView`, ma anche mantiene un riferimento al `DocData` per gestire la persistenza.  
+  documento  
+  Usato per fare riferimento in modo generico per il documento nel suo complesso, ovvero sia le `DocData` e il `DocView`. Ad esempio, un DocumentFrame contiene un `DocView`, ma anche mantiene un riferimento al `DocData` per gestire la persistenza.  
   
- DocView  
- Il DocObject/incorporamento/riquadro della finestra con cui interagisce l'utente per visualizzare e manipolare sottostante `DocData`. Gli utenti non sfruttare la separazione di documenti/visualizzazioni che fa parte di `DocObject` progettazione di interfacce. Gli utenti usano un'intera DocObject per fungere da una vista anziché una nozione più astratto (e meno formalizzato) dei dati sottostanti, noti come `DocData`. `DocView` gli oggetti vengono sempre incorporati con gli oggetti di frame di documento (finestre figlio MDI) dell'IDE.  
+  DocView  
+  Il DocObject/incorporamento/riquadro della finestra con cui interagisce l'utente per visualizzare e manipolare sottostante `DocData`. Gli utenti non sfruttare la separazione di documenti/visualizzazioni che fa parte di `DocObject` progettazione di interfacce. Gli utenti usano un'intera DocObject per fungere da una vista anziché una nozione più astratto (e meno formalizzato) dei dati sottostanti, noti come `DocData`. `DocView` gli oggetti vengono sempre incorporati con gli oggetti di frame di documento (finestre figlio MDI) dell'IDE.  
   
- DTE  
- Il `DTE` oggetto (estensibilità degli strumenti di sviluppo) è il punto di accesso di livello superiore nel modello di automazione di Visual Studio, che consente di automatizzare ed estendere l'IDE a livello di codice.  
+  DTE  
+  Il `DTE` oggetto (estensibilità degli strumenti di sviluppo) è il punto di accesso di livello superiore nel modello di automazione di Visual Studio, che consente di automatizzare ed estendere l'IDE a livello di codice.  
   
- Finestra Guida dinamica  
- Finestra degli strumenti che viene implementata dall'IDE e visualizza un elenco di parole chiave di ricerca oppure **F1** gli argomenti della Guida.  
+  Finestra Guida dinamica  
+  Finestra degli strumenti che viene implementata dall'IDE e visualizza un elenco di parole chiave di ricerca oppure **F1** gli argomenti della Guida.  
   
- editor  
- Codice (classe, CLSID) che implementa il `DocView`. Implementa inoltre `DocData` se è supportata la separazione dei dati e visualizzazione.  
+  editor  
+  Codice (classe, CLSID) che implementa il `DocView`. Implementa inoltre `DocData` se è supportata la separazione dei dati e visualizzazione.  
   
- estensione  
- Una funzionalità che consente di modificare, consente di personalizzare o aggiunge a un ambiente IDE. Si creano estensioni usando il modello di automazione o i pacchetti VSPackage.  
+  estensione  
+  Una funzionalità che consente di modificare, consente di personalizzare o aggiunge a un ambiente IDE. Si creano estensioni usando il modello di automazione o i pacchetti VSPackage.  
   
- editor esterno  
- Un editor che non è specifico per l'IDE, ad esempio Microsoft Word. È stato registrato tramite i proprio meccanismi e può essere usato all'esterno dell'IDE. Se questo editor può essere incorporato, viene visualizzata in una finestra dell'IDE. Se non può essere incorporato, viene creata una finestra di primo livello separata.  
+  editor esterno  
+  Un editor che non è specifico per l'IDE, ad esempio Microsoft Word. È stato registrato tramite i proprio meccanismi e può essere usato all'esterno dell'IDE. Se questo editor può essere incorporato, viene visualizzata in una finestra dell'IDE. Se non può essere incorporato, viene creata una finestra di primo livello separata.  
   
- gerarchia  
- Struttura ad albero dei nodi, ogni nodo associato a un set di proprietà.  
+  gerarchia  
+  Struttura ad albero dei nodi, ogni nodo associato a un set di proprietà.  
   
- componente di primo livello indipendente  
- Un componente che usa una finestra di primo livello non modo e può operare in modo efficace come una finestra di applicazione autonoma, ma viene implementato come un oggetto in-process. Pertanto, un componente indipendente di primo livello deve coordinare servizi del ciclo di messaggi con l'IDE e modalità. Gli oggetti in-process non sono proprio ciclo di messaggi.  
+  componente di primo livello indipendente  
+  Un componente che usa una finestra di primo livello non modo e può operare in modo efficace come una finestra di applicazione autonoma, ma viene implementato come un oggetto in-process. Pertanto, un componente indipendente di primo livello deve coordinare servizi del ciclo di messaggi con l'IDE e modalità. Gli oggetti in-process non sono proprio ciclo di messaggi.  
   
- provider di informazioni  
- Il provider di informazioni è un modulo che può cercare le parole chiave e restituire un elenco di argomenti, sotto forma di `IVsUserContextItem` oggetti. Per fornire **F1** e parola chiave di ricerca di elementi per il provider di informazioni, registrare il file della Guida compilato (*. HxS*) con il sistema. Gli argomenti della Guida di questi file forniscono l'elenco degli argomenti visualizzati nella finestra Guida dinamica e indicato se un utente preme **F1**.  
+  provider di informazioni  
+  Il provider di informazioni è un modulo che può cercare le parole chiave e restituire un elenco di argomenti, sotto forma di `IVsUserContextItem` oggetti. Per fornire **F1** e parola chiave di ricerca di elementi per il provider di informazioni, registrare il file della Guida compilato (*. HxS*) con il sistema. Gli argomenti della Guida di questi file forniscono l'elenco degli argomenti visualizzati nella finestra Guida dinamica e indicato se un utente preme **F1**.  
   
- componente sul posto  
- Un oggetto VSPackage che implementa il `IOleInPlaceComponent` interfaccia per la gestione di una finestra in modo visivo all'interno di una finestra del documento dell'IDE di proprietà. Non partecipano al posto componenti standard OLE dall'unione di menu; al contrario si integrano loro elementi dell'interfaccia utente nell'IDE.  
+  componente sul posto  
+  Un oggetto VSPackage che implementa il `IOleInPlaceComponent` interfaccia per la gestione di una finestra in modo visivo all'interno di una finestra del documento dell'IDE di proprietà. Non partecipano al posto componenti standard OLE dall'unione di menu; al contrario si integrano loro elementi dell'interfaccia utente nell'IDE.  
   
- Esistono due tipi di componenti sul posto: hardwired posto componenti e controlli del componente.  
+  Esistono due tipi di componenti sul posto: hardwired posto componenti e controlli del componente.  
   
- Hardwired posto componenti sono disponibili i menu, barre degli strumenti e i comandi che sono strettamente integrati nell'interfaccia utente dell'IDE, verrà visualizzato come se sono state compilate direttamente nell'IDE.  
+  Hardwired posto componenti sono disponibili i menu, barre degli strumenti e i comandi che sono strettamente integrati nell'interfaccia utente dell'IDE, verrà visualizzato come se sono state compilate direttamente nell'IDE.  
   
- Controlli del componente non sono disponibili i propri elementi dell'interfaccia utente integrati nell'IDE di; In alternativa usare i menu, comandi e le barre degli strumenti dell'IDE. Ad esempio, il comando grassetto potrebbe essere usato mostrato in grassetto una parola selezionata all'interno di un controllo RTF incorporato in un form. Controlli del componente possono tuttavia richiedere che visualizzati elementi dell'interfaccia utente di specifiche del componente installati in modo dinamico.  
+  Controlli del componente non sono disponibili i propri elementi dell'interfaccia utente integrati nell'IDE di; In alternativa usare i menu, comandi e le barre degli strumenti dell'IDE. Ad esempio, il comando grassetto potrebbe essere usato mostrato in grassetto una parola selezionata all'interno di un controllo RTF incorporato in un form. Controlli del componente possono tuttavia richiedere che visualizzati elementi dell'interfaccia utente di specifiche del componente installati in modo dinamico.  
   
- servizio di linguaggio  
- Un set di oggetti che consente agli sviluppatori di VSPackage implementare le funzionalità dell'editor di codice linguaggio computer, ad esempio il testo di contrassegni e colorare.  
+  servizio di linguaggio  
+  Un set di oggetti che consente agli sviluppatori di VSPackage implementare le funzionalità dell'editor di codice linguaggio computer, ad esempio il testo di contrassegni e colorare.  
   
- Progetto di file esterni  
- Progetto utilizzato per i file aperti di casa che non sono in qualsiasi progetto. L'elenco di elementi in questo progetto non è persistente.  
+  Progetto di file esterni  
+  Progetto utilizzato per i file aperti di casa che non sono in qualsiasi progetto. L'elenco di elementi in questo progetto non è persistente.  
   
- progetto  
- I progetti sono costituiti da oggetti della gerarchia o COM gli oggetti che implementano il `IVsHierarchy` interfaccia.  
+  progetto  
+  I progetti sono costituiti da oggetti della gerarchia o COM gli oggetti che implementano il `IVsHierarchy` interfaccia.  
   
- progettazione specifici del progetto o nell'editor  
- Finestra di progettazione che non può essere usato indipendentemente dal tipo di progetto. Tutte le finestre di progettazione specifici del progetto immettere le informazioni di Factory dell'Editor del Registro di sistema. L'IDE quindi possibile creare un'istanza della finestra di progettazione ogni volta che un determinato tipo di file viene aperto in un particolare progetto.  
+  progettazione specifici del progetto o nell'editor  
+  Finestra di progettazione che non può essere usato indipendentemente dal tipo di progetto. Tutte le finestre di progettazione specifici del progetto immettere le informazioni di Factory dell'Editor del Registro di sistema. L'IDE quindi possibile creare un'istanza della finestra di progettazione ogni volta che un determinato tipo di file viene aperto in un particolare progetto.  
   
- finestra di tipi di progetto  
- Una finestra che monitora costantemente la gerarchia del progetto attualmente attiva e l'elemento dal contesto di selezione globale. Tipo di progetto windows Usa il `SVsTrackSelectionEx` servizio per indicare all'IDE di modifiche e per visualizzare il feedback all'utente. Esplora soluzioni è un esempio di una finestra del tipo di progetto.  
+  finestra di tipi di progetto  
+  Una finestra che monitora costantemente la gerarchia del progetto attualmente attiva e l'elemento dal contesto di selezione globale. Tipo di progetto windows Usa il `SVsTrackSelectionEx` servizio per indicare all'IDE di modifiche e per visualizzare il feedback all'utente. Esplora soluzioni è un esempio di una finestra del tipo di progetto.  
   
- Finestra Proprietà  
- In precedenza Visualizzatore proprietà.  
+  Finestra Proprietà  
+  In precedenza Visualizzatore proprietà.  
   
- Progetti in base al riferimento  
- Progetto che non richiede i file per il progetto si trovi nella stessa directory. Al contrario, i riferimenti ai file da altre directory non correlate sono archiviati e gestiti dal progetto stesso.  
+  Progetti in base al riferimento  
+  Progetto che non richiede i file per il progetto si trovi nella stessa directory. Al contrario, i riferimenti ai file da altre directory non correlate sono archiviati e gestiti dal progetto stesso.  
   
- tabella documenti in esecuzione  
- Struttura interna con cui l'IDE gestisce l'elenco di tutti i documenti attualmente aperti. L'elenco include tutti i documenti aperti in memoria indipendentemente dal fatto che i documenti sono attualmente in corso di modifica. Un documento è qualsiasi elemento che viene salvato, incluse le stored procedure aperte in un editor, i file in un progetto o file di progetto principale (ad esempio, *. vcproj file).  
+  tabella documenti in esecuzione  
+  Struttura interna con cui l'IDE gestisce l'elenco di tutti i documenti attualmente aperti. L'elenco include tutti i documenti aperti in memoria indipendentemente dal fatto che i documenti sono attualmente in corso di modifica. Un documento è qualsiasi elemento che viene salvato, incluse le stored procedure aperte in un editor, i file in un progetto o file di progetto principale (ad esempio, *. vcproj file).  
   
- Contesto di selezione  
- Dati che fa parte dei dettagli di ogni finestra dell'IDE e consente di tenere traccia delle selezioni attive. Contesto di selezione è costituita da:  
+  Contesto di selezione  
+  Dati che fa parte dei dettagli di ogni finestra dell'IDE e consente di tenere traccia delle selezioni attive. Contesto di selezione è costituita da:  
   
--   Puntatore al `IVsHierarchy` dell'interfaccia della gerarchia del progetto  
+- Puntatore al `IVsHierarchy` dell'interfaccia della gerarchia del progetto  
   
--   Identificatore dell'elemento dell'elemento del progetto.  
+- Identificatore dell'elemento dell'elemento del progetto.  
   
--   Puntatore al `ISelectionContainer` interfaccia che fornisce accesso alle proprietà di oggetti attivi.  
+- Puntatore al `ISelectionContainer` interfaccia che fornisce accesso alle proprietà di oggetti attivi.  
   
--   Matrice di valori di elemento.  
+- Matrice di valori di elemento.  
   
- servizio  
- Un contratto per un set di interfacce COM che si trova in un singolo oggetto COM. Quando si crea un servizio, che è identificato da un GUID, è definire il set di interfacce COM che esegue il servizio. Gli oggetti COM utilizzano servizi di comunicare tra loro.  
+  servizio  
+  Un contratto per un set di interfacce COM che si trova in un singolo oggetto COM. Quando si crea un servizio, che è identificato da un GUID, è definire il set di interfacce COM che esegue il servizio. Gli oggetti COM utilizzano servizi di comunicare tra loro.  
   
- Soluzione  
- Gruppo di progetti correlati con cui lavora un utente.  
+  Soluzione  
+  Gruppo di progetti correlati con cui lavora un utente.  
   
- finestra di progettazione standard  
- Finestra di progettazione che può essere usato indipendentemente dal tipo di progetto. Tutte le finestre di progettazione standard immettere le informazioni di Factory dell'Editor del Registro di sistema. L'IDE quindi possibile creare un'istanza della finestra di progettazione ogni volta che viene aperto un file con un'estensione specifica. Devono salvare in modo permanente i dati in un file.  
+  finestra di progettazione standard  
+  Finestra di progettazione che può essere usato indipendentemente dal tipo di progetto. Tutte le finestre di progettazione standard immettere le informazioni di Factory dell'Editor del Registro di sistema. L'IDE quindi possibile creare un'istanza della finestra di progettazione ogni volta che viene aperto un file con un'estensione specifica. Devono salvare in modo permanente i dati in un file.  
   
- editor standard  
- Editor che può essere utilizzato indipendente da qualsiasi tipo di progetto specifico. Tali editor includono EditorFactories registrato nel Registro di sistema. In questo modo l'IDE individuare e richiamare l'editor.  
+  editor standard  
+  Editor che può essere utilizzato indipendente da qualsiasi tipo di progetto specifico. Tali editor includono EditorFactories registrato nel Registro di sistema. In questo modo l'IDE individuare e richiamare l'editor.  
   
- editor standard del sistema operativo  
- Un tipo di incorporamento che non è specifico di Visual Studio. È stato registrato usando le chiavi di Win32 note (ad esempio, Esplora risorse Win32 sa come richiamare). Se un editor di questo tipo può essere incorporato, l'editor ancora visualizzata al suo posto nell'IDE. In caso contrario, viene creata una finestra di primo livello separata per tali editor.  
+  editor standard del sistema operativo  
+  Un tipo di incorporamento che non è specifico di Visual Studio. È stato registrato usando le chiavi di Win32 note (ad esempio, Esplora risorse Win32 sa come richiamare). Se un editor di questo tipo può essere incorporato, l'editor ancora visualizzata al suo posto nell'IDE. In caso contrario, viene creata una finestra di primo livello separata per tali editor.  
   
- elenco di sottocontesti  
- Un `IVsUserContext` oggetto collegato a un contenitore di contesto. L'oggetto contiene parole chiave di ricerca **F1** parole chiave e gli attributi per una selezione all'interno di un componente IDE. Esempi di sottocontesto includono un comando in una finestra degli strumenti o una parola chiave in un editor.  
+  elenco di sottocontesti  
+  Un `IVsUserContext` oggetto collegato a un contenitore di contesto. L'oggetto contiene parole chiave di ricerca **F1** parole chiave e gli attributi per una selezione all'interno di un componente IDE. Esempi di sottocontesto includono un comando in una finestra degli strumenti o una parola chiave in un editor.  
   
- Elenco attività  
- Finestra dello strumento che viene implementata dall'IDE e visualizza un elenco di attività attive.  
+  Elenco attività  
+  Finestra dello strumento che viene implementata dall'IDE e visualizza un elenco di attività attive.  
   
- Buffer di testo  
- Nome comune per l'oggetto `VSTextBuffer`.  
+  Buffer di testo  
+  Nome comune per l'oggetto `VSTextBuffer`.  
   
- Visualizzazione di testo  
- Nome comune per l'oggetto `VSTextView`.  
+  Visualizzazione di testo  
+  Nome comune per l'oggetto `VSTextView`.  
   
- componente di primo livello dello strumento  
- Un componente che funziona come una finestra popup modale, coordinamento perfettamente con l'interfaccia utente dell'IDE. Ad esempio i componenti indipendenti di primo livello, componenti di livello principale dello strumento devono coordinare anche servizi del ciclo di messaggi con l'IDE e modalità.  
+  componente di primo livello dello strumento  
+  Un componente che funziona come una finestra popup modale, coordinamento perfettamente con l'interfaccia utente dell'IDE. Ad esempio i componenti indipendenti di primo livello, componenti di livello principale dello strumento devono coordinare anche servizi del ciclo di messaggi con l'IDE e modalità.  
   
- componente di primo livello  
- Un oggetto VSPackage che gestisce una finestra di primo livello non modo anziché l'area client di una finestra dell'IDE. Implementata da componenti di livello superiore di `IOleComponent` interfaccia possa sfruttare i vantaggi dei servizi del ciclo di messaggi, ad esempio l'accesso a tempo di inattività.  
+  componente di primo livello  
+  Un oggetto VSPackage che gestisce una finestra di primo livello non modo anziché l'area client di una finestra dell'IDE. Implementata da componenti di livello superiore di `IOleComponent` interfaccia possa sfruttare i vantaggi dei servizi del ciclo di messaggi, ad esempio l'accesso a tempo di inattività.  
   
- Attiva nell'interfaccia utente  
- Un oggetto VSPackage che è visibile e attualmente dispone dello stato attivo.  
+  Attiva nell'interfaccia utente  
+  Un oggetto VSPackage che è visibile e attualmente dispone dello stato attivo.  
   
- Gerarchia dell'interfaccia utente  
- Un oggetto COM che implementa il `IVsUIHierarchy` interfaccia per consentire la visualizzazione di una gerarchia. Implementa la finestra gerarchia dell'interfaccia utente di `ISelectionContainer` interfaccia per aggiornare la finestra Proprietà, altre finestre tipo di progetto è possono usare questa implementazione, se lo si desidera.  
+  Gerarchia dell'interfaccia utente  
+  Un oggetto COM che implementa il `IVsUIHierarchy` interfaccia per consentire la visualizzazione di una gerarchia. Implementa la finestra gerarchia dell'interfaccia utente di `ISelectionContainer` interfaccia per aggiornare la finestra Proprietà, altre finestre tipo di progetto è possono usare questa implementazione, se lo si desidera.  
   
- VSCT  
- Visual Studio Command Table. Il file con estensione vsct contiene informazioni sulla selezione host e i comportamenti di menu, barre degli strumenti e comandi in formato XML.  
+  VSCT  
+  Visual Studio Command Table. Il file con estensione vsct contiene informazioni sulla selezione host e i comportamenti di menu, barre degli strumenti e comandi in formato XML.  
   
- VSPackage  
- Un componente installabile software che consente di estendere l'IDE di Visual Studio, aggiungendo uno o più dei seguenti elementi: interfaccia utente, servizi, tipi di progetti o editor/finestra di progettazione. Un pacchetto VSPackage è costituito da un oggetto COM che implementa il `IVsPackage` interfaccia e uno o più altri oggetti COM che implementano altre interfacce per supportare altre funzioni e selezione. Inoltre, un pacchetto VSPackage ha i requisiti di registrazione specifiche.
+  VSPackage  
+  Un componente installabile software che consente di estendere l'IDE di Visual Studio, aggiungendo uno o più dei seguenti elementi: interfaccia utente, servizi, tipi di progetti o editor/finestra di progettazione. Un pacchetto VSPackage è costituito da un oggetto COM che implementa il `IVsPackage` interfaccia e uno o più altri oggetti COM che implementano altre interfacce per supportare altre funzioni e selezione. Inoltre, un pacchetto VSPackage ha i requisiti di registrazione specifiche.

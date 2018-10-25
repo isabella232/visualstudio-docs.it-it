@@ -29,12 +29,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea1f91a50180dce6edec17afead5649ecd3e1f50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816066"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sicurezza dall'accesso di codice per applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vinco
 ## <a name="default-clickonce-code-access-security"></a>Sicurezza dell'accesso di codice ClickOnce predefinita  
  Per impostazione predefinita, l'applicazione ClickOnce riceve autorizzazioni di attendibilità totale quando è installata o eseguita in un computer client.  
   
--   Un'applicazione con autorizzazioni di attendibilità totale ha un accesso illimitato alle risorse, ad esempio al file system e al registro. L'applicazione (e il sistema dell'utente finale) diventa però potenzialmente vulnerabile e potrebbe essere sfruttata da codice dannoso.  
+- Un'applicazione con autorizzazioni di attendibilità totale ha un accesso illimitato alle risorse, ad esempio al file system e al registro. L'applicazione (e il sistema dell'utente finale) diventa però potenzialmente vulnerabile e potrebbe essere sfruttata da codice dannoso.  
   
--   Quando un'applicazione richiede autorizzazioni di attendibilità totale, è possibile che all'utente finale sia richiesto di concedere le autorizzazioni all'applicazione. Ciò significa che l'applicazione non fornisce effettivamente un'esperienza ClickOnce e, potenzialmente, la richiesta potrebbe confondere gli utenti meno esperti.  
+- Quando un'applicazione richiede autorizzazioni di attendibilità totale, è possibile che all'utente finale sia richiesto di concedere le autorizzazioni all'applicazione. Ciò significa che l'applicazione non fornisce effettivamente un'esperienza ClickOnce e, potenzialmente, la richiesta potrebbe confondere gli utenti meno esperti.  
   
-    > [!NOTE]
-    >  Quando si installa un'applicazione da un supporto rimovibile come un CD-ROM, non vengono inviate richieste all'utente. Inoltre, un amministratore di rete può configurare dei criteri di rete in modo che agli utenti non vengano inviate richieste quando installano un'applicazione da un'origine attendibile. Per altre informazioni, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > [!NOTE]
+  >  Quando si installa un'applicazione da un supporto rimovibile come un CD-ROM, non vengono inviate richieste all'utente. Inoltre, un amministratore di rete può configurare dei criteri di rete in modo che agli utenti non vengano inviate richieste quando installano un'applicazione da un'origine attendibile. Per altre informazioni, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
- Per limitare le autorizzazioni per un'applicazione ClickOnce, è possibile modificare le autorizzazioni per la sicurezza dell'accesso di codice per l'applicazione in modo da richiedere l'area più appropriata per le autorizzazioni necessarie all'applicazione. Nella maggior parte dei casi è possibile selezionare l'area da cui viene distribuita l'applicazione. Ad esempio, se l'applicazione è di tipo aziendale, è possibile usare l'area **Intranet locale** . Se l'applicazione è di tipo Internet, è possibile usare l'area **Internet** .  
+  Per limitare le autorizzazioni per un'applicazione ClickOnce, è possibile modificare le autorizzazioni per la sicurezza dell'accesso di codice per l'applicazione in modo da richiedere l'area più appropriata per le autorizzazioni necessarie all'applicazione. Nella maggior parte dei casi è possibile selezionare l'area da cui viene distribuita l'applicazione. Ad esempio, se l'applicazione è di tipo aziendale, è possibile usare l'area **Intranet locale** . Se l'applicazione è di tipo Internet, è possibile usare l'area **Internet** .  
   
 ## <a name="configuring-security-permissions"></a>Configurazione delle autorizzazioni di sicurezza  
  È sempre necessario configurare l'applicazione ClickOnce per richiedere l'area appropriata per limitare le autorizzazioni per la sicurezza dell'accesso di codice. È possibile configurare le autorizzazioni di sicurezza nella pagina **Sicurezza** di **Creazione progetti**.  
@@ -80,23 +80,23 @@ Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vinco
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Autorizzazioni di sicurezza per applicazioni ospitate da browser  
  Visual Studio fornisce i seguenti tipi di progetto per le applicazioni Windows Presentation Foundation (WPF):  
   
--   Applicazione Windows WPF  
+- Applicazione Windows WPF  
   
--   Applicazione Web Browser WPF  
+- Applicazione Web Browser WPF  
   
--   Libreria di controlli personalizzati WPF  
+- Libreria di controlli personalizzati WPF  
   
--   Libreria di servizi WPF  
+- Libreria di servizi WPF  
   
- Di questi tipi di progetto, solo le applicazioni Web Browser WPF vengono ospitate in un Web browser e richiedono quindi impostazioni speciali di distribuzione e sicurezza. Le impostazioni di sicurezza predefinite per queste applicazioni sono le seguenti:  
+  Di questi tipi di progetto, solo le applicazioni Web Browser WPF vengono ospitate in un Web browser e richiedono quindi impostazioni speciali di distribuzione e sicurezza. Le impostazioni di sicurezza predefinite per queste applicazioni sono le seguenti:  
   
--   **Abilita impostazioni di sicurezza ClickOnce**  
+- **Abilita impostazioni di sicurezza ClickOnce**  
   
--   **È un'applicazione parzialmente attendibile**  
+- **È un'applicazione parzialmente attendibile**  
   
--   **Area Internet** (con l'autorizzazione predefinita impostata per le applicazioni Web browser WPF selezionata)  
+- **Area Internet** (con l'autorizzazione predefinita impostata per le applicazioni Web browser WPF selezionata)  
   
- Nella finestra di dialogo **Impostazioni di sicurezza avanzate** la casella di controllo **Esegui debug dell'applicazione con il set di autorizzazioni selezionato** è selezionata e disabilitata. Il debug nell'area, infatti, non può essere disattivato per le applicazioni ospitate da browser.  
+  Nella finestra di dialogo **Impostazioni di sicurezza avanzate** la casella di controllo **Esegui debug dell'applicazione con il set di autorizzazioni selezionato** è selezionata e disabilitata. Il debug nell'area, infatti, non può essere disattivato per le applicazioni ospitate da browser.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   

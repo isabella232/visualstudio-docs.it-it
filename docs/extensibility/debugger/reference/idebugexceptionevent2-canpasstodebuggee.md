@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::CanPassToDebuggee | Documenti Microsoft
+title: IDebugExceptionEvent2::CanPassToDebuggee | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0ffea7be736cbf6d04c368ba6124d0faf22be61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ea3ac73ceb5ce61cbf7cc9acb71c610b1a34b59
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846265"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
-Determina se il motore di debug (DE) supporta l'opzione del passaggio di questa eccezione a un programma sottoposto a debug durante l'esecuzione riprende.  
+Determina se il motore di debug (DE) supporta la possibilità di passare questa eccezione per il programma in fase di debug quando si riprende l'esecuzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ int CanPassToDebuggee();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un `S_OK` (l'eccezione può essere passato al programma) o `S_FALSE` (l'eccezione non può essere passato).  
+ Restituisce uno `S_OK` (l'eccezione può essere passato al programma) o `S_FALSE` (l'eccezione non può essere passata).  
   
 ## <a name="remarks"></a>Note  
- La Germania deve avere un'azione predefinita per il passaggio per l'oggetto del debug. L'IDE è possibile che venga visualizzato il [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) eventi e chiamate di [continua](../../../extensibility/debugger/reference/idebugprocess3-continue.md) metodo senza chiamare il `CanPassToDebuggee` (metodo). Di conseguenza, la Germania dovrebbe avere un case predefinito per trasmettere l'eccezione o non.  
+ La Germania deve avere un'azione predefinita per il passaggio per l'oggetto del debug. Potrebbe essere visualizzato l'IDE di [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) eventi e chiamate il [continua](../../../extensibility/debugger/reference/idebugprocess3-continue.md) metodo senza chiamare il `CanPassToDebuggee` (metodo). Pertanto, la Germania deve avere un case predefinito per passare l'eccezione o non.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   

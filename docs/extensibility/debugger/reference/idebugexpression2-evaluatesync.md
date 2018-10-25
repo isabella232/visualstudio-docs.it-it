@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Documenti Microsoft
+title: IDebugExpression2::EvaluateSync | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5fc3fb1ad607eb7efb1ba20265545c18b1c1b46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b288d9995797a000f16533fcee9dafd85171722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864608"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Questo metodo valuta l'espressione in modo sincrono.  
@@ -50,7 +50,7 @@ int EvaluateSync(
  [in] Una combinazione di flag dal [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumerazione che controllano la valutazione dell'espressione.  
   
  `dwTimeout`  
- [in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Utilizzare `INFINITE` per un'attesa indefinita.  
+ [in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.  
   
  `pExprCallback`  
  [in] Questo parametro è sempre un valore null.  
@@ -63,14 +63,14 @@ int EvaluateSync(
   
 |Error|Descrizione|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Attualmente viene valutata un'altra espressione e la valutazione dell'espressione simultanee non è supportata.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Un'altra espressione in fase di valutazione e la valutazione dell'espressione simultanee non è supportata.|  
 |E_EVALUATE_TIMEOUT|Timeout della valutazione.|  
   
 ## <a name="remarks"></a>Note  
- Per la valutazione sincrona, non è necessario inviare un evento, tornare a Visual Studio dopo il completamento della valutazione.  
+ Per la valutazione sincrona, non è necessario inviare un evento torna a Visual Studio al completamento della valutazione.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per una semplice `CExpression` oggetto che implementa il [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CExpression` oggetto che implementa le [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfaccia.  
   
 ```cpp  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  

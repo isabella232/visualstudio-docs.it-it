@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a814e3d07c2e51a8f946ae9a7b6eff03ea3c2e01
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6196f8b8a058424732469ff954d607e00c97d396
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819771"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
 Quando si apre una soluzione Domain-Specific Language Tools (strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
@@ -28,7 +28,7 @@ Quando si apre una soluzione Domain-Specific Language Tools (strumenti DSL) in V
  Nella tabella seguente viene illustrato come vengono usate le parti dell'interfaccia utente.
 
 |**Elemento**|**Definizione**|
-|-----------------|--------------------|
+|-|-|
 |Diagramma|Il diagramma mostra il modello di dominio.<br /><br /> Il diagramma presenta due lati. Lato "uno" definisce i tipi degli elementi nei modelli. L'altro lato definisce come i modelli verranno visualizzato sullo schermo.|
 |Casella degli strumenti|Trascinare gli strumenti dalla casella degli strumenti per aggiungere classi di dominio e definire i tipi al diagramma. Per aggiungere mappe delle forme, connettori e relazioni, fare clic sullo strumento, quindi fare clic sul nodo di origine nel diagramma, quindi il nodo di destinazione.|
 |Esplora DSL|**Esplora DSL** viene visualizzato quando una definizione DSL è la finestra attiva. Viene illustrato il linguaggio DSL come una struttura ad albero. DSL Explorer consente di modificare le funzionalità del modello che non vengono visualizzate nel diagramma. Ad esempio, è possibile aggiungere gli elementi della casella degli strumenti e attivare il processo di convalida usando il **DSL Explorer**.|
@@ -42,7 +42,7 @@ Quando si apre una soluzione Domain-Specific Language Tools (strumenti DSL) in V
  Nella tabella seguente illustra alcuni degli elementi del diagramma del modello di dominio.
 
 |**Termine**|**Definizione**|
-|--------------|--------------------|
+|-|-|
 |Classe di dominio|Classi di dominio sono i tipi di elementi nei modelli.<br /><br /> Una classe di dominio può contenere più di una volta in un diagramma, se si tratta della destinazione di più di una relazione.<br /><br /> Per aggiungere una classe di dominio, trascinare lo strumento di classe di dominio dal **casella degli strumenti** per il **Classes and Relationships** lato del diagramma.|
 |Relazione di dominio|Relazioni di dominio sono i tipi di collegamenti tra elementi nei modelli.<br /><br /> Un' *relazione di incorporamento* indica che l'elemento di destinazione è di proprietà o contenuto nell'elemento di origine e viene visualizzato come una linea continua. Ogni elemento in un modello deve essere la destinazione di una relazione di incorporamento, in modo che il modello costituisce una struttura ad albero. Oggetto *fanno riferimento a relazione* indica un collegamento tra elementi del modello generale e viene visualizzato come una linea tratteggiata. Qualsiasi elemento può avere qualsiasi numero di collegamenti di riferimento.<br /><br /> Creare una relazione facendo clic sullo strumento il **casella degli strumenti**, scegliendo la classe di dominio di origine e quindi scegliendo la classe di destinazione.|
 |Forme e connettori|Forme specificano come gli elementi del modello devono essere visualizzati in un diagramma DSL., connettori di specificare le righe in un diagramma DSL che può essere utilizzato per visualizzare le relazioni.<br /><br /> Per creare una forma o connettore, trascinare lo strumento per la **Diagram Elements** lato del diagramma.|

@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Documenti Microsoft
+title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1e1dc8cd22b529eafd6183578be7de6ffe69549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d70aa31e7574e9fcdb0ed4e8d89847e832f3739b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832770"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Indica il protocollo utilizzato per la comunicazione tra un server di debug e il pacchetto di debug (DE).  
+Indica il protocollo usato per la comunicazione tra un server di debug e il pacchetto di debug (DE).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -53,7 +53,7 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>Parametri  
  CONNECTION_NONE  
- Non è è stata stabilita alcuna connessione a un server.  
+ Non è stata stabilita alcuna connessione a un server.  
   
  CONNECTION_UNKNOWN  
  È stata stabilita una connessione, ma è di tipo sconosciuto.  
@@ -62,10 +62,10 @@ public enum CONNECTION_PROTOCOL {
  Connessione è a un server locale.  
   
  CONNECTION_PIPE  
- Connessione viene eseguita tramite una named pipe.  
+ Connessione avviene tramite una named pipe.  
   
  CONNECTION_TCPIP  
- Connessione utilizza TCP/IP.  
+ Connessione Usa TCP/IP.  
   
  CONNECTION_HTTP  
  Connessione utilizza HTTP (tramite un server Web).  
@@ -74,7 +74,7 @@ public enum CONNECTION_PROTOCOL {
  Un altro tipo di connessione è stato stabilito (questo valore non viene attualmente utilizzato).  
   
 ## <a name="remarks"></a>Note  
- Questi valori sono restituiti dal [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metodo.  
+ Questi valori vengono restituiti dai [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

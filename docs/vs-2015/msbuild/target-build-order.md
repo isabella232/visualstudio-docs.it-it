@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d973c688243ce9b5923ec193edcd573770b1569
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925877"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "49241241"
   
 Le destinazioni devono venire ordinate se l'input per una destinazione dipende dall'output di un'altra destinazione. È possibile usare questi attributi per specificare l'ordine in cui vengono eseguite le destinazioni:  
   
--   `InitialTargets`. Questo attributo `Project` specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.  
+- `InitialTargets`. Questo attributo `Project` specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.  
   
--   `DefaultTargets`. Questo attributo `Project` specifica le destinazioni che vengono eseguite se non viene specificata una destinazione in modo esplicito nella riga di comando.  
+- `DefaultTargets`. Questo attributo `Project` specifica le destinazioni che vengono eseguite se non viene specificata una destinazione in modo esplicito nella riga di comando.  
   
--   `DependsOnTargets`. Questo attributo `Target` specifica le destinazioni che devono essere eseguite prima di poter eseguire questa destinazione.  
+- `DependsOnTargets`. Questo attributo `Target` specifica le destinazioni che devono essere eseguite prima di poter eseguire questa destinazione.  
   
--   `BeforeTargets` e `AfterTargets`. Questi attributi `Target` specificano che questa destinazione deve essere eseguita prima o dopo le destinazioni specificate (MSBuild 4.0).  
+- `BeforeTargets` e `AfterTargets`. Questi attributi `Target` specificano che questa destinazione deve essere eseguita prima o dopo le destinazioni specificate (MSBuild 4.0).  
   
- Una destinazione non viene mai eseguita due volte durante una compilazione, anche se ne dipende una destinazione successiva nella compilazione. Dopo che una destinazione è stata eseguita, il contributo alla compilazione è completo.  
+  Una destinazione non viene mai eseguita due volte durante una compilazione, anche se ne dipende una destinazione successiva nella compilazione. Dopo che una destinazione è stata eseguita, il contributo alla compilazione è completo.  
   
- Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per altre informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).  
+  Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per altre informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).  
   
 ## <a name="initial-targets"></a>Destinazioni iniziali  
  L'attributo `InitialTargets` dell'elemento [Project](../msbuild/project-element-msbuild.md) specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`. Le destinazioni iniziali vengono in genere usate per il controllo degli errori.  

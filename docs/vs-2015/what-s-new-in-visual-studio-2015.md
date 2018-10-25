@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93cee87a7a68083955d8c09562a318b602427efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828741"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Cosa&#39;s novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio 2015 è una famiglia integrata di strumenti di produttività per s
 ## <a name="a-new-setup-experience"></a>Una nuova esperienza di installazione  
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]  
   
- L'esperienza di installazione di Visual Studio 2015 è stata suddivisa in componenti in modo che è necessario installare le parti che è necessario. In questo modo l'installazione più veloce per molti scenari comuni che coinvolgono lo sviluppo Web o .NET. Se altri tipi di sviluppo, ad esempio sviluppo multipiattaforma per dispositivi mobili, o si lavora in C++ o F#, scegliere <ph x=&quot;1&quot; type=&quot;bpt&quot;>&lt;bpt id=&quot;p1&quot;&gt;**&lt;/bpt&gt;</ph>personalizzato<ph x=&quot;2&quot; type=&quot;ept&quot;>&lt;ept id=&quot;p1&quot;&gt;**&lt;/ept&gt;</ph> installazione e quindi scegliere i componenti e il SDK di terze parti facoltativo che è necessario. È inoltre possibile installare i componenti personalizzati in un secondo momento. Ad esempio, se si sceglie l'installazione di base e quindi tentare di creare un nuovo progetto C++, verrà richiesto di scaricare gli strumenti di sviluppo C++.  
+ L'esperienza di installazione di Visual Studio 2015 è stata suddivisa in componenti in modo che è necessario installare le parti che è necessario. In questo modo l'installazione più veloce per molti scenari comuni che coinvolgono lo sviluppo Web o .NET. Se altri tipi di sviluppo, ad esempio sviluppo multipiattaforma per dispositivi mobili, o si lavora in C++ o F#, scegliere **personalizzato** installazione e quindi scegliere i componenti e il SDK di terze parti facoltativo che è necessario. È inoltre possibile installare i componenti personalizzati in un secondo momento. Ad esempio, se si sceglie l'installazione di base e quindi tentare di creare un nuovo progetto C++, verrà richiesto di scaricare gli strumenti di sviluppo C++.  
   
  ![Dialogo di installazione di Visual Studio 2015](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")  
   
@@ -108,17 +108,17 @@ Visual Studio 2015 è una famiglia integrata di strumenti di produttività per s
 ## <a name="connect-to-services"></a>Connettersi ai servizi  
  Con Visual Studio 2015 è più semplice che mai connettere l'app ai servizi.  La nuova procedura guidata Aggiungi servizio connesso consente di configurare il progetto, aggiungere il supporto necessario per l'autenticazione e scaricare i pacchetti NuGet necessari per iniziare a scrivere codice per il servizio in modo rapido e senza problemi. La procedura guidata Aggiungi servizio connesso si integra anche con il nuovo Gestione account per facilitare l'uso di più account utente e sottoscrizioni. In Visual Studio 2015 è incluso il supporto automatico per i servizi seguenti, presupposto che l'utente disponga di un account:  
   
-1.  Servizi mobili di Azure  
+1. Servizi mobili di Azure  
   
-2.  Archiviazione di Azure  
+2. Archiviazione di Azure  
   
-3.  Office 365 (posta elettronica, contatti, calendari, file, utenti e gruppi)  
+3. Office 365 (posta elettronica, contatti, calendari, file, utenti e gruppi)  
   
-4.  Salesforce  
+4. Salesforce  
   
- Nuovi servizi verranno aggiunti regolarmente e sarà possibile scoprirli facendo clic sul collegamento per trovare nuovi servizi nella procedura guidata.  
+   Nuovi servizi verranno aggiunti regolarmente e sarà possibile scoprirli facendo clic sul collegamento per trovare nuovi servizi nella procedura guidata.  
   
- ![Aggiungi finestra di dialogo servizi connessi](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
+   ![Aggiungi finestra di dialogo servizi connessi](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
   
 ## <a name="design-your-ui"></a>Progettare l'interfaccia utente  
  L'esperienza Blend per la progettazione di interfacce utente XAML è stata notevolmente migliorata. Blend è stato completamente riprogettato per fornire un'interfaccia utente più intuitiva, funzionalità di modifica XAML più potenti, tra cui IntelliSense e una migliore integrazione con Visual Studio. Per altre informazioni, vedere [la progettazione di XAML in Visual Studio e Blend per Visual Studio](./designers/designing-xaml-in-visual-studio.md).  
@@ -188,19 +188,19 @@ Visual Studio 2015 è una famiglia integrata di strumenti di produttività per s
   
  In Visual Studio Enterprise e Visual Studio Professional ora è possibile:  
   
--   Ottenere la cronologia per un intero file di codice nell'editor di Visual Studio.  
+- Ottenere la cronologia per un intero file di codice nell'editor di Visual Studio.  
   
-     ![CodeLens: ottenere i dettagli sul file di codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+   ![CodeLens: ottenere i dettagli sul file di codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
--   Visualizzare un grafico che mostra le persone che hanno modificato il codice. consentendo di individuare i criteri delle modifiche del team e di valutarne l'impatto.  
+- Visualizzare un grafico che mostra le persone che hanno modificato il codice. consentendo di individuare i criteri delle modifiche del team e di valutarne l'impatto.  
   
-     ![CodeLens: visualizzare la cronologia delle modifiche del codice sotto forma di grafico](./ide/media/codelens.png "CodeLens")  
+   ![CodeLens: visualizzare la cronologia delle modifiche del codice sotto forma di grafico](./ide/media/codelens.png "CodeLens")  
   
--   Individuare facilmente la data delle ultime modifiche apportate al codice.  
+- Individuare facilmente la data delle ultime modifiche apportate al codice.  
   
--   Individuare le modifiche in altri rami che hanno effetto sul codice.  
+- Individuare le modifiche in altri rami che hanno effetto sul codice.  
   
- Vedere [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
+  Vedere [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>Strumenti di architettura e modellazione (solo edizione Enterprise)  
  **Le mappe codici e grafici delle dipendenze**  
@@ -213,35 +213,35 @@ Visual Studio 2015 è una famiglia integrata di strumenti di produttività per s
   
  Questi miglioramenti includono:  
   
--   **Diagrammi verticali migliorati**. Per soluzioni Visual Studio di medie e grandi dimensioni, è ora possibile usare un menu Architettura semplificato per ottenere mappe codici più utili per la propria soluzione. Gli assembly della soluzione vengono raggruppati in base alle cartelle della soluzione, per cui è possibile visualizzarli nel contesto e sfruttare il lavoro eseguito per strutturare la soluzione. I riferimenti al progetto e all’assembly verranno visualizzati immediatamente, quindi verranno visualizzati i tipi di collegamento. Inoltre, gli assembly esterni alla soluzione vengono raggruppati in un modo più compatto.  
+- **Diagrammi verticali migliorati**. Per soluzioni Visual Studio di medie e grandi dimensioni, è ora possibile usare un menu Architettura semplificato per ottenere mappe codici più utili per la propria soluzione. Gli assembly della soluzione vengono raggruppati in base alle cartelle della soluzione, per cui è possibile visualizzarli nel contesto e sfruttare il lavoro eseguito per strutturare la soluzione. I riferimenti al progetto e all’assembly verranno visualizzati immediatamente, quindi verranno visualizzati i tipi di collegamento. Inoltre, gli assembly esterni alla soluzione vengono raggruppati in un modo più compatto.  
   
--   **Ai progetti di test viene applicato uno stile diverso e tali progetti possono essere filtrati**. È ora possibile identificare più facilmente e rapidamente i progetti di test nella mappa perché a tali progetti viene applicato uno stile diverso. I progetti possono essere anche filtrati in modo che sia possibile concentrarsi sul codice dell'applicazione.  
+- **Ai progetti di test viene applicato uno stile diverso e tali progetti possono essere filtrati**. È ora possibile identificare più facilmente e rapidamente i progetti di test nella mappa perché a tali progetti viene applicato uno stile diverso. I progetti possono essere anche filtrati in modo che sia possibile concentrarsi sul codice dell'applicazione.  
   
--   **Collegamenti di dipendenza esterna semplificati**. I collegamenti di dipendenza non rappresentano più l'ereditarietà di System.Object, System.ValueType, System.Enum e System.Delegate che semplifica la visualizzazione delle dipendenze esterne nella mappa codici.  
+- **Collegamenti di dipendenza esterna semplificati**. I collegamenti di dipendenza non rappresentano più l'ereditarietà di System.Object, System.ValueType, System.Enum e System.Delegate che semplifica la visualizzazione delle dipendenze esterne nella mappa codici.  
   
--   **L’analisi dei collegamenti di dipendenza tiene in considerazione i filtri**. È possibile ottenere un diagramma utile e chiaro quando il diagramma si espande per comprendere i contributi a un collegamento di dipendenza. Il diagramma è meno pieno di informazioni e tiene in considerazione le opzioni selezionate per il filtro del collegamento.  
+- **L’analisi dei collegamenti di dipendenza tiene in considerazione i filtri**. È possibile ottenere un diagramma utile e chiaro quando il diagramma si espande per comprendere i contributi a un collegamento di dipendenza. Il diagramma è meno pieno di informazioni e tiene in considerazione le opzioni selezionate per il filtro del collegamento.  
   
--   **Gli elementi di codice vengono aggiunti a una mappa di codice con il relativo contesto**. Poiché i diagrammi vengono ora visualizzati con il relativo contesto (fino alla cartella della soluzione e dell’assembly che è possibile filtrare se necessario), è possibile ottenere diagrammi più utili quando si trascinano elementi di codice da Esplora soluzioni, Visualizzazione classi, Visualizzatore oggetti o quando si selezionano elementi in Esplora soluzioni e si sceglie Mostra in mappa codici.  
+- **Gli elementi di codice vengono aggiunti a una mappa di codice con il relativo contesto**. Poiché i diagrammi vengono ora visualizzati con il relativo contesto (fino alla cartella della soluzione e dell’assembly che è possibile filtrare se necessario), è possibile ottenere diagrammi più utili quando si trascinano elementi di codice da Esplora soluzioni, Visualizzazione classi, Visualizzatore oggetti o quando si selezionano elementi in Esplora soluzioni e si sceglie Mostra in mappa codici.  
   
--   **Ottenere mappe di codici reattive più rapidamente**. Le operazioni di trascinamento della selezione producono un risultato immediato e i collegamenti tra i nodi vengono creati molto più rapidamente, senza influire sulle operazioni successive avviate dall'utente, ad esempio l’espansione di un nodo o la richiesta di altri nodi. Quando si creano mappe di codice senza compilare la soluzione, tutti i casi estremi, ad esempio quando gli assembly non vengono compilati, vengono ora elaborati.  
+- **Ottenere mappe di codici reattive più rapidamente**. Le operazioni di trascinamento della selezione producono un risultato immediato e i collegamenti tra i nodi vengono creati molto più rapidamente, senza influire sulle operazioni successive avviate dall'utente, ad esempio l’espansione di un nodo o la richiesta di altri nodi. Quando si creano mappe di codice senza compilare la soluzione, tutti i casi estremi, ad esempio quando gli assembly non vengono compilati, vengono ora elaborati.  
   
--   **Ignorare la ricompilazione della soluzione.** Offre prestazioni migliori durante la creazione e la modifica di diagrammi.  
+- **Ignorare la ricompilazione della soluzione.** Offre prestazioni migliori durante la creazione e la modifica di diagrammi.  
   
--   **Filtrare nodi e gruppi di elementi di codice**. È possibile ordinare rapidamente le mappe visualizzando o nascondendo gli elementi di codice in base alla categoria e raggruppando gli elementi di codice per cartelle di soluzioni, assembly, spazi dei nomi, cartelle di progetti e tipi.  
+- **Filtrare nodi e gruppi di elementi di codice**. È possibile ordinare rapidamente le mappe visualizzando o nascondendo gli elementi di codice in base alla categoria e raggruppando gli elementi di codice per cartelle di soluzioni, assembly, spazi dei nomi, cartelle di progetti e tipi.  
   
--   **Filtrare le relazioni in modo da agevolare la lettura dei diagrammi**. Il filtro dei collegamenti si applica ora anche ai collegamenti tra gruppi, che rende l’uso della finestra dei filtri meno invasivo rispetto alle versioni precedenti.  
+- **Filtrare le relazioni in modo da agevolare la lettura dei diagrammi**. Il filtro dei collegamenti si applica ora anche ai collegamenti tra gruppi, che rende l’uso della finestra dei filtri meno invasivo rispetto alle versioni precedenti.  
   
--   **Creare diagrammi da Visualizzazione classi e Visualizzatore oggetti**. Trascinare la selezione di file e assembly in una mappa nuova o esistente dalle finestre Visualizzazione classi e Visualizzatore oggetti.  
+- **Creare diagrammi da Visualizzazione classi e Visualizzatore oggetti**. Trascinare la selezione di file e assembly in una mappa nuova o esistente dalle finestre Visualizzazione classi e Visualizzatore oggetti.  
   
- Vedere [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).  
+  Vedere [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).  
   
- **Altre modifiche di progettazione e modellazione in questa versione:**  
+  **Altre modifiche di progettazione e modellazione in questa versione:**  
   
--   **Diagrammi livello**. Aggiornare questi diagrammi con Visualizzazione classi e Visualizzatore oggetti. Per soddisfare i requisiti di progettazione software, usare i diagrammi livello per descrivere le dipendenze desiderate per il software. Mantenere il codice coerente con la progettazione individuando il codice che non soddisfa questi vincoli e convalidando il codice futuro con questa linea di base.  
+- **Diagrammi livello**. Aggiornare questi diagrammi con Visualizzazione classi e Visualizzatore oggetti. Per soddisfare i requisiti di progettazione software, usare i diagrammi livello per descrivere le dipendenze desiderate per il software. Mantenere il codice coerente con la progettazione individuando il codice che non soddisfa questi vincoli e convalidando il codice futuro con questa linea di base.  
   
--   **Diagrammi UML**. Per creare diagrammi classi e diagrammi sequenze UML, non è più possibile usare codice, ma si possono usare i nuovi elementi UML.  
+- **Diagrammi UML**. Per creare diagrammi classi e diagrammi sequenze UML, non è più possibile usare codice, ma si possono usare i nuovi elementi UML.  
   
--   **Esplora architettura** Per creare diagrammi, non è più possibile usare Esplora architettura, ma si può usare Esplora soluzioni.  
+- **Esplora architettura** Per creare diagrammi, non è più possibile usare Esplora architettura, ma si può usare Esplora soluzioni.  
   
 ## <a name="visual-studio-extensibility-tools"></a>Strumenti di estendibilità in Visual Studio  
  Non è mai stato così semplice installare Visual Studio Extensibility Tools (Visual Studio SDK e modelli). Infatti ora vengono inclusi come componenti facoltativi durante l'installazione.  Gli strumenti di estendibilità consentono agli sviluppatori di scrivere le estensioni da personalizzare e aggiungere funzionalità a Visual Studio. Per ulteriori informazioni sulle estendibilità di Visual Studio, vedere [Visual Studio SDK](./extensibility/visual-studio-sdk.md).  

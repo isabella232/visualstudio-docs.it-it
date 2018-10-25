@@ -16,12 +16,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1b8b18c93e96e9b7fddeafc06df970e541f84d80
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0bc13aa389d6597831682cad62bcaad53672fa7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893468"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,19 +30,19 @@ In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia 
   
  **Requisiti**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- Quando si crea un nuovo test codificato dell'interfaccia utente, per impostazione predefinita, il framework di test di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera il codice per il test in una classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Per altre informazioni sulla registrazione di test codificati dell'interfaccia utente, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md).  
+  Quando si crea un nuovo test codificato dell'interfaccia utente, per impostazione predefinita, il framework di test di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera il codice per il test in una classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Per altre informazioni sulla registrazione di test codificati dell'interfaccia utente, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md).  
   
- Il codice generato per la mappa dell'interfaccia utente contiene una classe per ogni oggetto con cui il test interagisce. Per ogni metodo generato, viene generata una classe complementare per i parametri del metodo appositamente per quel metodo. Se l'applicazione contiene un numero elevato di oggetti, pagine, moduli e controlli, la mappa dell'interfaccia utente può raggiungere dimensioni significative. Inoltre, se più persone stanno operando sui test, l'applicazione può diventare difficile da gestire se è presente un solo file di mappa dell'interfaccia utente di grandi dimensioni.  
+  Il codice generato per la mappa dell'interfaccia utente contiene una classe per ogni oggetto con cui il test interagisce. Per ogni metodo generato, viene generata una classe complementare per i parametri del metodo appositamente per quel metodo. Se l'applicazione contiene un numero elevato di oggetti, pagine, moduli e controlli, la mappa dell'interfaccia utente può raggiungere dimensioni significative. Inoltre, se più persone stanno operando sui test, l'applicazione può diventare difficile da gestire se è presente un solo file di mappa dell'interfaccia utente di grandi dimensioni.  
   
- L'uso di più file di mappa dell'interfaccia utente può offrire i vantaggi seguenti:  
+  L'uso di più file di mappa dell'interfaccia utente può offrire i vantaggi seguenti:  
   
--   Ogni mappa può essere associata a un subset logico dell'applicazione per semplificare la gestione delle modifiche.  
+- Ogni mappa può essere associata a un subset logico dell'applicazione per semplificare la gestione delle modifiche.  
   
--   Ogni tester può operare su una sezione dell'applicazione e archiviare il proprio codice senza interferire con altri tester che lavorano su altre sezioni dell'applicazione.  
+- Ogni tester può operare su una sezione dell'applicazione e archiviare il proprio codice senza interferire con altri tester che lavorano su altre sezioni dell'applicazione.  
   
--   Le aggiunte all'interfaccia utente dell'applicazione possono essere ridimensionate in modo incrementale con effetti minimi sui test per le altre parti dell'interfaccia utente.  
+- Le aggiunte all'interfaccia utente dell'applicazione possono essere ridimensionate in modo incrementale con effetti minimi sui test per le altre parti dell'interfaccia utente.  
   
 ## <a name="do-you-need-multiple-ui-maps"></a>Situazioni in cui sono necessarie più mappe dell'interfaccia utente  
  Creare più mappe dell'interfaccia utente nei tipi di situazioni seguenti:  
@@ -55,34 +55,34 @@ In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia 
   
 #### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Per aggiungere una mappa dell'interfaccia utente al progetto di test codificato dell'interfaccia utente  
   
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file del progetto di test codificato dell'interfaccia utente, scegliere **Aggiungi** e quindi **Nuova cartella** per creare una cartella nel progetto di test codificato dell'interfaccia utente in cui archiviare tutte le mappe dell'interfaccia utente. Ad esempio, la cartella potrebbe essere denominata `UIMaps`.  
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file del progetto di test codificato dell'interfaccia utente, scegliere **Aggiungi** e quindi **Nuova cartella** per creare una cartella nel progetto di test codificato dell'interfaccia utente in cui archiviare tutte le mappe dell'interfaccia utente. Ad esempio, la cartella potrebbe essere denominata `UIMaps`.  
   
-     La nuova cartella verrà visualizzata sotto il progetto di test codificato dell'interfaccia utente.  
+    La nuova cartella verrà visualizzata sotto il progetto di test codificato dell'interfaccia utente.  
   
-2.  Fare clic con il pulsante destro del sulla cartella `UIMaps`, scegliere **Aggiungi** e quindi **Nuovo elemento**.  
+2. Fare clic con il pulsante destro del sulla cartella `UIMaps`, scegliere **Aggiungi** e quindi **Nuovo elemento**.  
   
-     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.  
+    Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.  
   
-    > [!NOTE]
-    >  È necessario essere all'interno di un progetto di test codificato dell'interfaccia utente per aggiungere una nuova mappa di test codificati dell'interfaccia utente.  
+   > [!NOTE]
+   >  È necessario essere all'interno di un progetto di test codificato dell'interfaccia utente per aggiungere una nuova mappa di test codificati dell'interfaccia utente.  
   
-3.  Selezionare **Mappa di test codificati dell'interfaccia utente** nell'elenco.  
+3. Selezionare **Mappa di test codificati dell'interfaccia utente** nell'elenco.  
   
-     Nella casella **Nome** immettere un nome per la nuova mappa dell'interfaccia utente. Usare il nome del componente o della pagina che verrà rappresentata dalla mappa, ad esempio `HomePageMap`.  
+    Nella casella **Nome** immettere un nome per la nuova mappa dell'interfaccia utente. Usare il nome del componente o della pagina che verrà rappresentata dalla mappa, ad esempio `HomePageMap`.  
   
-4.  Scegliere **Aggiungi**.  
+4. Scegliere **Aggiungi**.  
   
-     La finestra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene ridotta a icona e viene visualizzata la finestra di dialogo **Generatore di test codificati dell'interfaccia utente**.  
+    La finestra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene ridotta a icona e viene visualizzata la finestra di dialogo **Generatore di test codificati dell'interfaccia utente**.  
   
-5.  Registrare le azioni per il primo metodo e scegliere **Genera codice**.  
+5. Registrare le azioni per il primo metodo e scegliere **Genera codice**.  
   
-6.  Dopo avere registrato tutte le azioni e le asserzioni per il primo componente o pagina e averli raggruppati in metodi, chiudere la finestra di dialogo **Generatore di test codificati dell'interfaccia utente**.  
+6. Dopo avere registrato tutte le azioni e le asserzioni per il primo componente o pagina e averli raggruppati in metodi, chiudere la finestra di dialogo **Generatore di test codificati dell'interfaccia utente**.  
   
-7.  Continuare a creare le mappe dell'interfaccia utente. Registrare le azioni e le asserzioni, raggrupparle in metodi per ogni componente e quindi generare il codice.  
+7. Continuare a creare le mappe dell'interfaccia utente. Registrare le azioni e le asserzioni, raggrupparle in metodi per ogni componente e quindi generare il codice.  
   
- In molti casi, la finestra di primo livello dell'applicazione rimane costante per tutte le procedure guidate, i moduli e le pagine. Sebbene ogni mappa dell'interfaccia utente abbia una classe per la finestra di primo livello, è probabile che tutte le mappe facciano riferimento alla stessa finestra di primo livello all'interno della quale sono in esecuzione tutti i componenti dell'applicazione. I test codificati dell'interfaccia utente eseguono la ricerca dei controlli in modo gerarchico dall'altro al basso, iniziando dalla finestra di primo livello in modo che in un'applicazione complessa la finestra di primo livello effettiva possa essere duplicata in ogni mappa dell'interfaccia utente. Se la finestra di primo livello effettiva viene duplicata, ogni cambiamento della finestra determina più modifiche. Questo può causare problemi di prestazioni nel passaggio da una mappa dell'interfaccia utente all'altra.  
+   In molti casi, la finestra di primo livello dell'applicazione rimane costante per tutte le procedure guidate, i moduli e le pagine. Sebbene ogni mappa dell'interfaccia utente abbia una classe per la finestra di primo livello, è probabile che tutte le mappe facciano riferimento alla stessa finestra di primo livello all'interno della quale sono in esecuzione tutti i componenti dell'applicazione. I test codificati dell'interfaccia utente eseguono la ricerca dei controlli in modo gerarchico dall'altro al basso, iniziando dalla finestra di primo livello in modo che in un'applicazione complessa la finestra di primo livello effettiva possa essere duplicata in ogni mappa dell'interfaccia utente. Se la finestra di primo livello effettiva viene duplicata, ogni cambiamento della finestra determina più modifiche. Questo può causare problemi di prestazioni nel passaggio da una mappa dell'interfaccia utente all'altra.  
   
- Per attenuare questo effetto, è possibile usare il metodo `CopyFrom()` per garantire che la nuova finestra di primo livello in quella determinata mappa dell'interfaccia utente corrisponda alla finestra di primo livello principale.  
+   Per attenuare questo effetto, è possibile usare il metodo `CopyFrom()` per garantire che la nuova finestra di primo livello in quella determinata mappa dell'interfaccia utente corrisponda alla finestra di primo livello principale.  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente fa parte di una classe di utilità che fornisce accesso a ogni componente e ai relativi controlli figlio che sono rappresentati dalle classi generati nelle varie mappe dell'interfaccia utente.  

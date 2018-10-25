@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isMSILNetmodule | Documenti Microsoft
+title: Get_ismsilnetmodule | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c902252e250c78e5712f5e91b8cc5404851cc6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904689"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
-Recupera un flag che indica se il modulo è un file netmodule (un modulo di Microsoft Intermediate Language (MSIL) che contiene solo i metadati e nessun simbolo nativo).  
+Recupera un flag che indica se il modulo è netmodule (un modulo di Microsoft Intermediate Language (MSIL) che contenga solo i metadati e senza simboli nativi).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,14 +43,14 @@ HRESULT get_isMSILNetmodule(
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- Questa proprietà è disponibile il `SymTagCompilandDetails` tipo di simbolo (vedere [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
+ Questa proprietà è disponibile il `SymTagCompilandDetails` tipo di simboli (vedere [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 8.0 DIA SDK|  
+|Versione:|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

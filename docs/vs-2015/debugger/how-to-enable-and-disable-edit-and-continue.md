@@ -30,12 +30,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856705"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Procedura: abilitare e disabilitare Modifica e continuazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +48,18 @@ ms.locfileid: "49212829"
   
 #### <a name="to-enabledisable-edit-and-continue"></a>Per abilitare o disabilitare Modifica e continuazione  
   
-1.  Apri pagina delle opzioni di debug (**Strumenti / opzioni / debug**).  
+1. Apri pagina delle opzioni di debug (**Strumenti / opzioni / debug**).  
   
-2.  Scorrere verso il basso **modifica e continuazione** categoria.  
+2. Scorrere verso il basso **modifica e continuazione** categoria.  
   
-3.  Per abilitare, selezionare la **Abilita modifica e continuazione** casella di controllo. Per disabilitarla, deselezionare la casella di controllo.  
+3. Per abilitare, selezionare la **Abilita modifica e continuazione** casella di controllo. Per disabilitarla, deselezionare la casella di controllo.  
   
-    > [!NOTE]
-    >  Se IntelliTrace è abilitato e si raccolgono sia eventi IntelliTrace sia informazioni sulle chiamate, la funzionalità Modifica e continuazione viene disabilitata. Per altre informazioni, vedere [configurare IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   > [!NOTE]
+   >  Se IntelliTrace è abilitato e si raccolgono sia eventi IntelliTrace sia informazioni sulle chiamate, la funzionalità Modifica e continuazione viene disabilitata. Per altre informazioni, vedere [configurare IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
- Per altre informazioni su queste opzioni, vedere [generale, debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md).  
+   Per altre informazioni su queste opzioni, vedere [generale, debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modifica e continuazione](../debugger/edit-and-continue.md)

@@ -13,56 +13,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc86f6f5e6689903acb4c57131cee5562117f732
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893104"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Procedura: creare i marcatori di testo personalizzato
 Se si desidera creare un marcatore di testo personalizzato per enfatizzare o organizzare il codice, è necessario eseguire i passaggi seguenti:  
   
--   Registrare il marcatore di testo nuovo, in modo che altri strumenti possano accedervi.  
+- Registrare il marcatore di testo nuovo, in modo che altri strumenti possano accedervi.  
   
--   Fornire un'implementazione predefinita e la configurazione del marcatore di testo.  
+- Fornire un'implementazione predefinita e la configurazione del marcatore di testo.  
   
--   Creare un servizio che può essere utilizzato da altri processi per rendere utilizzare del marcatore di testo.  
+- Creare un servizio che può essere utilizzato da altri processi per rendere utilizzare del marcatore di testo.  
   
- Per informazioni dettagliate su come applicare un marcatore di testo a un'area di codice, vedere [procedura: utilizzare marcatori di testo](../extensibility/how-to-use-text-markers.md).  
+  Per informazioni dettagliate su come applicare un marcatore di testo a un'area di codice, vedere [procedura: utilizzare marcatori di testo](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Per registrare un marcatore personalizzato  
   
-1.  Creare una voce del Registro di sistema come indicato di seguito:  
+1. Creare una voce del Registro di sistema come indicato di seguito:  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione > \Text Editor\External marcatori\\\<MarkerGUID >**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione > \Text Editor\External marcatori\\\<MarkerGUID >**  
   
-     *\<MarkerGUID >* è un `GUID` utilizzato per identificare il marcatore da aggiungere  
+    *\<MarkerGUID >* è un `GUID` utilizzato per identificare il marcatore da aggiungere  
   
-     `<Version>` è la versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ad esempio 8.0  
+    `<Version>` è la versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ad esempio 8.0  
   
-     `<PackageGUID>` il GUID del pacchetto VSPackage implementa l'oggetto di automazione.  
+    `<PackageGUID>` il GUID del pacchetto VSPackage implementa l'oggetto di automazione.  
   
-    > [!NOTE]
-    >  Il percorso della radice **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione >** può essere sottoposto a override da un'altra radice quando viene inizializzata la shell di Visual Studio, per altre informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Il percorso della radice **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione >** può essere sottoposto a override da un'altra radice quando viene inizializzata la shell di Visual Studio, per altre informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Creare quattro valori sotto **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione > \Text Editor\External marcatori\\\<MarkerGUID >**  
+2. Creare quattro valori sotto **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione > \Text Editor\External marcatori\\\<MarkerGUID >**  
   
-    -   (Predefinito)  
+   -   (Predefinito)  
   
-    -   Service  
+   -   Service  
   
-    -   DisplayName  
+   -   DisplayName  
   
-    -   Pacchetto  
+   -   Pacchetto  
   
-    -   `Default` è una voce facoltativa di tipo REG_SZ. Se impostato, il valore della voce è una stringa che contiene alcune utili informazioni di identificazione, ad esempio "Custom marcatore di testo".  
+   -   `Default` è una voce facoltativa di tipo REG_SZ. Se impostato, il valore della voce è una stringa che contiene alcune utili informazioni di identificazione, ad esempio "Custom marcatore di testo".  
   
-    -   `Service` è una voce di tipo REG_SZ contenente la stringa del GUID del servizio che fornisce il marcatore di testo personalizzato tramite proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Il formato è {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Service` è una voce di tipo REG_SZ contenente la stringa del GUID del servizio che fornisce il marcatore di testo personalizzato tramite proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Il formato è {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` è una voce di tipo REG_SZ contenente l'ID risorsa del nome del marcatore di testo personalizzato. Il formato è #YYYY.  
+   -   `DisplayName` è una voce di tipo REG_SZ contenente l'ID risorsa del nome del marcatore di testo personalizzato. Il formato è #YYYY.  
   
-    -   `Package` voce di tipo REG_SZ contenente il `GUID` di VSPackage che fornisce il servizio elencato nel servizio. Il formato è {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Package` voce di tipo REG_SZ contenente il `GUID` di VSPackage che fornisce il servizio elencato nel servizio. Il formato è {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ## <a name="to-create-a-custom-text-marker"></a>Per creare un marcatore di testo personalizzato  
   

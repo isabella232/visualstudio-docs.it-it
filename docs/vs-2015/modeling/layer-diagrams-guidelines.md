@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844159"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammi livello: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* i
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Per decompilare le dipendenze esistenti tra i livelli  
   
--   Selezionare uno o più livelli, fare doppio clic su un livello selezionato e quindi fare clic su **genera dipendenze**.  
+- Selezionare uno o più livelli, fare doppio clic su un livello selezionato e quindi fare clic su **genera dipendenze**.  
   
- In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È possibile modificare queste dipendenze per allinearle con la progettazione desiderata.  
+  In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È possibile modificare queste dipendenze per allinearle con la progettazione desiderata.  
   
 ##  <a name="EditArchitecture"></a> Modificare livelli e dipendenze per visualizzare la progettazione desiderata  
  Per descrivere le modifiche da apportare al sistema o all'architettura desiderata, eseguire i passaggi seguenti per modificare il diagramma livello. È anche possibile prendere in considerazione alcune modifiche relative al refactoring per migliorare la struttura del codice prima di estenderlo. Visualizzare [miglioramento della struttura del codice](#Improving).  
@@ -151,11 +151,11 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* i
 ##  <a name="UpdateCode"></a> Aggiornare il codice per garantire la conformità alla nuova architettura  
  In genere, alla prima convalida del codice rispetto a un diagramma livello aggiornato vengono visualizzati errori. Gli errori possono avere cause diverse:  
   
--   Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.  
+- Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.  
   
--   Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.  
+- Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.  
   
- Per risolvere gli errori, aggiornare il codice finché non verranno più visualizzati errori di convalida. Si tratta in genere di un processo iterativo. Per altre informazioni su questi errori, vedere [convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md).  
+  Per risolvere gli errori, aggiornare il codice finché non verranno più visualizzati errori di convalida. Si tratta in genere di un processo iterativo. Per altre informazioni su questi errori, vedere [convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
 >  Quando si sviluppa codice o se ne effettua il refactoring, è possibile che siano presenti nuovi artefatti da collegare al diagramma livello. È tuttavia possibile che ciò non sia necessario, ad esempio se sono presenti livelli che rappresentano spazi dei nomi esistenti e il nuovo codice aggiunge altri elementi a questi spazi dei nomi.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricFile | Documenti Microsoft
+title: IDebugSettingsCallback2::GetEEMetricFile | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90bb999a976b72fc444b6c9bdf41d9ec427dffde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 27e023a9b0b1c05f93209e460bc6dbc45bee4f2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927294"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
-Recupera il file di metrica dell'analizzatore di espressioni espressione dato il nome o la metrica.  
+Recupera il file di metrica dell'analizzatore di espressioni espressione stato assegnato il nome o la metrica.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -54,7 +54,7 @@ private int GetEEMetricFile(
  [in] Nome della metrica.  
   
  `pbstrValue`  
- [out] Restituisce il contenuto del file di metrica sotto forma di stringa.  
+ [out] Restituisce il contenuto del file metrica sotto forma di stringa.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

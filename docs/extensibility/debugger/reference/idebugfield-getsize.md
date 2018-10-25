@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetSize | Documenti Microsoft
+title: IDebugField::GetSize | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e7343f6d496587c3fbf69adf3ec56a9f516a9be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bd47ac87eb61876302215f6a1e7e8aeed53c287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867546"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 Questo metodo ottiene le dimensioni di un campo, in byte.  
@@ -41,13 +41,13 @@ int GetSize(
   
 #### <a name="parameters"></a>Parametri  
  `pdwSize`  
- [out] Restituisce le dimensioni.  
+ [out] Restituisce la dimensione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Tutti i campi sono un tipo e tutti i tipi hanno una dimensione. Ad esempio, un campo con un tipo di byte ha una dimensione di 1 byte.  
+ Tutti i campi hanno un tipo e tutti i tipi hanno una dimensione. Ad esempio, un campo con un tipo di byte ha una dimensione di 1 byte.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

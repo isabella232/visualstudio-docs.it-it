@@ -20,37 +20,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c99e0e1bf64a6a88778d4bfcf27a796916a0f044
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f4f4577fc7e1a26481ff4ab5aa94888cf5668adf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825351"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Procedura: utilizzare la finestra Thread GPU
 Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per altre informazioni sulle applicazioni eseguite nella GPU, vedere [Panoramica di C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
   
  La finestra Thread GPU contiene una tabella in cui ogni riga rappresenta un set di thread GPU che hanno gli stessi valori in tutte le colonne. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile contrassegnare, rimuovere i flag, bloccare (sospendere) e sbloccare (riprendere) i thread dalla finestra Thread GPU. Le colonne seguenti sono visualizzate nella finestra Thread GPU:  
   
--   Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.  
+- Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.  
   
--   Il thread colonna corrente, in cui una freccia gialla indica che il thread corrente.  
+- Il thread colonna corrente, in cui una freccia gialla indica che il thread corrente.  
   
--   Il **conteggio dei Thread** colonna, che visualizza il numero di thread nella stessa posizione.  
+- Il **conteggio dei Thread** colonna, che visualizza il numero di thread nella stessa posizione.  
   
--   Il **riga** colonna, che consente di visualizzare la riga di codice in cui si trova ciascun gruppo di thread.  
+- Il **riga** colonna, che consente di visualizzare la riga di codice in cui si trova ciascun gruppo di thread.  
   
--   Il **indirizzo** colonna, che consente di visualizzare l'indirizzo dell'istruzione in cui si trova ciascun gruppo di thread. Per impostazione predefinita, questa colonna è nascosta.  
+- Il **indirizzo** colonna, che consente di visualizzare l'indirizzo dell'istruzione in cui si trova ciascun gruppo di thread. Per impostazione predefinita, questa colonna è nascosta.  
   
--   Il **posizione** colonna, ovvero la posizione nel codice sorgente.  
+- Il **posizione** colonna, ovvero la posizione nel codice sorgente.  
   
--   Il **stato** colonna che indica se il thread è attivo, bloccato, non è stata avviata o completata.  
+- Il **stato** colonna che indica se il thread è attivo, bloccato, non è stata avviata o completata.  
   
--   Il **riquadro** colonna che mostra l'indice della sezione per i thread nella riga.  
+- Il **riquadro** colonna che mostra l'indice della sezione per i thread nella riga.  
   
- Nell'intestazione della tabella sono indicati il riquadro e il thread visualizzati.  
+  Nell'intestazione della tabella sono indicati il riquadro e il thread visualizzati.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>Per visualizzare la finestra Thread GPU  
   

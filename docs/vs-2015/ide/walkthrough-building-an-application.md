@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c9c4ba3367fb852420185ac8e978f138544d785
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d18e7c2e4c57e867cac47d0c8927eadbc357286
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923095"
 ---
 # <a name="walkthrough-building-an-application"></a>Procedura dettagliata: compilazione di un'applicazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,19 +45,19 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 #### <a name="to-install-the-sample-application"></a>Per installare l'applicazione di esempio  
   
-1.  Nella barra dei menu scegliere **Strumenti**, **Estensioni e aggiornamenti**.  
+1. Nella barra dei menu scegliere **Strumenti**, **Estensioni e aggiornamenti**.  
   
-2.  Scegliere la categoria **Online** e quindi la categoria **Raccolta esempi**.  
+2. Scegliere la categoria **Online** e quindi la categoria **Raccolta esempi**.  
   
-3.  Specificare `Introduction` nella casella di ricerca per trovare l'esempio.  
+3. Specificare `Introduction` nella casella di ricerca per trovare l'esempio.  
   
-     ![Finestra di dialogo Estensioni e aggiornamenti](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")  
+    ![Finestra di dialogo Estensioni e aggiornamenti](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")  
   
-4.  Nell'elenco dei risultati scegliere **Introduzione alla creazione di applicazioni WPF (Visual c#)** o **Introduzione alla creazione di applicazioni WPF (Visual Basic)**.  
+4. Nell'elenco dei risultati scegliere **Introduzione alla creazione di applicazioni WPF (Visual c#)** o **Introduzione alla creazione di applicazioni WPF (Visual Basic)**.  
   
-5.  Scegliere il pulsante **Scarica** e quindi fare clic sul pulsante **Chiudi**.  
+5. Scegliere il pulsante **Scarica** e quindi fare clic sul pulsante **Chiudi**.  
   
- L'esempio Introduzione alla creazione di applicazioni WPF viene visualizzato nella finestra di dialogo **Nuovo progetto**.  
+   L'esempio Introduzione alla creazione di applicazioni WPF viene visualizzato nella finestra di dialogo **Nuovo progetto**.  
   
 #### <a name="to-create-a-solution-for-the-sample-application"></a>Per creare una soluzione per l'applicazione di esempio  
   
@@ -86,48 +86,48 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 #### <a name="to-create-a-build-configuration"></a>Per creare una configurazione della build  
   
-1.  Aprire la finestra di dialogo **Gestione configurazione**.  
+1. Aprire la finestra di dialogo **Gestione configurazione**.  
   
-     ![Menu Compila, comando Gestione configurazione](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")  
+    ![Menu Compila, comando Gestione configurazione](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")  
   
-2.  Nell'elenco **Configurazione soluzione attiva** scegliere **Nuova**.  
+2. Nell'elenco **Configurazione soluzione attiva** scegliere **Nuova**.  
   
-3.  Nella finestra di dialogo **Nuova configurazione soluzione** assegnare un nome alla nuova configurazione `Test`, copiare le impostazioni dalla configurazione per il debug esistente e quindi scegliere il pulsante **OK**.  
+3. Nella finestra di dialogo **Nuova configurazione soluzione** assegnare un nome alla nuova configurazione `Test`, copiare le impostazioni dalla configurazione per il debug esistente e quindi scegliere il pulsante **OK**.  
   
-     ![Finestra di dialogo Nuova configurazione soluzione](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
+    ![Finestra di dialogo Nuova configurazione soluzione](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
   
-4.  Nell'elenco **Piattaforma soluzione attiva** scegliere **Nuova**.  
+4. Nell'elenco **Piattaforma soluzione attiva** scegliere **Nuova**.  
   
-5.  Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.  
+5. Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.  
   
-     ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
+    ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
-6.  Fare clic sul pulsante **OK** .  
+6. Fare clic sul pulsante **OK** .  
   
- La configurazione della soluzione attiva è stata modificata su Test con la piattaforma della soluzione attiva impostata su x64.  
+   La configurazione della soluzione attiva è stata modificata su Test con la piattaforma della soluzione attiva impostata su x64.  
   
- ![Gestione configurazione con configurazione di test](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")  
+   ![Gestione configurazione con configurazione di test](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")  
   
- È possibile verificare o modificare rapidamente la configurazione della soluzione attiva tramite l'elenco **Configurazioni soluzione** nella barra degli strumenti **Standard**.  
+   È possibile verificare o modificare rapidamente la configurazione della soluzione attiva tramite l'elenco **Configurazioni soluzione** nella barra degli strumenti **Standard**.  
   
- ![Opzione Configurazioni soluzione barra degli strumenti standard](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
+   ![Opzione Configurazioni soluzione barra degli strumenti standard](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
   
 ##  <a name="BKMK_building"></a> Compilare l'applicazione  
  Successivamente verrà creata la soluzione con la configurazione della build personalizzata.  
   
 #### <a name="to-build-the-solution"></a>Per compilare la soluzione  
   
--   Nella barra dei menu scegliere **Compilazione**, **Compila soluzione**.  
+- Nella barra dei menu scegliere **Compilazione**, **Compila soluzione**.  
   
- Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione ha avuto esito positivo, ma sono stati generati alcuni messaggi di avviso.  
+  Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione ha avuto esito positivo, ma sono stati generati alcuni messaggi di avviso.  
   
- Figura 1: Avvisi di Visual Basic  
+  Figura 1: Avvisi di Visual Basic  
   
- ![Finestra Output di Visual Basic ](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
+  ![Finestra Output di Visual Basic ](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
- Figura 2: Avvisi di Visual C#  
+  Figura 2: Avvisi di Visual C#  
   
- ![Finestra Output di Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
+  ![Finestra Output di Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
 ##  <a name="BKMK_hidewarning"></a> Nascondere gli avvisi del compilatore  
  È possibile nascondere temporaneamente determinati messaggi di avviso durante una compilazione anziché lasciare che ingombrino l'output di compilazione.  
@@ -154,25 +154,25 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 #### <a name="to-suppress-all-visual-basic-build-warnings"></a>Per eliminare tutti gli avvisi durante la compilazione di Visual Basic  
   
-1.  Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.  
+1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.  
   
-2.  Sulla barra dei menu, scegliere **Visualizza**, **Pagine delle proprietà**.  
+2. Sulla barra dei menu, scegliere **Visualizza**, **Pagine delle proprietà**.  
   
-     Si apre la finestra **Creazione progetti**.  
+    Si apre la finestra **Creazione progetti**.  
   
-3.  Nella pagina **Compilazione** selezionare la casella di controllo **Disabilita tutti gli avvisi**.  
+3. Nella pagina **Compilazione** selezionare la casella di controllo **Disabilita tutti gli avvisi**.  
   
-     ![Pagina Compilazione, Creazione progetti](../ide/media/buildwalk-vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
+    ![Pagina Compilazione, Creazione progetti](../ide/media/buildwalk-vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
   
-     Per altre informazioni, vedere [Configuring Warnings in Visual Basic](../ide/configuring-warnings-in-visual-basic.md) (Configurazione degli avvisi in Visual Basic).  
+    Per altre informazioni, vedere [Configuring Warnings in Visual Basic](../ide/configuring-warnings-in-visual-basic.md) (Configurazione degli avvisi in Visual Basic).  
   
-4.  Compilare la soluzione.  
+4. Compilare la soluzione.  
   
- Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.  
+   Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.  
   
- ![Finestra Output, avvisi durante la compilazione di Visual Basic ](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
+   ![Finestra Output, avvisi durante la compilazione di Visual Basic ](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
   
- Per altre informazioni, vedere [Procedura: Non visualizzare avvisi del compilatore](../ide/how-to-suppress-compiler-warnings.md).  
+   Per altre informazioni, vedere [Procedura: Non visualizzare avvisi del compilatore](../ide/how-to-suppress-compiler-warnings.md).  
   
 ##  <a name="BKMK_outputdetails"></a> Visualizzare dettagli di compilazione aggiuntivi nella finestra di output  
  È possibile modificare la quantità di informazioni sul processo di compilazione visualizzate nella finestra **Output**. Il livello di dettaglio di compilazione è in genere impostato su minimo, cioè nella finestra **Output** viene visualizzato solo un riepilogo del processo di compilazione insieme a eventuali errori o avvisi di priorità alta. È possibile visualizzare altre informazioni sulla compilazione tramite la [finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md).  
@@ -182,28 +182,28 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 #### <a name="to-change-the-amount-of-information-in-the-output-window"></a>Per modificare la quantità di informazioni nella finestra Output  
   
-1.  Aprire la finestra di dialogo **Opzioni**.  
+1. Aprire la finestra di dialogo **Opzioni**.  
   
-     ![Comando Opzioni nel menu Strumenti](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")  
+    ![Comando Opzioni nel menu Strumenti](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")  
   
-2.  Scegliere la categoria **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.  
+2. Scegliere la categoria **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.  
   
-3.  Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere **Normale** e quindi **OK**.  
+3. Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere **Normale** e quindi **OK**.  
   
-4.  Nella barra dei menu scegliere **Compilazione**, **Pulisci soluzione**.  
+4. Nella barra dei menu scegliere **Compilazione**, **Pulisci soluzione**.  
   
-5.  Compilare la soluzione e quindi esaminare le informazioni nella finestra **Output**.  
+5. Compilare la soluzione e quindi esaminare le informazioni nella finestra **Output**.  
   
-     Le informazioni sulla compilazione includono l'ora di inizio della compilazione (indicata all'inizio), l'ordine in cui i file sono stati elaborati e la quantità di tempo impiegato per completare il processo (indicata alla fine). Queste informazioni includono anche la sintassi del compilatore effettiva che Visual Studio esegue durante la compilazione.  
+    Le informazioni sulla compilazione includono l'ora di inizio della compilazione (indicata all'inizio), l'ordine in cui i file sono stati elaborati e la quantità di tempo impiegato per completare il processo (indicata alla fine). Queste informazioni includono anche la sintassi del compilatore effettiva che Visual Studio esegue durante la compilazione.  
   
-     Ad esempio, nella compilazione di Visual C#, l'opzione [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) elenca il codice di avviso, 1762, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.  
+    Ad esempio, nella compilazione di Visual C#, l'opzione [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) elenca il codice di avviso, 1762, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.  
   
-     Nella compilazione di Visual Basic [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) non include avvisi specifici da escludere, pertanto non viene visualizzato alcun avviso.  
+    Nella compilazione di Visual Basic [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) non include avvisi specifici da escludere, pertanto non viene visualizzato alcun avviso.  
   
-    > [!TIP]
-    >  È possibile cercare il contenuto della finestra **Output** se si visualizza la finestra di dialogo **Trova** scegliendo i tasti CTRL+F.  
+   > [!TIP]
+   >  È possibile cercare il contenuto della finestra **Output** se si visualizza la finestra di dialogo **Trova** scegliendo i tasti CTRL+F.  
   
- Per altre informazioni, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).  
+   Per altre informazioni, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ##  <a name="BKMK_releasebuild"></a> Creare una build di versione  
  È possibile compilare una versione dell'applicazione di esempio ottimizzata per la spedizione. Per la build di versione, si specificherà che il file eseguibile venga copiato in una condivisione di rete prima dell'avvio della compilazione.  
@@ -235,30 +235,30 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 #### <a name="to-specify-a-release-build-for-visual-c"></a>Per specificare una build di rilascio per Visual C#  
   
-1.  Aprire **Creazione progetti**.  
+1. Aprire **Creazione progetti**.  
   
-     ![Menu Visualizza, comando pagine delle proprietà](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")  
+    ![Menu Visualizza, comando pagine delle proprietà](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")  
   
-2.  Scegliere la scheda **Compila**.  
+2. Scegliere la scheda **Compila**.  
   
-3.  Nell'elenco **Configurazione** scegliere **Versione**.  
+3. Nell'elenco **Configurazione** scegliere **Versione**.  
   
-4.  Nell'elenco **Piattaforma** scegliere **x86**.  
+4. Nell'elenco **Piattaforma** scegliere **x86**.  
   
-5.  Specificare un percorso di rete nella casella **Percorso output**.  
+5. Specificare un percorso di rete nella casella **Percorso output**.  
   
-     Ad esempio, è possibile specificare \\\mioserver\compilazioni.  
+    Ad esempio, è possibile specificare \\\mioserver\compilazioni.  
   
-    > [!IMPORTANT]
-    >  Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere il pulsante **OK** nella finestra di messaggio.  
+   > [!IMPORTANT]
+   >  Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere il pulsante **OK** nella finestra di messaggio.  
   
-6.  Compilare l'applicazione.  
+6. Compilare l'applicazione.  
   
-     ![Comando Compila soluzione dal menu Compila](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+    ![Comando Compila soluzione dal menu Compila](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
- Il file eseguibile viene copiato nel percorso di rete specificato. Il percorso sarà \\\mioserver\compilazioni\\*Nomefile*.exe.  
+   Il file eseguibile viene copiato nel percorso di rete specificato. Il percorso sarà \\\mioserver\compilazioni\\*Nomefile*.exe.  
   
- Congratulazioni: questa procedura dettagliata è stata completata correttamente.  
+   Congratulazioni: questa procedura dettagliata è stata completata correttamente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Compilazione di un progetto (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   

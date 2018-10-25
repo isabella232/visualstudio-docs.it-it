@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByVA | Documenti Microsoft
+title: IDiaSymbol::findInlineeLinesByVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fd0167eaea86b13c8d197d39c6042f5ad183fcd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f004b189a22c510599ae9a5f1c719a151ed7d39f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914905"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-Recupera un'enumerazione che consente a un client scorrere le informazioni sul numeri di riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato (VA).  
+Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni sul numeri di riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato (valutazione della vulnerabilità).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,13 +34,13 @@ HRESULT findInlineeLinesByVA (
   
 #### <a name="parameters"></a>Parametri  
  `va`  
- [in] Specifica l'indirizzo come un Virginia.  
+ [in] Specifica l'indirizzo come un responsabile tecnologico  
   
  `length`  
- [in] Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query.  
+ [in] Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query viene usata.  
   
  `ppResult`  
- [out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco di numeri di riga recuperati.  
+ [out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

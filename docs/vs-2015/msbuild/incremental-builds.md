@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812322"
 ---
 # <a name="incremental-builds"></a>Compilazioni incrementali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ Le compilazioni incrementali sono compilazioni ottimizzate in modo da non esegui
   
  Esistono tre casi:  
   
--   La destinazione ha un attributo `Condition` che restituisce `false`. In questo caso, la destinazione non viene eseguita e non ha alcun effetto sulla compilazione.  
+- La destinazione ha un attributo `Condition` che restituisce `false`. In questo caso, la destinazione non viene eseguita e non ha alcun effetto sulla compilazione.  
   
--   La destinazione ha output non aggiornati e viene eseguita per consentirne l'aggiornamento.  
+- La destinazione ha output non aggiornati e viene eseguita per consentirne l'aggiornamento.  
   
--   La destinazione non ha output non aggiornati e viene ignorata. MSBuild valuta la destinazione e apporta modifiche a elementi e proprietà come se la destinazione fosse stata eseguita.  
+- La destinazione non ha output non aggiornati e viene ignorata. MSBuild valuta la destinazione e apporta modifiche a elementi e proprietà come se la destinazione fosse stata eseguita.  
   
- Per supportare la compilazione incrementale, le attività devono garantire che il valore dell'attributo `TaskParameter` di qualsiasi elemento `Output` sia uguale a un parametro di input dell'attività. Ecco alcuni esempi:  
+  Per supportare la compilazione incrementale, le attività devono garantire che il valore dell'attributo `TaskParameter` di qualsiasi elemento `Output` sia uguale a un parametro di input dell'attività. Ecco alcuni esempi:  
   
 ```  
 <CreateProperty Value="123">  

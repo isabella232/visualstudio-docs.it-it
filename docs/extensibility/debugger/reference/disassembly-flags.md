@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS | Documenti Microsoft
+title: DISASSEMBLY_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd1aa9c73fad40d07be371ad7f9b3108464aeb34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6d42a7c5e9247359abfcdb4d65db5a4e0de247e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916400"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
-Specifica i flag per disassembly.  
+Specifica i flag per il disassembly.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,7 +52,7 @@ public enum enum_DISASSEMBLY_FLAGS {
   
 ## <a name="members"></a>Membri  
  DF_DOCUMENTCHANGE  
- Indica che l'istruzione in un documento diverso da quello precedente.  
+ Indica che questa istruzione è in un documento diverso da quello precedente.  
   
  DF_DISABLED  
  Indica che questa istruzione non verrà eseguita.  
@@ -61,16 +61,16 @@ public enum enum_DISASSEMBLY_FLAGS {
  Indica che questa istruzione è una delle istruzioni successive da eseguire (potrebbero essere presenti più di uno).  
   
  DF_DATA  
- Indica che questa istruzione è in realtà dati (non di codice).  
+ Indica che questa istruzione è davvero data (non nel codice).  
   
  DF_HASSOURCE  
  Indica che questa istruzione ha origine. Alcune istruzioni, ad esempio il codice di raccolta profilatura o garbage, non dispone di alcuna origine corrispondente.  
   
  DF_DOCUMENT_CHECKSUM  
- Indica che `bstrDocumentUrl` campo contiene dati di checksum dopo l'URL del documento. Vedere la sezione Osservazioni per il [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struttura per l'archiviazione dei dati di checksum.  
+ Indica che `bstrDocumentUrl` campo contiene dati di checksum dopo l'URL del documento. Vedere la sezione Osservazioni per il [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struttura per la modalità in cui sono archiviati i dati di checksum.  
   
 ## <a name="remarks"></a>Note  
- Utilizzato come il `dwFlags` appartenente il [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struttura.  
+ Utilizzato come il `dwFlags` membro della [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struttura.  
   
  Questi flag possono essere combinati con un bit per bit `OR`.  
   

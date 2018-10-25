@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884082"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Procedura dettagliata: Creare menu di scelta rapida per segnalibri
   Questa procedura dettagliata viene illustrato come creare i menu di scelta rapida per <xref:Microsoft.Office.Tools.Word.Bookmark> controlli in una personalizzazione a livello di documento per Word. Quando un utente fa clic il testo in un segnalibro, un menu di scelta rapida viene visualizzata e fornisce le opzioni utente per la formattazione del testo.  
@@ -32,15 +32,15 @@ ms.locfileid: "38783842"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   [Creare il progetto](#BKMK_CreateProject).  
+- [Creare il progetto](#BKMK_CreateProject).  
   
--   [Aggiungere testo e i segnalibri nel documento](#BKMK_addtextandbookmarks).  
+- [Aggiungere testo e i segnalibri nel documento](#BKMK_addtextandbookmarks).  
   
--   [Aggiungere comandi al menu di scelta rapida](#BKMK_AddCmndsShortMenu).  
+- [Aggiungere comandi al menu di scelta rapida](#BKMK_AddCmndsShortMenu).  
   
--   [Formattare il testo nel segnalibro](#BKMK_formattextbkmk).  
+- [Formattare il testo nel segnalibro](#BKMK_formattextbkmk).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -69,22 +69,22 @@ ms.locfileid: "38783842"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Per aggiungere un controllo Bookmark a un documento  
   
-1.  Nel **casella degli strumenti**, dalle **controlli Word** scheda, trascinare un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo al documento.  
+1. Nel **casella degli strumenti**, dalle **controlli Word** scheda, trascinare un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo al documento.  
   
-     Il **Aggiungi controllo Bookmark** verrà visualizzata la finestra di dialogo.  
+    Il **Aggiungi controllo Bookmark** verrà visualizzata la finestra di dialogo.  
   
-2.  Selezionare le parole "Creazione di un menu di scelta rapida si fa clic con il pulsante destro del testo", quindi fare clic su **OK**.  
+2. Selezionare le parole "Creazione di un menu di scelta rapida si fa clic con il pulsante destro del testo", quindi fare clic su **OK**.  
   
-     `bookmark1` viene aggiunto al documento.  
+    `bookmark1` viene aggiunto al documento.  
   
-3.  Aggiungere un altro <xref:Microsoft.Office.Tools.Word.Bookmark> controllare con le parole "fare clic sul testo all'interno di un segnalibro".  
+3. Aggiungere un altro <xref:Microsoft.Office.Tools.Word.Bookmark> controllare con le parole "fare clic sul testo all'interno di un segnalibro".  
   
-     `bookmark2` viene aggiunto al documento.  
+    `bookmark2` viene aggiunto al documento.  
   
-    > [!NOTE]  
-    >  Le parole "pulsante destro del mouse il testo" sono entrambi `bookmark1` e `bookmark2`.  
+   > [!NOTE]  
+   >  Le parole "pulsante destro del mouse il testo" sono entrambi `bookmark1` e `bookmark2`.  
   
- Quando si aggiunge un segnalibro a un documento in fase di progettazione, un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo viene creato. È possibile programmare usando diversi eventi del segnalibro. È possibile scrivere codice <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> evento del segnalibro, in modo che quando l'utente fa clic il testo nel segnalibro, viene visualizzato un menu di scelta rapida.  
+   Quando si aggiunge un segnalibro a un documento in fase di progettazione, un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo viene creato. È possibile programmare usando diversi eventi del segnalibro. È possibile scrivere codice <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> evento del segnalibro, in modo che quando l'utente fa clic il testo nel segnalibro, viene visualizzato un menu di scelta rapida.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> Aggiungere comandi al menu di scelta rapida  
  Aggiungere pulsanti al menu di scelta rapida visualizzato facendo clic sul documento.  

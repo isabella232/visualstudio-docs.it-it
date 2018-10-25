@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetPropertyInfo | Documenti Microsoft
+title: IDebugProperty2::GetPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f922731f5c595f7308f78269b8386b7da20e2398
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f1f35e8699c04101936bcfa31abfdde751a236
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823099"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 Ottiene il [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struttura che descrive una proprietà.  
@@ -51,22 +51,22 @@ int GetPropertyInfo (
   
 #### <a name="parameters"></a>Parametri  
  `dwFields`  
- [in] Una combinazione dei valori di [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumerazione che specifica i campi devono essere compilati nel `pPropertyInfo` struttura.  
+ [in] Una combinazione di valori dal [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumerazione che specifica quali campi devono essere compilati nel `pPropertyInfo` struttura.  
   
  `nRadix`  
- [in] Base da utilizzare per la formattazione di eventuali informazioni numeriche.  
+ [in] Radice da utilizzare nella formattazione qualsiasi informazioni numeriche.  
   
  `dwTimeout`  
- [in] Specifica il tempo massimo, in millisecondi di attesa prima della restituzione da questo metodo. Utilizzare `INFINITE` per un'attesa indefinita.  
+ [in] Specifica il tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.  
   
  `rgpArgs`  
- [in, out] Riservato per utilizzi futuri; impostare un valore null.  
+ [in, out] Riservato per utilizzi futuri; Impostare su un valore null.  
   
  `dwArgCount`  
  [in] Riservato per utilizzi futuri; Impostare su zero.  
   
  `pPropertyInfo`  
- [out] Oggetto [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struttura che viene compilato con la descrizione della proprietà.  
+ [out] Oggetto [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struttura compilata con la descrizione della proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  

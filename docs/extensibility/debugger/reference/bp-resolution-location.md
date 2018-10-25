@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_LOCATION | Documenti Microsoft
+title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 032228596773d4a5a164f904c1caae161b693f64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926124"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
-Specifica la struttura dell'indirizzo di risoluzione di punto di interruzione.  
+Specifica la struttura del percorso di risoluzione dei punti di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -50,7 +50,7 @@ public struct BP_RESOLUTION_LOCATION {
   
 ## <a name="members"></a>Membri  
  `bpType`  
- Un valore di [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumerazione che specifica come interpretare il `bpResLocation` unione o `unionmemberX` membri.  
+ Un valore compreso il [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumerazione che specifica come interpretare le `bpResLocation` union o `unionmemberX` membri.  
   
  `bpResLocation.bpresCode`  
  [Solo C++] Contiene il [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) struttura se `bpType`  =  `BPT_CODE`.  
@@ -62,29 +62,29 @@ public struct BP_RESOLUTION_LOCATION {
  [Solo C++] Un segnaposto.  
   
  `unionmember1`  
- [Solo in c#] Vedere la sezione Osservazioni su come interpretare.  
+ [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
   
  `unionmember2`  
- [Solo in c#] Vedere la sezione Osservazioni su come interpretare.  
+ [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
   
  `unionmember3`  
- [Solo in c#] Vedere la sezione Osservazioni su come interpretare.  
+ [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
   
  `unionmember4`  
- [Solo in c#] Vedere la sezione Osservazioni su come interpretare.  
+ [Solo in c#] Vedere la sezione Osservazioni sull'interpretazione.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è membro il [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) strutture.  
+ Questa struttura è un membro del [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) strutture.  
   
- [Solo in c#] Il `unionmemberX` membri vengono interpretati in base alla tabella seguente. Cerca nella colonna a sinistra per il `bpType` valore quindi attraverso per determinare quali ogni `unionmemberX` membro rappresenta ed effettuare il marshalling di `unionmemberX` di conseguenza. Vedere l'esempio per una modalità di interpretazione di questa struttura in c#.  
+ [Solo in c#] Il `unionmemberX` membri vengono interpretati in base alla tabella riportata di seguito. Cerca nella colonna a sinistra per la `bpType` tra valore quindi per determinare quali ognuno `unionmemberX` membro rappresenta ed effettuare il marshalling il `unionmemberX` conseguenza. Vedere l'esempio di un modo per interpretare questa struttura in c#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|  
-|`BPT_DATA`|`string` (espressione di dati)|`string` (nome della funzione)|`string` (nome dell'immagine)|`enum_BP_RES_DATA_FLAGS`|  
+|`BPT_DATA`|`string` (espressione di dati)|`string` (nome della funzione)|`string` (nome immagine)|`enum_BP_RES_DATA_FLAGS`|  
   
 ## <a name="example"></a>Esempio  
- Questo esempio viene illustrato come interpretare il `BP_RESOLUTION_LOCATION` struttura in c#.  
+ In questo esempio viene illustrato come interpretare il `BP_RESOLUTION_LOCATION` struttura nel linguaggio c#.  
   
 ```csharp  
 using System;  

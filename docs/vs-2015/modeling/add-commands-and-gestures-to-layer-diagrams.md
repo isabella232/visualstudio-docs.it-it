@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889789"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Aggiunta di comandi e movimenti a diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ ms.locfileid: "49223216"
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Per definire un'estensione tramite un modello di progetto  
   
-1.  Creare un progetto in una nuova soluzione usando il comando **Nuovo progetto** del menu **File** .  
+1. Creare un progetto in una nuova soluzione usando il comando **Nuovo progetto** del menu **File** .  
   
-2.  Nella finestra di dialogo **Nuovo progetto** , in **Progetti di modellazione**, selezionare **Estensione di comando progettazione livelli** o **Estensione di movimento progettazione livelli**.  
+2. Nella finestra di dialogo **Nuovo progetto** , in **Progetti di modellazione**, selezionare **Estensione di comando progettazione livelli** o **Estensione di movimento progettazione livelli**.  
   
-     Il modello crea un progetto che contiene un piccolo esempio funzionante.  
+    Il modello crea un progetto che contiene un piccolo esempio funzionante.  
   
-3.  Per testare l'estensione, premere **CTRL+F5** o **F5**.  
+3. Per testare l'estensione, premere **CTRL+F5** o **F5**.  
   
-     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questa istanza creare un diagramma livello. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.  
+    Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questa istanza creare un diagramma livello. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.  
   
-4.  Chiudere l'istanza sperimentale e modificare il codice di esempio. Per altre informazioni, vedere [esplorare e aggiornare i modelli nel codice del programma di livello](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4. Chiudere l'istanza sperimentale e modificare il codice di esempio. Per altre informazioni, vedere [esplorare e aggiornare i modelli nel codice del programma di livello](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-5.  È possibile aggiungere più gestori comandi o movimenti allo stesso progetto. Per altre informazioni vedere una delle sezioni seguenti:  
+5. È possibile aggiungere più gestori comandi o movimenti allo stesso progetto. Per altre informazioni vedere una delle sezioni seguenti:  
   
-     [Definizione di un comando di menu](#command)  
+    [Definizione di un comando di menu](#command)  
   
-     [Definizione di un gestore movimenti](#gesture)  
+    [Definizione di un gestore movimenti](#gesture)  
   
-6.  Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
+6. Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in *bin\\*. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Aggiunta di un comando o movimento a un progetto VSIX separato  
  Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori. Per informazioni sugli altri tipi di estensione di modellazione, vedere [modelli e diagrammi UML estendere](../modeling/extend-uml-models-and-diagrams.md).  
@@ -116,37 +116,37 @@ ms.locfileid: "49223216"
 ##  <a name="command"></a> Definizione di un comando di menu  
  È possibile aggiungere altre definizioni dei comandi di menu a un progetto di comandi o movimenti esistente. Ogni comando viene definito da una classe che ha le caratteristiche seguenti:  
   
--   La classe viene dichiarata nel modo seguente:  
+- La classe viene dichiarata nel modo seguente:  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   Lo spazio dei nomi e il nome della classe sono irrilevanti.  
+- Lo spazio dei nomi e il nome della classe sono irrilevanti.  
   
--   I metodi che implementano `ICommandExtension` sono i seguenti:  
+- I metodi che implementano `ICommandExtension` sono i seguenti:  
   
-    -   `string Text {get;}` : etichetta visualizzata nel menu.  
+  -   `string Text {get;}` : etichetta visualizzata nel menu.  
   
-    -   `void QueryStatus(IMenuCommand command)` : viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e determina se il comando deve essere visibile e abilitato per la selezione corrente dell'utente.  
+  -   `void QueryStatus(IMenuCommand command)` : viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e determina se il comando deve essere visibile e abilitato per la selezione corrente dell'utente.  
   
-    -   `void Execute(IMenuCommand command)` : viene chiamato quando l'utente seleziona il comando.  
+  -   `void Execute(IMenuCommand command)` : viene chiamato quando l'utente seleziona il comando.  
   
--   Per determinare la selezione corrente, è possibile importare `IDiagramContext`:  
+- Per determinare la selezione corrente, è possibile importare `IDiagramContext`:  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Per altre informazioni, vedere [esplorare e aggiornare i modelli nel codice del programma di livello](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+  Per altre informazioni, vedere [esplorare e aggiornare i modelli nel codice del programma di livello](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
- Per aggiungere un nuovo comando, creare un nuovo file di codice che contiene l'esempio riportato di seguito. Quindi, testarlo e modificarlo.  
+  Per aggiungere un nuovo comando, creare un nuovo file di codice che contiene l'esempio riportato di seguito. Quindi, testarlo e modificarlo.  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  Per quanto riguarda i gestori movimenti tenere presente quanto segue:  
   
--   I membri di `IGestureExtension` sono:  
+- I membri di `IGestureExtension` sono:  
   
-     **OnDoubleClick** : viene chiamato quando l'utente fa doppio clic in qualsiasi punto del diagramma.  
+   **OnDoubleClick** : viene chiamato quando l'utente fa doppio clic in qualsiasi punto del diagramma.  
   
-     **CanDragDrop** : viene chiamato ripetutamente quando l'utente sposta il mouse durante il trascinamento di un elemento nel diagramma. Deve operare rapidamente.  
+   **CanDragDrop** : viene chiamato ripetutamente quando l'utente sposta il mouse durante il trascinamento di un elemento nel diagramma. Deve operare rapidamente.  
   
-     **OnDragDrop** : viene chiamato quando l'utente rilascia un elemento nel diagramma.  
+   **OnDragDrop** : viene chiamato quando l'utente rilascia un elemento nel diagramma.  
   
--   Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Ad esempio:  
+- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Ad esempio:  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   I gestori per alcuni tipi di elemento trascinato sono già definiti. Ad esempio, l'utente può trascinare elementi da Esplora soluzioni in un diagramma livello. Non è possibile definire un gestore del trascinamento per questi tipi di elemento. In questi casi, i metodi `DragDrop` non verranno richiamati.  
+- I gestori per alcuni tipi di elemento trascinato sono già definiti. Ad esempio, l'utente può trascinare elementi da Esplora soluzioni in un diagramma livello. Non è possibile definire un gestore del trascinamento per questi tipi di elemento. In questi casi, i metodi `DragDrop` non verranno richiamati.  
   
- Per altre informazioni sulla decodifica di altri elementi trascinati nel diagramma, vedere [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
+  Per altre informazioni sulla decodifica di altri elementi trascinati nel diagramma, vedere [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Esplorare e aggiornare i modelli di livello nel codice programma](../modeling/navigate-and-update-layer-models-in-program-code.md)   

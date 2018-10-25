@@ -16,12 +16,12 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96cbc9ad5c7098ff1aba2bc9cd3f387ca229cc98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919886"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Esposizione di eventi in Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,23 +32,23 @@ ms.locfileid: "49195572"
   
  Il processo seguente viene illustrato come vengono restituiti gli eventi specifico del VSPackage.  
   
-1.  Avvio dell'ambiente.  
+1. Avvio dell'ambiente.  
   
-2.  Legge dal Registro di sistema tutti i nomi di valore in corrispondenza delle chiavi di automazione, AutomationEvents e AutomationProperties di tutti i pacchetti VSPackage e archivia tali nomi in una tabella.  
+2. Legge dal Registro di sistema tutti i nomi di valore in corrispondenza delle chiavi di automazione, AutomationEvents e AutomationProperties di tutti i pacchetti VSPackage e archivia tali nomi in una tabella.  
   
-3.  Un consumer di automazione chiama, in questo esempio `DTE.Events.AutomationProjectsEvents` o `DTE.Events.AutomationProjectItemsEvents`.  
+3. Un consumer di automazione chiama, in questo esempio `DTE.Events.AutomationProjectsEvents` o `DTE.Events.AutomationProjectItemsEvents`.  
   
-4.  L'ambiente consente di trovare il parametro della stringa nella tabella e carica il pacchetto VSPackage corrispondente.  
+4. L'ambiente consente di trovare il parametro della stringa nella tabella e carica il pacchetto VSPackage corrispondente.  
   
-5.  L'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodo utilizzando il nome passato nella chiamata; in questo esempio, AutomationProjectsEvents o AutomationProjectItemsEvents.  
+5. L'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodo utilizzando il nome passato nella chiamata; in questo esempio, AutomationProjectsEvents o AutomationProjectItemsEvents.  
   
-6.  Il pacchetto VSPackage crea un oggetto principale che dispone di metodi, ad esempio `get_AutomationProjectsEvents` e `get_AutomationProjectItemEvents` e quindi restituisce un puntatore IDispatch all'oggetto.  
+6. Il pacchetto VSPackage crea un oggetto principale che dispone di metodi, ad esempio `get_AutomationProjectsEvents` e `get_AutomationProjectItemEvents` e quindi restituisce un puntatore IDispatch all'oggetto.  
   
-7.  L'ambiente chiama il metodo appropriato in base al nome passato nella chiamata di automazione.  
+7. L'ambiente chiama il metodo appropriato in base al nome passato nella chiamata di automazione.  
   
-8.  Il `get_` metodo crea un altro oggetto di eventi basato su IDispatch che implementa sia il `IConnectionPointContainer` interfaccia e `IConnectionPoint` interfaccia e restituisce un IDispatchpointer all'oggetto.  
+8. Il `get_` metodo crea un altro oggetto di eventi basato su IDispatch che implementa sia il `IConnectionPointContainer` interfaccia e `IConnectionPoint` interfaccia e restituisce un IDispatchpointer all'oggetto.  
   
- Per esporre un evento usando l'automazione, è necessario rispondere a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> ed espressioni di controllo per le stringhe che aggiungono al Registro di sistema. Nell'esempio di progetto di base, le stringhe sono "BscProjectsEvents" e "BscProjectItemsEvents".  
+   Per esporre un evento usando l'automazione, è necessario rispondere a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> ed espressioni di controllo per le stringhe che aggiungono al Registro di sistema. Nell'esempio di progetto di base, le stringhe sono "BscProjectsEvents" e "BscProjectItemsEvents".  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Voci del Registro di sistema dall'esempio di progetto di base  
  In questa sezione viene illustrato come aggiungere i valori di evento di automazione nel Registro di sistema.  

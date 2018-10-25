@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY | Documenti Microsoft
+title: BSTR_ARRAY | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a555a18021a1a48ffa11780161f88ea3ff8f578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d122afe0aca50b50133146edb26e13fd31d2c45b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906949"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 Struttura che descrive una matrice di stringhe.  
@@ -49,9 +49,9 @@ struct BSTR_ARRAY {
  Matrice di stringhe.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura viene restituita dal [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) metodo.  
+ Questa struttura viene restituita dal [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) (metodo).  
   
- [Solo C++] Ogni stringa singola deve essere liberata mediante `SysFreeString`e `Members` matrice deve essere liberata con `CoTaskMemFree`.  
+ [Solo C++] Ogni stringa singola deve essere liberata tramite `SysFreeString`e il `Members` matrice deve essere liberata mediante `CoTaskMemFree`.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

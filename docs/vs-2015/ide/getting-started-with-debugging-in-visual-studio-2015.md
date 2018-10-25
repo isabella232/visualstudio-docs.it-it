@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281450"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824438"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introduzione al debug in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e
   
  Di seguito sono riportati alcuni usi comuni dei punti di interruzione:  
   
-1.  Per limitare l'origine di un arresto anomalo o di blocco, inserirli all'interno e intorno al codice della chiamata al metodo che si ritiene causi l'errore. Durante l'esecuzione del codice, rimuovere e riunire i punti di interruzione fino a individuare la riga di codice interessata.  
+1. Per limitare l'origine di un arresto anomalo o di blocco, inserirli all'interno e intorno al codice della chiamata al metodo che si ritiene causi l'errore. Durante l'esecuzione del codice, rimuovere e riunire i punti di interruzione fino a individuare la riga di codice interessata.  
   
-2.  Quando si introduce un nuovo codice, impostare un punto di interruzione all'inizio del codice e eseguire un'istruzione alla volta per assicurarsi che il codice funzioni come previsto.  
+2. Quando si introduce un nuovo codice, impostare un punto di interruzione all'inizio del codice e eseguire un'istruzione alla volta per assicurarsi che il codice funzioni come previsto.  
   
-3.  Se è stato implementato un comportamento complesso, impostare punti di interruzione per il codice algoritmico affinché sia possibile esaminare i valori delle variabili e i dati quando il programma si interrompe.  
+3. Se è stato implementato un comportamento complesso, impostare punti di interruzione per il codice algoritmico affinché sia possibile esaminare i valori delle variabili e i dati quando il programma si interrompe.  
   
-4.  Se si scrive codice C o C++, usare i punti di interruzione per arrestare il codice affinché sia possibile esaminare i valori di indirizzo (cercare NULL) e conteggi riferimenti durante il debug degli errori correlati alla memoria.  
+4. Se si scrive codice C o C++, usare i punti di interruzione per arrestare il codice affinché sia possibile esaminare i valori di indirizzo (cercare NULL) e conteggi riferimenti durante il debug degli errori correlati alla memoria.  
   
- Per altre informazioni sui punti di interruzione, vedere [Using Breakpoints](../debugger/using-breakpoints.md) (Uso dei punti di interruzione)  
+   Per altre informazioni sui punti di interruzione, vedere [Using Breakpoints](../debugger/using-breakpoints.md) (Uso dei punti di interruzione)  
   
 ### <a name="setting-conditional-breakpoints"></a>Impostazione di punti di interruzione condizionali  
  Se si ha un punto di interruzione in un ciclo o in una ricorsione oppure si hanno molti punti di interruzione di cui si esegue spesso un'istruzione alla volta, usare un punto di interruzione condizionale per assicurare che il codice venga sospeso SOLO quando vengono soddisfatte specifiche condizioni. In caso contrario, sarà necessario premere F11 un numero molto elevato di volte.  

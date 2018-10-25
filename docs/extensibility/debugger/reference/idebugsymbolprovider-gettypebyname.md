@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName | Documenti Microsoft
+title: IDebugSymbolProvider::GetTypeByName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565972b0f1f7d1f2e5e2ffd751cba60621fe284d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b95117cd37f9ca6c2bfe3d2276bb03994f7a07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924742"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-Questo metodo esegue il mapping a un tipo di simbolo un nome di simbolo.  
+Questo metodo associa un nome di simbolo a un tipo di simbolo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,7 +48,7 @@ int GetTypeByName(
  [in] Il nome del simbolo.  
   
  `nameMatch`  
- [in] Seleziona il tipo di corrispondenza, ad esempio distinzione maiuscole/minuscole. Un valore di [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumerazione.  
+ [in] Seleziona il tipo di corrispondenza, ad esempio, distinzione maiuscole/minuscole. Un valore compreso il [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumerazione.  
   
  `ppField`  
  [out] Restituisce il tipo di simbolo come un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.  
@@ -57,7 +57,7 @@ int GetTypeByName(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo è una versione generica di [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).  
+ Questo metodo è una versione generica del [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
