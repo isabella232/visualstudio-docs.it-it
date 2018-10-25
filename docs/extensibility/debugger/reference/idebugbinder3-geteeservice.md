@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService | Documenti Microsoft
+title: IDebugBinder3::GetEEService | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c97e9fc7e5505578533c9e7b958a73dc8d2380
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b283ecf3a21f5a5b9246a628a959b4a271c884b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866662"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Questo metodo restituisce un servizio richiesto.  
@@ -47,10 +47,10 @@ Int GetEEService(
   
 #### <a name="parameters"></a>Parametri  
  `vendor`  
- [in] `GUID` di un fornitore (un valore null è accettabile).  
+ [in] `GUID` del fornitore (un valore null è accettabile).  
   
  `language`  
- [in] `GUID` di una lingua (un valore null è accettabile).  
+ [in] `GUID` di un linguaggio (un valore null è accettabile).  
   
  `iid`  
  [in] `IID` del servizio da ottenere.  
@@ -62,7 +62,7 @@ Int GetEEService(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Passare il `IID` per il [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interfaccia (`IID_IEEVisualizerServiceProvider`) per verificare se il servizio del Visualizzatore di tipo è disponibile. Se in tal caso, è possibile ottenere l'analizzatore di espressioni di [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interfaccia per supportare i visualizzatori di tipo. Vedere [Visualizing e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) per informazioni dettagliate.  
+ Passare il `IID` per il [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interfaccia (`IID_IEEVisualizerServiceProvider`) per verificare se il servizio Visualizzatore di tipi è disponibile. Se, pertanto, l'analizzatore di espressioni è possibile ottenere il [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interfaccia per supportare i visualizzatori di tipo. Visualizzare [visualizzazione di dati e visualizzare](../../../extensibility/debugger/visualizing-and-viewing-data.md) per informazioni dettagliate.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

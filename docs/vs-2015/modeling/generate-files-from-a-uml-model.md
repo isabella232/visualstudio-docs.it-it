@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c126fab0226198fc182fe2c6c956594a11dc2ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831718"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generare file da un modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Da un modello UML, è possibile generare codice programma, schemi, documenti, ri
   
  Esistono tre scenari principali:  
   
--   [Generazione di file da un comando di menu](#Command) o movimenti. L'utente definisce un comando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] disponibile nei modelli UML.  
+- [Generazione di file da un comando di menu](#Command) o movimenti. L'utente definisce un comando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] disponibile nei modelli UML.  
   
--   [Generazione di file da un'applicazione](#Application). L'utente scrive un'applicazione in grado di leggere i modelli UML e di generare i file.  
+- [Generazione di file da un'applicazione](#Application). L'utente scrive un'applicazione in grado di leggere i modelli UML e di generare i file.  
   
--   [Generazione in fase di progettazione](#Design). L'utente usa un modello per definire alcune delle funzionalità dell'applicazione e per generare codice, risorse e altro all'interno della soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- [Generazione in fase di progettazione](#Design). L'utente usa un modello per definire alcune delle funzionalità dell'applicazione e per generare codice, risorse e altro all'interno della soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- In questo argomento termina con una discussione sulle [come usare la generazione di testo](#What). Per altre informazioni, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).  
+  In questo argomento termina con una discussione sulle [come usare la generazione di testo](#What). Per altre informazioni, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).  
   
 ##  <a name="Command"></a> Generazione di file da un comando di menu  
  È possibile usare i modelli di testo pre-elaborati in un comando di menu UML. Nel codice del modello di testo o in una classe parziale separata, è possibile leggere il modello visualizzato dal diagramma.  
   
  Per altre informazioni su queste funzionalità, leggere gli argomenti seguenti:  
   
--   [Definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+- [Definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [Generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+- [Generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
--   [Esplorare il modello UML](../modeling/navigate-the-uml-model.md)  
+- [Esplorare il modello UML](../modeling/navigate-the-uml-model.md)  
   
- L'approccio mostrato nell'esempio seguente è adatto per la generazione di testo da un singolo modello, quando si avvia l'operazione da uno dei diagrammi del modello. Per elaborare un modello in un contesto separato, è consigliabile usare [Modelbus di Visual Studio](../modeling/integrate-uml-models-with-other-models-and-tools.md) per accedere al modello e i relativi elementi.  
+  L'approccio mostrato nell'esempio seguente è adatto per la generazione di testo da un singolo modello, quando si avvia l'operazione da uno dei diagrammi del modello. Per elaborare un modello in un contesto separato, è consigliabile usare [Modelbus di Visual Studio](../modeling/integrate-uml-models-with-other-models-and-tools.md) per accedere al modello e i relativi elementi.  
   
 ### <a name="example"></a>Esempio  
  Per eseguire questo esempio, creare un progetto con estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Il nome del progetto che viene usato in questo esempio è `VdmGenerator`. Nel **vsixmanifest** del file, fare clic su **Aggiungi contenuto** e impostare il campo di tipo **componente MEF** e il percorso di origine che fa riferimento il progetto corrente. Per altre informazioni su come configurare questo tipo di progetto, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
@@ -174,41 +174,41 @@ Type Class2 ::
   
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>Per configurare una soluzione di Visual Studio per questo esempio  
   
-1.  Creare un diagramma classi UML in un progetto di modellazione in una nuova soluzione.  
+1. Creare un diagramma classi UML in un progetto di modellazione in una nuova soluzione.  
   
-    1.  Nel **Architecture** menu, fare clic su **nuovo diagramma**.  
+   1.  Nel **Architecture** menu, fare clic su **nuovo diagramma**.  
   
-    2.  Selezionare **diagramma classi UML**.  
+   2.  Selezionare **diagramma classi UML**.  
   
-    3.  Seguire le istruzioni per creare una nuova soluzione e un progetto di modellazione.  
+   3.  Seguire le istruzioni per creare una nuova soluzione e un progetto di modellazione.  
   
-    4.  Aggiungere alcune classi al diagramma trascinando lo strumento Classe UML dalla casella degli strumenti.  
+   4.  Aggiungere alcune classi al diagramma trascinando lo strumento Classe UML dalla casella degli strumenti.  
   
-    5.  Salvare il file.  
+   5.  Salvare il file.  
   
-2.  Creare un progetto C# o Visual Basic nella stessa soluzione.  
+2. Creare un progetto C# o Visual Basic nella stessa soluzione.  
   
-    -   In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**. Sotto **modelli installati**, fare clic su **Visual Basic** oppure **Visual c#** e quindi selezionare un tipo di progetto, ad esempio **applicazione Console**.  
+   -   In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**. Sotto **modelli installati**, fare clic su **Visual Basic** oppure **Visual c#** e quindi selezionare un tipo di progetto, ad esempio **applicazione Console**.  
   
-3.  Aggiungere un file di testo normale al progetto C# o Visual Basic. Il file conterrà codice condiviso se si vogliono scrivere più modelli di testo.  
+3. Aggiungere un file di testo normale al progetto C# o Visual Basic. Il file conterrà codice condiviso se si vogliono scrivere più modelli di testo.  
   
-    -   In Esplora soluzioni fare clic sul progetto, scegliere **Add**, quindi fare clic su **nuovo elemento**. Selezionare **File di testo**.  
+   - In Esplora soluzioni fare clic sul progetto, scegliere **Add**, quindi fare clic su **nuovo elemento**. Selezionare **File di testo**.  
   
      Inserire il testo visualizzato nella sezione seguente.  
   
-4.  Aggiungere un file del modello di testo al progetto C# o Visual Basic.  
+4. Aggiungere un file del modello di testo al progetto C# o Visual Basic.  
   
-    -   In Esplora soluzioni fare clic sul progetto, scegliere **Add**, quindi fare clic su **nuovo elemento**. Selezionare **modello di testo**.  
+   - In Esplora soluzioni fare clic sul progetto, scegliere **Add**, quindi fare clic su **nuovo elemento**. Selezionare **modello di testo**.  
   
      Inserire il codice seguente nel file del modello di testo.  
   
-5.  Salvare il file del modello di testo.  
+5. Salvare il file del modello di testo.  
   
-6.  Esaminare il codice nel file secondario. Deve contenere una classe per ogni classe UML nel modello.  
+6. Esaminare il codice nel file secondario. Deve contenere una classe per ogni classe UML nel modello.  
   
-    1.  In un progetto di Visual Basic, fare clic su **Mostra tutti i file** sulla barra degli strumenti Esplora soluzioni.  
+   1.  In un progetto di Visual Basic, fare clic su **Mostra tutti i file** sulla barra degli strumenti Esplora soluzioni.  
   
-    2.  Espandere il nodo del file del modello in Esplora soluzioni.  
+   2.  Espandere il nodo del file del modello in Esplora soluzioni.  
   
 #### <a name="content-of-the-shared-text-file"></a>Contenuto del file di testo condiviso  
  In questo esempio il file è denominato SharedTemplateCode.txt e si trova nella stessa cartella dei modelli di testo.  

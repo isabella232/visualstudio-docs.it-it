@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa800b52f1477fa55caaab606d5fb1e87ead147d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868580"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparazione al debug: tipi di progetto Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
   
  [Progetti Win32](#BKMK_Win32_Projects)  
   
--   [Eseguire il debug di un'applicazione Win32 in C o C++](#BKMK_To_debug_a_C_or_C___Win32_application)  
+- [Eseguire il debug di un'applicazione Win32 in C o C++](#BKMK_To_debug_a_C_or_C___Win32_application)  
   
--   [Per impostare manualmente una configurazione di Debug](#BKMK_To_manually_set_a_Debug_configuration)  
+- [Per impostare manualmente una configurazione di Debug](#BKMK_To_manually_set_a_Debug_configuration)  
   
- [Applicazioni Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
+  [Applicazioni Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
 ##  <a name="BKMK_Recommended_Property_Settings"></a> Impostazioni consigliate delle proprietà  
  Determinate proprietà devono essere impostate nello stesso modo per tutti gli scenari di debug non gestito. Nelle tabelle riportate di seguito sono indicate le impostazioni consigliate delle proprietà. Le impostazioni non specificate in queste tabelle possono variare in base al tipo di progetto non gestito. Per altre informazioni, vedere [impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -84,25 +84,25 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Per impostare manualmente una configurazione di Debug  
   
-1.  Nel **View** menu, fare clic su **pagine delle proprietà**.  
+1. Nel **View** menu, fare clic su **pagine delle proprietà**.  
   
-2.  Scegliere il **le proprietà di configurazione** nodo per aprirlo e se non è già  
+2. Scegliere il **le proprietà di configurazione** nodo per aprirlo e se non è già  
   
-3.  Selezionare **generali**e impostare il valore della **Output** riga a **Debug**.  
+3. Selezionare **generali**e impostare il valore della **Output** riga a **Debug**.  
   
-4.  Aprire il **C/C++** nodo e selezionare **generali**.  
+4. Aprire il **C/C++** nodo e selezionare **generali**.  
   
-     Nel **Debug** riga si specifica il tipo di informazioni di debug da essere generato dal compilatore. È possibile scegliere i valori includono **Database di programma (/Zi)** oppure **per Database di programma per modifica e continuazione (/ZI)**.  
+    Nel **Debug** riga si specifica il tipo di informazioni di debug da essere generato dal compilatore. È possibile scegliere i valori includono **Database di programma (/Zi)** oppure **per Database di programma per modifica e continuazione (/ZI)**.  
   
-5.  Selezionare **ottimizzazione**e il **ottimizzazione** riga, seleziona **disabilitato (/ lt;0d&gt)** nell'elenco a discesa.  
+5. Selezionare **ottimizzazione**e il **ottimizzazione** riga, seleziona **disabilitato (/ lt;0d&gt)** nell'elenco a discesa.  
   
-     L'esecuzione del debug di codice ottimizzato è più complessa perché le istruzioni generate non corrispondono direttamente al codice sorgente. Se si nota un bug presente solo nel codice ottimizzato del programma, è possibile attivare questa impostazione, tenendo però presente che il codice riportato nella finestra Disassembly è generato da codice sorgente ottimizzato che potrebbe non corrispondere a quanto visualizzato nelle finestre del codice sorgente. È probabile che alcune funzionalità, ad esempio il debug passo a passo, non visualizzino i punti di interruzione e i punti di esecuzione in modo corretto.  
+    L'esecuzione del debug di codice ottimizzato è più complessa perché le istruzioni generate non corrispondono direttamente al codice sorgente. Se si nota un bug presente solo nel codice ottimizzato del programma, è possibile attivare questa impostazione, tenendo però presente che il codice riportato nella finestra Disassembly è generato da codice sorgente ottimizzato che potrebbe non corrispondere a quanto visualizzato nelle finestre del codice sorgente. È probabile che alcune funzionalità, ad esempio il debug passo a passo, non visualizzino i punti di interruzione e i punti di esecuzione in modo corretto.  
   
-6.  Aprire il **Linker** nodo e selezionare **debug**. Nel primo **genera** riga, seleziona **Sì (/debug)** nell'elenco a discesa. Utilizzare sempre questa impostazione durante il debug.  
+6. Aprire il **Linker** nodo e selezionare **debug**. Nel primo **genera** riga, seleziona **Sì (/debug)** nell'elenco a discesa. Utilizzare sempre questa impostazione durante il debug.  
   
- Per altre informazioni, vedere[impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+   Per altre informazioni, vedere[impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
- [In questo argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+   [In questo argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Applicazioni Windows Forms (.NET)  
  Il **Windows Forms Application (.NET)** modello crea un [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] applicazione Windows Form. Per altre informazioni, vedere [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  

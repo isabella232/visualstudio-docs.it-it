@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5877bcf4501125968e2fb14f56c41c1ccbc9e561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885135"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Preparazione al debug: applicazioni Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,23 +56,23 @@ Il modello di progetto Windows Forms consente di creare un'applicazione Windows 
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Per eseguire il debug di Windows Forms Application in C#, F# o Visual Basic  
   
-1.  Aprire il progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Aprire il progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Creare i punti di interruzione necessari.  
+2. Creare i punti di interruzione necessari.  
   
-     Poiché le applicazioni Windows Forms sono guidate da eventi, i punti di interruzione dovranno essere inseriti nel codice del gestore eventi o nei metodi chiamati dal codice del gestore eventi. Alcuni eventi tipici in cui impostare i punti di interruzione sono:  
+    Poiché le applicazioni Windows Forms sono guidate da eventi, i punti di interruzione dovranno essere inseriti nel codice del gestore eventi o nei metodi chiamati dal codice del gestore eventi. Alcuni eventi tipici in cui impostare i punti di interruzione sono:  
   
-    1.  Eventi associati a un controllo, ad esempio Click, Enter e così via  
+   1. Eventi associati a un controllo, ad esempio Click, Enter e così via  
   
-    2.  Eventi associati all'avvio e alla chiusura dell'applicazione, ad esempio Load, Activated e così via  
+   2. Eventi associati all'avvio e alla chiusura dell'applicazione, ad esempio Load, Activated e così via  
   
-    3.  Eventi di convalida e relativi allo stato attivo.  
+   3. Eventi di convalida e relativi allo stato attivo.  
   
-     Per altre informazioni, vedere [Creazione di gestori eventi in Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
+      Per altre informazioni, vedere [Creazione di gestori eventi in Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
-3.  Nel **Debug** menu, fare clic su **avviare**.  
+3. Nel **Debug** menu, fare clic su **avviare**.  
   
-4.  Eseguire il debug usando le tecniche descritte in [nozioni fondamentali di debug](../debugger/debugger-basics.md).  
+4. Eseguire il debug usando le tecniche descritte in [nozioni fondamentali di debug](../debugger/debugger-basics.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   

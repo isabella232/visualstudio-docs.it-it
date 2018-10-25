@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56791d944b811ec4ca549ec51affaa74cb421909
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91f3339fd18db8c006855c634e011b14eecc9206
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232912"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888935"
 ---
 # <a name="operational-modes"></a>Modalità operative
 Sono disponibili tre modalità in cui può operare nell'IDE, come indicato di seguito:  
   
--   [Modalità progettazione](#vsconoperationalmodesanchor1)  
+- [Modalità progettazione](#vsconoperationalmodesanchor1)  
   
--   [Modalità di esecuzione](#vsconoperationalmodesanchor2)  
+- [Modalità di esecuzione](#vsconoperationalmodesanchor2)  
   
--   [Modalità di interruzione](#vsconoperationalmodesanchor3)  
+- [Modalità di interruzione](#vsconoperationalmodesanchor3)  
   
- Come avviene la transizione tra le modalità del motore di debug personalizzato (DE) è una decisione di implementazione che è necessario avere familiarità con i meccanismi di transizione. Il DE potrebbe o non può implementare direttamente queste modalità. Queste modalità sono davvero debug pacchetto modalità cui passare basate sulle azione dell'utente o gli eventi dal DE. Ad esempio, la transizione dalla modalità di esecuzione alla modalità di interruzione viene attivata da un evento di arresto dal DE. La transizione dall'interruzione di eseguire in modalità o in modalità di passaggio è eseguirlo è l'utente che esegue le operazioni, ad esempio Esegui o passaggio. Per altre informazioni sulle transizioni DE, vedere [controllo di esecuzione](../../extensibility/debugger/control-of-execution.md).  
+  Come avviene la transizione tra le modalità del motore di debug personalizzato (DE) è una decisione di implementazione che è necessario avere familiarità con i meccanismi di transizione. Il DE potrebbe o non può implementare direttamente queste modalità. Queste modalità sono davvero debug pacchetto modalità cui passare basate sulle azione dell'utente o gli eventi dal DE. Ad esempio, la transizione dalla modalità di esecuzione alla modalità di interruzione viene attivata da un evento di arresto dal DE. La transizione dall'interruzione di eseguire in modalità o in modalità di passaggio è eseguirlo è l'utente che esegue le operazioni, ad esempio Esegui o passaggio. Per altre informazioni sulle transizioni DE, vedere [controllo di esecuzione](../../extensibility/debugger/control-of-execution.md).  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> Modalità progettazione  
  Modalità di progettazione è lo stato nonrunning del debug di Visual Studio, durante i quali è possibile impostare le funzionalità nell'applicazione di debug.  
@@ -46,7 +46,7 @@ Sono disponibili tre modalità in cui può operare nell'IDE, come indicato di se
   
  Gli eventi di arresto proseguono da una chiamata a uno dei metodi seguenti, eseguire la transizione dalla modalità di interruzione per l'esecuzione o in modalità di passaggio nel debugger:  
   
--   [Eseguire](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+-   [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
 -   [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   

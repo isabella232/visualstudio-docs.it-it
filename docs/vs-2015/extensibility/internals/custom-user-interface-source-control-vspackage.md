@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852258"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaccia utente personalizzata (VSPackage di controllo del codice sorgente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ Un pacchetto VSPackage dichiara le voci di menu e i relativi stati predefinito t
   
  Nell'elenco seguente mostra le interfacce impatto lo stato attivo di un pacchetto VSPackage di controllo di origine:  
   
--   Tenere traccia degli eventi di documenti di progetto.  
+- Tenere traccia degli eventi di documenti di progetto.  
   
--   Eventi della soluzione.  
+- Eventi della soluzione.  
   
--   Interfacce di persistenza di soluzione. Quando è inattivo, i pacchetti non devono scrivere i file con estensione sln e suo.  
+- Interfacce di persistenza di soluzione. Quando è inattivo, i pacchetti non devono scrivere i file con estensione sln e suo.  
   
--   Estensioni della proprietà.  
+- Estensioni della proprietà.  
   
- Richiesti <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, e anche eventuali interfacce facoltative associate al controllo del codice sorgente, non vengono chiamati quando il pacchetto VSPackage di controllo di origine è inattivo.  
+  Richiesti <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, e anche eventuali interfacce facoltative associate al controllo del codice sorgente, non vengono chiamati quando il pacchetto VSPackage di controllo di origine è inattivo.  
   
- Quando la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] avvio dell'IDE, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] imposta il contesto dell'interfaccia utente del comando per l'ID del controllo sorgente predefinito corrente ID del pacchetto VSPackage. In questo modo l'interfaccia utente statico del pacchetto VSPackage venga visualizzata nell'IDE senza effettivamente il caricamento di VSPackage di controllo del codice sorgente attivo. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] viene sospeso per il pacchetto VSPackage registrarsi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] attraverso il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> prima di inviare tutte le chiamate al pacchetto VSPackage.  
+  Quando la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] avvio dell'IDE, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] imposta il contesto dell'interfaccia utente del comando per l'ID del controllo sorgente predefinito corrente ID del pacchetto VSPackage. In questo modo l'interfaccia utente statico del pacchetto VSPackage venga visualizzata nell'IDE senza effettivamente il caricamento di VSPackage di controllo del codice sorgente attivo. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] viene sospeso per il pacchetto VSPackage registrarsi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] attraverso il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> prima di inviare tutte le chiamate al pacchetto VSPackage.  
   
- La tabella seguente descrive i dettagli specifici sul modo in cui [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE nasconde gli elementi dell'interfaccia utente diversi.  
+  La tabella seguente descrive i dettagli specifici sul modo in cui [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE nasconde gli elementi dell'interfaccia utente diversi.  
   
 |Elemento dell'interfaccia utente|Descrizione|  
 |-------------|-----------------|  

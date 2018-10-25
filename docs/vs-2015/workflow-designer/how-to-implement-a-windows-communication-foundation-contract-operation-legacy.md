@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 97e6e72a7de4a9da7dc5086a2fecaea2b378b553
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3c3d76257f27023beca6cd480137114b0161b12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813546"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Procedura: implementare un'operazione del contratto di Windows Communication Foundation (legacy)
 In questo argomento viene descritto come implementare un'operazione di contratto [!INCLUDE[indigo1](../includes/indigo1-md.md)] usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy che fa riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,31 +26,31 @@ In questo argomento viene descritto come implementare un'operazione di contratto
   
 ### <a name="to-implement-a-wcf-contract-operation"></a>Per implementare un'operazione del contratto WCF  
   
-1.  Fare doppio clic sui **ReceiveActivity** attività nella finestra di progettazione o fare clic sui puntini di sospensione accanto al **ServiceOperationInfo** proprietà nel **proprietà** riquadro.  
+1. Fare doppio clic sui **ReceiveActivity** attività nella finestra di progettazione o fare clic sui puntini di sospensione accanto al **ServiceOperationInfo** proprietà nel **proprietà** riquadro.  
   
-2.  Eseguire una delle operazioni seguenti:  
+2. Eseguire una delle operazioni seguenti:  
   
-    -   Fare clic su **Aggiungi contratto** nell'angolo superiore destro della finestra di dialogo. Vengono creati un nuovo contratto e una nuova operazione [!INCLUDE[indigo2](../includes/indigo2-md.md)].  
+   - Fare clic su **Aggiungi contratto** nell'angolo superiore destro della finestra di dialogo. Vengono creati un nuovo contratto e una nuova operazione [!INCLUDE[indigo2](../includes/indigo2-md.md)].  
   
-         oppure  
+      oppure  
   
-    -   Fare clic su **importazione** nell'angolo superiore destro della finestra di dialogo. Il [individuare e selezionare una finestra di dialogo tipo .NET (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) apre. Cercare un assembly o un progetto contenente il contratto desiderato. Selezionare il contratto e fare clic su **OK**.  
+   - Fare clic su **importazione** nell'angolo superiore destro della finestra di dialogo. Il [individuare e selezionare una finestra di dialogo tipo .NET (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) apre. Cercare un assembly o un progetto contenente il contratto desiderato. Selezionare il contratto e fare clic su **OK**.  
   
      Dopo aver creato o importato un contratto, sarà possibile aggiungervi nuove operazioni. Per aggiungere una nuova operazione, selezionare il contratto e fare clic su **Aggiungi operazione** nell'angolo superiore destro della finestra di dialogo. Dopo aver inserito tutte le operazioni, andare al passaggio 3.  
   
-3.  Selezionare l'operazione che si desidera associare il **ReceiveActivity** attività. È possibile modificare la definizione dell'operazione modificando il nome, i parametri, le proprietà e le impostazioni relative alle autorizzazioni.  
+3. Selezionare l'operazione che si desidera associare il **ReceiveActivity** attività. È possibile modificare la definizione dell'operazione modificando il nome, i parametri, le proprietà e le impostazioni relative alle autorizzazioni.  
   
-     Per modificare il nome, immettere il nuovo nome nella **nome dell'operazione** casella di testo.  
+    Per modificare il nome, immettere il nuovo nome nella **nome dell'operazione** casella di testo.  
   
-     Scegliere il **parametri** pressione di tab per accedere ai parametri dell'operazione. È possibile modificare il nome, il tipo o la direzione di un parametro così come aggiungere o eliminare parametri dall'operazione.  
+    Scegliere il **parametri** pressione di tab per accedere ai parametri dell'operazione. È possibile modificare il nome, il tipo o la direzione di un parametro così come aggiungere o eliminare parametri dall'operazione.  
   
-     Scegliere il **proprietà** pressione di tab per accedere alla funzionalità di exchange supportate e a livello di messaggio di operazione protezione dell'operazione.  
+    Scegliere il **proprietà** pressione di tab per accedere alla funzionalità di exchange supportate e a livello di messaggio di operazione protezione dell'operazione.  
   
-     Scegliere il **autorizzazioni** tab per specificare quale gruppo è consentito per implementare l'operazione.  
+    Scegliere il **autorizzazioni** tab per specificare quale gruppo è consentito per implementare l'operazione.  
   
-4.  Fare clic su **OK** e il **ReceiveActivity** attività visualizzerà il nome dell'operazione per l'operazione che sta implementando.  
+4. Fare clic su **OK** e il **ReceiveActivity** attività visualizzerà il nome dell'operazione per l'operazione che sta implementando.  
   
-5.  Posizionare le attività del flusso di lavoro si intende usare per l'implementazione di tale operazione all'interno di **ReceiveActivity** attività.  
+5. Posizionare le attività del flusso di lavoro si intende usare per l'implementazione di tale operazione all'interno di **ReceiveActivity** attività.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Dialogo Seleziona operazione (Legacy)](../workflow-designer/choose-operation-dialog-box-legacy.md)   

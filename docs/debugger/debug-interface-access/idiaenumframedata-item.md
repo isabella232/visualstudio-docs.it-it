@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Item | Documenti Microsoft'
+title: Idiaenumframedata | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d725c38073b82bc94081b3c27791e88f64343cd3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c15d0dec0ccaa20e2fcf59f88d68d5febc63eb04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887407"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
-Recupera un elemento frame di dati tramite un indice.  
+Recupera un elemento di dati di frame per mezzo di un indice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,10 +35,10 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parametri  
  indice  
- [in] Indice del [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto da recuperare. L'indice è compreso nell'intervallo da 0 a `count`-1, dove `count` restituito dal [idiaenumframedata:: Get_count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) metodo.  
+ [in] Indice del [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto da recuperare. L'indice è compreso nell'intervallo da 0 a `count`-1, dove `count` restituito dalle [Idiaenumframedata](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) (metodo).  
   
  section  
- [out] Restituisce un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto che rappresenta l'elemento di dati di frame desiderato.  
+ [out] Restituisce un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto che rappresenta l'elemento di dati di aggiornamento desiderata.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812504"
 ---
 # <a name="validate-your-uml-model"></a>Eseguire la convalida di un modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Alcuni dei modelli UML che è possibile creare in Visual Studio potrebbero esser
 ## <a name="invoking-validation"></a>Richiamo di convalida  
  Dopo aver installato un'estensione della convalida, è possibile applicare vincoli che fornisce nei casi seguenti. Alcuni vincoli sono impostati in modo da essere applicati solo ad alcuni di questi casi.  
   
--   **Comando di convalida.** Per richiamare la convalida in qualsiasi momento, fare clic su **convalida modello UML** nel **architettura** menu.  
+- **Comando di convalida.** Per richiamare la convalida in qualsiasi momento, fare clic su **convalida modello UML** nel **architettura** menu.  
   
-    > [!NOTE]
-    >  Il comando verrà visualizzato solo se i vincoli di convalida sono installati.  
+  > [!NOTE]
+  >  Il comando verrà visualizzato solo se i vincoli di convalida sono installati.  
   
--   **Al salvataggio di un modello.** È possibile applicare vincoli di convalida quando si salva il modello. Lo scopo di questi vincoli è garantire che non si salvi un modello non valido in base all'interpretazione del progetto.  
+- **Al salvataggio di un modello.** È possibile applicare vincoli di convalida quando si salva il modello. Lo scopo di questi vincoli è garantire che non si salvi un modello non valido in base all'interpretazione del progetto.  
   
-     Se sono presenti errori, verrà chiesto se si vuole salvare il modello. È possibile scegliere di correggere gli errori o di salvare comunque il modello.  
+   Se sono presenti errori, verrà chiesto se si vuole salvare il modello. È possibile scegliere di correggere gli errori o di salvare comunque il modello.  
   
--   **All'apertura di un modello.** Quando si apre un modello, possono essere applicati metodi di convalida per ripristinare i messaggi di errore presenti quando è stato salvato il modello. Gli errori possono essere introdotti anche da incoerenze tra le modifiche apportate dagli utenti che lavorano su parti diverse di un modello. Per altre informazioni, vedere [condividere modelli ed esportare diagrammi](../modeling/share-models-and-exporting-diagrams.md).  
+- **All'apertura di un modello.** Quando si apre un modello, possono essere applicati metodi di convalida per ripristinare i messaggi di errore presenti quando è stato salvato il modello. Gli errori possono essere introdotti anche da incoerenze tra le modifiche apportate dagli utenti che lavorano su parti diverse di un modello. Per altre informazioni, vedere [condividere modelli ed esportare diagrammi](../modeling/share-models-and-exporting-diagrams.md).  
   
- Gli errori di convalida vengono segnalati nella finestra degli errori [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  Gli errori di convalida vengono segnalati nella finestra degli errori [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Per selezionare in un diagramma gli elementi che non sono corretti, fare doppio clic sull'errore. Questo metodo funziona solo se gli elementi non corretti sono visibili in un diagramma aperto.  
+  Per selezionare in un diagramma gli elementi che non sono corretti, fare doppio clic sull'errore. Questo metodo funziona solo se gli elementi non corretti sono visibili in un diagramma aperto.  
   
 ## <a name="installing-validation-constraints"></a>Installazione dei vincoli di convalida  
  I vincoli vengono assemblati all'interno di file di estensione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). In genere, un insieme di vincoli è parte di un'estensione che contiene anche altre definizioni quali comandi di menu, profili ed elementi della casella degli strumenti.  

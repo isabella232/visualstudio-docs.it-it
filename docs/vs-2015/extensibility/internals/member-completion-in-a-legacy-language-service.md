@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892688"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Completamento dei membri in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Completamento dei membri di IntelliSense è una descrizione comando che consente
 ## <a name="how-it-works"></a>Come funziona  
  Di seguito sono i due modi in cui viene illustrato un elenco di membri utilizzando le classi MPF:  
   
--   Posizionando il cursore su un identificatore o dopo un carattere di completamento del membro e selezionando **Elenca membri** dalle **IntelliSense** menu.  
+- Posizionando il cursore su un identificatore o dopo un carattere di completamento del membro e selezionando **Elenca membri** dalle **IntelliSense** menu.  
   
--   Il <xref:Microsoft.VisualStudio.Package.IScanner> scanner rileva un carattere di completamento di membro e imposta un trigger di token <xref:Microsoft.VisualStudio.Package.TokenTriggers> per tale carattere.  
+- Il <xref:Microsoft.VisualStudio.Package.IScanner> scanner rileva un carattere di completamento di membro e imposta un trigger di token <xref:Microsoft.VisualStudio.Package.TokenTriggers> per tale carattere.  
   
- Un carattere di completamento membro indica che un membro di una classe, struttura o enumerazione consiste nel seguire. In c# o Visual Basic, ad esempio, il carattere di completamento membro è un `.`, mentre in C++ il carattere è un `.` o un `->`. Il valore del trigger è impostato quando viene analizzato il carattere di selezione del membro.  
+  Un carattere di completamento membro indica che un membro di una classe, struttura o enumerazione consiste nel seguire. In c# o Visual Basic, ad esempio, il carattere di completamento membro è un `.`, mentre in C++ il carattere è un `.` o un `->`. Il valore del trigger è impostato quando viene analizzato il carattere di selezione del membro.  
   
 ### <a name="the-intellisense-member-list-command"></a>Il comando di elenco di membri IntelliSense  
  Il <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando avvia una chiamata al <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodo sul <xref:Microsoft.VisualStudio.Package.Source> classe e il <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodo, a sua volta, chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> parser di metodo con il motivo di analisi di <xref:Microsoft.VisualStudio.Package.ParseReason>.  

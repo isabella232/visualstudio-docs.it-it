@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: db916372691ce5e336e142aeb72288193e1ed807
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8c1be8b041fcf5f4eb70b37a53b7c32705f6cfcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876620"
 ---
 # <a name="the-dsltexttransform-command"></a>Comando DslTextTransform
-DslTextTransform.cmd è uno script che chiama TextTransform.exe e viene eseguito con le opzioni comuni. È possibile utilizzare DslTextTransformation.cmd per una compilazione notturna di automatizzare il [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] progetti. Per ulteriori informazioni, vedere [la generazione di file con l'utilità di TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
+DslTextTransform.cmd è uno script che chiama TextTransform.exe e lo esegue con opzioni comuni. È possibile usare DslTextTransformation.cmd per una compilazione notturna di automatizzare il [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] progetti. Per altre informazioni, vedere [generazione di file con l'utilità di TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
  DslTextTransform.cmd si trova nella directory seguente:
 
@@ -27,10 +27,10 @@ DslTextTransform.cmd è uno script che chiama TextTransform.exe e viene eseguito
 
  È possibile specificare gli argomenti seguenti come input per DslTextTransform.cmd:
 
--   La directory di output del progetto di modello di dominio.
+- La directory di output del progetto di modello di dominio.
 
--   La directory di output del progetto di definizione della finestra di progettazione.
+- La directory di output del progetto di definizione della finestra di progettazione.
 
--   Il percorso del file di modello di testo.
+- Il percorso del file di modello di testo.
 
- DslTextTransform.cmd elabora il file di modello di testo specificato con i processori di direttive predefinito e gli assembly. Se si creano i processori di direttiva personalizzati, è possibile creare un file batch che chiama TextTransform.exe. In questo file batch, è possibile specificare gli assembly e i processori di direttiva personalizzati associati.
+  DslTextTransform.cmd elabora il file di modello di testo specificato usando i processori di direttive predefinito e gli assembly. Se si creano i processori di direttiva personalizzati, è possibile creare il proprio file batch che chiama TextTransform.exe. In questo file batch, è possibile specificare gli assembly e i processori di direttiva personalizzati associati.

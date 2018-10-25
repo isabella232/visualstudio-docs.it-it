@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - se ActivityDesigner
+title: Finestra di progettazione del flusso di lavoro - se la finestra di progettazione
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58adde57c6de49a4abb0456ba5c80df27a45b069
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 716f2b13758864d5eda449967990f9e5be399a9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822841"
 ---
 # <a name="if-activity-designer"></a>ActivityDesigner If
 
@@ -28,13 +28,13 @@ L'attività <xref:System.Activities.Statements.If> valuta una condizione ed eseg
 Nella tabella seguente sono elencate le proprietà più utili dell'attività <xref:System.Activities.Statements.If> e ne viene descritto l'uso nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.If.Condition%2A>|True|La condizione che determina l'attività figlio da eseguire. Per impostare il <xref:System.Activities.Statements.If.Condition%2A>, digitare un'espressione Visual Basic nel **condizione** casella il **se** attività della finestra di progettazione o nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.If.Else%2A>|False|L'attività da eseguire se il <xref:System.Activities.Statements.If.Condition%2A> è **false**. Per aggiungere un'attività che viene eseguita tramite il <xref:System.Activities.Statements.If.Else%2A> branching, rilasciarla dal **della casella degli strumenti** nel **Else** casella il **se** ActivityDesigner con testo di suggerimento " Rilasciare l'attività".|
-|<xref:System.Activities.Statements.If.Then%2A>|False|L'attività da eseguire se il <xref:System.Activities.Statements.If.Condition%2A> è **true**. Per aggiungere un'attività che viene eseguita tramite il <xref:System.Activities.Statements.If.Then%2A> branching, rilasciarla dal **della casella degli strumenti** nel **quindi** casella il **se** ActivityDesigner con testo di suggerimento " Rilasciare l'attività".|
+|-|--------------|-|
+|<xref:System.Activities.Statements.If.Condition%2A>|True|La condizione che determina l'attività figlio da eseguire. Per impostare il <xref:System.Activities.Statements.If.Condition%2A>, digitare un'espressione Visual Basic nel **condizione** nella casella il **se** attività della finestra di progettazione o nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.If.Else%2A>|False|L'attività da eseguire se il <xref:System.Activities.Statements.If.Condition%2A> viene **false**. Per aggiungere un'attività che viene eseguita dal <xref:System.Activities.Statements.If.Else%2A> creare un ramo, rilasciarla dal **della casella degli strumenti** nel **Else** casella il **se** ActivityDesigner con testo di suggerimento " Rilascia attività qui".|
+|<xref:System.Activities.Statements.If.Then%2A>|False|L'attività da eseguire se il <xref:System.Activities.Statements.If.Condition%2A> viene **true**. Per aggiungere un'attività che viene eseguita dal <xref:System.Activities.Statements.If.Then%2A> creare un ramo, rilasciarla dal **della casella degli strumenti** nel **quindi** casella il **se** ActivityDesigner con testo di suggerimento " Rilascia attività qui".|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [sequenza](../workflow-designer/sequence-activity-designer.md)
-- [Parallelo](../workflow-designer/parallel-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

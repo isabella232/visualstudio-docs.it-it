@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1a812575d14ef6595d58cc3ecc5d9f94b8f5635
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 642f46e9497e20cd8a8276265fb434c5bd7522bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851179"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Introduzione all'estendibilità del debugger
 Il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] vengono fornite le informazioni che occorre per creare e personalizzare i componenti del debugger per eseguire il debug di programmi dall'interno di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente.  
@@ -31,11 +31,11 @@ Il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] vengono forni
   
  Per usare al meglio il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], è necessario avere familiarità con gli elementi seguenti:  
   
--   Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE)  
+- Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE)  
   
--   Il linguaggio di programmazione C++  
+- Il linguaggio di programmazione C++  
   
--   COM ATL  
+- COM ATL  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
  [Guida di orientamento per l'estensione del debugger](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

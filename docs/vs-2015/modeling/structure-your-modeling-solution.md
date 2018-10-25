@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4409891b7d6cbc4be5f46b598cd5910f3e0e9284
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 007d194249cdca1ba95c758bc170db113cb0c3d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841014"
 ---
 # <a name="structure-your-modeling-solution"></a>Strutturare la soluzione di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,63 +35,63 @@ Per usare efficacemente i modelli in un progetto di sviluppo, è necessario che 
   
 #### <a name="to-divide-an-application-into-layers"></a>Per suddividere un'applicazione in livelli  
   
-1.  Basare la struttura delle soluzioni sulla struttura dell'applicazione, ad esempio applicazione Web, applicazione di servizio o applicazione desktop. Viene illustrata un'ampia gamma di architetture comuni in [archetipi nella Guida all'architettura dell'applicazione di Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).  
+1. Basare la struttura delle soluzioni sulla struttura dell'applicazione, ad esempio applicazione Web, applicazione di servizio o applicazione desktop. Viene illustrata un'ampia gamma di architetture comuni in [archetipi nella Guida all'architettura dell'applicazione di Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).  
   
-2.  Creare una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], che verrà denominata soluzione Architecture. Questa soluzione verrà usata per creare la progettazione complessiva del sistema. Conterrà modelli ma non il codice.  
+2. Creare una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], che verrà denominata soluzione Architecture. Questa soluzione verrà usata per creare la progettazione complessiva del sistema. Conterrà modelli ma non il codice.  
   
-     Aggiungere un diagramma livello alla soluzione. Nel diagramma livello tracciare l'architettura scelta per l'applicazione. Ad esempio, il diagramma potrebbe mostrare i seguenti livelli con le reciproche dipendenze: presentazione, logica di business e dati.  
+    Aggiungere un diagramma livello alla soluzione. Nel diagramma livello tracciare l'architettura scelta per l'applicazione. Ad esempio, il diagramma potrebbe mostrare i seguenti livelli con le reciproche dipendenze: presentazione, logica di business e dati.  
   
-     È possibile creare il diagramma livello e una nuova soluzione di Visual Studio nello stesso momento usando il **nuovo diagramma livello o UML** comando le **architettura** menu.  
+    È possibile creare il diagramma livello e una nuova soluzione di Visual Studio nello stesso momento usando il **nuovo diagramma livello o UML** comando le **architettura** menu.  
   
-3.  Aggiungere al modello Architecture i diagrammi UML che rappresentano i concetti aziendali più importanti e i casi di utilizzo ai quali viene fatto riferimento nella progettazione di tutti i livelli.  
+3. Aggiungere al modello Architecture i diagrammi UML che rappresentano i concetti aziendali più importanti e i casi di utilizzo ai quali viene fatto riferimento nella progettazione di tutti i livelli.  
   
-4.  Creare una soluzione di Visual Studio separata per ogni livello del diagramma livello Architecture.  
+4. Creare una soluzione di Visual Studio separata per ogni livello del diagramma livello Architecture.  
   
-     Queste soluzioni verranno usate per sviluppare il codice dei livelli.  
+    Queste soluzioni verranno usate per sviluppare il codice dei livelli.  
   
-5.  Creare i modelli UML che rappresenteranno le progettazioni dei livelli e i concetti comuni a tutti i livelli. Disporre i modelli in modo che si possano visualizzare tutti dalla soluzione Architecture e che da ogni livello sia possibile visualizzare i relativi modelli.  
+5. Creare i modelli UML che rappresenteranno le progettazioni dei livelli e i concetti comuni a tutti i livelli. Disporre i modelli in modo che si possano visualizzare tutti dalla soluzione Architecture e che da ogni livello sia possibile visualizzare i relativi modelli.  
   
-     È possibile ottenere questo risultato con una delle procedure seguenti. La prima consente di creare un progetto di modello separato per ogni livello, mentre la seconda permette di creare un unico progetto di modello condiviso tra i livelli.  
+    È possibile ottenere questo risultato con una delle procedure seguenti. La prima consente di creare un progetto di modello separato per ogni livello, mentre la seconda permette di creare un unico progetto di modello condiviso tra i livelli.  
   
-    ###### <a name="to-use-a-separate-modeling-project-for-each-layer"></a>Per usare un progetto di modello separato per ogni livello  
+   ###### <a name="to-use-a-separate-modeling-project-for-each-layer"></a>Per usare un progetto di modello separato per ogni livello  
   
-    1.  Creare un progetto di modello nella soluzione di ogni livello.  
+   1. Creare un progetto di modello nella soluzione di ogni livello.  
   
-         Questo modello conterrà i diagrammi UML che descrivono i requisiti e la progettazione dello livello in questione. Può anche contenere diagrammi livello che mostrano i livelli annidati.  
+       Questo modello conterrà i diagrammi UML che descrivono i requisiti e la progettazione dello livello in questione. Può anche contenere diagrammi livello che mostrano i livelli annidati.  
   
-         A questo punto è disponibile un modello per ogni livello, oltre a un modello per l'architettura dell'applicazione. Ogni modello è contenuto in una soluzione separata. In questo modo, i membri del team possono lavorare contemporaneamente sugli stessi livelli.  
+       A questo punto è disponibile un modello per ogni livello, oltre a un modello per l'architettura dell'applicazione. Ogni modello è contenuto in una soluzione separata. In questo modo, i membri del team possono lavorare contemporaneamente sugli stessi livelli.  
   
-    2.  Aggiungere alla soluzione Architecture il progetto di modellazione della soluzione di ogni livello. A questo scopo, aprire la soluzione Architecture. In Esplora soluzioni, fare clic sul nodo della soluzione, scegliere Aggiungi e quindi fare clic su **progetto esistente**. Passare al progetto di modellazione (con estensione modelproj) in una soluzione del livello.  
+   2. Aggiungere alla soluzione Architecture il progetto di modellazione della soluzione di ogni livello. A questo scopo, aprire la soluzione Architecture. In Esplora soluzioni, fare clic sul nodo della soluzione, scegliere Aggiungi e quindi fare clic su **progetto esistente**. Passare al progetto di modellazione (con estensione modelproj) in una soluzione del livello.  
   
-         Ogni modello è ora visibile in due soluzioni: la relativa soluzione principale e la soluzione Architecture.  
+       Ogni modello è ora visibile in due soluzioni: la relativa soluzione principale e la soluzione Architecture.  
   
-    3.  Aggiungere un diagramma livello al progetto di modello di ogni livello. Iniziare con una copia del diagramma livello Architecture. È possibile eliminare le parti che non sono dipendenze del diagramma livello.  
+   3. Aggiungere un diagramma livello al progetto di modello di ogni livello. Iniziare con una copia del diagramma livello Architecture. È possibile eliminare le parti che non sono dipendenze del diagramma livello.  
   
-         È anche possibile aggiungere diagrammi livello che rappresentano la struttura dettagliata del livello specifico.  
+       È anche possibile aggiungere diagrammi livello che rappresentano la struttura dettagliata del livello specifico.  
   
-         Questi diagrammi vengono usati per convalidare il codice sviluppato nel livello.  
+       Questi diagrammi vengono usati per convalidare il codice sviluppato nel livello.  
   
-    4.  Nella soluzione Architecture modificare i requisiti e i modelli di progettazione di tutti i livelli tramite Visual Studio.  
+   4. Nella soluzione Architecture modificare i requisiti e i modelli di progettazione di tutti i livelli tramite Visual Studio.  
   
-         Nella soluzione di ogni livello sviluppare il codice relativo al livello specifico, facendo riferimento al modello. Se si ritiene sufficiente eseguire lo sviluppo senza usare lo stesso computer per aggiornare il modello, è possibile leggere il modello e sviluppare codice usando versioni di Visual Studio che non consentono di creare modelli. È anche possibile generare codice dal modello in queste versioni.  
+       Nella soluzione di ogni livello sviluppare il codice relativo al livello specifico, facendo riferimento al modello. Se si ritiene sufficiente eseguire lo sviluppo senza usare lo stesso computer per aggiornare il modello, è possibile leggere il modello e sviluppare codice usando versioni di Visual Studio che non consentono di creare modelli. È anche possibile generare codice dal modello in queste versioni.  
   
-     Questo metodo assicura che non ci saranno interferenze da parte degli sviluppatori che modificano contemporaneamente i modelli di livello.  
+      Questo metodo assicura che non ci saranno interferenze da parte degli sviluppatori che modificano contemporaneamente i modelli di livello.  
   
-     Tuttavia, poiché i modelli sono separati, è difficile fare riferimento a concetti comuni. Ogni modello deve disporre di una copia distinta degli elementi degli altri livelli e dell'architettura dai quali dipende. Il diagramma livello di ogni livello deve essere costantemente sincronizzato con il diagramma livello Architecture. È difficile mantenere la sincronizzazione quando questi elementi sono soggetti a modifica, anche se è possibile sviluppare appositi strumenti a questo scopo.  
+      Tuttavia, poiché i modelli sono separati, è difficile fare riferimento a concetti comuni. Ogni modello deve disporre di una copia distinta degli elementi degli altri livelli e dell'architettura dai quali dipende. Il diagramma livello di ogni livello deve essere costantemente sincronizzato con il diagramma livello Architecture. È difficile mantenere la sincronizzazione quando questi elementi sono soggetti a modifica, anche se è possibile sviluppare appositi strumenti a questo scopo.  
   
-    ###### <a name="to-use-a-separate-package-for-each-layer"></a>Per usare un pacchetto separato per ogni livello  
+   ###### <a name="to-use-a-separate-package-for-each-layer"></a>Per usare un pacchetto separato per ogni livello  
   
-    1.  Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In Esplora soluzioni, fare clic sul nodo della soluzione, scegliere **Add**, quindi fare clic su **progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.  
+   1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In Esplora soluzioni, fare clic sul nodo della soluzione, scegliere **Add**, quindi fare clic su **progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.  
   
-    2.  Nel modello UML condiviso creare un pacchetto per ogni livello. In Esplora soluzioni selezionare il progetto di modello. In Esplora modelli UML, fare clic sul nodo radice del modello, scegliere **Add**, quindi fare clic su **pacchetto**.  
+   2. Nel modello UML condiviso creare un pacchetto per ogni livello. In Esplora soluzioni selezionare il progetto di modello. In Esplora modelli UML, fare clic sul nodo radice del modello, scegliere **Add**, quindi fare clic su **pacchetto**.  
   
-         Ogni pacchetto conterrà i diagrammi UML che descrivono i requisiti e la progettazione del livello corrispondente.  
+       Ogni pacchetto conterrà i diagrammi UML che descrivono i requisiti e la progettazione del livello corrispondente.  
   
-    3.  Se necessario, aggiungere diagrammi livello locali per la struttura interna di ogni livello.  
+   3. Se necessario, aggiungere diagrammi livello locali per la struttura interna di ogni livello.  
   
-     Questo metodo consente agli elementi di progettazione di ogni livello di fare riferimento direttamente agli elementi degli altri livelli e dell'architettura comune da cui dipendono.  
+      Questo metodo consente agli elementi di progettazione di ogni livello di fare riferimento direttamente agli elementi degli altri livelli e dell'architettura comune da cui dipendono.  
   
-     Anche se è possibile che operazioni simultanee su pacchetti diversi causino alcuni conflitti, questi risulteranno abbastanza facili da gestire, in quanto i pacchetti vengono archiviati in file separati. La difficoltà principale si verifica quando si elimina un elemento a cui viene fatto riferimento in un pacchetto dipendente. Per altre informazioni, vedere [gestire modelli e diagrammi nel controllo della versione](../modeling/manage-models-and-diagrams-under-version-control.md).  
+      Anche se è possibile che operazioni simultanee su pacchetti diversi causino alcuni conflitti, questi risulteranno abbastanza facili da gestire, in quanto i pacchetti vengono archiviati in file separati. La difficoltà principale si verifica quando si elimina un elemento a cui viene fatto riferimento in un pacchetto dipendente. Per altre informazioni, vedere [gestire modelli e diagrammi nel controllo della versione](../modeling/manage-models-and-diagrams-under-version-control.md).  
   
 ## <a name="creating-architecture-templates"></a>Creazione di modelli dell'architettura  
  Nella pratica, non si creeranno tutte le soluzioni di Visual Studio contemporaneamente, ma se ne aggiungeranno di nuove man mano che il progetto procede. Probabilmente si userà anche la stessa struttura della soluzione nei progetti successivi.  Per velocizzare la creazione di nuove soluzioni, è possibile creare un modello di soluzione o di progetto. È possibile acquisire il modello in un'estensione VSIX ( Visual Studio Integration Extension) per facilitarne la distribuzione e l'installazione in altri computer.  

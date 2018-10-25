@@ -13,12 +13,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a918b8077693ea199c20e776eaddc57c79b3975a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77243f69cedbd340ee91354ef49651e31605e04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845368"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolamento del codice sottoposto a test con Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Microsoft Fakes consente di isolare il codice di cui si sta eseguendo il test so
   
  Fakes è di due tipi:  
   
--   Uno [stub](#stubs) sostituisce una classe con un componente di dimensioni ridotte che implementa la stessa interfaccia.  Per usare gli stub, è necessario progettare l'applicazione in modo che ogni componente dipenda solo dalle interfacce e non da altri componenti. Il termine "componente" indica una classe o un gruppo di classi progettate e aggiornate insieme che sono generalmente contenute in un assembly.  
+- Uno [stub](#stubs) sostituisce una classe con un componente di dimensioni ridotte che implementa la stessa interfaccia.  Per usare gli stub, è necessario progettare l'applicazione in modo che ogni componente dipenda solo dalle interfacce e non da altri componenti. Il termine "componente" indica una classe o un gruppo di classi progettate e aggiornate insieme che sono generalmente contenute in un assembly.  
   
--   Uno [shim](#shims) modifica il codice compilato dell'applicazione in fase di esecuzione in modo tale che, invece di effettuare la chiamata al metodo specificato, esegue il codice dello shim fornito dal test. Gli shim possono essere usati per sostituire le chiamate agli assembly che non si possono modificare, ad esempio gli assembly .NET.  
+- Uno [shim](#shims) modifica il codice compilato dell'applicazione in fase di esecuzione in modo tale che, invece di effettuare la chiamata al metodo specificato, esegue il codice dello shim fornito dal test. Gli shim possono essere usati per sostituire le chiamate agli assembly che non si possono modificare, ad esempio gli assembly .NET.  
   
- ![Fakes sostituisce altri componenti](../test/media/fakes-2.png "Fakes-2")  
+  ![Fakes sostituisce altri componenti](../test/media/fakes-2.png "Fakes-2")  
   
- **Requisiti**  
+  **Requisiti**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="choosing-between-stub-and-shim-types"></a>Scelta tra i tipi stub e shim  
  In genere, un progetto di Visual Studio viene considerato un componente perché le classi vengono sviluppate e aggiornate contemporaneamente. Considerare l'uso di stub e shim per le chiamate che il progetto effettua ad altri progetti della soluzione o ad altri assembly a cui fa riferimento.  
@@ -168,76 +168,76 @@ Microsoft Fakes consente di isolare il codice di cui si sta eseguendo il test so
   
  Per usare gli shim, non è necessario modificare il codice dell'applicazione o scriverlo in un modo particolare.  
   
-1.  **Aggiungere l'assembly Fakes**  
+1. **Aggiungere l'assembly Fakes**  
   
-     In Esplora soluzioni aprire i riferimenti del progetto di unit test e selezionare il riferimento all'assembly che contiene il metodo che si desiderare camuffare. In questo esempio la classe `DateTime` si trova in **System.dll**.  Per visualizzare i riferimenti in un progetto di Visual Basic, scegliere **Mostra tutti i file**.  
+    In Esplora soluzioni aprire i riferimenti del progetto di unit test e selezionare il riferimento all'assembly che contiene il metodo che si desiderare camuffare. In questo esempio la classe `DateTime` si trova in **System.dll**.  Per visualizzare i riferimenti in un progetto di Visual Basic, scegliere **Mostra tutti i file**.  
   
-     Scegliere **Aggiungi assembly Fakes**.  
+    Scegliere **Aggiungi assembly Fakes**.  
   
-2.  **Inserire uno shim in uno ShimsContext**  
+2. **Inserire uno shim in uno ShimsContext**  
   
-    ```csharp  
-    [TestClass]  
-    public class TestClass1  
-    {   
-            [TestMethod]  
-            public void TestCurrentYear()  
-            {  
-                int fixedYear = 2000;  
+   ```csharp  
+   [TestClass]  
+   public class TestClass1  
+   {   
+           [TestMethod]  
+           public void TestCurrentYear()  
+           {  
+               int fixedYear = 2000;  
   
-                // Shims can be used only in a ShimsContext:  
-                using (ShimsContext.Create())  
-                {  
-                  // Arrange:  
-                    // Shim DateTime.Now to return a fixed date:  
-                    System.Fakes.ShimDateTime.NowGet =   
-                    () =>  
-                    { return new DateTime(fixedYear, 1, 1); };  
+               // Shims can be used only in a ShimsContext:  
+               using (ShimsContext.Create())  
+               {  
+                 // Arrange:  
+                   // Shim DateTime.Now to return a fixed date:  
+                   System.Fakes.ShimDateTime.NowGet =   
+                   () =>  
+                   { return new DateTime(fixedYear, 1, 1); };  
   
-                    // Instantiate the component under test:  
-                    var componentUnderTest = new MyComponent();  
+                   // Instantiate the component under test:  
+                   var componentUnderTest = new MyComponent();  
   
-                  // Act:  
-                    int year = componentUnderTest.GetTheCurrentYear();  
+                 // Act:  
+                   int year = componentUnderTest.GetTheCurrentYear();  
   
-                  // Assert:   
-                    // This will always be true if the component is working:  
-                    Assert.AreEqual(fixedYear, year);  
-                }  
-            }  
-    }  
+                 // Assert:   
+                   // This will always be true if the component is working:  
+                   Assert.AreEqual(fixedYear, year);  
+               }  
+           }  
+   }  
   
-    ```  
+   ```  
   
-    ```vb  
-    <TestClass()> _  
-    Public Class TestClass1  
-        <TestMethod()> _  
-        Public Sub TestCurrentYear()  
-            Using s = Microsoft.QualityTools.Testing.Fakes.ShimsContext.Create()  
-                Dim fixedYear As Integer = 2000  
-                ' Arrange:  
-                ' Detour DateTime.Now to return a fixed date:  
-                System.Fakes.ShimDateTime.NowGet = _  
-                    Function() As DateTime  
-                        Return New DateTime(fixedYear, 1, 1)  
-                    End Function  
+   ```vb  
+   <TestClass()> _  
+   Public Class TestClass1  
+       <TestMethod()> _  
+       Public Sub TestCurrentYear()  
+           Using s = Microsoft.QualityTools.Testing.Fakes.ShimsContext.Create()  
+               Dim fixedYear As Integer = 2000  
+               ' Arrange:  
+               ' Detour DateTime.Now to return a fixed date:  
+               System.Fakes.ShimDateTime.NowGet = _  
+                   Function() As DateTime  
+                       Return New DateTime(fixedYear, 1, 1)  
+                   End Function  
   
-                ' Instantiate the component under test:  
-                Dim componentUnderTest = New MyComponent()  
-                ' Act:  
-                Dim year As Integer = componentUnderTest.GetTheCurrentYear  
-                ' Assert:   
-                ' This will always be true if the component is working:  
-                Assert.AreEqual(fixedYear, year)  
-            End Using  
-        End Sub  
-    End Class  
-    ```  
+               ' Instantiate the component under test:  
+               Dim componentUnderTest = New MyComponent()  
+               ' Act:  
+               Dim year As Integer = componentUnderTest.GetTheCurrentYear  
+               ' Assert:   
+               ' This will always be true if the component is working:  
+               Assert.AreEqual(fixedYear, year)  
+           End Using  
+       End Sub  
+   End Class  
+   ```  
   
-     I nomi delle classi shim vengono creati aggiungendo un prefisso `Fakes.Shim` al nome del tipo originale. I nomi dei parametri vengono aggiunti al nome del metodo. Non è necessario aggiungere riferimenti ad assembly a System.Fakes.  
+    I nomi delle classi shim vengono creati aggiungendo un prefisso `Fakes.Shim` al nome del tipo originale. I nomi dei parametri vengono aggiunti al nome del metodo. Non è necessario aggiungere riferimenti ad assembly a System.Fakes.  
   
- Nell'esempio precedente viene usato uno shim come metodo statico. Per usare uno shim per un metodo di istanza, scrivere `AllInstances` tra il nome del tipo e il nome del metodo:  
+   Nell'esempio precedente viene usato uno shim come metodo statico. Per usare uno shim per un metodo di istanza, scrivere `AllInstances` tra il nome del tipo e il nome del metodo:  
   
 ```  
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  

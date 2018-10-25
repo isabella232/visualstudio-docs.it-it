@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByLinenum | Documenti Microsoft
+title: Findlinesbylinenum | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0cfcda8a48278abd8420e2c23954f5f7a22203
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 44a30929e3d6fbef3fb276fc8b468df4e8e5621c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878869"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-Determina i numeri di riga del modulo che si trova il numero di riga specificato in un file di origine all'interno o in prossimità.  
+Determina i numeri di riga di modulo che il numero di riga specificato in un file di origine si trova all'interno o in prossimità.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,19 +38,19 @@ HRESULT findLinesByLinenum (
   
 #### <a name="parameters"></a>Parametri  
  `compiland`  
- [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il modulo in cui cercare i numeri di riga. Questo parametro non può essere `NULL`.  
+ [in] Un' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il modulo in cui cercare i numeri di riga. Questo parametro non può essere `NULL`.  
   
  `file`  
- [in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) oggetto che rappresenta il file di origine eseguire la ricerca. Questo parametro non può essere `NULL`.  
+ [in] Un' [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) oggetto che rappresenta il file di origine per eseguire la ricerca. Questo parametro non può essere `NULL`.  
   
  `linenum`  
  [in] Specifica un numero di riga in base uno.  
   
 > [!NOTE]
->  Non è possibile utilizzare zero per specificare tutte le righe (utilizzare il [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) metodo per trovare tutte le righe).  
+>  È possibile usare zero per specificare tutte le righe (usare il [Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) metodo per trovare tutte le righe).  
   
  `column`  
- [in] Specifica il numero di colonna. Utilizzare zero per specificare tutte le colonne. Una colonna è un offset di byte in una riga.  
+ [in] Specifica il numero di colonna. Usare zero per specificare tutte le colonne. Una colonna è un offset di byte in una riga.  
   
  `ppResult`  
  [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta che contiene un elenco di numeri di riga recuperati.  
@@ -59,7 +59,7 @@ HRESULT findLinesByLinenum (
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come aprire un file di origine, enumerare i moduli forniti da questo file e individuare i numeri di riga nel file di origine in cui viene avviata ogni modulo.  
+ Nell'esempio seguente viene illustrato come aprire un file di origine, enumerare i moduli forniti da questo file e individuare i numeri di riga nel file di origine in cui inizia ogni compilando.  
   
 ```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  

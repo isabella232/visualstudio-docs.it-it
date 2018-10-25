@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2421a1f39f2969563bc10a43367936ae499fac30
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863269"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Il pacchetto e distribuire soluzioni di SharePoint
   In genere, una soluzione di SharePoint viene distribuita in un server SharePoint tramite file di pacchetto (con estensione wsp). È possibile usare Visual Studio per organizzare gli elementi di progetto SharePoint in funzionalità e creare un pacchetto per distribuire le funzionalità di SharePoint.  
@@ -67,23 +67,23 @@ ms.locfileid: "37118987"
 ### <a name="packaging-explorer"></a>Esplora pacchetti  
  Per completare la progettazione di funzionalità e pacchetto, è possibile usare Esplora pacchetti per raggruppare i file di SharePoint in funzionalità e i pacchetti. Inoltre, è possibile visualizzare la visualizzazione gerarchica del progetto SharePoint pacchetti, funzionalità, gli elementi e i file. Esplora pacchetti è una finestra degli strumenti che è possibile usare per completare le attività seguenti:  
   
--   Aprire elementi di progetto SharePoint e file.  
+- Aprire elementi di progetto SharePoint e file.  
   
--   Trascinare e rilasciare gli elementi di progetto SharePoint da una delle funzionalità a un'altra.  
+- Trascinare e rilasciare gli elementi di progetto SharePoint da una delle funzionalità a un'altra.  
   
--   Trascinare e rilasciare gli elementi di progetto SharePoint e le funzionalità da un pacchetto a un altro.  
+- Trascinare e rilasciare gli elementi di progetto SharePoint e le funzionalità da un pacchetto a un altro.  
   
--   Aggiungere una nuova funzionalità a un pacchetto.  
+- Aggiungere una nuova funzionalità a un pacchetto.  
   
--   Aprire una finestra di progettazione di funzionalità o un pacchetto.  
+- Aprire una finestra di progettazione di funzionalità o un pacchetto.  
   
--   Convalidare le funzionalità e pacchetti.  
+- Convalidare le funzionalità e pacchetti.  
   
- Gli strumenti di sviluppo di SharePoint in Visual Studio hanno regole di convalida per garantire che il pacchetto della soluzione è formattato correttamente. Inoltre, le regole verificano che il *wsp* file della soluzione può essere correttamente distribuito e attivato in un server SharePoint. Per altre informazioni sullo schema XML per le funzionalità, vedere [schemi per funzionalità](http://go.microsoft.com/fwlink/?LinkID=169192).  
+  Gli strumenti di sviluppo di SharePoint in Visual Studio hanno regole di convalida per garantire che il pacchetto della soluzione è formattato correttamente. Inoltre, le regole verificano che il *wsp* file della soluzione può essere correttamente distribuito e attivato in un server SharePoint. Per altre informazioni sullo schema XML per le funzionalità, vedere [schemi per funzionalità](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
- È possibile aggiungere funzionalità personalizzate e regole di convalida del pacchetto per il sistema di progetto SharePoint. Per altre informazioni, vedere [procedura: creare funzionalità personalizzate e un pacchetto le regole di convalida per le soluzioni SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  È possibile aggiungere funzionalità personalizzate e regole di convalida del pacchetto per il sistema di progetto SharePoint. Per altre informazioni, vedere [procedura: creare funzionalità personalizzate e un pacchetto le regole di convalida per le soluzioni SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
- Per altre informazioni su Esplora pacchetti, vedere [procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando Esplora pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Per altre informazioni su Esplora pacchetti, vedere [procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando Esplora pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Esplora soluzioni
  È possibile usare Esplora soluzioni per esplorare e aprire i file del progetto SharePoint. Usare il menu di scelta rapida in Esplora soluzioni per aggiungere le funzionalità, i ricevitori di eventi e le risorse di funzionalità. Inoltre, è possibile aprire le finestre di progettazione di funzionalità e i progettisti di pacchetti per configurare le funzionalità e pacchetti per la distribuzione.  
@@ -100,13 +100,13 @@ ms.locfileid: "37118987"
   
  Ad esempio, per aggiungere un *XML* file a un progetto SharePoint, eseguire una di queste azioni:  
   
--   Aggiungere una cartella mappata di SharePoint "Layout" al progetto. Verrà creato nella **Esplora soluzioni** una cartella denominata **layout** che contiene una sottocartella del progetto. Aggiungere il *XML* file nella sottocartella di nuovo. Per impostazione predefinita, il file viene distribuito nel file System di SharePoint in *... \Template\Layouts.\\\<nome cartella >*. Per informazioni su come aggiungere cartelle mappate, vedere [procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+- Aggiungere una cartella mappata di SharePoint "Layout" al progetto. Verrà creato nella **Esplora soluzioni** una cartella denominata **layout** che contiene una sottocartella del progetto. Aggiungere il *XML* file nella sottocartella di nuovo. Per impostazione predefinita, il file viene distribuito nel file System di SharePoint in *... \Template\Layouts.\\\<nome cartella >*. Per informazioni su come aggiungere cartelle mappate, vedere [procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
--   Aggiungere il *. XML* file nella cartella di un elemento di progetto SharePoint e quindi modificare il **tipo di distribuzione** proprietà del *. XML* file da **NoDeployment**  a un altro, ad esempio impostando **RootFile** oppure **ElementFile**. Appropriato **tipo di distribuzione** impostazione varia a seconda del file e il progetto. Per altre informazioni sul **tipo di distribuzione** le impostazioni delle proprietà, vedere [soluzioni SharePoint sviluppare](../sharepoint/developing-sharepoint-solutions.md).  
+- Aggiungere il *. XML* file nella cartella di un elemento di progetto SharePoint e quindi modificare il **tipo di distribuzione** proprietà del *. XML* file da **NoDeployment**  a un altro, ad esempio impostando **RootFile** oppure **ElementFile**. Appropriato **tipo di distribuzione** impostazione varia a seconda del file e il progetto. Per altre informazioni sul **tipo di distribuzione** le impostazioni delle proprietà, vedere [soluzioni SharePoint sviluppare](../sharepoint/developing-sharepoint-solutions.md).  
   
- Se un file aggiunto non è applicabile ad alcun progetto specifico della soluzione, è possibile aggiungere un progetto SharePoint vuoto per la soluzione e quindi aggiungervi gli altri file. In alternativa per la distribuzione di file in SharePoint, in particolare per il database del contenuto, è possibile aggiungere un modulo al progetto e quindi aggiungere i file del modulo. Per altre informazioni, vedere [usare i moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+  Se un file aggiunto non è applicabile ad alcun progetto specifico della soluzione, è possibile aggiungere un progetto SharePoint vuoto per la soluzione e quindi aggiungervi gli altri file. In alternativa per la distribuzione di file in SharePoint, in particolare per il database del contenuto, è possibile aggiungere un modulo al progetto e quindi aggiungere i file del modulo. Per altre informazioni, vedere [usare i moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Vedere anche
  [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Compilare ed eseguire il debug di soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   

@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd99df10b7cfeefea38bd8399c3d21961d65d205
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72aaaa4a3eb75043f4a2cf3bdd20352bdd2af93b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856691"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Usare…  
  -   Ogni volta che è necessario creare un menu personalizzato.  
   
--   Quando un nuovo componente dell'interfaccia utente deve corrispondere ai menu di Visual Studio.  
+- Quando un nuovo componente dell'interfaccia utente deve corrispondere ai menu di Visual Studio.  
   
- Non usare...  
- Il colore di sfondo da solo. Usare sempre la combinazione sfondo/primo piano specificata.  
+  Non usare...  
+  Il colore di sfondo da solo. Usare sempre la combinazione sfondo/primo piano specificata.  
   
 #### <a name="menu-title"></a>Titolo del menu  
  I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo, nonché da un glifo facoltativo, in genere quando il menu si trova in una barra dei comandi.  
@@ -64,137 +64,137 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per qualsiasi elemento che non deve corrispondere sempre al titolo del menu.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Titolo menu predefinito](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")  
+  ![Titolo menu predefinito](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")  
   
- **Titolo menu**  
+  **Titolo menu**  
   
- Sfondo  
+  Sfondo  
   
- nessuno  
+  nessuno  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![Titolo menu con glifo predefinito](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")  
+  ![Titolo menu con glifo predefinito](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")  
   
- **Titolo menu con glifo**  
+  **Titolo menu con glifo**  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.CommandBarMenuGlyph`  
+  `Environment.CommandBarMenuGlyph`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Titolo menu al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")  
+  ![Titolo menu al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")  
   
- **Titolo menu**  
+  **Titolo menu**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- ![Titolo menu con glifo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")  
+  ![Titolo menu con glifo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")  
   
- **Titolo menu con glifo**  
+  **Titolo menu con glifo**  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.CommandBarMenuMouseOverGlyph`  
+  `Environment.CommandBarMenuMouseOverGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Titolo menu selezionato](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")  
+  ![Titolo menu selezionato](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")  
   
- **Titolo menu**  
+  **Titolo menu**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![Titolo menu con glifo premuto](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")  
+  ![Titolo menu con glifo premuto](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")  
   
- **Titolo menu con glifo**  
+  **Titolo menu con glifo**  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.CommandBarMenuMouseDownGlyph`  
+  `Environment.CommandBarMenuMouseDownGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- Solo lati sinistro, superiore e destro.  
+  Solo lati sinistro, superiore e destro.  
   
- **Disabilitato**  
+  **Disabilitato**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Titolo menu con glifo disabilitato](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")  
+  ![Titolo menu con glifo disabilitato](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")  
   
- **Titolo menu con glifo**  
+  **Titolo menu con glifo**  
   
- Sfondo  
+  Sfondo  
   
- nessuno  
+  nessuno  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Bordo  
+  Bordo  
   
- Nessuno  
+  Nessuno  
   
 #### <a name="menu"></a>Menu  
  Una singola voce di menu è costituita dal testo del menu e da un'icona facoltativa, una casella di controllo o un glifo del sottomenu. Il colore di sfondo e del testo cambiano al passaggio del mouse. Questo token di colore è una coppia sfondo/primo piano.  
@@ -207,153 +207,153 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per qualsiasi elenco a discesa presente in un altro contesto.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Menu predefinito](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")  
+  ![Menu predefinito](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")  
   
- **Menu**  
+  **Menu**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Primo piano (glifo del sottomenu)  
+  Primo piano (glifo del sottomenu)  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- Sfondo del canale delle icone  
+  Sfondo del canale delle icone  
   
- `Environment.CommandBarMenuIconBackground`  
+  `Environment.CommandBarMenuIconBackground`  
   
- Separatore  
+  Separatore  
   
- `Environment.CommandBarMenuSeparator`  
+  `Environment.CommandBarMenuSeparator`  
   
- Ombreggiatura  
+  Ombreggiatura  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- ![Menu scelto](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")  
+  ![Menu scelto](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")  
   
- **Checked**  
+  **Checked**  
   
- Segno di spunta  
+  Segno di spunta  
   
- `Environment.CommandBarCheckBox`  
+  `Environment.CommandBarCheckBox`  
   
- Sfondo del segno di spunta  
+  Sfondo del segno di spunta  
   
- `Environment.CommandBarSelectedIcon`  
+  `Environment.CommandBarSelectedIcon`  
   
- ![Menu selezionato](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")  
+  ![Menu selezionato](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")  
   
- **selezionato**  
+  **selezionato**  
   
- Sfondo dell'icona  
+  Sfondo dell'icona  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- Bordo dell'icona  
+  Bordo dell'icona  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Al passaggio del mouse dal menu](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")  
+  ![Al passaggio del mouse dal menu](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")  
   
- **Voce di menu**  
+  **Voce di menu**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- Primo piano (glifo del sottomenu)  
+  Primo piano (glifo del sottomenu)  
   
- `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
+  `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
   
- ![Al passaggio del mouse dal menu controllato](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")  
+  ![Al passaggio del mouse dal menu controllato](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")  
   
- **Checked**  
+  **Checked**  
   
- Segno di spunta  
+  Segno di spunta  
   
- `Environment.CommandBarCheckBoxMouseOver`  
+  `Environment.CommandBarCheckBoxMouseOver`  
   
- Sfondo del segno di spunta  
+  Sfondo del segno di spunta  
   
- `Environment.CommandBarHoverOverSelectedIcon`  
+  `Environment.CommandBarHoverOverSelectedIcon`  
   
- ![Al passaggio del mouse dal menu selezionato](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")  
+  ![Al passaggio del mouse dal menu selezionato](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")  
   
- **selezionato**  
+  **selezionato**  
   
- Sfondo dell'icona  
+  Sfondo dell'icona  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- Bordo dell'icona  
+  Bordo dell'icona  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- **Disabilitato**  
+  **Disabilitato**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Menu disabilitato](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")  
+  ![Menu disabilitato](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")  
   
- Voce di menu  
+  Voce di menu  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Primo piano (glifo del sottomenu)  
+  Primo piano (glifo del sottomenu)  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- ![Menu disabilitato selezionato](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")  
+  ![Menu disabilitato selezionato](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")  
   
- Selezionato con segno di spunta  
+  Selezionato con segno di spunta  
   
- Segno di spunta  
+  Segno di spunta  
   
- `Environment.CommandBarCheckBoxDisabled`  
+  `Environment.CommandBarCheckBoxDisabled`  
   
- Sfondo del segno di spunta  
+  Sfondo del segno di spunta  
   
- `Environment.CommandBarSelectedIconDisabled`  
+  `Environment.CommandBarSelectedIconDisabled`  
   
 ### <a name="command-bar"></a>Barra dei comandi  
  La barra dei comandi può essere visualizzata in più posizioni all'interno dell'IDE di Visual Studio, in particolare nello scaffale dei comandi e come incorporata nelle finestre degli strumenti e dei documenti.  
@@ -383,33 +383,33 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per gli elementi dell'interfaccia utente che non sono simili a una barra dei comandi.  
   
--   Per i componenti della barra dei comandi diversi da quelli per cui sono specificati i nomi di token.  
+- Per i componenti della barra dei comandi diversi da quelli per cui sono specificati i nomi di token.  
   
- **Predefinito** (nessun altro stato)  
+  **Predefinito** (nessun altro stato)  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarGradientBegin`  
+  `Environment.CommandBarGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarToolBarBorder`  
+  `Environment.CommandBarToolBarBorder`  
   
- Quadratino di trascinamento  
+  Quadratino di trascinamento  
   
- `Environment.CommandBarDragHandle`  
+  `Environment.CommandBarDragHandle`  
   
- Separatore  
+  Separatore  
   
- `Environment.CommandBarToolBarSeparator`  
+  `Environment.CommandBarToolBarSeparator`  
   
- `Environment.CommandBarToolBarSeparatorHighlight`  
+  `Environment.CommandBarToolBarSeparatorHighlight`  
   
 #### <a name="command-icons"></a>Icone dei comandi  
  ![Icona del comando con linea rossa](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")  
@@ -422,139 +422,139 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per i controlli che hanno nomi di token propri.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Icona predefinita di comando](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")  
+  ![Icona predefinita di comando](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")  
   
- **Default**  
+  **Default**  
   
- Sfondo  
+  Sfondo  
   
- N/D (eredita dallo sfondo della barra dei comandi)  
+  N/D (eredita dallo sfondo della barra dei comandi)  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Bordo  
+  Bordo  
   
- N/D  
+  N/D  
   
- ![Comando icona predefinita selezionato](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")  
+  ![Comando icona predefinita selezionato](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")  
   
- **selezionato**  
+  **selezionato**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextSelected`  
+  `Environment.CommandBarTextSelected`  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **Al passaggio del mouse e stato attivo**  
+  **Al passaggio del mouse e stato attivo**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Al passaggio del mouse sull'icona di comando](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")  
+  ![Al passaggio del mouse sull'icona di comando](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")  
   
- **Standard al passaggio del mouse**  
+  **Standard al passaggio del mouse**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- ![Comando al passaggio del mouse sull'icona selezionata](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")  
+  ![Comando al passaggio del mouse sull'icona selezionata](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")  
   
- **Selezionato al passaggio del mouse**  
+  **Selezionato al passaggio del mouse**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextHoverOverSelected`  
+  `Environment.CommandBarTextHoverOverSelected`  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Icona del comando selezionata](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")  
+  ![Icona del comando selezionata](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")  
   
- **Icona del comando premuta**  
+  **Icona del comando premuta**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- **Disabilitato**  
+  **Disabilitato**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Icona del comando disabilitata](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")  
+  ![Icona del comando disabilitata](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")  
   
- **Icona del comando disabilitata**  
+  **Icona del comando disabilitata**  
   
- Sfondo  
+  Sfondo  
   
- N/D (eredita dallo sfondo della barra dei comandi)  
+  N/D (eredita dallo sfondo della barra dei comandi)  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Bordo  
+  Bordo  
   
- N/D  
+  N/D  
   
 ####  <a name="BKMK_CommandComboBox"></a> Casella combinata  
   
@@ -566,242 +566,242 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Usare…  
  -   Quando si compilano caselle combinate personalizzate.  
   
--   Quando si crea un controllo della barra dei comandi simile a una casella combinata.  
+- Quando si crea un controllo della barra dei comandi simile a una casella combinata.  
   
- Non usare...  
- -   Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della barra dei comandi.  
+  Non usare...  
+  -   Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della barra dei comandi.  
   
--   Quando si ha accesso a una casella combinata con stile.  
+- Quando si ha accesso a una casella combinata con stile.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Campo di input di casella combinata](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")  
+  ![Campo di input di casella combinata](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")  
   
- **Campo di input**  
+  **Campo di input**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ComboBoxBackground`  
+  `Environment.ComboBoxBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxText`  
+  `Environment.ComboBoxText`  
   
- Bordo  
+  Bordo  
   
- `Environment.ComboBoxBorder`  
+  `Environment.ComboBoxBorder`  
   
- Separatore  
+  Separatore  
   
- Nessun separatore  
+  Nessun separatore  
   
- ![Rilascio di casella combinata&#45;pulsante giù](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")  
+  ![Rilascio di casella combinata&#45;pulsante giù](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- N/D (eredita)  
+  N/D (eredita)  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ComboBoxGlyph`  
+  `Environment.ComboBoxGlyph`  
   
- ![Casella combinata&#47;drop&#45;elenco a discesa](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")  
+  ![Casella combinata&#47;drop&#45;elenco a discesa](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")  
   
- **Elenco a discesa**  
+  **Elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ComboBoxPopupBackgroundBegin`  
+  `Environment.ComboBoxPopupBackgroundBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- Bordo  
+  Bordo  
   
- `Environment.ComboBoxPopupBorder`  
+  `Environment.ComboBoxPopupBorder`  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Campo di input casella combinata al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")  
+  ![Campo di input casella combinata al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")  
   
- **Campo di input**  
+  **Campo di input**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ComboBoxMouseOverBackgroundBegin`  
+  `Environment.ComboBoxMouseOverBackgroundBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxMouseOverText`  
+  `Environment.ComboBoxMouseOverText`  
   
- Bordo  
+  Bordo  
   
- `Environment.ComboBoxMouseOverBorder`  
+  `Environment.ComboBoxMouseOverBorder`  
   
- Separatore  
+  Separatore  
   
- `Environment.ComboBoxMouseOverSeparator`  
+  `Environment.ComboBoxMouseOverSeparator`  
   
- ![Casella combinata&#47;drop&#45;pulsante al passaggio del mouse giù](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")  
+  ![Casella combinata&#47;drop&#45;pulsante al passaggio del mouse giù](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ComboBoxButtonMouseOverBackground`  
+  `Environment.ComboBoxButtonMouseOverBackground`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ComboBoxMouseOverGlyph`  
+  `Environment.ComboBoxMouseOverGlyph`  
   
- ![Casella combinata&#47;drop&#45;elenco al passaggio del mouse verso il basso](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")  
+  ![Casella combinata&#47;drop&#45;elenco al passaggio del mouse verso il basso](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")  
   
- **Elenco a discesa**  
+  **Elenco a discesa**  
   
- Sfondo (voce di menu)  
+  Sfondo (voce di menu)  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- Bordo (voce di menu)  
+  Bordo (voce di menu)  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **Con stato attivo**  
+  **Con stato attivo**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Color.category  
+  Nome token: Color.category  
   
- ![Campo di input casella combinata con stato attivato](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")  
+  ![Campo di input casella combinata con stato attivato](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")  
   
- **Campo di input**  
+  **Campo di input**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ComboBoxFocusedBackground`  
+  `Environment.ComboBoxFocusedBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxFocusedText`  
+  `Environment.ComboBoxFocusedText`  
   
- Bordo  
+  Bordo  
   
- `Environment.ComboBoxFocusedBorder`  
+  `Environment.ComboBoxFocusedBorder`  
   
- Separatore  
+  Separatore  
   
- `Environment.ComboBoxFocusedButtonSeparator`  
+  `Environment.ComboBoxFocusedButtonSeparator`  
   
- ![Casella combinata&#47;drop&#45;verso il basso sul pulsante con stato attivato](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")  
+  ![Casella combinata&#47;drop&#45;verso il basso sul pulsante con stato attivato](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ComboBoxFocusedButtonBackground`  
+  `Environment.ComboBoxFocusedButtonBackground`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ComboBoxFocusedGlyph`  
+  `Environment.ComboBoxFocusedGlyph`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Color.category  
+  Nome token: Color.category  
   
- ![Campo di input casella combinata premuto](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")  
+  ![Campo di input casella combinata premuto](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")  
   
- **Campo di input**  
+  **Campo di input**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ComboBoxMouseDownBackground`  
+  `Environment.ComboBoxMouseDownBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxMouseDownText`  
+  `Environment.ComboBoxMouseDownText`  
   
- Bordo  
+  Bordo  
   
- `Environment.ComboBoxMouseDownBorder`  
+  `Environment.ComboBoxMouseDownBorder`  
   
- Separatore  
+  Separatore  
   
- `Environment.ComboBoxMouseDownSeparator`  
+  `Environment.ComboBoxMouseDownSeparator`  
   
- ![Casella combinata&#47;drop&#45;verso il basso la pressione del pulsante](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")  
+  ![Casella combinata&#47;drop&#45;verso il basso la pressione del pulsante](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ComboBoxButtonMouseDownBackground`  
+  `Environment.ComboBoxButtonMouseDownBackground`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ComboBoxMouseDownGlyph`  
+  `Environment.ComboBoxMouseDownGlyph`  
   
- **Disabilitato**  
+  **Disabilitato**  
   
- ![Campo di input casella combinata disabilitata](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")  
+  ![Campo di input casella combinata disabilitata](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")  
   
- **Campo di input**  
+  **Campo di input**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ComboBoxDisabledBackground`  
+  `Environment.ComboBoxDisabledBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxDisabledText`  
+  `Environment.ComboBoxDisabledText`  
   
- Bordo  
+  Bordo  
   
- `Environment.ComboBoxDisabledBorder`  
+  `Environment.ComboBoxDisabledBorder`  
   
- Separatore  
+  Separatore  
   
- Nessun separatore  
+  Nessun separatore  
   
- ![Casella combinata&#47;drop&#45;pulsante disabilitato giù](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")  
+  ![Casella combinata&#47;drop&#45;pulsante disabilitato giù](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- nessuno  
+  nessuno  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ComboBoxDisabledGlyph`  
+  `Environment.ComboBoxDisabledGlyph`  
   
 ####  <a name="BKMK_CommandDropDown"></a> Elenco a discesa  
   
@@ -816,203 +816,203 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per qualsiasi elemento che non è simile a un elenco a discesa.  
   
--   Per caselle combinate o pulsanti di menu combinato.  
+- Per caselle combinate o pulsanti di menu combinato.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;a discesa il campo di selezione](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")  
+  ![Eliminare&#45;a discesa il campo di selezione](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")  
   
- **Campo di selezione**  
+  **Campo di selezione**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DropDownBackground`  
+  `Environment.DropDownBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `DropDownText`  
+  `DropDownText`  
   
- Bordo  
+  Bordo  
   
- `DropDownBorder`  
+  `DropDownBorder`  
   
- Separatore  
+  Separatore  
   
- Nessun separatore  
+  Nessun separatore  
   
- ![Eliminare&#45;pulsante giù](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")  
+  ![Eliminare&#45;pulsante giù](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- nessuno  
+  nessuno  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.DropDownGlyph`  
+  `Environment.DropDownGlyph`  
   
- ![Eliminare&#45;elenco a discesa](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")  
+  ![Eliminare&#45;elenco a discesa](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")  
   
- **Elenco a discesa**  
+  **Elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DropDownPopupBackgroundBegin`  
+  `Environment.DropDownPopupBackgroundBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- Bordo  
+  Bordo  
   
- `Environment.DropDownPopupBorder`  
+  `Environment.DropDownPopupBorder`  
   
- Ombreggiatura  
+  Ombreggiatura  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;a discesa il campo di selezione del mouse](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")  
+  ![Eliminare&#45;a discesa il campo di selezione del mouse](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")  
   
- **Campo di selezione**  
+  **Campo di selezione**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DropDownMouseOverBackgroundBegin`  
+  `Environment.DropDownMouseOverBackgroundBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.DropDownMouseOverText`  
+  `Environment.DropDownMouseOverText`  
   
- Bordo  
+  Bordo  
   
- `Environment.DropDownMouseOverBorder`  
+  `Environment.DropDownMouseOverBorder`  
   
- Separatore  
+  Separatore  
   
- `Environment.DropDownButtonMouseOverSeparator`  
+  `Environment.DropDownButtonMouseOverSeparator`  
   
- ![Eliminare&#45;pulsante del mouse giù](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")  
+  ![Eliminare&#45;pulsante del mouse giù](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DropDownButtonMouseOverBackground`  
+  `Environment.DropDownButtonMouseOverBackground`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.DropDownMouseOverGlyph`  
+  `Environment.DropDownMouseOverGlyph`  
   
- ![Eliminare&#45;elenco al passaggio del mouse verso il basso](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")  
+  ![Eliminare&#45;elenco al passaggio del mouse verso il basso](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")  
   
- **Elenco a discesa**  
+  **Elenco a discesa**  
   
- Sfondo (voce di menu)  
+  Sfondo (voce di menu)  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- Bordo (voce di menu)  
+  Bordo (voce di menu)  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;inattivo premuto campo di selezione](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")  
+  ![Eliminare&#45;inattivo premuto campo di selezione](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")  
   
- **Campo di selezione**  
+  **Campo di selezione**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DropDownMouseDownBackground`  
+  `Environment.DropDownMouseDownBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.DropDownMouseDownText`  
+  `Environment.DropDownMouseDownText`  
   
- Bordo  
+  Bordo  
   
- `Environment.DropDownMouseDownBorder`  
+  `Environment.DropDownMouseDownBorder`  
   
- Separatore  
+  Separatore  
   
- `Environment.DropDownButtonMouseDownSeparator`  
+  `Environment.DropDownButtonMouseDownSeparator`  
   
- ![Eliminare&#45;verso il basso la pressione del pulsante](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")  
+  ![Eliminare&#45;verso il basso la pressione del pulsante](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DropDownButtonMouseDownBackground`  
+  `Environment.DropDownButtonMouseDownBackground`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.DropDownMouseDownGlyph`  
+  `Environment.DropDownMouseDownGlyph`  
   
- **Disabilitato**  
+  **Disabilitato**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;a discesa il campo di selezione disabilitato](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")  
+  ![Eliminare&#45;a discesa il campo di selezione disabilitato](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DropDownDisabledBackground`  
+  `Environment.DropDownDisabledBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.DropDownDisabledText`  
+  `Environment.DropDownDisabledText`  
   
- Bordo  
+  Bordo  
   
- `Environment.DropDownDisabledBorder`  
+  `Environment.DropDownDisabledBorder`  
   
- Separatore  
+  Separatore  
   
- Nessun separatore  
+  Nessun separatore  
   
- ![Eliminare&#45;verso il basso sul pulsante disabilitato](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")  
+  ![Eliminare&#45;verso il basso sul pulsante disabilitato](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")  
   
- Sfondo  
+  Sfondo  
   
- N/D  
+  N/D  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.DropDownDisabledGlyph`  
+  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>Pulsante di menu combinato  
  I pulsanti di menu combinato condividono molti nomi di token con altri controlli della barra dei comandi, come pulsanti, menu e testo della barra dei comandi. Tutti i nomi di token dei pulsanti a discesa e di azione necessari vengono ripetuti qui per praticità. Gli elenchi a discesa dei pulsanti di menu combinato sono implementazioni dei [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)della barra dei comandi.  
@@ -1025,139 +1025,139 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per altri tipi di pulsanti.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Pulsante di menu combinato](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")  
+  ![Pulsante di menu combinato](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")  
   
- **Pulsante di menu combinato (predefinito)**  
+  **Pulsante di menu combinato (predefinito)**  
   
- Sfondo  
+  Sfondo  
   
- nessuno  
+  nessuno  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.CommandBarSplitButtonGlyph`  
+  `Environment.CommandBarSplitButtonGlyph`  
   
- Bordo  
+  Bordo  
   
- N/D  
+  N/D  
   
- Separatore  
+  Separatore  
   
- N/D  
+  N/D  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Pulsante di menu combinato al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")  
+  ![Pulsante di menu combinato al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")  
   
- **Pulsante di menu combinato (al passaggio del mouse)**  
+  **Pulsante di menu combinato (al passaggio del mouse)**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.CommandBarSplitButtonMouseOverGlyph`  
+  `Environment.CommandBarSplitButtonMouseOverGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- Separatore  
+  Separatore  
   
- `Environment.CommandBarSplitButtonSeparator`  
+  `Environment.CommandBarSplitButtonSeparator`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Pulsante di menu combinato premuto](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")  
+  ![Pulsante di menu combinato premuto](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")  
   
- **Pulsante di menu combinato (premuto)**  
+  **Pulsante di menu combinato (premuto)**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.CommandBarSplitButtonMouseDownGlyph`  
+  `Environment.CommandBarSplitButtonMouseDownGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- Separatore  
+  Separatore  
   
- N/D  
+  N/D  
   
- **Disabilitato**  
+  **Disabilitato**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Pulsante di menu combinato disabilitato](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")  
+  ![Pulsante di menu combinato disabilitato](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")  
   
- **Pulsante di menu combinato (disabilitato)**  
+  **Pulsante di menu combinato (disabilitato)**  
   
- Sfondo  
+  Sfondo  
   
- N/D  
+  N/D  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.ComboBoxItemTextInactive`  
+  `Environment.ComboBoxItemTextInactive`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Bordo  
+  Bordo  
   
- N/D  
+  N/D  
   
- Separatore  
+  Separatore  
   
- N/D  
+  N/D  
   
 #### <a name="more-options-and-overflow-buttons"></a>Pulsanti "Altre opzioni" e "Overflow"  
  Il pulsante "Altre opzioni" viene usato quando un gruppo della barra dei comandi può essere personalizzato aggiungendo o rimuovendo pulsanti della barra dei comandi correlati. Il pulsante "Overflow" viene visualizzato quando una barra dei comandi è troncata a causa della mancanza di spazio orizzontale e, dopo avervi fatto clic sopra, mostra un menu che contiene i pulsanti della barra dei comandi che non possono essere visualizzati. I colori per questi due pulsanti sono controllati dallo stesso set di nomi di token.  
@@ -1420,19 +1420,19 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
 #### <a name="open-document-tabs"></a>Schede dei documenti aperti  
  Per ogni documento aperto è presente una scheda nel canale delle schede dei documenti che ne visualizza il nome. I documenti possono essere selezionati o aperti in background e le rispettive schede riflettono questi stati:  
   
--   La scheda selezionata rappresenta il documento attualmente visualizzato nell'area dei documenti. Una scheda selezionata ha un bordo di documento che si estende fino al bordo superiore dell'area dei documenti.  
+- La scheda selezionata rappresenta il documento attualmente visualizzato nell'area dei documenti. Una scheda selezionata ha un bordo di documento che si estende fino al bordo superiore dell'area dei documenti.  
   
--   Le schede in secondo piano sono tutte le schede dei documenti diverse da quella attualmente selezionata. Se selezionate, diventano la scheda selezionata e acquisiscono tutti i colori di sfondo, del bordo e del testo da questi nomi di token.  
+- Le schede in secondo piano sono tutte le schede dei documenti diverse da quella attualmente selezionata. Se selezionate, diventano la scheda selezionata e acquisiscono tutti i colori di sfondo, del bordo e del testo da questi nomi di token.  
   
- ![Scheda documento aperto con linea rossa](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![Scheda documento aperto con linea rossa](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
   
- Usare…  
- Quando si creano schede dei documenti personalizzate.  
+  Usare…  
+  Quando si creano schede dei documenti personalizzate.  
   
- Non usare...  
- -   Per schede provvisorie (anteprima).  
+  Non usare...  
+  -   Per schede provvisorie (anteprima).  
   
--   Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
+- Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
   
 #### <a name="selected-tab"></a>Scheda selezionata  
  **Con stato attivo**  
@@ -1553,117 +1553,117 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per qualsiasi tipo di documento o scheda non provvisorio (anteprima).  
   
--   Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
+- Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
   
- **Scheda anteprima selezionata: con stato attivo**  
+  **Scheda anteprima selezionata: con stato attivo**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Scheda Anteprima con stato attivo](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")  
+  ![Scheda Anteprima con stato attivo](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")  
   
- **Scheda Anteprima con stato attivo**  
+  **Scheda Anteprima con stato attivo**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.FileTabProvisionalSelectedActive`  
+  `Environment.FileTabProvisionalSelectedActive`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.FileTabProvisionalSelectedActiveForeground`  
+  `Environment.FileTabProvisionalSelectedActiveForeground`  
   
- Border  
+  Border  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- Impostato sullo stesso colore dello sfondo.  
+  Impostato sullo stesso colore dello sfondo.  
   
- Bordo del documento  
+  Bordo del documento  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- **Scheda anteprima selezionata: con stato non attivo**  
+  **Scheda anteprima selezionata: con stato non attivo**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Scheda Anteprima con stato non attivo](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")  
+  ![Scheda Anteprima con stato non attivo](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")  
   
- **Scheda Anteprima con stato non attivo**  
+  **Scheda Anteprima con stato non attivo**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.FileTabProvisionalSelectedInactive`  
+  `Environment.FileTabProvisionalSelectedInactive`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.FileTabProvisionalSelectedInactiveForeground`  
+  `Environment.FileTabProvisionalSelectedInactiveForeground`  
   
- Bordo  
+  Bordo  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- Bordo del documento  
+  Bordo del documento  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- **Scheda Anteprima sfondo: predefinita**  
+  **Scheda Anteprima sfondo: predefinita**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Scheda Anteprima sfondo](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")  
+  ![Scheda Anteprima sfondo](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")  
   
- **Scheda sfondo della scheda di anteprima**  
+  **Scheda sfondo della scheda di anteprima**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.FileTabProvisionalInactive`  
+  `Environment.FileTabProvisionalInactive`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.FileTabProvisionalInactiveForeground`  
+  `Environment.FileTabProvisionalInactiveForeground`  
   
- Border  
+  Border  
   
- `Environment.FileTabProvisionalInactiveBorder`  
+  `Environment.FileTabProvisionalInactiveBorder`  
   
- Impostato sullo stesso colore dello sfondo.  
+  Impostato sullo stesso colore dello sfondo.  
   
- **Scheda Anteprima sfondo: passare il mouse**  
+  **Scheda Anteprima sfondo: passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Scheda Anteprima sfondo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")  
+  ![Scheda Anteprima sfondo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")  
   
- **Scheda scheda Anteprima sfondo al passaggio del mouse**  
+  **Scheda scheda Anteprima sfondo al passaggio del mouse**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.FileTabProvisionalHover`  
+  `Environment.FileTabProvisionalHover`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `Environment.FileTabProvisionalHoverForeground`  
+  `Environment.FileTabProvisionalHoverForeground`  
   
- Border  
+  Border  
   
- `Environment.FileTabProvisionalHoverBorder`  
+  `Environment.FileTabProvisionalHoverBorder`  
   
- Impostato sullo stesso colore dello sfondo.  
+  Impostato sullo stesso colore dello sfondo.  
   
 #### <a name="document-overflow-button"></a>Pulsante di overflow dei documenti  
  Il pulsante di overflow dei documenti è presente se ci sono uno o più documenti aperti, indipendentemente dal fatto che nella configurazione corrente sia disponibile spazio sufficiente da contenere tutte le schede dei documenti. Il menu a discesa di overflow dei documenti, controllato dai colori di **CommandBarMenu** (vedere [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), visualizza un elenco di tutti i documenti aperti, sia visibili sia nascosti, e il glifo di overflow cambia a seconda che tutti i documenti aperti siano o meno visualizzati nel canale delle schede.  
@@ -1676,79 +1676,79 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per un'interfaccia utente che non è simile a un pulsante di overflow.  
   
--   Per i pulsanti di overflow della barra dei comandi.  
+- Per i pulsanti di overflow della barra dei comandi.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")  
+  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")  
   
- **Pulsante di overflow dei documenti**  
+  **Pulsante di overflow dei documenti**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DocWellOverflowButtonBackground`  
+  `Environment.DocWellOverflowButtonBackground`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.DocWellOverflowButtonGlyph`  
+  `Environment.DocWellOverflowButtonGlyph`  
   
- Bordo  
+  Bordo  
   
- N/D  
+  N/D  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Overflow al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")  
+  ![Overflow al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")  
   
- **Pulsante di overflow dei documenti al passaggio del mouse**  
+  **Pulsante di overflow dei documenti al passaggio del mouse**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DocWellOverflowButtonMouseOverBackground`  
+  `Environment.DocWellOverflowButtonMouseOverBackground`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.DocWellOverflowButtonMouseOverGlyph`  
+  `Environment.DocWellOverflowButtonMouseOverGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.DocWellOverflowButtonMouseOverBorder`  
+  `Environment.DocWellOverflowButtonMouseOverBorder`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Overflow premuto](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")  
+  ![Overflow premuto](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")  
   
- **Pulsante di overflow dei documenti premuto**  
+  **Pulsante di overflow dei documenti premuto**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.DocWellOverflowButtonMouseDownBackground`  
+  `Environment.DocWellOverflowButtonMouseDownBackground`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.DocWellOverflowButtonMouseDownGlyph`  
+  `Environment.DocWellOverflowButtonMouseDownGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.DocWellOverflowButtonMouseDownBorder`  
+  `Environment.DocWellOverflowButtonMouseDownBorder`  
   
 ## <a name="tool-windows"></a>Finestre degli strumenti  
  Non è necessario replicare le finestre degli strumenti, perché vengono fornite dall'ambiente di Visual Studio. Tuttavia, si potrebbe scegliere di sfruttare i colori usati nelle finestre degli strumenti in modo che l'interfaccia utente appaia sempre coerente con questa parte dell'ambiente di Visual Studio.  
@@ -1908,127 +1908,127 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per i pulsanti visualizzati in altre posizioni.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Spostare il titolo della pulsante con stato attivo barra](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")  
+  ![Spostare il titolo della pulsante con stato attivo barra](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")  
   
- **Con stato attivo**  
+  **Con stato attivo**  
   
- Sfondo  
+  Sfondo  
   
- N/D  
+  N/D  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ToolWindowButtonActiveGlyph`  
+  `Environment.ToolWindowButtonActiveGlyph`  
   
- Bordo  
+  Bordo  
   
- N/D  
+  N/D  
   
- ![Spostare il titolo della barra pulsante con stato non attivo](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")  
+  ![Spostare il titolo della barra pulsante con stato non attivo](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")  
   
- **Con stato non attivo**  
+  **Con stato non attivo**  
   
- Sfondo  
+  Sfondo  
   
- N/D  
+  N/D  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ToolWindowButtonInactiveGlyph`  
+  `Environment.ToolWindowButtonInactiveGlyph`  
   
- Bordo  
+  Bordo  
   
- N/D  
+  N/D  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Pulsante della barra del titolo con stato attivo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")  
+  ![Pulsante della barra del titolo con stato attivo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")  
   
- **Con stato attivo**  
+  **Con stato attivo**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ToolWindowButtonHoverActive`  
+  `Environment.ToolWindowButtonHoverActive`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ToolWindowButtonHoverActiveGlyph`  
+  `Environment.ToolWindowButtonHoverActiveGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.ToolWindowButtonHoverActiveBorder`  
+  `Environment.ToolWindowButtonHoverActiveBorder`  
   
- ![Spostare il titolo della barra pulsante con stato non attivo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")  
+  ![Spostare il titolo della barra pulsante con stato non attivo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")  
   
- **Con stato non attivo**  
+  **Con stato non attivo**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ToolWindowButtonHoverInactive`  
+  `Environment.ToolWindowButtonHoverInactive`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ToolWindowButtonHoverInactiveGlyph`  
+  `Environment.ToolWindowButtonHoverInactiveGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.ToolWindowButtonHoverInactiveBorder`  
+  `Environment.ToolWindowButtonHoverInactiveBorder`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Spostare il titolo della barra sul pulsante con stato attivo e premuto](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")  
+  ![Spostare il titolo della barra sul pulsante con stato attivo e premuto](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")  
   
- **Con stato attivo**  
+  **Con stato attivo**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ToolWindowButtonDownActiveGlyph`  
+  `Environment.ToolWindowButtonDownActiveGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
- ![Pulsante della barra del titolo con stato non attivo e premuta](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")  
+  ![Pulsante della barra del titolo con stato non attivo e premuta](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")  
   
- **Con stato non attivo**  
+  **Con stato non attivo**  
   
- Sfondo  
+  Sfondo  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `Environment.ToolWindowButtonDownInactiveGlyph`  
+  `Environment.ToolWindowButtonDownInactiveGlyph`  
   
- Bordo  
+  Bordo  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
 ### <a name="tool-window-tabs"></a>Schede delle finestre degli strumenti  
  ![Scheda casella degli strumenti con linea rossa](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303 102_ToolWindowTabRedline")  
@@ -2218,307 +2218,307 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
   
  Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a vicenda:  
   
--   "Con stato attivo" e "con stato non attivo" indicano se il cursore si trova o meno nella casella di testo.  
+- "Con stato attivo" e "con stato non attivo" indicano se il cursore si trova o meno nella casella di testo.  
   
--   "Attivo" e "inattivo" indicano se l'utente ha inserito una query di ricerca nella casella di testo.  
+- "Attivo" e "inattivo" indicano se l'utente ha inserito una query di ricerca nella casella di testo.  
   
--   "Passaggio del mouse" significa che l'utente ha posizionato il cursore del mouse sulla casella di ricerca (questo stato sostituisce tutti gli altri).  
+- "Passaggio del mouse" significa che l'utente ha posizionato il cursore del mouse sulla casella di ricerca (questo stato sostituisce tutti gli altri).  
   
--   "Disabilitato" significa che la funzionalità di ricerca è disattivata per il contesto corrente.  
+- "Disabilitato" significa che la funzionalità di ricerca è disattivata per il contesto corrente.  
   
- ![Casella di ricerca con linea rossa](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![Casella di ricerca con linea rossa](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
   
- Usare…  
- Quando si progetta una casella di ricerca personalizzata.  
+  Usare…  
+  Quando si progetta una casella di ricerca personalizzata.  
   
- Non usare...  
- -   Per qualsiasi elemento diverso da una casella di ricerca.  
+  Non usare...  
+  -   Per qualsiasi elemento diverso da una casella di ricerca.  
   
--   Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della casella di ricerca.  
+- Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della casella di ricerca.  
   
- **Con stato attivo**  
+  **Con stato attivo**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Campo di input di ricerca con stato attivo](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")  
+  ![Campo di input di ricerca con stato attivo](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")  
   
- **Campo di input**  
+  **Campo di input**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.FocusedBorder`  
+  `SearchControl.FocusedBorder`  
   
- Separatore  
+  Separatore  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- ![Pulsante di azione di ricerca con stato attivo](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")  
+  ![Pulsante di azione di ricerca con stato attivo](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")  
   
- **Pulsante di azione**  
+  **Pulsante di azione**  
   
- Sfondo  
+  Sfondo  
   
- nessuno  
+  nessuno  
   
- Primo piano (glifo Cerca)  
+  Primo piano (glifo Cerca)  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- Primo piano (glifo Arresta)  
+  Primo piano (glifo Arresta)  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- Primo piano (glifo Cancella)  
+  Primo piano (glifo Cancella)  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- Bordo  
+  Bordo  
   
- N/D  
+  N/D  
   
- ![Elenco di ricerca&#45;verso il basso sul pulsante con stato attivato](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")  
+  ![Elenco di ricerca&#45;verso il basso sul pulsante con stato attivato](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.FocusedDropDownButton`  
+  `SearchControl.FocusedDropDownButton`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `SearchControl.FocusedDropDownButtonGlyph`  
+  `SearchControl.FocusedDropDownButtonGlyph`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.FocusedDropDownButtonBorder`  
+  `SearchControl.FocusedDropDownButtonBorder`  
   
- **Con stato non attivo**  
+  **Con stato non attivo**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Campo di input ricerca con stato non attivo](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")  
+  ![Campo di input ricerca con stato non attivo](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")  
   
- **Campo di input attivo**  
+  **Campo di input attivo**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- Separatore  
+  Separatore  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![Campo di input di ricerca con stato non attivo e inattivo](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")  
+  ![Campo di input di ricerca con stato non attivo e inattivo](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")  
   
- **Campo di input inattivo**  
+  **Campo di input inattivo**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- Separatore  
+  Separatore  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![Pulsante di azione di ricerca con stato non attivo](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")  
+  ![Pulsante di azione di ricerca con stato non attivo](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")  
   
- **Pulsante di azione**  
+  **Pulsante di azione**  
   
- Sfondo  
+  Sfondo  
   
- N/D  
+  N/D  
   
- Primo piano (glifo Cerca)  
+  Primo piano (glifo Cerca)  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- Primo piano (glifo Arresta)  
+  Primo piano (glifo Arresta)  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- Primo piano (glifo Cancella)  
+  Primo piano (glifo Cancella)  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- Bordo  
+  Bordo  
   
- N/D  
+  N/D  
   
- ![Elenco di ricerca&#45;verso il basso sul pulsante con stato non attivo](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")  
+  ![Elenco di ricerca&#45;verso il basso sul pulsante con stato non attivo](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.UnfocusedDropDownButton`  
+  `SearchControl.UnfocusedDropDownButton`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `SearchControl.UnfocusedDropDownButtonGlyph`  
+  `SearchControl.UnfocusedDropDownButtonGlyph`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.UnfocusedDropDownButtonBorder`  
+  `SearchControl.UnfocusedDropDownButtonBorder`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Ricerca azione pulsante premuto](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")  
+  ![Ricerca azione pulsante premuto](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")  
   
- **Pulsante di azione**  
+  **Pulsante di azione**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.ActionButtonMouseDown`  
+  `SearchControl.ActionButtonMouseDown`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `SearchControl.ActionButtonMouseDownGlyph`  
+  `SearchControl.ActionButtonMouseDownGlyph`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.ActionButtonMouseDownBorder`  
+  `SearchControl.ActionButtonMouseDownBorder`  
   
- ![Elenco di ricerca&#45;verso il basso la pressione del pulsante](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")  
+  ![Elenco di ricerca&#45;verso il basso la pressione del pulsante](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.MouseDownDropDownButton`  
+  `SearchControl.MouseDownDropDownButton`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `SearchControl.MouseDownDropDownButtonGlyph`  
+  `SearchControl.MouseDownDropDownButtonGlyph`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.MouseDownDropDownButtonBorder`  
+  `SearchControl.MouseDownDropDownButtonBorder`  
   
- **Evidenziato (solo testo)**  
+  **Evidenziato (solo testo)**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Evidenziazione di campo di input di ricerca](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")  
+  ![Evidenziazione di campo di input di ricerca](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")  
   
- **Campo di input con testo evidenziato**  
+  **Campo di input con testo evidenziato**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.Selection`  
+  `SearchControl.Selection`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
- Separatore  
+  Separatore  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- **Disabilitato**  
+  **Disabilitato**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Campo di input di ricerca disabilitato](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")  
+  ![Campo di input di ricerca disabilitato](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")  
   
- **Campo di input**  
+  **Campo di input**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.DisabledBorder`  
+  `SearchControl.DisabledBorder`  
   
- Separatore  
+  Separatore  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![Pulsante di azione di ricerca disabilitato](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")  
+  ![Pulsante di azione di ricerca disabilitato](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")  
   
- **Pulsante di azione**  
+  **Pulsante di azione**  
   
- Sfondo  
+  Sfondo  
   
- nessuno  
+  nessuno  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `SearchControl.ActionButtonDisabledGlyph`  
+  `SearchControl.ActionButtonDisabledGlyph`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
- ![Elenco di ricerca&#45;verso il basso sul pulsante disabilitato](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")  
+  ![Elenco di ricerca&#45;verso il basso sul pulsante disabilitato](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")  
   
- **Pulsante elenco a discesa**  
+  **Pulsante elenco a discesa**  
   
- Sfondo  
+  Sfondo  
   
- nessuno  
+  nessuno  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `SearchControl.DisabledDownButtonGlyph`  
+  `SearchControl.DisabledDownButtonGlyph`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
 #### <a name="search-drop-down-lists"></a>Elenchi a discesa di ricerca  
  Il menu a discesa della casella di ricerca può essere leggermente più complesso rispetto ad altri menu a discesa in Visual Studio. Le sezioni "ricerche suggerite" e "opzioni di ricerca" possono essere visualizzate singolarmente o insieme nel menu e ognuna ha un colore diverso. Una linea separa le due sezioni quando sono visualizzate insieme e un bordo circonda l'intero menu a discesa.  
@@ -2528,176 +2528,176 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Usare…  
  -   Quando si crea un elenco a discesa di ricerca personalizzato.  
   
--   I nomi di token appropriati per i componenti dell'elenco corretti.  
+- I nomi di token appropriati per i componenti dell'elenco corretti.  
   
- Non usare...  
- -   Per elenchi a discesa visualizzati in altri contesti.  
+  Non usare...  
+  -   Per elenchi a discesa visualizzati in altri contesti.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Predefinito (nessun altro stato)**  
+  **Predefinito (nessun altro stato)**  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- Bordo  
+  Bordo  
   
- `SearchControl.PopupBorder`  
+  `SearchControl.PopupBorder`  
   
- Separatore  
+  Separatore  
   
- `SearchControl.PopupSectionHeaderSeparator`  
+  `SearchControl.PopupSectionHeaderSeparator`  
   
- Ombreggiatura  
+  Ombreggiatura  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Ricerca con suggerita](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")  
+  ![Ricerca con suggerita](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")  
   
- **Ricerche suggerite**  
+  **Ricerche suggerite**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.PopupItemsListBackgroundGradientBegin`  
+  `SearchControl.PopupItemsListBackgroundGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `SearchControl.PopupItemText`  
+  `SearchControl.PopupItemText`  
   
- ![Casella di controllo di ricerca](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")  
+  ![Casella di controllo di ricerca](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")  
   
- **Opzioni di ricerca (casella di controllo)**  
+  **Opzioni di ricerca (casella di controllo)**  
   
- ![Le opzioni di ricerca](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")  
+  ![Le opzioni di ricerca](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")  
   
- **Opzioni di ricerca (collegamento)**  
+  **Opzioni di ricerca (collegamento)**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.PopupSectionBackgroundGradientBegin`  
+  `SearchControl.PopupSectionBackgroundGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo della casella di controllo)  
+  Primo piano (testo della casella di controllo)  
   
- `SearchControl.PopupCheckboxText`  
+  `SearchControl.PopupCheckboxText`  
   
- Primo piano (testo del collegamento)  
+  Primo piano (testo del collegamento)  
   
- `SearchControl.PopupButtonText`  
+  `SearchControl.PopupButtonText`  
   
- Sfondo dell'intestazione  
+  Sfondo dell'intestazione  
   
- `SearchControl.PopupSectionHeaderGradientBegin`  
+  `SearchControl.PopupSectionHeaderGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo dell'intestazione)  
+  Primo piano (testo dell'intestazione)  
   
- `SearchControl.PopupSectionHeaderText`  
+  `SearchControl.PopupSectionHeaderText`  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Ricerca con suggerita al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")  
+  ![Ricerca con suggerita al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")  
   
- **Ricerche suggerite**  
+  **Ricerche suggerite**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `SearchControl.PopupMouseOverItemText`  
+  `SearchControl.PopupMouseOverItemText`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- ![Casella di controllo di ricerca al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")  
+  ![Casella di controllo di ricerca al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")  
   
- **Ricerche suggerite (casella di controllo)**  
+  **Ricerche suggerite (casella di controllo)**  
   
- ![Le opzioni al passaggio del mouse di ricerca](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")  
+  ![Le opzioni al passaggio del mouse di ricerca](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")  
   
- **Opzioni di ricerca**  
+  **Opzioni di ricerca**  
   
- Sfondo  
+  Sfondo  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo della casella di controllo)  
+  Primo piano (testo della casella di controllo)  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- Primo piano (testo del collegamento)  
+  Primo piano (testo del collegamento)  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
- Bordo  
+  Bordo  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Ricerca con suggerimento selezionata](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")  
+  ![Ricerca con suggerimento selezionata](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")  
   
- **Ricerche suggerite (casella di controllo)**  
+  **Ricerche suggerite (casella di controllo)**  
   
- ![Cerca opzioni premute](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")  
+  ![Cerca opzioni premute](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")  
   
- **Opzioni di ricerca**  
+  **Opzioni di ricerca**  
   
- Sfondo della casella di controllo  
+  Sfondo della casella di controllo  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo della casella di controllo)  
+  Primo piano (testo della casella di controllo)  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- Sfondo del collegamento  
+  Sfondo del collegamento  
   
- `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
   
- Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
+  Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.  
   
- Primo piano (testo del collegamento)  
+  Primo piano (testo del collegamento)  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
 ### <a name="hyperlink"></a>Collegamento ipertestuale  
  Il collegamento ipertestuale è un controllo che non ha una coppia primo piano/sfondo. In tutti i casi, usare il colore primo piano del collegamento ipertestuale, visualizzato correttamente su sfondi scuri, grigi e bianchi. Se non si usa il token di colore per il controllo collegamento ipertestuale, verrà visualizzato il controllo di sistema predefinito per lo stato "premuto", che sarà di colore rosso lampeggiante. Questo comportamento segnala il fatto che il controllo non usa il token di colore dell'ambiente corretto.  
@@ -2923,181 +2923,181 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per qualsiasi elemento che non è simile a una visualizzazione albero.  
   
--   In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
+- In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Visualizzazione struttura ad albero](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")  
+  ![Visualizzazione struttura ad albero](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")  
   
- Sfondo  
+  Sfondo  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `TreeView.Glyph`  
+  `TreeView.Glyph`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Visualizazione al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")  
+  ![Visualizazione al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")  
   
- Sfondo  
+  Sfondo  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `TreeView.GlyphMouseOver`  
+  `TreeView.GlyphMouseOver`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
- **Trascinare su**  
+  **Trascinare su**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Visualizzazione albero con trascinamento](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")  
+  ![Visualizzazione albero con trascinamento](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")  
   
- Sfondo  
+  Sfondo  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `TreeView.DragOverItemGlyph`  
+  `TreeView.DragOverItemGlyph`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
- **selezionato**  
+  **selezionato**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Con stato attivato di visualizzazione ad albero](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")  
+  ![Con stato attivato di visualizzazione ad albero](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")  
   
- **Con stato attivo**  
+  **Con stato attivo**  
   
- Sfondo  
+  Sfondo  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `TreeView.SelectedItemActiveGlyph`  
+  `TreeView.SelectedItemActiveGlyph`  
   
- Bordo  
+  Bordo  
   
- `TreeView.FocusVisualBorder`  
+  `TreeView.FocusVisualBorder`  
   
- ![Con stato non attivo di visualizzazione ad albero](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")  
+  ![Con stato non attivo di visualizzazione ad albero](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")  
   
- **Con stato non attivo**  
+  **Con stato non attivo**  
   
- Sfondo  
+  Sfondo  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `TreeView.SelectedItemInactiveGlyph`  
+  `TreeView.SelectedItemInactiveGlyph`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
- **Selezionato al passaggio del mouse**  
+  **Selezionato al passaggio del mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")  
+  ![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")  
   
- **Con stato attivo**  
+  **Con stato attivo**  
   
- Sfondo  
+  Sfondo  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- Bordo  
+  Bordo  
   
- Nessuno`TreeView.FocusVisualBorder`  
+  Nessuno`TreeView.FocusVisualBorder`  
   
- ![Visualizzazione con stato non attivo al passaggio del mouse ad albero](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")  
+  ![Visualizzazione con stato non attivo al passaggio del mouse ad albero](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")  
   
- **Con stato non attivo**  
+  **Con stato non attivo**  
   
- Sfondo  
+  Sfondo  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Primo piano (testo)  
+  Primo piano (testo)  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Primo piano (glifo)  
+  Primo piano (glifo)  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
 ### <a name="button-controls"></a>Controlli pulsante  
  ![Controllo pulsante con linea rossa](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 155_ButtonControlRedline")  
@@ -3346,229 +3346,229 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Per qualsiasi interfaccia utente diversa da un elenco a discesa o una casella combinata.  
   
--   Per un controllo [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) o [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) nella barra dei comandi.  
+- Per un controllo [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) o [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) nella barra dei comandi.  
   
- **Default**  
+  **Default**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;inattivo&#47;casella combinata](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")  
+  ![Eliminare&#45;inattivo&#47;casella combinata](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")  
   
- Sfondo  
+  Sfondo  
   
- `CommonControls.ComboBoxBackground`  
+  `CommonControls.ComboBoxBackground`  
   
- Bordo  
+  Bordo  
   
- `CommonControls.ComboBoxBorder`  
+  `CommonControls.ComboBoxBorder`  
   
- Testo  
+  Testo  
   
- `CommonControls.ComboBoxText`  
+  `CommonControls.ComboBoxText`  
   
- Separatore  
+  Separatore  
   
- `CommonControls.ComboBoxSeparator`  
+  `CommonControls.ComboBoxSeparator`  
   
- Glifo  
+  Glifo  
   
- `CommonControls.ComboBoxGlyph`  
+  `CommonControls.ComboBoxGlyph`  
   
- Sfondo del glifo  
+  Sfondo del glifo  
   
- `CommonControls.ComboBoxGlyphBackground`  
+  `CommonControls.ComboBoxGlyphBackground`  
   
- **Disabilitato**  
+  **Disabilitato**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;inattivo&#47;casella combinata disabilitata](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")  
+  ![Eliminare&#45;inattivo&#47;casella combinata disabilitata](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")  
   
- Sfondo  
+  Sfondo  
   
- `CommonControls.ComboBoxBackgroundDisabled`  
+  `CommonControls.ComboBoxBackgroundDisabled`  
   
- Bordo  
+  Bordo  
   
- `CommonControls.ComboBoxBorderDisabled`  
+  `CommonControls.ComboBoxBorderDisabled`  
   
- Testo  
+  Testo  
   
- `CommonControls.ComboBoxTextDisabled`  
+  `CommonControls.ComboBoxTextDisabled`  
   
- Separatore  
+  Separatore  
   
- `CommonControls.ComboBoxSeparatorDisabled`  
+  `CommonControls.ComboBoxSeparatorDisabled`  
   
- Glifo  
+  Glifo  
   
- `CommonControls.ComboBoxGlyphDisabled`  
+  `CommonControls.ComboBoxGlyphDisabled`  
   
- Sfondo del glifo  
+  Sfondo del glifo  
   
- `CommonControls.ComboBoxGlyphBackgroundDisabled`  
+  `CommonControls.ComboBoxGlyphBackgroundDisabled`  
   
- **Passare il mouse**  
+  **Passare il mouse**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;inattivo&#47;casella combinata al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")  
+  ![Eliminare&#45;inattivo&#47;casella combinata al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")  
   
- Sfondo  
+  Sfondo  
   
- `CommonControls.ComboBoxBackgroundHover`  
+  `CommonControls.ComboBoxBackgroundHover`  
   
- Bordo  
+  Bordo  
   
- `CommonControls.ComboBoxBorderHover`  
+  `CommonControls.ComboBoxBorderHover`  
   
- Testo  
+  Testo  
   
- `CommonControls.ComboBoxTextHover`  
+  `CommonControls.ComboBoxTextHover`  
   
- Separatore  
+  Separatore  
   
- `CommonControls.ComboBoxSeparatorHover`  
+  `CommonControls.ComboBoxSeparatorHover`  
   
- Glifo  
+  Glifo  
   
- `CommonControls.ComboBoxGlyphHover`  
+  `CommonControls.ComboBoxGlyphHover`  
   
- Sfondo del glifo  
+  Sfondo del glifo  
   
- `CommonControls.ComboBoxGlyphBackgroundHover`  
+  `CommonControls.ComboBoxGlyphBackgroundHover`  
   
- **Premuto**  
+  **Premuto**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;inattivo&#47;casella combinata premuta](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")  
+  ![Eliminare&#45;inattivo&#47;casella combinata premuta](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")  
   
- Sfondo  
+  Sfondo  
   
- `CommonControls.ComboBoxBackgroundPressed`  
+  `CommonControls.ComboBoxBackgroundPressed`  
   
- Bordo  
+  Bordo  
   
- `CommonControls.ComboBoxBorderPressed`  
+  `CommonControls.ComboBoxBorderPressed`  
   
- Testo  
+  Testo  
   
- `CommonControls.ComboBoxTextPressed`  
+  `CommonControls.ComboBoxTextPressed`  
   
- Separatore  
+  Separatore  
   
- `CommonControls.ComboBoxSeparatorPressed`  
+  `CommonControls.ComboBoxSeparatorPressed`  
   
- Glifo  
+  Glifo  
   
- `CommonControls.ComboBoxGlyphPressed`  
+  `CommonControls.ComboBoxGlyphPressed`  
   
- Sfondo del glifo  
+  Sfondo del glifo  
   
- `CommonControls.ComboBoxGlyphBackgroundPressed`  
+  `CommonControls.ComboBoxGlyphBackgroundPressed`  
   
- **Con stato attivo**  
+  **Con stato attivo**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;inattivo&#47;casella combinata con stato attivato](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")  
+  ![Eliminare&#45;inattivo&#47;casella combinata con stato attivato](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")  
   
- Sfondo  
+  Sfondo  
   
- `CommonControls.ComboBoxBackgroundFocused`  
+  `CommonControls.ComboBoxBackgroundFocused`  
   
- Bordo  
+  Bordo  
   
- `CommonControls.ComboBoxBorderFocused`  
+  `CommonControls.ComboBoxBorderFocused`  
   
- Testo  
+  Testo  
   
- `CommonControls.ComboBoxTextFocused`  
+  `CommonControls.ComboBoxTextFocused`  
   
- Separatore  
+  Separatore  
   
- `CommonControls.ComboBoxSeparatorFocused`  
+  `CommonControls.ComboBoxSeparatorFocused`  
   
- Glifo  
+  Glifo  
   
- `CommonControls.ComboBoxGlyphFocused`  
+  `CommonControls.ComboBoxGlyphFocused`  
   
- Sfondo del glifo  
+  Sfondo del glifo  
   
- `CommonControls.ComboBoxGlyphBackgroundFocused`  
+  `CommonControls.ComboBoxGlyphBackgroundFocused`  
   
- **Selezione di input di testo**  
+  **Selezione di input di testo**  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- ![Eliminare&#45;inattivo&#47;input di testo casella combinata](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")  
+  ![Eliminare&#45;inattivo&#47;input di testo casella combinata](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")  
   
- Evidenziazione  
+  Evidenziazione  
   
- `CommonControls.ComboBoxTextInputSelection`  
+  `CommonControls.ComboBoxTextInputSelection`  
   
- **Premuto-visualizzazione elementi elenco**  
+  **Premuto-visualizzazione elementi elenco**  
   
- ![Eliminare&#45;inattivo&#47;visualizzazione elenco della casella combinata](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")  
+  ![Eliminare&#45;inattivo&#47;visualizzazione elenco della casella combinata](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")  
   
- Sfondo  
+  Sfondo  
   
- `CommonControls.ComboBoxListBackground`  
+  `CommonControls.ComboBoxListBackground`  
   
- `CommonControls.ComboBoxListBackgroundHover`  
+  `CommonControls.ComboBoxListBackgroundHover`  
   
- `CommonControls.ComboBoxListItemBackgroundPressed`  
+  `CommonControls.ComboBoxListItemBackgroundPressed`  
   
- `CommonControls.ComboBoxListItemBackgroundFocused`  
+  `CommonControls.ComboBoxListItemBackgroundFocused`  
   
- Bordo  
+  Bordo  
   
- `CommonControls.ComboBoxListBorder`  
+  `CommonControls.ComboBoxListBorder`  
   
- `CommonControls.ComboBoxListBorderHover`  
+  `CommonControls.ComboBoxListBorderHover`  
   
- `CommonControls.ComboBoxListBorderPressed`  
+  `CommonControls.ComboBoxListBorderPressed`  
   
- `CommonControls.ComboBoxListBorderFocused`  
+  `CommonControls.ComboBoxListBorderFocused`  
   
- Testo dell'elemento  
+  Testo dell'elemento  
   
- `CommonControls.ComboBoxListItemText`  
+  `CommonControls.ComboBoxListItemText`  
   
- `CommonControls.ComboBoxListItemTextHover`  
+  `CommonControls.ComboBoxListItemTextHover`  
   
- `CommonControls.ComboBoxListItemTextPressed`  
+  `CommonControls.ComboBoxListItemTextPressed`  
   
- `CommonControls.ComboBoxListItemTextFocused`  
+  `CommonControls.ComboBoxListItemTextFocused`  
   
- Ombreggiatura dello sfondo  
+  Ombreggiatura dello sfondo  
   
- `CommonControls.ComboBoxListBackgroundShadow`  
+  `CommonControls.ComboBoxListBackgroundShadow`  
   
 ### <a name="tabular-data-grid-controls"></a>Controlli per dati tabulari (griglia)  
  I controlli per dati tabulari, noti anche come controlli griglia, sono controlli comuni per Visual Studio, che possono essere usati per presentare grandi quantità di dati in più colonne. I controlli per dati tabulari standard possono trovarsi in diverse posizioni all'interno di Visual Studio, ad esempio nella finestra degli strumenti Elenco errori, nei report IntelliTrace e nella visualizzazione degli heap della memoria. Usare sempre i controlli per dati tabulari standard forniti. In alcuni casi rari, si potrebbe non avere accesso ai controlli per dati tabulari standard. In questi casi, usare i nomi di token seguenti per garantire che l'interfaccia utente sia coerente con gli altri controlli per dati tabulari in Visual Studio.  
@@ -3703,66 +3703,66 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Usare…  
  -   Per le finestre di progettazione simili alla finestra Progettazione manifesto.  
   
--   Invece di usare controlli scheda comuni nella parte superiore di un editor all'interno dell'area dei documenti.  
+- Invece di usare controlli scheda comuni nella parte superiore di un editor all'interno dell'area dei documenti.  
   
- Non usare...  
- -   Se sono presenti più di sei schede.  
+  Non usare...  
+  -   Se sono presenti più di sei schede.  
   
--   Per qualsiasi interfaccia utente non strutturata come la finestra Progettazione manifesto.  
+- Per qualsiasi interfaccia utente non strutturata come la finestra Progettazione manifesto.  
   
- Stato  
+  Stato  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- Predefinito (selezionato)  
+  Predefinito (selezionato)  
   
- Scheda  
+  Scheda  
   
- Sfondo  
+  Sfondo  
   
- `ManifestDesigner.TabActive`  
+  `ManifestDesigner.TabActive`  
   
- Bordo  
+  Bordo  
   
- nessuno  
+  nessuno  
   
- Riquadro descrizione  
+  Riquadro descrizione  
   
- Sfondo  
+  Sfondo  
   
- `ManifestDesigner.DescriptionPane`  
+  `ManifestDesigner.DescriptionPane`  
   
- Pagina contenuto  
+  Pagina contenuto  
   
- Sfondo  
+  Sfondo  
   
- `ManifestDesigner.Background`  
+  `ManifestDesigner.Background`  
   
- Testo di supporto della finestra di dialogo  
+  Testo di supporto della finestra di dialogo  
   
- `ManifestDesigner.WatermarkText`  
+  `ManifestDesigner.WatermarkText`  
   
- Questo nome di token non corrisponde alla sua funzione.  
+  Questo nome di token non corrisponde alla sua funzione.  
   
- Non selezionato  
+  Non selezionato  
   
- Scheda  
+  Scheda  
   
- Sfondo  
+  Sfondo  
   
- `ManifestDesigner.Tab.Inactive`  
+  `ManifestDesigner.Tab.Inactive`  
   
- Passaggio del mouse  
+  Passaggio del mouse  
   
- Scheda  
+  Scheda  
   
- Sfondo  
+  Sfondo  
   
- `ManifestDesigner.Tab.Mouseover`  
+  `ManifestDesigner.Tab.Mouseover`  
   
 ## <a name="tagging"></a>Assegnazione di tag  
  Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichiarare parole chiave da cercare per scopi di verifica. Ad esempio, i project manager e gli sviluppatori possono usare Team Foundation Server (TFS) per assegnare tag a elementi di lavoro. La tabella seguente indica i nomi di colore per il tag stesso e il glifo dell'icona di chiusura visualizzato negli stati corrispondenti al passaggio del mouse e alla selezione.  
@@ -3980,39 +3980,39 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Non usare...  
  -   Come riempimento per i punti che non sono superfici di sfondo.  
   
--   Come sfondo su cui si vuole posizionare elementi in primo piano.  
+- Come sfondo su cui si vuole posizionare elementi in primo piano.  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- Livello inferiore  
+  Livello inferiore  
   
- Sfondo  
+  Sfondo  
   
- `Environment.EnvironmentBackground`  
+  `Environment.EnvironmentBackground`  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- Livello superiore  
+  Livello superiore  
   
- Sfondo  
+  Sfondo  
   
- *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*  
+  *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*  
   
- `Environment.EnvironmentBackgroundGradientBegin`  
+  `Environment.EnvironmentBackgroundGradientBegin`  
   
- `Environment.EnvironmentBackgroundGradientEnd`  
+  `Environment.EnvironmentBackgroundGradientEnd`  
   
- `Environment.EnvironmentBackgroundGradientMiddle1`  
+  `Environment.EnvironmentBackgroundGradientMiddle1`  
   
- `Environment.EnvironmentBackgroundGradientMiddle2`  
+  `Environment.EnvironmentBackgroundGradientMiddle2`  
   
 ### <a name="command-shelf"></a>Scaffale dei comandi  
  Due set di nomi di token vengono usati per gli sfondi dello scaffale dei comandi, uno per il punto in cui si trova la barra dei menu e l'altro per il punto in cui si trova la barra dei comandi. Un singolo gruppo della barra dei comandi ha valori di colore di sfondo propri, che vengono descritti in modo più dettagliato nella sezione "Barra dei comandi". Il testo della barra dei menu e della barra dei comandi viene descritto nelle rispettive sezioni.  
@@ -4022,40 +4022,40 @@ Quando si progetta un'interfaccia utente che usa elementi comuni della shell di 
  Usare…  
  -   Per le aree in cui si posizionano menu o barre degli strumenti.  
   
--   con lo sfondo corretto /? corretta in primo piano.  
+- con lo sfondo corretto /? corretta in primo piano.  
   
- Non usare...  
- Per aree che non sono simili a uno scaffale dei comandi.  
+  Non usare...  
+  Per aree che non sono simili a uno scaffale dei comandi.  
   
- Componente  
+  Componente  
   
- Elemento  
+  Elemento  
   
- Nome token: Category.color  
+  Nome token: Category.color  
   
- Barra dei menu  
+  Barra dei menu  
   
- Sfondo  
+  Sfondo  
   
- *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*  
+  *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*  
   
- `Environment.CommandShelfHighlightGradientBegin`  
+  `Environment.CommandShelfHighlightGradientBegin`  
   
- `Environment.CommandShelfHighlightGradientMiddle`  
+  `Environment.CommandShelfHighlightGradientMiddle`  
   
- `Environment.CommandShelfHighlightGradientEnd`  
+  `Environment.CommandShelfHighlightGradientEnd`  
   
- Barra dei comandi  
+  Barra dei comandi  
   
- Sfondo  
+  Sfondo  
   
- *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*  
+  *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*  
   
- `Environment.CommandShelfBackgroundGradientBegin`  
+  `Environment.CommandShelfBackgroundGradientBegin`  
   
- `Environment.CommandShelfBackgroundGradientMiddle`  
+  `Environment.CommandShelfBackgroundGradientMiddle`  
   
- `Environment.CommandShelfBackgroundGradientEnd`  
+  `Environment.CommandShelfBackgroundGradientEnd`  
   
 ## <a name="toolbox"></a>Casella degli strumenti  
  La casella degli strumenti è una delle finestre degli strumenti comuni usata più di frequente in Visual Studio. Si tratta essenzialmente di un controllo albero con un tema e stili speciali applicati.  

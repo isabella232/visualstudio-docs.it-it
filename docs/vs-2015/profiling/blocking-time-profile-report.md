@@ -18,23 +18,23 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be0649cd9d3fb7aa5f4e3f52496ec43658a41ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842872"
 ---
 # <a name="blocking-time-profile-report"></a>Report del profilo di durata del blocco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli stack di chiamate specifici di ogni categoria di blocco, ad esempio "I/O" o "Sincronizzazione". Il rapporto Precedenza elenca i processi che precedevano il processo corrente con il numero di istanze di precedenza. Per compilare il rapporto profili di blocco, lo strumento raccoglie chiamate API di blocco e le accumula in un albero degli stack di chiamate. I dati visualizzati in questi rapporti variano in base all'intervallo di tempo corrente, ai thread nascosti e ai seguenti due filtri che possono essere applicati:  
   
--   Se l'opzione Just My Code è selezionata, vengono presentati solo gli stack frame con codice utente, più un livello sotto il codice utente.  
+- Se l'opzione Just My Code è selezionata, vengono presentati solo gli stack frame con codice utente, più un livello sotto il codice utente.  
   
--   Se è impostato il valore di riduzione del rumore, gli stack fascicolati con una frequenza minore di quella specificata vengono ignorati.  
+- Se è impostato il valore di riduzione del rumore, gli stack fascicolati con una frequenza minore di quella specificata vengono ignorati.  
   
- Espandere qualsiasi voce dell'albero delle chiamate per individuare la riga di codice in cui viene impiegato il tempo di blocco. Per individuare la riga di codice sorgente per una voce, scegliere **Visualizza origine** nel relativo menu di scelta rapida. Per individuare la riga di codice che ha chiamato questa riga, scegliere **Visualizza siti di chiamata** nel menu di scelta rapida. Se solo un sito di chiamata è disponibile, il comando si connette alla riga di codice evidenziata per il sito di chiamata. Se sono disponibili più siti di chiamata, il comando apre una finestra di dialogo in cui è possibile selezionare una voce e quindi scegliere il pulsante **Passa all'origine** per individuare il sito di chiamata evidenziato. Spesso è molto utile visualizzare il codice sorgente per il sito di chiamata con il maggior numero di istanze, i tempi più elevati o entrambi.  
+  Espandere qualsiasi voce dell'albero delle chiamate per individuare la riga di codice in cui viene impiegato il tempo di blocco. Per individuare la riga di codice sorgente per una voce, scegliere **Visualizza origine** nel relativo menu di scelta rapida. Per individuare la riga di codice che ha chiamato questa riga, scegliere **Visualizza siti di chiamata** nel menu di scelta rapida. Se solo un sito di chiamata è disponibile, il comando si connette alla riga di codice evidenziata per il sito di chiamata. Se sono disponibili più siti di chiamata, il comando apre una finestra di dialogo in cui è possibile selezionare una voce e quindi scegliere il pulsante **Passa all'origine** per individuare il sito di chiamata evidenziato. Spesso è molto utile visualizzare il codice sorgente per il sito di chiamata con il maggior numero di istanze, i tempi più elevati o entrambi.  
   
 ## <a name="blocking-time-report-columns"></a>Colonne del rapporto del tempo di blocco  
  Nella tabella seguente sono riportate le colonne per ogni rapporto del tempo di blocco.  

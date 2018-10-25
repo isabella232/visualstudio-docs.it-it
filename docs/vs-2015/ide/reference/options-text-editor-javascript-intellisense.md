@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f04ea48505bee0f27fdeaa62458aa7ef8df915e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6aa1f4027746ebf1304362217c16fffa7e68a75d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822411"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opzioni, Editor di testo, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ Utilizzare la pagina **IntelliSense** della finestra di dialogo **Opzioni** per 
   
  È possibile utilizzare gruppi di riferimenti predefiniti per specificare che determinati file .js IntelliSense rientrino nell'ambito per progetti JavaScript diversi. Sono disponibili quattro gruppi di riferimenti:  
   
--   Implicito ( *versione*Windows), per le app [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] che usano JavaScript. I file inclusi in questo gruppo rientrano nell'ambito per ogni file con estensione js aperto nell'editor di codice per le app [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] che usano JavaScript.  
+- Implicito ( *versione*Windows), per le app [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] che usano JavaScript. I file inclusi in questo gruppo rientrano nell'ambito per ogni file con estensione js aperto nell'editor di codice per le app [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] che usano JavaScript.  
   
--   Implicito (Web), per progetti HTML5. I file inclusi in questo gruppo rientrano nell'ambito per ogni file .js aperto nell'editor di codice per questi tipi di progetto.  
+- Implicito (Web), per progetti HTML5. I file inclusi in questo gruppo rientrano nell'ambito per ogni file .js aperto nell'editor di codice per questi tipi di progetto.  
   
--   Gruppi di riferimenti a processi di lavoro dedicati, per lavori Web HTML5. I file specificati in questo gruppo rientrano nell'ambito per i file .js con un riferimento esplicito a un gruppo di riferimenti a processi di lavoro dedicati.  
+- Gruppi di riferimenti a processi di lavoro dedicati, per lavori Web HTML5. I file specificati in questo gruppo rientrano nell'ambito per i file .js con un riferimento esplicito a un gruppo di riferimenti a processi di lavoro dedicati.  
   
--   Generico, per altri tipi di progetti JavaScript.  
+- Generico, per altri tipi di progetti JavaScript.  
   
- **File inclusi**  
- Questa opzione specifica l'ordine di caricamento dei file nel contesto del servizio di linguaggio. È possibile configurare l'ordine utilizzando i pulsanti **Rimuovi**, **Sposta su**e **Sposta giù** . Per garantire il funzionamento di IntelliSense, un file dipendente da un altro dovrà essere caricato dopo quest'ultimo.  
+  **File inclusi**  
+  Questa opzione specifica l'ordine di caricamento dei file nel contesto del servizio di linguaggio. È possibile configurare l'ordine utilizzando i pulsanti **Rimuovi**, **Sposta su**e **Sposta giù** . Per garantire il funzionamento di IntelliSense, un file dipendente da un altro dovrà essere caricato dopo quest'ultimo.  
   
 > [!CAUTION]
 >  Se un oggetto viene definito in modo non condizionale in due o più riferimenti impliciti, per definire l'oggetto verrà utilizzato l'ultimo riferimento in questo elenco.  

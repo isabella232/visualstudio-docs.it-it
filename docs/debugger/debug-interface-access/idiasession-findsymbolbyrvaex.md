@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolByRVAEx | Documenti Microsoft
+title: Findsymbolbyrvaex | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 809598b5203878b70b57a061b75bc60d4dc84bac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d7dc9cfb435da1a4204c8a7ed23e398478aef0ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832433"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
-Recupera un tipo di simbolo specificato che contiene o vicino a un indirizzo virtuale relativo specificato (RVA) e l'offset.  
+Recupera un tipo di simbolo specificato che contiene, o più vicino a un indirizzo virtuale relativo specificato (RVA) e l'offset.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,10 +37,10 @@ HRESULT findSymbolByRVAEx (
   
 #### <a name="parameters"></a>Parametri  
  `rva`  
- [in] Specifica di RVA.  
+ [in] Specifica il RVA.  
   
  `symtag`  
- [in] Tipo di simbolo da trovare. I valori vengono prelevati i [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) enumerazione.  
+ [in] Tipo di simbolo da trovare. I valori sono ricavati dal [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione.  
   
  `ppSymbol`  
  [out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperare l'oggetto che rappresenta il simbolo.  
@@ -62,4 +62,4 @@ pSession->findSymbolByRVAEx( rva, SymTagFunction, &pFunc, &disp );
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)
+ [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

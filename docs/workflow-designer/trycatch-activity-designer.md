@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26985893ae5a6431743564e28793957ecf0f9e01
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866389"
 ---
 # <a name="trycatch-activity-designer"></a>ActivityDesigner TryCatch
 
@@ -42,7 +42,7 @@ Il **TryCatch** finestra di progettazione non supporta la modifica **Catch**. Se
 La tabella seguente illustra il <xref:System.Activities.Statements.TryCatch>proprietà e viene descritto come usarle nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.TryCatch>. Il percorso predefinito è TryCatch.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|L'attività è stata eseguita per prima quando viene eseguito <xref:System.Activities.Statements.TryCatch>.|
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|La raccolta di **intercettare** gli elementi da controllare quando i <xref:System.Activities.Statements.TryCatch.Try%2A> attività genera un'eccezione.<br /><br /> È necessario aggiungere almeno un'attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> o un'attività nel blocco <xref:System.Activities.Statements.TryCatch.Finally%2A>.|

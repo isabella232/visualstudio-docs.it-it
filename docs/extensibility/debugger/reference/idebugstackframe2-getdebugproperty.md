@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetDebugProperty | Documenti Microsoft
+title: IDebugStackFrame2::GetDebugProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d0fcb648f25667d47a164c14443bafd14cc315f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f1a8153326fbb88a569680c84376b8c7c911622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883315"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 Ottiene una descrizione delle proprietà di uno stack frame.  
@@ -41,13 +41,13 @@ int GetDebugProperty (
   
 #### <a name="parameters"></a>Parametri  
  `ppDebugProp`  
- [out] Restituisce un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto che descrive le proprietà dello stack frame corrente.  
+ [out] Restituisce un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto che descrive le proprietà di questo frame dello stack.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- La chiamata di [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metodo con filtri appropriati può recuperare le variabili locali, i parametri del metodo, i registri e puntatore "this" associato al frame dello stack.  
+ Chiama il [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metodo con i filtri appropriati può recuperare le variabili locali, parametri del metodo, registri e puntatore "this" associato al frame dello stack.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

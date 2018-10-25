@@ -14,12 +14,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1dbbf44a4adfe20f1940da32540eaad81c97251b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 882d2c8d0dec5e4673b24436067bd6255c2052be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853155"
 ---
 # <a name="the-dsltexttransform-command"></a>Comando DslTextTransform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ DslTextTransform.cmd è uno script che chiama TextTransform.exe e lo esegue con 
   
  È possibile specificare gli argomenti seguenti come input per DslTextTransform.cmd:  
   
--   La directory di output del progetto di modello di dominio.  
+- La directory di output del progetto di modello di dominio.  
   
--   La directory di output del progetto di definizione della finestra di progettazione.  
+- La directory di output del progetto di definizione della finestra di progettazione.  
   
--   Il percorso del file di modello di testo.  
+- Il percorso del file di modello di testo.  
   
- DslTextTransform.cmd elabora il file di modello di testo specificato usando i processori di direttive predefinito e gli assembly. Se si creano i processori di direttiva personalizzati, è possibile creare il proprio file batch che chiama TextTransform.exe. In questo file batch, è possibile specificare gli assembly e i processori di direttiva personalizzati associati.
+  DslTextTransform.cmd elabora il file di modello di testo specificato usando i processori di direttive predefinito e gli assembly. Se si creano i processori di direttiva personalizzati, è possibile creare il proprio file batch che chiama TextTransform.exe. In questo file batch, è possibile specificare gli assembly e i processori di direttiva personalizzati associati.
 
 
 

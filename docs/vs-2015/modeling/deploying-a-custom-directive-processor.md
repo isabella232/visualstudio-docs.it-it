@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836398"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
  I metodi alternativi sono i seguenti:  
   
--   [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Fornisce un modo per installare e disinstallare il processore di direttiva sia in un proprio computer che in altri computer. In genere, è possibile comprimere altre funzionalità nello stesso VSIX.  
+- [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Fornisce un modo per installare e disinstallare il processore di direttiva sia in un proprio computer che in altri computer. In genere, è possibile comprimere altre funzionalità nello stesso VSIX.  
   
--   [VSPackage](../extensibility/internals/vspackages.md). Se si definisce un package VS che contiene altre funzionalità oltre al processore di direttiva, esiste un metodo comodo per registrare il processore di direttiva.  
+- [VSPackage](../extensibility/internals/vspackages.md). Se si definisce un package VS che contiene altre funzionalità oltre al processore di direttiva, esiste un metodo comodo per registrare il processore di direttiva.  
   
--   Impostare una chiave del Registro di sistema. In questo metodo, si aggiunge una voce del Registro di sistema per il processore di direttiva.  
+- Impostare una chiave del Registro di sistema. In questo metodo, si aggiunge una voce del Registro di sistema per il processore di direttiva.  
   
- È necessario utilizzare uno di questi metodi solo se si desidera trasformare il modello di testo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Se si utilizza un host personalizzato nella propria applicazione, l'host personalizzato è responsabile dell'individuazione dei processori di direttive per ciascuna direttiva.  
+  È necessario utilizzare uno di questi metodi solo se si desidera trasformare il modello di testo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Se si utilizza un host personalizzato nella propria applicazione, l'host personalizzato è responsabile dell'individuazione dei processori di direttive per ciascuna direttiva.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Distribuzione di un processore di direttiva in un pacchetto VSIX  
  È possibile aggiungere un processore di direttiva personalizzato a un [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  È necessario assicurarsi che i due elementi seguenti siano contenuti nel file .vsix:  
   
--   L'assembly (.dll) che contiene la classe del processore di direttiva personalizzata.  
+- L'assembly (.dll) che contiene la classe del processore di direttiva personalizzata.  
   
--   Un file .pkgdef che registra il processore di direttiva. Il nome radice del file deve essere uguale all'assembly. Ad esempio, i file potrebbero essere denominati CDP.dll e CDP.pkgdef.  
+- Un file .pkgdef che registra il processore di direttiva. Il nome radice del file deve essere uguale all'assembly. Ad esempio, i file potrebbero essere denominati CDP.dll e CDP.pkgdef.  
   
- Per esaminare o modificare il contenuto di un file .vsix, cambiare l'estensione del file in .zip, quindi aprirlo. Dopo avere modificato il contenuto, reimpostare l'estensione del file su .vsix.  
+  Per esaminare o modificare il contenuto di un file .vsix, cambiare l'estensione del file in .zip, quindi aprirlo. Dopo avere modificato il contenuto, reimpostare l'estensione del file su .vsix.  
   
- Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene descritto uno.  
+  Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene descritto uno.  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Per sviluppare un processore di direttiva personalizzato in un progetto VSIX  
   
@@ -167,27 +167,27 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Per registrare un processore di direttiva impostando una chiave del Registro di sistema  
   
-1.  Eseguire `regedit`.  
+1. Eseguire `regedit`.  
   
-2.  In regedit passare a  
+2. In regedit passare a  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Se si desidera installare il processore di direttiva nella versione sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], inserire "Exp" dopo "11.0".  
+    Se si desidera installare il processore di direttiva nella versione sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], inserire "Exp" dopo "11.0".  
   
-3.  Aggiungere una chiave del Registro di sistema che abbia lo stesso nome della classe del processore di direttiva.  
+3. Aggiungere una chiave del Registro di sistema che abbia lo stesso nome della classe del processore di direttiva.  
   
-    -   Nell'albero del Registro di sistema, fare clic sulla **DirectiveProcessors** nodo, scegliere **New**, quindi fare clic su **chiave**.  
+   -   Nell'albero del Registro di sistema, fare clic sulla **DirectiveProcessors** nodo, scegliere **New**, quindi fare clic su **chiave**.  
   
-4.  Nel nuovo nodo, aggiungere valori stringa per Class e CodeBase o Assembly, sulla base delle tabelle seguenti.  
+4. Nel nuovo nodo, aggiungere valori stringa per Class e CodeBase o Assembly, sulla base delle tabelle seguenti.  
   
-    1.  Pulsante destro del mouse sul nodo che è stato creato, scegliere **New**, quindi fare clic su **valore stringa**.  
+   1.  Pulsante destro del mouse sul nodo che è stato creato, scegliere **New**, quindi fare clic su **valore stringa**.  
   
-    2.  Modificare il nome del valore.  
+   2.  Modificare il nome del valore.  
   
-    3.  Fare doppio clic sul nome e modificare i dati.  
+   3.  Fare doppio clic sul nome e modificare i dati.  
   
- Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:  
+   Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:  
   
 |nome|Tipo|Dati|  
 |----------|----------|----------|  

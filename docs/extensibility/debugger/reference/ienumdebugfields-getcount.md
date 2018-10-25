@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::GetCount | Documenti Microsoft
+title: IEnumDebugFields::GetCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0143685e5e959b36c6d4bdcb9cc122fc7d7db10
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a6ba9b527a970039f97b9f58253691556b28c07d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891700"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
 Questo metodo restituisce il numero di elementi nell'enumerazione.  
@@ -47,7 +47,7 @@ int GetCount(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo non fa parte di solitamente si interfaccia COM di enumerazione che specifica che solo Avanti, clonazione, Skip e reimpostazione deve essere implementato.  
+ Questo metodo non fa parte l'interfaccia di enumerazione COM facoltativa che specifica che solo successivo, il Clone, Skip e reimpostazione deve essere implementata.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

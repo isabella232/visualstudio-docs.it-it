@@ -18,12 +18,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87b755ac0dbe7e10cfe52693840101729ab32069
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce1d7b431e7918c172947c508ae06e5770877ea6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863503"
 ---
 # <a name="commandtable-element"></a>Elemento CommandTable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ CommandTable è l'elemento radice del file con estensione vsct. Si tratta del fi
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|xmlns|Obbligatorio. Spazi dei nomi XML:<br /><br /> xmlns = "http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns = "http://www.w3.org/2001/XMLSchema"|  
-|language|Facoltativo. L'attributo della lingua consente di specificare la lingua predefinita del tutto \<stringhe > elementi della tabella comandi.  Se la lingua non viene specificata, verrà usata la lingua del processo corrente:<br /><br /> Language = "en-us"|  
+| Attributo |                                                                                                                   Descrizione                                                                                                                   |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   xmlns   |                                   Obbligatorio. Spazi dei nomi XML:<br /><br /> xmlns = "<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns = "<http://www.w3.org/2001/XMLSchema>"                                   |
+| language  | Facoltativo. L'attributo della lingua consente di specificare la lingua predefinita del tutto \<stringhe > elementi della tabella comandi.  Se la lingua non viene specificata, verrà usata la lingua del processo corrente:<br /><br /> Language = "en-us" |
   
 ### <a name="child-elements"></a>Elementi figlio  
   

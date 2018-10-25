@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860357"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49293683"
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Per impostare i controlli da creare per le tabelle di dati o oggetti  
   
-1.  Assicurarsi che sia aperta la finestra di progettazione WPF o in Progettazione Windows Form.  
+1. Assicurarsi che sia aperta la finestra di progettazione WPF o in Progettazione Windows Form.  
   
-2.  Nel **Zdroje dat** finestra, selezionare l'elemento che rappresenta la tabella di dati o dell'oggetto che si desidera impostare.  
+2. Nel **Zdroje dat** finestra, selezionare l'elemento che rappresenta la tabella di dati o dell'oggetto che si desidera impostare.  
   
-3.  Fare clic sul menu a discesa per l'elemento e quindi fare clic su uno dei seguenti elementi nel menu di scelta:  
+3. Fare clic sul menu a discesa per l'elemento e quindi fare clic su uno dei seguenti elementi nel menu di scelta:  
   
-    -   Per visualizzare ogni campo dati in un controllo separato, fare clic su **dettagli**. Quando si trascina l'elemento di dati nella finestra di progettazione, questa azione consente di creare un controllo con associazione a dati diversi per ogni colonna o proprietà della tabella di dati padre o dell'oggetto, insieme alle etichette per ogni controllo.  
+   - Per visualizzare ogni campo dati in un controllo separato, fare clic su **dettagli**. Quando si trascina l'elemento di dati nella finestra di progettazione, questa azione consente di creare un controllo con associazione a dati diversi per ogni colonna o proprietà della tabella di dati padre o dell'oggetto, insieme alle etichette per ogni controllo.  
   
-    -   Per visualizzare tutti i dati in un singolo controllo, selezionare un altro controllo nell'elenco, ad esempio **DataGrid** oppure **elenco** in un'applicazione WPF, o **DataGridView** in un controllo Windows Form applicazione.  
+   - Per visualizzare tutti i dati in un singolo controllo, selezionare un altro controllo nell'elenco, ad esempio **DataGrid** oppure **elenco** in un'applicazione WPF, o **DataGridView** in un controllo Windows Form applicazione.  
   
      L'elenco dei controlli disponibili dipende dalla progettazione aperta, la versione di .NET Framework le destinazioni del progetto e se aggiunta di controlli personalizzati che supportano l'associazione a dati di **casella degli strumenti**. Se il controllo da creare è nell'elenco dei controlli disponibili, è possibile aggiungere il controllo all'elenco. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31d5c57408765b74ec736b8ec5c6dd8edc9d8a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823073"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Procedura: visualizzare l'ereditarietà tra tipi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ In Progettazione classi è possibile visualizzare la relazione di ereditarietà,
   
 ### <a name="to-find-the-base-type"></a>Per trovare il tipo di base  
   
-1.  Nel diagramma classi selezionare il tipo per il quale si desidera visualizzare la classe o l'interfaccia base.  
+1. Nel diagramma classi selezionare il tipo per il quale si desidera visualizzare la classe o l'interfaccia base.  
   
-2.  Scegliere **Mostra classe base** o **Mostra interfacce di base** dal menu **Diagramma classi**.  
+2. Scegliere **Mostra classe base** o **Mostra interfacce di base** dal menu **Diagramma classi**.  
   
-     La classe o l'interfaccia base del tipo risulterà selezionata nel diagramma. Le eventuali linee di ereditarietà nascoste saranno ora visibili tra le due forme.  
+    La classe o l'interfaccia base del tipo risulterà selezionata nel diagramma. Le eventuali linee di ereditarietà nascoste saranno ora visibili tra le due forme.  
   
- È anche possibile fare clic con il pulsante destro del mouse sul tipo di cui si vuole visualizzare il tipo di base e scegliere **Mostra classe base** o **Mostra interfacce di base**.  
+   È anche possibile fare clic con il pulsante destro del mouse sul tipo di cui si vuole visualizzare il tipo di base e scegliere **Mostra classe base** o **Mostra interfacce di base**.  
   
 ### <a name="to-find-the-derived-types"></a>Per trovare i tipi derivati  
   
-1.  Nel diagramma classi selezionare il tipo per il quale si desidera visualizzare le classi o le interfacce derivate.  
+1. Nel diagramma classi selezionare il tipo per il quale si desidera visualizzare le classi o le interfacce derivate.  
   
-2.  Scegliere **Mostra classi derivate** o **Mostra interfacce derivate** dal menu **Diagramma classi**.  
+2. Scegliere **Mostra classi derivate** o **Mostra interfacce derivate** dal menu **Diagramma classi**.  
   
-     Le classi o le interfacce derivate del tipo verranno visualizzate nel diagramma. Le eventuali linee di ereditarietà nascoste saranno ora visibili tra le forme.  
+    Le classi o le interfacce derivate del tipo verranno visualizzate nel diagramma. Le eventuali linee di ereditarietà nascoste saranno ora visibili tra le forme.  
   
- È anche possibile fare clic con il pulsante destro del mouse sul tipo per il quale si vogliono visualizzare i tipi derivati e scegliere **Mostra classi derivate** o **Mostra interfacce derivate**.  
+   È anche possibile fare clic con il pulsante destro del mouse sul tipo per il quale si vogliono visualizzare i tipi derivati e scegliere **Mostra classi derivate** o **Mostra interfacce derivate**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [How to: Create Associations Between Types (Class Designer)](../ide/how-to-create-associations-between-types-class-designer.md)  (Procedura: Creare associazioni tra tipi (Progettazione classi))  

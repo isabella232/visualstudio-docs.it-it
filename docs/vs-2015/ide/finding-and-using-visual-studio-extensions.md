@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268176"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831133"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Ricerca e uso delle estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studi
 ## <a name="sample-master-copies-and-working-copies"></a>Copie master e copie di lavoro di esempio  
  Quando si installa un esempio online, la soluzione viene memorizzata in due posizioni:  
   
--   Una copia di lavoro viene memorizzata nel percorso specificato nella finestra di dialogo **Nuovo progetto** .  
+- Una copia di lavoro viene memorizzata nel percorso specificato nella finestra di dialogo **Nuovo progetto** .  
   
--   Una copia master separata viene memorizzata nel computer.  
+- Una copia master separata viene memorizzata nel computer.  
   
- È possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per eseguire queste attività correlate agli esempi:  
+  È possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per eseguire queste attività correlate agli esempi:  
   
--   Elencare le copie master degli esempi installati.  
+- Elencare le copie master degli esempi installati.  
   
--   Disabilitare o disinstallare la copia master di un esempio.  
+- Disabilitare o disinstallare la copia master di un esempio.  
   
--   Installare pacchetti di esempio, ovvero raccolte di esempi relativi a una tecnologia o una funzionalità.  
+- Installare pacchetti di esempio, ovvero raccolte di esempi relativi a una tecnologia o una funzionalità.  
   
--   Installare singoli esempi online. A tale scopo è inoltre possibile usare la finestra di dialogo **Nuovo progetto** .  
+- Installare singoli esempi online. A tale scopo è inoltre possibile usare la finestra di dialogo **Nuovo progetto** .  
   
--   Visualizzare notifiche di aggiornamenti quando vengono pubblicate modifiche al codice sorgente per gli esempi installati.  
+- Visualizzare notifiche di aggiornamenti quando vengono pubblicate modifiche al codice sorgente per gli esempi installati.  
   
--   Aggiornare la copia master di un esempio installato quando è disponibile una notifica di aggiornamento.  
+- Aggiornare la copia master di un esempio installato quando è disponibile una notifica di aggiornamento.  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Installazione senza usare la finestra di dialogo Estensioni e Aggiornamenti  
  Le estensioni che sono state incluse in file .vsix possono essere disponibili in posizioni diverse dalla Raccolta di Visual Studio. Benché la finestra di dialogo **Estensioni e aggiornamenti** non permetta di individuare questi file, è possibile installare un file VSIX facendovi doppio clic sopra oppure selezionandolo e quindi premendo INVIO. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.  

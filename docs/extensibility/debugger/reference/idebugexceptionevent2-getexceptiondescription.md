@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetExceptionDescription | Documenti Microsoft
+title: IDebugExceptionEvent2::GetExceptionDescription | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35baacc0eca2919e12a9056b902ab551e7f824bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61dcc2d961281b620d6670c7355f026b6207554b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891609"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
-Ottiene una descrizione dell'eccezione visualizzabile.  
+Ottiene una descrizione visualizzabile dell'eccezione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,13 +41,13 @@ int GetExceptionDescription(
   
 #### <a name="parameters"></a>Parametri  
  `pbstrDescription`  
- [out] Restituisce una descrizione dell'eccezione visualizzabile.  
+ [out] Restituisce una descrizione visualizzabile dell'eccezione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- La stringa restituita da questo metodo viene in genere il nome dell'eccezione e viene visualizzata nel **Output** finestra quando si verifica l'eccezione.  
+ La stringa restituita da questo metodo è in genere il nome dell'eccezione e viene visualizzata nel **Output** finestra quando viene generata l'eccezione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

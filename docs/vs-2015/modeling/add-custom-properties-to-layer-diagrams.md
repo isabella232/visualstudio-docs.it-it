@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 517d9f40dc0c98ca8572c31ae256e81de864171e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844414"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Aggiungere proprietà personalizzate ai diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Quando si scrive un codice di estensione per i diagrammi livello, è possibile a
   
 > [!IMPORTANT]
 >  Per fare in modo che le proprietà vengano visualizzate, è necessario apportare le seguenti modifiche in ogni computer in cui si desidera che le proprietà del livello siano visibili.  
->   
->  1.  Eseguire blocco note scegliendo **Esegui come amministratore**. Aprire `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
-> 2.  Nell'elemento `Content` aggiungere:  
->   
->     ```xml  
->     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->     ```  
-> 3.  Sotto il **strumenti di Visual Studio** sezione del menu start dell'applicazione di Visual Studio, aprire **prompt dei comandi sviluppatore**.  
->   
->      Immettere:  
->   
->      `devenv /rootSuffix /updateConfiguration`  
->   
->      `devenv /rootSuffix Exp /updateConfiguration`  
-> 4.  Riavviare Visual Studio.  
+> 
+> 1. Eseguire blocco note scegliendo **Esegui come amministratore**. Aprire `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>    2.  Nell'elemento `Content` aggiungere:  
+> 
+>    ```xml  
+>    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>    ```  
+>    3.  Sotto il **strumenti di Visual Studio** sezione del menu start dell'applicazione di Visual Studio, aprire **prompt dei comandi sviluppatore**.  
+> 
+>    Immettere:  
+> 
+>    `devenv /rootSuffix /updateConfiguration`  
+> 
+>    `devenv /rootSuffix Exp /updateConfiguration`  
+>    4.  Riavviare Visual Studio.  
   
  **Assicurarsi che il codice è in un progetto VSIX**  
   

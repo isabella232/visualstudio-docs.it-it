@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836775"
 ---
 # <a name="source-control-integration-overview"></a>Panoramica dell'integrazione del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Questa sezione Confronta i due modi per integrare nel controllo del codice sorge
   
  Per implementare un controllo del codice sorgente del plug-in usando l'API dei plug-in del controllo origine, seguire questa procedura:  
   
-1.  Creare una DLL che implementa le funzioni specificate nei [Plug-in controllo del codice sorgente](../../extensibility/source-control-plug-ins.md).  
+1. Creare una DLL che implementa le funzioni specificate nei [Plug-in controllo del codice sorgente](../../extensibility/source-control-plug-ins.md).  
   
-2.  Registrare la DLL, rendendo le voci del Registro di sistema (descritto nella [procedura: installare un plug-in controllo origine](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Registrare la DLL, rendendo le voci del Registro di sistema (descritto nella [procedura: installare un plug-in controllo origine](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
-3.  Creare un file di supporto dell'interfaccia utente e la visualizzazione quando viene richiesto dal pacchetto di scheda di controllo di origine (il componente di Visual Studio che gestisce la funzionalità di controllo sorgente tramite plug-in controllo codice sorgente)  
+3. Creare un file di supporto dell'interfaccia utente e la visualizzazione quando viene richiesto dal pacchetto di scheda di controllo di origine (il componente di Visual Studio che gestisce la funzionalità di controllo sorgente tramite plug-in controllo codice sorgente)  
   
- In risposta a un comando di controllo di origine, l'IDE di Visual Studio presenta un'interfaccia utente standard per le operazioni di base e quindi passa le informazioni per il controllo del codice sorgente del plug-in tramite le funzioni definite nell'API dei plug-in controllo di origine. Per le opzioni avanzate, il plug-in del controllo del codice sorgente può essere chiamata su per presentare la propria interfaccia utente, ad esempio, di esplorazione per un progetto di controllo del codice sorgente. Ciò significa che l'utente possibile che venga visualizzata due potenzialmente diversi stili dell'interfaccia utente quando si lavora con controllo del codice sorgente: l'interfaccia utente che presenta Visual Studio e l'interfaccia utente che presenta il plug-in del controllo del codice sorgente. Ciò è più evidente con operazioni di controllo avanzate.  
+   In risposta a un comando di controllo di origine, l'IDE di Visual Studio presenta un'interfaccia utente standard per le operazioni di base e quindi passa le informazioni per il controllo del codice sorgente del plug-in tramite le funzioni definite nell'API dei plug-in controllo di origine. Per le opzioni avanzate, il plug-in del controllo del codice sorgente può essere chiamata su per presentare la propria interfaccia utente, ad esempio, di esplorazione per un progetto di controllo del codice sorgente. Ciò significa che l'utente possibile che venga visualizzata due potenzialmente diversi stili dell'interfaccia utente quando si lavora con controllo del codice sorgente: l'interfaccia utente che presenta Visual Studio e l'interfaccia utente che presenta il plug-in del controllo del codice sorgente. Ciò è più evidente con operazioni di controllo avanzate.  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Inconvenienti legati all'implementazione di un plug-in del controllo del codice sorgente  
   

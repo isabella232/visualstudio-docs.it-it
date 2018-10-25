@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4c71fa8d901653babd8c3558da7eff8ff16058c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843431"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilizzo dell'ActivityDesigner legacy
 In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la finestra di progettazione legacy quando si fa riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o a [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,17 +34,17 @@ In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd
 ## <a name="creating-a-custom-activity"></a>Creazione di un'attività personalizzata  
  Seguire questi passaggi per creare un'attività personalizzata usando la Finestra di progettazione dell’attività:  
   
-1.  Nel **Project** menu, fare clic su **Aggiungi attività**.  
+1. Nel **Project** menu, fare clic su **Aggiungi attività**.  
   
-2.  Selezionare il **impegno** oppure **attività (con separazione del codice)** modello.  
+2. Selezionare il **impegno** oppure **attività (con separazione del codice)** modello.  
   
-    1.  Usare la **attività** modello per creare un'attività con la definizione di attività e il codice utente nello stesso file di codice.  
+   1.  Usare la **attività** modello per creare un'attività con la definizione di attività e il codice utente nello stesso file di codice.  
   
-    2.  Usare la **attività (con separazione del codice)** modello per creare un'attività con la definizione di attività espressa come markup del flusso di lavoro e il codice utente in un file di codice separato.  
+   2.  Usare la **attività (con separazione del codice)** modello per creare un'attività con la definizione di attività espressa come markup del flusso di lavoro e il codice utente in un file di codice separato.  
   
-3.  Digitare un nome di attività o mantenere il nome predefinito e quindi fare clic su **Add**.  
+3. Digitare un nome di attività o mantenere il nome predefinito e quindi fare clic su **Add**.  
   
- È anche possibile creare un set di attività personalizzate creando un nuovo progetto di tipo **Workflow Activity Library**. Per altre informazioni su questo tipo di progetto, vedere [procedura: creare una libreria di attività del flusso di lavoro (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   È anche possibile creare un set di attività personalizzate creando un nuovo progetto di tipo **Workflow Activity Library**. Per altre informazioni su questo tipo di progetto, vedere [procedura: creare una libreria di attività del flusso di lavoro (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Configurazione di un'attività.  
  Mentre la Finestra di progettazione dell’attività è attiva, è possibile usare il visualizzatore proprietà per configurare le proprietà elencate nella tabella seguente.  

@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881677"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,23 +73,23 @@ In Visual Studio 2015 IntelliSense è disponibile per singoli file del codice e 
   
  Tenere presente quanto segue:  
   
--   Il ramo #else sulla riga 8 è visualizzato in grigio per indicare l'area inattiva, perché __ANDROID\_\_ è definito per il progetto Android.  
+- Il # ramo else sulla riga 8 è grigio per indicare l'area inattiva, perché `__ANDROID__` è definito per il progetto Android.  
   
--   La variabile di saluto sulla riga 11 viene inizializzata con l’identificatore HELLO, che ha una sottolineatura a zig-zag di colore viola. Ciò è dovuto al fatto che nessun identificatore HELLO è definito nel progetto iOS attualmente inattivo. Mentre nel progetto Android la riga 11 verrebbe compilata, non funzionerebbe in iOS. Poiché si tratta di codice condiviso, elemento che è necessario modificare anche se viene compilato nella configurazione attualmente attiva.  
+- La variabile di saluto sulla riga 11 viene inizializzata con l’identificatore HELLO, che ha una sottolineatura a zig-zag di colore viola. Ciò è dovuto al fatto che nessun identificatore HELLO è definito nel progetto iOS attualmente inattivo. Mentre nel progetto Android la riga 11 verrebbe compilata, non funzionerebbe in iOS. Poiché si tratta di codice condiviso, elemento che è necessario modificare anche se viene compilato nella configurazione attualmente attiva.  
   
--   La riga 12 ha una sottolineatura rossa a zig-zag sull'identificatore BYE; tale identificatore non è definito nel progetto attivo correntemente selezionato.  
+- La riga 12 ha una sottolineatura rossa a zig-zag sull'identificatore BYE; tale identificatore non è definito nel progetto attivo correntemente selezionato.  
   
- A questo punto, impostare il progetto attivo su iOS.StaticLibrary e osservare come cambiano le sottolineature a zig-zag.  
+  A questo punto, impostare il progetto attivo su iOS.StaticLibrary e osservare come cambiano le sottolineature a zig-zag.  
   
- ![iOS è selezionato come progetto attivo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+  ![iOS è selezionato come progetto attivo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
- Tenere presente quanto segue:  
+  Tenere presente quanto segue:  
   
--   Il ramo #ifdef sulla riga 6 è visualizzato in grigio per indicare l'area inattiva, perché __ANDROID\_\_ non è definito per il progetto iOS.  
+- Il ramo #ifdef sulla riga 6 è grigio per indicare l'area inattiva, perché *_ANDROID\\*  \_ non è definito per il progetto iOS.  
   
--   La variabile di saluto sulla riga 11 viene inizializzata con l’identificatore HELLO, che ora ha una sottolineatura a zig-zag di colore rosso. Ciò è dovuto al fatto che nessun identificatore HELLO è definito nel progetto iOS attualmente attivo.  
+- La variabile di saluto sulla riga 11 viene inizializzata con l’identificatore HELLO, che ora ha una sottolineatura a zig-zag di colore rosso. Ciò è dovuto al fatto che nessun identificatore HELLO è definito nel progetto iOS attualmente attivo.  
   
--   La riga 12 ha una sottolineatura a zig-zag di colore viola sull’identificatore BYE; tale identificatore non è definito nel progetto Android.NativeActivity attualmente inattivo.  
+- La riga 12 ha una sottolineatura a zig-zag di colore viola sull’identificatore BYE; tale identificatore non è definito nel progetto Android.NativeActivity attualmente inattivo.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense con singolo file  
  IntelliSense è disponibile anche quando si apre un singolo file all'esterno di qualsiasi progetto. Per abilitare o disabilitare particolari funzionalità, passare a **Editor di testo, C/C++, Avanzate** e attivare o disattivare le funzionalità IntelliSense. Per configurare IntelliSense per singoli file che non fanno parte di un progetto, cercare l’argomento relativo all'**uso di IntelliSense ed esplorazione dei file non di progetto** nella sezione **Avanzate**. Vedere [Presentazione guidata di Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  

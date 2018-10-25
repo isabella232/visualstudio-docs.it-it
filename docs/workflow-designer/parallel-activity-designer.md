@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4f10b9bb564268f5aeee59d871fd44324097cc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 76e0d7646645c7d86859de7f79ff22a46131c4a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863763"
 ---
 # <a name="parallel-activity-designer"></a>ActivityDesigner Parallel
 
@@ -42,13 +42,13 @@ Per aggiungere un'attività per il <xref:System.Activities.Statements.Parallel.B
 Nella tabella seguente sono elencate le proprietà dell'attività Parallel e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo visualizzato nell'intestazione dell'ActivityDesigner. Il valore predefinito è **parallele**. Il valore può essere modificato facoltativamente nel **proprietà** griglia o direttamente nell'intestazione dell'ActivityDesigner.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Contiene la raccolta di attività figlio da eseguire.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Restituisce il risultato dopo il completamento di un ramo. Se viene restituito **True**, quindi pianificati rami in sospeso vengono annullate. Se questa proprietà non è impostata o restituisce **False**, l'attività viene completata al completamento di tutte le relative attività figlio. Il valore predefinito è **null**.|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Sequenza](../workflow-designer/sequence-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [Attività ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

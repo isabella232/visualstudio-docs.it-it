@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1cae2ba32be73972e6c716e9100120514a6346cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824379"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procedura dettagliata: Data binding semplice in un progetto a livello di documento
   Questa procedura dettagliata illustra le nozioni di base di data binding in un progetto a livello di documento. Un singolo campo dati in un database di SQL Server è associato a un intervallo denominato in Microsoft Office Excel. La procedura dettagliata illustra inoltre come aggiungere i controlli che consentono di scorrere tutti i record nella tabella.  
@@ -33,13 +33,13 @@ ms.locfileid: "35258141"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Creazione di un'origine dati per un progetto di Excel.  
+- Creazione di un'origine dati per un progetto di Excel.  
   
--   Aggiunta di controlli a un foglio di lavoro.  
+- Aggiunta di controlli a un foglio di lavoro.  
   
--   Lo scorrimento di record del database.  
+- Lo scorrimento di record del database.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -57,34 +57,34 @@ ms.locfileid: "35258141"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Creare un progetto cartella di lavoro di Excel con il nome **My Data Binding semplice**, usando Visual Basic o c#. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Creare un progetto cartella di lavoro di Excel con il nome **My Data Binding semplice**, usando Visual Basic o c#. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **My Data Binding semplice** progetto al **Esplora soluzioni**.  
+   Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **My Data Binding semplice** progetto al **Esplora soluzioni**.  
   
 ## <a name="create-the-data-source"></a>Creare l'origine dati  
  Usare la finestra **Origini dati** per aggiungere un DataSet tipizzato al progetto.  
   
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   
-1.  Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.  
+1. Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.  
   
-2.  Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
+2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
   
-3.  Selezionare **Database** e quindi fare clic su **successivo**.  
+3. Selezionare **Database** e quindi fare clic su **successivo**.  
   
-4.  Selezionare una connessione dati al database di SQL Server di esempio Northwind, oppure aggiungere una nuova connessione usando il **nuova connessione** pulsante.  
+4. Selezionare una connessione dati al database di SQL Server di esempio Northwind, oppure aggiungere una nuova connessione usando il **nuova connessione** pulsante.  
   
-5.  Dopo che una connessione è stata selezionata o creata, fare clic su **successivo**.  
+5. Dopo che una connessione è stata selezionata o creata, fare clic su **successivo**.  
   
-6.  Deselezionare l'opzione per salvare la connessione, se è selezionata, quindi scegliere **successivo**.  
+6. Deselezionare l'opzione per salvare la connessione, se è selezionata, quindi scegliere **successivo**.  
   
-7.  Espandere la **tabelle** nodo il **degli oggetti di Database** finestra.  
+7. Espandere la **tabelle** nodo il **degli oggetti di Database** finestra.  
   
-8.  Selezionare la casella di controllo accanto al **clienti** tabella.  
+8. Selezionare la casella di controllo accanto al **clienti** tabella.  
   
 9. Scegliere **Fine**.  
   
- La procedura guidata aggiunge i **clienti** alla tabella il **Zdroje dat** finestra. Aggiunge anche un set di dati tipizzato al progetto che è visibile nel **Esplora soluzioni**.  
+   La procedura guidata aggiunge i **clienti** alla tabella il **Zdroje dat** finestra. Aggiunge anche un set di dati tipizzato al progetto che è visibile nel **Esplora soluzioni**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Aggiungere controlli al foglio di lavoro  
  Per questa procedura dettagliata, sono necessari due gli intervalli denominati e quattro pulsanti presenti nel primo foglio di calcolo. In primo luogo, aggiungere i due intervalli denominati dal **Zdroje dat** finestra in modo che vengano associati automaticamente all'origine dati. Successivamente, aggiungere i pulsanti dal **casella degli strumenti**.  
@@ -109,37 +109,37 @@ ms.locfileid: "35258141"
   
 ### <a name="to-add-four-buttons"></a>Aggiungere quattro pulsanti  
   
-1.  Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **A3** del foglio di lavoro.  
+1. Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **A3** del foglio di lavoro.  
   
-     Questo pulsante viene denominato `Button1`.  
+    Questo pulsante viene denominato `Button1`.  
   
-2.  Aggiungere altri tre pulsanti per le celle seguenti nell'ordine indicato, in modo che i nomi indicati:  
+2. Aggiungere altri tre pulsanti per le celle seguenti nell'ordine indicato, in modo che i nomi indicati:  
   
-    |cella|(Nome)|  
-    |----------|--------------|  
-    |B3|Button2|  
-    |C3|Button3|  
-    |D3|Button4|  
+   |cella|(Nome)|  
+   |----------|--------------|  
+   |B3|Button2|  
+   |C3|Button3|  
+   |D3|Button4|  
   
- Il passaggio successivo è aggiungere testo ai pulsanti e in c# aggiungere gestori di eventi.  
+   Il passaggio successivo è aggiungere testo ai pulsanti e in c# aggiungere gestori di eventi.  
   
 ## <a name="initialize-the-controls"></a>Inizializzare i controlli  
  Impostare il testo del pulsante e aggiungere i gestori di eventi durante il <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento.  
   
 ### <a name="to-initialize-the-controls"></a>Per inizializzare i controlli  
   
-1.  Nella **Esplora soluzioni**, fare doppio clic su **Sheet1.vb** oppure **Sheet1.cs**, quindi fare clic su **Visualizza codice** menu di scelta rapida.  
+1. Nella **Esplora soluzioni**, fare doppio clic su **Sheet1.vb** oppure **Sheet1.cs**, quindi fare clic su **Visualizza codice** menu di scelta rapida.  
   
-2.  Aggiungere il codice seguente per il `Sheet1_Startup` metodo per impostare il testo per ogni pulsante.  
+2. Aggiungere il codice seguente per il `Sheet1_Startup` metodo per impostare il testo per ogni pulsante.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
+    [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
+    [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
   
-3.  Solo per c#, aggiungere gestori per il pulsante eventi click per il `Sheet1_Startup` (metodo).  
+3. Solo per c#, aggiungere gestori per il pulsante eventi click per il `Sheet1_Startup` (metodo).  
   
-     [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
+    [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
   
- A questo punto aggiungere il codice per gestire il <xref:System.Windows.Forms.Control.Click> gli eventi dei pulsanti in modo che l'utente può scorrere i record.  
+   A questo punto aggiungere il codice per gestire il <xref:System.Windows.Forms.Control.Click> gli eventi dei pulsanti in modo che l'utente può scorrere i record.  
   
 ## <a name="add-code-to-enable-scrolling-through-the-records"></a>Aggiungere il codice per abilitare lo scorrimento dei record  
  Aggiungere il codice per il <xref:System.Windows.Forms.Control.Click> gestore dell'evento di ogni pulsante per spostarsi tra i record.  

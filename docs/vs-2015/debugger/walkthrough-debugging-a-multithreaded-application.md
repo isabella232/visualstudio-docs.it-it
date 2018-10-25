@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186199"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884901"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Procedura dettagliata: debug di un'applicazione multithreading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>Per individuare il marcatore del thread  
   
-1.  Fare doppio clic nella **thread** finestra, quindi fare clic su **Mostra thread nell'origine**.  
+1. Fare doppio clic nella **thread** finestra, quindi fare clic su **Mostra thread nell'origine**.  
   
-2.  All'estrema sinistra della finestra, in corrispondenza di questa riga, verrà visualizzata un'icona con due fili, uno rosso e uno blu. Il marcatore del thread indica l'interruzione di un thread in questa posizione. È possibile, pertanto, che un thread venga interrotto in questa posizione.  
+2. All'estrema sinistra della finestra, in corrispondenza di questa riga, verrà visualizzata un'icona con due fili, uno rosso e uno blu. Il marcatore del thread indica l'interruzione di un thread in questa posizione. È possibile, pertanto, che un thread venga interrotto in questa posizione.  
   
-3.  Posizionare il puntatore del mouse sul marcatore del thread. Viene visualizzato un suggerimento dati in cui è indicato il nome e il numero ID di ciascun thread interrotto. In questo caso, l'interruzione si è verificata in un solo thread denominato `<noname>`.  
+3. Posizionare il puntatore del mouse sul marcatore del thread. Viene visualizzato un suggerimento dati in cui è indicato il nome e il numero ID di ciascun thread interrotto. In questo caso, l'interruzione si è verificata in un solo thread denominato `<noname>`.  
   
-4.  Fare clic con il pulsante destro del mouse sul marcatore del thread per visualizzare un menu di scelta rapida.  
+4. Fare clic con il pulsante destro del mouse sul marcatore del thread per visualizzare un menu di scelta rapida.  
   
- Questa icona è un *marcatore del thread*:  
+   Questa icona è un *marcatore del thread*:  
   
- ![Marcatore del thread](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![Marcatore del thread](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Impostazione e rimozione dei flag dei thread  
  In [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] è possibile impostare i flag dei thread a cui si desidera attribuire particolare attenzione. L'impostazione dei flag dei thread è un ottimo strumento per tenere traccia dei thread importanti e per ignorare quelli a cui non si desidera prestare attenzione.  

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863724"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da utilizzare
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,23 +36,23 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Per selezionare uno schema XML dalla cache degli schemi  
   
-1.  Aprire un file nell'editor XML.  
+1. Aprire un file nell'editor XML.  
   
-2.  Nella finestra delle proprietà del documento, fare clic sul pulsante sul **schemi** campo.  
+2. Nella finestra delle proprietà del documento, fare clic sul pulsante sul **schemi** campo.  
   
-     Il **schemi XML** verrà visualizzata la finestra di dialogo. La finestra di dialogo elenca tutti gli schemi con estensione XSD nella cache degli schemi (inclusi gli schemi a cui fa riferimento il file Catalog XML) e anche qualsiasi schema a cui si trova nella soluzione corrente, aprire Visual Studio, a cui fa riferimento un `xsd:schemaLocation` o attributo, oppure a cui fa riferimento il **schemi** proprietà.  
+    Il **schemi XML** verrà visualizzata la finestra di dialogo. La finestra di dialogo elenca tutti gli schemi con estensione XSD nella cache degli schemi (inclusi gli schemi a cui fa riferimento il file Catalog XML) e anche qualsiasi schema a cui si trova nella soluzione corrente, aprire Visual Studio, a cui fa riferimento un `xsd:schemaLocation` o attributo, oppure a cui fa riferimento il **schemi** proprietà.  
   
-3.  Selezionare gli schemi da usare per la convalida eseguendo una delle seguenti operazioni:  
+3. Selezionare gli schemi da usare per la convalida eseguendo una delle seguenti operazioni:  
   
-    -   Selezionare uno schema elencato nella **schemi XML** finestra di dialogo, fare clic sul **utilizzare** colonna e quindi selezionare **utilizzano questo schema**.  
+   - Selezionare uno schema elencato nella **schemi XML** finestra di dialogo, fare clic sul **utilizzare** colonna e quindi selezionare **utilizzano questo schema**.  
   
      oppure  
   
-    -   Selezionare più schemi elencati nella **schemi XML** finestra di dialogo, pulsante destro del mouse e scegliere **utilizzano questo schema**.  
+   - Selezionare più schemi elencati nella **schemi XML** finestra di dialogo, pulsante destro del mouse e scegliere **utilizzano questo schema**.  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
-     L'elenco degli schemi selezionati viene copiato nuovamente il **schemi** proprietà del documento.  
+    L'elenco degli schemi selezionati viene copiato nuovamente il **schemi** proprietà del documento.  
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Per aggiungere uno schema XML alla cache degli schemi  
   

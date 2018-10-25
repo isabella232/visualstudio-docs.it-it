@@ -27,12 +27,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 222cd90f73611aa40980679795debf4cb5eb2c0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dab045b147b4ce929106c26befcae58c80b99239
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854325"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Generale, Debug, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,55 +139,55 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
  **Usare la modalità di compatibilità gestita**  
  Sostituisce il motore di debug predefinito con una versione legacy per abilitare gli scenari seguenti:  
   
--   Si utilizza un linguaggio .NET Framework diverso da C#, VB o F# che fornisce il proprio analizzatore di espressioni (questo include C++/CLI).  
+- Si utilizza un linguaggio .NET Framework diverso da C#, VB o F# che fornisce il proprio analizzatore di espressioni (questo include C++/CLI).  
   
--   Si vuole abilitare Modifica e continuazione per i progetti C++ durante il debug in modalità mista.  
+- Si vuole abilitare Modifica e continuazione per i progetti C++ durante il debug in modalità mista.  
   
- Si noti che scegliendo la modalità di compatibilità gestita vengono disabilitate alcune funzionalità implementate solo nel motore di debug predefinito.  
+  Si noti che scegliendo la modalità di compatibilità gestita vengono disabilitate alcune funzionalità implementate solo nel motore di debug predefinito.  
   
- **Usare la modalità di compatibilità nativa**  
- Quando questa opzione è selezionata, il debugger usa il debugger nativo di Visual Studio 2010 anziché il nuovo debugger nativo.  
+  **Usare la modalità di compatibilità nativa**  
+  Quando questa opzione è selezionata, il debugger usa il debugger nativo di Visual Studio 2010 anziché il nuovo debugger nativo.  
   
- Usare questa opzione quando si esegue il debug di codice C++ .NET perché il nuovo motore di debug non supporta la valutazione delle espressioni C++ .NET. Tuttavia, l'abilitazione della modalità di compatibilità nativa disabilita molte funzionalità che dipendono dall'implementazione corrente del debugger per il funzionamento. Ad esempio, il motore legacy non contiene molti dei visualizzatori per i tipi incorporati, ad esempio `std::string` nei progetti di Visual Studio 2015.   Per un'esperienza di debug ottimale, in questi casi usare i progetti di Visual Studio 2013.  
+  Usare questa opzione quando si esegue il debug di codice C++ .NET perché il nuovo motore di debug non supporta la valutazione delle espressioni C++ .NET. Tuttavia, l'abilitazione della modalità di compatibilità nativa disabilita molte funzionalità che dipendono dall'implementazione corrente del debugger per il funzionamento. Ad esempio, il motore legacy non contiene molti dei visualizzatori per i tipi incorporati, ad esempio `std::string` nei progetti di Visual Studio 2015.   Per un'esperienza di debug ottimale, in questi casi usare i progetti di Visual Studio 2013.  
   
- **Usa gli analizzatori di espressioni c# e VB legacy**  
- Il debugger userà gli analizzatori di espressioni di Visual Studio 2013 C#/VB anziché quelli basati su Visual Studio 2015 Roslyn.  
+  **Usa gli analizzatori di espressioni c# e VB legacy**  
+  Il debugger userà gli analizzatori di espressioni di Visual Studio 2013 C#/VB anziché quelli basati su Visual Studio 2015 Roslyn.  
   
- **Avvisa quando si usano visualizzatori di debugger personalizzati processi potenzialmente non sicuri (solo gestito)**  
- Visual Studio genera avvisi quando si usa un visualizzatore di debugger personalizzato che esegue codice nel processo oggetto del debug perché potrebbe essere in esecuzione codice unsafe.  
+  **Avvisa quando si usano visualizzatori di debugger personalizzati processi potenzialmente non sicuri (solo gestito)**  
+  Visual Studio genera avvisi quando si usa un visualizzatore di debugger personalizzato che esegue codice nel processo oggetto del debug perché potrebbe essere in esecuzione codice unsafe.  
   
- **Abilita l'allocatore di heap di debug Windows (solo nativo)**  
- Consente all'heap per il debug di Windows di migliorare la diagnostica dell'heap. L'abilitazione di questa opzione influirà sulle prestazioni di debug.  
+  **Abilita l'allocatore di heap di debug Windows (solo nativo)**  
+  Consente all'heap per il debug di Windows di migliorare la diagnostica dell'heap. L'abilitazione di questa opzione influirà sulle prestazioni di debug.  
   
- **Abilita strumenti di debug per XAML dell'interfaccia utente**  
- Le finestre Struttura ad albero visuale attiva e Esplora proprietà attive vengono visualizzate quando si avvia il debug (F5) di un tipo di progetto supportato. Per altre informazioni, vedere [delle proprietà di ispezionare XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md).  
+  **Abilita strumenti di debug per XAML dell'interfaccia utente**  
+  Le finestre Struttura ad albero visuale attiva e Esplora proprietà attive vengono visualizzate quando si avvia il debug (F5) di un tipo di progetto supportato. Per altre informazioni, vedere [delle proprietà di ispezionare XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md).  
   
- **Anteprima degli elementi selezionati in albero elementi visivi attivi**  
- L'elemento XAML viene selezionato il cui contesto viene selezionata anche nella **albero elementi visivi attivi** finestra.  
+  **Anteprima degli elementi selezionati in albero elementi visivi attivi**  
+  L'elemento XAML viene selezionato il cui contesto viene selezionata anche nella **albero elementi visivi attivi** finestra.  
   
- **Mostra strumenti di runtime nell'applicazione**  
- Viene illustrato il **albero elementi visivi attivi** comandi in una barra degli strumenti nella finestra principale dell'applicazione XAML in fase di debug. Questa opzione è stata introdotta in Visual Studio 2015 Update 2.  
+  **Mostra strumenti di runtime nell'applicazione**  
+  Viene illustrato il **albero elementi visivi attivi** comandi in una barra degli strumenti nella finestra principale dell'applicazione XAML in fase di debug. Questa opzione è stata introdotta in Visual Studio 2015 Update 2.  
   
- **Abilita strumenti di diagnostica durante il debug**  
- Il **strumenti di diagnostica** verrà visualizzata la finestra durante il debug. Per altre informazioni, vedere [integrati nel Debugger profilatura](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Abilita strumenti di diagnostica durante il debug**  
+  Il **strumenti di diagnostica** verrà visualizzata la finestra durante il debug. Per altre informazioni, vedere [integrati nel Debugger profilatura](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
- **Mostra il perftip relativo al tempo trascorso durante il debug**  
- La finestra di codice mostra il tempo trascorso di una specifica chiamata al metodo quando si esegue il debug.  
+  **Mostra il perftip relativo al tempo trascorso durante il debug**  
+  La finestra di codice mostra il tempo trascorso di una specifica chiamata al metodo quando si esegue il debug.  
   
- **Abilita modifica e continuazione**  
- È possibile usare la funzionalità Modifica e continuazione durante il debug.  
+  **Abilita modifica e continuazione**  
+  È possibile usare la funzionalità Modifica e continuazione durante il debug.  
   
- **Abilitare nativa modifica e continuazione**  
- È possibile usare la funzionalità Modifica e continuazione durante il debug del codice C++ nativo. Per altre informazioni, vedere [modifica e continuazione (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+  **Abilitare nativa modifica e continuazione**  
+  È possibile usare la funzionalità Modifica e continuazione durante il debug del codice C++ nativo. Per altre informazioni, vedere [modifica e continuazione (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- **Applicare le modifiche durante la continuazione (solo nativo)**  
- Visual Studio compila e applica automaticamente le modifiche di codice in sospeso apportate quando il processo viene ripreso da uno stato di interruzione. Se non è selezionato, è possibile scegliere di applicare le modifiche usando l'elemento "Applica modifiche del codice" nel menu Debug.  
+  **Applicare le modifiche durante la continuazione (solo nativo)**  
+  Visual Studio compila e applica automaticamente le modifiche di codice in sospeso apportate quando il processo viene ripreso da uno stato di interruzione. Se non è selezionato, è possibile scegliere di applicare le modifiche usando l'elemento "Applica modifiche del codice" nel menu Debug.  
   
- **Avvisa in codice non aggiornato (solo nativo)**  
- Consente di ricevere avvisi relativi al codice non aggiornato.  
+  **Avvisa in codice non aggiornato (solo nativo)**  
+  Consente di ricevere avvisi relativi al codice non aggiornato.  
   
- **Consenti precompilazione (solo nativo)**  
- La precompilazione è consentita.  
+  **Consenti precompilazione (solo nativo)**  
+  La precompilazione è consentita.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)

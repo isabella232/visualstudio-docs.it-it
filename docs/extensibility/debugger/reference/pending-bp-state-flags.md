@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_FLAGS | Documenti Microsoft
+title: PENDING_BP_STATE_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5e9664d1f8a9b5432825d389a355352831002d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5fbf32611223de306e010266987926a6d4589e0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864205"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
-Specifica i flag di stato del punto di interruzione in sospeso.  
+Specifica i flag di stato punto di interruzione in sospeso.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,10 +47,10 @@ public enum enum_PENDING_BP_STATE_FLAGS {
  Segnaposto.  
   
  PBPSF_VIRTUALIZED  
- Specifica un virtualizzato in sospeso punto di interruzione, che è necessario associare ogni volta che viene caricato di nuovo codice.  
+ Specifica un virtualizzato in sospeso punto di interruzione, che deve essere associato ogni volta che viene caricato di nuovo codice.  
   
 ## <a name="remarks"></a>Note  
- Utilizzato per il `flags` appartenente il [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struttura.  
+ Utilizzato per il `flags` membro della [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struttura.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

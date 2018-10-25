@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8cc2e591c144afeb0720cdbf05280a499d10c70c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ca2da23040f3e7a57fe5da2ff8b87cc7fc38099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889709"
 ---
 # <a name="customize-control-binding-dialog-box"></a>Finestra di dialogo Personalizza associazione controllo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,22 +44,22 @@ Usare la **Personalizza associazione controlli** per specificare quali controlli
  **Tipo di dati**  
  Visualizza un elenco di tipi che viene associato a controlli:  
   
--   Le tabelle, entità e gli oggetti sono rappresentati come **[elenco]** tipi.  
+- Le tabelle, entità e gli oggetti sono rappresentati come **[elenco]** tipi.  
   
--   Le colonne o proprietà pubbliche dell'entità e degli oggetti sono rappresentate come tipo di dati effettivo della colonna o proprietà nell'archivio dati sottostante.  
+- Le colonne o proprietà pubbliche dell'entità e degli oggetti sono rappresentate come tipo di dati effettivo della colonna o proprietà nell'archivio dati sottostante.  
   
--   Gli oggetti con le forme definite dall'utente vengono rappresentati come **[altro]**. Ad esempio, se l'applicazione include un controllo personalizzato che consente di visualizzare i dati da più di una proprietà di un oggetto, selezionare la **[altro]** tipo di dati per il controllo.  
+- Gli oggetti con le forme definite dall'utente vengono rappresentati come **[altro]**. Ad esempio, se l'applicazione include un controllo personalizzato che consente di visualizzare i dati da più di una proprietà di un oggetto, selezionare la **[altro]** tipo di dati per il controllo.  
   
- **Controlli associati**  
- Visualizza un elenco di controlli che è possibile associare a un particolare tipo di dati. Se si desidera associare il tipo di dati selezionato in un particolare controllo la **tipo di dati** elencare, selezionare la casella di controllo corrispondente. Deselezionare la casella di controllo per rimuovere un'associazione. Controlli selezionati vengono visualizzati nel menu di scelta rapida presentato dal **Zdroje dat** finestra per un elemento del tipo di dati associato.  
+  **Controlli associati**  
+  Visualizza un elenco di controlli che è possibile associare a un particolare tipo di dati. Se si desidera associare il tipo di dati selezionato in un particolare controllo la **tipo di dati** elencare, selezionare la casella di controllo corrispondente. Deselezionare la casella di controllo per rimuovere un'associazione. Controlli selezionati vengono visualizzati nel menu di scelta rapida presentato dal **Zdroje dat** finestra per un elemento del tipo di dati associato.  
   
- È possibile aggiungere controlli all'elenco mediante l'aggiunta di controlli che dispongono di uno dei diversi attributi di data binding per il **casella degli strumenti**. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+  È possibile aggiungere controlli all'elenco mediante l'aggiunta di controlli che dispongono di uno dei diversi attributi di data binding per il **casella degli strumenti**. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
- **Impostare il valore predefinito**  
- Assegna il tipo di controllo selezionato per impostazione predefinita per gli elementi del tipo di dati selezionato. Il controllo predefinito viene visualizzato come la selezione nel menu di scelta rapida presentato dal primo il **Zdroje dat** finestra per un elemento. Tipo di controllo solo uno può essere assegnato come l'impostazione predefinita per un tipo di dati.  
+  **Impostare il valore predefinito**  
+  Assegna il tipo di controllo selezionato per impostazione predefinita per gli elementi del tipo di dati selezionato. Il controllo predefinito viene visualizzato come la selezione nel menu di scelta rapida presentato dal primo il **Zdroje dat** finestra per un elemento. Tipo di controllo solo uno può essere assegnato come l'impostazione predefinita per un tipo di dati.  
   
- **Cancellare l'impostazione predefinita**  
- Rimuove la designazione di un controllo come predefinito per il tipo di dati selezionato. Se non vi è alcun valore predefinito per il tipo di dati selezionato **[Nessuno]** viene visualizzato come la selezione nel menu di scelta rapida presentato dal primo il **Zdroje dat** finestra per un elemento del tipo associato.  
+  **Cancellare l'impostazione predefinita**  
+  Rimuove la designazione di un controllo come predefinito per il tipo di dati selezionato. Se non vi è alcun valore predefinito per il tipo di dati selezionato **[Nessuno]** viene visualizzato come la selezione nel menu di scelta rapida presentato dal primo il **Zdroje dat** finestra per un elemento del tipo associato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)   

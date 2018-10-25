@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e4040a5b370674e7794b09e4d1cae68f424c7792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887371"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 
@@ -32,7 +32,7 @@ All'interno di Visual Studio, i collegamenti globali e collegamenti di debug si 
 Nella tabella seguente sono riepilogati i tasti di scelta assegnati ai comandi di progettazione del flusso di lavoro.
 
 |Collegamento|Scopo|
-|--------------|-------------|
+|-|-------------|
 |CTRL+E, A|Mostra o nasconde Progettazione argomenti.|
 |CTRL+E, C|Comprime l'attività selezionata sul posto.|
 |CTRL+E, E|Espande l'attività selezionata sul posto.|

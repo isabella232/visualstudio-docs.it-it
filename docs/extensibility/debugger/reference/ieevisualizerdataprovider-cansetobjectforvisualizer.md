@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::CanSetObjectForVisualizer | Documenti Microsoft
+title: IEEVisualizerDataProvider::CanSetObjectForVisualizer | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8848fd5628fbbb7e0e642de2389d6b98375fa6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9a70ca947a6b794f74baec9805941c5a9610936
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825718"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 Questo metodo determina se il visualizzatore può avere l'oggetto dati rappresenta aggiornato.  
@@ -41,13 +41,13 @@ int CanSetObjectForVisualizer(
   
 #### <a name="parameters"></a>Parametri  
  `b`  
- [out] Diverso da zero (`TRUE`) se è possibile aggiornare l'oggetto del visualizzatore, zero (`FALSE`) se non è possibile.  
+ [out] Diverso da zero (`TRUE`) se l'oggetto nel visualizzatore può essere aggiornato, zero (`FALSE`) se non è possibile.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Un oggetto potrebbe non essere modificabile se è associato alla memoria di sola lettura, ad esempio.  
+ Un oggetto potrebbe non essere modificabile se sono associato alla memoria di sola lettura, ad esempio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 559aea010cb7403e9e8ea52f8bf6c6fb549c665c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823840"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Procedura: creare e rimuovere dipendenze di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,20 +37,20 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
   
 ### <a name="to-assign-dependencies-to-projects"></a>Per assegnare le dipendenze ai progetti  
   
-1.  Selezionare un progetto in Esplora soluzioni.  
+1. Selezionare un progetto in Esplora soluzioni.  
   
-2.  Nel menu **Proprietà** scegliere **Dipendenze progetto**.  
+2. Nel menu **Proprietà** scegliere **Dipendenze progetto**.  
   
-     Viene visualizzata la finestra di dialogo **Dipendenze progetto**.  
+    Viene visualizzata la finestra di dialogo **Dipendenze progetto**.  
   
-    > [!NOTE]
-    >  L'opzione **Dipendenze progetto** è disponibile solo in una soluzione con più progetti.  
+   > [!NOTE]
+   >  L'opzione **Dipendenze progetto** è disponibile solo in una soluzione con più progetti.  
   
-3.  Nella scheda **Dipendenze** selezionare un progetto dal menu a discesa **Progetto**.  
+3. Nella scheda **Dipendenze** selezionare un progetto dal menu a discesa **Progetto**.  
   
-4.  Nel campo **Dipendente da** selezionare la casella di controllo di qualsiasi altro progetto da compilare prima del progetto specificato.  
+4. Nel campo **Dipendente da** selezionare la casella di controllo di qualsiasi altro progetto da compilare prima del progetto specificato.  
   
- La soluzione deve contenere più di un progetto per poter creare dipendenze di progetto.  
+   La soluzione deve contenere più di un progetto per poter creare dipendenze di progetto.  
   
 ### <a name="to-remove-dependencies-from-projects"></a>Per rimuovere dipendenze dai progetti  
   

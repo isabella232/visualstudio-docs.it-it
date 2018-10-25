@@ -15,23 +15,23 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 210fb8ced645250789c9c1da0339abe0814656ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812569"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analizzare i problemi relativi alla memoria .NET Framework
 L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite di memoria e uso non efficiente della memoria nel codice .NET. La versione minima di .NET Framework per il codice di destinazione è .NET Framework 4.5.  
   
  Lo strumento di analisi della memoria analizza le informazioni in *file dump con dati di heap* che una copia degli oggetti nella memoria di un'app. È possibile raccogliere file di dump (con estensione dmp) dall'IDE di Visual Studio oppure usando altri strumenti di sistema.  
   
--   È possibile analizzare un singolo snapshot per ottenere informazioni sull'impatto relativo dei tipi di oggetto sull'uso della memoria e per trovare nell'app il codice che usa la memoria in modo non efficiente.  
+- È possibile analizzare un singolo snapshot per ottenere informazioni sull'impatto relativo dei tipi di oggetto sull'uso della memoria e per trovare nell'app il codice che usa la memoria in modo non efficiente.  
   
--   È anche possibile confrontare (*diff*) due snapshot di un'app per individuare le aree del codice che provocano la memoria utilizzo aumenti nel corso del tempo.  
+- È anche possibile confrontare (*diff*) due snapshot di un'app per individuare le aree del codice che provocano la memoria utilizzo aumenti nel corso del tempo.  
   
- Per una procedura dettagliata dell'analizzatore di memoria gestita, vedere [usando Visual Studio 2013 per diagnosticare i problemi di memoria .NET in produzione](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) in Visual Studio blog di ALM e Team Foundation Server.  
+  Per una procedura dettagliata dell'analizzatore di memoria gestita, vedere [usando Visual Studio 2013 per diagnosticare i problemi di memoria .NET in produzione](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) in Visual Studio blog di ALM e Team Foundation Server.  
   
 ##  <a name="BKMK_Contents"></a> Contenuto  
  [Uso della memoria nelle app .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
@@ -68,32 +68,32 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
  **Per raccogliere un dump da Visual Studio**  
   
-1.  È possibile creare un file di dump per un processo avviato da un progetto di Visual Studio oppure collegare il debugger a un processo in esecuzione. Visualizzare [Collega a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+1. È possibile creare un file di dump per un processo avviato da un progetto di Visual Studio oppure collegare il debugger a un processo in esecuzione. Visualizzare [Collega a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-2.  Arrestare l'esecuzione. Il debugger si arresta quando si sceglie **Interrompi tutto** nel **Debug** dal menu o a un'eccezione o a un punto di interruzione  
+2. Arrestare l'esecuzione. Il debugger si arresta quando si sceglie **Interrompi tutto** nel **Debug** dal menu o a un'eccezione o a un punto di interruzione  
   
-3.  Nel **Debug** menu, scegliere **Salva Dump con nome**. Nel **Salva Dump con nome** finestra di dialogo specificare un percorso e assicurarsi che **Minidump con Heap** (predefinito) viene selezionato nel **Salva come tipo** elenco.  
+3. Nel **Debug** menu, scegliere **Salva Dump con nome**. Nel **Salva Dump con nome** finestra di dialogo specificare un percorso e assicurarsi che **Minidump con Heap** (predefinito) viene selezionato nel **Salva come tipo** elenco.  
   
- **Per confrontare due snapshot di memoria**  
+   **Per confrontare due snapshot di memoria**  
   
- Per analizzare l'incremento nell'uso di memoria di un'app, raccogliere due file di dump da una singola istanza dell'app.  
+   Per analizzare l'incremento nell'uso di memoria di un'app, raccogliere due file di dump da una singola istanza dell'app.  
   
- ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
+   ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> Analizzare il consumo di memoria  
  [Filtrare l'elenco di oggetti](#BKMK_Filter_the_list_of_objects) **&#124;** [analizzare i dati di memoria in da un singolo snapshot](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [confrontare due memoria snapshot](#BKMK_Compare_two_memory_snapshots)  
   
  Per analizzare un file di dump alla ricerca di problemi di uso della memoria:  
   
-1.  In Visual Studio, scegliere **File**, **Open** e specificare il file di dump.  
+1. In Visual Studio, scegliere **File**, **Open** e specificare il file di dump.  
   
-2.  Nel **riepilogo File Minidump** pagina, scegliere **Debug della memoria gestita**.  
+2. Nel **riepilogo File Minidump** pagina, scegliere **Debug della memoria gestita**.  
   
-     ![Pagina di riepilogo file di dump](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
+    ![Pagina di riepilogo file di dump](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
- L'analizzatore di memoria avvia una sessione di debug per analizzare il file e mostra i risultati nella pagina Visualizza heap:  
+   L'analizzatore di memoria avvia una sessione di debug per analizzare il file e mostra i risultati nella pagina Visualizza heap:  
   
- ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
+   ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtrare l'elenco di oggetti  
  Per impostazione predefinita, l'analizzatore di memoria filtra l'elenco di oggetti in uno snapshot di memoria per mostrare solo i tipi e le istanze che corrispondono a codice utente e per mostrare solo i tipi la cui dimensione inclusiva totale supera una percentuale di soglia della dimensione totale dell'heap. È possibile modificare queste opzioni nel **le impostazioni di visualizzazione** elenco:  
@@ -117,28 +117,28 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
 #### <a name="object-type-table"></a>Tabella Tipo di oggetto  
  Nella tabella in alto sono elencati tutti i tipi di oggetti conservati in memoria.  
   
--   **Conteggio** Mostra il numero di istanze del tipo nello snapshot.  
+- **Conteggio** Mostra il numero di istanze del tipo nello snapshot.  
   
--   **Dimensione (byte)** è la dimensione di tutte le istanze del tipo, esclusa la dimensione degli oggetti a cui include riferimenti a. Alla classe  
+- **Dimensione (byte)** è la dimensione di tutte le istanze del tipo, esclusa la dimensione degli oggetti a cui include riferimenti a. Alla classe  
   
--   **Dimensione inclusiva (byte)** include le dimensioni degli oggetti di riferimento.  
+- **Dimensione inclusiva (byte)** include le dimensioni degli oggetti di riferimento.  
   
- È possibile scegliere l'icona delle istanze (![icona dell'istanza nella colonna tipo di oggetto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) nella **tipo di oggetto** colonna per visualizzare un elenco delle istanze del tipo.  
+  È possibile scegliere l'icona delle istanze (![icona dell'istanza nella colonna tipo di oggetto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) nella **tipo di oggetto** colonna per visualizzare un elenco delle istanze del tipo.  
   
 #### <a name="instance-table"></a>Tabella Istanza  
  ![Tabella delle istanze](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
--   **Istanza** è la posizione di memoria dell'oggetto che funge da identificatore di oggetto dell'oggetto  
+- **Istanza** è la posizione di memoria dell'oggetto che funge da identificatore di oggetto dell'oggetto  
   
--   **Valore** Mostra il valore effettivo dei tipi di valore. È possibile passare il puntatore del mouse sul nome di un tipo di riferimento per visualizzarne i valori di dati in un suggerimento relativo ai dati.  
+- **Valore** Mostra il valore effettivo dei tipi di valore. È possibile passare il puntatore del mouse sul nome di un tipo di riferimento per visualizzarne i valori di dati in un suggerimento relativo ai dati.  
   
-     ![I valori in un suggerimento dati dell'istanza](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![I valori in un suggerimento dati dell'istanza](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
--   **Dimensione (byte)** è la dimensione dell'oggetto, esclusa la dimensione degli oggetti a cui include riferimenti a. Alla classe  
+- **Dimensione (byte)** è la dimensione dell'oggetto, esclusa la dimensione degli oggetti a cui include riferimenti a. Alla classe  
   
--   **Dimensione inclusiva (byte)** include le dimensioni degli oggetti di riferimento.  
+- **Dimensione inclusiva (byte)** include le dimensioni degli oggetti di riferimento.  
   
- Per impostazione predefinita, i tipi e le istanze vengono ordinati in base **dimensione inclusiva (byte)**. Per cambiare l'ordinamento, scegliere un'intestazione di colonna dell'elenco.  
+  Per impostazione predefinita, i tipi e le istanze vengono ordinati in base **dimensione inclusiva (byte)**. Per cambiare l'ordinamento, scegliere un'intestazione di colonna dell'elenco.  
   
 #### <a name="paths-to-root"></a>Percorsi della radice  
   
@@ -148,17 +148,17 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
 #### <a name="referenced-types--referenced-objects"></a>Tipi a cui si fa riferimento / Oggetti a cui si fa riferimento  
   
--   Per un tipo selezionato dal **ObjectType** tabella, il **tipi di cui viene fatto riferimento** scheda Mostra le dimensioni e numero di tipi di cui viene fatto riferimento da tutti gli oggetti del tipo selezionato.  
+- Per un tipo selezionato dal **ObjectType** tabella, il **tipi di cui viene fatto riferimento** scheda Mostra le dimensioni e numero di tipi di cui viene fatto riferimento da tutti gli oggetti del tipo selezionato.  
   
--   Per un'istanza di un tipo, selezionata **gli oggetti cui viene fatto riferimento** Mostra gli oggetti contenuti nell'istanza selezionata. È possibile passare il puntatore del mouse sul nome per visualizzarne i valori di dati in un suggerimento relativo ai dati.  
+- Per un'istanza di un tipo, selezionata **gli oggetti cui viene fatto riferimento** Mostra gli oggetti contenuti nell'istanza selezionata. È possibile passare il puntatore del mouse sul nome per visualizzarne i valori di dati in un suggerimento relativo ai dati.  
   
- **Riferimenti circolari**  
+  **Riferimenti circolari**  
   
- Un oggetto può fare riferimento a un secondo oggetto che contiene in modo diretto o indiretto un riferimento al primo oggetto. Quando l'analizzatore di memoria incontra questa situazione, interrompe l'espansione il percorso di riferimento e aggiunge un **[rilevato ciclo]** annotazione per il listato del primo oggetto, quindi si arresta.  
+  Un oggetto può fare riferimento a un secondo oggetto che contiene in modo diretto o indiretto un riferimento al primo oggetto. Quando l'analizzatore di memoria incontra questa situazione, interrompe l'espansione il percorso di riferimento e aggiunge un **[rilevato ciclo]** annotazione per il listato del primo oggetto, quindi si arresta.  
   
- **Tipi radice**  
+  **Tipi radice**  
   
- L'analizzatore di memoria aggiunge annotazioni agli oggetti radice che descrivono il tipo di riferimento incluso:  
+  L'analizzatore di memoria aggiunge annotazioni agli oggetti radice che descrivono il tipo di riferimento incluso:  
   
 |Annotazione|Descrizione|  
 |----------------|-----------------|  
@@ -176,17 +176,17 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
 ###  <a name="BKMK_Compare_two_memory_snapshots"></a> Confrontare due snapshot di memoria  
  È possibile confrontare due file di dump di un processo per individuare oggetti che potrebbero essere la causa di perdite di memoria. L'intervallo tra la raccolta del primo file (precedente) e del secondo file (successivo) deve essere sufficientemente ampio da rendere chiaramente evidente l'incremento del numero di oggetti persi. Per confrontare i due file:  
   
-1.  Aprire il file di dump secondo e quindi scegliere **eseguire il Debug della memoria gestita** nel **riepilogo File Minidump** pagina.  
+1. Aprire il file di dump secondo e quindi scegliere **eseguire il Debug della memoria gestita** nel **riepilogo File Minidump** pagina.  
   
-2.  Nella pagina del report di analisi di memoria, aprire il **linea di base Select** elenco e quindi scegliere **Sfoglia** per specificare il primo file di dump.  
+2. Nella pagina del report di analisi di memoria, aprire il **linea di base Select** elenco e quindi scegliere **Sfoglia** per specificare il primo file di dump.  
   
- L'analizzatore aggiunge colonne nel riquadro superiore del report che consentono di visualizzare la differenza tra il **conteggio**, **Size**, e **dimensione inclusiva** dei tipi rispetto ai valori nel snapshot precedente.  
+   L'analizzatore aggiunge colonne nel riquadro superiore del report che consentono di visualizzare la differenza tra il **conteggio**, **Size**, e **dimensione inclusiva** dei tipi rispetto ai valori nel snapshot precedente.  
   
- ![Colonne diff nell'elenco dei tipi](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![Colonne diff nell'elenco dei tipi](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
- Oggetto **Diff. conteggio riferimenti** viene anche aggiunta la **percorsi della radice** tabella.  
+   Oggetto **Diff. conteggio riferimenti** viene anche aggiunta la **percorsi della radice** tabella.  
   
- ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
+   ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Blog VS ALM TFS: Con Visual Studio 2013 per diagnosticare i problemi di memoria .NET in produzione](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

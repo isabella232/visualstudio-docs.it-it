@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887698"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: eseguire il debug di un foglio di stile XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ Nei passaggi della procedura dettagliata viene illustrato come usare il debugger
   
 #### <a name="to-start-debugging"></a>Per avviare il debug  
   
-1.  Dal **File** dal menu **Open**, fare clic su **File**.  
+1. Dal **File** dal menu **Open**, fare clic su **File**.  
   
-2.  Individuare il file belowAvg. xsl e fare clic su **aperto**.  
+2. Individuare il file belowAvg. xsl e fare clic su **aperto**.  
   
-     Il foglio di stile viene aperto nell'editor XML.  
+    Il foglio di stile viene aperto nell'editor XML.  
   
-3.  Fare clic sul pulsante Sfoglia (**...** ) sul **Input** campo della finestra delle proprietà del documento.  
+3. Fare clic sul pulsante Sfoglia (**...** ) sul **Input** campo della finestra delle proprietà del documento.  
   
-4.  Individuare il file books. XML e fare clic su **aperto**.  
+4. Individuare il file books. XML e fare clic su **aperto**.  
   
-     In questo modo viene impostato il file del documento di origine usato per la trasformazione XSLT.  
+    In questo modo viene impostato il file del documento di origine usato per la trasformazione XSLT.  
   
-5.  Fare doppio clic il `xsl:if` tag di inizio, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.  
+5. Fare doppio clic il `xsl:if` tag di inizio, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.  
   
-6.  Scegliere il **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.  
+6. Scegliere il **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.  
   
- Verrà avviato il processo di debug e verranno aperte diverse nuove finestre usate dal debugger.  
+   Verrà avviato il processo di debug e verranno aperte diverse nuove finestre usate dal debugger.  
   
- In due finestre vengono visualizzati il documento di input e il foglio di stile. Il debugger usa queste finestre per mostrare lo stato di esecuzione corrente ed è posizionato sull'elemento `xsl:if` del foglio di stile e sul primo nodo libro nel file books.xml.  
+   In due finestre vengono visualizzati il documento di input e il foglio di stile. Il debugger usa queste finestre per mostrare lo stato di esecuzione corrente ed è posizionato sull'elemento `xsl:if` del foglio di stile e sul primo nodo libro nel file books.xml.  
   
- Nella finestra Variabili locali vengono visualizzate tutte le variabili locali e i relativi valori correnti, incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.  
+   Nella finestra Variabili locali vengono visualizzate tutte le variabili locali e i relativi valori correnti, incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.  
   
- Il **Output XSL** finestra Visualizza l'output della trasformazione XSL. Questa finestra è separata dal **Output di Visual Studio** finestra.  
+   Il **Output XSL** finestra Visualizza l'output della trasformazione XSL. Questa finestra è separata dal **Output di Visual Studio** finestra.  
   
 ## <a name="watch-window"></a>Finestra Espressioni di controllo  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852745"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Creazione di processori di direttiva di modelli di testo T4 personalizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Il *processo di trasformazione di modello di testo* accetta una *modello di test
   
  La più importante `DirectiveProcessor` metodi che è necessario implementare sono i seguenti.  
   
--   `bool IsDirectiveSupported(string directiveName)` -Restituito `true` se il processore di direttiva può gestire con la direttiva denominata.  
+- `bool IsDirectiveSupported(string directiveName)` -Restituito `true` se il processore di direttiva può gestire con la direttiva denominata.  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Il motore del modello chiama questo metodo per ogni occorrenza di una direttiva del modello. Il processore deve salvare i risultati.  
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Il motore del modello chiama questo metodo per ogni occorrenza di una direttiva del modello. Il processore deve salvare i risultati.  
   
- Dopo tutte le chiamate a ProcessDirective () il motore del modello chiameranno tali metodi:  
+  Dopo tutte le chiamate a ProcessDirective () il motore del modello chiameranno tali metodi:  
   
--   `string[] GetReferencesForProcessingRun()` : Restituisce i nomi degli assembly che richiede il codice del modello.  
+- `string[] GetReferencesForProcessingRun()` : Restituisce i nomi degli assembly che richiede il codice del modello.  
   
--   `string[] GetImportsForProcessingRun()` -Restituire gli spazi dei nomi che può essere usato nel codice del modello.  
+- `string[] GetImportsForProcessingRun()` -Restituire gli spazi dei nomi che può essere usato nel codice del modello.  
   
--   `string GetClassCodeForProcessingRun()` -Il codice restituito di metodi, proprietà e altre dichiarazioni che possa usare il codice del modello. Il modo più semplice per eseguire questa operazione consiste nella compilazione di una stringa contenente il codice c# o Visual Basic. Per rendere il processore di direttiva in grado di essere chiamato da un modello che Usa qualsiasi linguaggio Common Language Runtime, è possibile creare le istruzioni come un struttura ad albero CodeDom e restituirne il risultato di serializzare l'albero nella lingua utilizzata dal modello.  
+- `string GetClassCodeForProcessingRun()` -Il codice restituito di metodi, proprietà e altre dichiarazioni che possa usare il codice del modello. Il modo più semplice per eseguire questa operazione consiste nella compilazione di una stringa contenente il codice c# o Visual Basic. Per rendere il processore di direttiva in grado di essere chiamato da un modello che Usa qualsiasi linguaggio Common Language Runtime, è possibile creare le istruzioni come un struttura ad albero CodeDom e restituirne il risultato di serializzare l'albero nella lingua utilizzata dal modello.  
   
--   Per altre informazioni, vedere [procedura dettagliata: creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+- Per altre informazioni, vedere [procedura dettagliata: creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md)  

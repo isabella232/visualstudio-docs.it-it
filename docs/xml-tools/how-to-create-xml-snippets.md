@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867715"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedura: creare frammenti XML
 
@@ -23,29 +23,29 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 
 ## <a name="to-create-a-new-xml-snippet"></a>Per creare un nuovo frammento di codice XML
 
- Per creare un nuovo codice XML frammento di codice, creare un nuovo file XML e utilizzare il **Inserisci frammento di codice** funzionalità.
+ Per creare un nuovo codice XML frammento di codice, creare un nuovo file XML e usare la **Inserisci frammento di codice** funzionalità.
 
 1.  Nel **File** menu, fare clic su **New** e quindi fare clic su **File**.
 
-2.  Fare clic su **File XML** e quindi fare clic su **aprire**.
+2.  Fare clic su **File XML** e quindi fare clic su **Open**.
 
 3.  Nel riquadro dell'editor e scegliere **Inserisci frammento di codice**.
 
-4.  Selezionare **frammento** nell'elenco e premere **invio**.
+4.  Selezionare **frammento** dall'elenco e premere **invio**.
 
 5.  Se necessario, apportare modifiche al nuovo frammento.
 
-6.  Dal **File** menu selezionare **Salva XMLFile.xml**.
+6.  Dal **File** dal menu **Salva XMLFile**.
 
-     Il **Salva File con nome** viene visualizzata la finestra di dialogo.
+     Il **Salva File con nome** verrà visualizzata la finestra di dialogo.
 
-7.  Immettere il nome per il nuovo frammento di codice e selezionare **file frammento** dal **Salva come** finestra di riepilogo a discesa.
+7.  Immettere un nome per il nuovo frammento di codice e selezionare **file di frammenti** dal **Salva come tipo** finestra elenco a discesa.
 
-8.  Usare la **salvare nella** elenco a discesa per modificare il percorso del file del *Documenti\Visual Studio 2005\Code Snippets\XML\My XML Snippets* cartella e quindi premere **salvare**.
+8.  Usare la **salvare nel** elenco a discesa per modificare il percorso del file del *Documenti\Visual Studio 2005\Code Snippets\XML\My XML Snippets* cartella e quindi premere **Salva**.
 
 ## <a name="snippet-description"></a>Descrizione di frammento di codice
 
- Contenuto della sezione vengono descritti alcuni elementi chiave del frammento di codice standard. Per ulteriori informazioni sugli elementi di schema usati per i frammenti di codice XML, vedere [riferimenti allo schema dei frammenti di codice](../ide/code-snippets-schema-reference.md).
+ Contenuto della sezione vengono descritti alcuni elementi chiave del frammento di codice standard. Per altre informazioni sugli elementi dello schema usati per i frammenti di codice XML, vedere [riferimenti allo schema dei frammenti di codice](../ide/code-snippets-schema-reference.md).
 
 ### <a name="snippettype-element"></a>SnippetType, elemento
 
@@ -80,13 +80,13 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 
  L'elemento `Code` comprende tre variabili.
 
--   $name$ è la variabile definita dall'utente e consente di creare un elemento `name`, che presenta un valore modificabile il cui valore predefinito è "name". Le variabili definite dall'utente vengono definite usando l'elemento `Literal`.
+- $name$ è la variabile definita dall'utente e consente di creare un elemento `name`, che presenta un valore modificabile il cui valore predefinito è "name". Le variabili definite dall'utente vengono definite usando l'elemento `Literal`.
 
--   $selected$ è una variabile predefinita e rappresenta il testo che era stato selezionato nell'editor XML prima di richiamare il frammento di codice. La posizione di questa variabile determina la posizione del testo selezionato nel frammento di codice che racchiude la selezione.
+- $selected$ è una variabile predefinita e rappresenta il testo che era stato selezionato nell'editor XML prima di richiamare il frammento di codice. La posizione di questa variabile determina la posizione del testo selezionato nel frammento di codice che racchiude la selezione.
 
--   $end$ è una variabile predefinita. Quando l'utente preme **invio** per terminare la modifica di campi del frammento di codice, questa variabile determina dove viene spostato l'accento circonflesso (^).
+- $end$ è una variabile predefinita. Quando l'utente preme **invio** per completare la modifica dei campi di frammento di codice, questa variabile determina in cui verrà spostato l'accento circonflesso (^).
 
- L'elemento `Code` consente l'inserimento del testo XML seguente:
+  L'elemento `Code` consente l'inserimento del testo XML seguente:
 
 ```xml
 <test>
@@ -107,7 +107,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 </Literal
 ```
 
- I valori formali possono anche fare riferimento a funzioni. L'Editor XML include una funzione denominata **LookupPrefix**. Il **LookupPrefix** funzione Cerca l'URI dello spazio dei nomi specificato dalla posizione nel documento XML che questo frammento viene richiamato da e restituisce il prefisso dello spazio dei nomi definito per tale spazio dei nomi, se presente, e include i due punti (:) in tale nome. Di seguito è riportato un esempio di un `Literal` elemento che utilizza il **LookupPrefix** (funzione).
+ I valori formali possono anche fare riferimento a funzioni. L'Editor XML include una funzione denominata **LookupPrefix**. Il **LookupPrefix** funzione Cerca l'URI dello spazio dei nomi specificato dalla posizione nel documento XML che questo frammento di codice viene richiamato dal e restituisce il prefisso dello spazio dei nomi definito per tale spazio dei nomi, se presente, e include i due punti (:) in tale nome. Di seguito è riportato un esempio di un `Literal` elemento che utilizza il **LookupPrefix** (funzione).
 
 ```xml
 <Literal Editable="false">

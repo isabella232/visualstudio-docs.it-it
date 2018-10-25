@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177671"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889360"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare uno unit test basato sui dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Tramite il framework unit test Microsoft per il codice gestito, è possibile imp
   
  Di seguito sono elencate le diverse sezioni di questo argomento:  
   
--   [Metodo sottoposto a test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [Metodo sottoposto a test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [Creazione di un'origine dati](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [Creazione di un'origine dati](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [Aggiunta di un oggetto TestContext alla classe di test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [Aggiunta di un oggetto TestContext alla classe di test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [Scrittura del metodo di test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [Scrittura del metodo di test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [Specificazione di DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [Specificazione di DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [Uso di TestContext. DataRow per l'accesso ai dati](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [Uso di TestContext. DataRow per l'accesso ai dati](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [Esecuzione del test e visualizzazione dei risultati](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [Esecuzione del test e visualizzazione dei risultati](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- La creazione di uno unit test basato sui dati prevede i passaggi seguenti:  
+  La creazione di uno unit test basato sui dati prevede i passaggi seguenti:  
   
 1.  Creare un'origine dati che contiene i valori usati nel metodo di test. L'origine dati può essere di qualsiasi tipo registrato nel computer che esegue il test.  
   
@@ -61,17 +61,17 @@ Tramite il framework unit test Microsoft per il codice gestito, è possibile imp
 ##  <a name="BKMK_The_method_under_test"></a> Metodo sottoposto a test  
  Come esempio, si supponga di avere creato:  
   
-1.  Una soluzione denominata `MyBank` che accetta ed elabora transazioni per diversi tipi di account.  
+1. Una soluzione denominata `MyBank` che accetta ed elabora transazioni per diversi tipi di account.  
   
-2.  Un progetto in `MyBank` denominato `BankDb`, che gestisce le transazioni per gli account.  
+2. Un progetto in `MyBank` denominato `BankDb`, che gestisce le transazioni per gli account.  
   
-3.  Una classe denominata `Maths` nel progetto `DbBank`, che esegue le funzioni matematiche per garantire che tutte le transazioni siano vantaggiose per la banca.  
+3. Una classe denominata `Maths` nel progetto `DbBank`, che esegue le funzioni matematiche per garantire che tutte le transazioni siano vantaggiose per la banca.  
   
-4.  Un progetto di unit test denominato `BankDbTests`, per testare il comportamento del componente `BankDb`.  
+4. Un progetto di unit test denominato `BankDbTests`, per testare il comportamento del componente `BankDb`.  
   
-5.  Una classe di unit test denominata `MathsTests`, per verificare il comportamento della classe `Maths`.  
+5. Una classe di unit test denominata `MathsTests`, per verificare il comportamento della classe `Maths`.  
   
- Verrà testato un metodo in `Maths` che somma due numeri interi con un ciclo:  
+   Verrà testato un metodo in `Maths` che somma due numeri interi con un ciclo:  
   
 ```  
 public int AddIntegers(int first, int second)  

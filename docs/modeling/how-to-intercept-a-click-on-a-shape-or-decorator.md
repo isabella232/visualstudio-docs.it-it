@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a8f959595ec40f70b736c163299d8593883ee5e5
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0a8af35d9edbb28c6b357149586fe7015858f4f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876529"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedura: intercettare un clic su una forma o su un elemento Decorator
 Le procedure seguenti viene illustrato come intercettare un clic su una forma o un elemento decorator di icona. Consente di intercettare i clic, doppio clic, trascina, e altri movimenti e rendere l'elemento di rispondere.
@@ -121,17 +121,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Intercettazione fa clic e trascina su elenchi di CompartmentShape
  L'esempio seguente consente di riordinare gli elementi in una forma raggruppamento trascinandoli. Per eseguire questo codice:
 
-1.  Creare una nuova soluzione DSL usando il **diagrammi classi** modello di soluzione.
+1. Creare una nuova soluzione DSL usando il **diagrammi classi** modello di soluzione.
 
-     È anche possibile lavorare con una soluzione personalizzata che contiene forme raggruppamento. Questo codice si presuppone che esista una relazione di incorporamento tra gli elementi del modello rappresentati dalla forma e gli elementi rappresentati in elementi dell'elenco di raggruppamento.
+    È anche possibile lavorare con una soluzione personalizzata che contiene forme raggruppamento. Questo codice si presuppone che esista una relazione di incorporamento tra gli elementi del modello rappresentati dalla forma e gli elementi rappresentati in elementi dell'elenco di raggruppamento.
 
-2.  Impostare il **genera una derivata doppia** proprietà della forma del raggruppamento.
+2. Impostare il **genera una derivata doppia** proprietà della forma del raggruppamento.
 
-3.  Aggiungere questo codice in un file nei **Dsl** progetto.
+3. Aggiungere questo codice in un file nei **Dsl** progetto.
 
-4.  Modificare i nomi di classe e forma di dominio in questo codice in modo che corrisponda il proprio DSL.
+4. Modificare i nomi di classe e forma di dominio in questo codice in modo che corrisponda il proprio DSL.
 
- In sintesi, il codice funzioni come indicato di seguito. In questo esempio `ClassShape` è il nome della forma del raggruppamento.
+   In sintesi, il codice funzioni come indicato di seguito. In questo esempio `ClassShape` è il nome della forma del raggruppamento.
 
 -   A ogni istanza di compartment è associato un set di gestori di eventi del mouse al momento della creazione.
 
@@ -393,7 +393,6 @@ namespace Company.CompartmentDrag
   }
  }
 }
-
 ```
 
 ## <a name="see-also"></a>Vedere anche

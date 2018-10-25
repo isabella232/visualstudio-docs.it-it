@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: c840ed268e8e5aaa70dcc83eb9a0eeff3a2eb33f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815572"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizzazione di strumenti e della casella degli strumenti
 
@@ -139,7 +139,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
         {
             return base.CreateElementToolPrototype(store, domainClassId);
 }  }    }
-
 ```
 
 ## <a name="connections"></a> Personalizzazione di strumenti di connessione
@@ -167,15 +166,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>Codice personalizzato per i generatori di connessioni
  Nell'interfaccia utente sono disponibili quattro caselle di controllo che definiscono i vari tipi di personalizzazione dei generatori di connessioni:
 
--   il **accettazione personalizzata** casella di controllo in una direttiva del ruolo di origine o destinazione
+- il **accettazione personalizzata** casella di controllo in una direttiva del ruolo di origine o destinazione
 
--   il **connessione personalizzata** casella di controllo in una direttiva del ruolo di origine o destinazione
+- il **connessione personalizzata** casella di controllo in una direttiva del ruolo di origine o destinazione
 
--   il **Usa la connessione personalizzata** casella di controllo in una direttiva di connessione
+- il **Usa la connessione personalizzata** casella di controllo in una direttiva di connessione
 
--   il **personalizzato** proprietà del generatore di connessione
+- il **personalizzato** proprietà del generatore di connessione
 
- Per implementare queste personalizzazioni, è necessario fornire codice. Per informazioni sul codice da fornire, selezionare una delle caselle di controllo, fare clic su Trasforma tutti i modelli e quindi compilare la soluzione. Verrà visualizzato un report degli errori. Fare doppio clic sul report degli errori per visualizzare un commento che indica il codice da aggiungere.
+  Per implementare queste personalizzazioni, è necessario fornire codice. Per informazioni sul codice da fornire, selezionare una delle caselle di controllo, fare clic su Trasforma tutti i modelli e quindi compilare la soluzione. Verrà visualizzato un report degli errori. Fare doppio clic sul report degli errori per visualizzare un commento che indica il codice da aggiungere.
 
 > [!NOTE]
 >  Per aggiungere il codice personalizzato, creare una definizione di classe parziale in un file di codice separato dai file di codice nelle cartelle GeneratedCode. Per non perdere il lavoro svolto, non modificare i file di codice generati. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).

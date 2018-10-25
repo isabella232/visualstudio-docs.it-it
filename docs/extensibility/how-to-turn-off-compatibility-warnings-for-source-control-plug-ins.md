@@ -14,23 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e096b52bdf6e3e0065eefbba708d7bda18ab189
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b1dca06ca82e467080f4bcd88a3b10c691345344
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888346"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Procedura: disattivare gli avvisi di compatibilità per plug-in controllo codice sorgente
 Un utente potrebbero essere visualizzati diversi avvisi di compatibilità durante l'utilizzo di controllo del codice sorgente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Gli avvisi presentati dipendono dalle funzionalità di plug-in del controllo del codice sorgente e possono essere disabilitati come dettagliate qui.  
   
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Per disabilitare l'avviso: "per garantire l'integrazione del controllo codice sorgente ottimale con Visual Studio"  
   
--   Impostare la seguente voce del Registro di sistema (se necessario, aggiungere il valore):  
+- Impostare la seguente voce del Registro di sistema (se necessario, aggiungere il valore):  
   
-     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword:00000001**  
+   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword:00000001**  
   
-     Questo avviso viene visualizzato per tutti non[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] plug-in.  
+   Questo avviso viene visualizzato per tutti non[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] plug-in.  
   
 ### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Per disabilitare l'avviso: "il provider del controllo del codice sorgente installato non supporta tutte le funzionalità"  
   

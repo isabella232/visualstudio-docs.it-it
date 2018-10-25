@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837581"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Debug o disabilitazione del codice del progetto nella finestra di progettazione XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ In molti casi, le eccezioni non gestite nella finestra di progettazione XAML pos
   
  Il codice del progetto include:  
   
--   Controlli personalizzati e controlli utente  
+- Controlli personalizzati e controlli utente  
   
--   Librerie di classi  
+- Librerie di classi  
   
--   Convertitori di valori  
+- Convertitori di valori  
   
--   Associazioni in base ai dati della fase di progettazione generati dal codice del progetto  
+- Associazioni in base ai dati della fase di progettazione generati dal codice del progetto  
   
- Quando il codice del progetto è disabilitato, Visual Studio visualizza segnaposto, ad esempio il nome della proprietà per un'associazione in cui i dati non sono più disponibili o un segnaposto per un controllo che non è più in esecuzione.  
+  Quando il codice del progetto è disabilitato, Visual Studio visualizza segnaposto, ad esempio il nome della proprietà per un'associazione in cui i dati non sono più disponibili o un segnaposto per un controllo che non è più in esecuzione.  
   
- ![Finestra di dialogo Eccezione non gestita](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![Finestra di dialogo Eccezione non gestita](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Per determinare se il codice del progetto sta causando un'eccezione  
   

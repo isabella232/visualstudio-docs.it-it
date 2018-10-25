@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::EnumEEs | Documenti Microsoft
+title: IDebugSettingsCallback2::EnumEEs | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: add7f9b34119fb11938064598b213e26000ecb1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe4d3d2f2a3d76bbaec8c92c8053bac07e352389
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812088"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Enumera gli analizzatori di espressioni disponibili dato gli identificatori di lingua e fornitore.  
+Enumera gli analizzatori di espressioni disponibili assegnati gli identificatori di lingua e il fornitore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,13 +45,13 @@ public int EnumEEs(
   
 #### <a name="parameters"></a>Parametri  
  `celtBuffer`  
- [in] Numero di elementi di `pceltEEs` buffer.  
+ [in] Numero di elementi nel `pceltEEs` buffer.  
   
  `rgguidLang`  
  [in, out] Identificatore univoco per il linguaggio di programmazione.  
   
  `rgguidVendor`  
- [in, out] Identificatore univoco per il fornitore.  
+ [in, out] Identificatore univoco del fornitore.  
   
  `pceltEEs`  
  [in, out] Matrice di analizzatori di espressioni.  

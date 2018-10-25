@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888099"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitazioni del debug di WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sono disponibili tre modalità per avviare il debug di un servizio WCF:  
   
--   Si esegue il debug di un processo client che chiama un servizio. Il debugger esegue le istruzioni del servizio. Il servizio non deve essere presente nella stessa soluzione dell'applicazione client.  
+- Si esegue il debug di un processo client che chiama un servizio. Il debugger esegue le istruzioni del servizio. Il servizio non deve essere presente nella stessa soluzione dell'applicazione client.  
   
--   Si esegue il debug di un processo client che effettua una richiesta a un servizio. Il servizio deve essere parte della soluzione.  
+- Si esegue il debug di un processo client che effettua una richiesta a un servizio. Il servizio deve essere parte della soluzione.  
   
--   Si utilizza **Connetti a processo** per connettersi a un servizio che è attualmente in esecuzione. Il debug inizia all'interno del servizio.  
+- Si utilizza **Connetti a processo** per connettersi a un servizio che è attualmente in esecuzione. Il debug inizia all'interno del servizio.  
   
- In questo argomento vengono descritte le limitazioni di questi scenari.  
+  In questo argomento vengono descritte le limitazioni di questi scenari.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitazioni dell'esecuzione di istruzioni in un servizio  
  Per eseguire istruzioni in un servizio da un'applicazione client di cui si esegue il debug, è necessario soddisfare le seguenti condizioni:  

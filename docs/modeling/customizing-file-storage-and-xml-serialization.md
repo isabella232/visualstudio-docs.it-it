@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886461"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizzare l'archiviazione dei file e la serializzazione XML
 
@@ -301,7 +301,7 @@ I nodi di proprietà XML si trovano sotto i nodi di classe.
 Nodi di ruolo dati si trovano in nodi di classe di origine.
 
 |Proprietà|Descrizione|
-|--------------|-----------------|
+|-|-|
 |È di Moniker personalizzato|Impostare su true se si desidera fornire il proprio codice per la generazione e la risoluzione di moniker che passano attraverso questa relazione.<br /><br /> Per istruzioni dettagliate, compilare la soluzione e quindi fare doppio clic sui messaggi di errore.|
 |Relazione di dominio|Specifica la relazione in cui queste opzioni si applicano. Sola lettura.|
 |Omettere l'elemento|Se true, il nodo XML che corrisponde al ruolo di origine viene omesso dallo schema.<br /><br /> Se è presente più di una relazione tra le classi di origine e di destinazione, questo nodo del ruolo viene fatta distinzione tra i collegamenti che appartengono a due relazioni. È pertanto consigliabile non impostare questa opzione in questo caso.|

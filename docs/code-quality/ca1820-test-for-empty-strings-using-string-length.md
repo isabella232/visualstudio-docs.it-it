@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24850c61216354f7d9fa197dc7c4317105ab98ba
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 6c6c25f48ecd628d3d6c32bb235180f91e750cdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847777"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Testare le stringhe vuote utilizzando la lunghezza di stringa
+
 |||
 |-|-|
 |TypeName|TestForEmptyStringsUsingStringLength|

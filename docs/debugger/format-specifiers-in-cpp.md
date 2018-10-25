@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 714ca84a860f01ecc0df6536adb5ea9bb60989fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820499"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Identificatori di formato in C++ nel debugger di Visual Studio
 È possibile modificare il formato con cui viene visualizzato il valore nella finestra **Espressioni di controllo** usando gli identificatori di formato.  
@@ -43,9 +43,9 @@ ms.locfileid: "37057756"
   
 > [!NOTE]
 >  Quando il debugger nativo di Visual Studio è cambiato in un nuovo motore di debug, sono stati aggiunti nuovi identificatori di formato e alcuni precedenti sono state rimosse. Il debugger precedente viene ancora usato per il debug di interoperabilità (nativo e gestito combinati) con C++/CLI. Le sezioni seguenti in questo argomento illustrano gli identificatori di formato per ogni motore di debug.
->   
->  -   [Identificatori di formato](#BKMK_Visual_Studio_2012_format_specifiers) descrive gli identificatori di formato nel nuovo motore di debug.  
-> -   [Identificatori di formato per il debug di interoperabilità con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descrive gli identificatori di formato nel motore di debug precedente.  
+> 
+> - [Identificatori di formato](#BKMK_Visual_Studio_2012_format_specifiers) descrive gli identificatori di formato nel nuovo motore di debug.  
+>   -   [Identificatori di formato per il debug di interoperabilità con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descrive gli identificatori di formato nel motore di debug precedente.  
   
 ## <a name="using-format-specifiers"></a>Uso degli identificatori di formato  
  Se si ha il codice seguente:  

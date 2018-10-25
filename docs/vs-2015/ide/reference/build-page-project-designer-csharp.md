@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837183"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Usare la pagina **Compilazione** di **Creazione progetti** per specificare le pr
   
  Questa casella di controllo è disponibile solo se tutte le condizioni seguenti sono true:  
   
--   Nella **pagina Compilazione** l'elenco **Piattaforma di destinazione** è impostato su **Any CPU** (Qualsiasi CPU).  
+- Nella **pagina Compilazione** l'elenco **Piattaforma di destinazione** è impostato su **Any CPU** (Qualsiasi CPU).  
   
--   Nella **pagina Applicazione** l'elenco **Tipo di Output** specifica che il progetto è un'applicazione.  
+- Nella **pagina Applicazione** l'elenco **Tipo di Output** specifica che il progetto è un'applicazione.  
   
--   Nella **pagina Applicazione** l'elenco **Framework di destinazione** specifica .NET Framework 4.5.  
+- Nella **pagina Applicazione** l'elenco **Framework di destinazione** specifica .NET Framework 4.5.  
   
- **Consenti codice unsafe**  
- Consente la compilazione del codice che usa la parola chiave [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0). Per altre informazioni, vedere [/unsafe (Opzioni del compilatore C#)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
+  **Consenti codice unsafe**  
+  Consente la compilazione del codice che usa la parola chiave [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0). Per altre informazioni, vedere [/unsafe (Opzioni del compilatore C#)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
   
- **Ottimizza codice**  
- Abilita o disabilita le ottimizzazioni eseguite dal compilatore per ridurre le dimensioni del file di output e aumentarne la velocità e l'efficienza. Per altre informazioni, vedere [/optimize (Opzioni del compilatore C#)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
+  **Ottimizza codice**  
+  Abilita o disabilita le ottimizzazioni eseguite dal compilatore per ridurre le dimensioni del file di output e aumentarne la velocità e l'efficienza. Per altre informazioni, vedere [/optimize (Opzioni del compilatore C#)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
   
 ## <a name="errors-and-warnings"></a>Errori e avvisi  
  Le impostazioni riportate di seguito sono usate per configurare le opzioni di errori e avvisi del processo di compilazione.  
