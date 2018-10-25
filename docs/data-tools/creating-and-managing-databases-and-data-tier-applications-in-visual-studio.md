@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ca08103614989ddbfd096a08a1531e756c9f67c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7f3d3f8dc34cf354fd6cb6b6689701dab791132d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942530"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Progetti di database e applicazioni livello dati in Visual Studio
 
@@ -30,11 +30,11 @@ Per un elenco delle funzionalità di database supportate dalle applicazioni live
 
 ## <a name="common-high-level-tasks"></a>Attività comuni di alto livello
 
-|Attività di alto livello|Contenuto di supporto|
-|----------------------|------------------------|
-|**Iniziare a sviluppare un'applicazione livello dati:** un'applicazione livello dati è un nuovo concetto introdotto con [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] che contiene la definizione per un [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] database e il supporto di oggetti utilizzati da un client-server o a 3 livelli delle istanze applicazione. Un'applicazione livello dati include gli oggetti di database, ad esempio tabelle e viste, insieme alle entità di istanza, ad esempio gli account di accesso. È possibile usare Visual Studio per creare un progetto di applicazione livello dati, compilare un file di pacchetto di applicazione livello dati e inviare tale file di pacchetto DAC da un amministratore del database per la distribuzione in un'istanza del [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] motore di database.|-   [Creazione e gestione di applicazioni livello dati](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Eseguire lo sviluppo di database iterativo:** se sei uno sviluppatore o un tester, estrarre le parti del progetto e quindi eseguire l'aggiornamento in un ambiente di sviluppo isolato. Con questo tipo di ambiente, è possibile testare le modifiche senza influire su altri membri del team. Dopo aver complete le modifiche, estrarre i file in controllo della versione, in cui altri membri del team possono ottenere le modifiche e compilare e distribuirle a un server di prova.|-   [Progettazione query e gli editor di testo (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Debugger Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324)|
-|**La creazione di prototipi, verifica risultati del test e modifica degli script di database e oggetti:** è possibile usare il [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] editor per eseguire una di queste attività comuni.|-   [Progettazione query e gli editor di testo (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)|
+| Attività di alto livello | Contenuto di supporto |
+| - | - |
+| **Iniziare a sviluppare un'applicazione livello dati:** un'applicazione livello dati è un nuovo concetto introdotto con [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] che contiene la definizione per un [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] database e il supporto di oggetti utilizzati da un client-server o a 3 livelli delle istanze applicazione. Un'applicazione livello dati include gli oggetti di database, ad esempio tabelle e viste, insieme alle entità di istanza, ad esempio gli account di accesso. È possibile usare Visual Studio per creare un progetto di applicazione livello dati, compilare un file di pacchetto di applicazione livello dati e inviare tale file di pacchetto DAC da un amministratore del database per la distribuzione in un'istanza del [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] motore di database. | -   [Creazione e gestione di applicazioni livello dati](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328) |
+| **Eseguire lo sviluppo di database iterativo:** se sei uno sviluppatore o un tester, estrarre le parti del progetto e quindi eseguire l'aggiornamento in un ambiente di sviluppo isolato. Con questo tipo di ambiente, è possibile testare le modifiche senza influire su altri membri del team. Dopo aver complete le modifiche, estrarre i file in controllo della versione, in cui altri membri del team possono ottenere le modifiche e compilare e distribuirle a un server di prova. | -   [Progettazione query e gli editor di testo (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Debugger Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) |
+| **La creazione di prototipi, verifica risultati del test e modifica degli script di database e oggetti:** è possibile usare il [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] editor per eseguire una di queste attività comuni. | -   [Progettazione query e gli editor di testo (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) |
 
 ## <a name="see-also"></a>Vedere anche
 

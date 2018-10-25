@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e937e1ec212ccefb32b62abfc9fa01421343070
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 73c501d545f76012b63bde291001b38c214c3eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950225"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Procedura: eliminare a livello di programmazione i fogli di lavoro dalle cartelle di lavoro
   È possibile eliminare qualsiasi foglio di lavoro da una cartella di lavoro. Per eliminare un foglio di lavoro, usare l'elemento host del foglio di lavoro o accedere al foglio di lavoro tramite la raccolta Sheets della cartella di lavoro.  
@@ -31,15 +31,15 @@ ms.locfileid: "35257309"
 ## <a name="use-the-worksheet-host-item"></a>Usare l'elemento host foglio di lavoro  
  Se il foglio di lavoro è stato aggiunto in fase di progettazione in una personalizzazione a livello di documento, per eliminarlo usare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A>. Il codice seguente elimina un foglio di lavoro da una cartella di lavoro facendo riferimento direttamente all'elemento host del foglio di lavoro.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  Questo codice viene eseguito solo in progetti creati usando uno dei modelli di progetto seguenti:  
->   
-> -   Cartella di lavoro di Excel 2013  
-> -   Modello di Excel 2013  
-> -   Cartella di lavoro di Excel 2010  
-> -   Modello di Excel 2010  
->   
->  Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento per la **Interop** assembly, quindi è necessario usare le classi da tale assembly per aprire una cartella di lavoro ed eliminare un foglio di lavoro. Per altre informazioni, vedere [procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+> 
+> - Cartella di lavoro di Excel 2013  
+> - Modello di Excel 2013  
+> - Cartella di lavoro di Excel 2010  
+> - Modello di Excel 2010  
+> 
+>   Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento per la **Interop** assembly, quindi è necessario usare le classi da tale assembly per aprire una cartella di lavoro ed eliminare un foglio di lavoro. Per altre informazioni, vedere [procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Per eliminare un foglio di lavoro mediante un elemento host del foglio di lavoro  
   
@@ -51,11 +51,11 @@ ms.locfileid: "35257309"
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Usare la raccolta Sheets della cartella di lavoro di Excel  
  Accedere ai fogli di lavoro mediante la raccolta <xref:Microsoft.Office.Interop.Excel.Sheets> di Microsoft Office Excel nei casi seguenti:  
   
--   Se si intende eliminare un foglio di lavoro in un componente aggiuntivo VSTO.  
+- Se si intende eliminare un foglio di lavoro in un componente aggiuntivo VSTO.  
   
--   Se il foglio di lavoro che si vuole eliminare è stato creato in fase di esecuzione in una personalizzazione a livello di documento.  
+- Se il foglio di lavoro che si vuole eliminare è stato creato in fase di esecuzione in una personalizzazione a livello di documento.  
   
- Il codice seguente elimina un foglio di lavoro da una cartella di lavoro facendo riferimento alla pagina tramite il numero di indice il **fogli** raccolta. Per questo codice si presume che sia già stato creato un nuovo foglio di lavoro a livello di codice.  
+  Il codice seguente elimina un foglio di lavoro da una cartella di lavoro facendo riferimento alla pagina tramite il numero di indice il **fogli** raccolta. Per questo codice si presume che sia già stato creato un nuovo foglio di lavoro a livello di codice.  
   
 > [!IMPORTANT]  
 >  Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento per la **Interop** assembly, quindi è necessario usare le classi da tale assembly per aprire una cartella di lavoro ed eliminare un foglio di lavoro. Per altre informazioni, vedere [procedura: applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  

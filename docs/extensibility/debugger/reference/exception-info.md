@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO | Documenti Microsoft
+title: EXCEPTION_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48772ed5835daeff9d47773e6e48526993fa425
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bbefc02a05d03dc966c05941ca08c05cce0a5a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947914"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
-Viene descritta un'eccezione o errore di run-time generata dal programma sottoposto a debug.  
+Descrive un'eccezione o errore di run-time generato dal programma in fase di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -60,16 +60,16 @@ public struct EXCEPTION_INFO {
  Il nome dell'eccezione.  
   
  dwCode  
- Il codice di identificazione dell'errore di eccezione o run-time.  
+ Il codice di identificazione per errore eccezione o di run-time.  
   
  dwState  
- Un valore di [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) enumerazione che definisce lo stato dell'eccezione.  
+ Un valore compreso il [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) enumerazione che definisce lo stato dell'eccezione.  
   
  guidType  
- L'identificatore di lingua GUID, ovvero `guidLang` o `guidEng`.  
+ L'identificatore di lingua GUID, ad esempio `guidLang` o `guidEng`.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura viene passata come parametro per il [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) e [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metodi. Questa struttura viene inoltre passata per il [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) metodo deve essere compilato.  
+ Questa struttura viene passata come parametro per il [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) e il [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metodi. Questa struttura viene inoltre passata per il [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) metodo deve essere compilato.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

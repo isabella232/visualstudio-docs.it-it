@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298883"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949240"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Informazioni sui valori dei dati di strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ Il metodo di profilatura *Strumentazione* di [!INCLUDE[vsprvs](../includes/vsprv
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Il metodo di strumentazione inserisce codice all'inizio e alla fine delle funzioni di destinazione nel file binario sottoposto a profilatura, oltre che prima e dopo ogni chiamata da tali funzioni ad altre funzioni. Il codice inserito registra le informazioni seguenti:  
+  Il metodo di strumentazione inserisce codice all'inizio e alla fine delle funzioni di destinazione nel file binario sottoposto a profilatura, oltre che prima e dopo ogni chiamata da tali funzioni ad altre funzioni. Il codice inserito registra le informazioni seguenti:  
   
--   L'intervallo tra questo evento di raccolta e quello precedente.  
+- L'intervallo tra questo evento di raccolta e quello precedente.  
   
--   Se il sistema operativo ha eseguito un'operazione durante l'intervallo. Ad esempio, il sistema operativo potrebbe eseguire operazioni di lettura o scrittura su disco o passare dal thread di destinazione a un altro thread in un altro processo.  
+- Se il sistema operativo ha eseguito un'operazione durante l'intervallo. Ad esempio, il sistema operativo potrebbe eseguire operazioni di lettura o scrittura su disco o passare dal thread di destinazione a un altro thread in un altro processo.  
   
- **Requisiti**  
+  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Per ogni intervallo, l'analisi del profiler ricostruisce lo stack di chiamate presente alla fine dell'intervallo. Uno stack di chiamate è l'elenco delle funzioni attive in un processore in un determinato momento. Una sola funzione (la funzione corrente) esegue codice: le altre funzioni sono la catena delle chiamate di funzione che ha determinato la chiamata alla funzione corrente (lo stack di chiamate).  
+  Per ogni intervallo, l'analisi del profiler ricostruisce lo stack di chiamate presente alla fine dell'intervallo. Uno stack di chiamate è l'elenco delle funzioni attive in un processore in un determinato momento. Una sola funzione (la funzione corrente) esegue codice: le altre funzioni sono la catena delle chiamate di funzione che ha determinato la chiamata alla funzione corrente (lo stack di chiamate).  
   
- Per ogni funzione nello stack di chiamate durante la registrazione dell'intervallo, l'analisi del profiler aggiunge l'intervallo a uno o più di quattro valori di dati per la funzione. L'analisi aggiunge l'intervallo a un valore di dati per una funzione in base ai due criteri:  
+  Per ogni funzione nello stack di chiamate durante la registrazione dell'intervallo, l'analisi del profiler aggiunge l'intervallo a uno o più di quattro valori di dati per la funzione. L'analisi aggiunge l'intervallo a un valore di dati per una funzione in base ai due criteri:  
   
--   Se l'intervallo ha avuto luogo nel codice della funzione o in una *funzione figlio* (una funzione che è stata chiamata dalla funzione).  
+- Se l'intervallo ha avuto luogo nel codice della funzione o in una *funzione figlio* (una funzione che è stata chiamata dalla funzione).  
   
--   Se si è verificato un evento del sistema operativo durante l'intervallo.  
+- Se si è verificato un evento del sistema operativo durante l'intervallo.  
   
- I valori di dati per un intervallo di una di funzione o un intervallo di dati sono denominati *Inclusivo trascorso*, *Esclusivo trascorso*, *Inclusivo applicazione* ed *Esclusivo applicazione*:  
+  I valori di dati per un intervallo di una di funzione o un intervallo di dati sono denominati *Inclusivo trascorso*, *Esclusivo trascorso*, *Inclusivo applicazione* ed *Esclusivo applicazione*:  
   
--   Tutti gli intervalli di una funzione vengono aggiunti al valore di dati Inclusivo trascorso.  
+- Tutti gli intervalli di una funzione vengono aggiunti al valore di dati Inclusivo trascorso.  
   
--   Se l'intervallo ha avuto luogo nel codice della funzione e non in una funzione figlio, l'intervallo viene aggiunto al valore di dati Esclusivo trascorso della funzione.  
+- Se l'intervallo ha avuto luogo nel codice della funzione e non in una funzione figlio, l'intervallo viene aggiunto al valore di dati Esclusivo trascorso della funzione.  
   
--   Se non si è verificato alcun evento del sistema operativo durante l'intervallo, l'intervallo viene aggiunto al valore di dati Inclusivo applicazione.  
+- Se non si è verificato alcun evento del sistema operativo durante l'intervallo, l'intervallo viene aggiunto al valore di dati Inclusivo applicazione.  
   
--   Se non si è verificato alcun evento del sistema operativo durante l'intervallo e l'intervallo ha avuto luogo durante l'esecuzione diretta del codice della funzione (non in una funzione figlio), l'intervallo viene aggiunto al valore di dati Esclusivo applicazione.  
+- Se non si è verificato alcun evento del sistema operativo durante l'intervallo e l'intervallo ha avuto luogo durante l'esecuzione diretta del codice della funzione (non in una funzione figlio), l'intervallo viene aggiunto al valore di dati Esclusivo applicazione.  
   
- I report degli strumenti di profilatura aggregano i valori totali delle funzioni nella sessione di profilatura, oltre che i processi, i thread e i file binari della sessione.  
+  I report degli strumenti di profilatura aggregano i valori totali delle funzioni nella sessione di profilatura, oltre che i processi, i thread e i file binari della sessione.  
   
 ## <a name="elapsed-inclusive-values"></a>Valori di tempo inclusivo trascorso  
  Tempo totale impiegato per l'esecuzione di una funzione e delle relative funzioni figlio.  

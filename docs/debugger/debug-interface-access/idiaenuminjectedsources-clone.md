@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumInjectedSources::Clone | Documenti Microsoft
+title: Idiaenuminjectedsources | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 661013b1fd709eb316b961b1db5fc30b3f4c8e66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bca7bd10b7092654d1bd7c7bf8c0f0f18ee72a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950989"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-Crea un enumeratore che contiene lo stesso stato di enumerazione come enumerazione corrente.  
+Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>Parametri  
  `ppenum`  
- [out] Restituisce un [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) oggetto che contiene un duplicato dell'enumeratore. Le origini inserite non siano duplicate, solo l'enumeratore.  
+ [out] Restituisce un [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) oggetto che contiene un duplicato dell'enumeratore. Le origini inserite non vengano duplicate, solo l'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

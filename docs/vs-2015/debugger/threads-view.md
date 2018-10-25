@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1adef2aeda5385fae1e3603127e3eea3f5ad109b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943037"
 ---
 # <a name="threads-view"></a>Visualizzazione Thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ Visualizzazione thread è un elenco semplice di tutti i thread associati alle fi
   
 #### <a name="to-open-the-threads-view"></a>Per aprire la visualizzazione thread  
   
-1.  Dal **Spy** menu, scegliere **thread**.  
+1. Dal **Spy** menu, scegliere **thread**.  
   
- ![Spy&#43; &#43; visualizzazione thread](../debugger/media/spy-threads.png "Spy + + _Threads")  
-Visualizzazione Thread di Spy++  
+   ![Spy&#43; &#43; visualizzazione thread](../debugger/media/spy-threads.png "Spy + + _Threads")  
+   Visualizzazione Thread di Spy++  
   
- La figura precedente mostra la visualizzazione dei thread.  
+   La figura precedente mostra la visualizzazione dei thread.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [La ricerca di un Thread nella visualizzazione thread](../debugger/how-to-search-for-a-thread-in-threads-view.md)  

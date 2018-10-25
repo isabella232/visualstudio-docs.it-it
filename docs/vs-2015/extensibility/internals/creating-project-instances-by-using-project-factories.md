@@ -16,12 +16,12 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f66e32be2625347f413f3a796396a313b02aad7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949233"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Creazione di istanze di progetto tramite le factory di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ Tipi di progetto in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usano un *fa
 ## <a name="creating-an-owned-project"></a>Creazione di un progetto di proprietà  
  Un proprietario crea un progetto di proprietà in due fasi:  
   
-1.  Chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> (metodo). In questo modo il progetto di proprietà per creare un oggetto di progetto aggregato basato sull'input che controlla `IUnknown`. Il progetto di proprietà passa interna `IUnknown` e l'oggetto aggregato al progetto proprietario. In questo modo il progetto di proprietà per l'archiviazione interna `IUnknown`.  
+1. Chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> (metodo). In questo modo il progetto di proprietà per creare un oggetto di progetto aggregato basato sull'input che controlla `IUnknown`. Il progetto di proprietà passa interna `IUnknown` e l'oggetto aggregato al progetto proprietario. In questo modo il progetto di proprietà per l'archiviazione interna `IUnknown`.  
   
-2.  Chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> (metodo). Il progetto di proprietà non tutti la creazione dell'istanza quando viene chiamato questo metodo invece di chiamare `IVsProjectFactory::CreateProject` come invece accade per i progetti che non sono di proprietà. L'input `VSOWNEDPROJECTOBJECT` enumerazione viene in genere il progetto di proprietà aggregato. Il progetto di proprietà è possibile usare questa variabile per determinare se è già stato creato il relativo oggetto di progetto (cookie diverso da NULL) o deve essere creato (cookie uguale a NULL).  
+2. Chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> (metodo). Il progetto di proprietà non tutti la creazione dell'istanza quando viene chiamato questo metodo invece di chiamare `IVsProjectFactory::CreateProject` come invece accade per i progetti che non sono di proprietà. L'input `VSOWNEDPROJECTOBJECT` enumerazione viene in genere il progetto di proprietà aggregato. Il progetto di proprietà è possibile usare questa variabile per determinare se è già stato creato il relativo oggetto di progetto (cookie diverso da NULL) o deve essere creato (cookie uguale a NULL).  
   
- Tipi di progetto vengono identificati da un GUID, simile al CLSID di un oggetto COM cocreatable univoco del progetto. In genere, gli handle di factory di un progetto creazione di istanze di un singolo tipo di progetto, anche se è possibile disporre di una factory del progetto di gestire più di un tipo di progetto GUID.  
+   Tipi di progetto vengono identificati da un GUID, simile al CLSID di un oggetto COM cocreatable univoco del progetto. In genere, gli handle di factory di un progetto creazione di istanze di un singolo tipo di progetto, anche se è possibile disporre di una factory del progetto di gestire più di un tipo di progetto GUID.  
   
- Tipi di progetto sono associati a un'estensione particolare. Quando un utente tenta di aprire un file di progetto esistente o si tenta di creare un nuovo progetto tramite la clonazione di un modello, l'IDE Usa l'estensione per il file per determinare il GUID del progetto corrispondente.  
+   Tipi di progetto sono associati a un'estensione particolare. Quando un utente tenta di aprire un file di progetto esistente o si tenta di creare un nuovo progetto tramite la clonazione di un modello, l'IDE Usa l'estensione per il file per determinare il GUID del progetto corrispondente.  
   
- Non appena l'IDE determina che se deve creare un nuovo progetto o aprire un progetto esistente di un determinato tipo, l'IDE Usa le informazioni nel Registro di sistema in [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects] per individuare l'oggetto Pacchetto VSPackage implementa la factory di progetto necessari. L'IDE carica questo pacchetto VSPackage. Nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metodo, il pacchetto VSPackage deve registrare la factory del progetto con l'IDE chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> (metodo).  
+   Non appena l'IDE determina che se deve creare un nuovo progetto o aprire un progetto esistente di un determinato tipo, l'IDE Usa le informazioni nel Registro di sistema in [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects] per individuare l'oggetto Pacchetto VSPackage implementa la factory di progetto necessari. L'IDE carica questo pacchetto VSPackage. Nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metodo, il pacchetto VSPackage deve registrare la factory del progetto con l'IDE chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> (metodo).  
   
- Il metodo principale del `IVsProjectFactory` interfaccia è <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> che devono gestire due scenari: apertura di un progetto esistente e crea un nuovo progetto. La maggior parte dei progetti archiviano il proprio stato di progetto in un file di progetto. In genere, i nuovi progetti vengono creati tramite una copia del file del modello passata al `CreateProject` (metodo) e quindi aprendo la copia. I progetti esistenti vengono create istanze tramite direttamente l'apertura del file di progetto passato a `CreateProject` (metodo). Il `CreateProject` metodo consente di visualizzare le funzionalità dell'interfaccia utente aggiuntive all'utente in base alle esigenze.  
+   Il metodo principale del `IVsProjectFactory` interfaccia è <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> che devono gestire due scenari: apertura di un progetto esistente e crea un nuovo progetto. La maggior parte dei progetti archiviano il proprio stato di progetto in un file di progetto. In genere, i nuovi progetti vengono creati tramite una copia del file del modello passata al `CreateProject` (metodo) e quindi aprendo la copia. I progetti esistenti vengono create istanze tramite direttamente l'apertura del file di progetto passato a `CreateProject` (metodo). Il `CreateProject` metodo consente di visualizzare le funzionalità dell'interfaccia utente aggiuntive all'utente in base alle esigenze.  
   
- Un progetto può anche non usare alcun file e, invece di archiviare lo stato di progetto in un meccanismo di archiviazione diverso dal file system, ad esempio un database o un server Web. In questo caso, il parametro del nome file passato al `CreateProject` metodo non è effettivamente un percorso del file system, ma una stringa univoca, ovvero un URL, per identificare i dati del progetto. Non è necessaria copiare i file di modello che vengono passati al `CreateProject` per attivare la sequenza di costruzione appropriate da eseguire.  
+   Un progetto può anche non usare alcun file e, invece di archiviare lo stato di progetto in un meccanismo di archiviazione diverso dal file system, ad esempio un database o un server Web. In questo caso, il parametro del nome file passato al `CreateProject` metodo non è effettivamente un percorso del file system, ma una stringa univoca, ovvero un URL, per identificare i dati del progetto. Non è necessaria copiare i file di modello che vengono passati al `CreateProject` per attivare la sequenza di costruzione appropriate da eseguire.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   

@@ -26,12 +26,12 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acae33e015b158c36b5e8c27b5b88131c863fc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949890"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Visualizzare i valori di dati nei suggerimenti dati nell'editor del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>Per visualizzare un suggerimento dati (solo in modalità di interruzione)  
   
-1.  In una finestra di origine, posizionare il puntatore del mouse su una qualsiasi variabile nell'ambito corrente.  
+1. In una finestra di origine, posizionare il puntatore del mouse su una qualsiasi variabile nell'ambito corrente.  
   
-     Viene visualizzato un suggerimento dati.  
+    Viene visualizzato un suggerimento dati.  
   
-    > [!NOTE]
-    >  I suggerimenti dati vengono sempre valutati nel contesto in cui l'esecuzione viene sospesa, non nel punto in cui passa il cursore. Se si passa il puntatore su una variabile in un'altra funzione con lo stesso nome di una variabile presente nel contesto corrente, il valore della variabile nell'altra funzione viene visualizzato come valore della variabile nel contesto corrente.  
+   > [!NOTE]
+   >  I suggerimenti dati vengono sempre valutati nel contesto in cui l'esecuzione viene sospesa, non nel punto in cui passa il cursore. Se si passa il puntatore su una variabile in un'altra funzione con lo stesso nome di una variabile presente nel contesto corrente, il valore della variabile nell'altra funzione viene visualizzato come valore della variabile nel contesto corrente.  
   
-2.  Il suggerimento dati scompare quando si rimuove il puntatore del mouse. Per bloccare il suggerimento dati, in modo che resti aperta, scegliere il **blocca a origine** icona, o  
+2. Il suggerimento dati scompare quando si rimuove il puntatore del mouse. Per bloccare il suggerimento dati, in modo che resti aperta, scegliere il **blocca a origine** icona, o  
   
-    -   Fare doppio clic su una variabile, quindi fare clic su **blocca a origine**.  
+   - Fare doppio clic su una variabile, quindi fare clic su **blocca a origine**.  
   
      Il suggerimento dati bloccato verrà chiuso al termine della sessione di debug.  
   

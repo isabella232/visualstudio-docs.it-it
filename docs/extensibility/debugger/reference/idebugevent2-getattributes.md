@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2::GetAttributes | Documenti Microsoft
+title: IDebugEvent2::GetAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d6305d7000456eb81cf01c9e85e6c2a421ed800
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 515775a064d1e260d9eb028c6e1b6020b7d642cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935302"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 Ottiene gli attributi per questo evento di debug.  
@@ -47,7 +47,7 @@ int GetAttribute(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia è comune a tutti gli eventi. Questo metodo descrive il tipo di evento. ad esempio, è l'evento sincrono o asincrono e si tratta di un evento di arresto.  
+ Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia è comune a tutti gli eventi. Questo metodo viene descritto il tipo di evento. ad esempio, è l'evento sincrono o asincrono e si tratta di un evento di arresto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione processi | Documenti Microsoft
+title: Visualizzazione processi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,44 +14,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd848f2e771a2207e89d67eddbead22d2180990
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 003ea4962766d9c0b8adef698912024fecd1508e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936706"
 ---
 # <a name="processes-view"></a>Visualizzazione processi
-La visualizzazione dei processi viene visualizzato un albero di tutti i processi attivi nel sistema. Vengono visualizzati il nome del modulo e l'ID processo. Se si desidera esaminare un particolare processo di sistema, che generalmente corrisponde a un programma in esecuzione, utilizzare la visualizzazione dei processi. I processi vengono identificati da nomi di modulo o vengono designati come "processi di sistema".  
+La visualizzazione dei processi viene visualizzato un albero di tutti i processi attivi nel sistema. Vengono visualizzati il nome del modulo e l'ID processo. Se si vuole esaminare un particolare processo di sistema, che in genere corrisponde a un programma in esecuzione, usare la visualizzazione dei processi. I processi sono identificati da nomi di modulo o vengono designati come "processi di sistema".  
   
- Microsoft Windows supporta più processi. Ogni processo può avere uno o più thread e ogni thread può avere uno o più finestre di primo livello. Ogni finestra di primo livello può disporre di una serie di windows. Un simbolo + indica che un livello è compresso. La visualizzazione compressa è costituita da una riga per ogni processo. Scegliere il simbolo + per espandere il livello.  
+ Microsoft Windows supporta più processi. Ogni processo può avere uno o più thread e ogni thread può avere uno o più associate finestre di primo livello. Ogni finestra di primo livello può disporre di una serie di windows. Un simbolo + indica che un livello è compressa. La visualizzazione compressa è costituito da una riga per ogni processo. Scegliere il simbolo + per espandere il livello.  
   
- Se si desidera esaminare un particolare processo di sistema, che generalmente corrisponde a un programma in esecuzione, utilizzare la visualizzazione dei processi. I processi vengono identificati da nomi di modulo o vengono designati come "processi di sistema". Per trovare un processo, comprimere la struttura ad albero e l'elenco di ricerca.  
+ Se si vuole esaminare un particolare processo di sistema, che in genere corrisponde a un programma in esecuzione, usare la visualizzazione dei processi. I processi sono identificati da nomi di modulo o vengono designati come "processi di sistema". Per trovare un processo, comprimere l'albero e l'elenco di ricerca.  
   
 ## <a name="procedures"></a>Procedure  
   
 #### <a name="to-open-the-processes-view"></a>Per aprire la visualizzazione dei processi  
   
-1.  Dal **Spy** menu, scegliere **processi**.  
+1. Dal **Spy** menu, scegliere **processi**.  
   
- ![Spy&#43; &#43; visualizzazione processi](../debugger/media/spy--_processes.png "Spy + + _Processes")  
-Visualizzazione processi di Spy++  
+   ![Spy&#43; &#43; visualizzazione processi](../debugger/media/spy--_processes.png "Spy + + _Processes")  
+   Visualizzazione processi di Spy++  
   
- La seguente figura mostra la visualizzazione dei processi con thread e processi nodi espansi.  
+   La figura precedente mostra la visualizzazione dei processi con thread e processi nodi espansi.  
   
 ### <a name="in-this-section"></a>In questa sezione  
- [Ricerca di un processo nella visualizzazione processi](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ [La ricerca di un processo nella visualizzazione processi](../debugger/how-to-search-for-a-process-in-processes-view.md)  
  Viene illustrato come trovare un processo specifico nella visualizzazione processi.  
   
- [Visualizzazione delle proprietà del processo](../debugger/how-to-display-process-properties.md)  
- Viene illustrato come visualizzare ulteriori informazioni su un messaggio.  
+ [Visualizzazione delle proprietà processo](../debugger/how-to-display-process-properties.md)  
+ Viene illustrato come visualizzare altre informazioni su un messaggio.  
   
 ### <a name="related-sections"></a>Sezioni correlate  
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Vengono illustrate le visualizzazioni ad albero Spy + + di windows, i messaggi, thread e processi.  
+ Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
   
  [Uso di Spy++](../debugger/using-spy-increment.md)  
- Vengono presentati lo strumento Spy + + e come può essere usato.  
+ Introduce lo strumento Spy + + e spiega come può essere usato.  
   
  [Finestra di dialogo Ricerca processi](../debugger/process-search-dialog-box.md)  
  Utilizzato per trovare il nodo per un determinato processo nella visualizzazione processi.  
@@ -60,4 +60,4 @@ Visualizzazione processi di Spy++
  Visualizza le proprietà di un processo selezionato nella visualizzazione processi.  
   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include le sezioni che descrivono ogni Spy + + menu e finestra di dialogo.
+ Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.

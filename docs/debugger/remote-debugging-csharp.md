@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d6bd68f5e94e04cab01dcb7bafd7dcc3cf3c17d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936123"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto di un progetto c# o Visual Basic in Visual Studio
 Per eseguire il debug di un'applicazione di Visual Studio che è stata distribuita in un altro computer, installare ed eseguire remote tools sul computer in cui è distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.
@@ -56,25 +56,25 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non phone) 
 ## <a name="remote_csharp"></a> Eseguire il debug remoto del progetto
 Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic in un computer remoto, ma può comunque eseguirne il debug in modalità remota come illustrato di seguito. La procedura seguente presuppone che si desidera eseguire il debug in un computer denominato **MJO DL**, come mostrato nell'illustrazione seguente.
   
-1.  Creare un progetto WPF denominato **MyWpf**.  
+1. Creare un progetto WPF denominato **MyWpf**.  
   
-2.  Impostare un punto di interruzione facilmente raggiungibile nel codice.  
+2. Impostare un punto di interruzione facilmente raggiungibile nel codice.  
   
-     Ad esempio, è possibile impostare un punto di interruzione in un gestore pulsanti. A tale scopo, aprire MainWindow. XAML e aggiungere un pulsante dalla casella degli strumenti, quindi fare doppio clic sul pulsante per aprire il gestore.
+    Ad esempio, è possibile impostare un punto di interruzione in un gestore pulsanti. A tale scopo, aprire MainWindow. XAML e aggiungere un pulsante dalla casella degli strumenti, quindi fare doppio clic sul pulsante per aprire il gestore.
   
-3.  In Esplora soluzioni fare clic sul progetto e scegliere **proprietà**.  
+3. In Esplora soluzioni fare clic sul progetto e scegliere **proprietà**.  
   
-4.  Nel **delle proprietà** pagina, scegliere il **Debug** scheda.  
+4. Nel **delle proprietà** pagina, scegliere il **Debug** scheda.  
   
-     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
+    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5.  Assicurarsi che il **directory di lavoro** casella di testo è vuota.  
+5. Assicurarsi che il **directory di lavoro** casella di testo è vuota.  
   
-6.  Scegli **Usa computer remoto**e il tipo **MJO-DL:4022** nella casella di testo. (4022 è il numero di porta visualizzato nella finestra del debugger remoto. Il numero della porta incrementa 2 in ogni versione di Visual Studio).
+6. Scegli **Usa computer remoto**e il tipo **MJO-DL:4022** nella casella di testo. (4022 è il numero di porta visualizzato nella finestra del debugger remoto. Il numero della porta incrementa 2 in ogni versione di Visual Studio).
   
-7.  Verificare che l'opzione **Abilita debug codice nativo** non è selezionata.  
+7. Verificare che l'opzione **Abilita debug codice nativo** non è selezionata.  
   
-8.  Compilare il progetto.  
+8. Compilare il progetto.  
   
 9. Creare una cartella nel computer remoto che è lo stesso percorso come il **Debug** cartella nel computer Visual Studio:  **\<percorso di origine > \MyWPF\MyWPF\bin\Debug**.  
   
@@ -93,7 +93,7 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
   
 13. Se richiesto, immettere le credenziali di rete per la connessione al computer remoto.  
   
-     Le credenziali necessarie variano a seconda della configurazione di sicurezza della rete. In un computer di dominio, ad esempio, è possibile immettere il nome di dominio e la password. In un computer non di dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio **MJO-DL\name@something.com**, con password non corretta.
+     Le credenziali necessarie variano a seconda della configurazione di sicurezza della rete. In un computer di dominio, ad esempio, è possibile immettere il nome di dominio e la password. In un computer non di dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio <strong>MJO-DL\name@something.com</strong>, con password non corretta.
 
      Si noterà che finestra principale dell'applicazione WPF è aperta nel computer remoto.
   
@@ -101,7 +101,7 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
   
 15. Nel computer di Visual Studio l'esecuzione viene arrestata in corrispondenza del punto di interruzione.
   
- Se si dispone di tutti i file non di codice che devono essere utilizzate dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (nelle **Esplora soluzioni**, fare clic su **Aggiungi > nuova cartella**). Quindi aggiungere i file nella cartella (nelle **Esplora soluzioni**, fare clic su **Aggiungi > elemento esistente**, quindi selezionare i file). Nel **delle proprietà** pagina per ogni file, impostare **copia in Directory di Output** a **Copia sempre**.
+    Se si dispone di tutti i file non di codice che devono essere utilizzate dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (nelle **Esplora soluzioni**, fare clic su **Aggiungi > nuova cartella**). Quindi aggiungere i file nella cartella (nelle **Esplora soluzioni**, fare clic su **Aggiungi > elemento esistente**, quindi selezionare i file). Nel **delle proprietà** pagina per ogni file, impostare **copia in Directory di Output** a **Copia sempre**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurare il debug con simboli remoti 
 
@@ -111,6 +111,6 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
  [Debug in Visual Studio](../debugger/index.md)  
  [Debugger Feature Tour](../debugger/debugger-feature-tour.md)  (Tour delle funzionalità del debugger)  
  [Configurare il Firewall di Windows per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [Assegnazioni di porta del Debugger remoto](../debugger/remote-debugger-port-assignments.md)   
+ [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Debug remoto di ASP.NET in un computer remoto con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

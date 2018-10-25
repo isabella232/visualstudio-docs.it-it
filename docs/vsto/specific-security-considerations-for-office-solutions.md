@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c3bf48cf5f8acd24661adf2d9ae36324fadfd72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951392"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considerazioni sulla sicurezza specifiche per le soluzioni Office
   Le funzionalità di sicurezza fornite da Microsoft .NET Framework e Microsoft Office consentono di proteggere le soluzioni Office da potenziali rischi di sicurezza. Questo argomento illustra alcuni di tali rischi e fornisce suggerimenti utili su come proteggersi. Sono incluse anche informazioni su come le impostazioni di sicurezza di Microsoft Office possono influire sulle soluzioni Office.  
@@ -55,23 +55,23 @@ ms.locfileid: "35672382"
   
  La protezione del modello a oggetti ha effetto sui componenti aggiuntivi in diversi modi, in base al fatto che Outlook venga usato o meno con Microsoft Exchange Server:  
   
--   Se Outlook non viene usato con Exchange, l'amministratore può abilitare o disabilitare la protezione del modello a oggetti per tutti i componenti aggiuntivi nel computer.  
+- Se Outlook non viene usato con Exchange, l'amministratore può abilitare o disabilitare la protezione del modello a oggetti per tutti i componenti aggiuntivi nel computer.  
   
--   Se Outlook viene usato con Exchange, l'amministratore può abilitare o disabilitare la protezione del modello a oggetti per tutti i componenti aggiuntivi nel computer oppure specificare che determinati componenti aggiuntivi possano essere eseguiti senza la protezione del modello a oggetti. È anche possibile modificare il comportamento della protezione del modello a oggetti per alcune aree del modello a oggetti. Ad esempio, gli amministratori possono consentire automaticamente componenti aggiuntivi VSTO di inviare posta elettronica a livello di codice anche se è abilitata la protezione del modello a oggetti.  
+- Se Outlook viene usato con Exchange, l'amministratore può abilitare o disabilitare la protezione del modello a oggetti per tutti i componenti aggiuntivi nel computer oppure specificare che determinati componenti aggiuntivi possano essere eseguiti senza la protezione del modello a oggetti. È anche possibile modificare il comportamento della protezione del modello a oggetti per alcune aree del modello a oggetti. Ad esempio, gli amministratori possono consentire automaticamente componenti aggiuntivi VSTO di inviare posta elettronica a livello di codice anche se è abilitata la protezione del modello a oggetti.  
   
- A partire da Outlook 2007, il comportamento della protezione del modello a oggetti è stato modificato per migliorare l'esperienza utente e dello sviluppatore, aiutando al contempo a mantenere Outlook sicuro. Per altre informazioni, vedere [modifiche della sicurezza in Outlook 2007 di codice](http://go.microsoft.com/fwlink/?LinkId=73429).  
+  A partire da Outlook 2007, il comportamento della protezione del modello a oggetti è stato modificato per migliorare l'esperienza utente e dello sviluppatore, aiutando al contempo a mantenere Outlook sicuro. Per altre informazioni, vedere [modifiche della sicurezza in Outlook 2007 di codice](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
 ### <a name="minimize-object-model-guard-warnings"></a>Ridurre al minimo degli avvisi di sicurezza di oggetti modello  
  Per evitare la visualizzazione di avvisi di sicurezza quando si usano proprietà e metodi sottoposti a limitazioni, assicurarsi che il componente aggiuntivo VSTO ottenga oggetti di Outlook dal campo `Application` della classe `ThisAddIn` nel progetto. Per altre informazioni su questo campo, vedere [programma VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
- Per la protezione del modello a oggetti possono essere considerati attendibili solo gli oggetti Outlook ottenuti da questo oggetto. Al contrario, oggetti ottenuti da un nuovo `Microsoft.Office.Interop.Outlook.Application` oggetto non vengono considerati attendibili e i metodi e proprietà limitata genereranno avvisi di sicurezza se è abilitata la protezione del modello a oggetti.  
+ Per la protezione del modello a oggetti possono essere considerati attendibili solo gli oggetti Outlook ottenuti da questo oggetto. Al contrario, oggetti ottenuti da un nuovo oggetto `Microsoft.Office.Interop.Outlook.Application` non vengono considerati attendibili e, se la protezione del modello a oggetti è attivata, le proprietà e i metodi sottoposti a limitazioni genereranno avvisi di sicurezza.  
   
- Se la protezione del modello a oggetti è attivata, nell'esempio di codice seguente viene visualizzato un avviso di sicurezza. Il `To` proprietà del `Microsoft.Office.Interop.Outlook.MailItem` classe è limitata dalla protezione del modello a oggetti. Il `Microsoft.Office.Interop.Outlook.MailItem` oggetto viene considerato attendibile perché il codice lo ottiene da un `Microsoft.Office.Interop.Outlook.Application` creato usando la **nuove** operatore, invece che dal `Application` campo.  
+ Se la protezione del modello a oggetti è attivata, nell'esempio di codice seguente viene visualizzato un avviso di sicurezza. La proprietà `To` della classe `Microsoft.Office.Interop.Outlook.MailItem` è limitata dalla protezione del modello a oggetti. Il `Microsoft.Office.Interop.Outlook.MailItem` oggetto viene considerato attendibile perché il codice lo ottiene da un `Microsoft.Office.Interop.Outlook.Application` creato usando la **nuove** operatore, invece che dal `Application` campo.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- Esempio di codice seguente viene illustrato come utilizzare con restrizioni alla proprietà di un `Microsoft.Office.Interop.Outlook.MailItem` oggetto considerata attendibile dalla protezione del modello a oggetti. Il codice Usa l'attendibile `Application` campo per ottenere il `Microsoft.Office.Interop.Outlook.MailItem`.  
+ Esempio di codice seguente viene illustrato come utilizzare con restrizioni alla proprietà di un `Microsoft.Office.Interop.Outlook.MailItem` oggetto considerata attendibile dalla protezione del modello a oggetti. Il codice usa il campo `Application` attendibile per ottenere l'oggetto `Microsoft.Office.Interop.Outlook.MailItem`.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
@@ -94,15 +94,15 @@ ms.locfileid: "35672382"
   
  Se l'utente impedisce il caricamento dei componenti aggiuntivi usando il **Centro protezione**, non verranno caricati i tipi di componenti aggiuntivi seguenti:  
   
--   Componenti aggiuntivi VSTO COM gestiti e non gestiti  
+- Componenti aggiuntivi VSTO COM gestiti e non gestiti  
   
--   Smart document gestiti e non gestiti  
+- Smart document gestiti e non gestiti  
   
--   Componenti aggiuntivi VSTO di automazione gestiti e non gestiti  
+- Componenti aggiuntivi VSTO di automazione gestiti e non gestiti  
   
--   Componenti dati in tempo reale gestiti e non gestiti  
+- Componenti dati in tempo reale gestiti e non gestiti  
   
- Le procedure seguenti descrivono come usare **Centro protezione** per limitare il caricamento dei componenti aggiuntivi in Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e Microsoft Office 2010. Queste procedure non influiscono sui componenti aggiuntivi o le personalizzazioni create usando gli strumenti di sviluppo di Office in Visual Studio.  
+  Le procedure seguenti descrivono come usare **Centro protezione** per limitare il caricamento dei componenti aggiuntivi in Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e Microsoft Office 2010. Queste procedure non influiscono sui componenti aggiuntivi o le personalizzazioni create usando gli strumenti di sviluppo di Office in Visual Studio.  
   
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Per disabilitare i componenti aggiuntivi VSTO nelle applicazioni Microsoft Office 2010 e Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]  
   

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7820723c88fd76639fa47e5c97ad179a208fc18
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950758"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Finestra di dialogo Selezione URL (sviluppo per SharePoint in Visual Studio)
   Nella finestra di dialogo di selezione URL è possibile scegliere i file come file di pagina master o file di immagine posizionati nel progetto o nel server locale in cui è in esecuzione SharePoint.  
@@ -36,27 +36,27 @@ ms.locfileid: "37118867"
   
  Espandere la **progetto** nodo per scegliere i file nel progetto. Deve essere visualizzato come selezionabili nella finestra di dialogo, i file del progetto devono soddisfare i criteri seguenti:  
   
--   Il file deve essere contenuto in una cartella mappata.  
+- Il file deve essere contenuto in una cartella mappata.  
   
--   Il file deve essere aggiunto al pacchetto della soluzione.  
+- Il file deve essere aggiunto al pacchetto della soluzione.  
   
--   Il file non può trovarsi in un altro progetto.  
+- Il file non può trovarsi in un altro progetto.  
   
- Se si desidera fare riferimento ai file che non soddisfano questi criteri, è necessario immettere manualmente il percorso del file.  
+  Se si desidera fare riferimento ai file che non soddisfano questi criteri, è necessario immettere manualmente il percorso del file.  
   
- Espandere la **Server** nodo per scegliere i file che si trovano nel server locale in cui è in esecuzione SharePoint. Deve essere visualizzato come selezionabili nella finestra di dialogo, questi file devono soddisfare i criteri seguenti:  
+  Espandere la **Server** nodo per scegliere i file che si trovano nel server locale in cui è in esecuzione SharePoint. Deve essere visualizzato come selezionabili nella finestra di dialogo, questi file devono soddisfare i criteri seguenti:  
   
--   Il file deve trovarsi in uno dei seguenti cartelle mappate: **immagini**, **layout**, o **ControlTemplates**.  
+- Il file deve trovarsi in uno dei seguenti cartelle mappate: **immagini**, **layout**, o **ControlTemplates**.  
   
--   Il file non può trovarsi nel database del contenuto di SharePoint.  
+- Il file non può trovarsi nel database del contenuto di SharePoint.  
   
- Se si desidera fare riferimento ai file che non soddisfano questi criteri, è necessario immettere manualmente il percorso del file.  
+  Se si desidera fare riferimento ai file che non soddisfano questi criteri, è necessario immettere manualmente il percorso del file.  
   
- **Contenuto della cartella**  
- Consente di visualizzare un elenco di file contenuti nella cartella selezionata. Scegliere un file e quindi scegliere il **OK** pulsante per chiudere la finestra di dialogo e inviare la selezione al processo che lo ha chiamato.  
+  **Contenuto della cartella**  
+  Consente di visualizzare un elenco di file contenuti nella cartella selezionata. Scegliere un file e quindi scegliere il **OK** pulsante per chiudere la finestra di dialogo e inviare la selezione al processo che lo ha chiamato.  
   
- **Tipo file**  
- Consente di scegliere da un elenco di file appropriati per l'attività in esecuzione.  
+  **Tipo file**  
+  Consente di scegliere da un elenco di file appropriati per l'attività in esecuzione.  
   
 ## <a name="see-also"></a>Vedere anche
  [Creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   

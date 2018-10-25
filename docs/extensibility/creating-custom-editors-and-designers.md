@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56d191d8019b4b87cc31e0e383637515a10f4147
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 05eeae4901af8780927e0ce0577b385ee9ffa371
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950902"
 ---
 # <a name="create-custom-editors-and-designers"></a>Creare finestre di progettazione ed editor personalizzati
 L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi tipi di editor:  
   
--   L'editor principale di Visual Studio  
+- L'editor principale di Visual Studio  
   
--   Editor personalizzati  
+- Editor personalizzati  
   
--   Editor esterno  
+- Editor esterno  
   
--   Finestre di progettazione  
+- Finestre di progettazione  
   
- Le informazioni seguenti consentono di scegliere il tipo dell'editor che è necessario.  
+  Le informazioni seguenti consentono di scegliere il tipo dell'editor che è necessario.  
   
 ## <a name="types-of-editor"></a>Tipi di editor  
  Per informazioni su editor principale di Visual Studio, vedere [estendere l'editor e servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md).  
@@ -52,25 +52,25 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi ti
 ## <a name="editor-design-decisions"></a>Decisioni di progettazione dell'editor  
  Le domande di progettazione seguenti consentono di scegliere il tipo di editor migliore adatto alla propria applicazione:  
   
--   L'applicazione salverà i dati nei file o No? Se salverà i dati nei file, saranno in un formato standard o personalizzato?  
+- L'applicazione salverà i dati nei file o No? Se salverà i dati nei file, saranno in un formato standard o personalizzato?  
   
-     Se si usa un formato di file standard, altri tipi di progetto oltre il progetto sarà in grado di aprire e leggere o scrivere dati a essi. Se si usa un formato di file personalizzati, tuttavia, solo il tipo di progetto sarà in grado di aprire e leggere o scrivere dati a essi.  
+   Se si usa un formato di file standard, altri tipi di progetto oltre il progetto sarà in grado di aprire e leggere o scrivere dati a essi. Se si usa un formato di file personalizzati, tuttavia, solo il tipo di progetto sarà in grado di aprire e leggere o scrivere dati a essi.  
   
-     Se il progetto usa i file, è necessario personalizzare l'editor standard. Se il progetto non usa i file, ma piuttosto Usa gli elementi in un database o altri repository, è necessario creare un editor personalizzato.  
+   Se il progetto usa i file, è necessario personalizzare l'editor standard. Se il progetto non usa i file, ma piuttosto Usa gli elementi in un database o altri repository, è necessario creare un editor personalizzato.  
   
--   È necessario che l'editor per ospitare i controlli ActiveX?  
+- È necessario che l'editor per ospitare i controlli ActiveX?  
   
-     Se l'editor ospita controlli ActiveX, quindi implementare un editor di attivazione sul posto, come descritto [attivazione sul posto](../extensibility/in-place-activation.md). Se non ospita controlli ActiveX, quindi usare un editor di incorporamento semplificato oppure personalizzare il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predefinito.  
+   Se l'editor ospita controlli ActiveX, quindi implementare un editor di attivazione sul posto, come descritto [attivazione sul posto](../extensibility/in-place-activation.md). Se non ospita controlli ActiveX, quindi usare un editor di incorporamento semplificato oppure personalizzare il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predefinito.  
   
--   L'editor supporteranno più viste? Se si desidera che le visualizzazioni dell'editor sia visibile allo stesso tempo come editor predefinito, è necessario supportare più visualizzazioni.  
+- L'editor supporteranno più viste? Se si desidera che le visualizzazioni dell'editor sia visibile allo stesso tempo come editor predefinito, è necessario supportare più visualizzazioni.  
   
-     Se l'editor deve supportare visualizzazioni multiple, i dati del documento e oggetti di visualizzazione di documenti per l'editor devono essere oggetti separati. Per altre informazioni, vedere [supporta più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md).  
+   Se l'editor deve supportare visualizzazioni multiple, i dati del documento e oggetti di visualizzazione di documenti per l'editor devono essere oggetti separati. Per altre informazioni, vedere [supporta più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md).  
   
-     Se l'editor supporta più visualizzazioni, si prevede di usare la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] implementazione del buffer di testo dell'editor di base (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto) per l'oggetto dati del documento? Vale a dire, con cui si desidera supportare l'editor visualizza side-by-side con la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale? La possibilità di eseguire questa operazione è la base di progettazione Windows Form...  
+   Se l'editor supporta più visualizzazioni, si prevede di usare la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] implementazione del buffer di testo dell'editor di base (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto) per l'oggetto dati del documento? Vale a dire, con cui si desidera supportare l'editor visualizza side-by-side con la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale? La possibilità di eseguire questa operazione è la base di progettazione Windows Form...  
   
--   Se è necessario ospitare un editor esterno, l'editor incorporabili in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
+- Se è necessario ospitare un editor esterno, l'editor incorporabili in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
   
-     Se può essere incorporato, è necessario creare una finestra host per l'editor esterno e quindi chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metodo e impostare il <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valore di enumerazione da `DP_External`. Se l'editor non può essere incorporato, l'IDE creerà automaticamente una finestra separata per tale.  
+   Se può essere incorporato, è necessario creare una finestra host per l'editor esterno e quindi chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metodo e impostare il <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valore di enumerazione da `DP_External`. Se l'editor non può essere incorporato, l'IDE creerà automaticamente una finestra separata per tale.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Procedura dettagliata: Creare un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md)  

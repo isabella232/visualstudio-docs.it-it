@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938383"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Come attivare eventi di sospensione, ripresa e background nelle applicazioni Windows Store in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
   
  [Attivare attività in background](#BKMK_Trigger_background_tasks)  
   
--   [Attivare un evento di attività in background da una sessione di debug standard](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Attivare un evento di attività in background da una sessione di debug standard](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Attivare un'attività in background quando l'app non è in esecuzione](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Attivare un'attività in background quando l'app non è in esecuzione](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Attivare gli eventi di Process Lifecycle Management e le attività in background da un'app installata](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [Attivare gli eventi di Process Lifecycle Management e le attività in background da un'app installata](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Diagnostica degli errori di attivazione di attività in background](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Diagnostica degli errori di attivazione di attività in background](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Attivare gli eventi di Process Lifetime Management  
  Windows può sospendere l'app quando l'utente passa a un'altra visualizzazione o quando viene attivata la modalità basso consumo. Puoi rispondere all'evento `Suspending` per salvare i dati utente e dell'app rilevanti in un archivio permanente e per liberare risorse. Quando un'app viene riattivata dallo stato **Sospeso** , passa allo stato **In esecuzione** e continua dal punto in cui si trovava al momento della sospensione. Puoi rispondere all'evento `Resuming` per ripristinare o aggiornare lo stato dell'app e recuperare le risorse.  

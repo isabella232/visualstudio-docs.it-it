@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943063"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procedura: utilizzare la ricerca in Progettazione del flusso di lavoro
 
@@ -35,11 +35,11 @@ Ricerca veloce consente di trovare quanto segue nella finestra di progettazione:
 
 ### <a name="use-quick-find"></a>Usare la ricerca veloce
 
-1.  Con Progettazione flussi di lavoro aperta, premere **Ctrl + F**, o selezionare **Edit** > **Trova e sostituisci** > **ricerca veloce**.
+1. Con Progettazione flussi di lavoro aperta, premere **Ctrl + F**, o selezionare **Edit** > **Trova e sostituisci** > **ricerca veloce**.
 
-2.  Immettere il termine di ricerca nel **Find what** nella casella di testo e fare clic su **Trova successivo**.
+2. Immettere il termine di ricerca nel **Find what** nella casella di testo e fare clic su **Trova successivo**.
 
-3.  Al termine di ricerca si trova nel flusso di lavoro corrente. L'immagine seguente mostra un nome visualizzato dell'attività che si trova nella finestra di progettazione:
+3. Al termine di ricerca si trova nel flusso di lavoro corrente. L'immagine seguente mostra un nome visualizzato dell'attività che si trova nella finestra di progettazione:
 
    ![Risultato della ricerca nella finestra di progettazione flussi di lavoro](../workflow-designer/media/designersearch.png)
 

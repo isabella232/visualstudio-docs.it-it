@@ -1,5 +1,5 @@
 ---
-title: IDebugPortPicker::SetSite | Documenti Microsoft
+title: IDebugPortPicker::SetSite | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54286ded44f6acf44033c2fa5e2227ccaa688a64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 00730a5338a3355f2397a91bc7a3693b30dca31b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930609"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 Imposta il provider del servizio.  
@@ -39,13 +39,13 @@ public int SetSite(
   
 #### <a name="parameters"></a>Parametri  
  `pSP`  
- [in] Riferimento all'interfaccia del provider del servizio.  
+ [in] Riferimento all'interfaccia del provider di servizi.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo verrà chiamato prima della chiamata a qualsiasi altro metodo.  
+ Questo metodo verrà chiamato prima degli altri metodi vengono chiamati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

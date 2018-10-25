@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bccb790a374e9ce6b197927760f9c3cc15d5a7eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1178fc6ff2cb5b4664930eaa70fd3de5ebed0f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949071"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,47 +49,47 @@ Specifica le informazioni sulla documentazione per un parametro in una funzione 
  `type`  
  Facoltativo. Il tipo di dati del parametro. Il tipo può essere uno dei seguenti:  
   
--   Un linguaggio ECMAScript digitare nella specifica ECMAScript 5, ad esempio `Number` e `Object`.  
+- Un linguaggio ECMAScript digitare nella specifica ECMAScript 5, ad esempio `Number` e `Object`.  
   
--   Oggetto di un modello DOM, ad esempio `HTMLElement`, `Window`, e `Document`.  
+- Oggetto di un modello DOM, ad esempio `HTMLElement`, `Window`, e `Document`.  
   
--   Funzione del costruttore JavaScript.  
+- Funzione del costruttore JavaScript.  
   
- `integer`  
- Facoltativo. Se `type` è `Number`, specifica se il parametro è un numero intero. Impostare su `true` per indicare che il parametro è un numero intero; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  `integer`  
+  Facoltativo. Se `type` è `Number`, specifica se il parametro è un numero intero. Impostare su `true` per indicare che il parametro è un numero intero; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
   
- `domElement`  
- Facoltativo. Questo attributo è deprecato. il `type` attributo ha la precedenza su questo attributo. Questo attributo specifica se il parametro documentato è un elemento DOM. Impostare su `true` per specificare che il parametro è un elemento DOM; in caso contrario, impostato su `false`. Se il `type` attributo non è impostato e `domElement` è impostata su `true`, IntelliSense considera il parametro documentato come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
+  `domElement`  
+  Facoltativo. Questo attributo è deprecato. il `type` attributo ha la precedenza su questo attributo. Questo attributo specifica se il parametro documentato è un elemento DOM. Impostare su `true` per specificare che il parametro è un elemento DOM; in caso contrario, impostato su `false`. Se il `type` attributo non è impostato e `domElement` è impostata su `true`, IntelliSense considera il parametro documentato come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
   
- `mayBeNull`  
- Facoltativo. Specifica se il parametro documentato può essere impostato su null. Impostare su `true` per indicare che il parametro può essere impostato su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  `mayBeNull`  
+  Facoltativo. Specifica se il parametro documentato può essere impostato su null. Impostare su `true` per indicare che il parametro può essere impostato su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
   
- `elementType`  
- Facoltativo. Se `type` è `Array`, questo attributo specifica il tipo degli elementi nella matrice.  
+  `elementType`  
+  Facoltativo. Se `type` è `Array`, questo attributo specifica il tipo degli elementi nella matrice.  
   
- `elementInteger`  
- Facoltativo. Se `type` viene `Array` e `elementType` è `Number`, questo attributo specifica se gli elementi nella matrice sono numeri interi. Impostare su `true` per indicare che gli elementi nella matrice sono numeri interi; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  `elementInteger`  
+  Facoltativo. Se `type` viene `Array` e `elementType` è `Number`, questo attributo specifica se gli elementi nella matrice sono numeri interi. Impostare su `true` per indicare che gli elementi nella matrice sono numeri interi; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
   
- `elementDomElement`  
- Facoltativo. Questo attributo è deprecato. il `elementType` attributo ha la precedenza su questo attributo. Se `type` è `Array`, questo attributo specifica se gli elementi nella matrice sono elementi DOM. Impostare su `true` per specificare che gli elementi sono elementi DOM; in caso contrario, impostato su `false`. Se il `elementType` attributo non è impostato e `elementDomElement` è impostata su `true`, IntelliSense considera ogni elemento nella matrice come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
+  `elementDomElement`  
+  Facoltativo. Questo attributo è deprecato. il `elementType` attributo ha la precedenza su questo attributo. Se `type` è `Array`, questo attributo specifica se gli elementi nella matrice sono elementi DOM. Impostare su `true` per specificare che gli elementi sono elementi DOM; in caso contrario, impostato su `false`. Se il `elementType` attributo non è impostato e `elementDomElement` è impostata su `true`, IntelliSense considera ogni elemento nella matrice come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
   
- `elementMayBeNull`  
- Facoltativo. Se `type` è `Array`, specifica se gli elementi della matrice possono essere impostati su null. Impostare su `true` per indicare che gli elementi della matrice possono essere impostati su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  `elementMayBeNull`  
+  Facoltativo. Se `type` è `Array`, specifica se gli elementi della matrice possono essere impostati su null. Impostare su `true` per indicare che gli elementi della matrice possono essere impostati su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
   
- `locid`  
- Facoltativo. L'identificatore per le informazioni di localizzazione sul parametro. L'identificatore è un membro ID o corrisponde alla `name` valore in un bundle di messaggio definito dai metadati OpenAjax dell'attributo. Il tipo di identificatore dipende dal formato specificato nella [ \<loc >](../ide/loc-javascript.md) elemento.  
+  `locid`  
+  Facoltativo. L'identificatore per le informazioni di localizzazione sul parametro. L'identificatore è un membro ID o corrisponde alla `name` valore in un bundle di messaggio definito dai metadati OpenAjax dell'attributo. Il tipo di identificatore dipende dal formato specificato nella [ \<loc >](../ide/loc-javascript.md) elemento.  
   
- `parameterArray`  
- Facoltativo. Specifica se il parametro documentato può essere ripetuto nella chiamata di funzione, simile alla ripetizione di parametri supportati nel `String.format` (funzione). Impostare su `true` per indicare che il parametro può essere ripetuto; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  `parameterArray`  
+  Facoltativo. Specifica se il parametro documentato può essere ripetuto nella chiamata di funzione, simile alla ripetizione di parametri supportati nel `String.format` (funzione). Impostare su `true` per indicare che il parametro può essere ripetuto; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
   
- `optional`  
- Facoltativo. Specifica se il parametro documentato è facoltativo nella funzione chiamante. Impostare su `true` per indicare che il parametro è facoltativo; in caso contrario, impostato su `false`.  
+  `optional`  
+  Facoltativo. Specifica se il parametro documentato è facoltativo nella funzione chiamante. Impostare su `true` per indicare che il parametro è facoltativo; in caso contrario, impostato su `false`.  
   
- `value`  
- Facoltativo. Specifica il codice che deve essere valutato per l'uso da IntelliSense anziché il codice della funzione. È possibile usare questo attributo è per fornire informazioni sul tipo quando il tipo di parametro non è definito. Ad esempio, è possibile usare `value=’1’` per considerare il tipo di parametro sotto forma di numero.  
+  `value`  
+  Facoltativo. Specifica il codice che deve essere valutato per l'uso da IntelliSense anziché il codice della funzione. È possibile usare questo attributo è per fornire informazioni sul tipo quando il tipo di parametro non è definito. Ad esempio, è possibile usare `value=’1’` per considerare il tipo di parametro sotto forma di numero.  
   
- `description`  
- Facoltativo. Descrizione del parametro.  
+  `description`  
+  Facoltativo. Descrizione del parametro.  
   
 ## <a name="remarks"></a>Note  
  L'unico attributo obbligatorio è `name`. Tutti gli altri attributi sono facoltativi.  

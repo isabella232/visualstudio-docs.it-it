@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942010"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,11 +125,11 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Per associare una trama diversa a un registro di trama o modificare altri parametri di materiali  
   
-1.  In modalità **Seleziona** selezionare un'area vuota dell'area di progettazione. Nella finestra **Proprietà** vengono visualizzate le proprietà globali dello shader.  
+1. In modalità **Seleziona** selezionare un'area vuota dell'area di progettazione. Nella finestra **Proprietà** vengono visualizzate le proprietà globali dello shader.  
   
-2.  Nella finestra **Proprietà** specificare nuovi valori per le proprietà di trama e parametri che si vuole modificare.  
+2. Nella finestra **Proprietà** specificare nuovi valori per le proprietà di trama e parametri che si vuole modificare.  
   
- Di seguito sono riportati i parametri di shader che è possibile modificare.  
+   Di seguito sono riportati i parametri di shader che è possibile modificare.  
   
 |Parametro|Proprietà|  
 |---------------|----------------|  

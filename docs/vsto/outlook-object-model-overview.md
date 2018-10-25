@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941191"
 ---
 # <a name="outlook-object-model-overview"></a>Cenni preliminari sul modello a oggetti di Outlook
   Per sviluppare componenti aggiuntivi VSTO per Microsoft Office Outlook, è possibile interagire con gli oggetti forniti dal modello a oggetti di Outlook. Il modello a oggetti di Outlook fornisce classi e interfacce che rappresentano elementi nell'interfaccia utente. Ad esempio, l'oggetto <xref:Microsoft.Office.Interop.Outlook.Application> rappresenta l'intera applicazione, l'oggetto <xref:Microsoft.Office.Interop.Outlook.Folder> rappresenta una cartelle che contiene messaggi di posta elettronica o altri elementi e l'oggetto <xref:Microsoft.Office.Interop.Outlook.MailItem> rappresenta un messaggio di posta elettronica.  
@@ -59,13 +59,13 @@ ms.locfileid: "40008268"
 ### <a name="application-object"></a>Oggetto Application  
  L'oggetto <xref:Microsoft.Office.Interop.Outlook.Application> rappresenta l'applicazione Outlook ed è l'oggetto di livello massimo nel modello a oggetti di Outlook. Alcuni dei membri più importanti di questo oggetto includono i seguenti:  
   
--   Il [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metodo che è possibile usare per creare un nuovo elemento, ad esempio un messaggio di posta elettronica, attività o appuntamenti.  
+- Il metodo [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) , che può essere usato per creare un nuovo elemento, ad esempio un messaggio di posta elettronica, un'attività o un appuntamento.  
   
--   La proprietà <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> , che permette di accedere alle finestre che mostrano i contenuti di una cartella nell'interfaccia utente di Outlook.  
+- La proprietà <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> , che permette di accedere alle finestre che mostrano i contenuti di una cartella nell'interfaccia utente di Outlook.  
   
--   La proprietà <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> , che permette di accedere alle finestre che mostrano i contenuti di un singolo elemento, ad esempio un messaggio di posta elettronica o una convocazione riunione.  
+- La proprietà <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> , che permette di accedere alle finestre che mostrano i contenuti di un singolo elemento, ad esempio un messaggio di posta elettronica o una convocazione riunione.  
   
- Per ottenere un'istanza del <xref:Microsoft.Office.Interop.Outlook.Application> oggetto, usare il campo di applicazione dei `ThisAddIn` classe nel progetto. Per altre informazioni, vedere [programma VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+  Per ottenere un'istanza del <xref:Microsoft.Office.Interop.Outlook.Application> oggetto, usare il campo di applicazione dei `ThisAddIn` classe nel progetto. Per altre informazioni, vedere [programma VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Per evitare gli avvisi di sicurezza quando si usano proprietà e metodi bloccati dalla protezione del modello a oggetti di Outlook, ottenere gli oggetti di Outlook dal campo dell'applicazione dei `ThisAddIn` classe. Per altre informazioni, vedere [considerazioni specifiche sulla sicurezza per le soluzioni Office](../vsto/specific-security-considerations-for-office-solutions.md).  
@@ -114,7 +114,7 @@ ms.locfileid: "40008268"
 ### <a name="taskitem-object"></a>Oggetto TaskItem  
  L'oggetto <xref:Microsoft.Office.Interop.Outlook.TaskItem> rappresenta un'attività da eseguire entro un intervallo di tempo specificato. Gli oggetti<xref:Microsoft.Office.Interop.Outlook.TaskItem> si trovano nella cartella **Attività** .  
   
- Per creare un'attività, usare il [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metodo per il <xref:Microsoft.Office.Interop.Outlook.Application> dell'oggetto e passare il valore <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> per il parametro.  
+ Per creare un'attività, usare il metodo [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) dell'ogetto <xref:Microsoft.Office.Interop.Outlook.Application> e passare il valore <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> per il parametro.  
   
 ### <a name="contactitem-object"></a>Oggetto ContactItem  
  L'oggetto <xref:Microsoft.Office.Interop.Outlook.ContactItem>rappresenta un contatto nella cartella **Contatti** . Gli oggetti<xref:Microsoft.Office.Interop.Outlook.ContactItem> contengono diverse informazioni di contatto per le persone rappresentate, ad esempio via e numero civico, indirizzo di posta elettronica e numeri di telefono.  

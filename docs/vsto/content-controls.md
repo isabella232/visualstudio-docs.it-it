@@ -41,25 +41,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940229"
 ---
 # <a name="content-controls"></a>Controlli del contenuto
   I controlli contenuto permettono di progettare documenti e modelli che hanno le funzionalità seguenti:  
   
--   Un'interfaccia utente che include input controllato, come un form.  
+- Un'interfaccia utente che include input controllato, come un form.  
   
--   Restrizioni che impediscono agli utenti di modificare sezioni protette del documento o del modello. Per altre informazioni, vedere [proteggere parti di documenti mediante controlli contenuto](#Protection).  
+- Restrizioni che impediscono agli utenti di modificare sezioni protette del documento o del modello. Per altre informazioni, vedere [proteggere parti di documenti mediante controlli contenuto](#Protection).  
   
--   Data binding a un'origine dati. Per altre informazioni, vedere [associare dati a controlli contenuto](#DataBinding).  
+- Data binding a un'origine dati. Per altre informazioni, vedere [associare dati a controlli contenuto](#DataBinding).  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [associare dati al Word 2007 i controlli con Visual Studio Tools per Office system (3.0) contenuto](http://go.microsoft.com/fwlink/?LinkId=136785).  
+  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [associare dati al Word 2007 i controlli con Visual Studio Tools per Office system (3.0) contenuto](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## <a name="overview-of-content-controls"></a>Panoramica dei controlli contenuto  
  I controlli contenuto forniscono un'interfaccia utente ottimizzata sia per l'input utente sia per la stampa. Quando si aggiunge un controllo contenuto a un documento, il controllo è identificato da un bordo, un titolo e testo temporaneo che può contenere istruzioni per l'utente. Il bordo e il titolo del controllo non vengono visualizzati nelle versioni stampate del documento.  
@@ -68,11 +68,11 @@ ms.locfileid: "35673295"
   
  I controlli contenuto semplificano anche le operazioni seguenti:  
   
--   Impedire agli utenti la modifica o l'eliminazione di parti di un documento. Questa caratteristica è utile se un documento o un modello contiene informazioni che gli utenti devono poter leggere ma non modificare o se si vuole permettere agli utenti di modificare i controlli contenuto, ma non di eliminarli.  
+- Impedire agli utenti la modifica o l'eliminazione di parti di un documento. Questa caratteristica è utile se un documento o un modello contiene informazioni che gli utenti devono poter leggere ma non modificare o se si vuole permettere agli utenti di modificare i controlli contenuto, ma non di eliminarli.  
   
--   Associare parti di un documento o di un modello a dati. È possibile associare controlli contenuto a campi di database, oggetti gestiti in [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], elementi XML archiviati nel documento e altre origini dati.  
+- Associare parti di un documento o di un modello a dati. È possibile associare controlli contenuto a campi di database, oggetti gestiti in [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], elementi XML archiviati nel documento e altre origini dati.  
   
- Nei progetti a livello di documento è possibile aggiungere controlli contenuto al documento in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione. Per altre informazioni, vedere [procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+  Nei progetti a livello di documento è possibile aggiungere controlli contenuto al documento in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione. Per altre informazioni, vedere [procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  È possibile usare controlli contenuto solo in documenti salvati in formato Open XML. È possibile usare controlli contenuto in documenti vengono salvati nel documento di Word 97-2003 (*doc*) formato.  
@@ -133,11 +133,11 @@ ms.locfileid: "35673295"
   
  Se l'area che si vuole proteggere si trova all'interno di un controllo contenuto, è possibile usare le proprietà del controllo contenuto per impedire agli utenti di modificare o eliminare il controllo:  
   
--   Il **LockContents** proprietà impedisce agli utenti di modificare il contenuto.  
+- Il **LockContents** proprietà impedisce agli utenti di modificare il contenuto.  
   
--   Il **LockContentControl** proprietà impedisce agli utenti di eliminare il controllo.  
+- Il **LockContentControl** proprietà impedisce agli utenti di eliminare il controllo.  
   
- Se l'area che si vuole proteggere non si trova all'interno di un controllo contenuto o se si vuole proteggere un'area che include controlli contenuto e altri tipi di contenuto, è possibile inserire l'intera area in un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Diversamente da altri controlli contenuto, un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> non fornisce alcuna interfaccia utente visibile all'utente. Il suo unico scopo è definire un'area che non può essere modificata dagli utenti.  
+  Se l'area che si vuole proteggere non si trova all'interno di un controllo contenuto o se si vuole proteggere un'area che include controlli contenuto e altri tipi di contenuto, è possibile inserire l'intera area in un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Diversamente da altri controlli contenuto, un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> non fornisce alcuna interfaccia utente visibile all'utente. Il suo unico scopo è definire un'area che non può essere modificata dagli utenti.  
   
 > [!NOTE]  
 >  Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. È necessario usare il **LockContents** proprietà di ogni controllo incorporato per impedire agli utenti di modificarne il contenuto.  
@@ -149,11 +149,11 @@ ms.locfileid: "35673295"
   
  I controlli contenuto offrono le opzioni di data binding seguenti:  
   
--   È possibile associare controlli contenuto a campi di database o oggetti gestiti usando lo stesso modello di data binding di Windows Form.  
+- È possibile associare controlli contenuto a campi di database o oggetti gestiti usando lo stesso modello di data binding di Windows Form.  
   
--   È possibile associare controlli contenuto a elementi in parti del codice XML (anche detta *parti XML personalizzate*) che sono incorporate nel documento.  
+- È possibile associare controlli contenuto a elementi in parti del codice XML (anche detta *parti XML personalizzate*) che sono incorporate nel documento.  
   
- Per una panoramica dell'associazione di controlli host ai dati nelle soluzioni Office, vedere [associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+  Per una panoramica dell'associazione di controlli host ai dati nelle soluzioni Office, vedere [associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ### <a name="use-the-windows-forms-data-binding-model"></a>Usare il modello di data binding di Windows Form  
  La maggior parte dei controlli contenuto supporta il modello di data binding semplice usato da Windows Form. Il data binding semplice significa che un controllo è associato a un singolo elemento dati, ad esempio un valore in una colonna di una tabella dati. Per altre informazioni, vedere [Data binding e Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms).  

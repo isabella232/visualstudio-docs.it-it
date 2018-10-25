@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::SetDebuggerPresent | Documenti Microsoft
+title: IDebugProgramPublisher2::SetDebuggerPresent | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5725d6e143f10cd3a3fae18398ec0cb08729fa34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e53fa8c1adcf9e66b06fb2b3c286c74dbc4ab7dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942114"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-Indica il server di pubblicazione del programma che un debugger è presente e in esecuzione.  
+Indica il server di pubblicazione del programma che un debugger sia presente e in esecuzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,7 +47,7 @@ int SetDebuggerPresent(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- La presenza o assenza di un debugger viene riflessa nei dati restituiti dal [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metodo: il valore restituito sono è impostato o cancellato da una precedente chiamata al `SetDebuggerPresent` metodo.  
+ La presenza o assenza di un debugger viene riflessa nei dati restituiti dai [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metodo: il valore restituito non esiste viene impostato o cancellato da una chiamata precedente al `SetDebuggerPresent` (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

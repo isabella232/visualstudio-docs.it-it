@@ -29,12 +29,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f9d881970e24a00223a17cbf3873bdb842ed32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173628"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940389"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Finestre Espressioni di controllo e Controllo immediato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ static void Main(string[] args)
   
  Aggiungere i valori delle tre variabili nella finestra Espressioni di controllo come segue:  
   
-1.  Impostare un punto di interruzione nella riga `c = a + b;` .  
+1. Impostare un punto di interruzione nella riga `c = a + b;` .  
   
-2.  Avviare i debug (**F5**). L'esecuzione verrà interrotta in corrispondenza del punto di interruzione.  
+2. Avviare i debug (**F5**). L'esecuzione verrà interrotta in corrispondenza del punto di interruzione.  
   
-3.  Aprire la finestra Espressioni di controllo (**Debug/Windows/Espressioni di controllo/Espressione di controllo 1**o **CTRL+ALT+W, 1**).  
+3. Aprire la finestra Espressioni di controllo (**Debug/Windows/Espressioni di controllo/Espressione di controllo 1**o **CTRL+ALT+W, 1**).  
   
-4.  Aggiungere la variabile `a` nella prima riga, la variabile `b` nella seconda riga e la variabile `c` nella terza riga.  
+4. Aggiungere la variabile `a` nella prima riga, la variabile `b` nella seconda riga e la variabile `c` nella terza riga.  
   
-5.  Continuare il debug.  
+5. Continuare il debug.  
   
- I valori delle variabili cambieranno durante l'iterazione del ciclo `for`.  
+   I valori delle variabili cambieranno durante l'iterazione del ciclo `for`.  
   
- Se si programma in codice nativo, può essere necessario, in certi casi, qualificare il contesto di un nome di variabile o di un'espressione contenente un nome di variabile. Il contesto è rappresentato dalla funzione, il file di origine e il modulo in cui risiede una variabile. È possibile usare la sintassi dell'operatore di contesto per questa operazione. Per altre informazioni, vedere Espressioni in C++.  
+   Se si programma in codice nativo, può essere necessario, in certi casi, qualificare il contesto di un nome di variabile o di un'espressione contenente un nome di variabile. Il contesto è rappresentato dalla funzione, il file di origine e il modulo in cui risiede una variabile. È possibile usare la sintassi dell'operatore di contesto per questa operazione. Per altre informazioni, vedere Espressioni in C++.  
   
 ## <a name="observing-expressions-with-the-watch-window"></a>Osservazione delle espressioni con la finestra Espressioni di controllo  
  Ora si proverà invece a usare un'espressione. È possibile aggiungere qualsiasi espressione valida riconosciuta dal debugger.  
@@ -138,15 +138,15 @@ static void Main(string[] args)
   
  Se si punta all'icona, una descrizione comando fornisce informazioni sul motivo per cui l'espressione non è stata valutata.  Se vengono visualizzate le frecce che girano in cerchio, l'espressione non è stata valutata per uno dei seguenti motivi:  
   
--   • Un errore durante l'espressione è stata valutata. Ad esempio, è possibile che si sia verificato un timeout o che una variabile fosse esterna all'ambito.  
+- • Un errore durante l'espressione è stata valutata. Ad esempio, è possibile che si sia verificato un timeout o che una variabile fosse esterna all'ambito.  
   
--   • L'espressione contiene una chiamata di funzione che potrebbe attivare un effetto collaterale dell'applicazione (vedere [effetti collaterali ed espressioni](#bkmk_sideEffects)).  
+- • L'espressione contiene una chiamata di funzione che potrebbe attivare un effetto collaterale dell'applicazione (vedere [effetti collaterali ed espressioni](#bkmk_sideEffects)).  
   
--   La valutazione automatica delle proprietà e delle chiamate di funzioni implicite da parte del debugger è disattivata (**Strumenti/Opzioni/Debug/Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**) e quindi l'espressione non può essere valutata automaticamente.  
+- La valutazione automatica delle proprietà e delle chiamate di funzioni implicite da parte del debugger è disattivata (**Strumenti/Opzioni/Debug/Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**) e quindi l'espressione non può essere valutata automaticamente.  
   
- Per aggiornare il valore, fare clic sull'icona di aggiornamento o premere la barra spaziatrice. Il debugger proverà a rivalutare l'espressione. Se l'icona di aggiornamento è stata visualizzata perché la valutazione automatica delle proprietà e gli effetti collaterali impliciti erano disattivati, l'espressione potrà essere valutata.  
+  Per aggiornare il valore, fare clic sull'icona di aggiornamento o premere la barra spaziatrice. Il debugger proverà a rivalutare l'espressione. Se l'icona di aggiornamento è stata visualizzata perché la valutazione automatica delle proprietà e gli effetti collaterali impliciti erano disattivati, l'espressione potrà essere valutata.  
   
- Se viene visualizzata un'icona rappresentata da un cerchio con due linee ondulate che assomigliano a dei fili, l'espressione non è stata valutata a causa di una potenziale dipendenza cross-thread. In altre parole, la valutazione del codice richiede l'esecuzione temporanea di altri thread nell'applicazione. Quando ci si trova in modalità di interruzione, in genere tutti i thread nell'applicazione vengono arrestati. L'esecuzione temporanea di altri thread può avere effetti imprevisti sullo stato del programma e può far sì che il debugger ignori alcuni eventi quali i punti di interruzione e le eccezioni generate in tali thread.  
+  Se viene visualizzata un'icona rappresentata da un cerchio con due linee ondulate che assomigliano a dei fili, l'espressione non è stata valutata a causa di una potenziale dipendenza cross-thread. In altre parole, la valutazione del codice richiede l'esecuzione temporanea di altri thread nell'applicazione. Quando ci si trova in modalità di interruzione, in genere tutti i thread nell'applicazione vengono arrestati. L'esecuzione temporanea di altri thread può avere effetti imprevisti sullo stato del programma e può far sì che il debugger ignori alcuni eventi quali i punti di interruzione e le eccezioni generate in tali thread.  
   
 ##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  La valutazione di alcune espressioni può comportare la modifica del valore di una variabile o altri effetti sullo stato del programma. La valutazione della seguente espressione, ad esempio, comporta la modifica del valore di `var1`:  
@@ -238,11 +238,11 @@ public class Program
   
  Se si vuole visualizzare solo la **Visualizzazione dinamica** per un oggetto, è possibile usare l'identificatore di formato **dynamic** :  
   
--   C#: **ObjectName, dynamic**  
+- C#: **ObjectName, dynamic**  
   
--   Visual Basic:: **$dynamic, ObjectName**  
+- Visual Basic:: **$dynamic, ObjectName**  
   
- La **Visualizzazione dinamica** migliora anche l'esperienza di debug per gli oggetti COM. Quando il debugger rileva un oggetto COM di cui è stato eseguito il wrapping in **System.__ComObject**, aggiunge il nodo **Visualizzazione dinamica** per l'oggetto.  
+  La **Visualizzazione dinamica** migliora anche l'esperienza di debug per gli oggetti COM. Quando il debugger rileva un oggetto COM di cui è stato eseguito il wrapping in **System.__ComObject**, aggiunge il nodo **Visualizzazione dinamica** per l'oggetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Finestre del debugger](../debugger/debugger-windows.md)

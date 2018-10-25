@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Documenti Microsoft
+title: CANSTOP_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791132d94526126e8fc611b2becbb8b7545bb578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4129839094b7f5cf9907f6b92fa11fe1847f5806
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938812"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
-Utilizzato per determinare se un programma può arrestare l'esecuzione dopo aver raggiunto un determinato punto dell'esecuzione.  
+Utilizzato per determinare se un programma può arrestare l'esecuzione dopo aver raggiunto un punto particolare nell'esecuzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,10 +47,10 @@ public enum enum_CANSTOP_REASON {
  Specifica il punto di ingresso del programma specificato.  
   
  CANSTOP_STEPIN  
- Specifica l'esecuzione di istruzioni in una funzione.  
+ Specifica l'esecuzione di una funzione.  
   
 ## <a name="remarks"></a>Note  
- Passata come argomento per il [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodo per verificare con sessione di Debug Manager (SDM) se è possibile arrestare dopo aver raggiunto il punto di ingresso del programma o dopo l'esecuzione di una funzione o metodo.  
+ Passato come argomento per il [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodo per confermare con sessione di Debug Manager (SDM) se è corretto arrestare dopo aver raggiunto il punto di ingresso del programma o dopo l'esecuzione di una funzione o metodo.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

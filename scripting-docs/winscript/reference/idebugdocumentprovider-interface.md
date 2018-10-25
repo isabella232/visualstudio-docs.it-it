@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IDebugDocumentProvider | Documenti Microsoft
+title: Interfaccia IDebugDocumentProvider | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 262794718e238068cfd9a8e3fae5161b9fe8cc54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d775deb153205d0e9a452775272285c67e74a210
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949864"
 ---
 # <a name="idebugdocumentprovider-interface"></a>Interfaccia IDebugDocumentProvider
-Fornisce i mezzi per creare un'istanza di un documento su richiesta.  
+Specifica i mezzi per creare un'istanza di un documento su richiesta.  
   
 ## <a name="remarks"></a>Note  
  In questo modo indiretto per creare un'istanza di un documento:  
   
--   Consente il documento da caricare quando necessario.  
+- Consente il documento da caricare quando è necessaria.  
   
--   Consente all'oggetto documento devono essere contenuti all'interno del debugger IDE.  
+- Consente all'oggetto documento devono essere contenuti all'interno del debugger dell'IDE.  
   
--   Consente più modi accedere all'oggetto documento stesso.  
+- Consente a diversi modi accedere all'oggetto documento stesso.  
   
- Comporta la separa il documento dal relativo provider e consente al provider per ulteriori informazioni sul contesto di runtime, eseguire.  
+  Questo efficace separa il documento dal relativo provider e consente al provider per altre informazioni sul contesto di runtime, eseguire.  
   
- Oltre ai metodi ereditati da `IDebugDocumentInfo`, `IDebugDocumentProvider` interfaccia espone i metodi seguenti.  
+  Oltre ai metodi ereditati da `IDebugDocumentInfo`, il `IDebugDocumentProvider` interfaccia espone i metodi seguenti.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Fa sì che il documento deve essere creata un'istanza se non esiste già.|
+|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Fa sì che il documento venga creata un'istanza se non esiste già.|

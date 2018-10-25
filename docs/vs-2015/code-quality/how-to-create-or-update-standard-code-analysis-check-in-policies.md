@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939436"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49301561"
   
  Criteri di controllo dell'analisi del codice vengono impostati nelle impostazioni del progetto team e si applicano a ogni progetto di codice nel progetto team. Esecuzioni dell'analisi del codice sono configurate per i progetti di codice nel file di progetto (con estensione xxproj) per il progetto di codice. Esecuzioni dell'analisi del codice vengono eseguite nel computer locale. Quando si abilita un criterio di controllo dell'analisi codice, file in un progetto di codice che devono essere archiviati devono essere compilati termine dell'ultima modifica e analisi del codice eseguito che contiene, come minimo, le regole nelle impostazioni del progetto team devono essere eseguite nel computer in cui il c sono state apportate modifiche in sospeso.  
   
--   Per codice gestito, si impostano i criteri di archiviazione specificando una *set di regole* che contiene un sottoinsieme di regole di analisi codice.  
+- Per codice gestito, si impostano i criteri di archiviazione specificando una *set di regole* che contiene un sottoinsieme di regole di analisi codice.  
   
--   Per codice C/C++, i criteri di controllo richiedono che vengano eseguite tutte le regole di analisi codice. È possibile aggiungere le direttive del preprocessore per disabilitare regole specifiche per singoli progetti di codice nel progetto team.  
+- Per codice C/C++, i criteri di controllo richiedono che vengano eseguite tutte le regole di analisi codice. È possibile aggiungere le direttive del preprocessore per disabilitare regole specifiche per singoli progetti di codice nel progetto team.  
   
- Dopo aver specificato un criterio di controllo per il codice gestito, i membri del team possono sincronizzare le impostazioni di analisi codice per progetti di codice alle impostazioni dei criteri del progetto team.  
+  Dopo aver specificato un criterio di controllo per il codice gestito, i membri del team possono sincronizzare le impostazioni di analisi codice per progetti di codice alle impostazioni dei criteri del progetto team.  
   
 ### <a name="to-open-the-check-in-policy-editor"></a>Per aprire l'editor Criteri di archiviazione  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941945"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Procedura: creare un tipo nullable (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Alcuni tipi di valore non sempre hanno (o hanno bisogno di) un valore definito. 
   
  I tipi nullable sono istanze della struttura <xref:System.Nullable%601>. Ogni istanza di un tipo nullable ha due proprietà pubbliche di sola lettura `HasValue` e `Value`:  
   
--   `HasValue` è di tipo `bool` e indica se la variabile contiene un valore definito. `True` indica che la variabile contiene un valore diverso da null. È possibile testare un valore definito tramite un'istruzione, ad esempio `if (x.HasValue)` o `if (y != null)`.  
+- `HasValue` è di tipo `bool` e indica se la variabile contiene un valore definito. `True` indica che la variabile contiene un valore diverso da null. È possibile testare un valore definito tramite un'istruzione, ad esempio `if (x.HasValue)` o `if (y != null)`.  
   
--   `Value` è dello stesso tipo del tipo sottostante. Se `HasValue` è `True`, `Value` contiene un valore significativo. Se `HasValue` è `False`, l'accesso a `Value` genera un'eccezione di operazione non valida.  
+- `Value` è dello stesso tipo del tipo sottostante. Se `HasValue` è `True`, `Value` contiene un valore significativo. Se `HasValue` è `False`, l'accesso a `Value` genera un'eccezione di operazione non valida.  
   
- Per impostazione predefinita, una variabile dichiarata come tipo nullable non ha alcun valore definito (`HasValue` è `False`), a parte il valore predefinito del tipo di valore sottostante.  
+  Per impostazione predefinita, una variabile dichiarata come tipo nullable non ha alcun valore definito (`HasValue` è `False`), a parte il valore predefinito del tipo di valore sottostante.  
   
- Progettazione classi visualizza un tipo nullable, esattamente come visualizza il tipo sottostante.  
+  Progettazione classi visualizza un tipo nullable, esattamente come visualizza il tipo sottostante.  
   
- Per altre informazioni sui tipi nullable in Visual C#, vedere [Tipi Nullable](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Per altre informazioni sui tipi nullable in Visual Basic, vedere [Tipi di valori Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Per altre informazioni sui tipi nullable in Visual C#, vedere [Tipi Nullable](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Per altre informazioni sui tipi nullable in Visual Basic, vedere [Tipi di valori Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Per aggiungere un tipo nullable tramite Progettazione classi  
   

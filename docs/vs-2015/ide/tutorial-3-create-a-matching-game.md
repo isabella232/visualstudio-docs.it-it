@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939496"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa esercitazione si compila un gioco delle coppie, in cui il giocatore deve riuscire ad accoppiare icone nascoste. Vengono illustrate le seguenti procedure:  
   
--   Archiviare oggetti, ad esempio icone, in un oggetto `List`.  
+- Archiviare oggetti, ad esempio icone, in un oggetto `List`.  
   
--   Utilizzare un ciclo `foreach` in Visual C# o un ciclo `For Each` in Visual Basic per scorrere gli elementi di un elenco.  
+- Utilizzare un ciclo `foreach` in Visual C# o un ciclo `For Each` in Visual Basic per scorrere gli elementi di un elenco.  
   
--   Tenere traccia dello stato di un form utilizzando variabili di riferimento.  
+- Tenere traccia dello stato di un form utilizzando variabili di riferimento.  
   
--   Compilare un gestore eventi per rispondere a eventi utilizzabili con più oggetti.  
+- Compilare un gestore eventi per rispondere a eventi utilizzabili con più oggetti.  
   
--   Creare un timer con conto alla rovescia e quindi generare un evento subito dopo l'avvio.  
+- Creare un timer con conto alla rovescia e quindi generare un evento subito dopo l'avvio.  
   
- Al termine di questa esercitazione, il programma sarà simile all'immagine che segue.  
+  Al termine di questa esercitazione, il programma sarà simile all'immagine che segue.  
   
- ![Gioco creato in questa esercitazione](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-Gioco che si creerà in questa esercitazione  
+  ![Gioco creato in questa esercitazione](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  Gioco che si creerà in questa esercitazione  
   
- Per scaricare una versione completa dell'esempio, vedere [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (Esempio di esercitazione: un gioco delle coppie completo).  
+  Per scaricare una versione completa dell'esempio, vedere [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (Esempio di esercitazione: un gioco delle coppie completo).  
   
 > [!NOTE]
 >  In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.  

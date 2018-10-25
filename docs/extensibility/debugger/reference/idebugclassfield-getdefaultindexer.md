@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Documenti Microsoft
+title: IDebugClassField::GetDefaultIndexer | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f16f4dc94a5019fa66425f55c8f7706db566db9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 75bb1bc0adb63a3c606b03cafc0b8a8c92d956df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934314"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Ottiene il nome dell'indicizzatore predefinita.  
@@ -44,10 +44,10 @@ int GetDefaultIndexer(
  [out] Restituisce una stringa contenente il nome dell'indicizzatore predefinita.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se non esiste alcun indicizzatore predefinito. In caso contrario, verrà restituito un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se non esiste alcun indicizzatore predefinito. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- L'indicizzatore predefinito di una classe è la proprietà che è contrassegnata come il `Default` proprietà per gli accessi di matrice. Questa operazione è specifica per [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Di seguito è riportato un esempio di un indicizzatore predefinito dichiarato in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] e come utilizzarlo.  
+ L'indicizzatore predefinito di una classe è la proprietà che è contrassegnata come il `Default` proprietà per gli accessi alla matrice. Questo è specifico di [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Di seguito è riportato un esempio di un indicizzatore predefinito dichiarato in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] e modalità di utilizzo.  
   
 ```vb  
 Imports System.Collections;  

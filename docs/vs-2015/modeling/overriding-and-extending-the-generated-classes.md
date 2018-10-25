@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933430"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Override ed estensione delle classi generate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ La definizione DSL è una piattaforma in cui è possibile compilare un set avanz
   
  Ad esempio, nell'esempio Library.dsl, il `CirculationBook` classe di dominio ha la `Generates``Double Derived` impostata su `true`. Il codice generato per tale classe di dominio contiene due classi:  
   
--   `CirculationBookBase`, che è una classe astratta e che contiene tutte le proprietà e metodi.  
+- `CirculationBookBase`, che è una classe astratta e che contiene tutte le proprietà e metodi.  
   
--   `CirculationBook`, che deriva da `CirculationBookBase`. È vuoto, eccetto propri costruttori.  
+- `CirculationBook`, che deriva da `CirculationBookBase`. È vuoto, eccetto propri costruttori.  
   
- Per eseguire l'override di qualsiasi metodo, si crea una definizione parziale della classe derivata, ad esempio `CirculationBook`. È possibile eseguire l'override di entrambi i metodi generati e i metodi ereditati dal framework di modellazione.  
+  Per eseguire l'override di qualsiasi metodo, si crea una definizione parziale della classe derivata, ad esempio `CirculationBook`. È possibile eseguire l'override di entrambi i metodi generati e i metodi ereditati dal framework di modellazione.  
   
- È possibile utilizzare questo metodo con tutti i tipi di elemento, inclusi i connettori, relazioni, forme, diagrammi e gli elementi del modello. È anche possibile eseguire l'override di metodi di altre classi generate. Alcune classi generate, ad esempio il ToolboxHelper sono sempre doppia derivazione.  
+  È possibile utilizzare questo metodo con tutti i tipi di elemento, inclusi i connettori, relazioni, forme, diagrammi e gli elementi del modello. È anche possibile eseguire l'override di metodi di altre classi generate. Alcune classi generate, ad esempio il ToolboxHelper sono sempre doppia derivazione.  
   
 ### <a name="custom-constructors"></a>Costruttori personalizzati  
  È possibile eseguire l'override di un costruttore. Anche in classi di doppia derivazione, deve essere il costruttore nella classe derivata.  

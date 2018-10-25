@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936859"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Iniziare il debug di applicazioni multithreading in Visual Studio
 Visual Studio offre diversi strumenti e gli elementi dell'interfaccia utente per il debug di applicazioni multithreading. Questa esercitazione illustra come usare i marcatori dei thread, il **stack in parallelo** finestra, il **espressioni di controllo parallela** finestra punti di interruzione condizionali e i punti di interruzione di filtro. Questa esercitazione richiede solo pochi minuti, ma il suo completamento consentirà di familiarizzare con le funzionalità per il debug di applicazioni multithreading.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sul debug con multithreading che illustra una procedura simile. |
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sul debug con multithreading che illustra una procedura simile. |
 
 Altri argomenti forniscono informazioni aggiuntive sull'uso di altri strumenti di debug con multithreading:
 
@@ -217,30 +217,30 @@ Prima di iniziare questa esercitazione, è necessario un progetto di applicazion
   
 #### <a name="to-start-debugging"></a>Per avviare il debug  
   
-1.  Fare clic sul margine a sinistra del `Thread.Sleep` o `this_thread::sleep_for` istruzione per inserire un nuovo punto di interruzione.  
+1. Fare clic sul margine a sinistra del `Thread.Sleep` o `this_thread::sleep_for` istruzione per inserire un nuovo punto di interruzione.  
   
-     Nella barra di navigazione sul lato sinistro dell'editor del codice sorgente, viene visualizzato un cerchio rosso. che indica l'impostazione di un punto di interruzione in tale posizione. 
+    Nella barra di navigazione sul lato sinistro dell'editor del codice sorgente, viene visualizzato un cerchio rosso. che indica l'impostazione di un punto di interruzione in tale posizione. 
   
-2.  Nel **Debug** menu, fare clic su **Avvia debug** (**F5**).  
+2. Nel **Debug** menu, fare clic su **Avvia debug** (**F5**).  
   
-     Visual Studio compila la soluzione, l'app viene avviata l'esecuzione con il debugger collegato e quindi l'app si arresta nel punto di interruzione.  
+    Visual Studio compila la soluzione, l'app viene avviata l'esecuzione con il debugger collegato e quindi l'app si arresta nel punto di interruzione.  
   
-    > [!NOTE]
-    > Se si passa lo stato attivo alla finestra della console, fare clic nella [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per restituire lo stato attivo alla finestra [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+   > [!NOTE]
+   > Se si passa lo stato attivo alla finestra della console, fare clic nella [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per restituire lo stato attivo alla finestra [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  Nell'editor del codice sorgente, individuare la riga che contiene il punto di interruzione:  
+3. Nell'editor del codice sorgente, individuare la riga che contiene il punto di interruzione:  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>Per individuare il marcatore del thread  
 

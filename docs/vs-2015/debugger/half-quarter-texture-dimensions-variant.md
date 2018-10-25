@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950394"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante delle dimensioni della trama ridotte a metà o un quarto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Riduce le dimensioni della trama per trame che non sono destinazioni di renderin
 ## <a name="remarks"></a>Note  
  Le dimensioni della trama vengono ridotte a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, le dimensioni della trama vengono ridotte quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una trama che viene usata nel rendering, ovvero:  
   
--   Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.  
+- Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.  
   
--   Il membro MiscFlags non presenta il flag D3D11_RESOURCE_MISC_TILE_POOL o il flag D3D11_RESOURCE_MISC_TILED impostato (le risorse allocate dinamicamente non vengono ridimensionate).  
+- Il membro MiscFlags non presenta il flag D3D11_RESOURCE_MISC_TILE_POOL o il flag D3D11_RESOURCE_MISC_TILED impostato (le risorse allocate dinamicamente non vengono ridimensionate).  
   
--   Il formato della trama è supportato come destinazione di rendering, come determinato da D3D11_FORMAT_SUPPORT_RENDER_TARGET, il che è necessario per ridurre le dimensioni della trama. I formati BC1, BC2 e BC3 sono anch'essi supportati, sebbene non lo siano come destinazioni di rendering.  
+- Il formato della trama è supportato come destinazione di rendering, come determinato da D3D11_FORMAT_SUPPORT_RENDER_TARGET, il che è necessario per ridurre le dimensioni della trama. I formati BC1, BC2 e BC3 sono anch'essi supportati, sebbene non lo siano come destinazioni di rendering.  
   
- Se i dati iniziali vengono forniti dall'applicazione, questa variante ridimensiona i dati della trama in modo appropriato prima di creare la trama stessa. Se i dati iniziali vengono forniti in un formato a blocchi compressi come BC1, BC2 o BC3, questi vengono decodificati, ridimensionati, quindi ricodificati prima di essere usati per creare la trama di dimensioni minori. A causa della natura della compressione basata su blocchi, il processo di decodifica, ridimensionamento e ricodifica risulta sempre in una qualità dell'immagine inferiore rispetto a quando una trama con compressione a blocchi viene generata da una versione ridimensionata di una trama non precedentemente codificata.  
+  Se i dati iniziali vengono forniti dall'applicazione, questa variante ridimensiona i dati della trama in modo appropriato prima di creare la trama stessa. Se i dati iniziali vengono forniti in un formato a blocchi compressi come BC1, BC2 o BC3, questi vengono decodificati, ridimensionati, quindi ricodificati prima di essere usati per creare la trama di dimensioni minori. A causa della natura della compressione basata su blocchi, il processo di decodifica, ridimensionamento e ricodifica risulta sempre in una qualità dell'immagine inferiore rispetto a quando una trama con compressione a blocchi viene generata da una versione ridimensionata di una trama non precedentemente codificata.  
   
- Se vengono generate mappe MIP per la trama, la variante riduce il numero di livelli MIP di conseguenza, un livello in meno quando si dimezzano le dimensioni o due livelli in meno quando si riducono di tre quarti.  
+  Se vengono generate mappe MIP per la trama, la variante riduce il numero di livelli MIP di conseguenza, un livello in meno quando si dimezzano le dimensioni o due livelli in meno quando si riducono di tre quarti.  
   
 ## <a name="example"></a>Esempio  
  Questa variante ridimensiona le trame in fase di esecuzione prima della chiamata a `CreateTexture2D`. Per codice di produzione, questo approccio è sconsigliato perché le trame a dimensioni intere occupano più spazio su disco e perché il passaggio aggiuntivo può aumentare i tempi di caricamento nell'app, in particolare per quanto riguarda le trame compresse, che richiedono risorse di elaborazione notevoli per la codifica. È invece consigliabile ridimensionare le trame offline usando un editor o programma per l'elaborazione di immagini che faccia parte della pipeline di compilazione. Questi approcci riducono i requisiti di spazio su disco ed eliminano sovraccarichi di in fase di esecuzione nell'app, oltre a restituire una quantità di tempo di elaborazione che consente di mantenere la miglior qualità di immagine riducendo o comprimendone le trame.  

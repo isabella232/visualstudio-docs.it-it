@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeLocationId | Documenti Microsoft
+title: IDebugDisassemblyStream2::GetCodeLocationId | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86682bb64f041cd8ee1b08bbec02c28492cac7a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f3a1cd9cf0035dddc11bfe7c6fa3f3c1b51a083d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107647"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932702"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-Restituisce un identificatore del percorso di codice per un contesto di codice specifico.  
+Restituisce un identificatore percorso codice per un contesto di codice specifico.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,7 +43,7 @@ int GetCodeLocationId(
   
 #### <a name="parameters"></a>Parametri  
  `pCodeContext`  
- [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto da convertire in un identificatore.  
+ [in] Un' [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto da convertire in un identificatore.  
   
  `puCodeLocationId`  
  [out] Restituisce l'identificatore percorso codice. Vedere la sezione Osservazioni.  
@@ -52,9 +52,9 @@ int GetCodeLocationId(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_CODE_CONTEXT_OUT_OF_SCOPE` se il contesto del codice è valido, ma all'esterno dell'ambito.  
   
 ## <a name="remarks"></a>Note  
- Identificatore della posizione di codice è specifico per il motore di debug (DE), che supporta il disassembly. Questo identificatore viene utilizzato internamente per la Germania per tenere traccia delle posizioni nel codice e viene in genere, un indirizzo o un offset di qualche tipo. L'unico requisito è che se il contesto del codice di un'unica posizione è minore di contesto del codice di un altro percorso, quindi l'identificatore della posizione di codice corrispondente del primo contesto codice inoltre deve essere minore di identificatore della posizione di codice di contesto del codice secondo.  
+ L'identificatore percorso codice è specifico per il motore di debug (DE) che supporta il disassembly. Questo identificatore di località viene utilizzato internamente per la Germania per tenere traccia delle posizioni nel codice e in genere è un indirizzo o un offset di qualche tipo. L'unico requisito è che se il contesto del codice di un'unica posizione è inferiore al contesto del codice di un'altra posizione, l'identificatore percorso codice corrispondente del primo contesto di codice deve essere anche minore l'identificatore percorso codice il secondo contesto del codice.  
   
- Per recuperare il contesto del codice di un identificatore di percorso di codice, chiamare il [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) metodo.  
+ Per recuperare il contesto del codice di un identificatore percorso codice, chiamare il [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   

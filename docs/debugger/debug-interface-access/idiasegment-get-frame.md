@@ -1,5 +1,5 @@
 ---
-title: IDiaSegment::get_frame | Documenti Microsoft
+title: Get_frame | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dd4edf59a5c45177030ae19f9a52340c6088fbc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0911d342f7db341165bdbae426ab784e40b73347
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935727"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
-Recupera il numero di segmento.  
+Recupera il numero di segmenti.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT get_frame (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il numero di segmento.  
+ [out] Restituisce il numero di segmenti.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29c7ee223bbfbeb2dd7b262c33d6c00ea3c41411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934236"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Risoluzione dei problemi relativi al visualizzatore della Guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ In questo argomento vengono illustrati i problemi che potrebbero verificarsi con
 ## <a name="additional-resources"></a>Risorse aggiuntive  
  È possibile ottenere altre informazioni e offrire commenti e suggerimenti sul visualizzatore della Guida mediante le risorse seguenti:  
   
--   Per offrire commenti e suggerimenti, vedere [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) dal sito Microsoft o inviare un messaggio di posta elettronica a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
+- Per offrire commenti e suggerimenti, vedere [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) dal sito Microsoft o inviare un messaggio di posta elettronica a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
   
--   Per altre informazioni, vedere la [sistema di Guida e documentazione per sviluppatori](http://go.microsoft.com/fwlink/?LinkId=232741) forum e [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) blog.  
+- Per altre informazioni, vedere la [sistema di Guida e documentazione per sviluppatori](http://go.microsoft.com/fwlink/?LinkId=232741) forum e [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) blog.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida di Help Viewer 2.1 amministratore](http://go.microsoft.com/fwlink/?LinkId=243985)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: OpenSession | Documenti Microsoft'
+title: Idiadatasource | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fe9bf3a67d3ad5f26ff7c4ccdaa9772cf1346b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933508"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Apre una sessione per eseguire query sui simboli.  
@@ -34,7 +34,7 @@ HRESULT openSession (
   
 #### <a name="parameters"></a>Parametri  
  ppSession  
- [out] Restituisce un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) oggetto che rappresenta la sessione di aperta.  
+ [out] Restituisce un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) oggetto che rappresenta la sessione aperta.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.  
@@ -42,13 +42,13 @@ HRESULT openSession (
 |Valore|Descrizione|  
 |-----------|-----------------|  
 |E_UNEXPECTED|Il [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) oggetto non è già stato inizializzato con un'origine dei simboli.|  
-|E_INVALIDARG|Non valido `ppSession` parametro.|  
+|E_INVALIDARG|Non è valido `ppSession` parametro.|  
 |E_OUTOFMEMORY|Memoria insufficiente per aprire la sessione.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo apre un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) oggetto per un'origine dati.  
+ Questo metodo consente di aprire una [IDiaSession](../../debugger/debug-interface-access/idiasession.md) oggetti per un'origine dati.  
   
- `IDiaSession` gli oggetti implementare query nell'origine dati. Una sessione gestisce uno spazio di indirizzi per ogni set di simboli di debug. Se il file .exe o dll descritto dai simboli di origine dati è attivo nell'indirizzo più intervalli (ad esempio, in quanto più processi sono caricato), quindi deve essere utilizzata una sola sessione per ogni intervallo di indirizzi.  
+ `IDiaSession` le query che gli oggetti nell'origine dati. Una sessione gestisce uno spazio di indirizzi per ogni set di simboli di debug. Se il file DLL o .exe descritto dai simboli di origine dati è attivo nell'indirizzo più intervalli (ad esempio, poiché più processi averlo caricato), quindi deve essere usata una sola sessione per ogni intervallo di indirizzi.  
   
 ## <a name="example"></a>Esempio  
   

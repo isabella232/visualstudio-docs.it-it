@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938266"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Aggiungere un'estensione del protocollo di Server di linguaggio
 
@@ -132,10 +132,10 @@ Il rappresentante LSP memorizzato non è incluse specifiche su come fornire la c
 
 4. Creare un *pkgdef* file e aggiungere una riga simile alla seguente:
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. Fare doppio clic sul file e scegliere **proprietà**. Modifica il **compilare** azione **contenuto** e il **Includi in VSIX** proprietà su true.
 
@@ -295,40 +295,40 @@ Eseguire la procedura seguente per aggiungere supporto per le impostazioni per l
 
 1. Aggiungere un file JSON (ad esempio, *MockLanguageExtensionSettings.json*) nel progetto che contiene le impostazioni e i relativi valori predefiniti. Ad esempio:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. Fare doppio clic sul file JSON e selezionare **proprietà**. Modifica il **compilare** azione a "Content" e "Includi in VSIX' su true.
 
 3. Implementare ConfigurationSections e restituire l'elenco dei prefissi per le impostazioni definite nel file JSON (In Visual Studio Code, questo potrebbe eseguire il mapping al nome di sezione di configurazione nel file package. JSON):
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. Aggiungere un file con estensione pkgdef per il progetto (Aggiungi nuovo file di testo e modificare l'estensione di file in pkgdef). Il file pkgdef dovrebbe contenere queste info:
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. Fare clic con il pulsante destro sul file con estensione pkgdef e selezionare **proprietà**. Modifica il **compilare** azione **contenuto** e il **Includi in VSIX** proprietà su true.
 
 6. Aprire il *vsixmanifest* file e aggiungere un asset nel **Asset** scheda:
 
-  ![Modifica risorsa vspackage](media/lsp-add-vspackage-asset.png)
+   ![Modifica risorsa vspackage](media/lsp-add-vspackage-asset.png)
 
-  * **Tipo**: Microsoft.VisualStudio.VsPackage
-  * **Origine**: File in filesystem
-  * **Percorso**: [percorso per il *pkgdef* file]
+   * **Tipo**: Microsoft.VisualStudio.VsPackage
+   * **Origine**: File in filesystem
+   * **Percorso**: [percorso per il *pkgdef* file]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Utente di modifica delle impostazioni dell'area di lavoro
 
@@ -336,16 +336,16 @@ Eseguire la procedura seguente per aggiungere supporto per le impostazioni per l
 2. Utente aggiunge un file nei *VS* cartella denominata *vsworkspacesettings. JSON*.
 3. Utente aggiunge una riga per il *vsworkspacesettings. JSON* file per un'impostazione forniti dal server. Ad esempio:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>Abilitazione della traccia di diagnostica
-Tracce di diagnostica può essere abilitata per l'output di tutti i messaggi tra client e server, che può essere utile durante il debug di problemi.  Per abilitare la traccia diagnostica, eseguire le operazioni seguenti:
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>Abilitazione della traccia di diagnostica
+   Tracce di diagnostica può essere abilitata per l'output di tutti i messaggi tra client e server, che può essere utile durante il debug di problemi.  Per abilitare la traccia diagnostica, eseguire le operazioni seguenti:
 
-1. Aprire o creare il file di impostazioni dell'area di lavoro *vsworkspacesettings. JSON* (vedere "Utente di modifica delle impostazioni dell'area di lavoro").
-2. Aggiungere la riga seguente nel file di impostazioni json:
+4. Aprire o creare il file di impostazioni dell'area di lavoro *vsworkspacesettings. JSON* (vedere "Utente di modifica delle impostazioni dell'area di lavoro").
+5. Aggiungere la riga seguente nel file di impostazioni json:
 
 ```json
 {

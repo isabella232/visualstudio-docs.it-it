@@ -24,39 +24,39 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 724ddcc00b1f49eb1f96e67d6b6e269933cb9d66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950491"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Convalidare il codice con diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per assicurarsi che il codice non sia in conflitto con la progettazione, è possibile convalidare il codice con diagrammi livello in Visual Studio. In questo modo è possibile effettuare le operazioni seguenti:  
   
--   Trovare conflitti tra le dipendenze nel codice e le dipendenze nel diagramma livello.  
+- Trovare conflitti tra le dipendenze nel codice e le dipendenze nel diagramma livello.  
   
--   Trovare le dipendenze sulle quali potrebbero influire le modifiche proposte.  
+- Trovare le dipendenze sulle quali potrebbero influire le modifiche proposte.  
   
-     Ad esempio, è possibile modificare il diagramma livello per mostrare le potenziali modifiche all'architettura e quindi convalidare il codice per vedere le dipendenze interessate.  
+   Ad esempio, è possibile modificare il diagramma livello per mostrare le potenziali modifiche all'architettura e quindi convalidare il codice per vedere le dipendenze interessate.  
   
--   Effettuare il refactoring o la migrazione del codice in una progettazione diversa.  
+- Effettuare il refactoring o la migrazione del codice in una progettazione diversa.  
   
-     Trovare codice o dipendenze che richiedono azioni quando si sposta il codice in un'architettura diversa.  
+   Trovare codice o dipendenze che richiedono azioni quando si sposta il codice in un'architettura diversa.  
   
- **Requisiti**  
+  **Requisiti**  
   
--   Visual Studio  
+- Visual Studio  
   
--   Visual Studio sul server Team Foundation Build in uso per convalidare il codice automaticamente con Team Foundation Build  
+- Visual Studio sul server Team Foundation Build in uso per convalidare il codice automaticamente con Team Foundation Build  
   
--   Una soluzione che contiene un progetto di modellazione con un diagramma livello. Questo diagramma livello deve essere collegato agli artefatti nei progetti Visual C# .NET o Visual Basic .NET da convalidare. Visualizzare [creare i diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md).  
+- Una soluzione che contiene un progetto di modellazione con un diagramma livello. Questo diagramma livello deve essere collegato agli artefatti nei progetti Visual C# .NET o Visual Basic .NET da convalidare. Visualizzare [creare i diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- È possibile convalidare manualmente il codice da un diagramma livello aperto in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare il codice automaticamente quando sono in esecuzione compilazioni locali o Team Foundation Build. Visualizzare [Video di Channel 9: progettazione e convalidare l'architettura utilizzando i diagrammi livello](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  È possibile convalidare manualmente il codice da un diagramma livello aperto in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare il codice automaticamente quando sono in esecuzione compilazioni locali o Team Foundation Build. Visualizzare [Video di Channel 9: progettazione e convalidare l'architettura utilizzando i diagrammi livello](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Se si desidera eseguire la convalida dei livelli in Team Foundation Build, è inoltre necessario installare la stessa versione di Visual Studio nel server di compilazione.  
@@ -108,41 +108,41 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>Per convalidare il codice al prompt dei comandi  
   
-1.  Aprire il prompt dei comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Aprire il prompt dei comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Effettuare una delle seguenti operazioni:  
+2. Effettuare una delle seguenti operazioni:  
   
-    -   Per convalidare il codice rispetto a un progetto di modellazione specifico nella soluzione, eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata.  
+   - Per convalidare il codice rispetto a un progetto di modellazione specifico nella soluzione, eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata.  
   
-        ```  
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
+     ```  
   
-         - oppure -  
+     - oppure -  
   
-         Passare alla cartella contenente il file di progetto di modellazione (con estensione modelproj) e il diagramma livello, quindi eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata.  
+       Passare alla cartella contenente il file di progetto di modellazione (con estensione modelproj) e il diagramma livello, quindi eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata.  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true   
+     ```  
   
-    -   Per convalidare il codice rispetto a tutti i progetti di modellazione nella soluzione, eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata:  
+   - Per convalidare il codice rispetto a tutti i progetti di modellazione nella soluzione, eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata:  
   
-        ```  
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
+     ```  
   
-         - oppure -  
+     - oppure -  
   
-         Individuare la cartella della soluzione che deve contenere un progetto di modellazione che a sua volta contiene un diagramma livello, quindi eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata.  
+       Individuare la cartella della soluzione che deve contenere un progetto di modellazione che a sua volta contiene un diagramma livello, quindi eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata.  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true  
+     ```  
   
      Verranno elencati tutti gli errori che si verificano. Per altre informazioni sulle [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vedere [MSBuild](../msbuild/msbuild.md) e [attività MSBuild](../msbuild/msbuild-task.md).  
   
- Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).  
+   Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).  
   
 ###  <a name="ManageErrors"></a> Gestire gli errori di convalida  
  Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni conflitti segnalati durante la convalida. Ad esempio, è possibile eliminare gli errori che sono già stati corretti o che non sono attinenti allo scenario in questione. Quando si elimina un errore, è buona norma registrare un elemento di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
@@ -152,9 +152,9 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Per creare un elemento di lavoro per un errore di convalida  
   
--   Nel **elenco errori** finestra, fare doppio clic su errore, scegliere **Crea elemento di lavoro**e quindi scegliere il tipo di elemento di lavoro che si desidera creare.  
+- Nel **elenco errori** finestra, fare doppio clic su errore, scegliere **Crea elemento di lavoro**e quindi scegliere il tipo di elemento di lavoro che si desidera creare.  
   
- Usare queste attività per gestire gli errori di convalida nel **elenco errori** finestra:  
+  Usare queste attività per gestire gli errori di convalida nel **elenco errori** finestra:  
   
 |**Per**|**Seguire questi passaggi**|  
 |------------|----------------------------|  
@@ -176,29 +176,29 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
   
  \- oppure -  
   
-1.  Nelle **Esplora soluzioni**, fare clic sul progetto che contiene il diagramma livello o diagrammi di modellazione e quindi fare clic su **proprietà**.  
+1. Nelle **Esplora soluzioni**, fare clic sul progetto che contiene il diagramma livello o diagrammi di modellazione e quindi fare clic su **proprietà**.  
   
-2.  Nel **delle proprietà** finestra, impostare il progetto di modellazione **Convalida architettura** proprietà **True**.  
+2. Nel **delle proprietà** finestra, impostare il progetto di modellazione **Convalida architettura** proprietà **True**.  
   
-     Il progetto di modellazione viene incluso nel processo di convalida.  
+    Il progetto di modellazione viene incluso nel processo di convalida.  
   
-3.  Nelle **Esplora soluzioni**, fare clic sul file del diagramma (con estensione layerdiagram) livello che si desidera utilizzare per la convalida.  
+3. Nelle **Esplora soluzioni**, fare clic sul file del diagramma (con estensione layerdiagram) livello che si desidera utilizzare per la convalida.  
   
-4.  Nel **proprietà** finestra, assicurarsi che il diagramma **azione di compilazione** viene impostata su **Validate**.  
+4. Nel **proprietà** finestra, assicurarsi che il diagramma **azione di compilazione** viene impostata su **Validate**.  
   
-     Il diagramma livello viene incluso nel processo di convalida.  
+    Il diagramma livello viene incluso nel processo di convalida.  
   
- Per gestire gli errori nella finestra Elenco errori, vedere [Gestisci errori di convalida](#ManageErrors).  
+   Per gestire gli errori nella finestra Elenco errori, vedere [Gestisci errori di convalida](#ManageErrors).  
   
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Per convalidare codice automaticamente durante un'operazione di Team Foundation Build  
   
-1.  Nelle **Team Explorer**, fare doppio clic sulla definizione di compilazione e quindi fare clic su **processo**.  
+1. Nelle **Team Explorer**, fare doppio clic sulla definizione di compilazione e quindi fare clic su **processo**.  
   
-2.  Sotto **parametri processo di compilazione**, espandere **compilazione**e digitare il comando seguente nel **argomenti MSBuild** parametro:  
+2. Sotto **parametri processo di compilazione**, espandere **compilazione**e digitare il comando seguente nel **argomenti MSBuild** parametro:  
   
-     `/p:ValidateArchitecture=true`  
+    `/p:ValidateArchitecture=true`  
   
- Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors). Per altre informazioni su [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], vedere:  
+   Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors). Per altre informazioni su [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], vedere:  
   
 -   [Compilare l'applicazione](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
@@ -220,13 +220,13 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 ##  <a name="UnderstandingValidationErrors"></a> La comprensione e la risoluzione di errori a livello di convalida  
  Quando si esegue la convalida di codice in base a un diagramma livello, se il codice è in conflitto con la progettazione si verificano errori di convalida. In presenza delle condizioni seguenti è possibile ad esempio che si verifichino errori di convalida:  
   
--   Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.  
+- Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.  
   
--   Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.  
+- Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.  
   
- Per risolvere gli errori, aggiornare il codice finché non verranno più visualizzati errori di convalida. È possibile eseguire questa attività in modo iterativo.  
+  Per risolvere gli errori, aggiornare il codice finché non verranno più visualizzati errori di convalida. È possibile eseguire questa attività in modo iterativo.  
   
- Nella sezione seguente viene descritta la sintassi usata negli errori, viene illustrato il significato degli errori e vengono indicate le operazioni che è possibile eseguire per risolverli o gestirli.  
+  Nella sezione seguente viene descritta la sintassi usata negli errori, viene illustrato il significato degli errori e vengono indicate le operazioni che è possibile eseguire per risolverli o gestirli.  
   
 |**Sintassi**|**Descrizione**|  
 |----------------|---------------------|  

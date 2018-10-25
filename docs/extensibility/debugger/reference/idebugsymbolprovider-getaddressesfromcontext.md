@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromContext | Documenti Microsoft
+title: IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09bc0d4fc0a723c259e2897b95abbd8611b10c7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94920e72b7d83e45fc7d7e49849f3c1983b180ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931519"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Questo metodo esegue il mapping di un contesto di documento in una matrice di indirizzi di debug.  
@@ -53,18 +53,18 @@ int GetAddressesFromContext(
  [in] Se TRUE, limita gli indirizzi di debug per una singola istruzione.  
   
  `ppEnumBegAddresses`  
- [out] Restituisce un enumeratore per gli indirizzi iniziali di debug associata a questa istruzione o la riga.  
+ [out] Restituisce un enumeratore per gli indirizzi iniziali di debug associato con questa istruzione o la riga.  
   
  `ppEnumEndAddresses`  
- [out] Restituisce un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumeratore per gli indirizzi di debug finale associata a questa istruzione o la riga.  
+ [out] Restituisce un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumeratore per gli indirizzi di debug finale associati a questa istruzione o la riga.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Un contesto di documento in genere indica un intervallo di righe di origine. Questo metodo fornisce iniziale e quello finale debug associata a queste righe. Alcuni linguaggi consentono istruzioni che si estendono su più righe o le righe che contiene più di un'istruzione. Questo metodo fornisce un flag per limitare gli indirizzi di debug per una singola istruzione.  
+ Un contesto di documento in genere indica un intervallo di righe di origine. Questo metodo fornisce il valore iniziale e finale debug indirizzi associati con queste righe. Alcuni linguaggi viene consentita istruzioni che si estendono su più righe o le righe che contiene più di un'istruzione. Questo metodo fornisce un flag per limitare gli indirizzi di debug per una singola istruzione.  
   
- È possibile per una singola istruzione per disporre di più indirizzi di debug, come nel caso di modelli.  
+ È possibile che una singola istruzione per disporre di più indirizzi di debug, come nel caso di modelli.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

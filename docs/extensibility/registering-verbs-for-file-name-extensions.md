@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927801"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrare i verbi per estensioni di file
 L'associazione di un'estensione di file a un'applicazione ha in genere un'azione da preferire che si verifica quando un utente fa doppio clic su un file. Preferibile utilizzare l'azione è collegata a un verbo, ad esempio open, che corrisponde all'azione.  
@@ -28,17 +28,17 @@ L'associazione di un'estensione di file a un'applicazione ha in genere un'azione
 ## <a name="register-standard-verbs"></a>Registrare i verbi standard  
  Il sistema operativo riconosce i verbi standard seguenti:  
   
--   Apri  
+- Apri  
   
--   Edit  
+- Edit  
   
--   Riproduci  
+- Riproduci  
   
--   Print  
+- Print  
   
--   Anteprima  
+- Anteprima  
   
- Quando possibile, registrare un verbo standard. La scelta più comune è il verbo Open. Usare il verbo di modifica solo se è presente una netta differenza tra l'apertura del file e la modifica del file. Ad esempio, aprire un *htm* file visualizzarlo nel browser, mentre la modifica un *htm* file avvia un editor HTML. Verbi standard vengono localizzati con impostazioni locali del sistema operativo.  
+  Quando possibile, registrare un verbo standard. La scelta più comune è il verbo Open. Usare il verbo di modifica solo se è presente una netta differenza tra l'apertura del file e la modifica del file. Ad esempio, aprire un *htm* file visualizzarlo nel browser, mentre la modifica un *htm* file avvia un editor HTML. Verbi standard vengono localizzati con impostazioni locali del sistema operativo.  
   
 > [!NOTE]
 >  Quando si registrano i verbi standard, non impostare il valore predefinito per il codice Open. Il valore predefinito contiene la stringa di visualizzazione del menu. Il sistema operativo fornisce questa stringa per i verbi standard.  

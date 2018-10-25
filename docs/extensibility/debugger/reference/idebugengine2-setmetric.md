@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetMetric | Documenti Microsoft
+title: IDebugEngine2::SetMetric | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12e323fe248bc022bcbbd8b9bdd0e628c27a97e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02f7d533cfc64ad7a1e3bfd342a2be56a5c6cd7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935952"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
-Questo metodo imposta un valore del Registro di sistema denominato una metrica.  
+Questo metodo imposta un valore del Registro di sistema noto come una metrica.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,7 +52,7 @@ int SetMetric(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Una metrica è un valore del Registro di sistema utilizzato per modificare il comportamento del motore di debug o per annunciare le funzionalità supportate. Questo metodo può inoltrare la chiamata al modulo appropriato del [SDK helper per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funzione `SetMetric`.  
+ Una metrica è un valore del Registro di sistema utilizzato per modificare il comportamento del motore di debug o per annunciare le funzionalità supportate. Questo metodo può inoltrare la chiamata alla forma appropriata del [helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funzione `SetMetric`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

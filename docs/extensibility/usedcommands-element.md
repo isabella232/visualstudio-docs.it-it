@@ -1,5 +1,5 @@
 ---
-title: Elemento UsedCommands | Documenti Microsoft
+title: Elemento UsedCommands | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa2dd8bbcfaaa84905f60e2f4ae984f3269c7095
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e707a8336fb5e324c667ae16eceac2c2e9f55654
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934769"
 ---
 # <a name="usedcommands-element"></a>Elemento UsedCommands
 L'elemento UsedCommands Raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.  
   
- L'elemento UsedCommands è facoltativo. Se non si chiama comandi definiti all'esterno del pacchetto, non è necessario includere in questa sezione nel file con estensione vsct.  
+ L'elemento UsedCommands è facoltativo. Se non è necessario chiamare i comandi definiti all'esterno del pacchetto, non è necessario includere questa sezione nel file con estensione vsct.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,13 +43,13 @@ L'elemento UsedCommands Raggruppa gli elementi UsedCommand e altri raggruppament
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento UsedCommand](../extensibility/usedcommand-element.md)|Il comando che viene implementato da altro codice.|  
+|[Elemento UsedCommand](../extensibility/usedcommand-element.md)|Il comando che viene implementato da un altro codice.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
