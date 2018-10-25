@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b706aa4de24152a7cf656b2cec9aee64f36d7773
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f210aa8e33859f41046edc8e524cbfbeaf5417b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898616"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,23 +54,23 @@ Le attività di MSBuild in genere vengono create compilando una classe che imple
   
  L'elemento `UsingTask` nell'esempio ha tre attributi che descrivono l'attività e la factory dell'attività inline che la compila.  
   
--   L'attributo `TaskName` assegna un nome all'attività, in questo caso `DoNothing`.  
+- L'attributo `TaskName` assegna un nome all'attività, in questo caso `DoNothing`.  
   
--   L'attributo `TaskFactory` assegna un nome alla classe che implementa la factory dell'attività inline.  
+- L'attributo `TaskFactory` assegna un nome alla classe che implementa la factory dell'attività inline.  
   
--   L'attributo `AssemblyFile` assegna la posizione della factory dell'attività inline. In alternativa, è possibile usare l'attributo `AssemblyName` per specificare il nome completo della classe factory dell'attività inline, che in genere si trova nella Global Assembly Cache (GAC).  
+- L'attributo `AssemblyFile` assegna la posizione della factory dell'attività inline. In alternativa, è possibile usare l'attributo `AssemblyName` per specificare il nome completo della classe factory dell'attività inline, che in genere si trova nella Global Assembly Cache (GAC).  
   
- Gli elementi rimanenti dell'attività `DoNothing` sono vuoti e vengono specificati per illustrare l'ordine e la struttura di un'attività inline. Un esempio più concreto è riportato più avanti in questo argomento.  
+  Gli elementi rimanenti dell'attività `DoNothing` sono vuoti e vengono specificati per illustrare l'ordine e la struttura di un'attività inline. Un esempio più concreto è riportato più avanti in questo argomento.  
   
--   L'elemento `ParameterGroup` è facoltativo. Se specificato, consente di dichiarare i parametri per l'attività. Per altre informazioni sui parametri di input e output, vedere "Parametri di input e output" più avanti in questo argomento.  
+- L'elemento `ParameterGroup` è facoltativo. Se specificato, consente di dichiarare i parametri per l'attività. Per altre informazioni sui parametri di input e output, vedere "Parametri di input e output" più avanti in questo argomento.  
   
--   L'elemento `Task` descrive e contiene il codice sorgente dell'attività.  
+- L'elemento `Task` descrive e contiene il codice sorgente dell'attività.  
   
--   L'elemento `Reference` specifica i riferimenti agli assembly .NET usati nel codice. Equivale all'aggiunta di un riferimento a un progetto in Visual Studio. L'attributo `Include` specifica il percorso dell'assembly di riferimento.  
+- L'elemento `Reference` specifica i riferimenti agli assembly .NET usati nel codice. Equivale all'aggiunta di un riferimento a un progetto in Visual Studio. L'attributo `Include` specifica il percorso dell'assembly di riferimento.  
   
--   L'elemento `Using` indica gli spazi dei nomi a cui si vuole accedere. Ricorda l'istruzione `Using` in Visual C#. L'attributo `Namespace` specifica lo spazio dei nomi da includere.  
+- L'elemento `Using` indica gli spazi dei nomi a cui si vuole accedere. Ricorda l'istruzione `Using` in Visual C#. L'attributo `Namespace` specifica lo spazio dei nomi da includere.  
   
- Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programmazione. Le attività inline possono essere scritte in uno dei linguaggi .NET CodeDOM supportati, ad esempio Visual Basic, Visual C#.  
+  Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programmazione. Le attività inline possono essere scritte in uno dei linguaggi .NET CodeDOM supportati, ad esempio Visual Basic, Visual C#.  
   
 > [!NOTE]
 >  Gli elementi contenuti in `Task` sono specifici della factory dell'attività, in questo caso la factory dell'attività del codice.  
@@ -82,15 +82,15 @@ Le attività di MSBuild in genere vengono create compilando una classe che imple
   
  L'attributo `Type` specifica il tipo di codice rilevato nell'elemento `Code`.  
   
--   Se il valore di `Type` è `Class`, l'elemento `Code` contiene il codice per una classe che deriva dall'interfaccia <xref:Microsoft.Build.Framework.ITask>.  
+- Se il valore di `Type` è `Class`, l'elemento `Code` contiene il codice per una classe che deriva dall'interfaccia <xref:Microsoft.Build.Framework.ITask>.  
   
--   Se il valore di `Type` è `Method`, il codice definisce un override del metodo `Execute` dell'interfaccia <xref:Microsoft.Build.Framework.ITask>.  
+- Se il valore di `Type` è `Method`, il codice definisce un override del metodo `Execute` dell'interfaccia <xref:Microsoft.Build.Framework.ITask>.  
   
--   Se il valore di `Type` è `Fragment`, il codice definisce il contenuto del metodo `Execute` ma non la firma o l'istruzione `return`.  
+- Se il valore di `Type` è `Fragment`, il codice definisce il contenuto del metodo `Execute` ma non la firma o l'istruzione `return`.  
   
- Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice è in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape di caratteri riservati, ad esempio "\<" o ">".  
+  Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice è in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape di caratteri riservati, ad esempio "\<" o ">".  
   
- In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per specificare il percorso di un file che contiene il codice per l'attività. Il codice nel file di origine deve essere del tipo specificato dall'attributo `Type`. Se l'attributo `Source` è presente, il valore predefinito di `Type` è `Class`. Se `Source` non è presente, il valore predefinito è `Fragment`.  
+  In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per specificare il percorso di un file che contiene il codice per l'attività. Il codice nel file di origine deve essere del tipo specificato dall'attributo `Type`. Se l'attributo `Source` è presente, il valore predefinito di `Type` è `Class`. Se `Source` non è presente, il valore predefinito è `Fragment`.  
   
 > [!NOTE]
 >  Quando si definisce la classe dell'attività nel file di origine il nome della classe deve concordare con l'attributo `TaskName` dell'elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) corrispondente.  
@@ -143,13 +143,13 @@ Log.LogError("Hello, world!");
   
  I parametri possono avere uno o più degli attributi seguenti:  
   
--   `Required` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro è obbligatorio e deve avere un valore assegnato prima di chiamare l'attività.  
+- `Required` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro è obbligatorio e deve avere un valore assegnato prima di chiamare l'attività.  
   
--   `ParameterType` è un attributo facoltativo che è `System.String` per impostazione predefinita. Può essere impostato su qualsiasi tipo completo che sia un elemento o un valore che può essere convertito in e da una stringa usando System.Convert.ChangeType. In altre parole, qualsiasi tipo che può essere passato a e da un'attività esterna.  
+- `ParameterType` è un attributo facoltativo che è `System.String` per impostazione predefinita. Può essere impostato su qualsiasi tipo completo che sia un elemento o un valore che può essere convertito in e da una stringa usando System.Convert.ChangeType. In altre parole, qualsiasi tipo che può essere passato a e da un'attività esterna.  
   
--   `Output` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro deve avere un valore assegnato prima della restituzione da parte del metodo Execute.  
+- `Output` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro deve avere un valore assegnato prima della restituzione da parte del metodo Execute.  
   
- Ad esempio,  
+  Ad esempio,  
   
 ```  
 <ParameterGroup>  
@@ -161,13 +161,13 @@ Log.LogError("Hello, world!");
   
  definisce questi tre parametri:  
   
--   `Expression` è un parametro di input obbligatorio del tipo System.String.  
+- `Expression` è un parametro di input obbligatorio del tipo System.String.  
   
--   `Files` è un parametro di input obbligatorio dell'elenco di elementi.  
+- `Files` è un parametro di input obbligatorio dell'elenco di elementi.  
   
--   `Tally` è un parametro di output del tipo System.Int32.  
+- `Tally` è un parametro di output del tipo System.Int32.  
   
- Se l'elemento `Code` ha come attributo `Type` `Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.  
+  Se l'elemento `Code` ha come attributo `Type` `Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.  
   
 ## <a name="example"></a>Esempio  
  L'attività inline seguente sostituisce ogni occorrenza di un token nel file specificato con il valore specificato.  

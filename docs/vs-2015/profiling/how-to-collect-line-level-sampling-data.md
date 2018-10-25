@@ -16,12 +16,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cca327ffe8dbf260915b5eaa143bef6bb631e690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893416"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procedura: Raccogliere i dati di campionamento a livello di riga
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Il campionamento a livello di riga è una capacità del profiler che consente di
 ### <a name="available-data"></a>Dati disponibili  
  I dati del campionamento a livello di riga disponibili includono le informazioni seguenti:  
   
--   Nome funzione.  
+- Nome funzione.  
   
--   Indirizzo funzione.  
+- Indirizzo funzione.  
   
--   Inizio riga: numero di riga del codice di campionamento.  
+- Inizio riga: numero di riga del codice di campionamento.  
   
--   Fine riga: numero di riga di fine del codice sorgente. Generalmente corrisponde al valore di "Inizio riga" ad eccezione di quando una singola istruzione del programma si estende su più righe del codice sorgente.  
+- Fine riga: numero di riga di fine del codice sorgente. Generalmente corrisponde al valore di "Inizio riga" ad eccezione di quando una singola istruzione del programma si estende su più righe del codice sorgente.  
   
--   Inizio carattere: colonna iniziale del campione di aggregazione. Generalmente questo valore è 0 ad eccezione di quando una singola riga contiene più istruzioni del programma.  
+- Inizio carattere: colonna iniziale del campione di aggregazione. Generalmente questo valore è 0 ad eccezione di quando una singola riga contiene più istruzioni del programma.  
   
--   Fine carattere: colonna finale del campione di aggregazione.  
+- Fine carattere: colonna finale del campione di aggregazione.  
   
--   IP: indirizzo in cui è stato prelevato il campione di aggregazione (solo visualizzazione IP).  
+- IP: indirizzo in cui è stato prelevato il campione di aggregazione (solo visualizzazione IP).  
   
- Nella visualizzazione **Moduli**, se una funzione presenta statistiche a livello di riga, le statistiche vengono annidate in ogni funzione. Vengono inoltre visualizzate le statistiche a livello di IP annidate in ogni riga.  
+  Nella visualizzazione **Moduli**, se una funzione presenta statistiche a livello di riga, le statistiche vengono annidate in ogni funzione. Vengono inoltre visualizzate le statistiche a livello di IP annidate in ogni riga.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Disattivare il campionamento a livello di riga per il codice gestito  
  Per impostazione predefinita, il campionamento a livello di riga è attivato. È possibile disattivare la raccolta di dati a livello di riga per il codice gestito in uno dei seguenti modi:  

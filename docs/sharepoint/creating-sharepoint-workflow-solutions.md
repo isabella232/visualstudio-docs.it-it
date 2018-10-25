@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634722"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892311"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Creare soluzioni di flusso di lavoro di SharePoint
 
@@ -70,25 +70,25 @@ Per altre informazioni su SharePoint, vedere [Microsoft SharePoint Products and 
 
  Esistono due tipi di attività:
 
--   *Attività semplici* eseguire una singola unità di lavoro, ad esempio "ritarda per un giorno" o "Avvia servizio Web".
+- *Attività semplici* eseguire una singola unità di lavoro, ad esempio "ritarda per un giorno" o "Avvia servizio Web".
 
--   *Le attività composte* contenere altre attività, ad esempio, un'attività condizionale può contenere due rami.
+- *Le attività composte* contenere altre attività, ad esempio, un'attività condizionale può contenere due rami.
 
- Sono disponibili in entrambi i tipi di attività di **casella degli strumenti**.
+  Sono disponibili in entrambi i tipi di attività di **casella degli strumenti**.
 
- Attività possono avere proprietà, metodi ed eventi. Usare la **proprietà** finestra per impostare le proprietà di un'attività.
+  Attività possono avere proprietà, metodi ed eventi. Usare la **proprietà** finestra per impostare le proprietà di un'attività.
 
- È anche possibile creare un'attività personalizzata. Per altre informazioni, vedere [procedura dettagliata: creare un'attività flusso di lavoro di sito personalizzati](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  È anche possibile creare un'attività personalizzata. Per altre informazioni, vedere [procedura dettagliata: creare un'attività flusso di lavoro di sito personalizzati](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
- Le attività sono organizzate nelle seguenti schede nel **casella degli strumenti**:
+  Le attività sono organizzate nelle seguenti schede nel **casella degli strumenti**:
 
--   **Flusso di lavoro SharePoint**
+- **Flusso di lavoro SharePoint**
 
--   **Windows Workflow v3.0**
+- **Windows Workflow v3.0**
 
--   **Windows Workflow v3.5**
+- **Windows Workflow v3.5**
 
- Non tutte le attività del flusso di lavoro di base sono supportate da SharePoint. Per altre informazioni, vedere [Cenni preliminari sulle attività del flusso di lavoro per Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
+  Non tutte le attività del flusso di lavoro di base sono supportate da SharePoint. Per altre informazioni, vedere [Cenni preliminari sulle attività del flusso di lavoro per Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
 
 #### <a name="sharepoint-workflow-activities"></a>Attività del flusso di lavoro di SharePoint
  Il **flusso di lavoro SharePoint** schede contengono le attività specializzate per l'uso in [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Queste attività semplificano lo sviluppo di flussi di lavoro ciclo di vita documento. Per altre informazioni sulle attività elencate nel **flusso di lavoro SharePoint** scheda, vedere [Cenni preliminari sulle attività del flusso di lavoro per Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
@@ -111,15 +111,15 @@ Per altre informazioni su SharePoint, vedere [Microsoft SharePoint Products and 
 
  Esistono quattro tipi di form che può essere usato in un flusso di lavoro:
 
--   Associazione
+- Associazione
 
--   Avvio
+- Avvio
 
--   Modifica
+- Modifica
 
--   Attività
+- Attività
 
- Tra questi, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include modelli di elementi per i form di associazione e di avvio. Un esempio di un' *form di associazione* è quello che consente all'amministratore di installare il flusso di lavoro immettere i parametri correlati al flusso di lavoro, ad esempio un limite di spesa per un flusso di lavoro di nota spese. Un esempio di un' *form di avvio* è quello che consente all'utente di un flusso di lavoro di spesa di immettere l'importo speso nel flusso di lavoro. Per altre informazioni su questi tipi di form, vedere [SharePoint modelli di elemento di progetto e progetto](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  Tra questi, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include modelli di elementi per i form di associazione e di avvio. Un esempio di un' *form di associazione* è quello che consente all'amministratore di installare il flusso di lavoro immettere i parametri correlati al flusso di lavoro, ad esempio un limite di spesa per un flusso di lavoro di nota spese. Un esempio di un' *form di avvio* è quello che consente all'utente di un flusso di lavoro di spesa di immettere l'importo speso nel flusso di lavoro. Per altre informazioni su questi tipi di form, vedere [SharePoint modelli di elemento di progetto e progetto](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Proprietà degli elementi
  È anche possibile raccogliere informazioni dagli utenti usando le proprietà di un elemento nell'elenco o raccolta di SharePoint. Il file di codice principale (Workflow1.cs o Workflow1.vb) dichiara un'istanza della classe Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties denominata `workflowProperties`. Usare il `workflowProperties` oggetto per accedere alle proprietà della libreria o dell'elenco nel codice. Per un esempio, vedere [procedura dettagliata: creare ed eseguire il debug di una soluzione di flusso di lavoro SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).

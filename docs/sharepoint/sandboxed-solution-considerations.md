@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890036"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerazioni sulle soluzioni create mediante sandbox
   *Soluzioni create mediante sandbox* sono una funzionalità di Microsoft SharePoint 2010 che consente agli utenti di raccolta siti caricare le proprie soluzioni di codice personalizzato. Una soluzione creata mediante sandbox comune è utenti di caricare le proprie Web part.  
@@ -81,66 +81,66 @@ ms.locfileid: "37119162"
 ## <a name="sandboxed-solution-limitations"></a>Limitazioni delle soluzioni create mediante sandbox
  Quando si distribuisce una soluzione creata mediante sandbox, la matrice delle funzionalità di SharePoint disponibili per il processo è limitata per ridurre qualsiasi vulnerabilità della sicurezza che può avere. Alcune di queste limitazioni includono quanto segue:  
   
--   Le soluzioni create mediante sandbox hanno un subset limitato di elementi di soluzione da distribuire a loro disposizione. Modelli di progetto SharePoint potenzialmente vulnerabili, ad esempio le definizioni di sito e i flussi di lavoro, non sono disponibili.  
+- Le soluzioni create mediante sandbox hanno un subset limitato di elementi di soluzione da distribuire a loro disposizione. Modelli di progetto SharePoint potenzialmente vulnerabili, ad esempio le definizioni di sito e i flussi di lavoro, non sono disponibili.  
   
--   SharePoint viene eseguito il codice della soluzione creata mediante sandbox in un processo (*SPUCWorkerProcess.exe*) separata dalla pagina principale [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool di applicazioni (*w3wp.exe*) processo.  
+- SharePoint viene eseguito il codice della soluzione creata mediante sandbox in un processo (*SPUCWorkerProcess.exe*) separata dalla pagina principale [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool di applicazioni (*w3wp.exe*) processo.  
   
--   Cartelle mappate non possono essere aggiunto al progetto.  
+- Cartelle mappate non possono essere aggiunto al progetto.  
   
--   Tipi di [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] assembly Microsoft.Office.Server non possono essere utilizzati in soluzioni create mediante sandbox. Inoltre, solo i tipi nel [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] assembly Microsoft. SharePoint possono essere utilizzati in soluzioni create mediante sandbox.  
+- Tipi di [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] assembly Microsoft.Office.Server non possono essere utilizzati in soluzioni create mediante sandbox. Inoltre, solo i tipi nel [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] assembly Microsoft. SharePoint possono essere utilizzati in soluzioni create mediante sandbox.  
   
- È importante notare che se si specifica una soluzione di SharePoint come una soluzione creata mediante sandbox non ha alcun effetto su SharePoint server. solo determina come viene distribuito il progetto di SharePoint a SharePoint da [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e gli assembly associati a. Non interessa generato *wsp* file e il *wsp* file non contiene dati che è direttamente correlata al *soluzione creata mediante sandbox* proprietà.  
+  È importante notare che se si specifica una soluzione di SharePoint come una soluzione creata mediante sandbox non ha alcun effetto su SharePoint server. solo determina come viene distribuito il progetto di SharePoint a SharePoint da [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e gli assembly associati a. Non interessa generato *wsp* file e il *wsp* file non contiene dati che è direttamente correlata al *soluzione creata mediante sandbox* proprietà.  
   
 ## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Funzionalità e gli elementi in soluzioni create mediante sandbox
  Soluzioni create mediante sandbox supportano le funzionalità e gli elementi seguenti:  
   
--   Campi di tipi di contenuto  
+- Campi di tipi di contenuto  
   
--   Azioni personalizzate  
+- Azioni personalizzate  
   
--   Flussi di lavoro dichiarativi  
+- Flussi di lavoro dichiarativi  
   
--   Ricevitori di eventi  
+- Ricevitori di eventi  
   
--   Callout di funzionalità  
+- Callout di funzionalità  
   
--   Definizioni di elenco  
+- Definizioni di elenco  
   
--   Istanze di elenco  
+- Istanze di elenco  
   
--   Modulo/file  
+- Modulo/file  
   
--   Navigazione  
+- Navigazione  
   
--   *Onet. Xml*  
+- *Onet. Xml*  
   
--   SPItemEventReceiver  
+- SPItemEventReceiver  
   
--   SPListEventReceiver  
+- SPListEventReceiver  
   
--   SPWebEventReceiver  
+- SPWebEventReceiver  
   
--   Supporto per tutte le Web part che derivano da `System.Web.UI.WebControls.WebParts.WebPart`  
+- Supporto per tutte le Web part che derivano da `System.Web.UI.WebControls.WebParts.WebPart`  
   
--   Web part  
+- Web part  
   
--   Funzionalità webtemplate (invece di *webtemp*)  
+- Funzionalità webtemplate (invece di *webtemp*)  
   
--   Web part visive  
+- Web part visive  
   
- Soluzioni create mediante sandbox non supportano le funzionalità e gli elementi seguenti:  
+  Soluzioni create mediante sandbox non supportano le funzionalità e gli elementi seguenti:  
   
--   Pagine dell'applicazione  
+- Pagine dell'applicazione  
   
--   Gruppo di azione personalizzato  
+- Gruppo di azione personalizzato  
   
--   Funzionalità con ambito farm  
+- Funzionalità con ambito farm  
   
--   elemento `HideCustomAction`  
+- elemento `HideCustomAction`  
   
--   Funzionalità con ambito di applicazione Web  
+- Funzionalità con ambito di applicazione Web  
   
--   Flussi di lavoro con codice  
+- Flussi di lavoro con codice  
   
 ## <a name="see-also"></a>Vedere anche
  [Differenze tra modalità sandbox e soluzioni farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14517a3f941ae7d177c876a48a400113c775fdb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897875"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,52 +33,52 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
 ## <a name="requirements"></a>Requisiti  
  Di seguito sono elencati i requisiti aggiuntivi per lo strumento Utilizzo GPU rispetto ai requisiti di Diagnostica grafica.  
   
--   Una GPU e un driver che supportino la strumentazione di temporizzazione necessaria.  
+- Una GPU e un driver che supportino la strumentazione di temporizzazione necessaria.  
   
-    > [!NOTE]
-    >  Per altre informazioni sull'hardware e i driver supportati, vedere [Hardware e driver supportati](#hwsupport) alla fine di questo documento.  
+  > [!NOTE]
+  >  Per altre informazioni sull'hardware e i driver supportati, vedere [Hardware e driver supportati](#hwsupport) alla fine di questo documento.  
   
- Per altre informazioni sui requisiti di Diagnostica della grafica, vedere [Introduzione](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
+  Per altre informazioni sui requisiti di Diagnostica della grafica, vedere [Introduzione](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="using-the-gpu-usage-tool"></a>Uso dello strumento Utilizzo GPU  
  Quando si esegue l'app nello strumento Utilizzo GPU, Visual Studio crea una sessione di diagnostica che genera un grafico di informazioni generali sulle prestazioni di rendering dell'app e sull'utilizzo della GPU in tempo reale.  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Per avviare lo strumento Utilizzo GPU:  
   
-1.  Nel menu principale scegliere **Debug**, quindi **Prestazioni e diagnostica** (tastiera: premere ALT+F2).  
+1. Nel menu principale scegliere **Debug**, quindi **Prestazioni e diagnostica** (tastiera: premere ALT+F2).  
   
-2.  Nell'hub Prestazioni e diagnostica selezionare la casella accanto a **Utilizzo GPU**. Facoltativamente, selezionare le caselle accanto agli altri strumenti a cui si è interessati. È possibile eseguire contemporaneamente svariati strumenti per le prestazioni e la diagnostica, per ottenere un quadro più completo delle prestazioni dell'app.  
+2. Nell'hub Prestazioni e diagnostica selezionare la casella accanto a **Utilizzo GPU**. Facoltativamente, selezionare le caselle accanto agli altri strumenti a cui si è interessati. È possibile eseguire contemporaneamente svariati strumenti per le prestazioni e la diagnostica, per ottenere un quadro più completo delle prestazioni dell'app.  
   
-     ![Scegliere gli strumenti di diagnostica da usare.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Scegliere gli strumenti di diagnostica da usare.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  Non tutti gli strumenti per le prestazioni e la diagnostica possono essere eseguiti contemporaneamente.  
+   > [!NOTE]
+   >  Non tutti gli strumenti per le prestazioni e la diagnostica possono essere eseguiti contemporaneamente.  
   
-3.  Scegliere il pulsante blu **Inizia** nella parte inferiore dell'hub Prestazioni e diagnostica per eseguire l'app negli strumenti selezionati.  
+3. Scegliere il pulsante blu **Inizia** nella parte inferiore dell'hub Prestazioni e diagnostica per eseguire l'app negli strumenti selezionati.  
   
- Le informazioni di alto livello visualizzate in tempo reale includono durata dei frame, frequenza dei frame e utilizzo della GPU. Le diverse informazioni sono rappresentate in grafici distinti, ma usano una scala cronologica comune, in modo che sia possibile correlarle facilmente.  
+   Le informazioni di alto livello visualizzate in tempo reale includono durata dei frame, frequenza dei frame e utilizzo della GPU. Le diverse informazioni sono rappresentate in grafici distinti, ma usano una scala cronologica comune, in modo che sia possibile correlarle facilmente.  
   
- I grafici **Durata frame (ms)** e **Frame al secondo (FPS)** contengono due linee rosse orizzontali che rappresentano destinazioni di prestazioni di 30 e 60 frame al secondo. Nel grafico **Durata frame** l'app supera la destinazione di prestazioni se il grafico si trova sotto la linea e non la raggiunge se il grafico si trova sopra la linea. Nel grafico Frame per secondo avviene il contrario: l'app supera la destinazione di prestazioni se il grafico si trova sopra la linea e non la raggiunge se il grafico si trova sotto la linea. In primo luogo, questi grafici consentono di ottenere un'idea generale delle prestazioni dell'app e di identificare i rallentamenti che può essere utile analizzare, ad esempio un calo improvviso della frequenza dei frame o un picco nell'utilizzo della GPU.  
+   I grafici **Durata frame (ms)** e **Frame al secondo (FPS)** contengono due linee rosse orizzontali che rappresentano destinazioni di prestazioni di 30 e 60 frame al secondo. Nel grafico **Durata frame** l'app supera la destinazione di prestazioni se il grafico si trova sotto la linea e non la raggiunge se il grafico si trova sopra la linea. Nel grafico Frame per secondo avviene il contrario: l'app supera la destinazione di prestazioni se il grafico si trova sopra la linea e non la raggiunge se il grafico si trova sotto la linea. In primo luogo, questi grafici consentono di ottenere un'idea generale delle prestazioni dell'app e di identificare i rallentamenti che può essere utile analizzare, ad esempio un calo improvviso della frequenza dei frame o un picco nell'utilizzo della GPU.  
   
- Quando l'app viene eseguita nello strumento Utilizzo GPU, la sessione di diagnostica raccoglie anche informazioni dettagliate sugli eventi di grafica eseguiti nella GPU. Queste informazioni vengono usate per generare un report più dettagliato sul modo in cui l'app utilizza l'hardware. Poiché la generazione del report a partire dalle informazioni raccolte richiede del tempo, il report è disponibile solo al termine della raccolta delle informazioni nella sessione di diagnostica.  
+   Quando l'app viene eseguita nello strumento Utilizzo GPU, la sessione di diagnostica raccoglie anche informazioni dettagliate sugli eventi di grafica eseguiti nella GPU. Queste informazioni vengono usate per generare un report più dettagliato sul modo in cui l'app utilizza l'hardware. Poiché la generazione del report a partire dalle informazioni raccolte richiede del tempo, il report è disponibile solo al termine della raccolta delle informazioni nella sessione di diagnostica.  
   
- Quando si vuole esaminare più da vicino un problema di utilizzo o di prestazioni, interrompere la raccolta di informazioni sulle prestazioni in modo che sia possibile generare il report.  
+   Quando si vuole esaminare più da vicino un problema di utilizzo o di prestazioni, interrompere la raccolta di informazioni sulle prestazioni in modo che sia possibile generare il report.  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>Per generare e visualizzare il report sull'utilizzo della GPU:  
   
-1.  Nella parte inferiore della finestra della sessione di diagnostica scegliere il collegamento **Arresta raccolta** o premere **Arresta** nell'angolo superiore sinistro.  
+1. Nella parte inferiore della finestra della sessione di diagnostica scegliere il collegamento **Arresta raccolta** o premere **Arresta** nell'angolo superiore sinistro.  
   
-     ![Raccogliere informazioni sugli intervalli per GPU e CPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Raccogliere informazioni sugli intervalli per GPU e CPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  Nella parte superiore del report selezionare in uno dei grafici una sezione che mostra il problema da analizzare. La selezione può essere lunga fino a 3 secondi. Le sezioni più lunghe vengono troncate nella parte iniziale.  
+2. Nella parte superiore del report selezionare in uno dei grafici una sezione che mostra il problema da analizzare. La selezione può essere lunga fino a 3 secondi. Le sezioni più lunghe vengono troncate nella parte iniziale.  
   
-     ![Dopo la raccolta, selezionare un intervallo per visualizzare i dettagli](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Dopo la raccolta, selezionare un intervallo per visualizzare i dettagli](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  Nella parte inferiore del report scegliere il collegamento **Visualizza dettagli** nel messaggio **…Fare clic qui per visualizzare i dettagli sull'utilizzo della GPU in tale intervallo** per visualizzare una sequenza temporale dettagliata della selezione.  
+3. Nella parte inferiore del report scegliere il collegamento **Visualizza dettagli** nel messaggio **…Fare clic qui per visualizzare i dettagli sull'utilizzo della GPU in tale intervallo** per visualizzare una sequenza temporale dettagliata della selezione.  
   
-     ![Dopo la raccolta, con intervallo selezionato](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Dopo la raccolta, con intervallo selezionato](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
- Viene aperto un nuovo documento a schede che contiene il report. Il report sull'utilizzo della GPU consente di vedere il momento in cui nella CPU viene avviato un evento di grafica, il momento in cui l'evento raggiunge la GPU e il tempo impiegato dalla GPU per eseguirlo. Queste informazioni sono utili per identificare i colli di bottiglia e le opportunità di aumentare il parallelismo nel codice.  
+   Viene aperto un nuovo documento a schede che contiene il report. Il report sull'utilizzo della GPU consente di vedere il momento in cui nella CPU viene avviato un evento di grafica, il momento in cui l'evento raggiunge la GPU e il tempo impiegato dalla GPU per eseguirlo. Queste informazioni sono utili per identificare i colli di bottiglia e le opportunità di aumentare il parallelismo nel codice.  
   
 ## <a name="using-the-gpu-usage-report"></a>Uso del report Utilizzo GPU  
  La parte superiore del report sull'utilizzo della GPU mostra le sequenze temporali delle attività di elaborazione della CPU, le attività di rendering della GPU e le attività di copia della GPU. Queste sequenze temporali sono divise da barre verticali grigio chiaro, che rappresentano il vsync dello schermo; la frequenza delle barre corrisponde alla frequenza di aggiornamento di uno degli schermi (selezionato usando l'elenco a discesa **Schermo**) da cui sono stati raccolti i dati sull'utilizzo della GPU. Poiché lo schermo può avere una frequenza di aggiornamento superiore rispetto alla destinazione di prestazioni dell'app, potrebbe non esserci una relazione 1 a 1 tra vsync e frequenza dei frame che l'app deve ottenere. Per raggiungere la destinazione di prestazioni, un'app deve completare l'elaborazione, eseguire il rendering ed effettuare una chiamata Present() al framerate di destinazione, ma il frame sottoposto a rendering non verrà visualizzato fino al vsync successivo a Present().  

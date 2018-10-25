@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1c04066099b385b03c1b81bc4d85c7fb13e329
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898057"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Risolvere i problemi di distribuzione e la creazione di pacchetti di SharePoint
   In questo argomento vengono analizzati vari problemi che possono verificarsi durante la creazione di pacchetti e la distribuzione di soluzioni SharePoint.
@@ -59,13 +59,13 @@ ms.locfileid: "37118952"
 ## <a name="differences-between-f5-deployment"></a>Differenze tra distribuzione F5
  Quando si utilizza [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per distribuire il progetto SharePoint nel server SharePoint locale per il test e l'esecuzione del debug, in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vengono eseguiti alcuni passaggi aggiuntivi.
 
-1.  Reimpostazione di Internet Information Service (IIS) durante il passaggio di distribuzione.
+1. Reimpostazione di Internet Information Service (IIS) durante il passaggio di distribuzione.
 
-2.  Associazione automatica dei flussi di lavoro.
+2. Associazione automatica dei flussi di lavoro.
 
-3.  Impostazione dell'ordine di attivazione delle funzionalità in base alla gerarchia di Progettazione pacchetti.
+3. Impostazione dell'ordine di attivazione delle funzionalità in base alla gerarchia di Progettazione pacchetti.
 
- È possibile aggiungere i passaggi di distribuzione personalizzato per modificare ulteriormente la **F5** comportamento. Per altre informazioni, vedere [procedura dettagliata: creare un passaggio di distribuzione personalizzato per progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   È possibile aggiungere i passaggi di distribuzione personalizzato per modificare ulteriormente la **F5** comportamento. Per altre informazioni, vedere [procedura dettagliata: creare un passaggio di distribuzione personalizzato per progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Ritardo della visualizzazione della pagina di SharePoint quando distribuisce web part visiva
  La visualizzazione della pagina di SharePoint richiede molto tempo quando si distribuisce una Web part visiva nella cartella Bin di [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] o [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Se si modificano i file di una directory di livello superiore di [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)], ad esempio la directory Bin, viene ricompilata l'intera applicazione Web. Questo può determinare fino a 25 secondi di ritardo nel rendering della pagina di SharePoint.

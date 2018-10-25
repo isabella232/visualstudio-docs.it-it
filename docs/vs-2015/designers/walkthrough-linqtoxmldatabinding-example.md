@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54e714aa95ee1206e278546bcd61e31687c45211
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c69c69cfed53b0080614984853b3128908c2e89
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893650"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Procedura dettagliata: Esempio LinqToXmlDataBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ In questa procedura dettagliata viene descritto l'esempio LinqToXmlDataBinding e
 ## <a name="remarks"></a>Note  
  LinqToXmlDataBinding è un'applicazione di Windows Presentation Foundation (WPF) composta da file di origine C# e XAML. Contiene un documento XML incorporato che definisce un elenco di libri e consente all'utente di visualizzare, aggiungere, eliminare e modificare queste voci. È costituita dai due file di origine principali seguenti:  
   
--   L2DBForm.xaml: contiene il codice della dichiarazione XAML per l'interfaccia utente della finestra principale. Include inoltre una sezione di risorse della finestra in cui vengono definiti un provider di dati e un documento XML incorporato per gli elenchi di libri.  
+- L2DBForm.xaml: contiene il codice della dichiarazione XAML per l'interfaccia utente della finestra principale. Include inoltre una sezione di risorse della finestra in cui vengono definiti un provider di dati e un documento XML incorporato per gli elenchi di libri.  
   
--   L2DBForm.xaml.cs: contiene i metodi di inizializzazione e gestione eventi associati all'interfaccia utente.  
+- L2DBForm.xaml.cs: contiene i metodi di inizializzazione e gestione eventi associati all'interfaccia utente.  
   
- La finestra principale è divisa nelle quattro sezioni di interfaccia utente verticali descritte di seguito:  
+  La finestra principale è divisa nelle quattro sezioni di interfaccia utente verticali descritte di seguito:  
   
--   **XML**: visualizza l'origine XML non elaborata dell'elenco di libri incorporato.  
+- **XML**: visualizza l'origine XML non elaborata dell'elenco di libri incorporato.  
   
--   **Book List**: visualizza le voci relative ai libri come testo standard e consente all'utente di selezionare ed eliminare singole voci.  
+- **Book List**: visualizza le voci relative ai libri come testo standard e consente all'utente di selezionare ed eliminare singole voci.  
   
--   **Edit Selected Book**: consente all'utente di modificare i valori associati alla voce attualmente selezionata.  
+- **Edit Selected Book**: consente all'utente di modificare i valori associati alla voce attualmente selezionata.  
   
--   **Add New Book**: consente di creare una nuova voce in base ai valori immessi dall'utente.  
+- **Add New Book**: consente di creare una nuova voce in base ai valori immessi dall'utente.  
   
 ## <a name="in-this-section"></a>In questa sezione  
   

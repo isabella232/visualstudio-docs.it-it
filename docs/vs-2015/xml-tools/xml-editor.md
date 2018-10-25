@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee20be802884e20b885e232da43f2ade9f96dbfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896328"
 ---
 # <a name="xml-editor"></a>Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "49236873"
   
 L'editor XML è basato sull'editor di testo di [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio e include il supporto aggiuntivo per i linguaggi XML. Nell'editor XML sono incluse le seguenti funzionalità:  
   
--   Verifica della sintassi XML 1.0.  
+- Verifica della sintassi XML 1.0.  
   
--   Convalida dello schema durante la digitazione.  
+- Convalida dello schema durante la digitazione.  
   
--   Supporto dei frammenti di codice XML, inclusi i frammenti generati da uno schema.  
+- Supporto dei frammenti di codice XML, inclusi i frammenti generati da uno schema.  
   
--   Supporto per la DTD (Document Type Definition).  
+- Supporto per la DTD (Document Type Definition).  
   
--   Supporto per lo schema del linguaggio XSD (XML Schema Definition Language).  
+- Supporto per lo schema del linguaggio XSD (XML Schema Definition Language).  
   
--   Creazione di uno schema XML da un documento di istanza XML.  
+- Creazione di uno schema XML da un documento di istanza XML.  
   
--   Conversione di una DTD o di uno schema XDR (XML-Data Reduced) in uno schema XML.  
+- Conversione di una DTD o di uno schema XDR (XML-Data Reduced) in uno schema XML.  
   
--   Verifica della sintassi XSLT 1.0.  
+- Verifica della sintassi XSLT 1.0.  
   
--   Strutturazione del documento per consentire l'espansione e la compressione degli elementi.  
+- Strutturazione del documento per consentire l'espansione e la compressione degli elementi.  
   
--   Integrazione con il [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). che fornisce una visualizzazione gerarchica degli schemi XML.  
+- Integrazione con il [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). che fornisce una visualizzazione gerarchica degli schemi XML.  
   
- L'editor XML viene richiamato per estensioni di file note, quali .xml, .xsd,.xsl e .config. Viene anche richiamato per estensioni di file sconosciute se il file contiene del codice XML. È anche possibile aprire qualsiasi file con l'Editor XML tramite il **Apri con** opzione e selezionando Editor XML dall'elenco.  
+  L'editor XML viene richiamato per estensioni di file note, quali .xml, .xsd,.xsl e .config. Viene anche richiamato per estensioni di file sconosciute se il file contiene del codice XML. È anche possibile aprire qualsiasi file con l'Editor XML tramite il **Apri con** opzione e selezionando Editor XML dall'elenco.  
   
 ## <a name="express-editions"></a>Express Edition  
  Le funzionalità dell'editor XML riportate di seguito non sono disponibili in Visual Studio Express Edition:  

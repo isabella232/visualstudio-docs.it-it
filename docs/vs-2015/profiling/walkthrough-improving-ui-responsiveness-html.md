@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893377"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
   
 ### <a name="analyzing-performance-data"></a>Analisi dei dati delle prestazioni  
   
-1.  Nella barra degli strumenti **Debug**, nell'elenco **Avvia debug**, scegliere uno degli emulatori Windows Phone oppure **Simulatore**.  
+1. Nella barra degli strumenti **Debug**, nell'elenco **Avvia debug**, scegliere uno degli emulatori Windows Phone oppure **Simulatore**.  
   
-2.  Scegliere **Prestazioni e diagnostica** dal menu **Debug**.  
+2. Scegliere **Prestazioni e diagnostica** dal menu **Debug**.  
   
-3.  In **Strumenti disponibili** scegliere **Velocità di risposta interfaccia utente HTML** e quindi **Avvia**.  
+3. In **Strumenti disponibili** scegliere **Velocità di risposta interfaccia utente HTML** e quindi **Avvia**.  
   
-     In questa esercitazione assocerai il profiler al progetto di avvio. Per informazioni su altre opzioni, ad esempio l'associazione del profiler a un'app installata, vedere [Velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md).  
+    In questa esercitazione assocerai il profiler al progetto di avvio. Per informazioni su altre opzioni, ad esempio l'associazione del profiler a un'app installata, vedere [Velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md).  
   
-     Quando avvii il profiler, potresti vedere un messaggio di Controllo dell'account utente che richiede l'autorizzazione a eseguire VsEtwCollector.exe. Scegliere **Sì**.  
+    Quando avvii il profiler, potresti vedere un messaggio di Controllo dell'account utente che richiede l'autorizzazione a eseguire VsEtwCollector.exe. Scegliere **Sì**.  
   
-4.  Nell'app in esecuzione, scegliere **In attesa di valori** e attendere circa 10 secondi. Verifica che il testo e il colore del pulsante si aggiornino circa una volta al secondo.  
+4. Nell'app in esecuzione, scegliere **In attesa di valori** e attendere circa 10 secondi. Verifica che il testo e il colore del pulsante si aggiornino circa una volta al secondo.  
   
-5.  Dall'app in esecuzione passa a Visual Studio (ALT+TAB).  
+5. Dall'app in esecuzione passa a Visual Studio (ALT+TAB).  
   
-6.  Scegliere **Arresta raccolta**.  
+6. Scegliere **Arresta raccolta**.  
   
-     Il profiler visualizza informazioni in una nuova scheda in Visual Studio. Quando analizzi i dati relativi alla velocità effettiva visuale (FPS) e all'utilizzo della CPU, puoi identificare con facilità alcune tendenze:  
+    Il profiler visualizza informazioni in una nuova scheda in Visual Studio. Quando analizzi i dati relativi alla velocità effettiva visuale (FPS) e all'utilizzo della CPU, puoi identificare con facilità alcune tendenze:  
   
-    -   L'utilizzo della CPU aumenta considerevolmente dopo circa 3 secondi (dopo che è stato premuto il pulsante **In attesa di valori**) e mostra un chiaro schema di eventi (una combinazione coerente di eventi di scripting, stile e rendering) da questo punto in avanti.  
+   - L'utilizzo della CPU aumenta considerevolmente dopo circa 3 secondi (dopo che è stato premuto il pulsante **In attesa di valori**) e mostra un chiaro schema di eventi (una combinazione coerente di eventi di scripting, stile e rendering) da questo punto in avanti.  
   
-    -   La velocità effettiva visuale rimane inalterata e il valore FPS rimane su 60 (nessun fotogramma eliminato).  
+   - La velocità effettiva visuale rimane inalterata e il valore FPS rimane su 60 (nessun fotogramma eliminato).  
   
      Esaminiamo ora una sezione tipica del grafico di utilizzo della CPU per analizzare il comportamento dell'app in questo periodo di intensa attività.  
   
-7.  Seleziona una porzione di uno-due secondi nella parte centrale del grafico di utilizzo della CPU (fai clic e trascina o usa i tasti freccia e TAB). La figura seguente mostra il grafico di utilizzo della CPU dopo una selezione. L'area non condivisa è la sezione.  
+7. Seleziona una porzione di uno-due secondi nella parte centrale del grafico di utilizzo della CPU (fai clic e trascina o usa i tasti freccia e TAB). La figura seguente mostra il grafico di utilizzo della CPU dopo una selezione. L'area non condivisa è la sezione.  
   
-     ![Grafico Utilizzo CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Grafico Utilizzo CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  Scegliere **Zoom avanti**.  
+8. Scegliere **Zoom avanti**.  
   
-     Il grafico cambia per mostrare in maggior dettaglio il periodo selezionato. La figura seguente mostra il grafico di utilizzo della CPU dopo l'esecuzione dello zoom avanti. I dati specifici possono variare, ma il modello generale rimane tale.  
+    Il grafico cambia per mostrare in maggior dettaglio il periodo selezionato. La figura seguente mostra il grafico di utilizzo della CPU dopo l'esecuzione dello zoom avanti. I dati specifici possono variare, ma il modello generale rimane tale.  
   
-     ![Visualizzazione con livello di zoom aumentato](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![Visualizzazione con livello di zoom aumentato](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     I dettagli della sequenza temporale nel riquadro inferiore riguardano il periodo selezionato.  
+    I dettagli della sequenza temporale nel riquadro inferiore riguardano il periodo selezionato.  
   
-     ![Dettagli sequenza temporale](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![Dettagli sequenza temporale](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     Gli eventi nei dettagli della sequenza temporale confermano tendenze visibili nel grafico di utilizzo della CPU: molti eventi hanno luogo in brevi periodi di tempo. La visualizzazione dei dettagli della sequenza temporale mostra che si tratta di eventi `Timer`, `Layout` e `Paint`.  
+    Gli eventi nei dettagli della sequenza temporale confermano tendenze visibili nel grafico di utilizzo della CPU: molti eventi hanno luogo in brevi periodi di tempo. La visualizzazione dei dettagli della sequenza temporale mostra che si tratta di eventi `Timer`, `Layout` e `Paint`.  
   
 9. Usare il menu di scelta rapida o fare clic con il pulsante destro del mouse su uno degli eventi `Timer` nel riquadro inferiore, quindi scegliere **Filtra per evento**. Di seguito è riportato un esempio di dettagli tipici per uno degli eventi `Timer` in questa app di test.  
   

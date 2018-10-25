@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 09ed896c85807da5a65084360fa62e24c3cca141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896211"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Linee guida per la scrittura di modelli di testo T4
 Queste linee guida generali potrebbero essere utile se si sta generando codice programma o altre risorse dell'applicazione in Visual Studio. Le regole non sono corretti.
@@ -43,28 +43,28 @@ Utilizzare i test manuali o automatizzati per verificare che il codice risultant
  Attendere un codice personalizzato: generare le classi parziali.
 Attendere un codice scritto a mano inoltre al codice generato. È insolito per uno schema di generazione di codice per essere in grado di tenere conto per tutte le possibili varianti che potrebbero verificarsi. Pertanto, si deve prevedere di aggiungere o modificare parte del codice generato. In cui il materiale generato è in un linguaggio .NET, ad esempio [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], due strategie sono particolarmente utili:
 
--   Le classi generate dovrebbero essere parziali. In questo modo è possibile aggiungere contenuto al codice generato.
+- Le classi generate dovrebbero essere parziali. In questo modo è possibile aggiungere contenuto al codice generato.
 
--   Le classi devono essere generate in coppie, uno che eredita da un altro. La classe di base deve contenere tutte le proprietà e metodi generati e la classe derivata deve contenere solo i costruttori. In questo modo il codice scritto a mano a eseguire l'override dei metodi generati.
+- Le classi devono essere generate in coppie, uno che eredita da un altro. La classe di base deve contenere tutte le proprietà e metodi generati e la classe derivata deve contenere solo i costruttori. In questo modo il codice scritto a mano a eseguire l'override dei metodi generati.
 
- In altri linguaggi generati, ad esempio XML, usare il `<#@include#>` direttiva per creare semplici combinazioni di contenuto generata e scritto a mano. Nei casi più complessi, potrebbe essere necessario scrivere un passaggio di post-elaborazione che combina il file generato con tutti i file scritti a mano.
+  In altri linguaggi generati, ad esempio XML, usare il `<#@include#>` direttiva per creare semplici combinazioni di contenuto generata e scritto a mano. Nei casi più complessi, potrebbe essere necessario scrivere un passaggio di post-elaborazione che combina il file generato con tutti i file scritti a mano.
 
- Spostare il materiale comune in file di inclusione o modelli in fase di esecuzione per evitare la ripetizione simile blocchi di testo e il codice in più modelli, usano il `<#@ include #>` direttiva. Per altre informazioni, vedere [direttiva Include T4](../modeling/t4-include-directive.md).
+  Spostare il materiale comune in file di inclusione o modelli in fase di esecuzione per evitare la ripetizione simile blocchi di testo e il codice in più modelli, usano il `<#@ include #>` direttiva. Per altre informazioni, vedere [direttiva Include T4](../modeling/t4-include-directive.md).
 
- È possibile anche creare modelli di testo in fase di esecuzione in un progetto separato e possono essere chiamati dal modello in fase di progettazione. A questo scopo, usare il `<#@ assembly #>` direttiva per accedere al progetto separato. Per esempi, vedere ["ereditarietà nel testo" modelli nel Blog di Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+  È possibile anche creare modelli di testo in fase di esecuzione in un progetto separato e possono essere chiamati dal modello in fase di progettazione. A questo scopo, usare il `<#@ assembly #>` direttiva per accedere al progetto separato. Per esempi, vedere ["ereditarietà nel testo" modelli nel Blog di Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
- Si consiglia di spostare grandi blocchi di codice in un assembly separato.
- Se sono presenti blocchi della funzionalità di classe e i blocchi di codice di grandi dimensioni, potrebbe essere utile spostare alcuni questo codice in metodi che si esegue la compilazione in un progetto separato. È possibile usare il `<#@ assembly #>` direttiva per accedere al codice nel modello. Per altre informazioni, vedere [direttiva Assembly T4](../modeling/t4-assembly-directive.md).
+  Si consiglia di spostare grandi blocchi di codice in un assembly separato.
+  Se sono presenti blocchi della funzionalità di classe e i blocchi di codice di grandi dimensioni, potrebbe essere utile spostare alcuni questo codice in metodi che si esegue la compilazione in un progetto separato. È possibile usare il `<#@ assembly #>` direttiva per accedere al codice nel modello. Per altre informazioni, vedere [direttiva Assembly T4](../modeling/t4-assembly-directive.md).
 
- È possibile inserire i metodi in una classe astratta che può ereditare il modello. La classe astratta deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Per altre informazioni, vedere [direttiva Template T4](../modeling/t4-template-directive.md).
+  È possibile inserire i metodi in una classe astratta che può ereditare il modello. La classe astratta deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Per altre informazioni, vedere [direttiva Template T4](../modeling/t4-template-directive.md).
 
- Generare il codice, non configuration file un metodo per la scrittura di un'applicazione di variabili consiste nello scrivere codice programma generico che accetta un file di configurazione. Un'applicazione scritta in questo modo è molto flessibile e può essere riconfigurata quando cambiano i requisiti aziendali, senza ricompilare l'applicazione. Tuttavia, uno svantaggio di questo approccio è che l'applicazione sarà ottimali rispetto a un'applicazione più specifica. Inoltre, il codice programma sarà più difficile da leggere e gestire, in parte perché deve sempre fare i conti con i tipi più generici.
+  Generare il codice, non configuration file un metodo per la scrittura di un'applicazione di variabili consiste nello scrivere codice programma generico che accetta un file di configurazione. Un'applicazione scritta in questo modo è molto flessibile e può essere riconfigurata quando cambiano i requisiti aziendali, senza ricompilare l'applicazione. Tuttavia, uno svantaggio di questo approccio è che l'applicazione sarà ottimali rispetto a un'applicazione più specifica. Inoltre, il codice programma sarà più difficile da leggere e gestire, in parte perché deve sempre fare i conti con i tipi più generici.
 
- Al contrario, un'applicazione cui parti variabili vengono generati prima della compilazione può essere fortemente tipizzata. Questo rende molto più semplice e più affidabile per scrivere il codice scritto a mano e integrarla con generato parti del software.
+  Al contrario, un'applicazione cui parti variabili vengono generati prima della compilazione può essere fortemente tipizzata. Questo rende molto più semplice e più affidabile per scrivere il codice scritto a mano e integrarla con generato parti del software.
 
- Per ottenere i massimi vantaggi della generazione del codice, provare a generare codice programma anziché i file di configurazione.
+  Per ottenere i massimi vantaggi della generazione del codice, provare a generare codice programma anziché i file di configurazione.
 
- Usare una cartella del codice generato inserire i modelli e i file generati in una cartella di progetto denominata **il codice generato**per renderlo cancellare che questi non sono file che devono essere modificati direttamente. Se si crea codice personalizzato per eseguire l'override o aggiungere le classi generate, inserire tali classi in una cartella denominata **codice personalizzato**. La struttura di un progetto tipico è simile alla seguente:
+  Usare una cartella del codice generato inserire i modelli e i file generati in una cartella di progetto denominata **il codice generato**per renderlo cancellare che questi non sono file che devono essere modificati direttamente. Se si crea codice personalizzato per eseguire l'override o aggiungere le classi generate, inserire tali classi in una cartella denominata **codice personalizzato**. La struttura di un progetto tipico è simile alla seguente:
 
 ```
 MyProject
@@ -77,7 +77,6 @@ MyProject
       Class2.tt
           Class2.cs
    AnotherClass.cs
-
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Linee guida per i modelli T4 (pre-elaborato) in fase di esecuzione
@@ -116,7 +115,6 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 }
 ...
   string PageToDisplay = new FabrikamTemplate().TextTransform();
-
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Linee guida per tutti i modelli T4

@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_lineNumberEnd | Documenti Microsoft
+title: Get_linenumberend | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 879201b11c74ab15897a5fba9550ddbe243cddc5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a6a0dfff78c54c1e051e04c33ae73d82691bf0d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896393"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Recupera il numero di riga di origine basato su uno in cui termina l'istruzione o espressione.  
+Recupera il numero di riga di origine in base uno in cui termina l'istruzione o espressione.  
   
 ## <a name="syntax"></a>Sintassi  
   

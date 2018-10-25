@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894378"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Questa procedura dettagliata illustra come aggiungere una proprietà di rilevame
   
  In questa procedura dettagliata, si crea un linguaggio specifico di dominio (DSL) che dispone di una proprietà che ha un valore predefinito in base alla proprietà Namespace predefinito del modello di rilevamento di Namespace. Per altre informazioni sulle proprietà di rilevamento, vedere [che definisce le proprietà di rilevamento](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
--   Il supporto degli strumenti DSL descrittori di proprietà di rilevamento. Tuttavia, la finestra di progettazione DSL non è utilizzabile per aggiungere una proprietà di rilevamento per una lingua. Pertanto, è necessario aggiungere codice personalizzato per definire e implementare la proprietà di rilevamento.  
+- Il supporto degli strumenti DSL descrittori di proprietà di rilevamento. Tuttavia, la finestra di progettazione DSL non è utilizzabile per aggiungere una proprietà di rilevamento per una lingua. Pertanto, è necessario aggiungere codice personalizzato per definire e implementare la proprietà di rilevamento.  
   
- Una proprietà di rilevamento dispone di due stati: rilevamento e aggiornata dall'utente. Proprietà di rilevamento hanno le caratteristiche seguenti:  
+  Una proprietà di rilevamento dispone di due stati: rilevamento e aggiornata dall'utente. Proprietà di rilevamento hanno le caratteristiche seguenti:  
   
--   Quando è in stato di rilevamento, viene calcolato il valore della proprietà di rilevamento e il valore viene aggiornato come le altre proprietà nella modifica del modello.  
+- Quando è in stato di rilevamento, viene calcolato il valore della proprietà di rilevamento e il valore viene aggiornato come le altre proprietà nella modifica del modello.  
   
--   Quando aggiornato in base allo stato utente, il valore della proprietà di rilevamento consente di mantenere il valore a cui l'utente ultima impostazione della proprietà.  
+- Quando aggiornato in base allo stato utente, il valore della proprietà di rilevamento consente di mantenere il valore a cui l'utente ultima impostazione della proprietà.  
   
--   Nel **proprietà** finestra, il **reimpostare** comando per la proprietà di rilevamento è abilitata solo quando la proprietà viene aggiornato in base allo stato utente. Il **reimpostare** comando imposta la proprietà di rilevamento dello stato di rilevamento.  
+- Nel **proprietà** finestra, il **reimpostare** comando per la proprietà di rilevamento è abilitata solo quando la proprietà viene aggiornato in base allo stato utente. Il **reimpostare** comando imposta la proprietà di rilevamento dello stato di rilevamento.  
   
--   Nel **proprietà** finestra quando la proprietà di rilevamento è in stato di rilevamento, il relativo valore viene visualizzato in un tipo di carattere normale.  
+- Nel **proprietà** finestra quando la proprietà di rilevamento è in stato di rilevamento, il relativo valore viene visualizzato in un tipo di carattere normale.  
   
--   Nel **proprietà** finestra, quando la proprietà di rilevamento viene aggiornato in base allo stato utente, il relativo valore viene visualizzato in grassetto.  
+- Nel **proprietà** finestra, quando la proprietà di rilevamento viene aggiornato in base allo stato utente, il relativo valore viene visualizzato in grassetto.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Prima di iniziare questa procedura dettagliata, è innanzitutto necessario installare questi componenti:  

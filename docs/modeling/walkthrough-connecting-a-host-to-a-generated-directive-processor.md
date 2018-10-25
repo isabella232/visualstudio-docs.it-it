@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896237"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: Connettere un host a un processore di direttiva generato
 
@@ -33,21 +33,22 @@ In questa procedura dettagliata, si espande l'host personalizzato, in modo che s
 
 In questa procedura dettagliata sono incluse le attività seguenti:
 
--   Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] per generare un processore di direttiva che si basa su un modello di dominio.
+- Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] per generare un processore di direttiva che si basa su un modello di dominio.
 
--   La connessione a un host del modello di testo personalizzato per il processore di direttiva generato.
+- La connessione a un host del modello di testo personalizzato per il processore di direttiva generato.
 
--   Test dell'host personalizzato con il processore di direttiva generato.
+- Test dell'host personalizzato con il processore di direttiva generato.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK di visualizzazione e modellazione di Visual Studio||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| SDK di visualizzazione e modellazione di Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ Inoltre, è necessario disporre di trasformazione del modello testo personalizza
 
 In questa procedura dettagliata, è utilizzare la procedura guidata finestra di progettazione di linguaggio specifico di dominio per creare un linguaggio specifico di dominio per la soluzione DSLMinimalTest.
 
-1.  Creare una soluzione di linguaggio specifico di dominio che ha le caratteristiche seguenti:
+1. Creare una soluzione di linguaggio specifico di dominio che ha le caratteristiche seguenti:
 
-    -   Nome: DSLMinimalTest
+   -   Nome: DSLMinimalTest
 
-    -   Modello di soluzione: linguaggio minimo
+   -   Modello di soluzione: linguaggio minimo
 
-    -   Estensione di file: min
+   -   Estensione di file: min
 
-    -   Nome della società: Fabrikam
+   -   Nome della società: Fabrikam
 
    Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [procedura: creare una soluzione di linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2.  Scegliere **Compila soluzione** dal menu **Compila**.
+2. Scegliere **Compila soluzione** dal menu **Compila**.
 
-    > [!IMPORTANT]
-    > Questo passaggio genera il processore di direttiva e aggiunge la chiave per lo nel Registro di sistema.
+   > [!IMPORTANT]
+   > Questo passaggio genera il processore di direttiva e aggiunge la chiave per lo nel Registro di sistema.
 
-3.  Scegliere **Avvia debug** dal menu **Debug**.
+3. Scegliere **Avvia debug** dal menu **Debug**.
 
-     Si apre una seconda istanza di Visual Studio.
+    Si apre una seconda istanza di Visual Studio.
 
-4.  Nella build sperimentale, nella **Esplora soluzioni**, fare doppio clic sul file **sample.min**.
+4. Nella build sperimentale, nella **Esplora soluzioni**, fare doppio clic sul file **sample.min**.
 
-     Il file viene aperto nella finestra di progettazione. Si noti che il modello a dispone di due elementi, ExampleElement1 ed ExampleElement2 e un collegamento tra di essi.
+    Il file viene aperto nella finestra di progettazione. Si noti che il modello a dispone di due elementi, ExampleElement1 ed ExampleElement2 e un collegamento tra di essi.
 
-5.  Chiudere la seconda istanza di Visual Studio.
+5. Chiudere la seconda istanza di Visual Studio.
 
-6.  Salvare la soluzione e quindi chiudere la finestra di progettazione di linguaggio specifico di dominio.
+6. Salvare la soluzione e quindi chiudere la finestra di progettazione di linguaggio specifico di dominio.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Connettersi a un Host del modello di testo personalizzato a un processore di direttiva
 

@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884966"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: creare un visualizzatore immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa esercitazione si compila un programma che carica un'immagine da un file e la visualizza in una finestra. Viene illustrato come trascinare i controlli quali pulsanti e caselle immagine sul form, impostare le relative proprietà e utilizzare i contenitori per ridimensionare agevolmente il form. Si inizia inoltre a scrivere il codice. Vengono illustrate le seguenti procedure:  
   
--   Creare un nuovo progetto.  
+- Creare un nuovo progetto.  
   
--   Testare un'applicazione (eseguirne il debug).  
+- Testare un'applicazione (eseguirne il debug).  
   
--   Aggiungere controlli di base come caselle di controllo e pulsanti a un form.  
+- Aggiungere controlli di base come caselle di controllo e pulsanti a un form.  
   
--   Posizionare i controlli sul form utilizzando i layout.  
+- Posizionare i controlli sul form utilizzando i layout.  
   
--   Aggiungere le finestre di dialogo **Apri file** e **Colore** a un form.  
+- Aggiungere le finestre di dialogo **Apri file** e **Colore** a un form.  
   
--   Creare codice utilizzando IntelliSense e frammenti di codice.  
+- Creare codice utilizzando IntelliSense e frammenti di codice.  
   
--   Scrivere metodi per la gestione eventi.  
+- Scrivere metodi per la gestione eventi.  
   
- Al termine delle varie procedure, il programma sarà simile all'immagine che segue.  
+  Al termine delle varie procedure, il programma sarà simile all'immagine che segue.  
   
- ![Immagine creata in questa esercitazione](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-Immagine che si creerà in questa esercitazione  
+  ![Immagine creata in questa esercitazione](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  Immagine che si creerà in questa esercitazione  
   
- Per scaricare una versione completa di esempio, vedere [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Esempio di esercitazione per un visualizzatore immagini completo).  
+  Per scaricare una versione completa di esempio, vedere [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Esempio di esercitazione per un visualizzatore immagini completo).  
   
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")Per una versione video di questo argomento, vedere [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) (Come creare un visualizzatore di immagini in Visual Basic?) o [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198) (Come creare un visualizzatore di immagini in C#?).  
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")Per una versione video di questo argomento, vedere [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) (Come creare un visualizzatore di immagini in Visual Basic?) o [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198) (Come creare un visualizzatore di immagini in C#?).  
   
 > [!NOTE]
 >  In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio. In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.  

@@ -19,25 +19,25 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892337"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilizzo memoria senza debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare lo strumento **Utilizzo memoria** senza debug per eseguire le operazioni seguenti:  
   
--   Monitorare l'uso della memoria delle tue app direttamente in Visual Studio mentre sviluppi uno scenario.  
+- Monitorare l'uso della memoria delle tue app direttamente in Visual Studio mentre sviluppi uno scenario.  
   
--   Creare snapshot dettagliati dello stato della memoria dell'app.  
+- Creare snapshot dettagliati dello stato della memoria dell'app.  
   
--   Confrontare snapshot per trovare la causa principale dei problemi di memoria.  
+- Confrontare snapshot per trovare la causa principale dei problemi di memoria.  
   
- Questo argomento descrive come usare lo strumento Utilizzo memoria per analizzare un'app XAML universale di Windows. Se si vuole analizzare l'uso della memoria nelle app universali di Windows che usano JavaScript e HTML, vedere [Analizzare l'utilizzo della memoria (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  Questo argomento descrive come usare lo strumento Utilizzo memoria per analizzare un'app XAML universale di Windows. Se si vuole analizzare l'uso della memoria nelle app universali di Windows che usano JavaScript e HTML, vedere [Analizzare l'utilizzo della memoria (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Avviare una sessione di diagnostica con lo strumento Utilizzo memoria  
   
@@ -76,13 +76,13 @@ ms.locfileid: "49267423"
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Visualizzazioni snapshot dello strumento Utilizzo memoria  
  Usa le viste degli snapshot per aprire report dettagli in nuove finestre di Visual Studio. Esistono due tipi di viste degli snapshot:  
   
--   Un [rapporto dei dettagli degli snapshot](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) mostra i tipi e le istanze in un solo snapshot.  
+- Un [rapporto dei dettagli degli snapshot](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) mostra i tipi e le istanze in un solo snapshot.  
   
--   Un [rapporto delle differenze degli snapshot](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) confronta i tipi e le istanze in due snapshot.  
+- Un [rapporto delle differenze degli snapshot](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) confronta i tipi e le istanze in due snapshot.  
   
- ![Link della visualizzazione Snapshot](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Link della visualizzazione Snapshot](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Gli elementi numerati nell'immagine della vista dello snapshot sono link che aprono viste di report di Utilizzo memoria.  
+  Gli elementi numerati nell'immagine della vista dello snapshot sono link che aprono viste di report di Utilizzo memoria.  
   
 |||  
 |-|-|  

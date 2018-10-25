@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887605"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Non generare eccezioni in posizioni non previste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284687"
 ## <a name="rule-description"></a>Descrizione della regola
  I metodi che non possono generare eccezioni possono essere suddivisi in categorie come indicato di seguito:
 
--   Metodi Get di proprietà
+- Metodi Get di proprietà
 
--   Metodi della funzione di accesso agli eventi
+- Metodi della funzione di accesso agli eventi
 
--   Metodi Equals
+- Metodi Equals
 
--   Metodi GetHashCode
+- Metodi GetHashCode
 
--   Metodi ToString
+- Metodi ToString
 
--   Costruttori statici
+- Costruttori statici
 
--   Finalizzatori
+- Finalizzatori
 
--   Eliminazione dei metodi
+- Eliminazione dei metodi
 
--   Operatori di uguaglianza
+- Operatori di uguaglianza
 
--   Operatori di Cast impliciti
+- Operatori di Cast impliciti
 
- Le sezioni seguenti illustrano questi tipi di metodo.
+  Le sezioni seguenti illustrano questi tipi di metodo.
 
 ### <a name="property-get-methods"></a>Metodi Get di proprietà
  Le proprietà sono fondamentalmente intelligente. Pertanto, devono comportarsi come un campo quanto più possibile. I campi non generano eccezioni ed è opportuno proprietà. Se si dispone di una proprietà che genera un'eccezione, prendere in considerazione un metodo.
@@ -91,22 +92,22 @@ ms.locfileid: "49284687"
 ### <a name="equals-methods"></a>Metodi Equals
  Quanto segue **è uguale a** metodi non devono generare eccezioni:
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- Un' **è uguale a** metodo dovrebbe restituire `true` o `false` anziché generare un'eccezione. Ad esempio, se non viene passato è uguale a due tipi non corrispondenti deve semplicemente restituire `false` anziché generare un <xref:System.ArgumentException>.
+  Un' **è uguale a** metodo dovrebbe restituire `true` o `false` anziché generare un'eccezione. Ad esempio, se non viene passato è uguale a due tipi non corrispondenti deve semplicemente restituire `false` anziché generare un <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Metodi GetHashCode
  Quanto segue **GetHashCode** metodi in genere non devono generare eccezioni:
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode** deve sempre restituire un valore. In caso contrario, è possibile perdere gli elementi nella tabella hash.
+  **GetHashCode** deve sempre restituire un valore. In caso contrario, è possibile perdere gli elementi nella tabella hash.
 
- Le versioni di **GetHashCode** che accettano un argomento può generare un <xref:System.ArgumentException>. Tuttavia **Object. GetHashCode** non deve mai generare un'eccezione.
+  Le versioni di **GetHashCode** che accettano un argomento può generare un <xref:System.ArgumentException>. Tuttavia **Object. GetHashCode** non deve mai generare un'eccezione.
 
 ### <a name="tostring-methods"></a>Metodi ToString
  Il debugger usa <xref:System.Object.ToString%2A?displayProperty=fullName> per consentire di visualizzare informazioni sugli oggetti in formato stringa. Pertanto **ToString** non dovrebbe modificare lo stato di un oggetto e non debba generare eccezioni.

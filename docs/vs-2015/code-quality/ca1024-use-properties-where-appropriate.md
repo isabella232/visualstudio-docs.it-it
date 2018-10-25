@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd859492faeb5af7a74d0261ff8d86333ff5ade8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858927"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Utilizzare proprietà dove appropriato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
@@ -42,25 +43,25 @@ ms.locfileid: "49222729"
 ## <a name="rule-description"></a>Descrizione della regola
  Nella maggior parte dei casi, le proprietà rappresentano i dati e metodi di eseguono azioni. Le proprietà sono accessibili, ad esempio campi, che li rende più facile da usare. Un metodo è un buon candidato per diventare una proprietà se è presente una delle seguenti condizioni:
 
--   Non accetta argomenti e restituisce le informazioni sullo stato di un oggetto.
+- Non accetta argomenti e restituisce le informazioni sullo stato di un oggetto.
 
--   Accetta un singolo argomento per impostare una parte dello stato di un oggetto.
+- Accetta un singolo argomento per impostare una parte dello stato di un oggetto.
 
- Le proprietà devono comportarsi come se si tratta di campi; Se il metodo non è possibile, non si deve essere modificato in una proprietà. I metodi sono preferibili alle proprietà nelle situazioni seguenti:
+  Le proprietà devono comportarsi come se si tratta di campi; Se il metodo non è possibile, non si deve essere modificato in una proprietà. I metodi sono preferibili alle proprietà nelle situazioni seguenti:
 
--   Il metodo esegue un'operazione impegnativa. Il metodo è sensibilmente più lento rispetto al tempo necessario per impostare o ottenere il valore di un campo.
+- Il metodo esegue un'operazione impegnativa. Il metodo è sensibilmente più lento rispetto al tempo necessario per impostare o ottenere il valore di un campo.
 
--   Il metodo esegue una conversione. L'accesso a un campo non restituisce una versione convertita dei dati in essa contenuti.
+- Il metodo esegue una conversione. L'accesso a un campo non restituisce una versione convertita dei dati in essa contenuti.
 
--   Il metodo Get ha un effetto collaterale osservabile. Il recupero del valore di un campo non produce effetti collaterali.
+- Il metodo Get ha un effetto collaterale osservabile. Il recupero del valore di un campo non produce effetti collaterali.
 
--   L'ordine di esecuzione è importante. Impostazione del valore di un campo non si basa sull'occorrenza da altre operazioni.
+- L'ordine di esecuzione è importante. Impostazione del valore di un campo non si basa sull'occorrenza da altre operazioni.
 
--   La chiamata al metodo due volte in successione crea risultati diversi.
+- La chiamata al metodo due volte in successione crea risultati diversi.
 
--   Il metodo è statico ma restituisce un oggetto che può essere modificato dal chiamante. Il recupero del valore di un campo non consente al chiamante di modificare i dati archiviati in base al campo.
+- Il metodo è statico ma restituisce un oggetto che può essere modificato dal chiamante. Il recupero del valore di un campo non consente al chiamante di modificare i dati archiviati in base al campo.
 
--   Il metodo restituisce una matrice.
+- Il metodo restituisce una matrice.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, modificare il metodo a una proprietà.

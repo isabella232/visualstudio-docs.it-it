@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetName | Documenti Microsoft
+title: IDebugThread2::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ef4ff5a2e1896bccaab82b32c1244da9f1ca2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 670ee7b9fe8262e981f3c0abeb57710c2da9b0e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898473"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Ottiene il nome di un thread.  
@@ -47,7 +47,7 @@ int GetName (
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Il nome recuperato è sempre un nome che può essere visualizzato e questo nome viene descritto il thread. Il nome del thread potrebbe derivare da un'architettura della fase di esecuzione che supporta denominato thread o potrebbe essere un nome derivato dal motore di debug. In alternativa, è possibile impostare il nome del thread da una chiamata al [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) metodo.  
+ Il nome recuperato è sempre un nome che può essere visualizzato e questo nome viene descritto il thread. Il nome del thread può essere derivato da un'architettura di runtime che supporta denominate thread o potrebbe essere un nome derivato dal motore di debug. In alternativa, è possibile impostare il nome del thread da una chiamata per il [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

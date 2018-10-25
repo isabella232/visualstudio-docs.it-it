@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a58396756456d025f978ca101076c921d4d2772
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 948edbfbef7d3de0ace7c6e33e88d63dadc4dee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897448"
 ---
 # <a name="how-to-display-message-properties"></a>Procedura: visualizzare le proprietà del messaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Per altre informazioni su un messaggio elencato nella [visualizzazione messaggi]
   
 ### <a name="to-open-a-message-properties-dialog-box"></a>Per aprire una finestra di dialogo proprietà del messaggio  
   
-1.  Selezionare un messaggio nell'albero nella visualizzazione di messaggi.  
+1. Selezionare un messaggio nell'albero nella visualizzazione di messaggi.  
   
-2.  Dal **View** menu, scegliere **proprietà**.  
+2. Dal **View** menu, scegliere **proprietà**.  
   
- Finestre di dialogo delle proprietà non sono modale, in modo che è possibile fare clic su un altro elemento in una finestra di visualizzazione e la finestra di dialogo verrà visualizzate informazioni sull'elemento selezionato.
+   Finestre di dialogo delle proprietà non sono modale, in modo che è possibile fare clic su un altro elemento in una finestra di visualizzazione e la finestra di dialogo verrà visualizzate informazioni sull'elemento selezionato.
 
 
 

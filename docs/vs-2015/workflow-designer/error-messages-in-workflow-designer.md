@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 942cd4846b091e31bc74ab3d45860e2782767079
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efd6bc680be42f1074da8d2313b1a4b8e9307580
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894846"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messaggi di errore in Progettazione flussi di lavoro
 In questo argomento vengono descritti i tipi dei messaggi di errore che possono verificarsi durante l'uso di [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -29,17 +29,17 @@ In questo argomento vengono descritti i tipi dei messaggi di errore che possono 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Situazioni nelle quali si verificano gli errori in Progettazione flussi di lavoro  
  Gli errori in [!INCLUDE[wfd2](../includes/wfd2-md.md)] si verificano nelle situazioni seguenti:  
   
-1.  È presente un errore in un'espressione.  
+1. È presente un errore in un'espressione.  
   
-2.  Non sono stati soddisfatti i vincoli di convalida di un'attività.  
+2. Non sono stati soddisfatti i vincoli di convalida di un'attività.  
   
-3.  Sono presenti errori nel file XAML che impediscono il caricamento di un'attività.  
+3. Sono presenti errori nel file XAML che impediscono il caricamento di un'attività.  
   
-4.  Sono presenti errori nel file XAML che impediscono il caricamento del flusso di lavoro.  
+4. Sono presenti errori nel file XAML che impediscono il caricamento del flusso di lavoro.  
   
- Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro infatti riesce, ma viene generato un oggetto <xref:System.Activities.InvalidWorkflowException> in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.  
+   Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro infatti riesce, ma viene generato un oggetto <xref:System.Activities.InvalidWorkflowException> in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.  
   
- All'interno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quando viene caricato un flusso di lavoro, relativi errori vengono visualizzati nei **elenco errori**. Per passare all'attività che rappresenta l'origine dell'errore, fare doppio clic su errore nel **elenco errori**.  
+   All'interno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quando viene caricato un flusso di lavoro, relativi errori vengono visualizzati nei **elenco errori**. Per passare all'attività che rappresenta l'origine dell'errore, fare doppio clic su errore nel **elenco errori**.  
   
 ### <a name="expression-errors"></a>Errori nelle espressioni  
  Un'espressione non valida viene segnalata da un cerchio rosso con un punto esclamativo bianco accanto a essa. Se si posiziona il mouse su questa icona, viene visualizzata una descrizione comandi relativa all'origine dell'errore. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fare clic sull'espressione per visualizzare la riga che sottolinea l'origine dell'errore. Se si posiziona il mouse sul testo sottolineato, viene visualizzata una descrizione comandi relativa all'origine dell'errore.  

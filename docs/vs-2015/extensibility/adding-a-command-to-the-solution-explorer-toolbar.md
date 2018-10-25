@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836736"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Aggiunta di un comando alla barra degli strumenti di Esplora soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,41 +87,41 @@ Questa procedura dettagliata viene illustrato come aggiungere un pulsante per la
   
 #### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Per visualizzare un pulsante quando uno o più progetti sono aperti  
   
-1.  Nel `<Buttons>` sezione di ToolbarButtonPackage.vsct, aggiungere due flag dei comandi esistente `<Button>` elemento, tra le `<Strings>` e `<Icons>` tag.  
+1. Nel `<Buttons>` sezione di ToolbarButtonPackage.vsct, aggiungere due flag dei comandi esistente `<Button>` elemento, tra le `<Strings>` e `<Icons>` tag.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     Il `DefaultInvisible` e `DynamicVisibility` flag devono essere impostati pertanto che le voci di `<VisibilityConstraints>` sezione per rendere effettive.  
+    Il `DefaultInvisible` e `DynamicVisibility` flag devono essere impostati pertanto che le voci di `<VisibilityConstraints>` sezione per rendere effettive.  
   
-2.  Creare un `<VisibilityConstraints>` sezione che dispone di due `<VisibilityItem>` voci. Inserire la nuova sezione subito dopo la chiusura `</Commands>` tag.  
+2. Creare un `<VisibilityConstraints>` sezione che dispone di due `<VisibilityItem>` voci. Inserire la nuova sezione subito dopo la chiusura `</Commands>` tag.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     Ogni elemento visibilità rappresenta una condizione in cui viene visualizzato il pulsante specificato. Per applicare più condizioni, è necessario creare più voci per lo stesso pulsante.  
+    Ogni elemento visibilità rappresenta una condizione in cui viene visualizzato il pulsante specificato. Per applicare più condizioni, è necessario creare più voci per lo stesso pulsante.  
   
-3.  Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.  
+3. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.  
   
-     Il **Esplora soluzioni** sulla barra degli strumenti non contiene il pulsante barrato.  
+    Il **Esplora soluzioni** sulla barra degli strumenti non contiene il pulsante barrato.  
   
-4.  Aprire qualsiasi soluzione che contiene un progetto.  
+4. Aprire qualsiasi soluzione che contiene un progetto.  
   
-     Pulsante Barrato viene visualizzato sulla barra degli strumenti a destra dei pulsanti esistenti.  
+    Pulsante Barrato viene visualizzato sulla barra degli strumenti a destra dei pulsanti esistenti.  
   
-5.  Nel **File** menu, fare clic su **Chiudi soluzione**. Il pulsante viene rimosso dalla barra degli strumenti.  
+5. Nel **File** menu, fare clic su **Chiudi soluzione**. Il pulsante viene rimosso dalla barra degli strumenti.  
   
- La visibilità del pulsante è controllata da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fino a quando non viene caricato il pacchetto VSPackage. Dopo che il VSPackage viene caricato, la visibilità del pulsante è controllata dal pacchetto VSPackage.  Per altre informazioni, vedere [Vs confronto tra oggetti MenuCommand. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
+   La visibilità del pulsante è controllata da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fino a quando non viene caricato il pacchetto VSPackage. Dopo che il VSPackage viene caricato, la visibilità del pulsante è controllata dal pacchetto VSPackage.  Per altre informazioni, vedere [Vs confronto tra oggetti MenuCommand. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

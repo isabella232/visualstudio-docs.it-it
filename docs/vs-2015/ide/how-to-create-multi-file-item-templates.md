@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862177"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: creare modelli di elementi a più file
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sebbene i modelli di elementi possano specificare un solo elemento, in alcuni casi l'elemento è costituito da più file. Ad esempio, un modello di elemento di Windows Forms per Visual Basic richiede i tre file seguenti:  
   
--   Un file con estensione vb che contiene il codice per il modulo.  
+- Un file con estensione vb che contiene il codice per il modulo.  
   
--   Un file designer.vb che contiene le informazioni della finestra di progettazione del modulo.  
+- Un file designer.vb che contiene le informazioni della finestra di progettazione del modulo.  
   
--   Un file con estensione resx che contiene le risorse incorporate del modulo.  
+- Un file con estensione resx che contiene le risorse incorporate del modulo.  
   
- Per i modelli di elementi a più file è necessario specificare i parametri per assicurarsi che vengano usate le estensioni dei nomi di file corrette quando l'elemento viene creato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se si crea un modello di elemento usando l'**Esportazione guidata modelli**, questi parametri vengono generati automaticamente e non è richiesta alcuna ulteriore modifica. La procedura seguente descrive come usare i parametri per assicurarsi che vengano create le estensioni dei nomi di file corrette.  
+  Per i modelli di elementi a più file è necessario specificare i parametri per assicurarsi che vengano usate le estensioni dei nomi di file corrette quando l'elemento viene creato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se si crea un modello di elemento usando l'**Esportazione guidata modelli**, questi parametri vengono generati automaticamente e non è richiesta alcuna ulteriore modifica. La procedura seguente descrive come usare i parametri per assicurarsi che vengano create le estensioni dei nomi di file corrette.  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Per creare manualmente un modello di elemento a più file  
   

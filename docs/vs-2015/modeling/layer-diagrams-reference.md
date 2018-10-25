@@ -25,12 +25,12 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1136cc4e55ebbdf3a5ff1b38b5802b058e9c69c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895743"
 ---
 # <a name="layer-diagrams-reference"></a>Diagrammi livello: riferimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ In Visual Studio, è possibile usare una *diagramma livello* per visualizzare l'
   
  Usare un diagramma livello per eseguire le attività seguenti:  
   
--   Comunicare l'architettura logica esistente o desiderata del sistema.  
+- Comunicare l'architettura logica esistente o desiderata del sistema.  
   
--   Individuare i conflitti tra il codice esistente e l'architettura desiderata.  
+- Individuare i conflitti tra il codice esistente e l'architettura desiderata.  
   
--   Visualizzare l'impatto delle modifiche nell'architettura desiderata in caso di refactoring, aggiornamento o evoluzione del sistema.  
+- Visualizzare l'impatto delle modifiche nell'architettura desiderata in caso di refactoring, aggiornamento o evoluzione del sistema.  
   
--   Rafforzare l'architettura desiderata durante lo sviluppo e la manutenzione del codice includendo la convalida con le operazioni di archiviazione e compilazione.  
+- Rafforzare l'architettura desiderata durante lo sviluppo e la manutenzione del codice includendo la convalida con le operazioni di archiviazione e compilazione.  
   
- Questo argomento descrive gli elementi che è possibile usare in un diagramma livello. Per altre informazioni su come creare e tracciare diagrammi livello, vedere [diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md). Per altre informazioni sui modelli di livello, visitare il [sito Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  Questo argomento descrive gli elementi che è possibile usare in un diagramma livello. Per altre informazioni su come creare e tracciare diagrammi livello, vedere [diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md). Per altre informazioni sui modelli di livello, visitare il [sito Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Lettura di diagrammi livello  
  ![Gli elementi nei diagrammi livello](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -69,17 +69,17 @@ In Visual Studio, è possibile usare una *diagramma livello* per visualizzare l'
 ##  <a name="Explorer"></a> Esplora livello  
  È possibile collegare ogni livello a elementi nella soluzione, come progetti, classi, spazi dei nomi, file di progetto e altre parti del software. Il numero specificato su un livello indica il numero di elementi a esso collegati. Tuttavia, nell'interpretare il numero di elementi in un livello, ricordare quanto segue:  
   
--   Se un livello è collegato a un elemento contenente altri elementi, ma non è collegato direttamente ad altri elementi, il numero include solo l'elemento collegato. Tuttavia, gli altri elementi vengono inclusi per l'analisi durante la convalida dei livelli.  
+- Se un livello è collegato a un elemento contenente altri elementi, ma non è collegato direttamente ad altri elementi, il numero include solo l'elemento collegato. Tuttavia, gli altri elementi vengono inclusi per l'analisi durante la convalida dei livelli.  
   
-     Ad esempio, se un livello è collegato a un solo spazio dei nomi, il numero degli elementi collegati sarà 1, anche se lo spazio dei nomi contiene classi. Se il livello è collegato anche a ciascuna classe dello spazio dei nomi, il numero includerà le classi collegate.  
+   Ad esempio, se un livello è collegato a un solo spazio dei nomi, il numero degli elementi collegati sarà 1, anche se lo spazio dei nomi contiene classi. Se il livello è collegato anche a ciascuna classe dello spazio dei nomi, il numero includerà le classi collegate.  
   
--   Se un livello contiene altri livelli collegati a elementi, anche il livello contenitore sarà collegato a tali elementi nonostante il numero raffigurato sul livello contenitore non includa quegli elementi.  
+- Se un livello contiene altri livelli collegati a elementi, anche il livello contenitore sarà collegato a tali elementi nonostante il numero raffigurato sul livello contenitore non includa quegli elementi.  
   
- Per altre informazioni sul collegamento di livelli ed elementi, vedere:  
+  Per altre informazioni sul collegamento di livelli ed elementi, vedere:  
   
--   [Diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md)  
+- [Diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md)  
   
--   [Creare diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Creare diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>Per esaminare gli elementi collegati  
   

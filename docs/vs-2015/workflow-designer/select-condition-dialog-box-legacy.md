@@ -16,29 +16,29 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897771"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Finestra di dialogo Seleziona condizione (legacy)
 Questo argomento viene descritto come usare il **Seleziona condizione** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Il **Seleziona condizione** nella finestra di dialogo è possibile selezionare una condizione di regole dichiarative da assegnare alla proprietà di condizione dell'attività. Queste condizioni della regola sono esposte come proprietà nelle attività predefinite di Windows Workflow Foundation seguenti:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [Attività ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [Attività ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [Attività WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [Attività WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
- Per informazioni su come accedere al **Seleziona condizione** della finestra di dialogo vedere [procedura: creare una condizione della regola dichiarativa (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Per informazioni su come accedere al **Seleziona condizione** della finestra di dialogo vedere [procedura: creare una condizione della regola dichiarativa (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
- La tabella seguente descrive gli elementi dell'interfaccia utente di **Seleziona condizione** nella finestra di dialogo.  
+  La tabella seguente descrive gli elementi dell'interfaccia utente di **Seleziona condizione** nella finestra di dialogo.  
   
 |Elemento dell'interfaccia utente|Descrizione|  
 |----------------|-----------------|  

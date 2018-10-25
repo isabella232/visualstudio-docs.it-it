@@ -21,29 +21,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894170"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procedura dettagliata: Creare un'attività flusso di lavoro del sito personalizzata
   Questa procedura dettagliata viene illustrato come creare un'attività personalizzata per un flusso di lavoro a livello di sito utilizzando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (I flussi di lavoro a livello di sito si applicano all'intero sito, non solo un elenco nel sito). L'attività personalizzata consente di creare un elenco di annunci di backup e quindi copia il contenuto dell'elenco di annunci al suo interno.  
   
  In questa procedura dettagliata vengono descritte le attività seguenti:  
   
--   Creazione di un flusso di lavoro a livello di sito.  
+- Creazione di un flusso di lavoro a livello di sito.  
   
--   Creazione di un'attività flusso di lavoro personalizzato.  
+- Creazione di un'attività flusso di lavoro personalizzato.  
   
--   Creazione ed eliminazione di un elenco di SharePoint.  
+- Creazione ed eliminazione di un elenco di SharePoint.  
   
--   Copia gli elementi da un unico elenco a altro.  
+- Copia gli elementi da un unico elenco a altro.  
   
--   Visualizzazione di un elenco nella barra Avvio veloce.  
+- Visualizzazione di un elenco nella barra Avvio veloce.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  

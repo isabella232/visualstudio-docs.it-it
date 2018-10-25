@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a66d13e9fef647432f05dc01ce60732a0c40b16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855404"
 ---
 # <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Per eseguire l'applicazione nella diagnostica della grafica  
   
--   Nella barra dei menu scegliere **Debug**, **Grafica**, **Avvia diagnostica**. Tastiera: premere ALT+F5.  
+- Nella barra dei menu scegliere **Debug**, **Grafica**, **Avvia diagnostica**. Tastiera: premere ALT+F5.  
   
--   Nel **grafica** sulla barra degli strumenti, scegliere il **avvia diagnostica** pulsante.  
+- Nel **grafica** sulla barra degli strumenti, scegliere il **avvia diagnostica** pulsante.  
   
- Se un'app è in esecuzione nella diagnostica della grafica, verranno costantemente acquisiti determinati tipi di informazioni grafiche, tra cui la configurazione dei dispositivi, la creazione della catena di scambio e di oggetti grafici e risorse, nonché altri eventi importanti che influiscono su più di un frame. Contemporaneamente, è possibile acquisire informazioni dettagliate su frame specifici; tali informazioni includono chiamate di disegno e invii di compute shader, oltre a risorse e oggetti Direct3D che li supportano.  
+  Se un'app è in esecuzione nella diagnostica della grafica, verranno costantemente acquisiti determinati tipi di informazioni grafiche, tra cui la configurazione dei dispositivi, la creazione della catena di scambio e di oggetti grafici e risorse, nonché altri eventi importanti che influiscono su più di un frame. Contemporaneamente, è possibile acquisire informazioni dettagliate su frame specifici; tali informazioni includono chiamate di disegno e invii di compute shader, oltre a risorse e oggetti Direct3D che li supportano.  
   
 #### <a name="to-capture-a-frame"></a>Per acquisire un frame  
   
--   In Visual Studio sul **grafica** sulla barra degli strumenti, scegliere il **Acquisisci Frame** pulsante![icona pulsante acquisizione grafica](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- In Visual Studio sul **grafica** sulla barra degli strumenti, scegliere il **Acquisisci Frame** pulsante![icona pulsante acquisizione grafica](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
--   Premere STAMP sulla tastiera.  
+- Premere STAMP sulla tastiera.  
   
-    > [!NOTE]
-    >  Durante l'esecuzione di un'app in **diagnostica della grafica**, il tasto Stamp solo può essere usato per acquisire un frame di informazioni grafiche; e non per eseguire la funzione standard. Questa condizione rimarrà attiva finché non si deciderà di interrompere l'acquisizione delle informazioni grafiche, in genere arrestando il debug o chiudendo l'app, anche se un'altra app presenta lo stato attivo.  
+  > [!NOTE]
+  >  Durante l'esecuzione di un'app in **diagnostica della grafica**, il tasto Stamp solo può essere usato per acquisire un frame di informazioni grafiche; e non per eseguire la funzione standard. Questa condizione rimarrà attiva finché non si deciderà di interrompere l'acquisizione delle informazioni grafiche, in genere arrestando il debug o chiudendo l'app, anche se un'altra app presenta lo stato attivo.  
   
--   Nell'interfaccia di acquisizione di Visual Studio, scegliere il **Acquisisci Frame** pulsante che si trova sopra il **sessione di diagnostica** sequenza temporale, o scegliere di grande **Acquisisci Frame** pulsante che si trova sotto il **fotogrammi al secondo** corsia e a destra dei frame acquisiti in precedenza. Entrambi i pulsanti sono evidenziati nell'immagine seguente.  
+- Nell'interfaccia di acquisizione di Visual Studio, scegliere il **Acquisisci Frame** pulsante che si trova sopra il **sessione di diagnostica** sequenza temporale, o scegliere di grande **Acquisisci Frame** pulsante che si trova sotto il **fotogrammi al secondo** corsia e a destra dei frame acquisiti in precedenza. Entrambi i pulsanti sono evidenziati nell'immagine seguente.  
   
-     ![Acquisire frame con lo strumento utilizzo GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![Acquisire frame con lo strumento utilizzo GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-     Quando si è pronti per esaminare i frame acquisiti, avviare il **Visual Studio Graphics Analyzer** seguendo la **Frame...** collegamento sopra le anteprime delle immagini oppure facendo doppio clic su Anteprima.  
+   Quando si è pronti per esaminare i frame acquisiti, avviare il **Visual Studio Graphics Analyzer** seguendo la **Frame...** collegamento sopra le anteprime delle immagini oppure facendo doppio clic su Anteprima.  
   
- È possibile acquisire solo frame interi e quindi, all'avvio di un'acquisizione, verranno effettivamente registrate le informazioni grafiche dal frame successivo. La registrazione inizierà immediatamente dopo aver verificato il frame in cui è stata avviata l'acquisizione e terminerà dopo aver verificato il frame acquisito. È possibile acquisire un numero indefinito di frame mentre l'app è in esecuzione nella diagnostica grafica. In assenza di frame acquisiti, il log di grafica verrà rimosso.  
+  È possibile acquisire solo frame interi e quindi, all'avvio di un'acquisizione, verranno effettivamente registrate le informazioni grafiche dal frame successivo. La registrazione inizierà immediatamente dopo aver verificato il frame in cui è stata avviata l'acquisizione e terminerà dopo aver verificato il frame acquisito. È possibile acquisire un numero indefinito di frame mentre l'app è in esecuzione nella diagnostica grafica. In assenza di frame acquisiti, il log di grafica verrà rimosso.  
   
- Durante l'acquisizione dei frame, Visual Studio visualizza la finestra della sessione di diagnostica (con estensione diagsession). Se si chiude questa finestra, si arresta il debug o si chiude l'app, non sarà possibile acquisire altri frame nel log. Per acquisire più informazioni grafiche, è necessario eseguire nuovamente l'app in Diagnostica grafica per avviare un nuovo log di grafica.  
+  Durante l'acquisizione dei frame, Visual Studio visualizza la finestra della sessione di diagnostica (con estensione diagsession). Se si chiude questa finestra, si arresta il debug o si chiude l'app, non sarà possibile acquisire altri frame nel log. Per acquisire più informazioni grafiche, è necessario eseguire nuovamente l'app in Diagnostica grafica per avviare un nuovo log di grafica.  
   
 ### <a name="graphics-diagnostics-capture-options"></a>Opzioni di acquisizione di diagnostica grafica  
  È possibile configurare l'acquisizione per raccogliere stack di chiamate per tutti gli eventi grafici o per un subset limitato, per disabilitare l'HUD per l'acquisizione e per abilitare o disabilitare l'acquisizione in modalità di compatibilità.  

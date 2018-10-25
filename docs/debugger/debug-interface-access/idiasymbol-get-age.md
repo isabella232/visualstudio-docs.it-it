@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_age | Documenti Microsoft
+title: Get_age | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81c41902b5e6a8421f15b69ebc77fe5ae6eebf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868469"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 Recupera il valore di durata di un file con estensione pdb.  
@@ -43,14 +43,14 @@ HRESULT get_age (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- La durata non corrisponde necessariamente a qualsiasi valore di tempo noto; in genere utilizzato per determinare se un file con estensione PDB non è sincronizzato con un file .exe corrispondente.  
+ Il periodo di validità non corrisponde necessariamente su qualsiasi valore di tempo noto; in genere utilizzato per determinare se un file con estensione PDB non è sincronizzato con un file .exe corrispondente.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 7.0 DIA SDK|  
+|Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

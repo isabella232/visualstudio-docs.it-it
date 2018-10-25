@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f9a150760636fd5717c427324688c564b80aca30
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869985"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debug di un modello di testo T4
 È possibile impostare i punti di interruzione nei modelli di testo. Per eseguire il debug di un modello di testo in fase di progettazione, salvare il file di modello di testo e quindi scegliere **Debug modello T4** menu di scelta rapida del file in Esplora soluzioni. Per eseguire il debug di un modello di testo in fase di esecuzione, è sufficiente eseguire il debug dell'applicazione a cui appartiene.
@@ -25,7 +25,7 @@ ms.locfileid: "47859757"
  Per eseguire il debug di un modello di testo, è necessario comprendere i passaggi per il processo di trasformazione del modello. Diversi tipi di errori possono verificarsi all'interno di ogni passaggio. I passaggi sono i seguenti.
 
 |Passaggio|Modello in fase di progettazione: quando si verifica|Modello di runtime: quando si verifica|
-|----------|--------------------------------------------|-----------------------------------------|
+|-|-|-|
 |Codice viene generato dal modello di testo.<br /><br /> Errori nelle direttive, o disallineati o soggetti disordered `<#...#>` tag.|Quando si salva il modello o richiama trasformazione del testo.|Quando si salva il modello o richiama trasformazione del testo.|
 |Viene compilato il codice generato.<br /><br /> Errori di compilazione nel codice del modello.|Immediatamente dopo il passaggio precedente.|Con il codice dell'applicazione.|
 |Il codice viene eseguito.<br /><br /> Errori di run-time nel codice del modello.|Immediatamente dopo il passaggio precedente.|Quando l'applicazione viene eseguita e richiama il codice del modello.|
@@ -38,7 +38,7 @@ ms.locfileid: "47859757"
  Nella tabella seguente sono elencati gli errori più comuni e le relative correzioni.
 
 |Messaggio di errore|Descrizione|Soluzione|
-|-------------------|-----------------|--------------|
+|-|-|-|
 |Non è stato possibile caricare la classe base{0}' da cui trasformazione classe eredita.|Si verifica se non è possibile trovare la classe base specificata nel `inherits` parametro in una direttiva del modello. Il messaggio include il numero di riga della direttiva template.|Assicurarsi che la classe specificata esista e che sia specificato l'assembly cui si trova in una direttiva assembly.|
 |Non è riuscito a risolvere includere testo per il file:{0}|Si verifica quando non è possibile trovare un modello incluso. Il messaggio include il nome del file di inclusione richiesto.|Assicurarsi che il percorso del file è relativo al percorso del modello originale, o che il file sia in un percorso a cui è registrato con l'host o che vi sia un percorso completo del file.|
 |Sono stati generati errori durante l'inizializzazione dell'oggetto trasformazione. La trasformazione non verrà eseguita.|Si verifica quando 'Initialize ()' della classe di trasformazione non è riuscito o ha restituito false.|Il codice nella funzione Initialize () deriva dalla classe di base di trasformazione specificata nella \<&@template& > direttiva e dai processori di direttiva. L'errore che ha causato initialize probabilmente esito negativo è in elenco errori. Esaminare il motivo dell'errore. È possibile esaminare il codice generato effettivo per Initialize (), seguire le procedure per eseguire il debug di un modello.|
@@ -52,7 +52,7 @@ ms.locfileid: "47859757"
  Nella tabella seguente elenca gli avvisi più comuni insieme alle correzioni, se disponibile.
 
 |Messaggio di avviso|Descrizione|Soluzione|
-|---------------------|-----------------|--------------|
+|-|-|-|
 |Il caricamento del file di inclusione '{0}' ha restituito una stringa null o vuota.|Si verifica se un file di modello testo incluso è vuoto. Il messaggio include il nome del file del file incluso.|Rimuovere la direttiva include oppure assicurarsi che il file sia parte del contenuto.|
 |Compilazione della trasformazione:|Antepone la stringa a tutti gli errori o avvisi provenienti dal compilatore durante la compilazione della trasformazione. Questa stringa indica che il compilatore ha generato un errore o avviso.|Se si dispone di un problema durante la ricerca della DLL, si potrebbe dover fornire il percorso completo o un nome completo sicuro se la DLL si trovi nella Global Assembly Cache.|
 |Il parametro '{0}' esiste già nella direttiva. Il parametro duplicato verrà ignorato.|Si verifica quando un parametro è specificato più volte in una direttiva. Il messaggio include il nome del parametro e il numero di riga della direttiva.|Rimuovere la specifica del parametro duplicato.|

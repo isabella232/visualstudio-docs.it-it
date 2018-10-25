@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72cbb498184317f79cdd91a59e60dab430dfcce7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 81cf6b3cb58ceeb118b6e3cc181d417104c40cb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895405"
 ---
 # <a name="integration-with-xml-editor"></a>Integrazione con l'editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ ms.locfileid: "49214500"
   
 Progettazione XML Schema è integrato con l'editor XML. Se si modifica un file XSD nell'Editor XML, la modifica si rifletterà nel [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Se si dispone di [visualizzazione grafico](../xml-tools/graph-view.md) o il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) aperta, la modifica si rifletterà anche presenti. È possibile spostarsi tra Progettazione XML Schema e l'editor XML nei seguenti modi:  
   
--   Nell'Editor XML, fare doppio clic su un nodo e selezionare **Mostra in XML Schema Explorer**.  
+- Nell'Editor XML, fare doppio clic su un nodo e selezionare **Mostra in XML Schema Explorer**.  
   
--   Nella visualizzazione grafico e XML Schema Explorer, fare doppio clic su un nodo, o un nodo e scegliere **Visualizza codice**. Nella visualizzazione modello di contenuto, fare doppio clic su un nodo e selezionare **Visualizza codice**.  
+- Nella visualizzazione grafico e XML Schema Explorer, fare doppio clic su un nodo, o un nodo e scegliere **Visualizza codice**. Nella visualizzazione modello di contenuto, fare doppio clic su un nodo e selezionare **Visualizza codice**.  
   
- Nella schermata seguente è mostrato uno schema XML aperto in XML Schema Explorer. In XML Schema Explorer il set di schemi viene visualizzato con un albero. Nell'editor XML viene visualizzato il testo del nodo attualmente attivo in XML Schema Explorer.  
+  Nella schermata seguente è mostrato uno schema XML aperto in XML Schema Explorer. In XML Schema Explorer il set di schemi viene visualizzato con un albero. Nell'editor XML viene visualizzato il testo del nodo attualmente attivo in XML Schema Explorer.  
   
- ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif "XSDDesignerWithXMLEditor")  
+  ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif "XSDDesignerWithXMLEditor")  
   
- Qualche volta è utile visualizzare il codice nell'editor XML e la finestra di progettazione grafica uno accanto all'altro. Per visualizzare entrambi i file nello stesso momento, fare doppio clic su un punto qualsiasi dell'Editor XML e selezionare **Progettazione viste**. Nel menu di Visual Studio Windows, selezionare **nuovo orizzontali (o verticali) gruppo di schede**.  
+  Qualche volta è utile visualizzare il codice nell'editor XML e la finestra di progettazione grafica uno accanto all'altro. Per visualizzare entrambi i file nello stesso momento, fare doppio clic su un punto qualsiasi dell'Editor XML e selezionare **Progettazione viste**. Nel menu di Visual Studio Windows, selezionare **nuovo orizzontali (o verticali) gruppo di schede**.  
   
- ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif "XSDDesignerWithXMLEditorAndCMV")  
+  ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif "XSDDesignerWithXMLEditorAndCMV")  
   
 ## <a name="see-also"></a>Vedere anche  
  [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
