@@ -10,31 +10,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d31479ec46c407ca875a1ad2a1d81e1438b7715
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 498720ff5b76ce2c3229c9c7a493023318213ae4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941932"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare percorsi dei file di simboli tramite la riga di comando
 Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione *pdb*) dei componenti profilati e ai file di sistema di Windows. I file di simboli vengono creati quando viene compilato un componente. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport esegue automaticamente la ricerca dei file di simboli nei percorsi seguenti:  
   
--   Percorsi specificati nell'opzione **/SymbolPath** o nella variabile di ambiente **_NT_SYMBOL_PATH**.  
+- Percorsi specificati nell'opzione **/SymbolPath** o nella variabile di ambiente **_NT_SYMBOL_PATH**.  
   
--   Percorso locale esatto in cui è stato compilato un componente.  
+- Percorso locale esatto in cui è stato compilato un componente.  
   
--   Directory contenente il file di dati di profilatura (con estensione *vsp* o *vsps*).  
+- Directory contenente il file di dati di profilatura (con estensione *vsp* o *vsps*).  
   
- Microsoft fornisce i file con estensione *pdb* per molti dei suoi prodotti online in un server di simboli. Se il computer usato per la generazione di rapporti è connesso a Internet, VSPerfReport si connette al server di simboli online per cercare automaticamente informazioni sui simboli e salvare i file in un archivio locale.  
+  Microsoft fornisce i file con estensione *pdb* per molti dei suoi prodotti online in un server di simboli. Se il computer usato per la generazione di rapporti è connesso a Internet, VSPerfReport si connette al server di simboli online per cercare automaticamente informazioni sui simboli e salvare i file in un archivio locale.  
   
- È possibile specificare il percorso del file di simboli e l'archivio del server di simboli Microsoft nei modi seguenti:  
+  È possibile specificare il percorso del file di simboli e l'archivio del server di simboli Microsoft nei modi seguenti:  
   
--   Impostare la variabile di ambiente **_NT_SYMBOL_PATH**.  
+- Impostare la variabile di ambiente **_NT_SYMBOL_PATH**.  
   
--   Aggiungere l'opzione **/SymbolPath** alla riga di comando VSPerfReport.  
+- Aggiungere l'opzione **/SymbolPath** alla riga di comando VSPerfReport.  
   
- È anche possibile usare entrambi questi metodi.  
+  È anche possibile usare entrambi questi metodi.  
   
 > [!NOTE]
 >  Se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è installato nel computer locale, probabilmente è già stato specificato un percorso per i file di simboli Windows. Per altre informazioni, vedere [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md). È comunque necessario configurare VSPerfReport per usare il percorso e il server come descritto più avanti in questo argomento.  
@@ -43,13 +43,13 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
   
 #### <a name="to-configure-the-use-of-the-windows-symbol-server"></a>Per configurare l'uso del server di simboli Windows  
   
-1.  Se necessario, creare una directory per archiviare localmente i file di simboli.  
+1. Se necessario, creare una directory per archiviare localmente i file di simboli.  
   
-2.  Usare la sintassi seguente per impostare la variabile di ambiente **_NT_SYMBOL_PATH** o l'opzione /SymbolPath di VSPerfReport:  
+2. Usare la sintassi seguente per impostare la variabile di ambiente **_NT_SYMBOL_PATH** o l'opzione /SymbolPath di VSPerfReport:  
   
-     **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **SRV\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
-     dove *ArchivioLocale* è il percorso della directory locale creata.  
+    dove *ArchivioLocale* è il percorso della directory locale creata.  
   
 ## <a name="specify-component-symbol-files"></a>Specificare i file di simboli dei componenti  
  Gli strumenti di profilatura eseguono la ricerca di file con estensione *pdb* dei componenti da profilare nei rispettivi percorsi originali archiviati nei componenti o nella cartella contenente il file di dati di profilatura. È possibile specificare altri percorsi per la ricerca aggiungendo uno o più percorsi a **_NT_SYMBOL_PATH** o all'opzione **/SymbolPath**. Separare i percorsi con punti e virgola.  

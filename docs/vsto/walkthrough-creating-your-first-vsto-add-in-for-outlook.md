@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25155e6dee56fd816425f795a5082667c90c242a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950963"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Procedura dettagliata: Creare il primo aggiuntivo VSTO per Outlook
   Questa procedura dettagliata illustra come creare un componente aggiuntivo VSTO per Microsoft Office Outlook. Le funzionalità create in questo tipo di soluzione sono disponibili per l'applicazione indipendentemente dagli elementi Outlook aperti. Per altre informazioni, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "38778128"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Creazione di un progetto di componente aggiuntivo VSTO per Outlook.  
+- Creazione di un progetto di componente aggiuntivo VSTO per Outlook.  
   
--   Scrittura del codice che usa il modello a oggetti di Outlook per aggiungere testo all'oggetto e al corpo di un nuovo messaggio di posta elettronica.  
+- Scrittura del codice che usa il modello a oggetti di Outlook per aggiungere testo all'oggetto e al corpo di un nuovo messaggio di posta elettronica.  
   
--   Creazione ed esecuzione del progetto a scopo di test.  
+- Creazione ed esecuzione del progetto a scopo di test.  
   
--   Pulizia del progetto completato, per fare in modo che il componente aggiuntivo VSTO non venga più eseguito automaticamente nel computer di sviluppo.  
+- Pulizia del progetto completato, per fare in modo che il componente aggiuntivo VSTO non venga più eseguito automaticamente nel computer di sviluppo.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -78,24 +78,24 @@ ms.locfileid: "38778128"
   
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>Per aggiungere testo all'oggetto e al corpo di ciascun nuovo messaggio di posta elettronica  
   
-1.  Nel file di codice ThisAddIn, dichiarare un campo denominato `inspectors` nella classe `ThisAddIn` . Il campo `inspectors` gestisce un riferimento alla raccolta di finestre di controllo nell'istanza Outlook corrente. Questo riferimento impedisce al Garbage Collector di liberare la memoria in cui è contenuto il gestore eventi per l'evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
+1. Nel file di codice ThisAddIn, dichiarare un campo denominato `inspectors` nella classe `ThisAddIn` . Il campo `inspectors` gestisce un riferimento alla raccolta di finestre di controllo nell'istanza Outlook corrente. Questo riferimento impedisce al Garbage Collector di liberare la memoria in cui è contenuto il gestore eventi per l'evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
   
-     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Sostituire il metodo `ThisAddIn_Startup` con il codice seguente. Questo codice consente di collegare un gestore eventi all'evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
+2. Sostituire il metodo `ThisAddIn_Startup` con il codice seguente. Questo codice consente di collegare un gestore eventi all'evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
   
-     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
+    [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
   
-3.  Nel file di codice ThisAddIn, aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice consente di definire un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
+3. Nel file di codice ThisAddIn, aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice consente di definire un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> .  
   
-     Quando l'utente crea un nuovo messaggio di posta elettronica, questo gestore eventi consente di aggiungere il testo alla riga dell'oggetto e al corpo del messaggio.  
+    Quando l'utente crea un nuovo messaggio di posta elettronica, questo gestore eventi consente di aggiungere il testo alla riga dell'oggetto e al corpo del messaggio.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
+    [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
+    [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
   
- Per modificare ciascun nuovo messaggio di posta elettronica, negli esempi di codice precedenti vengono usati gli oggetti seguenti:  
+   Per modificare ciascun nuovo messaggio di posta elettronica, negli esempi di codice precedenti vengono usati gli oggetti seguenti:  
   
 -   Il campo `Application` della classe `ThisAddIn` . Il campo `Application` restituisce un oggetto <xref:Microsoft.Office.Interop.Outlook.Application> che rappresenta l'istanza corrente di Outlook.  
   

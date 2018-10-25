@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cfaa2957f1dcb5fcfd9e7404f061d67cc44094
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: cc27aa96b0e893ada745533d070b3b7aa29264e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937811"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 
@@ -29,19 +29,19 @@ Per altre informazioni sul modello di illuminazione Lambert, vedere [Procedura: 
 
 Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
-1.  Creare uno shader Lambert, come descritto in [Procedura: Creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).
+1. Creare uno shader Lambert, come descritto in [Procedura: Creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).
 
-2.  Scollegare il nodo **Lambert** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Lambert** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
+2. Scollegare il nodo **Lambert** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Lambert** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
 
-3.  Aggiungere un nodo **Aggiungi** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Aggiungi** e spostarlo nell'area di progettazione.
+3. Aggiungere un nodo **Aggiungi** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Aggiungi** e spostarlo nell'area di progettazione.
 
-4.  Aggiungere un nodo **Speculare** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Speculare** e spostarlo nell'area di progettazione.
+4. Aggiungere un nodo **Speculare** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Speculare** e spostarlo nell'area di progettazione.
 
-5.  Aggiungere il contributo speculare. Spostare il terminale **Output** del nodo **Speculare** nel terminale **X** del nodo **Aggiungi** e quindi spostare il terminale **Output** del nodo **Lambert** nel terminale **Y** del nodo **Aggiungi**. Queste connessioni combinano i contributi totali di colore con riflessione diffusa e colore speculare per il pixel.
+5. Aggiungere il contributo speculare. Spostare il terminale **Output** del nodo **Speculare** nel terminale **X** del nodo **Aggiungi** e quindi spostare il terminale **Output** del nodo **Lambert** nel terminale **Y** del nodo **Aggiungi**. Queste connessioni combinano i contributi totali di colore con riflessione diffusa e colore speculare per il pixel.
 
-6.  Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Aggiungi** nel terminale **RGB** del nodo **Colore finale**.
+6. Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Aggiungi** nel terminale **RGB** del nodo **Colore finale**.
 
- La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.
+   La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.
 
 > [!NOTE]
 > Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader e un colore metallizzato usando i parametri **MaterialSpecular** e **MaterialSpecularPower**. Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).

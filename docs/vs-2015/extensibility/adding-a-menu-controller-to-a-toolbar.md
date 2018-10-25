@@ -17,12 +17,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d6ccae3f53181863ada9dcaa93cb616431885cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830951"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Aggiunta di un controller di menu a una barra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,82 +40,82 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
   
 #### <a name="to-create-a-menu-controller"></a>Per creare un controller di menu  
   
-1.  Seguire le procedure descritte nel [aggiunta di una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) per creare una finestra degli strumenti con una barra degli strumenti.  
+1. Seguire le procedure descritte nel [aggiunta di una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) per creare una finestra degli strumenti con una barra degli strumenti.  
   
-2.  In TWTestCommandPackage.vsct, passare alla sezione dei simboli. Nell'elemento GuidSymbol denominato **guidTWTestCommandPackageCmdSet**, dichiarare i controller di menu, gruppo di controller di menu e tre voci di menu.  
+2. In TWTestCommandPackage.vsct, passare alla sezione dei simboli. Nell'elemento GuidSymbol denominato **guidTWTestCommandPackageCmdSet**, dichiarare i controller di menu, gruppo di controller di menu e tre voci di menu.  
   
-    ```xml  
-    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
-    ```  
+   ```xml  
+   <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
+   ```  
   
-3.  Nella sezione i menu, dopo l'ultima voce di menu, definire il controller di menu come menu.  
+3. Nella sezione i menu, dopo l'ultima voce di menu, definire il controller di menu come menu.  
   
-    ```xml  
-    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <CommandFlag>TextChanges</CommandFlag>  
-        <CommandFlag>TextIsAnchorCommand</CommandFlag>  
-        <Strings>  
-            <ButtonText>Test Menu Controller</ButtonText>  
-            <CommandName>Test Menu Controller</CommandName>  
-        </Strings>  
-    </Menu>  
-    ```  
+   ```xml  
+   <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <CommandFlag>TextChanges</CommandFlag>  
+       <CommandFlag>TextIsAnchorCommand</CommandFlag>  
+       <Strings>  
+           <ButtonText>Test Menu Controller</ButtonText>  
+           <CommandName>Test Menu Controller</CommandName>  
+       </Strings>  
+   </Menu>  
+   ```  
   
-     Il `TextChanges` e `TextIsAnchorCommand` flag devono essere inclusi per consentire al controller di menu in modo da riflettere l'ultimo comando selezionato.  
+    Il `TextChanges` e `TextIsAnchorCommand` flag devono essere inclusi per consentire al controller di menu in modo da riflettere l'ultimo comando selezionato.  
   
-4.  Nei gruppi di sezione, dopo l'ultima voce di gruppo, aggiungere il gruppo di controller di menu.  
+4. Nei gruppi di sezione, dopo l'ultima voce di gruppo, aggiungere il gruppo di controller di menu.  
   
-    ```xml  
-    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
-    </Group>  
-    ```  
+   ```xml  
+   <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
+   </Group>  
+   ```  
   
-     Impostando il controller di menu come elemento padre, tutti i comandi inseriti in questo gruppo verranno visualizzato nel controller di menu. Il `priority` attributo viene omesso, che imposta il valore predefinito pari a 0, perché sarà l'unico gruppo sul controller di menu.  
+    Impostando il controller di menu come elemento padre, tutti i comandi inseriti in questo gruppo verranno visualizzato nel controller di menu. Il `priority` attributo viene omesso, che imposta il valore predefinito pari a 0, perché sarà l'unico gruppo sul controller di menu.  
   
-5.  Nella sezione pulsanti, dopo l'ultima voce di pulsante, aggiungere un elemento Button per ognuna delle voci di menu.  
+5. Nella sezione pulsanti, dopo l'ultima voce di pulsante, aggiungere un elemento Button per ognuna delle voci di menu.  
   
-    ```xml  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic1" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 1</ButtonText>  
-            <CommandName>MC Item 1</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic2" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 2</ButtonText>  
-            <CommandName>MC Item 2</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPicSearch" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 3</ButtonText>  
-            <CommandName>MC Item 3</CommandName>  
-        </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic1" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 1</ButtonText>  
+           <CommandName>MC Item 1</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic2" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 2</ButtonText>  
+           <CommandName>MC Item 2</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPicSearch" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 3</ButtonText>  
+           <CommandName>MC Item 3</CommandName>  
+       </Strings>  
+   </Button>  
+   ```  
   
-6.  A questo punto, è possibile esaminare il controller di menu. Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza sperimentale.  
+6. A questo punto, è possibile esaminare il controller di menu. Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza sperimentale.  
   
-    1.  Nel **visualizzazione / Other Windows** menu, aprire **ToolWindow Test**.  
+   1. Nel **visualizzazione / Other Windows** menu, aprire **ToolWindow Test**.  
   
-    2.  Il controller di menu viene visualizzato sulla barra degli strumenti nella finestra degli strumenti.  
+   2. Il controller di menu viene visualizzato sulla barra degli strumenti nella finestra degli strumenti.  
   
-    3.  Fare clic sulla freccia a destra del controller di menu per visualizzare i tre comandi possibili.  
+   3. Fare clic sulla freccia a destra del controller di menu per visualizzare i tre comandi possibili.  
   
-     Si noti che quando si sceglie un comando, il titolo del controller di menu cambia per visualizzare tale comando. Nella sezione successiva, si aggiungerà il codice per attivare i comandi seguenti.  
+      Si noti che quando si sceglie un comando, il titolo del controller di menu cambia per visualizzare tale comando. Nella sezione successiva, si aggiungerà il codice per attivare i comandi seguenti.  
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implementazione dei comandi di Controller di Menu  
   

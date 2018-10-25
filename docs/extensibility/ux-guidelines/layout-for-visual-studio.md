@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816694"
 ---
 # <a name="layout-for-visual-studio"></a>Layout per Visual Studio
 La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra di dialogo utilità](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), che sono il unthemed finestre di dialogo standard di seguire [principi di layout di finestra di dialogo Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Mentre Visual Studio viene spostato alla relativa interfaccia utente di aggiornamento, alcune delle finestre di dialogo più evidenti sono una nuova progettazione che stabilisce le esperienze di definizione del prodotto. Questi [layout di finestra di dialogo con tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) hanno un aspetto a tema.  
@@ -56,19 +56,19 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
   
 #### <a name="command-buttons"></a>Pulsanti di comando  
   
--   Pulsanti di comando operano su frame di finestra di dialogo non sul contenuto. Che deve essere inseriti nella parte inferiore destra e deve avere sufficiente spazio delle variabili precedente per impostare i pulsanti nettamente separata.  
+- Pulsanti di comando operano su frame di finestra di dialogo non sul contenuto. Che deve essere inseriti nella parte inferiore destra e deve avere sufficiente spazio delle variabili precedente per impostare i pulsanti nettamente separata.  
   
--   Se sono presenti pulsanti orizzontali che operano all'interno della finestra di dialogo, la configurazione di pulsante di comando alternativo è uno stack verticale nell'angolo superiore destro. Visualizzare [pulsanti di comando interni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) sotto.  
+- Se sono presenti pulsanti orizzontali che operano all'interno della finestra di dialogo, la configurazione di pulsante di comando alternativo è uno stack verticale nell'angolo superiore destro. Visualizzare [pulsanti di comando interni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) sotto.  
   
--   Lo spazio a sinistra dei pulsanti di comando (più basso a sinistra o al centro della finestra di dialogo) viene considerato parte della "banda" dei controlli di finestra di dialogo operazione. L'unica cosa che dovrebbe ostacolano lo spazio è un collegamento alla Guida che è rilevante per l'attività generale o la finestra di dialogo.  
+- Lo spazio a sinistra dei pulsanti di comando (più basso a sinistra o al centro della finestra di dialogo) viene considerato parte della "banda" dei controlli di finestra di dialogo operazione. L'unica cosa che dovrebbe ostacolano lo spazio è un collegamento alla Guida che è rilevante per l'attività generale o la finestra di dialogo.  
   
--   Pulsanti di comando devono essere 75 x 23 pixel.  
+- Pulsanti di comando devono essere 75 x 23 pixel.  
   
--   Pulsanti di comando devono essere 6 pixel di distanza.  
+- Pulsanti di comando devono essere 6 pixel di distanza.  
   
- ![Allineamento di base dei pulsanti](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
+  ![Allineamento di base dei pulsanti](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
- **08.01 figura c: Allineamento di base dei pulsanti**  
+  **08.01 figura c: Allineamento di base dei pulsanti**  
   
 #### <a name="labels"></a>Etichette  
   
@@ -106,19 +106,19 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
 ####  <a name="BKMK_InteriorCommandButtons"></a> Pulsanti di comando interni  
  Nelle finestre di dialogo più complessi, un controllo interno potrebbe essere relativi pulsanti correlate, che possono influire in cui si trovano i pulsanti di commit della finestra di dialogo.  
   
--   Usare i pulsanti quando l'allineamento verticale (colonna) della parte interna **OK**/**Annulla** è orientato in senso orizzontale nell'angolo inferiore destro.  
+- Usare i pulsanti quando l'allineamento verticale (colonna) della parte interna **OK**/**Annulla** è orientato in senso orizzontale nell'angolo inferiore destro.  
   
--   Usare i pulsanti quando l'allineamento orizzontale (riga) della parte interna **OK**/**Annulla** è orientato in senso verticale in alto a destra. Questa situazione è meno comune.  
+- Usare i pulsanti quando l'allineamento orizzontale (riga) della parte interna **OK**/**Annulla** è orientato in senso verticale in alto a destra. Questa situazione è meno comune.  
   
--   Dimensioni del pulsante interni devono avere come destinazione le dimensioni del pulsante standard di 75 x 23 pixel, corrispondenti le dimensioni di **OK**/**Annulla** pulsanti quando possibile. Se un'etichetta del pulsante effettua il pulsante superano le dimensioni del pulsante standard, gli altri pulsanti in tale set devono essere allineate con tale dimensione più ampia.  
+- Dimensioni del pulsante interni devono avere come destinazione le dimensioni del pulsante standard di 75 x 23 pixel, corrispondenti le dimensioni di **OK**/**Annulla** pulsanti quando possibile. Se un'etichetta del pulsante effettua il pulsante superano le dimensioni del pulsante standard, gli altri pulsanti in tale set devono essere allineate con tale dimensione più ampia.  
   
- ![Pulsanti OK e Annulla orizzontali](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
+  ![Pulsanti OK e Annulla orizzontali](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
- **Figura 08.01-f: I pulsanti interno verticale con OK/Annulla orizzontale**  
+  **Figura 08.01-f: I pulsanti interno verticale con OK/Annulla orizzontale**  
   
- ![Pulsanti OK e Annulla verticali](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
+  ![Pulsanti OK e Annulla verticali](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
- **Figura 08.01-g: Pulsanti interni orizzontali con OK/Annulla verticale**  
+  **Figura 08.01-g: Pulsanti interni orizzontali con OK/Annulla verticale**  
   
 #### <a name="browse-button"></a>[Sfoglia...] pulsante  
  **[Sfoglia...]**  pulsanti che seguono una casella di testo devono spiegare chiaramente "Sfoglia..." in modo completo, inclusi i puntini di sospensione. Se lo spazio è insufficiente o ci sono più **[Sfoglia...]**  pulsanti sullo schermo, il pulsante possono essere ridotto a semplicemente i puntini di sospensione.  

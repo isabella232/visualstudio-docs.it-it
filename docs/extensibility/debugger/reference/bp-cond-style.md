@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE | Documenti Microsoft
+title: BP_COND_STYLE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64c3ac876f0d7be8582ca8162fd93c83cb6d343e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939774"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Specifica lo stile di condizione punto di interruzione per in sospeso e associati i punti di interruzione.  
@@ -46,16 +46,16 @@ public enum enum_BP_COND_STYLE {
   
 ## <a name="members"></a>Membri  
  BP_COND_NONE  
- Quando la posizione del punto di interruzione viene raggiunto, viene attivato il punto di interruzione. Nessuna condizione punto di interruzione specificata.  
+ Quando viene raggiunta la posizione del punto di interruzione, viene attivato il punto di interruzione. Nessuna condizione di punto di interruzione specificati.  
   
  BP_COND_WHEN_TRUE  
  Viene attivato il punto di interruzione solo quando il punto di interruzione associata l'espressione condizionale restituisce `true`.  
   
  BP_COND_WHEN_CHANGED  
- Viene attivato il punto di interruzione solo quando il valore dell'espressione condizionale associato dal punto di interruzione è stata modificata dalla relativa valutazione precedente.  
+ Viene attivato il punto di interruzione solo quando il valore dell'espressione condizionale associato il punto di interruzione è stato modificato da relativo valutazione precedente.  
   
 ## <a name="remarks"></a>Note  
- Utilizzato per il `styleCondition` appartenente il [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struttura.  
+ Utilizzato per il `styleCondition` membro della [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struttura.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

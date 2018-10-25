@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8d76c6f7d28b990d133780c25577cab4e8c3cad
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930206"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Creare un modello di integrazione applicativa dei dati business
   È possibile creare un modello di integrazione applicativa dei dati (BDC) o personalizzare un modello di integrazione applicativa dei dati esistente con Visual Studio. Ogni progetto di SharePoint può contenere un solo modello. Per altre informazioni, vedere [integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -57,13 +57,13 @@ ms.locfileid: "36326034"
 ## <a name="add-an-existing-model"></a>Aggiungere un modello esistente
  È possibile importare un modello che è stato creato usando altri strumenti, ad esempio SharePoint Designer. È possibile scegliere di importare un modello esistente al progetto nelle situazioni seguenti:  
   
--   Per personalizzare un modello che è già stato distribuito a una server farm di SharePoint.  
+- Per personalizzare un modello che è già stato distribuito a una server farm di SharePoint.  
   
--   Per creare un pacchetto e distribuire un modello esistente in più server farm di SharePoint.  
+- Per creare un pacchetto e distribuire un modello esistente in più server farm di SharePoint.  
   
- In entrambi i casi, i sistemi LOB definiti nel modello importato non sono interessati e continueranno a funzionare come previsto. Per aggiungere un modello esistente a un progetto SharePoint, usare Visual Studio **Aggiungi elemento esistente** nella finestra di dialogo. Per altre informazioni, vedere [procedura: aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+  In entrambi i casi, i sistemi LOB definiti nel modello importato non sono interessati e continueranno a funzionare come previsto. Per aggiungere un modello esistente a un progetto SharePoint, usare Visual Studio **Aggiungi elemento esistente** nella finestra di dialogo. Per altre informazioni, vedere [procedura: aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
   
- È possibile aggiungere un sistema LOB di assembly del tipo di .NET Framework per il modello importato, selezionare un'opzione nel **LobSystem di assembly .NET aggiungere**. In questo modo sarà possibile scrivere codice personalizzato e usare una finestra di progettazione per definire i metadati per il modello importato.  
+  È possibile aggiungere un sistema LOB di assembly del tipo di .NET Framework per il modello importato, selezionare un'opzione nel **LobSystem di assembly .NET aggiungere**. In questo modo sarà possibile scrivere codice personalizzato e usare una finestra di progettazione per definire i metadati per il modello importato.  
   
 ## <a name="related-topics"></a>Argomenti correlati
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c320400ee7337ec3f4ac3b6a77f1863b732c99c5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930642"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procedura dettagliata: Creare un SDK con C++
 Questa procedura dettagliata illustra come creare una libreria C++ nativa math SDK, il SDK come un Visual Studio Extension (VSIX), pacchetto e quindi usarlo per creare un'app. La procedura dettagliata è suddivisa in questi passaggi:  
@@ -142,25 +142,25 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
   
 ##  <a name="createSample"></a> Per creare un'app di esempio che usa la libreria di classi  
   
-1.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.  
+1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.  
   
-2.  Nell'elenco dei modelli, espandere **Visual C++** > **Windows Universal** e quindi selezionare **App vuota**. Nel **nome** , specificare **NativeMathSDKSample**, quindi scegliere il **OK** pulsante.  
+2. Nell'elenco dei modelli, espandere **Visual C++** > **Windows Universal** e quindi selezionare **App vuota**. Nel **nome** , specificare **NativeMathSDKSample**, quindi scegliere il **OK** pulsante.  
   
-3.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **NativeMathSDKSample** del progetto e quindi scegliere **Add** > **riferimento**.  
+3. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **NativeMathSDKSample** del progetto e quindi scegliere **Add** > **riferimento**.  
   
-4.  Nel **Aggiungi riferimento** finestra di dialogo, nell'elenco dei tipi riferimento, espandere **Windows Universal**e quindi selezionare **estensioni**. Selezionare infine il **SDK nativo Math** casella di controllo e quindi scegliere il **OK** pulsante.
+4. Nel **Aggiungi riferimento** finestra di dialogo, nell'elenco dei tipi riferimento, espandere **Windows Universal**e quindi selezionare **estensioni**. Selezionare infine il **SDK nativo Math** casella di controllo e quindi scegliere il **OK** pulsante.
   
-5.  Visualizzare le proprietà del progetto per NativeMathSDKSample.  
+5. Visualizzare le proprietà del progetto per NativeMathSDKSample.  
   
-     Le proprietà definite in *NativeMathSDK.props* sono state applicate quando è stato aggiunto il riferimento. È possibile verificare le proprietà sono state applicate esaminando il **directory di VC + +** proprietà del progetto **delle proprietà di configurazione**.  
+    Le proprietà definite in *NativeMathSDK.props* sono state applicate quando è stato aggiunto il riferimento. È possibile verificare le proprietà sono state applicate esaminando il **directory di VC + +** proprietà del progetto **delle proprietà di configurazione**.  
   
-6.  Nelle **Esplora soluzioni**aprire **MainPage. XAML**e quindi usare il seguente XAML per sostituire il contenuto:  
+6. Nelle **Esplora soluzioni**aprire **MainPage. XAML**e quindi usare il seguente XAML per sostituire il contenuto:  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
   
-7.  Update *MainPage* in modo che corrispondano questo codice:  
+7. Update *MainPage* in modo che corrispondano questo codice:  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
   
 8. Update *MainPage.xaml.cpp* in modo che corrispondano questo codice:  
   
@@ -172,7 +172,7 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
   
      Viene visualizzato il risultato corretto.  
   
- Questa procedura dettagliata ha illustrato come creare e usare un SDK di estensione per chiamare in un' [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] libreria e non -[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] libreria.  
+    Questa procedura dettagliata ha illustrato come creare e usare un SDK di estensione per chiamare in un' [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] libreria e non -[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] libreria.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
   

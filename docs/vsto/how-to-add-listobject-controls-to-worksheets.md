@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672671"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949253"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedura: aggiungere controlli ListObject a fogli di lavoro
   È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nei progetti a livello di documento.  
@@ -32,13 +32,13 @@ ms.locfileid: "35672671"
   
  Questo argomento descrive le attività seguenti:  
   
--   [Aggiungere controlli ListObject in fase di progettazione](#designtime)  
+- [Aggiungere controlli ListObject in fase di progettazione](#designtime)  
   
--   [Aggiungere controlli ListObject in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)  
+- [Aggiungere controlli ListObject in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)  
   
--   [Aggiungere controlli ListObject in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)  
+- [Aggiungere controlli ListObject in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)  
   
- Per altre informazioni sulle <xref:Microsoft.Office.Tools.Excel.ListObject> controlli, vedere [controllo ListObject](../vsto/listobject-control.md).  
+  Per altre informazioni sulle <xref:Microsoft.Office.Tools.Excel.ListObject> controlli, vedere [controllo ListObject](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Aggiungere controlli ListObject in fase di progettazione  
  Esistono diversi modi per aggiungere controlli <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in un progetto a livello di documento in fase di progettazione: da Excel, dalla **casella degli strumenti**di Visual Studio e dalla finestra **Origini dati** .  

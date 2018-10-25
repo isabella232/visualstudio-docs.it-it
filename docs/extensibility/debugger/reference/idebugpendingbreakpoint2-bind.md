@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind | Documenti Microsoft
+title: IDebugPendingBreakpoint2::Bind | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4170fce2fad18abdf54508ee7377c96367f3bf83
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e822686cf331794ff221c94ccdbd3ddd25e2f6bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933703"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 Associa il punto di interruzione in sospeso a uno o più percorsi di codice.  
@@ -39,12 +39,12 @@ int Bind();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stata eliminata.  
   
 ## <a name="remarks"></a>Note  
- Quando viene chiamato questo metodo, un motore di debug (DE) deve tenta di associare il punto di interruzione in sospeso per tutti i percorsi di codice corrispondente.  
+ Quando viene chiamato questo metodo, un motore di debug (DE) tentare di associare tutte le posizioni di codice che corrispondono a questo punto di interruzione in sospeso.  
   
- Dopo che questo metodo restituisce, il chiamante deve attendere che gli eventi che indica che il punto di interruzione in sospeso è stato associato o è in errore prima di presumere che le chiamate al [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)nei metodi enumererà tutti limite o errore punti di interruzione, rispettivamente.  
+ Quando questo metodo termina, il chiamante deve attendere gli eventi che indicano che il punto di interruzione in sospeso è stato associato o è in errore prima di supporre che le chiamate al [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)nei metodi enumererà tutte limite o errore dei punti di interruzione, rispettivamente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

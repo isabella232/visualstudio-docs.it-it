@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 897de3b54781cf5738e80ffcc878fd8d34f6168f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951093"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 
@@ -50,7 +50,6 @@ Requisiti:
 -   I computer client devono avere accesso a Internet.
 
 -   Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.
-
 
 Avvertenze:
 
@@ -93,17 +92,17 @@ Prima di poter creare il set di contenuti di base, è necessario disinstallare t
 
 #### <a name="to-uninstall-local-help"></a>Per disinstallare la Guida locale
 
-1.  In Help Viewer scegliere la scheda **Gestisci contenuto**.
+1. In Help Viewer scegliere la scheda **Gestisci contenuto**.
 
-2.  Passare al set di documenti di Visual Studio.
+2. Passare al set di documenti di Visual Studio.
 
-3.  Scegliere **Rimuovi** accanto a ogni elemento secondario.
+3. Scegliere **Rimuovi** accanto a ogni elemento secondario.
 
-4.  Scegliere **Aggiorna** per disinstallare.
+4. Scegliere **Aggiorna** per disinstallare.
 
-5.  Passare a *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* e verificare che la cartella contenga solo il file *catalogType.xml*.
+5. Passare a *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* e verificare che la cartella contenga solo il file *catalogType.xml*.
 
- Dopo aver rimosso tutto il contenuto della Guida locale di Visual Studio installato in precedenza, si è pronti per scaricare il set di contenuti di base.
+   Dopo aver rimosso tutto il contenuto della Guida locale di Visual Studio installato in precedenza, si è pronti per scaricare il set di contenuti di base.
 
 #### <a name="to-download-the-content"></a>Per scaricare il contenuto
 
@@ -112,7 +111,6 @@ Prima di poter creare il set di contenuti di base, è necessario disinstallare t
 2.  In **Documentazione consigliata** o **Documentazione disponibile** passare ai set di documentazione che si vuole scaricare e quindi scegliere **Aggiungi**.
 
 3.  Scegliere **Aggiorna**.
-
 
 Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai computer client.
 

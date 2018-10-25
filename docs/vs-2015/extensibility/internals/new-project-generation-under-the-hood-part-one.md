@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941225"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generazione di un nuovo progetto: dietro le quinte, parte 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>Una rapida panoramica  
  È possibile modificare il **nuovo progetto** dialogo casella e creare un nuovo modello di progetto utente.  
   
-1.  Aggiungere una sottocartella del nodo progetto personalizzato nella cartella 14.0\Common7\IDE\ProjectTemplates\CSharp \Programmi\Microsoft Visual Studio.  
+1. Aggiungere una sottocartella del nodo progetto personalizzato nella cartella 14.0\Common7\IDE\ProjectTemplates\CSharp \Programmi\Microsoft Visual Studio.  
   
-2.  Creare un file MyProject.vstdir nella cartella nodo progetto personalizzato usando qualsiasi editor di testo.  
+2. Creare un file MyProject.vstdir nella cartella nodo progetto personalizzato usando qualsiasi editor di testo.  
   
-3.  Aggiungere le righe seguenti al file. vstdir:  
+3. Aggiungere le righe seguenti al file. vstdir:  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  Salvare e chiudere il file. vstdir.  
+4. Salvare e chiudere il file. vstdir.  
   
-5.  Creare un file MyProject.vstemplate nella cartella nodo progetto personalizzato usando qualsiasi editor di testo.  
+5. Creare un file MyProject.vstemplate nella cartella nodo progetto personalizzato usando qualsiasi editor di testo.  
   
-6.  Nel file con estensione vstemplate, aggiungere le righe seguenti:  
+6. Nel file con estensione vstemplate, aggiungere le righe seguenti:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  Salvare file the.vstemplate e chiudere l'editor.  
+7. Salvare file the.vstemplate e chiudere l'editor.  
   
-8.  Inviare il file con estensione vstemplate in una nuova cartella MyProjectNode\MyProject.zip compressa.  
+8. Inviare il file con estensione vstemplate in una nuova cartella MyProjectNode\MyProject.zip compressa.  
   
 9. Nella finestra di comando di Visual Studio, digitare:  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Aprire Visual Studio.  
+   Aprire Visual Studio.  
   
-1.  Aprire il **nuovo progetto** finestra di dialogo casella ed espandere le **Visual c#** nodo del progetto.  
+10. Aprire il **nuovo progetto** finestra di dialogo casella ed espandere le **Visual c#** nodo del progetto.  
   
- ![Nodo progetto personalizzato](../../extensibility/internals/media/myprojectnode.png "nodo progetto personalizzato")  
+    ![Nodo progetto personalizzato](../../extensibility/internals/media/myprojectnode.png "nodo progetto personalizzato")  
   
- **Nodo progetto personalizzato** visualizzato come nodo figlio di Visual c# appena sotto il nodo di Windows.  
+    **Nodo progetto personalizzato** visualizzato come nodo figlio di Visual c# appena sotto il nodo di Windows.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Generazione di un nuovo progetto: dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -29,12 +29,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76abbde711e73598eb8c7bcfde052335222d0822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931838"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Browser, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ Consente di impostare le opzioni per il Web browser interno e per Internet Explo
  Visualizza origine in  
  Consente di impostare l'editor usato per aprire una pagina Web quando si sceglie **Visualizza origine** nella pagina dal Web browser interno.  
   
--   **Editor standard** Selezionare questa opzione per visualizzare l'origine nella [scrittura del codice](../../ide/writing-code-in-the-code-and-text-editor.md).  
+- **Editor standard** Selezionare questa opzione per visualizzare l'origine nella [scrittura del codice](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
--   **Editor HTML** Selezionare questa opzione per visualizzare l'origine nella [finestra di progettazione HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.  
+- **Editor HTML** Selezionare questa opzione per visualizzare l'origine nella [finestra di progettazione HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.  
   
--   **Editor esterno** Selezionare questa opzione per visualizzare l'origine in un altro editor. Specificare il percorso dell'editor scelto, ad esempio notepad.exe.  
+- **Editor esterno** Selezionare questa opzione per visualizzare l'origine in un altro editor. Specificare il percorso dell'editor scelto, ad esempio notepad.exe.  
   
- Opzioni di Internet Explorer  
- Selezionare questa opzione per modificare le opzioni di Internet Explorer nella finestra di dialogo **Proprietà Internet**. Le modifiche apportate in questa finestra di dialogo influiscono sul Web browser interno e sulle istanze di Internet Explorer avviate all'esterno dell'IDE di Visual Studio, ad esempio dal menu Start.  
+  Opzioni di Internet Explorer  
+  Selezionare questa opzione per modificare le opzioni di Internet Explorer nella finestra di dialogo **Proprietà Internet**. Le modifiche apportate in questa finestra di dialogo influiscono sul Web browser interno e sulle istanze di Internet Explorer avviate all'esterno dell'IDE di Visual Studio, ad esempio dal menu Start.  
   
 > [!NOTE]
 >  Usare la finestra di dialogo Esplora con per sostituire il Web browser interno di Visual Studio, vale a dire una versione di Internet Explorer, con un altro Web browser esterno.  

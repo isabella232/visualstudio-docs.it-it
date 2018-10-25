@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294047"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940581"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debug JIT in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ L'attività da eseguire quando viene visualizzato il Visual Studio Just-in-Time 
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Per abilitare o disabilitare il debug JIT  
   
-1.  Aprire Visual Studio. Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Aprire Visual Studio. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **le opzioni** finestra di dialogo, seleziona la **debug** cartella.  
+2. Nel **le opzioni** finestra di dialogo, seleziona la **debug** cartella.  
   
-3.  Nel **Debugging** cartella, selezionare la **Just-In-Time** pagina.  
+3. Nel **Debugging** cartella, selezionare la **Just-In-Time** pagina.  
   
-4.  Nel **Attiva debug JIT per questi tipi di codice** , selezionare o deselezionare i tipi di programma relativi: **gestito**, **Native**, o **Script**.  
+4. Nel **Attiva debug JIT per questi tipi di codice** , selezionare o deselezionare i tipi di programma relativi: **gestito**, **Native**, o **Script**.  
   
-     Per disabilitare il debug JIT, è necessario disporre dei privilegi di amministratore. L'attivazione del debug JIT richiede la modifica di una chiave del Registro di sistema e per eseguire tale operazione sono necessari i privilegi di amministratore.  
+    Per disabilitare il debug JIT, è necessario disporre dei privilegi di amministratore. L'attivazione del debug JIT richiede la modifica di una chiave del Registro di sistema e per eseguire tale operazione sono necessari i privilegi di amministratore.  
   
-5.  Fare clic su **OK**.  
+5. Fare clic su **OK**.  
   
- Il debug JIT può comunque essere abilitato anche se Visual Studio non è più presente nel computer. Quando non è installato Visual Studio, è possibile disabilitare il debug da Visual Studio Just-In-Time **opzioni** nella finestra di dialogo. In questo caso, è possibile disabilitare il debug JIT modificando il Registro di sistema di Windows.  
+   Il debug JIT può comunque essere abilitato anche se Visual Studio non è più presente nel computer. Quando non è installato Visual Studio, è possibile disabilitare il debug da Visual Studio Just-In-Time **opzioni** nella finestra di dialogo. In questo caso, è possibile disabilitare il debug JIT modificando il Registro di sistema di Windows.  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Per disabilitare il debug JIT modificando il Registro di sistema  
   
