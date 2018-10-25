@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b74e8a988505c5386b444df27f7726a8ceb51a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870778"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Creazione di applicazioni ClickOnce per altri utenti per la distribuzione
 Non tutti gli sviluppatori che creano le distribuzioni di ClickOnce prevede di distribuire le applicazioni stesse. Molti di essi sufficiente includere la loro applicazione con ClickOnce e quindi passare i file a un cliente, ad esempio un'azienda di grandi dimensioni. Il cliente si assume la responsabilità per ospitare l'applicazione nella propria rete. Questo argomento illustra alcuni dei problemi relativi a tali distribuzioni nelle versioni di .NET Framework precedenti alla versione 3.5. Viene quindi illustrata una nuova soluzione fornita utilizzando la nuova funzionalità "Usa manifesto per l'attendibilità" in .NET Framework 3.5. Infine, si conclude con strategie consigliate per la creazione di distribuzioni di ClickOnce per i clienti che ancora usano versioni precedenti di .NET Framework.  
@@ -86,13 +86,13 @@ Non tutti gli sviluppatori che creano le distribuzioni di ClickOnce prevede di d
   
  Esistono tre modi che il cliente possa firmare il manifesto di distribuzione in questa situazione:  
   
-1.  Il cliente può usare un certificato valido emesso da un'autorità di certificazione (CA).  
+1. Il cliente può usare un certificato valido emesso da un'autorità di certificazione (CA).  
   
-2.  Una variante di questo approccio, il cliente può scegliere di firmare il manifesto della distribuzione con un certificato autofirmato. Lo svantaggio è che causerà l'applicazione visualizzare le parole "Autore sconosciuto" quando l'utente viene richiesto se si desidera installarlo. Tuttavia, il vantaggio è che impedisce ai clienti più piccoli di dover spendere tempo e denaro richiesto per un certificato emesso da un'autorità di certificazione.  
+2. Una variante di questo approccio, il cliente può scegliere di firmare il manifesto della distribuzione con un certificato autofirmato. Lo svantaggio è che causerà l'applicazione visualizzare le parole "Autore sconosciuto" quando l'utente viene richiesto se si desidera installarlo. Tuttavia, il vantaggio è che impedisce ai clienti più piccoli di dover spendere tempo e denaro richiesto per un certificato emesso da un'autorità di certificazione.  
   
-3.  Infine, lo sviluppatore può includere il proprio certificato autofirmato nel pacchetto di installazione. Introduce i potenziali problemi con identità di applicazione illustrati in precedenza in questo argomento.  
+3. Infine, lo sviluppatore può includere il proprio certificato autofirmato nel pacchetto di installazione. Introduce i potenziali problemi con identità di applicazione illustrati in precedenza in questo argomento.  
   
- Lo svantaggio per il metodo di installazione distribuzione progetto è il tempo e denaro normalmente necessario per compilare un'applicazione di distribuzione personalizzato.  
+   Lo svantaggio per il metodo di installazione distribuzione progetto è il tempo e denaro normalmente necessario per compilare un'applicazione di distribuzione personalizzato.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Generare il manifesto di distribuzione con clienti  
  Una strategia di distribuzione possibili terzo consiste nell'affidare disattivato solo l'applicazione dell'applicazione e i file manifesto al cliente. In questo scenario, il cliente è responsabile dell'uso di .NET Framework SDK per generare e firmare il manifesto della distribuzione.  

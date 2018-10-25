@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DiagnoseWebDebuggingError | Documenti Microsoft
+title: IDebugCoreServer3::DiagnoseWebDebuggingError | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0facdbd5da7d17061039e0a9e7faed2be3bbe4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b450af1437f9522509913d34976e648da31b91fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843340"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
-Tentativo di determinare il motivo per cui un auto-attach non riuscita.  
+Per determinare il motivo per cui un auto-attach tentativi non riusciti.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,15 +41,15 @@ int DiagnoseWebDebuggingError(
   
 #### <a name="parameters"></a>Parametri  
  `pszUrl`  
- [in] Non è attualmente utilizzato; deve sempre essere impostato su un valore null.  
+ [in] Attualmente non usato; deve sempre essere impostata su un valore null.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Altri codici restituiti tipici sono i seguenti:  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Di seguito sono indicati altri codici restituiti tipici:  
   
 |Codice|Descrizione|  
 |----------|-----------------|  
-|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Impossibile determinare perché il server remoto non è stato possibile avviare il debug.|  
-|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Impossibile eseguire il debug in un server remoto, probabilmente a causa di autorizzazioni insufficienti o perché non è abilitato il verbo DEBUG.|  
+|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Non è possibile determinare il motivo per cui il server remoto non è stato possibile avviare il debug.|  
+|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Impossibile eseguire il debug sul server remoto, probabilmente a causa di autorizzazioni insufficienti o perché il verbo DEBUG non è abilitato.|  
 |`E_WEBDBG_DEBUG_VERB_BLOCKED`|Il server web è stato bloccato e blocca il verbo DEBUG, che è necessario abilitare il debug.|  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825621"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Procedura: individuare il nome del processo ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per connettersi a un'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in esecuzione, è necessario conoscere il nome del processo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
--   Se si esegue IIS 6.0 o IIS 7.0, il nome sarà w3wp.exe.  
+- Se si esegue IIS 6.0 o IIS 7.0, il nome sarà w3wp.exe.  
   
--   Se si esegue una versione precedente di IIS, il nome sarà invece aspnet_wp.exe.  
+- Se si esegue una versione precedente di IIS, il nome sarà invece aspnet_wp.exe.  
   
- Per le applicazioni compilate usando [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] o versioni successive, il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] codice può risiedere nel file system ed eseguire il server di prova WebDev.WebServer.exe. In tal caso, è necessario connettersi a WebDev.WebServer.exe anziché al processo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Questo scenario è valido solo per il debug locale.  
+  Per le applicazioni compilate usando [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] o versioni successive, il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] codice può risiedere nel file system ed eseguire il server di prova WebDev.WebServer.exe. In tal caso, è necessario connettersi a WebDev.WebServer.exe anziché al processo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Questo scenario è valido solo per il debug locale.  
   
- Le applicazioni ASP più obsolete vengono eseguite nel processo IIS inetinfo.exe quando sono in esecuzione all'interno del processo.  
+  Le applicazioni ASP più obsolete vengono eseguite nel processo IIS inetinfo.exe quando sono in esecuzione all'interno del processo.  
   
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902477"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opzioni, Editor di testo, Base (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della ca
  **Riformatta il listato di codice**  
  L'editor di testo riformatta il codice come appropriato. Quando questa opzione è selezionata, l'editor del codice:  
   
--   Allinea il codice nella posizione di tabulazione corretta  
+- Allinea il codice nella posizione di tabulazione corretta  
   
--   Imposta la combinazione di maiuscole/minuscole corretta per parole chiave, variabili e oggetti  
+- Imposta la combinazione di maiuscole/minuscole corretta per parole chiave, variabili e oggetti  
   
--   Aggiunge un'istruzione `Then` mancante per un'istruzione `If...Then`  
+- Aggiunge un'istruzione `Then` mancante per un'istruzione `If...Then`  
   
--   Aggiunge le parentesi alle chiamate di funzione  
+- Aggiunge le parentesi alle chiamate di funzione  
   
--   Aggiunge le virgolette finali mancanti nelle stringhe  
+- Aggiunge le virgolette finali mancanti nelle stringhe  
   
--   Riformatta la notazione esponenziale  
+- Riformatta la notazione esponenziale  
   
--   Riformatta le date  
+- Riformatta le date  
   
- **Abilita modalità struttura**  
- Quando si apre un file nell'editor del codice, è possibile visualizzare il documento in modalità struttura. Per altre informazioni, vedere [Struttura](../../ide/outlining.md). Quando questa opzione è selezionata, la funzionalità di struttura viene attivata all'apertura di un file.  
+  **Abilita modalità struttura**  
+  Quando si apre un file nell'editor del codice, è possibile visualizzare il documento in modalità struttura. Per altre informazioni, vedere [Struttura](../../ide/outlining.md). Quando questa opzione è selezionata, la funzionalità di struttura viene attivata all'apertura di un file.  
   
- **Inserimento automatico di membri Interface e MustOverride**  
- Quando si esegue il commit di un'istruzione `Implements` o di un'istruzione `Inherits` per una classe, l'editor di testo inserisce prototipi per i membri che devono essere rispettivamente implementati o sottoposti a override.  
+  **Inserimento automatico di membri Interface e MustOverride**  
+  Quando si esegue il commit di un'istruzione `Implements` o di un'istruzione `Inherits` per una classe, l'editor di testo inserisce prototipi per i membri che devono essere rispettivamente implementati o sottoposti a override.  
   
- **Mostra separatori di riga routine**  
- L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una linea nei file di origine con estensione vb del progetto nelle posizioni indicate nella tabella seguente:  
+  **Mostra separatori di riga routine**  
+  L'editor di testo indica l'ambito visivo delle routine. Viene tracciata una linea nei file di origine con estensione vb del progetto nelle posizioni indicate nella tabella seguente:  
   
 |Posizione nel file di origine vb|Esempio di posizione della linea|  
 |---------------------------------|------------------------------|  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 58f103ae1dcf445c5bdfe322eeea7a88a7b25683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370549"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843275"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Configurazione di inizializzazione e i metadati della finestra di progettazione
 Modifica degli attributi dei metadati e il filtro associato a una finestra di progettazione o un componente della finestra di progettazione fornisce un meccanismo per le applicazioni definire quali strumenti vengono usati da una particolare finestra di progettazione per gestire diversi <xref:System.Type> oggetti (ad esempio strutture dei dati, le classi, o entità con interfaccia grafica), quando la finestra di progettazione è disponibile, e come IDE di Visual Studio è configurato per supportare la finestra di progettazione (per istanza quali **casella degli strumenti** categoria o scheda è disponibile).  
@@ -32,39 +32,39 @@ Modifica degli attributi dei metadati e il filtro associato a una finestra di pr
 ### <a name="customize-initialization"></a>Personalizzare l'inizializzazione  
  Personalizzazione di una finestra di progettazione, un componente o un'area di progettazione, include:  
   
-1.  Modifica i metadati della finestra di progettazione e la modifica in modo efficace la modalità di una determinata <xref:System.Type> sono accessibili o convertiti.  
+1. Modifica i metadati della finestra di progettazione e la modifica in modo efficace la modalità di una determinata <xref:System.Type> sono accessibili o convertiti.  
   
-     Questa operazione viene in genere eseguita tramite il <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.TypeConverter> meccanismi.  
+    Questa operazione viene in genere eseguita tramite il <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.TypeConverter> meccanismi.  
   
-     Ad esempio, quando <xref:System.Windows.Forms>-vengono inizializzati basata su finestre di progettazione, il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente modifica il <xref:System.Drawing.Design.UITypeEditor> per <xref:System.Web.UI.WebControls.Image> oggetti utilizzati con la finestra di progettazione per utilizzare il gestore di risorse per ottenere le bitmap anziché nel file system.  
+    Ad esempio, quando <xref:System.Windows.Forms>-vengono inizializzati basata su finestre di progettazione, il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente modifica il <xref:System.Drawing.Design.UITypeEditor> per <xref:System.Web.UI.WebControls.Image> oggetti utilizzati con la finestra di progettazione per utilizzare il gestore di risorse per ottenere le bitmap anziché nel file system.  
   
-2.  L'integrazione con l'ambiente, ad esempio, la sottoscrizione di eventi o per ottenere le informazioni di configurazione di progetto. È possibile ottenere informazioni sulla configurazione di progetto e sottoscrivere eventi ottenendo il <xref:System.ComponentModel.Design.ITypeResolutionService> interfaccia.  
+2. L'integrazione con l'ambiente, ad esempio, la sottoscrizione di eventi o per ottenere le informazioni di configurazione di progetto. È possibile ottenere informazioni sulla configurazione di progetto e sottoscrivere eventi ottenendo il <xref:System.ComponentModel.Design.ITypeResolutionService> interfaccia.  
   
-3.  Modifica dell'ambiente utente attivando appropriato **casella degli strumenti** categorie o limitando l'applicabilità della finestra di progettazione tramite l'applicazione di un'istanza del <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe nella finestra di progettazione.  
+3. Modifica dell'ambiente utente attivando appropriato **casella degli strumenti** categorie o limitando l'applicabilità della finestra di progettazione tramite l'applicazione di un'istanza del <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe nella finestra di progettazione.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Inizializzazione della finestra di progettazione da un pacchetto VSPackage  
  Un pacchetto VSPackage deve gestire l'inizializzazione della finestra di progettazione da:  
   
-1.  Creazione di un oggetto che implementa il <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe.  
+1. Creazione di un oggetto che implementa il <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe.  
   
-    > [!NOTE]
-    >  Il <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe non deve essere implementata mai sullo stesso oggetto come il <xref:Microsoft.VisualStudio.Shell.Package> classe.  
+   > [!NOTE]
+   >  Il <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe non deve essere implementata mai sullo stesso oggetto come il <xref:Microsoft.VisualStudio.Shell.Package> classe.  
   
-2.  Registrare la classe che implementa <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> come fornire supporto per le estensioni della finestra di progettazione del pacchetto VSPackage applicando le istanze di <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> per la classe che fornisce l'implementazione di VSPackage del <xref:Microsoft.VisualStudio.Shell.Package> .  
+2. Registrare la classe che implementa <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> come fornire supporto per le estensioni della finestra di progettazione del pacchetto VSPackage applicando le istanze di <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> per la classe che fornisce l'implementazione di VSPackage del <xref:Microsoft.VisualStudio.Shell.Package> .  
   
- Ogni volta che viene creato qualsiasi finestra di progettazione o un componente della finestra di progettazione, il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente:  
+   Ogni volta che viene creato qualsiasi finestra di progettazione o un componente della finestra di progettazione, il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente:  
   
-1.  Accede a ogni provider di estensione dell'area di progettazione registrato.  
+3. Accede a ogni provider di estensione dell'area di progettazione registrato.  
   
-2.  Crea e inizializza un'istanza di ciascun provider di estensione dell'area di progettazione <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> oggetto  
+4. Crea e inizializza un'istanza di ciascun provider di estensione dell'area di progettazione <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> oggetto  
   
-3.  Ogni provider di estensione dell'area di progettazione chiama <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> metodo o <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> metodo (se necessario).  
+5. Ogni provider di estensione dell'area di progettazione chiama <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> metodo o <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> metodo (se necessario).  
   
- Quando si implementa il <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> dell'oggetto come membro di un pacchetto VSPackage, è importante comprendere che:  
+   Quando si implementa il <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> dell'oggetto come membro di un pacchetto VSPackage, è importante comprendere che:  
   
-1.  Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente non fornisce alcun controllo su quali metadati o altre impostazioni di configurazione particolari `DesignSurfaceExtension` modifica del provider. È possibile che due o più `DesignSurfaceExtension` provider modifica la stessa funzionalità della finestra di progettazione in molti modi in conflitto con la modifica finale in definitiva. È indeterminato quale modifica viene applicata ultima.  
+6. Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente non fornisce alcun controllo su quali metadati o altre impostazioni di configurazione particolari `DesignSurfaceExtension` modifica del provider. È possibile che due o più `DesignSurfaceExtension` provider modifica la stessa funzionalità della finestra di progettazione in molti modi in conflitto con la modifica finale in definitiva. È indeterminato quale modifica viene applicata ultima.  
   
-2.  È possibile limitare in modo esplicito un'implementazione del <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> oggetti nelle finestre di progettazione specifiche, applicando le istanze di <xref:System.ComponentModel.ToolboxItemFilterAttribute> al tipo di implementazione. Per ulteriori informazioni sul **casella degli strumenti** elemento filtro, vedere la <xref:System.ComponentModel.ToolboxItemFilterAttribute> e <xref:System.ComponentModel.ToolboxItemFilterType>.  
+7. È possibile limitare in modo esplicito un'implementazione del <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> oggetti nelle finestre di progettazione specifiche, applicando le istanze di <xref:System.ComponentModel.ToolboxItemFilterAttribute> al tipo di implementazione. Per ulteriori informazioni sul **casella degli strumenti** elemento filtro, vedere la <xref:System.ComponentModel.ToolboxItemFilterAttribute> e <xref:System.ComponentModel.ToolboxItemFilterType>.  
   
 ## <a name="additional-metadata-provisioning"></a>Il provisioning di metadati aggiuntivi  
  Un pacchetto VSPackage può modificare la configurazione di una finestra di progettazione o un componente della finestra di progettazione diverso da in fase di progettazione.  
@@ -75,23 +75,23 @@ Modifica degli attributi dei metadati e il filtro associato a una finestra di pr
   
  Modifiche fornite da un'istanza di <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> applicato a un'implementazione di VSPackage <xref:Microsoft.VisualStudio.Shell.Package> può avere uno dei due ambiti:  
   
--   Globale, per tutte le nuove istanze di un dato componente  
+- Globale, per tutte le nuove istanze di un dato componente  
   
--   Locale, si riferisce solo all'istanza del componente creato in un'area di progettazione fornita da VSPackage corrente.  
+- Locale, si riferisce solo all'istanza del componente creato in un'area di progettazione fornita da VSPackage corrente.  
   
- Il `IsGlobal` proprietà del <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> applicato a un'implementazione di VSPackage istanza <xref:Microsoft.VisualStudio.Shell.Package> determina l'ambito.  
+  Il `IsGlobal` proprietà del <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> applicato a un'implementazione di VSPackage istanza <xref:Microsoft.VisualStudio.Shell.Package> determina l'ambito.  
   
- Applicando l'attributo a un'implementazione di <xref:Microsoft.VisualStudio.Shell.Package> con il <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> proprietà delle <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> oggetto impostato su `true`, come indicato di seguito, viene modificato il browser per l'intero [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente:  
+  Applicando l'attributo a un'implementazione di <xref:Microsoft.VisualStudio.Shell.Package> con il <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> proprietà delle <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> oggetto impostato su `true`, come indicato di seguito, viene modificato il browser per l'intero [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente:  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
- Se il flag globale è stato impostato su `false`, quindi la modifica dei metadati è locale rispetto alla finestra di progettazione corrente è supportata dal pacchetto VSPackage corrente:  
+  Se il flag globale è stato impostato su `false`, quindi la modifica dei metadati è locale rispetto alla finestra di progettazione corrente è supportata dal pacchetto VSPackage corrente:  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
 > [!NOTE]
 >  Attualmente, l'area di progettazione supporta solo la creazione di componenti e pertanto solo i componenti possono avere metadati locali. Nell'esempio precedente, abbiamo stavamo tenta di modificare una proprietà, ad esempio il `Color` proprietà di un oggetto. Se `false` passato per il flag globale `CustomBrowser` mai vengono visualizzati perché la finestra di progettazione crea mai un'istanza di `Color`. Impostazione del flag globale su `false` è utile per i componenti, ad esempio controlli, timer e le finestre di dialogo.  

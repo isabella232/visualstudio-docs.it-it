@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be0fc7df23e7164371e95e92fbad1a32026284df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cc22f6bc8f7e863f0808c05b0b5cba37ba79fbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810593"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Non generare tipi di eccezione riservati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -42,31 +43,31 @@ ms.locfileid: "49227073"
 ## <a name="rule-description"></a>Descrizione della regola
  I seguenti tipi di eccezione sono troppo generici per fornire informazioni sufficienti per l'utente:
 
--   <xref:System.Exception?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.SystemException?displayProperty=fullName>
 
- I seguenti tipi di eccezione sono riservati e devono essere generati solo da common language runtime:
+  I seguenti tipi di eccezione sono riservati e devono essere generati solo da common language runtime:
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- **Non generare eccezioni generali**
+  **Non generare eccezioni generali**
 
- Se si genera un tipo di eccezione generali, ad esempio <xref:System.Exception> o <xref:System.SystemException> in una libreria o framework, saranno costretti a intercettare tutte le eccezioni, incluse le eccezioni sconosciute che non si conosce la modalità di gestione.
+  Se si genera un tipo di eccezione generali, ad esempio <xref:System.Exception> o <xref:System.SystemException> in una libreria o framework, saranno costretti a intercettare tutte le eccezioni, incluse le eccezioni sconosciute che non si conosce la modalità di gestione.
 
- Al contrario, generare un tipo più derivato che esiste già nel framework, o creare un proprio tipo che deriva da <xref:System.Exception>.
+  Al contrario, generare un tipo più derivato che esiste già nel framework, o creare un proprio tipo che deriva da <xref:System.Exception>.
 
- **Generare eccezioni specifiche**
+  **Generare eccezioni specifiche**
 
- Nella tabella seguente vengono illustrati parametri e le eccezioni da generare quando si convalida il parametro, tra cui il parametro del valore nella funzione di accesso set di una proprietà:
+  Nella tabella seguente vengono illustrati parametri e le eccezioni da generare quando si convalida il parametro, tra cui il parametro del valore nella funzione di accesso set di una proprietà:
 
 |Descrizione dei parametri|Eccezione|
 |---------------------------|---------------|

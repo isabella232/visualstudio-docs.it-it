@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::ResumeProcess | Documenti Microsoft
+title: IDebugEngineLaunch2::ResumeProcess | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 988cb08db3a60cdf2d0f11955d5acc8719c6560f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c24ff23dc7963dca3dddf3a0e725858b3a704d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875360"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
-Esecuzione dei processi viene ripreso.  
+Riprende l'esecuzione del processo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,13 +41,13 @@ int ResumeProcess (
   
 #### <a name="parameters"></a>Parametri  
  `pProcess`  
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo di essere ripreso.  
+ [in] Un' [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo di essere ripreso.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene chiamato dopo che un processo è stato avviato con una chiamata al [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metodo.  
+ Questo metodo viene chiamato dopo che un processo è stato avviato con una chiamata per il [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   

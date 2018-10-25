@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 04ffdd5d0256ae0fc42b89dfa850fb0ae2d36748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818666"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Debug di progetti DLL da Visual Studio
 I seguenti modelli di Visual Studio creano DLL:  
@@ -54,24 +54,24 @@ I seguenti modelli di Visual Studio creano DLL:
 ##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Ways to debug the DLL  
  In ciascun progetto descritto in questa sezione viene creata una DLL. Le DLL non possono essere eseguite direttamente, ma devono essere chiamate da un'applicazione, in genere un file EXE. Per altre informazioni, vedere [Creating and Managing Visual C++ Projects](/cpp/ide/creating-and-managing-visual-cpp-projects). L'applicazione chiamante può soddisfare uno dei criteri seguenti:  
   
--   Essere un'applicazione incorporata in un altro progetto della stessa soluzione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] contenente la libreria di classi.  
+- Essere un'applicazione incorporata in un altro progetto della stessa soluzione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] contenente la libreria di classi.  
   
--   Essere un'applicazione esistente già distribuita in un computer di test o di produzione.  
+- Essere un'applicazione esistente già distribuita in un computer di test o di produzione.  
   
--   Trovarsi sul Web ed essere accessibile tramite un URL.  
+- Trovarsi sul Web ed essere accessibile tramite un URL.  
   
--   Essere un'applicazione Web contenente una pagina Web che incorpora la DLL.  
+- Essere un'applicazione Web contenente una pagina Web che incorpora la DLL.  
   
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugging the calling application  
 Per eseguire il debug di una DLL, iniziare con il debug dell'applicazione chiamante, che in genere è un file EXE o un'applicazione Web. Questo debug può essere eseguito in vari modi.  
   
--   Se è disponibile un progetto per l'applicazione chiamante, è possibile aprirlo e avviare l'esecuzione dal menu **Debug** . Per altre informazioni, vedere [Guida introduttiva con il debugger](../debugger/getting-started-with-the-debugger.md).  
+- Se è disponibile un progetto per l'applicazione chiamante, è possibile aprirlo e avviare l'esecuzione dal menu **Debug** . Per altre informazioni, vedere [Guida introduttiva con il debugger](../debugger/getting-started-with-the-debugger.md).  
   
--   Se l'applicazione chiamante è un programma già distribuito in un computer di test o di produzione ed è già in esecuzione, è possibile stabilire una connessione. Utilizzare questa modalità se la DLL è un controllo ospitato in Internet Explorer oppure un controllo in una pagina Web. Per altre informazioni, vedere [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Se l'applicazione chiamante è un programma già distribuito in un computer di test o di produzione ed è già in esecuzione, è possibile stabilire una connessione. Utilizzare questa modalità se la DLL è un controllo ospitato in Internet Explorer oppure un controllo in una pagina Web. Per altre informazioni, vedere [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
--   È possibile eseguire il debug dal progetto di DLL. Per altre informazioni, vedere [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
+- È possibile eseguire il debug dal progetto di DLL. Per altre informazioni, vedere [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   È possibile eseguire il debug dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [finestra controllo immediato](#vxtskdebuggingdllprojectstheimmediatewindow). In tal caso, la finestra **Controllo immediato** svolgerà il ruolo dell'applicazione.  
+- È possibile eseguire il debug dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [finestra controllo immediato](#vxtskdebuggingdllprojectstheimmediatewindow). In tal caso, la finestra **Controllo immediato** svolgerà il ruolo dell'applicazione.  
   
 Prima di iniziare il debug dell'applicazione chiamante, è possibile impostare un punto di interruzione nella libreria di classi. Per altre informazioni, vedere [Using Breakpoints](../debugger/using-breakpoints.md). Una volta raggiunto il punto di interruzione, è possibile eseguire il codice un'istruzione alla volta, osservandone l'esecuzione in ciascuna riga fino a isolare il problema. Per altre informazioni, vedere [esplorare il codice nel debugger](../debugger/navigating-through-code-with-the-debugger.md).
   
@@ -110,7 +110,7 @@ Se si esegue il debug di una DLL esterna al progetto, le funzionalità di debug 
 
 Il progetto deve essere in grado di trovare la DLL e il file con estensione pdb utilizzato per eseguire il debug. È possibile creare un'attività di compilazione personalizzata per copiare questi file per il  **\<cartella di progetto > \Debug** cartella di output, oppure è possibile copiare manualmente i file nella cartella di output.
 
-È possibile impostare facilmente percorsi dei file di intestazione e *.lib nelle pagine delle proprietà (fare clic sul progetto C++ e scegliere **visualizzare le proprietà**, quindi scegliere **tutte le configurazioni**) senza la necessità di copiare li nella cartella di output:
+È possibile impostare facilmente i percorsi dei file di intestazione e <em>file con estensione LIB nelle pagine delle proprietà (fare clic sul progetto C++ e scegliere * * visualizzare le proprietà</em><em>, quindi scegliere **tutte le configurazioni</em>* ) senza la necessità di copiarli nella cartella di output:
 
 - Cartella C/C++ (categoria generale) - specificare la cartella contenente i file di intestazione di **directory di inclusione aggiuntive** campo.
 - Cartella Linker (categoria generale) - specificare la cartella contenente il file con estensione LIB nel **Directory librerie aggiuntive** campo. 

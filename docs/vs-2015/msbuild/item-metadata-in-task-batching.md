@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923784"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadati degli elementi nella suddivisione in batch delle attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256984"
   
 In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è possibile dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire un'attività una sola volta per ogni batch. Può non essere semplice comprendere esattamente quali elementi vengono passati e a quale batch. Questo argomento descrive gli scenari più comuni relativi alla suddivisione in batch.  
   
--   Suddivisione in batch di un elenco di elementi  
+- Suddivisione in batch di un elenco di elementi  
   
--   Suddivisione in batch di più elenchi di elementi  
+- Suddivisione in batch di più elenchi di elementi  
   
--   Suddivisione in batch di un elemento per volta  
+- Suddivisione in batch di un elemento per volta  
   
--   Filtraggio di elenchi di elementi  
+- Filtraggio di elenchi di elementi  
   
- Per altre informazioni sulla suddivisione in batch con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vedere [Suddivisione in batch](../msbuild/msbuild-batching.md).  
+  Per altre informazioni sulla suddivisione in batch con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vedere [Suddivisione in batch](../msbuild/msbuild-batching.md).  
   
 ## <a name="dividing-an-item-list-into-batches"></a>Suddivisione in batch di un elenco di elementi  
  La suddivisione in batch consente di dividere un elenco di elementi in vari batch in base ai metadati degli elementi e di passare separatamente ogni batch a un'attività. Questa procedura è utile per compilare assembly satellite.  

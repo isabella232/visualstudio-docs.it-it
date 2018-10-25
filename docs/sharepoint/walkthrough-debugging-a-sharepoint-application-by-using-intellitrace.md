@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42624448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927346"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace
 
@@ -46,7 +46,7 @@ Con IntelliTrace, è più facilmente possibile eseguire il debug di soluzioni di
 
 - [Eseguire il debug e correggere la soluzione di SharePoint](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -265,15 +265,15 @@ Ora che il codice viene aggiunto al ricevitore di funzionalità e l'agente di ra
 
 3. Disattivare la funzionalità attenendosi alla procedura seguente:
 
-    1. Nel **Azioni sito** dal menu in SharePoint, scegliere **Impostazioni sito**.
+   1. Nel **Azioni sito** dal menu in SharePoint, scegliere **Impostazioni sito**.
 
-    2. Sotto **Azioni sito**, scegliere il **Gestisci caratteristiche sito** collegamento.
+   2. Sotto **Azioni sito**, scegliere il **Gestisci caratteristiche sito** collegamento.
 
-    3. Accanto a **IntelliTraceTest Feature1**, scegliere il **disattiva** pulsante.
+   3. Accanto a **IntelliTraceTest Feature1**, scegliere il **disattiva** pulsante.
 
-    4. Nella pagina di avviso, scegliere il **disattivare questa funzionalità** collegamento.
+   4. Nella pagina di avviso, scegliere il **disattivare questa funzionalità** collegamento.
 
-     Il gestore dell'evento FeatureDeactivating() genera un errore.
+      Il gestore dell'evento FeatureDeactivating() genera un errore.
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Raccogliere dati IntelliTrace tramite Microsoft Monitoring Agent
 
@@ -286,15 +286,15 @@ Se si installa Microsoft Monitoring Agent nel sistema che esegue SharePoint, è 
 
 2. Disattivare la funzionalità:
 
-    1. Nel **Azioni sito** dal menu in SharePoint, scegliere **Impostazioni sito**.
+   1. Nel **Azioni sito** dal menu in SharePoint, scegliere **Impostazioni sito**.
 
-    2. Sotto **Azioni sito**, scegliere il **Gestisci caratteristiche sito** collegamento.
+   2. Sotto **Azioni sito**, scegliere il **Gestisci caratteristiche sito** collegamento.
 
-    3. Accanto a **IntelliTraceTest Feature1**, scegliere il **disattiva** pulsante.
+   3. Accanto a **IntelliTraceTest Feature1**, scegliere il **disattiva** pulsante.
 
-    4. Nella pagina di avviso, scegliere il **disattivare questa funzionalità** collegamento.
+   4. Nella pagina di avviso, scegliere il **disattivare questa funzionalità** collegamento.
 
-     Si verifica un errore (in questo caso, a causa dell'errore generata nel gestore dell'evento FeatureDeactivating()).
+      Si verifica un errore (in questo caso, a causa dell'errore generata nel gestore dell'evento FeatureDeactivating()).
 
 3. Nella finestra di PowerShell, eseguire la [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando per creare il file. iTrace, arrestare il monitoraggio e riavviare la soluzione di SharePoint.
 

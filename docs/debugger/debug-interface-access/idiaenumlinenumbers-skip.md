@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers::Skip | Documenti Microsoft
+title: Idiaenumlinenumbers | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebaa7366128a02b9ac0af253c418650a747b657e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a52c09bcff6ff617c1f43dcad84de441f1432a1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927177"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
-Ignora un numero specificato di numeri di riga in una sequenza di enumerazione.  
+Ignora un determinato numero di numeri di riga in una sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT Skip (
  [in] Il numero di numeri di riga nella sequenza di enumerazione da ignorare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se sono non presenti ignorare più numeri di riga.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non esistono Nessun più numeri di riga da ignorare.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

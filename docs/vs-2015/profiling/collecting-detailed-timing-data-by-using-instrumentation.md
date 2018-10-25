@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8355911a54e6682b763d7f3aecbf29812fa4a1e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 95bd21e908b24e00619a659445b3cd30d4e915a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870107"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Raccolta di dati di intervallo dettagliati tramite la strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ Il metodo di strumentazione degli strumenti di profilatura di [!INCLUDE[vsprvs](
 ## <a name="common-tasks"></a>Attività comuni  
  È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:  
   
--   In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.  
+- In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.  
   
- Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** quando si esegue la profilatura con il metodo di strumentazione.  
+  Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** quando si esegue la profilatura con il metodo di strumentazione.  
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  

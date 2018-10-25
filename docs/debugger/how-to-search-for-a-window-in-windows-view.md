@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: ricerca di una finestra nella visualizzazione di Windows | Documenti Microsoft'
+title: 'Procedura: cercare una finestra in Windows Vista | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,41 +12,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4333a79e76358216ce87697975dcb54173570534
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c187c3a4b8086b5b991f7288f2686d6010e79262
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927398"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Procedura: cercare una finestra nella visualizzazione finestre
-È possibile cercare una finestra specifica nella visualizzazione di Windows utilizzando il relativo handle, didascalia, classe o una combinazione di titolo e classe come criterio di ricerca. È inoltre possibile specificare la direzione iniziale della ricerca. I campi nella finestra di dialogo verranno visualizzati gli attributi della finestra selezionata nell'albero della finestra.  
+È possibile cercare una specifica finestra nella visualizzazione di Windows usando il relativo handle, didascalie, classe o una combinazione di titolo e classe come criterio di ricerca. È anche possibile specificare la direzione iniziale della ricerca. I campi nella finestra di dialogo mostrerà gli attributi della finestra selezionata nell'albero della finestra.  
   
- Iniziare con la struttura ad albero espansa al secondo livello (tutte le finestre sono figli del desktop), in modo che sia possibile identificare desktop a livello di windows per il proprio nome di classe e un titolo. Dopo aver scelto una finestra di livello desktop, è possibile espandere tale livello per trovare una finestra figlio specifico.  
+ Iniziare con la struttura ad albero espansa per il secondo livello (tutte le finestre che sono figli del desktop), in modo che sia possibile identificare a livello di desktop windows tramite il nome della classe e il titolo. Dopo aver scelto una finestra del desktop a livello, è possibile espandere tale livello per trovare una specifica finestra figlio.  
   
-### <a name="to-search-for-a-window-in-windows-view"></a>Per cercare una finestra nella visualizzazione finestre  
+### <a name="to-search-for-a-window-in-windows-view"></a>Per cercare una finestra nella visualizzazione di Windows  
   
-1.  Disporre le finestre in modo che Spy + +, il [Windows Vista](../debugger/windows-view.md) finestra e finestra di destinazione sono visibili.  
+1. Disporre le finestre in modo tale Spy + +, il [Windows Vista](../debugger/windows-view.md) finestra e finestra di destinazione sono visibili.  
   
-2.  Dal **ricerca** menu, scegliere **Trova finestra**.  
+2. Dal **ricerca** menu, scegliere **Trova finestra**.  
   
-     Il [finestra di dialogo ricerca](../debugger/window-search-dialog-box.md) apre.  
+    Il [finestra di dialogo ricerca](../debugger/window-search-dialog-box.md) apre.  
   
-    > [!TIP]
-    >  Per evitare confusione, selezionare il **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e di lasciare solo il **ricerca finestre** la finestra di dialogo di primo piano rispetto alle altre applicazioni. La finestra principale di Spy + + viene ripristinata quando si fa clic **OK** o **Annulla**, o quando si cancella il **Nascondi Spy + +** opzione.  
+   > [!TIP]
+   >  Per ridurre il disordine schermata, selezionare la **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e rimane solo il **ricerca finestre** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni. La finestra principale di Spy + + è ripristinata quando si fa clic **OK** oppure **Cancel**, o quando si cancella il **Nascondi Spy + +** opzione.  
   
-3.  Trascinare il **strumento di ricerca** sulla finestra di destinazione. Quando si trascina, lo strumento di **ricerca finestre** la finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.  
+3. Trascinare il **strumento di ricerca** nell'intervallo di destinazione. Quando si trascina lo strumento, il **ricerca finestre** nella finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.  
   
-     - oppure -  
+   - oppure -  
   
-     Se si conosce l'handle della finestra di cui si desidera (ad esempio, dal debugger), è possibile digitare nel **gestire** casella.  
+     Se si conosce l'handle della finestra desiderata (ad esempio, dal debugger), è possibile digitare nel **gestire** casella.  
   
-     - oppure -  
+   - oppure -  
   
-     Se si conosce il titolo e/o classe della finestra di cui si desidera, è possibile digitarli nel **didascalia** e **classe** caselle di testo e deselezionare il **gestire** casella di testo.  
+     Se si conosce il sottotitolo e/o classe della finestra di cui si desidera, è possibile digitarli nel **didascalia** e **classe** caselle di testo e deselezionare il **gestire** casella di testo.  
   
-4.  Scegliere **backup** o **verso il basso** per la direzione iniziale della ricerca.  
+4. Scegli **iscrizione** oppure **verso il basso** per la direzione iniziale della ricerca.  
   
-5.  Fare clic su **OK**.  
+5. Fare clic su **OK**.  
   
-     Se la finestra corrispondente viene trovata, viene evidenziato nel [Windows Vista](../debugger/windows-view.md) finestra.
+    Se la finestra corrispondente viene trovata, viene evidenziato nel [Windows Vista](../debugger/windows-view.md) finestra.

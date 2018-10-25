@@ -14,12 +14,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825673"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,46 +42,46 @@ CodeLens consente di rimanere concentrati sulle proprie attività mentre si cerc
 ##  <a name="FindReferences"></a> Individuare i riferimenti del codice  
  Sono necessari:  
   
--   Visual Studio Enterprise e Visual Studio Professional  
+- Visual Studio Enterprise e Visual Studio Professional  
   
--   Codice di Visual C# .NET o Visual Basic .NET  
+- Codice di Visual C# .NET o Visual Basic .NET  
   
- Scegliere l'indicatore dei **riferimenti** (**Alt + 2**). Se i **riferimenti sono pari a 0**, non sono disponibili riferimenti da codice Visual C# o Visual Basic. Questo non include riferimenti da altri elementi, ad esempio file XAML e ASPX.  
+  Scegliere l'indicatore dei **riferimenti** (**Alt + 2**). Se i **riferimenti sono pari a 0**, non sono disponibili riferimenti da codice Visual C# o Visual Basic. Questo non include riferimenti da altri elementi, ad esempio file XAML e ASPX.  
   
- ![CodeLens &#45; Scegliere l'indicatore dei riferimenti](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
+  ![CodeLens &#45; Scegliere l'indicatore dei riferimenti](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
   
- Per visualizzare il codice con riferimenti, posizionare il mouse sul riferimento.  
+  Per visualizzare il codice con riferimenti, posizionare il mouse sul riferimento.  
   
- ![CodeLens &#45; Posizionare il puntatore su un riferimento](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+  ![CodeLens &#45; Posizionare il puntatore su un riferimento](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
- Per aprire il file con il riferimento, fare doppio clic sul riferimento.  
+  Per aprire il file con il riferimento, fare doppio clic sul riferimento.  
   
- Per vedere le relazioni tra il codice e i riferimenti relativi, [creare una mappa dei codici](../modeling/map-dependencies-across-your-solutions.md) e scegliere **Mostra tutti i riferimenti** nel menu di scelta rapida della mappa del codice.  
+  Per vedere le relazioni tra il codice e i riferimenti relativi, [creare una mappa dei codici](../modeling/map-dependencies-across-your-solutions.md) e scegliere **Mostra tutti i riferimenti** nel menu di scelta rapida della mappa del codice.  
   
- ![CodeLens &#45; Riferimenti nella mappa del codice](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
+  ![CodeLens &#45; Riferimenti nella mappa del codice](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
   
 ##  <a name="FindCodeHistory"></a> Individuare la cronologia e gli elementi collegati del codice  
  È possibile esaminare la cronologia del codice per scoprire cosa è successo oppure esaminare le modifiche prima che vengano unite nel codice per ottenere altre informazioni sull'eventuale impatto di modifiche in altri rami sul codice.  
   
  Sono necessari:  
   
--   Visual Studio Enterprise e Visual Studio Professional  
+- Visual Studio Enterprise e Visual Studio Professional  
   
--   Team Foundation Server 2013 o versioni successive, Visual Studio Team Services o Git  
+- Team Foundation Server 2013 o versioni successive, Visual Studio Team Services o Git  
   
--   [Lync 2010 o versioni successive oppure Skype for Business](http://technet.microsoft.com/lync)per contattare il team dall'editor di codice.  
+- [Lync 2010 o versioni successive oppure Skype for Business](http://technet.microsoft.com/lync)per contattare il team dall'editor di codice.  
   
- Per il codice Visual C# .NET o Visual Basic .NET archiviato con il controllo della versione di Team Foundation (TFVC) o Git, si ricevono dettagli CodeLens a livello di classe e metodo (indicatori a*livello di elemento codice* ). Se il repository Git è ospitato in TfGit, è anche possibile ottenere collegamenti negli elementi di lavoro TFS.  
+  Per il codice Visual C# .NET o Visual Basic .NET archiviato con il controllo della versione di Team Foundation (TFVC) o Git, si ricevono dettagli CodeLens a livello di classe e metodo (indicatori a*livello di elemento codice* ). Se il repository Git è ospitato in TfGit, è anche possibile ottenere collegamenti negli elementi di lavoro TFS.  
   
- ![Indicatori a livello di elemento di codice](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+  ![Indicatori a livello di elemento di codice](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
- Per tutti gli altri tipi di file che si possono aprire nell'editor di Visual Studio, si ricevono dettagli CodeLens per l'intero file in un'unica posizione nella parte inferiore della finestra (indicatori*a livello di file* ).  
+  Per tutti gli altri tipi di file che si possono aprire nell'editor di Visual Studio, si ricevono dettagli CodeLens per l'intero file in un'unica posizione nella parte inferiore della finestra (indicatori*a livello di file* ).  
   
- ![Indicatori CodeLens a livello di file](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+  ![Indicatori CodeLens a livello di file](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
- Per usare la tastiera per la selezione degli indicatori, tenere premuto il testo **ALT** per visualizzare i tasti numerici correlati.  
+  Per usare la tastiera per la selezione degli indicatori, tenere premuto il testo **ALT** per visualizzare i tasti numerici correlati.  
   
- ![Premere ALT per visualizzare i numeri di accesso della tastiera](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+  ![Premere ALT per visualizzare i numeri di accesso della tastiera](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>Individuare le modifiche nel codice  
  Trovare l'utente che ha modificato il codice C# o Visual Basic e le modifiche apportate, negli indicatori a livello di codice elemento. Questo è ciò che viene visualizzato quando si usa il controllo della versione di Team Foundation (TFVC) in Team Foundation Server o Visual Studio Team Services.  
@@ -243,11 +243,11 @@ CodeLens consente di rimanere concentrati sulle proprie attività mentre si cerc
   
  **Quali configurazioni di Lync e Skype sono supportate?**  
   
--   Skype per Business (32 bit o 64 bit)  
+- Skype per Business (32 bit o 64 bit)  
   
--   Lync 2010 o nelle versioni successive da solo (32 bit o 64 bit), ma non Lync Basic 2013 con Windows 8.1  
+- Lync 2010 o nelle versioni successive da solo (32 bit o 64 bit), ma non Lync Basic 2013 con Windows 8.1  
   
- CodeLens non supporta l'installazione di versioni di Lync o Skype diverse. Potrebbero non essere stati localizzati per tutte le versioni localizzate di Visual Studio.  
+  CodeLens non supporta l'installazione di versioni di Lync o Skype diverse. Potrebbero non essere stati localizzati per tutte le versioni localizzate di Visual Studio.  
   
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>D: Come si modifica il tipo di carattere e il colore per CodeLens?  
  **R:** accedere a **Strumenti**, **Opzioni**, **Ambiente**, **Tipi di carattere e colori**.  

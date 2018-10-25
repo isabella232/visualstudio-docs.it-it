@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_maxStack | Documenti Microsoft
+title: Get_maxstack | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08da6591037e88c829994005ee8aef751557cd5f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 39e86d897acc3596fdbbf9c217f69de4b0a08d6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925851"
 ---
 # <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
-Recupera il numero massimo di byte inviati allo stack nel frame.  
+Recupera il numero massimo di byte inseriti nello stack nel frame.  
   
 ## <a name="syntax"></a>Sintassi  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 163fcc07318ae02ff88fda13d4ea6300d513806e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857406"
 ---
 # <a name="how-to-create-starter-kits"></a>Procedura: creare starter kit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Gli starter kit contengono il codice di un'applicazione completa e la documentaz
   
  Se si sta creando un'applicazione o un plug-in di esempio:  
   
--   Creare un progetto che viene compilato senza errori.  
+- Creare un progetto che viene compilato senza errori.  
   
--   Aggiungere il codice del modello per implementare le attività aggiuntive (facoltativo).  
+- Aggiungere il codice del modello per implementare le attività aggiuntive (facoltativo).  
   
--   Preparare la documentazione.  
+- Preparare la documentazione.  
   
- Se si sta creando uno strumento di apprendimento:  
+  Se si sta creando uno strumento di apprendimento:  
   
--   Creare un progetto che viene compilato senza errori.  
+- Creare un progetto che viene compilato senza errori.  
   
--   Organizzare le risorse, ad esempio i frammenti di codice e i modelli di elemento.  
+- Organizzare le risorse, ad esempio i frammenti di codice e i modelli di elemento.  
   
--   Preparare la documentazione.  
+- Preparare la documentazione.  
   
 ## <a name="creating-a-template"></a>Creazione di un modello  
  Dopo aver completato il progetto e la relativa documentazione, è possibile procedere alla creazione del modello di progetto per lo starter kit. Questo processo è analogo alla creazione di un modello di progetto.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5647a62064857bca6a6352a14fe56eff4386f9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825816"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procedura: usare il log attività
 I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzionalità è particolarmente utile per il debug di pacchetti VSPackage negli ambienti delle vendite al dettaglio.  
@@ -47,15 +47,15 @@ I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzio
   
 ## <a name="to-examine-the-activity-log"></a>Per esaminare il log attività  
   
-1.  Eseguire Visual Studio con il [/log](../ide/reference/log-devenv-exe.md) opzione della riga di comando per scrivere Activitylog sul disco durante la sessione.
+1. Eseguire Visual Studio con il [/log](../ide/reference/log-devenv-exe.md) opzione della riga di comando per scrivere Activitylog sul disco durante la sessione.
 
-2.  Dopo la chiusura di Visual Studio, trovare il log attività nella sottocartella per i dati di Visual Studio: **% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
+2. Dopo la chiusura di Visual Studio, trovare il log attività nella sottocartella per i dati di Visual Studio:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
   
-3.  Aprire il log attività con qualsiasi editor di testo. Di seguito è una voce tipica:  
+3. Aprire il log attività con qualsiasi editor di testo. Di seguito è una voce tipica:  
   
-    ```  
-    Called for: Company.MyApp.MyAppPackage ...  
-    ```  
+   ```  
+   Called for: Company.MyApp.MyAppPackage ...  
+   ```  
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
  Poiché il log attività è un servizio, il log attività non è disponibile nel costruttore di VSPackage.  

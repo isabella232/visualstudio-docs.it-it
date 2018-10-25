@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895340"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 È possibile accedere a tutte le principali funzionalità di [!INCLUDE[wfd1](../includes/wfd1-md.md)] dalla tastiera.  
@@ -49,29 +49,29 @@ ms.locfileid: "49267800"
 ### <a name="flowchart"></a>Diagramma di flusso  
  Nell'elenco seguente vengono presentate le operazioni necessarie per costruire un diagramma di flusso dalla tastiera. Come nella parte rimanente di [!INCLUDE[wfd2](../includes/wfd2-md.md)], le attività vengono aggiunte all'area di progettazione usando i collegamenti globali alla casella degli strumenti forniti in [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
--   Per spostare un'attività, selezionarla e riposizionarla usando i tasti di direzione.  
+- Per spostare un'attività, selezionarla e riposizionarla usando i tasti di direzione.  
   
--   Per ridimensionare un diagramma di flusso, spostare un'attività oltre il bordo corrente del diagramma di flusso usando i tasti di direzione. Il diagramma di flusso viene ridimensionato automaticamente.  
+- Per ridimensionare un diagramma di flusso, spostare un'attività oltre il bordo corrente del diagramma di flusso usando i tasti di direzione. Il diagramma di flusso viene ridimensionato automaticamente.  
   
--   Per impostare un'attività come nodo iniziale, usare il **imposta come StartNode** comando nel menu di scelta rapida.  
+- Per impostare un'attività come nodo iniziale, usare il **imposta come StartNode** comando nel menu di scelta rapida.  
   
--   Per connettere le attività:  
+- Per connettere le attività:  
   
-    1.  Selezionare l'attività di origine usando il tasto TAB.  
+  1.  Selezionare l'attività di origine usando il tasto TAB.  
   
-    2.  Premere CTRL+E, M il numero di volte necessario per spostare lo stato attivo sull'attività di destinazione.  
+  2.  Premere CTRL+E, M il numero di volte necessario per spostare lo stato attivo sull'attività di destinazione.  
   
-    3.  Premere CTRL+E, S per aggiungere l'attività di destinazione alla selezione.  
+  3.  Premere CTRL+E, S per aggiungere l'attività di destinazione alla selezione.  
   
-    4.  Premere CTRL+E, F per aggiungere il connettore dall'origine alla destinazione.  
+  4.  Premere CTRL+E, F per aggiungere il connettore dall'origine alla destinazione.  
   
- Note sulla connessione delle attività dalla tastiera:  
+  Note sulla connessione delle attività dalla tastiera:  
   
--   È possibile creare contemporaneamente più connessioni aggiungendo più attività alla selezione prima di premere CTRL+E, F. Le connessioni vengono create nell'ordine in cui le attività sono state aggiunte alla selezione.  
+- È possibile creare contemporaneamente più connessioni aggiungendo più attività alla selezione prima di premere CTRL+E, F. Le connessioni vengono create nell'ordine in cui le attività sono state aggiunte alla selezione.  
   
--   Se una coppia di attività non può essere connessa, ad esempio se per l'attività di origine è già presente una connessione in uscita, le altre connessioni tra le attività della selezione vengono comunque create quando possibile.  
+- Se una coppia di attività non può essere connessa, ad esempio se per l'attività di origine è già presente una connessione in uscita, le altre connessioni tra le attività della selezione vengono comunque create quando possibile.  
   
--   Quando un **FlowDecision** è incluso nella selezione e il **FlowDecision** non dispone di alcun connettori in uscita, il connettore viene posizionato sul **True** ramo.  
+- Quando un **FlowDecision** è incluso nella selezione e il **FlowDecision** non dispone di alcun connettori in uscita, il connettore viene posizionato sul **True** ramo.  
   
 ### <a name="expression-editing"></a>Modifica dell'espressione  
  Per impostazione predefinita, i tasti di scelta rapida predefiniti per la modifica del testo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] si applicano nell'editor espressioni in [!INCLUDE[wfd2](../includes/wfd2-md.md)] con le limitazioni seguenti:  

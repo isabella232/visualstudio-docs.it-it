@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210483"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885577"
 ---
 # <a name="local-data-overview"></a>Cenni preliminari sui dati locali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Quando si sviluppano applicazioni di dati, è in genere consigliabile usare una 
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   Creare un progetto di database di SQL Server facendo clic sul nodo della soluzione in Esplora soluzioni e scegliendo **Aggiungi &#124; nuovo progetto**.  Nel riquadro sinistro, scegliere **SQL Server &#124; Database** del progetto e fare clic su OK. In Esplora soluzioni fare clic con il pulsante destro sul nodo del progetto di database per importare un file di database locale, quindi sviluppare l'applicazione che si connette al database generato dal progetto. Soluzione idonea durante lo sviluppo e la modifica dello schema del database allo stesso tempo che si sviluppa l'applicazione.  
+- Creare un progetto di database di SQL Server facendo clic sul nodo della soluzione in Esplora soluzioni e scegliendo **Aggiungi &#124; nuovo progetto**.  Nel riquadro sinistro, scegliere **SQL Server &#124; Database** del progetto e fare clic su OK. In Esplora soluzioni fare clic con il pulsante destro sul nodo del progetto di database per importare un file di database locale, quindi sviluppare l'applicazione che si connette al database generato dal progetto. Soluzione idonea durante lo sviluppo e la modifica dello schema del database allo stesso tempo che si sviluppa l'applicazione.  
   
-     ![Importa Database nel progetto di Database](../data-tools/media/raddata-import-database-into-database-project.png "raddata Database di importazione nel progetto di Database")  
+   ![Importa Database nel progetto di Database](../data-tools/media/raddata-import-database-into-database-project.png "raddata Database di importazione nel progetto di Database")  
   
--   Se si sta creando un nuovo database, aggiungere prima di tutto una **file di database basato sul servizio** al progetto (**progetto &#124; Aggiungi nuovo elemento)**. Ciò consente di creare un nuovo file con estensione mdf che viene collegato all'istanza di SQL Server predefinita nel computer locale, che per impostazione predefinita è \MSSQLocalDB (localdb). Il database risulterà in Esplora Server. Espandere il nodo e fare doppio clic sui nodi per aggiungere nuovi oggetti di database quali tabelle, viste, funzioni e così via.  
+- Se si sta creando un nuovo database, aggiungere prima di tutto una **file di database basato sul servizio** al progetto (**progetto &#124; Aggiungi nuovo elemento)**. Ciò consente di creare un nuovo file con estensione mdf che viene collegato all'istanza di SQL Server predefinita nel computer locale, che per impostazione predefinita è \MSSQLocalDB (localdb). Il database risulterà in Esplora Server. Espandere il nodo e fare doppio clic sui nodi per aggiungere nuovi oggetti di database quali tabelle, viste, funzioni e così via.  
   
- Per altre informazioni su SQL Server Express LocalDB, vedere [Introduzione a LocalDB, un SQL Express migliore](http://go.microsoft.com/fwlink/?LinkId=234375) e [LocalDB: Dov'è il Database?](http://go.microsoft.com/fwlink/?LinkId=234376) del sito Web Microsoft.  
+  Per altre informazioni su SQL Server Express LocalDB, vedere [Introduzione a LocalDB, un SQL Express migliore](http://go.microsoft.com/fwlink/?LinkId=234375) e [LocalDB: Dov'è il Database?](http://go.microsoft.com/fwlink/?LinkId=234376) del sito Web Microsoft.  
   
- Nella tabella seguente sono forniti i collegamenti agli argomenti che descrivono come connettere l'applicazione ai dati locali:  
+  Nella tabella seguente sono forniti i collegamenti agli argomenti che descrivono come connettere l'applicazione ai dati locali:  
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  

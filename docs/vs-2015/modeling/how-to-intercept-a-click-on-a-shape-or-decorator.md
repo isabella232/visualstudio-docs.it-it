@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9ca1917d71ff2ef0961e9f5c99839759c7decff3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926748"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedura: intercettare un clic su una forma o su un elemento Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,17 +126,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Intercettazione fa clic e trascina su elenchi di CompartmentShape  
  L'esempio seguente consente di riordinare gli elementi in una forma raggruppamento trascinandoli. Per eseguire questo codice:  
   
-1.  Creare una nuova soluzione DSL usando il **diagrammi classi** modello di soluzione.  
+1. Creare una nuova soluzione DSL usando il **diagrammi classi** modello di soluzione.  
   
-     È anche possibile lavorare con una soluzione personalizzata che contiene forme raggruppamento. Questo codice si presuppone che esista una relazione di incorporamento tra gli elementi del modello rappresentati dalla forma e gli elementi rappresentati in elementi dell'elenco di raggruppamento.  
+    È anche possibile lavorare con una soluzione personalizzata che contiene forme raggruppamento. Questo codice si presuppone che esista una relazione di incorporamento tra gli elementi del modello rappresentati dalla forma e gli elementi rappresentati in elementi dell'elenco di raggruppamento.  
   
-2.  Impostare il **genera una derivata doppia** proprietà della forma del raggruppamento.  
+2. Impostare il **genera una derivata doppia** proprietà della forma del raggruppamento.  
   
-3.  Aggiungere questo codice in un file nei **Dsl** progetto.  
+3. Aggiungere questo codice in un file nei **Dsl** progetto.  
   
-4.  Modificare i nomi di classe e forma di dominio in questo codice in modo che corrisponda il proprio DSL.  
+4. Modificare i nomi di classe e forma di dominio in questo codice in modo che corrisponda il proprio DSL.  
   
- In sintesi, il codice funzioni come indicato di seguito. In questo esempio `ClassShape` è il nome della forma del raggruppamento.  
+   In sintesi, il codice funzioni come indicato di seguito. In questo esempio `ClassShape` è il nome della forma del raggruppamento.  
   
 -   A ogni istanza di compartment è associato un set di gestori di eventi del mouse al momento della creazione.  
   

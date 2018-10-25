@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_lowerBoundId | Documenti Microsoft
+title: Get_lowerboundid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fe2434b53932f6fdf9f579e45a095ff46e5564
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1fe7109957167b9f2073660e035298bcc7613feb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873331"
 ---
 # <a name="idiasymbolgetlowerboundid"></a>IDiaSymbol::get_lowerBoundId
-Recupera l'identificatore di simbolo del limite inferiore della finestra di una dimensione di matrice FORTRAN.  
+Recupera l'identificatore di simbolo del limite inferiore di una dimensione di matrice FORTRAN.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,7 +43,7 @@ HRESULT get_lowerBoundId (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- L'identificatore è un valore univoco creato da DIA SDK per contrassegnare tutti i simboli come univoca.  
+ L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

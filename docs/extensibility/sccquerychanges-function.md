@@ -1,5 +1,5 @@
 ---
-title: Funzione SccQueryChanges | Documenti Microsoft
+title: Funzione SccQueryChanges | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d887c0cea989fa6a955edc2f39b9667e7421093d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7b3a9454daa0f2e3c5cf91a9dc483afe1f635a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915711"
 ---
-# <a name="sccquerychanges-function"></a>SccQueryChanges (funzione)
-Questa funzione enumera un elenco di file, che fornisce informazioni sulle modifiche di nome per ogni file tramite una funzione di callback specificato.  
+# <a name="sccquerychanges-function"></a>Funzione SccQueryChanges
+Questa funzione enumera un elenco di file, che fornisce informazioni sulle modifiche ai nomi per ogni file tramite una funzione di callback.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,9 +39,9 @@ SCCRTN SccQueryChanges(
   
 #### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto plug-in controllo di origine.  
+ [in] Il puntatore di contesto del plug-in controllo di origine.  
   
- nFiles  
+ nFile  
  [in] Numero di file in `lpFileNames` matrice.  
   
  lpFileNames  
@@ -51,22 +51,22 @@ SCCRTN SccQueryChanges(
  [in] Funzione di callback da chiamare per ogni nome di file nell'elenco (vedere [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) per informazioni dettagliate).  
   
  pvCallerData  
- [in] Valore che verrà passato invariato alla funzione di callback.  
+ [in] Valore che verrà passati invariato per la funzione di callback.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Il processo di query completato.|  
-|SCC_E_PROJNOTOPEN|Il progetto non è stato aperto nel controllo del codice sorgente.|  
+|SCC_E_PROJNOTOPEN|Il progetto non è stata aperta nel controllo del codice sorgente.|  
 |SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete.|  
 |SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato o generale.|  
   
 ## <a name="remarks"></a>Note  
- Le modifiche sottoposte a query per sono per lo spazio dei nomi: in particolare, la ridenominazione, aggiunta e rimozione di un file.  
+ Sottoposto a query per le modifiche sono per lo spazio dei nomi: in particolare, la ridenominazione, aggiunta e rimozione di un file.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
  [Codici di errore](../extensibility/error-codes.md)

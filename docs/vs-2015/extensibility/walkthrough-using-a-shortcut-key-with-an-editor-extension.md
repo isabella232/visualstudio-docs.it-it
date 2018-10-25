@@ -15,12 +15,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c239206f78c84eafcf96ed936231731f7f2d4aaa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd08e17349008760fd029887c0bc17554ef4c7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848683"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: uso di una combinazione di tasti con un'estensione dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ ms.locfileid: "49232414"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creazione di un progetto Managed Extensibility Framework (MEF)  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `KeyBindingTest`.  
+1. Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `KeyBindingTest`.  
   
-2.  Aggiungere un modello di elemento dell'area di controllo Text Editor per il progetto e denominarlo `KeyBindingTest`. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Aggiungere un modello di elemento dell'area di controllo Text Editor per il progetto e denominarlo `KeyBindingTest`. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Aggiungere i seguenti riferimenti e impostare **CopyLocal** a `false`:  
+3. Aggiungere i seguenti riferimenti e impostare **CopyLocal** a `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Interop  
+    Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- Nel file di classe KeyBindingTest, modificare il nome della classe a PurpleCornerBox. Usare la lampadina in cui viene visualizzata nel margine sinistro per apportare altre modifiche appropriate. All'interno del costruttore, modificare il nome del livello di area di controllo da **KeyBindingTest** al **PurpleCornerBox**:  
+   Nel file di classe KeyBindingTest, modificare il nome della classe a PurpleCornerBox. Usare la lampadina in cui viene visualizzata nel margine sinistro per apportare altre modifiche appropriate. All'interno del costruttore, modificare il nome del livello di area di controllo da **KeyBindingTest** al **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  

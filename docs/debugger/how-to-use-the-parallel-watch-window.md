@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857952"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Impostare un'espressione di controllo per le variabili di thread in parallelo in Visual Studio
 Nella finestra Espressione di controllo in parallelo è possibile visualizzare contemporaneamente i valori di un'espressione utilizzata in più thread. Ogni riga rappresenta un thread in esecuzione in un'applicazione, ma un thread può essere rappresentato su più righe. In particolare, ogni riga rappresenta una chiamata di funzione la cui firma della funzione corrisponde alla funzione nello stack frame corrente. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile aggiungere flag, rimuovere flag, bloccare (sospendere) e sbloccare (riprendere) i thread. Le colonne seguenti vengono visualizzate nei **espressioni di controllo parallela** finestra:  
   
--   Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.  
+- Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.  
   
--   La colonna del thread corrente, in cui una freccia gialla indica che il thread corrente (una freccia verde ricurva indica che un thread non correnti è il contesto di debug corrente).  
+- La colonna del thread corrente, in cui una freccia gialla indica che il thread corrente (una freccia verde ricurva indica che un thread non correnti è il contesto di debug corrente).  
   
--   Colonna configurabile che consente di visualizzare il computer, il processo, la sezione, l'attività e il thread.  
+- Colonna configurabile che consente di visualizzare il computer, il processo, la sezione, l'attività e il thread.  
   
-    > [!TIP]
-    >  Per informazioni sull'attività visualizzato nei **espressioni di controllo parallela** finestra, è innanzitutto necessario aprire le **attività** finestra.  
+  > [!TIP]
+  >  Per informazioni sull'attività visualizzato nei **espressioni di controllo parallela** finestra, è innanzitutto necessario aprire le **attività** finestra.  
   
--   Lo spazio vuoto *Aggiungi espressione di controllo* colonne, in cui è possibile immettere espressioni di controllo.  
+- Lo spazio vuoto *Aggiungi espressione di controllo* colonne, in cui è possibile immettere espressioni di controllo.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Per visualizzare la finestra Espressione di controllo in parallelo  
   

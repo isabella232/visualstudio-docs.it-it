@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837564"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: modificare un comando di menu standard in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49302146"
   
  In sintesi, per modificare un comando:  
   
-1.  [Trovare i comandi modificabili](#what).  
+1. [Trovare i comandi modificabili](#what).  
   
-2.  [Creare una dichiarazione parziale della classe di set di comandi appropriata](#extend).  
+2. [Creare una dichiarazione parziale della classe di set di comandi appropriata](#extend).  
   
-3.  [Override dei metodi ProcessOnStatus e ProcessOnMenu](#override) per il comando.  
+3. [Override dei metodi ProcessOnStatus e ProcessOnMenu](#override) per il comando.  
   
- In questo argomento viene illustrata la procedura.  
+   In questo argomento viene illustrata la procedura.  
   
 > [!NOTE]
 >  Se si desidera creare i propri comandi di menu, vedere [procedura: aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Scrittura del codice dei metodi  
  I frammenti seguenti sono spesso utili in questi metodi:  
   
--   `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.  
+- `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.  
   
--   `this.IsDiagramSelected()` - `true` Se l'utente ha selezionato una parte vuota del diagramma.  
+- `this.IsDiagramSelected()` - `true` Se l'utente ha selezionato una parte vuota del diagramma.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - l'utente non ha selezionato più forme  
+- `this.IsSingleSelection()` - l'utente non ha selezionato più forme  
   
--   `this.SingleSelection` - la forma o il diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse.  
+- `this.SingleSelection` - la forma o il diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse.  
   
--   `shape.ModelElement as MyLanguageElement` - l'elemento del modello rappresentato da una forma.  
+- `shape.ModelElement as MyLanguageElement` - l'elemento del modello rappresentato da una forma.  
   
- Per altre informazioni su come passare da un elemento a altro e su come creare oggetti e collegamenti, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+  Per altre informazioni su come passare da un elemento a altro e su come creare oggetti e collegamenti, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.ComponentModel.Design.MenuCommand>   

@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 030e142911078aec36b01335c8fb3aaa4d82ac78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849645"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools per C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,44 +31,44 @@ C++ nativo può spesso fornire prestazioni ottimali quando si accede a origini d
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Per connettersi al database locale tramite ODBC e SQL Native Client da un'applicazione C++  
   
-1.  Installare SQL Server Data Tools.  
+1. Installare SQL Server Data Tools.  
   
-2.  Se è necessario un database SQL di esempio a cui connettersi, scaricare il database Northwind e decomprimerlo in una nuova posizione.  
+2. Se è necessario un database SQL di esempio a cui connettersi, scaricare il database Northwind e decomprimerlo in una nuova posizione.  
   
-3.  Usare SQL Server Management Studio per allegare il file mdf non compressa al database locale. All'avvio di SQL Server Management Studio, connettersi a (localdb) \MSSQLLocalDB.  
+3. Usare SQL Server Management Studio per allegare il file mdf non compressa al database locale. All'avvio di SQL Server Management Studio, connettersi a (localdb) \MSSQLLocalDB.  
   
-     ![Finestra di dialogo connessione a SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS finestra di dialogo Connetti")  
+    ![Finestra di dialogo connessione a SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS finestra di dialogo Connetti")  
   
-     Pulsante destro del mouse sul nodo database locale nel riquadro sinistro, quindi scegliere **Attach**.  
+    Pulsante destro del mouse sul nodo database locale nel riquadro sinistro, quindi scegliere **Attach**.  
   
-     ![Database di SQL Server Management Studio allegare](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS Collega database")  
+    ![Database di SQL Server Management Studio allegare](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS Collega database")  
   
-4.  Scaricare l'esempio di ODBC Windows SDK e decomprimerlo in una nuova posizione. In questo esempio mostra i comandi di base ODBC che consentono di connettersi a un database ed eseguire query e comandi. Altre informazioni su queste funzioni nel [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Quando si carica innanzitutto la soluzione (si trova nella cartella di C++), Visual Studio offre aggiornare la soluzione per la versione corrente di Visual Studio. Scegliere **Sì**.  
+4. Scaricare l'esempio di ODBC Windows SDK e decomprimerlo in una nuova posizione. In questo esempio mostra i comandi di base ODBC che consentono di connettersi a un database ed eseguire query e comandi. Altre informazioni su queste funzioni nel [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Quando si carica innanzitutto la soluzione (si trova nella cartella di C++), Visual Studio offre aggiornare la soluzione per la versione corrente di Visual Studio. Scegliere **Sì**.  
   
-5.  Per usare il client nativo, è necessario il file di intestazione e il file di lib. Questi file contengono le funzioni e le definizioni specifiche per SQL Server, oltre a funzioni ODBC definite in SQL. h. Nelle **progetto** > **delle proprietà** > **cartelle VC + +**, aggiungere le seguenti directory di inclusione:  
+5. Per usare il client nativo, è necessario il file di intestazione e il file di lib. Questi file contengono le funzioni e le definizioni specifiche per SQL Server, oltre a funzioni ODBC definite in SQL. h. Nelle **progetto** > **delle proprietà** > **cartelle VC + +**, aggiungere le seguenti directory di inclusione:  
   
- **\<unità sistema >: \Programmi\Microsoft SQL Server\110\SDK\Include** e questa directory di libreria:  
+   **\<unità sistema >: \Programmi\Microsoft SQL Server\110\SDK\Include** e questa directory di libreria:  
   
- **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
+   **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
   
-6.  Aggiungere le righe seguenti nel odbcsql.cpp. Il #define impedisce che le definizioni di OLE DB irrilevanti venga compilato.  
+6. Aggiungere le righe seguenti nel odbcsql.cpp. Il #define impedisce che le definizioni di OLE DB irrilevanti venga compilato.  
   
-    ```  
-    #define _SQLNCLI_ODBC_  
-    #include <sqlncli.h>  
-    ```  
+   ```  
+   #define _SQLNCLI_ODBC_  
+   #include <sqlncli.h>  
+   ```  
   
-     Si noti che il codice di esempio non utilizza effettivamente tutte le funzionalità native client, pertanto non sono necessari per poter compilare ed eseguire i passaggi precedenti. Ma il progetto è ora configurato per poter usare questa funzionalità. Per altre informazioni, vedere [SQL Server Native Client Programming](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).  
+    Si noti che il codice di esempio non utilizza effettivamente tutte le funzionalità native client, pertanto non sono necessari per poter compilare ed eseguire i passaggi precedenti. Ma il progetto è ora configurato per poter usare questa funzionalità. Per altre informazioni, vedere [SQL Server Native Client Programming](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).  
   
-7.  Specificare il driver da usare nel sottosistema ODBC. L'esempio passa l'attributo di stringa di connessione del DRIVER in come un argomento della riga di comando. Nelle **Project** > **delle proprietà** > **debug**, aggiungere questo argomento di comando:  
+7. Specificare il driver da usare nel sottosistema ODBC. L'esempio passa l'attributo di stringa di connessione del DRIVER in come un argomento della riga di comando. Nelle **Project** > **delle proprietà** > **debug**, aggiungere questo argomento di comando:  
   
-    ```  
-    DRIVER="SQL Server Native Client 11.0"  
-    ```  
+   ```  
+   DRIVER="SQL Server Native Client 11.0"  
+   ```  
   
-8.  Premere F5 per compilare ed eseguire l'applicazione. Si deve visualizzare una finestra di dialogo del driver che viene richiesto di immettere un database. Immettere `(localdb)\MSSQLLocalDB`e controllare **Usa connessione Trusted**. Premere **OK**. Verrà visualizzata una console con i messaggi che indicano una connessione riuscita. È visualizzato anche un prompt dei comandi in cui è possibile digitare in un'istruzione SQL. La schermata seguente mostra un esempio di query e i risultati:  
+8. Premere F5 per compilare ed eseguire l'applicazione. Si deve visualizzare una finestra di dialogo del driver che viene richiesto di immettere un database. Immettere `(localdb)\MSSQLLocalDB`e controllare **Usa connessione Trusted**. Premere **OK**. Verrà visualizzata una console con i messaggi che indicano una connessione riuscita. È visualizzato anche un prompt dei comandi in cui è possibile digitare in un'istruzione SQL. La schermata seguente mostra un esempio di query e i risultati:  
   
-     ![Output di query di esempio ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "output della query di esempio di ODBC raddata")  
+    ![Output di query di esempio ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "output della query di esempio di ODBC raddata")  
   
 ## <a name="see-also"></a>Vedere anche  
  [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

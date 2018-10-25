@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852414"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Panoramica del data binding WPF con LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
   
  XAML e LINQ to XML possono interagire in due modi:  
   
--   Poiché i file XAML corrispondono a codice XML ben formato, è possibile eseguirvi query e modificarli tramite tecnologie XML quale LINQ to XML.  
+- Poiché i file XAML corrispondono a codice XML ben formato, è possibile eseguirvi query e modificarli tramite tecnologie XML quale LINQ to XML.  
   
--   Poiché le query LINQ to XML rappresentano un'origine dati, possono essere usate come origine dati per l'associazione dati per gli elementi dell'interfaccia utente WPF.  
+- Poiché le query LINQ to XML rappresentano un'origine dati, possono essere usate come origine dati per l'associazione dati per gli elementi dell'interfaccia utente WPF.  
   
- In questa documentazione viene descritto il secondo scenario.  
+  In questa documentazione viene descritto il secondo scenario.  
   
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Associazione dati in Windows Presentation Foundation  
  L'associazione dati WPF consente a un elemento dell'interfaccia utente di associare una delle proprietà a un'origine dati. Un semplice esempio di questo comportamento è <xref:System.Windows.Controls.Label> il cui testo presenta il valore di una proprietà pubblica in un oggetto definito dall'utente. L'associazione dati WPF si basa sui componenti seguenti:  
@@ -52,13 +52,13 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
 ### <a name="dynamic-data-binding-in-wpf"></a>Data binding dinamico in WPF  
  Per impostazione predefinita, il data binding si verifica solo quando viene inizializzato l'elemento dell'interfaccia utente di destinazione. Questo comportamento è denominato associazione *unica*. Nella maggior parte dei casi, si tratta di una soluzione insufficiente. In genere una soluzione di data binding richiede la propagazione dinamica delle modifiche in fase di esecuzione in una delle seguenti modalità:  
   
--   L'associazione *unidirezionale* determina la propagazione automatica delle modifiche apportate a un lato. In generale, le modifiche apportate all'origine si riflettono nella destinazione, ma può essere utile anche l'inverso.  
+- L'associazione *unidirezionale* determina la propagazione automatica delle modifiche apportate a un lato. In generale, le modifiche apportate all'origine si riflettono nella destinazione, ma può essere utile anche l'inverso.  
   
--   Nell'associazione *bidirezionale* le modifiche apportate all'origine vengono automaticamente propagate alla destinazione e viceversa.  
+- Nell'associazione *bidirezionale* le modifiche apportate all'origine vengono automaticamente propagate alla destinazione e viceversa.  
   
- Affinché si verifichi l'associazione unidirezionale o bidirezionale, è necessario che l'origine implementi un meccanismo di notifica delle modifiche, ad esempio tramite l'implementazione dell'interfaccia <xref:System.ComponentModel.INotifyPropertyChanged> o l'uso di un modello *PropertyNameChanged* per ogni proprietà supportata.  
+  Affinché si verifichi l'associazione unidirezionale o bidirezionale, è necessario che l'origine implementi un meccanismo di notifica delle modifiche, ad esempio tramite l'implementazione dell'interfaccia <xref:System.ComponentModel.INotifyPropertyChanged> o l'uso di un modello *PropertyNameChanged* per ogni proprietà supportata.  
   
- Per altre informazioni sul data binding in WPF, vedere [Associazione dati (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
+  Per altre informazioni sul data binding in WPF, vedere [Associazione dati (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Proprietà dinamiche nelle classi LINQ to XML  
  La maggior parte delle classi LINQ to XML non è qualificata come origine dati dinamica WPF appropriata. Alcune delle informazioni più utili sono disponibili solo tramite metodi, non tramite proprietà, e le proprietà di queste classi non implementano le notifiche delle modifiche. Per supportare il data binding WPF, in LINQ to XML viene esposto un set di *proprietà dinamiche*.  
@@ -71,13 +71,13 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
 ### <a name="accessing-dynamic-properties"></a>Accesso alle proprietà dinamiche  
  Non è possibile accedere alle proprietà dinamiche delle classi <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XElement> come alle proprietà standard. Ad esempio, nei linguaggi conformi a CLR quale C# non è possibile:  
   
--   Accedere direttamente a queste proprietà in fase di compilazione. Le proprietà dinamiche sono invisibili per il compilatore e per la funzionalità IntelliSense di Visual Studio.  
+- Accedere direttamente a queste proprietà in fase di compilazione. Le proprietà dinamiche sono invisibili per il compilatore e per la funzionalità IntelliSense di Visual Studio.  
   
--   Individuare o accedere a queste proprietà tramite reflection .NET. Anche in fase di esecuzione, non si tratta di proprietà nel senso CLR di base.  
+- Individuare o accedere a queste proprietà tramite reflection .NET. Anche in fase di esecuzione, non si tratta di proprietà nel senso CLR di base.  
   
- In C# è possibile accedere alle proprietà dinamiche solo in fase di esecuzione tramite le funzionalità rese disponibili dallo spazio dei nomi <xref:System.ComponentModel>.  
+  In C# è possibile accedere alle proprietà dinamiche solo in fase di esecuzione tramite le funzionalità rese disponibili dallo spazio dei nomi <xref:System.ComponentModel>.  
   
- Al contrario, in un'origine XML è possibile accedere alle proprietà dinamiche tramite una notazione diretta nel seguente formato:  
+  Al contrario, in un'origine XML è possibile accedere alle proprietà dinamiche tramite una notazione diretta nel seguente formato:  
   
 ```  
 <object>.<dynamic-property>  

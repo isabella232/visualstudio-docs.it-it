@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829768"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
 La *stringa di query* è la parte di un URL che inizia con un punto interrogativo (?) e contiene informazioni arbitrarie nel formato *nome = valore*. Si supponga di avere un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denominata `WindowsApp1` che è ospitare in `servername`e di voler passare un valore per la variabile `username` quando l'applicazione viene avviata. L'aspetto dell'URL potrebbe essere simile al seguente:  
@@ -57,17 +57,17 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Per abilitare la stringa di query passando un'applicazione ClickOnce con MageUI.exe  
   
-1.  Aprire il prompt dei comandi .NET e digitare:  
+1. Aprire il prompt dei comandi .NET e digitare:  
   
-    ```cmd  
-    MageUI  
-    ```  
+   ```cmd  
+   MageUI  
+   ```  
   
-2.  Nel menu **File** selezionare **Apri**e aprire il manifesto di distribuzione per l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , che è il file con l'estensione `.application` .  
+2. Nel menu **File** selezionare **Apri**e aprire il manifesto di distribuzione per l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , che è il file con l'estensione `.application` .  
   
-3.  Selezionare il riquadro **Opzioni di distribuzione** nella finestra di navigazione a sinistra e selezionare la casella di controllo **Consenti passaggio di parametri URL all'applicazione** .  
+3. Selezionare il riquadro **Opzioni di distribuzione** nella finestra di navigazione a sinistra e selezionare la casella di controllo **Consenti passaggio di parametri URL all'applicazione** .  
   
-4.  Nel menu **File** selezionare **Salva**.  
+4. Nel menu **File** selezionare **Salva**.  
   
 > [!NOTE]
 >  In alternativa è possibile abilitare la stringa di query passando [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Selezionare la casella di controllo **Consenti passaggio di parametri URL all'applicazione** , a cui si accede aprendo **Proprietà progetto**selezionando la scheda **Pubblica** e facendo clic sul pulsante **Opzioni** e quindi selezionando **Manifesti**.  

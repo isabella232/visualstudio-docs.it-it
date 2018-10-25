@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872447"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente, ad esem
 #### <a name="menus"></a>Menu  
  Le voci di menu viene definito come un [Menu Element](../../extensibility/menu-element.md) nel `Menus` sezione. Menu di scelta deve avere `guid`, `id`, e `priority` gli attributi e un `Parent` elemento e anche i seguenti attributi aggiuntivi e gli elementi figlio:  
   
--   Oggetto `type` attributo che specifica se il menu deve essere visualizzato nell'IDE come un tipo di menu o una barra degli strumenti.  
+- Oggetto `type` attributo che specifica se il menu deve essere visualizzato nell'IDE come un tipo di menu o una barra degli strumenti.  
   
--   Oggetto [elemento Strings](../../extensibility/strings-element.md) che contiene un [elemento ButtonText](../../extensibility/buttontext-element.md), che specifica il titolo del menu di scelta dell'IDE e un [elemento CommandName](../../extensibility/commandname-element.md), che consente di specificare il nome utilizzato nel **comando** finestra per accedere al menu.  
+- Oggetto [elemento Strings](../../extensibility/strings-element.md) che contiene un [elemento ButtonText](../../extensibility/buttontext-element.md), che specifica il titolo del menu di scelta dell'IDE e un [elemento CommandName](../../extensibility/commandname-element.md), che consente di specificare il nome utilizzato nel **comando** finestra per accedere al menu.  
   
--   Flag opzionale. Oggetto [elemento Commandflag](../../extensibility/command-flag-element.md) può comparire in una definizione di menu per modificare il comportamento nell'IDE o l'aspetto.  
+- Flag opzionale. Oggetto [elemento Commandflag](../../extensibility/command-flag-element.md) può comparire in una definizione di menu per modificare il comportamento nell'IDE o l'aspetto.  
   
- Ogni `Menu` elemento deve avere un gruppo come elemento padre, a meno che non è un elemento, ad esempio una barra degli strumenti ancorato. Un menu ancorato è il proprio padre. Per altre informazioni sui menu e i valori per il `type` dell'attributo, vedere la [Menu Element](../../extensibility/menu-element.md) documentazione.  
+  Ogni `Menu` elemento deve avere un gruppo come elemento padre, a meno che non è un elemento, ad esempio una barra degli strumenti ancorato. Un menu ancorato è il proprio padre. Per altre informazioni sui menu e i valori per il `type` dell'attributo, vedere la [Menu Element](../../extensibility/menu-element.md) documentazione.  
   
- L'esempio seguente mostra un menu che viene visualizzato nella barra dei menu di Visual Studio, accanto al **strumenti** menu.  
+  L'esempio seguente mostra un menu che viene visualizzato nella barra dei menu di Visual Studio, accanto al **strumenti** menu.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Casella combinata  
  Casella combinata è definiti nel `Combos` sezione. Ogni `Combo` elemento rappresenta una casella di riepilogo a discesa nell'IDE. La casella di riepilogo può o potrebbe non essere accessibile in scrittura da parte degli utenti, in base al valore di `type` attributo della casella combinata. Combos contengono gli stessi elementi e il comportamento che i pulsanti hanno e può anche avere i seguenti attributi aggiuntivi:  
   
--   Oggetto `defaultWidth` attributo che specifica la larghezza in pixel.  
+- Oggetto `defaultWidth` attributo che specifica la larghezza in pixel.  
   
--   Un `idCommandList` attributo che specifica un elenco che contiene gli elementi che vengono visualizzati nella casella di riepilogo. L'elenco dei comandi deve essere dichiarato nello stesso `GuidSymbol` nodo che contiene la casella combinata.  
+- Un `idCommandList` attributo che specifica un elenco che contiene gli elementi che vengono visualizzati nella casella di riepilogo. L'elenco dei comandi deve essere dichiarato nello stesso `GuidSymbol` nodo che contiene la casella combinata.  
   
- Nell'esempio seguente definisce un elemento di casella combinata.  
+  Nell'esempio seguente definisce un elemento di casella combinata.  
   
 ```xml  
 <Combos>  

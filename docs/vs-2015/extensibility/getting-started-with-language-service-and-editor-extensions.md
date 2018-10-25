@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862762"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introduzione alle estensioni dell'editor e dei servizi di linguaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ ms.locfileid: "49227006"
   
  Di seguito sono riportati alcuni dei tipi di base di estensioni dell'editor:  
   
--   Le barre di scorrimento e i margini  
+- Le barre di scorrimento e i margini  
   
--   Tag  
+- Tag  
   
--   Aree di controllo  
+- Aree di controllo  
   
--   Opzioni  
+- Opzioni  
   
--   IntelliSense  
+- IntelliSense  
   
- Per altre informazioni sui punti di estensione di editor, vedere [servizio di linguaggio e punti di estensione Editor](../extensibility/language-service-and-editor-extension-points.md).  
+  Per altre informazioni sui punti di estensione di editor, vedere [servizio di linguaggio e punti di estensione Editor](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Distribuzione di estensioni di Editor  
  In Visual Studio, si distribuisce le estensioni dell'editor aggiungendo un file di metadati denominato vsixmanifest alla soluzione, la compilazione della soluzione, e quindi aggiungendo una copia dei file binari e il manifesto in una cartella in cui è noto a Visual Studio. Il file manifesto definisce le informazioni di base relativi all'estensione (ad esempio, nome, autore, versione e tipo di contenuto). Per altre informazioni su come distribuire le estensioni e il file manifesto VSIX, vedere [spedizione di estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  

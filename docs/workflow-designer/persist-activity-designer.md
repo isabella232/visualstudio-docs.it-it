@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ActivityDesigner Persist
+title: Finestra di progettazione del flusso di lavoro, ActivityDesigner Persist
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c7989f5cc37ec295f9fa778f2120dd372fd99a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51f74b5348c7e99824659ee713171bd71c5f522e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971116"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831342"
 ---
 # <a name="persist-activity-designer"></a>ActivityDesigner Persist
 
@@ -29,16 +29,16 @@ L'attività <xref:System.Activities.Statements.Persist> salva un flusso di lavor
 
 ### <a name="using-the-persist-activity-designer"></a>Utilizzo dell'ActivityDesigner Persist
 
-Il **Persist** ActivityDesigner è reperibile nel **Runtime** categoria del **della casella degli strumenti**, accessibile facendo clic il **della casella degli strumenti** scheda (in alternativa, selezionare **della casella degli strumenti** dal **vista** menu o CTRL + ALT + X.)
+Il **Persist** ActivityDesigner è reperibile nella **Runtime** categoria del **della casella degli strumenti**, accessibile facendo clic la **casella degli strumenti** scheda (in alternativa, selezionare **casella degli strumenti** dalle **visualizzazione** menu o CTRL + ALT + X.)
 
-Il **Persist** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione flussi di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Crea un <xref:System.Activities.Statements.Persist> attività con valore predefinito è **DisplayName** Persist. Il <xref:System.Activities.Activity.DisplayName%2A> possono essere modificati nell'intestazione del **Persist** ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà.
+Il **Persist** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Ciò consente di creare un <xref:System.Activities.Statements.Persist> attività con un valore predefinito **DisplayName** Persist. Il <xref:System.Activities.Activity.DisplayName%2A> possono essere modificati nell'intestazione del **Persist** ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà.
 
 ### <a name="the-persist-properties"></a>Proprietà di Persist
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Persist> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate nell'area di progettazione flussi di lavoro.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Persist> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate nell'area di progettazione del flusso di lavoro.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo dell'attività <xref:System.Activities.Statements.Persist>. Il valore predefinito è Persist. Sebbene il nome visualizzato non sia obbligatorio, se ne consiglia l'uso.|
 
 ## <a name="see-also"></a>Vedere anche

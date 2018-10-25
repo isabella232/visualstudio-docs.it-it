@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862086"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Creazione di applicazioni ClickOnce per la distribuzione da parte di terzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,13 +92,13 @@ Non tutti gli sviluppatori che creano le distribuzioni di ClickOnce prevede di d
   
  Esistono tre modi che il cliente possa firmare il manifesto di distribuzione in questa situazione:  
   
-1.  Il cliente può usare un certificato valido emesso da un'autorità di certificazione (CA).  
+1. Il cliente può usare un certificato valido emesso da un'autorità di certificazione (CA).  
   
-2.  Una variante di questo approccio, il cliente può scegliere di firmare il manifesto della distribuzione con un certificato autofirmato. Lo svantaggio è che causerà l'applicazione visualizzare le parole "Autore sconosciuto" quando l'utente viene richiesto se si desidera installarlo. Tuttavia, il vantaggio è che impedisce ai clienti più piccoli di dover spendere tempo e denaro richiesto per un certificato emesso da un'autorità di certificazione.  
+2. Una variante di questo approccio, il cliente può scegliere di firmare il manifesto della distribuzione con un certificato autofirmato. Lo svantaggio è che causerà l'applicazione visualizzare le parole "Autore sconosciuto" quando l'utente viene richiesto se si desidera installarlo. Tuttavia, il vantaggio è che impedisce ai clienti più piccoli di dover spendere tempo e denaro richiesto per un certificato emesso da un'autorità di certificazione.  
   
-3.  Infine, lo sviluppatore può includere il proprio certificato autofirmato nel pacchetto di installazione. Introduce i potenziali problemi con identità di applicazione illustrati in precedenza in questo argomento.  
+3. Infine, lo sviluppatore può includere il proprio certificato autofirmato nel pacchetto di installazione. Introduce i potenziali problemi con identità di applicazione illustrati in precedenza in questo argomento.  
   
- Lo svantaggio per il metodo di installazione distribuzione progetto è il tempo e denaro normalmente necessario per compilare un'applicazione di distribuzione personalizzato.  
+   Lo svantaggio per il metodo di installazione distribuzione progetto è il tempo e denaro normalmente necessario per compilare un'applicazione di distribuzione personalizzato.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Avere cliente Genera manifesto di distribuzione  
  Una terza strategia di distribuzione possibili è per presentare solo i file dell'applicazione e dell'applicazione disattivata al cliente. In questo scenario, il cliente è responsabile dell'uso di .NET Framework SDK per generare e firmare il manifesto della distribuzione.  

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898720"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiungere una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 
@@ -30,29 +30,30 @@ Ad esempio, in Domain-Specific Language Tools (strumenti DSL), il nome visualizz
 
 In questa procedura dettagliata, si crea un linguaggio specifico di dominio (DSL) che dispone di una proprietà che ha un valore predefinito in base alla proprietà Namespace predefinito del modello di rilevamento di Namespace. Per altre informazioni sulle proprietà di rilevamento, vedere [che definisce le proprietà di rilevamento](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
--   Il supporto degli strumenti DSL descrittori di proprietà di rilevamento. Tuttavia, la finestra di progettazione DSL non è utilizzabile per aggiungere una proprietà di rilevamento per una lingua. Pertanto, è necessario aggiungere codice personalizzato per definire e implementare la proprietà di rilevamento.
+- Il supporto degli strumenti DSL descrittori di proprietà di rilevamento. Tuttavia, la finestra di progettazione DSL non è utilizzabile per aggiungere una proprietà di rilevamento per una lingua. Pertanto, è necessario aggiungere codice personalizzato per definire e implementare la proprietà di rilevamento.
 
- Una proprietà di rilevamento dispone di due stati: rilevamento e aggiornata dall'utente. Proprietà di rilevamento hanno le caratteristiche seguenti:
+  Una proprietà di rilevamento dispone di due stati: rilevamento e aggiornata dall'utente. Proprietà di rilevamento hanno le caratteristiche seguenti:
 
--   Quando è in stato di rilevamento, viene calcolato il valore della proprietà di rilevamento e il valore viene aggiornato come le altre proprietà nella modifica del modello.
+- Quando è in stato di rilevamento, viene calcolato il valore della proprietà di rilevamento e il valore viene aggiornato come le altre proprietà nella modifica del modello.
 
--   Quando aggiornato in base allo stato utente, il valore della proprietà di rilevamento consente di mantenere il valore a cui l'utente ultima impostazione della proprietà.
+- Quando aggiornato in base allo stato utente, il valore della proprietà di rilevamento consente di mantenere il valore a cui l'utente ultima impostazione della proprietà.
 
--   Nel **proprietà** finestra, il **reimpostare** comando per la proprietà di rilevamento è abilitata solo quando la proprietà viene aggiornato in base allo stato utente. Il **reimpostare** comando imposta la proprietà di rilevamento dello stato di rilevamento.
+- Nel **proprietà** finestra, il **reimpostare** comando per la proprietà di rilevamento è abilitata solo quando la proprietà viene aggiornato in base allo stato utente. Il **reimpostare** comando imposta la proprietà di rilevamento dello stato di rilevamento.
 
--   Nel **proprietà** finestra quando la proprietà di rilevamento è in stato di rilevamento, il relativo valore viene visualizzato in un tipo di carattere normale.
+- Nel **proprietà** finestra quando la proprietà di rilevamento è in stato di rilevamento, il relativo valore viene visualizzato in un tipo di carattere normale.
 
--   Nel **proprietà** finestra, quando la proprietà di rilevamento viene aggiornato in base allo stato utente, il relativo valore viene visualizzato in grassetto.
+- Nel **proprietà** finestra, quando la proprietà di rilevamento viene aggiornato in base allo stato utente, il relativo valore viene visualizzato in grassetto.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 Prima di iniziare questa procedura dettagliata, è innanzitutto necessario installare questi componenti:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>Creare il progetto
 
@@ -718,33 +719,33 @@ Aggiungere codice per supportare il comportamento postcaricamento personalizzato
 
 Il passaggio successivo è compilare ed eseguire la finestra di progettazione DSL in una nuova istanza della [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] in modo che sia possibile verificare che funzioni correttamente, la proprietà di rilevamento.
 
-1.  Nel **compilare** menu, fare clic su **Ricompila soluzione**.
+1. Nel **compilare** menu, fare clic su **Ricompila soluzione**.
 
-2.  Scegliere **Avvia debug** dal menu **Debug**.
+2. Scegliere **Avvia debug** dal menu **Debug**.
 
-     La build sperimentale di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] consente di aprire la **debug** soluzione che contiene un file di test vuoto.
+    La build sperimentale di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] consente di aprire la **debug** soluzione che contiene un file di test vuoto.
 
-3.  Nelle **Esplora soluzioni**, fare doppio clic sul file Test.trackingPropertyDsl per aprirlo nella finestra di progettazione e quindi fare clic nell'area di progettazione.
+3. Nelle **Esplora soluzioni**, fare doppio clic sul file Test.trackingPropertyDsl per aprirlo nella finestra di progettazione e quindi fare clic nell'area di progettazione.
 
-     Si noti che nel **le proprietà** finestra per il diagramma, il **Namespace predefinito** proprietà è **DefaultNamespace**e il **elementi personalizzati** proprietà viene **0/0**.
+    Si noti che nel **le proprietà** finestra per il diagramma, il **Namespace predefinito** proprietà è **DefaultNamespace**e il **elementi personalizzati** proprietà viene **0/0**.
 
-4.  Trascinare un' **ExampleElement** elemento dalle **della casella degli strumenti** sulla superficie del diagramma.
+4. Trascinare un' **ExampleElement** elemento dalle **della casella degli strumenti** sulla superficie del diagramma.
 
-5.  Nel **delle proprietà** finestra per l'elemento, seleziona la **elemento Namespace** proprietà e modificare il valore da **DefaultNamespace** a  **OtherNamespace**.
+5. Nel **delle proprietà** finestra per l'elemento, seleziona la **elemento Namespace** proprietà e modificare il valore da **DefaultNamespace** a  **OtherNamespace**.
 
-     Si noti che il valore di **elemento Namespace** viene ora visualizzato in grassetto.
+    Si noti che il valore di **elemento Namespace** viene ora visualizzato in grassetto.
 
-6.  Nel **delle proprietà** finestra, fare doppio clic su **elemento Namespace**e quindi fare clic su **Reimposta**.
+6. Nel **delle proprietà** finestra, fare doppio clic su **elemento Namespace**e quindi fare clic su **Reimposta**.
 
-     Il valore della proprietà viene modificato in **DefaultNamespace**, e viene visualizzato il valore in un tipo di carattere normale.
+    Il valore della proprietà viene modificato in **DefaultNamespace**, e viene visualizzato il valore in un tipo di carattere normale.
 
-     Fare doppio clic su **Namespace elemento** nuovamente. Il **reimpostare** comando è disabilitato perché la proprietà è attualmente nello stato di rilevamento.
+    Fare doppio clic su **Namespace elemento** nuovamente. Il **reimpostare** comando è disabilitato perché la proprietà è attualmente nello stato di rilevamento.
 
-7.  Trascinare un altro **ExampleElement** dal **della casella degli strumenti** superficie del diagramma, le modifiche relative **elemento Namespace** al **OtherNamespace**.
+7. Trascinare un altro **ExampleElement** dal **della casella degli strumenti** superficie del diagramma, le modifiche relative **elemento Namespace** al **OtherNamespace**.
 
-8.  Fare clic nell'area di progettazione.
+8. Fare clic nell'area di progettazione.
 
-     Nel **delle proprietà** finestra per il diagramma, il valore di **elementi personalizzati** è ora **1 o 2**.
+    Nel **delle proprietà** finestra per il diagramma, il valore di **elementi personalizzati** è ora **1 o 2**.
 
 9. Change **Namespace predefinito** per il diagramma da **DefaultNamespace** al **NewNamespace**.
 

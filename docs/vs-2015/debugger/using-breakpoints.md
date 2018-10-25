@@ -46,12 +46,12 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b066ed3171ebd59d5c921fc795b1478bb9d2df32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925396"
 ---
 # <a name="using-breakpoints"></a>Uso di punti di interruzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,15 +78,15 @@ ms.locfileid: "49304889"
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Impostazione di un punto di interruzione nella finestra Stack di chiamate  
  È possibile interrompere l'esecuzione in corrispondenza dell'istruzione o della riga restituita da una funzione chiamante impostando un punto di interruzione nella finestra **Stack di chiamate** . Per altre informazioni sullo stack di chiamate, vedere [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md). L'esecuzione del debugger deve essere stata interrotta.  
   
-1.  Avviare il debug dell'applicazione e attendere che l'esecuzione venga interrotta (ad esempio, in un punto di interruzione). Aprire la finestra **Stack di chiamate** (**Debug/Windows/Stack di chiamate**o **CTRL+ALT+C**).  
+1. Avviare il debug dell'applicazione e attendere che l'esecuzione venga interrotta (ad esempio, in un punto di interruzione). Aprire la finestra **Stack di chiamate** (**Debug/Windows/Stack di chiamate**o **CTRL+ALT+C**).  
   
-2.  Fare clic con il pulsante destro del muse sulla funzione di chiamata e quindi selezionare **Punto di interruzione/Inserisci punto di interruzione**oppure usare semplicemente il tasto di scelta rapida **F9**.  
+2. Fare clic con il pulsante destro del muse sulla funzione di chiamata e quindi selezionare **Punto di interruzione/Inserisci punto di interruzione**oppure usare semplicemente il tasto di scelta rapida **F9**.  
   
-3.  Sul margine sinistro dello stack di chiamate, accanto al nome della chiamata di funzione, verrà visualizzato il simbolo del punto di interruzione.  
+3. Sul margine sinistro dello stack di chiamate, accanto al nome della chiamata di funzione, verrà visualizzato il simbolo del punto di interruzione.  
   
- Nella finestra **Punti di interruzione** , il punto di interruzione dello stack di chiamate viene visualizzato come indirizzo con una posizione di memoria corrispondente alla successiva istruzione eseguibile nella funzione. Il debugger interrompe l'esecuzione in corrispondenza dell'istruzione.  
+   Nella finestra **Punti di interruzione** , il punto di interruzione dello stack di chiamate viene visualizzato come indirizzo con una posizione di memoria corrispondente alla successiva istruzione eseguibile nella funzione. Il debugger interrompe l'esecuzione in corrispondenza dell'istruzione.  
   
- Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, vedere [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+   Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, vedere [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Impostazione di un punto di interruzione nella finestra Disassembly  
  Per impostare un punto di interruzione in corrispondenza di un'istruzione di assembly, è necessario che il debugger sia in modalità di interruzione.  
@@ -98,25 +98,25 @@ ms.locfileid: "49304889"
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> Impostare un punto di interruzione dei dati (solo C++ nativo)  
  I punti di interruzione dei dati interrompono l'esecuzione quando un valore archiviato in un indirizzo di memoria specificato viene modificato. Se il valore viene letto ma non modificato, l'esecuzione non viene interrotta. Per impostare i punti di interruzione dei dati, è necessario che il debugger sia in modalità di interruzione.  
   
-1.  Avviare il debug dell'applicazione e attendere che venga raggiunto un punto di interruzione. Nel menu **Debug** scegliere **Nuovo punto di interruzione/Punto di interruzione dei dati** (o aprire la finestra **Punti di interruzione** e scegliere **Nuovo/Punto di interruzione dei dati**.  
+1. Avviare il debug dell'applicazione e attendere che venga raggiunto un punto di interruzione. Nel menu **Debug** scegliere **Nuovo punto di interruzione/Punto di interruzione dei dati** (o aprire la finestra **Punti di interruzione** e scegliere **Nuovo/Punto di interruzione dei dati**.  
   
-2.  Nella casella **Indirizzo** digitare un indirizzo di memoria o un'espressione che restituisca un indirizzo di memoria. Ad esempio, digitare `&avar` per eseguire l'interruzione quando viene modificato il contenuto della variabile `avar` .  
+2. Nella casella **Indirizzo** digitare un indirizzo di memoria o un'espressione che restituisca un indirizzo di memoria. Ad esempio, digitare `&avar` per eseguire l'interruzione quando viene modificato il contenuto della variabile `avar` .  
   
-3.  Nell'elenco a discesa **Conteggio byte** selezionare il numero di byte che si desidera controllare tramite il debugger. Ad esempio, se si seleziona **4**, il debugger controllerà i quattro byte a partire da `&avar` e si interromperà se viene modificato il valore di uno di questi byte.  
+3. Nell'elenco a discesa **Conteggio byte** selezionare il numero di byte che si desidera controllare tramite il debugger. Ad esempio, se si seleziona **4**, il debugger controllerà i quattro byte a partire da `&avar` e si interromperà se viene modificato il valore di uno di questi byte.  
   
- Tenere presente che i punti di interruzione dei dati dipendono dall'applicabilità di indirizzi di memoria specifici.  
+   Tenere presente che i punti di interruzione dei dati dipendono dall'applicabilità di indirizzi di memoria specifici.  
   
--   L'indirizzo di una variabile cambia da una sessione di debug a quella successiva. I punti di interruzione dei dati vengono disabilitati automaticamente alla fine di ogni sessione di debug.  
+- L'indirizzo di una variabile cambia da una sessione di debug a quella successiva. I punti di interruzione dei dati vengono disabilitati automaticamente alla fine di ogni sessione di debug.  
   
--   Se si imposta un punto di interruzione dei dati in una variabile locale, il punto di interruzione resta abilitato quando la funzione termina, ma l'indirizzo di memoria non è più applicabile e il comportamento del punto di interruzione è imprevedibile. Se si imposta un punto di interruzione dei dati su una variabile locale, è consigliabile rimuoverlo o disabilitarlo prima che la funzione termini.  
+- Se si imposta un punto di interruzione dei dati in una variabile locale, il punto di interruzione resta abilitato quando la funzione termina, ma l'indirizzo di memoria non è più applicabile e il comportamento del punto di interruzione è imprevedibile. Se si imposta un punto di interruzione dei dati su una variabile locale, è consigliabile rimuoverlo o disabilitarlo prima che la funzione termini.  
   
- I punti di interruzione dei dati non funzionano nei seguenti casi:  
+  I punti di interruzione dei dati non funzionano nei seguenti casi:  
   
--   Un processo di cui non viene eseguito il debug scrive nella posizione di memoria  
+- Un processo di cui non viene eseguito il debug scrive nella posizione di memoria  
   
--   La posizione di memoria è condivisa tra due o più processi  
+- La posizione di memoria è condivisa tra due o più processi  
   
--   La posizione di memoria viene aggiornata all'interno del kernel. Ad esempio, se passata alla funzione `ReadFile` di Windows a 32 bit, la memoria viene aggiornata dalla modalità kernel e il debugger non viene interrotto durante la scrittura nella memoria.  
+- La posizione di memoria viene aggiornata all'interno del kernel. Ad esempio, se passata alla funzione `ReadFile` di Windows a 32 bit, la memoria viene aggiornata dalla modalità kernel e il debugger non viene interrotto durante la scrittura nella memoria.  
   
 ## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Impostazione di un punto di interruzione con un indirizzo di memoria (solo C++ nativo)  
  È possibile anche usare l'indirizzo di un oggetto per impostare un punto di interruzione in un metodo chiamato per un'istanza specifica di una classe.  Di seguito è riportato un esempio:  
@@ -147,48 +147,48 @@ ms.locfileid: "49304889"
 ## <a name="breakpoint-conditions"></a>Condizioni punto di interruzione  
  È possibile controllare dove e quando un punto di interruzione viene eseguito impostando le condizioni.  
   
-1.  Fare clic con il pulsante destro del mouse sul punto di interruzione o passare il mouse sul punto di interruzione e scegliere l'icona di impostazioni.  
+1. Fare clic con il pulsante destro del mouse sul punto di interruzione o passare il mouse sul punto di interruzione e scegliere l'icona di impostazioni.  
   
-2.  Nel menu di scelta rapida, selezionare **Condizioni**. Viene visualizzata la finestra **Impostazioni del punto di interruzione** :  
+2. Nel menu di scelta rapida, selezionare **Condizioni**. Viene visualizzata la finestra **Impostazioni del punto di interruzione** :  
   
- ![Impostazioni punto di interruzione](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Impostazioni punto di interruzione](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
- Quando si seleziona la casella **Condizioni** , la finestra si espande per visualizzare i diversi tipi di condizioni.  
+   Quando si seleziona la casella **Condizioni** , la finestra si espande per visualizzare i diversi tipi di condizioni.  
   
- **Espressione condizionale:** quando si seleziona Espressione condizionale, è possibile scegliere due condizioni: **È true** e **Se modificato**. Scegliere **È true** se si desidera interrompere l'esecuzione quando l'espressione viene soddisfatta, oppure scegliere **Se modificato** se si desidera interrompere l'esecuzione quando il valore dell'espressione è cambiato.  
+   **Espressione condizionale:** quando si seleziona Espressione condizionale, è possibile scegliere due condizioni: **È true** e **Se modificato**. Scegliere **È true** se si desidera interrompere l'esecuzione quando l'espressione viene soddisfatta, oppure scegliere **Se modificato** se si desidera interrompere l'esecuzione quando il valore dell'espressione è cambiato.  
   
- Nell'esempio seguente il punto di interruzione viene impostato in modo che venga raggiunto solo quando il valore di `testInt` è **4**:  
+   Nell'esempio seguente il punto di interruzione viene impostato in modo che venga raggiunto solo quando il valore di `testInt` è **4**:  
   
- ![Condizione punto di interruzione è true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+   ![Condizione punto di interruzione è true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
   
- Nell'esempio seguente il punto di interruzione viene impostato in modo che venga raggiunto solo quando il valore di `testInt` viene modificato:  
+   Nell'esempio seguente il punto di interruzione viene impostato in modo che venga raggiunto solo quando il valore di `testInt` viene modificato:  
   
- ![Punto di interruzione quando modificato](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
+   ![Punto di interruzione quando modificato](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
   
- Il comportamento del campo Se modificato è diverso per i diversi linguaggi di programmazione. Se si sceglie **Se modificato** per il codice nativo, la prima valutazione della condizione non viene considerata una modifica dal debugger, pertanto il punto di interruzione non viene raggiunto alla prima valutazione. Se si sceglie **Se modificato** per il codice gestito, il punto di interruzione viene raggiunto alla prima valutazione dopo la selezione di **Se modificato** .  
+   Il comportamento del campo Se modificato è diverso per i diversi linguaggi di programmazione. Se si sceglie **Se modificato** per il codice nativo, la prima valutazione della condizione non viene considerata una modifica dal debugger, pertanto il punto di interruzione non viene raggiunto alla prima valutazione. Se si sceglie **Se modificato** per il codice gestito, il punto di interruzione viene raggiunto alla prima valutazione dopo la selezione di **Se modificato** .  
   
- Se si imposta una condizione del punto di interruzione con sintassi non valida, viene visualizzato un messaggio di avviso. Se viene specificata una condizione del punto di interruzione con sintassi valida ma con semantica non valida, viene visualizzato un messaggio di avviso la prima volta che si raggiunge il punto di interruzione. In entrambi i casi, il debugger interrompe l'esecuzione quando si raggiunge il punto di interruzione non valido. Il punto di interruzione viene ignorato solo se la condizione è valida e restituisce `false`.  
+   Se si imposta una condizione del punto di interruzione con sintassi non valida, viene visualizzato un messaggio di avviso. Se viene specificata una condizione del punto di interruzione con sintassi valida ma con semantica non valida, viene visualizzato un messaggio di avviso la prima volta che si raggiunge il punto di interruzione. In entrambi i casi, il debugger interrompe l'esecuzione quando si raggiunge il punto di interruzione non valido. Il punto di interruzione viene ignorato solo se la condizione è valida e restituisce `false`.  
   
- La condizione può essere una qualsiasi espressione valida riconosciuta dal debugger. Per altre informazioni sulle espressioni valide, vedere [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
+   La condizione può essere una qualsiasi espressione valida riconosciuta dal debugger. Per altre informazioni sulle espressioni valide, vedere [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Uso di ID oggetto in condizioni del punto di interruzione (C# e F#)  
  Possono esistere situazioni in cui si vuole osservare il comportamento di un oggetto specifico, ad esempio si potrebbe voler scoprire perché un oggetto è stato inserito più volte in una raccolta. In C# e F# è possibile creare ID oggetto per istanze specifiche dei [tipi riferimento](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) e usarle nelle condizioni del punto di interruzione. L'ID oggetto viene generato dai servizi di debug di Common Language Runtime (CLR) e associato all'oggetto.  Per creare un ID oggetto, procedere come segue:  
   
-1.  Impostare un punto di interruzione nel codice dopo la creazione dell'oggetto.  
+1. Impostare un punto di interruzione nel codice dopo la creazione dell'oggetto.  
   
-2.  Avviare il debug e quando l'esecuzione si arresta nel punto di interruzione, trovare il punto di interruzione nella finestra **Variabili locali** , fare clic con il pulsante destro del mouse su di esso e scegliere **Crea ID oggetto**.  
+2. Avviare il debug e quando l'esecuzione si arresta nel punto di interruzione, trovare il punto di interruzione nella finestra **Variabili locali** , fare clic con il pulsante destro del mouse su di esso e scegliere **Crea ID oggetto**.  
   
-     Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Si tratta dell'ID oggetto.  
+    Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Si tratta dell'ID oggetto.  
   
-3.  Aggiungere un nuovo punto di interruzione condizionale nella posizione da analizzare, ad esempio il momento in cui l'oggetto viene aggiunto alla raccolta.  
+3. Aggiungere un nuovo punto di interruzione condizionale nella posizione da analizzare, ad esempio il momento in cui l'oggetto viene aggiunto alla raccolta.  
   
-4.  Usare l'ID oggetto nel campo Espressione condizionale. Ad esempio, se c'è una variabile `item` che fa riferimento all'oggetto da aggiungere alla raccolta, inserire **item == $n**, dove **n** è il numero ID dell'oggetto.  
+4. Usare l'ID oggetto nel campo Espressione condizionale. Ad esempio, se c'è una variabile `item` che fa riferimento all'oggetto da aggiungere alla raccolta, inserire **item == $n**, dove **n** è il numero ID dell'oggetto.  
   
-     L'esecuzione si interromperà in corrispondenza del punto in cui l'oggetto deve essere aggiunto alla raccolta.  
+    L'esecuzione si interromperà in corrispondenza del punto in cui l'oggetto deve essere aggiunto alla raccolta.  
   
- Se in un secondo momento si vuole eliminare l'ID oggetto, fare doppio con il pulsante destro del mouse nella finestra **Variabili locali** e scegliere **Elimina ID oggetto**.  
+   Se in un secondo momento si vuole eliminare l'ID oggetto, fare doppio con il pulsante destro del mouse nella finestra **Variabili locali** e scegliere **Elimina ID oggetto**.  
   
- Notare che gli ID oggetto creano riferimenti deboli e non impediscono all'oggetto di essere sottoposto a Garbage Collection. Sono validi solo per la sessione di debug corrente.  
+   Notare che gli ID oggetto creano riferimenti deboli e non impediscono all'oggetto di essere sottoposto a Garbage Collection. Sono validi solo per la sessione di debug corrente.  
   
 ## <a name="hit-count"></a>Numero di passaggi  
  Se si ritiene che un ciclo nel codice inizi a presentare un comportamento errato dopo alcune iterazioni, è possibile impostare un punto di interruzione per arrestare l'esecuzione dopo un numero specificato di passaggi alla riga di codice associata, anziché premere ripetutamente **F5** per raggiungere il livello di iterazione.  
@@ -202,17 +202,17 @@ ms.locfileid: "49304889"
   
  Nella finestra **Impostazioni del punto di interruzione**impostare la condizione su **Filtro**. Immettere una o più delle espressioni seguenti.  
   
--   MachineName = "name"  
+- MachineName = "name"  
   
--   ProcessId = value  
+- ProcessId = value  
   
--   ProcessName = "name"  
+- ProcessName = "name"  
   
--   ThreadId = value  
+- ThreadId = value  
   
--   ThreadName = "name"  
+- ThreadName = "name"  
   
- Racchiudere i valori String tra virgolette doppie. È possibile combinare clausole usando `&` (AND), `||` (OR), `!` (NOT) e le parentesi.  
+  Racchiudere i valori String tra virgolette doppie. È possibile combinare clausole usando `&` (AND), `||` (OR), `!` (NOT) e le parentesi.  
   
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Azioni dei punti di interruzione e punti di analisi  
  Un punto di analisi è un punto di interruzione che visualizza un messaggio nella finestra Output. Un punto di analisi può fungere da istruzione di analisi temporanea nel linguaggio di programmazione.  

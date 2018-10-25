@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058724"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853980"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Errore: Debug non è&#39;t possibili perché nel sistema è attivato un Debugger del Kernel
 Quando si esegue il debug del codice gestito, è possibile che venga visualizzato il seguente messaggio di errore:  
@@ -34,27 +34,27 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  Questo messaggio viene visualizzato quando si tenta di eseguire il debug di codice gestito:  
   
--   in un sistema [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] avviato in modalità debug.  
+- in un sistema [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] avviato in modalità debug.  
   
--   l'applicazione utilizzare CLR versione CLR 2.0, 3.0 o 3.5.  
+- l'applicazione utilizzare CLR versione CLR 2.0, 3.0 o 3.5.  
   
 ## <a name="solution"></a>Soluzione  
   
 #### <a name="to-fix-this-problem"></a>Per risolvere il problema  
   
--   Aggiornare l'applicazione per utilizzare CLR versione 4.0 o 4.5  
+- Aggiornare l'applicazione per utilizzare CLR versione 4.0 o 4.5  
   
-     -oppure-  
+   -oppure-  
   
--   Disabilitare il debug del kernel ed eseguire il debug in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Disabilitare il debug del kernel ed eseguire il debug in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     -oppure-  
+   -oppure-  
   
--   Eseguire il debug con il debugger del kernel anziché [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Eseguire il debug con il debugger del kernel anziché [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     -oppure-  
+   -oppure-  
   
--   Nel debugger del kernel disabilitare le eccezioni in modalità utente.  
+- Nel debugger del kernel disabilitare le eccezioni in modalità utente.  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Per disabilitare il debug del kernel nella sessione corrente  
   

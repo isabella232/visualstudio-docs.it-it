@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879116"
 ---
 # <a name="performance-session-properties"></a>Proprietà della sessione di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Una **sessione di prestazioni** consente di configurare le impostazioni che dete
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- È possibile creare una **sessione di prestazioni** eseguendo la **Creazione guidata sessione di prestazioni** o creando manualmente una sessione. La **sessione di prestazioni** viene visualizzata in **Esplora prestazioni** dopo che è stata creata la **sessione di prestazioni**.  
+  È possibile creare una **sessione di prestazioni** eseguendo la **Creazione guidata sessione di prestazioni** o creando manualmente una sessione. La **sessione di prestazioni** viene visualizzata in **Esplora prestazioni** dopo che è stata creata la **sessione di prestazioni**.  
   
- Per visualizzare le proprietà della **sessione di prestazioni**, selezionare il nome della sessione in **Esplora prestazioni**, fare clic con il pulsante destro del mouse e quindi selezionare **Proprietà**.  
+  Per visualizzare le proprietà della **sessione di prestazioni**, selezionare il nome della sessione in **Esplora prestazioni**, fare clic con il pulsante destro del mouse e quindi selezionare **Proprietà**.  
   
- La sessione di prestazioni presenta le pagine delle proprietà seguenti:  
+  La sessione di prestazioni presenta le pagine delle proprietà seguenti:  
   
 ## <a name="general"></a>Generale  
  Queste impostazioni consentono di selezionare il metodo di profilatura, aggiungere dati di durata e raccolta di oggetti .NET e specificare il percorso e le convenzioni di denominazione predefiniti del rapporto.  
@@ -59,17 +59,17 @@ Una **sessione di prestazioni** consente di configurare le impostazioni che dete
 ## <a name="sampling"></a>Campionamento  
  Queste impostazioni consentono di selezionare l'evento e l'intervallo di campionamento quando si usa il campionamento come metodo di profilatura. Un evento di campionamento viene usato per raccogliere i dati di profilatura secondo l'intervallo specificato. Ad esempio, se l'evento di campionamento è costituito dai cicli di clock e l'intervallo di campionamento è impostato su 10.000.000, i dati di profilatura verranno raccolti ogni 10 milioni di cicli di clock. Sono disponibili i quattro tipi di eventi di campionamento seguenti:  
   
--   Cicli di clock per i problemi legati alla CPU  
+- Cicli di clock per i problemi legati alla CPU  
   
--   Errori di pagina per i problemi relativi alla memoria  
+- Errori di pagina per i problemi relativi alla memoria  
   
--   Chiamate di sistema per i problemi associati all'I/O  
+- Chiamate di sistema per i problemi associati all'I/O  
   
--   Contatori di prestazioni per i problemi di prestazioni ridotte  
+- Contatori di prestazioni per i problemi di prestazioni ridotte  
   
--   È possibile specificare eventi di campionamento aggiuntivi in base ai contatori delle prestazioni disponibili.  
+- È possibile specificare eventi di campionamento aggiuntivi in base ai contatori delle prestazioni disponibili.  
   
- Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).  
+  Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).  
   
 ## <a name="binary"></a>Binario  
  Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si esegue la profilatura di My.DLL e si sceglie di non rilocare il file binario instrumentato, viene creata una copia di backup di My.DLL denominata My.Orig.DLL. Successivamente, My.DLL viene modificato con l'inserimento di probe per la raccolta dei dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.  

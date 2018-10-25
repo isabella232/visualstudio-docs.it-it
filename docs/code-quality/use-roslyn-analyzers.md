@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817041"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurare e usare le regole dell'analizzatore Roslyn
 
@@ -121,15 +121,15 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 È possibile eliminare uno o molti dati diagnostici dalle **elenco errori** quelle che si desidera eliminare, selezionando e facendo clic e **Suppress** > **In origine**  oppure **sopprimere** > **nel File di eliminazione**.
 
-   - Se si seleziona **nell'origine**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del linguaggio c# [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable avviso](/dotnet/visual-basic/language-reference/directives/directives) direttiva che viene aggiunto al codice sorgente.
+- Se si seleziona **nell'origine**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del linguaggio c# [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable avviso](/dotnet/visual-basic/language-reference/directives/directives) direttiva che viene aggiunto al codice sorgente.
 
-      ![Anteprima di aggiunta avviso #pragma nel file di codice](media/pragma-warning-preview.png)
+   ![Anteprima di aggiunta avviso #pragma nel file di codice](media/pragma-warning-preview.png)
 
-   - Se si seleziona **File di eliminazione**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo che viene aggiunto al file le ulteriori eliminazioni globali.
+- Se si seleziona **File di eliminazione**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo che viene aggiunto al file le ulteriori eliminazioni globali.
 
-      ![Anteprima di aggiunta attributo SuppressMessage per file di eliminazione](media/preview-changes-in-suppression-file.png)
+   ![Anteprima di aggiunta attributo SuppressMessage per file di eliminazione](media/preview-changes-in-suppression-file.png)
 
-   Nel **Anteprima modifiche** finestra di dialogo, seleziona **applica**.
+Nel **Anteprima modifiche** finestra di dialogo, seleziona **applica**.
 
 Il **elenco errori** Visualizza diagnostica o regola violazioni, sia da analisi di codice in tempo reale e di compilazione. Poiché i dati di diagnostica di compilazione può essere non aggiornato, ad esempio, se è stato modificato il codice per correggere la violazione ma non sono state ricreate, Impossibile eliminare questi dati diagnostici dal **elenco errori**. Tuttavia, la diagnostica di analisi in tempo reale o IntelliSense, sono sempre aggiornati sulle origini correnti e può essere eliminata dal **elenco errori**. Se l'opzione di eliminazione è disabilitato nel menu di scelta, o nel contesto, è probabile perché ne hai uno o più compilazione diagnostica nella selezione. Per escludere i dati di diagnostica di compilazione dalla selezione, passare il **elenco errori** filtro di origine dal **compilazione + IntelliSense** al **solo Intellisense**. Selezionare quindi i dati di diagnostica che si desidera eliminare e procedere come descritto in precedenza.
 

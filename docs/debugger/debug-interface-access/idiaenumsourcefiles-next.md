@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsourcefiles:: Next | Documenti Microsoft'
+title: Idiaenumsourcefiles | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca815309009ee8e43c17fb8a579c055e75c684e0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fef2d096ca522a6f6f2a05a081fb5a5a494e168c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819928"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
-Recupera un numero specificato di file di origine nella sequenza di enumerazione.  
+Recupera un determinato numero di file di origine nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,7 +39,7 @@ HRESULT Next (
  [in] Il numero di file di origine nell'enumeratore deve essere recuperato.  
   
  rgelt  
- [out] Matrice che deve essere compilato con la [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) gli oggetti che rappresentano i file di origine desiderato.  
+ [out] Matrice che deve essere compilato con il [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) gli oggetti che rappresentano i file di origine desiderato.  
   
  pceltFetched  
  [out] Restituisce il numero di file di origine nell'enumeratore recuperata.  

@@ -15,12 +15,12 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 661c812625856551f2f6c8194fa97e5df21efbaf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8474190b6b140883a43555f5dc35091daecebe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923199"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Procedura dettagliata: personalizzazione della visualizzazione di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,26 +52,26 @@ ms.locfileid: "49199043"
   
 ## <a name="defining-the-content-type"></a>Definizione del tipo di contenuto  
   
-1.  Aggiungere un file di classe e assegnargli il nome `ViewPropertyModifier`.  
+1. Aggiungere un file di classe e assegnargli il nome `ViewPropertyModifier`.  
   
-2.  Aggiungere il codice seguente `using` direttive:  
+2. Aggiungere il codice seguente `using` direttive:  
   
-     [!code-csharp[VSSDKViewPropertyTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#1)]
-     [!code-vb[VSSDKViewPropertyTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#1)]  
+    [!code-csharp[VSSDKViewPropertyTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#1)]
+    [!code-vb[VSSDKViewPropertyTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#1)]  
   
-3.  Dichiarare una classe denominata `TestViewCreationListener` che eredita da <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Esportare questa classe con gli attributi seguenti:  
+3. Dichiarare una classe denominata `TestViewCreationListener` che eredita da <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Esportare questa classe con gli attributi seguenti:  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> Per specificare il tipo di contenuto a cui si applica questo listener.  
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> Per specificare il tipo di contenuto a cui si applica questo listener.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> Per specificare il ruolo di questo listener.  
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> Per specificare il ruolo di questo listener.  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#2)]
      [!code-vb[VSSDKViewPropertyTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#2)]  
   
-4.  In questa classe, importare il <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
+4. In questa classe, importare il <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
   
-     [!code-csharp[VSSDKViewPropertyTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#3)]
-     [!code-vb[VSSDKViewPropertyTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#3)]  
+    [!code-csharp[VSSDKViewPropertyTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#3)]
+    [!code-vb[VSSDKViewPropertyTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#3)]  
   
 ## <a name="changing-the-view-properties"></a>Modifica delle proprietà di visualizzazione  
   

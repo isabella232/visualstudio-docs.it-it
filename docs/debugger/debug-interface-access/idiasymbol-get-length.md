@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_length | Documenti Microsoft
+title: Get_length | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d58442f0b6e95732dab5a2bc5702e6c500d70a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9f99a2012d0c3f009540c988df6e41b0a7d0cf4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844523"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 Recupera il numero di bit o byte di memoria utilizzata dall'oggetto rappresentato da questo simbolo.  
@@ -34,7 +34,7 @@ HRESULT get_length (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il numero di byte o bit di memoria utilizzata dall'oggetto rappresentato da questo simbolo.  
+ [out] Restituisce il numero di byte o bit di memoria usata dall'oggetto rappresentato da questo simbolo.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
@@ -43,7 +43,7 @@ HRESULT get_length (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- Se il [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md) del simbolo è `LocIsBitField`, la lunghezza restituita da questo metodo è in bit; in caso contrario, la lunghezza in byte per tutti gli altri tipi di percorso.  
+ Se il [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) del simbolo è `LocIsBitField`, la lunghezza restituita da questo metodo è espressa in bit; in caso contrario, la lunghezza è espressa in byte per tutti gli altri tipi di percorso.  
   
 ## <a name="example"></a>Esempio  
   
@@ -58,8 +58,8 @@ pSymbol->get_length( &length );
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 7.0 DIA SDK|  
+|Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md)
+ [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)

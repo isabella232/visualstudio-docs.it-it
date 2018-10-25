@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a45466b441fc8964b0b3a715acbd95b920e3392
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa08a132c752b5bdde7ba2b497a6bd206e8f2972
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843847"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagrammi dei componenti UML: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
   
  La creazione dei diagrammi dei componenti comporta diversi vantaggi:  
   
--   Il concetto di progettazione in relazione ai blocchi principali consente al team di sviluppo di comprendere una progettazione esistente e di crearne una nuova.  
+- Il concetto di progettazione in relazione ai blocchi principali consente al team di sviluppo di comprendere una progettazione esistente e di crearne una nuova.  
   
--   Considerando il sistema come una raccolta di componenti con interfacce fornite e richieste ben definite, è possibile migliorare la separazione tra i componenti. Questa operazione consente a sua volta di comprendere la progettazione più facilmente e di modificarla qualora vengano modificati i requisiti.  
+- Considerando il sistema come una raccolta di componenti con interfacce fornite e richieste ben definite, è possibile migliorare la separazione tra i componenti. Questa operazione consente a sua volta di comprendere la progettazione più facilmente e di modificarla qualora vengano modificati i requisiti.  
   
- È possibile usare un diagramma dei componenti per rappresentare la progettazione indipendentemente dalla lingua o dalla piattaforma usata.  
+  È possibile usare un diagramma dei componenti per rappresentare la progettazione indipendentemente dalla lingua o dalla piattaforma usata.  
   
 ##  <a name="OtherDiagrams"></a> Relazione con altri diagrammi  
  È possibile utilizzare un diagramma dei componenti insieme ad altri diagrammi.  
@@ -118,32 +118,32 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
   
 ##### <a name="to-add-ports-to-a-component"></a>Per aggiungere le porte a un componente  
   
-1.  Nella casella degli strumenti, fare clic su **interfaccia fornita** oppure **interfaccia richiesta**.  
+1. Nella casella degli strumenti, fare clic su **interfaccia fornita** oppure **interfaccia richiesta**.  
   
-2.  Fare clic sul componente a cui si desidera aggiungere la porta.  
+2. Fare clic sul componente a cui si desidera aggiungere la porta.  
   
-     Una porta verrà visualizzata sul limite del componente.  
+    Una porta verrà visualizzata sul limite del componente.  
   
-     Una nuova interfaccia verrà creata come tipo della porta. Questa interfaccia viene visualizzata **Esplora modelli UML**.  
+    Una nuova interfaccia verrà creata come tipo della porta. Questa interfaccia viene visualizzata **Esplora modelli UML**.  
   
-3.  Trascinare la porta sul limite del componente per posizionarla nel punto desiderato.  
+3. Trascinare la porta sul limite del componente per posizionarla nel punto desiderato.  
   
-4.  Trascinare l'etichetta della porta per regolarne la posizione.  
+4. Trascinare l'etichetta della porta per regolarne la posizione.  
   
-5.  Fare clic sull'etichetta per modificarla. L'etichetta mostra il nome dell'interfaccia. Se si modifica l'etichetta, si modificherà il nome dell'interfaccia.  
+5. Fare clic sull'etichetta per modificarla. L'etichetta mostra il nome dell'interfaccia. Se si modifica l'etichetta, si modificherà il nome dell'interfaccia.  
   
- Se si desidera elencare gli attributi e le operazioni dell'interfaccia, è possibile aggiungerli all'interfaccia in Esplora modelli UML. In alternativa, è possibile trascinare l'interfaccia da Esplora modelli UML in un diagramma classi e aggiungere le operazioni e gli attributi in tale posizione.  
+   Se si desidera elencare gli attributi e le operazioni dell'interfaccia, è possibile aggiungerli all'interfaccia in Esplora modelli UML. In alternativa, è possibile trascinare l'interfaccia da Esplora modelli UML in un diagramma classi e aggiungere le operazioni e gli attributi in tale posizione.  
   
 ### <a name="linking-between-components"></a>Collegamento tra componenti  
  Usare una dipendenza (4) per mostrare che il requisito di un componente può essere soddisfatto dalle operazioni o dai servizi forniti da un altro componente.  
   
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Per mostrare che un'interfaccia fornita può soddisfare un'interfaccia richiesta  
   
-1.  Nella casella degli strumenti, fare clic su **dipendenza**.  
+1. Nella casella degli strumenti, fare clic su **dipendenza**.  
   
-2.  Fare clic sulla porta con l'interfaccia richiesta in un componente, quindi fare clic sulla porta con l'interfaccia fornita in un altro componente.  
+2. Fare clic sulla porta con l'interfaccia richiesta in un componente, quindi fare clic sulla porta con l'interfaccia fornita in un altro componente.  
   
- È consigliabile evitare di progettare cicli di dipendenza in cui ogni componente di un gruppo dipende da tutti gli altri componenti.  
+   È consigliabile evitare di progettare cicli di dipendenza in cui ogni componente di un gruppo dipende da tutti gli altri componenti.  
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Per aggiungere una porta di un'interfaccia esistente a un componente  
   
@@ -269,11 +269,11 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
   
  Usare i diagrammi di sequenza per valutare il modo in cui il lavoro del sistema viene distribuito tra i diversi componenti.  
   
--   Se su una parte viene caricato troppo lavoro, probabilmente sarà più difficile aggiornare l'applicazione, rispetto a una condizione in cui il carico di lavoro viene distribuito in modo uniforme.  
+- Se su una parte viene caricato troppo lavoro, probabilmente sarà più difficile aggiornare l'applicazione, rispetto a una condizione in cui il carico di lavoro viene distribuito in modo uniforme.  
   
--   Se invece il carico lavoro viene distribuito alleggerendo in maniera eccessiva le parti con molte interazioni, il sistema potrebbe venire eseguito in modo non corretto e la comprensione potrebbe risultare più complessa.  
+- Se invece il carico lavoro viene distribuito alleggerendo in maniera eccessiva le parti con molte interazioni, il sistema potrebbe venire eseguito in modo non corretto e la comprensione potrebbe risultare più complessa.  
   
- ![Diagramma con collaborazione parti di sequenza](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
+  ![Diagramma con collaborazione parti di sequenza](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Per creare un diagramma di sequenza che illustri la collaborazione tra le parti  
   
@@ -327,13 +327,13 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
   
  Tra i comuni tipi di dipendenza sono inclusi i seguenti:  
   
--   Un componente chiama il codice all'interno di un altro componente.  
+- Un componente chiama il codice all'interno di un altro componente.  
   
--   Un componente crea un'istanza di una classe definita all'interno di un'altra classe.  
+- Un componente crea un'istanza di una classe definita all'interno di un'altra classe.  
   
--   Un componente usa le informazioni create da un altro componente.  
+- Un componente usa le informazioni create da un altro componente.  
   
- È possibile usare il nome della freccia di dipendenza per indicare un particolare tipo di utilizzo. Per impostare il nome, fare doppio clic sulla freccia, quindi fare clic su **delle proprietà**e impostare le **nome** campo nella finestra Proprietà.  
+  È possibile usare il nome della freccia di dipendenza per indicare un particolare tipo di utilizzo. Per impostare il nome, fare doppio clic sulla freccia, quindi fare clic su **delle proprietà**e impostare le **nome** campo nella finestra Proprietà.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   

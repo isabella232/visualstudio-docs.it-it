@@ -13,77 +13,77 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 266b3c4154c10f537cdc9dec78b0f0a036d94503
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512592"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921210"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procedura: creare un file con estensione vsct  
   
 Esistono diversi modi per creare una configurazione di tabella comandi di Visual Studio basate su XML (*vsct*) file.  
   
--   È possibile creare un nuovo VSPackage nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modello di pacchetto.  
+- È possibile creare un nuovo VSPackage nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modello di pacchetto.  
   
--   È possibile usare il compilatore di configurazione di tabella comandi basati su XML, *Vsct.exe*per generare un file da un oggetto esistente *CTC* file.  
+- È possibile usare il compilatore di configurazione di tabella comandi basati su XML, *Vsct.exe*per generare un file da un oggetto esistente *CTC* file.  
   
--   È possibile usare *Vsct.exe* per generare un *con estensione vsct* file da un oggetto esistente *CTO* file.  
+- È possibile usare *Vsct.exe* per generare un *con estensione vsct* file da un oggetto esistente *CTO* file.  
   
--   È possibile creare manualmente una nuova *vsct* file.  
+- È possibile creare manualmente una nuova *vsct* file.  
   
- Questo articolo illustra come creare manualmente una nuova *vsct* file.  
+  Questo articolo illustra come creare manualmente una nuova *vsct* file.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Per creare manualmente un nuovo file con estensione vsct  
   
-1.  Avviare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+1. Avviare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-2.  Nel **File** dal menu **New**, quindi fare clic su **File**.  
+2. Nel **File** dal menu **New**, quindi fare clic su **File**.  
   
-3.  Nel **modelli** riquadro, fare clic su **File XML** e quindi fare clic su **Open**.  
+3. Nel **modelli** riquadro, fare clic su **File XML** e quindi fare clic su **Open**.  
   
-4.  Nel **View** menu, fare clic su **proprietà** per visualizzare le proprietà del file XML.  
+4. Nel **View** menu, fare clic su **proprietà** per visualizzare le proprietà del file XML.  
   
-5.  Nel **delle proprietà** finestra, fare clic sul **Sfoglia** pulsante il **schemi** proprietà.  
+5. Nel **delle proprietà** finestra, fare clic sul **Sfoglia** pulsante il **schemi** proprietà.  
   
-6.  Nell'elenco degli schemi XSD, selezionare la *vsct.xsd* dello schema. Se non è nell'elenco, fare clic su **Add** e quindi individuare il file in un'unità locale. Fare clic su **OK** al termine.  
+6. Nell'elenco degli schemi XSD, selezionare la *vsct.xsd* dello schema. Se non è nell'elenco, fare clic su **Add** e quindi individuare il file in un'unità locale. Fare clic su **OK** al termine.  
   
-7.  Nel file XML, digitare *< CommandTable* e quindi premere **scheda**. Chiudere il tag digitando *>*.  
+7. Nel file XML, digitare *< CommandTable* e quindi premere **scheda**. Chiudere il tag digitando *>*.  
   
-     Questa azione viene creata una semplice *vsct* file.  
+    Questa azione viene creata una semplice *vsct* file.  
   
-8.  Inserire gli elementi del file XML che si desidera aggiungere, in base al [riferimenti allo schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md). Per altre informazioni, vedere [creare i file con estensione vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. Inserire gli elementi del file XML che si desidera aggiungere, in base al [riferimenti allo schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md). Per altre informazioni, vedere [creare i file con estensione vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
 ## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: creare un File con estensione vsct da un file CTC esistente  
   
-È possibile creare un XML basato *vsct* file da una tabella esistente di comando *CTC* file di origine. In questo modo, è possibile sfruttare i vantaggi del nuovo basato su XML [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando nel formato del compilatore tabella (VSCT).  
+È possibile creare un XML basato *vsct* file da una tabella esistente di comando *CTC* file di origine. In questo modo, si può sfruttare il nuovo formato basato su XML del compilatore della tabella comandi di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (VSCT).  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Per creare un file con estensione vsct da un file CTC  
   
-1.  Ottenere una copia del linguaggio Perl.  
+1. Ottenere una copia del linguaggio Perl.  
   
-2.  Ottenere una copia dello script Perl *ConvertCTCToVSCT.pl*, in genere all'interno di  *\<percorso di installazione di Visual Studio SDK > \visualstudiointegration\tools\bin.* cartella.  
+2. Ottenere una copia dello script Perl *ConvertCTCToVSCT.pl*, in genere all'interno di  *\<percorso di installazione di Visual Studio SDK > \visualstudiointegration\tools\bin.* cartella.  
   
-3.  Ottenere una copia del *CTC* file di origine che si desidera convertire.  
+3. Ottenere una copia del *CTC* file di origine che si desidera convertire.  
   
-4.  Inserire i file nella stessa directory.  
+4. Inserire i file nella stessa directory.  
   
-5.  Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestra prompt dei comandi, passare alla directory.  
+5. Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestra prompt dei comandi, passare alla directory.  
   
-6.  Tipo  
+6. Tipo  
   
-    ```  
-    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
-    ```  
+   ```  
+   perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
+   ```  
   
-     in cui *Pkgcmd* è il nome del *CTC* file e *Pkgcmd* è il nome del *vsct* file che si desidera creare.  
+    in cui *Pkgcmd* è il nome del *CTC* file e *Pkgcmd* è il nome del *vsct* file che si desidera creare.  
   
-     Questa azione crea un nuovo *vsct* file di origine di tabella comandi XML. È possibile compilare il file usando *Vsct.exe*, il compilatore VSCT, come si procederebbe per un *con estensione vsct* file.  
+    Questa azione crea un nuovo *vsct* file di origine di tabella comandi XML. È possibile compilare il file usando *Vsct.exe*, il compilatore VSCT, come si procederebbe per un *con estensione vsct* file.  
   
-    > [!NOTE]
-    >  È possibile migliorare la leggibilità del *vsct* file riformattando i commenti XML.  
+   > [!NOTE]
+   >  È possibile migliorare la leggibilità del *vsct* file riformattando i commenti XML.  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 

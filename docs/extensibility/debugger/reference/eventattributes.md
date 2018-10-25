@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES | Documenti Microsoft
+title: EVENTATTRIBUTES | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87d6a2176dcd3c4cf748549f94d071b181d0d14f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7df726716e464ccc4bf8382b38fbb0b8d277df86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893825"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Specifica gli attributi dell'evento.  
@@ -54,28 +54,28 @@ public enum enum_EVENTATTRIBUTES {
   
 ## <a name="members"></a>Membri  
  EVENT_ASYNCHRONOUS  
- Indica che l'evento è asincrono e che non è necessaria alcuna risposta all'evento.  
+ Indica che l'evento è asincrona e non necessita di alcuna risposta all'evento.  
   
  EVENT_SYNCHRONOUS  
- Indica che l'evento è sincrono; risposta di [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
+ Indica che l'evento è sincrona; per mezzo di rispondere [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
   
  EVENT_STOPPING  
- Indica che si tratta di un evento di arresto. Devono essere combinati con `EVENT_ASYNCHRONOUS` o `EVENT_SYNCHRONOUS`.  
+ Indica che si tratta di un evento di arresto. Deve essere combinato con `EVENT_ASYNCHRONOUS` o `EVENT_SYNCHRONOUS`.  
   
  EVENT_ASYNC_STOP  
- Indica un evento di interruzione asincrona. Non è presente alcun evento di questo tipo. Questo flag è solo un segnaposto.  
+ Indica un evento di arresto asincrona. Non è attualmente alcun evento di questo tipo. Questo flag è solo un segnaposto.  
   
  EVENT_SYNC_STOP  
- Indica un evento di arresto sincrono (una combinazione di `EVENT_SYNCHRONOUS` e `EVENT_STOPPING`). Questo valore è utilizzato da un motore di debug (DE) durante l'invio di un evento di arresto. La risposta viene effettuata mediante una chiamata a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md), o [continua](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+ Indica un evento di arresto sincrono (una combinazione di `EVENT_SYNCHRONOUS` e `EVENT_STOPPING`). Questo valore viene utilizzato da un motore di debug (DE) quando si invia un evento di arresto. La risposta viene effettuata mediante una chiamata a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md), o [continua](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
  EVENT_IMMEDIATE  
- Indica un evento che viene inviato immediatamente e in modo sincrono all'IDE. Questo flag viene combinato con altri flag come `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, o `EVENT_SYNC_STOP` per indicare il tipo di evento e il fatto che il meccanismo di risposta (se presente) è noto.  
+ Indica un evento che viene inviato immediatamente e in modo sincrono all'IDE. Questo flag viene combinato con altri flag Analogamente `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, o `EVENT_SYNC_STOP` per indicare il tipo di evento e il fatto che il meccanismo di risposta (se presente) è noto.  
   
  EVENT_EXPRESSION_EVALUATION  
  L'evento è il risultato della valutazione dell'espressione.  
   
 ## <a name="remarks"></a>Note  
- Questi valori vengono passati il `dwAttrib` parametro del [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) metodo.  
+ Questi valori vengono passati il `dwAttrib` parametro del [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) (metodo).  
   
  Questi valori possono essere combinati con un bit per bit `OR`.  
   

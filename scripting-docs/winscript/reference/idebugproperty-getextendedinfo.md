@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetExtendedInfo | Documenti Microsoft
+title: IDebugProperty::GetExtendedInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc549ecc4cfa3b3cbbb754585c751b16df2fd8a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c66ea53bde17f2936567cd93ae0be166f35382ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925541"
 ---
 # <a name="idebugpropertygetextendedinfo"></a>IDebugProperty::GetExtendedInfo
 Ottiene le informazioni per la proprietà estese.  
@@ -43,16 +43,16 @@ HRESULT GetExtendedInfo (
  [in] Numero di oggetti informazioni estese.  
   
  `rgguidExtendedInfo`  
- [in] Matrice di `GUID`s viene passato in modo che più elementi di informazioni estese possono essere recuperati allo stesso tempo.  
+ [in] Matrice di `GUID`s viene passato in modo che più elementi di informazioni estese possono essere recuperati contemporaneamente.  
   
  `pExtendedInfo`  
  [out] Restituisce una matrice di `VARIANT`che può essere utilizzato per recuperare le informazioni sulle proprietà estese.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un oggetto valido `HRESULT`, in genere `S_OK`.  
+ Restituisce un valore valido `HRESULT`, in genere `S_OK`.  
   
 ## <a name="remarks"></a>Note  
- Questa interfaccia ottiene estese informazioni per questo oggetto. L'API esiste solo allo scopo di recupero di informazioni che non si prestano a recuperati dall'uso di `IDebugProperty::GetPropertyInfo`).  
+ Questa interfaccia ottiene estese informazioni per questo oggetto. L'API esiste solo per il recupero di informazioni che non si prestano a recuperati mediante l'utilizzo di `IDebugProperty::GetPropertyInfo`).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5949578a6515d74d97821608093f8cdf0dfc7b15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812933"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,13 +129,13 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
  L'utente con le tre versioni del record di applicationpresents:  
   
--   Il record corrente nel database  
+- Il record corrente nel database  
   
--   Il record originale che viene caricato nel set di dati  
+- Il record originale che viene caricato nel set di dati  
   
--   Le modifiche proposte nel set di dati  
+- Le modifiche proposte nel set di dati  
   
- L'utente è quindi possibile sovrascrivere il database con la versione proposta, o annullare l'aggiornamento e aggiornare il set di dati con i nuovi valori dal database.  
+  L'utente è quindi possibile sovrascrivere il database con la versione proposta, o annullare l'aggiornamento e aggiornare il set di dati con i nuovi valori dal database.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Per abilitare la gestione degli errori di concorrenza  
   

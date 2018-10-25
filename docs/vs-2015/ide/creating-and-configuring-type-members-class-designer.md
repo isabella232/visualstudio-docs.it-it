@@ -35,12 +35,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a133b452000753eb5b7dfba579c8954791196b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827974"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Creazione e configurazione di membri di tipi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ ms.locfileid: "49228332"
   
 #### <a name="to-open-the-class-details-window"></a>Per aprire la finestra Dettagli classe  
   
-1.  Fare clic con il pulsante destro del mouse su qualsiasi classe nel diagramma per visualizzare un menu di scelta rapida.  
+1. Fare clic con il pulsante destro del mouse su qualsiasi classe nel diagramma per visualizzare un menu di scelta rapida.  
   
-2.  Fare clic su **Finestra Dettagli classe** nel menu di scelta rapida.  
+2. Fare clic su **Finestra Dettagli classe** nel menu di scelta rapida.  
   
- - oppure -  
+   - oppure -  
   
 -   Scegliere **Altre finestre** dal menu Visualizza e fare clic su **Dettagli classe**.  
   
@@ -194,31 +194,31 @@ ms.locfileid: "49228332"
   
  Le righe dei parametri contengono i seguenti elementi:  
   
--   **Name**  
+- **Name**  
   
-     La colonna **Nome** di una riga di parametri visualizza il nome del parametro. Questo nome viene visualizzato anche nella proprietà **Nome** nella finestra Proprietà. È possibile utilizzare questa cella per cambiare il nome di qualsiasi parametro con autorizzazioni di lettura-scrittura.  
+   La colonna **Nome** di una riga di parametri visualizza il nome del parametro. Questo nome viene visualizzato anche nella proprietà **Nome** nella finestra Proprietà. È possibile utilizzare questa cella per cambiare il nome di qualsiasi parametro con autorizzazioni di lettura-scrittura.  
   
-     Se la colonna **Nome** è troppo stretta per visualizzare l'intero nome, è possibile posizionare il cursore del mouse sul nome del parametro per visualizzarlo.  
+   Se la colonna **Nome** è troppo stretta per visualizzare l'intero nome, è possibile posizionare il cursore del mouse sul nome del parametro per visualizzarlo.  
   
--   **Type**  
+- **Type**  
   
-     Nella cella **Tipo parametro** viene usata la tecnologia Intellisense, che consente di scegliere da un elenco di tutti i tipi disponibili nel progetto corrente o nei progetti a cui viene fatto riferimento.  
+   Nella cella **Tipo parametro** viene usata la tecnologia Intellisense, che consente di scegliere da un elenco di tutti i tipi disponibili nel progetto corrente o nei progetti a cui viene fatto riferimento.  
   
--   **Modificatore**  
+- **Modificatore**  
   
-     La cella **Modificatore** di una riga di parametro accetta e visualizza il nuovo modificatore del parametro. Per immettere un nuovo modificatore di parametro, nell'elenco a discesa selezionare **Nessuno**, **ref**, **out** o **params** in C# e **ByVal**, **ByRef** o **ParamArray** in VB.  
+   La cella **Modificatore** di una riga di parametro accetta e visualizza il nuovo modificatore del parametro. Per immettere un nuovo modificatore di parametro, nell'elenco a discesa selezionare **Nessuno**, **ref**, **out** o **params** in C# e **ByVal**, **ByRef** o **ParamArray** in VB.  
   
--   **Riepilogo**  
+- **Riepilogo**  
   
-     La cella **Riepilogo** di una riga di parametro consente di immettere i commenti di codice visualizzati in IntelliSense quando si immette il parametro nell'editor di codice.  
+   La cella **Riepilogo** di una riga di parametro consente di immettere i commenti di codice visualizzati in IntelliSense quando si immette il parametro nell'editor di codice.  
   
--   **\<aggiungi parametro>**  
+- **\<aggiungi parametro>**  
   
-     L'ultima riga di parametri di un membro contiene la cella il testo **<add parameter>** nella cella **Nome**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   L'ultima riga di parametri di un membro contiene la cella il testo **<add parameter>** nella cella **Nome**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
- **Proprietà dei parametri nella finestra Proprietà**  
+  **Proprietà dei parametri nella finestra Proprietà**  
   
- Nella finestra Proprietà vengono visualizzate le stesse proprietà dei parametri riportate nella finestra Dettagli classe: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.  
+  Nella finestra Proprietà vengono visualizzate le stesse proprietà dei parametri riportate nella finestra Dettagli classe: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.  
   
 > [!NOTE]
 >  Per aggiungere un parametro a un delegato, vedere [Creazione di membri](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,62 +268,62 @@ ms.locfileid: "49228332"
   
  Tutte le celle della finestra Dettagli classe sono modificabili, con alcune eccezioni:  
   
--   L'intero tipo è di sola lettura se, ad esempio, si trova in un assembly di riferimento. Vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a). Se si seleziona la forma in Progettazione classi, i relativi dettagli vengono visualizzati in sola lettura nella finestra Dettagli classe.  
+- L'intero tipo è di sola lettura se, ad esempio, si trova in un assembly di riferimento. Vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a). Se si seleziona la forma in Progettazione classi, i relativi dettagli vengono visualizzati in sola lettura nella finestra Dettagli classe.  
   
--   Per gli indicizzatori, il nome è di sola lettura mentre gli altri elementi (tipo, modificatore, riepilogo) sono modificabili.  
+- Per gli indicizzatori, il nome è di sola lettura mentre gli altri elementi (tipo, modificatore, riepilogo) sono modificabili.  
   
--   Per tutti i generics sono presenti parametri di sola lettura nella finestra Dettagli classe. Per cambiare tali parametri, è necessario modificare il relativo codice sorgente.  
+- Per tutti i generics sono presenti parametri di sola lettura nella finestra Dettagli classe. Per cambiare tali parametri, è necessario modificare il relativo codice sorgente.  
   
--   Il nome del parametro di tipo definito su un tipo generico è di sola lettura.  
+- Il nome del parametro di tipo definito su un tipo generico è di sola lettura.  
   
--   Se il codice di un tipo è interrotto (non analizzabile), il contenuto del tipo viene visualizzato in sola lettura nella finestra Dettagli classe.  
+- Se il codice di un tipo è interrotto (non analizzabile), il contenuto del tipo viene visualizzato in sola lettura nella finestra Dettagli classe.  
   
- **Finestra Dettagli classe e codice sorgente**  
+  **Finestra Dettagli classe e codice sorgente**  
   
--   Per visualizzare il codice sorgente, fare clic con il pulsante destro del mouse su una forma nella finestra Dettagli classe (o in Progettazione classi) e quindi scegliere Visualizza codice. Il file del codice sorgente verrà aperto e il cursore verrà posizionato sull'elemento selezionato.  
+- Per visualizzare il codice sorgente, fare clic con il pulsante destro del mouse su una forma nella finestra Dettagli classe (o in Progettazione classi) e quindi scegliere Visualizza codice. Il file del codice sorgente verrà aperto e il cursore verrà posizionato sull'elemento selezionato.  
   
--   La visualizzazione di informazioni sulla firma in Progettazione classi e nella finestra Dettagli classe verrà immediatamente aggiornata in base alla modifica del codice sorgente. Se la finestra Dettagli classe è chiusa, le nuove informazioni saranno visibili alla successiva apertura.  
+- La visualizzazione di informazioni sulla firma in Progettazione classi e nella finestra Dettagli classe verrà immediatamente aggiornata in base alla modifica del codice sorgente. Se la finestra Dettagli classe è chiusa, le nuove informazioni saranno visibili alla successiva apertura.  
   
--   Se il codice di un tipo è interrotto (non analizzabile), il contenuto del tipo verrà visualizzato in sola lettura nella finestra Dettagli classe.  
+- Se il codice di un tipo è interrotto (non analizzabile), il contenuto del tipo verrà visualizzato in sola lettura nella finestra Dettagli classe.  
   
- **Funzionalità Appunti nella finestra Dettagli classe**  
+  **Funzionalità Appunti nella finestra Dettagli classe**  
   
- È possibile copiare o tagliare campi o righe dalla finestra Dettagli classe e incollarli in un altro tipo. Le righe possono essere tagliate solo se non sono di sola lettura. Quando una riga viene incollata, la finestra Dettagli classe assegna un nuovo nome (derivato dal nome della riga copiata) per evitare conflitti.  
+  È possibile copiare o tagliare campi o righe dalla finestra Dettagli classe e incollarli in un altro tipo. Le righe possono essere tagliate solo se non sono di sola lettura. Quando una riga viene incollata, la finestra Dettagli classe assegna un nuovo nome (derivato dal nome della riga copiata) per evitare conflitti.  
   
 ##  <a name="ReadOnlyInfo"></a> Visualizzare le informazioni di sola lettura  
  In Progettazione classi e nella finestra Dettagli classe è possibile visualizzare i tipi (e i membri dei tipi) per i seguenti elementi:  
   
--   un progetto contenente un diagramma classi;  
+- un progetto contenente un diagramma classi;  
   
--   un progetto a cui viene fatto riferimento da un progetto contenente un diagramma classi;  
+- un progetto a cui viene fatto riferimento da un progetto contenente un diagramma classi;  
   
--   un assembly a cui viene fatto riferimento da un progetto contenente un diagramma classi.  
+- un assembly a cui viene fatto riferimento da un progetto contenente un diagramma classi.  
   
- Negli ultimi due casi, l'entità a cui viene fatto riferimento (un tipo o un membro) è in sola lettura nel diagramma classi che la rappresenta.  
+  Negli ultimi due casi, l'entità a cui viene fatto riferimento (un tipo o un membro) è in sola lettura nel diagramma classi che la rappresenta.  
   
- Un intero progetto o parti di esso, ad esempio singoli file, possono essere in sola lettura. Nella maggior parte dei casi un progetto o uno dei relativi file è in sola lettura quando è incluso nel controllo del codice sorgente (e non estratto), esiste in un assembly esterno oppure il sistema operativo considera i file in sola lettura.  
+  Un intero progetto o parti di esso, ad esempio singoli file, possono essere in sola lettura. Nella maggior parte dei casi un progetto o uno dei relativi file è in sola lettura quando è incluso nel controllo del codice sorgente (e non estratto), esiste in un assembly esterno oppure il sistema operativo considera i file in sola lettura.  
   
- **Controllo del codice sorgente**  
+  **Controllo del codice sorgente**  
   
- Poiché un diagramma classi viene salvato come file in un progetto, è necessario estrarre il progetto per salvare tutte le modifiche apportate in Progettazione classi o nella finestra Dettagli classe.  
+  Poiché un diagramma classi viene salvato come file in un progetto, è necessario estrarre il progetto per salvare tutte le modifiche apportate in Progettazione classi o nella finestra Dettagli classe.  
   
- **Progetti di sola lettura**  
+  **Progetti di sola lettura**  
   
- Il progetto può essere in sola lettura per un motivo diverso dal controllo del codice sorgente. Se si chiude il progetto verrà visualizzata una finestra di dialogo in cui viene chiesto se si desidera sovrascrivere il file del progetto, ignorare le modifiche (non salvarle) o annullare l'operazione di chiusura. Se si sceglie di sovrascrivere, i file del progetto verranno sovrascritti e diventeranno di lettura-scrittura. Verrà inoltre aggiunto il nuovo file del diagramma classi.  
+  Il progetto può essere in sola lettura per un motivo diverso dal controllo del codice sorgente. Se si chiude il progetto verrà visualizzata una finestra di dialogo in cui viene chiesto se si desidera sovrascrivere il file del progetto, ignorare le modifiche (non salvarle) o annullare l'operazione di chiusura. Se si sceglie di sovrascrivere, i file del progetto verranno sovrascritti e diventeranno di lettura-scrittura. Verrà inoltre aggiunto il nuovo file del diagramma classi.  
   
- **Tipi di sola lettura**  
+  **Tipi di sola lettura**  
   
- Se si prova a salvare un progetto contenente un tipo il cui file del codice sorgente è di sola lettura, verrà visualizzata la finestra di dialogo **Salvataggio file in sola lettura**, in cui sono disponibili le opzioni per salvare il file con un nuovo nome o in un nuovo percorso oppure per sovrascrivere il file di sola lettura. Se si sceglie di sovrascrivere il file, la nuova copia non sarà più in sola lettura.  
+  Se si prova a salvare un progetto contenente un tipo il cui file del codice sorgente è di sola lettura, verrà visualizzata la finestra di dialogo **Salvataggio file in sola lettura**, in cui sono disponibili le opzioni per salvare il file con un nuovo nome o in un nuovo percorso oppure per sovrascrivere il file di sola lettura. Se si sceglie di sovrascrivere il file, la nuova copia non sarà più in sola lettura.  
   
- Se un file di codice contiene un errore di sintassi, le forme che visualizzano il codice in quel file saranno temporaneamente in sola lettura finché l'errore di sintassi non viene corretto. Le forme in questo stato sono caratterizzate da testo di colore rosso e da un'icona rossa con una descrizione che indica un errore di analisi nel file del codice sorgente.  
+  Se un file di codice contiene un errore di sintassi, le forme che visualizzano il codice in quel file saranno temporaneamente in sola lettura finché l'errore di sintassi non viene corretto. Le forme in questo stato sono caratterizzate da testo di colore rosso e da un'icona rossa con una descrizione che indica un errore di analisi nel file del codice sorgente.  
   
- Un tipo a cui viene fatto riferimento (ad esempio un tipo .NET Framework), che esiste all'interno di un altro nodo di progetto o di un nodo di assembly a cui viene fatto riferimento, nell'area di progettazione di Progettazione classi viene indicato come in sola lettura. Un tipo locale, che esiste nel progetto aperto, è in lettura-scrittura e la relativa forma viene indicata come tale nell'area di progettazione di Progettazione classi.  
+  Un tipo a cui viene fatto riferimento (ad esempio un tipo .NET Framework), che esiste all'interno di un altro nodo di progetto o di un nodo di assembly a cui viene fatto riferimento, nell'area di progettazione di Progettazione classi viene indicato come in sola lettura. Un tipo locale, che esiste nel progetto aperto, è in lettura-scrittura e la relativa forma viene indicata come tale nell'area di progettazione di Progettazione classi.  
   
- Gli indicizzatori sono in lettura-scrittura nel codice e nella finestra Dettagli classe, ma il nome dell'indicizzatore è in sola lettura.  
+  Gli indicizzatori sono in lettura-scrittura nel codice e nella finestra Dettagli classe, ma il nome dell'indicizzatore è in sola lettura.  
   
- I metodi parziali non possono essere modificati mediante Progettazione classi o la finestra Dettagli classe ma devono essere modificati con l'editor del codice.  
+  I metodi parziali non possono essere modificati mediante Progettazione classi o la finestra Dettagli classe ma devono essere modificati con l'editor del codice.  
   
- Il codice C++ nativo non può essere modificato mediante Progettazione classi o la finestra Dettagli classe ma deve essere modificato con l'editor del codice.  
+  Il codice C++ nativo non può essere modificato mediante Progettazione classi o la finestra Dettagli classe ma deve essere modificato con l'editor del codice.  
   
 ## <a name="related-topics"></a>Argomenti correlati  
   

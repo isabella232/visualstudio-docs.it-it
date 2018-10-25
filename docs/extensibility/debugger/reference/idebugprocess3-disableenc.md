@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::DisableENC | Documenti Microsoft
+title: IDebugProcess3::DisableENC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2da464c82332f6fc4f9bcd57ee8197e111e9fa0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc769e7386777dbf59dadbbe93b53bc9cac01ce0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116630"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875866"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Questo metodo in modo esplicito Disabilita modifica e continuazione su questo processo e tutti i programmi che contiene. Un fornitore di porta personalizzato deve sempre restituire `E_NOTIMPL`.  
+Questo metodo in modo esplicito Disabilita modifica e continuazione su questo processo (e tutti i programmi contengono). Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,16 +40,16 @@ HRESULT DisableENC(
   
 #### <a name="parameters"></a>Parametri  
  `reason`  
- [in] Un valore di [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumerazione.  
+ [in] Un valore compreso il [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumerazione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
   
 > [!NOTE]
->  Un fornitore di porta personalizzato deve sempre restituire `E_NOTIMPL`.  
+>  Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Note  
- Una volta modifica e continuazione è disabilitata per un processo, è possibile abilitare di nuovo solo riavviando il processo.  
+ Una volta modifica e continuazione è disabilitata per un processo, può essere abilitato nuovamente solo riavviando il processo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

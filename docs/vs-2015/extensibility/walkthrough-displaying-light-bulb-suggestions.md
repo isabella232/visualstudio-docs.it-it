@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869054"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Procedura dettagliata: visualizzazione dei suggerimenti delle icone lampadina
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
   
  Negli editor di Visual c# e Visual Basic, è anche possibile usare .NET Compiler Platform ("Roslyn") per scrivere e creare pacchetti personalizzati analizzatori di codice con le azioni che consentono di visualizzare le lampadine automaticamente. Per altre informazioni, vedere:  
   
--   [Procedura: Scrivere un codice c# diagnostica e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Procedura: Scrivere un codice c# diagnostica e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Procedura: Scrivere una diagnostica di Visual Basic e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Procedura: Scrivere una diagnostica di Visual Basic e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Altri linguaggi come C++ forniscono anche le lampadine per alcune azioni rapide, ad esempio un suggerimento per creare un'implementazione stub della funzione.  
+  Altri linguaggi come C++ forniscono anche le lampadine per alcune azioni rapide, ad esempio un suggerimento per creare un'implementazione stub della funzione.  
   
- Ecco come appare una lampadina. In un progetto Visual Basic o Visual c#, una sottolineatura ondulata rossa viene visualizzata sotto un nome di variabile quando non è valido. Quando si passa il mouse sull'identificatore non valido, un indicatore lampadina viene visualizzata accanto al cursore.  
+  Ecco come appare una lampadina. In un progetto Visual Basic o Visual c#, una sottolineatura ondulata rossa viene visualizzata sotto un nome di variabile quando non è valido. Quando si passa il mouse sull'identificatore non valido, un indicatore lampadina viene visualizzata accanto al cursore.  
   
- ![lampadina](../extensibility/media/lightbulb.png "a forma di lampadina")  
+  ![lampadina](../extensibility/media/lightbulb.png "a forma di lampadina")  
   
- Se si fa clic sulla freccia in giù per la lampadina, viene visualizzato un set di azioni consigliate, insieme a un'anteprima dell'azione selezionata. In questo caso, Mostra le modifiche che verranno apportate al codice se si esegue l'azione.  
+  Se si fa clic sulla freccia in giù per la lampadina, viene visualizzato un set di azioni consigliate, insieme a un'anteprima dell'azione selezionata. In questo caso, Mostra le modifiche che verranno apportate al codice se si esegue l'azione.  
   
- ![Anteprima lampadina](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![Anteprima lampadina](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- È possibile usare le lampadine per fornire il proprio le azioni consigliate. Ad esempio, è possibile fornire azioni per spostare aprendo le parentesi graffe in una nuova riga o li sposta alla fine della riga precedente. Procedura dettagliata illustra come creare un indicatore lampadina che viene visualizzato sulla parola corrente, dispone di due azioni consigliate: **convertire in lettere maiuscole** e **Converti in minuscolo**.  
+  È possibile usare le lampadine per fornire il proprio le azioni consigliate. Ad esempio, è possibile fornire azioni per spostare aprendo le parentesi graffe in una nuova riga o li sposta alla fine della riga precedente. Procedura dettagliata illustra come creare un indicatore lampadina che viene visualizzato sulla parola corrente, dispone di due azioni consigliate: **convertire in lettere maiuscole** e **Converti in minuscolo**.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Loaddatafromistream | Documenti Microsoft'
+title: Loaddatafromistream | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2421e25c51d005a069de316d1d465eca80a0432b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e66bba9cc7fc6f63c725a71cbf601f8015a70b82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874423"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
-Prepara i dati di debug archiviati in un file di programma (PDB) di database tramito un flusso di dati in memoria.  
+Prepara i dati di debug archiviati in un file di programma del database (con estensione pdb) si accede tramite un flusso di dati in memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,18 +41,18 @@ HRESULT loadDataFromIStream (
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
-|E_PDB_FORMAT|Tentativo di accedere a un file con formato obsoleto.|  
+|E_PDB_FORMAT|È stato effettuato un tentativo di accedere a un file con formato obsoleto.|  
 |E_INVALIDARG|Invalidparameter.|  
 |E_UNEXPECTED|Origine dati è già stata preparata.|  
   
 ## <a name="remarks"></a>Note  
- In questo modo i dati di debug per un file eseguibile deve essere ottenuta dalla memoria tramite un <xref:IStream> oggetto.  
+ Questo metodo consente di dati di debug un eseguibile può essere ottenuto dalla memoria tramite un <xref:IStream> oggetto.  
   
- Per caricare un file con estensione pdb senza convalida, utilizzare il [idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) metodo.  
+ Per caricare un file con estensione pdb senza convalida, usare il [Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (metodo).  
   
- Per convalidare il file con estensione pdb sulla base dei criteri specifici, utilizzare il [idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) metodo.  
+ Per convalidare il file con estensione PDB in base ai criteri specifici, usare il [Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) (metodo).  
   
- Per ottenere l'accesso per il processo di caricamento di dati (tramite un meccanismo di callback), utilizzare il [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metodo.  
+ Per ottenere l'accesso per il processo di caricamento dei dati (tramite un meccanismo di callback), usare il [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   

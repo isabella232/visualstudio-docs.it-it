@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetTypeInfo | Documenti Microsoft
+title: IDebugField::GetTypeInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3354a67d5d92aeebf67216ed22ed46666d4fc5e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dfc82e7450c88420cfca50c74a3ac9451a78b095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925994"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
-Questo metodo ottiene il simbolo o un tipo indipendente dal tipo di informazioni.  
+Questo metodo ottiene indipendenti dal tipo di informazioni sul simbolo o tipo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,7 +47,7 @@ int GetTypeInfo(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Indipendente dal tipo di informazioni dovrebbe includere, ad esempio, il dominio applicazione, il modulo e la classe che contiene il simbolo.  
+ Informazioni indipendenti dal tipo includerà, ad esempio, l'AppDomain, il modulo e la classe che contiene il simbolo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)   

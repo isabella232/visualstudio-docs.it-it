@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_scoped | Documenti Microsoft
+title: Get_scoped | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c545c0d7f8a72ca4dc4f1fcc31aafe65c2bc5d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d0018bfdbf52f92a35dff3a21fb5baf71aab6639
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860007"
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
 Recupera un flag che specifica se il tipo di dati definito dall'utente viene visualizzato in un ambito lessicale non globali.  
@@ -34,7 +34,7 @@ HRESULT get_scoped (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se il tipo di dati definito dall'utente viene visualizzato in un ambito lessicale non globali; in caso contrario, restituisce `FALSE`.  
+ [out] Restituisce `TRUE` se il tipo di dati definito dall'utente viene visualizzato in un ambito lessicale non globale; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  

@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829643"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215163"
   
 Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è consigliabile salvare le modifiche nel database. È procedere in uno dei tre modi:  
   
--   Chiamando uno del `Update` metodi di un oggetto TableAdapter  
+- Chiamando uno del `Update` metodi di un oggetto TableAdapter  
   
--   Chiamando uno dei metodi DBDirect di TableAdapter  
+- Chiamando uno dei metodi DBDirect di TableAdapter  
   
--   Chiamando il metodo UpdateAll sul `TableAdapterManager` che Visual Studio genera automaticamente quando il set di dati contiene le tabelle correlate ad altre tabelle nel set di dati  
+- Chiamando il metodo UpdateAll sul `TableAdapterManager` che Visual Studio genera automaticamente quando il set di dati contiene le tabelle correlate ad altre tabelle nel set di dati  
   
- Quando si dati associa le tabelle di set di dati a controlli in una pagina XAML o Windows Form, l'architettura di associazione di dati esegue tutte le operazioni necessarie.  
+  Quando si dati associa le tabelle di set di dati a controlli in una pagina XAML o Windows Form, l'architettura di associazione di dati esegue tutte le operazioni necessarie.  
   
- Se si ha familiarità con gli oggetti TableAdapter, è possibile passare direttamente a uno degli argomenti seguenti:  
+  Se si ha familiarità con gli oggetti TableAdapter, è possibile passare direttamente a uno degli argomenti seguenti:  
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
   
  Per impedire violazioni dei vincoli prematura è possibile sospendere temporaneamente i vincoli di aggiornamento. Ciò ha due scopi:  
   
--   Un errore impedisce che venga generata dopo aver completato l'aggiornamento di una colonna, ma non hanno avviato l'aggiornamento a un altro.  
+- Un errore impedisce che venga generata dopo aver completato l'aggiornamento di una colonna, ma non hanno avviato l'aggiornamento a un altro.  
   
--   Evita che determinati aggiornamenti gli eventi vengano generati (gli eventi che vengono spesso usati per la convalida).  
+- Evita che determinati aggiornamenti gli eventi vengano generati (gli eventi che vengono spesso usati per la convalida).  
   
- Dopo aver completato un aggiornamento, è possibile riabilitare il controllo dei vincoli, che anche abilita nuovamente gli eventi di aggiornamento e li genera.  
+  Dopo aver completato un aggiornamento, è possibile riabilitare il controllo dei vincoli, che anche abilita nuovamente gli eventi di aggiornamento e li genera.  
   
 > [!NOTE]
 >  In Windows Form, l'architettura di associazione dati è incorporata nel datagrid controllo vincoli sospeso finché lo stato attivo viene spostato all'esterno di una riga e non è necessario chiamare in modo esplicito il <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, o <xref:System.Data.DataRow.CancelEdit%2A> metodi.  
@@ -177,33 +177,33 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
   
  Se le modifiche rifletteranno lo stato corrente dell'origine dati, non è più necessario mantenere queste informazioni. In genere, sono disponibili due volte quando il set di dati e la relativa origine sono sincronizzati:  
   
--   Subito dopo aver caricato le informazioni in set di dati, ad esempio quando leggere i dati dall'origine.  
+- Subito dopo aver caricato le informazioni in set di dati, ad esempio quando leggere i dati dall'origine.  
   
--   Dopo l'invio delle modifiche dal set di dati all'origine dati, (ma non prima, perché verranno perse le informazioni sulle modifiche necessarie per inviare le modifiche apportate al database).  
+- Dopo l'invio delle modifiche dal set di dati all'origine dati, (ma non prima, perché verranno perse le informazioni sulle modifiche necessarie per inviare le modifiche apportate al database).  
   
- È possibile applicare le modifiche in sospeso per il set di dati chiamando il <xref:System.Data.DataSet.AcceptChanges%2A> (metodo). In genere, <xref:System.Data.DataSet.AcceptChanges%2A> viene chiamato durante gli orari seguenti nell'applicazione.  
+  È possibile applicare le modifiche in sospeso per il set di dati chiamando il <xref:System.Data.DataSet.AcceptChanges%2A> (metodo). In genere, <xref:System.Data.DataSet.AcceptChanges%2A> viene chiamato durante gli orari seguenti nell'applicazione.  
   
--   Dopo aver caricato il set di dati. Se si carica un set di dati chiamando un oggetto TableAdapter `Fill` (metodo), quindi l'adapter eseguirà automaticamente il commit delle modifiche per l'utente. Tuttavia, se si carica un set di dati mediante l'unione di un altro set di dati al suo interno, quindi è necessario salvare le modifiche manualmente.  
+- Dopo aver caricato il set di dati. Se si carica un set di dati chiamando un oggetto TableAdapter `Fill` (metodo), quindi l'adapter eseguirà automaticamente il commit delle modifiche per l'utente. Tuttavia, se si carica un set di dati mediante l'unione di un altro set di dati al suo interno, quindi è necessario salvare le modifiche manualmente.  
   
-    > [!NOTE]
-    >  È possibile impedire che l'adapter automaticamente il commit delle modifiche quando si chiama il `Fill` metodo impostando il `AcceptChangesDuringFill` proprietà dell'adapter `false`. Se è impostato su `false`, il <xref:System.Data.DataRow.RowState%2A> di ogni riga viene inserita durante la compilazione è impostato su <xref:System.Data.DataRowState>.  
+  > [!NOTE]
+  >  È possibile impedire che l'adapter automaticamente il commit delle modifiche quando si chiama il `Fill` metodo impostando il `AcceptChangesDuringFill` proprietà dell'adapter `false`. Se è impostato su `false`, il <xref:System.Data.DataRow.RowState%2A> di ogni riga viene inserita durante la compilazione è impostato su <xref:System.Data.DataRowState>.  
   
--   Dopo l'invio di set di dati modifiche a un altro processo, ad esempio un servizio Web XML.  
+- Dopo l'invio di set di dati modifiche a un altro processo, ad esempio un servizio Web XML.  
   
-    > [!CAUTION]
-    >  Eseguire il commit della modifica in questo modo consente di cancellare le informazioni di modifica. Eseguire operazioni non il commit delle modifiche fino a dopo aver fine esecuzione di operazioni che richiedono che l'applicazione per conoscere quali modifiche sono state apportate nel set di dati.  
+  > [!CAUTION]
+  >  Eseguire il commit della modifica in questo modo consente di cancellare le informazioni di modifica. Eseguire operazioni non il commit delle modifiche fino a dopo aver fine esecuzione di operazioni che richiedono che l'applicazione per conoscere quali modifiche sono state apportate nel set di dati.  
   
- Questo metodo vengono effettuate le seguenti:  
+  Questo metodo vengono effettuate le seguenti:  
   
--   Scrive il <xref:System.Data.DataRowVersion> versione di un record nel relativo <xref:System.Data.DataRowVersion> versione e sovrascrive la versione originale.  
+- Scrive il <xref:System.Data.DataRowVersion> versione di un record nel relativo <xref:System.Data.DataRowVersion> versione e sovrascrive la versione originale.  
   
--   Rimuove tutte le righe in cui il <xref:System.Data.DataRow.RowState%2A> è impostata su <xref:System.Data.DataRowState>.  
+- Rimuove tutte le righe in cui il <xref:System.Data.DataRow.RowState%2A> è impostata su <xref:System.Data.DataRowState>.  
   
--   Imposta il <xref:System.Data.DataRow.RowState%2A> proprietà di un record a <xref:System.Data.DataRowState>.  
+- Imposta il <xref:System.Data.DataRow.RowState%2A> proprietà di un record a <xref:System.Data.DataRowState>.  
   
- Il <xref:System.Data.DataSet.AcceptChanges%2A> metodo è disponibile in tre livelli. È possibile chiamarlo in un <xref:System.Data.DataRow> oggetto ai commit modificata solo tale riga. È possibile anche chiamare su un <xref:System.Data.DataTable> oggetto per eseguire il commit di tutte le righe in una tabella. Infine, è possibile chiamare sul <xref:System.Data.DataSet> oggetto per eseguire il commit di tutte le modifiche in sospeso in tutti i record di tutte le tabelle del set di dati.  
+  Il <xref:System.Data.DataSet.AcceptChanges%2A> metodo è disponibile in tre livelli. È possibile chiamarlo in un <xref:System.Data.DataRow> oggetto ai commit modificata solo tale riga. È possibile anche chiamare su un <xref:System.Data.DataTable> oggetto per eseguire il commit di tutte le righe in una tabella. Infine, è possibile chiamare sul <xref:System.Data.DataSet> oggetto per eseguire il commit di tutte le modifiche in sospeso in tutti i record di tutte le tabelle del set di dati.  
   
- La tabella seguente descrive quali modifiche vengono eseguito il commit dell'oggetto sul quale che viene chiamato il metodo in base.  
+  La tabella seguente descrive quali modifiche vengono eseguito il commit dell'oggetto sul quale che viene chiamato il metodo in base.  
   
 |Metodo|Risultato|  
 |------------|------------|  
@@ -221,16 +221,16 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
   
  È possibile convalidare i dati in diversi modi:  
   
--   Nel livello business, tramite l'aggiunta di codice all'applicazione per convalidare i dati. Il set di dati è un'unica posizione è possibile farlo. Il set di dati sono disponibili alcuni dei vantaggi della convalida di back-end, ad esempio la possibilità di convalidare le modifiche che stanno modificando i valori di colonna e riga. Per altre informazioni, vedere [convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md).  
+- Nel livello business, tramite l'aggiunta di codice all'applicazione per convalidare i dati. Il set di dati è un'unica posizione è possibile farlo. Il set di dati sono disponibili alcuni dei vantaggi della convalida di back-end, ad esempio la possibilità di convalidare le modifiche che stanno modificando i valori di colonna e riga. Per altre informazioni, vedere [convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md).  
   
--   Nel livello di presentazione, mediante l'aggiunta di convalida a un form. Per altre informazioni, vedere [: convalida dell'Input utente in Windows Form](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- Nel livello di presentazione, mediante l'aggiunta di convalida a un form. Per altre informazioni, vedere [: convalida dell'Input utente in Windows Form](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
--   Nei dati di back-end, inviando i dati all'origine dati, ad esempio, il database e in modo che possa accettare o rifiutare i dati. Se si lavora con un database che dispone di funzionalità per la convalida dei dati e fornendo informazioni sull'errore complesse, può trattarsi un pratico approccio in quanto è possibile convalidare i dati indipendentemente da dove provenga da. Tuttavia, questo approccio potrebbe non soddisfare requisiti di convalida specifiche dell'applicazione. Inoltre, che l'origine dati di convalida dei dati può comportare molti round trip all'origine dati, a seconda del modo in cui l'applicazione facilita la risoluzione degli errori di convalida generato dal back-end.  
+- Nei dati di back-end, inviando i dati all'origine dati, ad esempio, il database e in modo che possa accettare o rifiutare i dati. Se si lavora con un database che dispone di funzionalità per la convalida dei dati e fornendo informazioni sull'errore complesse, può trattarsi un pratico approccio in quanto è possibile convalidare i dati indipendentemente da dove provenga da. Tuttavia, questo approccio potrebbe non soddisfare requisiti di convalida specifiche dell'applicazione. Inoltre, che l'origine dati di convalida dei dati può comportare molti round trip all'origine dati, a seconda del modo in cui l'applicazione facilita la risoluzione degli errori di convalida generato dal back-end.  
   
-    > [!IMPORTANT]
-    >  Quando si usano i comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Gli utenti malintenzionati potrebbero tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive nel tentativo di accesso non autorizzato o danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. È consigliabile utilizzare sempre query con parametri o stored procedure, laddove possibile. Per altre informazioni, vedere [Cenni preliminari sugli attacchi tramite script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > [!IMPORTANT]
+  >  Quando si usano i comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Gli utenti malintenzionati potrebbero tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive nel tentativo di accesso non autorizzato o danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. È consigliabile utilizzare sempre query con parametri o stored procedure, laddove possibile. Per altre informazioni, vedere [Cenni preliminari sugli attacchi tramite script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- Dopo aver apportate le modifiche in un set di dati, è possibile trasmettere le modifiche a un'origine dati. In genere, eseguire questa operazione chiamando il `Update` metodo di un oggetto TableAdapter (o un adattatore dati). Il metodo scorre ciascun record in una tabella di dati determina il tipo di aggiornamento è obbligatorio (aggiornare, inserire o eliminare), se presente, e quindi esegue il comando appropriato.  
+  Dopo aver apportate le modifiche in un set di dati, è possibile trasmettere le modifiche a un'origine dati. In genere, eseguire questa operazione chiamando il `Update` metodo di un oggetto TableAdapter (o un adattatore dati). Il metodo scorre ciascun record in una tabella di dati determina il tipo di aggiornamento è obbligatorio (aggiornare, inserire o eliminare), se presente, e quindi esegue il comando appropriato.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Trasmettere gli aggiornamenti all'origine dati  
  Come dimostrazione del modo in cui gli aggiornamenti vengono eseguiti, si supponga che l'applicazione usa un set di dati che contiene una singola tabella dati. L'applicazione recupera due righe dal database. Dopo il recupero, la tabella di dati in memoria è simile al seguente:  

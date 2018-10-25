@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844087"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,18 +157,18 @@ In questo documento viene descritto come utilizzare l'editor modello di [!INCLUD
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Per trasformare un oggetto impostandone le proprietà  
   
-1.  In modalità **Seleziona** selezionare l'oggetto da trasformare. Una sovrapposizione del wireframe indica che l'oggetto è stato selezionato.  
+1. In modalità **Seleziona** selezionare l'oggetto da trasformare. Una sovrapposizione del wireframe indica che l'oggetto è stato selezionato.  
   
-2.  Nella finestra **Proprietà** specificare i valori per le proprietà **Rotazione**, **Scala** e **Traslazione**.  
+2. Nella finestra **Proprietà** specificare i valori per le proprietà **Rotazione**, **Scala** e **Traslazione**.  
   
-    > [!IMPORTANT]
-    >  Per la proprietà **Rotazione** specificare il grado di rotazione attorno a ognuno dei tre assi. Le rotazioni vengono applicate in ordine; verificare pertanto di pianificare una rotazione partendo dall'asse x, proseguendo con l'asse y e infine con l'asse z.  
+   > [!IMPORTANT]
+   >  Per la proprietà **Rotazione** specificare il grado di rotazione attorno a ognuno dei tre assi. Le rotazioni vengono applicate in ordine; verificare pertanto di pianificare una rotazione partendo dall'asse x, proseguendo con l'asse y e infine con l'asse z.  
   
- Mediante gli strumenti di modellazione è possibile creare trasformazioni in modo rapido, ma approssimativo. Impostando le proprietà dell'oggetto, è possibile specificare trasformazioni in modo preciso, ma non rapido. È consigliabile utilizzare gli strumenti di modellazione per ottenere trasformazioni più simili a quelle desiderate e successivamente regolare i valori delle proprietà.  
+   Mediante gli strumenti di modellazione è possibile creare trasformazioni in modo rapido, ma approssimativo. Impostando le proprietà dell'oggetto, è possibile specificare trasformazioni in modo preciso, ma non rapido. È consigliabile utilizzare gli strumenti di modellazione per ottenere trasformazioni più simili a quelle desiderate e successivamente regolare i valori delle proprietà.  
   
- Se non si desidera utilizzare manipolatori, è possibile abilitare la modalità a mano libera. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Free-form Manipulation** (Manipolazione a mano libera) per abilitare o disabilitare la modalità a mano libera. Nella modalità a mano libera è possibile avviare una modifica in un punto qualsiasi dell'area di progettazione, anziché in un punto del manipolatore. Nella modalità a mano libera è possibile vincolare le modifiche a determinati assi bloccando quelli che non si desidera modificare. Nella barra degli strumenti della **modalità editor dei modelli** scegliere qualsiasi combinazione dei pulsanti **Blocca asse X**, **Blocca asse Y** e **Blocca asse Z**.  
+   Se non si desidera utilizzare manipolatori, è possibile abilitare la modalità a mano libera. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Free-form Manipulation** (Manipolazione a mano libera) per abilitare o disabilitare la modalità a mano libera. Nella modalità a mano libera è possibile avviare una modifica in un punto qualsiasi dell'area di progettazione, anziché in un punto del manipolatore. Nella modalità a mano libera è possibile vincolare le modifiche a determinati assi bloccando quelli che non si desidera modificare. Nella barra degli strumenti della **modalità editor dei modelli** scegliere qualsiasi combinazione dei pulsanti **Blocca asse X**, **Blocca asse Y** e **Blocca asse Z**.  
   
- Potrebbe essere utile utilizzare oggetti mediante aggancio alla griglia. Nella barra degli strumenti della **modalità editor dei modelli** scegliere **Snapping** per abilitare o disabilitare l'allineamento sulla griglia. Se è abilitata la funzione di aggancio alla griglia, le trasformazioni di traslazione, rotazione e ridimensionamento sono vincolate a incrementi predefiniti.  
+   Potrebbe essere utile utilizzare oggetti mediante aggancio alla griglia. Nella barra degli strumenti della **modalità editor dei modelli** scegliere **Snapping** per abilitare o disabilitare l'allineamento sulla griglia. Se è abilitata la funzione di aggancio alla griglia, le trasformazioni di traslazione, rotazione e ridimensionamento sono vincolate a incrementi predefiniti.  
   
 ### <a name="working-with-the-pivot-point"></a>Utilizzo del punto di perno  
  Il punto di perno di un oggetto ne definisce il centro di rotazione e di ridimensionamento. È possibile modificare il punto di perno di un oggetto per variare il modo in cui viene interessato dalle trasformazioni di rotazione e ridimensionamento. Nella barra degli strumenti della **modalità editor dei modelli** scegliere **Modalità perno** per abilitare o disabilitare questa modalità. Se è abilitata la modalità perno, nel punto di perno dell'oggetto selezionato verrà visualizzato un piccolo indicatore di asse. Sarà quindi possibile usare gli strumenti **Traslazione** e **Rotazione** per modificare il punto di perno.  
@@ -191,11 +191,11 @@ In questo documento viene descritto come utilizzare l'editor modello di [!INCLUD
   
 ##### <a name="to-subdivide-faces"></a>Per suddividere facce  
   
-1.  In modalità di selezione delle facce, selezionare le facce che si desidera suddividere. Poiché la suddivisione crea nuovi dati di bordo, la suddivisione immediata di tutte le facce fornisce risultati più coerenti se le facce sono adiacenti.  
+1. In modalità di selezione delle facce, selezionare le facce che si desidera suddividere. Poiché la suddivisione crea nuovi dati di bordo, la suddivisione immediata di tutte le facce fornisce risultati più coerenti se le facce sono adiacenti.  
   
-2.  Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Suddividi**.  
+2. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Strumenti**, **Suddividi**.  
   
- È inoltre possibile triangolare facce, eseguire il merge di oggetti e convertire selezioni di poligoni in nuovi oggetti. La triangolazione crea bordi aggiuntivi in modo che una faccia non triangolare venga convertita in un numero ottimale di triangoli. Questa funzionalità non fornisce tuttavia dettagli geometrici aggiuntivi. L'azione di merge combina gli oggetti selezionati in un oggetto. Nuovi oggetti possono essere creati da una selezione di poligoni.  
+   È inoltre possibile triangolare facce, eseguire il merge di oggetti e convertire selezioni di poligoni in nuovi oggetti. La triangolazione crea bordi aggiuntivi in modo che una faccia non triangolare venga convertita in un numero ottimale di triangoli. Questa funzionalità non fornisce tuttavia dettagli geometrici aggiuntivi. L'azione di merge combina gli oggetti selezionati in un oggetto. Nuovi oggetti possono essere creati da una selezione di poligoni.  
   
 ##### <a name="to-triangulate-a-face"></a>Per triangolare una faccia  
   
@@ -259,13 +259,13 @@ In questo documento viene descritto come utilizzare l'editor modello di [!INCLUD
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Per creare una gerarchia di oggetti di pari livello  
   
-1.  In modalità **Seleziona** selezionare due o più oggetti. Viene creato un oggetto segnaposto, che diviene oggetto padre.  
+1. In modalità **Seleziona** selezionare due o più oggetti. Viene creato un oggetto segnaposto, che diviene oggetto padre.  
   
-2.  Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Crea gruppo**.  
+2. Nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Crea gruppo**.  
   
- Nell'editor modello viene utilizzato un wireframe bianco per identificare il primo oggetto selezionato, che diviene il padre. Altri oggetti della selezione presentano un wireframe blu. Per impostazione predefinita, non vengono visualizzati i nodi segnaposto. Per visualizzare i nodi segnaposto, nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Show Placeholder Nodes** (Mostra nodi segnaposto). È possibile utilizzare nodi segnaposto in modo analogo a qualsiasi oggetto di diverso tipo.  
+   Nell'editor modello viene utilizzato un wireframe bianco per identificare il primo oggetto selezionato, che diviene il padre. Altri oggetti della selezione presentano un wireframe blu. Per impostazione predefinita, non vengono visualizzati i nodi segnaposto. Per visualizzare i nodi segnaposto, nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Show Placeholder Nodes** (Mostra nodi segnaposto). È possibile utilizzare nodi segnaposto in modo analogo a qualsiasi oggetto di diverso tipo.  
   
- Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto figlio, quindi nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Detach from Parent** (Disconnetti da oggetto padre). Quando si rimuove il padre da un oggetto figlio, quest'ultimo diventa un oggetto radice nella scena.  
+   Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto figlio, quindi nella barra degli strumenti dell'**editor dei modelli** scegliere **Script**, **Scene Management** (Gestione scena), **Detach from Parent** (Disconnetti da oggetto padre). Quando si rimuove il padre da un oggetto figlio, quest'ultimo diventa un oggetto radice nella scena.  
   
 ## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera  
   

@@ -28,12 +28,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eea8457c988e6ce1ff5f965a0154e8f2dbe87a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830600"
 ---
 # <a name="how-to-debug-native-dlls"></a>Procedura: eseguire il debug di DLL native
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ ms.locfileid: "49244426"
   
  Il debug di una DLL può essere avviato:  
   
--   Dal progetto utilizzato per la creazione dell'eseguibile che chiama la DLL.  
+- Dal progetto utilizzato per la creazione dell'eseguibile che chiama la DLL.  
   
- \- oppure -  
+  \- oppure -  
   
--   Dal progetto stesso utilizzato per la creazione della DLL.  
+- Dal progetto stesso utilizzato per la creazione della DLL.  
   
- Se si dispone del progetto utilizzato per la creazione dell'eseguibile, iniziare il debug da tale progetto. Sarà quindi possibile aprire un file di origine relativo alla DLL e impostare i punti di interruzione in tale file, anche se non appartiene al progetto utilizzato per la creazione dell'eseguibile. Per altre informazioni, vedere [i punti di interruzione](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Se si dispone del progetto utilizzato per la creazione dell'eseguibile, iniziare il debug da tale progetto. Sarà quindi possibile aprire un file di origine relativo alla DLL e impostare i punti di interruzione in tale file, anche se non appartiene al progetto utilizzato per la creazione dell'eseguibile. Per altre informazioni, vedere [i punti di interruzione](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
- Se il debug viene avviato dal progetto che crea la DLL, è necessario specificare l'eseguibile che si desidera utilizzare per il debug della DLL.  
+  Se il debug viene avviato dal progetto che crea la DLL, è necessario specificare l'eseguibile che si desidera utilizzare per il debug della DLL.  
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>Per specificare un eseguibile per la sessione di debug  
   
-1.  Nelle **Esplora soluzioni**, selezionare il progetto che crea la DLL.  
+1. Nelle **Esplora soluzioni**, selezionare il progetto che crea la DLL.  
   
-2.  Dal **View** menu, scegliere**pagine delle proprietà**.  
+2. Dal **View** menu, scegliere**pagine delle proprietà**.  
   
-3.  Nel **pagine delle proprietà** finestra di dialogo, aprire il **le proprietà di configurazione** cartella e selezionare il **debug** categoria.  
+3. Nel **pagine delle proprietà** finestra di dialogo, aprire il **le proprietà di configurazione** cartella e selezionare il **debug** categoria.  
   
-4.  Nel **comando** , specificare il nome del percorso per il contenitore. Ad esempio, C:\Programmi\Applicazione\APP.EXE.  
+4. Nel **comando** , specificare il nome del percorso per il contenitore. Ad esempio, C:\Programmi\Applicazione\APP.EXE.  
   
-5.  Nel **argomenti del comando** , specificare gli argomenti necessari per il file eseguibile.  
+5. Nel **argomenti del comando** , specificare gli argomenti necessari per il file eseguibile.  
   
- Se non si specifica il file eseguibile nel _Project_**pagine delle proprietà** della finestra di dialogo il [eseguibile per la finestra di dialogo di sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md) viene visualizzata quando si avvia il debug.  
+   Se non si specifica il file eseguibile nel _Project_**pagine delle proprietà** della finestra di dialogo il [eseguibile per la finestra di dialogo di sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md) viene visualizzata quando si avvia il debug.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07a7917e1c33da2151abaeba7dc4f684ca0d067b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7d0a79d48b8ff054e4c7bdb9151f3eefbf287b24
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831237"
 ---
 # <a name="outlook-solutions"></a>soluzioni Outlook
   Visual Studio offre modelli di progetto che è possibile usare per creare componenti aggiuntivi VSTO per Microsoft Office Outlook. È possibile usare i componenti aggiuntivi VSTO per automatizzare Outlook, estenderne le funzionalità o personalizzarne l'interfaccia utente. Per altre informazioni sui componenti aggiuntivi VSTO, vedere [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
@@ -34,28 +34,28 @@ ms.locfileid: "34572946"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 > [!NOTE]  
->  Interessati allo sviluppo di soluzioni che estendono l'esperienza di Office in [più piattaforme](https://dev.office.com/add-in-availability)? Vedere la nuova [modello aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office hanno un footprint ridotto rispetto alle soluzioni e i componenti aggiuntivi VSTO e possono essere creati con quasi tutte le tecnologie, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  
+>  Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  
   
 ## <a name="create-an-outlook-vsto-add-in-project"></a>Creare un progetto del componente aggiuntivo VSTO di Outlook  
  Creare progetti Outlook usando uno dei modelli di progetto **Componente aggiuntivo per Outlook** nella finestra di dialogo **Nuovo progetto** . Questo modello include i riferimenti agli assembly e i file di progetto necessari.  
   
- Per ulteriori informazioni su come creare un progetto di componente aggiuntivo VSTO, vedere [procedura: progetti di Office Create in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Per ulteriori informazioni sui modelli di progetto, vedere [panoramica dei modelli di progetto Office](../vsto/office-project-templates-overview.md).  
+ Per altre informazioni su come creare un progetto di componente aggiuntivo VSTO, vedere [procedura: progetti di Office di creare in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Per altre informazioni sui modelli di progetto, vedere [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md).  
   
-## <a name="outlook-vsto-add-in-programming-model"></a>Outlook componente aggiuntivo VSTO in modello di programmazione  
+## <a name="outlook-vsto-add-in-programming-model"></a>Outlook VSTO Add-in modello di programmazione  
  Quando si crea un progetto di componente aggiuntivo VSTO per Outlook, Visual Studio genera una classe, chiamata `ThisAddIn`, che costituisce la base della soluzione. Questa classe fornisce un punto di partenza per la scrittura del codice ed espone inoltre il modello a oggetti di Outlook nel componente aggiuntivo VSTO.  
   
- Per ulteriori informazioni sul `ThisAddIn` classe e altre funzionalità che è possibile usare in un componente aggiuntivo VSTO, vedere [componenti aggiuntivi VSTO programma](../vsto/programming-vsto-add-ins.md).  
+ Per altre informazioni sul `ThisAddIn` classe e altre funzionalità, è possibile usare in un componente aggiuntivo VSTO, vedere [programma VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
-## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatizzare Outlook usando il modello a oggetti Outlook  
+## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatizzare Outlook usando il modello a oggetti  
  Il modello a oggetti di Outlook espone diversi tipi che è possibile usare per automatizzare Outlook. Questi tipi consentono di scrivere il codice per eseguire attività comuni:  
   
--   Creare e inviare messaggi di posta elettronica a livello di codice.  
+- Creare e inviare messaggi di posta elettronica a livello di codice.  
   
--   Inviare nuove convocazioni riunione.  
+- Inviare nuove convocazioni riunione.  
   
--   Cercare elementi in cartelle di Outlook.  
+- Cercare elementi in cartelle di Outlook.  
   
- Per altre informazioni, vedere [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md).  
+  Per altre informazioni, vedere [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md).  
   
 ## <a name="customize-the-user-interface-of-an-outlook-application"></a>Personalizzare l'interfaccia utente di un'applicazione di Outlook  
   
@@ -66,7 +66,7 @@ ms.locfileid: "34572946"
 |Aggiungere un riquadro attività personalizzato da visualizzare in un controllo di Outlook|[Riquadri attività personalizzati](../vsto/custom-task-panes.md).|  
 |Aggiungere un'area del modulo che estende o sostituisce moduli di Outlook esistenti.|[Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)|  
   
- Per ulteriori informazioni sulla personalizzazione dell'interfaccia utente di Outlook e altre applicazioni di Microsoft Office, vedere [personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
+ Per altre informazioni sulla personalizzazione dell'interfaccia utente di Outlook e altre applicazioni Microsoft Office, vedere [personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).  
   
 ## <a name="related-topics"></a>Argomenti correlati  
   

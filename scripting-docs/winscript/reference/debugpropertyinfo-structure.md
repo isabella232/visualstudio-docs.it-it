@@ -1,5 +1,5 @@
 ---
-title: Struttura DebugPropertyInfo | Documenti Microsoft
+title: Struttura DebugPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9baade1a742a06c952906c05c574e752806bc9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dca3dac5c2e55e512bd4f798ca4a9bce82f7e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874189"
 ---
 # <a name="debugpropertyinfo-structure"></a>Struttura DebugPropertyInfo
-Descrive un oggetto di natura gerarchica con nome, tipo e valore. Viene utilizzato per descrivere le proprietà di debug di espressioni e variabili locali, parametri, le variabili di controllo e registra.  
+Descrive un oggetto di natura gerarchica con nome, tipo e valore. Viene usato per descrivere le proprietà di debug di variabili locali, parametri, controllare variabili ed espressioni e registra.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,7 +44,7 @@ typedef struct DebugPropertyInfo{
   
 ## <a name="members"></a>Membri  
  dwValidFields  
- Un tipo di dati enumerati utilizzato per specificare quali campi vengono inizializzati.  
+ Tipo di dati enumerato consente di specificare quali campi vengono inizializzati.  
   
  bstrName  
  Il nome della proprietà all'interno di un contesto.  
@@ -62,7 +62,7 @@ typedef struct DebugPropertyInfo{
  Enumerazione che specifica i flag per gli attributi della proprietà di debug.  
   
  pDebugProp  
- Il `IDebugProperty` descritti per le informazioni contenute in questo `DebugPropertyInfo` struttura.  
+ Il `IDebugProperty` descritto dalle informazioni in questo `DebugPropertyInfo` struttura.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd227c94b81babab262a6a7210aabd68ca1e143e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74ca7eb25aac26eb66628ea76be502e4a244a2bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923368"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework e piattaforma di destinazione di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,25 +32,25 @@ ms.locfileid: "49239135"
   
  Le versioni seguenti di .NET Framework sono attualmente disponibili per l'uso:  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 (incluso in Visual Studio 2005)  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 (incluso in Visual Studio 2005)  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (incluso in [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (incluso in [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (incluso in [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (incluso in [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (incluso in Visual Studio 2010)  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (incluso in Visual Studio 2010)  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (incluso in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (incluso in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (incluso in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (incluso in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (incluso in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (incluso in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
   
- Le versioni di .NET Framework sono diverse l'una dall'altra nell'elenco di assembly che ognuna rende disponibile come riferimento. Ad esempio, non è possibile compilare applicazioni WPF (Windows Presentation Foundation) a meno che il progetto non imposti .NET Framework versione 3.0 o versioni superiori come destinazione.  
+  Le versioni di .NET Framework sono diverse l'una dall'altra nell'elenco di assembly che ognuna rende disponibile come riferimento. Ad esempio, non è possibile compilare applicazioni WPF (Windows Presentation Foundation) a meno che il progetto non imposti .NET Framework versione 3.0 o versioni superiori come destinazione.  
   
- Il framework di destinazione viene specificato nella proprietà `TargetFrameworkVersion` nel file di progetto. È possibile modificare il framework di destinazione per un progetto usando le pagine di proprietà del progetto nell'ambiente di sviluppo integrato (IDE) di Visual Studio. Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). I valori disponibili per `TargetFrameworkVersion` sono `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2` e `v4.6`.  
+  Il framework di destinazione viene specificato nella proprietà `TargetFrameworkVersion` nel file di progetto. È possibile modificare il framework di destinazione per un progetto usando le pagine di proprietà del progetto nell'ambiente di sviluppo integrato (IDE) di Visual Studio. Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). I valori disponibili per `TargetFrameworkVersion` sono `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2` e `v4.6`.  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -68,11 +68,11 @@ ms.locfileid: "49239135"
 ## <a name="target-platform"></a>Target Platform  
  Una *piattaforma* è una combinazione di hardware e software che definisce un particolare ambiente di runtime. Ad esempio,  
   
--   `x86` definisce un sistema operativo Windows a 32 bit che è in esecuzione su un processore 80x86 Intel o un suo equivalente.  
+- `x86` definisce un sistema operativo Windows a 32 bit che è in esecuzione su un processore 80x86 Intel o un suo equivalente.  
   
--   `Xbox` definisce la piattaforma Microsoft Xbox 360.  
+- `Xbox` definisce la piattaforma Microsoft Xbox 360.  
   
- Una *piattaforma di destinazione* è una particolare piattaforma in cui il proprio progetto è compilato per l'esecuzione. Il framework di destinazione viene specificato nella proprietà di compilazione `Platform` in un file di progetto. È possibile modificare la piattaforma di destinazione usando le pagine della proprietà del progetto o la **Gestione configurazione** nell'IDE.  
+  Una *piattaforma di destinazione* è una particolare piattaforma in cui il proprio progetto è compilato per l'esecuzione. Il framework di destinazione viene specificato nella proprietà di compilazione `Platform` in un file di progetto. È possibile modificare la piattaforma di destinazione usando le pagine della proprietà del progetto o la **Gestione configurazione** nell'IDE.  
   
 ```  
 <PropertyGroup>  

@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883304"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procedura: aggiungere commenti a un flusso di lavoro in Progettazione del flusso di lavoro
 
@@ -49,13 +49,13 @@ Per facilitare la creazione di flussi di lavoro più ampi e complessi, .NET Fram
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Visualizzazione di un'annotazione della finestra di progettazione dell'attività
 
-1.  Con un ActivityDesigner che dispone di un'annotazione che verrà visualizzata all'esterno dell'attività, fare clic sui **Pin** icona nello strumento decorativo visuale dell'annotazione.
+1. Con un ActivityDesigner che dispone di un'annotazione che verrà visualizzata all'esterno dell'attività, fare clic sui **Pin** icona nello strumento decorativo visuale dell'annotazione.
 
    L'annotazione verrà visualizzata nella finestra di progettazione dell'attività. Nella schermata riportata di seguito, l'annotazione "inizia attività nel flusso di lavoro" viene visualizzata nella finestra di progettazione dell'attività.
 
    ![Annotazione visualizzata nella finestra di progettazione dell'attività](../workflow-designer/media/annotationindesigner.png)
 
-1. Per visualizzare l'annotazione all'esterno di progettazione dell'attività, passare il mouse sull'area dell'annotazione nella finestra di progettazione dell'attività e scegliere il **Sblocca** icona
+2. Per visualizzare l'annotazione all'esterno di progettazione dell'attività, passare il mouse sull'area dell'annotazione nella finestra di progettazione dell'attività e scegliere il **Sblocca** icona
 
    ![Annotazione visualizzata all'esterno di progettazione dell'attività](../workflow-designer/media/annotationoutsidedesigner.png)
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::GetManagedObject | Documenti Microsoft
+title: IDebugManagedObject::GetManagedObject | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b90a43f1de02ba4d195f43b78ee1179c562eff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f30c76dfd0c2f9dafa4844f815ce2506e70346f3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917934"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 Restituisce un'interfaccia che rappresenta l'oggetto gestito.  
@@ -44,7 +44,7 @@ int GetManagedObject(
  [out] Restituisce un'interfaccia che rappresenta l'oggetto gestito.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  L'interfaccia restituita da questo metodo è possibile eseguire query per qualsiasi interfaccia implementata dalla classe gestita, che consente di chiamare i relativi metodi.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_columnNumberEnd | Documenti Microsoft
+title: Get_columnnumberend | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d7dd317cf24f2580d72fdc05ccbb8f60668fd1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b39cd627ab41d44ac65acbe13516fc3e5597b8a7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875645"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
-Recupera il numero di colonna di origine basato su uno in cui termina l'espressione o istruzione.  
+Recupera il numero di colonna di origine in base uno in cui termina l'espressione o istruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,13 +34,13 @@ HRESULT get_columnNumberEnd (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il numero di colonna in cui termina l'espressione o istruzione. Se il valore è zero, le informazioni di fine della colonna non sono presente.  
+ [out] Restituisce il numero di colonna in cui termina l'espressione o istruzione. Se il valore è zero, le informazioni di colonna finale non sono presente.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Il valore della colonna restituito da questo metodo è un offset nella riga per la posizione dopo l'ultimo carattere dell'istruzione nella riga di byte.  
+ Il valore della colonna restituito da questo metodo è un offset nella riga in cui la posizione successiva all'ultimo carattere dell'istruzione nella riga in byte.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

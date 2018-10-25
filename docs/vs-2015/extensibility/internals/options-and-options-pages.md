@@ -19,12 +19,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9cd4ea3b1465686ee2c0a0ebcfdc4e3aa2e9e56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816352"
 ---
 # <a name="options-and-options-pages"></a>Opzioni e pagine di opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ Facendo clic su **opzioni** nel **Tools** si aprirà il menu il **opzioni** nell
 ## <a name="option-attributes-and-layout"></a>Gli attributi di opzione e il Layout  
  L'interfaccia utente (UI) che fornisce la pagina determina l'aspetto delle opzioni in una pagina di opzioni personalizzate. Il layout, l'assegnazione di etichette e la descrizione delle opzioni in una pagina generica di opzioni sono determinati dagli attributi seguenti:  
   
--   <xref:System.ComponentModel.CategoryAttribute> Determina la categoria dell'opzione.  
+- <xref:System.ComponentModel.CategoryAttribute> Determina la categoria dell'opzione.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute> Determina il nome visualizzato dell'opzione.  
+- <xref:System.ComponentModel.DisplayNameAttribute> Determina il nome visualizzato dell'opzione.  
   
--   <xref:System.ComponentModel.DescriptionAttribute> Determina la descrizione dell'opzione.  
+- <xref:System.ComponentModel.DescriptionAttribute> Determina la descrizione dell'opzione.  
   
-    > [!NOTE]
-    >  Attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usare le risorse stringa per la localizzazione e sono definiti nel [esempio di progetto gestito](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > [!NOTE]
+  >  Attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usare le risorse stringa per la localizzazione e sono definiti nel [esempio di progetto gestito](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
- Si consideri il frammento di codice riportato di seguito.  
+  Si consideri il frammento di codice riportato di seguito.  
   
- [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
- [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
+  [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
+  [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
- L'opzione OptionInteger viene visualizzata nella pagina di opzioni come **l'opzione numeri interi** nel **My Options** categoria. Se l'opzione è selezionata, la descrizione **l'opzione integer**, viene visualizzato nella finestra di descrizione.  
+  L'opzione OptionInteger viene visualizzata nella pagina di opzioni come **l'opzione numeri interi** nel **My Options** categoria. Se l'opzione è selezionata, la descrizione **l'opzione integer**, viene visualizzato nella finestra di descrizione.  
   
 ## <a name="accessing-options-pages-from-another-vspackage"></a>L'accesso alle pagine di opzioni da un altro VSPackage  
  Un pacchetto VSPackage che ospita e gestisce una pagina di opzioni è possibile accedere a livello di codice da un altro VSPackage usando il modello di automazione. Nel codice seguente, ad esempio, un pacchetto VSPackage è registrato come una pagina di opzioni di hosting.  

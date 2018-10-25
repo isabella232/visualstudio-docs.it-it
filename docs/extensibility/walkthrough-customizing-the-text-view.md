@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da09f01e602f2d30288bc9f872f761d0bee4fc42
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c328925fd558e01138354427a80db7a692753710
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924915"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Procedura dettagliata: Personalizzare la visualizzazione di testo
 È possibile personalizzare una visualizzazione di testo, modificando le proprietà seguenti nella mappa dell'editor-format:  
@@ -40,7 +40,7 @@ ms.locfileid: "39498406"
   
 ## <a name="create-a-mef-project"></a>Creare un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `ViewPropertyTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `ViewPropertyTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -48,26 +48,26 @@ ms.locfileid: "39498406"
   
 ## <a name="define-the-content-type"></a>Definire il tipo di contenuto  
   
-1.  Aggiungere un file di classe e denominarla `ViewPropertyModifier`.  
+1. Aggiungere un file di classe e assegnargli il nome `ViewPropertyModifier`.  
   
-2.  Aggiungere il codice seguente `using` direttive:  
+2. Aggiungere il codice seguente `using` direttive:  
   
-     [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
-     [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
+    [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
   
-3.  Dichiarare una classe denominata `TestViewCreationListener` che eredita da <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Esportare questa classe con gli attributi seguenti:  
+3. Dichiarare una classe denominata `TestViewCreationListener` che eredita da <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Esportare questa classe con gli attributi seguenti:  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> Per specificare il tipo di contenuto a cui si applica questo listener.  
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> Per specificare il tipo di contenuto a cui si applica questo listener.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> Per specificare il ruolo di questo listener.  
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> Per specificare il ruolo di questo listener.  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]  
   
-4.  In questa classe, importare il <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
+4. In questa classe, importare il <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
   
-     [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
-     [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
+    [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
   
 ## <a name="change-the-view-properties"></a>Modificare le proprietà di visualizzazione  
   

@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Documenti Microsoft
+title: MODULE_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e28756873339d504efba417d9e2fe2cc00000b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897004"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 Descrive un particolare modulo (DLL, EXE o assembly).  
@@ -90,16 +90,16 @@ public struct MODULE_INFO {
  L'ordine di caricamento del modulo.  
   
  m_TimeStamp  
- L'ora che dell'ultima modifica il file di simboli.  
+ L'ora che dell'ultima modifica apportata al file di simboli.  
   
  m_bstrUrlSymbolLocation  
- Il percorso del file di simboli (ad esempio, ".\\") specificato nel modulo. Utilizzato come percorso inizio per trovare i simboli per un modulo.  
+ Il percorso del file di simboli (ad esempio, ".\\") specificato nel modulo. Utilizzato come una posizione di partenza per trovare i simboli per un modulo.  
   
  m_dwModuleFlags  
  Una combinazione di flag dal [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumerazione che descrive il modulo.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura viene passata per il [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) (metodo) in cui viene compilato.  
+ Questa struttura viene passata per il [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) in cui viene compilato nel metodo.  
   
  Questa struttura corrisponde a ogni modulo nel **moduli** finestra.  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadId | Documenti Microsoft
+title: IDebugThread2::GetThreadId | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac1701b3f52975e962860d558bc70b1847eef8e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4968bdd26607f68c8a1e8e4467904939ee0f528d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873448"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
-Ottiene l'identificatore del thread di sistema.  
+Ottiene l'identificatore di thread di sistema.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,16 +41,16 @@ int GetThreadId (
   
 #### <a name="parameters"></a>Parametri  
  `pdwThreadId`  
- [out] Restituisce l'identificatore del thread di sistema.  
+ [out] Restituisce l'identificatore di thread di sistema.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Un ID thread viene utilizzato per identificare un thread tra tutti gli altri thread in un processo.  
+ Un ID thread viene usato per identificare un thread tra tutti gli altri thread in un processo.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per una semplice `CProgram` oggetto che implementa il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CProgram` oggetto che implementa le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfaccia.  
   
 ```cpp  
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {     

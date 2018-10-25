@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dee03e2cd7b1c22faf5f1b06ec5efe763bad1387
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844416"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procedura dettagliata: Creare un progetto di definizione sito di base
   Questa procedura dettagliata illustra come creare una definizione di sito di base che contiene una Web part visiva con alcuni controlli su di esso. Per chiarezza, la Web part visiva che creano include solo alcuni controlli. Tuttavia, è possibile creare definizioni di sito di SharePoint più sofisticate che includono più funzionalità.  
   
  In questa procedura dettagliata vengono descritte le attività seguenti:  
   
--   Creazione di una definizione di sito tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modello di progetto.  
+- Creazione di una definizione di sito tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modello di progetto.  
   
--   Creazione di un sito di SharePoint usando una definizione di sito in SharePoint.  
+- Creazione di un sito di SharePoint usando una definizione di sito in SharePoint.  
   
--   Aggiunta di una Web part visiva alla soluzione.  
+- Aggiunta di una Web part visiva alla soluzione.  
   
--   Personalizzazione pagina default. aspx del sito mediante l'aggiunta la nuova Web part visiva.  
+- Personalizzazione pagina default. aspx del sito mediante l'aggiunta la nuova Web part visiva.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -52,29 +52,29 @@ ms.locfileid: "37119822"
   
 #### <a name="to-create-a-site-definition-project"></a>Per creare un progetto di definizione sito  
   
-1.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. Se l'IDE è configurato per usare le impostazioni di sviluppo di Visual Basic, nella barra dei menu, scegliere **File** > **nuovo progetto**.  
+1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. Se l'IDE è configurato per usare le impostazioni di sviluppo di Visual Basic, nella barra dei menu, scegliere **File** > **nuovo progetto**.  
   
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
+    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  Espandere la **Visual c#** nodo o il **Visual Basic** nodo, espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.  
+2. Espandere la **Visual c#** nodo o il **Visual Basic** nodo, espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.  
   
-3.  Nel **modelli** scegliere i **progetto SharePoint 2010** modello.  
+3. Nel **modelli** scegliere i **progetto SharePoint 2010** modello.  
   
-4.  Nel **Name** casella, immettere **TestSiteDef**e quindi scegliere il **OK** pulsante.  
+4. Nel **Name** casella, immettere **TestSiteDef**e quindi scegliere il **OK** pulsante.  
   
-     Il **Personalizzazione guidata SharePoint** viene visualizzata.  
+    Il **Personalizzazione guidata SharePoint** viene visualizzata.  
   
-5.  Nel **specificare il livello di sito e la sicurezza per il debug** pagina, immettere l'URL per il sito di SharePoint in cui si desidera eseguire il debug della definizione di sito o utilizzare il percorso predefinito (http://*il nome del sistema*/).  
+5. Nel **specificare il livello di sito e la sicurezza per il debug** pagina, immettere l'URL per il sito di SharePoint in cui si desidera eseguire il debug della definizione di sito o utilizzare il percorso predefinito (http://<em>il nome del sistema</em>/).  
   
-6.  Nel **qual è il livello di attendibilità per la soluzione SharePoint?** keychains le **Distribuisci come soluzione farm** pulsante di opzione.  
+6. Nel **qual è il livello di attendibilità per la soluzione SharePoint?** keychains le **Distribuisci come soluzione farm** pulsante di opzione.  
   
-     Tutti i progetti di definizione sito devono essere distribuiti come soluzioni farm. Per altre informazioni sulle soluzioni create mediante sandbox e soluzioni farm, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).  
+    Tutti i progetti di definizione sito devono essere distribuiti come soluzioni farm. Per altre informazioni sulle soluzioni create mediante sandbox e soluzioni farm, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Scegliere il **fine** pulsante.  
+7. Scegliere il **fine** pulsante.  
   
-     Il progetto viene visualizzato nella **Esplora soluzioni**.  
+    Il progetto viene visualizzato nella **Esplora soluzioni**.  
   
-8.  Nelle **Esplora soluzioni**, scegliere il nodo del progetto e quindi nella barra dei menu, scegliere **Project** > **Aggiungi nuovo elemento**.  
+8. Nelle **Esplora soluzioni**, scegliere il nodo del progetto e quindi nella barra dei menu, scegliere **Project** > **Aggiungi nuovo elemento**.  
   
 9. In presenza di una **Visual c#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** nodo.  
   
@@ -188,5 +188,5 @@ ms.locfileid: "37119822"
   
 ## <a name="see-also"></a>Vedere anche
  [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)   
- [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+ [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
