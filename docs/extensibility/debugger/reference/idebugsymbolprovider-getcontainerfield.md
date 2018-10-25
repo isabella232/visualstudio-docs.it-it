@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContainerField | Documenti Microsoft
+title: IDebugSymbolProvider::GetContainerField | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41709f658da15001b6f604b78bf081edefd88b8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac7acc5d12ecce72119f19a51b1f4313a1aabe08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926403"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Questo metodo ottiene il campo che contiene l'indirizzo di debug.  
@@ -46,7 +46,7 @@ int GetContainerField(
  [in] L'indirizzo come rappresentato da un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.  
   
  `ppContainerField`  
- [out] Restituisce un campo di contenitore rappresentato da un [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaccia.  
+ [out] Restituisce un campo contenitore rappresentato da un [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaccia.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

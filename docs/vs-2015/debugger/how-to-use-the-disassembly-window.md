@@ -30,12 +30,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cdefbbc16021931e3d31dd2d46f4e6509c4dd17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907586"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Procedura: utilizzare la finestra Disassembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,23 +46,23 @@ Questa funzionalità è disponibile solo se è abilitato il debug a livello di i
   
  Oltre alle istruzioni dell'assembly, il **Disassembly** finestra è possibile visualizzare le informazioni facoltative seguenti:  
   
--   L'indirizzo di memoria in cui si trova ciascuna istruzione. Per applicazioni native, si tratta dell'indirizzo di memoria effettivo. Per Visual Basic, C# o codice gestito, si tratta dell'offset dall'inizio della funzione.  
+- L'indirizzo di memoria in cui si trova ciascuna istruzione. Per applicazioni native, si tratta dell'indirizzo di memoria effettivo. Per Visual Basic, C# o codice gestito, si tratta dell'offset dall'inizio della funzione.  
   
--   Codice sorgente dal quale deriva il codice assembly.  
+- Codice sorgente dal quale deriva il codice assembly.  
   
--   Byte del codice: rappresentazioni in byte delle effettive istruzioni in linguaggio macchina o MSIL.  
+- Byte del codice: rappresentazioni in byte delle effettive istruzioni in linguaggio macchina o MSIL.  
   
--   Nomi di simboli per gli indirizzi di memoria.  
+- Nomi di simboli per gli indirizzi di memoria.  
   
--   Numeri di riga corrispondenti al codice sorgente.  
+- Numeri di riga corrispondenti al codice sorgente.  
   
- Le istruzioni in linguaggio assembly sono costituite da elementi mnemonici, che sono abbreviazioni di nomi di istruzioni e simboli che rappresentano variabili, registri e costanti. Ogni istruzione in linguaggio macchina è rappresentata da un elemento mnemonico in linguaggio assembly, seguito in genere da una o più variabili, registri o costanti.  
+  Le istruzioni in linguaggio assembly sono costituite da elementi mnemonici, che sono abbreviazioni di nomi di istruzioni e simboli che rappresentano variabili, registri e costanti. Ogni istruzione in linguaggio macchina è rappresentata da un elemento mnemonico in linguaggio assembly, seguito in genere da una o più variabili, registri o costanti.  
   
- Se non si è in grado di leggere il linguaggio assembly e si desidera sfruttare appieno i vantaggi della finestra Disassembly, consultare un buon manuale sulla programmazione in linguaggio assembly. Tale argomento esula dallo scopo di questa breve introduzione alla finestra Disassembly.  
+  Se non si è in grado di leggere il linguaggio assembly e si desidera sfruttare appieno i vantaggi della finestra Disassembly, consultare un buon manuale sulla programmazione in linguaggio assembly. Tale argomento esula dallo scopo di questa breve introduzione alla finestra Disassembly.  
   
- Dal momento che il codice assembly si basa in modo rilevante sui registri del processore o, nel caso di codice gestito, sui registri di Common Language Runtime, sarà particolarmente vantaggioso utilizzare la finestra Disassembly insieme alla finestra Registri, in cui può essere esaminato il contenuto dei registri.  
+  Dal momento che il codice assembly si basa in modo rilevante sui registri del processore o, nel caso di codice gestito, sui registri di Common Language Runtime, sarà particolarmente vantaggioso utilizzare la finestra Disassembly insieme alla finestra Registri, in cui può essere esaminato il contenuto dei registri.  
   
- È poco probabile che si abbia desiderio o necessità di visualizzare istruzioni in linguaggio macchina nel loro formato numerico non elaborato anziché in formato di linguaggio assembly. Tuttavia, qualora ciò fosse necessario, sarà possibile utilizzare la finestra Memoria o scegliere Mostra byte del codice dal menu di scelta rapida della finestra Disassembly.  
+  È poco probabile che si abbia desiderio o necessità di visualizzare istruzioni in linguaggio macchina nel loro formato numerico non elaborato anziché in formato di linguaggio assembly. Tuttavia, qualora ciò fosse necessario, sarà possibile utilizzare la finestra Memoria o scegliere Mostra byte del codice dal menu di scelta rapida della finestra Disassembly.  
   
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

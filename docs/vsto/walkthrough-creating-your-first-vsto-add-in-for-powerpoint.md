@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f35779debdad5a43781b2fe7221085f3fe0e1010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882591"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Procedura dettagliata: Creare un componente aggiuntivo di VSTO per PowerPoint
   Questa procedura dettagliata illustra come creare un componente aggiuntivo VSTO per Microsoft Office PowerPoint. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali presentazioni siano aperte. Per altre informazioni, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "42636251"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Creazione di un progetto del componente aggiuntivo VSTO PowerPoint per PowerPoint.  
+- Creazione di un progetto del componente aggiuntivo VSTO PowerPoint per PowerPoint.  
   
--   Scrittura di codice che usa il modello a oggetti di PowerPoint per aggiungere una casella di testo a ogni nuova diapositiva.  
+- Scrittura di codice che usa il modello a oggetti di PowerPoint per aggiungere una casella di testo a ogni nuova diapositiva.  
   
--   Creazione ed esecuzione del progetto a scopo di test.  
+- Creazione ed esecuzione del progetto a scopo di test.  
   
--   Pulizia del progetto, in modo che il componente aggiuntivo VSTO non venga più eseguito automaticamente nel computer di sviluppo.  
+- Pulizia del progetto, in modo che il componente aggiuntivo VSTO non venga più eseguito automaticamente nel computer di sviluppo.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -78,18 +78,18 @@ ms.locfileid: "42636251"
   
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Per aggiungere una casella di testo a ogni nuova diapositiva  
   
-1.  Nel file di codice ThisAddIn, aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice definisce un gestore eventi per il [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) eventi del <xref:Microsoft.Office.Interop.PowerPoint.Application> oggetto.  
+1. Nel file di codice ThisAddIn, aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice definisce un gestore eventi per il [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) eventi del <xref:Microsoft.Office.Interop.PowerPoint.Application> oggetto.  
   
-     Quando l'utente aggiunge una nuova diapositiva alla presentazione attiva, il gestore eventi aggiunge una casella di testo nella parte superiore della nuova diapositiva, quindi aggiunge il testo nella casella di testo.  
+    Quando l'utente aggiunge una nuova diapositiva alla presentazione attiva, il gestore eventi aggiunge una casella di testo nella parte superiore della nuova diapositiva, quindi aggiunge il testo nella casella di testo.  
   
-     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Se si usa C#, aggiungere il seguente codice al gestore eventi `ThisAddIn_Startup` . Questo codice è necessario per connettere il `Application_PresentationNewSlide` gestore dell'evento con il [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) evento.  
+2. Se si usa C#, aggiungere il seguente codice al gestore eventi `ThisAddIn_Startup` . Questo codice è necessario per connettere il `Application_PresentationNewSlide` gestore dell'evento con il [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) evento.  
   
-     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
- Per modificare tutte le nuove diapositive, negli esempi di codice precedenti vengono usati i seguenti oggetti:  
+   Per modificare tutte le nuove diapositive, negli esempi di codice precedenti vengono usati i seguenti oggetti:  
   
 -   Il campo `Application` della classe `ThisAddIn` . Il campo `Application` restituisce un oggetto <xref:Microsoft.Office.Interop.PowerPoint.Application> che rappresenta l'istanza corrente di PowerPoint.  
   

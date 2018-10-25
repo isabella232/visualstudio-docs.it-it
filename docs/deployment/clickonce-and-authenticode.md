@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907443"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 *Authenticode* è una tecnologia Microsoft basata sulla crittografia standard che consente di firmare il codice di un'applicazione con certificati digitali che verificano l'autenticità dell'editore dell'applicazione. Usando la tecnologia Authenticode per la distribuzione di applicazioni, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] consente di ridurre i rischi di trojan horse, ovvero virus o altri programmi dannosi presentati da una terza parte malintenzionata in modo ingannevole come programmi legittimi provenienti da una fonte definita e attendibile. Firmare le distribuzioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un certificato digitale è un passaggio facoltativo per verificare che gli assembly e i file non siano stati manomessi.  
@@ -39,11 +39,11 @@ ms.locfileid: "39512210"
   
  È possibile ottenere un certificato per la firma del codice in uno dei tre modi seguenti:  
   
--   Acquistandone uno da un fornitore di certificati.  
+- Acquistandone uno da un fornitore di certificati.  
   
--   Ricevendone uno da un gruppo dell'organizzazione responsabile della creazione di certificati digitali.  
+- Ricevendone uno da un gruppo dell'organizzazione responsabile della creazione di certificati digitali.  
   
--   Generare il proprio certificato usando il cmdlet di PowerShell New-SelfSignedCertificate o usando *MakeCert.exe*, che viene incluso con il [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
+- Generare il proprio certificato usando il cmdlet di PowerShell New-SelfSignedCertificate o usando *MakeCert.exe*, che viene incluso con il [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Come con le autorità di certificazione consente agli utenti  
  Un certificato generato mediante New-SelfSignedCertificate o la *MakeCert.exe* utilità viene comunemente definito un *autocertificato* o un *certificato di prova*. Questo tipo di certificato funziona molto allo stesso modo in cui un *snk* file funziona in .NET Framework. È costituito esclusivamente da una coppia di chiavi crittografiche pubbliche/private e non contiene informazioni verificabili sull'editore. Gli autocertificati consentono di distribuire applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un elevato livello di attendibilità in una rete intranet. Tuttavia, quando sono eseguite in un computer client, queste applicazioni vengono identificate da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] come provenienti da un editore sconosciuto. Per impostazione predefinita, non è possibile usare la distribuzione di applicazioni attendibili per le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmate con autocertificati e distribuite su Internet.  
@@ -68,7 +68,7 @@ ms.locfileid: "39512210"
   
 ### <a name="store-certificates"></a>Certificati di Store  
   
--   È possibile archiviare i certificati come un *PFX* file nel file system, oppure è possibile archiviarli all'interno di un contenitore di chiavi. Un utente su un dominio Windows può avere più contenitori di chiavi. Per impostazione predefinita *MakeCert.exe* archivierà i certificati nel contenitore di chiavi personale, a meno che non si specifica che è necessario salvarlo in un *PFX* invece. *Mage.exe* e *MageUI.exe*, il [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] strumenti per la creazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni, consentono di usare i certificati archiviati in entrambi i modi.  
+- È possibile archiviare i certificati come un *PFX* file nel file system, oppure è possibile archiviarli all'interno di un contenitore di chiavi. Un utente su un dominio Windows può avere più contenitori di chiavi. Per impostazione predefinita *MakeCert.exe* archivierà i certificati nel contenitore di chiavi personale, a meno che non si specifica che è necessario salvarlo in un *PFX* invece. *Mage.exe* e *MageUI.exe*, il [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] strumenti per la creazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni, consentono di usare i certificati archiviati in entrambi i modi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Distribuzione e protezione ClickOnce](../deployment/clickonce-security-and-deployment.md)   

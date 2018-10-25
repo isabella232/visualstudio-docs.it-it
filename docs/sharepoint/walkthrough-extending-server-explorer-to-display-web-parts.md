@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc6b015058445ddf35e5d247847a40d01e691047
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915815"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: Estendere Esplora Server per visualizzare le web part
   In Visual Studio, è possibile usare la **connessioni di SharePoint** nodo **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata verrà illustrato come estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuna connessa sito di SharePoint.  
@@ -48,26 +48,26 @@ ms.locfileid: "42634738"
 ## <a name="prerequisites"></a>Prerequisiti  
  Sono necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:  
   
--   Edizioni supportate di Windows, SharePoint e Visual Studio.  
+- Edizioni supportate di Windows, SharePoint e Visual Studio.  
   
--   Visual Studio SDK. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'elemento del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'elemento del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
+  Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
   
--   Usando il modello a oggetti server per SharePoint. Per altre informazioni, vedere [usando il modello a oggetti lato Server SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Usando il modello a oggetti server per SharePoint. Per altre informazioni, vedere [usando il modello a oggetti lato Server SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Web part in soluzioni di SharePoint. Per altre informazioni, vedere [Web Parts Overview](http://go.microsoft.com/fwlink/?LinkId=177803).  
+- Web part in soluzioni di SharePoint. Per altre informazioni, vedere [Web Parts Overview](http://go.microsoft.com/fwlink/?LinkId=177803).  
   
 ## <a name="create-the-projects"></a>Creare i progetti
  Per completare questa procedura dettagliata, è necessario creare tre progetti:  
   
--   Un progetto VSIX per creare il pacchetto VSIX per distribuire l'estensione.  
+- Un progetto VSIX per creare il pacchetto VSIX per distribuire l'estensione.  
   
--   Un progetto libreria di classi che implementa l'estensione. Questo progetto deve avere come destinazione .NET Framework 4.5.  
+- Un progetto libreria di classi che implementa l'estensione. Questo progetto deve avere come destinazione .NET Framework 4.5.  
   
--   Un progetto libreria di classi che definisce i comandi di SharePoint personalizzati. Questo progetto deve avere come destinazione.NET Framework 3.5.  
+- Un progetto libreria di classi che definisce i comandi di SharePoint personalizzati. Questo progetto deve avere come destinazione.NET Framework 3.5.  
   
- Avviare la procedura dettagliata mediante la creazione di progetti.  
+  Avviare la procedura dettagliata mediante la creazione di progetti.  
   
 #### <a name="to-create-the-vsix-project"></a>Per creare il progetto VSIX  
   

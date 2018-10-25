@@ -9,41 +9,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918532"
 ---
 # <a name="address-dpi-issues"></a>Problemi DPI
 Un numero crescente di dispositivi è distribuiti con "schermi". Queste schermate hanno in genere più di 200 pixel per pollice (PPID). Per lavorare con un'applicazione in tali computer sarà necessario il contenuto per la scalabilità verticale per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire dal 2014, la destinazione principale per schermi ad alta densità è mobile computing dispositivi (Tablet, computer portatili conchiglia e telefoni).  
   
  Windows 8.1 e versioni successive sono disponibili molte funzionalità per abilitare questi computer lavorare con gli ambienti in cui la macchina è collegata a entrambi ad alta densità e densità standard consente di visualizzare contemporaneamente e consente di visualizzare.  
   
--   Windows può consentire di ridimensiona il contenuto nel dispositivo usando il "rendere il testo e altri elementi superiori o inferiori" impostazione (disponibile a partire da Windows XP).  
+- Windows può consentire di ridimensiona il contenuto nel dispositivo usando il "rendere il testo e altri elementi superiori o inferiori" impostazione (disponibile a partire da Windows XP).  
   
--   Windows 8.1 e versioni successive verranno automaticamente scalati in contenuto per la maggior parte delle applicazioni sia coerente quando spostato tra schermi di diverse densità di pixel. Quando la visualizzazione principale è ad alta densità (200% scalabilità) e la visualizzazione secondaria è densità standard (100%), Windows ridimensionerà automaticamente il contenuto della finestra dell'applicazione verso il basso nella visualizzazione secondaria (1 pixel visualizzati per ogni 4 pixel eseguito il rendering tramite il applicazione).  
+- Windows 8.1 e versioni successive verranno automaticamente scalati in contenuto per la maggior parte delle applicazioni sia coerente quando spostato tra schermi di diverse densità di pixel. Quando la visualizzazione principale è ad alta densità (200% scalabilità) e la visualizzazione secondaria è densità standard (100%), Windows ridimensionerà automaticamente il contenuto della finestra dell'applicazione verso il basso nella visualizzazione secondaria (1 pixel visualizzati per ogni 4 pixel eseguito il rendering tramite il applicazione).  
   
--   Windows predefinita sarà il diritto di ridimensionamento per la densità di pixel e la visualizzazione di distanza per la visualizzazione (Windows 7 e versioni successive, configurabile dall'OEM).  
+- Windows predefinita sarà il diritto di ridimensionamento per la densità di pixel e la visualizzazione di distanza per la visualizzazione (Windows 7 e versioni successive, configurabile dall'OEM).  
   
--   Windows può ridimensionare automaticamente il contenuto di 250% su nuovi dispositivi che superano 280 ppi (a partire da Windows 8.1 S14).  
+- Windows può ridimensionare automaticamente il contenuto di 250% su nuovi dispositivi che superano 280 ppi (a partire da Windows 8.1 S14).  
   
- Windows dispone di una soluzione per gestire la scalabilità verticale dell'interfaccia utente per sfruttare i vantaggi del numero di pixel maggiore di. Un'applicazione consente di partecipare a questo sistema dichiarando stesso "DPI del sistema." Le applicazioni che non eseguire questa operazione vengono aumentate dal sistema. Ciò può comportare un'esperienza utente "fuzzy" in cui l'intera applicazione è in modo uniforme pixel in modalità estesa. Ad esempio:  
+  Windows dispone di una soluzione per gestire la scalabilità verticale dell'interfaccia utente per sfruttare i vantaggi del numero di pixel maggiore di. Un'applicazione consente di partecipare a questo sistema dichiarando stesso "DPI del sistema." Le applicazioni che non eseguire questa operazione vengono aumentate dal sistema. Ciò può comportare un'esperienza utente "fuzzy" in cui l'intera applicazione è in modo uniforme pixel in modalità estesa. Ad esempio:  
   
- ![Valore DPI emette Fuzzy](../extensibility/media/dpi-issues-fuzzy.png "DPI emette Fuzzy")  
+  ![Valore DPI emette Fuzzy](../extensibility/media/dpi-issues-fuzzy.png "DPI emette Fuzzy")  
   
- Visual Studio consente di partecipare alla scalabilità compatibile con DPI e pertanto non è "virtualizzato."  
+  Visual Studio consente di partecipare alla scalabilità compatibile con DPI e pertanto non è "virtualizzato."  
   
- Windows (e Visual Studio) sfruttare diverse tecnologie dell'interfaccia utente, che sono diversi modi di affrontare fattori impostati dal sistema di scalabilità. Ad esempio:  
+  Windows (e Visual Studio) sfruttare diverse tecnologie dell'interfaccia utente, che sono diversi modi di affrontare fattori impostati dal sistema di scalabilità. Ad esempio:  
   
--   WPF misura i controlli in modo indipendente dalla periferica (unità, non pixel). WPF UI offre scalabilità automatica per il valore DPI corrente.  
+- WPF misura i controlli in modo indipendente dalla periferica (unità, non pixel). WPF UI offre scalabilità automatica per il valore DPI corrente.  
   
--   Tutte le dimensioni di testo indipendentemente dal framework dell'interfaccia utente sono espresse in punti e pertanto vengono considerate dal sistema come indipendente da DPI. Testo in WPF, WinForms e Win32 già aumentare le prestazioni in modo corretto quando viene disegnata sulla periferica di visualizzazione.  
+- Tutte le dimensioni di testo indipendentemente dal framework dell'interfaccia utente sono espresse in punti e pertanto vengono considerate dal sistema come indipendente da DPI. Testo in WPF, WinForms e Win32 già aumentare le prestazioni in modo corretto quando viene disegnata sulla periferica di visualizzazione.  
   
--   Finestre e finestre di dialogo Win32/WinForms dispongono di mezzi per l'abilitazione di layout che viene ridimensionato con il testo (ad esempio, tramite griglia, flow e pannelli di layout di tabella). Che permettono di evitare i percorsi hardcoded pixel che non vengono scalati quando vengono aumentate le dimensioni dei caratteri.  
+- Finestre e finestre di dialogo Win32/WinForms dispongono di mezzi per l'abilitazione di layout che viene ridimensionato con il testo (ad esempio, tramite griglia, flow e pannelli di layout di tabella). Che permettono di evitare i percorsi hardcoded pixel che non vengono scalati quando vengono aumentate le dimensioni dei caratteri.  
   
--   Icone fornite dal sistema o risorse in base alle metriche di sistema (ad esempio, SM_CXICON e SM_CXSMICON) sono già ridimensionate.  
+- Icone fornite dal sistema o risorse in base alle metriche di sistema (ad esempio, SM_CXICON e SM_CXSMICON) sono già ridimensionate.  
   
 ## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Win32 meno recenti (GDI, GDI+) e l'interfaccia utente basata su Windows Form  
  Mentre WPF è ancora compatibile con elevata DPI, gran parte del codice basata su Win32/GDI non è stato scritto originariamente con compatibilità con DPI in considerazione. Windows ha fornito le API con ridimensionamento DPI. Le correzioni ai problemi di Win32 devono essere considerati in modo uniforme per il prodotto. Visual Studio ha fornito un supporto di libreria di classi per evitare la duplicazione di funzionalità e la garanzia di coerenza interno del prodotto.  
@@ -85,21 +85,21 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="layout-issues"></a>Problemi di layout  
  È possibile evitare problemi di layout comuni principalmente, mantenendo i punti nell'interfaccia utente di scalabilità e una rispetto a altra, anziché usare posizioni assolute (in particolare, in unità di pixel). Ad esempio:  
   
--   Le posizioni di layout di testo/necessario modificare account per le immagini con scalabilità verticale.  
+- Le posizioni di layout di testo/necessario modificare account per le immagini con scalabilità verticale.  
   
--   Le colonne nelle griglie necessario hanno larghezze regolate per il testo con scalabilità verticale.  
+- Le colonne nelle griglie necessario hanno larghezze regolate per il testo con scalabilità verticale.  
   
--   Nonché aumentare le dimensioni impostate come hardcoded o uno spazio tra gli elementi. Dimensioni basate solo sulle dimensioni di testo sono in genere tutto bene, perché i tipi di carattere vengono aumentate automaticamente.  
+- Nonché aumentare le dimensioni impostate come hardcoded o uno spazio tra gli elementi. Dimensioni basate solo sulle dimensioni di testo sono in genere tutto bene, perché i tipi di carattere vengono aumentate automaticamente.  
   
- Sono disponibili in funzioni di supporto di <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> classe per consentire la scalabilità sull'asse X e Y:  
+  Sono disponibili in funzioni di supporto di <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> classe per consentire la scalabilità sull'asse X e Y:  
   
--   LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funzioni di consentono la scalabilità in X o asse Y)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funzioni di consentono la scalabilità in X o asse Y)  
   
--   lo spazio di int = DpiHelper.LogicalToDeviceUnitsX (10).  
+- lo spazio di int = DpiHelper.LogicalToDeviceUnitsX (10).  
   
--   int altezza = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- int altezza = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
- Esistono overload LogicalToDeviceUnits per consentire il ridimensionamento di oggetti, ad esempio Rect, Point e Size.  
+  Esistono overload LogicalToDeviceUnits per consentire il ridimensionamento di oggetti, ad esempio Rect, Point e Size.  
   
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Usando la libreria/classe DPIHelper per ridimensionare le immagini e layout  
  La libreria helper DPI di Visual Studio è disponibile nei moduli nativi e gestiti e può essere usata all'esterno di Visual Studio shell da altre applicazioni.  
@@ -144,15 +144,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Indicazioni:  
   
--   Per il logo banner e immagine grafica, il valore predefinito <xref:System.Windows.Media.BitmapScalingMode> può essere usato la modalità di ridimensionamento.  
+- Per il logo banner e immagine grafica, il valore predefinito <xref:System.Windows.Media.BitmapScalingMode> può essere usato la modalità di ridimensionamento.  
   
--   Per le voci di menu e le immagini visualizzato, il <xref:System.Windows.Media.BitmapScalingMode> deve essere usato quando non causa altri elementi di una distorsione a eliminare confusa (nel server % 200 e 300%).  
+- Per le voci di menu e le immagini visualizzato, il <xref:System.Windows.Media.BitmapScalingMode> deve essere usato quando non causa altri elementi di una distorsione a eliminare confusa (nel server % 200 e 300%).  
   
--   Per non multipli di 100% (ad esempio, 250% o % 350) i livelli di zoom di grandi dimensioni, il ridimensionamento delle immagini visualizzato con Bicubica risultante nell'interfaccia utente fuzzy, sbiadito consentendo di riprodurre. Viene ottenuto un risultato migliore scalabilità l'immagine con NearestNeighbor al multiplo più grande del 100% (ad esempio, % 200 o 300%) prima e la scalabilità con Bicubica da tale posizione. Vedere caso speciale: prescaling immagini WPF per DPI elevato dei livelli per altre informazioni.  
+- Per non multipli di 100% (ad esempio, 250% o % 350) i livelli di zoom di grandi dimensioni, il ridimensionamento delle immagini visualizzato con Bicubica risultante nell'interfaccia utente fuzzy, sbiadito consentendo di riprodurre. Viene ottenuto un risultato migliore scalabilità l'immagine con NearestNeighbor al multiplo più grande del 100% (ad esempio, % 200 o 300%) prima e la scalabilità con Bicubica da tale posizione. Vedere caso speciale: prescaling immagini WPF per DPI elevato dei livelli per altre informazioni.  
   
- La classe DpiHelper nello spazio dei nomi Microsoft.VisualStudio.PlatformUI fornisce un membro <xref:System.Windows.Media.BitmapScalingMode> che può essere utilizzato per l'associazione. Consentirà la shell di Visual Studio controllare la modalità ridimensionamento delle bitmap interno del prodotto in modo uniforme, in base al fattore di scala DPI.  
+  La classe DpiHelper nello spazio dei nomi Microsoft.VisualStudio.PlatformUI fornisce un membro <xref:System.Windows.Media.BitmapScalingMode> che può essere utilizzato per l'associazione. Consentirà la shell di Visual Studio controllare la modalità ridimensionamento delle bitmap interno del prodotto in modo uniforme, in base al fattore di scala DPI.  
   
- Per usarlo in XAML, aggiungere:  
+  Per usarlo in XAML, aggiungere:  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  

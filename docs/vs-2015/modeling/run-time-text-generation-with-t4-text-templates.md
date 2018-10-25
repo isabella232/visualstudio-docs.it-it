@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920131"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Modello di ereditarietà: frammenti nei metodi di Base  
  Nel modello usato nell'esempio seguente, si noti quanto riportato di seguito:  
   
--   La classe di base `SharedFragments` definisce i metodi all'interno di blocchi della funzionalità di classe `<#+ ... #>`.  
+- La classe di base `SharedFragments` definisce i metodi all'interno di blocchi della funzionalità di classe `<#+ ... #>`.  
   
--   La classe di base non contiene testo libero. Al contrario, tutti i relativi blocchi di testo si verificano all'interno di metodi di funzionalità della classe.  
+- La classe di base non contiene testo libero. Al contrario, tutti i relativi blocchi di testo si verificano all'interno di metodi di funzionalità della classe.  
   
--   La classe derivata richiama i metodi definiti nella `SharedFragments`.  
+- La classe derivata richiama i metodi definiti nella `SharedFragments`.  
   
--   L'applicazione chiama il `TextTransform()` metodo della classe derivata, ma non trasforma la classe di base `SharedFragments`.  
+- L'applicazione chiama il `TextTransform()` metodo della classe derivata, ma non trasforma la classe di base `SharedFragments`.  
   
--   Entrambe le classi di base e derivate sono modelli di testo di runtime: vale a dire il **Custom Tool** è impostata su **TextTemplatingFilePreprocessor**.  
+- Entrambe le classi di base e derivate sono modelli di testo di runtime: vale a dire il **Custom Tool** è impostata su **TextTemplatingFilePreprocessor**.  
   
- **SharedFragments.tt:**  
+  **SharedFragments.tt:**  
   
 ```csharp  
 <#@ template language="C#" #>  

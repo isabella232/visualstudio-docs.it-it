@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: da8ff01bed6446cc497c41ad21894c70df090efb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53bddbda7ed89a0d826e135d7989c1b8a01ce594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915243"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usare shim per isolare l'applicazione da altri assembly per il testing unità
 
@@ -435,7 +435,6 @@ Il comportamento può essere modificato in qualsiasi momento impostando la propr
 var shim = new ShimMyClass();
 //return default(T) or do nothing
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
-
 ```
 
 Il comportamento può anche essere modificato a livello globale per tutte le istanze sottoposte a shim per le quali la proprietà `InstanceBehavior` non è stata impostata in modo esplicito impostando la proprietà statica `ShimsBehaviors.Current`:

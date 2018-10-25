@@ -1,5 +1,5 @@
 ---
-title: Funzione SccWillCreateSccFile | Documenti Microsoft
+title: Funzione SccWillCreateSccFile | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af6da09badf0ffea4846d35fe00b4ca146243d64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6723eed8d29df62b2016a851bd69ae0e53a6453c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927632"
 ---
-# <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile (funzione)
-Questa funzione determina se il plug-in controllo del codice sorgente supporta la creazione del MSSCCPRJ. File di controllo del codice sorgente per ogni file specificato.  
+# <a name="sccwillcreatesccfile-function"></a>Funzione SccWillCreateSccFile
+Questa funzione determina se il controllo del codice sorgente del plug-in supporta la creazione del MSSCCPRJ. File di controllo del codice sorgente per ogni file specificati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ SCCRTN SccWillCreateSccFile(
   
 #### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto plug-in controllo di origine.  
+ [in] Il puntatore di contesto del plug-in controllo di origine.  
   
- nFiles  
- [in] Il numero di nomi di file inclusi nel `lpFileNames` nonché la lunghezza della matrice di `pbSccFiles` matrice.  
+ nFile  
+ [in] Il numero di nomi di file inclusi nel `lpFileNames` matrice, nonché la lunghezza del `pbSccFiles` matrice.  
   
  lpFileNames  
  [in] Una matrice di nomi di file completo per verificare (matrice deve essere allocata dal chiamante).  
@@ -50,7 +50,7 @@ SCCRTN SccWillCreateSccFile(
  [in, out] Matrice in cui archiviare i risultati.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
@@ -59,8 +59,8 @@ SCCRTN SccWillCreateSccFile(
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|  
   
 ## <a name="remarks"></a>Note  
- Questa funzione viene chiamata con un elenco di file per determinare se il plug-in controllo del codice sorgente fornisce il supporto nel MSSCCPRJ. File di controllo del codice sorgente per ogni file specificata (per ulteriori informazioni sul MSSCCPRJ. File di controllo del codice sorgente, vedere [MSSCCPRJ. File SCC](../extensibility/mssccprj-scc-file.md)). Plug-in del controllo codice sorgente è possibile dichiarare se hanno la possibilità di creare MSSCCPRJ. File SCC dichiarando `SCC_CAP_SCCFILE` durante l'inizializzazione. Il plug-in restituisce `TRUE` o `FALSE` per ogni file nel `pbSccFiles` matrice per indicare che i file specificati hanno MSSCCPRJ. Supporto di controllo del codice sorgente. Se il plug-in restituisce un codice di riuscita tramite la funzione, vengono rispettati i valori nella matrice restituita. In caso di errore, la matrice viene ignorata.  
+ Questa funzione viene chiamata con un elenco di file per determinare se il plug-in del controllo del codice sorgente fornisce il supporto nel MSSCCPRJ. File di controllo del codice sorgente per ogni file specifici (per ulteriori informazioni sul MSSCCPRJ. File di controllo del codice sorgente, vedere [MSSCCPRJ. File SCC](../extensibility/mssccprj-scc-file.md)). Plug-in controllo codice sorgente può dichiarare se hanno la possibilità di creare MSSCCPRJ. File SCC dichiarando `SCC_CAP_SCCFILE` durante l'inizializzazione. Il plug-in restituisce `TRUE` oppure `FALSE` per ogni file nei `pbSccFiles` matrice per indicare che il file specificato hanno MSSCCPRJ. Supporto di SCC. Se il plug-in restituisce un codice di riuscita dalla funzione, vengono rispettati i valori nella matrice restituita. In caso di errore, la matrice viene ignorata.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
  [File MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

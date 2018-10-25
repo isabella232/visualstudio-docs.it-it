@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Documenti Microsoft
+title: OBJECT_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5c7367a8b134324073d40452ec9b7ec20c1ffc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eff83198e337a3f89c88663722bf34046d3d4f62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905740"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Specifica il tipo di un oggetto dall'analizzatore di espressioni.  
@@ -82,16 +82,16 @@ public enum enum_OBJECT_TYPE {
  Indica che l'oggetto è un intero senza segno a 1 byte.  
   
  OBJECT_TYPE_I2  
- Indica che l'oggetto è un intero con segno a 2 byte.  
+ Indica che l'oggetto è un intero con segno a due byte.  
   
  OBJECT_TYPE_U2  
- Indica che l'oggetto è un intero senza segno a 2 byte.  
+ Indica che l'oggetto è un intero senza segno a due byte.  
   
  OBJECT_TYPE_I4  
- Indica che l'oggetto è un intero con segno a 4 byte.  
+ Indica che l'oggetto è un intero con segno a quattro byte.  
   
  OBJECT_TYPE_U4  
- Indica che l'oggetto è un intero senza segno a 4 byte.  
+ Indica che l'oggetto è un intero senza segno a quattro byte.  
   
  OBJECT_TYPE_I8  
  Indica che l'oggetto è un intero con segno a 8 byte.  
@@ -100,7 +100,7 @@ public enum enum_OBJECT_TYPE {
  Indica che l'oggetto è un intero senza segno a 8 byte.  
   
  OBJECT_TYPE_R4  
- Indica che l'oggetto è un numero a virgola mobile a 4 byte.  
+ Indica che l'oggetto è un numero a virgola mobile a quattro byte.  
   
  OBJECT_TYPE_R8  
  Indica che l'oggetto è un numero a virgola mobile a 8 byte.  
@@ -115,7 +115,7 @@ public enum enum_OBJECT_TYPE {
  Indica che l'oggetto è una classe.  
   
 ## <a name="remarks"></a>Note  
- Passata come argomento per il [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metodi.  
+ Passato come argomento per il [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metodi.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: ee.h  

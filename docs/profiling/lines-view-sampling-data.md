@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f73db7e52c22291443ec262eb2f91ffbcd319c7
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb965b9a93a278a4c51ea4661f683ebafc2838fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914814"
 ---
 # <a name="lines-view---sampling-data"></a>Visualizzazione Righe: dati di campionamento
 Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura.  
@@ -27,21 +27,21 @@ Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle
   
  In un file di origine un'istruzione può occupare più di una riga in un file di origine e una singola riga può includere più di un'istruzione. Un'istruzione viene identificata in base agli elementi seguenti:  
   
--   File di origine che contiene l'istruzione della funzione.  
+- File di origine che contiene l'istruzione della funzione.  
   
--   Funzione che contiene l'istruzione.  
+- Funzione che contiene l'istruzione.  
   
--   Riga di origine in cui inizia l'istruzione.  
+- Riga di origine in cui inizia l'istruzione.  
   
--   Carattere nella riga di origine in cui inizia l'istruzione.  
+- Carattere nella riga di origine in cui inizia l'istruzione.  
   
--   Riga di origine in cui termina l'istruzione.  
+- Riga di origine in cui termina l'istruzione.  
   
--   Carattere nella riga di origine in cui termina l'istruzione.  
+- Carattere nella riga di origine in cui termina l'istruzione.  
   
- Nella colonna Nome riga è disponibile una concatenazione ordinabile dei dati dell'identificatore.  
+  Nella colonna Nome riga è disponibile una concatenazione ordinabile dei dati dell'identificatore.  
   
- Per definizione, un'istruzione non chiama altre funzioni. Vengono quindi elencati solo valori esclusivi.  
+  Per definizione, un'istruzione non chiama altre funzioni. Vengono quindi elencati solo valori esclusivi.  
   
 |Colonna|Descrizione|  
 |------------|-----------------|  

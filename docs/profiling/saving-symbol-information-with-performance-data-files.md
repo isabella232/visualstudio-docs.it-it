@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a1a6888ca35df54ff6073aefaf686327b4cd8a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b5a485baaa1fdeab4a0d4c61b82f5381a931ac85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897186"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Salvataggio delle informazioni sui simboli con i file di dati di prestazioni
 
@@ -43,7 +43,7 @@ Se non si visualizzano i simboli nel codice, sono disponibili alcune soluzioni c
 
 - Se si raccolgono dati di tipo, aggiungere /SUMMARY:TYPE alla riga di comando vsperfreport.
 
- Se non è possibile visualizzare i simboli da Windows o da altri programmi Microsoft:
+  Se non è possibile visualizzare i simboli da Windows o da altri programmi Microsoft:
 
 - Assicurarsi di avere impostato il percorso della cache dei simboli di Windows. Effettuare una delle operazioni seguenti per impostare il percorso della cache dei simboli:
 

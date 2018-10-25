@@ -11,18 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a34a49a3a66cebb81553f3e2786f281758c4dee
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: eb29a985a39344c5bffad59e63a9d540311ec648
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925123"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere etichette al modulo
+
 I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del progetto e nell'aggiunta di etichette, di un pulsante e di altri controlli a un modulo. Si impostano inoltre le proprietà di ogni controllo che si desidera aggiungere. Il progetto conterrà il modulo, i controlli e, più avanti nell'esercitazione, il codice. Il pulsante avvia il quiz, le etichette mostrano i problemi del quiz e gli altri controlli mostrano le risposte e il tempo rimanente per completarlo.
 
 > [!NOTE]
->  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Per creare un progetto e impostare le proprietà per un modulo
 
@@ -69,7 +70,6 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
      È possibile modificare diverse proprietà del tipo di carattere, come illustrato di seguito.
 
      ![Finestra Proprietà con la dimensione del carattere](../ide/media/express_setfontsize.png)
-Finestra **Proprietà** con la dimensione del carattere
 
 8.  Aggiungere un altro controllo Label dalla **casella degli strumenti** e quindi impostare la dimensione del carattere su **15,75**.
 
@@ -117,7 +117,7 @@ Finestra **Proprietà** con la dimensione del carattere
 
      È stata creata la prima riga, come illustrato di seguito.
 
-     ![Prima riga del quiz matematico](../ide/media/express_firstrow.png) Prima riga del quiz matematico
+     ![Prima riga del quiz matematico](../ide/media/express_firstrow.png)
 
 ## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Per aggiungere controlli per i problemi di sottrazione, moltiplicazione e divisione
 
@@ -144,7 +144,7 @@ Finestra **Proprietà** con la dimensione del carattere
 9. Per la quarta riga, assegnare alla prima etichetta il nome **dividedLeftLabel**, impostare la proprietà **Text** della seconda etichetta su **÷** (segno di divisione), assegnare alla terza etichetta il nome **dividedRightLabel** e assegnare al controllo NumericUpDown il nome **quoziente**.
 
     > [!NOTE]
-    >  È possibile copiare il segno di moltiplicazione × e il segno di divisione ÷ da questa esercitazione e incollarli nel form.
+    > È possibile copiare il segno di moltiplicazione × e il segno di divisione ÷ da questa esercitazione e incollarli nel form.
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Per aggiungere un pulsante di avvio e impostare l'ordine dell'indice di tabulazione
 
@@ -161,13 +161,13 @@ Finestra **Proprietà** con la dimensione del carattere
 6.  Impostare il valore della proprietà **TabIndex** per il controllo **startButton** su **1**.
 
     > [!NOTE]
-    >  La proprietà **TabIndex** imposta l'ordine dei controlli quando l'esecutore del quiz preme **TAB**. Per verificarne il funzionamento, aprire una finestra di dialogo qualsiasi, ad esempio sulla barra dei menu scegliere **File** > **Apri**, e quindi premere **TAB** alcune volte. Osservare il modo in cui il cursore si sposta da un controllo all'altro ogni volta che si preme **TAB**. Un programmatore ha deciso l'ordine quando ha creato il modulo.
+    > La proprietà **TabIndex** imposta l'ordine dei controlli quando l'esecutore del quiz preme **TAB**. Per verificarne il funzionamento, aprire una finestra di dialogo qualsiasi, ad esempio sulla barra dei menu scegliere **File** > **Apri**, e quindi premere **TAB** alcune volte. Osservare il modo in cui il cursore si sposta da un controllo all'altro ogni volta che si preme **TAB**. Un programmatore ha deciso l'ordine quando ha creato il modulo.
 
 7.  Impostare il valore della proprietà **TabIndex** per il controllo somma NumericUpDown su **2**, per il controllo differenza su **3**, per il controllo prodotto su **4** e per il controllo quoziente su **5**.
 
      Il modulo avrà ora il seguente aspetto.
 
-     ![Modulo iniziale del quiz matematico](../ide/media/express_formlaidout.png) Modulo iniziale del quiz matematico
+     ![Form iniziale del quiz matematico](../ide/media/express_formlaidout.png)
 
 8.  Per verificare se la proprietà **TabIndex** funziona come previsto, salvare ed eseguire il programma premendo **F5** o scegliendo **Debug** > **Avvia debug** sulla barra dei menu e quindi premere **TAB** alcune volte.
 

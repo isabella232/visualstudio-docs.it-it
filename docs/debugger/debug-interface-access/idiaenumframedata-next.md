@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Next | Documenti Microsoft'
+title: Idiaenumframedata | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6835cda6c8c2a5cb20135abf92a523a270b32c78
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 55320b4f07eb2acda1d46875fa6f3bd5eefe2813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949981"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
-Recupera un numero specificato di elementi frame di dati nella sequenza di enumerazione.  
+Recupera un determinato numero di elementi di dati di intervallo nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,13 +39,13 @@ HRESULT Next (
  [in] Il numero di elementi di dati di frame nell'enumeratore deve essere recuperato.  
   
  rgelt  
- [out] Matrice di [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetti per l'inserimento degli elementi di dati frame richiesto.  
+ [out] Matrice di [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetti da compilare con gli elementi di dati frame richiesto.  
   
  pceltFetched  
- [out] Restituisce il numero di elementi frame di dati nell'enumeratore recuperata.  
+ [out] Restituisce il numero di elementi di dati di frame nell'enumeratore recuperata.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti più record. In caso contrario, verrà restituito un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti più record. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

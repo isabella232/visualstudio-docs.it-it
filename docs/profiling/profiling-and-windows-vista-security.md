@@ -13,23 +13,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3953d889b6cd5c6c9b5abbfdb4aea9acbd940e27
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ac83bc523b830c3e3adff258511d2785db0ddb62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254644"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924798"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilatura e sicurezza in Windows Vista
 A seconda delle impostazioni delle autorizzazioni di accesso utente di [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] rese disponibili dall'amministratore di un computer, un singolo utente potrebbe disporre dell'autorizzazione di sicurezza necessaria per profilare un processo in quel computer. Gli esempi seguenti illustrano le possibili differenze tra i diversi tipi di utenti:  
   
--   Se l'amministratore ha impostato l'avvio del driver e del servizio, alcuni utenti possono accedere a funzionalità di profilatura avanzate.  
+- Se l'amministratore ha impostato l'avvio del driver e del servizio, alcuni utenti possono accedere a funzionalità di profilatura avanzate.  
   
--   Gli utenti di dominio possono accedere soltanto ad esempi di profilatura.  
+- Gli utenti di dominio possono accedere soltanto ad esempi di profilatura.  
   
--   Alcuni utenti possono negare l'accesso alla profilatura a tutti gli altri utenti.  
+- Alcuni utenti possono negare l'accesso alla profilatura a tutti gli altri utenti.  
   
- Per altre informazioni, vedere le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Per altre informazioni, vedere le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ## <a name="cross-session-profiling"></a>Profilatura tra sessioni  
  La *profilatura tra sessioni* è una funzionalità per la profilatura di un processo eseguito in una sessione di accesso differente. Ad esempio, la maggior parte dei servizi viene eseguita nella sessione 0 e gli utenti non possono effettuare esecuzioni direttamente nella sessione 0. Usando il pulsante **Connetti a processo** nella barra degli strumenti di Esplora prestazioni o l'opzione /attach dello strumento della riga di comando VSPerfCmd, è possibile profilare la maggior parte dei processi nelle diverse sessioni di accesso.  

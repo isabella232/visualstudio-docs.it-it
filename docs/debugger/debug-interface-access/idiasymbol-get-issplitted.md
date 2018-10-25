@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isSplitted | Documenti Microsoft
+title: Get_issplitted | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15420c56dfa16f1bbb4566b1afe3fc7ac958fc07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 15c30577900a2d2e192bdc2dea45fc89846b102b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919331"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
-Recupera un flag che specifica se il simbolo di dati è stata suddivisa in un'aggregazione o una raccolta di altri simboli. il compilatore considera i simboli come entità distinte, anche se sono effettivamente parte di un simbolo di dimensioni maggiore.  
+Recupera un flag che specifica se il simbolo di dati è stata suddivisa in un'aggregazione o una raccolta di altri simboli. il compilatore considera i simboli come entità separate, anche se sono in effetti parte di un simbolo di dimensioni maggiori.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,14 +43,14 @@ HRESULT get_isSplitted(
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- Il [IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) restituisce `TRUE` per tutti i simboli che fanno parte di un simbolo di divisione.  
+ Il [Get_isaggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) restituzione del metodo `TRUE` per tutti i simboli che fanno parte di un simbolo di divisione.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 8.0 DIA SDK|  
+|Versione:|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

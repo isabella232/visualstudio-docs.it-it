@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: bf253a6dcad4ed87c8f028ed9b7e33962027eb75
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d5a92cd1382bf65ee19a9f41b02cc2ab0db126c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888023"
 ---
 # <a name="monitor-with-tensorboard"></a>Monitorare con TensorBoard
 
@@ -13,8 +13,8 @@ ms.locfileid: "44281572"
 
 1. Fare clic con il pulsante destro de mouse sul progetto e scegliere **Run TensorBoard** (Esegui TensorBoard) quindi selezionare la directory dei log di output di TensorBoard.
 
-    ![eseguire tensorboard](media\monitor-tensorboard\run-tensorboard.png)
+    ![eseguire tensorboard](media/monitor-tensorboard/run-tensorboard.png)
 
-1. Si noti che gli errori diminuiscono nel tempo e ciò indica un miglioramento della qualità.
+2. Si noti che gli errori diminuiscono nel tempo e ciò indica un miglioramento della qualità.
 
-    ![eseguire tensorboard](media\monitor-tensorboard\tensorboard.png)
+    ![eseguire tensorboard](media/monitor-tensorboard/tensorboard.png)

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 63c33b98244268a086e9db63e2b56e507471c4c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914489"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 
@@ -38,7 +38,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
  ![Controllo audio HTML5](../test/media/codedui_html5_audio.png)
 
 |Operazione|Registrazione|Codice generato|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Riprodurre audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida dei controlli.|Riprodurre audio \<nome> a partire dalla posizione 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Ricercare un punto specifico dell'audio**|Ricercare nell'audio \<nome> la posizione 00:01:48|HtmlAudio.Seek(TimeSpan)|
 |**Sospendere la riproduzione dell'audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida dei controlli.|Sospendere la riproduzione dell'audio \<nome> alla posizione 00:01:53|HtmlAudio.Pause(TimeSpan)|
@@ -62,7 +62,7 @@ Vedere [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
  ![Controllo video HTML5](../test/media/codedui_html5_video.png)
 
 |Operazione|Registrazione|Codice generato|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Riprodurre video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida dei controlli.|Riprodurre il video \<nome> a partire dalla posizione 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Ricercare un punto specifico nel video**|Ricercare nel video \<nome> la posizione 00:01:48|HtmlVideo.Seek(TimeSpan)|
 |**Sospendere la riproduzione del video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida dei controlli.|Sospendere la riproduzione del video \<nome> alla posizione 00:01:53|HtmlVideo.Pause(TimeSpan)|

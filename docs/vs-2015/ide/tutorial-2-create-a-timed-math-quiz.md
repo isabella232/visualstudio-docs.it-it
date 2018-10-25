@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884888"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: creare un quiz matematico a tempo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa esercitazione si compila un quiz dove l'esecutore deve rispondere a quattro problemi aritmetici casuali entro il tempo specificato. Vengono illustrate le seguenti procedure:  
   
--   Generare numeri casuali utilizzando la classe `Random`.  
+- Generare numeri casuali utilizzando la classe `Random`.  
   
--   Attivare eventi che devono verificarsi in un momento specifico usando un controllo **Timer**.  
+- Attivare eventi che devono verificarsi in un momento specifico usando un controllo **Timer**.  
   
--   Controllare il flusso di programma mediante istruzioni `if else`.  
+- Controllare il flusso di programma mediante istruzioni `if else`.  
   
--   Eseguire operazioni aritmetiche di base nel codice.  
+- Eseguire operazioni aritmetiche di base nel codice.  
   
- Al termine, il quiz sarà simile all'immagine riportata di seguito, ma con numeri diversi.  
+  Al termine, il quiz sarà simile all'immagine riportata di seguito, ma con numeri diversi.  
   
- ![Quiz matematico con quattro problemi](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-Quiz creato in questa esercitazione  
+  ![Quiz matematico con quattro problemi](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  Quiz creato in questa esercitazione  
   
- Per scaricare una versione completa del quiz, vedere [Esempio di esercitazione per un quiz matematico completo](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+  Per scaricare una versione completa del quiz, vedere [Esempio di esercitazione per un quiz matematico completo](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
 > [!NOTE]
 >  In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.  

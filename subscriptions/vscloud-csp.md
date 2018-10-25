@@ -9,12 +9,12 @@ description: Informazioni sulle modalità di acquisto e di gestione delle sottos
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899461"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 
@@ -75,6 +75,7 @@ Se un sottoscrittore non ha ancora attivato la sottoscrizione di Visual Studio, 
 Per visualizzare i prezzi di Visual Studio per i partner CSP, accedere al [Centro per i partner](https://partnercenter.microsoft.com).  Scegliere **Prezzi e offerte** nella struttura di spostamento a sinistra.  Scegliere il file dei prezzi per il mese in corso in **servizi basati sull'utilizzo di servizi** in alto a destra. Nel foglio di calcolo di Excel scaricato passare al foglio **Azure Price List** (Listino prezzi di Azure) e selezionare **Visual Studio** per filtrare la colonna **Meter Category** (Categoria misuratore).
 
 Di seguito viene illustrato come interpretare le informazioni disponibili in questo foglio di calcolo:
+
 | Categoria misuratore    |   nome                 |  Unità                                |           Contenuto                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Sottoscrizione                         | Sottoscrizione mensile di Visual Studio Enterprise   |

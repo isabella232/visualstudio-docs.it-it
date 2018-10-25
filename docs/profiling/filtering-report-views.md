@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919169"
 ---
 # <a name="filter-report-views"></a>Filtrare le visualizzazioni report
 È possibile applicare filtri ai file di dati di profilatura per limitare i dati di profilatura che appaiono nelle visualizzazioni report Prestazioni e vengono esportati nei file di report. È possibile ridurre un report ai dati tra due valori di timestamp e ridurre i dati a processi e thread specifici. È possibile salvare i filtri in un file e quindi creare un filtro per un altro file di dati di profilatura importando il filtro salvato.  
@@ -46,19 +46,19 @@ ms.locfileid: "34262623"
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Per creare un filtro report del profiler dalla visualizzazione report Contrassegni  
   
-1.  Selezionare **Contrassegni** dall'elenco **Visualizzazione corrente** nella barra degli strumenti della visualizzazione report Prestazioni.  
+1. Selezionare **Contrassegni** dall'elenco **Visualizzazione corrente** nella barra degli strumenti della visualizzazione report Prestazioni.  
   
-     Viene visualizzato il report del profiler Contrassegni.  
+    Viene visualizzato il report del profiler Contrassegni.  
   
-2.  Selezionare l'ETW o il campionamento che si desidera utilizzare come punto iniziale del report.  
+2. Selezionare l'ETW o il campionamento che si desidera utilizzare come punto iniziale del report.  
   
-3.  Tenere premuto CTRL e fare clic sull'evento che si desidera utilizzare come punto finale del rapporto.  
+3. Tenere premuto CTRL e fare clic sull'evento che si desidera utilizzare come punto finale del rapporto.  
   
-4.  Fare clic con il pulsante destro del mouse e quindi scegliere una delle opzioni seguenti:  
+4. Fare clic con il pulsante destro del mouse e quindi scegliere una delle opzioni seguenti:  
   
-    -   **Aggiungi filtro in contrassegni** crea clausole di filtro che usano la colonna Contrassegno come campo del filtro.  
+   - **Aggiungi filtro in contrassegni** crea clausole di filtro che usano la colonna Contrassegno come campo del filtro.  
   
-    -   **Aggiungi filtro in timestamp** crea clausole di filtro che usano la colonna Timestamp in millisecondi come campo del filtro.  
+   - **Aggiungi filtro in timestamp** crea clausole di filtro che usano la colonna Timestamp in millisecondi come campo del filtro.  
   
      Le due opzioni consentono di filtrare il file di dati corrente in corrispondenza degli stessi punti di inizio e di fine. Ogni opzione può essere ottimizzata se si esporta il filtro per l'uso in altri report.  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921431"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Sviluppare con F# in Visual Studio
 
@@ -61,7 +61,7 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 **Creazione progetti** è costituito da diverse pagine delle proprietà di progetto raggruppate per funzionalità correlate. Le pagine disponibili per i progetti F#, per la maggior parte un subset dei progetti disponibili per altri linguaggi, sono descritte nella tabella seguente. Sono presenti collegamenti alla pagina **Creazione progetti** C# corrispondente.
 
 |Pagina Creazione progetti|Collegamenti correlati|Descrizione|
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |Applicazione|[Pagina Applicazione, Creazione progetti](reference/application-page-project-designer-csharp.md)|Consente di specificare le impostazioni e le proprietà a livello di applicazione, ad esempio se si sta creando una libreria o un file eseguibile, nonché la versione di .NET Framework a cui è destinata l'applicazione e informazioni sulla posizione di archiviazione dei file di risorse usati dall'applicazione stessa.|
 |Compilazione|[Pagina Compilazione, Progettazione progetti](reference/build-page-project-designer-csharp.md)|Consente di controllare la modalità di compilazione del codice.|
 |Eventi di compilazione|[Pagina Eventi di compilazione, Creazione progetti](reference/build-events-page-project-designer-csharp.md)|Consente di specificare i comandi da eseguire prima o dopo una compilazione.|
@@ -75,7 +75,7 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 La tabella seguente riepiloga le impostazioni specifiche di F#:
 
 |Pagina Creazione progetti|Impostazione|Descrizione|
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |Compilazione|Genera chiamate tail|Se selezionata, abilita l'uso delle istruzioni tail MSIL (Microsoft Intermediate Language). In questo modo lo stack frame viene riutilizzato per le funzioni tail ricorsive. Equivalente all'opzione del compilatore `--tailcalls`.|
 |Compilazione|Altri flag|Consente di specificare opzioni da riga di comando del compilatore aggiuntive.|
 

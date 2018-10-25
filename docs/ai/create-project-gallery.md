@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 495c0d256fc6c8f36ded67166f7d12aace7a9202
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18cf719b100aa7c216de2903c05a24a3abcca244
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31048032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916491"
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Creare un progetto AI dalla raccolta di Azure Machine Learning in Visual Studio
 
@@ -30,36 +30,36 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile cre
 
 1. Avviare Visual Studio. Aprire **Esplora server** scegliendo il menu **AI Tools** (Strumenti AI) e quindi **Select Cluster** (Seleziona cluster).
 
-    ![Selezione del cluster](media\create-project-gallery\select-cluster.png)
+    ![Selezione del cluster](media/create-project-gallery/select-cluster.png)
 
-1. Accedere alla sottoscrizione di Azure Machine Learning facendo clic con il pulsante destro del mouse sul nodo **Azure Machine Learning** in Esplora server, quindi selezionare **Accesso** e seguire le istruzioni.
+2. Accedere alla sottoscrizione di Azure Machine Learning facendo clic con il pulsante destro del mouse sul nodo **Azure Machine Learning** in Esplora server, quindi selezionare **Accesso** e seguire le istruzioni.
 
-    ![Accesso](media\create-project-gallery\azureml-login.png)
+    ![Accesso](media/create-project-gallery/azureml-login.png)
 
-2. Selezionare **AI Tools (Strumenti AI) > Azure Machine Learning Sample Gallery (Raccolta di esempi di Azure Machine Learning)**.
+3. Selezionare **AI Tools (Strumenti AI) > Azure Machine Learning Sample Gallery (Raccolta di esempi di Azure Machine Learning)**.
 
-    ![Raccolta di esempi](media\create-project-gallery\gallery.png)
+    ![Raccolta di esempi](media/create-project-gallery/gallery.png)
 
-1. Per questa guida introduttiva, selezionare l'esempio "**MNIST using TensorFlow**" e fare clic su **Installa**. Specificare le informazioni seguenti:
+4. Per questa guida introduttiva, selezionare l'esempio "**MNIST using TensorFlow**" e fare clic su **Installa**. Specificare le informazioni seguenti:
 
- - **Gruppo di risorse**: gruppo di risorse di Azure in cui verranno archiviati i metadati
- - **Account**: account di sperimentazione di Azure Machine Learning
- - **Area di lavoro**: area di lavoro di Azure Machine Learning
- - **Tipo di progetto**: framework di machine learning. In questo caso scegliere **TensorFlow**
- - **Aggiungi a soluzione**: determina se aggiungere il progetto alla soluzione di Visual Studio corrente o se creare e aprire una nuova soluzione
- - **Percorso progetto**: percorso in cui salvare il codice
- - **Nome progetto**: digitare **TensorFlowMNIST**
+   - **Gruppo di risorse**: gruppo di risorse di Azure in cui verranno archiviati i metadati
+   - **Account**: account di sperimentazione di Azure Machine Learning
+   - **Area di lavoro**: area di lavoro di Azure Machine Learning
+   - **Tipo di progetto**: framework di machine learning. In questo caso scegliere **TensorFlow**
+   - **Aggiungi a soluzione**: determina se aggiungere il progetto alla soluzione di Visual Studio corrente o se creare e aprire una nuova soluzione
+   - **Percorso progetto**: percorso in cui salvare il codice
+   - **Nome progetto**: digitare **TensorFlowMNIST**
 
-![Progetto risultante quando si usa il modello di applicazione Python](media/create-project-gallery/new-AzureSampleProject.png)
+   ![Progetto risultante quando si usa il modello di applicazione Python](media/create-project-gallery/new-AzureSampleProject.png)
 
-1. Visual Studio crea il file di progetto (un file `.pyproj` su disco) insieme agli altri file definiti nell'esempio. Con il modello "MNIST" il progetto contiene più file.
+5. Visual Studio crea il file di progetto (un file `.pyproj` su disco) insieme agli altri file definiti nell'esempio. Con il modello "MNIST" il progetto contiene più file.
 
-    ![mnist](media\create-project-gallery\azml-mnist.png)
+    ![mnist](media/create-project-gallery/azml-mnist.png)
 
-1. Inviare il processo ad Azure Machine Learning.
+6. Inviare il processo ad Azure Machine Learning.
 
-    ![mnist](media\create-project-gallery\submit-azml.png)
+    ![mnist](media/create-project-gallery/submit-azml.png)
 
-1. Eseguire in un contenitore Docker o nel computer locale
+7. Eseguire in un contenitore Docker o nel computer locale
 
-    ![mnist](media\create-project-gallery\azml-local.png)
+    ![mnist](media/create-project-gallery/azml-local.png)

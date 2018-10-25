@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890049"
 ---
 # <a name="lines-view---contention-data"></a>Visualizzazione Righe: dati sui conflitti
 Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura. In un file di origine un'istruzione può occupare più di una riga in un file di origine e una singola riga può includere più di un'istruzione.  
   
  Un'istruzione viene identificata in base ai dati seguenti:  
   
--   File di origine che contiene l'istruzione della funzione.  
+- File di origine che contiene l'istruzione della funzione.  
   
--   Funzione che contiene l'istruzione.  
+- Funzione che contiene l'istruzione.  
   
--   Riga di origine in cui inizia l'istruzione.  
+- Riga di origine in cui inizia l'istruzione.  
   
--   Carattere nella riga di origine in cui inizia l'istruzione.  
+- Carattere nella riga di origine in cui inizia l'istruzione.  
   
--   Riga di origine in cui termina l'istruzione.  
+- Riga di origine in cui termina l'istruzione.  
   
--   Carattere nella riga di origine in cui termina l'istruzione.  
+- Carattere nella riga di origine in cui termina l'istruzione.  
   
- Nella colonna Nome riga è disponibile una concatenazione ordinabile dei dati dell'identificatore.  
+  Nella colonna Nome riga è disponibile una concatenazione ordinabile dei dati dell'identificatore.  
   
- La tabella seguente descrive le colonne del rapporto Visualizzazione Righe.  
+  La tabella seguente descrive le colonne del rapporto Visualizzazione Righe.  
   
 |Colonna|Descrizione|  
 |------------|-----------------|  

@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905103"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.  
   
- I comandi possono avere una o due tasti di scelta rapida associati. È un esempio di un unico tasto di scelta rapida **Ctrl**+**S** per i **Salva** comando. Tasti di scelta doppia richiedono due combinazioni di tasti successive per attivare un comando. È un esempio di un tasto di scelta rapida duale **Ctrl * +** K **,** Ctrl**+** K * * per impostare un segnalibro.  
+ I comandi possono avere una o due tasti di scelta rapida associati. È un esempio di un unico tasto di scelta rapida **Ctrl**+**S** per i **Salva** comando. Tasti di scelta doppia richiedono due combinazioni di tasti successive per attivare un comando. È un esempio di un tasto di scelta rapida duale <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** per impostare un segnalibro.  
   
 ## <a name="syntax"></a>Sintassi  
   

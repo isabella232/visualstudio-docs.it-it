@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929972"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizzazione di Esplora modelli
 È possibile modificare l'aspetto e il comportamento di esplorazione per la finestra di progettazione di linguaggio specifico di dominio come indicato di seguito:
@@ -42,23 +42,23 @@ ms.locfileid: "47859900"
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Per aggiungere un'icona per un nodo di esplorazione
 
-1.  Creare un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] soluzione usando il modello di soluzione flusso attività.
+1. Creare un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] soluzione usando il modello di soluzione flusso attività.
 
-2.  Inserire un file con estensione bmp contiene un'icona di 16x16 pixel nel **Dsl\Resources** cartella della soluzione.
+2. Inserire un file con estensione bmp contiene un'icona di 16x16 pixel nel **Dsl\Resources** cartella della soluzione.
 
-3.  Nel **DSL Explorer**, fare doppio clic su **comportamento di esplorazione** e quindi fare clic su **aggiungere nuove impostazioni di Esplora nodo**.
+3. Nel **DSL Explorer**, fare doppio clic su **comportamento di esplorazione** e quindi fare clic su **aggiungere nuove impostazioni di Esplora nodo**.
 
-     Un' **ExplorerNodeSettings** nodo viene visualizzato sotto il **impostazioni personalizzate nodo** nodo.
+    Un' **ExplorerNodeSettings** nodo viene visualizzato sotto il **impostazioni personalizzate nodo** nodo.
 
-4.  Selezionare **ExplorerNodeSettings**, quindi nel **delle proprietà** impostare nella finestra **classe** per **attore**.
+4. Selezionare **ExplorerNodeSettings**, quindi nel **delle proprietà** impostare nella finestra **classe** per **attore**.
 
-5.  Impostare **alla visualizzazione dell'icona** al percorso del file icona.
+5. Impostare **alla visualizzazione dell'icona** al percorso del file icona.
 
-6.  Trasforma tutti i modelli e quindi compilare ed eseguire la soluzione.
+6. Trasforma tutti i modelli e quindi compilare ed eseguire la soluzione.
 
-7.  Nella finestra di progettazione generata, aprire il diagramma di esempio.
+7. Nella finestra di progettazione generata, aprire il diagramma di esempio.
 
-     Esplora risorse dovrebbe mostrare tre **attore** nodi che dispongono dell'icona.
+    Esplora risorse dovrebbe mostrare tre **attore** nodi che dispongono dell'icona.
 
 > [!NOTE]
 >  Se è stata impostata un'icona di nodo per qualsiasi elemento che viene visualizzato in Esplora generato, tutti i nodi di Esplora verranno visualizzata l'icona. Se non è stata impostata alcuna icona, i nodi visualizzerà l'icona predefinita.

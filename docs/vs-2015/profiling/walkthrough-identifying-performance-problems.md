@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896144"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Procedura dettagliata: Identificazione dei problemi di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
 ## <a name="prerequisites"></a>Prerequisiti  
   
--   Conoscenza a livello intermedio di C#.  
+- Conoscenza a livello intermedio di C#.  
   
--   Una copia dell'[esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
+- Una copia dell'[esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
   
- Per usare le informazioni fornite dalla profilatura, è consigliabile avere a disposizione informazioni sui simboli di debug.  
+  Per usare le informazioni fornite dalla profilatura, è consigliabile avere a disposizione informazioni sui simboli di debug.  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>Profilatura tramite il metodo di campionamento  
  Il campionamento è un metodo di profilatura mediante il quale viene eseguito periodicamente il polling del processo in questione per determinare la funzione attiva. I dati risultanti forniscono un conteggio della frequenza con cui la funzione si trovava all'inizio dello stack di chiamate quando è stato eseguito il campionamento del processo.  
@@ -139,29 +139,29 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>Per analizzare i risultati della profilatura instrumentati  
   
-1.  Il grafico della sequenza temporale della visualizzazione **Riepilogo** del report mostra l'utilizzo della CPU del programma per la durata dell'esecuzione della profilatura. L'operazione di esportazione dei dati dovrebbe essere il picco o il livello elevato sul lato destro del grafico. È possibile filtrare la sessione di prestazioni per visualizzare e analizzare solo i dati raccolti durante l'operazione di esportazione. Fare clic a sinistra del punto nel grafico in cui inizia l'operazione di esportazione dei dati. Fare nuovamente clic sul lato destro dell'operazione. Fare quindi clic su **Filtro in base a selezione** nell'elenco di collegamenti a destra della sequenza temporale.  
+1. Il grafico della sequenza temporale della visualizzazione **Riepilogo** del report mostra l'utilizzo della CPU del programma per la durata dell'esecuzione della profilatura. L'operazione di esportazione dei dati dovrebbe essere il picco o il livello elevato sul lato destro del grafico. È possibile filtrare la sessione di prestazioni per visualizzare e analizzare solo i dati raccolti durante l'operazione di esportazione. Fare clic a sinistra del punto nel grafico in cui inizia l'operazione di esportazione dei dati. Fare nuovamente clic sul lato destro dell'operazione. Fare quindi clic su **Filtro in base a selezione** nell'elenco di collegamenti a destra della sequenza temporale.  
   
-     L'albero **Percorso critico** illustra che il metodo <xref:System.String.Concat%2A> chiamato dal metodo PeopleTrax.Form1.ExportData usa una percentuale elevata di tempo. Poiché anche **System.String.Concat** è all'inizio dell'elenco **Funzioni con più lavoro individuale**, la riduzione del tempo impiegato nella funzione è un probabile punto di ottimizzazione.  
+    L'albero **Percorso critico** illustra che il metodo <xref:System.String.Concat%2A> chiamato dal metodo PeopleTrax.Form1.ExportData usa una percentuale elevata di tempo. Poiché anche **System.String.Concat** è all'inizio dell'elenco **Funzioni con più lavoro individuale**, la riduzione del tempo impiegato nella funzione è un probabile punto di ottimizzazione.  
   
-2.  Fare doppio clic su **System.String.Concat** in una delle tabelle di riepilogo per visualizzare altre informazioni nella visualizzazione Dettagli funzione.  
+2. Fare doppio clic su **System.String.Concat** in una delle tabelle di riepilogo per visualizzare altre informazioni nella visualizzazione Dettagli funzione.  
   
-3.  È possibile osservare che PeopleTrax.Form1.ExportData è l'unico metodo che chiama Concat. Fare clic su **PeopleTrax.Form1.ExportData** nell'elenco **Funzioni chiamanti** per selezionare il metodo come destinazione della visualizzazione Dettagli funzione.  
+3. È possibile osservare che PeopleTrax.Form1.ExportData è l'unico metodo che chiama Concat. Fare clic su **PeopleTrax.Form1.ExportData** nell'elenco **Funzioni chiamanti** per selezionare il metodo come destinazione della visualizzazione Dettagli funzione.  
   
-4.  Esaminare il metodo nella finestra Visualizzazione codice funzione. Si noti che non sono presenti chiamate letterali a **System.String.Concat**. Sono invece presenti diversi usi dell'operando +=, che il compilatore sostituisce con chiamate a **System.String.Concat**. Qualsiasi modifica a una stringa in .NET Framework causa l'allocazione di una nuova stringa. .NET Framework include una classe <xref:System.Text.StringBuilder> ottimizzata per la concatenazione delle stringhe  
+4. Esaminare il metodo nella finestra Visualizzazione codice funzione. Si noti che non sono presenti chiamate letterali a **System.String.Concat**. Sono invece presenti diversi usi dell'operando +=, che il compilatore sostituisce con chiamate a **System.String.Concat**. Qualsiasi modifica a una stringa in .NET Framework causa l'allocazione di una nuova stringa. .NET Framework include una classe <xref:System.Text.StringBuilder> ottimizzata per la concatenazione delle stringhe  
   
-5.  Per sostituire quest'area problematica con codice ottimizzato, aggiungere OPTIMIZED_EXPORTDATA come simbolo di compilazione condizionale al progetto PeopleTrax.  
+5. Per sostituire quest'area problematica con codice ottimizzato, aggiungere OPTIMIZED_EXPORTDATA come simbolo di compilazione condizionale al progetto PeopleTrax.  
   
-6.  In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto PeopleTrax e scegliere **Proprietà**.  
+6. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto PeopleTrax e scegliere **Proprietà**.  
   
-     Viene visualizzato il form delle proprietà del progetto PeopleTrax.  
+    Viene visualizzato il form delle proprietà del progetto PeopleTrax.  
   
-7.  Fare clic sulla scheda **Generazione**.  
+7. Fare clic sulla scheda **Generazione**.  
   
-8.  Nella casella di testo **Simboli di compilazione condizionale** digitare **OPTIMIZED_EXPORTDATA**.  
+8. Nella casella di testo **Simboli di compilazione condizionale** digitare **OPTIMIZED_EXPORTDATA**.  
   
 9. Chiudere il form delle proprietà del progetto e scegliere **Salva tutto** quando richiesto.  
   
- Quando si esegue nuovamente l'applicazione, sarà possibile osservare notevoli miglioramenti delle prestazioni. È consigliabile ripetere la sessione di profilatura, anche se si registrano miglioramenti delle prestazioni visibili all'utente. Esaminare i dati dopo aver risolto un problema è importante perché il primo problema potrebbe nascondere altri problemi.  
+   Quando si esegue nuovamente l'applicazione, sarà possibile osservare notevoli miglioramenti delle prestazioni. È consigliabile ripetere la sessione di profilatura, anche se si registrano miglioramenti delle prestazioni visibili all'utente. Esaminare i dati dopo aver risolto un problema è importante perché il primo problema potrebbe nascondere altri problemi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  

@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923017"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
 È possibile visualizzare i dati per gli utenti dell'applicazione mediante l'associazione dei dati ai controlli. È possibile creare questi controlli con associazione a dati trascinando elementi dal **Zdroje dat** finestra in un'area di progettazione oppure controlli su una superficie in Visual Studio.
@@ -30,14 +30,15 @@ ms.locfileid: "34845318"
 ## <a name="data-sources"></a>Origini dati
  Nel contesto di associazione dati, un'origine dati rappresenta i dati in memoria che può essere associato a un'interfaccia utente. In pratica, un'origine dati può essere una classe di Entity Framework, un set di dati, un endpoint del servizio che è incapsulato in un oggetto proxy .NET, una classe LINQ to SQL, o qualsiasi oggetto .NET o raccolta. Alcune origini dati consentono di creare controlli associati a dati trascinando elementi dal **Zdroje dat** finestra, mentre altre origini dati non lo è. Nella tabella seguente vengono indicate le origini dati supportate.
 
-|Origine dati|Supporto di trascinamento e rilascio in **Progettazione Windows Form**|Supporto di trascinamento e rilascio in **WPF Designer**|Supporto di trascinamento e rilascio in **Silverlight Designer**|
-|-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Set di dati|Yes|Yes|No|
-|Entity Data Model|Sì<sup>1</sup>|Yes|Yes|
-|Classi LINQ to SQL|Non<sup>2</sup>|Non<sup>2</sup>|Non<sup>2</sup>|
-|Servizi (inclusi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services e i servizi web)|Yes|Yes|Yes|
-|Object|Yes|Yes|Yes|
-|SharePoint|Yes|Yes|Yes|
+
+| Origine dati | Supporto di trascinamento e rilascio in **Progettazione Windows Form** | Supporto di trascinamento e rilascio in **WPF Designer** | Supporto di trascinamento e rilascio in **Silverlight Designer** |
+| - | - | - | - |
+| Set di dati | Yes | Yes | No |
+| Entity Data Model | Sì<sup>1</sup> | Yes | Yes |
+| Classi LINQ to SQL | Non<sup>2</sup> | Non<sup>2</sup> | Non<sup>2</sup> |
+| Servizi (inclusi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services e i servizi web) | Yes | Yes | Yes |
+| Object | Yes | Yes | Yes |
+| SharePoint | Yes | Yes | Yes |
 
  1. Generare il modello usando il **Entity Data Model** procedura guidata, quindi trascinare tali oggetti nella finestra di progettazione.
 
@@ -54,7 +55,7 @@ ms.locfileid: "34845318"
  Nella tabella seguente sono elencate alcune delle attività più comuni eseguite per associare controlli ai dati.
 
 |Attività|Altre informazioni|
-|----------|----------------------|
+|----------| - |
 |Aprire il **Zdroje dat** finestra.|Aprire un'area di progettazione nell'editor e scegliere **View** > **Zdroje dat**.|
 |Aggiungere un'origine dati al progetto.|[Aggiungi nuova origine dati](../data-tools/add-new-data-sources.md)|
 |Impostare il controllo creato quando si trascina un elemento dal **Zdroje dat** finestra di progettazione.|[Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|

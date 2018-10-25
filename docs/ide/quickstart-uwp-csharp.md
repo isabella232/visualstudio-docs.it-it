@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dd638a539b8956716aa60b5361bd003c18d35f9b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908925"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Guida introduttiva: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C&#35;
 
@@ -46,9 +46,9 @@ Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal
 
    ![Nella finestra di dialogo Nuovo progetto della piattaforma UWP (Universal Windows Platform) accettare le impostazioni predefinite per Versione di destinazione e Versione minima](../ide/media/new-uwp-project-target-minver-dialog.png)
 
-  > [!NOTE]
-  > Se è la prima volta che si usa Visual Studio per creare app UWP, è possibile che venga visualizzata la finestra di dialogo **Impostazioni**. Scegliere **Modalità sviluppatore** e **Sì**.<br><br>
- ![Abilitare la modalità sviluppatore nella finestra di dialogo Impostazioni della piattaforma UWP](../ide/media/enable-developer-mode.png)<br><br>Visual Studio installa un pacchetto aggiuntivo di modalità sviluppatore per l'utente. Una volta completata l'installazione del pacchetto, chiudere la finestra di dialogo **Impostazioni**.
+   > [!NOTE]
+   > Se è la prima volta che si usa Visual Studio per creare app UWP, è possibile che venga visualizzata la finestra di dialogo **Impostazioni**. Scegliere **Modalità sviluppatore** e **Sì**.<br><br>
+   ![Abilitare la modalità sviluppatore nella finestra di dialogo Impostazioni della piattaforma UWP](../ide/media/enable-developer-mode.png)<br><br>Visual Studio installa un pacchetto aggiuntivo di modalità sviluppatore per l'utente. Una volta completata l'installazione del pacchetto, chiudere la finestra di dialogo **Impostazioni**.
 
 ## <a name="create-the-application"></a>Creare l'applicazione
 
@@ -58,29 +58,29 @@ A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un puls
 
 1. In **Esplora soluzioni** fare doppio clic su *MainPage.xaml* per aprire una doppia visualizzazione.
 
-  ![Aprire MainPage.xaml da Esplora soluzioni ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
+   ![Aprire MainPage.xaml da Esplora soluzioni ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Sono disponibili due riquadri: **Finestra di progettazione XAML**, che include un'area di progettazione, ed **Editor XAML**, dove è possibile aggiungere o modificare il codice.
+   Sono disponibili due riquadri: **Finestra di progettazione XAML**, che include un'area di progettazione, ed **Editor XAML**, dove è possibile aggiungere o modificare il codice.
 
-  ![Il riquadro Finestra di progettazione XAML dell'Editor XAML](../ide/media/uwp-xaml-editor.png)
+   ![Il riquadro Finestra di progettazione XAML dell'Editor XAML](../ide/media/uwp-xaml-editor.png)
 
 2. Scegliere **Casella degli strumenti** per aprire la finestra a comparsa della casella degli strumenti.
 
-  ![Fare clic su Casella degli strumenti per aprire la relativa finestra a comparsa](../ide/media/uwp-toolbox.png)
+   ![Fare clic su Casella degli strumenti per aprire la relativa finestra a comparsa](../ide/media/uwp-toolbox.png)
 
-  Se l'opzione **Casella degli strumenti** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, scegliere **Visualizza** > **Barra degli strumenti**. In alternativa, premere **CTRL**+**ALT**+**X**.)
+   Se l'opzione **Casella degli strumenti** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, scegliere **Visualizza** > **Barra degli strumenti**. In alternativa, premere **CTRL**+**ALT**+**X**.)
 
 3. Fare clic sull'icona **Blocca** per ancorare la Casella degli strumenti.
 
-  ![Fare clic sull'icona Blocca per ancorare la finestra Casella degli strumenti](../ide/media/uwp-toolbox-autohide.png)
+   ![Fare clic sull'icona Blocca per ancorare la finestra Casella degli strumenti](../ide/media/uwp-toolbox-autohide.png)
 
 4. Fare clic sul controllo **Pulsante** e trascinarlo nell'area di progettazione.
 
    ![Fare clic sul controllo Pulsante e trascinarlo nell'area di progettazione](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Se si esamina il codice nell'**Editor XAML**, si noterà che il pulsante è stato aggiunto anche qui:
+   Se si esamina il codice nell'**Editor XAML**, si noterà che il pulsante è stato aggiunto anche qui:
 
-  ![Fare clic sul controllo Pulsante e trascinarlo nell'area di progettazione](../ide/media/uwp-xaml-control-code-window.png)
+   ![Fare clic sul controllo Pulsante e trascinarlo nell'area di progettazione](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Aggiungere un'etichetta al pulsante
 
@@ -100,18 +100,18 @@ Il termine "gestore dell'evento" sembra qualcosa di complesso, ma in realtà è 
 
 2. Modificare il codice del gestore dell'evento in *MainPage.xaml.cs*, il file code-behind.
 
- E qui le cose si fanno interessanti. Il gestore dell'evento predefinito ha l'aspetto seguente:
+   E qui le cose si fanno interessanti. Il gestore dell'evento predefinito ha l'aspetto seguente:
 
    ![Gestore dell'evento Button_Click predefinito ](../ide/media/uwp-button-click-code.png)
 
- Modificarlo in modo analogo al seguente:
+   Modificarlo in modo analogo al seguente:
 
     ![Nuovo gestore dell'evento Button_Click asincrono ](../ide/media/uwp-add-hello-world-async-code.png)
 
-  Di seguito viene riportato il codice da copiare e incollare:
+   Di seguito viene riportato il codice da copiare e incollare:
 
-  ```C#
-  private async void Button_Click(object sender, RoutedEventArgs e)
+   ```C#
+   private async void Button_Click(object sender, RoutedEventArgs e)
          {
              MediaElement mediaElement = new MediaElement();
              var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
@@ -119,7 +119,7 @@ Il termine "gestore dell'evento" sembra qualcosa di complesso, ma in realtà è 
              mediaElement.SetSource(stream, stream.ContentType);
              mediaElement.Play();
          }
-  ```
+   ```
 
 #### <a name="what-did-we-just-do"></a>Riepilogo dell'operazione eseguita
 
@@ -141,7 +141,7 @@ A questo punto è possibile compilare, distribuire e avviare l'app UWP "Hello Wo
 
 3. Fare clic sul pulsante **Hello World**.
 
- Il dispositivo Windows 10 pronuncerà le parole "Hello, World!"
+   Il dispositivo Windows 10 pronuncerà le parole "Hello, World!"
 
 4. Per chiudere l'app, fare clic sul pulsante **Arresta debug** sulla barra degli strumenti. In alternativa, scegliere **Debug** > **Arresta debug** dalla barra degli strumenti oppure premere **MAIUSC**+**F5**.
 

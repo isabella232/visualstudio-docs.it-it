@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bf0cd52e94ecd3765dd580d437a227f5c11c149d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884784"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcatori del visualizzatore di concorrenza
 I marcatori del visualizzatore di concorrenza sono icone che rappresentano eventi in un'app.  In genere, l'applicazione genera questi eventi per definire fasi o occorrenze di un'applicazione.  Gli eventi possono essere generati dall'app o da librerie e runtime usati dall'app.  
@@ -43,21 +43,21 @@ I marcatori del visualizzatore di concorrenza sono icone che rappresentano event
 ## <a name="known-sources-of-markers"></a>Origini note di marcatori  
  I marcatori possono essere generati da qualsiasi privider ETW purché il provider sia conforme a determinati vincoli. È possibile configurare il visualizzatore di concorrenza in modo che sia in ascolto di origini evento aggiuntive. Per impostazione predefinita, è in ascolto delle origini evento seguenti:  
   
--   [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)  
+- [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)  
   
--   [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
+- [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
   
--   [Flusso di dati](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
+- [Flusso di dati](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
   
--   [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
+- [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
   
--   [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime)  
+- [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime)  
   
--   [Supporto per marcatori di scenario](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Supporto per marcatori di scenario](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   
- Nella finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) è possibile usare la scheda Marcatori per controllare se visualizzare nel visualizzatore di concorrenza i marcatori di varie origini e filtrare i marcatori in base a importanza e categoria.  
+  Nella finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) è possibile usare la scheda Marcatori per controllare se visualizzare nel visualizzatore di concorrenza i marcatori di varie origini e filtrare i marcatori in base a importanza e categoria.  
   
 ## <a name="markers-from-eventsource"></a>Marcatori di EventSource  
  Il visualizzatore di concorrenza può visualizzare anche eventi EventSource.  Per altre informazioni, vedere [Visualizzazione di eventi EventSource come marcatori](../profiling/visualizing-eventsource-events-as-markers.md).  

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Next | Documenti Microsoft
+title: IEnumDebugCustomAttributes::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ff7d39bcfe255ced2f38c39cd29cd6571111978
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 107ab2c7ad882705d67924528ac16893a26451e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927580"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
-Recupera un numero specificato di attributi personalizzati in una sequenza di enumerazione.  
+Recupera un determinato numero di attributi personalizzati in una sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,13 +48,13 @@ int Next(
  [in] Il numero di elementi da recuperare. Specifica inoltre la dimensione massima del `rgelt` matrice.  
   
  `rgelt`  
- [out] Matrice di [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) oggetti deve essere compilato.  
+ [out] Matrice di [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) oggetti da compilare.  
   
  `pceltFetched`  
  [out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se può essere inferiore al numero di elementi richiesto sia restituiti; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   

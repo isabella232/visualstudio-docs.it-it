@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_PARAM | Documenti Microsoft
+title: METADATA_ADDRESS_PARAM | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2cc91ea41003f153a1b3910510f41bc032bf221
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e30e1d19a52042ad6edeabb6df4ee8e3aaf17b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893877"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 Questa struttura rappresenta un parametro di un metodo o funzione.  
@@ -54,7 +54,7 @@ public struct METADATA_ADDRESS_PARAM {
  L'indice del parametro in un elenco di parametri.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_PARAM` (compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  
+ Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_PARAM` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  

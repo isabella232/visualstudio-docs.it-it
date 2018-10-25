@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893702"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ I progetti sono i contenitori logici di tutti gli elementi necessari per compila
   
 #### <a name="to-create-an-empty-solution"></a>Per creare una soluzione vuota  
   
-1.  Scegliere **Nuovo** dal menu **File** , quindi **Nuovo progetto**.  
+1. Scegliere **Nuovo** dal menu **File** , quindi **Nuovo progetto**.  
   
-2.  Nel riquadro sinistro selezionare **Installato**, **Altri tipi di progetto**, quindi **Soluzioni di Visual Studio** dall'elenco espanso.  
+2. Nel riquadro sinistro selezionare **Installato**, **Altri tipi di progetto**, quindi **Soluzioni di Visual Studio** dall'elenco espanso.  
   
-3.  Nel riquadro centrale selezionare **Soluzione vuota**.  
+3. Nel riquadro centrale selezionare **Soluzione vuota**.  
   
-4.  Impostare i valori **Nome** e **Percorso** per la soluzione, quindi fare clic su **OK**.  
+4. Impostare i valori **Nome** e **Percorso** per la soluzione, quindi fare clic su **OK**.  
   
- Dopo aver creato una soluzione vuota, è possibile aggiungervi progetti o elementi nuovi o esistenti facendo clic su **Aggiungi nuovo elemento** o **Aggiungi elemento esistente** nel menu **Progetto** .  
+   Dopo aver creato una soluzione vuota, è possibile aggiungervi progetti o elementi nuovi o esistenti facendo clic su **Aggiungi nuovo elemento** o **Aggiungi elemento esistente** nel menu **Progetto** .  
   
 ### <a name="deleting-solutions"></a>Eliminazione di soluzioni  
  È possibile eliminare definitivamente una soluzione, ma non usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Prima di eliminare una soluzione, spostare eventuali progetti da riutilizzare in un'altra soluzione. Usare quindi Esplora file per eliminare la directory contenente i due file di soluzione con estensione sln e suo.  

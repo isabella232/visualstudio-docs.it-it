@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909822"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implementazione delle interfacce helper Smart Host
 L'[interfaccia IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) semplifica notevolmente l'attività di creazione di uno smart host per il debug attivo, poiché offre le implementazioni per molte delle interfacce necessarie per l'hosting smart.  
   
  Per essere uno smart host che usa `IDebugDocumentHelper`, un'applicazione host deve eseguire solo tre operazioni:  
   
-1.  Eseguire `CoCreate` sulla gestione del debug dei processi e usare l'[interfaccia IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md) per aggiungere l'applicazione all'elenco delle applicazioni di cui può essere eseguito il debug.  
+1. Eseguire `CoCreate` sulla gestione del debug dei processi e usare l'[interfaccia IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md) per aggiungere l'applicazione all'elenco delle applicazioni di cui può essere eseguito il debug.  
   
-2.  Creare un helper di documenti di debug per ogni oggetto di script tramite il metodo [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md). Verificare che nome del documento, documento padre, testo e blocchi di script siano definiti.  
+2. Creare un helper di documenti di debug per ogni oggetto di script tramite il metodo [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md). Verificare che nome del documento, documento padre, testo e blocchi di script siano definiti.  
   
-3.  Implementare l'[interfaccia IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md) sull'oggetto che implementa l'interfaccia [IActiveScriptSite](../winscript/reference/iactivescriptsite.md), necessaria per lo script attivo. Il metodo non comune sull'interfaccia `IActiveScriptSiteDebug` delega semplicemente all'helper.  
+3. Implementare l'[interfaccia IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md) sull'oggetto che implementa l'interfaccia [IActiveScriptSite](../winscript/reference/iactivescriptsite.md), necessaria per lo script attivo. Il metodo non comune sull'interfaccia `IActiveScriptSiteDebug` delega semplicemente all'helper.  
   
- Facoltativamente, è possibile implementare l'host dell'[interfaccia IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md) se è necessario un controllo maggiore su colore sintassi, creazione di contesto per il documento e altre funzionalità estese.  
+   Facoltativamente, è possibile implementare l'host dell'[interfaccia IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md) se è necessario un controllo maggiore su colore sintassi, creazione di contesto per il documento e altre funzionalità estese.  
   
- Il principale limite dell'helper smart host è che può gestire solo documenti il cui contenuto viene modificato o ristretto dopo che sono stati aggiunti (benché sia possibile espandere i documenti). Per molti smart host, tuttavia, la relativa funzionalità offerta corrisponde esattamente a quanto necessario.  
+   Il principale limite dell'helper smart host è che può gestire solo documenti il cui contenuto viene modificato o ristretto dopo che sono stati aggiunti (benché sia possibile espandere i documenti). Per molti smart host, tuttavia, la relativa funzionalità offerta corrisponde esattamente a quanto necessario.  
   
- Nelle sezioni seguenti viene descritto più in dettaglio ogni singolo passaggio.  
+   Nelle sezioni seguenti viene descritto più in dettaglio ogni singolo passaggio.  
   
 ## <a name="create-an-application-object"></a>Creare un oggetto applicazione  
  Prima di poter usare l'helper smart host, è necessario creare un oggetto [Interfaccia IDebugApplication](../winscript/reference/idebugapplication-interface.md) per rappresentare l'applicazione nel debugger.  

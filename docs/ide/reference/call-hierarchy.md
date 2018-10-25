@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52fdaf277d8c20801c5d48d90de472d24ab88bda
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0f386d3d73de45c539752207fb55200e8e8ee715
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905960"
 ---
 # <a name="view-call-hierarchy"></a>Visualizzare la gerarchia di chiamata
 
@@ -66,7 +66,7 @@ Quando si seleziona un membro figlio nel riquadro della visualizzazione struttur
 La tabella seguente descrive i vari comandi del menu di scelta rapida disponibili quando si fa clic con il pulsante destro del mouse su un nodo nel riquadro della visualizzazione struttura ad albero.
 
 |Comando del menu di scelta rapida|Descrizione|
-|-----------------------|-----------------|
+| - |-----------------|
 |**Aggiungi come nuova radice**|Aggiunge il nodo selezionato al riquadro della visualizzazione struttura ad albero come un nuovo nodo radice. Questo permette di concentrare l'attenzione su un sottoalbero specifico.|
 |**Rimuovi radice**|Rimuove il nodo radice selezionato dal riquadro di visualizzazione albero. Questa opzione è disponibile solo da un nodo radice.<br /><br /> È anche possibile usare il pulsante della barra degli strumenti **Rimuovi radice** per rimuovere il nodo radice selezionato.|
 |**Vai a definizione**|Esegue il comando Vai a definizione nel nodo selezionato. Questo comando consente di passare alla definizione originale per una chiamata al membro o una definizione di variabile.<br /><br /> Per eseguire il comando Vai a definizione, è anche possibile fare doppio clic sul nodo selezionato o premere F12 nel nodo selezionato.|

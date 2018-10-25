@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Documenti Microsoft
+title: BP_UNBOUND_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65398ac0c4bde18dc772d75ceea203bdbfe3b189
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e1e344ff5adb51d118370f81de10ba01c8950e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904219"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Indica il motivo di che un punto di interruzione è stato associato.  
+Indica il motivo che è stato dissociato un punto di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -54,13 +54,13 @@ public enum enum_BP_UNBOUND_REASON {
  Il codice che contiene il punto di interruzione è stato scaricato.  
   
  BPUR_BREAKPOINT_REBIND  
- Il punto di interruzione è stato riassociato a un percorso diverso. Questo può verificarsi dopo la modifica e continuare le operazioni quando si sposta il punto di interruzione, oppure quando il punto di interruzione è associata a un file con un percorso che non è più valido.  
+ Il punto di interruzione è stato riassociato a un percorso diverso. Ciò può verificarsi dopo la modifica e continuare le operazioni quando si sposta il punto di interruzione o quando il punto di interruzione è associata a un file con un percorso che non è più valido.  
   
  BPUR_ BREAKPOINT_ERROR  
- Il punto di interruzione viene identificato un errore dopo l'associazione. Questo accade per i punti di interruzione gestiti le cui condizioni non sono più validi.  
+ Il punto di interruzione viene considerato in errore dopo l'associazione. In questo caso i punti di interruzione gestite le cui condizioni non sono più valide.  
   
 ## <a name="remarks"></a>Note  
- Come risultato di [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) metodo.  
+ Restituito dal [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  
