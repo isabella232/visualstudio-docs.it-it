@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939553"
 ---
 # <a name="project-type-design-decisions"></a>Decisioni di progettazione relative al tipo di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Prima di creare un nuovo tipo di progetto, è necessario prendere alcune decisio
   
  Sono disponibili diverse opzioni da tenere in considerazione la persistenza per gli elementi nel progetto. È possibile eseguire una delle opzioni seguenti:  
   
--   Salvare ogni file singolarmente quando viene modificata.  
+- Salvare ogni file singolarmente quando viene modificata.  
   
--   Acquisire molte transazioni in un'unica **salvare** operazione.  
+- Acquisire molte transazioni in un'unica **salvare** operazione.  
   
--   Salvare i file in locale, quindi pubblicare in un server o usare un altro approccio per il salvataggio di elementi di progetto quando l'elemento rappresenta una connessione dati a un oggetto remoto.  
+- Salvare i file in locale, quindi pubblicare in un server o usare un altro approccio per il salvataggio di elementi di progetto quando l'elemento rappresenta una connessione dati a un oggetto remoto.  
   
- Per altre informazioni sulla persistenza, vedere [progetto persistenza](../../extensibility/internals/project-persistence.md) e [apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md).  
+  Per altre informazioni sulla persistenza, vedere [progetto persistenza](../../extensibility/internals/project-persistence.md) e [apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="project-commitment-model"></a>Modello di progetto dell'impegno  
  Verranno aperto gli oggetti dati persistenti in modalità diretta o in modalità transazionale?  

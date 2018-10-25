@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e2dc633621734740065b8e0c80dd34795eac830
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880598"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Procedura: recuperare il servizio di progetto SharePoint
   È possibile accedere al servizio di progetto SharePoint nei seguenti tipi di soluzioni:  
@@ -96,11 +96,11 @@ ms.locfileid: "37119911"
   
  In un pacchetto VSPackage, è possibile richiedere un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> oggetto usando uno dei metodi seguenti:  
   
--   Il <xref:System.IServiceProvider.GetService%2A> metodo di un pacchetto VSPackage gestito da cui deriva il <xref:Microsoft.VisualStudio.Shell.Package> classe. Per altre informazioni, vedere [procedura: ottenere un servizio](../extensibility/how-to-get-a-service.md).  
+- Il <xref:System.IServiceProvider.GetService%2A> metodo di un pacchetto VSPackage gestito da cui deriva il <xref:Microsoft.VisualStudio.Shell.Package> classe. Per altre informazioni, vedere [procedura: ottenere un servizio](../extensibility/how-to-get-a-service.md).  
   
--   Il metodo statico <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> (metodo). Per altre informazioni, vedere [usare GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice).  
+- Il metodo statico <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> (metodo). Per altre informazioni, vedere [usare GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice).  
   
- In un'estensione di Visual Studio che può accedere a un <xref:EnvDTE80.DTE2> oggetto, è possibile richiedere un' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> oggetto tramite il <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metodo di un <xref:Microsoft.VisualStudio.Shell.ServiceProvider> oggetto. Per altre informazioni, vedere [recupero di un servizio dall'oggetto DTE](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).  
+  In un'estensione di Visual Studio che può accedere a un <xref:EnvDTE80.DTE2> oggetto, è possibile richiedere un' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> oggetto tramite il <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metodo di un <xref:Microsoft.VisualStudio.Shell.ServiceProvider> oggetto. Per altre informazioni, vedere [recupero di un servizio dall'oggetto DTE](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).  
   
 ## <a name="see-also"></a>Vedere anche
  [Usare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
