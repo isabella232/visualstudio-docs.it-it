@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926020"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
 
@@ -201,42 +201,42 @@ attribute of the Assembly element in the .fakes:
 
  **Spazi dei nomi**
 
--   Viene aggiunto il suffisso .Fakes allo spazio dei nomi.
+- Viene aggiunto il suffisso .Fakes allo spazio dei nomi.
 
-     Ad esempio, lo spazio dei nomi `System.Fakes` contiene i tipi shim dello spazio dei nomi System.
+   Ad esempio, lo spazio dei nomi `System.Fakes` contiene i tipi shim dello spazio dei nomi System.
 
--   Global.Fakes contiene il tipo shim dello spazio dei nomi vuoto.
+- Global.Fakes contiene il tipo shim dello spazio dei nomi vuoto.
 
- **Nomi dei tipi**
+  **Nomi dei tipi**
 
--   Viene aggiunto il prefisso Shim al nome del tipo per creare il nome del tipo shim.
+- Viene aggiunto il prefisso Shim al nome del tipo per creare il nome del tipo shim.
 
-     Ad esempio, ShimExample è il tipo shim del tipo Example.
+   Ad esempio, ShimExample è il tipo shim del tipo Example.
 
--   Viene aggiunto il prefisso Stub al nome del tipo per creare il nome del tipo stub.
+- Viene aggiunto il prefisso Stub al nome del tipo per creare il nome del tipo stub.
 
-     Ad esempio, StubIExample è il tipo di stub del tipo IExample.
+   Ad esempio, StubIExample è il tipo di stub del tipo IExample.
 
- **Argomenti tipo e strutture di tipi annidati**
+  **Argomenti tipo e strutture di tipi annidati**
 
--   Gli argomenti tipo generico vengono copiati.
+- Gli argomenti tipo generico vengono copiati.
 
--   La struttura dei tipi annidati viene copiata per i tipi shim.
+- La struttura dei tipi annidati viene copiata per i tipi shim.
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>Convenzioni di denominazione delle proprietà dei delegati shim o dei campi dei delegati stub
 
 **Regole di base** per la denominazione dei campi, a partire da un nome vuoto:
 
--   Viene aggiunto il nome del metodo.
+- Viene aggiunto il nome del metodo.
 
--   Se il nome del metodo è un'implementazione esplicita dell'interfaccia, i punti vengono rimossi.
+- Se il nome del metodo è un'implementazione esplicita dell'interfaccia, i punti vengono rimossi.
 
--   Se il metodo è generico, viene aggiunto `Of`*n*, dove *n* è il numero di argomenti del metodo generico.
+- Se il metodo è generico, viene aggiunto `Of`*n*, dove *n* è il numero di argomenti del metodo generico.
 
- I **nomi di metodi speciali**, come getter o setter di proprietà, vengono trattati come descritto nella tabella seguente:
+  I **nomi di metodi speciali**, come getter o setter di proprietà, vengono trattati come descritto nella tabella seguente:
 
 |Se il metodo è un/una…|Esempio|Nome del metodo aggiunto|
-|-------------------|-------------|--------------------------|
+|-|-|-|
 |**Costruttore**|`.ctor`|`Constructor`|
 |**Costruttore** statico|`.cctor`|`StaticConstructor`|
 |**Funzione di accesso** con nome di metodo composto da due parti separate da "_" (ad esempio getter proprietà)|*kind_name* (caso comune, ma non applicato da ECMA)|*NameKind*, dove entrambe le parti iniziano con una maiuscola e la loro posizione è stata scambiata|
@@ -256,7 +256,7 @@ attribute of the Assembly element in the .fakes:
 ### <a name="parameter-type-naming-conventions"></a>Convenzioni di denominazione dei tipi di parametro
 
 |Dato un|La stringa aggiunta è...|
-|-----------|-------------------------|
+|-|-|
 |**Tipo**`T`|T<br /><br /> Lo spazio dei nomi, la struttura annidata e i tipi generici vengono eliminati.|
 |**Parametro Out**`out T`|`TOut`|
 |**Parametro Ref** `ref T`|`TRef`|

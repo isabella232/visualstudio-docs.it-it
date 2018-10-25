@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "34751702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894625"
 ---
 # <a name="graph-view"></a>Visualizzazione Grafico
 
@@ -48,7 +48,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
  Nella tabella seguente vengono descritte le opzioni disponibili per tutti i nodi nell'area di progettazione della visualizzazione grafico.
 
 |Opzione|Descrizione|
-|------------|-----------------|
+|-|-----------------|
 |**Mostra in XML Schema Explorer**|Inserisce lo stato attivo su Schema Explorer ed evidenzia il nodo del set di schemi.|
 |**Mostra in visualizzazione grafico**|Passa alla visualizzazione grafico (visualizzato in grigio).|
 |**Genera XML di esempio**|Disponibile solo per elementi globali. Consente di generare un file XML di esempio per l'elemento globale.|
@@ -63,7 +63,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
  Oltre alle opzioni comuni descritte in precedenza, nel menu di scelta rapida per gli elementi globali sono disponibili anche le opzioni seguenti:
 
 |Opzione|Descrizione|
-|------------|-----------------|
+|-|-----------------|
 |**Aggiungi definizione di tipo**|Aggiunge il tipo base al diagramma.|
 |**Aggiungere tutti i riferimenti**|Aggiunge tutti i nodi che fanno riferimento all'elemento e disegna frecce che indicano le relazioni tra loro.|
 |**Aggiungere membri del gruppo di sostituzione**|Aggiunge tutti i membri del gruppo di sostituzione. Questa opzione viene visualizzata se l'elemento è l'intestazione o il membro di un gruppo di sostituzione.|
@@ -72,7 +72,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
  Oltre alle opzioni comuni descritte in precedenza, nel menu di scelta rapida per i tipi semplici e complessi globali sono disponibili anche le opzioni seguenti:
 
 |Opzione|Descrizione|
-|------------|-----------------|
+|-|-----------------|
 |**Aggiungi tipo di Base**|Se il tipo selezionato è derivato da un tipo globale, aggiunge il tipo di base del tipo selezionato.|
 |**Aggiungere tutti i riferimenti**|Aggiunge tutti i riferimenti del tipo selezionato, inclusi gli elementi e attributi del tipo selezionato e i tipi derivati dal tipo selezionato.|
 |**Aggiungere tutti i tipi derivati**|Aggiunge tutti i tipi direttamente e indirettamente derivati dal tipo selezionato.|
@@ -81,14 +81,14 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
  Oltre alle opzioni comuni descritte in precedenza, nel menu di scelta rapida per i gruppi di attributi e globali sono disponibili anche le opzioni seguenti:
 
 |Opzione|Descrizione|
-|------------|-----------------|
+|-|-----------------|
 |**Aggiungere tutti i riferimenti**|Aggiunge tutti i nodi che fanno riferimento al gruppo e disegna frecce che indicano le relazioni tra loro.|
 |**Aggiungere tutti i membri**|Aggiunge tutti i membri del gruppo e disegna frecce che indicano le relazioni tra loro.|
 
  Oltre alle opzioni comuni descritte in precedenza, nel menu di scelta rapida per gli attributi globali sono disponibili anche le opzioni seguenti:
 
 |Opzione|Descrizione|
-|------------|-----------------|
+|-|-----------------|
 |**Aggiungere tutti i riferimenti**|Aggiunge tutti i nodi che fanno riferimento al gruppo e disegna frecce che indicano le relazioni tra loro.|
 
 ## <a name="properties-window"></a>Finestra Proprietà
@@ -102,7 +102,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
  ![Barra degli strumenti di Progettazione XML Schema](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opzione|Descrizione|
-|------------|-----------------|
+|-|-----------------|
 |**Mostra visualizzazione iniziale**|Consente di attivare i [avvio della vista](../xml-tools/start-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**1**.|
 |**Mostra visualizzazione modello di contenuto**|Consente di attivare i [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**2**.|
 |**Mostra visualizzazione grafico**|Consente di attivare i [visualizzazione grafico](../xml-tools/graph-view.md). In questa vista sono accessibili tramite il tasto di scelta rapida: **Ctrl**+**3**.|

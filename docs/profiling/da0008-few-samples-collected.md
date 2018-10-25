@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13065ac4b55b8ae84d299aa15eeb184e7d864d2e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4f80f4f08be3c2af8444a41209a8d19909c94a8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897901"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Numero ridotto di campioni raccolti
+
 |||  
 |-|-|  
 |ID regola|DA0008|  
@@ -30,12 +31,12 @@ ms.locfileid: "34749814"
 |Metodo di profilatura|Campionamento|  
 |Messaggio|È stato raccolto un numero ridotto di campioni. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi.|  
 |Tipo regola|Informazioni|  
-  
+
 ## <a name="cause"></a>Causa  
  Durante l'esecuzione della profilatura sono stati raccolti solo alcuni campioni.  
-  
+
 ## <a name="rule-description"></a>Descrizione della regola  
  Quando viene usato il metodo di campionamento, è necessario raccogliere un numero di campioni statisticamente significativo per assicurarsi che i dati siano rappresentativi dell'effettivo comportamento del programma. Per ridurre al minimo gli errori di campionamento, provare a raccogliere almeno 1000 campioni di comportamento dell'esecuzione delle istruzioni del programma. Se non si raccoglie un numero sufficiente di campioni è possibile che l'analisi dei dati di profilatura porti a conclusioni fuorvianti.  
-  
+
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  È consigliabile profilare un'esecuzione più lunga dell'applicazione o usare una frequenza di campionamento più elevata per ottenere risultati significativi a livello statistico. Per informazioni su come modificare la frequenza di campionamento nell'IDE di Visual Studio, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md). Per altre informazioni sulla modifica della frequenza di campionamento quando si usa la riga di comando degli strumenti di profilatura, vedere [Timer](../profiling/timer.md) nel riferimento di [VSPerfCmd](../profiling/vsperfcmd.md).

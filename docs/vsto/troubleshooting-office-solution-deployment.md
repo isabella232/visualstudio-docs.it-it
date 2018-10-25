@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886003"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Risolvere i problemi di distribuzione di soluzioni Office
   Questo argomento contiene informazioni su come risolvere i problemi comuni che possono verificarsi durante la distribuzione di soluzioni Office.  
@@ -35,11 +35,11 @@ ms.locfileid: "43774661"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>Modifica il nome dell'assembly causa conflitti  
  Se si modifica il **nome dell'Assembly** valore nel **applicazione** pagina del **Progettazione progetti** quando una soluzione già stata distribuita, gli strumenti di pubblicazione modificheranno il Pacchetto di installazione di averne *Setup.exe* file e due manifesti di distribuzione. Se si distribuiscono due file manifesto, potrebbero verificarsi le condizioni seguenti:  
   
--   Se l'utente finale installa entrambe le versioni, l'applicazione caricherà entrambi i componenti aggiuntivi VSTO.  
+- Se l'utente finale installa entrambe le versioni, l'applicazione caricherà entrambi i componenti aggiuntivi VSTO.  
   
--   Se il componente aggiuntivo VSTO è stato installato prima della modifica del nome dell'assembly, l'utente finale non riceverà mai aggiornamenti.  
+- Se il componente aggiuntivo VSTO è stato installato prima della modifica del nome dell'assembly, l'utente finale non riceverà mai aggiornamenti.  
   
- Per evitare queste situazioni, non modificare la soluzione **nome dell'Assembly** valore dopo aver distribuito la soluzione.  
+  Per evitare queste situazioni, non modificare la soluzione **nome dell'Assembly** valore dopo aver distribuito la soluzione.  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>Presenza di aggiornamenti richiede molto tempo  
  Visual Studio 2010 Tools per Office runtime fornisce una voce del Registro di sistema che gli amministratori possono utilizzare per impostare il valore di timeout per il download dei manifesti e della soluzione.  
@@ -63,7 +63,7 @@ ms.locfileid: "43774661"
  È possibile aggiungere .NET Framework, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]e gli assembly di interoperabilità primari di Microsoft Office al pacchetto di installazione come prerequisiti distribuiti con la soluzione Office. Per informazioni su come installare l'assembly di interoperabilità primari, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) e [procedura: assembly di interoperabilità primari di Office installare](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>La pubblicazione mediante 'Localhost' può causare problemi di installazione  
- Quando si usa "http://localhost" come percorso di pubblicazione o di installazione per le soluzioni a livello di documento, il **pubblicazione guidata** non converte la stringa per il nome effettivo del computer. In questo caso, è necessario installare la soluzione nel computer di sviluppo. Per fare in modo che le soluzioni distribuite usino IIS nel computer di sviluppo, usare il nome completo per tutti i percorsi HTTP/HTTPS/FTP anziché localhost.  
+ Quando si usa "<http://localhost>" come percorso di pubblicazione o di installazione per le soluzioni a livello di documento, il **pubblicazione guidata** non converte la stringa per il nome effettivo del computer. In questo caso, è necessario installare la soluzione nel computer di sviluppo. Per fare in modo che le soluzioni distribuite usino IIS nel computer di sviluppo, usare il nome completo per tutti i percorsi HTTP/HTTPS/FTP anziché localhost.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Gli assembly memorizzati nella cache vengono caricati anziché gli assembly aggiornati  
  Fusion, il caricatore di assembly di .NET Framework, carica la copia degli assembly memorizzata nella cache quando il percorso di output del progetto è in una condivisione file di rete, l'assembly è firmato con un nome sicuro e la versione dell'assembly della personalizzazione non cambia. Se si aggiorna un assembly che soddisfa queste condizioni, l'aggiornamento non verrà visualizzato la volta successiva che si esegue il progetto perché viene caricata la copia memorizzata nella cache.  
@@ -72,13 +72,13 @@ ms.locfileid: "43774661"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Per scaricare gli assembly anziché caricare le copie memorizzate nella cache  
   
-1.  Nella barra dei menu, scegliere **Project**, _NomeProgetto_**proprietà**.  
+1. Sulla barra dei menu scegliere **Progetto**, _Proprietà_**NomeProgetto**.  
   
-2.  Nella pagina **Applicazione** scegliere **Informazioni assembly**.  
+2. Nella pagina **Applicazione** scegliere **Informazioni assembly**.  
   
-3.  Nel primo **versione dell'Assembly** immettere un asterisco (\*), quindi scegliere il **OK** pulsante.  
+3. Nel primo **versione dell'Assembly** immettere un asterisco (\*), quindi scegliere il **OK** pulsante.  
   
- Dopo aver modificato la versione dell'assembly, è possibile continuare a firmare l'assembly con nome sicuro e Fusion caricherà la versione più recente della personalizzazione.  
+   Dopo aver modificato la versione dell'assembly, è possibile continuare a firmare l'assembly con nome sicuro e Fusion caricherà la versione più recente della personalizzazione.  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Installazione non riesce se l'URI contiene caratteri non US-ASCII  
  Quando si pubblica una soluzione Office in un percorso HTTP/HTTPS/FTP, il percorso non può contenere caratteri Unicode non US-ASCII. Questi caratteri possono causare un comportamento incoerente nel programma di installazione. Usare caratteri US-ASCII per il percorso di installazione.  
@@ -91,15 +91,15 @@ ms.locfileid: "43774661"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>Eccezione non rilevata o un metodo non trovato errore quando si installa una soluzione  
  Quando si installano soluzioni Office aprendo il manifesto di distribuzione (un *VSTO* file), possono essere visualizzati messaggi di errore di applicazione, un documento o cartella di lavoro, Office per le condizioni seguenti:  
   
--   Impossibile trovare il metodo.  
+- Impossibile trovare il metodo.  
   
--   MissingMethodException.  
+- MissingMethodException.  
   
--   Eccezione non rilevata.  
+- Eccezione non rilevata.  
   
- Per evitare questi messaggi di errore, installare la soluzione eseguendo il programma di installazione.  
+  Per evitare questi messaggi di errore, installare la soluzione eseguendo il programma di installazione.  
   
- Quando si installa la soluzione senza eseguire il programma di installazione, non vengono cercati o installati i prerequisiti. Il programma di installazione verifica la versione corretta dei prerequisiti e li installa, se necessario.  
+  Quando si installa la soluzione senza eseguire il programma di installazione, non vengono cercati o installati i prerequisiti. Il programma di installazione verifica la versione corretta dei prerequisiti e li installa, se necessario.  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>Manifesto le chiavi del Registro di sistema per la modifica di componenti aggiuntivi dopo la compilazione di un progetto InstallShield Limited Edition  
  La chiave del Registro di sistema del manifesto che fa parte di un'installazione del componente aggiuntivo VSTO talvolta programmare modifiche rispetto *VSTO* al *. manifest* quando si compila un progetto InstallShield Limited Edition.  

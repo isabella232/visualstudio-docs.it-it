@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e73e723c25d4f84b3f98f2e22f876ad82f498158
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880117"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procedura: Specificare la frequenza di campionamento per un'impostazione di esecuzione dei test di carico
 
@@ -28,7 +28,7 @@ Scegliere un valore appropriato per la proprietà **Frequenza di campionamento**
 Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
 |Durata test di carico|Frequenza di campionamento consigliata|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 ora|5 secondi|
 |1 - 8 ore|15 secondi|
 |8 - 24 ore|30 secondi|

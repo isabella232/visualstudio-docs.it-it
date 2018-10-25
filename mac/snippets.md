@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 864b39331944e881fe1bcdcfefa2dd7c1cebab09
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: bc362c950b919a4f9f663b5bd3ce1a2f0cbfb00a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906852"
 ---
 # <a name="code-snippets"></a>Frammenti di codice 
 
@@ -28,11 +28,11 @@ Vi sono diversi modi per aggiungere frammenti di codice, alcuni dei quali sono d
 
 * **Casella degli strumenti**: usare il riquadro della casella degli strumenti per visualizzare un elenco di tutti i frammenti di codice. Trascinare il modello desiderato dalla casella degli strumenti nella posizione corretta nel codice sorgente:
 
- ![Frammenti di codice nella casella degli strumenti](media/source-editor-image14.png)
+  ![Frammenti di codice nella casella degli strumenti](media/source-editor-image14.png)
 
 * **Comando di inserimento modelli**: attualmente non è presente un tasto di scelta rapida predefinito per inserire un modello. Per crearne uno, spostarsi su **Visual Studio > Preferenze... > Tasti di scelta rapida** e cercare `template`. In questo modo è possibile aggiungere il tasto di scelta rapida desiderato nel campo Modifica tasto di scelta rapida e quindi fare clic su **Applica**:
 
- ![Comando di inserimento modello](media/source-editor-image15.png)
+  ![Comando di inserimento modello](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Creazione di un nuovo modello
 

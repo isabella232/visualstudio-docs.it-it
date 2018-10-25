@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_returnAddress | Documenti Microsoft
+title: Get_returnaddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f16b82cf448a177a99dfea8cc7b44c1ce69806f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fdc3e14560dd53bb4de170c9d87e6fc17ea64523
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900111"
 ---
 # <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
 Recupera l'indirizzo del mittente del frame.  

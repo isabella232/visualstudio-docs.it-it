@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927203"
 ---
 # <a name="vsix-project-template"></a>Modello di progetto VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "49236184"
 ## <a name="uses-of-the-vsix-project-template"></a>Utilizzi del modello di progetto VSIX  
  Il modello di progetto VSIX ha due utilizzi principali:  
   
--   Per distribuire i modelli di progetto, modelli di elementi e altre estensioni che non dispongono ancora il supporto VSIX.  
+- Per distribuire i modelli di progetto, modelli di elementi e altre estensioni che non dispongono ancora il supporto VSIX.  
   
--   Per eseguire il wrapping gli output di più estensioni nel pacchetto una distribuzione.  
+- Per eseguire il wrapping gli output di più estensioni nel pacchetto una distribuzione.  
   
- Non è necessario usare il modello di progetto VSIX per distribuire i pacchetti VSPackage o altri tipi di estensioni che hanno già VSIX supporto.  
+  Non è necessario usare il modello di progetto VSIX per distribuire i pacchetti VSPackage o altri tipi di estensioni che hanno già VSIX supporto.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Creazione del pacchetto di un'estensione in un progetto VSIX vuota  
  È possibile creare un pacchetto, un'estensione esistente o un'estensione che non dispone già di VSIX supportare, inserendoli in un progetto VSIX vuoto. L'estensione da sottoporre a wrapping deve essere di un tipo supportato dal [schema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  

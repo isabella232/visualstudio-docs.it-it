@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928347"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guida sulla produttività di Visual Studio 2017 in C#
 
@@ -57,7 +57,7 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 > [!NOTE]
 > Alcune estensioni separano i tasti di scelta rapida predefiniti di Visual Studio. Per usare i comandi riportati in precedenza, ripristinare i tasti di scelta rapida sui valori predefiniti di Visual Studio in **Strumenti** > **Importa/Esporta impostazioni** > **Reimposta tutte le impostazioni** oppure **Strumenti** > **Opzioni** > **Tastiera** > **Reimposta**.
 
-Altre informazioni sui tasti di scelta rapida e sui comandi sono disponibili nella [documentazione](..\ide\tips-and-tricks-for-visual-studio.md) di Visual Studio.
+Altre informazioni sui tasti di scelta rapida e sui comandi sono disponibili nella [documentazione](../ide/tips-and-tricks-for-visual-studio.md) di Visual Studio.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Serve un modo per spostarsi velocemente su file o tipi
 
@@ -161,7 +161,7 @@ Ecco un elenco di funzionalità editor e di produttività per rendere più effic
 | Abilita spostamento a origini decompilate | Consente l'uso di Vai a definizione per tipi o membri di origini esterne e del decompilatore ILSpy per visualizzare i corpi dei metodi | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita spostamento a origini decompilate** |
 | Modalità di terminazione/suggerimento | Modifica il comportamento del completamento in IntelliSense. Gli sviluppatori con esperienza IntelliJ tendono a cambiare l'impostazione predefinita in questo punto | **Menu** > **Modifica** > **IntelliSense** > **Attiva/disattiva modalità di terminazione** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Visualizza le informazioni di riferimento del codice e la cronologia modifiche nell'editor | **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **CodeLens** |
-| [Frammenti di codice](../ide/visual-csharp-code-snippets.md) | Consente di generare il boilerplate comune |  Digitare un nome di frammento di codice e premere **TAB** due volte. |
+| [Frammenti di codice](../ide/visual-csharp-code-snippets.md) | Consente di generare il boilerplate comune | Digitare un nome di frammento di codice e premere **TAB** due volte. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Manca una funzionalità che migliora la produttività o le prestazioni sono scadenti?
 

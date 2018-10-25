@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920665"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definire vincoli di convalida per i modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ ms.locfileid: "49176540"
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Per creare un'estensione di convalida nella relativa estensione VSIX  
   
-1.  Nella finestra di dialogo **Nuovo progetto** , in **Progetti di modellazione**, selezionare **Estensione di convalida**.  
+1. Nella finestra di dialogo **Nuovo progetto** , in **Progetti di modellazione**, selezionare **Estensione di convalida**.  
   
-2.  Aprire il file **.cs** nel nuovo progetto e modificare la classe per poter implementare il vincolo di convalida.  
+2. Aprire il file **.cs** nel nuovo progetto e modificare la classe per poter implementare il vincolo di convalida.  
   
-     Per altre informazioni, vedere [Valutazione del vincolo di convalida](#Implementing).  
+    Per altre informazioni, vedere [Valutazione del vincolo di convalida](#Implementing).  
   
-    > [!IMPORTANT]
-    >  Assicurarsi che i file **.cs** contengano l'istruzione seguente `using` :  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  Assicurarsi che i file **.cs** contengano l'istruzione seguente `using` :  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  È possibile aggiungere altri vincoli definendo nuovi metodi. Per identificare un metodo come metodo di convalida, deve essere contrassegnato con gli attributi esattamente come il metodo di convalida iniziale.  
+3. È possibile aggiungere altri vincoli definendo nuovi metodi. Per identificare un metodo come metodo di convalida, deve essere contrassegnato con gli attributi esattamente come il metodo di convalida iniziale.  
   
-4.  Testare i vincoli premendo F5. Per altre informazioni, vedere [Esecuzione di un vincolo di convalida](#Executing).  
+4. Testare i vincoli premendo F5. Per altre informazioni, vedere [Esecuzione di un vincolo di convalida](#Executing).  
   
-5.  Installare il comando di menu in un altro computer copiando il file **bin\\\*\\\*VSIX** che viene compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).  
+5. Installare il comando di menu in un altro computer copiando il file **bin\\\*\\\*VSIX** che viene compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).  
   
- Quando si aggiungono altri file **.cs** , in genere vengono richieste le istruzioni `using` seguenti:  
+   Quando si aggiungono altri file **.cs** , in genere vengono richieste le istruzioni `using` seguenti:  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` viene visualizzato nell'elenco errori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- `"error string"` viene visualizzato nell'elenco errori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   `errorCode` è una stringa che identifica l'errore in modo univoco  
+- `errorCode` è una stringa che identifica l'errore in modo univoco  
   
--   `elementsWithError` identifica gli elementi del modello. Quando l'utente fa doppio clic sul report errori, verrà selezionata la forma che rappresenta questo elemento.  
+- `elementsWithError` identifica gli elementi del modello. Quando l'utente fa doppio clic sul report errori, verrà selezionata la forma che rappresenta questo elemento.  
   
- `LogError(),` `LogWarning()` e `LogMessage()` inseriscono i messaggi in sezioni diverse dell'elenco errori.  
+  `LogError(),` `LogWarning()` e `LogMessage()` inseriscono i messaggi in sezioni diverse dell'elenco errori.  
   
 ## <a name="how-validation-methods-are-applied"></a>Come vengono applicati i metodi di convalida  
  La convalida viene applicata a ogni elemento del modello, incluse le relazioni e le parti di elementi più grandi, ad esempio gli attributi di una classe e i parametri di un'operazione.  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>Per disinstallare un'estensione  
   
-1.  Nel menu **Strumenti** scegliere **Estensioni e aggiornamenti**.  
+1. Nel menu **Strumenti** scegliere **Estensioni e aggiornamenti**.  
   
-2.  Espandere **Estensioni installate**.  
+2. Espandere **Estensioni installate**.  
   
-3.  Selezionare l'estensione e quindi scegliere **Disinstalla**.  
+3. Selezionare l'estensione e quindi scegliere **Disinstalla**.  
   
- Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente in cui *% LocalAppData %* è in genere *DriveName*: \Users\\*UserName*\AppData\Local:  
+   Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente in cui *% LocalAppData %* è in genere *DriveName*: \Users\\*UserName*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versione]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versione]**  
   
 ##  <a name="Example"></a> Esempio  
  In questo esempio vengono trovati i cicli nella relazione di dipendenza tra gli elementi.  

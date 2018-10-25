@@ -17,12 +17,12 @@ ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a89eb4a770371d19e0c7b422fcac2a08d142f731
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c91f0ee5df47f2bb57ecd3c5faece13fb17384f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912292"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ IDebugProcessEx2 : IUnknown
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
  Un fornitore di porte personalizzato implementa questa interfaccia sull'oggetto stesso come il [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interfaccia al fine di:  
   
--   Rilevamento di supporto di sessioni connesse a un processo  
+- Rilevamento di supporto di sessioni connesse a un processo  
   
--   Supporto della connessione automatica tra più motori di debug  
+- Supporto della connessione automatica tra più motori di debug  
   
- Il fornitore della porta personalizzate possa implementare questa interfaccia se sceglie.  
+  Il fornitore della porta personalizzate possa implementare questa interfaccia se sceglie.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
   

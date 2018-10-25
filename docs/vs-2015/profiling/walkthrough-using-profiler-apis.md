@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad4b22be98396fe58734f9c785da201450bdafcc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d046015b1a88b3699fa8ef572e39e2ffefec2064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898759"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: utilizzo delle API del profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,19 +124,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Per raccogliere e visualizzare i dati nell'IDE di Visual Studio  
   
-1.  Aprire l'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Nel menu **Analizza** scegliere **Profiler** e selezionare **Nuova sessione di prestazioni**.  
+1. Aprire l'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Nel menu **Analizza** scegliere **Profiler** e selezionare **Nuova sessione di prestazioni**.  
   
-2.  Aggiungere il file binario compilato per l'elenco **Destinazioni** nella finestra **Esplora prestazioni**. Fare clic con il pulsante destro del mouse su **Destinazioni** e selezionare **Aggiungi binario di destinazione**. Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il file binario e fare clic su **Apri**.  
+2. Aggiungere il file binario compilato per l'elenco **Destinazioni** nella finestra **Esplora prestazioni**. Fare clic con il pulsante destro del mouse su **Destinazioni** e selezionare **Aggiungi binario di destinazione**. Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il file binario e fare clic su **Apri**.  
   
-3.  Nell'elenco **Metodo** della barra degli strumenti **Esplora prestazioni** fare clic su **Strumentazione**.  
+3. Nell'elenco **Metodo** della barra degli strumenti **Esplora prestazioni** fare clic su **Strumentazione**.  
   
-4.  Fare clic su **Avvio con analisi**.  
+4. Fare clic su **Avvio con analisi**.  
   
-     Il profiler instrumenterà ed eseguirà il file binario e creerà un file del report di prestazioni. Il file del report di prestazioni verrà visualizzato nel nodo **Report** di **Esplora prestazioni**.  
+    Il profiler instrumenterà ed eseguirà il file binario e creerà un file del report di prestazioni. Il file del report di prestazioni verrà visualizzato nel nodo **Report** di **Esplora prestazioni**.  
   
-5.  Aprire il file del report di prestazioni ottenuto.  
+5. Aprire il file del report di prestazioni ottenuto.  
   
- Per impostazione predefinita, quando viene avviato, il profiler raccoglie i dati a livello globale. Il codice seguente all'inizio del programma disabilita la profilatura globale.  
+   Per impostazione predefinita, quando viene avviato, il profiler raccoglie i dati a livello globale. Il codice seguente all'inizio del programma disabilita la profilatura globale.  
   
 ```  
 DataCollection.StopProfile(  

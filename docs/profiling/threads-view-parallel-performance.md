@@ -14,29 +14,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80ce83bba65affcb47a702d572d8d962f712667e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883991"
 ---
 # <a name="threads-view-parallel-performance"></a>Visualizzazione Thread (prestazioni in parallelo)
 La **visualizzazione thread** è la visualizzazione più dettagliata e completa nel Visualizzatore di concorrenza (scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Tramite questa visualizzazione, è possibile identificare se i thread sono in esecuzione o se sono bloccati a causa di operazioni di sincronizzazione, di I/O oppure per altri motivi.  
   
  Durante l'analisi del profilo, il visualizzatore di concorrenza esamina tutti gli eventi di cambio di contesto del sistema operativo per ogni thread dell'applicazione. I cambi di contesto possono verificarsi per diversi motivi, ad esempio nei casi seguenti:  
   
--   Un thread è bloccato su una primitiva di sincronizzazione.  
+- Un thread è bloccato su una primitiva di sincronizzazione.  
   
--   Il quantum di un thread scade.  
+- Il quantum di un thread scade.  
   
--   Un thread esegue una richiesta di I/O di blocco.  
+- Un thread esegue una richiesta di I/O di blocco.  
   
- Nella visualizzazione Thread viene assegnata una categoria a ogni cambio di contesto quando l'esecuzione di un thread si arresta. Le categorie vengono visualizzate nella legenda nella parte inferiore sinistra della visualizzazione. Il visualizzatore di concorrenza classifica gli eventi di cambio di contesto cercando nello stack di chiamate del thread le API di blocco conosciute. Se non viene rilevata alcuna corrispondenza nello stack di chiamate, viene usato il motivo di attesa fornito da [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]. Tuttavia, la categoria [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] può essere basata su un dettaglio di implementazione e potrebbe non riflettere lo scopo dell'utente. Ad esempio, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] segnala il motivo dell'attesa per il blocco in lettura-scrittura nativo come I/O anziché come sincronizzazione. Nella maggior parte dei casi è possibile identificare la causa principale di un evento di blocco esaminando gli stack di chiamate che corrispondono agli eventi di cambio di contesto.  
+  Nella visualizzazione Thread viene assegnata una categoria a ogni cambio di contesto quando l'esecuzione di un thread si arresta. Le categorie vengono visualizzate nella legenda nella parte inferiore sinistra della visualizzazione. Il visualizzatore di concorrenza classifica gli eventi di cambio di contesto cercando nello stack di chiamate del thread le API di blocco conosciute. Se non viene rilevata alcuna corrispondenza nello stack di chiamate, viene usato il motivo di attesa fornito da [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]. Tuttavia, la categoria [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] può essere basata su un dettaglio di implementazione e potrebbe non riflettere lo scopo dell'utente. Ad esempio, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] segnala il motivo dell'attesa per il blocco in lettura-scrittura nativo come I/O anziché come sincronizzazione. Nella maggior parte dei casi è possibile identificare la causa principale di un evento di blocco esaminando gli stack di chiamate che corrispondono agli eventi di cambio di contesto.  
   
- La visualizzazione Thread mostra anche le dipendenze tra thread. Ad esempio, se si identifica un thread bloccato su un oggetto di sincronizzazione, è possibile cercare il thread che lo ha sbloccato ed è possibile esaminare l'attività nello stack di chiamate per il thread nel punto in cui ha sbloccato l'altro.  
+  La visualizzazione Thread mostra anche le dipendenze tra thread. Ad esempio, se si identifica un thread bloccato su un oggetto di sincronizzazione, è possibile cercare il thread che lo ha sbloccato ed è possibile esaminare l'attività nello stack di chiamate per il thread nel punto in cui ha sbloccato l'altro.  
   
- Quando i thread sono in esecuzione, il visualizzatore di concorrenza raccoglie campioni. Nella visualizzazione Thread è possibile analizzare quale codice viene eseguito da uno o più thread durante il segmento di esecuzione. È anche possibile esaminare i rapporti di blocco e i rapporti di profilatura dell'esecuzione dell'albero dello stack di chiamate.  
+  Quando i thread sono in esecuzione, il visualizzatore di concorrenza raccoglie campioni. Nella visualizzazione Thread è possibile analizzare quale codice viene eseguito da uno o più thread durante il segmento di esecuzione. È anche possibile esaminare i rapporti di blocco e i rapporti di profilatura dell'esecuzione dell'albero dello stack di chiamate.  
   
 ## <a name="usage"></a>Utilizzo  
  Ecco in che modo è possibile usare la visualizzazione Thread:  
@@ -58,26 +58,26 @@ La **visualizzazione thread** è la visualizzazione più dettagliata e completa 
 ## <a name="examine-specific-time-intervals-and-threads"></a>Esaminare intervalli di tempo e thread specifici  
  La visualizzazione Thread mostra una sequenza temporale. È possibile usare le funzionalità di zoom e panoramica all'interno della sequenza temporale per esaminare gli intervalli specifici e i thread dell'applicazione. Sull'asse x viene rappresentato il tempo mentre sull'asse y sono riportati diversi canali:  
   
--   Due canali di I/O per ogni unità disco del sistema, un canale per la lettura e uno per la scrittura.  
+- Due canali di I/O per ogni unità disco del sistema, un canale per la lettura e uno per la scrittura.  
   
--   Un canale per ogni thread del processo.  
+- Un canale per ogni thread del processo.  
   
--   Canali dei marcatori, se nella traccia sono presenti eventi marcatori. I canali dei marcatori vengono inizialmente visualizzati sotto i canali di thread che hanno generato tali eventi.  
+- Canali dei marcatori, se nella traccia sono presenti eventi marcatori. I canali dei marcatori vengono inizialmente visualizzati sotto i canali di thread che hanno generato tali eventi.  
   
--   Canali GPU.  
+- Canali GPU.  
   
- Di seguito è riportata un'immagine della visualizzazione Thread:  
+  Di seguito è riportata un'immagine della visualizzazione Thread:  
   
- ![Visualizzazione dei thread](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-Visualizzazione Thread  
+  ![Visualizzazione dei thread](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  Visualizzazione Thread  
   
- Inizialmente i thread sono disposti nell'ordine in cui vengono creati, in modo che il thread dell'applicazione principale sia il primo. È possibile usare l'opzione di ordinamento nell'angolo in alto a sinistra della visualizzazione per ordinare i thread in base a un altro criterio (ad esempio, secondo i thread che svolgono la maggior quantità di operazioni di esecuzione).  
+  Inizialmente i thread sono disposti nell'ordine in cui vengono creati, in modo che il thread dell'applicazione principale sia il primo. È possibile usare l'opzione di ordinamento nell'angolo in alto a sinistra della visualizzazione per ordinare i thread in base a un altro criterio (ad esempio, secondo i thread che svolgono la maggior quantità di operazioni di esecuzione).  
   
- È possibile nascondere i thread che non eseguono alcuna attività selezionandone i nomi nella colonna a sinistra e quindi scegliendo il pulsante **Nasconde i thread selezionati** nella barra degli strumenti. È consigliabile nascondere i thread che sono completamente bloccati perché le relative statistiche sono irrilevanti e potrebbero intasare i rapporti.  
+  È possibile nascondere i thread che non eseguono alcuna attività selezionandone i nomi nella colonna a sinistra e quindi scegliendo il pulsante **Nasconde i thread selezionati** nella barra degli strumenti. È consigliabile nascondere i thread che sono completamente bloccati perché le relative statistiche sono irrilevanti e potrebbero intasare i rapporti.  
   
- Per identificare altri thread da nascondere, nella legenda attiva scegliere il rapporto **Riepilogo per thread** nella scheda **Rapporto profilo**. Verrà visualizzato il grafico della suddivisione di esecuzione, che mostra lo stato dei thread per l'intervallo di tempo attualmente selezionato. Con alcuni livelli di zoom, alcuni thread potrebbero non essere visualizzati. In questo caso, vengono visualizzati puntini di sospensione a destra.  
+  Per identificare altri thread da nascondere, nella legenda attiva scegliere il rapporto **Riepilogo per thread** nella scheda **Rapporto profilo**. Verrà visualizzato il grafico della suddivisione di esecuzione, che mostra lo stato dei thread per l'intervallo di tempo attualmente selezionato. Con alcuni livelli di zoom, alcuni thread potrebbero non essere visualizzati. In questo caso, vengono visualizzati puntini di sospensione a destra.  
   
- Dopo aver selezionato un intervallo di tempo e alcuni thread in esso contenuti, è possibile avviare l'analisi delle prestazioni.  
+  Dopo aver selezionato un intervallo di tempo e alcuni thread in esso contenuti, è possibile avviare l'analisi delle prestazioni.  
   
 ## <a name="analysis-tools"></a>Strumenti di analisi  
  Questa sezione descrive i rapporti e altri strumenti di analisi.  

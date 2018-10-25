@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 60f4a038056d326cfb184cc3bb6876c411263ca1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884004"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
 La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente di controllare quali tracce vengono raccolte.  Nella finestra sono presenti le schede seguenti: Simboli, Just My Code, Buffer, Filtro, Eventi CLR, Marcatori, Provider e File.  
@@ -54,7 +54,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
 ### <a name="file-io-events"></a>Eventi di I/O dei file  
  Gli eventi di I/O su file rappresentano gli accessi al disco per conto del processo corrente.  Se la raccolta di eventi di I/O su file viene disabilitata, la dimensione della traccia raccolta risulta ridotta, ma nella visualizzazione Thread non sarà riportata alcuna informazione sui canali o le operazioni del disco.  
   
-## <a name="markers"></a>Marcatori  
+## <a name="markers"></a>Markers  
  Nella scheda **Marcatori** è possibile configurare il set di provider ETW mostrati come marcatori nel visualizzatore di concorrenza.  È anche possibile filtrare la raccolta di marcatori in base al livello di importanza e alla categoria ETW.  Se si usa l'[SDK del visualizzatore di concorrenza ](../profiling/concurrency-visualizer-sdk.md) e il proprio provider marcatori, è possibile registrare qui quest'ultimo in modo che venga mostrato nella visualizzazione Thread.  
   
 ### <a name="add-a-new-provider"></a>Aggiungi nuovo provider  
@@ -75,15 +75,15 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
 ## <a name="files"></a>File  
  Nella scheda **File** è possibile specificare la directory in cui i file di traccia vengono archiviati ogni volta che una traccia viene raccolta.  Il visualizzatore di concorrenza genera quattro file per ogni traccia raccolta:  
   
--   File di log di traccia degli eventi (ETL) in modalità kernel (*.* kernel.etl*)  
+- File di log di traccia degli eventi (ETL) in modalità kernel (<em>.</em>kernel.etl*)  
   
--   File di log di traccia degli eventi in modalità utente (*.* user.etl*)  
+- File di log di traccia degli eventi in modalità utente (<em>.</em>user.etl*)  
   
--   File di dati del visualizzatore di concorrenza (*.* CVData*)  
+- File di dati del visualizzatore di concorrenza (<em>.</em>CVData*)  
   
--   File di traccia del visualizzatore di concorrenza (*.* CVTrace*)  
+- File di traccia del visualizzatore di concorrenza (<em>.</em>CVTrace*)  
   
- Nei due file con estensione etl vengono archiviati i dati di traccia non elaborati, mentre nei due file del visualizzatore di concorrenza vengono archiviati i dati elaborati.  I file con estensione etl non elaborati non vengono usati dopo l'elaborazione di una traccia.  La selezione della casella di controllo **Elimina i file di log traccia eventi (ETL) dopo l'analisi** riduce la quantità di dati di traccia archiviati nel disco.  
+  Nei due file con estensione etl vengono archiviati i dati di traccia non elaborati, mentre nei due file del visualizzatore di concorrenza vengono archiviati i dati elaborati.  I file con estensione etl non elaborati non vengono usati dopo l'elaborazione di una traccia.  La selezione della casella di controllo **Elimina i file di log traccia eventi (ETL) dopo l'analisi** riduce la quantità di dati di traccia archiviati nel disco.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Just my code](../profiling/just-my-code-threads-view.md)   

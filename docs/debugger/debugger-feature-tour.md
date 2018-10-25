@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882666"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Iniziare a esaminare il Debugger di Visual Studio
 
@@ -188,7 +188,7 @@ In questo esempio, il `DirectoryInfo` chiamata è stato assegnato l'errore nella
 
 Gestore di eccezioni è un'ottima funzionalità che consentono di eseguire il debug degli errori. È anche possibile eseguire operazioni come visualizzare i dettagli dell'errore e aggiungere un'espressione di controllo dal gestore di eccezioni. In alternativa, se necessario, è possibile modificare le condizioni per l'eccezione specifica.
 
->  [!NOTE]
+> [!NOTE]
 > L'Helper eccezioni consente di sostituire le informazioni sulle eccezioni in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Espandere la **impostazioni eccezioni** nodo per visualizzare altre opzioni su come gestire questo tipo di eccezione, ma è necessario modificare alcun valore per questa presentazione.

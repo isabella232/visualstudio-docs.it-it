@@ -26,12 +26,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4282ce38671e2270c1e91d70df8968d790c54a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265642"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891765"
 ---
 # <a name="publishing-clickonce-applications"></a>Pubblicazione di applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ Quando si pubblica un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclic
 ## <a name="publish-wizard"></a>Pubblicazione guidata  
  È possibile usare la pubblicazione guidata per configurare le impostazioni di base per la pubblicazione dell'applicazione. Ciò include le seguenti proprietà di pubblicazione:  
   
--   Posizione cartella di pubblicazione: percorso in cui Visual Studio copierà i file (computer locale, condivisione file di rete, server FTP o sito Web)  
+- Posizione cartella di pubblicazione: percorso in cui Visual Studio copierà i file (computer locale, condivisione file di rete, server FTP o sito Web)  
   
--   Percorso cartella di installazione: percorso dal quale gli utenti finali eseguiranno l'installazione (condivisione file di rete, server FTP, sito Web, CD/DVD)  
+- Percorso cartella di installazione: percorso dal quale gli utenti finali eseguiranno l'installazione (condivisione file di rete, server FTP, sito Web, CD/DVD)  
   
--   Disponibilità in linea o non in line: se gli utenti finali possono accedere all'applicazione con o senza una connessione di rete  
+- Disponibilità in linea o non in line: se gli utenti finali possono accedere all'applicazione con o senza una connessione di rete  
   
--   Frequenza di aggiornamento: la frequenza con cui l'applicazione verifica la presenza di nuovi aggiornamenti.  
+- Frequenza di aggiornamento: la frequenza con cui l'applicazione verifica la presenza di nuovi aggiornamenti.  
   
- Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+  Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="publish-page"></a>Pagina Pubblica  
  La pagina **Pubblica** della **Creazione progetti** consente di configurare le proprietà relative alla distribuzione ClickOnce. Gli argomenti sono elencati nella tabella seguente.  

@@ -13,31 +13,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48b9bc6f2797a6cf6c87da4e4bc2e2d83f84622a
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 97f0adad956786f3096174460aabd007e0cb8592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33102654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897862"
 ---
 # <a name="project-properties-reference"></a>Riferimenti alle proprietà di progetto
 Altre informazioni su come configurare e personalizzare le proprietà del progetto.
 
 ## <a name="project-properties-pages"></a>Pagine delle proprietà del progetto
 
-|Titolo|Descrizione|
-|-----------|-----------------|
-|[Pagina Applicazione, Creazione progetti (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].|
-|[Pagina Applicazione, Creazione progetti (C#)](../../ide/reference/application-page-project-designer-csharp.md)|Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].|
-|[Pagina Eventi di compilazione, Creazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)|Usare questo riquadro per specificare le istruzioni di configurazione della compilazione.|
-|[Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md)|Usare questo riquadro per specificare le proprietà di configurazione della compilazione per un progetto [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].|
-|[Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)|Usare questa pagina per specificare le proprietà di compilazione di progetti [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].|
-|[Pagina Debug, Creazione progetti](../../ide/reference/debug-page-project-designer.md)|Usare questa pagina per specificare le proprietà di debug di un progetto.|
-|[Analisi del codice, Creazione progetti](../../ide/reference/code-analysis-project-designer.md)|Usare questa pagina per configurare lo strumento di analisi del codice.|
-|[Pagina Pubblica, Creazione progetti](../../ide/reference/publish-page-project-designer.md)|Usare questa pagina per configurare le proprietà per [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].|
-|[Pagina Riferimenti, Creazione progetti (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|Usare questa pagina per gestire i riferimenti usati da un progetto.|
-|[Pagina Sicurezza, Creazione progetti](../../ide/reference/security-page-project-designer.md)|Usare questa pagina per configurare le impostazioni di sicurezza per l'accesso al codice per le applicazioni distribuite usando la distribuzione [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].|
-|[Pagina Firma, Creazione progetti](../../ide/reference/signing-page-project-designer.md)|Usare questa pagina per firmare manifesti di distribuzione e dell'applicazione, nonché per firmare l'assembly.|
+| Titolo | Descrizione |
+| - | - |
+| [Pagina Applicazione, Creazione progetti (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
+| [Pagina Applicazione, Creazione progetti (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
+| [Pagina Eventi di compilazione, Creazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) | Usare questo riquadro per specificare le istruzioni di configurazione della compilazione. |
+| [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md) | Usare questo riquadro per specificare le proprietà di configurazione della compilazione per un progetto [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
+| [Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) | Usare questa pagina per specificare le proprietà di compilazione di progetti [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
+| [Pagina Debug, Creazione progetti](../../ide/reference/debug-page-project-designer.md) | Usare questa pagina per specificare le proprietà di debug di un progetto. |
+| [Analisi del codice, Creazione progetti](../../ide/reference/code-analysis-project-designer.md) | Usare questa pagina per configurare lo strumento di analisi del codice. |
+| [Pagina Pubblica, Creazione progetti](../../ide/reference/publish-page-project-designer.md) | Usare questa pagina per configurare le proprietà per [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
+| [Pagina Riferimenti, Creazione progetti (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md) | Usare questa pagina per gestire i riferimenti usati da un progetto. |
+| [Pagina Sicurezza, Creazione progetti](../../ide/reference/security-page-project-designer.md) | Usare questa pagina per configurare le impostazioni di sicurezza per l'accesso al codice per le applicazioni distribuite usando la distribuzione [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
+| [Pagina Firma, Creazione progetti](../../ide/reference/signing-page-project-designer.md) | Usare questa pagina per firmare manifesti di distribuzione e dell'applicazione, nonché per firmare l'assembly. |
 
 ## <a name="see-also"></a>Vedere anche
 

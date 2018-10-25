@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData::Next | Documenti Microsoft
+title: Idiaenumdebugstreamdata | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e816edd5b93ffdfec46d36d9aabba154ab035d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895249"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-Recupera un numero specificato di record nella sequenza enumerato.  
+Recupera un determinato numero di record nella sequenza enumerata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,19 +41,19 @@ HRESULT Next (
  [in] Il numero di record da recuperare.  
   
  cbData  
- [in] Dimensione del buffer di dati, in byte.  
+ [in] Dimensioni del buffer di dati, in byte.  
   
  pcbData  
  [out] Restituisce il numero di byte restituiti. Se `data` è NULL, quindi `pcbData` contiene il numero totale di byte di dati disponibili per tutti i record richiesti.  
   
- dati]  
- [out] Un buffer che deve essere compilato con i dati di record di flusso di debug.  
+ [dati]  
+ [out] Un buffer che deve essere compilata con i dati di record di flusso di debug.  
   
  pceltFetched  
  [in, out] Restituisce il numero di record in `data`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti più record. In caso contrario, verrà restituito un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti più record. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   

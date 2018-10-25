@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925502"
 ---
 # <a name="memory-windows"></a>Finestra Memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ Il **memoria** finestra permette di visualizzare lo spazio di memoria utilizzata
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Per modificare il numero di colonne nella finestra Memoria  
   
-1.  Sulla barra degli strumenti nella parte superiore del **memoria** finestra, individuare il **colonne** elenco.  
+1. Sulla barra degli strumenti nella parte superiore del **memoria** finestra, individuare il **colonne** elenco.  
   
-2.  Nel **colonne** , selezionare il numero di colonne che si desidera visualizzare oppure selezionare **automatico** per l'adattamento per adattarsi alla larghezza della finestra.  
+2. Nel **colonne** , selezionare il numero di colonne che si desidera visualizzare oppure selezionare **automatico** per l'adattamento per adattarsi alla larghezza della finestra.  
   
- Se non si desidera il contenuto del **memoria** finestra da modificare come il programma viene eseguito, è possibile disattivare la valutazione dell'espressione in tempo reale.  
+   Se non si desidera il contenuto del **memoria** finestra da modificare come il programma viene eseguito, è possibile disattivare la valutazione dell'espressione in tempo reale.  
   
 #### <a name="to-toggle-live-evaluation"></a>Per attivare o disattivare la valutazione diretta  
   
-1.  Fare doppio clic il **memoria** finestra.  
+1. Fare doppio clic il **memoria** finestra.  
   
-2.  Nel menu di scelta rapida, fare clic su **Rivaluta automaticamente**.  
+2. Nel menu di scelta rapida, fare clic su **Rivaluta automaticamente**.  
   
-     Se la valutazione diretta è attiva, l'opzione risulterà selezionata e facendo clic su di essa la valutazione diretta verrà disattivata. Se la valutazione diretta non è attiva, l'opzione risulterà deselezionata e facendo clic su di essa verrà attivata.  
+    Se la valutazione diretta è attiva, l'opzione risulterà selezionata e facendo clic su di essa la valutazione diretta verrà disattivata. Se la valutazione diretta non è attiva, l'opzione risulterà deselezionata e facendo clic su di essa verrà attivata.  
   
- È possibile nascondere o visualizzare la barra degli strumenti in cima il **memoria** finestra. Non è possibile accedere alla casella Indirizzo o ad altri strumenti quando la barra degli strumenti è nascosta.  
+   È possibile nascondere o visualizzare la barra degli strumenti in cima il **memoria** finestra. Non è possibile accedere alla casella Indirizzo o ad altri strumenti quando la barra degli strumenti è nascosta.  
   
 #### <a name="to-toggle-the-toolbar"></a>Per attivare o disattivare la barra degli strumenti  
   

@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 988731be4376e1d1e402b3722bed157cc9b655d2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905064"
 ---
 # <a name="remote-debugger-port-assignments"></a>Assegnazioni delle porte del debugger remoto
 Visual Studio Remote Debugger può essere eseguito come applicazione o come servizio in background. Quando viene eseguito come applicazione, usa una porta assegnata per impostazione predefinita, come indicato di seguito:  
 
--   Visual Studio 2017:4022
+- Visual Studio 2017:4022
 
--   Visual Studio 2015: 4020  
+- Visual Studio 2015: 4020  
   
--   Visual Studio 2013: 4018  
+- Visual Studio 2013: 4018  
   
--   Visual Studio 2012: 4016  
+- Visual Studio 2012: 4016  
   
- In altre parole, il numero della porta assegnata al debugger remoto viene incrementato di 2 per ogni versione. È possibile impostare un numero di porta diverso. In una sezione successiva verrà illustrato come impostare i numeri di porta.  
+  In altre parole, il numero della porta assegnata al debugger remoto viene incrementato di 2 per ogni versione. È possibile impostare un numero di porta diverso. In una sezione successiva verrà illustrato come impostare i numeri di porta.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Porta del debugger remoto nei sistemi operativi a 32 bit  
  TCP 4022 (in Visual Studio 2017) è la porta principale, mentre è obbligatorio per tutti gli scenari. Può essere configurata dalla riga di comando o nella finestra del debugger remoto.  
@@ -59,4 +59,4 @@ Visual Studio Remote Debugger può essere eseguito come applicazione o come serv
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug remoto](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

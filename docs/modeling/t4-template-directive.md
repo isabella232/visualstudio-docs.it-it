@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1c36d4d38079a74c27f41829852d3b4e242825d9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2390d71fa445366c62f5225d800f2cd4a2524e95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897199"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 
@@ -74,7 +74,7 @@ hostspecific="true"
 
  Poiché il tipo di questa proprietà dipende dal tipo di host, è utile solo se si scrive un modello di testo che funziona solo con un host specifico. È applicabile alla [modelli della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ma non [modelli in fase di esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Quando `hostspecific` viene `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
+ Quando `hostspecific` viene `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile usare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -93,7 +93,6 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 #>
 Content of myFile is:
 <#= myFile #>
-
 ```
 
  Se si utilizzano insieme gli attributi `inherits` e `hostspecific`, specificare host="trueFromBase" nella classe derivata e host="true" nella classe base. Ciò impedisce una doppia definizione della proprietà `Host` nel codice generato.
@@ -121,7 +120,6 @@ Squares of numbers:
 <#
   Next number
 #>
-
 ```
 
 ## <a name="inherits-attribute"></a>attributo Inherits
@@ -150,7 +148,6 @@ This is the common footer.
   protected virtual void SpecificFragment1() { }
   protected virtual void SpecificFragment2() { }
 #>
-
 ```
 
  Modello di testo (pre-elaborato) della fase di esecuzione DerivedTemplate1.tt:
@@ -175,7 +172,6 @@ protected override void SpecificFragment2()
 <#+
 }
 #>
-
 ```
 
  Codice dell'applicazione per richiamare DerivedTemplate1:

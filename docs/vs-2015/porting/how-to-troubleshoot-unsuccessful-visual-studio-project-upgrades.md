@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911603"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedura: Risolvere i problemi relativi agli aggiornamenti di progetti Visual Studio con esito negativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ In alcuni casi Visual Studio completamente non può convertire un progetto da un
   
 #### <a name="to-resolve-incorrect-references"></a>Per risolvere i riferimenti non corretti  
   
-1.  Aprire il file di progetto in un editor di testo.  
+1. Aprire il file di progetto in un editor di testo.  
   
-2.  Aprire le proprietà del progetto.  
+2. Aprire le proprietà del progetto.  
   
-3.  Selezionare i valori corretti **Framework di destinazione** valore. In alternativa, è possibile modificare il valore della `<TargetFrameworkVersion>` elemento direttamente nel file di progetto.  
+3. Selezionare i valori corretti **Framework di destinazione** valore. In alternativa, è possibile modificare il valore della `<TargetFrameworkVersion>` elemento direttamente nel file di progetto.  
   
- Se si vuole che il progetto per l'esecuzione in aggiornati [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione, è necessario aggiornare i riferimenti del progetto e aggiornare anche eventuali `Imports` o `Using` istruzioni che chiama i riferimenti. Se il progetto viene caricato nell'IDE, è possibile aggiornare i riferimenti utilizzando **Esplora soluzioni** o nella **gestione riferimenti** nella finestra di dialogo.  
+   Se si vuole che il progetto per l'esecuzione in aggiornati [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione, è necessario aggiornare i riferimenti del progetto e aggiornare anche eventuali `Imports` o `Using` istruzioni che chiama i riferimenti. Se il progetto viene caricato nell'IDE, è possibile aggiornare i riferimenti utilizzando **Esplora soluzioni** o nella **gestione riferimenti** nella finestra di dialogo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [/ Aggiornamento (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   

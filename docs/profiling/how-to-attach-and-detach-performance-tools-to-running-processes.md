@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920934"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedura: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione
 Il profiler può essere usato per la connessione o la disconnessione da un processo in esecuzione per facilitare la raccolta e il campionamento dei dati relativi alle prestazioni. È possibile usare questo metodo per la profilatura di un processo quando si vuole evitare di raccogliere dati sul tempo di caricamento dell'applicazione o per monitorare le prestazioni di un processo dopo il raggiungimento di uno stato specifico.  
@@ -33,13 +33,13 @@ Il profiler può essere usato per la connessione o la disconnessione da un proce
   
  I processi disponibili per la profilatura dipendono dalle autorizzazioni di accesso a livello utente impostate dall'amministratore del computer. Un account utente può, ad esempio, disporre dell'autorizzazione per uno dei seguenti elementi:  
   
--   Funzionalità di profilatura avanzate, quando l'amministratore ha impostato l'avvio del driver e del servizio.  
+- Funzionalità di profilatura avanzate, quando l'amministratore ha impostato l'avvio del driver e del servizio.  
   
--   Solo profilatura dei campioni (utenti di dominio).  
+- Solo profilatura dei campioni (utenti di dominio).  
   
--   Accesso negato alla profilatura per tutti gli utenti.  
+- Accesso negato alla profilatura per tutti gli utenti.  
   
- Per altre informazioni, vedere [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Per altre informazioni, vedere [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Per connettersi a un processo in esecuzione  
   

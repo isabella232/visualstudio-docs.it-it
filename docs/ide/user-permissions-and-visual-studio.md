@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627315"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885759"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
 
@@ -31,7 +31,7 @@ Per motivi di sicurezza, è consigliabile eseguire Visual Studio come utente nor
 Un account utente normale consente di possibile eseguire quasi tutte le funzioni dell'IDE di Visual Studio. Sono necessarie autorizzazioni di amministratore per completare le attività seguenti:
 
 |Area|Attività|Per altre informazioni|
-|----------|----------|--------------------------|
+|----------|----------| - |
 |Installazione|Installare Visual Studio.|[Installare Visual Studio](../install/install-visual-studio.md)|
 ||Installare, aggiornare o rimuovere contenuto della Guida locale.|[Installare e gestire il contenuto della Guida locale](../ide/install-and-manage-local-content.md)|
 |Casella degli strumenti|Aggiungere controlli COM classici alla **casella degli strumenti**.|[Casella degli strumenti](../ide/reference/toolbox.md)|

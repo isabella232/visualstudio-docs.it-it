@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::EnumPorts | Documenti Microsoft
+title: IDebugPortSupplier2::EnumPorts | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7eef32c93ad63849f2ab40f0c444fd74e30d85a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43eb1171b11dd3afadee45b222f49e7a6b30f4a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901762"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
-Recupera un elenco di tutte le porte fornito da un fornitore di porta.  
+Recupera un elenco di tutte le porte fornite da un fornitore di porte.  
   
 ## <a name="syntax"></a>Sintassi  
   

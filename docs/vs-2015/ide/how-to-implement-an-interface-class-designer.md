@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bbe5eec0a512dafd6689f1420e721d6a2a63e1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a196f49765623966a48b07eef3abe3f8ca7e5a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900540"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Procedura: implementare un'interfaccia (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ In Progettazione classi è possibile implementare un'interfaccia nel diagramma c
   
 ### <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Per implementare un'interfaccia tracciando una linea di ereditarietà  
   
-1.  Nel diagramma classi visualizzare l'interfaccia e la classe che implementa l'interfaccia.  
+1. Nel diagramma classi visualizzare l'interfaccia e la classe che implementa l'interfaccia.  
   
-2.  Tracciare una linea di ereditarietà dalla classe e all'interfaccia.  
+2. Tracciare una linea di ereditarietà dalla classe e all'interfaccia.  
   
-     Viene visualizzato un simbolo di interfaccia collegato alla classe, mentre un'etichetta con il nome dell'interfaccia identifica la relazione di ereditarietà. Visual Studio genera stub per tutti i membri di interfaccia.  
+    Viene visualizzato un simbolo di interfaccia collegato alla classe, mentre un'etichetta con il nome dell'interfaccia identifica la relazione di ereditarietà. Visual Studio genera stub per tutti i membri di interfaccia.  
   
- Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi (Progettazione classi)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+   Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi (Progettazione classi)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-implement-an-interface-from-the-class-view-window"></a>Per implementare un'interfaccia dalla finestra Visualizzazione classi  
   

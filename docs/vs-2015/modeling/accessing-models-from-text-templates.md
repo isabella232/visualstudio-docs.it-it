@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919858"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accesso ai modelli da modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Usando i modelli di testo, è possibile creare file di report, file di codice so
   
  Per accedere a un modello da un modello di testo:  
   
--   Impostare la proprietà di ereditarietà della direttiva del modello per <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Ciò fornisce accesso alla Store.  
+- Impostare la proprietà di ereditarietà della direttiva del modello per <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Ciò fornisce accesso alla Store.  
   
--   Specificare i processori di direttiva per il linguaggio DSL che si desidera accedere. Ciò consente di caricare gli assembly per il linguaggio DSL in modo che è possibile usare le classi di dominio, le proprietà e relazioni nel codice del modello di testo. Permette inoltre di caricare il file del modello specificato.  
+- Specificare i processori di direttiva per il linguaggio DSL che si desidera accedere. Ciò consente di caricare gli assembly per il linguaggio DSL in modo che è possibile usare le classi di dominio, le proprietà e relazioni nel codice del modello di testo. Permette inoltre di caricare il file del modello specificato.  
   
- Oggetto `.tt` file simili all'esempio seguente viene creato nel progetto di debug quando si crea un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soluzione del modello DSL del linguaggio minimo.  
+  Oggetto `.tt` file simili all'esempio seguente viene creato nel progetto di debug quando si crea un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soluzione del modello DSL del linguaggio minimo.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  Si noti che:  
   
-1.  Il `filename` e `validation` parametri sono separati da ";" e non deve essere presente alcun altri separatori o spazi.  
+1. Il `filename` e `validation` parametri sono separati da ";" e non deve essere presente alcun altri separatori o spazi.  
   
-2.  L'elenco di categorie di convalida determina quali metodi di convalida verranno eseguiti. Più categorie devono essere separate da "&#124;" e non deve essere presente alcun altri separatori o spazi.  
+2. L'elenco di categorie di convalida determina quali metodi di convalida verranno eseguiti. Più categorie devono essere separate da "&#124;" e non deve essere presente alcun altri separatori o spazi.  
   
- Se viene rilevato un errore, verrà segnalato nella finestra degli errori e il file di risultati conterrà un messaggio di errore.  
+   Se viene rilevato un errore, verrà segnalato nella finestra degli errori e il file di risultati conterrà un messaggio di errore.  
   
 ##  <a name="Multiple"></a> L'accesso a più modelli da un modello di testo  
   

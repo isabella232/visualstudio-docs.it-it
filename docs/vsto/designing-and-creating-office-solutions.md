@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ba120513d188f0a945ff18331b37062c08018f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917181"
 ---
 # <a name="design-and-create-office-solutions"></a>Progettare e creare soluzioni Office
   Visual Studio fornisce modelli di progetto che è possibile utilizzare per creare diversi tipi di soluzioni Office. In questa sezione della documentazione vengono descritti i modelli di progetto e viene fornito materiale sussidiario sulla creazione di progetti di Office. Per informazioni su come implementare le personalizzazioni dell'interfaccia utente e del codice dopo aver creato il progetto, vedere [soluzioni Office sviluppare](../vsto/developing-office-solutions.md).  
@@ -41,19 +41,19 @@ ms.locfileid: "35672711"
 ## <a name="choose-a-net-framework-version"></a>Scegliere una versione di .NET Framework  
  Dopo aver selezionato il tipo di progetto che meglio soddisfa le proprie esigenze, è possibile scegliere quale versione di .NET Framework utilizzare nel processo di sviluppo. È possibile destinare le seguenti versioni di .NET Framework nei progetti di Office:  
   
--   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
   
--   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+- [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
--   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+- [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
   
- La versione di .NET Framework scelto per il progetto è necessario nei computer degli utenti finali per l'esecuzione della soluzione. Ad esempio, se il progetto è destinato il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] è necessario nei computer degli utenti finali. In questo esempio, la soluzione non verrà eseguita se solo .NET Framework 3.5 è installato nei computer degli utenti finali.  
+  La versione di .NET Framework scelto per il progetto è necessario nei computer degli utenti finali per l'esecuzione della soluzione. Ad esempio, se il progetto è destinato il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] è necessario nei computer degli utenti finali. In questo esempio, la soluzione non verrà eseguita se solo .NET Framework 3.5 è installato nei computer degli utenti finali.  
   
- Se si esegue la migrazione di un progetto di componente aggiuntivo VSTO destinato a .NET Framework 3.5, Visual Studio modifica il framework di destinazione del progetto impostandolo su [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva, a seconda della versione di Office installata.  
+  Se si esegue la migrazione di un progetto di componente aggiuntivo VSTO destinato a .NET Framework 3.5, Visual Studio modifica il framework di destinazione del progetto impostandolo su [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva, a seconda della versione di Office installata.  
   
- Dopo la modifica del framework di destinazione, tuttavia, potrebbe essere necessario modificare parte del codice nel progetto se vengono utilizzate alcune funzionalità. Per altre informazioni su come modificare il framework di destinazione, vedere [procedura: destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Per altre informazioni sulle modifiche potrebbe essere necessario apportare al progetto, vedere [soluzioni di Office di eseguire la migrazione a .NET Framework 4 o versioni successive](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+  Dopo la modifica del framework di destinazione, tuttavia, potrebbe essere necessario modificare parte del codice nel progetto se vengono utilizzate alcune funzionalità. Per altre informazioni su come modificare il framework di destinazione, vedere [procedura: destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Per altre informazioni sulle modifiche potrebbe essere necessario apportare al progetto, vedere [soluzioni di Office di eseguire la migrazione a .NET Framework 4 o versioni successive](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
- Se Visual Studio modifica .NET Framework di destinazione per il progetto e si usa ClickOnce per distribuire la soluzione, assicurarsi di selezionare anche la versione corrispondente di .NET Framework nel **prerequisiti** nella finestra di dialogo. Questa selezione non viene modificata automaticamente quando si modifica il framework di destinazione per il progetto. Per altre informazioni, vedere [procedura: installare i prerequisiti nel computer dell'utente finale per l'esecuzione di soluzioni Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Se Visual Studio modifica .NET Framework di destinazione per il progetto e si usa ClickOnce per distribuire la soluzione, assicurarsi di selezionare anche la versione corrispondente di .NET Framework nel **prerequisiti** nella finestra di dialogo. Questa selezione non viene modificata automaticamente quando si modifica il framework di destinazione per il progetto. Per altre informazioni, vedere [procedura: installare i prerequisiti nel computer dell'utente finale per l'esecuzione di soluzioni Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  Non è possibile usare .NET Framework 3.5 o versioni precedenti nei progetti Office creati tramite [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. I progetti di Office create mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] richiedono funzionalità che sono state introdotte in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  

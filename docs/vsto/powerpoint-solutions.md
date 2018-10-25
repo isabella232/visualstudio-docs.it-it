@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906559"
 ---
 # <a name="powerpoint-solutions"></a>Soluzioni PowerPoint
   Visual Studio fornisce modelli di progetto che è possibile usare per creare componenti aggiuntivi VSTO per Microsoft Office PowerPoint. È possibile usare i componenti aggiuntivi VSTO per automatizzare PowerPoint, estenderne le funzionalità o personalizzarne l'interfaccia utente.  
@@ -42,15 +42,15 @@ ms.locfileid: "35671947"
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>Automazione di PowerPoint usando il modello a oggetti PowerPoint  
  Il modello a oggetti di PowerPoint espone molti tipi che è possibile usare per automatizzare PowerPoint. Questi tipi consentono di scrivere il codice per eseguire attività comuni:  
   
--   Creare e formattare presentazioni a livello di codice.  
+- Creare e formattare presentazioni a livello di codice.  
   
--   Aggiungere o rimuovere diapositive dalle presentazioni.  
+- Aggiungere o rimuovere diapositive dalle presentazioni.  
   
--   Aggiungere o modificare forme su una diapositiva.  
+- Aggiungere o modificare forme su una diapositiva.  
   
- Per accedere a modello a oggetti di PowerPoint da un componente aggiuntivo VSTO, usare il `Application` campo il `ThisAddIn` classe nel progetto. Il campo `Application` restituisce un oggetto <xref:Microsoft.Office.Interop.PowerPoint.Application> che rappresenta l'istanza corrente di PowerPoint. Per altre informazioni, vedere [programma VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+  Per accedere a modello a oggetti di PowerPoint da un componente aggiuntivo VSTO, usare il `Application` campo il `ThisAddIn` classe nel progetto. Il campo `Application` restituisce un oggetto <xref:Microsoft.Office.Interop.PowerPoint.Application> che rappresenta l'istanza corrente di PowerPoint. Per altre informazioni, vedere [programma VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
- Quando si effettuano chiamate nel modello a oggetti di PowerPoint, si USANO i tipi forniti nell'assembly di interoperabilità primario per PowerPoint. L'assembly di interoperabilità primario agisce da ponte tra il codice gestito nel componente aggiuntivo VSTO e il modello a oggetti COM in PowerPoint. Tutti i tipi dell'assembly di interoperabilità primario di PowerPoint sono definiti nello spazio dei nomi <xref:Microsoft.Office.Interop.PowerPoint> . Per altre informazioni sugli assembly di interoperabilità primari, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).  
+  Quando si effettuano chiamate nel modello a oggetti di PowerPoint, si USANO i tipi forniti nell'assembly di interoperabilità primario per PowerPoint. L'assembly di interoperabilità primario agisce da ponte tra il codice gestito nel componente aggiuntivo VSTO e il modello a oggetti COM in PowerPoint. Tutti i tipi dell'assembly di interoperabilità primario di PowerPoint sono definiti nello spazio dei nomi <xref:Microsoft.Office.Interop.PowerPoint> . Per altre informazioni sugli assembly di interoperabilità primari, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).  
   
 ##  <a name="WordOMDocumentation"></a> Uso della documentazione sul modello a oggetti di PowerPoint  
  Per informazioni complete sul modello a oggetti di PowerPoint, è possibile usare il riferimento di assembly di interoperabilità primario (PIA) di PowerPoint e il riferimento del modello a oggetti VBA.  
@@ -80,7 +80,7 @@ ms.locfileid: "35671947"
  [Procedura dettagliata: Creare un componente aggiuntivo di VSTO per PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [Introduzione a programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Panoramica dello sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   

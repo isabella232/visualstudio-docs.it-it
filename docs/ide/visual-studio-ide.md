@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907521"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Benvenuti all'IDE di Visual Studio
 
@@ -94,7 +94,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
 - [Vai a definizione](../ide/go-to-and-peek-definition.md)
 
-  La funzionalità Vai a definizione consente di passare direttamente alla posizione in cui viene definita una funzione o un tipo.
+   La funzionalità Vai a definizione consente di passare direttamente alla posizione in cui viene definita una funzione o un tipo.
 
    ![Vai a definizione](../ide/media/go-to-definition-menu.png)
 
@@ -112,14 +112,14 @@ In questa sezione viene descritta in dettaglio la procedura per creare un nuovo 
 
    ![File > Nuovo progetto sulla barra dei menu](../ide/media/file-new-project-menu.png)
 
-1. Viene visualizzata la finestra di dialogo **Nuovo progetto** con vari *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto. Scegliere la categoria **.NET Core** in **Visual C#** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
+2. Viene visualizzata la finestra di dialogo **Nuovo progetto** con vari *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto. Scegliere la categoria **.NET Core** in **Visual C#** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
    ![Modello di app .NET Core](../ide/media/overview-new-project-dialog.png)
 
    Visual Studio crea il progetto. È una semplice applicazione "Hello World" che chiama il metodo <xref:System.Console.WriteLine?displayProperty=nameWithType> per visualizzare il valore letterale stringa "Hello World!" nella finestra della console (output del programma).
 
-  > [!NOTE]
-  > Se non viene visualizzata la categoria **.NET Core** è necessario installare il carico di lavoro **Sviluppo multipiattaforma .NET Core**. A tale scopo, scegliere il collegamento **Apri il programma di installazione di Visual Studio** in basso a sinistra nella finestra di dialogo **Nuovo progetto**. Dopo l'apertura del programma di installazione di Visual Studio, scorrere e selezionare il carico di lavoro **Sviluppo multipiattaforma .NET Core** e quindi scegliere **Modifica**.
+   > [!NOTE]
+   > Se non viene visualizzata la categoria **.NET Core** è necessario installare il carico di lavoro **Sviluppo multipiattaforma .NET Core**. A tale scopo, scegliere il collegamento **Apri il programma di installazione di Visual Studio** in basso a sinistra nella finestra di dialogo **Nuovo progetto**. Dopo l'apertura del programma di installazione di Visual Studio, scorrere e selezionare il carico di lavoro **Sviluppo multipiattaforma .NET Core** e quindi scegliere **Modifica**.
 
    Il risultato visualizzato a breve dovrebbe essere simile al seguente:
 
@@ -127,21 +127,21 @@ In questa sezione viene descritta in dettaglio la procedura per creare un nuovo 
 
    Il codice C# per l'applicazione viene visualizzato nella finestra dell'editor che occupa la maggior parte dello spazio. Si noti che il testo viene colorato automaticamente per indicare le diverse parti del codice, ad esempio parole chiave e tipi. Le piccole linee tratteggiate verticali nel codice indicano inoltre le parentesi graffe corrispondenti e i numeri di riga facilitano l'individuazione del codice in un secondo momento. È possibile scegliere i piccoli segni meno racchiusi in un riquadro per comprimere o espandere blocchi di codice. Questa funzionalità per la strutturazione del codice consente di nascondere il codice non necessario, migliorando la leggibilità del contenuto visualizzato sullo schermo. I file del progetto sono elencati sul lato destro in una finestra denominata **Esplora soluzioni**.
 
-  ![IDE di Visual Studio con caselle rosse](../ide/media/overview-ide-console-app-red-boxes.png)
+   ![IDE di Visual Studio con caselle rosse](../ide/media/overview-ide-console-app-red-boxes.png)
 
-  Sono disponibili altri menu e finestre degli strumenti, ma per il momento si procederà con la creazione del programma.
+   Sono disponibili altri menu e finestre degli strumenti, ma per il momento si procederà con la creazione del programma.
 
-1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **CTRL**+**F5**.
+3. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **CTRL**+**F5**.
 
-  ![Menu Debug > Avvia senza eseguire debug](../ide/media/overview-start-without-debugging.png)
+   ![Menu Debug > Avvia senza eseguire debug](../ide/media/overview-start-without-debugging.png)
 
-  Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
+   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
-  ![Finestra della console](../ide/media/overview-console-window.png)
+   ![Finestra della console](../ide/media/overview-console-window.png)
 
-1. Per chiudere la finestra della console, premere un tasto qualsiasi.
+4. Per chiudere la finestra della console, premere un tasto qualsiasi.
 
-1. A questo punto verrà aggiunto ulteriore codice per l'app. Aggiungere il codice C# seguente prima della riga `Console.WriteLine("Hello World!");`:
+5. A questo punto verrà aggiunto ulteriore codice per l'app. Aggiungere il codice C# seguente prima della riga `Console.WriteLine("Hello World!");`:
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -150,21 +150,21 @@ In questa sezione viene descritta in dettaglio la procedura per creare un nuovo 
 
    Il codice visualizza **What is your name?** nella finestra della console e attende che l'utente immetta testo seguito da **INVIO**.
 
-1. Modificare la riga `Console.WriteLine("Hello World!");` con il codice seguente:
+6. Modificare la riga `Console.WriteLine("Hello World!");` con il codice seguente:
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire nuovamente l'app selezionando **Debug** > **Avvia senza eseguire debug** o premendo **CTRL**+**F5**.
+7. Eseguire nuovamente l'app selezionando **Debug** > **Avvia senza eseguire debug** o premendo **CTRL**+**F5**.
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
-1. Immettere il nome nella finestra della console e premere **INVIO**.
+8. Immettere il nome nella finestra della console e premere **INVIO**.
 
    ![Input nella finestra della console](media/overview-console-input.png)
 
-1. Premere un tasto qualsiasi per chiudere la finestra della console e arrestare l'esecuzione del programma.
+9. Premere un tasto qualsiasi per chiudere la finestra della console e arrestare l'esecuzione del programma.
 
 ## <a name="use-refactoring-and-intellisense"></a>Usare refactoring ed esplorazione
 
@@ -174,11 +174,11 @@ In primo luogo, rinominare la variabile `name`:
 
 1. Fare doppio clic sulla variabile `name` per selezionarla.
 
-1. Digitare il nuovo nome per la variabile, **username**.
+2. Digitare il nuovo nome per la variabile, **username**.
 
    Si noti che viene visualizzata una casella grigia intorno a variabile e una lampadina viene visualizzata nel margine.
 
-1. Selezionare l'icona lampadina per visualizzare le [azioni rapide](quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'**.
+3. Selezionare l'icona lampadina per visualizzare le [azioni rapide](quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'**.
 
    ![Rinominare l'azione in Visual Studio](media/rename-quick-action.png)
 
@@ -186,15 +186,15 @@ In primo luogo, rinominare la variabile `name`:
 
    ![Gif animata che mostra il refactoring di ridenominazione in Visual Studio](media/rename-refactoring.gif)
 
-1. Si esamini ora IntelliSense. Sotto la riga`Console.WriteLine($"\nHello {username}!");` digitare **DateTime now = DateTime.**.
+4. Si esamini ora IntelliSense. Sotto la riga`Console.WriteLine($"\nHello {username}!");` digitare **DateTime now = DateTime.**.
 
    Una casella visualizza i membri della classe <xref:System.DateTime>. In una casella separata viene visualizzata anche la descrizione del membro correntemente selezionato.
 
    ![Membri dell'elenco di IntelliSense in Visual Studio](media/intellisense-list-members.png)
 
-1. Selezionare il membro denominato **Now** che è una proprietà della classe facendo doppio clic su di esso oppure premendo **TAB**. Completare la riga di codice aggiungendo un punto e virgola **;**.
+5. Selezionare il membro denominato **Now** che è una proprietà della classe facendo doppio clic su di esso oppure premendo **TAB**. Completare la riga di codice aggiungendo un punto e virgola **;**.
 
-1. Nella parte sottostante digitare o copiare le righe di codice seguenti:
+6. Nella parte sottostante digitare o copiare le righe di codice seguenti:
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -206,17 +206,17 @@ In primo luogo, rinominare la variabile `name`:
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> è leggermente diverso da <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> in quanto non aggiunge un terminatore di riga dopo la stampa. Ciò significa che la parte successiva del testo che viene inviata all'output verrà stampata sulla stessa riga. È possibile passare il mouse su ognuno di questi metodi nel codice per visualizzarne la descrizione.
 
-1. Successivamente, verrà nuovamente usato il refactoring per rendere più breve il codice. Fare clic sulla variabile `now` nella riga `DateTime now = DateTime.Now;`.
+7. Successivamente, verrà nuovamente usato il refactoring per rendere più breve il codice. Fare clic sulla variabile `now` nella riga `DateTime now = DateTime.Now;`.
 
    Viene visualizzata una piccola icona cacciavite nel margine della riga.
 
-1. Fare clic sull'icona cacciavite per visualizzare i suggerimenti disponibili in Visual Studio. In questo caso è visualizzato il refactoring [Variabile temporanea inline](reference/inline-temporary-variable.md) per rimuovere una riga di codice senza modificare il comportamento complessivo:
+8. Fare clic sull'icona cacciavite per visualizzare i suggerimenti disponibili in Visual Studio. In questo caso è visualizzato il refactoring [Variabile temporanea inline](reference/inline-temporary-variable.md) per rimuovere una riga di codice senza modificare il comportamento complessivo:
 
    ![Refactoring Variabile temporanea Inline in Visual Studio](media/inline-temporary-variable-refactoring.png)
 
-1. Fare clic su **Variabile temporanea inline** per effettuare il refactoring del codice.
+9. Fare clic su **Variabile temporanea inline** per effettuare il refactoring del codice.
 
-1. Eseguire nuovamente il programma premendo **CTRL**+**F5**. L'output è simile al seguente:
+10. Eseguire nuovamente il programma premendo **CTRL**+**F5**. L'output è simile al seguente:
 
    ![Finestra della console con output del programma](../ide/media/overview-console-final.png)
 
@@ -252,7 +252,7 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 1. Dalla barra dei menu scegliere **Strumenti** > **Opzioni** per aprire la finestra di dialogo **Opzioni**.
 
-1. Nella pagina delle opzioni **Ambiente** > **Generale** modificare la selezione del **Tema colori** in **Scuro** e quindi scegliere **OK**.
+2. Nella pagina delle opzioni **Ambiente** > **Generale** modificare la selezione del **Tema colori** in **Scuro** e quindi scegliere **OK**.
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 

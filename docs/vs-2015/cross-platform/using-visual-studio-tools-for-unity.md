@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b99999c3a075b6e79f2b98fc70cf50a9d01a84d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892831"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso di Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 ##### <a name="to-create-empty-monobehavior-method-definitions-by-using-the-monobehavior-wizard"></a>Per creare definizioni vuote di metodi MonoBehaviour con la procedura guidata MonoBehaviour  
   
-1.  In Visual Studio posizionare il cursore nel punto in cui si vogliono inserire i metodi e quindi premere **CTRL+MAIUSC+M** per avviare la procedura guidata MonoBehaviour. Se invece si vogliono inserire i nuovi metodi dopo che ne è già stato implementato uno, è possibile specificarlo in un secondo momento. In tal caso, è sufficiente premere **CTRL+MAIUSC+M**.  
+1. In Visual Studio posizionare il cursore nel punto in cui si vogliono inserire i metodi e quindi premere **CTRL+MAIUSC+M** per avviare la procedura guidata MonoBehaviour. Se invece si vogliono inserire i nuovi metodi dopo che ne è già stato implementato uno, è possibile specificarlo in un secondo momento. In tal caso, è sufficiente premere **CTRL+MAIUSC+M**.  
   
-2.  Selezionare i metodi di cui eseguire l'overload. In **Selezionare i metodi da creare** nella finestra **Create script methods** (Crea metodi script) selezionare la casella di controllo accanto al nome dei singoli metodi di cui eseguire l'overload.  
+2. Selezionare i metodi di cui eseguire l'overload. In **Selezionare i metodi da creare** nella finestra **Create script methods** (Crea metodi script) selezionare la casella di controllo accanto al nome dei singoli metodi di cui eseguire l'overload.  
   
-3.  Verificare che la versione del framework visualizzata nell'elenco a discesa **Versione framework** corrisponda a quella usata. Se è diversa, modificare il valore dell'elenco a discesa selezionando la versione da usare.  
+3. Verificare che la versione del framework visualizzata nell'elenco a discesa **Versione framework** corrisponda a quella usata. Se è diversa, modificare il valore dell'elenco a discesa selezionando la versione da usare.  
   
-4.  Scegliere dove verranno inseriti i metodi. Per impostazione predefinita, i metodi vengono inseriti in corrispondenza della posizione del cursore. Per inserirli in un punto diverso, è possibile scegliere di inserirli dopo tutti gli eventuali metodi implementati nella classe. Per scegliere una di queste posizioni, modificare il valore dell'elenco a discesa **Punto di inserimento** specificando la posizione voluta.  
+4. Scegliere dove verranno inseriti i metodi. Per impostazione predefinita, i metodi vengono inseriti in corrispondenza della posizione del cursore. Per inserirli in un punto diverso, è possibile scegliere di inserirli dopo tutti gli eventuali metodi implementati nella classe. Per scegliere una di queste posizioni, modificare il valore dell'elenco a discesa **Punto di inserimento** specificando la posizione voluta.  
   
-5.  Se si vuole che la procedura guidata generi commenti per i metodi selezionati, selezionare la casella di controllo **Genera commenti del metodo**. Questi commenti vengono usati per facilitare l'individuazione del punto in cui viene chiamato il metodo e chiarirne le responsabilità generali.  
+5. Se si vuole che la procedura guidata generi commenti per i metodi selezionati, selezionare la casella di controllo **Genera commenti del metodo**. Questi commenti vengono usati per facilitare l'individuazione del punto in cui viene chiamato il metodo e chiarirne le responsabilità generali.  
   
-6.  Fare clic su **OK** per chiudere la procedura guidata e inserire i metodi nel codice.  
+6. Fare clic su **OK** per chiudere la procedura guidata e inserire i metodi nel codice.  
   
- La procedura guidata MonoBehaviour è particolarmente utile se non si conoscono ancora bene le API di Unity oppure se è necessario eseguire l'overload di un metodo poco noto. Una volta acquisita familiarità con le API di Unity, è possibile usare la procedura guidata MonoBehaviour rapidi per creare rapidamente metodi già noti.  
+   La procedura guidata MonoBehaviour è particolarmente utile se non si conoscono ancora bene le API di Unity oppure se è necessario eseguire l'overload di un metodo poco noto. Una volta acquisita familiarità con le API di Unity, è possibile usare la procedura guidata MonoBehaviour rapidi per creare rapidamente metodi già noti.  
   
 #### <a name="quick-monobehavior-scripting-wizard"></a>Procedura guidata MonoBehaviour rapidi di Unity per la creazione di script  
  Una volta acquisita familiarità con le API di Unity, è possibile usare la procedura guidata MonoBehaviour rapidi per implementare metodi di overload ancor più rapidamente. Tramite questa procedura guidata è possibile specificare un unico metodo che viene inserito senza commenti in corrispondenza della posizione del cursore.  
@@ -80,11 +80,11 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 ##### <a name="to-view-the-unity-project-explorer"></a>Per visualizzare Esplora progetti Unity  
   
--   Nel menu principale di Visual Studio scegliere **Visualizza**, **Esplora progetti Unity**. Tastiera: **ALT+MAIUSC+E**  
+- Nel menu principale di Visual Studio scegliere **Visualizza**, **Esplora progetti Unity**. Tastiera: **ALT+MAIUSC+E**  
   
-     ![Visualizzare la finestra Esplora progetti Unity.](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
+   ![Visualizzare la finestra Esplora progetti Unity.](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
   
- Esplora progetti Unity consente di visualizzare tutti i file e le directory di progetto Unity in modo analogo all'editor di Unity. Si tratta di una funzione diversa rispetto all'esplorazione degli script Unity con Esplora soluzioni, in cui sono presenti solo i file di script che vengono visualizzati in base all'organizzazione definita nei progetti e nella soluzione generata da Visual Studio Tools per Unity. Particolarmente nei progetti di grandi dimensioni è spesso più facile individuare lo script da modificare con Esplora progetti Unity, che consente inoltre di modificare altri tipi di file, ad esempio file di configurazione basati su testo, in Visual Studio senza aggiungerli a uno dei progetti nella soluzione Visual Studio.  
+  Esplora progetti Unity consente di visualizzare tutti i file e le directory di progetto Unity in modo analogo all'editor di Unity. Si tratta di una funzione diversa rispetto all'esplorazione degli script Unity con Esplora soluzioni, in cui sono presenti solo i file di script che vengono visualizzati in base all'organizzazione definita nei progetti e nella soluzione generata da Visual Studio Tools per Unity. Particolarmente nei progetti di grandi dimensioni è spesso più facile individuare lo script da modificare con Esplora progetti Unity, che consente inoltre di modificare altri tipi di file, ad esempio file di configurazione basati su testo, in Visual Studio senza aggiungerli a uno dei progetti nella soluzione Visual Studio.  
   
 ### <a name="unity-error-list"></a>Elenco errori di Unity  
  È possibile visualizzare i messaggi della console Unity all'interno di Visual Studio quando questo è connesso a un'istanza di Unity. Sono inclusi anche errori e avvisi di Unity. I messaggi vengono visualizzati nella finestra **Elenco errori** di Visual Studio; in particolare, i messaggi di errore di Unity vengono visualizzati nella scheda **Errori**, i messaggi di avviso nella scheda **Avvisi** e gli altri messaggi, ad esempio quelli inviati tramite l'API Debug.Log di Unity, nella scheda **Messaggi**.  
@@ -149,20 +149,20 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Per abilitare il debug di script in un lettore Unity  
   
--   Verificare che per la build di sviluppo in fase di creazione sia abilitato il debug degli script. Nelle impostazioni di compilazione del progetto Unity selezionare le caselle di controllo **Development Build** (Build di sviluppo) e **Script Debugging** (Debug di script).  
+- Verificare che per la build di sviluppo in fase di creazione sia abilitato il debug degli script. Nelle impostazioni di compilazione del progetto Unity selezionare le caselle di controllo **Development Build** (Build di sviluppo) e **Script Debugging** (Debug di script).  
   
- ![Configurare le impostazioni di compilazione Unity per il debug.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+  ![Configurare le impostazioni di compilazione Unity per il debug.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
- In più, per eseguire il debug di un'app Unity in esecuzione nel **lettore Web Unity**, è anche necessario configurarlo per l'uso del **canale della versione di sviluppo**.  
+  In più, per eseguire il debug di un'app Unity in esecuzione nel **lettore Web Unity**, è anche necessario configurarlo per l'uso del **canale della versione di sviluppo**.  
   
 ##### <a name="to-configure-the-development-release-channel-in-unity-web-player"></a>Per configurare il canale della versione di sviluppo nel lettore Web Unity  
   
--   Nel menu di scelta rapida del lettore Web Unity scegliere **Release Channel** (Canale versione) e verificare che l'opzione **Development** (Sviluppo) sia abilitata.  
+- Nel menu di scelta rapida del lettore Web Unity scegliere **Release Channel** (Canale versione) e verificare che l'opzione **Development** (Sviluppo) sia abilitata.  
   
-    > [!IMPORTANT]
-    >  In Unity 4.2 e versioni successive la voce di menu contestuale **Release Channel** (Canale versione) è disponibile solo nel menu contestuale del lettore Web quando si apre il menu tenendo premuto **ALT**. Se il lettore Web viene eseguito in Mac OS X, premere invece **Opzione**.  
+  > [!IMPORTANT]
+  >  In Unity 4.2 e versioni successive la voce di menu contestuale **Release Channel** (Canale versione) è disponibile solo nel menu contestuale del lettore Web quando si apre il menu tenendo premuto **ALT**. Se il lettore Web viene eseguito in Mac OS X, premere invece **Opzione**.  
   
- Verificare infine di essere connessi all'istanza di Unity di cui eseguire il debug. Per informazioni su come eseguire questa operazione, vedere la sezione [Connessione di Visual Studio a Unity](#connecting-visual-studio-to-unity).  
+  Verificare infine di essere connessi all'istanza di Unity di cui eseguire il debug. Per informazioni su come eseguire questa operazione, vedere la sezione [Connessione di Visual Studio a Unity](#connecting-visual-studio-to-unity).  
   
 ### <a name="debugging-a-dll-in-your-unity-project"></a>Debug di una DLL nel progetto Unity  
  Molti sviluppatori Unity scrivono componenti di codice sotto forma di DLL esterne in modo da facilitare la condivisione della funzionalità sviluppata con altri progetti. Visual Studio Tools per Unity semplifica il debug del codice in queste DLL con altro codice del progetto Unity.  
@@ -174,23 +174,23 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 ##### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Per eseguire il debug di un progetto di DLL gestita usato nel progetto Unity  
   
-1.  Aggiungere il progetto di DLL esistente alla soluzione di Visual Studio generata da Visual Studio Tools per Unity. Può capitare meno frequentemente di avviare un nuovo progetto di DLL gestita per contenere i componenti di codice nel progetto Unity. In questo caso, è possibile aggiungere un nuovo progetto di DLL gestita alla soluzione Visual Studio. Per altre informazioni sull'aggiunta di un progetto nuovo o esistente a una soluzione, vedere [Procedura: Aggiungere progetti a una soluzione](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
+1. Aggiungere il progetto di DLL esistente alla soluzione di Visual Studio generata da Visual Studio Tools per Unity. Può capitare meno frequentemente di avviare un nuovo progetto di DLL gestita per contenere i componenti di codice nel progetto Unity. In questo caso, è possibile aggiungere un nuovo progetto di DLL gestita alla soluzione Visual Studio. Per altre informazioni sull'aggiunta di un progetto nuovo o esistente a una soluzione, vedere [Procedura: Aggiungere progetti a una soluzione](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
   
-     ![Aggiungere il progetto esistente per una DLL alla soluzione.](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
+    ![Aggiungere il progetto esistente per una DLL alla soluzione.](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
   
-     In entrambi i casi, Visual Studio Tools per Unity mantiene il riferimento al progetto, anche se deve rigenerare nuovamente i file di progetto e soluzione, di conseguenza è necessario eseguire questi passaggi una sola volta.  
+    In entrambi i casi, Visual Studio Tools per Unity mantiene il riferimento al progetto, anche se deve rigenerare nuovamente i file di progetto e soluzione, di conseguenza è necessario eseguire questi passaggi una sola volta.  
   
-2.  Fare riferimento al profilo del framework Unity corretto nel progetto di DLL. Nelle proprietà del progetto di DLL in Visual Studio impostare la proprietà **Framework di destinazione** sulla versione del framework Unity usata. Si tratta della libreria di classi base Unity corrispondente alla compatibilità API di destinazione del progetto, ad esempio le librerie di classi base complete, micro o Web di Unity. In questo modo la DLL non potrà chiamare metodi del framework esistenti in  altri framework o livelli di compatibilità ma che potrebbero non esistere nella versione del framework Unity usata.  
+2. Fare riferimento al profilo del framework Unity corretto nel progetto di DLL. Nelle proprietà del progetto di DLL in Visual Studio impostare la proprietà **Framework di destinazione** sulla versione del framework Unity usata. Si tratta della libreria di classi base Unity corrispondente alla compatibilità API di destinazione del progetto, ad esempio le librerie di classi base complete, micro o Web di Unity. In questo modo la DLL non potrà chiamare metodi del framework esistenti in  altri framework o livelli di compatibilità ma che potrebbero non esistere nella versione del framework Unity usata.  
   
-     ![Impostare il framework di destinazione della DLL sul framework Unity.](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
+    ![Impostare il framework di destinazione della DLL sul framework Unity.](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
   
-3.  Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Dal momento che le DLL vengono collegate al runtime, devono essere distribuite come asset. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:  
+3. Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Dal momento che le DLL vengono collegate al runtime, devono essere distribuite come asset. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:  
   
-    -   Modificare le impostazioni di compilazione del progetto di DLL in modo da includere un'attività di post-compilazione che copi la DLL di output e i file PDB dalla cartella di output alla cartella **Assets** (Asset) del progetto Unity.  
+   - Modificare le impostazioni di compilazione del progetto di DLL in modo da includere un'attività di post-compilazione che copi la DLL di output e i file PDB dalla cartella di output alla cartella **Assets** (Asset) del progetto Unity.  
   
-    -   Modificare le impostazioni di compilazione del progetto di DLL in modo da impostare come cartella di output la cartella **Assets** (Asset) del progetto Unity. La DLL e i file PDB verranno entrambi inseriti nella cartella **Assets** (Asset).  
+   - Modificare le impostazioni di compilazione del progetto di DLL in modo da impostare come cartella di output la cartella **Assets** (Asset) del progetto Unity. La DLL e i file PDB verranno entrambi inseriti nella cartella **Assets** (Asset).  
   
      I file PDB sono necessari per il debug perché contengono i simboli di debug della DLL e consentono di eseguire il mapping del codice della DLL al formato del relativo codice sorgente. Visual Studio Tools per Unity userà le informazioni della DLL e dei file PDB per creare un file DLL.MDB, che corrisponde al formato dei simboli di debug usato dal motore di scripting di Unity.  
   
-4.  Eseguire il debug del codice. È ora possibile eseguire il debug del codice sorgente della DLL con il codice sorgente del progetto Unity e usare tutte le funzionalità di debug a cui si è abituati, ad esempio punti di interruzione ed esecuzione del codice un'istruzione alla volta.
+4. Eseguire il debug del codice. È ora possibile eseguire il debug del codice sorgente della DLL con il codice sorgente del progetto Unity e usare tutte le funzionalità di debug a cui si è abituati, ad esempio punti di interruzione ed esecuzione del codice un'istruzione alla volta.
 

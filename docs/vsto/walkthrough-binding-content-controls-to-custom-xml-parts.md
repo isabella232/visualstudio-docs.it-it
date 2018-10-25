@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916751"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procedura dettagliata: Associare controlli contenuto a parti XML personalizzate
   Questa procedura dettagliata illustra come associare i controlli contenuto in una personalizzazione a livello di documento per Word a dati XML archiviati nel documento.  
@@ -36,19 +36,19 @@ ms.locfileid: "35673303"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Aggiunta di controlli contenuto al documento di Word presente in un progetto a livello di documento in fase di progettazione.  
+- Aggiunta di controlli contenuto al documento di Word presente in un progetto a livello di documento in fase di progettazione.  
   
--   Creazione di un file di dati XML e di uno schema XML che definisce gli elementi da associare ai controlli contenuto.  
+- Creazione di un file di dati XML e di uno schema XML che definisce gli elementi da associare ai controlli contenuto.  
   
--   Associazione dello schema XML al documento in fase di progettazione.  
+- Associazione dello schema XML al documento in fase di progettazione.  
   
--   Aggiunta del contenuto del file XML a una parte XML personalizzata nel documento in fase di esecuzione.  
+- Aggiunta del contenuto del file XML a una parte XML personalizzata nel documento in fase di esecuzione.  
   
--   Binding dei controlli contenuto a elementi nella parte XML personalizzata.  
+- Binding dei controlli contenuto a elementi nella parte XML personalizzata.  
   
--   Binding di <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a un set di valori definiti nello schema XML.  
+- Associazione di <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a un set di valori definiti nello schema XML.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -71,36 +71,36 @@ ms.locfileid: "35673303"
   
 ### <a name="to-add-content-controls-to-the-document"></a>Per aggiungere controlli contenuto al documento  
   
-1.  Nel documento di Word ospitato nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, sulla barra multifunzione, scegliere il **Inserisci** scheda.  
+1. Nel documento di Word ospitato nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, sulla barra multifunzione, scegliere il **Inserisci** scheda.  
   
-2.  Nel **tabelle** gruppo, scegliere **tabella**e inserire una tabella con 2 colonne e 3 righe.  
+2. Nel **tabelle** gruppo, scegliere **tabella**e inserire una tabella con 2 colonne e 3 righe.  
   
-3.  Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:  
+3. Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:  
   
-    ||  
-    |-|  
-    |**Nome del dipendente**|  
-    |**Data di assunzione**|  
-    |**Titolo**|  
+   ||  
+   |-|  
+   |**Nome del dipendente**|  
+   |**Data di assunzione**|  
+   |**Titolo**|  
   
-4.  Nella seconda colonna della tabella, scegliere la prima riga (accanto a **Employee Name**).  
+4. Nella seconda colonna della tabella, scegliere la prima riga (accanto a **Employee Name**).  
   
-5.  Sulla barra multifunzione scegliere la **sviluppatore** scheda.  
+5. Sulla barra multifunzione scegliere la **sviluppatore** scheda.  
   
-    > [!NOTE]  
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [procedura: visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Nel **controlli** gruppo, scegliere il **testo** pulsante ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>alla prima cella.  
+6. Nel **controlli** gruppo, scegliere il **testo** pulsante ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>alla prima cella.  
   
-7.  Nella seconda colonna della tabella, scegliere la seconda riga (accanto a **Data assunzione**).  
+7. Nella seconda colonna della tabella, scegliere la seconda riga (accanto a **Data assunzione**).  
   
-8.  Nel **controlli** gruppo, scegliere il **Date Picker** pulsante ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> alla seconda cella.  
+8. Nel **controlli** gruppo, scegliere il **Date Picker** pulsante ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> alla seconda cella.  
   
 9. Nella seconda colonna della tabella, selezionare la terza riga (accanto a **titolo**).  
   
 10. Nel **controlli** gruppo, scegliere il **elenco a discesa** pulsante ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") da aggiungere un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> all'ultima cella.  
   
- È l'intera interfaccia utente per questo progetto. Se si esegue il progetto a questo punto, è possibile digitare un testo nella prima riga e selezionare una data nella seconda riga. Il passaggio successivo consiste nell'allegare i dati che si vogliano visualizzare al documento in un file XML.  
+    È l'intera interfaccia utente per questo progetto. Se si esegue il progetto a questo punto, è possibile digitare un testo nella prima riga e selezionare una data nella seconda riga. Il passaggio successivo consiste nell'allegare i dati che si vogliano visualizzare al documento in un file XML.  
   
 ## <a name="create-the-xml-data-file"></a>Creare il file di dati XML  
  In genere, si ottengono dati XML da archiviare in una parte XML personalizzata da un'origine esterna, ad esempio un file o un database. In questa procedura dettagliata è possibile creare un file XML che contiene i dati del dipendente, contrassegnati da elementi che verranno associati ai controlli contenuto del documento. Per rendere disponibili i dati in fase di esecuzione, incorporare il file XML come risorsa nell'assembly di personalizzazione.  
@@ -189,7 +189,7 @@ ms.locfileid: "35673303"
 ## <a name="attach-the-xml-schema-to-the-document"></a>Allegare lo schema XML al documento  
  È necessario allegare lo schema XML al documento per associare <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> ai valori validi dell'elemento `title`.  
   
-### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>Per allegare lo schema XML al documento ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>Per allegare lo schema XML al documento ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  Attivare **EmployeeControls. docx** nella finestra di progettazione.  
   

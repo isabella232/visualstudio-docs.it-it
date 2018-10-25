@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905954"
 ---
 # <a name="command-window"></a>Finestra di comando
 La finestra **Comando** consente di eseguire i comandi o gli alias direttamente nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È possibile eseguire sia i comandi di menu che comandi che non vengono visualizzati nei menu. Per visualizzare la finestra **Comando**, scegliere **Altre finestre** dal menu **Visualizza** e selezionare **Finestra di comando**.
@@ -55,7 +55,7 @@ La finestra **Comando** consente di eseguire i comandi o gli alias direttamente 
  I collegamenti seguenti consentono l'esplorazione in modalità di comando.
 
 |Operazione|Posizione del cursore|Tasto di scelta rapida|
-|------------|---------------------|----------------|
+|------------| - |----------------|
 |Scorrere l'elenco dei comandi immessi in precedenza.|Riga di input|FRECCIA GIÙ o FRECCIA SU|
 |Scorrere la finestra verso l'alto.|Contenuto della finestra Comando|CTRL+FRECCIA SU|
 |Scorrere la finestra verso il basso.|Contenuto della finestra Comando|FRECCIA GIÙ o CTRL+FRECCIA GIÙ|
@@ -114,5 +114,5 @@ Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale val
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)

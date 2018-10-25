@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CreatePendingBreakpoint | Documenti Microsoft
+title: IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a0813e077d8bdc2ba024dc932a6cb571b1b2fed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d711b119e88e9996df19862f9a6779f285ebe4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907014"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Crea un punto di interruzione in sospeso nel motore di debug (DE).  
@@ -43,23 +43,23 @@ int CreatePendingBreakpoint(
   
 #### <a name="parameters"></a>Parametri  
  `pBPRequest`  
- [in] Un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) oggetto che descrive il punto di interruzione in sospeso da creare.  
+ [in] Un' [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) che descrive il punto di interruzione in sospeso da creare.  
   
  `ppPendingBP`  
  [out] Restituisce un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) oggetto che rappresenta il punto di interruzione in sospeso.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. In genere restituisce `E_FAIL` se il `pBPRequest` parametro non corrisponde a qualsiasi linguaggio supportato da DE se il `pBPRequest` parametro non è valido o incompleto.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce in genere `E_FAIL` se il `pBPRequest` parametro non corrisponde a qualsiasi linguaggio supportato da DE se il `pBPRequest` parametro non è valida o incompleta.  
   
 ## <a name="remarks"></a>Note  
- Un punto di interruzione in sospeso è essenzialmente una raccolta di tutte le informazioni necessarie per associare un punto di interruzione al codice. Il punto di interruzione in sospeso restituito da questo metodo non è associato al codice fino a quando il [associare](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) metodo viene chiamato.  
+ Un punto di interruzione in sospeso è essenzialmente una raccolta di tutte le informazioni necessarie per associare un punto di interruzione al codice. Il punto di interruzione in sospeso restituito da questo metodo non è associato al codice finché il [associare](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) viene chiamato il metodo.  
   
- Per ogni punto di interruzione, l'utente imposta gestore di sessione di debug (SDM) chiama questo metodo in ogni DE associata. È compito DE per verificare che il punto di interruzione sia valido per i programmi in esecuzione in tale DE.  
+ Per ogni punto di interruzione, l'utente imposta gestore di sessione di debug (SDM) chiama questo metodo in ogni DE collegati. È compito DE per verificare che il punto di interruzione sia valido per i programmi in esecuzione in tale DE.  
   
- Quando l'utente imposta un punto di interruzione su una riga di codice, la Germania è libero di associare il punto di interruzione di riga più vicina del documento che corrisponde a questo codice. In questo modo all'utente di impostare un punto di interruzione nella prima riga di un'istruzione su più righe, ma associato l'ultima riga (in cui tutto il codice con attribuito nelle informazioni di debug).  
+ Quando l'utente imposta un punto di interruzione su una riga di codice, la Germania è gratuito associare il punto di interruzione di riga più vicina del documento che corrisponde a questo codice. Questo rende possibile l'utente può impostare un punto di interruzione sulla prima riga di un'istruzione su più righe, ma la si associa l'ultima riga (in cui tutto il codice con attribuito nelle informazioni di debug).  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per una semplice `CProgram` oggetto. Implementazione del DE del `IDebugEngine2::CreatePendingBreakpoint` potrebbe quindi inoltrare tutte le chiamate a questa implementazione del metodo in una singola applicazione.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CProgram` oggetto. Implementazione di DE del `IDebugEngine2::CreatePendingBreakpoint` potrebbe quindi inoltrare tutte le chiamate a questa implementazione del metodo in ogni programma.  
   
 ```  
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)     
@@ -75,6 +75,6 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [Operazione di binding](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
+ [Eseguire l'associazione](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

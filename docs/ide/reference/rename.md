@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908748"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring con ridenominazione di un simbolo di codice
 
@@ -41,34 +41,34 @@ Questo refactoring si applica a:
 
    - C#:
 
-    ![Codice evidenziato - C#](media/rename-highlight-cs.png)
+       ![Codice evidenziato - C#](media/rename-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato - Visual Basic](media/rename-highlight-vb.png)
+       ![Codice evidenziato - Visual Basic](media/rename-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+R** e quindi **CTRL+R**. Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
+      - Premere **CTRL+R** e quindi **CTRL+R**. Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
    - **Mouse**
-     - Selezionare **Modifica > Refactoring > Rinomina**.
-     - Fare clic con il pulsante destro del mouse sul codice e scegliere **Rinomina**.
+      - Selezionare **Modifica > Refactoring > Rinomina**.
+      - Fare clic con il pulsante destro del mouse sul codice e scegliere **Rinomina**.
 
-1. Rinominare l'elemento semplicemente digitando il nuovo nome.
+3. Rinominare l'elemento semplicemente digitando il nuovo nome.
 
    - C#:
 
-    ![Animazione della ridenominazione - C#](media/rename-animated-cs.gif)
+      ![Animazione della ridenominazione - C#](media/rename-animated-cs.gif)
 
    - Visual Basic:
 
-    ![Ridenominazione - VB](media/rename-rename-vb.png)
+      ![Ridenominazione - VB](media/rename-rename-vb.png)
 
    > [!TIP]
    > È anche possibile aggiornare i commenti e altre stringhe per l'uso del nuovo nome, così come [visualizzare in anteprima le modifiche](../../ide/preview-changes.md) prima del salvataggio, usando le caselle di controllo nella finestra di dialogo **Rinomina** visualizzata in alto a destra nell'editor.
 
-1. Quando si è soddisfatti della modifica, scegliere il pulsante **Applica** o premere **INVIO**. Verrà eseguito il commit delle modifiche.
+4. Quando si è soddisfatti della modifica, scegliere il pulsante **Applica** o premere **INVIO**. Verrà eseguito il commit delle modifiche.
 
 > [!NOTE]
 > Se si usa un nome già esistente che causerebbe un conflitto, nella finestra di dialogo **Rinomina** verrà visualizzato un avviso.
