@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines | Documenti Microsoft
+title: IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30eb28398569aa3d14b4a7dd363abac785f352c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f5977e7dbac34e247838efe1e8d0036e60f0416
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887671"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Restituisce il GUID per tutti i possibili motori di debug (DE) che è possono eseguire il debug di questo programma.  
@@ -51,13 +51,13 @@ int EnumPossibleEngines(
  [in, out] Una matrice di GUID DE da compilare.  
   
  `pceltEngines`  
- [out] Restituisce il numero effettivo di GUID DE che vengono restituiti.  
+ [out] Restituisce il numero effettivo di GUID DE restituiti.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [c#] 0x8007007A se il buffer non è sufficientemente grande.  
   
 ## <a name="remarks"></a>Note  
- Per determinare il numero di motori, chiamare questo metodo una volta con il `celtBuffer` parametro impostato su 0 e `rgguidEngines` parametro impostato su un valore null. Restituisce `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A per c#) e `pceltEngines` parametro restituisce le dimensioni del buffer necessarie.  
+ Per determinare il numero di motori, chiamare questo metodo una volta con il `celtBuffer` parametro è impostato su 0 e il `rgguidEngines` parametro impostato su un valore null. Verranno restituite `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A per c#) e il `pceltEngines` parametro restituisce la dimensione del buffer necessaria.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

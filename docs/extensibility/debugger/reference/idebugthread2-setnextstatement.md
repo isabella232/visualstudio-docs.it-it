@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::SetNextStatement | Documenti Microsoft
+title: IDebugThread2::SetNextStatement | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e59d4087e44458ecd49efd5d7be9f45e68c6da2b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfc2afb15dbacde1eb0a96178d2769365deb4e31
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893793"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
-Imposta il puntatore all'istruzione corrente al contesto del codice specificata.  
+Imposta il puntatore all'istruzione corrente nel contesto del codice di errore specificati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,18 +43,18 @@ int SetNextStatement (
   
 #### <a name="parameters"></a>Parametri  
  `pStackFrame`  
- Riservato per utilizzi futuri; impostare un valore null.  
+ Riservato per utilizzi futuri; Impostare su un valore null.  
   
  `pCodeContext`  
- [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto che descrive il percorso di codice da eseguire e il relativo contesto.  
+ [in] Un' [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che descrive la posizione del codice sta per essere eseguita e il relativo contesto.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. La tabella seguente illustra gli altri valori possibili.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra altri valori possibili.  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
 |E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|L'istruzione successiva non può essere in uno stack frame più approfondito sullo stack frame.|  
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|L'istruzione successiva non è associata a qualsiasi frame nello stack.|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|L'istruzione successiva non è associato a qualsiasi frame nello stack.|  
 |E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Alcuni motori di debug non è possibile impostare l'istruzione successiva dopo un'eccezione.|  
   
 ## <a name="remarks"></a>Note  

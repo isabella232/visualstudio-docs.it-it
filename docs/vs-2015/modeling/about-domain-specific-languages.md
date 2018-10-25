@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894521"
 ---
 # <a name="about-domain-specific-languages"></a>Informazioni sui linguaggi specifici del dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ A differenza di un linguaggio generico come c# o UML, un linguaggio specifico di
   
  L'azienda e il progetto utilizza inoltre set speciale di concetti che può essere descritta con un linguaggio DSL. Ad esempio, è possibile definire un linguaggio DSL di una di queste applicazioni:  
   
--   Piano di percorsi di navigazione in un sito Web.  
+- Piano di percorsi di navigazione in un sito Web.  
   
--   Collegare i diagrammi dei componenti elettronici.  
+- Collegare i diagrammi dei componenti elettronici.  
   
--   Reti di nastri trasportatori e attrezzature per un aeroporto di gestione dei bagagli.  
+- Reti di nastri trasportatori e attrezzature per un aeroporto di gestione dei bagagli.  
   
- Quando si progetta un linguaggio DSL, si definisce una *della classe di dominio* per ognuno dei concetti importanti nel dominio, ad esempio una pagina Web, lamp o aeroporto banco. Si definiscono *relazioni di dominio* come collegamento ipertestuale, trasmissione o un nastro trasportatore per collegare i concetti.  
+  Quando si progetta un linguaggio DSL, si definisce una *della classe di dominio* per ognuno dei concetti importanti nel dominio, ad esempio una pagina Web, lamp o aeroporto banco. Si definiscono *relazioni di dominio* come collegamento ipertestuale, trasmissione o un nastro trasportatore per collegare i concetti.  
   
- Gli utenti del linguaggio DSL creare *modelli.* I modelli sono *istanze* del linguaggio DSL. Ad esempio, descrivono un particolare sito Web o il collegamento di un determinato dispositivo o il sistema in un determinato aeroporto di gestione dei bagagli.  
+  Gli utenti del linguaggio DSL creare *modelli.* I modelli sono *istanze* del linguaggio DSL. Ad esempio, descrivono un particolare sito Web o il collegamento di un determinato dispositivo o il sistema in un determinato aeroporto di gestione dei bagagli.  
   
- Gli utenti possono visualizzare un modello come un diagramma o un modulo di Windows. I modelli possono essere visualizzati anche come XML, ovvero come vengono archiviati. Quando si definisce un linguaggio DSL, si definiscono come le istanze di ogni classe di dominio e le relazioni vengono visualizzate sullo schermo dell'utente. Un tipico DSL viene visualizzato come una raccolta di icone o rettangoli connessi tramite frecce.  
+  Gli utenti possono visualizzare un modello come un diagramma o un modulo di Windows. I modelli possono essere visualizzati anche come XML, ovvero come vengono archiviati. Quando si definisce un linguaggio DSL, si definiscono come le istanze di ogni classe di dominio e le relazioni vengono visualizzate sullo schermo dell'utente. Un tipico DSL viene visualizzato come una raccolta di icone o rettangoli connessi tramite frecce.  
   
- La figura seguente illustra un modello di piccole dimensioni in un linguaggio DSL basata su diagramma:  
+  La figura seguente illustra un modello di piccole dimensioni in un linguaggio DSL basata su diagramma:  
   
- ![Modello di albero genealogico Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![Modello di albero genealogico Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>Operazioni eseguibili con linguaggi specifici di dominio  
  Una tipica applicazione di un linguaggio DSL consiste nel generare codice programma o altri elementi. Quando si definisce il linguaggio DSL, è possibile definire *modelli di testo* che leggere un modello del DSL e generare file di testo.  

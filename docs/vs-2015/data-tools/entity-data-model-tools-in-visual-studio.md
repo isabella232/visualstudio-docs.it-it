@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a3fffb36d7070701b99382c320e3a2d23b9a2b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893403"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Strumenti di Entity Data Model in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,20 +38,20 @@ Entity Framework è una tecnologia di mapping relazionale a oggetti che consente
   
  Questi sono gli strumenti specifici che costituiscono Entity Data Model Tools in Visual Studio 2015:  
   
--   È possibile usare la [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] progettazione** (**Entity Designer**) per creare visivamente e modificare le entità, associazioni, mapping e relazioni di ereditarietà. Il **Entity Designer** genera inoltre [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] codice del livello oggetti.  
+- È possibile usare la [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] progettazione** (**Entity Designer**) per creare visivamente e modificare le entità, associazioni, mapping e relazioni di ereditarietà. Il **Entity Designer** genera inoltre [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] codice del livello oggetti.  
   
--   È possibile usare la  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] guidata** per generare un modello concettuale da un database esistente e aggiungere le informazioni di connessione di database all'applicazione.  
+- È possibile usare la  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] guidata** per generare un modello concettuale da un database esistente e aggiungere le informazioni di connessione di database all'applicazione.  
   
--   È possibile usare la **procedura guidata Crea Database** creare prima un modello concettuale e quindi creare un database che supporta il modello.  
+- È possibile usare la **procedura guidata Crea Database** creare prima un modello concettuale e quindi creare un database che supporta il modello.  
   
--   È possibile usare la **procedura guidata Aggiorna modello** per aggiornare il modello concettuale, un modello di archiviazione e un mapping quando sono state apportate modifiche al database sottostante.  
+- È possibile usare la **procedura guidata Aggiorna modello** per aggiornare il modello concettuale, un modello di archiviazione e un mapping quando sono state apportate modifiche al database sottostante.  
   
-    > [!NOTE]
-    >  A partire da Visual Studio 2010 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] strumenti potrebbero non supportare [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
+  > [!NOTE]
+  >  A partire da Visual Studio 2010 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] strumenti potrebbero non supportare [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
   
- Gli strumenti generano o modificare un file con estensione edmx. Questo file contiene informazioni che descrivono il modello concettuale, il modello di archiviazione e i mapping tra di essi. Per altre informazioni, vedere [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).  
+  Gli strumenti generano o modificare un file con estensione edmx. Questo file contiene informazioni che descrivono il modello concettuale, il modello di archiviazione e i mapping tra di essi. Per altre informazioni, vedere [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).  
   
- Entity Framework Power Tools consentono di compilare applicazioni che usano Entity Data Model. Gli strumenti possono generare un modello concettuale, convalidare un modello esistente, produrre file del codice sorgente contenenti classi di oggetti basate sul modello concettuale e produrre file del codice sorgente contenenti visualizzazioni generate dal modello. Per informazioni dettagliate, vedere [Pre-Generated Mapping viste](https://msdn.microsoft.com/data/dn469601.aspx).  
+  Entity Framework Power Tools consentono di compilare applicazioni che usano Entity Data Model. Gli strumenti possono generare un modello concettuale, convalidare un modello esistente, produrre file del codice sorgente contenenti classi di oggetti basate sul modello concettuale e produrre file del codice sorgente contenenti visualizzazioni generate dal modello. Per informazioni dettagliate, vedere [Pre-Generated Mapping viste](https://msdn.microsoft.com/data/dn469601.aspx).  
   
 ## <a name="related-topics"></a>Argomenti correlati  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 18d87e523e9c0456f0f80add89c2ade32cf903fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896224"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: impostazione di punti di interruzione nei Flussi di lavoro
 Quando si usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], è possibile impostare punti di interruzione nei flussi di lavoro grafici come si farebbe nel codice Visual Basic o C#. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.  
@@ -26,10 +26,10 @@ Quando si usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], è possibile impostare p
   
 > [!NOTE]
 >  L'impostazione dei punti di interruzione sui flussi di lavoro richiamati non è supportata.  
-  
+> 
 > [!WARNING]
->  Assicurarsi di selezionare l'opzione **Abilita Just My Code (solo gestito)** dalle **Tools**, **opzioni**, **debug** menu prima di eseguire il debug. Se si dispone di due sequenze annidate in un'altra sequenza e si imposta un punto di interruzione nella prima sequenza interna, premendo **F11** non eseguire il debug nella seconda sequenza interna se il **Abilita Just My Code (solo gestito)** opzione non è selezionata.  
-  
+>  Assicurarsi di selezionare l'opzione **Abilita Just My Code (solo gestito)** dalle **Tools**, **opzioni**, **debug** menu prima di eseguire il debug. Se si dispone di due sequenze annidate in un'altra sequenza e si imposta un punto di interruzione nella prima sequenza interna, premendo **F11** non eseguire il debug nella seconda sequenza interna se il <strong>Abilita Just My Code (solo gestito)</strong>opzione non è selezionata.  
+> 
 > [!WARNING]
 >  I punti di interruzione in un flusso di lavoro non vengono raggiunti se il percorso completo per la proprietà del file XAML non è corretto. Il percorso completo del file XAML non è preciso dopo avere spostato il progetto o la soluzione in un'altra cartella o a un altro computer. Selezionare CTRL+S per salvare e aggiornare la proprietà percorso completo.  
   

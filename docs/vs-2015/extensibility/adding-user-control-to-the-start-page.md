@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855599"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Aggiunta di un controllo utente nella pagina iniziale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,41 +141,41 @@ Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL
 ## <a name="adding-the-user-control-to-the-start-page"></a>Aggiunta del controllo utente alla pagina iniziale  
  Per rendere disponibili per il progetto di pagina iniziale, questo controllo nel file di progetto di pagina di avvio, aggiungere un riferimento alla nuova libreria di controllo. È quindi possibile aggiungere il controllo al markup XAML pagina Start.  
   
-1.  Nelle **Esplora soluzioni**, nel progetto di pagina iniziale, fare doppio clic su **riferimenti** e quindi fare clic su **Aggiungi riferimento**.  
+1. Nelle **Esplora soluzioni**, nel progetto di pagina iniziale, fare doppio clic su **riferimenti** e quindi fare clic su **Aggiungi riferimento**.  
   
-2.  Nel **progetti** scheda, seleziona **WebUserControl** e quindi fare clic su **OK**.  
+2. Nel **progetti** scheda, seleziona **WebUserControl** e quindi fare clic su **OK**.  
   
-3.  Scegliere **Compila soluzione** dal menu **Compila**.  
+3. Scegliere **Compila soluzione** dal menu **Compila**.  
   
-     La compilazione della soluzione rende il controllo utente disponibile per IntelliSense per gli altri file della soluzione.  
+    La compilazione della soluzione rende il controllo utente disponibile per IntelliSense per gli altri file della soluzione.  
   
- Per aggiungere il controllo al markup XAML pagina di avvio, aggiungere un riferimento all'assembly dello spazio dei nomi, quindi inserire il controllo nella pagina.  
+   Per aggiungere il controllo al markup XAML pagina di avvio, aggiungere un riferimento all'assembly dello spazio dei nomi, quindi inserire il controllo nella pagina.  
   
 #### <a name="to-add-the-control-to-the-markup"></a>Per aggiungere il controllo al markup  
   
-1.  Nelle **Esplora soluzioni**, aprire il file con estensione XAML della pagina iniziale.  
+1. Nelle **Esplora soluzioni**, aprire il file con estensione XAML della pagina iniziale.  
   
-2.  Nel **XAML** riquadro, aggiungere la seguente dichiarazione dello spazio dei nomi di livello principale <xref:System.Windows.Controls.Grid> elemento.  
+2. Nel **XAML** riquadro, aggiungere la seguente dichiarazione dello spazio dei nomi di livello principale <xref:System.Windows.Controls.Grid> elemento.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  Nel **XAML** riquadro, scorrere verso il \<griglia > sezione.  
+3. Nel **XAML** riquadro, scorrere verso il \<griglia > sezione.  
   
-     La sezione contiene un <xref:System.Windows.Controls.TabControl> elemento in un <xref:System.Windows.Controls.Grid> elemento.  
+    La sezione contiene un <xref:System.Windows.Controls.TabControl> elemento in un <xref:System.Windows.Controls.Grid> elemento.  
   
-4.  Aggiungere un \<TabControl > elemento che contiene un \<TabItem > che contiene un riferimento a un controllo utente.  
+4. Aggiungere un \<TabControl > elemento che contiene un \<TabItem > che contiene un riferimento a un controllo utente.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- È ora possibile testare il controllo.  
+   È ora possibile testare il controllo.  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Test di una pagina di avvio personalizzata creata manualmente  
   

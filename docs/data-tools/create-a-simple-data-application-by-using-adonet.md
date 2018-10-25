@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758483"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891011"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
 Quando si crea un'applicazione che modifica i dati in un database, eseguire le attività di base, ad esempio che definisce le stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile individuare come interagire con un database dall'interno di una semplice applicazione "Form over data" di Windows Forms con Visual c# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi DataSet, LINQ to SQL ed Entity Framework, in definitiva, eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.
 
- Questo articolo illustra un modo semplice per ottenere dati da un database in modo rapido. Se l'applicazione deve modificare i dati in modi non semplice e aggiornare il database, è consigliabile mediante Entity Framework e l'uso di data binding per la sincronizzazione automatica controlli dell'interfaccia utente per le modifiche nei dati sottostanti.
+Questo articolo illustra un modo semplice per ottenere dati da un database in modo rapido. Se l'applicazione deve modificare i dati in modi non semplice e aggiornare il database, è consigliabile mediante Entity Framework e l'uso di data binding per la sincronizzazione automatica controlli dell'interfaccia utente per le modifiche nei dati sottostanti.
 
 > [!IMPORTANT]
 > Per semplificare il codice, poiché non è inclusa la gestione delle eccezioni di produzione.
@@ -65,29 +65,29 @@ Creare il database di esempio seguendo questa procedura:
 
 ## <a name="create-the-forms-and-add-controls"></a>Creare i form e aggiungere i controlli
 
-1.  Creare un progetto per un'applicazione Windows Forms e denominarlo **SimpleDataApp**.
+1. Creare un progetto per un'applicazione Windows Forms e denominarlo **SimpleDataApp**.
 
-     Visual Studio crea il progetto e diversi file, tra cui un form Windows vuoto denominato **Form1**.
+    Visual Studio crea il progetto e diversi file, tra cui un form Windows vuoto denominato **Form1**.
 
-2.  Aggiungere due form Windows al progetto in modo che includa tre formati seguenti e quindi assegnare loro i nomi seguenti:
+2. Aggiungere due form Windows al progetto in modo che includa tre formati seguenti e quindi assegnare loro i nomi seguenti:
 
-    -   **Navigazione**
+   -   **Navigazione**
 
-    -   **NewCustomer**
+   -   **NewCustomer**
 
-    -   **FillOrCancel**
+   -   **FillOrCancel**
 
-3.  Per ogni form, aggiungere caselle di testo, pulsanti e altri controlli come illustrato nelle figure seguenti. Per ciascun controllo, impostare le proprietà descritte nelle tabelle.
+3. Per ogni form, aggiungere caselle di testo, pulsanti e altri controlli come illustrato nelle figure seguenti. Per ciascun controllo, impostare le proprietà descritte nelle tabelle.
 
-    > [!NOTE]
-    >  La casella di gruppo e i controlli Label migliorano la leggibilità, ma non vengono usati nel codice.
+   > [!NOTE]
+   > La casella di gruppo e i controlli Label migliorano la leggibilità, ma non vengono usati nel codice.
 
- **Form navigazione**
+   **Form navigazione**
 
- ![Finestra di dialogo Navigazione](../data-tools/media/simpleappnav.png)
+   ![Finestra di dialogo Navigazione](../data-tools/media/simpleappnav.png)
 
 |Controlli per il form Navigazione|Proprietà|
-|--------------------------------------|----------------|
+| - |----------------|
 |Button|Name = btnGoToAdd|
 |Button|Name = btnGoToFillOrCancel|
 |Button|Name = btnExit|
@@ -97,7 +97,7 @@ Creare il database di esempio seguendo questa procedura:
  ![Aggiungere un nuovo cliente e inserire un ordine](../data-tools/media/simpleappnewcust.png)
 
 |Controlli per il form NewCustomer|Proprietà|
-|---------------------------------------|----------------|
+| - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
 |Button|Name = btnCreateAccount|
@@ -112,7 +112,7 @@ Creare il database di esempio seguendo questa procedura:
  ![Completare o annullare gli ordini](../data-tools/media/simpleappcancelfill.png)
 
 |Controlli del form FillOrCancel|Proprietà|
-|----------------------------------------|----------------|
+| - |----------------|
 |TextBox|Name = txtOrderID|
 |Pulsante|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|

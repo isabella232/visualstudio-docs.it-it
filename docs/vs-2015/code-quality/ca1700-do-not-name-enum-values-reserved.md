@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 58b1d329447ab73f9df93d2f75a62c2e21a6dcfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204724"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897992"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Non denominare i valori di enumerazione &#39;riservato&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -46,11 +47,11 @@ ms.locfileid: "49204724"
 
  In un numero limitato di casi l'aggiunta di un membro è una modifica importante anche quando i membri originali mantengono i valori originali. In primo luogo, il nuovo membro non può essere restituito da percorsi del codice esistente senza interrompere i chiamanti che usano un `switch` (`Select` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) sul valore restituito che include l'elenco dei membri intera e che genera un'eccezione istruzione il case predefinito. Un secondo problema è che il codice client potrebbe non gestirà la modifica del comportamento da metodi di reflection, ad esempio <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. Di conseguenza, se il nuovo membro deve essere restituito da metodi esistenti o si verifica un'incompatibilità tra applicazioni noti a causa di utilizzo della reflection ridotte, l'unica soluzione è a:
 
-1.  Aggiungere una nuova enumerazione che contiene i membri originali e quelli nuovi.
+1. Aggiungere una nuova enumerazione che contiene i membri originali e quelli nuovi.
 
-2.  Contrassegnare l'enumerazione originale con la <xref:System.ObsoleteAttribute?displayProperty=fullName> attributo.
+2. Contrassegnare l'enumerazione originale con la <xref:System.ObsoleteAttribute?displayProperty=fullName> attributo.
 
- Seguire la stessa procedura per i tipi visibili esternamente o i membri che espongono l'enumerazione originale.
+   Seguire la stessa procedura per i tipi visibili esternamente o i membri che espongono l'enumerazione originale.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, rimuovere o rinominare il membro.

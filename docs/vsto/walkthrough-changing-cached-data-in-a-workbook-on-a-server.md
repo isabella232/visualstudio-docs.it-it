@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32596ecb33b016e8e51e58797e944f343c0e6526
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4bfb7848039c0081528f1b0b05a0b63db9925603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887597"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Procedura dettagliata: Modifica dei dati memorizzati nella cache in una cartella di lavoro in un server
   Questa procedura dettagliata viene illustrato come modificare un set di dati memorizzato nella cache di una cartella di lavoro di Microsoft Office Excel senza avviare Excel utilizzando il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -33,17 +33,17 @@ ms.locfileid: "36758898"
 
  Questa procedura dettagliata illustra le attività seguenti:
 
--   Definizione di un set di dati che contiene i dati dal database AdventureWorksLT.
+- Definizione di un set di dati che contiene i dati dal database AdventureWorksLT.
 
--   Creazione di istanze del set di dati in un progetto cartella di lavoro di Excel e un progetto applicazione console.
+- Creazione di istanze del set di dati in un progetto cartella di lavoro di Excel e un progetto applicazione console.
 
--   Creazione di un <xref:Microsoft.Office.Tools.Excel.ListObject> che viene associato al set di dati nella cartella di lavoro e il popolamento di <xref:Microsoft.Office.Tools.Excel.ListObject> con i dati quando viene aperta la cartella di lavoro.
+- Creazione di un <xref:Microsoft.Office.Tools.Excel.ListObject> che viene associato al set di dati nella cartella di lavoro e il popolamento di <xref:Microsoft.Office.Tools.Excel.ListObject> con i dati quando viene aperta la cartella di lavoro.
 
--   Aggiunta di set di dati nella cartella di lavoro per la cache dei dati.
+- Aggiunta di set di dati nella cartella di lavoro per la cache dei dati.
 
--   Modifica di una colonna di dati nel set di dati memorizzati nella cache eseguendo il codice nell'applicazione console senza avviare Excel.
+- Modifica di una colonna di dati nel set di dati memorizzati nella cache eseguendo il codice nell'applicazione console senza avviare Excel.
 
- Sebbene questa procedura dettagliata si presuppone che si esegue il codice nel computer di sviluppo, il codice illustrato da questa procedura dettagliata è utilizzabile in un server che non dispone di Excel sia installato.
+  Sebbene questa procedura dettagliata si presuppone che si esegue il codice nel computer di sviluppo, il codice illustrato da questa procedura dettagliata è utilizzabile in un server che non dispone di Excel sia installato.
 
 > [!NOTE]
 >  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -93,29 +93,29 @@ ms.locfileid: "36758898"
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Per definire un set di dati tipizzato nel progetto libreria di classi
 
-1.  Nelle **Esplora soluzioni**, fare clic sui **AdventureWorksDataSet** progetto.
+1. Nelle **Esplora soluzioni**, fare clic sui **AdventureWorksDataSet** progetto.
 
-2.  Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.
+2. Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.
 
-3.  Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+3. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-4.  Selezionare **Database**e quindi scegliere **Avanti**.
+4. Selezionare **Database**e quindi scegliere **Avanti**.
 
-5.  Se si dispone di una connessione esistente al database AdventureWorksLT, selezionarla e fare clic su **successivo**.
+5. Se si dispone di una connessione esistente al database AdventureWorksLT, selezionarla e fare clic su **successivo**.
 
-     In caso contrario, scegliere **Nuova connessione**e usare la finestra di dialogo **Aggiungi connessione** per creare la nuova connessione. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).
+    In caso contrario, scegliere **Nuova connessione**e usare la finestra di dialogo **Aggiungi connessione** per creare la nuova connessione. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).
 
-6.  Nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** scegliere **Avanti**.
+6. Nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** scegliere **Avanti**.
 
-7.  Nel **Scegli oggetti di Database** , espandere **tabelle** e selezionare **Product (SalesLT)**.
+7. Nel **Scegli oggetti di Database** , espandere **tabelle** e selezionare **Product (SalesLT)**.
 
-8.  Scegliere **Fine**.
+8. Scegliere **Fine**.
 
-     Il *AdventureWorksLTDataSet* file viene aggiunto per il **AdventureWorksDataSet** progetto. Questo file definisce gli elementi seguenti:
+    Il *AdventureWorksLTDataSet* file viene aggiunto per il **AdventureWorksDataSet** progetto. Questo file definisce gli elementi seguenti:
 
-    -   Un set di dati tipizzato denominato `AdventureWorksLTDataSet`. Questo set di dati rappresenta il contenuto della tabella Product nel database AdventureWorksLT.
+   - Un set di dati tipizzato denominato `AdventureWorksLTDataSet`. Questo set di dati rappresenta il contenuto della tabella Product nel database AdventureWorksLT.
 
-    -   Un oggetto TableAdapter denominato `ProductTableAdapter`. Questo oggetto TableAdapter consente di leggere e scrivere dati `AdventureWorksLTDataSet`. Per altre informazioni, vedere [panoramica degli oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Un oggetto TableAdapter denominato `ProductTableAdapter`. Questo oggetto TableAdapter consente di leggere e scrivere dati `AdventureWorksLTDataSet`. Per altre informazioni, vedere [panoramica degli oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Si useranno entrambi gli oggetti più avanti in questa procedura dettagliata.
 
@@ -182,7 +182,7 @@ ms.locfileid: "36758898"
 
 3.  Trascinare il **prodotto** alla cella A1.
 
-     Oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> controllo denominato `productListObject` viene creato nel foglio di lavoro, a partire dalla cella A1. Allo stesso tempo, un oggetto set di dati denominato `adventureWorksLTDataSet` e una <xref:System.Windows.Forms.BindingSource> denominata `productBindingSource` vengono aggiunti al progetto. <xref:Microsoft.Office.Tools.Excel.ListObject> è associato a <xref:System.Windows.Forms.BindingSource>, che a sua volta è associato all'oggetto del set di dati.
+     Oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> controllo denominato `productListObject` viene creato nel foglio di lavoro, a partire dalla cella A1. Allo stesso tempo vengono aggiunti al progetto un oggetto del set di dati denominato `adventureWorksLTDataSet` e un oggetto <xref:System.Windows.Forms.BindingSource> denominato `productBindingSource` . <xref:Microsoft.Office.Tools.Excel.ListObject> è associato a <xref:System.Windows.Forms.BindingSource>, che a sua volta è associato all'oggetto del set di dati.
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>Aggiungere il set di dati per la cache dei dati
  Per consentire al codice all'esterno del progetto cartella di lavoro di Excel per accedere ai set di dati nella cartella di lavoro, è necessario aggiungere il set di dati per la cache dei dati. Per altre informazioni sulla cache di dati, vedere [memorizzato nella cache i dati nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md) e [memorizzare nella Cache dati](../vsto/caching-data.md).
@@ -246,46 +246,46 @@ ms.locfileid: "36758898"
 
 ### <a name="to-change-data-in-the-cached-dataset"></a>Per modificare i dati nel set di dati memorizzati nella cache
 
-1.  In **Esplora soluzioni**, fare doppio clic il **DataWriter** progetto e quindi scegliere **Aggiungi riferimento**.
+1. In **Esplora soluzioni**, fare doppio clic il **DataWriter** progetto e quindi scegliere **Aggiungi riferimento**.
 
-2.  Nel **.NET** scheda, seleziona **Microsoft.VisualStudio.Tools.Applications**.
+2. Nel **.NET** scheda, seleziona **Microsoft.VisualStudio.Tools.Applications**.
 
-3.  Fare clic su **OK**.
+3. Fare clic su **OK**.
 
-4.  In **Esplora soluzioni**, fare doppio clic il **DataWriter** progetto e quindi scegliere **Aggiungi riferimento**.
+4. In **Esplora soluzioni**, fare doppio clic il **DataWriter** progetto e quindi scegliere **Aggiungi riferimento**.
 
-5.  Nel **progetti** scheda, seleziona **AdventureWorksDataSet**, fare clic su **OK**.
+5. Nel **progetti** scheda, seleziona **AdventureWorksDataSet**, fare clic su **OK**.
 
-6.  Aprire il *Program.cs* oppure *Module1.vb* file nell'Editor del codice.
+6. Aprire il *Program.cs* oppure *Module1.vb* file nell'Editor del codice.
 
-7.  Aggiungere il codice seguente **usando** (per c#) o **Imports** (per Visual Basic) all'inizio del file di codice.
+7. Aggiungere il codice seguente **usando** (per c#) o **Imports** (per Visual Basic) all'inizio del file di codice.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
+    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
-8.  Aggiungere al metodo `Main` il seguente codice. Questo codice dichiara gli oggetti seguenti:
+8. Aggiungere al metodo `Main` il seguente codice. Questo codice dichiara gli oggetti seguenti:
 
-    -   Un'istanza del `AdventureWorksLTDataSet` tipo definito nel **AdventureWorksDataSet** progetto.
+   - Un'istanza del `AdventureWorksLTDataSet` tipo definito nel **AdventureWorksDataSet** progetto.
 
-    -   Il percorso alla cartella di lavoro nella cartella di compilazione di AdventureWorksReport il **AdventureWorksReport** progetto.
+   - Il percorso alla cartella di lavoro nella cartella di compilazione di AdventureWorksReport il **AdventureWorksReport** progetto.
 
-    -   Oggetto <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> oggetto da utilizzare per accedere alla cache dei dati nella cartella di lavoro.
+   - Oggetto <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> oggetto da utilizzare per accedere alla cache dei dati nella cartella di lavoro.
 
-        > [!NOTE]
-        >  Il codice seguente presuppone che si sta utilizzando una cartella di lavoro che ha il *xlsx* estensione di file. Se la cartella di lavoro nel progetto è un'estensione di file diverso, modificare il percorso in base alle esigenze.
+     > [!NOTE]
+     >  Il codice seguente presuppone che si sta utilizzando una cartella di lavoro che ha il *xlsx* estensione di file. Se la cartella di lavoro nel progetto è un'estensione di file diverso, modificare il percorso in base alle esigenze.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]
 
 9. Aggiungere il codice seguente per il `Main` (metodo), dopo il codice aggiunto nel passaggio precedente. Mediante il codice vengono effettuate le seguenti attività:
 
-    -   Usa il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> proprietà del <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe per accedere ai set di dati memorizzati nella cache nella cartella di lavoro.
+   - Usa il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> proprietà del <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe per accedere ai set di dati memorizzati nella cache nella cartella di lavoro.
 
-    -   Legge i dati dal set di dati memorizzati nella cache nel set di dati locale.
+   - Legge i dati dal set di dati memorizzati nella cache nel set di dati locale.
 
-    -   Modifica il `ListPrice` valore di ogni prodotto nella tabella Product del set di dati.
+   - Modifica il `ListPrice` valore di ogni prodotto nella tabella Product del set di dati.
 
-    -   Salva le modifiche al set di dati memorizzati nella cache nella cartella di lavoro.
+   - Salva le modifiche al set di dati memorizzati nella cache nella cartella di lavoro.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#7)]
      [!code-vb[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#7)]

@@ -29,25 +29,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e216bf3f3a15027b26c93e986df3eb8594d4d589
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119861"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893299"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto
   Tutti gli elementi di progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dispongono di proprietà che è possibile usare per fornire dati aggiuntivi quando il progetto viene distribuito in SharePoint. Di seguito sono riportate le proprietà:  
   
--   Proprietà funzionalità  
+- Proprietà funzionalità  
   
--   Ricevitori di funzionalità  
+- Ricevitori di funzionalità  
   
--   Riferimenti all'output del progetto  
+- Riferimenti all'output del progetto  
   
--   Voci di controllo sicure  
+- Voci di controllo sicure  
   
- Queste proprietà vengono visualizzate nel **proprietà** finestra.  
+  Queste proprietà vengono visualizzate nel **proprietà** finestra.  
   
 ## <a name="feature-properties"></a>Proprietà della funzionalità
  Usare la **le proprietà della funzionalità** proprietà per specificare i dati che usa la funzionalità. I dati delle proprietà di funzionalità sono un set di valori (archiviati come coppie chiave/valore) che è incluso in una funzione quando viene distribuita in SharePoint. Dopo la distribuzione della funzionalità, è possibile accedere ai valori della proprietà nel codice.  

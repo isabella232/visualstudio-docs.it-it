@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e436999b16a89f4956f0fef48a8878a7f609d1f9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b8b70e1446894d93aa29024dada76af29b818eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889633"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aggiornare forme e connettori per riflettere il modello
 
@@ -82,7 +82,6 @@ Se si desidera rendere la variabile di proprietà solo nel controllo del program
       return types.ToArray();
     }
   }
-
 ```
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Usare OnChildConfigured per inizializzare le proprietà della forma
@@ -107,7 +106,6 @@ partial class MyLanguageDiagram
     // else deal with other types of shapes and connectors.
   }
 }
-
 ```
 
 Questo metodo può essere utilizzato sia per le proprietà di dominio e le funzionalità senza store, ad esempio le dimensioni della forma.

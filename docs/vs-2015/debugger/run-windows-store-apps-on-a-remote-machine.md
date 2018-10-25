@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f031e81911c9a36cd2c48abf7bd2b092bb5940f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886279"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Eseguire app di Windows Store in un computer remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_con
   
  [Configurazione del progetto di Visual Studio per il debug remoto](#BKMK_ConnectVS)  
   
--   [Scelta del dispositivo remoto per progetti C# e Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [Scelta del dispositivo remoto per progetti C# e Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [Scelta del dispositivo remoto per progetti JavaScript e C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [Scelta del dispositivo remoto per progetti JavaScript e C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [Esecuzione di una sessione di debug remoto](#BKMK_RunRemoteDebug)  
+  [Esecuzione di una sessione di debug remoto](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> Prerequisiti  
  Per eseguire il debug su un dispositivo remoto:  
@@ -123,20 +123,20 @@ Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_con
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> Configurazione del debugger remoto  
  Per modificare la configurazione del debugger remoto sono disponibili due strumenti.  
   
-1.  Dal menu **Strumenti** di **Visual Studio Remote Debugging Monitor**:  
+1. Dal menu **Strumenti** di **Visual Studio Remote Debugging Monitor**:  
   
-    1.  Scegliere **Opzioni** per modificare il numero di porta, la modalità di autenticazione o un intervallo di timeout del debugger remoto.  
+   1.  Scegliere **Opzioni** per modificare il numero di porta, la modalità di autenticazione o un intervallo di timeout del debugger remoto.  
   
-    2.  Scegliere **Autorizzazioni** per aggiungere o rimuovere utenti che dispongono di autorizzazioni per il debug remoto.  
+   2.  Scegliere **Autorizzazioni** per aggiungere o rimuovere utenti che dispongono di autorizzazioni per il debug remoto.  
   
-        > [!NOTE]
-        >  Le autorizzazioni devono essere concesse a ogni account utente che esegue il debug in modalità remota.  
+       > [!NOTE]
+       >  Le autorizzazioni devono essere concesse a ogni account utente che esegue il debug in modalità remota.  
   
- Utilizzare la **Configurazione guidata del debugger remoto** per impostare le opzioni avanzate per il debugger remoto. Per aprire la procedura guidata, scegliere **Configurazione guidata del debugger remoto** nella schermata Start.  
+   Utilizzare la **Configurazione guidata del debugger remoto** per impostare le opzioni avanzate per il debugger remoto. Per aprire la procedura guidata, scegliere **Configurazione guidata del debugger remoto** nella schermata Start.  
   
-1.  Nella pagina **Configurazione del servizio Visual Studio Remote Debugger** è possibile scegliere di eseguire il debugger remoto come servizio. Nella maggior parte dei casi, l'esecuzione come servizio non è richiesta.  
+2. Nella pagina **Configurazione del servizio Visual Studio Remote Debugger** è possibile scegliere di eseguire il debugger remoto come servizio. Nella maggior parte dei casi, l'esecuzione come servizio non è richiesta.  
   
-2.  Nella pagina **Configurazione di Windows Firewall per il debug** è possibile aggiungere o rimuovere il tipo di reti a cui dovrà connettersi il debugger remoto. Sono abilitate solo le reti a cui il dispositivo è attualmente connesso. È necessario scegliere almeno una rete.  
+3. Nella pagina **Configurazione di Windows Firewall per il debug** è possibile aggiungere o rimuovere il tipo di reti a cui dovrà connettersi il debugger remoto. Sono abilitate solo le reti a cui il dispositivo è attualmente connesso. È necessario scegliere almeno una rete.  
   
 ##  <a name="BKMK_ConnectVS"></a> Configurazione del progetto di Visual Studio per il debug remoto  
  Specificare il dispositivo remoto a cui è possibile connettersi nelle proprietà del progetto. La procedura varia in base al linguaggio di programmazione. Puoi digitare il nome di rete del dispositivo remoto o selezionarlo nella finestra di dialogo Seleziona connessione debugger remoto.  

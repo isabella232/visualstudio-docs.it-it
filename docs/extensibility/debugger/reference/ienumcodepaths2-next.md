@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::Next | Documenti Microsoft
+title: IEnumCodePaths2::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63e13ece4b91721cb391d5f7875c2799e297068b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7a58df90249cd1c4a5b41120aebefe8fc1fda6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898265"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 Restituisce il set successivo di elementi dall'enumerazione.  
@@ -54,7 +54,7 @@ int Next(
  [out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se può essere inferiore al numero di elementi richiesto sia restituiti; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   

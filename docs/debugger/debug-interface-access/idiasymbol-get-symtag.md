@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_symtag | Documenti Microsoft'
+title: Get_symtag | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 029dee2188f48d2f41368c965542670e5512f7e5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 346bfe7b0d096a9658e5063d97337349cc6a1a04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887943"
 ---
 # <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
 Recupera il classificatore di tipo di simbolo.  
@@ -34,7 +34,7 @@ HRESULT get_symTag (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce un valore di [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) enumerazione che specifica il classificatore di tipo di simbolo.  
+ [out] Restituisce un valore compreso il [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione che specifica il classificatore di tipo di simbolo.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
@@ -52,4 +52,4 @@ pType->get_symTag( &tag );
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)
+ [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Documenti Microsoft
+title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71995e38cf58c23437cbb9a6d6973fbd09cab8ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 171eda8b7c1b206ea54839366686ad43f690afe0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886474"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Crea un'istanza di un motore di debug nel server.  
@@ -49,19 +49,19 @@ int CreateInstanceInServer(
   
 #### <a name="parameters"></a>Parametri  
  `szDll`  
- [in] Percorso della dll che implementa il CLSID specificato nel `clsidObject` parametro. Se si tratta di `NULL`, quindi COM `CoCreateInstance` funzione viene chiamata.  
+ [in] Percorso della dll che implementa il CLSID specificato nella `clsidObject` parametro. Se si tratta `NULL`, quindi COM `CoCreateInstance` funzione viene chiamata.  
   
  `wLangId`  
- [in] Impostazioni locali del motore di debug. Può essere 0 se il [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) metodo non deve essere chiamato.  
+ [in] Impostazioni locali del motore di debug. Questo può essere 0 se il [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) metodo non deve essere chiamato.  
   
  `clsidObject`  
  [in] CLSID del motore di debug da creare.  
   
  `riid`  
- [in] ID di interfaccia dell'interfaccia specifica per recuperare l'oggetto della classe.  
+ [in] ID dell'interfaccia dell'interfaccia specifica per il recupero dall'oggetto classe.  
   
  `ppvObject`  
- [out] `IUnknown` interfaccia dall'oggetto istanziato. Eseguire il cast o effettuare il marshalling di questo oggetto per l'interfaccia desiderata.  
+ [out] `IUnknown` interfaccia dall'oggetto di un'istanza. Eseguire il cast o effettuare il marshalling di questo oggetto all'interfaccia desiderata.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

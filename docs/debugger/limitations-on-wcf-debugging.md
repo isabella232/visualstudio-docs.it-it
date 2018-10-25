@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 001393a856dc374d92e11ff2d4707346a35aea12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887423"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitazioni del debug di WCF
 Sono disponibili tre modalità per avviare il debug di un servizio WCF:  
   
--   Si esegue il debug di un processo client che chiama un servizio. Il debugger esegue le istruzioni del servizio. Il servizio non deve essere presente nella stessa soluzione dell'applicazione client.  
+- Si esegue il debug di un processo client che chiama un servizio. Il debugger esegue le istruzioni del servizio. Il servizio non deve essere presente nella stessa soluzione dell'applicazione client.  
   
--   Si esegue il debug di un processo client che effettua una richiesta a un servizio. Il servizio deve essere parte della soluzione.  
+- Si esegue il debug di un processo client che effettua una richiesta a un servizio. Il servizio deve essere parte della soluzione.  
   
--   Si utilizza **Connetti a processo** per connettersi a un servizio che è attualmente in esecuzione. Il debug inizia all'interno del servizio.  
+- Si utilizza **Connetti a processo** per connettersi a un servizio che è attualmente in esecuzione. Il debug inizia all'interno del servizio.  
   
- In questo argomento vengono descritte le limitazioni di questi scenari.  
+  In questo argomento vengono descritte le limitazioni di questi scenari.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitazioni dell'esecuzione di istruzioni in un servizio  
  Per eseguire istruzioni in un servizio da un'applicazione client di cui si esegue il debug, è necessario soddisfare le seguenti condizioni:  
@@ -61,19 +61,19 @@ Sono disponibili tre modalità per avviare il debug di un servizio WCF:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitazioni della connessione automatica a un servizio  
  La connessione automatica a un servizio presenta le limitazioni riportate di seguito:  
   
--   Il servizio deve essere parte della soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di cui si esegue il debug.  
+- Il servizio deve essere parte della soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di cui si esegue il debug.  
   
--   Il servizio deve essere ospitato. Può far parte di un progetto di sito Web (File System e HTTP), il progetto di applicazione Web (File System e HTTP) o progetto libreria di servizi WCF. I progetti di libreria di servizi WCF possono essere librerie di servizi o librerie di servizi di flusso di lavoro.  
+- Il servizio deve essere ospitato. Può far parte di un progetto di sito Web (File System e HTTP), il progetto di applicazione Web (File System e HTTP) o progetto libreria di servizi WCF. I progetti di libreria di servizi WCF possono essere librerie di servizi o librerie di servizi di flusso di lavoro.  
   
--   Il servizio deve essere richiamato da un client WCF.  
+- Il servizio deve essere richiamato da un client WCF.  
   
--   È necessario abilitare il debug con il codice riportato di seguito nel file app.config o web.config:  
+- È necessario abilitare il debug con il codice riportato di seguito nel file app.config o web.config:  
   
-    ```xml
-    <system.web>  
-      <compilation debug="true" />  
-    <system.web>  
-    ```  
+  ```xml
+  <system.web>  
+    <compilation debug="true" />  
+  <system.web>  
+  ```  
   
 ## <a name="self-hosting"></a>Self-hosting  
  Oggetto *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, l'Host del servizio WCF o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Per informazioni su come eseguire il debug di un servizio self-hosted, vedere [procedura: eseguire il Debug di un servizio WCF Self-Hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  

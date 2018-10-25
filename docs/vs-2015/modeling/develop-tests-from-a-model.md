@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825116"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ ms.locfileid: "49236756"
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Per collegare i test a un caso di utilizzo  
   
-1.  In [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] creare un requisito e usarlo come base per un gruppo di test. Per informazioni su come eseguire questa operazione, vedere [test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. In [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] creare un requisito e usarlo come base per un gruppo di test. Per informazioni su come eseguire questa operazione, vedere [test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per altre informazioni, vedere [tenere traccia del lavoro tramite Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per altre informazioni, vedere [tenere traccia del lavoro tramite Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Collegare l'elemento di lavoro requisito a uno o più casi di utilizzo del modello.  
+2. Collegare l'elemento di lavoro requisito a uno o più casi di utilizzo del modello.  
   
-     In un diagramma caso di utilizzo, fare doppio clic su un caso d'uso e quindi fare clic su **Collega a elemento di lavoro**. Per altre informazioni, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).  
+    In un diagramma caso di utilizzo, fare doppio clic su un caso d'uso e quindi fare clic su **Collega a elemento di lavoro**. Per altre informazioni, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Aggiungere al gruppo di test i test case che verificano i casi di utilizzo.  
+3. Aggiungere al gruppo di test i test case che verificano i casi di utilizzo.  
   
- In genere, ogni elemento di lavoro storia utente o requisito viene collegato a diversi casi di utilizzo del modello e ogni caso di utilizzo viene collegato a diverse storie utente o diversi requisiti. Ogni storia utente o requisito riguarda infatti un set di attività che sviluppano diversi casi di utilizzo. Ad esempio, in una prima iterazione del progetto, è possibile sviluppare la storia utente di base in cui un cliente può scegliere gli elementi da un catalogo e richiederne la consegna. In un'iterazione successiva la storia potrebbe essere sviluppata in modo tale che l'utente paghi al completamento dell'ordine e il fornitore riceva il denaro dopo avere inviato i prodotti.  Ogni storia aggiunge una clausola alla postcondizione del caso di utilizzo Ordinazione prodotti.  
+   In genere, ogni elemento di lavoro storia utente o requisito viene collegato a diversi casi di utilizzo del modello e ogni caso di utilizzo viene collegato a diverse storie utente o diversi requisiti. Ogni storia utente o requisito riguarda infatti un set di attività che sviluppano diversi casi di utilizzo. Ad esempio, in una prima iterazione del progetto, è possibile sviluppare la storia utente di base in cui un cliente può scegliere gli elementi da un catalogo e richiederne la consegna. In un'iterazione successiva la storia potrebbe essere sviluppata in modo tale che l'utente paghi al completamento dell'ordine e il fornitore riceva il denaro dopo avere inviato i prodotti.  Ogni storia aggiunge una clausola alla postcondizione del caso di utilizzo Ordinazione prodotti.  
   
- È possibile creare collegamenti separati dai requisiti alle clausole della postcondizione scrivendo le clausole in commenti separati nel diagramma caso di utilizzo. È possibile collegare ogni commento a un elemento di lavoro requisito e collegare il commento al caso di utilizzo nel diagramma.  
+   È possibile creare collegamenti separati dai requisiti alle clausole della postcondizione scrivendo le clausole in commenti separati nel diagramma caso di utilizzo. È possibile collegare ogni commento a un elemento di lavoro requisito e collegare il commento al caso di utilizzo nel diagramma.  
   
 ### <a name="base-tests-on-the-requirements-types"></a>Creare test in base ai tipi di requisiti  
  I tipi, ovvero classi, interfacce ed enumerazioni, di un modello di requisiti descrivono i concetti e le relazioni delineando cosa pensano gli utenti dell'azienda e come comunicano la propria idea. Sono esclusi i tipi riguardanti solo la progettazione interna del sistema.  

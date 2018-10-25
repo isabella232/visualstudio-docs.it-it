@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892780"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Controlli Windows Form in panoramica di documenti di Office
   I controlli Windows Form sono oggetti con cui gli utenti possono interagire per immettere o modificare i dati. Nei progetti a livello di documento per Microsoft Office Excel e Microsoft Office Word, è possibile aggiungere controlli Windows Form al documento o cartella di lavoro nel progetto in fase di progettazione oppure è possibile aggiungere questi controlli a livello di codice in fase di esecuzione. A livello di codice, è possibile aggiungere questi controlli a qualsiasi documento aperto o foglio di lavoro in fase di esecuzione in un componente aggiuntivo VSTO per Excel o Word.  
@@ -52,25 +52,25 @@ ms.locfileid: "35672433"
  In un documento.  
  -   Per fare in modo che i controlli siano visualizzati costantemente.  
   
--   Per consentire agli utenti di immettere dati direttamente nel documento, ad esempio in documenti basati su form in cui l'area di modifica è bloccata.  
+- Per consentire agli utenti di immettere dati direttamente nel documento, ad esempio in documenti basati su form in cui l'area di modifica è bloccata.  
   
--   Per visualizzare i controlli in linea con i dati nel documento. Ad esempio, se si aggiungono pulsanti a ogni riga di un oggetto elenco, è consigliabile che siano allineati alle singole voci dell'elenco.  
+- Per visualizzare i controlli in linea con i dati nel documento. Ad esempio, se si aggiungono pulsanti a ogni riga di un oggetto elenco, è consigliabile che siano allineati alle singole voci dell'elenco.  
   
- Nel riquadro azioni o in un riquadro attività personalizzato  
- -   Per fornire informazioni contestuali all'utente.  
+  Nel riquadro azioni o in un riquadro attività personalizzato  
+  -   Per fornire informazioni contestuali all'utente.  
   
--   Per fare in modo che nel documento vengano visualizzati solo i risultati e non i controlli e i dati di query.  
+- Per fare in modo che nel documento vengano visualizzati solo i risultati e non i controlli e i dati di query.  
   
--   Per assicurarsi che i controlli non vengano stampati con il documento.  
+- Per assicurarsi che i controlli non vengano stampati con il documento.  
   
--   Per assicurarsi che i controlli non interferiscano con la visualizzazione del documento.  
+- Per assicurarsi che i controlli non interferiscano con la visualizzazione del documento.  
   
- In un Windows Form  
- -   Per poter controllare le dimensioni dell'interfaccia utente.  
+  In un Windows Form  
+  -   Per poter controllare le dimensioni dell'interfaccia utente.  
   
--   Per impedire agli utenti di nascondere o eliminare i controlli.  
+- Per impedire agli utenti di nascondere o eliminare i controlli.  
   
--   Per ottenere l'input dall'utente e impedire a quest'ultimo di eseguire qualsiasi operazione nel documento fino a quando non viene ricevuto l'input.  
+- Per ottenere l'input dall'utente e impedire a quest'ultimo di eseguire qualsiasi operazione nel documento fino a quando non viene ricevuto l'input.  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>Aggiungere controlli Windows Form a livello di codice  
  È possibile aggiungere controlli Windows Form ai documenti Word e fogli di lavoro di Excel in fase di esecuzione. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] fornisce metodi helper per l'aggiunta dei controlli Windows Form più comuni. Questi metodi helper consentono di aggiungere rapidamente controlli a un documento di Office e di accedere alle funzionalità combinate dei controlli Windows Form e alle funzionalità correlate a Office di questi controlli.  
@@ -134,13 +134,13 @@ ms.locfileid: "35672433"
   
  Quando si aggiunge un controllo a un documento di Word in fase di esecuzione, è possibile specificare lo stile di layout del nuovo controllo usando diversi `Add` \< *classe del controllo*> esegue l'overload del metodo di <xref:Microsoft.Office.Tools.Word.ControlCollection> classe:  
   
--   Per aggiungere il controllo in linea con testo, usare un overload che accetta un oggetto <xref:Microsoft.Office.Interop.Word.Range> che specifica la posizione del controllo.  
+- Per aggiungere il controllo in linea con testo, usare un overload che accetta un oggetto <xref:Microsoft.Office.Interop.Word.Range> che specifica la posizione del controllo.  
   
--   Per aggiungere il controllo come forma mobile, usare un overload che accetta la coordinata superiore e la coordinata sinistra del controllo.  
+- Per aggiungere il controllo come forma mobile, usare un overload che accetta la coordinata superiore e la coordinata sinistra del controllo.  
   
- Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Se si apre un modello di Word nella finestra di progettazione di Visual Studio, i controlli non inline nel modello potrebbero non essere visibili perché Visual Studio apre il modello in visualizzazione **Normale** . Per visualizzare i controlli, modificare la visualizzazione in **Layout di stampa**.  
+  Se si apre un modello di Word nella finestra di progettazione di Visual Studio, i controlli non inline nel modello potrebbero non essere visibili perché Visual Studio apre il modello in visualizzazione **Normale** . Per visualizzare i controlli, modificare la visualizzazione in **Layout di stampa**.  
   
 ### <a name="controls-outside-the-main-document-body"></a>Controlli all'esterno del corpo principale del documento  
  I controlli Windows Form non sono supportati all'interno di un'intestazione o piè di pagina o di un documento secondario.  

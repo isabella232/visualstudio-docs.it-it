@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 432246ed1cbb11589e9a42a5fce90cd2e7239223
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2bd14e4d052179df8a61dfa4b418f07b0f31e3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672235"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893598"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usare set di regole per specificare le regole C++ da eseguire
 
@@ -34,11 +34,11 @@ Per creare una nuova regola personalizzata impostata, è necessario salvarlo con
 
 3. Nel **del Set di regole** riepilogo, effettuare una delle operazioni seguenti:
 
-    - Scegliere il set di regole che si desidera personalizzare.
+   - Scegliere il set di regole che si desidera personalizzare.
 
      \- oppure -
 
-    - Scegli  **\<Sfoglia >** per specificare set di una regola esistente non incluso nell'elenco.
+   - Scegli  **\<Sfoglia >** per specificare set di una regola esistente non incluso nell'elenco.
 
 4. Scegli **aperto** per visualizzare le regole nell'editor set di regole.
 

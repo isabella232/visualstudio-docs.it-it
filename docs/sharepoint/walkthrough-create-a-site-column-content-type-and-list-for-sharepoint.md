@@ -24,29 +24,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900124"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint
   Le procedure seguenti illustrano come creare colonne personalizzate del sito di SharePoint, oppure *campi*, oltre a un tipo di contenuto che utilizza le colonne del sito. Viene inoltre illustrato come creare un elenco che usa il nuovo tipo di contenuto.  
   
  In questa procedura dettagliata sono incluse le attività seguenti:  
   
--   [Creazione di colonne del sito personalizzate](#BKMK_CreatingCustSiteCols).  
+- [Creazione di colonne del sito personalizzate](#BKMK_CreatingCustSiteCols).  
   
--   [Creazione di un tipo di contenuto personalizzato](#BKMK_CreateCustContType).  
+- [Creazione di un tipo di contenuto personalizzato](#BKMK_CreateCustContType).  
   
--   [Creazione di un elenco](#BKMK_CreateList).  
+- [Creazione di un elenco](#BKMK_CreateList).  
   
--   [Creazione di un elenco](#BKMK_CreateList).  
+- [Creazione di un elenco](#BKMK_CreateList).  
   
--   [Test dell'applicazione](#BKMK_TestApp).  
+- [Test dell'applicazione](#BKMK_TestApp).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  

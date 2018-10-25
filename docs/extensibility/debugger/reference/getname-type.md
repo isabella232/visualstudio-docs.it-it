@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE | Documenti Microsoft
+title: GETNAME_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17cd40938d177f3ea74af13bd84fcf1b873dd650
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40ee5cb4bf552b04683c4c2119a8c43a595b2105
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900306"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Specifica il tipo di nome di file da recuperare.  
@@ -69,7 +69,7 @@ public enum enum_GETNAME_TYPE {
  Specifica il nome dell'URL del documento o del contesto.  
   
  GN_TITLE  
- Specifica il titolo del documento, se presente.  
+ Specifica un titolo del documento, se presente.  
   
  GN_STARTPAGEURL  
  Ottiene l'URL della pagina iniziale per i processi.  
