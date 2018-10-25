@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937889"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 ## <a name="document-outline-window"></a>Finestra Struttura documento  
  La finestra Struttura documento nella finestra di progettazione XAML permette di eseguire le operazioni seguenti:  
   
--   Visualizzare la struttura gerarchica di tutti gli elementi sulla tavola da disegno.  
+- Visualizzare la struttura gerarchica di tutti gli elementi sulla tavola da disegno.  
   
--   Selezionare gli elementi in modo da poterli modificare, ossia spostarli nella gerarchia, modificarli sulla tavola da disegno, impostarne le proprietà nella finestra Proprietà e così via. Per ulteriori informazioni, vedere [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).  
+- Selezionare gli elementi in modo da poterli modificare, ossia spostarli nella gerarchia, modificarli sulla tavola da disegno, impostarne le proprietà nella finestra Proprietà e così via. Per ulteriori informazioni, vedere [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).  
   
--   Creare e modificare modelli per gli elementi che sono controlli.  
+- Creare e modificare modelli per gli elementi che sono controlli.  
   
--   Usare il menu contestuale per gli elementi selezionati. Lo stesso menu è disponibile anche per gli elementi selezionati nella tavola da disegno.  
+- Usare il menu contestuale per gli elementi selezionati. Lo stesso menu è disponibile anche per gli elementi selezionati nella tavola da disegno.  
   
- Per visualizzare la finestra Struttura documento, scegliere **Visualizza**, **Altre finestre**, **Struttura documento**sulla barra dei menu.  
+  Per visualizzare la finestra Struttura documento, scegliere **Visualizza**, **Altre finestre**, **Struttura documento**sulla barra dei menu.  
   
- ![Finestra Struttura documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![Finestra Struttura documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- Le opzioni della finestra Struttura documento sono le seguenti:  
+  Le opzioni della finestra Struttura documento sono le seguenti:  
   
- **Struttura documento**  
- La visualizzazione principale nella finestra Struttura documento mostra la gerarchia di un documento in una struttura ad albero. È possibile usare la natura gerarchica della struttura documento per esaminare il documento con diversi livelli di dettaglio e per bloccare e nascondere gli elementi singolarmente o in gruppo.  
+  **Struttura documento**  
+  La visualizzazione principale nella finestra Struttura documento mostra la gerarchia di un documento in una struttura ad albero. È possibile usare la natura gerarchica della struttura documento per esaminare il documento con diversi livelli di dettaglio e per bloccare e nascondere gli elementi singolarmente o in gruppo.  
   
- **Mostra/Nascondi**  
- Visualizza o nasconde gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Usare i pulsanti **Mostra/Nascondi** (identificati, quando gli elementi sono visualizzati, dal simbolo di un occhio) oppure premere CTRL+H per nascondere gli elementi e MAIUSC+CTRL+H per visualizzarli.  
+  **Mostra/Nascondi**  
+  Visualizza o nasconde gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Usare i pulsanti **Mostra/Nascondi** (identificati, quando gli elementi sono visualizzati, dal simbolo di un occhio) oppure premere CTRL+H per nascondere gli elementi e MAIUSC+CTRL+H per visualizzarli.  
   
- **Blocca/Sblocca**  
- Blocca o sblocca gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Gli elementi bloccati non possono essere modificati. Usare i pulsanti **Blocca/Sblocca** (identificati, quando è applicato il blocco, dal simbolo di un lucchetto) oppure premere CTRL+L per bloccare gli elementi e MAIUSC+CTRL+L per sbloccarli.  
+  **Blocca/Sblocca**  
+  Blocca o sblocca gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Gli elementi bloccati non possono essere modificati. Usare i pulsanti **Blocca/Sblocca** (identificati, quando è applicato il blocco, dal simbolo di un lucchetto) oppure premere CTRL+L per bloccare gli elementi e MAIUSC+CTRL+L per sbloccarli.  
   
- **Reimposta l'ambito pageRoot**  
- L'opzione nella parte superiore della finestra Struttura documento, con il simbolo di una freccia rivolta verso l'alto, reimposta l'ambito precedente per la struttura del documento. Questa operazione può essere eseguita solo nell'ambito di uno stile o di un modello.  
+  **Reimposta l'ambito pageRoot**  
+  L'opzione nella parte superiore della finestra Struttura documento, con il simbolo di una freccia rivolta verso l'alto, reimposta l'ambito precedente per la struttura del documento. Questa operazione può essere eseguita solo nell'ambito di uno stile o di un modello.  
   
 ## <a name="properties-window"></a>Finestra Proprietà  
  La finestra Proprietà consente di impostare valori di proprietà sui controlli e ha l'aspetto seguente:  

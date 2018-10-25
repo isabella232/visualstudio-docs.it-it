@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetAttachedSessionName | Documenti Microsoft
+title: IDebugProcess2::GetAttachedSessionName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34e404fe33858c1db7d9dfb103df7b4e0bb9fb91
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89f1ea6e91176486c55ca2d84188e8183278cc1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928984"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
-Ottiene il nome della sessione che il debug di questo processo. L'IDE è possibile visualizzare queste informazioni a un utente che il debug di un processo specifico in un computer specifico.  
+Ottiene il nome della sessione che sta eseguendo il debug questo processo. Un IDE per visualizzare queste informazioni a un utente che il debug di un processo specifico in un computer specifico.  
   
 > [!NOTE]
 >  Questo metodo è deprecato e la relativa implementazione deve sempre restituire `E_NOTIMPL`.  

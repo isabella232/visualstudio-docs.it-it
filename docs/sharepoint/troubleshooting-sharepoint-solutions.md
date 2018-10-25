@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928958"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Risolvere i problemi di soluzioni SharePoint
   Potrebbero verificarsi i problemi o gli avvisi seguenti durante il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Per altre informazioni, vedere [debug delle soluzioni di flusso di lavoro di SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -53,21 +53,21 @@ ms.locfileid: "37118933"
 ### <a name="resolution"></a>Risoluzione  
  Per i nomi di progetti e di elementi di progetto di SharePoint, utilizzare solo i caratteri seguenti:  
   
--   Caratteri ASCII alfanumerici  
+- Caratteri ASCII alfanumerici  
   
--   Spazio  
+- Spazio  
   
--   Punto (.)  
+- Punto (.)  
   
--   Virgola ()  
+- Virgola ()  
   
--   Carattere di sottolineatura (_)  
+- Carattere di sottolineatura (_)  
   
--   Trattino (-)  
+- Trattino (-)  
   
--   Barra rovesciata (\\)  
+- Barra rovesciata (\\)  
   
- Quando viene creato un pacchetto di un progetto, tramite una regola di convalida viene verificato che nella proprietà del percorso di distribuzione per ogni file distribuito siano contenuti solo questi caratteri validi.  
+  Quando viene creato un pacchetto di un progetto, tramite una regola di convalida viene verificato che nella proprietà del percorso di distribuzione per ogni file distribuito siano contenuti solo questi caratteri validi.  
   
 ## <a name="errors-when-creating-custom-fields"></a>Errori durante la creazione di campi personalizzati
  I campi personalizzati in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono definiti in XML. Si possono verificare errori se un campo non è definito o non vi viene fatto riferimento tramite un formato specifico.  
@@ -147,15 +147,15 @@ ms.locfileid: "37118933"
 ### <a name="resolution"></a>Risoluzione  
  Questo problema si verifica perché l'ambito della funzionalità deve essere "Sito" per gestire gli eventi a livello di sito, ma l'ambito della funzionalità predefinita per i progetti di ricevitore di eventi è "Web". Gli eventi Web interessati sono:  
   
--   Un sito viene eliminato (WebDeleting)  
+- Un sito viene eliminato (WebDeleting)  
   
--   Un sito è stato eliminato (WebDeleted)  
+- Un sito è stato eliminato (WebDeleted)  
   
--   Un sito viene spostato (WebMoving)  
+- Un sito viene spostato (WebMoving)  
   
--   È stato spostato un sito (WebMoved)  
+- È stato spostato un sito (WebMoved)  
   
- Per risolvere il problema, modificare l'ambito di funzionalità del ricevitore di eventi, come indicato di seguito.  
+  Per risolvere il problema, modificare l'ambito di funzionalità del ricevitore di eventi, come indicato di seguito.  
   
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Per modificare l'ambito di funzionalità del ricevitore di eventi  
   
@@ -215,7 +215,7 @@ ms.locfileid: "37118933"
  Questo problema si verifica se si rinomina un'istanza di elenco importata e quindi eseguirlo [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Messaggio di errore
- Errore di compilazione: si è verificato un errore in fase di distribuzione 'Attivare la funzionalità': il file Template\Features\\[*Importa progetto**funzionalità**name*] \Files\Lists\\[*vecchio * * nome elenco*] \Schema.xml non esiste.  
+ Errore di compilazione: si è verificato un errore in fase di distribuzione 'Attivare la funzionalità': il file Template\Features\\[*Importa progetto*<em>caratteristica</em>*nome*] \Files\Lists \\[*vecchio*<em>nome dell'elenco</em>] \Schema.xml non esiste.  
   
 ### <a name="resolution"></a>Risoluzione  
  Quando si importa un'istanza di elenco, un attributo denominato CustomSchema viene aggiunto al file Elements. XML dell'istanza di elenco. Elements. XML include il percorso di un file schema. XML personalizzato per l'istanza di elenco. Quando si rinomina l'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], viene modificato il percorso di distribuzione per il file schema. XML personalizzato, ma il valore di percorso dell'attributo CustomSchema non viene aggiornato. Di conseguenza, l'istanza di elenco non è stato trovato il *schema* file nel vecchio percorso specificato dall'attributo CustomSchema quando la funzionalità viene attivata.  

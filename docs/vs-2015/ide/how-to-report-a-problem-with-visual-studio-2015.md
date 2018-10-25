@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941243"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Come segnalare un problema con Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Se si verifica un problema con Visual Studio 2015, è necessario conoscere in mo
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  Inserire un titolo descrittivo per il problema in modo da consentirne l'invio al team di Visual Studio dedicato.  
+1. Inserire un titolo descrittivo per il problema in modo da consentirne l'invio al team di Visual Studio dedicato.  
   
-2.  Fornire eventuali dettagli aggiuntivi e, se possibile, la procedura per riprodurre il problema.  
+2. Fornire eventuali dettagli aggiuntivi e, se possibile, la procedura per riprodurre il problema.  
   
-3.  Scegliere un'area collegata al problema nell'elenco a discesa. Se non si è certi, scegliere l'opzione più probabile.  
+3. Scegliere un'area collegata al problema nell'elenco a discesa. Se non si è certi, scegliere l'opzione più probabile.  
   
- ![Finestra di dialogo Segnala un problema](../ide/media/report-a-problem-dialog.png "Finestra di dialogo Segnala un problema")  
+   ![Finestra di dialogo Segnala un problema](../ide/media/report-a-problem-dialog.png "Finestra di dialogo Segnala un problema")  
   
 ## <a name="provide-a-screenshot-optional"></a>Aggiungere uno screenshot (facoltativo)  
  Scegliere **Includi uno screenshot** per inviare la schermata corrente a Microsoft. Lo strumento consente di ritagliare l'immagine per visualizzare solo la parte della schermata che illustra il problema. È possibile allegare altri screenshot o altri file facendo clic sul pulsante **Allega altri file**.  

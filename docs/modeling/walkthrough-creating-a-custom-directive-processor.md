@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930323"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procedura dettagliata: Creare un processore di direttiva personalizzato
 
@@ -656,19 +656,22 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      La chiave del Registro di sistema deve contenere i valori seguenti:
 
-    |nome|Tipo|Dati|
-    |----------|----------|----------|
-    |(Predefinito)|REG_SZ|(valore non impostato)|
-    |Classe|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |CodeBase|REG_SZ|**\<Percorso alla soluzione >** CustomDP\bin\Debug\CustomDP.dll|
+
+   | nome | Tipo | Dati |
+   |-|-|-|
+   | (Predefinito) | REG_SZ | (valore non impostato) |
+   | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | CodeBase | REG_SZ | <strong>\<Percorso alla soluzione ></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      Se si è inserito l'assembly nella GAC, i valori appariranno come indicato di seguito:
 
-    |nome|Tipo|Dati|
-    |----------|----------|----------|
-    |(Predefinito)|REG_SZ|(valore non impostato)|
-    |Classe|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |Assembly|REG_SZ|CustomDP.dll|
+
+   | nome | Tipo | Dati |
+   |-|-|-|
+   | (Predefinito) | REG_SZ | (valore non impostato) |
+   | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Assembly | REG_SZ | CustomDP.dll |
+
 
 6. Riavviare Visual Studio.
 

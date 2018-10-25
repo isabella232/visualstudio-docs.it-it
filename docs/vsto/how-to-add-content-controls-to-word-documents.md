@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d3cce301d5d49a7660751ee1580c99794c16d38
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936966"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Procedura: aggiungere contenuto controlli ai documenti di Word
   Nei progetti di Word a livello di documento, è possibile aggiungere controlli contenuto al documento nel progetto in fase di progettazione o in fase di esecuzione. Nei progetti di componente aggiuntivo VSTO per Word, è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione.  
@@ -43,24 +43,24 @@ ms.locfileid: "35672334"
   
  Questo argomento descrive le attività seguenti:  
   
--   [Aggiungere controlli contenuto in fase di progettazione](#designtime)  
+- [Aggiungere controlli contenuto in fase di progettazione](#designtime)  
   
--   [Aggiungere controlli contenuto in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)  
+- [Aggiungere controlli contenuto in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)  
   
--   [Aggiungere controlli contenuto in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)  
+- [Aggiungere controlli contenuto in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)  
   
- Per informazioni sui controlli contenuto, vedere [dei controlli contenuto](../vsto/content-controls.md).  
+  Per informazioni sui controlli contenuto, vedere [dei controlli contenuto](../vsto/content-controls.md).  
   
 ##  <a name="designtime"></a> Aggiungere contenuto controlli in fase di progettazione  
  Sono disponibili varie modalità di aggiunta di controlli contenuto al documento in un progetto a livello di documento in fase di progettazione:  
   
--   Aggiungere un controllo contenuto dalla scheda **Controlli Word** della **Casella degli strumenti**.  
+- Aggiungere un controllo contenuto dalla scheda **Controlli Word** della **Casella degli strumenti**.  
   
--   Aggiungere un controllo contenuto al documento nello stesso modo in cui si aggiunge un controllo contenuto nativo in Word.  
+- Aggiungere un controllo contenuto al documento nello stesso modo in cui si aggiunge un controllo contenuto nativo in Word.  
   
--   Trascinare un controllo contenuto nel documento dalla finestra **Origini dati** . Questa modalità è utile quando si vuole associare il controllo ai dati al momento della creazione del controllo. Per altre informazioni, vedere [procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md) e [procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+- Trascinare un controllo contenuto nel documento dalla finestra **Origini dati** . Questa modalità è utile quando si vuole associare il controllo ai dati al momento della creazione del controllo. Per altre informazioni, vedere [procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md) e [procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>Per aggiungere un controllo contenuto a un documento tramite la casella degli strumenti  
   
@@ -100,13 +100,13 @@ ms.locfileid: "35672334"
 ##  <a name="runtimedoclevel"></a> Aggiungere controlli contenuto in fase di esecuzione in un progetto a livello di documento  
  È possibile aggiungere a livello di codice i controlli contenuto al documento in fase di esecuzione usando metodi del <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> proprietà del `ThisDocument` classe nel progetto. Ogni metodo ha tre overload che è possibile usare per aggiungere un controllo contenuto nei modi seguenti:  
   
--   Aggiungere un controllo in corrispondenza della selezione corrente.  
+- Aggiungere un controllo in corrispondenza della selezione corrente.  
   
--   Aggiungere un controllo in corrispondenza di un intervallo specificato.  
+- Aggiungere un controllo in corrispondenza di un intervallo specificato.  
   
--   Aggiungere un controllo basato su un controllo contenuto nativo nel documento.  
+- Aggiungere un controllo basato su un controllo contenuto nativo nel documento.  
   
- I controlli contenuto creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un controllo contenuto nativo rimane nel documento. È possibile ricreare un controllo contenuto basato su un controllo contenuto nativo alla successiva apertura del documento. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  I controlli contenuto creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un controllo contenuto nativo rimane nel documento. È possibile ricreare un controllo contenuto basato su un controllo contenuto nativo alla successiva apertura del documento. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 > [!NOTE]  
 >  Per aggiungere un controllo contenuto casella di controllo a un documento in un progetto di Word 2010, è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> . Per altre informazioni, vedere [dei controlli contenuto](../vsto/content-controls.md).  
@@ -141,15 +141,15 @@ ms.locfileid: "35672334"
 ##  <a name="runtimeaddin"></a> Aggiungere controlli contenuto in fase di esecuzione in un progetto di componente aggiuntivo VSTO  
  È possibile aggiungere controlli contenuto a livello di codice a qualsiasi documento aperto in fase di esecuzione usando un componente aggiuntivo VSTO. A tale scopo, generare un elemento host <xref:Microsoft.Office.Tools.Word.Document> basato su un documento aperto e quindi usare i metodi della proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> di tale elemento host. Ogni metodo ha tre overload che è possibile usare per aggiungere un controllo contenuto nei modi seguenti:  
   
--   Aggiungere un controllo in corrispondenza della selezione corrente.  
+- Aggiungere un controllo in corrispondenza della selezione corrente.  
   
--   Aggiungere un controllo in corrispondenza di un intervallo specificato.  
+- Aggiungere un controllo in corrispondenza di un intervallo specificato.  
   
--   Aggiungere un controllo basato su un controllo contenuto nativo nel documento.  
+- Aggiungere un controllo basato su un controllo contenuto nativo nel documento.  
   
- I controlli contenuto creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un controllo contenuto nativo rimane nel documento. È possibile ricreare un controllo contenuto basato su un controllo contenuto nativo alla successiva apertura del documento. Per altre informazioni, vedere [mantengono i controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  I controlli contenuto creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un controllo contenuto nativo rimane nel documento. È possibile ricreare un controllo contenuto basato su un controllo contenuto nativo alla successiva apertura del documento. Per altre informazioni, vedere [mantengono i controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- Per altre informazioni sulla generazione di elementi host nei progetti di componente aggiuntivo VSTO, vedere [estendere documenti Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+  Per altre informazioni sulla generazione di elementi host nei progetti di componente aggiuntivo VSTO, vedere [estendere documenti Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 > [!NOTE]  
 >  Per aggiungere un controllo contenuto casella di controllo a un documento è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> . Per altre informazioni, vedere [dei controlli contenuto](../vsto/content-controls.md).  

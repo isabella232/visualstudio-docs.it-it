@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948777"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Procedura dettagliata: Aggiungere ricevitori di eventi
   Ricevitori di eventi sono metodi che vengono eseguite quando si verifica uno degli eventi correlati alle funzionalità seguenti in SharePoint:
 
--   Una funzionalità viene installata.
+- Una funzionalità viene installata.
 
--   Una funzionalità viene attivata.
+- Una funzionalità viene attivata.
 
--   Una funzionalità viene disattivata.
+- Una funzionalità viene disattivata.
 
--   Una funzionalità è stata rimossa.
+- Una funzionalità è stata rimossa.
 
- Questa procedura dettagliata illustra come aggiungere un ricevitore di eventi a una funzionalità in un progetto SharePoint. Vengono illustrate le attività seguenti:
+  Questa procedura dettagliata illustra come aggiungere un ricevitore di eventi a una funzionalità in un progetto SharePoint. Vengono illustrate le attività seguenti:
 
--   Creazione di un progetto vuoto con un ricevitore di eventi.
+- Creazione di un progetto vuoto con un ricevitore di eventi.
 
--   La gestione di **FeatureDeactivating** (metodo).
+- La gestione di **FeatureDeactivating** (metodo).
 
--   Utilizzo del modello oggetto di progetto SharePoint per aggiungere un annuncio all'elenco degli annunci.
+- Utilizzo del modello oggetto di progetto SharePoint per aggiungere un annuncio all'elenco degli annunci.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:

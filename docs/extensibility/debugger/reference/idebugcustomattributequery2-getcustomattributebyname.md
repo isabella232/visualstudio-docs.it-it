@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Documenti Microsoft
+title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b61cb7304f6fed3e2f3da55b94450c58bfc53334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39d50c7a6bb7f7101bfb7bb1860319d8c0dbdfe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949526"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-Ottiene i byte di attributi personalizzati specificati il nome dell'attributo personalizzato.  
+Ottiene i byte di attributi personalizzati, dato il nome dell'attributo personalizzato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -51,17 +51,17 @@ int GetCustomAttributeByName(
  [in, out] Matrice che viene compilata con i byte di attributo personalizzato.  
   
  `pdwLen`  
- [in, out] Specifica il numero massimo di byte per restituire il `ppBlob` della matrice e restituisce il numero di byte effettivamente scritti nella matrice.  
+ [in, out] Specifica il numero massimo di byte da restituire nel `ppBlob` della matrice e restituisce il numero di byte effettivamente scritti nella matrice.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK o S_FALSE se l'attributo personalizzato non esiste. In caso contrario, verrà restituito un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se l'attributo personalizzato non esiste. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  Impostare il `ppBlob` attributi di parametro con un valore null per restituire il numero di byte disponibili. Quindi allocare una matrice e passare la matrice in per il `ppBlob` parametro.  
   
  I byte di attributo rappresentano i dati non elaborati dell'attributo personalizzato.  
   
- Se il `ppBlob` e `pdwLen` i parametri sono impostati su un valore null, questo metodo può essere utilizzato per determinare se l'attributo personalizzato è semplicemente esiste. Un'alternativa più semplice, tuttavia, consiste nel chiamare il [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) metodo.  
+ Se il `ppBlob` e `pdwLen` parametri vengono impostati su un valore null, questo metodo può essere utilizzato per determinare se esiste semplicemente l'attributo personalizzato. Un'alternativa più semplice, tuttavia, consiste nel chiamare il [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   

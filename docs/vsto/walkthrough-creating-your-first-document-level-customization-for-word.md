@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928815"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Procedura dettagliata: Creare una personalizzazione a livello di documento per Word
   Questa procedura dettagliata introduttiva mostra come creare una personalizzazione a livello di documento per Microsoft Office Word. Le funzionalità create in questo tipo di soluzione sono disponibili solo quando si apre un documento specifico. Una personalizzazione a livello di documento non può essere usata per apportare modifiche a un'intera applicazione, ad esempio per visualizzare una nuova scheda della barra multifunzione quando si apre un documento qualsiasi.  
@@ -31,17 +31,17 @@ ms.locfileid: "38778107"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Creazione di un progetto relativo al documento di Word  
+- Creazione di un progetto relativo al documento di Word  
   
--   Aggiunta di testo al documento ospitato nella finestra di progettazione di Visual Studio.  
+- Aggiunta di testo al documento ospitato nella finestra di progettazione di Visual Studio.  
   
--   Scrittura di codice che usa il modello a oggetti di Word per aggiungere testo al documento personalizzato quando quest'ultimo viene aperto.  
+- Scrittura di codice che usa il modello a oggetti di Word per aggiungere testo al documento personalizzato quando quest'ultimo viene aperto.  
   
--   Creazione ed esecuzione del progetto a scopo di test.  
+- Creazione ed esecuzione del progetto a scopo di test.  
   
--   Pulizia del progetto per rimuovere dal computer di sviluppo le impostazioni di sicurezza e i file di compilazione non necessari.  
+- Pulizia del progetto per rimuovere dal computer di sviluppo le impostazioni di sicurezza e i file di compilazione non necessari.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -101,7 +101,7 @@ ms.locfileid: "38778107"
   
 -   Una definizione parziale della classe `ThisDocument`, che rappresenta il modello di programmazione del documento e consente di accedere al modello a oggetti di Word. Per altre informazioni, vedere [elemento host Document](../vsto/document-host-item.md) e [Cenni preliminari sul modello a oggetti di Word](../vsto/word-object-model-overview.md). Il resto della classe `ThisDocument` viene definito in un file di codice nascosto che l'utente non deve modificare.  
   
--   I gestori eventi `ThisDocument_Startup` e `ThisDocument_Shutdown`. Questi gestori eventi vengono chiamati quando il documento viene aperto o chiuso. Possono essere usati per inizializzare la personalizzazione quando il documento viene aperto e per liberare le risorse usate dalla personalizzazione quando il documento viene chiuso. Per altre informazioni, vedere [gli eventi nei progetti di Office](../vsto/events-in-office-projects.md).  
+-   I gestori eventi `ThisDocument_Startup` e `ThisDocument_Shutdown` . Questi gestori eventi vengono chiamati quando il documento viene aperto o chiuso. Possono essere usati per inizializzare la personalizzazione quando il documento viene aperto e per liberare le risorse usate dalla personalizzazione quando il documento viene chiuso. Per altre informazioni, vedere [gli eventi nei progetti di Office](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Per aggiungere nel documento un secondo paragrafo di testo usando il codice  
   

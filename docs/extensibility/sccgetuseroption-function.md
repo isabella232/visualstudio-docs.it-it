@@ -1,5 +1,5 @@
 ---
-title: Funzione SccGetUserOption | Documenti Microsoft
+title: Funzione SccGetUserOption | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b735b8ae53ef484417ae007c6ec74ec03fe4b849
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b906dc9585ed51640ca36f366fe6a1b0d3a03aa2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928204"
 ---
-# <a name="sccgetuseroption-function"></a>SccGetUserOption (funzione)
+# <a name="sccgetuseroption-function"></a>Funzione SccGetUserOption
 Questa funzione recupera un'ampia gamma di opzioni specifiche dell'utente.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -37,30 +37,30 @@ SCCRTN SccGetUserOption(
   
 #### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto plug-in controllo di origine.  
+ [in] Il puntatore di contesto del plug-in controllo di origine.  
   
  nOption  
- [in] Opzione per recuperare (per le possibili opzioni, vedere la sezione Osservazioni).  
+ [in] Opzione da recuperare (per le opzioni possibili, vedere la sezione Osservazioni).  
   
  lpVal  
  [out] Valore associato all'opzione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|Opzione è stata recuperata correttamente.|  
+|SCC_OK|Opzione è stato recuperato correttamente.|  
 |SCC_E_OPNOTSUPPORTED|Opzione non è supportata.|  
 |SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato.|  
   
 ## <a name="remarks"></a>Note  
- Tramite questo comando, sono supportate le seguenti opzioni:  
+ Le opzioni seguenti sono supportate da questo comando:  
   
 |Opzione User|Descrizione|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se l'utente desidera Estrai versione locale del file. `lpVal` viene assegnato `SCC_USEROPT_COLV_YES` (utente desidera estrarre i file locali) o `SCC_USEROPT_COLV_NO`.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se l'utente desidera estrarre la versione locale dei file. `lpVal` viene assegnato `SCC_USEROPT_COLV_YES` (utente desidera estrarre i file locali) o `SCC_USEROPT_COLV_NO`.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
  [Codici di errore](../extensibility/error-codes.md)

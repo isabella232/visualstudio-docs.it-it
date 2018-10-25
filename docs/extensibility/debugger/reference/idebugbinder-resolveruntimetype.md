@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType | Documenti Microsoft
+title: IDebugBinder::ResolveRuntimeType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa911dba9d56996e048326737c1dd99ca89c49c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2bfca2c360741b92c3a7ce3c4773671d8bf4d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101176"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928126"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
-Questo metodo determina il tipo in fase di esecuzione di un oggetto.  
+Questo metodo determina il tipo di fase di esecuzione di un oggetto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,7 +52,7 @@ int ResolveRuntimeType(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Il tipo in fase di esecuzione di un oggetto non è sempre noto in fase di compilazione. Ad esempio, il polimorfismo, un argomento può essere passato a una funzione come classe base, ad esempio una classe del pulsante. L'argomento effettivo potrebbe essere una classe derivata, ad esempio una classe di pulsante di opzione.  
+ Il tipo di fase di esecuzione di un oggetto non è sempre noto in fase di compilazione. Ad esempio, utilizza il polimorfismo, un argomento può essere passato a una funzione come classe di base, ad esempio una classe di pulsanti. L'argomento effettivo potrebbe essere una classe derivata, ad esempio una classe di pulsante di opzione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

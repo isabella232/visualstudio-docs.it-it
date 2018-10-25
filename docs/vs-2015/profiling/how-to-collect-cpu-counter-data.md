@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89750ad7ee47f1238d75d3c51ae0b6ee291944fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940944"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedura: Raccogliere i dati dei contatori CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,29 +33,29 @@ Un contatore di eventi CPU viene usato per raccogliere i dati relativi alle pres
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Si verificano due tipi di eventi del contatore CPU:  
+  Si verificano due tipi di eventi del contatore CPU:  
   
--   Eventi portabili: eventi della CPU che possono essere raccolti indipendentemente dal tipo di CPU.  
+- Eventi portabili: eventi della CPU che possono essere raccolti indipendentemente dal tipo di CPU.  
   
--   Eventi piattaforma: eventi della CPU associati a un particolare tipo di CPU.  
+- Eventi piattaforma: eventi della CPU associati a un particolare tipo di CPU.  
   
- Gli eventi portabili includono eventi generali, ad esempio le istruzioni ritirate e i cicli non interrotti, eventi del buffer della CPU, eventi di diramazione ed eventi della cache L2. I contatori degli eventi piattaforma disponibili sono determinati dal produttore del processore.  
+  Gli eventi portabili includono eventi generali, ad esempio le istruzioni ritirate e i cicli non interrotti, eventi del buffer della CPU, eventi di diramazione ed eventi della cache L2. I contatori degli eventi piattaforma disponibili sono determinati dal produttore del processore.  
   
- Le categorie di eventi possono essere condivise tra contatori portabili e di piattaforma. Ad esempio, le categorie di dati seguenti sono spesso comuni a entrambi i tipi:  
+  Le categorie di eventi possono essere condivise tra contatori portabili e di piattaforma. Ad esempio, le categorie di dati seguenti sono spesso comuni a entrambi i tipi:  
   
--   Eventi memoria.  
+- Eventi memoria.  
   
--   Eventi front-end.  
+- Eventi front-end.  
   
--   Eventi di diramazione.  
+- Eventi di diramazione.  
   
- Nel profiler è possibile raccogliere i dati del contatore di prestazioni in due modi:  
+  Nel profiler è possibile raccogliere i dati del contatore di prestazioni in due modi:  
   
--   Raccogliere i dati da uno o più contatori quando si esegue la profilatura tramite strumentazione.  
+- Raccogliere i dati da uno o più contatori quando si esegue la profilatura tramite strumentazione.  
   
--   Specificare un evento di contatore come intervallo di campionamento quando si esegue la profilatura mediante campionamento. Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).  
+- Specificare un evento di contatore come intervallo di campionamento quando si esegue la profilatura mediante campionamento. Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Per raccogliere i dati dei contatori di prestazioni CPU quando si esegue la profilatura tramite strumentazione  
   

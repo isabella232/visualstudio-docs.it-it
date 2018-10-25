@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928763"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ Id regola | DA0018 |
   
  Se l'eccessivo sovraccarico della memoria gestita costituisce un problema, considerare una delle opzioni seguenti:  
   
--   ottimizzazione dell'utilizzo delle risorse di memoria gestita da parte dell'applicazione  
+- ottimizzazione dell'utilizzo delle risorse di memoria gestita da parte dell'applicazione  
   
-     oppure  
+   oppure  
   
--   esecuzione di procedure per limitare i vincoli architettonici alla dimensione massima della memoria virtuale per un processo a 32 bit  
+- esecuzione di procedure per limitare i vincoli architettonici alla dimensione massima della memoria virtuale per un processo a 32 bit  
   
- Per ottimizzare l'utilizzo delle risorse di memoria gestita da parte dell'applicazione, raccogliere i dati di allocazione della memoria gestita con un'esecuzione della profilatura dell'allocazione di memoria di .NET. Rivedere i report delle [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md) per comprendere il modello di allocazione di memoria dell'applicazione.  
+  Per ottimizzare l'utilizzo delle risorse di memoria gestita da parte dell'applicazione, raccogliere i dati di allocazione della memoria gestita con un'esecuzione della profilatura dell'allocazione di memoria di .NET. Rivedere i report delle [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md) per comprendere il modello di allocazione di memoria dell'applicazione.  
   
- Usare la [Visualizzazione Durata oggetti](../profiling/object-lifetime-view.md) per determinare quali oggetti dati del programma vengono conservati nella generazione e verranno quindi recuperati.  
+  Usare la [Visualizzazione Durata oggetti](../profiling/object-lifetime-view.md) per determinare quali oggetti dati del programma vengono conservati nella generazione e verranno quindi recuperati.  
   
- Usare la [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md) per determinare il percorso di esecuzione che ha comportato queste allocazioni.  
+  Usare la [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md) per determinare il percorso di esecuzione che ha comportato queste allocazioni.  
   
- Per altre informazioni su come migliorare le prestazioni di Garbage Collection, vedere l'articolo tecnico di .NET Framework, [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) (Nozioni fondamentali su Garbage Collector e suggerimenti sulle prestazioni) sul sito Web MSDN.  
+  Per altre informazioni su come migliorare le prestazioni di Garbage Collection, vedere l'articolo tecnico di .NET Framework, [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) (Nozioni fondamentali su Garbage Collector e suggerimenti sulle prestazioni) sul sito Web MSDN.  
   
- Per limitare i vincoli della memoria virtuale sull'architettura alla dimensione della parte privata di uno spazio degli indirizzi del processo, provare a eseguire questo processo a 32 bit su un computer a 64 bit.  Un processo a 32 bit su un computer a 64 bit può acquisire fino a 4 GB di memoria virtuale privata.  
+  Per limitare i vincoli della memoria virtuale sull'architettura alla dimensione della parte privata di uno spazio degli indirizzi del processo, provare a eseguire questo processo a 32 bit su un computer a 64 bit.  Un processo a 32 bit su un computer a 64 bit può acquisire fino a 4 GB di memoria virtuale privata.  
   
- Un processo a 64 bit eseguito su un computer a 64 bit può acquisire fino a 8 TB di memoria virtuale. È consigliabile compilare di nuovo l'applicazione in modo che venga eseguita come un'applicazione a 64 bit nativa. Questa regola è solo a scopo informativo e potrebbe non richiedere azione correttiva.
+  Un processo a 64 bit eseguito su un computer a 64 bit può acquisire fino a 8 TB di memoria virtuale. È consigliabile compilare di nuovo l'applicazione in modo che venga eseguita come un'applicazione a 64 bit nativa. Questa regola è solo a scopo informativo e potrebbe non richiedere azione correttiva.
 
 
 

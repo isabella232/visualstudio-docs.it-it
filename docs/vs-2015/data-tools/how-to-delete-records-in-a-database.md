@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938617"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>Procedura: eliminare record da un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ Per eliminare i record da un database, usare il `TableAdapter.Update` metodo o i
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>Per eliminare i record da un database utilizzando il metodo di TableAdapter  
   
--   Eliminare i record dall'oggetto desiderato <xref:System.Data.DataTable> eliminando <xref:System.Data.DataRow> oggetti dalla tabella. Per altre informazioni, vedere [procedura: eliminare righe in un oggetto DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Dopo che le righe vengono eliminate dal <xref:System.Data.DataTable>, chiamare il `TableAdapter.Update` (metodo). È possibile controllare la quantità di dati da aggiornare tramite il passaggio di un'intera <xref:System.Data.DataSet>, una <xref:System.Data.DataTable>, una matrice di <xref:System.Data.DataRow>s o un singolo <xref:System.Data.DataRow>. Il codice seguente viene illustrato come eliminare un record da un <xref:System.Data.DataTable> e quindi chiamare il `TableAdapter.Update` metodo per comunicare la modifica ed eliminare la riga dal database. (In questo esempio viene utilizzato il database di Northwind `Region` tabella.)  
+- Eliminare i record dall'oggetto desiderato <xref:System.Data.DataTable> eliminando <xref:System.Data.DataRow> oggetti dalla tabella. Per altre informazioni, vedere [procedura: eliminare righe in un oggetto DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Dopo che le righe vengono eliminate dal <xref:System.Data.DataTable>, chiamare il `TableAdapter.Update` (metodo). È possibile controllare la quantità di dati da aggiornare tramite il passaggio di un'intera <xref:System.Data.DataSet>, una <xref:System.Data.DataTable>, una matrice di <xref:System.Data.DataRow>s o un singolo <xref:System.Data.DataRow>. Il codice seguente viene illustrato come eliminare un record da un <xref:System.Data.DataTable> e quindi chiamare il `TableAdapter.Update` metodo per comunicare la modifica ed eliminare la riga dal database. (In questo esempio viene utilizzato il database di Northwind `Region` tabella.)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- Se l'applicazione usa gli oggetti per archiviare i dati nell'applicazione, è possibile usare i metodi DBDirect di TableAdapter per eliminare i dati direttamente dal database. La chiamata di `Delete` metodo rimuove i record dal database in base ai valori di parametro passati.  
+  Se l'applicazione usa gli oggetti per archiviare i dati nell'applicazione, è possibile usare i metodi DBDirect di TableAdapter per eliminare i dati direttamente dal database. La chiamata di `Delete` metodo rimuove i record dal database in base ai valori di parametro passati.  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>Per eliminare i record da un database utilizzando il metodo di TableAdapter  
   

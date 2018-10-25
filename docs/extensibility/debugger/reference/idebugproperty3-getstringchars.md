@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Documenti Microsoft
+title: IDebugProperty3::GetStringChars | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f7d5430326f57acf686b90f911445cc36dbf02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d6df39bcd02fe74e2c6ada24d341cd3d2fdfb75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932936"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera la stringa associata a questa proprietà e lo archivia in un buffer fornito dall'utente.  
@@ -45,7 +45,7 @@ int GetStringChars(
   
 #### <a name="parameters"></a>Parametri  
  `buflen`  
- [in] Numero massimo di caratteri che può contenere il buffer fornito dall'utente.  
+ [in] Numero massimo di caratteri può contenere il buffer fornito dall'utente.  
   
  `rgString`  
  [out] Restituisce la stringa.  
@@ -53,16 +53,16 @@ int GetStringChars(
  [Solo C++], `rgString` è un puntatore a un buffer che riceve i caratteri Unicode della stringa. Questo buffer deve essere almeno `buflen` caratteri (non byte) nella dimensione.  
   
  `pceltFetched`  
- [out] In cui viene restituito il numero di caratteri effettivamente memorizzati nel buffer. (Può essere `NULL` in C++.)  
+ [out] In cui viene restituito il numero di caratteri effettivamente archiviati nel buffer. (Può essere `NULL` in C++.)  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- In C++, è necessario prestare attenzione per assicurarsi che il buffer sia almeno `buflen` caratteri Unicode. Si noti che un carattere Unicode è 2 byte.  
+ In C++, prestare attenzione per assicurarsi che il buffer è almeno `buflen` caratteri Unicode. Si noti che un carattere Unicode è la lunghezza di 2 byte.  
   
 > [!NOTE]
->  In C++, la stringa restituita non include un carattere di terminazione null. Se specificato, `pceltFetched` specifica il numero di caratteri nella stringa.  
+>  In C++, la stringa restituita non include un carattere di terminazione null. Se non specificato, `pceltFetched` specificherà il numero di caratteri nella stringa.  
   
 ## <a name="example"></a>Esempio  
  

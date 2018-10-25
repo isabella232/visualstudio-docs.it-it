@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualize | Documenti Microsoft
+title: IDebugPendingBreakpoint2::Virtualize | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b9145cff487ebb97894d9b93ad5e1ec54d5b4b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb2e66378b2a7b906b6bf9e0efe4e718316ade54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948291"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-Alterna lo stato virtualizzato di questo punto di interruzione. Quando un punto di interruzione in sospeso è virtualizzato, il motore di debug tenterà di eseguirne l'associazione ogni volta che viene caricato di nuovo codice nel programma.  
+Alterna lo stato virtualizzato di questo oggetto in sospeso punto di interruzione. Quando un punto di interruzione in sospeso è virtualizzato, il motore di debug tenterà di associarla ad ogni caricamento nuovo codice nel programma.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,16 +42,16 @@ int Virtualize(
   
 #### <a name="parameters"></a>Parametri  
  `fVirtualize`  
- [in] Impostare su zero (`TRUE`) per virtualizzare il punto di interruzione in sospeso o a zero (`FALSE`) per disattivare la virtualizzazione.  
+ [in] Impostare su diverso da zero (`TRUE`) per virtualizzare il punto di interruzione in sospeso o a zero (`FALSE`) per disattivare la virtualizzazione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stata eliminata.  
   
 ## <a name="remarks"></a>Note  
- Ogni volta che viene caricato codice, è associato un punto di interruzione virtualizzato.  
+ Un punto di interruzione virtualizzato è associato ogni volta che viene caricato codice.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per una semplice `CPendingBreakpoint` oggetto che espone il [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CPendingBreakpoint` oggetto che espone il [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaccia.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    

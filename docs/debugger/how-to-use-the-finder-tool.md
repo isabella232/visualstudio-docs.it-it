@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: utilizzare lo strumento di ricerca | Documenti Microsoft'
+title: 'Procedura: usare lo strumento di ricerca | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,45 +12,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f358adbd8721a55d278c392018463d49e5a8a60e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943076"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Procedura: utilizzare lo strumento di ricerca
-È possibile utilizzare lo strumento di ricerca nel **Trova finestra** la finestra di dialogo per visualizzare le proprietà della finestra o messaggi. Lo strumento di ricerca può anche individuare finestre figlio disabilitato e discernere quale finestra per evidenziare se disabilitata sovrapposizione delle finestre figlio.  
+È possibile usare lo strumento di ricerca nel **Trova finestra** finestra di dialogo per visualizzare le proprietà della finestra o messaggi. Lo strumento di ricerca consente anche di individuare finestre figlio disabilitato e discernere quale finestra per evidenziare se disabilitata finestre figlio si sovrappongono.  
   
- ![Spy&#43; &#43; finestra di dialogo Trova](../debugger/media/icon_spy--_find.png "Icon_Spy + + Find")  
+ ![Spy&#43; &#43; trovare la finestra di dialogo](../debugger/media/icon_spy--_find.png "Icon_Spy + + Find")  
 Strumento di ricerca nella finestra di dialogo Trova finestra  
   
- La seguente figura mostra la finestra di dialogo Trova finestra dopo il passaggio 3 riportato di seguito.  
+ La figura precedente mostra la finestra di dialogo Trova finestra dopo il passaggio 3 riportato di seguito.  
   
 ### <a name="to-display-window-properties-or-messages"></a>Per visualizzare le proprietà della finestra o messaggi  
   
-1.  Disporre le finestre in modo che Spy + + e la finestra di destinazione sono visibili.  
+1. Disporre le finestre in modo che sia Spy + + e la finestra di destinazione sono visibili.  
   
-2.  Dal **Spy** menu, scegliere **Trova finestra**.  
+2. Dal **Spy** menu, scegliere **Trova finestra**.  
   
-     Il [finestra di dialogo Trova](../debugger/find-window-dialog-box.md) apre.  
+    Il [finestra di dialogo Trova](../debugger/find-window-dialog-box.md) apre.  
   
-3.  Trascinare il **strumento di ricerca** sulla finestra di destinazione.  
+3. Trascinare il **strumento di ricerca** nell'intervallo di destinazione.  
   
-     Quando si trascina, lo strumento di **Trova finestra** la finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.  
+    Quando si trascina lo strumento, il **Trova finestra** nella finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.  
   
-     - oppure -  
+   - oppure -  
   
-     Se si dispone di handle della finestra che si desidera esaminare (ad esempio, copiato dal debugger), digitarla nella **gestire** casella di testo.  
+     Se hai l'handle della finestra di cui si vuole esaminare (ad esempio, copiato dal debugger), digitarla nella **gestire** casella di testo.  
   
-    > [!TIP]
-    >  Per evitare confusione, selezionare il **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e di mantenere solo il **Trova finestra** la finestra di dialogo di primo piano rispetto alle altre applicazioni. La finestra principale di Spy + + viene ripristinata quando si fa clic **OK** o **Annulla**, o quando si cancella il **Nascondi Spy + +** opzione.  
+   > [!TIP]
+   >  Per ridurre il disordine schermata, selezionare la **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e di mantenere solo le **Trova finestra** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni. La finestra principale di Spy + + è ripristinata quando si fa clic **OK** oppure **Cancel**, o quando si cancella il **Nascondi Spy + +** opzione.  
   
-4.  In **Mostra**, selezionare l'opzione **proprietà** o **messaggi**.  
+4. Sotto **mostrano**, selezionare **proprietà** oppure **messaggi**.  
   
-5.  Press **OK**.  
+5. Premere **OK**.  
   
-     Se si seleziona **proprietà**, [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) apre. Se si seleziona **messaggi**, [visualizzazione messaggi](../debugger/messages-view.md) verrà visualizzata la finestra.  
+    Se è stato selezionato **delle proprietà**, il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) apre. Se è stato selezionato **messaggi**, un [visualizzazione messaggi](../debugger/messages-view.md) verrà visualizzata la finestra.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md)   

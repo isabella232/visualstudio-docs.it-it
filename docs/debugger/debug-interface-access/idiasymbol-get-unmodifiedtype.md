@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_unmodifiedType | Documenti Microsoft
+title: Get_unmodifiedtype | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a07c85bf53d330874eca9e8e0eec37bed8dde9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32e636a35d1cfed085ddf1bc44d60249a71d0b69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935752"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
-Recupera il tipo originale per questo simbolo. Utilizzo di [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) è impostata su un tipo.  
+Recupera il tipo originale per questo simbolo. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su un tipo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,7 +43,7 @@ HRESULT get_unmodifiedType(
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- Il tipo corrente è una modifica del tipo restituito originale. Il tipo originale per un simbolo può essere determinato ottenendo innanzitutto il tipo del simbolo e quindi l'interrogazione restituite per il tipo originale. Si noti che alcuni simboli non disponga di un tipo di modificato del tipo originale.  
+ Il tipo corrente è una modifica del tipo originale restituito. Il tipo originale per un simbolo può essere determinato prima di tutto ottenere il tipo del simbolo ed quindi interrogazione che restituito per il tipo originale. Si noti che alcuni simboli non possono avere un tipo modificato del tipo originale.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Dia2.h  

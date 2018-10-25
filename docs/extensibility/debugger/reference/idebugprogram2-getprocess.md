@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProcess | Documenti Microsoft
+title: IDebugProgram2::GetProcess | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a0e51725cf809e5c224fd438e507bcfde6ca2c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3528b4c323f1fee68a5ed17368646608e63e6fbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947863"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
-Ottenere il processo in esecuzione in questo programma.  
+Ottenere il processo che questo programma è in esecuzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,9 +47,9 @@ int GetProcess(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- A meno che non implementa un motore di debug (DE) il [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) interfaccia, l'implementazione del DE di questo metodo deve sempre restituire `E_NOTIMPL` perché un Germania può determinare quale processo è in esecuzione in e, pertanto non è possibile soddisfare un'implementazione di questo metodo.  
+ A meno che un motore di debug (DE) implementa il [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) interfaccia, l'implementazione del DE di questo metodo deve sempre restituire `E_NOTIMPL` perché un CRI non può determinare quale processo è in esecuzione in modo semplice e pertanto non è possibile soddisfare un'implementazione di questo metodo.  
   
- Implementazione di `IDebugEngineLaunch2` interfaccia significa che la Germania necessario sapere come creare un processo; pertanto del DE attuazione di [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia è in grado di conoscere il processo è in esecuzione in.  
+ Implementa il `IDebugEngineLaunch2` interfaccia significa che la Germania necessario sapere come creare un processo; pertanto, implementazione del DE del [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia è in grado di individuare i processi di cui è in esecuzione in.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

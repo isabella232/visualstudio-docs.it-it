@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b72e058a2ef025b0118dac8fd419e75d1ad53349
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3e174440411e54d0f3960035874bd3b84b392c57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939497"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Associare dati personalizzati con le estensioni degli strumenti di SharePoint
   È possibile aggiungere dati personalizzati a determinati oggetti nelle estensioni di strumenti di SharePoint. Ciò è utile quando sono presenti dati in una parte dell'estensione che si desidera accedere in seguito da altro codice nella propria estensione. Anziché implementare un modo personalizzato per archiviare e accedere ai dati, è possibile associare i dati a un oggetto nella propria estensione e quindi recuperare i dati dallo stesso oggetto in un secondo momento.  
@@ -73,14 +73,14 @@ ms.locfileid: "36327229"
   
  Per recuperare i dati personalizzati da un oggetto in un'estensione degli strumenti di SharePoint, ottenere il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà dell'oggetto e quindi usare uno dei metodi seguenti:  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Questo metodo restituisce **true** se l'oggetto dati è presente, o **false** se non esiste. È possibile utilizzare questo metodo per recuperare le istanze di tipi di valore o i tipi di riferimento.  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Questo metodo restituisce **true** se l'oggetto dati è presente, o **false** se non esiste. È possibile utilizzare questo metodo per recuperare le istanze di tipi di valore o i tipi di riferimento.  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Questo metodo restituisce i dati oggetto, se presente, oppure **null** se non esiste. È possibile utilizzare questo metodo solo per recuperare le istanze dei tipi di riferimento.  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Questo metodo restituisce i dati oggetto, se presente, oppure **null** se non esiste. È possibile utilizzare questo metodo solo per recuperare le istanze dei tipi di riferimento.  
   
- Esempio di codice seguente determina se un determinato oggetto dati è già associato a un elemento del progetto. Se l'oggetto dati non è già associato con l'elemento del progetto, quindi il codice aggiunge l'oggetto per il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà dell'elemento del progetto. Per questo esempio nel contesto di un esempio più esaustivo, vedere [procedura: aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+  Esempio di codice seguente determina se un determinato oggetto dati è già associato a un elemento del progetto. Se l'oggetto dati non è già associato con l'elemento del progetto, quindi il codice aggiunge l'oggetto per il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà dell'elemento del progetto. Per questo esempio nel contesto di un esempio più esaustivo, vedere [procedura: aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
+  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
+  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
 ## <a name="see-also"></a>Vedere anche
  [Concetti di programmazione e funzionalità per le estensioni degli strumenti di SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   

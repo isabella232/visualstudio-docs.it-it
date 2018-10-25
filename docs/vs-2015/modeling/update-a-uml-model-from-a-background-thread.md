@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7faef9f085f21db4d4f819746acf52c119189f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940996"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aggiornare un modello UML da un thread in background
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,35 +35,35 @@ A volte può essere utile apportare modifiche a un modello in un thread in backg
   
 #### <a name="to-run-the-example"></a>Per eseguire l'esempio  
   
-1.  Creare un gestore comando in un progetto c#, come descritto in [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Creare un gestore comando in un progetto c#, come descritto in [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-2.  Verificare che il progetto includa riferimenti a questi assembly:  
+2. Verificare che il progetto includa riferimenti a questi assembly:  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.[versione]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[versione]  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versione]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versione]  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces  
+   -   Microsoft.VisualStudio.Uml.Interfaces  
   
-    -   System.ComponentModel.Composition  
+   -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms  
+   -   System.Windows.Forms  
   
-3.  Aggiungere al progetto un form di Windows denominato **ProgressForm**. Dovrà visualizzare un messaggio che indica che sono in corso gli aggiornamenti. Non è necessario che includa altri controlli.  
+3. Aggiungere al progetto un form di Windows denominato **ProgressForm**. Dovrà visualizzare un messaggio che indica che sono in corso gli aggiornamenti. Non è necessario che includa altri controlli.  
   
-4.  Aggiungere un file C# contenente il codice illustrato dopo il passaggio 7.  
+4. Aggiungere un file C# contenente il codice illustrato dopo il passaggio 7.  
   
-5.  Compilare ed eseguire il progetto.  
+5. Compilare ed eseguire il progetto.  
   
-     Verrà avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità sperimentale.  
+    Verrà avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità sperimentale.  
   
-6.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] creare o aprire un diagramma classi UML.  
+6. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] creare o aprire un diagramma classi UML.  
   
-7.  Fare doppio clic in qualsiasi punto nel diagramma classi UML e quindi fare clic su **aggiunta di diverse classi UML**.  
+7. Fare doppio clic in qualsiasi punto nel diagramma classi UML e quindi fare clic su **aggiunta di diverse classi UML**.  
   
- Nel diagramma verranno visualizzate diverse nuove caselle delle classi, una dopo l'altra a intervalli di mezzo secondo.  
+   Nel diagramma verranno visualizzate diverse nuove caselle delle classi, una dopo l'altra a intervalli di mezzo secondo.  
   
 ```csharp  
 using System;  

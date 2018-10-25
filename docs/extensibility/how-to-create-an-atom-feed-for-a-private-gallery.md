@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942101"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: creare un feed Atom per una raccolta privata
 È possibile creare un Atom (RSS) feed da un percorso intranet che contiene le estensioni e aggiunta il feed a **estensioni e aggiornamenti** come una raccolta privata. Per altre informazioni, vedere [raccolte Private](../extensibility/private-galleries.md).  
@@ -27,17 +27,17 @@ ms.locfileid: "39638492"
 ## <a name="create-an-atom-feed"></a>Creare un feed Atom  
  Per creare un feed come una raccolta privata Atom, è prima di tutto raccogliere le estensioni (*VSIX* file) in una cartella. È possibile organizzarle in sottocartelle, se si desidera. È necessario anche le risorse seguenti:  
   
--   Un' *atom.xml* file che rende disponibili le estensioni come una raccolta privata. Per informazioni su come connettere il *atom.xml* del file ai **estensioni e aggiornamenti**, vedere [raccolte Private](../extensibility/private-galleries.md).  
+- Un' *atom.xml* file che rende disponibili le estensioni come una raccolta privata. Per informazioni su come connettere il *atom.xml* del file ai **estensioni e aggiornamenti**, vedere [raccolte Private](../extensibility/private-galleries.md).  
   
--   Una cartella che contiene tutti i file di immagine che sono stati estratti dalle estensioni (ad esempio, schermate). Il *atom.xml* file contiene i collegamenti relativi a queste immagini in modo che siano disponibili nei **estensioni e aggiornamenti**.  
+- Una cartella che contiene tutti i file di immagine che sono stati estratti dalle estensioni (ad esempio, schermate). Il *atom.xml* file contiene i collegamenti relativi a queste immagini in modo che siano disponibili nei **estensioni e aggiornamenti**.  
   
- Si supponga, ad esempio, che sono state raccolte le due estensioni seguenti in una cartella:  
+  Si supponga, ad esempio, che sono state raccolte le due estensioni seguenti in una cartella:  
   
--   *Template_Wizard_239.VSIX*, ovvero un modello di progetto VSIX vuoto.  
+- *Template_Wizard_239.VSIX*, ovvero un modello di progetto VSIX vuoto.  
   
--   *SelectionHighlight.vsix*, ovvero uno strumento per evidenziare tutte le istanze di una parola selezionata.  
+- *SelectionHighlight.vsix*, ovvero uno strumento per evidenziare tutte le istanze di una parola selezionata.  
   
- Il contenuto del *atom.xml* file sarà simile al seguente:  
+  Il contenuto del *atom.xml* file sarà simile al seguente:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>   

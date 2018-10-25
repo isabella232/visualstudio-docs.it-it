@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936047"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Creare un controllo della casella degli strumenti di Windows Form
 Il modello di elemento di controllo della casella degli strumenti di Windows Form incluso in Visual Studio Extensibility Tools (Visual Studio SDK) consente di creare un controllo che viene aggiunto automaticamente per il **casella degli strumenti** quando l'estensione viene installata. In questo argomento viene illustrato come usare il modello per creare un controllo di un contatore semplice che è possibile distribuire ad altri utenti.  
@@ -61,7 +61,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
     |`Button1`|**per**|Reimposta|  
   
 ### <a name="code-the-user-control"></a>Codice del controllo utente  
- Il `Counter` controllo espone un metodo per incrementare il contatore, un evento da generare ogni volta che il contatore viene incrementato, un **reimpostare** pulsante e tre le proprietà per archiviare il conteggio corrente, il testo visualizzato e se visualizzare o nascondere il **reimpostare** pulsante. Il `ProvideToolboxControl` attributo determina la posizione nel **casella degli strumenti** il `Counter` controllo verrà visualizzato.  
+ Il `Counter` controllo espone un metodo per incrementare il contatore, un evento da generare ogni volta che il contatore viene incrementato, un **reimpostare** pulsante e tre le proprietà per archiviare il conteggio corrente, il testo visualizzato e se visualizzare o nascondere il **reimpostare** pulsante. L'attributo `ProvideToolboxControl` determina la posizione nella **casella degli strumenti** in cui verrà visualizzato il controllo `Counter` .  
   
 #### <a name="to-code-the-user-control"></a>Per codificare il controllo utente  
   
@@ -139,7 +139,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
     ```  
   
-8.  Immediatamente sopra la definizione di classe, nelle `ProvideToolboxControl` dichiarazione dell'attributo, modificare il valore del primo parametro da `"MyWinFormsControl.Counter"` a `"General"`. In questo modo si imposta il nome del gruppo di elementi che ospiterà il controllo nella **casella degli strumenti**.  
+8.  Immediatamente sopra la definizione di classe, nella dichiarazione dell'attributo `ProvideToolboxControl` , modificare il valore del primo parametro da `"MyWinFormsControl.Counter"` a `"General"`. In questo modo si imposta il nome del gruppo di elementi che ospiterà il controllo nella **casella degli strumenti**.  
   
      L'esempio seguente mostra l'attributo `ProvideToolboxControl` e la definizione di classe modificata.  
   
@@ -209,7 +209,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
      Reimposta il contatore **0**.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
- Quando si compila un **casella degli strumenti** (controllo), Visual Studio crea un file denominato *ProjectName.vsix* nel * \bin\debug\* cartella del progetto. È possibile distribuire il controllo caricando il *VSIX* file in una rete o a un sito Web. Quando un utente apre la *VSIX* file, il controllo viene installato e aggiunto a Visual Studio **della casella degli strumenti** nel computer dell'utente. In alternativa, è possibile caricare il *VSIX* file per il [Visual Studio gallery](http://go.microsoft.com/fwlink/?LinkID=123847) del sito Web in modo che gli utenti potranno trovarlo cercando il **strumenti**  >  **Estensioni e aggiornamenti** finestra di dialogo.  
+ Quando si compila un **casella degli strumenti** (controllo), Visual Studio crea un file denominato *ProjectName.vsix* nel <em>\bin\debug\* cartella del progetto. È possibile distribuire il controllo caricando con l'estensione VSIX</em> file in una rete o a un sito Web. Quando un utente apre la *VSIX* file, il controllo viene installato e aggiunto a Visual Studio **della casella degli strumenti** nel computer dell'utente. In alternativa, è possibile caricare il *VSIX* file per il [Visual Studio gallery](http://go.microsoft.com/fwlink/?LinkID=123847) del sito Web in modo che gli utenti potranno trovarlo cercando il **strumenti**  >  **Estensioni e aggiornamenti** finestra di dialogo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estendere altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   

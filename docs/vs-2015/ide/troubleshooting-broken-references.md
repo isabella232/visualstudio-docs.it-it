@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950667"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se l'applicazione tenta di usare un riferimento interrotto, viene generato un errore di eccezione. L'impossibilità di trovare il componente a cui si è fatto riferimento è la causa principale dell'errore, ma esistono diverse situazioni in cui un riferimento può essere considerato interrotto. Di seguito è riportato l'elenco delle cause di interruzione di un riferimento.  
   
--   Il percorso del riferimento del progetto non è corretto o è incompleto.  
+- Il percorso del riferimento del progetto non è corretto o è incompleto.  
   
--   Il file a cui viene fatto riferimento è stato eliminato.  
+- Il file a cui viene fatto riferimento è stato eliminato.  
   
--   Il file a cui viene fatto riferimento è stato rinominato.  
+- Il file a cui viene fatto riferimento è stato rinominato.  
   
--   Si è verificato un errore durante la connessione o l'autenticazione di rete.  
+- Si è verificato un errore durante la connessione o l'autenticazione di rete.  
   
--   Il componente COM cui viene fatto riferimento non è installato nel computer.  
+- Il componente COM cui viene fatto riferimento non è installato nel computer.  
   
- Di seguito sono elencate le soluzioni a questi problemi.  
+  Di seguito sono elencate le soluzioni a questi problemi.  
   
 > [!NOTE]
 >  Nel file di progetto si fa riferimento ai file contenuti negli assembly tramite percorsi assoluti. Di conseguenza, per utenti che lavorano in un ambiente con più sviluppatori è possibile che risulti mancante un assembly a cui viene fatto riferimento tramite un percorso nell'ambiente locale. Per evitare questo tipo di errori, è consigliabile, in tali casi, aggiungere riferimenti da progetto a progetto. Per altre informazioni, vedere [Procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) e [Programmazione con gli assembly](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  

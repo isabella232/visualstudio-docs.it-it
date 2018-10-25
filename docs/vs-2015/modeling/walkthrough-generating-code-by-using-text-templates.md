@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932552"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procedura dettagliata: generazione di codice tramite modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,15 +100,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>Per aggiungere un file XML  
   
-1.  In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.  
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.  
   
-2.  Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .  
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .  
   
-3.  Aggiungere il contenuto di esempio al file.  
+3. Aggiungere il contenuto di esempio al file.  
   
-4.  Per questa procedura dettagliata assegnare al file il nome `exampleXml.xml`. Impostare il contenuto del file in modo che sia l'XML mostrato nella sezione precedente.  
+4. Per questa procedura dettagliata assegnare al file il nome `exampleXml.xml`. Impostare il contenuto del file in modo che sia l'XML mostrato nella sezione precedente.  
   
- .  
+   .  
   
 ### <a name="add-a-test-code-file"></a>Aggiungere un file di codice di test  
  Aggiungere al progetto un file C# e scrivere in esso un esempio del codice che si vuole poter scrivere. Ad esempio:  
@@ -140,33 +140,33 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Per aggiungere un file di modello di testo al progetto  
   
-1.  In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi**e quindi su **Nuovo elemento**.  
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi**e quindi su **Nuovo elemento**.  
   
-2.  Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Modello di testo** dal riquadro **Modelli** .  
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Modello di testo** dal riquadro **Modelli** .  
   
-    > [!NOTE]
-    >  Assicurarsi di aggiungere un modello di testo e non un modello di testo pre-elaborato.  
+   > [!NOTE]
+   >  Assicurarsi di aggiungere un modello di testo e non un modello di testo pre-elaborato.  
   
-3.  Nel file, nella direttiva template, modificare l'attributo `hostspecific` in `true`.  
+3. Nel file, nella direttiva template, modificare l'attributo `hostspecific` in `true`.  
   
-     Questa modifica consentirà al codice del modello di ottenere l'accesso ai servizi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
+    Questa modifica consentirà al codice del modello di ottenere l'accesso ai servizi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-4.  Nella direttiva di output cambiare l'attributo di estensione in ".cs", in modo che il modello generi un file C#. In un progetto Visual Basic è necessario modificarlo in ".vb".  
+4. Nella direttiva di output cambiare l'attributo di estensione in ".cs", in modo che il modello generi un file C#. In un progetto Visual Basic è necessario modificarlo in ".vb".  
   
-5.  Salvare il file. In questa fase il file di modello di testo deve contenere le righe seguenti:  
+5. Salvare il file. In questa fase il file di modello di testo deve contenere le righe seguenti:  
   
-    ```  
-    <#@ template debug="false" hostspecific="true" language="C#" #>  
-    <#@ output extension=".cs" #>  
-    ```  
+   ```  
+   <#@ template debug="false" hostspecific="true" language="C#" #>  
+   <#@ output extension=".cs" #>  
+   ```  
   
- .  
+   .  
   
- Si noti che un file con l'estensione .cs viene visualizzato in Esplora soluzioni come file secondario del file di modello. È possibile vederlo facendo clic su [+] accanto al nome del file di modello. Questo file viene generato dal file di modello quando si salva il file di modello o si allontana lo stato attivo da esso. Il file generato sarà compilato come parte del progetto.  
+   Si noti che un file con l'estensione .cs viene visualizzato in Esplora soluzioni come file secondario del file di modello. È possibile vederlo facendo clic su [+] accanto al nome del file di modello. Questo file viene generato dal file di modello quando si salva il file di modello o si allontana lo stato attivo da esso. Il file generato sarà compilato come parte del progetto.  
   
- Per comodità, mentre si sviluppa il file di modello, disporre la finestra del file di modello e quella del file generato l'una accanto all'altra. Ciò consente di vedere immediatamente l'output del modello. Si noterà anche che, quando il modello genera codice C# non valido, gli errori sono mostrati nella finestra dei messaggi d'errore.  
+   Per comodità, mentre si sviluppa il file di modello, disporre la finestra del file di modello e quella del file generato l'una accanto all'altra. Ciò consente di vedere immediatamente l'output del modello. Si noterà anche che, quando il modello genera codice C# non valido, gli errori sono mostrati nella finestra dei messaggi d'errore.  
   
- Qualsiasi modifica eseguita direttamente nel file generato andrà persa quando si salva il file di modello. È consigliabile pertanto evitare di modificare il file generato o modificarlo solo per brevi esperimenti. È talvolta utile provare un breve frammento di codice nel file generato, in cui IntelliSense è in esecuzione, e quindi copiarlo nel file di modello.  
+   Qualsiasi modifica eseguita direttamente nel file generato andrà persa quando si salva il file di modello. È consigliabile pertanto evitare di modificare il file generato o modificarlo solo per brevi esperimenti. È talvolta utile provare un breve frammento di codice nel file generato, in cui IntelliSense è in esecuzione, e quindi copiarlo nel file di modello.  
   
 ## <a name="developing-the-text-template"></a>Sviluppare il modello di testo  
  Seguendo i migliori consigli per lo sviluppo Agile, si svilupperà il modello per piccoli passi, eliminando alcuni degli errori a ogni incremento, fino a quando il codice di test non viene compilato ed eseguito correttamente.  
@@ -408,17 +408,17 @@ namespace MyProject
 ## <a name="conclusion"></a>Conclusione  
  Questa procedura dettagliata illustra diverse tecniche e vantaggi della generazione del codice:  
   
--   La*generazione del codice* è la creazione di parte del codice sorgente dell'applicazione da un *modello*. Il modello contiene le informazioni in un formato adatto per il dominio dell'applicazione e può cambiare durante la vita dell'applicazione.  
+- La*generazione del codice* è la creazione di parte del codice sorgente dell'applicazione da un *modello*. Il modello contiene le informazioni in un formato adatto per il dominio dell'applicazione e può cambiare durante la vita dell'applicazione.  
   
--   La tipizzazione forte è uno dei vantaggi della generazione del codice. Mentre il modello rappresenta le informazioni in un formato più adatto all'utente, il codice generato consente ad altre parti dell'applicazione di gestire le informazioni mediante un set di tipi.  
+- La tipizzazione forte è uno dei vantaggi della generazione del codice. Mentre il modello rappresenta le informazioni in un formato più adatto all'utente, il codice generato consente ad altre parti dell'applicazione di gestire le informazioni mediante un set di tipi.  
   
--   IntelliSense e il compilatore consentono di creare codice conforme allo schema del modello, sia quando si scrive nuovo codice che quando lo schema viene aggiornato.  
+- IntelliSense e il compilatore consentono di creare codice conforme allo schema del modello, sia quando si scrive nuovo codice che quando lo schema viene aggiornato.  
   
--   L'aggiunta di un singolo file di modello non complicato a un progetto può fornire questi vantaggi.  
+- L'aggiunta di un singolo file di modello non complicato a un progetto può fornire questi vantaggi.  
   
--   Un modello di testo può essere sviluppato e testato rapidamente e in modo incrementale.  
+- Un modello di testo può essere sviluppato e testato rapidamente e in modo incrementale.  
   
- In questa procedura dettagliata il codice del programma viene effettivamente generato da un'istanza del modello, un esempio rappresentativo dei file XML che l'applicazione elaborerà. In un approccio più formale, lo schema XML sarebbe l'input del modello, nella forma di un file con estensione .xsd o di una definizione di linguaggio specifica del dominio. Tale approccio potrebbe facilitare la determinazione da parte del modello di caratteristiche quali la molteplicità di una relazione.  
+  In questa procedura dettagliata il codice del programma viene effettivamente generato da un'istanza del modello, un esempio rappresentativo dei file XML che l'applicazione elaborerà. In un approccio più formale, lo schema XML sarebbe l'input del modello, nella forma di un file con estensione .xsd o di una definizione di linguaggio specifica del dominio. Tale approccio potrebbe facilitare la determinazione da parte del modello di caratteristiche quali la molteplicità di una relazione.  
   
 ## <a name="troubleshooting-the-text-template"></a>Risoluzione dei problemi del modello di testo  
  In caso di errori di compilazione o di trasformazione del modello nell'**Elenco errori** o se il file di output non è stato generato correttamente, è possibile risolvere i problemi del modello di testo con le tecniche descritte in [Generazione di file con l'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  

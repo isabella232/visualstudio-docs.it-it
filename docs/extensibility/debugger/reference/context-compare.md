@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE | Documenti Microsoft
+title: CONTEXT_COMPARE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0563f037f77c18cc5e686c1ea6acf429c91ad06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a17d0b422b65093721a55d4bf8d632aba271a55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950804"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
-Specifica i criteri per il confronto tra due contesti di memoria.  
+Specifica i criteri per il confronto di due contesti di memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -58,36 +58,36 @@ public enum enum_CONTEXT_COMPARE {
   
 ## <a name="members"></a>Membri  
  CONTEXT_EQUAL  
- Trovare il primo contesto di memoria dell'elenco che corrisponde al contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco uguale al contesto di destinazione di memoria.  
   
  CONTEXT_LESS_THAN  
- Trovare il primo contesto di memoria dell'elenco che è minore rispetto al contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che è minore rispetto al contesto di memoria di destinazione.  
   
  CONTEXT_GREATER_THAN  
- Trovare il primo contesto di memoria dell'elenco che è maggiore rispetto al contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che è maggiore rispetto al contesto di memoria di destinazione.  
   
  CONTEXT_LESS_THAN_OR_EQUAL  
- Trovare il primo contesto di memoria dell'elenco che è minore o uguale al contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che è minore o uguale al contesto di destinazione di memoria.  
   
  CONTEXT_GREATER_THAN_OR_EQUAL  
- Trovare il primo contesto di memoria dell'elenco che è maggiore o uguale al contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che è maggiore o uguale al contesto di destinazione di memoria.  
   
  CONTEXT_SAME_SCOPE  
- Individuare il primo contesto di memoria nell'elenco presente nello stesso ambito come contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che è nello stesso ambito il contesto di memoria di destinazione.  
   
  CONTEXT_SAME_FUNCTION  
- Trovare il primo contesto di memoria dell'elenco che è la stessa funzione dell'ambito della memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che è la stessa funzione dell'ambito della memoria di destinazione.  
   
  CONTEXT_SAME_MODULE  
- Individuare il primo contesto di memoria nell'elenco presente nello stesso modulo come contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che è nello stesso modulo del contesto di destinazione di memoria.  
   
  CONTEXT_SAME_PROCESS  
- Trovare il primo contesto di memoria dell'elenco che è dello stesso processo come contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che è nello stesso processo come contesto di memoria di destinazione.  
   
 ## <a name="remarks"></a>Note  
- Passata come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) metodo.  
+ Passato come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) (metodo).  
   
- Questi valori vengono utilizzati per individuare il primo contesto di memoria in un elenco che soddisfa i criteri di confronto specificate. Un contesto di memoria viene fornito un elenco di contesti di memoria per confrontare solo in tramite il `IDebugMemoryContext2::Compare` metodo. Il primo contesto di memoria nell'elenco per il quale l'operatore di confronto è `true` viene quindi restituito.  
+ Questi valori vengono usati per trovare il primo contesto di memoria in un elenco che soddisfa i criteri di confronto specificate. Un contesto in memoria viene assegnato un elenco di contesti di memoria di confrontarsi con tramite il `IDebugMemoryContext2::Compare` (metodo). Il primo contesto di memoria nell'elenco per il quale l'operatore di confronto è `true` viene quindi restituito.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

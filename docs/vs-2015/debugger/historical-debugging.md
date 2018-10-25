@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938474"
 ---
 # <a name="historical-debugging"></a>Debug cronologico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ private static int AddInt(int add)
   
  Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` è pari a 20 (il risultato di incremento `testInt` 20 volte). (Si presuppone inoltre che non è possibile visualizzare i bug in `AddInt()`). Ma il risultato è effettivamente 44. Come è possibile individuare i bug senza scorrere `AddAll()` 10 volte? È possibile utilizzare il debug cronologico per individuare l'errore in modo più semplice e rapido. Ecco come fare:  
   
-1.  In Strumenti / opzioni / IntelliTrace / generale, verificare che IntelliTrace è abilitato e selezionare gli eventi di IntelliTrace e chiamare l'opzione di informazioni. Se non si seleziona questa opzione, non sarà in grado di visualizzare la barra di navigazione (come illustrato di seguito).  
+1. In Strumenti / opzioni / IntelliTrace / generale, verificare che IntelliTrace è abilitato e selezionare gli eventi di IntelliTrace e chiamare l'opzione di informazioni. Se non si seleziona questa opzione, non sarà in grado di visualizzare la barra di navigazione (come illustrato di seguito).  
   
-2.  Impostare un punto di interruzione su `Console.WriteLine(resultInt);` linea  
+2. Impostare un punto di interruzione su `Console.WriteLine(resultInt);` linea  
   
-3.  Avviare il debug. Il codice viene eseguito fino al punto di interruzione. Nel **variabili locali** finestra, è possibile notare che il valore di `resultInt` è 44.  
+3. Avviare il debug. Il codice viene eseguito fino al punto di interruzione. Nel **variabili locali** finestra, è possibile notare che il valore di `resultInt` è 44.  
   
-4.  Aprire il **strumenti di diagnostica** finestra (**Debug / Mostra strumenti di diagnostica**). La finestra codici dovrebbe risultare simile alla seguente:  
+4. Aprire il **strumenti di diagnostica** finestra (**Debug / Mostra strumenti di diagnostica**). La finestra codici dovrebbe risultare simile alla seguente:  
   
-     ![Finestra del codice nel punto di interruzione](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![Finestra del codice nel punto di interruzione](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Verrà visualizzata una doppia freccia accanto al margine sinistro, appena sopra il punto di interruzione. Quest'area viene chiamata la barra di navigazione e viene utilizzata per il debug cronologico. Fare clic sulla freccia.  
+5. Verrà visualizzata una doppia freccia accanto al margine sinistro, appena sopra il punto di interruzione. Quest'area viene chiamata la barra di navigazione e viene utilizzata per il debug cronologico. Fare clic sulla freccia.  
   
-     Nella finestra del codice, si noterà che la riga di codice precedente (`int resultInt = AddIterative(testInt);`) è di colore rosa. Sopra la finestra, si noterà un messaggio che ci si trova nel debug cronologico.  
+    Nella finestra del codice, si noterà che la riga di codice precedente (`int resultInt = AddIterative(testInt);`) è di colore rosa. Sopra la finestra, si noterà un messaggio che ci si trova nel debug cronologico.  
   
-     La finestra del codice è ora simile al seguente:  
+    La finestra del codice è ora simile al seguente:  
   
-     ![finestra del codice in modalità debug cronologico](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![finestra del codice in modalità debug cronologico](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  A questo punto è possibile eseguire le istruzioni il `AddAll()` metodo (**F11**, oppure il **Esegui istruzione** pulsante nella barra di navigazione. Passo avanti (**F10**, o **passare alla prossima connessione** nella barra di navigazione. La riga rosa contiene ora il `j = AddInt(j);` riga. **F10** in questo caso non esegue le istruzioni per la riga successiva del codice. Al contrario, i passaggi per la successiva chiamata di funzione. Il debug cronologico consente di passare da una chiamata a altra e ignora le righe di codice che non includono una chiamata di funzione.  
+6. A questo punto è possibile eseguire le istruzioni il `AddAll()` metodo (**F11**, oppure il **Esegui istruzione** pulsante nella barra di navigazione. Passo avanti (**F10**, o **passare alla prossima connessione** nella barra di navigazione. La riga rosa contiene ora il `j = AddInt(j);` riga. **F10** in questo caso non esegue le istruzioni per la riga successiva del codice. Al contrario, i passaggi per la successiva chiamata di funzione. Il debug cronologico consente di passare da una chiamata a altra e ignora le righe di codice che non includono una chiamata di funzione.  
   
-7.  Eseguire un'istruzione nel metodo `AddInt()` Verrà visualizzato immediatamente il bug nel codice.  
+7. Eseguire un'istruzione nel metodo `AddInt()` Verrà visualizzato immediatamente il bug nel codice.  
   
- Questa procedura solo un assaggio delle operazioni eseguibili con il debug cronologico. Per altre informazioni sulle diverse impostazioni e gli effetti dei diversi pulsanti nella barra di navigazione, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
+   Questa procedura solo un assaggio delle operazioni eseguibili con il debug cronologico. Per altre informazioni sulle diverse impostazioni e gli effetti dei diversi pulsanti nella barra di navigazione, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
 
 
 

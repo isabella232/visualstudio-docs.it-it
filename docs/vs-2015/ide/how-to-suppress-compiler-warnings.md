@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932312"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: non visualizzare avvisi del compilatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ ms.locfileid: "49286091"
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Per non visualizzare avvisi specifici per Visual Basic  
   
-1.  In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.  
+1. In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.  
   
-2.  Sulla barra dei menu scegliere **Progetto**, **Scarica progetto**.  
+2. Sulla barra dei menu scegliere **Progetto**, **Scarica progetto**.  
   
-3.  In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e scegliere **Modifica**_nomeprogetto_**.vbproj**.  
+3. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e scegliere **Modifica**_nomeprogetto_**.vbproj**.  
   
-     Il file di progetto si aprirà nell'editor del codice.  
+    Il file di progetto si aprirà nell'editor del codice.  
   
-4.  Individuare l'elemento `<NoWarn></NoWarn>` nella configurazione della build che si sta usando per la compilazione.  
+4. Individuare l'elemento `<NoWarn></NoWarn>` nella configurazione della build che si sta usando per la compilazione.  
   
-     Nell'esempio seguente viene indicato l'elemento `<NoWarn></NoWarn>` in grassetto per la configurazione della build di debug su una piattaforma x86:  
+    Nell'esempio seguente viene indicato l'elemento `<NoWarn></NoWarn>` in grassetto per la configurazione della build di debug su una piattaforma x86:  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  Aggiungere uno o più numeri di avviso come valore dell'elemento `<NoWarn>`. Se si specificano più numeri di avviso, è necessario separarli con una virgola, come illustrato nell'esempio seguente.  
+5. Aggiungere uno o più numeri di avviso come valore dell'elemento `<NoWarn>`. Se si specificano più numeri di avviso, è necessario separarli con una virgola, come illustrato nell'esempio seguente.  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  Salvare le modifiche apportate al file con estensione vbproj.  
+6. Salvare le modifiche apportate al file con estensione vbproj.  
   
-7.  Sulla barra dei menu scegliere **Progetto**, **Ricarica progetto**.  
+7. Sulla barra dei menu scegliere **Progetto**, **Ricarica progetto**.  
   
-8.  Sulla barra dei menu scegliere **Compila**, **Ricompila soluzione**.  
+8. Sulla barra dei menu scegliere **Compila**, **Ricompila soluzione**.  
   
-     Nella finestra **Output** gli avvisi specificati non saranno più visualizzati.  
+    Nella finestra **Output** gli avvisi specificati non saranno più visualizzati.  
   
- Per altre informazioni, vedere [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
+   Per altre informazioni, vedere [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md)  (Procedura dettagliata: compilazione di un'applicazione)  

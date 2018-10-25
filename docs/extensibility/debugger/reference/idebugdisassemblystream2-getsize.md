@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetSize | Documenti Microsoft
+title: IDebugDisassemblyStream2::GetSize | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f43a0fe3d7d2ad7c54ee9203037595dade7c6486
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 434a53803dcc08a5d4b07b531b56e913d5311d1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934795"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
-Ottiene le dimensioni nelle istruzioni del flusso disassembly.  
+Ottiene la dimensione in istruzioni del flusso disassembly.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,9 +47,9 @@ int GetSize(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Il valore restituito da questo metodo può essere utilizzato per allocare una matrice di [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) strutture che viene quindi passato al [lettura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metodo.  
+ Il valore restituito da questo metodo può essere utilizzato per allocare una matrice di [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) strutture che viene quindi passato per il [lettura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Lettura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+ [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

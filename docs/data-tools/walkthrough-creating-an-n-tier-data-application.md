@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942894"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procedura dettagliata: Creare un'applicazione dati a più livelli
 *A più livelli* le applicazioni di dati sono applicazioni con accesso ai dati vengono suddivisi in più livelli logici, oppure *livelli*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per altre informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).
@@ -73,7 +73,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
  Il primo passaggio di questa procedura dettagliata prevede la creazione di una soluzione e di due progetti di libreria di classi. La prima libreria di classi contiene il set di dati (tipizzato generato `DataSet` classe e oggetti DataTable che contengono i dati dell'applicazione). Il progetto viene usato come livello di entità di dati dell'applicazione e di norma si trova nel livello intermedio. Il set di dati crea il set di dati iniziale e separa automaticamente il codice in due librerie di classi.
 
 > [!NOTE]
->  Assicurarsi di assegnare un nome di progetto e soluzione correttamente prima di fare clic **OK**. In tal modo sarà più semplice completare questa procedura dettagliata.
+> Assicurarsi di assegnare un nome di progetto e soluzione correttamente prima di fare clic **OK**. In tal modo sarà più semplice completare questa procedura dettagliata.
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Per creare la soluzione a più livelli e la libreria di classi DataEntityTier
 
@@ -106,7 +106,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
  Il passaggio successivo consiste nella creazione di un dataset tipizzato. I dataset tipizzati sono creati con la classe dataset (incluso `DataTables` classi) e il `TableAdapter` classi in un singolo progetto. Tutte le classi vengono generate in un unico file. Quando si separa il set di dati e TableAdapter in progetti diversi, è la classe di set di dati che viene spostata in altro progetto, lasciando il `TableAdapter` classi nel progetto originale. Pertanto, è possibile creare il set di dati nel progetto che alla fine conterrà gli oggetti TableAdapter (il progetto DataAccessTier). Creare il set di dati usando il **configurazione guidata origine dati**.
 
 > [!NOTE]
->  Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni su come configurare il database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
+> Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni su come configurare il database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Per creare il dataset
 
@@ -129,7 +129,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 6.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi scegliere **successivo**.
 
     > [!NOTE]
-    >  Se è stato selezionato un file di database locale al posto della connessione a SQL Server, potrebbe venire richiesto di aggiungere il file al progetto. Scegli **Sì** per aggiungere il file di database al progetto.
+    > Se è stato selezionato un file di database locale al posto della connessione a SQL Server, potrebbe venire richiesto di aggiungere il file al progetto. Scegli **Sì** per aggiungere il file di database al progetto.
 
 7.  Selezionare **successivo** nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina.
 
@@ -144,20 +144,20 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Per separare gli oggetti TableAdapter dal dataset
 
-1.  Fare doppio clic su **NorthwindDataSet. xsd** nelle **Esplora soluzioni** per aprire il set di dati nel **Progettazione Dataset**.
+1. Fare doppio clic su **NorthwindDataSet. xsd** nelle **Esplora soluzioni** per aprire il set di dati nel **Progettazione Dataset**.
 
-2.  Selezionare un'area vuota della finestra di progettazione.
+2. Selezionare un'area vuota della finestra di progettazione.
 
-3.  Individuare il **DataSetProject** nodo il **proprietà** finestra.
+3. Individuare il **DataSetProject** nodo il **proprietà** finestra.
 
-4.  Nel **DataSetProject** elenco, selezionare **DataEntityTier**.
+4. Nel **DataSetProject** elenco, selezionare **DataEntityTier**.
 
-5.  Scegliere **Compila soluzione** dal menu **Compila**.
+5. Scegliere **Compila soluzione** dal menu **Compila**.
 
- Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero set di dati (`DataAccessTier`) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **DataSetProject** proprietà (`DataEntityTier`) contiene il set di dati tipizzato: *NorthwindDataSet* (o  *NorthwindDataSet.Dataset.Designer.cs*).
+   Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero set di dati (`DataAccessTier`) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **DataSetProject** proprietà (`DataEntityTier`) contiene il set di dati tipizzato: *NorthwindDataSet* (o  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
->  Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), classi parziali del dataset presenti nel progetto non verranno spostate automaticamente. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.
+> Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), classi parziali del dataset presenti nel progetto non verranno spostate automaticamente. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.
 
 ## <a name="create-a-new-service-application"></a>Creare una nuova applicazione di servizio
 Questa procedura dettagliata viene illustrato come accedere a livello di accesso ai dati tramite un servizio WCF, quindi, creiamo una nuova applicazione di servizio WCF.
@@ -224,7 +224,7 @@ Questa procedura dettagliata viene illustrato come accedere a livello di accesso
  Ora che il livello di accesso ai dati contiene i metodi per restituire i dati, creare i metodi nel servizio dati per chiamare i metodi nel livello di accesso ai dati.
 
 > [!NOTE]
->  Per i progetti C# è necessario aggiungere un riferimento all'assemby `System.Data.DataSetExtensions` per eseguire la compilazione del codice seguente.
+> Per i progetti C# è necessario aggiungere un riferimento all'assemby `System.Data.DataSetExtensions` per eseguire la compilazione del codice seguente.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Per creare le funzioni GetCustomers e GetOrders nel servizio dati
 
@@ -323,7 +323,7 @@ Impostiamo la **PresentationTier** progetto come progetto di avvio per la soluzi
 3.  Selezionare **Service1** e scegliere **OK**.
 
     > [!NOTE]
-    >  Se si dispone di più servizi nel computer corrente, selezionare il servizio creato in precedenza in questa procedura dettagliata (il servizio che contiene il `GetCustomers` e `GetOrders` metodi).
+    > Se si dispone di più servizi nel computer corrente, selezionare il servizio creato in precedenza in questa procedura dettagliata (il servizio che contiene il `GetCustomers` e `GetOrders` metodi).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Aggiunta di DataGridView al form per visualizzare i dati restituiti dal servizio dati
  Dopo aver aggiunto il riferimento al servizio per il servizio dati, il **Zdroje dat** finestra viene automaticamente popolata con i dati restituiti dal servizio.
@@ -361,7 +361,7 @@ Impostiamo la **PresentationTier** progetto come progetto di avvio per la soluzi
 Il valore predefinito per `maxReceivedMessageSize` non è sufficientemente grande da contenere i dati recuperati dal `Customers` e `Orders` tabelle. Nei passaggi seguenti, è possibile aumentare il valore su 6553600. Si modifica il valore nel client, che aggiorna automaticamente il riferimento al servizio.
 
 > [!NOTE]
->  La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per altre informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per altre informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Per aumentare il valore di maxReceivedMessageSize
 

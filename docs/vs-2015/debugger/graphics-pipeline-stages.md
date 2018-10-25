@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938604"
 ---
 # <a name="graphics-pipeline-stages"></a>Fasi pipeline grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
 ### <a name="links-to-related-graphics-objects"></a>Collegamenti a oggetti grafici correlati  
  A volte per capire perché una chiamata di disegno interagisce in un determinato modo con la pipeline grafica sono necessarie informazioni di contesto aggiuntive. Per semplificare la ricerca di queste informazioni, la finestra Fasi pipeline grafica contiene collegamenti a uno o più oggetti che forniscono ulteriore contesto correlato a ciò che accade nella pipeline grafica.  
   
--   In Direct3D 12 questo oggetto è in genere un elenco di comandi.  
+- In Direct3D 12 questo oggetto è in genere un elenco di comandi.  
   
--   In Direct3D 11 questo oggetto è in genere un contesto dei dispositivi grafici.  
+- In Direct3D 11 questo oggetto è in genere un contesto dei dispositivi grafici.  
   
- Questi collegamenti fanno parte della firma dell'evento grafico corrente situato nell'angolo superiore sinistro della finestra Fasi pipeline grafica. Seguire i collegamenti per accedere ad altri dettagli sull'oggetto.  
+  Questi collegamenti fanno parte della firma dell'evento grafico corrente situato nell'angolo superiore sinistro della finestra Fasi pipeline grafica. Seguire i collegamenti per accedere ad altri dettagli sull'oggetto.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Visualizzazione e debug del codice dello shader  
  Si può visualizzare il codice per Vertex Shader, Hull Shader, Domain Shader, Geometry Shader o Pixel Shader oppure eseguirne il debug, usando i controlli nella parte inferiore della fase corrispondente all'interno della finestra Fasi pipeline.  

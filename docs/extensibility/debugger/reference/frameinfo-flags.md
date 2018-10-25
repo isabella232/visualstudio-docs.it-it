@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS | Documenti Microsoft
+title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca63b23e9f87e807b3eec0e3ad35ea5414ac8dc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd2273e7ca2769c5dde43d1c29f08989503659f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107413"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949123"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
-Specifica le informazioni da recuperare su un oggetto stack frame.  
+Specifica le informazioni per recuperare un oggetto frame dello stack.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -102,52 +102,52 @@ public enum enum_FRAMEINFO_FLAGS {
   
 ## <a name="members"></a>Membri  
  FIF_FUNCNAME  
- Inizializzazione/Usa il `m_bstrFuncName` campo.  
+ Initialize/usare la `m_bstrFuncName` campo.  
   
  FIF_RETURNTYPE  
- Inizializzazione/Usa il `m_bstrReturnType` campo.  
+ Initialize/usare la `m_bstrReturnType` campo.  
   
  FIF_ARGS  
- Inizializzazione/Usa il `m_bstrArgs` campo.  
+ Initialize/usare la `m_bstrArgs` campo.  
   
  FIF_LANGUAGE  
- Inizializzazione/Usa il `m_bstrLanguage` campo.  
+ Initialize/usare la `m_bstrLanguage` campo.  
   
  FIF_MODULE  
- Inizializzazione/Usa il `m_bstrModule` campo.  
+ Initialize/usare la `m_bstrModule` campo.  
   
  FIF_STACKRANGE  
- Inizializzazione/Usa il `m_addrMin` e `m_addrMax` campi (intervallo di stack).  
+ Initialize/usare la `m_addrMin` e `m_addrMax` campi (intervallo di stack).  
   
  FIF_FRAME  
- Inizializzazione/Usa il `m_pFrame` campo.  
+ Initialize/usare la `m_pFrame` campo.  
   
  FIF_DEBUGINFO  
- Inizializzazione/Usa il `m_fHasDebugInfo` campo.  
+ Initialize/usare la `m_fHasDebugInfo` campo.  
   
  FIF_STALECODE  
- Inizializzazione/Usa il `m_fStaleCode` campo.  
+ Initialize/usare la `m_fStaleCode` campo.  
   
  FIF_ANNOTATEDFRAME  
- Inizializzazione/Usa il `m_fAnnotatedFrame` campo.  
+ Initialize/usare la `m_fAnnotatedFrame` campo.  
   
  FIF_DEBUG_MODULEP  
- Inizializzazione/Usa il `m_pModule` campo.  
+ Initialize/usare la `m_pModule` campo.  
   
  FIF_FUNCNAME_FORMAT  
- Formatta il nome della funzione. Il risultato viene restituito nel `m_bstrFunName` campo e non altri campi vengono compilati.  
+ Formatta il nome della funzione. Il risultato viene restituito nel `m_bstrFunName` campo e non gli altri campi vengono compilati.  
   
  FIF_FUNCNAME_RETURNTYPE  
  Aggiunge il tipo restituito per il `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_ARGS  
- Aggiunge gli argomenti per il `m_bstrFuncName` campo.  
+ Aggiunge gli elementi per il `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_LANGUAGE  
  Aggiunge la lingua per il `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_MODULE  
- Aggiunge il nome del modulo per il `m_bstrFuncName` campo.  
+ Aggiunge il nome del modulo di `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_LINES  
  Aggiunge il numero di righe per il `m_bstrFuncName` campo.  
@@ -156,16 +156,16 @@ public enum enum_FRAMEINFO_FLAGS {
  Aggiunge il `m_bstrFuncName` campo offset in byte dall'inizio della riga se `FIF_FUNCNAME_LINES` è specificato. Se `FIF_FUNCNAME_LINES` non viene specificato, o se i numeri di riga non sono disponibili, aggiunge l'offset in byte dall'inizio della funzione.  
   
  FIF_FUNCNAME_ARGS_TYPES  
- Aggiunge il tipo di ogni argomento di funzione per il `m_bstrFuncName` campo.  
+ Aggiunge il tipo di ogni argomento della funzione per il `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_ARGS_NAMES  
- Aggiunge il nome di ogni argomento di funzione per il `m_bstrFuncName` campo.  
+ Aggiunge il nome di ogni argomento della funzione per il `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_ARGS_VALUES  
- Aggiunge il valore di ogni argomento di funzione per il `m_bstrFuncName` campo.  
+ Aggiunge il valore di ogni argomento della funzione per il `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_ARGS_ALL  
- Aggiunge il valore di tutti gli argomenti, un nome e un tipo di `m_bstrFuncName` campo.  
+ Aggiunge il tipo, nome e valore di tutti gli argomenti di `m_bstrFuncName` campo.  
   
  FIF_ARGS_TYPES  
  I tipi di argomenti vengono recuperati e formattati.  
@@ -180,24 +180,24 @@ public enum enum_FRAMEINFO_FLAGS {
  Recuperare e formattare il tipo, nome e valore di tutti gli argomenti.  
   
  FIF_ARGS_NOFORMAT  
- Specifica che gli argomenti non sono formattato (ad esempio, non aggiungere apertura e chiusura di parentesi per racchiudere l'elenco di argomenti né aggiungere un separatore tra gli argomenti).  
+ Specifica che gli argomenti non sono formattato (ad esempio, non aggiungere apertura e chiusura di parentesi per racchiudere l'elenco di argomenti né aggiungere un separatore tra argomenti).  
   
  FIF_ARGS_NO_FUNC_EVAL  
- Specifica che la valutazione della funzione (proprietà) non deve essere utilizzata durante il recupero dei valori dell'argomento.  
+ Specifica che la valutazione della funzione (proprietà) non deve essere utilizzata durante il recupero dei valori degli argomenti.  
   
  FIF_FILTER_NON_USER_CODE  
- Il motore di debug consiste nel filtrare i frame di codice non utente in modo che non sono inclusi.  
+ Il motore di debug è di filtrare i frame del codice non utente in modo che non sono inclusi.  
   
  FIF_ARGS_NO_TOSTRING  
- Non consentire `ToString()` funzione valutazione o la formattazione per la restituzione di argomenti della funzione.  
+ Non consentire `ToString()` funzione valutazione o la formattazione quando si restituisce gli argomenti della funzione.  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
- Le informazioni sul frame deve essere ricevuti dal dominio dell'applicazione ospitato anziché il processo di hosting.  
+ Ottenere informazioni sui frame deve essere ricevuto dal dominio applicazione ospitato piuttosto che il processo di hosting.  
   
 ## <a name="remarks"></a>Note  
- Questi flag vengono passati al [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) e [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metodi per indicare quali campi devono essere inizializzati nel [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) o strutture.  
+ Questi flag vengono passati per il [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) e [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metodi per indicare quali campi devono essere inizializzate nel [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) o più strutture.  
   
- Questi flag sono utilizzati anche per indicare quali campi del [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struttura sono validi e utilizzate quando viene restituita la struttura. Questi valori possono essere combinati con un bit per bit `OR`.  
+ Questi flag vengono usanti anche per indicare quali campi della [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struttura siano usati e validi quando viene restituita la struttura. Questi valori possono essere combinati con un bit per bit `OR`.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

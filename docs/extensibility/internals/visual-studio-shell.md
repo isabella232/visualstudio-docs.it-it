@@ -1,5 +1,5 @@
 ---
-title: Shell di Visual Studio | Documenti Microsoft
+title: Shell di Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,72 +14,72 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71b624cee0e55f95f90a86eac943828bbc26ac97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ef0bf2811e9858925398637e835be8684c7f9ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144356"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928945"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
-Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell è l'agente primario di integrazione in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. La shell fornisce le funzionalità necessarie per permettere ai pacchetti VSPackage condividere i servizi comuni. Poiché l'obiettivo dell'architettura di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consiste principalmente la funzionalità di assegnazione in VSPackage, la shell è un framework per fornire funzionalità di base e supportare la comunicazione tra tra il componente del package VS.  
+Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell è l'agente primario di integrazione in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. La shell fornisce la funzionalità necessaria per abilitare i pacchetti VSPackage condividere i servizi comuni. Poiché l'obiettivo dell'architettura di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consiste nel vest funzionalità principale in VSPackage, la shell è un framework per offrire funzionalità di base e supportare comunicazione incrociata tra pacchetti VSPackage relativo componente.  
   
 ## <a name="shell-responsibilities"></a>Responsabilità della shell  
- La shell include le responsabilità principali seguenti:  
+ La shell ha la responsabilità principali seguenti:  
   
--   Supporto (tramite le interfacce COM) elementi di base dell'interfaccia utente (UI). Tra i menu predefiniti e le barre degli strumenti, le cornici della finestra di documento o finestre figlio di interfaccia a documenti multipli (MDI) e le cornici della finestra dello strumento e supporto di ancoraggio.  
+- Supporto (tramite le interfacce COM) elementi di base dell'interfaccia utente (UI). Questi includono predefinito menu e barre degli strumenti, le cornici della finestra di documento o finestre figlio di interfaccia a documenti multipli (MDI) e le cornici della finestra degli strumenti e supporto per l'ancoraggio.  
   
--   Gestione di un elenco di tutti i documenti attualmente aperti in una tabella documenti in esecuzione (RDT) per coordinare la persistenza dei documenti e per garantire che di un documento non è aperto in più modo o in modalità incompatibile.  
+- Gestione di un elenco di tutti i documenti attualmente aperti in una tabella documenti in esecuzione (RDT) per coordinare la persistenza dei documenti e per garantire che un documento non è possibile aprire in più modo o in modi non compatibili.  
   
--   Che supporta l'interfaccia di gestione dei comandi e di routing dei comandi, `IOleCommandTarget`.  
+- Supporto di interfaccia di routing di comandi e la gestione dei comandi, `IOleCommandTarget`.  
   
--   Durante il caricamento di pacchetti VSPackage in momenti appropriati. Caricamento ritardato un VSPackage è necessario per migliorare le prestazioni della shell.  
+- Caricamento di pacchetti VSPackage in momenti appropriati. Caricamento ritardato un pacchetto VSPackage è necessario migliorare le prestazioni della shell.  
   
--   Gestione di determinati i servizi condivisi, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, che fornisce funzionalità di base della shell, e <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, che fornisce funzionalità di windowing di base.  
+- Gestione di determinati servizi, condivisi, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, che fornisce la funzionalità shell di base, e <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, che fornisce funzionalità di windowing di base.  
   
--   Gestire i file della soluzione (sln). Soluzioni contengono gruppi di progetti correlati, simili al file di area di lavoro (con estensione DSW) in Visual C++ 6.0.  
+- Gestione dei file di soluzione (sln). Le soluzioni contengono gruppi di progetti correlati, simili ai file dell'area di lavoro (con estensione DSW) in Visual C++ 6.0.  
   
--   Selezione della shell a livello di rilevamento, il contesto e valuta. La shell registra i seguenti tipi di elementi:  
+- Selezione di shell a livello di rilevamento, il contesto e valuta. La shell rileva i tipi seguenti di elementi:  
   
-    -   Il progetto corrente  
+  -   Il progetto corrente  
   
-    -   L'elemento del progetto corrente o ItemID corrente <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  -   L'elemento del progetto corrente o l'ID dell'elemento corrente <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   La selezione corrente per il **proprietà** finestra o `SelectionContainer`  
+  -   La selezione corrente per il **proprietà** finestra o `SelectionContainer`  
   
-    -   Il contesto dell'interfaccia utente, ID o CmdUIGuids che controllano la visibilità dei comandi, menu e barre degli strumenti  
+  -   Contesto dell'interfaccia utente, ID o CmdUIGuids che consentono di controllare la visibilità dei comandi, menu e barre degli strumenti  
   
-    -   Gli elementi attualmente attivi, ad esempio la finestra attiva, un documento e un gestore di annullamento  
+  -   Gli elementi attualmente attivi, ad esempio la finestra attiva, documento e gestione degli annullamenti  
   
-    -   Gli attributi di contesto dell'utente che Guida dinamica  
+  -   Gli attributi di contesto dell'utente che determinano Guida dinamica  
   
- La shell consente di eseguire anche la comunicazione tra pacchetti VSPackage installati e i servizi correnti. Supporta le funzionalità di base della shell e li rende disponibili per tutti i pacchetti VSPackage integrati in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Queste funzionalità di base includono i seguenti elementi:  
+  La shell consente di eseguire anche la comunicazione tra i servizi correnti e installati i pacchetti VSPackage. Supporta le funzionalità principali della shell e li rende disponibili per tutti i pacchetti VSPackage integrati [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Queste funzionalità di base includono gli elementi seguenti:  
   
--   **Sulle** schermata iniziale e finestra di dialogo  
+- **Sulle** della finestra di dialogo e nella schermata iniziale  
   
--   **Aggiungere nuovo e Aggiungi elemento esistente** finestre di dialogo  
+- **Aggiungere nuovo e Aggiungi elemento esistente** finestre di dialogo  
   
--   **Visualizzazione classi-** finestra e **Visualizzatore oggetti**  
+- **Visualizzazione classi** finestra e **Visualizzatore oggetti**  
   
--   **Riferimenti** finestra di dialogo  
+- **I riferimenti** nella finestra di dialogo  
   
--   **Struttura documento** finestra  
+- **Struttura documento** finestra  
   
--   **Guida dinamica** finestra  
+- **Guida dinamica** finestra  
   
--   **Trovare** e **sostituire**  
+- **Trovare** e **sostituire**  
   
--   **Apri progetto** e **Apri File** caselle di dialogo il **nuovo** menu  
+- **Apri progetto** e **Apri File** finestre di dialogo nel **New** menu  
   
--   **Le opzioni** della finestra di dialogo di **strumenti** menu  
+- **Le opzioni** nella finestra di dialogo di **strumenti** menu  
   
--   **Proprietà** finestra  
+- Finestra **Proprietà**  
   
--   **Esplora soluzioni**  
+- **Esplora soluzioni**  
   
--   **Elenco attività** finestra  
+- **Elenco delle attività** finestra  
   
--   **Casella degli strumenti**  
+- **Casella degli strumenti**  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

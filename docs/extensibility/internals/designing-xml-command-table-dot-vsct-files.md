@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7a28e8ea14d27eb96100a4f1f67a875746dc5f6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4e94d93d407f7499afbd43c8af2b7532ca1b4d8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934561"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Progettare i file XML comando table (vsct)
 Una tabella comandi XML (*vsct*) file descrive il layout e l'aspetto degli elementi di comando per un pacchetto VSPackage. Gli elementi di comando includono i pulsanti, caselle combinate, menu, barre degli strumenti e i gruppi di voci di comando. Questo articolo descrive XML comando tabella file, modo influiscano menu e voci di comando e come crearli.
@@ -33,37 +33,37 @@ Una tabella comandi XML (*vsct*) file descrive il layout e l'aspetto degli eleme
 ## <a name="differences-between-ctc-and-vsct-files"></a>Differenze tra file con estensione CTC e con estensione vsct
  Mentre il significato dietro il codice XML dei tag un *vsct* file corrispondono a tali tag nell'ora deprecata *CTC* formato di file, l'implementazione è leggermente diversa:
 
--   Il nuovo  **\<extern >** tag è in cui si fa riferimento altri *. h* file da compilare, ad esempio i file per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sulla barra degli strumenti.
+- Il nuovo  **\<extern >** tag è in cui si fa riferimento altri *. h* file da compilare, ad esempio i file per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sulla barra degli strumenti.
 
--   Mentre *vsct* i file di supporto di **/include** istruzione, come *CTC* tale file, include anche un nuovo  **\<importare >** elemento. È la differenza, **/include** riporta *tutti i* delle informazioni, mentre  **\<importare >** Importa solo i nomi.
+- Mentre *vsct* i file di supporto di **/include** istruzione, come *CTC* tale file, include anche un nuovo  **\<importare >** elemento. È la differenza, **/include** riporta *tutti i* delle informazioni, mentre  **\<importare >** Importa solo i nomi.
 
--   Sebbene *CTC* file richiedono un file di intestazione in cui si definiscono le direttive del preprocessore, uno non è necessario per *con estensione vsct* file. Invece di inserire le direttive nella tabella dei simboli, che si trova nel  **\<simbolo >** elementi, che si trova nella parte inferiore della *vsct* file.
+- Sebbene *CTC* file richiedono un file di intestazione in cui si definiscono le direttive del preprocessore, uno non è necessario per *con estensione vsct* file. Invece di inserire le direttive nella tabella dei simboli, che si trova nel  **\<simbolo >** elementi, che si trova nella parte inferiore della *vsct* file.
 
--   *con estensione vsct* funzionalità dei file per un  **\<Annotation >** tag, che consente di incorporare qualsiasi informazione desiderata, ad esempio note o persino le immagini.
+- *con estensione vsct* funzionalità dei file per un  **\<Annotation >** tag, che consente di incorporare qualsiasi informazione desiderata, ad esempio note o persino le immagini.
 
--   I valori vengono archiviati come attributi dell'elemento.
+- I valori vengono archiviati come attributi dell'elemento.
 
--   Flag dei comandi può essere archiviato singolarmente o in pila.  IntelliSense, tuttavia, non funziona sui flag di comando in pila. Per altre informazioni sui flag di comando, vedere la [elemento CommandFlag](../../extensibility/command-flag-element.md).
+- Flag dei comandi può essere archiviato singolarmente o in pila.  IntelliSense, tuttavia, non funziona sui flag di comando in pila. Per altre informazioni sui flag di comando, vedere la [elemento CommandFlag](../../extensibility/command-flag-element.md).
 
--   È possibile specificare più tipi, ad esempio elenchi a discesa split combos, e così via.
+- È possibile specificare più tipi, ad esempio elenchi a discesa split combos, e così via.
 
--   I GUID non vengono convalidati.
+- I GUID non vengono convalidati.
 
--   Ogni elemento dell'interfaccia utente è una stringa che rappresenta il testo visualizzato con esso.
+- Ogni elemento dell'interfaccia utente è una stringa che rappresenta il testo visualizzato con esso.
 
--   L'elemento padre è facoltativo. Se omesso, il valore *gruppo sconosciuto* viene usato.
+- L'elemento padre è facoltativo. Se omesso, il valore *gruppo sconosciuto* viene usato.
 
--   Il *icona* argomento è facoltativo.
+- Il *icona* argomento è facoltativo.
 
--   Bitmap sezione: in questa sezione è lo stesso di un *CTC* nel file, ad eccezione del fatto che è ora possibile specificare un nome di file tramite Href estratti in per il *vsct.exe* compilatore in fase di compilazione.
+- Bitmap sezione: in questa sezione è lo stesso di un *CTC* nel file, ad eccezione del fatto che è ora possibile specificare un nome di file tramite Href estratti in per il *vsct.exe* compilatore in fase di compilazione.
 
--   ResID: Resource ID può essere utilizzato e comunque funziona come in bitmap, il vecchio *CTC* file.
+- ResID: Resource ID può essere utilizzato e comunque funziona come in bitmap, il vecchio *CTC* file.
 
--   HRef: Un nuovo metodo che consente di specificare un nome file per la risorsa della bitmap. Si presuppone che tutte siano utilizzate, in modo che è possibile omettere la sezione utilizzata. Il compilatore eseguirà la ricerca prima di tutto per le risorse locali per il file, quindi su tutte le condivisioni di rete e tutte le risorse definite per il **/I** passare.
+- HRef: Un nuovo metodo che consente di specificare un nome file per la risorsa della bitmap. Si presuppone che tutte siano utilizzate, in modo che è possibile omettere la sezione utilizzata. Il compilatore eseguirà la ricerca prima di tutto per le risorse locali per il file, quindi su tutte le condivisioni di rete e tutte le risorse definite per il **/I** passare.
 
--   Tasto di scelta rapida: È più necessario specificare un emulatore. Se si specifica uno, il compilatore presuppone che l'editor e l'emulatore sono uguali.
+- Tasto di scelta rapida: È più necessario specificare un emulatore. Se si specifica uno, il compilatore presuppone che l'editor e l'emulatore sono uguali.
 
--   Keychord: Keychord è stato eliminato. Il nuovo formato viene *Key1, Mod1, Key2, Mod2*.  È possibile specificare un carattere, esadecimale o costante VK.
+- Keychord: Keychord è stato eliminato. Il nuovo formato viene *Key1, Mod1, Key2, Mod2*.  È possibile specificare un carattere, esadecimale o costante VK.
        
 Il nuovo compilatore *vsct.exe*, consente di compilare entrambe *CTC* e *vsct* file. Il vecchio *ctc.exe* compilatore, tuttavia, non riconosce o compilare *con estensione vsct* file.
 

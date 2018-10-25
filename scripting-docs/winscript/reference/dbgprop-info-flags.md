@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_INFO_FLAGS | Documenti Microsoft
+title: DBGPROP_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -20,15 +20,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9821cde6c159712ff44438b74eea0f8e01247155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941282"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
-Utilizzato per specificare `DebugPropertyInfo` campi  
+Consente di specificare `DebugPropertyInfo` campi  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -61,10 +61,10 @@ enum {
  Inizializza il `dwAttrib` campo.  
   
  DBGPROP_INFO_DEBUGPROP  
- Inizializza il `pDebugProp` campo contenente un `IDebugProperty` interfaccia.  
+ Inizializza la `pDebugProp` campo che contiene un `IDebugProperty` interfaccia.  
   
  DBGPROP_INFO_AUTOEXPAND  
- Specifica che il campo del valore deve contenere il valore di espansione automatica, se disponibile, per questo tipo di oggetto.  
+ Specifica che il campo del valore deve contenere il valore espanso automaticamente, se disponibile, per questo tipo di oggetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Struttura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   

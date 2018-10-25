@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933157"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache
   Questa procedura dettagliata illustra la creazione di una relazione master/dettaglio in un foglio di lavoro e la memorizzazione nella cache i dati in modo che la soluzione possa essere usata offline.  
@@ -57,34 +57,34 @@ ms.locfileid: "38808265"
   
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Creare un progetto cartella di lavoro di Excel con il nome **My Master-Detail**, usando Visual Basic o c#. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Creare un progetto cartella di lavoro di Excel con il nome **My Master-Detail**, usando Visual Basic o c#. Verificare che l'opzione **creare un nuovo documento** sia selezionata. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **My Master-Detail** progetto al **Esplora soluzioni**.  
+   Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **My Master-Detail** progetto al **Esplora soluzioni**.  
   
 ## <a name="create-the-data-source"></a>Creare l'origine dati  
  Usare la finestra **Origini dati** per aggiungere un DataSet tipizzato al progetto.  
   
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   
-1.  Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.  
+1. Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.  
   
-2.  Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
+2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
   
-3.  Selezionare **Database** e quindi fare clic su **successivo**.  
+3. Selezionare **Database** e quindi fare clic su **successivo**.  
   
-4.  Selezionare una connessione dati al database di SQL Server di esempio Northwind, oppure aggiungere una nuova connessione usando il **nuova connessione** pulsante.  
+4. Selezionare una connessione dati al database di SQL Server di esempio Northwind, oppure aggiungere una nuova connessione usando il **nuova connessione** pulsante.  
   
-5.  Dopo aver selezionato o la creazione di una connessione, fare clic su **successivo**.  
+5. Dopo aver selezionato o la creazione di una connessione, fare clic su **successivo**.  
   
-6.  Deselezionare l'opzione per salvare la connessione, se è selezionata, quindi scegliere **successivo**.  
+6. Deselezionare l'opzione per salvare la connessione, se è selezionata, quindi scegliere **successivo**.  
   
-7.  Espandere la **tabelle** nodo il **degli oggetti di Database** finestra.  
+7. Espandere la **tabelle** nodo il **degli oggetti di Database** finestra.  
   
-8.  Selezionare il **ordini** tabella e il **Order Details** tabella.  
+8. Selezionare il **ordini** tabella e il **Order Details** tabella.  
   
 9. Scegliere **Fine**.  
   
- La procedura guidata consente di aggiungere le due tabelle per il **Zdroje dat** finestra. Aggiunge anche un set di dati tipizzato al progetto che è visibile nel **Esplora soluzioni**.  
+   La procedura guidata consente di aggiungere le due tabelle per il **Zdroje dat** finestra. Aggiunge anche un set di dati tipizzato al progetto che è visibile nel **Esplora soluzioni**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Aggiungere controlli al foglio di lavoro  
  In questo passaggio si aggiungerà un intervallo denominato, un oggetto elenco e due pulsanti al primo foglio di lavoro. In primo luogo, aggiungere l'intervallo denominato e l'oggetto elenco dal **Zdroje dat** finestra in modo che vengano associati automaticamente all'origine dati. Successivamente, aggiungere i pulsanti dal **casella degli strumenti**.  
@@ -109,30 +109,30 @@ ms.locfileid: "38808265"
   
 ### <a name="to-add-two-buttons"></a>Per aggiungere due pulsanti  
   
-1.  Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **A3** del foglio di lavoro.  
+1. Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **A3** del foglio di lavoro.  
   
-     Questo pulsante viene denominato `Button1`.  
+    Questo pulsante viene denominato `Button1`.  
   
-2.  Aggiungere un'altra <xref:System.Windows.Forms.Button> controllo alla cella **B3** del foglio di lavoro.  
+2. Aggiungere un'altra <xref:System.Windows.Forms.Button> controllo alla cella **B3** del foglio di lavoro.  
   
-     Questo pulsante viene denominato `Button2`.  
+    Questo pulsante viene denominato `Button2`.  
   
- Successivamente, contrassegna il set di dati da memorizzare nella cache del documento.  
+   Successivamente, contrassegna il set di dati da memorizzare nella cache del documento.  
   
 ## <a name="cache-the-dataset"></a>Memorizzare nella cache il set di dati  
  Contrassegna il set di dati da memorizzare nella cache del documento, rendendo il set di dati pubblico e impostando il **CacheInDocument** proprietà.  
   
 ### <a name="to-cache-the-dataset"></a>Per memorizzare nella cache il set di dati  
   
-1.  Selezionare **NorthwindDataSet** nella barra dei componenti.  
+1. Selezionare **NorthwindDataSet** nella barra dei componenti.  
   
-2.  Nel **delle proprietà** finestra Modifica il **modificatori** proprietà **pubblica**.  
+2. Nel **delle proprietà** finestra Modifica il **modificatori** proprietà **pubblica**.  
   
-     I set di dati devono essere pubblici prima di abilitare la memorizzazione nella cache.  
+    I set di dati devono essere pubblici prima di abilitare la memorizzazione nella cache.  
   
-3.  Modifica il **CacheInDocument** proprietà **True**.  
+3. Modifica il **CacheInDocument** proprietà **True**.  
   
- Il passaggio successivo è aggiungere testo ai pulsanti e in c# aggiungere il codice per associare i gestori di eventi.  
+   Il passaggio successivo è aggiungere testo ai pulsanti e in c# aggiungere il codice per associare i gestori di eventi.  
   
 ## <a name="initialize-the-controls"></a>Inizializzare i controlli  
  Impostare il testo del pulsante e aggiungere i gestori di eventi durante il <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> evento.  

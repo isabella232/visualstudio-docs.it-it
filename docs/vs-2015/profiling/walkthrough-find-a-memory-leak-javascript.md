@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17bb1aaaae10c5c23968634ae06773909c27ffcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929569"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Procedura dettagliata: trovare una perdita di memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,44 +139,44 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 ### <a name="analyzing-the-memory-usage"></a>Analisi dell'utilizzo della memoria  
   
-1.  Sulla barra degli strumenti **Debug** , nell'elenco **Avvia debug** , scegli la destinazione di debug per il progetto aggiornato: uno degli emulatori Windows Phone o **Simulatore**.  
+1. Sulla barra degli strumenti **Debug** , nell'elenco **Avvia debug** , scegli la destinazione di debug per il progetto aggiornato: uno degli emulatori Windows Phone o **Simulatore**.  
   
-    > [!TIP]
-    >  Per un'app di Windows Store, puoi anche scegliere **Computer locale** o **Computer remoto** in questo elenco. L'emulatore o il simulatore può essere posizionato accanto a Visual Studio per poter passare agevolmente tra l'app in esecuzione e JavaScript Memory Analyzer. Per altre informazioni, vedere [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md) ed [Eseguire app di Windows Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > [!TIP]
+   >  Per un'app di Windows Store, puoi anche scegliere **Computer locale** o **Computer remoto** in questo elenco. L'emulatore o il simulatore può essere posizionato accanto a Visual Studio per poter passare agevolmente tra l'app in esecuzione e JavaScript Memory Analyzer. Per altre informazioni, vedere [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md) ed [Eseguire app di Windows Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2.  Scegliere **Profiler prestazioni** dal menu **Debug**.  
+2. Scegliere **Profiler prestazioni** dal menu **Debug**.  
   
-3.  In **Strumenti disponibili**scegli **Memoria JavaScript**e scegli **Avvia**.  
+3. In **Strumenti disponibili**scegli **Memoria JavaScript**e scegli **Avvia**.  
   
-     In questa esercitazione assocerai Memory Analyzer al progetto di avvio. Per informazioni su altre opzioni, come l'associazione dell'analizzatore di memoria a un'app installata, vedi [Memoria JavaScript](../profiling/javascript-memory.md).  
+    In questa esercitazione assocerai Memory Analyzer al progetto di avvio. Per informazioni su altre opzioni, come l'associazione dell'analizzatore di memoria a un'app installata, vedi [Memoria JavaScript](../profiling/javascript-memory.md).  
   
-     Quando avvii l'analizzatore di memoria, potresti vedere un messaggio di Controllo dell'account utente che richiede l'autorizzazione a eseguire VsEtwCollector.exe. Scegliere **Sì**.  
+    Quando avvii l'analizzatore di memoria, potresti vedere un messaggio di Controllo dell'account utente che richiede l'autorizzazione a eseguire VsEtwCollector.exe. Scegliere **Sì**.  
   
-4.  Scegli il pulsante **Perdita memoria** quattro volte in successione.  
+4. Scegli il pulsante **Perdita memoria** quattro volte in successione.  
   
-     Quando scegli il pulsante, il codice di gestione dell'evento in default.js non funziona, cosa che si tradurrà in una perdita di memoria. Lo userai per scopi diagnostici.  
+    Quando scegli il pulsante, il codice di gestione dell'evento in default.js non funziona, cosa che si tradurrà in una perdita di memoria. Lo userai per scopi diagnostici.  
   
-    > [!TIP]
-    >  La ripetizione dello scenario che desideri testare per una perdita di memoria ti consente di filtrare più facilmente le informazioni non interessanti, ad esempio oggetti aggiunti all'heap durante l'inizializzazione dell'app o il caricamento di una pagina.  
+   > [!TIP]
+   >  La ripetizione dello scenario che desideri testare per una perdita di memoria ti consente di filtrare più facilmente le informazioni non interessanti, ad esempio oggetti aggiunti all'heap durante l'inizializzazione dell'app o il caricamento di una pagina.  
   
-5.  Dall'app in esecuzione passa a Visual Studio (ALT+TAB).  
+5. Dall'app in esecuzione passa a Visual Studio (ALT+TAB).  
   
-     JavaScript Memory Analyzer visualizza informazioni in una nuova scheda in Visual Studio.  
+    JavaScript Memory Analyzer visualizza informazioni in una nuova scheda in Visual Studio.  
   
-     Il grafico relativo alla memoria in questa visualizzazione di riepilogo mostra l'utilizzo della memoria del processo nel tempo. La visualizzazione include inoltre comandi come **Crea snapshot heap**. Uno snapshot fornisce informazioni dettagliate sull'utilizzo della memoria in un momento specifico. Per ulteriori informazioni, vedi [Memoria JavaScript](../profiling/javascript-memory.md).  
+    Il grafico relativo alla memoria in questa visualizzazione di riepilogo mostra l'utilizzo della memoria del processo nel tempo. La visualizzazione include inoltre comandi come **Crea snapshot heap**. Uno snapshot fornisce informazioni dettagliate sull'utilizzo della memoria in un momento specifico. Per ulteriori informazioni, vedi [Memoria JavaScript](../profiling/javascript-memory.md).  
   
-6.  Scegli **Crea snapshot heap**.  
+6. Scegli **Crea snapshot heap**.  
   
-7.  Passa all'app e scegli **Perdita memoria**.  
+7. Passa all'app e scegli **Perdita memoria**.  
   
-8.  Passa a Visual Studio e scegli **Crea snapshot heap** .  
+8. Passa a Visual Studio e scegli **Crea snapshot heap** .  
   
-     Questa illustrazione mostra lo snapshot della linea di base (n.1) e lo snapshot n.2.  
+    Questa illustrazione mostra lo snapshot della linea di base (n.1) e lo snapshot n.2.  
   
-     ![Snapshot iniziale e snapshot 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![Snapshot iniziale e snapshot 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
-    > [!NOTE]
-    >  L'Emulatore Windows Phone non mostra una schermata dell'app quando è stato scattato lo snapshot.  
+   > [!NOTE]
+   >  L'Emulatore Windows Phone non mostra una schermata dell'app quando è stato scattato lo snapshot.  
   
 9. Passa all'app e scegli nuovamente il pulsante **Perdita memoria** .  
   
@@ -193,18 +193,18 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 12. In Visual Studio confronta gli snapshot. Lo Snapshot n. 2 mostra quanto segue:  
   
-    -   Le dimensioni dell'heap (indicate dalla freccia su rossa a sinistra) sono aumentate di parecchi KB rispetto allo snapshot n.1.  
+    - Le dimensioni dell'heap (indicate dalla freccia su rossa a sinistra) sono aumentate di parecchi KB rispetto allo snapshot n.1.  
   
-        > [!IMPORTANT]
-        >  I valori di utilizzo esatti della memoria per le dimensioni dell'heap dipendono dalla destinazione di debug.  
+      > [!IMPORTANT]
+      >  I valori di utilizzo esatti della memoria per le dimensioni dell'heap dipendono dalla destinazione di debug.  
   
-    -   Il numero di oggetti sull'heap (indicato dalla freccia su rossa a destra) è aumentato rispetto allo snapshot n.1. È stato aggiunto un oggetto (+1) e non è stato rimosso alcun oggetto (-0).  
+    - Il numero di oggetti sull'heap (indicato dalla freccia su rossa a destra) è aumentato rispetto allo snapshot n.1. È stato aggiunto un oggetto (+1) e non è stato rimosso alcun oggetto (-0).  
   
-     Lo Snapshot n. 3 mostra quanto segue:  
+      Lo Snapshot n. 3 mostra quanto segue:  
   
-    -   Le dimensioni dell'heap sono aumentate ancora di parecchie centinaia di byte rispetto allo snapshot n. 2.  
+    - Le dimensioni dell'heap sono aumentate ancora di parecchie centinaia di byte rispetto allo snapshot n. 2.  
   
-    -   Il numero di oggetti sull'heap è aumentato ancora rispetto allo snapshot n.2. È stato aggiunto un oggetto (+1) e non è stato rimosso alcun oggetto (-0).  
+    - Il numero di oggetti sull'heap è aumentato ancora rispetto allo snapshot n.2. È stato aggiunto un oggetto (+1) e non è stato rimosso alcun oggetto (-0).  
   
 13. Nello snapshot n. 3 scegli il testo del collegamento a destra, che mostra un valore di +1/-0 accanto alla freccia su rossa.  
   
@@ -220,76 +220,76 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      Questa visualizzazione mostra informazioni utili sulla perdita di memoria, ad esempio:  
   
-    -   Questa visualizzazione mostra un elemento DIV con un ID di `item`e le dimensioni conservate per l'oggetto sono parecchie centinaia di byte (il valore esatto potrà variare).  
+    - Questa visualizzazione mostra un elemento DIV con un ID di `item`e le dimensioni conservate per l'oggetto sono parecchie centinaia di byte (il valore esatto potrà variare).  
   
-    -   Questo oggetto è rimasto dallo snapshot n. 2 e rappresenta una potenziale perdita di memoria.  
+    - Questo oggetto è rimasto dallo snapshot n. 2 e rappresenta una potenziale perdita di memoria.  
   
-     In questa fase è bene avere una certa conoscenza dell'app. La scelta del pulsante **Perdita memoria** dovrebbe eliminare un elemento DIV e aggiungerne un altro, pertanto il codice non sembra funzionare. La sezione successiva spiega come risolvere questo problema.  
+      In questa fase è bene avere una certa conoscenza dell'app. La scelta del pulsante **Perdita memoria** dovrebbe eliminare un elemento DIV e aggiungerne un altro, pertanto il codice non sembra funzionare. La sezione successiva spiega come risolvere questo problema.  
   
     > [!TIP]
     >  Talvolta, individuare un oggetto relativamente all'oggetto `Global` può aiutare a identificare quell'oggetto. A questo scopo, apri il menu di scelta rapida per l'identificatore e scegli **Mostra in visualizzazione radice**.  
   
 ##  <a name="FixingMemory"></a> Correzione del problema di memoria  
   
-1.  Usando i dati ottenuti dal profiler, esamina il codice responsabile della rimozione di elementi DOM con un ID "item". Questo si verifica nella funzione `initialize()`.  
+1. Usando i dati ottenuti dal profiler, esamina il codice responsabile della rimozione di elementi DOM con un ID "item". Questo si verifica nella funzione `initialize()`.  
   
-    ```javascript  
-    function initialize() {  
+   ```javascript  
+   function initialize() {  
   
-        if (wrapper != null) {  
-            elem.removeNode(true);  
-        }  
-    }  
-    ```  
+       if (wrapper != null) {  
+           elem.removeNode(true);  
+       }  
+   }  
+   ```  
   
-     `elem.removeNode(true)` , probabilmente, non funziona correttamente. Esamina il modo in cui il codice memorizza nella cache l'elemento DOM e rileva un problema; il riferimento all'elemento memorizzato nella cache non viene aggiornato.  
+    `elem.removeNode(true)` , probabilmente, non funziona correttamente. Esamina il modo in cui il codice memorizza nella cache l'elemento DOM e rileva un problema; il riferimento all'elemento memorizzato nella cache non viene aggiornato.  
   
-2.  Nel file default.js aggiungi la seguente riga di codice alla funzione di caricamento, appena prima di chiamare `appendChild`:  
+2. Nel file default.js aggiungi la seguente riga di codice alla funzione di caricamento, appena prima di chiamare `appendChild`:  
   
-    ```javascript  
-    elem = newDiv;  
-    ```  
+   ```javascript  
+   elem = newDiv;  
+   ```  
   
-     Questo codice aggiorna il riferimento all'elemento memorizzato nella cache in modo che l'elemento venga rimosso correttamente quando scegli il pulsante **Perdita memoria** . Il codice completo per la funzione di caricamento ha ora il seguente aspetto:  
+    Questo codice aggiorna il riferimento all'elemento memorizzato nella cache in modo che l'elemento venga rimosso correttamente quando scegli il pulsante **Perdita memoria** . Il codice completo per la funzione di caricamento ha ora il seguente aspetto:  
   
-    ```javascript  
-    function load() {  
+   ```javascript  
+   function load() {  
   
-        wrapper = document.querySelector(".wrapper");  
+       wrapper = document.querySelector(".wrapper");  
   
-        var newDiv = document.createElement("div");  
+       var newDiv = document.createElement("div");  
   
-        newDiv.style.zIndex = "-1";  
-        newDiv.id = "item";  
-        elem = newDiv;  
+       newDiv.style.zIndex = "-1";  
+       newDiv.id = "item";  
+       elem = newDiv;  
   
-        wrapper.appendChild(newDiv);  
-    }  
-    ```  
+       wrapper.appendChild(newDiv);  
+   }  
+   ```  
   
-3.  Scegliere **Prestazioni e diagnostica** dal menu **Debug**.  
+3. Scegliere **Prestazioni e diagnostica** dal menu **Debug**.  
   
-4.  In **Strumenti disponibili**scegli **Memoria JavaScript**e scegli **Avvia**.  
+4. In **Strumenti disponibili**scegli **Memoria JavaScript**e scegli **Avvia**.  
   
-5.  Segui la stessa procedura per eseguire tre snapshot. I passaggi sono riepilogati di seguito:  
+5. Segui la stessa procedura per eseguire tre snapshot. I passaggi sono riepilogati di seguito:  
   
-    1.  Nell'app scegli il pulsante **Perdita memoria** quattro volte in successione.  
+   1. Nell'app scegli il pulsante **Perdita memoria** quattro volte in successione.  
   
-    2.  Passa a Visual Studio e scegli **Crea snapshot heap** per lo snapshot della linea di base.  
+   2. Passa a Visual Studio e scegli **Crea snapshot heap** per lo snapshot della linea di base.  
   
-    3.  Nell'app scegli il pulsante **Perdita memoria** .  
+   3. Nell'app scegli il pulsante **Perdita memoria** .  
   
-    4.  Passa a Visual Studio e scegli **Crea snapshot heap** per il secondo snapshot.  
+   4. Passa a Visual Studio e scegli **Crea snapshot heap** per il secondo snapshot.  
   
-    5.  Nell'app scegli il pulsante **Perdita memoria** .  
+   5. Nell'app scegli il pulsante **Perdita memoria** .  
   
-    6.  Passa a Visual Studio e scegli **Crea snapshot heap** per il terzo snapshot.  
+   6. Passa a Visual Studio e scegli **Crea snapshot heap** per il terzo snapshot.  
   
-     Lo snapshot n. 3 indica che le dimensioni dell'heap non sono aumentate ( **Nessun aumento** ) rispetto allo snapshot n. 2 e che il numero di oggetti è ora +1/-1, a indicare che è stato aggiunto un oggetto e ne è stato rimosso un altro. Questo è il comportamento desiderato.  
+      Lo snapshot n. 3 indica che le dimensioni dell'heap non sono aumentate ( **Nessun aumento** ) rispetto allo snapshot n. 2 e che il numero di oggetti è ora +1/-1, a indicare che è stato aggiunto un oggetto e ne è stato rimosso un altro. Questo è il comportamento desiderato.  
   
-     L'illustrazione seguente mostra lo snapshot n. 2 e lo snapshot n. 3.  
+      L'illustrazione seguente mostra lo snapshot n. 2 e lo snapshot n. 3.  
   
-     ![Snapshot che illustrano la perdita di memoria risolta](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
+      ![Snapshot che illustrano la perdita di memoria risolta](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>Vedere anche  
  [Memoria JavaScript](../profiling/javascript-memory.md)

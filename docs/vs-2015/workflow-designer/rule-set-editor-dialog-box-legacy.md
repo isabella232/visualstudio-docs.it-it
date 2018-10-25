@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942400"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Finestra di dialogo Editor set di regole (legacy)
 Questo argomento viene descritto come usare il **Editor Set di regole** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -67,19 +67,19 @@ Questo argomento viene descritto come usare il **Editor Set di regole** nella fi
   
  Le espressioni supportano gli operatori seguenti:  
   
--   operatori relazionali: ==, =, !=  
+- operatori relazionali: ==, =, !=  
   
--   Gli operatori di confronto: <, \<=, >, > =  
+- Gli operatori di confronto: <, \<=, >, > =  
   
--   Operatori aritmetici: +, - , *, /, MOD  
+- Operatori aritmetici: +, - , *, /, MOD  
   
--   Gli operatori logici: E, & &, OR, &#124; &#124;, NOT,!  
+- Gli operatori logici: E, & &, OR, &#124; &#124;, NOT,!  
   
--   Operatori bit per bit: &,&#124;  
+- Operatori bit per bit: &,&#124;  
   
- La precedenza di operatori dell’espressione segue le regole di precedenza dell’operatore C#.  
+  La precedenza di operatori dell’espressione segue le regole di precedenza dell’operatore C#.  
   
- Per altre informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Per altre informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Funzioni Halt e Aggiorna  
  **Azioni Then:** e **azioni Else:** espressioni supportano **Halt** e **Update** funzioni. Usare il **Halt** di funzione, digitare **Halt** in un **azione Then:** oppure **azione Else:** casella di testo. Il **Halt** azione causa l'esecuzione di set di regole arrestare immediatamente, e il controllo ritorna al codice chiamante. Si utilizza il **Update** funzione con il concatenamento in avanti.  

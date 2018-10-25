@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6ca9fd11e56631061d86c35f9e6bd686b8750b50
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928659"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generare file con l'utilità TextTransform
 
@@ -51,11 +51,11 @@ TextTransform [<options>] <templateName>
 ### <a name="parameters"></a>Parametri
 
 |**Argomento**|**Descrizione**|
-|------------------|---------------------|
+|-|-|
 |`templateName`|Identifica il nome del file del modello che si desidera trasformare.|
 
 |**Opzione**|**Descrizione**|
-|----------------|---------------------|
+|-|-|
 |**-out** \<nomefile >|Il file in cui viene scritto l'output della trasformazione.|
 |**-r** \<assembly>|Un assembly utilizzato per la compilazione e l'esecuzione del modello di testo.|
 |**-u** \<namespace>|Uno spazio dei nomi utilizzato per la compilazione del modello.|
@@ -68,7 +68,7 @@ TextTransform [<options>] <templateName>
 ## <a name="related-topics"></a>Argomenti correlati
 
 |Attività|Argomento|
-|----------|-----------|
+|-|-|
 |Generare i file in una soluzione di Visual Studio.|[Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Scrivere processori di direttive per trasformare le origini dati.|[Personalizzazione della trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md)|
 |Scrivere un host di modello di testo che consente di richiamare i modelli di testo dalla propria applicazione.|[Elaborazione di modelli di testo tramite un host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md)|
