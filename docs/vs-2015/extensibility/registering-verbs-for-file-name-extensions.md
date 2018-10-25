@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923407"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrazione di verbi per le estensioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ L'associazione di un'estensione di file a un'applicazione ha in genere un'azione
 ## <a name="registering-standard-verbs"></a>Registrazione di verbi Standard  
  Il sistema operativo riconosce i verbi standard seguenti:  
   
--   Apri  
+- Apri  
   
--   Edit  
+- Edit  
   
--   Riproduci  
+- Riproduci  
   
--   Print  
+- Print  
   
--   Anteprima  
+- Anteprima  
   
- Quando possibile, registrare un verbo standard. La scelta più comune è il verbo Open. Usare il verbo di modifica solo se è presente una netta differenza tra l'apertura del file e la modifica del file. Ad esempio, aprire un file con estensione htm lo visualizza nel browser, mentre la modifica di un file con estensione htm avvia un editor HTML. Verbi standard vengono localizzati con impostazioni locali del sistema operativo.  
+  Quando possibile, registrare un verbo standard. La scelta più comune è il verbo Open. Usare il verbo di modifica solo se è presente una netta differenza tra l'apertura del file e la modifica del file. Ad esempio, aprire un file con estensione htm lo visualizza nel browser, mentre la modifica di un file con estensione htm avvia un editor HTML. Verbi standard vengono localizzati con impostazioni locali del sistema operativo.  
   
 > [!NOTE]
 >  Quando si registrano i verbi standard, non impostare il valore predefinito per il codice Open. Il valore predefinito contiene la stringa di visualizzazione del menu. Il sistema operativo fornisce questa stringa per i verbi standard.  

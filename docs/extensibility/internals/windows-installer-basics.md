@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 73d1462cd6a5dacf57939ae06e7b490235483a60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843132"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 Il programma di installazione di Windows installa e Disinstalla applicazioni o i prodotti software nel computer dell'utente, eseguire queste attività in unità denominate i componenti di Windows Installer (denominati talvolta WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni usando Windows Installer e installazione.  
@@ -29,17 +29,17 @@ Il programma di installazione di Windows installa e Disinstalla applicazioni o i
 ## <a name="authoring-a-vspackage"></a>Creazione di un pacchetto VSPackage  
  Programma di installazione di Windows Usa pacchetti di installazione, che contengono informazioni necessarie dal programma di installazione di Windows per installare, disinstallare o ripristinare un prodotto ed eseguire l'interfaccia utente (UI) di configurazione. Ogni pacchetto di installazione include un file con estensione msi, che contiene un database di installazione, un flusso di informazioni di riepilogo e i flussi di dati di varie parti dell'installazione. Per usare il programma di installazione, è necessario creare un'installazione. Poiché il programma di installazione consente di organizzare le installazioni sul concetto di componenti e archivia le informazioni relative all'installazione in un database relazionale, il processo di creazione di un pacchetto di installazione su vasta scala comporta i passaggi seguenti:  
   
-1.  Pianificare l'installazione di authoring per supportare il controllo delle versioni e le strategie side-by-side.  
+1. Pianificare l'installazione di authoring per supportare il controllo delle versioni e le strategie side-by-side.  
   
-2.  Identificare le funzionalità da presentare agli utenti.  
+2. Identificare le funzionalità da presentare agli utenti.  
   
-3.  Organizzare i VSPackage e le dipendenze in componenti.  
+3. Organizzare i VSPackage e le dipendenze in componenti.  
   
-4.  Popolare il database di installazione con le informazioni.  
+4. Popolare il database di installazione con le informazioni.  
   
-5.  Convalidare il pacchetto di installazione.  
+5. Convalidare il pacchetto di installazione.  
   
- Questa documentazione riguarda principalmente il primo e il terzo passaggio del processo. Durante questa procedura organizzare le funzionalità dei pacchetti VSPackage in WICs può definire il controllo delle versioni e strategia per le versioni successive del motivo di manutenzione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. I rimanenti tre passaggi sono descritti dettagliatamente nella documentazione di Windows Installer in Platform SDK.  
+   Questa documentazione riguarda principalmente il primo e il terzo passaggio del processo. Durante questa procedura organizzare le funzionalità dei pacchetti VSPackage in WICs può definire il controllo delle versioni e strategia per le versioni successive del motivo di manutenzione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. I rimanenti tre passaggi sono descritti dettagliatamente nella documentazione di Windows Installer in Platform SDK.  
   
 ## <a name="key-terms"></a>Termini chiave  
  Di seguito sono le definizioni dei termini chiave correlati alla tecnologia Windows Installer.  

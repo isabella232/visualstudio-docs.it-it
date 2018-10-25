@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyOpenPDB | Documenti Microsoft
+title: Notifyopenpdb | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02069369e92862fffd90fcf4fe49c2d7e064f64e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1367d444a498c1c066cbdfb38ee4f2cec12c9a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915321"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 Chiamato quando viene aperto un file con estensione pdb candidato.  
@@ -35,10 +35,10 @@ HRESULT NotifyOpenPDB (
   
 #### <a name="parameters"></a>Parametri  
  `pdbPath`  
- [in] Il percorso completo del file PDB.  
+ [in] Il percorso completo del file con estensione pdb.  
   
  `resultCode`  
- [in] Codice che indica l'esito positivo (`S_OK`) o negativo del carico, così come applicato a questo file.  
+ [in] Il codice che indica l'esito positivo (`S_OK`) o negativo del carico applicato a questo file.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Il codice restituito in genere viene ignorato.  

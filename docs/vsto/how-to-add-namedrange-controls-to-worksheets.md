@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867117"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Procedura: aggiungere controlli NamedRange a fogli di lavoro
   È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.NamedRange> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nei progetti a livello di documento.  
@@ -33,13 +33,13 @@ ms.locfileid: "35672738"
   
  Questo argomento descrive le attività seguenti:  
   
--   [Aggiungere controlli NamedRange in fase di progettazione](#designtime)  
+- [Aggiungere controlli NamedRange in fase di progettazione](#designtime)  
   
--   [Aggiungere controlli NamedRange in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)  
+- [Aggiungere controlli NamedRange in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)  
   
--   [Aggiungere controlli NamedRange in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)  
+- [Aggiungere controlli NamedRange in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)  
   
- Per altre informazioni sulle <xref:Microsoft.Office.Tools.Excel.NamedRange> controlli, vedere [controllo NamedRange](../vsto/namedrange-control.md).  
+  Per altre informazioni sulle <xref:Microsoft.Office.Tools.Excel.NamedRange> controlli, vedere [controllo NamedRange](../vsto/namedrange-control.md).  
   
 ##  <a name="designtime"></a> Aggiungere controlli NamedRange in fase di progettazione  
  Esistono diversi modi per aggiungere controlli <xref:Microsoft.Office.Tools.Excel.NamedRange> a un foglio di lavoro in un progetto a livello di documento in fase di progettazione: da Excel, dalla **casella degli strumenti**di Visual Studio e dalla finestra **Origini dati** .  
