@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6a238eabbcba4f28b12f899de5b2d4eae30cfef9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 25155615090ce627a4bf30a5fd0b54bd913fe2da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939762"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 È possibile eseguire la migrazione di progetti di definiscono e usano il linguaggio specifico di dominio per [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] che è stato distribuito con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -38,51 +38,51 @@ ms.locfileid: "47858769"
 
 #### <a name="to-migrate-dsl-projects-and-solutions-to-visual-studio-2010"></a>Eseguire la migrazione di soluzioni e progetti DSL da Visual Studio 2010
 
-1.  Avviare lo strumento di migrazione di DSL.
+1. Avviare lo strumento di migrazione di DSL.
 
-    -   È possibile avviare lo strumento al prompt dei comandi o fare doppio clic sullo strumento in Windows Explorer (o Esplora File). Lo strumento è in questa posizione:
+   -   È possibile avviare lo strumento al prompt dei comandi o fare doppio clic sullo strumento in Windows Explorer (o Esplora File). Lo strumento è in questa posizione:
 
-         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
-2.  Scegliere una cartella che contiene soluzioni e progetti che si desidera convertire.
+2. Scegliere una cartella che contiene soluzioni e progetti che si desidera convertire.
 
-    -   Immettere il percorso nella casella nella parte superiore dello strumento, oppure fare clic su **esplorare**.
+   - Immettere il percorso nella casella nella parte superiore dello strumento, oppure fare clic su **esplorare**.
 
      Lo strumento di migrazione Visualizza un albero di progetti che definiscono o usare linguaggi specifici di dominio. L'albero include tutti i progetti che usa il **Microsoft.VisualStudio.Modeling.Sdk** oppure **TextTemplating** assembly.
 
-3.  Esaminare l'albero dei progetti e deselezionare i progetti che non si desidera convertire.
+3. Esaminare l'albero dei progetti e deselezionare i progetti che non si desidera convertire.
 
-    -   Selezionare un progetto o una soluzione per visualizzare un elenco delle modifiche che lo strumento.
+   -   Selezionare un progetto o una soluzione per visualizzare un elenco delle modifiche che lo strumento.
 
-        > [!NOTE]
-        >  Le caselle di controllo da visualizzare accanto ai nomi di cartella non hanno alcun effetto. È necessario espandere le cartelle per ispezionare i progetti e soluzioni.
+       > [!NOTE]
+       >  Le caselle di controllo da visualizzare accanto ai nomi di cartella non hanno alcun effetto. È necessario espandere le cartelle per ispezionare i progetti e soluzioni.
 
-4.  Convertire i progetti.
+4. Convertire i progetti.
 
-    1.  Fare clic su **convertire**.
+   1.  Fare clic su **convertire**.
 
-         Prima di ogni file di progetto viene convertito, una copia della _project_**csproj** viene salvato come _progetto_**. vs2008.csproj**
+        Prima di ogni file di progetto viene convertito, una copia della _project_**csproj** viene salvato come _progetto_**. vs2008.csproj**
 
-         Una copia della ognuno _soluzione_**sln** viene salvato come _soluzione_**. vs2008.sln**
+        Una copia della ognuno _soluzione_**sln** viene salvato come _soluzione_**. vs2008.sln**
 
-    2.  Esaminare tutte le conversioni non riuscite segnalati.
+   2.  Esaminare tutte le conversioni non riuscite segnalati.
 
-         Gli errori vengono segnalati nella finestra di testo. Inoltre, la visualizzazione albero mostra un contrassegno rosso in ogni nodo che non è riuscito a convertire. È possibile fare clic sul nodo per ottenere altre informazioni sull'errore.
+        Gli errori vengono segnalati nella finestra di testo. Inoltre, la visualizzazione albero mostra un contrassegno rosso in ogni nodo che non è riuscito a convertire. È possibile fare clic sul nodo per ottenere altre informazioni sull'errore.
 
-5.  **Trasforma tutti i modelli** nelle soluzioni contenente correttamente convertire i progetti.
+5. **Trasforma tutti i modelli** nelle soluzioni contenente correttamente convertire i progetti.
 
-    1.  Aprire la soluzione.
+   1.  Aprire la soluzione.
 
-    2.  Scegliere il **Trasforma tutti i modelli** pulsante nell'intestazione di Esplora soluzioni.
+   2.  Scegliere il **Trasforma tutti i modelli** pulsante nell'intestazione di Esplora soluzioni.
 
-        > [!NOTE]
-        >  È possibile rendere questo passaggio non necessari. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+       > [!NOTE]
+       >  È possibile rendere questo passaggio non necessari. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
 
-6.  Aggiornare il codice personalizzato nei progetti convertiti.
+6. Aggiornare il codice personalizzato nei progetti convertiti.
 
-    -   Provare a compilare i progetti ed esaminare gli eventuali errori.
+   -   Provare a compilare i progetti ed esaminare gli eventuali errori.
 
-    -   Eseguire il test della finestra di progettazione.
+   -   Eseguire il test della finestra di progettazione.
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

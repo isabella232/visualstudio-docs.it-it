@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Documenti Microsoft
+title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b67294b6bb22ff9607be726415b6aae8a2a9524
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdf9fa9057e946d68da9f1e02d5aaf90b34e569a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931766"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-Questo metodo restituisce l'espressione analizzata e, facoltativamente, esegue il cast del risultato a un altro tipo di dati.  
+Questo metodo valuta l'espressione analizzata e facoltativamente esegue il cast del risultato a un altro tipo di dati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -53,10 +53,10 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parametri  
  `dwEvalFlags`  
- [in] Una combinazione di [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) costanti che consentono di controllare come viene valutata l'espressione.  
+ [in] Una combinazione di [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) costanti che controllano il modo in cui l'espressione deve essere valutata.  
   
  `dwTimeout`  
- [in] Specifica il tempo massimo, in millisecondi di attesa prima della restituzione da questo metodo. Utilizzare `INFINITE` per un'attesa indefinita.  
+ [in] Specifica il tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.  
   
  `pSymbolProvider`  
  [in] Il provider di simboli, espresso come un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interfaccia.  
@@ -68,7 +68,7 @@ int EvaluateSync(
  [in] Lo strumento di associazione, espresso come un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfaccia.  
   
  `bstrResultType`  
- [in] Il tipo di risultato deve eseguire il cast. Questo argomento può essere un valore null.  
+ [in] Il risultato dovrebbe essere eseguire il cast. Questo argomento può essere un valore null.  
   
  `ppResult`  
  [out] Restituisce il [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaccia che rappresenta i risultati della valutazione.  
@@ -77,7 +77,7 @@ int EvaluateSync(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Contesto di valutazione dell'espressione è dato dalla `pAddress`, che rende possibile determinare il metodo contenitore e dell'ambito di utilizzo del linguaggio delle regole per determinare il valore dei simboli nell'espressione.  
+ Contesto di valutazione dell'espressione è dato dai `pAddress`, che rende possibile determinare il metodo contenitore e dell'ambito di utilizzo del linguaggio delle regole per determinare il valore dei simboli nell'espressione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

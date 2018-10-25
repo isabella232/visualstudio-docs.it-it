@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbols::Skip | Documenti Microsoft
+title: Idiaenumsymbols | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e96f2f03229b12c378a096ecfd7555af1f5cce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 64d30183d01e74bf5e6171d98b5df21c678c8dbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937967"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
-Ignora un numero specificato di simboli in una sequenza di enumerazione.  
+Ignora un determinato numero di simboli in una sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT Skip (
  [in] Il numero di simboli nella sequenza di enumerazione da ignorare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se sono non presenti ulteriori simboli da ignorare.  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non sono presenti ulteriori simboli da ignorare.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

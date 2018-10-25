@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 272fb5368b73e483bb7d2f44c475d5e4e7bfdfcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933573"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
 Usare la pagina delle proprietà **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XAML. Per aprire la finestra di dialogo **Opzioni**, fare clic sul menu **Strumenti** e quindi su **Opzioni**. Per accedere alla finestra delle proprietà **Formattazione**, espandere **Editor di testo**, **XAML** e il nodo **Formattazione**.
@@ -96,11 +96,12 @@ Usare la pagina delle proprietà **Formattazione** per specificare la formattazi
 ## <a name="element-spacing"></a>Spaziatura elementi
  Usare questa impostazione per controllare la disposizione degli elementi nel documento XAML
 
-|||
-|-|-|
-|**Conserva i caratteri di fine riga nel contenuto**|Le righe vuote nel contenuto dell'elemento non vengono rimosse.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Comprimi più righe vuote nel contenuto in una sola riga**|Le righe vuote nel contenuto dell'elemento vengono compresse in una singola riga.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Rimuovi le righe vuote nel contenuto**|Tutte le righe vuote nel contenuto dell'elemento vengono rimosse.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
+
+| | |
+| - | - |
+| **Conserva i caratteri di fine riga nel contenuto** | Le righe vuote nel contenuto dell'elemento non vengono rimosse.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>\` |
+| **Comprimi più righe vuote nel contenuto in una sola riga** | Le righe vuote nel contenuto dell'elemento vengono compresse in una singola riga.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>` |
+| **Rimuovi le righe vuote nel contenuto** | Tutte le righe vuote nel contenuto dell'elemento vengono rimosse.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>` |
 
 ## <a name="miscellaneous-section-auto-insert"></a>Sezione Varie, Inserimento automatico
  Usare questa impostazione per controllare la generazione automatica di tag e virgolette.

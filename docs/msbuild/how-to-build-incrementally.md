@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56727c338f0f11c9d79704644888448c04064466
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932429"
 ---
 # <a name="how-to-build-incrementally"></a>Procedura: Eseguire la compilazione incrementale
 Quando si compila un progetto di grandi dimensioni, è importante che i componenti compilati precedentemente e ancora aggiornati non vengano ricompilati. Se vengono ricompilate tutte le destinazioni, ogni compilazione impiegherà molto tempo. Per abilitare le compilazioni incrementali, in cui vengono compilate solo le destinazioni che non sono state compilate precedentemente o le destinazioni non aggiornate, [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) può confrontare i timestamp dei file di input con i timestamp dei file di output e stabilire se ignorare, compilare o ricompilare parzialmente una destinazione. Per questa operazione di confronto, è necessario un mapping uno a uno tra input e output. È possibile usare le trasformazioni per consentire alle destinazioni di identificare tale mapping diretto. Per altre informazioni sulle trasformazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).  
@@ -29,15 +29,15 @@ Quando si compila un progetto di grandi dimensioni, è importante che i componen
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Per specificare input e output per una destinazione  
   
--   Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Ad esempio:  
+- Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Ad esempio:  
   
-    ```xml  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```xml  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può confrontare i timestamp dei file di input con i timestamps dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Nell'esempio seguente se un file dell'elenco di elementi `@(CSFile)` è più recente del file *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compilerà la destinazione; in caso contrario il file verrà ignorato:  
+  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può confrontare i timestamp dei file di input con i timestamps dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Nell'esempio seguente se un file dell'elenco di elementi `@(CSFile)` è più recente del file *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compilerà la destinazione; in caso contrario il file verrà ignorato:  
   
 ```xml  
 <Target Name="Build"   

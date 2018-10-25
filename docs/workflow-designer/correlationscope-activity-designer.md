@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eae1f0d61492eba29b442d0fbfb22b77377228fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d1da881dfb7f7a8c063b94e49198d1b299b2e47b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942049"
 ---
 # <a name="correlationscope-activity-designer"></a>ActivityDesigner CorrelationScope
 
@@ -42,7 +42,7 @@ L'attività il cui ambito all'interno della correlazione vengono specificate ril
 Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.CorrelationScope> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Queste proprietà possono essere modificati in **proprietà** finestra o nell'area di progettazione del flusso di lavoro e spesso in entrambe.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo facoltativo dell'attività <xref:System.ServiceModel.Activities.InitializeCorrelation>.|
 |<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Consente di specificare l'oggetto <xref:System.ServiceModel.Activities.CorrelationHandle> usato per gestire le attività di messaggistica figlio. Se non si imposta questa proprietà, <xref:System.ServiceModel.Activities.CorrelationScope> crea automaticamente un oggetto <xref:System.ServiceModel.Activities.CorrelationHandle> implicito.|
 |<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Consente di specificare le attività all'interno dell'ambito della correlazione.|
@@ -50,8 +50,8 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.
 ## <a name="see-also"></a>Vedere anche
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Ricezione](../workflow-designer/receive-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Invia](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

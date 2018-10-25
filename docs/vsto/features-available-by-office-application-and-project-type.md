@@ -22,21 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929855"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Funzionalità disponibili in base al tipo di progetto e applicazioni di Office
   In Visual Studio sono disponibili numerosi tipi di modelli di progetto che supportano scenari aziendali diversi per le applicazioni di Microsoft Office, inclusi i tipi seguenti:  
   
--   Personalizzazioni a livello di documento.  
+- Personalizzazioni a livello di documento.  
   
--   Componenti aggiuntivi VSTO.  
+- Componenti aggiuntivi VSTO.  
   
- Non tutte le applicazioni possono utilizzare ogni tipo di progetto. Ad esempio, i progetti a livello di documento sono disponibili solo per Microsoft Office Word e Microsoft Office Excel. Analogamente, alcune funzionalità sono disponibili solo per determinati tipi di progetti o applicazioni. Ad esempio, il riquadro azioni è disponibile solo nei progetti a livello di documento e le estensioni della barra multifunzione sono disponibili solo per alcune applicazioni. Per altre informazioni sui diversi tipi di progetto, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  Non tutte le applicazioni possono utilizzare ogni tipo di progetto. Ad esempio, i progetti a livello di documento sono disponibili solo per Microsoft Office Word e Microsoft Office Excel. Analogamente, alcune funzionalità sono disponibili solo per determinati tipi di progetti o applicazioni. Ad esempio, il riquadro azioni è disponibile solo nei progetti a livello di documento e le estensioni della barra multifunzione sono disponibili solo per alcune applicazioni. Per altre informazioni sui diversi tipi di progetto, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Modelli di progetto di Office sono disponibili solo in alcune edizioni di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

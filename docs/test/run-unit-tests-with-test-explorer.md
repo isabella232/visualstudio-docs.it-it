@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939516"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -100,7 +100,7 @@ Esplora test consente di raggruppare i test in categorie predefinite. La maggior
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
 |Gruppo|Descrizione|
-|-----------|-----------------|
+|-|-----------------|
 |**Durata**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Raggruppa i test in base a coppie categoria/valore definite. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
@@ -115,7 +115,7 @@ Esplora test consente di raggruppare i test in categorie predefinite. La maggior
  Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore di un tratto viene definita in un attributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Il framework di test contiene anche i tratti predefiniti seguenti:
 
 |Tratto|Descrizione|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoria Owner è definita dal framework di unit test e richiede di specificare un valore di stringa relativo al proprietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoria Priority è definita dal framework di unit test e richiede di specificare un valore integer relativo alla priorità.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|L'attributo TestCategory consente di specificare una categoria senza un valore. Una categoria definita dall'attributo TestCategory può anche essere la categoria di un attributo TestProperty.|
@@ -143,7 +143,7 @@ Per filtrare in base a un criterio diverso:
 > Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.
 
 |Qualificatore|Descrizione|
-|---------------|-----------------|
+|-|-----------------|
 |**Tratto**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
 |**Messaggio di errore**|Cerca le corrispondenze nei messaggi di errore definiti dall'utente restituiti da asserzioni non riuscite.|
@@ -187,7 +187,7 @@ Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test 
 
 2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 
- Per altre informazioni sul debugger, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Per altre informazioni sul debugger, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticare i problemi di prestazioni dei metodi di test
 
@@ -216,7 +216,7 @@ Per altre informazioni, vedere [Usare la funzionalità code coverage per determi
 I test possono essere eseguiti da **Esplora test** facendo clic nell'editor di codice in un test e selezionando **Esegui il test**, oppure usando i [tasti di scelta rapida di Esplora test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) predefiniti in Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono i test o ne eseguono il debug in base a dove si trova il cursore del mouse nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
 
 |Comandi frequenti| Tasti di scelta rapida|
-|--------------|------------------------|
+|-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **CTRL**+**T**|
 |TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
 

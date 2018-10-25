@@ -13,12 +13,12 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943102"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Procedura dettagliata: Creare un pacchetto di estensione
 
@@ -40,8 +40,8 @@ Il modello di elemento Extension Pack crea un pacchetto di estensione con set di
   
 3. Aggiunta di file ExtensionPack1.vsext che contiene il codice seguente
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ Il modello di elemento Extension Pack crea un pacchetto di estensione con set di
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. Vsixid di estensione da includere nel pacchetto di estensione è reperibile nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Trovare l'estensione che si desidera includere e fare clic su **ID copia**. È possibile aggiornare quello esistente **vsixId** nell'esempio precedente di file o aggiungere un'altra estensione all'elenco.
 

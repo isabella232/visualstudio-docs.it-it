@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d14dd126806e2c7b9a903e415dbc7a8a6f834517
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 32bba243cd38132a4c64a0b8706f9dbdca823ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566895"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942374"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizzazione dei campi testo e immagine
 Quando si definisce un elemento decorator di testo in una forma, è rappresentato da un TextField. Per esempi dell'inizializzazione di TextFields e altri ShapeFields, esaminare Dsl\GeneratedCode\Shapes.cs alla soluzione DSL.
@@ -80,7 +80,6 @@ public virtual Font GetFont(ShapeElement shape)
 // To change per shape or dynamically, override this.
 public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
-
 ```
 
  Esistono diverse altre coppie di `Get` metodi e `Default` delle proprietà, ad esempio `DefaultMultipleLine/GetMultipleLine()`. È possibile assegnare un valore per la proprietà predefinita per modificare il valore per tutte le istanze del campo della forma. Il valore varia da istanza di una forma a un'altra o dipendenti sullo stato della forma o il relativo elemento modello, eseguire l'override di `Get` (metodo).
@@ -106,7 +105,6 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
       TextField commentField = ShapeElement.FindShapeField(shapeFields, "CommentDecorator") as TextField;
       // Use the standard font for comments:
       commentField.DefaultFontId = DiagramFonts.CommentText;
-
 ```
 
 ## <a name="dynamic-customizations"></a>Personalizzazioni dinamiche
@@ -169,7 +167,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 
   }
-
 ```
 
 ## <a name="style-sets"></a>Set di stili
@@ -264,7 +261,6 @@ partial class ExampleShape
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>Vedere anche

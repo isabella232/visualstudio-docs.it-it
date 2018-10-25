@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IActiveScriptDebug | Documenti Microsoft
+title: Interfaccia IActiveScriptDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1e1d0c1cf51c63f1bb3fcd90ae72520da907e50
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e21f4c99da886bc4907acf8b0934e1b46d57689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942088"
 ---
 # <a name="iactivescriptdebug-interface"></a>Interfaccia IActiveScriptDebug
-Implementata dai motori di script che supportano il debug. In genere, un oggetto che implementa il `IActiveScriptDebug` interfaccia anche implementa il `IActiveScript` interfaccia. In questo caso, chiamare il `IActiveScript::QueryInterface` per ottenere il `IActiveScriptDebug` interfaccia.  
+Implementata dai motori di script che supportano il debug. In genere, un oggetto che implementa il `IActiveScriptDebug` implementa anche di interfaccia di `IActiveScript` interfaccia. In questo caso, chiama il `IActiveScript::QueryInterface` metodo per ottenere il `IActiveScriptDebug` interfaccia.  
   
  Il `IActiveScriptDebug` interfaccia fornisce i mezzi per:  
   
--   SmartHost ad assumere la gestione dei documenti.  
+- Smart host ad assumere la gestione dei documenti.  
   
--   Gestione di debug di processo per sincronizzare il debug di più motori di script.  
+- Gestione di debug di processo per sincronizzare il debug di più motori di script.  
   
- Oltre ai metodi ereditati da `IUnknown`, `IActiveScriptDebug` interfaccia espone i metodi seguenti.  
+  Oltre ai metodi ereditati da `IUnknown`, il `IActiveScriptDebug` interfaccia espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   

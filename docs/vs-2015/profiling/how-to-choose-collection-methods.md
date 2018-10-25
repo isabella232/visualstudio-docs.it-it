@@ -18,12 +18,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940957"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedura: scegliere un metodo di raccolta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sup
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- È possibile usare la proprietà **Metodo** della sessione di prestazioni per specificare il metodo di raccolta più appropriato per un'applicazione. Il metodo di raccolta può essere impostato dalla Creazione guidata sessione di prestazioni, da Esplora prestazioni o dalle pagine delle proprietà di una sessione di prestazioni. Se si usano gli strumenti della riga di comando, vedere [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md) per altre informazioni.  
+  È possibile usare la proprietà **Metodo** della sessione di prestazioni per specificare il metodo di raccolta più appropriato per un'applicazione. Il metodo di raccolta può essere impostato dalla Creazione guidata sessione di prestazioni, da Esplora prestazioni o dalle pagine delle proprietà di una sessione di prestazioni. Se si usano gli strumenti della riga di comando, vedere [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md) per altre informazioni.  
   
 ## <a name="performance-wizard"></a>Creazione guidata sessione di prestazioni  
   
