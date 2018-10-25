@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isNaked | Documenti Microsoft
+title: Get_isnaked | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6004652b9f47f39b8b083b4047b91613ec63bb03
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32280a8b4baaf82867065898b5478c11842a33df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915074"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
-Recupera un flag che specifica se la funzione ha il [naked](/cpp/cpp/naked-cpp) attributo (vale a dire, la funzione non dispone di alcun codice di prologo o epilogo aggiunte dal compilatore).  
+Recupera un flag che specifica se la funzione ha il [naked](/cpp/cpp/naked-cpp) attributo (vale a dire, la funzione non dispone di alcun codice di prologo o epilogo aggiunti dal compilatore).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT get_isNaked(
   
 #### <a name="parameters"></a>Parametri  
  `pFlag`  
- [out] Restituisce `TRUE` se la funzione di `naked` attributo; in caso contrario, restituisce `FALSE`.  
+ [out] Restituisce `TRUE` se la funzione ha il `naked` dell'attributo; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
@@ -47,7 +47,7 @@ HRESULT get_isNaked(
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 8.0 DIA SDK|  
+|Versione:|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

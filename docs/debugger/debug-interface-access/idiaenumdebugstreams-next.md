@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Next | Documenti Microsoft'
+title: Idiaenumdebugstreams | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 780aaca4d840d87df17572ec7d58cebc84e84d4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5fc8bfcbf9d95e838648d8923c01cc9b145ed9bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916226"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
-Recupera un numero specificato di flussi di debug nella sequenza di enumerazione.  
+Recupera un determinato numero di flussi di debug nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametri  
  celt  
- [in] **T**ha numero di flussi di debug nell'enumeratore deve essere recuperato.  
+ [in] **T**numero di flussi di debug nell'enumeratore deve essere recuperato.  
   
  rgelt  
- [out] Restituisce una matrice di [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) gli oggetti che rappresentano il debug di flussi da recuperare.  
+ [out] Restituisce una matrice di [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) crea un flusso in corso il recupero di oggetti che rappresenta il debug.  
   
  pceltFetched  
  [out] Restituisce il numero di flussi debug restituiti.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se nessun flusso altre. In caso contrario, verrà restituito un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esistono Nessun più flussi. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

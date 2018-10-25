@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::CanTerminateProcess | Documenti Microsoft
+title: IDebugPortEx2::CanTerminateProcess | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f44df279cd8ad4721a6b4559af1dc3defb94714a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5717d5312630c3e9adaac2e1a32fa0d44a3a213
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902334"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 Determina se un processo può essere terminato.  
@@ -41,7 +41,7 @@ HRESULT CanTerminateProcess(
   
 #### <a name="parameters"></a>Parametri  
  `pPortProcess`  
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo da terminare.  
+ [in] Un' [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo da terminare.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce `S_OK` se il processo può essere terminato; in caso contrario, restituisce `S_FALSE`.  

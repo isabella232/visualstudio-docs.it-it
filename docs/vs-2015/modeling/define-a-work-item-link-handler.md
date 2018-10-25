@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25143390085ec0b4d7ab56e0fef9920d7d5eceb8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914547"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definire un gestore dei collegamenti agli elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,11 +92,11 @@ ms.locfileid: "49290420"
 ### <a name="import-the-work-item-namespace"></a>Importare lo spazio dei nomi dell'elemento di lavoro  
  Nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] project **riferimenti**, aggiungere i riferimenti agli assembly seguenti:  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
--   Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
+- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
   
- Nel codice del programma, importare gli spazi dei nomi seguenti:  
+  Nel codice del programma, importare gli spazi dei nomi seguenti:  
   
 ```  
 using System.ComponentModel.Composition;  
@@ -282,21 +282,21 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
   
  dove:  
   
--   L'URI per il server sarà:  
+- L'URI per il server sarà:  
   
-     `http://tfServer:8080/tfs/projectCollection`  
+   `http://tfServer:8080/tfs/projectCollection`  
   
-     L'alternanza maiuscolo minuscolo è importante in `projectCollection`.  
+   L'alternanza maiuscolo minuscolo è importante in `projectCollection`.  
   
--   `RepositoryGuid` può essere ottenuto dalla connessione TFS:  
+- `RepositoryGuid` può essere ottenuto dalla connessione TFS:  
   
-    ```csharp  
-    TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
-    RepositoryGuid= tpc.InstanceId;  
+  ```csharp  
+  TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
+  RepositoryGuid= tpc.InstanceId;  
   
-    ```  
+  ```  
   
- Per altre informazioni sui riferimenti, vedere [stringhe di riferimento Attach UML di elementi del modello](../modeling/attach-reference-strings-to-uml-model-elements.md).  
+  Per altre informazioni sui riferimenti, vedere [stringhe di riferimento Attach UML di elementi del modello](../modeling/attach-reference-strings-to-uml-model-elements.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore?displayProperty=fullName>   

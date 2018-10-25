@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_thunkordinal | Documenti Microsoft'
+title: Get_thunkordinal | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed649ffe02cc27f959bf96b826fc02498beb4acd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e3893d7c74d92caa708606c336eb2775c538f1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918344"
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 Recupera il tipo di thunk di una funzione.  
@@ -34,7 +34,7 @@ HRESULT get_thunkOrdinal (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce un valore di [THUNK_ORDINAL (enumerazione)](../../debugger/debug-interface-access/thunk-ordinal.md) enumerazione che specifica il tipo di thunk di una funzione.  
+ [out] Restituisce un valore compreso il [enumerazione THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md) enumerazione che specifica il tipo di thunk di una funzione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
@@ -43,11 +43,11 @@ HRESULT get_thunkOrdinal (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
- Questa proprietà è valida solo se il simbolo come un [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) valore `SymTagThunk`.  
+ Questa proprietà è valida solo se il simbolo come un [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) pari a `SymTagThunk`.  
   
  Un "thunk" è un frammento di codice che esegue la conversione tra uno spazio di indirizzi di memoria a 32 bit (noto anche come spazio di indirizzi flat) e uno spazio di indirizzi di 16 bit (noto come uno spazio degli indirizzi segmentati).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [THUNK_ORDINAL (enumerazione)](../../debugger/debug-interface-access/thunk-ordinal.md)   
- [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)
+ [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

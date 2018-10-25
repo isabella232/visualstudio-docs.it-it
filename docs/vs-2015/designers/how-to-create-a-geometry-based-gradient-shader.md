@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 480a316ea7947e71317c3d15424b521f0ac69ba8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911876"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con sfumatura basata sulla geometria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
 #### <a name="to-create-a-geometry-based-gradient-shader"></a>Per creare uno shader con sfumatura basata sulla geometria  
   
-1.  Creare uno shader DGSL da utilizzare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).  
+1. Creare uno shader DGSL da utilizzare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).  
   
-2.  Scollegare il nodo **Colore punto** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.  
+2. Scollegare il nodo **Colore punto** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.  
   
-3.  Aggiungere un nodo **Per** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Per** e spostarlo nell'area di progettazione.  
+3. Aggiungere un nodo **Per** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Per** e spostarlo nell'area di progettazione.  
   
-4.  Aggiungere un nodo **Mascheramento vettore** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Mascheramento vettore** e spostarlo nell'area di progettazione.  
+4. Aggiungere un nodo **Mascheramento vettore** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Mascheramento vettore** e spostarlo nell'area di progettazione.  
   
-5.  Specificare i valori di maschera per il nodo **Mascheramento vettore**. In modalità **Seleziona** selezionare il nodo **Mascheramento vettore** e nella finestra **Proprietà** impostare la proprietà **Verde / Y** su **True**. Impostare quindi le proprietà **Rosso / X**, **Blu / Z** e **Alfa / W** su **False**. In questo esempio, le proprietà **Rosso / X**, **Verde / Y** e **Blu / Z** corrispondono ai componenti x, y e z del nodo **Posizione globale** e **Alfa / W** non viene usato. Poiché solo **Verde / Y** è impostato su **True**, dopo il mascheramento del vettore di input rimane solo il componente y.  
+5. Specificare i valori di maschera per il nodo **Mascheramento vettore**. In modalità **Seleziona** selezionare il nodo **Mascheramento vettore** e nella finestra **Proprietà** impostare la proprietà **Verde / Y** su **True**. Impostare quindi le proprietà **Rosso / X**, **Blu / Z** e **Alfa / W** su **False**. In questo esempio, le proprietà **Rosso / X**, **Verde / Y** e **Blu / Z** corrispondono ai componenti x, y e z del nodo **Posizione globale** e **Alfa / W** non viene usato. Poiché solo **Verde / Y** è impostato su **True**, dopo il mascheramento del vettore di input rimane solo il componente y.  
   
-6.  Aggiungere un nodo **Posizione globale** al grafico. Nella **casella degli strumenti**, in **Costanti**, selezionare **Posizione globale** e spostarlo nell'area di progettazione.  
+6. Aggiungere un nodo **Posizione globale** al grafico. Nella **casella degli strumenti**, in **Costanti**, selezionare **Posizione globale** e spostarlo nell'area di progettazione.  
   
-7.  Mascherare la posizione del frammento nello spazio globale. In modalità **Seleziona** spostare il terminale **Output** del nodo **Posizione globale** nel terminale **Vettore** del nodo **Mascheramento vettore**. Questa connessione maschera la posizione del frammento in modo da ignorare i componenti x e z.  
+7. Mascherare la posizione del frammento nello spazio globale. In modalità **Seleziona** spostare il terminale **Output** del nodo **Posizione globale** nel terminale **Vettore** del nodo **Mascheramento vettore**. Questa connessione maschera la posizione del frammento in modo da ignorare i componenti x e z.  
   
-8.  Moltiplicare la costante di colore RGB per la posizione mascherata nello spazio globale. Spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Y** del nodo **Per** e quindi spostare il terminale **Output** del nodo **Mascheramento vettore** nel terminale **X** del nodo **Per**. Tale connessione consente di ridimensionare il valore del colore in base all'altezza del pixel nello spazio globale.  
+8. Moltiplicare la costante di colore RGB per la posizione mascherata nello spazio globale. Spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Y** del nodo **Per** e quindi spostare il terminale **Output** del nodo **Mascheramento vettore** nel terminale **X** del nodo **Per**. Tale connessione consente di ridimensionare il valore del colore in base all'altezza del pixel nello spazio globale.  
   
 9. Collegare il valore del colore ridimensionato al colore finale. Spostare il terminale **Output** del nodo **Per** nel terminale **RGB** del nodo **Colore finale**.  
   
- La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a una sfera.  
+   La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a una sfera.  
   
 > [!NOTE]
 >  In questa figura è stato specificato un colore arancione per illustrare meglio l'effetto dello shader, ma poiché la forma di anteprima non ha una posizione nello spazio globale, lo shader non può essere interamente visualizzato in anteprima nella finestra di progettazione dello shader. Per poter illustrare l'effetto completo, lo shader deve essere visualizzato in anteprima in una scena reale.  

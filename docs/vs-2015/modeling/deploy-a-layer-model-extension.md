@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907248"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Distribuire un'estensione del modello di livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Altri utenti di Visual Studio possono installare estensioni di modellazione del 
   
 #### <a name="to-install-the-extension"></a>Per installare l'estensione  
   
-1.  Nel progetto che contiene **source.vsix.manifest**aprire **bin\\ \***  in Esplora File.  
+1. Nel progetto che contiene **source.vsix.manifest**aprire **bin\\\\*** in Esplora File.  
   
-2.  Copia il  **\*VSIX** file nel computer in cui si desidera installare l'estensione.  
+2. Copia il  **\*VSIX** file nel computer in cui si desidera installare l'estensione.  
   
-3.  Nel computer di destinazione fare doppio clic sul file con estensione VSIX in Esplora risorse.  
+3. Nel computer di destinazione fare doppio clic sul file con estensione VSIX in Esplora risorse.  
   
-     Verrà aperto il programma di installazione di VSIX.  
+    Verrà aperto il programma di installazione di VSIX.  
   
 #### <a name="to-uninstall-the-extension"></a>Per disinstallare l'estensione  
   

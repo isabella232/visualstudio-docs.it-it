@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911642"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizzazione del layout delle finestre in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,21 +65,21 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
   
  È possibile disporre le finestre nei modi seguenti:  
   
--   Bloccare le finestre dei documenti a sinistra della scheda.  
+- Bloccare le finestre dei documenti a sinistra della scheda.  
   
--   Ancorare le schede delle finestre alla cornice per la modifica.  
+- Ancorare le schede delle finestre alla cornice per la modifica.  
   
--   Ancorare le finestre degli strumenti al bordo di una cornice nell'IDE.  
+- Ancorare le finestre degli strumenti al bordo di una cornice nell'IDE.  
   
--   Rendere mobili le finestre dei documenti o degli strumenti sopra o all'esterno dell'IDE.  
+- Rendere mobili le finestre dei documenti o degli strumenti sopra o all'esterno dell'IDE.  
   
--   Nascondere le finestre degli strumenti lungo il bordo dell'IDE.  
+- Nascondere le finestre degli strumenti lungo il bordo dell'IDE.  
   
--   Visualizzare le finestre su monitor diversi.  
+- Visualizzare le finestre su monitor diversi.  
   
--   Reimpostare la posizione delle finestre sul layout predefinito o su un layout personalizzato salvato.  
+- Reimpostare la posizione delle finestre sul layout predefinito o su un layout personalizzato salvato.  
   
- Le finestre dei documenti e degli strumenti possono essere disposte trascinandole, utilizzando i comandi nel menu **Finestra** e facendo clic con il pulsante destro del mouse sulla barra del titolo della finestra da disporre.  
+  Le finestre dei documenti e degli strumenti possono essere disposte trascinandole, utilizzando i comandi nel menu **Finestra** e facendo clic con il pulsante destro del mouse sulla barra del titolo della finestra da disporre.  
   
 > [!NOTE]
 >  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

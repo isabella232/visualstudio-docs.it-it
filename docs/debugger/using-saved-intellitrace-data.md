@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3afcfc29dcb01de307f0aefc3a943626bc213d
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912968"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
 Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il debug da un file di log IntelliTrace (.iTrace). Questo file può contenere eventi di prestazioni, eccezioni, thread, passi del test, moduli e altre informazioni di sistema che IntelliTrace ha raccolto durante l'esecuzione dell'applicazione.
@@ -159,25 +159,25 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Avviare il debug con un ID correlazione di SharePoint
 
-1.  Copiare l'ID di correlazione SharePoint dalla relativa origine.
+1. Copiare l'ID di correlazione SharePoint dalla relativa origine.
 
-     Ad esempio:
+    Ad esempio:
 
-     ![IntelliTrace &#45; errore di SharePoint &#45; ID di correlazione](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![IntelliTrace &#45; errore di SharePoint &#45; ID di correlazione](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
-2.  Aprire il file .iTrace, quindi passare ad **Analisi** e immettere l'ID di correlazione SharePoint per esaminare eventi registrati e di richieste Web corrispondenti.
+2. Aprire il file .iTrace, quindi passare ad **Analisi** e immettere l'ID di correlazione SharePoint per esaminare eventi registrati e di richieste Web corrispondenti.
 
-     ![Log di IntelliTrace &#45; ID di correlazione SharePoint immettere](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![Log di IntelliTrace &#45; ID di correlazione SharePoint immettere](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3.  In **Eventi richiesta**esaminare gli eventi. Partendo dall'alto, gli eventi vengono visualizzati nell'ordine in cui si sono verificati.
+3. In **Eventi richiesta**esaminare gli eventi. Partendo dall'alto, gli eventi vengono visualizzati nell'ordine in cui si sono verificati.
 
-    1.  Scegliere un evento per visualizzarne i dettagli.
+   1. Scegliere un evento per visualizzarne i dettagli.
 
-    2.  Scegliere **Avvia debug** per avviare il debug nel punto in cui si è verificato l'evento.
+   2. Scegliere **Avvia debug** per avviare il debug nel punto in cui si è verificato l'evento.
 
-     ![File di log IntelliTrace &#45; Visualizza la richiesta web &#43; gli eventi](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![File di log IntelliTrace &#45; Visualizza la richiesta web &#43; gli eventi](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
- È possibile visualizzare questi tipi di eventi SharePoint insieme agli eventi IntelliTrace:
+   È possibile visualizzare questi tipi di eventi SharePoint insieme agli eventi IntelliTrace:
 
 -   **Eventi di profilo utente**
 
@@ -199,28 +199,28 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Avviare il debug da un'eccezione non gestita
 
-1.  Scegliere un ID di correlazione SharePoint per un'eccezione. Le eccezioni vengono raggruppate per tipo e stack di chiamate.
+1. Scegliere un ID di correlazione SharePoint per un'eccezione. Le eccezioni vengono raggruppate per tipo e stack di chiamate.
 
-2.  (Facoltativo) Espandere **Stack di chiamate** per visualizzare lo stack di chiamate per un gruppo di eccezioni.
+2. (Facoltativo) Espandere **Stack di chiamate** per visualizzare lo stack di chiamate per un gruppo di eccezioni.
 
-3.  Scegliere **Debug eccezione** per avviare il debug nel punto e nel momento in cui si è verificata l'eccezione.
+3. Scegliere **Debug eccezione** per avviare il debug nel punto e nel momento in cui si è verificata l'eccezione.
 
-     ![Log di IntelliTrace &#45; le eccezioni non gestite di SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![Log di IntelliTrace &#45; le eccezioni non gestite di SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
- Per informazioni dettagliate, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
+   Per informazioni dettagliate, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Elenco dei thread
  Esaminare i thread registrati che sono stati eseguiti nel processo di destinazione. È possibile avviare il debug dal primo evento IntelliTrace valido in un thread selezionato.
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Per avviare il debug da un thread specifico
 
-1.  In **Elenco dei thread**scegliere un thread.
+1. In **Elenco dei thread**scegliere un thread.
 
-2.  Nella parte inferiore di **Elenco dei thread**scegliere **Avvia debug**. È inoltre possibile fare doppio clic su un thread.
+2. Nella parte inferiore di **Elenco dei thread**scegliere **Avvia debug**. È inoltre possibile fare doppio clic su un thread.
 
-     Per avviare il debug dall'inizio dell'applicazione, fare doppio clic su **Thread principale**. Visualizzare [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
+    Per avviare il debug dall'inizio dell'applicazione, fare doppio clic su **Thread principale**. Visualizzare [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
 
- I dati dei thread creati dall'utente potrebbero essere più utili di quelli creati da un server e gestiti per applicazioni Web ospitate in IIS.
+   I dati dei thread creati dall'utente potrebbero essere più utili di quelli creati da un server e gestiti per applicazioni Web ospitate in IIS.
 
 |**Colonna**|**Mostra**|
 |----------------|-------------------|
@@ -258,7 +258,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |----------------|-------------------|
 |**Nome modulo**|Nome del file di modulo|
 |**Percorso modulo**|Posizione sul disco in cui è stato caricato il modulo|
-|**ID modulo**|Identificatore univoco del modulo specifico della versione, che contribuisce ai file dei simboli (PDB) corrispondenti. Visualizzare [ricerca di file di simboli (PDB) e i file di origine](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**ID modulo**|Identificatore univoco del modulo specifico della versione, che contribuisce ai file dei simboli (PDB) corrispondenti. Vedere [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
 
 ### <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere altre informazioni?
  [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)

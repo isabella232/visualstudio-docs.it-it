@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912032"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilazione e pulizia di progetti e soluzioni in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Per compilare il progetto di avvio e le relative dipendenze  
   
-1.  Nella barra dei menu scegliere **Strumenti**, **Opzioni**.  
+1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.  
   
-2.  Nella finestra di dialogo **Opzioni** espandere il nodo **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.  
+2. Nella finestra di dialogo **Opzioni** espandere il nodo **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.  
   
-     Si apre la finestra di dialogo **Compila ed esegui, Progetti e soluzioni, Opzioni**.  
+    Si apre la finestra di dialogo **Compila ed esegui, Progetti e soluzioni, Opzioni**.  
   
-3.  Selezionare la casella di controllo **Compila progetti di avvio e dipendenze solo in fase di esecuzione**.  
+3. Selezionare la casella di controllo **Compila progetti di avvio e dipendenze solo in fase di esecuzione**.  
   
-     Se questa casella di controllo è selezionata, solo il progetto di avvio corrente e le relative dipendenze vengono compilati quando si esegue la procedura seguente:  
+    Se questa casella di controllo è selezionata, solo il progetto di avvio corrente e le relative dipendenze vengono compilati quando si esegue la procedura seguente:  
   
-    -   Scegliere **Debug**, **Avvia** (F5) dalla barra dei menu.  
+   - Scegliere **Debug**, **Avvia** (F5) dalla barra dei menu.  
   
-    -   Dalla barra dei menu scegliere **Compila**, **Compila soluzione** (CTRL+MAIUSC+B).  
+   - Dalla barra dei menu scegliere **Compila**, **Compila soluzione** (CTRL+MAIUSC+B).  
   
      Quando questa casella di controllo è deselezionata e si eseguono i comandi precedenti vengono compilati tutti i progetti, le relative dipendenze e i file della soluzione. Per impostazione predefinita, questa casella di controllo è deselezionata.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>Per compilare solo il progetto di Visual C++ selezionato  
   
-1.  Scegliere un progetto di [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] e quindi dalla barra dei menu scegliere **Compila**, **Project Only** (Solo progetto) e quindi uno dei comandi seguenti:  
+1. Scegliere un progetto di [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] e quindi dalla barra dei menu scegliere **Compila**, **Project Only** (Solo progetto) e quindi uno dei comandi seguenti:  
   
-    -   **Build Only** (Compila solo) *NomeProgetto*  
+   - **Build Only** (Compila solo) *NomeProgetto*  
   
-    -   **Rebuild Only** (Ricompila solo) *NomeProgetto*  
+   - **Rebuild Only** (Ricompila solo) *NomeProgetto*  
   
-    -   **Clean Only** (Pulisci solo) *NomeProgetto*  
+   - **Clean Only** (Pulisci solo) *NomeProgetto*  
   
-    -   **Link Only** (Collega solo) *NomeProgetto*  
+   - **Link Only** (Collega solo) *NomeProgetto*  
   
      Questi comandi si applicano solo al progetto di [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] scelto. Non eseguono la compilazione, la ricompilazione, la pulizia o il collegamento di eventuali dipendenze del progetto o file di soluzione. A seconda della versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], il sottomenu **Project Only** (Solo progetto) potrebbe contenere altri comandi.  
   

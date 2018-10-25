@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ab3e3c2f299adb8a2f0ec5703f81b14fe5fc4ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899643"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Risolvere i problemi relativi alle estensioni per i diagrammi delle dipendenze
 
@@ -25,22 +25,22 @@ Questo argomento risolve alcuni problemi che possono verificarsi quando si crean
 
 ## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>Quando si preme F5 per eseguire il debug dell'estensione my, my comandi, i gestori di movimento, estensioni di convalida o le proprietà personalizzate non vengono visualizzate nei diagrammi delle dipendenze nell'istanza sperimentale di Visual Studio
 
-1.  Aprire la soluzione dell'estensione nell'istanza sperimentale di Visual Studio e sui **compilare** menu, fare clic su **Ricompila soluzione**.
+1. Aprire la soluzione dell'estensione nell'istanza sperimentale di Visual Studio e sui **compilare** menu, fare clic su **Ricompila soluzione**.
 
-2.  Premere **F5** oppure **CTRL+F5** per avviare l'istanza sperimentale di Visual Studio. Aprire un diagramma delle dipendenze e testare l'estensione.
+2. Premere **F5** oppure **CTRL+F5** per avviare l'istanza sperimentale di Visual Studio. Aprire un diagramma delle dipendenze e testare l'estensione.
 
- Continuare con la procedura descritta di seguito, se necessario.
+   Continuare con la procedura descritta di seguito, se necessario.
 
 ## <a name="an-old-version-of-my-extension-runs"></a>Viene seguita una versione precedente dell'estensione.
 
-1.  Assicurarsi che non sia in esecuzione alcuna istanza sperimentale di Visual Studio.
+1. Assicurarsi che non sia in esecuzione alcuna istanza sperimentale di Visual Studio.
 
-2.  Eliminare la cartella seguente: %LocalAppData%\Microsoft\VisualStudio\\[versione] \ComponentModelCache
+2. Eliminare la cartella seguente: %LocalAppData%\Microsoft\VisualStudio\\[versione] \ComponentModelCache
 
-    > [!NOTE]
-    > % LocalAppData % corrisponde in genere *DriveName*: \Users\\*UserName*\AppData\Local.
+   > [!NOTE]
+   > % LocalAppData % corrisponde in genere *DriveName*: \Users\\*UserName*\AppData\Local.
 
- Continuare con la procedura descritta di seguito, se necessario.
+   Continuare con la procedura descritta di seguito, se necessario.
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Viene visualizzata una versione precedente dei risultati di convalida o il metodo di convalida non viene chiamato.
 

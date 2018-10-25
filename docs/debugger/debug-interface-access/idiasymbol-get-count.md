@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_count | Documenti Microsoft
+title: Get_count | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4b65c043faaadacd4a272b441d6902e23d7612
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 56382811c88f865b45f3e027ced6a78d0d7b80ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899838"
 ---
 # <a name="idiasymbolgetcount"></a>IDiaSymbol::get_count
 Recupera il numero di elementi di una matrice o elenco.  
@@ -47,7 +47,7 @@ HRESULT get_count (
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 7.0 DIA SDK|  
+|Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Documenti Microsoft
+title: IDebugProcessQueryProperties::QueryProperties | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c278e5713432c19eaea1a964534c79522e36500b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37abff77fa0c969be7186413f0e3e2531c8d94d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915399"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-Query di questo metodo per i valori di una proprietà specificata del processo di debug.  
+Questa query di metodo per i valori di una proprietà specificata del processo di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,19 +41,19 @@ int QueryProperties(
   
 #### <a name="parameters"></a>Parametri  
  `celt`  
- [in] Dimensioni delle matrici contenente le definizioni di proprietà e i valori delle proprietà.  
+ [in] Dimensioni delle matrici che contiene le definizioni di proprietà e i valori delle proprietà.  
   
  `dwPropType`  
- [in] Matrice che contiene le definizioni delle proprietà sottoposte a query. I valori possibili sono:  
+ [in] Matrice che contiene le definizioni delle proprietà sottoposti a query. I valori possibili sono:  
   
--   PROCESS_PROPERTY_COMMAND_LINE = 1  
+- PROCESS_PROPERTY_COMMAND_LINE = 1  
   
--   PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
   
--   PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
- `pvarPropValue`  
- [out] Matrice che contiene i valori delle proprietà.  
+  `pvarPropValue`  
+  [out] Matrice contenente i valori delle proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

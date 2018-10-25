@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Documenti Microsoft
+title: IDebugDocumentText2::GetText | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b5adaccf5a74119ee5e697c9dfd7b7ad46d6151
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe2b5ef3804c4ccfafbf164a8eb144e7822a6fdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905506"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Recupera il testo dalla posizione specificata nel documento.  
@@ -50,7 +50,7 @@ int GetText(
  [in] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura che indica la posizione del testo da recuperare.  
   
  `cMaxChars`  
- [in] Numero massimo di caratteri del testo da recuperare.  
+ [in] Il numero massimo di caratteri del testo da recuperare.  
   
  `pText`  
  [in, out] Un puntatore a un buffer che deve essere compilato con il testo desiderato. Questo buffer deve essere in grado di contenere almeno `cMaxChars` numero di caratteri "wide".  
@@ -62,7 +62,7 @@ int GetText(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="example"></a>Esempio  
- Questo esempio mostra come questo metodo può essere chiamato da c#.  
+ Questo esempio mostra come questo metodo può essere chiamato da codice c#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

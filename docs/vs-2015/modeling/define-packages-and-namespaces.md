@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915027"
 ---
 # <a name="define-packages-and-namespaces"></a>Definire pacchetti e spazi dei nomi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>Per creare un pacchetto in Esplora modelli UML  
   
-1.  Aprire **Esplora modelli UML**. Nel **architettura** dal menu **Windows**, quindi fare clic sul **Esplora modelli UML**.  
+1. Aprire **Esplora modelli UML**. Nel **architettura** dal menu **Windows**, quindi fare clic sul **Esplora modelli UML**.  
   
-2.  Fare clic con il pulsante destro del mouse su un pacchetto o un modello a cui si desidera aggiungere un nuovo pacchetto.  
+2. Fare clic con il pulsante destro del mouse su un pacchetto o un modello a cui si desidera aggiungere un nuovo pacchetto.  
   
-    > [!NOTE]
-    >  È possibile annidare un pacchetto all'interno di un altro pacchetto.  
+   > [!NOTE]
+   >  È possibile annidare un pacchetto all'interno di un altro pacchetto.  
   
-3.  Puntare **Add** e quindi fare clic su **pacchetto**.  
+3. Puntare **Add** e quindi fare clic su **pacchetto**.  
   
-     Nel modello viene visualizzato un nuovo pacchetto.  
+    Nel modello viene visualizzato un nuovo pacchetto.  
   
-4.  Digitare un nuovo nome per il pacchetto.  
+4. Digitare un nuovo nome per il pacchetto.  
   
- Se è stato creato un pacchetto in Esplora modelli UML, è possibile visualizzarlo in un diagramma classi UML. È inoltre possibile visualizzare un pacchetto in più diagrammi classi UML.  
+   Se è stato creato un pacchetto in Esplora modelli UML, è possibile visualizzarlo in un diagramma classi UML. È inoltre possibile visualizzare un pacchetto in più diagrammi classi UML.  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Per visualizzare un pacchetto esistente in un diagramma classi UML  
   
@@ -103,15 +103,15 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
 ##  <a name="Elements"></a> Creazione di elementi del modello all'interno di pacchetti  
  È possibile inserire gli elementi del modello all'interno di un pacchetto in quattro modi:  
   
--   Aggiungere un nuovo elemento a un pacchetto in Esplora modelli UML.  
+- Aggiungere un nuovo elemento a un pacchetto in Esplora modelli UML.  
   
--   Aggiungere classi e altri tipi ai pacchetti in un diagramma classi UML.  
+- Aggiungere classi e altri tipi ai pacchetti in un diagramma classi UML.  
   
--   Impostare il **LinkedPackage** proprietà di un diagramma in modo che i nuovi elementi creati nel diagramma vengono posizionati all'interno del pacchetto specificato. I diagrammi classi, i diagrammi dei componenti e i diagrammi caso di utilizzo possono essere collegati a un pacchetto in questo modo.  
+- Impostare il **LinkedPackage** proprietà di un diagramma in modo che i nuovi elementi creati nel diagramma vengono posizionati all'interno del pacchetto specificato. I diagrammi classi, i diagrammi dei componenti e i diagrammi caso di utilizzo possono essere collegati a un pacchetto in questo modo.  
   
--   Spostare elementi all'interno o all'esterno di un pacchetto in Esplora modelli UML.  
+- Spostare elementi all'interno o all'esterno di un pacchetto in Esplora modelli UML.  
   
- Un elemento in un pacchetto viene visualizzato sotto il pacchetto in Esplora modelli UML e il nome completo inizia con il nome completo del pacchetto. Per visualizzare il nome completo di qualsiasi elemento, fare doppio clic dell'elemento e quindi fare clic su **proprietà**. Il **nome qualificato** proprietà viene visualizzata nella **proprietà** finestra.  
+  Un elemento in un pacchetto viene visualizzato sotto il pacchetto in Esplora modelli UML e il nome completo inizia con il nome completo del pacchetto. Per visualizzare il nome completo di qualsiasi elemento, fare doppio clic dell'elemento e quindi fare clic su **proprietà**. Il **nome qualificato** proprietà viene visualizzata nella **proprietà** finestra.  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>Per creare un elemento in un pacchetto in Esplora modelli UML  
   

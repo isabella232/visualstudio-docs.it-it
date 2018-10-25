@@ -13,12 +13,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25296e78c0525b6bf3a39b808f64d26376e70bfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd1eefc0cab26f54ef7b1491c234d1187f5f79c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905935"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu e comandi per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -191,29 +191,29 @@ ms.locfileid: "49196508"
   
  **Linee guida generali sulla barra degli strumenti:**  
   
--   Ogni barra degli strumenti dispone di 24 pixel common Controls (gripper, overflow).  
+- Ogni barra degli strumenti dispone di 24 pixel common Controls (gripper, overflow).  
   
--   Ogni pulsante sulla barra degli strumenti è 22 pixel in larghezza include spaziature interne. Effettua l'icona di un pulsante di menu combinato consente di aggiungere un altro 11 pixel di larghezza.  
+- Ogni pulsante sulla barra degli strumenti è 22 pixel in larghezza include spaziature interne. Effettua l'icona di un pulsante di menu combinato consente di aggiungere un altro 11 pixel di larghezza.  
   
--   È consentita la duplicazione di comandi tra le barre degli strumenti.  
+- È consentita la duplicazione di comandi tra le barre degli strumenti.  
   
- **Barre degli strumenti specifici del documento** vengono visualizzati quando un determinato tipo è attivo e scompare quando un tipo di file diversi diventa attivo.  
+  **Barre degli strumenti specifici del documento** vengono visualizzati quando un determinato tipo è attivo e scompare quando un tipo di file diversi diventa attivo.  
   
--   Barre degli strumenti specifici del documento non può avere più di 12 pulsanti.  
+- Barre degli strumenti specifici del documento non può avere più di 12 pulsanti.  
   
--   La larghezza totale della barra degli strumenti non può superare i 300 pixel.  
+- La larghezza totale della barra degli strumenti non può superare i 300 pixel.  
   
--   Ogni tipo di file può avere uno degli strumenti incorporata o una barra degli strumenti globale specifica del documento, ma non entrambi.  
+- Ogni tipo di file può avere uno degli strumenti incorporata o una barra degli strumenti globale specifica del documento, ma non entrambi.  
   
- **Barre degli strumenti specifici per il contesto** vengono visualizzati quando un determinato contesto sia impostato e tendono a rimanere attivi per lunghi periodi di tempo.  
+  **Barre degli strumenti specifici per il contesto** vengono visualizzati quando un determinato contesto sia impostato e tendono a rimanere attivi per lunghi periodi di tempo.  
   
--   Il limite di pulsante per tutte le barre degli strumenti specifici per il contesto è 18.  
+- Il limite di pulsante per tutte le barre degli strumenti specifici per il contesto è 18.  
   
--   Se la maggior parte degli utenti in modo coerente non utilizzano i comandi della barra degli strumenti quando il contesto è attivo, quindi non associare questa barra degli strumenti con un contesto.  
+- Se la maggior parte degli utenti in modo coerente non utilizzano i comandi della barra degli strumenti quando il contesto è attivo, quindi non associare questa barra degli strumenti con un contesto.  
   
--   Assicurarsi che la barra degli strumenti scomparirà quando si esce dal contesto. Nessuna di queste barre degli strumenti deve essere visualizzato all'avvio.  
+- Assicurarsi che la barra degli strumenti scomparirà quando si esce dal contesto. Nessuna di queste barre degli strumenti deve essere visualizzato all'avvio.  
   
- **Le barre degli strumenti senza alcun contesto** non vengono mai visualizzati automaticamente. Viene visualizzata solo quando l'utente li attiva. Conservare la larghezza massima di sotto di 200 pixel.  
+  **Le barre degli strumenti senza alcun contesto** non vengono mai visualizzati automaticamente. Viene visualizzata solo quando l'utente li attiva. Conservare la larghezza massima di sotto di 200 pixel.  
   
 ### <a name="general-organization-and-shell-defined-groups"></a>Organizzazione generale e gruppi definiti shell  
  Usare i comandi condivisi esistenti, gruppi di comandi e menu. Se è necessario definire un nuovo comando, provare a inserirlo in un gruppo di comandi condiviso esistente. Se è necessario definire un nuovo gruppo, provare a inserirlo in un menu condiviso esistente vicino a un gruppo di comandi correlati prima di creare un nuovo menu di primo livello. In questo modo si riduce la complessità di comando, garantendo commandplacement coerenti nell'IDE.  
@@ -278,19 +278,19 @@ ms.locfileid: "49196508"
   
  Quando si definiscono i tasti di scelta rapida, seguire queste regole:  
   
--   **Usare il controllo (Ctrl) e le sequenze di tasti funzione (Fn).**  
+- **Usare il controllo (Ctrl) e le sequenze di tasti funzione (Fn).**  
   
--   **Mantenere i tasti di scelta rapida utilizzati di frequente.** Consente di gestire i collegamenti più diffusi.  
+- **Mantenere i tasti di scelta rapida utilizzati di frequente.** Consente di gestire i collegamenti più diffusi.  
   
--   **Semplificano al tipo di editor tasti di scelta rapida.** Eseguire l'associazione al tipo di scelta rapida ai comandi che gli sviluppatori più durante la scrittura di codice necessitano. Ad esempio, **Edit.InvokeSmartTag** deve avere un tasto di scelta rapida, ad esempio Ctrl + / e non Alt + Maiusc + F10.  
+- **Semplificano al tipo di editor tasti di scelta rapida.** Eseguire l'associazione al tipo di scelta rapida ai comandi che gli sviluppatori più durante la scrittura di codice necessitano. Ad esempio, **Edit.InvokeSmartTag** deve avere un tasto di scelta rapida, ad esempio Ctrl + / e non Alt + Maiusc + F10.  
   
--   **Cercare di mantenere in modo coerente con tema tasti di scelta rapida.**  
+- **Cercare di mantenere in modo coerente con tema tasti di scelta rapida.**  
   
--   **Attenersi alle linee guida di Windows per determinare quali modificatore tasti da adottare.** Usare le combinazioni di tasti Ctrl per i comandi che hanno effetti su larga scala, ad esempio i comandi che si applicano a un intero documento. Usare le combinazioni di tasti MAIUSC per i comandi che estendono o integrano le azioni del tasto di scelta rapida standard. Non usare le combinazioni di Ctrl + Alt.  
+- **Attenersi alle linee guida di Windows per determinare quali modificatore tasti da adottare.** Usare le combinazioni di tasti Ctrl per i comandi che hanno effetti su larga scala, ad esempio i comandi che si applicano a un intero documento. Usare le combinazioni di tasti MAIUSC per i comandi che estendono o integrano le azioni del tasto di scelta rapida standard. Non usare le combinazioni di Ctrl + Alt.  
   
--   **Rimuovere i collegamenti estranei.** Se si dispone di una funzionalità legacy, provare a rimuovere i collegamenti che vengono usati con estrema infrequency (meno di 10 volte dai dati di analisi utilizzo software) o con gravità moderata infrequency (meno di 100 volte dai dati di analisi utilizzo software) se una chiave di accesso consente di accedere rapidamente al comando stesso. Ad esempio: C Alt, H, verrà aperto il sommario della Guida /.  
+- **Rimuovere i collegamenti estranei.** Se si dispone di una funzionalità legacy, provare a rimuovere i collegamenti che vengono usati con estrema infrequency (meno di 10 volte dai dati di analisi utilizzo software) o con gravità moderata infrequency (meno di 100 volte dai dati di analisi utilizzo software) se una chiave di accesso consente di accedere rapidamente al comando stesso. Ad esempio: C Alt, H, verrà aperto il sommario della Guida /.  
   
- Non esiste un modo semplice per verificare la disponibilità di scelta rapida. Se si desidera aggiungere un collegamento, seguire questa procedura:  
+  Non esiste un modo semplice per verificare la disponibilità di scelta rapida. Se si desidera aggiungere un collegamento, seguire questa procedura:  
   
 1.  Controllare l'elenco degli [scelte rapide di Visual Studio 2013](http://visualstudioshortcuts.com/2013/) per determinare se sono presenti comandi simili a quelle in uso con gruppo.  
   

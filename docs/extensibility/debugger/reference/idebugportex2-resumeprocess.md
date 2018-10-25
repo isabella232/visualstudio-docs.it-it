@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::ResumeProcess | Documenti Microsoft
+title: IDebugPortEx2::ResumeProcess | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d1b0dec7c165162645f30d4734f05885047083
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47364a88ca5e49a691120b198ce32b74e9d895d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905545"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 Riprende l'esecuzione di un processo.  
@@ -41,7 +41,7 @@ int ResumeProcess(
   
 #### <a name="parameters"></a>Parametri  
  `pPortProcess`  
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo da riprendere.  
+ [in] Un' [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo di essere ripreso.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

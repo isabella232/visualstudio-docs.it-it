@@ -16,12 +16,12 @@ ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39cf7c116e1f05629f738ec536a9dab38100718f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a946eb1d8891bfb11179c480fde6369781fdd57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911447"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossario del debugger di Visual Studio
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,31 +65,31 @@ Di seguito sono termini usati nel [!INCLUDE[vsprvs](../../../includes/vsprvs-md.
  punto di interruzione in sospeso  
  Fornisce un'astrazione per i punti di interruzione prima, durante e dopo il codice viene caricato e un modo per virtualizzare i punti di interruzione. Oggetto in sospeso punto di interruzione:  
   
--   Contiene tutte le informazioni necessarie per associare un punto di interruzione al codice in uno o più programmi.  
+- Contiene tutte le informazioni necessarie per associare un punto di interruzione al codice in uno o più programmi.  
   
--   Può eseguire l'associazione in più posizioni di codice in uno o più programmi.  
+- Può eseguire l'associazione in più posizioni di codice in uno o più programmi.  
   
--   Non viene associato al codice.  
+- Non viene associato al codice.  
   
- Ogni codice in fase di caricamento, tutti i punti di interruzione in sospeso in un programma vengono controllati per verificare se è possibile eseguire l'associazione. Un punto di interruzione in sospeso si dice che contiene tutti i punti di interruzione associati che si esegue l'associazione.  
+  Ogni codice in fase di caricamento, tutti i punti di interruzione in sospeso in un programma vengono controllati per verificare se è possibile eseguire l'associazione. Un punto di interruzione in sospeso si dice che contiene tutti i punti di interruzione associati che si esegue l'associazione.  
   
- processo  
- Un processo Win32 fisico. Un processo può contenere più programmi. Vedere anche *programma*.  
+  processo  
+  Un processo Win32 fisico. Un processo può contenere più programmi. Vedere anche *programma*.  
   
- programma  
- Un unico spazio dei nomi in esecuzione all'interno di una particolare architettura di runtime. Vedere anche *processo*.  
+  programma  
+  Un unico spazio dei nomi in esecuzione all'interno di una particolare architettura di runtime. Vedere anche *processo*.  
   
- gestione del debug sessione (SDM)  
- Gestisce un numero qualsiasi di motori di debug, debug di un numero qualsiasi di programmi in più processi in qualsiasi numero di computer. A livello di base, il modello SDM è un multiplexer dei motori di debug. Inoltre, il modello SDM fornisce una visualizzazione unificata della sessione di debug all'IDE.  
+  gestione del debug sessione (SDM)  
+  Gestisce un numero qualsiasi di motori di debug, debug di un numero qualsiasi di programmi in più processi in qualsiasi numero di computer. A livello di base, il modello SDM è un multiplexer dei motori di debug. Inoltre, il modello SDM fornisce una visualizzazione unificata della sessione di debug all'IDE.  
   
- stack frame  
- Rappresenta lo stato del calcolo in un frame specifico e un livello particolare di chiamate di funzione annidata.  
+  stack frame  
+  Rappresenta lo stato del calcolo in un frame specifico e un livello particolare di chiamate di funzione annidata.  
   
- thread  
- La nozione generalizzata di esecuzione di istruzioni basate sullo stack in esecuzione in almeno un programma.  
+  thread  
+  La nozione generalizzata di esecuzione di istruzioni basate sullo stack in esecuzione in almeno un programma.  
   
- punto di interruzione di avviso  
- Un'astrazione per la descrizione di un avviso in un punto di interruzione in sospeso. Un punto di interruzione di avviso viene descritto il motivo per cui il punto di interruzione in sospeso non ancora associato a un percorso di codice. È possibile che il codice non è ancora caricato per il percorso descritto dal punto di interruzione in sospeso o per altri motivi.  
+  punto di interruzione di avviso  
+  Un'astrazione per la descrizione di un avviso in un punto di interruzione in sospeso. Un punto di interruzione di avviso viene descritto il motivo per cui il punto di interruzione in sospeso non ancora associato a un percorso di codice. È possibile che il codice non è ancora caricato per il percorso descritto dal punto di interruzione in sospeso o per altri motivi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estendibilità del debugger di Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

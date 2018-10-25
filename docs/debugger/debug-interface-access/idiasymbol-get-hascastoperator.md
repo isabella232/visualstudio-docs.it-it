@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasCastOperator | Documenti Microsoft
+title: Get_hascastoperator | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f625be9ce000f0e768d3aa9fc3bf7a205f273d27
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 96bb99d53fc88392110e10d1eabad2f23f1ba182
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911981"
 ---
 # <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
-Recupera un flag che specifica se il tipo di dati definito dall'utente ha definiti tutti gli operatori di cast.  
+Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di qualsiasi operatore di cast definite.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,7 +47,7 @@ HRESULT get_hasCastOperator (
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 7.0 DIA SDK|  
+|Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

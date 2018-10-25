@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919340"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e altre parti interessate e consente di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
@@ -59,19 +59,19 @@ ms.locfileid: "47859783"
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Per collegare i test a un caso di utilizzo
 
-1.  In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
+1. In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
 
-     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe essere un elemento di lavoro storia utente, requisito o caso d'uso, a seconda del modello di processo usato dal progetto con Team Foundation. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
+    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe essere un elemento di lavoro storia utente, requisito o caso d'uso, a seconda del modello di processo usato dal progetto con Team Foundation. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Collegare l'elemento di lavoro requisito a uno o più casi di utilizzo del modello.
+2. Collegare l'elemento di lavoro requisito a uno o più casi di utilizzo del modello.
 
-     In un diagramma caso di utilizzo, fare doppio clic su un caso d'uso e quindi fare clic su **Collega a elemento di lavoro**.
+    In un diagramma caso di utilizzo, fare doppio clic su un caso d'uso e quindi fare clic su **Collega a elemento di lavoro**.
 
-3.  Aggiungere al gruppo di test i test case che verificano i casi di utilizzo.
+3. Aggiungere al gruppo di test i test case che verificano i casi di utilizzo.
 
- In genere, ogni elemento di lavoro storia utente o requisito viene collegato a diversi casi di utilizzo del modello e ogni caso di utilizzo viene collegato a diverse storie utente o diversi requisiti. Ogni storia utente o requisito riguarda infatti un set di attività che sviluppano diversi casi di utilizzo. Ad esempio, in una prima iterazione del progetto, è possibile sviluppare la storia utente di base in cui un cliente può scegliere gli elementi da un catalogo e richiederne la consegna. In un'iterazione successiva la storia potrebbe essere sviluppata in modo tale che l'utente paghi al completamento dell'ordine e il fornitore riceva il denaro dopo avere inviato i prodotti.  Ogni storia aggiunge una clausola alla postcondizione del caso di utilizzo Ordinazione prodotti.
+   In genere, ogni elemento di lavoro storia utente o requisito viene collegato a diversi casi di utilizzo del modello e ogni caso di utilizzo viene collegato a diverse storie utente o diversi requisiti. Ogni storia utente o requisito riguarda infatti un set di attività che sviluppano diversi casi di utilizzo. Ad esempio, in una prima iterazione del progetto, è possibile sviluppare la storia utente di base in cui un cliente può scegliere gli elementi da un catalogo e richiederne la consegna. In un'iterazione successiva la storia potrebbe essere sviluppata in modo tale che l'utente paghi al completamento dell'ordine e il fornitore riceva il denaro dopo avere inviato i prodotti.  Ogni storia aggiunge una clausola alla postcondizione del caso di utilizzo Ordinazione prodotti.
 
- È possibile creare collegamenti separati dai requisiti alle clausole della postcondizione scrivendo le clausole in commenti separati nel diagramma caso di utilizzo. È possibile collegare ogni commento a un elemento di lavoro requisito e collegare il commento al caso di utilizzo nel diagramma.
+   È possibile creare collegamenti separati dai requisiti alle clausole della postcondizione scrivendo le clausole in commenti separati nel diagramma caso di utilizzo. È possibile collegare ogni commento a un elemento di lavoro requisito e collegare il commento al caso di utilizzo nel diagramma.
 
 ### <a name="base-tests-on-the-requirements-types"></a>Creare test in base ai tipi di requisiti
  I tipi, ovvero classi, interfacce ed enumerazioni, di un modello di requisiti descrivono i concetti e le relazioni delineando cosa pensano gli utenti dell'azienda e come comunicano la propria idea. Sono esclusi i tipi riguardanti solo la progettazione interna del sistema.
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Per collegare i test a una relazione o a un elemento del modello
 
-1.  In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
+1. In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
 
-     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe essere un elemento di lavoro storia utente, requisito o caso d'uso, a seconda del modello di processo usato dal progetto con Team Foundation. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
+    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe essere un elemento di lavoro storia utente, requisito o caso d'uso, a seconda del modello di processo usato dal progetto con Team Foundation. Per altre informazioni, vedere [gli strumenti su Agile e Agile gestione dei progetti](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Collegare l'elemento di lavoro requisito a uno o più elementi del modello.
+2. Collegare l'elemento di lavoro requisito a uno o più elementi del modello.
 
-     In un diagramma di modellazione, fare doppio clic su un elemento, commento o relazione e quindi fare clic su **Collega a elemento di lavoro**.
+    In un diagramma di modellazione, fare doppio clic su un elemento, commento o relazione e quindi fare clic su **Collega a elemento di lavoro**.
 
-3.  Aggiungere al gruppo di test i test case che verificano il requisito espresso nell'elemento del modello.
+3. Aggiungere al gruppo di test i test case che verificano il requisito espresso nell'elemento del modello.
 
 ## <a name="see-also"></a>Vedere anche
 

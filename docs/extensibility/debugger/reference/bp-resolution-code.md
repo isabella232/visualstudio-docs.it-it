@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_CODE | Documenti Microsoft
+title: BP_RESOLUTION_CODE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: debb6d9e8f37ed34c67c8df659160949cfcf6158
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbd9e3d683336d2009e8ff9f02665f7610f988f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915191"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
-Descrive il percorso di un punto di interruzione del codice.  
+Descrive la posizione di un punto di interruzione del codice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,10 +41,10 @@ public struct BP_RESOLUTION_CODE {
   
 ## <a name="members"></a>Membri  
  `pCodeContext`  
- Il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto che identifica la posizione del punto di interruzione nel codice.  
+ Il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del punto di interruzione nel codice.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è un membro del [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struttura, che a sua volta è un membro del [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura restituita dal [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metodo.  
+ Questa struttura è un membro del [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struttura, che a sua volta è un membro delle [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura restituita dal [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metodo.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

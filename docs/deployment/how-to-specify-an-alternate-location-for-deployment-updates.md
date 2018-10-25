@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c38eb732a6e431804070505ecbd01e869c34ca
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 76be049c670fb91911be70132b459cad5e5183bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902464"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedura: specificare un percorso alternativo per la distribuzione degli aggiornamenti
 È possibile installare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione inizialmente da un CD o una condivisione file, ma l'applicazione deve controllare gli aggiornamenti periodici sul Web. È possibile specificare un percorso alternativo per gli aggiornamenti nel manifesto della distribuzione in modo che sia possibile l'aggiornamento automatico dell'applicazione dal Web dopo l'installazione iniziale.  
@@ -46,16 +46,16 @@ ms.locfileid: "39079872"
   
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Specificare un percorso alternativo per gli aggiornamenti usando Mage.exe  
   
-1.  Aprire un prompt dei comandi di .NET Framework.  
+1. Aprire un prompt dei comandi di .NET Framework.  
   
-2.  Impostare il percorso di aggiornamento usando il comando seguente. In questo esempio *HelloWorld.exe.application* è il percorso per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione, che ha sempre l'estensione Application, e *http://adatum.com/Update/Path* è l'URL che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] controllerà gli aggiornamenti dell'applicazione.  
+2. Impostare il percorso di aggiornamento usando il comando seguente. In questo esempio *HelloWorld.exe.application* è il percorso per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione, che ha sempre l'estensione Application, e *<http://adatum.com/Update/Path>* è l'URL che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] controllerà gli aggiornamenti dell'applicazione.  
   
-     **Mage-aggiornare HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
+    **Mage-aggiornare HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Salvare il file.  
+3. Salvare il file.  
   
-    > [!NOTE]
-    >  È ora necessario firmare nuovamente il file con *Mage.exe*. Per altre informazioni, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+   > [!NOTE]
+   >  È ora necessario firmare nuovamente il file con *Mage.exe*. Per altre informazioni, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
  Se si installa l'applicazione da un supporto offline, ad esempio un CD, e il computer è online, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] controlla prima di tutto l'URL specificato per il `<deploymentProvider>` tag nel manifesto di distribuzione per determinare se il percorso di aggiornamento contiene una versione più recente del applicazione. In caso affermativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installa l'applicazione direttamente da qui, anziché dalla directory di installazione iniziale, e common language runtime (CLR) determina l'attendibilità dell'applicazione usando il livello `<deploymentProvider>`. Se il computer è offline, o `<deploymentProvider>` non è raggiungibile, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installazioni da CD e CLR concede l'attendibilità in base al punto di installazione; per un'installazione da CD, ciò significa che l'applicazione riceve l'attendibilità totale. Tutti gli aggiornamenti successivi erediterà tale livello di attendibilità.  

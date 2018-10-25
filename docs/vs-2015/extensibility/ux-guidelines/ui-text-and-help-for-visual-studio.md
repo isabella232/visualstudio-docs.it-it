@@ -13,12 +13,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb802aa9dd797004b61ab856dda7b7670f204c79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908242"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e la Guida di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -319,15 +319,15 @@ ms.locfileid: "49303816"
   
  Questa soluzione quattro presupposti che potrebbero causare bug:  
   
--   Pulsante della Guida della finestra di dialogo viene **IDHELP** (9).  
+- Pulsante della Guida della finestra di dialogo viene **IDHELP** (9).  
   
--   La finestra di dialogo Cerca corretto quando il pulsante Guida è nascosto.  
+- La finestra di dialogo Cerca corretto quando il pulsante Guida è nascosto.  
   
--   La finestra di dialogo non sostituisce il winproc.  
+- La finestra di dialogo non sostituisce il winproc.  
   
--   La finestra di dialogo non viene incorporato all'interno di un'altra finestra di dialogo.  
+- La finestra di dialogo non viene incorporato all'interno di un'altra finestra di dialogo.  
   
- Se la finestra di dialogo si trova all'interno di msenv e non usa **VBDialogBoxParam**, provare a utilizzare sfruttando **VBDialogBoxParam** prima di implementare un gestore personalizzato.  
+  Se la finestra di dialogo si trova all'interno di msenv e non usa **VBDialogBoxParam**, provare a utilizzare sfruttando **VBDialogBoxParam** prima di implementare un gestore personalizzato.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Finestre di dialogo create tramite altri pacchetti  
  È possibile implementare una soluzione personalizzata per i dialoghi che risiedono all'esterno di msenv. Per una classe di finestra di dialogo condivise nel pacchetto VSPackage, provare a spostare il pulsante della barra del titolo o implementare un gestore in ogni finestra di dialogo. Il codice seguente è una struttura di un'implementazione che consentono di iniziare:  

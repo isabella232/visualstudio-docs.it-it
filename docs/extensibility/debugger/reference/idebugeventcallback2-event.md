@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Event | Documenti Microsoft
+title: IDebugEventCallback2::Event | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea52b8be040df50da1585165599c4fdea635557
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc61f6a8b2a8a069d0fb921e4dbfe631088b2925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117657"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913319"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
-Invia una notifica di eventi di debug.  
+Invia una notifica degli eventi di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -53,22 +53,22 @@ int Event(
   
 #### <a name="parameters"></a>Parametri  
  `pEngine`  
- [in] Un [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) oggetto che rappresenta il motore di debug (DE) che invia l'evento. Per compilare questo parametro è necessario un Germania.  
+ [in] Un' [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) oggetto che rappresenta il motore di debug (DE) che invia questo evento. Per compilare questo parametro è necessario un CRI.  
   
  `pProcess`  
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo in cui si verifica l'evento. Questo parametro viene inserito dal gestore di sessione di debug (SDM). Un Germania passa sempre un valore null per questo parametro.  
+ [in] Un' [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo in cui si verifica l'evento. Questo parametro viene inserito dal gestore di sessione di debug (SDM). Un CRI passa sempre un valore null per questo parametro.  
   
  `pProgram`  
- [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta il programma in cui si verifica questo evento. Per la maggior parte degli eventi, questo parametro non è un valore null.  
+ [in] Un' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta il programma in cui si verifica questo evento. Per la maggior parte degli eventi, questo parametro non è un valore null.  
   
  `pThread`  
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread in cui si verifica questo evento. Per eventi di arresto, questo parametro non può essere un valore null come frame dello stack viene ottenuto da questo parametro.  
+ [in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread in cui si verifica questo evento. Per eventi di arresto, questo parametro non può essere un valore null durante il frame dello stack viene ottenuto da questo parametro.  
   
  `pEvent`  
- [in] Un [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) oggetto che rappresenta l'evento di debug.  
+ [in] Un' [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) oggetto che rappresenta l'evento di debug.  
   
  `riidEvent`  
- [in] GUID che identifica l'interfaccia eventi di ottenere il `pEvent` parametro.  
+ [in] GUID che identifica quale interfaccia evento per ottenere dal `pEvent` parametro.  
   
  `dwAttrib`  
  [in] Una combinazione di flag dal [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumerazione.  
@@ -77,9 +77,9 @@ int Event(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Quando si chiama questo metodo, il `dwAttrib` parametro deve corrispondere al valore restituito dal [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) metodo chiamato per l'oggetto evento passato il `pEvent` parametro.  
+ Quando si chiama questo metodo, il `dwAttrib` parametro deve corrispondere al valore restituito dal [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) metodo chiamato sull'oggetto dell'evento passato il `pEvent` parametro.  
   
- Tutti gli eventi di debug vengono registrati in modo asincrono, indipendentemente dal fatto che un evento stesso sia asincrono o meno. Quando questo metodo viene chiamato un Germania, il valore restituito indica se l'evento è stato elaborato, solo se è stato ricevuto l'evento. In realtà, in molti casi, l'evento non è stato elaborato quando questo metodo viene restituito.  
+ Tutti gli eventi di debug vengono inviati in modo asincrono, indipendentemente dal fatto che un evento stesso è asincrono. Quando un CRI chiama questo metodo, il valore restituito non indica se l'evento è stato elaborato, solo se è stato ricevuto l'evento. In effetti, nella maggior parte dei casi, l'evento non è stato elaborato quando questo metodo viene restituito.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

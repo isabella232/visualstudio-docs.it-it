@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualBaseDispIndex | Documenti Microsoft
+title: Get_virtualbasedispindex | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c877453f2ae3de97fbb085d79a3795aea369728
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7e1984bb9828e9e9dedef85fbd806583e1a8fea3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917830"
 ---
 # <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
-Recupera l'indice del simbolo della tabella di spostamento di base virtuale.  
+Recupera l'indice del simbolo nella tabella di spostamento di base virtuale.  
   
 ## <a name="syntax"></a>Sintassi  
   

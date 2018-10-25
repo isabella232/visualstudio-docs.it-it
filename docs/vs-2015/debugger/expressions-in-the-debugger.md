@@ -32,12 +32,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914316"
 ---
 # <a name="expressions-in-the-debugger"></a>Espressioni nel debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,13 +104,13 @@ int main()
   
  Funzioni intrinseche del debugger:  
   
--   Garantite come sicure: l'esecuzione di una funzione intrinseca del debugger non danneggia il processo sottoposto a debug.  
+- Garantite come sicure: l'esecuzione di una funzione intrinseca del debugger non danneggia il processo sottoposto a debug.  
   
--   Consentite in tutte le espressioni, anche negli scenari in cui gli effetti collaterali e la valutazione delle funzioni non sono consentiti.  
+- Consentite in tutte le espressioni, anche negli scenari in cui gli effetti collaterali e la valutazione delle funzioni non sono consentiti.  
   
--   Supportate negli scenari in cui le chiamate a funzioni regolari non sono possibili, ad esempio il debug di un minidump.  
+- Supportate negli scenari in cui le chiamate a funzioni regolari non sono possibili, ad esempio il debug di un minidump.  
   
- Le funzioni intrinseche del debugger rendono più pratica la valutazione delle espressioni. Ad esempio, è molto più facile scrivere `strncmp(str, “asd”)` in una condizione del punto di interruzione piuttosto che `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
+  Le funzioni intrinseche del debugger rendono più pratica la valutazione delle espressioni. Ad esempio, è molto più facile scrivere `strncmp(str, “asd”)` in una condizione del punto di interruzione piuttosto che `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
 |Area|Funzioni intrinseche|  
 |----------|-------------------------|  
