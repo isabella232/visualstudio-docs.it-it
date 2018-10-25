@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca48fecf68ad9ecd1db6dc61acbf168a0a1c0f14
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813622"
 ---
 # <a name="graph-view"></a>Visualizzazione grafico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,11 +132,11 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
   
  È possibile controllare lo zoom nei seguenti modi:  
   
--   Tenendo premuto il tasto CTRL e ruotando la rotellina del mouse quando il mouse si trova sull'area di visualizzazione grafico.  
+- Tenendo premuto il tasto CTRL e ruotando la rotellina del mouse quando il mouse si trova sull'area di visualizzazione grafico.  
   
--   Tramite il dispositivo di scorrimento. Il dispositivo di scorrimento mostra il livello di zoom corrente.  
+- Tramite il dispositivo di scorrimento. Il dispositivo di scorrimento mostra il livello di zoom corrente.  
   
- Il dispositivo di scorrimento dello zoom è opaco quando lo si seleziona, si posiziona il mouse su di esso o si usa il tasto CTRL insieme alla rotellina del mouse per ingrandire; altrimenti è trasparente.  
+  Il dispositivo di scorrimento dello zoom è opaco quando lo si seleziona, si posiziona il mouse su di esso o si usa il tasto CTRL insieme alla rotellina del mouse per ingrandire; altrimenti è trasparente.  
   
 ## <a name="xml-editor-integration"></a>Integrazione dell'editor XML  
  È possibile passare dalla visualizzazione grafico all'editor XML facendo clic su un nodo e usando il menu di scelta rapida Visualizza codice.  

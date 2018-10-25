@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArgumentCount | Documenti Microsoft
+title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e853e17f1805f85fecaac1610a04de86851b6df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01578661017d76907263cddecf770a6cc0b8c033
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842833"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
-Questo metodo restituisce il numero di tipi di argomenti associato all'oggetto.  
+Questo metodo restituisce il numero di tipi di argomento associato all'oggetto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,13 +41,13 @@ int GetTypeArgumentCount(
   
 #### <a name="parameters"></a>Parametri  
  `uCount`  
- [out] Numero di tipi di argomenti associato all'oggetto.  
+ [out] Numero di tipi di argomento associato all'oggetto.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Il valore restituito da questo metodo consente di allocare una matrice per l'utilizzo con il [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) metodo.  
+ Il valore restituito da questo metodo può essere utilizzato per allocare una matrice per l'uso con il [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

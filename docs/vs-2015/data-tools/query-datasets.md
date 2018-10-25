@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890569"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
   
  Gli esempi di codice seguenti illustrano come spostarsi su e giù relazioni nei dataset tipizzato. L'uso di esempi di codice tipizzato <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) e generato `FindBy` *PrimaryKey* (`FindByCustomerID`) i metodi per individuare una riga desiderata e restituire i record correlati. Gli esempi compilati ed eseguiti correttamente solo se è necessario:  
   
--   Un'istanza di un set di dati denominato `NorthwindDataSet` con un `Customers` tabella.  
+- Un'istanza di un set di dati denominato `NorthwindDataSet` con un `Customers` tabella.  
   
--   Un `Orders` tabella.  
+- Un `Orders` tabella.  
   
--   Una relazione denominata `FK_Orders_Customers`collega le due tabelle disponibili per l'ambito del codice  
+- Una relazione denominata `FK_Orders_Customers`collega le due tabelle disponibili per l'ambito del codice  
   
- Inoltre, entrambe le tabelle devono essere occupata dai dati per tutti i record da restituire.  
+  Inoltre, entrambe le tabelle devono essere occupata dai dati per tutti i record da restituire.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Per restituire i record di un record padre selezionato figlio  
   

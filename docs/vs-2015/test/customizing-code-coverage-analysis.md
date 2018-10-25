@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890166"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizzazione dell'analisi code coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,40 +27,40 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
   
  Prima di personalizzare il comportamento del code coverage, considerare alcune alternative:  
   
--   *Si vuole escludere il codice di test dai risultati del code coverage e includere solo il codice dell'applicazione.*  
+- *Si vuole escludere il codice di test dai risultati del code coverage e includere solo il codice dell'applicazione.*  
   
-     Aggiungere `ExcludeFromCodeCoverage Attribute` alla classe di test.  
+   Aggiungere `ExcludeFromCodeCoverage Attribute` alla classe di test.  
   
--   *Si vogliono includere assembly che non fanno parte della soluzione.*  
+- *Si vogliono includere assembly che non fanno parte della soluzione.*  
   
-     Ottenere i file con estensione pdb per questi assembly e copiarli nella stessa cartella dei file con estensione dll dell'assembly.  
+   Ottenere i file con estensione pdb per questi assembly e copiarli nella stessa cartella dei file con estensione dll dell'assembly.  
   
- Per personalizzare il comportamento del code coverage, copiare l'[esempio alla fine di questo argomento](#sample) e aggiungerlo alla soluzione mediante l'estensione di file runsettings. Modificarlo secondo le proprie esigenze e quindi nel menu **Test** scegliere **Impostazioni test** e **Seleziona file di impostazioni test**. Nella parte restante di questo argomento questa procedura viene descritta più dettagliatamente.  
+  Per personalizzare il comportamento del code coverage, copiare l'[esempio alla fine di questo argomento](#sample) e aggiungerlo alla soluzione mediante l'estensione di file runsettings. Modificarlo secondo le proprie esigenze e quindi nel menu **Test** scegliere **Impostazioni test** e **Seleziona file di impostazioni test**. Nella parte restante di questo argomento questa procedura viene descritta più dettagliatamente.  
   
 ## <a name="the-runsettings-file"></a>File con estensione runsettings  
  Le impostazioni avanzate di code coverage vengono specificate in un file con estensione runsettings. Si tratta del file di configurazione usato dagli strumenti di testing unità. Si consiglia di copiare l'[esempio alla fine di questo argomento](#sample) e di modificarlo in base alle proprie esigenze.  
   
--   *Cosa è successo nel file con estensione testsettings usato in Visual Studio 2010?*  
+- *Cosa è successo nel file con estensione testsettings usato in Visual Studio 2010?*  
   
-     In Visual Studio 2010 il file con estensione testsettings si applica solo agli unit test basati sul framework MSTest. In Visual Studio 2012, gli strumenti di test sono validi non solo per MSTest, ma anche altri framework come NUnit e xUnit.net. Il file con estensione testsettings non funzionerà con questi framework. Il file con estensione runsettings è progettato per personalizzare gli strumenti di test in modo da funzionare con tutti i framework di test.  
+   In Visual Studio 2010 il file con estensione testsettings si applica solo agli unit test basati sul framework MSTest. In Visual Studio 2012, gli strumenti di test sono validi non solo per MSTest, ma anche altri framework come NUnit e xUnit.net. Il file con estensione testsettings non funzionerà con questi framework. Il file con estensione runsettings è progettato per personalizzare gli strumenti di test in modo da funzionare con tutti i framework di test.  
   
- Per personalizzare il code coverage, sarà necessario aggiungere un file con estensione runsettings alla soluzione:  
+  Per personalizzare il code coverage, sarà necessario aggiungere un file con estensione runsettings alla soluzione:  
   
-1.  Aggiungere un file XML con estensione `.runsettings` come elemento della soluzione:  
+1. Aggiungere un file XML con estensione `.runsettings` come elemento della soluzione:  
   
-     In Esplora soluzioni scegliere **Aggiungi**, **Nuovo elemento** dal menu di scelta rapida della soluzione e selezionare **File XML**. Salvare il file e assegnargli un nome che termina con `CodeCoverage.runsettings`.  
+    In Esplora soluzioni scegliere **Aggiungi**, **Nuovo elemento** dal menu di scelta rapida della soluzione e selezionare **File XML**. Salvare il file e assegnargli un nome che termina con `CodeCoverage.runsettings`.  
   
-2.  Aggiungere il contenuto fornito nell'esempio alla fine di questo argomento, quindi personalizzarlo secondo le proprie esigenze come descritto nelle sezioni seguenti.  
+2. Aggiungere il contenuto fornito nell'esempio alla fine di questo argomento, quindi personalizzarlo secondo le proprie esigenze come descritto nelle sezioni seguenti.  
   
-3.  Nel menu **Test** scegliere **Impostazioni test**, **Seleziona file di impostazioni test** e selezionare il file.  
+3. Nel menu **Test** scegliere **Impostazioni test**, **Seleziona file di impostazioni test** e selezionare il file.  
   
-4.  Quando si esegue **Analizza code coverage**, questo file `.runsettings` ne controllerà il comportamento. Non dimenticare che è necessario ripetere l'esecuzione del code coverage: i risultati del code coverage e la colorazione del codice precedenti non vengono automaticamente nascosti quando si eseguono i test o si aggiorna il codice.  
+4. Quando si esegue **Analizza code coverage**, questo file `.runsettings` ne controllerà il comportamento. Non dimenticare che è necessario ripetere l'esecuzione del code coverage: i risultati del code coverage e la colorazione del codice precedenti non vengono automaticamente nascosti quando si eseguono i test o si aggiorna il codice.  
   
-5.  Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test**, **Impostazioni test**.  
+5. Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test**, **Impostazioni test**.  
   
- ![Menu Impostazioni test con file di impostazioni personalizzato](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
+   ![Menu Impostazioni test con file di impostazioni personalizzato](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
   
- Altri aspetti degli unit test possono essere configurati nello stesso file con estensione runsettings. Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md).  
+   Altri aspetti degli unit test possono essere configurati nello stesso file con estensione runsettings. Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md).  
   
 ### <a name="specifying-symbol-search-paths"></a>Specifica dei percorsi di ricerca dei simboli  
  Il code coverage richiede che siano presenti i simboli (file con estensione pdb) per gli assembly. Per gli assembly compilati dalla soluzione, i file di simboli sono solitamente presenti accanto ai file binari e il code coverage viene eseguito automaticamente. In alcuni casi invece è consigliabile includere assembly a cui si fa riferimento nell'analisi del code coverage. In tali casi, i file con estensione pdb non possono essere adiacenti ai binari, ma è possibile specificare il percorso di ricerca dei simboli nel file con estensione runsettings.  
@@ -106,21 +106,21 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 ### <a name="regular-expressions"></a>Espressioni regolari  
  Includere ed escludere i nodi che usano le espressioni regolari. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Le espressioni regolari non equivalgono ai caratteri jolly. In particolare:  
   
-1.  **\.\*** corrisponde a una stringa di caratteri  
+1. **\.\\*** corrisponde a una stringa di caratteri  
   
-2.  **\\.** corrisponde a un punto "."  
+2. **\\.** corrisponde a un punto "."  
   
-3.  **\\(   \\)** corrisponde alle parentesi "(  )"  
+3. **\\(   \\)** corrisponde alle parentesi "(  )"  
   
-4.  **\\\\** corrisponde al delimitatore del percorso di file "\\"  
+4. **\\\\** corrisponde al delimitatore del percorso di file "\\"  
   
-5.  **^** corrisponde all'inizio della stringa  
+5. **^** corrisponde all'inizio della stringa  
   
-6.  **$** corrisponde alla fine della stringa  
+6. **$** corrisponde alla fine della stringa  
   
- Tutte le corrispondenze fanno distinzione tra maiuscole e minuscole.  
+   Tutte le corrispondenze fanno distinzione tra maiuscole e minuscole.  
   
- Ad esempio:  
+   Ad esempio:  
   
 ```xml  
 <ModulePaths>  
@@ -144,25 +144,25 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Altri modi per includere o escludere elementi  
  Per gli esempi, vedere l'[esempio alla fine di questo argomento](#sample).  
   
--   `ModulePath`: assembly specificati per percorso del file di assembly.  
+- `ModulePath`: assembly specificati per percorso del file di assembly.  
   
--   `CompanyName`: assembly corrispondenti per attributo della società.  
+- `CompanyName`: assembly corrispondenti per attributo della società.  
   
--   `PublicKeyToken`: assembly firmati corrispondenti per token di chiave pubblica. Ad esempio per soddisfare tutti i componenti e le estensioni di Visual Studio, usare `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
+- `PublicKeyToken`: assembly firmati corrispondenti per token di chiave pubblica. Ad esempio per soddisfare tutti i componenti e le estensioni di Visual Studio, usare `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
   
--   `Source`: elementi corrispondenti per nome del percorso del file di origine in cui sono definiti.  
+- `Source`: elementi corrispondenti per nome del percorso del file di origine in cui sono definiti.  
   
--   `Attribute`: elementi corrispondenti ai quali è connesso un particolare attributo. Specificare il nome completo dell'attributo, includendo "Attribute" alla fine del nome.  
+- `Attribute`: elementi corrispondenti ai quali è connesso un particolare attributo. Specificare il nome completo dell'attributo, includendo "Attribute" alla fine del nome.  
   
--   `Function`: procedure, funzioni o metodi corrispondenti per nome completo.  
+- `Function`: procedure, funzioni o metodi corrispondenti per nome completo.  
   
- **Corrispondenza di un nome di funzione**  
+  **Corrispondenza di un nome di funzione**  
   
- L'espressione regolare deve corrispondere al nome completo della funzione, incluso lo spazio dei nomi, il nome della classe, il nome del metodo e l'elenco parametri. Di seguito è riportato un esempio:  
+  L'espressione regolare deve corrispondere al nome completo della funzione, incluso lo spazio dei nomi, il nome della classe, il nome del metodo e l'elenco parametri. Di seguito è riportato un esempio:  
   
--   C# o Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
+- C# o Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
--   C++: `Fabrikam::Math::LocalMath::SquareRoot(double)`  
+- C++: `Fabrikam::Math::LocalMath::SquareRoot(double)`  
   
 ```xml  
 <Functions>  
@@ -201,17 +201,17 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
   
  ![Specifica delle impostazioni esecuzione test in una definizione di compilazione](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
   
-1.  Assicurarsi che il file con estensione runsettings sia selezionato.  
+1. Assicurarsi che il file con estensione runsettings sia selezionato.  
   
-2.  In Team Explorer aprire **Compilazioni** e aggiungere o modificare una definizione di compilazione.  
+2. In Team Explorer aprire **Compilazioni** e aggiungere o modificare una definizione di compilazione.  
   
-3.  Nella pagina **Processo** espandere **Test automatizzati**, **Origine test**, **Impostazioni esecuzione test**. Selezionare il file con estensione **runsettings**.  
+3. Nella pagina **Processo** espandere **Test automatizzati**, **Origine test**, **Impostazioni esecuzione test**. Selezionare il file con estensione **runsettings**.  
   
-    -   *Viene visualizzato **Assembly di test** anziché **Origine test**. Quando si prova ad impostare il campo **Impostazioni esecuzione test**, è possibile selezionare solo file con estensione testsettings.*  
+   - <em>Ma **Assembly di Test</em>* viene visualizzato al posto di **origine Test**. Quando si prova ad impostare il campo Impostazioni esecuzione test**, è possibile selezionare solo file con estensione testsettings.*  
   
-         In **Test automatizzati** selezionare **Assembly di test** e scegliere **[...]** alla fine della riga. Nella finestra di dialogo **Aggiungi/Modifica esecuzione dei test**, impostare **Test Runner** su **Visual Studio Test Runner**.  
+      In **Test automatizzati** selezionare **Assembly di test** e scegliere **[...]** alla fine della riga. Nella finestra di dialogo **Aggiungi/Modifica esecuzione dei test**, impostare **Test Runner** su **Visual Studio Test Runner**.  
   
- I risultati vengono visualizzati nella sezione di riepilogo del report di compilazione.  
+   I risultati vengono visualizzati nella sezione di riepilogo del report di compilazione.  
   
 ##  <a name="sample"></a> File con estensione runsettings di esempio  
  Copiare questo codice e modificarlo secondo le proprie esigenze. Questa è l'impostazione predefinita del file con estensione runsettings.  

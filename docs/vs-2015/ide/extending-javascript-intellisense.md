@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867077"
 ---
 # <a name="extending-javascript-intellisense"></a>Estensione di IntelliSense in JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Nel codice dell'estensione, è possibile creare gestori per i seguenti tipi di evento utilizzando `addEventListener`:  
   
--   `statementcompletion`, che aggiunge un gestore per un evento di completamento dell'istruzione. Completamento delle istruzioni fornisce un elenco di membri per un determinato tipo che viene visualizzato dopo aver digitato un carattere speciale, ad esempio un punto (.) o un elenco di identificatori che viene visualizzato durante la digitazione o quando si preme CTRL + J. Il gestore riceve un oggetto evento di tipo `CompletionEvent`, che supporta i membri seguenti: [proprietà degli elementi](#Items), [proprietà di destinazione](#Target), [targetName proprietà](#TargetName), e [ambito proprietà](#Scope).  
+- `statementcompletion`, che aggiunge un gestore per un evento di completamento dell'istruzione. Completamento delle istruzioni fornisce un elenco di membri per un determinato tipo che viene visualizzato dopo aver digitato un carattere speciale, ad esempio un punto (.) o un elenco di identificatori che viene visualizzato durante la digitazione o quando si preme CTRL + J. Il gestore riceve un oggetto evento di tipo `CompletionEvent`, che supporta i membri seguenti: [proprietà degli elementi](#Items), [proprietà di destinazione](#Target), [targetName proprietà](#TargetName), e [ambito proprietà](#Scope).  
   
--   `signaturehelp`, che aggiunge un gestore per le informazioni sul parametro di IntelliSense. Informazioni sul parametro fornisce informazioni su numero, nomi e tipi di parametri richiesti da una funzione. Il gestore riceve un oggetto evento di tipo `SignatureHelpEvent`, che supporta i membri seguenti: [proprietà di destinazione](#Target), [parentObject proprietà](#ParentObject), [functionComments proprietà](#FunctionComments), [functionHelp proprietà](#FunctionHelp).  
+- `signaturehelp`, che aggiunge un gestore per le informazioni sul parametro di IntelliSense. Informazioni sul parametro fornisce informazioni su numero, nomi e tipi di parametri richiesti da una funzione. Il gestore riceve un oggetto evento di tipo `SignatureHelpEvent`, che supporta i membri seguenti: [proprietà di destinazione](#Target), [parentObject proprietà](#ParentObject), [functionComments proprietà](#FunctionComments), [functionHelp proprietà](#FunctionHelp).  
   
--   `statementcompletionhint`, che aggiunge un gestore per le informazioni rapide di IntelliSense. La casella popup informazioni rapide visualizza la dichiarazione completa per gli identificatori nel codice. Il gestore riceve un oggetto evento di tipo `CompletionHintEvent`, che supporta i membri seguenti: [completionItem proprietà](#CompletionItem), e [symbolHelp proprietà](#SymbolHelp).  
+- `statementcompletionhint`, che aggiunge un gestore per le informazioni rapide di IntelliSense. La casella popup informazioni rapide visualizza la dichiarazione completa per gli identificatori nel codice. Il gestore riceve un oggetto evento di tipo `CompletionHintEvent`, che supporta i membri seguenti: [completionItem proprietà](#CompletionItem), e [symbolHelp proprietà](#SymbolHelp).  
   
- Per esempi che illustrano le caratteristiche IntelliSense come il completamento delle istruzioni, informazioni sul parametro e informazioni rapide, vedere [uso di IntelliSense](../ide/using-intellisense.md).  
+  Per esempi che illustrano le caratteristiche IntelliSense come il completamento delle istruzioni, informazioni sul parametro e informazioni rapide, vedere [uso di IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
 >  In JavaScript, informazioni rapide si intende la finestra popup che viene visualizzato a destra di un elenco di completamento. È possibile richiamare manualmente le informazioni rapide.  

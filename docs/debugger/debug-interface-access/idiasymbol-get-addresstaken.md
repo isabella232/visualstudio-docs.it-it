@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_addressTaken | Documenti Microsoft
+title: Get_addresstaken | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc5fae2b172299c79b730f75320b9b7b05c3cf4f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8244940212237ed6725017cc92d2ba005ccc0d10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822462"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
 Recupera un flag che indica se un altro simbolo fa riferimento all'indirizzo di questo simbolo.  
@@ -43,7 +43,7 @@ HRESULT get_addressTaken (
 >  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente, `B` riferimenti `A`. Pertanto, simbolo `A`del `get_addressTaken` restituisce `TRUE`.  
+ Nell'esempio riportato di seguito `B` riferimenti `A`. Pertanto, di simboli `A`del `get_addressTaken` restituzione del metodo `TRUE`.  
   
 ```C++  
 int A  = 0;  
@@ -55,7 +55,7 @@ int* B = &A;
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 7.0 DIA SDK|  
+|Versione:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

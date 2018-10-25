@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Documenti Microsoft
+title: IDebugProgramProvider2::WatchForProviderEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd2dcaa930db97ee8bab9b2bba168c80444dda8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e245087cdd74ced1b47e2cd02da1e450474fa1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875138"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Consente di ricevere una notifica degli eventi porta il processo.  
@@ -55,34 +55,34 @@ int WatchForProviderEvents(
   
 |Flag|Descrizione|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Chiamante è in esecuzione sul computer remoto.|  
-|`PFLAG_DEBUGGEE`|Chiamante è in corso il debug (ulteriori informazioni di marshalling sono restituite per ogni nodo).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Chiamante è stato collegato ma non è stato avviato dal debugger.|  
-|`PFLAG_REASON_WATCH`|Chiamante desidera il controllo degli eventi. Se questo flag non è impostato. quindi, viene rimosso l'evento di callback e il chiamante non riceve più notifiche.|  
+|`PFLAG_REMOTE_PORT`|Chiamante è in esecuzione nel computer remoto.|  
+|`PFLAG_DEBUGGEE`|Chiamante è in corso il debug (vengono restituite informazioni aggiuntive su marshalling per ogni nodo).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Chiamante è stato collegato a ma non avviare dal debugger.|  
+|`PFLAG_REASON_WATCH`|Chiamante desidera il controllo degli eventi. Se questo flag non è impostato. quindi viene rimosso l'evento di callback e il chiamante non riceve più notifiche.|  
   
  `pPort`  
- [in] La porta del processo chiamante è in esecuzione.  
+ [in] La porta del processo chiamante è in corso.  
   
  `processId`  
- [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che contiene l'ID del processo che contiene il programma in questione.  
+ [in] Un' [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che contiene l'ID del processo che contiene il programma in questione.  
   
  `EngineFilter`  
- [in] Matrice di GUID di motori di debug associati al processo.  
+ [in] Una matrice di GUID di motori di debug associati al processo.  
   
  `guidLaunchingEngine`  
- [in] GUID del motore di debug che ha avviato il processo (se presente).  
+ [in] GUID del motore di debug che ha avviato questo processo (se presente).  
   
  `pEventCallback`  
- [in] Un [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) oggetto che riceve le notifiche degli eventi.  
+ [in] Un' [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) oggetto che riceve le notifiche degli eventi.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Quando un chiamante richiede rimuovere un gestore eventi che è stato stabilito con una precedente chiamata a questo metodo, il chiamante passa gli stessi parametri come la prima volta, ma lascia disattivato il `PFLAG_REASON_WATCH` flag.  
+ Quando un chiamante tenta di rimuovere un gestore eventi che è stato stabilito con una chiamata precedente a questo metodo, il chiamante passa gli stessi parametri come la prima volta, ma lascia disattivato il `PFLAG_REASON_WATCH` flag.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugEngine** oggetto che espone il [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugEngine** oggetto che espone le [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfaccia.  
   
 ```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  

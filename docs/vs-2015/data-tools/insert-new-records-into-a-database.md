@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891479"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserire nuovi record in un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Up
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Per inserire nuovi record in un database usando il metodo di TableAdapter  
   
-1.  Aggiungere nuovi record per il valore desiderato <xref:System.Data.DataTable> creando un nuovo <xref:System.Data.DataRow> e aggiungendolo al <xref:System.Data.DataTable.Rows%2A> raccolta. Per altre informazioni, vedere [procedura: aggiungere righe a un oggetto DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Aggiungere nuovi record per il valore desiderato <xref:System.Data.DataTable> creando un nuovo <xref:System.Data.DataRow> e aggiungendolo al <xref:System.Data.DataTable.Rows%2A> raccolta. Per altre informazioni, vedere [procedura: aggiungere righe a un oggetto DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
-2.  Dopo aver aggiunto le nuove righe per il <xref:System.Data.DataTable>, chiamare il `TableAdapter.Update` (metodo). È possibile controllare la quantità di dati da aggiornare passando un un'intera <xref:System.Data.DataSet>, una <xref:System.Data.DataTable>, una matrice di <xref:System.Data.DataRow>s o un singolo <xref:System.Data.DataRow>.  
+2. Dopo aver aggiunto le nuove righe per il <xref:System.Data.DataTable>, chiamare il `TableAdapter.Update` (metodo). È possibile controllare la quantità di dati da aggiornare passando un un'intera <xref:System.Data.DataSet>, una <xref:System.Data.DataTable>, una matrice di <xref:System.Data.DataRow>s o un singolo <xref:System.Data.DataRow>.  
   
-     Il codice seguente viene illustrato come aggiungere un nuovo record a un <xref:System.Data.DataTable> e quindi chiamare il `TableAdapter.Update` metodo per salvare la nuova riga per il database. (Questo esempio viene usato il `Region` tabella nel database Northwind.)  
+    Il codice seguente viene illustrato come aggiungere un nuovo record a un <xref:System.Data.DataTable> e quindi chiamare il `TableAdapter.Update` metodo per salvare la nuova riga per il database. (Questo esempio viene usato il `Region` tabella nel database Northwind.)  
   
-     [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
-     [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
+    [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
+    [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
   
- Se l'applicazione usa gli oggetti per archiviare i dati, è possibile usare il `TableAdapter.Insert` metodo per creare nuove righe direttamente nel database. Il `Insert` metodo accetta i singoli valori per ogni colonna come parametri. La chiamata al metodo inserisce un nuovo record nel database con i valori dei parametri passati.  
+   Se l'applicazione usa gli oggetti per archiviare i dati, è possibile usare il `TableAdapter.Insert` metodo per creare nuove righe direttamente nel database. Il `Insert` metodo accetta i singoli valori per ogni colonna come parametri. La chiamata al metodo inserisce un nuovo record nel database con i valori dei parametri passati.  
   
- La procedura seguente usa il `Region` tabella nel database Northwind come esempio.  
+   La procedura seguente usa il `Region` tabella nel database Northwind come esempio.  
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Per inserire nuovi record in un database usando il metodo di TableAdapter  
   

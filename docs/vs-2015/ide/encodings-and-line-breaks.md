@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880726"
 ---
 # <a name="encodings-and-line-breaks"></a>Codifiche e interruzioni di riga
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ In Visual Studio è possibile usare le impostazioni **File/Opzioni di salvataggi
   
  In Visual Studio i caratteri seguenti vengono interpretati come interruzioni di riga:  
   
--   CRLF: ritorno a capo + avanzamento riga, caratteri Unicode 000D + 000A  
+- CRLF: ritorno a capo + avanzamento riga, caratteri Unicode 000D + 000A  
   
--   LF: avanzamento riga, carattere Unicode 000A  
+- LF: avanzamento riga, carattere Unicode 000A  
   
--   NEL:rRiga successiva, carattere Unicode 0085  
+- NEL:rRiga successiva, carattere Unicode 0085  
   
--   LF: separatore di riga, carattere Unicode 2028  
+- LF: separatore di riga, carattere Unicode 2028  
   
--   PS: separatore di paragrafo, carattere Unicode 2029  
+- PS: separatore di paragrafo, carattere Unicode 2029  
   
- Il testo che viene copiato da altre applicazioni mantiene la codifica e i caratteri originali dell'interruzione di riga. Ad esempio, quando il testo viene copiato da Blocco note e incollato in un file di testo in Visual Studio, il testo mantiene le stesse impostazioni che aveva in Blocco note.  
+  Il testo che viene copiato da altre applicazioni mantiene la codifica e i caratteri originali dell'interruzione di riga. Ad esempio, quando il testo viene copiato da Blocco note e incollato in un file di testo in Visual Studio, il testo mantiene le stesse impostazioni che aveva in Blocco note.  
   
- Quando si apre un file con caratteri diversi dell'interruzione di riga, è possibile che venga visualizzata una finestra di dialogo in cui si chiede se normalizzare i caratteri dell'interruzione di riga incoerenti e quale tipo di interruzione di riga scegliere.
+  Quando si apre un file con caratteri diversi dell'interruzione di riga, è possibile che venga visualizzata una finestra di dialogo in cui si chiede se normalizzare i caratteri dell'interruzione di riga incoerenti e quale tipo di interruzione di riga scegliere.
 
 
 

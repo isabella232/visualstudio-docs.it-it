@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868430"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementi della Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49246051"
 ## <a name="run-time-settings"></a>Impostazioni di Run-Time  
  Quando un utente avvia l'applicazione shell isolata, chiama il punto di ingresso di avvio della shell di Visual Studio. Le impostazioni dell'applicazione sono definite all'avvio dell'applicazione, come indicato di seguito:  
   
-1.  La shell di Visual Studio controlla il Registro di sistema dell'applicazione per le chiavi specifiche. Se l'impostazione per una chiave viene specificato nella chiamata al punto di ingresso di avvio, tale valore sostituisce il valore del Registro di sistema.  
+1. La shell di Visual Studio controlla il Registro di sistema dell'applicazione per le chiavi specifiche. Se l'impostazione per una chiave viene specificato nella chiamata al punto di ingresso di avvio, tale valore sostituisce il valore del Registro di sistema.  
   
-2.  Se il Registro di sistema né la voce punto parametro specifica il valore di un'impostazione, quindi viene usato il valore predefinito per l'impostazione.  
+2. Se il Registro di sistema né la voce punto parametro specifica il valore di un'impostazione, quindi viene usato il valore predefinito per l'impostazione.  
   
- Quando un utente avvia l'applicazione dalla riga di comando, tutte le opzioni della riga di comando vengono passate alla shell di Visual Studio, che li gestisce nella stesso modo in cui vengono effettuate. Per altre informazioni sulle opzioni Devenv, vedere [opzioni della riga di comando Devenv](../ide/reference/devenv-command-line-switches.md) e [opzioni della riga di comando Devenv per lo sviluppo di VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Per altre informazioni sul modo in cui si registra un pacchetto per opzioni della riga di comando, vedere [aggiunta di opzioni della riga di comando](../extensibility/adding-command-line-switches.md).  
+   Quando un utente avvia l'applicazione dalla riga di comando, tutte le opzioni della riga di comando vengono passate alla shell di Visual Studio, che li gestisce nella stesso modo in cui vengono effettuate. Per altre informazioni sulle opzioni Devenv, vedere [opzioni della riga di comando Devenv](../ide/reference/devenv-command-line-switches.md) e [opzioni della riga di comando Devenv per lo sviluppo di VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Per altre informazioni sul modo in cui si registra un pacchetto per opzioni della riga di comando, vedere [aggiunta di opzioni della riga di comando](../extensibility/adding-command-line-switches.md).  
   
 ## <a name="the-start-entry-point"></a>Il punto di ingresso di avvio  
  Il file Appenvstub.dll contiene punti di ingresso per l'accesso alle shell isolata. All'avvio dell'applicazione, viene chiamato punto di ingresso iniziale di Appenvstub.dll.  

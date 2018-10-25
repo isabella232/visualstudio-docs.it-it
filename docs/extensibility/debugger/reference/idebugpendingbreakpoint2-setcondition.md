@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition | Documenti Microsoft
+title: IDebugPendingBreakpoint2::SetCondition | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc50ad1d763f196944e6246f891c5b4ed3893da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf6e77292543fe9eebd8f08cf2fd25ef48c7e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886617"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 Imposta o modifica la condizione associata con il punto di interruzione in sospeso.  
@@ -48,7 +48,7 @@ int SetCondition(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Qualsiasi condizione che era precedentemente associato il punto di interruzione in sospeso verrà persi. Tutti i punti di interruzione associati da questo punto di interruzione viene chiamati per impostare le relative condizioni sul valore specificato nel `bpCondition` parametro.  
+ Tutte le condizioni che è stato precedentemente associata il punto di interruzione in sospeso vengono perse. Tutti i punti di interruzione associati da questo oggetto in sospeso punto di interruzione vengono chiamati per impostare le relative condizioni sul valore specificato nel `bpCondition` parametro.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

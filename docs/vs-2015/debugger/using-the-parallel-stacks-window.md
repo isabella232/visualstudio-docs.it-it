@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891726"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Utilizzo della finestra Stack in parallelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,21 +99,21 @@ Il **stack in parallelo** finestra è utile quando si esegue il debug delle appl
 ## <a name="tasks-view"></a>Visualizzazione attività  
  Se l'applicazione usi <xref:System.Threading.Tasks.Task?displayProperty=fullName> oggetti (codice gestito) oppure `task_handle` oggetti (codice nativo) per esprimere il parallelismo, è possibile usare la casella combinata nella barra degli strumenti finestra Stack in parallelo per passare alla *visualizzazione attività*. La visualizzazione Attività mostra gli stack di chiamate delle attività anziché dei thread. La visualizzazione Attività presenta le seguenti differenze rispetto alla visualizzazione Thread:  
   
--   Gli stack di chiamate dei thread che non eseguono attività non vengono visualizzati.  
+- Gli stack di chiamate dei thread che non eseguono attività non vengono visualizzati.  
   
--   Gli stack di chiamate dei thread che eseguono attività sono visivamente tagliati nella parte superiore e nella parte inferiore per visualizzare i frame più rilevanti che riguardano le attività.  
+- Gli stack di chiamate dei thread che eseguono attività sono visivamente tagliati nella parte superiore e nella parte inferiore per visualizzare i frame più rilevanti che riguardano le attività.  
   
--   Quando più attività si trovano in un unico thread, gli stack di chiamate di tali attività vengono suddivisi in nodi separati.  
+- Quando più attività si trovano in un unico thread, gli stack di chiamate di tali attività vengono suddivisi in nodi separati.  
   
- Nell'illustrazione seguente vengono mostrate la visualizzazione Attività della finestra Stack in parallelo sulla destra e la corrispondente visualizzazione Thread sulla sinistra.  
+  Nell'illustrazione seguente vengono mostrate la visualizzazione Attività della finestra Stack in parallelo sulla destra e la corrispondente visualizzazione Thread sulla sinistra.  
   
- ![Le attività di visualizzazione nella finestra Stack in parallelo](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Le attività di visualizzazione nella finestra Stack in parallelo](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- Per visualizzare l'intero stack di chiamate, tornare semplicemente alla visualizzazione thread facendo clic su uno stack frame e scegliendo **passa a Thread**.  
+  Per visualizzare l'intero stack di chiamate, tornare semplicemente alla visualizzazione thread facendo clic su uno stack frame e scegliendo **passa a Thread**.  
   
- Come descritto nella tabella precedente, passando il mouse sul contesto del metodo è possibile visualizzare informazioni aggiuntive. Nell'immagine seguente sono mostrate le informazioni nella descrizione comandi per la visualizzazione Thread e la visualizzazione Attività.  
+  Come descritto nella tabella precedente, passando il mouse sul contesto del metodo è possibile visualizzare informazioni aggiuntive. Nell'immagine seguente sono mostrate le informazioni nella descrizione comandi per la visualizzazione Thread e la visualizzazione Attività.  
   
- ![Le descrizioni comandi nella finestra Stack in parallelo](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![Le descrizioni comandi nella finestra Stack in parallelo](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Visualizzazione metodo  
  Dalla visualizzazione Thread o Attività è possibile ruotare il grafico sul metodo corrente facendo clic sull'icona Visualizzazione metodo nella barra degli strumenti. La visualizzazione metodo mostra immediatamente tutti i metodi in tutti i thread che chiamano o sono chiamati dal metodo corrente. Nell'illustrazione seguente viene mostrata una visualizzazione Thread e viene illustrato come le stesse informazioni appaiono nella visualizzazione metodo.  

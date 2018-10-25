@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO | Documenti Microsoft
+title: MACHINE_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be6ee66149acb970287628289a15574894b8b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e548552b5acda6a3334b6d7df90b2aeab80c2e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847227"
 ---
 # <a name="machineinfo"></a>MACHINE_INFO
-Descrive un determinato computer.  
+Descrive un particolare computer.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,13 +48,13 @@ public struct MACHINE_INFO {
  Una combinazione di flag dal [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) enumerazione che specificano quali campi della struttura vengono inizializzati.  
   
  `bstrName`  
- Nome del computer. Equivale a chiamare [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).  
+ Nome del computer. Equivalente alla chiamata [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).  
   
  `Flags`  
  Una combinazione di flag dal [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) enumerazione che descrive gli attributi di computer.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura viene restituita da una chiamata al [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metodo.  
+ Questa struttura viene restituita da una chiamata per il [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) (metodo).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

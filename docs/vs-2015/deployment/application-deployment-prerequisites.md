@@ -25,12 +25,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890996"
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Affinché l'applicazione venga installata ed eseguita correttamente, è necessar
 ## <a name="bootstrapping-and-clickonce-deployment"></a>Bootstrap e distribuzione ClickOnce  
  Prima di installare un'applicazione in un computer client, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] esaminerà il client per verificare che siano soddisfatti i requisiti specificati nel manifesto dell'applicazione, tra cui:  
   
--   Versione minima richiesta di Common Language Runtime, specificata come dipendenza di assembly nel manifesto dell'applicazione.  
+- Versione minima richiesta di Common Language Runtime, specificata come dipendenza di assembly nel manifesto dell'applicazione.  
   
--   Versione minima del sistema operativo Windows richiesta dall'applicazione, specificata nel manifesto dell'applicazione mediante l'elemento `<osVersionInfo>` (Vedere [ \<dipendenza > elemento](../deployment/dependency-element-clickonce-application.md))  
+- Versione minima del sistema operativo Windows richiesta dall'applicazione, specificata nel manifesto dell'applicazione mediante l'elemento `<osVersionInfo>` (Vedere [ \<dipendenza > elemento](../deployment/dependency-element-clickonce-application.md))  
   
--   Versione minima di tutti gli assembly che devono essere preinstallati nella Global Assembly Cache (GAC), specificata dalle dichiarazioni delle dipendenze degli assembly nel manifesto dell'assembly.  
+- Versione minima di tutti gli assembly che devono essere preinstallati nella Global Assembly Cache (GAC), specificata dalle dichiarazioni delle dipendenze degli assembly nel manifesto dell'assembly.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] può rilevare i prerequisiti mancanti, ed è possibile installare i prerequisiti tramite un programma di avvio automatico. Per altre informazioni, vedere [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] può rilevare i prerequisiti mancanti, ed è possibile installare i prerequisiti tramite un programma di avvio automatico. Per altre informazioni, vedere [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Per modificare i valori nei manifesti generati da strumenti come [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e MageUI.exe, è necessario modificare il manifesto dell'applicazione in un editor di testo, quindi firmare nuovamente sia il manifesto dell'applicazione che quello della distribuzione. Per altre informazioni, vedere [Procedura: ripetere la firma dei manifesti dell'applicazione e di distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  

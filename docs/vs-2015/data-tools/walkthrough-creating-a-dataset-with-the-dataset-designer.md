@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868261"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: creazione di un dataset con Progettazione DataSet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ In questa procedura dettagliata si creerà un set di dati usando il **Progettazi
   
  Le attività illustrate nella procedura dettagliata sono le seguenti:  
   
--   Creazione di una nuova **applicazioni Windows** progetto.  
+- Creazione di una nuova **applicazioni Windows** progetto.  
   
--   Aggiunta di un oggetto vuoto **set di dati** elemento al progetto.  
+- Aggiunta di un oggetto vuoto **set di dati** elemento al progetto.  
   
--   Creazione e configurazione di un'origine dati nell'applicazione creando un set di dati con il **Progettazione Dataset**.  
+- Creazione e configurazione di un'origine dati nell'applicazione creando un set di dati con il **Progettazione Dataset**.  
   
--   Creazione di una connessione al database Northwind nel **Esplora Server**.  
+- Creazione di una connessione al database Northwind nel **Esplora Server**.  
   
--   Creazione di tabelle con i TableAdapter del set di dati basati su tabelle nel database.  
+- Creazione di tabelle con i TableAdapter del set di dati basati su tabelle nel database.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario:  

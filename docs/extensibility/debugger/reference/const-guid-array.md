@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY | Documenti Microsoft
+title: CONST_GUID_ARRAY | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c18feedde988559ae4aff1455b7dfb1d8c6eb1e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b66713fa5929fc1397a5302732399c07c3f5a726
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885915"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 Una struttura che contiene un elenco di `GUID`s.  
@@ -43,15 +43,15 @@ public struct CONST_GUID_ARRAY {
   
 ## <a name="members"></a>Membri  
  dwCount  
- Numero di `GUID`s nel `Members` matrice.  
+ Numerosi `GUID`s nel `Members` matrice.  
   
  Membri  
  Matrice di `GUID`s.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura viene passata per il [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (metodo) e viene restituito dal [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) metodi.  
+ Questa struttura viene passata al [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metodo e viene restituito dalle [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) metodi.  
   
- Il proprietario di un'istanza di questa struttura è responsabile per liberare memoria allocata.  
+ Il proprietario di un'istanza di questa struttura è responsabile della liberazione di memoria allocata.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

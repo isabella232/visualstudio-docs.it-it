@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b288ec65bed95a508d161b33cc49d7d8e2540362
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9e714773ec000f2f46872f5c60429f313e1f6310
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891154"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Procedura: ripristino a livello di codice le selezioni dopo le ricerche
   Se si trova e Sostituisci testo in un documento, è possibile ripristinare la selezione dell'utente originale dopo la ricerca è stata completata.  
@@ -33,22 +33,22 @@ ms.locfileid: "35672361"
   
 ## <a name="to-restore-the-users-original-selection-after-a-search"></a>Per ripristinare la selezione dell'utente originale dopo una ricerca  
   
-1.  Creare il <xref:Microsoft.Office.Interop.Word.Range> oggetti per il documento e la selezione corrente.  
+1. Creare il <xref:Microsoft.Office.Interop.Word.Range> oggetti per il documento e la selezione corrente.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#83)]
-     [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]  
+    [!code-vb[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#83)]
+    [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]  
   
-2.  Eseguire la ricerca e sostituzione.  
+2. Eseguire la ricerca e sostituzione.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]
-     [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]  
+    [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]
+    [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]  
   
-3.  Selezionare l'intervallo di inizio per ripristinare la selezione dell'utente originale.  
+3. Selezionare l'intervallo di inizio per ripristinare la selezione dell'utente originale.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]
-     [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]  
+    [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]
+    [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]  
   
- L'esempio seguente mostra il metodo completo.  
+   L'esempio seguente mostra il metodo completo.  
   
 ## <a name="example"></a>Esempio  
  [!code-vb[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#82)]

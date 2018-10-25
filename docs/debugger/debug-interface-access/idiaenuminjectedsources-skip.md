@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumInjectedSources::Skip | Documenti Microsoft
+title: Idiaenuminjectedsources | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 038510fbd89d58c0d122457828c2f130df39173e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3ed94c7e70d3d4800f8662b35bd13bc351d5bc83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863802"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
-Ignora un numero di origini inserite in una sequenza di enumerazione specificato.  
+Ignora un determinato numero di origini inserite in una sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   

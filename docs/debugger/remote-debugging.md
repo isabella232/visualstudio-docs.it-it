@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872434"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -95,25 +95,25 @@ Per il debug in ASP.NET e altri ambienti server, si deve eseguire il debugger re
 
  Se si desidera configurare il debugger remoto come servizio, seguire questa procedura.
 
-1.  Trovare la **Configurazione guidata del debugger remoto** (rdbgwiz.exe). Si tratta di un'applicazione separata dal debugger remoto. È disponibile solo quando si installa Remote Tools e non è inclusa nell'installazione di Visual Studio.
+1. Trovare la **Configurazione guidata del debugger remoto** (rdbgwiz.exe). Si tratta di un'applicazione separata dal debugger remoto. È disponibile solo quando si installa Remote Tools e non è inclusa nell'installazione di Visual Studio.
 
-2.  Avviare la configurazione guidata. Quando viene visualizzata la prima pagina, fare clic su **Avanti**.
+2. Avviare la configurazione guidata. Quando viene visualizzata la prima pagina, fare clic su **Avanti**.
 
-3.  Selezionare la casella di controllo **Esegui Visual Studio 2015 Remote Debugger come servizio** .
+3. Selezionare la casella di controllo **Esegui Visual Studio 2015 Remote Debugger come servizio** .
 
-4.  Aggiungere il nome dell'account utente e la password.
+4. Aggiungere il nome dell'account utente e la password.
 
-     Potrebbe essere necessario aggiungere il **Accedi come servizio** utente direttamente a questo account (trovare **criteri di sicurezza locali** (secpol. msc) nella **avviare** pagina o nella finestra (o tipo  **secpol** un prompt dei comandi). Quando viene visualizzata la finestra, fare doppio clic su **Assegnazione diritti utente**e trovare **Accedi come servizio** nel riquadro di destra. Fare doppio clic. Aggiungere l'account utente per il **delle proprietà** finestra e fare clic su **OK**). Scegliere **Avanti**.
+    Potrebbe essere necessario aggiungere il **Accedi come servizio** utente direttamente a questo account (trovare **criteri di sicurezza locali** (secpol. msc) nella **avviare** pagina o nella finestra (o tipo  **secpol** un prompt dei comandi). Quando viene visualizzata la finestra, fare doppio clic su **Assegnazione diritti utente**e trovare **Accedi come servizio** nel riquadro di destra. Fare doppio clic. Aggiungere l'account utente per il **delle proprietà** finestra e fare clic su **OK**). Scegliere **Avanti**.
 
-5.  Selezionare il tipo di rete con cui si vuole che Remote Tools comunichi. Almeno un tipo di rete deve essere selezionato. Se i computer sono connessi tramite un dominio, è necessario scegliere il primo elemento. Se i computer sono connessi tramite un gruppo di lavoro o un gruppo home, è necessario scegliere il secondo o il terzo elemento. Scegliere **Avanti**.
+5. Selezionare il tipo di rete con cui si vuole che Remote Tools comunichi. Almeno un tipo di rete deve essere selezionato. Se i computer sono connessi tramite un dominio, è necessario scegliere il primo elemento. Se i computer sono connessi tramite un gruppo di lavoro o un gruppo home, è necessario scegliere il secondo o il terzo elemento. Scegliere **Avanti**.
 
-6.  Se è possibile avviare il servizio, viene visualizzato il messaggio **Configurazione guidata di Visual Studio Remote Debugger completata**. Se non è possibile avviare il servizio, viene visualizzato il messaggio **Impossibile completare la Configurazione guidata di Visual Studio Remote Debugger**. La pagina offre anche alcuni suggerimenti da seguire per l'avvio del servizio.
+6. Se è possibile avviare il servizio, viene visualizzato il messaggio **Configurazione guidata di Visual Studio Remote Debugger completata**. Se non è possibile avviare il servizio, viene visualizzato il messaggio **Impossibile completare la Configurazione guidata di Visual Studio Remote Debugger**. La pagina offre anche alcuni suggerimenti da seguire per l'avvio del servizio.
 
-7.  Scegliere **Fine**.
+7. Scegliere **Fine**.
 
- A questo punto il debugger remoto è in esecuzione come servizio. È possibile verificarlo passando **Pannello di controllo > servizi** e cercando **Visual Studio 2015 Remote Debugger**.
+   A questo punto il debugger remoto è in esecuzione come servizio. È possibile verificarlo passando **Pannello di controllo > servizi** e cercando **Visual Studio 2015 Remote Debugger**.
 
- È possibile arrestare e avviare il servizio debugger remoto da **Pannello di controllo > servizi**.
+   È possibile arrestare e avviare il servizio debugger remoto da **Pannello di controllo > servizi**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurare il debug con simboli remoti
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hfaDouble | Documenti Microsoft
+title: Get_hfadouble | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e573aa66c5c239c64f48895b1e100c303f6fca8b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e6d9057ecc968cfd3772cdb01a07aa392c449134
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873694"
 ---
 # <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
-Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene omogenea aggregazione (HFA) dati a virgola mobile di tipo double.  
+Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene omogenei a virgola mobile (HFA) i dati aggregati di tipo double.  
   
 ## <a name="syntax"></a>Sintassi  
   

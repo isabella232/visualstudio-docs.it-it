@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fa5e2f46f3fa5cce9a795c2353148d2bd3f47351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 977594493279d52154de3cb5ef7bce56d4d8f985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836840"
 ---
 # <a name="properties-of-domain-properties"></a>Proprietà delle proprietà di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Oggetto *proprietà del dominio* è una funzionalità di un elemento del modello
   
  La maggior parte delle proprietà di dominio è implementata come comuni proprietà CLR. Tuttavia, dal punto di vista della programmazione, le proprietà di dominio sono caratterizzate da funzionalità più avanzate rispetto alle proprietà del programma comuni.  
   
--   È possibile definire regole ed eventi per monitorare lo stato di una proprietà. Per altre informazioni, vedere [procedura: rispondere a e la propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md).  
+- È possibile definire regole ed eventi per monitorare lo stato di una proprietà. Per altre informazioni, vedere [procedura: rispondere a e la propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md).  
   
--   Le transazioni contribuiscono a prevenire stati incoerenti. Per altre informazioni, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+- Le transazioni contribuiscono a prevenire stati incoerenti. Per altre informazioni, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- Quando si seleziona una Proprietà di dominio in un diagramma o in DSL Explorer, nella Finestra Proprietà vengono visualizzati gli elementi seguenti. Per altre informazioni su come usare questi elementi, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Quando si seleziona una Proprietà di dominio in un diagramma o in DSL Explorer, nella Finestra Proprietà vengono visualizzati gli elementi seguenti. Per altre informazioni su come usare questi elementi, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Proprietà|Descrizione|Valore predefinito|  
 |--------------|-----------------|-------------------|  

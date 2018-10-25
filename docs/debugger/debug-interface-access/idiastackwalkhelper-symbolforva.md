@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::symbolForVA | Documenti Microsoft
+title: Symbolforva | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70dac639f18f934bb997cc4979bdbe6a7d8c4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a9af63460d3b5c082f52d3dbd9725fbfeef9c24f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863919"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 Recupera il simbolo che contiene l'indirizzo virtuale specificato.  
@@ -35,10 +35,10 @@ HRESULT symbolForVA(
   
 #### <a name="parameters"></a>Parametri  
  `va`  
- [in] L'indirizzo virtuale contenente il simbolo richiesto. Il simbolo deve essere un `SymTagFunctionType` (compreso il [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) enumerazione).  
+ [in] Indirizzo virtuale in cui è contenuto nel simbolo richiesto. Il simbolo deve essere un `SymTagFunctionType` (un valore compreso il [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione).  
   
  `ppSymbol`  
- [out] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il simbolo all'indirizzo specificato.  
+ [out] Un' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il simbolo all'indirizzo specificato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

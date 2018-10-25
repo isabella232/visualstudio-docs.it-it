@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Documenti Microsoft
+title: IDebugProgram2::CauseBreak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81fb04db3342bb8ce7d5e314c9a912b873ffb627
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1abd2e5c3681a63d918763b99ebc09a43fe5988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864530"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
-Le richieste che il programma di arresta l'esecuzione alla successiva ora di uno dei tentativi thread di esecuzione.  
+Le richieste che il programma di arresta l'esecuzione successiva ora di uno dei tentativi thread di esecuzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,9 +41,9 @@ int CauseBreak();
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) viene inviato l'evento quando viene quindi effettuato un tentativo eseguire codice dopo questo metodo viene chiamato.  
+ Un' [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) evento viene inviato quando il programma quindi tenta di eseguire codice dopo questo metodo viene chiamato.  
   
- Questo metodo è asincrono, in quanto il metodo restituisce immediatamente senza attendere necessariamente il blocco del programma.  
+ Questo metodo è asincrono, in quanto il metodo viene restituito immediatamente senza dover necessariamente attendere il blocco del programma.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

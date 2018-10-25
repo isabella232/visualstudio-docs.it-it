@@ -20,15 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8dda659a746f98bfa8038156d38316729f43016c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862339"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Gli identificatori non devono contenere nomi di tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -48,89 +49,89 @@ ms.locfileid: "49282503"
 
  Ogni token discreti il nome del parametro o un membro viene confrontato con i nomi dei tipi di dati specifico del linguaggio seguenti, in modo tra maiuscole e minuscole:
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Short
+- Short
 
--   UShort
+- UShort
 
--   Int
+- Int
 
--   UInt
+- UInt
 
--   Integer
+- Integer
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   Senza segno
+- Senza segno
 
--   Firmato
+- Firmato
 
--   Float
+- Float
 
--   float32
+- float32
 
--   float64
+- float64
 
- Inoltre, i nomi di parametro sono anche confrontati con i nomi dei tipi di dati indipendenti dal linguaggio seguente, in modo tra maiuscole e minuscole:
+  Inoltre, i nomi di parametro sono anche confrontati con i nomi dei tipi di dati indipendenti dal linguaggio seguente, in modo tra maiuscole e minuscole:
 
--   Object
+- Object
 
--   obj
+- obj
 
--   Booleano
+- Booleano
 
--   Char
+- Char
 
--   Stringa
+- Stringa
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   PTR
+- PTR
 
--   Puntatore
+- Puntatore
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   Decimale
+- Decimale
 
--   GUID
+- GUID
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  **Se viene generato con un parametro:**

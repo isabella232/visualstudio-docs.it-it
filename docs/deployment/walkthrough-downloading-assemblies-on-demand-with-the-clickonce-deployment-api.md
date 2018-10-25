@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de6698f6e635a151a0f78eecbb90f4d7bd525969
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6338044dff5aa5b0555b15b689c04ddd406c50f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887657"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: Download di assembly su richiesta con l'API della distribuzione ClickOnce
 Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione vengono scaricati alla prima esecuzione dell'applicazione. Tuttavia, è possibile parti dell'applicazione usati da un set ridotto di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura riportata di seguito viene illustrato come contrassegnare determinati assembly nell'applicazione come "facoltativi" e come scaricarli tramite le classi di <xref:System.Deployment.Application> dello spazio dei nomi quando richiesti da common language runtime (CLR).  
@@ -42,40 +42,40 @@ Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclic
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>Per creare un progetto che usa un assembly su richiesta  
   
-1.  Creare una directory denominata ClickOnceOnDemand.  
+1. Creare una directory denominata ClickOnceOnDemand.  
   
-2.  Aprire il prompt dei comandi di Windows SDK o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prompt dei comandi.  
+2. Aprire il prompt dei comandi di Windows SDK o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prompt dei comandi.  
   
-3.  Passare alla directory ClickOnceOnDemand.  
+3. Passare alla directory ClickOnceOnDemand.  
   
-4.  Generare una coppia di chiavi pubblica/privata usando il comando seguente:  
+4. Generare una coppia di chiavi pubblica/privata usando il comando seguente:  
   
-    ```cmd  
-    sn -k TestKey.snk  
-    ```  
+   ```cmd  
+   sn -k TestKey.snk  
+   ```  
   
-5.  Utilizzando blocco note o un altro editor di testo, definire una classe denominata `DynamicClass` con una singola proprietà denominata `Message`.  
+5. Utilizzando blocco note o un altro editor di testo, definire una classe denominata `DynamicClass` con una singola proprietà denominata `Message`.  
   
-     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
+    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
+    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
   
-6.  Salvare il testo in un file denominato *ClickOnceLibrary.cs* o *ClickOnceLibrary*, a seconda del linguaggio viene utilizzato, per il *ClickOnceOnDemand* directory.  
+6. Salvare il testo in un file denominato *ClickOnceLibrary.cs* o *ClickOnceLibrary*, a seconda del linguaggio viene utilizzato, per il *ClickOnceOnDemand* directory.  
   
-7.  Compilare il file in un assembly.  
+7. Compilare il file in un assembly.  
   
-    ```csharp  
-    csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
-    ```  
+   ```csharp  
+   csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
+   ```  
   
-    ```vb  
-    vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
-    ```  
+   ```vb  
+   vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
+   ```  
   
-8.  Per ottenere token di chiave pubblica dell'assembly, usare il comando seguente:  
+8. Per ottenere token di chiave pubblica dell'assembly, usare il comando seguente:  
   
-    ```cmd  
-    sn -T ClickOnceLibrary.dll  
-    ```  
+   ```cmd  
+   sn -T ClickOnceLibrary.dll  
+   ```  
   
 9. Creare un nuovo file utilizzando il testo dell'editor e immettere il codice seguente. Questo codice crea un'applicazione Windows Form che consente di scaricare l'assembly ClickOnceLibrary quando necessario.  
   
@@ -118,15 +118,15 @@ Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclic
   
 #### <a name="to-test-your-on-demand-assembly"></a>Per testare l'assembly su richiesta  
   
-1.  Caricare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione a un server Web.  
+1. Caricare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione a un server Web.  
   
-2.  Avviare l'applicazione distribuita con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da un Web browser immettendo l'URL del manifesto di distribuzione. Se si chiama il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione `ClickOnceOnDemand`e caricarlo nella directory radice di adatum.com, l'URL sarà analogo al seguente:  
+2. Avviare l'applicazione distribuita con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da un Web browser immettendo l'URL del manifesto di distribuzione. Se si chiama il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione `ClickOnceOnDemand`e caricarlo nella directory radice di adatum.com, l'URL sarà analogo al seguente:  
   
-    ```  
-    http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
-    ```  
+   ```  
+   http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
+   ```  
   
-3.  Quando viene visualizzato il modulo principale, premere l'oggetto <xref:System.Windows.Forms.Button>. Dovrebbe essere una stringa in una finestra di messaggio che legge "Hello, World!".  
+3. Quando viene visualizzato il modulo principale, premere l'oggetto <xref:System.Windows.Forms.Button>. Dovrebbe essere una stringa in una finestra di messaggio che legge "Hello, World!".  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Deployment.Application.ApplicationDeployment>

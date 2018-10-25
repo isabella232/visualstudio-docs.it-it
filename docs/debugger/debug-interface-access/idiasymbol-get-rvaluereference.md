@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_RValueReference | Documenti Microsoft
+title: Get_rvaluereference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7bf615dee46102cd2584a660cc7925f22194e4a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3931dbfda4d4c94b1244ce7ba08ab273729b61c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849489"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
-Recupera un flag che specifica se un tipo di puntatore è un riferimento rvalue. Utilizzo di [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) è impostata su un tipo di puntatore.  
+Recupera un flag che specifica se un tipo di puntatore è un riferimento rvalue. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su un tipo di puntatore.  
   
 ## <a name="syntax"></a>Sintassi  
   

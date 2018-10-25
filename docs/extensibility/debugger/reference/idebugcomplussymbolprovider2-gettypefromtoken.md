@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Documenti Microsoft
+title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e0860ae08332f364e707dcde70b345ce4dae181
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c514df27914ed0c40239e6d06130ab7df25d07c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858329"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-Recupera un tipo di dato il relativo token.  
+Recupera un tipo dato il relativo token.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -61,7 +61,7 @@ int GetTypeFromToken(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetTypeFromToken(  

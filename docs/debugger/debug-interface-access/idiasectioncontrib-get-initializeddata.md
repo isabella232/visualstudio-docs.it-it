@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_initializedData | Documenti Microsoft
+title: Get_initializeddata | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a41c521bbf2a9046c91b9df12f8c14661da91cfc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7b972c70fd0cc8a9c7f02476434a7f8f9394a8a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866508"
 ---
 # <a name="idiasectioncontribgetinitializeddata"></a>IDiaSectionContrib::get_initializedData
-Recupera un flag che indica se la sezione contiene dati inizializzati.  
+Recupera un flag che indica se la sezione contiene i dati inizializzati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT get_initializedData (
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se la sezione contiene dati inizializzati; in caso contrario, restituisce `FALSE`.  
+ [out] Restituisce `TRUE` se la sezione contiene i dati inizializzati; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

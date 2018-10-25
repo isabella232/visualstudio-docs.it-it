@@ -12,33 +12,33 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5f7b69d0fb1ccd547d522d65fab803bd79a10ed2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f99816153870884f868a6b229068bdc281408337
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865492"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: definire e utilizzare delegati di attività in Progettazione del flusso di lavoro
 In [!INCLUDE[net_v45](../includes/net-v45-md.md)] è inclusa una nuova finestra di progettazione predefinita dell'attività di <xref:System.Activities.Statements.InvokeDelegate>. Questa finestra di progettazione può essere usata per assegnare i delegati all'attività che derivano da <xref:System.Activities.ActivityDelegate>, come <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.  
   
 ### <a name="define-an-activity-delegate"></a>Definire un delegato dell'attività  
   
-1.  Nelle [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], selezionare **File**, **New**, **progetto**. Selezionare il **flusso di lavoro** nodo a sinistra e il **applicazione Console flusso di lavoro** modello sul lato destro. Denominare il progetto (se lo si desidera) e fare clic su **accettabile**.  
+1. Nelle [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], selezionare **File**, **New**, **progetto**. Selezionare il **flusso di lavoro** nodo a sinistra e il **applicazione Console flusso di lavoro** modello sul lato destro. Denominare il progetto (se lo si desidera) e fare clic su **accettabile**.  
   
-2.  Pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionare **Add**, **nuovo elemento...** . Selezionare il **flusso di lavoro** nodo a sinistra e il **attività** modello sul lato destro. Denominare la nuova attività **Myforeach** e fare clic su **Ok**. L'attività verrà visualizzata nella finestra di progettazione flussi di lavoro.  
+2. Pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionare **Add**, **nuovo elemento...** . Selezionare il **flusso di lavoro** nodo a sinistra e il **attività** modello sul lato destro. Denominare la nuova attività **Myforeach** e fare clic su **Ok**. L'attività verrà visualizzata nella finestra di progettazione flussi di lavoro.  
   
-3.  Nella finestra di progettazione del flusso di lavoro, scegliere il **argomenti** scheda.  
+3. Nella finestra di progettazione del flusso di lavoro, scegliere il **argomenti** scheda.  
   
-4.  Fare clic su **Crea argomento**. Assegnare un nome al nuovo argomento **elementi**.  
+4. Fare clic su **Crea argomento**. Assegnare un nome al nuovo argomento **elementi**.  
   
-5.  Nel **tipo di argomento** colonna, selezionare **matrice di T []**.  
+5. Nel **tipo di argomento** colonna, selezionare **matrice di T []**.  
   
-6.  Nel browser dei tipi, selezionare **oggetto**. Fare clic su **accettabile**.  
+6. Nel browser dei tipi, selezionare **oggetto**. Fare clic su **accettabile**.  
   
-7.  Fare clic su **Crea argomento** nuovamente. Assegnare un nome al nuovo argomento **corpo**. Nel **direzione** colonna per il nuovo argomento, selezionare **proprietà**.  
+7. Fare clic su **Crea argomento** nuovamente. Assegnare un nome al nuovo argomento **corpo**. Nel **direzione** colonna per il nuovo argomento, selezionare **proprietà**.  
   
-8.  Nella colonna tipo di argomento, selezionare **Cerca tipi...**  
+8. Nella colonna tipo di argomento, selezionare **Cerca tipi...**  
   
 9. Nel browser dei tipi, immettere **ActivityAction** nel **nome tipo** campo. Selezionare **ActivityAction\<T >** nella visualizzazione albero. Selezionare **oggetti** nell'elenco a discesa che viene visualizzato per assegnare il tipo **ActivityAction\<oggetto >** all'argomento.  
   
@@ -64,23 +64,23 @@ In [!INCLUDE[net_v45](../includes/net-v45-md.md)] è inclusa una nuova finestra 
   
 20. Impostare il **a** proprietà del <xref:System.Activities.Statements.Assign> attività **indice**. Impostare il **valore** proprietà del **assegnare** attività **index+1**.  
   
- L'oggetto personalizzato **MyForEach** attività richiamerà un'attività arbitraria una volta per ogni valore passato tramite il **elementi** insieme con i valori nella raccolta come input per l'attività.  
+    L'oggetto personalizzato **MyForEach** attività richiamerà un'attività arbitraria una volta per ogni valore passato tramite il **elementi** insieme con i valori nella raccolta come input per l'attività.  
   
 ### <a name="use-the-custom-activity-in-a-workflow"></a>Usare l'attività personalizzata in un flusso di lavoro  
   
-1.  Compilare il progetto premendo **Ctrl + MAIUSC + B**.  
+1. Compilare il progetto premendo **Ctrl + MAIUSC + B**.  
   
-2.  Nelle **Esplora soluzioni**aprire **Workflow1.xaml** nella finestra di progettazione.  
+2. Nelle **Esplora soluzioni**aprire **Workflow1.xaml** nella finestra di progettazione.  
   
-3.  Trascinare un **MyForEach** attività dalla casella degli strumenti all'area di progettazione. L'attività si troverà in una sezione della casella degli strumenti con lo stesso nome del progetto.  
+3. Trascinare un **MyForEach** attività dalla casella degli strumenti all'area di progettazione. L'attività si troverà in una sezione della casella degli strumenti con lo stesso nome del progetto.  
   
-4.  Impostare il **elementi** proprietà del **MyForEach** attività **new Object [] {1, "abc"}**.  
+4. Impostare il **elementi** proprietà del **MyForEach** attività **new Object [] {1, "abc"}**.  
   
-5.  Trascinare un <xref:System.Activities.Statements.WriteLine> attività dal **primitive** sezione della casella degli strumenti per il **Delegate: Body** sezione del **MyForEach** attività.  
+5. Trascinare un <xref:System.Activities.Statements.WriteLine> attività dal **primitive** sezione della casella degli strumenti per il **Delegate: Body** sezione del **MyForEach** attività.  
   
-6.  Impostare il **testo** proprietà del <xref:System.Activities.Statements.WriteLine> attività **argument**.  
+6. Impostare il **testo** proprietà del <xref:System.Activities.Statements.WriteLine> attività **argument**.  
   
- Quando il flusso di lavoro viene eseguito, nella console verrà visualizzato quanto segue:  
+   Quando il flusso di lavoro viene eseguito, nella console verrà visualizzato quanto segue:  
   
- **1**   
-**abc**
+   **1**   
+   **abc**

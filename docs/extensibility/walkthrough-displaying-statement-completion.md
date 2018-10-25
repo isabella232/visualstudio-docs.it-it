@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa6a1547a604e5d073c4e45c7769c68e0674d74
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879324"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Questa procedura dettagliata: Completamento istruzioni visualizzazione
 È possibile implementare il completamento delle istruzioni basata sul linguaggio definendo gli identificatori per il quale si desidera fornire il completamento e quindi attivare una sessione di completamento. È possibile definire il completamento delle istruzioni nel contesto di un servizio di linguaggio, definire il proprio estensione di file e il tipo di contenuto e quindi visualizzare il completamento per solo tale tipo. In alternativa, è possibile attivare il completamento di un tipo di contenuto esistente, ad esempio, "normale". Questa procedura dettagliata illustra come attivare il completamento delle istruzioni per il tipo di contenuto "testo normale", ovvero il tipo di contenuto dei file di testo. Il tipo di contenuto "text" è il predecessore di tutti gli altri tipi contenuti, inclusi file XML e codice.  
@@ -34,7 +34,7 @@ ms.locfileid: "39497742"
   
 #### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `CompletionTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `CompletionTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -59,7 +59,7 @@ ms.locfileid: "39497742"
   
 ### <a name="to-implement-the-completion-source"></a>Per implementare l'origine di completamento  
   
-1.  Aggiungere un file di classe e denominarla `TestCompletionSource`.  
+1.  Aggiungere un file di classe e assegnargli il nome `TestCompletionSource`.  
   
 2.  Aggiungere queste istruzioni import:  
   
@@ -148,48 +148,48 @@ ms.locfileid: "39497742"
   
 #### <a name="to-implement-the-completion-command-handler"></a>Per implementare il gestore di comando di completamento  
   
-1.  Aggiungere una classe denominata `TestCompletionCommandHandler` che implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Aggiungere una classe denominata `TestCompletionCommandHandler` che implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
-     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
+    [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
+    [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2.  Aggiungere campi privati per il gestore del comando successivo (a cui è passare il comando), la visualizzazione di testo, il provider del gestore di comando (che consente l'accesso a vari servizi) e una sessione di completamento:  
+2. Aggiungere campi privati per il gestore del comando successivo (a cui è passare il comando), la visualizzazione di testo, il provider del gestore di comando (che consente l'accesso a vari servizi) e una sessione di completamento:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
-     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
+    [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
+    [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
   
-3.  Aggiungere un costruttore che imposta la visualizzazione di testo e i campi del provider e aggiunge il comando alla catena del comando:  
+3. Aggiungere un costruttore che imposta la visualizzazione di testo e i campi del provider e aggiunge il comando alla catena del comando:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
-     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
+    [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
+    [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
   
-4.  Implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo passando il comando lungo:  
+4. Implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo passando il comando lungo:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
-     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
+    [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
+    [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
   
-5.  Implementare il metodo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>. Quando questo metodo riceve una sequenza di tasti, è necessario eseguire una di queste operazioni:  
+5. Implementare il metodo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>. Quando questo metodo riceve una sequenza di tasti, è necessario eseguire una di queste operazioni:  
   
-    -   Consenti il carattere da scrivere nel buffer e quindi attivare o filtro di completamento. (Caratteri stampabili fare questo).  
+   - Consenti il carattere da scrivere nel buffer e quindi attivare o filtro di completamento. (Caratteri stampabili fare questo).  
   
-    -   Eseguire il commit del completamento, ma non consentono il carattere da scrivere nel buffer. (Lo spazio vuoto, **della scheda**, e **invio** eseguire questa operazione quando viene visualizzata una sessione di completamento.)  
+   - Eseguire il commit del completamento, ma non consentono il carattere da scrivere nel buffer. (Lo spazio vuoto, **della scheda**, e **invio** eseguire questa operazione quando viene visualizzata una sessione di completamento.)  
   
-    -   Consenti il comando deve essere passato gestore successivo. (Tutti gli altri comandi.)  
+   - Consenti il comando deve essere passato gestore successivo. (Tutti gli altri comandi.)  
   
      Poiché questo metodo può visualizzare l'interfaccia utente, chiamare il metodo <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> per assicurarsi che non viene chiamato in un contesto di automazione:  
   
      [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
      [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
   
-6.  Questo codice è un metodo privato che attiva la sessione di completamento:  
+6. Questo codice è un metodo privato che attiva la sessione di completamento:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
-     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
+    [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
+    [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
   
-7.  L'esempio successivo è un metodo privato che annulla la sottoscrizione di <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> evento:  
+7. L'esempio successivo è un metodo privato che annulla la sottoscrizione di <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> evento:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
-     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
+    [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
+    [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
   
 ## <a name="build-and-test-the-code"></a>Compilare e testare il codice  
  Per testare questo codice, compilare la soluzione CompletionTest ed eseguirlo nell'istanza sperimentale.  

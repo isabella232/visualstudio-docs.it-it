@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumLocals | Documenti Microsoft
+title: IDebugMethodField::EnumLocals | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8379407a275fa4b89b4107037b2a39691d062dd9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7983943aaa6680539557f68376d19e1e19580cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888242"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Crea un enumeratore per le variabili locali selezionate del metodo.  
@@ -43,18 +43,18 @@ int EnumLocals(
   
 #### <a name="parameters"></a>Parametri  
  `pAddress`  
- [in] Un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto che rappresenta l'indirizzo di debug che consente di selezionare il contesto o l'ambito da cui ottenere le variabili locali.  
+ [in] Un' [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto che rappresenta l'indirizzo di debug che consente di selezionare il contesto o l'ambito da cui ottenere le variabili locali.  
   
  `ppLocals`  
- [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) l'oggetto che rappresenta un elenco di variabili locali; in caso contrario, restituisce un valore null se non sono variabili non locali.  
+ [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) dell'oggetto che rappresenta un elenco di variabili locali; in caso contrario, restituisce un valore null se non sono variabili non locali.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK o S_FALSE se sono non presenti variabili locali. In caso contrario, verrà restituito un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se non sono variabili non locali. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Vengono enumerate solo le variabili definite all'interno del blocco che contiene l'indirizzo di debug specificata. Se sono necessarie tutte le variabili locali incluse le variabili locali generato dal compilatore, chiamare il [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) metodo.  
+ Vengono enumerate solo le variabili definite all'interno del blocco che contiene l'indirizzo di debug specificato. Se sono necessarie tutte le variabili locali incluse eventuali variabili locali generate dal compilatore, chiamare il [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) (metodo).  
   
- Un metodo può contenere più contesti di ambito o blocchi. Ad esempio, il metodo seguente ristretto contiene tre ambiti, i due blocchi interni e il corpo del metodo.  
+ Un metodo può contenere più blocchi o i contesti di definizione dell'ambito. Ad esempio, il seguente metodo artificioso contiene tre ambiti, i due blocchi interni e il corpo del metodo stesso.  
   
 ```csharp  
 public void func(int index)  
@@ -74,7 +74,7 @@ public void func(int index)
 }  
 ```  
   
- Il [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) oggetto rappresenta il `func` metodo stesso. La chiamata di `EnumLocals` metodo con un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) impostato sul `Inner Scope 1` indirizzo restituisce un'enumerazione contenente il `temp1` variabile, ad esempio.  
+ Il [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) oggetto di `func` metodo di stesso. Chiama il `EnumLocals` metodo con un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) impostato sulla `Inner Scope 1` indirizzo restituisce un'enumerazione contenente il `temp1` variabile, ad esempio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

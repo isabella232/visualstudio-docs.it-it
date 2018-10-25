@@ -1,5 +1,5 @@
 ---
-title: Prevista cifra esadecimale | Documenti Microsoft
+title: Prevista cifra esadecimale | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9e29131c4ecf4f476a30da94ec67676d6bea347
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836177"
 ---
 # <a name="expected-hexadecimal-digit"></a>Prevista cifra esadecimale
-Creazione di una sequenza di escape Unicode non corretta. Le sequenze di escape Unicode iniziano con \u, seguito da quattro cifre esadecimali (non sono più presenti e non meno). Cifre esadecimali Unicode possono contenere solo i numeri 0-9, lettere maiuscole A-F e le lettere minuscole-f. L'esempio seguente illustra una sequenza di escape Unicode corretta.  
+È stata creata una sequenza di escape Unicode non corretta. Le sequenze di escape Unicode iniziano con \u, seguita da quattro cifre esadecimali (non più e non meno). Cifre esadecimali Unicode possono contenere solo i numeri da 0 a 9, le lettere maiuscole lettere A-F e lettere minuscole lettere a-f. L'esempio seguente illustra una sequenza di escape Unicode in formato corretto.  
   
 ```JavaScript  
 z = "\u1A5F";  
@@ -36,10 +36,10 @@ z = "\u1A5F";
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Verificare che le cifre esadecimali Unicode iniziano con \u, contiene solo i numeri 0-9, lettere maiuscole A-F, lettere minuscole lettere a-f; e vengono raggruppati in quattro cifre.  
+-   Verificare che le cifre esadecimali Unicode iniziano con \u, contiene solo i numeri 0-9, le lettere maiuscole lettere A-F, lettere minuscole lettere a-f; e vengono raggruppati in quattro cifre.  
   
     > [!NOTE]
-    >  Se si desidera utilizzare il testo letterale \u in una stringa, quindi utilizzare due barre rovesciate - (\\\u)-uno per la prima barra rovesciata di escape.  
+    >  Se si desidera utilizzare \u il testo letterale in una stringa, quindi utilizzare due barre rovesciate - (\\\u)-uno per la prima barra rovesciata di escape.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Tipi di dati](../../javascript/data-types-javascript.md)

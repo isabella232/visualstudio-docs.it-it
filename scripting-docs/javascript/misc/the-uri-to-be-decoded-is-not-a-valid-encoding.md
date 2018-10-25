@@ -1,5 +1,5 @@
 ---
-title: L'URI da decodificare è non una codifica valida | Documenti Microsoft
+title: L'URI da decodificare non è un valido codifica | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,22 +21,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841819"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>La codifica usata per l'URI da decodificare non è valida
-Si è tentato di decodificare un formato non corretto URI (Uniform Resource Identifier). Gli URI hanno una sintassi speciale. la maggior parte dei caratteri non alfanumerici devono essere codificati prima di poter essere usati in un URI. È possibile utilizzare il `encodeURI` e `encodeURIComponent` metodi per creare un URI da una normale [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] stringa.  
+Si è provato a decodificare un formato non corretto URI (Uniform Resource Identifier). Gli URI hanno una sintassi speciale. la maggior parte dei caratteri non alfanumerici devono essere codificati prima di poter essere utilizzate in un URI. È possibile usare la `encodeURI` e `encodeURIComponent` metodi per creare un URI da un normale [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] stringa.  
   
- Un URI completo è costituito da una sequenza di componenti e separatori. Il formato generale è:  
+ Un URI completo è costituito da una sequenza di componenti e i separatori. Il formato generale è:  
   
 ```JavaScript  
 <Scheme>:<first>/<second>;<third>?<fourth>  
 ```  
   
- I nomi delle parentesi angolari rappresentano i componenti e il ":", "/", ";" e "?" sono caratteri riservati utilizzati come separatori.  
+ I nomi delle parentesi acute rappresentano i componenti e il ":", "/", ";" e "?" sono caratteri riservati utilizzati come separatori.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   

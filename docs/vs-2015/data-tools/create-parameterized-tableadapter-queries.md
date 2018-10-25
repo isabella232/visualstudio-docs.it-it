@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823502"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Creare query TableAdapter con parametri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,41 +65,41 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
   
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Per aggiungere una query a un form associato a dati esistente  
   
-1.  Aprire il modulo in **Progettazione Windows Form**.  
+1. Aprire il modulo in **Progettazione Windows Form**.  
   
-2.  Nel **dati** dal menu**Aggiungi Query**oppure**Smart tag dati**.  
+2. Nel **dati** dal menu**Aggiungi Query**oppure**Smart tag dati**.  
   
-    > [!NOTE]
-    >  Se **Aggiungi Query** non è disponibile nel **dati** menu, selezionare un controllo nel form che consente di visualizzare i dati di origine si desidera aggiungere la parametrizzazione. Ad esempio, se nel form i dati sono visualizzati in un controllo <xref:System.Windows.Forms.DataGridView>, selezionarlo. Se i dati del form sono visualizzati in controlli singoli, selezionare qualsiasi controllo associato a dati.  
+   > [!NOTE]
+   >  Se **Aggiungi Query** non è disponibile nel **dati** menu, selezionare un controllo nel form che consente di visualizzare i dati di origine si desidera aggiungere la parametrizzazione. Ad esempio, se nel form i dati sono visualizzati in un controllo <xref:System.Windows.Forms.DataGridView>, selezionarlo. Se i dati del form sono visualizzati in controlli singoli, selezionare qualsiasi controllo associato a dati.  
   
-3.  Nel **tabella di origine dati selezionare** area, selezionare il tablethat che si desidera aggiungere la parametrizzazione per.  
+3. Nel **tabella di origine dati selezionare** area, selezionare il tablethat che si desidera aggiungere la parametrizzazione per.  
   
-4.  Digitare un nome nella **nuovo nome query** casella se si sta creando una nuova query.  
+4. Digitare un nome nella **nuovo nome query** casella se si sta creando una nuova query.  
   
-     oppure  
+    oppure  
   
-     Selezionare una query nella **nome query esistente** casella.  
+    Selezionare una query nella **nome query esistente** casella.  
   
-5.  Nel **testo della Query** , digitare una query che accetta parametri.  
+5. Nel **testo della Query** , digitare una query che accetta parametri.  
   
-6.  Selezionare**OK**.  
+6. Selezionare**OK**.  
   
-     Un controllo per il parametro di input e un **Load** pulsante vengono aggiunti al form in un <xref:System.Windows.Forms.ToolStrip> controllo.  
+    Un controllo per il parametro di input e un **Load** pulsante vengono aggiunti al form in un <xref:System.Windows.Forms.ToolStrip> controllo.  
   
- TableAdapter parametri possono essere assegnati i valori null quando si desidera eseguire una query per i record privi di valori corrente. Ad esempio, si consideri la query seguente con un `ShippedDate` parametro nel relativo `WHERE` clausola:  
+   TableAdapter parametri possono essere assegnati i valori null quando si desidera eseguire una query per i record privi di valori corrente. Ad esempio, si consideri la query seguente con un `ShippedDate` parametro nel relativo `WHERE` clausola:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+   `SELECT CustomerID, OrderDate, ShippedDate`  
   
- `FROM Orders`  
+   `FROM Orders`  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+   `WHERE (ShippedDate = @ShippedDate) OR`  
   
- `(ShippedDate IS NULL)`  
+   `(ShippedDate IS NULL)`  
   
- Se si trattasse di una query su un oggetto TableAdapter, è possibile eseguire una query per tutti gli ordini che non siano stati spediti con il codice seguente:  
+   Se si trattasse di una query su un oggetto TableAdapter, è possibile eseguire una query per tutti gli ordini che non siano stati spediti con il codice seguente:  
   
- [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
- [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
+   [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>Per abilitare una query di accettare i valori null  
   

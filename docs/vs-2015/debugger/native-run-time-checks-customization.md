@@ -31,31 +31,31 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 396778e87732d73462a7ecc2a420ea22a00936b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856601"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalizzazione dei controlli runtime nativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando esegue la compilazione con **/RTC** (controlli di run-time) oppure usare il `runtime_checks` pragma, la libreria di runtime C fornisce controlli runtime nativi. In alcuni casi può essere necessario personalizzare il controllo runtime:  
   
--   Per indirizzare i messaggi del controllo runtime a un file o una destinazione diversa da quella predefinita.  
+- Per indirizzare i messaggi del controllo runtime a un file o una destinazione diversa da quella predefinita.  
   
--   Per specificare una destinazione di output dei messaggi del controllo runtime in un debugger di altri produttori.  
+- Per specificare una destinazione di output dei messaggi del controllo runtime in un debugger di altri produttori.  
   
--   Per segnalare i messaggi del controllo runtime provenienti da un programma compilato con una versione di rilascio della libreria di runtime del linguaggio C. Nelle versioni di rilascio della libreria per segnalare gli errori di runtime non viene utilizzato `_CrtDbgReportW` Viene invece visualizzata un' **Assert** finestra di dialogo per ogni errore di run-time.  
+- Per segnalare i messaggi del controllo runtime provenienti da un programma compilato con una versione di rilascio della libreria di runtime del linguaggio C. Nelle versioni di rilascio della libreria per segnalare gli errori di runtime non viene utilizzato `_CrtDbgReportW` Viene invece visualizzata un' **Assert** finestra di dialogo per ogni errore di run-time.  
   
- Per personalizzare il controllo degli errori di runtime, è possibile utilizzare uno degli accorgimenti seguenti:  
+  Per personalizzare il controllo degli errori di runtime, è possibile utilizzare uno degli accorgimenti seguenti:  
   
--   Scrivere una funzione per la segnalazione degli errori di runtime. Per altre informazioni, vedere [procedura: scrivere una funzione di segnalazione errori di Run-Time](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Scrivere una funzione per la segnalazione degli errori di runtime. Per altre informazioni, vedere [procedura: scrivere una funzione di segnalazione errori di Run-Time](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
--   Personalizzare la destinazione dei messaggi di errore.  
+- Personalizzare la destinazione dei messaggi di errore.  
   
--   Eseguire una query per ottenere informazioni sugli errori rilevati dai controlli runtime.  
+- Eseguire una query per ottenere informazioni sugli errori rilevati dai controlli runtime.  
   
 ## <a name="customize-the-error-message-destination"></a>Personalizzare la destinazione dei messaggi di errore  
  Se si utilizza `_CrtDbgReportW` per la segnalazione degli errori, è possibile utilizzare `_CrtSetReportMode` per specificare la destinazione dei messaggi di errore.  

@@ -1,5 +1,5 @@
 ---
-title: PDB_TYPE | Documenti Microsoft
+title: PDB_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc610963fa1ca82fec30e04abb90583db48bdf55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83d891de330b66841b1ad48a7fc4593b1144e9e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888125"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
-Questa struttura consente di specificare informazioni su un tipo di campo eseguita da un simbolo PDB.  
+Questa struttura consente di specificare informazioni su un tipo di campo impiegato da un simbolo PDB.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,7 +45,7 @@ public struct PDB_TYPE {
   
 #### <a name="parameters"></a>Parametri  
  ulAppDomainID  
- ID dell'applicazione da cui proviene il simbolo. Questo viene utilizzato per identificare in modo univoco un'istanza dell'applicazione.  
+ ID dell'applicazione da cui proviene il simbolo. Ciò consente di identificare in modo univoco un'istanza dell'applicazione.  
   
  guidModule  
  Il GUID del modulo che contiene questo campo.  
@@ -54,7 +54,7 @@ public struct PDB_TYPE {
  L'ID del simbolo che corrisponde a questo campo.  
   
 ## <a name="remarks"></a>Note  
- Questa struttura viene visualizzato come parte dell'unione nel [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struttura quando il `dwKind` campo il `TYPE_INFO` struttura è impostata su `TYPE_KIND_PDB` (compreso il [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumerazione).  
+ Questa struttura viene visualizzato come parte dell'unione nel [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struttura quando il `dwKind` campo il `TYPE_INFO` struttura è impostata su `TYPE_KIND_PDB` (un valore compreso il [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumerazione).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  

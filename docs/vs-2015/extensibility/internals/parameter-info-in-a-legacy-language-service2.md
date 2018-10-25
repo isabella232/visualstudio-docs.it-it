@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887566"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sui parametri in un servizio di linguaggio Legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>La descrizione comando informazioni sul parametro di supporto nel Parser  
  Il <xref:Microsoft.VisualStudio.Package.Source> classe fa alcune supposizioni sul contenuto del <xref:Microsoft.VisualStudio.Package.AuthoringScope> e <xref:Microsoft.VisualStudio.Package.AuthoringSink> classi se la descrizione comando informazioni sul parametro viene visualizzata e aggiornata.  
   
--   Il parser ha <xref:Microsoft.VisualStudio.Package.ParseReason> quando viene digitato il carattere iniziale dell'elenco parametri.  
+- Il parser ha <xref:Microsoft.VisualStudio.Package.ParseReason> quando viene digitato il carattere iniziale dell'elenco parametri.  
   
--   Il percorso specificato <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto viene immediatamente dopo che l'elenco dei parametri start carattere. Il parser deve raccogliere le firme di tutte le dichiarazioni di metodo disponibile all'indirizzo che posizionare e archiviano in un elenco nella versione del <xref:Microsoft.VisualStudio.Package.AuthoringScope> oggetto. Questo elenco include il nome del metodo, tipo metodo (o tipo restituito) e un elenco di possibili parametri. Questo elenco viene cercato in un secondo momento per la firma del metodo o firme da visualizzare nella descrizione comando informazioni sul parametro.  
+- Il percorso specificato <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto viene immediatamente dopo che l'elenco dei parametri start carattere. Il parser deve raccogliere le firme di tutte le dichiarazioni di metodo disponibile all'indirizzo che posizionare e archiviano in un elenco nella versione del <xref:Microsoft.VisualStudio.Package.AuthoringScope> oggetto. Questo elenco include il nome del metodo, tipo metodo (o tipo restituito) e un elenco di possibili parametri. Questo elenco viene cercato in un secondo momento per la firma del metodo o firme da visualizzare nella descrizione comando informazioni sul parametro.  
   
- La riga specificata da deve quindi analizzato dal parser di <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto per raccogliere il nome del metodo l'immissione e la distanza lungo l'utente è nella digitazione di parametri. Questa operazione viene eseguita passando il nome del metodo dal <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> metodo sul <xref:Microsoft.VisualStudio.Package.AuthoringSink> e quindi chiamando il <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> metodo quando l'elenco dei parametri start carattere viene analizzato, la chiamata il <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> (metodo) quando l'elenco dei parametri carattere successivo viene analizzato e infine la chiamata di <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> metodo quando viene analizzato il carattere di fine elenco di parametri. I risultati di chiamate di questi metodi vengono usati per il <xref:Microsoft.VisualStudio.Package.Source> classe per aggiornare la descrizione comando informazioni sul parametro in modo appropriato.  
+  La riga specificata da deve quindi analizzato dal parser di <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto per raccogliere il nome del metodo l'immissione e la distanza lungo l'utente è nella digitazione di parametri. Questa operazione viene eseguita passando il nome del metodo dal <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> metodo sul <xref:Microsoft.VisualStudio.Package.AuthoringSink> e quindi chiamando il <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> metodo quando l'elenco dei parametri start carattere viene analizzato, la chiamata il <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> (metodo) quando l'elenco dei parametri carattere successivo viene analizzato e infine la chiamata di <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> metodo quando viene analizzato il carattere di fine elenco di parametri. I risultati di chiamate di questi metodi vengono usati per il <xref:Microsoft.VisualStudio.Package.Source> classe per aggiornare la descrizione comando informazioni sul parametro in modo appropriato.  
   
 ### <a name="example"></a>Esempio  
  Ecco una riga di testo, che l'utente potrebbe immettere. I numeri sotto la linea indicano quale passaggio proviene dal parser in tale posizione nella riga (presupponendo che l'analisi si sposta da sinistra a destra). Il presupposto è che tutto ciò che precede la riga è già stato analizzato delle firme dei metodi, tra cui la firma del metodo "testfunc".  

@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889815"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: non usare algoritmi di crittografia interrotti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233740"
   
  Per gli algoritmi di crittografia:  
   
--   La crittografia<xref:System.Security.Cryptography.DES> contiene una chiave di piccole dimensioni, che può essere colpita da attacchi di forza bruta in meno di un giorno.  
+- La crittografia<xref:System.Security.Cryptography.DES> contiene una chiave di piccole dimensioni, che può essere colpita da attacchi di forza bruta in meno di un giorno.  
   
--   La crittografia<xref:System.Security.Cryptography.RC2> è soggetta ad attacchi alle chiavi correlate, in cui l'autore dell'attacco trova le relazioni matematiche tra tutti i valori di chiave.  
+- La crittografia<xref:System.Security.Cryptography.RC2> è soggetta ad attacchi alle chiavi correlate, in cui l'autore dell'attacco trova le relazioni matematiche tra tutti i valori di chiave.  
   
- Questa regola viene attivata quando trova nel codice sorgente una delle funzioni di crittografia indicate sopra e genera un avviso all'utente.  
+  Questa regola viene attivata quando trova nel codice sorgente una delle funzioni di crittografia indicate sopra e genera un avviso all'utente.  
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Usare opzioni di crittografia più avanzate:  

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46be8e9ad7a4a437f1009eb30407428f31b425b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867702"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C++)
 È possibile usare Modifica e continuazione nei progetti Visual C++. Visualizzare [modifiche di codice supportato (C++)](../debugger/supported-code-changes-cpp.md) per informazioni sulle limitazioni di modifica e continuazione.
@@ -41,17 +41,17 @@ Per altre informazioni sui miglioramenti apportati a Visual Studio 2015 Update 3
 > [!IMPORTANT]
 > Per altre informazioni sulla compatibilità tra funzionalità e le impostazioni di compilazione necessari, vedere [C++ Modifica e continuazione in Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
   
-1.  Se trovano in una sessione di debug, arrestare il debug (**MAIUSC+F5**).
+1. Se trovano in una sessione di debug, arrestare il debug (**MAIUSC+F5**).
 
 2. Scegliere **Opzioni** dal menu **Strumenti**.
   
-3.  Nel **le opzioni** finestra di dialogo **Debug > Generale**.
+3. Nel **le opzioni** finestra di dialogo **Debug > Generale**.
 
-4.  Per abilitare, selezionare **Abilita modifica e continuazione**. Per disabilitare, deselezionare la casella di controllo.
+4. Per abilitare, selezionare **Abilita modifica e continuazione**. Per disabilitare, deselezionare la casella di controllo.
   
-5.  Nel gruppo **Modifica e continuazione** selezionare o deselezionare la casella di controllo **Abilita Modifica e continuazione nativo** .  
+5. Nel gruppo **Modifica e continuazione** selezionare o deselezionare la casella di controllo **Abilita Modifica e continuazione nativo** .  
   
- La modifica di questa impostazione influisce su tutti i progetti attivi. Non è necessario ricompilare l'applicazione dopo la modifica di questa impostazione. Se si compila l'applicazione dalla riga di comando o da un makefile, ma si esegue il debug nell'ambiente di Visual Studio, è possibile comunque utilizzare Modifica e continuazione se si impostano i **/ZI** opzione.  
+   La modifica di questa impostazione influisce su tutti i progetti attivi. Non è necessario ricompilare l'applicazione dopo la modifica di questa impostazione. Se si compila l'applicazione dalla riga di comando o da un makefile, ma si esegue il debug nell'ambiente di Visual Studio, è possibile comunque utilizzare Modifica e continuazione se si impostano i **/ZI** opzione.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Come applicare modifiche al codice in modo esplicito  
  In Visual C++, Modifica e continuazione consente di applicare modifiche al codice in due modi: in modo implicito, quando si sceglie un comando di esecuzione, o in modo esplicito, quando si usa il comando **Applica modifiche del codice** .  
@@ -65,16 +65,16 @@ Per altre informazioni sui miglioramenti apportati a Visual Studio 2015 Update 3
   
  Per interrompere l'applicazione delle modifiche al codice:  
   
--   Nel menu **Debug** scegliere **Interrompi applicazione modifiche del codice**.  
+- Nel menu **Debug** scegliere **Interrompi applicazione modifiche del codice**.  
   
- Questa voce di menu viene visualizzata solo durante l'applicazione delle modifiche al codice.  
+  Questa voce di menu viene visualizzata solo durante l'applicazione delle modifiche al codice.  
   
- Se si sceglie questa opzione, non verrà completata nessuna delle modifiche del codice.  
+  Se si sceglie questa opzione, non verrà completata nessuna delle modifiche del codice.  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Come reimpostare il punto di esecuzione  
  Alcune modifiche al codice applicate in modalità Modifica e continuazione possono causare uno spostamento automatico del punto di esecuzione in una nuova posizione. Nonostante il punto di esecuzione venga collocato nel modo più accurato possibile, in alcuni casi il risultato potrebbe non essere corretto.  
   
- In Visual C++ la modifica del punto di esecuzione viene segnalata tramite una finestra di dialogo. Si consiglia di verificare che la posizione sia corretta prima di continuare con il debug. In caso negativo, usare il comando **Imposta istruzione successiva** . Per altre informazioni, vedere [impostare l'istruzione successiva da eseguire](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+ In Visual C++ la modifica del punto di esecuzione viene segnalata tramite una finestra di dialogo. Si consiglia di verificare che la posizione sia corretta prima di continuare con il debug. In caso negativo, usare il comando **Imposta istruzione successiva** . Per altre informazioni, vedere [Impostare l'istruzione successiva da eseguire](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
 ##  <a name="BKMK_How_to_work_with_stale_code"></a> Come usare il codice non aggiornato  
  In alcuni casi la funzionalità Modifica e continuazione non consente di applicare immediatamente modifiche all'eseguibile, ma può apportare automaticamente tali modifiche in un secondo momento se si continua il debug. Ciò si verifica quando si modifica una funzione che chiama la funzione corrente o si aggiungono più di 64 byte di nuove variabili ad una funzione presente nello stack di chiamate.  

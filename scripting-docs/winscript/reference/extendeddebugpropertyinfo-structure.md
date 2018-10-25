@@ -1,5 +1,5 @@
 ---
-title: Struttura ExtendedDebugPropertyInfo | Documenti Microsoft
+title: Struttura ExtendedDebugPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee06b0ace93f068e0530a3aa62b8c28d11069f44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62b9f3b5877f7919a57e9747355276e438240796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888905"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>Struttura ExtendedDebugPropertyInfo
 Estende il `DebugPropertyInfo` struttura con membri aggiuntivi per caratterizzare la proprietà estesa.  
@@ -49,16 +49,16 @@ typedef struct ExtendedDebugPropertyInfo{
   
 ## <a name="members"></a>Membri  
  `dwValidFields`  
- Un tipo di dati enumerati utilizzato per specificare quali campi vengono inizializzati.  
+ Tipo di dati enumerato consente di specificare quali campi vengono inizializzati.  
   
  `bstrName`  
  Il nome della proprietà all'interno di un contesto.  
   
  `bstrType`  
- Il tipo della proprietà come stringa formattata.  
+ Il tipo di proprietà come stringa formattata.  
   
  `bstrValue`  
- Il valore della proprietà come una stringa formattata.  
+ Il valore della proprietà come stringa formattata.  
   
  `bstrFullName`  
  Nome completo della proprietà.  
@@ -67,22 +67,22 @@ typedef struct ExtendedDebugPropertyInfo{
  Enumerazione che specifica i flag per gli attributi della proprietà di debug.  
   
  `pDebugProp`  
- `IDebugProperty`oggetto corrispondente a tale `ExtendedDebugPropertyInfo`.  
+ `IDebugProperty` oggetto che corrisponde a questo `ExtendedDebugPropertyInfo`.  
   
  `nDISPID`  
- Id dispatch.  
+ L'id di invio.  
   
  `nType`  
  Il tipo della proprietà estesa.  
   
  `varValue`  
- Il valore della proprietà estesa può essere inclusa in VARIANT.  
+ Il valore della proprietà estesa se può essere adattato nella variante.  
   
  `plbValue`  
- I byte di dati effettivi del valore della proprietà.  
+ Byte di dati effettivo del valore della proprietà.  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty`oggetto corrispondente a tale `ExtendedDebugPropertyInfo`.  
+ `IDebugExtendedProperty` oggetto che corrisponde a questo `ExtendedDebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Struttura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   

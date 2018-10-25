@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824185"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Procedura dettagliata: Visualizzazione rapide
 Informazioni rapide è una funzionalità di IntelliSense che consente di visualizzare le firme dei metodi e le descrizioni quando l'utente sposta il puntatore sul nome di un metodo. È possibile implementare funzionalità basata sul linguaggio, ad esempio informazioni rapide che definisce gli identificatori per il quale si desidera fornire descrizioni Informazionibase, e quindi creando una descrizione comando in cui visualizzare il contenuto. È possibile definire QuickInfo nel contesto di un servizio di linguaggio, è possibile definire il tipo di contenuto e l'estensione di nome file e visualizzare le informazioni rapide per solo tale tipo o è possibile visualizzare informazioni rapide per un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata illustra come visualizzare informazioni rapide per il tipo di contenuto "text".  
   
  Nell'esempio di informazioni rapide in questa procedura dettagliata vengono visualizzate le descrizioni comandi quando si sposta il puntatore del mouse su un nome di metodo. Questa progettazione è necessario implementare queste quattro interfacce:  
   
--   interfaccia di origine  
+- interfaccia di origine  
   
--   interfaccia del provider di origine  
+- interfaccia del provider di origine  
   
--   interfaccia del controller  
+- interfaccia del controller  
   
--   interfaccia del provider controller  
+- interfaccia del provider controller  
   
- I provider di origine e il controller vengono parti componente Managed Extensibility Framework (MEF) e sono responsabili per l'esportazione le classi di origine e il controller e l'importazione dei servizi e Broker, ad esempio il <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, che consente di creare il testo della descrizione comando buffer e il <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, che attiva la sessione di informazioni rapide.  
+  I provider di origine e il controller vengono parti componente Managed Extensibility Framework (MEF) e sono responsabili per l'esportazione le classi di origine e il controller e l'importazione dei servizi e Broker, ad esempio il <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, che consente di creare il testo della descrizione comando buffer e il <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, che attiva la sessione di informazioni rapide.  
   
- In questo esempio, l'origine di informazioni rapide Usa un elenco hardcoded di nomi di metodi e le descrizioni, ma in implementazioni complete, il servizio di linguaggio e la documentazione del linguaggio sono responsabili per fornire tale contenuto.  
+  In questo esempio, l'origine di informazioni rapide Usa un elenco hardcoded di nomi di metodi e le descrizioni, ma in implementazioni complete, il servizio di linguaggio e la documentazione del linguaggio sono responsabili per fornire tale contenuto.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non è necessario installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -44,7 +44,7 @@ Informazioni rapide è una funzionalità di IntelliSense che consente di visuali
   
 ### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Denominare la soluzione `QuickInfoTest`.  
+1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `QuickInfoTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -55,7 +55,7 @@ Informazioni rapide è una funzionalità di IntelliSense che consente di visuali
   
 #### <a name="to-implement-the-quickinfo-source"></a>Per implementare l'origine di informazioni rapide  
   
-1.  Aggiungere un file di classe e denominarla `TestQuickInfoSource`.  
+1.  Aggiungere un file di classe e assegnargli il nome `TestQuickInfoSource`.  
   
 2.  Aggiungere un riferimento a *Microsoft.VisualStudio.Language.IntelliSense*.  
   
@@ -154,7 +154,7 @@ Informazioni rapide è una funzionalità di IntelliSense che consente di visuali
      [!code-vb[VSSDKQuickInfoTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)]
      [!code-csharp[VSSDKQuickInfoTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]  
   
-2.  Importazione di <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> come proprietà.  
+2.  Importare <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> come proprietà.  
   
      [!code-vb[VSSDKQuickInfoTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)]
      [!code-csharp[VSSDKQuickInfoTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]  

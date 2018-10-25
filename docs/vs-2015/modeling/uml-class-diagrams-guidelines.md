@@ -20,12 +20,12 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cba454162cb9116dc1d2946a5c136b377354d7d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852180"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagrammi classi UML: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,17 +122,17 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
  ![Una classe, un'enumerazione e un'interfaccia](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
   
--   Uso **classi** (1) per rappresentare i tipi di dati o un oggetto per la maggior parte degli scopi.  
+- Uso **classi** (1) per rappresentare i tipi di dati o un oggetto per la maggior parte degli scopi.  
   
--   Uso **interfacce** (2) in un contesto in cui è necessario distinguere tra interfacce pure e classi concrete contenenti implementazioni interne. Questa differenza è utile quando lo scopo del diagramma è descrivere un'implementazione del software. È meno utile quando si modellano dati passivi o qualora si definiscano concetti usati per descrivere i requisiti utente.  
+- Uso **interfacce** (2) in un contesto in cui è necessario distinguere tra interfacce pure e classi concrete contenenti implementazioni interne. Questa differenza è utile quando lo scopo del diagramma è descrivere un'implementazione del software. È meno utile quando si modellano dati passivi o qualora si definiscano concetti usati per descrivere i requisiti utente.  
   
--   Usa un' **enumerazione** (3) per rappresentare un tipo che ha un numero limitato di valori letterali, ad esempio `Stop` e `Go`.  
+- Usa un' **enumerazione** (3) per rappresentare un tipo che ha un numero limitato di valori letterali, ad esempio `Stop` e `Go`.  
   
-    -   Aggiungere i valori letterali all'enumerazione. Assegnare a ognuno un nome distinto.  
+  -   Aggiungere i valori letterali all'enumerazione. Assegnare a ognuno un nome distinto.  
   
-    -   Se si vuole, è anche possibile fornire un valore numerico per ogni valore letterale. Aprire il menu di scelta rapida per il valore letterale nell'enumerazione, scegliere **delle proprietà**e quindi digitare un numero nel **valore** campo il **proprietà** finestra.  
+  -   Se si vuole, è anche possibile fornire un valore numerico per ogni valore letterale. Aprire il menu di scelta rapida per il valore letterale nell'enumerazione, scegliere **delle proprietà**e quindi digitare un numero nel **valore** campo il **proprietà** finestra.  
   
- Assegnare a ogni tipo un nome univoco.  
+  Assegnare a ogni tipo un nome univoco.  
   
 ### <a name="getting-types-from-other-diagrams"></a>Recupero dei tipi da altri diagrammi  
  È possibile visualizzare i tipi di un altro diagramma nel diagramma classi UML.  
@@ -166,7 +166,7 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
  Per visualizzare le relative proprietà, aprire il menu di scelta rapida per l'attributo o operazione e quindi scegliere **proprietà**. Le proprietà vengono visualizzate nel **proprietà** finestra.  
   
- Per visualizzare le proprietà dei parametri dell'operazione, scegliere **[...]** nella **parametri** proprietà. Verrà visualizzata una nuova finestra di dialogo delle proprietà.  
+ Per visualizzare le proprietà dei parametri dell'operazione, scegliere <strong>[...]</strong> nella **parametri** proprietà. Verrà visualizzata una nuova finestra di dialogo delle proprietà.  
   
  Per informazioni dettagliate su tutte le proprietà da impostare, vedere:  
   
@@ -177,15 +177,15 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
 ### <a name="types-of-attributes-and-operations"></a>Tipi di attributi e di operazioni  
  Ciascuna *tipo* di un attributo o operazione e ogni tipo di parametro, può essere uno dei seguenti:  
   
--   **(nessuno)**  -È possibile lasciare un tipo non specificato nella firma omettendo i due punti precedenti (`:`).  
+- **(nessuno)**  -È possibile lasciare un tipo non specificato nella firma omettendo i due punti precedenti (`:`).  
   
--   Uno dei tipi primitivi standard: **booleana**, **Integer**, **stringa**.  
+- Uno dei tipi primitivi standard: **booleana**, **Integer**, **stringa**.  
   
--   Un tipo definito nel modello.  
+- Un tipo definito nel modello.  
   
--   Un valore con parametri di un tipo di modello, scritto modello\<parametro >. Visualizzare [tipi di modello](#Templates).  
+- Un valore con parametri di un tipo di modello, scritto modello\<parametro >. Visualizzare [tipi di modello](#Templates).  
   
- È anche possibile scrivere il nome di un tipo che non è stato ancora definito nel modello. Il nome verrà elencato sotto **tipi non specificati** in Esplora modelli UML.  
+  È anche possibile scrivere il nome di un tipo che non è stato ancora definito nel modello. Il nome verrà elencato sotto **tipi non specificati** in Esplora modelli UML.  
   
 > [!NOTE]
 >  Se successivamente si definisce una classe o un'interfaccia di quel nome nel modello, gli attributi e le operazioni meno recenti faranno ancora riferimento all'elemento in Tipi non specificati. Se si vuole fare in modo che facciano riferimento alla nuova classe, è necessario visitare ogni attributo o operazione e reimpostare il tipo, selezionando la nuova classe dal menu a discesa.  
@@ -343,15 +343,15 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Alcune proprietà di ogni ruolo sono visibili direttamente nel diagramma. Esse sono:  
   
--   Role name. Viene visualizzato all'estremità appropriata dell'associazione nel diagramma. È possibile impostarlo nel diagramma o nel **proprietà** finestra.  
+- Role name. Viene visualizzato all'estremità appropriata dell'associazione nel diagramma. È possibile impostarlo nel diagramma o nel **proprietà** finestra.  
   
--   **Molteplicità**, che per impostazione predefinita **1**. Viene anche visualizzato nel diagramma accanto all'estremità appropriata dell'associazione.  
+- **Molteplicità**, che per impostazione predefinita **1**. Viene anche visualizzato nel diagramma accanto all'estremità appropriata dell'associazione.  
   
--   **Aggregazione**. Questo valore viene visualizzato come forma di rombo a un'estremità del connettore. È possibile usarlo per indicare che le istanze nel ruolo di aggregazione contengono le istanze dell'altro ruolo.  
+- **Aggregazione**. Questo valore viene visualizzato come forma di rombo a un'estremità del connettore. È possibile usarlo per indicare che le istanze nel ruolo di aggregazione contengono le istanze dell'altro ruolo.  
   
--   **È navigabile**. Se true per un solo ruolo, viene visualizzata una freccia nella direzione esplorabile. È possibile usare questo valore per indicare l'esplorabilità di collegamenti e relazioni del database nel software.  
+- **È navigabile**. Se true per un solo ruolo, viene visualizzata una freccia nella direzione esplorabile. È possibile usare questo valore per indicare l'esplorabilità di collegamenti e relazioni del database nel software.  
   
- Per informazioni dettagliate su queste e altre proprietà, vedere [proprietà delle associazioni nei UML diagrammi classi](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
+  Per informazioni dettagliate su queste e altre proprietà, vedere [proprietà delle associazioni nei UML diagrammi classi](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
   
 ### <a name="navigability"></a>Esplorabilità  
  Quando si disegna un'associazione, viene visualizzata una freccia a un'estremità per indicare che è esplorabile in quella direzione. Ciò risulta utile se il diagramma classi rappresenta classi del software e le associazioni rappresentano puntatori o riferimenti. Quando tuttavia si usa il diagramma classi per rappresentare entità e relazioni o concetti aziendali, è meno importante rappresentare l'esplorabilità. In questo caso, è preferibile disegnare le associazioni senza frecce. È possibile farlo impostando il **Is Navigable** proprietà su entrambe le estremità dell'associazione su True. Per semplificare questa operazione, è possibile scaricare l'esempio di codice [modellazione di domini UML](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4).  
@@ -368,13 +368,13 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 ##  <a name="Inheritance"></a> Ereditarietà  
  Usare la **ereditarietà** lo strumento per creare le relazioni seguenti:  
   
--   Oggetto *generalizzazione* relazione tra un tipo specializzato e un tipo generale  
+- Oggetto *generalizzazione* relazione tra un tipo specializzato e un tipo generale  
   
-     \- oppure -  
+   \- oppure -  
   
--   Oggetto *realizzazione* la relazione tra una classe e un'interfaccia che implementa.  
+- Oggetto *realizzazione* la relazione tra una classe e un'interfaccia che implementa.  
   
- Non è possibile creare cicli nelle relazioni di ereditarietà.  
+  Non è possibile creare cicli nelle relazioni di ereditarietà.  
   
 ### <a name="generalization"></a>Generalizzazione  
  Con Generalizzazione si intende che il tipo specializzato o derivato eredita attributi, operazioni e associazioni del tipo generale o di base.  
@@ -385,17 +385,17 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ##### <a name="to-override-an-operations-definition-in-a-specializing-type"></a>Per eseguire l'override della definizione di un'operazione in un tipo specializzato  
   
-1.  Fare clic sulla relazione generalizzazione.  
+1. Fare clic sulla relazione generalizzazione.  
   
-     La relazione verrà visualizzata evidenziata con un tag azioni accanto.  
+    La relazione verrà visualizzata evidenziata con un tag azioni accanto.  
   
-2.  Fare clic sul tag azioni e quindi fare clic su **Override operazioni**.  
+2. Fare clic sul tag azioni e quindi fare clic su **Override operazioni**.  
   
-     Il **Override operazioni** verrà visualizzata la finestra di dialogo.  
+    Il **Override operazioni** verrà visualizzata la finestra di dialogo.  
   
-3.  Selezionare le operazioni che si desidera visualizzato nel tipo specializzato e quindi fare clic su **OK**.  
+3. Selezionare le operazioni che si desidera visualizzato nel tipo specializzato e quindi fare clic su **OK**.  
   
- Le operazioni selezionate verranno visualizzate nel tipo specializzato.  
+   Le operazioni selezionate verranno visualizzate nel tipo specializzato.  
   
 ### <a name="realization"></a>Realizzazione  
  Con Realizzazione si intende che una classe implementa gli attributi e le operazioni specificati dall'interfaccia. L'interfaccia si trova all'estremità della freccia del connettore.  
@@ -417,23 +417,23 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-create-a-template-type"></a>Per creare un tipo di modello  
   
-1.  Creare una classe o un'interfaccia che diventerà il tipo di modello. Assegnargli un nome, ad esempio `Dictionary`.  
+1. Creare una classe o un'interfaccia che diventerà il tipo di modello. Assegnargli un nome, ad esempio `Dictionary`.  
   
-2.  Aprire il menu di scelta rapida per il nuovo tipo e quindi scegliere **proprietà**.  
+2. Aprire il menu di scelta rapida per il nuovo tipo e quindi scegliere **proprietà**.  
   
-3.  Nel **delle proprietà** finestra, fare clic su **[...]**  nella **i parametri del modello** campo.  
+3. Nel **delle proprietà** finestra, fare clic su **[...]**  nella **i parametri del modello** campo.  
   
-     Il **Editor della raccolta Parameter modello** verrà visualizzata la finestra di dialogo.  
+    Il **Editor della raccolta Parameter modello** verrà visualizzata la finestra di dialogo.  
   
-4.  Scegliere **Aggiungi**.  
+4. Scegliere **Aggiungi**.  
   
-5.  Impostare la proprietà nome sul nome di un parametro del tipo di modello, ad esempio `Key`.  
+5. Impostare la proprietà nome sul nome di un parametro del tipo di modello, ad esempio `Key`.  
   
-6.  Impostare **parametro è di tipo**. Il valore predefinito è **classe**.  
+6. Impostare **parametro è di tipo**. Il valore predefinito è **classe**.  
   
-7.  Se si desidera che il parametro accetti solo classi derivate di una determinata classe di base, impostare **valore vincolato** alla classe di base che si desidera.  
+7. Se si desidera che il parametro accetti solo classi derivate di una determinata classe di base, impostare **valore vincolato** alla classe di base che si desidera.  
   
-8.  Aggiungere tutti i parametri necessari, quindi scegliere **OK**.  
+8. Aggiungere tutti i parametri necessari, quindi scegliere **OK**.  
   
 9. Aggiungere gli attributi e le operazioni al tipo di modello come per le altre classi.  
   
@@ -443,9 +443,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
      È possibile usare un parametro di tipo **Integer** come limite in una molteplicità. È possibile ad esempio usare il parametro numero intero max per definire la molteplicità di un attributo come `[0..max]`.  
   
- Dopo avere creato i tipi di modello, è possibile usarli per definire le associazioni del modello:  
+   Dopo avere creato i tipi di modello, è possibile usarli per definire le associazioni del modello:  
   
- ![Classe associata dal modello di dizionario](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
+   ![Classe associata dal modello di dizionario](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
   
 #### <a name="to-use-a-template-type"></a>Per usare un tipo di modello  
   

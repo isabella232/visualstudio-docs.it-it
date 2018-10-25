@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetCount | Documenti Microsoft
+title: IDebugArrayObject::GetCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81788423523837b6e8b29a8869abca7b393cf37a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edfaf7b9ef655473244bdcd18bf6b2c31b8210d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891401"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 Ottiene il numero di elementi nella matrice.  
@@ -46,10 +46,10 @@ int GetCount(
  [out] Restituisce il conteggio.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo visualizza tutti gli elementi di un oggetto matrice come una matrice unidimensionale, anche se l'oggetto di matrice è multidimensionale. Si consideri ad esempio la matrice `myarray[3][2][6]`, questo metodo restituirà 36 nel `pdwElements` parametro. Utilizzare il [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) metodo per recuperare i singoli elementi uno alla volta.  
+ Questo metodo considera tutti gli elementi di un oggetto matrice come una matrice unidimensionale, anche se l'oggetto di matrice è multidimensionale. Si consideri ad esempio la matrice `myarray[3][2][6]`, questo metodo restituirà 36 nel `pdwElements` parametro. Usare la [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) metodo per recuperare i singoli elementi uno alla volta.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

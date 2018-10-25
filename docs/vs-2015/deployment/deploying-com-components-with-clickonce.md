@@ -24,12 +24,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820291"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Distribuzione di componenti COM con ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,46 +91,46 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>Per creare un'applicazione basata su Windows usando un componente COM  
   
-1.  Utilizza Visual Basic, dal **File** menu, fare clic su **New**, quindi **progetto**.  
+1. Utilizza Visual Basic, dal **File** menu, fare clic su **New**, quindi **progetto**.  
   
-2.  Nel **nuovo progetto** finestra di dialogo, seleziona la **Visual Basic** nodo e selezionare **applicazione Windows**. Nella casella **Nome** digitare `RegFreeComDemo`.  
+2. Nel **nuovo progetto** finestra di dialogo, seleziona la **Visual Basic** nodo e selezionare **applicazione Windows**. Nella casella **Nome** digitare `RegFreeComDemo`.  
   
-3.  Nelle **Esplora soluzioni**, fare clic sui **Mostra tutti i file** pulsante per visualizzare i riferimenti al progetto.  
+3. Nelle **Esplora soluzioni**, fare clic sui **Mostra tutti i file** pulsante per visualizzare i riferimenti al progetto.  
   
-4.  Fare doppio clic il **riferimenti** nodo e selezionare **Aggiungi riferimento** dal menu di scelta rapida.  
+4. Fare doppio clic il **riferimenti** nodo e selezionare **Aggiungi riferimento** dal menu di scelta rapida.  
   
-5.  Nel **Aggiungi riferimento** della finestra di dialogo fare clic sui **Sfoglia** scheda, passare a VB6Hello, quindi selezionarlo.  
+5. Nel **Aggiungi riferimento** della finestra di dialogo fare clic sui **Sfoglia** scheda, passare a VB6Hello, quindi selezionarlo.  
   
-     Oggetto **VB6Hello** riferimento verrà visualizzato nell'elenco dei riferimenti.  
+    Oggetto **VB6Hello** riferimento verrà visualizzato nell'elenco dei riferimenti.  
   
-6.  Scegliere il **casella degli strumenti**, selezionare una **pulsante** controllano e trascinarlo in modo che il **Form1** form.  
+6. Scegliere il **casella degli strumenti**, selezionare una **pulsante** controllano e trascinarlo in modo che il **Form1** form.  
   
-7.  Nel **delle proprietà** impostare nella finestra proprietà del pulsante **testo** proprietà **Hello**.  
+7. Nel **delle proprietà** impostare nella finestra proprietà del pulsante **testo** proprietà **Hello**.  
   
-8.  Fare doppio clic sul pulsante per aggiungere il codice del gestore e nel file di codice, aggiungere il codice in modo che il gestore di è simile alla seguente:  
+8. Fare doppio clic sul pulsante per aggiungere il codice del gestore e nel file di codice, aggiungere il codice in modo che il gestore di è simile alla seguente:  
   
-    ```  
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
-        Dim VbObj As New VB6Hello.Class1  
-        VbObj.SayHello()  
-    End Sub  
-    ```  
+   ```  
+   Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
+       Dim VbObj As New VB6Hello.Class1  
+       VbObj.SayHello()  
+   End Sub  
+   ```  
   
 9. Eseguire l'applicazione. Dal **Debug** menu, fare clic su **Avvia debug**.  
   
- Successivamente è necessario isolare il controllo. Ogni componente COM che usa l'applicazione è rappresentato nel progetto come riferimento COM. Questi riferimenti sono visibili nel **riferimenti** nodo il **Esplora soluzioni** finestra. (Si noti che è possibile aggiungere riferimenti usando direttamente il **Aggiungi riferimento** comando le **progetto** dal menu o indirettamente, trascinare un controllo ActiveX nel form.)  
+   Successivamente è necessario isolare il controllo. Ogni componente COM che usa l'applicazione è rappresentato nel progetto come riferimento COM. Questi riferimenti sono visibili nel **riferimenti** nodo il **Esplora soluzioni** finestra. (Si noti che è possibile aggiungere riferimenti usando direttamente il **Aggiungi riferimento** comando le **progetto** dal menu o indirettamente, trascinare un controllo ActiveX nel form.)  
   
- La procedura seguente illustra come isolare il componente COM e pubblicare l'applicazione aggiornata che contiene il controllo di tipo isolato:  
+   La procedura seguente illustra come isolare il componente COM e pubblicare l'applicazione aggiornata che contiene il controllo di tipo isolato:  
   
 ##### <a name="to-isolate-a-com-component"></a>Per isolare un componente COM  
   
-1.  Nella **Esplora soluzioni**, nella **riferimenti** nodo, seleziona il **VB6Hello** riferimento.  
+1. Nella **Esplora soluzioni**, nella **riferimenti** nodo, seleziona il **VB6Hello** riferimento.  
   
-2.  Nel **proprietà** finestra, modificare il valore della **Isolated** proprietà dal **False** a **True**.  
+2. Nel **proprietà** finestra, modificare il valore della **Isolated** proprietà dal **False** a **True**.  
   
-3.  Dal **compilare** menu, fare clic su **Compila soluzione**.  
+3. Dal **compilare** menu, fare clic su **Compila soluzione**.  
   
- A questo punto, quando si preme F5, l'applicazione funzionerà come previsto, ma ora è in esecuzione in COM senza registrazione. Per dimostrare questo, provare l'annullamento della registrazione del componente VB6Hello e in esecuzione RegFreeComDemo1.exe di fuori di IDE di Visual Studio. Questa volta quando viene scelto il pulsante, continuerà a funzionare. Se si rinomina temporaneamente il manifesto dell'applicazione, anche in questo caso non riuscirà.  
+   A questo punto, quando si preme F5, l'applicazione funzionerà come previsto, ma ora è in esecuzione in COM senza registrazione. Per dimostrare questo, provare l'annullamento della registrazione del componente VB6Hello e in esecuzione RegFreeComDemo1.exe di fuori di IDE di Visual Studio. Questa volta quando viene scelto il pulsante, continuerà a funzionare. Se si rinomina temporaneamente il manifesto dell'applicazione, anche in questo caso non riuscirà.  
   
 > [!NOTE]
 >  È possibile simulare l'assenza di un componente COM annullarne temporaneamente. Aprire un prompt dei comandi, passare alla cartella di sistema digitando `cd /d %windir%\system32`, quindi annullare la registrazione del componente digitando `regsvr32 /u VB6Hello.dll`. È possibile registrarlo nuovamente digitando `regsvr32 VB6Hello.dll`.  
@@ -139,15 +139,15 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>Per pubblicare un aggiornamento dell'applicazione con un componente COM isolato  
   
-1.  Dal **compilare** menu, fare clic su **pubblicare RegFreeComDemo**.  
+1. Dal **compilare** menu, fare clic su **pubblicare RegFreeComDemo**.  
   
-     Verrà visualizzata la Pubblicazione guidata.  
+    Verrà visualizzata la Pubblicazione guidata.  
   
-2.  Nella pubblicazione guidata, specificare un percorso nel disco del computer locale in cui è possibile accedere ed esaminare i file pubblicati.  
+2. Nella pubblicazione guidata, specificare un percorso nel disco del computer locale in cui è possibile accedere ed esaminare i file pubblicati.  
   
-3.  Fare clic su **fine** per pubblicare l'applicazione.  
+3. Fare clic su **fine** per pubblicare l'applicazione.  
   
- Se si esaminano i file pubblicati, si noterà che il file Sysmon. ocx sia incluso. Il controllo è completamente isolata e prevede l'applicazione, vale a dire che, se macchina dell'utente finale ha un'altra applicazione utilizza una versione diversa del controllo, non può interferire con l'applicazione.  
+   Se si esaminano i file pubblicati, si noterà che il file Sysmon. ocx sia incluso. Il controllo è completamente isolata e prevede l'applicazione, vale a dire che, se macchina dell'utente finale ha un'altra applicazione utilizza una versione diversa del controllo, non può interferire con l'applicazione.  
   
 ## <a name="referencing-native-assemblies"></a>Riferimenti ad assembly nativo  
  Visual Studio supporta riferimenti agli assembly C++; o nativo Visual Basic 6.0 tali riferimenti vengono chiamati i riferimenti nativi. È possibile indicare se un riferimento è nativo verificando che relativi **tipo di File** è impostata su **nativo** oppure **ActiveX**.  
@@ -161,23 +161,23 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
  Non tutti i componenti sono un candidato idoneo per COM senza registrazione. Un componente non è un valore appropriato se viene soddisfatta una delle operazioni seguenti:  
   
--   Il componente è un server out-of-process. Server di file EXE non sono supportati; sono supportate solo le DLL.  
+- Il componente è un server out-of-process. Server di file EXE non sono supportati; sono supportate solo le DLL.  
   
--   Il componente fa parte del sistema operativo, o è un componente del sistema, ad esempio XML, Internet Explorer o Microsoft Data Access Components (MDAC). È necessario seguire il criterio di ridistribuzione dell'autore del componente; rivolgersi al fornitore.  
+- Il componente fa parte del sistema operativo, o è un componente del sistema, ad esempio XML, Internet Explorer o Microsoft Data Access Components (MDAC). È necessario seguire il criterio di ridistribuzione dell'autore del componente; rivolgersi al fornitore.  
   
--   Il componente è parte di un'applicazione, ad esempio Microsoft Office. Ad esempio, non tentare di isolare il modello oggetto di Microsoft Excel. Ciò fa parte di Office e può essere utilizzato solo in un computer con il prodotto completo Office installato.  
+- Il componente è parte di un'applicazione, ad esempio Microsoft Office. Ad esempio, non tentare di isolare il modello oggetto di Microsoft Excel. Ciò fa parte di Office e può essere utilizzato solo in un computer con il prodotto completo Office installato.  
   
--   Il componente deve essere utilizzato come un componente aggiuntivo o uno snap-in, ad esempio un componente aggiuntivo di Office o un controllo in un Web browser. Tali componenti richiedono in genere qualche tipo di schema di registrazione definito dall'ambiente di hosting che esula dall'ambito del manifesto.  
+- Il componente deve essere utilizzato come un componente aggiuntivo o uno snap-in, ad esempio un componente aggiuntivo di Office o un controllo in un Web browser. Tali componenti richiedono in genere qualche tipo di schema di registrazione definito dall'ambiente di hosting che esula dall'ambito del manifesto.  
   
--   Il componente gestisce un dispositivo fisico o virtuale per il sistema, ad esempio, un driver di dispositivo per uno spooler di stampa.  
+- Il componente gestisce un dispositivo fisico o virtuale per il sistema, ad esempio, un driver di dispositivo per uno spooler di stampa.  
   
--   Il componente è un accesso ai dati ridistribuibile. Applicazioni di dati richiedono in genere un accesso ai dati ridistribuibili da installare prima che possano eseguire. Non provare a isolare i componenti, ad esempio il controllo dati ADO di Microsoft, Microsoft OLE DB o Microsoft Data Access Components (MDAC). In alternativa, se l'applicazione usa MDAC o SQL Server Express, è necessario impostarli come prerequisiti; visualizzare [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Il componente è un accesso ai dati ridistribuibile. Applicazioni di dati richiedono in genere un accesso ai dati ridistribuibili da installare prima che possano eseguire. Non provare a isolare i componenti, ad esempio il controllo dati ADO di Microsoft, Microsoft OLE DB o Microsoft Data Access Components (MDAC). In alternativa, se l'applicazione usa MDAC o SQL Server Express, è necessario impostarli come prerequisiti; visualizzare [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
- In alcuni casi, potrebbe essere possibile per lo sviluppatore del componente, riprogettare per COM senza registrazione. Se questo non è possibile, è possibile compilare e pubblicare applicazioni che dipendono da essi tramite lo schema di registrazione standard usando il programma di bootstrap. Per altre informazioni, vedere [creazione di pacchetti Bootstrapper](../deployment/creating-bootstrapper-packages.md).  
+  In alcuni casi, potrebbe essere possibile per lo sviluppatore del componente, riprogettare per COM senza registrazione. Se questo non è possibile, è possibile compilare e pubblicare applicazioni che dipendono da essi tramite lo schema di registrazione standard usando il programma di bootstrap. Per altre informazioni, vedere [creazione di pacchetti Bootstrapper](../deployment/creating-bootstrapper-packages.md).  
   
- Un componente COM può essere solo una volta isolato per ogni applicazione. Ad esempio, non puoi isolare stesso componente COM da due diverse **libreria di classi** progetti che fanno parte della stessa applicazione. Questa operazione comporterà un avviso di compilazione e l'applicazione avrà esito negativo caricare in fase di esecuzione. Per evitare questo problema, è consigliabile incapsulare i componenti COM in un'unica libreria di classi.  
+  Un componente COM può essere solo una volta isolato per ogni applicazione. Ad esempio, non puoi isolare stesso componente COM da due diverse **libreria di classi** progetti che fanno parte della stessa applicazione. Questa operazione comporterà un avviso di compilazione e l'applicazione avrà esito negativo caricare in fase di esecuzione. Per evitare questo problema, è consigliabile incapsulare i componenti COM in un'unica libreria di classi.  
   
- Esistono diversi scenari COM è necessario eseguire la registrazione sul computer dello sviluppatore, anche se la distribuzione dell'applicazione non richiede la registrazione. Il `Isolated` proprietà richiede che il componente COM sia registrato nel computer dello sviluppatore per generare automaticamente il manifesto durante la compilazione. Non sono disponibili funzionalità per l'acquisizione di registrazione che richiamano la registrazione automatica durante la compilazione. Inoltre, tutte le classi non esplicitamente definite nella libreria dei tipi non si rifletteranno nel manifesto. Quando si usa un componente COM con un manifesto di pre-esistente, ad esempio un riferimento nativo, il componente non debba essere registrata in fase di sviluppo. Tuttavia, la registrazione è obbligatoria se il componente è un controllo ActiveX e si desidera includerlo nel **casella degli strumenti** e in Progettazione Windows Form.  
+  Esistono diversi scenari COM è necessario eseguire la registrazione sul computer dello sviluppatore, anche se la distribuzione dell'applicazione non richiede la registrazione. Il `Isolated` proprietà richiede che il componente COM sia registrato nel computer dello sviluppatore per generare automaticamente il manifesto durante la compilazione. Non sono disponibili funzionalità per l'acquisizione di registrazione che richiamano la registrazione automatica durante la compilazione. Inoltre, tutte le classi non esplicitamente definite nella libreria dei tipi non si rifletteranno nel manifesto. Quando si usa un componente COM con un manifesto di pre-esistente, ad esempio un riferimento nativo, il componente non debba essere registrata in fase di sviluppo. Tuttavia, la registrazione è obbligatoria se il componente è un controllo ActiveX e si desidera includerlo nel **casella degli strumenti** e in Progettazione Windows Form.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)

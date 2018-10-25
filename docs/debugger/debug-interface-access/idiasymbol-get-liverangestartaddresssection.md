@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartAddressSection | Documenti Microsoft
+title: IDiaSymbol::get_liveRangeStartAddressSection | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e598a6c6414194da487fe90d39a7f7bb2f0e7a7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f41415954439d299c0c69585141ffc678d332dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864244"
 ---
 # <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 Restituisce la parte della sezione dell'indirizzo iniziale dell'intervallo in cui il simbolo locale è valido.  
@@ -43,9 +43,9 @@ HRESULT get_liveRangeStartAddressSection (
 >  Un codice di errore restituito significa che il simbolo non dispone di informazioni di intervallo in tempo reale.  
   
 ## <a name="remarks"></a>Note  
- L'indirizzo formata by the sezione e l'offset è l'inizio dell'intervallo in cui il simbolo è valido.  
+ L'indirizzo costituita dalla sezione e offset è l'inizio dell'intervallo in cui il simbolo è valido.  
   
- Per ottenere la parte relativa all'offset dell'indirizzo, utilizzare [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
+ Per ottenere la parte relativa all'offset dell'indirizzo, usare [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: Dia2.h  

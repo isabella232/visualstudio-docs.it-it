@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824296"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 
@@ -123,7 +123,7 @@ I modelli dispongono di un intervallo di astrazione in relazione al software. I 
 Diversi tipi di diagramma sono utili per descrivere la progettazione a diversi livelli di astrazione. Molti tipi di diagramma sono utili più livelli. Questa tabella mostra come usare ogni tipo di diagramma.
 
 |Livello di progettazione|Tipi di diagramma|
-|------------------|-------------------|
+|-|-|
 |Processo aziendale<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|-I diagrammi classi concettuali descrivono i concetti aziendali usati all'interno del processo di business.|
 |Requisiti utente<br /><br /> La definizione di ciò che gli utenti richiedono al sistema.|-Le regole di business e qualità dei requisiti del servizio possono essere descritti nei documenti separati.|
 |Progettazione ad alto livello<br /><br /> La struttura generale del sistema: i componenti principali e la modalità con cui vengono accoppiati.|-I diagrammi delle dipendenze viene descritto come il sistema viene strutturato in parti interdipendenti. È possibile convalidare il codice programma in base ai diagrammi delle dipendenze per assicurarsi che sia conforme all'architettura.|
@@ -132,7 +132,7 @@ Diversi tipi di diagramma sono utili per descrivere la progettazione a diversi l
 ## <a name="external-resources"></a>Risorse esterne
 
 |**Categoria**|**Collegamenti**|
-|------------------|---------------|
+|-|-|
 |**Video**|![collegamento a video](../data-tools/media/playvideo.gif) [MSDN How Do I video: come creare e utilizzare modelli e diagrammi UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif) [MSDN How Do I Series: strumenti ed estendibilità (Visual Studio 2010 Ultimate) UML](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Forum**|- [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization and Modeling SDK (strumenti DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blog**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|

@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203671"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850425"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le e
   
 #### <a name="to-execute-a-function-at-design-time"></a>Per eseguire una funzione in fase di progettazione  
   
-1.  Copiare il codice seguente in un'applicazione console di [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]:  
+1. Copiare il codice seguente in un'applicazione console di [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]:  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  Scegliere **Finestre** dal menu **Debug** e quindi fare clic su **Controllo immediato**.  
+2. Scegliere **Finestre** dal menu **Debug** e quindi fare clic su **Controllo immediato**.  
   
-3.  Tipo `?MyFunction(2)` nel **immediato** finestra e premere INVIO.  
+3. Tipo `?MyFunction(2)` nel **immediato** finestra e premere INVIO.  
   
-     Il **immediato** finestra eseguirà `MyFunction` e visualizzare `4`.  
+    Il **immediato** finestra eseguirà `MyFunction` e visualizzare `4`.  
   
- Se la funzione o subroutine contiene un punto di interruzione, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interromperà l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per altre informazioni, vedere [Procedura dettagliata: Debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Se la funzione o subroutine contiene un punto di interruzione, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interromperà l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per altre informazioni, vedere [Procedura dettagliata: Debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md).  
   
- Non è possibile usare la valutazione delle espressioni in fase di progettazione nei tipi di progetto che richiedono l'avvio di un ambiente di esecuzione, tra cui progetti [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], progetti Web, progetti Smart Device e progetti SQL.  
+   Non è possibile usare la valutazione delle espressioni in fase di progettazione nei tipi di progetto che richiedono l'avvio di un ambiente di esecuzione, tra cui progetti [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], progetti Web, progetti Smart Device e progetti SQL.  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Valutazione delle espressioni in fase di progettazione nelle soluzioni multiprogetto  
  Per determinare il contesto per la valutazione delle espressioni in fase di progettazione, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fa riferimento al progetto selezionato in Esplora soluzioni. Se in Esplora soluzioni non è selezionato alcun progetto, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tenta di valutare la funzione in base al progetto di avvio. Se la funzione non può essere valutata nel contesto corrente, si riceverà un messaggio di errore. Se si sta tentando di valutare una funzione in un progetto che non è il progetto di avvio per la soluzione e viene visualizzato un errore, provare a selezionare il progetto in Esplora soluzioni e tentare nuovamente la valutazione.  

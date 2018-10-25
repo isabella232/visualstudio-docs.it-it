@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cb7c842d6fdcc024b4146981ece251fb5189652
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2956d5f5ce4cf8f210466f7b7006a158eee6ce43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885057"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>Raccolta di dati di concorrenza di thread e processi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,22 +31,22 @@ Il metodo di profilatura della concorrenza degli strumenti di profilatura di [!I
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- È possibile specificare il metodo di profilatura della concorrenza tramite una delle procedure seguenti:  
+  È possibile specificare il metodo di profilatura della concorrenza tramite una delle procedure seguenti:  
   
--   Nella prima pagina della procedura guidata di profilatura fare clic su **Concorrenza**.  
+- Nella prima pagina della procedura guidata di profilatura fare clic su **Concorrenza**.  
   
--   Nella pagina **Generale** della finestra di dialogo delle proprietà per la sessione di prestazioni fare clic su **Concorrenza**.  
+- Nella pagina **Generale** della finestra di dialogo delle proprietà per la sessione di prestazioni fare clic su **Concorrenza**.  
   
--   Nell'elenco **Metodo** della barra degli strumenti di **Esplora prestazioni** fare clic su **Concorrenza**.  
+- Nell'elenco **Metodo** della barra degli strumenti di **Esplora prestazioni** fare clic su **Concorrenza**.  
   
 ## <a name="common-tasks"></a>Attività comuni  
  È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:  
   
--   In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.  
+- In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.  
   
- Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_ della **sessione di prestazioni** quando si esegue la profilatura con il metodo di concorrenza.  
+  Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_ della **sessione di prestazioni** quando si esegue la profilatura con il metodo di concorrenza.  
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  

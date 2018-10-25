@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb12deec8bba5ac7974b0aa730726f309f1c9c46
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bd37c78567ea11d53899bcbaefb2e3809a00057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826011"
 ---
 # <a name="pick-activity-designer"></a>ActivityDesigner Pick
 
@@ -38,7 +38,7 @@ Esistono due modi per aggiungere <xref:System.Activities.Statements.PickBranch> 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Pick> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Pick> nell'intestazione. Il valore predefinito è Pick. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 
 ## <a name="see-also"></a>Vedere anche

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7901c0acaf9500673b9b6cfc551ed3151e1b3c5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888411"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Esporre le proprietà nella finestra proprietà
 Questa procedura dettagliata espone le proprietà pubbliche di un oggetto per il **proprietà** finestra. Le modifiche apportate a queste proprietà vengono riflesse nel **proprietà** finestra.  
@@ -33,72 +33,72 @@ Questa procedura dettagliata espone le proprietà pubbliche di un oggetto per il
   
 ### <a name="to-expose-properties-to-the-properties-window"></a>Per esporre le proprietà nella finestra proprietà  
   
-1.  Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che contiene gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyObjectPropertiesExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c#** > **estendibilità**.  
+1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che contiene gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyObjectPropertiesExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c#** > **estendibilità**.  
   
-2.  Aggiungere una finestra degli strumenti tramite l'aggiunta di un modello di elemento di finestra degli strumenti personalizzata denominato `MyToolWindow`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **finestra di dialogo Aggiungi nuovo elemento**, passare a **elementi di Visual c#** > **Extensibility** e selezionare **finestra degli strumenti personalizzata**. Nel **Name** campo nella parte inferiore della finestra di dialogo, modificare il nome file da *MyToolWindow.cs*. Per altre informazioni su come creare una finestra degli strumenti personalizzata, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Aggiungere una finestra degli strumenti tramite l'aggiunta di un modello di elemento di finestra degli strumenti personalizzata denominato `MyToolWindow`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **finestra di dialogo Aggiungi nuovo elemento**, passare a **elementi di Visual c#** > **Extensibility** e selezionare **finestra degli strumenti personalizzata**. Nel **Name** campo nella parte inferiore della finestra di dialogo, modificare il nome file da *MyToolWindow.cs*. Per altre informazioni su come creare una finestra degli strumenti personalizzata, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Aprire *MyToolWindow.cs* e aggiungere la seguente istruzione using:  
+3. Aprire *MyToolWindow.cs* e aggiungere la seguente istruzione using:  
   
-    ```csharp  
-    using System.Collections;  
-    using System.ComponentModel;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    ```  
+   ```csharp  
+   using System.Collections;  
+   using System.ComponentModel;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   ```  
   
-4.  A questo punto aggiungere i campi seguenti al `MyToolWindow` classe.  
+4. A questo punto aggiungere i campi seguenti al `MyToolWindow` classe.  
   
-    ```csharp  
-    private ITrackSelection trackSel;  
-    private SelectionContainer selContainer;  
+   ```csharp  
+   private ITrackSelection trackSel;  
+   private SelectionContainer selContainer;  
   
-    ```  
+   ```  
   
-5.  Aggiungere il codice seguente alla classe `MyToolWindow`.  
+5. Aggiungere il codice seguente alla classe `MyToolWindow` .  
   
-    ```csharp  
-    private ITrackSelection TrackSelection  
-    {  
-        get  
-        {  
-            if (trackSel == null)  
-                trackSel =  
-                   GetService(typeof(STrackSelection)) as ITrackSelection;  
-            return trackSel;  
-        }  
-    }  
+   ```csharp  
+   private ITrackSelection TrackSelection  
+   {  
+       get  
+       {  
+           if (trackSel == null)  
+               trackSel =  
+                  GetService(typeof(STrackSelection)) as ITrackSelection;  
+           return trackSel;  
+       }  
+   }  
   
-    public void UpdateSelection()  
-    {  
-        ITrackSelection track = TrackSelection;  
-        if (track != null)  
-            track.OnSelectChange((ISelectionContainer)selContainer);  
-    }  
+   public void UpdateSelection()  
+   {  
+       ITrackSelection track = TrackSelection;  
+       if (track != null)  
+           track.OnSelectChange((ISelectionContainer)selContainer);  
+   }  
   
-    public void SelectList(ArrayList list)  
-    {  
-        selContainer = new SelectionContainer(true, false);  
-        selContainer.SelectableObjects = list;  
-        selContainer.SelectedObjects = list;  
-        UpdateSelection();  
-    }  
+   public void SelectList(ArrayList list)  
+   {  
+       selContainer = new SelectionContainer(true, false);  
+       selContainer.SelectableObjects = list;  
+       selContainer.SelectedObjects = list;  
+       UpdateSelection();  
+   }  
   
-    public override void OnToolWindowCreated()  
-    {  
-        ArrayList listObjects = new ArrayList();  
-        listObjects.Add(this);  
-        SelectList(listObjects);  
-    }  
-    ```  
+   public override void OnToolWindowCreated()  
+   {  
+       ArrayList listObjects = new ArrayList();  
+       listObjects.Add(this);  
+       SelectList(listObjects);  
+   }  
+   ```  
   
-     Il `TrackSelection` utilizzata dalla proprietà `GetService` per ottenere un `STrackSelection` servizio, che offre un <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfaccia. Il `OnToolWindowCreated` gestore dell'evento e `SelectList` metodo creare contemporaneamente un elenco degli oggetti selezionati che contiene solo l'oggetto finestra degli strumenti riquadro stesso. Il `UpdateSelection` metodo indica il **proprietà** finestra per visualizzare le proprietà pubbliche del riquadro della finestra degli strumenti.  
+    Il `TrackSelection` utilizzata dalla proprietà `GetService` per ottenere un `STrackSelection` servizio, che offre un <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfaccia. Il `OnToolWindowCreated` gestore dell'evento e `SelectList` metodo creare contemporaneamente un elenco degli oggetti selezionati che contiene solo l'oggetto finestra degli strumenti riquadro stesso. Il `UpdateSelection` metodo indica il **proprietà** finestra per visualizzare le proprietà pubbliche del riquadro della finestra degli strumenti.  
   
-6.  Compilare il progetto e avviare il debug. L'istanza sperimentale di Visual Studio dovrebbe essere visualizzato.  
+6. Compilare il progetto e avviare il debug. L'istanza sperimentale di Visual Studio dovrebbe essere visualizzato.  
   
-7.  Se il **delle proprietà** finestra non è visibile, aprirlo premendo **F4**.  
+7. Se il **delle proprietà** finestra non è visibile, aprirlo premendo **F4**.  
   
-8.  Aprire il **MyToolWindow** finestra. È possibile trovarlo nel **View** > **Other Windows**.  
+8. Aprire il **MyToolWindow** finestra. È possibile trovarlo nel **View** > **Other Windows**.  
   
-     Viene visualizzata la finestra e le proprietà pubbliche del riquadro della finestra vengono visualizzati nei **proprietà** finestra.  
+    Viene visualizzata la finestra e le proprietà pubbliche del riquadro della finestra vengono visualizzati nei **proprietà** finestra.  
   
 9. Modifica il **didascalia** proprietà nel **proprietà** finestra **My le proprietà dell'oggetto**.  
   

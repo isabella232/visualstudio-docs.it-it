@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4564772fd118e3928f6e8a091c1066e2e8e92534
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 20dbc5223ddb053355fa5e8076ae66badee688a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883074"
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 Modelli di testo in Visual Studio forniscono un modo utile per la generazione di testo di qualsiasi tipo. È possibile usare i modelli di testo per generare testo in fase di esecuzione come parte dell'applicazione e in fase di progettazione per generare alcuni di codice del progetto. Questo argomento vengono riepilogati più di frequente frequenti "Ricerca per categorie...?" domande.
@@ -49,21 +49,21 @@ Modelli di testo in Visual Studio forniscono un modo utile per la generazione di
 ### <a name="invoke-methods-from-a-template"></a>Richiamare i metodi da un modello
  Se i metodi già esistono, ad esempio, nello standard [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classi:
 
--   Usare la \<&@assembly& > direttiva per caricare l'assembly e usare \<&@import& > per impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [direttiva Import T4](../modeling/t4-import-directive.md).
+- Usare la \<&@assembly& > direttiva per caricare l'assembly e usare \<&@import& > per impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [direttiva Import T4](../modeling/t4-import-directive.md).
 
-     Se spesso utilizzano lo stesso set di assembly e direttive import, prendere in considerazione la scrittura di un processore di direttiva. In ogni modello, è possibile richiamare il processore di direttiva, che è possibile caricare gli assembly e i file di modello e impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [creazione di processori direttiva di modelli di Custom T4 testo](../modeling/creating-custom-t4-text-template-directive-processors.md).
+   Se spesso utilizzano lo stesso set di assembly e direttive import, prendere in considerazione la scrittura di un processore di direttiva. In ogni modello, è possibile richiamare il processore di direttiva, che è possibile caricare gli assembly e i file di modello e impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [creazione di processori direttiva di modelli di Custom T4 testo](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
- Se si siano scrivendo i metodi familiarità:
+  Se si siano scrivendo i metodi familiarità:
 
--   Se si scrive un modello di testo di runtime, scrivere una definizione di classe parziale con lo stesso nome di modello di testo della fase di esecuzione. Aggiungere i metodi aggiuntivi in questa classe.
+- Se si scrive un modello di testo di runtime, scrivere una definizione di classe parziale con lo stesso nome di modello di testo della fase di esecuzione. Aggiungere i metodi aggiuntivi in questa classe.
 
--   Scrivere un blocco di controllo di funzionalità di classe `<#+ ... #>` in cui è possibile dichiarare i metodi, proprietà e classi private. Quando viene compilato il modello di testo, viene trasformato in una classe. I blocchi di controllo standard `<#...#>` e testo vengono trasformati in un singolo metodo, e blocchi della funzionalità di classe vengono inseriti come membri separati. Per altre informazioni, vedere [blocchi di controllo del modello di testo](../modeling/text-template-control-blocks.md).
+- Scrivere un blocco di controllo di funzionalità di classe `<#+ ... #>` in cui è possibile dichiarare i metodi, proprietà e classi private. Quando viene compilato il modello di testo, viene trasformato in una classe. I blocchi di controllo standard `<#...#>` e testo vengono trasformati in un singolo metodo, e blocchi della funzionalità di classe vengono inseriti come membri separati. Per altre informazioni, vedere [blocchi di controllo del modello di testo](../modeling/text-template-control-blocks.md).
 
-     Metodi definiti come funzionalità di livello può includere anche i blocchi di testo incorporato.
+   Metodi definiti come funzionalità di livello può includere anche i blocchi di testo incorporato.
 
-     È consigliabile inserire le funzionalità di classe in un file separato che è possibile `<#@include#>` in uno o più file di modello.
+   È consigliabile inserire le funzionalità di classe in un file separato che è possibile `<#@include#>` in uno o più file di modello.
 
--   Scrivere i metodi in un assembly separato (libreria di classi) e chiamarli in base al modello. Usare la `<#@assembly#>` direttiva per caricare l'assembly e `<#@import#>` per impostare il contesto dello spazio dei nomi. Si noti che per ricompilare l'assembly anche se ne esegue il debug, potrebbe essere necessario arrestare e riavviare Visual Studio. Per altre informazioni, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
+- Scrivere i metodi in un assembly separato (libreria di classi) e chiamarli in base al modello. Usare la `<#@assembly#>` direttiva per caricare l'assembly e `<#@import#>` per impostare il contesto dello spazio dei nomi. Si noti che per ricompilare l'assembly anche se ne esegue il debug, potrebbe essere necessario arrestare e riavviare Visual Studio. Per altre informazioni, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Generare molti file da un unico modello schema
  Se spesso possibile generare file da modelli aventi lo stesso schema di database o XML:
@@ -91,7 +91,6 @@ Modelli di testo in Visual Studio forniscono un modo utile per la generazione di
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 ### <a name="execute-text-templates-in-the-build-process"></a>Eseguire i modelli di testo nel processo di compilazione

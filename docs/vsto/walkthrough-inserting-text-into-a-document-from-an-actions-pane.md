@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671974"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862190"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procedura dettagliata: Inserire testo in un documento da un riquadro azioni
   Questa procedura dettagliata illustra come creare un riquadro azioni in un documento di Microsoft Office Word. Nel riquadro azioni contiene due controlli per la raccolta di input e quindi inviano il testo al documento.  
@@ -60,17 +60,17 @@ ms.locfileid: "35671974"
   
 ### <a name="to-add-text-to-your-document"></a>Per aggiungere testo al documento  
   
-1.  Digitare il testo seguente nel documento di Word:  
+1. Digitare il testo seguente nel documento di Word:  
   
-     **21 marzo 2008**  
+    **21 marzo 2008**  
   
-     **Name**  
+    **Name**  
   
-     **Indirizzo**  
+    **Indirizzo**  
   
-     **Questo è un esempio di un riquadro azioni di base in Word.**  
+    **Questo è un esempio di un riquadro azioni di base in Word.**  
   
- È possibile aggiungere un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo al documento trascinandolo dal **della casella degli strumenti** in Visual Studio o utilizzando la **segnalibro** finestra di dialogo di Word.  
+   È possibile aggiungere un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo al documento trascinandolo dal **della casella degli strumenti** in Visual Studio o utilizzando la **segnalibro** finestra di dialogo di Word.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Per aggiungere un controllo Bookmark a un documento  
   

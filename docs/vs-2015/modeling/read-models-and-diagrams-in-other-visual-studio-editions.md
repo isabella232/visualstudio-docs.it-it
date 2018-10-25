@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e38514b2c65fb5db557d49b1ae2a7daf0b932dd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c80404320f399139a18d863d71147d33a11ce86d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277862"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885200"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leggere modelli e diagrammi in altre edizioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +52,11 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Modifiche eseguibili in modalità di sola lettura  
  Se si apre un modello e i relativi diagrammi in una versione di Visual Studio che non supporta la creazione di modelli, non sarà possibile modificare il modello. Non è possibile modificare gli elementi e le relazioni visualizzate nei diagrammi o in Esplora modelli. Tuttavia, è possibile apportare alcune modifiche al layout dei diagrammi:  
   
--   Ridisporre le forme e i connettori nel diagramma.  
+- Ridisporre le forme e i connettori nel diagramma.  
   
--   Espandere e comprimere le forme.  
+- Espandere e comprimere le forme.  
   
- Queste modifiche possono essere salvate. Se si desidera rendere visibili ad altri utenti le modifiche, è necessario inviare almeno aggiornato **layout** file.  
+  Queste modifiche possono essere salvate. Se si desidera rendere visibili ad altri utenti le modifiche, è necessario inviare almeno aggiornato **layout** file.  
   
 ##  <a name="RelatedTopics"></a> Argomenti correlati  
   

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815039"
 ---
 # <a name="creating-your-own-start-page"></a>Creazione di una pagina iniziale personalizzata
 È possibile creare una pagina iniziale personalizzata usando il modello di progetto di pagina iniziale o creando una pagina iniziale vuota.  
@@ -57,52 +57,52 @@ ms.locfileid: "49232076"
   
 #### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>Per creare una pagina iniziale vuota con il modello di progetto di pagina iniziale  
   
-1.  Creare un progetto di pagina iniziale usando il modello di progetto di pagina iniziale, come descritto nella routine precedente.  
+1. Creare un progetto di pagina iniziale usando il modello di progetto di pagina iniziale, come descritto nella routine precedente.  
   
-2.  Aprire il file StartPage.xaml.  
+2. Aprire il file StartPage.xaml.  
   
-3.  Rimuovere tutto il contenuto della pagina, lasciando solo gli elementi XML esterni e l'elemento griglia <xref:System.Windows.Controls.Grid> contenitore, in modo che il file XAML assomigli a quello nell'esempio seguente.  
+3. Rimuovere tutto il contenuto della pagina, lasciando solo gli elementi XML esterni e l'elemento griglia <xref:System.Windows.Controls.Grid> contenitore, in modo che il file XAML assomigli a quello nell'esempio seguente.  
   
-    ```xaml
-       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-                 xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
-                 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
-                 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
-             mc:Ignorable="d" 
-                 d:DesignHeight="600" d:DesignWidth="800">
-        <Grid>
-            <!--Add content here.-->
-        </Grid>
-    </Grid>
-    ```
+   ```xaml
+      <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
+                xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
+                xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
+            mc:Ignorable="d" 
+                d:DesignHeight="600" d:DesignWidth="800">
+       <Grid>
+           <!--Add content here.-->
+       </Grid>
+   </Grid>
+   ```
       
-4.  Rimuovere tutti i file di supporto che non si intende usare.  
+4. Rimuovere tutti i file di supporto che non si intende usare.  
   
-     Mantenere i file VSIX e PKGDEF per scopi di distribuzione.  
+    Mantenere i file VSIX e PKGDEF per scopi di distribuzione.  
   
- In alternativa, è possibile creare una pagina iniziale vuota creando un file XAML con la struttura di tag corretta perché venga riconosciuta da Visual Studio. È quindi possibile aggiungere il markup e il code-behind per ottenere la funzionalità e l'aspetto desiderati. Per altre informazioni, vedere [creazione di una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).  
+   In alternativa, è possibile creare una pagina iniziale vuota creando un file XAML con la struttura di tag corretta perché venga riconosciuta da Visual Studio. È quindi possibile aggiungere il markup e il code-behind per ottenere la funzionalità e l'aspetto desiderati. Per altre informazioni, vedere [creazione di una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Testing e applicazione della pagina iniziale personalizzata  
  Non impostare l'istanza primaria per l'esecuzione della pagina iniziale personalizzata fino a quando non si verifica che questa non si arresta in modo anomalo. Una volta testata la pagina iniziale personalizzata, è possibile applicarla nel sistema ripetendo gli ultimi tre passaggi di questa routine nell'istanza primaria di Visual Studio.  
   
 #### <a name="to-test-a-custom-start-page"></a>Per testare una pagina iniziale personalizzata  
   
-1.  Premere F5.  
+1. Premere F5.  
   
-     L'istanza sperimentale di Visual Studio viene aperta con la nuova pagina iniziale installata, ma non selezionata.  
+    L'istanza sperimentale di Visual Studio viene aperta con la nuova pagina iniziale installata, ma non selezionata.  
   
-2.  Nell'istanza sperimentale di Visual Studio scegliere **Opzioni** dal menu **Strumenti**.  
+2. Nell'istanza sperimentale di Visual Studio scegliere **Opzioni** dal menu **Strumenti**.  
   
-3.  Nella finestra di dialogo **Opzioni** selezionare **Avvio**in **Ambiente**. Nell'elenco **Personalizza pagina iniziale** selezionare quindi il file XAML e fare clic su **OK**.  
+3. Nella finestra di dialogo **Opzioni** selezionare **Avvio**in **Ambiente**. Nell'elenco **Personalizza pagina iniziale** selezionare quindi il file XAML e fare clic su **OK**.  
   
-4.  Scegliere **Pagina iniziale** dal menu **Visualizza**.  
+4. Scegliere **Pagina iniziale** dal menu **Visualizza**.  
   
-     Verrà visualizzata la pagina iniziale funzionante. È necessario chiudere l'istanza sperimentale, copiare di nuovo tutti i file modificati e quindi riaprire l'istanza sperimentale per visualizzare le nuove modifiche.  
+    Verrà visualizzata la pagina iniziale funzionante. È necessario chiudere l'istanza sperimentale, copiare di nuovo tutti i file modificati e quindi riaprire l'istanza sperimentale per visualizzare le nuove modifiche.  
   
- È possibile condividere la pagina iniziale personalizzata caricando il file VSIX dalla directory bin\debug nel sito Web [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) o in un altro sito Web o una condivisione Intranet. Per altre informazioni, vedere [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   È possibile condividere la pagina iniziale personalizzata caricando il file VSIX dalla directory bin\debug nel sito Web [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) o in un altro sito Web o una condivisione Intranet. Per altre informazioni, vedere [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzazione della pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md)   

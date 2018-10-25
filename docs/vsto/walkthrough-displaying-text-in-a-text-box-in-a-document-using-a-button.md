@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44cbabd41e40c0e157a75fa260985752e3d5e016
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822561"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procedura dettagliata: Visualizzazione di testo in una casella di testo in un documento tramite un pulsante
   Questa procedura dettagliata illustra come usare i pulsanti e le caselle di testo in una personalizzazione a livello di documento per Microsoft Office Word.  
@@ -29,11 +29,11 @@ ms.locfileid: "35257911"
   
  Questa procedura dettagliata illustra le attività seguenti:  
   
--   Aggiunta di controlli al documento di Word in un progetto a livello di documento in fase di progettazione.  
+- Aggiunta di controlli al documento di Word in un progetto a livello di documento in fase di progettazione.  
   
--   Popolamento di una casella di testo quando si fa clic su un pulsante.  
+- Popolamento di una casella di testo quando si fa clic su un pulsante.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -58,25 +58,25 @@ ms.locfileid: "35257911"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>Per aggiungere un pulsante e una casella di testo  
   
-1.  Verificare che il documento sia aperto nella finestra di progettazione di Visual Studio.  
+1. Verificare che il documento sia aperto nella finestra di progettazione di Visual Studio.  
   
-2.  Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, trascinare un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> controllo al documento.  
+2. Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, trascinare un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> controllo al documento.  
   
-    > [!NOTE]  
-    >  In Word i controlli vengono rilasciati in linea con il testo per impostazione predefinita. È possibile modificare la funzionalità dei controlli e gli oggetti shape vengono inseriti modificando l'impostazione predefinita nel **modifica** scheda della finestra di **opzioni** finestra di dialogo di Word.  
+   > [!NOTE]  
+   >  In Word i controlli vengono rilasciati in linea con il testo per impostazione predefinita. È possibile modificare la funzionalità dei controlli e gli oggetti shape vengono inseriti modificando l'impostazione predefinita nel **modifica** scheda della finestra di **opzioni** finestra di dialogo di Word.  
   
-3.  Scegliere **Finestra Proprietà** dal menu **Visualizza**.  
+3. Scegliere **Finestra Proprietà** dal menu **Visualizza**.  
   
-4.  Trovare **TextBox1** nel **delle proprietà** casella di riepilogo a discesa di finestra e modificare il **nome** proprietà della casella di testo a **displayText**.  
+4. Trovare **TextBox1** nel **delle proprietà** casella di riepilogo a discesa di finestra e modificare il **nome** proprietà della casella di testo a **displayText**.  
   
-5.  Trascinare un **pulsante** al documento e modificare le proprietà seguenti.  
+5. Trascinare un **pulsante** al documento e modificare le proprietà seguenti.  
   
-    |Proprietà|Valore|  
-    |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**per**|**Inserisci testo**|  
+   |Proprietà|Valore|  
+   |--------------|-----------|  
+   |**Name**|**insertText**|  
+   |**per**|**Inserisci testo**|  
   
- È ora possibile scrivere il codice che verrà eseguito quando si fa clic sul pulsante.  
+   È ora possibile scrivere il codice che verrà eseguito quando si fa clic sul pulsante.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Popolare la casella di testo quando si fa clic sul pulsante  
  Ogni volta che l'utente fa clic sul pulsante, **Hello World!** viene aggiunto alla casella di testo.  

@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847578"
 ---
 # <a name="build-office-solutions"></a>Creazione di soluzioni Office
   I processi di compilazione e debug dei progetti di Office sono in genere analoghi agli stessi processi per altri tipi di progetti in Visual Studio, ad esempio per Windows Form. Gli argomenti di questa sezione illustrano le differenze esistenti. Per informazioni generali su come creare applicazioni, vedere [compilazione e creazione in Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -64,23 +64,23 @@ ms.locfileid: "35673247"
 ### <a name="application-level-projects"></a>Progetti a livello di applicazione  
  Quando si compila un progetto di componente aggiuntivo VSTO, nell'output del progetto vengono inclusi gli elementi seguenti:  
   
--   L'assembly del progetto e tutti gli assembly di riferimento la cui proprietà **Copia localmente** è impostata su **true**.  
+- L'assembly del progetto e tutti gli assembly di riferimento la cui proprietà **Copia localmente** è impostata su **true**.  
   
--   Il manifesto dell'applicazione, che ha l'estensione *manifest*. Per altre informazioni, vedere [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
+- Il manifesto dell'applicazione, che ha l'estensione *manifest*. Per altre informazioni, vedere [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
--   Il manifesto di distribuzione, che ha l'estensione *VSTO*. Per altre informazioni, vedere [manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).  
+- Il manifesto di distribuzione, che ha l'estensione *VSTO*. Per altre informazioni, vedere [manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Un database di programma (*PDB*) file per l'assembly del progetto.  
+- Un database di programma (*PDB*) file per l'assembly del progetto.  
   
- Il processo di compilazione per i progetti di componente aggiuntivo VSTO crea inoltre un set di voci del Registro di sistema nel computer di sviluppo, necessario per il caricamento del componente aggiuntivo VSTO. Per altre informazioni, vedere [voci del Registro di sistema per componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+  Il processo di compilazione per i progetti di componente aggiuntivo VSTO crea inoltre un set di voci del Registro di sistema nel computer di sviluppo, necessario per il caricamento del componente aggiuntivo VSTO. Per altre informazioni, vedere [voci del Registro di sistema per componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
- Se si compila un progetto di componente aggiuntivo VSTO per Outlook che contiene aree del modulo, il processo di generazione aggiunge al Registro di sistema le informazioni aggiuntive seguenti:  
+  Se si compila un progetto di componente aggiuntivo VSTO per Outlook che contiene aree del modulo, il processo di generazione aggiunge al Registro di sistema le informazioni aggiuntive seguenti:  
   
--   Una chiave per ogni classe di messaggi associata a una o più aree del modulo.  
+- Una chiave per ogni classe di messaggi associata a una o più aree del modulo.  
   
--   Una voce per ogni area del modulo e un valore associato che rappresenta il nome del componente aggiuntivo VSTO di Outlook.  
+- Una voce per ogni area del modulo e un valore associato che rappresenta il nome del componente aggiuntivo VSTO di Outlook.  
   
- Outlook necessita di queste informazioni per caricare le aree del modulo.  
+  Outlook necessita di queste informazioni per caricare le aree del modulo.  
   
 ## <a name="referenced-assemblies"></a>Assembly a cui viene fatto riferimento  
  È possibile fare riferimento agli assembly (compresi i progetti Libreria di classi) dal progetto Compilazione di soluzioni Office. Ogni assembly di riferimento ha una proprietà chiamata **Copia localmente**. **Copia localmente** indica se l'assembly viene copiato o meno nella directory di output. Per impostazione predefinita, questa proprietà è impostata su **true**. Ogni assembly di riferimento con la proprietà **Copia localmente** impostata su **true** viene copiato nella directory di output.  

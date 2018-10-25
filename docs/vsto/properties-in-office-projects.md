@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b5c5e0719f7b619fa00a3a0f4333ae0080c0715
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9369a42f1f4a8497df42f940bb8bd23453803a26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862151"
 ---
 # <a name="properties-in-office-projects"></a>Proprietà nei progetti di Office
   Per i progetti di Office in Visual Studio, sono disponibili numerose proprietà importanti, alle quali è possibile accedere dalla finestra **Proprietà** .  
@@ -43,11 +43,11 @@ ms.locfileid: "34692772"
   
  Questa proprietà accetta un valore booleano:  
   
--   Selezionare **true** per memorizzare nella cache il set di dati nel documento.  
+- Selezionare **true** per memorizzare nella cache il set di dati nel documento.  
   
--   Selezionare **false** se non si desidera che il set di dati venga memorizzato nella cache del documento.  
+- Selezionare **false** se non si desidera che il set di dati venga memorizzato nella cache del documento.  
   
- Per ulteriori informazioni sulla memorizzazione nella cache dei dati, vedere [memorizzato nella cache i dati nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md).  
+  Per altre informazioni sulla memorizzazione nella cache dei dati, vedere [memorizzato nella cache i dati nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md).  
   
 ## <a name="value2"></a>Value2  
  La proprietà **Value2** è disponibile solo per progetti modello o cartella di lavoro di Excel. Viene visualizzata nel nodo proprietà **Databindings** nella finestra **Proprietà** quando si seleziona un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> nella finestra di progettazione del foglio di lavoro.  
@@ -55,7 +55,7 @@ ms.locfileid: "34692772"
  Usare la proprietà **Value2** nella finestra **Proprietà** per associare la proprietà <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> di <xref:Microsoft.Office.Tools.Excel.NamedRange> a un campo dell'origine dati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
  [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)   
  [Eventi nei progetti di Office](../vsto/events-in-office-projects.md)  
   

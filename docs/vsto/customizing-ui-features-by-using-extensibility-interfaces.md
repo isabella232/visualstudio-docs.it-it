@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873974"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizzare le funzionalità dell'interfaccia utente usando le interfacce di estendibilità
   Gli strumenti di sviluppo di Office in Visual Studio forniscono classi e finestre di progettazione che gestiscono molti dettagli di implementazione quando vengono usate per creare riquadri attività personalizzati, personalizzazioni della barra multifunzione e aree del modulo di Outlook in un componente aggiuntivo VSTO. Tuttavia, se sono necessari requisiti speciali è anche possibile implementare *l'interfaccia di estendibilità* per ogni funzionalità.  
@@ -61,17 +61,17 @@ ms.locfileid: "35672770"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>Esempio di implementazione di un'interfaccia di estendibilità  
  Nell'esempio di codice riportato di seguito viene illustrata l'implementazione dell'interfaccia <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> per creare un riquadro attività personalizzato. Nell'esempio vengono definite due classi:  
   
--   La classe `TaskPaneHelper` implementa <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> per creare e visualizzare un riquadro attività personalizzato.  
+- La classe `TaskPaneHelper` implementa <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> per creare e visualizzare un riquadro attività personalizzato.  
   
--   La classe `TaskPaneUI` fornisce l'interfaccia utente del riquadro attività. Gli attributi della classe `TaskPaneUI` rendono la classe visibile a COM, permettendo alle applicazioni di Microsoft Office di individuare la classe. In questo esempio, <xref:System.Windows.Forms.UserControl>è un'interfaccia utente vuota, ma è possibile aggiungere i controlli modificando il codice.  
+- La classe `TaskPaneUI` fornisce l'interfaccia utente del riquadro attività. Gli attributi della classe `TaskPaneUI` rendono la classe visibile a COM, permettendo alle applicazioni di Microsoft Office di individuare la classe. In questo esempio, <xref:System.Windows.Forms.UserControl>è un'interfaccia utente vuota, ma è possibile aggiungere i controlli modificando il codice.  
   
-    > [!NOTE]  
-    >  Per esporre la classe `TaskPaneUI` a COM è necessario impostare anche la proprietà **Registra per interoperabilità COM** per il progetto.  
+  > [!NOTE]  
+  >  Per esporre la classe `TaskPaneUI` a COM è necessario impostare anche la proprietà **Registra per interoperabilità COM** per il progetto.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Per altre informazioni sull'implementazione <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, vedere [creare riquadri attività personalizzati in Office system 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) nella documentazione di Microsoft Office.  
+  Per altre informazioni sull'implementazione <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, vedere [creare riquadri attività personalizzati in Office system 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) nella documentazione di Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Esempio di override del metodo RequestService  
  L'esempio di codice seguente illustra come eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> per ottenere un'istanza della classe `TaskPaneHelper` dall'esempio di codice precedente. Viene verificato il valore del parametro *serviceGuid* per determinare l'interfaccia necessaria e quindi viene restituito un oggetto che implementa l'interfaccia.  

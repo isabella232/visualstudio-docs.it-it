@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01a85b214c44f3b48a91d82a5abd59bcf4c9ac5c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80a95bdce139ccaf1e18af8dd36aecc63f913c08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846434"
 ---
 # <a name="custom-document-properties-overview"></a>Cenni preliminari sulle proprietà personalizzate dei documenti
 
@@ -51,7 +51,7 @@ Questa proprietà contiene una stringa che fornisce dettagli sul manifesto di di
 
      ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
- Il *SolutionID* è un GUID che il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene utilizzato per identificare la soluzione. Il *SolutionID* viene generato automaticamente quando si compila il progetto. Il **vstolocal** termine indica al [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] che l'assembly deve essere caricato dalla stessa cartella del documento.
+  Il *SolutionID* è un GUID che il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene utilizzato per identificare la soluzione. Il *SolutionID* viene generato automaticamente quando si compila il progetto. Il **vstolocal** termine indica al [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] che l'assembly deve essere caricato dalla stessa cartella del documento.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea56cf7db42d7028856b88fb8572f5a4024fe07
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876750"
 ---
 # <a name="create-an-options-page"></a>Creare una pagina di opzioni
 Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che utilizza una griglia delle proprietà per esaminare e impostare le proprietà.  
@@ -35,9 +35,9 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
   
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>Per creare il progetto VSIX e aggiungere un pacchetto VSPackage  
   
-1.  Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che contiene gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyToolsOptionsExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c#** > **estendibilità**.  
+1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che contiene gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyToolsOptionsExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c#** > **estendibilità**.  
   
-2.  Aggiungere un pacchetto VSPackage mediante l'aggiunta di un modello di elemento di pacchetto di Visual Studio denominato `MyToolsOptionsPackage`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **finestra di dialogo Aggiungi nuovo elemento**, passare a **elementi di Visual c#** > **Extensibility** e selezionare **pacchetto di Visual Studio**. Nel **Name** campo nella parte inferiore della finestra di dialogo, modificare il nome del file per `MyToolsOptionsPackage.cs`. Per altre informazioni su come creare un pacchetto VSPackage, vedere [creare un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2. Aggiungere un pacchetto VSPackage mediante l'aggiunta di un modello di elemento di pacchetto di Visual Studio denominato `MyToolsOptionsPackage`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **finestra di dialogo Aggiungi nuovo elemento**, passare a **elementi di Visual c#** > **Extensibility** e selezionare **pacchetto di Visual Studio**. Nel **Name** campo nella parte inferiore della finestra di dialogo, modificare il nome del file per `MyToolsOptionsPackage.cs`. Per altre informazioni su come creare un pacchetto VSPackage, vedere [creare un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
 ### <a name="to-create-the-tools-options-property-grid"></a>Per creare la griglia delle proprietà di opzioni del menu Strumenti  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887787"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procedura: creare e modificare le configurazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ Per una soluzione è possibile creare diverse configurazioni della build. È pos
   
 #### <a name="to-open-the-configuration-manager-dialog-box"></a>Per aprire la finestra di dialogo Configuration Manager  
   
--   In **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione e quindi scegliere **Configuration Manager**.  
+- In **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione e quindi scegliere **Configuration Manager**.  
   
-    > [!NOTE]
-    >  Se il comando **Configuration Manager** non viene visualizzato nel menu di scelta rapida, cercare il menu **Compilazione** nella barra dei menu. Se neanche questo viene visualizzato, sulla barra dei menu scegliere **Strumenti**, **Opzioni**e quindi nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, **Generale**e nel riquadro di destra selezionare la casella di controllo **Mostra configurazioni della build avanzate**.  
+  > [!NOTE]
+  >  Se il comando **Configuration Manager** non viene visualizzato nel menu di scelta rapida, cercare il menu **Compilazione** nella barra dei menu. Se neanche questo viene visualizzato, sulla barra dei menu scegliere **Strumenti**, **Opzioni**e quindi nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, **Generale**e nel riquadro di destra selezionare la casella di controllo **Mostra configurazioni della build avanzate**.  
   
-     Nella finestra di dialogo **Configuration Manager** è possibile usare l'elenco a discesa **Configurazione soluzione attiva** per selezionare una configurazione della build, modificarne una esistente o crearne una nuova. È possibile usare l'elenco a discesa **Piattaforma soluzione attiva** per selezionare la piattaforma di destinazione della configurazione, modificarne una esistente oppure aggiungerne una nuova. Il riquadro **Contesti progetto** elenca i progetti all'interno della soluzione. Per ogni progetto è possibile selezionare una configurazione e una piattaforma specifiche per il progetto, modificarne alcune esistenti o crearne di nuove. Per ogni progetto è anche disponibile una casella di controllo che è possibile selezionare per includere il progetto quando si usa la configurazione a livello di soluzione per compilare o distribuire la soluzione stessa.  
+   Nella finestra di dialogo **Configuration Manager** è possibile usare l'elenco a discesa **Configurazione soluzione attiva** per selezionare una configurazione della build, modificarne una esistente o crearne una nuova. È possibile usare l'elenco a discesa **Piattaforma soluzione attiva** per selezionare la piattaforma di destinazione della configurazione, modificarne una esistente oppure aggiungerne una nuova. Il riquadro **Contesti progetto** elenca i progetti all'interno della soluzione. Per ogni progetto è possibile selezionare una configurazione e una piattaforma specifiche per il progetto, modificarne alcune esistenti o crearne di nuove. Per ogni progetto è anche disponibile una casella di controllo che è possibile selezionare per includere il progetto quando si usa la configurazione a livello di soluzione per compilare o distribuire la soluzione stessa.  
   
- Dopo avere definito le configurazioni volute, è possibile impostare le proprietà di progetto appropriate per tali configurazioni.  
+  Dopo avere definito le configurazioni volute, è possibile impostare le proprietà di progetto appropriate per tali configurazioni.  
   
 #### <a name="to-set-properties-based-on-configurations"></a>Per impostare le proprietà in base alle configurazioni  
   

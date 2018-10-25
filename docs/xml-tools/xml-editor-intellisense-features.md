@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34476846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886383"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'Editor XML
 
 L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle di altri editor di linguaggio forniti in Visual Studio. Questa sezione illustra come usare IntelliSense con documenti XML Schema Definition Language (XSD) e XSLT.
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense in un documento XSD
- Dopo che uno schema è associato al documento, viene visualizzato un elenco a discesa degli elementi previsti ogni volta che si digita `"<"` oppure fare clic su di **visualizzare l'elenco di membri di un oggetto** pulsante sulla barra degli strumenti dell'editor XML. Per informazioni su come associare gli schemi con i documenti XML, vedere [convalida di documenti XML](../xml-tools/xml-document-validation.md).
+ Dopo uno schema è associato al documento, viene visualizzato un elenco di riepilogo a discesa degli elementi previsti ogni volta che si digita `"<"` oppure fare clic sui **visualizzare un elenco di oggetti membro** pulsante sulla barra degli strumenti editor XML. Per informazioni su come associare gli schemi ai documenti XML, vedere [convalida dei documenti XML](../xml-tools/xml-document-validation.md).
 
  Quando si preme BARRA SPAZIATRICE all'interno di un tag di inizio, viene visualizzato anche un elenco a discesa contenente tutti gli attributi che possono essere aggiunti all'elemento corrente.
 
@@ -45,14 +45,14 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
 
 -   Nomi del parametro per un determinato modello denominato.
 
-Per ulteriori informazioni, vedere [procedura dettagliata: utilizzo di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) argomento.
+Per altre informazioni, vedere [procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) argomento.
 
 ## <a name="auto-completion"></a>Completamento automatico
  L'editor XML, inoltre, semplifica la procedura di modifica del codice XML in quanto la sintassi XML richiesta viene inserita automaticamente. Ad esempio, se si digita il seguente tag di inizio:
 
  `<book>`
 
- L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Ecco un esempio di questo (il "&#124;" note sulla posizione del cursore):
+ L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Di seguito è riportato un esempio (il "&#124;" note sulla posizione del cursore):
 
  `<book>`&#124;`</book>`
 
@@ -74,20 +74,20 @@ Per ulteriori informazioni, vedere [procedura dettagliata: utilizzo di XSLT Inte
 
 -   Termina una dichiarazione DTD: `>`
 
-L'editor XML è inoltre la possibilità di inserire uno spazio dei nomi se si seleziona un elemento completo dello spazio dei nomi o attributi da un elenco di IntelliSense e lo spazio dei nomi per tale elemento o attributo non sono ancora inclusa nell'ambito di dichiarazione.
+L'editor XML è anche la possibilità di inserire uno spazio dei nomi se si seleziona un elemento completo dello spazio dei nomi o attributi da un elenco di IntelliSense e lo spazio dei nomi per tale elemento o attributo non sono ancora nell'ambito di dichiarazione.
 
 Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in cui il prefisso è associato allo spazio dei nomi `http://books` che non è stato dichiarato nel documento, l'editor XML inserirà automaticamente la dichiarazione dello spazio dei nomi richiesta. Di seguito è riportato il testo XML risultante:
 
 `<e:Book xmlns:e="http://books"`
 
 ## <a name="brace-matching"></a>Corrispondenza parentesi graffe
- Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È inoltre possibile utilizzare il tasto di scelta rapida (**Ctrl**+**]**) per passare da una parentesi graffa a parentesi graffa corrispondente.
+ Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È anche possibile usare i tasti di scelta rapida (**Ctrl**+**]**) per passare da una parentesi graffa a parentesi graffa corrispondente.
 
  L'editor XML effettua tale operazione per i seguenti elementi:
 
 -   Tag di inizio e di fine corrispondenti.
 
--   Qualsiasi coppia di "\<" o ">" parentesi acute.
+-   Qualsiasi coppia di "\<" o ">" angolari.
 
 -   Inizio e fine dei commenti.
 
@@ -102,10 +102,10 @@ Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in c
 ## <a name="modify-the-intellisense-options"></a>Modificare le opzioni di IntelliSense
  Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificare questo modificando il **Tools** > **opzioni** impostazioni.
 
- Il **inserimento automatico** sezione la **varie** pagina controlla il comportamento seguente:
+ Il **inserimento automatico** sezione il **varie** pagina controlla il comportamento seguente:
 
 |nome|Descrizione|
-|----------|-----------------|
+|-|-----------------|
 |Tag di fine|Inserisce i tag di chiusura per i nuovi elementi.|
 |Virgolette per attributi|Inserisce i valori di attributo tra virgolette quando si immette un nuovo nome di attributo.|
 |Altro markup|Completa commenti, CDATA, DOCTYPE, istruzioni di elaborazione e altre dichiarazioni dei markup.|
@@ -116,7 +116,7 @@ Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in c
 
 2.  Espandere **Editor di testo**, espandere **XML**e selezionare **varie**.
 
-3.  Apportare le modifiche per il **inserimento automatico** sezione e fare clic su **OK**.
+3.  Apportare modifiche per il **inserimento automatico** della sezione e fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
 

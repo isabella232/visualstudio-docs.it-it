@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843392"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ Aggiornamento gerarchico * si riferisce al processo di salvataggio dei dati aggi
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Per aggiornare il codice in modo da eseguire il commit delle modifiche apportate alle tabelle correlate prima del salvataggio  
   
-1.  Fare doppio clic sui **salvare** pulsante il <xref:System.Windows.Forms.BindingNavigator> per aprire **Form1** nell'Editor del codice.  
+1. Fare doppio clic sui **salvare** pulsante il <xref:System.Windows.Forms.BindingNavigator> per aprire **Form1** nell'Editor del codice.  
   
-2.  Aggiungere una riga di codice per chiamare il metodo `OrdersBindingSource.EndEdit` dopo la riga che chiama il metodo `CustomersBindingSource.EndEdit`. Il codice nel **salvare** click del pulsante eventi dovrebbero essere simile al seguente:  
+2. Aggiungere una riga di codice per chiamare il metodo `OrdersBindingSource.EndEdit` dopo la riga che chiama il metodo `CustomersBindingSource.EndEdit`. Il codice nel **salvare** click del pulsante eventi dovrebbero essere simile al seguente:  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- Oltre a eseguire il commit delle modifiche apportate a una tabella figlio correlata prima di salvare i dati in un database, potrebbe anche essere necessario eseguire il commit dei record padre appena creati prima di aggiungere i nuovi record figlio in un set di dati. In altre parole, potrebbe essere necessario aggiungere il nuovo record padre (Customer) al set di dati affinché i vincoli di chiave esterna consentano l'aggiunta dei nuovi record figli (Orders) al set di dati. A tale scopo, è possibile usare l'evento figlio `BindingSource.AddingNew`.  
+   Oltre a eseguire il commit delle modifiche apportate a una tabella figlio correlata prima di salvare i dati in un database, potrebbe anche essere necessario eseguire il commit dei record padre appena creati prima di aggiungere i nuovi record figlio in un set di dati. In altre parole, potrebbe essere necessario aggiungere il nuovo record padre (Customer) al set di dati affinché i vincoli di chiave esterna consentano l'aggiunta dei nuovi record figli (Orders) al set di dati. A tale scopo, è possibile usare l'evento figlio `BindingSource.AddingNew`.  
   
 > [!NOTE]
 >  Se è necessario eseguire il commit nuovi record padre dipende dal tipo di controllo che consente di eseguire l'associazione all'origine dati. In questa procedura dettagliata, singoli controlli consentono di eseguire l'associazione alla tabella padre. Ciò richiede il codice aggiuntivo per eseguire il commit del nuovo record padre. Se i record padre invece sono stati visualizzati in un controllo con associazione complessa come la <xref:System.Windows.Forms.DataGridView>, questo aggiuntivi <xref:System.Windows.Forms.BindingSource.EndEdit%2A> per i record padre non sarebbe necessario chiamare. perché la funzionalità di data binding sottostante del controllo gestisce l'esecuzione del commit dei nuovi record.  

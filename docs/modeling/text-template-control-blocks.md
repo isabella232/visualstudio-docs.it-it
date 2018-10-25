@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f0fa4a3848fedae642c6471dd001933ca1b7d011
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90668c751005e697c4b78d0f3caf58f8a85db925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812024"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
 I blocchi di controllo consentono di scrivere codice nel modello di testo per variare l'output. Esistono tre tipi di blocchi di controllo, distinguibili dalla parentesi di apertura:
@@ -80,7 +80,6 @@ Some text.
 <#
  }
 #>
-
 ```
 
 ## <a name="expression-control-block"></a>Blocco di controllo dell'espressione
@@ -144,7 +143,7 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Come usare i blocchi di controllo
- Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. (Per ulteriori informazioni su come includere altri modelli di testo con il `include` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).)
+ Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. (Per altre informazioni su come includere altri modelli di testo con il `include` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).)
 
  Quando si usano i blocchi di controllo, è necessario tenere presenti le considerazioni seguenti:
 
