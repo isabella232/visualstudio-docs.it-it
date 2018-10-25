@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878063"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1
   È possibile estendere il sistema di progetto SharePoint in Visual Studio tramite la creazione di tipi di elemento di un progetto. In questa procedura dettagliata, si creerà un elemento del progetto che può essere aggiunti a un progetto di SharePoint per creare un'azione personalizzata in un sito di SharePoint. L'azione personalizzata aggiunge una voce di menu per il **Azioni sito** menu del sito di SharePoint.  
   
  In questa procedura dettagliata vengono descritte le attività seguenti:  
   
--   Creazione di un'estensione di Visual Studio che definisce un nuovo tipo di elemento di progetto SharePoint per un'azione personalizzata. Il nuovo tipo di elemento di progetto implementa diverse funzionalità personalizzate:  
+- Creazione di un'estensione di Visual Studio che definisce un nuovo tipo di elemento di progetto SharePoint per un'azione personalizzata. Il nuovo tipo di elemento di progetto implementa diverse funzionalità personalizzate:  
   
-    -   Menu di scelta rapida che viene usato come punto di partenza per altre attività correlate all'elemento del progetto, ad esempio visualizzando una finestra di progettazione per l'azione personalizzata in Visual Studio.  
+  -   Menu di scelta rapida che viene usato come punto di partenza per altre attività correlate all'elemento del progetto, ad esempio visualizzando una finestra di progettazione per l'azione personalizzata in Visual Studio.  
   
-    -   Codice eseguito quando uno sviluppatore modificato alcune proprietà dell'elemento del progetto e il progetto che lo contiene.  
+  -   Codice eseguito quando uno sviluppatore modificato alcune proprietà dell'elemento del progetto e il progetto che lo contiene.  
   
-    -   Un'icona personalizzata visualizzata accanto all'elemento di progetto in **Esplora soluzioni**.  
+  -   Un'icona personalizzata visualizzata accanto all'elemento di progetto in **Esplora soluzioni**.  
   
--   Creazione di un modello di elemento di Visual Studio per l'elemento del progetto.  
+- Creazione di un modello di elemento di Visual Studio per l'elemento del progetto.  
   
--   Creazione di un pacchetto di Visual Studio Extension (VSIX) per distribuire il modello di elemento di progetto e l'assembly dell'estensione.  
+- Creazione di un pacchetto di Visual Studio Extension (VSIX) per distribuire il modello di elemento di progetto e l'assembly dell'estensione.  
   
--   Il debug e test dell'elemento di progetto.  
+- Il debug e test dell'elemento di progetto.  
   
- Si tratta di una procedura dettagliata autonoma. Dopo aver completato questa procedura dettagliata, è possibile migliorare l'elemento del progetto mediante l'aggiunta di una procedura guidata per il modello di elemento. Per altre informazioni, vedere [procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+  Si tratta di una procedura dettagliata autonoma. Dopo aver completato questa procedura dettagliata, è possibile migliorare l'elemento del progetto mediante l'aggiunta di una procedura guidata per il modello di elemento. Per altre informazioni, vedere [procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
 >  È possibile scaricare un esempio dal [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) che mostra come creare attività personalizzate per un flusso di lavoro.  
@@ -52,26 +52,26 @@ ms.locfileid: "42635330"
 ## <a name="prerequisites"></a>Prerequisiti  
  Sono necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:  
   
--   Le edizioni di Visual Studio, SharePoint e Microsoft Windows.
+- Le edizioni di Visual Studio, SharePoint e Microsoft Windows.
   
--   Oggetto [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'elemento del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Oggetto [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata Usa il **progetto VSIX** modello nel SDK per creare un pacchetto VSIX per distribuire l'elemento del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
+  Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la procedura dettagliata:  
   
--   Azioni personalizzate in SharePoint. Per altre informazioni, vedere [l'azione personalizzata](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Azioni personalizzate in SharePoint. Per altre informazioni, vedere [l'azione personalizzata](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
--   Modelli di elementi in Visual Studio. Per altre informazioni, vedere [Creazione di modelli di progetti e di elementi](/visualstudio/ide/creating-project-and-item-templates).  
+- Modelli di elementi in Visual Studio. Per altre informazioni, vedere [Creazione di modelli di progetti e di elementi](/visualstudio/ide/creating-project-and-item-templates).  
   
 ## <a name="create-the-projects"></a>Creare i progetti
  Per completare questa procedura dettagliata, è necessario creare tre progetti:  
   
--   Un progetto VSIX. Questo progetto consente di creare il pacchetto VSIX per distribuire l'elemento del progetto SharePoint.  
+- Un progetto VSIX. Questo progetto consente di creare il pacchetto VSIX per distribuire l'elemento del progetto SharePoint.  
   
--   Un progetto di modello di elemento. Questo progetto consente di creare un modello di elemento che può essere utilizzato per aggiungere l'elemento del progetto SharePoint a un progetto SharePoint.  
+- Un progetto di modello di elemento. Questo progetto consente di creare un modello di elemento che può essere utilizzato per aggiungere l'elemento del progetto SharePoint a un progetto SharePoint.  
   
--   Un progetto di libreria di classi. Questo progetto implementa un'estensione di Visual Studio che definisce il comportamento dell'elemento del progetto SharePoint.  
+- Un progetto di libreria di classi. Questo progetto implementa un'estensione di Visual Studio che definisce il comportamento dell'elemento del progetto SharePoint.  
   
- Avviare la procedura dettagliata mediante la creazione di progetti.  
+  Avviare la procedura dettagliata mediante la creazione di progetti.  
   
 #### <a name="to-create-the-vsix-project"></a>Per creare il progetto VSIX  
   

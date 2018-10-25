@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2422f7165e3f00e4059bc593c129c7723daed2f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 026745a95f4f2a33d0647ff340eb7b1d3a0a92d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866701"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > ActivityDesigner
 
@@ -38,7 +38,7 @@ Il **ClearCollection\<T >** ActivityDesigner può essere trascinato dal **casell
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.ClearCollection%601> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.ClearCollection%601>. Il valore predefinito è ClearCollection < Int32\>. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
 |<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|Specifica la raccolta di cui cancellare tutti gli elementi. Questa raccolta è di tipo **ICollection\<TypeArgument >.** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
 |*TypeArgument*|True|Specifica il tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, ciò *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore della *TypeArgument* nella casella combinata nella griglia delle proprietà.|

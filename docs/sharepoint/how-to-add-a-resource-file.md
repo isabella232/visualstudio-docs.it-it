@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a2a89a0c838a91559c6066bea341924e5ca627e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0091054c0c0d2cfb7f19f2ca46839cfdcf47832b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861189"
 ---
 # <a name="how-to-add-a-resource-file"></a>Procedura: aggiungere un file di risorse
   I comandi per l'aggiunta di file di risorse è il menu di scelta rapida del nodo della soluzione e i nodi di funzionalità in Esplora soluzioni. Per altre informazioni, vedere [soluzioni SharePoint localizzazione](../sharepoint/localizing-sharepoint-solutions.md).  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Per aggiungere un file di risorse globali per una soluzione di SharePoint  
   
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aprire una soluzione di SharePoint.  
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aprire una soluzione di SharePoint.  
   
-2.  Nelle **Esplora soluzioni**, scegliere un nodo di progetto SharePoint e quindi nella barra dei menu, scegliere **Project** > **Aggiungi nuovo elemento**.  
+2. Nelle **Esplora soluzioni**, scegliere un nodo di progetto SharePoint e quindi nella barra dei menu, scegliere **Project** > **Aggiungi nuovo elemento**.  
   
-3.  Nel **Aggiungi nuovo elemento** finestra di dialogo scegliere la **File di risorse globali** modello e quindi scegliere il **Add** pulsante.  
+3. Nel **Aggiungi nuovo elemento** finestra di dialogo scegliere la **File di risorse globali** modello e quindi scegliere il **Add** pulsante.  
   
-    > [!NOTE]  
-    >  Il modello di elemento di progetto di File di risorse globali viene visualizzata solo quando viene selezionato un elemento di progetto SharePoint.  
+   > [!NOTE]  
+   >  Il modello di elemento di progetto di File di risorse globali viene visualizzata solo quando viene selezionato un elemento di progetto SharePoint.  
   
-4.  Nel **Aggiungi risorsa** finestra di dialogo scegliere delle impostazioni cultura per il file di risorse, ad esempio inglese (Stati Uniti).  
+4. Nel **Aggiungi risorsa** finestra di dialogo scegliere delle impostazioni cultura per il file di risorse, ad esempio inglese (Stati Uniti).  
   
-     Questo passaggio aggiunge un file di risorse globale per la soluzione nel formato, Resource_x_**.** _delle impostazioni cultura_**.** RESX, ad esempio, *Resource1-US. resx*.  
+    Questo passaggio aggiunge un file di risorse globale per la soluzione nel formato, Resource_x_**.** <em>delle impostazioni cultura</em><strong>.</strong> RESX, ad esempio, *Resource1-US. resx*.  
   
-5.  Quando la **Editor di risorse** viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aggiungere risorse al file di risorse.  
+5. Quando la **Editor di risorse** viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aggiungere risorse al file di risorse.  
   
 ### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Per aggiungere un file di risorse di funzionalità a una funzionalità di SharePoint  
   

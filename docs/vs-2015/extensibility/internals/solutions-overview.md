@@ -15,12 +15,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7255ed981bd65e364d1028c365aab66a73a76dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816001"
 ---
 # <a name="solutions-overview"></a>Panoramica delle soluzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme
   
  Quando viene aperta una soluzione, il processo seguente viene eseguita.  
   
-1.  L'ambiente legge la soluzione.  
+1. L'ambiente legge la soluzione.  
   
-2.  Se l'ambiente rileva un `CLSID`, carica il pacchetto VSPackage corrispondente.  
+2. Se l'ambiente rileva un `CLSID`, carica il pacchetto VSPackage corrispondente.  
   
-3.  Se un pacchetto VSPackage viene caricato, l'ambiente chiama `QueryInterface` per <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfaccia, per l'interfaccia che richiede il pacchetto VSPackage.  
+3. Se un pacchetto VSPackage viene caricato, l'ambiente chiama `QueryInterface` per <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfaccia, per l'interfaccia che richiede il pacchetto VSPackage.  
   
-    1.  Durante la lettura da un file con estensione sln, l'ambiente chiama `QueryInterface` per `IVsPersistSolutionProps`.  
+   1.  Durante la lettura da un file con estensione sln, l'ambiente chiama `QueryInterface` per `IVsPersistSolutionProps`.  
   
-    2.  Durante la lettura da un file con estensione suo, l'ambiente chiama `QueryInterface` per `IVsPersistSolutionOpts`.  
+   2.  Durante la lettura da un file con estensione suo, l'ambiente chiama `QueryInterface` per `IVsPersistSolutionOpts`.  
   
- Informazioni specifiche relative all'utilizzo di questi file sono reperibile [soluzione (. File sln)](../../extensibility/internals/solution-dot-sln-file.md) e [opzioni utente della soluzione (. File suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
+   Informazioni specifiche relative all'utilizzo di questi file sono reperibile [soluzione (. File sln)](../../extensibility/internals/solution-dot-sln-file.md) e [opzioni utente della soluzione (. File suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
 >  Se si desidera creare una nuova configurazione soluzione costituito da configurazioni due progetti ed esclusione di un terzo della compilazione, è necessario usare l'interfaccia utente di pagine di proprietà o l'automazione. Non è possibile modificare le configurazioni di gestione di compilazione di soluzioni e le relative proprietà direttamente, ma è possibile modificare il gestore di compilazione della soluzione usando il `SolutionBuild` classe nel modello di automazione DTE. Per altre informazioni sulla configurazione di soluzioni, vedere [configurazione della soluzione](../../extensibility/internals/solution-configuration.md).  

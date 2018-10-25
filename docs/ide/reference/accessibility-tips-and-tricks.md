@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811841"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Suggerimenti sull'accessibilità per Visual Studio
 
@@ -48,7 +48,7 @@ L'editor di Visual Studio comprende molte "aree di controllo" del testo che cons
 Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre degli strumenti. Le combinazioni di tasti di scelta rapida seguenti consentono di accedervi.
 
 |Funzionalità|Descrizione|Combinazione di tasti|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard.|**ALT**, **CTRL** + **TAB**|
 |Barre degli strumenti della finestra degli strumenti|Consentono di spostare lo stato attivo nelle barre degli strumenti in una finestra degli strumenti. <br> <br> **NOTA:** questo procedimento funziona per la maggior parte delle finestre degli strumenti, ma solo quando lo stato attivo è in una finestra degli strumenti. È anche necessario scegliere MAIUSC prima di ALT. In alcune finestre degli strumenti, ad esempio Team Explorer, è necessario tenere premuto MAIUSC per qualche istante prima di scegliere ALT.|**MAIUSC** + **ALT**|
 |Barre degli strumenti|Consente di passare al primo elemento nella barra degli strumenti successiva (quando una barra degli strumenti ha lo stato attivo).|**CTRL** + **TAB**|
@@ -58,7 +58,7 @@ Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre
 Tra le altre combinazioni di tasti utili ricordiamo le seguenti.
 
 |Funzionalità|Descrizione|Combinazione di tasti|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **Nota:** scelta rapida standard di Windows|**ALT di sinistra + MAIUSC di sinistra + STAMP**|
 |Finestra di dialogo|Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo. <br> <br> **Nota:** scelta rapida standard di Windows|**BARRA SPAZIATRICE**|
 |Menu di scelta rapida|Consentono di aprire un menu di scelta rapida (clic con il pulsante destro del mouse). <br> <br> **Nota:** scelta rapida standard di Windows|**MAIUSC** + **F10**|
@@ -83,18 +83,18 @@ Ecco come fare.
 
 1. Nella casella **Ricerca** in un computer con Windows 10, digitare **Cambia segnali acustici emessi dal sistema**.
 
-  ![Casella di ricerca in Windows 10](media/type-here-to-search.png)
+   ![Casella di ricerca in Windows 10](media/type-here-to-search.png)
 
-  (In alternativa, se è abilitato Cortana, pronunciare "Ehi Cortana", quindi pronunciare "Cambia segnali acustici emessi dal sistema".)
+   (In alternativa, se è abilitato Cortana, pronunciare "Ehi Cortana", quindi pronunciare "Cambia segnali acustici emessi dal sistema".)
 
 2. Fare doppio clic su **Cambia segnali acustici emessi dal sistema**.
 
-  ![Risultati della ricerca in Windows 10](media/change-system-sounds.png)
+   ![Risultati della ricerca in Windows 10](media/change-system-sounds.png)
 
 3. Nella finestra di dialogo **Suono**, fare clic sulla scheda **Suoni**. <br><br>
- Quindi, in **Eventi**, scorrere fino a **Microsoft Visual Studio**e selezionare i suoni che si desidera applicare agli eventi scelti.
+   Quindi, in **Eventi**, scorrere fino a **Microsoft Visual Studio**e selezionare i suoni che si desidera applicare agli eventi scelti.
 
-  ![Scheda Suoni dell'applet Audio in Windows 10](media/sound-applet.png)
+   ![Scheda Suoni dell'applet Audio in Windows 10](media/sound-applet.png)
 
 4. Fare clic su **OK**.
 

@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870185"
 ---
 # <a name="command-window"></a>Finestra di comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  In questo esempio  
   
--   `Edit.ReplaceInFiles` è il comando  
+- `Edit.ReplaceInFiles` è il comando  
   
--   `/case`e `/pattern:regex` sono opzioni (precedute dal carattere barra [/])  
+- `/case`e `/pattern:regex` sono opzioni (precedute dal carattere barra [/])  
   
--   `regex` è il valore dell'opzione `/pattern`; all'opzione `/case` non è assegnato alcun valore  
+- `regex` è il valore dell'opzione `/pattern`; all'opzione `/case` non è assegnato alcun valore  
   
--   `var[1-3]+` e `oldpar` sono parametri  
+- `var[1-3]+` e `oldpar` sono parametri  
   
-    > [!NOTE]
-    >  Qualsiasi comando, parametro, opzione o valore contenente spazi deve essere racchiuso tra virgolette doppie.  
+  > [!NOTE]
+  >  Qualsiasi comando, parametro, opzione o valore contenente spazi deve essere racchiuso tra virgolette doppie.  
   
- La posizione di opzioni e parametri nella riga di comando è liberamente intercambiabile, ad eccezione del comando [Shell](../../ide/reference/shell-command.md), nel quale le opzioni e i parametri devono rispettare un ordine specifico.  
+  La posizione di opzioni e parametri nella riga di comando è liberamente intercambiabile, ad eccezione del comando [Shell](../../ide/reference/shell-command.md), nel quale le opzioni e i parametri devono rispettare un ordine specifico.  
   
- Esistono due formati per quasi tutte le opzioni supportate da un comando: un formato breve (un carattere) e un formato esteso. Più opzioni in formato breve possono essere raggruppate. Ad esempio, è possibile esprimere `/p /g /m` anche nel formato `/pgm`.  
+  Esistono due formati per quasi tutte le opzioni supportate da un comando: un formato breve (un carattere) e un formato esteso. Più opzioni in formato breve possono essere raggruppate. Ad esempio, è possibile esprimere `/p /g /m` anche nel formato `/pgm`.  
   
- Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale valore viene applicato a ogni opzione. Ad esempio, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se una delle opzioni del gruppo non accetta un valore, si verifica un errore.  
+  Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale valore viene applicato a ogni opzione. Ad esempio, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se una delle opzioni del gruppo non accetta un valore, si verifica un errore.  
   
 ## <a name="escape-characters"></a>Caratteri di escape  
  Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,  

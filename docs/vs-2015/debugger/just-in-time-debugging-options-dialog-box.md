@@ -29,12 +29,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872928"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>JIT, Debug, Finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ Per l'accesso il **Just-In-Time** page, passare al **strumenti** dal menu **opzi
   
  È possibile abilitare il debug JIT per questi tipi di programma:  
   
--   Gestito  
+- Gestito  
   
--   Nativo  
+- Nativo  
   
--   Script  
+- Script  
   
- Il debug JIT è una tecnica per il debug di un programma avviato al di fuori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È possibile eseguire un programma creato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] al di fuori dell'ambiente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se il debug JIT è abilitato e si verifica un arresto anomalo, viene visualizzata una finestra di dialogo in cui viene chiesto se si desidera eseguire il debug.  
+  Il debug JIT è una tecnica per il debug di un programma avviato al di fuori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È possibile eseguire un programma creato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] al di fuori dell'ambiente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se il debug JIT è abilitato e si verifica un arresto anomalo, viene visualizzata una finestra di dialogo in cui viene chiesto se si desidera eseguire il debug.  
   
 ## <a name="associated-warnings"></a>Avvisi associati  
  Quando si visita questa pagina della finestra di **opzioni** nella finestra di dialogo si potrebbe essere visualizzato un messaggio simile al seguente:  

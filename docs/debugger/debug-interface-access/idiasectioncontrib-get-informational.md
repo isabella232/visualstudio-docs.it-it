@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_informational | Documenti Microsoft
+title: Get_informational | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8d991a5444c719696db62ab6f9c3374015ea7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4e077e0d2ac410601698d50c2c6ee0d8ede5cbe9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875157"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
-Recupera un flag che indica se una sezione con commenti o informazioni simili.  
+Recupera un flag che indica se una sezione contiene informazioni simili o commenti.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT get_informational(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se la sezione contiene commenti o altre informazioni; in caso contrario restituisce `FALSE`.  
+ [out] Restituisce `TRUE` se la sezione contiene i commenti o altre informazioni; in caso contrario restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

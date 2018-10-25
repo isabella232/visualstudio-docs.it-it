@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ede2e84ac644fc8e1438873ea561ef3010f670c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873578"
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ In un modello di testo della fase di progettazione di [!INCLUDE[vsprvs](../inclu
   
  Il nome dell'assembly deve essere uno dei seguenti:  
   
--   Il nome sicuro dell'assembly nella GAC, quale `System.Xml.dll`. È inoltre possibile utilizzare la forma estesa, quale `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Per altre informazioni, vedere <xref:System.Reflection.AssemblyName>.  
+- Il nome sicuro dell'assembly nella GAC, quale `System.Xml.dll`. È inoltre possibile utilizzare la forma estesa, quale `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Per altre informazioni, vedere <xref:System.Reflection.AssemblyName>.  
   
--   Il percorso assoluto dell'assembly  
+- Il percorso assoluto dell'assembly  
   
- È possibile utilizzare anche la sintassi `$(variableName)` per fare riferimento alle variabili [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quali `$(SolutionDir)` e `%VariableName%` per fare riferimento alle variabili di ambiente. Ad esempio:  
+  È possibile utilizzare anche la sintassi `$(variableName)` per fare riferimento alle variabili [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quali `$(SolutionDir)` e `%VariableName%` per fare riferimento alle variabili di ambiente. Ad esempio:  
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -53,21 +53,21 @@ In un modello di testo della fase di progettazione di [!INCLUDE[vsprvs](../inclu
 ## <a name="standard-assemblies"></a>Assembly standard  
  Gli assembly seguenti vengono caricati automaticamente, in modo che non sia necessario scrivere per essi direttive dell'assembly:  
   
--   `Microsoft.VisualStudio.TextTemplating.1*.dll`  
+- `Microsoft.VisualStudio.TextTemplating.1*.dll`  
   
--   `System.dll`  
+- `System.dll`  
   
--   `WindowsBase.dll`  
+- `WindowsBase.dll`  
   
- Se si utilizza una direttiva personalizzata, il processore di direttiva potrebbe caricare assembly aggiuntivi. Ad esempio, se si scrivono modelli per un linguaggio DSL, non è necessario scrivere direttive dell'assembly per gli assembly seguenti:  
+  Se si utilizza una direttiva personalizzata, il processore di direttiva potrebbe caricare assembly aggiuntivi. Ad esempio, se si scrivono modelli per un linguaggio DSL, non è necessario scrivere direttive dell'assembly per gli assembly seguenti:  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
+- `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`  
+- `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`  
   
--   `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`  
+- `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`  
   
--   Assembly contenente il modello DSL.  
+- Assembly contenente il modello DSL.  
   
 ##  <a name="msbuild"></a> Usando le proprietà del progetto in MSBuild e Visual Studio  
  Le macro di Visual Studio, ad esempio $(SolutionDir), non funzionano in MSBuild. Se si desidera trasformare i modelli nel computer di compilazione, è necessario utilizzare le proprietà del progetto.  

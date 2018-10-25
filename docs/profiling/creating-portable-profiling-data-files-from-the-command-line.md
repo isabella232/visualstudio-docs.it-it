@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: be919183f18efc29ea562b0e4cc60c84febe60c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841936"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Creare file dei dati di profilatura portabili dalla riga di comando
 Per semplificare la condivisione dei dati di profilatura, è possibile usare lo strumento da riga di comando [VSPerfReport](../profiling/vsperfreport.md) per incorporare i simboli di un'esecuzione della profilatura nel file con estensione *vsp*.  
@@ -31,16 +31,16 @@ Per semplificare la condivisione dei dati di profilatura, è possibile usare lo 
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Per incorporare i simboli per un'esecuzione della profilatura in un file di dati di profilatura (con estensione *vsp*)  
   
--   In una finestra del prompt dei comandi, digitare il comando seguente:  
+- In una finestra del prompt dei comandi, digitare il comando seguente:  
   
-     \<percorso>**VSPerfReport \<** file VSP> **/PackSymbols**  
+   \<percorso><strong>VSPerfReport \<</strong>file VSP> **/PackSymbols**  
   
-     Per impostazione predefinita, il file con estensione *vsps* è denominato con il nome base del file con estensione *vsp*. È possibile specificare un nome alternativo con l'opzione **Output**.  
+   Per impostazione predefinita, il file con estensione *vsps* è denominato con il nome base del file con estensione *vsp*. È possibile specificare un nome alternativo con l'opzione **Output**.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Per creare un file di riepilogo dati di profilatura  
   
--   In una finestra del prompt dei comandi, digitare il comando seguente:  
+- In una finestra del prompt dei comandi, digitare il comando seguente:  
   
-     \<percorso>**VSPerfReport \<** file VSP> **/SummaryFile** [**/Output:**\<nome file>]  
+   \<percorso><strong>VSPerfReport \<</strong>file VSP> **/SummaryFile** [**/Output:**\<nome file>]  
   
-     Per impostazione predefinita, il file con estensione *vsps* è denominato con il nome base del file con estensione *vsp*. È possibile specificare un nome alternativo con l'opzione **Output**.
+   Per impostazione predefinita, il file con estensione *vsps* è denominato con il nome base del file con estensione *vsp*. È possibile specificare un nome alternativo con l'opzione **Output**.

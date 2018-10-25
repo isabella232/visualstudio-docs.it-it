@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827935"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedura: Specificare i periodi di timeout per controller e agenti di test
 
@@ -29,7 +29,7 @@ Sia il controller di test che l'agente di test dispongono di diverse impostazion
 -   Controller di test: *QTController.exe.config*
 
     |Nome della chiave|Descrizione|Valore|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Numero di secondi di attesa per la richiesta di ping dell'agente prima che la connessione venga considerata persa.|"n" secondi.|
     |AgentSyncTimeoutInSeconds|Quando si avvia l'esecuzione di un test di sincronizzazione, il numero di secondi di attesa per la sincronizzazione di tutti gli agenti prima di interrompere l'esecuzione.|"n" secondi.|
     |AgentInitializeTimeout|Numero di secondi di attesa per l'inizializzazione di tutti gli agenti e dei relativi agenti di raccolta dati all'inizio dell'esecuzione di un test prima di interrompere l'esecuzione. Questo valore deve essere sufficientemente alto in caso di utilizzo di agenti di raccolta dati.|"n" secondi. Predefinito: "120" (due minuti).|
@@ -38,7 +38,7 @@ Sia il controller di test che l'agente di test dispongono di diverse impostazion
 -   Agente di test: *QTAgentService.exe.config*
 
     |Nome della chiave|Descrizione|Valore|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Numero di secondi tra tentativi di connessione al controller.|"n" secondi. Predefinito: "30" (trenta secondi).|
     |RemotingTimeoutSeconds|Tempo massimo che una chiamata remota può durare in secondi.|"n" secondi. Predefinito: "600" (dieci minuti).|
     |StopTestRunCallTimeoutInSeconds|Numero di secondi di attesa che una chiamata interrompa l'esecuzione del test.|"n" secondi. Predefinito: "120" (due minuti).|

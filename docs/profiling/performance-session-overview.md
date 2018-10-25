@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a385b425ee8dead7df0faad302e6cf270b739034
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828533"
 ---
 # <a name="performance-session-overview"></a>Panoramica delle sessioni di prestazioni
 In questa panoramica vengono illustrate le nozioni di base della profilatura. Gli sviluppatori non esperti di prestazioni potranno notare come gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] possano contribuire ad accrescere rapidamente la produttività e a migliorare le prestazioni del codice. Gli sviluppatori con esperienza nella profilatura possono trovare informazioni su specifici processi e funzionalità degli strumenti di profilatura.  
@@ -27,28 +27,28 @@ In questa panoramica vengono illustrate le nozioni di base della profilatura. Gl
   
  I passaggi seguenti costituiscono il processo di base per l'uso degli strumenti di profilatura:  
   
-1.  Configurare la sessione di prestazioni specificando il metodo di raccolta e i dati da raccogliere.  
+1. Configurare la sessione di prestazioni specificando il metodo di raccolta e i dati da raccogliere.  
   
-2.  Raccogliere i dati di profilatura eseguendo l'applicazione nella sessione di prestazioni.  
+2. Raccogliere i dati di profilatura eseguendo l'applicazione nella sessione di prestazioni.  
   
-3.  Analizzare i dati per identificare il problema di prestazioni.  
+3. Analizzare i dati per identificare il problema di prestazioni.  
   
-4.  Modificare il codice nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per migliorare le prestazioni del codice per l'applicazione.  
+4. Modificare il codice nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per migliorare le prestazioni del codice per l'applicazione.  
   
-5.  Raccogliere dati di profilatura sul codice modificato e confrontare i dati di profilatura originali e modificati.  
+5. Raccogliere dati di profilatura sul codice modificato e confrontare i dati di profilatura originali e modificati.  
   
-6.  Generare un rapporto che documenti il miglioramento delle prestazioni.  
+6. Generare un rapporto che documenti il miglioramento delle prestazioni.  
   
- Per usare le informazioni fornite dalla profilatura, è necessario disporre delle informazioni sui simboli disponibili per i file binari da profilare e per i file binari del sistema operativo Windows.  
+   Per usare le informazioni fornite dalla profilatura, è necessario disporre delle informazioni sui simboli disponibili per i file binari da profilare e per i file binari del sistema operativo Windows.  
   
 ## <a name="configure-the-performance-session"></a>Configurare la sessione di prestazioni  
  Per configurare una sessione di profilatura, selezionare il metodo di profilatura da usare e i dati da raccogliere. La **Creazione guidata sessione di prestazioni** degli strumenti di profilatura guida l'utente durante la configurazione di base e le pagine delle proprietà di Sessione prestazioni possono essere usate per aggiungere altre opzioni:  
   
--   I metodi di profilatura includono campionamento, traccia e allocazione di memoria.  
+- I metodi di profilatura includono campionamento, traccia e allocazione di memoria.  
   
--   I valori dei dati includono ora, contatori delle prestazioni del processore e del sistema operativo ed eventi dell'applicazione, quali errori di pagina e transizioni del kernel.  
+- I valori dei dati includono ora, contatori delle prestazioni del processore e del sistema operativo ed eventi dell'applicazione, quali errori di pagina e transizioni del kernel.  
   
- È possibile configurare una sessione di prestazioni in un progetto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nell'ambito della soluzione del progetto o profilare i file binari arbitrari tramite l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È possibile specificare le proprietà della sessione nelle pagine delle proprietà di Sessione prestazioni oppure è possibile usare la procedura guidata di profilatura.  
+  È possibile configurare una sessione di prestazioni in un progetto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nell'ambito della soluzione del progetto o profilare i file binari arbitrari tramite l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È possibile specificare le proprietà della sessione nelle pagine delle proprietà di Sessione prestazioni oppure è possibile usare la procedura guidata di profilatura.  
   
 ## <a name="collect-profiling-data"></a>Raccogliere i dati di profilatura  
  La raccolta dei dati di profilatura viene avviata da **Esplora prestazioni**. È possibile sospendere e riprendere la profilatura per limitare la quantità di dati raccolti. È anche possibile collegarsi a un processo già in esecuzione.  
@@ -60,11 +60,11 @@ In questa panoramica vengono illustrate le nozioni di base della profilatura. Gl
 ## <a name="analyze-the-data-and-identify-performance-issues"></a>Analizzare i dati e identificare i problemi di prestazioni  
  Al termine dell'esecuzione di una profilatura, i dati vengono analizzati e nelle finestre della visualizzazione **Rapporto di prestazioni** degli strumenti di profilatura viene visualizzato un riepilogo. I dati di profilatura sono raccolti per lo stack di chiamate e le singole funzioni dell'applicazione di destinazione. Le visualizzazioni del rapporto contengono l'analisi delle prestazioni per gli intervalli di dati dei processi, dei thread, dei moduli, delle funzioni e delle righe di codice sorgente dell'applicazione. I valori dei dati di profilatura per una funzione includono gli elementi seguenti:  
   
--   Il tempo totale impiegato nella funzione e nelle funzioni figlio chiamate dalla funzione (valori inclusivi).  
+- Il tempo totale impiegato nella funzione e nelle funzioni figlio chiamate dalla funzione (valori inclusivi).  
   
--   Il tempo impiegato per l'esecuzione del solo codice nella funzione (valori esclusivi).  
+- Il tempo impiegato per l'esecuzione del solo codice nella funzione (valori esclusivi).  
   
- Più di dodici visualizzazioni diverse consentono di analizzare i dati di profilatura nella modalità più efficiente. Le personalizzazioni delle visualizzazioni permettono di filtrare e ordinare i dati per trovare le funzioni che potrebbero causare problemi di prestazioni. Il filtro Percorso critico fornisce un'evidenziazione immediata dei percorsi più attivi nelle visualizzazioni Albero delle chiamate e Modulo.  
+  Più di dodici visualizzazioni diverse consentono di analizzare i dati di profilatura nella modalità più efficiente. Le personalizzazioni delle visualizzazioni permettono di filtrare e ordinare i dati per trovare le funzioni che potrebbero causare problemi di prestazioni. Il filtro Percorso critico fornisce un'evidenziazione immediata dei percorsi più attivi nelle visualizzazioni Albero delle chiamate e Modulo.  
   
 ## <a name="modify-the-application-code"></a>Modificare il codice dell'applicazione  
  Dopo avere isolato uno o più problemi di prestazioni rilevanti, è possibile modificare il codice tramite l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e raccogliere i dati di profilatura relativi alle modifiche.  

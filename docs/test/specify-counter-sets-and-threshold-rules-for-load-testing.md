@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879843"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Specificare insiemi di contatori e regole di soglia per i computer in un test di carico
 
@@ -38,7 +38,7 @@ Per impostazione predefinita i contatori di prestazioni sono raccolti sul contro
 ## <a name="tasks"></a>Attività
 
 |Attività|Argomenti correlati|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Gestire gli insiemi di contatori per il test di carico:** dopo aver creato un test di carico, è possibile modificare l'insieme di contatori nell'Editor test di carico. La gestione degli insiemi di contatori implica la scelta del gruppo di computer da cui raccogliere i dati sulle prestazioni e l'assegnazione di una serie di insiemi di contatori da raccogliere da ogni singolo computer. I contatori vengono gestiti nell'Editor test di carico.|-   [Procedura: Gestire insiemi di contatori](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Aggiungere insiemi di contatori al test di carico:** quando si crea un test di carico con la **Creazione guidata test di carico** si aggiunge un insieme di contatori iniziale. Ciò offre una serie di insiemi di contatori predefiniti per il test di carico. Dopo aver creato un test di carico, è possibile aggiungere i nuovi contatori agli insiemi di contatori esistenti utilizzando l'Editor test di carico.|-   [Procedura: Aggiungere contatori agli insiemi di contatori](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Procedura: Aggiungere insiemi di contatori personalizzati](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Specificare una regola di soglia usando i contatori per il test di carico:** una regola di soglia è una regola impostata per un singolo contatore delle prestazioni per monitorare l'uso delle risorse di sistema durante un test di carico. Le definizioni degli insiemi di contatori contengono regole di soglia predefinite per molti contatori di prestazioni principali. Le regole di soglia nei test di carico consentono di confrontare il valore di un contatore delle prestazioni con il valore di una costante o di un altro contatore delle prestazioni.|-   [Procedura: Aggiungere una regola di soglia](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
@@ -67,7 +67,7 @@ Nelle impostazioni esecuzione test di carico selezionare un valore appropriato p
 Di seguito sono riportate alcune linee guida per le frequenze di campionamento.
 
 |Durata test di carico|Frequenza di campionamento consigliata|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 ora|5 secondi|
 |1 - 8 ore|15 secondi|
 |8 - 24 ore|30 secondi|

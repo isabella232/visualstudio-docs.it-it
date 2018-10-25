@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b17e924a6736d37b78709a516f6ca9068d4711c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d34c3978b119b978e83204967e4d5f6af5946314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811542"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementare un'interfaccia in Visual Studio
 
@@ -36,22 +36,22 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-    ![Codice evidenziato C#](media/interface-highlight-cs.png)
+       ![Codice evidenziato C#](media/interface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Codice evidenziato VB](media/interface-highlight-vb.png)
+       ![Codice evidenziato VB](media/interface-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
-     - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-     - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
-     - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
+      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
-1. Scegliere **Implementa interfaccia** dal menu a discesa.
+3. Scegliere **Implementa interfaccia** dal menu a discesa.
 
    ![Anteprima di Implementa interfaccia](media/interface-preview-cs.png)
 
@@ -63,11 +63,11 @@ Questa generazione di codice si applica a:
 
    - C#:
 
-      ![Risultato di implementazione dell'interfaccia C#](media/interface-result-cs.png)
+       ![Risultato di implementazione dell'interfaccia C#](media/interface-result-cs.png)
 
    - Visual Basic:
 
-      ![Risultato di implementazione dell'interfaccia VB](media/interface-result-vb.png)
+       ![Risultato di implementazione dell'interfaccia VB](media/interface-result-vb.png)
 
    > [!TIP]
    > (Solo C#) Usare l'opzione **Implementa l'interfaccia in modo esplicito** per anteporre a ogni metodo generato il nome dell'interfaccia per evitare conflitti di nome.

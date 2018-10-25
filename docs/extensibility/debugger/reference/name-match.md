@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH | Documenti Microsoft
+title: NAME_MATCH | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a61e8a3cadeeadf0657ca6fe293a527113505a0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e49933c0bdc5b9a98c165aebd8e263bca2a2be5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135632"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867520"
 ---
 # <a name="namematch"></a>NAME_MATCH
 Seleziona l'opzione maiuscole per i nomi corrispondenti.  
@@ -48,13 +48,13 @@ public enum NameMatchOptions {
  Non è stata specificata alcuna opzione.  
   
  nmCaseSensitive  
- Indica che i nomi per la corrispondenza tra maiuscole e minuscole.  
+ Indica che i nomi per cui trovare una corrispondenza tra maiuscole e minuscole.  
   
  nmCaseInsensitive  
- Indica che i nomi per la corrispondenza non sono tra maiuscole e minuscole.  
+ Indica che i nomi per cui trovare una corrispondenza non sono tra maiuscole e minuscole.  
   
 ## <a name="remarks"></a>Note  
- Passata come argomento per i metodi seguenti:  
+ Passato come argomento per i metodi seguenti:  
   
 -   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   

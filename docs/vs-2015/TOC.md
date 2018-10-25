@@ -3,7 +3,7 @@
 ## [Installare Visual Studio 2015](install/install-visual-studio-2015.md)
 ## [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 ## [IDE di Visual Studio](ide/visual-studio-ide.md)
-## [Estendibilità](extensibility/extensibility-in-visual-studio.md)
+## [Extensibility](extensibility/visual-studio-sdk.md)
 ## [Accesso ai dati](data-tools/accessing-data-in-visual-studio.md)
 ## [Sviluppo di app per dispositivi mobili multipiattaforma](cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 ## [Visual Basic](/dotnet/visual-basic)

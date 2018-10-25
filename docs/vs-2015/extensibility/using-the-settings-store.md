@@ -15,23 +15,23 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e7d103415869cc30f2c940b632c73f611986af2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811362"
 ---
 # <a name="using-the-settings-store"></a>Uso dell'archivio delle impostazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esistono due tipi di archivi di impostazioni:  
   
--   Impostazioni di configurazione, che sono impostazioni di Visual Studio e package VS di sola lettura. Visual Studio unisce le impostazioni da tutti i file con estensione pkgdef noti in questo archivio.  
+- Impostazioni di configurazione, che sono impostazioni di Visual Studio e package VS di sola lettura. Visual Studio unisce le impostazioni da tutti i file con estensione pkgdef noti in questo archivio.  
   
--   Impostazioni utente, che sono impostazioni scrivibile, ad esempio quelli che vengono visualizzati nelle pagine di **opzioni** nella finestra di dialogo Pagine delle proprietà e alcune altre finestre di dialogo. Estensioni di Visual Studio possono usarle per l'archiviazione locale di piccole quantità di dati.  
+- Impostazioni utente, che sono impostazioni scrivibile, ad esempio quelli che vengono visualizzati nelle pagine di **opzioni** nella finestra di dialogo Pagine delle proprietà e alcune altre finestre di dialogo. Estensioni di Visual Studio possono usarle per l'archiviazione locale di piccole quantità di dati.  
   
- Questa procedura dettagliata illustra come leggere i dati dall'archivio di impostazione di configurazione. Visualizzare [scrivendo la Store impostazioni utente](../extensibility/writing-to-the-user-settings-store.md) per una spiegazione di come scrivere nell'archivio delle impostazioni utente.  
+  Questa procedura dettagliata illustra come leggere i dati dall'archivio di impostazione di configurazione. Visualizzare [scrivendo la Store impostazioni utente](../extensibility/writing-to-the-user-settings-store.md) per una spiegazione di come scrivere nell'archivio delle impostazioni utente.  
   
 ## <a name="creating-the-example-project"></a>Creazione del progetto di esempio  
  Questa sezione illustra come creare un progetto di estensione semplice con un comando di menu a scopo dimostrativo.  
@@ -43,44 +43,44 @@ Esistono due tipi di archivi di impostazioni:
 ## <a name="using-the-configuration-settings-store"></a>Con il Store le impostazioni di configurazione  
  In questa sezione viene illustrato come rilevare e visualizzare le impostazioni di configurazione.  
   
-1.  Nel file SettingsStorageCommand.cs, aggiungere quanto segue usando istruzioni:  
+1. Nel file SettingsStorageCommand.cs, aggiungere quanto segue usando istruzioni:  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  In `MenuItemCallback`, rimuovere il corpo del metodo e aggiungere l'archivio delle impostazioni di configurazione di ottenere le righe seguenti:  
+2. In `MenuItemCallback`, rimuovere il corpo del metodo e aggiungere l'archivio delle impostazioni di configurazione di ottenere le righe seguenti:  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     Il <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> è una classe helper gestita tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> servizio.  
+    Il <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> è una classe helper gestita tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> servizio.  
   
-3.  A questo punto è scoprire se sono installati gli strumenti di Windows Phone. Il codice dovrebbe essere simile al seguente:  
+3. A questo punto è scoprire se sono installati gli strumenti di Windows Phone. Il codice dovrebbe essere simile al seguente:  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  Testare il codice. Compilare il progetto e avviare il debug.  
+4. Testare il codice. Compilare il progetto e avviare il debug.  
   
-5.  Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **SettingsStoreCommand richiamare**.  
+5. Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **SettingsStoreCommand richiamare**.  
   
-     Si dovrebbe vedere un messaggio **Microsoft Windows Phone Developer Tools:** aggiungendo **True** oppure **False**.  
+    Si dovrebbe vedere un messaggio **Microsoft Windows Phone Developer Tools:** aggiungendo **True** oppure **False**.  
   
- Visual Studio mantiene l'archivio delle impostazioni nel Registro di sistema.  
+   Visual Studio mantiene l'archivio delle impostazioni nel Registro di sistema.  
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Usare un editor del Registro di sistema per verificare le impostazioni di configurazione  
   

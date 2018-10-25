@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_code | Documenti Microsoft
+title: Get_code | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa38b5512fa628c1134c5e1cb068e95aa7b6809
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 122b9ad10413e9ba89bf309011e2449e9f6707fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866376"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
 Recupera un flag che indica se la sezione contiene codice eseguibile.  

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3cc92ba28246358f819e6086d19141b2a68072f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823736"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -354,27 +354,27 @@ Nella sezione precedente il debugger è stato associato al codice Node.js lato s
 
 1. Chiudere tutte le finestre di Chrome.
 
-1. Aprire il comando **Esegui** dal pulsante **Start** di Windows (fare clic con il pulsante destro del mouse e scegliere **Esegui**) e immettere il comando seguente:
+2. Aprire il comando **Esegui** dal pulsante **Start** di Windows (fare clic con il pulsante destro del mouse e scegliere **Esegui**) e immettere il comando seguente:
 
     `chrome.exe --remote-debugging-port=9222`
 
     Viene avviato Chrome con il debug abilitato.
 
-1. Passare a Visual Studio e impostare un punto di interruzione nel codice *app-bundle.js* in corrispondenza della funzione `render()`, come indicato di seguito:
+3. Passare a Visual Studio e impostare un punto di interruzione nel codice *app-bundle.js* in corrispondenza della funzione `render()`, come indicato di seguito:
 
     ![Imposta punto di interruzione](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Per trovare la funzione `render()` in *app-bundle.js*, usare **CTRL**+**F** (**Modifica** > **Trova e sostituisci** > **Ricerca veloce**).
 
-1. Con Chrome selezionato come destinazione di debug in Visual Studio, premere **CTRL**+**F5** (**Debug** > **Avvia senza eseguire debug**) per eseguire l'app nel browser.
+4. Con Chrome selezionato come destinazione di debug in Visual Studio, premere **CTRL**+**F5** (**Debug** > **Avvia senza eseguire debug**) per eseguire l'app nel browser.
 
     L'app viene aperta in una nuova scheda del browser.
 
-1. Scegliere **Debug** > **Associa a processo**.
+5. Scegliere **Debug** > **Associa a processo**.
 
-1. Nella finestra di dialogo **Associa a processo** scegliere **Webkit code** (Codice webkit) nel campo **Attach to** (Associa a), quindi digitare **chrome** nella casella del filtro per applicare un filtro ai risultati della ricerca.
+6. Nella finestra di dialogo **Associa a processo** scegliere **Webkit code** (Codice webkit) nel campo **Attach to** (Associa a), quindi digitare **chrome** nella casella del filtro per applicare un filtro ai risultati della ricerca.
 
-1. Selezionare il processo di Chrome con la porta host corretta (in questo esempio 1337) e selezionare **Associa**.
+7. Selezionare il processo di Chrome con la porta host corretta (in questo esempio 1337) e selezionare **Associa**.
 
     ![Associa a processo](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
@@ -383,20 +383,20 @@ Nella sezione precedente il debugger è stato associato al codice Node.js lato s
     > [!NOTE]
     > Se il debugger non è associato e viene visualizzato il messaggio "Impossibile connettersi al processo. Operazione non valida nello stato corrente." Usare Gestione attività per chiudere tutte le istanze di Chrome prima di avviare Chrome in modalità di debug. Se sono in esecuzione estensione di Chrome, la modalità di debug complete potrebbe essere impedita.
 
-1. Dato che il codice con il punto di interruzione è già stato eseguito, aggiornare la pagina del browser per raggiungere il punto di interruzione.
+8. Dato che il codice con il punto di interruzione è già stato eseguito, aggiornare la pagina del browser per raggiungere il punto di interruzione.
 
     Durante la pausa del debugger, è possibile esaminare lo stato dell'app passando il mouse sulle variabili e usando le finestre del debugger. È possibile far avanzare il debugger eseguendo il codice istruzione per istruzione (**F5**, **F10** e **F11**).
 
     A seconda dell'ambiente e dello stato del browser è possibile raggiungere il punto di interruzione in *app-bundle.js* o nel relativo percorso mappato in *app.tsx*. In entrambi i casi è possibile eseguire il codice istruzione per istruzione ed esaminare le variabili.
 
-    * Se è necessario inserire un'interruzione nel codice in *app.tsx*, ma non è possibile eseguire questa operazione, usare **Associa a processo** come descritto nei passaggi precedenti per associare il debugger. A questo punto, aprire il file *app.tsx* generato dinamicamente da Esplora soluzioni selezionando **Documenti script** > **app.tsx**, impostare un punto di interruzione e aggiornare la pagina nel browser. Impostare il punto di interruzione in una riga di codice che ammetta i punti di interruzione, come l'istruzione `return` o una dichiarazione `var`.
+   * Se è necessario inserire un'interruzione nel codice in *app.tsx*, ma non è possibile eseguire questa operazione, usare **Associa a processo** come descritto nei passaggi precedenti per associare il debugger. A questo punto, aprire il file *app.tsx* generato dinamicamente da Esplora soluzioni selezionando **Documenti script** > **app.tsx**, impostare un punto di interruzione e aggiornare la pagina nel browser. Impostare il punto di interruzione in una riga di codice che ammetta i punti di interruzione, come l'istruzione `return` o una dichiarazione `var`.
 
-        Oppure, se è necessario inserire un'interruzione nel codice in *app.tsx*, ma non è possibile eseguire questa operazione, provare a usare l'istruzione `debugger;` in *app.tsx* o impostare i punti di interruzione in Chrome Developer Tools.
+       Oppure, se è necessario inserire un'interruzione nel codice in *app.tsx*, ma non è possibile eseguire questa operazione, provare a usare l'istruzione `debugger;` in *app.tsx* o impostare i punti di interruzione in Chrome Developer Tools.
 
-    * Se è necessario inserire un'interruzione nel codice in *app bundle.js*, ma non è possibile eseguire questa operazione, rimuovere il file del mapping di origine *app-bundle.js.map*.
+   * Se è necessario inserire un'interruzione nel codice in *app bundle.js*, ma non è possibile eseguire questa operazione, rimuovere il file del mapping di origine *app-bundle.js.map*.
 
-    > [!TIP]
-    > Dopo aver eseguito per la prima volta l'associazione al processo seguendo questa procedura, è possibile ripetere rapidamente l'associazione allo stesso processo in Visual Studio 2017 scegliendo **Debug** > **Riassocia a processo**.
+     > [!TIP]
+     > Dopo aver eseguito per la prima volta l'associazione al processo seguendo questa procedura, è possibile ripetere rapidamente l'associazione allo stesso processo in Visual Studio 2017 scegliendo **Debug** > **Riassocia a processo**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b07bdc7ab114619629ab4ef360ded3bf6655e6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285116"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814415"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opzioni, Editor di testo, C/C++, Sperimentale
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
   
  Per altre funzionalità dell'editor di testo in Visual Studio Gallery, vedere l'elenco disponibile [qui](http://go.microsoft.com/fwlink/?LinkId=692016). Un esempio è [Correzioni rapide per C++](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), che supporta quanto segue:  
   
--   **Aggiunta di #include mancante** : suggerisce gli #include rilevanti per i simboli sconosciuti nel codice  
+- **Aggiunta di #include mancante** : suggerisce gli #include rilevanti per i simboli sconosciuti nel codice  
   
--   **Aggiunta dell'uso dello spazio dei nomi/simbolo completo** : come l'elemento precedente, ma per gli spazi dei nomi  
+- **Aggiunta dell'uso dello spazio dei nomi/simbolo completo** : come l'elemento precedente, ma per gli spazi dei nomi  
   
--   **Aggiunta del punto e virgola mancante**  
+- **Aggiunta del punto e virgola mancante**  
   
--   **Guida di MSDN** : cercare i messaggi di errore in MSDN  
+- **Guida di MSDN** : cercare i messaggi di errore in MSDN  
   
- È possibile passare il mouse su una sottolineatura ondulata per ottenere una lampadina oppure usare la combinazione di tasti predefinita Ctrl+punto (Ctrl+.). Per la combinazione di tasti, non è necessario che il punto di inserimento sia posizionato sull'errore specifico o token. È sufficiente trovarsi sulla stessa riga dell'errore per richiamare i suggerimenti per tutti gli elementi della riga.  
+  È possibile passare il mouse su una sottolineatura ondulata per ottenere una lampadina oppure usare la combinazione di tasti predefinita Ctrl+punto (Ctrl+.). Per la combinazione di tasti, non è necessario che il punto di inserimento sia posizionato sull'errore specifico o token. È sufficiente trovarsi sulla stessa riga dell'errore per richiamare i suggerimenti per tutti gli elementi della riga.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Impostazione delle opzioni dell'editor specifiche del linguaggio](../../ide/reference/setting-language-specific-editor-options.md)   

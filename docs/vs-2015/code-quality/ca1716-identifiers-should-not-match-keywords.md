@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cb5e3fe219d6ed8d976cf4bf03b3411dd5855a5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 000e28642a10c565e525b2714eed0d7abaca9340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858875"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Gli identificatori non devono corrispondere a parole chiave
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
@@ -44,13 +45,13 @@ ms.locfileid: "49189774"
 
  Questa regola consente di controllare con parole chiave nelle seguenti lingue:
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- Confronto tra maiuscole e minuscole viene usato per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] parole chiave e il confronto tra maiuscole e minuscole viene usato per le altre lingue.
+  Confronto tra maiuscole e minuscole viene usato per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] parole chiave e il confronto tra maiuscole e minuscole viene usato per le altre lingue.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Selezionare un nome che non compare nell'elenco di parole chiave.

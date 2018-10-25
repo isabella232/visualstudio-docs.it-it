@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND | Documenti Microsoft
+title: FIELD_KIND | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a603310986f42141a04f38c7ce26db0d7326fe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df29c9bd876a437dbcf8d797f1dcc51fb05a296f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868196"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 Specifica il tipo di campo contenuto un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.  
@@ -126,10 +126,10 @@ public enum enum_FIELD_KIND {
   
 ## <a name="members"></a>Membri  
  FIELD_KIND_TYPE  
- Indica che il campo è solo un tipo.  
+ Indica che il campo è un solo tipo.  
   
  FIELD_KIND_SYMBOL  
- Indica che il campo è un simbolo con tipo, nome e altre informazioni.  
+ Indica che il campo è un simbolo, con tipo, nome e altre informazioni.  
   
  FIELD_TYPE_PRIMITIVE  
  Indica che il campo è un tipo di dati primitivi.  
@@ -210,7 +210,7 @@ public enum enum_FIELD_KIND {
  Indica che il campo recupera le proprietà.  
   
  FIELD_SYM_PROP_SETTER  
- Indica che il campo imposta le proprietà.  
+ Indica che il campo set di proprietà.  
   
  FIELD_SYM_EXTENDED  
  Riservato per utilizzi futuri.  
@@ -222,12 +222,12 @@ public enum enum_FIELD_KIND {
  Indica una maschera per i tipi di campo.  
   
  FIELD_SYM_MASK  
- Indica una maschera per informazioni sui simboli.  
+ Indica una maschera per le informazioni sui simboli.  
   
 ## <a name="remarks"></a>Note  
- Restituito da una chiamata per il [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metodo.  
+ Restituito da una chiamata per il [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) (metodo).  
   
- A seconda del tipo di campo, [QueryInterface](/cpp/atl/queryinterface) può essere chiamato sul [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia per una forma più specifica di interfaccia. Ad esempio, se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `FIELD_TYPE_METHOD`, è quindi possibile chiamare `QueryInterface` con lettera`DebugField` per ottenere il [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaccia.  
+ A seconda del tipo di campo [QueryInterface](/cpp/atl/queryinterface) può essere chiamata sulle [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia per una forma più specifica dell'interfaccia. Ad esempio, se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `FIELD_TYPE_METHOD`, è quindi possibile chiamare `QueryInterface` su ho`DebugField` per ottenere il [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaccia.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  

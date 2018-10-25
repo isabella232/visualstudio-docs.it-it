@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877647"
 ---
 # <a name="editing-tableadapters"></a>Modifica di TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ In alcuni casi si potrebbe voler modificare lo schema della tabella dell'adapter
 ## <a name="create-new-stored-procedures"></a>Creare nuove stored procedure  
  In questa sezione descrive come completare la **configurazione guidata Query TableAdapter** quando si seleziona il **crea nuove stored procedure** opzione.  
   
-1.  Nel **genera le Stored procedure** , digitare l'istruzione SQL da eseguire quando viene chiamata la stored procedure.  
+1. Nel **genera le Stored procedure** , digitare l'istruzione SQL da eseguire quando viene chiamata la stored procedure.  
   
-    > [!NOTE]
-    >  La procedura guidata fornisce l'accesso per il **generatore Query**, uno strumento visivo per la creazione di query SQL. Per aprirlo, fare clic sui **generatore Query** pulsante.  
+   > [!NOTE]
+   >  La procedura guidata fornisce l'accesso per il **generatore Query**, uno strumento visivo per la creazione di query SQL. Per aprirlo, fare clic sui **generatore Query** pulsante.  
   
-2.  Nel **creare le stored procedure** pagina, effettuare le operazioni seguenti:  
+2. Nel **creare le stored procedure** pagina, effettuare le operazioni seguenti:  
   
-    1.  Digitare un nome per la nuova stored procedure.  
+   1. Digitare un nome per la nuova stored procedure.  
   
-    2.  Specificare se creare la stored procedure nel database sottostante.  
+   2. Specificare se creare la stored procedure nel database sottostante.  
   
-        > [!NOTE]
-        >  La possibilità di creare una stored procedure nel database dipende dalle impostazioni di sicurezza dello specifico database.  
+      > [!NOTE]
+      >  La possibilità di creare una stored procedure nel database dipende dalle impostazioni di sicurezza dello specifico database.  
   
-     Il **visualizzare i risultati della procedura guidata** pagina Mostra i risultati della creazione della query TableAdapter. Se nel corso della procedura si verificano problemi, in questa pagina vengono visualizzate le informazioni sugli errori.  
+      Il **visualizzare i risultati della procedura guidata** pagina Mostra i risultati della creazione della query TableAdapter. Se nel corso della procedura si verificano problemi, in questa pagina vengono visualizzate le informazioni sugli errori.  
   
 ## <a name="use-existing-stored-procedures"></a>Usa stored procedure esistenti  
  In questa sezione descrive come completare la **configurazione guidata Query TableAdapter** quando si seleziona il **utilizzare le stored procedure esistenti** opzione.  

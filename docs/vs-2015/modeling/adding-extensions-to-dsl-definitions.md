@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c3e74f66edc0a8b33ad1fe8205cc02cd0e80054
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866155"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Aggiunta di estensioni alle definizioni DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Estensione di definizione DSL consente di creare un pacchetto di estensioni da u
   
  Le funzionalità aggiuntive possono includere quanto segue:  
   
--   Proprietà degli elementi di modello e la presentazione  
+- Proprietà degli elementi di modello e la presentazione  
   
--   Elementi Decorator per forme e connettori  
+- Elementi Decorator per forme e connettori  
   
--   Le classi, le relazioni, forme e connettori  
+- Le classi, le relazioni, forme e connettori  
   
--   Vincoli di convalida  
+- Vincoli di convalida  
   
--   Schede ed elementi della casella degli strumenti  
+- Schede ed elementi della casella degli strumenti  
   
- Un utente di un DSL estesa può creare e salvare un modello che contiene le istanze delle funzionalità aggiuntive e possono essere letti da altri utenti che hanno installato l'estensione corretta. Gli utenti che non hanno installato l'estensione non è possibile usare le funzionalità aggiuntive, ma possono aggiornare e salvare un modello senza perdere le funzionalità aggiuntive.  
+  Un utente di un DSL estesa può creare e salvare un modello che contiene le istanze delle funzionalità aggiuntive e possono essere letti da altri utenti che hanno installato l'estensione corretta. Gli utenti che non hanno installato l'estensione non è possibile usare le funzionalità aggiuntive, ma possono aggiornare e salvare un modello senza perdere le funzionalità aggiuntive.  
   
- Per codice di esempio e altre informazioni su questa funzionalità, vedere la [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) sito Web.  
+  Per codice di esempio e altre informazioni su questa funzionalità, vedere la [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) sito Web.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)

@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866129"
 ---
 # <a name="managing-application-settings-net"></a>Gestione delle impostazioni di un'applicazione (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Le impostazioni dell'applicazione consentono di archiviare le informazioni sull'
   
  Sono disponibili due tipi di impostazioni dell'applicazione, in base all'ambito:  
   
--   Le impostazioni con ambito di applicazione possono essere usate per informazioni quali un URL per un servizio Web o una stringa di connessione del database. Questi valori sono associati all'applicazione. Di conseguenza, gli utenti non possono modificarli in fase di esecuzione.  
+- Le impostazioni con ambito di applicazione possono essere usate per informazioni quali un URL per un servizio Web o una stringa di connessione del database. Questi valori sono associati all'applicazione. Di conseguenza, gli utenti non possono modificarli in fase di esecuzione.  
   
--   Le impostazioni con ambito di utente possono essere usate per informazioni quali la memorizzazione dell'ultima posizione di un form oppure una preferenza su un tipo di carattere. Gli utenti possono modificare questi valori in fase di esecuzione.  
+- Le impostazioni con ambito di utente possono essere usate per informazioni quali la memorizzazione dell'ultima posizione di un form oppure una preferenza su un tipo di carattere. Gli utenti possono modificare questi valori in fase di esecuzione.  
   
- È possibile modificare il tipo di un'impostazione usando la proprietà **Ambito** .  
+  È possibile modificare il tipo di un'impostazione usando la proprietà **Ambito** .  
   
- Nel sistema del progetto le impostazioni dell'applicazione vengono archiviate in due file XML: un file app.config, creato in fase di progettazione al momento della creazione della prima impostazione dell'applicazione, e un file user.config, creato in fase di esecuzione quando l'utente che esegue l'applicazione modifica il valore di una qualsiasi impostazione utente. Le modifiche apportate alle impostazioni utente non vengono scritte su disco a meno che nell'applicazione non venga specificamente chiamato un metodo che esegua questa operazione.  
+  Nel sistema del progetto le impostazioni dell'applicazione vengono archiviate in due file XML: un file app.config, creato in fase di progettazione al momento della creazione della prima impostazione dell'applicazione, e un file user.config, creato in fase di esecuzione quando l'utente che esegue l'applicazione modifica il valore di una qualsiasi impostazione utente. Le modifiche apportate alle impostazioni utente non vengono scritte su disco a meno che nell'applicazione non venga specificamente chiamato un metodo che esegua questa operazione.  
   
 ## <a name="creating-application-settings-at-design-time"></a>Creazione di impostazioni dell'applicazione in fase di progettazione  
  In fase di progettazione, le impostazioni dell'applicazione possono essere create in due modi, mediante la pagina **Impostazioni** di **Creazione progetti**oppure mediante la finestra **Proprietà** per un form o un controllo, che consente di associare un'impostazione direttamente a una proprietà.  

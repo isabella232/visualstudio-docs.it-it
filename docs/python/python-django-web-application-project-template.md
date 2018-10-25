@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499543"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100965"
 ---
 # <a name="django-web-project-template"></a>Modello di progetto Web Django
 
@@ -56,7 +56,7 @@ Visual Studio offre anche [supporto completo per il debug](debugging-python-in-v
 
     ![Console](media/template-django-console-sync-db.png)
 
-- **Raccogli file statici**: esegue `manage.py collectstatic --noinput` per copiare tutti i file statici nel percorso specificato da `STATIC_ROOT` nel file *settings.py*. Durante la [pubblicazione in Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) l'operazione di pubblicazione include anche la raccolta automatica dei file statici.
+- **Raccogli file statici**: esegue `manage.py collectstatic --noinput` per copiare tutti i file statici nel percorso specificato da `STATIC_ROOT` nel file *settings.py*.
 
     ![Console](media/template-django-console-collect-static.png)
 

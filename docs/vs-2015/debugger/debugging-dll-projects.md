@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814559"
 ---
 # <a name="debugging-dll-projects"></a>Debug di progetti di DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Di seguito sono elencati i modelli per la creazione di DLL:  
   
--   (C++, C# e Visual Basic): Libreria di classi  
+- (C++, C# e Visual Basic): Libreria di classi  
   
--   (C++, C# e Visual Basic): Libreria di controlli Windows Forms  
+- (C++, C# e Visual Basic): Libreria di controlli Windows Forms  
   
-     Il debug di una libreria di controlli Windows è simile al debug di un progetto Libreria di classi. Nella maggior parte dei casi si effettua una chiamata al controllo Windows da un altro progetto. Quando si esegue il debug del progetto chiamante, è possibile eseguire l'istruzione del codice del controllo Windows, impostare i punti di interruzione ed eseguire altre operazioni di debug. Per altre informazioni, vedere [Controlli Windows Form](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
+   Il debug di una libreria di controlli Windows è simile al debug di un progetto Libreria di classi. Nella maggior parte dei casi si effettua una chiamata al controllo Windows da un altro progetto. Quando si esegue il debug del progetto chiamante, è possibile eseguire l'istruzione del codice del controllo Windows, impostare i punti di interruzione ed eseguire altre operazioni di debug. Per altre informazioni, vedere [Controlli Windows Form](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
--   (C# e Visual Basic): Libreria di controlli Web  
+- (C# e Visual Basic): Libreria di controlli Web  
   
-     Per altre informazioni, vedere [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md).  
+   Per altre informazioni, vedere [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md).  
   
--   (C++): Controllo ActiveX MFC e controllo ActiveX MFC per Smart Device  
+- (C++): Controllo ActiveX MFC e controllo ActiveX MFC per Smart Device  
   
-     I controlli ActiveX sono controlli che possono essere scaricati attraverso Internet in un computer client, nonché visualizzati e attivati in pagine Web.  
+   I controlli ActiveX sono controlli che possono essere scaricati attraverso Internet in un computer client, nonché visualizzati e attivati in pagine Web.  
   
-     Il debug dei controlli ActiveX è simile a quello di altri tipi di controlli poiché non possono essere eseguiti in modalità autonoma, ma devono essere incorporati in una pagina Web HTML. Per altre informazioni, vedere [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md).  
+   Il debug dei controlli ActiveX è simile a quello di altri tipi di controlli poiché non possono essere eseguiti in modalità autonoma, ma devono essere incorporati in una pagina Web HTML. Per altre informazioni, vedere [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md).  
   
--   (C++): DLL MFC per Smart Device  
+- (C++): DLL MFC per Smart Device  
   
-     Per altre informazioni, vedere [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md).  
+   Per altre informazioni, vedere [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md).  
   
- In questa sezione vengono inoltre trattati i seguenti argomenti:  
+  In questa sezione vengono inoltre trattati i seguenti argomenti:  
   
--   [Procedura: Eseguire il debug da un progetto di DLL](../debugger/how-to-debug-from-a-dll-project.md)  
+- [Procedura: Eseguire il debug da un progetto di DLL](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [Procedura: eseguire il debug in modalità mista](../debugger/how-to-debug-in-mixed-mode.md)  
+- [Procedura: eseguire il debug in modalità mista](../debugger/how-to-debug-in-mixed-mode.md)  
   
- In questo argomento sono contenute le seguenti sezioni relative alla preparazione al debug di librerie di classi:  
+  In questo argomento sono contenute le seguenti sezioni relative alla preparazione al debug di librerie di classi:  
   
--   [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [Modalità di Debug della DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Modalità di Debug della DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Building a Debug Version  
  Indipendentemente dalla modalità di avvio del debug, accertarsi di compilare innanzitutto la versione di debug della DLL e che tale versione si trovi nella posizione prevista dall'applicazione. Anche se ciò potrebbe sembrare ovvio, è importante non omettere questo passaggio in quanto l'applicazione potrebbe rilevare una versione differente della DLL e caricarla. A questo punto, il programma continuerebbe l'esecuzione e non si riuscirebbe a comprendere il motivo per il quale il punto di interruzione non è stato raggiunto. Durante il debug, è possibile controllare le DLL caricate dal programma visualizzando la finestra **Moduli** del debugger. In **questa** finestra sono elencate le DLL o gli EXE caricati nel processo sottoposto a debug. Per altre informazioni, vedere [How to: Use the Modules Window](../debugger/how-to-use-the-modules-window.md).  
@@ -103,15 +103,15 @@ Di seguito sono elencati i modelli per la creazione di DLL:
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debug dell'applicazione chiamante  
  Per eseguire il debug di una DLL, iniziare con il debug dell'applicazione chiamante, che in genere è un file EXE o un'applicazione Web. Questo debug può essere eseguito in vari modi.  
   
--   Se è disponibile un progetto per l'applicazione chiamante, è possibile aprirlo e avviare l'esecuzione dal menu **Debug** . Per altre informazioni, vedere [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
+- Se è disponibile un progetto per l'applicazione chiamante, è possibile aprirlo e avviare l'esecuzione dal menu **Debug** . Per altre informazioni, vedere [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
   
--   Se l'applicazione chiamante è un programma già distribuito in un computer di test o di produzione ed è già in esecuzione, è possibile stabilire una connessione. Utilizzare questa modalità se la DLL è un controllo ospitato in Internet Explorer oppure un controllo in una pagina Web. Per altre informazioni, vedere [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
+- Se l'applicazione chiamante è un programma già distribuito in un computer di test o di produzione ed è già in esecuzione, è possibile stabilire una connessione. Utilizzare questa modalità se la DLL è un controllo ospitato in Internet Explorer oppure un controllo in una pagina Web. Per altre informazioni, vedere [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
   
--   È possibile eseguire il debug dal progetto di DLL. Per altre informazioni, vedere [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
+- È possibile eseguire il debug dal progetto di DLL. Per altre informazioni, vedere [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   È possibile eseguire il debug dalla finestra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. In tal caso, la finestra **Controllo immediato** svolgerà il ruolo dell'applicazione.  
+- È possibile eseguire il debug dalla finestra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. In tal caso, la finestra **Controllo immediato** svolgerà il ruolo dell'applicazione.  
   
- Prima di iniziare il debug dell'applicazione chiamante, è possibile impostare un punto di interruzione nella libreria di classi. Per altre informazioni, vedere [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Una volta raggiunto il punto di interruzione, è possibile eseguire il codice un'istruzione alla volta, osservandone l'esecuzione in ciascuna riga fino a isolare il problema. Per altre informazioni, vedere [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
+  Prima di iniziare il debug dell'applicazione chiamante, è possibile impostare un punto di interruzione nella libreria di classi. Per altre informazioni, vedere [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Una volta raggiunto il punto di interruzione, è possibile eseguire il codice un'istruzione alla volta, osservandone l'esecuzione in ciascuna riga fino a isolare il problema. Per altre informazioni, vedere [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Controlli in una pagina Web  
  Per eseguire il debug di un controllo in una pagina Web, creare una pagina di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] contenente tale controllo, se non esiste ancora. È quindi possibile impostare punti di interruzione sia nel codice della pagina Web che in quello del controllo e richiamare la pagina Web da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

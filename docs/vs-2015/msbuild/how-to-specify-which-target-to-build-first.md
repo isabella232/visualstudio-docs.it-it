@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3978d72372f2aa9a0c57184083c67476886016aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232115"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840701"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procedura: specificare quale destinazione compilare per prima
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
   
 #### <a name="to-specify-one-initial-target"></a>Per specificare una destinazione iniziale  
   
--   Specificare la destinazione predefinita nell'attributo `InitialTargets` dell'elemento `Project`. Ad esempio:  
+- Specificare la destinazione predefinita nell'attributo `InitialTargets` dell'elemento `Project`. Ad esempio:  
   
-     `<Project InitialTargets="Clean">`  
+   `<Project InitialTargets="Clean">`  
   
- È possibile specificare più di una destinazione iniziale nell'attributo `InitialTargets` elencando le destinazioni in ordine e usando il punto e virgola per separare ogni destinazione. Le destinazioni nell'elenco verranno eseguite in sequenza.  
+  È possibile specificare più di una destinazione iniziale nell'attributo `InitialTargets` elencando le destinazioni in ordine e usando il punto e virgola per separare ogni destinazione. Le destinazioni nell'elenco verranno eseguite in sequenza.  
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Per specificare più di una destinazione iniziale  
   
@@ -53,11 +53,11 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
   
 #### <a name="to-specify-one-default-target"></a>Per specificare una destinazione predefinita  
   
--   Specificare la destinazione predefinita nell'attributo `DefaultTargets` dell'elemento `Project`. Ad esempio:  
+- Specificare la destinazione predefinita nell'attributo `DefaultTargets` dell'elemento `Project`. Ad esempio:  
   
-     `<Project DefaultTargets="Compile">`  
+   `<Project DefaultTargets="Compile">`  
   
- È possibile specificare più di una destinazione predefinita nell'attributo `DefaultTargets` elencando le destinazioni in ordine e usando il punto e virgola per separare ogni destinazione. Le destinazioni nell'elenco verranno eseguite in sequenza.  
+  È possibile specificare più di una destinazione predefinita nell'attributo `DefaultTargets` elencando le destinazioni in ordine e usando il punto e virgola per separare ogni destinazione. Le destinazioni nell'elenco verranno eseguite in sequenza.  
   
 #### <a name="to-specify-more-than-one-default-target"></a>Per specificare più di una destinazione predefinita  
   

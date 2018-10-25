@@ -1,5 +1,5 @@
 ---
-title: L'URI da codificare contiene un carattere non valido | Documenti Microsoft
+title: L'URI da codificare contiene un carattere non valido | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e93d145ea6b0991123c2a7c80f8acf54a83a264
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832174"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>L'URI da codificare contiene un carattere non valido
-Si è tentato di codificare una stringa come un URI (Uniform Resource Identifier), ma contiene caratteri non validi. Sebbene la maggior parte dei caratteri sono validi all'interno di stringhe da convertire in URI, alcune sequenze di caratteri Unicode non sono valide.  
+Si è tentato di codificare una stringa come un URI (Uniform Resource Identifier), ma contiene caratteri non validi. Sebbene la maggior parte dei caratteri sono validi all'interno delle stringhe da convertire in URI, alcune sequenze di caratteri Unicode non sono valide.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Verificare la stringa da codificare contiene solo le sequenze Unicode valide. Un URI completo è costituito da una sequenza di componenti e separatori. I nomi delle parentesi angolari rappresentano i componenti e il ":", "/", ";" e "?" sono caratteri riservati utilizzati come separatori. Il formato generale è:  
+-   Verificare che la stringa da codificare contiene solo le sequenze di Unicode valide. Un URI completo è costituito da una sequenza di componenti e i separatori. I nomi delle parentesi acute rappresentano i componenti e il ":", "/", ";" e "?" sono caratteri riservati utilizzati come separatori. Il formato generale è:  
   
     ```JavaScript  
     <Scheme>:<first>/<second>;<third>?<fourth>  

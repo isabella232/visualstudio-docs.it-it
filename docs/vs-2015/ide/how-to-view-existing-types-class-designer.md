@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846980"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Procedura: visualizzare i tipi esistenti (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a 
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Per vedere i tipi di un progetto in un diagramma di classi  
   
-1.  In un progetto in Esplora soluzioni aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md) (Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)).  
+1. In un progetto in Esplora soluzioni aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md) (Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)).  
   
-2.  Nel progetto in Esplora soluzioni trascinare un file di codice sorgente nel diagramma di classi.  
+2. Nel progetto in Esplora soluzioni trascinare un file di codice sorgente nel diagramma di classi.  
   
-    > [!WARNING]
-    >  Se la soluzione contiene un progetto che condivide il codice con più app, è possibile trascinare file o codice in un diagramma classi solo da queste origini:  
-    >   
-    >  -   Il progetto di app contenente il diagramma  
-    > -   Un progetto condiviso importato dal progetto di app  
-    > -   Un progetto a cui si fa riferimento  
-    > -   Un assembly  
+   > [!WARNING]
+   >  Se la soluzione contiene un progetto che condivide il codice con più app, è possibile trascinare file o codice in un diagramma classi solo da queste origini:  
+   > 
+   > - Il progetto di app contenente il diagramma  
+   >   -   Un progetto condiviso importato dal progetto di app  
+   >   -   Un progetto a cui si fa riferimento  
+   >   -   Un assembly  
   
-     Le forme che rappresentano i tipi definiti nel file di codice sorgente appariranno nel diagramma nella posizione in cui è stato trascinato il file.  
+    Le forme che rappresentano i tipi definiti nel file di codice sorgente appariranno nel diagramma nella posizione in cui è stato trascinato il file.  
   
- È anche possibile visualizzare i tipi del progetto trascinando uno o più tipi dal nodo di progetto in Visualizzazione classi al diagramma classi.  
+   È anche possibile visualizzare i tipi del progetto trascinando uno o più tipi dal nodo di progetto in Visualizzazione classi al diagramma classi.  
   
 > [!TIP]
 >  Se non è già visualizzata, aprire Visualizzazione classi dal menu **Visualizza**. Per altre informazioni sulla visualizzazione classi, vedere [Viewing Classes and Their Members](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333) (Visualizzazione delle classi e dei relativi membri).  

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6726b2c859143f5dbc9b264e67bb9bb91757de5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819043"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedura: aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF
 Oggetto *riferimento del servizio* consente a un progetto di accedere a uno o più [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Usare la **Aggiungi riferimento al servizio** finestra di dialogo per la ricerca [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] nella soluzione corrente, in locale, in una rete locale o su Internet.
@@ -55,21 +55,21 @@ Oggetto *riferimento del servizio* consente a un progetto di accedere a uno o pi
 
 ### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Per aggiungere un riferimento a un servizio nella soluzione corrente
 
-1.  Nelle **Esplora soluzioni**, fare doppio clic il nome del progetto a cui si desidera aggiungere il servizio e quindi fare clic su **Aggiungi riferimento al servizio**.
+1. Nelle **Esplora soluzioni**, fare doppio clic il nome del progetto a cui si desidera aggiungere il servizio e quindi fare clic su **Aggiungi riferimento al servizio**.
 
-     Il **Aggiungi riferimento al servizio** verrà visualizzata la finestra di dialogo.
+    Il **Aggiungi riferimento al servizio** verrà visualizzata la finestra di dialogo.
 
-2.  Fare clic su **individua**.
+2. Fare clic su **individua**.
 
-     Tutti i servizi (entrambi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] e i servizi WCF) nella soluzione corrente vengono aggiunte per il **Services** elenco.
+    Tutti i servizi (entrambi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] e i servizi WCF) nella soluzione corrente vengono aggiunte per il **Services** elenco.
 
-3.  Nel **Services** elenco, quindi espandere il nodo per il servizio che si desidera usare e selezionare un set di entità.
+3. Nel **Services** elenco, quindi espandere il nodo per il servizio che si desidera usare e selezionare un set di entità.
 
-4.  Nel **Namespace** immettere lo spazio dei nomi che si desidera utilizzare per il riferimento.
+4. Nel **Namespace** immettere lo spazio dei nomi che si desidera utilizzare per il riferimento.
 
-5.  Fare clic su **OK** per aggiungere il riferimento al progetto.
+5. Fare clic su **OK** per aggiungere il riferimento al progetto.
 
-     Genera un client del servizio (proxy) e i metadati che descrivono il servizio viene aggiunto per il *app. config* file.
+    Genera un client del servizio (proxy) e i metadati che descrivono il servizio viene aggiunto per il *app. config* file.
 
 ## <a name="update-a-service-reference"></a>Aggiornare un riferimento al servizio
  Entity Data Model per un [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] volte le modifiche apportate. In questo caso, è necessario aggiornare il riferimento al servizio.

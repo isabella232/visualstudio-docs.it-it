@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865921"
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 
@@ -93,15 +93,15 @@ Per elencare i contatori disponibili in un computer nell'IDE di Visual Studio, Ã
 
 2. Eseguire una delle operazioni seguenti:
 
-    -   Fare clic su **Campionamento** e quindi selezionare **Contatore di prestazioni** dall'elenco eventi **Esempio**. I contatori CPU sono elencati in **Contatori di prestazioni disponibili**.
+   - Fare clic su **Campionamento** e quindi selezionare **Contatore di prestazioni** dall'elenco eventi **Esempio**. I contatori CPU sono elencati in **Contatori di prestazioni disponibili**.
 
-         **Nota** Fare clic su **Annulla** per tornare alla configurazione di campionamento precedente.
+      **Nota** Fare clic su **Annulla** per tornare alla configurazione di campionamento precedente.
 
      oppure
 
-    -   Selezionare **Contatori CPU** e quindi **Raccogli contatori CPU**. I contatori CPU sono elencati in **Contatori disponibili**.
+   - Selezionare **Contatori CPU** e quindi **Raccogli contatori CPU**. I contatori CPU sono elencati in **Contatori disponibili**.
 
-         **Nota** Fare clic su **Annulla** per tornare alla configurazione di raccolta contatori precedente.
+      **Nota** Fare clic su **Annulla** per tornare alla configurazione di raccolta contatori precedente.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Per visualizzare un elenco di tutti i contatori Windows supportati sulla piattaforma corrente
 

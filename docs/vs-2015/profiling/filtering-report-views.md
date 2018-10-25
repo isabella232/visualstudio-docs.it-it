@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878453"
 ---
 # <a name="filtering-report-views"></a>Filtrare visualizzazioni rapporto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ ms.locfileid: "49238290"
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Per creare un filtro report del profiler dalla visualizzazione report Contrassegni  
   
-1.  Selezionare **Contrassegni** dall'elenco **Visualizzazione corrente** nella barra degli strumenti della visualizzazione report Prestazioni.  
+1. Selezionare **Contrassegni** dall'elenco **Visualizzazione corrente** nella barra degli strumenti della visualizzazione report Prestazioni.  
   
-     Viene visualizzato il report del profiler Contrassegni.  
+    Viene visualizzato il report del profiler Contrassegni.  
   
-2.  Selezionare l'ETW o il campionamento che si desidera utilizzare come punto iniziale del report.  
+2. Selezionare l'ETW o il campionamento che si desidera utilizzare come punto iniziale del report.  
   
-3.  Tenere premuto CTRL e fare clic sull'evento che si desidera utilizzare come punto finale del rapporto.  
+3. Tenere premuto CTRL e fare clic sull'evento che si desidera utilizzare come punto finale del rapporto.  
   
-4.  Fare clic con il pulsante destro del mouse e quindi scegliere una delle opzioni seguenti:  
+4. Fare clic con il pulsante destro del mouse e quindi scegliere una delle opzioni seguenti:  
   
-    -   **Aggiungi filtro in contrassegni** crea clausole di filtro che usano la colonna Contrassegno come campo del filtro.  
+   - **Aggiungi filtro in contrassegni** crea clausole di filtro che usano la colonna Contrassegno come campo del filtro.  
   
-    -   **Aggiungi filtro in timestamp** crea clausole di filtro che usano la colonna Timestamp in millisecondi come campo del filtro.  
+   - **Aggiungi filtro in timestamp** crea clausole di filtro che usano la colonna Timestamp in millisecondi come campo del filtro.  
   
      Le due opzioni consentono di filtrare il file di dati corrente in corrispondenza degli stessi punti di inizio e di fine. Ogni opzione può essere ottimizzata se si esporta il filtro per l'uso in altri report.  
   

@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 576cbb1fb9ef9210a3f22849a996fa5da14dd443
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842287"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactoring con modifica della firma di un metodo
 
@@ -42,44 +42,44 @@ Questo refactoring si applica a:
 
    - C#:
 
-    ![Codice evidenziato C#](media/changesignature-highlight-cs.png)
+       ![Codice evidenziato C#](media/changesignature-highlight-cs.png)
 
    - VB:
 
-    ![Codice evidenziato Visual Basic](media/changesignature-highlight-vb.png)
+       ![Codice evidenziato Visual Basic](media/changesignature-highlight-vb.png)
 
-1. Eseguire quindi una delle operazioni seguenti:
+2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+R** e quindi **CTRL+V**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
+      - Premere **CTRL+R** e quindi **CTRL+V**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
    - **Mouse**
-     - Selezionare **Modifica > Refactoring > Rimuovi parametri**.
-     - Selezionare **Modifica > Refactoring > Riordina parametri**.
-     - Fare clic con il pulsante destro del mouse sul codice, scegliere il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
+      - Selezionare **Modifica > Refactoring > Rimuovi parametri**.
+      - Selezionare **Modifica > Refactoring > Riordina parametri**.
+      - Fare clic con il pulsante destro del mouse sul codice, scegliere il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
 
-1. Nella finestra di dialogo **Modifica firma** visualizzata è possibile usare i pulsanti a destra per modificare la firma del metodo:
+3. Nella finestra di dialogo **Modifica firma** visualizzata è possibile usare i pulsanti a destra per modificare la firma del metodo:
 
    ![Finestra di dialogo Cambia firma](media/changesignature-dialog-cs.png)
 
    | Button | Descrizione
    | ------ | ---
    | **Su/Giù** | Consente di spostare il parametro selezionato verso l'alto e verso il basso nell'elenco
-   | **Rimuovi**  | Consente di rimuovere il parametro selezionato dall'elenco
+   | **Rimuovi** | Consente di rimuovere il parametro selezionato dall'elenco
    | **Recupera** | Consente di ripristinare il parametro selezionato e barrato nell'elenco
 
    > [!TIP]
    > Usare la casella di controllo **Anteprima modifiche riferimento** per [controllare il risultato in anteprima](../../ide/preview-changes.md) prima di eseguire il commit.
 
-1. Al termine, fare clic sul pulsante **OK** per apportare le modifiche.
+4. Al termine, fare clic sul pulsante **OK** per apportare le modifiche.
 
    - C#:
 
-    ![Risultato della modifica della firma - C#](media/changesignature-result-cs.png)
+      ![Risultato della modifica della firma - C#](media/changesignature-result-cs.png)
 
    - Visual Basic:
 
-    ![Risultato della modifica della firma - Visual Basic](media/changesignature-result-vb.png)
+      ![Risultato della modifica della firma - Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>Vedere anche
 

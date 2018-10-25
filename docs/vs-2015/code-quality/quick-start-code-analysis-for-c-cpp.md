@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851062"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Guida introduttiva all'analisi del codice per C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ ms.locfileid: "49241774"
   
  Per eseguire l'analisi del codice su una soluzione:  
   
--   Dal menu **Genera** scegliere **Esegui analisi del codice sulla soluzione**.  
+- Dal menu **Genera** scegliere **Esegui analisi del codice sulla soluzione**.  
   
- Per eseguire l'analisi del codice su un progetto:  
+  Per eseguire l'analisi del codice su un progetto:  
   
--   In Esplora soluzioni scegliere il nome del progetto.  
+- In Esplora soluzioni scegliere il nome del progetto.  
   
--   Nel **compilare** menu, scegliere **Esegui analisi del codice** *nome progetto*.  
+- Nel **compilare** menu, scegliere **Esegui analisi del codice** *nome progetto*.  
   
- Il progetto o la soluzione vengono compilati e viene eseguita l'analisi del codice. I risultati vengono visualizzati nella finestra Analisi codice.  
+  Il progetto o la soluzione vengono compilati e viene eseguita l'analisi del codice. I risultati vengono visualizzati nella finestra Analisi codice.  
   
 ##  <a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi dell'analisi codice  
  Per analizzare un avviso specifico, scegliere il titolo dell'avviso nella finestra Analisi codice. L'avviso si espande per visualizzare informazioni aggiuntive sul problema. Se possibile, l'analisi del codice consente di visualizzare i numeri di riga e la logica di analisi che ha portato all'avviso. Per informazioni dettagliate sull'avviso, incluse le possibili soluzioni al problema, scegliere l'ID dell'avviso per visualizzare l'argomento della Guida in MSDN Library per il messaggio.  
@@ -106,13 +106,13 @@ ms.locfileid: "49241774"
   
  Per eliminare un avviso:  
   
-1.  Se le informazioni dettagliate non sono visualizzate, scegliere il titolo dell'avviso per espanderlo.  
+1. Se le informazioni dettagliate non sono visualizzate, scegliere il titolo dell'avviso per espanderlo.  
   
-2.  Scegliere il collegamento **Azioni** nella parte inferiore dell'avviso.  
+2. Scegliere il collegamento **Azioni** nella parte inferiore dell'avviso.  
   
-3.  Scegli **Elimina messaggio** e quindi scegliere **In origine**.  
+3. Scegli **Elimina messaggio** e quindi scegliere **In origine**.  
   
- L'eliminazione di un messaggio inserisce un `#pragma warning (disable:`*WarningId*`)` che elimina l'avviso per la riga di codice.  
+   L'eliminazione di un messaggio inserisce un `#pragma warning (disable:`*WarningId*`)` che elimina l'avviso per la riga di codice.  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> Creazione di elementi di lavoro per il codice gli avvisi dell'analisi  
  È possibile usare la funzionalità di gestione degli elementi di lavoro per registrare bug da Visual Studio. Per usare questa funzionalità, collegarsi a un'istanza di Team Foundation Server.  

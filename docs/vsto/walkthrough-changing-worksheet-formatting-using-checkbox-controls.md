@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843535"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procedura dettagliata: Modifica del foglio di lavoro della formattazione mediante controlli CheckBox
   Questa procedura dettagliata illustra le nozioni di base dell'uso di caselle di controllo in un foglio di lavoro di Microsoft Office Excel per modificare la formattazione. Si userà gli strumenti di sviluppo per Office in Visual Studio per creare e aggiungere codice al progetto. Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli Excel all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -101,24 +101,24 @@ ms.locfileid: "38778370"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>Per aggiungere testo a un controllo NamedRange  
   
-1.  Dal **controlli Excel** della casella degli strumenti, trascinare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo alla cella **B9**.  
+1. Dal **controlli Excel** della casella degli strumenti, trascinare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo alla cella **B9**.  
   
-2.  Verificare che **$B$ 9** viene visualizzato nella casella di testo modificabile e che la cella **B9** sia selezionata. In caso contrario, fare clic sulla cella **B9** per selezionarlo.  
+2. Verificare che **$B$ 9** viene visualizzato nella casella di testo modificabile e che la cella **B9** sia selezionata. In caso contrario, fare clic sulla cella **B9** per selezionarlo.  
   
-3.  Fare clic su **OK**.  
+3. Fare clic su **OK**.  
   
-4.  Cella **B9** diventa un intervallo denominato `NamedRange1`.  
+4. Cella **B9** diventa un intervallo denominato `NamedRange1`.  
   
-     Non sono presenti indicazioni visibili nel foglio di lavoro, ma `NamedRange1` viene visualizzato nei **casella nome** (di sotto del foglio di lavoro sul lato sinistro) quando la cella **B9** sia selezionata.  
+    Non sono presenti indicazioni visibili nel foglio di lavoro, ma `NamedRange1` viene visualizzato nei **casella nome** (di sotto del foglio di lavoro sul lato sinistro) quando la cella **B9** sia selezionata.  
   
-5.  Assicurarsi che **NamedRange1** è visibile nella casella di riepilogo Nome oggetto del **proprietà** finestra e modificare le proprietà seguenti:  
+5. Assicurarsi che **NamedRange1** è visibile nella casella di riepilogo Nome oggetto del **proprietà** finestra e modificare le proprietà seguenti:  
   
-    |Proprietà|Valore|  
-    |--------------|-----------|  
-    |**Name**|**textFont**|  
-    |**Value2**|**Fare clic su una casella di controllo per modificare la formattazione del testo.**|  
+   |Proprietà|Valore|  
+   |--------------|-----------|  
+   |**Name**|**textFont**|  
+   |**Value2**|**Fare clic su una casella di controllo per modificare la formattazione del testo.**|  
   
- Successivamente, scrivere il codice per formattare il testo quando si seleziona un'opzione.  
+   Successivamente, scrivere il codice per formattare il testo quando si seleziona un'opzione.  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>Formattare il testo quando si seleziona un'opzione  
  In questa sezione si scriverà codice in modo che quando l'utente seleziona un'opzione di formattazione, il formato del testo nel foglio di lavoro è stato modificato.  

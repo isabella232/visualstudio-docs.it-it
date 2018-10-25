@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd1ddaff24cbceb73af3982cc7be3e9f09d351c2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b7f7d52ad8dc75f8e8bd313794b44c231522cde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829937"
 ---
 # <a name="how-to-update-the-status-bar"></a>Procedura: aggiornare la barra di stato
 Il **sulla barra di stato** una barra di controllo si trova nella parte inferiore di molte finestre dell'applicazione che contiene uno o più righe di testo di stato o indicatori.  
@@ -35,19 +35,19 @@ Il **sulla barra di stato** una barra di controllo si trova nella parte inferior
 ## <a name="robust-programming"></a>Programmazione efficiente  
  Oggetto **sulla barra di stato** contiene quattro campi separati:  
   
--   Testo stato  
+- Testo stato  
   
--   Indicatore di stato  
+- Indicatore di stato  
   
--   Icona animata  
+- Icona animata  
   
--   Informazioni relative all'editor  
+- Informazioni relative all'editor  
   
- Per altre informazioni, vedere [barre di stato](/cpp/mfc/status-bars).  
+  Per altre informazioni, vedere [barre di stato](/cpp/mfc/status-bars).  
   
- Chiama automaticamente l'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodo del <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementazione quando viene attivata la finestra del documento.  
+  Chiama automaticamente l'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodo del <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementazione quando viene attivata la finestra del documento.  
   
- Il responsabile dell'implementazione di VSPackage è responsabile dell'aggiornamento del testo di stato nella barra di stato. L'IDE Reimposta questa stringa per "Pronto" se il campo di testo di stato è impostato su text vuota ("") in fase di inattività.  
+  Il responsabile dell'implementazione di VSPackage è responsabile dell'aggiornamento del testo di stato nella barra di stato. L'IDE Reimposta questa stringa per "Pronto" se il campo di testo di stato è impostato su text vuota ("") in fase di inattività.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Barre di stato](/cpp/mfc/status-bars)

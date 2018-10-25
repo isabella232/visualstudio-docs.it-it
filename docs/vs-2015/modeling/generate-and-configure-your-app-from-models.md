@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96dc292712a04b7a1049400b908bf5f678b63df3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240643"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857457"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generare e configurare l'app da modelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ ms.locfileid: "49240643"
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generazione del codice dell'applicazione da un modello  
  Il modo più semplice per generare codice consiste nell'usare modelli di testo. È possibile generare codice nello stesso [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che contiene il modello di soluzione. Per altre informazioni, vedere:  
   
--   [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+- [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [Generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md)  
+- [Generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md)  
   
--   [Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)  
+- [Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)  
   
- Questo metodo può essere facilmente applicato in modo incrementale. Partire da un'applicazione che funziona solo per un caso specifico e sceglierne alcune parti da variare rispetto al modello. Rinominare i file di origine di queste parti in modo che diventino file modello di testo (con estensione tt). A questo punto, i file cs di origine verranno automaticamente generati dai file modello e l'applicazione funzionerà nel modo consueto.  
+  Questo metodo può essere facilmente applicato in modo incrementale. Partire da un'applicazione che funziona solo per un caso specifico e sceglierne alcune parti da variare rispetto al modello. Rinominare i file di origine di queste parti in modo che diventino file modello di testo (con estensione tt). A questo punto, i file cs di origine verranno automaticamente generati dai file modello e l'applicazione funzionerà nel modo consueto.  
   
- Sarà quindi possibile sostituire una parte del codice con un'espressione del modello di testo che legge il modello e genera la parte sostituita del file di origine. Affinché sia l'applicazione possa essere rieseguita e funzioni come di consueto, è necessario che almeno un valore del modello generi il codice sorgente originale. Dopo avere testato valori del modello differenti, è possibile continuare a inserire espressioni del modello in un'altra parte del codice.  
+  Sarà quindi possibile sostituire una parte del codice con un'espressione del modello di testo che legge il modello e genera la parte sostituita del file di origine. Affinché sia l'applicazione possa essere rieseguita e funzioni come di consueto, è necessario che almeno un valore del modello generi il codice sorgente originale. Dopo avere testato valori del modello differenti, è possibile continuare a inserire espressioni del modello in un'altra parte del codice.  
   
- Grazie a questo metodo incrementale, la generazione di codice risulta generalmente un approccio a basso rischio. Il livello di prestazioni garantito dalle applicazioni risultanti è in genere pressoché simile a quello della versione scritta manualmente.  
+  Grazie a questo metodo incrementale, la generazione di codice risulta generalmente un approccio a basso rischio. Il livello di prestazioni garantito dalle applicazioni risultanti è in genere pressoché simile a quello della versione scritta manualmente.  
   
- Tuttavia, se si parte da un'applicazione esistente, potrebbe rendersi necessaria un'attività di refactoring non indifferente per separare i diversi comportamenti regolati dal modello in modo che possano essere variati in modo indipendente. Si consiglia di valutare questo aspetto dell'applicazione quando si effettua una stima del costo del progetto.  
+  Tuttavia, se si parte da un'applicazione esistente, potrebbe rendersi necessaria un'attività di refactoring non indifferente per separare i diversi comportamenti regolati dal modello in modo che possano essere variati in modo indipendente. Si consiglia di valutare questo aspetto dell'applicazione quando si effettua una stima del costo del progetto.  
   
 ## <a name="configuring-your-application-from-a-model"></a>Configurazione dell'applicazione in base a un modello  
  Se si vuole variare il comportamento dell'applicazione in fase di esecuzione, non è possibile usare la generazione di codice, poiché genera il codice sorgente prima che venga compilata l'applicazione. Al contrario, è possibile progettare l'applicazione in modo che legga il modello UML o DSL e che il comportamento vari di conseguenza. Per altre informazioni, vedere:  
   
--   [Leggere un modello UML nel codice programma](../modeling/read-a-uml-model-in-program-code.md)  
+- [Leggere un modello UML nel codice programma](../modeling/read-a-uml-model-in-program-code.md)  
   
--   [Procedura: Aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [Procedura: Aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
- Questo metodo può anche essere applicato in modo incrementale, ma ciò comporta maggiore impegno nelle fasi iniziali. Sarà infatti necessario scrivere il codice che leggerà il modello e configurare un framework che ne renda i valori accessibili alle parti variabili. La generalizzazione delle parti variabili è un approccio più dispendioso rispetto alla generazione di codice.  
+  Questo metodo può anche essere applicato in modo incrementale, ma ciò comporta maggiore impegno nelle fasi iniziali. Sarà infatti necessario scrivere il codice che leggerà il modello e configurare un framework che ne renda i valori accessibili alle parti variabili. La generalizzazione delle parti variabili è un approccio più dispendioso rispetto alla generazione di codice.  
   
- Il livello di prestazioni garantito da un'applicazione generica è solitamente inferiore a quello delle controparti specifiche. Se le prestazioni sono cruciali, è opportuno che il piano del progetto includa una valutazione di questo rischio.  
+  Il livello di prestazioni garantito da un'applicazione generica è solitamente inferiore a quello delle controparti specifiche. Se le prestazioni sono cruciali, è opportuno che il piano del progetto includa una valutazione di questo rischio.  
   
 ## <a name="developing-a-derived-application"></a>Sviluppo di un'applicazione derivata  
  Per lo sviluppo di un'applicazione derivata potranno rivelarsi utili le linee guida descritte di seguito.  

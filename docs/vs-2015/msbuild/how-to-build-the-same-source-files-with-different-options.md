@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831003"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: compilare gli stessi file di origine con opzioni diverse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Per specificare più di una proprietà del progetto nella riga di comando  
   
--   Usare l'opzione **/property** o **/p** più volte con la proprietà e i valori della proprietà oppure usare una sola opzione **/property** o **/p** e separare più proprietà con il punto e virgola (;). Ad esempio:  
+- Usare l'opzione **/property** o **/p** più volte con la proprietà e i valori della proprietà oppure usare una sola opzione **/property** o **/p** e separare più proprietà con il punto e virgola (;). Ad esempio:  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - oppure  
+   - oppure  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- Anche le variabili di ambiente vengono considerate come proprietà e automaticamente incorporate da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Per altre informazioni sull'uso delle variabili di ambiente, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Anche le variabili di ambiente vengono considerate come proprietà e automaticamente incorporate da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Per altre informazioni sull'uso delle variabili di ambiente, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- Il valore della proprietà specificato nella riga di comando ha la precedenza sui valori impostati per la stessa proprietà nel file di progetto e tale valore nel file di progetto ha la precedenza sul valore in una variabile di ambiente.  
+  Il valore della proprietà specificato nella riga di comando ha la precedenza sui valori impostati per la stessa proprietà nel file di progetto e tale valore nel file di progetto ha la precedenza sul valore in una variabile di ambiente.  
   
- È possibile modificare questo comportamento usando l'attributo `TreatAsLocalProperty` in un tag di progetto. Per i nomi di proprietà elencati con tale attributo, il valore della proprietà specificato nella riga di comando non ha la precedenza sul valore nel file di progetto. È possibile trovare un esempio più avanti in questo argomento.  
+  È possibile modificare questo comportamento usando l'attributo `TreatAsLocalProperty` in un tag di progetto. Per i nomi di proprietà elencati con tale attributo, il valore della proprietà specificato nella riga di comando non ha la precedenza sul valore nel file di progetto. È possibile trovare un esempio più avanti in questo argomento.  
   
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente del progetto "Hello World" contiene due nuovi gruppi di proprietà che possono essere usati per creare una build di debug e una build di rilascio.  

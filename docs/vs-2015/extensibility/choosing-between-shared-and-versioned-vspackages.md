@@ -17,12 +17,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75bc095ba4e9fc12033787b64dd516459e574b26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859936"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Scelta tra pacchetti VSPackage condivisi e con versione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ Versioni diverse di Visual Studio possono coesistere nello stesso computer. I pa
 ## <a name="binary-compatibility"></a>Compatibilità binaria  
  In generale, la compatibilità binaria consente codice nativo i pacchetti VSPackage sviluppati con versioni precedenti di Visual Studio per l'esecuzione nelle versioni più recenti di Visual Studio. Tuttavia, esistono tre importanti eccezioni:  
   
--   Se il pacchetto VSPackage si basa su una particolare versione di common language runtime, quindi è necessario determinare in quale versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è in esecuzione.  
+- Se il pacchetto VSPackage si basa su una particolare versione di common language runtime, quindi è necessario determinare in quale versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è in esecuzione.  
   
--   Un pacchetto VSPackage potrebbe avere una dipendenza su una funzionalità specifica di un altro VSPackage o di un altro prodotto. Di conseguenza, il pacchetto VSPackage può essere eseguito solo in cui la dipendenza viene soddisfatta.  
+- Un pacchetto VSPackage potrebbe avere una dipendenza su una funzionalità specifica di un altro VSPackage o di un altro prodotto. Di conseguenza, il pacchetto VSPackage può essere eseguito solo in cui la dipendenza viene soddisfatta.  
   
--   Un pacchetto VSPackage può essere influenzato da una correzione di sicurezza in un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] service pack o una versione successiva di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questi casi, un pacchetto VSPackage sviluppati con una versione precedente del [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] potrebbe non funzionare nelle versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dopo la correzione di sicurezza è stata applicata. Tuttavia, è possibile ricompilare il pacchetto con la versione più recente e anche eseguirlo nelle versioni precedenti.  
+- Un pacchetto VSPackage può essere influenzato da una correzione di sicurezza in un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] service pack o una versione successiva di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questi casi, un pacchetto VSPackage sviluppati con una versione precedente del [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] potrebbe non funzionare nelle versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dopo la correzione di sicurezza è stata applicata. Tuttavia, è possibile ricompilare il pacchetto con la versione più recente e anche eseguirlo nelle versioni precedenti.  
   
- I VSPackage gestiti devono essere creati usando una versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] che corrisponde alla versione di destinazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  I VSPackage gestiti devono essere creati usando una versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] che corrisponde alla versione di destinazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Oltre alla pianificazione per la compatibilità binaria per i file binari del pacchetto VSPackage, è anche necessario prendere in considerazione soluzioni e formati di file di progetto. Se il pacchetto VSPackage viene creato un nuovo tipo di progetto, è necessario decidere se può essere eseguito solo una versione o in più versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [l'aggiornamento dei progetti personalizzati](../misc/upgrading-custom-projects.md).  
+  Oltre alla pianificazione per la compatibilità binaria per i file binari del pacchetto VSPackage, è anche necessario prendere in considerazione soluzioni e formati di file di progetto. Se il pacchetto VSPackage viene creato un nuovo tipo di progetto, è necessario decidere se può essere eseguito solo una versione o in più versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [l'aggiornamento dei progetti personalizzati](../misc/upgrading-custom-projects.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Installazione di pacchetti VSPackage con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)   

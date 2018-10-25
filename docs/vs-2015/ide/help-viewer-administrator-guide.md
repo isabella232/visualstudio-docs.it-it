@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871290"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
   
  Requisiti:  
   
--   I computer client devono disporre di accesso a Internet.  
+- I computer client devono disporre di accesso a Internet.  
   
--   Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.  
+- Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.  
   
- Avvertenze:  
+  Avvertenze:  
   
--   L'origine predefinita per la Guida sarà ancora Online.  
+- L'origine predefinita per la Guida sarà ancora Online.  
   
-    > [!TIP]
-    >  È possibile cambiare l'origine predefinita per la Guida modificando la chiave del Registro di sistema HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  È possibile cambiare l'origine predefinita per la Guida modificando la chiave del Registro di sistema HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
   
--   Ai client verrà ancora richiesto di installare il contenuto della Guida di base al primo avvio di Visual Studio. È possibile disabilitare questa richiesta modificando la chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
+- Ai client verrà ancora richiesto di installare il contenuto della Guida di base al primo avvio di Visual Studio. È possibile disabilitare questa richiesta modificando la chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
 ### <a name="example"></a>Esempio  
  L'esempio seguente installa il contenuto in lingua inglese per Visual Studio in un computer client.  
@@ -78,47 +78,47 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
   
  Requisiti:  
   
--   Il computer in cui si installa il set del contenuto deve avere accesso a Internet.  
+- Il computer in cui si installa il set del contenuto deve avere accesso a Internet.  
   
--   Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.  
+- Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.  
   
-    > [!TIP]
-    >  Se gli utenti non dispongono dei diritti di amministratore, si consiglia di disabilitare la scheda Gestisci contenuto nel visualizzatore della Guida. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Se gli utenti non dispongono dei diritti di amministratore, si consiglia di disabilitare la scheda Gestisci contenuto nel visualizzatore della Guida. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
   
- Avvertenze:  
+  Avvertenze:  
   
--   Se gli utenti non dispongono dei diritti di amministratore, si consiglia di disabilitare la scheda Gestisci contenuto nel visualizzatore della Guida. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
+- Se gli utenti non dispongono dei diritti di amministratore, si consiglia di disabilitare la scheda Gestisci contenuto nel visualizzatore della Guida. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
   
--   L'origine predefinita per la Guida sarà ancora Online.  
+- L'origine predefinita per la Guida sarà ancora Online.  
   
--   Ai client verrà ancora richiesto di installare il contenuto della Guida di base al primo avvio di Visual Studio. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
+- Ai client verrà ancora richiesto di installare il contenuto della Guida di base al primo avvio di Visual Studio. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
   
 ### <a name="create-the-content-set"></a>Creare il set di contenuti  
  Prima di poter creare il set di contenuti di base, è necessario disinstallare tutto il contenuto di Visual Studio locali dal computer di destinazione.  
   
 ##### <a name="to-uninstall-local-help"></a>Per disinstallare la Guida locale  
   
-1.  In Help Viewer scegliere la scheda **Gestisci contenuto**.  
+1. In Help Viewer scegliere la scheda **Gestisci contenuto**.  
   
-2.  Sotto **la documentazione disponibile**, passare al set di documenti di Visual Studio.  
+2. Sotto **la documentazione disponibile**, passare al set di documenti di Visual Studio.  
   
-3.  Scegliere **Rimuovi** accanto a ogni elemento secondario.  
+3. Scegliere **Rimuovi** accanto a ogni elemento secondario.  
   
-4.  Scegli **avviare** disinstallare  
+4. Scegli **avviare** disinstallare  
   
-5.  Passare a *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 e verificare che la cartella contenga solo il file Catalogtype.  
+5. Passare a *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 e verificare che la cartella contenga solo il file Catalogtype.  
   
- Dopo aver rimosso tutto il contenuto della Guida locale di Visual Studio installato in precedenza, si è pronti per scaricare il set di contenuti di base.  
+   Dopo aver rimosso tutto il contenuto della Guida locale di Visual Studio installato in precedenza, si è pronti per scaricare il set di contenuti di base.  
   
 ##### <a name="to-download-the-content"></a>Per scaricare il contenuto  
   
-1.  In Help Viewer scegliere la scheda **Gestisci contenuto**.  
+1. In Help Viewer scegliere la scheda **Gestisci contenuto**.  
   
-2.  Sotto **la documentazione disponibile**, passare al set di documenti a cui si desidera scaricare e quindi scegliere **Add**.  
+2. Sotto **la documentazione disponibile**, passare al set di documenti a cui si desidera scaricare e quindi scegliere **Add**.  
   
-3.  Scegliere **Avvia**.  
+3. Scegliere **Avvia**.  
   
- Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai computer client.  
+   Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai computer client.  
   
 ##### <a name="to-package-the-content"></a>Per creare un pacchetto del contenuto  
   

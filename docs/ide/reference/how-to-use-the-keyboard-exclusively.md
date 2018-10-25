@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e849e851bdb2cfed27ff58e90c4e7248b83ed09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818263"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: usare esclusivamente la tastiera
 
@@ -42,15 +42,15 @@ ms.locfileid: "31949919"
 
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Per aggiungere controlli della casella degli strumenti a una finestra di progettazione tramite la tastiera
 
-1.  Sulla barra dei menu scegliere **Visualizza**, **Casella degli strumenti**.
+1. Sulla barra dei menu scegliere **Visualizza**, **Casella degli strumenti**.
 
-2.  Usare i tasti CTRL+Freccia SU oppure CTRL+Freccia GIÙ per spostarsi tra le sezioni della scheda della casella degli strumenti corrente.
+2. Usare i tasti CTRL+Freccia SU oppure CTRL+Freccia GIÙ per spostarsi tra le sezioni della scheda della casella degli strumenti corrente.
 
-3.  Usare i tasti Freccia SU o **Freccia GIÙ** per passare da un controllo all'altro.
+3. Usare i tasti Freccia SU o **Freccia GIÙ** per passare da un controllo all'altro.
 
-4.  Dopo aver selezionato il controllo, premere il tasto INVIO.
+4. Dopo aver selezionato il controllo, premere il tasto INVIO.
 
- Il controllo viene aggiunto al form o alla finestra di progettazione.
+   Il controllo viene aggiunto al form o alla finestra di progettazione.
 
 ## <a name="dialog-box-options"></a>Opzioni della finestra di dialogo
 

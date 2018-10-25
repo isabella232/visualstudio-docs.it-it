@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::GetOffset | Documenti Microsoft
+title: IDebugFunctionPosition2::GetOffset | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b38ef58238032530252fa487e320d1bd52d4098
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f06223ffc68ed4728f8cd9181575dac361af1bdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849138"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 Recupera la posizione della funzione nel documento di origine.  
@@ -41,7 +41,7 @@ int GetOffset(
   
 #### <a name="parameters"></a>Parametri  
  `pPosition`  
- [in, out] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura che viene compilato con la posizione della funzione in un documento.  
+ [in, out] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura compilata con la posizione della funzione in un documento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

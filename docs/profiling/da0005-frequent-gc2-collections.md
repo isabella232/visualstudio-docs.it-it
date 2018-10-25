@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 697a060399fa17321f30ccb92ad3617e99ca106f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a5e3038f873895e38cf162e67316bc08f2fc007b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849373"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Collection GC2 frequenti
+
 |||  
 |-|-|  
 |ID regola|DA0005|  
@@ -30,18 +31,18 @@ ms.locfileid: "34749333"
 |Metodo di profilatura|Memoria .NET|  
 |Messaggio|Molti degli oggetti vengono raccolti in Garbage Collection di generazione 2.|  
 |Tipo messaggio|Avviso|  
-  
+
 ## <a name="cause"></a>Causa  
  Viene recuperato un numero elevato di oggetti di memoria .NET in Garbage Collection di generazione 2.  
-  
+
 ## <a name="rule-description"></a>Descrizione della regola  
  Common Language Runtime (CLR) di Microsoft .NET offre un meccanismo di gestione automatica della memoria che usa il Garbage Collector per recuperare memoria da oggetti che non vengono più usati dall'applicazione. Il Garbage Collector è orientato alla generazione, basandosi sull'ipotesi che molte allocazioni sono di breve durata. Le variabili locali, ad esempio, dovrebbero essere di breve durata. Gli oggetti appena creati vengono avviati in generazione 0 (gen 0), quindi avanzano a generazione 1 se vengono conservati dopo l'esecuzione di un'operazione di Garbage Collection e infine passano a generazione 2 se sono ancora usati dall'applicazione.  
-  
+
  Gli oggetti in generazione 0 vengono raccolti frequentemente e in genere in modo molto efficace. Gli oggetti in generazione 1 vengono raccolti meno frequentemente e in modo meno efficace. Infine, gli oggetti di lunga durata in generazione 2 dovrebbero essere raccolti con una frequenza ancora inferiore. La raccolta in generazione 2, che è l'esecuzione di un'operazione di Garbage Collection completa, è anche l'operazione più costosa.  
-  
+
  Questa regola viene attivata quando si sono verificate proporzionalmente troppe operazioni di Garbage Collection di generazione 2. Se troppi oggetti di durata relativamente breve vengono mantenuti dopo una raccolta di generazione 1, ma possono essere raccolti in una generazione 2 completa, il costo di gestione della memoria può diventare eccessivo. Per altre informazioni, vedere il post [Mid-life crisis](http://go.microsoft.com/fwlink/?LinkId=177835) (Crisi di mezza età) in Rico Mariani's Performance Tidbits (Curiosità sulle prestazioni di Rico Mariani) sul sito Web MSDN.  
-  
+
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso  
  Rivedere i report delle [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md) per comprendere il modello di allocazione di memoria dell'applicazione. Usare la [Visualizzazione Durata oggetti](../profiling/object-lifetime-view.md) per determinare quali oggetti dati del programma vengono mantenuti nella generazione 2 e verranno quindi recuperati. Usare la [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md) per determinare il percorso di esecuzione che ha comportato queste allocazioni.  
-  
+
  Per informazioni su come migliorare le prestazioni di Garbage Collection, vedere [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=148226) (Nozioni fondamentali su Garbage Collection e suggerimenti sulle prestazioni) sul sito Web Microsoft. Per informazioni sul sovraccarico della procedura di Garbage Collection automatica, vedere [Large Object Heap Uncovered](http://go.microsoft.com/fwlink/?LinkId=177836) (Heap di oggetti grandi).

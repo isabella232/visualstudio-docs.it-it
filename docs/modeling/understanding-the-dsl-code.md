@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813322"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
 Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è possibile usare per leggere e aggiornare le istanze del linguaggio DSL in Visual Studio. Questa API è definita nel codice generato dalla definizione DSL. Questo argomento descrive l'API generata.
@@ -110,25 +110,25 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
 
  Ogni classe di dominio contiene:
 
--   Una definizione di proprietà e una classe di gestore annidata per ogni proprietà di dominio. È possibile eseguire l'override di OnValueChanging() e di OnValueChanged(). Per altre informazioni, vedere [gestori di Modifica valore proprietà di dominio](../modeling/domain-property-value-change-handlers.md).
+- Una definizione di proprietà e una classe di gestore annidata per ogni proprietà di dominio. È possibile eseguire l'override di OnValueChanging() e di OnValueChanged(). Per altre informazioni, vedere [gestori di Modifica valore proprietà di dominio](../modeling/domain-property-value-change-handlers.md).
 
-     Nel linguaggio DSL di esempio, la classe `Comment` contiene una proprietà `Text` e una classe di gestore `TextPropertyHandler`.
+   Nel linguaggio DSL di esempio, la classe `Comment` contiene una proprietà `Text` e una classe di gestore `TextPropertyHandler`.
 
--   Proprietà della funzione di accesso per le relazioni a cui la classe di dominio partecipa. Non ci sono classi annidate per le proprietà del ruolo.
+- Proprietà della funzione di accesso per le relazioni a cui la classe di dominio partecipa. Non ci sono classi annidate per le proprietà del ruolo.
 
-     Nel linguaggio DSL di esempio, la classe `Comment` ha funzioni di accesso che accedono al modello padre con la relazione di incorporamento `ComponentModelHasComments`.
+   Nel linguaggio DSL di esempio, la classe `Comment` ha funzioni di accesso che accedono al modello padre con la relazione di incorporamento `ComponentModelHasComments`.
 
--   Costruttori. Se si desidera eseguire l'override di questi, impostare **ha un costruttore personalizzato** nella classe di dominio.
+- Costruttori. Se si desidera eseguire l'override di questi, impostare **ha un costruttore personalizzato** nella classe di dominio.
 
--   Metodi del gestore EGP (Element Group Prototype). Questi sono necessari se l'utente può *merge* (aggiungere) un altro elemento nelle istanze di questa classe. L'utente in genere esegue questa operazione trascinando da uno strumento elemento o da un'altra forma oppure incollando.
+- Metodi del gestore EGP (Element Group Prototype). Questi sono necessari se l'utente può *merge* (aggiungere) un altro elemento nelle istanze di questa classe. L'utente in genere esegue questa operazione trascinando da uno strumento elemento o da un'altra forma oppure incollando.
 
-     Nel linguaggio DSL di esempio, è possibile unire una porta di input o una porta di output in un componente. Anche componenti e commenti possono essere uniti nel modello. Alla classe
+   Nel linguaggio DSL di esempio, è possibile unire una porta di input o una porta di output in un componente. Anche componenti e commenti possono essere uniti nel modello. Alla classe
 
-     I metodi del gestore EGP nella classe dei componenti consentono a un componente di accettare le porte, ma non i commenti. Il gestore EGP nella classe radice del modello accetta commenti e componenti, ma non le porte.
+   I metodi del gestore EGP nella classe dei componenti consentono a un componente di accettare le porte, ma non i commenti. Il gestore EGP nella classe radice del modello accetta commenti e componenti, ma non le porte.
 
- `DomainModel.cs`
+  `DomainModel.cs`
 
- Classe che rappresenta il modello di dominio. Deriva da <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
+  Classe che rappresenta il modello di dominio. Deriva da <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
 >  È diversa dalla classe radice del modello.
@@ -161,31 +161,31 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
 
  `SerializationHelper.cs`
 
--   Metodo di convalida per verificare che due elementi non siano referenziati dallo stesso moniker. Per altre informazioni, vedere [archiviazione di File di personalizzazione e la serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+- Metodo di convalida per verificare che due elementi non siano referenziati dallo stesso moniker. Per altre informazioni, vedere [archiviazione di File di personalizzazione e la serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
--   Classe SerializationHelper, che fornisce le funzioni usate in comune dalle classi di serializzazione.
+- Classe SerializationHelper, che fornisce le funzioni usate in comune dalle classi di serializzazione.
 
- `Serializer.cs`
+  `Serializer.cs`
 
- Classe di serializzatori per ogni classe di dominio, relazione, forma, connettore, diagramma e modello.
+  Classe di serializzatori per ogni classe di dominio, relazione, forma, connettore, diagramma e modello.
 
- Molte delle funzionalità di queste classi può essere controllati tramite le impostazioni in Esplora DSL sotto **comportamento di serializzazione Xml**.
+  Molte delle funzionalità di queste classi può essere controllati tramite le impostazioni in Esplora DSL sotto **comportamento di serializzazione Xml**.
 
- `Shapes.cs`
+  `Shapes.cs`
 
- Classe per ogni classe di forme nella definizione DSL. Le forme derivano da <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Per altre informazioni, vedere [archiviazione di File di personalizzazione e la serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+  Classe per ogni classe di forme nella definizione DSL. Le forme derivano da <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Per altre informazioni, vedere [archiviazione di File di personalizzazione e la serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
- Per eseguire l'override dei metodi generati con i propri metodi in una classe parziale, impostare **genera una derivata doppia** per il connettore nella definizione DSL. Per sostituire un costruttore con il proprio codice, impostare **ha un costruttore personalizzato**.
+  Per eseguire l'override dei metodi generati con i propri metodi in una classe parziale, impostare **genera una derivata doppia** per il connettore nella definizione DSL. Per sostituire un costruttore con il proprio codice, impostare **ha un costruttore personalizzato**.
 
- Per rendere il colore e alcune altre funzionalità dello stile variabili in fase di esecuzione, fare doppio clic la classe nel diagramma di definizione DSL e scegliere **Aggiungi esposta**.
+  Per rendere il colore e alcune altre funzionalità dello stile variabili in fase di esecuzione, fare doppio clic la classe nel diagramma di definizione DSL e scegliere **Aggiungi esposta**.
 
- Per rendere altre funzionalità dello stile variabili in fase di esecuzione, vedere ad esempio <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> e <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
+  Per rendere altre funzionalità dello stile variabili in fase di esecuzione, vedere ad esempio <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> e <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
 
- `ToolboxHelper.cs`
+  `ToolboxHelper.cs`
 
- Imposta la casella degli strumenti installando prototipi di gruppi di elementi negli strumenti elemento. Copie di questi prototipi vengono unite con gli elementi di destinazione quando l'utente esegue lo strumento.
+  Imposta la casella degli strumenti installando prototipi di gruppi di elementi negli strumenti elemento. Copie di questi prototipi vengono unite con gli elementi di destinazione quando l'utente esegue lo strumento.
 
- È possibile eseguire l'override di `CreateElementPrototype()` per definire un elemento della casella degli strumenti che crea un gruppo di diversi oggetti. È possibile, ad esempio, definire un elemento per rappresentare oggetti che hanno sottocomponenti. Dopo aver modificato il codice, reimpostare l'istanza sperimentale di Visual Studio per cancellare la cache della casella degli strumenti.
+  È possibile eseguire l'override di `CreateElementPrototype()` per definire un elemento della casella degli strumenti che crea un gruppo di diversi oggetti. È possibile, ad esempio, definire un elemento per rappresentare oggetti che hanno sottocomponenti. Dopo aver modificato il codice, reimpostare l'istanza sperimentale di Visual Studio per cancellare la cache della casella degli strumenti.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>File generati nel progetto DslPackage
  DslPackage Accoppia il modello DSL alla shell di Visual Studio, gestire i comandi di finestre, casella degli strumenti e menu. La maggior parte delle classi sono derivate doppie ed è quindi possibile eseguire l'override dei metodi.
@@ -274,7 +274,6 @@ namespace Company.EmbedInForm
   }
 
 }
-
 ```
 
  `EditorFactory.cs`
@@ -326,7 +325,6 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 }
 }
 }
-
 ```
 
  `ModelExplorerToolWindow.cs`

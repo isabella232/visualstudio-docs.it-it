@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedEnums | Documenti Microsoft
+title: IDebugClassField::EnumNestedEnums | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea28f2a455d3528f083ba2acb2e9e4ad8989319
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfdfc8245634f0d674b1ced435a90504c8893d50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815663"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 Crea un enumeratore per gli enumeratori annidati di questa classe.  
@@ -41,10 +41,10 @@ int EnumNestedEnums(
   
 #### <a name="parameters"></a>Parametri  
  `ppEnum`  
- [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) oggetto che rappresenta l'elenco delle enumerazioni annidate. Restituisce un valore null se non sono le enumerazioni non nidificate.  
+ [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) oggetto che rappresenta l'elenco delle enumerazioni annidate. Restituisce un valore null se non esistono Nessun enumerazioni annidate.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK o S_FALSE se sono non presenti gli enumeratori nidificati. In caso contrario, verrà restituito un codice di errore.  
+ Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se non esistono Nessun enumeratori annidati. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  Ogni elemento dell'enumerazione è un [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) oggetto che descrive un'enumerazione nidificata.  
@@ -57,7 +57,7 @@ class RootClass {
 };  
 ```  
   
- Il `EnumNestedEnums` metodo restituirà un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) oggetto che contiene un [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) oggetto che rappresenta il `NestedEnum` enumerazione.  
+ Il `EnumNestedEnums` metodo restituirebbe un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) oggetto che contiene uno [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) oggetto che rappresenta il `NestedEnum` enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

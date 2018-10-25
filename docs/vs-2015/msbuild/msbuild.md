@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253546"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837763"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49253546"
   
  Negli esempi seguenti viene illustrato quando è possibile eseguire le compilazioni tramite la riga di comando di MSBuild, anziché l'IDE di Visual Studio.  
   
--   Visual Studio non è installato.  
+- Visual Studio non è installato.  
   
--   Si desidera usare la versione a 64 bit di MSBuild. Questa versione di MSBuild non è solitamente necessaria, ma consente l'accesso di MSBuild a una maggiore quantità di memoria.  
+- Si desidera usare la versione a 64 bit di MSBuild. Questa versione di MSBuild non è solitamente necessaria, ma consente l'accesso di MSBuild a una maggiore quantità di memoria.  
   
--   Si desidera eseguire una compilazione in più processi. Tuttavia, è possibile usare l'IDE per ottenere lo stesso risultato nei progetti di C++ e C#.  
+- Si desidera eseguire una compilazione in più processi. Tuttavia, è possibile usare l'IDE per ottenere lo stesso risultato nei progetti di C++ e C#.  
   
--   Si intende modificare il sistema di compilazione. Ad esempio, può essere necessario consentire le azioni seguenti:  
+- Si intende modificare il sistema di compilazione. Ad esempio, può essere necessario consentire le azioni seguenti:  
   
-    -   Pre-elabora i file prima che arrivino al compilatore.  
+  -   Pre-elabora i file prima che arrivino al compilatore.  
   
-    -   Copiare gli output di compilazione in un'altra posizione.  
+  -   Copiare gli output di compilazione in un'altra posizione.  
   
-    -   Creare file compressi dagli output di compilazione.  
+  -   Creare file compressi dagli output di compilazione.  
   
-    -   Eseguire un passaggio di post-elaborazione. Ad esempio, può essere utile contrassegnare un assembly con una versione diversa.  
+  -   Eseguire un passaggio di post-elaborazione. Ad esempio, può essere utile contrassegnare un assembly con una versione diversa.  
   
- È possibile scrivere codice nell'IDE di Visual Studio ed eseguire le compilazioni tramite MSBuild. In alternativa, è possibile compilare il codice nell'IDE in un computer di sviluppo e usare una riga di comando di MSBuild per compilare il codice integrato da più sviluppatori.  
+  È possibile scrivere codice nell'IDE di Visual Studio ed eseguire le compilazioni tramite MSBuild. In alternativa, è possibile compilare il codice nell'IDE in un computer di sviluppo e usare una riga di comando di MSBuild per compilare il codice integrato da più sviluppatori.  
   
 > [!NOTE]
 >  È possibile usare Team Foundation Build per compilare, testare e distribuire l'applicazione automaticamente. Il sistema di compilazione può eseguire le compilazioni automaticamente quando gli sviluppatori archiviano il codice, ad esempio come parte di una strategia di integrazione continuata, o secondo a una pianificazione, ad esempio una compilazione notturna di test di verifica compilazione. In Team Foundation Build il codice viene compilato tramite MSBuild. Per altre informazioni, vedere [Build the application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) (Compilare l'applicazione).  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Di seguito sono riportati alcuni dei vantaggi del multitargeting:  
   
--   È possibile sviluppare applicazioni destinate a versioni di .NET Framework precedenti, ad esempio le versioni 2.0, 3.0 e 3.5.  
+- È possibile sviluppare applicazioni destinate a versioni di .NET Framework precedenti, ad esempio le versioni 2.0, 3.0 e 3.5.  
   
--   È possibile avere framework di destinazione diversi da .NET Framework, ad esempio Silverlight.  
+- È possibile avere framework di destinazione diversi da .NET Framework, ad esempio Silverlight.  
   
--   L'applicazione può essere destinata a un *profilo del framework*, vale a dire un subset predefinito di un framework di destinazione.  
+- L'applicazione può essere destinata a un *profilo del framework*, vale a dire un subset predefinito di un framework di destinazione.  
   
--   In caso di rilascio di un Service Pack per la versione corrente di .NET Framework, è possibile destinare l'applicazione a esso.  
+- In caso di rilascio di un Service Pack per la versione corrente di .NET Framework, è possibile destinare l'applicazione a esso.  
   
--   Il multitargeting garantisce che un'applicazione utilizzi solo le funzionalità disponibili nel framework e nella piattaforma di destinazione.  
+- Il multitargeting garantisce che un'applicazione utilizzi solo le funzionalità disponibili nel framework e nella piattaforma di destinazione.  
   
- Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).  
+  Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).  
   
 ## <a name="related-topics"></a>Argomenti correlati  
   

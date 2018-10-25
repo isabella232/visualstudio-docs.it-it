@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856665"
 ---
 # <a name="test-area-5-change-source-control"></a>Area di test 5: Modificare il controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
   
  **Modifica controllo del codice sorgente** comando fornisce quattro funzioni di base per l'utente:  
   
--   **Binding:**  
+- **Binding:**  
   
-     Consente a un utente stabilire o ristabilire un collegamento di controllo di origine tra una soluzione/progetto e l'archivio delle versioni.  
+   Consente a un utente stabilire o ristabilire un collegamento di controllo di origine tra una soluzione/progetto e l'archivio delle versioni.  
   
--   **Annullamento del binding:**  
+- **Annullamento del binding:**  
   
-     Rimuove una progetto/soluzione dal controllo del codice sorgente in una singola connessione.  
+   Rimuove una progetto/soluzione dal controllo del codice sorgente in una singola connessione.  
   
--   **Connettere/disconnettere:**  
+- **Connettere/disconnettere:**  
   
- Attiva o disattiva la stato connesso o non in linea della soluzione controllato, come illustrato nella zona 3. Per altre informazioni, vedere [Test zona 3: estrarre o annullare l'estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Attiva o disattiva la stato connesso o non in linea della soluzione controllato, come illustrato nella zona 3. Per altre informazioni, vedere [Test zona 3: estrarre o annullare l'estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu  
  Nell'esempio [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] percorso menu ambiente di sviluppo integrato è utilizzato nei test case.  

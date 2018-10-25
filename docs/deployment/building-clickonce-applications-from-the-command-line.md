@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceba7b3fd59c571b3541385cf6cd3946796a8e74
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1484466e3d1b1a43a6ff28c2526dbb478ef7392d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079418"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853285"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilazione di applicazioni ClickOnce dalla riga di comando
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], è possibile compilare progetti dalla riga di comando, anche se sono stati creati nell'ambiente di sviluppo integrato (IDE). In effetti, è possibile ricompilare un progetto creato con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] in un altro computer che dispone solo di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installato. In questo modo di riprodurre una build con un processo automatizzato, ad esempio, in una compilazione centrale lab o tramite tecniche di scripting avanzate esula dall'ambito di compilazione del progetto stesso.  
@@ -43,39 +43,39 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
   
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Per creare e pubblicare un progetto di ClickOnce  
   
-1.  Fare clic su **nuovo progetto** dalle **File** menu. Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
+1. Fare clic su **nuovo progetto** dalle **File** menu. Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  Selezionare **applicazione di Windows** e denominarlo `CmdLineDemo`.  
+2. Selezionare **applicazione di Windows** e denominarlo `CmdLineDemo`.  
   
-3.  Dal **compilare** menu, fare clic sul **Publish** comando.  
+3. Dal **compilare** menu, fare clic sul **Publish** comando.  
   
-     Questo passaggio assicura che il progetto sia configurato correttamente per produrre un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione dell'applicazione.  
+    Questo passaggio assicura che il progetto sia configurato correttamente per produrre un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione dell'applicazione.  
   
-     Verrà visualizzata la Pubblicazione guidata.  
+    Verrà visualizzata la Pubblicazione guidata.  
   
-4.  Nella pubblicazione guidata, fare clic su **fine**.  
+4. Nella pubblicazione guidata, fare clic su **fine**.  
   
-     Visual Studio genera e Visualizza la pagina Web predefinita, chiamata *Publish. htm*.  
+    Visual Studio genera e Visualizza la pagina Web predefinita, chiamata *Publish. htm*.  
   
-5.  Salvare il progetto e assicurarsi di annotare il percorso della cartella in cui viene archiviato.  
+5. Salvare il progetto e assicurarsi di annotare il percorso della cartella in cui viene archiviato.  
   
- Crea la procedura descritta sopra un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] progetto in cui è stato pubblicato per la prima volta. A questo punto è possibile riprodurre la compilazione all'esterno dell'IDE.  
+   Crea la procedura descritta sopra un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] progetto in cui è stato pubblicato per la prima volta. A questo punto è possibile riprodurre la compilazione all'esterno dell'IDE.  
   
 #### <a name="to-reproduce-the-build-from-the-command-line"></a>Per ripetere la compilazione dalla riga di comando  
   
-1.  Chiudere [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  
+1. Chiudere [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  
   
-2.  Dalla finestra di Windows **avviare** menu, fare clic su **tutti i programmi**, quindi **Microsoft Visual Studio**, quindi **Visual Studio Tools**, quindi **Prompt dei comandi di visual Studio**. Questo dovrebbe aprire un prompt dei comandi nella cartella radice dell'utente corrente.  
+2. Dalla finestra di Windows **avviare** menu, fare clic su **tutti i programmi**, quindi **Microsoft Visual Studio**, quindi **Visual Studio Tools**, quindi **Prompt dei comandi di visual Studio**. Questo dovrebbe aprire un prompt dei comandi nella cartella radice dell'utente corrente.  
   
-3.  Nel **Prompt dei comandi di Visual Studio**, modificare la directory corrente nel percorso del progetto appena compilato. Ad esempio, digitare `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
+3. Nel **Prompt dei comandi di Visual Studio**, modificare la directory corrente nel percorso del progetto appena compilato. Ad esempio, digitare `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
   
-4.  Per rimuovere i file esistenti generati "creare e pubblicare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] progetti," tipo `rmdir /s publish`.  
+4. Per rimuovere i file esistenti generati "creare e pubblicare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] progetti," tipo `rmdir /s publish`.  
   
-     Questo passaggio è facoltativo, ma garantisce che tutti i nuovi file sono stati prodotti dalla compilazione da riga di comando.  
+    Questo passaggio è facoltativo, ma garantisce che tutti i nuovi file sono stati prodotti dalla compilazione da riga di comando.  
   
-5.  Digitare `msbuild /target:publish`.  
+5. Digitare `msbuild /target:publish`.  
   
- I passaggi precedenti produrrà una procedura completa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione di applicazioni in una sottocartella del progetto denominato **Publish**. *CmdLineDemo. Application* è il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto della distribuzione. La cartella *CmdLineDemo 1.0.0.0* contiene i file *CmdLineDemo.exe* e *CmdLineDemo.exe.manifest ossia*, il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. *Setup.exe* è il programma di bootstrap, che per impostazione predefinita è configurato per installare il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. La cartella DotNetFX contiene i file ridistribuibili per i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Questo è l'intero set di file che necessari per distribuire l'applicazione sul Web o tramite CD/DVD o UNC.  
+   I passaggi precedenti produrrà una procedura completa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione di applicazioni in una sottocartella del progetto denominato **Publish**. *CmdLineDemo. Application* è il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto della distribuzione. La cartella *CmdLineDemo 1.0.0.0* contiene i file *CmdLineDemo.exe* e *CmdLineDemo.exe.manifest ossia*, il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. *Setup.exe* è il programma di bootstrap, che per impostazione predefinita è configurato per installare il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. La cartella DotNetFX contiene i file ridistribuibili per i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Questo è l'intero set di file che necessari per distribuire l'applicazione sul Web o tramite CD/DVD o UNC.  
   
 ## <a name="publish-properties"></a>Pubblica proprietà  
  Quando si pubblica l'applicazione nelle procedure precedenti, le proprietà seguenti vengono inserite nel file di progetto per la pubblicazione guidata. Queste proprietà influiscono direttamente sul modo in cui il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] viene prodotto l'applicazione.  
@@ -110,51 +110,51 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Le opzioni di pubblicazione vengono controllate nei [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dal **Publish**, **sicurezza**, e **firma** pagine delle proprietà del **Progettazione progetti** . Di seguito è riportata una descrizione delle proprietà di pubblicazione, insieme a un'indicazione della ognuno come verrà impostata nelle varie pagine delle proprietà della finestra di progettazione dell'applicazione:  
   
--   `AssemblyOriginatorKeyFile` Determina il file di chiave usato per firmare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti dell'applicazione. Questa stessa chiave inoltre consente di assegnare un nome sicuro all'assembly. Questa proprietà è impostata sul **Signing** pagina della **creazione progetti**.  
+- `AssemblyOriginatorKeyFile` Determina il file di chiave usato per firmare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti dell'applicazione. Questa stessa chiave inoltre consente di assegnare un nome sicuro all'assembly. Questa proprietà è impostata sul **Signing** pagina della **creazione progetti**.  
   
- Le proprietà seguenti vengono impostate per il **sicurezza** pagina:  
+  Le proprietà seguenti vengono impostate per il **sicurezza** pagina:  
   
--   **Abilitare le impostazioni di sicurezza ClickOnce** determina se [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vengono generati i manifesti. Quando un progetto viene creato inizialmente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] generazione del manifesto è disattivata per impostazione predefinita. La procedura guidata verrà attivato automaticamente questo flag viene pubblicato per la prima volta.  
+- **Abilitare le impostazioni di sicurezza ClickOnce** determina se [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vengono generati i manifesti. Quando un progetto viene creato inizialmente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] generazione del manifesto è disattivata per impostazione predefinita. La procedura guidata verrà attivato automaticamente questo flag viene pubblicato per la prima volta.  
   
--   **TargetZone** determina il livello di attendibilità per essere emessa nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. I valori possibili sono "Internet", "Intranet locale" e "Custom". Internet e Intranet locale causerà un'autorizzazione predefinita impostata per essere emessa nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Il valore predefinito è LocalIntranet ed essenzialmente ciò implica l'attendibilità totale. Personalizzata specifica che solo le autorizzazioni specificate in modo esplicito nella base *manifest* devono essere emessa nel file di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Il *manifest* file è un file manifesto parziale che contiene solo le definizioni di informazioni di attendibilità. Si tratta di un file nascosto automaticamente aggiunto al progetto quando si configurano le autorizzazioni nel **sicurezza** pagina.  
+- **TargetZone** determina il livello di attendibilità per essere emessa nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. I valori possibili sono "Internet", "Intranet locale" e "Custom". Internet e Intranet locale causerà un'autorizzazione predefinita impostata per essere emessa nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Il valore predefinito è LocalIntranet ed essenzialmente ciò implica l'attendibilità totale. Personalizzata specifica che solo le autorizzazioni specificate in modo esplicito nella base *manifest* devono essere emessa nel file di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Il *manifest* file è un file manifesto parziale che contiene solo le definizioni di informazioni di attendibilità. Si tratta di un file nascosto automaticamente aggiunto al progetto quando si configurano le autorizzazioni nel **sicurezza** pagina.  
   
- Le proprietà seguenti vengono impostate per il **pubblica** pagina:  
+  Le proprietà seguenti vengono impostate per il **pubblica** pagina:  
   
--   `PublishUrl` è la posizione in cui verrà pubblicata per l'applicazione nell'IDE. Viene inserito nella [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione se non si specifica il `InstallUrl` o `UpdateUrl` è specificata la proprietà.  
+- `PublishUrl` è la posizione in cui verrà pubblicata per l'applicazione nell'IDE. Viene inserito nella [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione se non si specifica il `InstallUrl` o `UpdateUrl` è specificata la proprietà.  
   
--   `ApplicationVersion` Specifica la versione del [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Si tratta di un numero di versione a quattro cifre. Se l'ultima cifra è un "*", quindi il `ApplicationRevision` viene sostituito con il valore inserito nel manifesto in fase di compilazione.  
+- `ApplicationVersion` Specifica la versione del [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Si tratta di un numero di versione a quattro cifre. Se l'ultima cifra è un "*", quindi il `ApplicationRevision` viene sostituito con il valore inserito nel manifesto in fase di compilazione.  
   
--   `ApplicationRevision` Specifica la revisione. Questo è un integer viene incrementato ogni volta che si pubblica nell'IDE. Si noti che non viene automaticamente incrementato per le compilazioni eseguite dalla riga di comando.  
+- `ApplicationRevision` Specifica la revisione. Questo è un integer viene incrementato ogni volta che si pubblica nell'IDE. Si noti che non viene automaticamente incrementato per le compilazioni eseguite dalla riga di comando.  
   
--   `Install` Determina se l'applicazione è un'applicazione installata o un'applicazione eseguita dal Web.  
+- `Install` Determina se l'applicazione è un'applicazione installata o un'applicazione eseguita dal Web.  
   
--   `InstallUrl` (non mostrato) è il percorso in cui gli utenti installeranno l'applicazione da. Se specificato, questo valore viene copiato nel *setup.exe* programma di bootstrap se il `IsWebBootstrapper` proprietà è abilitata. Viene inoltre inserito nel manifesto dell'applicazione, se il `UpdateUrl` non è specificato.  
+- `InstallUrl` (non mostrato) è il percorso in cui gli utenti installeranno l'applicazione da. Se specificato, questo valore viene copiato nel *setup.exe* programma di bootstrap se il `IsWebBootstrapper` proprietà è abilitata. Viene inoltre inserito nel manifesto dell'applicazione, se il `UpdateUrl` non è specificato.  
   
--   `SupportUrl` (non mostrato) è il percorso del collegamento nel **Aggiungi/Rimuovi programmi** finestra di dialogo per un'applicazione installata.  
+- `SupportUrl` (non mostrato) è il percorso del collegamento nel **Aggiungi/Rimuovi programmi** finestra di dialogo per un'applicazione installata.  
   
- Le seguenti proprietà vengono impostate **gli aggiornamenti dell'applicazione** finestra di dialogo, accessibile dalle **Publish** pagina.  
+  Le seguenti proprietà vengono impostate **gli aggiornamenti dell'applicazione** finestra di dialogo, accessibile dalle **Publish** pagina.  
   
--   `UpdateEnabled` indica se l'applicazione deve verificare gli aggiornamenti.  
+- `UpdateEnabled` indica se l'applicazione deve verificare gli aggiornamenti.  
   
--   `UpdateMode` Specifica gli aggiornamenti in primo piano o gli aggiornamenti in Background.  
+- `UpdateMode` Specifica gli aggiornamenti in primo piano o gli aggiornamenti in Background.  
   
--   `UpdateInterval` Specifica la frequenza con cui l'applicazione deve cercare gli aggiornamenti.  
+- `UpdateInterval` Specifica la frequenza con cui l'applicazione deve cercare gli aggiornamenti.  
   
--   `UpdateIntervalUnits` Specifica se il `UpdateInterval` valore è espresso in unità di ore, giorni o settimane.  
+- `UpdateIntervalUnits` Specifica se il `UpdateInterval` valore è espresso in unità di ore, giorni o settimane.  
   
--   `UpdateUrl` (non mostrato) è il percorso da cui l'applicazione riceverà gli aggiornamenti. Se specificato, questo valore viene inserito nel manifesto dell'applicazione.  
+- `UpdateUrl` (non mostrato) è il percorso da cui l'applicazione riceverà gli aggiornamenti. Se specificato, questo valore viene inserito nel manifesto dell'applicazione.  
   
--   Le seguenti proprietà vengono impostate **Publish Options** finestra di dialogo, accessibile dalle **Publish** pagina.  
+- Le seguenti proprietà vengono impostate **Publish Options** finestra di dialogo, accessibile dalle **Publish** pagina.  
   
--   `PublisherName` Specifica il nome del server di pubblicazione visualizzato nel messaggio visualizzato durante l'installazione o esecuzione dell'applicazione. Nel caso di un'applicazione installata, viene anche utilizzata per specificare il nome della cartella il **avviare** menu.  
+- `PublisherName` Specifica il nome del server di pubblicazione visualizzato nel messaggio visualizzato durante l'installazione o esecuzione dell'applicazione. Nel caso di un'applicazione installata, viene anche utilizzata per specificare il nome della cartella il **avviare** menu.  
   
--   `ProductName` Specifica il nome del prodotto visualizzato nel messaggio visualizzato durante l'installazione o esecuzione dell'applicazione. Nel caso di un'applicazione installata, viene anche utilizzata per specificare il nome del collegamento di **avviare** menu.  
+- `ProductName` Specifica il nome del prodotto visualizzato nel messaggio visualizzato durante l'installazione o esecuzione dell'applicazione. Nel caso di un'applicazione installata, viene anche utilizzata per specificare il nome del collegamento di **avviare** menu.  
   
--   Le seguenti proprietà vengono impostate **prerequisiti** finestra di dialogo, accessibile dalle **Publish** pagina.  
+- Le seguenti proprietà vengono impostate **prerequisiti** finestra di dialogo, accessibile dalle **Publish** pagina.  
   
--   `BootstrapperEnabled` Determina se generare il *setup.exe* programma di avvio automatico.  
+- `BootstrapperEnabled` Determina se generare il *setup.exe* programma di avvio automatico.  
   
--   `IsWebBootstrapper` Determina se il *setup.exe* bootstrapper funziona tramite il Web o nella modalità basata su disco.  
+- `IsWebBootstrapper` Determina se il *setup.exe* bootstrapper funziona tramite il Web o nella modalità basata su disco.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL SupportUrl, PublishURL e proprietà UpdateURL  
  Nella tabella seguente mostra le quattro opzioni di URL per la distribuzione ClickOnce.  

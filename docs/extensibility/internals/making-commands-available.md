@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7344fe7227f6fa7afd00684a99d8172bad8736
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857133"
 ---
 # <a name="making-commands-available"></a>Miglioramento della disponibilità dei comandi
 Quando vengono aggiunti più pacchetti VSPackage in Visual Studio, l'interfaccia utente (UI) possa diventare saturi con i comandi. È possibile programmare il pacchetto per contribuire a ridurre questo problema, come indicato di seguito:
@@ -54,12 +54,13 @@ Si noti che il caricamento ritardato può anche migliorare le prestazioni all'av
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Consente di monitorare le modifiche risultanti da azioni dell'utente, ad esempio il caricamento di un progetto o il passaggio di modifica alla compilazione. Quando si verificano modifiche, viene automaticamente modificato l'aspetto dell'IDE. La tabella seguente mostra quattro contesti principali dell'IDE di modifica che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitoraggi.
 
-|Tipo di contesto|Descrizione|
-|---------------------|-----------------|
-|Tipo di progetto attivo|Per la maggior parte dei tipi di progetto, questo `GUID` valore corrisponde al GUID del pacchetto VSPackage che implementa il progetto. Tuttavia [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] progetti usano il tipo di progetto `GUID` come valore.|
-|Finestra attiva|In genere, questo è l'ultima finestra di documento attivo che definisce il contesto dell'interfaccia utente corrente di tasti di scelta rapida. Tuttavia, potrebbe essere anche una finestra degli strumenti con una tabella di tasti di scelta rapida che è simile al Web browser interno. Per le finestre di documento a più schede, ad esempio l'editor HTML, ogni scheda ha un contesto di comandi diverso `GUID`.|
-|Servizio di linguaggio Active|Il servizio di linguaggio che è associato il file che è attualmente visualizzato in un editor di testo.|
-|Finestra degli strumenti attiva|Una finestra degli strumenti che è aperto e ha lo stato attivo.|
+
+| Tipo di contesto | Descrizione |
+|-------------------------| - |
+| Tipo di progetto attivo | Per la maggior parte dei tipi di progetto, questo `GUID` valore corrisponde al GUID del pacchetto VSPackage che implementa il progetto. Tuttavia [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] progetti usano il tipo di progetto `GUID` come valore. |
+| Finestra attiva | In genere, questo è l'ultima finestra di documento attivo che definisce il contesto dell'interfaccia utente corrente di tasti di scelta rapida. Tuttavia, potrebbe essere anche una finestra degli strumenti con una tabella di tasti di scelta rapida che è simile al Web browser interno. Per le finestre di documento a più schede, ad esempio l'editor HTML, ogni scheda ha un contesto di comandi diverso `GUID`. |
+| Servizio di linguaggio Active | Il servizio di linguaggio che è associato il file che è attualmente visualizzato in un editor di testo. |
+| Finestra degli strumenti attiva | Una finestra degli strumenti che è aperto e ha lo stato attivo. |
 
  Un'area principale contesto quinta è lo stato dell'interfaccia utente dell'IDE. Contesti dell'interfaccia utente sono identificati dal contesto del comando attivo `GUID`s, come indicato di seguito:
 

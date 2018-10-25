@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826492"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Novità di estendibilità di Visual Studio 2017
 
@@ -59,13 +59,14 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 > [INSTALLDIR] di seguito fa riferimento alla directory radice di installazione di Visual Studio. *VSIXInstaller.exe* verrà inserito automaticamente, ma per scrivere il codice di distribuzione personalizzati, leggere [individuazione di Visual Studio](locating-visual-studio.md).
 
 * Assembly che sono stati installati solo nella Global Assembly Cache:
-  * Questi assembly vengono ora installati sotto * [INSTALLDIR] \Common7\IDE.\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies.* oppure *\Common7\IDE\PrivateAssemblies. [INSTALLDIR]*. Queste cartelle fanno parte di percorsi di probe del processo di Visual Studio.
+  * Questi assembly vengono ora installati sotto <em>[INSTALLDIR] \Common7\IDE.\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies.</em> oppure *\Common7\IDE\PrivateAssemblies. [INSTALLDIR]*. Queste cartelle fanno parte di percorsi di probe del processo di Visual Studio.
+
 * Assembly che sono stati installati in un percorso probe non e Global Assembly Cache:
   * La copia nella Global Assembly Cache è stata rimossa dal programma di installazione.
   * Oggetto *pkgdef* file è stato aggiunto per specificare una voce di codebase dell'assembly.
 
     Ad esempio:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
   * Il codice sarà in grado di trovare gli assembly di base di Visual Studio.
   * È consigliabile usare un *pkgdef* file per specificare un percorso agli assembly, se necessario.
 * Se l'estensione è in esecuzione all'esterno del processo di Visual Studio:
-  * Prendere in considerazione alla ricerca di assembly principali di Visual Studio in * [INSTALLDIR] \Common7\IDE.\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies.* o *[INSTALLDIR] \Common7\IDE\PrivateAssemblies.* utilizzando il resolver di assembly o file di configurazione.
+  * Prendere in considerazione alla ricerca di assembly principali di Visual Studio sotto <em>[INSTALLDIR] \Common7\IDE.\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies.</em> o *\Common7\IDE\PrivateAssemblies. [INSTALLDIR]* utilizzando il resolver di assembly o file di configurazione.
 
 ## <a name="change-reduce-registry-impact"></a>Modifica: Ridurre l'impatto del Registro di sistema
 

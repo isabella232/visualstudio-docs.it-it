@@ -1,5 +1,5 @@
 ---
-title: 'Area di test 1: Aggiungere a Apri dal controllo del codice sorgente | Documenti Microsoft'
+title: 'Area di test 1: Aggiungere o aprire dal controllo del codice sorgente | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,77 +14,77 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e95ef13a3d8f7a61c53c9938564479adf362a2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3541fc3a4d4b802e4cd89b14dac6d6caf222152
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861657"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente
-Questo controllo del codice sorgente plug-in di test viene illustrata l'area immissione soluzioni o progetti nel controllo del codice sorgente e vengono recuperati dal controllo del codice sorgente.  
+# <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere in / Apri dal controllo del codice sorgente
+Questo controllo del codice sorgente del plug-in di test viene illustrata l'area immissione soluzioni o progetti di controllo del codice sorgente e il loro recupero dal controllo del codice sorgente.  
   
-## <a name="command-menu-access"></a>Accedere al Menu comando  
- Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vengono utilizzati percorsi menu dell'ambiente di sviluppo integrato nei test case:  
+## <a name="command-menu-access"></a>Accesso a comandi di Menu  
+ Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vengono usati percorsi di menu ambiente di sviluppo integrato nei test case:  
   
--   Per [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]aprire dal controllo del codice sorgente: **File**, **aprire**, **progetto**/**soluzione**; cercare nel [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] percorso.  
+- Per la [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], aprire dal controllo del codice sorgente: **File**, **aprire**, **progetto**/**soluzione**; cercare nel [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] posizione.  
   
--   Per altri origine plug-in del controllo, aprire dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **aprire dal controllo del codice sorgente**.  
+- Per altre origine plug-in del controllo, aprire dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **aprire dal controllo del codice sorgente**.  
   
--   Aggiungere al controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo codice sorgente**, **controllo del codice sorgente**, **Aggiungi Progetti al controllo del codice sorgente selezionati**.  
+- Aggiungere al controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo codice sorgente**, **controllo del codice sorgente**, **Add Progetti al controllo del codice sorgente selezionati**.  
   
--   Menu di scelta rapida (progetto/soluzione), **Aggiungi soluzione al controllo del codice sorgente**.  
+- Menu di scelta rapida (progetto/soluzione), **Aggiungi soluzione al controllo del codice sorgente**.  
   
--   Aggiungi dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**.  
+- Aggiungi dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**.  
   
--   Per [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], aggiungere dall'origine controllo è disponibile anche in **File**, **Aggiungi**, **progetto esistente**; cercare nel [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] percorso.  
+- Per [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], aggiungere dall'origine controllo è disponibile anche dal **File**, **Add**, **progetto esistente**; cercare nel [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] posizione.  
   
-    > [!NOTE]
-    >  In questo test, è possibile utilizzare un percorso di un file locale o un sito Web IIS locale (server web).  
+  > [!NOTE]
+  >  Un percorso di un file locale o un server IIS locale (server web) può essere utilizzato in questo test.  
   
 ## <a name="expected-behavior"></a>Comportamento previsto  
   
--   Per ogni tipo di progetto supportati, un utente deve essere in grado di "Aggiungere" e "Aperto" dal controllo del codice sorgente.  
+-   Per ogni tipo di progetto supportati, un utente deve essere in grado di "Add a" e "Aperto" dal controllo del codice sorgente.  
   
--   Quando viene aggiunto un progetto al controllo del codice sorgente, un corrispondente \< *ProjectName*> viene creato e vspscc (file di progetto hint). Contiene informazioni di connessione e l'elenco di file esclusione. Non eliminare questo file perché contiene informazioni specifiche per il progetto.  
+-   Quando viene aggiunto un progetto al controllo del codice sorgente, un oggetto corrispondente \< *NomeProgetto*> vspscc (file di progetto hint) viene creato. Contiene informazioni di connessione e l'elenco di file esclusione. Non eliminare questo file perché contiene informazioni specifiche per il progetto.  
   
--   Quando una soluzione viene aggiunta al controllo del codice sorgente, un corrispondente \< *SolutionName*> viene creato il file. vssscc (triple S). Il file di testo contiene informazioni di connessione e un elenco di file di esclusione, simile al file di hint di progetto. Questo file è temporaneo ed esiste solo nel database del controllo del codice sorgente.  
+-   Quando viene aggiunta una soluzione al controllo del codice sorgente, un oggetto corrispondente \< *SolutionName*> viene creato il file. vssscc (tripla S). Il file di testo contiene le informazioni di connessione e un elenco di file di esclusione, simile al file dei suggerimenti di progetto. Questo file è temporaneo ed esiste solo nel database del controllo del codice sorgente.  
   
--   Quando viene aperta una soluzione dal controllo del codice sorgente, un \< *SolutionName*> .vsscc (S double) i file che esiste solo nel database del controllo del codice sorgente viene creato in locale in un file temporaneo. Questo file contiene il percorso dalla cartella di connessione della soluzione per il file della soluzione. Questo file è temporaneo e la copia locale viene eliminata quando l'operazione "Apri dal controllo del codice sorgente" è stata completata.  
+-   Quando viene aperta una soluzione dal controllo del codice sorgente, un' \< *SolutionName*> file .vsscc (S double) che esiste solo nel database di controllo di origine, viene creato in locale in un file temporaneo. Questo file contiene il percorso dalla cartella di connessione della soluzione per il file della soluzione. Questo file è temporaneo e la copia locale viene eliminata quando l'operazione "Apri dal controllo del codice sorgente" è stata completata.  
   
--   Dopo l'aggiunta di un progetto per il controllo del codice sorgente, è possibile eseguire le azioni di controllo di origine su di esso (estrazione, Get e così via).  
+-   Dopo l'aggiunta di un progetto di controllo del codice sorgente, è possibile eseguire le azioni di controllo sorgente su di esso (estrazione, Get e così via).  
   
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per l'aggiunta a / Open dall'area di test di controllo del codice sorgente.  
   
 ### <a name="case-1a-add-solution-to-source-control"></a>Caso 1a: Aggiungi soluzione al controllo del codice sorgente  
- Questo test case è incentrata sull'aggiunta di soluzioni al controllo del codice sorgente.  
+ Questo test case è incentrata sull'aggiunta di soluzioni di controllo del codice sorgente.  
   
-|Operazione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
-|Aggiungere una soluzione contenente un progetto di client di controllo del codice sorgente|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).|Soluzione/progetto è stato aggiunto al controllo del codice sorgente.|  
-|Aggiungere una soluzione contenente un File System o un progetto Web IIS locale al controllo del codice sorgente|1.  Creare un File System o un progetto Web IIS locale (clic sul pulsante Sfoglia per puntare al percorso del progetto; il percorso determina il tipo di progetto Web viene creato).<br />2.  Aggiungere la soluzione al controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).|Soluzione/progetto è stato aggiunto al controllo del codice sorgente.|  
-|Aggiungere una soluzione contenente un progetto Web del sito remoto al controllo del codice sorgente|1.  Creare un progetto Web del sito remoto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).<br />3.  Fare clic su **OK** nella finestra di dialogo Avviso di accesso di FrontPage.|Soluzione è stata aggiunta al controllo del codice sorgente.<br /><br /> Progetto di sito remoto non è incluso nel controllo del codice sorgente. (Progetti di sito remoto devono essere controllati da un server IIS).|  
-|Aggiungere una singolo progetto soluzione al controllo di origine mediante **Aggiungi progetti selezionati a controllo del codice sorgente**.|1.  Creare una singolo progetto soluzione.<br />2.  Aggiungere solo soluzione al controllo del codice sorgente come selezione (**File**, **controllo del codice sorgente**, **Aggiungi progetti selezionati a controllo del codice sorgente**). Se questo passaggio ha esito positivo, andare al passaggio successivo.<br />3.  Aggiungi progetto al controllo del codice sorgente come selezione (**File**, **controllo del codice sorgente**, **Aggiungi progetti selezionati a controllo del codice sorgente**).<br />4.  Fare clic su **Sì** per aggiungere il progetto nello stesso percorso.<br />5.  Fare clic su **Estrai** in **Estrai per la modifica** la finestra di dialogo.|`Result from Step 2:`<br /><br /> Il progetto e tutti i file all'interno del progetto hanno un indicatore di controllo origine out e consente di visualizzare una descrizione comando "non in"controllo del codice sorgente.<br /><br /> `Result from Step 5:`<br /><br /> File di progetto e di soluzione sono nella stessa cartella nel controllo del codice sorgente.|  
-|Annullare l'aggiunta di una soluzione a controllo del codice sorgente|1.  Creare una singolo progetto soluzione.<br />2.  Tentativo di aggiungere progetti e soluzioni al controllo del codice sorgente. Se questo passaggio ha esito positivo, andare al passaggio successivo.<br />3.  Annullare una volta nel controllo del codice sorgente.|`Result from Step 2:`<br /><br /> Il Set di progetto percorso origine controllo finestra di dialogo viene visualizzata una sola volta.<br /><br /> `Result from Step 3:`<br /><br /> Progetto aggiungere annullato, progetto/soluzione non è incluso nel controllo del codice sorgente e tutti aggiungere al menu di controllo origine ancora disponibili.|  
+|Aggiungi soluzione contenente un progetto di client di controllo del codice sorgente|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).|Soluzione/progetto è stato aggiunto al controllo del codice sorgente.|  
+|Aggiungi soluzione contenente un File System o un progetto Web IIS locale al controllo del codice sorgente|1.  Creare un File System o un progetto Web IIS locale (utilizzare sui puntini di sospensione per puntare al percorso del progetto; il percorso determina il tipo di progetto Web viene creato).<br />2.  Aggiungere la soluzione al controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).|Soluzione/progetto è stato aggiunto al controllo del codice sorgente.|  
+|Aggiungi soluzione contenente un progetto Web sito remoto al controllo del codice sorgente|1.  Creare un progetto Web sito remoto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).<br />3.  Fare clic su **OK** nella finestra di dialogo Avviso di accesso di FrontPage.|Soluzione è stata aggiunta al controllo del codice sorgente.<br /><br /> Progetto di sito remoto non è incluso nel controllo del codice sorgente. (I progetti di sito remoto devono essere controllati da un proprio server IIS).|  
+|Aggiungi una soluzione di singolo progetto all'uso di controllo di origine **Aggiungi progetti selezionati a controllo del codice sorgente**.|1.  Creare una soluzione di singolo progetto.<br />2.  Aggiungere solo soluzioni al controllo del codice sorgente come selezione (**File**, **controllo del codice sorgente**, **Aggiungi progetti selezionati a controllo del codice sorgente**). Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />3.  Aggiungi progetto al controllo del codice sorgente come selezione (**File**, **controllo del codice sorgente**, **Aggiungi progetti selezionati a controllo del codice sorgente**).<br />4.  Fare clic su **Sì** per aggiungere il progetto nella stessa posizione.<br />5.  Fare clic su **Estrai** nelle **Estrai per la modifica** nella finestra di dialogo.|`Result from Step 2:`<br /><br /> Il progetto e tutti i file all'interno del progetto dispongono di una selezione out indicatore del controllo di origine e una descrizione comando Visualizza "non sotto controllo del codice sorgente".<br /><br /> `Result from Step 5:`<br /><br /> File di progetto e soluzione sono nella stessa cartella nel controllo del codice sorgente.|  
+|Annullare l'aggiunta di una soluzione al controllo del codice sorgente|1.  Creare una soluzione di singolo progetto.<br />2.  Tentativo di aggiungere progetti e soluzioni al controllo del codice sorgente. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />3.  Annullare dopo essere entrati nel controllo del codice sorgente.|`Result from Step 2:`<br /><br /> La finestra di dialogo Set progetto percorso origine controllo viene visualizzata una sola volta.<br /><br /> `Result from Step 3:`<br /><br /> Progetto aggiunta annullata, progetto/soluzione non è incluso nel controllo del codice sorgente e aggiungere al menu di controllo di origine ancora disponibili.|  
   
 ### <a name="case-1b-open-solution-from-source-control"></a>1b case. Apri soluzione dal controllo del codice sorgente  
- Questo test case è incentrata sull'apertura di soluzioni dal controllo del codice sorgente.  
+ Questo test case è incentrato sull'apertura di soluzioni dal controllo del codice sorgente.  
   
-|Operazione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Aprire una soluzione contenente un progetto client dal controllo del codice sorgente|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Aprire la soluzione dal controllo del codice sorgente in un nuovo percorso.|Soluzione/progetto aperto dal controllo del codice sorgente.|  
-|Aprire una soluzione contenente un locale o un progetto Web di IIS dal controllo del codice sorgente|1.  Creare un progetto Web di IIS locale.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Aprire la soluzione dal controllo del codice sorgente in un nuovo percorso.|Soluzione/progetto aperto dal controllo del codice sorgente.|  
-|Aprire una soluzione contenente un progetto Web del sito remoto dal controllo del codice sorgente|1.  Creare un progetto Web del sito remoto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente. Se questo passaggio ha esito positivo, andare al passaggio successivo.<br />3.  Chiudere la soluzione.<br />4.  Aprire la soluzione dal controllo del codice sorgente in un nuovo percorso.|`Result from Step 2:`<br /><br /> Web del sito remoto non è incluso nel controllo del codice sorgente.<br /><br /> `Result from Step 4:`<br /><br /> Soluzione aperta dal controllo del codice sorgente.<br /><br /> Progetto di sito remoto viene caricato, ma non è incluso nel controllo del codice sorgente.|  
+|Aprire una soluzione contenente un locale o un progetto Web di IIS dal controllo del codice sorgente|1.  Creare un progetto di Web IIS o locale.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Aprire la soluzione dal controllo del codice sorgente in un nuovo percorso.|Soluzione/progetto aperto dal controllo del codice sorgente.|  
+|Aprire una soluzione contenente un progetto Web sito remoto dal controllo del codice sorgente|1.  Creare un progetto Web sito remoto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />3.  Chiudere la soluzione.<br />4.  Aprire la soluzione dal controllo del codice sorgente in un nuovo percorso.|`Result from Step 2:`<br /><br /> Web sito remoto non è incluso nel controllo del codice sorgente.<br /><br /> `Result from Step 4:`<br /><br /> Soluzione aperta dal controllo del codice sorgente.<br /><br /> Progetto di sito remoto viene caricato, ma non è incluso nel controllo del codice sorgente.|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>Caso c 1: aggiungere una soluzione dal controllo del codice sorgente  
+### <a name="case-1c-add-solution-from-source-control"></a>Caso 1c: Aggiungi soluzione dal controllo del codice sorgente  
  Questo test case è incentrata sull'aggiunta di soluzioni dal controllo del codice sorgente.  
   
-|Operazione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
-|Aggiungere alla soluzione vuota, ovvero una singolo progetto soluzione|1.  Creare una singolo progetto soluzione.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare una seconda soluzione vuota.<br />5.  Aggiungere la soluzione in precedenza è controllata dal controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|Il progetto aggiunto viene visualizzato **Esplora** e viene archiviato.|  
-|Aggiungere alla soluzione con singolo progetto, ovvero unico progetto|1.  Creare una soluzione con un singolo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare una seconda soluzione vuota.<br />5.  Aggiungere la soluzione in precedenza è controllata dal controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|Il progetto aggiunto viene visualizzato **Esplora** e viene archiviato.|  
-|Aggiungere alla soluzione-soluzione aggiunto al controllo del codice sorgente dalla selezione|1.  Creare una soluzione con un progetto.<br />2.  Aggiungere solo soluzione al controllo del codice sorgente come selezione. Se questo passaggio ha esito positivo, andare al passaggio successivo.<br />3.  Chiudere la soluzione.<br />4.  Creare una nuova soluzione.<br />5.  Aggiungere la soluzione in precedenza è controllata dal controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|`Result from Step 2:`<br /><br /> Progetto non è incluso nel controllo del codice sorgente.<br /><br /> `Result from Step 5:`<br /><br /> Se la prima soluzione conteneva degli elementi, non aggiungere dal controllo del codice sorgente, pertanto non verranno visualizzati.<br /><br /> Progetto dalla soluzione primo viene visualizzato come non disponibile.|  
+|Aggiungi a soluzione vuota, ovvero una singolo progetto soluzione|1.  Creare una soluzione di singolo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare una seconda soluzione vuota.<br />5.  Aggiungere la soluzione in precedenza controllata dal controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|Il progetto aggiunto viene visualizzato nella **Esplora soluzioni** e viene archiviato.|  
+|Aggiungere alla soluzione con singolo progetto, ovvero singolo progetto|1.  Creare una soluzione con un singolo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare una seconda soluzione vuota.<br />5.  Aggiungere la soluzione in precedenza controllata dal controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|Il progetto aggiunto viene visualizzato nella **Esplora soluzioni** e viene archiviato.|  
+|Aggiungere alla soluzione-soluzione aggiunto al controllo del codice sorgente in base a selezione|1.  Creare una soluzione con un progetto.<br />2.  Aggiungere solo soluzione al controllo del codice sorgente come selezione. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />3.  Chiudere la soluzione.<br />4.  Creare una nuova soluzione.<br />5.  Aggiungere la soluzione in precedenza controllata dal controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|`Result from Step 2:`<br /><br /> Progetto non è incluso nel controllo del codice sorgente.<br /><br /> `Result from Step 5:`<br /><br /> Se la prima soluzione dispone di elementi di soluzione, non possono essere aggiunti dal controllo del codice sorgente, in modo che non sono visualizzate.<br /><br /> Progetto dalla soluzione prima viene visualizzato come non disponibile.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

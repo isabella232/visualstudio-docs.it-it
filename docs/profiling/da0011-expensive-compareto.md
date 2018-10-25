@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d23ec25909dbce150600674136117183758f5fb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4f6137c07ac6b920234a9772764b5ad758efdb1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818848"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Funzione compareTo dispendiosa
+
 |||  
 |-|-|  
 |ID regola|DA0011|  
@@ -30,12 +31,12 @@ ms.locfileid: "34750415"
 |Metodi di profilatura|Campionamento<br /><br /> Memoria .NET|  
 |Messaggio|Le funzioni CompareTo dovrebbero essere semplici e non allocare memoria. Se possibile, ridurre la complessità della funzione CompareTo.|  
 |Tipo regola|Avviso|  
-  
+
 ## <a name="cause"></a>Causa  
  Il metodo CompareTo del tipo è dispendioso o alloca memoria.  
-  
+
 ## <a name="rule-description"></a>Descrizione della regola  
  I metodi CompareTo dovrebbero essere efficienti e non allocare memoria.  
-  
+
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Ridurre la complessità del metodo CompareTo.

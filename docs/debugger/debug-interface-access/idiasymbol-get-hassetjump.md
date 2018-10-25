@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasSetJump | Documenti Microsoft
+title: Get_hassetjump | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e426cad156c79ac532154a201785fed8ed47884
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 29e31a9d3ef88732c06c9b0efa7cd37fc18cd8d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880041"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
-Recupera un flag che specifica se la funzione contiene un utilizzo del [setjmp](/cpp/c-runtime-library/reference/setjmp) comando (associato al [longjmp](/cpp/c-runtime-library/reference/longjmp) comando, che costituiscono il metodo di tipo C di gestione delle eccezioni).  
+Recupera un flag che specifica se la funzione contiene un utilizzo il [setjmp](/cpp/c-runtime-library/reference/setjmp) comando (abbinata con la [longjmp](/cpp/c-runtime-library/reference/longjmp) comando, che costituiscono il metodo di tipo C di gestione delle eccezioni).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,7 +47,7 @@ HRESULT get_hasSetJump(
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 8.0 DIA SDK|  
+|Versione:|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

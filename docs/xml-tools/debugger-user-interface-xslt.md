@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847383"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 
@@ -41,7 +41,7 @@ Per altre informazioni, vedere la [riferimento all'interfaccia utente di debug](
  Nella finestra Variabili locali vengono inoltre visualizzate le variabili di contesto predefinite che tengono traccia del contesto della trasformazione XSLT. Nella tabella seguente vengono descritte le variabili di contesto predefinite usate dal debugger XSLT.
 
 |Nome|Descrizione|
-|----------|-----------------|
+|-|-----------------|
 |`last()`|La dimensione del contesto.|
 |`position()`|Posizione, ossia il numero di indice, del nodo di contesto, in base alla dimensione del contesto.|
 |`self::node()`|Il valore del nodo di contesto.|

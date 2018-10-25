@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862203"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
 ## <a name="completion-lists"></a>Elenchi di completamento  
  Gli elenchi di completamento di IntelliSense in Visual C# contengono token di Elenca membri, Completa parola e altri ancora. Forniscono funzionalità di accesso rapido a:  
   
--   Membri di un tipo o spazio dei nomi  
+- Membri di un tipo o spazio dei nomi  
   
--   Nomi di variabili, comandi e funzioni  
+- Nomi di variabili, comandi e funzioni  
   
--   [Frammenti di codice](#CodeSnippets),  
+- [Frammenti di codice](#CodeSnippets),  
   
--   [Parole chiave del linguaggio](#Keywords),  
+- [Parole chiave del linguaggio](#Keywords),  
   
--   [Metodi di estensione](#ExtensionMethods)  
+- [Metodi di estensione](#ExtensionMethods)  
   
- L’Elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati in C#](../misc/filtered-completion-lists-in-csharp.md) e [Elementi dell'elenco di completamento preselezionati in C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  L’Elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati in C#](../misc/filtered-completion-lists-in-csharp.md) e [Elementi dell'elenco di completamento preselezionati in C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Frammenti di codice negli elenchi di completamento  
  In Visual C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [Elemento Shortcut (frammenti di codice IntelliSense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) del frammento.  Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in Visual C#, vedere [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md).  
@@ -123,23 +123,23 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
   
  Per visualizzare le opzioni appropriate, è possibile utilizzare le procedure seguenti:  
   
--   Fare clic sull'identificatore non definito. Viene visualizzata una sottolineatura breve sotto il carattere più a sinistra. Posizionare il puntatore del mouse su tale breve sottolineatura. Viene visualizzato uno smart tag (un'icona). Fare clic sullo smart tag.  
+- Fare clic sull'identificatore non definito. Viene visualizzata una sottolineatura breve sotto il carattere più a sinistra. Posizionare il puntatore del mouse su tale breve sottolineatura. Viene visualizzato uno smart tag (un'icona). Fare clic sullo smart tag.  
   
--   Fare clic sull'identificatore non definito, quindi premere CTRL+. (punto).  
+- Fare clic sull'identificatore non definito, quindi premere CTRL+. (punto).  
   
--   Fare clic con il pulsante destro del mouse sull'identificatore non definito e quindi selezionare **Genera**.  
+- Fare clic con il pulsante destro del mouse sull'identificatore non definito e quindi selezionare **Genera**.  
   
- Le opzioni visualizzate possono includere quanto segue:  
+  Le opzioni visualizzate possono includere quanto segue:  
   
--   **Genera stub proprietà**  
+- **Genera stub proprietà**  
   
--   **Genera stub campo**  
+- **Genera stub campo**  
   
--   **Genera stub di metodo**  
+- **Genera stub di metodo**  
   
--   **Genera classe**  
+- **Genera classe**  
   
--   **Genera nuovo tipo** (per una classe, struct, interfaccia o enumerazione)  
+- **Genera nuovo tipo** (per una classe, struct, interfaccia o enumerazione)  
   
 ## <a name="generate-event-handlers"></a>Genera gestori eventi  
  Nell'editor del codice, IntelliSense consente di agganciare i metodi (gestori eventi) ai campi evento.  

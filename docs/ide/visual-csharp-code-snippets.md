@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849164"
 ---
 # <a name="c-code-snippets"></a>Frammenti di codice C#
 
@@ -34,7 +34,7 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di codice seguenti.
 
 |Nome (o collegamento)|Descrizione|Percorsi validi per l'inserimento del frammento di codice|
-|--------------------------|-----------------|---------------------------------------|
+| - |-----------------| - |
 |#if|Crea una direttiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) e una direttiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|Ovunque.|
 |#region|Crea una direttiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) e una direttiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|Ovunque.|
 |~|Crea un [finalizzatore](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (distruttore) per la classe contenitore.|All'interno di una classe.|

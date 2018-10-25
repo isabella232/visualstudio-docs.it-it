@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90acef8176910d724a0b5419c0e91d685ca2d43e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: c8e1be72076fe1d13ef9f0c4144ce097d0743305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825868"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Ogni elemento usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere specificato come figlio di un elemento `ItemGroup`.  
@@ -59,10 +59,10 @@ Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti 
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
-|[Destinazione](../msbuild/target-element-msbuild.md)|A partire da .NET Framework 3.5, l'elemento `ItemGroup` può essere visualizzato in un elemento `Target`. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).|  
+| Elemento | Descrizione |
+| - | - |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Destinazione](../msbuild/target-element-msbuild.md) | A partire da .NET Framework 3.5, l'elemento `ItemGroup` può essere visualizzato in un elemento `Target`. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md). |
   
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente illustra le raccolte di elementi definite dall'utente `Res` e `CodeFiles` in un elemento `ItemGroup`. Ogni elemento nella raccolta di elementi `Res` contiene un elemento [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) figlio definito dall'utente.  

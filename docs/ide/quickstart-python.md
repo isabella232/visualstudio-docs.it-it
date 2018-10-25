@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877114"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 
@@ -62,7 +62,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 
     ![Ambiente predefinito visualizzato in Esplora soluzioni](media/quickstart-python-02-default-environment.png)
 
-1. Fare clic con il pulsante destro del mouse sull'ambiente e selezionare **Installa pacchetto Python**. Questo comando apre la finestra **Ambienti Python** nella scheda **Pacchetti**.
+1. Fare clic con il pulsante destro del mouse sull'ambiente e selezionare **Installa pacchetto Python**. Questo comando apre la finestra **Ambienti Python** nella scheda Pacchetti.
 
 1. Immettere "flask" nel campo di ricerca e selezionare **pip install flask from PyPI**. Accettare le richieste relative ai privilegi di amministratore e osservare nella finestra **Output** di Visual Studio lo stato dell'operazione. (Un prompt dei comandi per l'elevazione dei privilegi viene visualizzato quando la cartella dei pacchetti per l'ambiente globale si trova all'interno di un'area protetta come *C:\Programmi*.)
 
@@ -124,19 +124,19 @@ A questo punto si aggiunge un frammento di codice Python per implementare un'app
 
     ![Impostazione del file di avvio per un progetto in Esplora soluzioni](media/quickstart-python-05-set-as-startup-file.png)
 
-1. Fare clic con il pulsante destro del mouse in **Esplora soluzioni** e scegliere **Proprietà**. Selezionare quindi la scheda **Debug** e impostare la proprietà **Numero porta** su `4449`. Questo passaggio garantisce che Visual Studio avvii un browser con `localhost:4449` per creare una corrispondenza con gli argomenti `app.run` nel codice.
+2. Fare clic con il pulsante destro del mouse in **Esplora soluzioni** e scegliere **Proprietà**. Selezionare quindi la scheda **Debug** e impostare la proprietà **Numero porta** su `4449`. Questo passaggio garantisce che Visual Studio avvii un browser con `localhost:4449` per creare una corrispondenza con gli argomenti `app.run` nel codice.
 
-1. Selezionare **Debug > Avvia senza eseguire debug** (**CTRL**+**F5**) che consente di salvare le modifiche ai file ed esegue l'app.
+3. Selezionare **Debug > Avvia senza eseguire debug** (**CTRL**+**F5**) che consente di salvare le modifiche ai file ed esegue l'app.
 
-1. Viene visualizzata una finestra di comando con il messaggio "* Esecuzione in https://localhost:4449/" e quindi su `localhost:4449` si apre una finestra del browser che visualizza il messaggio "Hello, Python!" Nella finestra di comando viene visualizzata anche la richiesta GET con stato uguale a 200.
+4. Viene visualizzata una finestra di comando con il messaggio "* Esecuzione in <https://localhost:4449/>" e quindi su `localhost:4449` si apre una finestra del browser che visualizza il messaggio "Hello, Python!" Nella finestra di comando viene visualizzata anche la richiesta GET con stato uguale a 200.
 
     Se il browser non si apre automaticamente, avviare un browser a scelta e passare a `localhost:4449`.
 
     Se la finestra di comando visualizza solo la shell interattiva Python o se la finestra lampeggia brevemente sullo schermo, verificare di aver impostato *app.py* come file di avvio nel passaggio 1 precedente.
 
-1. Passare a `localhost:4449/hello` per verificare che anche l'elemento Decorator per la risorsa `/hello` funzioni. Nella finestra di comando viene visualizzata di nuovo la richiesta GET con stato uguale a 200. È possibile provare anche altri URL. Sì vedrà che nella finestra di comando viene visualizzato il codice di stato 404.
+5. Passare a `localhost:4449/hello` per verificare che anche l'elemento Decorator per la risorsa `/hello` funzioni. Nella finestra di comando viene visualizzata di nuovo la richiesta GET con stato uguale a 200. È possibile provare anche altri URL. Sì vedrà che nella finestra di comando viene visualizzato il codice di stato 404.
 
-1. Chiudere la finestra di comando per arrestare l'applicazione, quindi chiudere la finestra del browser.
+6. Chiudere la finestra di comando per arrestare l'applicazione, quindi chiudere la finestra del browser.
 
 **Domanda: qual è la differenza tra i comandi Avvia senza eseguire debug e Avvia debug?**
 

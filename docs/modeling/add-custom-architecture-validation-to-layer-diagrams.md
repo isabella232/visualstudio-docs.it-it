@@ -11,59 +11,63 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ffb018e590b95a13e811180e88d1906bf5f703b0
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: e9343ed8fdb1f3993fcd5c2f70595fd4bdd92dcd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875450"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
+
 In Visual Studio, gli utenti possono convalidare il codice sorgente in un progetto rispetto a un modello di livello in modo da poter verificare che il codice sorgente sia conforme alla dipendenze in un diagramma delle dipendenze. Benché sia disponibile un algoritmo di convalida standard, è possibile definire estensioni di convalida personalizzate.
 
- Quando l'utente seleziona il **Convalida architettura** comando in un diagramma di dipendenza, viene richiamato il metodo di convalida standard, seguito dalle eventuali estensioni di convalida che sono stati installati.
+Quando l'utente seleziona il **Convalida architettura** comando in un diagramma di dipendenza, viene richiamato il metodo di convalida standard, seguito dalle eventuali estensioni di convalida che sono stati installati.
 
 > [!NOTE]
->  In un diagramma di dipendenza, lo scopo principale di convalida è confrontare il diagramma con il codice programma in altre parti della soluzione.
+> In un diagramma di dipendenza, lo scopo principale di convalida è confrontare il diagramma con il codice programma in altre parti della soluzione.
 
- È possibile creare un pacchetto dell'estensione di convalida dei livelli in un progetto VSIX (Visual Studio Integration Extension), che è possibile distribuire ad altri utenti di Visual Studio. È possibile inserire solo il validator in un progetto VSIX oppure combinarlo con altre estensioni nello stesso progetto VSIX. È consigliabile scrivere il codice del validator in un progetto di Visual Studio a se stante anziché nello stesso progetto di altre estensioni.
+È possibile creare un pacchetto dell'estensione di convalida dei livelli in un progetto VSIX (Visual Studio Integration Extension), che è possibile distribuire ad altri utenti di Visual Studio. È possibile inserire solo il validator in un progetto VSIX oppure combinarlo con altre estensioni nello stesso progetto VSIX. È consigliabile scrivere il codice del validator in un progetto di Visual Studio a se stante anziché nello stesso progetto di altre estensioni.
 
 > [!WARNING]
->  Dopo aver creato un progetto di convalida, copiare il [codice di esempio](#example) disponibile alla fine di questo argomento e quindi modificarlo in base alle esigenze.
+> Dopo aver creato un progetto di convalida, copiare il [codice di esempio](#example) disponibile alla fine di questo argomento e quindi modificarlo in base alle esigenze.
 
 ## <a name="requirements"></a>Requisiti
- Vedere [Requisiti](../modeling/extend-layer-diagrams.md#prereqs).
+
+Vedere [Requisiti](../modeling/extend-layer-diagrams.md#prereqs).
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Definizione di un validator dei livelli in un nuovo progetto VSIX
- Il modo più rapido per creare un validator è usare il modello di progetto. In questo modo il codice e il manifesto VSIX vengono inseriti nello stesso progetto.
 
-#### <a name="to-define-an-extension-by-using-a-project-template"></a>Per definire un'estensione tramite un modello di progetto
+Il modo più rapido per creare un validator è usare il modello di progetto. In questo modo il codice e il manifesto VSIX vengono inseriti nello stesso progetto.
 
-1.  Creare un progetto in una nuova soluzione usando il comando **Nuovo progetto** del menu **File** .
+### <a name="to-define-an-extension-by-using-a-project-template"></a>Per definire un'estensione tramite un modello di progetto
 
-2.  Nella finestra di dialogo **Nuovo progetto** selezionare **Estensione di convalida progettazione livelli**in **Progetti di modellazione**.
+1. Creare un progetto in una nuova soluzione usando il comando **Nuovo progetto** del menu **File** .
 
-     Il modello crea un progetto che contiene un piccolo esempio.
+2. Nella finestra di dialogo **Nuovo progetto** selezionare **Estensione di convalida progettazione livelli**in **Progetti di modellazione**.
 
-    > [!WARNING]
-    >  Modello makethe funziona correttamente:
-    >
-    >  -   Modificare le chiamate a `LogValidationError` in modo da rimuovere gli argomenti facoltativi `errorSourceNodes` e `errorTargetNodes`.
-    > -   Se si usano proprietà personalizzate, applicare l'aggiornamento indicato in [aggiungere proprietà personalizzate ai diagrammi delle dipendenze](../modeling/add-custom-properties-to-layer-diagrams.md).
+    Il modello crea un progetto che contiene un piccolo esempio.
 
-3.  Modificare il codice per definire la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).
+   > [!WARNING]
+   > Per fare in modo che il modello funzioni correttamente:
+   >
+   > - Modificare le chiamate a `LogValidationError` in modo da rimuovere gli argomenti facoltativi `errorSourceNodes` e `errorTargetNodes`.
+   > - Se si usano proprietà personalizzate, applicare l'aggiornamento indicato in [aggiungere proprietà personalizzate ai diagrammi delle dipendenze](../modeling/add-custom-properties-to-layer-diagrams.md).
 
-4.  Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).
+3. Modificare il codice per definire la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).
 
-    > [!NOTE]
-    >  Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).
+4. Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).
 
-5.  Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** del file in **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .
+   > [!NOTE]
+   > Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).
+
+5. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **estensioni e aggiornamenti** nel **Tools** menu.
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Aggiunta di validator dei livelli a un progetto VSIX separato
- Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori.
 
-#### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Per aggiungere la convalida dei livelli a un progetto VSIX separato
+Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori.
+
+### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Per aggiungere la convalida dei livelli a un progetto VSIX separato
 
 1.  Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente. Nella finestra di dialogo **Nuovo progetto** fare clic su **Visual C#** e quindi su **Libreria di classi**. Questo progetto conterrà la classe di convalida dei livelli.
 
@@ -100,7 +104,7 @@ In Visual Studio, gli utenti possono convalidare il codice sorgente in un proget
 5.  Tornare al progetto di convalida dei livelli e aggiungere i riferimenti al progetto seguenti:
 
     |**Riferimento**|**Operazioni consentite**|
-    |-------------------|------------------------------------|
+    |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|Leggere il grafico dell'architettura|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Leggere il code DOM associato ai livelli|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Leggere il modello di livello|
@@ -113,104 +117,108 @@ In Visual Studio, gli utenti possono convalidare il codice sorgente in un proget
 7.  Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).
 
     > [!NOTE]
-    >  Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).
+    > Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).
 
 8.  Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
 
      Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .
 
 ##  <a name="programming"></a> Programmazione della convalida
- Per definire un'estensione di convalida dei livelli, è necessario definire una classe con le caratteristiche seguenti:
 
--   Il formato complessivo della dichiarazione è il seguente:
+Per definire un'estensione di convalida dei livelli, è necessario definire una classe con le caratteristiche seguenti:
 
-    ```
+- Il formato complessivo della dichiarazione è il seguente:
 
-    using System.ComponentModel.Composition;
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;
-    using Microsoft.VisualStudio.GraphModel;
-    ...
-     [Export(typeof(IValidateArchitectureExtension))]
-      public partial class Validator1Extension :
-                      IValidateArchitectureExtension
+  ```csharp
+  using System.ComponentModel.Composition;
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;
+  using Microsoft.VisualStudio.GraphModel;
+  ...
+   [Export(typeof(IValidateArchitectureExtension))]
+    public partial class Validator1Extension :
+                    IValidateArchitectureExtension
+    {
+      public void ValidateArchitecture(Graph graph)
       {
-        public void ValidateArchitecture(Graph graph)
-        {
-           GraphSchema schema = graph.DocumentSchema;
-          ...
-      } }
-    ```
+         GraphSchema schema = graph.DocumentSchema;
+        ...
+    } }
+  ```
 
--   Quando si individua un errore, è possibile segnalarlo usando `LogValidationError()`.
+- Quando si individua un errore, è possibile segnalarlo usando `LogValidationError()`.
 
-    > [!WARNING]
-    >  Non usare i parametri facoltativi di `LogValidationError`.
+  > [!WARNING]
+  > Non usare i parametri facoltativi di `LogValidationError`.
 
- Quando l'utente richiama il comando di menu **Convalida architettura** , il sistema di runtime dei livelli analizza i livelli e i rispettivi elementi per generare un grafico. Il grafico è costituito da quattro parti:
+Quando l'utente richiama il comando di menu **Convalida architettura** , il sistema di runtime dei livelli analizza i livelli e i rispettivi elementi per generare un grafico. Il grafico è costituito da quattro parti:
 
--   I modelli di livello della soluzione di Visual Studio che sono rappresentati come nodi e collegamenti nel grafico.
+- I modelli di livello della soluzione di Visual Studio che sono rappresentati come nodi e collegamenti nel grafico.
 
--   Il codice, gli elementi di progetto e altri elementi definiti nella soluzione e rappresentati come nodi, insieme ai collegamenti che rappresentano le dipendenze individuate dal processo di analisi.
+- Il codice, gli elementi di progetto e altri elementi definiti nella soluzione e rappresentati come nodi, insieme ai collegamenti che rappresentano le dipendenze individuate dal processo di analisi.
 
--   I collegamenti dai nodi di livello ai nodi elemento del codice.
+- I collegamenti dai nodi di livello ai nodi elemento del codice.
 
--   I nodi che rappresentano gli errori individuati dal validator.
+- I nodi che rappresentano gli errori individuati dal validator.
 
- Una volta creato il grafico, viene chiamato il metodo di convalida standard. Al termine, tutti i metodi di convalida delle eventuali estensioni installate vengono chiamati in base a un ordine non specificato. Il grafico viene passato a ogni metodo `ValidateArchitecture` , che può analizzarlo e segnalare gli eventuali errori trovati.
+Una volta creato il grafico, viene chiamato il metodo di convalida standard. Al termine, tutti i metodi di convalida delle eventuali estensioni installate vengono chiamati in base a un ordine non specificato. Il grafico viene passato a ogni metodo `ValidateArchitecture` , che può analizzarlo e segnalare gli eventuali errori trovati.
 
 > [!NOTE]
->  Ciò non è quello utilizzato per il processo di convalida che può essere usato in linguaggi specifici di dominio.
+> Ciò non è quello utilizzato per il processo di convalida che può essere usato in linguaggi specifici di dominio.
 
- I metodi di convalida non devono modificare il modello di livello o il codice convalidato.
+I metodi di convalida non devono modificare il modello di livello o il codice convalidato.
 
- Il modello di grafico è definito in <xref:Microsoft.VisualStudio.GraphModel>. Le classi principali sono <xref:Microsoft.VisualStudio.GraphModel.GraphNode> e <xref:Microsoft.VisualStudio.GraphModel.GraphLink>.
+Il modello di grafico è definito in <xref:Microsoft.VisualStudio.GraphModel>. Le classi principali sono <xref:Microsoft.VisualStudio.GraphModel.GraphNode> e <xref:Microsoft.VisualStudio.GraphModel.GraphLink>.
 
- Ogni nodo e ogni collegamento hanno una o più categorie che specificano il tipo di elemento o la relazione che rappresenta. I nodi di un grafico tipico hanno le categorie seguenti:
+Ogni nodo e ogni collegamento hanno una o più categorie che specificano il tipo di elemento o la relazione che rappresenta. I nodi di un grafico tipico hanno le categorie seguenti:
 
--   Dsl.LayerModel
+- Dsl.LayerModel
 
--   Dsl.Layer
+- Dsl.Layer
 
--   Dsl.Reference
+- Dsl.Reference
 
--   CodeSchema_Type
+- CodeSchema_Type
 
--   CodeSchema_Namespace
+- CodeSchema_Namespace
 
--   CodeSchema_Type
+- CodeSchema_Type
 
--   CodeSchema_Method
+- CodeSchema_Method
 
--   CodeSchema_Field
+- CodeSchema_Field
 
--   CodeSchema_Property
+- CodeSchema_Property
 
- I collegamenti dai livelli agli elementi nel codice sono associati alla categoria "Rappresenta".
+I collegamenti dai livelli agli elementi nel codice sono associati alla categoria "Rappresenta".
 
 ##  <a name="debugging"></a> Debug della convalida
- Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.
+
+Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.
 
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Eseguire il test con una soluzione che contiene dipendenze
- La convalida non viene eseguita se non sono presenti le caratteristiche seguenti:
 
--   Nel diagramma delle dipendenze è presente almeno un collegamento di dipendenza.
+La convalida non viene eseguita se non sono presenti le caratteristiche seguenti:
 
--   Alcuni livelli nel modello sono associati a elementi del codice.
+- Nel diagramma delle dipendenze è presente almeno un collegamento di dipendenza.
 
- La prima volta che si avvia un'istanza sperimentale di Visual Studio per eseguire il test dell'estensione di convalida, aprire o creare una soluzione che abbia queste caratteristiche.
+- Alcuni livelli nel modello sono associati a elementi del codice.
+
+La prima volta che si avvia un'istanza sperimentale di Visual Studio per eseguire il test dell'estensione di convalida, aprire o creare una soluzione che abbia queste caratteristiche.
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>Eseguire Pulisci soluzione prima di Convalida architettura
- Ogni volta che si aggiorna il codice di convalida, usare il comando **Pulisci soluzione** del menu **Compila** nella soluzione sperimentale prima di testare il comando Convalida. Questa operazione è necessaria perché i risultati della convalida vengono memorizzati nella cache. Se non è stato aggiornato il diagramma delle dipendenze di test o il relativo codice, non verranno eseguiti i metodi di convalida.
+
+Ogni volta che si aggiorna il codice di convalida, usare il comando **Pulisci soluzione** del menu **Compila** nella soluzione sperimentale prima di testare il comando Convalida. Questa operazione è necessaria perché i risultati della convalida vengono memorizzati nella cache. Se non è stato aggiornato il diagramma delle dipendenze di test o il relativo codice, non verranno eseguiti i metodi di convalida.
 
 ### <a name="launch-the-debugger-explicitly"></a>Avviare il debugger in modo esplicito
- La convalida viene eseguita in un processo separato. Di conseguenza, i punti di interruzione nel metodo di convalida non verranno attivati. È necessario connettere il debugger al processo in modo esplicito all'avvio della convalida.
 
- Per connettere il debugger al processo di convalida, inserire una chiamata a `System.Diagnostics.Debugger.Launch()` all'avvio del metodo di convalida. Quando viene visualizzata la finestra di dialogo Debug, selezionare l'istanza principale di Visual Studio.
+La convalida viene eseguita in un processo separato. Di conseguenza, i punti di interruzione nel metodo di convalida non verranno attivati. È necessario connettere il debugger al processo in modo esplicito all'avvio della convalida.
 
- In alternativa, è possibile inserire una chiamata a `System.Windows.Forms.MessageBox.Show()`. Quando viene visualizzata la finestra di messaggio, passare all'istanza principale di Visual Studio e sul **Debug** dal menu **Connetti a processo**. Selezionare il processo denominato **Graphcmd.exe**.
+Per connettere il debugger al processo di convalida, inserire una chiamata a `System.Diagnostics.Debugger.Launch()` all'avvio del metodo di convalida. Quando viene visualizzata la finestra di dialogo Debug, selezionare l'istanza principale di Visual Studio.
 
- Avviare sempre l'istanza sperimentale premendo CTRL+F5 (**Avvia senza eseguire debug**).
+In alternativa, è possibile inserire una chiamata a `System.Windows.Forms.MessageBox.Show()`. Quando viene visualizzata la finestra di messaggio, passare all'istanza principale di Visual Studio e sul **Debug** dal menu **Connetti a processo**. Selezionare il processo denominato **Graphcmd.exe**.
+
+Avviare sempre l'istanza sperimentale premendo CTRL+F5 (**Avvia senza eseguire debug**).
 
 ### <a name="deploying-a-validation-extension"></a>Distribuzione di un'estensione di convalida
 

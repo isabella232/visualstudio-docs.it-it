@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL | Documenti Microsoft
+title: METADATA_ADDRESS_LOCAL | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720f150be1b7cf992f0949750dd52218939c7d2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca9a6b1fac3627020363c92db8a2f05e5b5900ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846603"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 Questa struttura rappresenta l'indirizzo di una variabile locale all'interno di un ambito (in genere una funzione o metodo).  
@@ -50,13 +50,13 @@ public struct METADATA_ADDRESS_LOCAL {
  [C++] `_mdToken` è un `typedef` un 32-bit `int`.  
   
  pLocal  
- Il token il cui indirizzo di questa struttura.  
+ Token il cui indirizzo di questa struttura rappresenta.  
   
  dwIndex  
- Può essere l'indice della variabile locale nel metodo o funzione o in un altro valore (specifico della lingua).  
+ Può essere l'indice della variabile locale nel metodo o funzione o un altro valore (specifica del linguaggio).  
   
 ## <a name="remarks"></a>Note  
- Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_LOCAL` (compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  
+ Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_LOCAL` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  
   
  `Warning:` [Solo C++]  Se `pLocal` non è null, sarà necessario chiamare `Release` sul puntatore token (`addr` è un campo il [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura):  
   

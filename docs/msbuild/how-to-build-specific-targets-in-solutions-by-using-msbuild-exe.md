@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b735d1543c9af4fead999e3c530fad063672337e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fb1dc2885d64999ac9f4d12568fd7da29a783d8e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080582"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880656"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Procedura: Compilare destinazioni specifiche in soluzioni tramite MSBuild.exe
 È possibile usare *MSBuild.exe* per compilare destinazioni specifiche di progetti specifici in una soluzione.  
@@ -28,13 +28,13 @@ ms.locfileid: "39080582"
   
 1.  Nella riga di comando digitare `MSBuild.exe <SolutionName>.sln`, dove `<SolutionName>` corrisponde al nome file della soluzione che contiene la destinazione che si vuole eseguire.  
   
-2. Specificare la destinazione dopo l'opzione `/target:` nel formato \<NomeProgetto>:\<NomeDestinazione>. Se il nome del progetto contiene i caratteri `%`, `$`, `@`, `;`, `.`, `(`, `)` o `'`, sostituirli con `_` nel nome di destinazione specificato.
+2. Specificare la destinazione dopo l'opzione `-target:` nel formato \<NomeProgetto>:\<NomeDestinazione>. Se il nome del progetto contiene i caratteri `%`, `$`, `@`, `;`, `.`, `(`, `)` o `'`, sostituirli con `_` nel nome di destinazione specificato.
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente esegue la destinazione `Rebuild` del progetto `NotInSlnFolder` e quindi esegue la destinazione `Clean` del progetto `InSolutionFolder`, che si trova nella cartella della soluzione *NewFolder*.  
   
 ```cmd
-msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
+msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839531"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Prodotti e servizi Microsoft per l'accessibilità
 
@@ -45,7 +45,6 @@ Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i
 
 > [!NOTE]
 > Le informazioni contenute in questa sezione sono valide solo per gli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, usare la scheda informativa inclusa nel pacchetto software o visitare il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa sezione sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue, tra cui giapponese e francese.
-
 
 ##  <a name="windows"></a> Funzionalità di accessibilità di Windows
 
@@ -70,24 +69,24 @@ In caso di difficoltà di lettura o di uso del materiale stampato, è possibile 
 Le pubblicazioni Microsoft possono inoltre essere richieste a Learning Ally. Learning Ally distribuisce i documenti ai membri idonei registrati nel servizio di distribuzione. Per informazioni sulla disponibilità di libri e documentazione dei prodotti Microsoft in Microsoft Press, contattare:
 
 |Learning Ally|
-|----------------------------------------------|
+| - |
 |20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Sito Web di Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|
 
 Poiché gli indirizzi Web possono cambiare, è possibile che il sito o i siti Web menzionati in questo documento non risultino disponibili.
 
 ##  <a name="hearing"></a> Servizio clienti per persone con problemi di udito
 
- Gli utenti affetti da sordità o problemi di udito possono effettuare l'accesso ai servizi di supporto tecnico e clienti Microsoft tramite un servizio DTS (TTY/TDD):
+Gli utenti affetti da sordità o problemi di udito possono effettuare l'accesso ai servizi di supporto tecnico e clienti Microsoft tramite un servizio DTS (TTY/TDD):
 
--   Per il servizio clienti, contattare Microsoft Sales Information Center al numero (800) 892-5234 dalle 6:30 alle 17:30 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi.
+- Per il servizio clienti, contattare Microsoft Sales Information Center al numero (800) 892-5234 dalle 6:30 alle 17:30 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi.
 
--   Per assistenza tecnica negli Stati Uniti, contattare il Servizio supporto tecnico Microsoft al numero (800) 892-5234 dalle 6.00 e alle 18.00 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi. In Canada, comporre il numero (905) 568-9641 dalle 8.00 e alle 20.00 (fuso orientale), dal lunedì al venerdì, escluse le festività.
+- Per assistenza tecnica negli Stati Uniti, contattare il Servizio supporto tecnico Microsoft al numero (800) 892-5234 dalle 6.00 e alle 18.00 fuso del Pacifico, dal lunedì al venerdì, festivi esclusi. In Canada, comporre il numero (905) 568-9641 dalle 8.00 e alle 20.00 (fuso orientale), dal lunedì al venerdì, escluse le festività.
 
- Il Servizio supporto tecnico Microsoft è soggetto a prezzi, termini e condizioni in vigore al momento dell'utilizzo del servizio.
+Il Servizio supporto tecnico Microsoft è soggetto a prezzi, termini e condizioni in vigore al momento dell'utilizzo del servizio.
 
 ##  <a name="moreinfo"></a> Altre informazioni
 
- Per altre informazioni sui vantaggi offerti dai computer con assistive technology agli utenti con disabilità, vedere il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+Per altre informazioni sui vantaggi offerti dai computer con assistive technology agli utenti con disabilità, vedere il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ## <a name="see-also"></a>Vedere anche
 

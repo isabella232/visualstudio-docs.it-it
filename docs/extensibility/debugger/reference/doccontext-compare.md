@@ -1,5 +1,5 @@
 ---
-title: DOCCONTEXT_COMPARE | Documenti Microsoft
+title: DOCCONTEXT_COMPARE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 966d31889d7979732af20f5e3f95546e87af6598
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f092666833b80dd59ed4b7b3345c379078ce2bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862957"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
-Specifica i criteri per il confronto tra due contesti di documento.  
+Specifica i criteri per il confronto di due contesti di documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,21 +48,21 @@ enum enum_DOCCONTEXT_COMPARE {
   
 ## <a name="members"></a>Membri  
  DOCCONTEXT_EQUAL  
- Trovare il contesto del documento prima nell'elenco che corrisponde al contesto di documento di destinazione.  
+ Trovare il primo contesto del documento nell'elenco che è uguale al contesto di documento di destinazione.  
   
  DOCCONTEXT_LESS_THAN  
- Trovare il contesto del documento prima nell'elenco che è minore rispetto al contesto di documento di destinazione.  
+ Trovare il primo contesto del documento nell'elenco che è minore rispetto al contesto di documento di destinazione.  
   
  DOCCONTEXT_GREATER_THAN  
- Trovare il contesto del documento prima nell'elenco che è maggiore rispetto al contesto di documento di destinazione.  
+ Trovare il primo contesto del documento nell'elenco che è maggiore rispetto al contesto di documento di destinazione.  
   
  DOCCONTEXT_SAME_DOCUMENT  
- Trovare il contesto del documento prima nell'elenco presente nel contesto di documento di destinazione nello stesso documento.  
+ Trovare il primo contesto del documento nell'elenco che è nello stesso documento come contesto di documento di destinazione.  
   
 ## <a name="remarks"></a>Note  
- Passata come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) metodo.  
+ Passato come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) (metodo).  
   
- Questi valori vengono utilizzati per specificare un criterio di confronto per trovare il primo contesto di documento in un elenco. Un contesto di documento viene fornito un elenco di contesti di documento da confrontare solo in tramite il `IDebugDocumentContext2::Compare` metodo. Il contesto del documento prima nell'elenco per il quale l'operatore di confronto è `true` viene quindi restituito.  
+ Questi valori vengono utilizzati per specificare un criterio di confronto per trovare il primo contesto del documento in un elenco. Un contesto di documento viene fornito un elenco di contesti di documento di confrontarsi con tramite il `IDebugDocumentContext2::Compare` (metodo). Il contesto del documento prima nell'elenco per il quale l'operatore di confronto è `true` viene quindi restituito.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: msdbg.h  

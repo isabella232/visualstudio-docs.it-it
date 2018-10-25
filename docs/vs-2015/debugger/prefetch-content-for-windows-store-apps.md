@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9329cad2f0125288aeea146070188d023d1a126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1da34d2baba519f9b8fa8cfde5756e8fccdfe7b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868729"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Prelettura del contenuto per le applicazioni Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_con
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>Per forzare il precaricamento delle risorse specificate di ContentPrefetcher  
  Questa procedura presuppone che tu abbia già impostato la funzionalità ContentPrefetcher e specificato gli URI di contenuto da precaricare nel progetto dell'app. Per forzare il precaricamento del contenuto quando le risorse specificate sono nuove o modificate, devi avviare e arrestare l'app prima di scegliere la **Trigger prelettura applicazioni App di Windows Store** comando. Prima di tutto esegui l'app per registrare gli URI. **Trigger prelettura applicazioni Windows Store** comando forza la funzionalità ContentPrefetcher a scaricare il contenuto e aggiungerlo nella cache. Nelle esecuzioni successive dell'app, puoi presupporre che il contenuto sia stato precaricato.  
   
-1.  Avvia l'app per registrare gli URI del contenuto caricati in background con l'app. Nel **Debug** menu, scegliere **Avvia debug** (tasto di scelta rapida: F5).  
+1. Avvia l'app per registrare gli URI del contenuto caricati in background con l'app. Nel **Debug** menu, scegliere **Avvia debug** (tasto di scelta rapida: F5).  
   
-2.  Nel **Debug** menu, scegliere **arresta debug** (tasto di scelta rapida: MAIUSC+F5).  
+2. Nel **Debug** menu, scegliere **arresta debug** (tasto di scelta rapida: MAIUSC+F5).  
   
-3.  Nel **Debug** menu, scegliere **altre destinazioni Debug** e quindi scegliere **Trigger prelettura applicazioni App di Windows Store**.  
+3. Nel **Debug** menu, scegliere **altre destinazioni Debug** e quindi scegliere **Trigger prelettura applicazioni App di Windows Store**.  
   
- Ora puoi eseguire testare, analizzare o eseguire il debug dell'app con le risorse Web caricate in background.  
+   Ora puoi eseguire testare, analizzare o eseguire il debug dell'app con le risorse Web caricate in background.  
   
 > [!NOTE]
 >  Ripeti questi passaggi quando aggiungi o modifichi il contenuto Web specificato.  

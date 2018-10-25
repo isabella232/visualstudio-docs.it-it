@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetClassTypeByName | Documenti Microsoft
+title: IDebugSymbolProvider::GetClassTypeByName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b972885a8999ac688ade380fbe9601d4274d205e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b67b959d31989c0a891fc44e1bf8acefb6cc182
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846954"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
-Questo metodo ottiene il tipo di campo di classe che rappresenta un nome completo della classe.  
+Questo metodo ottiene il tipo di campo di classe che rappresenta il nome completo della classe.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,10 +48,10 @@ int GetClassTypeByName(
  [in] Il nome della classe.  
   
  `nameMatch`  
- [in] Seleziona il tipo di corrispondenza, ad esempio distinzione maiuscole/minuscole. Un valore di [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumerazione.  
+ [in] Seleziona il tipo di corrispondenza, ad esempio, distinzione maiuscole/minuscole. Un valore compreso il [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumerazione.  
   
  `ppField`  
- [out] Restituisce il tipo di classe, come rappresentato dal [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaccia.  
+ [out] Restituisce il tipo di classe come rappresentata dai [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaccia.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  

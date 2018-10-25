@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c6e966a7feff00fc9b32495f3697643120f1ee
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: df135901c0272777c3d76220218042e4dc41a145
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817067"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 Archivia i valori di output dell'attività in elementi e proprietà.  
@@ -60,9 +60,9 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 
 ### <a name="parent-elements"></a>Elementi padre  
 
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Task](../msbuild/task-element-msbuild.md)|Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+| Elemento | Descrizione |
+| - | - |
+| [Task](../msbuild/task-element-msbuild.md) | Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente mostra l'attività `Csc` eseguita all'interno di un elemento `Target`. Gli elementi e le proprietà passati ai parametri dell'attività vengono dichiarati al di fuori dell'ambito di questo esempio. Il valore dal parametro di output `OutputAssembly` viene archiviato nell'elemento `FinalAssemblyName` e il valore del parametro di output `BuildSucceeded` viene archiviato nella proprietà `BuildWorked`. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).  

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b675b74ef843a9a6b186149d16086df2528eab57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872642"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Procedura dettagliata: Debug di un'applicazione parallela in Visual Studio
 Questa procedura dettagliata illustra come usare il **attività in parallelo** e **stack in parallelo** windows per eseguire il debug di un'applicazione parallela. Queste finestre consentono di comprendere e verificare il comportamento di runtime del codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o nella [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime). Nella procedura dettagliata viene fornito un esempio di codice con punti di interruzione incorporati. Dopo che il codice si interrompe, la procedura dettagliata illustra come usare il **attività in parallelo** e **stack in parallelo** windows per esaminarlo.  
@@ -63,25 +63,25 @@ Questa procedura dettagliata illustra come usare il **attività in parallelo** e
   
 #### <a name="to-create-the-sample-project"></a>Per creare il progetto di esempio  
   
-1.  In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.  
+1. In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.  
   
-2.  Selezionare uno **Visual c#**, **Visual Basic**, o **Visual C++**. Per i linguaggi gestiti, assicurarsi che [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] sia visualizzato nella casella del framework.  
+2. Selezionare uno **Visual c#**, **Visual Basic**, o **Visual C++**. Per i linguaggi gestiti, assicurarsi che [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] sia visualizzato nella casella del framework.  
   
-3.  Sotto **Desktop di Windows**, scegliere **applicazione Console** e quindi fare clic su **OK**. Restare nella configurazione per il debug, ovvero l'impostazione predefinita.  
+3. Sotto **Desktop di Windows**, scegliere **applicazione Console** e quindi fare clic su **OK**. Restare nella configurazione per il debug, ovvero l'impostazione predefinita.  
   
-4.  Aprire il file di codice con estensione CPP, CS o VB nel progetto. Eliminarne il contenuto per creare un file di codice vuoto.  
+4. Aprire il file di codice con estensione CPP, CS o VB nel progetto. Eliminarne il contenuto per creare un file di codice vuoto.  
   
-5.  Incollare il seguente codice per il linguaggio selezionato nel file di codice vuoto.  
+5. Incollare il seguente codice per il linguaggio selezionato nel file di codice vuoto.  
   
- [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
- [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
- [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
+   [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
+   [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
+   [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
   
-1.  Nel **File** menu, fare clic su **Salva tutto**.  
+6. Nel **File** menu, fare clic su **Salva tutto**.  
   
-2.  Nel **compilare** menu, fare clic su **Ricompila soluzione**.  
+7. Nel **compilare** menu, fare clic su **Ricompila soluzione**.  
   
-     Notare che vi sono quattro chiamate a `Debugger.Break` (`DebugBreak` nell'esempio C++). Pertanto, non è necessario inserire punti di interruzione; la semplice esecuzione dell'applicazione determinerà fino a quattro interruzioni nel debugger.  
+    Notare che vi sono quattro chiamate a `Debugger.Break` (`DebugBreak` nell'esempio C++). Pertanto, non è necessario inserire punti di interruzione; la semplice esecuzione dell'applicazione determinerà fino a quattro interruzioni nel debugger.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilizzo della finestra Stack in parallelo: visualizzazione Thread  
  Scegliere **Avvia debug** dal menu **Debug**. Attendere che venga raggiunto il primo punto di interruzione.  

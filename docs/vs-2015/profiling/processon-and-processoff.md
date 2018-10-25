@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7595d48d0f08fc16bed00385094167b1d65efc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849402"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ I sottocomandi **ProcessOff** e **ProcessOn** di VSPerfCmd.exe sospendono e ripr
   
  I sottocomandi **ProcessOff** e **ProcessOn** influenzano anche il conteggio Start/Stop per il processo, gestito dalle funzioni API del profiler.  
   
--   **ProcessOff** imposta immediatamente il conteggio Start/Stop per il processo su 0 e sospende quindi la profilatura.  
+- **ProcessOff** imposta immediatamente il conteggio Start/Stop per il processo su 0 e sospende quindi la profilatura.  
   
--   **ProcessOn** imposta immediatamente il conteggio Start/Stop per il processo su 1 e riprende quindi la profilatura.  
+- **ProcessOn** imposta immediatamente il conteggio Start/Stop per il processo su 1 e riprende quindi la profilatura.  
   
- Per altre informazioni, vedere [API per strumenti di profilatura](../profiling/profiling-tools-apis.md).  
+  Per altre informazioni, vedere [API per strumenti di profilatura](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintassi  
   

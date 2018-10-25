@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837113"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -36,9 +36,9 @@ Ecco alcuni esempi di topologie comuni di ambienti lab:
 |![Ambiente lab nel cloud](../media/topology_cloud.png)| Questo ambiente lab presenta caratteristiche e funzionalità simili alla _topologia server_ senza il requisito della presenza di macchine virtuali o computer fisici in un ambiente locale. Ciò può ridurre la durata della configurazione, semplificare la manutenzione e abbassare i costi. La configurazione di più siti Web e più macchine virtuali e la personalizzazione della rete sono semplici e rapide in un ambiente cloud come Microsoft Azure.|
 |![Ambiente lab client-server](../media/topology_clientserver.png)| Questo ambiente lab ha una *topologia client/server*, spesso usata per testare un'applicazione dotata di componenti server e client. In una topologia client/server tutti i computer client e server usati per testare l’applicazione si trovano nell’ambiente lab. Quando si usa questa topologia, è possibile raccogliere dati di test da ogni computer che incide sui test.|
 
-|   |   |
+| | |
 |---|---|
-|  ![icona della telecamera per un video](../../install/media/video-icon.png)  |    [Guardare un video](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sulla gestione degli ambienti lab per l'esecuzione di test. |
+| ![icona della telecamera per un video](../../install/media/video-icon.png) | [Guardare un video](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sulla gestione degli ambienti lab per l'esecuzione di test. |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Usare il cloud con Compilazione e versione di Azure Pipelines o Team Foundation Server
 
@@ -95,7 +95,7 @@ Per informazioni su SCVMM, vedere [Virtual Machine Manager](/azure/devops/pipeli
 Gli ambienti standard e gli ambienti SCVMM supportano molte delle stesse funzionalità. Esistono tuttavia alcune importanti differenze da considerare. Nella tabella seguente vengono confrontate le funzionalità disponibili per gli ambienti standard e gli ambienti SCVMM.
 
 |Funzionalità|Ambienti SCVMM|Ambienti standard|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**Test**|||
 |Eseguire test manuali|Supportato|Supportato|
 |Eseguire il test codificato dell'interfaccia utente e altri test automatizzati|Supportato|Supportato|
@@ -117,7 +117,7 @@ Gli ambienti standard e gli ambienti SCVMM supportano molte delle stesse funzion
 Di seguito sono riportati alcuni concetti aggiuntivi che è necessario conoscere prima di continuare:
 
 |Termine|Descrizione|
-|----------|-----------------|
+|-|-----------------|
 |Centro Lab|L'area di Microsoft Test Manager in cui creare e gestire ambienti lab.|
 |Lab del progetto Azure DevOps|La raccolta di ambienti lab che sono stati configurati in modo da connettersi a essi ed eseguire le macchine virtuali.|
 |Libreria del progetto Azure DevOps|Archivio di macchine virtuali, modelli e ambienti lab archiviati che sono stati importati nel gruppo host del progetto. È possibile usare gli elementi della raccolta con ambienti SCVMM, tuttavia non è possibile aggiungerli direttamente in un ambiente standard. Non è possibile eseguire gli elementi della raccolta, ma è possibile usarli per implementare un nuovo ambiente.|

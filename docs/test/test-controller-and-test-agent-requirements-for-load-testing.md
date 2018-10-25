@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813986"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisiti del controller e dell'agente di test per il test di carico
 
@@ -31,7 +31,7 @@ I computer del controller di test e dell'agente di test presentano requisiti har
 Nella tabella seguente sono riportati i requisiti hardware consigliati per la distribuzione di un controller di test e di agenti di test.
 
 |**Configurazione**|**Componente**|**CPU**|**Disco rigido**|**Memoria**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |< 500 utenti virtuali|Agente di test|2,6 GHz|10 GB|2 GB|
 |< 1000 utenti virtuali|Agente di test|Processore doppio, 2,6 GHz|10 GB|2 GB|
 |N x 1000 utenti virtuali|Agente di test|Scalabilità orizzontale fino a N agenti, ognuno con processore doppio a 2,6 Ghz|10GB|2GB|

@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872668"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Panoramica dell'analisi codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ L'analisi del codice gestito analizza gli assembly gestiti e fornisce informazio
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Eseguire l'analisi del codice come parte dei criteri di archiviazione  
  Le organizzazioni richiedono talvolta che tutte le archiviazioni soddisfino determinati criteri, tra cui, in particolare:  
   
--   Assenza di errori di compilazione nel codice da archiviare.  
+- Assenza di errori di compilazione nel codice da archiviare.  
   
--   Esecuzione dell'analisi del codice durante la compilazione più recente.  
+- Esecuzione dell'analisi del codice durante la compilazione più recente.  
   
- A tale scopo, è utile quindi definire dei criteri specifici per l'archiviazione. Per altre informazioni, vedere [miglioramento della qualità del codice con i criteri di controllo il progetto Team](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  A tale scopo, è utile quindi definire dei criteri specifici per l'archiviazione. Per altre informazioni, vedere [miglioramento della qualità del codice con i criteri di controllo il progetto Team](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Integrazione di Team Build  
  È possibile utilizzare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi come parte del processo di compilazione. Per altre informazioni, vedere [Build the application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) (Compilare l'applicazione).  

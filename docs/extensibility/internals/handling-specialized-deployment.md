@@ -14,35 +14,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fadabf4becdf53453b24a4bc60e7b4e3a6cd21e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: e3c73b118f7e137847c1342fb9949c3d7dd6dd0b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863244"
 ---
 # <a name="handle-specialized-deployment"></a>Gestione della distribuzione specializzata
 Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, ad esempio, supporta una distribuzione per consentire a un progetto di aggiornare un server Web. Analogamente, un **Smart Device** progetto supporta una distribuzione per copiare delle applicazioni al dispositivo di destinazione. Sottotipi di progetto possono fornire il comportamento della distribuzione specializzata implementando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia. Questa interfaccia definisce un set completo di operazioni di distribuzione:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- L'operazione di distribuzione effettiva deve essere eseguita nel thread separati per rendere [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ancora più reattive all'interazione utente. I metodi forniti dalla <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> vengono chiamati in modo asincrono da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e operano in background, senza che l'ambiente per eseguire una query lo stato di un'operazione di distribuzione in qualsiasi momento o per arrestare l'operazione, se necessario. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> le operazioni di distribuzione di interfaccia vengono chiamate dall'ambiente quando l'utente seleziona il comando di distribuzione.  
+  L'operazione di distribuzione effettiva deve essere eseguita nel thread separati per rendere [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ancora più reattive all'interazione utente. I metodi forniti dalla <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> vengono chiamati in modo asincrono da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e operano in background, senza che l'ambiente per eseguire una query lo stato di un'operazione di distribuzione in qualsiasi momento o per arrestare l'operazione, se necessario. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> le operazioni di distribuzione di interfaccia vengono chiamate dall'ambiente quando l'utente seleziona il comando di distribuzione.  
   
- Per ricevere una notifica all'ambiente che un'operazione di distribuzione è iniziato o terminato, deve chiamare il sottotipo di progetto di <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> e il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> metodi.  
+  Per ricevere una notifica all'ambiente che un'operazione di distribuzione è iniziato o terminato, deve chiamare il sottotipo di progetto di <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> e il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> metodi.  
   
   
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Per gestire una distribuzione specializzata da un progetto sottotipo  
