@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_compilerName | Documenti Microsoft
+title: Get_compilername | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33ddeedf423c75f35486680082138706b6d5823f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a7f8b9c0f670522e9ea8b2d6fa46e79e3f01594d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467605"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938058"
 ---
 # <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
 Restituisce il nome del compilatore usato per generare il [compilando](../../debugger/debug-interface-access/compiland.md).  
@@ -34,7 +34,7 @@ HRESULT get_compilerName (
   
 #### <a name="parameters"></a>Parametri  
  `pName`  
- Puntatore a un tipo BSTR che conterrà il nome di Unicode del compilatore.  
+ Puntatore a un BSTR che contiene il nome di Unicode del compilatore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
@@ -49,7 +49,7 @@ HRESULT get_compilerName (
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
-|Versione:|Versione 8.0 DIA SDK|  
+|Versione:|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816684"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione.  
@@ -203,15 +203,15 @@ Per selezionare le colonne da visualizzare nella **i punti di interruzione** fin
 
 **Per impostare una condizione di punto di interruzione:**
 
-1.  Il simbolo di punto di interruzione e scegliere **condizioni**. O del mouse il simbolo di punto di interruzione, seleziona la **le impostazioni** icona e quindi selezionare **condizioni** nel **impostazioni punto di interruzione** finestra.  
+1. Il simbolo di punto di interruzione e scegliere **condizioni**. O del mouse il simbolo di punto di interruzione, seleziona la **le impostazioni** icona e quindi selezionare **condizioni** nel **impostazioni punto di interruzione** finestra.  
 
-    È anche possibile impostare le condizioni **i punti di interruzione** finestra facendo clic su un punto di interruzione e selezionando **impostazioni**, quindi selezionando **condizioni**. 
+   È anche possibile impostare le condizioni **i punti di interruzione** finestra facendo clic su un punto di interruzione e selezionando **impostazioni**, quindi selezionando **condizioni**. 
   
-  ![Impostazioni punto di interruzione](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Impostazioni punto di interruzione](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. Nell'elenco a discesa, selezionare **espressioni condizionali**, **passaggi**, o **filtro**e impostare il valore di conseguenza. 
+2. Nell'elenco a discesa, selezionare **espressioni condizionali**, **passaggi**, o **filtro**e impostare il valore di conseguenza. 
   
-1. Selezionare **chiudere** o premere **Ctrl**+**invio** per chiudere la **impostazioni punto di interruzione** finestra. E viceversa, il **i punti di interruzione** finestra, seleziona **OK** per chiudere la finestra di dialogo. 
+3. Selezionare **chiudere** o premere **Ctrl**+**invio** per chiudere la **impostazioni punto di interruzione** finestra. E viceversa, il **i punti di interruzione** finestra, seleziona **OK** per chiudere la finestra di dialogo. 
 
 I punti di interruzione con set di condizioni vengono visualizzati con un **+** simbolo nel codice sorgente e **i punti di interruzione** windows. 
 

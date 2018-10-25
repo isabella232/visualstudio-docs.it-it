@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c6b2a9fa289bacaad783f70cd85365b7b0628f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951996"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459790"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
 Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell'applicazione e di distribuzione, nonché l'assembly (firma con nome sicuro).
@@ -73,7 +73,7 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
 
  Selezionare questa casella di controllo per firmare l'assembly e creare un file di chiave con nome sicuro. Per altre informazioni sulla firma dell'assembly tramite **Creazione progetti**, vedere [Procedura: firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Questa opzione usa lo strumento Al.exe fornito da [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+ Questa opzione usa lo strumento Al.exe fornito da Windows Software Development Kit (SDK) per firmare l'assembly. Per altre informazioni su Al.exe, vedere [Procedura: firmare un assembly con un nome sicuro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
  Elenco **Scegliere un file di chiave con nome sicuro**
 
